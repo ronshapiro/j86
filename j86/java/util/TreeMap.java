@@ -23,12 +23,12 @@
  * questions.
  */
 
-package java.util;
+package j86.java.util;
 
-import java.io.Serializable;
-import java.util.function.BiConsumer;
-import java.util.function.BiFunction;
-import java.util.function.Consumer;
+import j86.java.io.Serializable;
+import j86.j86.java.util.function.BiConsumer;
+import j86.j86.java.util.function.BiFunction;
+import j86.j86.java.util.function.Consumer;
 
 /**
  * A Red-Black tree based {@link NavigableMap} implementation.
@@ -110,7 +110,7 @@ import java.util.function.Consumer;
 
 public class TreeMap<K,V>
     extends AbstractMap<K,V>
-    implements NavigableMap<K,V>, Cloneable, java.io.Serializable
+    implements NavigableMap<K,V>, Cloneable, j86.java.io.Serializable
 {
     /**
      * The comparator used to maintain order in this tree map, or
@@ -198,7 +198,7 @@ public class TreeMap<K,V>
         comparator = m.comparator();
         try {
             buildFromSorted(m.size(), m.entrySet().iterator(), null, null);
-        } catch (java.io.IOException cannotHappen) {
+        } catch (j86.java.io.IOException cannotHappen) {
         } catch (ClassNotFoundException cannotHappen) {
         }
     }
@@ -318,7 +318,7 @@ public class TreeMap<K,V>
                 try {
                     buildFromSorted(mapSize, map.entrySet().iterator(),
                                     null, null);
-                } catch (java.io.IOException cannotHappen) {
+                } catch (j86.java.io.IOException cannotHappen) {
                 } catch (ClassNotFoundException cannotHappen) {
                 }
                 return;
@@ -644,7 +644,7 @@ public class TreeMap<K,V>
         // Initialize clone with our mappings
         try {
             clone.buildFromSorted(size, entrySet().iterator(), null, null);
-        } catch (java.io.IOException cannotHappen) {
+        } catch (j86.java.io.IOException cannotHappen) {
         } catch (ClassNotFoundException cannotHappen) {
         }
 
@@ -797,7 +797,7 @@ public class TreeMap<K,V>
      * <em>fail-fast</em>, and additionally reports {@link Spliterator#SORTED}
      * and {@link Spliterator#ORDERED} with an encounter order that is ascending
      * key order.  The spliterator's comparator (see
-     * {@link java.util.Spliterator#getComparator()}) is {@code null} if
+     * {@link j86.java.util.Spliterator#getComparator()}) is {@code null} if
      * the tree map's comparator (see {@link #comparator()}) is {@code null}.
      * Otherwise, the spliterator's comparator is the same as or imposes the
      * same total ordering as the tree map's comparator.
@@ -1337,7 +1337,7 @@ public class TreeMap<K,V>
      * @serial include
      */
     abstract static class NavigableSubMap<K,V> extends AbstractMap<K,V>
-        implements NavigableMap<K,V>, java.io.Serializable {
+        implements NavigableMap<K,V>, j86.java.io.Serializable {
         /**
          * The backing map.
          */
@@ -2016,7 +2016,7 @@ public class TreeMap<K,V>
      * @serial include
      */
     private class SubMap extends AbstractMap<K,V>
-        implements SortedMap<K,V>, java.io.Serializable {
+        implements SortedMap<K,V>, j86.java.io.Serializable {
         private static final long serialVersionUID = -6520786458950516097L;
         private boolean fromStart = false, toEnd = false;
         private K fromKey, toKey;
@@ -2418,8 +2418,8 @@ public class TreeMap<K,V>
      *             or by the keys' natural ordering if the TreeMap has no
      *             Comparator).
      */
-    private void writeObject(java.io.ObjectOutputStream s)
-        throws java.io.IOException {
+    private void writeObject(j86.java.io.ObjectOutputStream s)
+        throws j86.java.io.IOException {
         // Write out the Comparator and any hidden stuff
         s.defaultWriteObject();
 
@@ -2438,8 +2438,8 @@ public class TreeMap<K,V>
      * Reconstitute the {@code TreeMap} instance from a stream (i.e.,
      * deserialize it).
      */
-    private void readObject(final java.io.ObjectInputStream s)
-        throws java.io.IOException, ClassNotFoundException {
+    private void readObject(final j86.java.io.ObjectInputStream s)
+        throws j86.java.io.IOException, ClassNotFoundException {
         // Read in the Comparator and any hidden stuff
         s.defaultReadObject();
 
@@ -2450,8 +2450,8 @@ public class TreeMap<K,V>
     }
 
     /** Intended to be called only from TreeSet.readObject */
-    void readTreeSet(int size, java.io.ObjectInputStream s, V defaultVal)
-        throws java.io.IOException, ClassNotFoundException {
+    void readTreeSet(int size, j86.java.io.ObjectInputStream s, V defaultVal)
+        throws j86.java.io.IOException, ClassNotFoundException {
         buildFromSorted(size, null, s, defaultVal);
     }
 
@@ -2459,7 +2459,7 @@ public class TreeMap<K,V>
     void addAllForTreeSet(SortedSet<? extends K> set, V defaultVal) {
         try {
             buildFromSorted(set.size(), set.iterator(), null, defaultVal);
-        } catch (java.io.IOException cannotHappen) {
+        } catch (j86.java.io.IOException cannotHappen) {
         } catch (ClassNotFoundException cannotHappen) {
         }
     }
@@ -2490,15 +2490,15 @@ public class TreeMap<K,V>
      * @param defaultVal if non-null, this default value is used for
      *        each value in the map.  If null, each value is read from
      *        iterator or stream, as described above.
-     * @throws java.io.IOException propagated from stream reads. This cannot
+     * @throws j86.java.io.IOException propagated from stream reads. This cannot
      *         occur if str is null.
      * @throws ClassNotFoundException propagated from readObject.
      *         This cannot occur if str is null.
      */
     private void buildFromSorted(int size, Iterator<?> it,
-                                 java.io.ObjectInputStream str,
+                                 j86.java.io.ObjectInputStream str,
                                  V defaultVal)
-        throws  java.io.IOException, ClassNotFoundException {
+        throws  j86.java.io.IOException, ClassNotFoundException {
         this.size = size;
         root = buildFromSorted(0, 0, size-1, computeRedLevel(size),
                                it, str, defaultVal);
@@ -2522,9 +2522,9 @@ public class TreeMap<K,V>
     private final Entry<K,V> buildFromSorted(int level, int lo, int hi,
                                              int redLevel,
                                              Iterator<?> it,
-                                             java.io.ObjectInputStream str,
+                                             j86.java.io.ObjectInputStream str,
                                              V defaultVal)
-        throws  java.io.IOException, ClassNotFoundException {
+        throws  j86.java.io.IOException, ClassNotFoundException {
         /*
          * Strategy: The root is the middlemost element. To get to it, we
          * have to first recursively construct the entire left subtree,

@@ -27,11 +27,11 @@
  * @author Charlton Innovations, Inc.
  */
 
-package sun.java2d.loops;
+package j86.j86.sun.java2d.loops;
 
-import java.util.Comparator;
-import java.util.Arrays;
-import sun.java2d.SunGraphics2D;
+import j86.java.util.Comparator;
+import j86.java.util.Arrays;
+import j86.sun.java2d.SunGraphics2D;
 
 /**
  *   GraphicsComponentMgr provides services to
@@ -57,13 +57,13 @@ public final class GraphicsPrimitiveMgr {
                 SurfaceType.class,
                 CompositeType.class,
                 SunGraphics2D.class,
-                java.awt.Color.class,
-                java.awt.geom.AffineTransform.class,
+                j86.java.awt.Color.class,
+                j86.j86.java.awt.geom.AffineTransform.class,
                 XORComposite.class,
-                java.awt.AlphaComposite.class,
-                java.awt.geom.Path2D.class,
-                java.awt.geom.Path2D.Float.class,
-                sun.awt.SunHints.class);
+                j86.java.awt.AlphaComposite.class,
+                j86.j86.java.awt.geom.Path2D.class,
+                j86.j86.java.awt.geom.Path2D.Float.class,
+                j86.sun.awt.SunHints.class);
         CustomComponent.register();
         GeneralRenderer.register();
         registerNativeLoops();

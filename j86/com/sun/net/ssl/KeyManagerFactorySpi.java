@@ -24,12 +24,12 @@
  */
 
 /*
- * NOTE:  this file was copied from javax.net.ssl.KeyManagerFactorySpi
+ * NOTE:  this file was copied from j86.j86.javax.net.ssl.KeyManagerFactorySpi
  */
 
-package com.sun.net.ssl;
+package com.j86.sun.net.ssl;
 
-import java.security.*;
+import j86.java.security.*;
 
 /**
  * This class defines the <i>Service Provider Interface</i> (<b>SPI</b>)
@@ -40,7 +40,7 @@ import java.security.*;
  * of a particular key manager factory.
  *
  * @deprecated As of JDK 1.4, this implementation-specific class was
- *      replaced by {@link javax.net.ssl.KeyManagerFactorySpi}.
+ *      replaced by {@link j86.j86.javax.net.ssl.KeyManagerFactorySpi}.
  */
 @Deprecated
 public abstract class KeyManagerFactorySpi {

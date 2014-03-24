@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.io;
+package j86.java.io;
 
 /**
  * This class allows an application to create an input stream in
@@ -35,8 +35,8 @@ package java.io;
  * this class.
  *
  * @author     Arthur van Hoff
- * @see        java.io.ByteArrayInputStream
- * @see        java.io.StringReader
+ * @see        j86.java.io.ByteArrayInputStream
+ * @see        j86.java.io.StringReader
  * @since      JDK1.0
  * @deprecated This class does not properly convert characters into bytes.  As
  *             of JDK&nbsp;1.1, the preferred way to create a stream from a
@@ -53,14 +53,14 @@ class StringBufferInputStream extends InputStream {
     /**
      * The index of the next character to read from the input stream buffer.
      *
-     * @see        java.io.StringBufferInputStream#buffer
+     * @see        j86.java.io.StringBufferInputStream#buffer
      */
     protected int pos;
 
     /**
      * The number of valid characters in the input stream buffer.
      *
-     * @see        java.io.StringBufferInputStream#buffer
+     * @see        j86.java.io.StringBufferInputStream#buffer
      */
     protected int count;
 

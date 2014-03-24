@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.naming.ldap;
+package j86.j86.javax.naming.ldap;
 
 /**
   * This interface represents an LDAPv3 control as defined in
@@ -49,7 +49,7 @@ package javax.naming.ldap;
   * @see ControlFactory
   * @since 1.3
   */
-public interface Control extends java.io.Serializable {
+public interface Control extends j86.java.io.Serializable {
     /**
       * Indicates a critical control.
       * The value of this constant is <tt>true</tt>.

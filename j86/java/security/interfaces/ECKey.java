@@ -22,9 +22,9 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.security.interfaces;
+package j86.j86.java.security.interfaces;
 
-import java.security.spec.ECParameterSpec;
+import j86.j86.java.security.spec.ECParameterSpec;
 
 /**
  * The interface to an elliptic curve (EC) key.

@@ -27,36 +27,36 @@
  * FTP stream opener.
  */
 
-package sun.net.www.protocol.ftp;
+package j86.j86.j86.sun.net.www.protocol.ftp;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.BufferedInputStream;
-import java.io.FilterInputStream;
-import java.io.FilterOutputStream;
-import java.io.FileNotFoundException;
-import java.net.URL;
-import java.net.SocketPermission;
-import java.net.UnknownHostException;
-import java.net.InetSocketAddress;
-import java.net.URI;
-import java.net.Proxy;
-import java.net.ProxySelector;
-import java.util.StringTokenizer;
-import java.util.Iterator;
-import java.security.Permission;
-import sun.net.NetworkClient;
-import sun.net.www.MessageHeader;
-import sun.net.www.MeteredStream;
-import sun.net.www.URLConnection;
-import sun.net.www.protocol.http.HttpURLConnection;
-import sun.net.ftp.FtpClient;
-import sun.net.ftp.FtpProtocolException;
-import sun.net.ProgressSource;
-import sun.net.ProgressMonitor;
-import sun.net.www.ParseUtil;
-import sun.security.action.GetPropertyAction;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.io.OutputStream;
+import j86.java.io.BufferedInputStream;
+import j86.java.io.FilterInputStream;
+import j86.java.io.FilterOutputStream;
+import j86.java.io.FileNotFoundException;
+import j86.java.net.URL;
+import j86.java.net.SocketPermission;
+import j86.java.net.UnknownHostException;
+import j86.java.net.InetSocketAddress;
+import j86.java.net.URI;
+import j86.java.net.Proxy;
+import j86.java.net.ProxySelector;
+import j86.java.util.StringTokenizer;
+import j86.java.util.Iterator;
+import j86.java.security.Permission;
+import j86.sun.net.NetworkClient;
+import j86.j86.sun.net.www.MessageHeader;
+import j86.j86.sun.net.www.MeteredStream;
+import j86.j86.sun.net.www.URLConnection;
+import j86.j86.j86.sun.net.www.protocol.http.HttpURLConnection;
+import j86.j86.sun.net.ftp.FtpClient;
+import j86.j86.sun.net.ftp.FtpProtocolException;
+import j86.sun.net.ProgressSource;
+import j86.sun.net.ProgressMonitor;
+import j86.j86.sun.net.www.ParseUtil;
+import j86.sun.security.action.GetPropertyAction;
 
 
 /**
@@ -76,7 +76,7 @@ import sun.security.action.GetPropertyAction;
  * ...<p>
  * is.close();</code>
  *
- * @see sun.net.ftp.FtpClient
+ * @see j86.j86.sun.net.ftp.FtpClient
  */
 public class FtpURLConnection extends URLConnection {
 
@@ -103,7 +103,7 @@ public class FtpURLConnection extends URLConnection {
     static final int BIN = 2;
     static final int DIR = 3;
     int type = NONE;
-    /* Redefine timeouts from java.net.URLConnection as we need -1 to mean
+    /* Redefine timeouts from j86.java.net.URLConnection as we need -1 to mean
      * not set. This is to ensure backward compatibility.
      */
     private int connectTimeout = NetworkClient.DEFAULT_CONNECT_TIMEOUT;;
@@ -215,14 +215,14 @@ public class FtpURLConnection extends URLConnection {
             /**
              * Do we have to use a proxy?
              */
-            ProxySelector sel = java.security.AccessController.doPrivileged(
-                    new java.security.PrivilegedAction<ProxySelector>() {
+            ProxySelector sel = j86.java.security.AccessController.doPrivileged(
+                    new j86.java.security.PrivilegedAction<ProxySelector>() {
                         public ProxySelector run() {
                             return ProxySelector.getDefault();
                         }
                     });
             if (sel != null) {
-                URI uri = sun.net.www.ParseUtil.toURI(url);
+                URI uri = j86.j86.sun.net.www.ParseUtil.toURI(url);
                 Iterator<Proxy> it = sel.select(uri).iterator();
                 while (it.hasNext()) {
                     p = it.next();
@@ -276,9 +276,9 @@ public class FtpURLConnection extends URLConnection {
 
         if (user == null) {
             user = "anonymous";
-            String vers = java.security.AccessController.doPrivileged(
+            String vers = j86.java.security.AccessController.doPrivileged(
                     new GetPropertyAction("java.version"));
-            password = java.security.AccessController.doPrivileged(
+            password = j86.java.security.AccessController.doPrivileged(
                     new GetPropertyAction("ftp.protocol.user",
                                           "Java" + vers + "@"));
         }
@@ -302,10 +302,10 @@ public class FtpURLConnection extends URLConnection {
         }
         try {
             ftp.login(user, password.toCharArray());
-        } catch (sun.net.ftp.FtpProtocolException e) {
+        } catch (j86.j86.sun.net.ftp.FtpProtocolException e) {
             ftp.close();
             // Backward compatibility
-            throw new sun.net.ftp.FtpLoginException("Invalid username/password");
+            throw new j86.j86.sun.net.ftp.FtpLoginException("Invalid username/password");
         }
         connected = true;
     }
@@ -571,7 +571,7 @@ public class FtpURLConnection extends URLConnection {
      *                  (e.g., "<code>accept</code>").
      * @param   value   the value associated with it.
      * @throws IllegalStateException if already connected
-     * @see #getRequestProperty(java.lang.String)
+     * @see #getRequestProperty(j86.java.lang.String)
      */
     @Override
     public void setRequestProperty(String key, String value) {
@@ -600,7 +600,7 @@ public class FtpURLConnection extends URLConnection {
      * @return  the value of the named general request property for this
      *           connection.
      * @throws IllegalStateException if already connected
-     * @see #setRequestProperty(java.lang.String, java.lang.String)
+     * @see #setRequestProperty(j86.java.lang.String, java.lang.String)
      */
     @Override
     public String getRequestProperty(String key) {

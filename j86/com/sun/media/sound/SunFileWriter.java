@@ -23,17 +23,17 @@
  * questions.
  */
 
-package com.sun.media.sound;
+package j86.com.sun.media.sound;
 
-import java.io.File;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.IOException;
-import java.io.DataInputStream;
+import j86.java.io.File;
+import j86.java.io.InputStream;
+import j86.java.io.OutputStream;
+import j86.java.io.IOException;
+import j86.java.io.DataInputStream;
 
-import javax.sound.sampled.AudioFileFormat;
-import javax.sound.sampled.AudioInputStream;
-import javax.sound.sampled.spi.AudioFileWriter;
+import j86.javax.sound.sampled.AudioFileFormat;
+import j86.javax.sound.sampled.AudioInputStream;
+import j86.j86.javax.sound.sampled.spi.AudioFileWriter;
 
 
 

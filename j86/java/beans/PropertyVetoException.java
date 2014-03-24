@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.beans;
+package j86.java.beans;
 
 
 /**

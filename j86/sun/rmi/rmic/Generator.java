@@ -30,10 +30,10 @@
  *
  */
 
-package sun.rmi.rmic;
+package j86.sun.rmi.rmic;
 
-import java.io.File;
-import sun.tools.java.ClassDefinition;
+import j86.java.io.File;
+import j86.sun.tools.java.ClassDefinition;
 
 /**
  * Generator defines the protocol for back-end implementations to be added

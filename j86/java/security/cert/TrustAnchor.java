@@ -23,15 +23,15 @@
  * questions.
  */
 
-package java.security.cert;
+package j86.j86.java.security.cert;
 
-import java.io.IOException;
-import java.security.PublicKey;
+import j86.java.io.IOException;
+import j86.java.security.PublicKey;
 
-import javax.security.auth.x500.X500Principal;
+import j86.j86.javax.security.auth.x500.X500Principal;
 
-import sun.security.x509.NameConstraintsExtension;
-import sun.security.x509.X500Name;
+import j86.sun.security.x509.NameConstraintsExtension;
+import j86.sun.security.x509.X500Name;
 
 /**
  * A trust anchor or most-trusted Certification Authority (CA).

@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing;
+package j86.javax.swing;
 
 /**
  * A data model for a combo box. This interface extends <code>ListDataModel</code>

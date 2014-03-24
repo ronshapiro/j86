@@ -23,16 +23,16 @@
  * questions.
  */
 
-package javax.imageio.event;
+package j86.j86.javax.imageio.event;
 
-import java.util.EventListener;
-import javax.imageio.ImageWriter;
+import j86.java.util.EventListener;
+import j86.javax.imageio.ImageWriter;
 
 /**
  * An interface used by <code>ImageWriter</code> implementations to notify
  * callers of their image writing methods of progress.
  *
- * @see javax.imageio.ImageWriter#write
+ * @see j86.javax.imageio.ImageWriter#write
  *
  */
 public interface IIOWriteProgressListener extends EventListener {

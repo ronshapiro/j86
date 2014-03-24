@@ -22,10 +22,10 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.nio.sctp;
+package j86.com.j86.sun.nio.sctp;
 
-import java.nio.ByteBuffer;
-import java.net.SocketAddress;
+import j86.java.nio.ByteBuffer;
+import j86.java.net.SocketAddress;
 
 /**
  * Notification emitted when a send failed notification has been received.
@@ -50,7 +50,7 @@ public abstract class SendFailedNotification implements Notification {
      * @return  The association that failed to send, or {@code null} if
      *          there is no association, that is, the notification follows a
      *          {@linkplain
-     *          com.sun.nio.sctp.AssociationChangeNotification.AssocChangeEvent#CANT_START}
+     *          j86.com.j86.sun.nio.sctp.AssociationChangeNotification.AssocChangeEvent#CANT_START}
      */
     @Override
     public abstract Association association();

@@ -22,14 +22,14 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.swing;
+package j86.sun.swing;
 
-import java.awt.Container;
-import java.awt.Insets;
-import javax.swing.*;
-import javax.swing.LayoutStyle.ComponentPlacement;
-import javax.swing.border.Border;
-import javax.swing.plaf.UIResource;
+import j86.java.awt.Container;
+import j86.java.awt.Insets;
+import j86.javax.swing.*;
+import j86.javax.swing.LayoutStyle.ComponentPlacement;
+import j86.j86.javax.swing.border.Border;
+import j86.j86.javax.swing.plaf.UIResource;
 
 /**
  * An implementation of <code>LayoutStyle</code> that returns 6 for related

@@ -23,10 +23,10 @@
  * questions.
  */
 
-package com.sun.jdi;
+package j86.com.sun.jdi;
 
-import java.util.List;
-import java.util.Map;
+import j86.java.util.List;
+import j86.java.util.Map;
 
 /**
  * The type of an object in a target VM. ReferenceType encompasses
@@ -39,7 +39,7 @@ import java.util.Map;
  * {@link ArrayType} for arrays.
  * Note that primitive classes (for example, the
  * {@link ClassObjectReference#reflectedType() reflected type} of
- * {@link java.lang.Integer#TYPE Integer.TYPE})
+ * {@link j86.java.lang.Integer#TYPE Integer.TYPE})
  * are represented as ClassType.
  * The VM creates Class objects for all three, so from the VM perspective,
  * each ReferenceType maps to a distinct Class object.
@@ -55,17 +55,17 @@ import java.util.Map;
  * <p>
  * Any method on <code>ReferenceType</code> which directly or
  * indirectly takes <code>ReferenceType</code> as an parameter may throw
- * {@link com.sun.jdi.VMDisconnectedException} if the target VM is
- * disconnected and the {@link com.sun.jdi.event.VMDisconnectEvent} has been or is
- * available to be read from the {@link com.sun.jdi.event.EventQueue}.
+ * {@link j86.com.sun.jdi.VMDisconnectedException} if the target VM is
+ * disconnected and the {@link j86.j86.com.sun.jdi.event.VMDisconnectEvent} has been or is
+ * available to be read from the {@link j86.j86.com.sun.jdi.event.EventQueue}.
  * <p>
  * Any method on <code>ReferenceType</code> which directly or
  * indirectly takes <code>ReferenceType</code> as an parameter may throw
- * {@link com.sun.jdi.VMOutOfMemoryException} if the target VM has run out of memory.
+ * {@link j86.com.sun.jdi.VMOutOfMemoryException} if the target VM has run out of memory.
  * <p>
  * Any method on <code>ReferenceType</code> or which directly or indirectly takes
  * <code>ReferenceType</code> as parameter may throw
- * {@link com.sun.jdi.ObjectCollectedException} if the mirrored type has been unloaded.
+ * {@link j86.com.sun.jdi.ObjectCollectedException} if the mirrored type has been unloaded.
  *
  * @see ObjectReference
  * @see ObjectReference#referenceType
@@ -90,7 +90,7 @@ public interface ReferenceType
      * For primitive classes
      * the returned name is the name of the corresponding primitive
      * type; for example, "int" is returned as the name of the class
-     * represented by {@link java.lang.Integer#TYPE Integer.TYPE}.
+     * represented by {@link j86.java.lang.Integer#TYPE Integer.TYPE}.
      * @return a string containing the type name.
      */
     String name();
@@ -186,9 +186,9 @@ public interface ReferenceType
      * the package name of this ReferenceType
      * converted to a platform dependent path.
      * For example, on a Windows platform,
-     * <CODE>java.lang.Thread</CODE>
+     * <CODE>j86.java.lang.Thread</CODE>
      * would return a List containing one element:
-     * <CODE>"java\lang\Thread.java"</CODE>.
+     * <CODE>"j86.java.lang\Thread.java"</CODE>.
      *
      * @param stratum The stratum to retrieve information from
      * or <code>null</code> for the declaring type's
@@ -216,7 +216,7 @@ public interface ReferenceType
      * @return as a string the source debug extension attribute
      * @throws AbsentInformationException if the extension is not
      * specified
-     * @throws java.lang.UnsupportedOperationException if
+     * @throws j86.java.lang.UnsupportedOperationException if
      * the target virtual machine does not support this
      * operation - see
      * {@link VirtualMachine#canGetSourceDebugExtension() canGetSourceDebugExtension()},
@@ -452,7 +452,7 @@ public interface ReferenceType
      * JNI signature for the target method:
      * <ul>
      * <li><code>()V</code>
-     * <li><code>([Ljava/lang/String;)V</code>
+     * <li><code>([Lj86.java.lang/String;)V</code>
      * <li><code>(IIII)Z</code>
      * </ul>
      * This method follows the inheritance rules specified
@@ -500,7 +500,7 @@ public interface ReferenceType
      *
      * @param field the field containing the requested value
      * @return the {@link Value} of the instance field.
-     * @throws java.lang.IllegalArgumentException if the field is not valid for
+     * @throws j86.java.lang.IllegalArgumentException if the field is not valid for
      * this object's class.
      */
     Value getValue(Field field);
@@ -516,7 +516,7 @@ public interface ReferenceType
      * requested values.
      * @return a Map of the requested {@link Field} objects with
      * their {@link Value}.
-     * @throws java.lang.IllegalArgumentException if any field is not valid for
+     * @throws j86.java.lang.IllegalArgumentException if any field is not valid for
      * this object's class.
      * @throws VMMismatchException if a {@link Mirror} argument and this mirror
      * do not belong to the same {@link VirtualMachine}.
@@ -602,7 +602,7 @@ public interface ReferenceType
      * <code>locationsOfLine(vm.getDefaultStratum(), null,
      * lineNumber)</code> -
      * see {@link
-     * #locationsOfLine(java.lang.String,java.lang.String,int)}
+     * #locationsOfLine(j86.java.lang.String,java.lang.String,int)}
      * for more information.
      *
      * @param lineNumber the line number
@@ -669,7 +669,7 @@ public interface ReferenceType
      * <P>
      * See the {@link Location} for a description of strata.
      *
-     * @return List of <CODE>java.lang.String</CODE>, each
+     * @return List of <CODE>j86.java.lang.String</CODE>, each
      * representing a stratum
      *
      * @since 1.4
@@ -706,11 +706,11 @@ public interface ReferenceType
      * @return a List of {@link ObjectReference} objects.  If there are
      * no instances of this ReferenceType, a zero-length list is returned.
      *
-     * @throws java.lang.UnsupportedOperationException if
+     * @throws j86.java.lang.UnsupportedOperationException if
      * the target virtual machine does not support this
      * operation - see
      * {@link VirtualMachine#canGetInstanceInfo() canGetInstanceInfo()}
-     * @throws java.lang.IllegalArgumentException if maxInstances is less
+     * @throws j86.java.lang.IllegalArgumentException if maxInstances is less
      *         than zero.
      * @since 1.6
      */
@@ -721,7 +721,7 @@ public interface ReferenceType
      *
      * @return  true if the Object is a {@link ReferenceType}, if the
      * ReferenceTypes belong to the same VM, and if they mirror classes
-     * which correspond to the same instance of java.lang.Class in that VM.
+     * which correspond to the same instance of j86.java.lang.Class in that VM.
      */
     boolean equals(Object obj);
 
@@ -745,7 +745,7 @@ public interface ReferenceType
      *
      * @return the major version number of the class.
      *
-     * @throws java.lang.UnsupportedOperationException if
+     * @throws j86.java.lang.UnsupportedOperationException if
      * the target virtual machine does not support this
      * operation - see
      * {@link VirtualMachine#canGetClassFileVersion() canGetClassFileVersion()}
@@ -768,7 +768,7 @@ public interface ReferenceType
      *
      * @return the minor version number of the class.
      *
-     * @throws java.lang.UnsupportedOperationException if
+     * @throws j86.java.lang.UnsupportedOperationException if
      * the target virtual machine does not support this
      * operation - see
      * {@link VirtualMachine#canGetClassFileVersion() canGetClassFileVersion()}
@@ -791,7 +791,7 @@ public interface ReferenceType
      *
      * @return total number of constant pool entries for a class plus one.
      *
-     * @throws java.lang.UnsupportedOperationException if
+     * @throws j86.java.lang.UnsupportedOperationException if
      * the target virtual machine does not support this
      * operation - see
      * {@link VirtualMachine#canGetConstantPool() canGetConstantPool()}
@@ -818,7 +818,7 @@ public interface ReferenceType
      *
      * @return the raw bytes of constant pool.
      *
-     * @throws java.lang.UnsupportedOperationException if
+     * @throws j86.java.lang.UnsupportedOperationException if
      * the target virtual machine does not support this
      * operation - see
      * {@link VirtualMachine#canGetConstantPool() canGetConstantPool()}

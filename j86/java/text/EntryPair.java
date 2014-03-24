@@ -36,7 +36,7 @@
  *
  */
 
-package java.text;
+package j86.java.text;
 
 /**
  * This is used for building contracting character tables.  entryName

@@ -23,21 +23,21 @@
  * questions.
  */
 
-package java.security.cert;
+package j86.j86.java.security.cert;
 
-import java.io.InputStream;
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.List;
-import java.security.Provider;
-import java.security.Security;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.security.NoSuchAlgorithmException;
-import java.security.NoSuchProviderException;
+import j86.java.io.InputStream;
+import j86.java.util.Collection;
+import j86.java.util.Iterator;
+import j86.java.util.List;
+import j86.java.security.Provider;
+import j86.java.security.Security;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.security.NoSuchAlgorithmException;
+import j86.java.security.NoSuchProviderException;
 
-import sun.security.jca.*;
-import sun.security.jca.GetInstance.Instance;
+import j86.sun.security.jca.*;
+import j86.sun.security.jca.GetInstance.Instance;
 
 /**
  * This class defines the functionality of a certificate factory, which is
@@ -52,8 +52,8 @@ import sun.security.jca.GetInstance.Instance;
  * validate it with a {@code CertPathValidator}.
  *
  * <p>A certificate factory for X.509 must return certificates that are an
- * instance of {@code java.security.cert.X509Certificate}, and CRLs
- * that are an instance of {@code java.security.cert.X509CRL}.
+ * instance of {@code j86.j86.java.security.cert.X509Certificate}, and CRLs
+ * that are an instance of {@code j86.j86.java.security.cert.X509CRL}.
  *
  * <p>The following example reads a file with Base64 encoded certificates,
  * which are each bounded at the beginning by -----BEGIN CERTIFICATE-----, and
@@ -175,7 +175,7 @@ public class CertificateFactory {
      *          CertificateFactorySpi implementation for the
      *          specified type.
      *
-     * @see java.security.Provider
+     * @see j86.java.security.Provider
      */
     public static final CertificateFactory getInstance(String type)
             throws CertificateException {
@@ -221,7 +221,7 @@ public class CertificateFactory {
      * @exception IllegalArgumentException if the provider name is null
      *          or empty.
      *
-     * @see java.security.Provider
+     * @see j86.java.security.Provider
      */
     public static final CertificateFactory getInstance(String type,
             String provider) throws CertificateException,
@@ -261,7 +261,7 @@ public class CertificateFactory {
      * @exception IllegalArgumentException if the {@code provider} is
      *          null.
      *
-     * @see java.security.Provider
+     * @see j86.java.security.Provider
      *
      * @since 1.4
      */
@@ -316,8 +316,8 @@ public class CertificateFactory {
      * the end by -----END CERTIFICATE-----.
      *
      * <p>Note that if the given input stream does not support
-     * {@link java.io.InputStream#mark(int) mark} and
-     * {@link java.io.InputStream#reset() reset}, this method will
+     * {@link j86.java.io.InputStream#mark(int) mark} and
+     * {@link j86.java.io.InputStream#reset() reset}, this method will
      * consume the entire input stream. Otherwise, each call to this
      * method consumes one certificate and the read position of the
      * input stream is positioned to the next available byte after
@@ -436,7 +436,7 @@ public class CertificateFactory {
      * <p>In the case of a certificate factory for X.509 certificates,
      * {@code inStream} may contain a sequence of DER-encoded certificates
      * in the formats described for
-     * {@link #generateCertificate(java.io.InputStream) generateCertificate}.
+     * {@link #generateCertificate(j86.java.io.InputStream) generateCertificate}.
      * In addition, {@code inStream} may contain a PKCS#7 certificate
      * chain. This is a PKCS#7 <i>SignedData</i> object, with the only
      * significant field being <i>certificates</i>. In particular, the
@@ -445,14 +445,14 @@ public class CertificateFactory {
      * an empty collection is returned.
      *
      * <p>Note that if the given input stream does not support
-     * {@link java.io.InputStream#mark(int) mark} and
-     * {@link java.io.InputStream#reset() reset}, this method will
+     * {@link j86.java.io.InputStream#mark(int) mark} and
+     * {@link j86.java.io.InputStream#reset() reset}, this method will
      * consume the entire input stream.
      *
      * @param inStream the input stream with the certificates.
      *
      * @return a (possibly empty) collection view of
-     * java.security.cert.Certificate objects
+     * j86.j86.java.security.cert.Certificate objects
      * initialized with the data from the input stream.
      *
      * @exception CertificateException on parsing errors.
@@ -474,8 +474,8 @@ public class CertificateFactory {
      * can be typecast to the {@code X509CRL} class.
      *
      * <p>Note that if the given input stream does not support
-     * {@link java.io.InputStream#mark(int) mark} and
-     * {@link java.io.InputStream#reset() reset}, this method will
+     * {@link j86.java.io.InputStream#mark(int) mark} and
+     * {@link j86.java.io.InputStream#reset() reset}, this method will
      * consume the entire input stream. Otherwise, each call to this
      * method consumes one CRL and the read position of the input stream
      * is positioned to the next available byte after the inherent
@@ -518,14 +518,14 @@ public class CertificateFactory {
      * an empty collection is returned.
      *
      * <p>Note that if the given input stream does not support
-     * {@link java.io.InputStream#mark(int) mark} and
-     * {@link java.io.InputStream#reset() reset}, this method will
+     * {@link j86.java.io.InputStream#mark(int) mark} and
+     * {@link j86.java.io.InputStream#reset() reset}, this method will
      * consume the entire input stream.
      *
      * @param inStream the input stream with the CRLs.
      *
      * @return a (possibly empty) collection view of
-     * java.security.cert.CRL objects initialized with the data from the input
+     * j86.j86.java.security.cert.CRL objects initialized with the data from the input
      * stream.
      *
      * @exception CRLException on parsing errors.

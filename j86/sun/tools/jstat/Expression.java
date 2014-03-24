@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.tools.jstat;
+package j86.sun.tools.jstat;
 
 /**
  * A class that represents a mathematical expression as a tree structure

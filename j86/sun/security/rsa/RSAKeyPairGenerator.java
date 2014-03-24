@@ -23,15 +23,15 @@
  * questions.
  */
 
-package sun.security.rsa;
+package j86.sun.security.rsa;
 
-import java.math.BigInteger;
+import j86.java.math.BigInteger;
 
-import java.security.*;
-import java.security.spec.AlgorithmParameterSpec;
-import java.security.spec.RSAKeyGenParameterSpec;
+import j86.java.security.*;
+import j86.j86.java.security.spec.AlgorithmParameterSpec;
+import j86.j86.java.security.spec.RSAKeyGenParameterSpec;
 
-import sun.security.jca.JCAUtil;
+import j86.sun.security.jca.JCAUtil;
 
 /**
  * RSA keypair generation. Standard algorithm, minimum key length 512 bit.

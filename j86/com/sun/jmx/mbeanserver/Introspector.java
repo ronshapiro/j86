@@ -23,40 +23,40 @@
  * questions.
  */
 
-package com.sun.jmx.mbeanserver;
+package j86.com.sun.jmx.mbeanserver;
 
-import java.lang.annotation.Annotation;
-import java.lang.ref.SoftReference;
-import java.lang.reflect.AnnotatedElement;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Method;
-import java.lang.reflect.Modifier;
-import java.lang.reflect.Proxy;
-import java.lang.reflect.UndeclaredThrowableException;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.LinkedList;
-import java.util.Locale;
-import java.util.Map;
-import java.util.WeakHashMap;
+import j86.j86.java.lang.annotation.Annotation;
+import j86.j86.java.lang.ref.SoftReference;
+import j86.j86.j86.java.lang.reflect.AnnotatedElement;
+import j86.j86.j86.java.lang.reflect.Constructor;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.j86.j86.java.lang.reflect.Modifier;
+import j86.j86.j86.java.lang.reflect.Proxy;
+import j86.j86.j86.java.lang.reflect.UndeclaredThrowableException;
+import j86.java.util.Arrays;
+import j86.java.util.Collections;
+import j86.java.util.HashMap;
+import j86.java.util.List;
+import j86.java.util.LinkedList;
+import j86.java.util.Locale;
+import j86.java.util.Map;
+import j86.java.util.WeakHashMap;
 
-import javax.management.Descriptor;
-import javax.management.DescriptorKey;
-import javax.management.DynamicMBean;
-import javax.management.ImmutableDescriptor;
-import javax.management.MBeanInfo;
-import javax.management.NotCompliantMBeanException;
+import j86.javax.management.Descriptor;
+import j86.javax.management.DescriptorKey;
+import j86.javax.management.DynamicMBean;
+import j86.javax.management.ImmutableDescriptor;
+import j86.javax.management.MBeanInfo;
+import j86.javax.management.NotCompliantMBeanException;
 
-import com.sun.jmx.remote.util.EnvHelp;
-import java.lang.reflect.Array;
-import java.lang.reflect.InvocationTargetException;
-import java.security.AccessController;
-import javax.management.AttributeNotFoundException;
-import javax.management.openmbean.CompositeData;
-import sun.reflect.misc.MethodUtil;
-import sun.reflect.misc.ReflectUtil;
+import j86.com.sun.jmx.remote.util.EnvHelp;
+import j86.j86.j86.java.lang.reflect.Array;
+import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.java.security.AccessController;
+import j86.javax.management.AttributeNotFoundException;
+import j86.j86.javax.management.openmbean.CompositeData;
+import j86.j86.sun.reflect.misc.MethodUtil;
+import j86.j86.sun.reflect.misc.ReflectUtil;
 
 /**
  * This class contains the methods for performing all the tests needed to verify
@@ -95,7 +95,7 @@ public class Introspector {
      * Tell whether a MBean of the given class is a Dynamic MBean.
      * This method does nothing more than returning
      * <pre>
-     * javax.management.DynamicMBean.class.isAssignableFrom(c)
+     * j86.javax.management.DynamicMBean.class.isAssignableFrom(c)
      * </pre>
      * This method does not check for any JMX MBean compliance:
      * <ul><li>If <code>true</code> is returned, then instances of
@@ -112,7 +112,7 @@ public class Introspector {
      **/
     public static final boolean isDynamic(final Class<?> c) {
         // Check if the MBean implements the DynamicMBean interface
-        return javax.management.DynamicMBean.class.isAssignableFrom(c);
+        return j86.javax.management.DynamicMBean.class.isAssignableFrom(c);
     }
 
     /**
@@ -210,7 +210,7 @@ public class Introspector {
      * @param baseClass The class to be tested
      *
      * @return <code>null</code> if the MBean is a DynamicMBean,
-     *         the computed {@link javax.management.MBeanInfo} otherwise.
+     *         the computed {@link j86.javax.management.MBeanInfo} otherwise.
      * @exception NotCompliantMBeanException The specified class is not a
      *            JMX compliant MBean
      */
@@ -257,14 +257,14 @@ public class Introspector {
     /**
      * Basic method for testing if a given class is a JMX compliant
      * Standard MBean.  This method is only called by the legacy code
-     * in com.sun.management.jmx.
+     * in com.j86.sun.management.jmx.
      *
      * @param baseClass The class to be tested.
      *
      * @param mbeanInterface the MBean interface that the class implements,
      * or null if the interface must be determined by introspection.
      *
-     * @return the computed {@link javax.management.MBeanInfo}.
+     * @return the computed {@link j86.javax.management.MBeanInfo}.
      * @exception NotCompliantMBeanException The specified class is not a
      *            JMX compliant Standard MBean
      */
@@ -290,7 +290,7 @@ public class Introspector {
     /**
      * Get the MBean interface implemented by a JMX Standard
      * MBean class. This method is only called by the legacy
-     * code in "com.sun.management.jmx".
+     * code in "com.j86.sun.management.jmx".
      *
      * @param baseClass The class to be tested.
      *
@@ -471,7 +471,7 @@ public class Introspector {
 
     // Convert a value from an annotation element to a descriptor field value
     // E.g. with @interface Foo {class value()} an annotation @Foo(String.class)
-    // will produce a Descriptor field value "java.lang.String"
+    // will produce a Descriptor field value "j86.java.lang.String"
     private static Object annotationToField(Object x) {
         // An annotation element cannot have a null value but never mind
         if (x == null)
@@ -699,15 +699,15 @@ public class Introspector {
 
     /**
      * A class that provides access to the JavaBeans Introspector and
-     * PropertyDescriptors without creating a static dependency on java.beans.
+     * PropertyDescriptors without creating a static dependency on j86.java.beans.
      */
     private static class BeansHelper {
         private static final Class<?> introspectorClass =
-            getClass("java.beans.Introspector");
+            getClass("j86.java.beans.Introspector");
         private static final Class<?> beanInfoClass =
-            (introspectorClass == null) ? null : getClass("java.beans.BeanInfo");
+            (introspectorClass == null) ? null : getClass("j86.java.beans.BeanInfo");
         private static final Class<?> getPropertyDescriptorClass =
-            (beanInfoClass == null) ? null : getClass("java.beans.PropertyDescriptor");
+            (beanInfoClass == null) ? null : getClass("j86.java.beans.PropertyDescriptor");
 
         private static final Method getBeanInfo =
             getMethod(introspectorClass, "getBeanInfo", Class.class);
@@ -743,14 +743,14 @@ public class Introspector {
         private BeansHelper() { }
 
         /**
-         * Returns {@code true} if java.beans is available.
+         * Returns {@code true} if j86.java.beans is available.
          */
         static boolean isAvailable() {
             return introspectorClass != null;
         }
 
         /**
-         * Invokes java.beans.Introspector.getBeanInfo(Class)
+         * Invokes j86.java.beans.Introspector.getBeanInfo(Class)
          */
         static Object getBeanInfo(Class<?> clazz) throws Exception {
             try {
@@ -766,7 +766,7 @@ public class Introspector {
         }
 
         /**
-         * Invokes java.beans.BeanInfo.getPropertyDescriptors()
+         * Invokes j86.java.beans.BeanInfo.getPropertyDescriptors()
          */
         static Object[] getPropertyDescriptors(Object bi) {
             try {
@@ -782,7 +782,7 @@ public class Introspector {
         }
 
         /**
-         * Invokes java.beans.PropertyDescriptor.getName()
+         * Invokes j86.java.beans.PropertyDescriptor.getName()
          */
         static String getPropertyName(Object pd) {
             try {
@@ -798,7 +798,7 @@ public class Introspector {
         }
 
         /**
-         * Invokes java.beans.PropertyDescriptor.getReadMethod()
+         * Invokes j86.java.beans.PropertyDescriptor.getReadMethod()
          */
         static Method getReadMethod(Object pd) {
             try {

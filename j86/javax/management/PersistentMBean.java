@@ -28,11 +28,11 @@
  * Copyright IBM Corp. 1999-2000.  All rights reserved.
  */
 
-package javax.management;
+package j86.javax.management;
 
-import javax.management.MBeanException;
-import javax.management.RuntimeOperationsException;
-import javax.management.InstanceNotFoundException;
+import j86.javax.management.MBeanException;
+import j86.javax.management.RuntimeOperationsException;
+import j86.javax.management.InstanceNotFoundException;
 
 /**
  *  This class is the interface to be implemented by MBeans that are meant to be

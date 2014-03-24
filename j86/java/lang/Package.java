@@ -23,36 +23,36 @@
  * questions.
  */
 
-package java.lang;
+package j86.java.lang;
 
-import java.lang.reflect.AnnotatedElement;
-import java.io.InputStream;
-import java.util.Enumeration;
+import j86.j86.j86.java.lang.reflect.AnnotatedElement;
+import j86.java.io.InputStream;
+import j86.java.util.Enumeration;
 
-import java.util.StringTokenizer;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.net.URL;
-import java.net.MalformedURLException;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
+import j86.java.util.StringTokenizer;
+import j86.java.io.File;
+import j86.java.io.FileInputStream;
+import j86.java.io.FileNotFoundException;
+import j86.java.io.IOException;
+import j86.java.net.URL;
+import j86.java.net.MalformedURLException;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
 
-import java.util.jar.JarInputStream;
-import java.util.jar.Manifest;
-import java.util.jar.Attributes;
-import java.util.jar.Attributes.Name;
-import java.util.jar.JarException;
-import java.util.Map;
-import java.util.HashMap;
-import java.util.Iterator;
+import j86.j86.java.util.jar.JarInputStream;
+import j86.j86.java.util.jar.Manifest;
+import j86.j86.java.util.jar.Attributes;
+import j86.j86.java.util.jar.Attributes.Name;
+import j86.j86.java.util.jar.JarException;
+import j86.java.util.Map;
+import j86.java.util.HashMap;
+import j86.java.util.Iterator;
 
-import sun.net.www.ParseUtil;
-import sun.reflect.CallerSensitive;
-import sun.reflect.Reflection;
+import j86.j86.sun.net.www.ParseUtil;
+import j86.sun.reflect.CallerSensitive;
+import j86.sun.reflect.Reflection;
 
-import java.lang.annotation.Annotation;
+import j86.j86.java.lang.annotation.Annotation;
 
 /**
  * {@code Package} objects contain version information
@@ -108,13 +108,13 @@ import java.lang.annotation.Annotation;
  *
  * @see ClassLoader#definePackage
  */
-public class Package implements java.lang.reflect.AnnotatedElement {
+public class Package implements j86.j86.j86.java.lang.reflect.AnnotatedElement {
     /**
      * Return the name of this package.
      *
      * @return  The fully-qualified name of this package as defined in section 6.5.3 of
      *          <cite>The Java&trade; Language Specification</cite>,
-     *          for example, {@code java.lang}
+     *          for example, {@code j86.java.lang}
      */
     public String getName() {
         return pkgName;
@@ -271,7 +271,7 @@ public class Package implements java.lang.reflect.AnnotatedElement {
      * loader created the package instance with the appropriate attributes. Typically,
      * those attributes are defined in the manifests that accompany the classes.
      *
-     * @param name a package name, for example, java.lang.
+     * @param name a package name, for example, j86.java.lang.
      * @return the package of the requested name. It may be null if no package
      *          information is available from the archive or codebase.
      */

@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.management;
+package j86.sun.management;
 
-import sun.management.counter.Counter;
+import j86.j86.sun.management.counter.Counter;
 
 /**
  * Hotspot internal management interface for the thread system.
@@ -48,12 +48,12 @@ public interface HotspotThreadMBean {
      * @return a <tt>Map</tt> object of the name of all VM internal threads
      * to the thread CPU time in nanoseconds.
      *
-     * @throws java.lang.UnsupportedOperationException if the Java virtual
+     * @throws j86.java.lang.UnsupportedOperationException if the Java virtual
      * machine does not support CPU time measurement.
      *
-     * @see java.lang.management.ThreadMBean#isThreadCpuTimeSupported
+     * @see j86.j86.java.lang.management.ThreadMBean#isThreadCpuTimeSupported
      */
-    public java.util.Map<String,Long> getInternalThreadCpuTimes();
+    public j86.java.util.Map<String,Long> getInternalThreadCpuTimes();
 
     /**
      * Returns a list of internal counters maintained in the Java
@@ -62,5 +62,5 @@ public interface HotspotThreadMBean {
      * @return a list of internal counters maintained in the VM
      * for the thread system.
      */
-    public java.util.List<Counter> getInternalThreadingCounters();
+    public j86.java.util.List<Counter> getInternalThreadingCounters();
 }

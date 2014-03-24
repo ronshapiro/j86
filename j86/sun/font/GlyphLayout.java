@@ -66,19 +66,19 @@
  * but it assists in reuse of the GlyphLayout.
  */
 
-package sun.font;
+package j86.sun.font;
 
-import java.lang.ref.SoftReference;
-import java.awt.Font;
-import java.awt.font.FontRenderContext;
-import java.awt.font.GlyphVector;
-import java.awt.geom.AffineTransform;
-import java.awt.geom.NoninvertibleTransformException;
-import java.awt.geom.Point2D;
-import java.util.ArrayList;
-import java.util.concurrent.ConcurrentHashMap;
+import j86.j86.java.lang.ref.SoftReference;
+import j86.java.awt.Font;
+import j86.j86.java.awt.font.FontRenderContext;
+import j86.j86.java.awt.font.GlyphVector;
+import j86.j86.java.awt.geom.AffineTransform;
+import j86.j86.java.awt.geom.NoninvertibleTransformException;
+import j86.j86.java.awt.geom.Point2D;
+import j86.java.util.ArrayList;
+import j86.j86.java.util.concurrent.ConcurrentHashMap;
 
-import static java.lang.Character.*;
+import static j86.java.lang.Character.*;
 
 public final class GlyphLayout {
     // data for glyph vector
@@ -354,7 +354,7 @@ public final class GlyphLayout {
      * @param text the text, including optional context before start and after start + count
      * @param offset the start of the text to lay out
      * @param count the length of the text to lay out
-     * @param flags bidi and context flags {@see #java.awt.Font}
+     * @param flags bidi and context flags {@see #j86.java.awt.Font}
      * @param result a StandardGlyphVector to modify, can be null
      * @return the layed out glyphvector, if result was passed in, it is returned
      */

@@ -23,26 +23,26 @@
  * questions.
  */
 
-package javax.swing;
+package j86.javax.swing;
 
-import java.awt.*;
-import java.awt.event.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
 
-import javax.swing.event.*;
-import javax.swing.text.*;
-import javax.swing.plaf.SpinnerUI;
+import j86.j86.javax.swing.event.*;
+import j86.j86.javax.swing.text.*;
+import j86.j86.javax.swing.plaf.SpinnerUI;
 
-import java.util.*;
-import java.beans.*;
-import java.text.*;
-import java.io.*;
-import java.text.spi.DateFormatProvider;
-import java.text.spi.NumberFormatProvider;
+import j86.java.util.*;
+import j86.java.beans.*;
+import j86.java.text.*;
+import j86.java.io.*;
+import j86.j86.java.text.spi.DateFormatProvider;
+import j86.j86.java.text.spi.NumberFormatProvider;
 
-import javax.accessibility.*;
-import sun.util.locale.provider.LocaleProviderAdapter;
-import sun.util.locale.provider.LocaleResources;
-import sun.util.locale.provider.LocaleServiceProviderPool;
+import j86.javax.accessibility.*;
+import j86.j86.j86.sun.util.locale.provider.LocaleProviderAdapter;
+import j86.j86.j86.sun.util.locale.provider.LocaleResources;
+import j86.j86.j86.sun.util.locale.provider.LocaleServiceProviderPool;
 
 
 /**
@@ -107,8 +107,8 @@ import sun.util.locale.provider.LocaleServiceProviderPool;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @beaninfo
  *   attribute: isContainer false
@@ -871,8 +871,8 @@ public class JSpinner extends JComponent implements Accessible
          * Returns the baseline.
          *
          * @throws IllegalArgumentException {@inheritDoc}
-         * @see javax.swing.JComponent#getBaseline(int,int)
-         * @see javax.swing.JComponent#getBaselineResizeBehavior()
+         * @see j86.javax.swing.JComponent#getBaseline(int,int)
+         * @see j86.javax.swing.JComponent#getBaselineResizeBehavior()
          * @since 1.6
          */
         public int getBaseline(int width, int height) {
@@ -893,7 +893,7 @@ public class JSpinner extends JComponent implements Accessible
          * changes as the size changes.
          *
          * @throws NullPointerException {@inheritDoc}
-         * @see javax.swing.JComponent#getBaseline(int, int)
+         * @see j86.javax.swing.JComponent#getBaseline(int, int)
          * @since 1.6
          */
         public BaselineResizeBehavior getBaselineResizeBehavior() {
@@ -905,7 +905,7 @@ public class JSpinner extends JComponent implements Accessible
 
 
     /**
-     * This subclass of javax.swing.DateFormatter maps the minimum/maximum
+     * This subclass of j86.javax.swing.DateFormatter maps the minimum/maximum
      * properties to te start/end properties of a SpinnerDateModel.
      */
     private static class DateEditorFormatter extends DateFormatter {
@@ -996,7 +996,7 @@ public class JSpinner extends JComponent implements Accessible
          * @see #getModel
          * @see #getFormat
          * @see SpinnerDateModel
-         * @see java.text.SimpleDateFormat
+         * @see j86.java.text.SimpleDateFormat
          */
         public DateEditor(JSpinner spinner, String dateFormatPattern) {
             this(spinner, new SimpleDateFormat(dateFormatPattern,
@@ -1021,7 +1021,7 @@ public class JSpinner extends JComponent implements Accessible
          * @see #getModel
          * @see #getFormat
          * @see SpinnerDateModel
-         * @see java.text.SimpleDateFormat
+         * @see j86.java.text.SimpleDateFormat
          */
         private DateEditor(JSpinner spinner, DateFormat format) {
             super(spinner);
@@ -1054,13 +1054,13 @@ public class JSpinner extends JComponent implements Accessible
         }
 
         /**
-         * Returns the <code>java.text.SimpleDateFormat</code> object the
+         * Returns the <code>j86.java.text.SimpleDateFormat</code> object the
          * <code>JFormattedTextField</code> uses to parse and format
          * numbers.
          *
          * @return the value of <code>getTextField().getFormatter().getFormat()</code>.
          * @see #getTextField
-         * @see java.text.SimpleDateFormat
+         * @see j86.java.text.SimpleDateFormat
          */
         public SimpleDateFormat getFormat() {
             return (SimpleDateFormat)((DateFormatter)(getTextField().getFormatter())).getFormat();
@@ -1081,7 +1081,7 @@ public class JSpinner extends JComponent implements Accessible
 
 
     /**
-     * This subclass of javax.swing.NumberFormatter maps the minimum/maximum
+     * This subclass of j86.javax.swing.NumberFormatter maps the minimum/maximum
      * properties to a SpinnerNumberModel and initializes the valueClass
      * of the NumberFormatter to match the type of the initial models value.
      */
@@ -1179,7 +1179,7 @@ public class JSpinner extends JComponent implements Accessible
          *
          * @see #getTextField
          * @see SpinnerNumberModel
-         * @see java.text.DecimalFormat
+         * @see j86.java.text.DecimalFormat
          */
         public NumberEditor(JSpinner spinner, String decimalFormatPattern) {
             this(spinner, new DecimalFormat(decimalFormatPattern));
@@ -1203,7 +1203,7 @@ public class JSpinner extends JComponent implements Accessible
          *
          * @see #getTextField
          * @see SpinnerNumberModel
-         * @see java.text.DecimalFormat
+         * @see j86.java.text.DecimalFormat
          */
         private NumberEditor(JSpinner spinner, DecimalFormat format) {
             super(spinner);
@@ -1240,13 +1240,13 @@ public class JSpinner extends JComponent implements Accessible
 
 
         /**
-         * Returns the <code>java.text.DecimalFormat</code> object the
+         * Returns the <code>j86.java.text.DecimalFormat</code> object the
          * <code>JFormattedTextField</code> uses to parse and format
          * numbers.
          *
          * @return the value of <code>getTextField().getFormatter().getFormat()</code>.
          * @see #getTextField
-         * @see java.text.DecimalFormat
+         * @see j86.java.text.DecimalFormat
          */
         public DecimalFormat getFormat() {
             return (DecimalFormat)((NumberFormatter)(getTextField().getFormatter())).getFormat();

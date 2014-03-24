@@ -23,22 +23,22 @@
  * questions.
  */
 
-package javax.swing.plaf.synth;
+package j86.j86.j86.javax.swing.plaf.synth;
 
-import java.awt.*;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
+import j86.java.awt.*;
+import j86.java.beans.PropertyChangeEvent;
+import j86.java.beans.PropertyChangeListener;
 
-import javax.swing.*;
-import javax.swing.plaf.basic.BasicHTML;
-import javax.swing.plaf.basic.BasicToolTipUI;
-import javax.swing.plaf.ComponentUI;
-import javax.swing.text.View;
+import j86.javax.swing.*;
+import j86.j86.j86.javax.swing.plaf.basic.BasicHTML;
+import j86.j86.j86.javax.swing.plaf.basic.BasicToolTipUI;
+import j86.j86.javax.swing.plaf.ComponentUI;
+import j86.j86.javax.swing.text.View;
 
 
 /**
  * Provides the Synth L&amp;F UI delegate for
- * {@link javax.swing.JToolTip}.
+ * {@link j86.javax.swing.JToolTip}.
  *
  * @author Joshua Outwater
  * @since 1.7

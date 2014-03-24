@@ -22,15 +22,15 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.lang.reflect;
+package j86.j86.j86.java.lang.reflect;
 
-import java.lang.ref.ReferenceQueue;
-import java.lang.ref.WeakReference;
-import java.util.Objects;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentMap;
-import java.util.function.BiFunction;
-import java.util.function.Supplier;
+import j86.j86.java.lang.ref.ReferenceQueue;
+import j86.j86.java.lang.ref.WeakReference;
+import j86.java.util.Objects;
+import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.j86.java.util.concurrent.ConcurrentMap;
+import j86.j86.java.util.function.BiFunction;
+import j86.j86.java.util.function.Supplier;
 
 /**
  * Cache mapping pairs of {@code (key, sub-key) -> value}. Keys and values are

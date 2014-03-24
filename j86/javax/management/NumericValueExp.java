@@ -23,17 +23,17 @@
  * questions.
  */
 
-package javax.management;
+package j86.javax.management;
 
 
-import com.sun.jmx.mbeanserver.GetPropertyAction;
+import j86.com.sun.jmx.mbeanserver.GetPropertyAction;
 
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.ObjectStreamField;
+import j86.java.io.IOException;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectStreamField;
 
-import java.security.AccessController;
+import j86.java.security.AccessController;
 
 /**
  * This class represents numbers that are arguments to relational constraints.

@@ -23,13 +23,13 @@
  * questions.
  */
 
-package java.awt.image;
+package j86.j86.j86.java.awt.image;
 
-import java.util.Hashtable;
-import java.awt.image.ImageProducer;
-import java.awt.image.ImageConsumer;
-import java.awt.image.ColorModel;
-import java.awt.Image;
+import j86.java.util.Hashtable;
+import j86.j86.j86.java.awt.image.ImageProducer;
+import j86.j86.j86.java.awt.image.ImageConsumer;
+import j86.j86.j86.java.awt.image.ColorModel;
+import j86.java.awt.Image;
 
 /**
  * The PixelGrabber class implements an ImageConsumer which can be attached

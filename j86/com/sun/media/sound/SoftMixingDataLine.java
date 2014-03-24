@@ -22,22 +22,22 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.media.sound;
+package j86.com.sun.media.sound;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import j86.java.io.IOException;
+import j86.java.util.ArrayList;
+import j86.java.util.Arrays;
+import j86.java.util.List;
 
-import javax.sound.sampled.AudioFormat;
-import javax.sound.sampled.AudioSystem;
-import javax.sound.sampled.BooleanControl;
-import javax.sound.sampled.Control;
-import javax.sound.sampled.DataLine;
-import javax.sound.sampled.FloatControl;
-import javax.sound.sampled.LineEvent;
-import javax.sound.sampled.LineListener;
-import javax.sound.sampled.Control.Type;
+import j86.javax.sound.sampled.AudioFormat;
+import j86.javax.sound.sampled.AudioSystem;
+import j86.javax.sound.sampled.BooleanControl;
+import j86.javax.sound.sampled.Control;
+import j86.javax.sound.sampled.DataLine;
+import j86.javax.sound.sampled.FloatControl;
+import j86.javax.sound.sampled.LineEvent;
+import j86.javax.sound.sampled.LineListener;
+import j86.javax.sound.sampled.Control.Type;
 
 /**
  * General software mixing line.
@@ -488,7 +488,7 @@ public abstract class SoftMixingDataLine implements DataLine {
         }
     }
 
-    public final javax.sound.sampled.Line.Info getLineInfo() {
+    public final j86.javax.sound.sampled.Line.Info getLineInfo() {
         return info;
     }
 

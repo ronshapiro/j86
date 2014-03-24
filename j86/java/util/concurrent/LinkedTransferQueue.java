@@ -33,18 +33,18 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package java.util.concurrent;
+package j86.j86.java.util.concurrent;
 
-import java.util.AbstractQueue;
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.NoSuchElementException;
-import java.util.Queue;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.locks.LockSupport;
-import java.util.Spliterator;
-import java.util.Spliterators;
-import java.util.function.Consumer;
+import j86.java.util.AbstractQueue;
+import j86.java.util.Collection;
+import j86.java.util.Iterator;
+import j86.java.util.NoSuchElementException;
+import j86.java.util.Queue;
+import j86.j86.java.util.concurrent.TimeUnit;
+import j86.j86.j86.java.util.concurrent.locks.LockSupport;
+import j86.java.util.Spliterator;
+import j86.java.util.Spliterators;
+import j86.j86.java.util.function.Consumer;
 
 /**
  * An unbounded {@link TransferQueue} based on linked nodes.
@@ -86,7 +86,7 @@ import java.util.function.Consumer;
  * @param <E> the type of elements held in this collection
  */
 public class LinkedTransferQueue<E> extends AbstractQueue<E>
-    implements TransferQueue<E>, java.io.Serializable {
+    implements TransferQueue<E>, j86.java.io.Serializable {
     private static final long serialVersionUID = -3223113410248163686L;
 
     /*
@@ -538,13 +538,13 @@ public class LinkedTransferQueue<E> extends AbstractQueue<E>
         private static final long serialVersionUID = -3375979862319811754L;
 
         // Unsafe mechanics
-        private static final sun.misc.Unsafe UNSAFE;
+        private static final j86.sun.misc.Unsafe UNSAFE;
         private static final long itemOffset;
         private static final long nextOffset;
         private static final long waiterOffset;
         static {
             try {
-                UNSAFE = sun.misc.Unsafe.getUnsafe();
+                UNSAFE = j86.sun.misc.Unsafe.getUnsafe();
                 Class<?> k = Node.class;
                 itemOffset = UNSAFE.objectFieldOffset
                     (k.getDeclaredField("item"));
@@ -1172,7 +1172,7 @@ public class LinkedTransferQueue<E> extends AbstractQueue<E>
      * return {@code false}.
      *
      * @return {@code true} (as specified by
-     *  {@link java.util.concurrent.BlockingQueue#offer(Object,long,TimeUnit)
+     *  {@link j86.j86.java.util.concurrent.BlockingQueue#offer(Object,long,TimeUnit)
      *  BlockingQueue.offer})
      * @throws NullPointerException if the specified element is null
      */
@@ -1410,7 +1410,7 @@ public class LinkedTransferQueue<E> extends AbstractQueue<E>
      * {@code LinkedTransferQueue} is not capacity constrained.
      *
      * @return {@code Integer.MAX_VALUE} (as specified by
-     *         {@link java.util.concurrent.BlockingQueue#remainingCapacity()
+     *         {@link j86.j86.java.util.concurrent.BlockingQueue#remainingCapacity()
      *         BlockingQueue.remainingCapacity})
      */
     public int remainingCapacity() {
@@ -1421,12 +1421,12 @@ public class LinkedTransferQueue<E> extends AbstractQueue<E>
      * Saves this queue to a stream (that is, serializes it).
      *
      * @param s the stream
-     * @throws java.io.IOException if an I/O error occurs
+     * @throws j86.java.io.IOException if an I/O error occurs
      * @serialData All of the elements (each an {@code E}) in
      * the proper order, followed by a null
      */
-    private void writeObject(java.io.ObjectOutputStream s)
-        throws java.io.IOException {
+    private void writeObject(j86.java.io.ObjectOutputStream s)
+        throws j86.java.io.IOException {
         s.defaultWriteObject();
         for (E e : this)
             s.writeObject(e);
@@ -1439,10 +1439,10 @@ public class LinkedTransferQueue<E> extends AbstractQueue<E>
      * @param s the stream
      * @throws ClassNotFoundException if the class of a serialized object
      *         could not be found
-     * @throws java.io.IOException if an I/O error occurs
+     * @throws j86.java.io.IOException if an I/O error occurs
      */
-    private void readObject(java.io.ObjectInputStream s)
-        throws java.io.IOException, ClassNotFoundException {
+    private void readObject(j86.java.io.ObjectInputStream s)
+        throws j86.java.io.IOException, ClassNotFoundException {
         s.defaultReadObject();
         for (;;) {
             @SuppressWarnings("unchecked")
@@ -1456,13 +1456,13 @@ public class LinkedTransferQueue<E> extends AbstractQueue<E>
 
     // Unsafe mechanics
 
-    private static final sun.misc.Unsafe UNSAFE;
+    private static final j86.sun.misc.Unsafe UNSAFE;
     private static final long headOffset;
     private static final long tailOffset;
     private static final long sweepVotesOffset;
     static {
         try {
-            UNSAFE = sun.misc.Unsafe.getUnsafe();
+            UNSAFE = j86.sun.misc.Unsafe.getUnsafe();
             Class<?> k = LinkedTransferQueue.class;
             headOffset = UNSAFE.objectFieldOffset
                 (k.getDeclaredField("head"));

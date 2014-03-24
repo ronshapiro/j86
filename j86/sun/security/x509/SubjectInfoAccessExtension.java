@@ -23,15 +23,15 @@
  * questions.
  */
 
-package sun.security.x509;
+package j86.sun.security.x509;
 
-import java.io.IOException;
-import java.io.OutputStream;
+import j86.java.io.IOException;
+import j86.java.io.OutputStream;
 
-import java.util.*;
+import j86.java.util.*;
 
-import sun.security.util.DerOutputStream;
-import sun.security.util.DerValue;
+import j86.sun.security.util.DerOutputStream;
+import j86.sun.security.util.DerValue;
 
 /**
  * The Subject Information Access Extension (OID = 1.3.6.1.5.5.7.1.11).

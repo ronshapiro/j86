@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.io;
+package j86.java.io;
 
 /**
  * Instances of classes that implement this interface are used to
@@ -34,9 +34,9 @@ package java.io;
  *
  * @author  Arthur van Hoff
  * @author  Jonathan Payne
- * @see     java.awt.FileDialog#setFilenameFilter(java.io.FilenameFilter)
- * @see     java.io.File
- * @see     java.io.File#list(java.io.FilenameFilter)
+ * @see     j86.java.awt.FileDialog#setFilenameFilter(j86.java.io.FilenameFilter)
+ * @see     j86.java.io.File
+ * @see     j86.java.io.File#list(java.io.FilenameFilter)
  * @since   JDK1.0
  */
 @FunctionalInterface

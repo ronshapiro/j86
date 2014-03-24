@@ -23,14 +23,14 @@
  * questions.
  */
 
-package com.sun.java.swing.plaf.motif;
+package j86.j86.com.sun.java.swing.plaf.motif;
 
-import java.awt.*;
-import java.awt.event.*;
-import javax.swing.JSplitPane;
-import javax.swing.UIManager;
-import javax.swing.plaf.basic.BasicSplitPaneUI;
-import javax.swing.plaf.basic.BasicSplitPaneDivider;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.javax.swing.JSplitPane;
+import j86.javax.swing.UIManager;
+import j86.j86.j86.javax.swing.plaf.basic.BasicSplitPaneUI;
+import j86.j86.j86.javax.swing.plaf.basic.BasicSplitPaneDivider;
 
 
 /**

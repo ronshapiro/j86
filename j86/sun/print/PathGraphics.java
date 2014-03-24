@@ -23,65 +23,65 @@
  * questions.
  */
 
-package sun.print;
+package j86.sun.print;
 
-import java.lang.ref.SoftReference;
-import java.util.Hashtable;
-import sun.font.CharToGlyphMapper;
-import sun.font.CompositeFont;
-import sun.font.Font2D;
-import sun.font.Font2DHandle;
-import sun.font.FontManager;
-import sun.font.FontManagerFactory;
-import sun.font.FontUtilities;
+import j86.j86.java.lang.ref.SoftReference;
+import j86.java.util.Hashtable;
+import j86.sun.font.CharToGlyphMapper;
+import j86.sun.font.CompositeFont;
+import j86.sun.font.Font2D;
+import j86.sun.font.Font2DHandle;
+import j86.sun.font.FontManager;
+import j86.sun.font.FontManagerFactory;
+import j86.sun.font.FontUtilities;
 
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.Graphics2D;
-import java.awt.Image;
-import java.awt.Paint;
-import java.awt.Polygon;
-import java.awt.Shape;
+import j86.java.awt.Color;
+import j86.java.awt.Font;
+import j86.java.awt.Graphics2D;
+import j86.java.awt.Image;
+import j86.java.awt.Paint;
+import j86.java.awt.Polygon;
+import j86.java.awt.Shape;
 
-import java.text.AttributedCharacterIterator;
+import j86.java.text.AttributedCharacterIterator;
 
-import java.awt.font.FontRenderContext;
-import java.awt.font.GlyphVector;
-import java.awt.font.TextAttribute;
-import java.awt.font.TextLayout;
+import j86.j86.java.awt.font.FontRenderContext;
+import j86.j86.java.awt.font.GlyphVector;
+import j86.j86.java.awt.font.TextAttribute;
+import j86.j86.java.awt.font.TextLayout;
 
-import java.awt.geom.AffineTransform;
-import java.awt.geom.Arc2D;
-import java.awt.geom.Ellipse2D;
-import java.awt.geom.Line2D;
-import java.awt.geom.Point2D;
-import java.awt.geom.Rectangle2D;
-import java.awt.geom.RoundRectangle2D;
-import java.awt.geom.PathIterator;
+import j86.j86.java.awt.geom.AffineTransform;
+import j86.j86.java.awt.geom.Arc2D;
+import j86.j86.java.awt.geom.Ellipse2D;
+import j86.j86.java.awt.geom.Line2D;
+import j86.j86.java.awt.geom.Point2D;
+import j86.j86.java.awt.geom.Rectangle2D;
+import j86.j86.java.awt.geom.RoundRectangle2D;
+import j86.j86.java.awt.geom.PathIterator;
 
-import java.awt.image.BufferedImage;
-import java.awt.image.BufferedImageOp;
-import java.awt.image.ColorModel;
-import java.awt.image.DataBuffer;
-import java.awt.image.DataBufferInt;
-import java.awt.image.ImageObserver;
-import java.awt.image.IndexColorModel;
-import java.awt.image.Raster;
-import java.awt.image.RenderedImage;
-import java.awt.image.SampleModel;
-import java.awt.image.SinglePixelPackedSampleModel;
-import java.awt.image.VolatileImage;
-import sun.awt.image.ByteComponentRaster;
-import sun.awt.image.ToolkitImage;
-import sun.awt.image.SunWritableRaster;
+import j86.j86.j86.java.awt.image.BufferedImage;
+import j86.j86.j86.java.awt.image.BufferedImageOp;
+import j86.j86.j86.java.awt.image.ColorModel;
+import j86.j86.j86.java.awt.image.DataBuffer;
+import j86.j86.j86.java.awt.image.DataBufferInt;
+import j86.j86.j86.java.awt.image.ImageObserver;
+import j86.j86.j86.java.awt.image.IndexColorModel;
+import j86.j86.j86.java.awt.image.Raster;
+import j86.j86.j86.java.awt.image.RenderedImage;
+import j86.j86.j86.java.awt.image.SampleModel;
+import j86.j86.j86.java.awt.image.SinglePixelPackedSampleModel;
+import j86.j86.j86.java.awt.image.VolatileImage;
+import j86.j86.j86.sun.awt.image.ByteComponentRaster;
+import j86.j86.j86.sun.awt.image.ToolkitImage;
+import j86.j86.j86.sun.awt.image.SunWritableRaster;
 
-import java.awt.print.PageFormat;
-import java.awt.print.Printable;
-import java.awt.print.PrinterException;
-import java.awt.print.PrinterGraphics;
-import java.awt.print.PrinterJob;
+import j86.j86.java.awt.print.PageFormat;
+import j86.j86.java.awt.print.Printable;
+import j86.j86.java.awt.print.PrinterException;
+import j86.j86.java.awt.print.PrinterGraphics;
+import j86.j86.java.awt.print.PrinterJob;
 
-import java.util.Map;
+import j86.java.util.Map;
 
 public abstract class PathGraphics extends ProxyGraphics2D {
 
@@ -186,8 +186,8 @@ public abstract class PathGraphics extends ProxyGraphics2D {
      *                         of the rectangle to be drawn.
      * @param         width   the width of the rectangle to be drawn.
      * @param         height   the height of the rectangle to be drawn.
-     * @see          java.awt.Graphics#fillRect
-     * @see          java.awt.Graphics#clearRect
+     * @see          j86.java.awt.Graphics#fillRect
+     * @see          j86.java.awt.Graphics#clearRect
      */
     public void drawRect(int x, int y, int width, int height) {
 
@@ -223,8 +223,8 @@ public abstract class PathGraphics extends ProxyGraphics2D {
      *                         of the rectangle to be filled.
      * @param         width   the width of the rectangle to be filled.
      * @param         height   the height of the rectangle to be filled.
-     * @see           java.awt.Graphics#clearRect
-     * @see           java.awt.Graphics#drawRect
+     * @see           j86.java.awt.Graphics#clearRect
+     * @see           j86.java.awt.Graphics#drawRect
      */
     public void fillRect(int x, int y, int width, int height){
 
@@ -256,11 +256,11 @@ public abstract class PathGraphics extends ProxyGraphics2D {
      * @param       y the <i>y</i> coordinate of the rectangle to clear.
      * @param       width the width of the rectangle to clear.
      * @param       height the height of the rectangle to clear.
-     * @see         java.awt.Graphics#fillRect(int, int, int, int)
-     * @see         java.awt.Graphics#drawRect
-     * @see         java.awt.Graphics#setColor(java.awt.Color)
-     * @see         java.awt.Graphics#setPaintMode
-     * @see         java.awt.Graphics#setXORMode(java.awt.Color)
+     * @see         j86.java.awt.Graphics#fillRect(int, int, int, int)
+     * @see         j86.java.awt.Graphics#drawRect
+     * @see         j86.java.awt.Graphics#setColor(java.awt.Color)
+     * @see         j86.java.awt.Graphics#setPaintMode
+     * @see         j86.java.awt.Graphics#setXORMode(java.awt.Color)
      */
     public void clearRect(int x, int y, int width, int height) {
 
@@ -281,7 +281,7 @@ public abstract class PathGraphics extends ProxyGraphics2D {
      *                    at the four corners.
      * @param      arcHeight the vertical diameter of the arc
      *                    at the four corners.
-     * @see        java.awt.Graphics#fillRoundRect
+     * @see        j86.java.awt.Graphics#fillRoundRect
      */
     public void drawRoundRect(int x, int y, int width, int height,
                               int arcWidth, int arcHeight) {
@@ -306,7 +306,7 @@ public abstract class PathGraphics extends ProxyGraphics2D {
      *                     of the arc at the four corners.
      * @param       arcHeight the vertical diameter
      *                     of the arc at the four corners.
-     * @see         java.awt.Graphics#drawRoundRect
+     * @see         j86.java.awt.Graphics#drawRoundRect
      */
     public void fillRoundRect(int x, int y, int width, int height,
                               int arcWidth, int arcHeight) {
@@ -331,7 +331,7 @@ public abstract class PathGraphics extends ProxyGraphics2D {
      *                     corner of the oval to be drawn.
      * @param       width the width of the oval to be drawn.
      * @param       height the height of the oval to be drawn.
-     * @see         java.awt.Graphics#fillOval
+     * @see         j86.java.awt.Graphics#fillOval
      * @since       JDK1.0
      */
     public void drawOval(int x, int y, int width, int height) {
@@ -347,7 +347,7 @@ public abstract class PathGraphics extends ProxyGraphics2D {
      *                     of the oval to be filled.
      * @param       width the width of the oval to be filled.
      * @param       height the height of the oval to be filled.
-     * @see         java.awt.Graphics#drawOval
+     * @see         j86.java.awt.Graphics#drawOval
      */
     public void fillOval(int x, int y, int width, int height){
 
@@ -389,7 +389,7 @@ public abstract class PathGraphics extends ProxyGraphics2D {
      * @param        startAngle the beginning angle.
      * @param        arcAngle the angular extent of the arc,
      *                    relative to the start angle.
-     * @see         java.awt.Graphics#fillArc
+     * @see         j86.java.awt.Graphics#fillArc
      */
     public void drawArc(int x, int y, int width, int height,
                                  int startAngle, int arcAngle) {
@@ -433,7 +433,7 @@ public abstract class PathGraphics extends ProxyGraphics2D {
      * @param        startAngle the beginning angle.
      * @param        arcAngle the angular extent of the arc,
      *                    relative to the start angle.
-     * @see         java.awt.Graphics#drawArc
+     * @see         j86.java.awt.Graphics#drawArc
      */
     public void fillArc(int x, int y, int width, int height,
                                  int startAngle, int arcAngle) {
@@ -452,7 +452,7 @@ public abstract class PathGraphics extends ProxyGraphics2D {
      * @param       xPoints an array of <i>x</i> points
      * @param       yPoints an array of <i>y</i> points
      * @param       nPoints the total number of points
-     * @see         java.awt.Graphics#drawPolygon(int[], int[], int)
+     * @see         j86.java.awt.Graphics#drawPolygon(int[], int[], int)
      * @since       JDK1.1
      */
     public void drawPolyline(int xPoints[], int yPoints[],
@@ -493,8 +493,8 @@ public abstract class PathGraphics extends ProxyGraphics2D {
      * @param        xPoints   a an array of <code>x</code> coordinates.
      * @param        yPoints   a an array of <code>y</code> coordinates.
      * @param        nPoints   a the total number of points.
-     * @see          java.awt.Graphics#fillPolygon
-     * @see          java.awt.Graphics#drawPolyline
+     * @see          j86.java.awt.Graphics#fillPolygon
+     * @see          j86.java.awt.Graphics#drawPolyline
      */
     public void drawPolygon(int xPoints[], int yPoints[],
                                      int nPoints) {
@@ -506,8 +506,8 @@ public abstract class PathGraphics extends ProxyGraphics2D {
      * Draws the outline of a polygon defined by the specified
      * <code>Polygon</code> object.
      * @param        p the polygon to draw.
-     * @see          java.awt.Graphics#fillPolygon
-     * @see          java.awt.Graphics#drawPolyline
+     * @see          j86.java.awt.Graphics#fillPolygon
+     * @see          j86.java.awt.Graphics#drawPolyline
      */
     public void drawPolygon(Polygon p) {
         draw(p);
@@ -531,7 +531,7 @@ public abstract class PathGraphics extends ProxyGraphics2D {
      * @param        xPoints   a an array of <code>x</code> coordinates.
      * @param        yPoints   a an array of <code>y</code> coordinates.
      * @param        nPoints   a the total number of points.
-     * @see          java.awt.Graphics#drawPolygon(int[], int[], int)
+     * @see          j86.java.awt.Graphics#drawPolygon(int[], int[], int)
      */
     public void fillPolygon(int xPoints[], int yPoints[],
                             int nPoints) {
@@ -547,7 +547,7 @@ public abstract class PathGraphics extends ProxyGraphics2D {
      * The area inside the polygon is defined using an
      * even-odd fill rule, also known as the alternating rule.
      * @param        p the polygon to fill.
-     * @see          java.awt.Graphics#drawPolygon(int[], int[], int)
+     * @see          j86.java.awt.Graphics#drawPolygon(int[], int[], int)
      */
     public void fillPolygon(Polygon p) {
 
@@ -562,8 +562,8 @@ public abstract class PathGraphics extends ProxyGraphics2D {
      * @param       str      the string to be drawn.
      * @param       x        the <i>x</i> coordinate.
      * @param       y        the <i>y</i> coordinate.
-     * @see         java.awt.Graphics#drawBytes
-     * @see         java.awt.Graphics#drawChars
+     * @see         j86.java.awt.Graphics#drawBytes
+     * @see         j86.java.awt.Graphics#drawChars
      * @since       JDK1.0
      */
     public void drawString(String str, int x, int y) {
@@ -597,8 +597,8 @@ public abstract class PathGraphics extends ProxyGraphics2D {
      * @param       iterator the iterator whose text is to be drawn
      * @param       x        the <i>x</i> coordinate.
      * @param       y        the <i>y</i> coordinate.
-     * @see         java.awt.Graphics#drawBytes
-     * @see         java.awt.Graphics#drawChars
+     * @see         j86.java.awt.Graphics#drawBytes
+     * @see         j86.java.awt.Graphics#drawChars
      */
     public void drawString(AttributedCharacterIterator iterator,
                            int x, int y) {
@@ -623,7 +623,7 @@ public abstract class PathGraphics extends ProxyGraphics2D {
      * @param g The GlyphVector to be drawn.
      * @param x,y The coordinates where the glyphs should be drawn.
      * @see #setPaint
-     * @see java.awt.Graphics#setColor
+     * @see j86.java.awt.Graphics#setColor
      * @see #transform
      * @see #setTransform
      * @see #setComposite
@@ -1042,7 +1042,7 @@ public abstract class PathGraphics extends ProxyGraphics2D {
      * @param s The shape to be drawn.
      * @see #setStroke
      * @see #setPaint
-     * @see java.awt.Graphics#setColor
+     * @see j86.java.awt.Graphics#setColor
      * @see #transform
      * @see #setTransform
      * @see #clip
@@ -1059,7 +1059,7 @@ public abstract class PathGraphics extends ProxyGraphics2D {
      * graphics state. The rendering attributes applied include the
      * clip, transform, paint or color, and composite.
      * @see #setPaint
-     * @see java.awt.Graphics#setColor
+     * @see j86.java.awt.Graphics#setColor
      * @see #transform
      * @see #setTransform
      * @see #setComposite
@@ -1125,7 +1125,7 @@ public abstract class PathGraphics extends ProxyGraphics2D {
     protected abstract void deviceFillRect(int x, int y,
                                            int width, int height, Color color);
 
-    /* Obtain a BI from known implementations of java.awt.Image
+    /* Obtain a BI from known implementations of j86.java.awt.Image
      */
     protected BufferedImage getBufferedImage(Image img) {
         if (img instanceof BufferedImage) {
@@ -1385,9 +1385,9 @@ public abstract class PathGraphics extends ProxyGraphics2D {
      * @param    y   the <i>y</i> coordinate.
      * @param    observer    object to be notified as more of
      *                          the image is converted.
-     * @see      java.awt.Image
-     * @see      java.awt.image.ImageObserver
-     * @see      java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
+     * @see      j86.java.awt.Image
+     * @see      j86.j86.j86.java.awt.image.ImageObserver
+     * @see      j86.j86.j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
      * @since    JDK1.0
      */
     public boolean drawImage(Image img, int x, int y,
@@ -1425,9 +1425,9 @@ public abstract class PathGraphics extends ProxyGraphics2D {
      * @param    height the height of the rectangle.
      * @param    observer    object to be notified as more of
      *                          the image is converted.
-     * @see      java.awt.Image
-     * @see      java.awt.image.ImageObserver
-     * @see      java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
+     * @see      j86.java.awt.Image
+     * @see      j86.j86.j86.java.awt.image.ImageObserver
+     * @see      j86.j86.j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
      * @since    JDK1.0
      */
     public boolean drawImage(Image img, int x, int y,
@@ -1469,9 +1469,9 @@ public abstract class PathGraphics extends ProxyGraphics2D {
      *                   white.
      * @param    observer    object to be notified as more of
      *                          the image is converted.
-     * @see      java.awt.Image
-     * @see      java.awt.image.ImageObserver
-     * @see      java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
+     * @see      j86.java.awt.Image
+     * @see      j86.j86.j86.java.awt.image.ImageObserver
+     * @see      j86.j86.j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
      * @since    JDK1.0
      */
     public boolean drawImage(Image img, int x, int y,
@@ -1530,9 +1530,9 @@ public abstract class PathGraphics extends ProxyGraphics2D {
      *                         non-opaque portions of the image.
      * @param    observer    object to be notified as more of
      *                          the image is converted.
-     * @see      java.awt.Image
-     * @see      java.awt.image.ImageObserver
-     * @see      java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
+     * @see      j86.java.awt.Image
+     * @see      j86.j86.j86.java.awt.image.ImageObserver
+     * @see      j86.j86.j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
      * @since    JDK1.0
      */
     public boolean drawImage(Image img, int x, int y,
@@ -1602,9 +1602,9 @@ public abstract class PathGraphics extends ProxyGraphics2D {
      *                    source rectangle.
      * @param       observer object to be notified as more of the image is
      *                    scaled and converted.
-     * @see         java.awt.Image
-     * @see         java.awt.image.ImageObserver
-     * @see         java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
+     * @see         j86.java.awt.Image
+     * @see         j86.j86.j86.java.awt.image.ImageObserver
+     * @see         j86.j86.j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
      * @since       JDK1.1
      */
     public boolean drawImage(Image img,
@@ -1667,9 +1667,9 @@ public abstract class PathGraphics extends ProxyGraphics2D {
      *                    non-opaque portions of the image.
      * @param       observer object to be notified as more of the image is
      *                    scaled and converted.
-     * @see         java.awt.Image
-     * @see         java.awt.image.ImageObserver
-     * @see         java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
+     * @see         j86.java.awt.Image
+     * @see         j86.j86.j86.java.awt.image.ImageObserver
+     * @see         j86.j86.j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
      * @since       JDK1.1
      */
     public boolean drawImage(Image img,

@@ -32,24 +32,24 @@
  */
 
 
-package com.sun.tools.example.debug.gui;
+package j86.com.sun.tools.example.debug.gui;
 
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Map;
-import java.util.HashMap;
-import java.awt.BorderLayout;
-import java.awt.Container;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import javax.swing.*;
-import javax.swing.border.Border;
-import javax.swing.border.TitledBorder;
+import j86.java.util.List;
+import j86.java.util.ArrayList;
+import j86.java.util.Map;
+import j86.java.util.HashMap;
+import j86.java.awt.BorderLayout;
+import j86.java.awt.Container;
+import j86.j86.java.awt.event.ActionEvent;
+import j86.j86.java.awt.event.ActionListener;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.border.Border;
+import j86.j86.javax.swing.border.TitledBorder;
 
-import com.sun.jdi.*;
-import com.sun.jdi.connect.*;
+import j86.com.sun.jdi.*;
+import j86.j86.com.sun.jdi.connect.*;
 
-import com.sun.tools.example.debug.bdi.*;
+import j86.com.sun.tools.example.debug.bdi.*;
 
 class LaunchTool {
 

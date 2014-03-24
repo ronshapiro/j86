@@ -33,8 +33,8 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package java.util.concurrent;
-import java.util.concurrent.locks.LockSupport;
+package j86.j86.java.util.concurrent;
+import j86.j86.j86.java.util.concurrent.locks.LockSupport;
 
 /**
  * A cancellable asynchronous computation.  This class provides a base
@@ -464,13 +464,13 @@ public class FutureTask<V> implements RunnableFuture<V> {
     }
 
     // Unsafe mechanics
-    private static final sun.misc.Unsafe UNSAFE;
+    private static final j86.sun.misc.Unsafe UNSAFE;
     private static final long stateOffset;
     private static final long runnerOffset;
     private static final long waitersOffset;
     static {
         try {
-            UNSAFE = sun.misc.Unsafe.getUnsafe();
+            UNSAFE = j86.sun.misc.Unsafe.getUnsafe();
             Class<?> k = FutureTask.class;
             stateOffset = UNSAFE.objectFieldOffset
                 (k.getDeclaredField("state"));

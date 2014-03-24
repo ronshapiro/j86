@@ -20,18 +20,18 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.sun.org.apache.xml.internal.security.keys.storage;
+package j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.storage;
 
-import java.security.KeyStore;
-import java.security.cert.Certificate;
-import java.security.cert.X509Certificate;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.NoSuchElementException;
+import j86.java.security.KeyStore;
+import j86.j86.java.security.cert.Certificate;
+import j86.j86.java.security.cert.X509Certificate;
+import j86.java.util.ArrayList;
+import j86.java.util.Iterator;
+import j86.java.util.List;
+import j86.java.util.NoSuchElementException;
 
-import com.sun.org.apache.xml.internal.security.keys.storage.implementations.KeyStoreResolver;
-import com.sun.org.apache.xml.internal.security.keys.storage.implementations.SingleCertificateResolver;
+import j86.j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.storage.implementations.KeyStoreResolver;
+import j86.j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.storage.implementations.SingleCertificateResolver;
 
 /**
  * This class collects customized resolvers for Certificates.
@@ -39,8 +39,8 @@ import com.sun.org.apache.xml.internal.security.keys.storage.implementations.Sin
 public class StorageResolver {
 
     /** {@link org.apache.commons.logging} logging facility */
-    private static java.util.logging.Logger log =
-        java.util.logging.Logger.getLogger(StorageResolver.class.getName());
+    private static j86.j86.java.util.logging.Logger log =
+        j86.j86.java.util.logging.Logger.getLogger(StorageResolver.class.getName());
 
     /** Field storageResolvers */
     private List<StorageResolverSpi> storageResolvers = null;
@@ -90,7 +90,7 @@ public class StorageResolver {
         try {
             this.add(new KeyStoreResolver(keyStore));
         } catch (StorageResolverException ex) {
-            log.log(java.util.logging.Level.SEVERE, "Could not add KeyStore because of: ", ex);
+            log.log(j86.j86.java.util.logging.Level.SEVERE, "Could not add KeyStore because of: ", ex);
         }
     }
 

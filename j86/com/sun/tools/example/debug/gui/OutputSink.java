@@ -32,9 +32,9 @@
  */
 
 
-package com.sun.tools.example.debug.gui;
+package j86.com.sun.tools.example.debug.gui;
 
-import java.io.*;
+import j86.java.io.*;
 
 // This class is used in 'CommandInterpreter' as a hook to
 // allow messagebox style command output as an alternative

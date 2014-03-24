@@ -25,26 +25,26 @@
 /*
  * $Id: KeyInfoFactory.java,v 1.12 2005/05/10 16:35:35 mullan Exp $
  */
-package javax.xml.crypto.dsig.keyinfo;
+package j86.j86.j86.javax.xml.crypto.dsig.keyinfo;
 
-import java.math.BigInteger;
-import java.security.KeyException;
-import java.security.NoSuchAlgorithmException;
-import java.security.NoSuchProviderException;
-import java.security.Provider;
-import java.security.PublicKey;
-import java.security.Security;
-import java.security.cert.X509CRL;
-import java.util.List;
-import javax.xml.crypto.MarshalException;
-import javax.xml.crypto.NoSuchMechanismException;
-import javax.xml.crypto.URIDereferencer;
-import javax.xml.crypto.XMLStructure;
-import javax.xml.crypto.dom.DOMStructure;
-import javax.xml.crypto.dsig.*;
+import j86.java.math.BigInteger;
+import j86.java.security.KeyException;
+import j86.java.security.NoSuchAlgorithmException;
+import j86.java.security.NoSuchProviderException;
+import j86.java.security.Provider;
+import j86.java.security.PublicKey;
+import j86.java.security.Security;
+import j86.j86.java.security.cert.X509CRL;
+import j86.java.util.List;
+import j86.javax.xml.crypto.MarshalException;
+import j86.javax.xml.crypto.NoSuchMechanismException;
+import j86.javax.xml.crypto.URIDereferencer;
+import j86.javax.xml.crypto.XMLStructure;
+import j86.j86.javax.xml.crypto.dom.DOMStructure;
+import j86.j86.javax.xml.crypto.dsig.*;
 
-import sun.security.jca.*;
-import sun.security.jca.GetInstance.Instance;
+import j86.sun.security.jca.*;
+import j86.sun.security.jca.GetInstance.Instance;
 
 /**
  * A factory for creating {@link KeyInfo} objects from scratch or for
@@ -69,7 +69,7 @@ import sun.security.jca.GetInstance.Instance;
  * mechanism types.
  *
  * <p><code>KeyInfoFactory</code> implementations are registered and loaded
- * using the {@link java.security.Provider} mechanism.
+ * using the {@link j86.java.security.Provider} mechanism.
  * For example, a service provider that supports the
  * DOM mechanism would be specified in the <code>Provider</code> subclass as:
  * <pre>
@@ -453,7 +453,7 @@ public abstract class KeyInfoFactory {
      *
      * @param content a list of one or more X.509 content types. Valid types are
      *    {@link String} (subject names), <code>byte[]</code> (subject key ids),
-     *    {@link java.security.cert.X509Certificate}, {@link X509CRL},
+     *    {@link j86.j86.java.security.cert.X509Certificate}, {@link X509CRL},
      *    or {@link XMLStructure} ({@link X509IssuerSerial}
      *    objects or elements from an external namespace). Subject names are
      *    distinguished names in RFC 2253 String format. Implementations MUST

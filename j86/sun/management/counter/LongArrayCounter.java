@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.management.counter;
+package j86.j86.sun.management.counter;
 
 /**
  * Interface for performance counter wrapping <code>long[]</code> objects.

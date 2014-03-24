@@ -23,12 +23,12 @@
  * questions.
  */
 
-package javax.imageio.stream;
+package j86.j86.javax.imageio.stream;
 
-import java.util.ArrayList;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.IOException;
+import j86.java.util.ArrayList;
+import j86.java.io.InputStream;
+import j86.java.io.OutputStream;
+import j86.java.io.IOException;
 
 /**
  * Package-visible class consolidating common code for

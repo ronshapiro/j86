@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.lang.management;
+package j86.j86.java.lang.management;
 
-import javax.management.openmbean.CompositeData;
-import sun.management.MonitorInfoCompositeData;
+import j86.j86.javax.management.openmbean.CompositeData;
+import j86.sun.management.MonitorInfoCompositeData;
 
 /**
  * Information about an object monitor lock.  An object monitor is locked
@@ -121,7 +121,7 @@ public class MonitorInfo extends LockInfo {
      * </tr>
      * <tr>
      *   <td>lockedStackDepth</td>
-     *   <td><tt>java.lang.Integer</tt></td>
+     *   <td><tt>j86.java.lang.Integer</tt></td>
      * </tr>
      * </table>
      * </blockquote>

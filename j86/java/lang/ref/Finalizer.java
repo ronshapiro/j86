@@ -23,13 +23,13 @@
  * questions.
  */
 
-package java.lang.ref;
+package j86.j86.java.lang.ref;
 
-import java.security.PrivilegedAction;
-import java.security.AccessController;
-import sun.misc.JavaLangAccess;
-import sun.misc.SharedSecrets;
-import sun.misc.VM;
+import j86.java.security.PrivilegedAction;
+import j86.java.security.AccessController;
+import j86.sun.misc.JavaLangAccess;
+import j86.sun.misc.SharedSecrets;
+import j86.sun.misc.VM;
 
 final class Finalizer extends FinalReference<Object> { /* Package-private; must be in
                                                           same package as the Reference
@@ -94,7 +94,7 @@ final class Finalizer extends FinalReference<Object> { /* Package-private; must 
         }
         try {
             Object finalizee = this.get();
-            if (finalizee != null && !(finalizee instanceof java.lang.Enum)) {
+            if (finalizee != null && !(finalizee instanceof j86.java.lang.Enum)) {
                 jla.invokeFinalize(finalizee);
 
                 /* Clear stack slot containing this variable, to decrease
@@ -159,7 +159,7 @@ final class Finalizer extends FinalReference<Object> { /* Package-private; must 
         });
     }
 
-    /* Invoked by java.lang.Shutdown */
+    /* Invoked by j86.java.lang.Shutdown */
     static void runAllFinalizers() {
         if (!VM.isBooted()) {
             return;

@@ -23,36 +23,36 @@
  * questions.
  */
 
-package sun.swing;
+package j86.sun.swing;
 
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.Container;
-import java.awt.Dimension;
-import java.awt.EventQueue;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.MouseInfo;
-import java.awt.Point;
-import java.awt.Rectangle;
-import java.awt.event.ContainerEvent;
-import java.awt.event.ContainerListener;
-import java.awt.image.BufferedImage;
-import java.awt.image.DataBufferInt;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
-import java.security.AccessController;
+import j86.java.awt.BorderLayout;
+import j86.java.awt.Color;
+import j86.java.awt.Component;
+import j86.java.awt.Container;
+import j86.java.awt.Dimension;
+import j86.java.awt.EventQueue;
+import j86.java.awt.Graphics;
+import j86.java.awt.Graphics2D;
+import j86.java.awt.MouseInfo;
+import j86.java.awt.Point;
+import j86.java.awt.Rectangle;
+import j86.j86.java.awt.event.ContainerEvent;
+import j86.j86.java.awt.event.ContainerListener;
+import j86.j86.j86.java.awt.image.BufferedImage;
+import j86.j86.j86.java.awt.image.DataBufferInt;
+import j86.java.beans.PropertyChangeEvent;
+import j86.java.beans.PropertyChangeListener;
+import j86.java.security.AccessController;
 
-import javax.swing.JLayeredPane;
-import javax.swing.JPanel;
-import javax.swing.JRootPane;
-import javax.swing.LayoutFocusTraversalPolicy;
-import javax.swing.RootPaneContainer;
-import javax.swing.SwingUtilities;
+import j86.javax.swing.JLayeredPane;
+import j86.javax.swing.JPanel;
+import j86.javax.swing.JRootPane;
+import j86.javax.swing.LayoutFocusTraversalPolicy;
+import j86.javax.swing.RootPaneContainer;
+import j86.javax.swing.SwingUtilities;
 
-import sun.awt.LightweightFrame;
-import sun.security.action.GetPropertyAction;
+import j86.sun.awt.LightweightFrame;
+import j86.sun.security.action.GetPropertyAction;
 
 /**
  * The frame serves as a lightweight container which paints its content

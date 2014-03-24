@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.sql;
+package j86.java.sql;
 
 /**
  * The interface used for the custom mapping of an SQL user-defined type (UDT) to

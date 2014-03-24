@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.lang;
+package j86.java.lang;
 
 /**
  * Thrown to indicate that an attempt has been made to store the

@@ -23,10 +23,10 @@
 # questions.
 #
 
-# Generated exception classes for java.nio
+# Generated exception classes for j86.java.nio
 
 SINCE=1.4
-PACKAGE=java.nio
+PACKAGE=j86.java.nio
 # This year should only change if the generated source is modified.
 COPYRIGHT_YEARS="2000, 2007,"
 

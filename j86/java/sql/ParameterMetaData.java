@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.sql;
+package j86.java.sql;
 
 /**
  * An object that can be used to get information about the types
@@ -126,7 +126,7 @@ public interface ParameterMetaData extends Wrapper {
      * Retrieves the designated parameter's SQL type.
      *
      * @param param the first parameter is 1, the second is 2, ...
-     * @return SQL type from <code>java.sql.Types</code>
+     * @return SQL type from <code>j86.java.sql.Types</code>
      * @exception SQLException if a database access error occurs
      * @since 1.4
      * @see Types

@@ -23,26 +23,26 @@
  * questions.
  */
 
-package sun.security.pkcs;
+package j86.sun.security.pkcs;
 
-import java.io.*;
-import java.math.BigInteger;
-import java.net.URI;
-import java.util.*;
-import java.security.cert.X509Certificate;
-import java.security.cert.CertificateException;
-import java.security.cert.X509CRL;
-import java.security.cert.CRLException;
-import java.security.cert.CertificateFactory;
-import java.security.*;
+import j86.java.io.*;
+import j86.java.math.BigInteger;
+import j86.java.net.URI;
+import j86.java.util.*;
+import j86.j86.java.security.cert.X509Certificate;
+import j86.j86.java.security.cert.CertificateException;
+import j86.j86.java.security.cert.X509CRL;
+import j86.j86.java.security.cert.CRLException;
+import j86.j86.java.security.cert.CertificateFactory;
+import j86.java.security.*;
 
-import sun.security.timestamp.*;
-import sun.security.util.*;
-import sun.security.x509.AlgorithmId;
-import sun.security.x509.X509CertImpl;
-import sun.security.x509.X509CertInfo;
-import sun.security.x509.X509CRLImpl;
-import sun.security.x509.X500Name;
+import j86.sun.security.timestamp.*;
+import j86.sun.security.util.*;
+import j86.sun.security.x509.AlgorithmId;
+import j86.sun.security.x509.X509CertImpl;
+import j86.sun.security.x509.X509CertInfo;
+import j86.sun.security.x509.X509CRLImpl;
+import j86.sun.security.x509.X500Name;
 
 /**
  * PKCS7 as defined in RSA Laboratories PKCS7 Technical Note. Profile

@@ -20,12 +20,12 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.sun.org.apache.xml.internal.security.transforms.implementations;
+package j86.j86.j86.com.sun.org.apache.xml.internal.security.transforms.implementations;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.OutputStream;
+import j86.java.io.ByteArrayInputStream;
+import j86.java.io.ByteArrayOutputStream;
+import j86.java.io.IOException;
+import j86.java.io.OutputStream;
 
 import javax.xml.XMLConstants;
 import javax.xml.transform.Source;
@@ -37,13 +37,13 @@ import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
 
-import com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
-import com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
-import com.sun.org.apache.xml.internal.security.transforms.Transform;
-import com.sun.org.apache.xml.internal.security.transforms.TransformSpi;
-import com.sun.org.apache.xml.internal.security.transforms.TransformationException;
-import com.sun.org.apache.xml.internal.security.transforms.Transforms;
-import com.sun.org.apache.xml.internal.security.utils.XMLUtils;
+import j86.j86.com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+import j86.j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
+import j86.j86.com.sun.org.apache.xml.internal.security.transforms.Transform;
+import j86.j86.com.sun.org.apache.xml.internal.security.transforms.TransformSpi;
+import j86.j86.com.sun.org.apache.xml.internal.security.transforms.TransformationException;
+import j86.j86.com.sun.org.apache.xml.internal.security.transforms.Transforms;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
 import org.w3c.dom.Element;
 
 /**
@@ -64,8 +64,8 @@ public class TransformXSLT extends TransformSpi {
     static final String defaultXSLTSpecNSprefix = "xslt";
     static final String XSLTSTYLESHEET          = "stylesheet";
 
-    private static java.util.logging.Logger log =
-        java.util.logging.Logger.getLogger(TransformXSLT.class.getName());
+    private static j86.j86.java.util.logging.Logger log =
+        j86.j86.java.util.logging.Logger.getLogger(TransformXSLT.class.getName());
 
     /**
      * Method engineGetURI
@@ -135,7 +135,7 @@ public class TransformXSLT extends TransformSpi {
             try {
                 transformer.setOutputProperty("{http://xml.apache.org/xalan}line-separator", "\n");
             } catch (Exception e) {
-                log.log(java.util.logging.Level.WARNING, "Unable to set Xalan line-separator property: " + e.getMessage());
+                log.log(j86.j86.java.util.logging.Level.WARNING, "Unable to set Xalan line-separator property: " + e.getMessage());
             }
 
             if (baos == null) {

@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.security.provider.certpath;
+package j86.j86.sun.security.provider.certpath;
 
-import java.security.cert.X509Certificate;
+import j86.j86.java.security.cert.X509Certificate;
 
 /**
  * Describes one step of a certification path build, consisting of a
@@ -34,7 +34,7 @@ import java.security.cert.X509Certificate;
  *
  * @author      Anne Anderson
  * @since       1.4
- * @see sun.security.provider.certpath.Vertex
+ * @see j86.j86.sun.security.provider.certpath.Vertex
  */
 public class BuildStep {
 

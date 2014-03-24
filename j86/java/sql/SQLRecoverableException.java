@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.sql;
+package j86.java.sql;
 
 /**
  * The subclass of {@link SQLException} thrown in situations where a
@@ -36,7 +36,7 @@ package java.sql;
  *
  * @since 1.6
  */
-public class SQLRecoverableException extends java.sql.SQLException {
+public class SQLRecoverableException extends j86.java.sql.SQLException {
 
         /**
          * Constructs a <code>SQLRecoverableException</code> object.
@@ -45,7 +45,7 @@ public class SQLRecoverableException extends java.sql.SQLException {
          *
          * The <code>cause</code> is not initialized, and may subsequently be
          * initialized by a call to the
-         * {@link Throwable#initCause(java.lang.Throwable)} method.
+         * {@link Throwable#initCause(j86.java.lang.Throwable)} method.
          * <p>
          * @since 1.6
         */
@@ -61,7 +61,7 @@ public class SQLRecoverableException extends java.sql.SQLException {
          *
          * The <code>cause</code> is not initialized, and may subsequently be
          * initialized by a call to the
-         * {@link Throwable#initCause(java.lang.Throwable)} method.
+         * {@link Throwable#initCause(j86.java.lang.Throwable)} method.
          * <p>
          * @param reason a description of the exception
          * @since 1.6
@@ -76,7 +76,7 @@ public class SQLRecoverableException extends java.sql.SQLException {
          *
          * The <code>cause</code> is not initialized, and may subsequently be
          * initialized by a call to the
-         * {@link Throwable#initCause(java.lang.Throwable)} method. The vendor code
+         * {@link Throwable#initCause(j86.java.lang.Throwable)} method. The vendor code
          * is initialized to 0.
          * <p>
          * @param reason a description of the exception
@@ -94,7 +94,7 @@ public class SQLRecoverableException extends java.sql.SQLException {
          *
          * The <code>cause</code> is not initialized, and may subsequently be
          * initialized by a call to the
-         * {@link Throwable#initCause(java.lang.Throwable)} method.
+         * {@link Throwable#initCause(j86.java.lang.Throwable)} method.
          * <p>
          * @param reason a description of the exception
          * @param SQLState an XOPEN or SQL:2003 code identifying the exception

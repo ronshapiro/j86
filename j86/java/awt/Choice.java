@@ -22,17 +22,17 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.awt;
+package j86.java.awt;
 
-import java.util.*;
-import java.awt.peer.ChoicePeer;
-import java.awt.event.*;
-import java.util.EventListener;
-import java.io.ObjectOutputStream;
-import java.io.ObjectInputStream;
-import java.io.IOException;
+import j86.java.util.*;
+import j86.j86.java.awt.peer.ChoicePeer;
+import j86.j86.java.awt.event.*;
+import j86.java.util.EventListener;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.IOException;
 
-import javax.accessibility.*;
+import j86.javax.accessibility.*;
 
 
 /**
@@ -120,9 +120,9 @@ public class Choice extends Component implements ItemSelectable, Accessible {
      * by calling one of the <code>select</code> methods.
      * @exception HeadlessException if GraphicsEnvironment.isHeadless()
      * returns true
-     * @see       java.awt.GraphicsEnvironment#isHeadless
+     * @see       j86.java.awt.GraphicsEnvironment#isHeadless
      * @see       #select(int)
-     * @see       #select(java.lang.String)
+     * @see       #select(j86.java.lang.String)
      */
     public Choice() throws HeadlessException {
         GraphicsEnvironment.checkHeadless();
@@ -143,8 +143,8 @@ public class Choice extends Component implements ItemSelectable, Accessible {
      * Creates the <code>Choice</code>'s peer.  This peer allows us
      * to change the look
      * of the <code>Choice</code> without changing its functionality.
-     * @see     java.awt.Toolkit#createChoice(java.awt.Choice)
-     * @see     java.awt.Component#getToolkit()
+     * @see     j86.java.awt.Toolkit#createChoice(java.awt.Choice)
+     * @see     j86.java.awt.Component#getToolkit()
      */
     public void addNotify() {
         synchronized (getTreeLock()) {
@@ -473,8 +473,8 @@ public class Choice extends Component implements ItemSelectable, Accessible {
      * @see           #removeItemListener
      * @see           #getItemListeners
      * @see           #select
-     * @see           java.awt.event.ItemEvent
-     * @see           java.awt.event.ItemListener
+     * @see           j86.j86.java.awt.event.ItemEvent
+     * @see           j86.j86.java.awt.event.ItemListener
      * @since         JDK1.1
      */
     public synchronized void addItemListener(ItemListener l) {
@@ -495,8 +495,8 @@ public class Choice extends Component implements ItemSelectable, Accessible {
      * @param         l    the item listener
      * @see           #addItemListener
      * @see           #getItemListeners
-     * @see           java.awt.event.ItemEvent
-     * @see           java.awt.event.ItemListener
+     * @see           j86.j86.java.awt.event.ItemEvent
+     * @see           j86.j86.java.awt.event.ItemListener
      * @since         JDK1.1
      */
     public synchronized void removeItemListener(ItemListener l) {
@@ -516,8 +516,8 @@ public class Choice extends Component implements ItemSelectable, Accessible {
      *
      * @see           #addItemListener
      * @see           #removeItemListener
-     * @see           java.awt.event.ItemEvent
-     * @see           java.awt.event.ItemListener
+     * @see           j86.j86.java.awt.event.ItemEvent
+     * @see           j86.j86.java.awt.event.ItemListener
      * @since 1.4
      */
     public synchronized ItemListener[] getItemListeners() {
@@ -545,14 +545,14 @@ public class Choice extends Component implements ItemSelectable, Accessible {
      *
      * @param listenerType the type of listeners requested; this parameter
      *          should specify an interface that descends from
-     *          <code>java.util.EventListener</code>
+     *          <code>j86.java.util.EventListener</code>
      * @return an array of all objects registered as
      *          <code><em>Foo</em>Listener</code>s on this choice,
      *          or an empty array if no such
      *          listeners have been added
      * @exception ClassCastException if <code>listenerType</code>
      *          doesn't specify a class or interface that implements
-     *          <code>java.util.EventListener</code>
+     *          <code>j86.java.util.EventListener</code>
      *
      * @see #getItemListeners
      * @since 1.3
@@ -589,7 +589,7 @@ public class Choice extends Component implements ItemSelectable, Accessible {
      * exception.
      *
      * @param      e the event
-     * @see        java.awt.event.ItemEvent
+     * @see        j86.j86.java.awt.event.ItemEvent
      * @see        #processItemEvent
      * @since      JDK1.1
      */
@@ -619,10 +619,10 @@ public class Choice extends Component implements ItemSelectable, Accessible {
      * exception.
      *
      * @param       e the item event
-     * @see         java.awt.event.ItemEvent
-     * @see         java.awt.event.ItemListener
+     * @see         j86.j86.java.awt.event.ItemEvent
+     * @see         j86.j86.java.awt.event.ItemListener
      * @see         #addItemListener(ItemListener)
-     * @see         java.awt.Component#enableEvents
+     * @see         j86.java.awt.Component#enableEvents
      * @since       JDK1.1
      */
     protected void processItemEvent(ItemEvent e) {
@@ -671,11 +671,11 @@ public class Choice extends Component implements ItemSelectable, Accessible {
      *     <code>ItemListener</code> object
      *
      * @see AWTEventMulticaster#save(ObjectOutputStream, String, EventListener)
-     * @see java.awt.Component#itemListenerK
+     * @see j86.java.awt.Component#itemListenerK
      * @see #readObject(ObjectInputStream)
      */
     private void writeObject(ObjectOutputStream s)
-      throws java.io.IOException
+      throws j86.java.io.IOException
     {
       s.defaultWriteObject();
 
@@ -696,7 +696,7 @@ public class Choice extends Component implements ItemSelectable, Accessible {
      * @serial
      * @see #removeItemListener(ItemListener)
      * @see #addItemListener(ItemListener)
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      * @see #writeObject(ObjectOutputStream)
      */
     private void readObject(ObjectInputStream s)

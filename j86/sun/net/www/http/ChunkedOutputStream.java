@@ -22,9 +22,9 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.net.www.http;
+package j86.j86.j86.sun.net.www.http;
 
-import java.io.*;
+import j86.java.io.*;
 
 /**
  * OutputStream that sends the output to the underlying stream using chunked
@@ -77,7 +77,7 @@ public class ChunkedOutputStream extends PrintStream {
             header[hexBytes.length] = CRLF[0];
             header[hexBytes.length+1] = CRLF[1];
             return header;
-        } catch (java.io.UnsupportedEncodingException e) {
+        } catch (j86.java.io.UnsupportedEncodingException e) {
             /* This should never happen */
             throw new InternalError(e.getMessage(), e);
         }

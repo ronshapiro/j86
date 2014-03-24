@@ -22,9 +22,9 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.rmi.transport;
+package j86.sun.rmi.transport;
 
-import java.io.*;
+import j86.java.io.*;
 
 public interface Connection {
     /**

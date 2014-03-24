@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.rmi.transport.proxy;
+package j86.j86.sun.rmi.transport.proxy;
 
-import java.io.*;
-import java.net.Socket;
-import java.net.InetAddress;
+import j86.java.io.*;
+import j86.java.net.Socket;
+import j86.java.net.InetAddress;
 
 /**
  * The HttpReceiveSocket class extends the WrappedSocket class

@@ -23,14 +23,14 @@
  * questions.
  */
 
-package java.net;
+package j86.java.net;
 
-import java.io.FileDescriptor;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.nio.channels.FileChannel;
+import j86.java.io.FileDescriptor;
+import j86.java.io.FileInputStream;
+import j86.java.io.IOException;
+import j86.j86.java.nio.channels.FileChannel;
 
-import sun.net.ConnectionResetException;
+import j86.sun.net.ConnectionResetException;
 
 /**
  * This stream extends FileInputStream to implement a
@@ -64,7 +64,7 @@ class SocketInputStream extends FileInputStream
     }
 
     /**
-     * Returns the unique {@link java.nio.channels.FileChannel FileChannel}
+     * Returns the unique {@link j86.j86.java.nio.channels.FileChannel FileChannel}
      * object associated with this file input stream.</p>
      *
      * The {@code getChannel} method of {@code SocketInputStream}

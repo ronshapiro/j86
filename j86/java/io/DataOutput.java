@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.io;
+package j86.java.io;
 
 /**
  * The <code>DataOutput</code> interface provides
@@ -42,8 +42,8 @@ package java.io;
  * an <code>IOException</code> is thrown.
  *
  * @author  Frank Yellin
- * @see     java.io.DataInput
- * @see     java.io.DataOutputStream
+ * @see     j86.java.io.DataInput
+ * @see     j86.java.io.DataOutputStream
  * @since   JDK1.0
  */
 public

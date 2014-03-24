@@ -23,13 +23,13 @@
  * questions.
  */
 
-package com.sun.rowset.internal;
+package j86.j86.com.sun.rowset.internal;
 
-import com.sun.rowset.JdbcRowSetResourceBundle;
-import java.sql.*;
-import javax.sql.*;
-import java.io.*;
-import java.util.*;
+import j86.com.sun.rowset.JdbcRowSetResourceBundle;
+import j86.java.sql.*;
+import j86.javax.sql.*;
+import j86.java.io.*;
+import j86.java.util.*;
 
 /**
  * A class used internally to manage a <code>CachedRowSet</code> object's

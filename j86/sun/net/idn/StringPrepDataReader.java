@@ -36,15 +36,15 @@
 // CHANGELOG
 //      2005-05-19 Edward Wang
 //          - copy this file from icu4jsrc_3_2/src/com/ibm/icu/impl/StringPrepDataReader.java
-//          - move from package com.ibm.icu.impl to package sun.net.idn
+//          - move from package com.ibm.icu.impl to package j86.j86.sun.net.idn
 //
-package sun.net.idn;
+package j86.j86.sun.net.idn;
 
-import java.io.DataInputStream;
-import java.io.IOException;
-import java.io.InputStream;
+import j86.java.io.DataInputStream;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
 
-import sun.text.normalizer.ICUBinary;
+import j86.j86.sun.text.normalizer.ICUBinary;
 
 
 /**

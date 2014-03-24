@@ -23,22 +23,22 @@
  * questions.
  */
 
-package com.sun.jndi.ldap;
+package j86.com.sun.jndi.ldap;
 
-import java.io.PrintStream;
-import java.io.OutputStream;
-import java.util.Hashtable;
-import java.util.Locale;
-import java.util.StringTokenizer;
+import j86.java.io.PrintStream;
+import j86.java.io.OutputStream;
+import j86.java.util.Hashtable;
+import j86.java.util.Locale;
+import j86.java.util.StringTokenizer;
 
-import javax.naming.ldap.Control;
-import javax.naming.NamingException;
-import javax.naming.CommunicationException;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
+import j86.j86.javax.naming.ldap.Control;
+import j86.javax.naming.NamingException;
+import j86.javax.naming.CommunicationException;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
 
-import com.sun.jndi.ldap.pool.PoolCleaner;
-import com.sun.jndi.ldap.pool.Pool;
+import j86.j86.com.sun.jndi.ldap.pool.PoolCleaner;
+import j86.j86.com.sun.jndi.ldap.pool.Pool;
 
 /**
  * Contains utilities for managing connection pools of LdapClient.
@@ -56,7 +56,7 @@ import com.sun.jndi.ldap.pool.Pool;
 
 public final class LdapPoolManager {
     private static final String DEBUG =
-        "com.sun.jndi.ldap.connect.pool.debug";
+        "j86.com.sun.jndi.ldap.connect.pool.debug";
 
     public static final boolean debug =
         "all".equalsIgnoreCase(getProperty(DEBUG, null));
@@ -68,27 +68,27 @@ public final class LdapPoolManager {
 
     // Authentication mechanisms of connections that may be pooled
     private static final String POOL_AUTH =
-        "com.sun.jndi.ldap.connect.pool.authentication";
+        "j86.com.sun.jndi.ldap.connect.pool.authentication";
 
     // Protocol types of connections that may be pooled
     private static final String POOL_PROTOCOL =
-        "com.sun.jndi.ldap.connect.pool.protocol";
+        "j86.com.sun.jndi.ldap.connect.pool.protocol";
 
     // Maximum number of identical connections per pool
     private static final String MAX_POOL_SIZE =
-        "com.sun.jndi.ldap.connect.pool.maxsize";
+        "j86.com.sun.jndi.ldap.connect.pool.maxsize";
 
     // Preferred number of identical connections per pool
     private static final String PREF_POOL_SIZE =
-        "com.sun.jndi.ldap.connect.pool.prefsize";
+        "j86.com.sun.jndi.ldap.connect.pool.prefsize";
 
     // Initial number of identical connections per pool
     private static final String INIT_POOL_SIZE =
-        "com.sun.jndi.ldap.connect.pool.initsize";
+        "j86.com.sun.jndi.ldap.connect.pool.initsize";
 
     // Milliseconds to wait before closing idle connections
     private static final String POOL_TIMEOUT =
-        "com.sun.jndi.ldap.connect.pool.timeout";
+        "j86.com.sun.jndi.ldap.connect.pool.timeout";
 
     // Properties for DIGEST
     private static final String SASL_CALLBACK =
@@ -230,8 +230,8 @@ public final class LdapPoolManager {
             return false;
         }
         // pooling of custom socket factory is possible only if the
-        // socket factory interface implements java.util.comparator
-        String COMPARATOR = "java.util.Comparator";
+        // socket factory interface implements j86.java.util.comparator
+        String COMPARATOR = "j86.java.util.Comparator";
         boolean foundSockCmp = false;
         if ((socketFactory != null) &&
              !socketFactory.equals(LdapCtx.DEFAULT_SSL_FACTORY)) {
@@ -362,7 +362,7 @@ public final class LdapPoolManager {
      *
      * @param threshold Close connections idle since this time, as
      * specified in milliseconds since "the epoch".
-     * @see java.util.Date
+     * @see j86.java.util.Date
      */
     public static void expire(long threshold) {
         for (int i = 0; i < pools.length; i++) {

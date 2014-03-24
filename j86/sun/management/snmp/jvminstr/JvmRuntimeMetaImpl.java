@@ -22,46 +22,46 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.management.snmp.jvminstr;
+package j86.j86.j86.sun.management.snmp.jvminstr;
 
 // java imports
 //
-import java.io.Serializable;
+import j86.java.io.Serializable;
 
 // jmx imports
 //
-import javax.management.MBeanServer;
-import com.sun.jmx.snmp.SnmpCounter;
-import com.sun.jmx.snmp.SnmpCounter64;
-import com.sun.jmx.snmp.SnmpGauge;
-import com.sun.jmx.snmp.SnmpInt;
-import com.sun.jmx.snmp.SnmpUnsignedInt;
-import com.sun.jmx.snmp.SnmpIpAddress;
-import com.sun.jmx.snmp.SnmpTimeticks;
-import com.sun.jmx.snmp.SnmpOpaque;
-import com.sun.jmx.snmp.SnmpString;
-import com.sun.jmx.snmp.SnmpStringFixed;
-import com.sun.jmx.snmp.SnmpOid;
-import com.sun.jmx.snmp.SnmpNull;
-import com.sun.jmx.snmp.SnmpValue;
-import com.sun.jmx.snmp.SnmpVarBind;
-import com.sun.jmx.snmp.SnmpStatusException;
+import j86.javax.management.MBeanServer;
+import j86.com.sun.jmx.snmp.SnmpCounter;
+import j86.com.sun.jmx.snmp.SnmpCounter64;
+import j86.com.sun.jmx.snmp.SnmpGauge;
+import j86.com.sun.jmx.snmp.SnmpInt;
+import j86.com.sun.jmx.snmp.SnmpUnsignedInt;
+import j86.com.sun.jmx.snmp.SnmpIpAddress;
+import j86.com.sun.jmx.snmp.SnmpTimeticks;
+import j86.com.sun.jmx.snmp.SnmpOpaque;
+import j86.com.sun.jmx.snmp.SnmpString;
+import j86.com.sun.jmx.snmp.SnmpStringFixed;
+import j86.com.sun.jmx.snmp.SnmpOid;
+import j86.com.sun.jmx.snmp.SnmpNull;
+import j86.com.sun.jmx.snmp.SnmpValue;
+import j86.com.sun.jmx.snmp.SnmpVarBind;
+import j86.com.sun.jmx.snmp.SnmpStatusException;
 
 // jdmk imports
 //
-import com.sun.jmx.snmp.agent.SnmpMib;
-import com.sun.jmx.snmp.agent.SnmpMibGroup;
-import com.sun.jmx.snmp.agent.SnmpStandardObjectServer;
-import com.sun.jmx.snmp.agent.SnmpStandardMetaServer;
-import com.sun.jmx.snmp.agent.SnmpMibSubRequest;
-import com.sun.jmx.snmp.agent.SnmpMibTable;
-import com.sun.jmx.snmp.EnumRowStatus;
+import j86.j86.com.sun.jmx.snmp.agent.SnmpMib;
+import j86.j86.com.sun.jmx.snmp.agent.SnmpMibGroup;
+import j86.j86.com.sun.jmx.snmp.agent.SnmpStandardObjectServer;
+import j86.j86.com.sun.jmx.snmp.agent.SnmpStandardMetaServer;
+import j86.j86.com.sun.jmx.snmp.agent.SnmpMibSubRequest;
+import j86.j86.com.sun.jmx.snmp.agent.SnmpMibTable;
+import j86.com.sun.jmx.snmp.EnumRowStatus;
 
-import sun.management.snmp.jvmmib.JvmRuntimeMeta;
-import sun.management.snmp.jvmmib.JvmRTInputArgsTableMeta;
-import sun.management.snmp.jvmmib.JvmRTClassPathTableMeta;
-import sun.management.snmp.jvmmib.JvmRTBootClassPathTableMeta;
-import sun.management.snmp.jvmmib.JvmRTLibraryPathTableMeta;
+import j86.j86.j86.sun.management.snmp.jvmmib.JvmRuntimeMeta;
+import j86.j86.j86.sun.management.snmp.jvmmib.JvmRTInputArgsTableMeta;
+import j86.j86.j86.sun.management.snmp.jvmmib.JvmRTClassPathTableMeta;
+import j86.j86.j86.sun.management.snmp.jvmmib.JvmRTBootClassPathTableMeta;
+import j86.j86.j86.sun.management.snmp.jvmmib.JvmRTLibraryPathTableMeta;
 
 /**
  * The class is used for representing SNMP metadata for the "JvmRuntime" group.

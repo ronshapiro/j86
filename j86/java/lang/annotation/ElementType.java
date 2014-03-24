@@ -23,12 +23,12 @@
  * questions.
  */
 
-package java.lang.annotation;
+package j86.j86.java.lang.annotation;
 
 /**
  * The constants of this enumerated type provide a simple classification of the
  * syntactic locations where annotations may appear in a Java program. These
- * constants are used in {@link Target java.lang.annotation.Target}
+ * constants are used in {@link Target j86.j86.java.lang.annotation.Target}
  * meta-annotations to specify where it is legal to write annotations of a
  * given type.
  *

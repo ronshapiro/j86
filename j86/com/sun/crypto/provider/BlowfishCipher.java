@@ -23,14 +23,14 @@
  * questions.
  */
 
-package com.sun.crypto.provider;
+package j86.com.sun.crypto.provider;
 
-import java.security.*;
-import java.security.spec.*;
-import sun.security.util.*;
-import javax.crypto.*;
-import javax.crypto.spec.*;
-import javax.crypto.BadPaddingException;
+import j86.java.security.*;
+import j86.j86.java.security.spec.*;
+import j86.sun.security.util.*;
+import j86.javax.crypto.*;
+import j86.j86.javax.crypto.spec.*;
+import j86.javax.crypto.BadPaddingException;
 
 /**
  * This class implements the Blowfish algorithm in its various modes

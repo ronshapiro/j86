@@ -23,30 +23,30 @@
  * questions.
  */
 
-package java.awt.datatransfer;
+package j86.j86.java.awt.datatransfer;
 
-import java.awt.Toolkit;
+import j86.java.awt.Toolkit;
 
-import java.lang.ref.SoftReference;
+import j86.j86.java.lang.ref.SoftReference;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.InputStreamReader;
-import java.io.IOException;
+import j86.java.io.BufferedReader;
+import j86.java.io.File;
+import j86.java.io.InputStreamReader;
+import j86.java.io.IOException;
 
-import java.net.URL;
-import java.net.MalformedURLException;
+import j86.java.net.URL;
+import j86.java.net.MalformedURLException;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.util.WeakHashMap;
+import j86.java.util.ArrayList;
+import j86.java.util.HashMap;
+import j86.java.util.HashSet;
+import j86.java.util.LinkedHashSet;
+import j86.java.util.List;
+import j86.java.util.Map;
+import j86.java.util.Set;
+import j86.java.util.WeakHashMap;
 
-import sun.awt.datatransfer.DataTransferer;
+import j86.j86.sun.awt.datatransfer.DataTransferer;
 
 /**
  * The SystemFlavorMap is a configurable map between "natives" (Strings), which
@@ -72,7 +72,7 @@ public final class SystemFlavorMap implements FlavorMap, FlavorTable {
     private static final WeakHashMap<ClassLoader, FlavorMap> flavorMaps = new WeakHashMap<>();
 
     /**
-     * Copied from java.util.Properties.
+     * Copied from j86.java.util.Properties.
      */
     private static final String keyValueSeparators = "=: \t\r\n\f";
     private static final String strictKeyValueSeparators = "=:";
@@ -83,7 +83,7 @@ public final class SystemFlavorMap implements FlavorMap, FlavorTable {
      * from best to worst.
      */
     private static final String[] UNICODE_TEXT_CLASSES = {
-        "java.io.Reader", "java.lang.String", "java.nio.CharBuffer", "\"[C\""
+        "j86.java.io.Reader", "j86.java.lang.String", "j86.java.nio.CharBuffer", "\"[C\""
     };
 
     /**
@@ -91,7 +91,7 @@ public final class SystemFlavorMap implements FlavorMap, FlavorTable {
      * from best to worst.
      */
     private static final String[] ENCODED_TEXT_CLASSES = {
-        "java.io.InputStream", "java.nio.ByteBuffer", "\"[B\""
+        "j86.java.io.InputStream", "j86.java.nio.ByteBuffer", "\"[B\""
     };
 
     /**
@@ -217,8 +217,8 @@ public final class SystemFlavorMap implements FlavorMap, FlavorTable {
 
         isMapInitialized = true;
         BufferedReader flavormapDotProperties =
-            java.security.AccessController.doPrivileged(
-                new java.security.PrivilegedAction<BufferedReader>() {
+            j86.java.security.AccessController.doPrivileged(
+                new j86.java.security.PrivilegedAction<BufferedReader>() {
                     public BufferedReader run() {
                         String fileName =
                             System.getProperty("java.home") +
@@ -240,8 +240,8 @@ public final class SystemFlavorMap implements FlavorMap, FlavorTable {
                 });
 
         BufferedReader flavormapURL =
-            java.security.AccessController.doPrivileged(
-                new java.security.PrivilegedAction<BufferedReader>() {
+            j86.java.security.AccessController.doPrivileged(
+                new j86.java.security.PrivilegedAction<BufferedReader>() {
                     public BufferedReader run() {
                         String url = Toolkit.getProperty("AWT.DnD.flavorMapFileURL", null);
 
@@ -279,7 +279,7 @@ public final class SystemFlavorMap implements FlavorMap, FlavorTable {
         }
     }
     /**
-     * Copied code from java.util.Properties. Parsing the data ourselves is the
+     * Copied code from j86.java.util.Properties. Parsing the data ourselves is the
      * only way to handle duplicate keys and values.
      */
     private void parseAndStoreReader(BufferedReader in) throws IOException {
@@ -443,7 +443,7 @@ public final class SystemFlavorMap implements FlavorMap, FlavorTable {
     }
 
     /**
-     * Copied from java.util.Properties.
+     * Copied from j86.java.util.Properties.
      */
     private boolean continueLine (String line) {
         int slashCount = 0;
@@ -455,7 +455,7 @@ public final class SystemFlavorMap implements FlavorMap, FlavorTable {
     }
 
     /**
-     * Copied from java.util.Properties.
+     * Copied from j86.java.util.Properties.
      */
     private String loadConvert(String theString) {
         char aChar;
@@ -666,7 +666,7 @@ public final class SystemFlavorMap implements FlavorMap, FlavorTable {
      *        should be returned. If <code>null</code> is specified, all
      *        natives currently known to the data transfer subsystem are
      *        returned in a non-deterministic order.
-     * @return a <code>java.util.List</code> of <code>java.lang.String</code>
+     * @return a <code>j86.java.util.List</code> of <code>j86.java.lang.String</code>
      *         objects which are platform-specific representations of platform-
      *         specific data formats
      *
@@ -798,7 +798,7 @@ public final class SystemFlavorMap implements FlavorMap, FlavorTable {
      *        should be returned. If <code>null</code> is specified, all
      *        <code>DataFlavor</code>s currently known to the data transfer
      *        subsystem are returned in a non-deterministic order.
-     * @return a <code>java.util.List</code> of <code>DataFlavor</code>
+     * @return a <code>j86.java.util.List</code> of <code>DataFlavor</code>
      *         objects into which platform-specific data in the specified,
      *         platform-specific native can be translated
      *
@@ -989,7 +989,7 @@ public final class SystemFlavorMap implements FlavorMap, FlavorTable {
      *        specified, a mapping of all <code>DataFlavor</code>s known to the
      *        data transfer subsystem to their most preferred
      *        <code>String</code> natives will be returned.
-     * @return a <code>java.util.Map</code> of <code>DataFlavor</code>s to
+     * @return a <code>j86.java.util.Map</code> of <code>DataFlavor</code>s to
      *         <code>String</code> natives
      *
      * @see #getNativesForFlavor
@@ -1035,7 +1035,7 @@ public final class SystemFlavorMap implements FlavorMap, FlavorTable {
      *        specified, a mapping of all supported <code>String</code> natives
      *        to their most preferred <code>DataFlavor</code>s will be
      *        returned.
-     * @return a <code>java.util.Map</code> of <code>String</code> natives to
+     * @return a <code>j86.java.util.Map</code> of <code>String</code> natives to
      *         <code>DataFlavor</code>s
      *
      * @see #getFlavorsForNative

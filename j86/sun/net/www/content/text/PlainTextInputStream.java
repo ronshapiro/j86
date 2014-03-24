@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.net.www.content.text;
-import java.io.InputStream;
-import java.io.FilterInputStream;
+package j86.j86.j86.sun.net.www.content.text;
+import j86.java.io.InputStream;
+import j86.java.io.FilterInputStream;
 
 /**
  * PlainTextInputStream class extends the FilterInputStream class.

@@ -25,9 +25,9 @@
 /*
  * $Id: OctetStreamData.java,v 1.3 2005/05/10 15:47:42 mullan Exp $
  */
-package javax.xml.crypto;
+package j86.javax.xml.crypto;
 
-import java.io.InputStream;
+import j86.java.io.InputStream;
 
 /**
  * A representation of a <code>Data</code> type containing an octet stream.

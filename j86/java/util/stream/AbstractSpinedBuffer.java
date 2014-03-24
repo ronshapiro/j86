@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.util.stream;
+package j86.j86.java.util.stream;
 
 /**
  * Base class for a data structure for gathering elements into a buffer and then

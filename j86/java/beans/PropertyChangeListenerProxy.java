@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.beans;
+package j86.java.beans;
 
-import java.util.EventListenerProxy;
+import j86.java.util.EventListenerProxy;
 
 /**
  * A class which extends the {@code EventListenerProxy}
@@ -39,7 +39,7 @@ import java.util.EventListenerProxy;
  * then the array returned could be a mixture of {@code PropertyChangeListener}
  * and {@code PropertyChangeListenerProxy} objects.
  *
- * @see java.util.EventListenerProxy
+ * @see j86.java.util.EventListenerProxy
  * @see PropertyChangeSupport#getPropertyChangeListeners
  * @since 1.4
  */

@@ -38,27 +38,27 @@
  *
  */
 
-package java.awt.font;
+package j86.j86.java.awt.font;
 
-import java.awt.Font;
+import j86.java.awt.Font;
 
-import java.text.AttributedCharacterIterator;
-import java.text.AttributedCharacterIterator.Attribute;
-import java.text.AttributedString;
-import java.text.Bidi;
-import java.text.BreakIterator;
-import java.text.CharacterIterator;
+import j86.java.text.AttributedCharacterIterator;
+import j86.java.text.AttributedCharacterIterator.Attribute;
+import j86.java.text.AttributedString;
+import j86.java.text.Bidi;
+import j86.java.text.BreakIterator;
+import j86.java.text.CharacterIterator;
 
-import java.awt.font.FontRenderContext;
+import j86.j86.java.awt.font.FontRenderContext;
 
-import java.util.Hashtable;
-import java.util.Map;
+import j86.java.util.Hashtable;
+import j86.java.util.Map;
 
-import sun.font.AttributeValues;
-import sun.font.BidiUtils;
-import sun.font.TextLineComponent;
-import sun.font.TextLabelFactory;
-import sun.font.FontResolver;
+import j86.sun.font.AttributeValues;
+import j86.sun.font.BidiUtils;
+import j86.sun.font.TextLineComponent;
+import j86.sun.font.TextLabelFactory;
+import j86.sun.font.FontResolver;
 
 /**
  * The <code>TextMeasurer</code> class provides the primitive operations
@@ -68,7 +68,7 @@ import sun.font.FontResolver;
  * methods for incremental editing of paragraphs.
  * <p>
  * A <code>TextMeasurer</code> object is constructed with an
- * {@link java.text.AttributedCharacterIterator AttributedCharacterIterator}
+ * {@link j86.java.text.AttributedCharacterIterator AttributedCharacterIterator}
  * representing a single paragraph of text.  The value returned by the
  * {@link AttributedCharacterIterator#getBeginIndex() getBeginIndex}
  * method of <code>AttributedCharacterIterator</code>
@@ -80,9 +80,9 @@ import sun.font.FontResolver;
  * use in calls to the <code>TextMeasurer</code>.  For example, calls to
  * get the advance of a range of text or the line break of a range of text
  * must use indexes between the beginning and end index values.  Calls to
- * {@link #insertChar(java.text.AttributedCharacterIterator, int) insertChar}
+ * {@link #insertChar(j86.java.text.AttributedCharacterIterator, int) insertChar}
  * and
- * {@link #deleteChar(java.text.AttributedCharacterIterator, int) deleteChar}
+ * {@link #deleteChar(j86.java.text.AttributedCharacterIterator, int) deleteChar}
  * reset the <code>TextMeasurer</code> to use the beginning index and end
  * index of the <code>AttributedCharacterIterator</code> passed in those calls.
  * <p>

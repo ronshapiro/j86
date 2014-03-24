@@ -23,8 +23,8 @@
  * questions.
  */
 
-package java.util.prefs;
-import java.util.*;
+package j86.j86.java.util.prefs;
+import j86.java.util.*;
 
 /**
  * A factory object that generates Preferences objects.  Providers of

@@ -22,21 +22,21 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text;
+package j86.j86.javax.swing.text;
 
-import java.util.*;
-import java.awt.*;
-import java.text.AttributedCharacterIterator;
-import java.text.BreakIterator;
-import java.awt.font.*;
-import java.awt.geom.AffineTransform;
-import javax.swing.JComponent;
-import javax.swing.event.DocumentEvent;
-import sun.font.BidiUtils;
+import j86.java.util.*;
+import j86.java.awt.*;
+import j86.java.text.AttributedCharacterIterator;
+import j86.java.text.BreakIterator;
+import j86.j86.java.awt.font.*;
+import j86.j86.java.awt.geom.AffineTransform;
+import j86.javax.swing.JComponent;
+import j86.j86.javax.swing.event.DocumentEvent;
+import j86.sun.font.BidiUtils;
 
 /**
- * A flow strategy that uses java.awt.font.LineBreakMeasureer to
- * produce java.awt.font.TextLayout for i18n capable rendering.
+ * A flow strategy that uses j86.j86.java.awt.font.LineBreakMeasureer to
+ * produce j86.j86.java.awt.font.TextLayout for i18n capable rendering.
  * If the child view being placed into the flow is of type
  * GlyphView and can be rendered by TextLayout, a GlyphPainter
  * that uses TextLayout is plugged into the GlyphView.
@@ -47,7 +47,7 @@ class TextLayoutStrategy extends FlowView.FlowStrategy {
 
     /**
      * Constructs a layout strategy for paragraphs based
-     * upon java.awt.font.LineBreakMeasurer.
+     * upon j86.j86.java.awt.font.LineBreakMeasurer.
      */
     public TextLayoutStrategy() {
         text = new AttributedSegment();
@@ -292,7 +292,7 @@ class TextLayoutStrategy extends FlowView.FlowStrategy {
         text.setView(lv);
 
         Container container = fv.getContainer();
-        FontRenderContext frc = sun.swing.SwingUtilities2.
+        FontRenderContext frc = j86.sun.swing.SwingUtilities2.
                                     getFontRenderContext(container);
         BreakIterator iter;
         Container c = fv.getContainer();

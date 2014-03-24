@@ -22,21 +22,21 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.util.stream;
+package j86.j86.java.util.stream;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Objects;
-import java.util.PrimitiveIterator;
-import java.util.Spliterator;
-import java.util.Spliterators;
-import java.util.function.Consumer;
-import java.util.function.DoubleConsumer;
-import java.util.function.IntConsumer;
-import java.util.function.IntFunction;
-import java.util.function.LongConsumer;
+import j86.java.util.ArrayList;
+import j86.java.util.Arrays;
+import j86.java.util.Iterator;
+import j86.java.util.List;
+import j86.java.util.Objects;
+import j86.java.util.PrimitiveIterator;
+import j86.java.util.Spliterator;
+import j86.java.util.Spliterators;
+import j86.j86.java.util.function.Consumer;
+import j86.j86.java.util.function.DoubleConsumer;
+import j86.j86.java.util.function.IntConsumer;
+import j86.j86.java.util.function.IntFunction;
+import j86.j86.java.util.function.LongConsumer;
 
 /**
  * An ordered collection of elements.  Elements can be added, but not removed.

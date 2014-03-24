@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text;
+package j86.j86.javax.swing.text;
 
-import java.awt.*;
-import javax.swing.SwingConstants;
-import javax.swing.event.*;
+import j86.java.awt.*;
+import j86.javax.swing.SwingConstants;
+import j86.j86.javax.swing.event.*;
 
 /**
  * <p>
@@ -76,7 +76,7 @@ A view has the following responsibilities:
     <li>{@link #getPreferredSpan(int) getPreferredSpan}
     <li>{@link #getMaximumSpan(int) getMaximumSpan}
     <li>{@link #getAlignment(int) getAlignment}
-    <li>{@link #preferenceChanged(javax.swing.text.View, boolean, boolean) preferenceChanged}
+    <li>{@link #preferenceChanged(j86.j86.javax.swing.text.View, boolean, boolean) preferenceChanged}
     <li>{@link #setSize(float, float) setSize}
     </ul>
 
@@ -142,7 +142,7 @@ A view has the following responsibilities:
     </ul>
     <p>The methods for rendering are:
     <ul>
-    <li>{@link #paint(java.awt.Graphics, java.awt.Shape) paint}
+    <li>{@link #paint(j86.java.awt.Graphics, java.awt.Shape) paint}
     </ul>
 
     <dt><b>Translate between the model and view coordinate systems.</b>
@@ -152,8 +152,8 @@ A view has the following responsibilities:
     to perform translation to properly locate spatial representation of the model.
     The methods for doing this are:
     <ul>
-    <li>{@link #modelToView(int, javax.swing.text.Position.Bias, int, javax.swing.text.Position.Bias, java.awt.Shape) modelToView}
-    <li>{@link #viewToModel(float, float, java.awt.Shape, javax.swing.text.Position.Bias[]) viewToModel}
+    <li>{@link #modelToView(int, j86.j86.javax.swing.text.Position.Bias, int, javax.swing.text.Position.Bias, j86.java.awt.Shape) modelToView}
+    <li>{@link #viewToModel(float, float, j86.java.awt.Shape, j86.j86.javax.swing.text.Position.Bias[]) viewToModel}
     <li>{@link #getDocument() getDocument}
     <li>{@link #getElement() getElement}
     <li>{@link #getStartOffset() getStartOffset}
@@ -280,7 +280,7 @@ public abstract class View implements SwingConstants {
      * @param child the child view
      * @param width true if the width preference has changed
      * @param height true if the height preference has changed
-     * @see javax.swing.JComponent#revalidate
+     * @see j86.javax.swing.JComponent#revalidate
      */
     public void preferenceChanged(View child, boolean width, boolean height) {
         View parent = getParent();

@@ -24,10 +24,10 @@
  */
 
 
-package javax.net.ssl;
+package j86.j86.javax.net.ssl;
 
-import java.io.*;
-import java.net.*;
+import j86.java.io.*;
+import j86.java.net.*;
 
 
 /**
@@ -50,7 +50,7 @@ import java.net.*;
  * inherited by the created <code>SSLSocket</code> can be
  * overriden by calling the appropriate methods.
  *
- * @see java.net.ServerSocket
+ * @see j86.java.net.ServerSocket
  * @see SSLSocket
  *
  * @since 1.4

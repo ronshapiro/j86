@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.sql;
+package j86.javax.sql;
 
-import java.sql.SQLException;
+import j86.java.sql.SQLException;
 
 /**
  * <P>An <code>Event</code> object that provides information about the
@@ -42,7 +42,7 @@ import java.sql.SQLException;
  * @since 1.4
  */
 
-public class ConnectionEvent extends java.util.EventObject {
+public class ConnectionEvent extends j86.java.util.EventObject {
 
   /**
    * <P>Constructs a <code>ConnectionEvent</code> object initialized with

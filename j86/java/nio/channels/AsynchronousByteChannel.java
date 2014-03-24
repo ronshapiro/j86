@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.nio.channels;
+package j86.j86.java.nio.channels;
 
-import java.nio.ByteBuffer;
-import java.util.concurrent.Future;
+import j86.java.nio.ByteBuffer;
+import j86.j86.java.util.concurrent.Future;
 
 /**
  * An asynchronous channel that can read and write bytes.
@@ -39,7 +39,7 @@ import java.util.concurrent.Future;
  * I/O operations may proceed concurrently with a read operation depends upon
  * the type of the channel.
  *
- * <p> Note that {@link java.nio.ByteBuffer ByteBuffers} are not safe for use by
+ * <p> Note that {@link j86.java.nio.ByteBuffer ByteBuffers} are not safe for use by
  * multiple concurrent threads. When a read or write operation is initiated then
  * care must be taken to ensure that the buffer is not accessed until the
  * operation completes.

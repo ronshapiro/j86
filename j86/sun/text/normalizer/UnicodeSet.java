@@ -34,11 +34,11 @@
  *******************************************************************************
  */
 
-package sun.text.normalizer;
+package j86.j86.sun.text.normalizer;
 
-import java.text.ParsePosition;
-import java.util.Iterator;
-import java.util.TreeSet;
+import j86.java.text.ParsePosition;
+import j86.java.util.Iterator;
+import j86.java.util.TreeSet;
 
 /**
  * A mutable set of Unicode characters and multicharacter strings.  Objects of this class
@@ -51,7 +51,7 @@ import java.util.TreeSet;
  * <p><code>UnicodeSet</code> supports two APIs. The first is the
  * <em>operand</em> API that allows the caller to modify the value of
  * a <code>UnicodeSet</code> object. It conforms to Java 2's
- * <code>java.util.Set</code> interface, although
+ * <code>j86.java.util.Set</code> interface, although
  * <code>UnicodeSet</code> does not actually implement that
  * interface. All methods of <code>Set</code> are supported, with the
  * modification that they take a character range or single character
@@ -70,7 +70,7 @@ import java.util.TreeSet;
  *
  * <p>The second API is the
  * <code>applyPattern()</code>/<code>toPattern()</code> API from the
- * <code>java.text.Format</code>-derived classes.  Unlike the
+ * <code>j86.java.text.Format</code>-derived classes.  Unlike the
  * methods that add characters, add categories, and control the logic
  * of the set, the method <code>applyPattern()</code> sets all
  * attributes of a <code>UnicodeSet</code> at once, based on a
@@ -352,7 +352,7 @@ public class UnicodeSet implements UnicodeMatcher {
      * Constructs a set from the given pattern.  See the class description
      * for the syntax of the pattern language.  Whitespace is ignored.
      * @param pattern a string specifying what characters are in the set
-     * @exception java.lang.IllegalArgumentException if the pattern contains
+     * @exception j86.java.lang.IllegalArgumentException if the pattern contains
      * a syntax error.
      * @stable ICU 2.0
      */
@@ -380,7 +380,7 @@ public class UnicodeSet implements UnicodeMatcher {
      * See the class description for the syntax of the pattern language.
      * Whitespace is ignored.
      * @param pattern a string specifying what characters are in the set
-     * @exception java.lang.IllegalArgumentException if the pattern
+     * @exception j86.java.lang.IllegalArgumentException if the pattern
      * contains a syntax error.
      * @stable ICU 2.0
      */
@@ -919,7 +919,7 @@ public class UnicodeSet implements UnicodeMatcher {
      * is the last character of the pattern string.
      * @return an inversion list for the parsed substring
      * of <code>pattern</code>
-     * @exception java.lang.IllegalArgumentException if the parse fails.
+     * @exception j86.java.lang.IllegalArgumentException if the parse fails.
      */
     UnicodeSet applyPattern(String pattern,
                       ParsePosition pos,

@@ -24,11 +24,11 @@
  */
 
 
-package sun.security.krb5.internal.crypto;
+package j86.j86.j86.sun.security.krb5.internal.crypto;
 
-import sun.security.krb5.internal.crypto.dk.Des3DkCrypto;
-import sun.security.krb5.KrbCryptoException;
-import java.security.GeneralSecurityException;
+import j86.j86.j86.j86.sun.security.krb5.internal.crypto.dk.Des3DkCrypto;
+import j86.sun.security.krb5.KrbCryptoException;
+import j86.java.security.GeneralSecurityException;
 
 /**
  * Class with static methods for doing Triple DES operations.

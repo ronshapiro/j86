@@ -23,18 +23,18 @@
  * questions.
  */
 
-package sun.security.util;
+package j86.sun.security.util;
 
 /**
  * <p> This class represents the <code>ResourceBundle</code>
- * for javax.security.auth and sun.security.
+ * for j86.javax.security.auth and sun.security.
  *
  */
-public class Resources_sv extends java.util.ListResourceBundle {
+public class Resources_sv extends j86.java.util.ListResourceBundle {
 
     private static final Object[][] contents = {
 
-        // javax.security.auth.PrivateCredentialPermission
+        // j86.javax.security.auth.PrivateCredentialPermission
         {"invalid.null.input.s.", "ogiltiga null-indata"},
         {"actions.can.only.be.read.", "funktioner kan endast 'l\u00E4sas'"},
         {"permission.name.name.syntax.invalid.",
@@ -52,12 +52,12 @@ public class Resources_sv extends java.util.ListResourceBundle {
         {"CredOwner.Principal.Class.class.Principal.Name.name",
                 "CredOwner:\n\tIdentitetshavareklass = {0}\n\tIdentitetshavarenamn = {1}"},
 
-        // javax.security.auth.x500
+        // j86.j86.javax.security.auth.x500
         {"provided.null.name", "angav null-namn"},
         {"provided.null.keyword.map", "nullnyckelordsmappning tillhandah\u00F6lls"},
         {"provided.null.OID.map", "null-OID-mappning tillhandah\u00F6lls"},
 
-        // javax.security.auth.Subject
+        // j86.javax.security.auth.Subject
         {"NEWLINE", "\n"},
         {"invalid.null.AccessControlContext.provided",
                 "ogiltigt null-AccessControlContext"},
@@ -72,15 +72,15 @@ public class Resources_sv extends java.util.ListResourceBundle {
         {".Private.Credential.inaccessible.",
                 "\tPrivat inloggning \u00E4r inte tillg\u00E4nglig\n"},
         {"Subject.is.read.only", "Innehavare \u00E4r skrivskyddad"},
-        {"attempting.to.add.an.object.which.is.not.an.instance.of.java.security.Principal.to.a.Subject.s.Principal.Set",
-                "f\u00F6rs\u00F6k att l\u00E4gga till ett objekt som inte \u00E4r en f\u00F6rekomst av java.security.Principal till en upps\u00E4ttning av identitetshavare"},
+        {"attempting.to.add.an.object.which.is.not.an.instance.of.j86.java.security.Principal.to.a.Subject.s.Principal.Set",
+                "f\u00F6rs\u00F6k att l\u00E4gga till ett objekt som inte \u00E4r en f\u00F6rekomst av j86.java.security.Principal till en upps\u00E4ttning av identitetshavare"},
         {"attempting.to.add.an.object.which.is.not.an.instance.of.class",
                 "f\u00F6rs\u00F6ker l\u00E4gga till ett objekt som inte \u00E4r en instans av {0}"},
 
-        // javax.security.auth.login.AppConfigurationEntry
+        // j86.j86.javax.security.auth.login.AppConfigurationEntry
         {"LoginModuleControlFlag.", "LoginModuleControlFlag: "},
 
-        // javax.security.auth.login.LoginContext
+        // j86.j86.javax.security.auth.login.LoginContext
         {"Invalid.null.input.name", "Ogiltiga null-indata: namn"},
         {"No.LoginModules.configured.for.name",
          "Inga inloggningsmoduler har konfigurerats f\u00F6r {0}"},
@@ -102,14 +102,14 @@ public class Resources_sv extends java.util.ListResourceBundle {
         {"Login.Failure.all.modules.ignored",
                 "Inloggningsfel: alla moduler ignoreras"},
 
-        // sun.security.provider.PolicyFile
+        // j86.sun.security.provider.PolicyFile
 
-        {"java.security.policy.error.parsing.policy.message",
-                "java.security.policy: fel vid tolkning av {0}:\n\t{1}"},
-        {"java.security.policy.error.adding.Permission.perm.message",
-                "java.security.policy: fel vid till\u00E4gg av beh\u00F6righet, {0}:\n\t{1}"},
-        {"java.security.policy.error.adding.Entry.message",
-                "java.security.policy: fel vid till\u00E4gg av post:\n\t{0}"},
+        {"j86.java.security.policy.error.parsing.policy.message",
+                "j86.java.security.policy: fel vid tolkning av {0}:\n\t{1}"},
+        {"j86.java.security.policy.error.adding.Permission.perm.message",
+                "j86.java.security.policy: fel vid till\u00E4gg av beh\u00F6righet, {0}:\n\t{1}"},
+        {"j86.java.security.policy.error.adding.Entry.message",
+                "j86.java.security.policy: fel vid till\u00E4gg av post:\n\t{0}"},
         {"alias.name.not.provided.pe.name.", "aliasnamn ej angivet ({0})"},
         {"unable.to.perform.substitution.on.alias.suffix",
                 "kan ej ers\u00E4tta alias, {0}"},
@@ -119,7 +119,7 @@ public class Resources_sv extends java.util.ListResourceBundle {
         {"RPARAM", ")"},
         {"type.can.t.be.null","typen kan inte vara null"},
 
-        // sun.security.provider.PolicyParser
+        // j86.sun.security.provider.PolicyParser
         {"keystorePasswordURL.can.not.be.specified.without.also.specifying.keystore",
                 "kan inte ange keystorePasswordURL utan att ange nyckellager"},
         {"expected.keystore.type", "f\u00F6rv\u00E4ntad nyckellagertyp"},
@@ -146,12 +146,12 @@ public class Resources_sv extends java.util.ListResourceBundle {
         {"null.principalClass.or.principalName",
                 "null-principalClass eller -principalName"},
 
-        // sun.security.pkcs11.SunPKCS11
+        // j86.j86.sun.security.pkcs11.SunPKCS11
         {"PKCS11.Token.providerName.Password.",
                 "PKCS11-tecken [{0}] L\u00F6senord: "},
 
         /* --- DEPRECATED --- */
-        // javax.security.auth.Policy
+        // j86.javax.security.auth.Policy
         {"unable.to.instantiate.Subject.based.policy",
                 "den innehavarbaserade policyn kan inte skapas"}
     };

@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.tools.java;
+package j86.sun.tools.java;
 
-import java.util.Hashtable;
-import java.io.PrintStream;
-import java.util.Enumeration;
+import j86.java.util.Hashtable;
+import j86.java.io.PrintStream;
+import j86.java.util.Enumeration;
 
 /**
  * A class to represent identifiers.<p>
@@ -200,7 +200,7 @@ class Identifier implements Constants {
     /** A space character, which precedes the first inner class
      *  name in a qualified name, and thus marks the qualification
      *  as involving inner classes, instead of merely packages.<p>
-     *  Ex:  <tt>java.util.Vector. Enumerator</tt>.
+     *  Ex:  <tt>j86.java.util.Vector. Enumerator</tt>.
      */
     public static final char INNERCLASS_PREFIX = ' ';
 

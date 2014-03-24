@@ -23,19 +23,19 @@
  * questions.
  */
 
-package jdk.internal.util.xml;
+package j86.jdk.internal.util.xml;
 
-import java.io.*;
-import java.util.InvalidPropertiesFormatException;
-import java.util.Map.Entry;
-import java.util.Properties;
-import jdk.internal.org.xml.sax.Attributes;
-import jdk.internal.org.xml.sax.InputSource;
-import jdk.internal.org.xml.sax.SAXException;
-import jdk.internal.org.xml.sax.SAXParseException;
-import jdk.internal.org.xml.sax.helpers.DefaultHandler;
-import jdk.internal.util.xml.impl.SAXParserImpl;
-import jdk.internal.util.xml.impl.XMLStreamWriterImpl;
+import j86.java.io.*;
+import j86.java.util.InvalidPropertiesFormatException;
+import j86.java.util.Map.Entry;
+import j86.java.util.Properties;
+import j86.jdk.internal.org.xml.sax.Attributes;
+import j86.jdk.internal.org.xml.sax.InputSource;
+import j86.jdk.internal.org.xml.sax.SAXException;
+import j86.jdk.internal.org.xml.sax.SAXParseException;
+import j86.j86.jdk.internal.org.xml.sax.helpers.DefaultHandler;
+import j86.j86.jdk.internal.util.xml.impl.SAXParserImpl;
+import j86.j86.jdk.internal.util.xml.impl.XMLStreamWriterImpl;
 
 /**
  * A class used to aid in Properties load and save in XML. This class is
@@ -157,7 +157,7 @@ public class PropertiesDefaultHandler extends DefaultHandler {
 
         if (rootElm == null) {
             fatalError(new SAXParseException("An XML properties document must contain"
-                    + " the DOCTYPE declaration as defined by java.util.Properties.", null));
+                    + " the DOCTYPE declaration as defined by j86.java.util.Properties.", null));
         }
 
         if (rootElem == 1 && !rootElm.equals(qName)) {

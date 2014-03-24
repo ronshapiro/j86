@@ -23,13 +23,13 @@
  * questions.
  */
 
-package com.sun.jndi.ldap;
+package j86.com.sun.jndi.ldap;
 
-import javax.naming.*;
-import javax.naming.ldap.Control;
+import j86.javax.naming.*;
+import j86.j86.javax.naming.ldap.Control;
 
-import java.util.Hashtable;
-import java.util.Vector;
+import j86.java.util.Hashtable;
+import j86.java.util.Vector;
 
 /**
   * This exception is raised when a referral to an alternative context
@@ -65,7 +65,7 @@ import java.util.Vector;
   * @author Vincent Ryan
   */
 final public class LdapReferralException extends
-    javax.naming.ldap.LdapReferralException {
+    j86.j86.javax.naming.ldap.LdapReferralException {
     private static final long serialVersionUID = 627059076356906399L;
 
         // ----------- fields initialized in constructor ---------------

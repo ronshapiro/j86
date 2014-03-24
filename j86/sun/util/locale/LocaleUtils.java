@@ -29,11 +29,11 @@
  * others. All Rights Reserved.                                                *
  *******************************************************************************
  */
-package sun.util.locale;
+package j86.j86.sun.util.locale;
 
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import j86.java.util.List;
+import j86.java.util.Map;
+import j86.java.util.Set;
 
 /**
  * Collection of static utility methods for Locale support. The

@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.nio.ch;
+package j86.j86.j86.sun.nio.ch;
 
-import java.util.concurrent.Future;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.ExecutionException;
-import java.io.IOException;
+import j86.j86.java.util.concurrent.Future;
+import j86.j86.java.util.concurrent.TimeUnit;
+import j86.j86.java.util.concurrent.ExecutionException;
+import j86.java.io.IOException;
 
 /**
  * A Future representing the result of an I/O operation that has already

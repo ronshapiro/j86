@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.security.cert;
+package j86.j86.java.security.cert;
 
-import java.util.Iterator;
-import java.util.Set;
+import j86.java.util.Iterator;
+import j86.java.util.Set;
 
 /**
  * An immutable valid policy tree node as defined by the PKIX certification

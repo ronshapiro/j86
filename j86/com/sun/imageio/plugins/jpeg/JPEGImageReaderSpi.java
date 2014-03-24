@@ -23,21 +23,21 @@
  * questions.
  */
 
-package com.sun.imageio.plugins.jpeg;
+package j86.com.sun.imageio.plugins.jpeg;
 
-import java.util.Locale;
-import javax.imageio.spi.ImageReaderSpi;
-import javax.imageio.stream.ImageInputStream;
-import javax.imageio.spi.IIORegistry;
-import javax.imageio.spi.ServiceRegistry;
-import java.io.IOException;
-import javax.imageio.ImageReader;
-import javax.imageio.IIOException;
+import j86.java.util.Locale;
+import j86.j86.javax.imageio.spi.ImageReaderSpi;
+import j86.j86.javax.imageio.stream.ImageInputStream;
+import j86.j86.javax.imageio.spi.IIORegistry;
+import j86.j86.javax.imageio.spi.ServiceRegistry;
+import j86.java.io.IOException;
+import j86.javax.imageio.ImageReader;
+import j86.javax.imageio.IIOException;
 
 public class JPEGImageReaderSpi extends ImageReaderSpi {
 
     private static String [] writerSpiNames =
-        {"com.sun.imageio.plugins.jpeg.JPEGImageWriterSpi"};
+        {"j86.com.sun.imageio.plugins.jpeg.JPEGImageWriterSpi"};
 
     public JPEGImageReaderSpi() {
         super(JPEG.vendor,
@@ -45,7 +45,7 @@ public class JPEGImageReaderSpi extends ImageReaderSpi {
               JPEG.names,
               JPEG.suffixes,
               JPEG.MIMETypes,
-              "com.sun.imageio.plugins.jpeg.JPEGImageReader",
+              "j86.com.sun.imageio.plugins.jpeg.JPEGImageReader",
               new Class[] { ImageInputStream.class },
               writerSpiNames,
               true,

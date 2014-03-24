@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.awt;
+package j86.sun.awt;
 
-import java.awt.*;
+import j86.java.awt.*;
 
 /**
  * Event object describing changes in AWT modality

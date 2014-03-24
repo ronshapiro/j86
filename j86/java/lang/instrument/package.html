@@ -103,7 +103,7 @@ method is not invoked.
 
 <P>
 The agent class will be loaded by the system class loader
-(see {@link java.lang.ClassLoader#getSystemClassLoader ClassLoader.getSystemClassLoader}). This is
+(see {@link j86.java.lang.ClassLoader#getSystemClassLoader ClassLoader.getSystemClassLoader}). This is
 the class loader which typically loads the class containing the application <code>main</code> method.
 The <code>premain</code> methods will be run under the same security and classloader 
 rules as the application <code>main</code> method.
@@ -139,7 +139,7 @@ supports the starting of agents after the VM has started the following applies:
   <li><p>The agent class must implement a public static <code>agentmain</code> method. </p></li>
 
   <li><p>The system class loader (
-      {@link java.lang.ClassLoader#getSystemClassLoader ClassLoader.getSystemClassLoader}) must
+      {@link j86.java.lang.ClassLoader#getSystemClassLoader ClassLoader.getSystemClassLoader}) must
       support a mechanism to add an agent JAR file to the system class path. <p></li>
 </ol>  
 

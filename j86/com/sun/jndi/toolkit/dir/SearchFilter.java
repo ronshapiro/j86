@@ -22,14 +22,14 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.jndi.toolkit.dir;
+package j86.com.sun.jndi.toolkit.dir;
 
-import javax.naming.*;
-import javax.naming.directory.*;
-import java.util.Enumeration;
-import java.util.StringTokenizer;
-import java.util.Vector;
-import java.util.Locale;
+import j86.javax.naming.*;
+import j86.j86.javax.naming.directory.*;
+import j86.java.util.Enumeration;
+import j86.java.util.StringTokenizer;
+import j86.java.util.Vector;
+import j86.java.util.Locale;
 
 /**
   * A class for parsing LDAP search filters (defined in RFC 1960, 2254)

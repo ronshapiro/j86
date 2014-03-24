@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.security;
+package j86.java.security;
 
 /**
  * The {@code GeneralSecurityException} class is a generic

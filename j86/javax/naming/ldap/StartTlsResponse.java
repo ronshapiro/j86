@@ -23,12 +23,12 @@
  * questions.
  */
 
-package javax.naming.ldap;
+package j86.j86.javax.naming.ldap;
 
-import java.io.IOException;
-import javax.net.ssl.SSLSession;
-import javax.net.ssl.SSLSocketFactory;
-import javax.net.ssl.HostnameVerifier;
+import j86.java.io.IOException;
+import j86.j86.javax.net.ssl.SSLSession;
+import j86.j86.javax.net.ssl.SSLSocketFactory;
+import j86.j86.javax.net.ssl.HostnameVerifier;
 
 /**
  * This class implements the LDAPv3 Extended Response for StartTLS as
@@ -46,7 +46,7 @@ import javax.net.ssl.HostnameVerifier;
  * Typically, a JNDI program uses the StartTLS extended request and response
  * classes as follows.
  * <blockquote><pre>
- * import javax.naming.ldap.*;
+ * import j86.j86.javax.naming.ldap.*;
  *
  * // Open an LDAP association
  * LdapContext ctx = new InitialLdapContext();

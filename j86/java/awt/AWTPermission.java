@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.awt;
+package j86.java.awt;
 
-import java.security.BasicPermission;
+import j86.java.security.BasicPermission;
 
 /**
  * This class is for AWT permissions.
@@ -79,8 +79,8 @@ import java.security.BasicPermission;
  *
  * <tr>
  *   <td>createRobot</td>
- *   <td>Create java.awt.Robot objects</td>
- *   <td>The java.awt.Robot object allows code to generate native-level
+ *   <td>Create j86.java.awt.Robot objects</td>
+ *   <td>The j86.java.awt.Robot object allows code to generate native-level
  * mouse and keyboard events as well as read the screen. It could allow
  * malicious code to control the system, run other programs, read the
  * display, and deny mouse and keyboard access to the user.</td>
@@ -118,8 +118,8 @@ import java.security.BasicPermission;
  * <tr>
  *   <td>readDisplayPixels</td>
  *   <td>Readback of pixels from the display screen</td>
- *   <td>Interfaces such as the java.awt.Composite interface or the
- * java.awt.Robot class allow arbitrary code to examine pixels on the
+ *   <td>Interfaces such as the j86.java.awt.Composite interface or the
+ * j86.java.awt.Robot class allow arbitrary code to examine pixels on the
  * display enable malicious code to snoop on the activities of the user.</td>
  * </tr>
  *
@@ -184,11 +184,11 @@ import java.security.BasicPermission;
  * </tr>
  * </table>
  *
- * @see java.security.BasicPermission
- * @see java.security.Permission
- * @see java.security.Permissions
- * @see java.security.PermissionCollection
- * @see java.lang.SecurityManager
+ * @see j86.java.security.BasicPermission
+ * @see j86.java.security.Permission
+ * @see j86.java.security.Permissions
+ * @see j86.java.security.PermissionCollection
+ * @see j86.java.lang.SecurityManager
  *
  *
  * @author Marianne Mueller

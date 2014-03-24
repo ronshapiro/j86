@@ -23,11 +23,11 @@
  * questions.
  */
 
-package java.awt.image;
+package j86.j86.j86.java.awt.image;
 
-import java.awt.BufferCapabilities;
-import java.awt.Graphics;
-import java.awt.Image;
+import j86.java.awt.BufferCapabilities;
+import j86.java.awt.Graphics;
+import j86.java.awt.Image;
 
 /**
  * The <code>BufferStrategy</code> class represents the mechanism with which
@@ -125,9 +125,9 @@ import java.awt.Image;
  * w.dispose();
  * </code></pre>
  *
- * @see java.awt.Window
- * @see java.awt.Canvas
- * @see java.awt.GraphicsConfiguration
+ * @see j86.java.awt.Window
+ * @see j86.java.awt.Canvas
+ * @see j86.java.awt.GraphicsConfiguration
  * @see VolatileImage
  * @author Michael Martak
  * @since 1.4
@@ -160,7 +160,7 @@ public abstract class BufferStrategy {
      *
      * @return Whether or not the drawing buffer was lost since the last call
      * to <code>getDrawGraphics</code>.
-     * @see java.awt.image.VolatileImage
+     * @see j86.j86.j86.java.awt.image.VolatileImage
      */
     public abstract boolean contentsLost();
 
@@ -175,7 +175,7 @@ public abstract class BufferStrategy {
      *
      * @return Whether or not the drawing buffer was restored since the last
      *         call to <code>getDrawGraphics</code>.
-     * @see java.awt.image.VolatileImage
+     * @see j86.j86.j86.java.awt.image.VolatileImage
      */
     public abstract boolean contentsRestored();
 
@@ -193,10 +193,10 @@ public abstract class BufferStrategy {
      * to use a <code>BufferStrategy</code> after it has been disposed will
      * result in undefined behavior.
      *
-     * @see java.awt.Window#createBufferStrategy
-     * @see java.awt.Canvas#createBufferStrategy
-     * @see java.awt.Window#getBufferStrategy
-     * @see java.awt.Canvas#getBufferStrategy
+     * @see j86.java.awt.Window#createBufferStrategy
+     * @see j86.java.awt.Canvas#createBufferStrategy
+     * @see j86.java.awt.Window#getBufferStrategy
+     * @see j86.java.awt.Canvas#getBufferStrategy
      * @since 1.6
      */
     public void dispose() {

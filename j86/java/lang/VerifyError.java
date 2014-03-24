@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.lang;
+package j86.java.lang;
 
 /**
  * Thrown when the "verifier" detects that a class file,

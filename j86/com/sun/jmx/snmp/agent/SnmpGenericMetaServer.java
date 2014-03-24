@@ -23,18 +23,18 @@
  * questions.
  */
 
-package com.sun.jmx.snmp.agent;
+package j86.j86.com.sun.jmx.snmp.agent;
 
 // jmx imports
 //
-import com.sun.jmx.snmp.SnmpValue;
-import com.sun.jmx.snmp.SnmpStatusException;
+import j86.com.sun.jmx.snmp.SnmpValue;
+import j86.com.sun.jmx.snmp.SnmpStatusException;
 
 /**
  * <p>
  * This interface defines the methods that must be implemented by an
  * SNMP metadata object that needs to interact with an
- * {@link com.sun.jmx.snmp.agent.SnmpGenericObjectServer} object.
+ * {@link j86.j86.com.sun.jmx.snmp.agent.SnmpGenericObjectServer} object.
  * </p>
  *
  * <p>
@@ -108,7 +108,7 @@ public interface SnmpGenericMetaServer {
      *           requested.
      * @param data A contextual object containing user-data.
      *           This object is allocated through the <code>
-     *           {@link com.sun.jmx.snmp.agent.SnmpUserDataFactory}</code>
+     *           {@link j86.j86.com.sun.jmx.snmp.agent.SnmpUserDataFactory}</code>
      *           for each incoming SNMP request.
      * @exception SnmpStatusException if the SET operation must be rejected.
      */
@@ -122,7 +122,7 @@ public interface SnmpGenericMetaServer {
      *           requested.
      * @param data A contextual object containing user-data.
      *           This object is allocated through the <code>
-     *           {@link com.sun.jmx.snmp.agent.SnmpUserDataFactory}</code>
+     *           {@link j86.j86.com.sun.jmx.snmp.agent.SnmpUserDataFactory}</code>
      *           for each incoming SNMP request.
      * @exception SnmpStatusException if the SET operation must be rejected.
      */

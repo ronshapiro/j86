@@ -23,18 +23,18 @@
  * questions.
  */
 
-package javax.rmi.ssl;
+package j86.javax.rmi.ssl;
 
-import java.io.IOException;
-import java.net.ServerSocket;
-import java.net.Socket;
-import java.rmi.server.RMIServerSocketFactory;
-import java.util.Arrays;
-import java.util.List;
-import javax.net.ssl.SSLContext;
-import javax.net.ssl.SSLServerSocketFactory;
-import javax.net.ssl.SSLSocket;
-import javax.net.ssl.SSLSocketFactory;
+import j86.java.io.IOException;
+import j86.java.net.ServerSocket;
+import j86.java.net.Socket;
+import j86.j86.java.rmi.server.RMIServerSocketFactory;
+import j86.java.util.Arrays;
+import j86.java.util.List;
+import j86.j86.javax.net.ssl.SSLContext;
+import j86.j86.javax.net.ssl.SSLServerSocketFactory;
+import j86.j86.javax.net.ssl.SSLSocket;
+import j86.j86.javax.net.ssl.SSLSocketFactory;
 
 /**
  * <p>An <code>SslRMIServerSocketFactory</code> instance is used by the RMI
@@ -61,9 +61,9 @@ import javax.net.ssl.SSLSocketFactory;
  * authentication is required by the server). This behavior can be modified
  * by supplying an already initialized <code>SSLContext</code> instance.
  *
- * @see javax.net.ssl.SSLSocketFactory
- * @see javax.net.ssl.SSLServerSocketFactory
- * @see javax.rmi.ssl.SslRMIClientSocketFactory
+ * @see j86.j86.javax.net.ssl.SSLSocketFactory
+ * @see j86.j86.javax.net.ssl.SSLServerSocketFactory
+ * @see j86.javax.rmi.ssl.SslRMIClientSocketFactory
  * @since 1.5
  */
 public class SslRMIServerSocketFactory implements RMIServerSocketFactory {

@@ -22,10 +22,10 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text;
+package j86.j86.javax.swing.text;
 
-import java.util.ArrayList;
-import java.util.List;
+import j86.java.util.ArrayList;
+import j86.java.util.List;
 
 /**
  * SegmentCache caches <code>Segment</code>s to avoid continually creating

@@ -23,15 +23,15 @@
  * questions.
  */
 
-package sun.jvmstat.perfdata.monitor;
+package j86.sun.jvmstat.perfdata.monitor;
 
-import java.util.List;
-import java.lang.reflect.*;
-import java.io.*;
+import j86.java.util.List;
+import j86.j86.j86.java.lang.reflect.*;
+import j86.java.io.*;
 
-import sun.jvmstat.monitor.*;
-import sun.jvmstat.monitor.remote.*;
-import sun.jvmstat.monitor.event.VmListener;
+import j86.sun.jvmstat.monitor.*;
+import j86.j86.sun.jvmstat.monitor.remote.*;
+import j86.j86.sun.jvmstat.monitor.event.VmListener;
 
 /**
  * Base class for all MonitoredVm implementations that utilize the
@@ -98,7 +98,7 @@ public abstract class AbstractMonitoredVm implements BufferedMonitoredVm {
     public void detach() {
         /*
          * no default action required because the detach operation for the
-         * native byte buffer is managed by the sun.misc.Perf class.
+         * native byte buffer is managed by the j86.sun.misc.Perf class.
          */
     }
 

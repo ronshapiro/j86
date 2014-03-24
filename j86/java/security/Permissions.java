@@ -23,32 +23,32 @@
  * questions.
  */
 
-package java.security;
+package j86.java.security;
 
-import java.util.Enumeration;
-import java.util.Hashtable;
-import java.util.NoSuchElementException;
-import java.util.Map;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Iterator;
-import java.util.Collections;
-import java.io.Serializable;
-import java.io.ObjectStreamField;
-import java.io.ObjectOutputStream;
-import java.io.ObjectInputStream;
-import java.io.IOException;
+import j86.java.util.Enumeration;
+import j86.java.util.Hashtable;
+import j86.java.util.NoSuchElementException;
+import j86.java.util.Map;
+import j86.java.util.HashMap;
+import j86.java.util.List;
+import j86.java.util.Iterator;
+import j86.java.util.Collections;
+import j86.java.io.Serializable;
+import j86.java.io.ObjectStreamField;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.IOException;
 
 
 /**
  * This class represents a heterogeneous collection of Permissions. That is,
  * it contains different types of Permission objects, organized into
  * PermissionCollections. For example, if any
- * {@code java.io.FilePermission} objects are added to an instance of
+ * {@code j86.java.io.FilePermission} objects are added to an instance of
  * this class, they are all stored in a single
  * PermissionCollection. It is the PermissionCollection returned by a call to
  * the {@code newPermissionCollection} method in the FilePermission class.
- * Similarly, any {@code java.lang.RuntimePermission} objects are
+ * Similarly, any {@code j86.java.lang.RuntimePermission} objects are
  * stored in the PermissionCollection returned by a call to the
  * {@code newPermissionCollection} method in the
  * RuntimePermission class. Thus, this class represents a collection of
@@ -293,22 +293,22 @@ implements Serializable
         if (unresolvedPerms == null)
             return null;
 
-        java.security.cert.Certificate certs[] = null;
+        j86.j86.java.security.cert.Certificate certs[] = null;
 
         Object signers[] = p.getClass().getSigners();
 
         int n = 0;
         if (signers != null) {
             for (int j=0; j < signers.length; j++) {
-                if (signers[j] instanceof java.security.cert.Certificate) {
+                if (signers[j] instanceof j86.j86.java.security.cert.Certificate) {
                     n++;
                 }
             }
-            certs = new java.security.cert.Certificate[n];
+            certs = new j86.j86.java.security.cert.Certificate[n];
             n = 0;
             for (int j=0; j < signers.length; j++) {
-                if (signers[j] instanceof java.security.cert.Certificate) {
-                    certs[n++] = (java.security.cert.Certificate)signers[j];
+                if (signers[j] instanceof j86.j86.java.security.cert.Certificate) {
+                    certs[n++] = (j86.j86.java.security.cert.Certificate)signers[j];
                 }
             }
         }
@@ -339,9 +339,9 @@ implements Serializable
     // private Hashtable perms;
 
     /**
-     * @serialField perms java.util.Hashtable
+     * @serialField perms j86.java.util.Hashtable
      *     A table of the Permission classes and PermissionCollections.
-     * @serialField allPermission java.security.PermissionCollection
+     * @serialField allPermission j86.java.security.PermissionCollection
      */
     private static final ObjectStreamField[] serialPersistentFields = {
         new ObjectStreamField("perms", Hashtable.class),
@@ -550,7 +550,7 @@ implements Serializable
     // which had the serializable field:
     // private Hashtable perms;
     /**
-     * @serialField perms java.util.Hashtable
+     * @serialField perms j86.java.util.Hashtable
      *     A table of the Permissions (both key and value are same).
      */
     private static final ObjectStreamField[] serialPersistentFields = {

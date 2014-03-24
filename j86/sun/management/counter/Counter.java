@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.management.counter;
+package j86.j86.sun.management.counter;
 
 /**
  * The base class for a performance counter.
  *
  * @author   Brian Doherty
  */
-public interface Counter extends java.io.Serializable {
+public interface Counter extends j86.java.io.Serializable {
 
     /**
      * Returns the name of this performance counter

@@ -22,9 +22,9 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.awt;
+package j86.java.awt;
 
-import java.awt.peer.ComponentPeer;
+import j86.j86.java.awt.peer.ComponentPeer;
 
 
 /**
@@ -57,7 +57,7 @@ import java.awt.peer.ComponentPeer;
  * <a href="http://docs.oracle.com/javase/tutorial/uiswing/misc/focus.html">
  * How to Use the Focus Subsystem</a>,
  * a section in <em>The Java Tutorial</em>, and the
- * <a href="../../java/awt/doc-files/FocusSpec.html">Focus Specification</a>
+ * <a href="../../j86.java.awt/doc-files/FocusSpec.html">Focus Specification</a>
  * for more information.
  *
  * @author David Mendenhall

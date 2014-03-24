@@ -25,31 +25,31 @@
 
 
 
-package javax.swing;
+package j86.javax.swing;
 
 
 
-import java.io.*;
-import java.awt.BorderLayout;
-import java.awt.Frame;
-import java.awt.Dialog;
-import java.awt.Window;
-import java.awt.Component;
-import java.awt.Container;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
-import java.awt.event.WindowListener;
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
+import j86.java.io.*;
+import j86.java.awt.BorderLayout;
+import j86.java.awt.Frame;
+import j86.java.awt.Dialog;
+import j86.java.awt.Window;
+import j86.java.awt.Component;
+import j86.java.awt.Container;
+import j86.java.beans.PropertyChangeEvent;
+import j86.java.beans.PropertyChangeListener;
+import j86.j86.java.awt.event.WindowListener;
+import j86.j86.java.awt.event.WindowAdapter;
+import j86.j86.java.awt.event.WindowEvent;
 
-import java.awt.IllegalComponentStateException;
-import java.awt.Point;
-import java.awt.Rectangle;
-import java.text.*;
-import java.util.Locale;
-import javax.accessibility.*;
-import javax.swing.event.*;
-import javax.swing.text.*;
+import j86.java.awt.IllegalComponentStateException;
+import j86.java.awt.Point;
+import j86.java.awt.Rectangle;
+import j86.java.text.*;
+import j86.java.util.Locale;
+import j86.javax.accessibility.*;
+import j86.j86.javax.swing.event.*;
+import j86.j86.javax.swing.text.*;
 
 
 /** A class to monitor the progress of some operation. If it looks

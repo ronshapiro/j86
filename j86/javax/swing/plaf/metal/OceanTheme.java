@@ -23,16 +23,16 @@
  * questions.
  */
 
-package javax.swing.plaf.metal;
+package j86.j86.j86.javax.swing.plaf.metal;
 
-import java.awt.*;
-import java.net.URL;
-import java.util.*;
-import javax.swing.*;
-import javax.swing.plaf.*;
-import sun.swing.SwingUtilities2;
-import sun.swing.PrintColorUIResource;
-import sun.swing.SwingLazyValue;
+import j86.java.awt.*;
+import j86.java.net.URL;
+import j86.java.util.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.sun.swing.SwingUtilities2;
+import j86.sun.swing.PrintColorUIResource;
+import j86.sun.swing.SwingLazyValue;
 
 /**
  * The default theme for the {@code MetalLookAndFeel}.
@@ -130,10 +130,10 @@ public class OceanTheme extends DefaultMetalTheme {
      */
     public void addCustomEntriesToTable(UIDefaults table) {
         Object focusBorder = new SwingLazyValue(
-                      "javax.swing.plaf.BorderUIResource$LineBorderUIResource",
+                      "j86.j86.javax.swing.plaf.BorderUIResource$LineBorderUIResource",
                       new Object[] {getPrimary1()});
         // .30 0 DDE8F3 white secondary2
-        java.util.List buttonGradient = Arrays.asList(
+        j86.java.util.List buttonGradient = Arrays.asList(
                  new Object[] {new Float(.3f), new Float(0f),
                  new ColorUIResource(0xDDE8F3), getWhite(), getSecondary2() });
 
@@ -149,7 +149,7 @@ public class OceanTheme extends DefaultMetalTheme {
         Color c8ddf2 = new ColorUIResource(0xC8DDF2);
         Object directoryIcon = getIconResource("icons/ocean/directory.gif");
         Object fileIcon = getIconResource("icons/ocean/file.gif");
-        java.util.List sliderGradient = Arrays.asList(new Object[] {
+        j86.java.util.List sliderGradient = Arrays.asList(new Object[] {
             new Float(.3f), new Float(.2f),
             c8ddf2, getWhite(), new ColorUIResource(SECONDARY2) });
 
@@ -244,7 +244,7 @@ public class OceanTheme extends DefaultMetalTheme {
 
             "List.focusCellHighlightBorder", focusBorder,
 
-            "MenuBarUI", "javax.swing.plaf.metal.MetalMenuBarUI",
+            "MenuBarUI", "j86.j86.j86.javax.swing.plaf.metal.MetalMenuBarUI",
 
             "OptionPane.errorIcon",
                    getIconResource("icons/ocean/error.png"),
@@ -334,7 +334,7 @@ public class OceanTheme extends DefaultMetalTheme {
      * of {@code 0x6382BF}.
      *
      * @return the primary 1 color
-     * @see java.awt.Color#decode
+     * @see j86.java.awt.Color#decode
      */
     protected ColorUIResource getPrimary1() {
         return PRIMARY1;
@@ -345,7 +345,7 @@ public class OceanTheme extends DefaultMetalTheme {
      * of {@code 0xA3B8CC}.
      *
      * @return the primary 2 color
-     * @see java.awt.Color#decode
+     * @see j86.java.awt.Color#decode
      */
     protected ColorUIResource getPrimary2() {
         return PRIMARY2;
@@ -356,7 +356,7 @@ public class OceanTheme extends DefaultMetalTheme {
      * of {@code 0xB8CFE5}.
      *
      * @return the primary 3 color
-     * @see java.awt.Color#decode
+     * @see j86.java.awt.Color#decode
      */
     protected ColorUIResource getPrimary3() {
         return PRIMARY3;
@@ -367,7 +367,7 @@ public class OceanTheme extends DefaultMetalTheme {
      * value of {@code 0x7A8A99}.
      *
      * @return the secondary 1 color
-     * @see java.awt.Color#decode
+     * @see j86.java.awt.Color#decode
      */
     protected ColorUIResource getSecondary1() {
         return SECONDARY1;
@@ -378,7 +378,7 @@ public class OceanTheme extends DefaultMetalTheme {
      * value of {@code 0xB8CFE5}.
      *
      * @return the secondary 2 color
-     * @see java.awt.Color#decode
+     * @see j86.java.awt.Color#decode
      */
     protected ColorUIResource getSecondary2() {
         return SECONDARY2;
@@ -389,7 +389,7 @@ public class OceanTheme extends DefaultMetalTheme {
      * value of {@code 0xEEEEEE}.
      *
      * @return the secondary 3 color
-     * @see java.awt.Color#decode
+     * @see j86.java.awt.Color#decode
      */
     protected ColorUIResource getSecondary3() {
         return SECONDARY3;
@@ -400,7 +400,7 @@ public class OceanTheme extends DefaultMetalTheme {
      * value of {@code 0x333333}.
      *
      * @return the black color
-     * @see java.awt.Color#decode
+     * @see j86.java.awt.Color#decode
      */
     protected ColorUIResource getBlack() {
         return OCEAN_BLACK;
@@ -411,7 +411,7 @@ public class OceanTheme extends DefaultMetalTheme {
      * value of {@code 0xFFFFFF}.
      *
      * @return the desktop color
-     * @see java.awt.Color#decode
+     * @see j86.java.awt.Color#decode
      */
     public ColorUIResource getDesktopColor() {
         return MetalTheme.white;

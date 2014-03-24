@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.security.provider;
+package j86.sun.security.provider;
 
 /**
  * This class generates seeds for the SHA1PRNG cryptographically strong
@@ -56,7 +56,7 @@ package sun.security.provider;
  * from an entropy gathering device, such as /dev/random. This can be
  * accomplished by setting the value of the {@code securerandom.source}
  * Security property to a URL specifying the location of the entropy
- * gathering device, or by setting the {@code java.security.egd} System
+ * gathering device, or by setting the {@code j86.java.security.egd} System
  * property.
  * <p>
  * In the event the specified URL cannot be accessed the default
@@ -66,16 +66,16 @@ package sun.security.provider;
  * @author Gadi Guy
  */
 
-import java.security.*;
-import java.io.*;
-import java.util.Properties;
-import java.util.Enumeration;
-import java.net.*;
-import java.nio.file.DirectoryStream;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.util.Random;
-import sun.security.util.Debug;
+import j86.java.security.*;
+import j86.java.io.*;
+import j86.java.util.Properties;
+import j86.java.util.Enumeration;
+import j86.java.net.*;
+import j86.j86.java.nio.file.DirectoryStream;
+import j86.j86.java.nio.file.Files;
+import j86.j86.java.nio.file.Path;
+import j86.java.util.Random;
+import j86.sun.security.util.Debug;
 
 abstract class SeedGenerator {
 
@@ -164,8 +164,8 @@ abstract class SeedGenerator {
         byte b =(byte)System.currentTimeMillis();
         md.update(b);
 
-        java.security.AccessController.doPrivileged
-            (new java.security.PrivilegedAction<Void>() {
+        j86.java.security.AccessController.doPrivileged
+            (new j86.java.security.PrivilegedAction<Void>() {
                 @Override
                 public Void run() {
                     try {
@@ -183,7 +183,7 @@ abstract class SeedGenerator {
                             (InetAddress.getLocalHost().toString().getBytes());
 
                         // The temporary dir
-                        File f = new File(p.getProperty("java.io.tmpdir"));
+                        File f = new File(p.getProperty("j86.java.io.tmpdir"));
                         int count = 0;
                         try (
                             DirectoryStream<Path> stream =
@@ -272,8 +272,8 @@ abstract class SeedGenerator {
             }
 
             final ThreadGroup[] finalsg = new ThreadGroup[1];
-            Thread t = java.security.AccessController.doPrivileged
-                (new java.security.PrivilegedAction<Thread>() {
+            Thread t = j86.java.security.AccessController.doPrivileged
+                (new j86.java.security.PrivilegedAction<Thread>() {
                         @Override
                         public Thread run() {
                             ThreadGroup parent, group =
@@ -478,8 +478,8 @@ abstract class SeedGenerator {
         private void init() throws IOException {
             final URL device = new URL(deviceName);
             try {
-                seedStream = java.security.AccessController.doPrivileged
-                    (new java.security.PrivilegedExceptionAction<InputStream>() {
+                seedStream = j86.java.security.AccessController.doPrivileged
+                    (new j86.java.security.PrivilegedExceptionAction<InputStream>() {
                         @Override
                         public InputStream run() throws IOException {
                             /*

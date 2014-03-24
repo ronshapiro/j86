@@ -22,36 +22,36 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.jmx.remote.internal;
+package j86.com.sun.jmx.remote.internal;
 
-import java.io.IOException;
-import java.io.NotSerializableException;
+import j86.java.io.IOException;
+import j86.java.io.NotSerializableException;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.concurrent.Executor;
+import j86.java.util.ArrayList;
+import j86.java.util.HashMap;
+import j86.java.util.List;
+import j86.java.util.Map;
+import j86.j86.java.util.concurrent.Executor;
 
-import java.security.AccessControlContext;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import javax.security.auth.Subject;
+import j86.java.security.AccessControlContext;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.javax.security.auth.Subject;
 
-import javax.management.Notification;
-import javax.management.NotificationListener;
-import javax.management.NotificationFilter;
-import javax.management.ObjectName;
-import javax.management.MBeanServerNotification;
-import javax.management.InstanceNotFoundException;
-import javax.management.ListenerNotFoundException;
+import j86.javax.management.Notification;
+import j86.javax.management.NotificationListener;
+import j86.javax.management.NotificationFilter;
+import j86.javax.management.ObjectName;
+import j86.javax.management.MBeanServerNotification;
+import j86.javax.management.InstanceNotFoundException;
+import j86.javax.management.ListenerNotFoundException;
 
-import javax.management.remote.NotificationResult;
-import javax.management.remote.TargetedNotification;
+import j86.j86.javax.management.remote.NotificationResult;
+import j86.j86.javax.management.remote.TargetedNotification;
 
-import com.sun.jmx.remote.util.ClassLogger;
-import com.sun.jmx.remote.util.EnvHelp;
-import java.rmi.UnmarshalException;
+import j86.com.sun.jmx.remote.util.ClassLogger;
+import j86.com.sun.jmx.remote.util.EnvHelp;
+import j86.java.rmi.UnmarshalException;
 
 
 public abstract class ClientNotifForwarder {
@@ -76,7 +76,7 @@ public abstract class ClientNotifForwarder {
        for instance one that you are using to execute a bunch of other
        unrelated work.
 
-       You might expect that a java.util.concurrent.ThreadPoolExecutor
+       You might expect that a j86.j86.java.util.concurrent.ThreadPoolExecutor
        with corePoolSize=0 and maximumPoolSize=1 would have the same
        behavior, but it does not.  A ThreadPoolExecutor only creates
        a new thread when a new task is submitted and the number of
@@ -901,6 +901,6 @@ public abstract class ClientNotifForwarder {
     private boolean beingReconnected = false;
 
     private static final ClassLogger logger =
-        new ClassLogger("javax.management.remote.misc",
+        new ClassLogger("j86.j86.javax.management.remote.misc",
                         "ClientNotifForwarder");
 }

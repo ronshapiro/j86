@@ -23,17 +23,17 @@
  * questions.
  */
 
-package sun.security.provider.certpath;
+package j86.j86.sun.security.provider.certpath;
 
-import java.io.IOException;
-import java.security.cert.CertificateException;
-import java.security.cert.X509Certificate;
+import j86.java.io.IOException;
+import j86.j86.java.security.cert.CertificateException;
+import j86.j86.java.security.cert.X509Certificate;
 
-import sun.security.util.Debug;
-import sun.security.x509.AuthorityKeyIdentifierExtension;
-import sun.security.x509.KeyIdentifier;
-import sun.security.x509.SubjectKeyIdentifierExtension;
-import sun.security.x509.X509CertImpl;
+import j86.sun.security.util.Debug;
+import j86.sun.security.x509.AuthorityKeyIdentifierExtension;
+import j86.sun.security.x509.KeyIdentifier;
+import j86.sun.security.x509.SubjectKeyIdentifierExtension;
+import j86.sun.security.x509.X509CertImpl;
 
 /*
  * This class represents a vertex in the adjacency list. A

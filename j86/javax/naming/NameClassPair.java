@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.naming;
+package j86.javax.naming;
 
 /**
  * This class represents the object name and class name pair of a binding
@@ -56,7 +56,7 @@ package javax.naming;
   * String), class name (a String), and isRelative flag (a boolean).
   */
 
-public class NameClassPair implements java.io.Serializable {
+public class NameClassPair implements j86.java.io.Serializable {
     /**
      * Contains the name of this NameClassPair.
      * It is initialized by the constructor and can be updated using

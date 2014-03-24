@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.tools.jconsole;
+package j86.sun.tools.jconsole;
 
 
 /**
@@ -30,7 +30,7 @@ package sun.tools.jconsole;
  *
  */
 final public class Messages {
-    private static final String BUNDLE_NAME = "sun.tools.jconsole.resources.messages";
+    private static final String BUNDLE_NAME = "j86.sun.tools.jconsole.resources.messages";
 
     static {
         Resources.initializeMessages(Messages.class, BUNDLE_NAME);

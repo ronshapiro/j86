@@ -23,7 +23,7 @@
  * questions.
  */
 
-package com.sun.tracing.dtrace;
+package com.j86.j86.sun.tracing.dtrace;
 
 /**
  * Enumeration for the DTrace dependency classes.

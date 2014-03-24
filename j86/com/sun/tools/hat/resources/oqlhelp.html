@@ -52,8 +52,8 @@ OQL query is of the form
          [ <span class="key">where</span> &lt;JavaScript boolean expression to filter&gt; ] ]
 </code>
 </pre>
-where class name is fully qualified Java class name (example: java.net.URL) or array class name.
-[C is char array name, [Ljava.io.File; is name of java.io.File[] and so on. 
+where class name is fully qualified Java class name (example: j86.java.net.URL) or array class name.
+[C is char array name, [Lj86.java.io.File; is name of java.io.File[] and so on. 
 Note that fully qualified class name does not always uniquely identify a 
 Java class at runtime. There may be more than one Java class with the same 
 name but loaded by different loaders. So, class name is permitted to be
@@ -79,7 +79,7 @@ bound to a JavaScript variable of the identifier name specified in <span class="
 <li>select all Strings of length 100 or more
 <pre>
 <code>
-    select s from java.lang.String s where s.value.length >= 100
+    select s from j86.java.lang.String s where s.value.length >= 100
 </code>
 </pre>
 <li>select all int arrays of length 256 or more
@@ -91,21 +91,21 @@ bound to a JavaScript variable of the identifier name specified in <span class="
 <li>show content of Strings that match a regular expression
 <pre>
 <code>
-    select s.value.toString() from java.lang.String s 
+    select s.value.toString() from j86.java.lang.String s 
     where /java/.test(s.value.toString())
 </code>
 </pre>
 <li>show path value of all File objects
 <pre>
 <code</b>
-    select file.path.value.toString() from java.io.File file
+    select file.path.value.toString() from j86.java.io.File file
 </code>
 </pre>
 <li>show names of all ClassLoader classes
 <pre>
 <code>
     select <a href="#classof">classof</a>(cl).name 
-    from instanceof java.lang.ClassLoader cl
+    from instanceof j86.java.lang.ClassLoader cl
 </code>
 </pre>
 <li>show instances of the Class identified by given id string
@@ -137,7 +137,7 @@ The <b>heap</b> built-in object supports the following methods:
     heap.forEachObject(callback, clazz, includeSubtypes);
 </code>
 </pre>
-<code>clazz</code> is the class whose instances are selected. If not specified, defaults to java.lang.Object. <code>includeSubtypes</code> is a boolean flag 
+<code>clazz</code> is the class whose instances are selected. If not specified, defaults to j86.java.lang.Object. <code>includeSubtypes</code> is a boolean flag 
 that specifies whether to include subtype instances or not. Default value of 
 this flag is true.
 <a name="findClass"></a>
@@ -151,7 +151,7 @@ where <code>className</code> is name of the class to find. The resulting Class
 object has following properties:
 <ul>
 <li>name - name of the class.
-<li>superclass - Class object for super class (or null if java.lang.Object).
+<li>superclass - Class object for super class (or null if j86.java.lang.Object).
 <li>statics - name, value pairs for static fields of the Class.
 <li>fields - array of field objects. field object has name, signature
 properties.
@@ -184,7 +184,7 @@ superclass of this class or not.
     heap.objects(clazz, [includeSubtypes], [filter])
 </code>
 </pre>
-<code>clazz</code> is the class whose instances are selected. If not specified, defaults to java.lang.Object. <code>includeSubtypes</code> is a boolean flag 
+<code>clazz</code> is the class whose instances are selected. If not specified, defaults to j86.java.lang.Object. <code>includeSubtypes</code> is a boolean flag 
 that specifies whether to include subtype instances or not. Default value of 
 this flag is true. This method accepts an optional filter expression to filter
 the result set of objects.
@@ -197,7 +197,7 @@ flag. This flag tells whether to include paths with weak reference(s) or not.
 By default, paths with weak reference(s) are not included.
 <pre>
 <code>
-    select heap.livepaths(s) from java.lang.String s
+    select heap.livepaths(s) from j86.java.lang.String s
 </code>
 </pre>
 Each element of this array itself is another array. The later array is 
@@ -215,16 +215,16 @@ Each Root object has the following properties:
 
 Examples:
 <ul>
-<li>access static field 'props' of class java.lang.System
+<li>access static field 'props' of class j86.java.lang.System
 <pre>
 <code>
-    select heap.findClass("java.lang.System").statics.props
+    select heap.findClass("j86.java.lang.System").statics.props
 </code>
 </pre>
-<li>get number of fields of java.lang.String class 
+<li>get number of fields of j86.java.lang.String class 
 <pre>
 <code>
-    select heap.findClass("java.lang.String").fields.length
+    select heap.findClass("j86.java.lang.String").fields.length
 </code>
 </pre>
 <li> find the object whose object id is given
@@ -233,10 +233,10 @@ Examples:
     select heap.findObject("0xf3800b58")
 </code>
 </pre>
-<li>select all classes that have name pattern java.net.*
+<li>select all classes that have name pattern j86.java.net.*
 <pre>
 <code>
-    select <a href="#filter">filter</a>(heap.classes(), "/java.net./.test(it.name)")
+    select <a href="#filter">filter</a>(heap.classes(), "/j86.java.net./.test(it.name)")
 </code>
 </pre>
 </ul>
@@ -279,7 +279,7 @@ Returns Class object of a given Java Object. The result object supports the
 following properties:
 <ul>
 <li>name - name of the class.
-<li>superclass - Class object for super class (or null if java.lang.Object).
+<li>superclass - Class object for super class (or null if j86.java.lang.Object).
 <li>statics - name, value pairs for static fields of the Class.
 <li>fields - array of field objects. Field objects have name, signature
 properties.
@@ -302,17 +302,17 @@ Examples:
 <li>show class name of each Reference type object
 <pre>
 <code>
-    select classof(o).name from instanceof java.lang.ref.Reference o
+    select classof(o).name from instanceof j86.j86.java.lang.ref.Reference o
 </code>
-<li>show all subclasses of java.io.InputStream
+<li>show all subclasses of j86.java.io.InputStream
 <pre>
 <code>
-    select heap.findClass("java.io.InputStream").subclasses()
+    select heap.findClass("j86.java.io.InputStream").subclasses()
 </code>
-<li>show all superclasses of java.io.BufferedInputStream
+<li>show all superclasses of j86.java.io.BufferedInputStream
 <pre>
 <code>
-    select heap.findClass("java.io.BufferedInputStream").superclasses()
+    select heap.findClass("j86.java.io.BufferedInputStream").superclasses()
 </code>
 </pre>
 </ul>
@@ -345,7 +345,7 @@ objects for identity.
 Example:
 <pre>
 <code>
-    select objectid(o) from java.lang.Object o
+    select objectid(o) from j86.java.lang.Object o
 </code>
 </pre>
 
@@ -362,14 +362,14 @@ Examples:
 <li>print all reachable objects from each Properties instance.
 <pre>
 <code>
-    select reachables(p) from java.util.Properties p
+    select reachables(p) from j86.java.util.Properties p
 </code>
 </pre>
-<li>print all reachables from each java.net.URL but omit the objects reachable
+<li>print all reachables from each j86.java.net.URL but omit the objects reachable
 via the fields specified.
 <pre>
 <code>
-    select reachables(u, 'java.net.URL.handler') from java.net.URL u
+    select reachables(u, 'j86.java.net.URL.handler') from java.net.URL u
 </code>
 </pre>
 </ul>
@@ -382,22 +382,22 @@ object.
 </p>
 Examples:
 <ul>
-<li> print number of referrers for each java.lang.Object instance
+<li> print number of referrers for each j86.java.lang.Object instance
 <pre>
 <code>
-    select count(referrers(o)) from java.lang.Object o
+    select count(referrers(o)) from j86.java.lang.Object o
 </code>
 </pre>
-<li>print referrers for each java.io.File object
+<li>print referrers for each j86.java.io.File object
 <pre>
 <code>
-    select referrers(f) from java.io.File f
+    select referrers(f) from j86.java.io.File f
 </code>
 </pre>
 <li>print URL objects only if referred by 2 or more 
 <pre>
 <code>
-    select u from java.net.URL u where count(referrers(u)) > 2
+    select u from j86.java.net.URL u where count(referrers(u)) > 2
 </code>
 </pre>
 </ul>
@@ -408,10 +408,10 @@ Examples:
 Returns an array of Java objects to which the given Java
 object directly refers to.
 </p>
-Example: to print all static reference fields of java.io.File class
+Example: to print all static reference fields of j86.java.io.File class
 <pre>
 <code>
-    select referees(<a href="#findClass">heap.findClass</a>("java.io.File"))
+    select referees(<a href="#findClass">heap.findClass</a>("j86.java.io.File"))
 </code>
 </pre>
 
@@ -450,7 +450,7 @@ to print more complex output.
 Example: print hyperlink in bold font weight
 <pre>
 <code>
-    select "&lt;b&gt;" + toHtml(o) + "&lt;/b&gt;" from java.lang.Object o
+    select "&lt;b&gt;" + toHtml(o) + "&lt;/b&gt;" from j86.java.lang.Object o
 </code>
 </pre>
 
@@ -463,7 +463,7 @@ Example: show name and thread for each thread object
 <pre>
 <code>
     select { name: t.name? t.name.toString() : "null", thread: t } 
-    from instanceof java.lang.Thread t
+    from instanceof j86.java.lang.Thread t
 </code>
 </pre>
 
@@ -515,8 +515,8 @@ Example: select all Properties objects that are referred by
 some static field some class.
 <pre>
 <code>
-    select p from java.util.Properties p
-    where contains(<a href="#referrers">referrers</a>(p), "<a href="#classof">classof</a>(it).name == 'java.lang.Class'")
+    select p from j86.java.util.Properties p
+    where contains(<a href="#referrers">referrers</a>(p), "<a href="#classof">classof</a>(it).name == 'j86.java.lang.Class'")
 </code>
 </pre>
 
@@ -535,7 +535,7 @@ refer to the following built-in variables.
 Example: print number of classes that have specific name pattern
 <pre>
 <code>
-    select count(<a href="#classes">heap.classes()</a>, "/java.io./.test(it.name)")
+    select count(<a href="#classes">heap.classes()</a>, "/j86.java.io./.test(it.name)")
 </code>
 </pre>
 
@@ -555,18 +555,18 @@ variables.
 </ul>
 Examples:
 <ul>
-<li>show all classes that have java.io.* name pattern
+<li>show all classes that have j86.java.io.* name pattern
 <pre>
 <code>
-    select filter(<a href="#classes">heap.classes</a>(), "/java.io./.test(it.name)")
+    select filter(<a href="#classes">heap.classes</a>(), "/j86.java.io./.test(it.name)")
 </code>
 </pre>
 <li> show all referrers of URL object where the referrer is not from
-java.net package
+j86.java.net package
 <pre>
 <code>
-    select filter(<a href="#referrers">referrers</a>(u), "! /java.net./.test(<a href="#classof">classof</a>(it).name)")
-    from java.net.URL u
+    select filter(<a href="#referrers">referrers</a>(u), "! /j86.java.net./.test(<a href="#classof">classof</a>(it).name)")
+    from j86.java.net.URL u
 </code>
 </pre>
 </ul>
@@ -594,10 +594,10 @@ variables.
 map function returns an array/enumeration of values created by repeatedly
 calling code on each element of input array/enumeration.
 </p>
-Example: show all static fields of java.io.File with name and value
+Example: show all static fields of j86.java.io.File with name and value
 <pre>
 <code>
-    select map(<a href="#findClass">heap.findClass</a>("java.io.File").statics, "index + '=' + <a href="#toHtml">toHtml</a>(it)")
+    select map(<a href="#findClass">heap.findClass</a>("j86.java.io.File").statics, "index + '=' + <a href="#toHtml">toHtml</a>(it)")
 </code>
 </pre>
 
@@ -618,13 +618,13 @@ Examples:
 <li>find the maximum length of any String instance
 <pre>
 <code>
-    select max(map(heap.objects('java.lang.String', false), 'it.value.length'))
+    select max(map(heap.objects('j86.java.lang.String', false), 'it.value.length'))
 </code>
 </pre>
 <li>find string instance that has the maximum length
 <pre>
 <code>
-    select max(heap.objects('java.lang.String'), 'lhs.value.length > rhs.value.length')
+    select max(heap.objects('j86.java.lang.String'), 'lhs.value.length > rhs.value.length')
 </code>
 </pre>
 </ul>
@@ -646,13 +646,13 @@ Examples:
 <li>find the minimum size of any Vector instance
 <pre>
 <code>
-    select min(map(heap.objects('java.util.Vector', false), 'it.elementData.length'))
+    select min(map(heap.objects('j86.java.util.Vector', false), 'it.elementData.length'))
 </code>
 </pre>
 <li>find Vector instance that has the maximum length
 <pre>
 <code>
-    select min(heap.objects('java.util.Vector'), 'lhs.elementData.length < rhs.elementData.length')
+    select min(heap.objects('j86.java.util.Vector'), 'lhs.elementData.length < rhs.elementData.length')
 </code>
 </ul>
 
@@ -695,11 +695,11 @@ Example: return sum of sizes of the reachable objects from each Properties objec
 <pre>
 <code>
     select sum(<a href="#map">map</a>(<a href="#reachables">reachables</a>(p), '<a href="#sizeof">sizeof</a>(it)')) 
-    from java.util.Properties p
+    from j86.java.util.Properties p
 
     // or omit the map as in ...
     select sum(<a href="#reachables">reachables</a>(p), '<a href="#sizeof">sizeof</a>(it)') 
-    from java.util.Properties p
+    from j86.java.util.Properties p
 </code>
 </code>
 </pre>
@@ -722,10 +722,10 @@ more than one String instance can share the same char[] for the content.
 <pre>
 <code>
    // number of unique char[] instances referenced from any String
-   select count(unique(map(heap.objects('java.lang.String'), 'it.value')))
+   select count(unique(map(heap.objects('j86.java.lang.String'), 'it.value')))
 
    // total number of Strings
-   select count(heap.objects('java.lang.String'))
+   select count(heap.objects('j86.java.lang.String'))
 </code>
 </pre>
     
@@ -735,14 +735,14 @@ more than one String instance can share the same char[] for the content.
 
 <pre>
 <code>
-   select <a href="#map">map</a>(<a href="#sort">sort</a>(map(heap.objects('java.lang.ClassLoader'), 
+   select <a href="#map">map</a>(<a href="#sort">sort</a>(map(heap.objects('j86.java.lang.ClassLoader'), 
    '{ loader: it, count: it.classes.elementCount }'), 'lhs.count < rhs.count'),
    'toHtml(it) + "&lt;br&gt;"')
 </code>
 </pre>
 <p>
-The above query uses the fact that, <b>java.lang.ClassLoader</b> has a private 
-field called <b>classes</b> of type <b>java.util.Vector</b> and Vector has a 
+The above query uses the fact that, <b>j86.java.lang.ClassLoader</b> has a private 
+field called <b>classes</b> of type <b>j86.java.util.Vector</b> and Vector has a 
 private field named <b>elementCount</b> that is number of elements in the 
 vector. We select multiple values (loader, count) using JavaScript object 
 literal and map function. We sort the result by count (i.e., number of classes 
@@ -753,7 +753,7 @@ loaded) using sort function with comparison expression.
 
 <pre>
 <code>
-   select <a href="#map">map</a>(heap.objects('java.lang.ClassLoader'),
+   select <a href="#map">map</a>(heap.objects('j86.java.lang.ClassLoader'),
       function (it) {
          var res = '';
          while (it != null) {
@@ -766,7 +766,7 @@ loaded) using sort function with comparison expression.
 </code>
 </pre>
 <p>
-Note that we use <b>parent</b> field of <b>java.lang.ClassLoader</b> class
+Note that we use <b>parent</b> field of <b>j86.java.lang.ClassLoader</b> class
 and walk until parent is null using the callback function to map call.
 </p>
 
@@ -774,7 +774,7 @@ and walk until parent is null using the callback function to map call.
 
 <pre>
 <code>
-   select <a href="#map">map</a>(<a href="#filter">filter(<a href="#findClass">heap.findClass</a>('java.lang.System').statics.props.table, 'it != null'), 
+   select <a href="#map">map</a>(<a href="#filter">filter(<a href="#findClass">heap.findClass</a>('j86.java.lang.System').statics.props.table, 'it != null'), 
             function (it) {
                 var res = "";
                 while (it != null) {
@@ -789,13 +789,13 @@ and walk until parent is null using the callback function to map call.
 <p>
 The above query uses the following facts:
 <ul>
-<li>java.lang.System has static field by name 'props' of type java.util.Properties.
-<li>java.util.Properties has field by 'table' of type java.util.Hashtable$Entry
-(this field is inherited from java.util.Hashtable). This is the hashtable
+<li>j86.java.lang.System has static field by name 'props' of type j86.java.util.Properties.
+<li>j86.java.util.Properties has field by 'table' of type java.util.Hashtable$Entry
+(this field is inherited from j86.java.util.Hashtable). This is the hashtable
 buckets array.
-<li>java.util.Hashtable$Entry has 'key', 'value' and 'next' fields. Each
+<li>j86.java.util.Hashtable$Entry has 'key', 'value' and 'next' fields. Each
 entry points the next entry (or null) in the same hashtable bucket.
-<li>java.lang.String class has 'value' field of type char[].
+<li>j86.java.lang.String class has 'value' field of type char[].
 </ul>
 <p>
 <b>Note that this query (and many other queries) may not be stable - because

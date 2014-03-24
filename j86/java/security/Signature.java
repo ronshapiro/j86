@@ -23,28 +23,28 @@
  * questions.
  */
 
-package java.security;
+package j86.java.security;
 
-import java.security.spec.AlgorithmParameterSpec;
-import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
-import java.io.*;
-import java.security.cert.Certificate;
-import java.security.cert.X509Certificate;
+import j86.j86.java.security.spec.AlgorithmParameterSpec;
+import j86.java.util.*;
+import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.io.*;
+import j86.j86.java.security.cert.Certificate;
+import j86.j86.java.security.cert.X509Certificate;
 
-import java.nio.ByteBuffer;
+import j86.java.nio.ByteBuffer;
 
-import java.security.Provider.Service;
+import j86.java.security.Provider.Service;
 
-import javax.crypto.Cipher;
-import javax.crypto.CipherSpi;
-import javax.crypto.IllegalBlockSizeException;
-import javax.crypto.BadPaddingException;
-import javax.crypto.NoSuchPaddingException;
+import j86.javax.crypto.Cipher;
+import j86.javax.crypto.CipherSpi;
+import j86.javax.crypto.IllegalBlockSizeException;
+import j86.javax.crypto.BadPaddingException;
+import j86.javax.crypto.NoSuchPaddingException;
 
-import sun.security.util.Debug;
-import sun.security.jca.*;
-import sun.security.jca.GetInstance.Instance;
+import j86.sun.security.util.Debug;
+import j86.sun.security.jca.*;
+import j86.sun.security.jca.GetInstance.Instance;
 
 /**
  * The Signature class is used to provide applications the functionality
@@ -263,16 +263,16 @@ public abstract class Signature extends SignatureSpi {
         signatureInfo = new ConcurrentHashMap<String,Boolean>();
         Boolean TRUE = Boolean.TRUE;
         // pre-initialize with values for our SignatureSpi implementations
-        signatureInfo.put("sun.security.provider.DSA$RawDSA", TRUE);
-        signatureInfo.put("sun.security.provider.DSA$SHA1withDSA", TRUE);
-        signatureInfo.put("sun.security.rsa.RSASignature$MD2withRSA", TRUE);
-        signatureInfo.put("sun.security.rsa.RSASignature$MD5withRSA", TRUE);
-        signatureInfo.put("sun.security.rsa.RSASignature$SHA1withRSA", TRUE);
-        signatureInfo.put("sun.security.rsa.RSASignature$SHA256withRSA", TRUE);
-        signatureInfo.put("sun.security.rsa.RSASignature$SHA384withRSA", TRUE);
-        signatureInfo.put("sun.security.rsa.RSASignature$SHA512withRSA", TRUE);
-        signatureInfo.put("com.sun.net.ssl.internal.ssl.RSASignature", TRUE);
-        signatureInfo.put("sun.security.pkcs11.P11Signature", TRUE);
+        signatureInfo.put("j86.sun.security.provider.DSA$RawDSA", TRUE);
+        signatureInfo.put("j86.sun.security.provider.DSA$SHA1withDSA", TRUE);
+        signatureInfo.put("j86.sun.security.rsa.RSASignature$MD2withRSA", TRUE);
+        signatureInfo.put("j86.sun.security.rsa.RSASignature$MD5withRSA", TRUE);
+        signatureInfo.put("j86.sun.security.rsa.RSASignature$SHA1withRSA", TRUE);
+        signatureInfo.put("j86.sun.security.rsa.RSASignature$SHA256withRSA", TRUE);
+        signatureInfo.put("j86.sun.security.rsa.RSASignature$SHA384withRSA", TRUE);
+        signatureInfo.put("j86.sun.security.rsa.RSASignature$SHA512withRSA", TRUE);
+        signatureInfo.put("com.j86.sun.net.ssl.internal.ssl.RSASignature", TRUE);
+        signatureInfo.put("j86.j86.sun.security.pkcs11.P11Signature", TRUE);
     }
 
     private static boolean isSpi(Service s) {
@@ -476,7 +476,7 @@ public abstract class Signature extends SignatureSpi {
         // If the certificate is of type X509Certificate,
         // we should check whether it has a Key Usage
         // extension marked as critical.
-        if (certificate instanceof java.security.cert.X509Certificate) {
+        if (certificate instanceof j86.j86.java.security.cert.X509Certificate) {
             // Check whether the cert has a key usage extension
             // marked as a critical extension.
             // The OID for KeyUsage extension is 2.5.29.15.
@@ -798,7 +798,7 @@ public abstract class Signature extends SignatureSpi {
      * @see #getParameter
      *
      * @deprecated Use
-     * {@link #setParameter(java.security.spec.AlgorithmParameterSpec)
+     * {@link #setParameter(j86.j86.java.security.spec.AlgorithmParameterSpec)
      * setParameter}.
      */
     @Deprecated

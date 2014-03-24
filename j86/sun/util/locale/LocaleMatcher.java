@@ -23,21 +23,21 @@
  * questions.
  */
 
-package sun.util.locale;
+package j86.j86.sun.util.locale;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.LinkedHashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Locale;
-import java.util.Locale.*;
-import static java.util.Locale.FilteringMode.*;
-import static java.util.Locale.LanguageRange.*;
-import java.util.Map;
-import java.util.Set;
+import j86.java.util.ArrayList;
+import j86.java.util.Collection;
+import j86.java.util.HashMap;
+import j86.java.util.Iterator;
+import j86.java.util.LinkedHashMap;
+import j86.java.util.LinkedList;
+import j86.java.util.List;
+import j86.java.util.Locale;
+import j86.java.util.Locale.*;
+import static j86.java.util.Locale.FilteringMode.*;
+import static j86.java.util.Locale.LanguageRange.*;
+import j86.java.util.Map;
+import j86.java.util.Set;
 
 /**
  * Implementation for BCP47 Locale matching

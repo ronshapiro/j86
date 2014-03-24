@@ -23,23 +23,23 @@
  * questions.
  */
 
-package com.sun.naming.internal;
+package j86.com.sun.naming.internal;
 
-import java.io.InputStream;
-import java.io.IOException;
-import java.lang.ref.WeakReference;
-import java.lang.reflect.Method;
-import java.lang.reflect.InvocationTargetException;
-import java.util.HashMap;
-import java.util.Hashtable;
-import java.util.Map;
-import java.util.Properties;
-import java.util.StringTokenizer;
-import java.util.List;
-import java.util.ArrayList;
-import java.util.WeakHashMap;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
+import j86.j86.java.lang.ref.WeakReference;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.java.util.HashMap;
+import j86.java.util.Hashtable;
+import j86.java.util.Map;
+import j86.java.util.Properties;
+import j86.java.util.StringTokenizer;
+import j86.java.util.List;
+import j86.java.util.ArrayList;
+import j86.java.util.WeakHashMap;
 
-import javax.naming.*;
+import j86.javax.naming.*;
 
 /**
   * The ResourceManager class facilitates the reading of JNDI resource files.
@@ -82,7 +82,7 @@ public final class ResourceManager {
         Context.URL_PKG_PREFIXES,
         Context.STATE_FACTORIES,
         // The following shouldn't create a runtime dependence on ldap package.
-        javax.naming.ldap.LdapContext.CONTROL_FACTORIES
+        j86.j86.javax.naming.ldap.LdapContext.CONTROL_FACTORIES
     };
 
     private static final VersionHelper helper =
@@ -128,10 +128,10 @@ public final class ResourceManager {
 
     /**
      * A class to allow JNDI properties be specified as applet parameters
-     * without creating a static dependency on java.applet.
+     * without creating a static dependency on j86.java.applet.
      */
     private static class AppletParameter {
-        private static final Class<?> clazz = getClass("java.applet.Applet");
+        private static final Class<?> clazz = getClass("j86.java.applet.Applet");
         private static final Method getMethod =
             getMethod(clazz, "getParameter", String.class);
         private static Class<?> getClass(String name) {
@@ -320,11 +320,11 @@ public final class ResourceManager {
      * @return An enumeration of factory classes/objects; null if none.
      * @exception NamingException If encounter problem while reading the provider
      * property file.
-     * @see javax.naming.spi.NamingManager#getObjectInstance
-     * @see javax.naming.spi.NamingManager#getStateToBind
-     * @see javax.naming.spi.DirectoryManager#getObjectInstance
-     * @see javax.naming.spi.DirectoryManager#getStateToBind
-     * @see javax.naming.ldap.ControlFactory#getControlInstance
+     * @see j86.j86.javax.naming.spi.NamingManager#getObjectInstance
+     * @see j86.j86.javax.naming.spi.NamingManager#getStateToBind
+     * @see j86.j86.javax.naming.spi.DirectoryManager#getObjectInstance
+     * @see j86.j86.javax.naming.spi.DirectoryManager#getStateToBind
+     * @see j86.j86.javax.naming.ldap.ControlFactory#getControlInstance
      */
     public static FactoryEnumeration getFactories(String propName,
         Hashtable<?,?> env, Context ctx) throws NamingException {
@@ -407,8 +407,8 @@ public final class ResourceManager {
      * @exception NamingException If encounter problem while reading the provider
      * property file, or problem instantiating the factory.
      *
-     * @see javax.naming.spi.NamingManager#getURLContext
-     * @see javax.naming.spi.NamingManager#getURLObject
+     * @see j86.j86.javax.naming.spi.NamingManager#getURLContext
+     * @see j86.j86.javax.naming.spi.NamingManager#getURLObject
      */
     public static Object getFactory(String propName, Hashtable<?,?> env,
             Context ctx, String classSuffix, String defaultPkgPrefix)

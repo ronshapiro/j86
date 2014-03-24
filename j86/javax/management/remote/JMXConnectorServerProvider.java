@@ -23,12 +23,12 @@
  * questions.
  */
 
-package javax.management.remote;
+package j86.j86.javax.management.remote;
 
-import java.io.IOException;
-import java.util.Map;
+import j86.java.io.IOException;
+import j86.java.util.Map;
 
-import javax.management.MBeanServer;
+import j86.javax.management.MBeanServer;
 
 /**
  * <p>A provider for creating JMX API connector servers using a given

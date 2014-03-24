@@ -23,11 +23,11 @@
  * questions.
  */
 
-package javax.swing.table;
+package j86.j86.javax.swing.table;
 
-import java.awt.Component;
-import javax.swing.CellEditor;
-import javax.swing.*;
+import j86.java.awt.Component;
+import j86.javax.swing.CellEditor;
+import j86.javax.swing.*;
 
 /**
  * This interface defines the method any object that would like to be

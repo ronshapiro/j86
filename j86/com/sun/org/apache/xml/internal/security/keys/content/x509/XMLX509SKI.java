@@ -20,29 +20,29 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.sun.org.apache.xml.internal.security.keys.content.x509;
+package j86.j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.content.x509;
 
-import java.security.cert.X509Certificate;
-import java.util.Arrays;
+import j86.j86.java.security.cert.X509Certificate;
+import j86.java.util.Arrays;
 
-import com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
-import com.sun.org.apache.xml.internal.security.utils.Base64;
-import com.sun.org.apache.xml.internal.security.utils.Constants;
-import com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy;
+import j86.j86.com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.Base64;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.Constants;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
 /**
  * Handles SubjectKeyIdentifier (SKI) for X.509v3.
  *
- * @see <A HREF="http://docs.oracle.com/javase/1.5.0/docs/api/java/security/cert/X509Extension.html">
+ * @see <A HREF="http://docs.oracle.com/javase/1.5.0/docs/api/j86.j86.java.security.cert/X509Extension.html">
  * Interface X509Extension</A>
  */
 public class XMLX509SKI extends SignatureElementProxy implements XMLX509DataContent {
 
     /** {@link org.apache.commons.logging} logging facility */
-    private static java.util.logging.Logger log =
-        java.util.logging.Logger.getLogger(XMLX509SKI.class.getName());
+    private static j86.j86.java.util.logging.Logger log =
+        j86.j86.java.util.logging.Logger.getLogger(XMLX509SKI.class.getName());
 
     /**
      * <CODE>SubjectKeyIdentifier (id-ce-subjectKeyIdentifier) (2.5.29.14)</CODE>:
@@ -107,7 +107,7 @@ public class XMLX509SKI extends SignatureElementProxy implements XMLX509DataCont
      * @return ski bytes from the given certificate
      *
      * @throws XMLSecurityException
-     * @see java.security.cert.X509Extension#getExtensionValue(java.lang.String)
+     * @see j86.j86.java.security.cert.X509Extension#getExtensionValue(j86.java.lang.String)
      */
     public static byte[] getSKIBytesFromCert(X509Certificate cert)
         throws XMLSecurityException {
@@ -138,8 +138,8 @@ public class XMLX509SKI extends SignatureElementProxy implements XMLX509DataCont
 
         System.arraycopy(extensionValue, 4, skidValue, 0, skidValue.length);
 
-        if (log.isLoggable(java.util.logging.Level.FINE)) {
-            log.log(java.util.logging.Level.FINE, "Base64 of SKI is " + Base64.encode(skidValue));
+        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+            log.log(j86.j86.java.util.logging.Level.FINE, "Base64 of SKI is " + Base64.encode(skidValue));
         }
 
         return skidValue;
@@ -168,8 +168,8 @@ public class XMLX509SKI extends SignatureElementProxy implements XMLX509DataCont
                 result = 31 * result + bytes[i];
             }
         } catch (XMLSecurityException e) {
-            if (log.isLoggable(java.util.logging.Level.FINE)) {
-                log.log(java.util.logging.Level.FINE, e.getMessage(), e);
+            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                log.log(j86.j86.java.util.logging.Level.FINE, e.getMessage(), e);
             }
         }
         return result;

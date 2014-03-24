@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.security.provider;
+package j86.sun.security.provider;
 
-import static java.lang.Integer.reverseBytes;
-import static java.lang.Long.reverseBytes;
+import static j86.java.lang.Integer.reverseBytes;
+import static j86.java.lang.Long.reverseBytes;
 
-import java.nio.ByteOrder;
+import j86.java.nio.ByteOrder;
 
-import sun.misc.Unsafe;
+import j86.sun.misc.Unsafe;
 
 /**
  * Optimized methods for converting between byte[] and int[]/long[], both for
@@ -88,11 +88,11 @@ final class ByteArrayAccess {
 
     // Return whether this platform supports full speed int/long memory access
     // at unaligned addresses.
-    // This code was copied from java.nio.Bits because there is no equivalent
+    // This code was copied from j86.java.nio.Bits because there is no equivalent
     // public API.
     private static boolean unaligned() {
-        String arch = java.security.AccessController.doPrivileged
-            (new sun.security.action.GetPropertyAction("os.arch", ""));
+        String arch = j86.java.security.AccessController.doPrivileged
+            (new j86.sun.security.action.GetPropertyAction("os.arch", ""));
         return arch.equals("i386") || arch.equals("x86") || arch.equals("amd64")
             || arch.equals("x86_64");
     }

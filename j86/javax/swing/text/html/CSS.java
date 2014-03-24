@@ -22,25 +22,25 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text.html;
+package j86.j86.j86.javax.swing.text.html;
 
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.GraphicsEnvironment;
-import java.awt.Toolkit;
-import java.awt.HeadlessException;
-import java.awt.Image;
-import java.io.*;
-import java.lang.reflect.Method;
-import java.net.URL;
-import java.net.MalformedURLException;
-import java.util.Enumeration;
-import java.util.Hashtable;
-import java.util.Vector;
-import java.util.Locale;
-import javax.swing.ImageIcon;
-import javax.swing.SizeRequirements;
-import javax.swing.text.*;
+import j86.java.awt.Color;
+import j86.java.awt.Font;
+import j86.java.awt.GraphicsEnvironment;
+import j86.java.awt.Toolkit;
+import j86.java.awt.HeadlessException;
+import j86.java.awt.Image;
+import j86.java.io.*;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.net.URL;
+import j86.java.net.MalformedURLException;
+import j86.java.util.Enumeration;
+import j86.java.util.Hashtable;
+import j86.java.util.Vector;
+import j86.java.util.Locale;
+import j86.javax.swing.ImageIcon;
+import j86.javax.swing.SizeRequirements;
+import j86.j86.javax.swing.text.*;
 
 /**
  * Defines a set of
@@ -2212,7 +2212,7 @@ public class CSS implements Serializable {
             return null;
         }
 
-        private void writeObject(java.io.ObjectOutputStream s)
+        private void writeObject(j86.java.io.ObjectOutputStream s)
                      throws IOException {
             s.defaultWriteObject();
             if (style == null) {
@@ -3316,7 +3316,7 @@ public class CSS implements Serializable {
     // Serialization support
     //
 
-    private void writeObject(java.io.ObjectOutputStream s)
+    private void writeObject(j86.java.io.ObjectOutputStream s)
         throws IOException
     {
         s.defaultWriteObject();

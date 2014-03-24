@@ -33,11 +33,11 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package java.util;
+package j86.java.util;
 
 /**
  * A collection designed for holding elements prior to processing.
- * Besides basic {@link java.util.Collection Collection} operations,
+ * Besides basic {@link j86.java.util.Collection Collection} operations,
  * queues provide additional insertion, extraction, and inspection
  * operations.  Each of these methods exists in two forms: one throws
  * an exception if the operation fails, the other returns a special
@@ -85,7 +85,7 @@ package java.util;
  *
  * <p>The {@link #offer offer} method inserts an element if possible,
  * otherwise returning {@code false}.  This differs from the {@link
- * java.util.Collection#add Collection.add} method, which can fail to
+ * j86.java.util.Collection#add Collection.add} method, which can fail to
  * add an element only by throwing an unchecked exception.  The
  * {@code offer} method is designed for use when failure is a normal,
  * rather than exceptional occurrence, for example, in fixed-capacity
@@ -106,7 +106,7 @@ package java.util;
  * <p>The {@code Queue} interface does not define the <i>blocking queue
  * methods</i>, which are common in concurrent programming.  These methods,
  * which wait for elements to appear or for space to become available, are
- * defined in the {@link java.util.concurrent.BlockingQueue} interface, which
+ * defined in the {@link j86.j86.java.util.concurrent.BlockingQueue} interface, which
  * extends this interface.
  *
  * <p>{@code Queue} implementations generally do not allow insertion
@@ -129,14 +129,14 @@ package java.util;
  * <a href="{@docRoot}/../technotes/guides/collections/index.html">
  * Java Collections Framework</a>.
  *
- * @see java.util.Collection
+ * @see j86.java.util.Collection
  * @see LinkedList
  * @see PriorityQueue
- * @see java.util.concurrent.LinkedBlockingQueue
- * @see java.util.concurrent.BlockingQueue
- * @see java.util.concurrent.ArrayBlockingQueue
- * @see java.util.concurrent.LinkedBlockingQueue
- * @see java.util.concurrent.PriorityBlockingQueue
+ * @see j86.j86.java.util.concurrent.LinkedBlockingQueue
+ * @see j86.j86.java.util.concurrent.BlockingQueue
+ * @see j86.j86.java.util.concurrent.ArrayBlockingQueue
+ * @see j86.j86.java.util.concurrent.LinkedBlockingQueue
+ * @see j86.j86.java.util.concurrent.PriorityBlockingQueue
  * @since 1.5
  * @author Doug Lea
  * @param <E> the type of elements held in this collection

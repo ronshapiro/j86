@@ -23,22 +23,22 @@
  * questions.
  */
 
-package com.sun.java.swing;
+package j86.com.sun.java.swing;
 
-import sun.awt.EventQueueDelegate;
-import sun.awt.AppContext;
-import java.util.Collections;
-import java.util.Map;
-import java.util.WeakHashMap;
-import java.util.concurrent.Callable;
-import java.applet.Applet;
-import java.awt.AWTEvent;
-import java.awt.EventQueue;
-import java.awt.Component;
-import java.awt.Container;
-import java.awt.Window;
-import javax.swing.JComponent;
-import javax.swing.RepaintManager;
+import j86.sun.awt.EventQueueDelegate;
+import j86.sun.awt.AppContext;
+import j86.java.util.Collections;
+import j86.java.util.Map;
+import j86.java.util.WeakHashMap;
+import j86.j86.java.util.concurrent.Callable;
+import j86.java.applet.Applet;
+import j86.java.awt.AWTEvent;
+import j86.java.awt.EventQueue;
+import j86.java.awt.Component;
+import j86.java.awt.Container;
+import j86.java.awt.Window;
+import j86.javax.swing.JComponent;
+import j86.javax.swing.RepaintManager;
 
 /**
  * A collection of utility methods for Swing.
@@ -48,7 +48,7 @@ import javax.swing.RepaintManager;
  * releases and even patch releases. You should not rely on this class even
  * existing.
  *
- * This is a second part of sun.swing.SwingUtilities2. It is required
+ * This is a second part of j86.sun.swing.SwingUtilities2. It is required
  * to provide services for JavaFX applets.
  *
  */

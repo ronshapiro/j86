@@ -23,15 +23,15 @@
  * questions.
  */
 
-package sun.tools.javac;
+package j86.j86.sun.tools.javac;
 
-import sun.tools.java.*;
-import sun.tools.tree.*;
-import sun.tools.asm.*;
-import java.util.Vector;
-import java.util.Enumeration;
-import java.util.Hashtable;
-import java.io.PrintStream;
+import j86.sun.tools.java.*;
+import j86.sun.tools.tree.*;
+import j86.sun.tools.asm.*;
+import j86.java.util.Vector;
+import j86.java.util.Enumeration;
+import j86.java.util.Hashtable;
+import j86.java.io.PrintStream;
 
 /**
  * A Source Member

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.security;
+package j86.java.security;
 
 /**
  * Abstract class for representing access to a system resource.
@@ -33,12 +33,12 @@ package java.security;
  *
  * <p>Most Permission objects also include an "actions" list that tells the actions
  * that are permitted for the object.  For example,
- * for a {@code java.io.FilePermission} object, the permission name is
+ * for a {@code j86.java.io.FilePermission} object, the permission name is
  * the pathname of a file (or directory), and the actions list
  * (such as "read, write") specifies which actions are granted for the
  * specified file (or for files in the specified directory).
  * The actions list is optional for Permission objects, such as
- * {@code java.lang.RuntimePermission},
+ * {@code j86.java.lang.RuntimePermission},
  * that don't need such a list; you either have the named permission (such
  * as "system.exit") or you don't.
  *
@@ -62,7 +62,7 @@ package java.security;
  * @author Roland Schemers
  */
 
-public abstract class Permission implements Guard, java.io.Serializable {
+public abstract class Permission implements Guard, j86.java.io.Serializable {
 
     private static final long serialVersionUID = -5636570222231596674L;
 
@@ -159,7 +159,7 @@ public abstract class Permission implements Guard, java.io.Serializable {
 
     /**
      * Returns the name of this Permission.
-     * For example, in the case of a {@code java.io.FilePermission},
+     * For example, in the case of a {@code j86.java.io.FilePermission},
      * the name will be a pathname.
      *
      * @return the name of this Permission.

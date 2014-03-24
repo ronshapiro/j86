@@ -26,7 +26,7 @@
 /*
  * Portions Copyright IBM Corporation, 2001. All Rights Reserved.
  */
-package java.math;
+package j86.java.math;
 
 /**
  * Specifies a <i>rounding behavior</i> for numerical operations

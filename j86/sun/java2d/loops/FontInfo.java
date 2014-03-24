@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.java2d.loops;
+package j86.j86.sun.java2d.loops;
 
-import java.awt.Font;
-import java.awt.geom.AffineTransform;
+import j86.java.awt.Font;
+import j86.j86.java.awt.geom.AffineTransform;
 
-import sun.font.Font2D;
-import sun.font.FontStrike;
-import sun.font.FontStrikeDesc;
+import j86.sun.font.Font2D;
+import j86.sun.font.FontStrike;
+import j86.sun.font.FontStrikeDesc;
 
 /*
  * A FontInfo object holds all calculated or derived data needed

@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.java2d.cmm.lcms;
+package j86.j86.j86.sun.java2d.cmm.lcms;
 
-import java.awt.color.CMMException;
-import java.util.Arrays;
-import java.util.HashMap;
-import sun.java2d.cmm.Profile;
+import j86.j86.java.awt.color.CMMException;
+import j86.java.util.Arrays;
+import j86.java.util.HashMap;
+import j86.j86.sun.java2d.cmm.Profile;
 
 final class LCMSProfile extends Profile {
     private final TagCache tagCache;

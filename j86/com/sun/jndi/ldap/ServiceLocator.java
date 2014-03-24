@@ -23,19 +23,19 @@
  * questions.
  */
 
-package com.sun.jndi.ldap;
+package j86.com.sun.jndi.ldap;
 
-import java.util.Arrays;
-import java.util.Hashtable;
-import java.util.Random;
-import java.util.StringTokenizer;
-import java.util.List;
+import j86.java.util.Arrays;
+import j86.java.util.Hashtable;
+import j86.java.util.Random;
+import j86.java.util.StringTokenizer;
+import j86.java.util.List;
 
-import javax.naming.*;
-import javax.naming.directory.*;
-import javax.naming.spi.NamingManager;
-import javax.naming.ldap.LdapName;
-import javax.naming.ldap.Rdn;
+import j86.javax.naming.*;
+import j86.j86.javax.naming.directory.*;
+import j86.j86.javax.naming.spi.NamingManager;
+import j86.j86.javax.naming.ldap.LdapName;
+import j86.j86.javax.naming.ldap.Rdn;
 
 /**
  * This class discovers the location of LDAP services by querying DNS.

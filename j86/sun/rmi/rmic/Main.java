@@ -30,33 +30,33 @@
  *
  */
 
-package sun.rmi.rmic;
+package j86.sun.rmi.rmic;
 
-import java.util.Vector;
-import java.util.Enumeration;
-import java.util.ResourceBundle;
-import java.util.StringTokenizer;
-import java.util.MissingResourceException;
+import j86.java.util.Vector;
+import j86.java.util.Enumeration;
+import j86.java.util.ResourceBundle;
+import j86.java.util.StringTokenizer;
+import j86.java.util.MissingResourceException;
 
-import java.io.OutputStream;
-import java.io.PrintStream;
-import java.io.IOException;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.ByteArrayOutputStream;
+import j86.java.io.OutputStream;
+import j86.java.io.PrintStream;
+import j86.java.io.IOException;
+import j86.java.io.File;
+import j86.java.io.FileNotFoundException;
+import j86.java.io.FileOutputStream;
+import j86.java.io.ByteArrayOutputStream;
 
-import sun.tools.java.ClassFile;
-import sun.tools.java.ClassDefinition;
-import sun.tools.java.ClassDeclaration;
-import sun.tools.java.ClassNotFound;
-import sun.tools.java.Identifier;
-import sun.tools.java.ClassPath;
+import j86.sun.tools.java.ClassFile;
+import j86.sun.tools.java.ClassDefinition;
+import j86.sun.tools.java.ClassDeclaration;
+import j86.sun.tools.java.ClassNotFound;
+import j86.sun.tools.java.Identifier;
+import j86.sun.tools.java.ClassPath;
 
-import sun.tools.javac.SourceClass;
-import sun.tools.util.CommandLine;
-import java.lang.reflect.Constructor;
-import java.util.Properties;
+import j86.j86.sun.tools.javac.SourceClass;
+import j86.sun.tools.util.CommandLine;
+import j86.j86.j86.java.lang.reflect.Constructor;
+import j86.java.util.Properties;
 
 /**
  * Main "rmic" program.
@@ -65,7 +65,7 @@ import java.util.Properties;
  * supported API.  Code that depends on them does so at its own risk:
  * they are subject to change or removal without notice.
  */
-public class Main implements sun.rmi.rmic.Constants {
+public class Main implements j86.sun.rmi.rmic.Constants {
     String sourcePathArg;
     String sysClassPathArg;
     String extDirsArg;
@@ -148,7 +148,7 @@ public class Main implements sun.rmi.rmic.Constants {
          */
         for (int i = 0; i < argv.length; i++) {
             if (argv[i].equals("-Xnew")) {
-                return (new sun.rmi.rmic.newrmic.Main(out,
+                return (new j86.j86.sun.rmi.rmic.newrmic.Main(out,
                                                       program)).compile(argv);
             }
         }
@@ -846,11 +846,11 @@ public class Main implements sun.rmi.rmic.Constants {
     private static void initResources() {
         try {
             resources =
-                ResourceBundle.getBundle("sun.rmi.rmic.resources.rmic");
+                ResourceBundle.getBundle("j86.sun.rmi.rmic.resources.rmic");
             resourcesInitialized = true;
             try {
                 resourcesExt =
-                    ResourceBundle.getBundle("sun.rmi.rmic.resources.rmicext");
+                    ResourceBundle.getBundle("j86.sun.rmi.rmic.resources.rmicext");
             } catch (MissingResourceException e) {}
         } catch (MissingResourceException e) {
             throw new Error("fatal: missing resource bundle: " +
@@ -892,6 +892,6 @@ public class Main implements sun.rmi.rmic.Constants {
         args[1] = (arg1 != null ? arg1 : "null");
         args[2] = (arg2 != null ? arg2 : "null");
 
-        return java.text.MessageFormat.format(format, (Object[]) args);
+        return j86.java.text.MessageFormat.format(format, (Object[]) args);
     }
 }

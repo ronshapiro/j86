@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.awt.image;
+package j86.j86.j86.java.awt.image;
 
-import java.awt.color.ColorSpace;
-import java.awt.Transparency;
+import j86.j86.java.awt.color.ColorSpace;
+import j86.java.awt.Transparency;
 
 /**
  * The <code>DirectColorModel</code> class is a <code>ColorModel</code>
@@ -1212,7 +1212,7 @@ public class DirectColorModel extends PackedColorModel {
                             } else {
                                 if (zpixel == null) {
                                     zpixel = new int[numComponents];
-                                    java.util.Arrays.fill(zpixel, 0);
+                                    j86.java.util.Arrays.fill(zpixel, 0);
                                 }
                                 raster.setPixel(rX, rY, zpixel);
                             }
@@ -1235,7 +1235,7 @@ public class DirectColorModel extends PackedColorModel {
                             } else {
                                 if (zpixel == null) {
                                     zpixel = new int[numComponents];
-                                    java.util.Arrays.fill(zpixel, 0);
+                                    j86.java.util.Arrays.fill(zpixel, 0);
                                 }
                                 raster.setPixel(rX, rY, zpixel);
                             }
@@ -1258,7 +1258,7 @@ public class DirectColorModel extends PackedColorModel {
                             } else {
                                 if (zpixel == null) {
                                     zpixel = new int[numComponents];
-                                    java.util.Arrays.fill(zpixel, 0);
+                                    j86.java.util.Arrays.fill(zpixel, 0);
                                 }
                                 raster.setPixel(rX, rY, zpixel);
                             }

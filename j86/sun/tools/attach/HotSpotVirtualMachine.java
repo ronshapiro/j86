@@ -23,20 +23,20 @@
  * questions.
  */
 
-package sun.tools.attach;
+package j86.sun.tools.attach;
 
-import com.sun.tools.attach.VirtualMachine;
-import com.sun.tools.attach.AgentLoadException;
-import com.sun.tools.attach.AgentInitializationException;
-import com.sun.tools.attach.spi.AttachProvider;
+import com.j86.sun.tools.attach.VirtualMachine;
+import com.j86.sun.tools.attach.AgentLoadException;
+import com.j86.sun.tools.attach.AgentInitializationException;
+import com.j86.sun.tools.attach.spi.AttachProvider;
 
-import java.io.InputStream;
-import java.io.IOException;
-import java.util.Properties;
-import java.util.Map;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
+import j86.java.util.Properties;
+import j86.java.util.Map;
 
 /*
- * The HotSpot implementation of com.sun.tools.attach.VirtualMachine.
+ * The HotSpot implementation of com.j86.sun.tools.attach.VirtualMachine.
  */
 
 public abstract class HotSpotVirtualMachine extends VirtualMachine {
@@ -223,7 +223,7 @@ public abstract class HotSpotVirtualMachine extends VirtualMachine {
 
     /*
      * Utility method to read an 'int' from the input stream. Ideally
-     * we should be using java.util.Scanner here but this implementation
+     * we should be using j86.java.util.Scanner here but this implementation
      * guarantees not to read ahead.
      */
     int readInt(InputStream in) throws IOException {
@@ -263,7 +263,7 @@ public abstract class HotSpotVirtualMachine extends VirtualMachine {
     private volatile long attachTimeout;
 
     /*
-     * Return attach timeout based on the value of the sun.tools.attach.attachTimeout
+     * Return attach timeout based on the value of the j86.sun.tools.attach.attachTimeout
      * property, or the default timeout if the property is not set to a positive
      * value.
      */
@@ -273,7 +273,7 @@ public abstract class HotSpotVirtualMachine extends VirtualMachine {
                 if (attachTimeout == 0) {
                     try {
                         String s =
-                            System.getProperty("sun.tools.attach.attachTimeout");
+                            System.getProperty("j86.sun.tools.attach.attachTimeout");
                         attachTimeout = Long.parseLong(s);
                     } catch (SecurityException se) {
                     } catch (NumberFormatException ne) {

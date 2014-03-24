@@ -23,16 +23,16 @@
  * questions.
  */
 
-package com.sun.java.swing.plaf.motif;
+package j86.j86.com.sun.java.swing.plaf.motif;
 
-import sun.awt.AppContext;
+import j86.sun.awt.AppContext;
 
-import javax.swing.*;
-import javax.swing.border.*;
-import javax.swing.plaf.basic.*;
-import java.awt.*;
-import java.awt.event.*;
-import javax.swing.plaf.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.border.*;
+import j86.j86.j86.javax.swing.plaf.basic.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.j86.javax.swing.plaf.*;
 
 /**
  * MotifButton implementation

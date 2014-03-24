@@ -28,15 +28,15 @@
  * @author Charlton Innovations, Inc.
  */
 
-package sun.java2d.loops;
+package j86.j86.sun.java2d.loops;
 
-import sun.java2d.loops.GraphicsPrimitive;
-import sun.java2d.pipe.SpanIterator;
-import java.awt.Color;
-import java.awt.image.ColorModel;
-import java.awt.image.Raster;
-import sun.java2d.SunGraphics2D;
-import sun.java2d.SurfaceData;
+import j86.j86.sun.java2d.loops.GraphicsPrimitive;
+import j86.j86.sun.java2d.pipe.SpanIterator;
+import j86.java.awt.Color;
+import j86.j86.j86.java.awt.image.ColorModel;
+import j86.j86.j86.java.awt.image.Raster;
+import j86.sun.java2d.SunGraphics2D;
+import j86.sun.java2d.SurfaceData;
 
 /**
  * FillSpans

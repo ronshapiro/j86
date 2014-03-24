@@ -24,10 +24,10 @@
  */
 
 
-package sun.security.ssl;
+package j86.sun.security.ssl;
 
-import java.io.*;
-import java.nio.*;
+import j86.java.io.*;
+import j86.java.nio.*;
 
 /**
  * A OutputRecord class extension which uses external ByteBuffers

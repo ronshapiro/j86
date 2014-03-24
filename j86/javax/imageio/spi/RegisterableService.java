@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.imageio.spi;
+package j86.j86.javax.imageio.spi;
 
 /**
  * An optional interface that may be provided by service provider

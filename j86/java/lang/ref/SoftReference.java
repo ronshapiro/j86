@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.lang.ref;
+package j86.j86.java.lang.ref;
 
 
 /**

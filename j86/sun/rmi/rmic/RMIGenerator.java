@@ -30,22 +30,22 @@
 /*                                                                           */
 /*****************************************************************************/
 
-package sun.rmi.rmic;
+package j86.sun.rmi.rmic;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.OutputStreamWriter;
-import java.io.IOException;
-import java.util.Enumeration;
-import java.util.Hashtable;
-import java.util.Vector;
-import sun.tools.java.Type;
-import sun.tools.java.Identifier;
-import sun.tools.java.ClassDefinition;
-import sun.tools.java.ClassDeclaration;
-import sun.tools.java.ClassNotFound;
-import sun.tools.java.ClassFile;
-import sun.tools.java.MemberDefinition;
+import j86.java.io.File;
+import j86.java.io.FileOutputStream;
+import j86.java.io.OutputStreamWriter;
+import j86.java.io.IOException;
+import j86.java.util.Enumeration;
+import j86.java.util.Hashtable;
+import j86.java.util.Vector;
+import j86.sun.tools.java.Type;
+import j86.sun.tools.java.Identifier;
+import j86.sun.tools.java.ClassDefinition;
+import j86.sun.tools.java.ClassDeclaration;
+import j86.sun.tools.java.ClassNotFound;
+import j86.sun.tools.java.ClassFile;
+import j86.sun.tools.java.MemberDefinition;
 import com.sun.corba.se.impl.util.Utility;
 
 /**
@@ -249,7 +249,7 @@ public class RMIGenerator implements RMIConstants, Generator {
     private File skeletonFile;
 
     /**
-     * Names to use for the java.lang.reflect.Method static fields
+     * Names to use for the j86.j86.j86.java.lang.reflect.Method static fields
      * corresponding to each remote method.
      */
     private String[] methodFieldNames;
@@ -370,7 +370,7 @@ public class RMIGenerator implements RMIConstants, Generator {
                 p.pln();
 
                 /*
-                 * Initialize java.lang.reflect.Method fields for each remote
+                 * Initialize j86.j86.j86.java.lang.reflect.Method fields for each remote
                  * method in a static initializer.
                  */
                 p.plnI("static {");
@@ -386,17 +386,17 @@ public class RMIGenerator implements RMIConstants, Generator {
                      * to false if a NoSuchMethodException is thrown.
                      */
                     p.plnI(idRemoteRef + ".class.getMethod(\"invoke\",");
-                    p.plnI("new java.lang.Class[] {");
+                    p.plnI("new j86.java.lang.Class[] {");
                     p.pln(idRemote + ".class,");
-                    p.pln("java.lang.reflect.Method.class,");
-                    p.pln("java.lang.Object[].class,");
+                    p.pln("j86.j86.j86.java.lang.reflect.Method.class,");
+                    p.pln("j86.java.lang.Object[].class,");
                     p.pln("long.class");
                     p.pOln("});");
                     p.pO();
                     p.pln("useNewInvoke = true;");
                 }
                 writeMethodFieldInitializers(p);
-                p.pOlnI("} catch (java.lang.NoSuchMethodException e) {");
+                p.pOlnI("} catch (j86.java.lang.NoSuchMethodException e) {");
                 if (version == STUB_VERSION_FAT) {
                     p.pln("useNewInvoke = false;");
                 } else {
@@ -409,7 +409,7 @@ public class RMIGenerator implements RMIConstants, Generator {
                      * appropriate, and if so, which RuntimeException should
                      * be thrown?
                      */
-                    p.plnI("throw new java.lang.NoSuchMethodError(");
+                    p.plnI("throw new j86.java.lang.NoSuchMethodError(");
                     p.pln("\"stub class initialization failed\");");
                     p.pO();
                 }
@@ -523,7 +523,7 @@ public class RMIGenerator implements RMIConstants, Generator {
 
         /*
          * If we need to catch any particular exceptions (i.e. this method
-         * does not declare java.lang.Exception), put the entire stub
+         * does not declare j86.java.lang.Exception), put the entire stub
          * method in a try block.
          */
         if (catchList.size() > 0) {
@@ -541,7 +541,7 @@ public class RMIGenerator implements RMIConstants, Generator {
             }
             p.p("ref.invoke(this, " + methodFieldNames[opnum] + ", ");
             if (paramTypes.length > 0) {
-                p.p("new java.lang.Object[] {");
+                p.p("new j86.java.lang.Object[] {");
                 for (int i = 0; i < paramTypes.length; i++) {
                     if (i > 0)
                         p.p(", ");
@@ -568,9 +568,9 @@ public class RMIGenerator implements RMIConstants, Generator {
 
             if (paramTypes.length > 0) {
                 p.plnI("try {");
-                p.pln("java.io.ObjectOutput out = call.getOutputStream();");
+                p.pln("j86.java.io.ObjectOutput out = call.getOutputStream();");
                 writeMarshalArguments(p, "out", paramTypes, paramNames);
-                p.pOlnI("} catch (java.io.IOException e) {");
+                p.pOlnI("} catch (j86.java.io.IOException e) {");
                 p.pln("throw new " + idMarshalException +
                     "(\"error marshalling arguments\", e);");
                 p.pOln("}");
@@ -583,11 +583,11 @@ public class RMIGenerator implements RMIConstants, Generator {
             } else {
                 p.pln(returnType + " $result;");        // REMIND: why $?
                 p.plnI("try {");
-                p.pln("java.io.ObjectInput in = call.getInputStream();");
+                p.pln("j86.java.io.ObjectInput in = call.getInputStream();");
                 boolean objectRead =
                     writeUnmarshalArgument(p, "in", returnType, "$result");
                 p.pln(";");
-                p.pOlnI("} catch (java.io.IOException e) {");
+                p.pOlnI("} catch (j86.java.io.IOException e) {");
                 p.pln("throw new " + idUnmarshalException +
                     "(\"error unmarshalling return\", e);");
                 /*
@@ -595,7 +595,7 @@ public class RMIGenerator implements RMIConstants, Generator {
                  * ClassNotFoundException as well as IOException.
                  */
                 if (objectRead) {
-                    p.pOlnI("} catch (java.lang.ClassNotFoundException e) {");
+                    p.pOlnI("} catch (j86.java.lang.ClassNotFoundException e) {");
                     p.pln("throw new " + idUnmarshalException +
                         "(\"error unmarshalling return\", e);");
                 }
@@ -622,7 +622,7 @@ public class RMIGenerator implements RMIConstants, Generator {
                 p.pOlnI("} catch (" + def.getName() + " e) {");
                 p.pln("throw e;");
             }
-            p.pOlnI("} catch (java.lang.Exception e) {");
+            p.pOlnI("} catch (j86.java.lang.Exception e) {");
             p.pln("throw new " + idUnexpectedException +
                 "(\"undeclared checked exception\", e);");
             p.pOln("}");                // end try/catch block
@@ -646,7 +646,7 @@ public class RMIGenerator implements RMIConstants, Generator {
      * present), since those exceptions should always be directly rethrown
      * by a stub method.
      *
-     * The returned Vector will be empty if java.lang.Exception or one
+     * The returned Vector will be empty if j86.java.lang.Exception or one
      * of its superclasses is in the throws clause of the method, indicating
      * that no exceptions need to be caught.
      */
@@ -663,7 +663,7 @@ public class RMIGenerator implements RMIConstants, Generator {
             try {
                 if (defException.subClassOf(env, decl)) {
                     /*
-                     * (If java.lang.Exception (or a superclass) was declared
+                     * (If j86.java.lang.Exception (or a superclass) was declared
                      * in the throws clause of this stub method, then we don't
                      * have to bother catching anything; clear the list and
                      * return.)
@@ -764,7 +764,7 @@ public class RMIGenerator implements RMIConstants, Generator {
          */
         p.plnI("public void dispatch(" + idRemote + " obj, " +
             idRemoteCall + " call, int opnum, long hash)");
-        p.pln("throws java.lang.Exception");
+        p.pln("throws j86.java.lang.Exception");
         p.pOlnI("{");
 
         if (version == STUB_VERSION_FAT) {
@@ -869,10 +869,10 @@ public class RMIGenerator implements RMIConstants, Generator {
              * Unmarshal arguments from call stream.
              */
             p.plnI("try {");
-            p.pln("java.io.ObjectInput in = call.getInputStream();");
+            p.pln("j86.java.io.ObjectInput in = call.getInputStream();");
             boolean objectsRead = writeUnmarshalArguments(p, "in",
                 paramTypes, paramNames);
-            p.pOlnI("} catch (java.io.IOException e) {");
+            p.pOlnI("} catch (j86.java.io.IOException e) {");
             p.pln("throw new " + idUnmarshalException +
                 "(\"error unmarshalling arguments\", e);");
             /*
@@ -880,7 +880,7 @@ public class RMIGenerator implements RMIConstants, Generator {
              * ClassNotFoundException as well as IOException.
              */
             if (objectsRead) {
-                p.pOlnI("} catch (java.lang.ClassNotFoundException e) {");
+                p.pOlnI("} catch (j86.java.lang.ClassNotFoundException e) {");
                 p.pln("throw new " + idUnmarshalException +
                     "(\"error unmarshalling arguments\", e);");
             }
@@ -917,14 +917,14 @@ public class RMIGenerator implements RMIConstants, Generator {
          */
         p.plnI("try {");
         if (!returnType.isType(TC_VOID)) {
-            p.p("java.io.ObjectOutput out = ");
+            p.p("j86.java.io.ObjectOutput out = ");
         }
         p.pln("call.getResultStream(true);");
         if (!returnType.isType(TC_VOID)) {
             writeMarshalArgument(p, "out", returnType, "$result");
             p.pln(";");
         }
-        p.pOlnI("} catch (java.io.IOException e) {");
+        p.pOlnI("} catch (j86.java.io.IOException e) {");
         p.pln("throw new " +
             idMarshalException + "(\"error marshalling return\", e);");
         p.pOln("}");
@@ -963,14 +963,14 @@ public class RMIGenerator implements RMIConstants, Generator {
     }
 
     /**
-     * Write declaration for java.lang.reflect.Method static fields
+     * Write declaration for j86.j86.j86.java.lang.reflect.Method static fields
      * corresponding to each remote method in a stub.
      */
     private void writeMethodFieldDeclarations(IndentingWriter p)
         throws IOException
     {
         for (int i = 0; i < methodFieldNames.length; i++) {
-            p.pln("private static java.lang.reflect.Method " +
+            p.pln("private static j86.j86.j86.java.lang.reflect.Method " +
                 methodFieldNames[i] + ";");
         }
     }
@@ -998,7 +998,7 @@ public class RMIGenerator implements RMIConstants, Generator {
             Type paramTypes[] = methodType.getArgumentTypes();
 
             p.p(def.getClassDefinition().getName() + ".class.getMethod(\"" +
-                methodName + "\", new java.lang.Class[] {");
+                methodName + "\", new j86.java.lang.Class[] {");
             for (int j = 0; j < paramTypes.length; j++) {
                 if (j > 0)
                     p.p(", ");
@@ -1075,10 +1075,10 @@ public class RMIGenerator implements RMIConstants, Generator {
 
     /**
      * Write a snippet of Java code to marshal a value named "name" of
-     * type "type" to the java.io.ObjectOutput stream named "stream".
+     * type "type" to the j86.java.io.ObjectOutput stream named "stream".
      *
      * Primitive types are marshalled with their corresponding methods
-     * in the java.io.DataOutput interface, and objects (including arrays)
+     * in the j86.java.io.DataOutput interface, and objects (including arrays)
      * are marshalled using the writeObject method.
      */
     private static void writeMarshalArgument(IndentingWriter p,
@@ -1124,7 +1124,7 @@ public class RMIGenerator implements RMIConstants, Generator {
     /**
      * Write Java statements to marshal a series of values in order as
      * named in the "names" array, with types as specified in the "types"
-     * array", to the java.io.ObjectOutput stream named "stream".
+     * array", to the j86.java.io.ObjectOutput stream named "stream".
      */
     private static void writeMarshalArguments(IndentingWriter p,
                                               String streamName,
@@ -1143,12 +1143,12 @@ public class RMIGenerator implements RMIConstants, Generator {
 
     /**
      * Write a snippet of Java code to unmarshal a value of type "type"
-     * from the java.io.ObjectInput stream named "stream" into a variable
+     * from the j86.java.io.ObjectInput stream named "stream" into a variable
      * named "name" (if "name" is null, the value in unmarshalled and
      * discarded).
      *
      * Primitive types are unmarshalled with their corresponding methods
-     * in the java.io.DataInput interface, and objects (including arrays)
+     * in the j86.java.io.DataInput interface, and objects (including arrays)
      * are unmarshalled using the readObject method.
      */
     private static boolean writeUnmarshalArgument(IndentingWriter p,
@@ -1201,7 +1201,7 @@ public class RMIGenerator implements RMIConstants, Generator {
 
     /**
      * Write Java statements to unmarshal a series of values in order of
-     * types as in the "types" array from the java.io.ObjectInput stream
+     * types as in the "types" array from the j86.java.io.ObjectInput stream
      * named "stream" into variables as named in "names" (for any element
      * of "names" that is null, the corresponding value is unmarshalled
      * and discarded).
@@ -1240,21 +1240,21 @@ public class RMIGenerator implements RMIConstants, Generator {
         switch (typeCode) {
         case TC_BOOLEAN:
             return ("(" + name +
-                    " ? java.lang.Boolean.TRUE : java.lang.Boolean.FALSE)");
+                    " ? j86.java.lang.Boolean.TRUE : java.lang.Boolean.FALSE)");
         case TC_BYTE:
-            return "new java.lang.Byte(" + name + ")";
+            return "new j86.java.lang.Byte(" + name + ")";
         case TC_CHAR:
-            return "new java.lang.Character(" + name + ")";
+            return "new j86.java.lang.Character(" + name + ")";
         case TC_SHORT:
-            return "new java.lang.Short(" + name + ")";
+            return "new j86.java.lang.Short(" + name + ")";
         case TC_INT:
-            return "new java.lang.Integer(" + name + ")";
+            return "new j86.java.lang.Integer(" + name + ")";
         case TC_LONG:
-            return "new java.lang.Long(" + name + ")";
+            return "new j86.java.lang.Long(" + name + ")";
         case TC_FLOAT:
-            return "new java.lang.Float(" + name + ")";
+            return "new j86.java.lang.Float(" + name + ")";
         case TC_DOUBLE:
-            return "new java.lang.Double(" + name + ")";
+            return "new j86.java.lang.Double(" + name + ")";
         case TC_ARRAY:
         case TC_CLASS:
             return name;
@@ -1277,21 +1277,21 @@ public class RMIGenerator implements RMIConstants, Generator {
         int typeCode = type.getTypeCode();
         switch (typeCode) {
         case TC_BOOLEAN:
-            return "((java.lang.Boolean) " + name + ").booleanValue()";
+            return "((j86.java.lang.Boolean) " + name + ").booleanValue()";
         case TC_BYTE:
-            return "((java.lang.Byte) " + name + ").byteValue()";
+            return "((j86.java.lang.Byte) " + name + ").byteValue()";
         case TC_CHAR:
-            return "((java.lang.Character) " + name + ").charValue()";
+            return "((j86.java.lang.Character) " + name + ").charValue()";
         case TC_SHORT:
-            return "((java.lang.Short) " + name + ").shortValue()";
+            return "((j86.java.lang.Short) " + name + ").shortValue()";
         case TC_INT:
-            return "((java.lang.Integer) " + name + ").intValue()";
+            return "((j86.java.lang.Integer) " + name + ").intValue()";
         case TC_LONG:
-            return "((java.lang.Long) " + name + ").longValue()";
+            return "((j86.java.lang.Long) " + name + ").longValue()";
         case TC_FLOAT:
-            return "((java.lang.Float) " + name + ").floatValue()";
+            return "((j86.java.lang.Float) " + name + ").floatValue()";
         case TC_DOUBLE:
-            return "((java.lang.Double) " + name + ").doubleValue()";
+            return "((j86.java.lang.Double) " + name + ").doubleValue()";
         case TC_ARRAY:
         case TC_CLASS:
             return "((" + type + ") " + name + ")";

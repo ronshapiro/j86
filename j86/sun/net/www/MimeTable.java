@@ -23,13 +23,13 @@
  * questions.
  */
 
-package sun.net.www;
-import java.io.*;
-import java.net.FileNameMap;
-import java.util.Hashtable;
-import java.util.Enumeration;
-import java.util.Properties;
-import java.util.StringTokenizer;
+package j86.j86.sun.net.www;
+import j86.java.io.*;
+import j86.java.net.FileNameMap;
+import j86.java.util.Hashtable;
+import j86.java.util.Enumeration;
+import j86.java.util.Properties;
+import j86.java.util.StringTokenizer;
 
 public class MimeTable implements FileNameMap {
     /** Keyed by content type, returns MimeEntries */
@@ -44,8 +44,8 @@ public class MimeTable implements FileNameMap {
     private static String tempFileTemplate;
 
     static {
-        java.security.AccessController.doPrivileged(
-            new java.security.PrivilegedAction<Void>() {
+        j86.java.security.AccessController.doPrivileged(
+            new j86.java.security.PrivilegedAction<Void>() {
                 public Void run() {
                 tempFileTemplate =
                     System.getProperty("content.types.temp.file.template",
@@ -67,7 +67,7 @@ public class MimeTable implements FileNameMap {
     }
 
 
-    private static final String filePreamble = "sun.net.www MIME content-types table";
+    private static final String filePreamble = "j86.j86.sun.net.www MIME content-types table";
     private static final String fileMagic = "#" + filePreamble;
 
     MimeTable() {
@@ -78,8 +78,8 @@ public class MimeTable implements FileNameMap {
         static final MimeTable defaultInstance = getDefaultInstance();
 
         static MimeTable getDefaultInstance() {
-            return java.security.AccessController.doPrivileged(
-                new java.security.PrivilegedAction<MimeTable>() {
+            return j86.java.security.AccessController.doPrivileged(
+                new j86.java.security.PrivilegedAction<MimeTable>() {
                 public MimeTable run() {
                     MimeTable instance = new MimeTable();
                     URLConnection.setFileNameMap(instance);

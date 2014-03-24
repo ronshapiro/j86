@@ -22,17 +22,17 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.beans;
+package j86.java.beans;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.EventListener;
-import java.util.EventListenerProxy;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Map.Entry;
-import java.util.Set;
+import j86.java.util.ArrayList;
+import j86.java.util.Collections;
+import j86.java.util.EventListener;
+import j86.java.util.EventListenerProxy;
+import j86.java.util.HashMap;
+import j86.java.util.List;
+import j86.java.util.Map;
+import j86.java.util.Map.Entry;
+import j86.java.util.Set;
 
 /**
  * This is an abstract class that provides base functionality

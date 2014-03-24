@@ -23,11 +23,11 @@
  * questions.
  */
 
-package java.awt.event;
+package j86.j86.java.awt.event;
 
-import java.awt.AWTEvent;
-import java.awt.Event;
-import java.lang.annotation.Native;
+import j86.java.awt.AWTEvent;
+import j86.java.awt.Event;
+import j86.j86.java.lang.annotation.Native;
 
 /**
  * A semantic event which indicates that a component-defined action occurred.

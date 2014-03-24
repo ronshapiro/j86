@@ -22,18 +22,18 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.util.locale.provider;
+package j86.j86.j86.sun.util.locale.provider;
 
-import static java.util.Calendar.*;
-import java.util.Comparator;
-import java.util.Locale;
-import java.util.Map;
-import java.util.Set;
-import java.util.TreeMap;
-import java.util.spi.CalendarNameProvider;
+import static j86.java.util.Calendar.*;
+import j86.java.util.Comparator;
+import j86.java.util.Locale;
+import j86.java.util.Map;
+import j86.java.util.Set;
+import j86.java.util.TreeMap;
+import j86.j86.java.util.spi.CalendarNameProvider;
 
 /**
- * Concrete implementation of the  {@link java.util.spi.CalendarDataProvider
+ * Concrete implementation of the  {@link j86.j86.java.util.spi.CalendarDataProvider
  * CalendarDataProvider} class for the JRE LocaleProviderAdapter.
  *
  * @author Masayoshi Okutsu
@@ -231,9 +231,9 @@ public class CalendarNameProviderImpl extends CalendarNameProvider implements Av
         }
         boolean isNarrow = (baseStyle == NARROW_FORMAT);
         StringBuilder key = new StringBuilder();
-        // If javatime is true, use prefix "java.time.".
+        // If javatime is true, use prefix "j86.java.time.".
         if (javatime) {
-            key.append("java.time.");
+            key.append("j86.java.time.");
         }
         switch (field) {
         case ERA:

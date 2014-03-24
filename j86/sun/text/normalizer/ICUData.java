@@ -35,13 +35,13 @@
  *******************************************************************************
  */
 
-package sun.text.normalizer;
+package j86.j86.sun.text.normalizer;
 
-import java.io.InputStream;
-import java.net.URL;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.util.MissingResourceException;
+import j86.java.io.InputStream;
+import j86.java.net.URL;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.util.MissingResourceException;
 
 /**
  * Provides access to ICU data files as InputStreams.  Implements security checking.

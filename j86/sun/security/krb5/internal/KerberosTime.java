@@ -28,19 +28,19 @@
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
 
-package sun.security.krb5.internal;
+package j86.j86.sun.security.krb5.internal;
 
-import sun.security.krb5.Asn1Exception;
-import sun.security.krb5.Config;
-import sun.security.krb5.KrbException;
-import sun.security.util.DerInputStream;
-import sun.security.util.DerOutputStream;
-import sun.security.util.DerValue;
+import j86.sun.security.krb5.Asn1Exception;
+import j86.sun.security.krb5.Config;
+import j86.sun.security.krb5.KrbException;
+import j86.sun.security.util.DerInputStream;
+import j86.sun.security.util.DerOutputStream;
+import j86.sun.security.util.DerValue;
 
-import java.io.IOException;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.TimeZone;
+import j86.java.io.IOException;
+import j86.java.util.Calendar;
+import j86.java.util.Date;
+import j86.java.util.TimeZone;
 
 /**
  * Implements the ASN.1 KerberosTime type. This is an immutable class.
@@ -90,7 +90,7 @@ public class KerberosTime {
     }
 
     // This constructor is used in the native code
-    // src/windows/native/sun/security/krb5/NativeCreds.c
+    // src/windows/native/j86.sun.security.krb5/NativeCreds.c
     public KerberosTime(String time) throws Asn1Exception {
         this(toKerberosTime(time), 0);
     }
@@ -203,7 +203,7 @@ public class KerberosTime {
     }
 
     private boolean inClockSkew(int clockSkew) {
-        return java.lang.Math.abs(kerberosTime - System.currentTimeMillis())
+        return j86.java.lang.Math.abs(kerberosTime - System.currentTimeMillis())
                 <= clockSkew * 1000L;
     }
 

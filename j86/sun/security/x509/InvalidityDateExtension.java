@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.security.x509;
+package j86.sun.security.x509;
 
-import java.io.IOException;
-import java.io.OutputStream;
-import java.util.Date;
-import java.util.Enumeration;
+import j86.java.io.IOException;
+import j86.java.io.OutputStream;
+import j86.java.util.Date;
+import j86.java.util.Enumeration;
 
-import sun.security.util.*;
+import j86.sun.security.util.*;
 
 /**
  * From RFC 3280:
@@ -207,7 +207,7 @@ public class InvalidityDateExtension extends Extension
         return NAME;
     }
 
-    public static InvalidityDateExtension toImpl(java.security.cert.Extension ext)
+    public static InvalidityDateExtension toImpl(j86.j86.java.security.cert.Extension ext)
         throws IOException {
         if (ext instanceof InvalidityDateExtension) {
             return (InvalidityDateExtension) ext;

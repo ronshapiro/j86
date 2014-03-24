@@ -23,19 +23,19 @@
  * questions.
  */
 
-package java.beans;
+package j86.java.beans;
 
-import com.sun.beans.TypeResolver;
+import j86.com.sun.beans.TypeResolver;
 
-import java.lang.ref.Reference;
-import java.lang.ref.WeakReference;
-import java.lang.ref.SoftReference;
+import j86.j86.java.lang.ref.Reference;
+import j86.j86.java.lang.ref.WeakReference;
+import j86.j86.java.lang.ref.SoftReference;
 
-import java.lang.reflect.Method;
+import j86.j86.j86.java.lang.reflect.Method;
 
-import java.util.Enumeration;
-import java.util.Hashtable;
-import java.util.Map.Entry;
+import j86.java.util.Enumeration;
+import j86.java.util.Hashtable;
+import j86.java.util.Map.Entry;
 
 /**
  * The FeatureDescriptor class is the common baseclass for PropertyDescriptor,

@@ -23,17 +23,17 @@
  * questions.
  */
 
-package java.security;
+package j86.java.security;
 
-import java.util.*;
-import java.lang.*;
-import java.io.IOException;
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
-import java.io.InputStream;
-import java.io.ByteArrayInputStream;
+import j86.java.util.*;
+import j86.java.lang.*;
+import j86.java.io.IOException;
+import j86.java.io.ByteArrayOutputStream;
+import j86.java.io.PrintStream;
+import j86.java.io.InputStream;
+import j86.java.io.ByteArrayInputStream;
 
-import java.nio.ByteBuffer;
+import j86.java.nio.ByteBuffer;
 
 /**
  * This MessageDigest class provides applications the functionality of a

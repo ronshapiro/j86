@@ -54,42 +54,42 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package java.time.chrono;
+package j86.j86.java.time.chrono;
 
-import static java.time.temporal.ChronoField.ALIGNED_DAY_OF_WEEK_IN_MONTH;
-import static java.time.temporal.ChronoField.ALIGNED_DAY_OF_WEEK_IN_YEAR;
-import static java.time.temporal.ChronoField.ALIGNED_WEEK_OF_MONTH;
-import static java.time.temporal.ChronoField.ALIGNED_WEEK_OF_YEAR;
-import static java.time.temporal.ChronoField.DAY_OF_MONTH;
-import static java.time.temporal.ChronoField.MONTH_OF_YEAR;
-import static java.time.temporal.ChronoField.YEAR;
+import static j86.j86.java.time.temporal.ChronoField.ALIGNED_DAY_OF_WEEK_IN_MONTH;
+import static j86.j86.java.time.temporal.ChronoField.ALIGNED_DAY_OF_WEEK_IN_YEAR;
+import static j86.j86.java.time.temporal.ChronoField.ALIGNED_WEEK_OF_MONTH;
+import static j86.j86.java.time.temporal.ChronoField.ALIGNED_WEEK_OF_YEAR;
+import static j86.j86.java.time.temporal.ChronoField.DAY_OF_MONTH;
+import static j86.j86.java.time.temporal.ChronoField.MONTH_OF_YEAR;
+import static j86.j86.java.time.temporal.ChronoField.YEAR;
 
-import java.io.DataInput;
-import java.io.DataOutput;
-import java.io.IOException;
-import java.io.InvalidObjectException;
-import java.io.ObjectInputStream;
-import java.io.Serializable;
-import java.time.Clock;
-import java.time.DateTimeException;
-import java.time.LocalDate;
-import java.time.LocalTime;
-import java.time.Period;
-import java.time.ZoneId;
-import java.time.temporal.ChronoField;
-import java.time.temporal.TemporalAccessor;
-import java.time.temporal.TemporalAdjuster;
-import java.time.temporal.TemporalAmount;
-import java.time.temporal.TemporalField;
-import java.time.temporal.TemporalQuery;
-import java.time.temporal.TemporalUnit;
-import java.time.temporal.UnsupportedTemporalTypeException;
-import java.time.temporal.ValueRange;
-import java.util.Calendar;
-import java.util.Objects;
+import j86.java.io.DataInput;
+import j86.java.io.DataOutput;
+import j86.java.io.IOException;
+import j86.java.io.InvalidObjectException;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.Serializable;
+import j86.java.time.Clock;
+import j86.java.time.DateTimeException;
+import j86.java.time.LocalDate;
+import j86.java.time.LocalTime;
+import j86.java.time.Period;
+import j86.java.time.ZoneId;
+import j86.j86.java.time.temporal.ChronoField;
+import j86.j86.java.time.temporal.TemporalAccessor;
+import j86.j86.java.time.temporal.TemporalAdjuster;
+import j86.j86.java.time.temporal.TemporalAmount;
+import j86.j86.java.time.temporal.TemporalField;
+import j86.j86.java.time.temporal.TemporalQuery;
+import j86.j86.java.time.temporal.TemporalUnit;
+import j86.j86.java.time.temporal.UnsupportedTemporalTypeException;
+import j86.j86.java.time.temporal.ValueRange;
+import j86.java.util.Calendar;
+import j86.java.util.Objects;
 
-import sun.util.calendar.CalendarDate;
-import sun.util.calendar.LocalGregorianCalendar;
+import j86.j86.sun.util.calendar.CalendarDate;
+import j86.j86.sun.util.calendar.LocalGregorianCalendar;
 
 /**
  * A date in the Japanese Imperial calendar system.
@@ -112,7 +112,7 @@ import sun.util.calendar.LocalGregorianCalendar;
  * {@code JapaneseChronology.ERA_HEISEI}.<br>
  *
  * <p>
- * This is a <a href="{@docRoot}/java/lang/doc-files/ValueBased.html">value-based</a>
+ * This is a <a href="{@docRoot}/j86.java.lang/doc-files/ValueBased.html">value-based</a>
  * class; use of identity-sensitive operations (including reference equality
  * ({@code ==}), identity hash code, or synchronization) on instances of
  * {@code JapaneseDate} may have unpredictable results and should be avoided.
@@ -499,7 +499,7 @@ public final class JapaneseDate
      */
     private static LocalGregorianCalendar.Date toPrivateJapaneseDate(LocalDate isoDate) {
         LocalGregorianCalendar.Date jdate = JapaneseChronology.JCAL.newCalendarDate(null);
-        sun.util.calendar.Era sunEra = JapaneseEra.privateEraFrom(isoDate);
+        j86.j86.sun.util.calendar.Era sunEra = JapaneseEra.privateEraFrom(isoDate);
         int year = isoDate.getYear();
         if (sunEra != null) {
             year -= sunEra.getSinceDate().getYear() - 1;
@@ -724,7 +724,7 @@ public final class JapaneseDate
 
     /**
      * Writes the object using a
-     * <a href="../../../serialized-form.html#java.time.chrono.Ser">dedicated serialized form</a>.
+     * <a href="../../../serialized-form.html#j86.j86.java.time.chrono.Ser">dedicated serialized form</a>.
      * @serialData
      * <pre>
      *  out.writeByte(4);                 // identifies a JapaneseDate

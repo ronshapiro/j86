@@ -23,22 +23,22 @@
  * questions.
  */
 
-package com.sun.media.sound;
+package j86.com.sun.media.sound;
 
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Properties;
+import j86.java.util.Collections;
+import j86.java.util.HashMap;
+import j86.java.util.List;
+import j86.java.util.Map;
+import j86.java.util.Properties;
 
-import javax.sound.midi.Receiver;
-import javax.sound.midi.Sequencer;
-import javax.sound.midi.Synthesizer;
-import javax.sound.midi.Transmitter;
-import javax.sound.sampled.Clip;
-import javax.sound.sampled.Port;
-import javax.sound.sampled.SourceDataLine;
-import javax.sound.sampled.TargetDataLine;
+import j86.javax.sound.midi.Receiver;
+import j86.javax.sound.midi.Sequencer;
+import j86.javax.sound.midi.Synthesizer;
+import j86.javax.sound.midi.Transmitter;
+import j86.javax.sound.sampled.Clip;
+import j86.javax.sound.sampled.Port;
+import j86.javax.sound.sampled.SourceDataLine;
+import j86.javax.sound.sampled.TargetDataLine;
 
 
 /**
@@ -46,8 +46,8 @@ import javax.sound.sampled.TargetDataLine;
  * to discover a list of service providers installed
  * in the system.
  *
- * This class is public because it is called from javax.sound.midi.MidiSystem
- * and javax.sound.sampled.AudioSystem. The alternative would be to make
+ * This class is public because it is called from j86.javax.sound.midi.MidiSystem
+ * and j86.javax.sound.sampled.AudioSystem. The alternative would be to make
  * JSSecurityManager public, which is considered worse.
  *
  * @author Matthias Pfisterer

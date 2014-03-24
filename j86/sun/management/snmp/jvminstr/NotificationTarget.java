@@ -22,9 +22,9 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.management.snmp.jvminstr;
+package j86.j86.j86.sun.management.snmp.jvminstr;
 
-import java.net.InetAddress;
+import j86.java.net.InetAddress;
 
 /**
  * Target notification.

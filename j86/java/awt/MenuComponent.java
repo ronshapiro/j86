@@ -22,18 +22,18 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.awt;
+package j86.java.awt;
 
-import java.awt.peer.MenuComponentPeer;
-import java.awt.event.ActionEvent;
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import sun.awt.AppContext;
-import sun.awt.AWTAccessor;
-import javax.accessibility.*;
+import j86.j86.java.awt.peer.MenuComponentPeer;
+import j86.j86.java.awt.event.ActionEvent;
+import j86.java.io.IOException;
+import j86.java.io.ObjectInputStream;
+import j86.sun.awt.AppContext;
+import j86.sun.awt.AWTAccessor;
+import j86.javax.accessibility.*;
 
-import java.security.AccessControlContext;
-import java.security.AccessController;
+import j86.java.security.AccessControlContext;
+import j86.java.security.AccessController;
 
 /**
  * The abstract class <code>MenuComponent</code> is the superclass
@@ -47,7 +47,7 @@ import java.security.AccessController;
  * @author      Arthur van Hoff
  * @since       JDK1.0
  */
-public abstract class MenuComponent implements java.io.Serializable {
+public abstract class MenuComponent implements j86.java.io.Serializable {
 
     static {
         /* ensure that the necessary native libraries are loaded */
@@ -153,7 +153,7 @@ public abstract class MenuComponent implements java.io.Serializable {
      * @exception HeadlessException if
      *    <code>GraphicsEnvironment.isHeadless</code>
      *    returns <code>true</code>
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      */
     public MenuComponent() throws HeadlessException {
         GraphicsEnvironment.checkHeadless();
@@ -174,7 +174,7 @@ public abstract class MenuComponent implements java.io.Serializable {
     /**
      * Gets the name of the menu component.
      * @return        the name of the menu component
-     * @see           java.awt.MenuComponent#setName(java.lang.String)
+     * @see           j86.java.awt.MenuComponent#setName(j86.java.lang.String)
      * @since         JDK1.1
      */
     public String getName() {
@@ -190,7 +190,7 @@ public abstract class MenuComponent implements java.io.Serializable {
     /**
      * Sets the name of the component to the specified string.
      * @param         name    the name of the menu component
-     * @see           java.awt.MenuComponent#getName
+     * @see           j86.java.awt.MenuComponent#getName
      * @since         JDK1.1
      */
     public void setName(String name) {
@@ -230,7 +230,7 @@ public abstract class MenuComponent implements java.io.Serializable {
      * Gets the font used for this menu component.
      * @return   the font used in this menu component, if there is one;
      *                  <code>null</code> otherwise
-     * @see     java.awt.MenuComponent#setFont
+     * @see     j86.java.awt.MenuComponent#setFont
      */
     public Font getFont() {
         Font font = this.font;
@@ -285,7 +285,7 @@ public abstract class MenuComponent implements java.io.Serializable {
      * @param     f   the font to be set
      * @see       #getFont
      * @see       Font#getAttributes
-     * @see       java.awt.font.TextAttribute
+     * @see       j86.j86.java.awt.font.TextAttribute
      */
     public void setFont(Font f) {
         font = f;
@@ -418,7 +418,7 @@ public abstract class MenuComponent implements java.io.Serializable {
      *   <code>GraphicsEnvironment.isHeadless</code> returns
      *   <code>true</code>
      * @serial
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      */
     private void readObject(ObjectInputStream s)
         throws ClassNotFoundException, IOException, HeadlessException
@@ -476,7 +476,7 @@ public abstract class MenuComponent implements java.io.Serializable {
      */
     protected abstract class AccessibleAWTMenuComponent
         extends AccessibleContext
-        implements java.io.Serializable, AccessibleComponent,
+        implements j86.java.io.Serializable, AccessibleComponent,
                    AccessibleSelection
     {
         /*
@@ -508,7 +508,7 @@ public abstract class MenuComponent implements java.io.Serializable {
 
         /**
          * Gets the accessible name of this object.  This should almost never
-         * return <code>java.awt.MenuComponent.getName</code>, as that
+         * return <code>j86.java.awt.MenuComponent.getName</code>, as that
          * generally isn't a localized name, and doesn't have meaning for the
          * user.  If the object is fundamentally a text object (e.g. a menu item), the
          * accessible name should be the text of the object (e.g. "save").
@@ -622,12 +622,12 @@ public abstract class MenuComponent implements java.io.Serializable {
          *
          * @return the locale of this object
          */
-        public java.util.Locale getLocale() {
+        public j86.java.util.Locale getLocale() {
             MenuContainer parent = MenuComponent.this.getParent();
             if (parent instanceof Component)
                 return ((Component)parent).getLocale();
             else
-                return java.util.Locale.getDefault();
+                return j86.java.util.Locale.getDefault();
         }
 
         /**
@@ -921,7 +921,7 @@ public abstract class MenuComponent implements java.io.Serializable {
          *
          * @param l the focus listener
          */
-        public void addFocusListener(java.awt.event.FocusListener l) {
+        public void addFocusListener(j86.j86.java.awt.event.FocusListener l) {
             // Not supported for MenuComponents
         }
 
@@ -931,7 +931,7 @@ public abstract class MenuComponent implements java.io.Serializable {
          *
          * @param l the focus listener
          */
-        public void removeFocusListener(java.awt.event.FocusListener l) {
+        public void removeFocusListener(j86.j86.java.awt.event.FocusListener l) {
             // Not supported for MenuComponents
         }
 

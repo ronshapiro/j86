@@ -33,10 +33,10 @@
 /*
  * $Id: XMLObject.java,v 1.5 2005/05/10 16:03:48 mullan Exp $
  */
-package javax.xml.crypto.dsig;
+package j86.j86.javax.xml.crypto.dsig;
 
-import java.util.List;
-import javax.xml.crypto.XMLStructure;
+import j86.java.util.List;
+import j86.javax.xml.crypto.XMLStructure;
 
 /**
  * A representation of the XML <code>Object</code> element as defined in
@@ -70,7 +70,7 @@ import javax.xml.crypto.XMLStructure;
  *
  * <p>Note that this class is named <code>XMLObject</code> rather than
  * <code>Object</code> to avoid naming clashes with the existing
- * {@link java.lang.Object java.lang.Object} class.
+ * {@link j86.java.lang.Object java.lang.Object} class.
  *
  * @author Sean Mullan
  * @author JSR 105 Expert Group
@@ -88,14 +88,14 @@ public interface XMLObject extends XMLStructure {
     final static String TYPE = "http://www.w3.org/2000/09/xmldsig#Object";
 
     /**
-     * Returns an {@link java.util.Collections#unmodifiableList unmodifiable
+     * Returns an {@link j86.java.util.Collections#unmodifiableList unmodifiable
      * list} of {@link XMLStructure}s contained in this <code>XMLObject</code>,
      * which represent elements from any namespace.
      *
      *<p>If there is a public subclass representing the type of
      * <code>XMLStructure</code>, it is returned as an instance of that class
      * (ex: a <code>SignatureProperties</code> element would be returned
-     * as an instance of {@link javax.xml.crypto.dsig.SignatureProperties}).
+     * as an instance of {@link j86.j86.javax.xml.crypto.dsig.SignatureProperties}).
      *
      * @return an unmodifiable list of <code>XMLStructure</code>s (may be empty
      *    but never <code>null</code>)

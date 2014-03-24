@@ -33,9 +33,9 @@
  ******************************************************************
  ******************************************************************/
 
-package java.awt.image;
+package j86.j86.j86.java.awt.image;
 
-import static sun.java2d.StateTrackable.State.*;
+import static j86.sun.java2d.StateTrackable.State.*;
 
 /**
  * This class extends <CODE>DataBuffer</CODE> and stores data internally as bytes.

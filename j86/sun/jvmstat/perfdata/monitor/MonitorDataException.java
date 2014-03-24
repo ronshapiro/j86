@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.jvmstat.perfdata.monitor;
+package j86.sun.jvmstat.perfdata.monitor;
 
-import sun.jvmstat.monitor.MonitorException;
+import j86.sun.jvmstat.monitor.MonitorException;
 
 /**
  * Exception indicating that improperly formatted data was encountered
@@ -47,8 +47,8 @@ public class MonitorDataException extends MonitorException {
     /**
      * Constructs an <code>MonitorDataException</code> with the specified
      * detail message. The error message string <code>s</code> can later be
-     * retrieved by the <code>{@link java.lang.Throwable#getMessage}</code>
-     * method of class <code>java.lang.Throwable</code>.
+     * retrieved by the <code>{@link j86.java.lang.Throwable#getMessage}</code>
+     * method of class <code>j86.java.lang.Throwable</code>.
      *
      * @param s the detail message.
      */

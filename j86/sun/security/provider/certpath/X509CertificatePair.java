@@ -22,23 +22,23 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.security.provider.certpath;
+package j86.j86.sun.security.provider.certpath;
 
-import java.io.IOException;
-import java.security.GeneralSecurityException;
-import java.security.PublicKey;
-import java.security.cert.CertificateEncodingException;
-import java.security.cert.CertificateException;
-import java.security.cert.X509Certificate;
-import java.security.interfaces.DSAPublicKey;
+import j86.java.io.IOException;
+import j86.java.security.GeneralSecurityException;
+import j86.java.security.PublicKey;
+import j86.j86.java.security.cert.CertificateEncodingException;
+import j86.j86.java.security.cert.CertificateException;
+import j86.j86.java.security.cert.X509Certificate;
+import j86.j86.java.security.interfaces.DSAPublicKey;
 
-import javax.security.auth.x500.X500Principal;
+import j86.j86.javax.security.auth.x500.X500Principal;
 
-import sun.security.util.DerOutputStream;
-import sun.security.util.DerValue;
-import sun.security.util.Cache;
-import sun.security.x509.X509CertImpl;
-import sun.security.provider.X509Factory;
+import j86.sun.security.util.DerOutputStream;
+import j86.sun.security.util.DerValue;
+import j86.sun.security.util.Cache;
+import j86.sun.security.x509.X509CertImpl;
+import j86.sun.security.provider.X509Factory;
 
 /**
  * This class represents an X.509 Certificate Pair object, which is primarily

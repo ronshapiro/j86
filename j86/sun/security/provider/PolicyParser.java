@@ -23,21 +23,21 @@
  * questions.
  */
 
-package sun.security.provider;
+package j86.sun.security.provider;
 
-import java.io.*;
-import java.lang.RuntimePermission;
-import java.net.SocketPermission;
-import java.net.URL;
-import java.security.GeneralSecurityException;
-import java.security.Principal;
-import java.text.MessageFormat;
-import java.util.*;
-import javax.security.auth.x500.X500Principal;
+import j86.java.io.*;
+import j86.java.lang.RuntimePermission;
+import j86.java.net.SocketPermission;
+import j86.java.net.URL;
+import j86.java.security.GeneralSecurityException;
+import j86.java.security.Principal;
+import j86.java.text.MessageFormat;
+import j86.java.util.*;
+import j86.j86.javax.security.auth.x500.X500Principal;
 
-import sun.security.util.Debug;
-import sun.security.util.PropertyExpander;
-import sun.security.util.ResourcesMgr;
+import j86.sun.security.util.Debug;
+import j86.sun.security.util.PropertyExpander;
+import j86.sun.security.util.ResourcesMgr;
 
 /**
  * The policy for a Java runtime (specifying
@@ -334,7 +334,7 @@ public class PolicyParser {
         Enumeration<GrantEntry> enum_ = grantElements();
 
         out.println("/* AUTOMATICALLY GENERATED ON "+
-                    (new java.util.Date()) + "*/");
+                    (new j86.java.util.Date()) + "*/");
         out.println("/* DO NOT EDIT */");
         out.println();
 
@@ -515,7 +515,7 @@ public class PolicyParser {
                     principalName = expand(principalName);
 
                     if (principalClass.equals
-                                ("javax.security.auth.x500.X500Principal") &&
+                                ("j86.j86.javax.security.auth.x500.X500Principal") &&
                         !principalName.equals(PrincipalEntry.WILDCARD_NAME)) {
 
                         // 4702543:  X500 names with an EmailAddress
@@ -731,7 +731,7 @@ public class PolicyParser {
             dirs = new String[count];
             for (int i = 0; i < count; i++) {
                 File file = new File(st.nextToken());
-                dirs[i] = sun.net.www.ParseUtil.encodePath
+                dirs[i] = j86.j86.sun.net.www.ParseUtil.encodePath
                         (file.getAbsolutePath());
 
                 if (!dirs[i].startsWith("/")) {
@@ -919,14 +919,14 @@ public class PolicyParser {
      * For example, the entry
      * <pre>
      *      grant signedBy "Duke" {
-     *          permission java.io.FilePermission "/tmp", "read,write";
+     *          permission j86.java.io.FilePermission "/tmp", "read,write";
      *      };
      *
      * </pre>
      * is represented internally
      * <pre>
      *
-     * pe = new PermissionEntry("java.io.FilePermission",
+     * pe = new PermissionEntry("j86.java.io.FilePermission",
      *                           "/tmp", "read,write");
      *
      * ge = new GrantEntry("Duke", null);
@@ -1169,12 +1169,12 @@ public class PolicyParser {
      * <p>
      * For example, the entry
      * <pre>
-     *          permission java.io.FilePermission "/tmp", "read,write";
+     *          permission j86.java.io.FilePermission "/tmp", "read,write";
      * </pre>
      * is represented internally
      * <pre>
      *
-     * pe = new PermissionEntry("java.io.FilePermission",
+     * pe = new PermissionEntry("j86.java.io.FilePermission",
      *                           "/tmp", "read,write");
      * </pre>
      *

@@ -23,14 +23,14 @@
  * questions.
  */
 
-package javax.management;
+package j86.javax.management;
 
-import com.sun.jmx.mbeanserver.JmxMBeanServer;
+import j86.com.sun.jmx.mbeanserver.JmxMBeanServer;
 
 /**
  * <p>This class represents a builder that creates a default
- * {@link javax.management.MBeanServer} implementation.
- * The JMX {@link javax.management.MBeanServerFactory} allows
+ * {@link j86.javax.management.MBeanServer} implementation.
+ * The JMX {@link j86.javax.management.MBeanServerFactory} allows
  * applications to provide their custom MBeanServer
  * implementation by providing a subclass of this class.</p>
  *
@@ -49,7 +49,7 @@ public class MBeanServerBuilder {
     /**
      * This method creates a new MBeanServerDelegate for a new MBeanServer.
      * When creating a new MBeanServer the
-     * {@link javax.management.MBeanServerFactory} first calls this method
+     * {@link j86.javax.management.MBeanServerFactory} first calls this method
      * in order to create a new MBeanServerDelegate.
      * <br>Then it calls
      * <code>newMBeanServer(defaultDomain,outer,delegate)</code>
@@ -60,7 +60,7 @@ public class MBeanServerBuilder {
      * be, for instance, a new object wrapping the previously
      * returned object.
      *
-     * @return A new {@link javax.management.MBeanServerDelegate}.
+     * @return A new {@link j86.javax.management.MBeanServerDelegate}.
      **/
     public MBeanServerDelegate newMBeanServerDelegate() {
         return JmxMBeanServer.newMBeanServerDelegate();
@@ -69,9 +69,9 @@ public class MBeanServerBuilder {
     /**
      * This method creates a new MBeanServer implementation object.
      * When creating a new MBeanServer the
-     * {@link javax.management.MBeanServerFactory} first calls
+     * {@link j86.javax.management.MBeanServerFactory} first calls
      * <code>newMBeanServerDelegate()</code> in order to obtain a new
-     * {@link javax.management.MBeanServerDelegate} for the new
+     * {@link j86.javax.management.MBeanServerDelegate} for the new
      * MBeanServer. Then it calls
      * <code>newMBeanServer(defaultDomain,outer,delegate)</code>
      * passing the <var>delegate</var> that should be used by the MBeanServer
@@ -81,11 +81,11 @@ public class MBeanServerBuilder {
      * be, for instance, a new object wrapping the previously
      * returned delegate.
      * <p>The <var>outer</var> parameter is a pointer to the MBeanServer that
-     * should be passed to the {@link javax.management.MBeanRegistration}
+     * should be passed to the {@link j86.javax.management.MBeanRegistration}
      * interface when registering MBeans inside the MBeanServer.
      * If <var>outer</var> is <code>null</code>, then the MBeanServer
      * implementation must use its own <code>this</code> reference when
-     * invoking the {@link javax.management.MBeanRegistration} interface.
+     * invoking the {@link j86.javax.management.MBeanRegistration} interface.
      * <p>This makes it possible for a MBeanServer implementation to wrap
      * another MBeanServer implementation, in order to implement, e.g,
      * security checks, or to prevent access to the actual MBeanServer
@@ -94,7 +94,7 @@ public class MBeanServerBuilder {
      * @param defaultDomain Default domain of the new MBeanServer.
      * @param outer A pointer to the MBeanServer object that must be
      *        passed to the MBeans when invoking their
-     *        {@link javax.management.MBeanRegistration} interface.
+     *        {@link j86.javax.management.MBeanRegistration} interface.
      * @param delegate A pointer to the MBeanServerDelegate associated
      *        with the new MBeanServer. The new MBeanServer must register
      *        this MBean in its MBean repository.
@@ -105,7 +105,7 @@ public class MBeanServerBuilder {
                                       MBeanServer         outer,
                                       MBeanServerDelegate delegate) {
         // By default, MBeanServerInterceptors are disabled.
-        // Use com.sun.jmx.mbeanserver.MBeanServerBuilder to obtain
+        // Use j86.com.sun.jmx.mbeanserver.MBeanServerBuilder to obtain
         // MBeanServers on which MBeanServerInterceptors are enabled.
         return JmxMBeanServer.newMBeanServer(defaultDomain,outer,delegate,
                                              false);

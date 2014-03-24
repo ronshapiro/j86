@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.management;
+package j86.sun.management;
 
 /**
  * This management interface does not contain any method.

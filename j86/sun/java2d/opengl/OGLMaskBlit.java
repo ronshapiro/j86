@@ -23,18 +23,18 @@
  * questions.
  */
 
-package sun.java2d.opengl;
+package j86.j86.sun.java2d.opengl;
 
-import java.awt.Composite;
-import sun.java2d.SurfaceData;
-import sun.java2d.loops.CompositeType;
-import sun.java2d.loops.GraphicsPrimitive;
-import sun.java2d.loops.GraphicsPrimitiveMgr;
-import sun.java2d.loops.SurfaceType;
-import sun.java2d.pipe.Region;
-import sun.java2d.pipe.BufferedMaskBlit;
-import static sun.java2d.loops.CompositeType.*;
-import static sun.java2d.loops.SurfaceType.*;
+import j86.java.awt.Composite;
+import j86.sun.java2d.SurfaceData;
+import j86.j86.sun.java2d.loops.CompositeType;
+import j86.j86.sun.java2d.loops.GraphicsPrimitive;
+import j86.j86.sun.java2d.loops.GraphicsPrimitiveMgr;
+import j86.j86.sun.java2d.loops.SurfaceType;
+import j86.j86.sun.java2d.pipe.Region;
+import j86.j86.sun.java2d.pipe.BufferedMaskBlit;
+import static j86.j86.sun.java2d.loops.CompositeType.*;
+import static j86.j86.sun.java2d.loops.SurfaceType.*;
 
 class OGLMaskBlit extends BufferedMaskBlit {
 

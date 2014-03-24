@@ -23,16 +23,16 @@
  * questions.
  */
 
-package com.sun.crypto.provider;
+package j86.com.sun.crypto.provider;
 
-import java.math.BigInteger;
-import java.security.*;
-import java.security.spec.AlgorithmParameterSpec;
-import java.security.spec.InvalidParameterSpecException;
-import javax.crypto.spec.DHParameterSpec;
-import javax.crypto.spec.DHGenParameterSpec;
+import j86.java.math.BigInteger;
+import j86.java.security.*;
+import j86.j86.java.security.spec.AlgorithmParameterSpec;
+import j86.j86.java.security.spec.InvalidParameterSpecException;
+import j86.j86.javax.crypto.spec.DHParameterSpec;
+import j86.j86.javax.crypto.spec.DHGenParameterSpec;
 
-import sun.security.provider.ParameterCache;
+import j86.sun.security.provider.ParameterCache;
 
 /**
  * This class represents the key pair generator for Diffie-Hellman key pairs.
@@ -50,7 +50,7 @@ import sun.security.provider.ParameterCache;
  * @author Jan Luehe
  *
  *
- * @see java.security.KeyPairGenerator
+ * @see j86.java.security.KeyPairGenerator
  */
 public final class DHKeyPairGenerator extends KeyPairGeneratorSpi {
 

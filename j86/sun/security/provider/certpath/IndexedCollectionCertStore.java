@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.security.provider.certpath;
+package j86.j86.sun.security.provider.certpath;
 
-import java.util.*;
+import j86.java.util.*;
 
-import java.security.InvalidAlgorithmParameterException;
-import java.security.cert.*;
+import j86.java.security.InvalidAlgorithmParameterException;
+import j86.j86.java.security.cert.*;
 
-import javax.security.auth.x500.X500Principal;
+import j86.j86.javax.security.auth.x500.X500Principal;
 
 /**
  * A <code>CertStore</code> that retrieves <code>Certificates</code> and
@@ -88,7 +88,7 @@ import javax.security.auth.x500.X500Principal;
  * <code>Certificate</code>s and <code>CRL</code>s must be thread-safe is also
  * essential.
  *
- * @see java.security.cert.CertStore
+ * @see j86.j86.java.security.cert.CertStore
  * @see CollectionCertStore
  *
  * @author Andreas Sterbenz

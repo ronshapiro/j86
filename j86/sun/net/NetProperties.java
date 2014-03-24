@@ -22,12 +22,12 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.net;
+package j86.sun.net;
 
-import java.io.*;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.util.Properties;
+import j86.java.io.*;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.util.Properties;
 
 /*
  * This class allows for centralized access to Networking properties.

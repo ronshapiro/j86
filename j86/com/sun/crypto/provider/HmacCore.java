@@ -23,16 +23,16 @@
  * questions.
  */
 
-package com.sun.crypto.provider;
+package j86.com.sun.crypto.provider;
 
-import java.util.Arrays;
+import j86.java.util.Arrays;
 
-import java.nio.ByteBuffer;
+import j86.java.nio.ByteBuffer;
 
-import javax.crypto.MacSpi;
-import javax.crypto.SecretKey;
-import java.security.*;
-import java.security.spec.*;
+import j86.javax.crypto.MacSpi;
+import j86.javax.crypto.SecretKey;
+import j86.java.security.*;
+import j86.j86.java.security.spec.*;
 
 /**
  * This class constitutes the core of HMAC-<MD> algorithms, where

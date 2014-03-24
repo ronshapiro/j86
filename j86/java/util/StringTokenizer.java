@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.util;
+package j86.java.util;
 
-import java.lang.*;
+import j86.java.lang.*;
 
 /**
  * The string tokenizer class allows an application to break a
@@ -77,7 +77,7 @@ import java.lang.*;
  * <tt>StringTokenizer</tt> is a legacy class that is retained for
  * compatibility reasons although its use is discouraged in new code. It is
  * recommended that anyone seeking this functionality use the <tt>split</tt>
- * method of <tt>String</tt> or the java.util.regex package instead.
+ * method of <tt>String</tt> or the j86.j86.java.util.regex package instead.
  * <p>
  * The following example illustrates how the <tt>String.split</tt>
  * method can be used to break up a string into its basic tokens:
@@ -96,7 +96,7 @@ import java.lang.*;
  * </pre></blockquote>
  *
  * @author  unascribed
- * @see     java.io.StreamTokenizer
+ * @see     j86.java.io.StreamTokenizer
  * @since   JDK1.0
  */
 public
@@ -384,8 +384,8 @@ class StringTokenizer implements Enumeration<Object> {
      *
      * @return  <code>true</code> if there are more tokens;
      *          <code>false</code> otherwise.
-     * @see     java.util.Enumeration
-     * @see     java.util.StringTokenizer#hasMoreTokens()
+     * @see     j86.java.util.Enumeration
+     * @see     j86.java.util.StringTokenizer#hasMoreTokens()
      */
     public boolean hasMoreElements() {
         return hasMoreTokens();
@@ -400,8 +400,8 @@ class StringTokenizer implements Enumeration<Object> {
      * @return     the next token in the string.
      * @exception  NoSuchElementException  if there are no more tokens in this
      *               tokenizer's string.
-     * @see        java.util.Enumeration
-     * @see        java.util.StringTokenizer#nextToken()
+     * @see        j86.java.util.Enumeration
+     * @see        j86.java.util.StringTokenizer#nextToken()
      */
     public Object nextElement() {
         return nextToken();
@@ -414,7 +414,7 @@ class StringTokenizer implements Enumeration<Object> {
      *
      * @return  the number of tokens remaining in the string using the current
      *          delimiter set.
-     * @see     java.util.StringTokenizer#nextToken()
+     * @see     j86.java.util.StringTokenizer#nextToken()
      */
     public int countTokens() {
         int count = 0;

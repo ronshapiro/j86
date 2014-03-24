@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.rmi.server;
+package j86.j86.java.rmi.server;
 
-import java.rmi.*;
+import j86.java.rmi.*;
 
 /**
  * <code>RemoteRef</code> represents the handle for a remote object. A
@@ -34,9 +34,9 @@ import java.rmi.*;
  *
  * @author  Ann Wollrath
  * @since   JDK1.1
- * @see     java.rmi.server.RemoteStub
+ * @see     j86.j86.java.rmi.server.RemoteStub
  */
-public interface RemoteRef extends java.io.Externalizable {
+public interface RemoteRef extends j86.java.io.Externalizable {
 
     /** indicate compatibility with JDK 1.1.x version of class. */
     static final long serialVersionUID = 3632638527362204081L;
@@ -47,7 +47,7 @@ public interface RemoteRef extends java.io.Externalizable {
      * UnicastServerRef) are located in the package defined by the
      * prefix.
      */
-    final static String packagePrefix = "sun.rmi.server";
+    final static String packagePrefix = "j86.sun.rmi.server";
 
     /**
      * Invoke a method. This form of delegating method invocation
@@ -72,7 +72,7 @@ public interface RemoteRef extends java.io.Externalizable {
      * @since 1.2
      */
     Object invoke(Remote obj,
-                  java.lang.reflect.Method method,
+                  j86.j86.j86.java.lang.reflect.Method method,
                   Object[] params,
                   long opnum)
         throws Exception;
@@ -99,7 +99,7 @@ public interface RemoteRef extends java.io.Externalizable {
      * @param hash stub/skeleton interface hash
      * @return call object representing remote call
      * @throws RemoteException if failed to initiate new remote call
-     * @see #invoke(Remote,java.lang.reflect.Method,Object[],long)
+     * @see #invoke(Remote,j86.j86.j86.java.lang.reflect.Method,Object[],long)
      */
     @Deprecated
     RemoteCall newCall(RemoteObject obj, Operation[] op, int opnum, long hash)
@@ -125,7 +125,7 @@ public interface RemoteRef extends java.io.Externalizable {
      *
      * @param call object representing remote call
      * @throws Exception if any exception occurs during remote method
-     * @see #invoke(Remote,java.lang.reflect.Method,Object[],long)
+     * @see #invoke(Remote,j86.j86.j86.java.lang.reflect.Method,Object[],long)
      */
     @Deprecated
     void invoke(RemoteCall call) throws Exception;
@@ -146,7 +146,7 @@ public interface RemoteRef extends java.io.Externalizable {
      *
      * @param call object representing remote call
      * @throws RemoteException if remote error occurs during call cleanup
-     * @see #invoke(Remote,java.lang.reflect.Method,Object[],long)
+     * @see #invoke(Remote,j86.j86.j86.java.lang.reflect.Method,Object[],long)
      */
     @Deprecated
     void done(RemoteCall call) throws RemoteException;
@@ -159,7 +159,7 @@ public interface RemoteRef extends java.io.Externalizable {
      * type
      * @since JDK1.1
      */
-    String getRefClass(java.io.ObjectOutput out);
+    String getRefClass(j86.java.io.ObjectOutput out);
 
     /**
      * Returns a hashcode for a remote object.  Two remote object stubs
@@ -167,7 +167,7 @@ public interface RemoteRef extends java.io.Externalizable {
      * (in order to support remote objects as keys in hash tables).
      *
      * @return remote object hashcode
-     * @see             java.util.Hashtable
+     * @see             j86.java.util.Hashtable
      * @since JDK1.1
      */
     int remoteHashCode();
@@ -179,7 +179,7 @@ public interface RemoteRef extends java.io.Externalizable {
      * remote object is stored in a hashtable.
      * @param   obj     the Object to compare with
      * @return  true if these Objects are equal; false otherwise.
-     * @see             java.util.Hashtable
+     * @see             j86.java.util.Hashtable
      * @since JDK1.1
      */
     boolean remoteEquals(RemoteRef obj);

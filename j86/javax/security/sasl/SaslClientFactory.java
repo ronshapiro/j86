@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.security.sasl;
+package j86.javax.security.sasl;
 
-import java.util.Map;
-import javax.security.auth.callback.CallbackHandler;
+import j86.java.util.Map;
+import j86.j86.javax.security.auth.callback.CallbackHandler;
 
 /**
  * An interface for creating instances of {@code SaslClient}.

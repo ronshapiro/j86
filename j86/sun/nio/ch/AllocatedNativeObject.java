@@ -26,7 +26,7 @@
 /*
  */
 
-package sun.nio.ch;                                     // Formerly in sun.misc
+package j86.j86.j86.sun.nio.ch;                                     // Formerly in j86.sun.misc
 
 
 // ## In the fullness of time, this class will be eliminated

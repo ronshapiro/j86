@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.font;
+package j86.sun.font;
 
-import java.util.*;
+import j86.java.util.*;
 
 public interface GlyphDisposedListener {
     public void glyphDisposed(ArrayList<Long> glyphs);

@@ -22,15 +22,15 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing;
+package j86.javax.swing;
 
-import java.awt.FocusTraversalPolicy;
-import java.awt.Component;
-import java.awt.Container;
-import java.awt.Window;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.io.*;
+import j86.java.awt.FocusTraversalPolicy;
+import j86.java.awt.Component;
+import j86.java.awt.Container;
+import j86.java.awt.Window;
+import j86.java.util.HashMap;
+import j86.java.util.HashSet;
+import j86.java.io.*;
 
 
 /**

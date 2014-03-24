@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.jmx.snmp.internal;
+package j86.j86.com.sun.jmx.snmp.internal;
 
 /**
  * Cache is returned by <CODE>SnmpSecurityModel</CODE> when handling requests. The cache contants is security dependant. This interface is a marker that every cache classes must implement.

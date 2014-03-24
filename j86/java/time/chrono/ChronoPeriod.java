@@ -59,16 +59,16 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package java.time.chrono;
+package j86.j86.java.time.chrono;
 
-import java.time.DateTimeException;
-import java.time.temporal.ChronoUnit;
-import java.time.temporal.Temporal;
-import java.time.temporal.TemporalAmount;
-import java.time.temporal.TemporalUnit;
-import java.time.temporal.UnsupportedTemporalTypeException;
-import java.util.List;
-import java.util.Objects;
+import j86.java.time.DateTimeException;
+import j86.j86.java.time.temporal.ChronoUnit;
+import j86.j86.java.time.temporal.Temporal;
+import j86.j86.java.time.temporal.TemporalAmount;
+import j86.j86.java.time.temporal.TemporalUnit;
+import j86.j86.java.time.temporal.UnsupportedTemporalTypeException;
+import j86.java.util.List;
+import j86.java.util.Objects;
 
 /**
  * A date-based amount of time, such as '3 years, 4 months and 5 days' in an

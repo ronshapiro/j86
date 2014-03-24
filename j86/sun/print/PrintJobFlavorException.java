@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.print;
+package j86.sun.print;
 
-import javax.print.DocFlavor;
-import javax.print.FlavorException;
-import javax.print.PrintException;
+import j86.javax.print.DocFlavor;
+import j86.javax.print.FlavorException;
+import j86.javax.print.PrintException;
 
 
 class PrintJobFlavorException extends PrintException

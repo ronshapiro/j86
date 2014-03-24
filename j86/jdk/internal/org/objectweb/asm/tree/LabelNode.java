@@ -56,12 +56,12 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-package jdk.internal.org.objectweb.asm.tree;
+package j86.j86.jdk.internal.org.objectweb.asm.tree;
 
-import java.util.Map;
+import j86.java.util.Map;
 
-import jdk.internal.org.objectweb.asm.Label;
-import jdk.internal.org.objectweb.asm.MethodVisitor;
+import j86.jdk.internal.org.objectweb.asm.Label;
+import j86.jdk.internal.org.objectweb.asm.MethodVisitor;
 
 /**
  * An {@link AbstractInsnNode} that encapsulates a {@link Label}.

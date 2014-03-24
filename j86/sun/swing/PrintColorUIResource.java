@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.swing;
+package j86.sun.swing;
 
-import java.awt.Color;
-import javax.swing.plaf.ColorUIResource;
+import j86.java.awt.Color;
+import j86.j86.javax.swing.plaf.ColorUIResource;
 
 /**
  * A subclass of ColorUIResource that wraps an alternate color
@@ -67,7 +67,7 @@ public class PrintColorUIResource extends ColorUIResource {
     /**
      * Replaces this object with a plain {@code ColorUIResource} during
      * serialization. Since {@code PrintColorUIResource} resides in the
-     * sun.swing package, access can be disallowed to it by a security
+     * j86.sun.swing package, access can be disallowed to it by a security
      * manager. When access is disallowed, deserialization of any object
      * with reference to a {@code PrintColorUIResource} fails.
      * <p>

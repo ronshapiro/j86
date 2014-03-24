@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.jvmstat.perfdata.monitor;
+package j86.sun.jvmstat.perfdata.monitor;
 
-import sun.jvmstat.monitor.*;
-import java.util.*;
-import java.nio.*;
-import java.io.*;
-import java.net.*;
-import java.util.regex.*;
+import j86.sun.jvmstat.monitor.*;
+import j86.java.util.*;
+import j86.java.nio.*;
+import j86.java.io.*;
+import j86.java.net.*;
+import j86.j86.java.util.regex.*;
 
 /**
  * The base classes for the concrete implementations of the HotSpot
@@ -264,7 +264,7 @@ public abstract class PerfDataBufferImpl {
      * the name of each object matches the given pattern.
      *
      * @param patternString a string containing a pattern as described in
-     *                      {@link java.util.regex.Pattern}.
+     *                      {@link j86.j86.java.util.regex.Pattern}.
      * @return List<Monitor> - a List of {@link Monitor} objects that can be used to
      *                monitor the instrumentation objects whose names match
      *                the given pattern. If no instrumentation objects have`
@@ -272,7 +272,7 @@ public abstract class PerfDataBufferImpl {
      *                is returned.
      * @throws MonitorException Thrown if an error occurs while communicating
      *                          with the target Java Virtual Machine.
-     * @see java.util.regex.Pattern
+     * @see j86.j86.java.util.regex.Pattern
      */
     public List<Monitor> findByPattern(String patternString)
                 throws MonitorException, PatternSyntaxException {

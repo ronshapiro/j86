@@ -23,14 +23,14 @@
  * questions.
  */
 
-package javax.management.loading;
+package j86.j86.javax.management.loading;
 
-import static com.sun.jmx.defaults.JmxProperties.MBEANSERVER_LOGGER;
-import java.util.Iterator;
-import java.util.List;
-import java.util.logging.Level;
-import javax.management.MBeanServer;
-import javax.management.MBeanServerFactory;
+import static j86.com.sun.jmx.defaults.JmxProperties.MBEANSERVER_LOGGER;
+import j86.java.util.Iterator;
+import j86.java.util.List;
+import j86.j86.java.util.logging.Level;
+import j86.javax.management.MBeanServer;
+import j86.javax.management.MBeanServerFactory;
 
 /**
  * <p>Keeps the list of Class Loaders registered in the MBean Server.
@@ -47,7 +47,7 @@ import javax.management.MBeanServerFactory;
  * <code>DefaultLoaderRepository</code> be rewritten.</p>
  *
  * @deprecated Use
- * {@link javax.management.MBeanServer#getClassLoaderRepository()}}
+ * {@link j86.javax.management.MBeanServer#getClassLoaderRepository()}}
  * instead.
  *
  * @since 1.5

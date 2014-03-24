@@ -23,15 +23,15 @@
  * questions.
  */
 
-package javax.management.loading;
+package j86.j86.javax.management.loading;
 
-import java.net.URL;
-import java.io.InputStream;
-import java.io.IOException;
-import java.util.Set;
-import java.util.Enumeration;
+import j86.java.net.URL;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
+import j86.java.util.Set;
+import j86.java.util.Enumeration;
 
-import javax.management.*;
+import j86.javax.management.*;
 
 
 

@@ -23,14 +23,14 @@
  * questions.
  */
 
-package javax.management;
+package j86.javax.management;
 
-import java.lang.reflect.Method;
-import java.security.AccessController;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.security.AccessController;
 
-import com.sun.jmx.mbeanserver.GetPropertyAction;
-import com.sun.jmx.mbeanserver.Introspector;
-import java.util.Objects;
+import j86.com.sun.jmx.mbeanserver.GetPropertyAction;
+import j86.com.sun.jmx.mbeanserver.Introspector;
+import j86.java.util.Objects;
 
 
 /**
@@ -103,9 +103,9 @@ public class MBeanAttributeInfo extends MBeanFeatureInfo implements Cloneable {
      *
      * @throws IllegalArgumentException if {@code isIs} is true but
      * {@code isReadable} is not, or if {@code isIs} is true and
-     * {@code type} is not {@code boolean} or {@code java.lang.Boolean}.
+     * {@code type} is not {@code boolean} or {@code j86.java.lang.Boolean}.
      * (New code should always use {@code boolean} rather than
-     * {@code java.lang.Boolean}.)
+     * {@code j86.java.lang.Boolean}.)
      */
     public MBeanAttributeInfo(String name,
                               String type,
@@ -131,9 +131,9 @@ public class MBeanAttributeInfo extends MBeanFeatureInfo implements Cloneable {
      *
      * @throws IllegalArgumentException if {@code isIs} is true but
      * {@code isReadable} is not, or if {@code isIs} is true and
-     * {@code type} is not {@code boolean} or {@code java.lang.Boolean}.
+     * {@code type} is not {@code boolean} or {@code j86.java.lang.Boolean}.
      * (New code should always use {@code boolean} rather than
-     * {@code java.lang.Boolean}.)
+     * {@code j86.java.lang.Boolean}.)
      *
      * @since 1.6
      */
@@ -153,7 +153,7 @@ public class MBeanAttributeInfo extends MBeanFeatureInfo implements Cloneable {
             throw new IllegalArgumentException("Cannot have an \"is\" getter " +
                                                "for a non-readable attribute");
         }
-        if (isIs && !type.equals("java.lang.Boolean") &&
+        if (isIs && !type.equals("j86.java.lang.Boolean") &&
                 !type.equals("boolean")) {
             throw new IllegalArgumentException("Cannot have an \"is\" getter " +
                                                "for a non-boolean attribute");

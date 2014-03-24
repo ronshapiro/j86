@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.naming.directory;
+package j86.j86.javax.naming.directory;
 
-import javax.naming.NamingException;
+import j86.javax.naming.NamingException;
 
 /**
   * This exception is thrown when an attempt is
@@ -45,7 +45,7 @@ public class InvalidAttributeIdentifierException extends NamingException {
      * Constructs a new instance of InvalidAttributeIdentifierException using the
      * explanation supplied. All other fields set to null.
      * @param   explanation     Possibly null string containing additional detail about this exception.
-     * @see java.lang.Throwable#getMessage
+     * @see j86.java.lang.Throwable#getMessage
      */
     public InvalidAttributeIdentifierException(String explanation) {
         super(explanation);

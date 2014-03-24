@@ -33,7 +33,7 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package java.util.concurrent;
+package j86.j86.java.util.concurrent;
 
 /**
  * An {@link ExecutorService} that can schedule commands to run after a given
@@ -54,7 +54,7 @@ package java.util.concurrent;
  * <p>All {@code schedule} methods accept <em>relative</em> delays and
  * periods as arguments, not absolute times or dates. It is a simple
  * matter to transform an absolute time represented as a {@link
- * java.util.Date} to the required form. For example, to schedule at
+ * j86.java.util.Date} to the required form. For example, to schedule at
  * a certain future {@code date}, you can use: {@code schedule(task,
  * date.getTime() - System.currentTimeMillis(),
  * TimeUnit.MILLISECONDS)}. Beware however that expiration of a
@@ -71,7 +71,7 @@ package java.util.concurrent;
  * to beep every ten seconds for an hour:
  *
  *  <pre> {@code
- * import static java.util.concurrent.TimeUnit.*;
+ * import static j86.j86.java.util.concurrent.TimeUnit.*;
  * class BeeperControl {
  *   private final ScheduledExecutorService scheduler =
  *     Executors.newScheduledThreadPool(1);

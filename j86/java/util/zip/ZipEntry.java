@@ -23,14 +23,14 @@
  * questions.
  */
 
-package java.util.zip;
+package j86.j86.java.util.zip;
 
-import static java.util.zip.ZipUtils.*;
-import java.nio.file.attribute.FileTime;
-import java.util.Objects;
-import java.util.concurrent.TimeUnit;
+import static j86.j86.java.util.zip.ZipUtils.*;
+import j86.j86.j86.java.nio.file.attribute.FileTime;
+import j86.java.util.Objects;
+import j86.j86.java.util.concurrent.TimeUnit;
 
-import static java.util.zip.ZipConstants64.*;
+import static j86.j86.java.util.zip.ZipConstants64.*;
 
 /**
  * This class is used to represent a ZIP file entry.
@@ -126,7 +126,7 @@ class ZipEntry implements ZipConstants, Cloneable {
      * output stream the last modification time set by this method will
      * be stored into the {@code date and time fields} of the zip file
      * entry and encoded in standard {@code MS-DOS date and time format}.
-     * The {@link java.util.TimeZone#getDefault() default TimeZone} is
+     * The {@link j86.java.util.TimeZone#getDefault() default TimeZone} is
      * used to convert the epoch time to the MS-DOS data and time.
      *
      * @param  time
@@ -147,7 +147,7 @@ class ZipEntry implements ZipConstants, Cloneable {
      * <p> If the entry is read from a ZIP file or ZIP file formatted
      * input stream, this is the last modification time from the {@code
      * date and time fields} of the zip file entry. The
-     * {@link java.util.TimeZone#getDefault() default TimeZone} is used
+     * {@link j86.java.util.TimeZone#getDefault() default TimeZone} is used
      * to convert the standard MS-DOS formatted date and time to the
      * epoch time.
      *
@@ -194,7 +194,7 @@ class ZipEntry implements ZipConstants, Cloneable {
      * file entry's {@code optional extra data} if the extended timestamp
      * fields are present. Otherwise the last modification time is read
      * from the entry's {@code date and time fields}, the {@link
-     * java.util.TimeZone#getDefault() default TimeZone} is used to convert
+     * j86.java.util.TimeZone#getDefault() default TimeZone} is used to convert
      * the standard MS-DOS formatted date and time to the epoch time.
      *
      * @return The last modification time of the entry, null if not specified

@@ -23,12 +23,12 @@
  * questions.
  */
 
-package java.security.cert;
+package j86.j86.java.security.cert;
 
-import java.io.InvalidObjectException;
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.security.GeneralSecurityException;
+import j86.java.io.InvalidObjectException;
+import j86.java.io.IOException;
+import j86.java.io.ObjectInputStream;
+import j86.java.security.GeneralSecurityException;
 
 /**
  * An exception indicating one of a variety of problems encountered when
@@ -248,7 +248,7 @@ public class CertPathValidatorException extends GeneralSecurityException {
      *
      * @since 1.7
      */
-    public static interface Reason extends java.io.Serializable { }
+    public static interface Reason extends j86.java.io.Serializable { }
 
 
     /**

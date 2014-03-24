@@ -22,17 +22,17 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.print.attribute.standard;
+package j86.j86.j86.javax.print.attribute.standard;
 
-import java.util.AbstractSet;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.NoSuchElementException;
-import java.util.HashMap;
-import java.util.Set;
+import j86.java.util.AbstractSet;
+import j86.java.util.Iterator;
+import j86.java.util.Map;
+import j86.java.util.NoSuchElementException;
+import j86.java.util.HashMap;
+import j86.java.util.Set;
 
-import javax.print.attribute.Attribute;
-import javax.print.attribute.PrintServiceAttribute;
+import j86.j86.javax.print.attribute.Attribute;
+import j86.j86.javax.print.attribute.PrintServiceAttribute;
 
 /**
  * Class PrinterStateReasons is a printing attribute class, a set of
@@ -56,7 +56,7 @@ import javax.print.attribute.PrintServiceAttribute;
  * {@link PrinterState PrinterState} also changed.
  * <P>
  * Class PrinterStateReasons inherits its implementation from class {@link
- * java.util.HashMap java.util.HashMap}. Each entry in the map consists of a
+ * j86.java.util.HashMap java.util.HashMap}. Each entry in the map consists of a
  * {@link PrinterStateReason PrinterStateReason} object (key) mapping to a
  * {@link Severity Severity} object (value):
  * <P>
@@ -64,11 +64,11 @@ import javax.print.attribute.PrintServiceAttribute;
  * PrinterStateReasons is designed to be mutable; you can add {@link
  * PrinterStateReason PrinterStateReason} objects to an existing
  * PrinterStateReasons object and remove them again. However, like class
- *  {@link java.util.HashMap java.util.HashMap}, class PrinterStateReasons is
+ *  {@link j86.java.util.HashMap java.util.HashMap}, class PrinterStateReasons is
  * not multiple thread safe. If a PrinterStateReasons object will be used by
  * multiple threads, be sure to synchronize its operations (e.g., using a
- * synchronized map view obtained from class {@link java.util.Collections
- * java.util.Collections}).
+ * synchronized map view obtained from class {@link j86.java.util.Collections
+ * j86.java.util.Collections}).
  * <P>
  * <B>IPP Compatibility:</B> The string values returned by each individual
  * {@link PrinterStateReason PrinterStateReason} object's and the associated
@@ -128,7 +128,7 @@ public final class PrinterStateReasons
      * {@link PrinterStateReason PrinterStateReason}-to-{@link Severity
      * Severity} mappings as the given map. The underlying hash map's initial
      * capacity and load factor are as specified in the superclass constructor
-     * {@link java.util.HashMap#HashMap(java.util.Map)
+     * {@link j86.java.util.HashMap#HashMap(java.util.Map)
      * HashMap(Map)}.
      *
      * @param  map  Map to copy.
@@ -191,7 +191,7 @@ public final class PrinterStateReasons
      * category is class PrinterStateReasons itself.
      *
      * @return  Printing attribute class (category), an instance of class
-     *          {@link java.lang.Class java.lang.Class}.
+     *          {@link j86.java.lang.Class java.lang.Class}.
      */
     public final Class<? extends Attribute> getCategory() {
         return PrinterStateReasons.class;

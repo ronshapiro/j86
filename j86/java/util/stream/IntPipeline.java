@@ -22,26 +22,26 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.util.stream;
+package j86.j86.java.util.stream;
 
-import java.util.IntSummaryStatistics;
-import java.util.Objects;
-import java.util.OptionalDouble;
-import java.util.OptionalInt;
-import java.util.PrimitiveIterator;
-import java.util.Spliterator;
-import java.util.Spliterators;
-import java.util.function.BiConsumer;
-import java.util.function.BinaryOperator;
-import java.util.function.IntBinaryOperator;
-import java.util.function.IntConsumer;
-import java.util.function.IntFunction;
-import java.util.function.IntPredicate;
-import java.util.function.IntToDoubleFunction;
-import java.util.function.IntToLongFunction;
-import java.util.function.IntUnaryOperator;
-import java.util.function.ObjIntConsumer;
-import java.util.function.Supplier;
+import j86.java.util.IntSummaryStatistics;
+import j86.java.util.Objects;
+import j86.java.util.OptionalDouble;
+import j86.java.util.OptionalInt;
+import j86.java.util.PrimitiveIterator;
+import j86.java.util.Spliterator;
+import j86.java.util.Spliterators;
+import j86.j86.java.util.function.BiConsumer;
+import j86.j86.java.util.function.BinaryOperator;
+import j86.j86.java.util.function.IntBinaryOperator;
+import j86.j86.java.util.function.IntConsumer;
+import j86.j86.java.util.function.IntFunction;
+import j86.j86.java.util.function.IntPredicate;
+import j86.j86.java.util.function.IntToDoubleFunction;
+import j86.j86.java.util.function.IntToLongFunction;
+import j86.j86.java.util.function.IntUnaryOperator;
+import j86.j86.java.util.function.ObjIntConsumer;
+import j86.j86.java.util.function.Supplier;
 
 /**
  * Abstract base class for an intermediate pipeline stage or pipeline source

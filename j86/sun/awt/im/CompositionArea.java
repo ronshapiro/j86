@@ -23,30 +23,30 @@
  * questions.
  */
 
-package sun.awt.im;
+package j86.j86.sun.awt.im;
 
-import java.awt.AWTEvent;
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.FontMetrics;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.Point;
-import java.awt.Rectangle;
-import java.awt.Toolkit;
-import java.awt.event.InputMethodEvent;
-import java.awt.event.InputMethodListener;
-import java.awt.event.WindowEvent;
-import java.awt.event.WindowAdapter;
-import java.awt.font.FontRenderContext;
-import java.awt.font.TextHitInfo;
-import java.awt.font.TextLayout;
-import java.awt.geom.Rectangle2D;
-import java.awt.im.InputMethodRequests;
-import java.text.AttributedCharacterIterator;
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.border.LineBorder;
+import j86.java.awt.AWTEvent;
+import j86.java.awt.Color;
+import j86.java.awt.Dimension;
+import j86.java.awt.FontMetrics;
+import j86.java.awt.Graphics;
+import j86.java.awt.Graphics2D;
+import j86.java.awt.Point;
+import j86.java.awt.Rectangle;
+import j86.java.awt.Toolkit;
+import j86.j86.java.awt.event.InputMethodEvent;
+import j86.j86.java.awt.event.InputMethodListener;
+import j86.j86.java.awt.event.WindowEvent;
+import j86.j86.java.awt.event.WindowAdapter;
+import j86.j86.java.awt.font.FontRenderContext;
+import j86.j86.java.awt.font.TextHitInfo;
+import j86.j86.java.awt.font.TextLayout;
+import j86.j86.java.awt.geom.Rectangle2D;
+import j86.j86.java.awt.im.InputMethodRequests;
+import j86.java.text.AttributedCharacterIterator;
+import j86.javax.swing.JFrame;
+import j86.javax.swing.JPanel;
+import j86.j86.javax.swing.border.LineBorder;
 
 /**
  * A composition area is used to display text that's being composed
@@ -108,7 +108,7 @@ public final class CompositionArea extends JPanel implements InputMethodListener
     }
 
     /**
-     * @see java.awt.Component#getInputMethodRequests
+     * @see j86.java.awt.Component#getInputMethodRequests
      */
     public InputMethodRequests getInputMethodRequests() {
         return handler;

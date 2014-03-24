@@ -23,11 +23,11 @@
  * questions.
  */
 
-package javax.script;
+package j86.javax.script;
 
-import java.io.Reader;
-import java.util.Map;
-import java.util.Set;
+import j86.java.io.Reader;
+import j86.java.util.Map;
+import j86.java.util.Set;
 
 /**
  * <code>ScriptEngine</code> is the fundamental interface whose methods must be
@@ -54,25 +54,25 @@ public interface ScriptEngine  {
      * Reserved key for a named value that passes
      * an array of positional arguments to a script.
      */
-    public static final String ARGV="javax.script.argv";
+    public static final String ARGV="j86.javax.script.argv";
 
     /**
      * Reserved key for a named value that is
      * the name of the file being executed.
      */
-    public static final String FILENAME = "javax.script.filename";
+    public static final String FILENAME = "j86.javax.script.filename";
 
     /**
      * Reserved key for a named value that is
      * the name of the <code>ScriptEngine</code> implementation.
      */
-    public static final String ENGINE = "javax.script.engine";
+    public static final String ENGINE = "j86.javax.script.engine";
 
     /**
      * Reserved key for a named value that identifies
      * the version of the <code>ScriptEngine</code> implementation.
      */
-    public static final String ENGINE_VERSION = "javax.script.engine_version";
+    public static final String ENGINE_VERSION = "j86.javax.script.engine_version";
 
     /**
      * Reserved key for a named value that identifies
@@ -80,19 +80,19 @@ public interface ScriptEngine  {
      * <code>ScriptEngineManager</code> to locate a <code>ScriptEngine</code>
      * with a given name in the <code>getEngineByName</code> method.
      */
-    public static final String NAME = "javax.script.name";
+    public static final String NAME = "j86.javax.script.name";
 
     /**
      * Reserved key for a named value that is
      * the full name of Scripting Language supported by the implementation.
      */
-    public static final String LANGUAGE = "javax.script.language";
+    public static final String LANGUAGE = "j86.javax.script.language";
 
     /**
      * Reserved key for the named value that identifies
      * the version of the scripting language supported by the implementation.
      */
-    public static final String LANGUAGE_VERSION ="javax.script.language_version";
+    public static final String LANGUAGE_VERSION ="j86.javax.script.language_version";
 
 
     /**

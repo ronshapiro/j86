@@ -23,21 +23,21 @@
  * questions.
  */
 
-package java.awt.dnd;
+package j86.j86.java.awt.dnd;
 
-import java.awt.Component;
+import j86.java.awt.Component;
 
-import java.awt.datatransfer.DataFlavor;
-import java.awt.datatransfer.Transferable;
-import java.awt.datatransfer.UnsupportedFlavorException;
+import j86.j86.java.awt.datatransfer.DataFlavor;
+import j86.j86.java.awt.datatransfer.Transferable;
+import j86.j86.java.awt.datatransfer.UnsupportedFlavorException;
 
-import java.awt.dnd.peer.DropTargetContextPeer;
+import j86.j86.j86.java.awt.dnd.peer.DropTargetContextPeer;
 
-import java.io.IOException;
-import java.io.Serializable;
+import j86.java.io.IOException;
+import j86.java.io.Serializable;
 
-import java.util.Arrays;
-import java.util.List;
+import j86.java.util.Arrays;
+import j86.java.util.List;
 
 
 /**
@@ -226,10 +226,10 @@ public class DropTargetContext implements Serializable {
     /**
      * This method returns a the currently available DataFlavors
      * of the <code>Transferable</code> operand
-     * as a <code>java.util.List</code>.
+     * as a <code>j86.java.util.List</code>.
      * <P>
      * @return the currently available
-     * DataFlavors as a <code>java.util.List</code>
+     * DataFlavors as a <code>j86.java.util.List</code>
      */
 
     protected List<DataFlavor> getCurrentDataFlavorsAsList() {
@@ -328,7 +328,7 @@ public class DropTargetContext implements Serializable {
          *        the result of local drag-n-drop operation
          */
         TransferableProxy(Transferable t, boolean local) {
-            proxy = new sun.awt.datatransfer.TransferableProxy(t, local);
+            proxy = new j86.j86.sun.awt.datatransfer.TransferableProxy(t, local);
             transferable = t;
             isLocal      = local;
         }
@@ -398,7 +398,7 @@ public class DropTargetContext implements Serializable {
          */
         protected boolean       isLocal;
 
-        private sun.awt.datatransfer.TransferableProxy proxy;
+        private j86.j86.sun.awt.datatransfer.TransferableProxy proxy;
     }
 
 /****************************************************************************/

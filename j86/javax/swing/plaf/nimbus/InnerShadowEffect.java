@@ -22,12 +22,12 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.plaf.nimbus;
+package j86.j86.j86.javax.swing.plaf.nimbus;
 
-import java.awt.image.BufferedImage;
-import java.awt.image.Raster;
-import java.awt.image.WritableRaster;
-import java.util.Arrays;
+import j86.j86.j86.java.awt.image.BufferedImage;
+import j86.j86.j86.java.awt.image.Raster;
+import j86.j86.j86.java.awt.image.WritableRaster;
+import j86.java.util.Arrays;
 
 /**
  * InnerShadowEffect - This effect currently only works with ARGB type buffered

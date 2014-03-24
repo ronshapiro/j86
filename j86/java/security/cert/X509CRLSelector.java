@@ -23,18 +23,18 @@
  * questions.
  */
 
-package java.security.cert;
+package j86.j86.java.security.cert;
 
-import java.io.IOException;
-import java.math.BigInteger;
-import java.util.*;
+import j86.java.io.IOException;
+import j86.java.math.BigInteger;
+import j86.java.util.*;
 
-import javax.security.auth.x500.X500Principal;
+import j86.j86.javax.security.auth.x500.X500Principal;
 
-import sun.security.util.Debug;
-import sun.security.util.DerInputStream;
-import sun.security.x509.CRLNumberExtension;
-import sun.security.x509.X500Name;
+import j86.sun.security.util.Debug;
+import j86.sun.security.util.DerInputStream;
+import j86.sun.security.x509.CRLNumberExtension;
+import j86.sun.security.x509.X500Name;
 
 /**
  * A {@code CRLSelector} that selects {@code X509CRLs} that

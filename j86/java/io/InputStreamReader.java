@@ -23,17 +23,17 @@
  * questions.
  */
 
-package java.io;
+package j86.java.io;
 
-import java.nio.charset.Charset;
-import java.nio.charset.CharsetDecoder;
-import sun.nio.cs.StreamDecoder;
+import j86.j86.java.nio.charset.Charset;
+import j86.j86.java.nio.charset.CharsetDecoder;
+import j86.j86.j86.sun.nio.cs.StreamDecoder;
 
 
 /**
  * An InputStreamReader is a bridge from byte streams to character streams: It
  * reads bytes and decodes them into characters using a specified {@link
- * java.nio.charset.Charset charset}.  The charset that it uses
+ * j86.j86.java.nio.charset.Charset charset}.  The charset that it uses
  * may be specified by name or may be given explicitly, or the platform's
  * default charset may be accepted.
  *
@@ -53,7 +53,7 @@ import sun.nio.cs.StreamDecoder;
  *
  * @see BufferedReader
  * @see InputStream
- * @see java.nio.charset.Charset
+ * @see j86.j86.java.nio.charset.Charset
  *
  * @author      Mark Reinhold
  * @since       JDK1.1
@@ -86,7 +86,7 @@ public class InputStreamReader extends Reader {
      *
      * @param  charsetName
      *         The name of a supported
-     *         {@link java.nio.charset.Charset charset}
+     *         {@link j86.j86.java.nio.charset.Charset charset}
      *
      * @exception  UnsupportedEncodingException
      *             If the named charset is not supported
@@ -147,7 +147,7 @@ public class InputStreamReader extends Reader {
      * @return The historical name of this encoding, or
      *         <code>null</code> if the stream has been closed
      *
-     * @see java.nio.charset.Charset
+     * @see j86.j86.java.nio.charset.Charset
      *
      * @revised 1.4
      * @spec JSR-51

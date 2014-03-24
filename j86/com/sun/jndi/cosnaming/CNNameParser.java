@@ -23,12 +23,12 @@
  * questions.
  */
 
-package com.sun.jndi.cosnaming;
+package j86.com.sun.jndi.cosnaming;
 
-import javax.naming.*;
-import java.util.Properties;
-import java.util.Vector;
-import java.util.Enumeration;
+import j86.javax.naming.*;
+import j86.java.util.Properties;
+import j86.java.util.Vector;
+import j86.java.util.Enumeration;
 
 import org.omg.CosNaming.NameComponent;
 
@@ -481,7 +481,7 @@ final public class CNNameParser implements NameParser {
             print("\\\\x.y");
         }
 
-        NameParser parser = new com.sun.jndi.cosnaming.CNNameParser();
+        NameParser parser = new j86.com.sun.jndi.cosnaming.CNNameParser();
         for (int i = 0; i < compounds.length; i++) {
             checkCompound(parser, compounds[i], compoundComps[i]);
         }

@@ -23,15 +23,15 @@
  * questions.
  */
 
-package com.sun.java.swing.plaf.gtk;
+package j86.j86.com.sun.java.swing.plaf.gtk;
 
-import java.awt.*;
-import java.awt.geom.AffineTransform;
-import javax.swing.plaf.FontUIResource;
-import java.util.StringTokenizer;
+import j86.java.awt.*;
+import j86.j86.java.awt.geom.AffineTransform;
+import j86.j86.javax.swing.plaf.FontUIResource;
+import j86.java.util.StringTokenizer;
 
-import sun.font.FontConfigManager;
-import sun.font.FontUtilities;
+import j86.sun.font.FontConfigManager;
+import j86.sun.font.FontUtilities;
 
 /**
  * @author Shannon Hickey

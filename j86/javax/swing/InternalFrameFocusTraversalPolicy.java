@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing;
+package j86.javax.swing;
 
 
-import java.awt.Component;
-import java.awt.FocusTraversalPolicy;
+import j86.java.awt.Component;
+import j86.java.awt.FocusTraversalPolicy;
 
 /**
  * A FocusTraversalPolicy which can optionally provide an algorithm for

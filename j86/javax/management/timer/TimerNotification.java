@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.management.timer;
+package j86.j86.javax.management.timer;
 
 /**
  * This class provides definitions of the notifications sent by timer MBeans.
@@ -34,7 +34,7 @@ package javax.management.timer;
  *
  * @since 1.5
  */
-public class TimerNotification extends javax.management.Notification {
+public class TimerNotification extends j86.javax.management.Notification {
 
 
     /* Serial version */

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.sound.sampled;
+package j86.javax.sound.sampled;
 
 /**
  * The <code>Line</code> interface represents a mono or multi-channel
@@ -339,7 +339,7 @@ public interface Line extends AutoCloseable {
          */
         public String toString() {
 
-            String fullPackagePath = "javax.sound.sampled.";
+            String fullPackagePath = "j86.javax.sound.sampled.";
             String initialString = new String(getLineClass().toString());
             String finalString;
 

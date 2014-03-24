@@ -22,14 +22,14 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.awt;
+package j86.java.awt;
 
-import sun.awt.AWTAccessor;
+import j86.sun.awt.AWTAccessor;
 
-import java.awt.event.AdjustmentEvent;
-import java.awt.event.AdjustmentListener;
-import java.awt.peer.ScrollPanePeer;
-import java.io.Serializable;
+import j86.j86.java.awt.event.AdjustmentEvent;
+import j86.j86.java.awt.event.AdjustmentListener;
+import j86.j86.java.awt.peer.ScrollPanePeer;
+import j86.java.io.Serializable;
 
 
 /**
@@ -52,8 +52,8 @@ public class ScrollPaneAdjustable implements Adjustable, Serializable {
      *
      * @serial
      * @see #getOrientation
-     * @see java.awt.Adjustable#HORIZONTAL
-     * @see java.awt.Adjustable#VERTICAL
+     * @see j86.java.awt.Adjustable#HORIZONTAL
+     * @see j86.java.awt.Adjustable#VERTICAL
      */
     private int orientation;
 
@@ -370,8 +370,8 @@ public class ScrollPaneAdjustable implements Adjustable, Serializable {
      * @param    l   the adjustment listener.
      * @see      #removeAdjustmentListener
      * @see      #getAdjustmentListeners
-     * @see      java.awt.event.AdjustmentListener
-     * @see      java.awt.event.AdjustmentEvent
+     * @see      j86.j86.java.awt.event.AdjustmentListener
+     * @see      j86.j86.java.awt.event.AdjustmentEvent
      */
     public synchronized void addAdjustmentListener(AdjustmentListener l) {
         if (l == null) {
@@ -391,8 +391,8 @@ public class ScrollPaneAdjustable implements Adjustable, Serializable {
      * @param         l     the adjustment listener.
      * @see           #addAdjustmentListener
      * @see           #getAdjustmentListeners
-     * @see           java.awt.event.AdjustmentListener
-     * @see           java.awt.event.AdjustmentEvent
+     * @see           j86.j86.java.awt.event.AdjustmentListener
+     * @see           j86.j86.java.awt.event.AdjustmentEvent
      * @since         JDK1.1
      */
     public synchronized void removeAdjustmentListener(AdjustmentListener l){
@@ -413,8 +413,8 @@ public class ScrollPaneAdjustable implements Adjustable, Serializable {
      *
      * @see           #addAdjustmentListener
      * @see           #removeAdjustmentListener
-     * @see           java.awt.event.AdjustmentListener
-     * @see           java.awt.event.AdjustmentEvent
+     * @see           j86.j86.java.awt.event.AdjustmentListener
+     * @see           j86.j86.java.awt.event.AdjustmentEvent
      * @since 1.4
      */
     public synchronized AdjustmentListener[] getAdjustmentListeners() {

@@ -23,20 +23,20 @@
  * questions.
  */
 
-package sun.net.www.http;
+package j86.j86.j86.sun.net.www.http;
 
-import java.io.*;
-import java.net.*;
-import java.util.Locale;
-import sun.net.NetworkClient;
-import sun.net.ProgressSource;
-import sun.net.www.MessageHeader;
-import sun.net.www.HeaderParser;
-import sun.net.www.MeteredStream;
-import sun.net.www.ParseUtil;
-import sun.net.www.protocol.http.HttpURLConnection;
-import sun.util.logging.PlatformLogger;
-import static sun.net.www.protocol.http.HttpURLConnection.TunnelState.*;
+import j86.java.io.*;
+import j86.java.net.*;
+import j86.java.util.Locale;
+import j86.sun.net.NetworkClient;
+import j86.sun.net.ProgressSource;
+import j86.j86.sun.net.www.MessageHeader;
+import j86.j86.sun.net.www.HeaderParser;
+import j86.j86.sun.net.www.MeteredStream;
+import j86.j86.sun.net.www.ParseUtil;
+import j86.j86.j86.sun.net.www.protocol.http.HttpURLConnection;
+import j86.j86.sun.util.logging.PlatformLogger;
+import static j86.j86.j86.sun.net.www.protocol.http.HttpURLConnection.TunnelState.*;
 
 /**
  * @author Herb Jellinek
@@ -143,11 +143,11 @@ public class HttpClient extends NetworkClient {
     }
 
     static {
-        String keepAlive = java.security.AccessController.doPrivileged(
-            new sun.security.action.GetPropertyAction("http.keepAlive"));
+        String keepAlive = j86.java.security.AccessController.doPrivileged(
+            new j86.sun.security.action.GetPropertyAction("http.keepAlive"));
 
-        String retryPost = java.security.AccessController.doPrivileged(
-            new sun.security.action.GetPropertyAction("sun.net.http.retryPost"));
+        String retryPost = j86.java.security.AccessController.doPrivileged(
+            new j86.sun.security.action.GetPropertyAction("j86.sun.net.http.retryPost"));
 
         if (keepAlive != null) {
             keepAliveProp = Boolean.valueOf(keepAlive).booleanValue();
@@ -478,14 +478,14 @@ public class HttpClient extends NetworkClient {
          throws IOException
     {
         try {
-            java.security.AccessController.doPrivileged(
-                new java.security.PrivilegedExceptionAction<Void>() {
+            j86.java.security.AccessController.doPrivileged(
+                new j86.java.security.PrivilegedExceptionAction<Void>() {
                     public Void run() throws IOException {
                     openServer(server.getHostString(), server.getPort());
                     return null;
                 }
             });
-        } catch (java.security.PrivilegedActionException pae) {
+        } catch (j86.java.security.PrivilegedActionException pae) {
             throw (IOException) pae.getException();
         }
     }
@@ -518,7 +518,7 @@ public class HttpClient extends NetworkClient {
             url.getProtocol().equals("https") ) {
 
             if ((proxy != null) && (proxy.type() == Proxy.Type.HTTP)) {
-                sun.net.www.URLConnection.setProxiedHost(host);
+                j86.j86.sun.net.www.URLConnection.setProxiedHost(host);
                 privilegedOpenServer((InetSocketAddress) proxy.address());
                 usingProxy = true;
                 return;
@@ -534,7 +534,7 @@ public class HttpClient extends NetworkClient {
              * ftp url.
              */
             if ((proxy != null) && (proxy.type() == Proxy.Type.HTTP)) {
-                sun.net.www.URLConnection.setProxiedHost(host);
+                j86.j86.sun.net.www.URLConnection.setProxiedHost(host);
                 privilegedOpenServer((InetSocketAddress) proxy.address());
                 usingProxy = true;
                 return;
@@ -594,7 +594,7 @@ public class HttpClient extends NetworkClient {
         if (fileName.indexOf('\n') == -1)
             return fileName;
         else
-            throw new java.net.MalformedURLException("Illegal character in URL");
+            throw new j86.java.net.MalformedURLException("Illegal character in URL");
     }
 
     /**

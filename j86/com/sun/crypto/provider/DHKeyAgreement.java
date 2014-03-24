@@ -23,25 +23,25 @@
  * questions.
  */
 
-package com.sun.crypto.provider;
+package j86.com.sun.crypto.provider;
 
-import java.util.*;
-import java.lang.*;
-import java.math.BigInteger;
-import java.security.InvalidAlgorithmParameterException;
-import java.security.InvalidKeyException;
-import java.security.Key;
-import java.security.NoSuchAlgorithmException;
-import java.security.SecureRandom;
-import java.security.ProviderException;
-import java.security.spec.AlgorithmParameterSpec;
-import java.security.spec.InvalidKeySpecException;
-import javax.crypto.KeyAgreementSpi;
-import javax.crypto.ShortBufferException;
-import javax.crypto.SecretKey;
-import javax.crypto.spec.*;
+import j86.java.util.*;
+import j86.java.lang.*;
+import j86.java.math.BigInteger;
+import j86.java.security.InvalidAlgorithmParameterException;
+import j86.java.security.InvalidKeyException;
+import j86.java.security.Key;
+import j86.java.security.NoSuchAlgorithmException;
+import j86.java.security.SecureRandom;
+import j86.java.security.ProviderException;
+import j86.j86.java.security.spec.AlgorithmParameterSpec;
+import j86.j86.java.security.spec.InvalidKeySpecException;
+import j86.javax.crypto.KeyAgreementSpi;
+import j86.javax.crypto.ShortBufferException;
+import j86.javax.crypto.SecretKey;
+import j86.j86.javax.crypto.spec.*;
 
-import sun.security.util.KeyUtil;
+import j86.sun.security.util.KeyUtil;
 
 /**
  * This class implements the Diffie-Hellman key agreement protocol between
@@ -126,12 +126,12 @@ extends KeyAgreementSpi {
             throw new InvalidAlgorithmParameterException
                 ("Diffie-Hellman parameters expected");
         }
-        if (!(key instanceof javax.crypto.interfaces.DHPrivateKey)) {
+        if (!(key instanceof j86.j86.javax.crypto.interfaces.DHPrivateKey)) {
             throw new InvalidKeyException("Diffie-Hellman private key "
                                           + "expected");
         }
-        javax.crypto.interfaces.DHPrivateKey dhPrivKey;
-        dhPrivKey = (javax.crypto.interfaces.DHPrivateKey)key;
+        j86.j86.javax.crypto.interfaces.DHPrivateKey dhPrivKey;
+        dhPrivKey = (j86.j86.javax.crypto.interfaces.DHPrivateKey)key;
 
         // check if private key parameters are compatible with
         // initialized ones
@@ -180,12 +180,12 @@ extends KeyAgreementSpi {
     protected Key engineDoPhase(Key key, boolean lastPhase)
         throws InvalidKeyException, IllegalStateException
     {
-        if (!(key instanceof javax.crypto.interfaces.DHPublicKey)) {
+        if (!(key instanceof j86.j86.javax.crypto.interfaces.DHPublicKey)) {
             throw new InvalidKeyException("Diffie-Hellman public key "
                                           + "expected");
         }
-        javax.crypto.interfaces.DHPublicKey dhPubKey;
-        dhPubKey = (javax.crypto.interfaces.DHPublicKey)key;
+        j86.j86.javax.crypto.interfaces.DHPublicKey dhPubKey;
+        dhPubKey = (j86.j86.javax.crypto.interfaces.DHPublicKey)key;
 
         if (init_p == null || init_g == null) {
             throw new IllegalStateException("Not initialized");

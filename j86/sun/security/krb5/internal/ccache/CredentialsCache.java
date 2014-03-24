@@ -28,18 +28,18 @@
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
 
-package sun.security.krb5.internal.ccache;
+package j86.j86.j86.sun.security.krb5.internal.ccache;
 
-import sun.security.krb5.*;
-import sun.security.krb5.internal.*;
-import java.util.StringTokenizer;
-import java.util.Vector;
-import java.io.IOException;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
+import j86.sun.security.krb5.*;
+import j86.j86.sun.security.krb5.internal.*;
+import j86.java.util.StringTokenizer;
+import j86.java.util.Vector;
+import j86.java.io.IOException;
+import j86.java.io.File;
+import j86.java.io.FileInputStream;
+import j86.java.io.FileOutputStream;
+import j86.java.io.BufferedReader;
+import j86.java.io.InputStreamReader;
 
 /**
  * CredentialsCache stores credentials(tickets, session keys, etc) in a semi-permanent store

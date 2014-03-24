@@ -23,38 +23,38 @@
  * questions.
  */
 
-package sun.awt.im;
+package j86.j86.sun.awt.im;
 
-import java.awt.AWTException;
-import java.awt.CheckboxMenuItem;
-import java.awt.Component;
-import java.awt.Dialog;
-import java.awt.EventQueue;
-import java.awt.Frame;
-import java.awt.PopupMenu;
-import java.awt.Menu;
-import java.awt.MenuItem;
-import java.awt.Toolkit;
-import sun.awt.AppContext;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.InvocationEvent;
-import java.awt.im.spi.InputMethodDescriptor;
-import java.lang.reflect.InvocationTargetException;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.security.PrivilegedActionException;
-import java.security.PrivilegedExceptionAction;
-import java.util.Hashtable;
-import java.util.Iterator;
-import java.util.Locale;
-import java.util.ServiceLoader;
-import java.util.Vector;
-import java.util.Set;
-import java.util.prefs.BackingStoreException;
-import java.util.prefs.Preferences;
-import sun.awt.InputMethodSupport;
-import sun.awt.SunToolkit;
+import j86.java.awt.AWTException;
+import j86.java.awt.CheckboxMenuItem;
+import j86.java.awt.Component;
+import j86.java.awt.Dialog;
+import j86.java.awt.EventQueue;
+import j86.java.awt.Frame;
+import j86.java.awt.PopupMenu;
+import j86.java.awt.Menu;
+import j86.java.awt.MenuItem;
+import j86.java.awt.Toolkit;
+import j86.sun.awt.AppContext;
+import j86.j86.java.awt.event.ActionEvent;
+import j86.j86.java.awt.event.ActionListener;
+import j86.j86.java.awt.event.InvocationEvent;
+import j86.j86.j86.java.awt.im.spi.InputMethodDescriptor;
+import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.security.PrivilegedActionException;
+import j86.java.security.PrivilegedExceptionAction;
+import j86.java.util.Hashtable;
+import j86.java.util.Iterator;
+import j86.java.util.Locale;
+import j86.java.util.ServiceLoader;
+import j86.java.util.Vector;
+import j86.java.util.Set;
+import j86.j86.java.util.prefs.BackingStoreException;
+import j86.j86.java.util.prefs.Preferences;
+import j86.sun.awt.InputMethodSupport;
+import j86.sun.awt.SunToolkit;
 
 /**
  * <code>ExecutableInputMethodManager</code> is the implementation of the
@@ -94,7 +94,7 @@ class ExecutableInputMethodManager extends InputMethodManager
     private InputContext requestInputContext;
 
     // IM preference stuff
-    private static final String preferredIMNode = "/sun/awt/im/preferredInputMethod";
+    private static final String preferredIMNode = "/j86.j86.sun.awt.im/preferredInputMethod";
     private static final String descriptorKey = "descriptor";
     private Hashtable<String, InputMethodLocator> preferredLocatorCache = new Hashtable<>();
     private Preferences userRoot;

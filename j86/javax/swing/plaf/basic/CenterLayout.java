@@ -23,11 +23,11 @@
  * questions.
  */
 
-package javax.swing.plaf.basic;
+package j86.j86.j86.javax.swing.plaf.basic;
 
 
-import java.awt.*;
-import java.io.*;
+import j86.java.awt.*;
+import j86.java.io.*;
 
 /**
   * Center-positioning layout manager.

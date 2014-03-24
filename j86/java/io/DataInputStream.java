@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.io;
+package j86.java.io;
 
 /**
  * A data input stream lets an application read primitive Java data
@@ -36,7 +36,7 @@ package java.io;
  * methods in this class.
  *
  * @author  Arthur van Hoff
- * @see     java.io.DataOutputStream
+ * @see     j86.java.io.DataOutputStream
  * @since   JDK1.0
  */
 public
@@ -93,8 +93,8 @@ class DataInputStream extends FilterInputStream implements DataInput {
      * other than end of file, the stream has been closed and the underlying
      * input stream does not support reading after close, or another I/O
      * error occurs.
-     * @see        java.io.FilterInputStream#in
-     * @see        java.io.InputStream#read(byte[], int, int)
+     * @see        j86.java.io.FilterInputStream#in
+     * @see        j86.java.io.InputStream#read(byte[], int, int)
      */
     public final int read(byte b[]) throws IOException {
         return in.read(b, 0, b.length);
@@ -142,8 +142,8 @@ class DataInputStream extends FilterInputStream implements DataInput {
      * other than end of file, the stream has been closed and the underlying
      * input stream does not support reading after close, or another I/O
      * error occurs.
-     * @see        java.io.FilterInputStream#in
-     * @see        java.io.InputStream#read(byte[], int, int)
+     * @see        j86.java.io.FilterInputStream#in
+     * @see        j86.java.io.InputStream#read(byte[], int, int)
      */
     public final int read(byte b[], int off, int len) throws IOException {
         return in.read(b, off, len);
@@ -163,7 +163,7 @@ class DataInputStream extends FilterInputStream implements DataInput {
      * @exception  IOException   the stream has been closed and the contained
      *             input stream does not support reading after close, or
      *             another I/O error occurs.
-     * @see        java.io.FilterInputStream#in
+     * @see        j86.java.io.FilterInputStream#in
      */
     public final void readFully(byte b[]) throws IOException {
         readFully(b, 0, b.length);
@@ -185,7 +185,7 @@ class DataInputStream extends FilterInputStream implements DataInput {
      * @exception  IOException   the stream has been closed and the contained
      *             input stream does not support reading after close, or
      *             another I/O error occurs.
-     * @see        java.io.FilterInputStream#in
+     * @see        j86.java.io.FilterInputStream#in
      */
     public final void readFully(byte b[], int off, int len) throws IOException {
         if (len < 0)
@@ -236,7 +236,7 @@ class DataInputStream extends FilterInputStream implements DataInput {
      * @exception  IOException   the stream has been closed and the contained
      *             input stream does not support reading after close, or
      *             another I/O error occurs.
-     * @see        java.io.FilterInputStream#in
+     * @see        j86.java.io.FilterInputStream#in
      */
     public final boolean readBoolean() throws IOException {
         int ch = in.read();
@@ -259,7 +259,7 @@ class DataInputStream extends FilterInputStream implements DataInput {
      * @exception  IOException   the stream has been closed and the contained
      *             input stream does not support reading after close, or
      *             another I/O error occurs.
-     * @see        java.io.FilterInputStream#in
+     * @see        j86.java.io.FilterInputStream#in
      */
     public final byte readByte() throws IOException {
         int ch = in.read();
@@ -282,7 +282,7 @@ class DataInputStream extends FilterInputStream implements DataInput {
      * @exception  IOException   the stream has been closed and the contained
      *             input stream does not support reading after close, or
      *             another I/O error occurs.
-     * @see         java.io.FilterInputStream#in
+     * @see         j86.java.io.FilterInputStream#in
      */
     public final int readUnsignedByte() throws IOException {
         int ch = in.read();
@@ -306,7 +306,7 @@ class DataInputStream extends FilterInputStream implements DataInput {
      * @exception  IOException   the stream has been closed and the contained
      *             input stream does not support reading after close, or
      *             another I/O error occurs.
-     * @see        java.io.FilterInputStream#in
+     * @see        j86.java.io.FilterInputStream#in
      */
     public final short readShort() throws IOException {
         int ch1 = in.read();
@@ -331,7 +331,7 @@ class DataInputStream extends FilterInputStream implements DataInput {
      * @exception  IOException   the stream has been closed and the contained
      *             input stream does not support reading after close, or
      *             another I/O error occurs.
-     * @see        java.io.FilterInputStream#in
+     * @see        j86.java.io.FilterInputStream#in
      */
     public final int readUnsignedShort() throws IOException {
         int ch1 = in.read();
@@ -356,7 +356,7 @@ class DataInputStream extends FilterInputStream implements DataInput {
      * @exception  IOException   the stream has been closed and the contained
      *             input stream does not support reading after close, or
      *             another I/O error occurs.
-     * @see        java.io.FilterInputStream#in
+     * @see        j86.java.io.FilterInputStream#in
      */
     public final char readChar() throws IOException {
         int ch1 = in.read();
@@ -381,7 +381,7 @@ class DataInputStream extends FilterInputStream implements DataInput {
      * @exception  IOException   the stream has been closed and the contained
      *             input stream does not support reading after close, or
      *             another I/O error occurs.
-     * @see        java.io.FilterInputStream#in
+     * @see        j86.java.io.FilterInputStream#in
      */
     public final int readInt() throws IOException {
         int ch1 = in.read();
@@ -410,7 +410,7 @@ class DataInputStream extends FilterInputStream implements DataInput {
      * @exception  IOException   the stream has been closed and the contained
      *             input stream does not support reading after close, or
      *             another I/O error occurs.
-     * @see        java.io.FilterInputStream#in
+     * @see        j86.java.io.FilterInputStream#in
      */
     public final long readLong() throws IOException {
         readFully(readBuffer, 0, 8);
@@ -439,8 +439,8 @@ class DataInputStream extends FilterInputStream implements DataInput {
      * @exception  IOException   the stream has been closed and the contained
      *             input stream does not support reading after close, or
      *             another I/O error occurs.
-     * @see        java.io.DataInputStream#readInt()
-     * @see        java.lang.Float#intBitsToFloat(int)
+     * @see        j86.java.io.DataInputStream#readInt()
+     * @see        j86.java.lang.Float#intBitsToFloat(int)
      */
     public final float readFloat() throws IOException {
         return Float.intBitsToFloat(readInt());
@@ -461,8 +461,8 @@ class DataInputStream extends FilterInputStream implements DataInput {
      * @exception  IOException   the stream has been closed and the contained
      *             input stream does not support reading after close, or
      *             another I/O error occurs.
-     * @see        java.io.DataInputStream#readLong()
-     * @see        java.lang.Double#longBitsToDouble(long)
+     * @see        j86.java.io.DataInputStream#readLong()
+     * @see        j86.java.lang.Double#longBitsToDouble(long)
      */
     public final double readDouble() throws IOException {
         return Double.longBitsToDouble(readLong());
@@ -494,8 +494,8 @@ class DataInputStream extends FilterInputStream implements DataInput {
      *
      * @return     the next line of text from this input stream.
      * @exception  IOException  if an I/O error occurs.
-     * @see        java.io.BufferedReader#readLine()
-     * @see        java.io.FilterInputStream#in
+     * @see        j86.java.io.BufferedReader#readLine()
+     * @see        j86.java.io.FilterInputStream#in
      */
     @Deprecated
     public final String readLine() throws IOException {
@@ -558,7 +558,7 @@ loop:   while (true) {
      *             another I/O error occurs.
      * @exception  UTFDataFormatException if the bytes do not represent a valid
      *             modified UTF-8 encoding of a string.
-     * @see        java.io.DataInputStream#readUTF(java.io.DataInput)
+     * @see        j86.java.io.DataInputStream#readUTF(java.io.DataInput)
      */
     public final String readUTF() throws IOException {
         return readUTF(this);
@@ -583,7 +583,7 @@ loop:   while (true) {
      *             another I/O error occurs.
      * @exception  UTFDataFormatException  if the bytes do not represent a
      *               valid modified UTF-8 encoding of a Unicode string.
-     * @see        java.io.DataInputStream#readUnsignedShort()
+     * @see        j86.java.io.DataInputStream#readUnsignedShort()
      */
     public final static String readUTF(DataInput in) throws IOException {
         int utflen = in.readUnsignedShort();

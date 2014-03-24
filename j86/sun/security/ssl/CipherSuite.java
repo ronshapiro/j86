@@ -24,24 +24,24 @@
  */
 
 
-package sun.security.ssl;
+package j86.sun.security.ssl;
 
-import java.util.*;
+import j86.java.util.*;
 
-import java.security.NoSuchAlgorithmException;
-import java.security.InvalidKeyException;
-import java.security.SecureRandom;
-import java.security.KeyManagementException;
+import j86.java.security.NoSuchAlgorithmException;
+import j86.java.security.InvalidKeyException;
+import j86.java.security.SecureRandom;
+import j86.java.security.KeyManagementException;
 
-import javax.crypto.Cipher;
-import javax.crypto.SecretKey;
-import javax.crypto.spec.IvParameterSpec;
-import javax.crypto.spec.SecretKeySpec;
+import j86.javax.crypto.Cipher;
+import j86.javax.crypto.SecretKey;
+import j86.j86.javax.crypto.spec.IvParameterSpec;
+import j86.j86.javax.crypto.spec.SecretKeySpec;
 
-import static sun.security.ssl.CipherSuite.KeyExchange.*;
-import static sun.security.ssl.CipherSuite.PRF.*;
-import static sun.security.ssl.CipherSuite.CipherType.*;
-import static sun.security.ssl.JsseJce.*;
+import static j86.sun.security.ssl.CipherSuite.KeyExchange.*;
+import static j86.sun.security.ssl.CipherSuite.PRF.*;
+import static j86.sun.security.ssl.CipherSuite.CipherType.*;
+import static j86.sun.security.ssl.JsseJce.*;
 
 /**
  * An SSL/TLS CipherSuite. Constants for the standard key exchange, cipher,
@@ -82,7 +82,7 @@ final class CipherSuite implements Comparable<CipherSuite> {
     final static boolean DYNAMIC_AVAILABILITY = true;
 
     private final static boolean ALLOW_ECC = Debug.getBooleanProperty
-        ("com.sun.net.ssl.enableECC", true);
+        ("com.j86.sun.net.ssl.enableECC", true);
 
     // Map Integer(id) -> CipherSuite
     // contains all known CipherSuites

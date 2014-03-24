@@ -23,13 +23,13 @@
  * questions.
  */
 
-package javax.management.relation;
+package j86.j86.javax.management.relation;
 
-import javax.management.ObjectName;
-import javax.management.InstanceNotFoundException;
+import j86.javax.management.ObjectName;
+import j86.javax.management.InstanceNotFoundException;
 
-import java.util.List;
-import java.util.Map;
+import j86.java.util.List;
+import j86.java.util.Map;
 
 /**
  * The Relation Service is in charge of creating and deleting relation types

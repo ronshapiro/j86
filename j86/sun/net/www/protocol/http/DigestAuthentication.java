@@ -23,20 +23,20 @@
  * questions.
  */
 
-package sun.net.www.protocol.http;
+package j86.j86.j86.sun.net.www.protocol.http;
 
-import java.io.*;
-import java.net.URL;
-import java.net.ProtocolException;
-import java.net.PasswordAuthentication;
-import java.util.Arrays;
-import java.util.StringTokenizer;
-import java.util.Random;
+import j86.java.io.*;
+import j86.java.net.URL;
+import j86.java.net.ProtocolException;
+import j86.java.net.PasswordAuthentication;
+import j86.java.util.Arrays;
+import j86.java.util.StringTokenizer;
+import j86.java.util.Random;
 
-import sun.net.www.HeaderParser;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-import static sun.net.www.protocol.http.HttpURLConnection.HTTP_CONNECT;
+import j86.j86.sun.net.www.HeaderParser;
+import j86.java.security.MessageDigest;
+import j86.java.security.NoSuchAlgorithmException;
+import static j86.j86.j86.sun.net.www.protocol.http.HttpURLConnection.HTTP_CONNECT;
 
 /**
  * DigestAuthentication: Encapsulate an http server authentication using
@@ -55,7 +55,7 @@ class DigestAuthentication extends AuthenticationInfo {
     // One instance of these may be shared among several DigestAuthentication
     // instances as a result of a single authorization (for multiple domains)
 
-    static class Parameters implements java.io.Serializable {
+    static class Parameters implements j86.java.io.Serializable {
         private static final long serialVersionUID = -3584543755194526252L;
 
         private boolean serverQop; // server proposed qop=auth
@@ -490,7 +490,7 @@ class DigestAuthentication extends AuthenticationInfo {
     private String encode(String src, char[] passwd, MessageDigest md) {
         try {
             md.update(src.getBytes("ISO-8859-1"));
-        } catch (java.io.UnsupportedEncodingException uee) {
+        } catch (j86.java.io.UnsupportedEncodingException uee) {
             assert false;
         }
         if (passwd != null) {

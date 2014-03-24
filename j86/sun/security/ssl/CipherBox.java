@@ -24,25 +24,25 @@
  */
 
 
-package sun.security.ssl;
+package j86.sun.security.ssl;
 
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.util.Hashtable;
-import java.util.Arrays;
+import j86.java.io.ByteArrayInputStream;
+import j86.java.io.IOException;
+import j86.java.util.Hashtable;
+import j86.java.util.Arrays;
 
-import java.security.*;
-import javax.crypto.*;
-import javax.crypto.spec.IvParameterSpec;
-import javax.crypto.spec.GCMParameterSpec;
+import j86.java.security.*;
+import j86.javax.crypto.*;
+import j86.j86.javax.crypto.spec.IvParameterSpec;
+import j86.j86.javax.crypto.spec.GCMParameterSpec;
 
-import java.nio.*;
+import j86.java.nio.*;
 
-import sun.security.ssl.CipherSuite.*;
-import static sun.security.ssl.CipherSuite.*;
-import static sun.security.ssl.CipherSuite.CipherType.*;
+import j86.sun.security.ssl.CipherSuite.*;
+import static j86.sun.security.ssl.CipherSuite.*;
+import static j86.sun.security.ssl.CipherSuite.CipherType.*;
 
-import sun.misc.HexDumpEncoder;
+import j86.sun.misc.HexDumpEncoder;
 
 
 /**

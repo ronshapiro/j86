@@ -20,17 +20,17 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.sun.org.apache.xml.internal.security.keys.content;
+package j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.content;
 
-import java.security.KeyFactory;
-import java.security.NoSuchAlgorithmException;
-import java.security.PublicKey;
-import java.security.spec.InvalidKeySpecException;
-import java.security.spec.X509EncodedKeySpec;
+import j86.java.security.KeyFactory;
+import j86.java.security.NoSuchAlgorithmException;
+import j86.java.security.PublicKey;
+import j86.j86.java.security.spec.InvalidKeySpecException;
+import j86.j86.java.security.spec.X509EncodedKeySpec;
 
-import com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
-import com.sun.org.apache.xml.internal.security.utils.Constants;
-import com.sun.org.apache.xml.internal.security.utils.Signature11ElementProxy;
+import j86.j86.com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.Constants;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.Signature11ElementProxy;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 

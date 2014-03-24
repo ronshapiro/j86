@@ -23,11 +23,11 @@
  * questions.
  */
 
-package java.awt.image;
+package j86.j86.j86.java.awt.image;
 
-import java.util.Hashtable;
-import java.awt.image.ImageConsumer;
-import java.awt.image.ImageFilter;
+import j86.java.util.Hashtable;
+import j86.j86.j86.java.awt.image.ImageConsumer;
+import j86.j86.j86.java.awt.image.ImageFilter;
 
 /**
  * The <code>BufferedImageFilter</code> class subclasses an

@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.swing.event;
+package j86.j86.javax.swing.event;
 
-import java.util.EventObject;
-import javax.swing.tree.TreePath;
+import j86.java.util.EventObject;
+import j86.j86.javax.swing.tree.TreePath;
 
 /**
  * An event that characterizes a change in the current
@@ -41,11 +41,11 @@ import javax.swing.tree.TreePath;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @see TreeSelectionListener
- * @see javax.swing.tree.TreeSelectionModel
+ * @see j86.j86.javax.swing.tree.TreeSelectionModel
  *
  * @author Scott Violet
  */

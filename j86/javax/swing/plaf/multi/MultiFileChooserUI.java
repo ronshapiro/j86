@@ -22,20 +22,20 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.plaf.multi;
+package j86.j86.j86.javax.swing.plaf.multi;
 
-import java.util.Vector;
-import javax.swing.plaf.FileChooserUI;
-import javax.swing.filechooser.FileFilter;
-import javax.swing.JFileChooser;
-import javax.swing.filechooser.FileView;
-import java.lang.String;
-import java.io.File;
-import javax.swing.plaf.ComponentUI;
-import javax.swing.JComponent;
-import java.awt.Graphics;
-import java.awt.Dimension;
-import javax.accessibility.Accessible;
+import j86.java.util.Vector;
+import j86.j86.javax.swing.plaf.FileChooserUI;
+import j86.j86.javax.swing.filechooser.FileFilter;
+import j86.javax.swing.JFileChooser;
+import j86.j86.javax.swing.filechooser.FileView;
+import j86.java.lang.String;
+import j86.java.io.File;
+import j86.j86.javax.swing.plaf.ComponentUI;
+import j86.javax.swing.JComponent;
+import j86.java.awt.Graphics;
+import j86.java.awt.Dimension;
+import j86.javax.accessibility.Accessible;
 
 /**
  * A multiplexing UI used to combine <code>FileChooserUI</code>s.

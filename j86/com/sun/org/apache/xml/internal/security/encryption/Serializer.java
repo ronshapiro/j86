@@ -20,9 +20,9 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.sun.org.apache.xml.internal.security.encryption;
+package j86.j86.com.sun.org.apache.xml.internal.security.encryption;
 
-import com.sun.org.apache.xml.internal.security.c14n.Canonicalizer;
+import j86.j86.com.sun.org.apache.xml.internal.security.c14n.Canonicalizer;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;

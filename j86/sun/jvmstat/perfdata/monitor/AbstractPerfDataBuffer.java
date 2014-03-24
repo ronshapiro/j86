@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.jvmstat.perfdata.monitor;
+package j86.sun.jvmstat.perfdata.monitor;
 
-import sun.misc.Perf;
-import sun.jvmstat.monitor.*;
-import java.util.*;
-import java.io.*;
-import java.lang.reflect.*;
-import java.nio.ByteBuffer;
+import j86.sun.misc.Perf;
+import j86.sun.jvmstat.monitor.*;
+import j86.java.util.*;
+import j86.java.io.*;
+import j86.j86.j86.java.lang.reflect.*;
+import j86.java.nio.ByteBuffer;
 
 /**
  * Abstraction for the HotSpot PerfData instrumentation buffer. This class
@@ -107,7 +107,7 @@ public abstract class AbstractPerfDataBuffer {
      * the name of each object matches the given pattern.
      *
      * @param patternString  a string containing a pattern as described in
-     *                       {@link java.util.regex.Pattern}.
+     *                       {@link j86.j86.java.util.regex.Pattern}.
      * @return List<Monitor> - a List of {@link Monitor} objects that can be used to
      *                monitor the instrumentation objects whose names match
      *                the given pattern. If no instrumentation objects have`
@@ -115,7 +115,7 @@ public abstract class AbstractPerfDataBuffer {
      *                is returned.
      * @throws MonitorException Thrown if an error occurs while communicating
      *                          with the target Java Virtual Machine.
-     * @see java.util.regex.Pattern
+     * @see j86.j86.java.util.regex.Pattern
      */
     public List<Monitor> findByPattern(String patternString) throws MonitorException {
         return impl.findByPattern(patternString);
@@ -163,14 +163,14 @@ public abstract class AbstractPerfDataBuffer {
         int minorVersion = AbstractPerfDataBufferPrologue.getMinorVersion(bb);
 
         // instantiate the version specific class
-        String classname = "sun.jvmstat.perfdata.monitor.v"
+        String classname = "j86.sun.jvmstat.perfdata.monitor.v"
                            + majorVersion + "_" + minorVersion
                            + ".PerfDataBuffer";
 
         try {
             Class<?> implClass = Class.forName(classname);
             Constructor cons = implClass.getConstructor(new Class[] {
-                    Class.forName("java.nio.ByteBuffer"),
+                    Class.forName("j86.java.nio.ByteBuffer"),
                     Integer.TYPE
             });
 

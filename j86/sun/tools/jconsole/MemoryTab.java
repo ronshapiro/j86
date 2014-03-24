@@ -23,25 +23,25 @@
  * questions.
  */
 
-package sun.tools.jconsole;
+package j86.sun.tools.jconsole;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.io.*;
-import java.lang.management.*;
-import java.lang.reflect.*;
-import java.util.*;
-import java.util.concurrent.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.java.io.*;
+import j86.j86.java.lang.management.*;
+import j86.j86.j86.java.lang.reflect.*;
+import j86.java.util.*;
+import j86.j86.java.util.concurrent.*;
 
-import javax.accessibility.*;
-import javax.management.*;
-import javax.management.openmbean.CompositeData;
-import javax.swing.*;
-import javax.swing.border.*;
+import j86.javax.accessibility.*;
+import j86.javax.management.*;
+import j86.j86.javax.management.openmbean.CompositeData;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.border.*;
 
 
-import static sun.tools.jconsole.Formatter.*;
-import static sun.tools.jconsole.Utilities.*;
+import static j86.sun.tools.jconsole.Formatter.*;
+import static j86.sun.tools.jconsole.Utilities.*;
 
 @SuppressWarnings("serial")
 class MemoryTab extends Tab implements ActionListener, ItemListener {
@@ -183,7 +183,7 @@ class MemoryTab extends Tab implements ActionListener, ItemListener {
         plotterList.add(nonHeapPlotter);
 
         // Now add memory pools
-        Map<ObjectName, MBeanInfo> mBeanMap = proxyClient.getMBeans("java.lang");
+        Map<ObjectName, MBeanInfo> mBeanMap = proxyClient.getMBeans("j86.java.lang");
         Set<ObjectName> keys = mBeanMap.keySet();
         ObjectName[] objectNames = keys.toArray(new ObjectName[keys.size()]);
         ArrayList<PoolPlotter> nonHeapPlotters = new ArrayList<PoolPlotter>(2);

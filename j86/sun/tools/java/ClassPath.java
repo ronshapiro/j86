@@ -23,13 +23,13 @@
  * questions.
  */
 
-package sun.tools.java;
+package j86.sun.tools.java;
 
-import java.util.Enumeration;
-import java.util.Hashtable;
-import java.io.File;
-import java.io.IOException;
-import java.util.zip.*;
+import j86.java.util.Enumeration;
+import j86.java.util.Hashtable;
+import j86.java.io.File;
+import j86.java.io.IOException;
+import j86.j86.java.util.zip.*;
 
 /**
  * This class is used to represent a class path, which can contain both

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.util;
+package j86.java.util;
 
 /**
  * An iterator for lists that allows the programmer

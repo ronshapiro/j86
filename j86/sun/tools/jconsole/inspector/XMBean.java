@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.tools.jconsole.inspector;
+package j86.j86.sun.tools.jconsole.inspector;
 
-import java.io.IOException;
-import javax.management.*;
-import javax.swing.Icon;
-import sun.tools.jconsole.JConsole;
-import sun.tools.jconsole.MBeansTab;
-import sun.tools.jconsole.ProxyClient.SnapshotMBeanServerConnection;
+import j86.java.io.IOException;
+import j86.javax.management.*;
+import j86.javax.swing.Icon;
+import j86.sun.tools.jconsole.JConsole;
+import j86.sun.tools.jconsole.MBeansTab;
+import j86.sun.tools.jconsole.ProxyClient.SnapshotMBeanServerConnection;
 
 public class XMBean {
 
@@ -71,7 +71,7 @@ public class XMBean {
                 try {
                     broadcaster = getMBeanServerConnection().isInstanceOf(
                             getObjectName(),
-                            "javax.management.NotificationBroadcaster");
+                            "j86.javax.management.NotificationBroadcaster");
                 } catch (Exception e) {
                     if (JConsole.isDebug()) {
                         System.err.println("Couldn't check if MBean [" +

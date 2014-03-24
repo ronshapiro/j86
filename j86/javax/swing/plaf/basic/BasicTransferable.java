@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.plaf.basic;
+package j86.j86.j86.javax.swing.plaf.basic;
 
-import java.io.*;
-import java.awt.datatransfer.*;
-import javax.swing.plaf.UIResource;
+import j86.java.io.*;
+import j86.j86.java.awt.datatransfer.*;
+import j86.j86.javax.swing.plaf.UIResource;
 
 /**
  * A transferable implementation for the default data transfer of some Swing
@@ -46,21 +46,21 @@ class BasicTransferable implements Transferable, UIResource {
     static {
         try {
             htmlFlavors = new DataFlavor[3];
-            htmlFlavors[0] = new DataFlavor("text/html;class=java.lang.String");
-            htmlFlavors[1] = new DataFlavor("text/html;class=java.io.Reader");
-            htmlFlavors[2] = new DataFlavor("text/html;charset=unicode;class=java.io.InputStream");
+            htmlFlavors[0] = new DataFlavor("text/html;class=j86.java.lang.String");
+            htmlFlavors[1] = new DataFlavor("text/html;class=j86.java.io.Reader");
+            htmlFlavors[2] = new DataFlavor("text/html;charset=unicode;class=j86.java.io.InputStream");
 
             plainFlavors = new DataFlavor[3];
-            plainFlavors[0] = new DataFlavor("text/plain;class=java.lang.String");
-            plainFlavors[1] = new DataFlavor("text/plain;class=java.io.Reader");
-            plainFlavors[2] = new DataFlavor("text/plain;charset=unicode;class=java.io.InputStream");
+            plainFlavors[0] = new DataFlavor("text/plain;class=j86.java.lang.String");
+            plainFlavors[1] = new DataFlavor("text/plain;class=j86.java.io.Reader");
+            plainFlavors[2] = new DataFlavor("text/plain;charset=unicode;class=j86.java.io.InputStream");
 
             stringFlavors = new DataFlavor[2];
-            stringFlavors[0] = new DataFlavor(DataFlavor.javaJVMLocalObjectMimeType+";class=java.lang.String");
+            stringFlavors[0] = new DataFlavor(DataFlavor.javaJVMLocalObjectMimeType+";class=j86.java.lang.String");
             stringFlavors[1] = DataFlavor.stringFlavor;
 
         } catch (ClassNotFoundException cle) {
-            System.err.println("error initializing javax.swing.plaf.basic.BasicTranserable");
+            System.err.println("error initializing j86.j86.j86.javax.swing.plaf.basic.BasicTranserable");
         }
     }
 

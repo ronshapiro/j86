@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.text;
+package j86.java.text;
 
 /**
  * DontCareFieldPosition defines no-op FieldDelegate. Its

@@ -22,20 +22,20 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text;
+package j86.j86.javax.swing.text;
 
-import java.util.*;
-import java.io.*;
-import java.awt.font.TextAttribute;
-import java.text.Bidi;
+import j86.java.util.*;
+import j86.java.io.*;
+import j86.j86.java.awt.font.TextAttribute;
+import j86.java.text.Bidi;
 
-import javax.swing.UIManager;
-import javax.swing.undo.*;
-import javax.swing.event.*;
-import javax.swing.tree.TreeNode;
+import j86.javax.swing.UIManager;
+import j86.j86.javax.swing.undo.*;
+import j86.j86.javax.swing.event.*;
+import j86.j86.javax.swing.tree.TreeNode;
 
-import sun.font.BidiUtils;
-import sun.swing.SwingUtilities2;
+import j86.sun.font.BidiUtils;
+import j86.sun.swing.SwingUtilities2;
 
 /**
  * An implementation of the document interface to serve as a
@@ -91,8 +91,8 @@ import sun.swing.SwingUtilities2;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @author  Timothy Prinzing
  */
@@ -122,8 +122,8 @@ public abstract class AbstractDocument implements Document, Serializable {
 
         if (defaultI18NProperty == null) {
             // determine default setting for i18n support
-            String o = java.security.AccessController.doPrivileged(
-                new java.security.PrivilegedAction<String>() {
+            String o = j86.java.security.AccessController.doPrivileged(
+                new j86.java.security.PrivilegedAction<String>() {
                     public String run() {
                         return System.getProperty(I18NProperty);
                     }
@@ -309,14 +309,14 @@ public abstract class AbstractDocument implements Document, Serializable {
      *
      * @param listenerType the type of listeners requested; this parameter
      *          should specify an interface that descends from
-     *          <code>java.util.EventListener</code>
+     *          <code>j86.java.util.EventListener</code>
      * @return an array of all objects registered as
      *          <code><em>Foo</em>Listener</code>s on this component,
      *          or an empty array if no such
      *          listeners have been added
      * @exception ClassCastException if <code>listenerType</code>
      *          doesn't specify a class or interface that implements
-     *          <code>java.util.EventListener</code>
+     *          <code>j86.java.util.EventListener</code>
      *
      * @see #getDocumentListeners
      * @see #getUndoableEditListeners
@@ -1758,8 +1758,8 @@ public abstract class AbstractDocument implements Document, Serializable {
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     public abstract class AbstractElement implements Element, MutableAttributeSet, Serializable, TreeNode {
 
@@ -2227,8 +2227,8 @@ public abstract class AbstractDocument implements Document, Serializable {
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     public class BranchElement extends AbstractElement {
 
@@ -2481,8 +2481,8 @@ public abstract class AbstractDocument implements Document, Serializable {
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      *
      * @see     Element
      */

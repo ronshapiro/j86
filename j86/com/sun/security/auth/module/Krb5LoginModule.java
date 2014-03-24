@@ -24,24 +24,24 @@
  */
 
 
-package com.sun.security.auth.module;
+package j86.j86.com.sun.security.auth.module;
 
-import java.io.*;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.text.MessageFormat;
-import java.util.*;
+import j86.java.io.*;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.text.MessageFormat;
+import j86.java.util.*;
 
-import javax.security.auth.*;
-import javax.security.auth.kerberos.*;
-import javax.security.auth.callback.*;
-import javax.security.auth.login.*;
-import javax.security.auth.spi.*;
+import j86.javax.security.auth.*;
+import j86.j86.javax.security.auth.kerberos.*;
+import j86.j86.javax.security.auth.callback.*;
+import j86.j86.javax.security.auth.login.*;
+import j86.j86.javax.security.auth.spi.*;
 
-import sun.security.krb5.*;
-import sun.security.jgss.krb5.Krb5Util;
-import sun.security.krb5.Credentials;
-import sun.misc.HexDumpEncoder;
+import j86.sun.security.krb5.*;
+import j86.j86.sun.security.jgss.krb5.Krb5Util;
+import j86.sun.security.krb5.Credentials;
+import j86.sun.misc.HexDumpEncoder;
 
 /**
  * <p> This <code>LoginModule</code> authenticates users using
@@ -82,7 +82,7 @@ import sun.misc.HexDumpEncoder;
  * by using the option <code>principal</code>. The principal name
  * can either be a simple user name, a service name such as
  * <code>host/mission.eng.sun.com</code>, or "*". The principal can also
- * be set using the system property <code>sun.security.krb5.principal</code>.
+ * be set using the system property <code>j86.sun.security.krb5.principal</code>.
  * This property is checked during login. If this property is not set, then
  * the principal name from the configuration is used. In the
  * case where the principal property is not set and the principal
@@ -162,7 +162,7 @@ import sun.misc.HexDumpEncoder;
  * credentials for multiple principals in the
  * <code>keyTab</code> or when you want a specific ticket cache only.
  * The principal can also be set using the system property
- * <code>sun.security.krb5.principal</code>. In addition, if this
+ * <code>j86.sun.security.krb5.principal</code>. In addition, if this
  * system property is defined, then it will be used. If this property
  * is not set, then the principal name from the configuration will be
  * used.
@@ -187,8 +187,8 @@ import sun.misc.HexDumpEncoder;
  *    <dt><b><code>useFirstPass</code></b>:</dt>
  *                   <dd>if, true, this LoginModule retrieves the
  *                   username and password from the module's shared state,
- *                   using "javax.security.auth.login.name" and
- *                   "javax.security.auth.login.password" as the respective
+ *                   using "j86.j86.javax.security.auth.login.name" and
+ *                   "j86.j86.javax.security.auth.login.password" as the respective
  *                   keys. The retrieved values are used for authentication.
  *                   If authentication fails, no attempt for a retry
  *                   is made, and the failure is reported back to the
@@ -197,8 +197,8 @@ import sun.misc.HexDumpEncoder;
  *    <dt><b><code>tryFirstPass</code></b>:</dt>
  *                   <dd>if, true, this LoginModule retrieves the
  *                   the username and password from the module's shared
- *                   state using "javax.security.auth.login.name" and
- *                   "javax.security.auth.login.password" as the respective
+ *                   state using "j86.j86.javax.security.auth.login.name" and
+ *                   "j86.j86.javax.security.auth.login.password" as the respective
  *                   keys.  The retrieved values are used for
  *                   authentication.
  *                   If authentication fails, the module uses the
@@ -211,8 +211,8 @@ import sun.misc.HexDumpEncoder;
  *                   <dd>if, true, this LoginModule stores the username and
  *                   password obtained from the CallbackHandler in the
  *                   modules shared state, using
- *                   "javax.security.auth.login.name" and
- *                   "javax.security.auth.login.password" as the respective
+ *                   "j86.j86.javax.security.auth.login.name" and
+ *                   "j86.j86.javax.security.auth.login.password" as the respective
  *                   keys.  This is not performed if existing values already
  *                   exist for the username and password in the shared
  *                   state, or if authentication fails.</dd>
@@ -224,7 +224,7 @@ import sun.misc.HexDumpEncoder;
  *                   (login and commit) have completed.</dd>
  * </dl></blockquote>
  * <p>If the principal system property or key is already provided, the value of
- * "javax.security.auth.login.name" in the shared state is ignored.
+ * "j86.j86.javax.security.auth.login.name" in the shared state is ignored.
  * <p>When multiple mechanisms to retrieve a ticket or key is provided, the
  * preference order is:
  * <ol>
@@ -430,13 +430,13 @@ public class Krb5LoginModule implements LoginModule {
     private boolean unboundServer = false;
     private char[] password = null;
 
-    private static final String NAME = "javax.security.auth.login.name";
-    private static final String PWD = "javax.security.auth.login.password";
+    private static final String NAME = "j86.j86.javax.security.auth.login.name";
+    private static final String PWD = "j86.j86.javax.security.auth.login.password";
     private static final ResourceBundle rb = AccessController.doPrivileged(
             new PrivilegedAction<ResourceBundle>() {
                 public ResourceBundle run() {
                     return ResourceBundle.getBundle(
-                            "sun.security.util.AuthResources");
+                            "j86.sun.security.util.AuthResources");
                 }
             }
     );
@@ -458,7 +458,7 @@ public class Krb5LoginModule implements LoginModule {
      *                  <code>LoginModule</code>.
      */
     // Unchecked warning from (Map<String, Object>)sharedState is safe
-    // since javax.security.auth.login.LoginContext passes a raw HashMap.
+    // since j86.j86.javax.security.auth.login.LoginContext passes a raw HashMap.
     // Unchecked warnings from options.get(String) are safe since we are
     // passing known keys.
     @SuppressWarnings("unchecked")
@@ -484,7 +484,7 @@ public class Krb5LoginModule implements LoginModule {
         ticketCacheName = (String)options.get("ticketCache");
         keyTabName = (String)options.get("keyTab");
         if (keyTabName != null) {
-            keyTabName = sun.security.krb5.internal.ktab.KeyTab.normalize(
+            keyTabName = j86.j86.j86.sun.security.krb5.internal.ktab.KeyTab.normalize(
                          keyTabName);
         }
         princName = (String)options.get("principal");
@@ -550,7 +550,7 @@ public class Krb5LoginModule implements LoginModule {
                 if (debug) {
                     System.out.println("Refreshing Kerberos configuration");
                 }
-                sun.security.krb5.Config.refresh();
+                j86.sun.security.krb5.Config.refresh();
             } catch (KrbException ke) {
                 LoginException le = new LoginException(ke.getMessage());
                 le.initCause(ke);
@@ -558,7 +558,7 @@ public class Krb5LoginModule implements LoginModule {
             }
         }
         String principalProperty = System.getProperty
-            ("sun.security.krb5.principal");
+            ("j86.sun.security.krb5.principal");
         if (principalProperty != null) {
             krb5PrincName = new StringBuffer(principalProperty);
         } else {
@@ -861,7 +861,7 @@ public class Krb5LoginModule implements LoginModule {
                     username = defUsername;
                 krb5PrincName.insert(0, username);
 
-            } catch (java.io.IOException ioe) {
+            } catch (j86.java.io.IOException ioe) {
                 throw new LoginException(ioe.getMessage());
             } catch (UnsupportedCallbackException uce) {
                 throw new LoginException
@@ -934,7 +934,7 @@ public class Krb5LoginModule implements LoginModule {
                                        krb5PrincName);
                     System.out.println();
                 }
-            } catch (java.io.IOException ioe) {
+            } catch (j86.java.io.IOException ioe) {
                 throw new LoginException(ioe.getMessage());
             } catch (UnsupportedCallbackException uce) {
                 throw new LoginException(uce.getMessage()
@@ -1068,7 +1068,7 @@ public class Krb5LoginModule implements LoginModule {
              */
 
             Set<Object> privCredSet =  subject.getPrivateCredentials();
-            Set<java.security.Principal> princSet  = subject.getPrincipals();
+            Set<j86.java.security.Principal> princSet  = subject.getPrincipals();
             kerbClientPrinc = new KerberosPrincipal(principal.getName());
 
             // create Kerberos Ticket

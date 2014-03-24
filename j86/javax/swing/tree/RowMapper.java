@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.swing.tree;
+package j86.j86.javax.swing.tree;
 
-import javax.swing.tree.TreePath;
+import j86.j86.javax.swing.tree.TreePath;
 
 /**
  * Defines the requirements for an object that translates paths in

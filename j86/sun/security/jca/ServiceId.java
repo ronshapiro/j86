@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.security.jca;
+package j86.sun.security.jca;
 
 /**
  * Simple class encapsulating a service type and algorithm for lookup.

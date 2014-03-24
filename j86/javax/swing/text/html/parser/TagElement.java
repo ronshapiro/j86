@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.swing.text.html.parser;
+package j86.j86.j86.j86.javax.swing.text.html.parser;
 
-import javax.swing.text.html.HTML;
+import j86.j86.j86.javax.swing.text.html.HTML;
 /**
  * A generic HTML TagElement class. The methods define how white
  * space is interpreted around the tag.

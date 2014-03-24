@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.sound.midi;
+package j86.javax.sound.midi;
 
 /**
  * <code>MidiMessage</code> is the base class for MIDI messages.  They include

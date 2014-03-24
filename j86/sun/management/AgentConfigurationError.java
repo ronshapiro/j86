@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.management;
+package j86.sun.management;
 
 /**
  * Configuration Error thrown by a management agent.

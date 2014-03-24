@@ -28,7 +28,7 @@
 // No warranty; no copyright -- use this as you will.
 // $Id: ErrorHandler.java,v 1.2 2004/11/03 22:44:52 jsuttor Exp $
 
-package jdk.internal.org.xml.sax;
+package j86.jdk.internal.org.xml.sax;
 
 
 /**

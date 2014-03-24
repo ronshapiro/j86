@@ -23,29 +23,29 @@
  * questions.
  */
 
-package com.sun.imageio.plugins.wbmp;
+package j86.com.sun.imageio.plugins.wbmp;
 
-import java.awt.Rectangle;
-import java.awt.image.BufferedImage;
-import java.awt.image.DataBufferByte;
-import java.awt.image.MultiPixelPackedSampleModel;
-import java.awt.image.Raster;
-import java.awt.image.WritableRaster;
+import j86.java.awt.Rectangle;
+import j86.j86.j86.java.awt.image.BufferedImage;
+import j86.j86.j86.java.awt.image.DataBufferByte;
+import j86.j86.j86.java.awt.image.MultiPixelPackedSampleModel;
+import j86.j86.j86.java.awt.image.Raster;
+import j86.j86.j86.java.awt.image.WritableRaster;
 
-import javax.imageio.IIOException;
-import javax.imageio.ImageReader;
-import javax.imageio.ImageReadParam;
-import javax.imageio.ImageTypeSpecifier;
-import javax.imageio.metadata.IIOMetadata;
-import javax.imageio.spi.ImageReaderSpi;
-import javax.imageio.stream.ImageInputStream;
+import j86.javax.imageio.IIOException;
+import j86.javax.imageio.ImageReader;
+import j86.javax.imageio.ImageReadParam;
+import j86.javax.imageio.ImageTypeSpecifier;
+import j86.j86.javax.imageio.metadata.IIOMetadata;
+import j86.j86.javax.imageio.spi.ImageReaderSpi;
+import j86.j86.javax.imageio.stream.ImageInputStream;
 
-import java.io.*;
-import java.util.ArrayList;
-import java.util.Iterator;
+import j86.java.io.*;
+import j86.java.util.ArrayList;
+import j86.java.util.Iterator;
 
-import com.sun.imageio.plugins.common.I18N;
-import com.sun.imageio.plugins.common.ReaderUtil;
+import j86.com.sun.imageio.plugins.common.I18N;
+import j86.com.sun.imageio.plugins.common.ReaderUtil;
 
 /** This class is the Java Image IO plugin reader for WBMP images.
  *  It may subsample the image, clip the image,

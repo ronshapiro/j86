@@ -22,12 +22,12 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.media.sound;
+package j86.com.sun.media.sound;
 
-import java.util.Random;
+import j86.java.util.Random;
 
-import javax.sound.midi.Patch;
-import javax.sound.sampled.AudioFormat;
+import j86.javax.sound.midi.Patch;
+import j86.javax.sound.sampled.AudioFormat;
 
 /**
  * Emergency Soundbank generator.

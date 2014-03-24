@@ -23,20 +23,20 @@
  * questions.
  */
 
-package sun.awt;
+package j86.sun.awt;
 
-import java.awt.*;
-import java.awt.dnd.*;
-import java.awt.dnd.peer.DragSourceContextPeer;
-import java.awt.event.*;
-import java.awt.im.InputMethodHighlight;
-import java.awt.image.*;
-import java.awt.datatransfer.Clipboard;
-import java.awt.peer.*;
-import java.beans.PropertyChangeListener;
-import java.net.URL;
-import java.util.Map;
-import java.util.Properties;
+import j86.java.awt.*;
+import j86.j86.java.awt.dnd.*;
+import j86.j86.j86.java.awt.dnd.peer.DragSourceContextPeer;
+import j86.j86.java.awt.event.*;
+import j86.j86.java.awt.im.InputMethodHighlight;
+import j86.j86.j86.java.awt.image.*;
+import j86.j86.java.awt.datatransfer.Clipboard;
+import j86.j86.java.awt.peer.*;
+import j86.java.beans.PropertyChangeListener;
+import j86.java.net.URL;
+import j86.java.util.Map;
+import j86.java.util.Properties;
 
 public class HeadlessToolkit extends Toolkit
     implements ComponentFactory, KeyboardFocusManagerPeerProvider {

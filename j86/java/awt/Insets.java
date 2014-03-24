@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.awt;
+package j86.java.awt;
 
 /**
  * An <code>Insets</code> object is a representation of the borders
@@ -33,11 +33,11 @@ package java.awt;
  *
  * @author      Arthur van Hoff
  * @author      Sami Shaio
- * @see         java.awt.LayoutManager
- * @see         java.awt.Container
+ * @see         j86.java.awt.LayoutManager
+ * @see         j86.java.awt.Container
  * @since       JDK1.0
  */
-public class Insets implements Cloneable, java.io.Serializable {
+public class Insets implements Cloneable, j86.java.io.Serializable {
 
     /**
      * The inset from the top.

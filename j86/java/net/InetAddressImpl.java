@@ -23,14 +23,14 @@
  * questions.
  */
 
-package java.net;
-import java.io.IOException;
+package j86.java.net;
+import j86.java.io.IOException;
 /*
  * Package private interface to "implementation" used by
  * {@link InetAddress}.
  * <p>
- * See {@link java.net.Inet4AddressImp} and
- * {@link java.net.Inet6AddressImp}.
+ * See {@link j86.java.net.Inet4AddressImp} and
+ * {@link j86.java.net.Inet6AddressImp}.
  *
  * @since 1.4
  */

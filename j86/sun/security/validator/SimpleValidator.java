@@ -23,24 +23,24 @@
  * questions.
  */
 
-package sun.security.validator;
+package j86.sun.security.validator;
 
-import java.io.IOException;
-import java.util.*;
+import j86.java.io.IOException;
+import j86.java.util.*;
 
-import java.security.*;
-import java.security.cert.*;
+import j86.java.security.*;
+import j86.j86.java.security.cert.*;
 
-import javax.security.auth.x500.X500Principal;
+import j86.j86.javax.security.auth.x500.X500Principal;
 
-import sun.security.x509.X509CertImpl;
-import sun.security.x509.NetscapeCertTypeExtension;
-import sun.security.util.DerValue;
-import sun.security.util.DerInputStream;
-import sun.security.util.ObjectIdentifier;
+import j86.sun.security.x509.X509CertImpl;
+import j86.sun.security.x509.NetscapeCertTypeExtension;
+import j86.sun.security.util.DerValue;
+import j86.sun.security.util.DerInputStream;
+import j86.sun.security.util.ObjectIdentifier;
 
-import sun.security.provider.certpath.AlgorithmChecker;
-import sun.security.provider.certpath.UntrustedChecker;
+import j86.j86.sun.security.provider.certpath.AlgorithmChecker;
+import j86.j86.sun.security.provider.certpath.UntrustedChecker;
 
 /**
  * A simple validator implementation. It is based on code from the JSSE

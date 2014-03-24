@@ -23,10 +23,10 @@
  * questions.
  */
 
-package com.sun.media.sound;
+package j86.com.sun.media.sound;
 
-import javax.sound.sampled.AudioFileFormat;
-import javax.sound.sampled.AudioFormat;
+import j86.javax.sound.sampled.AudioFileFormat;
+import j86.javax.sound.sampled.AudioFormat;
 
 
 /**

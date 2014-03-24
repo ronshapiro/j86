@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.jvmstat.perfdata.monitor.protocol.file;
+package j86.j86.sun.jvmstat.perfdata.monitor.protocol.file;
 
-import sun.jvmstat.monitor.*;
-import sun.jvmstat.monitor.event.VmListener;
-import sun.jvmstat.perfdata.monitor.*;
-import java.util.List;
-import java.lang.reflect.*;
-import java.io.*;
+import j86.sun.jvmstat.monitor.*;
+import j86.j86.sun.jvmstat.monitor.event.VmListener;
+import j86.sun.jvmstat.perfdata.monitor.*;
+import j86.java.util.List;
+import j86.j86.j86.java.lang.reflect.*;
+import j86.java.io.*;
 
 /**
  * Concrete implementation of the AbstractMonitoredVm class for the

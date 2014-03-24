@@ -22,9 +22,9 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.rmi.server;
+package j86.j86.java.rmi.server;
 
-import java.rmi.Remote;
+import j86.java.rmi.Remote;
 
 /**
  * The <code>Skeleton</code> interface is used solely by the RMI
@@ -51,7 +51,7 @@ public interface Skeleton {
      * @param theCall object representing remote call
      * @param opnum operation number
      * @param hash stub/skeleton interface hash
-     * @exception java.lang.Exception if a general exception occurs.
+     * @exception j86.java.lang.Exception if a general exception occurs.
      * @since JDK1.1
      * @deprecated no replacement
      */

@@ -56,10 +56,10 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-package jdk.internal.org.objectweb.asm;
+package j86.jdk.internal.org.objectweb.asm;
 
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Method;
+import j86.j86.j86.java.lang.reflect.Constructor;
+import j86.j86.j86.java.lang.reflect.Method;
 
 /**
  * A Java field or method type. This class can be used to make it easier to

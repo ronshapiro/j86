@@ -24,13 +24,13 @@
  */
 
 
-package javax.management.remote;
+package j86.j86.javax.management.remote;
 
-import java.io.IOException;
-import java.io.InvalidObjectException;
-import java.io.ObjectInputStream;
-import java.io.Serializable;
-import java.security.Principal;
+import j86.java.io.IOException;
+import j86.java.io.InvalidObjectException;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.Serializable;
+import j86.java.security.Principal;
 
 /**
  * <p>The identity of a remote client of the JMX Remote API.</p>
@@ -38,13 +38,13 @@ import java.security.Principal;
  * <p>Principals such as this <code>JMXPrincipal</code>
  * may be associated with a particular <code>Subject</code>
  * to augment that <code>Subject</code> with an additional
- * identity.  Refer to the {@link javax.security.auth.Subject}
+ * identity.  Refer to the {@link j86.javax.security.auth.Subject}
  * class for more information on how to achieve this.
  * Authorization decisions can then be based upon
  * the Principals associated with a <code>Subject</code>.
  *
- * @see java.security.Principal
- * @see javax.security.auth.Subject
+ * @see j86.java.security.Principal
+ * @see j86.javax.security.auth.Subject
  * @since 1.5
  */
 public class JMXPrincipal implements Principal, Serializable {

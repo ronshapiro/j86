@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.swing.plaf;
+package j86.j86.javax.swing.plaf;
 
-import java.awt.Insets;
-import javax.swing.JToolBar;
+import j86.java.awt.Insets;
+import j86.javax.swing.JToolBar;
 
 /**
  * Pluggable look and feel interface for JToolBar.

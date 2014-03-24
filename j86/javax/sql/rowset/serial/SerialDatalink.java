@@ -23,11 +23,11 @@
  * questions.
  */
 
-package javax.sql.rowset.serial;
+package j86.j86.j86.javax.sql.rowset.serial;
 
-import java.sql.*;
-import java.io.*;
-import java.net.URL;
+import j86.java.sql.*;
+import j86.java.io.*;
+import j86.java.net.URL;
 
 
 /**
@@ -37,10 +37,10 @@ import java.net.URL;
  * data source manages.
  * <P>
  * <code>RowSet</code> implementations can use the method <code>RowSet.getURL</code>
- * to retrieve a <code>java.net.URL</code> object, which can be used
+ * to retrieve a <code>j86.java.net.URL</code> object, which can be used
  * to manipulate the external data.
  * <pre>
- *      java.net.URL url = rowset.getURL(1);
+ *      j86.java.net.URL url = rowset.getURL(1);
  * </pre>
  *
  * <h3> Thread safety </h3>
@@ -60,7 +60,7 @@ public class SerialDatalink implements Serializable, Cloneable {
     /**
      * The SQL type of the elements in this <code>SerialDatalink</code>
      * object.  The type is expressed as one of the contants from the
-     * class <code>java.sql.Types</code>.
+     * class <code>j86.java.sql.Types</code>.
      * @serial
      */
     private int baseType;
@@ -75,7 +75,7 @@ public class SerialDatalink implements Serializable, Cloneable {
 
     /**
       * Constructs a new <code>SerialDatalink</code> object from the given
-      * <code>java.net.URL</code> object.
+      * <code>j86.java.net.URL</code> object.
       * <P>
       * @param url the {@code URL} to create the {@code SerialDataLink} from
       * @throws SerialException if url parameter is a null
@@ -101,7 +101,7 @@ public class SerialDatalink implements Serializable, Cloneable {
 
         try {
             aURL = new URL((this.url).toString());
-        } catch (java.net.MalformedURLException e) {
+        } catch (j86.java.net.MalformedURLException e) {
             throw new SerialException("MalformedURLException: " + e.getMessage());
         }
         return aURL;

@@ -160,7 +160,7 @@
       </uiproperties>
    </style>
    <components>
-      <uiComponent opaque="false" type="javax.swing.plaf.synth.SynthArrowButton" name="ArrowButton" ui="SynthArrowButtonUI" subregion="true">
+      <uiComponent opaque="false" type="j86.j86.j86.javax.swing.plaf.synth.SynthArrowButton" name="ArrowButton" ui="SynthArrowButtonUI" subregion="true">
          <stateTypes/>
          <contentMargins top="0" bottom="0" left="0" right="0"/>
          <style>
@@ -266,7 +266,7 @@
          <borderStates/>
          <regions/>
       </uiComponent>
-      <uiComponent opaque="false" type="javax.swing.JButton" name="Button" ui="ButtonUI" subregion="false">
+      <uiComponent opaque="false" type="j86.javax.swing.JButton" name="Button" ui="ButtonUI" subregion="false">
          <stateTypes/>
          <contentMargins top="6" bottom="6" left="14" right="14"/>
          <style>
@@ -1112,7 +1112,7 @@
          <borderStates/>
          <regions/>
       </uiComponent>
-      <uiComponent opaque="false" type="javax.swing.JToggleButton" name="ToggleButton" ui="ToggleButtonUI" subregion="false">
+      <uiComponent opaque="false" type="j86.javax.swing.JToggleButton" name="ToggleButton" ui="ToggleButtonUI" subregion="false">
          <stateTypes/>
          <contentMargins top="6" bottom="6" left="14" right="14"/>
          <style>
@@ -2000,7 +2000,7 @@
          <borderStates/>
          <regions/>
       </uiComponent>
-      <uiComponent opaque="false" type="javax.swing.JRadioButton" name="RadioButton" ui="RadioButtonUI" subregion="false">
+      <uiComponent opaque="false" type="j86.javax.swing.JRadioButton" name="RadioButton" ui="RadioButtonUI" subregion="false">
          <stateTypes/>
          <contentMargins top="0" bottom="0" left="0" right="0"/>
          <style>
@@ -3110,7 +3110,7 @@
             </uiIconRegion>
          </regions>
       </uiComponent>
-      <uiComponent opaque="false" type="javax.swing.JCheckBox" name="CheckBox" ui="CheckBoxUI" subregion="false">
+      <uiComponent opaque="false" type="j86.javax.swing.JCheckBox" name="CheckBox" ui="CheckBoxUI" subregion="false">
          <stateTypes/>
          <contentMargins top="0" bottom="0" left="0" right="0"/>
          <style>
@@ -4096,7 +4096,7 @@
             </uiIconRegion>
          </regions>
       </uiComponent>
-      <uiComponent opaque="false" type="javax.swing.JColorChooser" name="ColorChooser" ui="ColorChooserUI" subregion="false">
+      <uiComponent opaque="false" type="j86.javax.swing.JColorChooser" name="ColorChooser" ui="ColorChooserUI" subregion="false">
          <stateTypes/>
          <contentMargins top="5" bottom="0" left="0" right="0"/>
          <style>
@@ -4115,7 +4115,7 @@
          <foregroundStates/>
          <borderStates/>
          <regions>
-            <uiComponent opaque="false" componentName="ColorChooser.previewPanelHolder" type="javax.swing.JPanel" name="Panel" ui="PanelUI" subregion="true">
+            <uiComponent opaque="false" componentName="ColorChooser.previewPanelHolder" type="j86.javax.swing.JPanel" name="Panel" ui="PanelUI" subregion="true">
                <stateTypes/>
                <contentMargins top="0" bottom="10" left="5" right="5"/>
                <style>
@@ -4151,7 +4151,7 @@
                <foregroundStates/>
                <borderStates/>
                <regions>
-                  <uiComponent opaque="false" componentName="OptionPane.label" type="javax.swing.JLabel" name="Label" ui="LabelUI" subregion="true">
+                  <uiComponent opaque="false" componentName="OptionPane.label" type="j86.javax.swing.JLabel" name="Label" ui="LabelUI" subregion="true">
                      <stateTypes/>
                      <contentMargins top="0" bottom="10" left="10" right="10"/>
                      <style>
@@ -4192,7 +4192,7 @@
             </uiComponent>
          </regions>
       </uiComponent>
-      <uiComponent opaque="false" type="javax.swing.JComboBox" name="ComboBox" ui="ComboBoxUI" subregion="false">
+      <uiComponent opaque="false" type="j86.javax.swing.JComboBox" name="ComboBox" ui="ComboBoxUI" subregion="false">
          <stateTypes>
             <stateType key="Enabled"/>
             <stateType key="MouseOver"/>
@@ -5593,7 +5593,7 @@
          <foregroundStates/>
          <borderStates/>
          <regions>
-            <uiComponent opaque="false" componentName="ComboBox.textField" type="javax.swing.JTextField" name="TextField" ui="TextFieldUI" subregion="true">
+            <uiComponent opaque="false" componentName="ComboBox.textField" type="j86.javax.swing.JTextField" name="TextField" ui="TextFieldUI" subregion="true">
                <stateTypes/>
                <contentMargins top="0" bottom="0" left="6" right="3"/>
                <style>
@@ -5817,7 +5817,7 @@
                <borderStates/>
                <regions/>
             </uiComponent>
-            <uiComponent opaque="false" componentName="ComboBox.arrowButton" type="javax.swing.plaf.synth.SynthArrowButton" name="ArrowButton" ui="ArrowButtonUI" subregion="true">
+            <uiComponent opaque="false" componentName="ComboBox.arrowButton" type="j86.j86.j86.javax.swing.plaf.synth.SynthArrowButton" name="ArrowButton" ui="ArrowButtonUI" subregion="true">
                <stateTypes>
                   <stateType key="Enabled"/>
                   <stateType key="MouseOver"/>
@@ -6672,7 +6672,7 @@
                <borderStates/>
                <regions/>
             </uiComponent>
-            <uiComponent opaque="true" componentName="ComboBox.listRenderer" type="javax.swing.JLabel" name="Label" ui="LabelUI" subregion="true">
+            <uiComponent opaque="true" componentName="ComboBox.listRenderer" type="j86.javax.swing.JLabel" name="Label" ui="LabelUI" subregion="true">
                <stateTypes/>
                <contentMargins top="2" bottom="2" left="4" right="4"/>
                <style>
@@ -6747,7 +6747,7 @@
                <borderStates/>
                <regions/>
             </uiComponent>
-            <uiComponent opaque="false" componentName="ComboBox.renderer" type="javax.swing.JLabel" name="Label" ui="LabelUI" subregion="true">
+            <uiComponent opaque="false" componentName="ComboBox.renderer" type="j86.javax.swing.JLabel" name="Label" ui="LabelUI" subregion="true">
                <stateTypes/>
                <contentMargins top="2" bottom="2" left="4" right="4"/>
                <style>
@@ -6821,7 +6821,7 @@
             </uiComponent>
          </regions>
       </uiComponent>
-      <uiComponent opaque="false" componentName="ComboBox.scrollPane" type="javax.swing.JScrollPane" name="ScrollPane" ui="ScrollPaneUI" subregion="false">
+      <uiComponent opaque="false" componentName="ComboBox.scrollPane" type="j86.javax.swing.JScrollPane" name="ScrollPane" ui="ScrollPaneUI" subregion="false">
          <stateTypes/>
          <contentMargins top="0" bottom="0" left="0" right="0"/>
          <style>
@@ -6861,7 +6861,7 @@
          <borderStates/>
          <regions/>
       </uiComponent>
-      <uiComponent opaque="true" type="javax.swing.JFileChooser" name="FileChooser" ui="FileChooserUI" subregion="false">
+      <uiComponent opaque="true" type="j86.javax.swing.JFileChooser" name="FileChooser" ui="FileChooserUI" subregion="false">
          <stateTypes/>
          <contentMargins top="10" bottom="10" left="10" right="10"/>
          <style>
@@ -8790,7 +8790,7 @@
             </uiIconRegion>
          </regions>
       </uiComponent>
-      <uiComponent opaque="false" type="javax.swing.plaf.synth.SynthInternalFrameTitlePane" name="InternalFrameTitlePane" ui="ComponentUI" subregion="false">
+      <uiComponent opaque="false" type="j86.j86.j86.javax.swing.plaf.synth.SynthInternalFrameTitlePane" name="InternalFrameTitlePane" ui="ComponentUI" subregion="false">
          <stateTypes/>
          <contentMargins top="0" bottom="0" left="0" right="0"/>
          <style>
@@ -8808,7 +8808,7 @@
          <borderStates/>
          <regions/>
       </uiComponent>
-      <uiComponent opaque="false" type="javax.swing.JInternalFrame" name="InternalFrame" ui="InternalFrameUI" subregion="false">
+      <uiComponent opaque="false" type="j86.javax.swing.JInternalFrame" name="InternalFrame" ui="InternalFrameUI" subregion="false">
          <stateTypes>
             <stateType key="Enabled"/>
             <stateType key="WindowFocused">
@@ -9150,7 +9150,7 @@
                <foregroundStates/>
                <borderStates/>
                <regions>
-                  <uiComponent opaque="false" componentName="InternalFrameTitlePane.menuButton" type="javax.swing.JButton" name="Button" ui="ButtonUI" subregion="true">
+                  <uiComponent opaque="false" componentName="InternalFrameTitlePane.menuButton" type="j86.javax.swing.JButton" name="Button" ui="ButtonUI" subregion="true">
                      <stateTypes>
                         <stateType key="Enabled"/>
                         <stateType key="MouseOver"/>
@@ -9832,7 +9832,7 @@
                             </uiIconRegion>
                      </regions>
                   </uiComponent>
-                  <uiComponent opaque="false" componentName="InternalFrameTitlePane.iconifyButton" type="javax.swing.JButton" name="Button" ui="ButtonUI" subregion="true">
+                  <uiComponent opaque="false" componentName="InternalFrameTitlePane.iconifyButton" type="j86.javax.swing.JButton" name="Button" ui="ButtonUI" subregion="true">
                      <stateTypes>
                         <stateType key="Enabled"/>
                         <stateType key="MouseOver"/>
@@ -10557,7 +10557,7 @@
                      <borderStates/>
                      <regions/>
                   </uiComponent>
-                  <uiComponent opaque="false" componentName="InternalFrameTitlePane.maximizeButton" type="javax.swing.JButton" name="Button" ui="ButtonUI" subregion="true">
+                  <uiComponent opaque="false" componentName="InternalFrameTitlePane.maximizeButton" type="j86.javax.swing.JButton" name="Button" ui="ButtonUI" subregion="true">
                      <stateTypes>
                         <stateType key="Enabled"/>
                         <stateType key="MouseOver"/>
@@ -12284,7 +12284,7 @@
                      <borderStates/>
                      <regions/>
                   </uiComponent>
-                  <uiComponent opaque="false" componentName="InternalFrameTitlePane.closeButton" type="javax.swing.JButton" name="Button" ui="ButtonUI" subregion="true">
+                  <uiComponent opaque="false" componentName="InternalFrameTitlePane.closeButton" type="j86.javax.swing.JButton" name="Button" ui="ButtonUI" subregion="true">
                      <stateTypes>
                         <stateType key="Enabled"/>
                         <stateType key="MouseOver"/>
@@ -13068,7 +13068,7 @@
             </region>
          </regions>
       </uiComponent>
-      <uiComponent opaque="false" type="javax.swing.JInternalFrame.JDesktopIcon" name="DesktopIcon" ui="DesktopIconUI" subregion="false">
+      <uiComponent opaque="false" type="j86.javax.swing.JInternalFrame.JDesktopIcon" name="DesktopIcon" ui="DesktopIconUI" subregion="false">
          <stateTypes/>
          <contentMargins top="4" bottom="5" left="6" right="4"/>
          <style>
@@ -13138,7 +13138,7 @@
          <borderStates/>
          <regions/>
       </uiComponent>
-      <uiComponent opaque="true" type="javax.swing.JDesktopPane" name="DesktopPane" ui="DesktopPaneUI" subregion="false">
+      <uiComponent opaque="true" type="j86.javax.swing.JDesktopPane" name="DesktopPane" ui="DesktopPaneUI" subregion="false">
          <stateTypes/>
          <contentMargins top="0" bottom="0" left="0" right="0"/>
          <style>
@@ -13352,7 +13352,7 @@
          <borderStates/>
          <regions/>
       </uiComponent>
-      <uiComponent opaque="false" type="javax.swing.JLabel" name="Label" ui="LabelUI" subregion="false">
+      <uiComponent opaque="false" type="j86.javax.swing.JLabel" name="Label" ui="LabelUI" subregion="false">
          <stateTypes/>
          <contentMargins top="0" bottom="0" left="0" right="0"/>
          <style>
@@ -13394,7 +13394,7 @@
          <borderStates/>
          <regions/>
       </uiComponent>
-      <uiComponent opaque="true" type="javax.swing.JList" name="List" ui="ListUI" subregion="false">
+      <uiComponent opaque="true" type="j86.javax.swing.JList" name="List" ui="ListUI" subregion="false">
          <stateTypes/>
          <contentMargins top="0" bottom="0" left="0" right="0"/>
          <style>
@@ -13503,7 +13503,7 @@
          <foregroundStates/>
          <borderStates/>
          <regions>
-            <uiComponent opaque="true" componentName="List.cellRenderer" type="javax.swing.JLabel" name="Label" ui="LabelUI" subregion="true">
+            <uiComponent opaque="true" componentName="List.cellRenderer" type="j86.javax.swing.JLabel" name="Label" ui="LabelUI" subregion="true">
                <stateTypes/>
                <contentMargins top="0" bottom="0" left="0" right="0"/>
                <style>
@@ -13548,7 +13548,7 @@
             </uiComponent>
          </regions>
       </uiComponent>
-      <uiComponent opaque="false" type="javax.swing.JMenuBar" name="MenuBar" ui="MenuBarUI" subregion="false">
+      <uiComponent opaque="false" type="j86.javax.swing.JMenuBar" name="MenuBar" ui="MenuBarUI" subregion="false">
          <stateTypes/>
          <contentMargins top="2" bottom="2" left="6" right="6"/>
          <style>
@@ -13646,7 +13646,7 @@
             </state>
          </borderStates>
          <regions>
-            <uiComponent opaque="false" type="javax.swing.JMenu" name="Menu" ui="MenuUI" subregion="false">
+            <uiComponent opaque="false" type="j86.javax.swing.JMenu" name="Menu" ui="MenuUI" subregion="false">
                <stateTypes/>
                <contentMargins top="1" bottom="2" left="4" right="4"/>
                <style>
@@ -13826,7 +13826,7 @@
             </uiComponent>
          </regions>
       </uiComponent>
-      <uiComponent opaque="false" type="javax.swing.JMenuItem" name="MenuItem" ui="MenuItemUI" subregion="false">
+      <uiComponent opaque="false" type="j86.javax.swing.JMenuItem" name="MenuItem" ui="MenuItemUI" subregion="false">
          <stateTypes/>
          <contentMargins top="1" bottom="2" left="12" right="13"/>
          <style>
@@ -14014,7 +14014,7 @@
             </region>
          </regions>
       </uiComponent>
-      <uiComponent opaque="false" type="javax.swing.JRadioButtonMenuItem" name="RadioButtonMenuItem" ui="RadioButtonMenuItemUI" subregion="false">
+      <uiComponent opaque="false" type="j86.javax.swing.JRadioButtonMenuItem" name="RadioButtonMenuItem" ui="RadioButtonMenuItemUI" subregion="false">
          <stateTypes/>
          <contentMargins top="1" bottom="2" left="12" right="13"/>
          <style>
@@ -14451,7 +14451,7 @@
             </uiIconRegion>
          </regions>
       </uiComponent>
-      <uiComponent opaque="false" type="javax.swing.JCheckBoxMenuItem" name="CheckBoxMenuItem" ui="CheckBoxMenuItemUI" subregion="false">
+      <uiComponent opaque="false" type="j86.javax.swing.JCheckBoxMenuItem" name="CheckBoxMenuItem" ui="CheckBoxMenuItemUI" subregion="false">
          <stateTypes/>
          <contentMargins top="1" bottom="2" left="12" right="13"/>
          <style>
@@ -14815,7 +14815,7 @@
             </region>
          </regions>
       </uiComponent>
-      <uiComponent opaque="false" type="javax.swing.JMenu" name="Menu" ui="MenuUI" subregion="false">
+      <uiComponent opaque="false" type="j86.javax.swing.JMenu" name="Menu" ui="MenuUI" subregion="false">
          <stateTypes/>
          <contentMargins top="1" bottom="2" left="12" right="5"/>
          <style>
@@ -15131,7 +15131,7 @@
             </region>
          </regions>
       </uiComponent>
-      <uiComponent opaque="true" type="javax.swing.JPopupMenu" name="PopupMenu" ui="PopupMenuUI" subregion="false">
+      <uiComponent opaque="true" type="j86.javax.swing.JPopupMenu" name="PopupMenu" ui="PopupMenuUI" subregion="false">
          <stateTypes/>
          <contentMargins top="6" bottom="6" left="1" right="1"/>
          <style>
@@ -15255,7 +15255,7 @@
          <borderStates/>
          <regions/>
       </uiComponent>
-      <uiComponent opaque="false" type="javax.swing.JPopupMenu$Separator" name="PopupMenuSeparator" ui="PopupMenuSeparatorUI" subregion="false">
+      <uiComponent opaque="false" type="j86.javax.swing.JPopupMenu$Separator" name="PopupMenuSeparator" ui="PopupMenuSeparatorUI" subregion="false">
          <stateTypes/>
          <contentMargins top="1" bottom="2" left="0" right="0"/>
          <style>
@@ -15301,7 +15301,7 @@
          <borderStates/>
          <regions/>
       </uiComponent>
-      <uiComponent opaque="true" type="javax.swing.JOptionPane" name="OptionPane" ui="OptionPaneUI" subregion="false">
+      <uiComponent opaque="true" type="j86.javax.swing.JOptionPane" name="OptionPane" ui="OptionPaneUI" subregion="false">
          <stateTypes/>
          <contentMargins top="15" bottom="15" left="15" right="15"/>
          <style>
@@ -15346,7 +15346,7 @@
          <foregroundStates/>
          <borderStates/>
          <regions>
-            <uiComponent opaque="false" componentName="OptionPane.separator" type="javax.swing.JSeparator" name="Separator" ui="SeparatorUI" subregion="true">
+            <uiComponent opaque="false" componentName="OptionPane.separator" type="j86.javax.swing.JSeparator" name="Separator" ui="SeparatorUI" subregion="true">
                <stateTypes/>
                <contentMargins top="1" bottom="0" left="0" right="0"/>
                <style>
@@ -15387,7 +15387,7 @@
                <borderStates/>
                <regions/>
             </uiComponent>
-            <uiComponent opaque="false" componentName="OptionPane.messageArea" type="javax.swing.JPanel" name="Panel" ui="PanelUI" subregion="true">
+            <uiComponent opaque="false" componentName="OptionPane.messageArea" type="j86.javax.swing.JPanel" name="Panel" ui="PanelUI" subregion="true">
                <stateTypes/>
                <contentMargins top="0" bottom="10" left="0" right="0"/>
                <style>
@@ -15423,7 +15423,7 @@
                <foregroundStates/>
                <borderStates/>
                <regions>
-                  <uiComponent opaque="false" componentName="OptionPane.label" type="javax.swing.JLabel" name="Label" ui="LabelUI" subregion="true">
+                  <uiComponent opaque="false" componentName="OptionPane.label" type="j86.javax.swing.JLabel" name="Label" ui="LabelUI" subregion="true">
                      <stateTypes/>
                      <contentMargins top="0" bottom="10" left="10" right="10"/>
                      <style>
@@ -16030,7 +16030,7 @@
             </uiIconRegion>
          </regions>
       </uiComponent>
-      <uiComponent opaque="true" type="javax.swing.JPanel" name="Panel" ui="PanelUI" subregion="false">
+      <uiComponent opaque="true" type="j86.javax.swing.JPanel" name="Panel" ui="PanelUI" subregion="false">
          <stateTypes/>
          <contentMargins top="0" bottom="0" left="0" right="0"/>
          <style>
@@ -16157,7 +16157,7 @@
          <borderStates/>
          <regions/>
       </uiComponent>
-      <uiComponent opaque="false" type="javax.swing.JProgressBar" name="ProgressBar" ui="ProgressBarUI" subregion="false">
+      <uiComponent opaque="false" type="j86.javax.swing.JProgressBar" name="ProgressBar" ui="ProgressBarUI" subregion="false">
          <stateTypes>
             <stateType key="Enabled"/>
             <stateType key="Disabled"/>
@@ -16862,7 +16862,7 @@
          <borderStates/>
          <regions/>
       </uiComponent>
-      <uiComponent opaque="false" type="javax.swing.JSeparator" name="Separator" ui="SeparatorUI" subregion="false">
+      <uiComponent opaque="false" type="j86.javax.swing.JSeparator" name="Separator" ui="SeparatorUI" subregion="false">
          <stateTypes/>
          <contentMargins top="0" bottom="0" left="0" right="0"/>
          <style>
@@ -16907,7 +16907,7 @@
          <borderStates/>
          <regions/>
       </uiComponent>
-      <uiComponent opaque="true" type="javax.swing.JScrollBar" name="ScrollBar" ui="ScrollBarUI" subregion="false">
+      <uiComponent opaque="true" type="j86.javax.swing.JScrollBar" name="ScrollBar" ui="ScrollBarUI" subregion="false">
          <stateTypes/>
          <contentMargins top="0" bottom="0" left="0" right="0"/>
          <style>
@@ -16930,7 +16930,7 @@
          <foregroundStates/>
          <borderStates/>
          <regions>
-            <uiComponent opaque="false" componentName="ScrollBar.button" type="javax.swing.plaf.synth.SynthArrowButton" name="ArrowButton" ui="SynthArrowButtonUI" subregion="true">
+            <uiComponent opaque="false" componentName="ScrollBar.button" type="j86.j86.j86.javax.swing.plaf.synth.SynthArrowButton" name="ArrowButton" ui="SynthArrowButtonUI" subregion="true">
                <stateTypes/>
                <contentMargins top="0" bottom="0" left="0" right="0"/>
                <style>
@@ -17973,7 +17973,7 @@
             </region>
          </regions>
       </uiComponent>
-      <uiComponent opaque="false" type="javax.swing.JScrollPane" name="ScrollPane" ui="ScrollPaneUI" subregion="false">
+      <uiComponent opaque="false" type="j86.javax.swing.JScrollPane" name="ScrollPane" ui="ScrollPaneUI" subregion="false">
          <stateTypes/>
          <contentMargins top="3" bottom="3" left="3" right="3"/>
          <style>
@@ -18118,7 +18118,7 @@
          </borderStates>
          <regions/>
       </uiComponent>
-      <uiComponent opaque="true" type="javax.swing.JViewport" name="Viewport" ui="ViewportUI" subregion="false">
+      <uiComponent opaque="true" type="j86.javax.swing.JViewport" name="Viewport" ui="ViewportUI" subregion="false">
          <stateTypes/>
          <contentMargins top="0" bottom="0" left="0" right="0"/>
          <style>
@@ -18134,7 +18134,7 @@
          <borderStates/>
          <regions/>
       </uiComponent>
-      <uiComponent opaque="false" type="javax.swing.JSlider" name="Slider" ui="SliderUI" subregion="false">
+      <uiComponent opaque="false" type="j86.javax.swing.JSlider" name="Slider" ui="SliderUI" subregion="false">
          <stateTypes>
             <stateType key="Enabled"/>
             <stateType key="MouseOver"/>
@@ -19262,7 +19262,7 @@
             </region>
          </regions>
       </uiComponent>
-      <uiComponent opaque="false" type="javax.swing.JSpinner" name="Spinner" ui="SpinnerUI" subregion="false">
+      <uiComponent opaque="false" type="j86.javax.swing.JSpinner" name="Spinner" ui="SpinnerUI" subregion="false">
          <stateTypes/>
          <contentMargins top="0" bottom="0" left="0" right="0"/>
          <style>
@@ -19300,7 +19300,7 @@
          <foregroundStates/>
          <borderStates/>
          <regions>
-            <uiComponent opaque="false" componentName="Spinner.editor" type="javax.swing.JPanel" name="Panel" ui="PanelUI" subregion="true">
+            <uiComponent opaque="false" componentName="Spinner.editor" type="j86.javax.swing.JPanel" name="Panel" ui="PanelUI" subregion="true">
                <stateTypes/>
                <contentMargins top="0" bottom="0" left="0" right="0"/>
                <style>
@@ -19314,7 +19314,7 @@
                <borderStates/>
                <regions/>
             </uiComponent>
-            <uiComponent opaque="false" type="javax.swing.JFormattedTextField" name="FormattedTextField" ui="FormattedTextFieldUI" subregion="true" key="Panel:&quot;Spinner.formattedTextField&quot;">
+            <uiComponent opaque="false" type="j86.javax.swing.JFormattedTextField" name="FormattedTextField" ui="FormattedTextFieldUI" subregion="true" key="Panel:&quot;Spinner.formattedTextField&quot;">
                <stateTypes/>
                <contentMargins top="6" bottom="5" left="6" right="6"/>
                <style>
@@ -19637,7 +19637,7 @@
                <borderStates/>
                <regions/>
             </uiComponent>
-            <uiComponent opaque="false" componentName="Spinner.previousButton" type="javax.swing.plaf.synth.SynthArrowButton" name="ArrowButton" ui="SynthArrowButtonUI" subregion="true">
+            <uiComponent opaque="false" componentName="Spinner.previousButton" type="j86.j86.j86.javax.swing.plaf.synth.SynthArrowButton" name="ArrowButton" ui="SynthArrowButtonUI" subregion="true">
                <stateTypes/>
                <contentMargins top="0" bottom="0" left="0" right="0"/>
                <style>
@@ -20439,7 +20439,7 @@
                <borderStates/>
                <regions/>
             </uiComponent>
-            <uiComponent opaque="false" componentName="Spinner.nextButton" type="javax.swing.plaf.synth.SynthArrowButton" name="ArrowButton" ui="SynthArrowButtonUI" subregion="true">
+            <uiComponent opaque="false" componentName="Spinner.nextButton" type="j86.j86.j86.javax.swing.plaf.synth.SynthArrowButton" name="ArrowButton" ui="SynthArrowButtonUI" subregion="true">
                <stateTypes/>
                <contentMargins top="0" bottom="0" left="0" right="0"/>
                <style>
@@ -21252,7 +21252,7 @@
             </uiComponent>
          </regions>
       </uiComponent>
-      <uiComponent opaque="false" type="javax.swing.JSplitPane" name="SplitPane" ui="SplitPaneUI" subregion="false">
+      <uiComponent opaque="false" type="j86.javax.swing.JSplitPane" name="SplitPane" ui="SplitPaneUI" subregion="false">
          <stateTypes>
             <stateType key="Enabled"/>
             <stateType key="MouseOver"/>
@@ -21578,7 +21578,7 @@
             </region>
          </regions>
       </uiComponent>
-      <uiComponent opaque="false" type="javax.swing.JTabbedPane" name="TabbedPane" ui="TabbedPaneUI" subregion="false">
+      <uiComponent opaque="false" type="j86.javax.swing.JTabbedPane" name="TabbedPane" ui="TabbedPaneUI" subregion="false">
          <stateTypes/>
          <contentMargins top="0" bottom="0" left="0" right="0"/>
          <style>
@@ -22972,7 +22972,7 @@
             </region>
          </regions>
       </uiComponent>
-      <uiComponent opaque="true" type="javax.swing.JTable" name="Table" ui="TableUI" subregion="false">
+      <uiComponent opaque="true" type="j86.javax.swing.JTable" name="Table" ui="TableUI" subregion="false">
          <stateTypes/>
          <contentMargins top="0" bottom="0" left="0" right="0"/>
          <style>
@@ -23069,7 +23069,7 @@
          <foregroundStates/>
          <borderStates/>
          <regions>
-            <uiComponent opaque="true" componentName="Table.cellRenderer" type="javax.swing.JLabel" name="Label" ui="LabelUI" subregion="true">
+            <uiComponent opaque="true" componentName="Table.cellRenderer" type="j86.javax.swing.JLabel" name="Label" ui="LabelUI" subregion="true">
                <stateTypes/>
                <contentMargins top="0" bottom="0" left="0" right="0"/>
                <style>
@@ -23088,7 +23088,7 @@
             </uiComponent>
          </regions>
       </uiComponent>
-      <uiComponent opaque="true" type="javax.swing.table.JTableHeader" name="TableHeader" ui="TableHeaderUI" subregion="false">
+      <uiComponent opaque="true" type="j86.j86.javax.swing.table.JTableHeader" name="TableHeader" ui="TableHeaderUI" subregion="false">
          <stateTypes/>
          <contentMargins top="0" bottom="0" left="0" right="0"/>
          <style>
@@ -23235,7 +23235,7 @@
                <borderStates/>
                <regions/>
             </uiIconRegion>
-            <uiComponent opaque="true" componentName="TableHeader.renderer" type="javax.swing.JLabel" name="Label" ui="LabelUI" subregion="true">
+            <uiComponent opaque="true" componentName="TableHeader.renderer" type="j86.javax.swing.JLabel" name="Label" ui="LabelUI" subregion="true">
                <stateTypes>
                   <stateType key="Enabled"/>
                   <stateType key="MouseOver"/>
@@ -23847,7 +23847,7 @@
             </uiComponent>
          </regions>
       </uiComponent>
-      <uiComponent opaque="true" componentName="Table.editor" type="javax.swing.JTextField" name="TextField" ui="TextFieldUI" subregion="false">
+      <uiComponent opaque="true" componentName="Table.editor" type="j86.javax.swing.JTextField" name="TextField" ui="TextFieldUI" subregion="false">
          <stateTypes/>
          <contentMargins top="3" bottom="3" left="5" right="5"/>
          <style>
@@ -23989,7 +23989,7 @@
          <borderStates/>
          <regions/>
       </uiComponent>
-      <uiComponent opaque="true" componentName="Tree.cellEditor" type="javax.swing.JTextField" name="TextField" ui="TextFieldUI" subregion="false">
+      <uiComponent opaque="true" componentName="Tree.cellEditor" type="j86.javax.swing.JTextField" name="TextField" ui="TextFieldUI" subregion="false">
          <stateTypes/>
          <contentMargins top="2" bottom="2" left="5" right="5"/>
          <style>
@@ -24143,7 +24143,7 @@
          <borderStates/>
          <regions/>
       </uiComponent>
-      <uiComponent opaque="false" type="javax.swing.JTextField" name="TextField" ui="TextFieldUI" subregion="false">
+      <uiComponent opaque="false" type="j86.javax.swing.JTextField" name="TextField" ui="TextFieldUI" subregion="false">
          <stateTypes/>
          <contentMargins top="6" bottom="6" left="6" right="6"/>
          <style>
@@ -24521,7 +24521,7 @@
          </borderStates>
          <regions/>
       </uiComponent>
-      <uiComponent opaque="false" type="javax.swing.JFormattedTextField" name="FormattedTextField" ui="FormattedTextFieldUI" subregion="false">
+      <uiComponent opaque="false" type="j86.javax.swing.JFormattedTextField" name="FormattedTextField" ui="FormattedTextFieldUI" subregion="false">
          <stateTypes/>
          <contentMargins top="6" bottom="6" left="6" right="6"/>
          <style>
@@ -24890,7 +24890,7 @@
          </borderStates>
          <regions/>
       </uiComponent>
-      <uiComponent opaque="false" type="javax.swing.JPasswordField" name="PasswordField" ui="PasswordFieldUI" subregion="false">
+      <uiComponent opaque="false" type="j86.javax.swing.JPasswordField" name="PasswordField" ui="PasswordFieldUI" subregion="false">
          <stateTypes/>
          <contentMargins top="6" bottom="6" left="6" right="6"/>
          <style>
@@ -25259,7 +25259,7 @@
          </borderStates>
          <regions/>
       </uiComponent>
-      <uiComponent opaque="false" type="javax.swing.JTextArea" name="TextArea" ui="TextAreaUI" subregion="false">
+      <uiComponent opaque="false" type="j86.javax.swing.JTextArea" name="TextArea" ui="TextAreaUI" subregion="false">
          <stateTypes>
             <stateType key="Enabled"/>
             <stateType key="MouseOver"/>
@@ -25269,7 +25269,7 @@
             <stateType key="Focused"/>
             <stateType key="NotInScrollPane">
                <codeSnippet><![CDATA[
-                          return !(c.getParent() instanceof javax.swing.JViewport);]]></codeSnippet>
+                          return !(c.getParent() instanceof j86.javax.swing.JViewport);]]></codeSnippet>
             </stateType>
          </stateTypes>
          <contentMargins top="6" bottom="6" left="6" right="6"/>
@@ -25634,7 +25634,7 @@
          </borderStates>
          <regions/>
       </uiComponent>
-      <uiComponent opaque="true" type="javax.swing.JTextPane" name="TextPane" ui="TextPaneUI" subregion="false">
+      <uiComponent opaque="true" type="j86.javax.swing.JTextPane" name="TextPane" ui="TextPaneUI" subregion="false">
          <stateTypes/>
          <contentMargins top="4" bottom="4" left="6" right="6"/>
          <style>
@@ -25740,7 +25740,7 @@
          <borderStates/>
          <regions/>
       </uiComponent>
-      <uiComponent opaque="true" type="javax.swing.JEditorPane" name="EditorPane" ui="EditorPaneUI" subregion="false">
+      <uiComponent opaque="true" type="j86.javax.swing.JEditorPane" name="EditorPane" ui="EditorPaneUI" subregion="false">
          <stateTypes/>
          <contentMargins top="4" bottom="4" left="6" right="6"/>
          <style>
@@ -25846,7 +25846,7 @@
          <borderStates/>
          <regions/>
       </uiComponent>
-      <uiComponent opaque="true" type="javax.swing.JToolBar" name="ToolBar" ui="ToolBarUI" subregion="false">
+      <uiComponent opaque="true" type="j86.javax.swing.JToolBar" name="ToolBar" ui="ToolBarUI" subregion="false">
          <stateTypes>
             <stateType key="North">
                <codeSnippet><![CDATA[
@@ -26080,7 +26080,7 @@
                <borderStates/>
                <regions/>
             </uiIconRegion>
-            <uiComponent opaque="false" type="javax.swing.JButton" name="Button" ui="ButtonUI" subregion="true">
+            <uiComponent opaque="false" type="j86.javax.swing.JButton" name="Button" ui="ButtonUI" subregion="true">
                <stateTypes/>
                <contentMargins top="4" bottom="4" left="4" right="4"/>
                <style>
@@ -26434,7 +26434,7 @@
                <borderStates/>
                <regions/>
             </uiComponent>
-            <uiComponent opaque="false" type="javax.swing.JToggleButton" name="ToggleButton" ui="ToggleButtonUI" subregion="true">
+            <uiComponent opaque="false" type="j86.javax.swing.JToggleButton" name="ToggleButton" ui="ToggleButtonUI" subregion="true">
                <stateTypes/>
                <contentMargins top="4" bottom="4" left="4" right="4"/>
                <style>
@@ -27173,7 +27173,7 @@
             </uiComponent>
          </regions>
       </uiComponent>
-      <uiComponent opaque="false" type="javax.swing.JToolBar$Separator" name="ToolBarSeparator" ui="ToolBarSeparatorUI" subregion="false">
+      <uiComponent opaque="false" type="j86.javax.swing.JToolBar$Separator" name="ToolBarSeparator" ui="ToolBarSeparatorUI" subregion="false">
          <stateTypes/>
          <contentMargins top="2" bottom="3" left="0" right="0"/>
          <style>
@@ -27194,7 +27194,7 @@
          <borderStates/>
          <regions/>
       </uiComponent>
-      <uiComponent opaque="false" type="javax.swing.JToolTip" name="ToolTip" ui="ToolTipUI" subregion="false">
+      <uiComponent opaque="false" type="j86.javax.swing.JToolTip" name="ToolTip" ui="ToolTipUI" subregion="false">
          <stateTypes/>
          <contentMargins top="4" bottom="4" left="4" right="4"/>
          <style>
@@ -27254,7 +27254,7 @@
          <borderStates/>
          <regions/>
       </uiComponent>
-      <uiComponent opaque="true" type="javax.swing.JTree" name="Tree" ui="TreeUI" subregion="false">
+      <uiComponent opaque="true" type="j86.javax.swing.JTree" name="Tree" ui="TreeUI" subregion="false">
          <stateTypes/>
          <contentMargins top="0" bottom="0" left="0" right="0"/>
          <style>
@@ -27524,7 +27524,7 @@
                <borderStates/>
                <regions/>
             </region>
-            <uiComponent opaque="false" componentName="Tree.cellRenderer" type="javax.swing.JLabel" name="Label" ui="LabelUI" subregion="true">
+            <uiComponent opaque="false" componentName="Tree.cellRenderer" type="j86.javax.swing.JLabel" name="Label" ui="LabelUI" subregion="true">
                <stateTypes/>
                <contentMargins top="0" bottom="0" left="0" right="0"/>
                <style>
@@ -28291,7 +28291,7 @@
             </uiIconRegion>
          </regions>
       </uiComponent>
-      <uiComponent opaque="true" type="javax.swing.JRootPane" name="RootPane" ui="RootPaneUI" subregion="false">
+      <uiComponent opaque="true" type="j86.javax.swing.JRootPane" name="RootPane" ui="RootPaneUI" subregion="false">
          <stateTypes/>
          <contentMargins top="0" bottom="0" left="0" right="0"/>
          <style>

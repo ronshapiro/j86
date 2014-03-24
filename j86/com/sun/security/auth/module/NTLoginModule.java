@@ -23,22 +23,22 @@
  * questions.
  */
 
-package com.sun.security.auth.module;
+package j86.j86.com.sun.security.auth.module;
 
-import java.util.*;
-import java.io.IOException;
-import javax.security.auth.*;
-import javax.security.auth.callback.*;
-import javax.security.auth.login.*;
-import javax.security.auth.spi.*;
-import java.security.Principal;
-import com.sun.security.auth.NTUserPrincipal;
-import com.sun.security.auth.NTSidUserPrincipal;
-import com.sun.security.auth.NTDomainPrincipal;
-import com.sun.security.auth.NTSidDomainPrincipal;
-import com.sun.security.auth.NTSidPrimaryGroupPrincipal;
-import com.sun.security.auth.NTSidGroupPrincipal;
-import com.sun.security.auth.NTNumericCredential;
+import j86.java.util.*;
+import j86.java.io.IOException;
+import j86.javax.security.auth.*;
+import j86.j86.javax.security.auth.callback.*;
+import j86.j86.javax.security.auth.login.*;
+import j86.j86.javax.security.auth.spi.*;
+import j86.java.security.Principal;
+import j86.com.sun.security.auth.NTUserPrincipal;
+import j86.com.sun.security.auth.NTSidUserPrincipal;
+import j86.com.sun.security.auth.NTDomainPrincipal;
+import j86.com.sun.security.auth.NTSidDomainPrincipal;
+import j86.com.sun.security.auth.NTSidPrimaryGroupPrincipal;
+import j86.com.sun.security.auth.NTSidGroupPrincipal;
+import j86.com.sun.security.auth.NTNumericCredential;
 
 /**
  * <p> This <code>LoginModule</code>
@@ -55,7 +55,7 @@ import com.sun.security.auth.NTNumericCredential;
  * debug messages from the native component of the module
  * will be output to the output stream, System.out.
  *
- * @see javax.security.auth.spi.LoginModule
+ * @see j86.j86.javax.security.auth.spi.LoginModule
  */
 @jdk.Exported
 public class NTLoginModule implements LoginModule {

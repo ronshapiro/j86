@@ -59,29 +59,29 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package java.time.chrono;
+package j86.j86.java.time.chrono;
 
-import static java.time.temporal.ChronoUnit.SECONDS;
+import static j86.j86.java.time.temporal.ChronoUnit.SECONDS;
 
-import java.io.IOException;
-import java.io.InvalidObjectException;
-import java.io.ObjectInput;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutput;
-import java.io.Serializable;
-import java.time.Instant;
-import java.time.LocalDateTime;
-import java.time.ZoneId;
-import java.time.ZoneOffset;
-import java.time.temporal.ChronoField;
-import java.time.temporal.ChronoUnit;
-import java.time.temporal.Temporal;
-import java.time.temporal.TemporalField;
-import java.time.temporal.TemporalUnit;
-import java.time.zone.ZoneOffsetTransition;
-import java.time.zone.ZoneRules;
-import java.util.List;
-import java.util.Objects;
+import j86.java.io.IOException;
+import j86.java.io.InvalidObjectException;
+import j86.java.io.ObjectInput;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.ObjectOutput;
+import j86.java.io.Serializable;
+import j86.java.time.Instant;
+import j86.java.time.LocalDateTime;
+import j86.java.time.ZoneId;
+import j86.java.time.ZoneOffset;
+import j86.j86.java.time.temporal.ChronoField;
+import j86.j86.java.time.temporal.ChronoUnit;
+import j86.j86.java.time.temporal.Temporal;
+import j86.j86.java.time.temporal.TemporalField;
+import j86.j86.java.time.temporal.TemporalUnit;
+import j86.j86.java.time.zone.ZoneOffsetTransition;
+import j86.j86.java.time.zone.ZoneRules;
+import j86.java.util.List;
+import j86.java.util.Objects;
 
 /**
  * A date-time with a time-zone in the calendar neutral API.
@@ -322,7 +322,7 @@ final class ChronoZonedDateTimeImpl<D extends ChronoLocalDate>
     //-----------------------------------------------------------------------
     /**
      * Writes the ChronoZonedDateTime using a
-     * <a href="../../../serialized-form.html#java.time.chrono.Ser">dedicated serialized form</a>.
+     * <a href="../../../serialized-form.html#j86.j86.java.time.chrono.Ser">dedicated serialized form</a>.
      * @serialData
      * <pre>
      *  out.writeByte(3);                  // identifies a ChronoZonedDateTime

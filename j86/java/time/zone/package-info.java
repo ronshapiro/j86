@@ -73,14 +73,14 @@
  * <h3>Package specification</h3>
  * <p>
  * Unless otherwise noted, passing a null argument to a constructor or method in any class or interface
- * in this package will cause a {@link java.lang.NullPointerException NullPointerException} to be thrown.
+ * in this package will cause a {@link j86.java.lang.NullPointerException NullPointerException} to be thrown.
  * The Javadoc "@param" definition is used to summarise the null-behavior.
- * The "@throws {@link java.lang.NullPointerException}" is not explicitly documented in each method.
+ * The "@throws {@link j86.java.lang.NullPointerException}" is not explicitly documented in each method.
  * </p>
  * <p>
- * All calculations should check for numeric overflow and throw either an {@link java.lang.ArithmeticException}
- * or a {@link java.time.DateTimeException}.
+ * All calculations should check for numeric overflow and throw either an {@link j86.java.lang.ArithmeticException}
+ * or a {@link j86.java.time.DateTimeException}.
  * </p>
  * @since JDK1.8
  */
-package java.time.zone;
+package j86.j86.java.time.zone;

@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing;
+package j86.javax.swing;
 
-import java.io.IOException;
-import java.io.ObjectOutputStream;
-import java.io.Serializable;
-import java.util.Enumeration;
-import java.util.Hashtable;
+import j86.java.io.IOException;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.Serializable;
+import j86.java.util.Enumeration;
+import j86.java.util.Hashtable;
 
 /*
  * Private storage mechanism for Action key-value pairs.

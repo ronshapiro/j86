@@ -23,19 +23,19 @@
  * questions.
  */
 
-package com.sun.jmx.mbeanserver;
+package j86.com.sun.jmx.mbeanserver;
 
-import static com.sun.jmx.mbeanserver.Util.*;
+import static j86.com.sun.jmx.mbeanserver.Util.*;
 
-import java.lang.reflect.Method;
-import java.lang.reflect.Modifier;
-import java.security.AccessController;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import javax.management.NotCompliantMBeanException;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.j86.j86.java.lang.reflect.Modifier;
+import j86.java.security.AccessController;
+import j86.java.util.Arrays;
+import j86.java.util.Comparator;
+import j86.java.util.List;
+import j86.java.util.Map;
+import j86.java.util.Set;
+import j86.javax.management.NotCompliantMBeanException;
 
 /**
  * <p>An analyzer for a given MBean interface.  The analyzer can

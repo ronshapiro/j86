@@ -23,9 +23,9 @@
  * questions.
  */
 
-package com.sun.net.httpserver;
+package com.j86.j86.sun.net.httpserver;
 
-import java.util.Base64;
+import j86.java.util.Base64;
 
 /**
  * BasicAuthenticator provides an implementation of HTTP Basic

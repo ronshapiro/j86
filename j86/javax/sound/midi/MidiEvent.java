@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.sound.midi;
+package j86.javax.sound.midi;
 
 /**
  * MIDI events contain a MIDI message and a corresponding time-stamp

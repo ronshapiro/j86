@@ -23,22 +23,22 @@
  * questions.
  */
 
-package java.awt;
+package j86.java.awt;
 
-import java.awt.MultipleGradientPaint.CycleMethod;
-import java.awt.MultipleGradientPaint.ColorSpaceType;
-import java.awt.geom.AffineTransform;
-import java.awt.geom.Point2D;
-import java.awt.geom.Rectangle2D;
-import java.awt.image.ColorModel;
+import j86.java.awt.MultipleGradientPaint.CycleMethod;
+import j86.java.awt.MultipleGradientPaint.ColorSpaceType;
+import j86.j86.java.awt.geom.AffineTransform;
+import j86.j86.java.awt.geom.Point2D;
+import j86.j86.java.awt.geom.Rectangle2D;
+import j86.j86.j86.java.awt.image.ColorModel;
 
 /**
  * Provides the actual implementation for the LinearGradientPaint.
  * This is where the pixel processing is done.
  *
- * @see java.awt.LinearGradientPaint
- * @see java.awt.PaintContext
- * @see java.awt.Paint
+ * @see j86.java.awt.LinearGradientPaint
+ * @see j86.java.awt.PaintContext
+ * @see j86.java.awt.Paint
  * @author Nicholas Talian, Vincent Hardy, Jim Graham, Jerry Evans
  */
 final class LinearGradientPaintContext extends MultipleGradientPaintContext {

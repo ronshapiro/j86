@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.lang;
+package j86.java.lang;
 
 /**
  * Thrown if an application attempts to access or modify a field, or

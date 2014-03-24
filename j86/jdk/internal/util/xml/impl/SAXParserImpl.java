@@ -23,15 +23,15 @@
  * questions.
  */
 
-package jdk.internal.util.xml.impl;
+package j86.j86.jdk.internal.util.xml.impl;
 
-import java.io.IOException;
-import java.io.InputStream;
-import jdk.internal.org.xml.sax.InputSource;
-import jdk.internal.org.xml.sax.SAXException;
-import jdk.internal.org.xml.sax.XMLReader;
-import jdk.internal.org.xml.sax.helpers.DefaultHandler;
-import jdk.internal.util.xml.SAXParser;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.jdk.internal.org.xml.sax.InputSource;
+import j86.jdk.internal.org.xml.sax.SAXException;
+import j86.jdk.internal.org.xml.sax.XMLReader;
+import j86.j86.jdk.internal.org.xml.sax.helpers.DefaultHandler;
+import j86.jdk.internal.util.xml.SAXParser;
 
 public class SAXParserImpl extends SAXParser {
 
@@ -79,7 +79,7 @@ public class SAXParserImpl extends SAXParser {
     }
 
     /**
-     * Parse the content of the given {@link java.io.InputStream}
+     * Parse the content of the given {@link j86.java.io.InputStream}
      * instance as XML using the specified
      * {@link org.xml.sax.helpers.DefaultHandler}.
      *

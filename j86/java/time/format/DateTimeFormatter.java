@@ -59,43 +59,43 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package java.time.format;
+package j86.j86.java.time.format;
 
-import static java.time.temporal.ChronoField.DAY_OF_MONTH;
-import static java.time.temporal.ChronoField.DAY_OF_WEEK;
-import static java.time.temporal.ChronoField.DAY_OF_YEAR;
-import static java.time.temporal.ChronoField.HOUR_OF_DAY;
-import static java.time.temporal.ChronoField.MINUTE_OF_HOUR;
-import static java.time.temporal.ChronoField.MONTH_OF_YEAR;
-import static java.time.temporal.ChronoField.NANO_OF_SECOND;
-import static java.time.temporal.ChronoField.SECOND_OF_MINUTE;
-import static java.time.temporal.ChronoField.YEAR;
+import static j86.j86.java.time.temporal.ChronoField.DAY_OF_MONTH;
+import static j86.j86.java.time.temporal.ChronoField.DAY_OF_WEEK;
+import static j86.j86.java.time.temporal.ChronoField.DAY_OF_YEAR;
+import static j86.j86.java.time.temporal.ChronoField.HOUR_OF_DAY;
+import static j86.j86.java.time.temporal.ChronoField.MINUTE_OF_HOUR;
+import static j86.j86.java.time.temporal.ChronoField.MONTH_OF_YEAR;
+import static j86.j86.java.time.temporal.ChronoField.NANO_OF_SECOND;
+import static j86.j86.java.time.temporal.ChronoField.SECOND_OF_MINUTE;
+import static j86.j86.java.time.temporal.ChronoField.YEAR;
 
-import java.io.IOException;
-import java.text.FieldPosition;
-import java.text.Format;
-import java.text.ParseException;
-import java.text.ParsePosition;
-import java.time.DateTimeException;
-import java.time.Period;
-import java.time.ZoneId;
-import java.time.ZoneOffset;
-import java.time.chrono.Chronology;
-import java.time.chrono.IsoChronology;
-import java.time.format.DateTimeFormatterBuilder.CompositePrinterParser;
-import java.time.temporal.ChronoField;
-import java.time.temporal.IsoFields;
-import java.time.temporal.TemporalAccessor;
-import java.time.temporal.TemporalField;
-import java.time.temporal.TemporalQuery;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Locale;
-import java.util.Map;
-import java.util.Objects;
-import java.util.Set;
+import j86.java.io.IOException;
+import j86.java.text.FieldPosition;
+import j86.java.text.Format;
+import j86.java.text.ParseException;
+import j86.java.text.ParsePosition;
+import j86.java.time.DateTimeException;
+import j86.java.time.Period;
+import j86.java.time.ZoneId;
+import j86.java.time.ZoneOffset;
+import j86.j86.java.time.chrono.Chronology;
+import j86.j86.java.time.chrono.IsoChronology;
+import j86.j86.java.time.format.DateTimeFormatterBuilder.CompositePrinterParser;
+import j86.j86.java.time.temporal.ChronoField;
+import j86.j86.java.time.temporal.IsoFields;
+import j86.j86.java.time.temporal.TemporalAccessor;
+import j86.j86.java.time.temporal.TemporalField;
+import j86.j86.java.time.temporal.TemporalQuery;
+import j86.java.util.Arrays;
+import j86.java.util.Collections;
+import j86.java.util.HashMap;
+import j86.java.util.HashSet;
+import j86.java.util.Locale;
+import j86.java.util.Map;
+import j86.java.util.Objects;
+import j86.java.util.Set;
 
 /**
  * Formatter for printing and parsing date-time objects.
@@ -143,9 +143,9 @@ import java.util.Set;
  * overrides the {@link DecimalStyle}. The DecimalStyle symbols are used for
  * formatting and parsing.
  * <p>
- * Some applications may need to use the older {@link Format java.text.Format}
+ * Some applications may need to use the older {@link Format j86.java.text.Format}
  * class for formatting. The {@link #toFormat()} method returns an
- * implementation of {@code java.text.Format}.
+ * implementation of {@code j86.java.text.Format}.
  *
  * <h3 id="predefined">Predefined Formatters</h3>
  * <table summary="Predefined Formatters" cellpadding="2" cellspacing="3" border="0" >
@@ -1106,7 +1106,7 @@ public final class DateTimeFormatter {
      * The localized decimal style is not used.
      * <p>
      * This is a special case formatter intended to allow a human readable form
-     * of an {@link java.time.Instant}. The {@code Instant} class is designed to
+     * of an {@link j86.java.time.Instant}. The {@code Instant} class is designed to
      * only represent a point in time and internally stores a value in nanoseconds
      * from a fixed epoch of 1970-01-01Z. As such, an {@code Instant} cannot be
      * formatted as a date or time without providing some form of time-zone.
@@ -1794,7 +1794,7 @@ public final class DateTimeFormatter {
      * will be updated with the index at the end of parsing.
      * <p>
      * The operation of this method is slightly different to similar methods using
-     * {@code ParsePosition} on {@code java.text.Format}. That class will return
+     * {@code ParsePosition} on {@code j86.java.text.Format}. That class will return
      * errors using the error index on the {@code ParsePosition}. By contrast, this
      * method will throw a {@link DateTimeParseException} if an error occurs, with
      * the exception containing the error index.
@@ -2023,7 +2023,7 @@ public final class DateTimeFormatter {
     }
 
     /**
-     * Returns this formatter as a {@code java.text.Format} instance.
+     * Returns this formatter as a {@code j86.java.text.Format} instance.
      * <p>
      * The returned {@link Format} instance will format any {@link TemporalAccessor}
      * and parses to a resolved {@link TemporalAccessor}.
@@ -2040,7 +2040,7 @@ public final class DateTimeFormatter {
     }
 
     /**
-     * Returns this formatter as a {@code java.text.Format} instance that will
+     * Returns this formatter as a {@code j86.java.text.Format} instance that will
      * parse using the specified query.
      * <p>
      * The returned {@link Format} instance will format any {@link TemporalAccessor}

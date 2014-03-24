@@ -25,15 +25,15 @@
 /*
  * $Id: RetrievalMethod.java,v 1.8 2005/05/10 16:35:35 mullan Exp $
  */
-package javax.xml.crypto.dsig.keyinfo;
+package j86.j86.j86.javax.xml.crypto.dsig.keyinfo;
 
-import javax.xml.crypto.Data;
-import javax.xml.crypto.URIReference;
-import javax.xml.crypto.URIReferenceException;
-import javax.xml.crypto.XMLCryptoContext;
-import javax.xml.crypto.XMLStructure;
-import javax.xml.crypto.dsig.Transform;
-import java.util.List;
+import j86.javax.xml.crypto.Data;
+import j86.javax.xml.crypto.URIReference;
+import j86.javax.xml.crypto.URIReferenceException;
+import j86.javax.xml.crypto.XMLCryptoContext;
+import j86.javax.xml.crypto.XMLStructure;
+import j86.j86.javax.xml.crypto.dsig.Transform;
+import j86.java.util.List;
 
 /**
  * A representation of the XML <code>RetrievalMethod</code> element as
@@ -74,7 +74,7 @@ import java.util.List;
 public interface RetrievalMethod extends URIReference, XMLStructure {
 
     /**
-     * Returns an {@link java.util.Collections#unmodifiableList unmodifiable
+     * Returns an {@link j86.java.util.Collections#unmodifiableList unmodifiable
      * list} of {@link Transform}s of this <code>RetrievalMethod</code>.
      *
      * @return an unmodifiable list of <code>Transform</code> objects (may be

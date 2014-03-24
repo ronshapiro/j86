@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.lang;
+package j86.java.lang;
 
 /**
  * The {@code Compiler} class is provided to support Java-to-native-code
@@ -36,7 +36,7 @@ package java.lang;
  * System#getProperty(String, String)}.  If so, it is assumed to be the name of
  * a library (with a platform-dependent exact location and type); {@link
  * System#loadLibrary} is called to load that library. If this loading
- * succeeds, the function named {@code java_lang_Compiler_start()} in that
+ * succeeds, the function named {@code j86.java.lang_Compiler_start()} in that
  * library is called.
  *
  * <p> If no compiler is available, these methods do nothing.
@@ -53,8 +53,8 @@ public final class Compiler  {
 
     static {
         registerNatives();
-        java.security.AccessController.doPrivileged(
-            new java.security.PrivilegedAction<Void>() {
+        j86.java.security.AccessController.doPrivileged(
+            new j86.java.security.PrivilegedAction<Void>() {
                 public Void run() {
                     boolean loaded = false;
                     String jit = System.getProperty("java.compiler");

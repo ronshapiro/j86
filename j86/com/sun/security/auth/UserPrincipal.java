@@ -23,16 +23,16 @@
  * questions.
  */
 
-package com.sun.security.auth;
+package j86.com.sun.security.auth;
 
-import java.security.Principal;
+import j86.java.security.Principal;
 
 /**
  * A user principal identified by a username or account name.
  *
  * <p>
- * After successful authentication, a user {@link java.security.Principal}
- * can be associated with a particular {@link javax.security.auth.Subject}
+ * After successful authentication, a user {@link j86.java.security.Principal}
+ * can be associated with a particular {@link j86.javax.security.auth.Subject}
  * to augment that <code>Subject</code> with an additional identity.
  * Authorization decisions can then be based upon the
  * <code>Principal</code>s that are associated with a <code>Subject</code>.
@@ -43,7 +43,7 @@ import java.security.Principal;
  * @since 1.6
  */
 @jdk.Exported
-public final class UserPrincipal implements Principal, java.io.Serializable {
+public final class UserPrincipal implements Principal, j86.java.io.Serializable {
 
     private static final long serialVersionUID = 892106070870210969L;
 

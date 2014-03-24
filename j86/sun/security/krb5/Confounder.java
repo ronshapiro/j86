@@ -29,9 +29,9 @@
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
 
-package sun.security.krb5;
+package j86.sun.security.krb5;
 
-import java.security.SecureRandom;
+import j86.java.security.SecureRandom;
 
 public final class Confounder {
     private static SecureRandom srand = new SecureRandom();

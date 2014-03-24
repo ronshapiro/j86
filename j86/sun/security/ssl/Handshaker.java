@@ -24,32 +24,32 @@
  */
 
 
-package sun.security.ssl;
+package j86.sun.security.ssl;
 
-import java.io.*;
-import java.util.*;
-import java.security.*;
-import java.security.NoSuchAlgorithmException;
-import java.security.AccessController;
-import java.security.AlgorithmConstraints;
-import java.security.AccessControlContext;
-import java.security.PrivilegedExceptionAction;
-import java.security.PrivilegedActionException;
+import j86.java.io.*;
+import j86.java.util.*;
+import j86.java.security.*;
+import j86.java.security.NoSuchAlgorithmException;
+import j86.java.security.AccessController;
+import j86.java.security.AlgorithmConstraints;
+import j86.java.security.AccessControlContext;
+import j86.java.security.PrivilegedExceptionAction;
+import j86.java.security.PrivilegedActionException;
 
-import javax.crypto.*;
-import javax.crypto.spec.*;
+import j86.javax.crypto.*;
+import j86.j86.javax.crypto.spec.*;
 
-import javax.net.ssl.*;
-import sun.misc.HexDumpEncoder;
+import j86.j86.javax.net.ssl.*;
+import j86.sun.misc.HexDumpEncoder;
 
-import sun.security.internal.spec.*;
-import sun.security.internal.interfaces.TlsMasterSecret;
+import j86.sun.security.internal.spec.*;
+import j86.sun.security.internal.interfaces.TlsMasterSecret;
 
-import sun.security.ssl.HandshakeMessage.*;
-import sun.security.ssl.CipherSuite.*;
+import j86.sun.security.ssl.HandshakeMessage.*;
+import j86.sun.security.ssl.CipherSuite.*;
 
-import static sun.security.ssl.CipherSuite.PRF.*;
-import static sun.security.ssl.CipherSuite.CipherType.*;
+import static j86.sun.security.ssl.CipherSuite.PRF.*;
+import static j86.sun.security.ssl.CipherSuite.CipherType.*;
 
 /**
  * Handshaker ... processes handshake records from an SSL V3.0
@@ -172,7 +172,7 @@ abstract class Handshaker {
     private volatile DelegatedTask<?> delegatedTask = null;
     private volatile Exception thrown = null;
 
-    // Could probably use a java.util.concurrent.atomic.AtomicReference
+    // Could probably use a j86.j86.j86.java.util.concurrent.atomic.AtomicReference
     // here instead of using this lock.  Consider changing.
     private Object thrownLock = new Object();
 
@@ -181,7 +181,7 @@ abstract class Handshaker {
 
     // By default, disable the unsafe legacy session renegotiation
     static final boolean allowUnsafeRenegotiation = Debug.getBooleanProperty(
-                    "sun.security.ssl.allowUnsafeRenegotiation", false);
+                    "j86.sun.security.ssl.allowUnsafeRenegotiation", false);
 
     // For maximum interoperability and backward compatibility, RFC 5746
     // allows server (or client) to accept ClientHello (or ServerHello)
@@ -192,7 +192,7 @@ abstract class Handshaker {
     //
     // By default, allow such legacy hello messages.
     static final boolean allowLegacyHelloMessages = Debug.getBooleanProperty(
-                    "sun.security.ssl.allowLegacyHelloMessages", true);
+                    "j86.sun.security.ssl.allowLegacyHelloMessages", true);
 
     // To prevent the TLS renegotiation issues, by setting system property
     // "jdk.tls.rejectClientInitiatedRenegotiation" to true, applications in

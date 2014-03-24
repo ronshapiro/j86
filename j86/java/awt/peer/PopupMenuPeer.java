@@ -22,10 +22,10 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.awt.peer;
+package j86.j86.java.awt.peer;
 
-import java.awt.Event;
-import java.awt.PopupMenu;
+import j86.java.awt.Event;
+import j86.java.awt.PopupMenu;
 
 /**
  * The peer interface for {@link PopupMenu}.
@@ -44,7 +44,7 @@ public interface PopupMenuPeer extends MenuPeer {
      * @param e a synthetic event describing the origin and location of the
      *        popup menu
      *
-     * @see PopupMenu#show(java.awt.Component, int, int)
+     * @see PopupMenu#show(j86.java.awt.Component, int, int)
      */
     void show(Event e);
 }

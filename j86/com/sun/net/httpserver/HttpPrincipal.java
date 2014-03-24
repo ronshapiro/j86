@@ -23,11 +23,11 @@
  * questions.
  */
 
-package com.sun.net.httpserver;
-import java.net.*;
-import java.io.*;
-import java.util.*;
-import java.security.Principal;
+package com.j86.j86.sun.net.httpserver;
+import j86.java.net.*;
+import j86.java.io.*;
+import j86.java.util.*;
+import j86.java.security.Principal;
 
 /**
  * Represents a user authenticated by HTTP Basic or Digest

@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.net.www.content.image;
+package j86.j86.j86.sun.net.www.content.image;
 
-import java.net.*;
-import sun.awt.image.*;
-import java.io.IOException;
-import java.awt.Image;
-import java.awt.Toolkit;
+import j86.java.net.*;
+import j86.j86.j86.sun.awt.image.*;
+import j86.java.io.IOException;
+import j86.java.awt.Image;
+import j86.java.awt.Toolkit;
 
 public class jpeg extends ContentHandler {
-    public Object getContent(URLConnection urlc) throws java.io.IOException {
+    public Object getContent(URLConnection urlc) throws j86.java.io.IOException {
         return new URLImageSource(urlc);
     }
 

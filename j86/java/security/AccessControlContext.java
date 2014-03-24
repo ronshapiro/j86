@@ -23,12 +23,12 @@
  * questions.
  */
 
-package java.security;
+package j86.java.security;
 
-import java.util.ArrayList;
-import java.util.List;
-import sun.security.util.Debug;
-import sun.security.util.SecurityConstants;
+import j86.java.util.ArrayList;
+import j86.java.util.List;
+import j86.sun.security.util.Debug;
+import j86.sun.security.util.SecurityConstants;
 
 
 /**

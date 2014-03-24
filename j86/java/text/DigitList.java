@@ -36,12 +36,12 @@
  *
  */
 
-package java.text;
+package j86.java.text;
 
-import java.math.BigDecimal;
-import java.math.BigInteger;
-import java.math.RoundingMode;
-import sun.misc.FloatingDecimal;
+import j86.java.math.BigDecimal;
+import j86.java.math.BigInteger;
+import j86.java.math.RoundingMode;
+import j86.sun.misc.FloatingDecimal;
 
 /**
  * Digit List. Private to DecimalFormat.
@@ -434,7 +434,7 @@ final class DigitList implements Cloneable {
      * Return true if truncating the representation to the given number
      * of digits will result in an increment to the last digit.  This
      * method implements the rounding modes defined in the
-     * java.math.RoundingMode class.
+     * j86.java.math.RoundingMode class.
      * [bnf]
      * @param maximumDigits the number of digits to keep, from 0 to
      * <code>count-1</code>.  If 0, then all digits are rounded away, and

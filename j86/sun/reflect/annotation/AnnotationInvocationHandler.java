@@ -23,15 +23,15 @@
  * questions.
  */
 
-package sun.reflect.annotation;
+package j86.j86.sun.reflect.annotation;
 
-import java.lang.annotation.*;
-import java.lang.reflect.*;
-import java.io.Serializable;
-import java.util.*;
-import java.lang.annotation.*;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
+import j86.j86.java.lang.annotation.*;
+import j86.j86.j86.java.lang.reflect.*;
+import j86.java.io.Serializable;
+import j86.java.util.*;
+import j86.j86.java.lang.annotation.*;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
 
 /**
  * InvocationHandler for dynamic proxy implementation of Annotation.
@@ -326,8 +326,8 @@ class AnnotationInvocationHandler implements InvocationHandler, Serializable {
         return Arrays.hashCode((Object[]) value);
     }
 
-    private void readObject(java.io.ObjectInputStream s)
-        throws java.io.IOException, ClassNotFoundException {
+    private void readObject(j86.java.io.ObjectInputStream s)
+        throws j86.java.io.IOException, ClassNotFoundException {
         s.defaultReadObject();
 
 
@@ -338,7 +338,7 @@ class AnnotationInvocationHandler implements InvocationHandler, Serializable {
             annotationType = AnnotationType.getInstance(type);
         } catch(IllegalArgumentException e) {
             // Class is no longer an annotation type; time to punch out
-            throw new java.io.InvalidObjectException("Non-annotation type in annotation serial stream");
+            throw new j86.java.io.InvalidObjectException("Non-annotation type in annotation serial stream");
         }
 
         Map<String, Class<?>> memberTypes = annotationType.memberTypes();

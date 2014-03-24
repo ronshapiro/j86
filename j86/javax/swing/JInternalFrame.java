@@ -23,25 +23,25 @@
  * questions.
  */
 
-package javax.swing;
+package j86.javax.swing;
 
-import java.awt.*;
+import j86.java.awt.*;
 
-import java.beans.PropertyVetoException;
-import java.beans.PropertyChangeEvent;
+import j86.java.beans.PropertyVetoException;
+import j86.java.beans.PropertyChangeEvent;
 
-import javax.swing.event.InternalFrameEvent;
-import javax.swing.event.InternalFrameListener;
-import javax.swing.plaf.*;
+import j86.j86.javax.swing.event.InternalFrameEvent;
+import j86.j86.javax.swing.event.InternalFrameListener;
+import j86.j86.javax.swing.plaf.*;
 
-import javax.accessibility.*;
+import j86.javax.accessibility.*;
 
-import java.io.ObjectOutputStream;
-import java.io.IOException;
-import java.lang.StringBuilder;
-import java.beans.PropertyChangeListener;
-import sun.awt.AppContext;
-import sun.swing.SwingUtilities2;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.IOException;
+import j86.java.lang.StringBuilder;
+import j86.java.beans.PropertyChangeListener;
+import j86.sun.awt.AppContext;
+import j86.sun.swing.SwingUtilities2;
 
 
 /**
@@ -77,7 +77,7 @@ import sun.swing.SwingUtilities2;
  * optional menu bar for the internal frame. Please see the
  * <code>JRootPane</code>
  * documentation for a complete description of these components.
- * Refer to {@link javax.swing.RootPaneContainer}
+ * Refer to {@link j86.javax.swing.RootPaneContainer}
  * for details on adding, removing and setting the <code>LayoutManager</code>
  * of a <code>JInternalFrame</code>.
  * <p>
@@ -92,15 +92,15 @@ import sun.swing.SwingUtilities2;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @see InternalFrameEvent
  * @see JDesktopPane
  * @see DesktopManager
  * @see JInternalFrame.JDesktopIcon
  * @see JRootPane
- * @see javax.swing.RootPaneContainer
+ * @see j86.javax.swing.RootPaneContainer
  *
  * @author David Kloba
  * @author Rich Schiavi
@@ -139,7 +139,7 @@ public class JInternalFrame extends JComponent implements
      *
      * @see #isRootPaneCheckingEnabled
      * @see #setRootPaneCheckingEnabled
-     * @see javax.swing.RootPaneContainer
+     * @see j86.javax.swing.RootPaneContainer
      */
     protected boolean rootPaneCheckingEnabled = false;
 
@@ -350,7 +350,7 @@ public class JInternalFrame extends JComponent implements
         setRootPaneCheckingEnabled(true);
         desktopIcon = new JDesktopIcon(this);
         updateUI();
-        sun.awt.SunToolkit.checkAndSetPolicy(this);
+        j86.sun.awt.SunToolkit.checkAndSetPolicy(this);
         addPropertyChangeListenerIfNecessary();
     }
 
@@ -451,7 +451,7 @@ public class JInternalFrame extends JComponent implements
      * @see #addImpl
      * @see #setLayout
      * @see #setRootPaneCheckingEnabled
-     * @see javax.swing.RootPaneContainer
+     * @see j86.javax.swing.RootPaneContainer
      */
     protected boolean isRootPaneCheckingEnabled() {
         return rootPaneCheckingEnabled;
@@ -468,7 +468,7 @@ public class JInternalFrame extends JComponent implements
      * @see #addImpl
      * @see #setLayout
      * @see #isRootPaneCheckingEnabled
-     * @see javax.swing.RootPaneContainer
+     * @see j86.javax.swing.RootPaneContainer
      * @beaninfo
      *      hidden: true
      * description: Whether the add and setLayout methods are forwarded
@@ -482,7 +482,7 @@ public class JInternalFrame extends JComponent implements
      * This method is overridden to conditionally forward calls to the
      * <code>contentPane</code>.
      * By default, children are added to the <code>contentPane</code> instead
-     * of the frame, refer to {@link javax.swing.RootPaneContainer} for
+     * of the frame, refer to {@link j86.javax.swing.RootPaneContainer} for
      * details.
      *
      * @param comp the component to be enhanced
@@ -494,7 +494,7 @@ public class JInternalFrame extends JComponent implements
      * @exception IllegalArgumentException if adding a window to a container
      *
      * @see #setRootPaneCheckingEnabled
-     * @see javax.swing.RootPaneContainer
+     * @see j86.javax.swing.RootPaneContainer
      */
     protected void addImpl(Component comp, Object constraints, int index) {
         if(isRootPaneCheckingEnabled()) {
@@ -513,7 +513,7 @@ public class JInternalFrame extends JComponent implements
      * @param comp the component to be removed
      * @throws NullPointerException if <code>comp</code> is null
      * @see #add
-     * @see javax.swing.RootPaneContainer
+     * @see j86.javax.swing.RootPaneContainer
      */
     public void remove(Component comp) {
         int oldCount = getComponentCount();
@@ -528,7 +528,7 @@ public class JInternalFrame extends JComponent implements
      * Ensures that, by default, the layout of this component cannot be set.
      * Overridden to conditionally forward the call to the
      * <code>contentPane</code>.
-     * Refer to {@link javax.swing.RootPaneContainer} for
+     * Refer to {@link j86.javax.swing.RootPaneContainer} for
      * more information.
      *
      * @param manager the <code>LayoutManager</code>
@@ -606,7 +606,7 @@ public class JInternalFrame extends JComponent implements
         firePropertyChange(MENU_BAR_PROPERTY, oldValue, m);
     }
 
-    // implements javax.swing.RootPaneContainer
+    // implements j86.javax.swing.RootPaneContainer
     /**
      * Returns the content pane for this internal frame.
      * @return the content pane
@@ -622,7 +622,7 @@ public class JInternalFrame extends JComponent implements
      *
      * @param c  the content pane for this internal frame
      *
-     * @exception java.awt.IllegalComponentStateException (a runtime
+     * @exception j86.java.awt.IllegalComponentStateException (a runtime
      *           exception) if the content pane parameter is <code>null</code>
      * @see RootPaneContainer#getContentPane
      * @beaninfo
@@ -654,7 +654,7 @@ public class JInternalFrame extends JComponent implements
      *
      * @param layered the <code>JLayeredPane</code> for this internal frame
      *
-     * @exception java.awt.IllegalComponentStateException (a runtime
+     * @exception j86.java.awt.IllegalComponentStateException (a runtime
      *           exception) if the layered pane parameter is <code>null</code>
      * @see RootPaneContainer#setLayeredPane
      * @beaninfo
@@ -805,7 +805,7 @@ public class JInternalFrame extends JComponent implements
      * @see #isClosed()
      * @see #setDefaultCloseOperation
      * @see #dispose
-     * @see javax.swing.event.InternalFrameEvent#INTERNAL_FRAME_CLOSING
+     * @see j86.j86.javax.swing.event.InternalFrameEvent#INTERNAL_FRAME_CLOSING
      *
      * @beaninfo
      *           bound: true
@@ -1608,7 +1608,7 @@ public class JInternalFrame extends JComponent implements
      *
      * @since 1.3
      * @see #setDefaultCloseOperation
-     * @see javax.swing.event.InternalFrameEvent#INTERNAL_FRAME_CLOSING
+     * @see j86.j86.javax.swing.event.InternalFrameEvent#INTERNAL_FRAME_CLOSING
      */
     public void doDefaultCloseAction() {
         fireInternalFrameEvent(InternalFrameEvent.INTERNAL_FRAME_CLOSING);
@@ -1664,7 +1664,7 @@ public class JInternalFrame extends JComponent implements
      * an <code>INTERNAL_FRAME_CLOSING</code> event.
      *
      * @param operation one of the following constants defined in
-     *                  <code>javax.swing.WindowConstants</code>
+     *                  <code>j86.javax.swing.WindowConstants</code>
      *                  (an interface implemented by
      *                  <code>JInternalFrame</code>):
      *                  <code>DO_NOTHING_ON_CLOSE</code>,
@@ -1699,7 +1699,7 @@ public class JInternalFrame extends JComponent implements
      * internal frame is unable to be restored its state is not changed
      * and will not be packed.
      *
-     * @see       java.awt.Window#pack
+     * @see       j86.java.awt.Window#pack
      */
     public void pack() {
         try {
@@ -1782,7 +1782,7 @@ public class JInternalFrame extends JComponent implements
      * the internal frame and does not fire
      * an <code>INTERNAL_FRAME_CLOSING</code> event.
      *
-     * @see javax.swing.event.InternalFrameEvent#INTERNAL_FRAME_CLOSED
+     * @see j86.j86.javax.swing.event.InternalFrameEvent#INTERNAL_FRAME_CLOSED
      * @see #setVisible
      * @see #setSelected
      * @see #setClosed
@@ -1809,7 +1809,7 @@ public class JInternalFrame extends JComponent implements
      * and makes the corresponding adjustment to other visible internal
      * frames.
      *
-     * @see       java.awt.Window#toFront
+     * @see       j86.java.awt.Window#toFront
      * @see       #moveToFront
      */
     public void toFront() {
@@ -1822,7 +1822,7 @@ public class JInternalFrame extends JComponent implements
      * and makes the corresponding adjustment to other visible
      * internal frames.
      *
-     * @see       java.awt.Window#toBack
+     * @see       j86.java.awt.Window#toBack
      * @see       #moveToBack
      */
     public void toBack() {
@@ -1835,8 +1835,8 @@ public class JInternalFrame extends JComponent implements
      *
      * @param focusCycleRoot this value is ignored
      * @see #isFocusCycleRoot
-     * @see java.awt.Container#setFocusTraversalPolicy
-     * @see java.awt.Container#getFocusTraversalPolicy
+     * @see j86.java.awt.Container#setFocusTraversalPolicy
+     * @see j86.java.awt.Container#getFocusTraversalPolicy
      * @since 1.4
      */
     public final void setFocusCycleRoot(boolean focusCycleRoot) {
@@ -1848,8 +1848,8 @@ public class JInternalFrame extends JComponent implements
      *
      * @return <code>true</code>
      * @see #setFocusCycleRoot
-     * @see java.awt.Container#setFocusTraversalPolicy
-     * @see java.awt.Container#getFocusTraversalPolicy
+     * @see j86.java.awt.Container#setFocusTraversalPolicy
+     * @see j86.java.awt.Container#getFocusTraversalPolicy
      * @since 1.4
      */
     public final boolean isFocusCycleRoot() {
@@ -1862,7 +1862,7 @@ public class JInternalFrame extends JComponent implements
      * traversal cycle.
      *
      * @return <code>null</code>
-     * @see java.awt.Container#isFocusCycleRoot()
+     * @see j86.java.awt.Container#isFocusCycleRoot()
      * @since 1.4
      */
     public final Container getFocusCycleRootAncestor() {
@@ -1875,7 +1875,7 @@ public class JInternalFrame extends JComponent implements
      * contained within a window that might need a warning string)
      * this method always returns <code>null</code>.
      * @return    <code>null</code>
-     * @see       java.awt.Window#getWarningString
+     * @see       j86.java.awt.Window#getWarningString
      */
     public final String getWarningString() {
         return null;
@@ -2031,8 +2031,8 @@ public class JInternalFrame extends JComponent implements
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     protected class AccessibleJInternalFrame extends AccessibleJComponent
         implements AccessibleValue {
@@ -2146,8 +2146,8 @@ public class JInternalFrame extends JComponent implements
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      *
      * @author David Kloba
      */
@@ -2320,8 +2320,8 @@ public class JInternalFrame extends JComponent implements
          * appropriate for short term storage or RMI between applications running
          * the same version of Swing.  As of 1.4, support for long term storage
          * of all JavaBeans&trade;
-         * has been added to the <code>java.beans</code> package.
-         * Please see {@link java.beans.XMLEncoder}.
+         * has been added to the <code>j86.java.beans</code> package.
+         * Please see {@link j86.java.beans.XMLEncoder}.
          */
         protected class AccessibleJDesktopIcon extends AccessibleJComponent
             implements AccessibleValue {

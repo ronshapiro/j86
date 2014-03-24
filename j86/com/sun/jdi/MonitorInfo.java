@@ -23,7 +23,7 @@
  * questions.
  */
 
-package com.sun.jdi;
+package j86.com.sun.jdi;
 
 /**
  * Information about a monitor owned by a thread.

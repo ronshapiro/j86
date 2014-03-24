@@ -23,9 +23,9 @@
  * questions.
  */
 
-package com.sun.jdi;
+package j86.com.sun.jdi;
 
-import java.util.List;
+import j86.java.util.List;
 
 /**
  * A static or instance method in the target VM. See {@link TypeComponent}
@@ -87,7 +87,7 @@ public interface Method extends TypeComponent, Locatable, Comparable<Method> {
      * This list is always available even if
      * the types have not yet been created or loaded.
      *
-     * @return a {@link java.util.List List} of {@link String},
+     * @return a {@link j86.java.util.List List} of {@link String},
      * one List element for each parameter of this method.
      * Each element represents the type of a formal parameter
      * as specified at compile-time.
@@ -117,7 +117,7 @@ public interface Method extends TypeComponent, Locatable, Comparable<Method> {
      * a reference type is prepared.
      *
      * @see Type
-     * @return return a {@link java.util.List List} of {@link Type},
+     * @return return a {@link j86.java.util.List List} of {@link Type},
      * one List element for each parameter of this method.
      * Each element represents the type of a formal parameter
      * as specified at compile-time.
@@ -265,7 +265,7 @@ public interface Method extends TypeComponent, Locatable, Comparable<Method> {
      * <code>locationsOfLine(vm.getDefaultStratum(), null,
      * lineNumber)</code> -
      * see {@link
-     * #locationsOfLine(java.lang.String,java.lang.String,int)}
+     * #locationsOfLine(j86.java.lang.String,java.lang.String,int)}
      * for more information.
      *
      * @param lineNumber the line number
@@ -396,7 +396,7 @@ public interface Method extends TypeComponent, Locatable, Comparable<Method> {
      *
      * @return the array of bytecodes; abstract and native methods
      * will return a zero-length array.
-     * @throws java.lang.UnsupportedOperationException if
+     * @throws j86.java.lang.UnsupportedOperationException if
      * the target virtual machine does not support
      * the retrieval of bytecodes.
      */

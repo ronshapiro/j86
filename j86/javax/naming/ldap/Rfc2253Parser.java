@@ -23,12 +23,12 @@
  * questions.
  */
 
-package javax.naming.ldap;
+package j86.j86.javax.naming.ldap;
 
-import java.util.List;
-import java.util.ArrayList;
+import j86.java.util.List;
+import j86.java.util.ArrayList;
 
-import javax.naming.InvalidNameException;
+import j86.javax.naming.InvalidNameException;
 
 /*
  * RFC2253Parser implements a recursive descent parser for a single DN.

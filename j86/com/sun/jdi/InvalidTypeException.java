@@ -23,7 +23,7 @@
  * questions.
  */
 
-package com.sun.jdi;
+package j86.com.sun.jdi;
 
 /**
  * Thrown to indicate a type mismatch in setting the value of a field

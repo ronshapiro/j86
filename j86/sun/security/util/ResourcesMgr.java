@@ -23,28 +23,28 @@
  * questions.
  */
 
-package sun.security.util;
+package j86.sun.security.util;
 
 /**
  */
 public class ResourcesMgr {
 
-    // intended for java.security, javax.security and sun.security resources
-    private static java.util.ResourceBundle bundle;
+    // intended for j86.java.security, javax.security and sun.security resources
+    private static j86.java.util.ResourceBundle bundle;
 
     // intended for com.sun.security resources
-    private static java.util.ResourceBundle altBundle;
+    private static j86.java.util.ResourceBundle altBundle;
 
     public static String getString(String s) {
 
         if (bundle == null) {
 
             // only load if/when needed
-            bundle = java.security.AccessController.doPrivileged(
-                new java.security.PrivilegedAction<java.util.ResourceBundle>() {
-                public java.util.ResourceBundle run() {
-                    return (java.util.ResourceBundle.getBundle
-                                ("sun.security.util.Resources"));
+            bundle = j86.java.security.AccessController.doPrivileged(
+                new j86.java.security.PrivilegedAction<j86.java.util.ResourceBundle>() {
+                public j86.java.util.ResourceBundle run() {
+                    return (j86.java.util.ResourceBundle.getBundle
+                                ("j86.sun.security.util.Resources"));
                 }
             });
         }
@@ -57,10 +57,10 @@ public class ResourcesMgr {
         if (altBundle == null) {
 
             // only load if/when needed
-            altBundle = java.security.AccessController.doPrivileged(
-                new java.security.PrivilegedAction<java.util.ResourceBundle>() {
-                public java.util.ResourceBundle run() {
-                    return (java.util.ResourceBundle.getBundle(altBundleName));
+            altBundle = j86.java.security.AccessController.doPrivileged(
+                new j86.java.security.PrivilegedAction<j86.java.util.ResourceBundle>() {
+                public j86.java.util.ResourceBundle run() {
+                    return (j86.java.util.ResourceBundle.getBundle(altBundleName));
                 }
             });
         }

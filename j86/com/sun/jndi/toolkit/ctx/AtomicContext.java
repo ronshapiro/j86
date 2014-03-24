@@ -23,9 +23,9 @@
  * questions.
  */
 
-package com.sun.jndi.toolkit.ctx;
+package j86.com.sun.jndi.toolkit.ctx;
 
-import javax.naming.*;
+import j86.javax.naming.*;
 
 /**
   * Clients: deal only with names for its own naming service
@@ -138,7 +138,7 @@ public abstract class AtomicContext extends ComponentContext {
                         private static final long serialVersionUID =
                             -3399518522645918499L;
                     };
-                    Reference ref = new Reference("java.lang.Object", addr);
+                    Reference ref = new Reference("j86.java.lang.Object", addr);
 
                     // Resolved name has trailing slash to indicate nns
                     CompositeName resName = new CompositeName();
@@ -546,7 +546,7 @@ public abstract class AtomicContext extends ComponentContext {
             }
             private static final long serialVersionUID = 3449785852664978312L;
         };
-        Reference ref = new Reference("java.lang.Object", addr);
+        Reference ref = new Reference("j86.java.lang.Object", addr);
 
         // Set continuation leave it to PartialCompositeContext.getPCContext()
         // to throw the exception.

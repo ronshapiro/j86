@@ -22,30 +22,30 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.plaf.nimbus;
+package j86.j86.j86.javax.swing.plaf.nimbus;
 
-import javax.swing.Painter;
+import j86.javax.swing.Painter;
 
-import javax.swing.JComponent;
-import javax.swing.UIDefaults;
-import javax.swing.UIManager;
-import javax.swing.plaf.ColorUIResource;
-import javax.swing.plaf.synth.ColorType;
-import static javax.swing.plaf.synth.SynthConstants.*;
-import javax.swing.plaf.synth.SynthContext;
-import javax.swing.plaf.synth.SynthPainter;
-import javax.swing.plaf.synth.SynthStyle;
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.Insets;
-import java.lang.ref.WeakReference;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.TreeMap;
+import j86.javax.swing.JComponent;
+import j86.javax.swing.UIDefaults;
+import j86.javax.swing.UIManager;
+import j86.j86.javax.swing.plaf.ColorUIResource;
+import j86.j86.j86.javax.swing.plaf.synth.ColorType;
+import static j86.j86.j86.javax.swing.plaf.synth.SynthConstants.*;
+import j86.j86.j86.javax.swing.plaf.synth.SynthContext;
+import j86.j86.j86.javax.swing.plaf.synth.SynthPainter;
+import j86.j86.j86.javax.swing.plaf.synth.SynthStyle;
+import j86.java.awt.Color;
+import j86.java.awt.Font;
+import j86.java.awt.Insets;
+import j86.j86.java.lang.ref.WeakReference;
+import j86.java.util.ArrayList;
+import j86.java.util.Collections;
+import j86.java.util.Comparator;
+import j86.java.util.HashMap;
+import j86.java.util.List;
+import j86.java.util.Map;
+import j86.java.util.TreeMap;
 
 /**
  * <p>A SynthStyle implementation used by Nimbus. Each Region that has been

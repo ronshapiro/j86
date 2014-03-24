@@ -38,16 +38,16 @@
  *
  */
 
-package java.awt.font;
+package j86.j86.java.awt.font;
 
-import java.awt.geom.Rectangle2D;
+import j86.j86.java.awt.geom.Rectangle2D;
 
 /**
  * The <code>GlyphMetrics</code> class represents information for a
  * single glyph.   A glyph is the visual representation of one or more
  * characters.  Many different glyphs can be used to represent a single
  * character or combination of characters.  <code>GlyphMetrics</code>
- * instances are produced by {@link java.awt.Font Font} and are applicable
+ * instances are produced by {@link j86.java.awt.Font Font} and are applicable
  * to a specific glyph in a particular <code>Font</code>.
  * <p>
  * Glyphs are either STANDARD, LIGATURE, COMBINING, or COMPONENT.
@@ -102,7 +102,7 @@ import java.awt.geom.Rectangle2D;
  * int isStandard = metrics.isStandard();
  * float glyphAdvance = metrics.getAdvance();
  * </pre></blockquote>
- * @see java.awt.Font
+ * @see j86.java.awt.Font
  * @see GlyphVector
  */
 

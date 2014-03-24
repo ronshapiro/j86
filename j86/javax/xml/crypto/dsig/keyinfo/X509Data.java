@@ -25,11 +25,11 @@
 /*
  * $Id: X509Data.java,v 1.4 2005/05/10 16:35:35 mullan Exp $
  */
-package javax.xml.crypto.dsig.keyinfo;
+package j86.j86.j86.javax.xml.crypto.dsig.keyinfo;
 
-import javax.xml.crypto.XMLStructure;
-import java.security.cert.X509CRL;
-import java.util.List;
+import j86.javax.xml.crypto.XMLStructure;
+import j86.j86.java.security.cert.X509CRL;
+import j86.java.util.List;
 
 /**
  * A representation of the XML <code>X509Data</code> element as defined in
@@ -99,10 +99,10 @@ public interface X509Data extends XMLStructure {
         "http://www.w3.org/2000/09/xmldsig#rawX509Certificate";
 
     /**
-     * Returns an {@link java.util.Collections#unmodifiableList unmodifiable
+     * Returns an {@link j86.java.util.Collections#unmodifiableList unmodifiable
      * list} of the content in this <code>X509Data</code>. Valid types are
      * {@link String} (subject names), <code>byte[]</code> (subject key ids),
-     * {@link java.security.cert.X509Certificate}, {@link X509CRL},
+     * {@link j86.j86.java.security.cert.X509Certificate}, {@link X509CRL},
      * or {@link XMLStructure} ({@link X509IssuerSerial}
      * objects or elements from an external namespace).
      *

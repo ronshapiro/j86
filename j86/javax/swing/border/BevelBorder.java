@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.border;
+package j86.j86.javax.swing.border;
 
-import java.awt.Graphics;
-import java.awt.Insets;
-import java.awt.Color;
-import java.awt.Component;
-import java.beans.ConstructorProperties;
+import j86.java.awt.Graphics;
+import j86.java.awt.Insets;
+import j86.java.awt.Color;
+import j86.java.awt.Component;
+import j86.java.beans.ConstructorProperties;
 
 /**
  * A class which implements a simple two-line bevel border.
@@ -39,8 +39,8 @@ import java.beans.ConstructorProperties;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @author David Kloba
  */

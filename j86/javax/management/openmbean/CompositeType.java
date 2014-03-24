@@ -24,15 +24,15 @@
  */
 
 
-package javax.management.openmbean;
+package j86.j86.javax.management.openmbean;
 
 
 // java import
 //
-import java.util.Set;
-import java.util.TreeMap;
-import java.util.Collections;
-import java.util.Iterator;
+import j86.java.util.Set;
+import j86.java.util.TreeMap;
+import j86.java.util.Collections;
+import j86.java.util.Iterator;
 
 // jmx import
 //
@@ -251,11 +251,11 @@ public class CompositeType extends OpenType<CompositeData> {
      * described by this <code>CompositeType</code> instance.
      *
      * <p>If <var>obj</var> is null or is not an instance of
-     * <code>javax.management.openmbean.CompositeData</code>,
+     * <code>j86.j86.javax.management.openmbean.CompositeData</code>,
      * <code>isValue</code> returns <code>false</code>.</p>
      *
      * <p>If <var>obj</var> is an instance of
-     * <code>javax.management.openmbean.CompositeData</code>, then let
+     * <code>j86.j86.javax.management.openmbean.CompositeData</code>, then let
      * {@code ct} be its {@code CompositeType} as returned by {@link
      * CompositeData#getCompositeType()}.  The result is true if
      * {@code this} is <em>assignable from</em> {@code ct}.  This
@@ -436,7 +436,7 @@ public class CompositeType extends OpenType<CompositeData> {
      * Returns a string representation of this <code>CompositeType</code> instance.
      * <p>
      * The string representation consists of
-     * the name of this class (ie <code>javax.management.openmbean.CompositeType</code>), the type name for this instance,
+     * the name of this class (ie <code>j86.j86.javax.management.openmbean.CompositeType</code>), the type name for this instance,
      * and the list of the items names and types string representation of this instance.
      * <p>
      * As <code>CompositeType</code> instances are immutable, the string representation for this instance is calculated once,

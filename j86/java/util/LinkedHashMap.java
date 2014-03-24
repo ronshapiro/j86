@@ -23,12 +23,12 @@
  * questions.
  */
 
-package java.util;
+package j86.java.util;
 
-import java.util.function.Consumer;
-import java.util.function.BiConsumer;
-import java.util.function.BiFunction;
-import java.io.IOException;
+import j86.j86.java.util.function.Consumer;
+import j86.j86.java.util.function.BiConsumer;
+import j86.j86.java.util.function.BiFunction;
+import j86.java.io.IOException;
 
 /**
  * <p>Hash table and linked list implementation of the <tt>Map</tt> interface,
@@ -327,7 +327,7 @@ public class LinkedHashMap<K,V>
         }
     }
 
-    void internalWriteEntries(java.io.ObjectOutputStream s) throws IOException {
+    void internalWriteEntries(j86.java.io.ObjectOutputStream s) throws IOException {
         for (LinkedHashMap.Entry<K,V> e = head; e != null; e = e.after) {
             s.writeObject(e.key);
             s.writeObject(e.value);

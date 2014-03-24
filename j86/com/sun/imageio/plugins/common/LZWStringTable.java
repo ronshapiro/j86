@@ -23,9 +23,9 @@
  * questions.
  */
 
-package com.sun.imageio.plugins.common;
+package j86.com.sun.imageio.plugins.common;
 
-import java.io.PrintStream;
+import j86.java.io.PrintStream;
 
 /**
  * General purpose LZW String Table.

@@ -29,7 +29,7 @@
  * others. All Rights Reserved.                                                *
  *******************************************************************************
  */
-package sun.util.locale;
+package j86.j86.sun.util.locale;
 
 public final class AsciiUtil {
     public static boolean caseIgnoreMatch(String s1, String s2) {

@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.security.ssl;
+package j86.sun.security.ssl;
 
-import java.util.Arrays;
+import j86.java.util.Arrays;
 
 /**
  * This class represents an SSL/TLS message authentication token,

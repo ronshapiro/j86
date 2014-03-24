@@ -20,30 +20,30 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.sun.org.apache.xml.internal.security.signature;
+package j86.j86.com.sun.org.apache.xml.internal.security.signature;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.util.ArrayList;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Set;
+import j86.java.io.ByteArrayInputStream;
+import j86.java.io.ByteArrayOutputStream;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.io.OutputStream;
+import j86.java.util.ArrayList;
+import j86.java.util.LinkedHashSet;
+import j86.java.util.List;
+import j86.java.util.Set;
 
 import javax.xml.XMLConstants;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
-import com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
-import com.sun.org.apache.xml.internal.security.c14n.implementations.CanonicalizerBase;
-import com.sun.org.apache.xml.internal.security.c14n.implementations.Canonicalizer20010315OmitComments;
-import com.sun.org.apache.xml.internal.security.c14n.implementations.Canonicalizer11_OmitComments;
-import com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityRuntimeException;
-import com.sun.org.apache.xml.internal.security.utils.JavaUtils;
-import com.sun.org.apache.xml.internal.security.utils.XMLUtils;
+import j86.j86.com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
+import j86.j86.j86.com.sun.org.apache.xml.internal.security.c14n.implementations.CanonicalizerBase;
+import j86.j86.j86.com.sun.org.apache.xml.internal.security.c14n.implementations.Canonicalizer20010315OmitComments;
+import j86.j86.j86.com.sun.org.apache.xml.internal.security.c14n.implementations.Canonicalizer11_OmitComments;
+import j86.j86.com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityRuntimeException;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.JavaUtils;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.xml.sax.SAXException;
@@ -65,7 +65,7 @@ public class XMLSignatureInput {
      */
 
     /**
-     * Some InputStreams do not support the {@link java.io.InputStream#reset}
+     * Some InputStreams do not support the {@link j86.java.io.InputStream#reset}
      * method, so we read it in completely and work on our Proxy.
      */
     private InputStream inputOctetStreamProxy = null;
@@ -565,7 +565,7 @@ public class XMLSignatureInput {
         DocumentBuilder db = dfactory.newDocumentBuilder();
         // select all nodes, also the comments.
         try {
-            db.setErrorHandler(new com.sun.org.apache.xml.internal.security.utils.IgnoreAllErrorHandler());
+            db.setErrorHandler(new j86.j86.com.sun.org.apache.xml.internal.security.utils.IgnoreAllErrorHandler());
 
             Document doc = db.parse(this.getOctetStream());
             this.subNode = doc;

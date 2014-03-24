@@ -23,26 +23,26 @@
  * questions.
  */
 
-package sun.font;
+package j86.sun.font;
 
-import java.lang.ref.WeakReference;
-import java.awt.FontFormatException;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.RandomAccessFile;
-import java.io.UnsupportedEncodingException;
-import java.lang.ref.WeakReference;
-import java.nio.ByteBuffer;
-import java.nio.ByteOrder;
-import java.nio.MappedByteBuffer;
-import java.nio.BufferUnderflowException;
-import java.nio.channels.ClosedChannelException;
-import java.nio.channels.FileChannel;
-import sun.java2d.Disposer;
-import sun.java2d.DisposerRecord;
-import java.util.HashSet;
-import java.util.HashMap;
-import java.awt.Font;
+import j86.j86.java.lang.ref.WeakReference;
+import j86.java.awt.FontFormatException;
+import j86.java.io.FileNotFoundException;
+import j86.java.io.IOException;
+import j86.java.io.RandomAccessFile;
+import j86.java.io.UnsupportedEncodingException;
+import j86.j86.java.lang.ref.WeakReference;
+import j86.java.nio.ByteBuffer;
+import j86.java.nio.ByteOrder;
+import j86.java.nio.MappedByteBuffer;
+import j86.java.nio.BufferUnderflowException;
+import j86.j86.java.nio.channels.ClosedChannelException;
+import j86.j86.java.nio.channels.FileChannel;
+import j86.sun.java2d.Disposer;
+import j86.sun.java2d.DisposerRecord;
+import j86.java.util.HashSet;
+import j86.java.util.HashMap;
+import j86.java.awt.Font;
 
 /*
  * Adobe Technical Note 5040 details the format of PFB files.
@@ -85,12 +85,12 @@ public class Type1Font extends FileFont {
         }
 
         public synchronized void dispose() {
-            java.security.AccessController.doPrivileged(
-                new java.security.PrivilegedAction() {
+            j86.java.security.AccessController.doPrivileged(
+                new j86.java.security.PrivilegedAction() {
                     public Object run() {
 
                         if (fileName != null) {
-                            (new java.io.File(fileName)).delete();
+                            (new j86.java.io.File(fileName)).delete();
                         }
                         return null;
                     }
@@ -191,8 +191,8 @@ public class Type1Font extends FileFont {
           //System.out.println("open T1 " + platName);
             try {
                 RandomAccessFile raf = (RandomAccessFile)
-                java.security.AccessController.doPrivileged(
-                    new java.security.PrivilegedAction() {
+                j86.java.security.AccessController.doPrivileged(
+                    new j86.java.security.PrivilegedAction() {
                         public Object run() {
                             try {
                                 return new RandomAccessFile(platName, "r");
@@ -231,8 +231,8 @@ public class Type1Font extends FileFont {
         FileChannel fc;
         try {
             raf = (RandomAccessFile)
-                java.security.AccessController.doPrivileged(
-                    new java.security.PrivilegedAction() {
+                j86.java.security.AccessController.doPrivileged(
+                    new j86.java.security.PrivilegedAction() {
                         public Object run() {
                             try {
                                 return new RandomAccessFile(platName, "r");

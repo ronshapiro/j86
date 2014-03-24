@@ -23,12 +23,12 @@
  * questions.
  */
 
-package com.sun.jndi.ldap;
+package j86.com.sun.jndi.ldap;
 
-import javax.naming.*;
-import javax.naming.directory.*;
-import java.util.Hashtable;
-import com.sun.jndi.toolkit.dir.HierMemDirCtx;
+import j86.javax.naming.*;
+import j86.j86.javax.naming.directory.*;
+import j86.java.util.Hashtable;
+import j86.com.sun.jndi.toolkit.dir.HierMemDirCtx;
 
 /**
  * This is the class used to implement LDAP's GetSchema call.

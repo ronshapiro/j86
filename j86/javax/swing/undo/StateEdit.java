@@ -23,11 +23,11 @@
  * questions.
  */
 
-package javax.swing.undo;
+package j86.j86.javax.swing.undo;
 
-import java.util.Enumeration;
-import java.util.Hashtable;
-import java.util.Vector;
+import j86.java.util.Enumeration;
+import j86.java.util.Hashtable;
+import j86.java.util.Vector;
 
 /**
  * <P>StateEdit is a general edit for objects that change state.

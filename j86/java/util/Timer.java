@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.util;
-import java.util.Date;
-import java.util.concurrent.atomic.AtomicInteger;
+package j86.java.util;
+import j86.java.util.Date;
+import j86.j86.j86.java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * A facility for threads to schedule tasks for future execution in a
@@ -61,9 +61,9 @@ import java.util.concurrent.atomic.AtomicInteger;
  * <p>This class does <i>not</i> offer real-time guarantees: it schedules
  * tasks using the <tt>Object.wait(long)</tt> method.
  *
- * <p>Java 5.0 introduced the {@code java.util.concurrent} package and
+ * <p>Java 5.0 introduced the {@code j86.j86.java.util.concurrent} package and
  * one of the concurrency utilities therein is the {@link
- * java.util.concurrent.ScheduledThreadPoolExecutor
+ * j86.j86.java.util.concurrent.ScheduledThreadPoolExecutor
  * ScheduledThreadPoolExecutor} which is a thread pool for repeatedly
  * executing tasks at a given rate or delay.  It is effectively a more
  * versatile replacement for the {@code Timer}/{@code TimerTask}

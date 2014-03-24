@@ -23,24 +23,24 @@
  * questions.
  */
 
-package sun.tools.jconsole;
+package j86.sun.tools.jconsole;
 
-import java.awt.BorderLayout;
-import java.awt.EventQueue;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
-import java.beans.*;
-import java.io.*;
-import java.util.Set;
-import javax.management.*;
-import javax.swing.*;
-import javax.swing.event.*;
-import javax.swing.tree.*;
-import sun.tools.jconsole.ProxyClient.SnapshotMBeanServerConnection;
-import sun.tools.jconsole.inspector.*;
+import j86.java.awt.BorderLayout;
+import j86.java.awt.EventQueue;
+import j86.j86.java.awt.event.MouseAdapter;
+import j86.j86.java.awt.event.MouseEvent;
+import j86.j86.java.awt.event.MouseListener;
+import j86.java.beans.*;
+import j86.java.io.*;
+import j86.java.util.Set;
+import j86.javax.management.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.event.*;
+import j86.j86.javax.swing.tree.*;
+import j86.sun.tools.jconsole.ProxyClient.SnapshotMBeanServerConnection;
+import j86.j86.sun.tools.jconsole.inspector.*;
 
-import com.sun.tools.jconsole.JConsoleContext;
+import com.j86.sun.tools.jconsole.JConsoleContext;
 
 @SuppressWarnings("serial")
 public class MBeansTab extends Tab implements

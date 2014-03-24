@@ -23,16 +23,16 @@
  * questions.
  */
 
-package java.applet;
+package j86.java.applet;
 
-import java.awt.Image;
-import java.awt.Graphics;
-import java.awt.image.ColorModel;
-import java.net.URL;
-import java.util.Enumeration;
-import java.io.InputStream;
-import java.io.IOException;
-import java.util.Iterator;
+import j86.java.awt.Image;
+import j86.java.awt.Graphics;
+import j86.j86.j86.java.awt.image.ColorModel;
+import j86.java.net.URL;
+import j86.java.util.Enumeration;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
+import j86.java.util.Iterator;
 
 /**
  * This interface corresponds to an applet's environment: the
@@ -66,7 +66,7 @@ public interface AppletContext {
      *
      * @param   url   an absolute URL giving the location of the image.
      * @return  the image at the specified URL.
-     * @see     java.awt.Image
+     * @see     j86.java.awt.Image
      */
     Image getImage(URL url);
 

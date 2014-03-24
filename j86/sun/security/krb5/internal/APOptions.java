@@ -28,12 +28,12 @@
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
 
-package sun.security.krb5.internal;
+package j86.j86.sun.security.krb5.internal;
 
-import sun.security.krb5.Asn1Exception;
-import sun.security.krb5.internal.util.KerberosFlags;
-import sun.security.util.*;
-import java.io.IOException;
+import j86.sun.security.krb5.Asn1Exception;
+import j86.j86.j86.sun.security.krb5.internal.util.KerberosFlags;
+import j86.sun.security.util.*;
+import j86.java.io.IOException;
 
 /**
  * Implements the ASN.1 APOptions type.

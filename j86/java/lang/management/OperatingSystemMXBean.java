@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.lang.management;
+package j86.j86.java.lang.management;
 
 /**
  * The management interface for the operating system on which
@@ -41,7 +41,7 @@ package java.lang.management;
  * the operating system within an MBeanServer is:
  * <blockquote>
  *    {@link ManagementFactory#OPERATING_SYSTEM_MXBEAN_NAME
- *      <tt>java.lang:type=OperatingSystem</tt>}
+ *      <tt>j86.java.lang:type=OperatingSystem</tt>}
  * </blockquote>
  *
  * It can be obtained by calling the
@@ -52,7 +52,7 @@ package java.lang.management;
  * virtual machine is running.
  *
  * @see ManagementFactory#getPlatformMXBeans(Class)
- * @see <a href="../../../javax/management/package-summary.html">
+ * @see <a href="../../../j86.javax.management/package-summary.html">
  *      JMX Specification.</a>
  * @see <a href="package-summary.html#examples">
  *      Ways to Access MXBeans</a>
@@ -67,12 +67,12 @@ public interface OperatingSystemMXBean extends PlatformManagedObject {
      *
      * @return the operating system name.
      *
-     * @throws  java.lang.SecurityException
+     * @throws  j86.java.lang.SecurityException
      *     if a security manager exists and its
      *     <code>checkPropertiesAccess</code> method doesn't allow access
      *     to this system property.
-     * @see java.lang.SecurityManager#checkPropertyAccess(java.lang.String)
-     * @see java.lang.System#getProperty
+     * @see j86.java.lang.SecurityManager#checkPropertyAccess(java.lang.String)
+     * @see j86.java.lang.System#getProperty
      */
     public String getName();
 
@@ -82,12 +82,12 @@ public interface OperatingSystemMXBean extends PlatformManagedObject {
      *
      * @return the operating system architecture.
      *
-     * @throws  java.lang.SecurityException
+     * @throws  j86.java.lang.SecurityException
      *     if a security manager exists and its
      *     <code>checkPropertiesAccess</code> method doesn't allow access
      *     to this system property.
-     * @see java.lang.SecurityManager#checkPropertyAccess(java.lang.String)
-     * @see java.lang.System#getProperty
+     * @see j86.java.lang.SecurityManager#checkPropertyAccess(java.lang.String)
+     * @see j86.java.lang.System#getProperty
      */
     public String getArch();
 
@@ -97,12 +97,12 @@ public interface OperatingSystemMXBean extends PlatformManagedObject {
      *
      * @return the operating system version.
      *
-     * @throws  java.lang.SecurityException
+     * @throws  j86.java.lang.SecurityException
      *     if a security manager exists and its
      *     <code>checkPropertiesAccess</code> method doesn't allow access
      *     to this system property.
-     * @see java.lang.SecurityManager#checkPropertyAccess(java.lang.String)
-     * @see java.lang.System#getProperty
+     * @see j86.java.lang.SecurityManager#checkPropertyAccess(java.lang.String)
+     * @see j86.java.lang.System#getProperty
      */
     public String getVersion();
 

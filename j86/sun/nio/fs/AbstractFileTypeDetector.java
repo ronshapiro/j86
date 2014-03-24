@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.nio.fs;
+package j86.j86.sun.nio.fs;
 
-import java.nio.file.Path;
-import java.nio.file.spi.FileTypeDetector;
-import java.util.Locale;
-import java.io.IOException;
+import j86.j86.java.nio.file.Path;
+import j86.j86.j86.java.nio.file.spi.FileTypeDetector;
+import j86.java.util.Locale;
+import j86.java.io.IOException;
 
 /**
  * Base implementation of FileTypeDetector

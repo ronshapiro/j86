@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text.rtf;
+package j86.j86.j86.javax.swing.text.rtf;
 
-import javax.swing.text.AttributeSet;
-import javax.swing.text.MutableAttributeSet;
-import java.io.IOException;
+import j86.j86.javax.swing.text.AttributeSet;
+import j86.j86.javax.swing.text.MutableAttributeSet;
+import j86.java.io.IOException;
 
 /**
  * This interface describes a class which defines a 1-1 mapping between

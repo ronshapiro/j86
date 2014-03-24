@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.print.event;
+package j86.j86.javax.print.event;
 
-import javax.print.DocPrintJob;
+import j86.javax.print.DocPrintJob;
 
 /**
  *
@@ -42,7 +42,7 @@ public class PrintJobEvent extends PrintEvent {
    private int reason;
 
    /**
-    * The job was canceled by the {@link javax.print.PrintService PrintService}.
+    * The job was canceled by the {@link j86.javax.print.PrintService PrintService}.
     */
    public static final int JOB_CANCELED   = 101;
 

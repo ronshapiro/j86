@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.naming.event;
+package j86.j86.javax.naming.event;
 
-import javax.naming.Binding;
+import j86.javax.naming.Binding;
 
 /**
   * This class represents an event fired by a naming/directory service.
@@ -70,7 +70,7 @@ import javax.naming.Binding;
   * @see EventContext
   * @since 1.3
   */
-public class NamingEvent extends java.util.EventObject {
+public class NamingEvent extends j86.java.util.EventObject {
     /**
      * Naming event type for indicating that a new object has been added.
      * The value of this constant is <tt>0</tt>.

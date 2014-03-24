@@ -22,9 +22,9 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.awt.peer;
+package j86.j86.java.awt.peer;
 
-import java.awt.*;
+import j86.java.awt.*;
 
 /**
  * The peer interface for {@link Container}. This is the parent interface

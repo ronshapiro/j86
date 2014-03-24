@@ -23,16 +23,16 @@
  * questions.
  */
 
-package javax.management;
+package j86.javax.management;
 
-import com.sun.jmx.mbeanserver.MXBeanProxy;
+import j86.com.sun.jmx.mbeanserver.MXBeanProxy;
 
-import java.lang.ref.WeakReference;
-import java.lang.reflect.InvocationHandler;
-import java.lang.reflect.Method;
-import java.lang.reflect.Proxy;
-import java.util.Arrays;
-import java.util.WeakHashMap;
+import j86.j86.java.lang.ref.WeakReference;
+import j86.j86.j86.java.lang.reflect.InvocationHandler;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.j86.j86.java.lang.reflect.Proxy;
+import j86.java.util.Arrays;
+import j86.java.util.WeakHashMap;
 
 /**
  * <p>{@link InvocationHandler} that forwards methods in an MBean's

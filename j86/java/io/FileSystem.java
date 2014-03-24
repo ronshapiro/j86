@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.io;
+package j86.java.io;
 
-import java.lang.annotation.Native;
+import j86.j86.java.lang.annotation.Native;
 
 /**
  * Package-private abstract class for the local filesystem abstraction.

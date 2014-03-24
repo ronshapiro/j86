@@ -23,17 +23,17 @@
  * questions.
  */
 
-package com.sun.jdi.request;
+package j86.j86.com.sun.jdi.request;
 
-import com.sun.jdi.*;
+import j86.com.sun.jdi.*;
 
 /**
  * Request for notification when the target VM terminates.
  * When an enabled VMDeathRequest is satisfied, an
- * {@link com.sun.jdi.event.EventSet event set} containing a
- * {@link com.sun.jdi.event.VMDeathEvent VMDeathEvent}
+ * {@link j86.j86.com.sun.jdi.event.EventSet event set} containing a
+ * {@link j86.j86.com.sun.jdi.event.VMDeathEvent VMDeathEvent}
  * will be placed on the
- * {@link com.sun.jdi.event.EventQueue EventQueue}.
+ * {@link j86.j86.com.sun.jdi.event.EventQueue EventQueue}.
  * The collection of existing VMDeathRequests is
  * managed by the {@link EventRequestManager}
  * <P>
@@ -49,8 +49,8 @@ import com.sun.jdi.*;
  * to be alive (e.g. event processing).  Note: the
  * unsolicited VMDeathEvent will still be sent.
  *
- * @see com.sun.jdi.event.VMDeathEvent
- * @see com.sun.jdi.event.EventQueue
+ * @see j86.j86.com.sun.jdi.event.VMDeathEvent
+ * @see j86.j86.com.sun.jdi.event.EventQueue
  * @see EventRequestManager
  *
  * @author Robert Field

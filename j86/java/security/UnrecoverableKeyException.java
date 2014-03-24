@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.security;
+package j86.java.security;
 
 /**
  * This exception is thrown if a key in the keystore cannot be recovered.

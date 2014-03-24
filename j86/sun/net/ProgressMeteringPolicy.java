@@ -22,9 +22,9 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.net;
+package j86.sun.net;
 
-import java.net.URL;
+import j86.java.net.URL;
 
 /**
  * ProgressMeteringPolicy is an interface for determining progress metering policy.

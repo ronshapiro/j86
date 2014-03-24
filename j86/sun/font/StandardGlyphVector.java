@@ -23,31 +23,31 @@
  * questions.
  */
 
-package sun.font;
+package j86.sun.font;
 
-import java.awt.Font;
-import java.awt.Graphics2D;
-import java.awt.Point;
-import java.awt.Rectangle;
-import static java.awt.RenderingHints.*;
-import java.awt.Shape;
-import java.awt.font.FontRenderContext;
-import java.awt.font.GlyphMetrics;
-import java.awt.font.GlyphJustificationInfo;
-import java.awt.font.GlyphVector;
-import java.awt.font.LineMetrics;
-import java.awt.font.TextAttribute;
-import java.awt.geom.AffineTransform;
-import java.awt.geom.GeneralPath;
-import java.awt.geom.NoninvertibleTransformException;
-import java.awt.geom.PathIterator;
-import java.awt.geom.Point2D;
-import java.awt.geom.Rectangle2D;
-import java.lang.ref.SoftReference;
-import java.text.CharacterIterator;
+import j86.java.awt.Font;
+import j86.java.awt.Graphics2D;
+import j86.java.awt.Point;
+import j86.java.awt.Rectangle;
+import static j86.java.awt.RenderingHints.*;
+import j86.java.awt.Shape;
+import j86.j86.java.awt.font.FontRenderContext;
+import j86.j86.java.awt.font.GlyphMetrics;
+import j86.j86.java.awt.font.GlyphJustificationInfo;
+import j86.j86.java.awt.font.GlyphVector;
+import j86.j86.java.awt.font.LineMetrics;
+import j86.j86.java.awt.font.TextAttribute;
+import j86.j86.java.awt.geom.AffineTransform;
+import j86.j86.java.awt.geom.GeneralPath;
+import j86.j86.java.awt.geom.NoninvertibleTransformException;
+import j86.j86.java.awt.geom.PathIterator;
+import j86.j86.java.awt.geom.Point2D;
+import j86.j86.java.awt.geom.Rectangle2D;
+import j86.j86.java.lang.ref.SoftReference;
+import j86.java.text.CharacterIterator;
 
-import sun.awt.SunHints;
-import sun.java2d.loops.FontInfo;
+import j86.sun.awt.SunHints;
+import j86.j86.sun.java2d.loops.FontInfo;
 
 /**
  * Standard implementation of GlyphVector used by Font, GlyphList, and
@@ -621,7 +621,7 @@ public class StandardGlyphVector extends GlyphVector {
 
         // currently we don't have enough information to do this right.  should
         // get info from the font and use real OT/GX justification.  Right now
-        // sun/font/ExtendedTextSourceLabel assigns one of three infos
+        // j86.sun.font/ExtendedTextSourceLabel assigns one of three infos
         // based on whether the char is kanji, space, or other.
 
         return null;

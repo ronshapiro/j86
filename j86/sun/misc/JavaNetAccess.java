@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.misc;
+package j86.sun.misc;
 
-import java.net.URLClassLoader;
+import j86.java.net.URLClassLoader;
 
 public interface JavaNetAccess {
     /**

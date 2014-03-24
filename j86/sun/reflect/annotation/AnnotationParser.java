@@ -23,23 +23,23 @@
  * questions.
  */
 
-package sun.reflect.annotation;
+package j86.j86.sun.reflect.annotation;
 
-import java.lang.annotation.*;
-import java.util.*;
-import java.nio.ByteBuffer;
-import java.nio.BufferUnderflowException;
-import java.lang.reflect.*;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import sun.reflect.ConstantPool;
+import j86.j86.java.lang.annotation.*;
+import j86.java.util.*;
+import j86.java.nio.ByteBuffer;
+import j86.java.nio.BufferUnderflowException;
+import j86.j86.j86.java.lang.reflect.*;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.sun.reflect.ConstantPool;
 
-import sun.reflect.generics.parser.SignatureParser;
-import sun.reflect.generics.tree.TypeSignature;
-import sun.reflect.generics.factory.GenericsFactory;
-import sun.reflect.generics.factory.CoreReflectionFactory;
-import sun.reflect.generics.visitor.Reifier;
-import sun.reflect.generics.scope.ClassScope;
+import j86.j86.sun.reflect.generics.parser.SignatureParser;
+import j86.j86.sun.reflect.generics.tree.TypeSignature;
+import j86.j86.sun.reflect.generics.factory.GenericsFactory;
+import j86.j86.sun.reflect.generics.factory.CoreReflectionFactory;
+import j86.j86.sun.reflect.generics.visitor.Reifier;
+import j86.j86.sun.reflect.generics.scope.ClassScope;
 
 /**
  * Parser for Java programming language annotations.  Translates
@@ -79,7 +79,7 @@ public class AnnotationParser {
     }
 
     /**
-     * Like {@link #parseAnnotations(byte[], sun.reflect.ConstantPool, Class)}
+     * Like {@link #parseAnnotations(byte[], j86.sun.reflect.ConstantPool, Class)}
      * with an additional parameter {@code selectAnnotationClasses} which selects the
      * annotation types to parse (other than selected are quickly skipped).<p>
      * This method is only used to parse select meta annotations in the construction

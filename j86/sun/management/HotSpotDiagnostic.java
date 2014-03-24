@@ -23,15 +23,15 @@
  * questions.
  */
 
-package sun.management;
+package j86.sun.management;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-import javax.management.ObjectName;
+import j86.java.io.IOException;
+import j86.java.util.ArrayList;
+import j86.java.util.List;
+import j86.javax.management.ObjectName;
 
-import com.sun.management.HotSpotDiagnosticMXBean;
-import com.sun.management.VMOption;
+import com.j86.sun.management.HotSpotDiagnosticMXBean;
+import com.j86.sun.management.VMOption;
 
 /**
  * Implementation of the diagnostic MBean for Hotspot VM.
@@ -127,6 +127,6 @@ public class HotSpotDiagnostic implements HotSpotDiagnosticMXBean {
     }
 
     public ObjectName getObjectName() {
-        return Util.newObjectName("com.sun.management:type=HotSpotDiagnostic");
+        return Util.newObjectName("com.j86.sun.management:type=HotSpotDiagnostic");
     }
 }

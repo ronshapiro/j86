@@ -23,12 +23,12 @@
  * questions.
  */
 
-package java.awt;
+package j86.java.awt;
 
 /**
  * Capabilities and properties of buffers.
  *
- * @see java.awt.image.BufferStrategy#getCapabilities()
+ * @see j86.j86.j86.java.awt.image.BufferStrategy#getCapabilities()
  * @see GraphicsConfiguration#getBufferCapabilities
  * @author Michael Martak
  * @since 1.4

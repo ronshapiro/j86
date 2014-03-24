@@ -30,9 +30,9 @@
  * at JavaSoft/Sun.
  */
 
-package com.sun.tools.hat.internal.model;
+package j86.j86.com.sun.tools.hat.internal.model;
 
-import com.sun.tools.hat.internal.util.Misc;
+import j86.j86.com.sun.tools.hat.internal.util.Misc;
 
 /**
  *

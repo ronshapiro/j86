@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.rmi.activation;
+package j86.j86.java.rmi.activation;
 
-import java.io.Serializable;
-import java.rmi.MarshalledObject;
+import j86.java.io.Serializable;
+import j86.java.rmi.MarshalledObject;
 
 /**
  * An activation descriptor contains the information necessary to
@@ -47,7 +47,7 @@ import java.rmi.MarshalledObject;
  *
  * @author      Ann Wollrath
  * @since       1.2
- * @see         java.rmi.activation.Activatable
+ * @see         j86.j86.java.rmi.activation.Activatable
  */
 public final class ActivationDesc implements Serializable {
 
@@ -299,7 +299,7 @@ public final class ActivationDesc implements Serializable {
      *
      * @param   obj     the Object to compare with
      * @return  true if these Objects are equal; false otherwise.
-     * @see             java.util.Hashtable
+     * @see             j86.java.util.Hashtable
      * @since 1.2
      */
     public boolean equals(Object obj) {
@@ -325,7 +325,7 @@ public final class ActivationDesc implements Serializable {
     /**
      * Return the same hashCode for similar <code>ActivationDesc</code>s.
      * @return an integer
-     * @see java.util.Hashtable
+     * @see j86.java.util.Hashtable
      */
     public int hashCode() {
         return ((location == null

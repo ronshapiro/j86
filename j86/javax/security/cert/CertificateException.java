@@ -24,16 +24,16 @@
  */
 
 
-package javax.security.cert;
+package j86.javax.security.cert;
 
 /**
  * This exception indicates one of a variety of certificate problems.
  *
- * <p><em>Note: The classes in the package {@code javax.security.cert}
+ * <p><em>Note: The classes in the package {@code j86.javax.security.cert}
  * exist for compatibility with earlier versions of the
  * Java Secure Sockets Extension (JSSE). New applications should instead
  * use the standard Java SE certificate classes located in
- * {@code java.security.cert}.</em></p>
+ * {@code j86.j86.java.security.cert}.</em></p>
  *
  * @author Hemma Prafullchandra
  * @since 1.4

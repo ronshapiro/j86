@@ -22,22 +22,22 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.rmi.transport;
+package j86.sun.rmi.transport;
 
-import java.lang.ref.ReferenceQueue;
-import java.rmi.NoSuchObjectException;
-import java.rmi.Remote;
-import java.rmi.dgc.VMID;
-import java.rmi.server.ExportException;
-import java.rmi.server.ObjID;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.util.HashMap;
-import java.util.Map;
-import sun.misc.GC;
-import sun.rmi.runtime.Log;
-import sun.rmi.runtime.NewThreadAction;
-import sun.security.action.GetLongAction;
+import j86.j86.java.lang.ref.ReferenceQueue;
+import j86.java.rmi.NoSuchObjectException;
+import j86.java.rmi.Remote;
+import j86.j86.java.rmi.dgc.VMID;
+import j86.j86.java.rmi.server.ExportException;
+import j86.j86.java.rmi.server.ObjID;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.util.HashMap;
+import j86.java.util.Map;
+import j86.sun.misc.GC;
+import j86.sun.rmi.runtime.Log;
+import j86.sun.rmi.runtime.NewThreadAction;
+import j86.sun.security.action.GetLongAction;
 
 /**
  * Object table shared by all implementors of the Transport interface.
@@ -145,7 +145,7 @@ public final class ObjectTable {
     * currently exported
     */
    public static boolean unexportObject(Remote obj, boolean force)
-        throws java.rmi.NoSuchObjectException
+        throws j86.java.rmi.NoSuchObjectException
     {
         synchronized (tableLock) {
             Target target = getTarget(obj);

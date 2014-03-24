@@ -23,14 +23,14 @@
  * questions.
  */
 
-package java.security.cert;
+package j86.j86.java.security.cert;
 
-import java.io.ByteArrayInputStream;
-import java.io.NotSerializableException;
-import java.io.ObjectStreamException;
-import java.io.Serializable;
-import java.util.Iterator;
-import java.util.List;
+import j86.java.io.ByteArrayInputStream;
+import j86.java.io.NotSerializableException;
+import j86.java.io.ObjectStreamException;
+import j86.java.io.Serializable;
+import j86.java.util.Iterator;
+import j86.java.util.List;
 
 /**
  * An immutable sequence of certificates (a certification path).
@@ -139,7 +139,7 @@ public abstract class CertPath implements Serializable {
     /**
      * Returns the type of {@code Certificate}s in this certification
      * path. This is the same string that would be returned by
-     * {@link java.security.cert.Certificate#getType() cert.getType()}
+     * {@link j86.j86.java.security.cert.Certificate#getType() cert.getType()}
      * for all {@code Certificate}s in the certification path.
      *
      * @return the type of {@code Certificate}s in this certification
@@ -288,7 +288,7 @@ public abstract class CertPath implements Serializable {
         } catch (CertificateException ce) {
             NotSerializableException nse =
                 new NotSerializableException
-                    ("java.security.cert.CertPath: " + type);
+                    ("j86.j86.java.security.cert.CertPath: " + type);
             nse.initCause(ce);
             throw nse;
         }
@@ -334,7 +334,7 @@ public abstract class CertPath implements Serializable {
             } catch (CertificateException ce) {
                 NotSerializableException nse =
                     new NotSerializableException
-                        ("java.security.cert.CertPath: " + type);
+                        ("j86.j86.java.security.cert.CertPath: " + type);
                 nse.initCause(ce);
                 throw nse;
             }

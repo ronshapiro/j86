@@ -23,14 +23,14 @@
  * questions.
  */
 
-package com.sun.media.sound;
+package j86.com.sun.media.sound;
 
-import java.util.Vector;
+import j86.java.util.Vector;
 
-import javax.sound.sampled.Control;
-import javax.sound.sampled.Mixer;
-import javax.sound.sampled.Line;
-import javax.sound.sampled.LineUnavailableException;
+import j86.javax.sound.sampled.Control;
+import j86.javax.sound.sampled.Mixer;
+import j86.javax.sound.sampled.Line;
+import j86.javax.sound.sampled.LineUnavailableException;
 
 /**
  * Abstract Mixer.  Implements Mixer (with abstract methods) and specifies

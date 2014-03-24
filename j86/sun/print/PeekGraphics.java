@@ -23,47 +23,47 @@
  * questions.
  */
 
-package sun.print;
+package j86.sun.print;
 
-import java.util.Map;
+import j86.java.util.Map;
 
-import java.awt.BasicStroke;
-import java.awt.Color;
-import java.awt.Composite;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.Font;
-import java.awt.FontMetrics;
-import java.awt.font.FontRenderContext;
-import java.awt.Graphics;
-import java.awt.GraphicsConfiguration;
-import java.awt.Image;
-import java.awt.Paint;
-import java.awt.Rectangle;
-import java.awt.Shape;
-import java.awt.Stroke;
-import java.awt.RenderingHints;
-import java.awt.RenderingHints.Key;
+import j86.java.awt.BasicStroke;
+import j86.java.awt.Color;
+import j86.java.awt.Composite;
+import j86.java.awt.Graphics;
+import j86.java.awt.Graphics2D;
+import j86.java.awt.Font;
+import j86.java.awt.FontMetrics;
+import j86.j86.java.awt.font.FontRenderContext;
+import j86.java.awt.Graphics;
+import j86.java.awt.GraphicsConfiguration;
+import j86.java.awt.Image;
+import j86.java.awt.Paint;
+import j86.java.awt.Rectangle;
+import j86.java.awt.Shape;
+import j86.java.awt.Stroke;
+import j86.java.awt.RenderingHints;
+import j86.java.awt.RenderingHints.Key;
 
-import java.awt.font.GlyphVector;
-import java.awt.font.TextLayout;
+import j86.j86.java.awt.font.GlyphVector;
+import j86.j86.java.awt.font.TextLayout;
 
-import java.awt.geom.AffineTransform;
-import java.awt.geom.Line2D;
-import java.awt.geom.Point2D;
-import java.awt.geom.Rectangle2D;
-import java.awt.geom.RoundRectangle2D;
-import java.awt.image.BufferedImage;
-import java.awt.image.BufferedImageOp;
-import java.awt.image.ImageObserver;
-import java.awt.image.RenderedImage;
-import java.awt.image.renderable.RenderableImage;
-import java.awt.print.PrinterGraphics;
-import java.awt.print.PrinterJob;
+import j86.j86.java.awt.geom.AffineTransform;
+import j86.j86.java.awt.geom.Line2D;
+import j86.j86.java.awt.geom.Point2D;
+import j86.j86.java.awt.geom.Rectangle2D;
+import j86.j86.java.awt.geom.RoundRectangle2D;
+import j86.j86.j86.java.awt.image.BufferedImage;
+import j86.j86.j86.java.awt.image.BufferedImageOp;
+import j86.j86.j86.java.awt.image.ImageObserver;
+import j86.j86.j86.java.awt.image.RenderedImage;
+import j86.j86.j86.j86.java.awt.image.renderable.RenderableImage;
+import j86.j86.java.awt.print.PrinterGraphics;
+import j86.j86.java.awt.print.PrinterJob;
 
-import java.text.AttributedCharacterIterator;
+import j86.java.text.AttributedCharacterIterator;
 
-import sun.java2d.Spans;
+import j86.sun.java2d.Spans;
 
 public class PeekGraphics extends Graphics2D
                           implements PrinterGraphics,
@@ -291,8 +291,8 @@ public class PeekGraphics extends Graphics2D
     /**
      * Gets this graphics context's current color.
      * @return    this graphics context's current color.
-     * @see       java.awt.Color
-     * @see       java.awt.Graphics#setColor
+     * @see       j86.java.awt.Color
+     * @see       j86.java.awt.Graphics#setColor
      * @since     JDK1.0
      */
     public Color getColor() {
@@ -304,8 +304,8 @@ public class PeekGraphics extends Graphics2D
      * color. All subsequent graphics operations using this graphics
      * context use this specified color.
      * @param     c   the new rendering color.
-     * @see       java.awt.Color
-     * @see       java.awt.Graphics#getColor
+     * @see       j86.java.awt.Color
+     * @see       j86.java.awt.Graphics#getColor
      * @since     JDK1.0
      */
     public void setColor(Color c) {
@@ -347,8 +347,8 @@ public class PeekGraphics extends Graphics2D
     /**
      * Gets the current font.
      * @return    this graphics context's current font.
-     * @see       java.awt.Font
-     * @see       java.awt.Graphics#setFont
+     * @see       j86.java.awt.Font
+     * @see       j86.java.awt.Graphics#setFont
      * @since     JDK1.0
      */
     public Font getFont() {
@@ -360,10 +360,10 @@ public class PeekGraphics extends Graphics2D
      * All subsequent text operations using this graphics context
      * use this font.
      * @param  font   the font.
-     * @see     java.awt.Graphics#getFont
-     * @see     java.awt.Graphics#drawChars(java.lang.String, int, int)
-     * @see     java.awt.Graphics#drawString(byte[], int, int, int, int)
-     * @see     java.awt.Graphics#drawBytes(char[], int, int, int, int)
+     * @see     j86.java.awt.Graphics#getFont
+     * @see     j86.java.awt.Graphics#drawChars(j86.java.lang.String, int, int)
+     * @see     j86.java.awt.Graphics#drawString(byte[], int, int, int, int)
+     * @see     j86.java.awt.Graphics#drawBytes(char[], int, int, int, int)
      * @since   JDK1.0
     */
     public void setFont(Font font) {
@@ -374,9 +374,9 @@ public class PeekGraphics extends Graphics2D
      * Gets the font metrics for the specified font.
      * @return    the font metrics for the specified font.
      * @param     f the specified font
-     * @see       java.awt.Graphics#getFont
-     * @see       java.awt.FontMetrics
-     * @see       java.awt.Graphics#getFontMetrics()
+     * @see       j86.java.awt.Graphics#getFont
+     * @see       j86.java.awt.FontMetrics
+     * @see       j86.java.awt.Graphics#getFontMetrics()
      * @since     JDK1.0
      */
     public FontMetrics getFontMetrics(Font f) {
@@ -396,10 +396,10 @@ public class PeekGraphics extends Graphics2D
      * The coordinates in the rectangle are relative to the coordinate
      * system origin of this graphics context.
      * @return      the bounding rectangle of the current clipping area.
-     * @see         java.awt.Graphics#getClip
-     * @see         java.awt.Graphics#clipRect
-     * @see         java.awt.Graphics#setClip(int, int, int, int)
-     * @see         java.awt.Graphics#setClip(Shape)
+     * @see         j86.java.awt.Graphics#getClip
+     * @see         j86.java.awt.Graphics#clipRect
+     * @see         j86.java.awt.Graphics#setClip(int, int, int, int)
+     * @see         j86.java.awt.Graphics#setClip(Shape)
      * @since       JDK1.1
      */
     public Rectangle getClipBounds() {
@@ -434,8 +434,8 @@ public class PeekGraphics extends Graphics2D
      * @param       y the <i>y</i> coordinate of the new clip rectangle.
      * @param       width the width of the new clip rectangle.
      * @param       height the height of the new clip rectangle.
-     * @see         java.awt.Graphics#clipRect
-     * @see         java.awt.Graphics#setClip(Shape)
+     * @see         j86.java.awt.Graphics#clipRect
+     * @see         j86.java.awt.Graphics#setClip(Shape)
      * @since       JDK1.1
      */
     public void setClip(int x, int y, int width, int height) {
@@ -446,10 +446,10 @@ public class PeekGraphics extends Graphics2D
      * Gets the current clipping area.
      * @return      a <code>Shape</code> object representing the
      *                      current clipping area.
-     * @see         java.awt.Graphics#getClipBounds
-     * @see         java.awt.Graphics#clipRect
-     * @see         java.awt.Graphics#setClip(int, int, int, int)
-     * @see         java.awt.Graphics#setClip(Shape)
+     * @see         j86.java.awt.Graphics#getClipBounds
+     * @see         j86.java.awt.Graphics#clipRect
+     * @see         j86.java.awt.Graphics#setClip(int, int, int, int)
+     * @see         j86.java.awt.Graphics#setClip(Shape)
      * @since       JDK1.1
      */
     public Shape getClip() {
@@ -465,9 +465,9 @@ public class PeekGraphics extends Graphics2D
      * supported are <code>Shape</code> objects which are
      * obtained via the <code>getClip</code> method and via
      * <code>Rectangle</code> objects.
-     * @see         java.awt.Graphics#getClip()
-     * @see         java.awt.Graphics#clipRect
-     * @see         java.awt.Graphics#setClip(int, int, int, int)
+     * @see         j86.java.awt.Graphics#getClip()
+     * @see         j86.java.awt.Graphics#clipRect
+     * @see         j86.java.awt.Graphics#setClip(int, int, int, int)
      * @since       JDK1.1
      */
     public void setClip(Shape clip) {
@@ -533,8 +533,8 @@ public class PeekGraphics extends Graphics2D
      *                         of the rectangle to be filled.
      * @param         width   the width of the rectangle to be filled.
      * @param         height   the height of the rectangle to be filled.
-     * @see           java.awt.Graphics#fillRect
-     * @see           java.awt.Graphics#clearRect
+     * @see           j86.java.awt.Graphics#fillRect
+     * @see           j86.java.awt.Graphics#clearRect
      * @since         JDK1.0
      */
     public void fillRect(int x, int y, int width, int height) {
@@ -557,11 +557,11 @@ public class PeekGraphics extends Graphics2D
      * @param       y the <i>y</i> coordinate of the rectangle to clear.
      * @param       width the width of the rectangle to clear.
      * @param       height the height of the rectangle to clear.
-     * @see         java.awt.Graphics#fillRect(int, int, int, int)
-     * @see         java.awt.Graphics#drawRect
-     * @see         java.awt.Graphics#setColor(java.awt.Color)
-     * @see         java.awt.Graphics#setPaintMode
-     * @see         java.awt.Graphics#setXORMode(java.awt.Color)
+     * @see         j86.java.awt.Graphics#fillRect(int, int, int, int)
+     * @see         j86.java.awt.Graphics#drawRect
+     * @see         j86.java.awt.Graphics#setColor(java.awt.Color)
+     * @see         j86.java.awt.Graphics#setPaintMode
+     * @see         j86.java.awt.Graphics#setXORMode(java.awt.Color)
      * @since       JDK1.0
      */
     public void clearRect(int x, int y, int width, int height) {
@@ -584,7 +584,7 @@ public class PeekGraphics extends Graphics2D
      *                    at the four corners.
      * @param      arcHeight the vertical diameter of the arc
      *                    at the four corners.
-     * @see        java.awt.Graphics#fillRoundRect
+     * @see        j86.java.awt.Graphics#fillRoundRect
      * @since      JDK1.0
      */
     public void drawRoundRect(int x, int y, int width, int height,
@@ -608,7 +608,7 @@ public class PeekGraphics extends Graphics2D
      *                     of the arc at the four corners.
      * @param       arcHeight the vertical diameter
      *                     of the arc at the four corners.
-     * @see         java.awt.Graphics#drawRoundRect
+     * @see         j86.java.awt.Graphics#drawRoundRect
      * @since       JDK1.0
      */
     public void fillRoundRect(int x, int y, int width, int height,
@@ -633,7 +633,7 @@ public class PeekGraphics extends Graphics2D
      *                     corner of the oval to be drawn.
      * @param       width the width of the oval to be drawn.
      * @param       height the height of the oval to be drawn.
-     * @see         java.awt.Graphics#fillOval
+     * @see         j86.java.awt.Graphics#fillOval
      * @since       JDK1.0
      */
     public void drawOval(int x, int y, int width, int height) {
@@ -650,7 +650,7 @@ public class PeekGraphics extends Graphics2D
      *                     of the oval to be filled.
      * @param       width the width of the oval to be filled.
      * @param       height the height of the oval to be filled.
-     * @see         java.awt.Graphics#drawOval
+     * @see         j86.java.awt.Graphics#drawOval
      * @since       JDK1.0
      */
     public void fillOval(int x, int y, int width, int height) {
@@ -688,7 +688,7 @@ public class PeekGraphics extends Graphics2D
      * @param        startAngle the beginning angle.
      * @param        arcAngle the angular extent of the arc,
      *                    relative to the start angle.
-     * @see         java.awt.Graphics#fillArc
+     * @see         j86.java.awt.Graphics#fillArc
      * @since       JDK1.0
      */
     public void drawArc(int x, int y, int width, int height,
@@ -724,7 +724,7 @@ public class PeekGraphics extends Graphics2D
      * @param        startAngle the beginning angle.
      * @param        arcAngle the angular extent of the arc,
      *                    relative to the start angle.
-     * @see         java.awt.Graphics#drawArc
+     * @see         j86.java.awt.Graphics#drawArc
      * @since       JDK1.0
      */
     public void fillArc(int x, int y, int width, int height,
@@ -744,7 +744,7 @@ public class PeekGraphics extends Graphics2D
      * @param       xPoints an array of <i>x</i> points
      * @param       yPoints an array of <i>y</i> points
      * @param       nPoints the total number of points
-     * @see         java.awt.Graphics#drawPolygon(int[], int[], int)
+     * @see         j86.java.awt.Graphics#drawPolygon(int[], int[], int)
      * @since       JDK1.1
      */
    public void drawPolyline(int xPoints[], int yPoints[],
@@ -778,8 +778,8 @@ public class PeekGraphics extends Graphics2D
      * @param        xPoints   a an array of <code>x</code> coordinates.
      * @param        yPoints   a an array of <code>y</code> coordinates.
      * @param        nPoints   a the total number of points.
-     * @see          java.awt.Graphics#fillPolygon
-     * @see          java.awt.Graphics#drawPolyline
+     * @see          j86.java.awt.Graphics#fillPolygon
+     * @see          j86.java.awt.Graphics#drawPolyline
      * @since        JDK1.0
      */
     public void drawPolygon(int xPoints[], int yPoints[],
@@ -810,7 +810,7 @@ public class PeekGraphics extends Graphics2D
      * @param        xPoints   a an array of <code>x</code> coordinates.
      * @param        yPoints   a an array of <code>y</code> coordinates.
      * @param        nPoints   a the total number of points.
-     * @see          java.awt.Graphics#drawPolygon(int[], int[], int)
+     * @see          j86.java.awt.Graphics#drawPolygon(int[], int[], int)
      * @since        JDK1.0
      */
     public void fillPolygon(int xPoints[], int yPoints[],
@@ -852,8 +852,8 @@ public class PeekGraphics extends Graphics2D
      * @param       str      the string to be drawn.
      * @param       x        the <i>x</i> coordinate.
      * @param       y        the <i>y</i> coordinate.
-     * @see         java.awt.Graphics#drawBytes
-     * @see         java.awt.Graphics#drawChars
+     * @see         j86.java.awt.Graphics#drawBytes
+     * @see         j86.java.awt.Graphics#drawChars
      * @since       JDK1.0
      */
     public void drawString(String str, int x, int y) {
@@ -876,7 +876,7 @@ public class PeekGraphics extends Graphics2D
      * @param iterator the iterator whose text is to be drawn
      * @param x,y the coordinates where the iterator's text should be drawn.
      * @see #setPaint
-     * @see java.awt.Graphics#setColor
+     * @see j86.java.awt.Graphics#setColor
      * @see #setTransform
      * @see #setComposite
      * @see #setClip
@@ -902,7 +902,7 @@ public class PeekGraphics extends Graphics2D
      * @param iterator the iterator whose text is to be drawn
      * @param x,y the coordinates where the iterator's text should be drawn.
      * @see #setPaint
-     * @see java.awt.Graphics#setColor
+     * @see j86.java.awt.Graphics#setColor
      * @see #setTransform
      * @see #setComposite
      * @see #setClip
@@ -939,9 +939,9 @@ public class PeekGraphics extends Graphics2D
      * @param    y   the <i>y</i> coordinate.
      * @param    observer    object to be notified as more of
      *                          the image is converted.
-     * @see      java.awt.Image
-     * @see      java.awt.image.ImageObserver
-     * @see      java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
+     * @see      j86.java.awt.Image
+     * @see      j86.j86.j86.java.awt.image.ImageObserver
+     * @see      j86.j86.j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
      * @since    JDK1.0
      */
     public boolean drawImage(Image img, int x, int y,
@@ -992,9 +992,9 @@ public class PeekGraphics extends Graphics2D
      * @param    height the height of the rectangle.
      * @param    observer    object to be notified as more of
      *                          the image is converted.
-     * @see      java.awt.Image
-     * @see      java.awt.image.ImageObserver
-     * @see      java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
+     * @see      j86.java.awt.Image
+     * @see      j86.j86.j86.java.awt.image.ImageObserver
+     * @see      j86.j86.j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
      * @since    JDK1.0
      */
     public boolean drawImage(Image img, int x, int y,
@@ -1037,9 +1037,9 @@ public class PeekGraphics extends Graphics2D
      *                         non-opaque portions of the image.
      * @param    observer    object to be notified as more of
      *                          the image is converted.
-     * @see      java.awt.Image
-     * @see      java.awt.image.ImageObserver
-     * @see      java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
+     * @see      j86.java.awt.Image
+     * @see      j86.j86.j86.java.awt.image.ImageObserver
+     * @see      j86.j86.j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
      * @since    JDK1.0
      */
    public boolean drawImage(Image img, int x, int y,
@@ -1096,9 +1096,9 @@ public class PeekGraphics extends Graphics2D
      *                         non-opaque portions of the image.
      * @param    observer    object to be notified as more of
      *                          the image is converted.
-     * @see      java.awt.Image
-     * @see      java.awt.image.ImageObserver
-     * @see      java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
+     * @see      j86.java.awt.Image
+     * @see      j86.j86.j86.java.awt.image.ImageObserver
+     * @see      j86.j86.j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
      * @since    JDK1.0
      */
     public boolean drawImage(Image img, int x, int y,
@@ -1159,9 +1159,9 @@ public class PeekGraphics extends Graphics2D
      *                    source rectangle.
      * @param       observer object to be notified as more of the image is
      *                    scaled and converted.
-     * @see         java.awt.Image
-     * @see         java.awt.image.ImageObserver
-     * @see         java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
+     * @see         j86.java.awt.Image
+     * @see         j86.j86.j86.java.awt.image.ImageObserver
+     * @see         j86.j86.j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
      * @since       JDK1.1
      */
     public boolean drawImage(Image img,
@@ -1233,9 +1233,9 @@ public class PeekGraphics extends Graphics2D
      *                    non-opaque portions of the image.
      * @param       observer object to be notified as more of the image is
      *                    scaled and converted.
-     * @see         java.awt.Image
-     * @see         java.awt.image.ImageObserver
-     * @see         java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
+     * @see         j86.java.awt.Image
+     * @see         j86.j86.j86.java.awt.image.ImageObserver
+     * @see         j86.j86.j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
      * @since       JDK1.1
      */
     public boolean drawImage(Image img,
@@ -1322,11 +1322,11 @@ public class PeekGraphics extends Graphics2D
      * call <code>dispose</code> when finished using
      * a <code>Graphics</code> object only if it was created
      * directly from a component or another <code>Graphics</code> object.
-     * @see         java.awt.Graphics#finalize
-     * @see         java.awt.Component#paint
-     * @see         java.awt.Component#update
-     * @see         java.awt.Component#getGraphics
-     * @see         java.awt.Graphics#create
+     * @see         j86.java.awt.Graphics#finalize
+     * @see         j86.java.awt.Component#paint
+     * @see         j86.java.awt.Component#update
+     * @see         j86.java.awt.Component#getGraphics
+     * @see         j86.java.awt.Graphics#create
      * @since       JDK1.0
      */
     public void dispose() {
@@ -1348,7 +1348,7 @@ public class PeekGraphics extends Graphics2D
      * @param s The shape to be drawn.
      * @see #setStroke
      * @see #setPaint
-     * @see java.awt.Graphics#setColor
+     * @see j86.java.awt.Graphics#setColor
      * @see #transform
      * @see #setTransform
      * @see #clip
@@ -1449,8 +1449,8 @@ public class PeekGraphics extends Graphics2D
      * @param s The string to be drawn.
      * @param x,y The coordinates where the string should be drawn.
      * @see #setPaint
-     * @see java.awt.Graphics#setColor
-     * @see java.awt.Graphics#setFont
+     * @see j86.java.awt.Graphics#setColor
+     * @see j86.java.awt.Graphics#setFont
      * @see #transform
      * @see #setTransform
      * @see #setComposite
@@ -1479,7 +1479,7 @@ public class PeekGraphics extends Graphics2D
      * @param g The GlyphVector to be drawn.
      * @param x,y The coordinates where the glyphs should be drawn.
      * @see #setPaint
-     * @see java.awt.Graphics#setColor
+     * @see j86.java.awt.Graphics#setColor
      * @see #transform
      * @see #setTransform
      * @see #setComposite
@@ -1501,7 +1501,7 @@ public class PeekGraphics extends Graphics2D
      * graphics state. The rendering attributes applied include the
      * clip, transform, paint or color, and composite.
      * @see #setPaint
-     * @see java.awt.Graphics#setColor
+     * @see j86.java.awt.Graphics#setColor
      * @see #transform
      * @see #setTransform
      * @see #setComposite
@@ -1546,8 +1546,8 @@ public class PeekGraphics extends Graphics2D
      * and fill.  It specifies how new pixels are to be combined with
      * the existing pixels on the graphics device in the rendering process.
      * @param comp The Composite object to be used for drawing.
-     * @see java.awt.Graphics#setXORMode
-     * @see java.awt.Graphics#setPaintMode
+     * @see j86.java.awt.Graphics#setXORMode
+     * @see j86.java.awt.Graphics#setPaintMode
      * @see AlphaComposite
      */
     public void setComposite(Composite comp) {
@@ -1559,7 +1559,7 @@ public class PeekGraphics extends Graphics2D
      * Sets the Paint in the current graphics state.
      * @param paint The Paint object to be used to generate color in
      * the rendering process.
-     * @see java.awt.Graphics#setColor
+     * @see j86.java.awt.Graphics#setColor
      * @see GradientPaint
      * @see TexturePaint
      */
@@ -1677,7 +1677,7 @@ public class PeekGraphics extends Graphics2D
     /**
      * Returns the current Paint in the Graphics2D state.
      * @see #setPaint
-     * @see java.awt.Graphics#setColor
+     * @see j86.java.awt.Graphics#setColor
      */
     public Paint getPaint() {
         return mGraphics.getPaint();

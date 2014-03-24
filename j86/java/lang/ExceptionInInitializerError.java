@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.lang;
+package j86.java.lang;
 
 /**
  * Signals that an unexpected exception has occurred in a static initializer.

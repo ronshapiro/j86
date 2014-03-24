@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.misc;
+package j86.sun.misc;
 
-import java.util.Comparator;
+import j86.java.util.Comparator;
 
 /** Implements a locale and case insensitive comparator suitable for
     strings that are known to only contain ASCII characters. Some
     tables internal to the JDK contain only ASCII data and are using
-    the "generalized" java.lang.String case-insensitive comparator
+    the "generalized" j86.java.lang.String case-insensitive comparator
     which converts each character to both upper and lower case. */
 
 public class ASCIICaseInsensitiveComparator implements Comparator<String> {
@@ -80,7 +80,7 @@ public class ASCIICaseInsensitiveComparator implements Comparator<String> {
         return h;
     }
 
-    /* If java.util.regex.ASCII ever becomes public or sun.*, use its code instead:*/
+    /* If j86.j86.java.util.regex.ASCII ever becomes public or sun.*, use its code instead:*/
     static boolean isLower(int ch) {
         return ((ch-'a')|('z'-ch)) >= 0;
     }

@@ -23,12 +23,12 @@
  * questions.
  */
 
-package java.awt.event;
+package j86.j86.java.awt.event;
 
-import java.awt.AWTEvent;
-import java.awt.Component;
-import java.awt.Rectangle;
-import java.lang.annotation.Native;
+import j86.java.awt.AWTEvent;
+import j86.java.awt.Component;
+import j86.java.awt.Rectangle;
+import j86.j86.java.lang.annotation.Native;
 
 /**
  * A low-level event which indicates that a component moved, changed

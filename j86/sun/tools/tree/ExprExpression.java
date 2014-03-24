@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.tools.tree;
+package j86.sun.tools.tree;
 
-import sun.tools.java.*;
-import java.util.Hashtable;
+import j86.sun.tools.java.*;
+import j86.java.util.Hashtable;
 
 /**
  * Parenthesized expressions.

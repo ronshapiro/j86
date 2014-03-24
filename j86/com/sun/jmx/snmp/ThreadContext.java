@@ -24,10 +24,10 @@
  */
 
 
-package com.sun.jmx.snmp;
+package j86.com.sun.jmx.snmp;
 
-import java.util.Stack;
-import java.util.EmptyStackException;
+import j86.java.util.Stack;
+import j86.java.util.EmptyStackException;
 
 /**
  * <p><b>Warning: The interface of this class is subject to change.

@@ -23,39 +23,39 @@
  * questions.
  */
 
-package javax.swing;
+package j86.javax.swing;
 
-import java.awt.BorderLayout;
-import java.awt.Component;
-import java.awt.Container;
-import java.awt.Dialog;
-import java.awt.Dimension;
-import java.awt.KeyboardFocusManager;
-import java.awt.Frame;
-import java.awt.Point;
-import java.awt.HeadlessException;
-import java.awt.Window;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
-import java.awt.event.WindowListener;
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
-import java.awt.event.ComponentAdapter;
-import java.awt.event.ComponentEvent;
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.Serializable;
-import java.lang.reflect.Method;
-import java.lang.reflect.InvocationTargetException;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.util.Vector;
-import javax.swing.plaf.OptionPaneUI;
-import javax.swing.event.InternalFrameEvent;
-import javax.swing.event.InternalFrameAdapter;
-import javax.accessibility.*;
-import static javax.swing.ClientPropertyKey.PopupFactory_FORCE_HEAVYWEIGHT_POPUP;
+import j86.java.awt.BorderLayout;
+import j86.java.awt.Component;
+import j86.java.awt.Container;
+import j86.java.awt.Dialog;
+import j86.java.awt.Dimension;
+import j86.java.awt.KeyboardFocusManager;
+import j86.java.awt.Frame;
+import j86.java.awt.Point;
+import j86.java.awt.HeadlessException;
+import j86.java.awt.Window;
+import j86.java.beans.PropertyChangeEvent;
+import j86.java.beans.PropertyChangeListener;
+import j86.j86.java.awt.event.WindowListener;
+import j86.j86.java.awt.event.WindowAdapter;
+import j86.j86.java.awt.event.WindowEvent;
+import j86.j86.java.awt.event.ComponentAdapter;
+import j86.j86.java.awt.event.ComponentEvent;
+import j86.java.io.IOException;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.Serializable;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.util.Vector;
+import j86.j86.javax.swing.plaf.OptionPaneUI;
+import j86.j86.javax.swing.event.InternalFrameEvent;
+import j86.j86.javax.swing.event.InternalFrameAdapter;
+import j86.javax.accessibility.*;
+import static j86.javax.swing.ClientPropertyKey.PopupFactory_FORCE_HEAVYWEIGHT_POPUP;
 
 /**
  * <code>JOptionPane</code> makes it easy to pop up a standard dialog box that
@@ -298,8 +298,8 @@ import static javax.swing.ClientPropertyKey.PopupFactory_FORCE_HEAVYWEIGHT_POPUP
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @see JInternalFrame
  *
@@ -433,7 +433,7 @@ public class JOptionPane extends JComponent implements Accessible
      * @exception HeadlessException if
      *   <code>GraphicsEnvironment.isHeadless</code> returns
      *   <code>true</code>
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      */
     public static String showInputDialog(Object message)
         throws HeadlessException {
@@ -467,7 +467,7 @@ public class JOptionPane extends JComponent implements Accessible
      * @exception HeadlessException if
      *    <code>GraphicsEnvironment.isHeadless</code> returns
      *    <code>true</code>
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      */
     public static String showInputDialog(Component parentComponent,
         Object message) throws HeadlessException {
@@ -516,7 +516,7 @@ public class JOptionPane extends JComponent implements Accessible
      * @exception HeadlessException if
      *   <code>GraphicsEnvironment.isHeadless</code> returns
      *   <code>true</code>
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      */
     public static String showInputDialog(Component parentComponent,
         Object message, String title, int messageType)
@@ -559,7 +559,7 @@ public class JOptionPane extends JComponent implements Accessible
      * @exception HeadlessException if
      *   <code>GraphicsEnvironment.isHeadless</code> returns
      *   <code>true</code>
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      */
     public static Object showInputDialog(Component parentComponent,
         Object message, String title, int messageType, Icon icon,
@@ -601,7 +601,7 @@ public class JOptionPane extends JComponent implements Accessible
      * @exception HeadlessException if
      *   <code>GraphicsEnvironment.isHeadless</code> returns
      *   <code>true</code>
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      */
     public static void showMessageDialog(Component parentComponent,
         Object message) throws HeadlessException {
@@ -629,7 +629,7 @@ public class JOptionPane extends JComponent implements Accessible
      * @exception HeadlessException if
      *   <code>GraphicsEnvironment.isHeadless</code> returns
      *   <code>true</code>
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      */
     public static void showMessageDialog(Component parentComponent,
         Object message, String title, int messageType)
@@ -658,7 +658,7 @@ public class JOptionPane extends JComponent implements Accessible
      * @exception HeadlessException if
      *   <code>GraphicsEnvironment.isHeadless</code> returns
      *   <code>true</code>
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      */
     public static void showMessageDialog(Component parentComponent,
         Object message, String title, int messageType, Icon icon)
@@ -682,7 +682,7 @@ public class JOptionPane extends JComponent implements Accessible
      * @exception HeadlessException if
      *   <code>GraphicsEnvironment.isHeadless</code> returns
      *   <code>true</code>
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      */
     public static int showConfirmDialog(Component parentComponent,
         Object message) throws HeadlessException {
@@ -710,7 +710,7 @@ public class JOptionPane extends JComponent implements Accessible
      * @exception HeadlessException if
      *   <code>GraphicsEnvironment.isHeadless</code> returns
      *   <code>true</code>
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      */
     public static int showConfirmDialog(Component parentComponent,
         Object message, String title, int optionType)
@@ -749,7 +749,7 @@ public class JOptionPane extends JComponent implements Accessible
      * @exception HeadlessException if
      *   <code>GraphicsEnvironment.isHeadless</code> returns
      *   <code>true</code>
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      */
     public static int showConfirmDialog(Component parentComponent,
         Object message, String title, int optionType, int messageType)
@@ -787,7 +787,7 @@ public class JOptionPane extends JComponent implements Accessible
      * @exception HeadlessException if
      *   <code>GraphicsEnvironment.isHeadless</code> returns
      *   <code>true</code>
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      */
     public static int showConfirmDialog(Component parentComponent,
         Object message, String title, int optionType,
@@ -848,7 +848,7 @@ public class JOptionPane extends JComponent implements Accessible
      * @exception HeadlessException if
      *   <code>GraphicsEnvironment.isHeadless</code> returns
      *   <code>true</code>
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      */
     public static int showOptionDialog(Component parentComponent,
         Object message, String title, int optionType, int messageType,
@@ -910,7 +910,7 @@ public class JOptionPane extends JComponent implements Accessible
      * @exception HeadlessException if
      *   <code>GraphicsEnvironment.isHeadless</code> returns
      *   <code>true</code>
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      */
     public JDialog createDialog(Component parentComponent, String title)
         throws HeadlessException {
@@ -937,7 +937,7 @@ public class JOptionPane extends JComponent implements Accessible
      * @exception HeadlessException if
      *   <code>GraphicsEnvironment.isHeadless</code> returns
      *   <code>true</code>
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      * @since 1.6
      */
     public JDialog createDialog(String title) throws HeadlessException {
@@ -1320,7 +1320,7 @@ public class JOptionPane extends JComponent implements Accessible
         if (parentComponent instanceof JInternalFrame) {
             try {
                 ((JInternalFrame)parentComponent).setSelected(true);
-            } catch (java.beans.PropertyVetoException e) {
+            } catch (j86.java.beans.PropertyVetoException e) {
             }
         }
 
@@ -1465,7 +1465,7 @@ public class JOptionPane extends JComponent implements Accessible
         if (parentComponent instanceof JInternalFrame) {
             try {
                 ((JInternalFrame)parentComponent).setSelected(true);
-            } catch (java.beans.PropertyVetoException e) {
+            } catch (j86.java.beans.PropertyVetoException e) {
             }
         }
 
@@ -1550,7 +1550,7 @@ public class JOptionPane extends JComponent implements Accessible
                 try {
                     iFrame.setClosed(true);
                 }
-                catch (java.beans.PropertyVetoException e) {
+                catch (j86.java.beans.PropertyVetoException e) {
                 }
 
                 iFrame.setVisible(false);
@@ -1586,7 +1586,7 @@ public class JOptionPane extends JComponent implements Accessible
         parent.validate();
         try {
             iFrame.setSelected(true);
-        } catch (java.beans.PropertyVetoException e) {}
+        } catch (j86.java.beans.PropertyVetoException e) {}
 
         return iFrame;
     }
@@ -1604,7 +1604,7 @@ public class JOptionPane extends JComponent implements Accessible
      *   <code>GraphicsEnvironment.isHeadless</code> returns
      *   <code>true</code>
      * @see #getRootFrame
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      */
     public static Frame getFrameForComponent(Component parentComponent)
         throws HeadlessException {
@@ -1629,7 +1629,7 @@ public class JOptionPane extends JComponent implements Accessible
      * @exception HeadlessException if
      *   <code>GraphicsEnvironment.isHeadless</code> returns
      *   <code>true</code>
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      */
     static Window getWindowForComponent(Component parentComponent)
         throws HeadlessException {
@@ -1687,7 +1687,7 @@ public class JOptionPane extends JComponent implements Accessible
      *   <code>GraphicsEnvironment.isHeadless</code> returns
      *   <code>true</code>
      * @see #setRootFrame
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      */
     public static Frame getRootFrame() throws HeadlessException {
         Frame sharedFrame =
@@ -2573,8 +2573,8 @@ public class JOptionPane extends JComponent implements Accessible
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     protected class AccessibleJOptionPane extends AccessibleJComponent {
 

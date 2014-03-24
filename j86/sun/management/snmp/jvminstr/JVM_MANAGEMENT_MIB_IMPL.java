@@ -22,61 +22,61 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.management.snmp.jvminstr;
+package j86.j86.j86.sun.management.snmp.jvminstr;
 
 // java imports
 //
-import java.util.Hashtable;
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.lang.ref.WeakReference;
+import j86.java.util.Hashtable;
+import j86.java.util.List;
+import j86.java.util.ArrayList;
+import j86.java.util.Iterator;
+import j86.j86.java.lang.ref.WeakReference;
 
 // jmx imports
 //
-import javax.management.MBeanServer;
-import javax.management.ObjectName;
-import javax.management.InstanceAlreadyExistsException;
-import javax.management.NotificationEmitter;
-import javax.management.NotificationListener;
-import javax.management.Notification;
-import javax.management.ListenerNotFoundException;
-import javax.management.openmbean.CompositeData;
+import j86.javax.management.MBeanServer;
+import j86.javax.management.ObjectName;
+import j86.javax.management.InstanceAlreadyExistsException;
+import j86.javax.management.NotificationEmitter;
+import j86.javax.management.NotificationListener;
+import j86.javax.management.Notification;
+import j86.javax.management.ListenerNotFoundException;
+import j86.j86.javax.management.openmbean.CompositeData;
 
 // jdmk imports
 //
-import com.sun.jmx.snmp.agent.SnmpMib;
-import com.sun.jmx.snmp.daemon.SnmpAdaptorServer;
-import com.sun.jmx.snmp.SnmpPeer;
-import com.sun.jmx.snmp.SnmpParameters;
+import j86.j86.com.sun.jmx.snmp.agent.SnmpMib;
+import j86.j86.j86.com.sun.jmx.snmp.daemon.SnmpAdaptorServer;
+import j86.com.sun.jmx.snmp.SnmpPeer;
+import j86.com.sun.jmx.snmp.SnmpParameters;
 
-import com.sun.jmx.snmp.SnmpOidTable;
-import com.sun.jmx.snmp.SnmpOid;
-import com.sun.jmx.snmp.SnmpVarBindList;
-import com.sun.jmx.snmp.SnmpVarBind;
-import com.sun.jmx.snmp.SnmpCounter;
-import com.sun.jmx.snmp.SnmpCounter64;
-import com.sun.jmx.snmp.SnmpString;
-import com.sun.jmx.snmp.SnmpInt;
-import com.sun.jmx.snmp.Enumerated;
-import com.sun.jmx.snmp.agent.SnmpMibTable;
+import j86.com.sun.jmx.snmp.SnmpOidTable;
+import j86.com.sun.jmx.snmp.SnmpOid;
+import j86.com.sun.jmx.snmp.SnmpVarBindList;
+import j86.com.sun.jmx.snmp.SnmpVarBind;
+import j86.com.sun.jmx.snmp.SnmpCounter;
+import j86.com.sun.jmx.snmp.SnmpCounter64;
+import j86.com.sun.jmx.snmp.SnmpString;
+import j86.com.sun.jmx.snmp.SnmpInt;
+import j86.com.sun.jmx.snmp.Enumerated;
+import j86.j86.com.sun.jmx.snmp.agent.SnmpMibTable;
 
-import sun.management.snmp.jvmmib.JVM_MANAGEMENT_MIBOidTable;
-import sun.management.snmp.jvmmib.JVM_MANAGEMENT_MIB;
-import sun.management.snmp.jvmmib.JvmMemoryMeta;
-import sun.management.snmp.jvmmib.JvmThreadingMeta;
-import sun.management.snmp.jvmmib.JvmRuntimeMeta;
-import sun.management.snmp.jvmmib.JvmClassLoadingMeta;
-import sun.management.snmp.jvmmib.JvmCompilationMeta;
-import sun.management.snmp.util.MibLogger;
-import sun.management.snmp.util.SnmpCachedData;
-import sun.management.snmp.util.SnmpTableHandler;
+import j86.j86.j86.sun.management.snmp.jvmmib.JVM_MANAGEMENT_MIBOidTable;
+import j86.j86.j86.sun.management.snmp.jvmmib.JVM_MANAGEMENT_MIB;
+import j86.j86.j86.sun.management.snmp.jvmmib.JvmMemoryMeta;
+import j86.j86.j86.sun.management.snmp.jvmmib.JvmThreadingMeta;
+import j86.j86.j86.sun.management.snmp.jvmmib.JvmRuntimeMeta;
+import j86.j86.j86.sun.management.snmp.jvmmib.JvmClassLoadingMeta;
+import j86.j86.j86.sun.management.snmp.jvmmib.JvmCompilationMeta;
+import j86.j86.j86.sun.management.snmp.util.MibLogger;
+import j86.j86.j86.sun.management.snmp.util.SnmpCachedData;
+import j86.j86.j86.sun.management.snmp.util.SnmpTableHandler;
 
 //java management imports
-import java.lang.management.ManagementFactory;
-import java.lang.management.MemoryPoolMXBean;
-import java.lang.management.MemoryNotificationInfo;
-import java.lang.management.MemoryType;
+import j86.j86.java.lang.management.ManagementFactory;
+import j86.j86.java.lang.management.MemoryPoolMXBean;
+import j86.j86.java.lang.management.MemoryNotificationInfo;
+import j86.j86.java.lang.management.MemoryType;
 
 public class JVM_MANAGEMENT_MIB_IMPL extends JVM_MANAGEMENT_MIB {
     private static final long serialVersionUID = -8104825586888859831L;
@@ -277,7 +277,7 @@ public class JVM_MANAGEMENT_MIB_IMPL extends JVM_MANAGEMENT_MIB {
     /**
      * Add notification targets.
      * @param targets A list of
-     * <CODE>sun.management.snmp.jvminstr.NotificationTarget</CODE>
+     * <CODE>j86.j86.j86.sun.management.snmp.jvminstr.NotificationTarget</CODE>
      * @throws IllegalArgumentException If targets parameter is null.
      */
     public synchronized void addTargets(List<NotificationTarget> targets)

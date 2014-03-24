@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.security;
+package j86.java.security;
 
 /**
  * An enumeration of cryptographic primitives.

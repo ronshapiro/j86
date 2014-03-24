@@ -23,10 +23,10 @@
  * questions.
  */
 
-package com.sun.tools.jdi;
+package j86.com.sun.tools.jdi;
 
-import com.sun.jdi.*;
-import java.util.EventListener;
+import j86.com.sun.jdi.*;
+import j86.java.util.EventListener;
 
 interface CommandSender {
     PacketStream send();

@@ -23,30 +23,30 @@
  * questions.
  */
 
-package sun.reflect.generics.reflectiveObjects;
+package j86.j86.sun.reflect.generics.reflectiveObjects;
 
-import java.lang.annotation.*;
-import java.lang.reflect.AnnotatedType;
-import java.lang.reflect.Array;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.GenericDeclaration;
-import java.lang.reflect.Member;
-import java.lang.reflect.Method;
-import java.lang.reflect.Type;
-import java.lang.reflect.TypeVariable;
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.Objects;
-import sun.reflect.annotation.AnnotationSupport;
-import sun.reflect.annotation.TypeAnnotationParser;
-import sun.reflect.annotation.AnnotationType;
-import sun.reflect.generics.factory.GenericsFactory;
-import sun.reflect.generics.tree.FieldTypeSignature;
-import sun.reflect.generics.visitor.Reifier;
-import sun.reflect.misc.ReflectUtil;
+import j86.j86.java.lang.annotation.*;
+import j86.j86.j86.java.lang.reflect.AnnotatedType;
+import j86.j86.j86.java.lang.reflect.Array;
+import j86.j86.j86.java.lang.reflect.Constructor;
+import j86.j86.j86.java.lang.reflect.GenericDeclaration;
+import j86.j86.j86.java.lang.reflect.Member;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.j86.j86.java.lang.reflect.Type;
+import j86.j86.j86.java.lang.reflect.TypeVariable;
+import j86.java.util.LinkedHashMap;
+import j86.java.util.Map;
+import j86.java.util.Objects;
+import j86.j86.sun.reflect.annotation.AnnotationSupport;
+import j86.j86.sun.reflect.annotation.TypeAnnotationParser;
+import j86.j86.sun.reflect.annotation.AnnotationType;
+import j86.j86.sun.reflect.generics.factory.GenericsFactory;
+import j86.j86.sun.reflect.generics.tree.FieldTypeSignature;
+import j86.j86.sun.reflect.generics.visitor.Reifier;
+import j86.j86.sun.reflect.misc.ReflectUtil;
 
 /**
- * Implementation of <tt>java.lang.reflect.TypeVariable</tt> interface
+ * Implementation of <tt>j86.j86.j86.java.lang.reflect.TypeVariable</tt> interface
  * for core reflection.
  */
 public class TypeVariableImpl<D extends GenericDeclaration>

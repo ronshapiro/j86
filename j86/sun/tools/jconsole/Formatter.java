@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.tools.jconsole;
+package j86.sun.tools.jconsole;
 
-import java.text.*;
-import java.util.*;
+import j86.java.text.*;
+import j86.java.util.*;
 
 
 class Formatter {

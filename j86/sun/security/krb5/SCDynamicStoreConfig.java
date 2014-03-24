@@ -23,22 +23,22 @@
  * questions.
  */
 
-package sun.security.krb5;
+package j86.sun.security.krb5;
 
-import java.io.IOException;
-import java.util.Collection;
-import java.util.Hashtable;
-import java.util.Vector;
+import j86.java.io.IOException;
+import j86.java.util.Collection;
+import j86.java.util.Hashtable;
+import j86.java.util.Vector;
 
 
 public class SCDynamicStoreConfig {
     private static native void installNotificationCallback();
     private static native Hashtable<String, Object> getKerberosConfig();
-    private static boolean DEBUG = sun.security.krb5.internal.Krb5.DEBUG;
+    private static boolean DEBUG = j86.j86.sun.security.krb5.internal.Krb5.DEBUG;
 
     static {
-        boolean isMac = java.security.AccessController.doPrivileged(
-            new java.security.PrivilegedAction<Boolean>() {
+        boolean isMac = j86.java.security.AccessController.doPrivileged(
+            new j86.java.security.PrivilegedAction<Boolean>() {
                 public Boolean run() {
                     String osname = System.getProperty("os.name");
                     if (osname.contains("OS X")) {

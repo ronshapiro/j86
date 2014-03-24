@@ -23,16 +23,16 @@
  * questions.
  */
 
-package com.sun.jdi.connect.spi;
+package j86.j86.j86.com.sun.jdi.connect.spi;
 
-import java.io.IOException;
+import j86.java.io.IOException;
 
 /**
  * A connection between a debugger and a target VM which it debugs.
  *
  * <p> A Connection represents a bi-directional communication channel
  * between a debugger and a target VM. A Connection is created when
- * {@link com.sun.jdi.connect.spi.TransportService TransportService}
+ * {@link j86.j86.j86.com.sun.jdi.connect.spi.TransportService TransportService}
  * establishes a connection and successfully handshakes with a target
  * VM. A TransportService implementation provides a reliable
  * JDWP packet transportation service and consequently a Connection
@@ -98,7 +98,7 @@ public abstract class Connection {
      *          If the connection is closed, or another thread closes
      *          the connection while the readPacket is in progress.
      *
-     * @throws  java.io.IOException
+     * @throws  j86.java.io.IOException
      *          If the length of the packet (as indictaed by the first
      *          4 bytes) is less than 11 bytes, or an I/O error occurs.
      *
@@ -161,7 +161,7 @@ public abstract class Connection {
      *          If the connection is closed, or another thread closes
      *          the connection while the write operation is in progress.
      *
-     * @throws  java.io.IOException
+     * @throws  j86.java.io.IOException
      *          If an I/O error occurs.
      *
      * @throws  IllegalArgumentException
@@ -187,7 +187,7 @@ public abstract class Connection {
      * the first invocation is complete, after which it will return without
      * effect. </p>
      *
-     * @throws  java.io.IOException
+     * @throws  j86.java.io.IOException
      *          If an I/O error occurs
      */
     public abstract void close() throws IOException;

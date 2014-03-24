@@ -23,7 +23,7 @@
  * questions.
  */
 
-package com.sun.java.browser.net;
+package j86.com.sun.java.browser.net;
 
 /**
  *

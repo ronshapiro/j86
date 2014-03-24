@@ -23,12 +23,12 @@
  * questions.
  */
 
-package com.sun.jndi.cosnaming;
+package j86.com.sun.jndi.cosnaming;
 
-import javax.naming.spi.InitialContextFactory;
-import javax.naming.*;
+import j86.j86.javax.naming.spi.InitialContextFactory;
+import j86.javax.naming.*;
 
-import java.util.Hashtable;
+import j86.java.util.Hashtable;
 
 /**
   * Implements the JNDI SPI InitialContextFactory interface used to

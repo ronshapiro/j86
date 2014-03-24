@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.security.pkcs;
+package j86.sun.security.pkcs;
 
-import java.io.IOException;
-import java.io.OutputStream;
-import java.util.Hashtable;
-import sun.security.util.DerEncoder;
-import sun.security.util.DerValue;
-import sun.security.util.DerInputStream;
-import sun.security.util.DerOutputStream;
-import sun.security.util.ObjectIdentifier;
+import j86.java.io.IOException;
+import j86.java.io.OutputStream;
+import j86.java.util.Hashtable;
+import j86.sun.security.util.DerEncoder;
+import j86.sun.security.util.DerValue;
+import j86.sun.security.util.DerInputStream;
+import j86.sun.security.util.DerOutputStream;
+import j86.sun.security.util.ObjectIdentifier;
 
 /**
  * A set of attributes of class PKCS9Attribute.

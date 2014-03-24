@@ -23,16 +23,16 @@
  * questions.
  */
 
-package javax.swing.plaf.synth;
+package j86.j86.j86.javax.swing.plaf.synth;
 
-import java.awt.Graphics;
-import javax.swing.AbstractButton;
-import javax.swing.JComponent;
-import javax.swing.plaf.ComponentUI;
+import j86.java.awt.Graphics;
+import j86.javax.swing.AbstractButton;
+import j86.javax.swing.JComponent;
+import j86.j86.javax.swing.plaf.ComponentUI;
 
 /**
  * Provides the Synth L&amp;F UI delegate for
- * {@link javax.swing.JToggleButton}.
+ * {@link j86.javax.swing.JToggleButton}.
  *
  * @author Jeff Dinkins
  * @since 1.7

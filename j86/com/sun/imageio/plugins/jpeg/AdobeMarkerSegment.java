@@ -23,14 +23,14 @@
  * questions.
  */
 
-package com.sun.imageio.plugins.jpeg;
+package j86.com.sun.imageio.plugins.jpeg;
 
-import javax.imageio.IIOException;
-import javax.imageio.metadata.IIOInvalidTreeException;
-import javax.imageio.metadata.IIOMetadataNode;
-import javax.imageio.stream.ImageOutputStream;
+import j86.javax.imageio.IIOException;
+import j86.j86.javax.imageio.metadata.IIOInvalidTreeException;
+import j86.j86.javax.imageio.metadata.IIOMetadataNode;
+import j86.j86.javax.imageio.stream.ImageOutputStream;
 
-import java.io.IOException;
+import j86.java.io.IOException;
 
 import org.w3c.dom.Node;
 import org.w3c.dom.NamedNodeMap;

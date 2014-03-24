@@ -23,28 +23,28 @@
  * questions.
  */
 
-package sun.management;
+package j86.sun.management;
 
-import java.lang.management.MemoryUsage;
-import java.lang.reflect.Method;
-import java.lang.reflect.Field;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Collections;
-import java.io.InvalidObjectException;
-import javax.management.openmbean.CompositeType;
-import javax.management.openmbean.CompositeData;
-import javax.management.openmbean.CompositeDataSupport;
-import javax.management.openmbean.TabularData;
-import javax.management.openmbean.SimpleType;
-import javax.management.openmbean.OpenType;
-import javax.management.openmbean.OpenDataException;
-import com.sun.management.GcInfo;
-import com.sun.management.GarbageCollectionNotificationInfo;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
+import j86.j86.java.lang.management.MemoryUsage;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.j86.j86.java.lang.reflect.Field;
+import j86.java.util.Iterator;
+import j86.java.util.Map;
+import j86.java.util.HashMap;
+import j86.java.util.List;
+import j86.java.util.Collections;
+import j86.java.io.InvalidObjectException;
+import j86.j86.javax.management.openmbean.CompositeType;
+import j86.j86.javax.management.openmbean.CompositeData;
+import j86.j86.javax.management.openmbean.CompositeDataSupport;
+import j86.j86.javax.management.openmbean.TabularData;
+import j86.j86.javax.management.openmbean.SimpleType;
+import j86.j86.javax.management.openmbean.OpenType;
+import j86.j86.javax.management.openmbean.OpenDataException;
+import com.j86.sun.management.GcInfo;
+import com.j86.sun.management.GarbageCollectionNotificationInfo;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
 
 /**
  * A CompositeData for GcInfo for the local management support.
@@ -72,7 +72,7 @@ public class GcInfoCompositeData extends LazyCompositeData {
         final GcInfoBuilder builder = AccessController.doPrivileged (new PrivilegedAction<GcInfoBuilder>() {
                         public GcInfoBuilder run() {
                             try {
-                                Class cl = Class.forName("com.sun.management.GcInfo");
+                                Class cl = Class.forName("com.j86.sun.management.GcInfo");
                                 Field f = cl.getDeclaredField("builder");
                                 f.setAccessible(true);
                                 return (GcInfoBuilder)f.get(info);
@@ -84,7 +84,7 @@ public class GcInfoCompositeData extends LazyCompositeData {
         final Object[] extAttr = AccessController.doPrivileged (new PrivilegedAction<Object[]>() {
                         public Object[] run() {
                             try {
-                                Class cl = Class.forName("com.sun.management.GcInfo");
+                                Class cl = Class.forName("com.j86.sun.management.GcInfo");
                                 Field f = cl.getDeclaredField("extAttributes");
                                 f.setAccessible(true);
                                 return (Object[])f.get(info);
@@ -259,7 +259,7 @@ public class GcInfoCompositeData extends LazyCompositeData {
         if (baseGcInfoCompositeType == null) {
             try {
                 baseGcInfoCompositeType =
-                    new CompositeType("sun.management.BaseGcInfoCompositeType",
+                    new CompositeType("j86.sun.management.BaseGcInfoCompositeType",
                                       "CompositeType for Base GcInfo",
                                       getBaseGcInfoItemNames(),
                                       getBaseGcInfoItemNames(),

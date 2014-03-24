@@ -23,13 +23,13 @@
  * questions.
  */
 
-package sun.security.rsa;
+package j86.sun.security.rsa;
 
-import java.util.*;
+import j86.java.util.*;
 
-import java.security.*;
+import j86.java.security.*;
 
-import sun.security.action.PutAllAction;
+import j86.sun.security.action.PutAllAction;
 
 /**
  * Provider class for the RSA signature provider. Supports RSA keyfactory,

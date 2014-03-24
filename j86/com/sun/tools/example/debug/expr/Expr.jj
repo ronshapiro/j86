@@ -30,12 +30,12 @@ options {
 
 PARSER_BEGIN(ExpressionParser)
 
-package com.sun.tools.example.debug.expr;
+package j86.com.sun.tools.example.debug.expr;
 
-import com.sun.jdi.*;
-import java.util.Stack;
-import java.util.List;
-import java.util.ArrayList;
+import j86.com.sun.jdi.*;
+import j86.java.util.Stack;
+import j86.java.util.List;
+import j86.java.util.ArrayList;
 
 public class ExpressionParser {    
 
@@ -72,7 +72,7 @@ public class ExpressionParser {
 					    ClassNotLoadedException,
 					    IncompatibleThreadStateException {
         // TODO StringBufferInputStream is deprecated.
-        java.io.InputStream in = new java.io.StringBufferInputStream(expr);
+        j86.java.io.InputStream in = new java.io.StringBufferInputStream(expr);
         ExpressionParser parser = new ExpressionParser(in);
         parser.vm = vm;
         parser.frameGetter = frameGetter;
@@ -92,8 +92,8 @@ public class ExpressionParser {
     } else if (args.length == 1) {
       System.out.println("Reading from file " + args[0] + " . . .");
       try {
-        parser = new ExpressionParser(new java.io.FileInputStream(args[0]));
-      } catch (java.io.FileNotFoundException e) {
+        parser = new ExpressionParser(new j86.java.io.FileInputStream(args[0]));
+      } catch (j86.java.io.FileNotFoundException e) {
         System.out.println("Java Parser Version 1.0.2:  File " + 
                            args[0] + " not found.");
         return;

@@ -24,7 +24,7 @@
  */
 
 
-package java.util.logging;
+package j86.j86.java.util.logging;
 
 /**
  * A Formatter provides support for formatting LogRecords.
@@ -97,12 +97,12 @@ public abstract class Formatter {
      * The message string is first localized to a format string using
      * the record's ResourceBundle.  (If there is no ResourceBundle,
      * or if the message key is not found, then the key is used as the
-     * format string.)  The format String uses java.text style
+     * format string.)  The format String uses j86.java.text style
      * formatting.
      * <ul>
      * <li>If there are no parameters, no formatter is used.
      * <li>Otherwise, if the string contains "{0" then
-     *     java.text.MessageFormat  is used to format the string.
+     *     j86.java.text.MessageFormat  is used to format the string.
      * <li>Otherwise no formatting is performed.
      * </ul>
      * <p>
@@ -112,11 +112,11 @@ public abstract class Formatter {
      */
     public synchronized String formatMessage(LogRecord record) {
         String format = record.getMessage();
-        java.util.ResourceBundle catalog = record.getResourceBundle();
+        j86.java.util.ResourceBundle catalog = record.getResourceBundle();
         if (catalog != null) {
             try {
                 format = catalog.getString(record.getMessage());
-            } catch (java.util.MissingResourceException ex) {
+            } catch (j86.java.util.MissingResourceException ex) {
                 // Drop through.  Use record message as format
                 format = record.getMessage();
             }
@@ -128,14 +128,14 @@ public abstract class Formatter {
                 // No parameters.  Just return format string.
                 return format;
             }
-            // Is it a java.text style format?
+            // Is it a j86.java.text style format?
             // Ideally we could match with
             // Pattern.compile("\\{\\d").matcher(format).find())
             // However the cost is 14% higher, so we cheaply check for
             // 1 of the first 4 parameters
             if (format.indexOf("{0") >= 0 || format.indexOf("{1") >=0 ||
                         format.indexOf("{2") >=0|| format.indexOf("{3") >=0) {
-                return java.text.MessageFormat.format(format, parameters);
+                return j86.java.text.MessageFormat.format(format, parameters);
             }
             return format;
 

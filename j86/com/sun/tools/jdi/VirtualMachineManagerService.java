@@ -23,12 +23,12 @@
  * questions.
  */
 
-package com.sun.tools.jdi;
+package j86.com.sun.tools.jdi;
 
-import com.sun.jdi.connect.*;
-import com.sun.jdi.VirtualMachine;
-import com.sun.jdi.VirtualMachineManager;
-import java.io.IOException;
+import j86.j86.com.sun.jdi.connect.*;
+import j86.com.sun.jdi.VirtualMachine;
+import j86.com.sun.jdi.VirtualMachineManager;
+import j86.java.io.IOException;
 
 /**
  * VirtualMachineManager SPI
@@ -38,7 +38,7 @@ public interface VirtualMachineManagerService extends VirtualMachineManager {
      * Replaces the default connector.
      *
      * @return the default {@link LaunchingConnector}
-     * @throws java.lang.IllegalArgumentException if the given
+     * @throws j86.java.lang.IllegalArgumentException if the given
      * connector is not a member of the list returned by
      * {@link #launchingConnectors}
      *

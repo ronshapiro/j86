@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.nio.fs;
+package j86.j86.sun.nio.fs;
 
-import java.nio.file.attribute.BasicFileAttributes;
+import j86.j86.j86.java.nio.file.attribute.BasicFileAttributes;
 
 /**
  * Implemented by objects that may hold or cache the attributes of a file.

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.nio.file.attribute;
+package j86.j86.j86.java.nio.file.attribute;
 
 /**
  * Defines the bits for use with the {@link PosixFileAttributes#permissions()

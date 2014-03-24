@@ -23,11 +23,11 @@
  * questions.
  */
 
-package java.io;
+package j86.java.io;
 
 /**
  * Serializability of a class is enabled by the class implementing the
- * java.io.Serializable interface. Classes that do not implement this
+ * j86.java.io.Serializable interface. Classes that do not implement this
  * interface will not have any of their state serialized or
  * deserialized.  All subtypes of a serializable class are themselves
  * serializable.  The serialization interface has no methods or fields
@@ -58,9 +58,9 @@ package java.io;
  * signatures:
  *
  * <PRE>
- * private void writeObject(java.io.ObjectOutputStream out)
+ * private void writeObject(j86.java.io.ObjectOutputStream out)
  *     throws IOException
- * private void readObject(java.io.ObjectInputStream in)
+ * private void readObject(j86.java.io.ObjectInputStream in)
  *     throws IOException, ClassNotFoundException;
  * private void readObjectNoData()
  *     throws ObjectStreamException;
@@ -159,11 +159,11 @@ package java.io;
  * serialVersionUID values is waived for array classes.
  *
  * @author  unascribed
- * @see java.io.ObjectOutputStream
- * @see java.io.ObjectInputStream
- * @see java.io.ObjectOutput
- * @see java.io.ObjectInput
- * @see java.io.Externalizable
+ * @see j86.java.io.ObjectOutputStream
+ * @see j86.java.io.ObjectInputStream
+ * @see j86.java.io.ObjectOutput
+ * @see j86.java.io.ObjectInput
+ * @see j86.java.io.Externalizable
  * @since   JDK1.1
  */
 public interface Serializable {

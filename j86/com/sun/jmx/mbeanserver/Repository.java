@@ -23,26 +23,26 @@
  * questions.
  */
 
-package com.sun.jmx.mbeanserver;
+package j86.com.sun.jmx.mbeanserver;
 
-import com.sun.jmx.defaults.ServiceName;
-import static com.sun.jmx.defaults.JmxProperties.MBEANSERVER_LOGGER;
+import j86.com.sun.jmx.defaults.ServiceName;
+import static j86.com.sun.jmx.defaults.JmxProperties.MBEANSERVER_LOGGER;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.concurrent.locks.ReentrantReadWriteLock;
-import java.util.logging.Level;
-import java.util.Map;
-import java.util.Set;
-import javax.management.DynamicMBean;
-import javax.management.InstanceAlreadyExistsException;
-import javax.management.InstanceNotFoundException;
-import javax.management.ObjectName;
-import javax.management.QueryExp;
-import javax.management.RuntimeOperationsException;
+import j86.java.util.ArrayList;
+import j86.java.util.Collections;
+import j86.java.util.HashMap;
+import j86.java.util.HashSet;
+import j86.java.util.List;
+import j86.j86.j86.java.util.concurrent.locks.ReentrantReadWriteLock;
+import j86.j86.java.util.logging.Level;
+import j86.java.util.Map;
+import j86.java.util.Set;
+import j86.javax.management.DynamicMBean;
+import j86.javax.management.InstanceAlreadyExistsException;
+import j86.javax.management.InstanceNotFoundException;
+import j86.javax.management.ObjectName;
+import j86.javax.management.QueryExp;
+import j86.javax.management.RuntimeOperationsException;
 
 /**
  * This repository does not support persistency.

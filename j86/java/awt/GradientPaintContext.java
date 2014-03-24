@@ -23,16 +23,16 @@
  * questions.
  */
 
-package java.awt;
+package j86.java.awt;
 
-import java.awt.image.Raster;
-import sun.awt.image.IntegerComponentRaster;
-import java.awt.image.ColorModel;
-import java.awt.image.DirectColorModel;
-import java.awt.geom.Point2D;
-import java.awt.geom.AffineTransform;
-import java.awt.geom.NoninvertibleTransformException;
-import java.lang.ref.WeakReference;
+import j86.j86.j86.java.awt.image.Raster;
+import j86.j86.j86.sun.awt.image.IntegerComponentRaster;
+import j86.j86.j86.java.awt.image.ColorModel;
+import j86.j86.j86.java.awt.image.DirectColorModel;
+import j86.j86.java.awt.geom.Point2D;
+import j86.j86.java.awt.geom.AffineTransform;
+import j86.j86.java.awt.geom.NoninvertibleTransformException;
+import j86.j86.java.lang.ref.WeakReference;
 
 class GradientPaintContext implements PaintContext {
     static ColorModel xrgbmodel =

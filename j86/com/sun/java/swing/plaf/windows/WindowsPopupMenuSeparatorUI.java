@@ -23,17 +23,17 @@
  * questions.
  */
 
-package com.sun.java.swing.plaf.windows;
+package j86.j86.com.sun.java.swing.plaf.windows;
 
-import java.awt.*;
+import j86.java.awt.*;
 
-import javax.swing.*;
-import javax.swing.plaf.basic.BasicPopupMenuSeparatorUI;
-import javax.swing.plaf.ComponentUI;
+import j86.javax.swing.*;
+import j86.j86.j86.javax.swing.plaf.basic.BasicPopupMenuSeparatorUI;
+import j86.j86.javax.swing.plaf.ComponentUI;
 
-import com.sun.java.swing.plaf.windows.TMSchema.Part;
-import com.sun.java.swing.plaf.windows.TMSchema.State;
-import com.sun.java.swing.plaf.windows.XPStyle.Skin;
+import j86.j86.com.sun.java.swing.plaf.windows.TMSchema.Part;
+import j86.j86.com.sun.java.swing.plaf.windows.TMSchema.State;
+import j86.j86.com.sun.java.swing.plaf.windows.XPStyle.Skin;
 
 /**
  * Windows L&F implementation of PopupMenuSeparatorUI.

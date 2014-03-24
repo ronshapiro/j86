@@ -23,19 +23,19 @@
  * questions.
  */
 
-package sun.security.x509;
+package j86.sun.security.x509;
 
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.OutputStream;
-import java.io.Reader;
-import java.security.AccessController;
-import java.text.Normalizer;
-import java.util.*;
+import j86.java.io.ByteArrayOutputStream;
+import j86.java.io.IOException;
+import j86.java.io.OutputStream;
+import j86.java.io.Reader;
+import j86.java.security.AccessController;
+import j86.java.text.Normalizer;
+import j86.java.util.*;
 
-import sun.security.action.GetBooleanAction;
-import sun.security.util.*;
-import sun.security.pkcs.PKCS9Attribute;
+import j86.sun.security.action.GetBooleanAction;
+import j86.sun.security.util.*;
+import j86.sun.security.pkcs.PKCS9Attribute;
 
 
 /**

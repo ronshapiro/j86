@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.security.provider;
+package j86.sun.security.provider;
 
-import java.io.*;
-import java.net.*;
-import java.util.Map;
-import java.security.*;
+import j86.java.io.*;
+import j86.java.net.*;
+import j86.java.util.Map;
+import j86.java.security.*;
 
 /**
  * Defines the entries of the SUN provider.
@@ -99,39 +99,39 @@ final class SunEntries {
 
         if (nativeAvailable && useNativePRNG) {
             map.put("SecureRandom.NativePRNG",
-                "sun.security.provider.NativePRNG");
+                "j86.sun.security.provider.NativePRNG");
         }
         map.put("SecureRandom.SHA1PRNG",
-             "sun.security.provider.SecureRandom");
+             "j86.sun.security.provider.SecureRandom");
         if (nativeAvailable && !useNativePRNG) {
             map.put("SecureRandom.NativePRNG",
-                "sun.security.provider.NativePRNG");
+                "j86.sun.security.provider.NativePRNG");
         }
 
         if (NativePRNG.Blocking.isAvailable()) {
             map.put("SecureRandom.NativePRNGBlocking",
-                "sun.security.provider.NativePRNG$Blocking");
+                "j86.sun.security.provider.NativePRNG$Blocking");
         }
 
         if (NativePRNG.NonBlocking.isAvailable()) {
             map.put("SecureRandom.NativePRNGNonBlocking",
-                "sun.security.provider.NativePRNG$NonBlocking");
+                "j86.sun.security.provider.NativePRNG$NonBlocking");
         }
 
         /*
          * Signature engines
          */
         map.put("Signature.SHA1withDSA",
-                "sun.security.provider.DSA$SHA1withDSA");
-        map.put("Signature.NONEwithDSA", "sun.security.provider.DSA$RawDSA");
+                "j86.sun.security.provider.DSA$SHA1withDSA");
+        map.put("Signature.NONEwithDSA", "j86.sun.security.provider.DSA$RawDSA");
         map.put("Alg.Alias.Signature.RawDSA", "NONEwithDSA");
         map.put("Signature.SHA224withDSA",
-                "sun.security.provider.DSA$SHA224withDSA");
+                "j86.sun.security.provider.DSA$SHA224withDSA");
         map.put("Signature.SHA256withDSA",
-                "sun.security.provider.DSA$SHA256withDSA");
+                "j86.sun.security.provider.DSA$SHA256withDSA");
 
-        String dsaKeyClasses = "java.security.interfaces.DSAPublicKey" +
-                "|java.security.interfaces.DSAPrivateKey";
+        String dsaKeyClasses = "j86.j86.java.security.interfaces.DSAPublicKey" +
+                "|j86.j86.java.security.interfaces.DSAPrivateKey";
         map.put("Signature.SHA1withDSA SupportedKeyClasses", dsaKeyClasses);
         map.put("Signature.NONEwithDSA SupportedKeyClasses", dsaKeyClasses);
         map.put("Signature.SHA224withDSA SupportedKeyClasses", dsaKeyClasses);
@@ -160,7 +160,7 @@ final class SunEntries {
          *  Key Pair Generator engines
          */
         map.put("KeyPairGenerator.DSA",
-            "sun.security.provider.DSAKeyPairGenerator");
+            "j86.sun.security.provider.DSAKeyPairGenerator");
         map.put("Alg.Alias.KeyPairGenerator.OID.1.2.840.10040.4.1", "DSA");
         map.put("Alg.Alias.KeyPairGenerator.1.2.840.10040.4.1", "DSA");
         map.put("Alg.Alias.KeyPairGenerator.1.3.14.3.2.12", "DSA");
@@ -168,29 +168,29 @@ final class SunEntries {
         /*
          * Digest engines
          */
-        map.put("MessageDigest.MD2", "sun.security.provider.MD2");
-        map.put("MessageDigest.MD5", "sun.security.provider.MD5");
-        map.put("MessageDigest.SHA", "sun.security.provider.SHA");
+        map.put("MessageDigest.MD2", "j86.sun.security.provider.MD2");
+        map.put("MessageDigest.MD5", "j86.sun.security.provider.MD5");
+        map.put("MessageDigest.SHA", "j86.sun.security.provider.SHA");
 
         map.put("Alg.Alias.MessageDigest.SHA-1", "SHA");
         map.put("Alg.Alias.MessageDigest.SHA1", "SHA");
         map.put("Alg.Alias.MessageDigest.1.3.14.3.2.26", "SHA");
         map.put("Alg.Alias.MessageDigest.OID.1.3.14.3.2.26", "SHA");
 
-        map.put("MessageDigest.SHA-224", "sun.security.provider.SHA2$SHA224");
+        map.put("MessageDigest.SHA-224", "j86.sun.security.provider.SHA2$SHA224");
         map.put("Alg.Alias.MessageDigest.2.16.840.1.101.3.4.2.4", "SHA-224");
         map.put("Alg.Alias.MessageDigest.OID.2.16.840.1.101.3.4.2.4",
                 "SHA-224");
 
-        map.put("MessageDigest.SHA-256", "sun.security.provider.SHA2$SHA256");
+        map.put("MessageDigest.SHA-256", "j86.sun.security.provider.SHA2$SHA256");
         map.put("Alg.Alias.MessageDigest.2.16.840.1.101.3.4.2.1", "SHA-256");
         map.put("Alg.Alias.MessageDigest.OID.2.16.840.1.101.3.4.2.1",
                 "SHA-256");
-        map.put("MessageDigest.SHA-384", "sun.security.provider.SHA5$SHA384");
+        map.put("MessageDigest.SHA-384", "j86.sun.security.provider.SHA5$SHA384");
         map.put("Alg.Alias.MessageDigest.2.16.840.1.101.3.4.2.2", "SHA-384");
         map.put("Alg.Alias.MessageDigest.OID.2.16.840.1.101.3.4.2.2",
                 "SHA-384");
-        map.put("MessageDigest.SHA-512", "sun.security.provider.SHA5$SHA512");
+        map.put("MessageDigest.SHA-512", "j86.sun.security.provider.SHA5$SHA512");
         map.put("Alg.Alias.MessageDigest.2.16.840.1.101.3.4.2.3", "SHA-512");
         map.put("Alg.Alias.MessageDigest.OID.2.16.840.1.101.3.4.2.3",
                 "SHA-512");
@@ -199,13 +199,13 @@ final class SunEntries {
          * Algorithm Parameter Generator engines
          */
         map.put("AlgorithmParameterGenerator.DSA",
-            "sun.security.provider.DSAParameterGenerator");
+            "j86.sun.security.provider.DSAParameterGenerator");
 
         /*
          * Algorithm Parameter engines
          */
         map.put("AlgorithmParameters.DSA",
-            "sun.security.provider.DSAParameters");
+            "j86.sun.security.provider.DSAParameters");
         map.put("Alg.Alias.AlgorithmParameters.OID.1.2.840.10040.4.1", "DSA");
         map.put("Alg.Alias.AlgorithmParameters.1.2.840.10040.4.1", "DSA");
         map.put("Alg.Alias.AlgorithmParameters.1.3.14.3.2.12", "DSA");
@@ -213,7 +213,7 @@ final class SunEntries {
         /*
          * Key factories
          */
-        map.put("KeyFactory.DSA", "sun.security.provider.DSAKeyFactory");
+        map.put("KeyFactory.DSA", "j86.sun.security.provider.DSAKeyFactory");
         map.put("Alg.Alias.KeyFactory.OID.1.2.840.10040.4.1", "DSA");
         map.put("Alg.Alias.KeyFactory.1.2.840.10040.4.1", "DSA");
         map.put("Alg.Alias.KeyFactory.1.3.14.3.2.12", "DSA");
@@ -222,33 +222,33 @@ final class SunEntries {
          * Certificates
          */
         map.put("CertificateFactory.X.509",
-            "sun.security.provider.X509Factory");
+            "j86.sun.security.provider.X509Factory");
         map.put("Alg.Alias.CertificateFactory.X509", "X.509");
 
         /*
          * KeyStore
          */
-        map.put("KeyStore.JKS", "sun.security.provider.JavaKeyStore$JKS");
+        map.put("KeyStore.JKS", "j86.sun.security.provider.JavaKeyStore$JKS");
         map.put("KeyStore.CaseExactJKS",
-                        "sun.security.provider.JavaKeyStore$CaseExactJKS");
-        map.put("KeyStore.DKS", "sun.security.provider.DomainKeyStore$DKS");
+                        "j86.sun.security.provider.JavaKeyStore$CaseExactJKS");
+        map.put("KeyStore.DKS", "j86.sun.security.provider.DomainKeyStore$DKS");
 
         /*
          * Policy
          */
-        map.put("Policy.JavaPolicy", "sun.security.provider.PolicySpiFile");
+        map.put("Policy.JavaPolicy", "j86.sun.security.provider.PolicySpiFile");
 
         /*
          * Configuration
          */
         map.put("Configuration.JavaLoginConfig",
-                        "sun.security.provider.ConfigFile$Spi");
+                        "j86.sun.security.provider.ConfigFile$Spi");
 
         /*
          * CertPathBuilder
          */
         map.put("CertPathBuilder.PKIX",
-            "sun.security.provider.certpath.SunCertPathBuilder");
+            "j86.j86.sun.security.provider.certpath.SunCertPathBuilder");
         map.put("CertPathBuilder.PKIX ValidationAlgorithm",
             "RFC3280");
 
@@ -256,7 +256,7 @@ final class SunEntries {
          * CertPathValidator
          */
         map.put("CertPathValidator.PKIX",
-            "sun.security.provider.certpath.PKIXCertPathValidator");
+            "j86.j86.sun.security.provider.certpath.PKIXCertPathValidator");
         map.put("CertPathValidator.PKIX ValidationAlgorithm",
             "RFC3280");
 
@@ -264,12 +264,12 @@ final class SunEntries {
          * CertStores
          */
         map.put("CertStore.LDAP",
-            "sun.security.provider.certpath.ldap.LDAPCertStore");
+            "j86.j86.j86.sun.security.provider.certpath.ldap.LDAPCertStore");
         map.put("CertStore.LDAP LDAPSchema", "RFC2587");
         map.put("CertStore.Collection",
-            "sun.security.provider.certpath.CollectionCertStore");
+            "j86.j86.sun.security.provider.certpath.CollectionCertStore");
         map.put("CertStore.com.sun.security.IndexedCollection",
-            "sun.security.provider.certpath.IndexedCollectionCertStore");
+            "j86.j86.sun.security.provider.certpath.IndexedCollectionCertStore");
 
         /*
          * KeySize
@@ -306,7 +306,7 @@ final class SunEntries {
     }
 
     // name of the *System* property, takes precedence over PROP_RNDSOURCE
-    private final static String PROP_EGD = "java.security.egd";
+    private final static String PROP_EGD = "j86.java.security.egd";
     // name of the *Security* property
     private final static String PROP_RNDSOURCE = "securerandom.source";
 

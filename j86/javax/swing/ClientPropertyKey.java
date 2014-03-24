@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.swing;
+package j86.javax.swing;
 
-import sun.awt.AWTAccessor;
+import j86.sun.awt.AWTAccessor;
 
 /**
  * An enumeration for keys used as client properties within the Swing

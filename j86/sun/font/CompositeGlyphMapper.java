@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.font;
+package j86.sun.font;
 
 /* remember that the API requires a Font use a
  * consistent glyph id. for a code point, and this is a

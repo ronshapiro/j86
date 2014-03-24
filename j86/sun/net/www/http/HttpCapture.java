@@ -23,17 +23,17 @@
  * questions.
  */
 
-package sun.net.www.http;
+package j86.j86.j86.sun.net.www.http;
 
-import java.io.*;
-import java.util.ArrayList;
-import java.util.regex.*;
-import sun.net.NetProperties;
-import sun.util.logging.PlatformLogger;
+import j86.java.io.*;
+import j86.java.util.ArrayList;
+import j86.j86.java.util.regex.*;
+import j86.sun.net.NetProperties;
+import j86.j86.sun.util.logging.PlatformLogger;
 
 /**
  * Main class of the HTTP traffic capture tool.
- * Captures are triggered by the sun.net.http.captureRules system property.
+ * Captures are triggered by the j86.sun.net.http.captureRules system property.
  * If set, it should point to a file containing the capture rules.
  * Format for the file is simple:
  * - 1 rule per line
@@ -63,10 +63,10 @@ public class HttpCapture {
 
     private static synchronized void init() {
         initialized = true;
-        String rulesFile = java.security.AccessController.doPrivileged(
-            new java.security.PrivilegedAction<String>() {
+        String rulesFile = j86.java.security.AccessController.doPrivileged(
+            new j86.java.security.PrivilegedAction<String>() {
                 public String run() {
-                    return NetProperties.get("sun.net.http.captureRules");
+                    return NetProperties.get("j86.sun.net.http.captureRules");
                 }
             });
         if (rulesFile != null && !rulesFile.isEmpty()) {
@@ -109,7 +109,7 @@ public class HttpCapture {
         return initialized;
     }
 
-    private HttpCapture(File f, java.net.URL url) {
+    private HttpCapture(File f, j86.java.net.URL url) {
         file = f;
         try {
             out = new BufferedWriter(new FileWriter(file, true));
@@ -141,7 +141,7 @@ public class HttpCapture {
         out.flush();
     }
 
-    public static HttpCapture getCapture(java.net.URL url) {
+    public static HttpCapture getCapture(j86.java.net.URL url) {
         if (!isInitialized()) {
             init();
         }
@@ -155,7 +155,7 @@ public class HttpCapture {
                 String f = capFiles.get(i);
                 File fi;
                 if (f.indexOf("%d") >= 0) {
-                    java.util.Random rand = new java.util.Random();
+                    j86.java.util.Random rand = new java.util.Random();
                     do {
                         String f2 = f.replace("%d", Integer.toString(rand.nextInt()));
                         fi = new File(f2);

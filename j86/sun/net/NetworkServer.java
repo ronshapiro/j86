@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.net;
+package j86.sun.net;
 
-import java.io.*;
-import java.net.Socket;
-import java.net.ServerSocket;
+import j86.java.io.*;
+import j86.java.net.Socket;
+import j86.java.net.ServerSocket;
 
 /**
  * This is the base class for network servers.  To define a new type

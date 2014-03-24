@@ -22,14 +22,14 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.media.sound;
+package j86.com.sun.media.sound;
 
-import java.io.InputStream;
-import java.util.Arrays;
-import javax.sound.midi.Soundbank;
-import javax.sound.midi.SoundbankResource;
-import javax.sound.sampled.AudioFormat;
-import javax.sound.sampled.AudioInputStream;
+import j86.java.io.InputStream;
+import j86.java.util.Arrays;
+import j86.javax.sound.midi.Soundbank;
+import j86.javax.sound.midi.SoundbankResource;
+import j86.javax.sound.sampled.AudioFormat;
+import j86.javax.sound.sampled.AudioInputStream;
 
 /**
  * This class is used to store the sample data itself.

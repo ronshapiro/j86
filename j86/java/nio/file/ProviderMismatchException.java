@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.nio.file;
+package j86.j86.java.nio.file;
 
 /**
  * Unchecked exception thrown when an attempt is made to invoke a method on an
@@ -31,7 +31,7 @@ package java.nio.file;
  * different file system provider.
  */
 public class ProviderMismatchException
-    extends java.lang.IllegalArgumentException
+    extends j86.java.lang.IllegalArgumentException
 {
     static final long serialVersionUID = 4990847485741612530L;
 

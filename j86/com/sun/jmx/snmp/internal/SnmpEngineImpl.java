@@ -22,48 +22,48 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.jmx.snmp.internal;
+package j86.j86.com.sun.jmx.snmp.internal;
 
-import java.net.InetAddress;
-import java.net.UnknownHostException;
-import java.util.Hashtable;
-import java.util.logging.Level;
-import java.io.Serializable;
+import j86.java.net.InetAddress;
+import j86.java.net.UnknownHostException;
+import j86.java.util.Hashtable;
+import j86.j86.java.util.logging.Level;
+import j86.java.io.Serializable;
 
-import com.sun.jmx.snmp.SnmpDefinitions;
-import com.sun.jmx.snmp.SnmpEngineId;
-import com.sun.jmx.snmp.SnmpEngine;
-import com.sun.jmx.snmp.SnmpUsmKeyHandler;
-import com.sun.jmx.snmp.SnmpEngineFactory;
-import com.sun.jmx.snmp.SnmpUnknownModelException;
+import j86.com.sun.jmx.snmp.SnmpDefinitions;
+import j86.com.sun.jmx.snmp.SnmpEngineId;
+import j86.com.sun.jmx.snmp.SnmpEngine;
+import j86.com.sun.jmx.snmp.SnmpUsmKeyHandler;
+import j86.com.sun.jmx.snmp.SnmpEngineFactory;
+import j86.com.sun.jmx.snmp.SnmpUnknownModelException;
 
-import com.sun.jmx.snmp.internal.SnmpTools;
-import com.sun.jmx.snmp.SnmpBadSecurityLevelException;
-import static com.sun.jmx.defaults.JmxProperties.SNMP_LOGGER;
+import j86.j86.com.sun.jmx.snmp.internal.SnmpTools;
+import j86.com.sun.jmx.snmp.SnmpBadSecurityLevelException;
+import static j86.com.sun.jmx.defaults.JmxProperties.SNMP_LOGGER;
 
 /**
  * This engine is conformant with the RFC 2571. It is the main object within
  * an SNMP entity (agent, manager...).
- * To an engine is associated an {@link com.sun.jmx.snmp.SnmpEngineId}.
+ * To an engine is associated an {@link j86.com.sun.jmx.snmp.SnmpEngineId}.
  * The way the engineId is retrieved is linked to the way the engine is
  * instantiated. See each <CODE>SnmpEngine</CODE> constructor for more details.
  * An engine is composed of a set of sub systems
- * {@link com.sun.jmx.snmp.internal.SnmpSubSystem}. An <CODE>SNMP</CODE>
+ * {@link j86.j86.com.sun.jmx.snmp.internal.SnmpSubSystem}. An <CODE>SNMP</CODE>
  * engine can contain a:
  *<ul>
  *<li> Message Processing Sub System :
- * {@link com.sun.jmx.snmp.internal.SnmpMsgProcessingSubSystem}</li>
+ * {@link j86.j86.com.sun.jmx.snmp.internal.SnmpMsgProcessingSubSystem}</li>
  *<li> Security Sub System :
- * {@link com.sun.jmx.snmp.internal.SnmpSecuritySubSystem} </li>
+ * {@link j86.j86.com.sun.jmx.snmp.internal.SnmpSecuritySubSystem} </li>
  *<li> Access Control Sub System :
- * {@link com.sun.jmx.snmp.internal.SnmpAccessControlSubSystem}</li>
+ * {@link j86.j86.com.sun.jmx.snmp.internal.SnmpAccessControlSubSystem}</li>
  *</ul>
  *<P> Each sub system contains a set of models. A model is an implementation
  * of a particular treatement (eg: the User based Security Model defined in
  * RFC 2574 is a functional element dealing with authentication and privacy).
  *</P>
  * Engine instantiation is based on a factory. This factory, implementing
- * mandatorily {@link com.sun.jmx.snmp.SnmpEngineFactory  SnmpEngineFactory}
+ * mandatorily {@link j86.com.sun.jmx.snmp.SnmpEngineFactory  SnmpEngineFactory}
  * is set in the method <CODE>setFactory</CODE>.
  * <p><b>This API is a Sun Microsystems internal API  and is subject
  * to change without notice.</b></p>

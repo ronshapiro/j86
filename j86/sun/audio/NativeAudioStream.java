@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.audio;
+package j86.sun.audio;
 
-import java.io.InputStream;
-import java.io.DataInputStream;
-import java.io.FilterInputStream;
-import java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.io.DataInputStream;
+import j86.java.io.FilterInputStream;
+import j86.java.io.IOException;
 
 /**
  * A Sun-specific AudioStream that supports native audio formats.

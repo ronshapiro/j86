@@ -23,18 +23,18 @@
  * questions.
  */
 
-package com.sun.jndi.rmi.registry;
+package j86.com.sun.jndi.rmi.registry;
 
 
-import java.util.Hashtable;
-import java.util.Properties;
-import java.rmi.*;
-import java.rmi.server.*;
-import java.rmi.registry.Registry;
-import java.rmi.registry.LocateRegistry;
+import j86.java.util.Hashtable;
+import j86.java.util.Properties;
+import j86.java.rmi.*;
+import j86.j86.java.rmi.server.*;
+import j86.j86.java.rmi.registry.Registry;
+import j86.j86.java.rmi.registry.LocateRegistry;
 
-import javax.naming.*;
-import javax.naming.spi.NamingManager;
+import j86.javax.naming.*;
+import j86.j86.javax.naming.spi.NamingManager;
 
 
 /**
@@ -508,14 +508,14 @@ class NameClassPairEnumeration implements NamingEnumeration<NameClassPair> {
 
     public NameClassPair next() throws NamingException {
         if (!hasMore()) {
-            throw (new java.util.NoSuchElementException());
+            throw (new j86.java.util.NoSuchElementException());
         }
         // Convert name to a one-element composite name, so embedded
         // meta-characters are properly escaped.
         String name = names[nextName++];
         Name cname = (new CompositeName()).add(name);
         NameClassPair ncp = new NameClassPair(cname.toString(),
-                                            "java.lang.Object");
+                                            "j86.java.lang.Object");
         ncp.setNameInNamespace(name);
         return ncp;
     }
@@ -528,8 +528,8 @@ class NameClassPairEnumeration implements NamingEnumeration<NameClassPair> {
         try {
             return next();
         } catch (NamingException e) {   // should never happen
-            throw (new java.util.NoSuchElementException(
-                    "javax.naming.NamingException was thrown"));
+            throw (new j86.java.util.NoSuchElementException(
+                    "j86.javax.naming.NamingException was thrown"));
         }
     }
 
@@ -572,7 +572,7 @@ class BindingEnumeration implements NamingEnumeration<Binding> {
 
     public Binding next() throws NamingException {
         if (!hasMore()) {
-            throw (new java.util.NoSuchElementException());
+            throw (new j86.java.util.NoSuchElementException());
         }
         // Convert name to a one-element composite name, so embedded
         // meta-characters are properly escaped.
@@ -594,8 +594,8 @@ class BindingEnumeration implements NamingEnumeration<Binding> {
         try {
             return next();
         } catch (NamingException e) {
-            throw (new java.util.NoSuchElementException(
-                    "javax.naming.NamingException was thrown"));
+            throw (new j86.java.util.NoSuchElementException(
+                    "j86.javax.naming.NamingException was thrown"));
         }
     }
 

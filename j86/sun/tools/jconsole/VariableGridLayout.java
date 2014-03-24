@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.tools.jconsole;
+package j86.sun.tools.jconsole;
 
-import java.awt.*;
+import j86.java.awt.*;
 
-import javax.swing.*;
+import j86.javax.swing.*;
 
 @SuppressWarnings("serial")
 public class VariableGridLayout extends GridLayout {

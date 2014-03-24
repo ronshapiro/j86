@@ -23,19 +23,19 @@
  * questions.
  */
 
-package sun.net.www;
-import java.net.URL;
-import java.io.*;
-import java.util.StringTokenizer;
+package j86.j86.sun.net.www;
+import j86.java.net.URL;
+import j86.java.io.*;
+import j86.java.util.StringTokenizer;
 
 class MimeLauncher extends Thread {
-    java.net.URLConnection uc;
+    j86.java.net.URLConnection uc;
     MimeEntry m;
     String genericTempFileTemplate;
     InputStream is;
     String execPath;
 
-    MimeLauncher (MimeEntry M, java.net.URLConnection uc,
+    MimeLauncher (MimeEntry M, j86.java.net.URLConnection uc,
                   InputStream is, String tempFileTemplate, String threadName) throws ApplicationLaunchException {
         super(threadName);
         m = M;
@@ -182,8 +182,8 @@ class MimeLauncher extends Thread {
         }
 
         String execPathList;
-        execPathList = java.security.AccessController.doPrivileged(
-                new sun.security.action.GetPropertyAction("exec.path"));
+        execPathList = j86.java.security.AccessController.doPrivileged(
+                new j86.sun.security.action.GetPropertyAction("exec.path"));
         if (execPathList == null) {
             // exec.path property not set
             return false;

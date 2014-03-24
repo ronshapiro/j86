@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text;
+package j86.j86.javax.swing.text;
 
-import java.awt.*;
-import javax.swing.Icon;
-import javax.swing.event.*;
+import j86.java.awt.*;
+import j86.javax.swing.Icon;
+import j86.j86.javax.swing.event.*;
 
 /**
  * Icon decorator that implements the view interface.  The

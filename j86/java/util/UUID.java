@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.util;
+package j86.java.util;
 
-import java.security.*;
+import j86.java.security.*;
 
 /**
  * A class that represents an immutable universally unique identifier (UUID).
@@ -67,7 +67,7 @@ import java.security.*;
  *
  * @since   1.5
  */
-public final class UUID implements java.io.Serializable, Comparable<UUID> {
+public final class UUID implements j86.java.io.Serializable, Comparable<UUID> {
 
     /**
      * Explicit serialVersionUID for interoperability.

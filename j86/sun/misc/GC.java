@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.misc;
+package j86.sun.misc;
 
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.util.SortedSet;
-import java.util.TreeSet;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.util.SortedSet;
+import j86.java.util.TreeSet;
 
 
 /**

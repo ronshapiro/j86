@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.management;
+package j86.sun.management;
 
-import java.lang.management.MemoryUsage;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.HashMap;
+import j86.j86.java.lang.management.MemoryUsage;
+import j86.java.util.Iterator;
+import j86.java.util.Map;
+import j86.java.util.HashMap;
 
 /**
  * An abstract sensor.

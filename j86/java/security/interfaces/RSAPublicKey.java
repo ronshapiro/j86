@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.security.interfaces;
+package j86.j86.java.security.interfaces;
 
-import java.math.BigInteger;
+import j86.java.math.BigInteger;
 
 /**
  * The interface to an RSA public key.
@@ -34,7 +34,7 @@ import java.math.BigInteger;
  *
  */
 
-public interface RSAPublicKey extends java.security.PublicKey, RSAKey
+public interface RSAPublicKey extends j86.java.security.PublicKey, RSAKey
 {
     /**
      * The type fingerprint that is set to indicate

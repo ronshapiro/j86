@@ -23,15 +23,15 @@
  * questions.
  */
 
-package com.sun.crypto.provider;
+package j86.com.sun.crypto.provider;
 
-import javax.crypto.SecretKey;
-import javax.crypto.SecretKeyFactorySpi;
-import javax.crypto.spec.DESedeKeySpec;
-import java.security.InvalidKeyException;
-import java.security.spec.KeySpec;
-import java.security.spec.InvalidKeySpecException;
-import javax.crypto.spec.SecretKeySpec;
+import j86.javax.crypto.SecretKey;
+import j86.javax.crypto.SecretKeyFactorySpi;
+import j86.j86.javax.crypto.spec.DESedeKeySpec;
+import j86.java.security.InvalidKeyException;
+import j86.j86.java.security.spec.KeySpec;
+import j86.j86.java.security.spec.InvalidKeySpecException;
+import j86.j86.javax.crypto.spec.SecretKeySpec;
 
 /**
  * This class implements the DES-EDE key factory of the Sun provider.
@@ -140,7 +140,7 @@ public final class DESedeKeyFactory extends SecretKeyFactorySpi {
                 && (key.getAlgorithm().equalsIgnoreCase("DESede"))
                 && (key.getFormat().equalsIgnoreCase("RAW"))) {
                 // Check if key originates from this factory
-                if (key instanceof com.sun.crypto.provider.DESedeKey) {
+                if (key instanceof j86.com.sun.crypto.provider.DESedeKey) {
                     return key;
                 }
                 // Convert key to spec

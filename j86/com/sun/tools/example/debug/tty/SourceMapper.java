@@ -32,14 +32,14 @@
  */
 
 
-package com.sun.tools.example.debug.tty;
+package j86.com.sun.tools.example.debug.tty;
 
-import com.sun.jdi.Location;
-import com.sun.jdi.AbsentInformationException;
-import java.util.List;
-import java.util.ArrayList;
-import java.util.StringTokenizer;
-import java.io.*;
+import j86.com.sun.jdi.Location;
+import j86.com.sun.jdi.AbsentInformationException;
+import j86.java.util.List;
+import j86.java.util.ArrayList;
+import j86.java.util.StringTokenizer;
+import j86.java.io.*;
 
 class SourceMapper {
 

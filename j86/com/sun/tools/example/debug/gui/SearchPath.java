@@ -32,10 +32,10 @@
  */
 
 
-package com.sun.tools.example.debug.gui;
+package j86.com.sun.tools.example.debug.gui;
 
-import java.io.*;
-import java.util.*;
+import j86.java.io.*;
+import j86.java.util.*;
 
 public class SearchPath {
 

@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.security.x509;
+package j86.sun.security.x509;
 
-import java.io.IOException;
-import sun.security.util.DerValue;
-import sun.security.util.DerOutputStream;
+import j86.java.io.IOException;
+import j86.sun.security.util.DerValue;
+import j86.sun.security.util.DerOutputStream;
 
 /**
  * This class defines the X400Address of the GeneralName choice.

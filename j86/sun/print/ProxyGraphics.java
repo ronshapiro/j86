@@ -23,20 +23,20 @@
  * questions.
  */
 
-package sun.print;
+package j86.sun.print;
 
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.FontMetrics;
-import java.awt.Graphics;
-import java.awt.Image;
-import java.awt.Polygon;
-import java.awt.Rectangle;
-import java.awt.Shape;
+import j86.java.awt.Color;
+import j86.java.awt.Font;
+import j86.java.awt.FontMetrics;
+import j86.java.awt.Graphics;
+import j86.java.awt.Image;
+import j86.java.awt.Polygon;
+import j86.java.awt.Rectangle;
+import j86.java.awt.Shape;
 
-import java.awt.image.ImageObserver;
+import j86.j86.j86.java.awt.image.ImageObserver;
 
-import java.text.AttributedCharacterIterator;
+import j86.java.text.AttributedCharacterIterator;
 
 /**
  * Implements the Graphics API but does all
@@ -103,8 +103,8 @@ public class ProxyGraphics extends Graphics {
      * @param      width   the width of the clipping rectangle.
      * @param      height   the height of the clipping rectangle.
      * @return     a new graphics context.
-     * @see        java.awt.Graphics#translate
-     * @see        java.awt.Graphics#clipRect
+     * @see        j86.java.awt.Graphics#translate
+     * @see        j86.java.awt.Graphics#clipRect
      */
     public Graphics create(int x, int y, int width, int height) {
         return new ProxyGraphics(g.create(x, y, width, height));
@@ -128,8 +128,8 @@ public class ProxyGraphics extends Graphics {
     /**
      * Gets this graphics context's current color.
      * @return    this graphics context's current color.
-     * @see       java.awt.Color
-     * @see       java.awt.Graphics#setColor
+     * @see       j86.java.awt.Color
+     * @see       j86.java.awt.Graphics#setColor
      */
     public Color getColor() {
         return g.getColor();
@@ -140,8 +140,8 @@ public class ProxyGraphics extends Graphics {
      * color. All subsequent graphics operations using this graphics
      * context use this specified color.
      * @param     c   the new rendering color.
-     * @see       java.awt.Color
-     * @see       java.awt.Graphics#getColor
+     * @see       j86.java.awt.Color
+     * @see       j86.java.awt.Graphics#getColor
      */
     public void setColor(Color c) {
         g.setColor(c);
@@ -180,8 +180,8 @@ public class ProxyGraphics extends Graphics {
     /**
      * Gets the current font.
      * @return    this graphics context's current font.
-     * @see       java.awt.Font
-     * @see       java.awt.Graphics#setFont
+     * @see       j86.java.awt.Font
+     * @see       j86.java.awt.Graphics#setFont
      */
     public Font getFont() {
         return g.getFont();
@@ -192,10 +192,10 @@ public class ProxyGraphics extends Graphics {
      * All subsequent text operations using this graphics context
      * use this font.
      * @param  font   the font.
-     * @see     java.awt.Graphics#getFont
-     * @see     java.awt.Graphics#drawString(java.lang.String, int, int)
-     * @see     java.awt.Graphics#drawBytes(byte[], int, int, int, int)
-     * @see     java.awt.Graphics#drawChars(char[], int, int, int, int)
+     * @see     j86.java.awt.Graphics#getFont
+     * @see     j86.java.awt.Graphics#drawString(j86.java.lang.String, int, int)
+     * @see     j86.java.awt.Graphics#drawBytes(byte[], int, int, int, int)
+     * @see     j86.java.awt.Graphics#drawChars(char[], int, int, int, int)
     */
     public void setFont(Font font) {
         g.setFont(font);
@@ -205,9 +205,9 @@ public class ProxyGraphics extends Graphics {
      * Gets the font metrics of the current font.
      * @return    the font metrics of this graphics
      *                    context's current font.
-     * @see       java.awt.Graphics#getFont
-     * @see       java.awt.FontMetrics
-     * @see       java.awt.Graphics#getFontMetrics(Font)
+     * @see       j86.java.awt.Graphics#getFont
+     * @see       j86.java.awt.FontMetrics
+     * @see       j86.java.awt.Graphics#getFontMetrics(Font)
      */
     public FontMetrics getFontMetrics() {
         return g.getFontMetrics();
@@ -217,9 +217,9 @@ public class ProxyGraphics extends Graphics {
      * Gets the font metrics for the specified font.
      * @return    the font metrics for the specified font.
      * @param     f the specified font
-     * @see       java.awt.Graphics#getFont
-     * @see       java.awt.FontMetrics
-     * @see       java.awt.Graphics#getFontMetrics()
+     * @see       j86.java.awt.Graphics#getFont
+     * @see       j86.java.awt.FontMetrics
+     * @see       j86.java.awt.Graphics#getFontMetrics()
      */
     public FontMetrics getFontMetrics(Font f) {
         return g.getFontMetrics(f);
@@ -237,10 +237,10 @@ public class ProxyGraphics extends Graphics {
      * system origin of this graphics context.
      * @return      the bounding rectangle of the current clipping area,
      *              or <code>null</code> if no clip is set.
-     * @see         java.awt.Graphics#getClip
-     * @see         java.awt.Graphics#clipRect
-     * @see         java.awt.Graphics#setClip(int, int, int, int)
-     * @see         java.awt.Graphics#setClip(Shape)
+     * @see         j86.java.awt.Graphics#getClip
+     * @see         j86.java.awt.Graphics#clipRect
+     * @see         j86.java.awt.Graphics#setClip(int, int, int, int)
+     * @see         j86.java.awt.Graphics#setClip(Shape)
      * @since       JDK1.1
      */
     public Rectangle getClipBounds() {
@@ -280,8 +280,8 @@ public class ProxyGraphics extends Graphics {
      * @param       y the <i>y</i> coordinate of the new clip rectangle.
      * @param       width the width of the new clip rectangle.
      * @param       height the height of the new clip rectangle.
-     * @see         java.awt.Graphics#clipRect
-     * @see         java.awt.Graphics#setClip(Shape)
+     * @see         j86.java.awt.Graphics#clipRect
+     * @see         j86.java.awt.Graphics#setClip(Shape)
      * @since       JDK1.1
      */
     public void setClip(int x, int y, int width, int height) {
@@ -298,10 +298,10 @@ public class ProxyGraphics extends Graphics {
      * @return      a <code>Shape</code> object representing the
      *              current clipping area, or <code>null</code> if
      *              no clip is set.
-     * @see         java.awt.Graphics#getClipBounds
-     * @see         java.awt.Graphics#clipRect
-     * @see         java.awt.Graphics#setClip(int, int, int, int)
-     * @see         java.awt.Graphics#setClip(Shape)
+     * @see         j86.java.awt.Graphics#getClipBounds
+     * @see         j86.java.awt.Graphics#clipRect
+     * @see         j86.java.awt.Graphics#setClip(int, int, int, int)
+     * @see         j86.java.awt.Graphics#setClip(Shape)
      * @since       JDK1.1
      */
     public Shape getClip() {
@@ -319,9 +319,9 @@ public class ProxyGraphics extends Graphics {
      * user clip, which is independent of the clipping associated
      * with device bounds and window visibility.
      * @param clip the <code>Shape</code> to use to set the clip
-     * @see         java.awt.Graphics#getClip()
-     * @see         java.awt.Graphics#clipRect
-     * @see         java.awt.Graphics#setClip(int, int, int, int)
+     * @see         j86.java.awt.Graphics#getClip()
+     * @see         j86.java.awt.Graphics#clipRect
+     * @see         j86.java.awt.Graphics#setClip(int, int, int, int)
      * @since       JDK1.1
      */
     public void setClip(Shape clip) {
@@ -381,8 +381,8 @@ public class ProxyGraphics extends Graphics {
      *                         of the rectangle to be filled.
      * @param         width   the width of the rectangle to be filled.
      * @param         height   the height of the rectangle to be filled.
-     * @see           java.awt.Graphics#clearRect
-     * @see           java.awt.Graphics#drawRect
+     * @see           j86.java.awt.Graphics#clearRect
+     * @see           j86.java.awt.Graphics#drawRect
      */
     public void fillRect(int x, int y, int width, int height) {
         g.fillRect(x, y, width, height);
@@ -401,8 +401,8 @@ public class ProxyGraphics extends Graphics {
      *                         of the rectangle to be drawn.
      * @param         width   the width of the rectangle to be drawn.
      * @param         height   the height of the rectangle to be drawn.
-     * @see          java.awt.Graphics#fillRect
-     * @see          java.awt.Graphics#clearRect
+     * @see          j86.java.awt.Graphics#fillRect
+     * @see          j86.java.awt.Graphics#clearRect
      */
     public void drawRect(int x, int y, int width, int height) {
         g.drawRect(x, y, width, height);
@@ -421,11 +421,11 @@ public class ProxyGraphics extends Graphics {
      * @param       y the <i>y</i> coordinate of the rectangle to clear.
      * @param       width the width of the rectangle to clear.
      * @param       height the height of the rectangle to clear.
-     * @see         java.awt.Graphics#fillRect(int, int, int, int)
-     * @see         java.awt.Graphics#drawRect
-     * @see         java.awt.Graphics#setColor(java.awt.Color)
-     * @see         java.awt.Graphics#setPaintMode
-     * @see         java.awt.Graphics#setXORMode(java.awt.Color)
+     * @see         j86.java.awt.Graphics#fillRect(int, int, int, int)
+     * @see         j86.java.awt.Graphics#drawRect
+     * @see         j86.java.awt.Graphics#setColor(java.awt.Color)
+     * @see         j86.java.awt.Graphics#setPaintMode
+     * @see         j86.java.awt.Graphics#setXORMode(java.awt.Color)
      */
     public void clearRect(int x, int y, int width, int height) {
         g.clearRect(x, y, width, height);
@@ -445,7 +445,7 @@ public class ProxyGraphics extends Graphics {
      *                    at the four corners.
      * @param      arcHeight the vertical diameter of the arc
      *                    at the four corners.
-     * @see        java.awt.Graphics#fillRoundRect
+     * @see        j86.java.awt.Graphics#fillRoundRect
      */
     public void drawRoundRect(int x, int y, int width, int height,
                                        int arcWidth, int arcHeight) {
@@ -466,7 +466,7 @@ public class ProxyGraphics extends Graphics {
      *                     of the arc at the four corners.
      * @param       arcHeight the vertical diameter
      *                     of the arc at the four corners.
-     * @see         java.awt.Graphics#drawRoundRect
+     * @see         j86.java.awt.Graphics#drawRoundRect
      */
     public void fillRoundRect(int x, int y, int width, int height,
                                        int arcWidth, int arcHeight) {
@@ -490,7 +490,7 @@ public class ProxyGraphics extends Graphics {
      * @param       raised a boolean that determines whether the rectangle
      *                      appears to be raised above the surface
      *                      or sunk into the surface.
-     * @see         java.awt.Graphics#fill3DRect
+     * @see         j86.java.awt.Graphics#fill3DRect
      */
     public void draw3DRect(int x, int y, int width, int height,
                            boolean raised) {
@@ -510,7 +510,7 @@ public class ProxyGraphics extends Graphics {
      * @param       raised a boolean value that determines whether the
      *                      rectangle appears to be raised above the surface
      *                      or etched into the surface.
-     * @see         java.awt.Graphics#draw3DRect
+     * @see         j86.java.awt.Graphics#draw3DRect
      */
     public void fill3DRect(int x, int y, int width, int height,
                            boolean raised) {
@@ -532,7 +532,7 @@ public class ProxyGraphics extends Graphics {
      *                     corner of the oval to be drawn.
      * @param       width the width of the oval to be drawn.
      * @param       height the height of the oval to be drawn.
-     * @see         java.awt.Graphics#fillOval
+     * @see         j86.java.awt.Graphics#fillOval
      */
     public void drawOval(int x, int y, int width, int height) {
         g.drawOval(x, y, width, height);
@@ -547,7 +547,7 @@ public class ProxyGraphics extends Graphics {
      *                     of the oval to be filled.
      * @param       width the width of the oval to be filled.
      * @param       height the height of the oval to be filled.
-     * @see         java.awt.Graphics#drawOval
+     * @see         j86.java.awt.Graphics#drawOval
      */
     public void fillOval(int x, int y, int width, int height) {
         g.fillOval(x, y, width, height);
@@ -588,7 +588,7 @@ public class ProxyGraphics extends Graphics {
      * @param        startAngle the beginning angle.
      * @param        arcAngle the angular extent of the arc,
      *                    relative to the start angle.
-     * @see         java.awt.Graphics#fillArc
+     * @see         j86.java.awt.Graphics#fillArc
      */
     public void drawArc(int x, int y, int width, int height,
                                  int startAngle, int arcAngle) {
@@ -629,7 +629,7 @@ public class ProxyGraphics extends Graphics {
      * @param        startAngle the beginning angle.
      * @param        arcAngle the angular extent of the arc,
      *                    relative to the start angle.
-     * @see         java.awt.Graphics#drawArc
+     * @see         j86.java.awt.Graphics#drawArc
      */
     public void fillArc(int x, int y, int width, int height,
                                  int startAngle, int arcAngle) {
@@ -646,7 +646,7 @@ public class ProxyGraphics extends Graphics {
      * @param       xPoints an array of <i>x</i> points
      * @param       yPoints an array of <i>y</i> points
      * @param       nPoints the total number of points
-     * @see         java.awt.Graphics#drawPolygon(int[], int[], int)
+     * @see         j86.java.awt.Graphics#drawPolygon(int[], int[], int)
      * @since       JDK1.1
      */
     public void drawPolyline(int xPoints[], int yPoints[],
@@ -670,8 +670,8 @@ public class ProxyGraphics extends Graphics {
      * @param        xPoints   a an array of <code>x</code> coordinates.
      * @param        yPoints   a an array of <code>y</code> coordinates.
      * @param        nPoints   a the total number of points.
-     * @see          java.awt.Graphics#fillPolygon
-     * @see          java.awt.Graphics#drawPolyline
+     * @see          j86.java.awt.Graphics#fillPolygon
+     * @see          j86.java.awt.Graphics#drawPolyline
      */
     public void drawPolygon(int xPoints[], int yPoints[],
                                      int nPoints) {
@@ -682,8 +682,8 @@ public class ProxyGraphics extends Graphics {
      * Draws the outline of a polygon defined by the specified
      * <code>Polygon</code> object.
      * @param        p the polygon to draw.
-     * @see          java.awt.Graphics#fillPolygon
-     * @see          java.awt.Graphics#drawPolyline
+     * @see          j86.java.awt.Graphics#fillPolygon
+     * @see          j86.java.awt.Graphics#drawPolyline
      */
     public void drawPolygon(Polygon p) {
         g.drawPolygon(p);
@@ -707,7 +707,7 @@ public class ProxyGraphics extends Graphics {
      * @param        xPoints   a an array of <code>x</code> coordinates.
      * @param        yPoints   a an array of <code>y</code> coordinates.
      * @param        nPoints   a the total number of points.
-     * @see          java.awt.Graphics#drawPolygon(int[], int[], int)
+     * @see          j86.java.awt.Graphics#drawPolygon(int[], int[], int)
      */
     public void fillPolygon(int xPoints[], int yPoints[],
                                      int nPoints) {
@@ -721,7 +721,7 @@ public class ProxyGraphics extends Graphics {
      * The area inside the polygon is defined using an
      * even-odd fill rule, also known as the alternating rule.
      * @param        p the polygon to fill.
-     * @see          java.awt.Graphics#drawPolygon(int[], int[], int)
+     * @see          j86.java.awt.Graphics#drawPolygon(int[], int[], int)
      */
     public void fillPolygon(Polygon p) {
         g.fillPolygon(p);
@@ -735,8 +735,8 @@ public class ProxyGraphics extends Graphics {
      * @param       str      the string to be drawn.
      * @param       x        the <i>x</i> coordinate.
      * @param       y        the <i>y</i> coordinate.
-     * @see         java.awt.Graphics#drawBytes
-     * @see         java.awt.Graphics#drawChars
+     * @see         j86.java.awt.Graphics#drawBytes
+     * @see         j86.java.awt.Graphics#drawChars
      */
     public void drawString(String str, int x, int y) {
         g.drawString(str, x, y);
@@ -751,8 +751,8 @@ public class ProxyGraphics extends Graphics {
      * @param       iterator the iterator whose text is to be drawn
      * @param       x        the <i>x</i> coordinate.
      * @param       y        the <i>y</i> coordinate.
-     * @see         java.awt.Graphics#drawBytes
-     * @see         java.awt.Graphics#drawChars
+     * @see         j86.java.awt.Graphics#drawBytes
+     * @see         j86.java.awt.Graphics#drawChars
      */
    public void drawString(AttributedCharacterIterator iterator,
                                     int x, int y) {
@@ -769,8 +769,8 @@ public class ProxyGraphics extends Graphics {
      * @param length the number of characters to be drawn
      * @param x the <i>x</i> coordinate of the baseline of the text
      * @param y the <i>y</i> coordinate of the baseline of the text
-     * @see         java.awt.Graphics#drawBytes
-     * @see         java.awt.Graphics#drawString
+     * @see         j86.java.awt.Graphics#drawBytes
+     * @see         j86.java.awt.Graphics#drawString
      */
     public void drawChars(char data[], int offset, int length, int x, int y) {
         g.drawChars(data, offset, length, x, y);
@@ -786,8 +786,8 @@ public class ProxyGraphics extends Graphics {
      * @param length the number of bytes that are drawn
      * @param x the <i>x</i> coordinate of the baseline of the text
      * @param y the <i>y</i> coordinate of the baseline of the text
-     * @see         java.awt.Graphics#drawChars
-     * @see         java.awt.Graphics#drawString
+     * @see         j86.java.awt.Graphics#drawChars
+     * @see         j86.java.awt.Graphics#drawString
      */
     public void drawBytes(byte data[], int offset, int length, int x, int y) {
         g.drawBytes(data, offset, length, x, y);
@@ -813,9 +813,9 @@ public class ProxyGraphics extends Graphics {
      * @param    y   the <i>y</i> coordinate.
      * @param    observer    object to be notified as more of
      *                          the image is converted.
-     * @see      java.awt.Image
-     * @see      java.awt.image.ImageObserver
-     * @see      java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
+     * @see      j86.java.awt.Image
+     * @see      j86.j86.j86.java.awt.image.ImageObserver
+     * @see      j86.j86.j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
      */
     public boolean drawImage(Image img, int x, int y,
                                       ImageObserver observer) {
@@ -851,9 +851,9 @@ public class ProxyGraphics extends Graphics {
      * @param    height the height of the rectangle.
      * @param    observer    object to be notified as more of
      *                          the image is converted.
-     * @see      java.awt.Image
-     * @see      java.awt.image.ImageObserver
-     * @see      java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
+     * @see      j86.java.awt.Image
+     * @see      j86.j86.j86.java.awt.image.ImageObserver
+     * @see      j86.j86.j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
      */
     public boolean drawImage(Image img, int x, int y,
                                       int width, int height,
@@ -887,9 +887,9 @@ public class ProxyGraphics extends Graphics {
      *                         non-opaque portions of the image.
      * @param    observer    object to be notified as more of
      *                          the image is converted.
-     * @see      java.awt.Image
-     * @see      java.awt.image.ImageObserver
-     * @see      java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
+     * @see      j86.java.awt.Image
+     * @see      j86.j86.j86.java.awt.image.ImageObserver
+     * @see      j86.j86.j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
      */
     public boolean drawImage(Image img, int x, int y,
                                       Color bgcolor,
@@ -931,9 +931,9 @@ public class ProxyGraphics extends Graphics {
      *                         non-opaque portions of the image.
      * @param    observer    object to be notified as more of
      *                          the image is converted.
-     * @see      java.awt.Image
-     * @see      java.awt.image.ImageObserver
-     * @see      java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
+     * @see      j86.java.awt.Image
+     * @see      j86.j86.j86.java.awt.image.ImageObserver
+     * @see      j86.j86.j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
      */
     public boolean drawImage(Image img, int x, int y,
                                       int width, int height,
@@ -985,9 +985,9 @@ public class ProxyGraphics extends Graphics {
      *                    source rectangle.
      * @param       observer object to be notified as more of the image is
      *                    scaled and converted.
-     * @see         java.awt.Image
-     * @see         java.awt.image.ImageObserver
-     * @see         java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
+     * @see         j86.java.awt.Image
+     * @see         j86.j86.j86.java.awt.image.ImageObserver
+     * @see         j86.j86.j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
      * @since       JDK1.1
      */
     public boolean drawImage(Image img,
@@ -1048,9 +1048,9 @@ public class ProxyGraphics extends Graphics {
      *                    non-opaque portions of the image.
      * @param       observer object to be notified as more of the image is
      *                    scaled and converted.
-     * @see         java.awt.Image
-     * @see         java.awt.image.ImageObserver
-     * @see         java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
+     * @see         j86.java.awt.Image
+     * @see         j86.j86.j86.java.awt.image.ImageObserver
+     * @see         j86.j86.j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
      * @since       JDK1.1
      */
     public boolean drawImage(Image img,
@@ -1086,11 +1086,11 @@ public class ProxyGraphics extends Graphics {
      * call <code>dispose</code> when finished using
      * a <code>Graphics</code> object only if it was created
      * directly from a component or another <code>Graphics</code> object.
-     * @see         java.awt.Graphics#finalize
-     * @see         java.awt.Component#paint
-     * @see         java.awt.Component#update
-     * @see         java.awt.Component#getGraphics
-     * @see         java.awt.Graphics#create
+     * @see         j86.java.awt.Graphics#finalize
+     * @see         j86.java.awt.Component#paint
+     * @see         j86.java.awt.Component#update
+     * @see         j86.java.awt.Component#getGraphics
+     * @see         j86.java.awt.Graphics#create
      */
     public void dispose() {
         g.dispose();

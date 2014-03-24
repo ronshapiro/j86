@@ -23,15 +23,15 @@
  * questions.
  */
 
-package sun.security.jgss.krb5;
+package j86.j86.sun.security.jgss.krb5;
 
-import org.ietf.jgss.*;
-import sun.security.jgss.*;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.IOException;
-import java.io.ByteArrayInputStream;
-import java.security.MessageDigest;
+import j86.org.ietf.jgss.*;
+import j86.sun.security.jgss.*;
+import j86.java.io.InputStream;
+import j86.java.io.OutputStream;
+import j86.java.io.IOException;
+import j86.java.io.ByteArrayInputStream;
+import j86.java.security.MessageDigest;
 
 /**
  * This class is a base class for other token definitions that pertain to
@@ -69,7 +69,7 @@ import java.security.MessageDigest;
  *
  * @author Mayank Upadhyay
  * @author Ram Marti
- * @see sun.security.jgss.GSSHeader
+ * @see j86.sun.security.jgss.GSSHeader
  */
 
 abstract class MessageToken extends Krb5Token {
@@ -674,8 +674,8 @@ abstract class MessageToken extends Krb5Token {
         /**
          * Returns the token id for the message token.
          * @return the token id
-         * @see sun.security.jgss.krb5.Krb5Token#MIC_ID
-         * @see sun.security.jgss.krb5.Krb5Token#WRAP_ID
+         * @see j86.j86.sun.security.jgss.krb5.Krb5Token#MIC_ID
+         * @see j86.j86.sun.security.jgss.krb5.Krb5Token#WRAP_ID
          */
         public final int getTokenId() {
             return tokenId;
@@ -684,8 +684,8 @@ abstract class MessageToken extends Krb5Token {
         /**
          * Returns the sign algorithm for the message token.
          * @return the sign algorithm
-         * @see sun.security.jgss.krb5.MessageToken#SIGN_DES_MAC
-         * @see sun.security.jgss.krb5.MessageToken#SIGN_DES_MAC_MD5
+         * @see j86.j86.sun.security.jgss.krb5.MessageToken#SIGN_DES_MAC
+         * @see j86.j86.sun.security.jgss.krb5.MessageToken#SIGN_DES_MAC_MD5
          */
         public final int getSignAlg() {
             return signAlg;
@@ -694,8 +694,8 @@ abstract class MessageToken extends Krb5Token {
         /**
          * Returns the seal algorithm for the message token.
          * @return the seal algorithm
-         * @see sun.security.jgss.krb5.MessageToken#SEAL_ALG_DES
-         * @see sun.security.jgss.krb5.MessageToken#SEAL_ALG_NONE
+         * @see j86.j86.sun.security.jgss.krb5.MessageToken#SEAL_ALG_DES
+         * @see j86.j86.sun.security.jgss.krb5.MessageToken#SEAL_ALG_NONE
          */
         public final int getSealAlg() {
             return sealAlg;

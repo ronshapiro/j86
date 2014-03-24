@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.net.www.protocol.http;
+package j86.j86.j86.sun.net.www.protocol.http;
 
-import java.util.LinkedList;
-import java.util.ListIterator;
-import java.util.HashMap;
+import j86.java.util.LinkedList;
+import j86.java.util.ListIterator;
+import j86.java.util.HashMap;
 
 /**
  * @author Michael McMahon

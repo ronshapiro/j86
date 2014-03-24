@@ -23,15 +23,15 @@
  * questions.
  */
 
-package java.util;
+package j86.java.util;
 
 /**
  * Thrown by various accessor methods to indicate that the element being requested
  * does not exist.
  *
  * @author  unascribed
- * @see     java.util.Enumeration#nextElement()
- * @see     java.util.Iterator#next()
+ * @see     j86.java.util.Enumeration#nextElement()
+ * @see     j86.java.util.Iterator#next()
  * @since   JDK1.0
  */
 public

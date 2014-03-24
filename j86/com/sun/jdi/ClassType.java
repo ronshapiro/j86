@@ -23,9 +23,9 @@
  * questions.
  */
 
-package com.sun.jdi;
+package j86.com.sun.jdi;
 
-import java.util.List;
+import j86.java.util.List;
 
 /**
  * A mirror of a class in the target VM. A ClassType is a refinement
@@ -111,7 +111,7 @@ public interface ClassType extends ReferenceType {
      *
      * @param field the field to set.
      * @param value the value to be assigned.
-     * @throws java.lang.IllegalArgumentException if the field is
+     * @throws j86.java.lang.IllegalArgumentException if the field is
      * not static, the field is final, or the field does not exist
      * in this class.
      * @throws ClassNotLoadedException if the field type has not yet been loaded
@@ -214,7 +214,7 @@ public interface ClassType extends ReferenceType {
      * in the order they appear in the method signature.
      * @param options the integer bit flag options.
      * @return a {@link Value} mirror of the invoked method's return value.
-     * @throws java.lang.IllegalArgumentException if the method is not
+     * @throws j86.java.lang.IllegalArgumentException if the method is not
      * a member of this class or a superclass, if the size of the argument list
      * does not match the number of declared arguemnts for the method, or
      * if the method is an initializer, constructor or static intializer.
@@ -319,7 +319,7 @@ public interface ClassType extends ReferenceType {
      * @param options the integer bit flag options.
      * @return an {@link ObjectReference} mirror of the newly created
      * object.
-     * @throws java.lang.IllegalArgumentException if the method is not
+     * @throws j86.java.lang.IllegalArgumentException if the method is not
      * a member of this class, if the size of the argument list
      * does not match the number of declared arguments for the constructor,
      * or if the method is not a constructor.
@@ -353,15 +353,15 @@ public interface ClassType extends ReferenceType {
     /**
      * Returns a the single non-abstract {@link Method} visible from
      * this class that has the given name and signature.
-     * See {@link ReferenceType#methodsByName(java.lang.String, java.lang.String)}
+     * See {@link ReferenceType#methodsByName(j86.java.lang.String, java.lang.String)}
      * for information on signature format.
      * <p>
      * The returned method (if non-null) is a component of
      * {@link ClassType}.
      *
      * @see ReferenceType#visibleMethods
-     * @see ReferenceType#methodsByName(java.lang.String name)
-     * @see ReferenceType#methodsByName(java.lang.String name, java.lang.String signature)
+     * @see ReferenceType#methodsByName(j86.java.lang.String name)
+     * @see ReferenceType#methodsByName(j86.java.lang.String name, java.lang.String signature)
      * @param name the name of the method to find.
      * @param signature the signature of the method to find
      * @return the {@link Method} that matches the given

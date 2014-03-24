@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.rmi.rmic.newrmic;
+package j86.j86.sun.rmi.rmic.newrmic;
 
-import java.io.Writer;
-import java.io.BufferedWriter;
-import java.io.IOException;
+import j86.java.io.Writer;
+import j86.java.io.BufferedWriter;
+import j86.java.io.IOException;
 
 /**
  * A BufferedWriter that supports automatic indentation of lines of

@@ -23,43 +23,43 @@
  * questions.
  */
 
-package com.sun.java.swing.plaf.windows;
+package j86.j86.com.sun.java.swing.plaf.windows;
 
-import java.awt.Component;
-import java.awt.Container;
-import java.awt.Event;
-import java.awt.KeyEventPostProcessor;
-import java.awt.Window;
-import java.awt.Toolkit;
+import j86.java.awt.Component;
+import j86.java.awt.Container;
+import j86.java.awt.Event;
+import j86.java.awt.KeyEventPostProcessor;
+import j86.java.awt.Window;
+import j86.java.awt.Toolkit;
 
-import sun.awt.AWTAccessor;
-import sun.awt.SunToolkit;
+import j86.sun.awt.AWTAccessor;
+import j86.sun.awt.SunToolkit;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.KeyEvent;
+import j86.j86.java.awt.event.ActionEvent;
+import j86.j86.java.awt.event.KeyEvent;
 
-import javax.swing.AbstractAction;
-import javax.swing.ActionMap;
-import javax.swing.InputMap;
-import javax.swing.KeyStroke;
-import javax.swing.JComponent;
-import javax.swing.JLabel;
-import javax.swing.JRootPane;
-import javax.swing.SwingUtilities;
-import javax.swing.UIManager;
-import javax.swing.AbstractButton;
-import javax.swing.JFrame;
-import javax.swing.JMenu;
-import javax.swing.JMenuBar;
-import javax.swing.MenuElement;
-import javax.swing.MenuSelectionManager;
+import j86.javax.swing.AbstractAction;
+import j86.javax.swing.ActionMap;
+import j86.javax.swing.InputMap;
+import j86.javax.swing.KeyStroke;
+import j86.javax.swing.JComponent;
+import j86.javax.swing.JLabel;
+import j86.javax.swing.JRootPane;
+import j86.javax.swing.SwingUtilities;
+import j86.javax.swing.UIManager;
+import j86.javax.swing.AbstractButton;
+import j86.javax.swing.JFrame;
+import j86.javax.swing.JMenu;
+import j86.javax.swing.JMenuBar;
+import j86.javax.swing.MenuElement;
+import j86.javax.swing.MenuSelectionManager;
 
-import javax.swing.plaf.ActionMapUIResource;
-import javax.swing.plaf.ComponentUI;
-import javax.swing.plaf.InputMapUIResource;
+import j86.j86.javax.swing.plaf.ActionMapUIResource;
+import j86.j86.javax.swing.plaf.ComponentUI;
+import j86.j86.javax.swing.plaf.InputMapUIResource;
 
-import javax.swing.plaf.basic.BasicRootPaneUI;
-import javax.swing.plaf.basic.ComboPopup;
+import j86.j86.j86.javax.swing.plaf.basic.BasicRootPaneUI;
+import j86.j86.j86.javax.swing.plaf.basic.ComboPopup;
 
 /**
  * Windows implementation of RootPaneUI, there is one shared between all

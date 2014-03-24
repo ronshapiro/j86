@@ -23,13 +23,13 @@
  * questions.
  */
 
-package java.beans.beancontext;
+package j86.j86.java.beans.beancontext;
 
-import java.beans.PropertyChangeListener;
-import java.beans.VetoableChangeListener;
-import java.beans.PropertyVetoException;
+import j86.java.beans.PropertyChangeListener;
+import j86.java.beans.VetoableChangeListener;
+import j86.java.beans.PropertyVetoException;
 
-import java.beans.beancontext.BeanContext;
+import j86.j86.java.beans.beancontext.BeanContext;
 
 /**
  * <p>
@@ -58,11 +58,11 @@ import java.beans.beancontext.BeanContext;
  * @author      Laurence P. G. Cable
  * @since       1.2
  *
- * @see java.beans.beancontext.BeanContext
- * @see java.beans.PropertyChangeEvent
- * @see java.beans.PropertyChangeListener
- * @see java.beans.PropertyVetoException
- * @see java.beans.VetoableChangeListener
+ * @see j86.j86.java.beans.beancontext.BeanContext
+ * @see j86.java.beans.PropertyChangeEvent
+ * @see j86.java.beans.PropertyChangeListener
+ * @see j86.java.beans.PropertyVetoException
+ * @see j86.java.beans.VetoableChangeListener
  */
 
 public interface BeanContextChild {
@@ -70,7 +70,7 @@ public interface BeanContextChild {
     /**
      * <p>
      * Objects that implement this interface,
-     * shall fire a java.beans.PropertyChangeEvent, with parameters:
+     * shall fire a j86.java.beans.PropertyChangeEvent, with parameters:
      *
      * propertyName "beanContext", oldValue (the previous nesting
      * <code>BeanContext</code> instance, or <code>null</code>),

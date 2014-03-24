@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.sound.midi;
+package j86.javax.sound.midi;
 
 /**
  * A <code>ShortMessage</code> contains a MIDI message that has at most

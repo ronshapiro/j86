@@ -23,16 +23,16 @@
  * questions.
  */
 
-package java.text.spi;
+package j86.j86.java.text.spi;
 
-import java.text.DecimalFormatSymbols;
-import java.util.Locale;
-import java.util.spi.LocaleServiceProvider;
+import j86.java.text.DecimalFormatSymbols;
+import j86.java.util.Locale;
+import j86.j86.java.util.spi.LocaleServiceProvider;
 
 /**
  * An abstract class for service providers that
  * provide instances of the
- * {@link java.text.DecimalFormatSymbols DecimalFormatSymbols} class.
+ * {@link j86.java.text.DecimalFormatSymbols DecimalFormatSymbols} class.
  *
  * <p>The requested {@code Locale} may contain an <a
  * href="../../util/Locale.html#def_locale_extension"> extension</a> for
@@ -63,10 +63,10 @@ public abstract class DecimalFormatSymbolsProvider extends LocaleServiceProvider
      * @exception NullPointerException if <code>locale</code> is null
      * @exception IllegalArgumentException if <code>locale</code> isn't
      *     one of the locales returned from
-     *     {@link java.util.spi.LocaleServiceProvider#getAvailableLocales()
+     *     {@link j86.j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
      *     getAvailableLocales()}.
      * @return a <code>DecimalFormatSymbols</code> instance.
-     * @see java.text.DecimalFormatSymbols#getInstance(java.util.Locale)
+     * @see j86.java.text.DecimalFormatSymbols#getInstance(j86.java.util.Locale)
      */
     public abstract DecimalFormatSymbols getInstance(Locale locale);
 }

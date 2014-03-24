@@ -23,7 +23,7 @@
  * questions.
  */
 
-package com.sun.java.browser.dom;
+package j86.com.sun.java.browser.dom;
 
 public abstract class DOMServiceProvider
 {

@@ -23,17 +23,17 @@
  * questions.
  */
 
-package javax.swing;
+package j86.javax.swing;
 
-import java.applet.Applet;
-import java.awt.*;
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import static javax.swing.ClientPropertyKey.PopupFactory_FORCE_HEAVYWEIGHT_POPUP;
+import j86.java.applet.Applet;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.WindowAdapter;
+import j86.j86.java.awt.event.WindowEvent;
+import j86.java.util.ArrayList;
+import j86.java.util.HashMap;
+import j86.java.util.List;
+import j86.java.util.Map;
+import static j86.javax.swing.ClientPropertyKey.PopupFactory_FORCE_HEAVYWEIGHT_POPUP;
 
 /**
  * <code>PopupFactory</code>, as the name implies, is used to obtain

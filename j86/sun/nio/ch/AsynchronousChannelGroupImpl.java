@@ -23,21 +23,21 @@
  * questions.
  */
 
-package sun.nio.ch;
+package j86.j86.j86.sun.nio.ch;
 
-import java.nio.channels.Channel;
-import java.nio.channels.AsynchronousChannelGroup;
-import java.nio.channels.spi.AsynchronousChannelProvider;
-import java.io.IOException;
-import java.io.FileDescriptor;
-import java.util.Queue;
-import java.util.concurrent.*;
-import java.util.concurrent.atomic.AtomicInteger;
-import java.util.concurrent.atomic.AtomicBoolean;
-import java.security.PrivilegedAction;
-import java.security.AccessController;
-import java.security.AccessControlContext;
-import sun.security.action.GetIntegerAction;
+import j86.j86.java.nio.channels.Channel;
+import j86.j86.java.nio.channels.AsynchronousChannelGroup;
+import j86.j86.j86.java.nio.channels.spi.AsynchronousChannelProvider;
+import j86.java.io.IOException;
+import j86.java.io.FileDescriptor;
+import j86.java.util.Queue;
+import j86.j86.java.util.concurrent.*;
+import j86.j86.j86.java.util.concurrent.atomic.AtomicInteger;
+import j86.j86.j86.java.util.concurrent.atomic.AtomicBoolean;
+import j86.java.security.PrivilegedAction;
+import j86.java.security.AccessController;
+import j86.java.security.AccessControlContext;
+import j86.sun.security.action.GetIntegerAction;
 
 /**
  * Base implementation of AsynchronousChannelGroup
@@ -49,7 +49,7 @@ abstract class AsynchronousChannelGroupImpl
     // number of internal threads handling I/O events when using an unbounded
     // thread pool. Internal threads do not dispatch to completion handlers.
     private static final int internalThreadCount = AccessController.doPrivileged(
-        new GetIntegerAction("sun.nio.ch.internalThreadPoolSize", 1));
+        new GetIntegerAction("j86.j86.j86.sun.nio.ch.internalThreadPoolSize", 1));
 
     // associated thread pool
     private final ThreadPool pool;

@@ -23,27 +23,27 @@
  * questions.
  */
 
-package sun.tools.jconsole.inspector;
+package j86.j86.sun.tools.jconsole.inspector;
 
-import javax.swing.*;
-import java.awt.BorderLayout;
-import java.awt.GridLayout;
-import java.awt.FlowLayout;
-import java.awt.Component;
-import java.awt.event.*;
-import java.util.*;
+import j86.javax.swing.*;
+import j86.java.awt.BorderLayout;
+import j86.java.awt.GridLayout;
+import j86.java.awt.FlowLayout;
+import j86.java.awt.Component;
+import j86.j86.java.awt.event.*;
+import j86.java.util.*;
 
-import javax.management.*;
+import j86.javax.management.*;
 
-import sun.tools.jconsole.MBeansTab;
-import sun.tools.jconsole.JConsole;
-import sun.tools.jconsole.Messages;
+import j86.sun.tools.jconsole.MBeansTab;
+import j86.sun.tools.jconsole.JConsole;
+import j86.sun.tools.jconsole.Messages;
 
 public abstract class XOperations extends JPanel implements ActionListener {
 
     public final static String OPERATION_INVOCATION_EVENT =
             "jam.xoperations.invoke.result";
-    private java.util.List<NotificationListener> notificationListenersList;
+    private j86.java.util.List<NotificationListener> notificationListenersList;
     private Hashtable<JButton, OperationEntry> operationEntryTable;
     private XMBean mbean;
     private MBeanInfo mbeanInfo;

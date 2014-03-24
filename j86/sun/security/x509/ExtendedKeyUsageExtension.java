@@ -23,20 +23,20 @@
  * questions.
  */
 
-package sun.security.x509;
+package j86.sun.security.x509;
 
-import java.io.IOException;
-import java.io.OutputStream;
-import java.util.ArrayList;
-import java.util.Enumeration;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Vector;
+import j86.java.io.IOException;
+import j86.java.io.OutputStream;
+import j86.java.util.ArrayList;
+import j86.java.util.Enumeration;
+import j86.java.util.HashMap;
+import j86.java.util.List;
+import j86.java.util.Map;
+import j86.java.util.Vector;
 
-import sun.security.util.DerValue;
-import sun.security.util.DerOutputStream;
-import sun.security.util.ObjectIdentifier;
+import j86.sun.security.util.DerValue;
+import j86.sun.security.util.DerOutputStream;
+import j86.sun.security.util.ObjectIdentifier;
 
 /**
  * This class defines the Extended Key Usage Extension, which

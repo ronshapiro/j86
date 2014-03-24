@@ -36,11 +36,11 @@
  *
  */
 
-package java.text;
+package j86.java.text;
 
-import java.text.Normalizer;
-import java.util.Vector;
-import java.util.Locale;
+import j86.java.text.Normalizer;
+import j86.java.util.Vector;
+import j86.java.util.Locale;
 
 /**
  * The <code>RuleBasedCollator</code> class is a concrete subclass of
@@ -270,7 +270,7 @@ public class RuleBasedCollator extends Collator{
      * RuleBasedCollator constructor.  This takes the table rules and builds
      * a collation table out of them.  Please see RuleBasedCollator class
      * description for more details on the collation rule syntax.
-     * @see java.util.Locale
+     * @see j86.java.util.Locale
      * @param rules the collation rules to build the collation table from.
      * @exception ParseException A format exception
      * will be thrown if the build process of the rules fails. For
@@ -285,7 +285,7 @@ public class RuleBasedCollator extends Collator{
      * RuleBasedCollator constructor.  This takes the table rules and builds
      * a collation table out of them.  Please see RuleBasedCollator class
      * description for more details on the collation rule syntax.
-     * @see java.util.Locale
+     * @see j86.java.util.Locale
      * @param rules the collation rules to build the collation table from.
      * @param decomp the decomposition strength used to build the
      * collation table and to perform comparisons.
@@ -324,7 +324,7 @@ public class RuleBasedCollator extends Collator{
      *
      * @param source the string to be collated
      * @return a {@code CollationElementIterator} object
-     * @see java.text.CollationElementIterator
+     * @see j86.java.text.CollationElementIterator
      */
     public CollationElementIterator getCollationElementIterator(String source) {
         return new CollationElementIterator( source, this );
@@ -335,7 +335,7 @@ public class RuleBasedCollator extends Collator{
      *
      * @param source the character iterator to be collated
      * @return a {@code CollationElementIterator} object
-     * @see java.text.CollationElementIterator
+     * @see j86.java.text.CollationElementIterator
      * @since 1.2
      */
     public CollationElementIterator getCollationElementIterator(
@@ -565,7 +565,7 @@ public class RuleBasedCollator extends Collator{
 
     /**
      * Transforms the string into a series of characters that can be compared
-     * with CollationKey.compareTo. This overrides java.text.Collator.getCollationKey.
+     * with CollationKey.compareTo. This overrides j86.java.text.Collator.getCollationKey.
      * It can be overriden in a subclass.
      */
     public synchronized CollationKey getCollationKey(String source)

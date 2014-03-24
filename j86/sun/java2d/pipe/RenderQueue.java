@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.java2d.pipe;
+package j86.j86.sun.java2d.pipe;
 
-import java.util.HashSet;
-import java.util.Set;
-import sun.awt.SunToolkit;
+import j86.java.util.HashSet;
+import j86.java.util.Set;
+import j86.sun.awt.SunToolkit;
 
 /**
  * The RenderQueue class encapsulates a RenderBuffer on which rendering

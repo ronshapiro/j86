@@ -23,21 +23,21 @@
  * questions.
  */
 
-package com.sun.java.util.jar.pack;
+package j86.com.sun.j86.j86.java.util.jar.pack;
 
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.OutputStream;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Random;
-import java.util.Set;
-import java.util.zip.Deflater;
-import java.util.zip.DeflaterOutputStream;
-import static com.sun.java.util.jar.pack.Constants.*;
+import j86.java.io.ByteArrayOutputStream;
+import j86.java.io.IOException;
+import j86.java.io.OutputStream;
+import j86.java.util.ArrayList;
+import j86.java.util.Collections;
+import j86.java.util.HashSet;
+import j86.java.util.Iterator;
+import j86.java.util.List;
+import j86.java.util.Random;
+import j86.java.util.Set;
+import j86.j86.java.util.zip.Deflater;
+import j86.j86.java.util.zip.DeflaterOutputStream;
+import static j86.com.sun.j86.j86.java.util.jar.pack.Constants.*;
 /**
  * Heuristic chooser of basic encodings.
  * Runs "zip" to measure the apparent information content after coding.

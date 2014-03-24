@@ -23,30 +23,30 @@
  * questions.
  */
 
-package sun.java2d.opengl;
+package j86.j86.sun.java2d.opengl;
 
-import java.awt.AlphaComposite;
-import java.awt.GraphicsEnvironment;
-import java.awt.Rectangle;
-import java.awt.Transparency;
-import java.awt.image.ColorModel;
-import java.awt.image.Raster;
-import sun.awt.SunHints;
-import sun.awt.image.PixelConverter;
-import sun.java2d.pipe.hw.AccelSurface;
-import sun.java2d.SunGraphics2D;
-import sun.java2d.SurfaceData;
-import sun.java2d.SurfaceDataProxy;
-import sun.java2d.loops.CompositeType;
-import sun.java2d.loops.GraphicsPrimitive;
-import sun.java2d.loops.MaskFill;
-import sun.java2d.loops.SurfaceType;
-import sun.java2d.pipe.ParallelogramPipe;
-import sun.java2d.pipe.PixelToParallelogramConverter;
-import sun.java2d.pipe.RenderBuffer;
-import sun.java2d.pipe.TextPipe;
-import static sun.java2d.pipe.BufferedOpCodes.*;
-import static sun.java2d.opengl.OGLContext.OGLContextCaps.*;
+import j86.java.awt.AlphaComposite;
+import j86.java.awt.GraphicsEnvironment;
+import j86.java.awt.Rectangle;
+import j86.java.awt.Transparency;
+import j86.j86.j86.java.awt.image.ColorModel;
+import j86.j86.j86.java.awt.image.Raster;
+import j86.sun.awt.SunHints;
+import j86.j86.j86.sun.awt.image.PixelConverter;
+import j86.j86.j86.sun.java2d.pipe.hw.AccelSurface;
+import j86.sun.java2d.SunGraphics2D;
+import j86.sun.java2d.SurfaceData;
+import j86.sun.java2d.SurfaceDataProxy;
+import j86.j86.sun.java2d.loops.CompositeType;
+import j86.j86.sun.java2d.loops.GraphicsPrimitive;
+import j86.j86.sun.java2d.loops.MaskFill;
+import j86.j86.sun.java2d.loops.SurfaceType;
+import j86.j86.sun.java2d.pipe.ParallelogramPipe;
+import j86.j86.sun.java2d.pipe.PixelToParallelogramConverter;
+import j86.j86.sun.java2d.pipe.RenderBuffer;
+import j86.j86.sun.java2d.pipe.TextPipe;
+import static j86.j86.sun.java2d.pipe.BufferedOpCodes.*;
+import static j86.j86.sun.java2d.opengl.OGLContext.OGLContextCaps.*;
 
 /**
  * This class describes an OpenGL "surface", that is, a region of pixels
@@ -101,7 +101,7 @@ public abstract class OGLSurfaceData extends SurfaceData
     /**
      * OGL-specific surface types
      *
-     * @see sun.java2d.pipe.hw.AccelSurface
+     * @see j86.j86.j86.sun.java2d.pipe.hw.AccelSurface
      */
     public static final int PBUFFER         = RT_PLAIN;
     public static final int FBOBJECT        = RT_TEXTURE;
@@ -181,27 +181,27 @@ public abstract class OGLSurfaceData extends SurfaceData
     static {
         if (!GraphicsEnvironment.isHeadless()) {
             // fbobject currently enabled by default; use "false" to disable
-            String fbo = (String)java.security.AccessController.doPrivileged(
-                new sun.security.action.GetPropertyAction(
-                    "sun.java2d.opengl.fbobject"));
+            String fbo = (String)j86.java.security.AccessController.doPrivileged(
+                new j86.sun.security.action.GetPropertyAction(
+                    "j86.j86.sun.java2d.opengl.fbobject"));
             isFBObjectEnabled = !"false".equals(fbo);
 
             // lcdshader currently enabled by default; use "false" to disable
-            String lcd = (String)java.security.AccessController.doPrivileged(
-                new sun.security.action.GetPropertyAction(
-                    "sun.java2d.opengl.lcdshader"));
+            String lcd = (String)j86.java.security.AccessController.doPrivileged(
+                new j86.sun.security.action.GetPropertyAction(
+                    "j86.j86.sun.java2d.opengl.lcdshader"));
             isLCDShaderEnabled = !"false".equals(lcd);
 
             // biopshader currently enabled by default; use "false" to disable
-            String biop = (String)java.security.AccessController.doPrivileged(
-                new sun.security.action.GetPropertyAction(
-                    "sun.java2d.opengl.biopshader"));
+            String biop = (String)j86.java.security.AccessController.doPrivileged(
+                new j86.sun.security.action.GetPropertyAction(
+                    "j86.j86.sun.java2d.opengl.biopshader"));
             isBIOpShaderEnabled = !"false".equals(biop);
 
             // gradshader currently enabled by default; use "false" to disable
-            String grad = (String)java.security.AccessController.doPrivileged(
-                new sun.security.action.GetPropertyAction(
-                    "sun.java2d.opengl.gradshader"));
+            String grad = (String)j86.java.security.AccessController.doPrivileged(
+                new j86.sun.security.action.GetPropertyAction(
+                    "j86.j86.sun.java2d.opengl.gradshader"));
             isGradShaderEnabled = !"false".equals(grad);
 
             OGLRenderQueue rq = OGLRenderQueue.getInstance();
@@ -384,7 +384,7 @@ public abstract class OGLSurfaceData extends SurfaceData
      *
      * @return native resource of specified type or 0L if
      * such resource doesn't exist or can not be retrieved.
-     * @see sun.java2d.pipe.hw.AccelSurface#getNativeResource
+     * @see j86.j86.j86.sun.java2d.pipe.hw.AccelSurface#getNativeResource
      */
     public long getNativeResource(int resType) {
         if (resType == TEXTURE) {

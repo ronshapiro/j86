@@ -22,12 +22,12 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.awt;
+package j86.java.awt;
 
-import java.awt.peer.LabelPeer;
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import javax.accessibility.*;
+import j86.j86.java.awt.peer.LabelPeer;
+import j86.java.io.IOException;
+import j86.java.io.ObjectInputStream;
+import j86.javax.accessibility.*;
 
 /**
  * A <code>Label</code> object is a component for placing text in a
@@ -111,7 +111,7 @@ public class Label extends Component implements Accessible {
      * The text of the label is the empty string <code>""</code>.
      * @exception HeadlessException if GraphicsEnvironment.isHeadless()
      * returns true.
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      */
     public Label() throws HeadlessException {
         this("", LEFT);
@@ -126,7 +126,7 @@ public class Label extends Component implements Accessible {
      *        to be thrown.
      * @exception HeadlessException if GraphicsEnvironment.isHeadless()
      * returns true.
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      */
     public Label(String text) throws HeadlessException {
         this(text, LEFT);
@@ -144,7 +144,7 @@ public class Label extends Component implements Accessible {
      * @param     alignment   the alignment value.
      * @exception HeadlessException if GraphicsEnvironment.isHeadless()
      * returns true.
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      */
     public Label(String text, int alignment) throws HeadlessException {
         GraphicsEnvironment.checkHeadless();
@@ -159,7 +159,7 @@ public class Label extends Component implements Accessible {
      * <code>true</code>
      * @serial
      * @since 1.4
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      */
     private void readObject(ObjectInputStream s)
         throws ClassNotFoundException, IOException, HeadlessException {
@@ -194,7 +194,7 @@ public class Label extends Component implements Accessible {
      * Gets the current alignment of this label. Possible values are
      * <code>Label.LEFT</code>, <code>Label.RIGHT</code>, and
      * <code>Label.CENTER</code>.
-     * @see        java.awt.Label#setAlignment
+     * @see        j86.java.awt.Label#setAlignment
      */
     public int getAlignment() {
         return alignment;
@@ -207,7 +207,7 @@ public class Label extends Component implements Accessible {
      * @param      alignment    the alignment to be set.
      * @exception  IllegalArgumentException if an improper value for
      *                          <code>alignment</code> is given.
-     * @see        java.awt.Label#getAlignment
+     * @see        j86.java.awt.Label#getAlignment
      */
     public synchronized void setAlignment(int alignment) {
         switch (alignment) {
@@ -228,7 +228,7 @@ public class Label extends Component implements Accessible {
      * Gets the text of this label.
      * @return     the text of this label, or <code>null</code> if
      *             the text has been set to <code>null</code>.
-     * @see        java.awt.Label#setText
+     * @see        j86.java.awt.Label#setText
      */
     public String getText() {
         return text;
@@ -240,7 +240,7 @@ public class Label extends Component implements Accessible {
      *             <code>text</code> is <code>null</code>, it is
      *             treated for display purposes like an empty
      *             string <code>""</code>.
-     * @see        java.awt.Label#getText
+     * @see        j86.java.awt.Label#getText
      */
     public void setText(String text) {
         boolean testvalid = false;

@@ -20,34 +20,34 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.sun.org.apache.xml.internal.security.signature;
+package j86.j86.com.sun.org.apache.xml.internal.security.signature;
 
-import java.io.IOException;
-import java.io.OutputStream;
-import java.security.Key;
-import java.security.PublicKey;
-import java.security.cert.X509Certificate;
+import j86.java.io.IOException;
+import j86.java.io.OutputStream;
+import j86.java.security.Key;
+import j86.java.security.PublicKey;
+import j86.j86.java.security.cert.X509Certificate;
 
-import javax.crypto.SecretKey;
+import j86.javax.crypto.SecretKey;
 
-import com.sun.org.apache.xml.internal.security.algorithms.SignatureAlgorithm;
-import com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
-import com.sun.org.apache.xml.internal.security.c14n.Canonicalizer;
-import com.sun.org.apache.xml.internal.security.c14n.InvalidCanonicalizerException;
-import com.sun.org.apache.xml.internal.security.exceptions.Base64DecodingException;
-import com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
-import com.sun.org.apache.xml.internal.security.keys.KeyInfo;
-import com.sun.org.apache.xml.internal.security.keys.content.X509Data;
-import com.sun.org.apache.xml.internal.security.transforms.Transforms;
-import com.sun.org.apache.xml.internal.security.utils.Base64;
-import com.sun.org.apache.xml.internal.security.utils.Constants;
-import com.sun.org.apache.xml.internal.security.utils.I18n;
-import com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy;
-import com.sun.org.apache.xml.internal.security.utils.SignerOutputStream;
-import com.sun.org.apache.xml.internal.security.utils.UnsyncBufferedOutputStream;
-import com.sun.org.apache.xml.internal.security.utils.XMLUtils;
-import com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolver;
-import com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverSpi;
+import j86.j86.com.sun.org.apache.xml.internal.security.algorithms.SignatureAlgorithm;
+import j86.j86.com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
+import j86.j86.com.sun.org.apache.xml.internal.security.c14n.Canonicalizer;
+import j86.j86.com.sun.org.apache.xml.internal.security.c14n.InvalidCanonicalizerException;
+import j86.j86.com.sun.org.apache.xml.internal.security.exceptions.Base64DecodingException;
+import j86.j86.com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+import j86.j86.com.sun.org.apache.xml.internal.security.keys.KeyInfo;
+import j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.content.X509Data;
+import j86.j86.com.sun.org.apache.xml.internal.security.transforms.Transforms;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.Base64;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.Constants;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.I18n;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.SignerOutputStream;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.UnsyncBufferedOutputStream;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
+import j86.j86.j86.com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolver;
+import j86.j86.j86.com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverSpi;
 import org.w3c.dom.Attr;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -150,8 +150,8 @@ public final class XMLSignature extends SignatureElementProxy {
         "http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha512";
 
     /** {@link org.apache.commons.logging} logging facility */
-    private static java.util.logging.Logger log =
-        java.util.logging.Logger.getLogger(XMLSignature.class.getName());
+    private static j86.j86.java.util.logging.Logger log =
+        j86.j86.java.util.logging.Logger.getLogger(XMLSignature.class.getName());
 
     /** ds:Signature.ds:SignedInfo element */
     private SignedInfo signedInfo;
@@ -519,7 +519,7 @@ public final class XMLSignature extends SignatureElementProxy {
     }
 
     /**
-     * Appends an Object (not a <code>java.lang.Object</code> but an Object
+     * Appends an Object (not a <code>j86.java.lang.Object</code> but an Object
      * element) to the Signature. Please note that this is only possible
      * when signing.
      *
@@ -574,8 +574,8 @@ public final class XMLSignature extends SignatureElementProxy {
      * Digests all References in the SignedInfo, calculates the signature value
      * and sets it in the SignatureValue Element.
      *
-     * @param signingKey the {@link java.security.PrivateKey} or
-     * {@link javax.crypto.SecretKey} that is used to sign.
+     * @param signingKey the {@link j86.java.security.PrivateKey} or
+     * {@link j86.javax.crypto.SecretKey} that is used to sign.
      * @throws XMLSignatureException
      */
     public void sign(Key signingKey) throws XMLSignatureException {
@@ -607,8 +607,8 @@ public final class XMLSignature extends SignatureElementProxy {
                     try {
                         so.close();
                     } catch (IOException ex) {
-                        if (log.isLoggable(java.util.logging.Level.FINE)) {
-                            log.log(java.util.logging.Level.FINE, ex.getMessage(), ex);
+                        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                            log.log(j86.j86.java.util.logging.Level.FINE, ex.getMessage(), ex);
                         }
                     }
                 }
@@ -673,8 +673,8 @@ public final class XMLSignature extends SignatureElementProxy {
      * comparing those against the stored DigestValues and then checking to see
      * if the Signatures match on the SignedInfo.
      *
-     * @param pk {@link java.security.PublicKey} part of the keypair or
-     * {@link javax.crypto.SecretKey} that was used to sign
+     * @param pk {@link j86.java.security.PublicKey} part of the keypair or
+     * {@link j86.javax.crypto.SecretKey} that was used to sign
      * @return true if the signature is valid, false otherwise
      * @throws XMLSignatureException
      */
@@ -695,11 +695,11 @@ public final class XMLSignature extends SignatureElementProxy {
             //create a SignatureAlgorithms from the SignatureMethod inside
             //SignedInfo. This is used to validate the signature.
             SignatureAlgorithm sa = si.getSignatureAlgorithm();
-            if (log.isLoggable(java.util.logging.Level.FINE)) {
-                log.log(java.util.logging.Level.FINE, "signatureMethodURI = " + sa.getAlgorithmURI());
-                log.log(java.util.logging.Level.FINE, "jceSigAlgorithm    = " + sa.getJCEAlgorithmString());
-                log.log(java.util.logging.Level.FINE, "jceSigProvider     = " + sa.getJCEProviderName());
-                log.log(java.util.logging.Level.FINE, "PublicKey = " + pk);
+            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                log.log(j86.j86.java.util.logging.Level.FINE, "signatureMethodURI = " + sa.getAlgorithmURI());
+                log.log(j86.j86.java.util.logging.Level.FINE, "jceSigAlgorithm    = " + sa.getJCEAlgorithmString());
+                log.log(j86.j86.java.util.logging.Level.FINE, "jceSigProvider     = " + sa.getJCEProviderName());
+                log.log(j86.j86.java.util.logging.Level.FINE, "PublicKey = " + pk);
             }
             byte sigBytes[] = null;
             try {
@@ -714,8 +714,8 @@ public final class XMLSignature extends SignatureElementProxy {
                 // retrieve the byte[] from the stored signature
                 sigBytes = this.getSignatureValue();
             } catch (IOException ex) {
-                if (log.isLoggable(java.util.logging.Level.FINE)) {
-                    log.log(java.util.logging.Level.FINE, ex.getMessage(), ex);
+                if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                    log.log(j86.j86.java.util.logging.Level.FINE, ex.getMessage(), ex);
                 }
                 // Impossible...
             } catch (XMLSecurityException ex) {
@@ -725,7 +725,7 @@ public final class XMLSignature extends SignatureElementProxy {
             // have SignatureAlgorithm sign the input bytes and compare them to
             // the bytes that were stored in the signature.
             if (!sa.verify(sigBytes)) {
-                log.log(java.util.logging.Level.WARNING, "Signature verification failed.");
+                log.log(j86.j86.java.util.logging.Level.WARNING, "Signature verification failed.");
                 return false;
             }
 
@@ -835,7 +835,7 @@ public final class XMLSignature extends SignatureElementProxy {
     /**
      * Proxy method for {@link SignedInfo#createSecretKey(byte[])}. If you want
      * to create a MAC, this method helps you to obtain the
-     * {@link javax.crypto.SecretKey} from octets.
+     * {@link j86.javax.crypto.SecretKey} from octets.
      *
      * @param secretKeyBytes
      * @return the secret key created.

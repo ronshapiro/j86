@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.crypto;
+package j86.javax.crypto;
 
-import java.security.GeneralSecurityException;
+import j86.java.security.GeneralSecurityException;
 
 /**
  * This exception is thrown when a particular padding mechanism is

@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.misc;
+package j86.sun.misc;
 
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
+import j86.j86.java.lang.annotation.ElementType;
+import j86.j86.java.lang.annotation.Retention;
+import j86.j86.java.lang.annotation.RetentionPolicy;
+import j86.j86.java.lang.annotation.Target;
 
 /**
  * <p>An annotation expressing that objects and/or their fields are

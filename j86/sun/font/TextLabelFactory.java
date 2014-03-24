@@ -27,12 +27,12 @@
  * (C) Copyright IBM Corp. 1998-2003 All Rights Reserved
  */
 
-package sun.font;
+package j86.sun.font;
 
-import java.awt.Font;
+import j86.java.awt.Font;
 
-import java.awt.font.FontRenderContext;
-import java.text.Bidi;
+import j86.j86.java.awt.font.FontRenderContext;
+import j86.java.text.Bidi;
 
   /**
    * A factory for text labels.  Basically this just holds onto the stuff that

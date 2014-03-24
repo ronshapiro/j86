@@ -33,15 +33,15 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package java.util.concurrent.locks;
-import sun.misc.Unsafe;
+package j86.j86.j86.java.util.concurrent.locks;
+import j86.sun.misc.Unsafe;
 
 /**
  * Basic thread blocking primitives for creating locks and other
  * synchronization classes.
  *
  * <p>This class associates, with each thread that uses it, a permit
- * (in the sense of the {@link java.util.concurrent.Semaphore
+ * (in the sense of the {@link j86.j86.java.util.concurrent.Semaphore
  * Semaphore} class). A call to {@code park} will return immediately
  * if the permit is available, consuming it in the process; otherwise
  * it <em>may</em> block.  A call to {@code unpark} makes the permit
@@ -384,21 +384,21 @@ public class LockSupport {
             r ^= r >>> 17;
             r ^= r << 5;
         }
-        else if ((r = java.util.concurrent.ThreadLocalRandom.current().nextInt()) == 0)
+        else if ((r = j86.j86.java.util.concurrent.ThreadLocalRandom.current().nextInt()) == 0)
             r = 1; // avoid zero
         UNSAFE.putInt(t, SECONDARY, r);
         return r;
     }
 
     // Hotspot implementation via intrinsics API
-    private static final sun.misc.Unsafe UNSAFE;
+    private static final j86.sun.misc.Unsafe UNSAFE;
     private static final long parkBlockerOffset;
     private static final long SEED;
     private static final long PROBE;
     private static final long SECONDARY;
     static {
         try {
-            UNSAFE = sun.misc.Unsafe.getUnsafe();
+            UNSAFE = j86.sun.misc.Unsafe.getUnsafe();
             Class<?> tk = Thread.class;
             parkBlockerOffset = UNSAFE.objectFieldOffset
                 (tk.getDeclaredField("parkBlocker"));

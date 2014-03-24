@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.awt;
+package j86.java.awt;
 
-import java.util.Locale;
+import j86.java.util.Locale;
 
 /**
  * A set of attributes which control the output of a printed page.
@@ -42,7 +42,7 @@ import java.util.Locale;
  * has a public constructor. For example, to set the color state to
  * monochrome, use the following code:
  * <pre>
- * import java.awt.PageAttributes;
+ * import j86.java.awt.PageAttributes;
  *
  * public class MonochromeExample {
  *     public void setMonochrome(PageAttributes pageAttributes) {

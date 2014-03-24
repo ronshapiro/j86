@@ -23,12 +23,12 @@
  * questions.
  */
 
-package com.sun.rowset.internal;
+package j86.j86.com.sun.rowset.internal;
 
-import java.sql.*;
-import java.io.*;
-import java.lang.*;
-import java.util.*;
+import j86.java.sql.*;
+import j86.java.io.*;
+import j86.java.lang.*;
+import j86.java.util.*;
 
 /**
  * A class that keeps track of a row's values. A <code>Row</code> object

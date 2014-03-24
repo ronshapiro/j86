@@ -33,15 +33,15 @@
 /*
  * $Id: XMLSignature.java,v 1.10 2005/05/10 16:03:48 mullan Exp $
  */
-package javax.xml.crypto.dsig;
+package j86.j86.javax.xml.crypto.dsig;
 
-import javax.xml.crypto.KeySelector;
-import javax.xml.crypto.KeySelectorResult;
-import javax.xml.crypto.MarshalException;
-import javax.xml.crypto.XMLStructure;
-import javax.xml.crypto.dsig.keyinfo.KeyInfo;
-import java.security.Signature;
-import java.util.List;
+import j86.javax.xml.crypto.KeySelector;
+import j86.javax.xml.crypto.KeySelectorResult;
+import j86.javax.xml.crypto.MarshalException;
+import j86.javax.xml.crypto.XMLStructure;
+import j86.j86.j86.javax.xml.crypto.dsig.keyinfo.KeyInfo;
+import j86.java.security.Signature;
+import j86.java.util.List;
 
 /**
  * A representation of the XML <code>Signature</code> element as
@@ -73,7 +73,7 @@ import java.util.List;
  *
  * <p>Note that this class is named <code>XMLSignature</code> rather than
  * <code>Signature</code> to avoid naming clashes with the existing
- * {@link Signature java.security.Signature} class.
+ * {@link Signature j86.java.security.Signature} class.
  *
  * @see XMLSignatureFactory#newXMLSignature(SignedInfo, KeyInfo)
  * @see XMLSignatureFactory#newXMLSignature(SignedInfo, KeyInfo, List, String, String)
@@ -130,7 +130,7 @@ public interface XMLSignature extends XMLStructure {
     SignedInfo getSignedInfo();
 
     /**
-     * Returns an {@link java.util.Collections#unmodifiableList unmodifiable
+     * Returns an {@link j86.java.util.Collections#unmodifiableList unmodifiable
      * list} of {@link XMLObject}s contained in this <code>XMLSignature</code>.
      *
      * @return an unmodifiable list of <code>XMLObject</code>s (may be empty

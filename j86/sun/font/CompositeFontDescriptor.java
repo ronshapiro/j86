@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.font;
+package j86.sun.font;
 
 /**
  * Encapsulates the information that 2D needs to create a composite font,

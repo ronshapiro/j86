@@ -23,14 +23,14 @@
  * questions.
  */
 
-package java.util;
+package j86.java.util;
 
-import java.io.FilterOutputStream;
-import java.io.InputStream;
-import java.io.IOException;
-import java.io.OutputStream;
-import java.nio.ByteBuffer;
-import java.nio.charset.StandardCharsets;
+import j86.java.io.FilterOutputStream;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
+import j86.java.io.OutputStream;
+import j86.java.nio.ByteBuffer;
+import j86.j86.java.nio.charset.StandardCharsets;
 
 /**
  * This class consists exclusively of static methods for obtaining
@@ -67,7 +67,7 @@ import java.nio.charset.StandardCharsets;
  * </ul>
  *
  * <p> Unless otherwise noted, passing a {@code null} argument to a
- * method of this class will cause a {@link java.lang.NullPointerException
+ * method of this class will cause a {@link j86.java.lang.NullPointerException
  * NullPointerException} to be thrown.
  *
  * @author  Xueming Shen
@@ -181,7 +181,7 @@ public class Base64 {
      *
      * <p> Unless otherwise noted, passing a {@code null} argument to
      * a method of this class will cause a
-     * {@link java.lang.NullPointerException NullPointerException} to
+     * {@link j86.java.lang.NullPointerException NullPointerException} to
      * be thrown.
      *
      * @see     Decoder
@@ -299,7 +299,7 @@ public class Base64 {
          *
          * <p> This method first encodes all input bytes into a base64 encoded
          * byte array and then constructs a new String by using the encoded byte
-         * array and the {@link java.nio.charset.StandardCharsets#ISO_8859_1
+         * array and the {@link j86.j86.java.nio.charset.StandardCharsets#ISO_8859_1
          * ISO-8859-1} charset.
          *
          * <p> In other words, an invocation of this method has exactly the same
@@ -458,7 +458,7 @@ public class Base64 {
      *
      * <p> Unless otherwise noted, passing a {@code null} argument to
      * a method of this class will cause a
-     * {@link java.lang.NullPointerException NullPointerException} to
+     * {@link j86.java.lang.NullPointerException NullPointerException} to
      * be thrown.
      *
      * @see     Encoder

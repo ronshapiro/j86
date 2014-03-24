@@ -23,13 +23,13 @@
  * questions.
  */
 
-package sun.net.www.http;
+package j86.j86.j86.sun.net.www.http;
 
-import java.io.IOException;
-import java.io.NotSerializableException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.net.URL;
+import j86.java.io.IOException;
+import j86.java.io.NotSerializableException;
+import j86.java.util.ArrayList;
+import j86.java.util.HashMap;
+import j86.java.net.URL;
 
 /**
  * A class that implements a cache of idle Http connections for keep-alive
@@ -52,8 +52,8 @@ public class KeepAliveCache
     static int result = -1;
     static int getMaxConnections() {
         if (result == -1) {
-            result = java.security.AccessController.doPrivileged(
-                new sun.security.action.GetIntegerAction("http.maxConnections",
+            result = j86.java.security.AccessController.doPrivileged(
+                new j86.sun.security.action.GetIntegerAction("http.maxConnections",
                                                          MAX_CONNECTIONS))
                 .intValue();
             if (result <= 0)
@@ -92,8 +92,8 @@ public class KeepAliveCache
              * The robustness to get around this is in HttpClient.parseHTTP()
              */
             final KeepAliveCache cache = this;
-            java.security.AccessController.doPrivileged(
-                new java.security.PrivilegedAction<Void>() {
+            j86.java.security.AccessController.doPrivileged(
+                new j86.java.security.PrivilegedAction<Void>() {
                 public Void run() {
                    // We want to create the Keep-Alive-Timer in the
                     // system threadgroup
@@ -221,12 +221,12 @@ public class KeepAliveCache
     /*
      * Do not serialize this class!
      */
-    private void writeObject(java.io.ObjectOutputStream stream)
+    private void writeObject(j86.java.io.ObjectOutputStream stream)
     throws IOException {
         throw new NotSerializableException();
     }
 
-    private void readObject(java.io.ObjectInputStream stream)
+    private void readObject(j86.java.io.ObjectInputStream stream)
     throws IOException, ClassNotFoundException {
         throw new NotSerializableException();
     }
@@ -237,7 +237,7 @@ public class KeepAliveCache
  */
 
 
-class ClientVector extends java.util.Stack<KeepAliveEntry> {
+class ClientVector extends j86.java.util.Stack<KeepAliveEntry> {
     private static final long serialVersionUID = -8680532108106489459L;
 
     // sleep time in milliseconds, before cache clear
@@ -280,12 +280,12 @@ class ClientVector extends java.util.Stack<KeepAliveEntry> {
     /*
      * Do not serialize this class!
      */
-    private void writeObject(java.io.ObjectOutputStream stream)
+    private void writeObject(j86.java.io.ObjectOutputStream stream)
     throws IOException {
         throw new NotSerializableException();
     }
 
-    private void readObject(java.io.ObjectInputStream stream)
+    private void readObject(j86.java.io.ObjectInputStream stream)
     throws IOException, ClassNotFoundException {
         throw new NotSerializableException();
     }

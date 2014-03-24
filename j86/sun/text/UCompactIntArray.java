@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.text;
+package j86.sun.text;
 
 public final class UCompactIntArray implements Cloneable {
     /**

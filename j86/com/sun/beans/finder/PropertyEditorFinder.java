@@ -22,20 +22,20 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.beans.finder;
+package j86.j86.com.sun.beans.finder;
 
-import com.sun.beans.WeakCache;
+import j86.com.sun.beans.WeakCache;
 
-import java.beans.PropertyEditor;
+import j86.java.beans.PropertyEditor;
 
-import com.sun.beans.editors.BooleanEditor;
-import com.sun.beans.editors.ByteEditor;
-import com.sun.beans.editors.DoubleEditor;
-import com.sun.beans.editors.EnumEditor;
-import com.sun.beans.editors.FloatEditor;
-import com.sun.beans.editors.IntegerEditor;
-import com.sun.beans.editors.LongEditor;
-import com.sun.beans.editors.ShortEditor;
+import j86.j86.com.sun.beans.editors.BooleanEditor;
+import j86.j86.com.sun.beans.editors.ByteEditor;
+import j86.j86.com.sun.beans.editors.DoubleEditor;
+import j86.j86.com.sun.beans.editors.EnumEditor;
+import j86.j86.com.sun.beans.editors.FloatEditor;
+import j86.j86.com.sun.beans.editors.IntegerEditor;
+import j86.j86.com.sun.beans.editors.LongEditor;
+import j86.j86.com.sun.beans.editors.ShortEditor;
 
 /**
  * This is utility class that provides functionality
@@ -49,7 +49,7 @@ public final class PropertyEditorFinder
         extends InstanceFinder<PropertyEditor> {
 
     private static final String DEFAULT = "sun.beans.editors";
-    private static final String DEFAULT_NEW = "com.sun.beans.editors";
+    private static final String DEFAULT_NEW = "j86.j86.com.sun.beans.editors";
 
     private final WeakCache<Class<?>, Class<?>> registry;
 

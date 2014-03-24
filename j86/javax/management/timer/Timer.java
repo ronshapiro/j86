@@ -23,26 +23,26 @@
  * questions.
  */
 
-package javax.management.timer;
+package j86.j86.javax.management.timer;
 
-import static com.sun.jmx.defaults.JmxProperties.TIMER_LOGGER;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
-import java.util.TreeSet;
-import java.util.Vector;
-import java.util.logging.Level;
+import static j86.com.sun.jmx.defaults.JmxProperties.TIMER_LOGGER;
+import j86.java.util.ArrayList;
+import j86.java.util.Date;
+import j86.java.util.HashMap;
+import j86.java.util.Map;
+import j86.java.util.Set;
+import j86.java.util.TreeSet;
+import j86.java.util.Vector;
+import j86.j86.java.util.logging.Level;
 
 // jmx imports
 //
-import javax.management.InstanceNotFoundException;
-import javax.management.MBeanNotificationInfo;
-import javax.management.MBeanRegistration;
-import javax.management.MBeanServer;
-import javax.management.NotificationBroadcasterSupport;
-import javax.management.ObjectName;
+import j86.javax.management.InstanceNotFoundException;
+import j86.javax.management.MBeanNotificationInfo;
+import j86.javax.management.MBeanRegistration;
+import j86.javax.management.MBeanServer;
+import j86.javax.management.NotificationBroadcasterSupport;
+import j86.javax.management.ObjectName;
 
 /**
  *
@@ -67,7 +67,7 @@ import javax.management.ObjectName;
  * if their host has a different system date.
  * To avoid such problems, synchronize the system date of all host machines where timing is needed.
  * <LI>The default behavior for periodic notifications is <i>fixed-delay execution</i>, as
- *     specified in {@link java.util.Timer}. In order to use <i>fixed-rate execution</i>, use the
+ *     specified in {@link j86.java.util.Timer}. In order to use <i>fixed-rate execution</i>, use the
  *     overloaded {@link #addNotification(String, String, Object, Date, long, long, boolean)} method.
  * <LI>Notification listeners are potentially all executed in the same
  * thread.  Therefore, they should execute rapidly to avoid holding up
@@ -164,7 +164,7 @@ public class Timer extends NotificationBroadcasterSupport
      */
     volatile private int counterID = 0;
 
-    private java.util.Timer timer;
+    private j86.java.util.Timer timer;
 
     /*
      * ------------------------------------------
@@ -195,10 +195,10 @@ public class Timer extends NotificationBroadcasterSupport
      *
      * @return The name of the timer MBean registered.
      *
-     * @exception java.lang.Exception
+     * @exception j86.java.lang.Exception
      */
     public ObjectName preRegister(MBeanServer server, ObjectName name)
-        throws java.lang.Exception {
+        throws j86.java.lang.Exception {
         return name;
     }
 
@@ -217,9 +217,9 @@ public class Timer extends NotificationBroadcasterSupport
      * <P>
      * Stops the timer.
      *
-     * @exception java.lang.Exception
+     * @exception j86.java.lang.Exception
      */
-    public void preDeregister() throws java.lang.Exception {
+    public void preDeregister() throws j86.java.lang.Exception {
 
         TIMER_LOGGER.logp(Level.FINER, Timer.class.getName(),
                 "preDeregister", "stop the timer");
@@ -280,7 +280,7 @@ public class Timer extends NotificationBroadcasterSupport
         //
         if (isActive == false) {
 
-            timer = new java.util.Timer();
+            timer = new j86.java.util.Timer();
 
             TimerAlarmClock alarmClock;
             Date date;
@@ -393,7 +393,7 @@ public class Timer extends NotificationBroadcasterSupport
      * its associated date, period and number of occurrences cannot be updated.
      * <P>
      * In the case of a periodic notification, the value of parameter <i>fixedRate</i> is used to
-     * specify the execution scheme, as specified in {@link java.util.Timer}.
+     * specify the execution scheme, as specified in {@link j86.java.util.Timer}.
      *
      * @param type The timer notification type.
      * @param message The timer notification detailed message.
@@ -409,7 +409,7 @@ public class Timer extends NotificationBroadcasterSupport
      *
      * @return The identifier of the new created timer notification.
      *
-     * @exception java.lang.IllegalArgumentException The date is {@code null} or
+     * @exception j86.java.lang.IllegalArgumentException The date is {@code null} or
      * the period or the number of occurrences is negative.
      *
      * @see #addNotification(String, String, Object, Date, long, long)
@@ -421,10 +421,10 @@ public class Timer extends NotificationBroadcasterSupport
 
     public synchronized Integer addNotification(String type, String message, Object userData,
                                                 Date date, long period, long nbOccurences, boolean fixedRate)
-        throws java.lang.IllegalArgumentException {
+        throws j86.java.lang.IllegalArgumentException {
 
         if (date == null) {
-            throw new java.lang.IllegalArgumentException("Timer notification date cannot be null.");
+            throw new j86.java.lang.IllegalArgumentException("Timer notification date cannot be null.");
         }
 
         // Check that all the timer notification attributes are valid.
@@ -434,7 +434,7 @@ public class Timer extends NotificationBroadcasterSupport
         // Check that the period and the nbOccurences are POSITIVE VALUES.
         //
         if ((period < 0) || (nbOccurences < 0)) {
-            throw new java.lang.IllegalArgumentException("Negative values for the periodicity");
+            throw new j86.java.lang.IllegalArgumentException("Negative values for the periodicity");
         }
 
         Date currentDate = new Date();
@@ -542,7 +542,7 @@ public class Timer extends NotificationBroadcasterSupport
      * its associated date, period and number of occurrences cannot be updated.
      * <P>
      * In the case of a periodic notification, uses a <i>fixed-delay</i> execution scheme, as specified in
-     * {@link java.util.Timer}. In order to use a <i>fixed-rate</i> execution scheme, use
+     * {@link j86.java.util.Timer}. In order to use a <i>fixed-rate</i> execution scheme, use
      * {@link #addNotification(String, String, Object, Date, long, long, boolean)} instead.
      *
      * @param type The timer notification type.
@@ -554,7 +554,7 @@ public class Timer extends NotificationBroadcasterSupport
      *
      * @return The identifier of the new created timer notification.
      *
-     * @exception java.lang.IllegalArgumentException The date is {@code null} or
+     * @exception j86.java.lang.IllegalArgumentException The date is {@code null} or
      * the period or the number of occurrences is negative.
      *
      * @see #addNotification(String, String, Object, Date, long, long, boolean)
@@ -566,7 +566,7 @@ public class Timer extends NotificationBroadcasterSupport
 
     public synchronized Integer addNotification(String type, String message, Object userData,
                                                 Date date, long period, long nbOccurences)
-        throws java.lang.IllegalArgumentException {
+        throws j86.java.lang.IllegalArgumentException {
 
       return addNotification(type, message, userData, date, period, nbOccurences, false);
     }
@@ -577,7 +577,7 @@ public class Timer extends NotificationBroadcasterSupport
      * and period and a null number of occurrences.
      * <P>
      * The timer notification will repeat continuously using the timer period using a <i>fixed-delay</i>
-     * execution scheme, as specified in {@link java.util.Timer}. In order to use a <i>fixed-rate</i>
+     * execution scheme, as specified in {@link j86.java.util.Timer}. In order to use a <i>fixed-rate</i>
      * execution scheme, use {@link #addNotification(String, String, Object, Date, long, long,
      * boolean)} instead.
      * <P>
@@ -594,7 +594,7 @@ public class Timer extends NotificationBroadcasterSupport
      *
      * @return The identifier of the new created timer notification.
      *
-     * @exception java.lang.IllegalArgumentException The date is {@code null} or
+     * @exception j86.java.lang.IllegalArgumentException The date is {@code null} or
      * the period is negative.
      */
 // NPCTE fix for bugId 4464388, esc 0,  MR , to be added after modification of jmx spec
@@ -604,7 +604,7 @@ public class Timer extends NotificationBroadcasterSupport
 
     public synchronized Integer addNotification(String type, String message, Object userData,
                                                 Date date, long period)
-        throws java.lang.IllegalArgumentException {
+        throws j86.java.lang.IllegalArgumentException {
 
         return (addNotification(type, message, userData, date, period, 0));
     }
@@ -627,15 +627,15 @@ public class Timer extends NotificationBroadcasterSupport
      *
      * @return The identifier of the new created timer notification.
      *
-     * @exception java.lang.IllegalArgumentException The date is {@code null}.
+     * @exception j86.java.lang.IllegalArgumentException The date is {@code null}.
      */
 // NPCTE fix for bugId 4464388, esc 0,  MR, to be added after modification of jmx spec
 //  public synchronized Integer addNotification(String type, String message, Serializable userData, Date date)
-//      throws java.lang.IllegalArgumentException {
+//      throws j86.java.lang.IllegalArgumentException {
 // end of NPCTE fix for bugId 4464388
 
     public synchronized Integer addNotification(String type, String message, Object userData, Date date)
-        throws java.lang.IllegalArgumentException {
+        throws j86.java.lang.IllegalArgumentException {
 
 
         return (addNotification(type, message, userData, date, 0, 0));
@@ -1090,7 +1090,7 @@ public class Timer extends NotificationBroadcasterSupport
             if ((nbOccurences.longValue() == 0) || (nbOccurences.longValue() > 1)) {
 
                 date.setTime(date.getTime() + period.longValue());
-                obj[TIMER_NB_OCCUR_INDEX] = Long.valueOf(java.lang.Math.max(0L, (nbOccurences.longValue() - 1)));
+                obj[TIMER_NB_OCCUR_INDEX] = Long.valueOf(j86.java.lang.Math.max(0L, (nbOccurences.longValue() - 1)));
                 nbOccurences = (Long)obj[TIMER_NB_OCCUR_INDEX];
 
                 if (isActive == true) {

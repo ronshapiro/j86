@@ -23,12 +23,12 @@
  * questions.
  */
 
-package com.sun.crypto.provider;
+package j86.com.sun.crypto.provider;
 
-import java.security.*;
-import java.security.spec.*;
-import javax.crypto.*;
-import javax.crypto.spec.*;
+import j86.java.security.*;
+import j86.j86.java.security.spec.*;
+import j86.javax.crypto.*;
+import j86.j86.javax.crypto.spec.*;
 
 /**
  * This class represents password-based encryption as defined by the PKCS #5
@@ -39,7 +39,7 @@ import javax.crypto.spec.*;
  * @author Jan Luehe
  *
  *
- * @see javax.crypto.Cipher
+ * @see j86.javax.crypto.Cipher
  */
 abstract class PBES2Core extends CipherSpi {
 
@@ -182,13 +182,13 @@ abstract class PBES2Core extends CipherSpi {
         // TBD: consolidate the salt, ic and IV parameter checks below
 
         // Extract salt and iteration count from the key, if present
-        if (key instanceof javax.crypto.interfaces.PBEKey) {
-            salt = ((javax.crypto.interfaces.PBEKey)key).getSalt();
+        if (key instanceof j86.j86.javax.crypto.interfaces.PBEKey) {
+            salt = ((j86.j86.javax.crypto.interfaces.PBEKey)key).getSalt();
             if (salt != null && salt.length < 8) {
                 throw new InvalidAlgorithmParameterException(
                     "Salt must be at least 8 bytes long");
             }
-            iCount = ((javax.crypto.interfaces.PBEKey)key).getIterationCount();
+            iCount = ((j86.j86.javax.crypto.interfaces.PBEKey)key).getIterationCount();
             if (iCount == 0) {
                 iCount = DEFAULT_COUNT;
             } else if (iCount < 0) {
@@ -266,8 +266,8 @@ abstract class PBES2Core extends CipherSpi {
             new PBEKeySpec(passwdChars, salt, iCount, blkSize * 8);
             // password char[] was cloned in PBEKeySpec constructor,
             // so we can zero it out here
-        java.util.Arrays.fill(passwdChars, ' ');
-        java.util.Arrays.fill(passwdBytes, (byte)0x00);
+        j86.java.util.Arrays.fill(passwdChars, ' ');
+        j86.java.util.Arrays.fill(passwdBytes, (byte)0x00);
 
         SecretKey s = null;
 

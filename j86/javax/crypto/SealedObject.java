@@ -23,15 +23,15 @@
  * questions.
  */
 
-package javax.crypto;
+package j86.javax.crypto;
 
-import java.io.*;
-import java.security.AlgorithmParameters;
-import java.security.Key;
-import java.security.InvalidKeyException;
-import java.security.InvalidAlgorithmParameterException;
-import java.security.NoSuchAlgorithmException;
-import java.security.NoSuchProviderException;
+import j86.java.io.*;
+import j86.java.security.AlgorithmParameters;
+import j86.java.security.Key;
+import j86.java.security.InvalidKeyException;
+import j86.java.security.InvalidAlgorithmParameterException;
+import j86.java.security.NoSuchAlgorithmException;
+import j86.java.security.NoSuchProviderException;
 
 /**
  * This class enables a programmer to create an object and protect its
@@ -54,7 +54,7 @@ import java.security.NoSuchProviderException;
  *
  * <ul>
  *
- * <li>by using the {@link #getObject(javax.crypto.Cipher) getObject}
+ * <li>by using the {@link #getObject(j86.javax.crypto.Cipher) getObject}
  * method that takes a <code>Cipher</code> object.
  *
  * <p> This method requires a fully initialized <code>Cipher</code> object,
@@ -69,7 +69,7 @@ import java.security.NoSuchProviderException;
  * another party who then unseals the sealed object.
  *
  * <li>by using one of the
- * {@link #getObject(java.security.Key) getObject} methods
+ * {@link #getObject(j86.java.security.Key) getObject} methods
  * that take a <code>Key</code> object.
  *
  * <p> In this approach, the <code>getObject</code> method creates a cipher
@@ -441,8 +441,8 @@ public class SealedObject implements Serializable {
      * @param s the object input stream.
      * @exception NullPointerException if s is null.
      */
-    private void readObject(java.io.ObjectInputStream s)
-        throws java.io.IOException, ClassNotFoundException
+    private void readObject(j86.java.io.ObjectInputStream s)
+        throws j86.java.io.IOException, ClassNotFoundException
     {
         s.defaultReadObject();
         if (encryptedContent != null)

@@ -59,28 +59,28 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package java.time.zone;
+package j86.j86.java.time.zone;
 
-import java.io.DataInput;
-import java.io.DataOutput;
-import java.io.IOException;
-import java.io.InvalidObjectException;
-import java.io.ObjectInputStream;
-import java.io.Serializable;
-import java.time.Duration;
-import java.time.Instant;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.ZoneId;
-import java.time.ZoneOffset;
-import java.time.Year;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-import java.util.Objects;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentMap;
+import j86.java.io.DataInput;
+import j86.java.io.DataOutput;
+import j86.java.io.IOException;
+import j86.java.io.InvalidObjectException;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.Serializable;
+import j86.java.time.Duration;
+import j86.java.time.Instant;
+import j86.java.time.LocalDate;
+import j86.java.time.LocalDateTime;
+import j86.java.time.ZoneId;
+import j86.java.time.ZoneOffset;
+import j86.java.time.Year;
+import j86.java.util.ArrayList;
+import j86.java.util.Arrays;
+import j86.java.util.Collections;
+import j86.java.util.List;
+import j86.java.util.Objects;
+import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.j86.java.util.concurrent.ConcurrentMap;
 
 /**
  * The rules defining how the zone offset varies for a single time-zone.
@@ -327,7 +327,7 @@ public final class ZoneRules implements Serializable {
 
     /**
      * Writes the object using a
-     * <a href="../../../serialized-form.html#java.time.zone.Ser">dedicated serialized form</a>.
+     * <a href="../../../serialized-form.html#j86.j86.java.time.zone.Ser">dedicated serialized form</a>.
      * @serialData
      * <pre style="font-size:1.0em">{@code
      *
@@ -769,8 +769,8 @@ public final class ZoneRules implements Serializable {
      * Time-zones are second-based, so the nanosecond part of the duration will be zero.
      * <p>
      * This default implementation calculates the duration from the
-     * {@link #getOffset(java.time.Instant) actual} and
-     * {@link #getStandardOffset(java.time.Instant) standard} offsets.
+     * {@link #getOffset(j86.java.time.Instant) actual} and
+     * {@link #getStandardOffset(j86.java.time.Instant) standard} offsets.
      *
      * @param instant  the instant to find the daylight savings for, not null, but null
      *  may be ignored if the rules have a single offset for all instants
@@ -792,8 +792,8 @@ public final class ZoneRules implements Serializable {
      * for the specified instant.
      * If they are not, it is assumed that daylight savings is in operation.
      * <p>
-     * This default implementation compares the {@link #getOffset(java.time.Instant) actual}
-     * and {@link #getStandardOffset(java.time.Instant) standard} offsets.
+     * This default implementation compares the {@link #getOffset(j86.java.time.Instant) actual}
+     * and {@link #getStandardOffset(j86.java.time.Instant) standard} offsets.
      *
      * @param instant  the instant to find the offset information for, not null, but null
      *  may be ignored if the rules have a single offset for all instants
@@ -809,7 +809,7 @@ public final class ZoneRules implements Serializable {
      * To be valid, the local date-time must not be in a gap and the offset
      * must match one of the valid offsets.
      * <p>
-     * This default implementation checks if {@link #getValidOffsets(java.time.LocalDateTime)}
+     * This default implementation checks if {@link #getValidOffsets(j86.java.time.LocalDateTime)}
      * contains the specified offset.
      *
      * @param localDateTime  the date-time to check, not null, but null

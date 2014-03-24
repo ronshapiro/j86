@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.util.calendar;
+package j86.j86.sun.util.calendar;
 
-import java.util.Locale;
-import java.util.TimeZone;
+import j86.java.util.Locale;
+import j86.java.util.TimeZone;
 
 /**
  * The <code>AbstractCalendar</code> class provides a framework for
@@ -131,7 +131,7 @@ public abstract class AbstractCalendar extends CalendarSystem {
             }
 
             // We need to calculate the given millis and time zone
-            // offset separately for java.util.GregorianCalendar
+            // offset separately for j86.java.util.GregorianCalendar
             // compatibility. (i.e., millis + zoneOffset could cause
             // overflow or underflow, which must be avoided.) Usually
             // days should be 0 and ms is in the range of -13:00 to
@@ -315,7 +315,7 @@ public abstract class AbstractCalendar extends CalendarSystem {
      * @param dayOfWeek the day of week
      * @return the calculated date
      */
-    // public for java.util.GregorianCalendar
+    // public for j86.java.util.GregorianCalendar
     public static long getDayOfWeekDateOnOrBefore(long fixedDate, int dayOfWeek) {
         long fd = fixedDate - (dayOfWeek - 1);
         if (fd >= 0) {

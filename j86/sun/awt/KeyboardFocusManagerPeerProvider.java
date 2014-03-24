@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.awt;
+package j86.sun.awt;
 
-import java.awt.peer.KeyboardFocusManagerPeer;
+import j86.j86.java.awt.peer.KeyboardFocusManagerPeer;
 
 /**
  * {@link KeyboardFocusManagerPeerProvider} is required to be implemented by
- * the currently used {@link java.awt.Toolkit} instance. In order to initialize
- * {@link java.awt.KeyboardFocusManager}, a singleton instance of {@link KeyboardFocusManagerPeer}
+ * the currently used {@link j86.java.awt.Toolkit} instance. In order to initialize
+ * {@link j86.java.awt.KeyboardFocusManager}, a singleton instance of {@link KeyboardFocusManagerPeer}
  * is needed. To obtain that instance, the {@link #getKeyboardFocusManagerPeer}
  * method of the current toolkit is called.
  */

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package com.sun.imageio.plugins.bmp;
+package j86.com.sun.imageio.plugins.bmp;
 
 public interface BMPConstants {
     // bmp versions

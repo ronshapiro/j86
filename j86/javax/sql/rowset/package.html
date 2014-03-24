@@ -29,7 +29,7 @@ or visit www.oracle.com if you need additional information or have any
 questions.
 
 -->
-  <title>javax.sql.rowset Package</title>
+  <title>j86.j86.javax.sql.rowset Package</title>
 </head>
   <body bgcolor="#ffffff">
 
@@ -90,7 +90,7 @@ disconnected <code>RowSet</code> object and the originating data source.
 Typically a <code>SyncProvider</code> implementation relies upon a JDBC
 driver to obtain connectivity to a particular data source.
 Further details on this mechanism are discussed in the <a
-href="spi/package-summary.html"><code>javax.sql.rowset.spi</code></a> package
+href="spi/package-summary.html"><code>j86.j86.j86.javax.sql.rowset.spi</code></a> package
 specification.
 <p>
 <li><a href="WebRowSet.html"><b><code>WebRowSet</code></b></a> - A 
@@ -144,7 +144,7 @@ Test Compatibility Kit (TCK) can be licensed to ensure compatibility with the
 specification. The following paragraphs outline a number of starting points for
 implementers of the standard JDBC <code>RowSet</code> definitions. Implementers
 should also consult the <i>Implementer's Guide</i> in the <a
-href="spi/package-summary.html">javax.sql.rowset.spi</a> package for guidelines
+href="spi/package-summary.html">j86.j86.j86.javax.sql.rowset.spi</a> package for guidelines
 on <a href="spi/SyncProvider.html"><code>SyncProvider</code></a> implementations.
 <p>
 <ul>
@@ -167,7 +167,7 @@ The <tt>BaseRowSet</tt> abstract class provides any <tt>RowSet</tt> implementati
 with its base functionality, including property manipulation and event notification
 that is fully compliant with <a href="http://java.sun.com/products/javabeans">JavaBeans</a> 
 component requirements. As an example, all implementations provided in the
-reference implementations (contained in the <tt>com.sun.rowset</tt> package) use
+reference implementations (contained in the <tt>j86.com.sun.rowset</tt> package) use
 the <tt>BaseRowSet</tt> class as a basis for their implementations.            
 <P>
 The following table illustrates the features that the <code>BaseRowSet</code>
@@ -186,7 +186,7 @@ abstract class provides.
               </td>
               <td valign="top">Provides standard JavaBeans property manipulation
   mechanisms to allow applications to get and set <code>RowSet</code> command and
-property  values. Refer to the   documentation of the <tt>javax.sql.RowSet</tt>
+property  values. Refer to the   documentation of the <tt>j86.javax.sql.RowSet</tt>
 interface  (available in the JDBC 3.0 specification) for more details on
 the standard  <code>RowSet</code> properties.<br>
               </td>
@@ -195,7 +195,7 @@ the standard  <code>RowSet</code> properties.<br>
               <td valign="top">Event notification<br>
               </td>
               <td valign="top">Provides standard JavaBeans event notifications
-  to registered event listeners. Refer to the documentation of <tt>javax.sql.RowSetEvent
+  to registered event listeners. Refer to the documentation of <tt>j86.javax.sql.RowSetEvent
            </tt> interface (available in the JDBC 3.0 specification) for
 more  details on how  to register and handle standard RowSet events generated
 by  compliant implementations.<br>
@@ -261,7 +261,7 @@ implementation but are not required to do so.
 <p>
 The <code>RowSetWarning</code> class provides warnings that can be set
 on <code>RowSet</code> implementations.
-Similar to <a href="../../../java/sql/SQLWarning.html">SQLWarning</a> objects,
+Similar to <a href="../../../j86.java.sql/SQLWarning.html">SQLWarning</a> objects,
 <code>RowSetWarning</code>  objects are silently chained to the object whose method
 caused the warning to be thrown. All <code>RowSet</code> implementations <b>should</b>  
 ensure that this chaining occurs if a warning is generated and also ensure that the

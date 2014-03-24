@@ -36,21 +36,21 @@
  *
  */
 
-package java.util;
+package j86.java.util;
 
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.time.Instant;
-import java.time.ZonedDateTime;
-import java.time.temporal.ChronoField;
-import sun.util.calendar.BaseCalendar;
-import sun.util.calendar.CalendarDate;
-import sun.util.calendar.CalendarSystem;
-import sun.util.calendar.CalendarUtils;
-import sun.util.calendar.Era;
-import sun.util.calendar.Gregorian;
-import sun.util.calendar.JulianCalendar;
-import sun.util.calendar.ZoneInfo;
+import j86.java.io.IOException;
+import j86.java.io.ObjectInputStream;
+import j86.java.time.Instant;
+import j86.java.time.ZonedDateTime;
+import j86.j86.java.time.temporal.ChronoField;
+import j86.j86.sun.util.calendar.BaseCalendar;
+import j86.j86.sun.util.calendar.CalendarDate;
+import j86.j86.sun.util.calendar.CalendarSystem;
+import j86.j86.sun.util.calendar.CalendarUtils;
+import j86.j86.sun.util.calendar.Era;
+import j86.j86.sun.util.calendar.Gregorian;
+import j86.j86.sun.util.calendar.JulianCalendar;
+import j86.j86.sun.util.calendar.ZoneInfo;
 
 /**
  * <code>GregorianCalendar</code> is a concrete subclass of
@@ -332,7 +332,7 @@ public class GregorianCalendar extends Calendar {
      * Implementation Notes
      *
      * The epoch is the number of days or milliseconds from some defined
-     * starting point. The epoch for java.util.Date is used here; that is,
+     * starting point. The epoch for j86.java.util.Date is used here; that is,
      * milliseconds from January 1, 1970 (Gregorian), midnight UTC.  Other
      * epochs which are used are January 1, year 1 (Gregorian), which is day 1
      * of the Gregorian calendar, and December 30, year 0 (Gregorian), which is
@@ -498,7 +498,7 @@ public class GregorianCalendar extends Calendar {
     @SuppressWarnings("FieldNameHidesFieldInSuperclass")
     static final long serialVersionUID = -8125100834729963327L;
 
-    // Reference to the sun.util.calendar.Gregorian instance (singleton).
+    // Reference to the j86.j86.sun.util.calendar.Gregorian instance (singleton).
     private static final Gregorian gcal =
                                 CalendarSystem.getGregorianCalendar();
 
@@ -545,7 +545,7 @@ public class GregorianCalendar extends Calendar {
     private transient int gregorianCutoverYearJulian = 1582;
 
     /**
-     * gdate always has a sun.util.calendar.Gregorian.Date instance to
+     * gdate always has a j86.j86.sun.util.calendar.Gregorian.Date instance to
      * avoid overhead of creating it. The assumption is that most
      * applications will need only Gregorian calendar calculations.
      */

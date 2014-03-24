@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.awt.image;
+package j86.j86.j86.sun.awt.image;
 
-import java.awt.GraphicsConfiguration;
-import java.awt.GraphicsEnvironment;
-import java.awt.ImageCapabilities;
-import java.awt.image.BufferedImage;
-import sun.java2d.SurfaceData;
-import sun.java2d.loops.CompositeType;
+import j86.java.awt.GraphicsConfiguration;
+import j86.java.awt.GraphicsEnvironment;
+import j86.java.awt.ImageCapabilities;
+import j86.j86.j86.java.awt.image.BufferedImage;
+import j86.sun.java2d.SurfaceData;
+import j86.j86.sun.java2d.loops.CompositeType;
 
 /**
  * This SurfaceManager variant manages the default (software) surface of a

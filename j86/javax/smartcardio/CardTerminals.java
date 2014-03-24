@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.smartcardio;
+package j86.javax.smartcardio;
 
-import java.util.*;
+import j86.java.util.*;
 
 /**
  * The set of terminals supported by a TerminalFactory.

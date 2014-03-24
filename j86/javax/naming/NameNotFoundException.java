@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.naming;
+package j86.javax.naming;
 
 /**
   * This exception is thrown when a component of the name cannot be resolved
@@ -44,7 +44,7 @@ public class NameNotFoundException extends NamingException {
      *
      * @param   explanation     Possibly null additional detail about
      *                          this exception.
-     * @see java.lang.Throwable#getMessage
+     * @see j86.java.lang.Throwable#getMessage
      */
     public NameNotFoundException(String explanation) {
         super(explanation);

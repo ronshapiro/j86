@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.tools.jconsole.inspector;
+package j86.j86.sun.tools.jconsole.inspector;
 
-import java.awt.Image;
-import javax.swing.Icon;
-import javax.swing.ImageIcon;
-import sun.tools.jconsole.JConsole;
+import j86.java.awt.Image;
+import j86.javax.swing.Icon;
+import j86.javax.swing.ImageIcon;
+import j86.sun.tools.jconsole.JConsole;
 
 public class IconManager {
 

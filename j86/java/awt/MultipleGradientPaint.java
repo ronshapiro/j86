@@ -23,12 +23,12 @@
  * questions.
  */
 
-package java.awt;
+package j86.java.awt;
 
-import java.awt.geom.AffineTransform;
-import java.awt.image.ColorModel;
-import java.lang.ref.SoftReference;
-import java.util.Arrays;
+import j86.j86.java.awt.geom.AffineTransform;
+import j86.j86.j86.java.awt.image.ColorModel;
+import j86.j86.java.lang.ref.SoftReference;
+import j86.java.util.Arrays;
 
 /**
  * This is the superclass for Paints which use a multiple color
@@ -303,7 +303,7 @@ public abstract class MultipleGradientPaint implements Paint {
      *         {@code Paint} object are opaque,
      *         {@code TRANSLUCENT} if at least one of the
      *         colors used by this {@code Paint} object is not opaque.
-     * @see java.awt.Transparency
+     * @see j86.java.awt.Transparency
      */
     public final int getTransparency() {
         return transparency;

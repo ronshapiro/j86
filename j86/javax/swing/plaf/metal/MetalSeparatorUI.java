@@ -23,16 +23,16 @@
  * questions.
  */
 
-package javax.swing.plaf.metal;
+package j86.j86.j86.javax.swing.plaf.metal;
 
-import javax.swing.*;
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.Graphics;
-import java.awt.Insets;
-import java.awt.Rectangle;
-import javax.swing.plaf.*;
-import javax.swing.plaf.basic.BasicSeparatorUI;
+import j86.javax.swing.*;
+import j86.java.awt.Color;
+import j86.java.awt.Dimension;
+import j86.java.awt.Graphics;
+import j86.java.awt.Insets;
+import j86.java.awt.Rectangle;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.j86.javax.swing.plaf.basic.BasicSeparatorUI;
 
 
 /**
@@ -45,8 +45,8 @@ import javax.swing.plaf.basic.BasicSeparatorUI;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @author Jeff Shapiro
  */

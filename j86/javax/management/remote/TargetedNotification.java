@@ -24,13 +24,13 @@
  */
 
 
-package javax.management.remote;
+package j86.j86.javax.management.remote;
 
-import java.io.IOException;
-import java.io.InvalidObjectException;
-import java.io.ObjectInputStream;
-import java.io.Serializable;
-import javax.management.Notification;
+import j86.java.io.IOException;
+import j86.java.io.InvalidObjectException;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.Serializable;
+import j86.javax.management.Notification;
 
 /**
  * <p>A (Notification, Listener ID) pair.</p>

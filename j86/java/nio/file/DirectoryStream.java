@@ -23,11 +23,11 @@
  * questions.
  */
 
-package java.nio.file;
+package j86.j86.java.nio.file;
 
-import java.util.Iterator;
-import java.io.Closeable;
-import java.io.IOException;
+import j86.java.util.Iterator;
+import j86.java.io.Closeable;
+import j86.java.io.IOException;
 
 /**
  * An object to iterate over the entries in a directory. A directory stream

@@ -23,18 +23,18 @@
  * questions.
  */
 
-package javax.swing;
+package j86.javax.swing;
 
-import java.util.Vector;
-import java.util.Enumeration;
+import j86.java.util.Vector;
+import j86.java.util.Enumeration;
 
-import javax.swing.event.*;
+import j86.j86.javax.swing.event.*;
 
 
 /**
- * This class loosely implements the <code>java.util.Vector</code>
+ * This class loosely implements the <code>j86.java.util.Vector</code>
  * API, in that it implements the 1.1.x version of
- * <code>java.util.Vector</code>, has no collection class support,
+ * <code>j86.java.util.Vector</code>, has no collection class support,
  * and notifies the <code>ListDataListener</code>s when changes occur.
  * Presently it delegates to a <code>Vector</code>,
  * in a future release it will be a real Collection implementation.
@@ -45,8 +45,8 @@ import javax.swing.event.*;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @param <E> the type of the elements of this model
  *

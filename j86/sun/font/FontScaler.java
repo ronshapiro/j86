@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.font;
+package j86.sun.font;
 
-import java.awt.geom.GeneralPath;
-import java.awt.geom.Point2D;
-import java.awt.geom.Rectangle2D;
-import java.lang.ref.WeakReference;
-import java.lang.reflect.Constructor;
+import j86.j86.java.awt.geom.GeneralPath;
+import j86.j86.java.awt.geom.Point2D;
+import j86.j86.java.awt.geom.Rectangle2D;
+import j86.j86.java.lang.ref.WeakReference;
+import j86.j86.j86.java.lang.reflect.Constructor;
 
-import sun.java2d.Disposer;
-import sun.java2d.DisposerRecord;
+import j86.sun.java2d.Disposer;
+import j86.sun.java2d.DisposerRecord;
 
 /* FontScaler is "internal interface" to font rasterizer library.
  *
@@ -95,9 +95,9 @@ public abstract class FontScaler implements DisposerRecord {
 
         try {
             if (FontUtilities.isOpenJDK) {
-                scalerClass = Class.forName("sun.font.FreetypeFontScaler");
+                scalerClass = Class.forName("j86.sun.font.FreetypeFontScaler");
             } else {
-                scalerClass = Class.forName("sun.font.T2KFontScaler");
+                scalerClass = Class.forName("j86.sun.font.T2KFontScaler");
             }
         } catch (ClassNotFoundException e) {
                 scalerClass = NullFontScaler.class;

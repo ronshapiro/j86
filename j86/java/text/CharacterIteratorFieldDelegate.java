@@ -22,9 +22,9 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.text;
+package j86.java.text;
 
-import java.util.ArrayList;
+import j86.java.util.ArrayList;
 
 /**
  * CharacterIteratorFieldDelegate combines the notifications from a Format

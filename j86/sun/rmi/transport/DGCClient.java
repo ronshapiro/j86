@@ -22,29 +22,29 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.rmi.transport;
+package j86.sun.rmi.transport;
 
-import java.lang.ref.PhantomReference;
-import java.lang.ref.ReferenceQueue;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.rmi.ConnectException;
-import java.rmi.RemoteException;
-import java.rmi.dgc.DGC;
-import java.rmi.dgc.Lease;
-import java.rmi.dgc.VMID;
-import java.rmi.server.ObjID;
-import sun.misc.GC;
-import sun.rmi.runtime.NewThreadAction;
-import sun.rmi.server.UnicastRef;
-import sun.rmi.server.Util;
-import sun.security.action.GetLongAction;
+import j86.j86.java.lang.ref.PhantomReference;
+import j86.j86.java.lang.ref.ReferenceQueue;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.util.HashMap;
+import j86.java.util.HashSet;
+import j86.java.util.Iterator;
+import j86.java.util.List;
+import j86.java.util.Map;
+import j86.java.util.Set;
+import j86.java.rmi.ConnectException;
+import j86.java.rmi.RemoteException;
+import j86.j86.java.rmi.dgc.DGC;
+import j86.j86.java.rmi.dgc.Lease;
+import j86.j86.java.rmi.dgc.VMID;
+import j86.j86.java.rmi.server.ObjID;
+import j86.sun.misc.GC;
+import j86.sun.rmi.runtime.NewThreadAction;
+import j86.sun.rmi.server.UnicastRef;
+import j86.sun.rmi.server.Util;
+import j86.sun.security.action.GetLongAction;
 
 /**
  * DGCClient implements the client-side of the RMI distributed garbage
@@ -70,7 +70,7 @@ import sun.security.action.GetLongAction;
  * collector, indicating that the server no longer needs to keep the
  * remote object alive for this client.
  *
- * @see java.rmi.dgc.DGC, sun.rmi.transport.DGCImpl
+ * @see j86.j86.java.rmi.dgc.DGC, j86.sun.rmi.transport.DGCImpl
  *
  * @author  Ann Wollrath
  * @author  Peter Jones
@@ -86,7 +86,7 @@ final class DGCClient {
     /** lease duration to request (usually ignored by server) */
     private static final long leaseValue =              // default 10 minutes
         AccessController.doPrivileged(
-            new GetLongAction("java.rmi.dgc.leaseValue",
+            new GetLongAction("j86.j86.java.rmi.dgc.leaseValue",
                               600000)).longValue();
 
     /** maximum interval between retries of failed clean calls */

@@ -23,21 +23,21 @@
  * questions.
  */
 
-package sun.management;
+package j86.sun.management;
 
-import com.sun.management.GarbageCollectionNotificationInfo;
-import com.sun.management.GcInfo;
-import java.lang.reflect.Method;
-import javax.management.openmbean.CompositeData;
-import javax.management.openmbean.CompositeType;
-import javax.management.openmbean.CompositeDataSupport;
-import javax.management.openmbean.OpenDataException;
-import javax.management.openmbean.OpenType;
-import javax.management.openmbean.SimpleType;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.lang.reflect.Field;
-import java.util.HashMap;
+import com.j86.sun.management.GarbageCollectionNotificationInfo;
+import com.j86.sun.management.GcInfo;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.j86.javax.management.openmbean.CompositeData;
+import j86.j86.javax.management.openmbean.CompositeType;
+import j86.j86.javax.management.openmbean.CompositeDataSupport;
+import j86.j86.javax.management.openmbean.OpenDataException;
+import j86.j86.javax.management.openmbean.OpenType;
+import j86.j86.javax.management.openmbean.SimpleType;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.j86.j86.java.lang.reflect.Field;
+import j86.java.util.HashMap;
 
 /**
  * A CompositeData for GarbageCollectionNotificationInfo for the local management support.
@@ -65,7 +65,7 @@ public class GarbageCollectionNotifInfoCompositeData extends LazyCompositeData {
         final GcInfoBuilder builder = AccessController.doPrivileged (new PrivilegedAction<GcInfoBuilder>() {
                 public GcInfoBuilder run() {
                     try {
-                        Class cl = Class.forName("com.sun.management.GcInfo");
+                        Class cl = Class.forName("com.j86.sun.management.GcInfo");
                         Field f = cl.getDeclaredField("builder");
                         f.setAccessible(true);
                         return (GcInfoBuilder)f.get(gcNotifInfo.getGcInfo());
@@ -86,7 +86,7 @@ public class GarbageCollectionNotifInfoCompositeData extends LazyCompositeData {
                 };
                 try {
                     final String typeName =
-                        "sun.management.GarbageCollectionNotifInfoCompositeType";
+                        "j86.sun.management.GarbageCollectionNotifInfoCompositeType";
                     gict = new CompositeType(typeName,
                                              "CompositeType for GC notification info",
                                              gcNotifInfoItemNames,
@@ -198,7 +198,7 @@ public class GarbageCollectionNotifInfoCompositeData extends LazyCompositeData {
                     GcInfoCompositeData.getBaseGcInfoCompositeType()
                 };
                 baseGcNotifInfoCompositeType =
-                    new CompositeType("sun.management.BaseGarbageCollectionNotifInfoCompositeType",
+                    new CompositeType("j86.sun.management.BaseGarbageCollectionNotifInfoCompositeType",
                                       "CompositeType for Base GarbageCollectionNotificationInfo",
                                       gcNotifInfoItemNames,
                                       gcNotifInfoItemNames,

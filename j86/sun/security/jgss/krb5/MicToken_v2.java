@@ -23,13 +23,13 @@
  * questions.
  */
 
-package sun.security.jgss.krb5;
+package j86.j86.sun.security.jgss.krb5;
 
-import org.ietf.jgss.*;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.IOException;
-import java.io.ByteArrayOutputStream;
+import j86.org.ietf.jgss.*;
+import j86.java.io.InputStream;
+import j86.java.io.OutputStream;
+import j86.java.io.IOException;
+import j86.java.io.ByteArrayOutputStream;
 
 /**
  * This class represents the new format of GSS MIC tokens, as specified

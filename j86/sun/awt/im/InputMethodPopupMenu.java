@@ -23,27 +23,27 @@
  * questions.
  */
 
-package sun.awt.im;
+package j86.j86.sun.awt.im;
 
-import java.awt.AWTException;
-import java.awt.CheckboxMenuItem;
-import java.awt.Component;
-import java.awt.Container;
-import java.awt.PopupMenu;
-import java.awt.Menu;
-import java.awt.MenuItem;
-import java.awt.Toolkit;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.im.spi.InputMethodDescriptor;
-import java.util.Locale;
-import javax.swing.JCheckBoxMenuItem;
-import javax.swing.JComponent;
-import javax.swing.JDialog;
-import javax.swing.JFrame;
-import javax.swing.JPopupMenu;
-import javax.swing.JMenu;
-import javax.swing.JMenuItem;
+import j86.java.awt.AWTException;
+import j86.java.awt.CheckboxMenuItem;
+import j86.java.awt.Component;
+import j86.java.awt.Container;
+import j86.java.awt.PopupMenu;
+import j86.java.awt.Menu;
+import j86.java.awt.MenuItem;
+import j86.java.awt.Toolkit;
+import j86.j86.java.awt.event.ActionEvent;
+import j86.j86.java.awt.event.ActionListener;
+import j86.j86.j86.java.awt.im.spi.InputMethodDescriptor;
+import j86.java.util.Locale;
+import j86.javax.swing.JCheckBoxMenuItem;
+import j86.javax.swing.JComponent;
+import j86.javax.swing.JDialog;
+import j86.javax.swing.JFrame;
+import j86.javax.swing.JPopupMenu;
+import j86.javax.swing.JMenu;
+import j86.javax.swing.JMenuItem;
 
 /**
  * <code>InputMethodPopupMenu</code> provides the popup selection menu

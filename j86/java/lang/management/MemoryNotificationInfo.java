@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.lang.management;
-import javax.management.openmbean.CompositeData;
-import sun.management.MemoryNotifInfoCompositeData;
+package j86.j86.java.lang.management;
+import j86.j86.javax.management.openmbean.CompositeData;
+import j86.sun.management.MemoryNotifInfoCompositeData;
 
 /**
  * The information about a memory notification.
@@ -55,8 +55,8 @@ import sun.management.MemoryNotifInfoCompositeData;
  * A {@link CompositeData CompositeData} representing
  * the <tt>MemoryNotificationInfo</tt> object
  * is stored in the
- * {@link javax.management.Notification#setUserData user data}
- * of a {@link javax.management.Notification notification}.
+ * {@link j86.javax.management.Notification#setUserData user data}
+ * of a {@link j86.javax.management.Notification notification}.
  * The {@link #from from} method is provided to convert from
  * a <tt>CompositeData</tt> to a <tt>MemoryNotificationInfo</tt>
  * object. For example:
@@ -219,15 +219,15 @@ public class MemoryNotificationInfo {
      * </tr>
      * <tr>
      *   <td>poolName</td>
-     *   <td><tt>java.lang.String</tt></td>
+     *   <td><tt>j86.java.lang.String</tt></td>
      * </tr>
      * <tr>
      *   <td>usage</td>
-     *   <td><tt>javax.management.openmbean.CompositeData</tt></td>
+     *   <td><tt>j86.j86.javax.management.openmbean.CompositeData</tt></td>
      * </tr>
      * <tr>
      *   <td>count</td>
-     *   <td><tt>java.lang.Long</tt></td>
+     *   <td><tt>j86.java.lang.Long</tt></td>
      * </tr>
      * </table>
      * </blockquote>

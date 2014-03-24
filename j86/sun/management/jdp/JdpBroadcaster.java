@@ -22,19 +22,19 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.management.jdp;
+package j86.j86.sun.management.jdp;
 
-import java.io.IOException;
-import java.net.Inet6Address;
-import java.net.InetAddress;
-import java.net.InetSocketAddress;
-import java.net.NetworkInterface;
-import java.net.ProtocolFamily;
-import java.net.StandardProtocolFamily;
-import java.net.StandardSocketOptions;
-import java.nio.ByteBuffer;
-import java.nio.channels.DatagramChannel;
-import java.nio.channels.UnsupportedAddressTypeException;
+import j86.java.io.IOException;
+import j86.java.net.Inet6Address;
+import j86.java.net.InetAddress;
+import j86.java.net.InetSocketAddress;
+import j86.java.net.NetworkInterface;
+import j86.java.net.ProtocolFamily;
+import j86.java.net.StandardProtocolFamily;
+import j86.java.net.StandardSocketOptions;
+import j86.java.nio.ByteBuffer;
+import j86.j86.java.nio.channels.DatagramChannel;
+import j86.j86.java.nio.channels.UnsupportedAddressTypeException;
 
 /**
  * JdpBroadcaster is responsible for sending pre-built JDP packet across a Net

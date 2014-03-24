@@ -23,15 +23,15 @@
  * questions.
  */
 
-package javax.print;
+package j86.javax.print;
 
-import java.util.Locale;
+import j86.java.util.Locale;
 
-import javax.print.attribute.Attribute;
-import javax.print.attribute.AttributeSet;
-import javax.print.attribute.PrintServiceAttribute;
-import javax.print.attribute.PrintServiceAttributeSet;
-import javax.print.event.PrintServiceAttributeListener;
+import j86.j86.javax.print.attribute.Attribute;
+import j86.j86.javax.print.attribute.AttributeSet;
+import j86.j86.javax.print.attribute.PrintServiceAttribute;
+import j86.j86.javax.print.attribute.PrintServiceAttributeSet;
+import j86.j86.javax.print.event.PrintServiceAttributeListener;
 
 
 /**
@@ -66,7 +66,7 @@ public interface PrintService {
       * unique.
       * In some environments this unique name may be the same as the user
       * friendly printer name defined as the
-      * {@link javax.print.attribute.standard.PrinterName PrinterName}
+      * {@link j86.j86.j86.javax.print.attribute.standard.PrinterName PrinterName}
       * attribute.
       * @return name of the service.
       */
@@ -127,7 +127,7 @@ public interface PrintService {
      * @exception  IllegalArgumentException
      *     (unchecked exception) if <CODE>category</CODE> is not a
      *     <code>Class</code> that implements interface
-     *{@link javax.print.attribute.PrintServiceAttribute PrintServiceAttribute}.
+     *{@link j86.j86.javax.print.attribute.PrintServiceAttribute PrintServiceAttribute}.
      */
     public <T extends PrintServiceAttribute>
         T getAttribute(Class<T> category);
@@ -136,7 +136,7 @@ public interface PrintService {
      * Determines the print data formats a client can specify when setting
      * up a job for this <code>PrintService</code>. A print data format is
      * designated by a "doc
-     * flavor" (class {@link javax.print.DocFlavor DocFlavor})
+     * flavor" (class {@link j86.javax.print.DocFlavor DocFlavor})
      * consisting of a MIME type plus a print data representation class.
      * <P>
      * Note that some doc flavors may not be supported in combination
@@ -173,7 +173,7 @@ public interface PrintService {
      * when setting up a job for this print service.
      * A printing attribute category is
      * designated by a <code>Class</code> that implements interface
-     * {@link javax.print.attribute.Attribute Attribute}. This method returns
+     * {@link j86.j86.javax.print.attribute.Attribute Attribute}. This method returns
      * just the attribute <I>categories</I> that are supported; it does not
      * return the particular attribute <I>values</I> that are supported.
      * <P>
@@ -187,9 +187,9 @@ public interface PrintService {
      *
      * @return  Array of printing attribute categories that the client can
      *          specify as a doc-level or job-level attribute in a Print
-     *          Request. Each element in the array is a {@link java.lang.Class
+     *          Request. Each element in the array is a {@link j86.java.lang.Class
      *          Class} that implements interface {@link
-     *          javax.print.attribute.Attribute Attribute}.
+     *          j86.j86.javax.print.attribute.Attribute Attribute}.
      *          The array is empty if no categories are supported.
      */
     public Class<?>[] getSupportedAttributeCategories();
@@ -198,7 +198,7 @@ public interface PrintService {
      * Determines whether a client can specify the given printing
      * attribute category when setting up a job for this print service. A
      * printing attribute category is designated by a <code>Class</code>
-     * that implements interface {@link javax.print.attribute.Attribute
+     * that implements interface {@link j86.j86.javax.print.attribute.Attribute
      * Attribute}. This method tells whether the attribute <I>category</I> is
      * supported; it does not tell whether a particular attribute <I>value</I>
      * is supported.
@@ -216,7 +216,7 @@ public interface PrintService {
      * @param  category    Printing attribute category to test. It must be a
      *                        <code>Class</code> that implements
      *                        interface
-     *                {@link javax.print.attribute.Attribute Attribute}.
+     *                {@link j86.j86.javax.print.attribute.Attribute Attribute}.
      *
      * @return  <code>true</code> if this print service supports
      *          specifying a doc-level or
@@ -228,7 +228,7 @@ public interface PrintService {
      * @exception  IllegalArgumentException
      *     (unchecked exception) Thrown if <CODE>category</CODE> is not a
      *     <code>Class</code> that implements interface
-     *     {@link javax.print.attribute.Attribute Attribute}.
+     *     {@link j86.j86.javax.print.attribute.Attribute Attribute}.
      */
     public boolean
         isAttributeCategorySupported(Class<? extends Attribute> category);
@@ -237,7 +237,7 @@ public interface PrintService {
      * Determines this print service's default printing attribute value in
      * the given category. A printing attribute value is an instance of
      * a class that implements interface
-     * {@link javax.print.attribute.Attribute Attribute}. If a client sets
+     * {@link j86.j86.javax.print.attribute.Attribute Attribute}. If a client sets
      * up a print job and does not specify any attribute value in the
      * given category, this Print Service will use the
      * default attribute value instead.
@@ -257,8 +257,8 @@ public interface PrintService {
      *
      * @param  category    Printing attribute category for which the default
      *                     attribute value is requested. It must be a {@link
-     *                        java.lang.Class Class} that implements interface
-     *                        {@link javax.print.attribute.Attribute
+     *                        j86.java.lang.Class Class} that implements interface
+     *                        {@link j86.j86.javax.print.attribute.Attribute
      *                        Attribute}.
      *
      * @return  Default attribute value for <CODE>category</CODE>, or null
@@ -271,8 +271,8 @@ public interface PrintService {
      *     (unchecked exception) Thrown if <CODE>category</CODE> is null.
      * @exception  IllegalArgumentException
      *     (unchecked exception) Thrown if <CODE>category</CODE> is not a
-     *     {@link java.lang.Class Class} that implements interface {@link
-     *     javax.print.attribute.Attribute Attribute}.
+     *     {@link j86.java.lang.Class Class} that implements interface {@link
+     *     j86.j86.javax.print.attribute.Attribute Attribute}.
      */
     public Object
         getDefaultAttributeValue(Class<? extends Attribute> category);
@@ -282,7 +282,7 @@ public interface PrintService {
      * the given category when setting up a job for this print service. A
      * printing
      * attribute value is an instance of a class that implements interface
-     * {@link javax.print.attribute.Attribute Attribute}.
+     * {@link j86.j86.javax.print.attribute.Attribute Attribute}.
      * <P>
      * If <CODE>flavor</CODE> is null and <CODE>attributes</CODE> is null
      * or is an empty set, this method returns all the printing attribute
@@ -306,7 +306,7 @@ public interface PrintService {
      * This method returns an Object because different printing attribute
      * categories indicate the supported attribute values in different ways.
      * The documentation for each printing attribute in package {@link
-     * javax.print.attribute.standard javax.print.attribute.standard}
+     * j86.j86.j86.javax.print.attribute.standard javax.print.attribute.standard}
      * describes how each attribute indicates its supported values. Possible
      * ways of indicating support include:
      * <UL>
@@ -329,9 +329,9 @@ public interface PrintService {
      * <P>
      *
      * @param  category    Printing attribute category to test. It must be a
-     *                        {@link java.lang.Class Class} that implements
+     *                        {@link j86.java.lang.Class Class} that implements
      *                        interface {@link
-     *                        javax.print.attribute.Attribute Attribute}.
+     *                        j86.j86.javax.print.attribute.Attribute Attribute}.
      * @param  flavor      Doc flavor for a supposed job, or null.
      * @param  attributes  Set of printing attributes for a supposed job
      *                        (both job-level attributes and document-level
@@ -346,8 +346,8 @@ public interface PrintService {
      *     (unchecked exception) Thrown if <CODE>category</CODE> is null.
      * @exception  IllegalArgumentException
      *     (unchecked exception) Thrown if <CODE>category</CODE> is not a
-     *     {@link java.lang.Class Class} that implements interface {@link
-     *     javax.print.attribute.Attribute Attribute}, or
+     *     {@link j86.java.lang.Class Class} that implements interface {@link
+     *     j86.j86.javax.print.attribute.Attribute Attribute}, or
      *     <code>DocFlavor</code> is not supported by this service.
      */
     public Object
@@ -360,7 +360,7 @@ public interface PrintService {
      * attribute
      * value when setting up a job for this Print Service. A printing
      * attribute value is an instance of a class that implements interface
-     *  {@link javax.print.attribute.Attribute Attribute}.
+     *  {@link j86.j86.javax.print.attribute.Attribute Attribute}.
      * <P>
      * If <CODE>flavor</CODE> is null and <CODE>attributes</CODE> is null or
      * is an empty set, this method tells whether this Print Service supports

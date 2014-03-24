@@ -22,12 +22,12 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.media.sound;
+package j86.com.sun.media.sound;
 
-import java.io.IOException;
+import j86.java.io.IOException;
 
-import javax.sound.sampled.AudioInputStream;
-import javax.sound.sampled.SourceDataLine;
+import j86.javax.sound.sampled.AudioInputStream;
+import j86.javax.sound.sampled.SourceDataLine;
 
 /**
  * This is a processor object that writes into SourceDataLine

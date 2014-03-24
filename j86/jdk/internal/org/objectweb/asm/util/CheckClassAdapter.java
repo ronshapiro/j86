@@ -56,33 +56,33 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-package jdk.internal.org.objectweb.asm.util;
+package j86.j86.jdk.internal.org.objectweb.asm.util;
 
-import java.io.FileInputStream;
-import java.io.PrintWriter;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
+import j86.java.io.FileInputStream;
+import j86.java.io.PrintWriter;
+import j86.java.util.ArrayList;
+import j86.java.util.HashMap;
+import j86.java.util.Iterator;
+import j86.java.util.List;
+import j86.java.util.Map;
 
-import jdk.internal.org.objectweb.asm.AnnotationVisitor;
-import jdk.internal.org.objectweb.asm.Attribute;
-import jdk.internal.org.objectweb.asm.ClassReader;
-import jdk.internal.org.objectweb.asm.ClassVisitor;
-import jdk.internal.org.objectweb.asm.FieldVisitor;
-import jdk.internal.org.objectweb.asm.Label;
-import jdk.internal.org.objectweb.asm.MethodVisitor;
-import jdk.internal.org.objectweb.asm.Opcodes;
-import jdk.internal.org.objectweb.asm.Type;
-import jdk.internal.org.objectweb.asm.TypePath;
-import jdk.internal.org.objectweb.asm.TypeReference;
-import jdk.internal.org.objectweb.asm.tree.ClassNode;
-import jdk.internal.org.objectweb.asm.tree.MethodNode;
-import jdk.internal.org.objectweb.asm.tree.analysis.Analyzer;
-import jdk.internal.org.objectweb.asm.tree.analysis.BasicValue;
-import jdk.internal.org.objectweb.asm.tree.analysis.Frame;
-import jdk.internal.org.objectweb.asm.tree.analysis.SimpleVerifier;
+import j86.jdk.internal.org.objectweb.asm.AnnotationVisitor;
+import j86.jdk.internal.org.objectweb.asm.Attribute;
+import j86.jdk.internal.org.objectweb.asm.ClassReader;
+import j86.jdk.internal.org.objectweb.asm.ClassVisitor;
+import j86.jdk.internal.org.objectweb.asm.FieldVisitor;
+import j86.jdk.internal.org.objectweb.asm.Label;
+import j86.jdk.internal.org.objectweb.asm.MethodVisitor;
+import j86.jdk.internal.org.objectweb.asm.Opcodes;
+import j86.jdk.internal.org.objectweb.asm.Type;
+import j86.jdk.internal.org.objectweb.asm.TypePath;
+import j86.jdk.internal.org.objectweb.asm.TypeReference;
+import j86.j86.jdk.internal.org.objectweb.asm.tree.ClassNode;
+import j86.j86.jdk.internal.org.objectweb.asm.tree.MethodNode;
+import j86.j86.j86.jdk.internal.org.objectweb.asm.tree.analysis.Analyzer;
+import j86.j86.j86.jdk.internal.org.objectweb.asm.tree.analysis.BasicValue;
+import j86.j86.j86.jdk.internal.org.objectweb.asm.tree.analysis.Frame;
+import j86.j86.j86.jdk.internal.org.objectweb.asm.tree.analysis.SimpleVerifier;
 
 /**
  * A {@link ClassVisitor} that checks that its methods are properly used. More
@@ -122,9 +122,9 @@ import jdk.internal.org.objectweb.asm.tree.analysis.SimpleVerifier;
  * insnNumber locals : stack):
  *
  * <pre>
- * jdk.internal.org.objectweb.asm.tree.analysis.AnalyzerException: Error at instruction 71: Expected I, but found .
- *   at jdk.internal.org.objectweb.asm.tree.analysis.Analyzer.analyze(Analyzer.java:289)
- *   at jdk.internal.org.objectweb.asm.util.CheckClassAdapter.verify(CheckClassAdapter.java:135)
+ * j86.j86.j86.jdk.internal.org.objectweb.asm.tree.analysis.AnalyzerException: Error at instruction 71: Expected I, but found .
+ *   at j86.j86.j86.jdk.internal.org.objectweb.asm.tree.analysis.Analyzer.analyze(Analyzer.java:289)
+ *   at j86.j86.jdk.internal.org.objectweb.asm.util.CheckClassAdapter.verify(CheckClassAdapter.java:135)
  * ...
  * remove()V
  * 00000 LinkedBlockingQueue$Itr . . . . . . . .  :
@@ -137,7 +137,7 @@ import jdk.internal.org.objectweb.asm.tree.analysis.SimpleVerifier;
  * 00071 LinkedBlockingQueue$Itr <b>.</b> I . . . . . .  :
  *   ILOAD 1
  * 00072 <b>?</b>
- *   INVOKESPECIAL java/lang/Integer.&lt;init&gt; (I)V
+ *   INVOKESPECIAL j86.java.lang/Integer.&lt;init&gt; (I)V
  * ...
  * </pre>
  *
@@ -411,7 +411,7 @@ public class CheckClassAdapter extends ClassVisitor {
         if (name == null || !name.endsWith("package-info")) {
             CheckMethodAdapter.checkInternalName(name, "class name");
         }
-        if ("java/lang/Object".equals(name)) {
+        if ("j86.java.lang/Object".equals(name)) {
             if (superName != null) {
                 throw new IllegalArgumentException(
                         "The super class name of the Object class must be 'null'");
@@ -423,9 +423,9 @@ public class CheckClassAdapter extends ClassVisitor {
             checkClassSignature(signature);
         }
         if ((access & Opcodes.ACC_INTERFACE) != 0) {
-            if (!"java/lang/Object".equals(superName)) {
+            if (!"j86.java.lang/Object".equals(superName)) {
                 throw new IllegalArgumentException(
-                        "The super class name of interfaces must be 'java/lang/Object'");
+                        "The super class name of interfaces must be 'j86.java.lang/Object'");
             }
         }
         if (interfaces != null) {

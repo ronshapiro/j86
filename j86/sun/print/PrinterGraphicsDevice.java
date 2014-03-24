@@ -24,11 +24,11 @@
  */
 
 
-package sun.print;
+package j86.sun.print;
 
-import java.awt.GraphicsConfiguration;
-import java.awt.GraphicsDevice;
-import java.awt.Window;
+import j86.java.awt.GraphicsConfiguration;
+import j86.java.awt.GraphicsDevice;
+import j86.java.awt.Window;
 
 public final class PrinterGraphicsDevice extends GraphicsDevice {
 

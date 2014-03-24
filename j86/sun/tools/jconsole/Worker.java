@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.tools.jconsole;
+package j86.sun.tools.jconsole;
 
-import java.util.*;
+import j86.java.util.*;
 
 public class Worker extends Thread {
     ArrayList<Runnable> jobs = new ArrayList<Runnable>();

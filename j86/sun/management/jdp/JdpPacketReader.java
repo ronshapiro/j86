@@ -22,16 +22,16 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.management.jdp;
+package j86.j86.sun.management.jdp;
 
-import java.io.ByteArrayInputStream;
-import java.io.DataInputStream;
-import java.io.EOFException;
-import java.io.IOException;
-import java.io.UnsupportedEncodingException;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
+import j86.java.io.ByteArrayInputStream;
+import j86.java.io.DataInputStream;
+import j86.java.io.EOFException;
+import j86.java.io.IOException;
+import j86.java.io.UnsupportedEncodingException;
+import j86.java.util.Collections;
+import j86.java.util.HashMap;
+import j86.java.util.Map;
 
 /**
  * JdpPacketReader responsible for reading a packet <p>This class gets a byte

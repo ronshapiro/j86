@@ -23,12 +23,12 @@
  * questions.
  */
 
-package com.sun.tools.jdi;
+package j86.com.sun.tools.jdi;
 
-import com.sun.jdi.*;
+import j86.com.sun.jdi.*;
 
-import java.util.*;
-import java.lang.ref.SoftReference;
+import j86.java.util.*;
+import j86.j86.java.lang.ref.SoftReference;
 
 public abstract class ReferenceTypeImpl extends TypeImpl
 implements ReferenceType {
@@ -757,7 +757,7 @@ implements ReferenceType {
 
             while ((nextIndex = typeName.indexOf('.', index)) > 0) {
                 sb.append(typeName.substring(index, nextIndex));
-                sb.append(java.io.File.separatorChar);
+                sb.append(j86.java.io.File.separatorChar);
                 index = nextIndex + 1;
             }
             baseSourceDir = sb.toString();
@@ -1117,7 +1117,7 @@ implements ReferenceType {
          * TO DO: Centralize JNI signature knowledge.
          *
          * Ref:
-         *  jdk1.4/doc/guide/jpda/jdi/com/sun/jdi/doc-files/signature.html
+         *  jdk1.4/doc/guide/jpda/jdi/j86.com.sun.jdi/doc-files/signature.html
          */
         boolean isPA;
         if (i < 0) {

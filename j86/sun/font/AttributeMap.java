@@ -36,23 +36,23 @@
   struct.  We can always do that later if need be.
 */
 
-package sun.font;
+package j86.sun.font;
 
-import java.awt.Paint;
-import java.awt.font.GraphicAttribute;
-import java.awt.font.NumericShaper;
-import java.awt.font.TextAttribute;
-import java.awt.font.TransformAttribute;
-import java.awt.geom.AffineTransform;
-import java.awt.im.InputMethodHighlight;
-import java.text.AttributedCharacterIterator.Attribute;
-import java.util.AbstractMap;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
-import java.util.Map.Entry;
+import j86.java.awt.Paint;
+import j86.j86.java.awt.font.GraphicAttribute;
+import j86.j86.java.awt.font.NumericShaper;
+import j86.j86.java.awt.font.TextAttribute;
+import j86.j86.java.awt.font.TransformAttribute;
+import j86.j86.java.awt.geom.AffineTransform;
+import j86.j86.java.awt.im.InputMethodHighlight;
+import j86.java.text.AttributedCharacterIterator.Attribute;
+import j86.java.util.AbstractMap;
+import j86.java.util.HashMap;
+import j86.java.util.Map;
+import j86.java.util.Set;
+import j86.java.util.Map.Entry;
 
-import static sun.font.AttributeValues.*;
+import static j86.sun.font.AttributeValues.*;
 
 public final class AttributeMap extends AbstractMap<TextAttribute, Object> {
     private AttributeValues values;

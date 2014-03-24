@@ -23,14 +23,14 @@
  * questions.
  */
 
-package java.awt.dnd;
+package j86.j86.java.awt.dnd;
 
-import java.awt.Point;
+import j86.java.awt.Point;
 
-import java.awt.datatransfer.DataFlavor;
-import java.awt.datatransfer.Transferable;
+import j86.j86.java.awt.datatransfer.DataFlavor;
+import j86.j86.java.awt.datatransfer.Transferable;
 
-import java.util.List;
+import j86.java.util.List;
 
 /**
  * The <code>DropTargetDropEvent</code> is delivered
@@ -175,9 +175,9 @@ public class DropTargetDropEvent extends DropTargetEvent {
 
     /**
      * This method returns the currently available
-     * <code>DataFlavor</code>s as a <code>java.util.List</code>.
+     * <code>DataFlavor</code>s as a <code>j86.java.util.List</code>.
      * <P>
-     * @return the currently available DataFlavors as a java.util.List
+     * @return the currently available DataFlavors as a j86.java.util.List
      */
 
     public List<DataFlavor> getCurrentDataFlavorsAsList() {

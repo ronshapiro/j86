@@ -27,14 +27,14 @@
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
 
-package sun.security.krb5.internal.crypto;
+package j86.j86.j86.sun.security.krb5.internal.crypto;
 
-import sun.security.krb5.Checksum;
-import sun.security.krb5.Confounder;
-import sun.security.krb5.KrbCryptoException;
-import sun.security.krb5.internal.*;
-import javax.crypto.spec.DESKeySpec;
-import java.security.InvalidKeyException;
+import j86.sun.security.krb5.Checksum;
+import j86.sun.security.krb5.Confounder;
+import j86.sun.security.krb5.KrbCryptoException;
+import j86.j86.sun.security.krb5.internal.*;
+import j86.j86.javax.crypto.spec.DESKeySpec;
+import j86.java.security.InvalidKeyException;
 
 public class DesMacCksumType extends CksumType {
 

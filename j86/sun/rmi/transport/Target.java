@@ -22,19 +22,19 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.rmi.transport;
+package j86.sun.rmi.transport;
 
-import java.rmi.Remote;
-import java.rmi.NoSuchObjectException;
-import java.rmi.dgc.VMID;
-import java.rmi.server.ObjID;
-import java.rmi.server.Unreferenced;
-import java.security.AccessControlContext;
-import java.security.AccessController;
-import java.util.*;
-import sun.rmi.runtime.Log;
-import sun.rmi.runtime.NewThreadAction;
-import sun.rmi.server.Dispatcher;
+import j86.java.rmi.Remote;
+import j86.java.rmi.NoSuchObjectException;
+import j86.j86.java.rmi.dgc.VMID;
+import j86.j86.java.rmi.server.ObjID;
+import j86.j86.java.rmi.server.Unreferenced;
+import j86.java.security.AccessControlContext;
+import j86.java.security.AccessController;
+import j86.java.util.*;
+import j86.sun.rmi.runtime.Log;
+import j86.sun.rmi.runtime.NewThreadAction;
+import j86.sun.rmi.server.Dispatcher;
 
 /**
  * A target contains information pertaining to a remote object that
@@ -323,7 +323,7 @@ public final class Target {
             if (obj instanceof Unreferenced) {
                 final Unreferenced unrefObj = (Unreferenced) obj;
                 final Thread t =
-                    java.security.AccessController.doPrivileged(
+                    j86.java.security.AccessController.doPrivileged(
                         new NewThreadAction(new Runnable() {
                             public void run() {
                                 unrefObj.unreferenced();
@@ -334,8 +334,8 @@ public final class Target {
                  * We must manually set the context class loader appropriately
                  * for threads that may invoke user code (see bugid 4171278).
                  */
-                java.security.AccessController.doPrivileged(
-                    new java.security.PrivilegedAction<Void>() {
+                j86.java.security.AccessController.doPrivileged(
+                    new j86.java.security.PrivilegedAction<Void>() {
                         public Void run() {
                         t.setContextClassLoader(ccl);
                         return null;

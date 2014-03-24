@@ -33,8 +33,8 @@
  ******************************************************************
  ******************************************************************/
 
-package java.awt.image;
-import java.awt.Point;
+package j86.j86.j86.java.awt.image;
+import j86.java.awt.Point;
 
 /**
  * WriteableRenderedImage is a common interface for objects which

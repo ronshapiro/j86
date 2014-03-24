@@ -29,12 +29,12 @@
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
 
-package sun.security.krb5.internal.rcache;
+package j86.j86.j86.sun.security.krb5.internal.rcache;
 
-import java.util.*;
-import sun.security.krb5.internal.KerberosTime;
-import sun.security.krb5.internal.KrbApErrException;
-import sun.security.krb5.internal.ReplayCache;
+import j86.java.util.*;
+import j86.j86.sun.security.krb5.internal.KerberosTime;
+import j86.j86.sun.security.krb5.internal.KrbApErrException;
+import j86.j86.sun.security.krb5.internal.ReplayCache;
 
 /**
  * This class stores replay caches. AuthTimeWithHash objects are categorized
@@ -46,7 +46,7 @@ public class MemoryCache extends ReplayCache {
 
     // TODO: One day we'll need to read dynamic krb5.conf.
     private static final int lifespan = KerberosTime.getDefaultSkew();
-    private static final boolean DEBUG = sun.security.krb5.internal.Krb5.DEBUG;
+    private static final boolean DEBUG = j86.j86.sun.security.krb5.internal.Krb5.DEBUG;
 
     private final Map<String,AuthList> content = new HashMap<>();
 

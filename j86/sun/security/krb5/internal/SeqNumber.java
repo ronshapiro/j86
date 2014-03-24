@@ -28,8 +28,8 @@
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
 
-package sun.security.krb5.internal;
-import sun.security.krb5.KrbCryptoException;
+package j86.j86.sun.security.krb5.internal;
+import j86.sun.security.krb5.KrbCryptoException;
 
 public interface SeqNumber {
     public void randInit();

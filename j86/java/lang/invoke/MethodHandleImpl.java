@@ -23,22 +23,22 @@
  * questions.
  */
 
-package java.lang.invoke;
+package j86.j86.java.lang.invoke;
 
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import sun.invoke.empty.Empty;
-import sun.invoke.util.ValueConversions;
-import sun.invoke.util.VerifyType;
-import sun.invoke.util.Wrapper;
-import sun.reflect.CallerSensitive;
-import sun.reflect.Reflection;
-import static java.lang.invoke.LambdaForm.*;
-import static java.lang.invoke.MethodHandleStatics.*;
-import static java.lang.invoke.MethodHandles.Lookup.IMPL_LOOKUP;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.util.ArrayList;
+import j86.java.util.Arrays;
+import j86.java.util.HashMap;
+import j86.j86.sun.invoke.empty.Empty;
+import j86.j86.sun.invoke.util.ValueConversions;
+import j86.j86.sun.invoke.util.VerifyType;
+import j86.j86.sun.invoke.util.Wrapper;
+import j86.sun.reflect.CallerSensitive;
+import j86.sun.reflect.Reflection;
+import static j86.j86.java.lang.invoke.LambdaForm.*;
+import static j86.j86.java.lang.invoke.MethodHandleStatics.*;
+import static j86.j86.java.lang.invoke.MethodHandles.Lookup.IMPL_LOOKUP;
 
 /**
  * Trusted implementation code for MethodHandle.
@@ -470,7 +470,7 @@ import static java.lang.invoke.MethodHandles.Lookup.IMPL_LOOKUP;
             int len = ((Object[])av).length;
             if (len == n)  return;
         } else {
-            int len = java.lang.reflect.Array.getLength(av);
+            int len = j86.j86.j86.java.lang.reflect.Array.getLength(av);
             if (len == n)  return;
         }
         // fall through to error:
@@ -936,15 +936,15 @@ import static java.lang.invoke.MethodHandles.Lookup.IMPL_LOOKUP;
                             Class<T> tClass = T.class;
                             String tName = tClass.getName();
                             String tResource = tName.substring(tName.lastIndexOf('.')+1)+".class";
-                            java.net.URLConnection uconn = tClass.getResource(tResource).openConnection();
+                            j86.java.net.URLConnection uconn = tClass.getResource(tResource).openConnection();
                             int len = uconn.getContentLength();
                             byte[] bytes = new byte[len];
-                            try (java.io.InputStream str = uconn.getInputStream()) {
+                            try (j86.java.io.InputStream str = uconn.getInputStream()) {
                                 int nr = str.read(bytes);
-                                if (nr != len)  throw new java.io.IOException(tResource);
+                                if (nr != len)  throw new j86.java.io.IOException(tResource);
                             }
                             values[0] = bytes;
-                        } catch (java.io.IOException ex) {
+                        } catch (j86.java.io.IOException ex) {
                             throw new InternalError(ex);
                         }
                         return null;

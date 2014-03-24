@@ -23,14 +23,14 @@
  * questions.
  */
 
-package javax.swing;
+package j86.javax.swing;
 
-import java.util.Enumeration;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Locale;
-import java.util.Map.Entry;
-import java.util.Set;
+import j86.java.util.Enumeration;
+import j86.java.util.HashSet;
+import j86.java.util.Iterator;
+import j86.java.util.Locale;
+import j86.java.util.Map.Entry;
+import j86.java.util.Set;
 
 
 

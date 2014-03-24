@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.applet;
+package j86.sun.applet;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.ByteArrayInputStream;
-import java.net.URL;
-import java.net.URLConnection;
-import java.applet.AudioClip;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.io.ByteArrayInputStream;
+import j86.java.net.URL;
+import j86.java.net.URLConnection;
+import j86.java.applet.AudioClip;
 
-import com.sun.media.sound.JavaSoundAudioClip;
+import j86.com.sun.media.sound.JavaSoundAudioClip;
 
 
 /**

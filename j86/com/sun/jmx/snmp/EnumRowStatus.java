@@ -23,10 +23,10 @@
  * questions.
  */
 
-package com.sun.jmx.snmp;
+package j86.com.sun.jmx.snmp;
 
-import java.io.Serializable;
-import java.util.Hashtable;
+import j86.java.io.Serializable;
+import j86.java.util.Hashtable;
 
 
 /**

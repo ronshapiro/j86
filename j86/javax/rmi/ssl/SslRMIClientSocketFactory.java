@@ -23,16 +23,16 @@
  * questions.
  */
 
-package javax.rmi.ssl;
+package j86.javax.rmi.ssl;
 
-import java.io.IOException;
-import java.io.Serializable;
-import java.net.Socket;
-import java.rmi.server.RMIClientSocketFactory;
-import java.util.StringTokenizer;
-import javax.net.SocketFactory;
-import javax.net.ssl.SSLSocket;
-import javax.net.ssl.SSLSocketFactory;
+import j86.java.io.IOException;
+import j86.java.io.Serializable;
+import j86.java.net.Socket;
+import j86.j86.java.rmi.server.RMIClientSocketFactory;
+import j86.java.util.StringTokenizer;
+import j86.javax.net.SocketFactory;
+import j86.j86.javax.net.ssl.SSLSocket;
+import j86.j86.javax.net.ssl.SSLSocketFactory;
 
 /**
  * <p>An <code>SslRMIClientSocketFactory</code> instance is used by the RMI
@@ -53,21 +53,21 @@ import javax.net.ssl.SSLSocketFactory;
  * #hashCode() hashCode} may also need to be overridden.</p>
  *
  * <p>If the system property
- * <code>javax.rmi.ssl.client.enabledCipherSuites</code> is specified,
+ * <code>j86.javax.rmi.ssl.client.enabledCipherSuites</code> is specified,
  * the {@link #createSocket(String,int)} method will call {@link
  * SSLSocket#setEnabledCipherSuites(String[])} before returning the
  * socket.  The value of this system property is a string that is a
  * comma-separated list of SSL/TLS cipher suites to enable.</p>
  *
  * <p>If the system property
- * <code>javax.rmi.ssl.client.enabledProtocols</code> is specified,
+ * <code>j86.javax.rmi.ssl.client.enabledProtocols</code> is specified,
  * the {@link #createSocket(String,int)} method will call {@link
  * SSLSocket#setEnabledProtocols(String[])} before returning the
  * socket.  The value of this system property is a string that is a
  * comma-separated list of SSL/TLS protocol versions to enable.</p>
  *
- * @see javax.net.ssl.SSLSocketFactory
- * @see javax.rmi.ssl.SslRMIServerSocketFactory
+ * @see j86.j86.javax.net.ssl.SSLSocketFactory
+ * @see j86.javax.rmi.ssl.SslRMIServerSocketFactory
  * @since 1.5
  */
 public class SslRMIClientSocketFactory
@@ -96,7 +96,7 @@ public class SslRMIClientSocketFactory
      * <p>Creates an SSL socket.</p>
      *
      * <p>If the system property
-     * <code>javax.rmi.ssl.client.enabledCipherSuites</code> is
+     * <code>j86.javax.rmi.ssl.client.enabledCipherSuites</code> is
      * specified, this method will call {@link
      * SSLSocket#setEnabledCipherSuites(String[])} before returning
      * the socket. The value of this system property is a string that
@@ -104,7 +104,7 @@ public class SslRMIClientSocketFactory
      * enable.</p>
      *
      * <p>If the system property
-     * <code>javax.rmi.ssl.client.enabledProtocols</code> is
+     * <code>j86.javax.rmi.ssl.client.enabledProtocols</code> is
      * specified, this method will call {@link
      * SSLSocket#setEnabledProtocols(String[])} before returning the
      * socket. The value of this system property is a string that is a
@@ -122,7 +122,7 @@ public class SslRMIClientSocketFactory
         // Set the SSLSocket Enabled Cipher Suites
         //
         final String enabledCipherSuites =
-            System.getProperty("javax.rmi.ssl.client.enabledCipherSuites");
+            System.getProperty("j86.javax.rmi.ssl.client.enabledCipherSuites");
         if (enabledCipherSuites != null) {
             StringTokenizer st = new StringTokenizer(enabledCipherSuites, ",");
             int tokens = st.countTokens();
@@ -140,7 +140,7 @@ public class SslRMIClientSocketFactory
         // Set the SSLSocket Enabled Protocols
         //
         final String enabledProtocols =
-            System.getProperty("javax.rmi.ssl.client.enabledProtocols");
+            System.getProperty("j86.javax.rmi.ssl.client.enabledProtocols");
         if (enabledProtocols != null) {
             StringTokenizer st = new StringTokenizer(enabledProtocols, ",");
             int tokens = st.countTokens();

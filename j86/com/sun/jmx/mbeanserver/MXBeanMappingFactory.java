@@ -23,19 +23,19 @@
  * questions.
  */
 
-package com.sun.jmx.mbeanserver;
+package j86.com.sun.jmx.mbeanserver;
 
-import javax.management.openmbean.*;
-import com.sun.jmx.mbeanserver.MXBeanMapping;
-import com.sun.jmx.mbeanserver.DefaultMXBeanMappingFactory;
-import java.lang.reflect.Type;
+import j86.j86.javax.management.openmbean.*;
+import j86.com.sun.jmx.mbeanserver.MXBeanMapping;
+import j86.com.sun.jmx.mbeanserver.DefaultMXBeanMappingFactory;
+import j86.j86.j86.java.lang.reflect.Type;
 
 /**
  * <p>Defines how types are mapped for a given MXBean or set of MXBeans.
  * An {@code MXBeanMappingFactory} can be specified either through the
  * {@link MXBeanMappingFactoryClass} annotation, or through the
- * {@link javax.management.JMX.MBeanOptions JMX.MBeanOptions} argument to a
- * {@link javax.management.StandardMBean StandardMBean} constructor or MXBean
+ * {@link j86.javax.management.JMX.MBeanOptions JMX.MBeanOptions} argument to a
+ * {@link j86.javax.management.StandardMBean StandardMBean} constructor or MXBean
  * proxy.</p>
  *
  * <p>An {@code MXBeanMappingFactory} must return an {@code MXBeanMapping}
@@ -82,7 +82,7 @@ import java.lang.reflect.Type;
  *
  * <p>Alternatively we can annotate the package that {@code SomethingMXBean}
  * appears in, or we can supply the factory to a {@link
- * javax.management.StandardMBean StandardMBean} constructor or MXBean
+ * j86.javax.management.StandardMBean StandardMBean} constructor or MXBean
  * proxy.</p>
  *
  * @see <a href="../MXBean.html#custom">MXBean specification, section

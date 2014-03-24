@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.sql;
+package j86.java.sql;
 
 /**
  *
@@ -56,7 +56,7 @@ package java.sql;
  * All methods on the <code>RowId</code> interface must be fully implemented if the
  * JDBC driver supports the data type.
  *
- * @see java.sql.DatabaseMetaData
+ * @see j86.java.sql.DatabaseMetaData
  * @since 1.6
  */
 
@@ -85,19 +85,19 @@ public interface RowId {
 
     /**
      * Returns an array of bytes representing the value of the SQL <code>ROWID</code>
-     * designated by this <code>java.sql.RowId</code> object.
+     * designated by this <code>j86.java.sql.RowId</code> object.
      *
      * @return an array of bytes, whose length is determined by the driver supplying
      *     the connection, representing the value of the ROWID designated by this
-     *     java.sql.RowId object.
+     *     j86.java.sql.RowId object.
      */
      byte[] getBytes();
 
      /**
       * Returns a String representing the value of the SQL ROWID designated by this
-      * <code>java.sql.RowId</code> object.
+      * <code>j86.java.sql.RowId</code> object.
       * <p>
-      *Like <code>java.sql.Date.toString()</code>
+      *Like <code>j86.java.sql.Date.toString()</code>
       * returns the contents of its DATE as the <code>String</code> "2004-03-17"
       * rather than as  DATE literal in SQL (which would have been the <code>String</code>
       * DATE "2004-03-17"), toString()
@@ -106,7 +106,7 @@ public interface RowId {
       *
       * @return a String whose format is determined by the driver supplying the
       *     connection, representing the value of the <code>ROWID</code> designated
-      *     by this <code>java.sql.RowId</code>  object.
+      *     by this <code>j86.java.sql.RowId</code>  object.
       */
      String toString();
 

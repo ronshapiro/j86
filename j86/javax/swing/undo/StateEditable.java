@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.swing.undo;
+package j86.j86.javax.swing.undo;
 
-import java.util.Hashtable;
+import j86.java.util.Hashtable;
 
 
 /**

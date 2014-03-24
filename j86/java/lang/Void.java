@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.lang;
+package j86.java.lang;
 
 /**
  * The {@code Void} class is an uninstantiable placeholder class to hold a

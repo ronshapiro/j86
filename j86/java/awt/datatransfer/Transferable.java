@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.awt.datatransfer;
+package j86.j86.java.awt.datatransfer;
 
-import java.io.IOException;
+import j86.java.io.IOException;
 
 /**
  * Defines the interface for classes that can be used to provide data

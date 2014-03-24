@@ -27,7 +27,7 @@
 # then prefix the line with #[OS] and they will automatically
 # uncommented by the build process.
 #
-#[solaris]sun.tools.attach.SolarisAttachProvider
-#[windows]sun.tools.attach.WindowsAttachProvider
-#[linux]sun.tools.attach.LinuxAttachProvider
-#[macosx]sun.tools.attach.BsdAttachProvider
+#[solaris]j86.sun.tools.attach.SolarisAttachProvider
+#[windows]j86.sun.tools.attach.WindowsAttachProvider
+#[linux]j86.sun.tools.attach.LinuxAttachProvider
+#[macosx]j86.sun.tools.attach.BsdAttachProvider

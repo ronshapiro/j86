@@ -23,8 +23,8 @@
  * questions.
  */
 
-package java.io;
-import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
+package j86.java.io;
+import j86.j86.j86.java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
 
 /**
  * A <code>BufferedInputStream</code> adds
@@ -102,7 +102,7 @@ class BufferedInputStream extends FilterInputStream {
      * operation will require more bytes to be
      * read from the contained  input stream.
      *
-     * @see     java.io.BufferedInputStream#buf
+     * @see     j86.java.io.BufferedInputStream#buf
      */
     protected int pos;
 
@@ -130,8 +130,8 @@ class BufferedInputStream extends FilterInputStream {
      * between <code>pos</code> and <code>markpos</code>
      * exceeds <code>marklimit</code>.
      *
-     * @see     java.io.BufferedInputStream#mark(int)
-     * @see     java.io.BufferedInputStream#pos
+     * @see     j86.java.io.BufferedInputStream#mark(int)
+     * @see     j86.java.io.BufferedInputStream#pos
      */
     protected int markpos = -1;
 
@@ -144,8 +144,8 @@ class BufferedInputStream extends FilterInputStream {
      * then the  mark may be dropped by setting
      * <code>markpos</code> to <code>-1</code>.
      *
-     * @see     java.io.BufferedInputStream#mark(int)
-     * @see     java.io.BufferedInputStream#reset()
+     * @see     j86.java.io.BufferedInputStream#mark(int)
+     * @see     j86.java.io.BufferedInputStream#reset()
      */
     protected int marklimit;
 
@@ -258,7 +258,7 @@ class BufferedInputStream extends FilterInputStream {
      * @exception  IOException  if this input stream has been closed by
      *                          invoking its {@link #close()} method,
      *                          or an I/O error occurs.
-     * @see        java.io.FilterInputStream#in
+     * @see        j86.java.io.FilterInputStream#in
      */
     public synchronized int read() throws IOException {
         if (pos >= count) {
@@ -397,7 +397,7 @@ class BufferedInputStream extends FilterInputStream {
      * <p>
      * This method returns the sum of the number of bytes remaining to be read in
      * the buffer (<code>count&nbsp;- pos</code>) and the result of calling the
-     * {@link java.io.FilterInputStream#in in}.available().
+     * {@link j86.java.io.FilterInputStream#in in}.available().
      *
      * @return     an estimate of the number of bytes that can be read (or skipped
      *             over) from this input stream without blocking.
@@ -419,7 +419,7 @@ class BufferedInputStream extends FilterInputStream {
      *
      * @param   readlimit   the maximum limit of bytes that can be read before
      *                      the mark position becomes invalid.
-     * @see     java.io.BufferedInputStream#reset()
+     * @see     j86.java.io.BufferedInputStream#reset()
      */
     public synchronized void mark(int readlimit) {
         marklimit = readlimit;
@@ -440,7 +440,7 @@ class BufferedInputStream extends FilterInputStream {
      *                  if the mark has been invalidated, or the stream
      *                  has been closed by invoking its {@link #close()}
      *                  method, or an I/O error occurs.
-     * @see        java.io.BufferedInputStream#mark(int)
+     * @see        j86.java.io.BufferedInputStream#mark(int)
      */
     public synchronized void reset() throws IOException {
         getBufIfOpen(); // Cause exception if closed
@@ -457,8 +457,8 @@ class BufferedInputStream extends FilterInputStream {
      *
      * @return  a <code>boolean</code> indicating if this stream type supports
      *          the <code>mark</code> and <code>reset</code> methods.
-     * @see     java.io.InputStream#mark(int)
-     * @see     java.io.InputStream#reset()
+     * @see     j86.java.io.InputStream#mark(int)
+     * @see     j86.java.io.InputStream#reset()
      */
     public boolean markSupported() {
         return true;

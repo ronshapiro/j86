@@ -32,14 +32,14 @@
  */
 
 
-package com.sun.tools.example.trace;
+package j86.com.sun.tools.example.trace;
 
-import com.sun.jdi.*;
-import com.sun.jdi.request.*;
-import com.sun.jdi.event.*;
+import j86.com.sun.jdi.*;
+import j86.j86.com.sun.jdi.request.*;
+import j86.j86.com.sun.jdi.event.*;
 
-import java.util.*;
-import java.io.PrintWriter;
+import j86.java.util.*;
+import j86.java.io.PrintWriter;
 
 /**
  * This class processes incoming JDI events and displays them

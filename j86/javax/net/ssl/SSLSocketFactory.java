@@ -24,16 +24,16 @@
  */
 
 
-package javax.net.ssl;
+package j86.j86.javax.net.ssl;
 
-import java.net.*;
-import javax.net.SocketFactory;
-import java.io.IOException;
-import java.io.InputStream;
-import java.security.*;
-import java.util.Locale;
+import j86.java.net.*;
+import j86.javax.net.SocketFactory;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.security.*;
+import j86.java.util.Locale;
 
-import sun.security.action.GetPropertyAction;
+import j86.sun.security.action.GetPropertyAction;
 
 /**
  * <code>SSLSocketFactory</code>s create <code>SSLSocket</code>s.
@@ -51,8 +51,8 @@ public abstract class SSLSocketFactory extends SocketFactory
     static final boolean DEBUG;
 
     static {
-        String s = java.security.AccessController.doPrivileged(
-            new GetPropertyAction("javax.net.debug", "")).toLowerCase(
+        String s = j86.java.security.AccessController.doPrivileged(
+            new GetPropertyAction("j86.javax.net.debug", "")).toLowerCase(
                                                             Locale.ENGLISH);
         DEBUG = s.contains("all") || s.contains("ssl");
     }
@@ -129,7 +129,7 @@ public abstract class SSLSocketFactory extends SocketFactory
         return AccessController.doPrivileged(new PrivilegedAction<String>() {
             @Override
             public String run() {
-                String s = java.security.Security.getProperty(name);
+                String s = j86.java.security.Security.getProperty(name);
                 if (s != null) {
                     s = s.trim();
                     if (s.length() == 0) {
@@ -198,7 +198,7 @@ public abstract class SSLSocketFactory extends SocketFactory
      * (RFC6066)</A>).  Data that has been already removed from the
      * underlying {@link InputStream} should be loaded into the
      * {@code consumed} stream before this method is called, perhaps
-     * using a {@link java.io.ByteArrayInputStream}.  When this
+     * using a {@link j86.java.io.ByteArrayInputStream}.  When this
      * {@link Socket} begins handshaking, it will read all of the data in
      * {@code consumed} until it reaches {@code EOF}, then all further
      * data is read from the underlying {@link InputStream} as

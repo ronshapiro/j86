@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.security.util;
+package j86.sun.security.util;
 
-import java.io.IOException;
-import java.util.ArrayList;
+import j86.java.io.IOException;
+import j86.java.util.ArrayList;
 
 /**
  * A package private utility class to convert indefinite length DER

@@ -23,11 +23,11 @@
  * questions.
  */
 
-package java.security;
+package j86.java.security;
 
-import java.nio.ByteBuffer;
+import j86.java.nio.ByteBuffer;
 
-import sun.security.jca.JCAUtil;
+import j86.sun.security.jca.JCAUtil;
 
 /**
  * This class defines the <i>Service Provider Interface</i> (<b>SPI</b>)

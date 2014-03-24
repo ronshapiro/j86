@@ -23,15 +23,15 @@
  * questions.
  */
 
-package sun.java2d.opengl;
+package j86.j86.sun.java2d.opengl;
 
-import java.awt.Color;
-import java.awt.Transparency;
+import j86.java.awt.Color;
+import j86.java.awt.Transparency;
 
-import sun.java2d.SurfaceData;
-import sun.java2d.SurfaceDataProxy;
-import sun.java2d.loops.SurfaceType;
-import sun.java2d.loops.CompositeType;
+import j86.sun.java2d.SurfaceData;
+import j86.sun.java2d.SurfaceDataProxy;
+import j86.j86.sun.java2d.loops.SurfaceType;
+import j86.j86.sun.java2d.loops.CompositeType;
 
 /**
  * The proxy class contains the logic for when to replace a

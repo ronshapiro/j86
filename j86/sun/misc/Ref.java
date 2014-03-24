@@ -23,8 +23,8 @@
  * questions.
  */
 
-package sun.misc;
-import java.lang.ref.SoftReference;
+package j86.sun.misc;
+import j86.j86.java.lang.ref.SoftReference;
 
 
 /**
@@ -39,9 +39,9 @@ import java.lang.ref.SoftReference;
  * constructor to set them up, and write a version of reconstitute().
  *
  * @deprecated This class has been replaced by
- * <code>java.util.SoftReference</code>.
+ * <code>j86.java.util.SoftReference</code>.
  *
- * @see java.util.SoftReference
+ * @see j86.java.util.SoftReference
  *
  */
 @Deprecated

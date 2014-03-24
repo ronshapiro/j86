@@ -33,20 +33,20 @@
 /*
  * $Id: DOMRetrievalMethod.java 1333415 2012-05-03 12:03:51Z coheigea $
  */
-package org.jcp.xml.dsig.internal.dom;
+package j86.j86.org.jcp.xml.dsig.internal.dom;
 
-import java.io.ByteArrayInputStream;
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.security.Provider;
-import java.util.*;
+import j86.java.io.ByteArrayInputStream;
+import j86.java.net.URI;
+import j86.java.net.URISyntaxException;
+import j86.java.security.Provider;
+import j86.java.util.*;
 
 import javax.xml.XMLConstants;
-import javax.xml.crypto.*;
-import javax.xml.crypto.dsig.*;
-import javax.xml.crypto.dom.DOMCryptoContext;
-import javax.xml.crypto.dom.DOMURIReference;
-import javax.xml.crypto.dsig.keyinfo.RetrievalMethod;
+import j86.javax.xml.crypto.*;
+import j86.j86.javax.xml.crypto.dsig.*;
+import j86.j86.javax.xml.crypto.dom.DOMCryptoContext;
+import j86.j86.javax.xml.crypto.dom.DOMURIReference;
+import j86.j86.j86.javax.xml.crypto.dsig.keyinfo.RetrievalMethod;
 import javax.xml.parsers.*;
 import org.w3c.dom.Attr;
 import org.w3c.dom.Document;

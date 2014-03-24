@@ -23,7 +23,7 @@
  * questions.
  */
 
-package com.sun.management;
+package com.j86.sun.management;
 
 /**
  * Platform-specific management interface for the Unix
@@ -34,7 +34,7 @@ package com.sun.management;
  */
 @jdk.Exported
 public interface UnixOperatingSystemMXBean extends
-    com.sun.management.OperatingSystemMXBean {
+    com.j86.sun.management.OperatingSystemMXBean {
 
     /**
      * Returns the number of open file descriptors.

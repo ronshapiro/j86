@@ -33,31 +33,31 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package java.util.concurrent;
-import java.io.Serializable;
-import java.util.AbstractCollection;
-import java.util.AbstractMap;
-import java.util.AbstractSet;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import java.util.NavigableMap;
-import java.util.NavigableSet;
-import java.util.NoSuchElementException;
-import java.util.Set;
-import java.util.SortedMap;
-import java.util.SortedSet;
-import java.util.Spliterator;
-import java.util.concurrent.ConcurrentMap;
-import java.util.concurrent.ConcurrentNavigableMap;
-import java.util.function.BiFunction;
-import java.util.function.Consumer;
-import java.util.function.BiConsumer;
-import java.util.function.Function;
+package j86.j86.java.util.concurrent;
+import j86.java.io.Serializable;
+import j86.java.util.AbstractCollection;
+import j86.java.util.AbstractMap;
+import j86.java.util.AbstractSet;
+import j86.java.util.ArrayList;
+import j86.java.util.Collection;
+import j86.java.util.Collections;
+import j86.java.util.Comparator;
+import j86.java.util.Iterator;
+import j86.java.util.List;
+import j86.java.util.Map;
+import j86.java.util.NavigableMap;
+import j86.java.util.NavigableSet;
+import j86.java.util.NoSuchElementException;
+import j86.java.util.Set;
+import j86.java.util.SortedMap;
+import j86.java.util.SortedSet;
+import j86.java.util.Spliterator;
+import j86.j86.java.util.concurrent.ConcurrentMap;
+import j86.j86.java.util.concurrent.ConcurrentNavigableMap;
+import j86.j86.java.util.function.BiFunction;
+import j86.j86.java.util.function.Consumer;
+import j86.j86.java.util.function.BiConsumer;
+import j86.j86.java.util.function.Function;
 
 /**
  * A scalable concurrent {@link ConcurrentNavigableMap} implementation.
@@ -283,7 +283,7 @@ public class ConcurrentSkipListMap<K,V> extends AbstractMap<K,V>
      * do, half have one level, a quarter have two, and so on (see
      * Pugh's Skip List Cookbook, sec 3.4).  The expected total space
      * requirement for a map is slightly less than for the current
-     * implementation of java.util.TreeMap.
+     * implementation of j86.java.util.TreeMap.
      *
      * Changing the level of the index (i.e, the height of the
      * tree-like structure) also uses CAS. The head index has initial
@@ -535,13 +535,13 @@ public class ConcurrentSkipListMap<K,V> extends AbstractMap<K,V>
 
         // UNSAFE mechanics
 
-        private static final sun.misc.Unsafe UNSAFE;
+        private static final j86.sun.misc.Unsafe UNSAFE;
         private static final long valueOffset;
         private static final long nextOffset;
 
         static {
             try {
-                UNSAFE = sun.misc.Unsafe.getUnsafe();
+                UNSAFE = j86.sun.misc.Unsafe.getUnsafe();
                 Class<?> k = Node.class;
                 valueOffset = UNSAFE.objectFieldOffset
                     (k.getDeclaredField("value"));
@@ -617,11 +617,11 @@ public class ConcurrentSkipListMap<K,V> extends AbstractMap<K,V>
         }
 
         // Unsafe mechanics
-        private static final sun.misc.Unsafe UNSAFE;
+        private static final j86.sun.misc.Unsafe UNSAFE;
         private static final long rightOffset;
         static {
             try {
-                UNSAFE = sun.misc.Unsafe.getUnsafe();
+                UNSAFE = j86.sun.misc.Unsafe.getUnsafe();
                 Class<?> k = Index.class;
                 rightOffset = UNSAFE.objectFieldOffset
                     (k.getDeclaredField("right"));
@@ -1417,15 +1417,15 @@ public class ConcurrentSkipListMap<K,V> extends AbstractMap<K,V>
      * Saves this map to a stream (that is, serializes it).
      *
      * @param s the stream
-     * @throws java.io.IOException if an I/O error occurs
+     * @throws j86.java.io.IOException if an I/O error occurs
      * @serialData The key (Object) and value (Object) for each
      * key-value mapping represented by the map, followed by
      * {@code null}. The key-value mappings are emitted in key-order
      * (as determined by the Comparator, or by the keys' natural
      * ordering if no Comparator).
      */
-    private void writeObject(java.io.ObjectOutputStream s)
-        throws java.io.IOException {
+    private void writeObject(j86.java.io.ObjectOutputStream s)
+        throws j86.java.io.IOException {
         // Write out the Comparator and any hidden stuff
         s.defaultWriteObject();
 
@@ -1445,11 +1445,11 @@ public class ConcurrentSkipListMap<K,V> extends AbstractMap<K,V>
      * @param s the stream
      * @throws ClassNotFoundException if the class of a serialized object
      *         could not be found
-     * @throws java.io.IOException if an I/O error occurs
+     * @throws j86.java.io.IOException if an I/O error occurs
      */
     @SuppressWarnings("unchecked")
-    private void readObject(final java.io.ObjectInputStream s)
-        throws java.io.IOException, ClassNotFoundException {
+    private void readObject(final j86.java.io.ObjectInputStream s)
+        throws j86.java.io.IOException, ClassNotFoundException {
         // Read in the Comparator and any hidden stuff
         s.defaultReadObject();
         // Reset transients
@@ -1811,7 +1811,7 @@ public class ConcurrentSkipListMap<K,V> extends AbstractMap<K,V>
      * {@link Spliterator#NONNULL}, {@link Spliterator#SORTED} and
      * {@link Spliterator#ORDERED}, with an encounter order that is ascending
      * key order.  The spliterator's comparator (see
-     * {@link java.util.Spliterator#getComparator()}) is {@code null} if
+     * {@link j86.java.util.Spliterator#getComparator()}) is {@code null} if
      * the map's comparator (see {@link #comparator()}) is {@code null}.
      * Otherwise, the spliterator's comparator is the same as or imposes the
      * same total ordering as the map's comparator.
@@ -3578,12 +3578,12 @@ public class ConcurrentSkipListMap<K,V> extends AbstractMap<K,V>
     }
 
     // Unsafe mechanics
-    private static final sun.misc.Unsafe UNSAFE;
+    private static final j86.sun.misc.Unsafe UNSAFE;
     private static final long headOffset;
     private static final long SECONDARY;
     static {
         try {
-            UNSAFE = sun.misc.Unsafe.getUnsafe();
+            UNSAFE = j86.sun.misc.Unsafe.getUnsafe();
             Class<?> k = ConcurrentSkipListMap.class;
             headOffset = UNSAFE.objectFieldOffset
                 (k.getDeclaredField("head"));

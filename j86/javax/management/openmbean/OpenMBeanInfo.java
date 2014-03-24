@@ -24,7 +24,7 @@
  */
 
 
-package javax.management.openmbean;
+package j86.j86.javax.management.openmbean;
 
 
 // java import
@@ -33,24 +33,24 @@ package javax.management.openmbean;
 
 // jmx import
 //
-import javax.management.MBeanAttributeInfo;
-import javax.management.MBeanOperationInfo;
-import javax.management.MBeanConstructorInfo;
-import javax.management.MBeanNotificationInfo;
+import j86.javax.management.MBeanAttributeInfo;
+import j86.javax.management.MBeanOperationInfo;
+import j86.javax.management.MBeanConstructorInfo;
+import j86.javax.management.MBeanNotificationInfo;
 
 
 
 /**
  * <p>Describes an Open MBean: an Open MBean is recognized as such if
- * its {@link javax.management.DynamicMBean#getMBeanInfo()
+ * its {@link j86.javax.management.DynamicMBean#getMBeanInfo()
  * getMBeanInfo()} method returns an instance of a class which
  * implements the {@link OpenMBeanInfo} interface, typically {@link
  * OpenMBeanInfoSupport}.</p>
  *
  * <p>This interface declares the same methods as the class {@link
- * javax.management.MBeanInfo}.  A class implementing this interface
+ * j86.javax.management.MBeanInfo}.  A class implementing this interface
  * (typically {@link OpenMBeanInfoSupport}) should extend {@link
- * javax.management.MBeanInfo}.</p>
+ * j86.javax.management.MBeanInfo}.</p>
  *
  * <p>The {@link #getAttributes()}, {@link #getOperations()} and
  * {@link #getConstructors()} methods of the implementing class should
@@ -162,7 +162,7 @@ public interface OpenMBeanInfo {
      * of all elements of information used in <code>equals</code> comparisons
      * (ie: its class name, and its infos on attributes, constructors, operations and notifications,
      * where the hashCode of each of these arrays is calculated by a call to
-     *  <tt>new java.util.HashSet(java.util.Arrays.asList(this.getSignature)).hashCode()</tt>).
+     *  <tt>new j86.java.util.HashSet(java.util.Arrays.asList(this.getSignature)).hashCode()</tt>).
      * <p>
      * This ensures that <code> t1.equals(t2) </code> implies that <code> t1.hashCode()==t2.hashCode() </code>
      * for any two <code>OpenMBeanInfo</code> instances <code>t1</code> and <code>t2</code>,
@@ -177,7 +177,7 @@ public interface OpenMBeanInfo {
     /**
      * Returns a string representation of this <code>OpenMBeanInfo</code> instance.
      * <p>
-     * The string representation consists of the name of this class (ie <code>javax.management.openmbean.OpenMBeanInfo</code>),
+     * The string representation consists of the name of this class (ie <code>j86.j86.javax.management.openmbean.OpenMBeanInfo</code>),
      * the MBean class name,
      * and the string representation of infos on attributes, constructors, operations and notifications of the described MBean.
      *

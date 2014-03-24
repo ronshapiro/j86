@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.jmx.snmp.internal;
+package j86.j86.com.sun.jmx.snmp.internal;
 /**
  * Interface that every SNMP model must implement in order to be integrated in the engine framework.
  * <p><b>This API is a Sun Microsystems internal API  and is subject

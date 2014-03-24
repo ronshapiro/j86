@@ -22,12 +22,12 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.beans.util;
+package j86.j86.com.sun.beans.util;
 
-import java.lang.ref.ReferenceQueue;
-import java.lang.ref.SoftReference;
-import java.lang.ref.WeakReference;
-import java.util.Objects;
+import j86.j86.java.lang.ref.ReferenceQueue;
+import j86.j86.java.lang.ref.SoftReference;
+import j86.j86.java.lang.ref.WeakReference;
+import j86.java.util.Objects;
 
 /**
  * Hash table based implementation of the cache,
@@ -498,7 +498,7 @@ public abstract class Cache<K,V> {
          * of the garbage collector in response to a memory request.
          *
          * @param <T> the type of object to refer
-         * @see java.lang.ref.SoftReference
+         * @see j86.j86.java.lang.ref.SoftReference
          */
         private static final class Soft<T> extends SoftReference<T> implements Ref<T> {
             private Object owner;
@@ -557,7 +557,7 @@ public abstract class Cache<K,V> {
          * from being made finalizable, finalized, and then reclaimed.
          *
          * @param <T> the type of object to refer
-         * @see java.lang.ref.WeakReference
+         * @see j86.j86.java.lang.ref.WeakReference
          */
         private static final class Weak<T> extends WeakReference<T> implements Ref<T> {
             private Object owner;

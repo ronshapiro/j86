@@ -23,13 +23,13 @@
  * questions.
  */
 
-package java.nio.file.attribute;
+package j86.j86.j86.java.nio.file.attribute;
 
 /**
  * An object that encapsulates the value of a file attribute that can be set
  * atomically when creating a new file or directory by invoking the {@link
- * java.nio.file.Files#createFile createFile} or {@link
- * java.nio.file.Files#createDirectory createDirectory} methods.
+ * j86.j86.java.nio.file.Files#createFile createFile} or {@link
+ * j86.j86.java.nio.file.Files#createDirectory createDirectory} methods.
  *
  * @param <T> The type of the file attribute value
  *

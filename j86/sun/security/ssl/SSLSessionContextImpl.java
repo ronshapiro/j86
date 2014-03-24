@@ -24,16 +24,16 @@
  */
 
 
-package sun.security.ssl;
+package j86.sun.security.ssl;
 
-import java.util.Enumeration;
-import java.util.Vector;
-import java.util.Locale;
+import j86.java.util.Enumeration;
+import j86.java.util.Vector;
+import j86.java.util.Locale;
 
-import javax.net.ssl.SSLSession;
-import javax.net.ssl.SSLSessionContext;
+import j86.j86.javax.net.ssl.SSLSession;
+import j86.j86.javax.net.ssl.SSLSessionContext;
 
-import sun.security.util.Cache;
+import j86.sun.security.util.Cache;
 
 
 final class SSLSessionContextImpl implements SSLSessionContext {
@@ -199,12 +199,12 @@ final class SSLSessionContextImpl implements SSLSessionContext {
     private int getDefaultCacheLimit() {
         int cacheLimit = 0;
         try {
-        String s = java.security.AccessController.doPrivileged(
-                new java.security.PrivilegedAction<String>() {
+        String s = j86.java.security.AccessController.doPrivileged(
+                new j86.java.security.PrivilegedAction<String>() {
                 @Override
                 public String run() {
                     return System.getProperty(
-                        "javax.net.ssl.sessionCacheSize");
+                        "j86.j86.javax.net.ssl.sessionCacheSize");
                 }
             });
             cacheLimit = (s != null) ? Integer.valueOf(s).intValue() : 0;
@@ -232,9 +232,9 @@ final class SSLSessionContextImpl implements SSLSessionContext {
             implements Cache.CacheVisitor<SessionId, SSLSessionImpl> {
         Vector<byte[]> ids = null;
 
-        // public void visit(java.util.Map<K,V> map) {}
+        // public void visit(j86.java.util.Map<K,V> map) {}
         @Override
-        public void visit(java.util.Map<SessionId, SSLSessionImpl> map) {
+        public void visit(j86.java.util.Map<SessionId, SSLSessionImpl> map) {
             ids = new Vector<>(map.size());
 
             for (SessionId key : map.keySet()) {

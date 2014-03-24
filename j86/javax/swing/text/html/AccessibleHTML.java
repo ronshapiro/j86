@@ -23,17 +23,17 @@
  * questions.
  */
 
-package javax.swing.text.html;
+package j86.j86.j86.javax.swing.text.html;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.beans.*;
-import java.util.*;
-import javax.swing.*;
-import javax.swing.event.*;
-import javax.swing.text.*;
-import javax.accessibility.*;
-import java.text.BreakIterator;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.java.beans.*;
+import j86.java.util.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.event.*;
+import j86.j86.javax.swing.text.*;
+import j86.javax.accessibility.*;
+import j86.java.text.BreakIterator;
 
 /*
  * The AccessibleHTML class provide information about the contents

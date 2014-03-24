@@ -29,25 +29,25 @@
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
 
-package sun.security.krb5;
+package j86.sun.security.krb5;
 
-import java.security.PrivilegedAction;
-import java.security.Security;
-import java.util.Locale;
-import sun.security.krb5.internal.Krb5;
-import sun.security.krb5.internal.NetClient;
-import java.io.IOException;
-import java.net.SocketTimeoutException;
-import java.util.StringTokenizer;
-import java.security.AccessController;
-import java.security.PrivilegedExceptionAction;
-import java.security.PrivilegedActionException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
-import java.util.HashSet;
-import java.util.Iterator;
-import sun.security.krb5.internal.KRBError;
+import j86.java.security.PrivilegedAction;
+import j86.java.security.Security;
+import j86.java.util.Locale;
+import j86.j86.sun.security.krb5.internal.Krb5;
+import j86.j86.sun.security.krb5.internal.NetClient;
+import j86.java.io.IOException;
+import j86.java.net.SocketTimeoutException;
+import j86.java.util.StringTokenizer;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedExceptionAction;
+import j86.java.security.PrivilegedActionException;
+import j86.java.util.ArrayList;
+import j86.java.util.List;
+import j86.java.util.Set;
+import j86.java.util.HashSet;
+import j86.java.util.Iterator;
+import j86.j86.sun.security.krb5.internal.KRBError;
 
 /**
  * KDC-REQ/KDC-REP communication. No more base class for KrbAsReq and
@@ -78,7 +78,7 @@ public final class KdcComm {
 
     /**
      * What to do when a KDC is unavailable, specified in the
-     * java.security file with key krb5.kdc.bad.policy.
+     * j86.java.security file with key krb5.kdc.bad.policy.
      * Possible values can be TRY_LAST or TRY_LESS. Reloaded when refreshed.
      */
     private enum BpType {

@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.security.util;
+package j86.sun.security.util;
 
-import java.security.spec.AlgorithmParameterSpec;
+import j86.j86.java.security.spec.AlgorithmParameterSpec;
 
-import sun.security.util.ObjectIdentifier;
+import j86.sun.security.util.ObjectIdentifier;
 
 /**
  * This immutable class is used when randomly generating a key pair and the

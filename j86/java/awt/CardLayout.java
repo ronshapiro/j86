@@ -23,17 +23,17 @@
  * questions.
  */
 
-package java.awt;
+package j86.java.awt;
 
-import java.util.Hashtable;
-import java.util.Vector;
-import java.util.Enumeration;
+import j86.java.util.Hashtable;
+import j86.java.util.Vector;
+import j86.java.util.Enumeration;
 
-import java.io.Serializable;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.ObjectStreamField;
-import java.io.IOException;
+import j86.java.io.Serializable;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectStreamField;
+import j86.java.io.IOException;
 
 /**
  * A <code>CardLayout</code> object is a layout manager for a
@@ -52,7 +52,7 @@ import java.io.IOException;
  * for fast random access.
  *
  * @author      Arthur van Hoff
- * @see         java.awt.Container
+ * @see         j86.java.awt.Container
  * @since       JDK1.0
  */
 
@@ -64,7 +64,7 @@ public class CardLayout implements LayoutManager2,
     /*
      * This creates a Vector to store associated
      * pairs of components and their names.
-     * @see java.util.Vector
+     * @see j86.java.util.Vector
      */
     Vector<Card> vector = new Vector<>();
 
@@ -146,8 +146,8 @@ public class CardLayout implements LayoutManager2,
     /**
      * Gets the horizontal gap between components.
      * @return    the horizontal gap between components.
-     * @see       java.awt.CardLayout#setHgap(int)
-     * @see       java.awt.CardLayout#getVgap()
+     * @see       j86.java.awt.CardLayout#setHgap(int)
+     * @see       j86.java.awt.CardLayout#getVgap()
      * @since     JDK1.1
      */
     public int getHgap() {
@@ -157,8 +157,8 @@ public class CardLayout implements LayoutManager2,
     /**
      * Sets the horizontal gap between components.
      * @param hgap the horizontal gap between components.
-     * @see       java.awt.CardLayout#getHgap()
-     * @see       java.awt.CardLayout#setVgap(int)
+     * @see       j86.java.awt.CardLayout#getHgap()
+     * @see       j86.java.awt.CardLayout#setVgap(int)
      * @since     JDK1.1
      */
     public void setHgap(int hgap) {
@@ -168,8 +168,8 @@ public class CardLayout implements LayoutManager2,
     /**
      * Gets the vertical gap between components.
      * @return the vertical gap between components.
-     * @see       java.awt.CardLayout#setVgap(int)
-     * @see       java.awt.CardLayout#getHgap()
+     * @see       j86.java.awt.CardLayout#setVgap(int)
+     * @see       j86.java.awt.CardLayout#getHgap()
      */
     public int getVgap() {
         return vgap;
@@ -178,8 +178,8 @@ public class CardLayout implements LayoutManager2,
     /**
      * Sets the vertical gap between components.
      * @param     vgap the vertical gap between components.
-     * @see       java.awt.CardLayout#getVgap()
-     * @see       java.awt.CardLayout#setHgap(int)
+     * @see       j86.java.awt.CardLayout#getVgap()
+     * @see       j86.java.awt.CardLayout#setHgap(int)
      * @since     JDK1.1
      */
     public void setVgap(int vgap) {
@@ -196,7 +196,7 @@ public class CardLayout implements LayoutManager2,
      * @param     comp          the component to be added.
      * @param     constraints   a tag that identifies a particular
      *                                        card in the layout.
-     * @see       java.awt.CardLayout#show(java.awt.Container, java.lang.String)
+     * @see       j86.java.awt.CardLayout#show(java.awt.Container, j86.java.lang.String)
      * @exception  IllegalArgumentException  if the constraint is not a string.
      */
     public void addLayoutComponent(Component comp, Object constraints) {
@@ -236,8 +236,8 @@ public class CardLayout implements LayoutManager2,
      * Removes the specified component from the layout.
      * If the card was visible on top, the next card underneath it is shown.
      * @param   comp   the component to be removed.
-     * @see     java.awt.Container#remove(java.awt.Component)
-     * @see     java.awt.Container#removeAll()
+     * @see     j86.java.awt.Container#remove(java.awt.Component)
+     * @see     j86.java.awt.Container#removeAll()
      */
     public void removeLayoutComponent(Component comp) {
         synchronized (comp.getTreeLock()) {
@@ -266,8 +266,8 @@ public class CardLayout implements LayoutManager2,
      * @param   parent the parent container in which to do the layout
      * @return  the preferred dimensions to lay out the subcomponents
      *                of the specified container
-     * @see     java.awt.Container#getPreferredSize
-     * @see     java.awt.CardLayout#minimumLayoutSize
+     * @see     j86.java.awt.Container#getPreferredSize
+     * @see     j86.java.awt.CardLayout#minimumLayoutSize
      */
     public Dimension preferredLayoutSize(Container parent) {
         synchronized (parent.getTreeLock()) {
@@ -296,8 +296,8 @@ public class CardLayout implements LayoutManager2,
      * @param     parent the parent container in which to do the layout
      * @return    the minimum dimensions required to lay out the
      *                subcomponents of the specified container
-     * @see       java.awt.Container#doLayout
-     * @see       java.awt.CardLayout#preferredLayoutSize
+     * @see       j86.java.awt.Container#doLayout
+     * @see       j86.java.awt.CardLayout#preferredLayoutSize
      */
     public Dimension minimumLayoutSize(Container parent) {
         synchronized (parent.getTreeLock()) {
@@ -370,7 +370,7 @@ public class CardLayout implements LayoutManager2,
      * insets, horizontal gaps, and vertical gaps.
      *
      * @param     parent the parent container in which to do the layout
-     * @see       java.awt.Container#doLayout
+     * @see       j86.java.awt.Container#doLayout
      */
     public void layoutContainer(Container parent) {
         synchronized (parent.getTreeLock()) {
@@ -408,7 +408,7 @@ public class CardLayout implements LayoutManager2,
     /**
      * Flips to the first card of the container.
      * @param     parent   the parent container in which to do the layout
-     * @see       java.awt.CardLayout#last
+     * @see       j86.java.awt.CardLayout#last
      */
     public void first(Container parent) {
         synchronized (parent.getTreeLock()) {
@@ -434,7 +434,7 @@ public class CardLayout implements LayoutManager2,
      * currently visible card is the last one, this method flips to the
      * first card in the layout.
      * @param     parent   the parent container in which to do the layout
-     * @see       java.awt.CardLayout#previous
+     * @see       j86.java.awt.CardLayout#previous
      */
     public void next(Container parent) {
         synchronized (parent.getTreeLock()) {
@@ -460,7 +460,7 @@ public class CardLayout implements LayoutManager2,
      * currently visible card is the first one, this method flips to the
      * last card in the layout.
      * @param     parent   the parent container in which to do the layout
-     * @see       java.awt.CardLayout#next
+     * @see       j86.java.awt.CardLayout#next
      */
     public void previous(Container parent) {
         synchronized (parent.getTreeLock()) {
@@ -492,7 +492,7 @@ public class CardLayout implements LayoutManager2,
     /**
      * Flips to the last card of the container.
      * @param     parent   the parent container in which to do the layout
-     * @see       java.awt.CardLayout#first
+     * @see       j86.java.awt.CardLayout#first
      */
     public void last(Container parent) {
         synchronized (parent.getTreeLock()) {
@@ -519,7 +519,7 @@ public class CardLayout implements LayoutManager2,
      * If no such component exists, then nothing happens.
      * @param     parent   the parent container in which to do the layout
      * @param     name     the component name
-     * @see       java.awt.CardLayout#addLayoutComponent(java.awt.Component, java.lang.Object)
+     * @see       j86.java.awt.CardLayout#addLayoutComponent(java.awt.Component, j86.java.lang.Object)
      */
     public void show(Container parent, String name) {
         synchronized (parent.getTreeLock()) {

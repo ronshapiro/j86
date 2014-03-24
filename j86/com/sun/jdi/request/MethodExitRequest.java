@@ -23,22 +23,22 @@
  * questions.
  */
 
-package com.sun.jdi.request;
+package j86.j86.com.sun.jdi.request;
 
-import com.sun.jdi.*;
+import j86.com.sun.jdi.*;
 
 /**
  * Request for notification when a method returns in the target VM.
  * When an enabled MethodExitRequest is hit, an
- * {@link com.sun.jdi.event.EventSet event set} containing a
- * {@link com.sun.jdi.event.MethodExitEvent MethodExitEvent}
+ * {@link j86.j86.com.sun.jdi.event.EventSet event set} containing a
+ * {@link j86.j86.com.sun.jdi.event.MethodExitEvent MethodExitEvent}
  * will be placed on the
- * {@link com.sun.jdi.event.EventQueue EventQueue}.
+ * {@link j86.j86.com.sun.jdi.event.EventQueue EventQueue}.
  * The collection of existing MethodExitRequests is
  * managed by the {@link EventRequestManager}
  *
- * @see com.sun.jdi.event.MethodExitEvent
- * @see com.sun.jdi.event.EventQueue
+ * @see j86.j86.com.sun.jdi.event.MethodExitEvent
+ * @see j86.j86.com.sun.jdi.event.EventQueue
  * @see EventRequestManager
  *
  * @author Robert Field
@@ -109,7 +109,7 @@ public interface MethodExitRequest extends EventRequest {
      * @since 1.4
      * @param instance the object which must be the current instance
      * in order to pass this filter.
-     * @throws java.lang.UnsupportedOperationException if
+     * @throws j86.java.lang.UnsupportedOperationException if
      * the target virtual machine does not support this
      * operation.
      * @throws InvalidRequestStateException if this request is currently

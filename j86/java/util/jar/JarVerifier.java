@@ -23,20 +23,20 @@
  * questions.
  */
 
-package java.util.jar;
+package j86.j86.java.util.jar;
 
-import java.io.*;
-import java.net.URL;
-import java.util.*;
-import java.security.*;
-import java.security.cert.CertificateException;
-import java.util.zip.ZipEntry;
+import j86.java.io.*;
+import j86.java.net.URL;
+import j86.java.util.*;
+import j86.java.security.*;
+import j86.j86.java.security.cert.CertificateException;
+import j86.j86.java.util.zip.ZipEntry;
 
-import sun.misc.JarIndex;
-import sun.security.util.ManifestDigester;
-import sun.security.util.ManifestEntryVerifier;
-import sun.security.util.SignatureFileVerifier;
-import sun.security.util.Debug;
+import j86.sun.misc.JarIndex;
+import j86.sun.security.util.ManifestDigester;
+import j86.sun.security.util.ManifestEntryVerifier;
+import j86.sun.security.util.SignatureFileVerifier;
+import j86.sun.security.util.Debug;
 
 /**
  *
@@ -316,7 +316,7 @@ class JarVerifier {
                 sfv.process(sigFileSigners, manifestDigests);
 
             } catch (IOException ioe) {
-                // e.g. sun.security.pkcs.ParsingException
+                // e.g. j86.sun.security.pkcs.ParsingException
                 if (debug != null) debug.println("processEntry caught: "+ioe);
                 // ignore and treat as unsigned
             } catch (SignatureException se) {
@@ -333,17 +333,17 @@ class JarVerifier {
     }
 
     /**
-     * Return an array of java.security.cert.Certificate objects for
+     * Return an array of j86.j86.java.security.cert.Certificate objects for
      * the given file in the jar.
      * @deprecated
      */
     @Deprecated
-    public java.security.cert.Certificate[] getCerts(String name)
+    public j86.j86.java.security.cert.Certificate[] getCerts(String name)
     {
         return mapSignersToCertArray(getCodeSigners(name));
     }
 
-    public java.security.cert.Certificate[] getCerts(JarFile jar, JarEntry entry)
+    public j86.j86.java.security.cert.Certificate[] getCerts(JarFile jar, JarEntry entry)
     {
         return mapSignersToCertArray(getCodeSigners(jar, entry));
     }
@@ -384,11 +384,11 @@ class JarVerifier {
      * Convert an array of signers into an array of concatenated certificate
      * arrays.
      */
-    private static java.security.cert.Certificate[] mapSignersToCertArray(
+    private static j86.j86.java.security.cert.Certificate[] mapSignersToCertArray(
         CodeSigner[] signers) {
 
         if (signers != null) {
-            ArrayList<java.security.cert.Certificate> certChains = new ArrayList<>();
+            ArrayList<j86.j86.java.security.cert.Certificate> certChains = new ArrayList<>();
             for (int i = 0; i < signers.length; i++) {
                 certChains.addAll(
                     signers[i].getSignerCertPath().getCertificates());
@@ -396,7 +396,7 @@ class JarVerifier {
 
             // Convert into a Certificate[]
             return certChains.toArray(
-                    new java.security.cert.Certificate[certChains.size()]);
+                    new j86.j86.java.security.cert.Certificate[certChains.size()]);
         }
         return null;
     }
@@ -434,7 +434,7 @@ class JarVerifier {
         }
     }
 
-    static class VerifierStream extends java.io.InputStream {
+    static class VerifierStream extends j86.java.io.InputStream {
 
         private InputStream is;
         private JarVerifier jv;
@@ -589,7 +589,7 @@ class JarVerifier {
 
         URL vlocation;
         CodeSigner[] vsigners;
-        java.security.cert.Certificate[] vcerts;
+        j86.j86.java.security.cert.Certificate[] vcerts;
         Object csdomain;
 
         VerifierCodeSource(Object csdomain, URL location, CodeSigner[] signers) {
@@ -599,7 +599,7 @@ class JarVerifier {
             vsigners = signers; // from signerCache
         }
 
-        VerifierCodeSource(Object csdomain, URL location, java.security.cert.Certificate[] certs) {
+        VerifierCodeSource(Object csdomain, URL location, j86.j86.java.security.cert.Certificate[] certs) {
             super(location, certs);
             this.csdomain = csdomain;
             vlocation = location;
@@ -649,7 +649,7 @@ class JarVerifier {
             return vsigners;
         }
 
-        private java.security.cert.Certificate[] getPrivateCertificates() {
+        private j86.j86.java.security.cert.Certificate[] getPrivateCertificates() {
             return vcerts;
         }
     }
@@ -889,6 +889,6 @@ class JarVerifier {
     }
 
     static CodeSource getUnsignedCS(URL url) {
-        return new VerifierCodeSource(null, url, (java.security.cert.Certificate[]) null);
+        return new VerifierCodeSource(null, url, (j86.j86.java.security.cert.Certificate[]) null);
     }
 }

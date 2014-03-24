@@ -23,34 +23,34 @@
  * questions.
  */
 
-package com.sun.security.auth.module;
+package j86.j86.com.sun.security.auth.module;
 
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.security.*;
-import java.security.cert.*;
-import java.security.cert.Certificate;
-import java.security.cert.X509Certificate;
-import java.util.*;
-import javax.security.auth.Destroyable;
-import javax.security.auth.DestroyFailedException;
-import javax.security.auth.Subject;
-import javax.security.auth.x500.*;
-import javax.security.auth.callback.Callback;
-import javax.security.auth.callback.CallbackHandler;
-import javax.security.auth.callback.ConfirmationCallback;
-import javax.security.auth.callback.NameCallback;
-import javax.security.auth.callback.PasswordCallback;
-import javax.security.auth.callback.TextOutputCallback;
-import javax.security.auth.callback.UnsupportedCallbackException;
-import javax.security.auth.login.FailedLoginException;
-import javax.security.auth.login.LoginException;
-import javax.security.auth.spi.LoginModule;
+import j86.java.io.File;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.net.MalformedURLException;
+import j86.java.net.URL;
+import j86.java.security.*;
+import j86.j86.java.security.cert.*;
+import j86.j86.java.security.cert.Certificate;
+import j86.j86.java.security.cert.X509Certificate;
+import j86.java.util.*;
+import j86.javax.security.auth.Destroyable;
+import j86.javax.security.auth.DestroyFailedException;
+import j86.javax.security.auth.Subject;
+import j86.j86.javax.security.auth.x500.*;
+import j86.j86.javax.security.auth.callback.Callback;
+import j86.j86.javax.security.auth.callback.CallbackHandler;
+import j86.j86.javax.security.auth.callback.ConfirmationCallback;
+import j86.j86.javax.security.auth.callback.NameCallback;
+import j86.j86.javax.security.auth.callback.PasswordCallback;
+import j86.j86.javax.security.auth.callback.TextOutputCallback;
+import j86.j86.javax.security.auth.callback.UnsupportedCallbackException;
+import j86.j86.javax.security.auth.login.FailedLoginException;
+import j86.j86.javax.security.auth.login.LoginException;
+import j86.j86.javax.security.auth.spi.LoginModule;
 
-import sun.security.util.Password;
+import j86.sun.security.util.Password;
 
 /**
  * Provides a JAAS login module that prompts for a key store alias and
@@ -117,7 +117,7 @@ public class KeyStoreLoginModule implements LoginModule {
             new PrivilegedAction<ResourceBundle>() {
                 public ResourceBundle run() {
                     return ResourceBundle.getBundle(
-                            "sun.security.util.AuthResources");
+                            "j86.sun.security.util.AuthResources");
                 }
             }
     );
@@ -162,9 +162,9 @@ public class KeyStoreLoginModule implements LoginModule {
     private String keyStorePasswordURL;
     private String privateKeyPasswordURL;
     private boolean debug;
-    private javax.security.auth.x500.X500Principal principal;
+    private j86.j86.javax.security.auth.x500.X500Principal principal;
     private Certificate[] fromKeyStore;
-    private java.security.cert.CertPath certP = null;
+    private j86.j86.java.security.cert.CertPath certP = null;
     private X500PrivateCredential privateCredential;
     private int status = UNINITIALIZED;
     private boolean nullStream = false;
@@ -192,7 +192,7 @@ public class KeyStoreLoginModule implements LoginModule {
      *                  <code>LoginModule</code>.
      */
     // Unchecked warning from (Map<String, Object>)sharedState is safe
-    // since javax.security.auth.login.LoginContext passes a raw HashMap.
+    // since j86.j86.javax.security.auth.login.LoginContext passes a raw HashMap.
     @SuppressWarnings("unchecked")
     public void initialize(Subject subject,
                            CallbackHandler callbackHandler,
@@ -673,7 +673,7 @@ public class KeyStoreLoginModule implements LoginModule {
         /* Get principal and keys */
         try {
             X509Certificate certificate = (X509Certificate)fromKeyStore[0];
-            principal = new javax.security.auth.x500.X500Principal
+            principal = new j86.j86.javax.security.auth.x500.X500Principal
                 (certificate.getSubjectDN().getName());
 
             // if token, privateKeyPassword will be null
@@ -785,7 +785,7 @@ public class KeyStoreLoginModule implements LoginModule {
      * then this method cleans up any state that was originally saved.
      *
      * <p> If the loaded KeyStore's provider extends
-     * <code>java.security.AuthProvider</code>,
+     * <code>j86.java.security.AuthProvider</code>,
      * then the provider's <code>logout</code> method is invoked.
      *
      * <p>
@@ -818,7 +818,7 @@ public class KeyStoreLoginModule implements LoginModule {
      * private credentials that were added by the <code>commit</code> method.
      *
      * <p> If the loaded KeyStore's provider extends
-     * <code>java.security.AuthProvider</code>,
+     * <code>j86.java.security.AuthProvider</code>,
      * then the provider's <code>logout</code> method is invoked.
      *
      * <p>

@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.tracing.dtrace;
+package j86.j86.sun.tracing.dtrace;
 
-import java.lang.reflect.Method;
+import j86.j86.j86.java.lang.reflect.Method;
 
 /**
  * Container class for JVM interface native methods
@@ -35,8 +35,8 @@ import java.lang.reflect.Method;
 class JVM {
 
     static {
-        java.security.AccessController.doPrivileged(
-            new java.security.PrivilegedAction<Void>() {
+        j86.java.security.AccessController.doPrivileged(
+            new j86.java.security.PrivilegedAction<Void>() {
                 public Void run() {
                     System.loadLibrary("jsdt");
                     return null;

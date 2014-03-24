@@ -32,7 +32,7 @@
  */
 
 
-package com.sun.tools.example.debug.tty;
+package j86.com.sun.tools.example.debug.tty;
 
 abstract class WatchpointSpec extends EventRequestSpec {
     final String fieldId;

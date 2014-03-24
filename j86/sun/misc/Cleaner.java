@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.misc;
+package j86.sun.misc;
 
-import java.lang.ref.*;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
+import j86.j86.java.lang.ref.*;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
 
 
 /**

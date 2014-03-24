@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.misc;
+package j86.sun.misc;
 
-import java.io.OutputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.PushbackInputStream;
-import java.io.PrintStream;
-import java.io.IOException;
+import j86.java.io.OutputStream;
+import j86.java.io.ByteArrayOutputStream;
+import j86.java.io.PushbackInputStream;
+import j86.java.io.PrintStream;
+import j86.java.io.IOException;
 
 /**
  * This class implements a robust character decoder. The decoder will

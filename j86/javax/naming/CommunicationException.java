@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.naming;
+package j86.javax.naming;
 
 /**
   * This exception is thrown when the client is
@@ -46,7 +46,7 @@ public class CommunicationException extends NamingException {
      * arguments supplied.
      *
      * @param   explanation     Additional detail about this exception.
-     * @see java.lang.Throwable#getMessage
+     * @see j86.java.lang.Throwable#getMessage
      */
     public CommunicationException(String explanation) {
         super(explanation);

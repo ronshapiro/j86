@@ -23,12 +23,12 @@
  * questions.
  */
 
-package javax.swing.plaf.metal;
+package j86.j86.j86.javax.swing.plaf.metal;
 
-import javax.swing.*;
-import javax.swing.plaf.*;
-import javax.swing.plaf.basic.*;
-import java.awt.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.j86.javax.swing.plaf.basic.*;
+import j86.java.awt.*;
 
 /**
  * The Metal implementation of ProgressBarUI.
@@ -39,8 +39,8 @@ import java.awt.*;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @author Michael C. Albers
  */

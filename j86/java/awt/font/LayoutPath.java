@@ -25,9 +25,9 @@
 /*
  * (C) Copyright IBM Corp. 2005, All Rights Reserved.
  */
-package java.awt.font;
+package j86.j86.java.awt.font;
 
-import java.awt.geom.Point2D;
+import j86.j86.java.awt.geom.Point2D;
 
 /**
  * LayoutPath provides a mapping between locations relative to the

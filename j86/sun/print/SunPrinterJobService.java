@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.print;
+package j86.sun.print;
 
  /*
   * A interface which indicates this service is implemented

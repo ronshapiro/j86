@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.awt.peer;
+package j86.j86.java.awt.peer;
 
-import java.awt.Window;
-import java.awt.Point;
+import j86.java.awt.Window;
+import j86.java.awt.Point;
 
 /**
  * Peer interface for {@link MouseInfo}. This is used to get some additional
@@ -53,7 +53,7 @@ public interface MouseInfoPeer {
      * coordinate system. Otherwise, coordinates are calculated in
      * the coordinate system of the screen device where the pointer
      * is located.
-     * See java.awt.GraphicsConfiguration documentation for more
+     * See j86.java.awt.GraphicsConfiguration documentation for more
      * details about virtual screen devices.
      */
     int fillPointWithCoords(Point point);

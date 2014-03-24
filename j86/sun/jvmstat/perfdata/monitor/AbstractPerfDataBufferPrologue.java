@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.jvmstat.perfdata.monitor;
+package j86.sun.jvmstat.perfdata.monitor;
 
-import sun.jvmstat.monitor.*;
-import java.nio.ByteOrder;
-import java.nio.ByteBuffer;
-import java.nio.IntBuffer;
+import j86.sun.jvmstat.monitor.*;
+import j86.java.nio.ByteOrder;
+import j86.java.nio.ByteBuffer;
+import j86.java.nio.IntBuffer;
 
 /**
  * Abstraction representing the HotSpot PerfData instrumentation buffer

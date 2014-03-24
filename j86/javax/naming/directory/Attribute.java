@@ -23,15 +23,15 @@
  * questions.
  */
 
-package javax.naming.directory;
+package j86.j86.javax.naming.directory;
 
-import java.util.Vector;
-import java.util.Enumeration;
-import java.util.NoSuchElementException;
+import j86.java.util.Vector;
+import j86.java.util.Enumeration;
+import j86.java.util.NoSuchElementException;
 
-import javax.naming.NamingException;
-import javax.naming.NamingEnumeration;
-import javax.naming.OperationNotSupportedException;
+import j86.javax.naming.NamingException;
+import j86.javax.naming.NamingEnumeration;
+import j86.javax.naming.OperationNotSupportedException;
 
 /**
   * This interface represents an attribute associated with a named object.
@@ -72,7 +72,7 @@ import javax.naming.OperationNotSupportedException;
   * @see BasicAttribute
   * @since 1.3
   */
-public interface Attribute extends Cloneable, java.io.Serializable {
+public interface Attribute extends Cloneable, j86.java.io.Serializable {
     /**
       * Retrieves an enumeration of the attribute's values.
       * The behaviour of this enumeration is unspecified
@@ -107,7 +107,7 @@ public interface Attribute extends Cloneable, java.io.Serializable {
       * @exception NamingException
       *         If a naming exception was encountered while retrieving
       *         the value.
-      * @exception java.util.NoSuchElementException
+      * @exception j86.java.util.NoSuchElementException
       *         If this attribute has no values.
       */
     Object get() throws NamingException;
@@ -134,7 +134,7 @@ public interface Attribute extends Cloneable, java.io.Serializable {
       * @param attrVal The possibly null value to check. If null, check
       *  whether the attribute has an attribute value whose value is null.
       * @return true if attrVal is one of this attribute's values; false otherwise.
-      * @see java.lang.Object#equals
+      * @see j86.java.lang.Object#equals
       * @see BasicAttribute#equals
       */
     boolean contains(Object attrVal);
@@ -253,8 +253,8 @@ public interface Attribute extends Cloneable, java.io.Serializable {
       * @return true if this attribute's values are ordered; false otherwise.
       * @see #get(int)
       * @see #remove(int)
-      * @see #add(int, java.lang.Object)
-      * @see #set(int, java.lang.Object)
+      * @see #add(int, j86.java.lang.Object)
+      * @see #set(int, j86.java.lang.Object)
       */
     boolean isOrdered();
 

@@ -23,15 +23,15 @@
  * questions.
  */
 
-package sun.security.rsa;
+package j86.sun.security.rsa;
 
-import java.math.BigInteger;
+import j86.java.math.BigInteger;
 
-import java.security.*;
-import java.security.interfaces.*;
-import java.security.spec.*;
+import j86.java.security.*;
+import j86.j86.java.security.interfaces.*;
+import j86.j86.java.security.spec.*;
 
-import sun.security.action.GetPropertyAction;
+import j86.sun.security.action.GetPropertyAction;
 
 /**
  * KeyFactory for RSA keys. Keys must be instances of PublicKey or PrivateKey
@@ -86,7 +86,7 @@ public final class RSAKeyFactory extends KeyFactorySpi {
     private static final boolean restrictExpLen =
         "true".equalsIgnoreCase(AccessController.doPrivileged(
             new GetPropertyAction(
-                "sun.security.rsa.restrictRSAExponent", "true")));
+                "j86.sun.security.rsa.restrictRSAExponent", "true")));
 
     // instance used for static translateKey();
     private final static RSAKeyFactory INSTANCE = new RSAKeyFactory();

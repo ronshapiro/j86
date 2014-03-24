@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.crypto.interfaces;
+package j86.j86.javax.crypto.interfaces;
 
-import java.math.BigInteger;
+import j86.java.math.BigInteger;
 
 /**
  * The interface to a Diffie-Hellman private key.
@@ -36,7 +36,7 @@ import java.math.BigInteger;
  * @see DHPublicKey
  * @since 1.4
  */
-public interface DHPrivateKey extends DHKey, java.security.PrivateKey {
+public interface DHPrivateKey extends DHKey, j86.java.security.PrivateKey {
 
     /**
      * The class fingerprint that is set to indicate serialization

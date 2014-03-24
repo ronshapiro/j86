@@ -22,18 +22,18 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing;
+package j86.javax.swing;
 
-import java.awt.Component;
-import java.awt.Container;
-import java.awt.Rectangle;
-import java.awt.event.PaintEvent;
-import java.security.AccessController;
-import sun.awt.AppContext;
-import sun.awt.SunToolkit;
-import sun.awt.event.IgnorePaintEvent;
-import sun.security.action.GetBooleanAction;
-import sun.security.action.GetPropertyAction;
+import j86.java.awt.Component;
+import j86.java.awt.Container;
+import j86.java.awt.Rectangle;
+import j86.j86.java.awt.event.PaintEvent;
+import j86.java.security.AccessController;
+import j86.sun.awt.AppContext;
+import j86.sun.awt.SunToolkit;
+import j86.j86.sun.awt.event.IgnorePaintEvent;
+import j86.sun.security.action.GetBooleanAction;
+import j86.sun.security.action.GetPropertyAction;
 
 /**
  * Swing's PaintEventDispatcher.  If the component specified by the PaintEvent
@@ -41,7 +41,7 @@ import sun.security.action.GetPropertyAction;
  * will forward the request to the RepaintManager for eventual painting.
  *
  */
-class SwingPaintEventDispatcher extends sun.awt.PaintEventDispatcher {
+class SwingPaintEventDispatcher extends j86.sun.awt.PaintEventDispatcher {
     private static final boolean SHOW_FROM_DOUBLE_BUFFER;
     private static final boolean ERASE_BACKGROUND;
 

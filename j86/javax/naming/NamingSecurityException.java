@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.naming;
+package j86.javax.naming;
 
 /**
   * This is the superclass of security-related exceptions
@@ -50,7 +50,7 @@ public abstract class NamingSecurityException extends NamingException {
      * explanation supplied. All other fields default to null.
      *
      * @param   explanation     Possibly null additional detail about this exception.
-     * @see java.lang.Throwable#getMessage
+     * @see j86.java.lang.Throwable#getMessage
      */
     public NamingSecurityException(String explanation) {
         super(explanation);

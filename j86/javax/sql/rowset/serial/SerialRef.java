@@ -23,11 +23,11 @@
  * questions.
  */
 
-package javax.sql.rowset.serial;
+package j86.j86.j86.javax.sql.rowset.serial;
 
-import java.sql.*;
-import java.io.*;
-import java.util.*;
+import j86.java.sql.*;
+import j86.java.io.*;
+import j86.java.util.*;
 
 /**
  * A serialized mapping of a <code>Ref</code> object, which is the mapping in the
@@ -103,7 +103,7 @@ public class SerialRef implements Ref, Serializable, Cloneable {
      * to which this <code>SerialRef</code> object refers.  The attributes
      * of the structured type are mapped according to the given type map.
      *
-     * @param map a <code>java.util.Map</code> object containing zero or
+     * @param map a <code>j86.java.util.Map</code> object containing zero or
      *        more entries, with each entry consisting of 1) a <code>String</code>
      *        giving the fully qualified name of a UDT and 2) the
      *        <code>Class</code> object for the <code>SQLData</code> implementation
@@ -113,7 +113,7 @@ public class SerialRef implements Ref, Serializable, Cloneable {
      * @throws SerialException if an error is encountered in the reference
      *        resolution
      */
-    public Object getObject(java.util.Map<String,Class<?>> map)
+    public Object getObject(j86.java.util.Map<String,Class<?>> map)
         throws SerialException
     {
         map = new Hashtable<String, Class<?>>(map);

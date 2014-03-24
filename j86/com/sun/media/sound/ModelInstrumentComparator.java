@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.media.sound;
+package j86.com.sun.media.sound;
 
-import java.util.Comparator;
-import javax.sound.midi.Instrument;
-import javax.sound.midi.Patch;
+import j86.java.util.Comparator;
+import j86.javax.sound.midi.Instrument;
+import j86.javax.sound.midi.Patch;
 
 /**
  * Instrument comparator class.

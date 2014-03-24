@@ -23,14 +23,14 @@
  * questions.
  */
 
-package javax.sound.midi.spi;
+package j86.j86.javax.sound.midi.spi;
 
-import java.io.File;
-import java.io.IOException;
-import java.io.OutputStream;
+import j86.java.io.File;
+import j86.java.io.IOException;
+import j86.java.io.OutputStream;
 
-import javax.sound.midi.Sequence;
-import javax.sound.midi.MidiFileFormat;
+import j86.javax.sound.midi.Sequence;
+import j86.javax.sound.midi.MidiFileFormat;
 
 /**
  * A <code>MidiFileWriter</code> supplies MIDI file-writing services.  Classes

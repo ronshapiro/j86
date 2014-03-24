@@ -28,24 +28,24 @@
  * Copyright IBM Corp. 1999-2000.  All rights reserved.
  */
 
-package javax.management.modelmbean;
+package j86.j86.javax.management.modelmbean;
 
-import static com.sun.jmx.defaults.JmxProperties.MODELMBEAN_LOGGER;
-import com.sun.jmx.mbeanserver.GetPropertyAction;
+import static j86.com.sun.jmx.defaults.JmxProperties.MODELMBEAN_LOGGER;
+import j86.com.sun.jmx.mbeanserver.GetPropertyAction;
 
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.ObjectStreamField;
-import java.lang.reflect.Method;
-import java.security.AccessController;
-import java.util.logging.Level;
+import j86.java.io.IOException;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectStreamField;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.security.AccessController;
+import j86.j86.java.util.logging.Level;
 
-import javax.management.Descriptor;
-import javax.management.DescriptorKey;
-import javax.management.DescriptorAccess;
-import javax.management.MBeanAttributeInfo;
-import javax.management.RuntimeOperationsException;
+import j86.javax.management.Descriptor;
+import j86.javax.management.DescriptorKey;
+import j86.javax.management.DescriptorAccess;
+import j86.javax.management.MBeanAttributeInfo;
+import j86.javax.management.RuntimeOperationsException;
 
 /**
  * <p>The ModelMBeanAttributeInfo object describes an attribute of the ModelMBean.
@@ -189,7 +189,7 @@ public class ModelMBeanAttributeInfo
          *          May be null if the property is write-only.
          * @param setter The method used for writing the attribute value.
          *          May be null if the attribute is read-only.
-         * @exception javax.management.IntrospectionException There is a consistency
+         * @exception j86.javax.management.IntrospectionException There is a consistency
          * problem in the definition of this attribute.
          *
          */
@@ -198,7 +198,7 @@ public class ModelMBeanAttributeInfo
                                        String description,
                                        Method getter,
                                        Method setter)
-        throws javax.management.IntrospectionException {
+        throws j86.javax.management.IntrospectionException {
                 super(name, description, getter, setter);
 
                 if (MODELMBEAN_LOGGER.isLoggable(Level.FINER)) {
@@ -233,7 +233,7 @@ public class ModelMBeanAttributeInfo
          * it is null, then a default descriptor will be created.  If
          * the descriptor does not contain the field "displayName" this field is added
          * in the descriptor with its default value.
-         * @exception javax.management.IntrospectionException There is a consistency
+         * @exception j86.javax.management.IntrospectionException There is a consistency
          * problem in the definition of this attribute.
          * @exception RuntimeOperationsException Wraps an
          * IllegalArgumentException. The descriptor is invalid, or descriptor
@@ -247,7 +247,7 @@ public class ModelMBeanAttributeInfo
                                        Method getter,
                                        Method setter,
                                        Descriptor descriptor)
-        throws javax.management.IntrospectionException {
+        throws j86.javax.management.IntrospectionException {
 
                 super(name, description, getter, setter);
                 // put getter and setter methods in operations list

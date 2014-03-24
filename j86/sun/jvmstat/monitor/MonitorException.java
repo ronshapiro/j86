@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.jvmstat.monitor;
+package j86.sun.jvmstat.monitor;
 
 /**
  * Base class for exceptions that occur while interfacing with the

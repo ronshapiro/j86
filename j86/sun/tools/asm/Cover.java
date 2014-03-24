@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.tools.asm;
+package j86.sun.tools.asm;
 
 /**
  * WARNING: The contents of this source file are not part of any

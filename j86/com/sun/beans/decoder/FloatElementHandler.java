@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.beans.decoder;
+package j86.j86.com.sun.beans.decoder;
 
 /**
  * This class is intended to handle &lt;float&gt; element.
@@ -33,7 +33,7 @@ package com.sun.beans.decoder;
  * For example:<pre>
  * &lt;float&gt;-1.23&lt;/float&gt;</pre>
  * is shortcut to<pre>
- * &lt;method name="valueOf" class="java.lang.Float"&gt;
+ * &lt;method name="valueOf" class="j86.java.lang.Float"&gt;
  *     &lt;string&gt;-1.23&lt;/string&gt;
  * &lt;/method&gt;</pre>
  * which is equivalent to {@code Float.valueOf("-1.23")} in Java code.

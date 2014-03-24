@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.rmi;
+package j86.java.rmi;
 
 /**
  * From a server executing on JDK&nbsp;1.1, a

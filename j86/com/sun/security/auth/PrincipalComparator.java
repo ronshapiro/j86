@@ -23,10 +23,10 @@
  * questions.
  */
 
-package com.sun.security.auth;
+package j86.com.sun.security.auth;
 
 /**
- * An object that implements the <code>java.security.Principal</code>
+ * An object that implements the <code>j86.java.security.Principal</code>
  * interface typically also implements this interface to provide
  * a means for comparing that object to a specified <code>Subject</code>.
  *
@@ -41,14 +41,14 @@ package com.sun.security.auth;
  * if that <code>Subject</code> is currently acting in that role.
  *
  * <p> Although classes that implement this interface typically
- * also implement the <code>java.security.Principal</code> interface,
+ * also implement the <code>j86.java.security.Principal</code> interface,
  * it is not required.  In other words, classes may implement the
- * <code>java.security.Principal</code> interface by itself,
+ * <code>j86.java.security.Principal</code> interface by itself,
  * the <code>PrincipalComparator</code> interface by itself,
  * or both at the same time.
  *
- * @see java.security.Principal
- * @see javax.security.auth.Subject
+ * @see j86.java.security.Principal
+ * @see j86.javax.security.auth.Subject
  */
 @jdk.Exported
 public interface PrincipalComparator {
@@ -61,5 +61,5 @@ public interface PrincipalComparator {
      * @return true if the specified <code>Subject</code> is implied by
      *          this object, or false otherwise.
      */
-    boolean implies(javax.security.auth.Subject subject);
+    boolean implies(j86.javax.security.auth.Subject subject);
 }

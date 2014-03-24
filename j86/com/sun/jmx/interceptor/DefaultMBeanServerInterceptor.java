@@ -23,71 +23,71 @@
  * questions.
  */
 
-package com.sun.jmx.interceptor;
+package j86.com.sun.jmx.interceptor;
 
 
 // JMX RI
-import static com.sun.jmx.defaults.JmxProperties.MBEANSERVER_LOGGER;
-import com.sun.jmx.mbeanserver.DynamicMBean2;
-import com.sun.jmx.mbeanserver.Introspector;
-import com.sun.jmx.mbeanserver.MBeanInstantiator;
-import com.sun.jmx.mbeanserver.ModifiableClassLoaderRepository;
-import com.sun.jmx.mbeanserver.NamedObject;
-import com.sun.jmx.mbeanserver.Repository;
-import com.sun.jmx.mbeanserver.Repository.RegistrationContext;
-import com.sun.jmx.mbeanserver.Util;
-import com.sun.jmx.remote.util.EnvHelp;
+import static j86.com.sun.jmx.defaults.JmxProperties.MBEANSERVER_LOGGER;
+import j86.com.sun.jmx.mbeanserver.DynamicMBean2;
+import j86.com.sun.jmx.mbeanserver.Introspector;
+import j86.com.sun.jmx.mbeanserver.MBeanInstantiator;
+import j86.com.sun.jmx.mbeanserver.ModifiableClassLoaderRepository;
+import j86.com.sun.jmx.mbeanserver.NamedObject;
+import j86.com.sun.jmx.mbeanserver.Repository;
+import j86.com.sun.jmx.mbeanserver.Repository.RegistrationContext;
+import j86.com.sun.jmx.mbeanserver.Util;
+import j86.com.sun.jmx.remote.util.EnvHelp;
 
-import java.io.ObjectInputStream;
-import java.lang.ref.WeakReference;
-import java.security.AccessControlContext;
-import java.security.AccessController;
-import java.security.Permission;
-import java.security.PrivilegedAction;
-import java.security.ProtectionDomain;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-import java.util.WeakHashMap;
-import java.util.logging.Level;
+import j86.java.io.ObjectInputStream;
+import j86.j86.java.lang.ref.WeakReference;
+import j86.java.security.AccessControlContext;
+import j86.java.security.AccessController;
+import j86.java.security.Permission;
+import j86.java.security.PrivilegedAction;
+import j86.java.security.ProtectionDomain;
+import j86.java.util.ArrayList;
+import j86.java.util.HashSet;
+import j86.java.util.List;
+import j86.java.util.Set;
+import j86.java.util.WeakHashMap;
+import j86.j86.java.util.logging.Level;
 
 // JMX import
-import javax.management.Attribute;
-import javax.management.AttributeList;
-import javax.management.AttributeNotFoundException;
-import javax.management.DynamicMBean;
-import javax.management.InstanceAlreadyExistsException;
-import javax.management.InstanceNotFoundException;
-import javax.management.IntrospectionException;
-import javax.management.InvalidAttributeValueException;
-import javax.management.JMRuntimeException;
-import javax.management.ListenerNotFoundException;
-import javax.management.MBeanException;
-import javax.management.MBeanInfo;
-import javax.management.MBeanPermission;
-import javax.management.MBeanRegistration;
-import javax.management.MBeanRegistrationException;
-import javax.management.MBeanServer;
-import javax.management.MBeanServerDelegate;
-import javax.management.MBeanServerNotification;
-import javax.management.MBeanTrustPermission;
-import javax.management.NotCompliantMBeanException;
-import javax.management.Notification;
-import javax.management.NotificationBroadcaster;
-import javax.management.NotificationEmitter;
-import javax.management.NotificationFilter;
-import javax.management.NotificationListener;
-import javax.management.ObjectInstance;
-import javax.management.ObjectName;
-import javax.management.OperationsException;
-import javax.management.QueryEval;
-import javax.management.QueryExp;
-import javax.management.ReflectionException;
-import javax.management.RuntimeErrorException;
-import javax.management.RuntimeMBeanException;
-import javax.management.RuntimeOperationsException;
-import javax.management.loading.ClassLoaderRepository;
+import j86.javax.management.Attribute;
+import j86.javax.management.AttributeList;
+import j86.javax.management.AttributeNotFoundException;
+import j86.javax.management.DynamicMBean;
+import j86.javax.management.InstanceAlreadyExistsException;
+import j86.javax.management.InstanceNotFoundException;
+import j86.javax.management.IntrospectionException;
+import j86.javax.management.InvalidAttributeValueException;
+import j86.javax.management.JMRuntimeException;
+import j86.javax.management.ListenerNotFoundException;
+import j86.javax.management.MBeanException;
+import j86.javax.management.MBeanInfo;
+import j86.javax.management.MBeanPermission;
+import j86.javax.management.MBeanRegistration;
+import j86.javax.management.MBeanRegistrationException;
+import j86.javax.management.MBeanServer;
+import j86.javax.management.MBeanServerDelegate;
+import j86.javax.management.MBeanServerNotification;
+import j86.javax.management.MBeanTrustPermission;
+import j86.javax.management.NotCompliantMBeanException;
+import j86.javax.management.Notification;
+import j86.javax.management.NotificationBroadcaster;
+import j86.javax.management.NotificationEmitter;
+import j86.javax.management.NotificationFilter;
+import j86.javax.management.NotificationListener;
+import j86.javax.management.ObjectInstance;
+import j86.javax.management.ObjectName;
+import j86.javax.management.OperationsException;
+import j86.javax.management.QueryEval;
+import j86.javax.management.QueryExp;
+import j86.javax.management.ReflectionException;
+import j86.javax.management.RuntimeErrorException;
+import j86.javax.management.RuntimeMBeanException;
+import j86.javax.management.RuntimeOperationsException;
+import j86.j86.javax.management.loading.ClassLoaderRepository;
 
 /**
  * This is the default class for MBean manipulation on the agent side. It
@@ -100,10 +100,10 @@ import javax.management.loading.ClassLoaderRepository;
  * A Java object cannot be registered in the MBean server unless it is a JMX compliant MBean.
  * <P>
  * When an MBean is registered or unregistered in the MBean server an
- * {@link javax.management.MBeanServerNotification MBeanServerNotification}
+ * {@link j86.javax.management.MBeanServerNotification MBeanServerNotification}
  * Notification is emitted. To register an object as listener to MBeanServerNotifications
  * you should call the MBean server method {@link #addNotificationListener addNotificationListener} with <CODE>ObjectName</CODE>
- * the <CODE>ObjectName</CODE> of the {@link javax.management.MBeanServerDelegate MBeanServerDelegate}.
+ * the <CODE>ObjectName</CODE> of the {@link j86.javax.management.MBeanServerDelegate MBeanServerDelegate}.
  * This <CODE>ObjectName</CODE> is:
  * <BR>
  * <CODE>JMImplementation:type=MBeanServerDelegate</CODE>.
@@ -149,7 +149,7 @@ public class DefaultMBeanServerInterceptor implements MBeanServerInterceptor {
      * before using this object.
      * @param outer A pointer to the MBeanServer object that must be
      *        passed to the MBeans when invoking their
-     *        {@link javax.management.MBeanRegistration} interface.
+     *        {@link j86.javax.management.MBeanRegistration} interface.
      * @param delegate A pointer to the MBeanServerDelegate associated
      *        with the new MBeanServer. The new MBeanServer must register
      *        this MBean in its MBean repository.
@@ -1432,7 +1432,7 @@ public class DefaultMBeanServerInterceptor implements MBeanServerInterceptor {
     }
 
     /**
-     * <p>Return the {@link java.lang.ClassLoader} that was used for
+     * <p>Return the {@link j86.java.lang.ClassLoader} that was used for
      * loading the class of the named MBean.
      * @param mbeanName The ObjectName of the MBean.
      * @return The ClassLoader used for that MBean.
@@ -1447,7 +1447,7 @@ public class DefaultMBeanServerInterceptor implements MBeanServerInterceptor {
     }
 
     /**
-     * <p>Return the named {@link java.lang.ClassLoader}.
+     * <p>Return the named {@link j86.java.lang.ClassLoader}.
      * @param loaderName The ObjectName of the ClassLoader.
      * @return The named ClassLoader.
      * @exception InstanceNotFoundException if the named ClassLoader

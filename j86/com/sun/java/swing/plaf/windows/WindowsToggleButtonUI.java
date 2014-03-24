@@ -23,17 +23,17 @@
  * questions.
  */
 
-package com.sun.java.swing.plaf.windows;
+package j86.j86.com.sun.java.swing.plaf.windows;
 
-import sun.awt.AppContext;
+import j86.sun.awt.AppContext;
 
-import javax.swing.plaf.basic.*;
-import javax.swing.border.*;
-import javax.swing.plaf.*;
-import javax.swing.*;
+import j86.j86.j86.javax.swing.plaf.basic.*;
+import j86.j86.javax.swing.border.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.javax.swing.*;
 
-import java.awt.*;
-import java.beans.PropertyChangeEvent;
+import j86.java.awt.*;
+import j86.java.beans.PropertyChangeEvent;
 
 
 

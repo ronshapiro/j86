@@ -32,16 +32,16 @@
  */
 
 
-package com.sun.tools.example.debug.gui;
+package j86.com.sun.tools.example.debug.gui;
 
-import java.io.*;
-import javax.swing.*;
-import javax.swing.border.*;
-import java.awt.*;
-import java.awt.event.*;
+import j86.java.io.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.border.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
 
-import com.sun.jdi.*;
-import com.sun.tools.example.debug.bdi.*;
+import j86.com.sun.jdi.*;
+import j86.com.sun.tools.example.debug.bdi.*;
 
 public class GUI extends JPanel {
 
@@ -74,26 +74,26 @@ public class GUI extends JPanel {
         add(new JDBToolBar(env), BorderLayout.NORTH);
 
         srcTool = new SourceTool(env);
-        srcTool.setPreferredSize(new java.awt.Dimension(500, 300));
+        srcTool.setPreferredSize(new j86.java.awt.Dimension(500, 300));
         srcTool.setTextFont(fixedFont);
 
         stackTool = new StackTraceTool(env);
-        stackTool.setPreferredSize(new java.awt.Dimension(500, 100));
+        stackTool.setPreferredSize(new j86.java.awt.Dimension(500, 100));
 
         monitorTool = new MonitorTool(env);
-        monitorTool.setPreferredSize(new java.awt.Dimension(500, 50));
+        monitorTool.setPreferredSize(new j86.java.awt.Dimension(500, 50));
 
         JSplitPane right = new JSplitPane(JSplitPane.VERTICAL_SPLIT, srcTool,
             new JSplitPane(JSplitPane.VERTICAL_SPLIT, stackTool, monitorTool));
 
         sourceTreeTool = new SourceTreeTool(env);
-        sourceTreeTool.setPreferredSize(new java.awt.Dimension(200, 450));
+        sourceTreeTool.setPreferredSize(new j86.java.awt.Dimension(200, 450));
 
         classTreeTool = new ClassTreeTool(env);
-        classTreeTool.setPreferredSize(new java.awt.Dimension(200, 450));
+        classTreeTool.setPreferredSize(new j86.java.awt.Dimension(200, 450));
 
         threadTreeTool = new ThreadTreeTool(env);
-        threadTreeTool.setPreferredSize(new java.awt.Dimension(200, 450));
+        threadTreeTool.setPreferredSize(new j86.java.awt.Dimension(200, 450));
 
         JTabbedPane treePane = new JTabbedPane(SwingConstants.BOTTOM);
         treePane.addTab("Source", null, sourceTreeTool);
@@ -103,13 +103,13 @@ public class GUI extends JPanel {
         JSplitPane centerTop = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, treePane, right);
 
         cmdTool = new CommandTool(env);
-        cmdTool.setPreferredSize(new java.awt.Dimension(700, 150));
+        cmdTool.setPreferredSize(new j86.java.awt.Dimension(700, 150));
 
         appTool = new ApplicationTool(env);
-        appTool.setPreferredSize(new java.awt.Dimension(700, 200));
+        appTool.setPreferredSize(new j86.java.awt.Dimension(700, 200));
 
         JSplitPane centerBottom = new JSplitPane(JSplitPane.VERTICAL_SPLIT, cmdTool, appTool);
-        //        centerBottom.setPreferredSize(new java.awt.Dimension(700, 350));
+        //        centerBottom.setPreferredSize(new j86.java.awt.Dimension(700, 350));
 
         JSplitPane center = new JSplitPane(JSplitPane.VERTICAL_SPLIT, centerTop, centerBottom);
 

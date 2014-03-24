@@ -22,18 +22,18 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.plaf.nimbus;
+package j86.j86.j86.javax.swing.plaf.nimbus;
 
-import java.awt.GraphicsConfiguration;
-import java.awt.Image;
-import java.lang.ref.ReferenceQueue;
-import java.lang.ref.SoftReference;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.concurrent.locks.ReadWriteLock;
-import java.util.concurrent.locks.ReentrantReadWriteLock;
+import j86.java.awt.GraphicsConfiguration;
+import j86.java.awt.Image;
+import j86.j86.java.lang.ref.ReferenceQueue;
+import j86.j86.java.lang.ref.SoftReference;
+import j86.java.util.Arrays;
+import j86.java.util.Iterator;
+import j86.java.util.LinkedHashMap;
+import j86.java.util.Map;
+import j86.j86.j86.java.util.concurrent.locks.ReadWriteLock;
+import j86.j86.j86.java.util.concurrent.locks.ReentrantReadWriteLock;
 
 /**
  * ImageCache - A fixed pixel count sized cache of Images keyed by arbitrary set of arguments. All images are held with

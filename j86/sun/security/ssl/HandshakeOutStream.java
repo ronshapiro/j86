@@ -24,10 +24,10 @@
  */
 
 
-package sun.security.ssl;
+package j86.sun.security.ssl;
 
-import java.io.OutputStream;
-import java.io.IOException;
+import j86.java.io.OutputStream;
+import j86.java.io.IOException;
 
 /**
  * Output stream for handshake data.  This is used only internally

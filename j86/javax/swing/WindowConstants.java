@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.swing;
+package j86.javax.swing;
 
 
 /**
@@ -62,9 +62,9 @@ public interface WindowConstants
      * <p>
      * <b>Note</b>: When the last displayable window
      * within the Java virtual machine (VM) is disposed of, the VM may
-     * terminate.  See <a href="../../java/awt/doc-files/AWTThreadIssues.html">
+     * terminate.  See <a href="../../j86.java.awt/doc-files/AWTThreadIssues.html">
      * AWT Threading Issues</a> for more information.
-     * @see java.awt.Window#dispose()
+     * @see j86.java.awt.Window#dispose()
      * @see JInternalFrame#dispose()
      */
     public static final int DISPOSE_ON_CLOSE = 2;

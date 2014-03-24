@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.reflect;
+package j86.sun.reflect;
 
-import java.lang.reflect.*;
-import java.util.HashMap;
-import java.util.Map;
+import j86.j86.j86.java.lang.reflect.*;
+import j86.java.util.HashMap;
+import j86.java.util.Map;
 
-/** Common utility routines used by both java.lang and
-    java.lang.reflect */
+/** Common utility routines used by both j86.java.lang and
+    j86.j86.j86.java.lang.reflect */
 
 public class Reflection {
 
@@ -52,7 +52,7 @@ public class Reflection {
     }
 
     /** Returns the class of the caller of the method calling this method,
-        ignoring frames associated with java.lang.reflect.Method.invoke()
+        ignoring frames associated with j86.j86.j86.java.lang.reflect.Method.invoke()
         and its implementation. */
     @CallerSensitive
     public static native Class<?> getCallerClass();
@@ -331,7 +331,7 @@ public class Reflection {
      */
     public static boolean isCallerSensitive(Method m) {
         final ClassLoader loader = m.getDeclaringClass().getClassLoader();
-        if (sun.misc.VM.isSystemDomainLoader(loader) || isExtClassLoader(loader))  {
+        if (j86.sun.misc.VM.isSystemDomainLoader(loader) || isExtClassLoader(loader))  {
             return m.isAnnotationPresent(CallerSensitive.class);
         }
         return false;

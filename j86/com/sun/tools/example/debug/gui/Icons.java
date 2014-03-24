@@ -32,10 +32,10 @@
  */
 
 
-package com.sun.tools.example.debug.gui;
+package j86.com.sun.tools.example.debug.gui;
 
-import javax.swing.Icon;
-import javax.swing.ImageIcon;
+import j86.javax.swing.Icon;
+import j86.javax.swing.ImageIcon;
 
 class Icons {
 

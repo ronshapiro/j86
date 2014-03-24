@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.net.httpserver;
+package j86.j86.sun.net.httpserver;
 
-import java.nio.*;
-import java.io.*;
-import java.nio.channels.*;
-import com.sun.net.httpserver.*;
+import j86.java.nio.*;
+import j86.java.io.*;
+import j86.j86.java.nio.channels.*;
+import com.j86.j86.sun.net.httpserver.*;
 
 /**
  */
@@ -203,7 +203,7 @@ class Request {
 
             if (hdrs.size() >= ServerConfig.getMaxReqHeaders()) {
                 throw new IOException("Maximum number of request headers (" +
-                        "sun.net.httpserver.maxReqHeaders) exceeded, " +
+                        "j86.j86.sun.net.httpserver.maxReqHeaders) exceeded, " +
                         ServerConfig.getMaxReqHeaders() + ".");
             }
 
@@ -348,7 +348,7 @@ class Request {
         }
     }
 
-    static class WriteStream extends java.io.OutputStream {
+    static class WriteStream extends j86.java.io.OutputStream {
         SocketChannel channel;
         ByteBuffer buf;
         SelectionKey key;

@@ -23,11 +23,11 @@
  * questions.
  */
 
-package com.sun.imageio.stream;
+package j86.com.sun.imageio.stream;
 
-import java.io.Closeable;
-import java.io.IOException;
-import sun.java2d.DisposerRecord;
+import j86.java.io.Closeable;
+import j86.java.io.IOException;
+import j86.sun.java2d.DisposerRecord;
 
 /**
  * Convenience class that closes a given resource (e.g. RandomAccessFile),

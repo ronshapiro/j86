@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.print;
+package j86.javax.print;
 
-import javax.print.attribute.PrintRequestAttributeSet;
+import j86.j86.javax.print.attribute.PrintRequestAttributeSet;
 
 /**
  *

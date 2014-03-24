@@ -30,12 +30,12 @@
  * at JavaSoft/Sun.
  */
 
-package com.sun.tools.hat.internal.model;
+package j86.j86.com.sun.tools.hat.internal.model;
 
-import java.util.Enumeration;
-import java.util.HashMap;
-import java.util.Map;
-import com.sun.tools.hat.internal.util.Misc;
+import j86.java.util.Enumeration;
+import j86.java.util.HashMap;
+import j86.java.util.Map;
+import j86.j86.com.sun.tools.hat.internal.util.Misc;
 
 
 /**

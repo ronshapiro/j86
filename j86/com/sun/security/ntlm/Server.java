@@ -23,10 +23,10 @@
  * questions.
  */
 
-package com.sun.security.ntlm;
+package j86.com.sun.security.ntlm;
 
-import java.util.Arrays;
-import java.util.Locale;
+import j86.java.util.Arrays;
+import j86.java.util.Locale;
 
 /**
  * The NTLM server, not multi-thread enabled.<p>

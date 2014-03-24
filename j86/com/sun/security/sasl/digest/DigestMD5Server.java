@@ -23,22 +23,22 @@
  * questions.
  */
 
-package com.sun.security.sasl.digest;
+package j86.j86.com.sun.security.sasl.digest;
 
-import java.security.NoSuchAlgorithmException;
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.UnsupportedEncodingException;
-import java.util.StringTokenizer;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.Arrays;
+import j86.java.security.NoSuchAlgorithmException;
+import j86.java.io.ByteArrayOutputStream;
+import j86.java.io.IOException;
+import j86.java.io.UnsupportedEncodingException;
+import j86.java.util.StringTokenizer;
+import j86.java.util.ArrayList;
+import j86.java.util.List;
+import j86.java.util.Map;
+import j86.java.util.Arrays;
 
-import java.util.logging.Level;
+import j86.j86.java.util.logging.Level;
 
-import javax.security.sasl.*;
-import javax.security.auth.callback.*;
+import j86.javax.security.sasl.*;
+import j86.j86.javax.security.auth.callback.*;
 
 /**
   * An implementation of the DIGEST-MD5 server SASL mechanism.
@@ -61,23 +61,23 @@ import javax.security.auth.callback.*;
   *      authorized ID to be the canonicalized authzid (if applicable).
   *
   * Environment properties that affect the implementation:
-  * javax.security.sasl.qop:
+  * j86.javax.security.sasl.qop:
   *    specifies list of qops; default is "auth"; typically, caller should set
   *    this to "auth, auth-int, auth-conf".
-  * javax.security.sasl.strength
+  * j86.javax.security.sasl.strength
   *    specifies low/medium/high strength of encryption; default is all available
   *    ciphers [high,medium,low]; high means des3 or rc4 (128); medium des or
   *    rc4-56; low is rc4-40.
-  * javax.security.sasl.maxbuf
+  * j86.javax.security.sasl.maxbuf
   *    specifies max receive buf size; default is 65536
-  * javax.security.sasl.sendmaxbuffer
+  * j86.javax.security.sasl.sendmaxbuffer
   *    specifies max send buf size; default is 65536 (min of this and client's max
   *    recv size)
   *
-  * com.sun.security.sasl.digest.utf8:
+  * j86.j86.com.sun.security.sasl.digest.utf8:
   *    "true" means to use UTF-8 charset; "false" to use ISO-8859-1 encoding;
   *    default is "true".
-  * com.sun.security.sasl.digest.realm:
+  * j86.j86.com.sun.security.sasl.digest.realm:
   *    space-separated list of realms; default is server name (fqdn parameter)
   *
   * @author Rosanna Lee
@@ -97,11 +97,11 @@ final class DigestMD5Server extends DigestMD5Base implements SaslServer {
 
     /* "true" means use UTF8; "false" ISO 8859-1; default is "true" */
     private static final String UTF8_PROPERTY =
-        "com.sun.security.sasl.digest.utf8";
+        "j86.j86.com.sun.security.sasl.digest.utf8";
 
     /* List of space-separated realms used for authentication */
     private static final String REALM_PROPERTY =
-        "com.sun.security.sasl.digest.realm";
+        "j86.j86.com.sun.security.sasl.digest.realm";
 
     /* Directives encountered in responses sent by the client. */
     private static final String[] DIRECTIVE_KEY = {

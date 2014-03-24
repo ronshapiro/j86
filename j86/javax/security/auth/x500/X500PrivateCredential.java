@@ -23,11 +23,11 @@
  * questions.
  */
 
-package javax.security.auth.x500;
+package j86.j86.javax.security.auth.x500;
 
-import java.security.PrivateKey;
-import java.security.cert.X509Certificate;
-import javax.security.auth.Destroyable;
+import j86.java.security.PrivateKey;
+import j86.j86.java.security.cert.X509Certificate;
+import j86.javax.security.auth.Destroyable;
 
 /**
  * <p> This class represents an {@code X500PrivateCredential}.

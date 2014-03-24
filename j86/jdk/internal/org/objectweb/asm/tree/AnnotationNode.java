@@ -56,13 +56,13 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-package jdk.internal.org.objectweb.asm.tree;
+package j86.j86.jdk.internal.org.objectweb.asm.tree;
 
-import java.util.ArrayList;
-import java.util.List;
+import j86.java.util.ArrayList;
+import j86.java.util.List;
 
-import jdk.internal.org.objectweb.asm.AnnotationVisitor;
-import jdk.internal.org.objectweb.asm.Opcodes;
+import j86.jdk.internal.org.objectweb.asm.AnnotationVisitor;
+import j86.jdk.internal.org.objectweb.asm.Opcodes;
 
 /**
  * A node that represents an annotationn.
@@ -81,7 +81,7 @@ public class AnnotationNode extends AnnotationVisitor {
      * as two consecutive elements in the list. The name is a {@link String},
      * and the value may be a {@link Byte}, {@link Boolean}, {@link Character},
      * {@link Short}, {@link Integer}, {@link Long}, {@link Float},
-     * {@link Double}, {@link String} or {@link jdk.internal.org.objectweb.asm.Type}, or an
+     * {@link Double}, {@link String} or {@link j86.jdk.internal.org.objectweb.asm.Type}, or an
      * two elements String array (for enumeration values), a
      * {@link AnnotationNode}, or a {@link List} of values of one of the
      * preceding types. The list may be <tt>null</tt> if there is no name value

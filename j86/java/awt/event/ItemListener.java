@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.awt.event;
+package j86.j86.java.awt.event;
 
-import java.util.EventListener;
+import j86.java.util.EventListener;
 
 /**
  * The listener interface for receiving item events.
@@ -38,7 +38,7 @@ import java.util.EventListener;
  *
  * @author Amy Fowler
  *
- * @see java.awt.ItemSelectable
+ * @see j86.java.awt.ItemSelectable
  * @see ItemEvent
  * @see <a href="http://docs.oracle.com/javase/tutorial/uiswing/events/itemlistener.html">Tutorial: Writing an Item Listener</a>
  *

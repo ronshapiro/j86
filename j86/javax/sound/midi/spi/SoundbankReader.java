@@ -23,23 +23,23 @@
  * questions.
  */
 
-package javax.sound.midi.spi;
+package j86.j86.javax.sound.midi.spi;
 
-import java.io.InputStream;
-import java.io.IOException;
-import java.io.File;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
+import j86.java.io.File;
 
-import java.net.URL;
+import j86.java.net.URL;
 
-import javax.sound.midi.Soundbank;
-import javax.sound.midi.InvalidMidiDataException;
+import j86.javax.sound.midi.Soundbank;
+import j86.javax.sound.midi.InvalidMidiDataException;
 
 
 /**
  * A <code>SoundbankReader</code> supplies soundbank file-reading services.
  * Concrete subclasses of <code>SoundbankReader</code> parse a given
- * soundbank file, producing a {@link javax.sound.midi.Soundbank}
- * object that can be loaded into a {@link javax.sound.midi.Synthesizer}.
+ * soundbank file, producing a {@link j86.javax.sound.midi.Soundbank}
+ * object that can be loaded into a {@link j86.javax.sound.midi.Synthesizer}.
  *
  * @since 1.3
  * @author Kara Kytle

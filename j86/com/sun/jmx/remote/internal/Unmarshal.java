@@ -23,10 +23,10 @@
  * questions.
  */
 
-package com.sun.jmx.remote.internal;
+package j86.com.sun.jmx.remote.internal;
 
-import java.io.IOException;
-import java.rmi.MarshalledObject;
+import j86.java.io.IOException;
+import j86.java.rmi.MarshalledObject;
 
 public interface Unmarshal {
     public Object get(MarshalledObject<?> mo)

@@ -24,7 +24,7 @@
  */
 
 
-package javax.management;
+package j86.javax.management;
 
 
 /**

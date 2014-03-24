@@ -23,7 +23,7 @@
  * questions.
  */
 
-package com.sun.jmx.defaults;
+package j86.com.sun.jmx.defaults;
 
 /**
  * Used for storing default values used by JMX services.

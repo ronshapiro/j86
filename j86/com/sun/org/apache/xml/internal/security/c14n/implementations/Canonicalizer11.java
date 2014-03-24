@@ -20,20 +20,20 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.sun.org.apache.xml.internal.security.c14n.implementations;
+package j86.j86.j86.com.sun.org.apache.xml.internal.security.c14n.implementations;
 
-import java.io.IOException;
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.util.SortedSet;
-import java.util.TreeSet;
+import j86.java.io.IOException;
+import j86.java.net.URI;
+import j86.java.net.URISyntaxException;
+import j86.java.util.ArrayList;
+import j86.java.util.Collection;
+import j86.java.util.HashMap;
+import j86.java.util.Iterator;
+import j86.java.util.List;
+import j86.java.util.Map;
+import j86.java.util.Set;
+import j86.java.util.SortedSet;
+import j86.java.util.TreeSet;
 import javax.xml.parsers.ParserConfigurationException;
 import org.w3c.dom.Attr;
 import org.w3c.dom.Document;
@@ -42,11 +42,11 @@ import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.xml.sax.SAXException;
 
-import com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
-import com.sun.org.apache.xml.internal.security.c14n.helper.C14nHelper;
-import com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
-import com.sun.org.apache.xml.internal.security.utils.Constants;
-import com.sun.org.apache.xml.internal.security.utils.XMLUtils;
+import j86.j86.com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
+import j86.j86.j86.com.sun.org.apache.xml.internal.security.c14n.helper.C14nHelper;
+import j86.j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.Constants;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
 
 /**
  * Implements <A HREF="http://www.w3.org/TR/2008/PR-xml-c14n11-20080129/">
@@ -60,8 +60,8 @@ public abstract class Canonicalizer11 extends CanonicalizerBase {
 
     private static final String XMLNS_URI = Constants.NamespaceSpecNS;
     private static final String XML_LANG_URI = Constants.XML_LANG_SPACE_SpecNS;
-    private static java.util.logging.Logger log =
-        java.util.logging.Logger.getLogger(Canonicalizer11.class.getName());
+    private static j86.j86.java.util.logging.Logger log =
+        j86.j86.java.util.logging.Logger.getLogger(Canonicalizer11.class.getName());
     private final SortedSet<Attr> result = new TreeSet<Attr>(COMPARE);
 
     private boolean firstCall = true;
@@ -169,8 +169,8 @@ public abstract class Canonicalizer11 extends CanonicalizerBase {
                         try {
                             base = joinURI(n.getValue(), base);
                         } catch (URISyntaxException ue) {
-                            if (log.isLoggable(java.util.logging.Level.FINE)) {
-                                log.log(java.util.logging.Level.FINE, ue.getMessage(), ue);
+                            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                                log.log(j86.j86.java.util.logging.Level.FINE, ue.getMessage(), ue);
                             }
                         }
                     }
@@ -298,7 +298,7 @@ public abstract class Canonicalizer11 extends CanonicalizerBase {
      * <br>
      * IMPORTANT: This method expects to work on a modified DOM tree, i.e. a
      * DOM which has been prepared using
-     * {@link com.sun.org.apache.xml.internal.security.utils.XMLUtils#circumventBug2650(
+     * {@link j86.j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils#circumventBug2650(
      * org.w3c.dom.Document)}.
      *
      * @param element
@@ -520,8 +520,8 @@ public abstract class Canonicalizer11 extends CanonicalizerBase {
     }
 
     private static String removeDotSegments(String path) {
-        if (log.isLoggable(java.util.logging.Level.FINE)) {
-            log.log(java.util.logging.Level.FINE, "STEP   OUTPUT BUFFER\t\tINPUT BUFFER");
+        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+            log.log(j86.j86.java.util.logging.Level.FINE, "STEP   OUTPUT BUFFER\t\tINPUT BUFFER");
         }
 
         // 1. The input buffer is initialized with the now-appended path
@@ -675,12 +675,12 @@ public abstract class Canonicalizer11 extends CanonicalizerBase {
     }
 
     private static void printStep(String step, String output, String input) {
-        if (log.isLoggable(java.util.logging.Level.FINE)) {
-            log.log(java.util.logging.Level.FINE, " " + step + ":   " + output);
+        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+            log.log(j86.j86.java.util.logging.Level.FINE, " " + step + ":   " + output);
             if (output.length() == 0) {
-                log.log(java.util.logging.Level.FINE, "\t\t\t\t" + input);
+                log.log(j86.j86.java.util.logging.Level.FINE, "\t\t\t\t" + input);
             } else {
-                log.log(java.util.logging.Level.FINE, "\t\t\t" + input);
+                log.log(j86.j86.java.util.logging.Level.FINE, "\t\t\t" + input);
             }
         }
     }

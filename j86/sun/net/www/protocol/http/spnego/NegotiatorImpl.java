@@ -23,21 +23,21 @@
  * questions.
  */
 
-package sun.net.www.protocol.http.spnego;
+package j86.j86.j86.j86.sun.net.www.protocol.http.spnego;
 
-import com.sun.security.jgss.ExtendedGSSContext;
-import java.io.IOException;
+import com.j86.sun.security.jgss.ExtendedGSSContext;
+import j86.java.io.IOException;
 
-import org.ietf.jgss.GSSContext;
-import org.ietf.jgss.GSSException;
-import org.ietf.jgss.GSSName;
-import org.ietf.jgss.Oid;
+import j86.org.ietf.jgss.GSSContext;
+import j86.org.ietf.jgss.GSSException;
+import j86.org.ietf.jgss.GSSName;
+import j86.org.ietf.jgss.Oid;
 
-import sun.net.www.protocol.http.HttpCallerInfo;
-import sun.net.www.protocol.http.Negotiator;
-import sun.security.jgss.GSSManagerImpl;
-import sun.security.jgss.GSSUtil;
-import sun.security.jgss.HttpCaller;
+import j86.j86.j86.sun.net.www.protocol.http.HttpCallerInfo;
+import j86.j86.j86.sun.net.www.protocol.http.Negotiator;
+import j86.sun.security.jgss.GSSManagerImpl;
+import j86.sun.security.jgss.GSSUtil;
+import j86.sun.security.jgss.HttpCaller;
 
 /**
  * This class encapsulates all JAAS and JGSS API calls in a separate class
@@ -50,8 +50,8 @@ import sun.security.jgss.HttpCaller;
 public class NegotiatorImpl extends Negotiator {
 
     private static final boolean DEBUG =
-        java.security.AccessController.doPrivileged(
-              new sun.security.action.GetBooleanAction("sun.security.krb5.debug"));
+        j86.java.security.AccessController.doPrivileged(
+              new j86.sun.security.action.GetBooleanAction("j86.sun.security.krb5.debug"));
 
     private GSSContext context;
     private byte[] oneToken;
@@ -71,8 +71,8 @@ public class NegotiatorImpl extends Negotiator {
             // we can only use Kerberos mech when the scheme is kerberos
             oid = GSSUtil.GSS_KRB5_MECH_OID;
         } else {
-            String pref = java.security.AccessController.doPrivileged(
-                    new java.security.PrivilegedAction<String>() {
+            String pref = j86.java.security.AccessController.doPrivileged(
+                    new j86.java.security.PrivilegedAction<String>() {
                         public String run() {
                             return System.getProperty(
                                 "http.auth.preference",
@@ -110,7 +110,7 @@ public class NegotiatorImpl extends Negotiator {
 
     /**
      * Constructor
-     * @throws java.io.IOException If negotiator cannot be constructed
+     * @throws j86.java.io.IOException If negotiator cannot be constructed
      */
     public NegotiatorImpl(HttpCallerInfo hci) throws IOException {
         try {
@@ -140,7 +140,7 @@ public class NegotiatorImpl extends Negotiator {
      * Return the rest tokens of GSS, in SPNEGO, it's called NegTokenTarg
      * @param token the token received from server
      * @return the next token
-     * @throws java.io.IOException if the token cannot be created successfully
+     * @throws j86.java.io.IOException if the token cannot be created successfully
      */
     @Override
     public byte[] nextToken(byte[] token) throws IOException {

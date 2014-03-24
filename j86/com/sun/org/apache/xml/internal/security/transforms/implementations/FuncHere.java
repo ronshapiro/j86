@@ -20,13 +20,13 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.sun.org.apache.xml.internal.security.transforms.implementations;
+package j86.j86.j86.com.sun.org.apache.xml.internal.security.transforms.implementations;
 
 import javax.xml.transform.TransformerException;
 
 import com.sun.org.apache.xml.internal.dtm.DTM;
-import com.sun.org.apache.xml.internal.security.utils.I18n;
-import com.sun.org.apache.xml.internal.security.utils.XMLUtils;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.I18n;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
 import com.sun.org.apache.xpath.internal.NodeSetDTM;
 import com.sun.org.apache.xpath.internal.XPathContext;
 import com.sun.org.apache.xpath.internal.functions.Function;
@@ -146,7 +146,7 @@ public class FuncHere extends Function {
      * @param globalsSize
      */
     @SuppressWarnings("rawtypes")
-    public void fixupVariables(java.util.Vector vars, int globalsSize) {
+    public void fixupVariables(j86.java.util.Vector vars, int globalsSize) {
         // do nothing
     }
 }

@@ -23,11 +23,11 @@
  * questions.
  */
 
-package java.awt.peer;
+package j86.j86.java.awt.peer;
 
-import java.awt.*;
+import j86.java.awt.*;
 
-import sun.awt.EmbeddedFrame;
+import j86.sun.awt.EmbeddedFrame;
 
 /**
  * The peer interface for {@link Frame}. This adds a couple of frame specific

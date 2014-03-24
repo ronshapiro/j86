@@ -25,14 +25,14 @@
 /*
  * $Id: KeyValue.java,v 1.4 2005/05/10 16:35:35 mullan Exp $
  */
-package javax.xml.crypto.dsig.keyinfo;
+package j86.j86.j86.javax.xml.crypto.dsig.keyinfo;
 
-import java.security.KeyException;
-import java.security.KeyStore;
-import java.security.PublicKey;
-import java.security.interfaces.DSAPublicKey;
-import java.security.interfaces.RSAPublicKey;
-import javax.xml.crypto.XMLStructure;
+import j86.java.security.KeyException;
+import j86.java.security.KeyStore;
+import j86.java.security.PublicKey;
+import j86.j86.java.security.interfaces.DSAPublicKey;
+import j86.j86.java.security.interfaces.RSAPublicKey;
+import j86.javax.xml.crypto.XMLStructure;
 
 /**
  * A representation of the XML <code>KeyValue</code> element as defined
@@ -79,10 +79,10 @@ import javax.xml.crypto.XMLStructure;
  * A <code>KeyValue</code> instance may be created by invoking the
  * {@link KeyInfoFactory#newKeyValue newKeyValue} method of the
  * {@link KeyInfoFactory} class, and passing it a {@link
- * java.security.PublicKey} representing the value of the public key. Here is
+ * j86.java.security.PublicKey} representing the value of the public key. Here is
  * an example of creating a <code>KeyValue</code> from a {@link DSAPublicKey}
- * of a {@link java.security.cert.Certificate} stored in a
- * {@link java.security.KeyStore}:
+ * of a {@link j86.j86.java.security.cert.Certificate} stored in a
+ * {@link j86.java.security.KeyStore}:
  * <pre>
  * KeyStore keyStore = KeyStore.getInstance(KeyStore.getDefaultType());
  * PublicKey dsaPublicKey = keyStore.getCertificate("myDSASigningCert").getPublicKey();

@@ -22,12 +22,12 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text.rtf;
+package j86.j86.j86.javax.swing.text.rtf;
 
-import java.util.Dictionary;
-import java.util.Enumeration;
-import javax.swing.text.AttributeSet;
-import javax.swing.text.MutableAttributeSet;
+import j86.java.util.Dictionary;
+import j86.java.util.Enumeration;
+import j86.j86.javax.swing.text.AttributeSet;
+import j86.j86.javax.swing.text.MutableAttributeSet;
 
 
 /* This AttributeSet is made entirely out of tofu and Ritz Crackers

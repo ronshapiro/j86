@@ -33,25 +33,25 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package java.util.concurrent;
+package j86.j86.java.util.concurrent;
 
-import java.lang.Thread.UncaughtExceptionHandler;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
-import java.util.concurrent.AbstractExecutorService;
-import java.util.concurrent.Callable;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Future;
-import java.util.concurrent.RejectedExecutionException;
-import java.util.concurrent.RunnableFuture;
-import java.util.concurrent.ThreadLocalRandom;
-import java.util.concurrent.TimeUnit;
-import java.security.AccessControlContext;
-import java.security.ProtectionDomain;
-import java.security.Permissions;
+import j86.java.lang.Thread.UncaughtExceptionHandler;
+import j86.java.util.ArrayList;
+import j86.java.util.Arrays;
+import j86.java.util.Collection;
+import j86.java.util.Collections;
+import j86.java.util.List;
+import j86.j86.java.util.concurrent.AbstractExecutorService;
+import j86.j86.java.util.concurrent.Callable;
+import j86.j86.java.util.concurrent.ExecutorService;
+import j86.j86.java.util.concurrent.Future;
+import j86.j86.java.util.concurrent.RejectedExecutionException;
+import j86.j86.java.util.concurrent.RunnableFuture;
+import j86.j86.java.util.concurrent.ThreadLocalRandom;
+import j86.j86.java.util.concurrent.TimeUnit;
+import j86.java.security.AccessControlContext;
+import j86.java.security.ProtectionDomain;
+import j86.java.security.Permissions;
 
 /**
  * An {@link ExecutorService} for running {@link ForkJoinTask}s.
@@ -136,11 +136,11 @@ import java.security.Permissions;
  * parameters, but these may be controlled by setting three
  * {@linkplain System#getProperty system properties}:
  * <ul>
- * <li>{@code java.util.concurrent.ForkJoinPool.common.parallelism}
+ * <li>{@code j86.j86.java.util.concurrent.ForkJoinPool.common.parallelism}
  * - the parallelism level, a non-negative integer
- * <li>{@code java.util.concurrent.ForkJoinPool.common.threadFactory}
+ * <li>{@code j86.j86.java.util.concurrent.ForkJoinPool.common.threadFactory}
  * - the class name of a {@link ForkJoinWorkerThreadFactory}
- * <li>{@code java.util.concurrent.ForkJoinPool.common.exceptionHandler}
+ * <li>{@code j86.j86.java.util.concurrent.ForkJoinPool.common.exceptionHandler}
  * - the class name of a {@link UncaughtExceptionHandler}
  * </ul>
  * If a {@link SecurityManager} is present and no factory is
@@ -165,7 +165,7 @@ import java.security.Permissions;
  * @since 1.7
  * @author Doug Lea
  */
-@sun.misc.Contended
+@j86.sun.misc.Contended
 public class ForkJoinPool extends AbstractExecutorService {
 
     /*
@@ -657,7 +657,7 @@ public class ForkJoinPool extends AbstractExecutorService {
      * help arrange that). The @Contended annotation alerts JVMs to
      * try to keep instances apart.
      */
-    @sun.misc.Contended
+    @j86.sun.misc.Contended
     static final class WorkQueue {
         /**
          * Capacity of work-stealing queue array upon initialization.
@@ -1069,14 +1069,14 @@ public class ForkJoinPool extends AbstractExecutorService {
         }
 
         // Unsafe mechanics
-        private static final sun.misc.Unsafe U;
+        private static final j86.sun.misc.Unsafe U;
         private static final long QBASE;
         private static final long QLOCK;
         private static final int ABASE;
         private static final int ASHIFT;
         static {
             try {
-                U = sun.misc.Unsafe.getUnsafe();
+                U = j86.sun.misc.Unsafe.getUnsafe();
                 Class<?> k = WorkQueue.class;
                 Class<?> ak = ForkJoinTask[].class;
                 QBASE = U.objectFieldOffset
@@ -2384,14 +2384,14 @@ public class ForkJoinPool extends AbstractExecutorService {
 
     /**
      * Creates a {@code ForkJoinPool} with parallelism equal to {@link
-     * java.lang.Runtime#availableProcessors}, using the {@linkplain
+     * j86.java.lang.Runtime#availableProcessors}, using the {@linkplain
      * #defaultForkJoinWorkerThreadFactory default thread factory},
      * no UncaughtExceptionHandler, and non-async LIFO processing mode.
      *
      * @throws SecurityException if a security manager exists and
      *         the caller is not permitted to modify threads
      *         because it does not hold {@link
-     *         java.lang.RuntimePermission}{@code ("modifyThread")}
+     *         j86.java.lang.RuntimePermission}{@code ("modifyThread")}
      */
     public ForkJoinPool() {
         this(Math.min(MAX_CAP, Runtime.getRuntime().availableProcessors()),
@@ -2410,7 +2410,7 @@ public class ForkJoinPool extends AbstractExecutorService {
      * @throws SecurityException if a security manager exists and
      *         the caller is not permitted to modify threads
      *         because it does not hold {@link
-     *         java.lang.RuntimePermission}{@code ("modifyThread")}
+     *         j86.java.lang.RuntimePermission}{@code ("modifyThread")}
      */
     public ForkJoinPool(int parallelism) {
         this(parallelism, defaultForkJoinWorkerThreadFactory, null, false);
@@ -2420,7 +2420,7 @@ public class ForkJoinPool extends AbstractExecutorService {
      * Creates a {@code ForkJoinPool} with the given parameters.
      *
      * @param parallelism the parallelism level. For default value,
-     * use {@link java.lang.Runtime#availableProcessors}.
+     * use {@link j86.java.lang.Runtime#availableProcessors}.
      * @param factory the factory for creating new threads. For default value,
      * use {@link #defaultForkJoinWorkerThreadFactory}.
      * @param handler the handler for internal worker threads that
@@ -2438,7 +2438,7 @@ public class ForkJoinPool extends AbstractExecutorService {
      * @throws SecurityException if a security manager exists and
      *         the caller is not permitted to modify threads
      *         because it does not hold {@link
-     *         java.lang.RuntimePermission}{@code ("modifyThread")}
+     *         j86.java.lang.RuntimePermission}{@code ("modifyThread")}
      */
     public ForkJoinPool(int parallelism,
                         ForkJoinWorkerThreadFactory factory,
@@ -2946,7 +2946,7 @@ public class ForkJoinPool extends AbstractExecutorService {
      * @throws SecurityException if a security manager exists and
      *         the caller is not permitted to modify threads
      *         because it does not hold {@link
-     *         java.lang.RuntimePermission}{@code ("modifyThread")}
+     *         j86.java.lang.RuntimePermission}{@code ("modifyThread")}
      */
     public void shutdown() {
         checkPermission();
@@ -2969,7 +2969,7 @@ public class ForkJoinPool extends AbstractExecutorService {
      * @throws SecurityException if a security manager exists and
      *         the caller is not permitted to modify threads
      *         because it does not hold {@link
-     *         java.lang.RuntimePermission}{@code ("modifyThread")}
+     *         j86.java.lang.RuntimePermission}{@code ("modifyThread")}
      */
     public List<Runnable> shutdownNow() {
         checkPermission();
@@ -3240,7 +3240,7 @@ public class ForkJoinPool extends AbstractExecutorService {
     }
 
     // Unsafe mechanics
-    private static final sun.misc.Unsafe U;
+    private static final j86.sun.misc.Unsafe U;
     private static final long CTL;
     private static final long PARKBLOCKER;
     private static final int ABASE;
@@ -3254,7 +3254,7 @@ public class ForkJoinPool extends AbstractExecutorService {
     static {
         // initialize field offsets for CAS etc
         try {
-            U = sun.misc.Unsafe.getUnsafe();
+            U = j86.sun.misc.Unsafe.getUnsafe();
             Class<?> k = ForkJoinPool.class;
             CTL = U.objectFieldOffset
                 (k.getDeclaredField("ctl"));
@@ -3286,8 +3286,8 @@ public class ForkJoinPool extends AbstractExecutorService {
             new DefaultForkJoinWorkerThreadFactory();
         modifyThreadPermission = new RuntimePermission("modifyThread");
 
-        common = java.security.AccessController.doPrivileged
-            (new java.security.PrivilegedAction<ForkJoinPool>() {
+        common = j86.java.security.AccessController.doPrivileged
+            (new j86.java.security.PrivilegedAction<ForkJoinPool>() {
                 public ForkJoinPool run() { return makeCommonPool(); }});
         int par = common.parallelism; // report 1 even if threads disabled
         commonParallelism = par > 0 ? par : 1;
@@ -3303,11 +3303,11 @@ public class ForkJoinPool extends AbstractExecutorService {
         UncaughtExceptionHandler handler = null;
         try {  // ignore exceptions in accessing/parsing properties
             String pp = System.getProperty
-                ("java.util.concurrent.ForkJoinPool.common.parallelism");
+                ("j86.j86.java.util.concurrent.ForkJoinPool.common.parallelism");
             String fp = System.getProperty
-                ("java.util.concurrent.ForkJoinPool.common.threadFactory");
+                ("j86.j86.java.util.concurrent.ForkJoinPool.common.threadFactory");
             String hp = System.getProperty
-                ("java.util.concurrent.ForkJoinPool.common.exceptionHandler");
+                ("j86.j86.java.util.concurrent.ForkJoinPool.common.exceptionHandler");
             if (pp != null)
                 parallelism = Integer.parseInt(pp);
             if (fp != null)
@@ -3358,8 +3358,8 @@ public class ForkJoinPool extends AbstractExecutorService {
 
         public final ForkJoinWorkerThread newThread(ForkJoinPool pool) {
             return (ForkJoinWorkerThread.InnocuousForkJoinWorkerThread)
-                java.security.AccessController.doPrivileged(
-                    new java.security.PrivilegedAction<ForkJoinWorkerThread>() {
+                j86.java.security.AccessController.doPrivileged(
+                    new j86.java.security.PrivilegedAction<ForkJoinWorkerThread>() {
                     public ForkJoinWorkerThread run() {
                         return new ForkJoinWorkerThread.
                             InnocuousForkJoinWorkerThread(pool);

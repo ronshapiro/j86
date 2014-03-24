@@ -23,18 +23,18 @@
  * questions.
  */
 
-package javax.swing.plaf.metal;
+package j86.j86.j86.javax.swing.plaf.metal;
 
-import sun.swing.SwingUtilities2;
-import sun.awt.AppContext;
+import j86.sun.swing.SwingUtilities2;
+import j86.sun.awt.AppContext;
 
-import javax.swing.*;
-import javax.swing.border.*;
-import javax.swing.plaf.basic.*;
-import java.awt.*;
-import java.awt.event.*;
-import java.beans.*;
-import javax.swing.plaf.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.border.*;
+import j86.j86.j86.javax.swing.plaf.basic.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.java.beans.*;
+import j86.j86.javax.swing.plaf.*;
 
 /**
  * MetalButtonUI implementation
@@ -45,8 +45,8 @@ import javax.swing.plaf.*;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @author Tom Santos
  */
@@ -122,8 +122,8 @@ public class MetalButtonUI extends BasicButtonUI {
      * @param c JComponent painting on
      * @throws NullPointerException if <code>g</code> or <code>c</code> is
      *         null
-     * @see javax.swing.plaf.ComponentUI#update
-     * @see javax.swing.plaf.ComponentUI#paint
+     * @see j86.j86.javax.swing.plaf.ComponentUI#update
+     * @see j86.j86.javax.swing.plaf.ComponentUI#paint
      * @since 1.5
      */
     public void update(Graphics g, JComponent c) {

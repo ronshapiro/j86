@@ -23,11 +23,11 @@
  * questions.
  */
 
-package java.lang.management;
+package j86.j86.java.lang.management;
 
-import javax.management.openmbean.CompositeData;
-import java.util.concurrent.locks.*;
-import sun.management.LockInfoCompositeData;
+import j86.j86.javax.management.openmbean.CompositeData;
+import j86.j86.j86.java.util.concurrent.locks.*;
+import j86.sun.management.LockInfoCompositeData;
 
 /**
  * Information about a <em>lock</em>.  A lock can be a built-in object monitor,
@@ -46,8 +46,8 @@ import sun.management.LockInfoCompositeData;
  * <tt>LockInfo</tt> is mapped to a {@link CompositeData CompositeData}
  * as specified in the {@link #from from} method.
  *
- * @see java.util.concurrent.locks.AbstractOwnableSynchronizer
- * @see java.util.concurrent.locks.Condition
+ * @see j86.j86.j86.java.util.concurrent.locks.AbstractOwnableSynchronizer
+ * @see j86.j86.j86.java.util.concurrent.locks.Condition
  *
  * @author  Mandy Chung
  * @since   1.6
@@ -112,11 +112,11 @@ public class LockInfo {
      * </tr>
      * <tr>
      *   <td>className</td>
-     *   <td><tt>java.lang.String</tt></td>
+     *   <td><tt>j86.java.lang.String</tt></td>
      * </tr>
      * <tr>
      *   <td>identityHashCode</td>
-     *   <td><tt>java.lang.Integer</tt></td>
+     *   <td><tt>j86.java.lang.Integer</tt></td>
      * </tr>
      * </table>
      * </blockquote>

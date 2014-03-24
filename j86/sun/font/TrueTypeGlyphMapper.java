@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.font;
+package j86.sun.font;
 
-import java.nio.ByteBuffer;
-import java.util.Locale;
+import j86.java.nio.ByteBuffer;
+import j86.java.util.Locale;
 
 public class TrueTypeGlyphMapper extends CharToGlyphMapper {
 

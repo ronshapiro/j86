@@ -25,10 +25,10 @@
 /*
  * $Id: SignatureProperties.java,v 1.4 2005/05/10 16:03:46 mullan Exp $
  */
-package javax.xml.crypto.dsig;
+package j86.j86.javax.xml.crypto.dsig;
 
-import javax.xml.crypto.XMLStructure;
-import java.util.List;
+import j86.javax.xml.crypto.XMLStructure;
+import j86.java.util.List;
 
 /**
  * A representation of the XML <code>SignatureProperties</code> element as
@@ -80,7 +80,7 @@ public interface SignatureProperties extends XMLStructure {
     String getId();
 
     /**
-     * Returns an {@link java.util.Collections#unmodifiableList unmodifiable
+     * Returns an {@link j86.java.util.Collections#unmodifiableList unmodifiable
      * list} of one or more {@link SignatureProperty}s that are contained in
      * this <code>SignatureProperties</code>.
      *

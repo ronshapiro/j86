@@ -23,22 +23,22 @@
  * questions.
  */
 
-package com.sun.java.swing.plaf.windows;
+package j86.j86.com.sun.java.swing.plaf.windows;
 
-import java.beans.PropertyChangeListener;
-import java.beans.PropertyChangeEvent;
-import javax.swing.plaf.basic.*;
-import javax.swing.plaf.*;
-import javax.swing.border.*;
-import javax.swing.*;
-import java.awt.event.*;
-import java.awt.*;
+import j86.java.beans.PropertyChangeListener;
+import j86.java.beans.PropertyChangeEvent;
+import j86.j86.j86.javax.swing.plaf.basic.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.javax.swing.border.*;
+import j86.javax.swing.*;
+import j86.j86.java.awt.event.*;
+import j86.java.awt.*;
 
-import static com.sun.java.swing.plaf.windows.TMSchema.Part;
-import static com.sun.java.swing.plaf.windows.TMSchema.State;
-import static com.sun.java.swing.plaf.windows.XPStyle.Skin;
-import sun.swing.DefaultLookup;
-import sun.swing.StringUIClientPropertyKey;
+import static j86.j86.com.sun.java.swing.plaf.windows.TMSchema.Part;
+import static j86.j86.com.sun.java.swing.plaf.windows.TMSchema.State;
+import static j86.j86.com.sun.java.swing.plaf.windows.XPStyle.Skin;
+import j86.sun.swing.DefaultLookup;
+import j86.sun.swing.StringUIClientPropertyKey;
 
 
 /**
@@ -272,7 +272,7 @@ public class WindowsComboBoxUI extends BasicComboBoxUI {
             // On vista for READNLY ComboBox
             // color for currentValue is the same as for any other item
 
-            // mostly copied from javax.swing.plaf.basic.BasicComboBoxUI.paintCurrentValue
+            // mostly copied from j86.j86.j86.javax.swing.plaf.basic.BasicComboBoxUI.paintCurrentValue
             ListCellRenderer renderer = comboBox.getRenderer();
             Component c;
             if ( hasFocus && !isPopupVisible(comboBox) ) {
@@ -373,7 +373,7 @@ public class WindowsComboBoxUI extends BasicComboBoxUI {
      * explicitly set with <code>setEditor</code>.
      *
      * @return a <code>ComboBoxEditor</code> used for the combo box
-     * @see javax.swing.JComboBox#setEditor
+     * @see j86.javax.swing.JComboBox#setEditor
      */
     protected ComboBoxEditor createEditor() {
         return new WindowsComboBoxEditor();

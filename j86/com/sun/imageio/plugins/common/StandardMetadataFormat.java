@@ -23,12 +23,12 @@
  * questions.
  */
 
-package com.sun.imageio.plugins.common;
+package j86.com.sun.imageio.plugins.common;
 
-import java.util.ArrayList;
-import java.util.List;
-import javax.imageio.ImageTypeSpecifier;
-import javax.imageio.metadata.IIOMetadataFormatImpl;
+import j86.java.util.ArrayList;
+import j86.java.util.List;
+import j86.javax.imageio.ImageTypeSpecifier;
+import j86.j86.javax.imageio.metadata.IIOMetadataFormatImpl;
 
 public class StandardMetadataFormat extends IIOMetadataFormatImpl {
 

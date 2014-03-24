@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text;
+package j86.j86.javax.swing.text;
 
-import java.awt.*;
-import javax.swing.*;
-import javax.swing.event.*;
+import j86.java.awt.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.event.*;
 
 /**
  * Extends the multi-line plain text view to be suitable
@@ -217,7 +217,7 @@ public class FieldView extends PlainView {
                 width = Utilities.getTabbedTextWidth(buff, fm, 0, this, 0);
                 if (buff.count > 0) {
                     Component c = getContainer();
-                    firstLineOffset = sun.swing.SwingUtilities2.
+                    firstLineOffset = j86.sun.swing.SwingUtilities2.
                         getLeftSideBearing((c instanceof JComponent) ?
                                            (JComponent)c : null, fm,
                                            buff.array[buff.offset]);

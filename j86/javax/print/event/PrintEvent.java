@@ -23,14 +23,14 @@
  * questions.
  */
 
-package javax.print.event;
+package j86.j86.javax.print.event;
 
 /**
  *
  * Class PrintEvent is the super class of all Print Service API events.
  */
 
-public class PrintEvent extends java.util.EventObject {
+public class PrintEvent extends j86.java.util.EventObject {
 
     private static final long serialVersionUID = 2286914924430763847L;
 

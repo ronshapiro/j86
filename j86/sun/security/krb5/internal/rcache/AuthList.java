@@ -29,15 +29,15 @@
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
 
-package sun.security.krb5.internal.rcache;
+package j86.j86.j86.sun.security.krb5.internal.rcache;
 
-import sun.security.krb5.internal.Krb5;
+import j86.j86.sun.security.krb5.internal.Krb5;
 
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.ListIterator;
-import sun.security.krb5.internal.KerberosTime;
-import sun.security.krb5.internal.KrbApErrException;
+import j86.java.util.Iterator;
+import j86.java.util.LinkedList;
+import j86.java.util.ListIterator;
+import j86.j86.sun.security.krb5.internal.KerberosTime;
+import j86.j86.sun.security.krb5.internal.KrbApErrException;
 
 /**
  * This class provides an efficient caching mechanism to store AuthTimeWithHash

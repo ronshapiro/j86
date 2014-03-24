@@ -23,13 +23,13 @@
  * questions.
  */
 
-package com.sun.jndi.cosnaming;
+package j86.com.sun.jndi.cosnaming;
 
-import javax.naming.*;
-import javax.naming.spi.NamingManager;
+import j86.javax.naming.*;
+import j86.j86.javax.naming.spi.NamingManager;
 
-import java.util.NoSuchElementException;
-import java.util.Hashtable;
+import j86.java.util.NoSuchElementException;
+import j86.java.util.Hashtable;
 
 import org.omg.CosNaming.*;
 
@@ -43,7 +43,7 @@ import org.omg.CosNaming.*;
   */
 
 final class CNBindingEnumeration
-        implements NamingEnumeration<javax.naming.Binding> {
+        implements NamingEnumeration<j86.javax.naming.Binding> {
 
     private static final int DEFAULT_BATCHSIZE = 100;
     private BindingListHolder _bindingList; // list of bindings
@@ -62,7 +62,7 @@ final class CNBindingEnumeration
     CNBindingEnumeration(CNCtx ctx, boolean isLookedUpCtx, Hashtable<?,?> env) {
         // Get batch size to use
         String batch = (env != null ?
-            (String)env.get(javax.naming.Context.BATCHSIZE) : null);
+            (String)env.get(j86.javax.naming.Context.BATCHSIZE) : null);
         if (batch != null) {
             try {
                 batchsize = Integer.parseInt(batch);
@@ -97,7 +97,7 @@ final class CNBindingEnumeration
      * @exception NamingException any naming exception.
      */
 
-    public javax.naming.Binding next() throws NamingException {
+    public j86.javax.naming.Binding next() throws NamingException {
         if (more && counter >= _bindingList.value.length) {
             getMore();
         }
@@ -143,7 +143,7 @@ final class CNBindingEnumeration
     * list is reached.
     */
 
-    public javax.naming.Binding nextElement() {
+    public j86.javax.naming.Binding nextElement() {
         try {
             return next();
         } catch (NamingException ne) {
@@ -205,9 +205,9 @@ final class CNBindingEnumeration
     * @exception NamingException One of the above.
     */
 
-    private javax.naming.Binding mapBinding(org.omg.CosNaming.Binding bndg)
+    private j86.javax.naming.Binding mapBinding(org.omg.CosNaming.Binding bndg)
                 throws NamingException {
-        java.lang.Object obj = _ctx.callResolve(bndg.binding_name);
+        j86.java.lang.Object obj = _ctx.callResolve(bndg.binding_name);
 
         Name cname = CNNameParser.cosNameToName(bndg.binding_name);
 
@@ -225,7 +225,7 @@ final class CNBindingEnumeration
         // Use cname.toString() instead of bindingName because the name
         // in the binding should be a composite name
         String cnameStr = cname.toString();
-        javax.naming.Binding jbndg = new javax.naming.Binding(cnameStr, obj);
+        j86.javax.naming.Binding jbndg = new javax.naming.Binding(cnameStr, obj);
 
         NameComponent[] comps = _ctx.makeFullName(bndg.binding_name);
         String fullName = CNNameParser.cosNameToInsString(comps);

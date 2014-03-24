@@ -23,11 +23,11 @@
  * questions.
  */
 
-package com.sun.rmi.rmid;
+package j86.com.sun.rmi.rmid;
 
-import java.security.*;
-import java.io.*;
-import java.util.*;
+import j86.java.security.*;
+import j86.java.io.*;
+import j86.java.util.*;
 
 /**
  * The ExecOptionPermission class represents permission for rmid to use
@@ -173,7 +173,7 @@ public final class ExecOptionPermission extends Permission
      * readObject is called to restore the state of the ExecOptionPermission
      * from a stream.
      */
-    private synchronized void readObject(java.io.ObjectInputStream s)
+    private synchronized void readObject(j86.java.io.ObjectInputStream s)
          throws IOException, ClassNotFoundException
     {
         s.defaultReadObject();
@@ -220,7 +220,7 @@ public final class ExecOptionPermission extends Permission
      */
     private static class ExecOptionPermissionCollection
         extends PermissionCollection
-        implements java.io.Serializable
+        implements j86.java.io.Serializable
     {
 
         private Hashtable<String, Permission> permissions;

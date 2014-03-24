@@ -23,18 +23,18 @@
  * questions.
  */
 
-package com.sun.jndi.ldap.pool;
+package j86.j86.com.sun.jndi.ldap.pool;
 
-import java.util.ArrayList; // JDK 1.2
-import java.util.List;
-import java.util.Iterator;
+import j86.java.util.ArrayList; // JDK 1.2
+import j86.java.util.List;
+import j86.java.util.Iterator;
 
-import java.lang.ref.Reference;
-import java.lang.ref.SoftReference;
+import j86.j86.java.lang.ref.Reference;
+import j86.j86.java.lang.ref.SoftReference;
 
-import javax.naming.NamingException;
-import javax.naming.InterruptedNamingException;
-import javax.naming.CommunicationException;
+import j86.javax.naming.NamingException;
+import j86.javax.naming.InterruptedNamingException;
+import j86.javax.naming.CommunicationException;
 
 /**
  * Represents a list of PooledConnections (actually, ConnectionDescs) with the
@@ -66,7 +66,7 @@ import javax.naming.CommunicationException;
 final class Connections implements PoolCallback {
     private static final boolean debug = Pool.debug;
     private static final boolean trace =
-        com.sun.jndi.ldap.LdapPoolManager.trace;
+        j86.com.sun.jndi.ldap.LdapPoolManager.trace;
     private static final int DEFAULT_SIZE = 10;
 
     final private int maxSize;

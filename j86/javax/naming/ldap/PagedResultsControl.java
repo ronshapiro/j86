@@ -23,11 +23,11 @@
  * questions.
  */
 
-package javax.naming.ldap;
+package j86.j86.javax.naming.ldap;
 
-import java.io.IOException;
-import com.sun.jndi.ldap.Ber;
-import com.sun.jndi.ldap.BerEncoder;
+import j86.java.io.IOException;
+import j86.com.sun.jndi.ldap.Ber;
+import j86.com.sun.jndi.ldap.BerEncoder;
 
 /**
  * Requests that the results of a search operation be returned by the LDAP

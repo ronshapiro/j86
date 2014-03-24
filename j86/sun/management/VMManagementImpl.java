@@ -23,21 +23,21 @@
  * questions.
  */
 
-package sun.management;
+package j86.sun.management;
 
-import sun.misc.Perf;
-import sun.management.counter.*;
-import sun.management.counter.perf.*;
-import java.nio.ByteBuffer;
-import java.io.IOException;
-import java.net.InetAddress;
-import java.net.UnknownHostException;
-import java.util.List;
-import java.util.Arrays;
-import java.util.Collections;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import sun.security.action.GetPropertyAction;
+import j86.sun.misc.Perf;
+import j86.j86.sun.management.counter.*;
+import j86.j86.j86.sun.management.counter.perf.*;
+import j86.java.nio.ByteBuffer;
+import j86.java.io.IOException;
+import j86.java.net.InetAddress;
+import j86.java.net.UnknownHostException;
+import j86.java.util.List;
+import j86.java.util.Arrays;
+import j86.java.util.Collections;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.sun.security.action.GetPropertyAction;
 
 /**
  * Implementation of VMManagement interface that accesses the management
@@ -204,7 +204,7 @@ class VMManagementImpl implements VMManagement {
         String name =  AccessController.doPrivileged(
             new PrivilegedAction<String>() {
                 public String run() {
-                    return System.getProperty("sun.management.compiler");
+                    return System.getProperty("j86.sun.management.compiler");
                 }
             });
         return name;

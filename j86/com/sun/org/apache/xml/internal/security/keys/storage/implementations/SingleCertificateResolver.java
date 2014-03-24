@@ -20,18 +20,18 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.sun.org.apache.xml.internal.security.keys.storage.implementations;
+package j86.j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.storage.implementations;
 
-import java.security.cert.Certificate;
-import java.security.cert.X509Certificate;
-import java.util.Iterator;
-import java.util.NoSuchElementException;
+import j86.j86.java.security.cert.Certificate;
+import j86.j86.java.security.cert.X509Certificate;
+import j86.java.util.Iterator;
+import j86.java.util.NoSuchElementException;
 
-import com.sun.org.apache.xml.internal.security.keys.storage.StorageResolverSpi;
+import j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.storage.StorageResolverSpi;
 
 /**
  * This {@link StorageResolverSpi} makes a single {@link X509Certificate}
- * available to the {@link com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver}.
+ * available to the {@link j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver}.
  */
 public class SingleCertificateResolver extends StorageResolverSpi {
 

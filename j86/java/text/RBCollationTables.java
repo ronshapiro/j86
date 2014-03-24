@@ -36,11 +36,11 @@
  *
  */
 
-package java.text;
+package j86.java.text;
 
-import java.util.Vector;
-import sun.text.UCompactIntArray;
-import sun.text.IntHashtable;
+import j86.java.util.Vector;
+import j86.sun.text.UCompactIntArray;
+import j86.sun.text.IntHashtable;
 
 /**
  * This class contains the static state of a RuleBasedCollator: The various

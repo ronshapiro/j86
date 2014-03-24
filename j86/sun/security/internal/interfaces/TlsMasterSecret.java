@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.security.internal.interfaces;
+package j86.sun.security.internal.interfaces;
 
-import javax.crypto.SecretKey;
+import j86.javax.crypto.SecretKey;
 
 /**
  * An SSL/TLS master secret key. It is a <code>SecretKey</code> that optionally

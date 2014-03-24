@@ -22,37 +22,37 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.management;
+package j86.sun.management;
 
-import java.io.BufferedInputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
-import java.lang.management.ManagementFactory;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.net.InetAddress;
-import java.net.Socket;
-import java.net.UnknownHostException;
-import java.text.MessageFormat;
-import java.util.MissingResourceException;
-import java.util.Properties;
-import java.util.ResourceBundle;
+import j86.java.io.BufferedInputStream;
+import j86.java.io.File;
+import j86.java.io.FileInputStream;
+import j86.java.io.FileNotFoundException;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.j86.java.lang.management.ManagementFactory;
+import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.net.InetAddress;
+import j86.java.net.Socket;
+import j86.java.net.UnknownHostException;
+import j86.java.text.MessageFormat;
+import j86.java.util.MissingResourceException;
+import j86.java.util.Properties;
+import j86.java.util.ResourceBundle;
 
-import javax.management.remote.JMXConnectorServer;
-import javax.management.remote.JMXServiceURL;
+import j86.j86.javax.management.remote.JMXConnectorServer;
+import j86.j86.javax.management.remote.JMXServiceURL;
 
-import static sun.management.AgentConfigurationError.*;
-import sun.management.jmxremote.ConnectorBootstrap;
-import sun.management.jdp.JdpController;
-import sun.management.jdp.JdpException;
-import sun.misc.VMSupport;
+import static j86.sun.management.AgentConfigurationError.*;
+import j86.j86.sun.management.jmxremote.ConnectorBootstrap;
+import j86.j86.sun.management.jdp.JdpController;
+import j86.j86.sun.management.jdp.JdpException;
+import j86.sun.misc.VMSupport;
 
 /**
- * This Agent is started by the VM when -Dcom.sun.management.snmp or
- * -Dcom.sun.management.jmxremote is set. This class will be loaded by the
+ * This Agent is started by the VM when -Dcom.j86.j86.sun.management.snmp or
+ * -Dcom.j86.j86.sun.management.jmxremote is set. This class will be loaded by the
  * system class loader. Also jmx framework could be started by jcmd
  */
 public class Agent {
@@ -61,21 +61,21 @@ public class Agent {
     private static Properties mgmtProps;
     private static ResourceBundle messageRB;
     private static final String CONFIG_FILE =
-            "com.sun.management.config.file";
+            "com.j86.sun.management.config.file";
     private static final String SNMP_PORT =
-            "com.sun.management.snmp.port";
+            "com.j86.j86.sun.management.snmp.port";
     private static final String JMXREMOTE =
-            "com.sun.management.jmxremote";
+            "com.j86.j86.sun.management.jmxremote";
     private static final String JMXREMOTE_PORT =
-            "com.sun.management.jmxremote.port";
+            "com.j86.j86.sun.management.jmxremote.port";
     private static final String RMI_PORT =
-            "com.sun.management.jmxremote.rmi.port";
+            "com.j86.j86.sun.management.jmxremote.rmi.port";
     private static final String ENABLE_THREAD_CONTENTION_MONITORING =
-            "com.sun.management.enableThreadContentionMonitoring";
+            "com.j86.sun.management.enableThreadContentionMonitoring";
     private static final String LOCAL_CONNECTOR_ADDRESS_PROP =
-            "com.sun.management.jmxremote.localConnectorAddress";
+            "com.j86.j86.sun.management.jmxremote.localConnectorAddress";
     private static final String SNMP_ADAPTOR_BOOTSTRAP_CLASS_NAME =
-            "sun.management.snmp.AdaptorBootstrap";
+            "j86.j86.sun.management.snmp.AdaptorBootstrap";
 
     private static final String JDP_DEFAULT_ADDRESS = "224.0.23.178";
     private static final int JDP_DEFAULT_PORT = 7095;
@@ -83,7 +83,7 @@ public class Agent {
     // The only active agent allowed
     private static JMXConnectorServer jmxServer = null;
 
-    // Parse string com.sun.management.prop=xxx,com.sun.management.prop=yyyy
+    // Parse string com.j86.sun.management.prop=xxx,j86.com.sun.management.prop=yyyy
     // and return property set if args is null or empty
     // return empty property set
     private static Properties parseString(String args) {
@@ -94,7 +94,7 @@ public class Agent {
                 String name = s[0].trim();
                 String value = (s.length > 1) ? s[1].trim() : "";
 
-                if (!name.startsWith("com.sun.management.")) {
+                if (!name.startsWith("com.j86.sun.management.")) {
                     error(INVALID_OPTION, name);
                 }
 
@@ -105,7 +105,7 @@ public class Agent {
         return argProps;
     }
 
-    // invoked by -javaagent or -Dcom.sun.management.agent.class
+    // invoked by -javaagent or -Dcom.j86.sun.management.agent.class
     public static void premain(String args) throws Exception {
         agentmain(args);
     }
@@ -270,9 +270,9 @@ public class Agent {
     private static void startDiscoveryService(Properties props)
             throws IOException {
         // Start discovery service if requested
-        String discoveryPort = props.getProperty("com.sun.management.jdp.port");
-        String discoveryAddress = props.getProperty("com.sun.management.jdp.address");
-        String discoveryShouldStart = props.getProperty("com.sun.management.jmxremote.autodiscovery");
+        String discoveryPort = props.getProperty("com.j86.j86.sun.management.jdp.port");
+        String discoveryAddress = props.getProperty("com.j86.j86.sun.management.jdp.address");
+        String discoveryShouldStart = props.getProperty("com.j86.j86.sun.management.jmxremote.autodiscovery");
 
         // Decide whether we should start autodicovery service.
         // To start autodiscovery following conditions should be met:
@@ -323,7 +323,7 @@ public class Agent {
                     : String.format(
                     "service:jmx:rmi:///jndi/rmi://%s:%s/jmxrmi", hostname, jmxremotePort);
 
-            String instanceName = props.getProperty("com.sun.management.jdp.name");
+            String instanceName = props.getProperty("com.j86.j86.sun.management.jdp.name");
 
             try{
                JdpController.startDiscoveryService(address, port, instanceName, jmxUrlStr);
@@ -436,9 +436,9 @@ public class Agent {
     }
 
     public static void startAgent() throws Exception {
-        String prop = System.getProperty("com.sun.management.agent.class");
+        String prop = System.getProperty("com.j86.sun.management.agent.class");
 
-        // -Dcom.sun.management.agent.class not set so read management
+        // -Dcom.j86.sun.management.agent.class not set so read management
         // properties and start agent
         if (prop == null) {
             // initialize management properties
@@ -449,7 +449,7 @@ public class Agent {
             return;
         }
 
-        // -Dcom.sun.management.agent.class=<agent classname>:<agent args>
+        // -Dcom.j86.sun.management.agent.class=<agent classname>:<agent args>
         String[] values = prop.split(":");
         if (values.length < 1 || values.length > 2) {
             error(AGENT_CLASS_INVALID, "\"" + prop + "\"");
@@ -524,7 +524,7 @@ public class Agent {
     private static void initResource() {
         try {
             messageRB =
-                    ResourceBundle.getBundle("sun.management.resources.agent");
+                    ResourceBundle.getBundle("j86.sun.management.resources.agent");
         } catch (MissingResourceException e) {
             throw new Error("Fatal: Resource for management agent is missing");
         }

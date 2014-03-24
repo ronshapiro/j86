@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.security.jgss.wrapper;
+package j86.j86.sun.security.jgss.wrapper;
 
-import java.util.HashMap;
-import java.security.Provider;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import org.ietf.jgss.Oid;
-import sun.security.action.PutAllAction;
+import j86.java.util.HashMap;
+import j86.java.security.Provider;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.org.ietf.jgss.Oid;
+import j86.sun.security.action.PutAllAction;
 
 /**
  * Defines the Sun NativeGSS provider for plugging in the
@@ -49,8 +49,8 @@ public final class SunNativeProvider extends Provider {
     private static final String NAME = "SunNativeGSS";
     private static final String INFO = "Sun Native GSS provider";
     private static final String MF_CLASS =
-        "sun.security.jgss.wrapper.NativeGSSFactory";
-    private static final String LIB_PROP = "sun.security.jgss.lib";
+        "j86.j86.sun.security.jgss.wrapper.NativeGSSFactory";
+    private static final String LIB_PROP = "j86.sun.security.jgss.lib";
     private static final String DEBUG_PROP = "sun.security.nativegss.debug";
     private static HashMap<String, String> MECH_MAP;
     static final Provider INSTANCE = new SunNativeProvider();

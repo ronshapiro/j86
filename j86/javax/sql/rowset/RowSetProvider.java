@@ -23,13 +23,13 @@
  * questions.
  */
 
-package javax.sql.rowset;
+package j86.j86.javax.sql.rowset;
 
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.sql.SQLException;
-import java.util.ServiceConfigurationError;
-import java.util.ServiceLoader;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.sql.SQLException;
+import j86.java.util.ServiceConfigurationError;
+import j86.java.util.ServiceLoader;
 
 /**
  * A factory API that enables applications to obtain a
@@ -42,12 +42,12 @@ import java.util.ServiceLoader;
  * RowSetFactory aFactory = RowSetProvider.newFactory();
  * CachedRowSet crs = aFactory.createCachedRowSet();
  * ...
- * RowSetFactory rsf = RowSetProvider.newFactory("com.sun.rowset.RowSetFactoryImpl", null);
+ * RowSetFactory rsf = RowSetProvider.newFactory("j86.com.sun.rowset.RowSetFactoryImpl", null);
  * WebRowSet wrs = rsf.createWebRowSet();
  * </pre>
  *<p>
  * Tracing of this class may be enabled by setting the System property
- * {@code javax.sql.rowset.RowSetFactory.debug} to any value but {@code false}.
+ * {@code j86.j86.javax.sql.rowset.RowSetFactory.debug} to any value but {@code false}.
  * </p>
  *
  * @author Lance Andersen
@@ -55,9 +55,9 @@ import java.util.ServiceLoader;
  */
 public class RowSetProvider {
 
-    private static final String ROWSET_DEBUG_PROPERTY = "javax.sql.rowset.RowSetProvider.debug";
-    private static final String ROWSET_FACTORY_IMPL = "com.sun.rowset.RowSetFactoryImpl";
-    private static final String ROWSET_FACTORY_NAME = "javax.sql.rowset.RowSetFactory";
+    private static final String ROWSET_DEBUG_PROPERTY = "j86.j86.javax.sql.rowset.RowSetProvider.debug";
+    private static final String ROWSET_FACTORY_IMPL = "j86.com.sun.rowset.RowSetFactoryImpl";
+    private static final String ROWSET_FACTORY_NAME = "j86.j86.javax.sql.rowset.RowSetFactory";
     /**
      * Internal debug flag.
      */
@@ -84,22 +84,22 @@ public class RowSetProvider {
      * the <code>RowSetFactory</code> implementation class to load:</p>
      * <ul>
      * <li>
-     * The System property {@code javax.sql.rowset.RowSetFactory}.  For example:
+     * The System property {@code j86.j86.javax.sql.rowset.RowSetFactory}.  For example:
      * <ul>
      * <li>
-     * -Djavax.sql.rowset.RowSetFactory=com.sun.rowset.RowSetFactoryImpl
+     * -Dj86.j86.javax.sql.rowset.RowSetFactory=j86.com.sun.rowset.RowSetFactoryImpl
      * </li>
      * </ul>
      * <li>
      * The {@link ServiceLoader} API. The {@code ServiceLoader} API will look
      * for a class name in the file
-     * {@code META-INF/services/javax.sql.rowset.RowSetFactory}
+     * {@code META-INF/services/j86.j86.javax.sql.rowset.RowSetFactory}
      * in jars available to the runtime. For example, to have the the RowSetFactory
-     * implementation {@code com.sun.rowset.RowSetFactoryImpl } loaded, the
-     * entry in {@code META-INF/services/javax.sql.rowset.RowSetFactory} would be:
+     * implementation {@code j86.com.sun.rowset.RowSetFactoryImpl } loaded, the
+     * entry in {@code META-INF/services/j86.j86.javax.sql.rowset.RowSetFactory} would be:
      *  <ul>
      * <li>
-     * {@code com.sun.rowset.RowSetFactoryImpl }
+     * {@code j86.com.sun.rowset.RowSetFactoryImpl }
      * </li>
      * </ul>
      * </li>
@@ -163,7 +163,7 @@ public class RowSetProvider {
      * it can use the factory to obtain RowSet instances.</p>
      *
      * @param factoryClassName fully qualified factory class name that
-     * provides  an implementation of <code>javax.sql.rowset.RowSetFactory</code>.
+     * provides  an implementation of <code>j86.j86.javax.sql.rowset.RowSetFactory</code>.
      *
      * @param cl <code>ClassLoader</code> used to load the factory
      * class. If <code>null</code> current <code>Thread</code>'s context
@@ -262,8 +262,8 @@ public class RowSetProvider {
         RowSetFactory theFactory = null;
         try {
             trace("***in loadViaServiceLoader():");
-            for (RowSetFactory factory : ServiceLoader.load(javax.sql.rowset.RowSetFactory.class)) {
-                trace(" Loading done by the java.util.ServiceLoader :" + factory.getClass().getName());
+            for (RowSetFactory factory : ServiceLoader.load(j86.j86.javax.sql.rowset.RowSetFactory.class)) {
+                trace(" Loading done by the j86.java.util.ServiceLoader :" + factory.getClass().getName());
                 theFactory = factory;
                 break;
             }
@@ -302,7 +302,7 @@ public class RowSetProvider {
 
     /**
      * Debug routine which will output tracing if the System Property
-     * -Djavax.sql.rowset.RowSetFactory.debug is set
+     * -Dj86.j86.javax.sql.rowset.RowSetFactory.debug is set
      * @param msg - The debug message to display
      */
     private static void trace(String msg) {

@@ -23,27 +23,27 @@
  * questions.
  */
 
-package java.awt;
+package j86.java.awt;
 
-import java.io.File;
-import java.io.IOException;
-import java.net.URISyntaxException;
-import java.net.URI;
-import java.net.URL;
-import java.net.MalformedURLException;
-import java.awt.AWTPermission;
-import java.awt.GraphicsEnvironment;
-import java.awt.HeadlessException;
-import java.awt.peer.DesktopPeer;
-import sun.awt.SunToolkit;
-import sun.awt.HeadlessToolkit;
-import java.io.FilePermission;
-import sun.security.util.SecurityConstants;
+import j86.java.io.File;
+import j86.java.io.IOException;
+import j86.java.net.URISyntaxException;
+import j86.java.net.URI;
+import j86.java.net.URL;
+import j86.java.net.MalformedURLException;
+import j86.java.awt.AWTPermission;
+import j86.java.awt.GraphicsEnvironment;
+import j86.java.awt.HeadlessException;
+import j86.j86.java.awt.peer.DesktopPeer;
+import j86.sun.awt.SunToolkit;
+import j86.sun.awt.HeadlessToolkit;
+import j86.java.io.FilePermission;
+import j86.sun.security.util.SecurityConstants;
 
 /**
  * The {@code Desktop} class allows a Java application to launch
  * associated applications registered on the native desktop to handle
- * a {@link java.net.URI} or a file.
+ * a {@link j86.java.net.URI} or a file.
  *
  * <p> Supported operations include:
  * <ul>
@@ -84,34 +84,34 @@ public class Desktop {
      * set of actions.  You may use the {@link Desktop#isSupported}
      * method to determine if the given action is supported by the
      * current platform.
-     * @see java.awt.Desktop#isSupported(java.awt.Desktop.Action)
+     * @see j86.java.awt.Desktop#isSupported(java.awt.Desktop.Action)
      * @since 1.6
      */
     public static enum Action {
         /**
          * Represents an "open" action.
-         * @see Desktop#open(java.io.File)
+         * @see Desktop#open(j86.java.io.File)
          */
         OPEN,
         /**
          * Represents an "edit" action.
-         * @see Desktop#edit(java.io.File)
+         * @see Desktop#edit(j86.java.io.File)
          */
         EDIT,
         /**
          * Represents a "print" action.
-         * @see Desktop#print(java.io.File)
+         * @see Desktop#print(j86.java.io.File)
          */
         PRINT,
         /**
          * Represents a "mail" action.
          * @see Desktop#mail()
-         * @see Desktop#mail(java.net.URI)
+         * @see Desktop#mail(j86.java.net.URI)
          */
         MAIL,
         /**
          * Represents a "browse" action.
-         * @see Desktop#browse(java.net.URI)
+         * @see Desktop#browse(j86.java.net.URI)
          */
         BROWSE
     };
@@ -136,7 +136,7 @@ public class Desktop {
      * @throws UnsupportedOperationException if this class is not
      * supported on the current platform
      * @see #isDesktopSupported()
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      */
     public static synchronized Desktop getDesktop(){
         if (GraphicsEnvironment.isHeadless()) throw new HeadlessException();
@@ -145,7 +145,7 @@ public class Desktop {
                                                     "supported on the current platform");
         }
 
-        sun.awt.AppContext context = sun.awt.AppContext.getAppContext();
+        j86.sun.awt.AppContext context = sun.awt.AppContext.getAppContext();
         Desktop desktop = (Desktop)context.get(Desktop.class);
 
         if (desktop == null) {
@@ -197,7 +197,7 @@ public class Desktop {
      * Checks if the file is a valid file and readable.
      *
      * @throws SecurityException If a security manager exists and its
-     *         {@link SecurityManager#checkRead(java.lang.String)} method
+     *         {@link SecurityManager#checkRead(j86.java.lang.String)} method
      *         denies read access to the file
      * @throws NullPointerException if file is null
      * @throws IllegalArgumentException if file doesn't exist
@@ -256,12 +256,12 @@ public class Desktop {
      * @throws IOException if the specified file has no associated
      * application or the associated application fails to be launched
      * @throws SecurityException if a security manager exists and its
-     * {@link java.lang.SecurityManager#checkRead(java.lang.String)}
+     * {@link j86.java.lang.SecurityManager#checkRead(java.lang.String)}
      * method denies read access to the file, or it denies the
      * <code>AWTPermission("showWindowWithoutWarningBanner")</code>
      * permission, or the calling thread is not allowed to create a
      * subprocess
-     * @see java.awt.AWTPermission
+     * @see j86.java.awt.AWTPermission
      */
     public void open(File file) throws IOException {
         checkAWTPermission();
@@ -285,14 +285,14 @@ public class Desktop {
      * @throws IOException if the specified file has no associated
      * editor, or the associated application fails to be launched
      * @throws SecurityException if a security manager exists and its
-     * {@link java.lang.SecurityManager#checkRead(java.lang.String)}
+     * {@link j86.java.lang.SecurityManager#checkRead(java.lang.String)}
      * method denies read access to the file, or {@link
-     * java.lang.SecurityManager#checkWrite(java.lang.String)} method
+     * j86.java.lang.SecurityManager#checkWrite(java.lang.String)} method
      * denies write access to the file, or it denies the
      * <code>AWTPermission("showWindowWithoutWarningBanner")</code>
      * permission, or the calling thread is not allowed to create a
      * subprocess
-     * @see java.awt.AWTPermission
+     * @see j86.java.awt.AWTPermission
      */
     public void edit(File file) throws IOException {
         checkAWTPermission();
@@ -318,9 +318,9 @@ public class Desktop {
      * @throws IOException if the specified file has no associated
      * application that can be used to print it
      * @throws SecurityException if a security manager exists and its
-     * {@link java.lang.SecurityManager#checkRead(java.lang.String)}
+     * {@link j86.java.lang.SecurityManager#checkRead(java.lang.String)}
      * method denies read access to the file, or its {@link
-     * java.lang.SecurityManager#checkPrintJobAccess()} method denies
+     * j86.java.lang.SecurityManager#checkPrintJobAccess()} method denies
      * the permission to print the file, or the calling thread is not
      * allowed to create a subprocess
      */
@@ -366,9 +366,9 @@ public class Desktop {
      * application
      * @throws IllegalArgumentException if the necessary permissions
      * are not available and the URI can not be converted to a {@code URL}
-     * @see java.net.URI
-     * @see java.awt.AWTPermission
-     * @see java.applet.AppletContext
+     * @see j86.java.net.URI
+     * @see j86.java.awt.AWTPermission
+     * @see j86.java.applet.AppletContext
      */
     public void browse(URI uri) throws IOException {
         SecurityException securityException = null;
@@ -396,7 +396,7 @@ public class Desktop {
         } catch (MalformedURLException e) {
             throw new IllegalArgumentException("Unable to convert URI to URL", e);
         }
-        sun.awt.DesktopBrowse db = sun.awt.DesktopBrowse.getInstance();
+        j86.sun.awt.DesktopBrowse db = sun.awt.DesktopBrowse.getInstance();
         if (db == null) {
             // Not in webstart/applet, throw the exception.
             throw securityException;
@@ -417,7 +417,7 @@ public class Desktop {
      * <code>AWTPermission("showWindowWithoutWarningBanner")</code>
      * permission, or the calling thread is not allowed to create a
      * subprocess
-     * @see java.awt.AWTPermission
+     * @see j86.java.awt.AWTPermission
      */
     public void mail() throws IOException {
         checkAWTPermission();
@@ -458,8 +458,8 @@ public class Desktop {
      * <code>AWTPermission("showWindowWithoutWarningBanner")</code>
      * permission, or the calling thread is not allowed to create a
      * subprocess
-     * @see java.net.URI
-     * @see java.awt.AWTPermission
+     * @see j86.java.net.URI
+     * @see j86.java.awt.AWTPermission
      */
     public  void mail(URI mailtoURI) throws IOException {
         checkAWTPermission();

@@ -23,16 +23,16 @@
  * questions.
  */
 
-package com.sun.jdi.request;
+package j86.j86.com.sun.jdi.request;
 
-import com.sun.jdi.*;
+import j86.com.sun.jdi.*;
 
 /**
  * Identifies a {@link Field} in the target VM being watched.
  *
  * @see AccessWatchpointRequest
  * @see ModificationWatchpointRequest
- * @see com.sun.jdi.event.EventQueue
+ * @see j86.j86.com.sun.jdi.event.EventQueue
  * @see EventRequestManager
  *
  * @author Robert Field
@@ -110,7 +110,7 @@ public interface WatchpointRequest extends EventRequest {
      * @since 1.4
      * @param instance the object which must be the current instance
      * in order to pass this filter.
-     * @throws java.lang.UnsupportedOperationException if
+     * @throws j86.java.lang.UnsupportedOperationException if
      * the target virtual machine does not support this
      * operation.
      * @throws InvalidRequestStateException if this request is currently

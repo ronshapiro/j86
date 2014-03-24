@@ -23,33 +23,33 @@
  * questions.
  */
 
-package java.awt.image;
+package j86.j86.j86.java.awt.image;
 
-import java.awt.Transparency;
-import java.awt.color.ColorSpace;
-import java.awt.Graphics2D;
-import java.awt.GraphicsConfiguration;
-import java.awt.GraphicsEnvironment;
-import java.awt.ImageCapabilities;
-import java.awt.geom.Rectangle2D;
-import java.awt.geom.Point2D;
-import java.awt.Point;
-import java.awt.Rectangle;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.util.Hashtable;
-import java.util.Vector;
+import j86.java.awt.Transparency;
+import j86.j86.java.awt.color.ColorSpace;
+import j86.java.awt.Graphics2D;
+import j86.java.awt.GraphicsConfiguration;
+import j86.java.awt.GraphicsEnvironment;
+import j86.java.awt.ImageCapabilities;
+import j86.j86.java.awt.geom.Rectangle2D;
+import j86.j86.java.awt.geom.Point2D;
+import j86.java.awt.Point;
+import j86.java.awt.Rectangle;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.util.Hashtable;
+import j86.java.util.Vector;
 
-import sun.awt.image.BytePackedRaster;
-import sun.awt.image.ShortComponentRaster;
-import sun.awt.image.ByteComponentRaster;
-import sun.awt.image.IntegerComponentRaster;
-import sun.awt.image.OffScreenImageSource;
+import j86.j86.j86.sun.awt.image.BytePackedRaster;
+import j86.j86.j86.sun.awt.image.ShortComponentRaster;
+import j86.j86.j86.sun.awt.image.ByteComponentRaster;
+import j86.j86.j86.sun.awt.image.IntegerComponentRaster;
+import j86.j86.j86.sun.awt.image.OffScreenImageSource;
 
 /**
  *
  * The <code>BufferedImage</code> subclass describes an {@link
- * java.awt.Image Image} with an accessible buffer of image data.
+ * j86.java.awt.Image Image} with an accessible buffer of image data.
  * A <code>BufferedImage</code> is comprised of a {@link ColorModel} and a
  * {@link Raster} of image data.
  * The number and types of bands in the {@link SampleModel} of the
@@ -69,7 +69,7 @@ import sun.awt.image.OffScreenImageSource;
  * @see WritableRaster
  */
 
-public class BufferedImage extends java.awt.Image
+public class BufferedImage extends j86.java.awt.Image
                            implements WritableRenderedImage, Transparency
 {
     int        imageType = TYPE_CUSTOM;
@@ -101,7 +101,7 @@ public class BufferedImage extends java.awt.Image
      * the color data must be adjusted to a non-premultiplied form
      * and the alpha discarded,
      * as described in the
-     * {@link java.awt.AlphaComposite} documentation.
+     * {@link j86.java.awt.AlphaComposite} documentation.
      */
     public static final int TYPE_INT_RGB = 1;
 
@@ -134,7 +134,7 @@ public class BufferedImage extends java.awt.Image
      * the color data must be adjusted to a non-premultiplied form
      * and the alpha discarded,
      * as described in the
-     * {@link java.awt.AlphaComposite} documentation.
+     * {@link j86.java.awt.AlphaComposite} documentation.
      */
     public static final int TYPE_INT_BGR = 4;
 
@@ -148,7 +148,7 @@ public class BufferedImage extends java.awt.Image
      * the color data must be adjusted to a non-premultiplied form
      * and the alpha discarded,
      * as described in the
-     * {@link java.awt.AlphaComposite} documentation.
+     * {@link j86.java.awt.AlphaComposite} documentation.
      */
     public static final int TYPE_3BYTE_BGR = 5;
 
@@ -182,7 +182,7 @@ public class BufferedImage extends java.awt.Image
      * the color data must be adjusted to a non-premultiplied form
      * and the alpha discarded,
      * as described in the
-     * {@link java.awt.AlphaComposite} documentation.
+     * {@link j86.java.awt.AlphaComposite} documentation.
      */
     public static final int TYPE_USHORT_565_RGB = 8;
 
@@ -195,7 +195,7 @@ public class BufferedImage extends java.awt.Image
      * the color data must be adjusted to a non-premultiplied form
      * and the alpha discarded,
      * as described in the
-     * {@link java.awt.AlphaComposite} documentation.
+     * {@link j86.java.awt.AlphaComposite} documentation.
      */
     public static final int TYPE_USHORT_555_RGB = 9;
 
@@ -208,7 +208,7 @@ public class BufferedImage extends java.awt.Image
      * the color data must be adjusted to a non-premultiplied form
      * and the alpha discarded,
      * as described in the
-     * {@link java.awt.AlphaComposite} documentation.
+     * {@link j86.java.awt.AlphaComposite} documentation.
      */
     public static final int TYPE_BYTE_GRAY = 10;
 
@@ -221,7 +221,7 @@ public class BufferedImage extends java.awt.Image
      * the color data must be adjusted to a non-premultiplied form
      * and the alpha discarded,
      * as described in the
-     * {@link java.awt.AlphaComposite} documentation.
+     * {@link j86.java.awt.AlphaComposite} documentation.
      */
     public static final int TYPE_USHORT_GRAY = 11;
 
@@ -1132,7 +1132,7 @@ public class BufferedImage extends java.awt.Image
      *          properties of this image are not yet known.
      * @throws NullPointerException if the property name is null.
      * @see ImageObserver
-     * @see java.awt.Image#UndefinedProperty
+     * @see j86.java.awt.Image#UndefinedProperty
      */
     public Object getProperty(String name, ImageObserver observer) {
         return getProperty(name);
@@ -1150,11 +1150,11 @@ public class BufferedImage extends java.awt.Image
             throw new NullPointerException("null property name is not allowed");
         }
         if (properties == null) {
-            return java.awt.Image.UndefinedProperty;
+            return j86.java.awt.Image.UndefinedProperty;
         }
         Object o = properties.get(name);
         if (o == null) {
-            o = java.awt.Image.UndefinedProperty;
+            o = j86.java.awt.Image.UndefinedProperty;
         }
         return o;
     }
@@ -1167,7 +1167,7 @@ public class BufferedImage extends java.awt.Image
      * @return a <code>Graphics2D</code>, which can be used to draw into
      *          this image.
      */
-    public java.awt.Graphics getGraphics() {
+    public j86.java.awt.Graphics getGraphics() {
         return createGraphics();
     }
 

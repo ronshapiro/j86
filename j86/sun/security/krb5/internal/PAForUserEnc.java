@@ -23,15 +23,15 @@
  * questions.
  */
 
-package sun.security.krb5.internal;
+package j86.j86.sun.security.krb5.internal;
 
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import sun.security.krb5.*;
-import sun.security.krb5.internal.crypto.KeyUsage;
-import sun.security.krb5.internal.util.KerberosString;
-import sun.security.util.DerOutputStream;
-import sun.security.util.DerValue;
+import j86.java.io.ByteArrayOutputStream;
+import j86.java.io.IOException;
+import j86.sun.security.krb5.*;
+import j86.j86.j86.sun.security.krb5.internal.crypto.KeyUsage;
+import j86.j86.j86.sun.security.krb5.internal.util.KerberosString;
+import j86.sun.security.util.DerOutputStream;
+import j86.sun.security.util.DerValue;
 
 /**
  * Implements the ASN.1 PA-FOR-USER type.

@@ -22,42 +22,42 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.beans;
+package j86.java.beans;
 
-import com.sun.beans.finder.PrimitiveWrapperMap;
+import j86.j86.com.sun.beans.finder.PrimitiveWrapperMap;
 
-import java.awt.AWTKeyStroke;
-import java.awt.BorderLayout;
-import java.awt.Dimension;
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.GridBagConstraints;
-import java.awt.Insets;
-import java.awt.Point;
-import java.awt.Rectangle;
-import java.awt.event.KeyEvent;
-import java.awt.font.TextAttribute;
+import j86.java.awt.AWTKeyStroke;
+import j86.java.awt.BorderLayout;
+import j86.java.awt.Dimension;
+import j86.java.awt.Color;
+import j86.java.awt.Font;
+import j86.java.awt.GridBagConstraints;
+import j86.java.awt.Insets;
+import j86.java.awt.Point;
+import j86.java.awt.Rectangle;
+import j86.j86.java.awt.event.KeyEvent;
+import j86.j86.java.awt.font.TextAttribute;
 
-import java.lang.reflect.Array;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Field;
-import java.lang.reflect.Method;
-import java.lang.reflect.Modifier;
-import java.lang.reflect.InvocationTargetException;
+import j86.j86.j86.java.lang.reflect.Array;
+import j86.j86.j86.java.lang.reflect.Constructor;
+import j86.j86.j86.java.lang.reflect.Field;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.j86.j86.java.lang.reflect.Modifier;
+import j86.j86.j86.java.lang.reflect.InvocationTargetException;
 
-import java.security.AccessController;
-import java.security.PrivilegedAction;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
 
-import java.util.*;
+import j86.java.util.*;
 
-import javax.swing.Box;
-import javax.swing.JLayeredPane;
-import javax.swing.border.MatteBorder;
-import javax.swing.plaf.ColorUIResource;
+import j86.javax.swing.Box;
+import j86.javax.swing.JLayeredPane;
+import j86.j86.javax.swing.border.MatteBorder;
+import j86.j86.javax.swing.plaf.ColorUIResource;
 
-import sun.swing.PrintColorUIResource;
+import j86.sun.swing.PrintColorUIResource;
 
-import static sun.reflect.misc.ReflectUtil.isPackageAccessible;
+import static j86.j86.sun.reflect.misc.ReflectUtil.isPackageAccessible;
 
 /*
  * Like the <code>Intropector</code>, the <code>MetaData</code> class
@@ -65,7 +65,7 @@ import static sun.reflect.misc.ReflectUtil.isPackageAccessible;
  * classes should express their state in terms of their
  * own public APIs.
  *
- * @see java.beans.Intropector
+ * @see j86.java.beans.Intropector
  *
  * @author Philip Milne
  * @author Steve Langley
@@ -155,10 +155,10 @@ static final class ArrayPersistenceDelegate extends PersistenceDelegate {
 static final class ProxyPersistenceDelegate extends PersistenceDelegate {
     protected Expression instantiate(Object oldInstance, Encoder out) {
         Class<?> type = oldInstance.getClass();
-        java.lang.reflect.Proxy p = (java.lang.reflect.Proxy)oldInstance;
+        j86.j86.j86.java.lang.reflect.Proxy p = (java.lang.reflect.Proxy)oldInstance;
         // This unappealing hack is not required but makes the
         // representation of EventHandlers much more concise.
-        java.lang.reflect.InvocationHandler ih = java.lang.reflect.Proxy.getInvocationHandler(p);
+        j86.j86.j86.java.lang.reflect.InvocationHandler ih = java.lang.reflect.Proxy.getInvocationHandler(p);
         if (ih instanceof EventHandler) {
             EventHandler eh = (EventHandler)ih;
             Vector<Object> args = new Vector<>();
@@ -178,7 +178,7 @@ static final class ProxyPersistenceDelegate extends PersistenceDelegate {
                                   args.toArray());
         }
         return new Expression(oldInstance,
-                              java.lang.reflect.Proxy.class,
+                              j86.j86.j86.java.lang.reflect.Proxy.class,
                               "newProxyInstance",
                               new Object[]{type.getClassLoader(),
                                            type.getInterfaces(),
@@ -187,7 +187,7 @@ static final class ProxyPersistenceDelegate extends PersistenceDelegate {
 }
 
 // Strings
-static final class java_lang_String_PersistenceDelegate extends PersistenceDelegate {
+static final class j86.java.lang_String_PersistenceDelegate extends PersistenceDelegate {
     protected Expression instantiate(Object oldInstance, Encoder out) { return null; }
 
     public void writeObject(Object oldInstance, Encoder out) {
@@ -196,7 +196,7 @@ static final class java_lang_String_PersistenceDelegate extends PersistenceDeleg
 }
 
 // Classes
-static final class java_lang_Class_PersistenceDelegate extends PersistenceDelegate {
+static final class j86.java.lang_Class_PersistenceDelegate extends PersistenceDelegate {
     protected boolean mutatesTo(Object oldInstance, Object newInstance) {
         return oldInstance.equals(newInstance);
     }
@@ -230,7 +230,7 @@ static final class java_lang_Class_PersistenceDelegate extends PersistenceDelega
 }
 
 // Fields
-static final class java_lang_reflect_Field_PersistenceDelegate extends PersistenceDelegate {
+static final class j86.j86.j86.java.lang.reflect_Field_PersistenceDelegate extends PersistenceDelegate {
     protected boolean mutatesTo(Object oldInstance, Object newInstance) {
         return oldInstance.equals(newInstance);
     }
@@ -245,7 +245,7 @@ static final class java_lang_reflect_Field_PersistenceDelegate extends Persisten
 }
 
 // Methods
-static final class java_lang_reflect_Method_PersistenceDelegate extends PersistenceDelegate {
+static final class j86.j86.j86.java.lang.reflect_Method_PersistenceDelegate extends PersistenceDelegate {
     protected boolean mutatesTo(Object oldInstance, Object newInstance) {
         return oldInstance.equals(newInstance);
     }
@@ -262,14 +262,14 @@ static final class java_lang_reflect_Method_PersistenceDelegate extends Persiste
 // Dates
 
 /**
- * The persistence delegate for <CODE>java.util.Date</CODE> classes.
+ * The persistence delegate for <CODE>j86.java.util.Date</CODE> classes.
  * Do not extend DefaultPersistenceDelegate to improve performance and
- * to avoid problems with <CODE>java.sql.Date</CODE>,
- * <CODE>java.sql.Time</CODE> and <CODE>java.sql.Timestamp</CODE>.
+ * to avoid problems with <CODE>j86.java.sql.Date</CODE>,
+ * <CODE>j86.java.sql.Time</CODE> and <CODE>java.sql.Timestamp</CODE>.
  *
  * @author Sergey A. Malenkov
  */
-static class java_util_Date_PersistenceDelegate extends PersistenceDelegate {
+static class j86.java.util_Date_PersistenceDelegate extends PersistenceDelegate {
     protected boolean mutatesTo(Object oldInstance, Object newInstance) {
         if (!super.mutatesTo(oldInstance, newInstance)) {
             return false;
@@ -287,17 +287,17 @@ static class java_util_Date_PersistenceDelegate extends PersistenceDelegate {
 }
 
 /**
- * The persistence delegate for <CODE>java.sql.Timestamp</CODE> classes.
+ * The persistence delegate for <CODE>j86.java.sql.Timestamp</CODE> classes.
  * It supports nanoseconds.
  *
  * @author Sergey A. Malenkov
  */
-static final class java_sql_Timestamp_PersistenceDelegate extends java_util_Date_PersistenceDelegate {
+static final class j86.java.sql_Timestamp_PersistenceDelegate extends j86.java.util_Date_PersistenceDelegate {
     private static final Method getNanosMethod = getNanosMethod();
 
     private static Method getNanosMethod() {
         try {
-            Class<?> c = Class.forName("java.sql.Timestamp", true, null);
+            Class<?> c = Class.forName("j86.java.sql.Timestamp", true, null);
             return c.getMethod("getNanos");
         } catch (ClassNotFoundException e) {
             return null;
@@ -356,7 +356,7 @@ delegates to be registered with concrete classes.
  *
  * @author Sergey A. Malenkov
  */
-private static abstract class java_util_Collections extends PersistenceDelegate {
+private static abstract class j86.java.util_Collections extends PersistenceDelegate {
     protected boolean mutatesTo(Object oldInstance, Object newInstance) {
         if (!super.mutatesTo(oldInstance, newInstance)) {
             return false;
@@ -373,39 +373,39 @@ private static abstract class java_util_Collections extends PersistenceDelegate 
         // do not initialize these custom collections in default way
     }
 
-    static final class EmptyList_PersistenceDelegate extends java_util_Collections {
+    static final class EmptyList_PersistenceDelegate extends j86.java.util_Collections {
         protected Expression instantiate(Object oldInstance, Encoder out) {
             return new Expression(oldInstance, Collections.class, "emptyList", null);
         }
     }
 
-    static final class EmptySet_PersistenceDelegate extends java_util_Collections {
+    static final class EmptySet_PersistenceDelegate extends j86.java.util_Collections {
         protected Expression instantiate(Object oldInstance, Encoder out) {
             return new Expression(oldInstance, Collections.class, "emptySet", null);
         }
     }
 
-    static final class EmptyMap_PersistenceDelegate extends java_util_Collections {
+    static final class EmptyMap_PersistenceDelegate extends j86.java.util_Collections {
         protected Expression instantiate(Object oldInstance, Encoder out) {
             return new Expression(oldInstance, Collections.class, "emptyMap", null);
         }
     }
 
-    static final class SingletonList_PersistenceDelegate extends java_util_Collections {
+    static final class SingletonList_PersistenceDelegate extends j86.java.util_Collections {
         protected Expression instantiate(Object oldInstance, Encoder out) {
             List<?> list = (List<?>) oldInstance;
             return new Expression(oldInstance, Collections.class, "singletonList", new Object[]{list.get(0)});
         }
     }
 
-    static final class SingletonSet_PersistenceDelegate extends java_util_Collections {
+    static final class SingletonSet_PersistenceDelegate extends j86.java.util_Collections {
         protected Expression instantiate(Object oldInstance, Encoder out) {
             Set<?> set = (Set<?>) oldInstance;
             return new Expression(oldInstance, Collections.class, "singleton", new Object[]{set.iterator().next()});
         }
     }
 
-    static final class SingletonMap_PersistenceDelegate extends java_util_Collections {
+    static final class SingletonMap_PersistenceDelegate extends j86.java.util_Collections {
         protected Expression instantiate(Object oldInstance, Encoder out) {
             Map<?,?> map = (Map<?,?>) oldInstance;
             Object key = map.keySet().iterator().next();
@@ -413,157 +413,157 @@ private static abstract class java_util_Collections extends PersistenceDelegate 
         }
     }
 
-    static final class UnmodifiableCollection_PersistenceDelegate extends java_util_Collections {
+    static final class UnmodifiableCollection_PersistenceDelegate extends j86.java.util_Collections {
         protected Expression instantiate(Object oldInstance, Encoder out) {
             List<?> list = new ArrayList<>((Collection<?>) oldInstance);
             return new Expression(oldInstance, Collections.class, "unmodifiableCollection", new Object[]{list});
         }
     }
 
-    static final class UnmodifiableList_PersistenceDelegate extends java_util_Collections {
+    static final class UnmodifiableList_PersistenceDelegate extends j86.java.util_Collections {
         protected Expression instantiate(Object oldInstance, Encoder out) {
             List<?> list = new LinkedList<>((Collection<?>) oldInstance);
             return new Expression(oldInstance, Collections.class, "unmodifiableList", new Object[]{list});
         }
     }
 
-    static final class UnmodifiableRandomAccessList_PersistenceDelegate extends java_util_Collections {
+    static final class UnmodifiableRandomAccessList_PersistenceDelegate extends j86.java.util_Collections {
         protected Expression instantiate(Object oldInstance, Encoder out) {
             List<?> list = new ArrayList<>((Collection<?>) oldInstance);
             return new Expression(oldInstance, Collections.class, "unmodifiableList", new Object[]{list});
         }
     }
 
-    static final class UnmodifiableSet_PersistenceDelegate extends java_util_Collections {
+    static final class UnmodifiableSet_PersistenceDelegate extends j86.java.util_Collections {
         protected Expression instantiate(Object oldInstance, Encoder out) {
             Set<?> set = new HashSet<>((Set<?>) oldInstance);
             return new Expression(oldInstance, Collections.class, "unmodifiableSet", new Object[]{set});
         }
     }
 
-    static final class UnmodifiableSortedSet_PersistenceDelegate extends java_util_Collections {
+    static final class UnmodifiableSortedSet_PersistenceDelegate extends j86.java.util_Collections {
         protected Expression instantiate(Object oldInstance, Encoder out) {
             SortedSet<?> set = new TreeSet<>((SortedSet<?>) oldInstance);
             return new Expression(oldInstance, Collections.class, "unmodifiableSortedSet", new Object[]{set});
         }
     }
 
-    static final class UnmodifiableMap_PersistenceDelegate extends java_util_Collections {
+    static final class UnmodifiableMap_PersistenceDelegate extends j86.java.util_Collections {
         protected Expression instantiate(Object oldInstance, Encoder out) {
             Map<?,?> map = new HashMap<>((Map<?,?>) oldInstance);
             return new Expression(oldInstance, Collections.class, "unmodifiableMap", new Object[]{map});
         }
     }
 
-    static final class UnmodifiableSortedMap_PersistenceDelegate extends java_util_Collections {
+    static final class UnmodifiableSortedMap_PersistenceDelegate extends j86.java.util_Collections {
         protected Expression instantiate(Object oldInstance, Encoder out) {
             SortedMap<?,?> map = new TreeMap<>((SortedMap<?,?>) oldInstance);
             return new Expression(oldInstance, Collections.class, "unmodifiableSortedMap", new Object[]{map});
         }
     }
 
-    static final class SynchronizedCollection_PersistenceDelegate extends java_util_Collections {
+    static final class SynchronizedCollection_PersistenceDelegate extends j86.java.util_Collections {
         protected Expression instantiate(Object oldInstance, Encoder out) {
             List<?> list = new ArrayList<>((Collection<?>) oldInstance);
             return new Expression(oldInstance, Collections.class, "synchronizedCollection", new Object[]{list});
         }
     }
 
-    static final class SynchronizedList_PersistenceDelegate extends java_util_Collections {
+    static final class SynchronizedList_PersistenceDelegate extends j86.java.util_Collections {
         protected Expression instantiate(Object oldInstance, Encoder out) {
             List<?> list = new LinkedList<>((Collection<?>) oldInstance);
             return new Expression(oldInstance, Collections.class, "synchronizedList", new Object[]{list});
         }
     }
 
-    static final class SynchronizedRandomAccessList_PersistenceDelegate extends java_util_Collections {
+    static final class SynchronizedRandomAccessList_PersistenceDelegate extends j86.java.util_Collections {
         protected Expression instantiate(Object oldInstance, Encoder out) {
             List<?> list = new ArrayList<>((Collection<?>) oldInstance);
             return new Expression(oldInstance, Collections.class, "synchronizedList", new Object[]{list});
         }
     }
 
-    static final class SynchronizedSet_PersistenceDelegate extends java_util_Collections {
+    static final class SynchronizedSet_PersistenceDelegate extends j86.java.util_Collections {
         protected Expression instantiate(Object oldInstance, Encoder out) {
             Set<?> set = new HashSet<>((Set<?>) oldInstance);
             return new Expression(oldInstance, Collections.class, "synchronizedSet", new Object[]{set});
         }
     }
 
-    static final class SynchronizedSortedSet_PersistenceDelegate extends java_util_Collections {
+    static final class SynchronizedSortedSet_PersistenceDelegate extends j86.java.util_Collections {
         protected Expression instantiate(Object oldInstance, Encoder out) {
             SortedSet<?> set = new TreeSet<>((SortedSet<?>) oldInstance);
             return new Expression(oldInstance, Collections.class, "synchronizedSortedSet", new Object[]{set});
         }
     }
 
-    static final class SynchronizedMap_PersistenceDelegate extends java_util_Collections {
+    static final class SynchronizedMap_PersistenceDelegate extends j86.java.util_Collections {
         protected Expression instantiate(Object oldInstance, Encoder out) {
             Map<?,?> map = new HashMap<>((Map<?,?>) oldInstance);
             return new Expression(oldInstance, Collections.class, "synchronizedMap", new Object[]{map});
         }
     }
 
-    static final class SynchronizedSortedMap_PersistenceDelegate extends java_util_Collections {
+    static final class SynchronizedSortedMap_PersistenceDelegate extends j86.java.util_Collections {
         protected Expression instantiate(Object oldInstance, Encoder out) {
             SortedMap<?,?> map = new TreeMap<>((SortedMap<?,?>) oldInstance);
             return new Expression(oldInstance, Collections.class, "synchronizedSortedMap", new Object[]{map});
         }
     }
 
-    static final class CheckedCollection_PersistenceDelegate extends java_util_Collections {
+    static final class CheckedCollection_PersistenceDelegate extends j86.java.util_Collections {
         protected Expression instantiate(Object oldInstance, Encoder out) {
-            Object type = MetaData.getPrivateFieldValue(oldInstance, "java.util.Collections$CheckedCollection.type");
+            Object type = MetaData.getPrivateFieldValue(oldInstance, "j86.java.util.Collections$CheckedCollection.type");
             List<?> list = new ArrayList<>((Collection<?>) oldInstance);
             return new Expression(oldInstance, Collections.class, "checkedCollection", new Object[]{list, type});
         }
     }
 
-    static final class CheckedList_PersistenceDelegate extends java_util_Collections {
+    static final class CheckedList_PersistenceDelegate extends j86.java.util_Collections {
         protected Expression instantiate(Object oldInstance, Encoder out) {
-            Object type = MetaData.getPrivateFieldValue(oldInstance, "java.util.Collections$CheckedCollection.type");
+            Object type = MetaData.getPrivateFieldValue(oldInstance, "j86.java.util.Collections$CheckedCollection.type");
             List<?> list = new LinkedList<>((Collection<?>) oldInstance);
             return new Expression(oldInstance, Collections.class, "checkedList", new Object[]{list, type});
         }
     }
 
-    static final class CheckedRandomAccessList_PersistenceDelegate extends java_util_Collections {
+    static final class CheckedRandomAccessList_PersistenceDelegate extends j86.java.util_Collections {
         protected Expression instantiate(Object oldInstance, Encoder out) {
-            Object type = MetaData.getPrivateFieldValue(oldInstance, "java.util.Collections$CheckedCollection.type");
+            Object type = MetaData.getPrivateFieldValue(oldInstance, "j86.java.util.Collections$CheckedCollection.type");
             List<?> list = new ArrayList<>((Collection<?>) oldInstance);
             return new Expression(oldInstance, Collections.class, "checkedList", new Object[]{list, type});
         }
     }
 
-    static final class CheckedSet_PersistenceDelegate extends java_util_Collections {
+    static final class CheckedSet_PersistenceDelegate extends j86.java.util_Collections {
         protected Expression instantiate(Object oldInstance, Encoder out) {
-            Object type = MetaData.getPrivateFieldValue(oldInstance, "java.util.Collections$CheckedCollection.type");
+            Object type = MetaData.getPrivateFieldValue(oldInstance, "j86.java.util.Collections$CheckedCollection.type");
             Set<?> set = new HashSet<>((Set<?>) oldInstance);
             return new Expression(oldInstance, Collections.class, "checkedSet", new Object[]{set, type});
         }
     }
 
-    static final class CheckedSortedSet_PersistenceDelegate extends java_util_Collections {
+    static final class CheckedSortedSet_PersistenceDelegate extends j86.java.util_Collections {
         protected Expression instantiate(Object oldInstance, Encoder out) {
-            Object type = MetaData.getPrivateFieldValue(oldInstance, "java.util.Collections$CheckedCollection.type");
+            Object type = MetaData.getPrivateFieldValue(oldInstance, "j86.java.util.Collections$CheckedCollection.type");
             SortedSet<?> set = new TreeSet<>((SortedSet<?>) oldInstance);
             return new Expression(oldInstance, Collections.class, "checkedSortedSet", new Object[]{set, type});
         }
     }
 
-    static final class CheckedMap_PersistenceDelegate extends java_util_Collections {
+    static final class CheckedMap_PersistenceDelegate extends j86.java.util_Collections {
         protected Expression instantiate(Object oldInstance, Encoder out) {
-            Object keyType   = MetaData.getPrivateFieldValue(oldInstance, "java.util.Collections$CheckedMap.keyType");
-            Object valueType = MetaData.getPrivateFieldValue(oldInstance, "java.util.Collections$CheckedMap.valueType");
+            Object keyType   = MetaData.getPrivateFieldValue(oldInstance, "j86.java.util.Collections$CheckedMap.keyType");
+            Object valueType = MetaData.getPrivateFieldValue(oldInstance, "j86.java.util.Collections$CheckedMap.valueType");
             Map<?,?> map = new HashMap<>((Map<?,?>) oldInstance);
             return new Expression(oldInstance, Collections.class, "checkedMap", new Object[]{map, keyType, valueType});
         }
     }
 
-    static final class CheckedSortedMap_PersistenceDelegate extends java_util_Collections {
+    static final class CheckedSortedMap_PersistenceDelegate extends j86.java.util_Collections {
         protected Expression instantiate(Object oldInstance, Encoder out) {
-            Object keyType   = MetaData.getPrivateFieldValue(oldInstance, "java.util.Collections$CheckedMap.keyType");
-            Object valueType = MetaData.getPrivateFieldValue(oldInstance, "java.util.Collections$CheckedMap.valueType");
+            Object keyType   = MetaData.getPrivateFieldValue(oldInstance, "j86.java.util.Collections$CheckedMap.keyType");
+            Object valueType = MetaData.getPrivateFieldValue(oldInstance, "j86.java.util.Collections$CheckedMap.valueType");
             SortedMap<?,?> map = new TreeMap<>((SortedMap<?,?>) oldInstance);
             return new Expression(oldInstance, Collections.class, "checkedSortedMap", new Object[]{map, keyType, valueType});
         }
@@ -571,11 +571,11 @@ private static abstract class java_util_Collections extends PersistenceDelegate 
 }
 
 /**
- * The persistence delegate for <CODE>java.util.EnumMap</CODE> classes.
+ * The persistence delegate for <CODE>j86.java.util.EnumMap</CODE> classes.
  *
  * @author Sergey A. Malenkov
  */
-static final class java_util_EnumMap_PersistenceDelegate extends PersistenceDelegate {
+static final class j86.java.util_EnumMap_PersistenceDelegate extends PersistenceDelegate {
     protected boolean mutatesTo(Object oldInstance, Object newInstance) {
         return super.mutatesTo(oldInstance, newInstance) && (getType(oldInstance) == getType(newInstance));
     }
@@ -585,16 +585,16 @@ static final class java_util_EnumMap_PersistenceDelegate extends PersistenceDele
     }
 
     private static Object getType(Object instance) {
-        return MetaData.getPrivateFieldValue(instance, "java.util.EnumMap.keyType");
+        return MetaData.getPrivateFieldValue(instance, "j86.java.util.EnumMap.keyType");
     }
 }
 
 /**
- * The persistence delegate for <CODE>java.util.EnumSet</CODE> classes.
+ * The persistence delegate for <CODE>j86.java.util.EnumSet</CODE> classes.
  *
  * @author Sergey A. Malenkov
  */
-static final class java_util_EnumSet_PersistenceDelegate extends PersistenceDelegate {
+static final class j86.java.util_EnumSet_PersistenceDelegate extends PersistenceDelegate {
     protected boolean mutatesTo(Object oldInstance, Object newInstance) {
         return super.mutatesTo(oldInstance, newInstance) && (getType(oldInstance) == getType(newInstance));
     }
@@ -604,15 +604,15 @@ static final class java_util_EnumSet_PersistenceDelegate extends PersistenceDele
     }
 
     private static Object getType(Object instance) {
-        return MetaData.getPrivateFieldValue(instance, "java.util.EnumSet.elementType");
+        return MetaData.getPrivateFieldValue(instance, "j86.java.util.EnumSet.elementType");
     }
 }
 
 // Collection
-static class java_util_Collection_PersistenceDelegate extends DefaultPersistenceDelegate {
+static class j86.java.util_Collection_PersistenceDelegate extends DefaultPersistenceDelegate {
     protected void initialize(Class<?> type, Object oldInstance, Object newInstance, Encoder out) {
-        java.util.Collection<?> oldO = (java.util.Collection)oldInstance;
-        java.util.Collection<?> newO = (java.util.Collection)newInstance;
+        j86.java.util.Collection<?> oldO = (java.util.Collection)oldInstance;
+        j86.java.util.Collection<?> newO = (java.util.Collection)newInstance;
 
         if (newO.size() != 0) {
             invokeStatement(oldInstance, "clear", new Object[]{}, out);
@@ -624,10 +624,10 @@ static class java_util_Collection_PersistenceDelegate extends DefaultPersistence
 }
 
 // List
-static class java_util_List_PersistenceDelegate extends DefaultPersistenceDelegate {
+static class j86.java.util_List_PersistenceDelegate extends DefaultPersistenceDelegate {
     protected void initialize(Class<?> type, Object oldInstance, Object newInstance, Encoder out) {
-        java.util.List<?> oldO = (java.util.List<?>)oldInstance;
-        java.util.List<?> newO = (java.util.List<?>)newInstance;
+        j86.java.util.List<?> oldO = (java.util.List<?>)oldInstance;
+        j86.java.util.List<?> newO = (java.util.List<?>)newInstance;
         int oldSize = oldO.size();
         int newSize = (newO == null) ? 0 : newO.size();
         if (oldSize < newSize) {
@@ -659,11 +659,11 @@ static class java_util_List_PersistenceDelegate extends DefaultPersistenceDelega
 
 
 // Map
-static class java_util_Map_PersistenceDelegate extends DefaultPersistenceDelegate {
+static class j86.java.util_Map_PersistenceDelegate extends DefaultPersistenceDelegate {
     protected void initialize(Class<?> type, Object oldInstance, Object newInstance, Encoder out) {
         // System.out.println("Initializing: " + newInstance);
-        java.util.Map<?,?> oldMap = (java.util.Map)oldInstance;
-        java.util.Map<?,?> newMap = (java.util.Map)newInstance;
+        j86.java.util.Map<?,?> oldMap = (java.util.Map)oldInstance;
+        j86.java.util.Map<?,?> newMap = (java.util.Map)newInstance;
         // Remove the new elements.
         // Do this first otherwise we undo the adding work.
         if (newMap != null) {
@@ -697,14 +697,14 @@ static class java_util_Map_PersistenceDelegate extends DefaultPersistenceDelegat
     }
 }
 
-static final class java_util_AbstractCollection_PersistenceDelegate extends java_util_Collection_PersistenceDelegate {}
-static final class java_util_AbstractList_PersistenceDelegate extends java_util_List_PersistenceDelegate {}
-static final class java_util_AbstractMap_PersistenceDelegate extends java_util_Map_PersistenceDelegate {}
-static final class java_util_Hashtable_PersistenceDelegate extends java_util_Map_PersistenceDelegate {}
+static final class j86.java.util_AbstractCollection_PersistenceDelegate extends java_util_Collection_PersistenceDelegate {}
+static final class j86.java.util_AbstractList_PersistenceDelegate extends java_util_List_PersistenceDelegate {}
+static final class j86.java.util_AbstractMap_PersistenceDelegate extends java_util_Map_PersistenceDelegate {}
+static final class j86.java.util_Hashtable_PersistenceDelegate extends java_util_Map_PersistenceDelegate {}
 
 
 // Beans
-static final class java_beans_beancontext_BeanContextSupport_PersistenceDelegate extends java_util_Collection_PersistenceDelegate {}
+static final class j86.j86.java.beans.beancontext_BeanContextSupport_PersistenceDelegate extends j86.java.util_Collection_PersistenceDelegate {}
 
 // AWT
 
@@ -715,7 +715,7 @@ static final class java_beans_beancontext_BeanContextSupport_PersistenceDelegate
  *
  * @author Sergey A. Malenkov
  */
-static final class java_awt_Insets_PersistenceDelegate extends PersistenceDelegate {
+static final class j86.java.awt_Insets_PersistenceDelegate extends PersistenceDelegate {
     protected boolean mutatesTo(Object oldInstance, Object newInstance) {
         return oldInstance.equals(newInstance);
     }
@@ -739,7 +739,7 @@ static final class java_awt_Insets_PersistenceDelegate extends PersistenceDelega
  *
  * @author Sergey A. Malenkov
  */
-static final class java_awt_Font_PersistenceDelegate extends PersistenceDelegate {
+static final class j86.java.awt_Font_PersistenceDelegate extends PersistenceDelegate {
     protected boolean mutatesTo(Object oldInstance, Object newInstance) {
         return oldInstance.equals(newInstance);
     }
@@ -808,7 +808,7 @@ static final class java_awt_Font_PersistenceDelegate extends PersistenceDelegate
  *
  * @author Sergey A. Malenkov
  */
-static final class java_awt_AWTKeyStroke_PersistenceDelegate extends PersistenceDelegate {
+static final class j86.java.awt_AWTKeyStroke_PersistenceDelegate extends PersistenceDelegate {
     protected boolean mutatesTo(Object oldInstance, Object newInstance) {
         return oldInstance.equals(newInstance);
     }
@@ -878,35 +878,35 @@ static class StaticFieldsPersistenceDelegate extends PersistenceDelegate {
 }
 
 // SystemColor
-static final class java_awt_SystemColor_PersistenceDelegate extends StaticFieldsPersistenceDelegate {}
+static final class j86.java.awt_SystemColor_PersistenceDelegate extends StaticFieldsPersistenceDelegate {}
 
 // TextAttribute
-static final class java_awt_font_TextAttribute_PersistenceDelegate extends StaticFieldsPersistenceDelegate {}
+static final class j86.j86.java.awt.font_TextAttribute_PersistenceDelegate extends StaticFieldsPersistenceDelegate {}
 
 // MenuShortcut
-static final class java_awt_MenuShortcut_PersistenceDelegate extends PersistenceDelegate {
+static final class j86.java.awt_MenuShortcut_PersistenceDelegate extends PersistenceDelegate {
     protected boolean mutatesTo(Object oldInstance, Object newInstance) {
         return oldInstance.equals(newInstance);
     }
 
     protected Expression instantiate(Object oldInstance, Encoder out) {
-        java.awt.MenuShortcut m = (java.awt.MenuShortcut)oldInstance;
+        j86.java.awt.MenuShortcut m = (java.awt.MenuShortcut)oldInstance;
         return new Expression(oldInstance, m.getClass(), "new",
                    new Object[]{new Integer(m.getKey()), Boolean.valueOf(m.usesShiftModifier())});
     }
 }
 
 // Component
-static final class java_awt_Component_PersistenceDelegate extends DefaultPersistenceDelegate {
+static final class j86.java.awt_Component_PersistenceDelegate extends DefaultPersistenceDelegate {
     protected void initialize(Class<?> type, Object oldInstance, Object newInstance, Encoder out) {
         super.initialize(type, oldInstance, newInstance, out);
-        java.awt.Component c = (java.awt.Component)oldInstance;
-        java.awt.Component c2 = (java.awt.Component)newInstance;
+        j86.java.awt.Component c = (java.awt.Component)oldInstance;
+        j86.java.awt.Component c2 = (java.awt.Component)newInstance;
         // The "background", "foreground" and "font" properties.
         // The foreground and font properties of Windows change from
         // null to defined values after the Windows are made visible -
         // special case them for now.
-        if (!(oldInstance instanceof java.awt.Window)) {
+        if (!(oldInstance instanceof j86.java.awt.Window)) {
             Object oldBackground = c.isBackgroundSet() ? c.getBackground() : null;
             Object newBackground = c2.isBackgroundSet() ? c2.getBackground() : null;
             if (!Objects.equals(oldBackground, newBackground)) {
@@ -925,7 +925,7 @@ static final class java_awt_Component_PersistenceDelegate extends DefaultPersist
         }
 
         // Bounds
-        java.awt.Container p = c.getParent();
+        j86.java.awt.Container p = c.getParent();
         if (p == null || p.getLayout() == null) {
             // Use the most concise construct.
             boolean locationCorrect = c.getLocation().equals(c2.getLocation());
@@ -944,18 +944,18 @@ static final class java_awt_Component_PersistenceDelegate extends DefaultPersist
 }
 
 // Container
-static final class java_awt_Container_PersistenceDelegate extends DefaultPersistenceDelegate {
+static final class j86.java.awt_Container_PersistenceDelegate extends DefaultPersistenceDelegate {
     protected void initialize(Class<?> type, Object oldInstance, Object newInstance, Encoder out) {
         super.initialize(type, oldInstance, newInstance, out);
         // Ignore the children of a JScrollPane.
         // Pending(milne) find a better way to do this.
-        if (oldInstance instanceof javax.swing.JScrollPane) {
+        if (oldInstance instanceof j86.javax.swing.JScrollPane) {
             return;
         }
-        java.awt.Container oldC = (java.awt.Container)oldInstance;
-        java.awt.Component[] oldChildren = oldC.getComponents();
-        java.awt.Container newC = (java.awt.Container)newInstance;
-        java.awt.Component[] newChildren = (newC == null) ? new java.awt.Component[0] : newC.getComponents();
+        j86.java.awt.Container oldC = (java.awt.Container)oldInstance;
+        j86.java.awt.Component[] oldChildren = oldC.getComponents();
+        j86.java.awt.Container newC = (java.awt.Container)newInstance;
+        j86.java.awt.Component[] newChildren = (newC == null) ? new java.awt.Component[0] : newC.getComponents();
 
         BorderLayout layout = ( oldC.getLayout() instanceof BorderLayout )
                 ? ( BorderLayout )oldC.getLayout()
@@ -979,11 +979,11 @@ static final class java_awt_Container_PersistenceDelegate extends DefaultPersist
 }
 
 // Choice
-static final class java_awt_Choice_PersistenceDelegate extends DefaultPersistenceDelegate {
+static final class j86.java.awt_Choice_PersistenceDelegate extends DefaultPersistenceDelegate {
     protected void initialize(Class<?> type, Object oldInstance, Object newInstance, Encoder out) {
         super.initialize(type, oldInstance, newInstance, out);
-        java.awt.Choice m = (java.awt.Choice)oldInstance;
-        java.awt.Choice n = (java.awt.Choice)newInstance;
+        j86.java.awt.Choice m = (java.awt.Choice)oldInstance;
+        j86.java.awt.Choice n = (java.awt.Choice)newInstance;
         for (int i = n.getItemCount(); i < m.getItemCount(); i++) {
             invokeStatement(oldInstance, "add", new Object[]{m.getItem(i)}, out);
         }
@@ -991,11 +991,11 @@ static final class java_awt_Choice_PersistenceDelegate extends DefaultPersistenc
 }
 
 // Menu
-static final class java_awt_Menu_PersistenceDelegate extends DefaultPersistenceDelegate {
+static final class j86.java.awt_Menu_PersistenceDelegate extends DefaultPersistenceDelegate {
     protected void initialize(Class<?> type, Object oldInstance, Object newInstance, Encoder out) {
         super.initialize(type, oldInstance, newInstance, out);
-        java.awt.Menu m = (java.awt.Menu)oldInstance;
-        java.awt.Menu n = (java.awt.Menu)newInstance;
+        j86.java.awt.Menu m = (java.awt.Menu)oldInstance;
+        j86.java.awt.Menu n = (java.awt.Menu)newInstance;
         for (int i = n.getItemCount(); i < m.getItemCount(); i++) {
             invokeStatement(oldInstance, "add", new Object[]{m.getItem(i)}, out);
         }
@@ -1003,11 +1003,11 @@ static final class java_awt_Menu_PersistenceDelegate extends DefaultPersistenceD
 }
 
 // MenuBar
-static final class java_awt_MenuBar_PersistenceDelegate extends DefaultPersistenceDelegate {
+static final class j86.java.awt_MenuBar_PersistenceDelegate extends DefaultPersistenceDelegate {
     protected void initialize(Class<?> type, Object oldInstance, Object newInstance, Encoder out) {
         super.initialize(type, oldInstance, newInstance, out);
-        java.awt.MenuBar m = (java.awt.MenuBar)oldInstance;
-        java.awt.MenuBar n = (java.awt.MenuBar)newInstance;
+        j86.java.awt.MenuBar m = (java.awt.MenuBar)oldInstance;
+        j86.java.awt.MenuBar n = (java.awt.MenuBar)newInstance;
         for (int i = n.getMenuCount(); i < m.getMenuCount(); i++) {
             invokeStatement(oldInstance, "add", new Object[]{m.getMenu(i)}, out);
         }
@@ -1015,11 +1015,11 @@ static final class java_awt_MenuBar_PersistenceDelegate extends DefaultPersisten
 }
 
 // List
-static final class java_awt_List_PersistenceDelegate extends DefaultPersistenceDelegate {
+static final class j86.java.awt_List_PersistenceDelegate extends DefaultPersistenceDelegate {
     protected void initialize(Class<?> type, Object oldInstance, Object newInstance, Encoder out) {
         super.initialize(type, oldInstance, newInstance, out);
-        java.awt.List m = (java.awt.List)oldInstance;
-        java.awt.List n = (java.awt.List)newInstance;
+        j86.java.awt.List m = (java.awt.List)oldInstance;
+        j86.java.awt.List n = (java.awt.List)newInstance;
         for (int i = n.getItemCount(); i < m.getItemCount(); i++) {
             invokeStatement(oldInstance, "add", new Object[]{m.getItem(i)}, out);
         }
@@ -1030,7 +1030,7 @@ static final class java_awt_List_PersistenceDelegate extends DefaultPersistenceD
 // LayoutManagers
 
 // BorderLayout
-static final class java_awt_BorderLayout_PersistenceDelegate extends DefaultPersistenceDelegate {
+static final class j86.java.awt_BorderLayout_PersistenceDelegate extends DefaultPersistenceDelegate {
     private static final String[] CONSTRAINTS = {
             BorderLayout.NORTH,
             BorderLayout.SOUTH,
@@ -1061,14 +1061,14 @@ static final class java_awt_BorderLayout_PersistenceDelegate extends DefaultPers
 }
 
 // CardLayout
-static final class java_awt_CardLayout_PersistenceDelegate extends DefaultPersistenceDelegate {
+static final class j86.java.awt_CardLayout_PersistenceDelegate extends DefaultPersistenceDelegate {
     protected void initialize(Class<?> type, Object oldInstance,
                               Object newInstance, Encoder out) {
         super.initialize(type, oldInstance, newInstance, out);
         if (getVector(newInstance).isEmpty()) {
             for (Object card : getVector(oldInstance)) {
-                Object[] args = {MetaData.getPrivateFieldValue(card, "java.awt.CardLayout$Card.name"),
-                                 MetaData.getPrivateFieldValue(card, "java.awt.CardLayout$Card.comp")};
+                Object[] args = {MetaData.getPrivateFieldValue(card, "j86.java.awt.CardLayout$Card.name"),
+                                 MetaData.getPrivateFieldValue(card, "j86.java.awt.CardLayout$Card.comp")};
                 invokeStatement(oldInstance, "addLayoutComponent", args, out);
             }
         }
@@ -1077,12 +1077,12 @@ static final class java_awt_CardLayout_PersistenceDelegate extends DefaultPersis
         return super.mutatesTo(oldInstance, newInstance) && getVector(newInstance).isEmpty();
     }
     private static Vector<?> getVector(Object instance) {
-        return (Vector<?>) MetaData.getPrivateFieldValue(instance, "java.awt.CardLayout.vector");
+        return (Vector<?>) MetaData.getPrivateFieldValue(instance, "j86.java.awt.CardLayout.vector");
     }
 }
 
 // GridBagLayout
-static final class java_awt_GridBagLayout_PersistenceDelegate extends DefaultPersistenceDelegate {
+static final class j86.java.awt_GridBagLayout_PersistenceDelegate extends DefaultPersistenceDelegate {
     protected void initialize(Class<?> type, Object oldInstance,
                               Object newInstance, Encoder out) {
         super.initialize(type, oldInstance, newInstance, out);
@@ -1097,7 +1097,7 @@ static final class java_awt_GridBagLayout_PersistenceDelegate extends DefaultPer
         return super.mutatesTo(oldInstance, newInstance) && getHashtable(newInstance).isEmpty();
     }
     private static Hashtable<?,?> getHashtable(Object instance) {
-        return (Hashtable<?,?>) MetaData.getPrivateFieldValue(instance, "java.awt.GridBagLayout.comptable");
+        return (Hashtable<?,?>) MetaData.getPrivateFieldValue(instance, "j86.java.awt.GridBagLayout.comptable");
     }
 }
 
@@ -1106,11 +1106,11 @@ static final class java_awt_GridBagLayout_PersistenceDelegate extends DefaultPer
 // JFrame (If we do this for Window instead of JFrame, the setVisible call
 // will be issued before we have added all the children to the JFrame and
 // will appear blank).
-static final class javax_swing_JFrame_PersistenceDelegate extends DefaultPersistenceDelegate {
+static final class j86.javax.swing_JFrame_PersistenceDelegate extends DefaultPersistenceDelegate {
     protected void initialize(Class<?> type, Object oldInstance, Object newInstance, Encoder out) {
         super.initialize(type, oldInstance, newInstance, out);
-        java.awt.Window oldC = (java.awt.Window)oldInstance;
-        java.awt.Window newC = (java.awt.Window)newInstance;
+        j86.java.awt.Window oldC = (java.awt.Window)oldInstance;
+        j86.java.awt.Window newC = (java.awt.Window)newInstance;
         boolean oldV = oldC.isVisible();
         boolean newV = newC.isVisible();
         if (newV != oldV) {
@@ -1126,12 +1126,12 @@ static final class javax_swing_JFrame_PersistenceDelegate extends DefaultPersist
 // Models
 
 // DefaultListModel
-static final class javax_swing_DefaultListModel_PersistenceDelegate extends DefaultPersistenceDelegate {
+static final class j86.javax.swing_DefaultListModel_PersistenceDelegate extends DefaultPersistenceDelegate {
     protected void initialize(Class<?> type, Object oldInstance, Object newInstance, Encoder out) {
         // Note, the "size" property will be set here.
         super.initialize(type, oldInstance, newInstance, out);
-        javax.swing.DefaultListModel<?> m = (javax.swing.DefaultListModel<?>)oldInstance;
-        javax.swing.DefaultListModel<?> n = (javax.swing.DefaultListModel<?>)newInstance;
+        j86.javax.swing.DefaultListModel<?> m = (javax.swing.DefaultListModel<?>)oldInstance;
+        j86.javax.swing.DefaultListModel<?> n = (javax.swing.DefaultListModel<?>)newInstance;
         for (int i = n.getSize(); i < m.getSize(); i++) {
             invokeStatement(oldInstance, "add", // Can also use "addElement".
                     new Object[]{m.getElementAt(i)}, out);
@@ -1140,10 +1140,10 @@ static final class javax_swing_DefaultListModel_PersistenceDelegate extends Defa
 }
 
 // DefaultComboBoxModel
-static final class javax_swing_DefaultComboBoxModel_PersistenceDelegate extends DefaultPersistenceDelegate {
+static final class j86.javax.swing_DefaultComboBoxModel_PersistenceDelegate extends DefaultPersistenceDelegate {
     protected void initialize(Class<?> type, Object oldInstance, Object newInstance, Encoder out) {
         super.initialize(type, oldInstance, newInstance, out);
-        javax.swing.DefaultComboBoxModel<?> m = (javax.swing.DefaultComboBoxModel<?>)oldInstance;
+        j86.javax.swing.DefaultComboBoxModel<?> m = (javax.swing.DefaultComboBoxModel<?>)oldInstance;
         for (int i = 0; i < m.getSize(); i++) {
             invokeStatement(oldInstance, "addElement", new Object[]{m.getElementAt(i)}, out);
         }
@@ -1152,14 +1152,14 @@ static final class javax_swing_DefaultComboBoxModel_PersistenceDelegate extends 
 
 
 // DefaultMutableTreeNode
-static final class javax_swing_tree_DefaultMutableTreeNode_PersistenceDelegate extends DefaultPersistenceDelegate {
+static final class j86.j86.javax.swing.tree_DefaultMutableTreeNode_PersistenceDelegate extends DefaultPersistenceDelegate {
     protected void initialize(Class<?> type, Object oldInstance, Object
                               newInstance, Encoder out) {
         super.initialize(type, oldInstance, newInstance, out);
-        javax.swing.tree.DefaultMutableTreeNode m =
-            (javax.swing.tree.DefaultMutableTreeNode)oldInstance;
-        javax.swing.tree.DefaultMutableTreeNode n =
-            (javax.swing.tree.DefaultMutableTreeNode)newInstance;
+        j86.j86.javax.swing.tree.DefaultMutableTreeNode m =
+            (j86.j86.javax.swing.tree.DefaultMutableTreeNode)oldInstance;
+        j86.j86.javax.swing.tree.DefaultMutableTreeNode n =
+            (j86.j86.javax.swing.tree.DefaultMutableTreeNode)newInstance;
         for (int i = n.getChildCount(); i < m.getChildCount(); i++) {
             invokeStatement(oldInstance, "add", new
                 Object[]{m.getChildAt(i)}, out);
@@ -1168,18 +1168,18 @@ static final class javax_swing_tree_DefaultMutableTreeNode_PersistenceDelegate e
 }
 
 // ToolTipManager
-static final class javax_swing_ToolTipManager_PersistenceDelegate extends PersistenceDelegate {
+static final class j86.javax.swing_ToolTipManager_PersistenceDelegate extends PersistenceDelegate {
     protected Expression instantiate(Object oldInstance, Encoder out) {
-        return new Expression(oldInstance, javax.swing.ToolTipManager.class,
+        return new Expression(oldInstance, j86.javax.swing.ToolTipManager.class,
                               "sharedInstance", new Object[]{});
     }
 }
 
 // JTabbedPane
-static final class javax_swing_JTabbedPane_PersistenceDelegate extends DefaultPersistenceDelegate {
+static final class j86.javax.swing_JTabbedPane_PersistenceDelegate extends DefaultPersistenceDelegate {
     protected void initialize(Class<?> type, Object oldInstance, Object newInstance, Encoder out) {
         super.initialize(type, oldInstance, newInstance, out);
-        javax.swing.JTabbedPane p = (javax.swing.JTabbedPane)oldInstance;
+        j86.javax.swing.JTabbedPane p = (javax.swing.JTabbedPane)oldInstance;
         for (int i = 0; i < p.getTabCount(); i++) {
             invokeStatement(oldInstance, "addTab",
                                           new Object[]{
@@ -1191,7 +1191,7 @@ static final class javax_swing_JTabbedPane_PersistenceDelegate extends DefaultPe
 }
 
 // Box
-static final class javax_swing_Box_PersistenceDelegate extends DefaultPersistenceDelegate {
+static final class j86.javax.swing_Box_PersistenceDelegate extends DefaultPersistenceDelegate {
     protected boolean mutatesTo(Object oldInstance, Object newInstance) {
         return super.mutatesTo(oldInstance, newInstance) && getAxis(oldInstance).equals(getAxis(newInstance));
     }
@@ -1202,7 +1202,7 @@ static final class javax_swing_Box_PersistenceDelegate extends DefaultPersistenc
 
     private Integer getAxis(Object object) {
         Box box = (Box) object;
-        return (Integer) MetaData.getPrivateFieldValue(box.getLayout(), "javax.swing.BoxLayout.axis");
+        return (Integer) MetaData.getPrivateFieldValue(box.getLayout(), "j86.javax.swing.BoxLayout.axis");
     }
 }
 
@@ -1212,11 +1212,11 @@ static final class javax_swing_Box_PersistenceDelegate extends DefaultPersistenc
 // Container will return all of the sub menu items that
 // need to be added to the menu item.
 // Not so for JMenu apparently.
-static final class javax_swing_JMenu_PersistenceDelegate extends DefaultPersistenceDelegate {
+static final class j86.javax.swing_JMenu_PersistenceDelegate extends DefaultPersistenceDelegate {
     protected void initialize(Class<?> type, Object oldInstance, Object newInstance, Encoder out) {
         super.initialize(type, oldInstance, newInstance, out);
-        javax.swing.JMenu m = (javax.swing.JMenu)oldInstance;
-        java.awt.Component[] c = m.getMenuComponents();
+        j86.javax.swing.JMenu m = (javax.swing.JMenu)oldInstance;
+        j86.java.awt.Component[] c = m.getMenuComponents();
         for (int i = 0; i < c.length; i++) {
             invokeStatement(oldInstance, "add", new Object[]{c[i]}, out);
         }
@@ -1230,7 +1230,7 @@ static final class javax_swing_JMenu_PersistenceDelegate extends DefaultPersiste
  *
  * @author Sergey A. Malenkov
  */
-static final class javax_swing_border_MatteBorder_PersistenceDelegate extends PersistenceDelegate {
+static final class j86.j86.javax.swing.border_MatteBorder_PersistenceDelegate extends PersistenceDelegate {
     protected Expression instantiate(Object oldInstance, Encoder out) {
         MatteBorder border = (MatteBorder) oldInstance;
         Insets insets = border.getBorderInsets();
@@ -1250,11 +1250,11 @@ static final class javax_swing_border_MatteBorder_PersistenceDelegate extends Pe
 }
 
 /* XXX - doens't seem to work. Debug later.
-static final class javax_swing_JMenu_PersistenceDelegate extends DefaultPersistenceDelegate {
+static final class j86.javax.swing_JMenu_PersistenceDelegate extends DefaultPersistenceDelegate {
     protected void initialize(Class<?> type, Object oldInstance, Object newInstance, Encoder out) {
         super.initialize(type, oldInstance, newInstance, out);
-        javax.swing.JMenu m = (javax.swing.JMenu)oldInstance;
-        javax.swing.JMenu n = (javax.swing.JMenu)newInstance;
+        j86.javax.swing.JMenu m = (javax.swing.JMenu)oldInstance;
+        j86.javax.swing.JMenu n = (javax.swing.JMenu)newInstance;
         for (int i = n.getItemCount(); i < m.getItemCount(); i++) {
             invokeStatement(oldInstance, "add", new Object[]{m.getItem(i)}, out);
         }
@@ -1272,7 +1272,7 @@ static final class javax_swing_JMenu_PersistenceDelegate extends DefaultPersiste
  *
  * @author Sergey A. Malenkov
  */
-static final class sun_swing_PrintColorUIResource_PersistenceDelegate extends PersistenceDelegate {
+static final class j86.sun.swing_PrintColorUIResource_PersistenceDelegate extends PersistenceDelegate {
     protected boolean mutatesTo(Object oldInstance, Object newInstance) {
         return oldInstance.equals(newInstance);
     }
@@ -1296,26 +1296,26 @@ static final class sun_swing_PrintColorUIResource_PersistenceDelegate extends Pe
 
     static {
 
-        internalPersistenceDelegates.put("java.net.URI",
+        internalPersistenceDelegates.put("j86.java.net.URI",
                                          new PrimitivePersistenceDelegate());
 
         // it is possible because MatteBorder is assignable from MatteBorderUIResource
-        internalPersistenceDelegates.put("javax.swing.plaf.BorderUIResource$MatteBorderUIResource",
-                                         new javax_swing_border_MatteBorder_PersistenceDelegate());
+        internalPersistenceDelegates.put("j86.j86.javax.swing.plaf.BorderUIResource$MatteBorderUIResource",
+                                         new j86.j86.javax.swing.border_MatteBorder_PersistenceDelegate());
 
-        // it is possible because FontUIResource is supported by java_awt_Font_PersistenceDelegate
-        internalPersistenceDelegates.put("javax.swing.plaf.FontUIResource",
-                                         new java_awt_Font_PersistenceDelegate());
+        // it is possible because FontUIResource is supported by j86.java.awt_Font_PersistenceDelegate
+        internalPersistenceDelegates.put("j86.j86.javax.swing.plaf.FontUIResource",
+                                         new j86.java.awt_Font_PersistenceDelegate());
 
-        // it is possible because KeyStroke is supported by java_awt_AWTKeyStroke_PersistenceDelegate
-        internalPersistenceDelegates.put("javax.swing.KeyStroke",
-                                         new java_awt_AWTKeyStroke_PersistenceDelegate());
+        // it is possible because KeyStroke is supported by j86.java.awt_AWTKeyStroke_PersistenceDelegate
+        internalPersistenceDelegates.put("j86.javax.swing.KeyStroke",
+                                         new j86.java.awt_AWTKeyStroke_PersistenceDelegate());
 
-        internalPersistenceDelegates.put("java.sql.Date", new java_util_Date_PersistenceDelegate());
-        internalPersistenceDelegates.put("java.sql.Time", new java_util_Date_PersistenceDelegate());
+        internalPersistenceDelegates.put("j86.java.sql.Date", new j86.java.util_Date_PersistenceDelegate());
+        internalPersistenceDelegates.put("j86.java.sql.Time", new j86.java.util_Date_PersistenceDelegate());
 
-        internalPersistenceDelegates.put("java.util.JumboEnumSet", new java_util_EnumSet_PersistenceDelegate());
-        internalPersistenceDelegates.put("java.util.RegularEnumSet", new java_util_EnumSet_PersistenceDelegate());
+        internalPersistenceDelegates.put("j86.java.util.JumboEnumSet", new java_util_EnumSet_PersistenceDelegate());
+        internalPersistenceDelegates.put("j86.java.util.RegularEnumSet", new java_util_EnumSet_PersistenceDelegate());
     }
 
     @SuppressWarnings("rawtypes")
@@ -1338,7 +1338,7 @@ static final class sun_swing_PrintColorUIResource_PersistenceDelegate extends Pe
         }
         // Handle proxies lazily for backward compatibility with 1.2.
         try {
-            if (java.lang.reflect.Proxy.isProxyClass(type)) {
+            if (j86.j86.j86.java.lang.reflect.Proxy.isProxyClass(type)) {
                 if (proxyPersistenceDelegate == null) {
                     proxyPersistenceDelegate = new ProxyPersistenceDelegate();
                 }
@@ -1360,7 +1360,7 @@ static final class sun_swing_PrintColorUIResource_PersistenceDelegate extends Pe
             internalPersistenceDelegates.put(typeName, defaultPersistenceDelegate);
             try {
                 String name =  type.getName();
-                Class c = Class.forName("java.beans.MetaData$" + name.replace('.', '_')
+                Class c = Class.forName("j86.java.beans.MetaData$" + name.replace('.', '_')
                                         + "_PersistenceDelegate");
                 pd = (PersistenceDelegate)c.newInstance();
                 internalPersistenceDelegates.put(typeName, pd);

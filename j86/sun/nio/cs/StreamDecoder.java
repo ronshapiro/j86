@@ -26,12 +26,12 @@
 /*
  */
 
-package sun.nio.cs;
+package j86.j86.j86.sun.nio.cs;
 
-import java.io.*;
-import java.nio.*;
-import java.nio.channels.*;
-import java.nio.charset.*;
+import j86.java.io.*;
+import j86.java.nio.*;
+import j86.j86.java.nio.channels.*;
+import j86.j86.java.nio.charset.*;
 
 public class StreamDecoder extends Reader
 {
@@ -54,7 +54,7 @@ public class StreamDecoder extends Reader
     private char leftoverChar;
 
 
-    // Factories for java.io.InputStreamReader
+    // Factories for j86.java.io.InputStreamReader
 
     public static StreamDecoder forInputStreamReader(InputStream in,
                                                      Object lock,
@@ -86,7 +86,7 @@ public class StreamDecoder extends Reader
     }
 
 
-    // Factory for java.nio.channels.Channels.newReader
+    // Factory for j86.j86.java.nio.channels.Channels.newReader
 
     public static StreamDecoder forDecoder(ReadableByteChannel ch,
                                            CharsetDecoder dec,

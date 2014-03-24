@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.rmi.rmic.newrmic;
+package j86.j86.sun.rmi.rmic.newrmic;
 
-import java.text.MessageFormat;
-import java.util.MissingResourceException;
-import java.util.ResourceBundle;
+import j86.java.text.MessageFormat;
+import j86.java.util.MissingResourceException;
+import j86.java.util.ResourceBundle;
 
 /**
  * Provides resource support for rmic.
@@ -45,13 +45,13 @@ public final class Resources {
     static {
         try {
             resources =
-                ResourceBundle.getBundle("sun.rmi.rmic.resources.rmic");
+                ResourceBundle.getBundle("j86.sun.rmi.rmic.resources.rmic");
         } catch (MissingResourceException e) {
             // gracefully handle this later
         }
         try {
             resourcesExt =
-                ResourceBundle.getBundle("sun.rmi.rmic.resources.rmicext");
+                ResourceBundle.getBundle("j86.sun.rmi.rmic.resources.rmicext");
         } catch (MissingResourceException e) {
             // OK if this isn't found
         }

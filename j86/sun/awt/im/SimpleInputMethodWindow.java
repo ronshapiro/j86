@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.awt.im;
+package j86.j86.sun.awt.im;
 
-import java.awt.Frame;
+import j86.java.awt.Frame;
 
 /**
  * Implements a simple input method window that provides the minimal
  * functionality as specified in
- * {@link java.awt.im.spi.InputMethodContext#createInputMethodWindow}.
+ * {@link j86.j86.j86.java.awt.im.spi.InputMethodContext#createInputMethodWindow}.
  *
  */
 public class SimpleInputMethodWindow
@@ -54,7 +54,7 @@ public class SimpleInputMethodWindow
         this.inputContext = inputContext;
     }
 
-    public java.awt.im.InputContext getInputContext() {
+    public j86.j86.java.awt.im.InputContext getInputContext() {
         if (inputContext != null) {
             return inputContext;
         } else {

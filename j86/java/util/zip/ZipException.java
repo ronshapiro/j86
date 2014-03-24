@@ -23,15 +23,15 @@
  * questions.
  */
 
-package java.util.zip;
+package j86.j86.java.util.zip;
 
-import java.io.IOException;
+import j86.java.io.IOException;
 
 /**
  * Signals that a Zip exception of some sort has occurred.
  *
  * @author  unascribed
- * @see     java.io.IOException
+ * @see     j86.java.io.IOException
  * @since   JDK1.0
  */
 

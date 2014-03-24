@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.print;
+package j86.sun.print;
 
-import javax.print.attribute.PrintRequestAttribute;
+import j86.j86.javax.print.attribute.PrintRequestAttribute;
 
 /*
  * A class used to determine minimum and maximum pages.

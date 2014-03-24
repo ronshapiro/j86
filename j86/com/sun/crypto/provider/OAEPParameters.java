@@ -23,19 +23,19 @@
  * questions.
  */
 
-package com.sun.crypto.provider;
+package j86.com.sun.crypto.provider;
 
-import java.math.BigInteger;
-import java.io.*;
-import sun.security.util.*;
-import sun.security.x509.*;
-import java.security.AlgorithmParametersSpi;
-import java.security.NoSuchAlgorithmException;
-import java.security.spec.AlgorithmParameterSpec;
-import java.security.spec.InvalidParameterSpecException;
-import java.security.spec.MGF1ParameterSpec;
-import javax.crypto.spec.PSource;
-import javax.crypto.spec.OAEPParameterSpec;
+import j86.java.math.BigInteger;
+import j86.java.io.*;
+import j86.sun.security.util.*;
+import j86.sun.security.x509.*;
+import j86.java.security.AlgorithmParametersSpi;
+import j86.java.security.NoSuchAlgorithmException;
+import j86.j86.java.security.spec.AlgorithmParameterSpec;
+import j86.j86.java.security.spec.InvalidParameterSpecException;
+import j86.j86.java.security.spec.MGF1ParameterSpec;
+import j86.j86.javax.crypto.spec.PSource;
+import j86.j86.javax.crypto.spec.OAEPParameterSpec;
 
 /**
  * This class implements the OAEP parameters used with the RSA

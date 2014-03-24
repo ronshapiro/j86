@@ -36,12 +36,12 @@
  * @author  Thomas Ball
  */
 
-package sun.awt;
+package j86.sun.awt;
 
-import java.awt.EventQueue;
-import java.awt.AWTEvent;
-import java.awt.Toolkit;
-import java.util.StringTokenizer;
+import j86.java.awt.EventQueue;
+import j86.java.awt.AWTEvent;
+import j86.java.awt.Toolkit;
+import j86.java.util.StringTokenizer;
 
 public class TracedEventQueue extends EventQueue {
 

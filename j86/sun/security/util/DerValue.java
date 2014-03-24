@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.security.util;
+package j86.sun.security.util;
 
-import java.io.*;
-import java.math.BigInteger;
-import java.util.Date;
-import sun.misc.IOUtils;
+import j86.java.io.*;
+import j86.java.math.BigInteger;
+import j86.java.util.Date;
+import j86.sun.misc.IOUtils;
 
 /**
  * Represents a single DER-encoded value.  DER encoding rules are a subset

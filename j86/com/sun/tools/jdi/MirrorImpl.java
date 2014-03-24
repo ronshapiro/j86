@@ -23,11 +23,11 @@
  * questions.
  */
 
-package com.sun.tools.jdi;
+package j86.com.sun.tools.jdi;
 
-import com.sun.jdi.*;
-import java.util.Collection;
-import java.util.Iterator;
+import j86.com.sun.jdi.*;
+import j86.java.util.Collection;
+import j86.java.util.Iterator;
 
 abstract class MirrorImpl extends Object implements Mirror {
 

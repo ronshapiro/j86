@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.net.smtp;
+package j86.j86.sun.net.smtp;
 
-import java.io.IOException;
+import j86.java.io.IOException;
 
 /**
  * This exception is thrown when unexpected results are returned during

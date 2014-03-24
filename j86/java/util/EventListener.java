@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.util;
+package j86.java.util;
 
 /**
  * A tagging interface that all event listener interfaces must extend.

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.io;
+package j86.java.io;
 
 /**
  * Signals that an I/O exception of some sort has occurred. This
@@ -31,8 +31,8 @@ package java.io;
  * interrupted I/O operations.
  *
  * @author  unascribed
- * @see     java.io.InputStream
- * @see     java.io.OutputStream
+ * @see     j86.java.io.InputStream
+ * @see     j86.java.io.OutputStream
  * @since   JDK1.0
  */
 public

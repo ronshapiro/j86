@@ -23,71 +23,71 @@
  * questions.
  */
 
-package sun.net.www.protocol.http;
+package j86.j86.j86.sun.net.www.protocol.http;
 
-import java.util.Arrays;
-import java.net.URL;
-import java.net.URLConnection;
-import java.net.ProtocolException;
-import java.net.HttpRetryException;
-import java.net.PasswordAuthentication;
-import java.net.Authenticator;
-import java.net.HttpCookie;
-import java.net.InetAddress;
-import java.net.UnknownHostException;
-import java.net.SocketTimeoutException;
-import java.net.SocketPermission;
-import java.net.Proxy;
-import java.net.ProxySelector;
-import java.net.URI;
-import java.net.InetSocketAddress;
-import java.net.CookieHandler;
-import java.net.ResponseCache;
-import java.net.CacheResponse;
-import java.net.SecureCacheResponse;
-import java.net.CacheRequest;
-import java.net.URLPermission;
-import java.net.Authenticator.RequestorType;
-import java.security.AccessController;
-import java.security.PrivilegedExceptionAction;
-import java.security.PrivilegedActionException;
-import java.io.*;
-import java.net.*;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Date;
-import java.util.Map;
-import java.util.List;
-import java.util.Locale;
-import java.util.StringTokenizer;
-import java.util.Iterator;
-import java.util.HashSet;
-import java.util.HashMap;
-import java.util.Set;
-import sun.net.*;
-import sun.net.www.*;
-import sun.net.www.http.HttpClient;
-import sun.net.www.http.PosterOutputStream;
-import sun.net.www.http.ChunkedInputStream;
-import sun.net.www.http.ChunkedOutputStream;
-import sun.util.logging.PlatformLogger;
-import java.text.SimpleDateFormat;
-import java.util.TimeZone;
-import java.net.MalformedURLException;
-import java.nio.ByteBuffer;
-import static sun.net.www.protocol.http.AuthScheme.BASIC;
-import static sun.net.www.protocol.http.AuthScheme.DIGEST;
-import static sun.net.www.protocol.http.AuthScheme.NTLM;
-import static sun.net.www.protocol.http.AuthScheme.NEGOTIATE;
-import static sun.net.www.protocol.http.AuthScheme.KERBEROS;
-import static sun.net.www.protocol.http.AuthScheme.UNKNOWN;
+import j86.java.util.Arrays;
+import j86.java.net.URL;
+import j86.java.net.URLConnection;
+import j86.java.net.ProtocolException;
+import j86.java.net.HttpRetryException;
+import j86.java.net.PasswordAuthentication;
+import j86.java.net.Authenticator;
+import j86.java.net.HttpCookie;
+import j86.java.net.InetAddress;
+import j86.java.net.UnknownHostException;
+import j86.java.net.SocketTimeoutException;
+import j86.java.net.SocketPermission;
+import j86.java.net.Proxy;
+import j86.java.net.ProxySelector;
+import j86.java.net.URI;
+import j86.java.net.InetSocketAddress;
+import j86.java.net.CookieHandler;
+import j86.java.net.ResponseCache;
+import j86.java.net.CacheResponse;
+import j86.java.net.SecureCacheResponse;
+import j86.java.net.CacheRequest;
+import j86.java.net.URLPermission;
+import j86.java.net.Authenticator.RequestorType;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedExceptionAction;
+import j86.java.security.PrivilegedActionException;
+import j86.java.io.*;
+import j86.java.net.*;
+import j86.java.util.ArrayList;
+import j86.java.util.Collections;
+import j86.java.util.Date;
+import j86.java.util.Map;
+import j86.java.util.List;
+import j86.java.util.Locale;
+import j86.java.util.StringTokenizer;
+import j86.java.util.Iterator;
+import j86.java.util.HashSet;
+import j86.java.util.HashMap;
+import j86.java.util.Set;
+import j86.sun.net.*;
+import j86.j86.sun.net.www.*;
+import j86.j86.j86.sun.net.www.http.HttpClient;
+import j86.j86.j86.sun.net.www.http.PosterOutputStream;
+import j86.j86.j86.sun.net.www.http.ChunkedInputStream;
+import j86.j86.j86.sun.net.www.http.ChunkedOutputStream;
+import j86.j86.sun.util.logging.PlatformLogger;
+import j86.java.text.SimpleDateFormat;
+import j86.java.util.TimeZone;
+import j86.java.net.MalformedURLException;
+import j86.java.nio.ByteBuffer;
+import static j86.j86.j86.sun.net.www.protocol.http.AuthScheme.BASIC;
+import static j86.j86.j86.sun.net.www.protocol.http.AuthScheme.DIGEST;
+import static j86.j86.j86.sun.net.www.protocol.http.AuthScheme.NTLM;
+import static j86.j86.j86.sun.net.www.protocol.http.AuthScheme.NEGOTIATE;
+import static j86.j86.j86.sun.net.www.protocol.http.AuthScheme.KERBEROS;
+import static j86.j86.j86.sun.net.www.protocol.http.AuthScheme.UNKNOWN;
 
 /**
  * A class to represent an HTTP connection to a remote object.
  */
 
 
-public class HttpURLConnection extends java.net.HttpURLConnection {
+public class HttpURLConnection extends j86.java.net.HttpURLConnection {
 
     static String HTTP_CONNECT = "CONNECT";
 
@@ -115,7 +115,7 @@ public class HttpURLConnection extends java.net.HttpURLConnection {
     /*
      * System properties related to error stream handling:
      *
-     * sun.net.http.errorstream.enableBuffering = <boolean>
+     * j86.sun.net.http.errorstream.enableBuffering = <boolean>
      *
      * With the above system property set to true (default is false),
      * when the response code is >=400, the HTTP handler will try to
@@ -132,11 +132,11 @@ public class HttpURLConnection extends java.net.HttpURLConnection {
      * properties provide further control to the error stream
      * buffering behaviour.
      *
-     * sun.net.http.errorstream.timeout = <int>
+     * j86.sun.net.http.errorstream.timeout = <int>
      *     the timeout (in millisec) waiting the error stream
      *     to be buffered; default is 300 ms
      *
-     * sun.net.http.errorstream.bufferSize = <int>
+     * j86.sun.net.http.errorstream.bufferSize = <int>
      *     the size (in bytes) to use for the buffering the error stream;
      *     default is 4k
      */
@@ -202,46 +202,46 @@ public class HttpURLConnection extends java.net.HttpURLConnection {
     };
 
     static {
-        maxRedirects = java.security.AccessController.doPrivileged(
-            new sun.security.action.GetIntegerAction(
+        maxRedirects = j86.java.security.AccessController.doPrivileged(
+            new j86.sun.security.action.GetIntegerAction(
                 "http.maxRedirects", defaultmaxRedirects)).intValue();
-        version = java.security.AccessController.doPrivileged(
-                    new sun.security.action.GetPropertyAction("java.version"));
-        String agent = java.security.AccessController.doPrivileged(
-                    new sun.security.action.GetPropertyAction("http.agent"));
+        version = j86.java.security.AccessController.doPrivileged(
+                    new j86.sun.security.action.GetPropertyAction("java.version"));
+        String agent = j86.java.security.AccessController.doPrivileged(
+                    new j86.sun.security.action.GetPropertyAction("http.agent"));
         if (agent == null) {
             agent = "Java/"+version;
         } else {
             agent = agent + " Java/"+version;
         }
         userAgent = agent;
-        validateProxy = java.security.AccessController.doPrivileged(
-                new sun.security.action.GetBooleanAction(
+        validateProxy = j86.java.security.AccessController.doPrivileged(
+                new j86.sun.security.action.GetBooleanAction(
                     "http.auth.digest.validateProxy")).booleanValue();
-        validateServer = java.security.AccessController.doPrivileged(
-                new sun.security.action.GetBooleanAction(
+        validateServer = j86.java.security.AccessController.doPrivileged(
+                new j86.sun.security.action.GetBooleanAction(
                     "http.auth.digest.validateServer")).booleanValue();
 
-        enableESBuffer = java.security.AccessController.doPrivileged(
-                new sun.security.action.GetBooleanAction(
-                    "sun.net.http.errorstream.enableBuffering")).booleanValue();
-        timeout4ESBuffer = java.security.AccessController.doPrivileged(
-                new sun.security.action.GetIntegerAction(
-                    "sun.net.http.errorstream.timeout", 300)).intValue();
+        enableESBuffer = j86.java.security.AccessController.doPrivileged(
+                new j86.sun.security.action.GetBooleanAction(
+                    "j86.sun.net.http.errorstream.enableBuffering")).booleanValue();
+        timeout4ESBuffer = j86.java.security.AccessController.doPrivileged(
+                new j86.sun.security.action.GetIntegerAction(
+                    "j86.sun.net.http.errorstream.timeout", 300)).intValue();
         if (timeout4ESBuffer <= 0) {
             timeout4ESBuffer = 300; // use the default
         }
 
-        bufSize4ES = java.security.AccessController.doPrivileged(
-                new sun.security.action.GetIntegerAction(
-                    "sun.net.http.errorstream.bufferSize", 4096)).intValue();
+        bufSize4ES = j86.java.security.AccessController.doPrivileged(
+                new j86.sun.security.action.GetIntegerAction(
+                    "j86.sun.net.http.errorstream.bufferSize", 4096)).intValue();
         if (bufSize4ES <= 0) {
             bufSize4ES = 4096; // use the default
         }
 
-        allowRestrictedHeaders = java.security.AccessController.doPrivileged(
-                new sun.security.action.GetBooleanAction(
-                    "sun.net.http.allowRestrictedHeaders")).booleanValue();
+        allowRestrictedHeaders = j86.java.security.AccessController.doPrivileged(
+                new j86.sun.security.action.GetBooleanAction(
+                    "j86.sun.net.http.allowRestrictedHeaders")).booleanValue();
         if (!allowRestrictedHeaders) {
             restrictedHeaderSet = new HashSet<String>(restrictedHeaders.length);
             for (int i=0; i < restrictedHeaders.length; i++) {
@@ -383,7 +383,7 @@ public class HttpURLConnection extends java.net.HttpURLConnection {
 
     private TunnelState tunnelState = TunnelState.NONE;
 
-    /* Redefine timeouts from java.net.URLConnection as we need -1 to mean
+    /* Redefine timeouts from j86.java.net.URLConnection as we need -1 to mean
      * not set. This is to ensure backward compatibility.
      */
     private int connectTimeout = NetworkClient.DEFAULT_CONNECT_TIMEOUT;
@@ -394,7 +394,7 @@ public class HttpURLConnection extends java.net.HttpURLConnection {
 
     /* Logging support */
     private static final PlatformLogger logger =
-            PlatformLogger.getLogger("sun.net.www.protocol.http.HttpURLConnection");
+            PlatformLogger.getLogger("j86.j86.j86.sun.net.www.protocol.http.HttpURLConnection");
 
     /*
      * privileged request password authentication
@@ -410,8 +410,8 @@ public class HttpURLConnection extends java.net.HttpURLConnection {
                             final String scheme,
                             final URL url,
                             final RequestorType authType) {
-        return java.security.AccessController.doPrivileged(
-            new java.security.PrivilegedAction<PasswordAuthentication>() {
+        return j86.java.security.AccessController.doPrivileged(
+            new j86.java.security.PrivilegedAction<PasswordAuthentication>() {
                 public PasswordAuthentication run() {
                     if (logger.isLoggable(PlatformLogger.Level.FINEST)) {
                         logger.finest("Requesting Authentication: host =" + host + " url = " + url);
@@ -807,22 +807,22 @@ public class HttpURLConnection extends java.net.HttpURLConnection {
         userHeaders = new MessageHeader();
         this.handler = handler;
         instProxy = p;
-        if (instProxy instanceof sun.net.ApplicationProxy) {
+        if (instProxy instanceof j86.sun.net.ApplicationProxy) {
             /* Application set Proxies should not have access to cookies
              * in a secure environment unless explicitly allowed. */
             try {
                 cookieHandler = CookieHandler.getDefault();
             } catch (SecurityException se) { /* swallow exception */ }
         } else {
-            cookieHandler = java.security.AccessController.doPrivileged(
-                new java.security.PrivilegedAction<CookieHandler>() {
+            cookieHandler = j86.java.security.AccessController.doPrivileged(
+                new j86.java.security.PrivilegedAction<CookieHandler>() {
                 public CookieHandler run() {
                     return CookieHandler.getDefault();
                 }
             });
         }
-        cacheHandler = java.security.AccessController.doPrivileged(
-            new java.security.PrivilegedAction<ResponseCache>() {
+        cacheHandler = j86.java.security.AccessController.doPrivileged(
+            new j86.java.security.PrivilegedAction<ResponseCache>() {
                 public ResponseCache run() {
                 return ResponseCache.getDefault();
             }
@@ -830,7 +830,7 @@ public class HttpURLConnection extends java.net.HttpURLConnection {
     }
 
     /**
-     * @deprecated.  Use java.net.Authenticator.setDefault() instead.
+     * @deprecated.  Use j86.java.net.Authenticator.setDefault() instead.
      */
     @Deprecated
     public static void setDefaultAuthenticator(HttpAuthenticator a) {
@@ -889,7 +889,7 @@ public class HttpURLConnection extends java.net.HttpURLConnection {
 
 
     //
-    // Same as java.net.URL.hostsEqual
+    // Same as j86.java.net.URL.hostsEqual
     //
     private static boolean hostsEqual(URL u1, URL u2) {
         final String h1 = u1.getHost();
@@ -906,8 +906,8 @@ public class HttpURLConnection extends java.net.HttpURLConnection {
         // names like tachyon and tachyon.eng would compare different
         final boolean result[] = {false};
 
-        java.security.AccessController.doPrivileged(
-            new java.security.PrivilegedAction<Void>() {
+        j86.java.security.AccessController.doPrivileged(
+            new j86.java.security.PrivilegedAction<Void>() {
                 public Void run() {
                 try {
                     InetAddress a1 = InetAddress.getByName(h1);
@@ -1083,14 +1083,14 @@ public class HttpURLConnection extends java.net.HttpURLConnection {
                  * Do we have to use a proxy?
                  */
                 ProxySelector sel =
-                    java.security.AccessController.doPrivileged(
-                        new java.security.PrivilegedAction<ProxySelector>() {
+                    j86.java.security.AccessController.doPrivileged(
+                        new j86.java.security.PrivilegedAction<ProxySelector>() {
                             public ProxySelector run() {
                                      return ProxySelector.getDefault();
                                  }
                              });
                 if (sel != null) {
-                    URI uri = sun.net.www.ParseUtil.toURI(url);
+                    URI uri = j86.j86.sun.net.www.ParseUtil.toURI(url);
                     if (logger.isLoggable(PlatformLogger.Level.FINEST)) {
                         logger.finest("ProxySelector Request for " + uri);
                     }
@@ -1833,7 +1833,7 @@ public class HttpURLConnection extends java.net.HttpURLConnection {
                     if (respCode == 404 || respCode == 410) {
                         throw new FileNotFoundException(url.toString());
                     } else {
-                        throw new java.io.IOException("Server returned HTTP" +
+                        throw new j86.java.io.IOException("Server returned HTTP" +
                               " response code: " + respCode + " for URL: " +
                               url.toString());
                     }
@@ -1879,8 +1879,8 @@ public class HttpURLConnection extends java.net.HttpURLConnection {
         try {
             final Object[] args = { rememberedException.getMessage() };
             IOException chainedException =
-                java.security.AccessController.doPrivileged(
-                    new java.security.PrivilegedExceptionAction<IOException>() {
+                j86.java.security.AccessController.doPrivileged(
+                    new j86.java.security.PrivilegedExceptionAction<IOException>() {
                         public IOException run() throws Exception {
                             return (IOException)
                                 rememberedException.getClass()
@@ -2206,14 +2206,14 @@ public class HttpURLConnection extends java.net.HttpURLConnection {
                     InetAddress addr = null;
                     try {
                         final String finalHost = host;
-                        addr = java.security.AccessController.doPrivileged(
-                            new java.security.PrivilegedExceptionAction<InetAddress>() {
+                        addr = j86.java.security.AccessController.doPrivileged(
+                            new j86.java.security.PrivilegedExceptionAction<InetAddress>() {
                                 public InetAddress run()
-                                    throws java.net.UnknownHostException {
+                                    throws j86.java.net.UnknownHostException {
                                     return InetAddress.getByName(finalHost);
                                 }
                             });
-                    } catch (java.security.PrivilegedActionException ignored) {
+                    } catch (j86.java.security.PrivilegedActionException ignored) {
                         // User will have an unknown host.
                     }
                     PasswordAuthentication a =
@@ -2294,7 +2294,7 @@ public class HttpURLConnection extends java.net.HttpURLConnection {
                         ret = new BasicAuthentication (true, host, port, realm, a);
                         // not in cache by default - cache on success
                     }
-                } catch (java.net.MalformedURLException ignored) {
+                } catch (j86.java.net.MalformedURLException ignored) {
                 }
             }
             if (ret != null) {
@@ -2350,7 +2350,7 @@ public class HttpURLConnection extends java.net.HttpURLConnection {
             if (ret == null) {
                 try {
                     addr = InetAddress.getByName(url.getHost());
-                } catch (java.net.UnknownHostException ignored) {
+                } catch (j86.java.net.UnknownHostException ignored) {
                     // User will have addr = null
                 }
             }
@@ -2868,8 +2868,8 @@ public class HttpURLConnection extends java.net.HttpURLConnection {
             if (cookieHandler == null || value.length() == 0)
                 return value;
 
-            sun.misc.JavaNetHttpCookieAccess access =
-                    sun.misc.SharedSecrets.getJavaNetHttpCookieAccess();
+            j86.sun.misc.JavaNetHttpCookieAccess access =
+                    j86.sun.misc.SharedSecrets.getJavaNetHttpCookieAccess();
             StringBuilder retValue = new StringBuilder();
             List<HttpCookie> cookies = access.parse(value);
             boolean multipleCookies = false;
@@ -3021,7 +3021,7 @@ public class HttpURLConnection extends java.net.HttpURLConnection {
      * @param   key     the keyword by which the request is known
      *                  (e.g., "<code>accept</code>").
      * @param   value  the value associated with it.
-     * @see #getRequestProperties(java.lang.String)
+     * @see #getRequestProperties(j86.java.lang.String)
      * @since 1.4
      */
     @Override
@@ -3125,8 +3125,8 @@ public class HttpURLConnection extends java.net.HttpURLConnection {
      *
      * @return an <code>int</code> that indicates the connect timeout
      *         value in milliseconds
-     * @see java.net.URLConnection#setConnectTimeout(int)
-     * @see java.net.URLConnection#connect()
+     * @see j86.java.net.URLConnection#setConnectTimeout(int)
+     * @see j86.java.net.URLConnection#connect()
      * @since 1.5
      */
     @Override
@@ -3139,7 +3139,7 @@ public class HttpURLConnection extends java.net.HttpURLConnection {
      * milliseconds. A non-zero value specifies the timeout when
      * reading from Input stream when a connection is established to a
      * resource. If the timeout expires before there is data available
-     * for read, a java.net.SocketTimeoutException is raised. A
+     * for read, a j86.java.net.SocketTimeoutException is raised. A
      * timeout of zero is interpreted as an infinite timeout.
      *
      * <p> Some non-standard implementation of this method ignores the
@@ -3150,8 +3150,8 @@ public class HttpURLConnection extends java.net.HttpURLConnection {
      * value to be used in milliseconds
      * @throws IllegalArgumentException if the timeout parameter is negative
      *
-     * @see java.net.URLConnectiongetReadTimeout()
-     * @see java.io.InputStream#read()
+     * @see j86.java.net.URLConnectiongetReadTimeout()
+     * @see j86.java.io.InputStream#read()
      * @since 1.5
      */
     @Override
@@ -3168,8 +3168,8 @@ public class HttpURLConnection extends java.net.HttpURLConnection {
      * @return an <code>int</code> that indicates the read timeout
      *         value in milliseconds
      *
-     * @see java.net.URLConnection#setReadTimeout(int)
-     * @see java.io.InputStream#read()
+     * @see j86.java.net.URLConnection#setReadTimeout(int)
+     * @see j86.java.io.InputStream#read()
      * @since 1.5
      */
     @Override
@@ -3248,8 +3248,8 @@ public class HttpURLConnection extends java.net.HttpURLConnection {
          *
          * @param   readlimit   the maximum limit of bytes that can be read before
          *                      the mark position becomes invalid.
-         * @see     java.io.FilterInputStream#in
-         * @see     java.io.FilterInputStream#reset()
+         * @see     j86.java.io.FilterInputStream#in
+         * @see     j86.java.io.FilterInputStream#reset()
          */
         @Override
         public synchronized void mark(int readlimit) {
@@ -3278,8 +3278,8 @@ public class HttpURLConnection extends java.net.HttpURLConnection {
          *
          * @exception  IOException  if the stream has not been marked or if the
          *               mark has been invalidated.
-         * @see        java.io.FilterInputStream#in
-         * @see        java.io.FilterInputStream#mark(int)
+         * @see        j86.java.io.FilterInputStream#in
+         * @see        j86.java.io.FilterInputStream#mark(int)
          */
         @Override
         public synchronized void reset() throws IOException {

@@ -23,24 +23,24 @@
  * questions.
  */
 
-package com.sun.java.util.jar.pack;
+package j86.com.sun.j86.j86.java.util.jar.pack;
 
-import com.sun.java.util.jar.pack.ConstantPool.*;
-import com.sun.java.util.jar.pack.Package.Class;
-import com.sun.java.util.jar.pack.Package.File;
-import com.sun.java.util.jar.pack.Package.InnerClass;
-import java.io.IOException;
-import java.io.OutputStream;
-import java.io.PrintStream;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import static com.sun.java.util.jar.pack.Constants.*;
+import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.*;
+import j86.com.sun.j86.j86.java.util.jar.pack.Package.Class;
+import j86.com.sun.j86.j86.java.util.jar.pack.Package.File;
+import j86.com.sun.j86.j86.java.util.jar.pack.Package.InnerClass;
+import j86.java.io.IOException;
+import j86.java.io.OutputStream;
+import j86.java.io.PrintStream;
+import j86.java.util.ArrayList;
+import j86.java.util.Arrays;
+import j86.java.util.Comparator;
+import j86.java.util.HashMap;
+import j86.java.util.HashSet;
+import j86.java.util.List;
+import j86.java.util.Map;
+import j86.java.util.Set;
+import static j86.com.sun.j86.j86.java.util.jar.pack.Constants.*;
 
 /**
  * Writer for a package file.

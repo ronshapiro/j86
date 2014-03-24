@@ -23,28 +23,28 @@
  * questions.
  */
 
-package sun.font;
+package j86.sun.font;
 
-import java.awt.Font;
-import java.awt.FontFormatException;
-import java.awt.GraphicsEnvironment;
-import java.awt.geom.Point2D;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.RandomAccessFile;
-import java.io.UnsupportedEncodingException;
-import java.nio.ByteBuffer;
-import java.nio.CharBuffer;
-import java.nio.IntBuffer;
-import java.nio.ShortBuffer;
-import java.nio.channels.ClosedChannelException;
-import java.nio.channels.FileChannel;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Locale;
-import sun.java2d.Disposer;
-import sun.java2d.DisposerRecord;
+import j86.java.awt.Font;
+import j86.java.awt.FontFormatException;
+import j86.java.awt.GraphicsEnvironment;
+import j86.j86.java.awt.geom.Point2D;
+import j86.java.io.FileNotFoundException;
+import j86.java.io.IOException;
+import j86.java.io.RandomAccessFile;
+import j86.java.io.UnsupportedEncodingException;
+import j86.java.nio.ByteBuffer;
+import j86.java.nio.CharBuffer;
+import j86.java.nio.IntBuffer;
+import j86.java.nio.ShortBuffer;
+import j86.j86.java.nio.channels.ClosedChannelException;
+import j86.j86.java.nio.channels.FileChannel;
+import j86.java.util.HashMap;
+import j86.java.util.HashSet;
+import j86.java.util.Map;
+import j86.java.util.Locale;
+import j86.sun.java2d.Disposer;
+import j86.sun.java2d.DisposerRecord;
 
 /**
  * TrueTypeFont is not called SFntFont because it is not expected
@@ -289,8 +289,8 @@ public class TrueTypeFont extends FileFont {
             }
             try {
                 RandomAccessFile raf = (RandomAccessFile)
-                java.security.AccessController.doPrivileged(
-                    new java.security.PrivilegedAction() {
+                j86.java.security.AccessController.doPrivileged(
+                    new j86.java.security.PrivilegedAction() {
                         public Object run() {
                             try {
                                 return new RandomAccessFile(platName, "r");
@@ -709,13 +709,13 @@ public class TrueTypeFont extends FileFont {
 
         if (FontUtilities.isWindows) {
             defaultCodePage =
-                (String)java.security.AccessController.doPrivileged(
-                   new sun.security.action.GetPropertyAction("file.encoding"));
+                (String)j86.java.security.AccessController.doPrivileged(
+                   new j86.sun.security.action.GetPropertyAction("file.encoding"));
         } else {
             if (languages.length != codePages.length) {
                 throw new InternalError("wrong code pages array length");
             }
-            Locale locale = sun.awt.SunToolkit.getStartupLocale();
+            Locale locale = j86.sun.awt.SunToolkit.getStartupLocale();
 
             String language = locale.getLanguage();
             if (language != null) {
@@ -1127,7 +1127,7 @@ public class TrueTypeFont extends FileFont {
              */
             int stringPtr = sbuffer.get() & 0xffff;
 
-            nameLocale = sun.awt.SunToolkit.getStartupLocale();
+            nameLocale = j86.sun.awt.SunToolkit.getStartupLocale();
             short nameLocaleID = getLCIDFromLocale(nameLocale);
 
             for (int i=0; i<numRecords; i++) {
@@ -1312,7 +1312,7 @@ public class TrueTypeFont extends FileFont {
         Map<String, Short> map = new HashMap<String, Short>(200);
 
         // the following statements are derived from the langIDMap
-        // in src/windows/native/java/lang/java_props_md.c using the following
+        // in src/windows/native/j86.java.lang/java_props_md.c using the following
         // awk script:
         //    $1~/\/\*/   { next}
         //    $3~/\?\?/   { next }

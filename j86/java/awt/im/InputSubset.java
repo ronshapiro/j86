@@ -23,13 +23,13 @@
  * questions.
  */
 
-package java.awt.im;
+package j86.j86.java.awt.im;
 
 
 /**
  * Defines additional Unicode subsets for use by input methods.  Unlike the
  * UnicodeBlock subsets defined in the <code>{@link
- * java.lang.Character.UnicodeBlock}</code> class, these constants do not
+ * j86.java.lang.Character.UnicodeBlock}</code> class, these constants do not
  * directly correspond to Unicode code blocks.
  *
  * @since   1.2

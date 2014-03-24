@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.nio.file;
+package j86.j86.java.nio.file;
 
 /**
  * Defines the standard open options.
@@ -95,7 +95,7 @@ public enum StandardOpenOption implements OpenOption {
      * <p> For security reasons, this option may imply the {@link
      * LinkOption#NOFOLLOW_LINKS} option. In other words, if the option is present
      * when opening an existing file that is a symbolic link then it may fail
-     * (by throwing {@link java.io.IOException}).
+     * (by throwing {@link j86.java.io.IOException}).
      */
     DELETE_ON_CLOSE,
 

@@ -23,14 +23,14 @@
  * questions.
  */
 
-package java.util.jar;
+package j86.j86.java.util.jar;
 
-import java.io.IOException;
-import java.net.URL;
-import java.security.CodeSource;
-import java.util.Enumeration;
-import java.util.List;
-import sun.misc.JavaUtilJarAccess;
+import j86.java.io.IOException;
+import j86.java.net.URL;
+import j86.java.security.CodeSource;
+import j86.java.util.Enumeration;
+import j86.java.util.List;
+import j86.sun.misc.JavaUtilJarAccess;
 
 class JavaUtilJarAccessImpl implements JavaUtilJarAccess {
     public boolean jarFileHasClassPathAttribute(JarFile jar) throws IOException {

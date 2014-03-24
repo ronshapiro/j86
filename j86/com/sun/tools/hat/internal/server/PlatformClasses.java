@@ -30,22 +30,22 @@
  * at JavaSoft/Sun.
  */
 
-package com.sun.tools.hat.internal.server;
+package j86.j86.com.sun.tools.hat.internal.server;
 
-import com.sun.tools.hat.internal.model.JavaClass;
-import com.sun.tools.hat.internal.model.Snapshot;
+import j86.j86.com.sun.tools.hat.internal.model.JavaClass;
+import j86.j86.com.sun.tools.hat.internal.model.Snapshot;
 
-import java.util.LinkedList;
-import java.io.InputStream;
-import java.io.Reader;
-import java.io.InputStreamReader;
-import java.io.BufferedReader;
-import java.io.IOException;
+import j86.java.util.LinkedList;
+import j86.java.io.InputStream;
+import j86.java.io.Reader;
+import j86.java.io.InputStreamReader;
+import j86.java.io.BufferedReader;
+import j86.java.io.IOException;
 
 /**
  * This class is a helper that determines if a class is a "platform"
  * class or not.  It's a platform class if its name starts with one of
- * the prefixes to be found in /com/sun/tools/hat/resources/platform_names.txt.
+ * the prefixes to be found in /j86.com.sun.tools.hat/resources/platform_names.txt.
  *
  * @author      Bill Foote
  */
@@ -60,7 +60,7 @@ public class PlatformClasses  {
             LinkedList<String> list = new LinkedList<String>();
             InputStream str
                 = PlatformClasses.class
-                    .getResourceAsStream("/com/sun/tools/hat/resources/platform_names.txt");
+                    .getResourceAsStream("/j86.com.sun.tools.hat/resources/platform_names.txt");
             if (str != null) {
                 try {
                     BufferedReader rdr

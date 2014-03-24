@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.audio;
+package j86.sun.audio;
 
 /**
  * Create a continuous audio stream. This wraps a stream

@@ -33,9 +33,9 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package java.util.concurrent;
-import java.util.List;
-import java.util.Collection;
+package j86.j86.java.util.concurrent;
+import j86.java.util.List;
+import j86.java.util.Collection;
 
 /**
  * An {@link Executor} that provides methods to manage termination and
@@ -149,7 +149,7 @@ public interface ExecutorService extends Executor {
      *         shutting down this ExecutorService may manipulate
      *         threads that the caller is not permitted to modify
      *         because it does not hold {@link
-     *         java.lang.RuntimePermission}{@code ("modifyThread")},
+     *         j86.java.lang.RuntimePermission}{@code ("modifyThread")},
      *         or the security manager's {@code checkAccess} method
      *         denies access.
      */
@@ -174,7 +174,7 @@ public interface ExecutorService extends Executor {
      *         shutting down this ExecutorService may manipulate
      *         threads that the caller is not permitted to modify
      *         because it does not hold {@link
-     *         java.lang.RuntimePermission}{@code ("modifyThread")},
+     *         j86.java.lang.RuntimePermission}{@code ("modifyThread")},
      *         or the security manager's {@code checkAccess} method
      *         denies access.
      */
@@ -223,7 +223,7 @@ public interface ExecutorService extends Executor {
      *
      * <p>Note: The {@link Executors} class includes a set of methods
      * that can convert some other common closure-like objects,
-     * for example, {@link java.security.PrivilegedAction} to
+     * for example, {@link j86.java.security.PrivilegedAction} to
      * {@link Callable} form so they can be submitted.
      *
      * @param task the task to submit

@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.io;
+package j86.java.io;
 
-import java.io.*;
+import j86.java.io.*;
 
 /**
  * A piped output stream can be connected to a piped input stream
@@ -40,7 +40,7 @@ import java.io.*;
  * stream is no longer alive.
  *
  * @author  James Gosling
- * @see     java.io.PipedInputStream
+ * @see     j86.java.io.PipedInputStream
  * @since   JDK1.0
  */
 public
@@ -69,8 +69,8 @@ class PipedOutputStream extends OutputStream {
      * piped input stream. It must be connected to a piped input stream,
      * either by the receiver or the sender, before being used.
      *
-     * @see     java.io.PipedInputStream#connect(java.io.PipedOutputStream)
-     * @see     java.io.PipedOutputStream#connect(java.io.PipedInputStream)
+     * @see     j86.java.io.PipedInputStream#connect(java.io.PipedOutputStream)
+     * @see     j86.java.io.PipedOutputStream#connect(java.io.PipedInputStream)
      */
     public PipedOutputStream() {
     }
@@ -112,7 +112,7 @@ class PipedOutputStream extends OutputStream {
      *
      * @param      b   the <code>byte</code> to be written.
      * @exception IOException if the pipe is <a href=#BROKEN> broken</a>,
-     *          {@link #connect(java.io.PipedInputStream) unconnected},
+     *          {@link #connect(j86.java.io.PipedInputStream) unconnected},
      *          closed, or if an I/O error occurs.
      */
     public void write(int b)  throws IOException {
@@ -132,7 +132,7 @@ class PipedOutputStream extends OutputStream {
      * @param      off   the start offset in the data.
      * @param      len   the number of bytes to write.
      * @exception IOException if the pipe is <a href=#BROKEN> broken</a>,
-     *          {@link #connect(java.io.PipedInputStream) unconnected},
+     *          {@link #connect(j86.java.io.PipedInputStream) unconnected},
      *          closed, or if an I/O error occurs.
      */
     public void write(byte b[], int off, int len) throws IOException {

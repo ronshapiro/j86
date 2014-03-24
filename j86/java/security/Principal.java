@@ -23,16 +23,16 @@
  * questions.
  */
 
-package java.security;
+package j86.java.security;
 
-import javax.security.auth.Subject;
+import j86.javax.security.auth.Subject;
 
 /**
  * This interface represents the abstract notion of a principal, which
  * can be used to represent any entity, such as an individual, a
  * corporation, and a login id.
  *
- * @see java.security.cert.X509Certificate
+ * @see j86.j86.java.security.cert.X509Certificate
  *
  * @author Li Gong
  */

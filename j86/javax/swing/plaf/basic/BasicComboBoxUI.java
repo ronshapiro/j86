@@ -23,20 +23,20 @@
  * questions.
  */
 
-package javax.swing.plaf.basic;
+package j86.j86.j86.javax.swing.plaf.basic;
 
-import java.awt.*;
-import java.awt.event.*;
-import javax.swing.*;
-import javax.accessibility.*;
-import javax.swing.plaf.*;
-import javax.swing.text.*;
-import javax.swing.event.*;
-import java.beans.PropertyChangeListener;
-import java.beans.PropertyChangeEvent;
-import sun.awt.AppContext;
-import sun.swing.DefaultLookup;
-import sun.swing.UIAction;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.javax.swing.*;
+import j86.javax.accessibility.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.javax.swing.text.*;
+import j86.j86.javax.swing.event.*;
+import j86.java.beans.PropertyChangeListener;
+import j86.java.beans.PropertyChangeEvent;
+import j86.sun.awt.AppContext;
+import j86.sun.swing.DefaultLookup;
+import j86.sun.swing.UIAction;
 
 /**
  * Basic UI implementation for JComboBox.
@@ -506,7 +506,7 @@ public class BasicComboBoxUI extends ComboBoxUI {
      * explicitly set with <code>setRenderer</code>.
      *
      * @return a <code>ListCellRender</code> used for the combo box
-     * @see javax.swing.JComboBox#setRenderer
+     * @see j86.javax.swing.JComboBox#setRenderer
      */
     protected ListCellRenderer createRenderer() {
         return new BasicComboBoxRenderer.UIResource();
@@ -518,7 +518,7 @@ public class BasicComboBoxUI extends ComboBoxUI {
      * explicitly set with <code>setEditor</code>.
      *
      * @return a <code>ComboBoxEditor</code> used for the combo box
-     * @see javax.swing.JComboBox#setEditor
+     * @see j86.javax.swing.JComboBox#setEditor
      */
     protected ComboBoxEditor createEditor() {
         return new BasicComboBoxEditor.UIResource();
@@ -726,8 +726,8 @@ public class BasicComboBoxUI extends ComboBoxUI {
      * custom <code>ComboBoxEditor</code>
      *
      * @see #createEditor
-     * @see javax.swing.JComboBox#setEditor
-     * @see javax.swing.ComboBoxEditor
+     * @see j86.javax.swing.JComboBox#setEditor
+     * @see j86.javax.swing.ComboBoxEditor
      */
     public void addEditor() {
         removeEditor();
@@ -943,7 +943,7 @@ public class BasicComboBoxUI extends ComboBoxUI {
      *
      * @throws NullPointerException {@inheritDoc}
      * @throws IllegalArgumentException {@inheritDoc}
-     * @see javax.swing.JComponent#getBaseline(int, int)
+     * @see j86.javax.swing.JComponent#getBaseline(int, int)
      * @since 1.6
      */
     @Override
@@ -1000,7 +1000,7 @@ public class BasicComboBoxUI extends ComboBoxUI {
      * changes as the size changes.
      *
      * @throws NullPointerException {@inheritDoc}
-     * @see javax.swing.JComponent#getBaseline(int, int)
+     * @see j86.javax.swing.JComponent#getBaseline(int, int)
      * @since 1.6
      */
     @Override
@@ -1314,7 +1314,7 @@ public class BasicComboBoxUI extends ComboBoxUI {
      * size calculation.
      *
      * @return the size of the display area calculated from the combo box items
-     * @see javax.swing.JComboBox#setPrototypeDisplayValue
+     * @see j86.javax.swing.JComboBox#setPrototypeDisplayValue
      */
     protected Dimension getDisplaySize() {
         if (!isDisplaySizeDirty)  {

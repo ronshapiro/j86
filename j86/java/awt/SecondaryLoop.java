@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.awt;
+package j86.java.awt;
 
 /**
  * A helper interface to run the nested event loop.

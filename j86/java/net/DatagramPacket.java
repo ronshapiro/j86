@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.net;
+package j86.java.net;
 
 /**
  * This class represents a datagram packet.
@@ -46,8 +46,8 @@ class DatagramPacket {
      * Perform class initialization
      */
     static {
-        java.security.AccessController.doPrivileged(
-            new java.security.PrivilegedAction<Void>() {
+        j86.java.security.AccessController.doPrivileged(
+            new j86.java.security.PrivilegedAction<Void>() {
                 public Void run() {
                     System.loadLibrary("net");
                     return null;
@@ -112,7 +112,7 @@ class DatagramPacket {
      * @param   length   the packet data length.
      * @param   address  the destination address.
      * @param   port     the destination port number.
-     * @see java.net.InetAddress
+     * @see j86.java.net.InetAddress
      *
      * @since 1.2
      */
@@ -135,7 +135,7 @@ class DatagramPacket {
      * @param   length   the packet data length.
      * @param   address  the destination socket address.
      * @throws  IllegalArgumentException if address type is not supported
-     * @see java.net.InetAddress
+     * @see j86.java.net.InetAddress
      *
      * @since 1.4
      */
@@ -154,7 +154,7 @@ class DatagramPacket {
      * @param   length   the packet length.
      * @param   address  the destination address.
      * @param   port     the destination port number.
-     * @see     java.net.InetAddress
+     * @see     j86.java.net.InetAddress
      */
     public DatagramPacket(byte buf[], int length,
                           InetAddress address, int port) {
@@ -172,7 +172,7 @@ class DatagramPacket {
      * @param   address  the destination address.
      * @throws  IllegalArgumentException if address type is not supported
      * @since 1.4
-     * @see     java.net.InetAddress
+     * @see     j86.java.net.InetAddress
      */
     public DatagramPacket(byte buf[], int length, SocketAddress address) {
         this(buf, 0, length, address);
@@ -184,8 +184,8 @@ class DatagramPacket {
      *
      * @return  the IP address of the machine to which this datagram is being
      *          sent or from which the datagram was received.
-     * @see     java.net.InetAddress
-     * @see #setAddress(java.net.InetAddress)
+     * @see     j86.java.net.InetAddress
+     * @see #setAddress(j86.java.net.InetAddress)
      */
     public synchronized InetAddress getAddress() {
         return address;

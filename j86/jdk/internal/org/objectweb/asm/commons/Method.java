@@ -56,12 +56,12 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-package jdk.internal.org.objectweb.asm.commons;
+package j86.j86.jdk.internal.org.objectweb.asm.commons;
 
-import java.util.HashMap;
-import java.util.Map;
+import j86.java.util.HashMap;
+import j86.java.util.Map;
 
-import jdk.internal.org.objectweb.asm.Type;
+import j86.jdk.internal.org.objectweb.asm.Type;
 
 /**
  * A named method descriptor.
@@ -132,11 +132,11 @@ public class Method {
      * Creates a new {@link Method}.
      *
      * @param m
-     *            a java.lang.reflect method descriptor
+     *            a j86.j86.j86.java.lang.reflect method descriptor
      * @return a {@link Method} corresponding to the given Java method
      *         declaration.
      */
-    public static Method getMethod(java.lang.reflect.Method m) {
+    public static Method getMethod(j86.j86.j86.java.lang.reflect.Method m) {
         return new Method(m.getName(), Type.getMethodDescriptor(m));
     }
 
@@ -144,11 +144,11 @@ public class Method {
      * Creates a new {@link Method}.
      *
      * @param c
-     *            a java.lang.reflect constructor descriptor
+     *            a j86.j86.j86.java.lang.reflect constructor descriptor
      * @return a {@link Method} corresponding to the given Java constructor
      *         declaration.
      */
-    public static Method getMethod(java.lang.reflect.Constructor<?> c) {
+    public static Method getMethod(j86.j86.j86.java.lang.reflect.Constructor<?> c) {
         return new Method("<init>", Type.getConstructorDescriptor(c));
     }
 
@@ -160,7 +160,7 @@ public class Method {
      *            a Java method declaration, without argument names, of the form
      *            "returnType name (argumentType1, ... argumentTypeN)", where
      *            the types are in plain Java (e.g. "int", "float",
-     *            "java.util.List", ...). Classes of the java.lang package can
+     *            "j86.java.util.List", ...). Classes of the j86.java.lang package can
      *            be specified by their unqualified name; all other classes
      *            names must be fully qualified.
      * @return a {@link Method} corresponding to the given Java method
@@ -181,15 +181,15 @@ public class Method {
      *            a Java method declaration, without argument names, of the form
      *            "returnType name (argumentType1, ... argumentTypeN)", where
      *            the types are in plain Java (e.g. "int", "float",
-     *            "java.util.List", ...). Classes of the java.lang package may
+     *            "j86.java.util.List", ...). Classes of the j86.java.lang package may
      *            be specified by their unqualified name, depending on the
      *            defaultPackage argument; all other classes names must be fully
      *            qualified.
      * @param defaultPackage
      *            true if unqualified class names belong to the default package,
-     *            or false if they correspond to java.lang classes. For instance
+     *            or false if they correspond to j86.java.lang classes. For instance
      *            "Object" means "Object" if this option is true, or
-     *            "java.lang.Object" otherwise.
+     *            "j86.java.lang.Object" otherwise.
      * @return a {@link Method} corresponding to the given Java method
      *         declaration.
      * @throws IllegalArgumentException
@@ -243,7 +243,7 @@ public class Method {
             sb.append('L');
             if (t.indexOf('.') < 0) {
                 if (!defaultPackage) {
-                    sb.append("java/lang/");
+                    sb.append("j86.java.lang/");
                 }
                 sb.append(t);
             } else {

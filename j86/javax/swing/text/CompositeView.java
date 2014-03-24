@@ -22,12 +22,12 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text;
+package j86.j86.javax.swing.text;
 
-import java.util.Vector;
-import java.awt.*;
-import javax.swing.event.*;
-import javax.swing.SwingConstants;
+import j86.java.util.Vector;
+import j86.java.awt.*;
+import j86.j86.javax.swing.event.*;
+import j86.javax.swing.SwingConstants;
 
 /**
  * <code>CompositeView</code> is an abstract <code>View</code>
@@ -51,7 +51,7 @@ import javax.swing.SwingConstants;
  * {@link #setInsets} or {@link #setParagraphInsets}.
  *
  * <p>In addition to the abstract methods of
- * {@link javax.swing.text.View},
+ * {@link j86.j86.javax.swing.text.View},
  * subclasses of <code>CompositeView</code> will need to
  * override:
  * <ul>

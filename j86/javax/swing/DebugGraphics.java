@@ -23,11 +23,11 @@
  * questions.
  */
 
-package javax.swing;
+package j86.javax.swing;
 
-import java.awt.*;
-import java.awt.image.*;
-import java.text.AttributedCharacterIterator;
+import j86.java.awt.*;
+import j86.j86.j86.java.awt.image.*;
+import j86.java.text.AttributedCharacterIterator;
 
 /**
  * Graphics subclass supporting graphics debugging. Overrides most methods
@@ -182,14 +182,14 @@ public class DebugGraphics extends Graphics {
 
     /** Sets the stream to which the DebugGraphics logs drawing operations.
       */
-    public static void setLogStream(java.io.PrintStream stream) {
+    public static void setLogStream(j86.java.io.PrintStream stream) {
         info().stream = stream;
     }
 
     /** Returns the stream to which the DebugGraphics logs drawing operations.
       * @see #setLogStream
       */
-    public static java.io.PrintStream logStream() {
+    public static j86.java.io.PrintStream logStream() {
         return info().stream;
     }
 

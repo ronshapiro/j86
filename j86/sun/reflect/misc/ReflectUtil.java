@@ -24,15 +24,15 @@
  */
 
 
-package sun.reflect.misc;
+package j86.j86.sun.reflect.misc;
 
-import java.lang.reflect.Member;
-import java.lang.reflect.Method;
-import java.lang.reflect.Modifier;
-import java.lang.reflect.Proxy;
-import java.util.Arrays;
-import sun.reflect.Reflection;
-import sun.security.util.SecurityConstants;
+import j86.j86.j86.java.lang.reflect.Member;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.j86.j86.java.lang.reflect.Modifier;
+import j86.j86.j86.java.lang.reflect.Proxy;
+import j86.java.util.Arrays;
+import j86.sun.reflect.Reflection;
+import j86.sun.security.util.SecurityConstants;
 
 public final class ReflectUtil {
 
@@ -156,7 +156,7 @@ public final class ReflectUtil {
     /**
      * Checks package access on the given class.
      *
-     * If it is a {@link Proxy#isProxyClass(java.lang.Class)} that implements
+     * If it is a {@link Proxy#isProxyClass(j86.java.lang.Class)} that implements
      * a non-public interface (i.e. may be in a non-restricted package),
      * also check the package access on the proxy interfaces.
      */
@@ -337,7 +337,7 @@ public final class ReflectUtil {
 
     /**
      * Checks if {@code Class cls} is a VM-anonymous class
-     * as defined by {@link sun.misc.Unsafe#defineAnonymousClass}
+     * as defined by {@link j86.sun.misc.Unsafe#defineAnonymousClass}
      * (not to be confused with a Java Language anonymous inner class).
      */
     public static boolean isVMAnonymousClass(Class<?> cls) {

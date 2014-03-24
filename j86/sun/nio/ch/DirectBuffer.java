@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.nio.ch;
+package j86.j86.j86.sun.nio.ch;
 
-import sun.misc.Cleaner;
+import j86.sun.misc.Cleaner;
 
 
 public interface DirectBuffer {

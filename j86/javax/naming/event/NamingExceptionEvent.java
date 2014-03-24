@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.naming.event;
+package j86.j86.javax.naming.event;
 
-import javax.naming.NamingException;
+import j86.javax.naming.NamingException;
 
 /**
   * This class represents an event fired when the procedures/processes
@@ -42,7 +42,7 @@ import javax.naming.NamingException;
   * @since 1.3
   */
 
-public class NamingExceptionEvent extends java.util.EventObject {
+public class NamingExceptionEvent extends j86.java.util.EventObject {
     /**
      * Contains the exception that was thrown
      * @serial

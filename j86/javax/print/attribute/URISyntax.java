@@ -24,10 +24,10 @@
  */
 
 
-package javax.print.attribute;
+package j86.j86.javax.print.attribute;
 
-import java.io.Serializable;
-import java.net.URI;
+import j86.java.io.Serializable;
+import j86.java.net.URI;
 
 /**
  * Class URISyntax is an abstract base class providing the common

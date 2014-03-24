@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.misc;
+package j86.sun.misc;
 
-import java.io.*;
-import java.util.*;
-import java.util.jar.*;
-import java.util.zip.*;
+import j86.java.io.*;
+import j86.java.util.*;
+import j86.j86.java.util.jar.*;
+import j86.j86.java.util.zip.*;
 
 /**
  * This class is used to maintain mappings from packages, classes
@@ -67,12 +67,12 @@ public class JarIndex {
     public static final String INDEX_NAME = "META-INF/INDEX.LIST";
 
     /**
-     * true if, and only if, sun.misc.JarIndex.metaInfFilenames is set to true.
+     * true if, and only if, j86.sun.misc.JarIndex.metaInfFilenames is set to true.
      * If true, the names of the files in META-INF, and its subdirectories, will
      * be added to the index. Otherwise, just the directory names are added.
      */
     private static final boolean metaInfFilenames =
-        "true".equals(System.getProperty("sun.misc.JarIndex.metaInfFilenames"));
+        "true".equals(System.getProperty("j86.sun.misc.JarIndex.metaInfFilenames"));
 
     /**
      * Constructs a new, empty jar index.

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package com.sun.jdi;
+package j86.com.sun.jdi;
 
 /**
  * The <code>JDIPermission</code> class represents access rights to
@@ -69,17 +69,17 @@ package com.sun.jdi;
  * @author  Tim Bell
  * @since   1.5
  *
- * @see com.sun.jdi.Bootstrap
- * @see java.security.BasicPermission
- * @see java.security.Permission
- * @see java.security.Permissions
- * @see java.security.PermissionCollection
- * @see java.lang.SecurityManager
+ * @see j86.com.sun.jdi.Bootstrap
+ * @see j86.java.security.BasicPermission
+ * @see j86.java.security.Permission
+ * @see j86.java.security.Permissions
+ * @see j86.java.security.PermissionCollection
+ * @see j86.java.lang.SecurityManager
  *
  */
 
 @jdk.Exported
-public final class JDIPermission extends java.security.BasicPermission {
+public final class JDIPermission extends j86.java.security.BasicPermission {
     private static final long serialVersionUID = -6988461416938786271L;
     /**
      * The <code>JDIPermission</code> class represents access rights to the

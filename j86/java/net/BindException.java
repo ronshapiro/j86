@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.net;
+package j86.java.net;
 
 /**
  * Signals that an error occurred while attempting to bind a

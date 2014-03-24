@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.tools.java;
+package j86.sun.tools.java;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.BufferedReader;
-import java.io.FilterReader;
-import java.io.UnsupportedEncodingException;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.io.InputStreamReader;
+import j86.java.io.BufferedReader;
+import j86.java.io.FilterReader;
+import j86.java.io.UnsupportedEncodingException;
 
 /**
  * An input stream for java programs. The stream treats either "\n", "\r"
@@ -150,7 +150,7 @@ class ScannerInputReader extends FilterReader implements Constants {
                 }
                 c = buffer[currentIndex++];
 
-            } catch (java.io.CharConversionException e) {
+            } catch (j86.java.io.CharConversionException e) {
                 env.error(pos, "invalid.encoding.char");
                 // this is fatal error
                 return -1;

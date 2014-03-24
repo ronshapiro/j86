@@ -23,42 +23,42 @@
  * questions.
  */
 
-package javax.swing;
+package j86.javax.swing;
 
-import java.util.*;
+import j86.java.util.*;
 
-import java.applet.Applet;
-import java.awt.*;
-import java.awt.event.*;
-import java.awt.print.*;
+import j86.java.applet.Applet;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.j86.java.awt.print.*;
 
-import java.beans.*;
+import j86.java.beans.*;
 
-import java.io.Serializable;
-import java.io.ObjectOutputStream;
-import java.io.ObjectInputStream;
-import java.io.IOException;
+import j86.java.io.Serializable;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.IOException;
 
-import javax.accessibility.*;
+import j86.javax.accessibility.*;
 
-import javax.swing.event.*;
-import javax.swing.plaf.*;
-import javax.swing.table.*;
-import javax.swing.border.*;
+import j86.j86.javax.swing.event.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.javax.swing.table.*;
+import j86.j86.javax.swing.border.*;
 
-import java.text.NumberFormat;
-import java.text.DateFormat;
-import java.text.MessageFormat;
+import j86.java.text.NumberFormat;
+import j86.java.text.DateFormat;
+import j86.java.text.MessageFormat;
 
-import javax.print.attribute.*;
-import javax.print.PrintService;
-import sun.reflect.misc.ReflectUtil;
+import j86.j86.javax.print.attribute.*;
+import j86.javax.print.PrintService;
+import j86.j86.sun.reflect.misc.ReflectUtil;
 
-import sun.swing.SwingUtilities2;
-import sun.swing.SwingUtilities2.Section;
-import static sun.swing.SwingUtilities2.Section.*;
-import sun.swing.PrintingStatus;
-import sun.swing.SwingLazyValue;
+import j86.sun.swing.SwingUtilities2;
+import j86.sun.swing.SwingUtilities2.Section;
+import static j86.sun.swing.SwingUtilities2.Section.*;
+import j86.sun.swing.PrintingStatus;
+import j86.sun.swing.SwingLazyValue;
 
 /**
  * The <code>JTable</code> is used to display and edit regular two-dimensional tables
@@ -202,8 +202,8 @@ import sun.swing.SwingLazyValue;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  *
  * @beaninfo
@@ -212,8 +212,8 @@ import sun.swing.SwingLazyValue;
  *
  * @author Philip Milne
  * @author Shannon Hickey (printing support)
- * @see javax.swing.table.DefaultTableModel
- * @see javax.swing.table.TableRowSorter
+ * @see j86.j86.javax.swing.table.DefaultTableModel
+ * @see j86.j86.javax.swing.table.TableRowSorter
  */
 /* The first versions of the JTable, contained in Swing-0.1 through
  * Swing-0.4, were written by Alan Chung.
@@ -645,7 +645,7 @@ public class JTable extends JComponent implements TableModelListener, Scrollable
      *
      * @param numRows           the number of rows the table holds
      * @param numColumns        the number of columns the table holds
-     * @see javax.swing.table.DefaultTableModel
+     * @see j86.j86.javax.swing.table.DefaultTableModel
      */
     public JTable(int numRows, int numColumns) {
         this(new DefaultTableModel(numRows, numColumns));
@@ -1422,7 +1422,7 @@ public class JTable extends JComponent implements TableModelListener, Scrollable
      *            <code>b</code> is <code>true</code> and
      *            <code>GraphicsEnvironment.isHeadless()</code>
      *            returns <code>true</code>
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      * @see #getDragEnabled
      * @see #setTransferHandler
      * @see TransferHandler
@@ -1830,7 +1830,7 @@ public class JTable extends JComponent implements TableModelListener, Scrollable
      *
      * @param autoCreateRowSorter whether or not a {@code RowSorter}
      *        should be automatically created
-     * @see javax.swing.table.TableRowSorter
+     * @see j86.j86.javax.swing.table.TableRowSorter
      * @beaninfo
      *        bound: true
      *    preferred: true
@@ -1906,7 +1906,7 @@ public class JTable extends JComponent implements TableModelListener, Scrollable
      *
      * @param sorter the <code>RowSorter</code>; <code>null</code> turns
      *        sorting off
-     * @see javax.swing.table.TableRowSorter
+     * @see j86.j86.javax.swing.table.TableRowSorter
      * @beaninfo
      *        bound: true
      *  description: The table's RowSorter
@@ -2613,7 +2613,7 @@ public class JTable extends JComponent implements TableModelListener, Scrollable
      *         the row isn't visible
      * @throws IndexOutOfBoundsException if sorting is enabled and passed an
      *         index outside the number of rows of the <code>TableModel</code>
-     * @see javax.swing.table.TableRowSorter
+     * @see j86.j86.javax.swing.table.TableRowSorter
      * @since 1.6
      */
     public int convertRowIndexToView(int modelRowIndex) {
@@ -2634,7 +2634,7 @@ public class JTable extends JComponent implements TableModelListener, Scrollable
      * @throws IndexOutOfBoundsException if sorting is enabled and passed an
      *         index outside the range of the <code>JTable</code> as
      *         determined by the method <code>getRowCount</code>
-     * @see javax.swing.table.TableRowSorter
+     * @see j86.j86.javax.swing.table.TableRowSorter
      * @see #getRowCount
      * @since 1.6
      */
@@ -5318,31 +5318,31 @@ public class JTable extends JComponent implements TableModelListener, Scrollable
     /**
      * Creates default cell renderers for objects, numbers, doubles, dates,
      * booleans, and icons.
-     * @see javax.swing.table.DefaultTableCellRenderer
+     * @see j86.j86.javax.swing.table.DefaultTableCellRenderer
      *
      */
     protected void createDefaultRenderers() {
         defaultRenderersByColumnClass = new UIDefaults(8, 0.75f);
 
         // Objects
-        setLazyRenderer(Object.class, "javax.swing.table.DefaultTableCellRenderer$UIResource");
+        setLazyRenderer(Object.class, "j86.j86.javax.swing.table.DefaultTableCellRenderer$UIResource");
 
         // Numbers
-        setLazyRenderer(Number.class, "javax.swing.JTable$NumberRenderer");
+        setLazyRenderer(Number.class, "j86.javax.swing.JTable$NumberRenderer");
 
         // Doubles and Floats
-        setLazyRenderer(Float.class, "javax.swing.JTable$DoubleRenderer");
-        setLazyRenderer(Double.class, "javax.swing.JTable$DoubleRenderer");
+        setLazyRenderer(Float.class, "j86.javax.swing.JTable$DoubleRenderer");
+        setLazyRenderer(Double.class, "j86.javax.swing.JTable$DoubleRenderer");
 
         // Dates
-        setLazyRenderer(Date.class, "javax.swing.JTable$DateRenderer");
+        setLazyRenderer(Date.class, "j86.javax.swing.JTable$DateRenderer");
 
         // Icons and ImageIcons
-        setLazyRenderer(Icon.class, "javax.swing.JTable$IconRenderer");
-        setLazyRenderer(ImageIcon.class, "javax.swing.JTable$IconRenderer");
+        setLazyRenderer(Icon.class, "j86.javax.swing.JTable$IconRenderer");
+        setLazyRenderer(ImageIcon.class, "j86.javax.swing.JTable$IconRenderer");
 
         // Booleans
-        setLazyRenderer(Boolean.class, "javax.swing.JTable$BooleanRenderer");
+        setLazyRenderer(Boolean.class, "j86.javax.swing.JTable$BooleanRenderer");
     }
 
     /**
@@ -5432,13 +5432,13 @@ public class JTable extends JComponent implements TableModelListener, Scrollable
         defaultEditorsByColumnClass = new UIDefaults(3, 0.75f);
 
         // Objects
-        setLazyEditor(Object.class, "javax.swing.JTable$GenericEditor");
+        setLazyEditor(Object.class, "j86.javax.swing.JTable$GenericEditor");
 
         // Numbers
-        setLazyEditor(Number.class, "javax.swing.JTable$NumberEditor");
+        setLazyEditor(Number.class, "j86.javax.swing.JTable$NumberEditor");
 
         // Booleans
-        setLazyEditor(Boolean.class, "javax.swing.JTable$BooleanEditor");
+        setLazyEditor(Boolean.class, "j86.javax.swing.JTable$BooleanEditor");
     }
 
     /**
@@ -5447,7 +5447,7 @@ public class JTable extends JComponent implements TableModelListener, Scrollable
     static class GenericEditor extends DefaultCellEditor {
 
         Class[] argTypes = new Class[]{String.class};
-        java.lang.reflect.Constructor constructor;
+        j86.j86.j86.java.lang.reflect.Constructor constructor;
         Object value;
 
         public GenericEditor() {
@@ -5561,7 +5561,7 @@ public class JTable extends JComponent implements TableModelListener, Scrollable
      * method to return a different table model object.
      *
      * @return the default table model object
-     * @see javax.swing.table.DefaultTableModel
+     * @see j86.j86.javax.swing.table.DefaultTableModel
      */
     protected TableModel createDefaultDataModel() {
         return new DefaultTableModel();
@@ -5573,7 +5573,7 @@ public class JTable extends JComponent implements TableModelListener, Scrollable
      * method to return a different column model object.
      *
      * @return the default column model object
-     * @see javax.swing.table.DefaultTableColumnModel
+     * @see j86.j86.javax.swing.table.DefaultTableColumnModel
      */
     protected TableColumnModel createDefaultColumnModel() {
         return new DefaultTableColumnModel();
@@ -5585,7 +5585,7 @@ public class JTable extends JComponent implements TableModelListener, Scrollable
      * method to return a different selection model object.
      *
      * @return the default selection model object
-     * @see javax.swing.DefaultListSelectionModel
+     * @see j86.javax.swing.DefaultListSelectionModel
      */
     protected ListSelectionModel createDefaultSelectionModel() {
         return new DefaultListSelectionModel();
@@ -5597,7 +5597,7 @@ public class JTable extends JComponent implements TableModelListener, Scrollable
      * method to return a different table header object.
      *
      * @return the default table header object
-     * @see javax.swing.table.JTableHeader
+     * @see j86.j86.javax.swing.table.JTableHeader
      */
     protected JTableHeader createDefaultTableHeader() {
         return new JTableHeader(columnModel);
@@ -5677,8 +5677,8 @@ public class JTable extends JComponent implements TableModelListener, Scrollable
      * @return the assigned renderer; if <code>null</code>
      *                  returns the default renderer
      *                  for this type of object
-     * @see javax.swing.table.DefaultTableCellRenderer
-     * @see javax.swing.table.TableColumn#setCellRenderer
+     * @see j86.j86.javax.swing.table.DefaultTableCellRenderer
+     * @see j86.j86.javax.swing.table.TableColumn#setCellRenderer
      * @see #setDefaultRenderer
      */
     public TableCellRenderer getCellRenderer(int row, int column) {
@@ -5702,7 +5702,7 @@ public class JTable extends JComponent implements TableModelListener, Scrollable
      * them from appearing in the printed output. To do other
      * customizations based on whether or not the table is being
      * printed, you can check the value of
-     * {@link javax.swing.JComponent#isPaintingForPrint()}, either here
+     * {@link j86.javax.swing.JComponent#isPaintingForPrint()}, either here
      * or within custom renderers.
      * <p>
      * <b>Note:</b>
@@ -6164,7 +6164,7 @@ public class JTable extends JComponent implements TableModelListener, Scrollable
      * during printing such that selection and focus are not indicated.
      * As far as customizing further how the table looks in the printout,
      * developers can provide custom renderers or paint code that conditionalize
-     * on the value of {@link javax.swing.JComponent#isPaintingForPrint()}.
+     * on the value of {@link j86.javax.swing.JComponent#isPaintingForPrint()}.
      * <p>
      * See {@link #getPrintable} for more description on how the table is
      * printed.
@@ -6189,12 +6189,12 @@ public class JTable extends JComponent implements TableModelListener, Scrollable
      *                           <code>GraphicsEnvironment.isHeadless</code>
      *                           returns <code>true</code>
      * @throws  SecurityException if a security manager exists and its
-     *          {@link java.lang.SecurityManager#checkPrintJobAccess}
+     *          {@link j86.java.lang.SecurityManager#checkPrintJobAccess}
      *          method disallows this thread from creating a print job request
      * @throws PrinterException if an error in the print system causes the job
      *                          to be aborted
      * @see #getPrintable
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      *
      * @since 1.6
      */
@@ -6414,7 +6414,7 @@ public class JTable extends JComponent implements TableModelListener, Scrollable
      * <code>JTable</code> itself will take care of hiding the selection
      * and focus during printing. For additional customizations, your
      * renderers or painting code can customize the look based on the value
-     * of {@link javax.swing.JComponent#isPaintingForPrint()}
+     * of {@link j86.javax.swing.JComponent#isPaintingForPrint()}
      * <p>
      * Also, <i>before</i> calling this method you may wish to <i>first</i>
      * modify the state of the table, such as to cancel cell editing or
@@ -6580,8 +6580,8 @@ public class JTable extends JComponent implements TableModelListener, Scrollable
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     protected class AccessibleJTable extends AccessibleJComponent
     implements AccessibleSelection, ListSelectionListener, TableModelListener,

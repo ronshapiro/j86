@@ -23,21 +23,21 @@
  * questions.
  */
 
-package sun.tools.jconsole;
+package j86.sun.tools.jconsole;
 
-import java.awt.*;
-import java.io.*;
-import java.lang.management.*;
-import java.lang.reflect.*;
-import java.text.*;
-import java.util.*;
-import java.util.concurrent.*;
+import j86.java.awt.*;
+import j86.java.io.*;
+import j86.j86.java.lang.management.*;
+import j86.j86.j86.java.lang.reflect.*;
+import j86.java.text.*;
+import j86.java.util.*;
+import j86.j86.java.util.concurrent.*;
 
-import javax.swing.*;
+import j86.javax.swing.*;
 
 
-import static sun.tools.jconsole.Formatter.*;
-import static sun.tools.jconsole.Utilities.*;
+import static j86.sun.tools.jconsole.Formatter.*;
+import static j86.sun.tools.jconsole.Utilities.*;
 
 @SuppressWarnings("serial")
 class SummaryTab extends Tab {
@@ -129,7 +129,7 @@ class SummaryTab extends Tab {
             MemoryMXBean          memoryBean = proxyClient.getMemoryMXBean();
             ClassLoadingMXBean    clMBean    = proxyClient.getClassLoadingMXBean();
             OperatingSystemMXBean osMBean    = proxyClient.getOperatingSystemMXBean();
-            com.sun.management.OperatingSystemMXBean sunOSMBean  =
+            com.j86.sun.management.OperatingSystemMXBean sunOSMBean  =
                proxyClient.getSunOperatingSystemMXBean();
 
             append("<tr><td colspan=4>");
@@ -281,7 +281,7 @@ class SummaryTab extends Tab {
             {  // VM arguments and paths
                 append(newTable);
                 String args = "";
-                java.util.List<String> inputArguments = rmBean.getInputArguments();
+                j86.java.util.List<String> inputArguments = rmBean.getInputArguments();
                 for (String arg : inputArguments) {
                     args += arg + " ";
                 }

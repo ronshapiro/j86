@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.nio.fs;
+package j86.j86.sun.nio.fs;
 
-import java.util.Map;
-import java.io.IOException;
+import j86.java.util.Map;
+import j86.java.io.IOException;
 
 /**
  * Implemented by FileAttributeView implementations to support access to

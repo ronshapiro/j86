@@ -32,10 +32,10 @@
  */
 
 
-package com.sun.tools.example.debug.bdi;
+package j86.com.sun.tools.example.debug.bdi;
 
-import com.sun.jdi.*;
-import com.sun.jdi.request.EventRequest;
+import j86.com.sun.jdi.*;
+import j86.j86.com.sun.jdi.request.EventRequest;
 
 abstract public class EventRequestSpec {
 

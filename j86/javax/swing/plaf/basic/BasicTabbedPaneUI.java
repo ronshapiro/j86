@@ -23,24 +23,24 @@
  * questions.
  */
 
-package javax.swing.plaf.basic;
+package j86.j86.j86.javax.swing.plaf.basic;
 
-import sun.swing.SwingUtilities2;
+import j86.sun.swing.SwingUtilities2;
 
-import javax.swing.*;
-import javax.swing.event.*;
-import javax.swing.plaf.*;
-import javax.swing.text.View;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.event.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.javax.swing.text.View;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.beans.PropertyChangeListener;
-import java.beans.PropertyChangeEvent;
-import java.util.Vector;
-import java.util.Hashtable;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.java.beans.PropertyChangeListener;
+import j86.java.beans.PropertyChangeEvent;
+import j86.java.util.Vector;
+import j86.java.util.Hashtable;
 
-import sun.swing.DefaultLookup;
-import sun.swing.UIAction;
+import j86.sun.swing.DefaultLookup;
+import j86.sun.swing.UIAction;
 
 /**
  * A Basic L&amp;F implementation of TabbedPaneUI.
@@ -244,7 +244,7 @@ public class BasicTabbedPaneUI extends TabbedPaneUI implements SwingConstants {
      * @return a layout manager object
      *
      * @see TabbedPaneLayout
-     * @see javax.swing.JTabbedPane#getTabLayoutPolicy
+     * @see j86.javax.swing.JTabbedPane#getTabLayoutPolicy
      */
     protected LayoutManager createLayoutManager() {
         if (tabPane.getTabLayoutPolicy() == JTabbedPane.SCROLL_TAB_LAYOUT) {
@@ -307,8 +307,8 @@ public class BasicTabbedPaneUI extends TabbedPaneUI implements SwingConstants {
      * @param direction One of the SwingConstants constants:
      * SOUTH, NORTH, EAST or WEST
      * @return Widget for user to
-     * @see javax.swing.JTabbedPane#setTabPlacement
-     * @see javax.swing.SwingConstants
+     * @see j86.javax.swing.JTabbedPane#setTabPlacement
+     * @see j86.javax.swing.SwingConstants
      * @throws IllegalArgumentException if direction is not one of
      *         NORTH, SOUTH, EAST or WEST
      * @since 1.5
@@ -615,7 +615,7 @@ public class BasicTabbedPaneUI extends TabbedPaneUI implements SwingConstants {
      *
      * @throws NullPointerException {@inheritDoc}
      * @throws IllegalArgumentException {@inheritDoc}
-     * @see javax.swing.JComponent#getBaseline(int, int)
+     * @see j86.javax.swing.JComponent#getBaseline(int, int)
      * @since 1.6
      */
     public int getBaseline(JComponent c, int width, int height) {
@@ -647,7 +647,7 @@ public class BasicTabbedPaneUI extends TabbedPaneUI implements SwingConstants {
      * changes as the size changes.
      *
      * @throws NullPointerException {@inheritDoc}
-     * @see javax.swing.JComponent#getBaseline(int, int)
+     * @see j86.javax.swing.JComponent#getBaseline(int, int)
      * @since 1.6
      */
     public Component.BaselineResizeBehavior getBaselineResizeBehavior(

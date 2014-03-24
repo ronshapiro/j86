@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.awt;
+package j86.sun.awt;
 
-import java.awt.Color;
+import j86.java.awt.Color;
 
 
 public interface Graphics2Delegate {

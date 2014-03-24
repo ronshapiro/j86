@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.imageio.stream;
+package j86.j86.javax.imageio.stream;
 
 /**
  * A class representing a mutable reference to an array of bytes and

@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.nio.cs;
+package j86.j86.j86.sun.nio.cs;
 
-import java.nio.charset.Charset;
-import java.nio.charset.spi.CharsetProvider;
-import java.util.Iterator;
-import java.util.Map;
+import j86.j86.java.nio.charset.Charset;
+import j86.j86.j86.java.nio.charset.spi.CharsetProvider;
+import j86.java.util.Iterator;
+import j86.java.util.Map;
 
 
 /**

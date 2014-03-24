@@ -23,13 +23,13 @@
  * questions.
  */
 
-package sun.tools.jconsole;
+package j86.sun.tools.jconsole;
 
-import java.awt.event.*;
-import java.beans.*;
-import java.util.*;
+import j86.j86.java.awt.event.*;
+import j86.java.beans.*;
+import j86.java.util.*;
 
-import javax.swing.*;
+import j86.javax.swing.*;
 
 /**
  * A combo box to control the visible time range for one or more Plotter components.

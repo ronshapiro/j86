@@ -23,24 +23,24 @@
  * questions.
  */
 
-package java.awt.print;
+package j86.j86.java.awt.print;
 
-import java.awt.AWTError;
-import java.awt.HeadlessException;
-import java.util.Enumeration;
+import j86.java.awt.AWTError;
+import j86.java.awt.HeadlessException;
+import j86.java.util.Enumeration;
 
-import javax.print.DocFlavor;
-import javax.print.PrintService;
-import javax.print.PrintServiceLookup;
-import javax.print.StreamPrintServiceFactory;
-import javax.print.attribute.PrintRequestAttributeSet;
-import javax.print.attribute.standard.Media;
-import javax.print.attribute.standard.MediaPrintableArea;
-import javax.print.attribute.standard.MediaSize;
-import javax.print.attribute.standard.MediaSizeName;
-import javax.print.attribute.standard.OrientationRequested;
+import j86.javax.print.DocFlavor;
+import j86.javax.print.PrintService;
+import j86.javax.print.PrintServiceLookup;
+import j86.javax.print.StreamPrintServiceFactory;
+import j86.j86.javax.print.attribute.PrintRequestAttributeSet;
+import j86.j86.j86.javax.print.attribute.standard.Media;
+import j86.j86.j86.javax.print.attribute.standard.MediaPrintableArea;
+import j86.j86.j86.javax.print.attribute.standard.MediaSize;
+import j86.j86.j86.javax.print.attribute.standard.MediaSizeName;
+import j86.j86.j86.javax.print.attribute.standard.OrientationRequested;
 
-import sun.security.action.GetPropertyAction;
+import j86.sun.security.action.GetPropertyAction;
 
 /**
  * The <code>PrinterJob</code> class is the principal class that controls
@@ -66,7 +66,7 @@ public abstract class PrinterJob {
      * @return a new <code>PrinterJob</code>.
      *
      * @throws  SecurityException if a security manager exists and its
-     *          {@link java.lang.SecurityManager#checkPrintJobAccess}
+     *          {@link j86.java.lang.SecurityManager#checkPrintJobAccess}
      *          method disallows this thread from creating a print job request
      */
     public static PrinterJob getPrinterJob() {
@@ -74,10 +74,10 @@ public abstract class PrinterJob {
         if (security != null) {
             security.checkPrintJobAccess();
         }
-        return (PrinterJob) java.security.AccessController.doPrivileged(
-            new java.security.PrivilegedAction() {
+        return (PrinterJob) j86.java.security.AccessController.doPrivileged(
+            new j86.java.security.PrivilegedAction() {
             public Object run() {
-                String nm = System.getProperty("java.awt.printerjob", null);
+                String nm = System.getProperty("j86.j86.java.awt.printerjob", null);
                 try {
                     return (PrinterJob)Class.forName(nm).newInstance();
                 } catch (ClassNotFoundException e) {
@@ -96,7 +96,7 @@ public abstract class PrinterJob {
      * Services returned from this method may be installed on
      * <code>PrinterJob</code>s which support print services.
      * Calling this method is equivalent to calling
-     * {@link javax.print.PrintServiceLookup#lookupPrintServices(
+     * {@link j86.javax.print.PrintServiceLookup#lookupPrintServices(
      * DocFlavor, AttributeSet)
      * PrintServiceLookup.lookupPrintServices()}
      * and specifying a Pageable DocFlavor.
@@ -135,7 +135,7 @@ public abstract class PrinterJob {
      * Services returned from this method may be installed on
      * <code>PrinterJob</code> instances which support print services.
      * Calling this method is equivalent to calling
-     * {@link javax.print.StreamPrintServiceFactory#lookupStreamPrintServiceFactories(DocFlavor, String)
+     * {@link j86.javax.print.StreamPrintServiceFactory#lookupStreamPrintServiceFactories(DocFlavor, String)
      * StreamPrintServiceFactory.lookupStreamPrintServiceFactories()
      * } and specifying a Pageable DocFlavor.
      *
@@ -252,7 +252,7 @@ public abstract class PrinterJob {
      * <code>false</code> otherwise.
      * @exception HeadlessException if GraphicsEnvironment.isHeadless()
      * returns true.
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      */
     public abstract boolean printDialog() throws HeadlessException;
 
@@ -298,7 +298,7 @@ public abstract class PrinterJob {
      * returns true.
      * @exception NullPointerException if <code>attributes</code> parameter
      * is null.
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      * @since     1.4
      *
      */
@@ -330,7 +330,7 @@ public abstract class PrinterJob {
      *            dialog is acknowledged.
      * @exception HeadlessException if GraphicsEnvironment.isHeadless()
      * returns true.
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      * @since     1.2
      */
     public abstract PageFormat pageDialog(PageFormat page)
@@ -361,7 +361,7 @@ public abstract class PrinterJob {
      * returns true.
      * @exception NullPointerException if <code>attributes</code> parameter
      * is null.
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      * @since     1.4
      *
      */

@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.security.cert;
+package j86.j86.java.security.cert;
 
-import java.security.InvalidAlgorithmParameterException;
+import j86.java.security.InvalidAlgorithmParameterException;
 
 /**
  *

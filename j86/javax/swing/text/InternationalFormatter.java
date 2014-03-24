@@ -22,18 +22,18 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text;
+package j86.j86.javax.swing.text;
 
-import java.awt.event.ActionEvent;
-import java.io.*;
-import java.text.*;
-import java.text.AttributedCharacterIterator.Attribute;
-import java.util.*;
-import javax.swing.*;
+import j86.j86.java.awt.event.ActionEvent;
+import j86.java.io.*;
+import j86.java.text.*;
+import j86.java.text.AttributedCharacterIterator.Attribute;
+import j86.java.util.*;
+import j86.javax.swing.*;
 
 /**
  * <code>InternationalFormatter</code> extends <code>DefaultFormatter</code>,
- * using an instance of <code>java.text.Format</code> to handle the
+ * using an instance of <code>j86.java.text.Format</code> to handle the
  * conversion to a String, and the conversion from a String.
  * <p>
  * If <code>getAllowsInvalid()</code> is false, this will ask the
@@ -84,11 +84,11 @@ import javax.swing.*;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
- * @see java.text.Format
- * @see java.lang.Comparable
+ * @see j86.java.text.Format
+ * @see j86.java.lang.Comparable
  *
  * @since 1.4
  */

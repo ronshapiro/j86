@@ -28,12 +28,12 @@
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
 
-package sun.security.krb5.internal.ccache;
+package j86.j86.j86.sun.security.krb5.internal.ccache;
 
-import sun.security.krb5.*;
-import sun.security.krb5.internal.*;
-import java.io.IOException;
-import java.io.File;
+import j86.sun.security.krb5.*;
+import j86.j86.sun.security.krb5.internal.*;
+import j86.java.io.IOException;
+import j86.java.io.File;
 
 //Windows supports the "API: cache" type, which is a shared memory cache.  This is
 //implemented by krbcc32.dll as part of the MIT Kerberos for Win32 distribution.

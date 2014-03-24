@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.script;
+package j86.javax.script;
 
-import java.util.Map;
-import java.io.Reader;
+import j86.java.util.Map;
+import j86.java.io.Reader;
 
 /**
  * The optional interface implemented by ScriptEngines whose methods compile scripts

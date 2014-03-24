@@ -23,29 +23,29 @@
  * questions.
  */
 
-package javax.swing;
+package j86.javax.swing;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.Serializable;
-import java.beans.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.java.io.IOException;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.Serializable;
+import j86.java.beans.*;
 
-import java.util.Locale;
-import java.util.Vector;
-import java.util.Hashtable;
-import javax.accessibility.*;
-import javax.swing.plaf.PopupMenuUI;
-import javax.swing.plaf.ComponentUI;
-import javax.swing.plaf.basic.BasicComboPopup;
-import javax.swing.event.*;
+import j86.java.util.Locale;
+import j86.java.util.Vector;
+import j86.java.util.Hashtable;
+import j86.javax.accessibility.*;
+import j86.j86.javax.swing.plaf.PopupMenuUI;
+import j86.j86.javax.swing.plaf.ComponentUI;
+import j86.j86.j86.javax.swing.plaf.basic.BasicComboPopup;
+import j86.j86.javax.swing.event.*;
 
-import sun.awt.SunToolkit;
-import sun.security.util.SecurityConstants;
+import j86.sun.awt.SunToolkit;
+import j86.sun.security.util.SecurityConstants;
 
-import java.applet.Applet;
+import j86.java.applet.Applet;
 
 /**
  * An implementation of a popup menu -- a small window that pops up
@@ -72,8 +72,8 @@ import java.applet.Applet;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @beaninfo
  *   attribute: isContainer false
@@ -98,13 +98,13 @@ public class JPopupMenu extends JComponent implements Accessible,MenuElement {
     private static final Object defaultLWPopupEnabledKey =
         new StringBuffer("JPopupMenu.defaultLWPopupEnabledKey");
 
-    /** Bug#4425878-Property javax.swing.adjustPopupLocationToFit introduced */
+    /** Bug#4425878-Property j86.javax.swing.adjustPopupLocationToFit introduced */
     static boolean popupPostionFixDisabled = false;
 
     static {
-        popupPostionFixDisabled = java.security.AccessController.doPrivileged(
-                new sun.security.action.GetPropertyAction(
-                "javax.swing.adjustPopupLocationToFit","")).equals("false");
+        popupPostionFixDisabled = j86.java.security.AccessController.doPrivileged(
+                new j86.sun.security.action.GetPropertyAction(
+                "j86.javax.swing.adjustPopupLocationToFit","")).equals("false");
 
     }
 
@@ -322,7 +322,7 @@ public class JPopupMenu extends JComponent implements Accessible,MenuElement {
      * desktop bounds, taskbar and multi-monitor configuration.
      * <p>
      * This adustment may be cancelled by invoking the application with
-     * -Djavax.swing.adjustPopupLocationToFit=false
+     * -Dj86.javax.swing.adjustPopupLocationToFit=false
      */
     Point adjustPopupLocationToFitScreen(int xPosition, int yPosition) {
         Point popupLocation = new Point(xPosition, yPosition);
@@ -988,7 +988,7 @@ public class JPopupMenu extends JComponent implements Accessible,MenuElement {
      *
      * @param i  the index of the component, where 0 is the first
      * @return the <code>Component</code> at that index
-     * @deprecated replaced by {@link java.awt.Container#getComponent(int)}
+     * @deprecated replaced by {@link j86.java.awt.Container#getComponent(int)}
      */
     @Deprecated
     public Component getComponentAtIndex(int i) {
@@ -1337,7 +1337,7 @@ public class JPopupMenu extends JComponent implements Accessible,MenuElement {
         }
     }
 
-    // implements javax.swing.MenuElement
+    // implements j86.javax.swing.MenuElement
     private void readObject(ObjectInputStream s)
         throws IOException, ClassNotFoundException {
         s.defaultReadObject();
@@ -1461,7 +1461,7 @@ public class JPopupMenu extends JComponent implements Accessible,MenuElement {
     /**
      * Messaged when the menubar selection changes to activate or
      * deactivate this menu. This implements the
-     * <code>javax.swing.MenuElement</code> interface.
+     * <code>j86.javax.swing.MenuElement</code> interface.
      * Overrides <code>MenuElement.menuSelectionChanged</code>.
      *
      * @param isIncluded  true if this menu is active, false if

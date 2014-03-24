@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.tools.java;
+package j86.sun.tools.java;
 
-import java.util.*;
+import j86.java.util.*;
 
 /**
  * The MethodSet structure is used to store methods for a class.

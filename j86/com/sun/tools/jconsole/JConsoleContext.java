@@ -23,11 +23,11 @@
  * questions.
  */
 
-package com.sun.tools.jconsole;
+package com.j86.sun.tools.jconsole;
 
-import javax.management.MBeanServerConnection;
-import java.beans.PropertyChangeListener;
-import javax.swing.event.SwingPropertyChangeSupport;
+import j86.javax.management.MBeanServerConnection;
+import j86.java.beans.PropertyChangeListener;
+import j86.j86.javax.swing.event.SwingPropertyChangeSupport;
 
 /**
  * {@code JConsoleContext} represents a JConsole connection to a target
@@ -89,7 +89,7 @@ public interface JConsoleContext {
     public ConnectionState getConnectionState();
 
     /**
-     * Add a {@link java.beans.PropertyChangeListener PropertyChangeListener}
+     * Add a {@link j86.java.beans.PropertyChangeListener PropertyChangeListener}
      * to the listener list.
      * The listener is registered for all properties.
      * The same listener object may be added more than once, and will be called
@@ -102,7 +102,7 @@ public interface JConsoleContext {
     public void addPropertyChangeListener(PropertyChangeListener listener);
 
     /**
-     * Removes a {@link java.beans.PropertyChangeListener PropertyChangeListener}
+     * Removes a {@link j86.java.beans.PropertyChangeListener PropertyChangeListener}
      * from the listener list. This
      * removes a {@code PropertyChangeListener} that was registered for all
      * properties. If {@code listener} was added more than once to the same

@@ -22,20 +22,20 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.awt;
+package j86.java.awt;
 
-import java.awt.peer.TextComponentPeer;
-import java.awt.event.*;
-import java.util.EventListener;
-import java.io.ObjectOutputStream;
-import java.io.ObjectInputStream;
-import java.io.IOException;
-import sun.awt.InputMethodSupport;
-import java.text.BreakIterator;
-import javax.swing.text.AttributeSet;
-import javax.accessibility.*;
-import java.awt.im.InputMethodRequests;
-import sun.security.util.SecurityConstants;
+import j86.j86.java.awt.peer.TextComponentPeer;
+import j86.j86.java.awt.event.*;
+import j86.java.util.EventListener;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.IOException;
+import j86.sun.awt.InputMethodSupport;
+import j86.java.text.BreakIterator;
+import j86.j86.javax.swing.text.AttributeSet;
+import j86.javax.accessibility.*;
+import j86.j86.java.awt.im.InputMethodRequests;
+import j86.sun.security.util.SecurityConstants;
 
 /**
  * The <code>TextComponent</code> class is the superclass of
@@ -124,8 +124,8 @@ public class TextComponent extends Component implements Accessible {
      * @exception  HeadlessException if
      *             <code>GraphicsEnvironment.isHeadless</code>
      *             returns true
-     * @see        java.awt.GraphicsEnvironment#isHeadless
-     * @see        java.awt.Cursor
+     * @see        j86.java.awt.GraphicsEnvironment#isHeadless
+     * @see        j86.java.awt.Cursor
      */
     TextComponent(String text) throws HeadlessException {
         GraphicsEnvironment.checkHeadless();
@@ -192,7 +192,7 @@ public class TextComponent extends Component implements Accessible {
      * native screen resource.
      * This method is called internally by the toolkit and should
      * not be called directly by programs.
-     * @see       java.awt.TextComponent#removeNotify
+     * @see       j86.java.awt.TextComponent#removeNotify
      */
     public void addNotify() {
         super.addNotify();
@@ -223,7 +223,7 @@ public class TextComponent extends Component implements Accessible {
      * @param       t   the new text;
      *                  if this parameter is <code>null</code> then
      *                  the text is set to the empty string ""
-     * @see         java.awt.TextComponent#getText
+     * @see         j86.java.awt.TextComponent#getText
      */
     public synchronized void setText(String t) {
         boolean skipTextEvent = (text == null || text.isEmpty())
@@ -243,7 +243,7 @@ public class TextComponent extends Component implements Accessible {
      * By default, this is an empty string.
      *
      * @return the value of this <code>TextComponent</code>
-     * @see     java.awt.TextComponent#setText
+     * @see     j86.java.awt.TextComponent#setText
      */
     public synchronized String getText() {
         TextComponentPeer peer = (TextComponentPeer)this.peer;
@@ -257,7 +257,7 @@ public class TextComponent extends Component implements Accessible {
      * Returns the selected text from the text that is
      * presented by this text component.
      * @return      the selected text of this text component
-     * @see         java.awt.TextComponent#select
+     * @see         j86.java.awt.TextComponent#select
      */
     public synchronized String getSelectedText() {
         return getText().substring(getSelectionStart(), getSelectionEnd());
@@ -267,7 +267,7 @@ public class TextComponent extends Component implements Accessible {
      * Indicates whether or not this text component is editable.
      * @return     <code>true</code> if this text component is
      *                  editable; <code>false</code> otherwise.
-     * @see        java.awt.TextComponent#setEditable
+     * @see        j86.java.awt.TextComponent#setEditable
      * @since      JDK1.0
      */
     public boolean isEditable() {
@@ -287,7 +287,7 @@ public class TextComponent extends Component implements Accessible {
      *
      * @param     b   a flag indicating whether this text component
      *                      is user editable.
-     * @see       java.awt.TextComponent#isEditable
+     * @see       j86.java.awt.TextComponent#isEditable
      * @since     JDK1.0
      */
     public synchronized void setEditable(boolean b) {
@@ -341,8 +341,8 @@ public class TextComponent extends Component implements Accessible {
      * Gets the start position of the selected text in
      * this text component.
      * @return      the start position of the selected text
-     * @see         java.awt.TextComponent#setSelectionStart
-     * @see         java.awt.TextComponent#getSelectionEnd
+     * @see         j86.java.awt.TextComponent#setSelectionStart
+     * @see         j86.java.awt.TextComponent#getSelectionEnd
      */
     public synchronized int getSelectionStart() {
         TextComponentPeer peer = (TextComponentPeer)this.peer;
@@ -363,8 +363,8 @@ public class TextComponent extends Component implements Accessible {
      * silently, and without failure.
      * @param       selectionStart   the start position of the
      *                        selected text
-     * @see         java.awt.TextComponent#getSelectionStart
-     * @see         java.awt.TextComponent#setSelectionEnd
+     * @see         j86.java.awt.TextComponent#getSelectionStart
+     * @see         j86.java.awt.TextComponent#setSelectionEnd
      * @since       JDK1.1
      */
     public synchronized void setSelectionStart(int selectionStart) {
@@ -378,8 +378,8 @@ public class TextComponent extends Component implements Accessible {
      * Gets the end position of the selected text in
      * this text component.
      * @return      the end position of the selected text
-     * @see         java.awt.TextComponent#setSelectionEnd
-     * @see         java.awt.TextComponent#getSelectionStart
+     * @see         j86.java.awt.TextComponent#setSelectionEnd
+     * @see         j86.java.awt.TextComponent#getSelectionStart
      */
     public synchronized int getSelectionEnd() {
         TextComponentPeer peer = (TextComponentPeer)this.peer;
@@ -399,8 +399,8 @@ public class TextComponent extends Component implements Accessible {
      * silently, and without failure.
      * @param       selectionEnd   the end position of the
      *                        selected text
-     * @see         java.awt.TextComponent#getSelectionEnd
-     * @see         java.awt.TextComponent#setSelectionStart
+     * @see         j86.java.awt.TextComponent#getSelectionEnd
+     * @see         j86.java.awt.TextComponent#setSelectionStart
      * @since       JDK1.1
      */
     public synchronized void setSelectionEnd(int selectionEnd) {
@@ -438,9 +438,9 @@ public class TextComponent extends Component implements Accessible {
      * @param        selectionEnd the zero-based end position of the
                        text to be selected; the character (<code>char</code> value) at
                        <code>selectionEnd</code> is not selected
-     * @see          java.awt.TextComponent#setSelectionStart
-     * @see          java.awt.TextComponent#setSelectionEnd
-     * @see          java.awt.TextComponent#selectAll
+     * @see          j86.java.awt.TextComponent#setSelectionStart
+     * @see          j86.java.awt.TextComponent#setSelectionEnd
+     * @see          j86.java.awt.TextComponent#selectAll
      */
     public synchronized void select(int selectionStart, int selectionEnd) {
         String text = getText();
@@ -468,7 +468,7 @@ public class TextComponent extends Component implements Accessible {
 
     /**
      * Selects all the text in this text component.
-     * @see        java.awt.TextComponent#select
+     * @see        j86.java.awt.TextComponent#select
      */
     public synchronized void selectAll() {
         this.selectionStart = 0;
@@ -552,7 +552,7 @@ public class TextComponent extends Component implements Accessible {
      * @param l the text event listener
      * @see             #removeTextListener
      * @see             #getTextListeners
-     * @see             java.awt.event.TextListener
+     * @see             j86.j86.java.awt.event.TextListener
      */
     public synchronized void addTextListener(TextListener l) {
         if (l == null) {
@@ -573,7 +573,7 @@ public class TextComponent extends Component implements Accessible {
      * @param           l     the text listener
      * @see             #addTextListener
      * @see             #getTextListeners
-     * @see             java.awt.event.TextListener
+     * @see             j86.j86.java.awt.event.TextListener
      * @since           JDK1.1
      */
     public synchronized void removeTextListener(TextListener l) {
@@ -621,14 +621,14 @@ public class TextComponent extends Component implements Accessible {
      *
      * @param listenerType the type of listeners requested; this parameter
      *          should specify an interface that descends from
-     *          <code>java.util.EventListener</code>
+     *          <code>j86.java.util.EventListener</code>
      * @return an array of all objects registered as
      *          <code><em>Foo</em>Listener</code>s on this text component,
      *          or an empty array if no such
      *          listeners have been added
      * @exception ClassCastException if <code>listenerType</code>
      *          doesn't specify a class or interface that implements
-     *          <code>java.util.EventListener</code>
+     *          <code>j86.java.util.EventListener</code>
      *
      * @see #getTextListeners
      * @since 1.3
@@ -758,9 +758,9 @@ public class TextComponent extends Component implements Accessible {
      *             textListenerK indicating and TextListener object.
      *
      * @see AWTEventMulticaster#save(ObjectOutputStream, String, EventListener)
-     * @see java.awt.Component#textListenerK
+     * @see j86.java.awt.Component#textListenerK
      */
-    private void writeObject(java.io.ObjectOutputStream s)
+    private void writeObject(j86.java.io.ObjectOutputStream s)
       throws IOException
     {
         // Serialization support.  Since the value of the fields
@@ -790,7 +790,7 @@ public class TextComponent extends Component implements Accessible {
      * <code>true</code>
      * @see #removeTextListener
      * @see #addTextListener
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      */
     private void readObject(ObjectInputStream s)
         throws ClassNotFoundException, IOException, HeadlessException
@@ -1067,7 +1067,7 @@ public class TextComponent extends Component implements Accessible {
             // Fix for 4256660 and 4256661.
             // Words iterator is different from character and sentence iterators
             // in that end of one word is not necessarily start of another word.
-            // Please see java.text.BreakIterator JavaDoc. The code below is
+            // Please see j86.java.text.BreakIterator JavaDoc. The code below is
             // based on nextWordStartAfter example from BreakIterator.java.
             int last = (direction == NEXT) ? words.following(index)
                                            : words.preceding(index);

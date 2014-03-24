@@ -23,18 +23,18 @@
  * questions.
  */
 
-package sun.security.provider;
+package j86.sun.security.provider;
 
-import java.io.*;
-import java.math.BigInteger;
-import java.security.AlgorithmParametersSpi;
-import java.security.spec.AlgorithmParameterSpec;
-import java.security.spec.DSAParameterSpec;
-import java.security.spec.InvalidParameterSpecException;
+import j86.java.io.*;
+import j86.java.math.BigInteger;
+import j86.java.security.AlgorithmParametersSpi;
+import j86.j86.java.security.spec.AlgorithmParameterSpec;
+import j86.j86.java.security.spec.DSAParameterSpec;
+import j86.j86.java.security.spec.InvalidParameterSpecException;
 
-import sun.security.util.Debug;
-import sun.security.util.DerValue;
-import sun.security.util.DerOutputStream;
+import j86.sun.security.util.Debug;
+import j86.sun.security.util.DerValue;
+import j86.sun.security.util.DerOutputStream;
 
 /**
  * This class implements the parameter set used by the
@@ -100,7 +100,7 @@ public class DSAParameters extends AlgorithmParametersSpi {
     {
             try {
                 Class<?> dsaParamSpec = Class.forName
-                    ("java.security.spec.DSAParameterSpec");
+                    ("j86.j86.java.security.spec.DSAParameterSpec");
                 if (dsaParamSpec.isAssignableFrom(paramSpec)) {
                     return paramSpec.cast(
                             new DSAParameterSpec(this.p, this.q, this.g));

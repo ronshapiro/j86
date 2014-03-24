@@ -23,21 +23,21 @@
  * questions.
  */
 
-package sun.tools.serialver;
+package j86.sun.tools.serialver;
 
-import java.io.*;
-import java.awt.*;
-import java.applet.*;
-import java.io.ObjectStreamClass;
-import java.util.Properties;
-import java.text.MessageFormat;
-import java.util.ResourceBundle;
-import java.util.MissingResourceException;
-import java.net.URLClassLoader;
-import java.net.URL;
-import java.net.MalformedURLException;
-import java.util.StringTokenizer;
-import sun.net.www.ParseUtil;
+import j86.java.io.*;
+import j86.java.awt.*;
+import j86.java.applet.*;
+import j86.java.io.ObjectStreamClass;
+import j86.java.util.Properties;
+import j86.java.text.MessageFormat;
+import j86.java.util.ResourceBundle;
+import j86.java.util.MissingResourceException;
+import j86.java.net.URLClassLoader;
+import j86.java.net.URL;
+import j86.java.net.MalformedURLException;
+import j86.java.util.StringTokenizer;
+import j86.j86.sun.net.www.ParseUtil;
 
 public class SerialVer extends Applet {
     GridBagLayout gb;
@@ -400,8 +400,8 @@ class SerialVerFrame extends Frame {
  * Handle Resources. Access to error and warning counts.
  * Message formatting.
  *
- * @see java.util.ResourceBundle
- * @see java.text.MessageFormat
+ * @see j86.java.util.ResourceBundle
+ * @see j86.java.text.MessageFormat
  */
 class Res {
 
@@ -413,7 +413,7 @@ class Res {
     static void initResource() {
         try {
             messageRB =
-                ResourceBundle.getBundle("sun.tools.serialver.resources.serialver");
+                ResourceBundle.getBundle("j86.sun.tools.serialver.resources.serialver");
         } catch (MissingResourceException e) {
             throw new Error("Fatal: Resource for serialver is missing");
         }

@@ -23,17 +23,17 @@
  * questions.
  */
 
-package sun.security.rsa;
+package j86.sun.security.rsa;
 
-import java.io.IOException;
-import java.math.BigInteger;
+import j86.java.io.IOException;
+import j86.java.math.BigInteger;
 
-import java.security.*;
-import java.security.interfaces.*;
+import j86.java.security.*;
+import j86.j86.java.security.interfaces.*;
 
-import sun.security.util.*;
-import sun.security.x509.AlgorithmId;
-import sun.security.pkcs.PKCS8Key;
+import j86.sun.security.util.*;
+import j86.sun.security.x509.AlgorithmId;
+import j86.sun.security.pkcs.PKCS8Key;
 
 /**
  * Key implementation for RSA private keys, CRT form. For non-CRT private

@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.sql;
+package j86.java.sql;
 
-import java.io.InputStream;
+import j86.java.io.InputStream;
 
 /**
  * The representation (mapping) in
@@ -108,7 +108,7 @@ public interface Blob {
    * @see #setBinaryStream
    * @since 1.2
    */
-  java.io.InputStream getBinaryStream () throws SQLException;
+  j86.java.io.InputStream getBinaryStream () throws SQLException;
 
   /**
    * Retrieves the byte position at which the specified byte array
@@ -234,7 +234,7 @@ public interface Blob {
      *
      * @param pos the position in the <code>BLOB</code> value at which
      *        to start writing; the first position is 1
-     * @return a <code>java.io.OutputStream</code> object to which data can
+     * @return a <code>j86.java.io.OutputStream</code> object to which data can
      *         be written
      * @exception SQLException if there is an error accessing the
      *            <code>BLOB</code> value or if pos is less than 1
@@ -243,7 +243,7 @@ public interface Blob {
      * @see #getBinaryStream
      * @since 1.4
      */
-    java.io.OutputStream setBinaryStream(long pos) throws SQLException;
+    j86.java.io.OutputStream setBinaryStream(long pos) throws SQLException;
 
     /**
      * Truncates the <code>BLOB</code> value that this <code>Blob</code>

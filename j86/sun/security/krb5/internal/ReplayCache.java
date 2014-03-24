@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.security.krb5.internal;
+package j86.j86.sun.security.krb5.internal;
 
-import sun.security.action.GetPropertyAction;
-import sun.security.krb5.internal.rcache.AuthTimeWithHash;
-import sun.security.krb5.internal.rcache.MemoryCache;
-import sun.security.krb5.internal.rcache.DflCache;
+import j86.sun.security.action.GetPropertyAction;
+import j86.j86.j86.sun.security.krb5.internal.rcache.AuthTimeWithHash;
+import j86.j86.j86.sun.security.krb5.internal.rcache.MemoryCache;
+import j86.j86.j86.sun.security.krb5.internal.rcache.DflCache;
 
-import java.security.AccessController;
+import j86.java.security.AccessController;
 
 /**
  * Models the replay cache of an acceptor as described in
@@ -57,7 +57,7 @@ public abstract class ReplayCache {
     }
     public static ReplayCache getInstance() {
         String type = AccessController.doPrivileged(
-                new GetPropertyAction("sun.security.krb5.rcache"));
+                new GetPropertyAction("j86.sun.security.krb5.rcache"));
         return getInstance(type);
     }
 

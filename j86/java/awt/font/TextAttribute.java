@@ -38,12 +38,12 @@
  *
  */
 
-package java.awt.font;
+package j86.j86.java.awt.font;
 
-import java.io.InvalidObjectException;
-import java.text.AttributedCharacterIterator.Attribute;
-import java.util.Map;
-import java.util.HashMap;
+import j86.java.io.InvalidObjectException;
+import j86.java.text.AttributedCharacterIterator.Attribute;
+import j86.java.util.Map;
+import j86.java.util.HashMap;
 
 /**
  * The <code>TextAttribute</code> class defines attribute keys and
@@ -51,9 +51,9 @@ import java.util.HashMap;
  * <p>
  * <code>TextAttribute</code> instances are used as attribute keys to
  * identify attributes in
- * {@link java.awt.Font Font},
- * {@link java.awt.font.TextLayout TextLayout},
- * {@link java.text.AttributedCharacterIterator AttributedCharacterIterator},
+ * {@link j86.java.awt.Font Font},
+ * {@link j86.j86.java.awt.font.TextLayout TextLayout},
+ * {@link j86.java.text.AttributedCharacterIterator AttributedCharacterIterator},
  * and other classes handling text attributes. Other constants defined
  * in this class can be used as attribute values.
  * <p>
@@ -108,9 +108,9 @@ import java.util.HashMap;
  * <tr>
  * <td valign="TOP">{@link #FAMILY}</td>
  * <td valign="TOP">String</td>
- * <td valign="TOP">See Font {@link java.awt.Font#DIALOG DIALOG},
- * {@link java.awt.Font#DIALOG_INPUT DIALOG_INPUT},<br> {@link java.awt.Font#SERIF SERIF},
- * {@link java.awt.Font#SANS_SERIF SANS_SERIF}, and {@link java.awt.Font#MONOSPACED MONOSPACED}.
+ * <td valign="TOP">See Font {@link j86.java.awt.Font#DIALOG DIALOG},
+ * {@link j86.java.awt.Font#DIALOG_INPUT DIALOG_INPUT},<br> {@link java.awt.Font#SERIF SERIF},
+ * {@link j86.java.awt.Font#SANS_SERIF SANS_SERIF}, and {@link java.awt.Font#MONOSPACED MONOSPACED}.
  * </td>
  * <td valign="TOP">"Default" (use platform default)</td>
  * </tr>
@@ -152,7 +152,7 @@ import java.util.HashMap;
  * </tr>
  * <tr style="background-color:#eeeeff">
  * <td valign="TOP">{@link #FONT}</td>
- * <td valign="TOP">{@link java.awt.Font}</td>
+ * <td valign="TOP">{@link j86.java.awt.Font}</td>
  * <td valign="TOP">none</td>
  * <td valign="TOP">null (do not override font resolution)</td>
  * </tr>
@@ -164,13 +164,13 @@ import java.util.HashMap;
  * </tr>
  * <tr style="background-color:#eeeeff">
  * <td valign="TOP">{@link #FOREGROUND}</td>
- * <td valign="TOP">{@link java.awt.Paint}</td>
+ * <td valign="TOP">{@link j86.java.awt.Paint}</td>
  * <td valign="TOP">none</td>
  * <td valign="TOP">null (use current graphics paint)</td>
  * </tr>
  * <tr>
  * <td valign="TOP">{@link #BACKGROUND}</td>
- * <td valign="TOP">{@link java.awt.Paint}</td>
+ * <td valign="TOP">{@link j86.java.awt.Paint}</td>
  * <td valign="TOP">none</td>
  * <td valign="TOP">null (do not render background)</td>
  * </tr>
@@ -190,7 +190,7 @@ import java.util.HashMap;
  * <td valign="TOP">{@link #RUN_DIRECTION}</td>
  * <td valign="TOP">Boolean</td>
  * <td valign="TOP">RUN_DIRECTION_LTR<br>RUN_DIRECTION_RTL</td>
- * <td valign="TOP">null (use {@link java.text.Bidi} standard default)</td>
+ * <td valign="TOP">null (use {@link j86.java.text.Bidi} standard default)</td>
  * </tr>
  * <tr>
  * <td valign="TOP">{@link #BIDI_EMBEDDING}</td>
@@ -206,7 +206,7 @@ import java.util.HashMap;
  * </tr>
  * <tr>
  * <td valign="TOP">{@link #INPUT_METHOD_HIGHLIGHT}</td>
- * <td valign="TOP">{@link java.awt.im.InputMethodHighlight},<br>{@link java.text.Annotation}</td>
+ * <td valign="TOP">{@link j86.j86.java.awt.im.InputMethodHighlight},<br>{@link j86.java.text.Annotation}</td>
  * <td valign="TOP">(see class)</td>
  * <td valign="TOP">null (do not apply input highlighting)</td>
  * </tr>
@@ -224,7 +224,7 @@ import java.util.HashMap;
  * </tr>
  * <tr style="background-color:#eeeeff">
  * <td valign="TOP">{@link #NUMERIC_SHAPING}</td>
- * <td valign="TOP">{@link java.awt.font.NumericShaper}</td>
+ * <td valign="TOP">{@link j86.j86.java.awt.font.NumericShaper}</td>
  * <td valign="TOP">none</td>
  * <td valign="TOP">null (do not shape digits)</td>
  * </tr>
@@ -248,9 +248,9 @@ import java.util.HashMap;
  * </tr>
  * </table>
  *
- * @see java.awt.Font
- * @see java.awt.font.TextLayout
- * @see java.text.AttributedCharacterIterator
+ * @see j86.java.awt.Font
+ * @see j86.j86.java.awt.font.TextLayout
+ * @see j86.java.text.AttributedCharacterIterator
  */
 public final class TextAttribute extends Attribute {
 
@@ -305,11 +305,11 @@ public final class TextAttribute extends Attribute {
      *
      * <p> The <code>Font</code> class defines constants for the logical
      * font names
-     * {@link java.awt.Font#DIALOG DIALOG},
-     * {@link java.awt.Font#DIALOG_INPUT DIALOG_INPUT},
-     * {@link java.awt.Font#SANS_SERIF SANS_SERIF},
-     * {@link java.awt.Font#SERIF SERIF}, and
-     * {@link java.awt.Font#MONOSPACED MONOSPACED}.
+     * {@link j86.java.awt.Font#DIALOG DIALOG},
+     * {@link j86.java.awt.Font#DIALOG_INPUT DIALOG_INPUT},
+     * {@link j86.java.awt.Font#SANS_SERIF SANS_SERIF},
+     * {@link j86.java.awt.Font#SERIF SERIF}, and
+     * {@link j86.java.awt.Font#MONOSPACED MONOSPACED}.
      *
      * <p>This defines the value passed as <code>name</code> to the
      * <code>Font</code> constructor.  Both logical and physical
@@ -502,7 +502,7 @@ public final class TextAttribute extends Attribute {
      * <p>This will affect the font's italic angle as returned by
      * <code>Font.getItalicAngle</code>.
      *
-     * @see java.awt.Font#getItalicAngle()
+     * @see j86.java.awt.Font#getItalicAngle()
      */
     public static final TextAttribute POSTURE =
         new TextAttribute("posture");
@@ -573,7 +573,7 @@ public final class TextAttribute extends Attribute {
      * TextLayout#getLayoutPath}.</p>
      *
      * @see TransformAttribute
-     * @see java.awt.geom.AffineTransform
+     * @see j86.j86.java.awt.geom.AffineTransform
      */
      public static final TextAttribute TRANSFORM =
         new TextAttribute("transform");
@@ -615,7 +615,7 @@ public final class TextAttribute extends Attribute {
 
     /**
      * Attribute key used to provide the font to use to render text.
-     * Values are instances of {@link java.awt.Font}.  The default
+     * Values are instances of {@link j86.java.awt.Font}.  The default
      * value is null, indicating that normal resolution of a
      * <code>Font</code> from attributes should be performed.
      *
@@ -668,10 +668,10 @@ public final class TextAttribute extends Attribute {
      * constructor and <code>deriveFont</code> methods do not process
      * the <code>FONT</code> attribute, as these are used to create
      * new <code>Font</code> objects.  Instead, {@link
-     * java.awt.Font#getFont(Map) Font.getFont(Map)} should be used to
+     * j86.java.awt.Font#getFont(Map) Font.getFont(Map)} should be used to
      * handle the <code>FONT</code> attribute.
      *
-     * @see java.awt.Font
+     * @see j86.java.awt.Font
      */
     public static final TextAttribute FONT =
         new TextAttribute("font");
@@ -686,7 +686,7 @@ public final class TextAttribute extends Attribute {
      * <p>This attribute is used to reserve space for a graphic or
      * other component embedded in a line of text.  It is required for
      * correct positioning of 'inline' components within a line when
-     * bidirectional reordering (see {@link java.text.Bidi}) is
+     * bidirectional reordering (see {@link j86.java.text.Bidi}) is
      * performed.  Each character (Unicode code point) will be
      * rendered using the provided GraphicAttribute. Typically, the
      * characters to which this attribute is applied should be
@@ -714,7 +714,7 @@ public final class TextAttribute extends Attribute {
      * <code>Paint</code> regardless of the <code>Paint</code> value
      * set on the <code>Graphics</code> (but see {@link #SWAP_COLORS}).
      *
-     * @see java.awt.Paint
+     * @see j86.java.awt.Paint
      * @see #SWAP_COLORS
      */
     public static final TextAttribute FOREGROUND =
@@ -733,7 +733,7 @@ public final class TextAttribute extends Attribute {
      * <p>The visual bounds of the text is extended to include the
      * logical bounds, if necessary.  The outline is not affected.
      *
-     * @see java.awt.Paint
+     * @see j86.java.awt.Paint
      * @see #SWAP_COLORS
      */
     public static final TextAttribute BACKGROUND =
@@ -790,20 +790,20 @@ public final class TextAttribute extends Attribute {
      * instances of <b><code>Boolean</code></b>.  The default value is
      * null, which indicates that the standard Bidi algorithm for
      * determining run direction should be used with the value {@link
-     * java.text.Bidi#DIRECTION_DEFAULT_LEFT_TO_RIGHT}.
+     * j86.java.text.Bidi#DIRECTION_DEFAULT_LEFT_TO_RIGHT}.
      *
      * <p>The constants {@link #RUN_DIRECTION_RTL} and {@link
      * #RUN_DIRECTION_LTR} are provided.
      *
      * <p>This determines the value passed to the {@link
-     * java.text.Bidi} constructor to select the primary direction of
+     * j86.java.text.Bidi} constructor to select the primary direction of
      * the text in the paragraph.
      *
      * <p><em>Note:</em> This attribute should have the same value for
      * all the text in a paragraph, otherwise the behavior is
      * undetermined.
      *
-     * @see java.text.Bidi
+     * @see j86.java.text.Bidi
      */
     public static final TextAttribute RUN_DIRECTION =
         new TextAttribute("run_direction");
@@ -832,7 +832,7 @@ public final class TextAttribute extends Attribute {
      * negative values -1 through -61 are <em>override</em> levels.
      * The value 0 means that the base line direction is used.  These
      * levels are passed in the embedding levels array to the {@link
-     * java.text.Bidi} constructor.
+     * j86.java.text.Bidi} constructor.
      *
      * <p><em>Note:</em> When this attribute is present anywhere in
      * a paragraph, then any Unicode bidi control characters (RLO,
@@ -841,7 +841,7 @@ public final class TextAttribute extends Attribute {
      * present are treated as though it were present and had the value
      * 0.
      *
-     * @see java.text.Bidi
+     * @see j86.java.text.Bidi
      */
     public static final TextAttribute BIDI_EMBEDDING =
         new TextAttribute("bidi_embedding");
@@ -893,8 +893,8 @@ public final class TextAttribute extends Attribute {
      * Attribute key for input method highlight styles.
      *
      * <p>Values are instances of {@link
-     * java.awt.im.InputMethodHighlight} or {@link
-     * java.text.Annotation}.  The default value is <code>null</code>,
+     * j86.j86.java.awt.im.InputMethodHighlight} or {@link
+     * j86.java.text.Annotation}.  The default value is <code>null</code>,
      * which means that input method styles should not be applied
      * before rendering.
      *
@@ -908,9 +908,9 @@ public final class TextAttribute extends Attribute {
      * retain them even if they generally only deal with unstyled
      * text, and make them available to the drawing routines.
      *
-     * @see java.awt.Font
-     * @see java.awt.im.InputMethodHighlight
-     * @see java.text.Annotation
+     * @see j86.java.awt.Font
+     * @see j86.j86.java.awt.im.InputMethodHighlight
+     * @see j86.java.text.Annotation
      */
     public static final TextAttribute INPUT_METHOD_HIGHLIGHT =
         new TextAttribute("input method highlight");

@@ -59,17 +59,17 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package java.time.zone;
+package j86.j86.java.time.zone;
 
-import java.io.DataInput;
-import java.io.DataOutput;
-import java.io.Externalizable;
-import java.io.IOException;
-import java.io.InvalidClassException;
-import java.io.ObjectInput;
-import java.io.ObjectOutput;
-import java.io.StreamCorruptedException;
-import java.time.ZoneOffset;
+import j86.java.io.DataInput;
+import j86.java.io.DataOutput;
+import j86.java.io.Externalizable;
+import j86.java.io.IOException;
+import j86.java.io.InvalidClassException;
+import j86.java.io.ObjectInput;
+import j86.java.io.ObjectOutput;
+import j86.java.io.StreamCorruptedException;
+import j86.java.time.ZoneOffset;
 
 /**
  * The shared serialization delegate for this package.
@@ -125,9 +125,9 @@ final class Ser implements Externalizable {
      * serialized form for the value of the type and sequence of values for the type.
      *
      * <ul>
-     * <li><a href="../../../serialized-form.html#java.time.zone.ZoneRules">ZoneRules.writeReplace</a>
-     * <li><a href="../../../serialized-form.html#java.time.zone.ZoneOffsetTransition">ZoneOffsetTransition.writeReplace</a>
-     * <li><a href="../../../serialized-form.html#java.time.zone.ZoneOffsetTransitionRule">ZoneOffsetTransitionRule.writeReplace</a>
+     * <li><a href="../../../serialized-form.html#j86.j86.java.time.zone.ZoneRules">ZoneRules.writeReplace</a>
+     * <li><a href="../../../serialized-form.html#j86.j86.java.time.zone.ZoneOffsetTransition">ZoneOffsetTransition.writeReplace</a>
+     * <li><a href="../../../serialized-form.html#j86.j86.java.time.zone.ZoneOffsetTransitionRule">ZoneOffsetTransitionRule.writeReplace</a>
      * </ul>
      *
      * @param out  the data stream to write to, not null
@@ -168,11 +168,11 @@ final class Ser implements Externalizable {
      * {@code Ser} object.
      *
      * <ul>
-     * <li><a href="../../../serialized-form.html#java.time.zone.ZoneRules">ZoneRules</a>
+     * <li><a href="../../../serialized-form.html#j86.j86.java.time.zone.ZoneRules">ZoneRules</a>
      * - {@code ZoneRules.of(standardTransitions, standardOffsets, savingsInstantTransitions, wallOffsets, lastRules);}
-     * <li><a href="../../../serialized-form.html#java.time.zone.ZoneOffsetTransition">ZoneOffsetTransition</a>
+     * <li><a href="../../../serialized-form.html#j86.j86.java.time.zone.ZoneOffsetTransition">ZoneOffsetTransition</a>
      * - {@code ZoneOffsetTransition of(LocalDateTime.ofEpochSecond(epochSecond), offsetBefore, offsetAfter);}
-     * <li><a href="../../../serialized-form.html#java.time.zone.ZoneOffsetTransitionRule">ZoneOffsetTransitionRule</a>
+     * <li><a href="../../../serialized-form.html#j86.j86.java.time.zone.ZoneOffsetTransitionRule">ZoneOffsetTransitionRule</a>
      * - {@code ZoneOffsetTransitionRule.of(month, dom, dow, time, timeEndOfDay, timeDefinition, standardOffset, offsetBefore, offsetAfter);}
      * </ul>
      * @param in  the data to read, not null

@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.beans.decoder;
+package j86.j86.com.sun.beans.decoder;
 
-import com.sun.beans.finder.MethodFinder;
+import j86.j86.com.sun.beans.finder.MethodFinder;
 
-import java.lang.reflect.Method;
+import j86.j86.j86.java.lang.reflect.Method;
 
-import sun.reflect.misc.MethodUtil;
+import j86.j86.sun.reflect.misc.MethodUtil;
 
 /**
  * This class is intended to handle &lt;method&gt; element.
@@ -39,7 +39,7 @@ import sun.reflect.misc.MethodUtil;
  * this element invokes static method of specified class.
  * The inner elements specifies the arguments of the method.
  * For example:<pre>
- * &lt;method name="valueOf" class="java.lang.Long"&gt;
+ * &lt;method name="valueOf" class="j86.java.lang.Long"&gt;
  *     &lt;string&gt;10&lt;/string&gt;
  * &lt;/method&gt;</pre>
  * is equivalent to {@code Long.valueOf("10")} in Java code.

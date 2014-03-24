@@ -23,9 +23,9 @@
  * questions.
  */
 
-package com.sun.net.httpserver;
+package com.j86.j86.sun.net.httpserver;
 
-import java.io.IOException;
+import j86.java.io.IOException;
 
 /**
  * A handler which is invoked to process HTTP exchanges. Each

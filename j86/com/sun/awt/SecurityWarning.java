@@ -23,12 +23,12 @@
  * questions.
  */
 
-package com.sun.awt;
+package com.j86.sun.awt;
 
-import java.awt.*;
-import java.awt.geom.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.geom.*;
 
-import sun.awt.AWTAccessor;
+import j86.sun.awt.AWTAccessor;
 
 
 /**

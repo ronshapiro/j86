@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.lang;
+package j86.java.lang;
 
 /**
  * Thrown when an application tries to load in a class through its
@@ -45,9 +45,9 @@ package java.lang;
  * Throwable#getCause()} method, as well as the aforementioned "legacy method."
  *
  * @author  unascribed
- * @see     java.lang.Class#forName(java.lang.String)
- * @see     java.lang.ClassLoader#findSystemClass(java.lang.String)
- * @see     java.lang.ClassLoader#loadClass(java.lang.String, boolean)
+ * @see     j86.java.lang.Class#forName(java.lang.String)
+ * @see     j86.java.lang.ClassLoader#findSystemClass(java.lang.String)
+ * @see     j86.java.lang.ClassLoader#loadClass(java.lang.String, boolean)
  * @since   JDK1.0
  */
 public class ClassNotFoundException extends ReflectiveOperationException {

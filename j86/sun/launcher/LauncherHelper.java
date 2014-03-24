@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.launcher;
+package j86.sun.launcher;
 
 /*
  *
@@ -39,33 +39,33 @@ package sun.launcher;
  * The following are helper methods that the native launcher uses
  * to perform checks etc. using JNI, see src/share/bin/java.c
  */
-import java.io.File;
-import java.io.IOException;
-import java.io.PrintStream;
-import java.io.UnsupportedEncodingException;
-import java.lang.reflect.Method;
-import java.lang.reflect.Modifier;
-import java.math.BigDecimal;
-import java.math.RoundingMode;
-import java.nio.charset.Charset;
-import java.nio.file.DirectoryStream;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.text.Normalizer;
-import java.util.ResourceBundle;
-import java.text.MessageFormat;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Locale;
-import java.util.Locale.Category;
-import java.util.Properties;
-import java.util.Set;
-import java.util.TreeSet;
-import java.util.jar.Attributes;
-import java.util.jar.JarFile;
-import java.util.jar.Manifest;
+import j86.java.io.File;
+import j86.java.io.IOException;
+import j86.java.io.PrintStream;
+import j86.java.io.UnsupportedEncodingException;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.j86.j86.java.lang.reflect.Modifier;
+import j86.java.math.BigDecimal;
+import j86.java.math.RoundingMode;
+import j86.j86.java.nio.charset.Charset;
+import j86.j86.java.nio.file.DirectoryStream;
+import j86.j86.java.nio.file.Files;
+import j86.j86.java.nio.file.Path;
+import j86.java.text.Normalizer;
+import j86.java.util.ResourceBundle;
+import j86.java.text.MessageFormat;
+import j86.java.util.ArrayList;
+import j86.java.util.Collections;
+import j86.java.util.Iterator;
+import j86.java.util.List;
+import j86.java.util.Locale;
+import j86.java.util.Locale.Category;
+import j86.java.util.Properties;
+import j86.java.util.Set;
+import j86.java.util.TreeSet;
+import j86.j86.java.util.jar.Attributes;
+import j86.j86.java.util.jar.JarFile;
+import j86.j86.java.util.jar.Manifest;
 
 public enum LauncherHelper {
     INSTANCE;
@@ -78,12 +78,12 @@ public enum LauncherHelper {
     private static final String PROP_SETTINGS   = "Property settings:";
     private static final String LOCALE_SETTINGS = "Locale settings:";
 
-    // sync with java.c and sun.misc.VM
+    // sync with java.c and j86.sun.misc.VM
     private static final String diagprop = "sun.java.launcher.diag";
-    final static boolean trace = sun.misc.VM.getSavedProperty(diagprop) != null;
+    final static boolean trace = j86.sun.misc.VM.getSavedProperty(diagprop) != null;
 
     private static final String defaultBundleName =
-            "sun.launcher.resources.launcher";
+            "j86.sun.launcher.resources.launcher";
     private static class ResourceBundleHolder {
         private static final ResourceBundle RB =
                 ResourceBundle.getBundle(defaultBundleName);
@@ -559,7 +559,7 @@ public enum LauncherHelper {
             abort(null, "java.launcher.cls.error2", "static",
                   mainMethod.getDeclaringClass().getName());
         }
-        if (mainMethod.getReturnType() != java.lang.Void.TYPE) {
+        if (mainMethod.getReturnType() != j86.java.lang.Void.TYPE) {
             abort(null, "java.launcher.cls.error3",
                   mainMethod.getDeclaringClass().getName());
         }
@@ -721,7 +721,7 @@ public enum LauncherHelper {
                 if (!Modifier.isStatic(mod)) {
                     abort(null, "java.launcher.javafx.error1");
                 }
-                if (fxLauncherMethod.getReturnType() != java.lang.Void.TYPE) {
+                if (fxLauncherMethod.getReturnType() != j86.java.lang.Void.TYPE) {
                     abort(null, "java.launcher.javafx.error1");
                 }
             } catch (ClassNotFoundException | NoSuchMethodException ex) {

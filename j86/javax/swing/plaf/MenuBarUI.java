@@ -23,12 +23,12 @@
  * questions.
  */
 
-package javax.swing.plaf;
+package j86.j86.javax.swing.plaf;
 
-import java.awt.Insets;
-import javax.swing.JMenuBar;
+import j86.java.awt.Insets;
+import j86.javax.swing.JMenuBar;
 
-import javax.swing.JMenu;
+import j86.javax.swing.JMenu;
 /**
  * Pluggable look and feel interface for JMenuBar.
  *

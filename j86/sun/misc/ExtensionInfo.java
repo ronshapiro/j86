@@ -23,15 +23,15 @@
  * questions.
  */
 
-package sun.misc;
+package j86.sun.misc;
 
-import java.util.StringTokenizer;
-import java.util.jar.Attributes;
-import java.util.jar.Attributes.Name;
-import java.util.ResourceBundle;
-import java.util.MissingResourceException;
-import java.text.MessageFormat;
-import java.lang.Character.*;
+import j86.java.util.StringTokenizer;
+import j86.j86.java.util.jar.Attributes;
+import j86.j86.java.util.jar.Attributes.Name;
+import j86.java.util.ResourceBundle;
+import j86.java.util.MissingResourceException;
+import j86.java.text.MessageFormat;
+import j86.java.lang.Character.*;
 
 
 /**
@@ -70,7 +70,7 @@ public class ExtensionInfo {
 
     // For I18N support
     private static final ResourceBundle rb =
-        ResourceBundle.getBundle("sun.misc.resources.Messages");
+        ResourceBundle.getBundle("j86.j86.sun.misc.resources.Messages");
 
 
     /**

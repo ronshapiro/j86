@@ -23,11 +23,11 @@
  * questions.
  */
 
-package javax.swing.plaf;
+package j86.j86.javax.swing.plaf;
 
-import java.awt.Rectangle;
-import javax.swing.JTree;
-import javax.swing.tree.TreePath;
+import j86.java.awt.Rectangle;
+import j86.javax.swing.JTree;
+import j86.j86.javax.swing.tree.TreePath;
 
 /**
  * Pluggable look and feel interface for JTree.

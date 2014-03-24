@@ -23,22 +23,22 @@
  * questions.
  */
 
-package javax.swing.plaf.synth;
+package j86.j86.j86.javax.swing.plaf.synth;
 
-import java.awt.event.*;
-import java.awt.Graphics;
-import java.awt.Dimension;
-import java.awt.FontMetrics;
-import java.awt.Rectangle;
-import java.awt.Point;
-import java.awt.Insets;
-import java.beans.*;
-import java.util.Dictionary;
-import java.util.Enumeration;
-import javax.swing.*;
-import javax.swing.plaf.*;
-import javax.swing.plaf.basic.BasicSliderUI;
-import sun.swing.SwingUtilities2;
+import j86.j86.java.awt.event.*;
+import j86.java.awt.Graphics;
+import j86.java.awt.Dimension;
+import j86.java.awt.FontMetrics;
+import j86.java.awt.Rectangle;
+import j86.java.awt.Point;
+import j86.java.awt.Insets;
+import j86.java.beans.*;
+import j86.java.util.Dictionary;
+import j86.java.util.Enumeration;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.j86.javax.swing.plaf.basic.BasicSliderUI;
+import j86.sun.swing.SwingUtilities2;
 
 
 /**

@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.java2d.pipe;
+package j86.j86.sun.java2d.pipe;
 
-import java.awt.Rectangle;
-import java.awt.Shape;
-import java.awt.geom.PathIterator;
-import sun.java2d.SunGraphics2D;
+import j86.java.awt.Rectangle;
+import j86.java.awt.Shape;
+import j86.j86.java.awt.geom.PathIterator;
+import j86.sun.java2d.SunGraphics2D;
 
 /**
  * This class uses a Region iterator to modify the extents of alpha

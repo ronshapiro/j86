@@ -20,14 +20,14 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jcp.xml.dsig.internal;
+package j86.org.jcp.xml.dsig.internal;
 
-import java.io.ByteArrayOutputStream;
-import javax.crypto.Mac;
+import j86.java.io.ByteArrayOutputStream;
+import j86.javax.crypto.Mac;
 
 /**
  * Derived from Apache sources and changed to use Mac objects instead of
- * com.sun.org.apache.xml.internal.security.algorithms.SignatureAlgorithm objects.
+ * j86.j86.com.sun.org.apache.xml.internal.security.algorithms.SignatureAlgorithm objects.
  *
  * @author raul
  * @author Sean Mullan

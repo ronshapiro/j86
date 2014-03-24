@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.awt.geom;
+package j86.j86.java.awt.geom;
 
-import java.io.Serializable;
+import j86.java.io.Serializable;
 
 /**
  * The <code>Rectangle2D</code> class describes a rectangle
@@ -503,9 +503,9 @@ public abstract class Rectangle2D extends RectangularShape {
      * the information necessary to satisfy the various accessor
      * methods below.
      *
-     * @see java.awt.geom.Rectangle2D.Float
-     * @see java.awt.geom.Rectangle2D.Double
-     * @see java.awt.Rectangle
+     * @see j86.j86.java.awt.geom.Rectangle2D.Float
+     * @see j86.j86.java.awt.geom.Rectangle2D.Double
+     * @see j86.java.awt.Rectangle
      * @since 1.2
      */
     protected Rectangle2D() {
@@ -894,10 +894,10 @@ public abstract class Rectangle2D extends RectangularShape {
      * @since 1.2
      */
     public int hashCode() {
-        long bits = java.lang.Double.doubleToLongBits(getX());
-        bits += java.lang.Double.doubleToLongBits(getY()) * 37;
-        bits += java.lang.Double.doubleToLongBits(getWidth()) * 43;
-        bits += java.lang.Double.doubleToLongBits(getHeight()) * 47;
+        long bits = j86.java.lang.Double.doubleToLongBits(getX());
+        bits += j86.java.lang.Double.doubleToLongBits(getY()) * 37;
+        bits += j86.java.lang.Double.doubleToLongBits(getWidth()) * 43;
+        bits += j86.java.lang.Double.doubleToLongBits(getHeight()) * 47;
         return (((int) bits) ^ ((int) (bits >> 32)));
     }
 

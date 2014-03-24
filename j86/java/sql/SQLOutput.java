@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.sql;
+package j86.java.sql;
 
 /**
  * The output stream for writing the attributes of a user-defined
@@ -51,7 +51,7 @@ package java.sql;
   //================================================================
   // Methods for writing attributes to the stream of SQL data.
   // These methods correspond to the column-accessor methods of
-  // java.sql.ResultSet.
+  // j86.java.sql.ResultSet.
   //================================================================
 
   /**
@@ -158,7 +158,7 @@ package java.sql;
   void writeDouble(double x) throws SQLException;
 
   /**
-   * Writes the next attribute to the stream as a java.math.BigDecimal object.
+   * Writes the next attribute to the stream as a j86.java.math.BigDecimal object.
    * Writes the next attribute to the stream as a <code>String</code>
    * in the Java programming language.
    *
@@ -168,7 +168,7 @@ package java.sql;
    * this method
    * @since 1.2
    */
-  void writeBigDecimal(java.math.BigDecimal x) throws SQLException;
+  void writeBigDecimal(j86.java.math.BigDecimal x) throws SQLException;
 
   /**
    * Writes the next attribute to the stream as an array of bytes.
@@ -184,8 +184,8 @@ package java.sql;
   void writeBytes(byte[] x) throws SQLException;
 
   /**
-   * Writes the next attribute to the stream as a java.sql.Date object.
-   * Writes the next attribute to the stream as a <code>java.sql.Date</code> object
+   * Writes the next attribute to the stream as a j86.java.sql.Date object.
+   * Writes the next attribute to the stream as a <code>j86.java.sql.Date</code> object
    * in the Java programming language.
    *
    * @param x the value to pass to the database
@@ -194,11 +194,11 @@ package java.sql;
    * this method
    * @since 1.2
    */
-  void writeDate(java.sql.Date x) throws SQLException;
+  void writeDate(j86.java.sql.Date x) throws SQLException;
 
   /**
-   * Writes the next attribute to the stream as a java.sql.Time object.
-   * Writes the next attribute to the stream as a <code>java.sql.Date</code> object
+   * Writes the next attribute to the stream as a j86.java.sql.Time object.
+   * Writes the next attribute to the stream as a <code>j86.java.sql.Date</code> object
    * in the Java programming language.
    *
    * @param x the value to pass to the database
@@ -207,11 +207,11 @@ package java.sql;
    * this method
    * @since 1.2
    */
-  void writeTime(java.sql.Time x) throws SQLException;
+  void writeTime(j86.java.sql.Time x) throws SQLException;
 
   /**
-   * Writes the next attribute to the stream as a java.sql.Timestamp object.
-   * Writes the next attribute to the stream as a <code>java.sql.Date</code> object
+   * Writes the next attribute to the stream as a j86.java.sql.Timestamp object.
+   * Writes the next attribute to the stream as a <code>j86.java.sql.Date</code> object
    * in the Java programming language.
    *
    * @param x the value to pass to the database
@@ -220,7 +220,7 @@ package java.sql;
    * this method
    * @since 1.2
    */
-  void writeTimestamp(java.sql.Timestamp x) throws SQLException;
+  void writeTimestamp(j86.java.sql.Timestamp x) throws SQLException;
 
   /**
    * Writes the next attribute to the stream as a stream of Unicode characters.
@@ -231,7 +231,7 @@ package java.sql;
    * this method
    * @since 1.2
    */
-  void writeCharacterStream(java.io.Reader x) throws SQLException;
+  void writeCharacterStream(j86.java.io.Reader x) throws SQLException;
 
   /**
    * Writes the next attribute to the stream as a stream of ASCII characters.
@@ -242,7 +242,7 @@ package java.sql;
    * this method
    * @since 1.2
    */
-  void writeAsciiStream(java.io.InputStream x) throws SQLException;
+  void writeAsciiStream(j86.java.io.InputStream x) throws SQLException;
 
   /**
    * Writes the next attribute to the stream as a stream of uninterpreted
@@ -254,7 +254,7 @@ package java.sql;
    * this method
    * @since 1.2
    */
-  void writeBinaryStream(java.io.InputStream x) throws SQLException;
+  void writeBinaryStream(j86.java.io.InputStream x) throws SQLException;
 
   //================================================================
   // Methods for writing items of SQL user-defined types to the stream.
@@ -358,7 +358,7 @@ package java.sql;
      /**
       * Writes a SQL <code>DATALINK</code> value to the stream.
       *
-      * @param x a <code>java.net.URL</code> object representing the data
+      * @param x a <code>j86.java.net.URL</code> object representing the data
       * of SQL DATALINK type
       *
       * @exception SQLException if a database access error occurs
@@ -366,7 +366,7 @@ package java.sql;
       * this method
       * @since 1.4
       */
-     void writeURL(java.net.URL x) throws SQLException;
+     void writeURL(j86.java.net.URL x) throws SQLException;
 
      //--------------------------- JDBC 4.0 ------------------------
 
@@ -449,7 +449,7 @@ package java.sql;
    * write it to the SQL data stream.
    * If, on the other hand, the object is of a class implementing
    * {@code Ref}, {@code Blob}, {@code Clob},  {@code NClob},
-   *  {@code Struct}, {@code java.net.URL},
+   *  {@code Struct}, {@code j86.java.net.URL},
    * or {@code Array}, the driver should pass it to the database as a
    * value of the corresponding SQL type.
    *<P>

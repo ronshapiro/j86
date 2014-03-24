@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.awt;
+package j86.sun.awt;
 
 /**
  * Interface for identifying and casting toolkits that support

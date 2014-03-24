@@ -24,7 +24,7 @@
  */
 
 
-package sun.security.ssl;
+package j86.sun.security.ssl;
 
 
 /**

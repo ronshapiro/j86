@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.event;
+package j86.j86.javax.swing.event;
 
-import javax.swing.MenuElement;
-import javax.swing.MenuSelectionManager;
-import java.util.EventObject;
-import java.awt.event.KeyEvent;
-import java.awt.Component;
+import j86.javax.swing.MenuElement;
+import j86.javax.swing.MenuSelectionManager;
+import j86.java.util.EventObject;
+import j86.j86.java.awt.event.KeyEvent;
+import j86.java.awt.Component;
 
 
 /**
@@ -42,8 +42,8 @@ import java.awt.Component;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @author Georges Saab
  */
@@ -58,10 +58,10 @@ public class MenuKeyEvent extends KeyEvent {
      * @param source     the Component that originated the event
      *                     (typically <code>this</code>)
      * @param id         an int specifying the type of event, as defined
-     *                     in {@link java.awt.event.KeyEvent}
+     *                     in {@link j86.j86.java.awt.event.KeyEvent}
      * @param when       a long identifying the time the event occurred
      * @param modifiers     an int specifying any modifier keys held down,
-     *                      as specified in {@link java.awt.event.InputEvent}
+     *                      as specified in {@link j86.j86.java.awt.event.InputEvent}
      * @param keyCode    an int specifying the specific key that was pressed
      * @param keyChar    a char specifying the key's character value, if any
      *                   -- null if the key has no character value

@@ -23,18 +23,18 @@
  * questions.
  */
 
-package sun.security.util;
+package j86.sun.security.util;
 
 /**
  * <p> This class represents the <code>ResourceBundle</code>
- * for javax.security.auth and sun.security.
+ * for j86.javax.security.auth and sun.security.
  *
  */
-public class Resources_ko extends java.util.ListResourceBundle {
+public class Resources_ko extends j86.java.util.ListResourceBundle {
 
     private static final Object[][] contents = {
 
-        // javax.security.auth.PrivateCredentialPermission
+        // j86.javax.security.auth.PrivateCredentialPermission
         {"invalid.null.input.s.", "\uB110 \uC785\uB825\uAC12\uC774 \uBD80\uC801\uD569\uD569\uB2C8\uB2E4."},
         {"actions.can.only.be.read.", "\uC791\uC5C5\uC740 '\uC77D\uAE30' \uC804\uC6A9\uC785\uB2C8\uB2E4."},
         {"permission.name.name.syntax.invalid.",
@@ -52,12 +52,12 @@ public class Resources_ko extends java.util.ListResourceBundle {
         {"CredOwner.Principal.Class.class.Principal.Name.name",
                 "CredOwner:\n\t\uC8FC\uCCB4 \uD074\uB798\uC2A4 = {0}\n\t\uC8FC\uCCB4 \uC774\uB984 = {1}"},
 
-        // javax.security.auth.x500
+        // j86.j86.javax.security.auth.x500
         {"provided.null.name", "\uB110 \uC774\uB984\uC744 \uC81C\uACF5\uD588\uC2B5\uB2C8\uB2E4."},
         {"provided.null.keyword.map", "\uB110 \uD0A4\uC6CC\uB4DC \uB9F5\uC744 \uC81C\uACF5\uD588\uC2B5\uB2C8\uB2E4."},
         {"provided.null.OID.map", "\uB110 OID \uB9F5\uC744 \uC81C\uACF5\uD588\uC2B5\uB2C8\uB2E4."},
 
-        // javax.security.auth.Subject
+        // j86.javax.security.auth.Subject
         {"NEWLINE", "\n"},
         {"invalid.null.AccessControlContext.provided",
                 "\uBD80\uC801\uD569\uD55C \uB110 AccessControlContext\uAC00 \uC81C\uACF5\uB418\uC5C8\uC2B5\uB2C8\uB2E4."},
@@ -72,15 +72,15 @@ public class Resources_ko extends java.util.ListResourceBundle {
         {".Private.Credential.inaccessible.",
                 "\t\uC804\uC6A9 \uC778\uC99D\uC11C\uC5D0 \uC561\uC138\uC2A4\uD560 \uC218 \uC5C6\uC2B5\uB2C8\uB2E4.\n"},
         {"Subject.is.read.only", "\uC81C\uBAA9\uC774 \uC77D\uAE30 \uC804\uC6A9\uC785\uB2C8\uB2E4."},
-        {"attempting.to.add.an.object.which.is.not.an.instance.of.java.security.Principal.to.a.Subject.s.Principal.Set",
-                "java.security.Principal\uC758 \uC778\uC2A4\uD134\uC2A4\uAC00 \uC544\uB2CC \uAC1D\uCCB4\uB97C \uC81C\uBAA9\uC758 \uC8FC\uCCB4 \uC9D1\uD569\uC5D0 \uCD94\uAC00\uD558\uB824\uACE0 \uC2DC\uB3C4\uD558\uB294 \uC911"},
+        {"attempting.to.add.an.object.which.is.not.an.instance.of.j86.java.security.Principal.to.a.Subject.s.Principal.Set",
+                "j86.java.security.Principal\uC758 \uC778\uC2A4\uD134\uC2A4\uAC00 \uC544\uB2CC \uAC1D\uCCB4\uB97C \uC81C\uBAA9\uC758 \uC8FC\uCCB4 \uC9D1\uD569\uC5D0 \uCD94\uAC00\uD558\uB824\uACE0 \uC2DC\uB3C4\uD558\uB294 \uC911"},
         {"attempting.to.add.an.object.which.is.not.an.instance.of.class",
                 "{0}\uC758 \uC778\uC2A4\uD134\uC2A4\uAC00 \uC544\uB2CC \uAC1D\uCCB4\uB97C \uCD94\uAC00\uD558\uB824\uACE0 \uC2DC\uB3C4\uD558\uB294 \uC911"},
 
-        // javax.security.auth.login.AppConfigurationEntry
+        // j86.j86.javax.security.auth.login.AppConfigurationEntry
         {"LoginModuleControlFlag.", "LoginModuleControlFlag: "},
 
-        // javax.security.auth.login.LoginContext
+        // j86.j86.javax.security.auth.login.LoginContext
         {"Invalid.null.input.name", "\uBD80\uC801\uD569\uD55C \uB110 \uC785\uB825\uAC12: \uC774\uB984"},
         {"No.LoginModules.configured.for.name",
          "{0}\uC5D0 \uB300\uD574 \uAD6C\uC131\uB41C LoginModules\uAC00 \uC5C6\uC2B5\uB2C8\uB2E4."},
@@ -102,14 +102,14 @@ public class Resources_ko extends java.util.ListResourceBundle {
         {"Login.Failure.all.modules.ignored",
                 "\uB85C\uADF8\uC778 \uC2E4\uD328: \uBAA8\uB4E0 \uBAA8\uB4C8\uC774 \uBB34\uC2DC\uB418\uC5C8\uC2B5\uB2C8\uB2E4."},
 
-        // sun.security.provider.PolicyFile
+        // j86.sun.security.provider.PolicyFile
 
-        {"java.security.policy.error.parsing.policy.message",
-                "java.security.policy: {0}\uC758 \uAD6C\uBB38\uC744 \uBD84\uC11D\uD558\uB294 \uC911 \uC624\uB958 \uBC1C\uC0DD:\n\t{1}"},
-        {"java.security.policy.error.adding.Permission.perm.message",
-                "java.security.policy: {0} \uAD8C\uD55C\uC744 \uCD94\uAC00\uD558\uB294 \uC911 \uC624\uB958 \uBC1C\uC0DD:\n\t{1}"},
-        {"java.security.policy.error.adding.Entry.message",
-                "java.security.policy: \uD56D\uBAA9\uC744 \uCD94\uAC00\uD558\uB294 \uC911 \uC624\uB958 \uBC1C\uC0DD:\n\t{0}"},
+        {"j86.java.security.policy.error.parsing.policy.message",
+                "j86.java.security.policy: {0}\uC758 \uAD6C\uBB38\uC744 \uBD84\uC11D\uD558\uB294 \uC911 \uC624\uB958 \uBC1C\uC0DD:\n\t{1}"},
+        {"j86.java.security.policy.error.adding.Permission.perm.message",
+                "j86.java.security.policy: {0} \uAD8C\uD55C\uC744 \uCD94\uAC00\uD558\uB294 \uC911 \uC624\uB958 \uBC1C\uC0DD:\n\t{1}"},
+        {"j86.java.security.policy.error.adding.Entry.message",
+                "j86.java.security.policy: \uD56D\uBAA9\uC744 \uCD94\uAC00\uD558\uB294 \uC911 \uC624\uB958 \uBC1C\uC0DD:\n\t{0}"},
         {"alias.name.not.provided.pe.name.", "\uBCC4\uCE6D \uC774\uB984\uC774 \uC81C\uACF5\uB418\uC9C0 \uC54A\uC2B5\uB2C8\uB2E4({0})."},
         {"unable.to.perform.substitution.on.alias.suffix",
                 "{0} \uBCC4\uCE6D\uC744 \uB300\uCCB4\uD560 \uC218 \uC5C6\uC2B5\uB2C8\uB2E4."},
@@ -119,7 +119,7 @@ public class Resources_ko extends java.util.ListResourceBundle {
         {"RPARAM", ")"},
         {"type.can.t.be.null","\uC720\uD615\uC740 \uB110\uC77C \uC218 \uC5C6\uC2B5\uB2C8\uB2E4."},
 
-        // sun.security.provider.PolicyParser
+        // j86.sun.security.provider.PolicyParser
         {"keystorePasswordURL.can.not.be.specified.without.also.specifying.keystore",
                 "\uD0A4 \uC800\uC7A5\uC18C\uB97C \uC9C0\uC815\uD558\uC9C0 \uC54A\uACE0 keystorePasswordURL\uC744 \uC9C0\uC815\uD560 \uC218 \uC5C6\uC2B5\uB2C8\uB2E4."},
         {"expected.keystore.type", "\uD0A4 \uC800\uC7A5\uC18C \uC720\uD615\uC774 \uD544\uC694\uD569\uB2C8\uB2E4."},
@@ -146,12 +146,12 @@ public class Resources_ko extends java.util.ListResourceBundle {
         {"null.principalClass.or.principalName",
                 "principalClass \uB610\uB294 principalName\uC774 \uB110\uC785\uB2C8\uB2E4."},
 
-        // sun.security.pkcs11.SunPKCS11
+        // j86.j86.sun.security.pkcs11.SunPKCS11
         {"PKCS11.Token.providerName.Password.",
                 "PKCS11 \uD1A0\uD070 [{0}] \uBE44\uBC00\uBC88\uD638: "},
 
         /* --- DEPRECATED --- */
-        // javax.security.auth.Policy
+        // j86.javax.security.auth.Policy
         {"unable.to.instantiate.Subject.based.policy",
                 "\uC81C\uBAA9 \uAE30\uBC18 \uC815\uCC45\uC744 \uC778\uC2A4\uD134\uC2A4\uD654\uD560 \uC218 \uC5C6\uC2B5\uB2C8\uB2E4."}
     };

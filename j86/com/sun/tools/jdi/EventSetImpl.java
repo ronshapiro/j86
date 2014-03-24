@@ -23,13 +23,13 @@
  * questions.
  */
 
-package com.sun.tools.jdi;
+package j86.com.sun.tools.jdi;
 
-import com.sun.jdi.*;
-import com.sun.jdi.event.*;
-import com.sun.jdi.request.*;
+import j86.com.sun.jdi.*;
+import j86.j86.com.sun.jdi.event.*;
+import j86.j86.com.sun.jdi.request.*;
 
-import java.util.*;
+import j86.java.util.*;
 enum EventDestination {UNKNOWN_EVENT, INTERNAL_EVENT, CLIENT_EVENT};
 
 /*

@@ -23,18 +23,18 @@
  * questions.
  */
 
-package sun.nio.cs.ext;
+package j86.j86.j86.j86.sun.nio.cs.ext;
 
-import java.nio.ByteBuffer;
-import java.nio.CharBuffer;
-import java.nio.charset.Charset;
-import java.nio.charset.CharsetEncoder;
-import java.nio.charset.CharsetDecoder;
-import java.nio.charset.CoderResult;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.util.Arrays;
-import sun.nio.cs.CharsetMapping;
+import j86.java.nio.ByteBuffer;
+import j86.java.nio.CharBuffer;
+import j86.j86.java.nio.charset.Charset;
+import j86.j86.java.nio.charset.CharsetEncoder;
+import j86.j86.java.nio.charset.CharsetDecoder;
+import j86.j86.java.nio.charset.CoderResult;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.util.Arrays;
+import j86.j86.j86.sun.nio.cs.CharsetMapping;
 
 /*
  *  5 types of entry in SJIS_X_0213/Unicode mapping table

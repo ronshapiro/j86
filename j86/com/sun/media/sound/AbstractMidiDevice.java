@@ -23,13 +23,13 @@
  * questions.
  */
 
-package com.sun.media.sound;
+package j86.com.sun.media.sound;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Collections;
+import j86.java.util.ArrayList;
+import j86.java.util.List;
+import j86.java.util.Collections;
 
-import javax.sound.midi.*;
+import j86.javax.sound.midi.*;
 
 
 /**

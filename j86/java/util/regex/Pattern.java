@@ -23,21 +23,21 @@
  * questions.
  */
 
-package java.util.regex;
+package j86.j86.java.util.regex;
 
-import java.text.Normalizer;
-import java.util.Locale;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Arrays;
-import java.util.NoSuchElementException;
-import java.util.Spliterator;
-import java.util.Spliterators;
-import java.util.function.Predicate;
-import java.util.stream.Stream;
-import java.util.stream.StreamSupport;
+import j86.java.text.Normalizer;
+import j86.java.util.Locale;
+import j86.java.util.Iterator;
+import j86.java.util.Map;
+import j86.java.util.ArrayList;
+import j86.java.util.HashMap;
+import j86.java.util.Arrays;
+import j86.java.util.NoSuchElementException;
+import j86.java.util.Spliterator;
+import j86.java.util.Spliterators;
+import j86.j86.java.util.function.Predicate;
+import j86.j86.java.util.stream.Stream;
+import j86.j86.java.util.stream.StreamSupport;
 
 
 /**
@@ -46,7 +46,7 @@ import java.util.stream.StreamSupport;
  * <p> A regular expression, specified as a string, must first be compiled into
  * an instance of this class.  The resulting pattern can then be used to create
  * a {@link Matcher} object that can match arbitrary {@linkplain
- * java.lang.CharSequence character sequences} against the regular
+ * j86.java.lang.CharSequence character sequences} against the regular
  * expression.  All of the state involved in performing a match resides in the
  * matcher, so many matchers can share the same pattern.
  *
@@ -106,9 +106,9 @@ import java.util.stream.StreamSupport;
  *     <td headers="matches">The character with hexadecimal&nbsp;value&nbsp;<tt>0x</tt><i>hhhh</i></td></tr>
  * <tr><td valign="top" headers="construct characters"><tt>&#92;x</tt><i>{h...h}</i></td>
  *     <td headers="matches">The character with hexadecimal&nbsp;value&nbsp;<tt>0x</tt><i>h...h</i>
- *         ({@link java.lang.Character#MIN_CODE_POINT Character.MIN_CODE_POINT}
+ *         ({@link j86.java.lang.Character#MIN_CODE_POINT Character.MIN_CODE_POINT}
  *         &nbsp;&lt;=&nbsp;<tt>0x</tt><i>h...h</i>&nbsp;&lt;=&nbsp;
- *          {@link java.lang.Character#MAX_CODE_POINT Character.MAX_CODE_POINT})</td></tr>
+ *          {@link j86.java.lang.Character#MAX_CODE_POINT Character.MAX_CODE_POINT})</td></tr>
  * <tr><td valign="top" headers="matches"><tt>\t</tt></td>
  *     <td headers="matches">The tab character (<tt>'&#92;u0009'</tt>)</td></tr>
  * <tr><td valign="top" headers="construct characters"><tt>\n</tt></td>
@@ -206,16 +206,16 @@ import java.util.stream.StreamSupport;
  *     <td headers="matches">A whitespace character: {@code [ \t\n\x0B\f\r]}</td></tr>
  *
  * <tr><th>&nbsp;</th></tr>
- * <tr align="left"><th colspan="2">java.lang.Character classes (simple <a href="#jcc">java character type</a>)</th></tr>
+ * <tr align="left"><th colspan="2">j86.java.lang.Character classes (simple <a href="#jcc">java character type</a>)</th></tr>
  *
  * <tr><td valign="top"><tt>\p{javaLowerCase}</tt></td>
- *     <td>Equivalent to java.lang.Character.isLowerCase()</td></tr>
+ *     <td>Equivalent to j86.java.lang.Character.isLowerCase()</td></tr>
  * <tr><td valign="top"><tt>\p{javaUpperCase}</tt></td>
- *     <td>Equivalent to java.lang.Character.isUpperCase()</td></tr>
+ *     <td>Equivalent to j86.java.lang.Character.isUpperCase()</td></tr>
  * <tr><td valign="top"><tt>\p{javaWhitespace}</tt></td>
- *     <td>Equivalent to java.lang.Character.isWhitespace()</td></tr>
+ *     <td>Equivalent to j86.java.lang.Character.isWhitespace()</td></tr>
  * <tr><td valign="top"><tt>\p{javaMirrored}</tt></td>
- *     <td>Equivalent to java.lang.Character.isMirrored()</td></tr>
+ *     <td>Equivalent to j86.java.lang.Character.isMirrored()</td></tr>
  *
  * <tr><th>&nbsp;</th></tr>
  * <tr align="left"><th colspan="2" id="unicode">Classes for Unicode scripts, blocks, categories and binary properties</th></tr>
@@ -569,7 +569,7 @@ import java.util.stream.StreamSupport;
  * <p>
  * The script names supported by <code>Pattern</code> are the valid script names
  * accepted and defined by
- * {@link java.lang.Character.UnicodeScript#forName(String) UnicodeScript.forName}.
+ * {@link j86.java.lang.Character.UnicodeScript#forName(String) UnicodeScript.forName}.
  *
  * <p>
  * <b><a name="ubc">Blocks</a></b> are specified with the prefix {@code In}, as in
@@ -578,7 +578,7 @@ import java.util.stream.StreamSupport;
  * <p>
  * The block names supported by <code>Pattern</code> are the valid block names
  * accepted and defined by
- * {@link java.lang.Character.UnicodeBlock#forName(String) UnicodeBlock.forName}.
+ * {@link j86.java.lang.Character.UnicodeBlock#forName(String) UnicodeBlock.forName}.
  * <p>
  *
  * <b><a name="ucc">Categories</a></b> may be specified with the optional prefix {@code Is}:
@@ -590,7 +590,7 @@ import java.util.stream.StreamSupport;
  * The supported categories are those of
  * <a href="http://www.unicode.org/unicode/standard/standard.html">
  * <i>The Unicode Standard</i></a> in the version specified by the
- * {@link java.lang.Character Character} class. The category names are those
+ * {@link j86.java.lang.Character Character} class. The category names are those
  * defined in the Standard, both normative and informative.
  * <p>
  *
@@ -666,7 +666,7 @@ import java.util.stream.StreamSupport;
  * </table>
  * <p>
  * <a name="jcc">
- * Categories that behave like the java.lang.Character
+ * Categories that behave like the j86.java.lang.Character
  * boolean is<i>methodname</i> methods (except for the deprecated ones) are
  * available through the same <tt>\p{</tt><i>prop</i><tt>}</tt> syntax where
  * the specified property has the name <tt>java<i>methodname</i></tt></a>.
@@ -756,8 +756,8 @@ import java.util.stream.StreamSupport;
  * O'Reilly and Associates, 2006.</a>
  * </p>
  *
- * @see java.lang.String#split(String, int)
- * @see java.lang.String#split(String)
+ * @see j86.java.lang.String#split(String, int)
+ * @see j86.java.lang.String#split(String)
  *
  * @author      Mike McCloskey
  * @author      Mark Reinhold
@@ -767,7 +767,7 @@ import java.util.stream.StreamSupport;
  */
 
 public final class Pattern
-    implements java.io.Serializable
+    implements j86.java.io.Serializable
 {
 
     /**
@@ -1245,7 +1245,7 @@ public final class Pattern
      * Splits the given input sequence around matches of this pattern.
      *
      * <p> This method works as if by invoking the two-argument {@link
-     * #split(java.lang.CharSequence, int) split} method with the given input
+     * #split(j86.java.lang.CharSequence, int) split} method with the given input
      * sequence and a limit argument of zero.  Trailing empty strings are
      * therefore not included in the resulting array. </p>
      *
@@ -1310,8 +1310,8 @@ public final class Pattern
      * Recompile the Pattern instance from a stream.  The original pattern
      * string is read in and the object tree is recompiled from it.
      */
-    private void readObject(java.io.ObjectInputStream s)
-        throws java.io.IOException, ClassNotFoundException {
+    private void readObject(j86.java.io.ObjectInputStream s)
+        throws j86.java.io.IOException, ClassNotFoundException {
 
         // Read in all fields
         s.defaultReadObject();
@@ -1555,7 +1555,7 @@ loop:   for(int x=0, offset=0; x<nCodePoints; x++, offset+=len) {
     }
 
     private int getClass(int c) {
-        return sun.text.Normalizer.getCombiningClass(c);
+        return j86.sun.text.Normalizer.getCombiningClass(c);
     }
 
     /**

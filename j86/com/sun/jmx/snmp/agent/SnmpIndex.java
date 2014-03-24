@@ -24,19 +24,19 @@
  */
 
 
-package com.sun.jmx.snmp.agent;
+package j86.j86.com.sun.jmx.snmp.agent;
 
 
 
 // java imports
 //
-import java.io.Serializable;
-import java.util.Vector;
-import java.util.Enumeration;
+import j86.java.io.Serializable;
+import j86.java.util.Vector;
+import j86.java.util.Enumeration;
 
 // jmx imports
 //
-import com.sun.jmx.snmp.SnmpOid;
+import j86.com.sun.jmx.snmp.SnmpOid;
 
 /**
  * Represents a SNMP index.

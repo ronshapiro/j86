@@ -23,11 +23,11 @@
  * questions.
  */
 
-package javax.swing.text.html.parser;
+package j86.j86.j86.j86.javax.swing.text.html.parser;
 
-import java.util.Vector;
-import java.util.Enumeration;
-import java.io.*;
+import j86.java.util.Vector;
+import j86.java.util.Enumeration;
+import j86.java.io.*;
 
 
 /**

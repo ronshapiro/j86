@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.security.ssl;
+package j86.sun.security.ssl;
 
 /**
  * Type safe enum for an SSL/TLS protocol version. Instances are obtained

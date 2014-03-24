@@ -22,9 +22,9 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.event;
+package j86.j86.javax.swing.event;
 
-import javax.swing.RowSorter;
+import j86.javax.swing.RowSorter;
 
 /**
  * <code>RowSorterEvent</code> provides notification of changes to
@@ -37,10 +37,10 @@ import javax.swing.RowSorter;
  *     been sorted or filtered.
  * </ul>
  *
- * @see javax.swing.RowSorter
+ * @see j86.javax.swing.RowSorter
  * @since 1.6
  */
-public class RowSorterEvent extends java.util.EventObject {
+public class RowSorterEvent extends j86.java.util.EventObject {
     private Type type;
     private int[] oldViewToModel;
 

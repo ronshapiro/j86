@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.sound.midi;
+package j86.javax.sound.midi;
 
 /**
  * A <code>SysexMessage</code> object represents a MIDI system exclusive message.

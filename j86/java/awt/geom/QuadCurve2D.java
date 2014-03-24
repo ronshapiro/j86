@@ -23,12 +23,12 @@
  * questions.
  */
 
-package java.awt.geom;
+package j86.j86.java.awt.geom;
 
-import java.awt.Shape;
-import java.awt.Rectangle;
-import java.io.Serializable;
-import sun.awt.geom.Curve;
+import j86.java.awt.Shape;
+import j86.java.awt.Rectangle;
+import j86.java.io.Serializable;
+import j86.j86.sun.awt.geom.Curve;
 
 /**
  * The <code>QuadCurve2D</code> class defines a quadratic parametric curve
@@ -453,8 +453,8 @@ public abstract class QuadCurve2D implements Shape, Cloneable {
      * the information necessary to satisfy the various accessor
      * methods below.
      *
-     * @see java.awt.geom.QuadCurve2D.Float
-     * @see java.awt.geom.QuadCurve2D.Double
+     * @see j86.j86.java.awt.geom.QuadCurve2D.Float
+     * @see j86.j86.java.awt.geom.QuadCurve2D.Double
      * @since 1.2
      */
     protected QuadCurve2D() {
@@ -1387,7 +1387,7 @@ public abstract class QuadCurve2D implements Shape, Cloneable {
      *
      * @return     a clone of this instance.
      * @exception  OutOfMemoryError            if there is not enough memory.
-     * @see        java.lang.Cloneable
+     * @see        j86.java.lang.Cloneable
      * @since      1.2
      */
     public Object clone() {

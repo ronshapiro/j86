@@ -23,26 +23,26 @@
  * questions.
  */
 
-package sun.security.provider.certpath;
+package j86.j86.sun.security.provider.certpath;
 
-import java.io.IOException;
-import java.security.cert.CertificateException;
-import java.security.cert.CertPathValidatorException;
-import java.security.cert.PKIXCertPathChecker;
-import java.security.cert.X509Certificate;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.ListIterator;
-import javax.security.auth.x500.X500Principal;
+import j86.java.io.IOException;
+import j86.j86.java.security.cert.CertificateException;
+import j86.j86.java.security.cert.CertPathValidatorException;
+import j86.j86.java.security.cert.PKIXCertPathChecker;
+import j86.j86.java.security.cert.X509Certificate;
+import j86.java.util.ArrayList;
+import j86.java.util.HashSet;
+import j86.java.util.List;
+import j86.java.util.ListIterator;
+import j86.j86.javax.security.auth.x500.X500Principal;
 
-import sun.security.util.Debug;
-import sun.security.x509.SubjectAlternativeNameExtension;
-import sun.security.x509.GeneralNames;
-import sun.security.x509.GeneralName;
-import sun.security.x509.GeneralNameInterface;
-import sun.security.x509.X500Name;
-import sun.security.x509.X509CertImpl;
+import j86.sun.security.util.Debug;
+import j86.sun.security.x509.SubjectAlternativeNameExtension;
+import j86.sun.security.x509.GeneralNames;
+import j86.sun.security.x509.GeneralName;
+import j86.sun.security.x509.GeneralNameInterface;
+import j86.sun.security.x509.X500Name;
+import j86.sun.security.x509.X509CertImpl;
 
 /**
  * A specification of a forward PKIX validation state

@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.security;
+package j86.java.security;
 
-import java.security.spec.KeySpec;
-import java.security.spec.InvalidKeySpecException;
+import j86.j86.java.security.spec.KeySpec;
+import j86.j86.java.security.spec.InvalidKeySpecException;
 
 /**
  * This class defines the <i>Service Provider Interface</i> (<b>SPI</b>)
@@ -60,9 +60,9 @@ import java.security.spec.InvalidKeySpecException;
  * @see Key
  * @see PublicKey
  * @see PrivateKey
- * @see java.security.spec.KeySpec
- * @see java.security.spec.DSAPublicKeySpec
- * @see java.security.spec.X509EncodedKeySpec
+ * @see j86.j86.java.security.spec.KeySpec
+ * @see j86.j86.java.security.spec.DSAPublicKeySpec
+ * @see j86.j86.java.security.spec.X509EncodedKeySpec
  *
  * @since 1.2
  */

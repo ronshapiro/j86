@@ -23,12 +23,12 @@
  * questions.
  */
 
-package com.sun.tools.jdi;
+package j86.com.sun.tools.jdi;
 
-import com.sun.jdi.*;
-import com.sun.jdi.request.BreakpointRequest;
-import java.util.*;
-import java.lang.ref.WeakReference;
+import j86.com.sun.jdi.*;
+import j86.j86.com.sun.jdi.request.BreakpointRequest;
+import j86.java.util.*;
+import j86.j86.java.lang.ref.WeakReference;
 
 public class ThreadReferenceImpl extends ObjectReferenceImpl
              implements ThreadReference, VMListener {
@@ -240,7 +240,7 @@ public class ThreadReferenceImpl extends ObjectReferenceImpl
     public void stop(ObjectReference throwable) throws InvalidTypeException {
         validateMirror(throwable);
         // Verify that the given object is a Throwable instance
-        List<ReferenceType> list = vm.classesByName("java.lang.Throwable");
+        List<ReferenceType> list = vm.classesByName("j86.java.lang.Throwable");
         ClassTypeImpl throwableClass = (ClassTypeImpl)list.get(0);
         if ((throwable == null) ||
             !throwableClass.isAssignableFrom(throwable)) {

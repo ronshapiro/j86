@@ -22,36 +22,36 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.rmi.transport;
+package j86.sun.rmi.transport;
 
-import java.rmi.Remote;
-import java.rmi.RemoteException;
-import java.rmi.dgc.DGC;
-import java.rmi.dgc.Lease;
-import java.rmi.dgc.VMID;
-import java.rmi.server.LogStream;
-import java.rmi.server.ObjID;
-import java.rmi.server.RemoteServer;
-import java.rmi.server.ServerNotActiveException;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.util.concurrent.Future;
-import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.TimeUnit;
-import sun.rmi.runtime.Log;
-import sun.rmi.runtime.RuntimeUtil;
-import sun.rmi.server.UnicastRef;
-import sun.rmi.server.UnicastServerRef;
-import sun.rmi.server.Util;
-import sun.security.action.GetLongAction;
-import sun.security.action.GetPropertyAction;
+import j86.java.rmi.Remote;
+import j86.java.rmi.RemoteException;
+import j86.j86.java.rmi.dgc.DGC;
+import j86.j86.java.rmi.dgc.Lease;
+import j86.j86.java.rmi.dgc.VMID;
+import j86.j86.java.rmi.server.LogStream;
+import j86.j86.java.rmi.server.ObjID;
+import j86.j86.java.rmi.server.RemoteServer;
+import j86.j86.java.rmi.server.ServerNotActiveException;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.util.ArrayList;
+import j86.java.util.HashSet;
+import j86.java.util.HashMap;
+import j86.java.util.Iterator;
+import j86.java.util.List;
+import j86.java.util.Map;
+import j86.java.util.Set;
+import j86.j86.java.util.concurrent.Future;
+import j86.j86.java.util.concurrent.ScheduledExecutorService;
+import j86.j86.java.util.concurrent.TimeUnit;
+import j86.sun.rmi.runtime.Log;
+import j86.sun.rmi.runtime.RuntimeUtil;
+import j86.sun.rmi.server.UnicastRef;
+import j86.sun.rmi.server.UnicastServerRef;
+import j86.sun.rmi.server.Util;
+import j86.sun.security.action.GetLongAction;
+import j86.sun.security.action.GetPropertyAction;
 
 /**
  * This class implements the guts of the server-side distributed GC
@@ -70,7 +70,7 @@ final class DGCImpl implements DGC {
     /** lease duration to grant to clients */
     private static final long leaseValue =              // default 10 minutes
         AccessController.doPrivileged(
-            new GetLongAction("java.rmi.dgc.leaseValue", 600000));
+            new GetLongAction("j86.j86.java.rmi.dgc.leaseValue", 600000));
 
     /** lease check interval; default is half of lease grant duration */
     private static final long leaseCheckInterval =

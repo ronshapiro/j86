@@ -23,10 +23,10 @@
  * questions.
  */
 
-package com.sun.java.browser.net;
+package j86.com.sun.java.browser.net;
 
-import java.net.URL;
-import java.io.IOException;
+import j86.java.net.URL;
+import j86.java.io.IOException;
 
 /**
  *

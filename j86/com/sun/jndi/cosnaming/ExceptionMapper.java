@@ -23,11 +23,11 @@
  * questions.
  */
 
-package com.sun.jndi.cosnaming;
+package j86.com.sun.jndi.cosnaming;
 
-import javax.naming.*;
-import javax.naming.directory.*;
-import javax.naming.spi.*;
+import j86.javax.naming.*;
+import j86.j86.javax.naming.directory.*;
+import j86.j86.javax.naming.spi.*;
 
 import org.omg.CosNaming.*;
 import org.omg.CosNaming.NamingContextPackage.*;
@@ -173,21 +173,21 @@ public final class ExceptionMapper {
         }
 
         // Lookup resolved name to get resolved object
-        final java.lang.Object resolvedObj =
+        final j86.java.lang.Object resolvedObj =
             (resolvedName != null) ? ctx.callResolve(resolvedName) : ctx;
 
-        if (resolvedObj instanceof javax.naming.Context) {
+        if (resolvedObj instanceof j86.javax.naming.Context) {
             // obj is a context and child is not found
             // try getting its nns dynamically by constructing
             // a Reference containing obj.
             RefAddr addr = new RefAddr("nns") {
-                public java.lang.Object getContent() {
+                public j86.java.lang.Object getContent() {
                     return resolvedObj;
                 }
                 private static final long serialVersionUID =
                     669984699392133792L;
             };
-            Reference ref = new Reference("java.lang.Object", addr);
+            Reference ref = new Reference("j86.java.lang.Object", addr);
 
             // Resolved name has trailing slash to indicate nns
             CompositeName cname = new CompositeName();
@@ -195,14 +195,14 @@ public final class ExceptionMapper {
 
             cpe.setResolvedObj(ref);
             cpe.setAltName(cname);
-            cpe.setAltNameCtx((javax.naming.Context)resolvedObj);
+            cpe.setAltNameCtx((j86.javax.naming.Context)resolvedObj);
 
             return cpe;
         } else {
             // Not a context, use object factory to transform object.
 
             Name cname = CNNameParser.cosNameToName(resolvedName);
-            java.lang.Object resolvedObj2;
+            j86.java.lang.Object resolvedObj2;
             try {
                 resolvedObj2 = NamingManager.getObjectInstance(resolvedObj,
                     cname, ctx, ctx._env);
@@ -216,7 +216,7 @@ public final class ExceptionMapper {
             }
 
             // If a context, continue operation with context
-            if (resolvedObj2 instanceof javax.naming.Context) {
+            if (resolvedObj2 instanceof j86.javax.naming.Context) {
                 cpe.setResolvedObj(resolvedObj2);
             } else {
                 // Add trailing slash
@@ -224,15 +224,15 @@ public final class ExceptionMapper {
                 cpe.setAltName(cname);
 
                 // Create nns reference
-                final java.lang.Object rf2 = resolvedObj2;
+                final j86.java.lang.Object rf2 = resolvedObj2;
                 RefAddr addr = new RefAddr("nns") {
-                    public java.lang.Object getContent() {
+                    public j86.java.lang.Object getContent() {
                         return rf2;
                     }
                     private static final long serialVersionUID =
                         -785132553978269772L;
                 };
-                Reference ref = new Reference("java.lang.Object", addr);
+                Reference ref = new Reference("j86.java.lang.Object", addr);
                 cpe.setResolvedObj(ref);
                 cpe.setAltNameCtx(ctx);
             }

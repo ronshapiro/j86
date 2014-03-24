@@ -26,10 +26,10 @@
 /*
  */
 
-package sun.nio.ch;                                     // Formerly in sun.misc
+package j86.j86.j86.sun.nio.ch;                                     // Formerly in j86.sun.misc
 
-import java.nio.ByteOrder;
-import sun.misc.Unsafe;
+import j86.java.nio.ByteOrder;
+import j86.sun.misc.Unsafe;
 
 
 // ## In the fullness of time, this class will be eliminated
@@ -367,7 +367,7 @@ class NativeObject {                                    // package-private
     /**
      * Returns the byte order of the underlying hardware.
      *
-     * @return  An instance of {@link java.nio.ByteOrder}
+     * @return  An instance of {@link j86.java.nio.ByteOrder}
      */
     static ByteOrder byteOrder() {
         if (byteOrder != null)

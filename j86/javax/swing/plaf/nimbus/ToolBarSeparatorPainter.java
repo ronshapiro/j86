@@ -23,13 +23,13 @@
  * questions.
  */
 
-package javax.swing.plaf.nimbus;
+package j86.j86.j86.javax.swing.plaf.nimbus;
 
-import javax.swing.plaf.nimbus.AbstractRegionPainter.PaintContext.CacheMode;
-import java.awt.Dimension;
-import java.awt.Graphics2D;
-import java.awt.Insets;
-import javax.swing.JComponent;
+import j86.j86.j86.javax.swing.plaf.nimbus.AbstractRegionPainter.PaintContext.CacheMode;
+import j86.java.awt.Dimension;
+import j86.java.awt.Graphics2D;
+import j86.java.awt.Insets;
+import j86.javax.swing.JComponent;
 
 /**
  * A special painter implementation for tool bar separators in Nimbus.

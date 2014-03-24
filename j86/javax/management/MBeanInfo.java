@@ -23,22 +23,22 @@
  * questions.
  */
 
-package javax.management;
+package j86.javax.management;
 
-import java.io.IOException;
-import java.io.StreamCorruptedException;
-import java.io.Serializable;
-import java.io.ObjectOutputStream;
-import java.io.ObjectInputStream;
-import java.lang.reflect.Method;
-import java.util.Arrays;
-import java.util.Map;
-import java.util.WeakHashMap;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.util.Objects;
+import j86.java.io.IOException;
+import j86.java.io.StreamCorruptedException;
+import j86.java.io.Serializable;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectInputStream;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.util.Arrays;
+import j86.java.util.Map;
+import j86.java.util.WeakHashMap;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.util.Objects;
 
-import static javax.management.ImmutableDescriptor.nonNullDescriptor;
+import static j86.javax.management.ImmutableDescriptor.nonNullDescriptor;
 
 /**
  * <p>Describes the management interface exposed by an MBean; that is,

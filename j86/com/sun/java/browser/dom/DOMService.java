@@ -23,14 +23,14 @@
  * questions.
  */
 
-package com.sun.java.browser.dom;
+package j86.com.sun.java.browser.dom;
 
 public abstract class DOMService
 {
     /**
      * Returns new instance of a DOMService. The implementation
      * of the DOMService returns depends on the setting of the
-     * com.sun.java.browser.dom.DOMServiceProvider property or,
+     * j86.com.sun.java.browser.dom.DOMServiceProvider property or,
      * if the property is not set, a platform specific default.
      *
      * Throws DOMUnsupportedException if the DOMService is not
@@ -43,8 +43,8 @@ public abstract class DOMService
     {
         try
         {
-            String provider = (String) java.security.AccessController.doPrivileged(
-                   new sun.security.action.GetPropertyAction("com.sun.java.browser.dom.DOMServiceProvider"));
+            String provider = (String) j86.java.security.AccessController.doPrivileged(
+                   new j86.sun.security.action.GetPropertyAction("j86.com.sun.java.browser.dom.DOMServiceProvider"));
 
             Class clazz = DOMService.class.forName("sun.plugin.dom.DOMService");
 

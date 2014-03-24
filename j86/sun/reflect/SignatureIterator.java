@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.reflect;
+package j86.sun.reflect;
 
 /** Assists in iterating down a method's signature */
 

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.awt.datatransfer;
+package j86.j86.sun.awt.datatransfer;
 
 public interface ToolkitThreadBlockedHandler {
     public void lock();

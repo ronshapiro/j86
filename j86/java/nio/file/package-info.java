@@ -27,9 +27,9 @@
  * Defines interfaces and classes for the Java virtual machine to access files,
  * file attributes, and file systems.
  *
- * <p> The java.nio.file package defines classes to access files and file
+ * <p> The j86.j86.java.nio.file package defines classes to access files and file
  * systems. The API to access file and file system attributes is defined in the
- * {@link java.nio.file.attribute} package. The {@link java.nio.file.spi}
+ * {@link j86.j86.j86.java.nio.file.attribute} package. The {@link j86.java.nio.file.spi}
  * package is used by service provider implementors wishing to extend the
  * platform default provider, or to construct other provider implementations. </p>
  *
@@ -46,13 +46,13 @@
  * not included in this package. </p>
  *
  * <h3><a name="interop">Interoperability</a></h3>
- * <p> The {@link java.io.File} class defines the {@link java.io.File#toPath
- * toPath} method to construct a {@link java.nio.file.Path} by converting
- * the abstract path represented by the {@code java.io.File} object. The resulting
+ * <p> The {@link j86.java.io.File} class defines the {@link java.io.File#toPath
+ * toPath} method to construct a {@link j86.j86.java.nio.file.Path} by converting
+ * the abstract path represented by the {@code j86.java.io.File} object. The resulting
  * {@code Path} can be used to operate on the same file as the {@code File}
  * object. The {@code Path} specification provides further information
  * on the <a href="Path.html#interop">interoperability</a> between {@code Path}
- * and {@code java.io.File} objects. </p>
+ * and {@code j86.java.io.File} objects. </p>
  *
  * <h3>Visibility</h3>
  * <p> The view of the files and file system provided by classes in this package are
@@ -66,46 +66,46 @@
  * system-dependent and are therefore unspecified. </p>
  *
  * <h3><a name="integrity">Synchronized I/O File Integrity</a></h3>
- * <p> The {@link java.nio.file.StandardOpenOption#SYNC SYNC} and {@link
- * java.nio.file.StandardOpenOption#DSYNC DSYNC} options are used when opening a file
+ * <p> The {@link j86.j86.java.nio.file.StandardOpenOption#SYNC SYNC} and {@link
+ * j86.j86.java.nio.file.StandardOpenOption#DSYNC DSYNC} options are used when opening a file
  * to require that updates to the file are written synchronously to the underlying
  * storage device. In the case of the default provider, and the file resides on
- * a local storage device, and the {@link java.nio.channels.SeekableByteChannel
+ * a local storage device, and the {@link j86.j86.java.nio.channels.SeekableByteChannel
  * seekable} channel is connected to a file that was opened with one of these
  * options, then an invocation of the {@link
- * java.nio.channels.WritableByteChannel#write(java.nio.ByteBuffer) write}
+ * j86.j86.java.nio.channels.WritableByteChannel#write(java.nio.ByteBuffer) write}
  * method is only guaranteed to return when all changes made to the file
  * by that invocation have been written to the device. These options are useful
  * for ensuring that critical information is not lost in the event of a system
  * crash. If the file does not reside on a local device then no such guarantee
  * is made. Whether this guarantee is possible with other {@link
- * java.nio.file.spi.FileSystemProvider provider} implementations is provider
+ * j86.j86.j86.java.nio.file.spi.FileSystemProvider provider} implementations is provider
  * specific. </p>
  *
  * <h3>General Exceptions</h3>
  * <p> Unless otherwise noted, passing a {@code null} argument to a constructor
  * or method of any class or interface in this package will cause a {@link
- * java.lang.NullPointerException NullPointerException} to be thrown. Additionally,
+ * j86.java.lang.NullPointerException NullPointerException} to be thrown. Additionally,
  * invoking a method with a collection containing a {@code null} element will
  * cause a {@code NullPointerException}, unless otherwise specified. </p>
  *
  * <p> Unless otherwise noted, methods that attempt to access the file system
- * will throw {@link java.nio.file.ClosedFileSystemException} when invoked on
- * objects associated with a {@link java.nio.file.FileSystem} that has been
- * {@link java.nio.file.FileSystem#close closed}. Additionally, any methods
+ * will throw {@link j86.j86.java.nio.file.ClosedFileSystemException} when invoked on
+ * objects associated with a {@link j86.j86.java.nio.file.FileSystem} that has been
+ * {@link j86.j86.java.nio.file.FileSystem#close closed}. Additionally, any methods
  * that attempt write access to a file system will throw {@link
- * java.nio.file.ReadOnlyFileSystemException} when invoked on an object associated
- * with a {@link java.nio.file.FileSystem} that only provides read-only
+ * j86.j86.java.nio.file.ReadOnlyFileSystemException} when invoked on an object associated
+ * with a {@link j86.j86.java.nio.file.FileSystem} that only provides read-only
  * access. </p>
  *
  * <p> Unless otherwise noted, invoking a method of any class or interface in
- * this package created by one {@link java.nio.file.spi.FileSystemProvider
+ * this package created by one {@link j86.j86.j86.java.nio.file.spi.FileSystemProvider
  * provider} with a parameter that is an object created by another provider,
- * will throw {@link java.nio.file.ProviderMismatchException}. </p>
+ * will throw {@link j86.j86.java.nio.file.ProviderMismatchException}. </p>
  *
  * <h3>Optional Specific Exceptions</h3>
  * Most of the methods defined by classes in this package that access the
- * file system specify that {@link java.io.IOException} be thrown when an I/O
+ * file system specify that {@link j86.java.io.IOException} be thrown when an I/O
  * error occurs. In some cases, these methods define specific I/O exceptions
  * for common cases. These exceptions, noted as <i>optional specific exceptions</i>,
  * are thrown by the implementation where it can detect the specific error.
@@ -114,4 +114,4 @@
  *
  * @since 1.7
  */
-package java.nio.file;
+package j86.j86.java.nio.file;

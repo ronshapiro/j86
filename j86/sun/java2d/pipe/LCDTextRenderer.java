@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.java2d.pipe;
+package j86.j86.sun.java2d.pipe;
 
-import java.awt.font.GlyphVector;
-import sun.java2d.SunGraphics2D;
-import sun.font.GlyphList;
-import static sun.awt.SunHints.*;
+import j86.j86.java.awt.font.GlyphVector;
+import j86.sun.java2d.SunGraphics2D;
+import j86.sun.font.GlyphList;
+import static j86.sun.awt.SunHints.*;
 
 /**
  * A delegate pipe of SG2D for drawing LCD text with

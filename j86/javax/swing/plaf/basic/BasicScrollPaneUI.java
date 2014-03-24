@@ -23,26 +23,26 @@
  * questions.
  */
 
-package javax.swing.plaf.basic;
+package j86.j86.j86.javax.swing.plaf.basic;
 
-import sun.swing.DefaultLookup;
-import sun.swing.UIAction;
+import j86.sun.swing.DefaultLookup;
+import j86.sun.swing.UIAction;
 
-import javax.swing.*;
-import javax.swing.event.*;
-import javax.swing.border.*;
-import javax.swing.plaf.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.event.*;
+import j86.j86.javax.swing.border.*;
+import j86.j86.javax.swing.plaf.*;
 
-import java.beans.PropertyChangeListener;
-import java.beans.PropertyChangeEvent;
+import j86.java.beans.PropertyChangeListener;
+import j86.java.beans.PropertyChangeEvent;
 
-import java.awt.Component;
-import java.awt.Rectangle;
-import java.awt.Dimension;
-import java.awt.Point;
-import java.awt.Insets;
-import java.awt.Graphics;
-import java.awt.event.*;
+import j86.java.awt.Component;
+import j86.java.awt.Rectangle;
+import j86.java.awt.Dimension;
+import j86.java.awt.Point;
+import j86.java.awt.Insets;
+import j86.java.awt.Graphics;
+import j86.j86.java.awt.event.*;
 
 /**
  * A default L&amp;F implementation of ScrollPaneUI.
@@ -358,7 +358,7 @@ public class BasicScrollPaneUI
      *
      * @throws NullPointerException {@inheritDoc}
      * @throws IllegalArgumentException {@inheritDoc}
-     * @see javax.swing.JComponent#getBaseline(int, int)
+     * @see j86.javax.swing.JComponent#getBaseline(int, int)
      * @since 1.6
      */
     public int getBaseline(JComponent c, int width, int height) {
@@ -422,7 +422,7 @@ public class BasicScrollPaneUI
      * changes as the size changes.
      *
      * @throws NullPointerException {@inheritDoc}
-     * @see javax.swing.JComponent#getBaseline(int, int)
+     * @see j86.javax.swing.JComponent#getBaseline(int, int)
      * @since 1.6
      */
     public Component.BaselineResizeBehavior getBaselineResizeBehavior(
@@ -526,10 +526,10 @@ public class BasicScrollPaneUI
      * <code>isWheelScrollingEnabled</code>
      * method returns false, no scrolling occurs.
      *
-     * @see javax.swing.JScrollPane#isWheelScrollingEnabled
+     * @see j86.javax.swing.JScrollPane#isWheelScrollingEnabled
      * @see #createMouseWheelListener
-     * @see java.awt.event.MouseWheelListener
-     * @see java.awt.event.MouseWheelEvent
+     * @see j86.j86.java.awt.event.MouseWheelListener
+     * @see j86.j86.java.awt.event.MouseWheelEvent
      * @since 1.4
      */
     protected class MouseWheelHandler implements MouseWheelListener {
@@ -698,7 +698,7 @@ public class BasicScrollPaneUI
      * }
      * </pre>
      *
-     * @see java.beans.PropertyChangeListener
+     * @see j86.java.beans.PropertyChangeListener
      * @see #installUI
      */
     protected PropertyChangeListener createPropertyChangeListener() {

@@ -23,18 +23,18 @@
  * questions.
  */
 
-package java.util;
-import java.io.*;
-import java.util.concurrent.atomic.AtomicLong;
-import java.util.function.DoubleConsumer;
-import java.util.function.IntConsumer;
-import java.util.function.LongConsumer;
-import java.util.stream.DoubleStream;
-import java.util.stream.IntStream;
-import java.util.stream.LongStream;
-import java.util.stream.StreamSupport;
+package j86.java.util;
+import j86.java.io.*;
+import j86.j86.j86.java.util.concurrent.atomic.AtomicLong;
+import j86.j86.java.util.function.DoubleConsumer;
+import j86.j86.java.util.function.IntConsumer;
+import j86.j86.java.util.function.LongConsumer;
+import j86.j86.java.util.stream.DoubleStream;
+import j86.j86.java.util.stream.IntStream;
+import j86.j86.java.util.stream.LongStream;
+import j86.j86.java.util.stream.StreamSupport;
 
-import sun.misc.Unsafe;
+import j86.sun.misc.Unsafe;
 
 /**
  * An instance of this class is used to generate a stream of
@@ -58,15 +58,15 @@ import sun.misc.Unsafe;
  * <p>
  * Many applications will find the method {@link Math#random} simpler to use.
  *
- * <p>Instances of {@code java.util.Random} are threadsafe.
- * However, the concurrent use of the same {@code java.util.Random}
+ * <p>Instances of {@code j86.java.util.Random} are threadsafe.
+ * However, the concurrent use of the same {@code j86.java.util.Random}
  * instance across threads may encounter contention and consequent
  * poor performance. Consider instead using
- * {@link java.util.concurrent.ThreadLocalRandom} in multithreaded
+ * {@link j86.j86.java.util.concurrent.ThreadLocalRandom} in multithreaded
  * designs.
  *
- * <p>Instances of {@code java.util.Random} are not cryptographically
- * secure.  Consider instead using {@link java.security.SecureRandom} to
+ * <p>Instances of {@code j86.java.util.Random} are not cryptographically
+ * secure.  Consider instead using {@link j86.java.security.SecureRandom} to
  * get a cryptographically secure pseudo-random number generator for use
  * by security-sensitive applications.
  *
@@ -74,7 +74,7 @@ import sun.misc.Unsafe;
  * @since   1.0
  */
 public
-class Random implements java.io.Serializable {
+class Random implements j86.java.io.Serializable {
     /** use serialVersionUID from JDK 1.1 for interoperability */
     static final long serialVersionUID = 3905348978240129619L;
 
@@ -1178,8 +1178,8 @@ class Random implements java.io.Serializable {
      * Reconstitute the {@code Random} instance from a stream (that is,
      * deserialize it).
      */
-    private void readObject(java.io.ObjectInputStream s)
-        throws java.io.IOException, ClassNotFoundException {
+    private void readObject(j86.java.io.ObjectInputStream s)
+        throws j86.java.io.IOException, ClassNotFoundException {
 
         ObjectInputStream.GetField fields = s.readFields();
 
@@ -1187,7 +1187,7 @@ class Random implements java.io.Serializable {
         // historical reasons, but it is converted to an AtomicLong.
         long seedVal = fields.get("seed", -1L);
         if (seedVal < 0)
-          throw new java.io.StreamCorruptedException(
+          throw new j86.java.io.StreamCorruptedException(
                               "Random: invalid seed");
         resetSeed(seedVal);
         nextNextGaussian = fields.get("nextNextGaussian", 0.0);

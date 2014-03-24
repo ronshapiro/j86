@@ -24,13 +24,13 @@
  */
 
 
-package javax.management.openmbean;
+package j86.j86.javax.management.openmbean;
 
 
 // java import
 //
-import java.util.Set;
-import java.lang.Comparable; // to be substituted for jdk1.1.x
+import j86.java.util.Set;
+import j86.java.lang.Comparable; // to be substituted for jdk1.1.x
 
 
 // jmx import
@@ -42,9 +42,9 @@ import java.lang.Comparable; // to be substituted for jdk1.1.x
  * constructors of an open MBean.</p>
  *
  * <p>This interface declares the same methods as the class {@link
- * javax.management.MBeanParameterInfo}.  A class implementing this
+ * j86.javax.management.MBeanParameterInfo}.  A class implementing this
  * interface (typically {@link OpenMBeanParameterInfoSupport}) should
- * extend {@link javax.management.MBeanParameterInfo}.</p>
+ * extend {@link j86.javax.management.MBeanParameterInfo}.</p>
  *
  *
  * @since 1.5
@@ -201,7 +201,7 @@ public interface OpenMBeanParameterInfo {
     /**
      * Returns a string representation of this <code>OpenMBeanParameterInfo</code> instance.
      * <p>
-     * The string representation consists of the name of this class (ie <code>javax.management.openmbean.OpenMBeanParameterInfo</code>),
+     * The string representation consists of the name of this class (ie <code>j86.j86.javax.management.openmbean.OpenMBeanParameterInfo</code>),
      * the string representation of the name and open type of the described parameter,
      * and the string representation of its default, min, max and legal values.
      *

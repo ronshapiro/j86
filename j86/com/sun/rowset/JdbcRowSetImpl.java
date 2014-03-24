@@ -23,16 +23,16 @@
  * questions.
  */
 
-package com.sun.rowset;
+package j86.com.sun.rowset;
 
-import java.sql.*;
-import javax.sql.*;
-import javax.naming.*;
-import java.io.*;
-import java.math.*;
-import java.util.*;
+import j86.java.sql.*;
+import j86.javax.sql.*;
+import j86.javax.naming.*;
+import j86.java.io.*;
+import j86.java.math.*;
+import j86.java.util.*;
 
-import javax.sql.rowset.*;
+import j86.j86.javax.sql.rowset.*;
 
 /**
  * The standard implementation of the <code>JdbcRowSet</code> interface. See the interface
@@ -630,7 +630,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
                      return ds.getConnection();
                 }
             }
-            catch (javax.naming.NamingException ex) {
+            catch (j86.javax.naming.NamingException ex) {
                 throw new SQLException(resBundle.handleGetObject("jdbcrowsetimpl.connect").toString());
             }
 
@@ -699,14 +699,14 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
                         continue;
                     }
 
-                    if (param[0] instanceof java.sql.Date ||
-                        param[0] instanceof java.sql.Time ||
-                        param[0] instanceof java.sql.Timestamp) {
+                    if (param[0] instanceof j86.java.sql.Date ||
+                        param[0] instanceof j86.java.sql.Time ||
+                        param[0] instanceof j86.java.sql.Timestamp) {
                         System.err.println(resBundle.handleGetObject("jdbcrowsetimpl.detecteddate"));
-                        if (param[1] instanceof java.util.Calendar) {
+                        if (param[1] instanceof j86.java.util.Calendar) {
                             System.err.println(resBundle.handleGetObject("jdbcrowsetimpl.detectedcalendar"));
-                            ps.setDate(i + 1, (java.sql.Date)param[0],
-                                       (java.util.Calendar)param[1]);
+                            ps.setDate(i + 1, (j86.java.sql.Date)param[0],
+                                       (j86.java.util.Calendar)param[1]);
                             continue;
                         }
                         else {
@@ -736,21 +736,21 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
                         continue;
                     }
 
-                    if (param[0] instanceof java.io.InputStream) {
+                    if (param[0] instanceof j86.java.io.InputStream) {
                         switch (((Integer)param[2]).intValue()) {
                         case JdbcRowSetImpl.UNICODE_STREAM_PARAM:
                             ps.setUnicodeStream(i + 1,
-                                                (java.io.InputStream)param[0],
+                                                (j86.java.io.InputStream)param[0],
                                                 ((Integer)param[1]).intValue());
                             break;
                         case JdbcRowSetImpl.BINARY_STREAM_PARAM:
                             ps.setBinaryStream(i + 1,
-                                               (java.io.InputStream)param[0],
+                                               (j86.java.io.InputStream)param[0],
                                                ((Integer)param[1]).intValue());
                             break;
                         case JdbcRowSetImpl.ASCII_STREAM_PARAM:
                             ps.setAsciiStream(i + 1,
-                                              (java.io.InputStream)param[0],
+                                              (j86.java.io.InputStream)param[0],
                                               ((Integer)param[1]).intValue());
                             break;
                         default:
@@ -1005,7 +1005,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
     /**
      * Gets the value of the designated column in the current row
      * of this rowset's <code>ResultSet</code> object as
-     * a <code>java.sql.BigDecimal</code>.
+     * a <code>j86.java.sql.BigDecimal</code>.
      *
      * @param columnIndex the first column is 1, the second is 2, and so on
      * @param scale the number of digits to the right of the decimal point
@@ -1045,7 +1045,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
     /**
      * Gets the value of the designated column in the current row
      * of this rowset's <code>ResultSet</code> object as
-     * a <code>java.sql.Date</code> object in the Java programming language.
+     * a <code>j86.java.sql.Date</code> object in the Java programming language.
      *
      * @param columnIndex the first column is 1, the second is 2, and so on
      * @return the column value; if the value is SQL <code>NULL</code>, the
@@ -1054,7 +1054,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
      *            or (2) this rowset does not have a currently valid connection,
      *            prepared statement, and result set
      */
-    public java.sql.Date getDate(int columnIndex) throws SQLException {
+    public j86.java.sql.Date getDate(int columnIndex) throws SQLException {
         checkState();
 
         return rs.getDate(columnIndex);
@@ -1063,7 +1063,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
     /**
      * Gets the value of the designated column in the current row
      * of this rowset's <code>ResultSet</code> object as
-     * a <code>java.sql.Time</code> object in the Java programming language.
+     * a <code>j86.java.sql.Time</code> object in the Java programming language.
      *
      * @param columnIndex the first column is 1, the second is 2, and so on
      * @return the column value; if the value is SQL <code>NULL</code>, the
@@ -1072,7 +1072,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
      *            or (2) this rowset does not have a currently valid connection,
      *            prepared statement, and result set
      */
-    public java.sql.Time getTime(int columnIndex) throws SQLException {
+    public j86.java.sql.Time getTime(int columnIndex) throws SQLException {
         checkState();
 
         return rs.getTime(columnIndex);
@@ -1081,7 +1081,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
     /**
      * Gets the value of the designated column in the current row
      * of this rowset's <code>ResultSet</code> object as
-     * a <code>java.sql.Timestamp</code> object in the Java programming language.
+     * a <code>j86.java.sql.Timestamp</code> object in the Java programming language.
      *
      * @param columnIndex the first column is 1, the second is 2, and so on
      * @return the column value; if the value is SQL <code>NULL</code>, the
@@ -1090,7 +1090,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
      *            or (2) this rowset does not have a currently valid connection,
      *            prepared statement, and result set
      */
-    public java.sql.Timestamp getTimestamp(int columnIndex) throws SQLException {
+    public j86.java.sql.Timestamp getTimestamp(int columnIndex) throws SQLException {
         checkState();
 
         return rs.getTimestamp(columnIndex);
@@ -1121,7 +1121,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
      *            (2) this rowset does not have a currently valid connection,
      *            prepared statement, and result set
      */
-    public java.io.InputStream getAsciiStream(int columnIndex) throws SQLException {
+    public j86.java.io.InputStream getAsciiStream(int columnIndex) throws SQLException {
         checkState();
 
         return rs.getAsciiStream(columnIndex);
@@ -1156,7 +1156,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
      *              <code>getUnicodeStream</code>
      */
     @Deprecated
-    public java.io.InputStream getUnicodeStream(int columnIndex) throws SQLException {
+    public j86.java.io.InputStream getUnicodeStream(int columnIndex) throws SQLException {
         checkState();
 
         return rs.getUnicodeStream(columnIndex);
@@ -1185,7 +1185,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
      *            or (2) this rowset does not have a currently valid connection,
      *            prepared statement, and result set
      */
-    public java.io.InputStream getBinaryStream(int columnIndex) throws SQLException {
+    public j86.java.io.InputStream getBinaryStream(int columnIndex) throws SQLException {
         checkState();
 
         return rs.getBinaryStream(columnIndex);
@@ -1327,7 +1327,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
     /**
      * Gets the value of the designated column in the current row
      * of this rowset's <code>ResultSet</code> object as
-     * a <code>java.math.BigDecimal</code>.
+     * a <code>j86.java.math.BigDecimal</code>.
      *
      * @param columnName the SQL name of the column
      * @param scale the number of digits to the right of the decimal point
@@ -1363,7 +1363,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
     /**
      * Gets the value of the designated column in the current row
      * of this rowset's <code>ResultSet</code> object as
-     * a <code>java.sql.Date</code> object in the Java programming language.
+     * a <code>j86.java.sql.Date</code> object in the Java programming language.
      *
      * @param columnName the SQL name of the column
      * @return the column value; if the value is SQL <code>NULL</code>, the
@@ -1372,14 +1372,14 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
      *            or (2) this rowset does not have a currently valid connection,
      *            prepared statement, and result set
      */
-    public java.sql.Date getDate(String columnName) throws SQLException {
+    public j86.java.sql.Date getDate(String columnName) throws SQLException {
         return getDate(findColumn(columnName));
     }
 
     /**
      * Gets the value of the designated column in the current row
      * of this rowset's <code>ResultSet</code> object as
-     * a <code>java.sql.Time</code> object in the Java programming language.
+     * a <code>j86.java.sql.Time</code> object in the Java programming language.
      *
      * @param columnName the SQL name of the column
      * @return the column value;
@@ -1389,14 +1389,14 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
      *            or (2) this rowset does not have a currently valid connection,
      *            prepared statement, and result set
      */
-    public java.sql.Time getTime(String columnName) throws SQLException {
+    public j86.java.sql.Time getTime(String columnName) throws SQLException {
         return getTime(findColumn(columnName));
     }
 
     /**
      * Gets the value of the designated column in the current row
      * of this rowset's <code>ResultSet</code> object as
-     * a <code>java.sql.Timestamp</code> object.
+     * a <code>j86.java.sql.Timestamp</code> object.
      *
      * @param columnName the SQL name of the column
      * @return the column value; if the value is SQL <code>NULL</code>, the
@@ -1405,7 +1405,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
      *            or (2) this rowset does not have a currently valid connection,
      *            prepared statement, and result set
      */
-    public java.sql.Timestamp getTimestamp(String columnName) throws SQLException {
+    public j86.java.sql.Timestamp getTimestamp(String columnName) throws SQLException {
         return getTimestamp(findColumn(columnName));
     }
 
@@ -1433,7 +1433,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
      *            or (2) this rowset does not have a currently valid connection,
      *            prepared statement, and result set
      */
-    public java.io.InputStream getAsciiStream(String columnName) throws SQLException {
+    public j86.java.io.InputStream getAsciiStream(String columnName) throws SQLException {
         return getAsciiStream(findColumn(columnName));
     }
 
@@ -1465,7 +1465,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
      * @deprecated
      */
     @Deprecated
-    public java.io.InputStream getUnicodeStream(String columnName) throws SQLException {
+    public j86.java.io.InputStream getUnicodeStream(String columnName) throws SQLException {
         return getUnicodeStream(findColumn(columnName));
     }
 
@@ -1492,7 +1492,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
      *            or (2) this rowset does not have a currently valid connection,
      *            prepared statement, and result set
      */
-    public java.io.InputStream getBinaryStream(String columnName) throws SQLException {
+    public j86.java.io.InputStream getBinaryStream(String columnName) throws SQLException {
         return getBinaryStream(findColumn(columnName));
     }
 
@@ -1627,7 +1627,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
      * this.getStatement().getConnection().getTypeMap())</code>.
      *
      * @param columnIndex the first column is 1, the second is 2, and so on
-     * @return a <code>java.lang.Object</code> holding the column value
+     * @return a <code>j86.java.lang.Object</code> holding the column value
      * @throws SQLException if (1) a database access error occurs
      *            or (2) this rowset does not currently have a valid connection,
      *            prepared statement, and result set
@@ -1660,7 +1660,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
      * this.getStatement().getConnection().getTypeMap())</code>.
      *
      * @param columnName the SQL name of the column
-     * @return a <code>java.lang.Object</code> holding the column value
+     * @return a <code>j86.java.lang.Object</code> holding the column value
      * @throws SQLException if (1) a database access error occurs
      *            or (2) this rowset does not currently have a valid connection,
      *            prepared statement, and result set
@@ -1698,14 +1698,14 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
     /**
      * Gets the value of the designated column in the current row
      * of this rowset's <code>ResultSet</code> object as a
-     * <code>java.io.Reader</code> object.
-     * @return a <code>java.io.Reader</code> object that contains the column
+     * <code>j86.java.io.Reader</code> object.
+     * @return a <code>j86.java.io.Reader</code> object that contains the column
      * value; if the value is SQL <code>NULL</code>, the value returned is
      * <code>null</code>.
      * @param columnIndex the first column is 1, the second is 2, and so on
      *
      */
-    public java.io.Reader getCharacterStream(int columnIndex) throws SQLException {
+    public j86.java.io.Reader getCharacterStream(int columnIndex) throws SQLException {
         checkState();
 
         return rs.getCharacterStream(columnIndex);
@@ -1714,23 +1714,23 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
     /**
      * Gets the value of the designated column in the current row
      * of this rowset's <code>ResultSet</code> object as a
-     * <code>java.io.Reader</code> object.
+     * <code>j86.java.io.Reader</code> object.
      *
-     * @return a <code>java.io.Reader</code> object that contains the column
+     * @return a <code>j86.java.io.Reader</code> object that contains the column
      * value; if the value is SQL <code>NULL</code>, the value returned is
      * <code>null</code>.
      * @param columnName the name of the column
-     * @return the value in the specified column as a <code>java.io.Reader</code>
+     * @return the value in the specified column as a <code>j86.java.io.Reader</code>
      *
      */
-    public java.io.Reader getCharacterStream(String columnName) throws SQLException {
+    public j86.java.io.Reader getCharacterStream(String columnName) throws SQLException {
         return getCharacterStream(findColumn(columnName));
     }
 
     /**
      * Gets the value of the designated column in the current row
      * of this rowset's <code>ResultSet</code> object as a
-     * <code>java.math.BigDecimal</code> with full precision.
+     * <code>j86.java.math.BigDecimal</code> with full precision.
      *
      * @param columnIndex the first column is 1, the second is 2, and so on
      * @return the column value (full precision);
@@ -1749,7 +1749,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
     /**
      * Gets the value of the designated column in the current row
      * of this rowset's <code>ResultSet</code> object as a
-     * <code>java.math.BigDecimal</code> with full precision.
+     * <code>j86.java.math.BigDecimal</code> with full precision.
      *
      * @param columnName the column name
      * @return the column value (full precision);
@@ -2031,7 +2031,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
      *            and the fetch direction is not <code>FETCH_FORWARD</code>,
      *            or (3) this rowset does not currently have a valid
      *            connection, prepared statement, and result set
-     * @see java.sql.Statement#setFetchDirection
+     * @see j86.java.sql.Statement#setFetchDirection
      */
     public void setFetchDirection(int direction) throws SQLException {
         checkState();
@@ -2143,7 +2143,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
      * @throws SQLException if a database access error occurs
      *            or this rowset does not currently have a valid connection,
      *            prepared statement, and result set
-     * @see java.sql.DatabaseMetaData#updatesAreDetected
+     * @see j86.java.sql.DatabaseMetaData#updatesAreDetected
      */
     public boolean rowUpdated() throws SQLException {
         checkState();
@@ -2161,7 +2161,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
      * @throws SQLException if a database access error occurs
      *            or this rowset does not currently have a valid connection,
      *            prepared statement, and result set
-     * @see java.sql.DatabaseMetaData#insertsAreDetected
+     * @see j86.java.sql.DatabaseMetaData#insertsAreDetected
      *
      */
     public boolean rowInserted() throws SQLException {
@@ -2181,7 +2181,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
      * @throws SQLException if a database access error occurs
      *            or this rowset does not currently have a valid connection,
      *            prepared statement, and result set
-     * @see java.sql.DatabaseMetaData#deletesAreDetected
+     * @see j86.java.sql.DatabaseMetaData#deletesAreDetected
      */
     public boolean rowDeleted() throws SQLException {
         checkState();
@@ -2381,7 +2381,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
     }
 
     /**
-     * Updates the designated column with a <code>java.math.BigDecimal</code>
+     * Updates the designated column with a <code>j86.java.math.BigDecimal</code>
      * value.
      * The <code>updateXXX</code> methods are used to update column values in the
      * current row or the insert row.  The <code>updateXXX</code> methods do not
@@ -2454,7 +2454,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
     }
 
     /**
-     * Updates the designated column with a <code>java.sql.Date</code> value.
+     * Updates the designated column with a <code>j86.java.sql.Date</code> value.
      * The <code>updateXXX</code> methods are used to update column values in the
      * current row or the insert row.  The <code>updateXXX</code> methods do not
      * update the underlying database; instead the <code>updateRow</code> or
@@ -2467,7 +2467,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
      *            prepared statement, and result set
      *
      */
-    public void updateDate(int columnIndex, java.sql.Date x) throws SQLException {
+    public void updateDate(int columnIndex, j86.java.sql.Date x) throws SQLException {
         checkState();
 
         // To check the type and concurrency of the ResultSet
@@ -2479,7 +2479,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
 
 
     /**
-     * Updates the designated column with a <code>java.sql.Time</code> value.
+     * Updates the designated column with a <code>j86.java.sql.Time</code> value.
      * The <code>updateXXX</code> methods are used to update column values in the
      * current row or the insert row.  The <code>updateXXX</code> methods do not
      * update the underlying database; instead the <code>updateRow</code> or
@@ -2492,7 +2492,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
      *            prepared statement, and result set
      *
      */
-    public void updateTime(int columnIndex, java.sql.Time x) throws SQLException {
+    public void updateTime(int columnIndex, j86.java.sql.Time x) throws SQLException {
         checkState();
 
         // To check the type and concurrency of the ResultSet
@@ -2503,7 +2503,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
     }
 
     /**
-     * Updates the designated column with a <code>java.sql.Timestamp</code>
+     * Updates the designated column with a <code>j86.java.sql.Timestamp</code>
      * value.
      * The <code>updateXXX</code> methods are used to update column values in the
      * current row or the insert row.  The <code>updateXXX</code> methods do not
@@ -2517,7 +2517,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
      *            prepared statement, and result set
      *
      */
-    public void updateTimestamp(int columnIndex, java.sql.Timestamp x) throws SQLException {
+    public void updateTimestamp(int columnIndex, j86.java.sql.Timestamp x) throws SQLException {
         checkState();
 
         // To check the type and concurrency of the ResultSet
@@ -2542,7 +2542,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
      *            prepared statement, and result set
      *
      */
-    public void updateAsciiStream(int columnIndex, java.io.InputStream x, int length) throws SQLException {
+    public void updateAsciiStream(int columnIndex, j86.java.io.InputStream x, int length) throws SQLException {
         checkState();
 
         // To check the type and concurrency of the ResultSet
@@ -2567,7 +2567,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
      *            prepared statement, and result set
      *
      */
-    public void updateBinaryStream(int columnIndex, java.io.InputStream x, int length) throws SQLException {
+    public void updateBinaryStream(int columnIndex, j86.java.io.InputStream x, int length) throws SQLException {
         checkState();
 
         // To check the type and concurrency of the ResultSet
@@ -2592,7 +2592,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
      *            prepared statement, and result set
      *
      */
-    public void updateCharacterStream(int columnIndex, java.io.Reader x, int length) throws SQLException {
+    public void updateCharacterStream(int columnIndex, j86.java.io.Reader x, int length) throws SQLException {
         checkState();
 
         // To check the type and concurrency of the ResultSet
@@ -2611,8 +2611,8 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
      *
      * @param columnIndex the first column is 1, the second is 2, and so on
      * @param x the new column value
-     * @param scale for <code>java.sql.Types.DECIMAl</code>
-     *  or <code>java.sql.Types.NUMERIC</code> types,
+     * @param scale for <code>j86.java.sql.Types.DECIMAl</code>
+     *  or <code>j86.java.sql.Types.NUMERIC</code> types,
      *  this is the number of digits after the decimal point.  For all other
      *  types this value will be ignored.
      * @throws SQLException if a database access error occurs
@@ -2784,7 +2784,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
     }
 
     /**
-     * Updates the designated column with a <code>java.sql.BigDecimal</code>
+     * Updates the designated column with a <code>j86.java.sql.BigDecimal</code>
      * value.
      * The <code>updateXXX</code> methods are used to update column values in the
      * current row or the insert row.  The <code>updateXXX</code> methods do not
@@ -2842,7 +2842,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
     }
 
     /**
-     * Updates the designated column with a <code>java.sql.Date</code> value.
+     * Updates the designated column with a <code>j86.java.sql.Date</code> value.
      * The <code>updateXXX</code> methods are used to update column values in the
      * current row or the insert row.  The <code>updateXXX</code> methods do not
      * update the underlying database; instead the <code>updateRow</code> or
@@ -2853,12 +2853,12 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
      * @throws SQLException if a database access error occurs
      *
      */
-    public void updateDate(String columnName, java.sql.Date x) throws SQLException {
+    public void updateDate(String columnName, j86.java.sql.Date x) throws SQLException {
         updateDate(findColumn(columnName), x);
     }
 
     /**
-     * Updates the designated column with a <code>java.sql.Time</code> value.
+     * Updates the designated column with a <code>j86.java.sql.Time</code> value.
      * The <code>updateXXX</code> methods are used to update column values in the
      * current row or the insert row.  The <code>updateXXX</code> methods do not
      * update the underlying database; instead the <code>updateRow</code> or
@@ -2869,12 +2869,12 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
      * @throws SQLException if a database access error occurs
      *
      */
-    public void updateTime(String columnName, java.sql.Time x) throws SQLException {
+    public void updateTime(String columnName, j86.java.sql.Time x) throws SQLException {
         updateTime(findColumn(columnName), x);
     }
 
     /**
-     * Updates the designated column with a <code>java.sql.Timestamp</code>
+     * Updates the designated column with a <code>j86.java.sql.Timestamp</code>
      * value.
      * The <code>updateXXX</code> methods are used to update column values in the
      * current row or the insert row.  The <code>updateXXX</code> methods do not
@@ -2886,7 +2886,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
      * @throws SQLException if a database access error occurs
      *
      */
-    public void updateTimestamp(String columnName, java.sql.Timestamp x) throws SQLException {
+    public void updateTimestamp(String columnName, j86.java.sql.Timestamp x) throws SQLException {
         updateTimestamp(findColumn(columnName), x);
     }
 
@@ -2903,7 +2903,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
      * @throws SQLException if a database access error occurs
      *
      */
-    public void updateAsciiStream(String columnName, java.io.InputStream x, int length) throws SQLException {
+    public void updateAsciiStream(String columnName, j86.java.io.InputStream x, int length) throws SQLException {
         updateAsciiStream(findColumn(columnName), x, length);
     }
 
@@ -2920,7 +2920,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
      * @throws SQLException if a database access error occurs
      *
      */
-    public void updateBinaryStream(String columnName, java.io.InputStream x, int length) throws SQLException {
+    public void updateBinaryStream(String columnName, j86.java.io.InputStream x, int length) throws SQLException {
         updateBinaryStream(findColumn(columnName), x, length);
     }
 
@@ -2938,7 +2938,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
      * @throws SQLException if a database access error occurs
      *
      */
-    public void updateCharacterStream(String columnName, java.io.Reader reader, int length) throws SQLException {
+    public void updateCharacterStream(String columnName, j86.java.io.Reader reader, int length) throws SQLException {
         updateCharacterStream(findColumn(columnName), reader, length);
     }
 
@@ -2951,8 +2951,8 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
      *
      * @param columnName the name of the column
      * @param x the new column value
-     * @param scale for <code>java.sql.Types.DECIMAL</code>
-     *  or <code>java.sql.Types.NUMERIC</code> types,
+     * @param scale for <code>j86.java.sql.Types.DECIMAL</code>
+     *  or <code>j86.java.sql.Types.NUMERIC</code> types,
      *  this is the number of digits after the decimal point.  For all other
      *  types this value will be ignored.
      * @throws SQLException if a database access error occurs
@@ -3157,7 +3157,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
      * if the result set was produced some other way
      * @throws SQLException if a database access error occurs
      */
-    public java.sql.Statement getStatement() throws SQLException {
+    public j86.java.sql.Statement getStatement() throws SQLException {
 
         if(rs != null)
         {
@@ -3175,7 +3175,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
      * SQL structured or distinct type that is being retrieved.
      *
      * @param i the first column is 1, the second is 2, and so on
-     * @param map a <code>java.util.Map</code> object that contains the mapping
+     * @param map a <code>j86.java.util.Map</code> object that contains the mapping
      * from SQL type names to classes in the Java programming language
      * @return an <code>Object</code> in the Java programming language
      * representing the SQL value
@@ -3183,7 +3183,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
      *            or (2) this rowset does not currently have a valid connection,
      *            prepared statement, and result set
      */
-    public Object getObject(int i, java.util.Map<String,Class<?>> map)
+    public Object getObject(int i, j86.java.util.Map<String,Class<?>> map)
         throws SQLException
     {
         checkState();
@@ -3266,7 +3266,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
      * custom mapping if appropriate.
      *
      * @param colName the name of the column from which to retrieve the value
-     * @param map a <code>java.util.Map</code> object that contains the mapping
+     * @param map a <code>j86.java.util.Map</code> object that contains the mapping
      * from SQL type names to classes in the Java programming language
      * @return an <code>Object</code> representing the SQL
      *         value in the specified column
@@ -3274,7 +3274,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
      *            or (2) this rowset does not currently have a valid connection,
      *            prepared statement, and result set
      */
-    public Object getObject(String colName, java.util.Map<String,Class<?>> map)
+    public Object getObject(String colName, j86.java.util.Map<String,Class<?>> map)
         throws SQLException
     {
         return getObject(findColumn(colName), map);
@@ -3342,22 +3342,22 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
 
     /**
      * Returns the value of the designated column in the current row
-     * of this rowset's <code>ResultSet</code> object as a <code>java.sql.Date</code>
+     * of this rowset's <code>ResultSet</code> object as a <code>j86.java.sql.Date</code>
      * object. This method uses the given calendar to construct an appropriate
      * millisecond value for the date if the underlying database does not store
      * timezone information.
      *
      * @param columnIndex the first column is 1, the second is 2, and so on
-     * @param cal the <code>java.util.Calendar</code> object
+     * @param cal the <code>j86.java.util.Calendar</code> object
      *        to use in constructing the date
-     * @return the column value as a <code>java.sql.Date</code> object;
+     * @return the column value as a <code>j86.java.sql.Date</code> object;
      *         if the value is SQL <code>NULL</code>,
      *         the value returned is <code>null</code>
      * @throws SQLException if (1) a database access error occurs
      *            or (2) this rowset does not currently have a valid connection,
      *            prepared statement, and result set
      */
-    public java.sql.Date getDate(int columnIndex, Calendar cal) throws SQLException {
+    public j86.java.sql.Date getDate(int columnIndex, Calendar cal) throws SQLException {
         checkState();
 
         return rs.getDate(columnIndex, cal);
@@ -3365,15 +3365,15 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
 
     /**
      * Returns the value of the designated column in the current row
-     * of this rowset's <code>ResultSet</code> object as a <code>java.sql.Date</code>
+     * of this rowset's <code>ResultSet</code> object as a <code>j86.java.sql.Date</code>
      * object. This method uses the given calendar to construct an appropriate
      * millisecond value for the date if the underlying database does not store
      * timezone information.
      *
      * @param columnName the SQL name of the column from which to retrieve the value
-     * @param cal the <code>java.util.Calendar</code> object
+     * @param cal the <code>j86.java.util.Calendar</code> object
      *        to use in constructing the date
-     * @return the column value as a <code>java.sql.Date</code> object;
+     * @return the column value as a <code>j86.java.sql.Date</code> object;
      *         if the value is SQL <code>NULL</code>,
      *         the value returned is <code>null</code>
      * @throws SQLException if a database access error occurs
@@ -3381,28 +3381,28 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
      *            prepared statement, and result set
      *
      */
-    public java.sql.Date getDate(String columnName, Calendar cal) throws SQLException {
+    public j86.java.sql.Date getDate(String columnName, Calendar cal) throws SQLException {
         return getDate(findColumn(columnName), cal);
     }
 
     /**
      * Returns the value of the designated column in the current row
-     * of this rowset's <code>ResultSet</code> object as a <code>java.sql.Time</code>
+     * of this rowset's <code>ResultSet</code> object as a <code>j86.java.sql.Time</code>
      * object. This method uses the given calendar to construct an appropriate
      * millisecond value for the date if the underlying database does not store
      * timezone information.
      *
      * @param columnIndex the first column is 1, the second is 2, and so on
-     * @param cal the <code>java.util.Calendar</code> object
+     * @param cal the <code>j86.java.util.Calendar</code> object
      *        to use in constructing the time
-     * @return the column value as a <code>java.sql.Time</code> object;
+     * @return the column value as a <code>j86.java.sql.Time</code> object;
      *         if the value is SQL <code>NULL</code>,
      *         the value returned is <code>null</code> in the Java programming language
      * @throws SQLException if a database access error occurs
      *            or this rowset does not currently have a valid connection,
      *            prepared statement, and result set
      */
-    public java.sql.Time getTime(int columnIndex, Calendar cal) throws SQLException {
+    public j86.java.sql.Time getTime(int columnIndex, Calendar cal) throws SQLException {
         checkState();
 
         return rs.getTime(columnIndex, cal);
@@ -3410,44 +3410,44 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
 
     /**
      * Returns the value of the designated column in the current row
-     * of this rowset's <code>ResultSet</code> object as a <code>java.sql.Time</code>
+     * of this rowset's <code>ResultSet</code> object as a <code>j86.java.sql.Time</code>
      * object. This method uses the given calendar to construct an appropriate
      * millisecond value for the date if the underlying database does not store
      * timezone information.
      *
      * @param columnName the SQL name of the column
-     * @param cal the <code>java.util.Calendar</code> object
+     * @param cal the <code>j86.java.util.Calendar</code> object
      *        to use in constructing the time
-     * @return the column value as a <code>java.sql.Time</code> object;
+     * @return the column value as a <code>j86.java.sql.Time</code> object;
      *         if the value is SQL <code>NULL</code>,
      *         the value returned is <code>null</code> in the Java programming language
      * @throws SQLException if a database access error occurs
      *            or this rowset does not currently have a valid connection,
      *            prepared statement, and result set
      */
-    public java.sql.Time getTime(String columnName, Calendar cal) throws SQLException {
+    public j86.java.sql.Time getTime(String columnName, Calendar cal) throws SQLException {
         return getTime(findColumn(columnName), cal);
     }
 
     /**
      * Returns the value of the designated column in the current row
      * of this rowset's <code>ResultSet</code> object as a
-     * <code>java.sql.Timestamp</code> object.
+     * <code>j86.java.sql.Timestamp</code> object.
      * This method uses the given calendar to construct an appropriate millisecond
      * value for the timestamp if the underlying database does not store
      * timezone information.
      *
      * @param columnIndex the first column is 1, the second is 2, and so on
-     * @param cal the <code>java.util.Calendar</code> object
+     * @param cal the <code>j86.java.util.Calendar</code> object
      *        to use in constructing the timestamp
-     * @return the column value as a <code>java.sql.Timestamp</code> object;
+     * @return the column value as a <code>j86.java.sql.Timestamp</code> object;
      *         if the value is SQL <code>NULL</code>,
      *         the value returned is <code>null</code>
      * @throws SQLException if a database access error occurs
      *            or this rowset does not currently have a valid connection,
      *            prepared statement, and result set
      */
-    public java.sql.Timestamp getTimestamp(int columnIndex, Calendar cal) throws SQLException {
+    public j86.java.sql.Timestamp getTimestamp(int columnIndex, Calendar cal) throws SQLException {
         checkState();
 
         return rs.getTimestamp(columnIndex, cal);
@@ -3456,22 +3456,22 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
     /**
      * Returns the value of the designated column in the current row
      * of this rowset's <code>ResultSet</code> object as a
-     * <code>java.sql.Timestamp</code> object.
+     * <code>j86.java.sql.Timestamp</code> object.
      * This method uses the given calendar to construct an appropriate millisecond
      * value for the timestamp if the underlying database does not store
      * timezone information.
      *
      * @param columnName the SQL name of the column
-     * @param cal the <code>java.util.Calendar</code> object
+     * @param cal the <code>j86.java.util.Calendar</code> object
      *        to use in constructing the timestamp
-     * @return the column value as a <code>java.sql.Timestamp</code> object;
+     * @return the column value as a <code>j86.java.sql.Timestamp</code> object;
      *         if the value is SQL <code>NULL</code>,
      *         the value returned is <code>null</code>
      * @throws SQLException if a database access error occurs
      *            or this rowset does not currently have a valid connection,
      *            prepared statement, and result set
      */
-    public java.sql.Timestamp getTimestamp(String columnName, Calendar cal) throws SQLException {
+    public j86.java.sql.Timestamp getTimestamp(String columnName, Calendar cal) throws SQLException {
         return getTimestamp(findColumn(columnName), cal);
     }
 
@@ -3499,7 +3499,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
      *            insert row, or (3) this rowset is
      *            <code>ResultSet.CONCUR_READ_ONLY</code>
      */
-    public void updateRef(int columnIndex, java.sql.Ref ref)
+    public void updateRef(int columnIndex, j86.java.sql.Ref ref)
         throws SQLException {
         checkState();
         rs.updateRef(columnIndex, ref);
@@ -3527,7 +3527,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
      *            one of this rowset's rows or its insert row, or (3) this
      *            rowset is <code>ResultSet.CONCUR_READ_ONLY</code>
      */
-    public void updateRef(String columnName, java.sql.Ref ref)
+    public void updateRef(String columnName, j86.java.sql.Ref ref)
         throws SQLException {
         updateRef(findColumn(columnName), ref);
     }
@@ -3590,7 +3590,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
     /**
      * Sets the designated column in either the current row or the insert
      * row of this <code>JdbcRowSetImpl</code> object with the given
-     * <code>java.sql.Blob</code> value.
+     * <code>j86.java.sql.Blob</code> value.
      *
      * This method updates a column value in either the current row or
      * the insert row of this rowset, but it does not update the
@@ -3618,7 +3618,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
     /**
      * Sets the designated column in either the current row or the insert
      * row of this <code>JdbcRowSetImpl</code> object with the given
-     * <code>java.sql.Blob </code> value.
+     * <code>j86.java.sql.Blob </code> value.
      *
      * This method updates a column value in either the current row or
      * the insert row of this rowset, but it does not update the
@@ -3644,7 +3644,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
     /**
      * Sets the designated column in either the current row or the insert
      * row of this <code>JdbcRowSetImpl</code> object with the given
-     * <code>java.sql.Array</code> values.
+     * <code>j86.java.sql.Array</code> values.
      *
      * This method updates a column value in either the current row or
      * the insert row of this rowset, but it does not update the
@@ -3672,7 +3672,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
     /**
      * Sets the designated column in either the current row or the insert
      * row of this <code>JdbcRowSetImpl</code> object with the given
-     * <code>java.sql.Array</code> value.
+     * <code>j86.java.sql.Array</code> value.
      *
      * This method updates a column value in either the current row or
      * the insert row of this rowset, but it does not update the
@@ -3698,7 +3698,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
     /**
      * Provide interface coverage for getURL(int) in ResultSet->RowSet
      */
-    public java.net.URL getURL(int columnIndex) throws SQLException {
+    public j86.java.net.URL getURL(int columnIndex) throws SQLException {
         checkState();
         return rs.getURL(columnIndex);
     }
@@ -3706,7 +3706,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
     /**
      * Provide interface coverage for getURL(String) in ResultSet->RowSet
      */
-    public java.net.URL getURL(String columnName) throws SQLException {
+    public j86.java.net.URL getURL(String columnName) throws SQLException {
         return getURL(findColumn(columnName));
     }
 
@@ -4524,7 +4524,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
 
     /**
      * Retrieves the value of the designated column in the current row of this
-     * <code>ResultSet</code> object as a java.sql.RowId object in the Java
+     * <code>ResultSet</code> object as a j86.java.sql.RowId object in the Java
      * programming language.
      *
      * @param columnIndex the first column is 1, the second 2, ...
@@ -4539,7 +4539,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
 
     /**
      * Retrieves the value of the designated column in the current row of this
-     * <code>ResultSet</code> object as a java.sql.RowId object in the Java
+     * <code>ResultSet</code> object as a j86.java.sql.RowId object in the Java
      * programming language.
      *
      * @param columnName the name of the column
@@ -4632,7 +4632,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
 
     /*o
      * This method is used for updating SQL <code>NCLOB</code>  type that maps
-     * to <code>java.sql.Types.NCLOB</code>
+     * to <code>j86.java.sql.Types.NCLOB</code>
      * @param columnIndex the first column is 1, the second 2, ...
      * @param nClob the value for the column to be updated
      * @throws SQLException if a database access error occurs
@@ -4644,7 +4644,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
 
     /**
      * This method is used for updating SQL <code>NCLOB</code>  type that maps
-     * to <code>java.sql.Types.NCLOB</code>
+     * to <code>j86.java.sql.Types.NCLOB</code>
      * @param columnName name of the column
      * @param nClob the value for the column to be updated
      * @throws SQLException if a database access error occurs
@@ -4685,7 +4685,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
         throw new SQLFeatureNotSupportedException(resBundle.handleGetObject("jdbcrowsetimpl.featnotsupp").toString());
     }
 
-    public <T> T unwrap(java.lang.Class<T> iface) throws java.sql.SQLException{
+    public <T> T unwrap(j86.java.lang.Class<T> iface) throws j86.java.sql.SQLException{
         return null;
     }
 
@@ -4694,7 +4694,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
     }
 
     /**
-      * Sets the designated parameter to the given <code>java.sql.SQLXML</code> object. The driver converts this to an
+      * Sets the designated parameter to the given <code>j86.java.sql.SQLXML</code> object. The driver converts this to an
       * SQL <code>XML</code> value when it sends it to the database.
       * @param parameterIndex index of the first parameter is 1, the second is 2, ...
       * @param xmlObject a <code>SQLXML</code> object that maps an SQL <code>XML</code> value
@@ -4706,7 +4706,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
      }
 
     /**
-     * Sets the designated parameter to the given <code>java.sql.SQLXML</code> object. The driver converts this to an
+     * Sets the designated parameter to the given <code>j86.java.sql.SQLXML</code> object. The driver converts this to an
      * <code>SQL XML</code> value when it sends it to the database.
      * @param parameterName the name of the parameter
      * @param xmlObject a <code>SQLXML</code> object that maps an <code>SQL XML</code> value
@@ -4718,7 +4718,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
      }
 
     /**
-     * Sets the designated parameter to the given <code>java.sql.RowId</code> object. The
+     * Sets the designated parameter to the given <code>j86.java.sql.RowId</code> object. The
      * driver converts this to a SQL <code>ROWID</code> value when it sends it
      * to the database
      *
@@ -4733,7 +4733,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
      }
 
     /**
-    * Sets the designated parameter to the given <code>java.sql.RowId</code> object. The
+    * Sets the designated parameter to the given <code>j86.java.sql.RowId</code> object. The
     * driver converts this to a SQL <code>ROWID</code> when it sends it to the
     * database.
     *
@@ -4795,8 +4795,8 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
     }
 
   /**
-    * Sets the designated parameter to a <code>java.sql.NClob</code> object. The object
-    * implements the <code>java.sql.NClob</code> interface. This <code>NClob</code>
+    * Sets the designated parameter to a <code>j86.java.sql.NClob</code> object. The object
+    * implements the <code>j86.java.sql.NClob</code> interface. This <code>NClob</code>
     * object maps to a SQL <code>NCLOB</code>.
     * @param parameterName the name of the column to be set
     * @param value the parameter value
@@ -4813,19 +4813,19 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
   /**
      * Retrieves the value of the designated column in the current row
      * of this <code>ResultSet</code> object as a
-     * <code>java.io.Reader</code> object.
+     * <code>j86.java.io.Reader</code> object.
      * It is intended for use when
      * accessing  <code>NCHAR</code>,<code>NVARCHAR</code>
      * and <code>LONGNVARCHAR</code> columns.
      *
-     * @return a <code>java.io.Reader</code> object that contains the column
+     * @return a <code>j86.java.io.Reader</code> object that contains the column
      * value; if the value is SQL <code>NULL</code>, the value returned is
      * <code>null</code> in the Java programming language.
      * @param columnIndex the first column is 1, the second is 2, ...
      * @exception SQLException if a database access error occurs
      * @since 1.6
      */
-    public java.io.Reader getNCharacterStream(int columnIndex) throws SQLException {
+    public j86.java.io.Reader getNCharacterStream(int columnIndex) throws SQLException {
        throw new SQLFeatureNotSupportedException(resBundle.handleGetObject("jdbcrowsetimpl.featnotsupp").toString());
      }
 
@@ -4833,24 +4833,24 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
     /**
      * Retrieves the value of the designated column in the current row
      * of this <code>ResultSet</code> object as a
-     * <code>java.io.Reader</code> object.
+     * <code>j86.java.io.Reader</code> object.
      * It is intended for use when
      * accessing  <code>NCHAR</code>,<code>NVARCHAR</code>
      * and <code>LONGNVARCHAR</code> columns.
      *
      * @param columnName the name of the column
-     * @return a <code>java.io.Reader</code> object that contains the column
+     * @return a <code>j86.java.io.Reader</code> object that contains the column
      * value; if the value is SQL <code>NULL</code>, the value returned is
      * <code>null</code> in the Java programming language
      * @exception SQLException if a database access error occurs
      * @since 1.6
      */
-    public java.io.Reader getNCharacterStream(String columnName) throws SQLException {
+    public j86.java.io.Reader getNCharacterStream(String columnName) throws SQLException {
        throw new SQLFeatureNotSupportedException(resBundle.handleGetObject("jdbcrowsetimpl.featnotsupp").toString());
      }
 
     /**
-     * Updates the designated column with a <code>java.sql.SQLXML</code> value.
+     * Updates the designated column with a <code>j86.java.sql.SQLXML</code> value.
      * The updater
      * methods are used to update column values in the current row or the insert
      * row. The updater methods do not update the underlying database; instead
@@ -4866,7 +4866,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
     }
 
     /**
-     * Updates the designated column with a <code>java.sql.SQLXML</code> value.
+     * Updates the designated column with a <code>j86.java.sql.SQLXML</code> value.
      * The updater
      * methods are used to update column values in the current row or the insert
      * row. The updater methods do not update the underlying database; instead
@@ -4934,7 +4934,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
        * @since 1.6
        */
        public void updateNCharacterStream(int columnIndex,
-                            java.io.Reader x,
+                            j86.java.io.Reader x,
                             long length)
                             throws SQLException {
           throw new SQLFeatureNotSupportedException(resBundle.handleGetObject("jdbcrowsetimpl.featnotsupp").toString());
@@ -4956,7 +4956,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
        * @since 1.6
        */
        public void updateNCharacterStream(String columnName,
-                            java.io.Reader x,
+                            j86.java.io.Reader x,
                             long length)
                             throws SQLException {
           throw new SQLFeatureNotSupportedException(resBundle.handleGetObject("jdbcrowsetimpl.featnotsupp").toString());
@@ -4988,7 +4988,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
      * @since 1.6
      */
     public void updateNCharacterStream(int columnIndex,
-                             java.io.Reader x) throws SQLException {
+                             j86.java.io.Reader x) throws SQLException {
         throw new SQLFeatureNotSupportedException(resBundle.handleGetObject("jdbcrowsetimpl.featnotsupp").toString());
     }
 
@@ -5011,7 +5011,7 @@ public class JdbcRowSetImpl extends BaseRowSet implements JdbcRowSet, Joinable {
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the la
 bel is the name of the column
-     * @param reader the <code>java.io.Reader</code> object containing
+     * @param reader the <code>j86.java.io.Reader</code> object containing
      *        the new column value
      * @exception SQLException if a database access error occurs,
      * the result set concurrency is <code>CONCUR_READ_ONLY</code> or this method is called on a closed result set
@@ -5020,7 +5020,7 @@ bel is the name of the column
      * @since 1.6
      */
     public void updateNCharacterStream(String columnLabel,
-                             java.io.Reader reader) throws SQLException {
+                             j86.java.io.Reader reader) throws SQLException {
         throw new SQLFeatureNotSupportedException(resBundle.handleGetObject("jdbcrowsetimpl.featnotsupp").toString());
     }
 
@@ -5029,7 +5029,7 @@ bel is the name of the column
      * will have the specified number of bytes.
      * When a very large ASCII value is input to a <code>LONGVARCHAR</code>
      * parameter, it may be more practical to send it via a
-     * <code>java.io.InputStream</code>. Data will be read from the stream
+     * <code>j86.java.io.InputStream</code>. Data will be read from the stream
      * as needed until end-of-file is reached.  The JDBC driver will
      * do any necessary conversion from ASCII to the database char format.
      *
@@ -5062,7 +5062,7 @@ bel is the name of the column
      * will have the specified number of bytes.
      * When a very large ASCII value is input to a <code>LONGVARCHAR</code>
      * parameter, it may be more practical to send it via a
-     * <code>java.io.InputStream</code>. Data will be read from the stream
+     * <code>j86.java.io.InputStream</code>. Data will be read from the stream
      * as needed until end-of-file is reached.  The JDBC driver will
      * do any necessary conversion from ASCII to the database char format.
      *
@@ -5094,7 +5094,7 @@ bel is the name of the column
      * Updates the designated column using the given input stream.
      * When a very large ASCII value is input to a <code>LONGVARCHAR</code>
      * parameter, it may be more practical to send it via a
-     * <code>java.io.InputStream</code>. Data will be read from the stream
+     * <code>j86.java.io.InputStream</code>. Data will be read from the stream
      * as needed until end-of-file is reached.  The JDBC driver will
      * do any necessary conversion from ASCII to the database char format.
      *
@@ -5129,7 +5129,7 @@ bel is the name of the column
      * Updates the designated column using the given input stream.
      * When a very large ASCII value is input to a <code>LONGVARCHAR</code>
      * parameter, it may be more practical to send it via a
-     * <code>java.io.InputStream</code>. Data will be read from the stream
+     * <code>j86.java.io.InputStream</code>. Data will be read from the stream
      * as needed until end-of-file is reached.  The JDBC driver will
      * do any necessary conversion from ASCII to the database char format.
      *
@@ -5165,7 +5165,7 @@ bel is the name of the column
      * object, which is the given number of characters long.
      * When a very large UNICODE value is input to a <code>LONGVARCHAR</code>
      * parameter, it may be more practical to send it via a
-     * <code>java.io.Reader</code> object. The data will be read from the stream
+     * <code>j86.java.io.Reader</code> object. The data will be read from the stream
      * as needed until end-of-file is reached.  The JDBC driver will
      * do any necessary conversion from UNICODE to the database char format.
      *
@@ -5197,7 +5197,7 @@ bel is the name of the column
      * object, which is the given number of characters long.
      * When a very large UNICODE value is input to a <code>LONGVARCHAR</code>
      * parameter, it may be more practical to send it via a
-     * <code>java.io.Reader</code> object. The data will be read from the stream
+     * <code>j86.java.io.Reader</code> object. The data will be read from the stream
      * as needed until end-of-file is reached.  The JDBC driver will
      * do any necessary conversion from UNICODE to the database char format.
      *
@@ -5229,7 +5229,7 @@ bel is the name of the column
      * object.
      * When a very large UNICODE value is input to a <code>LONGVARCHAR</code>
      * parameter, it may be more practical to send it via a
-     * <code>java.io.Reader</code> object. The data will be read from the stream
+     * <code>j86.java.io.Reader</code> object. The data will be read from the stream
      * as needed until end-of-file is reached.  The JDBC driver will
      * do any necessary conversion from UNICODE to the database char format.
      *
@@ -5263,7 +5263,7 @@ bel is the name of the column
      * object.
      * When a very large UNICODE value is input to a <code>LONGVARCHAR</code>
      * parameter, it may be more practical to send it via a
-     * <code>java.io.Reader</code> object. The data will be read from the stream
+     * <code>j86.java.io.Reader</code> object. The data will be read from the stream
      * as needed until end-of-file is reached.  The JDBC driver will
      * do any necessary conversion from UNICODE to the database char format.
      *
@@ -5298,7 +5298,7 @@ bel is the name of the column
      * object, which is the given number of characters long.
      * When a very large UNICODE value is input to a <code>LONGVARCHAR</code>
      * parameter, it may be more practical to send it via a
-     * <code>java.io.Reader</code> object. The data will be read from the stream
+     * <code>j86.java.io.Reader</code> object. The data will be read from the stream
      * as needed until end-of-file is reached.  The JDBC driver will
      * do any necessary conversion from UNICODE to the database char format.
      *
@@ -5332,7 +5332,7 @@ bel is the name of the column
      * object, which is the given number of characters long.
      * When a very large UNICODE value is input to a <code>LONGVARCHAR</code>
      * parameter, it may be more practical to send it via a
-     * <code>java.io.Reader</code> object. The data will be read from the stream
+     * <code>j86.java.io.Reader</code> object. The data will be read from the stream
      * as needed until end-of-file is reached.  The JDBC driver will
      * do any necessary conversion from UNICODE to the database char format.
      *
@@ -5366,7 +5366,7 @@ bel is the name of the column
      * object.
      * When a very large UNICODE value is input to a <code>LONGVARCHAR</code>
      * parameter, it may be more practical to send it via a
-     * <code>java.io.Reader</code> object. The data will be read from the stream
+     * <code>j86.java.io.Reader</code> object. The data will be read from the stream
      * as needed until end-of-file is reached.  The JDBC driver will
      * do any necessary conversion from UNICODE to the database char format.
      *
@@ -5402,7 +5402,7 @@ bel is the name of the column
      * object.
      * When a very large UNICODE value is input to a <code>LONGVARCHAR</code>
      * parameter, it may be more practical to send it via a
-     * <code>java.io.Reader</code> object. The data will be read from the stream
+     * <code>j86.java.io.Reader</code> object. The data will be read from the stream
      * as needed until end-of-file is reached.  The JDBC driver will
      * do any necessary conversion from UNICODE to the database char format.
      *
@@ -5454,7 +5454,7 @@ bel is the name of the column
      * @since 1.6
      */
     public void updateAsciiStream(int columnIndex,
-                           java.io.InputStream x,
+                           j86.java.io.InputStream x,
                            long length) throws SQLException {
         throw new SQLFeatureNotSupportedException(resBundle.handleGetObject("jdbcrowsetimpl.featnotsupp").toString());
     }
@@ -5478,7 +5478,7 @@ bel is the name of the column
      * @since 1.6
      */
     public void updateBinaryStream(int columnIndex,
-                            java.io.InputStream x,
+                            j86.java.io.InputStream x,
                             long length) throws SQLException {
         throw new SQLFeatureNotSupportedException(resBundle.handleGetObject("jdbcrowsetimpl.featnotsupp").toString());
     }
@@ -5502,7 +5502,7 @@ bel is the name of the column
      * @since 1.6
      */
     public void updateCharacterStream(int columnIndex,
-                             java.io.Reader x,
+                             j86.java.io.Reader x,
                              long length) throws SQLException {
         throw new SQLFeatureNotSupportedException(resBundle.handleGetObject("jdbcrowsetimpl.featnotsupp").toString());
     }
@@ -5526,7 +5526,7 @@ bel is the name of the column
      * @since 1.6
      */
     public void updateAsciiStream(String columnLabel,
-                           java.io.InputStream x,
+                           j86.java.io.InputStream x,
                            long length) throws SQLException {
         throw new SQLFeatureNotSupportedException(resBundle.handleGetObject("jdbcrowsetimpl.featnotsupp").toString());
     }
@@ -5552,7 +5552,7 @@ bel is the name of the column
      * @since 1.6
      */
     public void updateAsciiStream(int columnIndex,
-                           java.io.InputStream x) throws SQLException {
+                           j86.java.io.InputStream x) throws SQLException {
         throw new SQLFeatureNotSupportedException(resBundle.handleGetObject("jdbcrowsetimpl.featnotsupp").toString());
     }
 
@@ -5578,7 +5578,7 @@ bel is the name of the column
      * @since 1.6
      */
     public void updateAsciiStream(String columnLabel,
-                           java.io.InputStream x) throws SQLException {
+                           j86.java.io.InputStream x) throws SQLException {
         throw new SQLFeatureNotSupportedException(resBundle.handleGetObject("jdbcrowsetimpl.featnotsupp").toString());
     }
 
@@ -5602,7 +5602,7 @@ bel is the name of the column
      * @since 1.6
      */
     public void updateBinaryStream(String columnLabel,
-                            java.io.InputStream x,
+                            j86.java.io.InputStream x,
                             long length) throws SQLException {
         throw new SQLFeatureNotSupportedException(resBundle.handleGetObject("jdbcrowsetimpl.featnotsupp").toString());
     }
@@ -5628,7 +5628,7 @@ bel is the name of the column
      * @since 1.6
      */
     public void updateBinaryStream(int columnIndex,
-                            java.io.InputStream x) throws SQLException {
+                            j86.java.io.InputStream x) throws SQLException {
         throw new SQLFeatureNotSupportedException(resBundle.handleGetObject("jdbcrowsetimpl.featnotsupp").toString());
     }
 
@@ -5655,7 +5655,7 @@ bel is the name of the column
      * @since 1.6
      */
     public void updateBinaryStream(String columnLabel,
-                            java.io.InputStream x) throws SQLException {
+                            j86.java.io.InputStream x) throws SQLException {
         throw new SQLFeatureNotSupportedException(resBundle.handleGetObject("jdbcrowsetimpl.featnotsupp").toString());
     }
 
@@ -5669,7 +5669,7 @@ bel is the name of the column
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @param reader the <code>java.io.Reader</code> object containing
+     * @param reader the <code>j86.java.io.Reader</code> object containing
      *        the new column value
      * @param length the length of the stream
      * @exception SQLException if a database access error occurs,
@@ -5680,7 +5680,7 @@ bel is the name of the column
      * @since 1.6
      */
     public void updateCharacterStream(String columnLabel,
-                             java.io.Reader reader,
+                             j86.java.io.Reader reader,
                              long length) throws SQLException {
         throw new SQLFeatureNotSupportedException(resBundle.handleGetObject("jdbcrowsetimpl.featnotsupp").toString());
     }
@@ -5706,7 +5706,7 @@ bel is the name of the column
      * @since 1.6
      */
     public void updateCharacterStream(int columnIndex,
-                             java.io.Reader x) throws SQLException {
+                             j86.java.io.Reader x) throws SQLException {
         throw new SQLFeatureNotSupportedException(resBundle.handleGetObject("jdbcrowsetimpl.featnotsupp").toString());
     }
 
@@ -5723,7 +5723,7 @@ bel is the name of the column
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the la
 bel is the name of the column
-     * @param reader the <code>java.io.Reader</code> object containing
+     * @param reader the <code>j86.java.io.Reader</code> object containing
      *        the new column value
      * @exception SQLException if a database access error occurs,
      * the result set concurrency is <code>CONCUR_READ_ONLY</code>
@@ -5733,24 +5733,24 @@ bel is the name of the column
      * @since 1.6
      */
     public void updateCharacterStream(String columnLabel,
-                             java.io.Reader reader) throws SQLException {
+                             j86.java.io.Reader reader) throws SQLException {
         throw new SQLFeatureNotSupportedException(resBundle.handleGetObject("jdbcrowsetimpl.featnotsupp").toString());
     }
 
 
      /**
-  * Sets the designated parameter to the given <code>java.net.URL</code> value.
+  * Sets the designated parameter to the given <code>j86.java.net.URL</code> value.
   * The driver converts this to an SQL <code>DATALINK</code> value
   * when it sends it to the database.
   *
   * @param parameterIndex the first parameter is 1, the second is 2, ...
-  * @param x the <code>java.net.URL</code> object to be set
+  * @param x the <code>j86.java.net.URL</code> object to be set
   * @exception SQLException if a database access error occurs or
   * this method is called on a closed <code>PreparedStatement</code>
   * @throws SQLFeatureNotSupportedException  if the JDBC driver does not support this method
   * @since 1.4
   */
-  public void setURL(int parameterIndex, java.net.URL x) throws SQLException{
+  public void setURL(int parameterIndex, j86.java.net.URL x) throws SQLException{
         throw new SQLFeatureNotSupportedException(resBundle.handleGetObject("jdbcrowsetimpl.featnotsupp").toString());
    }
 
@@ -5867,7 +5867,7 @@ bel is the name of the column
 
 
     /**
-     * Sets the designated parameter to a <code>java.sql.NClob</code> object. The driver converts this to
+     * Sets the designated parameter to a <code>j86.java.sql.NClob</code> object. The driver converts this to
 a
      * SQL <code>NCLOB</code> value when it sends it to the database.
      * @param parameterIndex of the first parameter is 1, the second is 2, ...
@@ -5962,7 +5962,7 @@ a
    }
 
   /**
-    * Sets the designated parameter to the given <code>java.sql.Timestamp</code> value,
+    * Sets the designated parameter to the given <code>j86.java.sql.Timestamp</code> value,
     * using the given <code>Calendar</code> object.  The driver uses
     * the <code>Calendar</code> object to construct an SQL <code>TIMESTAMP</code> value,
     * which the driver then sends to the database.  With a
@@ -5982,7 +5982,7 @@ a
     * @see #getTimestamp
     * @since 1.4
     */
-    public void setTimestamp(String parameterName, java.sql.Timestamp x, Calendar cal)
+    public void setTimestamp(String parameterName, j86.java.sql.Timestamp x, Calendar cal)
        throws SQLException{
         throw new SQLFeatureNotSupportedException(resBundle.handleGetObject("jdbcrowsetimpl.featnotsupp").toString());
    }
@@ -6016,7 +6016,7 @@ a
 
 
   /**
-    * Sets the designated parameter to the given <code>java.sql.Clob</code> object.
+    * Sets the designated parameter to the given <code>j86.java.sql.Clob</code> object.
     * The driver converts this to an SQL <code>CLOB</code> value when it
     * sends it to the database.
     *
@@ -6059,7 +6059,7 @@ a
 
 
  /**
-    * Sets the designated parameter to the given <code>java.sql.Date</code> value
+    * Sets the designated parameter to the given <code>j86.java.sql.Date</code> value
     * using the default time zone of the virtual machine that is running
     * the application.
     * The driver converts this
@@ -6074,13 +6074,13 @@ a
     * @see #getDate
     * @since 1.4
     */
-    public void setDate(String parameterName, java.sql.Date x)
+    public void setDate(String parameterName, j86.java.sql.Date x)
        throws SQLException{
         throw new SQLFeatureNotSupportedException(resBundle.handleGetObject("jdbcrowsetimpl.featnotsupp").toString());
    }
 
    /**
-    * Sets the designated parameter to the given <code>java.sql.Date</code> value,
+    * Sets the designated parameter to the given <code>j86.java.sql.Date</code> value,
     * using the given <code>Calendar</code> object.  The driver uses
     * the <code>Calendar</code> object to construct an SQL <code>DATE</code> value,
     * which the driver then sends to the database.  With a
@@ -6100,14 +6100,14 @@ a
     * @see #getDate
     * @since 1.4
     */
-   public void setDate(String parameterName, java.sql.Date x, Calendar cal)
+   public void setDate(String parameterName, j86.java.sql.Date x, Calendar cal)
        throws SQLException{
         throw new SQLFeatureNotSupportedException(resBundle.handleGetObject("jdbcrowsetimpl.featnotsupp").toString());
    }
 
 
  /**
-    * Sets the designated parameter to the given <code>java.sql.Time</code> value.
+    * Sets the designated parameter to the given <code>j86.java.sql.Time</code> value.
     * The driver converts this
     * to an SQL <code>TIME</code> value when it sends it to the database.
     *
@@ -6120,13 +6120,13 @@ a
     * @see #getTime
     * @since 1.4
     */
-   public void setTime(String parameterName, java.sql.Time x)
+   public void setTime(String parameterName, j86.java.sql.Time x)
        throws SQLException{
         throw new SQLFeatureNotSupportedException(resBundle.handleGetObject("jdbcrowsetimpl.featnotsupp").toString());
    }
 
  /**
-    * Sets the designated parameter to the given <code>java.sql.Time</code> value,
+    * Sets the designated parameter to the given <code>j86.java.sql.Time</code> value,
     * using the given <code>Calendar</code> object.  The driver uses
     * the <code>Calendar</code> object to construct an SQL <code>TIME</code> value,
     * which the driver then sends to the database.  With a
@@ -6146,7 +6146,7 @@ a
     * @see #getTime
     * @since 1.4
     */
-   public void setTime(String parameterName, java.sql.Time x, Calendar cal)
+   public void setTime(String parameterName, j86.java.sql.Time x, Calendar cal)
        throws SQLException{
         throw new SQLFeatureNotSupportedException(resBundle.handleGetObject("jdbcrowsetimpl.featnotsupp").toString());
    }
@@ -6297,7 +6297,7 @@ a
 
 
  /**
-    * Sets the designated parameter to the given <code>java.sql.Blob</code> object.
+    * Sets the designated parameter to the given <code>j86.java.sql.Blob</code> object.
     * The driver converts this to an SQL <code>BLOB</code> value when it
     * sends it to the database.
     *
@@ -6342,7 +6342,7 @@ a
   /**
   * Sets the value of the designated parameter with the given object. The second
   * argument must be an object type; for integral values, the
-  * <code>java.lang</code> equivalent objects should be used.
+  * <code>j86.java.lang</code> equivalent objects should be used.
   *
   * <p>The given Java object will be converted to the given targetSqlType
   * before being sent to the database.
@@ -6353,7 +6353,7 @@ a
   * to the SQL data stream.
   * If, on the other hand, the object is of a class implementing
   * <code>Ref</code>, <code>Blob</code>, <code>Clob</code>,  <code>NClob</code>,
-  *  <code>Struct</code>, <code>java.net.URL</code>,
+  *  <code>Struct</code>, <code>j86.java.net.URL</code>,
   * or <code>Array</code>, the driver should pass it to the database as a
   * value of the corresponding SQL type.
   * <P>
@@ -6362,9 +6362,9 @@ a
   *
   * @param parameterName the name of the parameter
   * @param x the object containing the input parameter value
-  * @param targetSqlType the SQL type (as defined in java.sql.Types) to be
+  * @param targetSqlType the SQL type (as defined in j86.java.sql.Types) to be
   * sent to the database. The scale argument may further qualify this type.
-  * @param scale for java.sql.Types.DECIMAL or java.sql.Types.NUMERIC types,
+  * @param scale for j86.java.sql.Types.DECIMAL or java.sql.Types.NUMERIC types,
   *          this is the number of digits after the decimal point.  For all other
   *          types, this value will be ignored.
   * @exception SQLException if a database access error occurs or
@@ -6392,7 +6392,7 @@ a
     *
     * @param parameterName the name of the parameter
     * @param x the object containing the input parameter value
-    * @param targetSqlType the SQL type (as defined in java.sql.Types) to be
+    * @param targetSqlType the SQL type (as defined in j86.java.sql.Types) to be
     *                      sent to the database
     * @exception SQLException if a database access error occurs or
     * this method is called on a closed <code>CallableStatement</code>
@@ -6414,7 +6414,7 @@ a
  /**
    * Sets the value of the designated parameter with the given object.
    * The second parameter must be of type <code>Object</code>; therefore, the
-   * <code>java.lang</code> equivalent objects should be used for built-in types.
+   * <code>j86.java.lang</code> equivalent objects should be used for built-in types.
    *
    * <p>The JDBC specification specifies a standard mapping from
    * Java <code>Object</code> types to SQL types.  The given argument
@@ -6430,7 +6430,7 @@ a
    * to write it to the SQL data stream.
    * If, on the other hand, the object is of a class implementing
    * <code>Ref</code>, <code>Blob</code>, <code>Clob</code>,  <code>NClob</code>,
-   *  <code>Struct</code>, <code>java.net.URL</code>,
+   *  <code>Struct</code>, <code>j86.java.net.URL</code>,
    * or <code>Array</code>, the driver should pass it to the database as a
    * value of the corresponding SQL type.
    * <P>
@@ -6456,7 +6456,7 @@ a
   * the specified number of bytes.
   * When a very large ASCII value is input to a <code>LONGVARCHAR</code>
   * parameter, it may be more practical to send it via a
-  * <code>java.io.InputStream</code>. Data will be read from the stream
+  * <code>j86.java.io.InputStream</code>. Data will be read from the stream
   * as needed until end-of-file is reached.  The JDBC driver will
   * do any necessary conversion from ASCII to the database char format.
   *
@@ -6473,7 +6473,7 @@ a
   * this method
   * @since 1.4
   */
- public void setAsciiStream(String parameterName, java.io.InputStream x, int length)
+ public void setAsciiStream(String parameterName, j86.java.io.InputStream x, int length)
      throws SQLException{
       throw new SQLFeatureNotSupportedException(resBundle.handleGetObject("jdbcrowsetimpl.featnotsupp").toString());
  }
@@ -6484,7 +6484,7 @@ a
   * the specified number of bytes.
   * When a very large binary value is input to a <code>LONGVARBINARY</code>
   * parameter, it may be more practical to send it via a
-  * <code>java.io.InputStream</code> object. The data will be read from the stream
+  * <code>j86.java.io.InputStream</code> object. The data will be read from the stream
   * as needed until end-of-file is reached.
   *
   * <P><B>Note:</B> This stream object can either be a standard
@@ -6500,7 +6500,7 @@ a
   * this method
   * @since 1.4
   */
- public void setBinaryStream(String parameterName, java.io.InputStream x,
+ public void setBinaryStream(String parameterName, j86.java.io.InputStream x,
                       int length) throws SQLException{
       throw new SQLFeatureNotSupportedException(resBundle.handleGetObject("jdbcrowsetimpl.featnotsupp").toString());
  }
@@ -6510,7 +6510,7 @@ a
    * object, which is the given number of characters long.
    * When a very large UNICODE value is input to a <code>LONGVARCHAR</code>
    * parameter, it may be more practical to send it via a
-   * <code>java.io.Reader</code> object. The data will be read from the stream
+   * <code>j86.java.io.Reader</code> object. The data will be read from the stream
    * as needed until end-of-file is reached.  The JDBC driver will
    * do any necessary conversion from UNICODE to the database char format.
    *
@@ -6519,7 +6519,7 @@ a
    * standard interface.
    *
    * @param parameterName the name of the parameter
-   * @param reader the <code>java.io.Reader</code> object that
+   * @param reader the <code>j86.java.io.Reader</code> object that
    *        contains the UNICODE data used as the designated parameter
    * @param length the number of characters in the stream
    * @exception SQLException if a database access error occurs or
@@ -6529,7 +6529,7 @@ a
    * @since 1.4
    */
   public void setCharacterStream(String parameterName,
-                          java.io.Reader reader,
+                          j86.java.io.Reader reader,
                           int length) throws SQLException{
        throw new SQLFeatureNotSupportedException(resBundle.handleGetObject("jdbcrowsetimpl.featnotsupp").toString());
   }
@@ -6538,7 +6538,7 @@ a
    * Sets the designated parameter to the given input stream.
    * When a very large ASCII value is input to a <code>LONGVARCHAR</code>
    * parameter, it may be more practical to send it via a
-   * <code>java.io.InputStream</code>. Data will be read from the stream
+   * <code>j86.java.io.InputStream</code>. Data will be read from the stream
    * as needed until end-of-file is reached.  The JDBC driver will
    * do any necessary conversion from ASCII to the database char format.
    *
@@ -6556,7 +6556,7 @@ a
    * @throws SQLFeatureNotSupportedException  if the JDBC driver does not support this method
      * @since 1.6
   */
-  public void setAsciiStream(String parameterName, java.io.InputStream x)
+  public void setAsciiStream(String parameterName, j86.java.io.InputStream x)
           throws SQLException{
         throw new SQLFeatureNotSupportedException(resBundle.handleGetObject("jdbcrowsetimpl.featnotsupp").toString());
    }
@@ -6566,7 +6566,7 @@ a
     * Sets the designated parameter to the given input stream.
     * When a very large binary value is input to a <code>LONGVARBINARY</code>
     * parameter, it may be more practical to send it via a
-    * <code>java.io.InputStream</code> object. The data will be read from the
+    * <code>j86.java.io.InputStream</code> object. The data will be read from the
     * stream as needed until end-of-file is reached.
     *
     * <P><B>Note:</B> This stream object can either be a standard
@@ -6583,7 +6583,7 @@ a
     * @throws SQLFeatureNotSupportedException  if the JDBC driver does not support this method
     * @since 1.6
     */
-   public void setBinaryStream(String parameterName, java.io.InputStream x)
+   public void setBinaryStream(String parameterName, j86.java.io.InputStream x)
    throws SQLException{
         throw new SQLFeatureNotSupportedException(resBundle.handleGetObject("jdbcrowsetimpl.featnotsupp").toString());
    }
@@ -6593,7 +6593,7 @@ a
     * object.
     * When a very large UNICODE value is input to a <code>LONGVARCHAR</code>
     * parameter, it may be more practical to send it via a
-    * <code>java.io.Reader</code> object. The data will be read from the stream
+    * <code>j86.java.io.Reader</code> object. The data will be read from the stream
     * as needed until end-of-file is reached.  The JDBC driver will
     * do any necessary conversion from UNICODE to the database char format.
     *
@@ -6605,7 +6605,7 @@ a
     * <code>setCharacterStream</code> which takes a length parameter.
     *
     * @param parameterName the name of the parameter
-    * @param reader the <code>java.io.Reader</code> object that contains the
+    * @param reader the <code>j86.java.io.Reader</code> object that contains the
     *        Unicode data
     * @exception SQLException if a database access error occurs or
     * this method is called on a closed <code>CallableStatement</code>
@@ -6613,13 +6613,13 @@ a
     * @since 1.6
     */
    public void setCharacterStream(String parameterName,
-                         java.io.Reader reader) throws SQLException{
+                         j86.java.io.Reader reader) throws SQLException{
         throw new SQLFeatureNotSupportedException(resBundle.handleGetObject("jdbcrowsetimpl.featnotsupp").toString());
    }
 
    /**
     * Sets the designated parameter to the given
-    * <code>java.math.BigDecimal</code> value.
+    * <code>j86.java.math.BigDecimal</code> value.
     * The driver converts this to an SQL <code>NUMERIC</code> value when
     * it sends it to the database.
     *
@@ -6680,7 +6680,7 @@ a
    }
 
  /**
-    * Sets the designated parameter to the given <code>java.sql.Timestamp</code> value.
+    * Sets the designated parameter to the given <code>j86.java.sql.Timestamp</code> value.
     * The driver
     * converts this to an SQL <code>TIMESTAMP</code> value when it sends it to the
     * database.
@@ -6694,7 +6694,7 @@ a
     * @see #getTimestamp
     * @since 1.4
     */
-   public void setTimestamp(String parameterName, java.sql.Timestamp x)
+   public void setTimestamp(String parameterName, j86.java.sql.Timestamp x)
        throws SQLException{
         throw new SQLFeatureNotSupportedException(resBundle.handleGetObject("jdbcrowsetimpl.featnotsupp").toString());
    }
@@ -6705,7 +6705,7 @@ a
     * <P><B>Note:</B> You must specify the parameter's SQL type.
     *
     * @param parameterName the name of the parameter
-    * @param sqlType the SQL type code defined in <code>java.sql.Types</code>
+    * @param sqlType the SQL type code defined in <code>j86.java.sql.Types</code>
     * @exception SQLException if a database access error occurs or
     * this method is called on a closed <code>CallableStatement</code>
     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
@@ -6738,7 +6738,7 @@ a
     *
     *
     * @param parameterName the name of the parameter
-    * @param sqlType a value from <code>java.sql.Types</code>
+    * @param sqlType a value from <code>j86.java.sql.Types</code>
     * @param typeName the fully-qualified name of an SQL user-defined type;
     *        ignored if the parameter is not a user-defined type or
     *        SQL <code>REF</code> value

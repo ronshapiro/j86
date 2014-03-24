@@ -23,12 +23,12 @@
  * questions.
  */
 
-package java.io;
+package j86.java.io;
 
-import java.security.*;
-import java.util.Enumeration;
-import java.util.Hashtable;
-import java.util.StringTokenizer;
+import j86.java.security.*;
+import j86.java.util.Enumeration;
+import j86.java.util.Hashtable;
+import j86.java.util.StringTokenizer;
 
 /**
  * This class is for Serializable permissions. A SerializablePermission
@@ -75,18 +75,18 @@ import java.util.StringTokenizer;
  *
  * </table>
  *
- * @see java.security.BasicPermission
- * @see java.security.Permission
- * @see java.security.Permissions
- * @see java.security.PermissionCollection
- * @see java.lang.SecurityManager
+ * @see j86.java.security.BasicPermission
+ * @see j86.java.security.Permission
+ * @see j86.java.security.Permissions
+ * @see j86.java.security.PermissionCollection
+ * @see j86.java.lang.SecurityManager
  *
  *
  * @author Joe Fialli
  * @since 1.2
  */
 
-/* code was borrowed originally from java.lang.RuntimePermission. */
+/* code was borrowed originally from j86.java.lang.RuntimePermission. */
 
 public final class SerializablePermission extends BasicPermission {
 

@@ -23,17 +23,17 @@
  * questions.
  */
 
-package java.util.prefs;
+package j86.j86.java.util.prefs;
 
-import java.util.*;
-import java.io.*;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
+import j86.java.util.*;
+import j86.java.io.*;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
 // These imports needed only as a workaround for a JavaDoc bug
-import java.lang.Integer;
-import java.lang.Long;
-import java.lang.Float;
-import java.lang.Double;
+import j86.java.lang.Integer;
+import j86.java.lang.Long;
+import j86.java.lang.Float;
+import j86.java.lang.Double;
 
 /**
  * This class provides a skeletal implementation of the {@link Preferences}

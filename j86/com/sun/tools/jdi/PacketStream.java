@@ -23,11 +23,11 @@
  * questions.
  */
 
-package com.sun.tools.jdi;
+package j86.com.sun.tools.jdi;
 
-import com.sun.jdi.*;
-import java.util.*;
-import java.io.ByteArrayOutputStream;
+import j86.com.sun.jdi.*;
+import j86.java.util.*;
+import j86.java.io.ByteArrayOutputStream;
 
 class PacketStream {
     final VirtualMachineImpl vm;
@@ -171,7 +171,7 @@ class PacketStream {
             byte[] stringBytes = string.getBytes("UTF8");
             writeInt(stringBytes.length);
             writeByteArray(stringBytes);
-        } catch (java.io.UnsupportedEncodingException e) {
+        } catch (j86.java.io.UnsupportedEncodingException e) {
             throw new InternalException("Cannot convert string to UTF8 bytes");
         }
     }
@@ -390,7 +390,7 @@ class PacketStream {
 
         try {
             ret = new String(pkt.data, inCursor, len, "UTF8");
-        } catch(java.io.UnsupportedEncodingException e) {
+        } catch(j86.java.io.UnsupportedEncodingException e) {
             System.err.println(e);
             ret = "Conversion error!";
         }

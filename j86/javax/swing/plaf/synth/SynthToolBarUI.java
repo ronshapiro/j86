@@ -23,29 +23,29 @@
  * questions.
  */
 
-package javax.swing.plaf.synth;
+package j86.j86.j86.javax.swing.plaf.synth;
 
-import java.awt.Component;
-import java.awt.Container;
-import java.awt.Dimension;
-import java.awt.Graphics;
-import java.awt.Insets;
-import java.awt.LayoutManager;
-import java.awt.Rectangle;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
-import javax.swing.Box;
-import javax.swing.Icon;
-import javax.swing.JComponent;
-import javax.swing.JSeparator;
-import javax.swing.JToolBar;
-import javax.swing.plaf.ComponentUI;
-import javax.swing.plaf.basic.BasicToolBarUI;
-import sun.swing.plaf.synth.SynthIcon;
+import j86.java.awt.Component;
+import j86.java.awt.Container;
+import j86.java.awt.Dimension;
+import j86.java.awt.Graphics;
+import j86.java.awt.Insets;
+import j86.java.awt.LayoutManager;
+import j86.java.awt.Rectangle;
+import j86.java.beans.PropertyChangeEvent;
+import j86.java.beans.PropertyChangeListener;
+import j86.javax.swing.Box;
+import j86.javax.swing.Icon;
+import j86.javax.swing.JComponent;
+import j86.javax.swing.JSeparator;
+import j86.javax.swing.JToolBar;
+import j86.j86.javax.swing.plaf.ComponentUI;
+import j86.j86.j86.javax.swing.plaf.basic.BasicToolBarUI;
+import j86.j86.j86.sun.swing.plaf.synth.SynthIcon;
 
 /**
  * Provides the Synth L&amp;F UI delegate for
- * {@link javax.swing.JToolBar}.
+ * {@link j86.javax.swing.JToolBar}.
  *
  * @since 1.7
  */

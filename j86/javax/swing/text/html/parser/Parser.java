@@ -23,19 +23,19 @@
  * questions.
  */
 
-package javax.swing.text.html.parser;
+package j86.j86.j86.j86.javax.swing.text.html.parser;
 
-import javax.swing.text.SimpleAttributeSet;
-import javax.swing.text.html.HTML;
-import javax.swing.text.ChangedCharSetException;
-import java.io.*;
-import java.util.Hashtable;
-import java.util.Properties;
-import java.util.Vector;
-import java.util.Enumeration;
-import java.net.URL;
+import j86.j86.javax.swing.text.SimpleAttributeSet;
+import j86.j86.j86.javax.swing.text.html.HTML;
+import j86.j86.javax.swing.text.ChangedCharSetException;
+import j86.java.io.*;
+import j86.java.util.Hashtable;
+import j86.java.util.Properties;
+import j86.java.util.Vector;
+import j86.java.util.Enumeration;
+import j86.java.net.URL;
 
-import sun.misc.MessageUtils;
+import j86.sun.misc.MessageUtils;
 
 /**
  * A simple DTD-driven HTML parser. The parser reads an

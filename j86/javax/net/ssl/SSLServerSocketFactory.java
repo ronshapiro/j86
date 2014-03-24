@@ -24,14 +24,14 @@
  */
 
 
-package javax.net.ssl;
+package j86.j86.javax.net.ssl;
 
-import java.io.IOException;
-import java.net.InetAddress;
-import java.net.ServerSocket;
-import java.net.SocketException;
-import javax.net.ServerSocketFactory;
-import java.security.*;
+import j86.java.io.IOException;
+import j86.java.net.InetAddress;
+import j86.java.net.ServerSocket;
+import j86.java.net.SocketException;
+import j86.javax.net.ServerSocketFactory;
+import j86.java.security.*;
 
 /**
  * <code>SSLServerSocketFactory</code>s create

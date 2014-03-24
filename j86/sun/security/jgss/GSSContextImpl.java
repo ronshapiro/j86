@@ -23,17 +23,17 @@
  * questions.
  */
 
-package sun.security.jgss;
+package j86.sun.security.jgss;
 
-import org.ietf.jgss.*;
-import sun.security.jgss.spi.*;
-import sun.security.util.ObjectIdentifier;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import com.sun.security.jgss.*;
+import j86.org.ietf.jgss.*;
+import j86.j86.sun.security.jgss.spi.*;
+import j86.sun.security.util.ObjectIdentifier;
+import j86.java.io.InputStream;
+import j86.java.io.OutputStream;
+import j86.java.io.ByteArrayInputStream;
+import j86.java.io.ByteArrayOutputStream;
+import j86.java.io.IOException;
+import com.j86.sun.security.jgss.*;
 
 /**
  * This class represents the JGSS security context and its associated

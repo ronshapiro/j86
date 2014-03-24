@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.lang;
+package j86.java.lang;
 
-import java.lang.annotation.Native;
-import java.math.*;
+import j86.j86.java.lang.annotation.Native;
+import j86.java.math.*;
 
 
 /**
@@ -104,7 +104,7 @@ public final class Long extends Number implements Comparable<Long> {
      * are used as radix-<var>N</var> digits in the order shown. Thus,
      * the digits for hexadecimal (radix 16) are
      * {@code 0123456789abcdef}. If uppercase letters are
-     * desired, the {@link java.lang.String#toUpperCase()} method may
+     * desired, the {@link j86.java.lang.String#toUpperCase()} method may
      * be called on the result:
      *
      * <blockquote>
@@ -114,8 +114,8 @@ public final class Long extends Number implements Comparable<Long> {
      * @param   i       a {@code long} to be converted to a string.
      * @param   radix   the radix to use in the string representation.
      * @return  a string representation of the argument in the specified radix.
-     * @see     java.lang.Character#MAX_RADIX
-     * @see     java.lang.Character#MIN_RADIX
+     * @see     j86.java.lang.Character#MAX_RADIX
+     * @see     j86.java.lang.Character#MIN_RADIX
      */
     public static String toString(long i, int radix) {
         if (radix < Character.MIN_RADIX || radix > Character.MAX_RADIX)
@@ -253,7 +253,7 @@ public final class Long extends Number implements Comparable<Long> {
      * These are the characters {@code '\u005Cu0030'} through
      * {@code '\u005Cu0039'} and  {@code '\u005Cu0061'} through
      * {@code '\u005Cu0066'}.  If uppercase letters are desired,
-     * the {@link java.lang.String#toUpperCase()} method may be called
+     * the {@link j86.java.lang.String#toUpperCase()} method may be called
      * on the result:
      *
      * <blockquote>
@@ -488,7 +488,7 @@ public final class Long extends Number implements Comparable<Long> {
      * Parses the string argument as a signed {@code long} in the
      * radix specified by the second argument. The characters in the
      * string must all be digits of the specified radix (as determined
-     * by whether {@link java.lang.Character#digit(char, int)} returns
+     * by whether {@link j86.java.lang.Character#digit(char, int)} returns
      * a nonnegative value), except that the first character may be an
      * ASCII minus sign {@code '-'} ({@code '\u005Cu002D'}) to
      * indicate a negative value or an ASCII plus sign {@code '+'}
@@ -511,8 +511,8 @@ public final class Long extends Number implements Comparable<Long> {
      * length zero.
      *
      * <li>The {@code radix} is either smaller than {@link
-     * java.lang.Character#MIN_RADIX} or larger than {@link
-     * java.lang.Character#MAX_RADIX}.
+     * j86.java.lang.Character#MIN_RADIX} or larger than {@link
+     * j86.java.lang.Character#MAX_RADIX}.
      *
      * <li>Any character of the string is not a digit of the specified
      * radix, except that the first character may be a minus sign
@@ -612,7 +612,7 @@ public final class Long extends Number implements Comparable<Long> {
      * indicate a positive value. The resulting {@code long} value is
      * returned, exactly as if the argument and the radix {@code 10}
      * were given as arguments to the {@link
-     * #parseLong(java.lang.String, int)} method.
+     * #parseLong(j86.java.lang.String, int)} method.
      *
      * <p>Note that neither the character {@code L}
      * ({@code '\u005Cu004C'}) nor {@code l}
@@ -639,7 +639,7 @@ public final class Long extends Number implements Comparable<Long> {
      *
      * The characters in the string must all be digits of the
      * specified radix (as determined by whether {@link
-     * java.lang.Character#digit(char, int)} returns a nonnegative
+     * j86.java.lang.Character#digit(char, int)} returns a nonnegative
      * value), except that the first character may be an ASCII plus
      * sign {@code '+'} ({@code '\u005Cu002B'}). The resulting
      * integer value is returned.
@@ -651,8 +651,8 @@ public final class Long extends Number implements Comparable<Long> {
      * length zero.
      *
      * <li>The radix is either smaller than
-     * {@link java.lang.Character#MIN_RADIX} or
-     * larger than {@link java.lang.Character#MAX_RADIX}.
+     * {@link j86.java.lang.Character#MIN_RADIX} or
+     * larger than {@link j86.java.lang.Character#MAX_RADIX}.
      *
      * <li>Any character of the string is not a digit of the specified
      * radix, except that the first character may be a plus sign
@@ -733,7 +733,7 @@ public final class Long extends Number implements Comparable<Long> {
      * '+'} ({@code '\u005Cu002B'}). The resulting integer value
      * is returned, exactly as if the argument and the radix 10 were
      * given as arguments to the {@link
-     * #parseUnsignedLong(java.lang.String, int)} method.
+     * #parseUnsignedLong(j86.java.lang.String, int)} method.
      *
      * @param s   a {@code String} containing the unsigned {@code long}
      *            representation to be parsed
@@ -753,7 +753,7 @@ public final class Long extends Number implements Comparable<Long> {
      * argument is interpreted as representing a signed
      * {@code long} in the radix specified by the second
      * argument, exactly as if the arguments were given to the {@link
-     * #parseLong(java.lang.String, int)} method. The result is a
+     * #parseLong(j86.java.lang.String, int)} method. The result is a
      * {@code Long} object that represents the {@code long}
      * value specified by the string.
      *
@@ -781,7 +781,7 @@ public final class Long extends Number implements Comparable<Long> {
      * of the specified {@code String}. The argument is
      * interpreted as representing a signed decimal {@code long},
      * exactly as if the argument were given to the {@link
-     * #parseLong(java.lang.String)} method. The result is a
+     * #parseLong(j86.java.lang.String)} method. The result is a
      * {@code Long} object that represents the integer value
      * specified by the string.
      *
@@ -880,7 +880,7 @@ public final class Long extends Number implements Comparable<Long> {
      *            value represented by {@code nm}
      * @throws    NumberFormatException  if the {@code String} does not
      *            contain a parsable {@code long}.
-     * @see java.lang.Long#parseLong(String, int)
+     * @see j86.java.lang.Long#parseLong(String, int)
      * @since 1.2
      */
     public static Long decode(String nm) throws NumberFormatException {
@@ -959,7 +959,7 @@ public final class Long extends Number implements Comparable<Long> {
      *             {@code Long}.
      * @throws     NumberFormatException  if the {@code String} does not
      *             contain a parsable {@code long}.
-     * @see        java.lang.Long#parseLong(java.lang.String, int)
+     * @see        j86.java.lang.Long#parseLong(java.lang.String, int)
      */
     public Long(String s) throws NumberFormatException {
         this.value = parseLong(s, 10);
@@ -1023,7 +1023,7 @@ public final class Long extends Number implements Comparable<Long> {
      * {@code Long}'s value.  The value is converted to signed
      * decimal representation and returned as a string, exactly as if
      * the {@code long} value were given as an argument to the
-     * {@link java.lang.Long#toString(long)} method.
+     * {@link j86.java.lang.Long#toString(long)} method.
      *
      * @return  a string representation of the value of this object in
      *          base&nbsp;10.
@@ -1084,7 +1084,7 @@ public final class Long extends Number implements Comparable<Long> {
      *
      * <p>The first argument is treated as the name of a system
      * property.  System properties are accessible through the {@link
-     * java.lang.System#getProperty(java.lang.String)} method. The
+     * j86.java.lang.System#getProperty(java.lang.String)} method. The
      * string value of this property is then interpreted as a {@code
      * long} value using the grammar supported by {@link Long#decode decode}
      * and a {@code Long} object representing this value is returned.
@@ -1105,8 +1105,8 @@ public final class Long extends Number implements Comparable<Long> {
      * @return  the {@code Long} value of the property.
      * @throws  SecurityException for the same reasons as
      *          {@link System#getProperty(String) System.getProperty}
-     * @see     java.lang.System#getProperty(java.lang.String)
-     * @see     java.lang.System#getProperty(java.lang.String, java.lang.String)
+     * @see     j86.java.lang.System#getProperty(java.lang.String)
+     * @see     j86.java.lang.System#getProperty(java.lang.String, java.lang.String)
      */
     public static Long getLong(String nm) {
         return getLong(nm, null);
@@ -1118,7 +1118,7 @@ public final class Long extends Number implements Comparable<Long> {
      *
      * <p>The first argument is treated as the name of a system
      * property.  System properties are accessible through the {@link
-     * java.lang.System#getProperty(java.lang.String)} method. The
+     * j86.java.lang.System#getProperty(java.lang.String)} method. The
      * string value of this property is then interpreted as a {@code
      * long} value using the grammar supported by {@link Long#decode decode}
      * and a {@code Long} object representing this value is returned.
@@ -1150,8 +1150,8 @@ public final class Long extends Number implements Comparable<Long> {
      * @return  the {@code Long} value of the property.
      * @throws  SecurityException for the same reasons as
      *          {@link System#getProperty(String) System.getProperty}
-     * @see     java.lang.System#getProperty(java.lang.String)
-     * @see     java.lang.System#getProperty(java.lang.String, java.lang.String)
+     * @see     j86.java.lang.System#getProperty(java.lang.String)
+     * @see     j86.java.lang.System#getProperty(java.lang.String, java.lang.String)
      */
     public static Long getLong(String nm, long val) {
         Long result = Long.getLong(nm, null);
@@ -1162,7 +1162,7 @@ public final class Long extends Number implements Comparable<Long> {
      * Returns the {@code long} value of the system property with
      * the specified name.  The first argument is treated as the name
      * of a system property.  System properties are accessible through
-     * the {@link java.lang.System#getProperty(java.lang.String)}
+     * the {@link j86.java.lang.System#getProperty(java.lang.String)}
      * method. The string value of this property is then interpreted
      * as a {@code long} value, as per the
      * {@link Long#decode decode} method, and a {@code Long} object
@@ -1172,15 +1172,15 @@ public final class Long extends Number implements Comparable<Long> {
      * <li>If the property value begins with the two ASCII characters
      * {@code 0x} or the ASCII character {@code #}, not followed by
      * a minus sign, then the rest of it is parsed as a hexadecimal integer
-     * exactly as for the method {@link #valueOf(java.lang.String, int)}
+     * exactly as for the method {@link #valueOf(j86.java.lang.String, int)}
      * with radix 16.
      * <li>If the property value begins with the ASCII character
      * {@code 0} followed by another character, it is parsed as
      * an octal integer exactly as by the method {@link
-     * #valueOf(java.lang.String, int)} with radix 8.
+     * #valueOf(j86.java.lang.String, int)} with radix 8.
      * <li>Otherwise the property value is parsed as a decimal
      * integer exactly as by the method
-     * {@link #valueOf(java.lang.String, int)} with radix 10.
+     * {@link #valueOf(j86.java.lang.String, int)} with radix 10.
      * </ul>
      *
      * <p>Note that, in every case, neither {@code L}
@@ -1199,8 +1199,8 @@ public final class Long extends Number implements Comparable<Long> {
      * @return  the {@code Long} value of the property.
      * @throws  SecurityException for the same reasons as
      *          {@link System#getProperty(String) System.getProperty}
-     * @see     System#getProperty(java.lang.String)
-     * @see     System#getProperty(java.lang.String, java.lang.String)
+     * @see     System#getProperty(j86.java.lang.String)
+     * @see     System#getProperty(j86.java.lang.String, java.lang.String)
      */
     public static Long getLong(String nm, Long val) {
         String v = null;
@@ -1580,7 +1580,7 @@ public final class Long extends Number implements Comparable<Long> {
      * @param a the first operand
      * @param b the second operand
      * @return the sum of {@code a} and {@code b}
-     * @see java.util.function.BinaryOperator
+     * @see j86.j86.java.util.function.BinaryOperator
      * @since 1.8
      */
     public static long sum(long a, long b) {
@@ -1594,7 +1594,7 @@ public final class Long extends Number implements Comparable<Long> {
      * @param a the first operand
      * @param b the second operand
      * @return the greater of {@code a} and {@code b}
-     * @see java.util.function.BinaryOperator
+     * @see j86.j86.java.util.function.BinaryOperator
      * @since 1.8
      */
     public static long max(long a, long b) {
@@ -1608,7 +1608,7 @@ public final class Long extends Number implements Comparable<Long> {
      * @param a the first operand
      * @param b the second operand
      * @return the smaller of {@code a} and {@code b}
-     * @see java.util.function.BinaryOperator
+     * @see j86.j86.java.util.function.BinaryOperator
      * @since 1.8
      */
     public static long min(long a, long b) {

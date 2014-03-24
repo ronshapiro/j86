@@ -30,10 +30,10 @@
  * at JavaSoft/Sun.
  */
 
-package com.sun.tools.hat.internal.parser;
+package j86.j86.com.sun.tools.hat.internal.parser;
 
-import java.io.IOException;
-import java.io.RandomAccessFile;
+import j86.java.io.IOException;
+import j86.java.io.RandomAccessFile;
 
 /**
  * Implementation of ReadBuffer using a RandomAccessFile

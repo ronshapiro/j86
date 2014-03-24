@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.awt.image;
+package j86.j86.j86.java.awt.image;
 
-import java.awt.Image;
+import j86.java.awt.Image;
 
 
 /**
@@ -84,7 +84,7 @@ public interface ImageObserver {
      * @see #ABORT
      * @see Image#getWidth
      * @see Image#getHeight
-     * @see java.awt.Graphics#drawImage
+     * @see j86.java.awt.Graphics#drawImage
      */
     public boolean imageUpdate(Image img, int infoflags,
                                int x, int y, int width, int height);
@@ -121,7 +121,7 @@ public interface ImageObserver {
      * are available.  The bounding box of the new pixels can be taken
      * from the x, y, width, and height arguments to the imageUpdate
      * callback method.
-     * @see java.awt.Graphics#drawImage
+     * @see j86.java.awt.Graphics#drawImage
      * @see #imageUpdate
      */
     public static final int SOMEBITS = 8;
@@ -131,7 +131,7 @@ public interface ImageObserver {
      * another complete frame of a multi-frame image which was previously
      * drawn is now available to be drawn again.  The x, y, width, and height
      * arguments to the imageUpdate callback method should be ignored.
-     * @see java.awt.Graphics#drawImage
+     * @see j86.java.awt.Graphics#drawImage
      * @see #imageUpdate
      */
     public static final int FRAMEBITS = 16;
@@ -141,7 +141,7 @@ public interface ImageObserver {
      * a static image which was previously drawn is now complete and can
      * be drawn again in its final form.  The x, y, width, and height
      * arguments to the imageUpdate callback method should be ignored.
-     * @see java.awt.Graphics#drawImage
+     * @see j86.java.awt.Graphics#drawImage
      * @see #imageUpdate
      */
     public static final int ALLBITS = 32;

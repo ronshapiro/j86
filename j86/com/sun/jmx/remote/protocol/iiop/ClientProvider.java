@@ -23,16 +23,16 @@
  * questions.
  */
 
-package com.sun.jmx.remote.protocol.iiop;
+package j86.com.sun.jmx.remote.protocol.iiop;
 
-import java.io.IOException;
-import java.net.MalformedURLException;
-import java.util.Map;
+import j86.java.io.IOException;
+import j86.java.net.MalformedURLException;
+import j86.java.util.Map;
 
-import javax.management.remote.JMXConnectorProvider;
-import javax.management.remote.JMXConnector;
-import javax.management.remote.JMXServiceURL;
-import javax.management.remote.rmi.RMIConnector;
+import j86.j86.javax.management.remote.JMXConnectorProvider;
+import j86.j86.javax.management.remote.JMXConnector;
+import j86.j86.javax.management.remote.JMXServiceURL;
+import j86.j86.j86.javax.management.remote.rmi.RMIConnector;
 
 public class ClientProvider implements JMXConnectorProvider {
 

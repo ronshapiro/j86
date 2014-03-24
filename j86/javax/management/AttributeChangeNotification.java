@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.management;
+package j86.javax.management;
 
 
 
@@ -49,7 +49,7 @@ package javax.management;
  *
  * @since 1.5
  */
-public class AttributeChangeNotification extends javax.management.Notification {
+public class AttributeChangeNotification extends j86.javax.management.Notification {
 
     /* Serial version */
     private static final long serialVersionUID = 535176054565814134L;

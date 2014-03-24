@@ -26,14 +26,14 @@
 /*
  * $Id$
  */
-package org.jcp.xml.dsig.internal.dom;
+package j86.j86.org.jcp.xml.dsig.internal.dom;
 
-import javax.xml.crypto.NodeSetData;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.ListIterator;
-import java.util.NoSuchElementException;
+import j86.javax.xml.crypto.NodeSetData;
+import j86.java.util.ArrayList;
+import j86.java.util.Iterator;
+import j86.java.util.List;
+import j86.java.util.ListIterator;
+import j86.java.util.NoSuchElementException;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 

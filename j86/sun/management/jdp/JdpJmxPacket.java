@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.management.jdp;
+package j86.j86.sun.management.jdp;
 
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Objects;
-import java.util.UUID;
+import j86.java.io.IOException;
+import j86.java.util.HashMap;
+import j86.java.util.Map;
+import j86.java.util.Objects;
+import j86.java.util.UUID;
 
 /**
  * A packet to broadcasts JMX URL
@@ -70,7 +70,7 @@ public final class JdpJmxPacket
     public final static String PROCESS_ID_KEY = "PROCESS_ID";
     /**
      * Hostname of rmi server, optional presented if user overrides rmi server
-     * hostname by java.rmi.server.hostname property
+     * hostname by j86.j86.java.rmi.server.hostname property
      */
     public final static String RMI_HOSTNAME_KEY = "RMI_HOSTNAME";
     /**

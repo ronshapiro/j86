@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.accessibility;
+package j86.javax.accessibility;
 
 /**
  * This AccessibleSelection interface

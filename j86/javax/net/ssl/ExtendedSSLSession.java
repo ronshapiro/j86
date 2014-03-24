@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.net.ssl;
+package j86.j86.javax.net.ssl;
 
-import java.util.List;
+import j86.java.util.List;
 
 /**
  * Extends the <code>SSLSession</code> interface to support additional

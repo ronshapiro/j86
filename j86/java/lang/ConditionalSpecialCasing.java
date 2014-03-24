@@ -23,14 +23,14 @@
  * questions.
  */
 
-package java.lang;
+package j86.java.lang;
 
-import java.text.BreakIterator;
-import java.util.HashSet;
-import java.util.Hashtable;
-import java.util.Iterator;
-import java.util.Locale;
-import sun.text.Normalizer;
+import j86.java.text.BreakIterator;
+import j86.java.util.HashSet;
+import j86.java.util.Hashtable;
+import j86.java.util.Iterator;
+import j86.java.util.Locale;
+import j86.sun.text.Normalizer;
 
 
 /**

@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.security.validator;
+package j86.sun.security.validator;
 
-import java.util.*;
+import j86.java.util.*;
 
-import java.security.*;
-import java.security.cert.*;
+import j86.java.security.*;
+import j86.j86.java.security.cert.*;
 
-import javax.security.auth.x500.X500Principal;
-import sun.security.action.GetBooleanAction;
-import sun.security.provider.certpath.AlgorithmChecker;
+import j86.j86.javax.security.auth.x500.X500Principal;
+import j86.sun.security.action.GetBooleanAction;
+import j86.j86.sun.security.provider.certpath.AlgorithmChecker;
 
 /**
  * Validator implementation built on the PKIX CertPath API. This
@@ -58,7 +58,7 @@ public final class PKIXValidator extends Validator {
      */
     private final static boolean checkTLSRevocation =
         AccessController.doPrivileged
-            (new GetBooleanAction("com.sun.net.ssl.checkRevocation"));
+            (new GetBooleanAction("com.j86.sun.net.ssl.checkRevocation"));
 
     // enable use of the validator if possible
     private final static boolean TRY_VALIDATOR = true;
@@ -310,7 +310,7 @@ public final class PKIXValidator extends Validator {
 
     private static X509Certificate[] toArray(CertPath path, TrustAnchor anchor)
             throws CertificateException {
-        List<? extends java.security.cert.Certificate> list =
+        List<? extends j86.j86.java.security.cert.Certificate> list =
                                                 path.getCertificates();
         X509Certificate[] chain = new X509Certificate[list.size() + 1];
         list.toArray(chain);

@@ -23,11 +23,11 @@
  * questions.
  */
 
-package com.sun.java.swing.plaf.gtk;
+package j86.j86.com.sun.java.swing.plaf.gtk;
 
-import java.awt.Color;
-import java.util.Arrays;
-import javax.swing.plaf.ColorUIResource;
+import j86.java.awt.Color;
+import j86.java.util.Arrays;
+import j86.j86.javax.swing.plaf.ColorUIResource;
 
 /**
  * @author  Shannon Hickey

@@ -23,15 +23,15 @@
  * questions.
  */
 
-package javax.swing.text.html.parser;
+package j86.j86.j86.j86.javax.swing.text.html.parser;
 
-import java.util.Hashtable;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.Reader;
-import java.io.CharArrayReader;
-import java.net.URL;
+import j86.java.util.Hashtable;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.io.InputStreamReader;
+import j86.java.io.Reader;
+import j86.java.io.CharArrayReader;
+import j86.java.net.URL;
 
 /**
  * An entity is described in a DTD using the ENTITY construct.

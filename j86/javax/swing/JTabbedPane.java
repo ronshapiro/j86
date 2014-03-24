@@ -23,21 +23,21 @@
  * questions.
  */
 
-package javax.swing;
+package j86.javax.swing;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.beans.Transient;
-import java.util.*;
-import javax.swing.event.*;
-import javax.swing.plaf.*;
-import javax.accessibility.*;
-import sun.swing.SwingUtilities2;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.java.beans.Transient;
+import j86.java.util.*;
+import j86.j86.javax.swing.event.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.javax.accessibility.*;
+import j86.sun.swing.SwingUtilities2;
 
-import java.io.Serializable;
-import java.io.ObjectOutputStream;
-import java.io.ObjectInputStream;
-import java.io.IOException;
+import j86.java.io.Serializable;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.IOException;
 
 /**
  * A component that lets the user switch between a group of components by
@@ -92,8 +92,8 @@ import java.io.IOException;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @beaninfo
  *      attribute: isContainer true
@@ -149,7 +149,7 @@ public class JTabbedPane extends JComponent
      */
     protected ChangeListener changeListener = null;
 
-    private final java.util.List<Page> pages;
+    private final j86.java.util.List<Page> pages;
 
     /* The component that is currently visible */
     private Component visComp = null;
@@ -1635,9 +1635,9 @@ public class JTabbedPane extends JComponent
      * <p>
      * A mnemonic must correspond to a single key on the keyboard
      * and should be specified using one of the <code>VK_XXX</code>
-     * keycodes defined in <code>java.awt.event.KeyEvent</code>
+     * keycodes defined in <code>j86.j86.java.awt.event.KeyEvent</code>
      * or one of the extended keycodes obtained through
-     * <code>java.awt.event.KeyEvent.getExtendedKeyCodeForChar</code>.
+     * <code>j86.j86.java.awt.event.KeyEvent.getExtendedKeyCodeForChar</code>.
      * Mnemonics are case-insensitive, therefore a key event
      * with the corresponding keycode would cause the button to be
      * activated whether or not the Shift modifier was pressed.
@@ -1886,8 +1886,8 @@ public class JTabbedPane extends JComponent
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     protected class AccessibleJTabbedPane extends AccessibleJComponent
         implements AccessibleSelection, ChangeListener {

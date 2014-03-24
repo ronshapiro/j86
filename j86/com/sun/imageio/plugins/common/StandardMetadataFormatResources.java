@@ -23,9 +23,9 @@
  * questions.
  */
 
-package com.sun.imageio.plugins.common;
+package j86.com.sun.imageio.plugins.common;
 
-import java.util.ListResourceBundle;
+import j86.java.util.ListResourceBundle;
 
 public class StandardMetadataFormatResources extends ListResourceBundle {
 

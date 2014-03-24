@@ -23,30 +23,30 @@
  * questions.
  */
 
-package com.sun.java.swing.plaf.gtk;
+package j86.j86.com.sun.java.swing.plaf.gtk;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.beans.*;
-import java.io.File;
-import java.lang.ref.*;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.util.Locale;
-import javax.swing.*;
-import javax.swing.colorchooser.*;
-import javax.swing.plaf.*;
-import javax.swing.plaf.synth.*;
-import javax.swing.text.DefaultEditorKit;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.java.beans.*;
+import j86.java.io.File;
+import j86.j86.java.lang.ref.*;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.util.Locale;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.colorchooser.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.j86.javax.swing.plaf.synth.*;
+import j86.j86.javax.swing.text.DefaultEditorKit;
 
-import com.sun.java.swing.plaf.gtk.GTKConstants.PositionType;
-import com.sun.java.swing.plaf.gtk.GTKConstants.StateType;
-import sun.awt.SunToolkit;
-import sun.awt.UNIXToolkit;
-import sun.awt.OSInfo;
-import sun.security.action.GetPropertyAction;
-import sun.swing.DefaultLayoutStyle;
-import sun.swing.SwingUtilities2;
+import j86.j86.com.sun.java.swing.plaf.gtk.GTKConstants.PositionType;
+import j86.j86.com.sun.java.swing.plaf.gtk.GTKConstants.StateType;
+import j86.sun.awt.SunToolkit;
+import j86.sun.awt.UNIXToolkit;
+import j86.sun.awt.OSInfo;
+import j86.sun.security.action.GetPropertyAction;
+import j86.sun.swing.DefaultLayoutStyle;
+import j86.sun.swing.SwingUtilities2;
 
 /**
  * @author Scott Violet
@@ -139,7 +139,7 @@ public class GTKLookAndFeel extends SynthLookAndFeel {
                                     });
                     isSunDesktop = val.booleanValue();
             }
-            if (isSunDesktop && !sun.java2d.SunGraphicsEnvironment.isOpenSolaris) {
+            if (isSunDesktop && !j86.sun.java2d.SunGraphicsEnvironment.isOpenSolaris) {
                 isSunCJK = true;
             }
         }
@@ -328,7 +328,7 @@ public class GTKLookAndFeel extends SynthLookAndFeel {
     }
 
     private void initResourceBundle(UIDefaults table) {
-        table.addResourceBundle("com.sun.java.swing.plaf.gtk.resources.gtk");
+        table.addResourceBundle("j86.j86.com.sun.java.swing.plaf.gtk.resources.gtk");
     }
 
     protected void initComponentDefaults(UIDefaults table) {
@@ -337,17 +337,17 @@ public class GTKLookAndFeel extends SynthLookAndFeel {
         super.initComponentDefaults(table);
 
         Integer zero =  Integer.valueOf(0);
-        Object zeroBorder = new sun.swing.SwingLazyValue(
-            "javax.swing.plaf.BorderUIResource$EmptyBorderUIResource",
+        Object zeroBorder = new j86.sun.swing.SwingLazyValue(
+            "j86.j86.javax.swing.plaf.BorderUIResource$EmptyBorderUIResource",
             new Object[] {zero, zero, zero, zero});
         Object focusBorder = new GTKStyle.GTKLazyValue(
-            "com.sun.java.swing.plaf.gtk.GTKPainter$ListTableFocusBorder",
+            "j86.j86.com.sun.java.swing.plaf.gtk.GTKPainter$ListTableFocusBorder",
             "getUnselectedCellBorder");
         Object focusSelectedBorder = new GTKStyle.GTKLazyValue(
-            "com.sun.java.swing.plaf.gtk.GTKPainter$ListTableFocusBorder",
+            "j86.j86.com.sun.java.swing.plaf.gtk.GTKPainter$ListTableFocusBorder",
             "getSelectedCellBorder");
         Object noFocusBorder = new GTKStyle.GTKLazyValue(
-            "com.sun.java.swing.plaf.gtk.GTKPainter$ListTableFocusBorder",
+            "j86.j86.com.sun.java.swing.plaf.gtk.GTKPainter$ListTableFocusBorder",
             "getNoFocusCellBorder");
 
         GTKStyleFactory factory = (GTKStyleFactory)getStyleFactory();
@@ -559,7 +559,7 @@ public class GTKLookAndFeel extends SynthLookAndFeel {
                 "released SPACE", "released"
               }),
             "CheckBox.icon", new GTKStyle.GTKLazyValue(
-                              "com.sun.java.swing.plaf.gtk.GTKIconFactory",
+                              "j86.j86.com.sun.java.swing.plaf.gtk.GTKIconFactory",
                               "getCheckBoxIcon"),
             "CheckBox.font", new FontLazyValue(Region.CHECK_BOX),
             "CheckBox.margin", zeroInsets,
@@ -567,7 +567,7 @@ public class GTKLookAndFeel extends SynthLookAndFeel {
 
             "CheckBoxMenuItem.arrowIcon", null,
             "CheckBoxMenuItem.checkIcon", new GTKStyle.GTKLazyValue(
-                              "com.sun.java.swing.plaf.gtk.GTKIconFactory",
+                              "j86.j86.com.sun.java.swing.plaf.gtk.GTKIconFactory",
                               "getCheckBoxMenuItemCheckIcon"),
             "CheckBoxMenuItem.font",
                 new FontLazyValue(Region.CHECK_BOX_MENU_ITEM),
@@ -621,7 +621,7 @@ public class GTKLookAndFeel extends SynthLookAndFeel {
                      "ESCAPE", "cancelSelection",
                  "ctrl ENTER", "approveSelection"
                  }),
-            "FileChooserUI", "com.sun.java.swing.plaf.gtk.GTKLookAndFeel",
+            "FileChooserUI", "j86.j86.com.sun.java.swing.plaf.gtk.GTKLookAndFeel",
 
 
             "FormattedTextField.caretForeground", caretColor,
@@ -679,7 +679,7 @@ public class GTKLookAndFeel extends SynthLookAndFeel {
 
 
             "InternalFrameTitlePane.titlePaneLayout",
-                                new GTKStyle.GTKLazyValue("com.sun.java.swing.plaf.gtk.Metacity",
+                                new GTKStyle.GTKLazyValue("j86.j86.com.sun.java.swing.plaf.gtk.Metacity",
                                                  "getTitlePaneLayout"),
             "InternalFrame.windowBindings", new Object[] {
                   "shift ESCAPE", "showSystemMenu",
@@ -788,7 +788,7 @@ public class GTKLookAndFeel extends SynthLookAndFeel {
             "List.rendererUseUIBorder", Boolean.FALSE,
 
             "Menu.arrowIcon", new GTKStyle.GTKLazyValue(
-                              "com.sun.java.swing.plaf.gtk.GTKIconFactory",
+                              "j86.j86.com.sun.java.swing.plaf.gtk.GTKIconFactory",
                               "getMenuArrowIcon"),
             "Menu.checkIcon", null,
             "Menu.font", new FontLazyValue(Region.MENU),
@@ -867,7 +867,7 @@ public class GTKLookAndFeel extends SynthLookAndFeel {
                            "RETURN", "pressed"
                    }),
             "RadioButton.icon", new GTKStyle.GTKLazyValue(
-                              "com.sun.java.swing.plaf.gtk.GTKIconFactory",
+                              "j86.j86.com.sun.java.swing.plaf.gtk.GTKIconFactory",
                               "getRadioButtonIcon"),
             "RadioButton.font", new FontLazyValue(Region.RADIO_BUTTON),
             "RadioButton.margin", zeroInsets,
@@ -875,7 +875,7 @@ public class GTKLookAndFeel extends SynthLookAndFeel {
 
             "RadioButtonMenuItem.arrowIcon", null,
             "RadioButtonMenuItem.checkIcon", new GTKStyle.GTKLazyValue(
-                              "com.sun.java.swing.plaf.gtk.GTKIconFactory",
+                              "j86.j86.com.sun.java.swing.plaf.gtk.GTKIconFactory",
                               "getRadioButtonMenuItemCheckIcon"),
             "RadioButtonMenuItem.font", new FontLazyValue(Region.RADIO_BUTTON_MENU_ITEM),
             "RadioButtonMenuItem.margin", zeroInsets,
@@ -1153,10 +1153,10 @@ public class GTKLookAndFeel extends SynthLookAndFeel {
                     }),
             "Table.font", new FontLazyValue(Region.TABLE),
             "Table.ascendingSortIcon",  new GTKStyle.GTKLazyValue(
-                              "com.sun.java.swing.plaf.gtk.GTKIconFactory",
+                              "j86.j86.com.sun.java.swing.plaf.gtk.GTKIconFactory",
                               "getAscendingSortIcon"),
             "Table.descendingSortIcon",  new GTKStyle.GTKLazyValue(
-                              "com.sun.java.swing.plaf.gtk.GTKIconFactory",
+                              "j86.j86.com.sun.java.swing.plaf.gtk.GTKIconFactory",
                               "getDescendingSortIcon"),
 
             "TableHeader.font", new FontLazyValue(Region.TABLE_HEADER),
@@ -1235,10 +1235,10 @@ public class GTKLookAndFeel extends SynthLookAndFeel {
             "Tree.leafIcon", null,
             "Tree.openIcon", null,
             "Tree.expandedIcon", new GTKStyle.GTKLazyValue(
-                              "com.sun.java.swing.plaf.gtk.GTKIconFactory",
+                              "j86.j86.com.sun.java.swing.plaf.gtk.GTKIconFactory",
                               "getTreeExpandedIcon"),
             "Tree.collapsedIcon", new GTKStyle.GTKLazyValue(
-                              "com.sun.java.swing.plaf.gtk.GTKIconFactory",
+                              "j86.j86.com.sun.java.swing.plaf.gtk.GTKIconFactory",
                               "getTreeCollapsedIcon"),
             "Tree.leftChildIndent", Integer.valueOf(2),
             "Tree.rightChildIndent", Integer.valueOf(12),

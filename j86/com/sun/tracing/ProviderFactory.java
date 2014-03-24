@@ -1,18 +1,18 @@
 
-package com.sun.tracing;
+package com.j86.sun.tracing;
 
-import java.util.HashSet;
-import java.io.PrintStream;
-import java.lang.reflect.Field;
-import java.security.AccessController;
-import java.security.PrivilegedActionException;
-import java.security.PrivilegedExceptionAction;
-import sun.security.action.GetPropertyAction;
+import j86.java.util.HashSet;
+import j86.java.io.PrintStream;
+import j86.j86.j86.java.lang.reflect.Field;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedActionException;
+import j86.java.security.PrivilegedExceptionAction;
+import j86.sun.security.action.GetPropertyAction;
 
-import sun.tracing.NullProviderFactory;
-import sun.tracing.PrintStreamProviderFactory;
-import sun.tracing.MultiplexProviderFactory;
-import sun.tracing.dtrace.DTraceProviderFactory;
+import j86.sun.tracing.NullProviderFactory;
+import j86.sun.tracing.PrintStreamProviderFactory;
+import j86.sun.tracing.MultiplexProviderFactory;
+import j86.j86.sun.tracing.dtrace.DTraceProviderFactory;
 
 /**
  * {@code ProviderFactory} is a factory class used to create instances of
@@ -56,7 +56,7 @@ public abstract class ProviderFactory {
 
         // Try to instantiate a DTraceProviderFactory
         String prop = AccessController.doPrivileged(
-            new GetPropertyAction("com.sun.tracing.dtrace"));
+            new GetPropertyAction("com.j86.j86.sun.tracing.dtrace"));
 
         if ( (prop == null || !prop.equals("disable")) &&
              DTraceProviderFactory.isSupported() ) {
@@ -65,7 +65,7 @@ public abstract class ProviderFactory {
 
         // Try to instantiate an output stream factory
         prop = AccessController.doPrivileged(
-            new GetPropertyAction("sun.tracing.stream"));
+            new GetPropertyAction("j86.sun.tracing.stream"));
         if (prop != null) {
             for (String spec : prop.split(",")) {
                 PrintStream ps = getPrintStreamFromSpec(spec);

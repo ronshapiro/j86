@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.naming;
+package j86.javax.naming;
 
 /**
   * This class represents the address of a communications end-point.
@@ -55,7 +55,7 @@ package javax.naming;
   * String.
   */
 
-public abstract class RefAddr implements java.io.Serializable {
+public abstract class RefAddr implements j86.java.io.Serializable {
     /**
      * Contains the type of this address.
      * @serial
@@ -124,7 +124,7 @@ public abstract class RefAddr implements java.io.Serializable {
       * the hash code of the address contents.
       *
       * @return The hash code of this address as an int.
-      * @see java.lang.Object#hashCode
+      * @see j86.java.lang.Object#hashCode
       */
     public int hashCode() {
         return (getContent() == null)

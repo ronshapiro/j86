@@ -23,13 +23,13 @@
  * questions.
  */
 
-package javax.security.auth.kerberos;
+package j86.j86.javax.security.auth.kerberos;
 
-import java.io.*;
-import sun.security.krb5.KrbException;
-import sun.security.krb5.PrincipalName;
-import sun.security.krb5.Realm;
-import sun.security.util.*;
+import j86.java.io.*;
+import j86.sun.security.krb5.KrbException;
+import j86.sun.security.krb5.PrincipalName;
+import j86.sun.security.krb5.Realm;
+import j86.sun.security.util.*;
 
 /**
  * This class encapsulates a Kerberos principal.
@@ -39,7 +39,7 @@ import sun.security.util.*;
  */
 
 public final class KerberosPrincipal
-    implements java.security.Principal, java.io.Serializable {
+    implements j86.java.security.Principal, j86.java.io.Serializable {
 
     private static final long serialVersionUID = -7374788026156829911L;
 
@@ -99,7 +99,7 @@ public final class KerberosPrincipal
      *
      * <p>If the input name does not contain a realm, the default realm
      * is used. The default realm can be specified either in a Kerberos
-     * configuration file or via the java.security.krb5.realm
+     * configuration file or via the j86.java.security.krb5.realm
      * system property. For more information,
      * <a href="../../../../../technotes/guides/security/jgss/tutorials/index.html">
      * Kerberos Requirements </a>
@@ -109,7 +109,7 @@ public final class KerberosPrincipal
      * formatted, if name is null, or if name does not contain
      * the realm to use and the default realm is not specified
      * in either a Kerberos configuration file or via the
-     * java.security.krb5.realm system property.
+     * j86.java.security.krb5.realm system property.
      */
     public KerberosPrincipal(String name) {
 
@@ -140,7 +140,7 @@ public final class KerberosPrincipal
 
      * <p> If the input name does not contain a realm, the default realm
      * is used. The default realm can be specified either in a Kerberos
-     * configuration file or via the java.security.krb5.realm
+     * configuration file or via the j86.java.security.krb5.realm
      * system property. For more information, see
      * <a href="../../../../../technotes/guides/security/jgss/tutorials/index.html">
      * Kerberos Requirements</a>.
@@ -151,7 +151,7 @@ public final class KerberosPrincipal
      * formatted, if name is null, if the nameType is not supported,
      * or if name does not contain the realm to use and the default
      * realm is not specified in either a Kerberos configuration
-     * file or via the java.security.krb5.realm system property.
+     * file or via the j86.java.security.krb5.realm system property.
      */
 
     public KerberosPrincipal(String name, int nameType) {

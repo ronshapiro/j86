@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text.html;
+package j86.j86.j86.javax.swing.text.html;
 
-import java.util.Enumeration;
-import java.awt.*;
-import javax.swing.text.*;
+import j86.java.util.Enumeration;
+import j86.java.awt.*;
+import j86.j86.javax.swing.text.*;
 
 /**
  * A view implementation to display an html list

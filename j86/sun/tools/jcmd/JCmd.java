@@ -23,28 +23,28 @@
  * questions.
  */
 
-package sun.tools.jcmd;
+package j86.sun.tools.jcmd;
 
-import java.io.InputStream;
-import java.io.IOException;
-import java.io.UnsupportedEncodingException;
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.net.URISyntaxException;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
+import j86.java.io.UnsupportedEncodingException;
+import j86.java.util.List;
+import j86.java.util.ArrayList;
+import j86.java.util.Comparator;
+import j86.java.net.URISyntaxException;
 
-import com.sun.tools.attach.VirtualMachine;
-import com.sun.tools.attach.VirtualMachineDescriptor;
-import com.sun.tools.attach.AgentLoadException;
-import com.sun.tools.attach.AttachNotSupportedException;
-import sun.tools.attach.HotSpotVirtualMachine;
-import sun.tools.jstat.JStatLogger;
-import sun.jvmstat.monitor.Monitor;
-import sun.jvmstat.monitor.MonitoredHost;
-import sun.jvmstat.monitor.MonitoredVm;
-import sun.jvmstat.monitor.MonitoredVmUtil;
-import sun.jvmstat.monitor.MonitorException;
-import sun.jvmstat.monitor.VmIdentifier;
+import com.j86.sun.tools.attach.VirtualMachine;
+import com.j86.sun.tools.attach.VirtualMachineDescriptor;
+import com.j86.sun.tools.attach.AgentLoadException;
+import com.j86.sun.tools.attach.AttachNotSupportedException;
+import j86.sun.tools.attach.HotSpotVirtualMachine;
+import j86.sun.tools.jstat.JStatLogger;
+import j86.sun.jvmstat.monitor.Monitor;
+import j86.sun.jvmstat.monitor.MonitoredHost;
+import j86.sun.jvmstat.monitor.MonitoredVm;
+import j86.sun.jvmstat.monitor.MonitoredVmUtil;
+import j86.sun.jvmstat.monitor.MonitorException;
+import j86.sun.jvmstat.monitor.VmIdentifier;
 
 public class JCmd {
     public static void main(String[] args) {

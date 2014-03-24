@@ -23,19 +23,19 @@
  * questions.
  */
 
-package java.lang.reflect;
+package j86.j86.j86.java.lang.reflect;
 
-import sun.reflect.CallerSensitive;
-import sun.reflect.ConstructorAccessor;
-import sun.reflect.Reflection;
-import sun.reflect.annotation.TypeAnnotation;
-import sun.reflect.annotation.TypeAnnotationParser;
-import sun.reflect.generics.repository.ConstructorRepository;
-import sun.reflect.generics.factory.CoreReflectionFactory;
-import sun.reflect.generics.factory.GenericsFactory;
-import sun.reflect.generics.scope.ConstructorScope;
-import java.lang.annotation.Annotation;
-import java.lang.annotation.AnnotationFormatError;
+import j86.sun.reflect.CallerSensitive;
+import j86.sun.reflect.ConstructorAccessor;
+import j86.sun.reflect.Reflection;
+import j86.j86.sun.reflect.annotation.TypeAnnotation;
+import j86.j86.sun.reflect.annotation.TypeAnnotationParser;
+import j86.j86.sun.reflect.generics.repository.ConstructorRepository;
+import j86.j86.sun.reflect.generics.factory.CoreReflectionFactory;
+import j86.j86.sun.reflect.generics.factory.GenericsFactory;
+import j86.j86.sun.reflect.generics.scope.ConstructorScope;
+import j86.j86.java.lang.annotation.Annotation;
+import j86.j86.java.lang.annotation.AnnotationFormatError;
 
 /**
  * {@code Constructor} provides information about, and access to, a single
@@ -49,10 +49,10 @@ import java.lang.annotation.AnnotationFormatError;
  * @param <T> the class in which the constructor is declared
  *
  * @see Member
- * @see java.lang.Class
- * @see java.lang.Class#getConstructors()
- * @see java.lang.Class#getConstructor(Class[])
- * @see java.lang.Class#getDeclaredConstructors()
+ * @see j86.java.lang.Class
+ * @see j86.java.lang.Class#getConstructors()
+ * @see j86.java.lang.Class#getConstructor(Class[])
+ * @see j86.java.lang.Class#getDeclaredConstructors()
  *
  * @author      Kenneth Russell
  * @author      Nakul Saraiya
@@ -98,8 +98,8 @@ public final class Constructor<T> extends Executable {
 
     /**
      * Package-private constructor used by ReflectAccess to enable
-     * instantiation of these objects in Java code from the java.lang
-     * package via sun.reflect.LangReflectAccess.
+     * instantiation of these objects in Java code from the j86.java.lang
+     * package via j86.sun.reflect.LangReflectAccess.
      */
     Constructor(Class<T> declaringClass,
                 Class<?>[] parameterTypes,
@@ -120,7 +120,7 @@ public final class Constructor<T> extends Executable {
     }
 
     /**
-     * Package-private routine (exposed to java.lang.Class via
+     * Package-private routine (exposed to j86.java.lang.Class via
      * ReflectAccess) which returns a copy of this Constructor. The copy's
      * "root" field points to this Constructor.
      */
@@ -129,7 +129,7 @@ public final class Constructor<T> extends Executable {
         // among Constructor objects which refer to the same underlying
         // method in the VM. (All of this contortion is only necessary
         // because of the "accessibility" bit in AccessibleObject,
-        // which implicitly requires that new java.lang.reflect
+        // which implicitly requires that new j86.j86.j86.java.lang.reflect
         // objects be fabricated for each reflective call on Class
         // objects.)
         Constructor<T> res = new Constructor<>(clazz,
@@ -272,7 +272,7 @@ public final class Constructor<T> extends Executable {
      * followed by a parenthesized, comma-separated list of the
      * constructor's formal parameter types.  For example:
      * <pre>
-     *    public java.util.Hashtable(int,float)
+     *    public j86.java.util.Hashtable(int,float)
      * </pre>
      *
      * <p>The only possible modifiers for constructors are the access
@@ -365,7 +365,7 @@ public final class Constructor<T> extends Executable {
      * @param initargs array of objects to be passed as arguments to
      * the constructor call; values of primitive types are wrapped in
      * a wrapper object of the appropriate type (e.g. a {@code float}
-     * in a {@link java.lang.Float Float})
+     * in a {@link j86.java.lang.Float Float})
      *
      * @return a new object created by calling the constructor
      * this object represents
@@ -547,7 +547,7 @@ public final class Constructor<T> extends Executable {
             return super.getAnnotatedReceiverType();
 
         return TypeAnnotationParser.buildAnnotatedType(getTypeAnnotationBytes0(),
-                sun.misc.SharedSecrets.getJavaLangAccess().
+                j86.sun.misc.SharedSecrets.getJavaLangAccess().
                         getConstantPool(getDeclaringClass()),
                 this,
                 getDeclaringClass(),

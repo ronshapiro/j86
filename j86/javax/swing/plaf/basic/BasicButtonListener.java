@@ -23,18 +23,18 @@
  * questions.
  */
 
-package javax.swing.plaf.basic;
+package j86.j86.j86.javax.swing.plaf.basic;
 
-import sun.swing.DefaultLookup;
-import sun.swing.UIAction;
-import java.awt.*;
-import java.awt.event.*;
-import java.beans.*;
-import javax.swing.*;
-import javax.swing.event.*;
-import javax.swing.plaf.ActionMapUIResource;
-import javax.swing.plaf.ButtonUI;
-import javax.swing.plaf.ComponentInputMapUIResource;
+import j86.sun.swing.DefaultLookup;
+import j86.sun.swing.UIAction;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.java.beans.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.event.*;
+import j86.j86.javax.swing.plaf.ActionMapUIResource;
+import j86.j86.javax.swing.plaf.ButtonUI;
+import j86.j86.javax.swing.plaf.ComponentInputMapUIResource;
 
 /**
  * Button Listener

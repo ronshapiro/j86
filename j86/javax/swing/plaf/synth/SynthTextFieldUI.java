@@ -23,20 +23,20 @@
  * questions.
  */
 
-package javax.swing.plaf.synth;
+package j86.j86.j86.javax.swing.plaf.synth;
 
-import javax.swing.*;
-import javax.swing.text.*;
-import javax.swing.plaf.*;
-import javax.swing.plaf.basic.BasicTextFieldUI;
-import java.awt.*;
-import java.awt.event.FocusEvent;
-import java.awt.event.FocusListener;
-import java.beans.PropertyChangeEvent;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.text.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.j86.javax.swing.plaf.basic.BasicTextFieldUI;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.FocusEvent;
+import j86.j86.java.awt.event.FocusListener;
+import j86.java.beans.PropertyChangeEvent;
 
 
 /**
- * Provides the Synth L&amp;F UI delegate for {@link javax.swing.JTextField}.
+ * Provides the Synth L&amp;F UI delegate for {@link j86.javax.swing.JTextField}.
  * <p>
  * <strong>Warning:</strong>
  * Serialized objects of this class will not be compatible with
@@ -44,8 +44,8 @@ import java.beans.PropertyChangeEvent;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @author  Shannon Hickey
  * @since 1.7

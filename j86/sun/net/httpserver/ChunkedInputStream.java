@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.net.httpserver;
+package j86.j86.sun.net.httpserver;
 
-import java.io.*;
-import java.net.*;
-import com.sun.net.httpserver.*;
-import com.sun.net.httpserver.spi.*;
+import j86.java.io.*;
+import j86.java.net.*;
+import com.j86.j86.sun.net.httpserver.*;
+import j86.com.j86.j86.sun.net.httpserver.spi.*;
 
 class ChunkedInputStream extends LeftOverInputStream {
     ChunkedInputStream (ExchangeImpl t, InputStream src) {

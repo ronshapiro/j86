@@ -23,15 +23,15 @@
  * questions.
  */
 
-package sun.security.x509;
+package j86.sun.security.x509;
 
-import java.io.IOException;
-import java.security.PublicKey;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
+import j86.java.io.IOException;
+import j86.java.security.PublicKey;
+import j86.java.security.MessageDigest;
+import j86.java.security.NoSuchAlgorithmException;
 
-import sun.misc.HexDumpEncoder;
-import sun.security.util.*;
+import j86.sun.misc.HexDumpEncoder;
+import j86.sun.security.util.*;
 
 /**
  * Represent the Key Identifier ASN.1 object.
@@ -148,7 +148,7 @@ public class KeyIdentifier {
             return true;
         if (!(other instanceof KeyIdentifier))
             return false;
-        return java.util.Arrays.equals(octetString,
+        return j86.java.util.Arrays.equals(octetString,
                                        ((KeyIdentifier)other).getIdentifier());
     }
 }

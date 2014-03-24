@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.swing.event;
+package j86.j86.javax.swing.event;
 
-import javax.swing.event.ChangeEvent;
-import java.util.EventListener;
+import j86.j86.javax.swing.event.ChangeEvent;
+import j86.java.util.EventListener;
 
 /**
  * CellEditorListener defines the interface for an object that listens
@@ -35,7 +35,7 @@ import java.util.EventListener;
  * @author Alan Chung
  */
 
-public interface CellEditorListener extends java.util.EventListener {
+public interface CellEditorListener extends j86.java.util.EventListener {
 
     /** This tells the listeners the editor has ended editing */
     public void editingStopped(ChangeEvent e);

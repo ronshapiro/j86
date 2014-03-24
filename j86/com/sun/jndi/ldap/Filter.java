@@ -23,12 +23,12 @@
  * questions.
  */
 
-package com.sun.jndi.ldap;
+package j86.com.sun.jndi.ldap;
 
-import javax.naming.NamingException;
-import javax.naming.directory.InvalidSearchFilterException;
+import j86.javax.naming.NamingException;
+import j86.j86.javax.naming.directory.InvalidSearchFilterException;
 
-import java.io.IOException;
+import j86.java.io.IOException;
 
 /**
  * LDAP (RFC-1960) and LDAPv3 (RFC-2254) search filters.

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.java2d;
+package j86.sun.java2d;
 
 /**
  * This interface is implemented by classes which contain complex state

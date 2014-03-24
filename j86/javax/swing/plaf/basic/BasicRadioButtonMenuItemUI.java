@@ -23,13 +23,13 @@
  * questions.
  */
 
-package javax.swing.plaf.basic;
+package j86.j86.j86.javax.swing.plaf.basic;
 
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.*;
-import javax.swing.plaf.*;
-import javax.swing.border.*;
+import j86.javax.swing.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.javax.swing.border.*;
 
 /**
  * BasicRadioButtonMenuItem implementation

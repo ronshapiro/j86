@@ -22,18 +22,18 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing;
+package j86.javax.swing;
 
-import java.awt.Component;
-import java.awt.Container;
-import java.awt.Dimension;
-import java.awt.Insets;
-import java.awt.LayoutManager2;
-import java.util.*;
-import static java.awt.Component.BaselineResizeBehavior;
-import static javax.swing.LayoutStyle.ComponentPlacement;
-import static javax.swing.SwingConstants.HORIZONTAL;
-import static javax.swing.SwingConstants.VERTICAL;
+import j86.java.awt.Component;
+import j86.java.awt.Container;
+import j86.java.awt.Dimension;
+import j86.java.awt.Insets;
+import j86.java.awt.LayoutManager2;
+import j86.java.util.*;
+import static j86.java.awt.Component.BaselineResizeBehavior;
+import static j86.javax.swing.LayoutStyle.ComponentPlacement;
+import static j86.javax.swing.SwingConstants.HORIZONTAL;
+import static j86.javax.swing.SwingConstants.VERTICAL;
 
 /**
  * {@code GroupLayout} is a {@code LayoutManager} that hierarchically
@@ -851,7 +851,7 @@ public class GroupLayout implements LayoutManager2 {
      * {@code Container}.
      *
      * @param component the component to be removed
-     * @see java.awt.Component#remove
+     * @see j86.java.awt.Component#remove
      */
     public void removeLayoutComponent(Component component) {
         ComponentInfo info = componentInfos.remove(component);
@@ -871,7 +871,7 @@ public class GroupLayout implements LayoutManager2 {
      *         the same {@code Container} this was created with
      * @throws IllegalStateException if any of the components added to
      *         this layout are not in both a horizontal and vertical group
-     * @see java.awt.Container#getPreferredSize
+     * @see j86.java.awt.Container#getPreferredSize
      */
     public Dimension preferredLayoutSize(Container parent) {
         checkParent(parent);
@@ -889,7 +889,7 @@ public class GroupLayout implements LayoutManager2 {
      *         the same {@code Container} that this was created with
      * @throws IllegalStateException if any of the components added to
      *         this layout are not in both a horizontal and vertical group
-     * @see java.awt.Container#getMinimumSize
+     * @see j86.java.awt.Container#getMinimumSize
      */
     public Dimension minimumLayoutSize(Container parent) {
         checkParent(parent);
@@ -953,7 +953,7 @@ public class GroupLayout implements LayoutManager2 {
      *         the same {@code Container} that this was created with
      * @throws IllegalStateException if any of the components added to
      *         this layout are not in both a horizontal and vertical group
-     * @see java.awt.Container#getMaximumSize
+     * @see j86.java.awt.Container#getMaximumSize
      */
     public Dimension maximumLayoutSize(Container parent) {
         checkParent(parent);
@@ -2384,9 +2384,9 @@ public class GroupLayout implements LayoutManager2 {
      * baseline can be a constant distance. The possible choices
      * correspond to the {@code BaselineResizeBehavior} constants
      * {@link
-     * java.awt.Component.BaselineResizeBehavior#CONSTANT_ASCENT CONSTANT_ASCENT} and
+     * j86.java.awt.Component.BaselineResizeBehavior#CONSTANT_ASCENT CONSTANT_ASCENT} and
      * {@link
-     * java.awt.Component.BaselineResizeBehavior#CONSTANT_DESCENT CONSTANT_DESCENT}.
+     * j86.java.awt.Component.BaselineResizeBehavior#CONSTANT_DESCENT CONSTANT_DESCENT}.
      * <p>
      * The baseline anchor may be explicitly specified by the
      * {@code createBaselineGroup} method, or determined based on the elements.

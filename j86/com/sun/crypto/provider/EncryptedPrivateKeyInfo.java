@@ -23,11 +23,11 @@
  * questions.
  */
 
-package com.sun.crypto.provider;
+package j86.com.sun.crypto.provider;
 
-import java.io.*;
-import sun.security.x509.AlgorithmId;
-import sun.security.util.*;
+import j86.java.io.*;
+import j86.sun.security.x509.AlgorithmId;
+import j86.sun.security.util.*;
 
 /**
  * This class implements the <code>EncryptedPrivateKeyInfo</code> type,

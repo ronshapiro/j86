@@ -23,7 +23,7 @@
  * questions.
  */
 
-package com.sun.jdi;
+package j86.com.sun.jdi;
 
 /**
  * The type associated with non-object values in a target VM.

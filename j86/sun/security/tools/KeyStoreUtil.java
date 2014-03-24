@@ -23,21 +23,21 @@
  * questions.
  */
 
-package sun.security.tools;
+package j86.sun.security.tools;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import j86.java.io.BufferedReader;
+import j86.java.io.File;
+import j86.java.io.FileInputStream;
+import j86.java.io.IOException;
+import j86.java.io.InputStreamReader;
 
-import java.net.URL;
+import j86.java.net.URL;
 
-import java.security.KeyStore;
+import j86.java.security.KeyStore;
 
-import java.text.Collator;
+import j86.java.text.Collator;
 
-import java.util.Locale;
+import j86.java.util.Locale;
 
 /**
  * <p> This class provides several utilities to <code>KeyStore</code>.
@@ -102,7 +102,7 @@ public class KeyStoreUtil {
     }
 
     public static char[] getPassWithModifier(String modifier, String arg,
-                                             java.util.ResourceBundle rb) {
+                                             j86.java.util.ResourceBundle rb) {
         if (modifier == null) {
             return arg.toCharArray();
         } else if (collator.compare(modifier, "env") == 0) {
@@ -119,7 +119,7 @@ public class KeyStoreUtil {
                 URL url = null;
                 try {
                     url = new URL(arg);
-                } catch (java.net.MalformedURLException mue) {
+                } catch (j86.java.net.MalformedURLException mue) {
                     File f = new File(arg);
                     if (f.exists()) {
                         url = f.toURI().toURL();

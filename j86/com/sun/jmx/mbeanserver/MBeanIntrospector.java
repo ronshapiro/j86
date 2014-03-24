@@ -23,35 +23,35 @@
  * questions.
  */
 
-package com.sun.jmx.mbeanserver;
+package j86.com.sun.jmx.mbeanserver;
 
 
-import static com.sun.jmx.mbeanserver.Util.*;
+import static j86.com.sun.jmx.mbeanserver.Util.*;
 
-import java.lang.ref.WeakReference;
-import java.lang.reflect.Array;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.lang.reflect.Type;
-import java.util.Arrays;
-import java.util.List;
-import java.util.WeakHashMap;
+import j86.j86.java.lang.ref.WeakReference;
+import j86.j86.j86.java.lang.reflect.Array;
+import j86.j86.j86.java.lang.reflect.Constructor;
+import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.j86.j86.java.lang.reflect.Type;
+import j86.java.util.Arrays;
+import j86.java.util.List;
+import j86.java.util.WeakHashMap;
 
-import javax.management.Descriptor;
-import javax.management.ImmutableDescriptor;
-import javax.management.IntrospectionException;
-import javax.management.InvalidAttributeValueException;
-import javax.management.MBeanAttributeInfo;
-import javax.management.MBeanConstructorInfo;
-import javax.management.MBeanException;
-import javax.management.MBeanInfo;
-import javax.management.MBeanNotificationInfo;
-import javax.management.MBeanOperationInfo;
-import javax.management.NotCompliantMBeanException;
-import javax.management.NotificationBroadcaster;
-import javax.management.ReflectionException;
-import sun.reflect.misc.ReflectUtil;
+import j86.javax.management.Descriptor;
+import j86.javax.management.ImmutableDescriptor;
+import j86.javax.management.IntrospectionException;
+import j86.javax.management.InvalidAttributeValueException;
+import j86.javax.management.MBeanAttributeInfo;
+import j86.javax.management.MBeanConstructorInfo;
+import j86.javax.management.MBeanException;
+import j86.javax.management.MBeanInfo;
+import j86.javax.management.MBeanNotificationInfo;
+import j86.javax.management.MBeanOperationInfo;
+import j86.javax.management.NotCompliantMBeanException;
+import j86.javax.management.NotificationBroadcaster;
+import j86.javax.management.ReflectionException;
+import j86.j86.sun.reflect.misc.ReflectUtil;
 
 /**
  * An introspector for MBeans of a certain type.  There is one instance
@@ -372,7 +372,7 @@ abstract class MBeanIntrospector<M> {
      * Looking up the MBeanInfo for a given base class (implementation class)
      * is complicated by the fact that we may use the same base class with
      * several different explicit MBean interfaces via the
-     * javax.management.StandardMBean class.  It is further complicated
+     * j86.javax.management.StandardMBean class.  It is further complicated
      * by the fact that we have to be careful not to retain a strong reference
      * to any Class object for fear we would prevent a ClassLoader from being
      * garbage-collected.  So we have a first lookup from the base class

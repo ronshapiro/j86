@@ -23,15 +23,15 @@
  * questions.
  */
 
-package jdk.internal.util.xml.impl;
+package j86.j86.jdk.internal.util.xml.impl;
 
-import java.io.OutputStream;
-import java.io.UnsupportedEncodingException;
-import java.nio.charset.Charset;
-import java.nio.charset.IllegalCharsetNameException;
-import java.nio.charset.UnsupportedCharsetException;
-import jdk.internal.util.xml.XMLStreamException;
-import jdk.internal.util.xml.XMLStreamWriter;
+import j86.java.io.OutputStream;
+import j86.java.io.UnsupportedEncodingException;
+import j86.j86.java.nio.charset.Charset;
+import j86.j86.java.nio.charset.IllegalCharsetNameException;
+import j86.j86.java.nio.charset.UnsupportedCharsetException;
+import j86.jdk.internal.util.xml.XMLStreamException;
+import j86.jdk.internal.util.xml.XMLStreamWriter;
 
 /**
  * Implementation of a reduced version of XMLStreamWriter

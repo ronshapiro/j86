@@ -23,8 +23,8 @@
  * questions.
  */
 
-package com.sun.jdi;
-import java.util.List;
+package j86.com.sun.jdi;
+import j86.java.util.List;
 
 /**
  * A thread object from the target VM.
@@ -65,14 +65,14 @@ public interface ThreadReference extends ObjectReference {
      * {@link #resume} or resumed with other threads through
      * {@link VirtualMachine#resume}.
      * <p>
-     * Unlike {@link java.lang.Thread#suspend},
+     * Unlike {@link j86.java.lang.Thread#suspend},
      * suspends of both the virtual machine and individual threads are
      * counted. Before a thread will run again, it must be resumed
      * (through {@link #resume} or {@link ThreadReference#resume})
      * the same number of times it has been suspended.
      * <p>
      * Suspending single threads with this method has the same dangers
-     * as {@link java.lang.Thread#suspend()}. If the suspended thread
+     * as {@link j86.java.lang.Thread#suspend()}. If the suspended thread
      * holds a monitor needed by another running thread, deadlock is
      * possible in the target VM (at least until the suspended thread
      * is resumed again).
@@ -80,7 +80,7 @@ public interface ThreadReference extends ObjectReference {
      * The suspended thread is guaranteed to remain suspended until
      * resumed through one of the JDI resume methods mentioned above;
      * the application in the target VM cannot resume the suspended thread
-     * through {@link java.lang.Thread#resume}.
+     * through {@link j86.java.lang.Thread#resume}.
      * @throws VMCannotBeModifiedException if the VirtualMachine is read-only - see {@link VirtualMachine#canBeModified()}.
      */
     void suspend();
@@ -93,7 +93,7 @@ public interface ThreadReference extends ObjectReference {
      * suspends on this thread is decremented. If it is decremented to 0,
      * the thread will continue to execute.
      * Note: the normal way to resume from an event related suspension is
-     * via {@link com.sun.jdi.event.EventSet#resume}.
+     * via {@link j86.j86.com.sun.jdi.event.EventSet#resume}.
      * @throws VMCannotBeModifiedException if the VirtualMachine is read-only - see {@link VirtualMachine#canBeModified()}.
      */
     void resume();
@@ -108,13 +108,13 @@ public interface ThreadReference extends ObjectReference {
     /**
      * Stops this thread with an asynchronous exception.
      * A debugger thread in the target VM will stop this thread
-     * with the given {@link java.lang.Throwable} object.
+     * with the given {@link j86.java.lang.Throwable} object.
      *
      * @param throwable the asynchronous exception to throw.
      * @throws InvalidTypeException if <code>throwable</code> is not
-     * an instance of java.lang.Throwable in the target VM.
+     * an instance of j86.java.lang.Throwable in the target VM.
      * @throws VMCannotBeModifiedException if the VirtualMachine is read-only - see {@link VirtualMachine#canBeModified()}.
-     * @see java.lang.Thread#stop(Throwable)
+     * @see j86.java.lang.Thread#stop(Throwable)
      */
     void stop(ObjectReference throwable) throws InvalidTypeException;
 
@@ -123,7 +123,7 @@ public interface ThreadReference extends ObjectReference {
      * debugger.
      * @throws VMCannotBeModifiedException if the VirtualMachine is read-only - see {@link VirtualMachine#canBeModified()}.
      *
-     * @see java.lang.Thread#interrupt()
+     * @see j86.java.lang.Thread#interrupt()
      */
     void interrupt();
 
@@ -209,7 +209,7 @@ public interface ThreadReference extends ObjectReference {
      * @return the requested {@link StackFrame}
      * @throws IncompatibleThreadStateException if the thread is
      * not suspended in the target VM
-     * @throws java.lang.IndexOutOfBoundsException if the index is greater than
+     * @throws j86.java.lang.IndexOutOfBoundsException if the index is greater than
      * or equal to {@link #frameCount} or is negative.
      */
     StackFrame frame(int index) throws IncompatibleThreadStateException;
@@ -252,7 +252,7 @@ public interface ThreadReference extends ObjectReference {
      *
      * @return a List of {@link ObjectReference} objects. The list
      * has zero length if no monitors are owned by this thread.
-     * @throws java.lang.UnsupportedOperationException if
+     * @throws j86.java.lang.UnsupportedOperationException if
      * the target virtual machine does not support this
      * operation.
      * @throws IncompatibleThreadStateException if the thread is
@@ -274,7 +274,7 @@ public interface ThreadReference extends ObjectReference {
      *
      * @return a List of {@link MonitorInfo} objects. The list
      * has zero length if no monitors are owned by this thread.
-     * @throws java.lang.UnsupportedOperationException if
+     * @throws j86.java.lang.UnsupportedOperationException if
      * the target virtual machine does not support this
      * operation.
      * @throws IncompatibleThreadStateException if the thread is
@@ -299,7 +299,7 @@ public interface ThreadReference extends ObjectReference {
      *
      * @return the {@link ObjectReference} corresponding to the
      * contended monitor, or null if it is not waiting for a monitor.
-     * @throws java.lang.UnsupportedOperationException if
+     * @throws j86.java.lang.UnsupportedOperationException if
      * the target virtual machine does not support this
      * operation.
      * @throws IncompatibleThreadStateException if the thread is
@@ -367,7 +367,7 @@ public interface ThreadReference extends ObjectReference {
      * @param frame Stack frame to pop.  <CODE>frame</CODE> is on this
      * thread's call stack.
      *
-     * @throws java.lang.UnsupportedOperationException if
+     * @throws j86.java.lang.UnsupportedOperationException if
      * the target virtual machine does not support this
      * operation - see
      * {@link VirtualMachine#canPopFrames() VirtualMachine.canPopFrames()}.
@@ -375,7 +375,7 @@ public interface ThreadReference extends ObjectReference {
      * @throws IncompatibleThreadStateException if this
      * thread is not suspended.
      *
-     * @throws java.lang.IllegalArgumentException if <CODE>frame</CODE>
+     * @throws j86.java.lang.IllegalArgumentException if <CODE>frame</CODE>
      * is not on this thread's call stack.
      *
      * @throws NativeMethodException if one of the frames that would be
@@ -416,7 +416,7 @@ public interface ThreadReference extends ObjectReference {
      * synchronized method) and locks acquired by entering
      * synchronized blocks within the called method are
      * released. Note: this does not apply to native locks or
-     * java.util.concurrent.locks locks.
+     * j86.j86.j86.java.util.concurrent.locks locks.
      * <p>
      * Events, such as MethodExit, are generated as they would be in
      * a normal return.
@@ -443,7 +443,7 @@ public interface ThreadReference extends ObjectReference {
      *
      * @param value the value the method is to return.
      *
-     * @throws java.lang.UnsupportedOperationException if
+     * @throws j86.java.lang.UnsupportedOperationException if
      * the target virtual machine does not support this
      * operation - see
      * {@link VirtualMachine#canGetInstanceInfo() canForceEarlyReturn()}

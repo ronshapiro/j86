@@ -23,16 +23,16 @@
  * questions.
  */
 
-package java.lang.reflect;
+package j86.j86.j86.java.lang.reflect;
 
-import java.lang.annotation.*;
-import java.util.Map;
-import java.util.Objects;
-import sun.reflect.annotation.AnnotationParser;
-import sun.reflect.annotation.AnnotationSupport;
-import sun.reflect.annotation.TypeAnnotationParser;
-import sun.reflect.annotation.TypeAnnotation;
-import sun.reflect.generics.repository.ConstructorRepository;
+import j86.j86.java.lang.annotation.*;
+import j86.java.util.Map;
+import j86.java.util.Objects;
+import j86.j86.sun.reflect.annotation.AnnotationParser;
+import j86.j86.sun.reflect.annotation.AnnotationSupport;
+import j86.j86.sun.reflect.annotation.TypeAnnotationParser;
+import j86.j86.sun.reflect.annotation.TypeAnnotation;
+import j86.j86.sun.reflect.generics.repository.ConstructorRepository;
 
 /**
  * A shared superclass for the common functionality of {@link Method}
@@ -74,7 +74,7 @@ public abstract class Executable extends AccessibleObject
     Annotation[][] parseParameterAnnotations(byte[] parameterAnnotations) {
         return AnnotationParser.parseParameterAnnotations(
                parameterAnnotations,
-               sun.misc.SharedSecrets.getJavaLangAccess().
+               j86.sun.misc.SharedSecrets.getJavaLangAccess().
                getConstantPool(getDeclaringClass()),
                getDeclaringClass());
     }
@@ -486,10 +486,10 @@ public abstract class Executable extends AccessibleObject
      * declared in source ("mandated"), as well as parameters that
      * are neither implicitly nor explicitly declared in source
      * ("synthetic") to the parameter list for a method.  See {@link
-     * java.lang.reflect.Parameter} for more information.
+     * j86.j86.j86.java.lang.reflect.Parameter} for more information.
      *
-     * @see java.lang.reflect.Parameter
-     * @see java.lang.reflect.Parameter#getAnnotations
+     * @see j86.j86.j86.java.lang.reflect.Parameter
+     * @see j86.j86.j86.java.lang.reflect.Parameter#getAnnotations
      * @return an array of arrays that represent the annotations on
      *    the formal and implicit parameters, in declaration order, of
      *    the executable represented by this object
@@ -545,7 +545,7 @@ public abstract class Executable extends AccessibleObject
         if (declaredAnnotations == null) {
             declaredAnnotations = AnnotationParser.parseAnnotations(
                 getAnnotationBytes(),
-                sun.misc.SharedSecrets.getJavaLangAccess().
+                j86.sun.misc.SharedSecrets.getJavaLangAccess().
                 getConstantPool(getDeclaringClass()),
                 getDeclaringClass());
         }
@@ -581,7 +581,7 @@ public abstract class Executable extends AccessibleObject
      */
     AnnotatedType getAnnotatedReturnType0(Type returnType) {
         return TypeAnnotationParser.buildAnnotatedType(getTypeAnnotationBytes0(),
-                sun.misc.SharedSecrets.getJavaLangAccess().
+                j86.sun.misc.SharedSecrets.getJavaLangAccess().
                         getConstantPool(getDeclaringClass()),
                 this,
                 getDeclaringClass(),
@@ -614,7 +614,7 @@ public abstract class Executable extends AccessibleObject
         if (Modifier.isStatic(this.getModifiers()))
             return null;
         return TypeAnnotationParser.buildAnnotatedType(getTypeAnnotationBytes0(),
-                sun.misc.SharedSecrets.getJavaLangAccess().
+                j86.sun.misc.SharedSecrets.getJavaLangAccess().
                         getConstantPool(getDeclaringClass()),
                 this,
                 getDeclaringClass(),
@@ -640,7 +640,7 @@ public abstract class Executable extends AccessibleObject
      */
     public AnnotatedType[] getAnnotatedParameterTypes() {
         return TypeAnnotationParser.buildAnnotatedTypes(getTypeAnnotationBytes0(),
-                sun.misc.SharedSecrets.getJavaLangAccess().
+                j86.sun.misc.SharedSecrets.getJavaLangAccess().
                         getConstantPool(getDeclaringClass()),
                 this,
                 getDeclaringClass(),
@@ -666,7 +666,7 @@ public abstract class Executable extends AccessibleObject
      */
     public AnnotatedType[] getAnnotatedExceptionTypes() {
         return TypeAnnotationParser.buildAnnotatedTypes(getTypeAnnotationBytes0(),
-                sun.misc.SharedSecrets.getJavaLangAccess().
+                j86.sun.misc.SharedSecrets.getJavaLangAccess().
                         getConstantPool(getDeclaringClass()),
                 this,
                 getDeclaringClass(),

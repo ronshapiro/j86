@@ -23,16 +23,16 @@
  * questions.
  */
 
-package javax.sql.rowset;
+package j86.j86.javax.sql.rowset;
 
-import java.sql.*;
-import javax.sql.*;
-import java.util.*;
-import java.io.*;
-import java.math.*;
-import java.io.Serializable;
+import j86.java.sql.*;
+import j86.javax.sql.*;
+import j86.java.util.*;
+import j86.java.io.*;
+import j86.java.math.*;
+import j86.java.io.Serializable;
 
-import javax.sql.rowset.serial.*;
+import j86.j86.j86.javax.sql.rowset.serial.*;
 
 /**
  * An abstract class providing a <code>RowSet</code> object with its basic functionality.
@@ -329,7 +329,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
      * specified in the <code>ResultSet</code> interface.
      * @serial
      */
-    protected java.io.InputStream binaryStream;
+    protected j86.java.io.InputStream binaryStream;
 
     /**
      * The <code>InputStream</code> object that will be
@@ -337,7 +337,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
      * which is specified in the <code>ResultSet</code> interface.
      * @serial
      */
-    protected java.io.InputStream unicodeStream;
+    protected j86.java.io.InputStream unicodeStream;
 
     /**
      * The <code>InputStream</code> object that will be
@@ -345,7 +345,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
      * which is specified in the <code>ResultSet</code> interface.
      * @serial
      */
-    protected java.io.InputStream asciiStream;
+    protected j86.java.io.InputStream asciiStream;
 
     /**
      * The <code>Reader</code> object that will be
@@ -353,7 +353,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
      * which is specified in the <code>ResultSet</code> interface.
      * @serial
      */
-    protected java.io.Reader charStream;
+    protected j86.java.io.Reader charStream;
 
     /**
      * The query that will be sent to the DBMS for execution when the
@@ -500,7 +500,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
     private int fetchSize = 0; // default fetchSize
 
     /**
-     * The <code>java.util.Map</code> object that contains entries mapping
+     * The <code>j86.java.util.Map</code> object that contains entries mapping
      * SQL type names to classes in the Java programming language for the
      * custom mapping of user-defined types.
      * @serial
@@ -566,7 +566,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
     * event notifications from this <code>RowSet</code>.
     *
     * @param listener an object that has implemented the
-    *     <code>javax.sql.RowSetListener</code> interface and wants to be notified
+    *     <code>j86.javax.sql.RowSetListener</code> interface and wants to be notified
     *     of any events that occur on this <code>RowSet</code> object; May be
     *     null.
     * @see #removeRowSetListener
@@ -596,9 +596,9 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
      * Determine if instance of this class extends the RowSet interface.
      */
     private void checkforRowSetInterface() throws SQLException {
-        if ((this instanceof javax.sql.RowSet) == false) {
+        if ((this instanceof j86.javax.sql.RowSet) == false) {
             throw new SQLException("The class extending abstract class BaseRowSet " +
-                "must implement javax.sql.RowSet or one of it's sub-interfaces.");
+                "must implement j86.javax.sql.RowSet or one of it's sub-interfaces.");
         }
     }
 
@@ -741,7 +741,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
 
     /**
      * Retrieves the JDBC URL that this <code>RowSet</code> object's
-     * <code>javax.sql.Reader</code> object uses to make a connection
+     * <code>j86.javax.sql.Reader</code> object uses to make a connection
      * with a relational database using a JDBC technology-enabled driver.
      *<P>
      * The <code>Url</code> property will be <code>null</code> if the underlying data
@@ -807,7 +807,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
     /**
      * Returns the logical name that when supplied to a naming service
      * that uses the Java Naming and Directory Interface (JNDI) API, will
-     * retrieve a <code>javax.sql.DataSource</code> object. This
+     * retrieve a <code>j86.javax.sql.DataSource</code> object. This
      * <code>DataSource</code> object can be used to establish a connection
      * to the data source that it represents.
      * <P>
@@ -1047,8 +1047,8 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
      *         <code>Connection.TRANSACTION_READ_COMMITTED</code>,
      *         <code>Connection.TRANSACTION_REPEATABLE_READ</code>, or
      *         <code>Connection.TRANSACTION_SERIALIZABLE</code>
-     * @see javax.sql.rowset.spi.SyncFactory
-     * @see javax.sql.rowset.spi.SyncProvider
+     * @see j86.j86.j86.javax.sql.rowset.spi.SyncFactory
+     * @see j86.j86.j86.javax.sql.rowset.spi.SyncProvider
      * @see #setTransactionIsolation
 
      */
@@ -1076,8 +1076,8 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
      *              <code>Connection.TRANSACTION_SERIALIZABLE</code>
      * @throws SQLException if the given parameter is not one of the Connection
      *          constants
-     * @see javax.sql.rowset.spi.SyncFactory
-     * @see javax.sql.rowset.spi.SyncProvider
+     * @see j86.j86.j86.javax.sql.rowset.spi.SyncFactory
+     * @see j86.j86.j86.javax.sql.rowset.spi.SyncProvider
      * @see #getTransactionIsolation
      */
     public void setTransactionIsolation(int level) throws SQLException {
@@ -1113,28 +1113,28 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
      * If a type map is explicitly supplied to a method that can perform
      * custom mapping, that type map supersedes the connection's type map.
      *
-     * @return the <code>java.util.Map</code> object that is the type map
+     * @return the <code>j86.java.util.Map</code> object that is the type map
      *         for this <code>RowSet</code> object's connection
      */
-    public java.util.Map<String,Class<?>> getTypeMap() {
+    public j86.java.util.Map<String,Class<?>> getTypeMap() {
         return map;
     }
 
     /**
-     * Installs the given <code>java.util.Map</code> object as the type map
+     * Installs the given <code>j86.java.util.Map</code> object as the type map
      * associated with the <code>Connection</code> object for this
      * <code>RowSet</code> object.  The custom mapping indicated in
      * this type map will be used unless a different type map is explicitly
      * supplied to a method, in which case the type map supplied will be used.
      *
-     * @param map a <code>java.util.Map</code> object that contains the
+     * @param map a <code>j86.java.util.Map</code> object that contains the
      *     mapping from SQL type names for user defined types (UDT) to classes in
      *     the Java programming language.  Each entry in the <code>Map</code>
      *     object consists of the fully qualified SQL name of a UDT and the
      *     <code>Class</code> object for the <code>SQLData</code> implementation
      *     of that UDT. May be <code>null</code>.
      */
-    public void setTypeMap(java.util.Map<String,Class<?>> map) {
+    public void setTypeMap(j86.java.util.Map<String,Class<?>> map) {
         this.map = map;
     }
 
@@ -1508,7 +1508,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
     /**
      * Sets the designated parameter to SQL <code>NULL</code>.
      * Note that the parameter's SQL type must be specified using one of the
-         * type codes defined in <code>java.sql.Types</code>.  This SQL type is
+         * type codes defined in <code>j86.java.sql.Types</code>.  This SQL type is
      * specified in the second parameter.
      * <p>
      * Note that the second parameter tells the DBMS the data type of the value being
@@ -1549,7 +1549,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
      *        The first parameter is 1, the second is 2, and so on; must be
      *        <code>1</code> or greater
      * @param sqlType an <code>int</code> that is one of the SQL type codes
-     *        defined in the class {@link java.sql.Types}. If a non-standard
+     *        defined in the class {@link j86.java.sql.Types}. If a non-standard
      *        <i>sqlType</i> is supplied, this method will not throw a
      *        <code>SQLException</code>. This allows implicit support for
      *        non-standard SQL types.
@@ -1628,7 +1628,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
      *        in this <code>RowSet</code> object's command that is to be set.
      *        The first parameter is 1, the second is 2, and so on; must be
      *        <code>1</code> or greater
-     * @param sqlType a value from <code>java.sql.Types</code>
+     * @param sqlType a value from <code>j86.java.sql.Types</code>
      * @param typeName the fully qualified name of an SQL user-defined type,
      *                 which is ignored if the parameter is not a user-defined
      *                 type or <code>REF</code> value
@@ -1887,7 +1887,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
 
     /**
      * Sets the designated parameter to the given
-     * <code>java.lang.BigDecimal</code> value.  The driver converts this to
+     * <code>j86.java.lang.BigDecimal</code> value.  The driver converts this to
      * an SQL <code>NUMERIC</code> value when it sends it to the database.
      * <P>
      * The parameter value set by this method is stored internally and
@@ -1909,7 +1909,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
      *                         parameter index is out of bounds
      * @see #getParams
      */
-    public void setBigDecimal(int parameterIndex, java.math.BigDecimal x) throws SQLException {
+    public void setBigDecimal(int parameterIndex, j86.java.math.BigDecimal x) throws SQLException {
         checkParamIndex(parameterIndex);
         if(params == null){
              throw new SQLException("Set initParams() before setBigDecimal");
@@ -1986,7 +1986,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
     }
 
     /**
-     * Sets the designated parameter to the given <code>java.sql.Date</code>
+     * Sets the designated parameter to the given <code>j86.java.sql.Date</code>
      * value. The driver converts this to an SQL
      * <code>DATE</code> value when it sends it to the database.
      * <P>
@@ -2018,7 +2018,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
      *                         parameter index is out of bounds
      * @see #getParams
      */
-    public void setDate(int parameterIndex, java.sql.Date x) throws SQLException {
+    public void setDate(int parameterIndex, j86.java.sql.Date x) throws SQLException {
         checkParamIndex(parameterIndex);
 
         if(params == null){
@@ -2028,7 +2028,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
     }
 
     /**
-     * Sets the designated parameter to the given <code>java.sql.Time</code>
+     * Sets the designated parameter to the given <code>j86.java.sql.Time</code>
      * value.  The driver converts this to an SQL <code>TIME</code> value
      * when it sends it to the database.
      * <P>
@@ -2057,13 +2057,13 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
      *        in this <code>RowSet</code> object's command that is to be set.
      *        The first parameter is 1, the second is 2, and so on; must be
      *        <code>1</code> or greater
-     * @param x a <code>java.sql.Time</code> object, which is to be set as the value
+     * @param x a <code>j86.java.sql.Time</code> object, which is to be set as the value
      *              for placeholder parameter <i>parameterIndex</i>
      * @throws SQLException if an error occurs or the
      *                         parameter index is out of bounds
      * @see #getParams
      */
-    public void setTime(int parameterIndex, java.sql.Time x) throws SQLException {
+    public void setTime(int parameterIndex, j86.java.sql.Time x) throws SQLException {
         checkParamIndex(parameterIndex);
         if(params == null){
              throw new SQLException("Set initParams() before setTime");
@@ -2074,7 +2074,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
 
     /**
      * Sets the designated parameter to the given
-     * <code>java.sql.Timestamp</code> value.
+     * <code>j86.java.sql.Timestamp</code> value.
      * The driver converts this to an SQL <code>TIMESTAMP</code> value when it
      * sends it to the database.
      * <P>
@@ -2101,12 +2101,12 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
      *        in this <code>RowSet</code> object's command that is to be set.
      *        The first parameter is 1, the second is 2, and so on; must be
      *        <code>1</code> or greater
-     * @param x a <code>java.sql.Timestamp</code> object
+     * @param x a <code>j86.java.sql.Timestamp</code> object
      * @throws SQLException if an error occurs or the
      *                         parameter index is out of bounds
      * @see #getParams
      */
-    public void setTimestamp(int parameterIndex, java.sql.Timestamp x) throws SQLException {
+    public void setTimestamp(int parameterIndex, j86.java.sql.Timestamp x) throws SQLException {
         checkParamIndex(parameterIndex);
         if(params == null){
              throw new SQLException("Set initParams() before setTimestamp");
@@ -2117,7 +2117,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
 
     /**
      * Sets the designated parameter to the given
-     * <code>java.io.InputStream</code> object,
+     * <code>j86.java.io.InputStream</code> object,
      * which will have the specified number of bytes.
      * The contents of the stream will be read and sent to the database.
      * This method throws an <code>SQLException</code> object if the number of bytes
@@ -2125,7 +2125,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
      * <P>
      * When a very large ASCII value is input to a <code>LONGVARCHAR</code>
      * parameter, it may be more practical to send it via a
-     * <code>java.io.InputStream</code> object. A JDBC technology-enabled
+     * <code>j86.java.io.InputStream</code> object. A JDBC technology-enabled
      * driver will read the data from the stream as needed until it reaches
      * end-of-file. The driver will do any necessary conversion from ASCII to
      * the database <code>CHAR</code> format.
@@ -2148,7 +2148,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
      * has been called will return an array containing the parameter values that
      * have been set.  The element in the array that represents the values
      * set with this method will itself be an array. The first element of that array
-     * is the given <code>java.io.InputStream</code> object.
+     * is the given <code>j86.java.io.InputStream</code> object.
      * The second element is the value set for <i>length</i>.
      * The third element is an internal <code>BaseRowSet</code> constant
      * specifying that the stream passed to this method is an ASCII stream.
@@ -2179,7 +2179,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
      *       in <i>length</i>
      * @see #getParams
      */
-    public void setAsciiStream(int parameterIndex, java.io.InputStream x, int length) throws SQLException {
+    public void setAsciiStream(int parameterIndex, j86.java.io.InputStream x, int length) throws SQLException {
         Object asciiStream[];
         checkParamIndex(parameterIndex);
 
@@ -2200,7 +2200,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
    * to the given input stream.
    * When a very large ASCII value is input to a <code>LONGVARCHAR</code>
    * parameter, it may be more practical to send it via a
-   * <code>java.io.InputStream</code>. Data will be read from the stream
+   * <code>j86.java.io.InputStream</code>. Data will be read from the stream
    * as needed until end-of-file is reached.  The JDBC driver will
    * do any necessary conversion from ASCII to the database char format.
    *
@@ -2218,13 +2218,13 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
    * @throws SQLFeatureNotSupportedException  if the JDBC driver does not support this method
    * @since 1.6
    */
-  public void setAsciiStream(int parameterIndex, java.io.InputStream x)
+  public void setAsciiStream(int parameterIndex, j86.java.io.InputStream x)
                       throws SQLException {
       throw new SQLFeatureNotSupportedException("Feature not supported");
   }
 
     /**
-     * Sets the designated parameter to the given <code>java.io.InputStream</code>
+     * Sets the designated parameter to the given <code>j86.java.io.InputStream</code>
      * object, which will have the specified number of bytes.
      * The contents of the stream will be read and sent to the database.
      * This method throws an <code>SQLException</code> object if the number of bytes
@@ -2232,7 +2232,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
      * <P>
      * When a very large binary value is input to a
      * <code>LONGVARBINARY</code> parameter, it may be more practical
-     * to send it via a <code>java.io.InputStream</code> object.
+     * to send it via a <code>j86.java.io.InputStream</code> object.
      * A JDBC technology-enabled driver will read the data from the
      * stream as needed until it reaches end-of-file.
      *
@@ -2254,7 +2254,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
      * has been called will return an array containing the parameter values that
      * have been set.  In that array, the element that represents the values
      * set with this method will itself be an array. The first element of that array
-     * is the given <code>java.io.InputStream</code> object.
+     * is the given <code>j86.java.io.InputStream</code> object.
      * The second element is the value set for <i>length</i>.
      * The third element is an internal <code>BaseRowSet</code> constant
      * specifying that the stream passed to this method is a binary stream.
@@ -2284,7 +2284,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
      *         specified in <i>length</i>
      * @see #getParams
      */
-    public void setBinaryStream(int parameterIndex, java.io.InputStream x, int length) throws SQLException {
+    public void setBinaryStream(int parameterIndex, j86.java.io.InputStream x, int length) throws SQLException {
         Object binaryStream[];
         checkParamIndex(parameterIndex);
 
@@ -2305,7 +2305,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
    * to the given input stream.
    * When a very large binary value is input to a <code>LONGVARBINARY</code>
    * parameter, it may be more practical to send it via a
-   * <code>java.io.InputStream</code> object. The data will be read from the
+   * <code>j86.java.io.InputStream</code> object. The data will be read from the
    * stream as needed until end-of-file is reached.
    *
    * <P><B>Note:</B> This stream object can either be a standard
@@ -2322,7 +2322,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
    * @throws SQLFeatureNotSupportedException  if the JDBC driver does not support this method
    * @since 1.6
    */
-  public void setBinaryStream(int parameterIndex, java.io.InputStream x)
+  public void setBinaryStream(int parameterIndex, j86.java.io.InputStream x)
                               throws SQLException {
       throw new SQLFeatureNotSupportedException("Feature not supported");
   }
@@ -2330,7 +2330,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
 
     /**
      * Sets the designated parameter to the given
-     * <code>java.io.InputStream</code> object, which will have the specified
+     * <code>j86.java.io.InputStream</code> object, which will have the specified
      * number of bytes. The contents of the stream will be read and sent
      * to the database.
      * This method throws an <code>SQLException</code> if the number of bytes
@@ -2338,7 +2338,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
      * <P>
      * When a very large Unicode value is input to a
      * <code>LONGVARCHAR</code> parameter, it may be more practical
-     * to send it via a <code>java.io.InputStream</code> object.
+     * to send it via a <code>j86.java.io.InputStream</code> object.
      * A JDBC technology-enabled driver will read the data from the
      * stream as needed, until it reaches end-of-file.
      * The driver will do any necessary conversion from Unicode to the
@@ -2360,7 +2360,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
      * has been called will return an array containing the parameter values that
      * have been set.  In that array, the element that represents the values
      * set with this method will itself be an array. The first element of that array
-     * is the given <code>java.io.InputStream</code> object.
+     * is the given <code>j86.java.io.InputStream</code> object.
      * The second element is the value set for <i>length</i>.
      * The third element is an internal <code>BaseRowSet</code> constant
      * specifying that the stream passed to this method is a Unicode stream.
@@ -2380,7 +2380,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
      *        in this <code>RowSet</code> object's command that is to be set.
      *        The first parameter is 1, the second is 2, and so on; must be
      *        <code>1</code> or greater
-     * @param x the <code>java.io.InputStream</code> object that contains the
+     * @param x the <code>j86.java.io.InputStream</code> object that contains the
      *          UNICODE parameter value
      * @param length the number of bytes in the input stream
      * @throws SQLException if an error occurs, the parameter index is out of bounds,
@@ -2390,7 +2390,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
      * @see #getParams
      */
     @Deprecated
-    public void setUnicodeStream(int parameterIndex, java.io.InputStream x, int length) throws SQLException {
+    public void setUnicodeStream(int parameterIndex, j86.java.io.InputStream x, int length) throws SQLException {
         Object unicodeStream[];
         checkParamIndex(parameterIndex);
 
@@ -2405,7 +2405,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
     }
 
     /**
-     * Sets the designated parameter to the given <code>java.io.Reader</code>
+     * Sets the designated parameter to the given <code>j86.java.io.Reader</code>
      * object, which will have the specified number of characters. The
      * contents of the reader will be read and sent to the database.
      * This method throws an <code>SQLException</code> if the number of bytes
@@ -2440,7 +2440,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
      * has been called will return an array containing the parameter values that
      * have been set.  In that array, the element that represents the values
      * set with this method will itself be an array. The first element of that array
-     * is the given <code>java.io.Reader</code> object.
+     * is the given <code>j86.java.io.Reader</code> object.
      * The second element is the value set for <i>length</i>.
      * The parameter number is indicated by an element's position in the array
      * returned by the method <code>getParams</code>,
@@ -2488,7 +2488,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
    * object.
    * When a very large UNICODE value is input to a <code>LONGVARCHAR</code>
    * parameter, it may be more practical to send it via a
-   * <code>java.io.Reader</code> object. The data will be read from the stream
+   * <code>j86.java.io.Reader</code> object. The data will be read from the stream
    * as needed until end-of-file is reached.  The JDBC driver will
    * do any necessary conversion from UNICODE to the database char format.
    *
@@ -2500,7 +2500,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
    * <code>setCharacterStream</code> which takes a length parameter.
    *
    * @param parameterIndex the first parameter is 1, the second is 2, ...
-   * @param reader the <code>java.io.Reader</code> object that contains the
+   * @param reader the <code>j86.java.io.Reader</code> object that contains the
    *        Unicode data
    * @exception SQLException if a database access error occurs or
    * this method is called on a closed <code>PreparedStatement</code>
@@ -2508,7 +2508,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
    * @since 1.6
    */
   public void setCharacterStream(int parameterIndex,
-                          java.io.Reader reader) throws SQLException {
+                          j86.java.io.Reader reader) throws SQLException {
       throw new SQLFeatureNotSupportedException("Feature not supported");
   }
 
@@ -2516,7 +2516,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
      * Sets the designated parameter to an <code>Object</code> in the Java
      * programming language. The second parameter must be an
      * <code>Object</code> type.  For integral values, the
-     * <code>java.lang</code> equivalent
+     * <code>j86.java.lang</code> equivalent
      * objects should be used. For example, use the class <code>Integer</code>
      * for an <code>int</code>.
      * <P>
@@ -2553,7 +2553,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
      * second element is the value set for <i>targetSqlType</i>.  The
      * third element is the value set for <i>scale</i>, which the driver will
      * ignore if the type of the object being set is not
-     * <code>java.sql.Types.NUMERIC</code> or <code>java.sql.Types.DECIMAL</code>.
+     * <code>j86.java.sql.Types.NUMERIC</code> or <code>java.sql.Types.DECIMAL</code>.
      * The parameter number is indicated by an element's position in the array
      * returned by the method <code>getParams</code>,
      * with the first element being the value for the first placeholder parameter, the
@@ -2573,13 +2573,13 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
      *        <code>1</code> or greater
      * @param x the <code>Object</code> containing the input parameter value;
      *        must be an <code>Object</code> type
-     * @param targetSqlType the SQL type (as defined in <code>java.sql.Types</code>)
+     * @param targetSqlType the SQL type (as defined in <code>j86.java.sql.Types</code>)
      *        to be sent to the database. The <code>scale</code> argument may
      *        further qualify this type. If a non-standard <i>targetSqlType</i>
      *        is supplied, this method will not throw a <code>SQLException</code>.
      *        This allows implicit support for non-standard SQL types.
-     * @param scale for the types <code>java.sql.Types.DECIMAL</code> and
-     *        <code>java.sql.Types.NUMERIC</code>, this is the number
+     * @param scale for the types <code>j86.java.sql.Types.DECIMAL</code> and
+     *        <code>j86.java.sql.Types.NUMERIC</code>, this is the number
      *        of digits after the decimal point.  For all other types, this
      *        value will be ignored.
      * @throws SQLException if an error occurs or the parameter index is out of bounds
@@ -2640,7 +2640,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
      *        <code>1</code> or greater
      * @param x the <code>Object</code> containing the input parameter value;
      *        must be an <code>Object</code> type
-     * @param targetSqlType the SQL type (as defined in <code>java.sql.Types</code>)
+     * @param targetSqlType the SQL type (as defined in <code>j86.java.sql.Types</code>)
      *        to be sent to the database. If a non-standard <i>targetSqlType</i>
      *        is supplied, this method will not throw a <code>SQLException</code>.
      *        This allows implicit support for non-standard SQL types.
@@ -2665,7 +2665,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
      * Sets the designated parameter to an <code>Object</code> in the Java
      * programming language. The second parameter must be an
      * <code>Object</code>
-     * type.  For integral values, the <code>java.lang</code> equivalent
+     * type.  For integral values, the <code>j86.java.lang</code> equivalent
      * objects should be used. For example, use the class <code>Integer</code>
      * for an <code>int</code>.
      * <P>
@@ -2766,7 +2766,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
      *         the <code>Ref</code> object returns a <code>null</code> base type
      *         name.
      * @see #getParams
-     * @see javax.sql.rowset.serial.SerialRef
+     * @see j86.j86.j86.javax.sql.rowset.serial.SerialRef
      */
     public void setRef (int parameterIndex, Ref ref) throws SQLException {
         checkParamIndex(parameterIndex);
@@ -2810,7 +2810,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
      * @throws SQLException if an error occurs or the
      *                         parameter index is out of bounds
      * @see #getParams
-     * @see javax.sql.rowset.serial.SerialBlob
+     * @see j86.j86.j86.javax.sql.rowset.serial.SerialBlob
      */
     public void setBlob (int parameterIndex, Blob x) throws SQLException {
         checkParamIndex(parameterIndex);
@@ -2855,7 +2855,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
      * @throws SQLException if an error occurs; the parameter index is out of
      *     bounds or the <code>Clob</code> is null
      * @see #getParams
-     * @see javax.sql.rowset.serial.SerialBlob
+     * @see j86.j86.j86.javax.sql.rowset.serial.SerialBlob
      */
     public void setClob (int parameterIndex, Clob x) throws SQLException {
         checkParamIndex(parameterIndex);
@@ -2903,7 +2903,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
      * @throws SQLException if an error occurs; the parameter index is out of
      *        bounds or the <code>ARRAY</code> is null
      * @see #getParams
-     * @see javax.sql.rowset.serial.SerialArray
+     * @see j86.j86.j86.javax.sql.rowset.serial.SerialArray
      */
     public void setArray (int parameterIndex, Array array) throws SQLException {
         checkParamIndex(parameterIndex);
@@ -2914,7 +2914,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
     }
 
     /**
-     * Sets the designated parameter to the given <code>java.sql.Date</code>
+     * Sets the designated parameter to the given <code>j86.java.sql.Date</code>
      * object.
      * When the DBMS does not store time zone information, the driver will use
      * the given <code>Calendar</code> object to construct the SQL <code>DATE</code>
@@ -2939,7 +2939,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
      * has been called will return an array containing the parameter values that
      * have been set.  In that array, the element that represents the values
      * set with this method will itself be an array. The first element of that array
-     * is the given <code>java.sql.Date</code> object.
+     * is the given <code>j86.java.sql.Date</code> object.
      * The second element is the value set for <i>cal</i>.
      * The parameter number is indicated by an element's position in the array
      * returned by the method <code>getParams</code>,
@@ -2957,15 +2957,15 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
      *        in this <code>RowSet</code> object's command that is to be set.
      *        The first parameter is 1, the second is 2, and so on; must be
      *        <code>1</code> or greater
-     * @param x a <code>java.sql.Date</code> object representing an SQL
+     * @param x a <code>j86.java.sql.Date</code> object representing an SQL
      *        <code>DATE</code> value
-     * @param cal a <code>java.util.Calendar</code> object to use when
+     * @param cal a <code>j86.java.util.Calendar</code> object to use when
      *        when constructing the date
      * @throws SQLException if an error occurs or the
      *                         parameter index is out of bounds
      * @see #getParams
      */
-    public void setDate(int parameterIndex, java.sql.Date x, Calendar cal) throws SQLException {
+    public void setDate(int parameterIndex, j86.java.sql.Date x, Calendar cal) throws SQLException {
         Object date[];
         checkParamIndex(parameterIndex);
 
@@ -2979,7 +2979,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
     }
 
     /**
-     * Sets the designated parameter to the given <code>java.sql.Time</code>
+     * Sets the designated parameter to the given <code>j86.java.sql.Time</code>
      * object.  The driver converts this
      * to an SQL <code>TIME</code> value when it sends it to the database.
      * <P>
@@ -3006,7 +3006,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
      * has been called will return an array containing the parameter values that
      * have been set.  In that array, the element that represents the values
      * set with this method will itself be an array. The first element of that array
-     * is the given <code>java.sql.Time</code> object.
+     * is the given <code>j86.java.sql.Time</code> object.
      * The second element is the value set for <i>cal</i>.
      * The parameter number is indicated by an element's position in the array
      * returned by the method <code>getParams</code>,
@@ -3024,14 +3024,14 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
      *        in this <code>RowSet</code> object's command that is to be set.
      *        The first parameter is 1, the second is 2, and so on; must be
      *        <code>1</code> or greater
-     * @param x a <code>java.sql.Time</code> object
-     * @param cal the <code>java.util.Calendar</code> object the driver can use to
+     * @param x a <code>j86.java.sql.Time</code> object
+     * @param cal the <code>j86.java.util.Calendar</code> object the driver can use to
      *         construct the time
      * @throws SQLException if an error occurs or the
      *                         parameter index is out of bounds
      * @see #getParams
      */
-    public void setTime(int parameterIndex, java.sql.Time x, Calendar cal) throws SQLException {
+    public void setTime(int parameterIndex, j86.java.sql.Time x, Calendar cal) throws SQLException {
         Object time[];
         checkParamIndex(parameterIndex);
 
@@ -3046,7 +3046,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
 
     /**
      * Sets the designated parameter to the given
-     * <code>java.sql.Timestamp</code> object.  The driver converts this
+     * <code>j86.java.sql.Timestamp</code> object.  The driver converts this
      * to an SQL <code>TIMESTAMP</code> value when it sends it to the database.
      * <P>
      * When the DBMS does not store time zone information, the driver will use
@@ -3072,7 +3072,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
      * has been called will return an array containing the parameter values that
      * have been set.  In that array, the element that represents the values
      * set with this method will itself be an array. The first element of that array
-     * is the given <code>java.sql.Timestamp</code> object.
+     * is the given <code>j86.java.sql.Timestamp</code> object.
      * The second element is the value set for <i>cal</i>.
      * The parameter number is indicated by an element's position in the array
      * returned by the method <code>getParams</code>,
@@ -3090,14 +3090,14 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
      *        in this <code>RowSet</code> object's command that is to be set.
      *        The first parameter is 1, the second is 2, and so on; must be
      *        <code>1</code> or greater
-     * @param x a <code>java.sql.Timestamp</code> object
-     * @param cal the <code>java.util.Calendar</code> object the driver can use to
+     * @param x a <code>j86.java.sql.Timestamp</code> object
+     * @param cal the <code>j86.java.util.Calendar</code> object the driver can use to
      *         construct the timestamp
      * @throws SQLException if an error occurs or the
      *                         parameter index is out of bounds
      * @see #getParams
      */
-    public void setTimestamp(int parameterIndex, java.sql.Timestamp x, Calendar cal) throws SQLException {
+    public void setTimestamp(int parameterIndex, j86.java.sql.Timestamp x, Calendar cal) throws SQLException {
         Object timestamp[];
         checkParamIndex(parameterIndex);
 
@@ -3199,7 +3199,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
     * <P><B>Note:</B> You must specify the parameter's SQL type.
     *
     * @param parameterName the name of the parameter
-    * @param sqlType the SQL type code defined in <code>java.sql.Types</code>
+    * @param sqlType the SQL type code defined in <code>j86.java.sql.Types</code>
     * @exception SQLException if a database access error occurs or
     * this method is called on a closed <code>CallableStatement</code>
     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
@@ -3233,7 +3233,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
     *
     *
     * @param parameterName the name of the parameter
-    * @param sqlType a value from <code>java.sql.Types</code>
+    * @param sqlType a value from <code>j86.java.sql.Types</code>
     * @param typeName the fully-qualified name of an SQL user-defined type;
     *        ignored if the parameter is not a user-defined type or
     *        SQL <code>REF</code> value
@@ -3388,7 +3388,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
 
  /**
     * Sets the designated parameter to the given
-    * <code>java.math.BigDecimal</code> value.
+    * <code>j86.java.math.BigDecimal</code> value.
     * The driver converts this to an SQL <code>NUMERIC</code> value when
     * it sends it to the database.
     *
@@ -3453,7 +3453,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
 
 
  /**
-    * Sets the designated parameter to the given <code>java.sql.Timestamp</code> value.
+    * Sets the designated parameter to the given <code>j86.java.sql.Timestamp</code> value.
     * The driver
     * converts this to an SQL <code>TIMESTAMP</code> value when it sends it to the
     * database.
@@ -3467,7 +3467,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
     * @see #getParams
     * @since 1.4
     */
-   public void setTimestamp(String parameterName, java.sql.Timestamp x)
+   public void setTimestamp(String parameterName, j86.java.sql.Timestamp x)
        throws SQLException{
         throw new SQLFeatureNotSupportedException("Feature not supported");
    }
@@ -3479,7 +3479,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
     * the specified number of bytes.
     * When a very large ASCII value is input to a <code>LONGVARCHAR</code>
     * parameter, it may be more practical to send it via a
-    * <code>java.io.InputStream</code>. Data will be read from the stream
+    * <code>j86.java.io.InputStream</code>. Data will be read from the stream
     * as needed until end-of-file is reached.  The JDBC driver will
     * do any necessary conversion from ASCII to the database char format.
     *
@@ -3496,7 +3496,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
     * this method
     * @since 1.4
     */
-   public void setAsciiStream(String parameterName, java.io.InputStream x, int length)
+   public void setAsciiStream(String parameterName, j86.java.io.InputStream x, int length)
        throws SQLException{
         throw new SQLFeatureNotSupportedException("Feature not supported");
    }
@@ -3507,7 +3507,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
     * the specified number of bytes.
     * When a very large binary value is input to a <code>LONGVARBINARY</code>
     * parameter, it may be more practical to send it via a
-    * <code>java.io.InputStream</code> object. The data will be read from the stream
+    * <code>j86.java.io.InputStream</code> object. The data will be read from the stream
     * as needed until end-of-file is reached.
     *
     * <P><B>Note:</B> This stream object can either be a standard
@@ -3523,7 +3523,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
     * this method
     * @since 1.4
     */
-   public void setBinaryStream(String parameterName, java.io.InputStream x,
+   public void setBinaryStream(String parameterName, j86.java.io.InputStream x,
                         int length) throws SQLException{
         throw new SQLFeatureNotSupportedException("Feature not supported");
    }
@@ -3534,7 +3534,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
     * object, which is the given number of characters long.
     * When a very large UNICODE value is input to a <code>LONGVARCHAR</code>
     * parameter, it may be more practical to send it via a
-    * <code>java.io.Reader</code> object. The data will be read from the stream
+    * <code>j86.java.io.Reader</code> object. The data will be read from the stream
     * as needed until end-of-file is reached.  The JDBC driver will
     * do any necessary conversion from UNICODE to the database char format.
     *
@@ -3543,7 +3543,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
     * standard interface.
     *
     * @param parameterName the name of the parameter
-    * @param reader the <code>java.io.Reader</code> object that
+    * @param reader the <code>j86.java.io.Reader</code> object that
     *        contains the UNICODE data used as the designated parameter
     * @param length the number of characters in the stream
     * @exception SQLException if a database access error occurs or
@@ -3553,7 +3553,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
     * @since 1.4
     */
    public void setCharacterStream(String parameterName,
-                           java.io.Reader reader,
+                           j86.java.io.Reader reader,
                            int length) throws SQLException{
         throw new SQLFeatureNotSupportedException("Feature not supported");
    }
@@ -3563,7 +3563,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
    * Sets the designated parameter to the given input stream.
    * When a very large ASCII value is input to a <code>LONGVARCHAR</code>
    * parameter, it may be more practical to send it via a
-   * <code>java.io.InputStream</code>. Data will be read from the stream
+   * <code>j86.java.io.InputStream</code>. Data will be read from the stream
    * as needed until end-of-file is reached.  The JDBC driver will
    * do any necessary conversion from ASCII to the database char format.
    *
@@ -3581,7 +3581,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
    * @throws SQLFeatureNotSupportedException  if the JDBC driver does not support this method
      * @since 1.6
   */
-  public void setAsciiStream(String parameterName, java.io.InputStream x)
+  public void setAsciiStream(String parameterName, j86.java.io.InputStream x)
           throws SQLException{
         throw new SQLFeatureNotSupportedException("Feature not supported");
    }
@@ -3591,7 +3591,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
     * Sets the designated parameter to the given input stream.
     * When a very large binary value is input to a <code>LONGVARBINARY</code>
     * parameter, it may be more practical to send it via a
-    * <code>java.io.InputStream</code> object. The data will be read from the
+    * <code>j86.java.io.InputStream</code> object. The data will be read from the
     * stream as needed until end-of-file is reached.
     *
     * <P><B>Note:</B> This stream object can either be a standard
@@ -3608,7 +3608,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
     * @throws SQLFeatureNotSupportedException  if the JDBC driver does not support this method
     * @since 1.6
     */
-   public void setBinaryStream(String parameterName, java.io.InputStream x)
+   public void setBinaryStream(String parameterName, j86.java.io.InputStream x)
    throws SQLException{
         throw new SQLFeatureNotSupportedException("Feature not supported");
    }
@@ -3620,7 +3620,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
     * object.
     * When a very large UNICODE value is input to a <code>LONGVARCHAR</code>
     * parameter, it may be more practical to send it via a
-    * <code>java.io.Reader</code> object. The data will be read from the stream
+    * <code>j86.java.io.Reader</code> object. The data will be read from the stream
     * as needed until end-of-file is reached.  The JDBC driver will
     * do any necessary conversion from UNICODE to the database char format.
     *
@@ -3632,7 +3632,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
     * <code>setCharacterStream</code> which takes a length parameter.
     *
     * @param parameterName the name of the parameter
-    * @param reader the <code>java.io.Reader</code> object that contains the
+    * @param reader the <code>j86.java.io.Reader</code> object that contains the
     *        Unicode data
     * @exception SQLException if a database access error occurs or
     * this method is called on a closed <code>CallableStatement</code>
@@ -3640,7 +3640,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
     * @since 1.6
     */
    public void setCharacterStream(String parameterName,
-                         java.io.Reader reader) throws SQLException{
+                         j86.java.io.Reader reader) throws SQLException{
         throw new SQLFeatureNotSupportedException("Feature not supported");
    }
 
@@ -3677,7 +3677,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
  /**
     * Sets the value of the designated parameter with the given object. The second
     * argument must be an object type; for integral values, the
-    * <code>java.lang</code> equivalent objects should be used.
+    * <code>j86.java.lang</code> equivalent objects should be used.
     *
     * <p>The given Java object will be converted to the given targetSqlType
     * before being sent to the database.
@@ -3688,7 +3688,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
     * to the SQL data stream.
     * If, on the other hand, the object is of a class implementing
     * <code>Ref</code>, <code>Blob</code>, <code>Clob</code>,  <code>NClob</code>,
-    *  <code>Struct</code>, <code>java.net.URL</code>,
+    *  <code>Struct</code>, <code>j86.java.net.URL</code>,
     * or <code>Array</code>, the driver should pass it to the database as a
     * value of the corresponding SQL type.
     * <P>
@@ -3697,9 +3697,9 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
     *
     * @param parameterName the name of the parameter
     * @param x the object containing the input parameter value
-    * @param targetSqlType the SQL type (as defined in java.sql.Types) to be
+    * @param targetSqlType the SQL type (as defined in j86.java.sql.Types) to be
     * sent to the database. The scale argument may further qualify this type.
-    * @param scale for java.sql.Types.DECIMAL or java.sql.Types.NUMERIC types,
+    * @param scale for j86.java.sql.Types.DECIMAL or java.sql.Types.NUMERIC types,
     *          this is the number of digits after the decimal point.  For all other
     *          types, this value will be ignored.
     * @exception SQLException if a database access error occurs or
@@ -3729,7 +3729,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
     *
     * @param parameterName the name of the parameter
     * @param x the object containing the input parameter value
-    * @param targetSqlType the SQL type (as defined in java.sql.Types) to be
+    * @param targetSqlType the SQL type (as defined in j86.java.sql.Types) to be
     *                      sent to the database
     * @exception SQLException if a database access error occurs or
     * this method is called on a closed <code>CallableStatement</code>
@@ -3752,7 +3752,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
  /**
    * Sets the value of the designated parameter with the given object.
    * The second parameter must be of type <code>Object</code>; therefore, the
-   * <code>java.lang</code> equivalent objects should be used for built-in types.
+   * <code>j86.java.lang</code> equivalent objects should be used for built-in types.
    *
    * <p>The JDBC specification specifies a standard mapping from
    * Java <code>Object</code> types to SQL types.  The given argument
@@ -3768,7 +3768,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
    * to write it to the SQL data stream.
    * If, on the other hand, the object is of a class implementing
    * <code>Ref</code>, <code>Blob</code>, <code>Clob</code>,  <code>NClob</code>,
-   *  <code>Struct</code>, <code>java.net.URL</code>,
+   *  <code>Struct</code>, <code>j86.java.net.URL</code>,
    * or <code>Array</code>, the driver should pass it to the database as a
    * value of the corresponding SQL type.
    * <P>
@@ -3884,7 +3884,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
 
 
  /**
-    * Sets the designated parameter to the given <code>java.sql.Blob</code> object.
+    * Sets the designated parameter to the given <code>j86.java.sql.Blob</code> object.
     * The driver converts this to an SQL <code>BLOB</code> value when it
     * sends it to the database.
     *
@@ -4008,7 +4008,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
 
 
   /**
-    * Sets the designated parameter to the given <code>java.sql.Clob</code> object.
+    * Sets the designated parameter to the given <code>j86.java.sql.Clob</code> object.
     * The driver converts this to an SQL <code>CLOB</code> value when it
     * sends it to the database.
     *
@@ -4052,7 +4052,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
 
 
  /**
-    * Sets the designated parameter to the given <code>java.sql.Date</code> value
+    * Sets the designated parameter to the given <code>j86.java.sql.Date</code> value
     * using the default time zone of the virtual machine that is running
     * the application.
     * The driver converts this
@@ -4067,14 +4067,14 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
     * @see #getParams
     * @since 1.4
     */
-   public void setDate(String parameterName, java.sql.Date x)
+   public void setDate(String parameterName, j86.java.sql.Date x)
        throws SQLException{
         throw new SQLFeatureNotSupportedException("Feature not supported");
    }
 
 
  /**
-    * Sets the designated parameter to the given <code>java.sql.Date</code> value,
+    * Sets the designated parameter to the given <code>j86.java.sql.Date</code> value,
     * using the given <code>Calendar</code> object.  The driver uses
     * the <code>Calendar</code> object to construct an SQL <code>DATE</code> value,
     * which the driver then sends to the database.  With a
@@ -4094,14 +4094,14 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
     * @see #getParams
     * @since 1.4
     */
-   public void setDate(String parameterName, java.sql.Date x, Calendar cal)
+   public void setDate(String parameterName, j86.java.sql.Date x, Calendar cal)
        throws SQLException{
         throw new SQLFeatureNotSupportedException("Feature not supported");
    }
 
 
  /**
-    * Sets the designated parameter to the given <code>java.sql.Time</code> value.
+    * Sets the designated parameter to the given <code>j86.java.sql.Time</code> value.
     * The driver converts this
     * to an SQL <code>TIME</code> value when it sends it to the database.
     *
@@ -4114,14 +4114,14 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
     * @see #getParams
     * @since 1.4
     */
-   public void setTime(String parameterName, java.sql.Time x)
+   public void setTime(String parameterName, j86.java.sql.Time x)
        throws SQLException{
         throw new SQLFeatureNotSupportedException("Feature not supported");
    }
 
 
  /**
-    * Sets the designated parameter to the given <code>java.sql.Time</code> value,
+    * Sets the designated parameter to the given <code>j86.java.sql.Time</code> value,
     * using the given <code>Calendar</code> object.  The driver uses
     * the <code>Calendar</code> object to construct an SQL <code>TIME</code> value,
     * which the driver then sends to the database.  With a
@@ -4141,14 +4141,14 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
     * @see #getParams
     * @since 1.4
     */
-   public void setTime(String parameterName, java.sql.Time x, Calendar cal)
+   public void setTime(String parameterName, j86.java.sql.Time x, Calendar cal)
        throws SQLException{
         throw new SQLFeatureNotSupportedException("Feature not supported");
    }
 
 
  /**
-    * Sets the designated parameter to the given <code>java.sql.Timestamp</code> value,
+    * Sets the designated parameter to the given <code>j86.java.sql.Timestamp</code> value,
     * using the given <code>Calendar</code> object.  The driver uses
     * the <code>Calendar</code> object to construct an SQL <code>TIMESTAMP</code> value,
     * which the driver then sends to the database.  With a
@@ -4168,14 +4168,14 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
     * @see #getParams
     * @since 1.4
     */
-   public void setTimestamp(String parameterName, java.sql.Timestamp x, Calendar cal)
+   public void setTimestamp(String parameterName, j86.java.sql.Timestamp x, Calendar cal)
        throws SQLException{
         throw new SQLFeatureNotSupportedException("Feature not supported");
    }
 
 
  /**
-  * Sets the designated parameter to the given <code>java.sql.SQLXML</code> object. The driver converts this to an
+  * Sets the designated parameter to the given <code>j86.java.sql.SQLXML</code> object. The driver converts this to an
   * SQL <code>XML</code> value when it sends it to the database.
   * @param parameterIndex index of the first parameter is 1, the second is 2, ...
   * @param xmlObject a <code>SQLXML</code> object that maps an SQL <code>XML</code> value
@@ -4197,7 +4197,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
 
 
  /**
-  * Sets the designated parameter to the given <code>java.sql.SQLXML</code> object. The driver converts this to an
+  * Sets the designated parameter to the given <code>j86.java.sql.SQLXML</code> object. The driver converts this to an
   * <code>SQL XML</code> value when it sends it to the database.
   * @param parameterName the name of the parameter
   * @param xmlObject a <code>SQLXML</code> object that maps an <code>SQL XML</code> value
@@ -4219,7 +4219,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
 
 
  /**
-  * Sets the designated parameter to the given <code>java.sql.RowId</code> object. The
+  * Sets the designated parameter to the given <code>j86.java.sql.RowId</code> object. The
   * driver converts this to a SQL <code>ROWID</code> value when it sends it
   * to the database
   *
@@ -4237,7 +4237,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
 
 
  /**
-  * Sets the designated parameter to the given <code>java.sql.RowId</code> object. The
+  * Sets the designated parameter to the given <code>j86.java.sql.RowId</code> object. The
   * driver converts this to a SQL <code>ROWID</code> when it sends it to the
   * database.
   *
@@ -4362,8 +4362,8 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
 
 
   /**
-   * Sets the designated parameter to a <code>java.sql.NClob</code> object. The object
-   * implements the <code>java.sql.NClob</code> interface. This <code>NClob</code>
+   * Sets the designated parameter to a <code>j86.java.sql.NClob</code> object. The object
+   * implements the <code>j86.java.sql.NClob</code> interface. This <code>NClob</code>
    * object maps to a SQL <code>NCLOB</code>.
    * @param parameterName the name of the column to be set
    * @param value the parameter value
@@ -4466,7 +4466,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
 
 
   /**
-   * Sets the designated parameter to a <code>java.sql.NClob</code> object. The driver converts this oa
+   * Sets the designated parameter to a <code>j86.java.sql.NClob</code> object. The driver converts this oa
    * SQL <code>NCLOB</code> value when it sends it to the database.
    * @param parameterIndex of the first parameter is 1, the second is 2, ...
    * @param value the parameter value
@@ -4512,18 +4512,18 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
 
 
   /**
-   * Sets the designated parameter to the given <code>java.net.URL</code> value.
+   * Sets the designated parameter to the given <code>j86.java.net.URL</code> value.
    * The driver converts this to an SQL <code>DATALINK</code> value
    * when it sends it to the database.
    *
    * @param parameterIndex the first parameter is 1, the second is 2, ...
-   * @param x the <code>java.net.URL</code> object to be set
+   * @param x the <code>j86.java.net.URL</code> object to be set
    * @exception SQLException if a database access error occurs or
    * this method is called on a closed <code>PreparedStatement</code>
    * @throws SQLFeatureNotSupportedException  if the JDBC driver does not support this method
    * @since 1.4
    */
-  public void setURL(int parameterIndex, java.net.URL x) throws SQLException{
+  public void setURL(int parameterIndex, j86.java.net.URL x) throws SQLException{
         throw new SQLFeatureNotSupportedException("Feature not supported");
   }
 

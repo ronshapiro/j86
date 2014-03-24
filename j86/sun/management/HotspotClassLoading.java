@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.management;
+package j86.sun.management;
 
-import sun.management.counter.*;
+import j86.j86.sun.management.counter.*;
 
 /**
  * Implementation class of HotspotClassLoadingMBean interface.
@@ -80,7 +80,7 @@ class HotspotClassLoading
     private static final String CLS_COUNTER_NAME_PATTERN =
         JAVA_CLS + "|" + COM_SUN_CLS + "|" + SUN_CLS;
 
-    public java.util.List<Counter> getInternalClassLoadingCounters() {
+    public j86.java.util.List<Counter> getInternalClassLoadingCounters() {
         return jvm.getInternalCounters(CLS_COUNTER_NAME_PATTERN);
     }
 }

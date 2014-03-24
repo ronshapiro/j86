@@ -24,17 +24,17 @@
  */
 
 
-package com.sun.java.swing.plaf.windows;
+package j86.j86.com.sun.java.swing.plaf.windows;
 
-import javax.swing.DefaultDesktopManager;
-import javax.swing.JInternalFrame;
-import javax.swing.JLayeredPane;
-import java.awt.Component;
-import java.awt.Container;
-import java.awt.Dimension;
-import java.beans.PropertyVetoException;
-import java.util.Vector;
-import java.lang.ref.WeakReference;
+import j86.javax.swing.DefaultDesktopManager;
+import j86.javax.swing.JInternalFrame;
+import j86.javax.swing.JLayeredPane;
+import j86.java.awt.Component;
+import j86.java.awt.Container;
+import j86.java.awt.Dimension;
+import j86.java.beans.PropertyVetoException;
+import j86.java.util.Vector;
+import j86.j86.java.lang.ref.WeakReference;
 
 /**
  * This class implements a DesktopManager which more closely follows
@@ -48,11 +48,11 @@ import java.lang.ref.WeakReference;
  * This means that if the currently selected window is maximized
  * and another window is selected, that new window will be maximized.
  *
- * @see javax.swing.DefaultDesktopManager
+ * @see j86.javax.swing.DefaultDesktopManager
  * @author Thomas Ball
  */
 public class WindowsDesktopManager extends DefaultDesktopManager
-        implements java.io.Serializable, javax.swing.plaf.UIResource {
+        implements j86.java.io.Serializable, j86.j86.javax.swing.plaf.UIResource {
 
     /* The frame which is currently selected/activated.
      * We store this value to enforce MDI's single-selection model.

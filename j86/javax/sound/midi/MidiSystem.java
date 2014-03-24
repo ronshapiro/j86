@@ -23,32 +23,32 @@
  * questions.
  */
 
-package javax.sound.midi;
+package j86.javax.sound.midi;
 
-import java.io.FileInputStream;
-import java.io.File;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.IOException;
+import j86.java.io.FileInputStream;
+import j86.java.io.File;
+import j86.java.io.InputStream;
+import j86.java.io.OutputStream;
+import j86.java.io.IOException;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Set;
+import j86.java.util.ArrayList;
+import j86.java.util.HashSet;
+import j86.java.util.Iterator;
+import j86.java.util.List;
+import j86.java.util.Set;
 
-import java.net.URL;
+import j86.java.net.URL;
 
-import javax.sound.midi.spi.MidiFileWriter;
-import javax.sound.midi.spi.MidiFileReader;
-import javax.sound.midi.spi.SoundbankReader;
-import javax.sound.midi.spi.MidiDeviceProvider;
+import j86.j86.javax.sound.midi.spi.MidiFileWriter;
+import j86.j86.javax.sound.midi.spi.MidiFileReader;
+import j86.j86.javax.sound.midi.spi.SoundbankReader;
+import j86.j86.javax.sound.midi.spi.MidiDeviceProvider;
 
-import com.sun.media.sound.JDK13Services;
-import com.sun.media.sound.ReferenceCountingDevice;
-import com.sun.media.sound.AutoConnectSequencer;
-import com.sun.media.sound.MidiDeviceReceiverEnvelope;
-import com.sun.media.sound.MidiDeviceTransmitterEnvelope;
+import j86.com.sun.media.sound.JDK13Services;
+import j86.com.sun.media.sound.ReferenceCountingDevice;
+import j86.com.sun.media.sound.AutoConnectSequencer;
+import j86.com.sun.media.sound.MidiDeviceReceiverEnvelope;
+import j86.com.sun.media.sound.MidiDeviceTransmitterEnvelope;
 
 
 /**
@@ -75,7 +75,7 @@ import com.sun.media.sound.MidiDeviceTransmitterEnvelope;
  * properties file, the system property takes precedence. If none is
  * specified, a suitable default is chosen among the available devices.
  * The syntax of the properties file is specified in
- * {@link java.util.Properties#load(InputStream) Properties.load}. The
+ * {@link j86.java.util.Properties#load(InputStream) Properties.load}. The
  * following table lists the available property keys and which methods
  * consider them:
  *
@@ -87,22 +87,22 @@ import com.sun.media.sound.MidiDeviceTransmitterEnvelope;
  *   <th>Affected Method</th>
  *  </tr>
  *  <tr>
- *   <td><code>javax.sound.midi.Receiver</code></td>
+ *   <td><code>j86.javax.sound.midi.Receiver</code></td>
  *   <td>{@link Receiver}</td>
  *   <td>{@link #getReceiver}</td>
  *  </tr>
  *  <tr>
- *   <td><code>javax.sound.midi.Sequencer</code></td>
+ *   <td><code>j86.javax.sound.midi.Sequencer</code></td>
  *   <td>{@link Sequencer}</td>
  *   <td>{@link #getSequencer}</td>
  *  </tr>
  *  <tr>
- *   <td><code>javax.sound.midi.Synthesizer</code></td>
+ *   <td><code>j86.javax.sound.midi.Synthesizer</code></td>
  *   <td>{@link Synthesizer}</td>
  *   <td>{@link #getSynthesizer}</td>
  *  </tr>
  *  <tr>
- *   <td><code>javax.sound.midi.Transmitter</code></td>
+ *   <td><code>j86.javax.sound.midi.Transmitter</code></td>
  *   <td>{@link Transmitter}</td>
  *   <td>{@link #getTransmitter}</td>
  *  </tr>
@@ -111,7 +111,7 @@ import com.sun.media.sound.MidiDeviceTransmitterEnvelope;
  * The property value consists of the provider class name
  * and the device name, separated by the hash mark (&quot;#&quot;).
  * The provider class name is the fully-qualified
- * name of a concrete {@link javax.sound.midi.spi.MidiDeviceProvider
+ * name of a concrete {@link j86.j86.javax.sound.midi.spi.MidiDeviceProvider
  * MIDI device provider} class. The device name is matched against
  * the <code>String</code> returned by the <code>getName</code>
  * method of <code>MidiDevice.Info</code>.
@@ -143,12 +143,12 @@ import com.sun.media.sound.MidiDeviceTransmitterEnvelope;
  * implements neither Sequencer nor Synthesizer and provides
  * at least one Receiver or Transmitter, respectively.
  *
- * For example, the property <code>javax.sound.midi.Receiver</code>
+ * For example, the property <code>j86.javax.sound.midi.Receiver</code>
  * with a value
- * <code>&quot;com.sun.media.sound.MidiProvider#SunMIDI1&quot;</code>
+ * <code>&quot;j86.com.sun.media.sound.MidiProvider#SunMIDI1&quot;</code>
  * will have the following consequences when
  * <code>getReceiver</code> is called:
- * if the class <code>com.sun.media.sound.MidiProvider</code> exists
+ * if the class <code>j86.com.sun.media.sound.MidiProvider</code> exists
  * in the list of installed MIDI device providers,
  * the first <code>Receiver</code> device with name
  * <code>&quot;SunMIDI1&quot;</code> will be returned. If it cannot
@@ -234,7 +234,7 @@ public class MidiSystem {
      * the {@code MidiDeviceReceiver} interface.
      *
      * <p>If the system property
-     * <code>javax.sound.midi.Receiver</code>
+     * <code>j86.javax.sound.midi.Receiver</code>
      * is defined or it is defined in the file &quot;sound.properties&quot;,
      * it is used to identify the device that provides the default receiver.
      * For details, refer to the {@link MidiSystem class description}.
@@ -249,15 +249,15 @@ public class MidiSystem {
      * to the native receiver.
      *
      * <p>If this method returns successfully, the {@link
-     * javax.sound.midi.MidiDevice MidiDevice} the
+     * j86.javax.sound.midi.MidiDevice MidiDevice} the
      * <code>Receiver</code> belongs to is opened implicitly, if it is
      * not already open. It is possible to close an implicitly opened
-     * device by calling {@link javax.sound.midi.Receiver#close close}
+     * device by calling {@link j86.javax.sound.midi.Receiver#close close}
      * on the returned <code>Receiver</code>. All open <code>Receiver</code>
      * instances have to be closed in order to release system resources
      * hold by the <code>MidiDevice</code>. For a
      * detailed description of open/close behaviour see the class
-     * description of {@link javax.sound.midi.MidiDevice MidiDevice}.
+     * description of {@link j86.javax.sound.midi.MidiDevice MidiDevice}.
      *
      *
      * @return the default MIDI receiver
@@ -288,7 +288,7 @@ public class MidiSystem {
      * the {@code MidiDeviceTransmitter} interface.
      *
      * <p>If the system property
-     * <code>javax.sound.midi.Transmitter</code>
+     * <code>j86.javax.sound.midi.Transmitter</code>
      * is defined or it is defined in the file &quot;sound.properties&quot;,
      * it is used to identify the device that provides the default transmitter.
      * For details, refer to the {@link MidiSystem class description}.
@@ -300,16 +300,16 @@ public class MidiSystem {
      * to the native transmitter.
      *
      * <p>If this method returns successfully, the {@link
-     * javax.sound.midi.MidiDevice MidiDevice} the
+     * j86.javax.sound.midi.MidiDevice MidiDevice} the
      * <code>Transmitter</code> belongs to is opened implicitly, if it
      * is not already open. It is possible to close an implicitly
      * opened device by calling {@link
-     * javax.sound.midi.Transmitter#close close} on the returned
+     * j86.javax.sound.midi.Transmitter#close close} on the returned
      * <code>Transmitter</code>. All open <code>Transmitter</code>
      * instances have to be closed in order to release system resources
      * hold by the <code>MidiDevice</code>. For a detailed description
      * of open/close behaviour see the class description of {@link
-     * javax.sound.midi.MidiDevice MidiDevice}.
+     * j86.javax.sound.midi.MidiDevice MidiDevice}.
      *
      * @return the default MIDI transmitter
      * @throws MidiUnavailableException if the default transmitter is not
@@ -336,7 +336,7 @@ public class MidiSystem {
      * Obtains the default synthesizer.
      *
      * <p>If the system property
-     * <code>javax.sound.midi.Synthesizer</code>
+     * <code>j86.javax.sound.midi.Synthesizer</code>
      * is defined or it is defined in the file &quot;sound.properties&quot;,
      * it is used to identify the default synthesizer.
      * For details, refer to the {@link MidiSystem class description}.
@@ -373,7 +373,7 @@ public class MidiSystem {
      * <code>getSequencer(true)</code>.
      *
      * <p>If the system property
-     * <code>javax.sound.midi.Sequencer</code>
+     * <code>j86.javax.sound.midi.Sequencer</code>
      * is defined or it is defined in the file &quot;sound.properties&quot;,
      * it is used to identify the default sequencer.
      * For details, refer to the {@link MidiSystem class description}.
@@ -421,7 +421,7 @@ public class MidiSystem {
      * <code>Receiver</code>.
      *
      * <p>If the system property
-     * <code>javax.sound.midi.Sequencer</code>
+     * <code>j86.javax.sound.midi.Sequencer</code>
      * is defined or it is defined in the file "sound.properties",
      * it is used to identify the default sequencer.
      * For details, refer to the {@link MidiSystem class description}.
@@ -1475,7 +1475,7 @@ public class MidiSystem {
 
     /**
      * Obtains the set of services currently installed on the system
-     * using sun.misc.Service, the SPI mechanism in 1.3.
+     * using j86.sun.misc.Service, the SPI mechanism in 1.3.
      * @return a List of instances of providers for the requested service.
      * If no providers are available, a List of length 0 will be returned.
      */

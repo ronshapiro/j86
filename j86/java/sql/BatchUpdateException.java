@@ -23,13 +23,13 @@
  * questions.
  */
 
-package java.sql;
+package j86.java.sql;
 
-import java.io.IOException;
-import java.io.InvalidObjectException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.util.Arrays;
+import j86.java.io.IOException;
+import j86.java.io.InvalidObjectException;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.ObjectOutputStream;
+import j86.java.util.Arrays;
 
 /**
  * The subclass of {@link SQLException} thrown when an error
@@ -73,7 +73,7 @@ public class BatchUpdateException extends SQLException {
    * <code>updateCounts</code>.
    * The <code>cause</code> is not initialized, and may subsequently be
    * initialized by a call to the
-   * {@link Throwable#initCause(java.lang.Throwable)} method.
+   * {@link Throwable#initCause(j86.java.lang.Throwable)} method.
    * <p>
    * <strong>Note:</strong> There is no validation of {@code updateCounts} for
    * overflow and because of this it is recommended that you use the constructor
@@ -93,8 +93,8 @@ public class BatchUpdateException extends SQLException {
    * prior to the failure for JDBC drivers that stop processing after a command
    * failure
    * @since 1.2
-   * @see #BatchUpdateException(java.lang.String, java.lang.String, int, long[],
-   * java.lang.Throwable)
+   * @see #BatchUpdateException(j86.java.lang.String, java.lang.String, int, long[],
+   * j86.java.lang.Throwable)
    */
   public BatchUpdateException( String reason, String SQLState, int vendorCode,
                                int[] updateCounts ) {
@@ -109,7 +109,7 @@ public class BatchUpdateException extends SQLException {
    * <code>updateCounts</code>.
    * The <code>cause</code> is not initialized, and may subsequently be
    * initialized by a call to the
-   * {@link Throwable#initCause(java.lang.Throwable)} method. The vendor code
+   * {@link Throwable#initCause(j86.java.lang.Throwable)} method. The vendor code
    * is initialized to 0.
    * <p>
    * <strong>Note:</strong> There is no validation of {@code updateCounts} for
@@ -128,8 +128,8 @@ public class BatchUpdateException extends SQLException {
    * prior to the failure for JDBC drivers that stop processing after a command
    * failure
    * @since 1.2
-   * @see #BatchUpdateException(java.lang.String, java.lang.String, int, long[],
-   * java.lang.Throwable)
+   * @see #BatchUpdateException(j86.java.lang.String, java.lang.String, int, long[],
+   * j86.java.lang.Throwable)
    */
   public BatchUpdateException(String reason, String SQLState,
                               int[] updateCounts) {
@@ -141,7 +141,7 @@ public class BatchUpdateException extends SQLException {
    * <code>reason</code> and <code>updateCounts</code>.
    * The <code>cause</code> is not initialized, and may subsequently be
    * initialized by a call to the
-   * {@link Throwable#initCause(java.lang.Throwable)} method.  The
+   * {@link Throwable#initCause(j86.java.lang.Throwable)} method.  The
    * <code>SQLState</code> is initialized to <code>null</code>
    * and the vendor code is initialized to 0.
    * <p>
@@ -160,8 +160,8 @@ public class BatchUpdateException extends SQLException {
    * prior to the failure for JDBC drivers that stop processing after a command
    * failure
    * @since 1.2
-   * @see #BatchUpdateException(java.lang.String, java.lang.String, int, long[],
-   * java.lang.Throwable)
+   * @see #BatchUpdateException(j86.java.lang.String, java.lang.String, int, long[],
+   * j86.java.lang.Throwable)
    */
   public  BatchUpdateException(String reason, int[] updateCounts) {
       this(reason, null, 0, updateCounts);
@@ -171,7 +171,7 @@ public class BatchUpdateException extends SQLException {
    * Constructs a <code>BatchUpdateException</code> object initialized with a given
    * <code>updateCounts</code>.
    * initialized by a call to the
-   * {@link Throwable#initCause(java.lang.Throwable)} method. The  <code>reason</code>
+   * {@link Throwable#initCause(j86.java.lang.Throwable)} method. The  <code>reason</code>
    * and <code>SQLState</code> are initialized to null and the vendor code
    * is initialized to 0.
    * <p>
@@ -189,8 +189,8 @@ public class BatchUpdateException extends SQLException {
    * prior to the failure for JDBC drivers that stop processing after a command
    * failure
    * @since 1.2
-   * @see #BatchUpdateException(java.lang.String, java.lang.String, int, long[],
-   * java.lang.Throwable)
+   * @see #BatchUpdateException(j86.java.lang.String, java.lang.String, int, long[],
+   * j86.java.lang.Throwable)
    */
   public BatchUpdateException(int[] updateCounts) {
       this(null, null, 0, updateCounts);
@@ -202,12 +202,12 @@ public class BatchUpdateException extends SQLException {
    *  are initialized to <code>null</code> and the vendor code is initialized to 0.
    * The <code>cause</code> is not initialized, and may subsequently be
    * initialized by a call to the
-   * {@link Throwable#initCause(java.lang.Throwable)} method.
+   * {@link Throwable#initCause(j86.java.lang.Throwable)} method.
    * <p>
    *
    * @since 1.2
-   * @see #BatchUpdateException(java.lang.String, java.lang.String, int, long[],
-   * java.lang.Throwable)
+   * @see #BatchUpdateException(j86.java.lang.String, java.lang.String, int, long[],
+   * j86.java.lang.Throwable)
    */
   public BatchUpdateException() {
         this(null, null, 0, null);
@@ -226,8 +226,8 @@ public class BatchUpdateException extends SQLException {
    * (which is saved for later retrieval by the <code>getCause()</code> method);
    * may be null indicating the cause is non-existent or unknown.
    * @since 1.6
-   * @see #BatchUpdateException(java.lang.String, java.lang.String, int, long[],
-   * java.lang.Throwable)
+   * @see #BatchUpdateException(j86.java.lang.String, java.lang.String, int, long[],
+   * j86.java.lang.Throwable)
    */
   public BatchUpdateException(Throwable cause) {
       this((cause == null ? null : cause.toString()), null, 0, (int[])null, cause);
@@ -259,8 +259,8 @@ public class BatchUpdateException extends SQLException {
    * (which is saved for later retrieval by the <code>getCause()</code> method); may be null indicating
    * the cause is non-existent or unknown.
    * @since 1.6
-   * @see #BatchUpdateException(java.lang.String, java.lang.String, int, long[],
-   * java.lang.Throwable)
+   * @see #BatchUpdateException(j86.java.lang.String, java.lang.String, int, long[],
+   * j86.java.lang.Throwable)
    */
   public BatchUpdateException(int []updateCounts , Throwable cause) {
       this((cause == null ? null : cause.toString()), null, 0, updateCounts, cause);
@@ -290,8 +290,8 @@ public class BatchUpdateException extends SQLException {
    * may be null indicating
    * the cause is non-existent or unknown.
    * @since 1.6
-   * @see #BatchUpdateException(java.lang.String, java.lang.String, int, long[],
-   * java.lang.Throwable)
+   * @see #BatchUpdateException(j86.java.lang.String, java.lang.String, int, long[],
+   * j86.java.lang.Throwable)
    */
   public BatchUpdateException(String reason, int []updateCounts, Throwable cause) {
       this(reason, null, 0, updateCounts, cause);
@@ -323,8 +323,8 @@ public class BatchUpdateException extends SQLException {
    * may be null indicating
    * the cause is non-existent or unknown.
    * @since 1.6
-   * @see #BatchUpdateException(java.lang.String, java.lang.String, int, long[],
-   * java.lang.Throwable)
+   * @see #BatchUpdateException(j86.java.lang.String, java.lang.String, int, long[],
+   * j86.java.lang.Throwable)
    */
   public BatchUpdateException(String reason, String SQLState,
           int []updateCounts, Throwable cause) {
@@ -358,8 +358,8 @@ public class BatchUpdateException extends SQLException {
    * may be null indicating
    * the cause is non-existent or unknown.
    * @since 1.6
-   * @see #BatchUpdateException(java.lang.String, java.lang.String, int, long[],
-   * java.lang.Throwable)
+   * @see #BatchUpdateException(j86.java.lang.String, java.lang.String, int, long[],
+   * j86.java.lang.Throwable)
    */
   public BatchUpdateException(String reason, String SQLState, int vendorCode,
                                 int []updateCounts,Throwable cause) {

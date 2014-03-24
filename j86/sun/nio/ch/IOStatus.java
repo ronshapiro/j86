@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.nio.ch;
+package j86.j86.j86.sun.nio.ch;
 
-import java.lang.annotation.Native;
+import j86.j86.java.lang.annotation.Native;
 
 // Constants for reporting I/O status
 

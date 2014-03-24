@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.sql;
+package j86.java.sql;
 
 /**
  * <P>An exception that provides information on  database access
@@ -51,7 +51,7 @@ public class SQLWarning extends SQLException {
      *
      * The <code>cause</code> is not initialized, and may subsequently be
      * initialized by a call to the
-     * {@link Throwable#initCause(java.lang.Throwable)} method.
+     * {@link Throwable#initCause(j86.java.lang.Throwable)} method.
      * <p>
      * @param reason a description of the warning
      * @param SQLState an XOPEN or SQL:2003 code identifying the warning
@@ -71,7 +71,7 @@ public class SQLWarning extends SQLException {
      *
      * The <code>cause</code> is not initialized, and may subsequently be
      * initialized by a call to the
-     * {@link Throwable#initCause(java.lang.Throwable)} method. The vendor code
+     * {@link Throwable#initCause(j86.java.lang.Throwable)} method. The vendor code
      * is initialized to 0.
      * <p>
      * @param reason a description of the warning
@@ -91,7 +91,7 @@ public class SQLWarning extends SQLException {
      *
      * The <code>cause</code> is not initialized, and may subsequently be
      * initialized by a call to the
-     * {@link Throwable#initCause(java.lang.Throwable)} method.
+     * {@link Throwable#initCause(j86.java.lang.Throwable)} method.
      * <p>
      * @param reason a description of the warning
      */
@@ -107,7 +107,7 @@ public class SQLWarning extends SQLException {
      *
      * The <code>cause</code> is not initialized, and may subsequently be
      * initialized by a call to the
-     * {@link Throwable#initCause(java.lang.Throwable)} method.
+     * {@link Throwable#initCause(j86.java.lang.Throwable)} method.
      *
      */
     public SQLWarning() {

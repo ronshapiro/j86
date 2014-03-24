@@ -23,11 +23,11 @@
  * questions.
  */
 
-package com.sun.java.util.jar.pack;
+package j86.com.sun.j86.j86.java.util.jar.pack;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.io.OutputStream;
 
 /**
  * Interface for encoding and decoding int arrays using bytewise codes.

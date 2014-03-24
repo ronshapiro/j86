@@ -23,11 +23,11 @@
  * questions.
  */
 
-package com.sun.crypto.provider;
+package j86.com.sun.crypto.provider;
 
-import java.io.*;
-import java.security.*;
-import javax.crypto.*;
+import j86.java.io.*;
+import j86.java.security.*;
+import j86.javax.crypto.*;
 
 final class SealedObjectForKeyProtector extends SealedObject {
 

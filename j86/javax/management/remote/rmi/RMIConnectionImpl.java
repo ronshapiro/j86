@@ -23,42 +23,42 @@
  * questions.
  */
 
-package javax.management.remote.rmi;
+package j86.j86.j86.javax.management.remote.rmi;
 
-import java.io.IOException;
-import java.rmi.MarshalledObject;
-import java.rmi.UnmarshalException;
-import java.rmi.server.Unreferenced;
-import java.security.AccessControlContext;
-import java.security.AccessController;
-import java.security.Permission;
-import java.security.PermissionCollection;
-import java.security.Permissions;
-import java.security.PrivilegedAction;
-import java.security.PrivilegedActionException;
-import java.security.PrivilegedExceptionAction;
-import java.security.ProtectionDomain;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Map;
-import java.util.Set;
+import j86.java.io.IOException;
+import j86.java.rmi.MarshalledObject;
+import j86.java.rmi.UnmarshalException;
+import j86.j86.java.rmi.server.Unreferenced;
+import j86.java.security.AccessControlContext;
+import j86.java.security.AccessController;
+import j86.java.security.Permission;
+import j86.java.security.PermissionCollection;
+import j86.java.security.Permissions;
+import j86.java.security.PrivilegedAction;
+import j86.java.security.PrivilegedActionException;
+import j86.java.security.PrivilegedExceptionAction;
+import j86.java.security.ProtectionDomain;
+import j86.java.util.Arrays;
+import j86.java.util.Collections;
+import j86.java.util.Map;
+import j86.java.util.Set;
 
-import javax.management.*;
-import javax.management.remote.JMXServerErrorException;
-import javax.management.remote.NotificationResult;
-import javax.management.remote.TargetedNotification;
-import javax.security.auth.Subject;
-import sun.reflect.misc.ReflectUtil;
+import j86.javax.management.*;
+import j86.j86.javax.management.remote.JMXServerErrorException;
+import j86.j86.javax.management.remote.NotificationResult;
+import j86.j86.javax.management.remote.TargetedNotification;
+import j86.javax.security.auth.Subject;
+import j86.j86.sun.reflect.misc.ReflectUtil;
 
-import static com.sun.jmx.mbeanserver.Util.cast;
-import com.sun.jmx.remote.internal.ServerCommunicatorAdmin;
-import com.sun.jmx.remote.internal.ServerNotifForwarder;
-import com.sun.jmx.remote.security.JMXSubjectDomainCombiner;
-import com.sun.jmx.remote.security.SubjectDelegator;
-import com.sun.jmx.remote.util.ClassLoaderWithRepository;
-import com.sun.jmx.remote.util.ClassLogger;
-import com.sun.jmx.remote.util.EnvHelp;
-import com.sun.jmx.remote.util.OrderClassLoaders;
+import static j86.com.sun.jmx.mbeanserver.Util.cast;
+import j86.com.sun.jmx.remote.internal.ServerCommunicatorAdmin;
+import j86.com.sun.jmx.remote.internal.ServerNotifForwarder;
+import j86.com.sun.jmx.remote.security.JMXSubjectDomainCombiner;
+import j86.com.sun.jmx.remote.security.SubjectDelegator;
+import j86.com.sun.jmx.remote.util.ClassLoaderWithRepository;
+import j86.com.sun.jmx.remote.util.ClassLogger;
+import j86.com.sun.jmx.remote.util.EnvHelp;
+import j86.com.sun.jmx.remote.util.OrderClassLoaders;
 
 /**
  * <p>Implementation of the {@link RMIConnection} interface.  User
@@ -1767,7 +1767,7 @@ public class RMIConnectionImpl implements RMIConnection, Unreferenced {
     }
 
     private static final ClassLogger logger =
-        new ClassLogger("javax.management.remote.rmi", "RMIConnectionImpl");
+        new ClassLogger("j86.j86.j86.javax.management.remote.rmi", "RMIConnectionImpl");
 
     private static final class CombinedClassLoader extends ClassLoader {
 

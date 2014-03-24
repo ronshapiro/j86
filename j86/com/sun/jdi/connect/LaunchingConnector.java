@@ -23,11 +23,11 @@
  * questions.
  */
 
-package com.sun.jdi.connect;
+package j86.j86.com.sun.jdi.connect;
 
-import com.sun.jdi.VirtualMachine;
-import java.util.Map;
-import java.io.IOException;
+import j86.com.sun.jdi.VirtualMachine;
+import j86.java.util.Map;
+import j86.java.io.IOException;
 
 /**
  * A connector which can launch a target VM before connecting to it.
@@ -48,20 +48,20 @@ public interface LaunchingConnector extends Connector {
      * Argument map values can be changed, but map entries should not be
      * added or deleted.
      * <p>A target VM launched by a launching connector is not
-     * guaranteed to be stable until after the {@link com.sun.jdi.event.VMStartEvent} has been
+     * guaranteed to be stable until after the {@link j86.j86.com.sun.jdi.event.VMStartEvent} has been
      * received.
      * <p>
      * <b>Important note:</b> If a target VM is launched through this
      * funcctions, its output and error streams must be read as it
      * executes. These streams are available through the
-     * {@link java.lang.Process Process} object returned by
-     * {@link com.sun.jdi.VirtualMachine#process}. If the streams are not periodically
+     * {@link j86.java.lang.Process Process} object returned by
+     * {@link j86.com.sun.jdi.VirtualMachine#process}. If the streams are not periodically
      * read, the target VM will stop executing when the buffers for these
      * streams are filled.
      *
      * @param arguments the argument map to be used in launching the VM.
      * @return the {@link VirtualMachine} mirror of the target VM.
-     * @throws java.io.IOException when unable to launch.
+     * @throws j86.java.io.IOException when unable to launch.
      * Specific exceptions are dependent on the Connector implementation
      * in use.
      * @throws IllegalConnectorArgumentsException when one of the

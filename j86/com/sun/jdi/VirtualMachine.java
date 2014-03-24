@@ -23,13 +23,13 @@
  * questions.
  */
 
-package com.sun.jdi;
+package j86.com.sun.jdi;
 
-import com.sun.jdi.event.EventQueue;
-import com.sun.jdi.request.EventRequestManager;
+import j86.j86.com.sun.jdi.event.EventQueue;
+import j86.j86.com.sun.jdi.request.EventRequestManager;
 
-import java.util.List;
-import java.util.Map;
+import j86.java.util.List;
+import j86.java.util.Map;
 
 /**
  * A virtual machine targeted for debugging.
@@ -43,27 +43,27 @@ import java.util.Map;
  * are supported directly by this interface.
  * <P>
  * Instances of this interface are created by instances of
- * {@link com.sun.jdi.connect.Connector}. For example,
- * an {@link com.sun.jdi.connect.AttachingConnector AttachingConnector}
+ * {@link j86.j86.com.sun.jdi.connect.Connector}. For example,
+ * an {@link j86.j86.com.sun.jdi.connect.AttachingConnector AttachingConnector}
  * attaches to a target VM and returns its virtual machine mirror.
  * A Connector will typically create a VirtualMachine by invoking
  * the VirtualMachineManager's {@link
- * com.sun.jdi.VirtualMachineManager#createVirtualMachine(Connection)}
+ * j86.com.sun.jdi.VirtualMachineManager#createVirtualMachine(Connection)}
  * createVirtualMachine(Connection) method.
  * <p>
  * Note that a target VM launched by a launching connector is not
- * guaranteed to be stable until after the {@link com.sun.jdi.event.VMStartEvent} has been
+ * guaranteed to be stable until after the {@link j86.j86.com.sun.jdi.event.VMStartEvent} has been
  * received.
  * <p>
  * Any method on <code>VirtualMachine</code> which
  * takes <code>VirtualMachine</code> as an parameter may throw
- * {@link com.sun.jdi.VMDisconnectedException} if the target VM is
- * disconnected and the {@link com.sun.jdi.event.VMDisconnectEvent} has been or is
- * available to be read from the {@link com.sun.jdi.event.EventQueue}.
+ * {@link j86.com.sun.jdi.VMDisconnectedException} if the target VM is
+ * disconnected and the {@link j86.j86.com.sun.jdi.event.VMDisconnectEvent} has been or is
+ * available to be read from the {@link j86.j86.com.sun.jdi.event.EventQueue}.
  * <p>
  * Any method on <code>VirtualMachine</code> which
  * takes <code>VirtualMachine</code> as an parameter may throw
- * {@link com.sun.jdi.VMOutOfMemoryException} if the target VM has run out of memory.
+ * {@link j86.com.sun.jdi.VMOutOfMemoryException} if the target VM has run out of memory.
  *
  * @author Robert Field
  * @author Gordon Hirsch
@@ -76,7 +76,7 @@ public interface VirtualMachine extends Mirror {
     /**
      * Returns the loaded reference types that
      * match a given name. The name must be fully qualified
-     * (for example, java.lang.String). The returned list
+     * (for example, j86.java.lang.String). The returned list
      * will contain a {@link ReferenceType} for each class
      * or interface found with the given name. The search
      * is confined to loaded classes only; no attempt is made
@@ -166,7 +166,7 @@ public interface VirtualMachine extends Mirror {
      * The bytes represent the new class definition and
      * are in Java Virtual Machine class file format.
      *
-     * @throws java.lang.UnsupportedOperationException if
+     * @throws j86.java.lang.UnsupportedOperationException if
      * the target virtual machine does not support this
      * operation.
      * <UL>
@@ -187,21 +187,21 @@ public interface VirtualMachine extends Mirror {
      *   </UL>
      * </UL>
      *
-     * @throws java.lang.NoClassDefFoundError if the bytes
+     * @throws j86.java.lang.NoClassDefFoundError if the bytes
      * don't correspond to the reference type (the names
      * don't match).
      *
-     * @throws java.lang.VerifyError if a "verifier" detects
+     * @throws j86.java.lang.VerifyError if a "verifier" detects
      * that a class, though well formed, contains an internal
      * inconsistency or security problem.
      *
-     * @throws java.lang.ClassFormatError if the bytes
+     * @throws j86.java.lang.ClassFormatError if the bytes
      * do not represent a valid class.
      *
-     * @throws java.lang.ClassCircularityError if a
+     * @throws j86.java.lang.ClassCircularityError if a
      * circularity has been detected while initializing a class.
      *
-     * @throws java.lang.UnsupportedClassVersionError if the
+     * @throws j86.java.lang.UnsupportedClassVersionError if the
      * major and minor version numbers in bytes
      * are not supported by the VM.
      *
@@ -222,11 +222,11 @@ public interface VirtualMachine extends Mirror {
      * running thread in the target VM, a {@link ThreadReference}
      * that mirrors it is placed in the list.
      * The returned list contains threads created through
-     * java.lang.Thread, all native threads attached to
+     * j86.java.lang.Thread, all native threads attached to
      * the target VM through JNI, and system threads created
      * by the target VM. Thread objects that have
      * not yet been started
-     * (see {@link java.lang.Thread#start Thread.start()})
+     * (see {@link j86.java.lang.Thread#start Thread.start()})
      * and thread objects that have
      * completed their execution are not included in the returned list.
      *
@@ -239,7 +239,7 @@ public interface VirtualMachine extends Mirror {
      * Suspends the execution of the application running in this
      * virtual machine. All threads currently running will be suspended.
      * <p>
-     * Unlike {@link java.lang.Thread#suspend Thread.suspend()},
+     * Unlike {@link j86.java.lang.Thread#suspend Thread.suspend()},
      * suspends of both the virtual machine and individual threads are
      * counted. Before a thread will run again, it must be resumed
      * (through {@link #resume} or {@link ThreadReference#resume})
@@ -404,13 +404,13 @@ public interface VirtualMachine extends Mirror {
     VoidValue mirrorOfVoid();
 
     /**
-     * Returns the {@link java.lang.Process} object for this
+     * Returns the {@link j86.java.lang.Process} object for this
      * virtual machine if launched
-     * by a {@link com.sun.jdi.connect.LaunchingConnector}
+     * by a {@link j86.j86.com.sun.jdi.connect.LaunchingConnector}
      *
-     * @return the {@link java.lang.Process} object for this virtual
+     * @return the {@link j86.java.lang.Process} object for this virtual
      * machine, or null if it was not launched by a
-     * {@link com.sun.jdi.connect.LaunchingConnector}.
+     * {@link j86.j86.com.sun.jdi.connect.LaunchingConnector}.
      * @throws VMCannotBeModifiedException if the VirtualMachine is read-only
      * -see {@link VirtualMachine#canBeModified()}.
      */
@@ -526,7 +526,7 @@ public interface VirtualMachine extends Mirror {
     /**
      * Determines if the target VM supports filtering
      * events by specific instance object.  For example,
-     * see {@link com.sun.jdi.request.BreakpointRequest#addInstanceFilter}.
+     * see {@link j86.j86.com.sun.jdi.request.BreakpointRequest#addInstanceFilter}.
      *
      * @return <code>true</code> if the feature is supported,
      * <code>false</code> otherwise.
@@ -595,8 +595,8 @@ public interface VirtualMachine extends Mirror {
 
     /**
      * Determines if the target VM supports the creation of
-     * {@link com.sun.jdi.request.VMDeathRequest}s.
-     * @see com.sun.jdi.request.EventRequestManager#createVMDeathRequest
+     * {@link j86.j86.com.sun.jdi.request.VMDeathRequest}s.
+     * @see j86.j86.com.sun.jdi.request.EventRequestManager#createVMDeathRequest
      *
      * @return <code>true</code> if the feature is supported,
      * <code>false</code> otherwise.
@@ -608,8 +608,8 @@ public interface VirtualMachine extends Mirror {
     /**
      * Determines if the target VM supports the inclusion of return values
      * in
-     * {@link com.sun.jdi.event.MethodExitEvent}s.
-     * @see com.sun.jdi.request.EventRequestManager#createMethodExitRequest
+     * {@link j86.j86.com.sun.jdi.event.MethodExitEvent}s.
+     * @see j86.j86.com.sun.jdi.request.EventRequestManager#createMethodExitRequest
      *
      * @return <code>true</code> if the feature is supported,
      * <code>false</code> otherwise.
@@ -638,7 +638,7 @@ public interface VirtualMachine extends Mirror {
      * Determines if the target VM supports the filtering of
      * class prepare events by source name.
      *
-     * see {@link com.sun.jdi.request.ClassPrepareRequest#addSourceNameFilter}.
+     * see {@link j86.j86.com.sun.jdi.request.ClassPrepareRequest#addSourceNameFilter}.
      * @return <code>true</code> if the feature is supported,
      * <code>false</code> otherwise.
      *
@@ -674,14 +674,14 @@ public interface VirtualMachine extends Mirror {
 
     /**
      * Determines if the target VM supports the creation of
-     * {@link com.sun.jdi.request.MonitorContendedEnterRequest}s.
-     * {@link com.sun.jdi.request.MonitorContendedEnteredRequest}s.
-     * {@link com.sun.jdi.request.MonitorWaitRequest}s.
-     * {@link com.sun.jdi.request.MonitorWaitedRequest}s.
-     * @see com.sun.jdi.request.EventRequestManager#createMonitorContendedEnterRequest
-     * @see com.sun.jdi.request.EventRequestManager#createMonitorContendedEnteredRequest
-     * @see com.sun.jdi.request.EventRequestManager#createMonitorWaitRequest
-     * @see com.sun.jdi.request.EventRequestManager#createMonitorWaitedRequest
+     * {@link j86.j86.com.sun.jdi.request.MonitorContendedEnterRequest}s.
+     * {@link j86.j86.com.sun.jdi.request.MonitorContendedEnteredRequest}s.
+     * {@link j86.j86.com.sun.jdi.request.MonitorWaitRequest}s.
+     * {@link j86.j86.com.sun.jdi.request.MonitorWaitedRequest}s.
+     * @see j86.j86.com.sun.jdi.request.EventRequestManager#createMonitorContendedEnterRequest
+     * @see j86.j86.com.sun.jdi.request.EventRequestManager#createMonitorContendedEnteredRequest
+     * @see j86.j86.com.sun.jdi.request.EventRequestManager#createMonitorWaitRequest
+     * @see j86.j86.com.sun.jdi.request.EventRequestManager#createMonitorWaitedRequest
      *
      * @return <code>true</code> if the feature is supported,
      * <code>false</code> otherwise.
@@ -694,7 +694,7 @@ public interface VirtualMachine extends Mirror {
     /**
      * Determines if the target VM supports getting which
      * frame has acquired a monitor.
-     * @see com.sun.jdi.ThreadReference#ownedMonitorsAndFrames
+     * @see j86.com.sun.jdi.ThreadReference#ownedMonitorsAndFrames
      *
      * @return <code>true</code> if the feature is supported,
      * <code>false</code> otherwise.
@@ -746,7 +746,7 @@ public interface VirtualMachine extends Mirror {
      * @param stratum the stratum to set as VM default,
      * or null to use per-class defaults.
      *
-     * @throws java.lang.UnsupportedOperationException if the
+     * @throws j86.java.lang.UnsupportedOperationException if the
      * target virtual machine does not support this operation.
      *
      * @since 1.4
@@ -790,7 +790,7 @@ public interface VirtualMachine extends Mirror {
      *         If the 'refTypes' list is empty, a zero-length array is returned.
      *         If a ReferenceType in refTypes has been garbage collected, zero
      *         is returned for its instance count.
-     * @throws java.lang.UnsupportedOperationException if
+     * @throws j86.java.lang.UnsupportedOperationException if
      * the target virtual machine does not support this
      * operation - see
      * {@link VirtualMachine#canGetInstanceInfo() canGetInstanceInfo()}
@@ -849,7 +849,7 @@ public interface VirtualMachine extends Mirror {
     int TRACE_ALL         = 0x00ffffff;
 
     /**
-     * Traces the activities performed by the com.sun.jdi implementation.
+     * Traces the activities performed by the j86.com.sun.jdi implementation.
      * All trace information is output to System.err. The given trace
      * flags are used to limit the output to only the information
      * desired. The given flags are in effect and the corresponding

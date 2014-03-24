@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.rmi.server;
+package j86.j86.java.rmi.server;
 
 /**
  * An <code>Operation</code> contains a description of a Java method.

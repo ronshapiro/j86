@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.lang;
+package j86.java.lang;
 
 /**
  * Thrown to indicate that a thread has attempted to wait on an
@@ -31,11 +31,11 @@ package java.lang;
  * monitor without owning the specified monitor.
  *
  * @author  unascribed
- * @see     java.lang.Object#notify()
- * @see     java.lang.Object#notifyAll()
- * @see     java.lang.Object#wait()
- * @see     java.lang.Object#wait(long)
- * @see     java.lang.Object#wait(long, int)
+ * @see     j86.java.lang.Object#notify()
+ * @see     j86.java.lang.Object#notifyAll()
+ * @see     j86.java.lang.Object#wait()
+ * @see     j86.java.lang.Object#wait(long)
+ * @see     j86.java.lang.Object#wait(long, int)
  * @since   JDK1.0
  */
 public

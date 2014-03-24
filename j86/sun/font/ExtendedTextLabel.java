@@ -27,15 +27,15 @@
  * (C) Copyright IBM Corp. 1998-2003- All Rights Reserved.
  */
 
-package sun.font;
+package j86.sun.font;
 
-import java.awt.Font;
+import j86.java.awt.Font;
 
-import java.awt.font.GlyphJustificationInfo;
-import java.awt.font.LineMetrics;
+import j86.j86.java.awt.font.GlyphJustificationInfo;
+import j86.j86.java.awt.font.LineMetrics;
 
-import java.awt.geom.Point2D;
-import java.awt.geom.Rectangle2D;
+import j86.j86.java.awt.geom.Point2D;
+import j86.j86.java.awt.geom.Rectangle2D;
 
 /**
  * An extension of TextLabel that maintains information

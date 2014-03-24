@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.security.util;
+package j86.sun.security.util;
 
-import java.security.Permission;
+import j86.java.security.Permission;
 
 /**
  * A factory object that creates Permission objects.

@@ -30,10 +30,10 @@
  *
  */
 
-package sun.rmi.rmic;
+package j86.sun.rmi.rmic;
 
-import java.io.File;
-import sun.tools.java.Identifier;
+import j86.java.io.File;
+import j86.sun.tools.java.Identifier;
 
 /**
  * Util provides static utility methods used by other rmic classes.
@@ -45,7 +45,7 @@ import sun.tools.java.Identifier;
  * @author Bryan Atsatt
  */
 
-public class Util implements sun.rmi.rmic.Constants {
+public class Util implements j86.sun.rmi.rmic.Constants {
 
     /**
      * Return the directory that should be used for output for a given

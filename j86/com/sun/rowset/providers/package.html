@@ -32,7 +32,7 @@ Please contact Oracle, 500 Oracle Parkway, Redwood Shores, CA 94065 USA
 or visit www.oracle.com if you need additional information or have any
 questions.
 -->
-  <title>javax.sql.rowset.providers Package</title>
+  <title>j86.j86.javax.sql.rowset.providers Package</title>
 </head>
   <body bgcolor="#ffffff">
   Repository for the <tt>RowSet</tt> reference implementations of the 
@@ -46,14 +46,14 @@ the default <tt>SyncProvider</tt> implementations and are accessible via the
 <h3>1.0 <code>SyncProvider</code> Reference Implementations</h3>
   The main job of a <tt>SyncProvider</tt> implementation is to manage
 the reader and writer mechanisms.
- The <tt>SyncProvider</tt> SPI, as specified in the <tt>javax.sql.rowset.spi</tt>
-package, provides a pluggable mechanism by which <tt>javax.sql.RowSetReader</tt>
-and <tt>javax.sql.RowSetWriter</tt> implementations can be supplied to a disconnected
+ The <tt>SyncProvider</tt> SPI, as specified in the <tt>j86.j86.j86.javax.sql.rowset.spi</tt>
+package, provides a pluggable mechanism by which <tt>j86.javax.sql.RowSetReader</tt>
+and <tt>j86.javax.sql.RowSetWriter</tt> implementations can be supplied to a disconnected
 <tt>RowSet</tt> object.
 <P>
- A reader, a <code>javax.sql.RowSetReader</code>
+ A reader, a <code>j86.javax.sql.RowSetReader</code>
 object, does the work necessary to populate a <code>RowSet</code> object with data.
-A writer, a <code>javax.sql.RowSetWriter</code> object, does the work necessary for
+A writer, a <code>j86.javax.sql.RowSetWriter</code> object, does the work necessary for
 synchronizing a <code>RowSet</code> object's data with the data in the originating
 source of data. Put another way, a writer writes a <code>RowSet</code>
 object's data back to the data source. 
@@ -100,8 +100,8 @@ implementations of the <code>SyncProvider</code> class:
    
 <UL>
 <LI>
-<b><tt>RIOptimisticProvider </tt></b>- provides the <tt>javax.sql.RowSetReader</tt>
- and <tt>javax.sql.RowSetWriter</tt> interface implementations and provides
+<b><tt>RIOptimisticProvider </tt></b>- provides the <tt>j86.javax.sql.RowSetReader</tt>
+ and <tt>j86.javax.sql.RowSetWriter</tt> interface implementations and provides
 an optimistic concurrency model for synchronization. This model assumes that there
 will be few conflicts and therefore uses a relatively low grade of synchronization.
 If no other provider is available, this is the default provider that the 
@@ -109,8 +109,8 @@ If no other provider is available, this is the default provider that the
     <br>
 <LI>
     <b><tt>RIXMLProvider </tt></b>- provides the <tt>XmlReader</tt> (an extension
-of  the <tt>javax.sql.RowSetReader</tt> interface) and the <tt>XmlWriter</tt>
-(an extension of the <tt>javax.sql.RowSetWriter</tt> interface) to enable
+of  the <tt>j86.javax.sql.RowSetReader</tt> interface) and the <tt>XmlWriter</tt>
+(an extension of the <tt>j86.javax.sql.RowSetWriter</tt> interface) to enable
   <tt>WebRowSet</tt> objects to write their state to a
 well formed XML document according to the <tt>WebRowSet</tt> XML schema
 definition.<br>

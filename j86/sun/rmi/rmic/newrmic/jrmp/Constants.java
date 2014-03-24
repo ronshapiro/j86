@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.rmi.rmic.newrmic.jrmp;
+package j86.j86.j86.sun.rmi.rmic.newrmic.jrmp;
 
 /**
  * Constants specific to the JRMP rmic generator.
@@ -41,17 +41,17 @@ final class Constants {
     /*
      * fully-qualified names of types used by rmic
      */
-    static final String REMOTE_OBJECT = "java.rmi.server.RemoteObject";
-    static final String REMOTE_STUB = "java.rmi.server.RemoteStub";
-    static final String REMOTE_REF = "java.rmi.server.RemoteRef";
-    static final String OPERATION = "java.rmi.server.Operation";
-    static final String SKELETON = "java.rmi.server.Skeleton";
+    static final String REMOTE_OBJECT = "j86.j86.java.rmi.server.RemoteObject";
+    static final String REMOTE_STUB = "j86.j86.java.rmi.server.RemoteStub";
+    static final String REMOTE_REF = "j86.j86.java.rmi.server.RemoteRef";
+    static final String OPERATION = "j86.j86.java.rmi.server.Operation";
+    static final String SKELETON = "j86.j86.java.rmi.server.Skeleton";
     static final String SKELETON_MISMATCH_EXCEPTION =
-        "java.rmi.server.SkeletonMismatchException";
-    static final String REMOTE_CALL = "java.rmi.server.RemoteCall";
-    static final String MARSHAL_EXCEPTION = "java.rmi.MarshalException";
-    static final String UNMARSHAL_EXCEPTION = "java.rmi.UnmarshalException";
-    static final String UNEXPECTED_EXCEPTION = "java.rmi.UnexpectedException";
+        "j86.j86.java.rmi.server.SkeletonMismatchException";
+    static final String REMOTE_CALL = "j86.j86.java.rmi.server.RemoteCall";
+    static final String MARSHAL_EXCEPTION = "j86.java.rmi.MarshalException";
+    static final String UNMARSHAL_EXCEPTION = "j86.java.rmi.UnmarshalException";
+    static final String UNEXPECTED_EXCEPTION = "j86.java.rmi.UnexpectedException";
 
     /*
      * stub protocol versions

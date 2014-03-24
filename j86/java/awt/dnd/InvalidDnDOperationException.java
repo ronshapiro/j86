@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.awt.dnd;
+package j86.j86.java.awt.dnd;
 
 /**
- * This exception is thrown by various methods in the java.awt.dnd package.
+ * This exception is thrown by various methods in the j86.j86.java.awt.dnd package.
  * It is usually thrown to indicate that the target in question is unable
  * to undertake the requested operation that the present time, since the
  * underlying DnD system is not in the appropriate state.

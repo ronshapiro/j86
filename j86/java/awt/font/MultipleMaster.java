@@ -22,9 +22,9 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.awt.font;
+package j86.j86.java.awt.font;
 
-import java.awt.Font;
+import j86.java.awt.Font;
 
 /**
  * The <code>MultipleMaster</code> interface represents Type 1

@@ -23,12 +23,12 @@
  * questions.
  */
 
-package com.sun.jmx.snmp.daemon ;
+package j86.j86.j86.com.sun.jmx.snmp.daemon ;
 
 // JMX imports
 //
-import com.sun.jmx.snmp.SnmpDefinitions;
-import com.sun.jmx.snmp.SnmpVarBindList;
+import j86.com.sun.jmx.snmp.SnmpDefinitions;
+import j86.com.sun.jmx.snmp.SnmpVarBindList;
 
 /**
  * Provides the callback methods that are required to be implemented by the application

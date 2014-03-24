@@ -23,15 +23,15 @@
  * questions.
  */
 
-package java.security.cert;
+package j86.j86.java.security.cert;
 
-import java.io.InputStream;
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.List;
-import java.security.Provider;
-import java.security.NoSuchAlgorithmException;
-import java.security.NoSuchProviderException;
+import j86.java.io.InputStream;
+import j86.java.util.Collection;
+import j86.java.util.Iterator;
+import j86.java.util.List;
+import j86.java.security.Provider;
+import j86.java.security.NoSuchAlgorithmException;
+import j86.java.security.NoSuchProviderException;
 
 /**
  * This class defines the <i>Service Provider Interface</i> (<b>SPI</b>)
@@ -45,8 +45,8 @@ import java.security.NoSuchProviderException;
  * their encodings.
  *
  * <p>A certificate factory for X.509 must return certificates that are an
- * instance of {@code java.security.cert.X509Certificate}, and CRLs
- * that are an instance of {@code java.security.cert.X509CRL}.
+ * instance of {@code j86.j86.java.security.cert.X509Certificate}, and CRLs
+ * that are an instance of {@code j86.j86.java.security.cert.X509CRL}.
  *
  * @author Hemma Prafullchandra
  * @author Jan Luehe
@@ -84,8 +84,8 @@ public abstract class CertificateFactorySpi {
      * the end by -----END CERTIFICATE-----.
      *
      * <p>Note that if the given input stream does not support
-     * {@link java.io.InputStream#mark(int) mark} and
-     * {@link java.io.InputStream#reset() reset}, this method will
+     * {@link j86.java.io.InputStream#mark(int) mark} and
+     * {@link j86.java.io.InputStream#reset() reset}, this method will
      * consume the entire input stream. Otherwise, each call to this
      * method consumes one certificate and the read position of the input stream
      * is positioned to the next available byte after the inherent
@@ -219,7 +219,7 @@ public abstract class CertificateFactorySpi {
      * <p>In the case of a certificate factory for X.509 certificates,
      * {@code inStream} may contain a single DER-encoded certificate
      * in the formats described for
-     * {@link CertificateFactory#generateCertificate(java.io.InputStream)
+     * {@link CertificateFactory#generateCertificate(j86.java.io.InputStream)
      * generateCertificate}.
      * In addition, {@code inStream} may contain a PKCS#7 certificate
      * chain. This is a PKCS#7 <i>SignedData</i> object, with the only
@@ -229,14 +229,14 @@ public abstract class CertificateFactorySpi {
      * an empty collection is returned.
      *
      * <p>Note that if the given input stream does not support
-     * {@link java.io.InputStream#mark(int) mark} and
-     * {@link java.io.InputStream#reset() reset}, this method will
+     * {@link j86.java.io.InputStream#mark(int) mark} and
+     * {@link j86.java.io.InputStream#reset() reset}, this method will
      * consume the entire input stream.
      *
      * @param inStream the input stream with the certificates.
      *
      * @return a (possibly empty) collection view of
-     * java.security.cert.Certificate objects
+     * j86.j86.java.security.cert.Certificate objects
      * initialized with the data from the input stream.
      *
      * @exception CertificateException on parsing errors.
@@ -257,8 +257,8 @@ public abstract class CertificateFactorySpi {
      * can be typecast to the {@code X509CRL} class.
      *
      * <p>Note that if the given input stream does not support
-     * {@link java.io.InputStream#mark(int) mark} and
-     * {@link java.io.InputStream#reset() reset}, this method will
+     * {@link j86.java.io.InputStream#mark(int) mark} and
+     * {@link j86.java.io.InputStream#reset() reset}, this method will
      * consume the entire input stream. Otherwise, each call to this
      * method consumes one CRL and the read position of the input stream
      * is positioned to the next available byte after the inherent
@@ -298,14 +298,14 @@ public abstract class CertificateFactorySpi {
      * an empty collection is returned.
      *
      * <p>Note that if the given input stream does not support
-     * {@link java.io.InputStream#mark(int) mark} and
-     * {@link java.io.InputStream#reset() reset}, this method will
+     * {@link j86.java.io.InputStream#mark(int) mark} and
+     * {@link j86.java.io.InputStream#reset() reset}, this method will
      * consume the entire input stream.
      *
      * @param inStream the input stream with the CRLs.
      *
      * @return a (possibly empty) collection view of
-     * java.security.cert.CRL objects initialized with the data from the input
+     * j86.j86.java.security.cert.CRL objects initialized with the data from the input
      * stream.
      *
      * @exception CRLException on parsing errors.

@@ -33,16 +33,16 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package java.util.concurrent;
-import java.util.*;
-import java.util.concurrent.atomic.AtomicInteger;
-import java.security.AccessControlContext;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.security.PrivilegedExceptionAction;
-import java.security.PrivilegedActionException;
-import java.security.AccessControlException;
-import sun.security.util.SecurityConstants;
+package j86.j86.java.util.concurrent;
+import j86.java.util.*;
+import j86.j86.j86.java.util.concurrent.atomic.AtomicInteger;
+import j86.java.security.AccessControlContext;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.security.PrivilegedExceptionAction;
+import j86.java.security.PrivilegedActionException;
+import j86.java.security.AccessControlException;
+import j86.sun.security.util.SecurityConstants;
 
 /**
  * Factory and utility methods for {@link Executor}, {@link
@@ -337,7 +337,7 @@ public class Executors {
      * Returns a default thread factory used to create new threads.
      * This factory creates all new threads used by an Executor in the
      * same {@link ThreadGroup}. If there is a {@link
-     * java.lang.SecurityManager}, it uses the group of {@link
+     * j86.java.lang.SecurityManager}, it uses the group of {@link
      * System#getSecurityManager}, else the group of the thread
      * invoking this {@code defaultThreadFactory} method. Each new
      * thread is created as a non-daemon thread with priority set to
@@ -370,8 +370,8 @@ public class Executors {
      * <p>Note that while tasks running within such threads will have
      * the same access control and class loader settings as the
      * current thread, they need not have the same {@link
-     * java.lang.ThreadLocal} or {@link
-     * java.lang.InheritableThreadLocal} values. If necessary,
+     * j86.java.lang.ThreadLocal} or {@link
+     * j86.java.lang.InheritableThreadLocal} values. If necessary,
      * particular values of thread locals can be set or reset before
      * any task runs in {@link ThreadPoolExecutor} subclasses using
      * {@link ThreadPoolExecutor#beforeExecute(Thread, Runnable)}.

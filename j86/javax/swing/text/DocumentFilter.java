@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text;
+package j86.j86.javax.swing.text;
 
 /**
  * <code>DocumentFilter</code>, as the name implies, is a filter for the
@@ -53,9 +53,9 @@ package javax.swing.text;
  * If a method doesn't follow these defaults, this must be explicitly stated
  * in the method documentation.
  *
- * @see javax.swing.text.Document
- * @see javax.swing.text.AbstractDocument
- * @see javax.swing.text.DefaultStyledDocument
+ * @see j86.j86.javax.swing.text.Document
+ * @see j86.j86.javax.swing.text.AbstractDocument
+ * @see j86.j86.javax.swing.text.DefaultStyledDocument
  *
  * @since 1.4
  */

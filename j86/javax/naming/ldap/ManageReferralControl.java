@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.naming.ldap;
+package j86.j86.javax.naming.ldap;
 
 /**
  * Requests that referral and other special LDAP objects be manipulated

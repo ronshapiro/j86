@@ -23,15 +23,15 @@
  * questions.
  */
 
-package javax.security.auth.kerberos;
+package j86.j86.javax.security.auth.kerberos;
 
-import java.io.File;
-import java.security.AccessControlException;
-import java.util.Objects;
-import sun.security.krb5.EncryptionKey;
-import sun.security.krb5.KerberosSecrets;
-import sun.security.krb5.PrincipalName;
-import sun.security.krb5.RealmException;
+import j86.java.io.File;
+import j86.java.security.AccessControlException;
+import j86.java.util.Objects;
+import j86.sun.security.krb5.EncryptionKey;
+import j86.sun.security.krb5.KerberosSecrets;
+import j86.sun.security.krb5.PrincipalName;
+import j86.sun.security.krb5.RealmException;
 
 /**
  * This class encapsulates a keytab file.
@@ -39,30 +39,30 @@ import sun.security.krb5.RealmException;
  * A Kerberos JAAS login module that obtains long term secret keys from a
  * keytab file should use this class. The login module will store
  * an instance of this class in the private credential set of a
- * {@link javax.security.auth.Subject Subject} during the commit phase of the
+ * {@link j86.javax.security.auth.Subject Subject} during the commit phase of the
  * authentication process.
  * <p>
  * If a {@code KeyTab} object is obtained from {@link #getUnboundInstance()}
- * or {@link #getUnboundInstance(java.io.File)}, it is unbound and thus can be
+ * or {@link #getUnboundInstance(j86.java.io.File)}, it is unbound and thus can be
  * used by any service principal. Otherwise, if it's obtained from
  * {@link #getInstance(KerberosPrincipal)} or
- * {@link #getInstance(KerberosPrincipal, java.io.File)}, it is bound to the
+ * {@link #getInstance(KerberosPrincipal, j86.java.io.File)}, it is bound to the
  * specific service principal and can only be used by it.
  * <p>
  * Please note the constructors {@link #getInstance()} and
- * {@link #getInstance(java.io.File)} were created when there was no support
+ * {@link #getInstance(j86.java.io.File)} were created when there was no support
  * for unbound keytabs. These methods should not be used anymore. An object
  * created with either of these methods are considered to be bound to an
  * unknown principal, which means, its {@link #isBound()} returns true and
  * {@link #getPrincipal()} returns null.
  * <p>
  * It might be necessary for the application to be granted a
- * {@link javax.security.auth.PrivateCredentialPermission
+ * {@link j86.javax.security.auth.PrivateCredentialPermission
  * PrivateCredentialPermission} if it needs to access the KeyTab
  * instance from a Subject. This permission is not needed when the
  * application depends on the default JGSS Kerberos mechanism to access the
  * KeyTab. In that case, however, the application will need an appropriate
- * {@link javax.security.auth.kerberos.ServicePermission ServicePermission}.
+ * {@link j86.j86.javax.security.auth.kerberos.ServicePermission ServicePermission}.
  * <p>
  * The keytab file format is described at
  * <a href="http://www.ioplex.com/utilities/keytab.txt">
@@ -79,7 +79,7 @@ public final class KeyTab {
      * (can be missing). Itself has no content. In order to read content,
      * take a snapshot and read from it.
      *
-     * The snapshot is of type sun.security.krb5.internal.ktab.KeyTab, which
+     * The snapshot is of type j86.j86.j86.sun.security.krb5.internal.ktab.KeyTab, which
      * contains the content of the keytab file when the snapshot is taken.
      * Itself has no refresh function and mostly an immutable class (except
      * for the create/add/save methods only used by the ktab command).
@@ -217,9 +217,9 @@ public final class KeyTab {
 
     // Takes a snapshot of the keytab content. This method is called by
     // JavaxSecurityAuthKerberosAccessImpl so no more private
-    sun.security.krb5.internal.ktab.KeyTab takeSnapshot() {
+    j86.j86.j86.sun.security.krb5.internal.ktab.KeyTab takeSnapshot() {
         try {
-            return sun.security.krb5.internal.ktab.KeyTab.getInstance(file);
+            return j86.j86.j86.sun.security.krb5.internal.ktab.KeyTab.getInstance(file);
         } catch (AccessControlException ace) {
             if (file != null) {
                 // It's OK to show the name if caller specified it

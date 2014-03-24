@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.security.ec;
+package j86.sun.security.ec;
 
-import java.util.Collection;
-import java.util.Map;
+import j86.java.util.Collection;
+import j86.java.util.Map;
 
-import java.util.regex.Pattern;
+import j86.j86.java.util.regex.Pattern;
 
 /**
  * Defines the entries of the SunEC provider.
@@ -47,7 +47,7 @@ final class SunECEntries {
         /*
          *  Key Factory engine
          */
-        map.put("KeyFactory.EC", "sun.security.ec.ECKeyFactory");
+        map.put("KeyFactory.EC", "j86.sun.security.ec.ECKeyFactory");
         map.put("Alg.Alias.KeyFactory.EllipticCurve", "EC");
 
         map.put("KeyFactory.EC ImplementedIn", "Software");
@@ -55,7 +55,7 @@ final class SunECEntries {
         /*
          * Algorithm Parameter engine
          */
-        map.put("AlgorithmParameters.EC", "sun.security.ec.ECParameters");
+        map.put("AlgorithmParameters.EC", "j86.sun.security.ec.ECParameters");
         map.put("Alg.Alias.AlgorithmParameters.EllipticCurve", "EC");
         map.put("Alg.Alias.AlgorithmParameters.1.2.840.10045.2.1", "EC");
 
@@ -103,34 +103,34 @@ final class SunECEntries {
          * Signature engines
          */
         map.put("Signature.NONEwithECDSA",
-            "sun.security.ec.ECDSASignature$Raw");
+            "j86.sun.security.ec.ECDSASignature$Raw");
         map.put("Signature.SHA1withECDSA",
-            "sun.security.ec.ECDSASignature$SHA1");
+            "j86.sun.security.ec.ECDSASignature$SHA1");
         map.put("Alg.Alias.Signature.OID.1.2.840.10045.4.1", "SHA1withECDSA");
         map.put("Alg.Alias.Signature.1.2.840.10045.4.1", "SHA1withECDSA");
 
         map.put("Signature.SHA224withECDSA",
-            "sun.security.ec.ECDSASignature$SHA224");
+            "j86.sun.security.ec.ECDSASignature$SHA224");
         map.put("Alg.Alias.Signature.OID.1.2.840.10045.4.3.1", "SHA224withECDSA");
         map.put("Alg.Alias.Signature.1.2.840.10045.4.3.1", "SHA224withECDSA");
 
         map.put("Signature.SHA256withECDSA",
-            "sun.security.ec.ECDSASignature$SHA256");
+            "j86.sun.security.ec.ECDSASignature$SHA256");
         map.put("Alg.Alias.Signature.OID.1.2.840.10045.4.3.2", "SHA256withECDSA");
         map.put("Alg.Alias.Signature.1.2.840.10045.4.3.2", "SHA256withECDSA");
 
         map.put("Signature.SHA384withECDSA",
-            "sun.security.ec.ECDSASignature$SHA384");
+            "j86.sun.security.ec.ECDSASignature$SHA384");
         map.put("Alg.Alias.Signature.OID.1.2.840.10045.4.3.3", "SHA384withECDSA");
         map.put("Alg.Alias.Signature.1.2.840.10045.4.3.3", "SHA384withECDSA");
 
         map.put("Signature.SHA512withECDSA",
-            "sun.security.ec.ECDSASignature$SHA512");
+            "j86.sun.security.ec.ECDSASignature$SHA512");
         map.put("Alg.Alias.Signature.OID.1.2.840.10045.4.3.4", "SHA512withECDSA");
         map.put("Alg.Alias.Signature.1.2.840.10045.4.3.4", "SHA512withECDSA");
 
-        String ecKeyClasses = "java.security.interfaces.ECPublicKey" +
-                "|java.security.interfaces.ECPrivateKey";
+        String ecKeyClasses = "j86.j86.java.security.interfaces.ECPublicKey" +
+                "|j86.j86.java.security.interfaces.ECPrivateKey";
         map.put("Signature.NONEwithECDSA SupportedKeyClasses", ecKeyClasses);
         map.put("Signature.SHA1withECDSA SupportedKeyClasses", ecKeyClasses);
         map.put("Signature.SHA224withECDSA SupportedKeyClasses", ecKeyClasses);
@@ -150,7 +150,7 @@ final class SunECEntries {
         /*
          *  Key Pair Generator engine
          */
-        map.put("KeyPairGenerator.EC", "sun.security.ec.ECKeyPairGenerator");
+        map.put("KeyPairGenerator.EC", "j86.sun.security.ec.ECKeyPairGenerator");
         map.put("Alg.Alias.KeyPairGenerator.EllipticCurve", "EC");
 
         map.put("KeyPairGenerator.EC KeySize", "256");
@@ -160,7 +160,7 @@ final class SunECEntries {
         /*
          * Key Agreement engine
          */
-        map.put("KeyAgreement.ECDH", "sun.security.ec.ECDHKeyAgreement");
+        map.put("KeyAgreement.ECDH", "j86.sun.security.ec.ECDHKeyAgreement");
 
         map.put("KeyAgreement.ECDH SupportedKeyClasses", ecKeyClasses);
 

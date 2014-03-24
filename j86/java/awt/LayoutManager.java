@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.awt;
+package j86.java.awt;
 
 /**
  * Defines the interface for classes that know how to lay out
@@ -35,7 +35,7 @@ package java.awt;
  * <code>isOptimizedDrawingEnabled</code> to return false.
  *
  * @see Container
- * @see javax.swing.JComponent#isOptimizedDrawingEnabled
+ * @see j86.javax.swing.JComponent#isOptimizedDrawingEnabled
  *
  * @author      Sami Shaio
  * @author      Arthur van Hoff

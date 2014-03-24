@@ -23,12 +23,12 @@
  * questions.
  */
 
-package javax.swing.tree;
-   // ISSUE: this class depends on nothing in AWT -- move to java.util?
+package j86.j86.javax.swing.tree;
+   // ISSUE: this class depends on nothing in AWT -- move to j86.java.util?
 
-import java.beans.Transient;
-import java.io.*;
-import java.util.*;
+import j86.java.beans.Transient;
+import j86.java.io.*;
+import j86.java.util.*;
 
 
 /**
@@ -78,8 +78,8 @@ import java.util.*;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @see MutableTreeNode
  *

@@ -23,32 +23,32 @@
  * questions.
  */
 
-package sun.security.provider;
+package j86.sun.security.provider;
 
-import java.io.*;
-import java.net.MalformedURLException;
-import java.net.URI;
-import java.net.URL;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.security.PrivilegedActionException;
-import java.security.PrivilegedExceptionAction;
-import java.security.Security;
-import java.security.URIParameter;
-import java.text.MessageFormat;
-import java.util.*;
-import javax.security.auth.AuthPermission;
-import javax.security.auth.login.AppConfigurationEntry;
-import javax.security.auth.login.AppConfigurationEntry.LoginModuleControlFlag;
-import javax.security.auth.login.Configuration;
-import javax.security.auth.login.ConfigurationSpi;
-import sun.security.util.Debug;
-import sun.security.util.PropertyExpander;
-import sun.security.util.ResourcesMgr;
+import j86.java.io.*;
+import j86.java.net.MalformedURLException;
+import j86.java.net.URI;
+import j86.java.net.URL;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.security.PrivilegedActionException;
+import j86.java.security.PrivilegedExceptionAction;
+import j86.java.security.Security;
+import j86.java.security.URIParameter;
+import j86.java.text.MessageFormat;
+import j86.java.util.*;
+import j86.javax.security.auth.AuthPermission;
+import j86.j86.javax.security.auth.login.AppConfigurationEntry;
+import j86.j86.javax.security.auth.login.AppConfigurationEntry.LoginModuleControlFlag;
+import j86.j86.javax.security.auth.login.Configuration;
+import j86.j86.javax.security.auth.login.ConfigurationSpi;
+import j86.sun.security.util.Debug;
+import j86.sun.security.util.PropertyExpander;
+import j86.sun.security.util.ResourcesMgr;
 
 /**
  * This class represents a default implementation for
- * {@code javax.security.auth.login.Configuration}.
+ * {@code j86.j86.javax.security.auth.login.Configuration}.
  *
  * <p> This object stores the runtime login configuration representation,
  * and is the amalgamation of multiple static login configurations that
@@ -66,8 +66,8 @@ import sun.security.util.ResourcesMgr;
  *   each configuration.
  *
  * <li>
- *   The {@code java.lang.System} property
- *   <i>java.security.auth.login.config</i>
+ *   The {@code j86.java.lang.System} property
+ *   <i>j86.java.security.auth.login.config</i>
  *   may also be set to a {@code URL} pointing to another
  *   login configuration file
  *   (which is the case when a user uses the -D switch at runtime).
@@ -77,7 +77,7 @@ import sun.security.util.ResourcesMgr;
  *   also load that login configuration.
  *
  * <li>
- *   If the <i>java.security.auth.login.config</i> property is defined using
+ *   If the <i>j86.java.security.auth.login.config</i> property is defined using
  *   "==" (rather than "="), then ignore all other specified
  *   login configurations and only load this configuration.
  *
@@ -89,10 +89,10 @@ import sun.security.util.ResourcesMgr;
  *
  * <p> The configuration syntax supported by this implementation
  * is exactly that syntax specified in the
- * {@code javax.security.auth.login.Configuration} class.
+ * {@code j86.j86.javax.security.auth.login.Configuration} class.
  *
- * @see javax.security.auth.login.LoginContext
- * @see java.security.Security security properties
+ * @see j86.j86.javax.security.auth.login.LoginContext
+ * @see j86.java.security.Security security properties
  */
 public final class ConfigFile extends Configuration {
 
@@ -231,13 +231,13 @@ public final class ConfigFile extends Configuration {
 
             /**
              * Caller did not specify URI via Configuration.getInstance.
-             * Read from URLs listed in the java.security properties file.
+             * Read from URLs listed in the j86.java.security properties file.
              */
             String allowSys = Security.getProperty("policy.allowSystemProperty");
 
             if ("true".equalsIgnoreCase(allowSys)) {
                 String extra_config = System.getProperty
-                                      ("java.security.auth.login.config");
+                                      ("j86.java.security.auth.login.config");
                 if (extra_config != null) {
                     boolean overrideAll = false;
                     if (extra_config.startsWith("=")) {
@@ -333,7 +333,7 @@ public final class ConfigFile extends Configuration {
                 }
                 throw new IOException(ResourcesMgr.getString
                     ("Configuration.Error.No.such.file.or.directory",
-                    "sun.security.util.AuthResources"));
+                    "j86.sun.security.util.AuthResources"));
             }
         }
 
@@ -662,7 +662,7 @@ public final class ConfigFile extends Configuration {
 
         private IOException ioException(String resourceKey, Object... args) {
             MessageFormat form = new MessageFormat(ResourcesMgr.getString
-                (resourceKey, "sun.security.util.AuthResources"));
+                (resourceKey, "j86.sun.security.util.AuthResources"));
             return new IOException(form.format(args));
         }
     }

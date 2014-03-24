@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.reflect;
+package j86.sun.reflect;
 
-import java.lang.reflect.Field;
-import java.lang.reflect.Modifier;
-import java.security.AccessController;
-import sun.misc.Unsafe;
+import j86.j86.j86.java.lang.reflect.Field;
+import j86.j86.j86.java.lang.reflect.Modifier;
+import j86.java.security.AccessController;
+import j86.sun.misc.Unsafe;
 
-/** Base class for sun.misc.Unsafe-based FieldAccessors for final or
+/** Base class for j86.sun.misc.Unsafe-based FieldAccessors for final or
     volatile static fields.  */
 
 abstract class UnsafeQualifiedStaticFieldAccessorImpl

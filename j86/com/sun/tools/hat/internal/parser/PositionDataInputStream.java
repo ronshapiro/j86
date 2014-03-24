@@ -30,10 +30,10 @@
  * at JavaSoft/Sun.
  */
 
-package com.sun.tools.hat.internal.parser;
+package j86.j86.com.sun.tools.hat.internal.parser;
 
-import java.io.DataInputStream;
-import java.io.InputStream;
+import j86.java.io.DataInputStream;
+import j86.java.io.InputStream;
 
 /**
  * A DataInputStream that keeps track of total bytes read

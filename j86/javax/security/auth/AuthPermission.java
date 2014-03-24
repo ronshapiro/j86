@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.security.auth;
+package j86.javax.security.auth;
 
 /**
  * This class is for authentication permissions.
@@ -110,8 +110,8 @@ package javax.security.auth;
  *                              {@code LoginContext}.
  * </pre>
  *
- * <p> {@code javax.security.auth.Policy} has been
- * deprecated in favor of {@code java.security.Policy}.
+ * <p> {@code j86.javax.security.auth.Policy} has been
+ * deprecated in favor of {@code j86.java.security.Policy}.
  * Therefore, the following target names have also been deprecated:
  *
  * <pre>
@@ -127,7 +127,7 @@ package javax.security.auth;
  *
  */
 public final class AuthPermission extends
-java.security.BasicPermission {
+j86.java.security.BasicPermission {
 
     private static final long serialVersionUID = 5806031445061587174L;
 

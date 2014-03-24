@@ -30,12 +30,12 @@
  * at JavaSoft/Sun.
  */
 
-package com.sun.tools.hat.internal.oql;
+package j86.j86.com.sun.tools.hat.internal.oql;
 
-import com.sun.tools.hat.internal.model.*;
-import java.io.*;
-import java.lang.reflect.*;
-import java.util.*;
+import j86.j86.com.sun.tools.hat.internal.model.*;
+import j86.java.io.*;
+import j86.j86.j86.java.lang.reflect.*;
+import j86.java.util.*;
 
 /**
  * This is Object Query Language Interpreter
@@ -44,9 +44,9 @@ import java.util.*;
 public class OQLEngine {
     static {
         try {
-            // Do we have javax.script support?
+            // Do we have j86.javax.script support?
             // create ScriptEngineManager
-            Class<?> managerClass = Class.forName("javax.script.ScriptEngineManager");
+            Class<?> managerClass = Class.forName("j86.javax.script.ScriptEngineManager");
             Object manager = managerClass.newInstance();
 
             // create JavaScript engine
@@ -260,7 +260,7 @@ public class OQLEngine {
         this.snapshot = snapshot;
         try {
             // create ScriptEngineManager
-            Class<?> managerClass = Class.forName("javax.script.ScriptEngineManager");
+            Class<?> managerClass = Class.forName("j86.javax.script.ScriptEngineManager");
             Object manager = managerClass.newInstance();
 
             // create JavaScript engine
@@ -270,14 +270,14 @@ public class OQLEngine {
 
             // initialize engine with init file (hat.js)
             InputStream strm = getInitStream();
-            Class<?> engineClass = Class.forName("javax.script.ScriptEngine");
+            Class<?> engineClass = Class.forName("j86.javax.script.ScriptEngine");
             evalMethod = engineClass.getMethod("eval",
                                 new Class[] { Reader.class });
             evalMethod.invoke(engine, new Object[] {new InputStreamReader(strm)});
 
             // initialize ScriptEngine.eval(String) and
             // Invocable.invokeFunction(String, Object[]) methods.
-            Class<?> invocableClass = Class.forName("javax.script.Invocable");
+            Class<?> invocableClass = Class.forName("j86.javax.script.Invocable");
 
             evalMethod = engineClass.getMethod("eval",
                                   new Class[] { String.class });
@@ -299,7 +299,7 @@ public class OQLEngine {
     }
 
     private InputStream getInitStream() {
-        return getClass().getResourceAsStream("/com/sun/tools/hat/resources/hat.js");
+        return getClass().getResourceAsStream("/j86.com.sun.tools.hat/resources/hat.js");
     }
 
     private Object engine;

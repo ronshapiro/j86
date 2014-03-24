@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing;
+package j86.javax.swing;
 
 /**
  * A private interface to access clip bounds in wrapped Graphics objects.
@@ -30,7 +30,7 @@ package javax.swing;
  * @author Thomas Ball
  */
 
-import java.awt.*;
+import j86.java.awt.*;
 
 interface GraphicsWrapper {
     Graphics subGraphics();

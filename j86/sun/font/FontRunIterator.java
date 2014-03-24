@@ -28,7 +28,7 @@
  * (C) Copyright IBM Corp. 2003 - All Rights Reserved
  */
 
-package sun.font;
+package j86.sun.font;
 
 /**
  * Iterates over runs of fonts in a CompositeFont, optionally taking script runs into account.

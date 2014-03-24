@@ -22,8 +22,8 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.net;
-import java.io.IOException;
+package j86.java.net;
+import j86.java.io.IOException;
 
 /*
  * Package private implementation of InetAddressImpl for dual
@@ -54,7 +54,7 @@ class Inet6AddressImpl implements InetAddressImpl {
              * be either an IPv6 address or an IPv4 address (case of a dual
              * stack system).
              */
-            java.util.Enumeration<InetAddress> it = netif.getInetAddresses();
+            j86.java.util.Enumeration<InetAddress> it = netif.getInetAddresses();
             InetAddress inetaddr = null;
             while (it.hasMoreElements()) {
                 inetaddr = it.nextElement();

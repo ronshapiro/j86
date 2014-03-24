@@ -32,27 +32,27 @@
  * All rights reserved.
  */
 
-package java.util.concurrent;
-import java.util.AbstractList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Comparator;
-import java.util.ConcurrentModificationException;
-import java.util.Iterator;
-import java.util.List;
-import java.util.ListIterator;
-import java.util.NoSuchElementException;
-import java.util.Objects;
-import java.util.RandomAccess;
-import java.util.Spliterator;
-import java.util.Spliterators;
-import java.util.concurrent.locks.ReentrantLock;
-import java.util.function.Consumer;
-import java.util.function.Predicate;
-import java.util.function.UnaryOperator;
+package j86.j86.java.util.concurrent;
+import j86.java.util.AbstractList;
+import j86.java.util.Arrays;
+import j86.java.util.Collection;
+import j86.java.util.Comparator;
+import j86.java.util.ConcurrentModificationException;
+import j86.java.util.Iterator;
+import j86.java.util.List;
+import j86.java.util.ListIterator;
+import j86.java.util.NoSuchElementException;
+import j86.java.util.Objects;
+import j86.java.util.RandomAccess;
+import j86.java.util.Spliterator;
+import j86.java.util.Spliterators;
+import j86.j86.j86.java.util.concurrent.locks.ReentrantLock;
+import j86.j86.java.util.function.Consumer;
+import j86.j86.java.util.function.Predicate;
+import j86.j86.java.util.function.UnaryOperator;
 
 /**
- * A thread-safe variant of {@link java.util.ArrayList} in which all mutative
+ * A thread-safe variant of {@link j86.java.util.ArrayList} in which all mutative
  * operations ({@code add}, {@code set}, and so on) are implemented by
  * making a fresh copy of the underlying array.
  *
@@ -89,7 +89,7 @@ import java.util.function.UnaryOperator;
  * @param <E> the type of elements held in this collection
  */
 public class CopyOnWriteArrayList<E>
-    implements List<E>, RandomAccess, Cloneable, java.io.Serializable {
+    implements List<E>, RandomAccess, Cloneable, j86.java.io.Serializable {
     private static final long serialVersionUID = 8673264195747942595L;
 
     /** The lock protecting all mutators */
@@ -953,13 +953,13 @@ public class CopyOnWriteArrayList<E>
      * Saves this list to a stream (that is, serializes it).
      *
      * @param s the stream
-     * @throws java.io.IOException if an I/O error occurs
+     * @throws j86.java.io.IOException if an I/O error occurs
      * @serialData The length of the array backing the list is emitted
      *               (int), followed by all of its elements (each an Object)
      *               in the proper order.
      */
-    private void writeObject(java.io.ObjectOutputStream s)
-        throws java.io.IOException {
+    private void writeObject(j86.java.io.ObjectOutputStream s)
+        throws j86.java.io.IOException {
 
         s.defaultWriteObject();
 
@@ -977,10 +977,10 @@ public class CopyOnWriteArrayList<E>
      * @param s the stream
      * @throws ClassNotFoundException if the class of a serialized object
      *         could not be found
-     * @throws java.io.IOException if an I/O error occurs
+     * @throws j86.java.io.IOException if an I/O error occurs
      */
-    private void readObject(java.io.ObjectInputStream s)
-        throws java.io.IOException, ClassNotFoundException {
+    private void readObject(j86.java.io.ObjectInputStream s)
+        throws j86.java.io.IOException, ClassNotFoundException {
 
         s.defaultReadObject();
 
@@ -1671,11 +1671,11 @@ public class CopyOnWriteArrayList<E>
     private void resetLock() {
         UNSAFE.putObjectVolatile(this, lockOffset, new ReentrantLock());
     }
-    private static final sun.misc.Unsafe UNSAFE;
+    private static final j86.sun.misc.Unsafe UNSAFE;
     private static final long lockOffset;
     static {
         try {
-            UNSAFE = sun.misc.Unsafe.getUnsafe();
+            UNSAFE = j86.sun.misc.Unsafe.getUnsafe();
             Class<?> k = CopyOnWriteArrayList.class;
             lockOffset = UNSAFE.objectFieldOffset
                 (k.getDeclaredField("lock"));

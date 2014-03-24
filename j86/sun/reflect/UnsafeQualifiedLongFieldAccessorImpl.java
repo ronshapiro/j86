@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.reflect;
+package j86.sun.reflect;
 
-import java.lang.reflect.Field;
+import j86.j86.j86.java.lang.reflect.Field;
 
 class UnsafeQualifiedLongFieldAccessorImpl
     extends UnsafeQualifiedFieldAccessorImpl

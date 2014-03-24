@@ -22,16 +22,16 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.event;
+package j86.j86.javax.swing.event;
 
 /**
  * <code>RowSorterListener</code>s are notified of changes to a
  * <code>RowSorter</code>.
  *
- * @see javax.swing.RowSorter
+ * @see j86.javax.swing.RowSorter
  * @since 1.6
  */
-public interface RowSorterListener extends java.util.EventListener {
+public interface RowSorterListener extends j86.java.util.EventListener {
     /**
      * Notification that the <code>RowSorter</code> has changed.  The event
      * describes the scope of the change.

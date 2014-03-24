@@ -23,31 +23,31 @@
  * questions.
  */
 
-package com.sun.crypto.provider;
+package j86.com.sun.crypto.provider;
 
-import java.io.IOException;
-import java.io.Serializable;
-import java.security.Security;
-import java.security.Key;
-import java.security.PrivateKey;
-import java.security.Provider;
-import java.security.KeyFactory;
-import java.security.MessageDigest;
-import java.security.GeneralSecurityException;
-import java.security.NoSuchAlgorithmException;
-import java.security.NoSuchProviderException;
-import java.security.UnrecoverableKeyException;
-import java.security.AlgorithmParameters;
-import java.security.spec.PKCS8EncodedKeySpec;
+import j86.java.io.IOException;
+import j86.java.io.Serializable;
+import j86.java.security.Security;
+import j86.java.security.Key;
+import j86.java.security.PrivateKey;
+import j86.java.security.Provider;
+import j86.java.security.KeyFactory;
+import j86.java.security.MessageDigest;
+import j86.java.security.GeneralSecurityException;
+import j86.java.security.NoSuchAlgorithmException;
+import j86.java.security.NoSuchProviderException;
+import j86.java.security.UnrecoverableKeyException;
+import j86.java.security.AlgorithmParameters;
+import j86.j86.java.security.spec.PKCS8EncodedKeySpec;
 
-import javax.crypto.Cipher;
-import javax.crypto.CipherSpi;
-import javax.crypto.SecretKey;
-import javax.crypto.IllegalBlockSizeException;
-import javax.crypto.SealedObject;
-import javax.crypto.spec.*;
-import sun.security.x509.AlgorithmId;
-import sun.security.util.ObjectIdentifier;
+import j86.javax.crypto.Cipher;
+import j86.javax.crypto.CipherSpi;
+import j86.javax.crypto.SecretKey;
+import j86.javax.crypto.IllegalBlockSizeException;
+import j86.javax.crypto.SealedObject;
+import j86.j86.javax.crypto.spec.*;
+import j86.sun.security.x509.AlgorithmId;
+import j86.sun.security.util.ObjectIdentifier;
 
 /**
  * This class implements a protection mechanism for private keys. In JCE, we
@@ -260,7 +260,7 @@ final class KeyProtector {
         // of <code>protectedKey</code>. If the two digest values are
         // different, throw an exception.
         md.update(passwdBytes);
-        java.util.Arrays.fill(passwdBytes, (byte)0x00);
+        j86.java.util.Arrays.fill(passwdBytes, (byte)0x00);
         passwdBytes = null;
         md.update(plainKey);
         digest = md.digest();
@@ -348,7 +348,7 @@ final class KeyProtector {
 }
 
 
-final class CipherForKeyProtector extends javax.crypto.Cipher {
+final class CipherForKeyProtector extends j86.javax.crypto.Cipher {
     /**
      * Creates a Cipher object.
      *

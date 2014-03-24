@@ -22,10 +22,10 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.media.sound;
+package j86.com.sun.media.sound;
 
-import java.util.ArrayList;
-import java.util.List;
+import j86.java.util.ArrayList;
+import j86.java.util.List;
 
 /**
  * This class stores options how to playback sampled data like pitch/tuning,

@@ -36,29 +36,29 @@
  *
  */
 
-package java.util;
+package j86.java.util;
 
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.OptionalDataException;
-import java.io.Serializable;
-import java.security.AccessControlContext;
-import java.security.AccessController;
-import java.security.PermissionCollection;
-import java.security.PrivilegedActionException;
-import java.security.PrivilegedExceptionAction;
-import java.security.ProtectionDomain;
-import java.text.DateFormat;
-import java.text.DateFormatSymbols;
-import java.time.Instant;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentMap;
-import sun.util.BuddhistCalendar;
-import sun.util.calendar.ZoneInfo;
-import sun.util.locale.provider.CalendarDataUtility;
-import sun.util.locale.provider.LocaleProviderAdapter;
-import sun.util.spi.CalendarProvider;
+import j86.java.io.IOException;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.OptionalDataException;
+import j86.java.io.Serializable;
+import j86.java.security.AccessControlContext;
+import j86.java.security.AccessController;
+import j86.java.security.PermissionCollection;
+import j86.java.security.PrivilegedActionException;
+import j86.java.security.PrivilegedExceptionAction;
+import j86.java.security.ProtectionDomain;
+import j86.java.text.DateFormat;
+import j86.java.text.DateFormatSymbols;
+import j86.java.time.Instant;
+import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.j86.java.util.concurrent.ConcurrentMap;
+import j86.sun.util.BuddhistCalendar;
+import j86.j86.sun.util.calendar.ZoneInfo;
+import j86.j86.j86.sun.util.locale.provider.CalendarDataUtility;
+import j86.j86.j86.sun.util.locale.provider.LocaleProviderAdapter;
+import j86.j86.sun.util.spi.CalendarProvider;
 
 /**
  * The <code>Calendar</code> class is an abstract class that provides methods
@@ -286,7 +286,7 @@ import sun.util.spi.CalendarProvider;
  *   <code>HOUR</code>.</p>
  * </blockquote>
  *
- * <p><em>Example</em>: See {@link java.util.GregorianCalendar#roll(int, int)}.
+ * <p><em>Example</em>: See {@link j86.java.util.GregorianCalendar#roll(int, int)}.
  *
  * <p><strong>Usage model</strong>. To motivate the behavior of
  * <code>add()</code> and <code>roll()</code>, consider a user interface
@@ -302,11 +302,11 @@ import sun.util.spi.CalendarProvider;
  * fields should be affected, the user interface can behave as most users
  * will intuitively expect.</p>
  *
- * @see          java.lang.System#currentTimeMillis()
+ * @see          j86.java.lang.System#currentTimeMillis()
  * @see          Date
  * @see          GregorianCalendar
  * @see          TimeZone
- * @see          java.text.DateFormat
+ * @see          j86.java.text.DateFormat
  * @author Mark Davis, David Goldsmith, Chen-Lieh Huang, Alan Liu
  * @since JDK1.1
  */
@@ -1574,7 +1574,7 @@ public abstract class Calendar implements Serializable, Cloneable, Comparable<Ca
 
     /**
      * Constructs a Calendar with the default time zone
-     * and the default {@link java.util.Locale.Category#FORMAT FORMAT}
+     * and the default {@link j86.java.util.Locale.Category#FORMAT FORMAT}
      * locale.
      * @see     TimeZone#getDefault
      */
@@ -1710,7 +1710,7 @@ public abstract class Calendar implements Serializable, Cloneable, Comparable<Ca
      * Returns an array of all locales for which the <code>getInstance</code>
      * methods of this class can return localized instances.
      * The array returned must contain at least a <code>Locale</code>
-     * instance equal to {@link java.util.Locale#US Locale.US}.
+     * instance equal to {@link j86.java.util.Locale#US Locale.US}.
      *
      * @return An array of locales for which localized
      *         <code>Calendar</code> instances are available.
@@ -2871,7 +2871,7 @@ public abstract class Calendar implements Serializable, Cloneable, Comparable<Ca
      * @param lenient <code>true</code> if the lenient mode is to be turned
      * on; <code>false</code> if it is to be turned off.
      * @see #isLenient()
-     * @see java.text.DateFormat#setLenient
+     * @see j86.java.text.DateFormat#setLenient
      */
     public void setLenient(boolean lenient)
     {
@@ -3492,7 +3492,7 @@ public abstract class Calendar implements Serializable, Cloneable, Comparable<Ca
     private static class CalendarAccessControlContext {
         private static final AccessControlContext INSTANCE;
         static {
-            RuntimePermission perm = new RuntimePermission("accessClassInPackage.sun.util.calendar");
+            RuntimePermission perm = new RuntimePermission("accessClassInPackage.j86.j86.sun.util.calendar");
             PermissionCollection perms = perm.newPermissionCollection();
             perms.add(perm);
             INSTANCE = new AccessControlContext(new ProtectionDomain[] {

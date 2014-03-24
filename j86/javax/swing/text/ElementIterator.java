@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.swing.text;
+package j86.j86.javax.swing.text;
 
-import java.util.Stack;
-import java.util.Enumeration;
+import j86.java.util.Stack;
+import j86.java.util.Enumeration;
 
 /**
  * <p>
@@ -111,7 +111,7 @@ public class ElementIterator implements Cloneable {
             return childIndex;
         }
 
-        protected Object clone() throws java.lang.CloneNotSupportedException {
+        protected Object clone() throws j86.java.lang.CloneNotSupportedException {
             return super.clone();
         }
     }

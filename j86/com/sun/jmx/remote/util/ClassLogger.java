@@ -23,9 +23,9 @@
  * questions.
  */
 
-package com.sun.jmx.remote.util;
+package j86.com.sun.jmx.remote.util;
 
-import java.util.logging.Logger;
+import j86.j86.java.util.logging.Logger;
 
 public class ClassLogger {
 
@@ -35,17 +35,17 @@ public class ClassLogger {
 
     static {
         /* We attempt to work even if we are running in J2SE 1.3, where
-           there is no java.util.logging.  The technique we use here is
+           there is no j86.j86.java.util.logging.  The technique we use here is
            not strictly portable, but it does work with Sun's J2SE 1.3
            at least.  This is just a best effort: the Right Thing is for
            people to use at least J2SE 1.4.  */
         boolean loaded = false;
         try {
-            Class<?> c = java.util.logging.Logger.class;
+            Class<?> c = j86.j86.java.util.logging.Logger.class;
             loaded = true;
         } catch (Error e) {
             // OK.
-            // java.util.logger package is not available in this jvm.
+            // j86.java.util.logger package is not available in this jvm.
         }
         ok = loaded;
     }
@@ -67,27 +67,27 @@ public class ClassLogger {
     }
 
     public final boolean warningOn() {
-        return ok && logger.isLoggable(java.util.logging.Level.WARNING);
+        return ok && logger.isLoggable(j86.j86.java.util.logging.Level.WARNING);
     }
 
     public final boolean infoOn() {
-        return ok && logger.isLoggable(java.util.logging.Level.INFO);
+        return ok && logger.isLoggable(j86.j86.java.util.logging.Level.INFO);
     }
 
     public final boolean configOn() {
-        return ok && logger.isLoggable(java.util.logging.Level.CONFIG);
+        return ok && logger.isLoggable(j86.j86.java.util.logging.Level.CONFIG);
     }
 
     public final boolean fineOn() {
-        return ok && logger.isLoggable(java.util.logging.Level.FINE);
+        return ok && logger.isLoggable(j86.j86.java.util.logging.Level.FINE);
     }
 
     public final boolean finerOn() {
-        return ok && logger.isLoggable(java.util.logging.Level.FINER);
+        return ok && logger.isLoggable(j86.j86.java.util.logging.Level.FINER);
     }
 
     public final boolean finestOn() {
-        return ok && logger.isLoggable(java.util.logging.Level.FINEST);
+        return ok && logger.isLoggable(j86.j86.java.util.logging.Level.FINEST);
     }
 
     public final void debug(String func, String msg) {
@@ -128,119 +128,119 @@ public class ClassLogger {
 
     public final void finest(String func, String msg) {
         if (ok)
-            logger.logp(java.util.logging.Level.FINEST, className, func, msg);
+            logger.logp(j86.j86.java.util.logging.Level.FINEST, className, func, msg);
     }
 
     public final void finest(String func, Throwable t) {
         if (ok)
-            logger.logp(java.util.logging.Level.FINEST, className, func,
+            logger.logp(j86.j86.java.util.logging.Level.FINEST, className, func,
                         t.toString(), t);
     }
 
     public final void finest(String func, String msg, Throwable t) {
         if (ok)
-            logger.logp(java.util.logging.Level.FINEST, className, func, msg,
+            logger.logp(j86.j86.java.util.logging.Level.FINEST, className, func, msg,
                         t);
     }
 
     public final void finer(String func, String msg) {
         if (ok)
-            logger.logp(java.util.logging.Level.FINER, className, func, msg);
+            logger.logp(j86.j86.java.util.logging.Level.FINER, className, func, msg);
     }
 
     public final void finer(String func, Throwable t) {
         if (ok)
-            logger.logp(java.util.logging.Level.FINER, className, func,
+            logger.logp(j86.j86.java.util.logging.Level.FINER, className, func,
                         t.toString(), t);
     }
 
     public final void finer(String func, String msg, Throwable t) {
         if (ok)
-            logger.logp(java.util.logging.Level.FINER, className, func, msg,t);
+            logger.logp(j86.j86.java.util.logging.Level.FINER, className, func, msg,t);
     }
 
     public final void fine(String func, String msg) {
         if (ok)
-            logger.logp(java.util.logging.Level.FINE, className, func, msg);
+            logger.logp(j86.j86.java.util.logging.Level.FINE, className, func, msg);
     }
 
     public final void fine(String func, Throwable t) {
         if (ok)
-            logger.logp(java.util.logging.Level.FINE, className, func,
+            logger.logp(j86.j86.java.util.logging.Level.FINE, className, func,
                         t.toString(), t);
     }
 
     public final void fine(String func, String msg, Throwable t) {
         if (ok)
-            logger.logp(java.util.logging.Level.FINE, className, func, msg,
+            logger.logp(j86.j86.java.util.logging.Level.FINE, className, func, msg,
                         t);
     }
 
     public final void config(String func, String msg) {
         if (ok)
-            logger.logp(java.util.logging.Level.CONFIG, className, func, msg);
+            logger.logp(j86.j86.java.util.logging.Level.CONFIG, className, func, msg);
     }
 
     public final void config(String func, Throwable t) {
         if (ok)
-            logger.logp(java.util.logging.Level.CONFIG, className, func,
+            logger.logp(j86.j86.java.util.logging.Level.CONFIG, className, func,
                         t.toString(), t);
     }
 
     public final void config(String func, String msg, Throwable t) {
         if (ok)
-            logger.logp(java.util.logging.Level.CONFIG, className, func, msg,
+            logger.logp(j86.j86.java.util.logging.Level.CONFIG, className, func, msg,
                         t);
     }
 
     public final void info(String func, String msg) {
         if (ok)
-            logger.logp(java.util.logging.Level.INFO, className, func, msg);
+            logger.logp(j86.j86.java.util.logging.Level.INFO, className, func, msg);
     }
 
     public final void info(String func, Throwable t) {
         if (ok)
-            logger.logp(java.util.logging.Level.INFO, className, func,
+            logger.logp(j86.j86.java.util.logging.Level.INFO, className, func,
                         t.toString(), t);
     }
 
     public final void info(String func, String msg, Throwable t) {
         if (ok)
-            logger.logp(java.util.logging.Level.INFO, className, func, msg,
+            logger.logp(j86.j86.java.util.logging.Level.INFO, className, func, msg,
                         t);
     }
 
     public final void warning(String func, String msg) {
         if (ok)
-            logger.logp(java.util.logging.Level.WARNING, className, func, msg);
+            logger.logp(j86.j86.java.util.logging.Level.WARNING, className, func, msg);
     }
 
     public final void warning(String func, Throwable t) {
         if (ok)
-            logger.logp(java.util.logging.Level.WARNING, className, func,
+            logger.logp(j86.j86.java.util.logging.Level.WARNING, className, func,
                         t.toString(), t);
     }
 
     public final void warning(String func, String msg, Throwable t) {
         if (ok)
-            logger.logp(java.util.logging.Level.WARNING, className, func, msg,
+            logger.logp(j86.j86.java.util.logging.Level.WARNING, className, func, msg,
                         t);
     }
 
     public final void severe(String func, String msg) {
         if (ok)
-            logger.logp(java.util.logging.Level.SEVERE, className, func, msg);
+            logger.logp(j86.j86.java.util.logging.Level.SEVERE, className, func, msg);
     }
 
     public final void severe(String func, Throwable t) {
         if (ok)
-            logger.logp(java.util.logging.Level.SEVERE, className, func,
+            logger.logp(j86.j86.java.util.logging.Level.SEVERE, className, func,
                         t.toString(), t);
     }
 
     public final void severe(String func, String msg, Throwable t) {
         if (ok)
-            logger.logp(java.util.logging.Level.SEVERE, className, func, msg,
+            logger.logp(j86.j86.java.util.logging.Level.SEVERE, className, func, msg,
                         t);
     }
 }

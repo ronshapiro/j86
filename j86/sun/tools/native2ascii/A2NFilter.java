@@ -34,8 +34,8 @@
  * If not, it is remains in its back-tick U escaped form.
  */
 
-package sun.tools.native2ascii;
-import java.io.*;
+package j86.sun.tools.native2ascii;
+import j86.java.io.*;
 
 
 class A2NFilter extends FilterReader {

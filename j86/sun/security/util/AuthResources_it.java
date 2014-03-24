@@ -23,19 +23,19 @@
  * questions.
  */
 
-package sun.security.util;
+package j86.sun.security.util;
 
 /**
  * <p> This class represents the <code>ResourceBundle</code>
  * for the following packages:
  *
  * <ol>
- * <li> com.sun.security.auth
- * <li> com.sun.security.auth.login
+ * <li> j86.com.sun.security.auth
+ * <li> j86.j86.com.sun.security.auth.login
  * </ol>
  *
  */
-public class AuthResources_it extends java.util.ListResourceBundle {
+public class AuthResources_it extends j86.java.util.ListResourceBundle {
 
     private static final Object[][] contents = {
 
@@ -59,7 +59,7 @@ public class AuthResources_it extends java.util.ListResourceBundle {
         {"UnixNumericUserPrincipal.name", "UnixNumericUserPrincipal: {0}"},
         {"UnixPrincipal.name", "UnixPrincipal: {0}"},
 
-        // com.sun.security.auth.login.ConfigFile
+        // j86.j86.com.sun.security.auth.login.ConfigFile
         {"Unable.to.properly.expand.config", "Impossibile espandere correttamente {0}"},
         {"extra.config.No.such.file.or.directory.",
                 "{0} (file o directory inesistente)"},
@@ -78,11 +78,11 @@ public class AuthResources_it extends java.util.ListResourceBundle {
         {"Configuration.Error.Line.line.system.property.value.expanded.to.empty.value",
             "Errore di configurazione:\n\triga {0}: propriet\u00E0 di sistema [{1}] espansa a valore vuoto"},
 
-        // com.sun.security.auth.module.JndiLoginModule
+        // j86.j86.com.sun.security.auth.module.JndiLoginModule
         {"username.","Nome utente: "},
         {"password.","Password: "},
 
-        // com.sun.security.auth.module.KeyStoreLoginModule
+        // j86.j86.com.sun.security.auth.module.KeyStoreLoginModule
         {"Please.enter.keystore.information",
                 "Immettere le informazioni per il keystore"},
         {"Keystore.alias.","Alias keystore: "},
@@ -90,7 +90,7 @@ public class AuthResources_it extends java.util.ListResourceBundle {
         {"Private.key.password.optional.",
             "Password chiave privata (opzionale): "},
 
-        // com.sun.security.auth.module.Krb5LoginModule
+        // j86.j86.com.sun.security.auth.module.Krb5LoginModule
         {"Kerberos.username.defUsername.",
                 "Nome utente Kerberos [{0}]: "},
         {"Kerberos.password.for.username.",
@@ -98,7 +98,7 @@ public class AuthResources_it extends java.util.ListResourceBundle {
 
         /***    EVERYTHING BELOW IS DEPRECATED  ***/
 
-        // com.sun.security.auth.PolicyFile
+        // j86.com.sun.security.auth.PolicyFile
         {".error.parsing.", ": errore durante l'analisi "},
         {"COLON", ": "},
         {".error.adding.Permission.", ": errore durante l'aggiunta dell'autorizzazione "},
@@ -109,7 +109,7 @@ public class AuthResources_it extends java.util.ListResourceBundle {
         {"attempt.to.add.a.Permission.to.a.readonly.PermissionCollection",
             "tentativo di aggiungere un'autorizzazione a una PermissionCollection di sola lettura"},
 
-        // com.sun.security.auth.PolicyParser
+        // j86.com.sun.security.auth.PolicyParser
         {"expected.keystore.type", "tipo keystore previsto"},
         {"can.not.specify.Principal.with.a.wildcard.class.without.a.wildcard.name",
                 "impossibile specificare un principal con una classe carattere jolly senza un nome carattere jolly"},
@@ -136,7 +136,7 @@ public class AuthResources_it extends java.util.ListResourceBundle {
         {"SolarisPrincipal.", "SolarisPrincipal: "},
         // provided.null.name is the NullPointerException message when a
         // developer incorrectly passes a null name to the constructor of
-        // subclasses of java.security.Principal
+        // subclasses of j86.java.security.Principal
         {"provided.null.name", "il nome fornito \u00E8 nullo"}
 
     };

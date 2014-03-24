@@ -23,18 +23,18 @@
  * questions.
  */
 
-package sun.nio.fs;
+package j86.j86.sun.nio.fs;
 
-import java.nio.file.*;
-import java.nio.file.attribute.*;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.security.PrivilegedExceptionAction;
-import java.security.PrivilegedActionException;
-import java.io.IOException;
-import java.util.*;
-import java.util.concurrent.*;
-import com.sun.nio.file.SensitivityWatchEventModifier;
+import j86.j86.java.nio.file.*;
+import j86.j86.j86.java.nio.file.attribute.*;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.security.PrivilegedExceptionAction;
+import j86.java.security.PrivilegedActionException;
+import j86.java.io.IOException;
+import j86.java.util.*;
+import j86.j86.java.util.concurrent.*;
+import com.j86.sun.nio.file.SensitivityWatchEventModifier;
 
 /**
  * Simple WatchService implementation that uses periodic tasks to poll

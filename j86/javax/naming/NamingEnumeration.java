@@ -23,13 +23,13 @@
  * questions.
  */
 
-package javax.naming;
+package j86.javax.naming;
 
-import java.util.Enumeration;
+import j86.java.util.Enumeration;
 
 /**
   * This interface is for enumerating lists returned by
-  * methods in the javax.naming and javax.naming.directory packages.
+  * methods in the j86.javax.naming and j86.javax.naming.directory packages.
   * It extends Enumeration to allow as exceptions to be thrown during
   * the enumeration.
   *<p>
@@ -72,10 +72,10 @@ import java.util.Enumeration;
   *
   * @see Context#list
   * @see Context#listBindings
-  * @see javax.naming.directory.DirContext#search
-  * @see javax.naming.directory.Attributes#getAll
-  * @see javax.naming.directory.Attributes#getIDs
-  * @see javax.naming.directory.Attribute#getAll
+  * @see j86.j86.javax.naming.directory.DirContext#search
+  * @see j86.j86.javax.naming.directory.Attributes#getAll
+  * @see j86.j86.javax.naming.directory.Attributes#getIDs
+  * @see j86.j86.javax.naming.directory.Attribute#getAll
   * @since 1.3
   */
 public interface NamingEnumeration<T> extends Enumeration<T> {
@@ -99,8 +99,8 @@ public interface NamingEnumeration<T> extends Enumeration<T> {
       * @exception NamingException If a naming exception is encountered while attempting
       *                 to retrieve the next element. See NamingException
       *                 and its subclasses for the possible naming exceptions.
-      * @exception java.util.NoSuchElementException If attempting to get the next element when none is available.
-      * @see java.util.Enumeration#nextElement
+      * @exception j86.java.util.NoSuchElementException If attempting to get the next element when none is available.
+      * @see j86.java.util.Enumeration#nextElement
       */
     public T next() throws NamingException;
 
@@ -116,7 +116,7 @@ public interface NamingEnumeration<T> extends Enumeration<T> {
       *                 to determine whether there is another element
       *                 in the enumeration. See NamingException
       *                 and its subclasses for the possible naming exceptions.
-      * @see java.util.Enumeration#hasMoreElements
+      * @see j86.java.util.Enumeration#hasMoreElements
       */
     public boolean hasMore() throws NamingException;
 

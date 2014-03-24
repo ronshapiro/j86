@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.security.auth;
+package j86.javax.security.auth;
 
 /**
  * Objects such as credentials may optionally implement this
@@ -32,7 +32,7 @@ package javax.security.auth;
  * may implement this interface to allow callers to refresh the time period
  * for which it is valid.
  *
- * @see javax.security.auth.Subject
+ * @see j86.javax.security.auth.Subject
  */
 public interface Refreshable {
 

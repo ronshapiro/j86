@@ -23,22 +23,22 @@
  * questions.
  */
 
-package javax.crypto;
+package j86.javax.crypto;
 
-import java.util.*;
-import java.util.jar.*;
-import java.io.*;
-import java.net.URL;
-import java.security.*;
+import j86.java.util.*;
+import j86.j86.java.util.jar.*;
+import j86.java.io.*;
+import j86.java.net.URL;
+import j86.java.security.*;
 
-import java.security.Provider.Service;
+import j86.java.security.Provider.Service;
 
-import sun.security.jca.*;
-import sun.security.jca.GetInstance.Instance;
+import j86.sun.security.jca.*;
+import j86.sun.security.jca.GetInstance.Instance;
 
 /**
  * This class instantiates implementations of JCE engine classes from
- * providers registered with the java.security.Security object.
+ * providers registered with the j86.java.security.Security object.
  *
  * @author Jan Luehe
  * @author Sharon Liu
@@ -247,7 +247,7 @@ final class JceSecurity {
         File exportJar = new File(pathToPolicyJar, "US_export_policy.jar");
         File importJar = new File(pathToPolicyJar, "local_policy.jar");
         URL jceCipherURL = ClassLoader.getSystemResource
-                ("javax/crypto/Cipher.class");
+                ("j86.javax.crypto/Cipher.class");
 
         if ((jceCipherURL == null) ||
                 !exportJar.exists() || !importJar.exists()) {

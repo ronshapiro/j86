@@ -23,14 +23,14 @@
  * questions.
  */
 
-package java.util;
+package j86.java.util;
 
 /**
  * Thrown by methods in the <code>Stack</code> class to indicate
  * that the stack is empty.
  *
  * @author  Jonathan Payne
- * @see     java.util.Stack
+ * @see     j86.java.util.Stack
  * @since   JDK1.0
  */
 public

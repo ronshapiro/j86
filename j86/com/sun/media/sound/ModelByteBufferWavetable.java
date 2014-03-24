@@ -22,14 +22,14 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.media.sound;
+package j86.com.sun.media.sound;
 
-import java.io.IOException;
-import java.io.InputStream;
-import javax.sound.sampled.AudioFormat;
-import javax.sound.sampled.AudioInputStream;
-import javax.sound.sampled.AudioSystem;
-import javax.sound.sampled.AudioFormat.Encoding;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.javax.sound.sampled.AudioFormat;
+import j86.javax.sound.sampled.AudioInputStream;
+import j86.javax.sound.sampled.AudioSystem;
+import j86.javax.sound.sampled.AudioFormat.Encoding;
 
 /**
  * Wavetable oscillator for pre-loaded data.

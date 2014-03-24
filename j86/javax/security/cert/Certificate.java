@@ -24,13 +24,13 @@
  */
 
 
-package javax.security.cert;
+package j86.javax.security.cert;
 
-import java.security.PublicKey;
-import java.security.NoSuchAlgorithmException;
-import java.security.NoSuchProviderException;
-import java.security.InvalidKeyException;
-import java.security.SignatureException;
+import j86.java.security.PublicKey;
+import j86.java.security.NoSuchAlgorithmException;
+import j86.java.security.NoSuchProviderException;
+import j86.java.security.InvalidKeyException;
+import j86.java.security.SignatureException;
 
 /**
  * <p>Abstract class for managing a variety of identity certificates.
@@ -49,11 +49,11 @@ import java.security.SignatureException;
  * sets of information, and they store and retrieve the information in
  * different ways.
  *
- * <p><em>Note: The classes in the package {@code javax.security.cert}
+ * <p><em>Note: The classes in the package {@code j86.javax.security.cert}
  * exist for compatibility with earlier versions of the
  * Java Secure Sockets Extension (JSSE). New applications should instead
  * use the standard Java SE certificate classes located in
- * {@code java.security.cert}.</em></p>
+ * {@code j86.j86.java.security.cert}.</em></p>
  *
  * @since 1.4
  * @see X509Certificate

@@ -25,18 +25,18 @@
 
 
 
-package javax.swing.plaf.basic;
+package j86.j86.j86.javax.swing.plaf.basic;
 
 
 
-import java.awt.*;
-import java.awt.event.*;
-import javax.swing.*;
-import javax.swing.event.*;
-import javax.swing.plaf.*;
-import javax.swing.border.Border;
-import java.beans.*;
-import sun.swing.DefaultLookup;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.event.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.javax.swing.border.Border;
+import j86.java.beans.*;
+import j86.sun.swing.DefaultLookup;
 
 
 
@@ -54,8 +54,8 @@ import sun.swing.DefaultLookup;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @author Scott Violet
  */
@@ -672,8 +672,8 @@ public class BasicSplitPaneDivider extends Container
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     protected class DragController
     {

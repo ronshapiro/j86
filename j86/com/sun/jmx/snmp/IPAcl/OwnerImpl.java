@@ -24,17 +24,17 @@
  */
 
 
-package com.sun.jmx.snmp.IPAcl;
+package j86.j86.com.sun.jmx.snmp.IPAcl;
 
 
 
-import java.util.Vector;
-import java.io.Serializable;
+import j86.java.util.Vector;
+import j86.java.io.Serializable;
 
-import java.security.Principal;
-import java.security.acl.Owner;
-import java.security.acl.LastOwnerException;
-import java.security.acl.NotOwnerException;
+import j86.java.security.Principal;
+import j86.j86.java.security.acl.Owner;
+import j86.j86.java.security.acl.LastOwnerException;
+import j86.j86.java.security.acl.NotOwnerException;
 
 
 /**
@@ -42,7 +42,7 @@ import java.security.acl.NotOwnerException;
  * The initial owner Principal should be specified as an
  * argument to the constructor of the class AclImpl.
  *
- * @see java.security.acl.Owner
+ * @see j86.j86.java.security.acl.Owner
  */
 
 class OwnerImpl implements Owner, Serializable {

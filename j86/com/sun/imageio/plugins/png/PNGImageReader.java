@@ -23,42 +23,42 @@
  * questions.
  */
 
-package com.sun.imageio.plugins.png;
+package j86.com.sun.imageio.plugins.png;
 
-import java.awt.Point;
-import java.awt.Rectangle;
-import java.awt.color.ColorSpace;
-import java.awt.image.BufferedImage;
-import java.awt.image.DataBuffer;
-import java.awt.image.DataBufferByte;
-import java.awt.image.DataBufferUShort;
-import java.awt.image.Raster;
-import java.awt.image.WritableRaster;
-import java.io.BufferedInputStream;
-import java.io.ByteArrayInputStream;
-import java.io.DataInputStream;
-import java.io.EOFException;
-import java.io.InputStream;
-import java.io.IOException;
-import java.io.SequenceInputStream;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Enumeration;
-import java.util.Iterator;
-import java.util.zip.Inflater;
-import java.util.zip.InflaterInputStream;
-import javax.imageio.IIOException;
-import javax.imageio.ImageReader;
-import javax.imageio.ImageReadParam;
-import javax.imageio.ImageTypeSpecifier;
-import javax.imageio.metadata.IIOMetadata;
-import javax.imageio.spi.ImageReaderSpi;
-import javax.imageio.stream.ImageInputStream;
-import com.sun.imageio.plugins.common.InputStreamAdapter;
-import com.sun.imageio.plugins.common.ReaderUtil;
-import com.sun.imageio.plugins.common.SubImageInputStream;
-import java.io.ByteArrayOutputStream;
-import sun.awt.image.ByteInterleavedRaster;
+import j86.java.awt.Point;
+import j86.java.awt.Rectangle;
+import j86.j86.java.awt.color.ColorSpace;
+import j86.j86.j86.java.awt.image.BufferedImage;
+import j86.j86.j86.java.awt.image.DataBuffer;
+import j86.j86.j86.java.awt.image.DataBufferByte;
+import j86.j86.j86.java.awt.image.DataBufferUShort;
+import j86.j86.j86.java.awt.image.Raster;
+import j86.j86.j86.java.awt.image.WritableRaster;
+import j86.java.io.BufferedInputStream;
+import j86.java.io.ByteArrayInputStream;
+import j86.java.io.DataInputStream;
+import j86.java.io.EOFException;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
+import j86.java.io.SequenceInputStream;
+import j86.java.util.ArrayList;
+import j86.java.util.Arrays;
+import j86.java.util.Enumeration;
+import j86.java.util.Iterator;
+import j86.j86.java.util.zip.Inflater;
+import j86.j86.java.util.zip.InflaterInputStream;
+import j86.javax.imageio.IIOException;
+import j86.javax.imageio.ImageReader;
+import j86.javax.imageio.ImageReadParam;
+import j86.javax.imageio.ImageTypeSpecifier;
+import j86.j86.javax.imageio.metadata.IIOMetadata;
+import j86.j86.javax.imageio.spi.ImageReaderSpi;
+import j86.j86.javax.imageio.stream.ImageInputStream;
+import j86.com.sun.imageio.plugins.common.InputStreamAdapter;
+import j86.com.sun.imageio.plugins.common.ReaderUtil;
+import j86.com.sun.imageio.plugins.common.SubImageInputStream;
+import j86.java.io.ByteArrayOutputStream;
+import j86.j86.j86.sun.awt.image.ByteInterleavedRaster;
 
 class PNGImageDataEnumeration implements Enumeration<InputStream> {
 
@@ -1109,7 +1109,7 @@ public class PNGImageReader extends ImageReader {
                 curr = tmp;
 
                 pixelStream.readFully(curr, 0, bytesPerRow);
-            } catch (java.util.zip.ZipException ze) {
+            } catch (j86.j86.java.util.zip.ZipException ze) {
                 // TODO - throw a more meaningful exception
                 throw ze;
             }
@@ -1455,7 +1455,7 @@ public class PNGImageReader extends ImageReader {
              * equality of the palette lengh and number of possible palette
              * entries (2^bitDepth).
              *
-             * {@link javax.imageio.ImageTypeSpecifier.html#createIndexed}
+             * {@link j86.javax.imageio.ImageTypeSpecifier.html#createIndexed}
              *
              * In order to avoid this contradiction we need to extend the
              * palette arrays to the limit defined by the bitDepth.

@@ -22,17 +22,17 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing;
+package j86.javax.swing;
 
-import java.awt.Component;
-import java.util.ArrayList;
-import java.util.Hashtable;
-import java.awt.Color;
-import java.awt.Graphics;
-import java.awt.Rectangle;
-import sun.awt.SunToolkit;
+import j86.java.awt.Component;
+import j86.java.util.ArrayList;
+import j86.java.util.Hashtable;
+import j86.java.awt.Color;
+import j86.java.awt.Graphics;
+import j86.java.awt.Rectangle;
+import j86.sun.awt.SunToolkit;
 
-import javax.accessibility.*;
+import j86.javax.accessibility.*;
 
 /**
  * <code>JLayeredPane</code> adds depth to a JFC/Swing container,
@@ -117,7 +117,7 @@ import javax.accessibility.*;
  * position. A value of 0 indicates the topmost position. Unlike layer
  * numbers, higher position values are <i>lower</i> in the display.
  * <blockquote>
- * <b>Note:</b> This sequence (defined by java.awt.Container) is the reverse
+ * <b>Note:</b> This sequence (defined by j86.java.awt.Container) is the reverse
  * of the layer numbering sequence. Usually though, you will use <code>moveToFront</code>,
  * <code>moveToBack</code>, and <code>setLayer</code>.
  * </blockquote>
@@ -149,8 +149,8 @@ import javax.accessibility.*;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @author David Kloba
  */
@@ -198,7 +198,7 @@ public class JLayeredPane extends JComponent implements Accessible {
             for (Component c : getComponents()) {
                 layer = null;
 
-                if(SunToolkit.isInstanceOf(c, "javax.swing.JInternalFrame") ||
+                if(SunToolkit.isInstanceOf(c, "j86.javax.swing.JInternalFrame") ||
                        (c instanceof JComponent &&
                         (layer = (Integer)((JComponent)c).
                                      getClientProperty(LAYER_PROPERTY)) != null))
@@ -446,7 +446,7 @@ public class JLayeredPane extends JComponent implements Accessible {
      * where 0 is the topmost position within the layer and -1 is the bottommost
      * position.
      * <p>
-     * <b>Note:</b> Position numbering is defined by java.awt.Container, and
+     * <b>Note:</b> Position numbering is defined by j86.java.awt.Container, and
      * is the opposite of layer numbering. Lower position numbers are closer
      * to the top (0 is topmost), and higher position numbers are closer to
      * the bottom.
@@ -766,8 +766,8 @@ public class JLayeredPane extends JComponent implements Accessible {
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     @SuppressWarnings("serial")
     protected class AccessibleJLayeredPane extends AccessibleJComponent {

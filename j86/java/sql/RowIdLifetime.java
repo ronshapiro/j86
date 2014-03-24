@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.sql;
+package j86.java.sql;
 
-import java.util.*;
+import j86.java.util.*;
 
 /**
  * Enumeration for RowId life-time values.

@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.security.provider;
+package j86.sun.security.provider;
 
-import java.security.*;
+import j86.java.security.*;
 
-import static sun.security.provider.ByteArrayAccess.*;
+import static j86.sun.security.provider.ByteArrayAccess.*;
 
 /**
  * The MD4 class is used to compute an MD4 message digest over a given
@@ -70,7 +70,7 @@ public final class MD4 extends DigestBase {
         };
         AccessController.doPrivileged(new PrivilegedAction<Void>() {
             public Void run() {
-                md4Provider.put("MessageDigest.MD4", "sun.security.provider.MD4");
+                md4Provider.put("MessageDigest.MD4", "j86.sun.security.provider.MD4");
                 return null;
             }
         });

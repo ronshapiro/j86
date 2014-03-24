@@ -23,9 +23,9 @@
  * questions.
  */
 
-package com.sun.jmx.remote.util;
+package j86.com.sun.jmx.remote.util;
 
-import sun.reflect.misc.ReflectUtil;
+import j86.j86.sun.reflect.misc.ReflectUtil;
 
 public class OrderClassLoaders extends ClassLoader {
     public OrderClassLoaders(ClassLoader cl1, ClassLoader cl2) {

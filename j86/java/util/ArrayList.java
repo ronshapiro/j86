@@ -23,11 +23,11 @@
  * questions.
  */
 
-package java.util;
+package j86.java.util;
 
-import java.util.function.Consumer;
-import java.util.function.Predicate;
-import java.util.function.UnaryOperator;
+import j86.j86.java.util.function.Consumer;
+import j86.j86.java.util.function.Predicate;
+import j86.j86.java.util.function.UnaryOperator;
 
 /**
  * Resizable-array implementation of the <tt>List</tt> interface.  Implements
@@ -104,7 +104,7 @@ import java.util.function.UnaryOperator;
  */
 
 public class ArrayList<E> extends AbstractList<E>
-        implements List<E>, RandomAccess, Cloneable, java.io.Serializable
+        implements List<E>, RandomAccess, Cloneable, j86.java.io.Serializable
 {
     private static final long serialVersionUID = 8683452581122892189L;
 
@@ -733,8 +733,8 @@ public class ArrayList<E> extends AbstractList<E>
      *             instance is emitted (int), followed by all of its elements
      *             (each an <tt>Object</tt>) in the proper order.
      */
-    private void writeObject(java.io.ObjectOutputStream s)
-        throws java.io.IOException{
+    private void writeObject(j86.java.io.ObjectOutputStream s)
+        throws j86.java.io.IOException{
         // Write out element count, and any hidden stuff
         int expectedModCount = modCount;
         s.defaultWriteObject();
@@ -756,8 +756,8 @@ public class ArrayList<E> extends AbstractList<E>
      * Reconstitute the <tt>ArrayList</tt> instance from a stream (that is,
      * deserialize it).
      */
-    private void readObject(java.io.ObjectInputStream s)
-        throws java.io.IOException, ClassNotFoundException {
+    private void readObject(j86.java.io.ObjectInputStream s)
+        throws j86.java.io.IOException, ClassNotFoundException {
         elementData = EMPTY_ELEMENTDATA;
 
         // Read in size, and any hidden stuff

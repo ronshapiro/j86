@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.lang;
+package j86.java.lang;
 
-import java.util.Iterator;
-import java.util.Objects;
-import java.util.Spliterator;
-import java.util.Spliterators;
-import java.util.function.Consumer;
+import j86.java.util.Iterator;
+import j86.java.util.Objects;
+import j86.java.util.Spliterator;
+import j86.java.util.Spliterators;
+import j86.j86.java.util.function.Consumer;
 
 /**
  * Implementing this interface allows an object to be the target of

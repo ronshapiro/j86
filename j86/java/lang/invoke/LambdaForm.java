@@ -23,21 +23,21 @@
  * questions.
  */
 
-package java.lang.invoke;
+package j86.j86.java.lang.invoke;
 
-import java.lang.annotation.*;
-import java.lang.reflect.Method;
-import java.util.Map;
-import java.util.List;
-import java.util.Arrays;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.concurrent.ConcurrentHashMap;
-import sun.invoke.util.Wrapper;
-import static java.lang.invoke.MethodHandleStatics.*;
-import static java.lang.invoke.MethodHandleNatives.Constants.*;
-import java.lang.reflect.Field;
-import java.util.Objects;
+import j86.j86.java.lang.annotation.*;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.util.Map;
+import j86.java.util.List;
+import j86.java.util.Arrays;
+import j86.java.util.ArrayList;
+import j86.java.util.HashMap;
+import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.j86.sun.invoke.util.Wrapper;
+import static j86.j86.java.lang.invoke.MethodHandleStatics.*;
+import static j86.j86.java.lang.invoke.MethodHandleNatives.Constants.*;
+import j86.j86.j86.java.lang.reflect.Field;
+import j86.java.util.Objects;
 
 /**
  * The symbolic, non-executable form of a method handle's invocation semantics.

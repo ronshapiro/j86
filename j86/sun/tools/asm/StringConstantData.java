@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.tools.asm;
+package j86.sun.tools.asm;
 
-import sun.tools.java.*;
-import java.io.IOException;
-import java.io.DataOutputStream;
+import j86.sun.tools.java.*;
+import j86.java.io.IOException;
+import j86.java.io.DataOutputStream;
 
 /**
  * This is a string constant pool data item.

@@ -22,10 +22,10 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text.rtf;
+package j86.j86.j86.javax.swing.text.rtf;
 
-import java.io.*;
-import java.lang.*;
+import j86.java.io.*;
+import j86.java.lang.*;
 
 /**
  * <b>RTFParser</b> is a subclass of <b>AbstractFilter</b> which understands basic RTF syntax

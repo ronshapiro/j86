@@ -23,26 +23,26 @@
  * questions.
  */
 
-package javax.print;
+package j86.javax.print;
 
-import java.awt.GraphicsConfiguration;
-import java.awt.GraphicsDevice;
-import java.awt.GraphicsEnvironment;
-import java.awt.HeadlessException;
-import java.awt.Dialog;
-import java.awt.Frame;
-import java.awt.Point;
-import java.awt.Rectangle;
-import java.awt.Window;
-import java.awt.KeyboardFocusManager;
-import javax.print.attribute.Attribute;
-import javax.print.attribute.AttributeSet;
-import javax.print.attribute.PrintRequestAttributeSet;
-import javax.print.attribute.standard.Destination;
-import javax.print.attribute.standard.Fidelity;
+import j86.java.awt.GraphicsConfiguration;
+import j86.java.awt.GraphicsDevice;
+import j86.java.awt.GraphicsEnvironment;
+import j86.java.awt.HeadlessException;
+import j86.java.awt.Dialog;
+import j86.java.awt.Frame;
+import j86.java.awt.Point;
+import j86.java.awt.Rectangle;
+import j86.java.awt.Window;
+import j86.java.awt.KeyboardFocusManager;
+import j86.j86.javax.print.attribute.Attribute;
+import j86.j86.javax.print.attribute.AttributeSet;
+import j86.j86.javax.print.attribute.PrintRequestAttributeSet;
+import j86.j86.j86.javax.print.attribute.standard.Destination;
+import j86.j86.j86.javax.print.attribute.standard.Fidelity;
 
-import sun.print.ServiceDialog;
-import sun.print.SunAlternateMedia;
+import j86.sun.print.ServiceDialog;
+import j86.sun.print.SunAlternateMedia;
 
 /** This class is a collection of UI convenience methods which provide a
  * graphical user dialog for browsing print services looked up through the Java

@@ -23,15 +23,15 @@
  * questions.
  */
 
-package javax.management;
+package j86.javax.management;
 
 
 // java import
-import java.util.Set;
-import java.io.ObjectInputStream;
+import j86.java.util.Set;
+import j86.java.io.ObjectInputStream;
 
 // RI import
-import javax.management.loading.ClassLoaderRepository;
+import j86.j86.javax.management.loading.ClassLoaderRepository;
 
 /**
  * <p>This is the interface for MBean manipulation on the agent
@@ -42,7 +42,7 @@ import javax.management.loading.ClassLoaderRepository;
  *
  * <p>User code does not usually implement this interface.  Instead,
  * an object that implements this interface is obtained with one of
- * the methods in the {@link javax.management.MBeanServerFactory} class.</p>
+ * the methods in the {@link j86.javax.management.MBeanServerFactory} class.</p>
  *
  * <p>Every MBean which is added to the MBean server becomes
  * manageable: its attributes and operations become remotely
@@ -51,13 +51,13 @@ import javax.management.loading.ClassLoaderRepository;
  * unless it is a JMX compliant MBean.</p>
  *
  * <p id="notif">When an MBean is registered or unregistered in the
- * MBean server a {@link javax.management.MBeanServerNotification
+ * MBean server a {@link j86.javax.management.MBeanServerNotification
  * MBeanServerNotification} Notification is emitted. To register an
  * object as listener to MBeanServerNotifications you should call the
  * MBean server method {@link #addNotificationListener
  * addNotificationListener} with <CODE>ObjectName</CODE> the
  * <CODE>ObjectName</CODE> of the {@link
- * javax.management.MBeanServerDelegate MBeanServerDelegate}.  This
+ * j86.javax.management.MBeanServerDelegate MBeanServerDelegate}.  This
  * <CODE>ObjectName</CODE> is: <BR>
  * <CODE>JMImplementation:type=MBeanServerDelegate</CODE>.</p>
  *
@@ -226,7 +226,7 @@ import javax.management.loading.ClassLoaderRepository;
  *
  * <p>If the <code>MBeanPermission</code> check succeeds, the MBean's
  * class is validated by checking that its {@link
- * java.security.ProtectionDomain ProtectionDomain} implies {@link
+ * j86.java.security.ProtectionDomain ProtectionDomain} implies {@link
  * MBeanTrustPermission#MBeanTrustPermission(String)
  * MBeanTrustPermission("register")}.</p>
  *
@@ -323,7 +323,7 @@ public interface MBeanServer extends MBeanServerConnection {
      * <p>Registers a pre-existing object as an MBean with the MBean
      * server. If the object name given is null, the MBean must
      * provide its own name by implementing the {@link
-     * javax.management.MBeanRegistration MBeanRegistration} interface
+     * j86.javax.management.MBeanRegistration MBeanRegistration} interface
      * and returning the name from the {@link
      * MBeanRegistration#preRegister preRegister} method.
      *
@@ -366,9 +366,9 @@ public interface MBeanServer extends MBeanServerConnection {
      * @exception NotCompliantMBeanException This object is not a JMX
      * compliant MBean
      * @exception RuntimeOperationsException Wraps a
-     * <CODE>java.lang.IllegalArgumentException</CODE>: The object
+     * <CODE>j86.java.lang.IllegalArgumentException</CODE>: The object
      * passed in parameter is null or no object name is specified.
-     * @see javax.management.MBeanRegistration
+     * @see j86.javax.management.MBeanRegistration
      */
     public ObjectInstance registerMBean(Object object, ObjectName name)
             throws InstanceAlreadyExistsException, MBeanRegistrationException,
@@ -522,7 +522,7 @@ public interface MBeanServer extends MBeanServerConnection {
     /**
      * <p>Instantiates an object using the list of all class loaders
      * registered in the MBean server's {@link
-     * javax.management.loading.ClassLoaderRepository Class Loader
+     * j86.j86.javax.management.loading.ClassLoaderRepository Class Loader
      * Repository}.  The object's class should have a public
      * constructor.  This method returns a reference to the newly
      * created object.  The newly created object is not registered in
@@ -537,13 +537,13 @@ public interface MBeanServer extends MBeanServerConnection {
      * @return The newly instantiated object.
      *
      * @exception ReflectionException Wraps a
-     * <CODE>java.lang.ClassNotFoundException</CODE> or the
-     * <CODE>java.lang.Exception</CODE> that occurred when trying to
+     * <CODE>j86.java.lang.ClassNotFoundException</CODE> or the
+     * <CODE>j86.java.lang.Exception</CODE> that occurred when trying to
      * invoke the object's constructor.
      * @exception MBeanException The constructor of the object has
      * thrown an exception
      * @exception RuntimeOperationsException Wraps a
-     * <CODE>java.lang.IllegalArgumentException</CODE>: The className
+     * <CODE>j86.java.lang.IllegalArgumentException</CODE>: The className
      * passed in parameter is null.
      */
     public Object instantiate(String className)
@@ -569,15 +569,15 @@ public interface MBeanServer extends MBeanServerConnection {
      * @return The newly instantiated object.
      *
      * @exception ReflectionException Wraps a
-     * <CODE>java.lang.ClassNotFoundException</CODE> or the
-     * <CODE>java.lang.Exception</CODE> that occurred when trying to
+     * <CODE>j86.java.lang.ClassNotFoundException</CODE> or the
+     * <CODE>j86.java.lang.Exception</CODE> that occurred when trying to
      * invoke the object's constructor.
      * @exception MBeanException The constructor of the object has
      * thrown an exception.
      * @exception InstanceNotFoundException The specified class loader
      * is not registered in the MBeanServer.
      * @exception RuntimeOperationsException Wraps a
-     * <CODE>java.lang.IllegalArgumentException</CODE>: The className
+     * <CODE>j86.java.lang.IllegalArgumentException</CODE>: The className
      * passed in parameter is null.
      */
     public Object instantiate(String className, ObjectName loaderName)
@@ -587,7 +587,7 @@ public interface MBeanServer extends MBeanServerConnection {
     /**
      * <p>Instantiates an object using the list of all class loaders
      * registered in the MBean server {@link
-     * javax.management.loading.ClassLoaderRepository Class Loader
+     * j86.j86.javax.management.loading.ClassLoaderRepository Class Loader
      * Repository}.  The object's class should have a public
      * constructor.  The call returns a reference to the newly created
      * object.  The newly created object is not registered in the
@@ -602,13 +602,13 @@ public interface MBeanServer extends MBeanServerConnection {
      * @return The newly instantiated object.
      *
      * @exception ReflectionException Wraps a
-     * <CODE>java.lang.ClassNotFoundException</CODE> or the
-     * <CODE>java.lang.Exception</CODE> that occurred when trying to
+     * <CODE>j86.java.lang.ClassNotFoundException</CODE> or the
+     * <CODE>j86.java.lang.Exception</CODE> that occurred when trying to
      * invoke the object's constructor.
      * @exception MBeanException The constructor of the object has
      * thrown an exception
      * @exception RuntimeOperationsException Wraps a
-     * <CODE>java.lang.IllegalArgumentException</CODE>: The className
+     * <CODE>j86.java.lang.IllegalArgumentException</CODE>: The className
      * passed in parameter is null.
      */
     public Object instantiate(String className, Object params[],
@@ -632,14 +632,14 @@ public interface MBeanServer extends MBeanServerConnection {
      *
      * @return The newly instantiated object.
      *
-     * @exception ReflectionException Wraps a <CODE>java.lang.ClassNotFoundException</CODE> or the <CODE>java.lang.Exception</CODE> that
+     * @exception ReflectionException Wraps a <CODE>j86.java.lang.ClassNotFoundException</CODE> or the <CODE>java.lang.Exception</CODE> that
      * occurred when trying to invoke the object's constructor.
      * @exception MBeanException The constructor of the object has
      * thrown an exception
      * @exception InstanceNotFoundException The specified class loader
      * is not registered in the MBean server.
      * @exception RuntimeOperationsException Wraps a
-     * <CODE>java.lang.IllegalArgumentException</CODE>: The className
+     * <CODE>j86.java.lang.IllegalArgumentException</CODE>: The className
      * passed in parameter is null.
      */
     public Object instantiate(String className, ObjectName loaderName,
@@ -674,7 +674,7 @@ public interface MBeanServer extends MBeanServerConnection {
      * <p>De-serializes a byte array in the context of a given MBean
      * class loader.  The class loader is found by loading the class
      * <code>className</code> through the {@link
-     * javax.management.loading.ClassLoaderRepository Class Loader
+     * j86.j86.javax.management.loading.ClassLoaderRepository Class Loader
      * Repository}.  The resultant class's class loader is the one to
      * use.
      *
@@ -731,7 +731,7 @@ public interface MBeanServer extends MBeanServerConnection {
                    ReflectionException;
 
     /**
-     * <p>Return the {@link java.lang.ClassLoader} that was used for
+     * <p>Return the {@link j86.java.lang.ClassLoader} that was used for
      * loading the class of the named MBean.</p>
      *
      * @param mbeanName The ObjectName of the MBean.
@@ -758,7 +758,7 @@ public interface MBeanServer extends MBeanServerConnection {
         throws InstanceNotFoundException;
 
     /**
-     * <p>Return the named {@link java.lang.ClassLoader}.</p>
+     * <p>Return the named {@link j86.java.lang.ClassLoader}.</p>
      *
      * @param loaderName The ObjectName of the ClassLoader.  May be
      * null, in which case the MBean server's own ClassLoader is

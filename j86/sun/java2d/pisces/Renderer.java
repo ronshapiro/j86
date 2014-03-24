@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.java2d.pisces;
+package j86.j86.sun.java2d.pisces;
 
-import sun.awt.geom.PathConsumer2D;
+import j86.j86.sun.awt.geom.PathConsumer2D;
 
 final class Renderer implements PathConsumer2D {
 
@@ -357,7 +357,7 @@ final class Renderer implements PathConsumer2D {
         edges = new float[INIT_NUM_EDGES * SIZEOF_EDGE];
         numEdges = 0;
         edgeBuckets = new int[boundsMaxY - boundsMinY];
-        java.util.Arrays.fill(edgeBuckets, NULL);
+        j86.java.util.Arrays.fill(edgeBuckets, NULL);
         edgeBucketCounts = new int[edgeBuckets.length + 1];
     }
 
@@ -566,6 +566,6 @@ final class Renderer implements PathConsumer2D {
                 cache.addRLERun(startVal, runLen);
             }
         }
-        java.util.Arrays.fill(alphaRow, 0);
+        j86.java.util.Arrays.fill(alphaRow, 0);
     }
 }

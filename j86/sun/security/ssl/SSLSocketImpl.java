@@ -24,21 +24,21 @@
  */
 
 
-package sun.security.ssl;
+package j86.sun.security.ssl;
 
-import java.io.*;
-import java.net.*;
-import java.security.GeneralSecurityException;
-import java.security.AccessController;
-import java.security.AccessControlContext;
-import java.security.PrivilegedAction;
-import java.security.AlgorithmConstraints;
-import java.util.*;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.locks.ReentrantLock;
+import j86.java.io.*;
+import j86.java.net.*;
+import j86.java.security.GeneralSecurityException;
+import j86.java.security.AccessController;
+import j86.java.security.AccessControlContext;
+import j86.java.security.PrivilegedAction;
+import j86.java.security.AlgorithmConstraints;
+import j86.java.util.*;
+import j86.j86.java.util.concurrent.TimeUnit;
+import j86.j86.j86.java.util.concurrent.locks.ReentrantLock;
 
-import javax.crypto.BadPaddingException;
-import javax.net.ssl.*;
+import j86.javax.crypto.BadPaddingException;
+import j86.j86.javax.net.ssl.*;
 
 /**
  * Implementation of an SSL socket.  This is a normal connection type
@@ -54,7 +54,7 @@ import javax.net.ssl.*;
  * proxying or tunneling, and also allows the kind of "role reversal"
  * that is required for most FTP data transfers.
  *
- * @see javax.net.ssl.SSLSocket
+ * @see j86.j86.javax.net.ssl.SSLSocket
  * @see SSLServerSocket
  *
  * @author David Brownell
@@ -479,7 +479,7 @@ final public class SSLSocketImpl extends BaseSSLSocketImpl {
 
     /*
      * Package-private constructor used ONLY by SSLServerSocket.  The
-     * java.net package accepts the TCP connection after this call is
+     * j86.java.net package accepts the TCP connection after this call is
      * made.  This just initializes handshake state to use "server mode",
      * giving control over the use of SSL client authentication.
      */
@@ -510,7 +510,7 @@ final public class SSLSocketImpl extends BaseSSLSocketImpl {
 
     /**
      * Package-private constructor used to instantiate an unconnected
-     * socket. The java.net package will connect it, either when the
+     * socket. The j86.java.net package will connect it, either when the
      * connect() call is made by the application.  This instance is
      * meant to set handshake state to use "client mode".
      */
@@ -658,7 +658,7 @@ final public class SSLSocketImpl extends BaseSSLSocketImpl {
     void doneConnect() throws IOException {
         /*
          * Save the input and output streams.  May be done only after
-         * java.net actually connects using the socket "self", else
+         * j86.java.net actually connects using the socket "self", else
          * we get some pretty bizarre failure modes.
          */
         sockInput = super.getInputStream();
@@ -2452,7 +2452,7 @@ final public class SSLSocketImpl extends BaseSSLSocketImpl {
 
     /**
      * Assigns the socket timeout.
-     * @see java.net.Socket#setSoTimeout
+     * @see j86.java.net.Socket#setSoTimeout
      */
     @Override
     public void setSoTimeout(int timeout) throws SocketException {

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.util.prefs;
+package j86.j86.java.util.prefs;
 
 /**
  * A listener for receiving preference change events.
@@ -35,7 +35,7 @@ package java.util.prefs;
  * @since   1.4
  */
 @FunctionalInterface
-public interface PreferenceChangeListener extends java.util.EventListener {
+public interface PreferenceChangeListener extends j86.java.util.EventListener {
     /**
      * This method gets called when a preference is added, removed or when
      * its value is changed.

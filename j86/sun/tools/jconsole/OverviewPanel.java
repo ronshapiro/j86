@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.tools.jconsole;
+package j86.sun.tools.jconsole;
 
-import java.awt.*;
+import j86.java.awt.*;
 
-import javax.swing.*;
+import j86.javax.swing.*;
 
 
-import static javax.swing.SwingConstants.*;
-import static sun.tools.jconsole.JConsole.*;
-import static sun.tools.jconsole.Utilities.*;
+import static j86.javax.swing.SwingConstants.*;
+import static j86.sun.tools.jconsole.JConsole.*;
+import static j86.sun.tools.jconsole.Utilities.*;
 
 
 @SuppressWarnings("serial")

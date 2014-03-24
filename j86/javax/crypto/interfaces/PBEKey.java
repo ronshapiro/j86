@@ -23,20 +23,20 @@
  * questions.
  */
 
-package javax.crypto.interfaces;
+package j86.j86.javax.crypto.interfaces;
 
-import java.math.BigInteger;
+import j86.java.math.BigInteger;
 
 /**
  * The interface to a PBE key.
  *
  * @author Valerie Peng
  *
- * @see javax.crypto.spec.PBEKeySpec
- * @see javax.crypto.SecretKey
+ * @see j86.j86.javax.crypto.spec.PBEKeySpec
+ * @see j86.javax.crypto.SecretKey
  * @since 1.4
  */
-public interface PBEKey extends javax.crypto.SecretKey {
+public interface PBEKey extends j86.javax.crypto.SecretKey {
 
     /**
      * The class fingerprint that is set to indicate serialization

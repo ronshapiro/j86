@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.sql;
+package j86.java.sql;
 
 /**
  * The mapping in the Java programming language of an SQL <code>REF</code>
@@ -69,7 +69,7 @@ public interface Ref {
      * Retrieves the referenced object and maps it to a Java type
      * using the given type map.
      *
-     * @param map a <code>java.util.Map</code> object that contains
+     * @param map a <code>j86.java.util.Map</code> object that contains
      *        the mapping to use (the fully-qualified name of the SQL
      *        structured type being referenced and the class object for
      *        <code>SQLData</code> implementation to which the SQL
@@ -83,7 +83,7 @@ public interface Ref {
      * @since 1.4
      * @see #setObject
      */
-    Object getObject(java.util.Map<String,Class<?>> map) throws SQLException;
+    Object getObject(j86.java.util.Map<String,Class<?>> map) throws SQLException;
 
 
     /**

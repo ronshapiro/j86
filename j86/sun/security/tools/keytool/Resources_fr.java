@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.security.tools.keytool;
+package j86.j86.sun.security.tools.keytool;
 
 /**
  * <p> This class represents the <code>ResourceBundle</code>
  * for the keytool.
  *
  */
-public class Resources_fr extends java.util.ListResourceBundle {
+public class Resources_fr extends j86.java.util.ListResourceBundle {
 
     private static final Object[][] contents = {
         {"NEWLINE", "\n"},

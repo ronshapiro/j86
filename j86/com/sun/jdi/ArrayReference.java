@@ -23,14 +23,14 @@
  * questions.
  */
 
-package com.sun.jdi;
+package j86.com.sun.jdi;
 
-import java.util.List;
+import j86.java.util.List;
 
 /**
  * Provides access to an array object and its components in the target VM.
  * Each array component is mirrored by a {@link Value} object.
- * The array components, in aggregate, are placed in {@link java.util.List}
+ * The array components, in aggregate, are placed in {@link j86.java.util.List}
  * objects instead of arrays for consistency with the rest of the API and
  * for interoperability with other APIs.
  *
@@ -54,7 +54,7 @@ public interface ArrayReference extends ObjectReference {
      *
      * @param index the index of the component to retrieve
      * @return the {@link Value} at the given index.
-     * @throws java.lang.IndexOutOfBoundsException if
+     * @throws j86.java.lang.IndexOutOfBoundsException if
      * <CODE><I>index</I></CODE> is outside the range of this array,
      * that is, if either of the following are true:
      * <PRE>
@@ -83,7 +83,7 @@ public interface ArrayReference extends ObjectReference {
      * no elements in the specified range (e.g.
      * <CODE><I>length</I></CODE> is zero) an empty list is returned
      *
-     * @throws java.lang.IndexOutOfBoundsException if the range
+     * @throws j86.java.lang.IndexOutOfBoundsException if the range
      * specified with <CODE><I>index</I></CODE> and
      * <CODE><I>length</I></CODE> is not within the range of the array,
      * that is, if either of the following are true:
@@ -111,7 +111,7 @@ public interface ArrayReference extends ObjectReference {
      *
      * @param value the new value
      * @param index the index of the component to set
-     * @throws java.lang.IndexOutOfBoundsException if
+     * @throws j86.java.lang.IndexOutOfBoundsException if
      * <CODE><I>index</I></CODE> is outside the range of this array,
      * that is, if either of the following are true:
      * <PRE>
@@ -182,7 +182,7 @@ public interface ArrayReference extends ObjectReference {
      * @throws InvalidTypeException if any element of
      * <CODE><I>values</I></CODE>
      * is not compatible with the declared type of array components.
-     * @throws java.lang.IndexOutOfBoundsException if the
+     * @throws j86.java.lang.IndexOutOfBoundsException if the
      * array range specified with
      * <CODE><I>index</I></CODE> and  <CODE><I>length</I></CODE>
      * is not within the range of the array,

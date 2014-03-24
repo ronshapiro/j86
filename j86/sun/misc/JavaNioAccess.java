@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.misc;
+package j86.sun.misc;
 
-import java.nio.Buffer;
-import java.nio.ByteBuffer;
+import j86.java.nio.Buffer;
+import j86.java.nio.ByteBuffer;
 
 public interface JavaNioAccess {
     /**

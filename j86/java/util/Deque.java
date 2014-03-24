@@ -33,7 +33,7 @@
  * at http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package java.util;
+package j86.java.util;
 
 /**
  * A linear collection that supports element insertion and removal at
@@ -106,27 +106,27 @@ package java.util;
  *    <td ALIGN=CENTER> <b>Equivalent {@code Deque} Method</b></td>
  *  </tr>
  *  <tr>
- *    <td>{@link java.util.Queue#add add(e)}</td>
+ *    <td>{@link j86.java.util.Queue#add add(e)}</td>
  *    <td>{@link #addLast addLast(e)}</td>
  *  </tr>
  *  <tr>
- *    <td>{@link java.util.Queue#offer offer(e)}</td>
+ *    <td>{@link j86.java.util.Queue#offer offer(e)}</td>
  *    <td>{@link #offerLast offerLast(e)}</td>
  *  </tr>
  *  <tr>
- *    <td>{@link java.util.Queue#remove remove()}</td>
+ *    <td>{@link j86.java.util.Queue#remove remove()}</td>
  *    <td>{@link #removeFirst removeFirst()}</td>
  *  </tr>
  *  <tr>
- *    <td>{@link java.util.Queue#poll poll()}</td>
+ *    <td>{@link j86.java.util.Queue#poll poll()}</td>
  *    <td>{@link #pollFirst pollFirst()}</td>
  *  </tr>
  *  <tr>
- *    <td>{@link java.util.Queue#element element()}</td>
+ *    <td>{@link j86.java.util.Queue#element element()}</td>
  *    <td>{@link #getFirst getFirst()}</td>
  *  </tr>
  *  <tr>
- *    <td>{@link java.util.Queue#peek peek()}</td>
+ *    <td>{@link j86.java.util.Queue#peek peek()}</td>
  *    <td>{@link #peek peekFirst()}</td>
  *  </tr>
  * </table>

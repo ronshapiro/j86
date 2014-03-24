@@ -23,22 +23,22 @@
  * questions.
  */
 
-package java.net;
+package j86.java.net;
 
-import java.io.ByteArrayOutputStream;
-import java.io.BufferedWriter;
-import java.io.OutputStreamWriter;
-import java.io.IOException;
-import java.io.UnsupportedEncodingException;
-import java.io.CharArrayWriter;
-import java.nio.charset.Charset;
-import java.nio.charset.IllegalCharsetNameException;
-import java.nio.charset.UnsupportedCharsetException ;
-import java.util.BitSet;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import sun.security.action.GetBooleanAction;
-import sun.security.action.GetPropertyAction;
+import j86.java.io.ByteArrayOutputStream;
+import j86.java.io.BufferedWriter;
+import j86.java.io.OutputStreamWriter;
+import j86.java.io.IOException;
+import j86.java.io.UnsupportedEncodingException;
+import j86.java.io.CharArrayWriter;
+import j86.j86.java.nio.charset.Charset;
+import j86.j86.java.nio.charset.IllegalCharsetNameException;
+import j86.j86.java.nio.charset.UnsupportedCharsetException ;
+import j86.java.util.BitSet;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.sun.security.action.GetBooleanAction;
+import j86.sun.security.action.GetPropertyAction;
 
 /**
  * Utility class for HTML form encoding. This class contains static methods
@@ -194,7 +194,7 @@ public class URLEncoder {
      * @return  the translated {@code String}.
      * @exception  UnsupportedEncodingException
      *             If the named encoding is not supported
-     * @see URLDecoder#decode(java.lang.String, java.lang.String)
+     * @see URLDecoder#decode(j86.java.lang.String, java.lang.String)
      * @since 1.4
      */
     public static String encode(String s, String enc)

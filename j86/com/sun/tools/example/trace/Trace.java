@@ -32,18 +32,18 @@
  */
 
 
-package com.sun.tools.example.trace;
+package j86.com.sun.tools.example.trace;
 
-import com.sun.jdi.VirtualMachine;
-import com.sun.jdi.Bootstrap;
-import com.sun.jdi.connect.*;
+import j86.com.sun.jdi.VirtualMachine;
+import j86.com.sun.jdi.Bootstrap;
+import j86.j86.com.sun.jdi.connect.*;
 
-import java.util.Map;
-import java.util.List;
+import j86.java.util.Map;
+import j86.java.util.List;
 
-import java.io.PrintWriter;
-import java.io.FileWriter;
-import java.io.IOException;
+import j86.java.io.PrintWriter;
+import j86.java.io.FileWriter;
+import j86.java.io.IOException;
 
 /**
  * This program traces the execution of another program.
@@ -192,12 +192,12 @@ public class Trace {
     }
 
     /**
-     * Find a com.sun.jdi.CommandLineLaunch connector
+     * Find a j86.com.sun.jdi.CommandLineLaunch connector
      */
     LaunchingConnector findLaunchingConnector() {
         List<Connector> connectors = Bootstrap.virtualMachineManager().allConnectors();
         for (Connector connector : connectors) {
-            if (connector.name().equals("com.sun.jdi.CommandLineLaunch")) {
+            if (connector.name().equals("j86.com.sun.jdi.CommandLineLaunch")) {
                 return (LaunchingConnector)connector;
             }
         }

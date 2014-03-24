@@ -59,29 +59,29 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package java.time.chrono;
+package j86.j86.java.time.chrono;
 
-import java.time.Clock;
-import java.time.DateTimeException;
-import java.time.Instant;
-import java.time.LocalDate;
-import java.time.LocalTime;
-import java.time.ZoneId;
-import java.time.format.DateTimeFormatterBuilder;
-import java.time.format.ResolverStyle;
-import java.time.format.TextStyle;
-import java.time.temporal.ChronoField;
-import java.time.temporal.TemporalAccessor;
-import java.time.temporal.TemporalField;
-import java.time.temporal.TemporalQueries;
-import java.time.temporal.TemporalQuery;
-import java.time.temporal.UnsupportedTemporalTypeException;
-import java.time.temporal.ValueRange;
-import java.util.List;
-import java.util.Locale;
-import java.util.Map;
-import java.util.Objects;
-import java.util.Set;
+import j86.java.time.Clock;
+import j86.java.time.DateTimeException;
+import j86.java.time.Instant;
+import j86.java.time.LocalDate;
+import j86.java.time.LocalTime;
+import j86.java.time.ZoneId;
+import j86.j86.java.time.format.DateTimeFormatterBuilder;
+import j86.j86.java.time.format.ResolverStyle;
+import j86.j86.java.time.format.TextStyle;
+import j86.j86.java.time.temporal.ChronoField;
+import j86.j86.java.time.temporal.TemporalAccessor;
+import j86.j86.java.time.temporal.TemporalField;
+import j86.j86.java.time.temporal.TemporalQueries;
+import j86.j86.java.time.temporal.TemporalQuery;
+import j86.j86.java.time.temporal.UnsupportedTemporalTypeException;
+import j86.j86.java.time.temporal.ValueRange;
+import j86.java.util.List;
+import j86.java.util.Locale;
+import j86.java.util.Map;
+import j86.java.util.Objects;
+import j86.java.util.Set;
 
 /**
  * A calendar system, used to organize and identify dates.
@@ -135,9 +135,9 @@ import java.util.Set;
  * The majority of the logic specific to the calendar system will be in
  * {@code ChronoLocalDate}. The {@code Chronology} subclass acts as a factory.
  * <p>
- * To permit the discovery of additional chronologies, the {@link java.util.ServiceLoader ServiceLoader}
+ * To permit the discovery of additional chronologies, the {@link j86.java.util.ServiceLoader ServiceLoader}
  * is used. A file must be added to the {@code META-INF/services} directory with the
- * name 'java.time.chrono.Chronology' listing the implementation classes.
+ * name 'j86.j86.java.time.chrono.Chronology' listing the implementation classes.
  * See the ServiceLoader for more details on service loading.
  * For lookup by id or calendarType, the system provided calendars are found
  * first followed by application provided calendars.
@@ -202,7 +202,7 @@ public interface Chronology extends Comparable<Chronology> {
      * If the "ca" key is not present, then {@code IsoChronology} is returned.
      * <p>
      * Note that the behavior of this method differs from the older
-     * {@link java.util.Calendar#getInstance(Locale)} method.
+     * {@link j86.java.util.Calendar#getInstance(Locale)} method.
      * If that method receives a locale of "th_TH" it will return {@code BuddhistCalendar}.
      * By contrast, this method will return {@code IsoChronology}.
      * Passing the locale "th-TH-u-ca-buddhist" into either method will

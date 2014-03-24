@@ -23,17 +23,17 @@
  * questions.
  */
 
-package sun.tools.jar;
+package j86.sun.tools.jar;
 
-import java.io.*;
-import java.util.*;
-import java.security.*;
+import j86.java.io.*;
+import j86.java.util.*;
+import j86.java.security.*;
 
-import sun.net.www.MessageHeader;
-import java.util.Base64;
+import j86.j86.sun.net.www.MessageHeader;
+import j86.java.util.Base64;
 
 /**
- * This is OBSOLETE. DO NOT USE THIS. Use java.util.jar.Manifest
+ * This is OBSOLETE. DO NOT USE THIS. Use j86.j86.java.util.jar.Manifest
  * instead. It has to stay here because some apps (namely HJ and HJV)
  * call directly into it.
  *
@@ -149,11 +149,11 @@ public class Manifest {
      */
 
     private final String stdToLocal(String name) {
-        return name.replace('/', java.io.File.separatorChar);
+        return name.replace('/', j86.java.io.File.separatorChar);
     }
 
     private final String localToStd(String name) {
-        name = name.replace(java.io.File.separatorChar, '/');
+        name = name.replace(j86.java.io.File.separatorChar, '/');
         if (name.startsWith("./"))
             name = name.substring(2);
         else if (name.startsWith("/"))

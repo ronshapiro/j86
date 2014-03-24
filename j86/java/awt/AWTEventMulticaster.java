@@ -22,20 +22,20 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.awt;
+package j86.java.awt;
 
-import java.awt.event.*;
-import java.lang.reflect.Array;
-import java.util.EventListener;
-import java.io.Serializable;
-import java.io.ObjectOutputStream;
-import java.io.IOException;
-import java.util.EventListener;
+import j86.j86.java.awt.event.*;
+import j86.j86.j86.java.lang.reflect.Array;
+import j86.java.util.EventListener;
+import j86.java.io.Serializable;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.IOException;
+import j86.java.util.EventListener;
 
 
 /**
  * {@code AWTEventMulticaster} implements efficient and thread-safe multi-cast
- * event dispatching for the AWT events defined in the {@code java.awt.event}
+ * event dispatching for the AWT events defined in the {@code j86.j86.java.awt.event}
  * package.
  * <p>
  * The following example illustrates how to use this class:
@@ -93,10 +93,10 @@ import java.util.EventListener;
  *       {@code remove(EventListener)} method.
  * </ul>
  * <p>Swing makes use of
- * {@link javax.swing.event.EventListenerList EventListenerList} for
+ * {@link j86.j86.javax.swing.event.EventListenerList EventListenerList} for
  * similar logic. Refer to it for details.
  *
- * @see javax.swing.event.EventListenerList
+ * @see j86.j86.javax.swing.event.EventListenerList
  *
  * @author      John Rose
  * @author      Amy Fowler
@@ -991,7 +991,7 @@ public class AWTEventMulticaster implements
     /**
      * Returns an array of all the objects chained as
      * <code><em>Foo</em>Listener</code>s by the specified
-     * <code>java.util.EventListener</code>.
+     * <code>j86.java.util.EventListener</code>.
      * <code><em>Foo</em>Listener</code>s are chained by the
      * <code>AWTEventMulticaster</code> using the
      * <code>add<em>Foo</em>Listener</code> method.
@@ -1001,10 +1001,10 @@ public class AWTEventMulticaster implements
      * contains only the specified listener. If no such listeners are chained,
      * this method returns an empty array.
      *
-     * @param l the specified <code>java.util.EventListener</code>
+     * @param l the specified <code>j86.java.util.EventListener</code>
      * @param listenerType the type of listeners requested; this parameter
      *          should specify an interface that descends from
-     *          <code>java.util.EventListener</code>
+     *          <code>j86.java.util.EventListener</code>
      * @return an array of all objects chained as
      *          <code><em>Foo</em>Listener</code>s by the specified multicast
      *          listener, or an empty array if no such listeners have been
@@ -1013,7 +1013,7 @@ public class AWTEventMulticaster implements
      *             {@code listenertype} parameter is {@code null}
      * @exception ClassCastException if <code>listenerType</code>
      *          doesn't specify a class or interface that implements
-     *          <code>java.util.EventListener</code>
+     *          <code>j86.java.util.EventListener</code>
      *
      * @since 1.4
      */

@@ -27,7 +27,7 @@
  */
 
 /*
-        Currently javac and load() method in java.util.Properties
+        Currently javac and load() method in j86.java.util.Properties
         supports only Latin1 encoding input.
         But in Asian platforms programmer or message translator
         uses the editor which support othere than latin1 encoding
@@ -63,19 +63,19 @@
 
 */
 
-package sun.tools.native2ascii;
+package j86.sun.tools.native2ascii;
 
-import java.io.*;
-import java.util.*;
-import java.text.MessageFormat;
-import java.nio.charset.CharsetEncoder;
-import java.nio.charset.Charset;
-import java.nio.charset.IllegalCharsetNameException;
-import java.nio.file.Files;
-import java.io.UnsupportedEncodingException;
-import java.nio.charset.UnsupportedCharsetException;
-import sun.tools.native2ascii.A2NFilter;
-import sun.tools.native2ascii.N2AFilter;
+import j86.java.io.*;
+import j86.java.util.*;
+import j86.java.text.MessageFormat;
+import j86.j86.java.nio.charset.CharsetEncoder;
+import j86.j86.java.nio.charset.Charset;
+import j86.j86.java.nio.charset.IllegalCharsetNameException;
+import j86.j86.java.nio.file.Files;
+import j86.java.io.UnsupportedEncodingException;
+import j86.j86.java.nio.charset.UnsupportedCharsetException;
+import j86.sun.tools.native2ascii.A2NFilter;
+import j86.sun.tools.native2ascii.N2AFilter;
 
 /**
  * Main program of the native2ascii
@@ -348,7 +348,7 @@ public class Main {
     static {
         try {
             rsrc = ResourceBundle.getBundle(
-                     "sun.tools.native2ascii.resources.MsgNative2ascii");
+                     "j86.j86.sun.tools.native2ascii.resources.MsgNative2ascii");
         } catch (MissingResourceException e) {
             throw new Error("Missing message file.");
         }

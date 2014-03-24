@@ -32,7 +32,7 @@
  */
 
 
-package com.sun.tools.example.debug.event;
+package j86.com.sun.tools.example.debug.event;
 
 /**
  * The adapter which receives JDI event sets. The methods in this

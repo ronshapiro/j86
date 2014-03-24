@@ -29,20 +29,20 @@
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
 
-package sun.security.krb5.internal;
+package j86.j86.sun.security.krb5.internal;
 
-import sun.security.krb5.PrincipalName;
-import sun.security.krb5.KrbException;
-import sun.security.krb5.Asn1Exception;
-import sun.security.util.*;
-import java.util.Vector;
-import java.util.ArrayList;
-import java.net.InetAddress;
-import java.net.Inet4Address;
-import java.net.Inet6Address;
-import java.net.UnknownHostException;
-import java.io.IOException;
-import sun.security.krb5.internal.ccache.CCacheOutputStream;
+import j86.sun.security.krb5.PrincipalName;
+import j86.sun.security.krb5.KrbException;
+import j86.sun.security.krb5.Asn1Exception;
+import j86.sun.security.util.*;
+import j86.java.util.Vector;
+import j86.java.util.ArrayList;
+import j86.java.net.InetAddress;
+import j86.java.net.Inet4Address;
+import j86.java.net.Inet6Address;
+import j86.java.net.UnknownHostException;
+import j86.java.io.IOException;
+import j86.j86.j86.sun.security.krb5.internal.ccache.CCacheOutputStream;
 
 /**
  * Implements the ASN.1 HostAddresses type.
@@ -66,7 +66,7 @@ import sun.security.krb5.internal.ccache.CCacheOutputStream;
  */
 
 public class HostAddresses implements Cloneable {
-    private static boolean DEBUG = sun.security.krb5.internal.Krb5.DEBUG;
+    private static boolean DEBUG = j86.j86.sun.security.krb5.internal.Krb5.DEBUG;
     private HostAddress[] addresses = null;
     private volatile int hashCode = 0;
 
@@ -246,7 +246,7 @@ public class HostAddresses implements Cloneable {
          *
          * @param cos a <code>CCacheOutputStream</code> to be written to.
          * @exception IOException if an I/O exception occurs.
-         * @see sun.security.krb5.internal.ccache.CCacheOutputStream
+         * @see j86.j86.j86.sun.security.krb5.internal.ccache.CCacheOutputStream
          */
 
     public void writeAddrs(CCacheOutputStream cos) throws IOException {
@@ -273,7 +273,7 @@ public class HostAddresses implements Cloneable {
                     (addresses[i].addrType == Krb5.ADDRTYPE_INET6)) {
                     ipAddrs.add(addresses[i].getInetAddress());
                 }
-            } catch (java.net.UnknownHostException e) {
+            } catch (j86.java.net.UnknownHostException e) {
                 // Should not happen since IP address given
                 return null;
             }

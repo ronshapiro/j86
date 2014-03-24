@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.security.ec;
+package j86.sun.security.ec;
 
-import java.io.IOException;
+import j86.java.io.IOException;
 
-import java.security.*;
-import java.security.spec.*;
+import j86.java.security.*;
+import j86.j86.java.security.spec.*;
 
-import sun.security.util.*;
+import j86.sun.security.util.*;
 
 /**
  * This class implements encoding and decoding of Elliptic Curve parameters

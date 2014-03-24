@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.jvmstat.perfdata.monitor.protocol.rmi;
+package j86.j86.sun.jvmstat.perfdata.monitor.protocol.rmi;
 
-import sun.jvmstat.monitor.*;
-import sun.jvmstat.monitor.remote.*;
-import sun.jvmstat.perfdata.monitor.*;
-import java.io.*;
-import java.rmi.RemoteException;
-import java.nio.ByteBuffer;
+import j86.sun.jvmstat.monitor.*;
+import j86.j86.sun.jvmstat.monitor.remote.*;
+import j86.sun.jvmstat.perfdata.monitor.*;
+import j86.java.io.*;
+import j86.java.rmi.RemoteException;
+import j86.java.nio.ByteBuffer;
 
 /**
  * The concrete PerfDataBuffer implementation for the <em>rmi:</em>

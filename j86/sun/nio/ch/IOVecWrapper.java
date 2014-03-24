@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.nio.ch;
+package j86.j86.j86.sun.nio.ch;
 
-import java.nio.ByteBuffer;
-import sun.misc.*;
+import j86.java.nio.ByteBuffer;
+import j86.sun.misc.*;
 
 
 /**

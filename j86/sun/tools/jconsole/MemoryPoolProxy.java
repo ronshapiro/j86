@@ -23,18 +23,18 @@
  * questions.
  */
 
-package sun.tools.jconsole;
+package j86.sun.tools.jconsole;
 
-import javax.management.ObjectName;
-import java.lang.management.MemoryPoolMXBean;
-import java.lang.management.MemoryUsage;
-import com.sun.management.GarbageCollectorMXBean;
-import com.sun.management.GcInfo;
-import java.util.HashMap;
-import java.util.Set;
-import java.util.Map;
+import j86.javax.management.ObjectName;
+import j86.j86.java.lang.management.MemoryPoolMXBean;
+import j86.j86.java.lang.management.MemoryUsage;
+import com.j86.sun.management.GarbageCollectorMXBean;
+import com.j86.sun.management.GcInfo;
+import j86.java.util.HashMap;
+import j86.java.util.Set;
+import j86.java.util.Map;
 
-import static java.lang.management.ManagementFactory.*;
+import static j86.j86.java.lang.management.ManagementFactory.*;
 
 public class MemoryPoolProxy {
     private String poolName;
@@ -43,7 +43,7 @@ public class MemoryPoolProxy {
     private Map<ObjectName,Long> gcMBeans;
     private GcInfo lastGcInfo;
 
-    public MemoryPoolProxy(ProxyClient client, ObjectName poolName) throws java.io.IOException {
+    public MemoryPoolProxy(ProxyClient client, ObjectName poolName) throws j86.java.io.IOException {
         this.client = client;
         this.pool = client.getMXBean(poolName, MemoryPoolMXBean.class);
         this.poolName = this.pool.getName();
@@ -69,7 +69,7 @@ public class MemoryPoolProxy {
         return (gcMBeans.size() != 0);
     }
 
-    public MemoryPoolStat getStat() throws java.io.IOException {
+    public MemoryPoolStat getStat() throws j86.java.io.IOException {
         long usageThreshold = (pool.isUsageThresholdSupported()
                                   ? pool.getUsageThreshold()
                                   : -1);
@@ -93,7 +93,7 @@ public class MemoryPoolProxy {
         for (Map.Entry<ObjectName,Long> e : set) {
             GarbageCollectorMXBean gc =
                 client.getMXBean(e.getKey(),
-                                 com.sun.management.GarbageCollectorMXBean.class);
+                                 com.j86.sun.management.GarbageCollectorMXBean.class);
             Long gcCount = e.getValue();
             Long newCount = gc.getCollectionCount();
             if (newCount > gcCount) {

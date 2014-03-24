@@ -23,17 +23,17 @@
  * questions.
  */
 
-package javax.swing.plaf.synth;
+package j86.j86.j86.javax.swing.plaf.synth;
 
-import java.awt.*;
-import java.awt.event.*;
-import javax.swing.*;
-import javax.swing.plaf.*;
-import javax.swing.plaf.basic.BasicInternalFrameTitlePane;
-import java.beans.PropertyChangeListener;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyVetoException;
-import sun.swing.SwingUtilities2;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.j86.javax.swing.plaf.basic.BasicInternalFrameTitlePane;
+import j86.java.beans.PropertyChangeListener;
+import j86.java.beans.PropertyChangeEvent;
+import j86.java.beans.PropertyVetoException;
+import j86.sun.swing.SwingUtilities2;
 
 /**
  * The class that manages a synth title bar

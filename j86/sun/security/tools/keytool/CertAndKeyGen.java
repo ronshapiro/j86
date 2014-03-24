@@ -23,17 +23,17 @@
  * questions.
  */
 
-package sun.security.tools.keytool;
+package j86.j86.sun.security.tools.keytool;
 
-import java.io.IOException;
-import java.security.cert.X509Certificate;
-import java.security.cert.CertificateException;
-import java.security.cert.CertificateEncodingException;
-import java.security.*;
-import java.util.Date;
+import j86.java.io.IOException;
+import j86.j86.java.security.cert.X509Certificate;
+import j86.j86.java.security.cert.CertificateException;
+import j86.j86.java.security.cert.CertificateEncodingException;
+import j86.java.security.*;
+import j86.java.util.Date;
 
-import sun.security.pkcs10.PKCS10;
-import sun.security.x509.*;
+import j86.j86.sun.security.pkcs10.PKCS10;
+import j86.sun.security.x509.*;
 
 
 /**
@@ -254,7 +254,7 @@ public final class CertAndKeyGen {
             info.set(X509CertInfo.VERSION,
                      new CertificateVersion(CertificateVersion.V3));
             info.set(X509CertInfo.SERIAL_NUMBER, new CertificateSerialNumber(
-                    new java.util.Random().nextInt() & 0x7fffffff));
+                    new j86.java.util.Random().nextInt() & 0x7fffffff));
             AlgorithmId algID = AlgorithmId.get(sigAlg);
             info.set(X509CertInfo.ALGORITHM_ID,
                      new CertificateAlgorithmId(algID));

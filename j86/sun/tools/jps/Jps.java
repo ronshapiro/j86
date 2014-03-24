@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.tools.jps;
+package j86.sun.tools.jps;
 
-import java.util.*;
-import java.net.*;
-import sun.jvmstat.monitor.*;
+import j86.java.util.*;
+import j86.java.net.*;
+import j86.sun.jvmstat.monitor.*;
 
 /**
  * Application to provide a listing of monitorable java processes.

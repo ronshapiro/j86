@@ -23,21 +23,21 @@
  * questions.
  */
 
-package sun.security.ec;
+package j86.sun.security.ec;
 
-import java.math.BigInteger;
-import java.security.*;
-import java.security.spec.AlgorithmParameterSpec;
-import java.security.spec.ECGenParameterSpec;
-import java.security.spec.ECParameterSpec;
-import java.security.spec.ECPoint;
+import j86.java.math.BigInteger;
+import j86.java.security.*;
+import j86.j86.java.security.spec.AlgorithmParameterSpec;
+import j86.j86.java.security.spec.ECGenParameterSpec;
+import j86.j86.java.security.spec.ECParameterSpec;
+import j86.j86.java.security.spec.ECPoint;
 
-import sun.security.ec.NamedCurve;
-import sun.security.ec.ECParameters;
-import sun.security.ec.ECPrivateKeyImpl;
-import sun.security.ec.ECPublicKeyImpl;
-import sun.security.jca.JCAUtil;
-import sun.security.util.ECUtil;
+import j86.sun.security.ec.NamedCurve;
+import j86.sun.security.ec.ECParameters;
+import j86.sun.security.ec.ECPrivateKeyImpl;
+import j86.sun.security.ec.ECPublicKeyImpl;
+import j86.sun.security.jca.JCAUtil;
+import j86.sun.security.util.ECUtil;
 
 /**
  * EC keypair generator.

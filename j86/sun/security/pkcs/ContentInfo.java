@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.security.pkcs;
+package j86.sun.security.pkcs;
 
-import java.io.*;
+import j86.java.io.*;
 
-import sun.security.util.*;
+import j86.sun.security.util.*;
 
 /**
  * A ContentInfo type, as defined in PKCS#7.

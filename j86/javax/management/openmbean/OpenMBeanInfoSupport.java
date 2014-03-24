@@ -24,26 +24,26 @@
  */
 
 
-package javax.management.openmbean;
+package j86.j86.javax.management.openmbean;
 
 
 // java import
 //
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Objects;
+import j86.java.util.Arrays;
+import j86.java.util.HashSet;
+import j86.java.util.Objects;
 
-import javax.management.Descriptor;
-import javax.management.MBeanAttributeInfo;
-import javax.management.MBeanConstructorInfo;
-import javax.management.MBeanInfo;
-import javax.management.MBeanNotificationInfo;
-import javax.management.MBeanOperationInfo;
+import j86.javax.management.Descriptor;
+import j86.javax.management.MBeanAttributeInfo;
+import j86.javax.management.MBeanConstructorInfo;
+import j86.javax.management.MBeanInfo;
+import j86.javax.management.MBeanNotificationInfo;
+import j86.javax.management.MBeanOperationInfo;
 
 /**
  * The {@code OpenMBeanInfoSupport} class describes the management
  * information of an <i>open MBean</i>: it is a subclass of {@link
- * javax.management.MBeanInfo}, and it implements the {@link
+ * j86.javax.management.MBeanInfo}, and it implements the {@link
  * OpenMBeanInfo} interface.  Note that an <i>open MBean</i> is
  * recognized as such if its {@code getMBeanInfo()} method returns an
  * instance of a class which implements the OpenMBeanInfo interface,
@@ -219,7 +219,7 @@ public class OpenMBeanInfoSupport
 
 
 
-    /* ***  Commodity methods from java.lang.Object  *** */
+    /* ***  Commodity methods from j86.java.lang.Object  *** */
 
 
     /**
@@ -315,7 +315,7 @@ public class OpenMBeanInfoSupport
      * infos on attributes, constructors, operations and
      * notifications, where the hashCode of each of these arrays is
      * calculated by a call to {@code new
-     * java.util.HashSet(java.util.Arrays.asList(this.getSignature)).hashCode()}).</p>
+     * j86.java.util.HashSet(java.util.Arrays.asList(this.getSignature)).hashCode()}).</p>
      *
      * <p>This ensures that {@code t1.equals(t2)} implies that {@code
      * t1.hashCode()==t2.hashCode()} for any two {@code
@@ -326,7 +326,7 @@ public class OpenMBeanInfoSupport
      * <p>However, note that another instance of a class implementing
      * the {@code OpenMBeanInfo} interface may be equal to this {@code
      * OpenMBeanInfoSupport} instance as defined by {@link
-     * #equals(java.lang.Object)}, but may have a different hash code
+     * #equals(j86.java.lang.Object)}, but may have a different hash code
      * if it is calculated differently.</p>
      *
      * <p>As {@code OpenMBeanInfoSupport} instances are immutable, the
@@ -370,7 +370,7 @@ public class OpenMBeanInfoSupport
      * OpenMBeanInfoSupport} instance.</p>
      *
      * <p>The string representation consists of the name of this class
-     * (ie {@code javax.management.openmbean.OpenMBeanInfoSupport}),
+     * (ie {@code j86.j86.javax.management.openmbean.OpenMBeanInfoSupport}),
      * the MBean class name, the string representation of infos on
      * attributes, constructors, operations and notifications of the
      * described MBean and the string representation of the descriptor.</p>

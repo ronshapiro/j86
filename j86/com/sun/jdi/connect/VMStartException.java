@@ -23,12 +23,12 @@
  * questions.
  */
 
-package com.sun.jdi.connect;
+package j86.j86.com.sun.jdi.connect;
 
 /**
  * A target VM was successfully launched, but terminated with an
  * error before a connection could be established. This exception
- * provides the {@link java.lang.Process} object for the launched
+ * provides the {@link j86.java.lang.Process} object for the launched
  * target to help in diagnosing the problem.
  *
  * @author Gordon Hirsch

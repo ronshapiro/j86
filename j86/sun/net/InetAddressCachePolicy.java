@@ -23,23 +23,23 @@
  * questions.
  */
 
-package sun.net;
+package j86.sun.net;
 
-import java.security.PrivilegedAction;
-import java.security.Security;
+import j86.java.security.PrivilegedAction;
+import j86.java.security.Security;
 
 public final class InetAddressCachePolicy {
 
     // Controls the cache policy for successful lookups only
     private static final String cachePolicyProp = "networkaddress.cache.ttl";
     private static final String cachePolicyPropFallback =
-        "sun.net.inetaddr.ttl";
+        "j86.sun.net.inetaddr.ttl";
 
     // Controls the cache policy for negative lookups only
     private static final String negativeCachePolicyProp =
         "networkaddress.cache.negative.ttl";
     private static final String negativeCachePolicyPropFallback =
-        "sun.net.inetaddr.negative.ttl";
+        "j86.sun.net.inetaddr.negative.ttl";
 
     public static final int FOREVER = -1;
     public static final int NEVER = 0;
@@ -88,7 +88,7 @@ public final class InetAddressCachePolicy {
 
         try {
             tmp = new Integer(
-              java.security.AccessController.doPrivileged (
+              j86.java.security.AccessController.doPrivileged (
                 new PrivilegedAction<String>() {
                   public String run() {
                       return Security.getProperty(cachePolicyProp);
@@ -104,8 +104,8 @@ public final class InetAddressCachePolicy {
             }
             propertySet = true;
         } else {
-            tmp = java.security.AccessController.doPrivileged
-                (new sun.security.action.GetIntegerAction(cachePolicyPropFallback));
+            tmp = j86.java.security.AccessController.doPrivileged
+                (new j86.sun.security.action.GetIntegerAction(cachePolicyPropFallback));
             if (tmp != null) {
                 cachePolicy = tmp.intValue();
                 if (cachePolicy < 0) {
@@ -124,7 +124,7 @@ public final class InetAddressCachePolicy {
 
         try {
             tmp = new Integer(
-              java.security.AccessController.doPrivileged (
+              j86.java.security.AccessController.doPrivileged (
                 new PrivilegedAction<String>() {
                   public String run() {
                       return Security.getProperty(negativeCachePolicyProp);
@@ -141,8 +141,8 @@ public final class InetAddressCachePolicy {
             }
             propertyNegativeSet = true;
         } else {
-            tmp = java.security.AccessController.doPrivileged
-                (new sun.security.action.GetIntegerAction(negativeCachePolicyPropFallback));
+            tmp = j86.java.security.AccessController.doPrivileged
+                (new j86.sun.security.action.GetIntegerAction(negativeCachePolicyPropFallback));
             if (tmp != null) {
                 negativeCachePolicy = tmp.intValue();
                 if (negativeCachePolicy < 0) {

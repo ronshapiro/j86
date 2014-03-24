@@ -23,19 +23,19 @@
  * questions.
  */
 
-package com.sun.java.swing.plaf.motif;
+package j86.j86.com.sun.java.swing.plaf.motif;
 
-import java.awt.*;
-import java.awt.event.*;
-import javax.swing.*;
-import javax.swing.border.*;
-import javax.swing.event.InternalFrameEvent;
-import javax.swing.plaf.basic.*;
-import java.util.EventListener;
-import java.beans.PropertyChangeListener;
-import java.beans.PropertyChangeEvent;
-import java.beans.VetoableChangeListener;
-import java.beans.PropertyVetoException;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.border.*;
+import j86.j86.javax.swing.event.InternalFrameEvent;
+import j86.j86.j86.javax.swing.plaf.basic.*;
+import j86.java.util.EventListener;
+import j86.java.beans.PropertyChangeListener;
+import j86.java.beans.PropertyChangeEvent;
+import j86.java.beans.VetoableChangeListener;
+import j86.java.beans.PropertyVetoException;
 
 /**
  * Class that manages a Motif title bar

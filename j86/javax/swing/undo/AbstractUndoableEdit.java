@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.swing.undo;
+package j86.j86.javax.swing.undo;
 
-import java.io.Serializable;
-import javax.swing.UIManager;
+import j86.java.io.Serializable;
+import j86.javax.swing.UIManager;
 
 /**
  * An abstract implementation of <code>UndoableEdit</code>,
@@ -43,7 +43,7 @@ public class AbstractUndoableEdit implements UndoableEdit, Serializable {
      * is now localized and comes from the defaults table with key
      * <code>AbstractUndoableEdit.undoText</code>.
      *
-     * @see javax.swing.UIDefaults
+     * @see j86.javax.swing.UIDefaults
      */
     protected static final String UndoName = "Undo";
 
@@ -53,7 +53,7 @@ public class AbstractUndoableEdit implements UndoableEdit, Serializable {
      * is now localized and comes from the defaults table with key
      * <code>AbstractUndoableEdit.redoText</code>.
      *
-     * @see javax.swing.UIDefaults
+     * @see j86.javax.swing.UIDefaults
      */
     protected static final String RedoName = "Redo";
 

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.security.action;
+package j86.sun.security.action;
 
 /**
  * A convenience class for retrieving the integer value of a system property
@@ -39,8 +39,8 @@ package sun.security.action;
  * <code>null</code>: <p>
  *
  * <pre>
- * Integer tmp = java.security.AccessController.doPrivileged
- *     (new sun.security.action.GetIntegerAction("prop"));
+ * Integer tmp = j86.java.security.AccessController.doPrivileged
+ *     (new j86.sun.security.action.GetIntegerAction("prop"));
  * int i;
  * if (tmp != null) {
  *     i = tmp.intValue();
@@ -53,18 +53,18 @@ package sun.security.action;
  * defined: <p>
  *
  * <pre>
- * int i = ((Integer)java.security.AccessController.doPrivileged(
+ * int i = ((Integer)j86.java.security.AccessController.doPrivileged(
  *                         new GetIntegerAction("prop", 3))).intValue();
  * </pre>
  *
  * @author Roland Schemers
- * @see java.security.PrivilegedAction
- * @see java.security.AccessController
+ * @see j86.java.security.PrivilegedAction
+ * @see j86.java.security.AccessController
  * @since 1.2
  */
 
 public class GetIntegerAction
-        implements java.security.PrivilegedAction<Integer> {
+        implements j86.java.security.PrivilegedAction<Integer> {
     private String theProp;
     private int defaultVal;
     private boolean defaultSet = false;

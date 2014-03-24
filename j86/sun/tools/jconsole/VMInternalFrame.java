@@ -23,13 +23,13 @@
  * questions.
  */
 
-package sun.tools.jconsole;
+package j86.sun.tools.jconsole;
 
-import java.awt.*;
-import javax.swing.*;
+import j86.java.awt.*;
+import j86.javax.swing.*;
 
 
-import static sun.tools.jconsole.Utilities.*;
+import static j86.sun.tools.jconsole.Utilities.*;
 
 @SuppressWarnings("serial")
 public class VMInternalFrame extends MaximizableInternalFrame {

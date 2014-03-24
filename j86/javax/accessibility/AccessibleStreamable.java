@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.accessibility;
+package j86.javax.accessibility;
 
-import java.io.InputStream;
-import java.awt.datatransfer.DataFlavor;
+import j86.java.io.InputStream;
+import j86.j86.java.awt.datatransfer.DataFlavor;
 
 /**
  *
@@ -41,7 +41,7 @@ import java.awt.datatransfer.DataFlavor;
  * @author Lynn Monsanto
  * @author Peter Korn
  *
- * @see javax.accessibility.AccessibleContext
+ * @see j86.javax.accessibility.AccessibleContext
  * @since 1.5
  */
 public interface AccessibleStreamable {

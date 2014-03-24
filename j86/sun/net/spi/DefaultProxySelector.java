@@ -23,22 +23,22 @@
  * questions.
  */
 
-package sun.net.spi;
+package j86.j86.sun.net.spi;
 
-import java.net.InetSocketAddress;
-import java.net.Proxy;
-import java.net.ProxySelector;
-import java.net.SocketAddress;
-import java.net.URI;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.StringTokenizer;
-import java.io.IOException;
-import sun.misc.RegexpPool;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import sun.net.NetProperties;
-import sun.net.SocksProxy;
+import j86.java.net.InetSocketAddress;
+import j86.java.net.Proxy;
+import j86.java.net.ProxySelector;
+import j86.java.net.SocketAddress;
+import j86.java.net.URI;
+import j86.java.util.ArrayList;
+import j86.java.util.List;
+import j86.java.util.StringTokenizer;
+import j86.java.io.IOException;
+import j86.sun.misc.RegexpPool;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.sun.net.NetProperties;
+import j86.sun.net.SocksProxy;
 
 /**
  * Supports proxy settings using system properties This proxy selector
@@ -87,15 +87,15 @@ public class DefaultProxySelector extends ProxySelector {
     private static boolean hasSystemProxies = false;
 
     static {
-        final String key = "java.net.useSystemProxies";
+        final String key = "j86.java.net.useSystemProxies";
         Boolean b = AccessController.doPrivileged(
             new PrivilegedAction<Boolean>() {
                 public Boolean run() {
                     return NetProperties.getBoolean(key);
                 }});
         if (b != null && b.booleanValue()) {
-            java.security.AccessController.doPrivileged(
-                new java.security.PrivilegedAction<Void>() {
+            j86.java.security.AccessController.doPrivileged(
+                new j86.java.security.PrivilegedAction<Void>() {
                     public Void run() {
                         System.loadLibrary("net");
                         return null;
@@ -142,7 +142,7 @@ public class DefaultProxySelector extends ProxySelector {
      * from previous releases (see list above), that list will always
      * contain 1 single proxy, default being NO_PROXY.
      */
-    public java.util.List<Proxy> select(URI uri) {
+    public j86.java.util.List<Proxy> select(URI uri) {
         if (uri == null) {
             throw new IllegalArgumentException("URI can't be null.");
         }
@@ -272,7 +272,7 @@ public class DefaultProxySelector extends ProxySelector {
                                                 while (st.hasMoreTokens()) {
                                                     pool.add(st.nextToken().toLowerCase(), Boolean.TRUE);
                                                 }
-                                            } catch (sun.misc.REException ex) {
+                                            } catch (j86.sun.misc.REException ex) {
                                             }
                                             nprop.hostsPool = pool;
                                             nprop.hostsSource = nphosts;

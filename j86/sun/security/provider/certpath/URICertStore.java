@@ -23,40 +23,40 @@
  * questions.
  */
 
-package sun.security.provider.certpath;
+package j86.j86.sun.security.provider.certpath;
 
-import java.io.InputStream;
-import java.io.IOException;
-import java.net.HttpURLConnection;
-import java.net.URI;
-import java.net.URLConnection;
-import java.security.InvalidAlgorithmParameterException;
-import java.security.NoSuchAlgorithmException;
-import java.security.Provider;
-import java.security.cert.CertificateException;
-import java.security.cert.CertificateFactory;
-import java.security.cert.CertSelector;
-import java.security.cert.CertStore;
-import java.security.cert.CertStoreException;
-import java.security.cert.CertStoreParameters;
-import java.security.cert.CertStoreSpi;
-import java.security.cert.CRLException;
-import java.security.cert.CRLSelector;
-import java.security.cert.X509Certificate;
-import java.security.cert.X509CertSelector;
-import java.security.cert.X509CRL;
-import java.security.cert.X509CRLSelector;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
-import java.util.Locale;
-import sun.security.action.GetIntegerAction;
-import sun.security.x509.AccessDescription;
-import sun.security.x509.GeneralNameInterface;
-import sun.security.x509.URIName;
-import sun.security.util.Cache;
-import sun.security.util.Debug;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
+import j86.java.net.HttpURLConnection;
+import j86.java.net.URI;
+import j86.java.net.URLConnection;
+import j86.java.security.InvalidAlgorithmParameterException;
+import j86.java.security.NoSuchAlgorithmException;
+import j86.java.security.Provider;
+import j86.j86.java.security.cert.CertificateException;
+import j86.j86.java.security.cert.CertificateFactory;
+import j86.j86.java.security.cert.CertSelector;
+import j86.j86.java.security.cert.CertStore;
+import j86.j86.java.security.cert.CertStoreException;
+import j86.j86.java.security.cert.CertStoreParameters;
+import j86.j86.java.security.cert.CertStoreSpi;
+import j86.j86.java.security.cert.CRLException;
+import j86.j86.java.security.cert.CRLSelector;
+import j86.j86.java.security.cert.X509Certificate;
+import j86.j86.java.security.cert.X509CertSelector;
+import j86.j86.java.security.cert.X509CRL;
+import j86.j86.java.security.cert.X509CRLSelector;
+import j86.java.util.ArrayList;
+import j86.java.util.Collection;
+import j86.java.util.Collections;
+import j86.java.util.List;
+import j86.java.util.Locale;
+import j86.sun.security.action.GetIntegerAction;
+import j86.sun.security.x509.AccessDescription;
+import j86.sun.security.x509.GeneralNameInterface;
+import j86.sun.security.x509.URIName;
+import j86.sun.security.util.Cache;
+import j86.sun.security.util.Debug;
 
 /**
  * A <code>CertStore</code> that retrieves <code>Certificates</code> or
@@ -139,7 +139,7 @@ class URICertStore extends CertStoreSpi {
      * value is negative, set the timeout length to the default.
      */
     private static int initializeTimeout() {
-        Integer tmp = java.security.AccessController.doPrivileged(
+        Integer tmp = j86.java.security.AccessController.doPrivileged(
                 new GetIntegerAction("com.sun.security.crl.timeout"));
         if (tmp == null || tmp < 0) {
             return DEFAULT_CRL_CONNECT_TIMEOUT;

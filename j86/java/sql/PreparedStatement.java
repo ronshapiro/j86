@@ -23,12 +23,12 @@
  * questions.
  */
 
-package java.sql;
+package j86.java.sql;
 
-import java.math.BigDecimal;
-import java.util.Calendar;
-import java.io.Reader;
-import java.io.InputStream;
+import j86.java.math.BigDecimal;
+import j86.java.util.Calendar;
+import j86.java.io.Reader;
+import j86.java.io.InputStream;
 
 /**
  * An object that represents a precompiled SQL statement.
@@ -100,7 +100,7 @@ public interface PreparedStatement extends Statement {
      * <P><B>Note:</B> You must specify the parameter's SQL type.
      *
      * @param parameterIndex the first parameter is 1, the second is 2, ...
-     * @param sqlType the SQL type code defined in <code>java.sql.Types</code>
+     * @param sqlType the SQL type code defined in <code>j86.java.sql.Types</code>
      * @exception SQLException if parameterIndex does not correspond to a parameter
      * marker in the SQL statement; if a database access error occurs or
      * this method is called on a closed <code>PreparedStatement</code>
@@ -207,7 +207,7 @@ public interface PreparedStatement extends Statement {
     void setDouble(int parameterIndex, double x) throws SQLException;
 
     /**
-     * Sets the designated parameter to the given <code>java.math.BigDecimal</code> value.
+     * Sets the designated parameter to the given <code>j86.java.math.BigDecimal</code> value.
      * The driver converts this to an SQL <code>NUMERIC</code> value when
      * it sends it to the database.
      *
@@ -250,7 +250,7 @@ public interface PreparedStatement extends Statement {
     void setBytes(int parameterIndex, byte x[]) throws SQLException;
 
     /**
-     * Sets the designated parameter to the given <code>java.sql.Date</code> value
+     * Sets the designated parameter to the given <code>j86.java.sql.Date</code> value
      * using the default time zone of the virtual machine that is running
      * the application.
      * The driver converts this
@@ -262,11 +262,11 @@ public interface PreparedStatement extends Statement {
      * marker in the SQL statement; if a database access error occurs or
      * this method is called on a closed <code>PreparedStatement</code>
      */
-    void setDate(int parameterIndex, java.sql.Date x)
+    void setDate(int parameterIndex, j86.java.sql.Date x)
             throws SQLException;
 
     /**
-     * Sets the designated parameter to the given <code>java.sql.Time</code> value.
+     * Sets the designated parameter to the given <code>j86.java.sql.Time</code> value.
      * The driver converts this
      * to an SQL <code>TIME</code> value when it sends it to the database.
      *
@@ -276,11 +276,11 @@ public interface PreparedStatement extends Statement {
      * marker in the SQL statement; if a database access error occurs or
      * this method is called on a closed <code>PreparedStatement</code>
      */
-    void setTime(int parameterIndex, java.sql.Time x)
+    void setTime(int parameterIndex, j86.java.sql.Time x)
             throws SQLException;
 
     /**
-     * Sets the designated parameter to the given <code>java.sql.Timestamp</code> value.
+     * Sets the designated parameter to the given <code>j86.java.sql.Timestamp</code> value.
      * The driver
      * converts this to an SQL <code>TIMESTAMP</code> value when it sends it to the
      * database.
@@ -290,7 +290,7 @@ public interface PreparedStatement extends Statement {
      * @exception SQLException if parameterIndex does not correspond to a parameter
      * marker in the SQL statement; if a database access error occurs or
      * this method is called on a closed <code>PreparedStatement</code>     */
-    void setTimestamp(int parameterIndex, java.sql.Timestamp x)
+    void setTimestamp(int parameterIndex, j86.java.sql.Timestamp x)
             throws SQLException;
 
     /**
@@ -298,7 +298,7 @@ public interface PreparedStatement extends Statement {
      * the specified number of bytes.
      * When a very large ASCII value is input to a <code>LONGVARCHAR</code>
      * parameter, it may be more practical to send it via a
-     * <code>java.io.InputStream</code>. Data will be read from the stream
+     * <code>j86.java.io.InputStream</code>. Data will be read from the stream
      * as needed until end-of-file is reached.  The JDBC driver will
      * do any necessary conversion from ASCII to the database char format.
      *
@@ -313,7 +313,7 @@ public interface PreparedStatement extends Statement {
      * marker in the SQL statement; if a database access error occurs or
      * this method is called on a closed <code>PreparedStatement</code>
      */
-    void setAsciiStream(int parameterIndex, java.io.InputStream x, int length)
+    void setAsciiStream(int parameterIndex, j86.java.io.InputStream x, int length)
             throws SQLException;
 
     /**
@@ -322,7 +322,7 @@ public interface PreparedStatement extends Statement {
      *
      * When a very large Unicode value is input to a <code>LONGVARCHAR</code>
      * parameter, it may be more practical to send it via a
-     * <code>java.io.InputStream</code> object. The data will be read from the
+     * <code>j86.java.io.InputStream</code> object. The data will be read from the
      * stream as needed until end-of-file is reached.  The JDBC driver will
      * do any necessary conversion from Unicode to the database char format.
      *
@@ -334,7 +334,7 @@ public interface PreparedStatement extends Statement {
      * standard interface.
      *
      * @param parameterIndex the first parameter is 1, the second is 2, ...
-     * @param x a <code>java.io.InputStream</code> object that contains the
+     * @param x a <code>j86.java.io.InputStream</code> object that contains the
      *        Unicode parameter value
      * @param length the number of bytes in the stream
      * @exception SQLException if parameterIndex does not correspond to a parameter
@@ -345,7 +345,7 @@ public interface PreparedStatement extends Statement {
      * @deprecated Use {@code setCharacterStream}
      */
     @Deprecated
-    void setUnicodeStream(int parameterIndex, java.io.InputStream x,
+    void setUnicodeStream(int parameterIndex, j86.java.io.InputStream x,
                           int length) throws SQLException;
 
     /**
@@ -353,7 +353,7 @@ public interface PreparedStatement extends Statement {
      * the specified number of bytes.
      * When a very large binary value is input to a <code>LONGVARBINARY</code>
      * parameter, it may be more practical to send it via a
-     * <code>java.io.InputStream</code> object. The data will be read from the
+     * <code>j86.java.io.InputStream</code> object. The data will be read from the
      * stream as needed until end-of-file is reached.
      *
      * <P><B>Note:</B> This stream object can either be a standard
@@ -367,7 +367,7 @@ public interface PreparedStatement extends Statement {
      * marker in the SQL statement; if a database access error occurs or
      * this method is called on a closed <code>PreparedStatement</code>
      */
-    void setBinaryStream(int parameterIndex, java.io.InputStream x,
+    void setBinaryStream(int parameterIndex, j86.java.io.InputStream x,
                          int length) throws SQLException;
 
     /**
@@ -395,7 +395,7 @@ public interface PreparedStatement extends Statement {
     *
     * @param parameterIndex the first parameter is 1, the second is 2, ...
     * @param x the object containing the input parameter value
-    * @param targetSqlType the SQL type (as defined in java.sql.Types) to be
+    * @param targetSqlType the SQL type (as defined in j86.java.sql.Types) to be
     *                      sent to the database
     * @exception SQLException if parameterIndex does not correspond to a parameter
     * marker in the SQL statement; if a database access error occurs or this
@@ -424,7 +424,7 @@ public interface PreparedStatement extends Statement {
      * to write it to the SQL data stream.
      * If, on the other hand, the object is of a class implementing
      * <code>Ref</code>, <code>Blob</code>, <code>Clob</code>,  <code>NClob</code>,
-     *  <code>Struct</code>, <code>java.net.URL</code>, <code>RowId</code>, <code>SQLXML</code>
+     *  <code>Struct</code>, <code>j86.java.net.URL</code>, <code>RowId</code>, <code>SQLXML</code>
      * or <code>Array</code>, the driver should pass it to the database as a
      * value of the corresponding SQL type.
      * <P>
@@ -496,7 +496,7 @@ public interface PreparedStatement extends Statement {
      * object, which is the given number of characters long.
      * When a very large UNICODE value is input to a <code>LONGVARCHAR</code>
      * parameter, it may be more practical to send it via a
-     * <code>java.io.Reader</code> object. The data will be read from the stream
+     * <code>j86.java.io.Reader</code> object. The data will be read from the stream
      * as needed until end-of-file is reached.  The JDBC driver will
      * do any necessary conversion from UNICODE to the database char format.
      *
@@ -505,7 +505,7 @@ public interface PreparedStatement extends Statement {
      * standard interface.
      *
      * @param parameterIndex the first parameter is 1, the second is 2, ...
-     * @param reader the <code>java.io.Reader</code> object that contains the
+     * @param reader the <code>j86.java.io.Reader</code> object that contains the
      *        Unicode data
      * @param length the number of characters in the stream
      * @exception SQLException if parameterIndex does not correspond to a parameter
@@ -514,7 +514,7 @@ public interface PreparedStatement extends Statement {
      * @since 1.2
      */
     void setCharacterStream(int parameterIndex,
-                          java.io.Reader reader,
+                          j86.java.io.Reader reader,
                           int length) throws SQLException;
 
     /**
@@ -534,7 +534,7 @@ public interface PreparedStatement extends Statement {
     void setRef (int parameterIndex, Ref x) throws SQLException;
 
     /**
-     * Sets the designated parameter to the given <code>java.sql.Blob</code> object.
+     * Sets the designated parameter to the given <code>j86.java.sql.Blob</code> object.
      * The driver converts this to an SQL <code>BLOB</code> value when it
      * sends it to the database.
      *
@@ -549,7 +549,7 @@ public interface PreparedStatement extends Statement {
     void setBlob (int parameterIndex, Blob x) throws SQLException;
 
     /**
-     * Sets the designated parameter to the given <code>java.sql.Clob</code> object.
+     * Sets the designated parameter to the given <code>j86.java.sql.Clob</code> object.
      * The driver converts this to an SQL <code>CLOB</code> value when it
      * sends it to the database.
      *
@@ -564,7 +564,7 @@ public interface PreparedStatement extends Statement {
     void setClob (int parameterIndex, Clob x) throws SQLException;
 
     /**
-     * Sets the designated parameter to the given <code>java.sql.Array</code> object.
+     * Sets the designated parameter to the given <code>j86.java.sql.Array</code> object.
      * The driver converts this to an SQL <code>ARRAY</code> value when it
      * sends it to the database.
      *
@@ -607,7 +607,7 @@ public interface PreparedStatement extends Statement {
     ResultSetMetaData getMetaData() throws SQLException;
 
     /**
-     * Sets the designated parameter to the given <code>java.sql.Date</code> value,
+     * Sets the designated parameter to the given <code>j86.java.sql.Date</code> value,
      * using the given <code>Calendar</code> object.  The driver uses
      * the <code>Calendar</code> object to construct an SQL <code>DATE</code> value,
      * which the driver then sends to the database.  With
@@ -625,11 +625,11 @@ public interface PreparedStatement extends Statement {
      * this method is called on a closed <code>PreparedStatement</code>
      * @since 1.2
      */
-    void setDate(int parameterIndex, java.sql.Date x, Calendar cal)
+    void setDate(int parameterIndex, j86.java.sql.Date x, Calendar cal)
             throws SQLException;
 
     /**
-     * Sets the designated parameter to the given <code>java.sql.Time</code> value,
+     * Sets the designated parameter to the given <code>j86.java.sql.Time</code> value,
      * using the given <code>Calendar</code> object.  The driver uses
      * the <code>Calendar</code> object to construct an SQL <code>TIME</code> value,
      * which the driver then sends to the database.  With
@@ -647,11 +647,11 @@ public interface PreparedStatement extends Statement {
      * this method is called on a closed <code>PreparedStatement</code>
      * @since 1.2
      */
-    void setTime(int parameterIndex, java.sql.Time x, Calendar cal)
+    void setTime(int parameterIndex, j86.java.sql.Time x, Calendar cal)
             throws SQLException;
 
     /**
-     * Sets the designated parameter to the given <code>java.sql.Timestamp</code> value,
+     * Sets the designated parameter to the given <code>j86.java.sql.Timestamp</code> value,
      * using the given <code>Calendar</code> object.  The driver uses
      * the <code>Calendar</code> object to construct an SQL <code>TIMESTAMP</code> value,
      * which the driver then sends to the database.  With a
@@ -669,7 +669,7 @@ public interface PreparedStatement extends Statement {
      * this method is called on a closed <code>PreparedStatement</code>
      * @since 1.2
      */
-    void setTimestamp(int parameterIndex, java.sql.Timestamp x, Calendar cal)
+    void setTimestamp(int parameterIndex, j86.java.sql.Timestamp x, Calendar cal)
             throws SQLException;
 
     /**
@@ -694,7 +694,7 @@ public interface PreparedStatement extends Statement {
      *
      *
      * @param parameterIndex the first parameter is 1, the second is 2, ...
-     * @param sqlType a value from <code>java.sql.Types</code>
+     * @param sqlType a value from <code>j86.java.sql.Types</code>
      * @param typeName the fully-qualified name of an SQL user-defined type;
      *  ignored if the parameter is not a user-defined type or REF
      * @exception SQLException if parameterIndex does not correspond to a parameter
@@ -715,19 +715,19 @@ public interface PreparedStatement extends Statement {
     //------------------------- JDBC 3.0 -----------------------------------
 
     /**
-     * Sets the designated parameter to the given <code>java.net.URL</code> value.
+     * Sets the designated parameter to the given <code>j86.java.net.URL</code> value.
      * The driver converts this to an SQL <code>DATALINK</code> value
      * when it sends it to the database.
      *
      * @param parameterIndex the first parameter is 1, the second is 2, ...
-     * @param x the <code>java.net.URL</code> object to be set
+     * @param x the <code>j86.java.net.URL</code> object to be set
      * @exception SQLException if parameterIndex does not correspond to a parameter
      * marker in the SQL statement; if a database access error occurs or
      * this method is called on a closed <code>PreparedStatement</code>
      * @throws SQLFeatureNotSupportedException  if the JDBC driver does not support this method
      * @since 1.4
      */
-    void setURL(int parameterIndex, java.net.URL x) throws SQLException;
+    void setURL(int parameterIndex, j86.java.net.URL x) throws SQLException;
 
     /**
      * Retrieves the number, types and properties of this
@@ -746,7 +746,7 @@ public interface PreparedStatement extends Statement {
     //------------------------- JDBC 4.0 -----------------------------------
 
     /**
-     * Sets the designated parameter to the given <code>java.sql.RowId</code> object. The
+     * Sets the designated parameter to the given <code>j86.java.sql.RowId</code> object. The
      * driver converts this to a SQL <code>ROWID</code> value when it sends it
      * to the database
      *
@@ -801,7 +801,7 @@ public interface PreparedStatement extends Statement {
      void setNCharacterStream(int parameterIndex, Reader value, long length) throws SQLException;
 
     /**
-     * Sets the designated parameter to a <code>java.sql.NClob</code> object. The driver converts this to a
+     * Sets the designated parameter to a <code>j86.java.sql.NClob</code> object. The driver converts this to a
      * SQL <code>NCLOB</code> value when it sends it to the database.
      * @param parameterIndex of the first parameter is 1, the second is 2, ...
      * @param value the parameter value
@@ -889,7 +889,7 @@ public interface PreparedStatement extends Statement {
        throws SQLException;
 
      /**
-      * Sets the designated parameter to the given <code>java.sql.SQLXML</code> object.
+      * Sets the designated parameter to the given <code>j86.java.sql.SQLXML</code> object.
       * The driver converts this to an
       * SQL <code>XML</code> value when it sends it to the database.
       * <p>
@@ -926,7 +926,7 @@ public interface PreparedStatement extends Statement {
      * write it to the SQL data stream.
      * If, on the other hand, the object is of a class implementing
      * <code>Ref</code>, <code>Blob</code>, <code>Clob</code>,  <code>NClob</code>,
-     *  <code>Struct</code>, <code>java.net.URL</code>,
+     *  <code>Struct</code>, <code>j86.java.net.URL</code>,
      * or <code>Array</code>, the driver should pass it to the database as a
      * value of the corresponding SQL type.
      *
@@ -935,10 +935,10 @@ public interface PreparedStatement extends Statement {
      *
      * @param parameterIndex the first parameter is 1, the second is 2, ...
      * @param x the object containing the input parameter value
-     * @param targetSqlType the SQL type (as defined in java.sql.Types) to be
+     * @param targetSqlType the SQL type (as defined in j86.java.sql.Types) to be
      * sent to the database. The scale argument may further qualify this type.
-     * @param scaleOrLength for <code>java.sql.Types.DECIMAL</code>
-     *          or <code>java.sql.Types.NUMERIC types</code>,
+     * @param scaleOrLength for <code>j86.java.sql.Types.DECIMAL</code>
+     *          or <code>j86.java.sql.Types.NUMERIC types</code>,
      *          this is the number of digits after the decimal point. For
      *          Java Object types <code>InputStream</code> and <code>Reader</code>,
      *          this is the length
@@ -962,7 +962,7 @@ public interface PreparedStatement extends Statement {
      * the specified number of bytes.
      * When a very large ASCII value is input to a <code>LONGVARCHAR</code>
      * parameter, it may be more practical to send it via a
-     * <code>java.io.InputStream</code>. Data will be read from the stream
+     * <code>j86.java.io.InputStream</code>. Data will be read from the stream
      * as needed until end-of-file is reached.  The JDBC driver will
      * do any necessary conversion from ASCII to the database char format.
      *
@@ -978,14 +978,14 @@ public interface PreparedStatement extends Statement {
      * this method is called on a closed <code>PreparedStatement</code>
      * @since 1.6
     */
-    void setAsciiStream(int parameterIndex, java.io.InputStream x, long length)
+    void setAsciiStream(int parameterIndex, j86.java.io.InputStream x, long length)
             throws SQLException;
     /**
      * Sets the designated parameter to the given input stream, which will have
      * the specified number of bytes.
      * When a very large binary value is input to a <code>LONGVARBINARY</code>
      * parameter, it may be more practical to send it via a
-     * <code>java.io.InputStream</code> object. The data will be read from the
+     * <code>j86.java.io.InputStream</code> object. The data will be read from the
      * stream as needed until end-of-file is reached.
      *
      * <P><B>Note:</B> This stream object can either be a standard
@@ -1000,14 +1000,14 @@ public interface PreparedStatement extends Statement {
      * this method is called on a closed <code>PreparedStatement</code>
      * @since 1.6
      */
-    void setBinaryStream(int parameterIndex, java.io.InputStream x,
+    void setBinaryStream(int parameterIndex, j86.java.io.InputStream x,
                          long length) throws SQLException;
         /**
      * Sets the designated parameter to the given <code>Reader</code>
      * object, which is the given number of characters long.
      * When a very large UNICODE value is input to a <code>LONGVARCHAR</code>
      * parameter, it may be more practical to send it via a
-     * <code>java.io.Reader</code> object. The data will be read from the stream
+     * <code>j86.java.io.Reader</code> object. The data will be read from the stream
      * as needed until end-of-file is reached.  The JDBC driver will
      * do any necessary conversion from UNICODE to the database char format.
      *
@@ -1016,7 +1016,7 @@ public interface PreparedStatement extends Statement {
      * standard interface.
      *
      * @param parameterIndex the first parameter is 1, the second is 2, ...
-     * @param reader the <code>java.io.Reader</code> object that contains the
+     * @param reader the <code>j86.java.io.Reader</code> object that contains the
      *        Unicode data
      * @param length the number of characters in the stream
      * @exception SQLException if parameterIndex does not correspond to a parameter
@@ -1025,14 +1025,14 @@ public interface PreparedStatement extends Statement {
      * @since 1.6
      */
     void setCharacterStream(int parameterIndex,
-                          java.io.Reader reader,
+                          j86.java.io.Reader reader,
                           long length) throws SQLException;
     //-----
     /**
      * Sets the designated parameter to the given input stream.
      * When a very large ASCII value is input to a <code>LONGVARCHAR</code>
      * parameter, it may be more practical to send it via a
-     * <code>java.io.InputStream</code>. Data will be read from the stream
+     * <code>j86.java.io.InputStream</code>. Data will be read from the stream
      * as needed until end-of-file is reached.  The JDBC driver will
      * do any necessary conversion from ASCII to the database char format.
      *
@@ -1051,13 +1051,13 @@ public interface PreparedStatement extends Statement {
      * @throws SQLFeatureNotSupportedException  if the JDBC driver does not support this method
        * @since 1.6
     */
-    void setAsciiStream(int parameterIndex, java.io.InputStream x)
+    void setAsciiStream(int parameterIndex, j86.java.io.InputStream x)
             throws SQLException;
     /**
      * Sets the designated parameter to the given input stream.
      * When a very large binary value is input to a <code>LONGVARBINARY</code>
      * parameter, it may be more practical to send it via a
-     * <code>java.io.InputStream</code> object. The data will be read from the
+     * <code>j86.java.io.InputStream</code> object. The data will be read from the
      * stream as needed until end-of-file is reached.
      *
      * <P><B>Note:</B> This stream object can either be a standard
@@ -1075,14 +1075,14 @@ public interface PreparedStatement extends Statement {
      * @throws SQLFeatureNotSupportedException  if the JDBC driver does not support this method
      * @since 1.6
      */
-    void setBinaryStream(int parameterIndex, java.io.InputStream x)
+    void setBinaryStream(int parameterIndex, j86.java.io.InputStream x)
     throws SQLException;
         /**
      * Sets the designated parameter to the given <code>Reader</code>
      * object.
      * When a very large UNICODE value is input to a <code>LONGVARCHAR</code>
      * parameter, it may be more practical to send it via a
-     * <code>java.io.Reader</code> object. The data will be read from the stream
+     * <code>j86.java.io.Reader</code> object. The data will be read from the stream
      * as needed until end-of-file is reached.  The JDBC driver will
      * do any necessary conversion from UNICODE to the database char format.
      *
@@ -1094,7 +1094,7 @@ public interface PreparedStatement extends Statement {
      * <code>setCharacterStream</code> which takes a length parameter.
      *
      * @param parameterIndex the first parameter is 1, the second is 2, ...
-     * @param reader the <code>java.io.Reader</code> object that contains the
+     * @param reader the <code>j86.java.io.Reader</code> object that contains the
      *        Unicode data
      * @exception SQLException if parameterIndex does not correspond to a parameter
      * marker in the SQL statement; if a database access error occurs or
@@ -1103,7 +1103,7 @@ public interface PreparedStatement extends Statement {
      * @since 1.6
      */
     void setCharacterStream(int parameterIndex,
-                          java.io.Reader reader) throws SQLException;
+                          j86.java.io.Reader reader) throws SQLException;
   /**
      * Sets the designated parameter to a <code>Reader</code> object. The
      * <code>Reader</code> reads the data till end-of-file is reached. The
@@ -1228,7 +1228,7 @@ public interface PreparedStatement extends Statement {
      * write it to the SQL data stream.
      * If, on the other hand, the object is of a class implementing
      * {@code Ref}, {@code Blob}, {@code Clob},  {@code NClob},
-     *  {@code Struct}, {@code java.net.URL},
+     *  {@code Struct}, {@code j86.java.net.URL},
      * or {@code Array}, the driver should pass it to the database as a
      * value of the corresponding SQL type.
      *
@@ -1241,8 +1241,8 @@ public interface PreparedStatement extends Statement {
      * @param x the object containing the input parameter value
      * @param targetSqlType the SQL type to be sent to the database. The
      * scale argument may further qualify this type.
-     * @param scaleOrLength for {@code java.sql.JDBCType.DECIMAL}
-     *          or {@code java.sql.JDBCType.NUMERIC types},
+     * @param scaleOrLength for {@code j86.java.sql.JDBCType.DECIMAL}
+     *          or {@code j86.java.sql.JDBCType.NUMERIC types},
      *          this is the number of digits after the decimal point. For
      *          Java Object types {@code InputStream} and {@code Reader},
      *          this is the length

@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.security.sasl;
+package j86.javax.security.sasl;
 
-import javax.security.auth.callback.Callback;
+import j86.j86.javax.security.auth.callback.Callback;
 
 /**
   * This callback is used by {@code SaslServer} to determine whether
@@ -38,7 +38,7 @@ import javax.security.auth.callback.Callback;
   * @author Rosanna Lee
   * @author Rob Weltman
   */
-public class AuthorizeCallback implements Callback, java.io.Serializable {
+public class AuthorizeCallback implements Callback, j86.java.io.Serializable {
     /**
      * The (authenticated) authentication id to check.
      * @serial
@@ -108,7 +108,7 @@ public class AuthorizeCallback implements Callback, java.io.Serializable {
      * Sets whether the authorization is allowed.
      * @param ok {@code true} if authorization is allowed; {@code false} otherwise
      * @see #isAuthorized
-     * @see #setAuthorizedID(java.lang.String)
+     * @see #setAuthorizedID(j86.java.lang.String)
      */
     public void setAuthorized(boolean ok) {
         authorized = ok;
@@ -119,7 +119,7 @@ public class AuthorizeCallback implements Callback, java.io.Serializable {
      * @return The id of the authorized user. {@code null} means the
      * authorization failed.
      * @see #setAuthorized(boolean)
-     * @see #setAuthorizedID(java.lang.String)
+     * @see #setAuthorizedID(j86.java.lang.String)
      */
     public String getAuthorizedID() {
         if (!authorized) {

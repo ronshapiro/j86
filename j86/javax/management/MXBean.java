@@ -23,33 +23,33 @@
  * questions.
  */
 
-package javax.management;
+package j86.javax.management;
 
-import java.lang.annotation.Documented;
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
+import j86.j86.java.lang.annotation.Documented;
+import j86.j86.java.lang.annotation.ElementType;
+import j86.j86.java.lang.annotation.Retention;
+import j86.j86.java.lang.annotation.RetentionPolicy;
+import j86.j86.java.lang.annotation.Target;
 
 // remaining imports are for Javadoc
-import java.io.InvalidObjectException;
-import java.lang.management.MemoryUsage;
-import java.lang.reflect.UndeclaredThrowableException;
-import java.util.Arrays;
-import java.util.List;
-import javax.management.openmbean.ArrayType;
-import javax.management.openmbean.CompositeData;
-import javax.management.openmbean.CompositeDataInvocationHandler;
-import javax.management.openmbean.CompositeDataSupport;
-import javax.management.openmbean.CompositeDataView;
-import javax.management.openmbean.CompositeType;
-import javax.management.openmbean.OpenDataException;
-import javax.management.openmbean.OpenMBeanInfo;
-import javax.management.openmbean.OpenType;
-import javax.management.openmbean.SimpleType;
-import javax.management.openmbean.TabularData;
-import javax.management.openmbean.TabularDataSupport;
-import javax.management.openmbean.TabularType;
+import j86.java.io.InvalidObjectException;
+import j86.j86.java.lang.management.MemoryUsage;
+import j86.j86.j86.java.lang.reflect.UndeclaredThrowableException;
+import j86.java.util.Arrays;
+import j86.java.util.List;
+import j86.j86.javax.management.openmbean.ArrayType;
+import j86.j86.javax.management.openmbean.CompositeData;
+import j86.j86.javax.management.openmbean.CompositeDataInvocationHandler;
+import j86.j86.javax.management.openmbean.CompositeDataSupport;
+import j86.j86.javax.management.openmbean.CompositeDataView;
+import j86.j86.javax.management.openmbean.CompositeType;
+import j86.j86.javax.management.openmbean.OpenDataException;
+import j86.j86.javax.management.openmbean.OpenMBeanInfo;
+import j86.j86.javax.management.openmbean.OpenType;
+import j86.j86.javax.management.openmbean.SimpleType;
+import j86.j86.javax.management.openmbean.TabularData;
+import j86.j86.javax.management.openmbean.TabularDataSupport;
+import j86.j86.javax.management.openmbean.TabularType;
 
 /**
     <p>Annotation to mark an interface explicitly as being an MXBean
@@ -83,7 +83,7 @@ import javax.management.openmbean.TabularType;
 
     <p>The MXBean concept provides a simple way to code an MBean
       that only references a predefined set of types, the ones defined
-      by {@link javax.management.openmbean}.  In this way, you can be
+      by {@link j86.j86.javax.management.openmbean}.  In this way, you can be
       sure that your MBean will be usable by any client, including
       remote clients, without any requirement that the client have
       access to <em>model-specific classes</em> representing the types
@@ -186,9 +186,9 @@ public class MemoryUsage {
       define the management interface in almost exactly the same way,
       the MXBean framework <em>converts</em> model-specific classes into
       standard classes from the Java platform.  Using arrays and the
-      {@link javax.management.openmbean.CompositeData CompositeData} and
-      {@link javax.management.openmbean.TabularData TabularData} classes
-      from the standard {@link javax.management.openmbean} package, it
+      {@link j86.j86.javax.management.openmbean.CompositeData CompositeData} and
+      {@link j86.j86.javax.management.openmbean.TabularData TabularData} classes
+      from the standard {@link j86.j86.javax.management.openmbean} package, it
       is possible to build data structures of arbitrary complexity
       using only standard classes.</p>
 
@@ -417,10 +417,10 @@ public class MemoryPool
     <h2 id="mapping-rules">Type mapping rules</h2>
 
     <p>An MXBean is a kind of Open MBean, as defined by the {@link
-      javax.management.openmbean} package.  This means that the types of
+      j86.j86.javax.management.openmbean} package.  This means that the types of
       attributes, operation parameters, and operation return values must
       all be describable using <em>Open Types</em>, that is the four
-      standard subclasses of {@link javax.management.openmbean.OpenType}.
+      standard subclasses of {@link j86.j86.javax.management.openmbean.OpenType}.
       MXBeans achieve this by mapping Java types into Open Types.</p>
 
     <p>For every Java type <em>J</em>, the MXBean mapping is described
@@ -429,7 +429,7 @@ public class MemoryPool
     <ul>
       <li>The corresponding Open Type, <em>opentype(J)</em>.  This is
         an instance of a subclass of {@link
-        javax.management.openmbean.OpenType}.</li>
+        j86.j86.javax.management.openmbean.OpenType}.</li>
       <li>The <em>mapped</em> Java type, <em>opendata(J)</em>, which is
         always the same for any given <em>opentype(J)</em>.  This is a Java
         class.</li>
@@ -558,12 +558,12 @@ public class MemoryPool
     <p>The 8 primitive Java types
       ({@code boolean}, {@code byte}, {@code short}, {@code int}, {@code
       long}, {@code float}, {@code double}, {@code char}) are mapped to the
-      corresponding boxed types from {@code java.lang}, namely {@code
+      corresponding boxed types from {@code j86.java.lang}, namely {@code
       Boolean}, {@code Byte}, etc.  The Open Type is the corresponding
       {@code SimpleType}.  Thus, <em>opentype(</em>{@code
       long}<em>)</em> is {@code SimpleType.LONG}, and
       <em>opendata(</em>{@code long}<em>)</em> is {@code
-      java.lang.Long}.</p>
+      j86.java.lang.Long}.</p>
 
     <p>An array of primitive type such as {@code long[]} can be represented
       directly as an Open Type.  Thus, <em>openType(</em>{@code
@@ -589,20 +589,20 @@ public class MemoryPool
     <p>A {@code SortedSet<}<em>E</em>{@code >} is also mapped in the
       same way as an <em>E</em>{@code []}, but it is only convertible if
       <em>E</em> is a class or interface that implements {@link
-      java.lang.Comparable}.  Thus, a {@code SortedSet<String>} or
+      j86.java.lang.Comparable}.  Thus, a {@code SortedSet<String>} or
         {@code SortedSet<Integer>} is convertible, but a {@code
           SortedSet<int[]>} or {@code SortedSet<List<String>>} is not.  The
                 conversion of a {@code SortedSet} instance will fail with an
                 {@code IllegalArgumentException} if it has a
-                non-null {@link java.util.SortedSet#comparator()
+                non-null {@link j86.java.util.SortedSet#comparator()
                 comparator()}.</p>
 
     <p>A {@code List<}<em>E</em>{@code >} is reconstructed as a
-      {@code java.util.ArrayList<}<em>E</em>{@code >};
+      {@code j86.java.util.ArrayList<}<em>E</em>{@code >};
       a {@code Set<}<em>E</em>{@code >} as a
-      {@code java.util.HashSet<}<em>E</em>{@code >};
+      {@code j86.java.util.HashSet<}<em>E</em>{@code >};
       a {@code SortedSet<}<em>E</em>{@code >} as a
-      {@code java.util.TreeSet<}<em>E</em>{@code >}.</p>
+      {@code j86.java.util.TreeSet<}<em>E</em>{@code >}.</p>
 
 
     <h3>Mappings for maps ({@code Map<}<em>K</em>,<em>V</em>{@code >} etc)</h3>
@@ -623,7 +623,7 @@ public class MemoryPool
 
     <pre>
 String typeName =
-    "java.util.Map&lt;java.lang.String, javax.management.ObjectName&gt;";
+    "j86.java.util.Map&lt;j86.java.lang.String, j86.javax.management.ObjectName&gt;";
 String[] keyValue =
     new String[] {"key", "value"};
 OpenType[] openTypes =
@@ -640,17 +640,17 @@ TabularType tabularType =
     <p>A {@code SortedMap<}<em>K</em>,<em>V</em>{@code >} is mapped in the
       same way, but it is only convertible if
       <em>K</em> is a class or interface that implements {@link
-      java.lang.Comparable}.  Thus, a {@code SortedMap<String,int[]>}
+      j86.java.lang.Comparable}.  Thus, a {@code SortedMap<String,int[]>}
         is convertible, but a
         {@code SortedMap<int[],String>} is not.  The conversion of a
           {@code SortedMap} instance will fail with an {@code
           IllegalArgumentException} if it has a non-null {@link
-          java.util.SortedMap#comparator() comparator()}.</p>
+          j86.java.util.SortedMap#comparator() comparator()}.</p>
 
     <p>A {@code Map<}<em>K</em>,<em>V</em>{@code >} is reconstructed as
-      a {@code java.util.HashMap<}<em>K</em>,<em>V</em>{@code >};
+      a {@code j86.java.util.HashMap<}<em>K</em>,<em>V</em>{@code >};
       a {@code SortedMap<}<em>K</em>,<em>V</em>{@code >} as
-      a {@code java.util.TreeMap<}<em>K</em>,<em>V</em>{@code >}.</p>
+      a {@code j86.java.util.TreeMap<}<em>K</em>,<em>V</em>{@code >}.</p>
 
     <p>{@code TabularData} is an interface.  The concrete class that is
       used to represent a {@code Map<}<em>K</em>,<em>V</em>{@code >} as
@@ -735,7 +735,7 @@ public interface ModuleMXBean {
       been created by {@link
       JMX#newMXBeanProxy(MBeanServerConnection, ObjectName, Class)
       JMX.newMXBeanProxy}; or it can have been created using {@link
-      java.lang.reflect.Proxy Proxy} with an invocation handler that
+      j86.j86.j86.java.lang.reflect.Proxy Proxy} with an invocation handler that
       is {@link MBeanServerInvocationHandler} or a subclass.</p>
 
     <p>If the same MXBean were registered under two different
@@ -850,7 +850,7 @@ public interface ModuleMXBean {
         <em>J</em>.</p></li>
 
       <li><p>Otherwise, if <em>J</em> has at least one public
-        constructor with a {@link java.beans.ConstructorProperties
+        constructor with a {@link j86.java.beans.ConstructorProperties
         ConstructorProperties} annotation, then one
         of those constructors (not necessarily always the same one)
         will be called to reconstruct an instance of <em>J</em>.
@@ -902,7 +902,7 @@ public interface ModuleMXBean {
 
       <li><p>Otherwise, if <em>J</em> is an interface that has no methods
         other than getters, an instance of <em>J</em> is constructed
-        using a {@link java.lang.reflect.Proxy} with a {@link
+        using a {@link j86.j86.j86.java.lang.reflect.Proxy} with a {@link
         CompositeDataInvocationHandler} backed by the {@code
         CompositeData} being converted.</p></li>
 
@@ -910,8 +910,8 @@ public interface ModuleMXBean {
     </ol>
 
     <p>Rule 2 is not applicable to subset Profiles of Java SE that do not
-    include the {@code java.beans} package. When targeting a runtime that does
-    not include the {@code java.beans} package, and where there is a mismatch
+    include the {@code j86.java.beans} package. When targeting a runtime that does
+    not include the {@code j86.java.beans} package, and where there is a mismatch
     between the compile-time and runtime environment whereby <em>J</em> is
     compiled with a public constructor and the {@code ConstructorProperties}
     annotation, then <em>J</em> is not reconstructible unless another rule
@@ -1114,14 +1114,14 @@ public interface Node {
       <li>If <em>T</em> is a non-generic non-array type,
       <em>genericstring(T)</em> is the value returned by {@link
       Class#getName()}, for example {@code "int"} or {@code
-      "java.lang.String"}.
+      "j86.java.lang.String"}.
 
       <li>If <em>T</em> is an array <em>E[]</em>,
       <em>genericstring(T)</em> is <em>genericstring(E)</em> followed
       by {@code "[]"}.  For example, <em>genericstring({@code int[]})</em>
       is {@code "int[]"}, and <em>genericstring({@code
       List<String>[][]})</em> is {@code
-      "java.util.List<java.lang.String>[][]"}.
+      "j86.java.util.List<j86.java.lang.String>[][]"}.
 
     <li>Otherwise, <em>T</em> is a parameterized type such as {@code
     List<String>} and <em>genericstring(T)</em> consists of the
@@ -1138,15 +1138,15 @@ public interface Node {
       represented by the string {@code "[I"} returned by {@code
       Class.getName()}, but if a method returns {@code List<int[]>},
       this will be represented by the string {@code
-      "java.util.List<int[]>"}.
+      "j86.java.util.List<int[]>"}.
 
     <h3>Exceptions</h3>
 
     <p>A problem with mapping <em>from</em> Java types <em>to</em>
       Open types is signaled with an {@link OpenDataException}.  This
       can happen when an MXBean interface is being analyzed, for
-      example if it references a type like {@link java.util.Random
-      java.util.Random} that has no getters.  Or it can happen when an
+      example if it references a type like {@link j86.java.util.Random
+      j86.java.util.Random} that has no getters.  Or it can happen when an
       instance is being converted (a return value from a method in an
       MXBean or a parameter to a method in an MXBean proxy), for
       example when converting from {@code SortedSet<String>} to {@code

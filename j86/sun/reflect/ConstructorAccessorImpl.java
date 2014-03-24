@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.reflect;
+package j86.sun.reflect;
 
-import java.lang.reflect.InvocationTargetException;
+import j86.j86.j86.java.lang.reflect.InvocationTargetException;
 
 /** Package-private implementation of the ConstructorAccessor
     interface which has access to all classes and all fields,
@@ -33,7 +33,7 @@ import java.lang.reflect.InvocationTargetException;
 
 abstract class ConstructorAccessorImpl extends MagicAccessorImpl
     implements ConstructorAccessor {
-    /** Matches specification in {@link java.lang.reflect.Constructor} */
+    /** Matches specification in {@link j86.j86.j86.java.lang.reflect.Constructor} */
     public abstract Object newInstance(Object[] args)
         throws InstantiationException,
                IllegalArgumentException,

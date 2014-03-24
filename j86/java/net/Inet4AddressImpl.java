@@ -22,8 +22,8 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.net;
-import java.io.IOException;
+package j86.java.net;
+import j86.java.io.IOException;
 
 /*
  * Package private implementation of InetAddressImpl for IPv4.
@@ -59,7 +59,7 @@ class Inet4AddressImpl implements InetAddressImpl {
           /*
            * Let's make sure we use an address of the proper family
            */
-          java.util.Enumeration<InetAddress> it = netif.getInetAddresses();
+          j86.java.util.Enumeration<InetAddress> it = netif.getInetAddresses();
           InetAddress inetaddr = null;
           while (!(inetaddr instanceof Inet4Address) &&
                  it.hasMoreElements())

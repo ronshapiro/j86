@@ -23,26 +23,26 @@
  * questions.
  */
 
-package com.sun.security.auth.callback;
+package j86.j86.com.sun.security.auth.callback;
 
 /* JAAS imports */
-import javax.security.auth.callback.Callback;
-import javax.security.auth.callback.CallbackHandler;
-import javax.security.auth.callback.ConfirmationCallback;
-import javax.security.auth.callback.NameCallback;
-import javax.security.auth.callback.PasswordCallback;
-import javax.security.auth.callback.TextOutputCallback;
-import javax.security.auth.callback.UnsupportedCallbackException;
+import j86.j86.javax.security.auth.callback.Callback;
+import j86.j86.javax.security.auth.callback.CallbackHandler;
+import j86.j86.javax.security.auth.callback.ConfirmationCallback;
+import j86.j86.javax.security.auth.callback.NameCallback;
+import j86.j86.javax.security.auth.callback.PasswordCallback;
+import j86.j86.javax.security.auth.callback.TextOutputCallback;
+import j86.j86.javax.security.auth.callback.UnsupportedCallbackException;
 
 /* Java imports */
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.PushbackInputStream;
-import java.util.Arrays;
+import j86.java.io.BufferedReader;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.io.InputStreamReader;
+import j86.java.io.PushbackInputStream;
+import j86.java.util.Arrays;
 
-import sun.security.util.Password;
+import j86.sun.security.util.Password;
 
 /**
  * <p>
@@ -50,7 +50,7 @@ import sun.security.util.Password;
  * questions.
  * This can be used by a JAAS application to instantiate a
  * CallbackHandler
- * @see javax.security.auth.callback
+ * @see j86.j86.javax.security.auth.callback
  */
 
 @jdk.Exported

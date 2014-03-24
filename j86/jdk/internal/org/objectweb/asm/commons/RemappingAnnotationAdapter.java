@@ -57,10 +57,10 @@
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package jdk.internal.org.objectweb.asm.commons;
+package j86.j86.jdk.internal.org.objectweb.asm.commons;
 
-import jdk.internal.org.objectweb.asm.AnnotationVisitor;
-import jdk.internal.org.objectweb.asm.Opcodes;
+import j86.jdk.internal.org.objectweb.asm.AnnotationVisitor;
+import j86.jdk.internal.org.objectweb.asm.Opcodes;
 
 /**
  * An {@link AnnotationVisitor} adapter for type remapping.

@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.plaf.basic;
+package j86.j86.j86.javax.swing.plaf.basic;
 
-import java.lang.reflect.*;
-import javax.swing.*;
-import javax.swing.plaf.*;
+import j86.j86.j86.java.lang.reflect.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.plaf.*;
 
 /**
  * An ActionMap that populates its contents as necessary. The

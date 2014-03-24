@@ -22,15 +22,15 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.beans;
+package j86.java.beans;
 
-import java.io.*;
-import java.util.*;
-import java.lang.reflect.*;
-import java.nio.charset.Charset;
-import java.nio.charset.CharsetEncoder;
-import java.nio.charset.IllegalCharsetNameException;
-import java.nio.charset.UnsupportedCharsetException;
+import j86.java.io.*;
+import j86.java.util.*;
+import j86.j86.j86.java.lang.reflect.*;
+import j86.j86.java.nio.charset.Charset;
+import j86.j86.java.nio.charset.CharsetEncoder;
+import j86.j86.java.nio.charset.IllegalCharsetNameException;
+import j86.j86.java.nio.charset.UnsupportedCharsetException;
 
 /**
  * The <code>XMLEncoder</code> class is a complementary alternative to
@@ -84,13 +84,13 @@ import java.nio.charset.UnsupportedCharsetException;
  * some user interface components from the <em>swing</em> toolkit:
  * <pre>
  * &lt;?xml version="1.0" encoding="UTF-8"?&gt;
- * &lt;java version="1.0" class="java.beans.XMLDecoder"&gt;
- * &lt;object class="javax.swing.JFrame"&gt;
+ * &lt;java version="1.0" class="j86.java.beans.XMLDecoder"&gt;
+ * &lt;object class="j86.javax.swing.JFrame"&gt;
  *   &lt;void property="name"&gt;
  *     &lt;string&gt;frame1&lt;/string&gt;
  *   &lt;/void&gt;
  *   &lt;void property="bounds"&gt;
- *     &lt;object class="java.awt.Rectangle"&gt;
+ *     &lt;object class="j86.java.awt.Rectangle"&gt;
  *       &lt;int&gt;0&lt;/int&gt;
  *       &lt;int&gt;0&lt;/int&gt;
  *       &lt;int&gt;200&lt;/int&gt;
@@ -99,7 +99,7 @@ import java.nio.charset.UnsupportedCharsetException;
  *   &lt;/void&gt;
  *   &lt;void property="contentPane"&gt;
  *     &lt;void method="add"&gt;
- *       &lt;object class="javax.swing.JButton"&gt;
+ *       &lt;object class="j86.javax.swing.JButton"&gt;
  *         &lt;void property="label"&gt;
  *           &lt;string&gt;Hello&lt;/string&gt;
  *         &lt;/void&gt;
@@ -156,7 +156,7 @@ import java.nio.charset.UnsupportedCharsetException;
  * The default method name is "new".
  * <li>
  * A reference to a java class is written in the form
- *  &lt;class&gt;javax.swing.JButton&lt;/class&gt;.
+ *  &lt;class&gt;j86.javax.swing.JButton&lt;/class&gt;.
  * <li>
  * Instances of the wrapper classes for Java's primitive types are written
  * using the name of the primitive type as the tag. For example, an
@@ -198,7 +198,7 @@ import java.nio.charset.UnsupportedCharsetException;
  href="http://java.sun.com/products/jfc/tsc/articles/persistence4">Using XMLEncoder</a>,
  * an article in <em>The Swing Connection.</em>
  * @see XMLDecoder
- * @see java.io.ObjectOutputStream
+ * @see j86.java.io.ObjectOutputStream
  *
  * @since 1.4
  *
@@ -390,7 +390,7 @@ public class XMLEncoder extends Encoder implements AutoCloseable {
      *
      * @param oldStm The statement that will be written
      *               to the stream.
-     * @see java.beans.PersistenceDelegate#initialize
+     * @see j86.java.beans.PersistenceDelegate#initialize
      */
     public void writeStatement(Statement oldStm) {
         // System.out.println("XMLEncoder::writeStatement: " + oldStm);
@@ -443,7 +443,7 @@ public class XMLEncoder extends Encoder implements AutoCloseable {
      *
      * @param oldExp The expression that will be written
      *               to the stream.
-     * @see java.beans.PersistenceDelegate#initialize
+     * @see j86.java.beans.PersistenceDelegate#initialize
      */
     public void writeExpression(Expression oldExp) {
         boolean internal = this.internal;

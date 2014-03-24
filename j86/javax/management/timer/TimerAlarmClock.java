@@ -23,11 +23,11 @@
  * questions.
  */
 
-package javax.management.timer;
+package j86.j86.javax.management.timer;
 
-import java.util.Date;
-import java.util.logging.Level;
-import static com.sun.jmx.defaults.JmxProperties.TIMER_LOGGER;
+import j86.java.util.Date;
+import j86.j86.java.util.logging.Level;
+import static j86.com.sun.jmx.defaults.JmxProperties.TIMER_LOGGER;
 
 /**
  * This class provides a simple implementation of an alarm clock MBean.
@@ -35,7 +35,7 @@ import static com.sun.jmx.defaults.JmxProperties.TIMER_LOGGER;
  * or at the specified date (fixed-rate).
  */
 
-class TimerAlarmClock extends java.util.TimerTask {
+class TimerAlarmClock extends j86.java.util.TimerTask {
 
     Timer listener = null;
     long timeout = 10000;

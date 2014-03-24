@@ -23,13 +23,13 @@
  * questions.
  */
 
-package sun.reflect.generics.factory;
+package j86.j86.sun.reflect.generics.factory;
 
-import java.lang.reflect.ParameterizedType;
-import java.lang.reflect.Type;
-import java.lang.reflect.TypeVariable;
-import java.lang.reflect.WildcardType;
-import sun.reflect.generics.tree.FieldTypeSignature;
+import j86.j86.j86.java.lang.reflect.ParameterizedType;
+import j86.j86.j86.java.lang.reflect.Type;
+import j86.j86.j86.java.lang.reflect.TypeVariable;
+import j86.j86.j86.java.lang.reflect.WildcardType;
+import j86.j86.sun.reflect.generics.tree.FieldTypeSignature;
 
 /**
  * A factory interface for reflective objects representing generic types.
@@ -49,7 +49,7 @@ public interface GenericsFactory {
     /**
      * Returns a new type variable declaration. Note that <tt>name</tt>
      * may be empty (but not <tt>null</tt>). If <tt>bounds</tt> is
-     * empty, a bound of <tt>java.lang.Object</tt> is used.
+     * empty, a bound of <tt>j86.java.lang.Object</tt> is used.
      * @param name The name of the type variable
      * @param bounds An array of abstract syntax trees representing
      * the upper bound(s) on the type variable being declared
@@ -105,7 +105,7 @@ public interface GenericsFactory {
 
     /**
      * Returns a new wildcard type variable. If
-     * <tt>ubs</tt> is empty, a bound of <tt>java.lang.Object</tt> is used.
+     * <tt>ubs</tt> is empty, a bound of <tt>j86.java.lang.Object</tt> is used.
      * @param ubs An array of abstract syntax trees representing
      * the upper bound(s) on the type variable being declared
      * @param lbs An array of abstract syntax trees representing

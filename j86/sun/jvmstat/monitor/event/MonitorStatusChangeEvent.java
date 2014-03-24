@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.jvmstat.monitor.event;
+package j86.j86.sun.jvmstat.monitor.event;
 
-import java.util.List;
-import sun.jvmstat.monitor.MonitoredVm;
+import j86.java.util.List;
+import j86.sun.jvmstat.monitor.MonitoredVm;
 
 /**
  * Provides a description of a change in status of the instrumentation

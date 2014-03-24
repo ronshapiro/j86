@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.security.rsa;
+package j86.sun.security.rsa;
 
-import java.io.IOException;
-import java.math.BigInteger;
+import j86.java.io.IOException;
+import j86.java.math.BigInteger;
 
-import java.security.*;
-import java.security.interfaces.*;
+import j86.java.security.*;
+import j86.j86.java.security.interfaces.*;
 
-import sun.security.util.*;
-import sun.security.x509.X509Key;
+import j86.sun.security.util.*;
+import j86.sun.security.x509.X509Key;
 
 /**
  * Key implementation for RSA public keys.
@@ -127,7 +127,7 @@ public final class RSAPublicKeyImpl extends X509Key implements RSAPublicKey {
                 + n + "\n  public exponent: " + e;
     }
 
-    protected Object writeReplace() throws java.io.ObjectStreamException {
+    protected Object writeReplace() throws j86.java.io.ObjectStreamException {
         return new KeyRep(KeyRep.Type.PUBLIC,
                         getAlgorithm(),
                         getFormat(),

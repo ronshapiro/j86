@@ -23,16 +23,16 @@
  * questions.
  */
 
-package com.sun.crypto.provider;
+package j86.com.sun.crypto.provider;
 
-import java.util.Arrays;
-import java.util.Locale;
+import j86.java.util.Arrays;
+import j86.java.util.Locale;
 
-import java.security.*;
-import java.security.spec.*;
-import javax.crypto.*;
-import javax.crypto.spec.*;
-import javax.crypto.BadPaddingException;
+import j86.java.security.*;
+import j86.j86.java.security.spec.*;
+import j86.javax.crypto.*;
+import j86.j86.javax.crypto.spec.*;
+import j86.javax.crypto.BadPaddingException;
 
 /**
  * This class represents the symmetric algorithms in its various modes

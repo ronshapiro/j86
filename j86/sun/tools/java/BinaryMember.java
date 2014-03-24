@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.tools.java;
+package j86.sun.tools.java;
 
-import sun.tools.tree.*;
-import java.util.Vector;
-import java.util.Hashtable;
-import java.io.IOException;
-import java.io.DataInputStream;
-import java.io.ByteArrayInputStream;
+import j86.sun.tools.tree.*;
+import j86.java.util.Vector;
+import j86.java.util.Hashtable;
+import j86.java.io.IOException;
+import j86.java.io.DataInputStream;
+import j86.java.io.ByteArrayInputStream;
 
 /**
  * This class represents a binary member

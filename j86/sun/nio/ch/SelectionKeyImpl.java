@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.nio.ch;
+package j86.j86.j86.sun.nio.ch;
 
-import java.io.IOException;
-import java.nio.channels.*;
-import java.nio.channels.spi.*;
+import j86.java.io.IOException;
+import j86.j86.java.nio.channels.*;
+import j86.j86.j86.java.nio.channels.spi.*;
 
 
 /**

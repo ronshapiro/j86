@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.net.www.protocol.http;
+package j86.j86.j86.sun.net.www.protocol.http;
 
-import java.net.URL;
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.net.PasswordAuthentication;
-import java.io.IOException;
-import java.io.OutputStream;
-import java.util.Base64;
-import sun.net.www.HeaderParser;
+import j86.java.net.URL;
+import j86.java.net.URI;
+import j86.java.net.URISyntaxException;
+import j86.java.net.PasswordAuthentication;
+import j86.java.io.IOException;
+import j86.java.io.OutputStream;
+import j86.java.util.Base64;
+import j86.j86.sun.net.www.HeaderParser;
 
 /**
  * BasicAuthentication: Encapsulate an http server authentication using
@@ -61,7 +61,7 @@ class BasicAuthentication extends AuthenticationInfo {
         byte[] nameBytes = null;
         try {
             nameBytes = plain.getBytes("ISO-8859-1");
-        } catch (java.io.UnsupportedEncodingException uee) {
+        } catch (j86.java.io.UnsupportedEncodingException uee) {
             assert false;
         }
 
@@ -101,7 +101,7 @@ class BasicAuthentication extends AuthenticationInfo {
         byte[] nameBytes = null;
         try {
             nameBytes = plain.getBytes("ISO-8859-1");
-        } catch (java.io.UnsupportedEncodingException uee) {
+        } catch (j86.java.io.UnsupportedEncodingException uee) {
             assert false;
         }
 

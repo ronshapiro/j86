@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.awt;
+package j86.java.awt;
 
-import java.awt.geom.Dimension2D;
-import java.beans.Transient;
+import j86.j86.java.awt.geom.Dimension2D;
+import j86.java.beans.Transient;
 
 /**
  * The <code>Dimension</code> class encapsulates the width and
@@ -47,11 +47,11 @@ import java.beans.Transient;
  *
  * @author      Sami Shaio
  * @author      Arthur van Hoff
- * @see         java.awt.Component
- * @see         java.awt.LayoutManager
+ * @see         j86.java.awt.Component
+ * @see         j86.java.awt.LayoutManager
  * @since       1.0
  */
-public class Dimension extends Dimension2D implements java.io.Serializable {
+public class Dimension extends Dimension2D implements j86.java.io.Serializable {
 
     /**
      * The width dimension; negative values can be used.
@@ -162,8 +162,8 @@ public class Dimension extends Dimension2D implements java.io.Serializable {
      *
      * @return   the size of this dimension, a new instance of
      *           <code>Dimension</code> with the same width and height
-     * @see      java.awt.Dimension#setSize
-     * @see      java.awt.Component#getSize
+     * @see      j86.java.awt.Dimension#setSize
+     * @see      j86.java.awt.Component#getSize
      * @since    1.1
      */
     @Transient
@@ -176,8 +176,8 @@ public class Dimension extends Dimension2D implements java.io.Serializable {
      * This method is included for completeness, to parallel the
      * <code>setSize</code> method defined by <code>Component</code>.
      * @param    d  the new size for this <code>Dimension</code> object
-     * @see      java.awt.Dimension#getSize
-     * @see      java.awt.Component#setSize
+     * @see      j86.java.awt.Dimension#getSize
+     * @see      j86.java.awt.Component#setSize
      * @since    1.1
      */
     public void setSize(Dimension d) {
@@ -192,8 +192,8 @@ public class Dimension extends Dimension2D implements java.io.Serializable {
      *
      * @param    width   the new width for this <code>Dimension</code> object
      * @param    height  the new height for this <code>Dimension</code> object
-     * @see      java.awt.Dimension#getSize
-     * @see      java.awt.Component#setSize
+     * @see      j86.java.awt.Dimension#getSize
+     * @see      j86.java.awt.Component#setSize
      * @since    1.1
      */
     public void setSize(int width, int height) {

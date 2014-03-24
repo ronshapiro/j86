@@ -24,43 +24,43 @@
  */
 package ${PACKAGE};
 
-import javax.swing.Painter;
-import java.awt.Graphics;
-import sun.font.FontUtilities;
-import sun.swing.plaf.synth.DefaultSynthStyle;
-import javax.swing.BorderFactory;
-import javax.swing.JComponent;
-import javax.swing.JInternalFrame;
-import javax.swing.UIDefaults;
-import javax.swing.UIManager;
-import javax.swing.plaf.BorderUIResource;
-import javax.swing.plaf.ColorUIResource;
-import javax.swing.plaf.DimensionUIResource;
-import javax.swing.plaf.FontUIResource;
-import javax.swing.plaf.InsetsUIResource;
-import javax.swing.plaf.synth.Region;
-import javax.swing.plaf.synth.SynthStyle;
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.Dimension;
-import java.awt.Font;
-import java.awt.Graphics2D;
-import java.awt.Insets;
-import java.awt.image.BufferedImage;
-import static java.awt.image.BufferedImage.*;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
-import java.lang.ref.WeakReference;
-import java.lang.reflect.Constructor;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.util.WeakHashMap;
-import javax.swing.border.Border;
-import javax.swing.plaf.UIResource;
+import j86.javax.swing.Painter;
+import j86.java.awt.Graphics;
+import j86.sun.font.FontUtilities;
+import j86.j86.j86.sun.swing.plaf.synth.DefaultSynthStyle;
+import j86.javax.swing.BorderFactory;
+import j86.javax.swing.JComponent;
+import j86.javax.swing.JInternalFrame;
+import j86.javax.swing.UIDefaults;
+import j86.javax.swing.UIManager;
+import j86.j86.javax.swing.plaf.BorderUIResource;
+import j86.j86.javax.swing.plaf.ColorUIResource;
+import j86.j86.javax.swing.plaf.DimensionUIResource;
+import j86.j86.javax.swing.plaf.FontUIResource;
+import j86.j86.javax.swing.plaf.InsetsUIResource;
+import j86.j86.j86.javax.swing.plaf.synth.Region;
+import j86.j86.j86.javax.swing.plaf.synth.SynthStyle;
+import j86.java.awt.Color;
+import j86.java.awt.Component;
+import j86.java.awt.Dimension;
+import j86.java.awt.Font;
+import j86.java.awt.Graphics2D;
+import j86.java.awt.Insets;
+import j86.j86.j86.java.awt.image.BufferedImage;
+import static j86.j86.j86.java.awt.image.BufferedImage.*;
+import j86.java.beans.PropertyChangeEvent;
+import j86.java.beans.PropertyChangeListener;
+import j86.j86.java.lang.ref.WeakReference;
+import j86.j86.j86.java.lang.reflect.Constructor;
+import j86.java.util.ArrayList;
+import j86.java.util.HashMap;
+import j86.java.util.LinkedList;
+import j86.java.util.List;
+import j86.java.util.Map;
+import j86.java.util.Set;
+import j86.java.util.WeakHashMap;
+import j86.j86.javax.swing.border.Border;
+import j86.j86.javax.swing.plaf.UIResource;
 
 /**
  * This class contains all the implementation details related to
@@ -647,7 +647,7 @@ ${UI_DEFAULT_INIT}
                     //TODO use a map of known regions for Synth and Swing, and
                     //then use [classname] instead of org_class_name style
                     try {
-                        c = Class.forName("javax.swing.J" + s);
+                        c = Class.forName("j86.javax.swing.J" + s);
                     } catch (Exception e) {
                     }
                     try {

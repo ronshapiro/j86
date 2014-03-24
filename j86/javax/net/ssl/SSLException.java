@@ -24,9 +24,9 @@
  */
 
 
-package javax.net.ssl;
+package j86.j86.javax.net.ssl;
 
-import java.io.IOException;
+import j86.java.io.IOException;
 
 /**
  * Indicates some kind of error detected by an SSL subsystem.

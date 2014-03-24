@@ -23,25 +23,25 @@
  * questions.
  */
 
-package java.lang.invoke;
+package j86.j86.java.lang.invoke;
 
-import sun.invoke.util.VerifyAccess;
-import java.lang.invoke.LambdaForm.Name;
-import java.lang.invoke.MethodHandles.Lookup;
+import j86.j86.sun.invoke.util.VerifyAccess;
+import j86.j86.java.lang.invoke.LambdaForm.Name;
+import j86.j86.java.lang.invoke.MethodHandles.Lookup;
 
-import sun.invoke.util.Wrapper;
+import j86.j86.sun.invoke.util.Wrapper;
 
-import java.io.*;
-import java.util.*;
+import j86.java.io.*;
+import j86.java.util.*;
 
-import jdk.internal.org.objectweb.asm.*;
+import j86.jdk.internal.org.objectweb.asm.*;
 
-import java.lang.reflect.*;
-import static java.lang.invoke.MethodHandleStatics.*;
-import static java.lang.invoke.MethodHandleNatives.Constants.*;
-import static java.lang.invoke.MethodHandles.Lookup.IMPL_LOOKUP;
-import sun.invoke.util.ValueConversions;
-import sun.invoke.util.VerifyType;
+import j86.j86.j86.java.lang.reflect.*;
+import static j86.j86.java.lang.invoke.MethodHandleStatics.*;
+import static j86.j86.java.lang.invoke.MethodHandleNatives.Constants.*;
+import static j86.j86.java.lang.invoke.MethodHandles.Lookup.IMPL_LOOKUP;
+import j86.j86.sun.invoke.util.ValueConversions;
+import j86.j86.sun.invoke.util.VerifyType;
 
 /**
  * Code generation backend for LambdaForm.
@@ -50,13 +50,13 @@ import sun.invoke.util.VerifyType;
  */
 class InvokerBytecodeGenerator {
     /** Define class names for convenience. */
-    private static final String MH      = "java/lang/invoke/MethodHandle";
-    private static final String BMH     = "java/lang/invoke/BoundMethodHandle";
-    private static final String LF      = "java/lang/invoke/LambdaForm";
-    private static final String LFN     = "java/lang/invoke/LambdaForm$Name";
-    private static final String CLS     = "java/lang/Class";
-    private static final String OBJ     = "java/lang/Object";
-    private static final String OBJARY  = "[Ljava/lang/Object;";
+    private static final String MH      = "j86.j86.java.lang.invoke/MethodHandle";
+    private static final String BMH     = "j86.j86.java.lang.invoke/BoundMethodHandle";
+    private static final String LF      = "j86.j86.java.lang.invoke/LambdaForm";
+    private static final String LFN     = "j86.j86.java.lang.invoke/LambdaForm$Name";
+    private static final String CLS     = "j86.java.lang/Class";
+    private static final String OBJ     = "j86.java.lang/Object";
+    private static final String OBJARY  = "[Lj86.java.lang/Object;";
 
     private static final String LF_SIG  = "L" + LF + ";";
     private static final String LFN_SIG = "L" + LFN + ";";
@@ -149,8 +149,8 @@ class InvokerBytecodeGenerator {
     static void maybeDump(final String className, final byte[] classFile) {
         if (DUMP_CLASS_FILES) {
             System.out.println("dump: " + className);
-            java.security.AccessController.doPrivileged(
-            new java.security.PrivilegedAction<Void>() {
+            j86.java.security.AccessController.doPrivileged(
+            new j86.java.security.PrivilegedAction<Void>() {
                 public Void run() {
                     try {
                         String dumpName = className;
@@ -400,7 +400,7 @@ class InvokerBytecodeGenerator {
      */
     private void emitBoxing(Class<?> type) {
         Wrapper wrapper = Wrapper.forPrimitiveType(type);
-        String owner = "java/lang/" + wrapper.wrapperType().getSimpleName();
+        String owner = "j86.java.lang/" + wrapper.wrapperType().getSimpleName();
         String name  = "valueOf";
         String desc  = "(" + wrapper.basicTypeChar() + ")L" + owner + ";";
         mv.visitMethodInsn(Opcodes.INVOKESTATIC, owner, name, desc);
@@ -413,7 +413,7 @@ class InvokerBytecodeGenerator {
      */
     private void emitUnboxing(Class<?> type) {
         Wrapper wrapper = Wrapper.forWrapperType(type);
-        String owner = "java/lang/" + wrapper.wrapperType().getSimpleName();
+        String owner = "j86.java.lang/" + wrapper.wrapperType().getSimpleName();
         String name  = wrapper.primitiveSimpleName() + "Value";
         String desc  = "()" + wrapper.basicTypeChar();
         mv.visitTypeInsn(Opcodes.CHECKCAST, owner);
@@ -497,13 +497,13 @@ class InvokerBytecodeGenerator {
         classFilePrologue();
 
         // Suppress this method in backtraces displayed to the user.
-        mv.visitAnnotation("Ljava/lang/invoke/LambdaForm$Hidden;", true);
+        mv.visitAnnotation("Lj86.j86.java.lang.invoke/LambdaForm$Hidden;", true);
 
         // Mark this method as a compiled LambdaForm
-        mv.visitAnnotation("Ljava/lang/invoke/LambdaForm$Compiled;", true);
+        mv.visitAnnotation("Lj86.j86.java.lang.invoke/LambdaForm$Compiled;", true);
 
         // Force inlining of this invoker method.
-        mv.visitAnnotation("Ljava/lang/invoke/ForceInline;", true);
+        mv.visitAnnotation("Lj86.j86.java.lang.invoke/ForceInline;", true);
 
         // iterate over the form's names, generating bytecode instructions for each
         // start iterating at the first name following the arguments
@@ -575,9 +575,9 @@ class InvokerBytecodeGenerator {
 
     static private Class<?>[] STATICALLY_INVOCABLE_PACKAGES = {
         // Sample classes from each package we are willing to bind to statically:
-        java.lang.Object.class,
-        java.util.Arrays.class,
-        sun.misc.Unsafe.class
+        j86.java.lang.Object.class,
+        j86.java.util.Arrays.class,
+        j86.sun.misc.Unsafe.class
         //MethodHandle.class already covered
     };
 
@@ -598,7 +598,7 @@ class InvokerBytecodeGenerator {
             if (!isStaticallyNameable(ptype))
                 return false;
         if (!member.isPrivate() && VerifyAccess.isSamePackage(MethodHandle.class, cls))
-            return true;   // in java.lang.invoke package
+            return true;   // in j86.j86.java.lang.invoke package
         if (member.isPublic() && isStaticallyNameable(cls))
             return true;
         return false;
@@ -919,14 +919,14 @@ class InvokerBytecodeGenerator {
         classFilePrologue();
 
         // Suppress this method in backtraces displayed to the user.
-        mv.visitAnnotation("Ljava/lang/invoke/LambdaForm$Hidden;", true);
+        mv.visitAnnotation("Lj86.j86.java.lang.invoke/LambdaForm$Hidden;", true);
 
         // Don't inline the interpreter entry.
-        mv.visitAnnotation("Ljava/lang/invoke/DontInline;", true);
+        mv.visitAnnotation("Lj86.j86.java.lang.invoke/DontInline;", true);
 
         // create parameter array
         emitIconstInsn(invokerType.parameterCount());
-        mv.visitTypeInsn(Opcodes.ANEWARRAY, "java/lang/Object");
+        mv.visitTypeInsn(Opcodes.ANEWARRAY, "j86.java.lang/Object");
 
         // fill parameter array
         for (int i = 0; i < invokerType.parameterCount(); i++) {
@@ -942,9 +942,9 @@ class InvokerBytecodeGenerator {
         }
         // invoke
         emitAloadInsn(0);
-        mv.visitFieldInsn(Opcodes.GETFIELD, MH, "form", "Ljava/lang/invoke/LambdaForm;");
+        mv.visitFieldInsn(Opcodes.GETFIELD, MH, "form", "Lj86.j86.java.lang.invoke/LambdaForm;");
         mv.visitInsn(Opcodes.SWAP);  // swap form and array; avoid local variable
-        mv.visitMethodInsn(Opcodes.INVOKEVIRTUAL, LF, "interpretWithArguments", "([Ljava/lang/Object;)Ljava/lang/Object;");
+        mv.visitMethodInsn(Opcodes.INVOKEVIRTUAL, LF, "interpretWithArguments", "([Lj86.java.lang/Object;)Ljava/lang/Object;");
 
         // maybe unbox
         Class<?> rtype = invokerType.returnType();
@@ -980,10 +980,10 @@ class InvokerBytecodeGenerator {
         classFilePrologue();
 
         // Suppress this method in backtraces displayed to the user.
-        mv.visitAnnotation("Ljava/lang/invoke/LambdaForm$Hidden;", true);
+        mv.visitAnnotation("Lj86.j86.java.lang.invoke/LambdaForm$Hidden;", true);
 
         // Force inlining of this invoker method.
-        mv.visitAnnotation("Ljava/lang/invoke/ForceInline;", true);
+        mv.visitAnnotation("Lj86.j86.java.lang.invoke/ForceInline;", true);
 
         // Load receiver
         emitAloadInsn(0);

@@ -23,31 +23,31 @@
  * questions.
  */
 
-package javax.management.remote.rmi;
+package j86.j86.j86.javax.management.remote.rmi;
 
-import com.sun.jmx.remote.internal.ArrayNotificationBuffer;
-import com.sun.jmx.remote.internal.NotificationBuffer;
-import com.sun.jmx.remote.security.JMXPluggableAuthenticator;
-import com.sun.jmx.remote.util.ClassLogger;
+import j86.com.sun.jmx.remote.internal.ArrayNotificationBuffer;
+import j86.com.sun.jmx.remote.internal.NotificationBuffer;
+import j86.com.sun.jmx.remote.security.JMXPluggableAuthenticator;
+import j86.com.sun.jmx.remote.util.ClassLogger;
 
-import java.io.Closeable;
-import java.io.IOException;
-import java.lang.ref.WeakReference;
-import java.rmi.Remote;
-import java.rmi.server.RemoteServer;
-import java.rmi.server.ServerNotActiveException;
-import java.security.Principal;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import j86.java.io.Closeable;
+import j86.java.io.IOException;
+import j86.j86.java.lang.ref.WeakReference;
+import j86.java.rmi.Remote;
+import j86.j86.java.rmi.server.RemoteServer;
+import j86.j86.java.rmi.server.ServerNotActiveException;
+import j86.java.security.Principal;
+import j86.java.util.ArrayList;
+import j86.java.util.Collections;
+import j86.java.util.Iterator;
+import j86.java.util.List;
+import j86.java.util.Map;
+import j86.java.util.Set;
 
-import javax.management.MBeanServer;
-import javax.management.remote.JMXAuthenticator;
-import javax.management.remote.JMXConnectorServer;
-import javax.security.auth.Subject;
+import j86.javax.management.MBeanServer;
+import j86.j86.javax.management.remote.JMXAuthenticator;
+import j86.j86.javax.management.remote.JMXConnectorServer;
+import j86.javax.security.auth.Subject;
 
 /**
  * <p>An RMI object representing a connector server.  Remote clients
@@ -57,7 +57,7 @@ import javax.security.auth.Subject;
  * <p>User code does not usually reference this class directly.
  * RMI connection servers are usually created with the class {@link
  * RMIConnectorServer}.  Remote clients usually create connections
- * either with {@link javax.management.remote.JMXConnectorFactory}
+ * either with {@link j86.j86.javax.management.remote.JMXConnectorFactory}
  * or by instantiating {@link RMIConnector}.</p>
  *
  * <p>This is an abstract class.  Concrete subclasses define the
@@ -475,7 +475,7 @@ public abstract class RMIServerImpl implements Closeable, RMIServer {
         try {
             clientHost = RemoteServer.getClientHost();
             /*
-             * According to the rules specified in the javax.management.remote
+             * According to the rules specified in the j86.j86.javax.management.remote
              * package description, a numeric IPv6 address (detected by the
              * presence of otherwise forbidden ":" character) forming a part
              * of the connection id must be enclosed in square brackets.
@@ -529,7 +529,7 @@ public abstract class RMIServerImpl implements Closeable, RMIServer {
     }
 
     private static final ClassLogger logger =
-        new ClassLogger("javax.management.remote.rmi", "RMIServerImpl");
+        new ClassLogger("j86.j86.j86.javax.management.remote.rmi", "RMIServerImpl");
 
     /** List of WeakReference values.  Each one references an
         RMIConnection created by this object, or null if the

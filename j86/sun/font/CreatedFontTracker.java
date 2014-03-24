@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.font;
+package j86.sun.font;
 
-import java.io.File;
-import java.io.OutputStream;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.concurrent.Semaphore;
-import java.util.concurrent.TimeUnit;
+import j86.java.io.File;
+import j86.java.io.OutputStream;
+import j86.java.util.HashMap;
+import j86.java.util.Map;
+import j86.j86.java.util.concurrent.Semaphore;
+import j86.j86.java.util.concurrent.TimeUnit;
 
-import sun.awt.AppContext;
+import j86.sun.awt.AppContext;
 
 public class CreatedFontTracker {
 
@@ -112,8 +112,8 @@ public class CreatedFontTracker {
         static void init() {
             if (t == null) {
                 // Add a shutdown hook to remove the temp file.
-                java.security.AccessController.doPrivileged(
-                   new java.security.PrivilegedAction() {
+                j86.java.security.AccessController.doPrivileged(
+                   new j86.java.security.PrivilegedAction() {
                       public Object run() {
                           /* The thread must be a member of a thread group
                            * which will not get GCed before VM exit.

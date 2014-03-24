@@ -22,26 +22,26 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing;
+package j86.javax.swing;
 
-import java.awt.*;
-import java.awt.event.*;
-import javax.swing.text.*;
-import javax.swing.plaf.*;
-import javax.accessibility.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.j86.javax.swing.text.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.javax.accessibility.*;
 
-import java.util.Collections;
-import java.util.Set;
-import java.util.StringTokenizer;
+import j86.java.util.Collections;
+import j86.java.util.Set;
+import j86.java.util.StringTokenizer;
 
-import java.io.ObjectOutputStream;
-import java.io.ObjectInputStream;
-import java.io.IOException;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.IOException;
 
 /**
  * A <code>JTextArea</code> is a multi-line area that displays plain text.
  * It is intended to be a lightweight component that provides source
- * compatibility with the <code>java.awt.TextArea</code> class where it can
+ * compatibility with the <code>j86.java.awt.TextArea</code> class where it can
  * reasonably do so.
  * You can find information and examples of using all the text components in
  * <a href="http://docs.oracle.com/javase/tutorial/uiswing/components/text.html">Using Text Components</a>,
@@ -49,18 +49,18 @@ import java.io.IOException;
  *
  * <p>
  * This component has capabilities not found in the
- * <code>java.awt.TextArea</code> class.  The superclass should be
+ * <code>j86.java.awt.TextArea</code> class.  The superclass should be
  * consulted for additional capabilities.
  * Alternative multi-line text classes with
  * more capabilities are <code>JTextPane</code> and <code>JEditorPane</code>.
  * <p>
- * The <code>java.awt.TextArea</code> internally handles scrolling.
+ * The <code>j86.java.awt.TextArea</code> internally handles scrolling.
  * <code>JTextArea</code> is different in that it doesn't manage scrolling,
  * but implements the swing <code>Scrollable</code> interface.  This allows it
  * to be placed inside a <code>JScrollPane</code> if scrolling
  * behavior is desired, and used directly if scrolling is not desired.
  * <p>
- * The <code>java.awt.TextArea</code> has the ability to do line wrapping.
+ * The <code>j86.java.awt.TextArea</code> has the ability to do line wrapping.
  * This was controlled by the horizontal scrolling policy.  Since
  * scrolling is not done by <code>JTextArea</code> directly, backward
  * compatibility must be provided another way.  <code>JTextArea</code> has
@@ -68,11 +68,11 @@ import java.io.IOException;
  * not it will wrap lines.  By default, the line wrapping property
  * is set to false (not wrapped).
  * <p>
- * <code>java.awt.TextArea</code> has two properties <code>rows</code>
+ * <code>j86.java.awt.TextArea</code> has two properties <code>rows</code>
  * and <code>columns</code> that are used to determine the preferred size.
  * <code>JTextArea</code> uses these properties to indicate the
  * preferred size of the viewport when placed inside a <code>JScrollPane</code>
- * to match the functionality provided by <code>java.awt.TextArea</code>.
+ * to match the functionality provided by <code>j86.java.awt.TextArea</code>.
  * <code>JTextArea</code> has a preferred size of what is needed to
  * display all of the text, so that it functions properly inside of
  * a <code>JScrollPane</code>.  If the value for <code>rows</code>
@@ -80,7 +80,7 @@ import java.io.IOException;
  * the preferred size along that axis is used for
  * the viewport preferred size along the same axis.
  * <p>
- * The <code>java.awt.TextArea</code> could be monitored for changes by adding
+ * The <code>j86.java.awt.TextArea</code> could be monitored for changes by adding
  * a <code>TextListener</code> for <code>TextEvent</code>s.
  * In the <code>JTextComponent</code> based
  * components, changes are broadcasted from the model via a
@@ -113,8 +113,8 @@ import java.io.IOException;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @beaninfo
  *   attribute: isContainer false
@@ -439,7 +439,7 @@ public class JTextArea extends JTextComponent {
         }
     }
 
-    // --- java.awt.TextArea methods ---------------------------------
+    // --- j86.java.awt.TextArea methods ---------------------------------
 
     /**
      * Inserts the specified text at the specified position.  Does nothing
@@ -784,8 +784,8 @@ public class JTextArea extends JTextComponent {
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     protected class AccessibleJTextArea extends AccessibleJTextComponent {
 

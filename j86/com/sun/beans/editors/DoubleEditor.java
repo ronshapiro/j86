@@ -23,14 +23,14 @@
  * questions.
  */
 
-package com.sun.beans.editors;
+package j86.j86.com.sun.beans.editors;
 
 /**
  * Property editor for a java builtin "double" type.
  *
  */
 
-import java.beans.*;
+import j86.java.beans.*;
 
 public class DoubleEditor extends NumberEditor {
 

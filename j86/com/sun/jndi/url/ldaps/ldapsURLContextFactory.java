@@ -23,9 +23,9 @@
  * questions.
  */
 
-package com.sun.jndi.url.ldaps;
+package j86.j86.com.sun.jndi.url.ldaps;
 
-import com.sun.jndi.url.ldap.*;
+import j86.com.sun.jndi.url.ldap.*;
 
 /**
  * An LDAP URL context factory that creates secure LDAP contexts (using SSL).

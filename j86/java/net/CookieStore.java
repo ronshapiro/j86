@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.net;
+package j86.java.net;
 
-import java.util.List;
-import java.util.Map;
+import j86.java.util.List;
+import j86.java.util.Map;
 
 /**
  * A CookieStore object represents a storage for cookie. Can store and retrieve

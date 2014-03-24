@@ -22,12 +22,12 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.plaf.synth;
+package j86.j86.j86.javax.swing.plaf.synth;
 
-import java.awt.Graphics;
-import java.util.LinkedList;
+import j86.java.awt.Graphics;
+import j86.java.util.LinkedList;
 
-import sun.swing.plaf.synth.DefaultSynthStyle;
+import j86.j86.j86.sun.swing.plaf.synth.DefaultSynthStyle;
 
 /**
  * ParsedSynthStyle are the SynthStyle's that SynthParser creates.
@@ -265,7 +265,7 @@ class ParsedSynthStyle extends DefaultSynthStyle {
     }
 
     private static class AggregatePainter extends SynthPainter {
-        private java.util.List<SynthPainter> painters;
+        private j86.java.util.List<SynthPainter> painters;
 
         AggregatePainter(SynthPainter painter) {
             painters = new LinkedList<SynthPainter>();

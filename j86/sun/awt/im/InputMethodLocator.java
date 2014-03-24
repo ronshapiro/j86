@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.awt.im;
+package j86.j86.sun.awt.im;
 
-import java.awt.AWTException;
-import java.awt.im.spi.InputMethodDescriptor;
-import java.util.Locale;
+import j86.java.awt.AWTException;
+import j86.j86.j86.java.awt.im.spi.InputMethodDescriptor;
+import j86.java.util.Locale;
 
 /**
  * Provides complete information to make and handle the selection

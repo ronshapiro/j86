@@ -23,23 +23,23 @@
  * questions.
  */
 
-package sun.tools.jconsole;
+package j86.sun.tools.jconsole;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.beans.*;
-import java.lang.reflect.*;
-import java.util.*;
-import java.util.List;
-import java.util.Timer;
-import javax.swing.*;
-import javax.swing.plaf.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.java.beans.*;
+import j86.j86.j86.java.lang.reflect.*;
+import j86.java.util.*;
+import j86.java.util.List;
+import j86.java.util.Timer;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.plaf.*;
 
 
-import com.sun.tools.jconsole.JConsolePlugin;
-import com.sun.tools.jconsole.JConsoleContext;
+import com.j86.sun.tools.jconsole.JConsolePlugin;
+import com.j86.sun.tools.jconsole.JConsoleContext;
 
-import static sun.tools.jconsole.ProxyClient.*;
+import static j86.sun.tools.jconsole.ProxyClient.*;
 
 @SuppressWarnings("serial")
 public class VMPanel extends JTabbedPane implements PropertyChangeListener {
@@ -250,7 +250,7 @@ public class VMPanel extends JTabbedPane implements PropertyChangeListener {
 
     public ProxyClient getProxyClient() {
         String threadClass = Thread.currentThread().getClass().getName();
-        if (threadClass.equals("java.awt.EventDispatchThread")) {
+        if (threadClass.equals("j86.java.awt.EventDispatchThread")) {
             String msg = "Calling VMPanel.getProxyClient() from the Event Dispatch Thread!";
             new RuntimeException(msg).printStackTrace();
             System.exit(1);

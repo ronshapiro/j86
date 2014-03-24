@@ -23,29 +23,29 @@
  * questions.
  */
 
-package sun.misc;
+package j86.sun.misc;
 
-import java.io.ByteArrayOutputStream;
-import java.io.DataOutputStream;
-import java.io.File;
-import java.io.IOException;
-import java.io.OutputStream;
-import java.lang.reflect.Array;
-import java.lang.reflect.Method;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.ListIterator;
-import java.util.Map;
-import sun.security.action.GetBooleanAction;
+import j86.java.io.ByteArrayOutputStream;
+import j86.java.io.DataOutputStream;
+import j86.java.io.File;
+import j86.java.io.IOException;
+import j86.java.io.OutputStream;
+import j86.j86.j86.java.lang.reflect.Array;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.j86.java.nio.file.Files;
+import j86.j86.java.nio.file.Path;
+import j86.j86.java.nio.file.Paths;
+import j86.java.util.ArrayList;
+import j86.java.util.HashMap;
+import j86.java.util.LinkedList;
+import j86.java.util.List;
+import j86.java.util.ListIterator;
+import j86.java.util.Map;
+import j86.sun.security.action.GetBooleanAction;
 
 /**
  * ProxyGenerator contains the code to generate a dynamic proxy class
- * for the java.lang.reflect.Proxy API.
+ * for the j86.j86.j86.java.lang.reflect.Proxy API.
  *
  * The external interfaces to ProxyGenerator is the static
  * "generateProxyClass" method.
@@ -67,7 +67,7 @@ public class ProxyGenerator {
 
     /*
      * beginning of constants copied from
-     * sun.tools.java.RuntimeConstants (which no longer exists):
+     * j86.sun.tools.java.RuntimeConstants (which no longer exists):
      */
 
     /* constant pool tags */
@@ -302,19 +302,19 @@ public class ProxyGenerator {
 //  private static final int opc_goto_w                 = 200;
 //  private static final int opc_jsr_w                  = 201;
 
-    // end of constants copied from sun.tools.java.RuntimeConstants
+    // end of constants copied from j86.sun.tools.java.RuntimeConstants
 
     /** name of the superclass of proxy classes */
-    private final static String superclassName = "java/lang/reflect/Proxy";
+    private final static String superclassName = "j86.j86.j86.java.lang.reflect/Proxy";
 
     /** name of field for storing a proxy instance's invocation handler */
     private final static String handlerFieldName = "h";
 
     /** debugging flag for saving generated class files */
     private final static boolean saveGeneratedFiles =
-        java.security.AccessController.doPrivileged(
+        j86.java.security.AccessController.doPrivileged(
             new GetBooleanAction(
-                "sun.misc.ProxyGenerator.saveGeneratedFiles")).booleanValue();
+                "j86.sun.misc.ProxyGenerator.saveGeneratedFiles")).booleanValue();
 
     /**
      * Generate a public proxy class given a name and a list of proxy interfaces.
@@ -339,8 +339,8 @@ public class ProxyGenerator {
         final byte[] classFile = gen.generateClassFile();
 
         if (saveGeneratedFiles) {
-            java.security.AccessController.doPrivileged(
-            new java.security.PrivilegedAction<Void>() {
+            j86.java.security.AccessController.doPrivileged(
+            new j86.java.security.PrivilegedAction<Void>() {
                 public Void run() {
                     try {
                         int i = name.lastIndexOf('.');
@@ -365,7 +365,7 @@ public class ProxyGenerator {
         return classFile;
     }
 
-    /* preloaded Method objects for methods in java.lang.Object */
+    /* preloaded Method objects for methods in j86.java.lang.Object */
     private static Method hashCodeMethod;
     private static Method equalsMethod;
     private static Method toStringMethod;
@@ -433,9 +433,9 @@ public class ProxyGenerator {
 
         /*
          * Record that proxy methods are needed for the hashCode, equals,
-         * and toString methods of java.lang.Object.  This is done before
+         * and toString methods of j86.java.lang.Object.  This is done before
          * the methods from the proxy interfaces so that the methods from
-         * java.lang.Object take precedence over duplicate methods in the
+         * j86.java.lang.Object take precedence over duplicate methods in the
          * proxy interfaces.
          */
         addProxyMethod(hashCodeMethod, Object.class);
@@ -473,7 +473,7 @@ public class ProxyGenerator {
 
                     // add static field for method's Method object
                     fields.add(new FieldInfo(pm.methodFieldName,
-                        "Ljava/lang/reflect/Method;",
+                        "Lj86.j86.j86.java.lang.reflect/Method;",
                          ACC_PRIVATE | ACC_STATIC));
 
                     // generate code for proxy method and add it
@@ -915,21 +915,21 @@ public class ProxyGenerator {
             out.writeByte(opc_getfield);
             out.writeShort(cp.getFieldRef(
                 superclassName,
-                handlerFieldName, "Ljava/lang/reflect/InvocationHandler;"));
+                handlerFieldName, "Lj86.j86.j86.java.lang.reflect/InvocationHandler;"));
 
             code_aload(0, out);
 
             out.writeByte(opc_getstatic);
             out.writeShort(cp.getFieldRef(
                 dotToSlash(className),
-                methodFieldName, "Ljava/lang/reflect/Method;"));
+                methodFieldName, "Lj86.j86.j86.java.lang.reflect/Method;"));
 
             if (parameterTypes.length > 0) {
 
                 code_ipush(parameterTypes.length, out);
 
                 out.writeByte(opc_anewarray);
-                out.writeShort(cp.getClass("java/lang/Object"));
+                out.writeShort(cp.getClass("j86.java.lang/Object"));
 
                 for (int i = 0; i < parameterTypes.length; i++) {
 
@@ -948,10 +948,10 @@ public class ProxyGenerator {
 
             out.writeByte(opc_invokeinterface);
             out.writeShort(cp.getInterfaceMethodRef(
-                "java/lang/reflect/InvocationHandler",
+                "j86.j86.j86.java.lang.reflect/InvocationHandler",
                 "invoke",
-                "(Ljava/lang/Object;Ljava/lang/reflect/Method;" +
-                    "[Ljava/lang/Object;)Ljava/lang/Object;"));
+                "(Lj86.java.lang/Object;Lj86.j86.java.lang.reflect/Method;" +
+                    "[Lj86.java.lang/Object;)Ljava/lang/Object;"));
             out.writeByte(4);
             out.writeByte(0);
 
@@ -982,13 +982,13 @@ public class ProxyGenerator {
                 pc = (short) minfo.code.size();
 
                 minfo.exceptionTable.add(new ExceptionTableEntry(
-                    tryBegin, tryEnd, pc, cp.getClass("java/lang/Throwable")));
+                    tryBegin, tryEnd, pc, cp.getClass("j86.java.lang/Throwable")));
 
                 code_astore(localSlot0, out);
 
                 out.writeByte(opc_new);
                 out.writeShort(cp.getClass(
-                    "java/lang/reflect/UndeclaredThrowableException"));
+                    "j86.j86.j86.java.lang.reflect/UndeclaredThrowableException"));
 
                 out.writeByte(opc_dup);
 
@@ -997,8 +997,8 @@ public class ProxyGenerator {
                 out.writeByte(opc_invokespecial);
 
                 out.writeShort(cp.getMethodRef(
-                    "java/lang/reflect/UndeclaredThrowableException",
-                    "<init>", "(Ljava/lang/Throwable;)V"));
+                    "j86.j86.j86.java.lang.reflect/UndeclaredThrowableException",
+                    "<init>", "(Lj86.java.lang/Throwable;)V"));
 
                 out.writeByte(opc_athrow);
             }
@@ -1121,7 +1121,7 @@ public class ProxyGenerator {
             code_ipush(parameterTypes.length, out);
 
             out.writeByte(opc_anewarray);
-            out.writeShort(cp.getClass("java/lang/Class"));
+            out.writeShort(cp.getClass("j86.java.lang/Class"));
 
             for (int i = 0; i < parameterTypes.length; i++) {
 
@@ -1135,7 +1135,7 @@ public class ProxyGenerator {
 
                     out.writeByte(opc_getstatic);
                     out.writeShort(cp.getFieldRef(
-                        prim.wrapperClassName, "TYPE", "Ljava/lang/Class;"));
+                        prim.wrapperClassName, "TYPE", "Lj86.java.lang/Class;"));
 
                 } else {
                     codeClassForName(parameterTypes[i], out);
@@ -1146,15 +1146,15 @@ public class ProxyGenerator {
 
             out.writeByte(opc_invokevirtual);
             out.writeShort(cp.getMethodRef(
-                "java/lang/Class",
+                "j86.java.lang/Class",
                 "getMethod",
-                "(Ljava/lang/String;[Ljava/lang/Class;)" +
-                "Ljava/lang/reflect/Method;"));
+                "(Lj86.java.lang/String;[Ljava/lang/Class;)" +
+                "Lj86.j86.j86.java.lang.reflect/Method;"));
 
             out.writeByte(opc_putstatic);
             out.writeShort(cp.getFieldRef(
                 dotToSlash(className),
-                methodFieldName, "Ljava/lang/reflect/Method;"));
+                methodFieldName, "Lj86.j86.j86.java.lang.reflect/Method;"));
         }
     }
 
@@ -1163,7 +1163,7 @@ public class ProxyGenerator {
      */
     private MethodInfo generateConstructor() throws IOException {
         MethodInfo minfo = new MethodInfo(
-            "<init>", "(Ljava/lang/reflect/InvocationHandler;)V",
+            "<init>", "(Lj86.j86.j86.java.lang.reflect/InvocationHandler;)V",
             ACC_PUBLIC);
 
         DataOutputStream out = new DataOutputStream(minfo.code);
@@ -1175,7 +1175,7 @@ public class ProxyGenerator {
         out.writeByte(opc_invokespecial);
         out.writeShort(cp.getMethodRef(
             superclassName,
-            "<init>", "(Ljava/lang/reflect/InvocationHandler;)V"));
+            "<init>", "(Lj86.j86.j86.java.lang.reflect/InvocationHandler;)V"));
 
         out.writeByte(opc_return);
 
@@ -1210,12 +1210,12 @@ public class ProxyGenerator {
 
         minfo.exceptionTable.add(new ExceptionTableEntry(
             tryBegin, tryEnd, pc,
-            cp.getClass("java/lang/NoSuchMethodException")));
+            cp.getClass("j86.java.lang/NoSuchMethodException")));
 
         code_astore(localSlot0, out);
 
         out.writeByte(opc_new);
-        out.writeShort(cp.getClass("java/lang/NoSuchMethodError"));
+        out.writeShort(cp.getClass("j86.java.lang/NoSuchMethodError"));
 
         out.writeByte(opc_dup);
 
@@ -1223,11 +1223,11 @@ public class ProxyGenerator {
 
         out.writeByte(opc_invokevirtual);
         out.writeShort(cp.getMethodRef(
-            "java/lang/Throwable", "getMessage", "()Ljava/lang/String;"));
+            "j86.java.lang/Throwable", "getMessage", "()Ljava/lang/String;"));
 
         out.writeByte(opc_invokespecial);
         out.writeShort(cp.getMethodRef(
-            "java/lang/NoSuchMethodError", "<init>", "(Ljava/lang/String;)V"));
+            "j86.java.lang/NoSuchMethodError", "<init>", "(Ljava/lang/String;)V"));
 
         out.writeByte(opc_athrow);
 
@@ -1235,12 +1235,12 @@ public class ProxyGenerator {
 
         minfo.exceptionTable.add(new ExceptionTableEntry(
             tryBegin, tryEnd, pc,
-            cp.getClass("java/lang/ClassNotFoundException")));
+            cp.getClass("j86.java.lang/ClassNotFoundException")));
 
         code_astore(localSlot0, out);
 
         out.writeByte(opc_new);
-        out.writeShort(cp.getClass("java/lang/NoClassDefFoundError"));
+        out.writeShort(cp.getClass("j86.java.lang/NoClassDefFoundError"));
 
         out.writeByte(opc_dup);
 
@@ -1248,12 +1248,12 @@ public class ProxyGenerator {
 
         out.writeByte(opc_invokevirtual);
         out.writeShort(cp.getMethodRef(
-            "java/lang/Throwable", "getMessage", "()Ljava/lang/String;"));
+            "j86.java.lang/Throwable", "getMessage", "()Ljava/lang/String;"));
 
         out.writeByte(opc_invokespecial);
         out.writeShort(cp.getMethodRef(
-            "java/lang/NoClassDefFoundError",
-            "<init>", "(Ljava/lang/String;)V"));
+            "j86.java.lang/NoClassDefFoundError",
+            "<init>", "(Lj86.java.lang/String;)V"));
 
         out.writeByte(opc_athrow);
 
@@ -1422,8 +1422,8 @@ public class ProxyGenerator {
 
         out.writeByte(opc_invokestatic);
         out.writeShort(cp.getMethodRef(
-            "java/lang/Class",
-            "forName", "(Ljava/lang/String;)Ljava/lang/Class;"));
+            "j86.java.lang/Class",
+            "forName", "(Lj86.java.lang/String;)Ljava/lang/Class;"));
     }
 
 
@@ -1578,7 +1578,7 @@ public class ProxyGenerator {
      * unchecked exceptions should always be rethrown intact, and thus their
      * subclasses will never appear in the returned list.
      *
-     * The returned List will be empty if java.lang.Throwable is in the
+     * The returned List will be empty if j86.java.lang.Throwable is in the
      * given list of declared exceptions, indicating that no exceptions
      * need to be caught.
      */
@@ -1869,11 +1869,11 @@ public class ProxyGenerator {
          * a direct value.  The type of the given object determines the
          * type of the desired entry as follows:
          *
-         *      java.lang.String        CONSTANT_Utf8
-         *      java.lang.Integer       CONSTANT_Integer
-         *      java.lang.Float         CONSTANT_Float
-         *      java.lang.Long          CONSTANT_Long
-         *      java.lang.Double        CONSTANT_DOUBLE
+         *      j86.java.lang.String        CONSTANT_Utf8
+         *      j86.java.lang.Integer       CONSTANT_Integer
+         *      j86.java.lang.Float         CONSTANT_Float
+         *      j86.java.lang.Long          CONSTANT_Long
+         *      j86.java.lang.Double        CONSTANT_DOUBLE
          */
         private short getValue(Object key) {
             Short index = map.get(key);

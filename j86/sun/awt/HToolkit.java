@@ -23,23 +23,23 @@
  * questions.
  */
 
-package sun.awt;
+package j86.sun.awt;
 
-import java.awt.*;
-import java.awt.dnd.*;
-import java.awt.dnd.peer.DragSourceContextPeer;
-import java.awt.im.InputMethodHighlight;
-import java.awt.im.spi.InputMethodDescriptor;
-import java.awt.image.*;
-import java.awt.datatransfer.Clipboard;
-import java.awt.peer.*;
-import java.util.Map;
-import java.util.Properties;
+import j86.java.awt.*;
+import j86.j86.java.awt.dnd.*;
+import j86.j86.j86.java.awt.dnd.peer.DragSourceContextPeer;
+import j86.j86.java.awt.im.InputMethodHighlight;
+import j86.j86.j86.java.awt.im.spi.InputMethodDescriptor;
+import j86.j86.j86.java.awt.image.*;
+import j86.j86.java.awt.datatransfer.Clipboard;
+import j86.j86.java.awt.peer.*;
+import j86.java.util.Map;
+import j86.java.util.Properties;
 
 /*
  * HToolkit is a platform independent Toolkit used
  * with the HeadlessToolkit.  It is primarily used
- * in embedded JRE's that do not have sun/awt/X11 classes.
+ * in embedded JRE's that do not have j86.sun.awt/X11 classes.
  */
 public class HToolkit extends SunToolkit
     implements ComponentFactory {

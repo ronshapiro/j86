@@ -23,23 +23,23 @@
  * questions.
  */
 
-package sun.security.ssl.krb5;
+package j86.j86.sun.security.ssl.krb5;
 
-import java.io.*;
-import java.security.*;
-import java.util.Arrays;
+import j86.java.io.*;
+import j86.java.security.*;
+import j86.java.util.Arrays;
 
-import javax.net.ssl.*;
+import j86.j86.javax.net.ssl.*;
 
-import sun.security.krb5.EncryptionKey;
-import sun.security.krb5.EncryptedData;
-import sun.security.krb5.KrbException;
-import sun.security.krb5.internal.crypto.KeyUsage;
+import j86.sun.security.krb5.EncryptionKey;
+import j86.sun.security.krb5.EncryptedData;
+import j86.sun.security.krb5.KrbException;
+import j86.j86.j86.sun.security.krb5.internal.crypto.KeyUsage;
 
-import sun.security.ssl.Debug;
-import sun.security.ssl.HandshakeInStream;
-import sun.security.ssl.HandshakeMessage;
-import sun.security.ssl.ProtocolVersion;
+import j86.sun.security.ssl.Debug;
+import j86.sun.security.ssl.HandshakeInStream;
+import j86.sun.security.ssl.HandshakeMessage;
+import j86.sun.security.ssl.ProtocolVersion;
 
 /**
  * This is the Kerberos premaster secret in the Kerberos client key

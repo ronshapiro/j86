@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.util;
+package j86.java.util;
 
 /**
  * Private implementation class for EnumSet, for "regular sized" enum types

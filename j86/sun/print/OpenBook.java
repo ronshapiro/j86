@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.print;
+package j86.sun.print;
 
-import java.awt.print.Pageable;
-import java.awt.print.PageFormat;
-import java.awt.print.Printable;
+import j86.j86.java.awt.print.Pageable;
+import j86.j86.java.awt.print.PageFormat;
+import j86.j86.java.awt.print.Printable;
 
 /**
  * A Book with an unknown number of pages where each

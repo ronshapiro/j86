@@ -23,9 +23,9 @@
  * questions.
  */
 
-package com.sun.imageio.plugins.jpeg;
+package j86.com.sun.imageio.plugins.jpeg;
 
-import java.util.ListResourceBundle;
+import j86.java.util.ListResourceBundle;
 
 public class JPEGImageMetadataFormatResources
        extends JPEGMetadataFormatResources {

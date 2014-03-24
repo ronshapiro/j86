@@ -23,10 +23,10 @@
  * questions.
  */
 
-package com.sun.java.util.jar.pack;
+package j86.com.sun.j86.j86.java.util.jar.pack;
 
-import java.util.Arrays;
-import java.util.List;
+import j86.java.util.Arrays;
+import j86.java.util.List;
 
 /**
  * Shared constants

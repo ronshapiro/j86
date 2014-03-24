@@ -23,14 +23,14 @@
  * questions.
  */
 
-package java.awt.color;
+package j86.j86.java.awt.color;
 
 /**
  * This exception is thrown when an error occurs in accessing or
  * processing an ICC_Profile object.
  */
 
-public class ProfileDataException extends java.lang.RuntimeException {
+public class ProfileDataException extends j86.java.lang.RuntimeException {
 
     /**
      *  Constructs a ProfileDataException with the specified detail message.

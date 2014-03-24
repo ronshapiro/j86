@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.swing.plaf;
+package j86.j86.javax.swing.plaf;
 
-import java.awt.Color;
-import java.beans.ConstructorProperties;
+import j86.java.awt.Color;
+import j86.java.beans.ConstructorProperties;
 
 /*
  * A subclass of Color that implements UIResource.  UI
@@ -38,10 +38,10 @@ import java.beans.ConstructorProperties;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
- * @see javax.swing.plaf.UIResource
+ * @see j86.j86.javax.swing.plaf.UIResource
  * @author Hans Muller
  *
  */

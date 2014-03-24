@@ -23,10 +23,10 @@
  * questions.
  */
 
-package com.sun.beans.editors;
+package j86.j86.com.sun.beans.editors;
 
-import java.awt.*;
-import java.beans.*;
+import j86.java.awt.*;
+import j86.java.beans.*;
 
 public class ColorEditor extends Panel implements PropertyEditor {
     private static final long serialVersionUID = 1781257185164716054L;
@@ -84,7 +84,7 @@ public class ColorEditor extends Panel implements PropertyEditor {
         return (false);
     }
 
-    public void setAsText(String s) throws java.lang.IllegalArgumentException {
+    public void setAsText(String s) throws j86.java.lang.IllegalArgumentException {
         if (s == null) {
             changeColor(null);
             return;
@@ -116,7 +116,7 @@ public class ColorEditor extends Panel implements PropertyEditor {
 
     public String getJavaInitializationString() {
         return (this.color != null)
-                ? "new java.awt.Color(" + this.color.getRGB() + ",true)"
+                ? "new j86.java.awt.Color(" + this.color.getRGB() + ",true)"
                 : "null";
     }
 
@@ -155,7 +155,7 @@ public class ColorEditor extends Panel implements PropertyEditor {
         return true;
     }
 
-    public void paintValue(java.awt.Graphics gfx, java.awt.Rectangle box) {
+    public void paintValue(j86.java.awt.Graphics gfx, java.awt.Rectangle box) {
         Color oldColor = gfx.getColor();
         gfx.setColor(Color.black);
         gfx.drawRect(box.x, box.y, box.width-3, box.height-3);
@@ -174,7 +174,7 @@ public class ColorEditor extends Panel implements PropertyEditor {
         return null;
     }
 
-    public java.awt.Component getCustomEditor() {
+    public j86.java.awt.Component getCustomEditor() {
         return this;
     }
 

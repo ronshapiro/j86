@@ -56,7 +56,7 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-package jdk.internal.org.objectweb.asm;
+package j86.jdk.internal.org.objectweb.asm;
 
 /**
  * Information about the input and output stack map frames of a basic block.
@@ -939,17 +939,17 @@ final class Frame {
                 push(TOP);
                 break;
             case ClassWriter.CLASS:
-                push(OBJECT | cw.addType("java/lang/Class"));
+                push(OBJECT | cw.addType("j86.java.lang/Class"));
                 break;
             case ClassWriter.STR:
-                push(OBJECT | cw.addType("java/lang/String"));
+                push(OBJECT | cw.addType("j86.java.lang/String"));
                 break;
             case ClassWriter.MTYPE:
-                push(OBJECT | cw.addType("java/lang/invoke/MethodType"));
+                push(OBJECT | cw.addType("j86.j86.java.lang.invoke/MethodType"));
                 break;
             // case ClassWriter.HANDLE_BASE + [1..9]:
             default:
-                push(OBJECT | cw.addType("java/lang/invoke/MethodHandle"));
+                push(OBJECT | cw.addType("j86.j86.java.lang.invoke/MethodHandle"));
             }
             break;
         case Opcodes.ALOAD:
@@ -1454,13 +1454,13 @@ final class Frame {
                             | cw.getMergedType(t & BASE_VALUE, u & BASE_VALUE);
                 } else {
                     // if u and t are array types, but not with the same element
-                    // type, merge(u,t)=java/lang/Object
-                    v = OBJECT | cw.addType("java/lang/Object");
+                    // type, merge(u,t)=j86.java.lang/Object
+                    v = OBJECT | cw.addType("j86.java.lang/Object");
                 }
             } else if ((t & BASE_KIND) == OBJECT || (t & DIM) != 0) {
                 // if t is any other reference or array type,
-                // merge(u,t)=java/lang/Object
-                v = OBJECT | cw.addType("java/lang/Object");
+                // merge(u,t)=j86.java.lang/Object
+                v = OBJECT | cw.addType("j86.java.lang/Object");
             } else {
                 // if t is any other type, merge(u,t)=TOP
                 v = TOP;

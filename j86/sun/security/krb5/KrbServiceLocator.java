@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.security.krb5;
+package j86.sun.security.krb5;
 
-import java.util.Arrays;
-import java.util.Hashtable;
-import java.util.Random;
-import java.util.StringTokenizer;
+import j86.java.util.Arrays;
+import j86.java.util.Hashtable;
+import j86.java.util.Random;
+import j86.java.util.StringTokenizer;
 
-import javax.naming.*;
-import javax.naming.directory.*;
-import javax.naming.spi.NamingManager;
+import j86.javax.naming.*;
+import j86.j86.javax.naming.directory.*;
+import j86.j86.javax.naming.spi.NamingManager;
 
 /**
  * This class discovers the location of Kerberos services by querying DNS,

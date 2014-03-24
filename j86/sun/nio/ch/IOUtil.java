@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.nio.ch;
+package j86.j86.j86.sun.nio.ch;
 
-import java.io.FileDescriptor;
-import java.io.IOException;
-import java.nio.ByteBuffer;
+import j86.java.io.FileDescriptor;
+import j86.java.io.IOException;
+import j86.java.nio.ByteBuffer;
 
 
 /**
@@ -353,8 +353,8 @@ public class IOUtil {
     public static void load() { }
 
     static {
-        java.security.AccessController.doPrivileged(
-                new java.security.PrivilegedAction<Void>() {
+        j86.java.security.AccessController.doPrivileged(
+                new j86.java.security.PrivilegedAction<Void>() {
                     public Void run() {
                         System.loadLibrary("net");
                         System.loadLibrary("nio");

@@ -23,17 +23,17 @@
  * questions.
  */
 
-package javax.swing.plaf.basic;
+package j86.j86.j86.javax.swing.plaf.basic;
 
-import sun.awt.AppContext;
+import j86.sun.awt.AppContext;
 
-import java.awt.*;
-import java.awt.event.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
 
-import javax.swing.*;
-import javax.swing.border.*;
-import javax.swing.plaf.*;
-import javax.swing.text.View;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.border.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.javax.swing.text.View;
 
 
 

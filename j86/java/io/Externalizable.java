@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.io;
+package j86.java.io;
 
-import java.io.ObjectOutput;
-import java.io.ObjectInput;
+import j86.java.io.ObjectOutput;
+import j86.java.io.ObjectInput;
 
 /**
  * Only the identity of the class of an Externalizable instance is
@@ -56,14 +56,14 @@ import java.io.ObjectInput;
  * interface.<br>
  *
  * @author  unascribed
- * @see java.io.ObjectOutputStream
- * @see java.io.ObjectInputStream
- * @see java.io.ObjectOutput
- * @see java.io.ObjectInput
- * @see java.io.Serializable
+ * @see j86.java.io.ObjectOutputStream
+ * @see j86.java.io.ObjectInputStream
+ * @see j86.java.io.ObjectOutput
+ * @see j86.java.io.ObjectInput
+ * @see j86.java.io.Serializable
  * @since   JDK1.1
  */
-public interface Externalizable extends java.io.Serializable {
+public interface Externalizable extends j86.java.io.Serializable {
     /**
      * The object implements the writeExternal method to save its contents
      * by calling the methods of DataOutput for its primitive values or

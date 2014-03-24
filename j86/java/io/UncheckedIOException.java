@@ -22,9 +22,9 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.io;
+package j86.java.io;
 
-import java.util.Objects;
+import j86.java.util.Objects;
 
 /**
  * Wraps an {@link IOException} with an unchecked exception.

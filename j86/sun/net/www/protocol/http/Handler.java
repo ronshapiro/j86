@@ -27,14 +27,14 @@
  *      HTTP stream opener
  */
 
-package sun.net.www.protocol.http;
+package j86.j86.j86.sun.net.www.protocol.http;
 
-import java.io.IOException;
-import java.net.URL;
-import java.net.Proxy;
+import j86.java.io.IOException;
+import j86.java.net.URL;
+import j86.java.net.Proxy;
 
 /** open an http input stream given a URL */
-public class Handler extends java.net.URLStreamHandler {
+public class Handler extends j86.java.net.URLStreamHandler {
     protected String proxy;
     protected int proxyPort;
 
@@ -52,12 +52,12 @@ public class Handler extends java.net.URLStreamHandler {
         this.proxyPort = port;
     }
 
-    protected java.net.URLConnection openConnection(URL u)
+    protected j86.java.net.URLConnection openConnection(URL u)
     throws IOException {
         return openConnection(u, (Proxy)null);
     }
 
-    protected java.net.URLConnection openConnection(URL u, Proxy p)
+    protected j86.java.net.URLConnection openConnection(URL u, Proxy p)
         throws IOException {
         return new HttpURLConnection(u, p, this);
     }

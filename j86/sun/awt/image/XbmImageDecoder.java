@@ -26,10 +26,10 @@
 /*-
  *      Reads xbitmap format images into a DIBitmap structure.
  */
-package sun.awt.image;
+package j86.j86.j86.sun.awt.image;
 
-import java.io.*;
-import java.awt.image.*;
+import j86.java.io.*;
+import j86.j86.j86.java.awt.image.*;
 
 /**
  * Parse files of the form:

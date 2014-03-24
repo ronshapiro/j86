@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.java2d.pipe;
+package j86.j86.sun.java2d.pipe;
 
 /**
  * The API for an object that generates alpha coverage tiles for a given

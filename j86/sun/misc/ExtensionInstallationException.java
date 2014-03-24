@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.misc;
+package j86.sun.misc;
 
 /*
  * Exception when installation of an extension has failed for

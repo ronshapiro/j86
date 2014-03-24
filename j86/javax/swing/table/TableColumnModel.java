@@ -23,12 +23,12 @@
  * questions.
  */
 
-package javax.swing.table;
+package j86.j86.javax.swing.table;
 
-import java.util.Enumeration;
-import javax.swing.event.ChangeEvent;
-import javax.swing.event.*;
-import javax.swing.*;
+import j86.java.util.Enumeration;
+import j86.j86.javax.swing.event.ChangeEvent;
+import j86.j86.javax.swing.event.*;
+import j86.javax.swing.*;
 
 
 /**
@@ -163,7 +163,7 @@ public interface TableColumnModel
      * required, <code>JTable.columnAtPoint</code> can be used instead.
      *
      * @return  the index of the column; or -1 if no column is found
-     * @see javax.swing.JTable#columnAtPoint
+     * @see j86.javax.swing.JTable#columnAtPoint
      */
     public int getColumnIndexAtX(int xPosition);
 

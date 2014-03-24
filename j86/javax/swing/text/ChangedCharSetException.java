@@ -22,9 +22,9 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text;
+package j86.j86.javax.swing.text;
 
-import java.io.IOException;
+import j86.java.io.IOException;
 
 /**
  * ChangedCharSetException as the name indicates is an exception

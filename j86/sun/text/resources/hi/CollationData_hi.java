@@ -32,9 +32,9 @@
  *
  */
 
-package sun.text.resources.hi;
+package j86.j86.j86.sun.text.resources.hi;
 
-import java.util.ListResourceBundle;
+import j86.java.util.ListResourceBundle;
 
 public class CollationData_hi extends ListResourceBundle {
 

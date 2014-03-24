@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.swing.filechooser;
+package j86.j86.javax.swing.filechooser;
 
-import java.io.File;
-import javax.swing.*;
+import j86.java.io.File;
+import j86.javax.swing.*;
 
 /**
  * <code>FileView</code> defines an abstract class that can be implemented
@@ -37,7 +37,7 @@ import javax.swing.*;
  * generic Windows icons for directories and generic files.
  * Additionally, you may want to provide your own <code>FileView</code> to
  * <code>JFileChooser</code> to return different icons or additional
- * information using {@link javax.swing.JFileChooser#setFileView}.
+ * information using {@link j86.javax.swing.JFileChooser#setFileView}.
  *
  * <p>
  *
@@ -60,7 +60,7 @@ import javax.swing.*;
  href="http://docs.oracle.com/javase/tutorial/uiswing/components/filechooser.html">How to Use File Choosers</a>,
  * a section in <em>The Java Tutorial</em>.
  *
- * @see javax.swing.JFileChooser
+ * @see j86.javax.swing.JFileChooser
  *
  * @author Jeff Dinkins
  *

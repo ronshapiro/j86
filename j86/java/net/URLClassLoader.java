@@ -23,36 +23,36 @@
  * questions.
  */
 
-package java.net;
+package j86.java.net;
 
-import java.io.Closeable;
-import java.io.File;
-import java.io.FilePermission;
-import java.io.IOException;
-import java.io.InputStream;
-import java.security.AccessControlContext;
-import java.security.AccessController;
-import java.security.CodeSigner;
-import java.security.CodeSource;
-import java.security.Permission;
-import java.security.PermissionCollection;
-import java.security.PrivilegedAction;
-import java.security.PrivilegedExceptionAction;
-import java.security.SecureClassLoader;
-import java.util.Enumeration;
-import java.util.List;
-import java.util.NoSuchElementException;
-import java.util.Objects;
-import java.util.Set;
-import java.util.WeakHashMap;
-import java.util.jar.Attributes;
-import java.util.jar.Attributes.Name;
-import java.util.jar.JarFile;
-import java.util.jar.Manifest;
-import sun.misc.Resource;
-import sun.misc.URLClassPath;
-import sun.net.www.ParseUtil;
-import sun.security.util.SecurityConstants;
+import j86.java.io.Closeable;
+import j86.java.io.File;
+import j86.java.io.FilePermission;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.security.AccessControlContext;
+import j86.java.security.AccessController;
+import j86.java.security.CodeSigner;
+import j86.java.security.CodeSource;
+import j86.java.security.Permission;
+import j86.java.security.PermissionCollection;
+import j86.java.security.PrivilegedAction;
+import j86.java.security.PrivilegedExceptionAction;
+import j86.java.security.SecureClassLoader;
+import j86.java.util.Enumeration;
+import j86.java.util.List;
+import j86.java.util.NoSuchElementException;
+import j86.java.util.Objects;
+import j86.java.util.Set;
+import j86.java.util.WeakHashMap;
+import j86.j86.java.util.jar.Attributes;
+import j86.j86.java.util.jar.Attributes.Name;
+import j86.j86.java.util.jar.JarFile;
+import j86.j86.java.util.jar.Manifest;
+import j86.sun.misc.Resource;
+import j86.sun.misc.URLClassPath;
+import j86.j86.sun.net.www.ParseUtil;
+import j86.sun.security.util.SecurityConstants;
 
 /**
  * This class loader is used to load classes and resources from a search
@@ -244,7 +244,7 @@ public class URLClassLoader extends SecureClassLoader implements Closeable {
                         closeables.put(jar, null);
                     }
                 }
-            } else if (urlc instanceof sun.net.www.protocol.file.FileURLConnection) {
+            } else if (urlc instanceof j86.j86.j86.sun.net.www.protocol.file.FileURLConnection) {
                 synchronized (closeables) {
                     closeables.put(is, null);
                 }
@@ -373,7 +373,7 @@ public class URLClassLoader extends SecureClassLoader implements Closeable {
                         }
                     }
                 }, acc);
-        } catch (java.security.PrivilegedActionException pae) {
+        } catch (j86.java.security.PrivilegedActionException pae) {
             throw (ClassNotFoundException) pae.getException();
         }
     }
@@ -439,19 +439,19 @@ public class URLClassLoader extends SecureClassLoader implements Closeable {
             }
         }
         // Now read the class bytes and define the class
-        java.nio.ByteBuffer bb = res.getByteBuffer();
+        j86.java.nio.ByteBuffer bb = res.getByteBuffer();
         if (bb != null) {
             // Use (direct) ByteBuffer:
             CodeSigner[] signers = res.getCodeSigners();
             CodeSource cs = new CodeSource(url, signers);
-            sun.misc.PerfCounter.getReadClassBytesTime().addElapsedTimeFrom(t0);
+            j86.sun.misc.PerfCounter.getReadClassBytesTime().addElapsedTimeFrom(t0);
             return defineClass(name, bb, cs);
         } else {
             byte[] b = res.getBytes();
             // must read certificates AFTER reading bytes.
             CodeSigner[] signers = res.getCodeSigners();
             CodeSource cs = new CodeSource(url, signers);
-            sun.misc.PerfCounter.getReadClassBytesTime().addElapsedTimeFrom(t0);
+            j86.sun.misc.PerfCounter.getReadClassBytesTime().addElapsedTimeFrom(t0);
             return defineClass(name, b, 0, b.length, cs);
         }
     }
@@ -649,7 +649,7 @@ public class URLClassLoader extends SecureClassLoader implements Closeable {
         try {
             urlConnection = url.openConnection();
             p = urlConnection.getPermission();
-        } catch (java.io.IOException ioe) {
+        } catch (j86.java.io.IOException ioe) {
             p = null;
             urlConnection = null;
         }
@@ -757,8 +757,8 @@ public class URLClassLoader extends SecureClassLoader implements Closeable {
     }
 
     static {
-        sun.misc.SharedSecrets.setJavaNetAccess (
-            new sun.misc.JavaNetAccess() {
+        j86.sun.misc.SharedSecrets.setJavaNetAccess (
+            new j86.sun.misc.JavaNetAccess() {
                 public URLClassPath getURLClassPath (URLClassLoader u) {
                     return u.ucp;
                 }

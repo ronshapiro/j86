@@ -29,21 +29,21 @@
  * @author      Steven B. Byrne
  */
 
-package sun.net.www.protocol.file;
+package j86.j86.j86.sun.net.www.protocol.file;
 
-import java.net.URL;
-import java.net.FileNameMap;
-import java.io.*;
-import java.text.Collator;
-import java.security.Permission;
-import sun.net.*;
-import sun.net.www.*;
-import java.util.*;
-import java.text.SimpleDateFormat;
+import j86.java.net.URL;
+import j86.java.net.FileNameMap;
+import j86.java.io.*;
+import j86.java.text.Collator;
+import j86.java.security.Permission;
+import j86.sun.net.*;
+import j86.j86.sun.net.www.*;
+import j86.java.util.*;
+import j86.java.text.SimpleDateFormat;
 
-import sun.security.action.GetPropertyAction;
-import sun.security.action.GetIntegerAction;
-import sun.security.action.GetBooleanAction;
+import j86.sun.security.action.GetPropertyAction;
+import j86.sun.security.action.GetIntegerAction;
+import j86.sun.security.action.GetBooleanAction;
 
 public class FileURLConnection extends URLConnection {
 
@@ -116,7 +116,7 @@ public class FileURLConnection extends URLConnection {
             lastModified = file.lastModified();
 
             if (!isDirectory) {
-                FileNameMap map = java.net.URLConnection.getFileNameMap();
+                FileNameMap map = j86.java.net.URLConnection.getFileNameMap();
                 contentType = map.getContentTypeFor(filename);
                 if (contentType != null) {
                     properties.add(CONTENT_TYPE, contentType);
@@ -189,7 +189,7 @@ public class FileURLConnection extends URLConnection {
 
         if (is == null) {
             if (isDirectory) {
-                FileNameMap map = java.net.URLConnection.getFileNameMap();
+                FileNameMap map = j86.java.net.URLConnection.getFileNameMap();
 
                 StringBuffer buf = new StringBuffer();
 

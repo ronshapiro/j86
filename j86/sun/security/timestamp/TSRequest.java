@@ -23,17 +23,17 @@
  * questions.
  */
 
-package sun.security.timestamp;
+package j86.sun.security.timestamp;
 
-import java.io.IOException;
-import java.math.BigInteger;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-import java.security.cert.X509Extension;
-import sun.security.util.DerValue;
-import sun.security.util.DerOutputStream;
-import sun.security.util.ObjectIdentifier;
-import sun.security.x509.AlgorithmId;
+import j86.java.io.IOException;
+import j86.java.math.BigInteger;
+import j86.java.security.MessageDigest;
+import j86.java.security.NoSuchAlgorithmException;
+import j86.j86.java.security.cert.X509Extension;
+import j86.sun.security.util.DerValue;
+import j86.sun.security.util.DerOutputStream;
+import j86.sun.security.util.ObjectIdentifier;
+import j86.sun.security.x509.AlgorithmId;
 
 /**
  * This class provides a timestamp request, as defined in

@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.sql.rowset.spi;
+package j86.j86.j86.javax.sql.rowset.spi;
 
-import javax.sql.RowSet;
-import java.sql.SQLException;
+import j86.javax.sql.RowSet;
+import j86.java.sql.SQLException;
 
 /**
  * Defines a framework that allows applications to use a manual decision tree
@@ -52,7 +52,7 @@ import java.sql.SQLException;
  * <code>RowSet</code> object (an implementation of the
  * <code>CachedRowSet</code> interface or one of its subinterfaces). For information
  * on the subinterfaces, see the
- * <a href="../package-summary.html"><code>javax.sql.rowset</code></a> package
+ * <a href="../package-summary.html"><code>j86.j86.javax.sql.rowset</code></a> package
  * description. The reference implementation for <code>SyncResolver</code> implements
  * the <code>CachedRowSet</code> interface, but other implementations
  * may choose to implement the <code>JdbcRowSet</code> interface to satisfy
@@ -121,7 +121,7 @@ import java.sql.SQLException;
  * value in the data source that is the cause of the conflict because the values in a
  * <code>SyncResolver</code> object are the conflict values from the data source.
  * <PRE>
- *     java.lang.Object conflictValue = resolver.getConflictValue(2);
+ *     j86.java.lang.Object conflictValue = resolver.getConflictValue(2);
  * </PRE>
  * Note that the column in <i>resolver</i> can be designated by the column number,
  * as is done in the preceding line of code, or by the column name.

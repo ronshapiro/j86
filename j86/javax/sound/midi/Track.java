@@ -23,12 +23,12 @@
  * questions.
  */
 
-package javax.sound.midi;
+package j86.javax.sound.midi;
 
-import java.util.Vector;
-import java.util.ArrayList;
-import java.util.HashSet;
-import com.sun.media.sound.MidiUtils;
+import j86.java.util.Vector;
+import j86.java.util.ArrayList;
+import j86.java.util.HashSet;
+import j86.com.sun.media.sound.MidiUtils;
 
 /**
  * A MIDI track is an independent stream of MIDI events (time-stamped MIDI

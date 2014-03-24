@@ -24,11 +24,11 @@
  */
 
 
-package sun.security.ssl;
+package j86.sun.security.ssl;
 
-import java.io.ByteArrayOutputStream;
-import java.security.*;
-import java.util.Locale;
+import j86.java.io.ByteArrayOutputStream;
+import j86.java.security.*;
+import j86.java.util.Locale;
 
 /**
  * Abstraction for the SSL/TLS hash of all handshake messages that is

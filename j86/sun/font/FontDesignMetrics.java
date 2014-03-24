@@ -23,32 +23,32 @@
  * questions.
  */
 
-package sun.font;
+package j86.sun.font;
 
-import java.lang.ref.ReferenceQueue;
-import java.lang.ref.SoftReference;
+import j86.j86.java.lang.ref.ReferenceQueue;
+import j86.j86.java.lang.ref.SoftReference;
 
-import java.awt.FontMetrics;
-import java.awt.Font;
-import java.awt.GraphicsEnvironment;
-import java.awt.geom.AffineTransform;
-import java.awt.geom.NoninvertibleTransformException;
-import java.awt.font.FontRenderContext;
-import java.awt.font.TextLayout;
+import j86.java.awt.FontMetrics;
+import j86.java.awt.Font;
+import j86.java.awt.GraphicsEnvironment;
+import j86.j86.java.awt.geom.AffineTransform;
+import j86.j86.java.awt.geom.NoninvertibleTransformException;
+import j86.j86.java.awt.font.FontRenderContext;
+import j86.j86.java.awt.font.TextLayout;
 
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
+import j86.java.io.IOException;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.ObjectOutputStream;
 
-import java.util.concurrent.ConcurrentHashMap;
+import j86.j86.java.util.concurrent.ConcurrentHashMap;
 
-import sun.java2d.Disposer;
-import sun.java2d.DisposerRecord;
+import j86.sun.java2d.Disposer;
+import j86.sun.java2d.DisposerRecord;
 
 /*
  * This class provides a summary of the glyph measurements  for a Font
  * and a set of hints that guide their display.  It provides more metrics
- * information for the Font than the java.awt.FontMetrics class. There
+ * information for the Font than the j86.java.awt.FontMetrics class. There
  * is also some redundancy with that class.
  * <p>
  * The design metrics for a Font are obtained from Font.getDesignMetrics().
@@ -99,9 +99,9 @@ import sun.java2d.DisposerRecord;
  * <pre>
         pixel_units = typographic_units * (ppem / units_per_em)
  * </pre>
- * @see java.awt.Font
- * @see java.awt.GraphicsConfiguration#getDefaultTransform
- * @see java.awt.GraphicsConfiguration#getNormalizingTransform
+ * @see j86.java.awt.Font
+ * @see j86.java.awt.GraphicsConfiguration#getDefaultTransform
+ * @see j86.java.awt.GraphicsConfiguration#getNormalizingTransform
  */
 
 public final class FontDesignMetrics extends FontMetrics {
@@ -255,7 +255,7 @@ public final class FontDesignMetrics extends FontMetrics {
 
 
         /* When using alternate composites, can't cache based just on
-         * the java.awt.Font. Since this is rarely used and we can still
+         * the j86.java.awt.Font. Since this is rarely used and we can still
          * cache the physical fonts, its not a problem to just return a
          * new instance in this case.
          * Note that currently Swing native L&F composites are not handled

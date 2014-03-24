@@ -22,16 +22,16 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.awt;
+package j86.java.awt;
 
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.util.Vector;
-import java.util.Enumeration;
-import sun.awt.AWTAccessor;
-import java.awt.peer.MenuBarPeer;
-import java.awt.event.KeyEvent;
-import javax.accessibility.*;
+import j86.java.io.IOException;
+import j86.java.io.ObjectInputStream;
+import j86.java.util.Vector;
+import j86.java.util.Enumeration;
+import j86.sun.awt.AWTAccessor;
+import j86.j86.java.awt.peer.MenuBarPeer;
+import j86.j86.java.awt.event.KeyEvent;
+import j86.javax.accessibility.*;
 
 /**
  * The <code>MenuBar</code> class encapsulates the platform's
@@ -60,11 +60,11 @@ import javax.accessibility.*;
  * menu bar is managing.
  *
  * @author Sami Shaio
- * @see        java.awt.Frame
- * @see        java.awt.Frame#setMenuBar(java.awt.MenuBar)
- * @see        java.awt.Menu
- * @see        java.awt.MenuItem
- * @see        java.awt.MenuShortcut
+ * @see        j86.java.awt.Frame
+ * @see        j86.java.awt.Frame#setMenuBar(java.awt.MenuBar)
+ * @see        j86.java.awt.Menu
+ * @see        j86.java.awt.MenuItem
+ * @see        j86.java.awt.MenuShortcut
  * @since      JDK1.0
  */
 public class MenuBar extends MenuComponent implements MenuContainer, Accessible {
@@ -120,7 +120,7 @@ public class MenuBar extends MenuComponent implements MenuContainer, Accessible 
      * Creates a new menu bar.
      * @exception HeadlessException if GraphicsEnvironment.isHeadless()
      * returns true.
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      */
     public MenuBar() throws HeadlessException {
     }
@@ -214,8 +214,8 @@ public class MenuBar extends MenuComponent implements MenuContainer, Accessible 
      *
      * @param        m   the menu to be added
      * @return       the menu added
-     * @see          java.awt.MenuBar#remove(int)
-     * @see          java.awt.MenuBar#remove(java.awt.MenuComponent)
+     * @see          j86.java.awt.MenuBar#remove(int)
+     * @see          j86.java.awt.MenuBar#remove(java.awt.MenuComponent)
      */
     public Menu add(Menu m) {
         synchronized (getTreeLock()) {
@@ -240,7 +240,7 @@ public class MenuBar extends MenuComponent implements MenuContainer, Accessible 
      * Removes the menu located at the specified
      * index from this menu bar.
      * @param        index   the position of the menu to be removed.
-     * @see          java.awt.MenuBar#add(java.awt.Menu)
+     * @see          j86.java.awt.MenuBar#add(java.awt.Menu)
      */
     public void remove(int index) {
         synchronized (getTreeLock()) {
@@ -258,7 +258,7 @@ public class MenuBar extends MenuComponent implements MenuContainer, Accessible 
     /**
      * Removes the specified menu component from this menu bar.
      * @param        m the menu component to be removed.
-     * @see          java.awt.MenuBar#add(java.awt.Menu)
+     * @see          j86.java.awt.MenuBar#add(java.awt.Menu)
      */
     public void remove(MenuComponent m) {
         synchronized (getTreeLock()) {
@@ -317,7 +317,7 @@ public class MenuBar extends MenuComponent implements MenuContainer, Accessible 
      * is managing.
      * @return      an enumeration of menu shortcuts that this
      *                      menu bar is managing.
-     * @see         java.awt.MenuShortcut
+     * @see         j86.java.awt.MenuShortcut
      * @since       JDK1.1
      */
     public synchronized Enumeration<MenuShortcut> shortcuts() {
@@ -339,8 +339,8 @@ public class MenuBar extends MenuComponent implements MenuContainer, Accessible 
      * by this menu bar is associated with the specified menu
      * shortcut.
      * @param        s the specified menu shortcut.
-     * @see          java.awt.MenuItem
-     * @see          java.awt.MenuShortcut
+     * @see          j86.java.awt.MenuItem
+     * @see          j86.java.awt.MenuShortcut
      * @since        JDK1.1
      */
      public MenuItem getShortcutMenuItem(MenuShortcut s) {
@@ -412,11 +412,11 @@ public class MenuBar extends MenuComponent implements MenuContainer, Accessible 
      *
      * @param s the <code>ObjectOutputStream</code> to write
      * @see AWTEventMulticaster#save(ObjectOutputStream, String, EventListener)
-     * @see #readObject(java.io.ObjectInputStream)
+     * @see #readObject(j86.java.io.ObjectInputStream)
      */
-    private void writeObject(java.io.ObjectOutputStream s)
-      throws java.lang.ClassNotFoundException,
-             java.io.IOException
+    private void writeObject(j86.java.io.ObjectOutputStream s)
+      throws j86.java.lang.ClassNotFoundException,
+             j86.java.io.IOException
     {
       s.defaultWriteObject();
     }
@@ -429,8 +429,8 @@ public class MenuBar extends MenuComponent implements MenuContainer, Accessible 
      * @exception HeadlessException if
      *   <code>GraphicsEnvironment.isHeadless</code> returns
      *   <code>true</code>
-     * @see java.awt.GraphicsEnvironment#isHeadless
-     * @see #writeObject(java.io.ObjectOutputStream)
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
+     * @see #writeObject(j86.java.io.ObjectOutputStream)
      */
     private void readObject(ObjectInputStream s)
       throws ClassNotFoundException, IOException, HeadlessException

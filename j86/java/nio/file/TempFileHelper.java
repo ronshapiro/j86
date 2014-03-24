@@ -23,18 +23,18 @@
  * questions.
  */
 
-package java.nio.file;
+package j86.j86.java.nio.file;
 
-import java.util.Set;
-import java.util.EnumSet;
-import java.security.SecureRandom;
-import static java.security.AccessController.*;
-import java.io.IOException;
-import java.nio.file.attribute.FileAttribute;
-import java.nio.file.attribute.PosixFilePermission;
-import java.nio.file.attribute.PosixFilePermissions;
-import static java.nio.file.attribute.PosixFilePermission.*;
-import sun.security.action.GetPropertyAction;
+import j86.java.util.Set;
+import j86.java.util.EnumSet;
+import j86.java.security.SecureRandom;
+import static j86.java.security.AccessController.*;
+import j86.java.io.IOException;
+import j86.j86.j86.java.nio.file.attribute.FileAttribute;
+import j86.j86.j86.java.nio.file.attribute.PosixFilePermission;
+import j86.j86.j86.java.nio.file.attribute.PosixFilePermissions;
+import static j86.j86.j86.java.nio.file.attribute.PosixFilePermission.*;
+import j86.sun.security.action.GetPropertyAction;
 
 
 /**
@@ -47,12 +47,12 @@ class TempFileHelper {
 
     // temporary directory location
     private static final Path tmpdir =
-        Paths.get(doPrivileged(new GetPropertyAction("java.io.tmpdir")));
+        Paths.get(doPrivileged(new GetPropertyAction("j86.java.io.tmpdir")));
 
     private static final boolean isPosix =
         FileSystems.getDefault().supportedFileAttributeViews().contains("posix");
 
-    // file name generation, same as java.io.File for now
+    // file name generation, same as j86.java.io.File for now
     private static final SecureRandom random = new SecureRandom();
     private static Path generatePath(String prefix, String suffix, Path dir) {
         long n = random.nextLong();

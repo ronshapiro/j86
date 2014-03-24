@@ -23,21 +23,21 @@
  * questions.
  */
 
-package com.sun.media.sound;
+package j86.com.sun.media.sound;
 
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.URL;
+import j86.java.io.DataInputStream;
+import j86.java.io.DataOutputStream;
+import j86.java.io.File;
+import j86.java.io.FileInputStream;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.net.URL;
 
-import javax.sound.sampled.AudioFileFormat;
-import javax.sound.sampled.AudioFormat;
-import javax.sound.sampled.AudioInputStream;
-import javax.sound.sampled.AudioSystem;
-import javax.sound.sampled.UnsupportedAudioFileException;
+import j86.javax.sound.sampled.AudioFileFormat;
+import j86.javax.sound.sampled.AudioFormat;
+import j86.javax.sound.sampled.AudioInputStream;
+import j86.javax.sound.sampled.AudioSystem;
+import j86.javax.sound.sampled.UnsupportedAudioFileException;
 
 
 /**
@@ -231,7 +231,7 @@ public final class AiffFileReader extends SunFileReader {
         // Read the magic number
         int magic = dis.readInt();
 
-        // $$fb: fix for 4369044: javax.sound.sampled.AudioSystem.getAudioInputStream() works wrong with Cp037
+        // $$fb: fix for 4369044: j86.javax.sound.sampled.AudioSystem.getAudioInputStream() works wrong with Cp037
         if (magic != AiffFileFormat.AIFF_MAGIC) {
             // not AIFF, throw exception
             if (doReset) {
@@ -254,7 +254,7 @@ public final class AiffFileReader extends SunFileReader {
 
         // Is this an AIFC or just plain AIFF file.
         boolean aifc = false;
-        // $$fb: fix for 4369044: javax.sound.sampled.AudioSystem.getAudioInputStream() works wrong with Cp037
+        // $$fb: fix for 4369044: j86.javax.sound.sampled.AudioSystem.getAudioInputStream() works wrong with Cp037
         if (iffType ==  AiffFileFormat.AIFC_MAGIC) {
             aifc = true;
         }

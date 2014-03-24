@@ -32,14 +32,14 @@
  * @author Steven B. Byrne
  */
 
-package sun.net.www.protocol.netdoc;
+package j86.j86.j86.sun.net.www.protocol.netdoc;
 
-import java.net.URL;
-import java.net.URLConnection;
-import java.net.MalformedURLException;
-import java.net.URLStreamHandler;
-import java.io.InputStream;
-import java.io.IOException;
+import j86.java.net.URL;
+import j86.java.net.URLConnection;
+import j86.java.net.MalformedURLException;
+import j86.java.net.URLStreamHandler;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
 
 public class Handler extends URLStreamHandler {
     static URL base;
@@ -54,12 +54,12 @@ public class Handler extends URLStreamHandler {
         URLConnection uc = null;
         URL ru;
 
-        Boolean tmp = java.security.AccessController.doPrivileged(
-            new sun.security.action.GetBooleanAction("newdoc.localonly"));
+        Boolean tmp = j86.java.security.AccessController.doPrivileged(
+            new j86.sun.security.action.GetBooleanAction("newdoc.localonly"));
         boolean localonly = tmp.booleanValue();
 
-        String docurl = java.security.AccessController.doPrivileged(
-            new sun.security.action.GetPropertyAction("doc.url"));
+        String docurl = j86.java.security.AccessController.doPrivileged(
+            new j86.sun.security.action.GetPropertyAction("doc.url"));
 
         String file = u.getFile();
         if (!localonly) {

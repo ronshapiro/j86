@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.security.internal.spec;
+package j86.sun.security.internal.spec;
 
-import java.security.spec.KeySpec;
+import j86.j86.java.security.spec.KeySpec;
 
-import javax.crypto.SecretKey;
-import javax.crypto.spec.IvParameterSpec;
+import j86.javax.crypto.SecretKey;
+import j86.j86.javax.crypto.spec.IvParameterSpec;
 
 /**
  * KeySpec class for SSL/TLS key material.

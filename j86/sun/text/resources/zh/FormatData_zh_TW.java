@@ -74,9 +74,9 @@
  * of the copyright holder.
  */
 
-package sun.text.resources.zh;
+package j86.j86.j86.sun.text.resources.zh;
 
-import sun.util.resources.ParallelListResourceBundle;
+import j86.j86.sun.util.resources.ParallelListResourceBundle;
 
 public class FormatData_zh_TW extends ParallelListResourceBundle {
     /**

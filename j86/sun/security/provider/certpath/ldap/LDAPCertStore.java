@@ -23,35 +23,35 @@
  * questions.
  */
 
-package sun.security.provider.certpath.ldap;
+package j86.j86.j86.sun.security.provider.certpath.ldap;
 
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.math.BigInteger;
-import java.net.URI;
-import java.util.*;
-import javax.naming.Context;
-import javax.naming.NamingEnumeration;
-import javax.naming.NamingException;
-import javax.naming.NameNotFoundException;
-import javax.naming.directory.Attribute;
-import javax.naming.directory.Attributes;
-import javax.naming.directory.BasicAttributes;
-import javax.naming.directory.DirContext;
-import javax.naming.directory.InitialDirContext;
+import j86.java.io.ByteArrayInputStream;
+import j86.java.io.IOException;
+import j86.java.math.BigInteger;
+import j86.java.net.URI;
+import j86.java.util.*;
+import j86.javax.naming.Context;
+import j86.javax.naming.NamingEnumeration;
+import j86.javax.naming.NamingException;
+import j86.javax.naming.NameNotFoundException;
+import j86.j86.javax.naming.directory.Attribute;
+import j86.j86.javax.naming.directory.Attributes;
+import j86.j86.javax.naming.directory.BasicAttributes;
+import j86.j86.javax.naming.directory.DirContext;
+import j86.j86.javax.naming.directory.InitialDirContext;
 
-import java.security.*;
-import java.security.cert.Certificate;
-import java.security.cert.*;
-import javax.security.auth.x500.X500Principal;
+import j86.java.security.*;
+import j86.j86.java.security.cert.Certificate;
+import j86.j86.java.security.cert.*;
+import j86.j86.javax.security.auth.x500.X500Principal;
 
-import sun.misc.HexDumpEncoder;
-import sun.security.provider.certpath.X509CertificatePair;
-import sun.security.util.Cache;
-import sun.security.util.Debug;
-import sun.security.x509.X500Name;
-import sun.security.action.GetBooleanAction;
-import sun.security.action.GetPropertyAction;
+import j86.sun.misc.HexDumpEncoder;
+import j86.j86.sun.security.provider.certpath.X509CertificatePair;
+import j86.sun.security.util.Cache;
+import j86.sun.security.util.Debug;
+import j86.sun.security.x509.X500Name;
+import j86.sun.security.action.GetBooleanAction;
+import j86.sun.security.action.GetPropertyAction;
 
 /**
  * A <code>CertStore</code> that retrieves <code>Certificates</code> and
@@ -98,7 +98,7 @@ import sun.security.action.GetPropertyAction;
  * that CRLs could be rather large but are rarely used. This implementation
  * should improve performance in most cases.
  *
- * @see java.security.cert.CertStore
+ * @see j86.j86.java.security.cert.CertStore
  *
  * @since       1.4
  * @author      Steve Hanna
@@ -244,7 +244,7 @@ public final class LDAPCertStore extends CertStoreSpi {
         String url = "ldap://" + server + ":" + port;
         Hashtable<String,Object> env = new Hashtable<>();
         env.put(Context.INITIAL_CONTEXT_FACTORY,
-                "com.sun.jndi.ldap.LdapCtxFactory");
+                "j86.com.sun.jndi.ldap.LdapCtxFactory");
         env.put(Context.PROVIDER_URL, url);
 
         // If property is set to true, disable application resource file lookup.

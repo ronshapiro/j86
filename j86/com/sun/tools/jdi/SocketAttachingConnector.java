@@ -22,16 +22,16 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.tools.jdi;
+package j86.com.sun.tools.jdi;
 
-import com.sun.jdi.VirtualMachine;
-import com.sun.jdi.connect.*;
-import com.sun.jdi.connect.spi.*;
-import java.util.Map;
-import java.util.HashMap;
-import java.io.IOException;
-import java.net.InetAddress;
-import java.net.UnknownHostException;
+import j86.com.sun.jdi.VirtualMachine;
+import j86.j86.com.sun.jdi.connect.*;
+import j86.j86.j86.com.sun.jdi.connect.spi.*;
+import j86.java.util.Map;
+import j86.java.util.HashMap;
+import j86.java.io.IOException;
+import j86.java.net.InetAddress;
+import j86.java.net.UnknownHostException;
 
 /*
  * An AttachingConnector that uses the SocketTransportService
@@ -91,7 +91,7 @@ public class SocketAttachingConnector extends GenericAttachingConnector {
     }
 
     public String name() {
-       return "com.sun.jdi.SocketAttach";
+       return "j86.com.sun.jdi.SocketAttach";
     }
 
     public String description() {

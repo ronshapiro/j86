@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.security.util;
+package j86.sun.security.util;
 
-import java.io.*;
-import java.net.*;
-import java.security.*;
-import java.util.Arrays;
+import j86.java.io.*;
+import j86.java.net.*;
+import j86.java.security.*;
+import j86.java.util.Arrays;
 
-import sun.net.www.ParseUtil;
+import j86.j86.sun.net.www.ParseUtil;
 
 
 /**
@@ -76,7 +76,7 @@ public class PolicyUtil {
                 Debug debug)
         throws KeyStoreException, MalformedURLException, IOException,
                 NoSuchProviderException, NoSuchAlgorithmException,
-                java.security.cert.CertificateException {
+                j86.j86.java.security.cert.CertificateException {
 
         if (keyStoreName == null) {
             throw new IllegalArgumentException("null KeyStore name");

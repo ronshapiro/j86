@@ -23,17 +23,17 @@
  * questions.
  */
 
-package sun.nio.ch;
+package j86.j86.j86.sun.nio.ch;
 
-import java.io.*;
-import java.net.*;
-import java.nio.channels.*;
+import j86.java.io.*;
+import j86.java.net.*;
+import j86.j86.java.nio.channels.*;
 
 
 // Make a server-socket channel look like a server socket.
 //
 // The methods in this class are defined in exactly the same order as in
-// java.net.ServerSocket so as to simplify tracking future changes to that
+// j86.java.net.ServerSocket so as to simplify tracking future changes to that
 // class.
 //
 

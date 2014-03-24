@@ -23,18 +23,18 @@
  * questions.
  */
 
-package sun.java2d.opengl;
+package j86.j86.sun.java2d.opengl;
 
-import java.awt.Transparency;
-import java.awt.geom.Path2D;
-import sun.java2d.InvalidPipeException;
-import sun.java2d.SunGraphics2D;
-import sun.java2d.loops.GraphicsPrimitive;
-import sun.java2d.pipe.BufferedRenderPipe;
-import sun.java2d.pipe.ParallelogramPipe;
-import sun.java2d.pipe.RenderQueue;
-import sun.java2d.pipe.SpanIterator;
-import static sun.java2d.pipe.BufferedOpCodes.*;
+import j86.java.awt.Transparency;
+import j86.j86.java.awt.geom.Path2D;
+import j86.sun.java2d.InvalidPipeException;
+import j86.sun.java2d.SunGraphics2D;
+import j86.j86.sun.java2d.loops.GraphicsPrimitive;
+import j86.j86.sun.java2d.pipe.BufferedRenderPipe;
+import j86.j86.sun.java2d.pipe.ParallelogramPipe;
+import j86.j86.sun.java2d.pipe.RenderQueue;
+import j86.j86.sun.java2d.pipe.SpanIterator;
+import static j86.j86.sun.java2d.pipe.BufferedOpCodes.*;
 
 class OGLRenderer extends BufferedRenderPipe {
 

@@ -23,12 +23,12 @@
  * questions.
  */
 
-package javax.accessibility;
+package j86.javax.accessibility;
 
 
-import java.util.*;
-import java.awt.*;
-import javax.swing.text.*;
+import j86.java.util.*;
+import j86.java.awt.*;
+import j86.j86.javax.swing.text.*;
 
 
 /**

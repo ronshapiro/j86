@@ -23,27 +23,27 @@
  * questions.
  */
 
-package sun.rmi.rmic.newrmic;
+package j86.j86.sun.rmi.rmic.newrmic;
 
 import com.sun.javadoc.ClassDoc;
 import com.sun.javadoc.RootDoc;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.OutputStream;
-import java.io.PrintStream;
-import java.io.PrintWriter;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import sun.rmi.rmic.newrmic.jrmp.JrmpGenerator;
-import sun.tools.util.CommandLine;
+import j86.java.io.File;
+import j86.java.io.FileNotFoundException;
+import j86.java.io.IOException;
+import j86.java.io.OutputStream;
+import j86.java.io.PrintStream;
+import j86.java.io.PrintWriter;
+import j86.j86.j86.java.lang.reflect.Constructor;
+import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.java.util.ArrayList;
+import j86.java.util.Collections;
+import j86.java.util.HashMap;
+import j86.java.util.HashSet;
+import j86.java.util.List;
+import j86.java.util.Map;
+import j86.java.util.Set;
+import j86.j86.j86.sun.rmi.rmic.newrmic.jrmp.JrmpGenerator;
+import j86.sun.tools.util.CommandLine;
 
 /**
  * The rmic front end.  This class contains the "main" method for rmic
@@ -69,7 +69,7 @@ import sun.tools.util.CommandLine;
  * incomplete: it lacks any CORBA-based back end implementations, and
  * thus the command line options "-idl", "-iiop", and their related
  * options are not yet supported.  The front end for the "old",
- * oldjavac-based rmic implementation is sun.rmi.rmic.Main.
+ * oldjavac-based rmic implementation is j86.sun.rmi.rmic.Main.
  *
  * @author Peter Jones
  **/
@@ -592,7 +592,7 @@ public class Main {
         }
 
         // run javadoc with our program name and output stream
-        int status = com.sun.tools.javadoc.Main.execute(
+        int status = com.j86.sun.tools.javadoc.Main.execute(
             program,
             new PrintWriter(out, true),
             new PrintWriter(out, true),
@@ -652,7 +652,7 @@ public class Main {
         }
 
         // run javac with our output stream
-        int status = com.sun.tools.javac.Main.compile(
+        int status = com.j86.j86.sun.tools.javac.Main.compile(
             javacArgs.toArray(new String[javacArgs.size()]),
             new PrintWriter(out, true));
         return status == 0;

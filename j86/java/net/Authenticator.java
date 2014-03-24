@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.net;
+package j86.java.net;
 
 /**
  * The class Authenticator represents an object that knows how to obtain
@@ -47,8 +47,8 @@ package java.net;
  * All methods that request authentication have a default implementation
  * that fails.
  *
- * @see java.net.Authenticator#setDefault(java.net.Authenticator)
- * @see java.net.Authenticator#getPasswordAuthentication()
+ * @see j86.java.net.Authenticator#setDefault(java.net.Authenticator)
+ * @see j86.java.net.Authenticator#getPasswordAuthentication()
  *
  * @author  Bill Foote
  * @since   1.2
@@ -106,7 +106,7 @@ class Authenticator {
      * First, if there is a security manager, its {@code checkPermission}
      * method is called with a
      * {@code NetPermission("setDefaultAuthenticator")} permission.
-     * This may result in a java.lang.SecurityException.
+     * This may result in a j86.java.lang.SecurityException.
      *
      * @param   a       The authenticator to be set. If a is {@code null} then
      *                  any previously set authenticator is removed.
@@ -117,7 +117,7 @@ class Authenticator {
      *        setting the default authenticator.
      *
      * @see SecurityManager#checkPermission
-     * @see java.net.NetPermission
+     * @see j86.java.net.NetPermission
      */
     public synchronized static void setDefault(Authenticator a) {
         SecurityManager sm = System.getSecurityManager();
@@ -137,13 +137,13 @@ class Authenticator {
      * First, if there is a security manager, its {@code checkPermission}
      * method is called with a
      * {@code NetPermission("requestPasswordAuthentication")} permission.
-     * This may result in a java.lang.SecurityException.
+     * This may result in a j86.java.lang.SecurityException.
      *
      * @param addr The InetAddress of the site requesting authorization,
      *             or null if not known.
      * @param port the port for the requested connection
      * @param protocol The protocol that's requesting the connection
-     *          ({@link java.net.Authenticator#getRequestingProtocol()})
+     *          ({@link j86.java.net.Authenticator#getRequestingProtocol()})
      * @param prompt A prompt string for the user
      * @param scheme The authentication scheme
      *
@@ -155,7 +155,7 @@ class Authenticator {
      *        the password authentication request.
      *
      * @see SecurityManager#checkPermission
-     * @see java.net.NetPermission
+     * @see j86.java.net.NetPermission
      */
     public static PasswordAuthentication requestPasswordAuthentication(
                                             InetAddress addr,
@@ -196,14 +196,14 @@ class Authenticator {
      * First, if there is a security manager, its {@code checkPermission}
      * method is called with a
      * {@code NetPermission("requestPasswordAuthentication")} permission.
-     * This may result in a java.lang.SecurityException.
+     * This may result in a j86.java.lang.SecurityException.
      *
      * @param host The hostname of the site requesting authentication.
      * @param addr The InetAddress of the site requesting authentication,
      *             or null if not known.
      * @param port the port for the requested connection.
      * @param protocol The protocol that's requesting the connection
-     *          ({@link java.net.Authenticator#getRequestingProtocol()})
+     *          ({@link j86.java.net.Authenticator#getRequestingProtocol()})
      * @param prompt A prompt string for the user which identifies the authentication realm.
      * @param scheme The authentication scheme
      *
@@ -215,7 +215,7 @@ class Authenticator {
      *        the password authentication request.
      *
      * @see SecurityManager#checkPermission
-     * @see java.net.NetPermission
+     * @see j86.java.net.NetPermission
      * @since 1.4
      */
     public static PasswordAuthentication requestPasswordAuthentication(
@@ -257,14 +257,14 @@ class Authenticator {
      * First, if there is a security manager, its {@code checkPermission}
      * method is called with a
      * {@code NetPermission("requestPasswordAuthentication")} permission.
-     * This may result in a java.lang.SecurityException.
+     * This may result in a j86.java.lang.SecurityException.
      *
      * @param host The hostname of the site requesting authentication.
      * @param addr The InetAddress of the site requesting authorization,
      *             or null if not known.
      * @param port the port for the requested connection
      * @param protocol The protocol that's requesting the connection
-     *          ({@link java.net.Authenticator#getRequestingProtocol()})
+     *          ({@link j86.java.net.Authenticator#getRequestingProtocol()})
      * @param prompt A prompt string for the user
      * @param scheme The authentication scheme
      * @param url The requesting URL that caused the authentication
@@ -279,7 +279,7 @@ class Authenticator {
      *        the password authentication request.
      *
      * @see SecurityManager#checkPermission
-     * @see java.net.NetPermission
+     * @see j86.java.net.NetPermission
      *
      * @since 1.5
      */
@@ -361,7 +361,7 @@ class Authenticator {
      * @return the protocol, optionally followed by "/version", where
      *          version is a version number.
      *
-     * @see java.net.URL#getProtocol()
+     * @see j86.java.net.URL#getProtocol()
      */
     protected final String getRequestingProtocol() {
         return requestingProtocol;

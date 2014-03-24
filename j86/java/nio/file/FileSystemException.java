@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.nio.file;
+package j86.j86.java.nio.file;
 
-import java.io.IOException;
+import j86.java.io.IOException;
 
 /**
  * Thrown when a file system operation fails on one or two files. This class is

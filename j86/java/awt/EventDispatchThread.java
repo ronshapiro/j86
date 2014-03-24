@@ -23,17 +23,17 @@
  * questions.
  */
 
-package java.awt;
+package j86.java.awt;
 
-import java.awt.event.MouseEvent;
-import java.awt.event.ActionEvent;
-import java.awt.event.WindowEvent;
+import j86.j86.java.awt.event.MouseEvent;
+import j86.j86.java.awt.event.ActionEvent;
+import j86.j86.java.awt.event.WindowEvent;
 
-import java.util.ArrayList;
-import sun.util.logging.PlatformLogger;
+import j86.java.util.ArrayList;
+import j86.j86.sun.util.logging.PlatformLogger;
 
-import sun.awt.dnd.SunDragSourceContextPeer;
-import sun.awt.EventQueueDelegate;
+import j86.j86.sun.awt.dnd.SunDragSourceContextPeer;
+import j86.sun.awt.EventQueueDelegate;
 
 /**
  * EventDispatchThread is a package-private AWT class which takes
@@ -56,7 +56,7 @@ import sun.awt.EventQueueDelegate;
  */
 class EventDispatchThread extends Thread {
 
-    private static final PlatformLogger eventLog = PlatformLogger.getLogger("java.awt.event.EventDispatchThread");
+    private static final PlatformLogger eventLog = PlatformLogger.getLogger("j86.j86.java.awt.event.EventDispatchThread");
 
     private EventQueue theQueue;
     private volatile boolean doDispatch = true;
@@ -249,7 +249,7 @@ class EventDispatchThread extends Thread {
                  * KeyEvent is handled by using enqueueKeyEvent
                  * in Dialog.show
                  */
-                if (Component.isInstanceOf(modalComponent, "javax.swing.JInternalFrame")) {
+                if (Component.isInstanceOf(modalComponent, "j86.javax.swing.JInternalFrame")) {
                     /*
                      * Modal internal frames are handled separately. If event is
                      * for some component from another heavyweight than modalComp,
@@ -260,7 +260,7 @@ class EventDispatchThread extends Thread {
                 }
                 if (mouseEvent || actionEvent || windowClosingEvent) {
                     Object o = event.getSource();
-                    if (o instanceof sun.awt.ModalExclude) {
+                    if (o instanceof j86.sun.awt.ModalExclude) {
                         // Exclude this object from modality and
                         // continue to pump it's events.
                         return FilterAction.ACCEPT;
@@ -271,7 +271,7 @@ class EventDispatchThread extends Thread {
                         if (modalComponent instanceof Container) {
                             while (c != modalComponent && c != null) {
                                 if ((c instanceof Window) &&
-                                    (sun.awt.SunToolkit.isModalExcluded((Window)c))) {
+                                    (j86.sun.awt.SunToolkit.isModalExcluded((Window)c))) {
                                     // Exclude this window and all its children from
                                     //  modality and continue to pump it's events.
                                     modalExcluded = true;

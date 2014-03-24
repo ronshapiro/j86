@@ -33,7 +33,7 @@
  * while the "PrintStream" framework is a functional, but hidden, framework
  * which can be used to track probe firings.  All but the "DTrace" framework
  * are defined in this package.  The "DTrace" framework is implemented in the
- * {@code sun.tracing.dtrace} package.
+ * {@code j86.j86.sun.tracing.dtrace} package.
  * <p>
  * This package also contains the {@code ProviderSkeleton} class, which
  * holds most of the common code needed for implementing frameworks.
@@ -50,8 +50,8 @@
  * dispatches trace calls to a user-defined PrintStream class, defined by
  * a property.  It may some day be opened up to general use.
  * <p>
- * See the {@code sun.tracing.dtrace} and {@code com.sun.tracing.dtrace}
+ * See the {@code j86.j86.sun.tracing.dtrace} and {@code j86.j86.com.sun.tracing.dtrace}
  * packages for information on the "DTrace" framework.
  */
 
-package sun.tracing;
+package j86.sun.tracing;

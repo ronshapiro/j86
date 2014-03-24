@@ -29,9 +29,9 @@
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
 
-package sun.security.krb5.internal;
+package j86.j86.sun.security.krb5.internal;
 
-import sun.security.krb5.Confounder;
+import j86.sun.security.krb5.Confounder;
 
 public class LocalSeqNumber implements SeqNumber {
     private int lastSeqNumber;

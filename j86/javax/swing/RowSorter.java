@@ -22,17 +22,17 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing;
+package j86.javax.swing;
 
-import javax.swing.SortOrder;
-import javax.swing.event.*;
-import java.util.*;
+import j86.javax.swing.SortOrder;
+import j86.j86.javax.swing.event.*;
+import j86.java.util.*;
 
 /**
  * <code>RowSorter</code> provides the basis for sorting and filtering.
  * Beyond creating and installing a <code>RowSorter</code>, you very rarely
  * need to interact with one directly.  Refer to
- * {@link javax.swing.table.TableRowSorter TableRowSorter} for a concrete
+ * {@link j86.j86.javax.swing.table.TableRowSorter TableRowSorter} for a concrete
  * implementation of <code>RowSorter</code> for <code>JTable</code>.
  * <p>
  * <code>RowSorter</code>'s primary role is to provide a mapping between
@@ -89,7 +89,7 @@ import java.util.*;
  * <code>rowsUpdated</code>.
  *
  * @param <M> the type of the underlying model
- * @see javax.swing.table.TableRowSorter
+ * @see j86.j86.javax.swing.table.TableRowSorter
  * @since 1.6
  */
 public abstract class RowSorter<M> {

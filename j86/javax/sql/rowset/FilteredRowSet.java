@@ -23,13 +23,13 @@
  * questions.
  */
 
-package javax.sql.rowset;
+package j86.j86.javax.sql.rowset;
 
-import java.sql.*;
-import javax.sql.*;
-import javax.naming.*;
-import java.io.*;
-import java.math.*;
+import j86.java.sql.*;
+import j86.javax.sql.*;
+import j86.javax.naming.*;
+import j86.java.io.*;
+import j86.java.math.*;
 
 /**
  * The standard interface that all standard implementations of

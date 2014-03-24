@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.net.ssl;
+package j86.j86.javax.net.ssl;
 
-import java.security.cert.CertPathParameters;
+import j86.j86.java.security.cert.CertPathParameters;
 
 /**
  * A wrapper for CertPathParameters. This class is used to pass validation
@@ -37,7 +37,7 @@ import java.security.cert.CertPathParameters;
  *
  * @see X509TrustManager
  * @see TrustManagerFactory
- * @see java.security.cert.CertPathParameters
+ * @see j86.j86.java.security.cert.CertPathParameters
  *
  * @since   1.5
  * @author  Andreas Sterbenz

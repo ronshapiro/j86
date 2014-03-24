@@ -22,18 +22,18 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.beans;
+package j86.java.beans;
 
-import java.lang.reflect.InvocationHandler;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Proxy;
-import java.lang.reflect.Method;
-import java.security.AccessControlContext;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
+import j86.j86.j86.java.lang.reflect.InvocationHandler;
+import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.j86.j86.java.lang.reflect.Proxy;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.security.AccessControlContext;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
 
-import sun.reflect.misc.MethodUtil;
-import sun.reflect.misc.ReflectUtil;
+import j86.j86.sun.reflect.misc.MethodUtil;
+import j86.j86.sun.reflect.misc.ReflectUtil;
 
 /**
  * The <code>EventHandler</code> class provides
@@ -99,7 +99,7 @@ import sun.reflect.misc.ReflectUtil;
  * a listener that calls a method on the target object with no arguments.
  * In the following example we create an <code>ActionListener</code>
  * that invokes the <code>toFront</code> method on an instance
- * of <code>javax.swing.JFrame</code>.
+ * of <code>j86.javax.swing.JFrame</code>.
  *
  * <blockquote>
  *<pre>
@@ -266,8 +266,8 @@ import sun.reflect.misc.ReflectUtil;
  * undefined.  For that reason we recommend against targeting overloaded
  * methods.
  *
- * @see java.lang.reflect.Proxy
- * @see java.util.EventObject
+ * @see j86.j86.j86.java.lang.reflect.Proxy
+ * @see j86.java.util.EventObject
  *
  * @since 1.4
  *
@@ -287,7 +287,7 @@ public class EventHandler implements InvocationHandler {
      * Creates a new <code>EventHandler</code> object;
      * you generally use one of the <code>create</code> methods
      * instead of invoking this constructor directly.  Refer to
-     * {@link java.beans.EventHandler#create(Class, Object, String, String)
+     * {@link j86.java.beans.EventHandler#create(Class, Object, String, String)
      * the general version of create} for a complete description of
      * the <code>eventPropertyName</code> and <code>listenerMethodName</code>
      * parameter.
@@ -502,7 +502,7 @@ public class EventHandler implements InvocationHandler {
      * implementation of the <code>create</code> method with both
      * the <code>eventPropertyName</code> and the <code>listenerMethodName</code>
      * taking the value <code>null</code>. Refer to
-     * {@link java.beans.EventHandler#create(Class, Object, String, String)
+     * {@link j86.java.beans.EventHandler#create(Class, Object, String, String)
      * the general version of create} for a complete description of
      * the <code>action</code> parameter.
      * <p>
@@ -545,7 +545,7 @@ public class EventHandler implements InvocationHandler {
      * more general, implementation of the <code>create</code> method with
      * the <code>listenerMethodName</code> taking the value <code>null</code>.
      * Refer to
-     * {@link java.beans.EventHandler#create(Class, Object, String, String)
+     * {@link j86.java.beans.EventHandler#create(Class, Object, String, String)
      * the general version of create} for a complete description of
      * the <code>action</code> and <code>eventPropertyName</code> parameters.
      * <p>

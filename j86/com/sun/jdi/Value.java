@@ -23,7 +23,7 @@
  * questions.
  */
 
-package com.sun.jdi;
+package j86.com.sun.jdi;
 
 /**
  * The mirror for a value in the target VM.
@@ -33,11 +33,11 @@ package com.sun.jdi;
  * Some examples of where values may be accessed:
  * <BLOCKQUOTE><TABLE SUMMARY="layout">
  * <TR>
- *   <TD>{@link ObjectReference#getValue(com.sun.jdi.Field)
+ *   <TD>{@link ObjectReference#getValue(j86.com.sun.jdi.Field)
  *                 ObjectReference.getValue(Field)}
  *   <TD>- value of a field
  * <TR>
- *   <TD>{@link StackFrame#getValue(com.sun.jdi.LocalVariable)
+ *   <TD>{@link StackFrame#getValue(j86.com.sun.jdi.LocalVariable)
  *                 StackFrame.getValue(LocalVariable)}
  *   <TD>- value of a variable
  * <TR>
@@ -45,7 +45,7 @@ package com.sun.jdi;
  *                 VirtualMachine.mirrorOf(double)}
  *   <TD>- created in the target VM by the JDI client
  * <TR>
- *   <TD>{@link com.sun.jdi.event.ModificationWatchpointEvent#valueToBe()
+ *   <TD>{@link j86.j86.com.sun.jdi.event.ModificationWatchpointEvent#valueToBe()
  *                 ModificationWatchpointEvent.valueToBe()}
  *   <TD>- returned with an event
  * </TABLE></BLOCKQUOTE>
@@ -139,7 +139,7 @@ package com.sun.jdi;
  *   <TD headers="objref mirrored2"> {@link ThreadGroupReference}</TD>
  *   <TD headers="objref type2">     {@link ClassType}</TD>
  * <TR>
- *   <TD headers="objref kind2">     a <CODE>java.lang.Class</CODE><br>instance</TD>
+ *   <TD headers="objref kind2">     a <CODE>j86.java.lang.Class</CODE><br>instance</TD>
  *   <TD headers="objref example2">  <CODE>this.getClass()</CODE></TD>
  *   <TD headers="objref mirrored2"> {@link ClassObjectReference}</TD>
  *   <TD headers="objref type2">     {@link ClassType}</TD>

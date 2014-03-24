@@ -36,16 +36,16 @@
  *
  */
 
-package java.util;
+package j86.java.util;
 
-import java.io.Serializable;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.time.ZoneId;
-import sun.security.action.GetPropertyAction;
-import sun.util.calendar.ZoneInfo;
-import sun.util.calendar.ZoneInfoFile;
-import sun.util.locale.provider.TimeZoneNameUtility;
+import j86.java.io.Serializable;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.time.ZoneId;
+import j86.sun.security.action.GetPropertyAction;
+import j86.j86.sun.util.calendar.ZoneInfo;
+import j86.j86.sun.util.calendar.ZoneInfoFile;
+import j86.j86.j86.sun.util.locale.provider.TimeZoneNameUtility;
 
 /**
  * <code>TimeZone</code> represents a time zone offset, and also figures out daylight
@@ -357,7 +357,7 @@ abstract public class TimeZone implements Serializable, Cloneable {
      * @see #getDisplayName(boolean, int, Locale)
      * @see Locale#getDefault(Locale.Category)
      * @see Locale.Category
-     * @see java.text.DateFormatSymbols#getZoneStrings()
+     * @see j86.java.text.DateFormatSymbols#getZoneStrings()
      */
     public final String getDisplayName(boolean daylight, int style) {
         return getDisplayName(daylight, style,
@@ -390,7 +390,7 @@ abstract public class TimeZone implements Serializable, Cloneable {
      * @exception IllegalArgumentException if {@code style} is invalid.
      * @exception NullPointerException if {@code locale} is {@code null}.
      * @since 1.2
-     * @see java.text.DateFormatSymbols#getZoneStrings()
+     * @see j86.java.text.DateFormatSymbols#getZoneStrings()
      */
     public String getDisplayName(boolean daylight, int style, Locale locale) {
         if (style != SHORT && style != LONG) {

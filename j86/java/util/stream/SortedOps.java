@@ -22,15 +22,15 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.util.stream;
+package j86.j86.java.util.stream;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.Objects;
-import java.util.Spliterator;
-import java.util.concurrent.ForkJoinTask;
-import java.util.function.IntFunction;
+import j86.java.util.ArrayList;
+import j86.java.util.Arrays;
+import j86.java.util.Comparator;
+import j86.java.util.Objects;
+import j86.java.util.Spliterator;
+import j86.j86.java.util.concurrent.ForkJoinTask;
+import j86.j86.java.util.function.IntFunction;
 
 
 /**

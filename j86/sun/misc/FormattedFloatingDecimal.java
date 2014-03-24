@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.misc;
+package j86.sun.misc;
 
-import java.util.Arrays;
+import j86.java.util.Arrays;
 
 public class FormattedFloatingDecimal{
 

@@ -22,20 +22,20 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text;
+package j86.j86.javax.swing.text;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.awt.datatransfer.*;
-import java.beans.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.io.*;
-import javax.swing.*;
-import javax.swing.event.*;
-import javax.swing.plaf.*;
-import java.util.EventListener;
-import sun.swing.SwingUtilities2;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.j86.java.awt.datatransfer.*;
+import j86.java.beans.*;
+import j86.j86.java.awt.event.ActionEvent;
+import j86.j86.java.awt.event.ActionListener;
+import j86.java.io.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.event.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.java.util.EventListener;
+import j86.sun.swing.SwingUtilities2;
 
 /**
  * A default implementation of Caret.  The caret is rendered as
@@ -99,8 +99,8 @@ import sun.swing.SwingUtilities2;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @author  Timothy Prinzing
  * @see     Caret
@@ -827,14 +827,14 @@ public class DefaultCaret extends Rectangle implements Caret, FocusListener, Mou
      *
      * @param listenerType the type of listeners requested; this parameter
      *          should specify an interface that descends from
-     *          <code>java.util.EventListener</code>
+     *          <code>j86.java.util.EventListener</code>
      * @return an array of all objects registered as
      *          <code><em>Foo</em>Listener</code>s on this component,
      *          or an empty array if no such
      *          listeners have been added
      * @exception ClassCastException if <code>listenerType</code>
      *          doesn't specify a class or interface that implements
-     *          <code>java.util.EventListener</code>
+     *          <code>j86.java.util.EventListener</code>
      *
      * @see #getChangeListeners
      *
@@ -1056,7 +1056,7 @@ public class DefaultCaret extends Rectangle implements Caret, FocusListener, Mou
      * with a forward bias.
      *
      * @param dot the position &gt;= 0
-     * @see #moveDot(int, javax.swing.text.Position.Bias)
+     * @see #moveDot(int, j86.j86.javax.swing.text.Position.Bias)
      * @see Caret#moveDot
      */
     public void moveDot(int dot) {

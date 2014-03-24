@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.security.sasl;
+package j86.javax.security.sasl;
 
-import java.io.IOException;
+import j86.java.io.IOException;
 
 /**
  * This class represents an error that has occurred when using SASL.
@@ -57,7 +57,7 @@ public class SaslException extends IOException {
      * The root exception is null.
      * @param detail A possibly null string containing details of the exception.
      *
-     * @see java.lang.Throwable#getMessage
+     * @see j86.java.lang.Throwable#getMessage
      */
     public SaslException (String detail) {
         super(detail);
@@ -76,7 +76,7 @@ public class SaslException extends IOException {
      * @param detail A possibly null string containing details of the exception.
      * @param ex A possibly null root exception that caused this exception.
      *
-     * @see java.lang.Throwable#getMessage
+     * @see j86.java.lang.Throwable#getMessage
      * @see #getCause
      */
     public SaslException (String detail, Throwable ex) {
@@ -113,7 +113,7 @@ public class SaslException extends IOException {
      * is meant for debugging and not meant to be interpreted
      * programmatically.
      * @return The non-null string representation of this exception.
-     * @see java.lang.Throwable#getMessage
+     * @see j86.java.lang.Throwable#getMessage
      */
     // Override Throwable.toString() to conform to JSR 28
     public String toString() {

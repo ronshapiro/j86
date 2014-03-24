@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.reflect.generics.repository;
+package j86.j86.sun.reflect.generics.repository;
 
-import sun.reflect.generics.factory.GenericsFactory;
-import sun.reflect.generics.tree.ClassSignature;
-import sun.reflect.generics.tree.TypeTree;
-import sun.reflect.generics.visitor.Reifier;
-import sun.reflect.generics.parser.SignatureParser;
-import java.lang.reflect.Type;
+import j86.j86.sun.reflect.generics.factory.GenericsFactory;
+import j86.j86.sun.reflect.generics.tree.ClassSignature;
+import j86.j86.sun.reflect.generics.tree.TypeTree;
+import j86.j86.sun.reflect.generics.visitor.Reifier;
+import j86.j86.sun.reflect.generics.parser.SignatureParser;
+import j86.j86.j86.java.lang.reflect.Type;
 
 
 /**
@@ -40,7 +40,7 @@ import java.lang.reflect.Type;
  */
 public class ClassRepository extends GenericDeclRepository<ClassSignature> {
 
-    public static final ClassRepository NONE = ClassRepository.make("Ljava/lang/Object;", null);
+    public static final ClassRepository NONE = ClassRepository.make("Lj86.java.lang/Object;", null);
 
     private Type superclass; // caches the generic superclass info
     private Type[] superInterfaces; // caches the generic superinterface info

@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.security.jgss.krb5;
+package j86.j86.sun.security.jgss.krb5;
 
-import org.ietf.jgss.*;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.IOException;
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.security.MessageDigest;
-import java.util.Arrays;
+import j86.org.ietf.jgss.*;
+import j86.java.io.InputStream;
+import j86.java.io.OutputStream;
+import j86.java.io.IOException;
+import j86.java.io.ByteArrayInputStream;
+import j86.java.io.ByteArrayOutputStream;
+import j86.java.security.MessageDigest;
+import j86.java.util.Arrays;
 
 /**
  * This class is a base class for new GSS token definitions, as defined
@@ -625,8 +625,8 @@ abstract class MessageToken_v2 extends Krb5Token {
         /**
          * Returns the token id for the message token.
          * @return the token id
-         * @see sun.security.jgss.krb5.Krb5Token#MIC_ID_v2
-         * @see sun.security.jgss.krb5.Krb5Token#WRAP_ID_v2
+         * @see j86.j86.sun.security.jgss.krb5.Krb5Token#MIC_ID_v2
+         * @see j86.j86.sun.security.jgss.krb5.Krb5Token#WRAP_ID_v2
          */
         public final int getTokenId() {
             return tokenId;

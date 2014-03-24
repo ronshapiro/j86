@@ -24,14 +24,14 @@
  */
 
 
-package java.awt.image;
+package j86.j86.j86.java.awt.image;
 
-import java.awt.color.ColorSpace;
-import java.awt.geom.Rectangle2D;
-import java.awt.Rectangle;
-import java.awt.RenderingHints;
-import java.awt.geom.Point2D;
-import sun.awt.image.ImagingLib;
+import j86.j86.java.awt.color.ColorSpace;
+import j86.j86.java.awt.geom.Rectangle2D;
+import j86.java.awt.Rectangle;
+import j86.java.awt.RenderingHints;
+import j86.j86.java.awt.geom.Point2D;
+import j86.j86.j86.sun.awt.image.ImagingLib;
 
 /**
  * This class implements a lookup operation from the source
@@ -70,8 +70,8 @@ import sun.awt.image.ImagingLib;
  * This class allows the Source to be the same as the Destination.
  *
  * @see LookupTable
- * @see java.awt.RenderingHints#KEY_COLOR_RENDERING
- * @see java.awt.RenderingHints#KEY_DITHERING
+ * @see j86.java.awt.RenderingHints#KEY_COLOR_RENDERING
+ * @see j86.java.awt.RenderingHints#KEY_DITHERING
  */
 
 public class LookupOp implements BufferedImageOp, RasterOp {

@@ -23,17 +23,17 @@
  * questions.
  */
 
-package com.sun.tools.jdi;
+package j86.com.sun.tools.jdi;
 
-import java.io.IOException;
-import java.io.UnsupportedEncodingException;
-import java.util.Map;
-import java.util.Properties;
+import j86.java.io.IOException;
+import j86.java.io.UnsupportedEncodingException;
+import j86.java.util.Map;
+import j86.java.util.Properties;
 
-import com.sun.jdi.Bootstrap;
-import com.sun.jdi.VirtualMachine;
-import com.sun.jdi.connect.*;
-import com.sun.jdi.connect.spi.*;
+import j86.com.sun.jdi.Bootstrap;
+import j86.com.sun.jdi.VirtualMachine;
+import j86.j86.com.sun.jdi.connect.*;
+import j86.j86.j86.com.sun.jdi.connect.spi.*;
 
 /*
  * An AttachingConnector that connects to a debuggee by specifying the process
@@ -51,7 +51,7 @@ public class ProcessAttachingConnector
     static final String ARG_PID = "pid";
     static final String ARG_TIMEOUT = "timeout";
 
-    com.sun.tools.attach.VirtualMachine vm;
+    com.j86.sun.tools.attach.VirtualMachine vm;
     Transport transport;
 
     public ProcessAttachingConnector() {
@@ -95,9 +95,9 @@ public class ProcessAttachingConnector
         // sun.jdwp.listenAddress property.
 
         String address = null;
-        com.sun.tools.attach.VirtualMachine vm = null;
+        com.j86.sun.tools.attach.VirtualMachine vm = null;
         try {
-            vm = com.sun.tools.attach.VirtualMachine.attach(pid);
+            vm = com.j86.sun.tools.attach.VirtualMachine.attach(pid);
             Properties props = vm.getAgentProperties();
             address = props.getProperty("sun.jdwp.listenerAddress");
         } catch (Exception x) {
@@ -127,7 +127,7 @@ public class ProcessAttachingConnector
         } else {
             if (lib.equals("dt_shmem")) {
                 try {
-                    Class<?> c = Class.forName("com.sun.tools.jdi.SharedMemoryTransportService");
+                    Class<?> c = Class.forName("j86.com.sun.tools.jdi.SharedMemoryTransportService");
                     ts = (TransportService)c.newInstance();
                 } catch (Exception x) { }
             }
@@ -143,7 +143,7 @@ public class ProcessAttachingConnector
     }
 
     public String name() {
-        return "com.sun.jdi.ProcessAttach";
+        return "j86.com.sun.jdi.ProcessAttach";
     }
 
     public String description() {

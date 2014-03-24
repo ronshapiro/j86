@@ -23,12 +23,12 @@
  * questions.
  */
 
-package com.sun.crypto.provider;
+package j86.com.sun.crypto.provider;
 
-import java.security.KeyRep;
-import java.security.InvalidKeyException;
-import javax.crypto.SecretKey;
-import javax.crypto.spec.DESedeKeySpec;
+import j86.java.security.KeyRep;
+import j86.java.security.InvalidKeyException;
+import j86.javax.crypto.SecretKey;
+import j86.j86.javax.crypto.spec.DESedeKeySpec;
 
 /**
  * This class represents a DES-EDE key.
@@ -114,8 +114,8 @@ final class DESedeKey implements SecretKey {
             return false;
 
         byte[] thatKey = ((SecretKey)obj).getEncoded();
-        boolean ret = java.util.Arrays.equals(this.key, thatKey);
-        java.util.Arrays.fill(thatKey, (byte)0x00);
+        boolean ret = j86.java.util.Arrays.equals(this.key, thatKey);
+        j86.java.util.Arrays.fill(thatKey, (byte)0x00);
         return ret;
     }
 
@@ -123,8 +123,8 @@ final class DESedeKey implements SecretKey {
      * readObject is called to restore the state of this key from
      * a stream.
      */
-    private void readObject(java.io.ObjectInputStream s)
-         throws java.io.IOException, ClassNotFoundException
+    private void readObject(j86.java.io.ObjectInputStream s)
+         throws j86.java.io.IOException, ClassNotFoundException
     {
         s.defaultReadObject();
         key = key.clone();
@@ -135,10 +135,10 @@ final class DESedeKey implements SecretKey {
      *
      * @return the standard KeyRep object to be serialized
      *
-     * @throws java.io.ObjectStreamException if a new object representing
+     * @throws j86.java.io.ObjectStreamException if a new object representing
      * this DESede key could not be created
      */
-    private Object writeReplace() throws java.io.ObjectStreamException {
+    private Object writeReplace() throws j86.java.io.ObjectStreamException {
         return new KeyRep(KeyRep.Type.SECRET,
                         getAlgorithm(),
                         getFormat(),
@@ -152,7 +152,7 @@ final class DESedeKey implements SecretKey {
     protected void finalize() throws Throwable {
         try {
             if (this.key != null) {
-                java.util.Arrays.fill(this.key, (byte)0x00);
+                j86.java.util.Arrays.fill(this.key, (byte)0x00);
                 this.key = null;
             }
         } finally {

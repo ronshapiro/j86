@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.misc;
+package j86.sun.misc;
 
-import java.nio.ByteBuffer;
-import java.security.Permission;
-import java.security.PrivilegedAction;
-import java.io.IOException;
-import java.io.UnsupportedEncodingException;
+import j86.java.nio.ByteBuffer;
+import j86.java.security.Permission;
+import j86.java.security.PrivilegedAction;
+import j86.java.io.IOException;
+import j86.java.io.UnsupportedEncodingException;
 
 /**
  * The Perf class provides the ability to attach to an instrumentation
@@ -46,8 +46,8 @@ import java.io.UnsupportedEncodingException;
  * @author   Brian Doherty
  * @since    1.4.2
  * @see      #getPerf
- * @see      sun.misc.Perf$GetPerfAction
- * @see      java.nio.ByteBuffer
+ * @see      j86.sun.misc.Perf$GetPerfAction
+ * @see      j86.java.nio.ByteBuffer
  */
 public final class Perf {
 
@@ -77,14 +77,14 @@ public final class Perf {
      * <p>
      * In the presence of a security manager, the <code>MyTrustedClass</code>
      * class in the above example will need to be granted the
-     * <em>"sun.misc.Perf.getPerf"</em> <code>RuntimePermission</code>
+     * <em>"j86.sun.misc.Perf.getPerf"</em> <code>RuntimePermission</code>
      * permission in order to successfully acquire the singleton Perf instance.
      * <p>
-     * Please note that the <em>"sun.misc.Perf.getPerf"</em> permission
+     * Please note that the <em>"j86.sun.misc.Perf.getPerf"</em> permission
      * is not a JDK specified permission.
      *
-     * @see  java.security.AccessController#doPrivileged(PrivilegedAction)
-     * @see  java.lang.RuntimePermission
+     * @see  j86.java.security.AccessController#doPrivileged(PrivilegedAction)
+     * @see  j86.java.lang.RuntimePermission
      */
     public static class GetPerfAction implements PrivilegedAction<Perf>
     {
@@ -108,7 +108,7 @@ public final class Perf {
      * <p>
      * If a security manager is installed, its <code>checkPermission</code>
      * method is called with a <code>RuntimePermission</code> with a target
-     * of <em>"sun.misc.Perf.getPerf"</em>. A security exception will result
+     * of <em>"j86.sun.misc.Perf.getPerf"</em>. A security exception will result
      * if the caller has not been granted this permission.
      * <p>
      * Access to the returned <code>Perf</code> object should be protected
@@ -120,21 +120,21 @@ public final class Perf {
      * finer grained access control to the contents of individual
      * instrumentation objects contained within the buffer.
      * <p>
-     * Please note that the <em>"sun.misc.Perf.getPerf"</em> permission
+     * Please note that the <em>"j86.sun.misc.Perf.getPerf"</em> permission
      * is not a JDK specified permission.
      *
      * @return       A reference to the singleton Perf instance.
      * @throws AccessControlException  if a security manager exists and
      *               its <code>checkPermission</code> method doesn't allow
-     *               access to the <em>"sun.misc.Perf.getPerf"</em> target.
-     * @see  java.lang.RuntimePermission
+     *               access to the <em>"j86.sun.misc.Perf.getPerf"</em> target.
+     * @see  j86.java.lang.RuntimePermission
      * @see  #attach
      */
     public static Perf getPerf()
     {
         SecurityManager security = System.getSecurityManager();
         if (security != null) {
-            Permission perm = new RuntimePermission("sun.misc.Perf.getPerf");
+            Permission perm = new RuntimePermission("j86.sun.misc.Perf.getPerf");
             security.checkPermission(perm);
         }
 
@@ -191,7 +191,7 @@ public final class Perf {
      *                           the instrumentation buffer.
      * @throws  OutOfMemoryError The instrumentation buffer could not be mapped
      *                           into the virtual machine's address space.
-     * @see     java.nio.ByteBuffer
+     * @see     j86.java.nio.ByteBuffer
      */
     public ByteBuffer attach(int lvmid, String mode)
            throws IllegalArgumentException, IOException
@@ -227,7 +227,7 @@ public final class Perf {
      *                           the instrumentation buffer.
      * @throws  OutOfMemoryError The instrumentation buffer could not be mapped
      *                           into the virtual machine's address space.
-     * @see     java.nio.ByteBuffer
+     * @see     j86.java.nio.ByteBuffer
      */
     public ByteBuffer attach(String user, int lvmid, String mode)
            throws IllegalArgumentException, IOException
@@ -344,7 +344,7 @@ public final class Perf {
      *
      * @param ByteBuffer  A direct allocated byte buffer created by the
      *                    <code>attach</code> method.
-     * @see   java.nio.ByteBuffer
+     * @see   j86.java.nio.ByteBuffer
      * @see   #attach
      */
     private native void detach(ByteBuffer bb);
@@ -365,9 +365,9 @@ public final class Perf {
      *                      allows write access to a native memory location
      *                      containing a <code>long</code> value.
      *
-     * see sun.misc.perf.Variability
-     * see sun.misc.perf.Units
-     * @see java.nio.ByteBuffer
+     * see j86.sun.misc.perf.Variability
+     * see j86.sun.misc.perf.Units
+     * @see j86.java.nio.ByteBuffer
      */
     public native ByteBuffer createLong(String name, int variability,
                                         int units, long value);
@@ -398,9 +398,9 @@ public final class Perf {
      *                      write access to a native memory location
      *                      containing a <code>long</code> value.
      *
-     * see sun.misc.perf.Variability
-     * see sun.misc.perf.Units
-     * @see java.nio.ByteBuffer
+     * see j86.sun.misc.perf.Variability
+     * see j86.sun.misc.perf.Units
+     * @see j86.java.nio.ByteBuffer
      */
     public ByteBuffer createString(String name, int variability,
                                    int units, String value, int maxLength)
@@ -437,9 +437,9 @@ public final class Perf {
      *                      write access to a native memory location
      *                      containing a <code>long</code> value.
      *
-     * see sun.misc.perf.Variability
-     * see sun.misc.perf.Units
-     * @see java.nio.ByteBuffer
+     * see j86.sun.misc.perf.Variability
+     * see j86.sun.misc.perf.Units
+     * @see j86.java.nio.ByteBuffer
      */
     public ByteBuffer createString(String name, int variability,
                                    int units, String value)
@@ -475,9 +475,9 @@ public final class Perf {
      *                      write access to a native memory location
      *                      containing a <code>long</code> value.
      *
-     * see sun.misc.perf.Variability
-     * see sun.misc.perf.Units
-     * @see java.nio.ByteBuffer
+     * see j86.sun.misc.perf.Variability
+     * see j86.sun.misc.perf.Units
+     * @see j86.java.nio.ByteBuffer
      */
     public native ByteBuffer createByteArray(String name, int variability,
                                              int units, byte[] value,
@@ -513,7 +513,7 @@ public final class Perf {
      *          the start of the Java virtual machine.
      *
      * @see #highResFrequency
-     * @see java.lang.System#currentTimeMillis()
+     * @see j86.java.lang.System#currentTimeMillis()
      */
     public native long highResCounter();
 

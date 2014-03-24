@@ -28,36 +28,36 @@
  * Copyright IBM Corp. 1999-2000.  All rights reserved.
  */
 
-package javax.management.modelmbean;
+package j86.j86.javax.management.modelmbean;
 
-import static com.sun.jmx.defaults.JmxProperties.MODELMBEAN_LOGGER;
-import static com.sun.jmx.mbeanserver.Util.cast;
-import com.sun.jmx.mbeanserver.GetPropertyAction;
-import com.sun.jmx.mbeanserver.Util;
+import static j86.com.sun.jmx.defaults.JmxProperties.MODELMBEAN_LOGGER;
+import static j86.com.sun.jmx.mbeanserver.Util.cast;
+import j86.com.sun.jmx.mbeanserver.GetPropertyAction;
+import j86.com.sun.jmx.mbeanserver.Util;
 
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.ObjectStreamField;
+import j86.java.io.IOException;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectStreamField;
 
-import java.lang.reflect.Constructor;
+import j86.j86.j86.java.lang.reflect.Constructor;
 
-import java.security.AccessController;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Set;
-import java.util.SortedMap;
-import java.util.StringTokenizer;
-import java.util.TreeMap;
-import java.util.logging.Level;
+import j86.java.security.AccessController;
+import j86.java.util.HashMap;
+import j86.java.util.Iterator;
+import j86.java.util.Map;
+import j86.java.util.Set;
+import j86.java.util.SortedMap;
+import j86.java.util.StringTokenizer;
+import j86.java.util.TreeMap;
+import j86.j86.java.util.logging.Level;
 
-import javax.management.Descriptor;
-import javax.management.ImmutableDescriptor;
-import javax.management.MBeanException;
-import javax.management.RuntimeOperationsException;
+import j86.javax.management.Descriptor;
+import j86.javax.management.ImmutableDescriptor;
+import j86.javax.management.MBeanException;
+import j86.javax.management.RuntimeOperationsException;
 
-import sun.reflect.misc.ReflectUtil;
+import j86.j86.sun.reflect.misc.ReflectUtil;
 
 /**
  * This class represents the metadata set for a ModelMBean element.  A
@@ -82,7 +82,7 @@ import sun.reflect.misc.ReflectUtil;
  */
 @SuppressWarnings("serial")  // serialVersionUID not constant
 public class DescriptorSupport
-         implements javax.management.Descriptor
+         implements j86.javax.management.Descriptor
 {
 
     // Serialization compatibility stuff:
@@ -613,7 +613,7 @@ public class DescriptorSupport
                 if (currValue == null) {
                     responseFields[i] = currElement.getKey() + "=";
                 } else {
-                    if (currValue instanceof java.lang.String) {
+                    if (currValue instanceof j86.java.lang.String) {
                         responseFields[i] =
                             currElement.getKey() + "=" + currValue.toString();
                     } else {
@@ -806,7 +806,7 @@ public class DescriptorSupport
      * <li>If one value is a primitive array then the other must be a primitive
      * array of the same type with the same elements.</li>
      * <li>If one value is an object array then the other must be too and
-     * {@link java.util.Arrays#deepEquals(Object[],Object[]) Arrays.deepEquals}
+     * {@link j86.java.util.Arrays#deepEquals(Object[],Object[]) Arrays.deepEquals}
      * must return true.</li>
      * <li>Otherwise {@link Object#equals(Object)} must return true.</li>
      * </ul>
@@ -817,7 +817,7 @@ public class DescriptorSupport
      * otherwise.
      *
      */
-    // Note: this Javadoc is copied from javax.management.Descriptor
+    // Note: this Javadoc is copied from j86.javax.management.Descriptor
     //       due to 6369229.
     @Override
     public synchronized boolean equals(Object o) {
@@ -841,16 +841,16 @@ public class DescriptorSupport
      * <ul>
      * <li>If {@code v} is null then {@code h} is 0.</li>
      * <li>If {@code v} is a primitive array then {@code h} is computed using
-     * the appropriate overloading of {@code java.util.Arrays.hashCode}.</li>
+     * the appropriate overloading of {@code j86.java.util.Arrays.hashCode}.</li>
      * <li>If {@code v} is an object array then {@code h} is computed using
-     * {@link java.util.Arrays#deepHashCode(Object[]) Arrays.deepHashCode}.</li>
+     * {@link j86.java.util.Arrays#deepHashCode(Object[]) Arrays.deepHashCode}.</li>
      * <li>Otherwise {@code h} is {@code v.hashCode()}.</li>
      * </ul>
      *
      * @return A hash code value for this object.
      *
      */
-    // Note: this Javadoc is copied from javax.management.Descriptor
+    // Note: this Javadoc is copied from j86.javax.management.Descriptor
     //       due to 6369229.
     @Override
     public synchronized int hashCode() {
@@ -976,7 +976,7 @@ public class DescriptorSupport
             return false;
         String SfldValue = "";
         boolean isAString = false;
-        if ((fldValue != null) && (fldValue instanceof java.lang.String)) {
+        if ((fldValue != null) && (fldValue instanceof j86.java.lang.String)) {
             SfldValue = (String) fldValue;
             isAString = true;
         }
@@ -998,7 +998,7 @@ public class DescriptorSupport
             long v;
             if ((fldValue != null) && (isAString)) {
                 v = toNumeric(SfldValue);
-            } else if (fldValue instanceof java.lang.Integer) {
+            } else if (fldValue instanceof j86.java.lang.Integer) {
                 v = ((Integer)fldValue).intValue();
             } else return false;
 
@@ -1011,7 +1011,7 @@ public class DescriptorSupport
             long v;
             if ((fldValue != null) && (isAString)) {
                 v = toNumeric(SfldValue);
-            } else if (fldValue instanceof java.lang.Integer) {
+            } else if (fldValue instanceof j86.java.lang.Integer) {
                 v = ((Integer)fldValue).intValue();
             } else return false;
 
@@ -1032,13 +1032,13 @@ public class DescriptorSupport
             long v;
             if ((fldValue != null) && (isAString)) {
                 v = toNumeric(SfldValue);
-            } else if (fldValue instanceof java.lang.Number) {
+            } else if (fldValue instanceof j86.java.lang.Number) {
                 v = ((Number)fldValue).longValue();
             } else return false;
 
             return (v >= -1);
         } else if (fldName.equalsIgnoreCase("log")) {
-            return ((fldValue instanceof java.lang.Boolean) ||
+            return ((fldValue instanceof j86.java.lang.Boolean) ||
                     (isAString &&
                      (SfldValue.equalsIgnoreCase("T") ||
                       SfldValue.equalsIgnoreCase("true") ||
@@ -1090,7 +1090,7 @@ public class DescriptorSupport
                cannot be confused with the encoding of an object.  If it
                could be so confused (surrounded by parentheses) then we
                call makeFieldValue as for any non-String object and end
-               up with an encoding like "(java.lang.String/(thing))".  */
+               up with an encoding like "(j86.java.lang.String/(thing))".  */
             if (value instanceof String) {
                 final String svalue = (String) value;
                 if (!svalue.startsWith("(") || !svalue.endsWith(")"))
@@ -1331,7 +1331,7 @@ public class DescriptorSupport
 
     private long toNumeric(String inStr) {
         try {
-            return java.lang.Long.parseLong(inStr);
+            return j86.java.lang.Long.parseLong(inStr);
         } catch (Exception e) {
             return -2;
         }

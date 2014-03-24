@@ -23,15 +23,15 @@
  * questions.
  */
 
-package javax.management;
+package j86.javax.management;
 
 
-import java.util.Vector;
+import j86.java.util.Vector;
 
 
 /**
- * This class implements of the {@link javax.management.NotificationFilter NotificationFilter}
- * interface for the {@link javax.management.AttributeChangeNotification attribute change notification}.
+ * This class implements of the {@link j86.javax.management.NotificationFilter NotificationFilter}
+ * interface for the {@link j86.javax.management.AttributeChangeNotification attribute change notification}.
  * The filtering is performed on the name of the observed attribute.
  * <P>
  * It manages a list of enabled attribute names.
@@ -83,12 +83,12 @@ public class AttributeChangeNotificationFilter implements NotificationFilter {
      * this method has no effect.
      *
      * @param name The attribute name.
-     * @exception java.lang.IllegalArgumentException The attribute name parameter is null.
+     * @exception j86.java.lang.IllegalArgumentException The attribute name parameter is null.
      */
-    public synchronized void enableAttribute(String name) throws java.lang.IllegalArgumentException {
+    public synchronized void enableAttribute(String name) throws j86.java.lang.IllegalArgumentException {
 
         if (name == null) {
-            throw new java.lang.IllegalArgumentException("The name cannot be null.");
+            throw new j86.java.lang.IllegalArgumentException("The name cannot be null.");
         }
         if (!enabledAttributes.contains(name)) {
             enabledAttributes.addElement(name);

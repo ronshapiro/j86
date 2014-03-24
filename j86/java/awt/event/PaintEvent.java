@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.awt.event;
+package j86.j86.java.awt.event;
 
-import java.awt.Component;
-import java.awt.Rectangle;
+import j86.java.awt.Component;
+import j86.java.awt.Rectangle;
 
 /**
  * The component-level paint event.
@@ -72,7 +72,7 @@ public class PaintEvent extends ComponentEvent {
      * This rectangle should be non null.
      *
      * @serial
-     * @see java.awt.Rectangle
+     * @see j86.java.awt.Rectangle
      * @see #setUpdateRect(Rectangle)
      * @see #getUpdateRect()
      */

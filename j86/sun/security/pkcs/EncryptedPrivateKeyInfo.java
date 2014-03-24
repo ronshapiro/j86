@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.security.pkcs;
+package j86.sun.security.pkcs;
 
-import java.io.*;
-import sun.security.x509.*;
-import sun.security.util.DerValue;
-import sun.security.util.DerOutputStream;
+import j86.java.io.*;
+import j86.sun.security.x509.*;
+import j86.sun.security.util.DerValue;
+import j86.sun.security.util.DerOutputStream;
 
 /**
  * This class implements the <code>EncryptedPrivateKeyInfo</code> type,

@@ -23,17 +23,17 @@
  * questions.
  */
 
-package com.sun.jndi.ldap;
+package j86.com.sun.jndi.ldap;
 
 
-import java.util.Enumeration;
-import java.util.Vector;
-import java.util.Locale;
+import j86.java.util.Enumeration;
+import j86.java.util.Vector;
+import j86.java.util.Locale;
 
-import javax.naming.*;
-import javax.naming.directory.Attributes;
-import javax.naming.directory.Attribute;
-import javax.naming.directory.BasicAttributes;
+import j86.javax.naming.*;
+import j86.j86.javax.naming.directory.Attributes;
+import j86.j86.javax.naming.directory.Attribute;
+import j86.j86.javax.naming.directory.BasicAttributes;
 
 
 /**
@@ -361,21 +361,21 @@ public final class LdapName implements Name {
      * @serialdata      The DN string and a boolean indicating whether
      * the values are case sensitive.
      */
-    private void writeObject(java.io.ObjectOutputStream s)
-            throws java.io.IOException {
+    private void writeObject(j86.java.io.ObjectOutputStream s)
+            throws j86.java.io.IOException {
         s.writeObject(toString());
         s.writeBoolean(valuesCaseSensitive);
     }
 
-    private void readObject(java.io.ObjectInputStream s)
-            throws java.io.IOException, ClassNotFoundException {
+    private void readObject(j86.java.io.ObjectInputStream s)
+            throws j86.java.io.IOException, ClassNotFoundException {
         unparsed = (String)s.readObject();
         valuesCaseSensitive = s.readBoolean();
         try {
             parse();
         } catch (InvalidNameException e) {
             // shouldn't happen
-            throw new java.io.StreamCorruptedException(
+            throw new j86.java.io.StreamCorruptedException(
                     "Invalid name: " + unparsed);
         }
     }
@@ -902,7 +902,7 @@ public final class LdapName implements Name {
                         if (utf8.length > 0) {
                             try {
                                 buf.append(new String(utf8, "UTF8"));
-                            } catch (java.io.UnsupportedEncodingException e) {
+                            } catch (j86.java.io.UnsupportedEncodingException e) {
                                 // shouldn't happen
                             }
                             i += utf8.length * 3 - 1;

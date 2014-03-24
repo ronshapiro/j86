@@ -22,15 +22,15 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text.rtf;
+package j86.j86.j86.javax.swing.text.rtf;
 
-import java.lang.*;
-import java.util.*;
-import java.io.*;
-import java.awt.Font;
-import java.awt.Color;
+import j86.java.lang.*;
+import j86.java.util.*;
+import j86.java.io.*;
+import j86.java.awt.Font;
+import j86.java.awt.Color;
 
-import javax.swing.text.*;
+import j86.j86.javax.swing.text.*;
 
 /**
  * Takes a sequence of RTF tokens and text and appends the text
@@ -44,7 +44,7 @@ import javax.swing.text.*;
  * the text acceptor.
  *
  *   @see RTFParser
- *   @see java.io.OutputStream
+ *   @see j86.java.io.OutputStream
  */
 class RTFReader extends RTFParser
 {
@@ -559,8 +559,8 @@ getCharacterSet(final String name)
     char[] set = characterSets.get(name);
     if (set == null) {
       InputStream charsetStream;
-      charsetStream = java.security.AccessController.
-              doPrivileged(new java.security.PrivilegedAction<InputStream>() {
+      charsetStream = j86.java.security.AccessController.
+              doPrivileged(new j86.java.security.PrivilegedAction<InputStream>() {
           public InputStream run() {
               return RTFReader.class.getResourceAsStream
                                      ("charsets/" + name + ".txt");
@@ -611,7 +611,7 @@ static char[] readCharset(InputStream strm)
     return values;
 }
 
-static char[] readCharset(java.net.URL href)
+static char[] readCharset(j86.java.net.URL href)
      throws IOException
 {
     return readCharset(href.openStream());

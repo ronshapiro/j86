@@ -22,10 +22,10 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text;
+package j86.j86.javax.swing.text;
 
-import javax.swing.Action;
-import javax.swing.KeyStroke;
+import j86.javax.swing.Action;
+import j86.javax.swing.KeyStroke;
 
 /**
  * A collection of bindings of KeyStrokes to actions.  The

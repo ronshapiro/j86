@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.audio;
+package j86.sun.audio;
 
-import java.io.*;
-import java.util.Arrays;
+import j86.java.io.*;
+import j86.java.util.Arrays;
 
-import javax.sound.sampled.*;
+import j86.javax.sound.sampled.*;
 
 
 /**

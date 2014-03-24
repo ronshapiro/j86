@@ -23,33 +23,33 @@
  * questions.
  */
 
-package sun.awt.datatransfer;
+package j86.j86.sun.awt.datatransfer;
 
-import java.awt.EventQueue;
+import j86.java.awt.EventQueue;
 
-import java.awt.datatransfer.Clipboard;
-import java.awt.datatransfer.FlavorTable;
-import java.awt.datatransfer.SystemFlavorMap;
-import java.awt.datatransfer.Transferable;
-import java.awt.datatransfer.ClipboardOwner;
-import java.awt.datatransfer.DataFlavor;
-import java.awt.datatransfer.FlavorListener;
-import java.awt.datatransfer.FlavorEvent;
-import java.awt.datatransfer.UnsupportedFlavorException;
+import j86.j86.java.awt.datatransfer.Clipboard;
+import j86.j86.java.awt.datatransfer.FlavorTable;
+import j86.j86.java.awt.datatransfer.SystemFlavorMap;
+import j86.j86.java.awt.datatransfer.Transferable;
+import j86.j86.java.awt.datatransfer.ClipboardOwner;
+import j86.j86.java.awt.datatransfer.DataFlavor;
+import j86.j86.java.awt.datatransfer.FlavorListener;
+import j86.j86.java.awt.datatransfer.FlavorEvent;
+import j86.j86.java.awt.datatransfer.UnsupportedFlavorException;
 
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
+import j86.java.beans.PropertyChangeEvent;
+import j86.java.beans.PropertyChangeListener;
 
-import java.util.Iterator;
-import java.util.Set;
-import java.util.HashSet;
+import j86.java.util.Iterator;
+import j86.java.util.Set;
+import j86.java.util.HashSet;
 
-import java.io.IOException;
+import j86.java.io.IOException;
 
-import sun.awt.AppContext;
-import sun.awt.PeerEvent;
-import sun.awt.SunToolkit;
-import sun.awt.EventListenerAggregate;
+import j86.sun.awt.AppContext;
+import j86.sun.awt.PeerEvent;
+import j86.sun.awt.SunToolkit;
+import j86.sun.awt.EventListenerAggregate;
 
 
 /**
@@ -160,7 +160,7 @@ public abstract class SunClipboard extends Clipboard
 
 
     /**
-     * @see java.awt.Clipboard#getAvailableDataFlavors
+     * @see j86.java.awt.Clipboard#getAvailableDataFlavors
      * @since 1.5
      */
     public DataFlavor[] getAvailableDataFlavors() {
@@ -176,7 +176,7 @@ public abstract class SunClipboard extends Clipboard
     }
 
     /**
-     * @see java.awt.Clipboard#isDataFlavorAvailable
+     * @see j86.java.awt.Clipboard#isDataFlavorAvailable
      * @since 1.5
      */
     public boolean isDataFlavorAvailable(DataFlavor flavor) {
@@ -195,7 +195,7 @@ public abstract class SunClipboard extends Clipboard
     }
 
     /**
-     * @see java.awt.Clipboard#getData
+     * @see j86.java.awt.Clipboard#getData
      * @since 1.5
      */
     public Object getData(DataFlavor flavor)

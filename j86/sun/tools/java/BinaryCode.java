@@ -24,9 +24,9 @@
  */
 
 
-package sun.tools.java;
+package j86.sun.tools.java;
 
-import java.io.*;
+import j86.java.io.*;
 
 /**
  * WARNING: The contents of this source file are not part of any

@@ -23,16 +23,16 @@
  * questions.
  */
 
-package com.sun.jndi.ldap;
+package j86.com.sun.jndi.ldap;
 
-import javax.naming.*;
-import javax.naming.directory.*;
-import javax.naming.spi.*;
-import javax.naming.ldap.*;
+import j86.javax.naming.*;
+import j86.j86.javax.naming.directory.*;
+import j86.j86.javax.naming.spi.*;
+import j86.j86.javax.naming.ldap.*;
 
-import java.util.Hashtable;
-import java.util.StringTokenizer;
-import com.sun.jndi.toolkit.dir.SearchFilter;
+import j86.java.util.Hashtable;
+import j86.java.util.StringTokenizer;
+import j86.com.sun.jndi.toolkit.dir.SearchFilter;
 
 /**
  * A context for handling referrals.
@@ -106,7 +106,7 @@ final class LdapReferralContext implements DirContext, LdapContext {
             }
 
             // Create a Reference containing the referral URL.
-            Reference ref = new Reference("javax.naming.directory.DirContext",
+            Reference ref = new Reference("j86.j86.javax.naming.directory.DirContext",
                                           new StringRefAddr("URL", referral));
 
             Object obj;

@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.security.jca;
+package j86.sun.security.jca;
 
-import java.security.Provider;
+import j86.java.security.Provider;
 
 /**
  * Collection of methods to get and set provider list. Also includes
@@ -72,26 +72,26 @@ public class Providers {
     // interfere with other parts of the system. Therefore, we make them local
     // to the Thread executing the JAR verification code.
     //
-    // The code here is used by sun.security.util.SignatureFileVerifier.
+    // The code here is used by j86.sun.security.util.SignatureFileVerifier.
     // See there for details.
 
     private static final String BACKUP_PROVIDER_CLASSNAME =
-        "sun.security.provider.VerificationProvider";
+        "j86.sun.security.provider.VerificationProvider";
 
     // Hardcoded classnames of providers to use for JAR verification.
     // MUST NOT be on the bootclasspath and not in signed JAR files.
     private static final String[] jarVerificationProviders = {
-        "sun.security.provider.Sun",
-        "sun.security.rsa.SunRsaSign",
+        "j86.sun.security.provider.Sun",
+        "j86.sun.security.rsa.SunRsaSign",
         // Note: SunEC *is* in a signed JAR file, but it's not signed
         // by EC itself. So it's still safe to be listed here.
-        "sun.security.ec.SunEC",
+        "j86.sun.security.ec.SunEC",
         BACKUP_PROVIDER_CLASSNAME,
     };
 
     // Return to Sun provider or its backup.
     // This method should only be called by
-    // sun.security.util.ManifestEntryVerifier and java.security.SecureRandom.
+    // j86.sun.security.util.ManifestEntryVerifier and j86.java.security.SecureRandom.
     public static Provider getSunProvider() {
         try {
             Class<?> clazz = Class.forName(jarVerificationProviders[0]);

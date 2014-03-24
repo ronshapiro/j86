@@ -23,13 +23,13 @@
  * questions.
  */
 
-package com.sun.jmx.mbeanserver;
+package j86.com.sun.jmx.mbeanserver;
 
-import java.lang.ref.WeakReference;
-import java.util.WeakHashMap;
-import javax.management.Descriptor;
-import javax.management.ImmutableDescriptor;
-import javax.management.JMX;
+import j86.j86.java.lang.ref.WeakReference;
+import j86.java.util.WeakHashMap;
+import j86.javax.management.Descriptor;
+import j86.javax.management.ImmutableDescriptor;
+import j86.javax.management.JMX;
 
 public class DescriptorCache {
     private DescriptorCache() {

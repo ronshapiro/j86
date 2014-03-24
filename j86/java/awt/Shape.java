@@ -23,12 +23,12 @@
  * questions.
  */
 
-package java.awt;
+package j86.java.awt;
 
-import java.awt.geom.AffineTransform;
-import java.awt.geom.PathIterator;
-import java.awt.geom.Point2D;
-import java.awt.geom.Rectangle2D;
+import j86.j86.java.awt.geom.AffineTransform;
+import j86.j86.java.awt.geom.PathIterator;
+import j86.j86.java.awt.geom.Point2D;
+import j86.j86.java.awt.geom.Rectangle2D;
 
 /**
  * The <code>Shape</code> interface provides definitions for objects
@@ -67,10 +67,10 @@ import java.awt.geom.Rectangle2D;
  * determining if a shape contains or intersects a rectangle or if a
  * shape contains a point.
  *
- * @see java.awt.geom.PathIterator
- * @see java.awt.geom.AffineTransform
- * @see java.awt.geom.FlatteningPathIterator
- * @see java.awt.geom.GeneralPath
+ * @see j86.j86.java.awt.geom.PathIterator
+ * @see j86.j86.java.awt.geom.AffineTransform
+ * @see j86.j86.java.awt.geom.FlatteningPathIterator
+ * @see j86.j86.java.awt.geom.GeneralPath
  *
  * @author Jim Graham
  * @since 1.2
@@ -90,7 +90,7 @@ public interface Shape {
      * representation.
      *
      * <p>
-     * Note that the <a href="{@docRoot}/java/awt/Shape.html#def_insideness">
+     * Note that the <a href="{@docRoot}/j86.java.awt/Shape.html#def_insideness">
      * definition of insideness</a> can lead to situations where points
      * on the defining outline of the {@code shape} may not be considered
      * contained in the returned {@code bounds} object, but only in cases
@@ -135,7 +135,7 @@ public interface Shape {
      * store the dimensions.
      *
      * <p>
-     * Note that the <a href="{@docRoot}/java/awt/Shape.html#def_insideness">
+     * Note that the <a href="{@docRoot}/j86.java.awt/Shape.html#def_insideness">
      * definition of insideness</a> can lead to situations where points
      * on the defining outline of the {@code shape} may not be considered
      * contained in the returned {@code bounds} object, but only in cases
@@ -169,7 +169,7 @@ public interface Shape {
     /**
      * Tests if the specified coordinates are inside the boundary of the
      * <code>Shape</code>, as described by the
-     * <a href="{@docRoot}/java/awt/Shape.html#def_insideness">
+     * <a href="{@docRoot}/j86.java.awt/Shape.html#def_insideness">
      * definition of insideness</a>.
      * @param x the specified X coordinate to be tested
      * @param y the specified Y coordinate to be tested
@@ -183,7 +183,7 @@ public interface Shape {
     /**
      * Tests if a specified {@link Point2D} is inside the boundary
      * of the <code>Shape</code>, as described by the
-     * <a href="{@docRoot}/java/awt/Shape.html#def_insideness">
+     * <a href="{@docRoot}/j86.java.awt/Shape.html#def_insideness">
      * definition of insideness</a>.
      * @param p the specified <code>Point2D</code> to be tested
      * @return <code>true</code> if the specified <code>Point2D</code> is
@@ -213,7 +213,7 @@ public interface Shape {
      * This means that for some {@code Shapes} this method might
      * return {@code true} even though the rectangular area does not
      * intersect the {@code Shape}.
-     * The {@link java.awt.geom.Area Area} class performs
+     * The {@link j86.j86.java.awt.geom.Area Area} class performs
      * more accurate computations of geometric intersection than most
      * {@code Shape} objects and therefore can be used if a more precise
      * answer is required.
@@ -228,7 +228,7 @@ public interface Shape {
      *          the interior of the rectangular area intersect, or are
      *          both highly likely to intersect and intersection calculations
      *          would be too expensive to perform; <code>false</code> otherwise.
-     * @see java.awt.geom.Area
+     * @see j86.j86.java.awt.geom.Area
      * @since 1.2
      */
     public boolean intersects(double x, double y, double w, double h);
@@ -249,7 +249,7 @@ public interface Shape {
      * This means that for some {@code Shapes} this method might
      * return {@code true} even though the {@code Rectangle2D} does not
      * intersect the {@code Shape}.
-     * The {@link java.awt.geom.Area Area} class performs
+     * The {@link j86.j86.java.awt.geom.Area Area} class performs
      * more accurate computations of geometric intersection than most
      * {@code Shape} objects and therefore can be used if a more precise
      * answer is required.
@@ -285,7 +285,7 @@ public interface Shape {
      * This means that for some {@code Shapes} this method might
      * return {@code false} even though the {@code Shape} contains
      * the rectangular area.
-     * The {@link java.awt.geom.Area Area} class performs
+     * The {@link j86.j86.java.awt.geom.Area Area} class performs
      * more accurate geometric computations than most
      * {@code Shape} objects and therefore can be used if a more precise
      * answer is required.
@@ -303,7 +303,7 @@ public interface Shape {
      *          <code>intersects</code> method returns <code>true</code>
      *          and the containment calculations would be too expensive to
      *          perform.
-     * @see java.awt.geom.Area
+     * @see j86.j86.java.awt.geom.Area
      * @see #intersects
      * @since 1.2
      */
@@ -325,7 +325,7 @@ public interface Shape {
      * This means that for some {@code Shapes} this method might
      * return {@code false} even though the {@code Shape} contains
      * the {@code Rectangle2D}.
-     * The {@link java.awt.geom.Area Area} class performs
+     * The {@link j86.j86.java.awt.geom.Area Area} class performs
      * more accurate geometric computations than most
      * {@code Shape} objects and therefore can be used if a more precise
      * answer is required.

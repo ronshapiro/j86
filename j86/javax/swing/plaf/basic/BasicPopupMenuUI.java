@@ -23,34 +23,34 @@
  * questions.
  */
 
-package javax.swing.plaf.basic;
+package j86.j86.j86.javax.swing.plaf.basic;
 
-import javax.swing.*;
-import javax.swing.event.*;
-import javax.swing.plaf.*;
-import javax.swing.plaf.basic.*;
-import javax.swing.border.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.event.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.j86.javax.swing.plaf.basic.*;
+import j86.j86.javax.swing.border.*;
 
-import java.applet.Applet;
+import j86.java.applet.Applet;
 
-import java.awt.Component;
-import java.awt.Container;
-import java.awt.Dimension;
-import java.awt.KeyboardFocusManager;
-import java.awt.Window;
-import java.awt.event.*;
-import java.awt.AWTEvent;
-import java.awt.Toolkit;
+import j86.java.awt.Component;
+import j86.java.awt.Container;
+import j86.java.awt.Dimension;
+import j86.java.awt.KeyboardFocusManager;
+import j86.java.awt.Window;
+import j86.j86.java.awt.event.*;
+import j86.java.awt.AWTEvent;
+import j86.java.awt.Toolkit;
 
-import java.beans.PropertyChangeListener;
-import java.beans.PropertyChangeEvent;
+import j86.java.beans.PropertyChangeListener;
+import j86.java.beans.PropertyChangeEvent;
 
-import java.util.*;
+import j86.java.util.*;
 
-import sun.swing.DefaultLookup;
-import sun.swing.UIAction;
+import j86.sun.swing.DefaultLookup;
+import j86.sun.swing.UIAction;
 
-import sun.awt.AppContext;
+import j86.sun.awt.AppContext;
 
 /**
  * A Windows L&amp;F implementation of PopupMenuUI.  This implementation
@@ -62,9 +62,9 @@ import sun.awt.AppContext;
  */
 public class BasicPopupMenuUI extends PopupMenuUI {
     static final StringBuilder MOUSE_GRABBER_KEY = new StringBuilder(
-                   "javax.swing.plaf.basic.BasicPopupMenuUI.MouseGrabber");
+                   "j86.j86.j86.javax.swing.plaf.basic.BasicPopupMenuUI.MouseGrabber");
     static final StringBuilder MENU_KEYBOARD_HELPER_KEY = new StringBuilder(
-                   "javax.swing.plaf.basic.BasicPopupMenuUI.MenuKeyboardHelper");
+                   "j86.j86.j86.javax.swing.plaf.basic.BasicPopupMenuUI.MenuKeyboardHelper");
 
     protected JPopupMenu popupMenu = null;
     private transient PopupMenuListener popupMenuListener = null;
@@ -750,14 +750,14 @@ public class BasicPopupMenuUI extends PopupMenuUI {
         void grabWindow(MenuElement[] newPath) {
             // A grab needs to be added
             final Toolkit tk = Toolkit.getDefaultToolkit();
-            java.security.AccessController.doPrivileged(
-                new java.security.PrivilegedAction<Object>() {
+            j86.java.security.AccessController.doPrivileged(
+                new j86.java.security.PrivilegedAction<Object>() {
                     public Object run() {
                         tk.addAWTEventListener(MouseGrabber.this,
                                 AWTEvent.MOUSE_EVENT_MASK |
                                 AWTEvent.MOUSE_MOTION_EVENT_MASK |
                                 AWTEvent.MOUSE_WHEEL_EVENT_MASK |
-                                AWTEvent.WINDOW_EVENT_MASK | sun.awt.SunToolkit.GRAB_EVENT_MASK);
+                                AWTEvent.WINDOW_EVENT_MASK | j86.sun.awt.SunToolkit.GRAB_EVENT_MASK);
                         return null;
                     }
                 }
@@ -771,8 +771,8 @@ public class BasicPopupMenuUI extends PopupMenuUI {
                     (Window)invoker :
                     SwingUtilities.getWindowAncestor(invoker);
             if(grabbedWindow != null) {
-                if(tk instanceof sun.awt.SunToolkit) {
-                    ((sun.awt.SunToolkit)tk).grab(grabbedWindow);
+                if(tk instanceof j86.sun.awt.SunToolkit) {
+                    ((j86.sun.awt.SunToolkit)tk).grab(grabbedWindow);
                 } else {
                     grabbedWindow.addComponentListener(this);
                     grabbedWindow.addWindowListener(this);
@@ -783,8 +783,8 @@ public class BasicPopupMenuUI extends PopupMenuUI {
         void ungrabWindow() {
             final Toolkit tk = Toolkit.getDefaultToolkit();
             // The grab should be removed
-             java.security.AccessController.doPrivileged(
-                new java.security.PrivilegedAction<Object>() {
+             j86.java.security.AccessController.doPrivileged(
+                new j86.java.security.PrivilegedAction<Object>() {
                     public Object run() {
                         tk.removeAWTEventListener(MouseGrabber.this);
                         return null;
@@ -797,8 +797,8 @@ public class BasicPopupMenuUI extends PopupMenuUI {
         void realUngrabWindow() {
             Toolkit tk = Toolkit.getDefaultToolkit();
             if(grabbedWindow != null) {
-                if(tk instanceof sun.awt.SunToolkit) {
-                    ((sun.awt.SunToolkit)tk).ungrab(grabbedWindow);
+                if(tk instanceof j86.sun.awt.SunToolkit) {
+                    ((j86.sun.awt.SunToolkit)tk).ungrab(grabbedWindow);
                 } else {
                     grabbedWindow.removeComponentListener(this);
                     grabbedWindow.removeWindowListener(this);
@@ -823,7 +823,7 @@ public class BasicPopupMenuUI extends PopupMenuUI {
         }
 
         public void eventDispatched(AWTEvent ev) {
-            if(ev instanceof sun.awt.UngrabEvent) {
+            if(ev instanceof j86.sun.awt.UngrabEvent) {
                 // Popup should be canceled in case of ungrab event
                 cancelPopupMenu( );
                 return;

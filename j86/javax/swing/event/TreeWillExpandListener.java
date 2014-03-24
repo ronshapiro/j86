@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.swing.event;
+package j86.j86.javax.swing.event;
 
-import java.util.EventListener;
-import javax.swing.tree.ExpandVetoException;
+import j86.java.util.EventListener;
+import j86.j86.javax.swing.tree.ExpandVetoException;
 
 /**
   * The listener that's notified when a tree expands or collapses

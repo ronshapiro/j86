@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.smartcardio;
+package j86.javax.smartcardio;
 
 /**
  * Exception thrown when an application tries to establish a connection with a

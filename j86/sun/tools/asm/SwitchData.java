@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.tools.asm;
+package j86.sun.tools.asm;
 
-import sun.tools.java.*;
-import java.util.Hashtable;
-import java.util.Enumeration;
-import java.util.Arrays;
+import j86.sun.tools.java.*;
+import j86.java.util.Hashtable;
+import j86.java.util.Enumeration;
+import j86.java.util.Arrays;
 
 /**
  * WARNING: The contents of this source file are not part of any

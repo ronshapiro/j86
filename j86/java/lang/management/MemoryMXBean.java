@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.lang.management;
+package j86.j86.java.lang.management;
 
-import javax.management.openmbean.CompositeData;
+import j86.j86.javax.management.openmbean.CompositeData;
 
 /**
  * The management interface for the memory system of
@@ -43,7 +43,7 @@ import javax.management.openmbean.CompositeData;
  * the memory system within an MBeanServer is:
  * <blockquote>
  *    {@link ManagementFactory#MEMORY_MXBEAN_NAME
- *           <tt>java.lang:type=Memory</tt>}
+ *           <tt>j86.java.lang:type=Memory</tt>}
  * </blockquote>
  *
  * It can be obtained by calling the
@@ -134,8 +134,8 @@ import javax.management.openmbean.CompositeData;
  * <h3>Notifications</h3>
  *
  * <p>This <tt>MemoryMXBean</tt> is a
- * {@link javax.management.NotificationEmitter NotificationEmitter}
- * that emits two types of memory {@link javax.management.Notification
+ * {@link j86.javax.management.NotificationEmitter NotificationEmitter}
+ * that emits two types of memory {@link j86.javax.management.Notification
  * notifications} if any one of the memory pools
  * supports a <a href="MemoryPoolMXBean.html#UsageThreshold">usage threshold</a>
  * or a <a href="MemoryPoolMXBean.html#CollectionThreshold">collection usage
@@ -159,8 +159,8 @@ import javax.management.openmbean.CompositeData;
  * </ul>
  *
  * <p>
- * The notification emitted is a {@link javax.management.Notification}
- * instance whose {@link javax.management.Notification#setUserData
+ * The notification emitted is a {@link j86.javax.management.Notification}
+ * instance whose {@link j86.javax.management.Notification#setUserData
  * user data} is set to a {@link CompositeData CompositeData}
  * that represents a {@link MemoryNotificationInfo} object
  * containing information about the memory pool when the notification
@@ -172,7 +172,7 @@ import javax.management.openmbean.CompositeData;
  * <h3>NotificationEmitter</h3>
  * The <tt>MemoryMXBean</tt> object returned by
  * {@link ManagementFactory#getMemoryMXBean} implements
- * the {@link javax.management.NotificationEmitter NotificationEmitter}
+ * the {@link j86.javax.management.NotificationEmitter NotificationEmitter}
  * interface that allows a listener to be registered within the
  * <tt>MemoryMXBean</tt> as a notification listener.
  *
@@ -180,7 +180,7 @@ import javax.management.openmbean.CompositeData;
  * notification emitted by the <tt>MemoryMXBean</tt>.
  *
  * <blockquote><pre>
- * class MyListener implements javax.management.NotificationListener {
+ * class MyListener implements j86.javax.management.NotificationListener {
  *     public void handleNotification(Notification notif, Object handback) {
  *         // handle notification
  *         ....
@@ -194,7 +194,7 @@ import javax.management.openmbean.CompositeData;
  * </pre></blockquote>
  *
  * @see ManagementFactory#getPlatformMXBeans(Class)
- * @see <a href="../../../javax/management/package-summary.html">
+ * @see <a href="../../../j86.javax.management/package-summary.html">
  *      JMX Specification.</a>
  * @see <a href="package-summary.html#examples">
  *      Ways to Access MXBeans</a>
@@ -283,7 +283,7 @@ public interface MemoryMXBean extends PlatformManagedObject {
      * @param value <tt>true</tt> to enable verbose output;
      *              <tt>false</tt> to disable.
      *
-     * @exception  java.lang.SecurityException if a security manager
+     * @exception  j86.java.lang.SecurityException if a security manager
      *             exists and the caller does not have
      *             ManagementPermission("control").
      */
@@ -297,7 +297,7 @@ public interface MemoryMXBean extends PlatformManagedObject {
      * System.gc()
      * </pre></blockquote>
      *
-     * @see     java.lang.System#gc()
+     * @see     j86.java.lang.System#gc()
      */
     public void gc();
 

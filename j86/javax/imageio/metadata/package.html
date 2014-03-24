@@ -47,7 +47,7 @@ When writing an image, its metadata may be set by defining or
 modifying an <code>IIOMetadata</code> object.  Such an object may be
 obtained from an <code>ImageWriter</code> or
 <code>ImageTranscoder</code> (from the
-<code>javax.imageio</code> package).  Once such an object has
+<code>j86.javax.imageio</code> package).  Once such an object has
 been obtained, its contents may be set of modified via a
 <code>Document</code> consisting of <code>IIOMetadataNode</code>s.
 The document format may optionally be described using an
@@ -58,7 +58,7 @@ The document format may optionally be described using an
 The format of the metadata contained in the XML <code>Document</code>
 is identified by a string which appears as the root node of the tree
 of <code>IIOMetadataNode</code> objects.  This string contains a version
-number, e.g. "javax_imageio_jpeg_image_1.0".  Readers and writers may
+number, e.g. "j86.javax.imageio_jpeg_image_1.0".  Readers and writers may
 support multiple versions of the same basic format and the Image I/O
 API has methods that allow specifying which version to use by passing
 the string to the method/constructor used to obtain an <code>IIOMetadata</code>

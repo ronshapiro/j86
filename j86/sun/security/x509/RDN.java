@@ -23,13 +23,13 @@
  * questions.
  */
 
-package sun.security.x509;
+package j86.sun.security.x509;
 
-import java.io.IOException;
-import java.io.StringReader;
-import java.util.*;
+import j86.java.io.IOException;
+import j86.java.io.StringReader;
+import j86.java.util.*;
 
-import sun.security.util.*;
+import j86.sun.security.util.*;
 
 /**
  * RDNs are a set of {attribute = value} assertions.  Some of those
@@ -457,7 +457,7 @@ public class RDN {
             for (int i = 0; i < assertion.length; i++) {
                 avaList.add(assertion[i]);
             }
-            java.util.Collections.sort(avaList, AVAComparator.getInstance());
+            j86.java.util.Collections.sort(avaList, AVAComparator.getInstance());
 
             for (int i = 0; i < avaList.size(); i++) {
                 if (i > 0) {

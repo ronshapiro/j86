@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.tools.jstat;
+package j86.sun.tools.jstat;
 
-import java.util.*;
-import sun.jvmstat.monitor.MonitorException;
+import j86.java.util.*;
+import j86.sun.jvmstat.monitor.MonitorException;
 
 /**
  * A class for describing the output format specified by a command

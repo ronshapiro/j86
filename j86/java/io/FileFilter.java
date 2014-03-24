@@ -23,15 +23,15 @@
  * questions.
  */
 
-package java.io;
+package j86.java.io;
 
 
 /**
  * A filter for abstract pathnames.
  *
  * <p> Instances of this interface may be passed to the <code>{@link
- * File#listFiles(java.io.FileFilter) listFiles(FileFilter)}</code> method
- * of the <code>{@link java.io.File}</code> class.
+ * File#listFiles(j86.java.io.FileFilter) listFiles(FileFilter)}</code> method
+ * of the <code>{@link j86.java.io.File}</code> class.
  *
  * @since 1.2
  */

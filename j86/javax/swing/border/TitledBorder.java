@@ -22,22 +22,22 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.border;
+package j86.j86.javax.swing.border;
 
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.Dimension;
-import java.awt.Font;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.Insets;
-import java.awt.Rectangle;
-import java.awt.geom.Path2D;
-import java.beans.ConstructorProperties;
-import javax.swing.JComponent;
-import javax.swing.JLabel;
-import javax.swing.UIManager;
-import javax.swing.plaf.basic.BasicHTML;
+import j86.java.awt.Color;
+import j86.java.awt.Component;
+import j86.java.awt.Dimension;
+import j86.java.awt.Font;
+import j86.java.awt.Graphics;
+import j86.java.awt.Graphics2D;
+import j86.java.awt.Insets;
+import j86.java.awt.Rectangle;
+import j86.j86.java.awt.geom.Path2D;
+import j86.java.beans.ConstructorProperties;
+import j86.javax.swing.JComponent;
+import j86.javax.swing.JLabel;
+import j86.javax.swing.UIManager;
+import j86.j86.j86.javax.swing.plaf.basic.BasicHTML;
 
 /**
  * A class which implements an arbitrary border
@@ -61,8 +61,8 @@ import javax.swing.plaf.basic.BasicHTML;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @author David Kloba
  * @author Amy Fowler
@@ -559,7 +559,7 @@ public class TitledBorder extends AbstractBorder
      *
      * @throws NullPointerException {@inheritDoc}
      * @throws IllegalArgumentException {@inheritDoc}
-     * @see javax.swing.JComponent#getBaseline(int, int)
+     * @see j86.javax.swing.JComponent#getBaseline(int, int)
      * @since 1.6
      */
     public int getBaseline(Component c, int width, int height) {
@@ -610,7 +610,7 @@ public class TitledBorder extends AbstractBorder
      * changes as the size changes.
      *
      * @throws NullPointerException {@inheritDoc}
-     * @see javax.swing.JComponent#getBaseline(int, int)
+     * @see j86.javax.swing.JComponent#getBaseline(int, int)
      * @since 1.6
      */
     public Component.BaselineResizeBehavior getBaselineResizeBehavior(

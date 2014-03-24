@@ -56,19 +56,19 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-package jdk.internal.org.objectweb.asm.tree;
+package j86.j86.jdk.internal.org.objectweb.asm.tree;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import j86.java.util.ArrayList;
+import j86.java.util.Arrays;
+import j86.java.util.List;
 
-import jdk.internal.org.objectweb.asm.AnnotationVisitor;
-import jdk.internal.org.objectweb.asm.Attribute;
-import jdk.internal.org.objectweb.asm.ClassVisitor;
-import jdk.internal.org.objectweb.asm.FieldVisitor;
-import jdk.internal.org.objectweb.asm.MethodVisitor;
-import jdk.internal.org.objectweb.asm.Opcodes;
-import jdk.internal.org.objectweb.asm.TypePath;
+import j86.jdk.internal.org.objectweb.asm.AnnotationVisitor;
+import j86.jdk.internal.org.objectweb.asm.Attribute;
+import j86.jdk.internal.org.objectweb.asm.ClassVisitor;
+import j86.jdk.internal.org.objectweb.asm.FieldVisitor;
+import j86.jdk.internal.org.objectweb.asm.MethodVisitor;
+import j86.jdk.internal.org.objectweb.asm.Opcodes;
+import j86.jdk.internal.org.objectweb.asm.TypePath;
 
 /**
  * A node that represents a class.
@@ -83,14 +83,14 @@ public class ClassNode extends ClassVisitor {
     public int version;
 
     /**
-     * The class's access flags (see {@link jdk.internal.org.objectweb.asm.Opcodes}). This
+     * The class's access flags (see {@link j86.jdk.internal.org.objectweb.asm.Opcodes}). This
      * field also indicates if the class is deprecated.
      */
     public int access;
 
     /**
      * The internal name of the class (see
-     * {@link jdk.internal.org.objectweb.asm.Type#getInternalName() getInternalName}).
+     * {@link j86.jdk.internal.org.objectweb.asm.Type#getInternalName() getInternalName}).
      */
     public String name;
 
@@ -101,7 +101,7 @@ public class ClassNode extends ClassVisitor {
 
     /**
      * The internal of name of the super class (see
-     * {@link jdk.internal.org.objectweb.asm.Type#getInternalName() getInternalName}). For
+     * {@link j86.jdk.internal.org.objectweb.asm.Type#getInternalName() getInternalName}). For
      * interfaces, the super class is {@link Object}. May be <tt>null</tt>, but
      * only for the {@link Object} class.
      */
@@ -109,7 +109,7 @@ public class ClassNode extends ClassVisitor {
 
     /**
      * The internal names of the class's interfaces (see
-     * {@link jdk.internal.org.objectweb.asm.Type#getInternalName() getInternalName}). This
+     * {@link j86.jdk.internal.org.objectweb.asm.Type#getInternalName() getInternalName}). This
      * list is a list of {@link String} objects.
      */
     public List<String> interfaces;
@@ -148,7 +148,7 @@ public class ClassNode extends ClassVisitor {
      * The runtime visible annotations of this class. This list is a list of
      * {@link AnnotationNode} objects. May be <tt>null</tt>.
      *
-     * @associates jdk.internal.org.objectweb.asm.tree.AnnotationNode
+     * @associates j86.j86.jdk.internal.org.objectweb.asm.tree.AnnotationNode
      * @label visible
      */
     public List<AnnotationNode> visibleAnnotations;
@@ -157,7 +157,7 @@ public class ClassNode extends ClassVisitor {
      * The runtime invisible annotations of this class. This list is a list of
      * {@link AnnotationNode} objects. May be <tt>null</tt>.
      *
-     * @associates jdk.internal.org.objectweb.asm.tree.AnnotationNode
+     * @associates j86.j86.jdk.internal.org.objectweb.asm.tree.AnnotationNode
      * @label invisible
      */
     public List<AnnotationNode> invisibleAnnotations;
@@ -166,7 +166,7 @@ public class ClassNode extends ClassVisitor {
      * The runtime visible type annotations of this class. This list is a list
      * of {@link TypeAnnotationNode} objects. May be <tt>null</tt>.
      *
-     * @associates jdk.internal.org.objectweb.asm.tree.TypeAnnotationNode
+     * @associates j86.j86.jdk.internal.org.objectweb.asm.tree.TypeAnnotationNode
      * @label visible
      */
     public List<TypeAnnotationNode> visibleTypeAnnotations;
@@ -175,7 +175,7 @@ public class ClassNode extends ClassVisitor {
      * The runtime invisible type annotations of this class. This list is a list
      * of {@link TypeAnnotationNode} objects. May be <tt>null</tt>.
      *
-     * @associates jdk.internal.org.objectweb.asm.tree.TypeAnnotationNode
+     * @associates j86.j86.jdk.internal.org.objectweb.asm.tree.TypeAnnotationNode
      * @label invisible
      */
     public List<TypeAnnotationNode> invisibleTypeAnnotations;
@@ -184,7 +184,7 @@ public class ClassNode extends ClassVisitor {
      * The non standard attributes of this class. This list is a list of
      * {@link Attribute} objects. May be <tt>null</tt>.
      *
-     * @associates jdk.internal.org.objectweb.asm.Attribute
+     * @associates j86.jdk.internal.org.objectweb.asm.Attribute
      */
     public List<Attribute> attrs;
 
@@ -192,7 +192,7 @@ public class ClassNode extends ClassVisitor {
      * Informations about the inner classes of this class. This list is a list
      * of {@link InnerClassNode} objects.
      *
-     * @associates jdk.internal.org.objectweb.asm.tree.InnerClassNode
+     * @associates j86.j86.jdk.internal.org.objectweb.asm.tree.InnerClassNode
      */
     public List<InnerClassNode> innerClasses;
 
@@ -200,7 +200,7 @@ public class ClassNode extends ClassVisitor {
      * The fields of this class. This list is a list of {@link FieldNode}
      * objects.
      *
-     * @associates jdk.internal.org.objectweb.asm.tree.FieldNode
+     * @associates j86.j86.jdk.internal.org.objectweb.asm.tree.FieldNode
      */
     public List<FieldNode> fields;
 
@@ -208,7 +208,7 @@ public class ClassNode extends ClassVisitor {
      * The methods of this class. This list is a list of {@link MethodNode}
      * objects.
      *
-     * @associates jdk.internal.org.objectweb.asm.tree.MethodNode
+     * @associates j86.j86.jdk.internal.org.objectweb.asm.tree.MethodNode
      */
     public List<MethodNode> methods;
 

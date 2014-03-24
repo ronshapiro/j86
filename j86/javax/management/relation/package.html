@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>javax.management.relation package</title>
+<title>j86.j86.javax.management.relation package</title>
 <!--
 Copyright (c) 2000, 2011, Oracle and/or its affiliates. All rights reserved.
 DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
@@ -31,7 +31,7 @@ questions.
 	Relation Service is used to record relationships between
 	MBeans in an MBean Server.  The Relation Service is itself an
 	MBean.  More than one instance of a {@link
-	javax.management.relation.RelationService RelationService}
+	j86.j86.javax.management.relation.RelationService RelationService}
 	MBean can be registered in an MBean Server.</p>
 
       <p>A <em>relation type</em> defines a relationship between MBeans.
@@ -41,7 +41,7 @@ questions.
 
       <p>A <em>relation</em> is a named instance of a relation type,
 	where specific MBeans appear in the roles, represented by
-	their {@link javax.management.ObjectName ObjectName}s.</p>
+	their {@link j86.javax.management.ObjectName ObjectName}s.</p>
 
       <p>For example, suppose there are <code>Module</code> MBeans,
 	representing modules within an application.  A
@@ -71,31 +71,31 @@ questions.
 	<code>dependedOn</code> module.</p>
 
       <p>A relation type can be created explicitly, as an object
-	implementing the {@link javax.management.relation.RelationType
+	implementing the {@link j86.j86.javax.management.relation.RelationType
 	RelationType} interface, typically a {@link
-	javax.management.relation.RelationTypeSupport
+	j86.j86.javax.management.relation.RelationTypeSupport
 	RelationTypeSupport}.  Alternatively, it can be created
 	implicitly using the Relation Service's {@link
-	javax.management.relation.RelationServiceMBean#createRelationType(String,
+	j86.j86.javax.management.relation.RelationServiceMBean#createRelationType(String,
 	RoleInfo[]) createRelationType} method.</p>
 
       <p>A relation instance can be created explicitly, as an object
-	implementing the {@link javax.management.relation.Relation
+	implementing the {@link j86.j86.javax.management.relation.Relation
 	Relation} interface, typically a {@link
-	javax.management.relation.RelationSupport RelationSupport}.
+	j86.j86.javax.management.relation.RelationSupport RelationSupport}.
 	(A <code>RelationSupport</code> is itself a valid MBean, so it
 	can be registered in the MBean Server, though this is not
 	required.)  Alternatively, a relation instance can be created
 	implicitly using the Relation Service's {@link
-	javax.management.relation.RelationServiceMBean#createRelation(String,
+	j86.j86.javax.management.relation.RelationServiceMBean#createRelation(String,
 	String, RoleList) createRelation} method.</p>
 
       <p>The <code>DependsOn</code> example might be coded as follows.</p>
 
 <pre>
-import java.util.*;
-import javax.management.*;
-import javax.management.relation.*;
+import j86.java.util.*;
+import j86.javax.management.*;
+import j86.j86.javax.management.relation.*;
 
 // ...
 MBeanServer mbs = ...;

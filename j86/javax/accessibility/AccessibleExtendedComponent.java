@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.accessibility;
+package j86.javax.accessibility;
 
 /**
  * The AccessibleExtendedComponent interface should be supported by any object

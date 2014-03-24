@@ -23,10 +23,10 @@
  * questions.
  */
 
-package com.sun.management;
+package com.j86.sun.management;
 
-import java.util.List;
-import java.lang.management.PlatformManagedObject;
+import j86.java.util.List;
+import j86.j86.java.lang.management.PlatformManagedObject;
 
 /**
  * Diagnostic management interface for the HotSpot Virtual Machine.
@@ -37,7 +37,7 @@ import java.lang.management.PlatformManagedObject;
  * <p>The <tt>ObjectName</tt> for uniquely identifying the diagnostic
  * MXBean within an MBeanServer is:
  * <blockquote>
- *    <tt>com.sun.management:type=HotSpotDiagnostic</tt>
+ *    <tt>com.j86.sun.management:type=HotSpotDiagnostic</tt>
  * </blockquote>
 .*
  * It can be obtained by calling the
@@ -69,11 +69,11 @@ public interface HotSpotDiagnosticMXBean extends PlatformManagedObject {
      * @throws NullPointerException if <tt>outputFile</tt> is <tt>null</tt>.
      * @throws SecurityException
      *         If a security manager exists and its {@link
-     *         java.lang.SecurityManager#checkWrite(java.lang.String)}
+     *         j86.java.lang.SecurityManager#checkWrite(java.lang.String)}
      *         method denies write access to the named file
      *         or the caller does not have ManagmentPermission("control").
      */
-    public void dumpHeap(String outputFile, boolean live) throws java.io.IOException;
+    public void dumpHeap(String outputFile, boolean live) throws j86.java.io.IOException;
 
     /**
      * Returns a list of <tt>VMOption</tt> objects for all diagnostic options.
@@ -83,7 +83,7 @@ public interface HotSpotDiagnosticMXBean extends PlatformManagedObject {
      *
      * @return a list of <tt>VMOption</tt> objects for all diagnostic options.
      */
-    public java.util.List<VMOption> getDiagnosticOptions();
+    public j86.java.util.List<VMOption> getDiagnosticOptions();
 
     /**
      * Returns a <tt>VMOption</tt> object for a VM option of the given
@@ -112,7 +112,7 @@ public interface HotSpotDiagnosticMXBean extends PlatformManagedObject {
      * @throws IllegalArgumentException if the VM option is not writeable.
      * @throws NullPointerException if name or value is <tt>null</tt>.
      *
-     * @throws  java.lang.SecurityException
+     * @throws  j86.java.lang.SecurityException
      *     if a security manager exists and the caller does not have
      *     ManagementPermission("control").
      */

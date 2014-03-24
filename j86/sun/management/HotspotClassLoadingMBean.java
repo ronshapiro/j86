@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.management;
+package j86.sun.management;
 
-import java.lang.management.ClassLoadingMXBean;
-import sun.management.counter.Counter;
+import j86.j86.java.lang.management.ClassLoadingMXBean;
+import j86.j86.sun.management.counter.Counter;
 
 /**
  * Hotspot internal management interface for the class loading system.
@@ -103,6 +103,6 @@ public interface HotspotClassLoadingMBean {
      * @return a list of internal counters maintained in the VM
      * for the class loading system.
      */
-    public java.util.List<Counter> getInternalClassLoadingCounters();
+    public j86.java.util.List<Counter> getInternalClassLoadingCounters();
 
 }

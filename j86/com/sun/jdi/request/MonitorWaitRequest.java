@@ -23,23 +23,23 @@
  * questions.
  */
 
-package com.sun.jdi.request;
+package j86.j86.com.sun.jdi.request;
 
-import com.sun.jdi.*;
+import j86.com.sun.jdi.*;
 
 /**
  * Request for notification when a thread in the target VM is about to
  * wait on a monitor object. That is, a thread is entering Object.wait().
  * When an enabled MonitorWaitRequest is satisfied, an
- * {@link com.sun.jdi.event.EventSet event set} containing a
- * {@link com.sun.jdi.event.MonitorWaitEvent MonitorWaitEvent}
+ * {@link j86.j86.com.sun.jdi.event.EventSet event set} containing a
+ * {@link j86.j86.com.sun.jdi.event.MonitorWaitEvent MonitorWaitEvent}
  * will be placed on the
- * {@link com.sun.jdi.event.EventQueue EventQueue}.
+ * {@link j86.j86.com.sun.jdi.event.EventQueue EventQueue}.
  * The collection of existing MonitorWaitEvents is
  * managed by the {@link EventRequestManager}
  *
- * @see com.sun.jdi.event.MonitorWaitEvent
- * @see com.sun.jdi.event.EventQueue
+ * @see j86.j86.com.sun.jdi.event.MonitorWaitEvent
+ * @see j86.j86.com.sun.jdi.event.EventQueue
  * @see EventRequestManager
  *
  * @author Swamy Venkataramanappa
@@ -105,7 +105,7 @@ public interface MonitorWaitRequest extends EventRequest {
      * to determine if the operation is supported.
      * @param instance the object which must be the current instance
      * in order to pass this filter.
-     * @throws java.lang.UnsupportedOperationException if
+     * @throws j86.java.lang.UnsupportedOperationException if
      * the target virtual machine does not support this
      * operation.
      * @throws InvalidRequestStateException if this request is currently

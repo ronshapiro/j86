@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.crypto.spec;
+package j86.j86.javax.crypto.spec;
 
-import java.security.spec.KeySpec;
-import javax.crypto.SecretKey;
+import j86.j86.java.security.spec.KeySpec;
+import j86.javax.crypto.SecretKey;
 
 /**
  * This class specifies a secret key in a provider-independent fashion.
@@ -41,8 +41,8 @@ import javax.crypto.SecretKey;
  *
  * @author Jan Luehe
  *
- * @see javax.crypto.SecretKey
- * @see javax.crypto.SecretKeyFactory
+ * @see j86.javax.crypto.SecretKey
+ * @see j86.javax.crypto.SecretKeyFactory
  * @since 1.4
  */
 public class SecretKeySpec implements KeySpec, SecretKey {
@@ -226,6 +226,6 @@ public class SecretKeySpec implements KeySpec, SecretKey {
 
         byte[] thatKey = ((SecretKey)obj).getEncoded();
 
-        return java.util.Arrays.equals(this.key, thatKey);
+        return j86.java.util.Arrays.equals(this.key, thatKey);
     }
 }

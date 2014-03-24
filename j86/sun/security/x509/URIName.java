@@ -23,13 +23,13 @@
  * questions.
  */
 
-package sun.security.x509;
+package j86.sun.security.x509;
 
-import java.io.IOException;
-import java.net.URI;
-import java.net.URISyntaxException;
+import j86.java.io.IOException;
+import j86.java.net.URI;
+import j86.java.net.URISyntaxException;
 
-import sun.security.util.*;
+import j86.sun.security.util.*;
 
 /**
  * This class implements the URIName as required by the GeneralNames
@@ -230,7 +230,7 @@ public class URIName implements GeneralNameInterface {
     }
 
     /**
-     * Returns the URIName as a java.net.URI object
+     * Returns the URIName as a j86.java.net.URI object
      */
     public URI getURI() {
         return uri;

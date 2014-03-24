@@ -23,14 +23,14 @@
  * questions.
  */
 
-package javax.security.auth;
+package j86.javax.security.auth;
 
-import java.util.*;
-import java.text.MessageFormat;
-import java.security.Permission;
-import java.security.PermissionCollection;
-import java.security.Principal;
-import sun.security.util.ResourcesMgr;
+import j86.java.util.*;
+import j86.java.text.MessageFormat;
+import j86.java.security.Permission;
+import j86.java.security.PermissionCollection;
+import j86.java.security.Principal;
+import j86.sun.security.util.ResourcesMgr;
 
 /**
  * This class is used to protect access to private Credentials
@@ -57,7 +57,7 @@ import sun.security.util.ResourcesMgr;
  * <pre>
  *
  *    grant {
- *      permission javax.security.auth.PrivateCredentialPermission
+ *      permission j86.javax.security.auth.PrivateCredentialPermission
  *              "com.sun.PrivateCredential com.sun.Principal \"duke\"",
  *              "read";
  *    };
@@ -75,7 +75,7 @@ import sun.security.util.ResourcesMgr;
  *
  * <pre>
  *    grant {
- *      permission javax.security.auth.PrivateCredentialPermission
+ *      permission j86.javax.security.auth.PrivateCredentialPermission
  *              "a.b.Credential a.b.Principal "*"",
  *              "read";
  *    };
@@ -89,7 +89,7 @@ import sun.security.util.ResourcesMgr;
  *
  * <pre>
  *    grant {
- *      permission javax.security.auth.PrivateCredentialPermission
+ *      permission j86.javax.security.auth.PrivateCredentialPermission
  *              "a.b.Credential a.b.Principal "duke" c.d.Principal "dukette"",
  *              "read";
  *    };
@@ -487,8 +487,8 @@ public final class PrivateCredentialPermission extends Permission {
     /**
      * Reads this object from a stream (i.e., deserializes it)
      */
-    private void readObject(java.io.ObjectInputStream s) throws
-                                        java.io.IOException,
+    private void readObject(j86.java.io.ObjectInputStream s) throws
+                                        j86.java.io.IOException,
                                         ClassNotFoundException {
 
         s.defaultReadObject();
@@ -511,7 +511,7 @@ public final class PrivateCredentialPermission extends Permission {
     /**
      * @serial include
      */
-    static class CredOwner implements java.io.Serializable {
+    static class CredOwner implements j86.java.io.Serializable {
 
         private static final long serialVersionUID = -5607449830436408266L;
 

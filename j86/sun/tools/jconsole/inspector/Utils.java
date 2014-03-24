@@ -23,18 +23,18 @@
  * questions.
  */
 
-package sun.tools.jconsole.inspector;
+package j86.j86.sun.tools.jconsole.inspector;
 
-import java.awt.event.*;
-import java.lang.reflect.*;
-import java.math.BigDecimal;
-import java.math.BigInteger;
-import java.util.*;
-import java.util.concurrent.ExecutionException;
-import javax.management.*;
-import javax.management.openmbean.*;
-import javax.swing.*;
-import javax.swing.text.*;
+import j86.j86.java.awt.event.*;
+import j86.j86.j86.java.lang.reflect.*;
+import j86.java.math.BigDecimal;
+import j86.java.math.BigInteger;
+import j86.java.util.*;
+import j86.j86.java.util.concurrent.ExecutionException;
+import j86.javax.management.*;
+import j86.j86.javax.management.openmbean.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.text.*;
 
 public class Utils {
 
@@ -334,7 +334,7 @@ public class Utils {
     /**
      * This method attempts to create an object of the given "type"
      * using the "value" parameter.
-     * e.g. calling createObjectFromString("java.lang.Integer", "10")
+     * e.g. calling createObjectFromString("j86.java.lang.Integer", "10")
      * will return an Integer object initialized to 10.
      */
     public static Object createObjectFromString(String type, String value)

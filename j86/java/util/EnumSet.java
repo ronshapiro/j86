@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.util;
+package j86.java.util;
 
-import sun.misc.SharedSecrets;
+import j86.sun.misc.SharedSecrets;
 
 /**
  * A specialized {@link Set} implementation for use with enum types.  All of
@@ -78,7 +78,7 @@ import sun.misc.SharedSecrets;
  * @serial exclude
  */
 public abstract class EnumSet<E extends Enum<E>> extends AbstractSet<E>
-    implements Cloneable, java.io.Serializable
+    implements Cloneable, j86.java.io.Serializable
 {
     /**
      * The class of all the elements of this set.
@@ -417,7 +417,7 @@ public abstract class EnumSet<E extends Enum<E>> extends AbstractSet<E>
      * @serial include
      */
     private static class SerializationProxy <E extends Enum<E>>
-        implements java.io.Serializable
+        implements j86.java.io.Serializable
     {
         /**
          * The element type of this enum set.
@@ -457,8 +457,8 @@ public abstract class EnumSet<E extends Enum<E>> extends AbstractSet<E>
 
     // readObject method for the serialization proxy pattern
     // See Effective Java, Second Ed., Item 78.
-    private void readObject(java.io.ObjectInputStream stream)
-        throws java.io.InvalidObjectException {
-        throw new java.io.InvalidObjectException("Proxy required");
+    private void readObject(j86.java.io.ObjectInputStream stream)
+        throws j86.java.io.InvalidObjectException {
+        throw new j86.java.io.InvalidObjectException("Proxy required");
     }
 }

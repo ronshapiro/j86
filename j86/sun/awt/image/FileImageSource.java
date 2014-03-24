@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.awt.image;
+package j86.j86.j86.sun.awt.image;
 
-import java.io.InputStream;
-import java.io.FileInputStream;
-import java.io.BufferedInputStream;
-import java.io.FileNotFoundException;
+import j86.java.io.InputStream;
+import j86.java.io.FileInputStream;
+import j86.java.io.BufferedInputStream;
+import j86.java.io.FileNotFoundException;
 
 public class FileImageSource extends InputStreamImageSource {
     String imagefile;

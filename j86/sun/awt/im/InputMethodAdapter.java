@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.awt.im;
+package j86.j86.sun.awt.im;
 
-import java.awt.Component;
-import java.awt.Rectangle;
-import java.awt.im.spi.InputMethod;
+import j86.java.awt.Component;
+import j86.java.awt.Rectangle;
+import j86.j86.j86.java.awt.im.spi.InputMethod;
 
 /**
  * An input method adapter interfaces with the native input methods

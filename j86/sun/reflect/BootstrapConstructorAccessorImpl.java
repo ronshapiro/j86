@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.reflect;
+package j86.sun.reflect;
 
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Constructor;
+import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.j86.j86.java.lang.reflect.Constructor;
 
 /** Uses Unsafe.allocateObject() to instantiate classes; only used for
     bootstrapping. */

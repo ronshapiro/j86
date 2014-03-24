@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.management;
+package j86.javax.management;
 
 
 /**
@@ -32,7 +32,7 @@ package javax.management;
  *
  * @since 1.5
  */
-public class JMException extends java.lang.Exception   {
+public class JMException extends j86.java.lang.Exception   {
 
     /* Serial version */
     private static final long serialVersionUID = 350520924977331825L;

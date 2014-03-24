@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.management.remote.rmi;
+package j86.j86.j86.javax.management.remote.rmi;
 
-import java.security.ProtectionDomain;
+import j86.java.security.ProtectionDomain;
 
 /**
     <p>A class loader that only knows how to define a limited number
@@ -40,7 +40,7 @@ import java.security.ProtectionDomain;
     want.  However, before consulting the context class loader, it
     looks up the call stack for a class with a non-null class loader,
     and uses that if it finds one.  So, in the standalone version of
-    javax.management.remote, if the class you're looking for is known
+    j86.j86.javax.management.remote, if the class you're looking for is known
     to the loader of jmxremote.jar (typically the system class loader)
     then that loader will load it.  This contradicts the class-loading
     semantics required.
@@ -229,9 +229,9 @@ insert-buffer'd into a Java program."
 Alternatively, the following class reads a class file and outputs a string
 that can be used by the stringToBytes method above.
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
+import j86.java.io.File;
+import j86.java.io.FileInputStream;
+import j86.java.io.IOException;
 
 public class BytesToString {
 

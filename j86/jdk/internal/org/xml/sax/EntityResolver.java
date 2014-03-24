@@ -28,9 +28,9 @@
 // No warranty; no copyright -- use this as you will.
 // $Id: EntityResolver.java,v 1.2 2004/11/03 22:44:52 jsuttor Exp $
 
-package jdk.internal.org.xml.sax;
+package j86.jdk.internal.org.xml.sax;
 
-import java.io.IOException;
+import j86.java.io.IOException;
 
 
 /**
@@ -129,7 +129,7 @@ public interface EntityResolver {
      *         URI connection to the system identifier.
      * @exception org.xml.sax.SAXException Any SAX exception, possibly
      *            wrapping another exception.
-     * @exception java.io.IOException A Java-specific IO exception,
+     * @exception j86.java.io.IOException A Java-specific IO exception,
      *            possibly the result of creating a new InputStream
      *            or Reader for the InputSource.
      * @see org.xml.sax.InputSource

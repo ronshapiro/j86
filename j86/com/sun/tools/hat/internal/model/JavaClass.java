@@ -30,12 +30,12 @@
  * at JavaSoft/Sun.
  */
 
-package com.sun.tools.hat.internal.model;
+package j86.j86.com.sun.tools.hat.internal.model;
 
-import java.util.Vector;
-import java.util.Enumeration;
-import com.sun.tools.hat.internal.util.CompositeEnumeration;
-import com.sun.tools.hat.internal.parser.ReadBuffer;
+import j86.java.util.Vector;
+import j86.java.util.Enumeration;
+import j86.j86.com.sun.tools.hat.internal.util.CompositeEnumeration;
+import j86.j86.com.sun.tools.hat.internal.parser.ReadBuffer;
 
 /**
  *
@@ -141,7 +141,7 @@ public class JavaClass extends JavaHeapObject {
      */
     public void resolveSuperclass(Snapshot snapshot) {
         if (superclass == null) {
-            // We must be java.lang.Object, so we have no superclass.
+            // We must be j86.java.lang.Object, so we have no superclass.
         } else {
             totalNumFields = fields.length;
             superclass = superclass.dereference(snapshot, null);

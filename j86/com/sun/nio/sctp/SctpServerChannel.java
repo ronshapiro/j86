@@ -22,15 +22,15 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.nio.sctp;
+package j86.com.j86.sun.nio.sctp;
 
-import java.net.SocketAddress;
-import java.net.InetAddress;
-import java.io.IOException;
-import java.util.Set;
-import java.nio.channels.SelectionKey;
-import java.nio.channels.spi.SelectorProvider;
-import java.nio.channels.spi.AbstractSelectableChannel;
+import j86.java.net.SocketAddress;
+import j86.java.net.InetAddress;
+import j86.java.io.IOException;
+import j86.java.util.Set;
+import j86.j86.java.nio.channels.SelectionKey;
+import j86.j86.j86.java.nio.channels.spi.SelectorProvider;
+import j86.j86.j86.java.nio.channels.spi.AbstractSelectableChannel;
 
 /**
  * A selectable channel for message-oriented listening SCTP sockets.
@@ -39,9 +39,9 @@ import java.nio.channels.spi.AbstractSelectableChannel;
  * {@link #open open} method of this class. A newly-created SCTP server
  * channel is open but not yet bound. An attempt to invoke the
  * {@link #accept accept} method of an unbound channel will cause the
- * {@link java.nio.channels.NotYetBoundException} to be thrown. An SCTP server
+ * {@link j86.j86.java.nio.channels.NotYetBoundException} to be thrown. An SCTP server
  * channel can be bound by invoking one of the
- * {@link #bind(java.net.SocketAddress,int) bind} methods defined by this class.
+ * {@link #bind(j86.java.net.SocketAddress,int) bind} methods defined by this class.
  *
  * <p> Socket options are configured using the
  * {@link #setOption(SctpSocketOption,Object) setOption} method. SCTP server socket
@@ -99,7 +99,7 @@ public abstract class SctpServerChannel
      */
     public static SctpServerChannel open() throws
         IOException {
-        return new sun.nio.ch.sctp.SctpServerChannelImpl((SelectorProvider)null);
+        return new j86.j86.j86.j86.sun.nio.ch.sctp.SctpServerChannelImpl((SelectorProvider)null);
     }
 
     /**
@@ -116,26 +116,26 @@ public abstract class SctpServerChannel
      * <P> If a security manager has been installed then for each new
      * association this method verifies that the address and port number of the
      * assocaitions's remote peer are permitted by the security manager's {@link
-     * java.lang.SecurityManager#checkAccept(String,int) checkAccept} method.
+     * j86.java.lang.SecurityManager#checkAccept(String,int) checkAccept} method.
      *
      * @return  The SCTP channel for the new association, or {@code null}
      *          if this channel is in non-blocking mode and no association is
      *          available to be accepted
      *
-     * @throws  java.nio.channels.ClosedChannelException
+     * @throws  j86.j86.java.nio.channels.ClosedChannelException
      *          If this channel is closed
      *
-     * @throws  java.nio.channels.AsynchronousCloseException
+     * @throws  j86.j86.java.nio.channels.AsynchronousCloseException
      *          If another thread closes this channel
      *          while the accept operation is in progress
      *
-     * @throws  java.nio.channels.ClosedByInterruptException
+     * @throws  j86.j86.java.nio.channels.ClosedByInterruptException
      *          If another thread interrupts the current thread
      *          while the accept operation is in progress, thereby
      *          closing the channel and setting the current thread's
      *          interrupt status
      *
-     * @throws  java.nio.channels.NotYetBoundException
+     * @throws  j86.j86.java.nio.channels.NotYetBoundException
      *          If this channel's socket has not yet been bound
      *
      * @throws  SecurityException
@@ -163,18 +163,18 @@ public abstract class SctpServerChannel
      *
      * @return  This channel
      *
-     * @throws  java.nio.channels.ClosedChannelException
+     * @throws  j86.j86.java.nio.channels.ClosedChannelException
      *          If this channel is closed
      *
-     * @throws  java.nio.channels.AlreadyBoundException
+     * @throws  j86.j86.java.nio.channels.AlreadyBoundException
      *          If this channel is already bound
      *
-     * @throws  java.nio.channels.UnsupportedAddressTypeException
+     * @throws  j86.j86.java.nio.channels.UnsupportedAddressTypeException
      *          If the type of the given address is not supported
      *
      * @throws  SecurityException
      *          If a security manager has been installed and its {@link
-     *          java.lang.SecurityManager#checkListen(int) checkListen} method
+     *          j86.java.lang.SecurityManager#checkListen(int) checkListen} method
      *          denies the operation
      *
      * @throws  IOException
@@ -218,18 +218,18 @@ public abstract class SctpServerChannel
      *
      * @return  This channel
      *
-     * @throws  java.nio.channels.ClosedChannelException
+     * @throws  j86.j86.java.nio.channels.ClosedChannelException
      *          If this channel is closed
      *
-     * @throws  java.nio.channels.AlreadyBoundException
+     * @throws  j86.j86.java.nio.channels.AlreadyBoundException
      *          If this channel is already bound
      *
-     * @throws  java.nio.channels.UnsupportedAddressTypeException
+     * @throws  j86.j86.java.nio.channels.UnsupportedAddressTypeException
      *          If the type of the given address is not supported
      *
      * @throws  SecurityException
      *          If a security manager has been installed and its {@link
-     *          java.lang.SecurityManager#checkListen(int) checkListen} method
+     *          j86.java.lang.SecurityManager#checkListen(int) checkListen} method
      *          denies the operation
      *
      * @throws  IOException
@@ -244,10 +244,10 @@ public abstract class SctpServerChannel
      * socket.
      *
      * <P> The given address must not be the {@link
-     * java.net.InetAddress#isAnyLocalAddress wildcard} address.
+     * j86.java.net.InetAddress#isAnyLocalAddress wildcard} address.
      * The channel must be first bound using {@link #bind bind} before
      * invoking this method, otherwise {@link
-     * java.nio.channels.NotYetBoundException} is thrown. The {@link #bind bind}
+     * j86.j86.java.nio.channels.NotYetBoundException} is thrown. The {@link #bind bind}
      * method takes a {@code SocketAddress} as its argument which typically
      * contains a port number as well as an address. Addresses subquently bound
      * using this method are simply addresses as the SCTP port number remains
@@ -261,18 +261,18 @@ public abstract class SctpServerChannel
      *
      * @return  This channel
      *
-     * @throws  java.nio.channels.ClosedChannelException
+     * @throws  j86.j86.java.nio.channels.ClosedChannelException
      *          If this channel is closed
      *
-     * @throws  java.nio.channels.NotYetBoundException
+     * @throws  j86.j86.java.nio.channels.NotYetBoundException
      *          If this channel is not yet bound
      *
-     * @throws  java.nio.channels.AlreadyBoundException
+     * @throws  j86.j86.java.nio.channels.AlreadyBoundException
      *          If this channel is already bound to the given address
      *
      * @throws  IllegalArgumentException
      *          If address is {@code null} or the {@link
-     *          java.net.InetAddress#isAnyLocalAddress wildcard} address
+     *          j86.java.net.InetAddress#isAnyLocalAddress wildcard} address
      *
      * @throws  IOException
      *          If some other I/O error occurs
@@ -285,10 +285,10 @@ public abstract class SctpServerChannel
      * socket.
      *
      * <P> The given address must not be the {@link
-     * java.net.InetAddress#isAnyLocalAddress wildcard} address.
+     * j86.java.net.InetAddress#isAnyLocalAddress wildcard} address.
      * The channel must be first bound using {@link #bind bind} before
      * invoking this method, otherwise
-     * {@link java.nio.channels.NotYetBoundException} is thrown.
+     * {@link j86.j86.java.nio.channels.NotYetBoundException} is thrown.
      * If this method is invoked on a channel that does not have
      * {@code address} as one of its bound addresses, or that has only one
      * local address bound to it, then this method throws {@link
@@ -305,15 +305,15 @@ public abstract class SctpServerChannel
      *
      * @return  This channel
      *
-     * @throws  java.nio.channels.ClosedChannelException
+     * @throws  j86.j86.java.nio.channels.ClosedChannelException
      *          If this channel is closed
      *
-     * @throws  java.nio.channels.NotYetBoundException
+     * @throws  j86.j86.java.nio.channels.NotYetBoundException
      *          If this channel is not yet bound
      *
      * @throws  IllegalArgumentException
      *          If address is {@code null} or the {@link
-     *          java.net.InetAddress#isAnyLocalAddress wildcard} address
+     *          j86.java.net.InetAddress#isAnyLocalAddress wildcard} address
      *
      * @throws  IllegalUnbindException
      *          If the implementation does not support removing addresses from a
@@ -334,7 +334,7 @@ public abstract class SctpServerChannel
      *          bound to, or an empty {@code Set} if the channel's socket is not
      *          bound
      *
-     * @throws  java.nio.channels.ClosedChannelException
+     * @throws  j86.j86.java.nio.channels.ClosedChannelException
      *          If the channel is closed
      *
      * @throws  IOException
@@ -358,7 +358,7 @@ public abstract class SctpServerChannel
      * @throws  UnsupportedOperationException
      *          If the socket option is not supported by this channel
      *
-     * @throws  java.nio.channels.ClosedChannelException
+     * @throws  j86.j86.java.nio.channels.ClosedChannelException
      *          If this channel is closed
      *
      * @throws  IOException
@@ -389,7 +389,7 @@ public abstract class SctpServerChannel
      * @throws  IllegalArgumentException
      *          If the value is not a valid value for this socket option
      *
-     * @throws  java.nio.channels.ClosedChannelException
+     * @throws  j86.j86.java.nio.channels.ClosedChannelException
      *          If this channel is closed
      *
      * @throws  IOException
@@ -417,7 +417,7 @@ public abstract class SctpServerChannel
      *
      * <P> SCTP server channels only support the accepting of new
      * associations, so this method returns
-     * {@link java.nio.channels.SelectionKey#OP_ACCEPT}.
+     * {@link j86.j86.java.nio.channels.SelectionKey#OP_ACCEPT}.
      *
      * @return  The valid-operation set
      */

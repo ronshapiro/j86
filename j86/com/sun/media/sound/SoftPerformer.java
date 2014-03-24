@@ -22,14 +22,14 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.media.sound;
+package j86.com.sun.media.sound;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import j86.java.util.ArrayList;
+import j86.java.util.Arrays;
+import j86.java.util.Comparator;
+import j86.java.util.HashMap;
+import j86.java.util.List;
+import j86.java.util.Map;
 
 /**
  * This class decodes information from ModelPeformer for use in SoftVoice.

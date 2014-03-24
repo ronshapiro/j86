@@ -24,13 +24,13 @@
  */
 
 
-package com.sun.jmx.snmp.IPAcl;
+package j86.j86.com.sun.jmx.snmp.IPAcl;
 
 
 
-import java.net.InetAddress;
-import java.net.UnknownHostException;
-import java.io.Serializable;
+import j86.java.net.InetAddress;
+import j86.java.net.UnknownHostException;
+import j86.java.io.Serializable;
 
 
 /**
@@ -38,7 +38,7 @@ import java.io.Serializable;
  *
  */
 
-class PrincipalImpl implements java.security.Principal, Serializable {
+class PrincipalImpl implements j86.java.security.Principal, Serializable {
     private static final long serialVersionUID = -7910027842878976761L;
 
     private InetAddress[] add = null;
@@ -48,7 +48,7 @@ class PrincipalImpl implements java.security.Principal, Serializable {
      */
     public PrincipalImpl () throws UnknownHostException {
         add = new InetAddress[1];
-        add[0] = java.net.InetAddress.getLocalHost();
+        add[0] = j86.java.net.InetAddress.getLocalHost();
     }
 
     /**
@@ -65,10 +65,10 @@ class PrincipalImpl implements java.security.Principal, Serializable {
     public PrincipalImpl(String hostName) throws UnknownHostException {
         if ((hostName.equals("localhost")) || (hostName.equals("127.0.0.1"))) {
             add = new InetAddress[1];
-            add[0] = java.net.InetAddress.getByName(hostName);
+            add[0] = j86.java.net.InetAddress.getByName(hostName);
         }
         else
-            add = java.net.InetAddress.getAllByName( hostName );
+            add = j86.java.net.InetAddress.getAllByName( hostName );
     }
 
     /**

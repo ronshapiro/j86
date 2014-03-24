@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.rmi.transport.tcp;
+package j86.j86.sun.rmi.transport.tcp;
 
-import java.io.*;
-import java.util.*;
-import java.rmi.server.LogStream;
+import j86.java.io.*;
+import j86.java.util.*;
+import j86.j86.java.rmi.server.LogStream;
 
-import sun.rmi.runtime.Log;
+import j86.sun.rmi.runtime.Log;
 
 /**
  * ConnectionMultiplexer manages the transparent multiplexing of
@@ -50,13 +50,13 @@ final class ConnectionMultiplexer {
     static int logLevel = LogStream.parseLevel(getLogLevel());
 
     private static String getLogLevel() {
-        return java.security.AccessController.doPrivileged(
-            new sun.security.action.GetPropertyAction("sun.rmi.transport.tcp.multiplex.logLevel"));
+        return j86.java.security.AccessController.doPrivileged(
+            new j86.sun.security.action.GetPropertyAction("j86.j86.sun.rmi.transport.tcp.multiplex.logLevel"));
     }
 
     /* multiplex system log */
     static final Log multiplexLog =
-        Log.getLog("sun.rmi.transport.tcp.multiplex",
+        Log.getLog("j86.j86.sun.rmi.transport.tcp.multiplex",
                    "multiplex", ConnectionMultiplexer.logLevel);
 
     /** multiplexing protocol operation codes */
@@ -159,7 +159,7 @@ final class ConnectionMultiplexer {
                         connectionTable.put(id, info);
                         ++ numConnections;
                     }
-                    sun.rmi.transport.Connection conn;
+                    j86.sun.rmi.transport.Connection conn;
                     conn = new TCPConnection(channel, info.in, info.out);
                     channel.acceptMultiplexConnection(conn);
                     break;

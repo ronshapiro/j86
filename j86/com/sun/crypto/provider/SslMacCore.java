@@ -23,16 +23,16 @@
  * questions.
  */
 
-package com.sun.crypto.provider;
+package j86.com.sun.crypto.provider;
 
-import java.nio.ByteBuffer;
+import j86.java.nio.ByteBuffer;
 
-import javax.crypto.MacSpi;
-import javax.crypto.SecretKey;
-import java.security.*;
-import java.security.spec.AlgorithmParameterSpec;
+import j86.javax.crypto.MacSpi;
+import j86.javax.crypto.SecretKey;
+import j86.java.security.*;
+import j86.j86.java.security.spec.AlgorithmParameterSpec;
 
-import static com.sun.crypto.provider.TlsPrfGenerator.genPad;
+import static j86.com.sun.crypto.provider.TlsPrfGenerator.genPad;
 
 /**
  * This file contains the code for the SslMacMD5 and SslMacSHA1 implementations.

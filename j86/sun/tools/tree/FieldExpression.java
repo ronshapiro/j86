@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.tools.tree;
+package j86.sun.tools.tree;
 
-import sun.tools.java.*;
-import sun.tools.asm.*;
-import java.io.PrintStream;
-import java.util.Hashtable;
+import j86.sun.tools.java.*;
+import j86.sun.tools.asm.*;
+import j86.java.io.PrintStream;
+import j86.java.util.Hashtable;
 
 /**
  * WARNING: The contents of this source file are not part of any
@@ -449,7 +449,7 @@ class FieldExpression extends UnaryExpression {
                 Expression wcls = new TypeExpression(where, Type.tClass(wid));
                 implementation = new FieldExpression(where, wcls, idTYPE);
                 vset = implementation.checkValue(env, ctx, vset, exp);
-                type = implementation.type; // java.lang.Class
+                type = implementation.type; // j86.java.lang.Class
                 return vset;
             }
 
@@ -497,7 +497,7 @@ class FieldExpression extends UnaryExpression {
             }
 
             vset = implementation.checkValue(env, ctx, vset, exp);
-            type = implementation.type; // java.lang.Class
+            type = implementation.type; // j86.java.lang.Class
             return vset;
         }
 

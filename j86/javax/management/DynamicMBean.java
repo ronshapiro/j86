@@ -24,7 +24,7 @@
  */
 
 
-package javax.management;
+package j86.javax.management;
 
 
 /**
@@ -44,8 +44,8 @@ public interface DynamicMBean {
      * @return  The value of the attribute retrieved.
      *
      * @exception AttributeNotFoundException
-     * @exception MBeanException  Wraps a <CODE>java.lang.Exception</CODE> thrown by the MBean's getter.
-     * @exception ReflectionException  Wraps a <CODE>java.lang.Exception</CODE> thrown while trying to invoke the getter.
+     * @exception MBeanException  Wraps a <CODE>j86.java.lang.Exception</CODE> thrown by the MBean's getter.
+     * @exception ReflectionException  Wraps a <CODE>j86.java.lang.Exception</CODE> thrown while trying to invoke the getter.
      *
      * @see #setAttribute
      */
@@ -60,8 +60,8 @@ public interface DynamicMBean {
      *
      * @exception AttributeNotFoundException
      * @exception InvalidAttributeValueException
-     * @exception MBeanException Wraps a <CODE>java.lang.Exception</CODE> thrown by the MBean's setter.
-     * @exception ReflectionException Wraps a <CODE>java.lang.Exception</CODE> thrown while trying to invoke the MBean's setter.
+     * @exception MBeanException Wraps a <CODE>j86.java.lang.Exception</CODE> thrown by the MBean's setter.
+     * @exception ReflectionException Wraps a <CODE>j86.java.lang.Exception</CODE> thrown while trying to invoke the MBean's setter.
      *
      * @see #getAttribute
      */
@@ -104,8 +104,8 @@ public interface DynamicMBean {
      * @return  The object returned by the action, which represents the result of
      * invoking the action on the MBean specified.
      *
-     * @exception MBeanException  Wraps a <CODE>java.lang.Exception</CODE> thrown by the MBean's invoked method.
-     * @exception ReflectionException  Wraps a <CODE>java.lang.Exception</CODE> thrown while trying to invoke the method
+     * @exception MBeanException  Wraps a <CODE>j86.java.lang.Exception</CODE> thrown by the MBean's invoked method.
+     * @exception ReflectionException  Wraps a <CODE>j86.java.lang.Exception</CODE> thrown while trying to invoke the method
      */
     public Object invoke(String actionName, Object params[], String signature[])
         throws MBeanException, ReflectionException ;

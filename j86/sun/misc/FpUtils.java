@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.misc;
+package j86.sun.misc;
 
-import sun.misc.FloatConsts;
-import sun.misc.DoubleConsts;
+import j86.sun.misc.FloatConsts;
+import j86.sun.misc.DoubleConsts;
 
 /**
  * The class {@code FpUtils} contains static utility methods for

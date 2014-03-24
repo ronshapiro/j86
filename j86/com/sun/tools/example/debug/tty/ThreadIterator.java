@@ -32,12 +32,12 @@
  */
 
 
-package com.sun.tools.example.debug.tty;
+package j86.com.sun.tools.example.debug.tty;
 
-import com.sun.jdi.ThreadGroupReference;
-import com.sun.jdi.ThreadReference;
-import java.util.List;
-import java.util.Iterator;
+import j86.com.sun.jdi.ThreadGroupReference;
+import j86.com.sun.jdi.ThreadReference;
+import j86.java.util.List;
+import j86.java.util.Iterator;
 
 class ThreadIterator implements Iterator<ThreadReference> {
     Iterator<ThreadReference> it = null;

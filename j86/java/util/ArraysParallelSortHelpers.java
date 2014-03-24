@@ -22,10 +22,10 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.util;
+package j86.java.util;
 
-import java.util.concurrent.RecursiveAction;
-import java.util.concurrent.CountedCompleter;
+import j86.j86.java.util.concurrent.RecursiveAction;
+import j86.j86.java.util.concurrent.CountedCompleter;
 
 /**
  * Helper utilities for the parallel sort methods in Arrays.parallelSort.

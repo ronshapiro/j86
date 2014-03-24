@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.net;
+package j86.java.net;
 
 
 /**
@@ -34,11 +34,11 @@ package java.net;
  * It provides an immutable object used by sockets for binding, connecting, or
  * as returned values.
  *
- * @see java.net.Socket
- * @see java.net.ServerSocket
+ * @see j86.java.net.Socket
+ * @see j86.java.net.ServerSocket
  * @since 1.4
  */
-public abstract class SocketAddress implements java.io.Serializable {
+public abstract class SocketAddress implements j86.java.io.Serializable {
 
     static final long serialVersionUID = 5215720748342549866L;
 

@@ -23,15 +23,15 @@
  * questions.
  */
 
-package com.sun.media.sound;
+package j86.com.sun.media.sound;
 
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.URL;
-import javax.sound.midi.InvalidMidiDataException;
-import javax.sound.midi.Soundbank;
-import javax.sound.midi.spi.SoundbankReader;
+import j86.java.io.File;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.net.URL;
+import j86.javax.sound.midi.InvalidMidiDataException;
+import j86.javax.sound.midi.Soundbank;
+import j86.j86.javax.sound.midi.spi.SoundbankReader;
 
 /**
  * This class is used to connect the DLSSoundBank class

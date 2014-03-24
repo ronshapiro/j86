@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.util;
+package j86.java.util;
 
 /**
  * A {@link Set} that further provides a <i>total ordering</i> on its elements.
@@ -229,7 +229,7 @@ public interface SortedSet<E> extends Set<E> {
      * characteristic values.
      *
      * <p>The spliterator's comparator (see
-     * {@link java.util.Spliterator#getComparator()}) must be {@code null} if
+     * {@link j86.java.util.Spliterator#getComparator()}) must be {@code null} if
      * the sorted set's comparator (see {@link #comparator()}) is {@code null}.
      * Otherwise, the spliterator's comparator must be the same as or impose the
      * same total ordering as the sorted set's comparator.

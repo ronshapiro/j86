@@ -23,13 +23,13 @@
  * questions.
  */
 
-package javax.swing.plaf.basic;
+package j86.j86.j86.javax.swing.plaf.basic;
 
-import javax.swing.*;
-import javax.swing.plaf.UIResource;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.plaf.UIResource;
 
-import java.awt.Container;
-import java.awt.Dimension;
+import j86.java.awt.Container;
+import j86.java.awt.Dimension;
 
 /**
  * The default layout manager for Popup menus and menubars.  This
@@ -48,7 +48,7 @@ public class DefaultMenuLayout extends BoxLayout implements UIResource {
     public Dimension preferredLayoutSize(Container target) {
         if (target instanceof JPopupMenu) {
             JPopupMenu popupMenu = (JPopupMenu) target;
-            sun.swing.MenuItemLayoutHelper.clearUsedClientProperties(popupMenu);
+            j86.sun.swing.MenuItemLayoutHelper.clearUsedClientProperties(popupMenu);
             if (popupMenu.getComponentCount() == 0) {
                 return new Dimension(0, 0);
             }

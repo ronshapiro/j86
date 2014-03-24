@@ -23,12 +23,12 @@
  * questions.
  */
 
-package com.sun.crypto.provider;
+package j86.com.sun.crypto.provider;
 
-import java.security.*;
-import java.security.spec.*;
-import javax.crypto.*;
-import javax.crypto.spec.*;
+import j86.java.security.*;
+import j86.j86.java.security.spec.*;
+import j86.javax.crypto.*;
+import j86.j86.javax.crypto.spec.*;
 
 /**
  * This class represents password-based encryption as defined by the PKCS #5
@@ -37,7 +37,7 @@ import javax.crypto.spec.*;
  * @author Jan Luehe
  *
  *
- * @see javax.crypto.Cipher
+ * @see j86.javax.crypto.Cipher
  */
 final class PBES1Core {
 
@@ -262,7 +262,7 @@ final class PBES1Core {
             // P || S (password concatenated with salt)
             byte[] concat = new byte[passwdBytes.length + salt.length];
             System.arraycopy(passwdBytes, 0, concat, 0, passwdBytes.length);
-            java.util.Arrays.fill(passwdBytes, (byte)0x00);
+            j86.java.util.Arrays.fill(passwdBytes, (byte)0x00);
             System.arraycopy(salt, 0, concat, passwdBytes.length, salt.length);
 
             // digest P || S with c iterations
@@ -271,7 +271,7 @@ final class PBES1Core {
                 md.update(toBeHashed);
                 toBeHashed = md.digest(); // this resets the digest
             }
-            java.util.Arrays.fill(concat, (byte)0x00);
+            j86.java.util.Arrays.fill(concat, (byte)0x00);
             result = toBeHashed;
         } else if (algo.equals("DESede")) {
             // if the 2 salt halves are the same, invert one of them

@@ -29,62 +29,62 @@
  */
 
 
-package javax.management.modelmbean;
+package j86.j86.javax.management.modelmbean;
 
 /* java imports */
 
-import static com.sun.jmx.defaults.JmxProperties.MODELMBEAN_LOGGER;
-import java.io.FileOutputStream;
-import java.io.PrintStream;
-import java.lang.reflect.InvocationTargetException;
+import static j86.com.sun.jmx.defaults.JmxProperties.MODELMBEAN_LOGGER;
+import j86.java.io.FileOutputStream;
+import j86.java.io.PrintStream;
+import j86.j86.j86.java.lang.reflect.InvocationTargetException;
 
-import java.lang.reflect.Method;
-import java.security.AccessControlContext;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.security.AccessControlContext;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
 
-import java.util.Date;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.logging.Level;
-import java.util.Map;
-import java.util.Set;
+import j86.java.util.Date;
+import j86.java.util.HashMap;
+import j86.java.util.HashSet;
+import j86.j86.java.util.logging.Level;
+import j86.java.util.Map;
+import j86.java.util.Set;
 
-import java.util.Vector;
-import javax.management.Attribute;
-import javax.management.AttributeChangeNotification;
-import javax.management.AttributeChangeNotificationFilter;
-import javax.management.AttributeList;
-import javax.management.AttributeNotFoundException;
-import javax.management.Descriptor;
-import javax.management.InstanceNotFoundException;
-import javax.management.InvalidAttributeValueException;
-import javax.management.ListenerNotFoundException;
-import javax.management.MBeanAttributeInfo;
-import javax.management.MBeanConstructorInfo;
-import javax.management.MBeanException;
-import javax.management.MBeanInfo;
-import javax.management.MBeanNotificationInfo;
-import javax.management.MBeanOperationInfo;
-import javax.management.MBeanRegistration;
-import javax.management.MBeanServer;
-import javax.management.MBeanServerFactory;
-import javax.management.Notification;
-import javax.management.NotificationBroadcasterSupport;
-import javax.management.NotificationEmitter;
-import javax.management.NotificationFilter;
-import javax.management.NotificationListener;
-import javax.management.ObjectName;
-import javax.management.ReflectionException;
-import javax.management.RuntimeErrorException;
-import javax.management.RuntimeOperationsException;
-import javax.management.ServiceNotFoundException;
-import javax.management.loading.ClassLoaderRepository;
-import sun.misc.JavaSecurityAccess;
-import sun.misc.SharedSecrets;
+import j86.java.util.Vector;
+import j86.javax.management.Attribute;
+import j86.javax.management.AttributeChangeNotification;
+import j86.javax.management.AttributeChangeNotificationFilter;
+import j86.javax.management.AttributeList;
+import j86.javax.management.AttributeNotFoundException;
+import j86.javax.management.Descriptor;
+import j86.javax.management.InstanceNotFoundException;
+import j86.javax.management.InvalidAttributeValueException;
+import j86.javax.management.ListenerNotFoundException;
+import j86.javax.management.MBeanAttributeInfo;
+import j86.javax.management.MBeanConstructorInfo;
+import j86.javax.management.MBeanException;
+import j86.javax.management.MBeanInfo;
+import j86.javax.management.MBeanNotificationInfo;
+import j86.javax.management.MBeanOperationInfo;
+import j86.javax.management.MBeanRegistration;
+import j86.javax.management.MBeanServer;
+import j86.javax.management.MBeanServerFactory;
+import j86.javax.management.Notification;
+import j86.javax.management.NotificationBroadcasterSupport;
+import j86.javax.management.NotificationEmitter;
+import j86.javax.management.NotificationFilter;
+import j86.javax.management.NotificationListener;
+import j86.javax.management.ObjectName;
+import j86.javax.management.ReflectionException;
+import j86.javax.management.RuntimeErrorException;
+import j86.javax.management.RuntimeOperationsException;
+import j86.javax.management.ServiceNotFoundException;
+import j86.j86.javax.management.loading.ClassLoaderRepository;
+import j86.sun.misc.JavaSecurityAccess;
+import j86.sun.misc.SharedSecrets;
 
-import sun.reflect.misc.MethodUtil;
-import sun.reflect.misc.ReflectUtil;
+import j86.j86.sun.reflect.misc.MethodUtil;
+import j86.j86.sun.reflect.misc.ReflectUtil;
 
 /**
  * This class is the implementation of a ModelMBean. An appropriate
@@ -195,7 +195,7 @@ public class RequiredModelMBean
      *
      * @exception MBeanException Wraps a distributed communication Exception.
      * @exception RuntimeOperationsException Wraps an
-     *    {link java.lang.IllegalArgumentException}:
+     *    {link j86.java.lang.IllegalArgumentException}:
      *          The MBeanInfo passed in parameter is null.
      *
      **/
@@ -231,7 +231,7 @@ public class RequiredModelMBean
      * registered with the MBeanServer.
      * <P>
      * If the ModelMBean is currently registered, this method throws
-     * a {@link javax.management.RuntimeOperationsException} wrapping an
+     * a {@link j86.javax.management.RuntimeOperationsException} wrapping an
      * {@link IllegalStateException}
      * <P>
      * If the given <var>inModelMBeanInfo</var> does not contain any
@@ -870,7 +870,7 @@ public class RequiredModelMBean
      * <LI> {@link InvalidTargetObjectTypeException}: The 'targetType'
      *      field value is not 'objectReference'.</LI>
      * </UL>
-     * @exception ReflectionException  Wraps an {@link java.lang.Exception}
+     * @exception ReflectionException  Wraps an {@link j86.java.lang.Exception}
      *      thrown while trying to invoke the method.
      * @exception RuntimeOperationsException Wraps an
      *      {@link IllegalArgumentException} Method name is null.
@@ -1440,7 +1440,7 @@ public class RequiredModelMBean
      * <li>the value is null;</li>
      * <li>the declared name is a primitive type name (such as "int")
      *     and the value is an instance of the corresponding wrapper
-     *     type (such as java.lang.Integer);</li>
+     *     type (such as j86.java.lang.Integer);</li>
      * <li>the name of the value's class is identical to the declared name;</li>
      * <li>the declared name can be loaded by the value's class loader and
      *     produces a class to which the value can be assigned.</li>
@@ -1484,13 +1484,13 @@ public class RequiredModelMBean
      *           field value is not 'objectReference'.</LI>
      *      <LI> An Exception thrown by the managed object's getter.</LI>
      *    </UL>
-     * @exception ReflectionException  Wraps an {@link java.lang.Exception}
+     * @exception ReflectionException  Wraps an {@link j86.java.lang.Exception}
      *    thrown while trying to invoke the getter.
      * @exception RuntimeOperationsException Wraps an
      *    {@link IllegalArgumentException}: The attribute name in
      *    parameter is null.
      *
-     * @see #setAttribute(javax.management.Attribute)
+     * @see #setAttribute(j86.javax.management.Attribute)
      **/
     public Object getAttribute(String attrName)
         throws AttributeNotFoundException, MBeanException,
@@ -1779,7 +1779,7 @@ public class RequiredModelMBean
      * {@link IllegalArgumentException}: The object name in parameter is
      * null or attributes in parameter is null.
      *
-     * @see #setAttributes(javax.management.AttributeList)
+     * @see #setAttributes(j86.javax.management.AttributeList)
      */
     public AttributeList getAttributes(String[] attrNames)      {
         if (MODELMBEAN_LOGGER.isLoggable(Level.FINER)) {
@@ -1888,13 +1888,13 @@ public class RequiredModelMBean
      *          field value is not 'objectReference'.</LI>
      *     <LI> An Exception thrown by the managed object's getter.</LI>
      *   </UL>
-     * @exception ReflectionException  Wraps an {@link java.lang.Exception}
+     * @exception ReflectionException  Wraps an {@link j86.java.lang.Exception}
      *   thrown while trying to invoke the setter.
      * @exception RuntimeOperationsException Wraps an
      *   {@link IllegalArgumentException}: The attribute in parameter is
      *   null.
      *
-     * @see #getAttribute(java.lang.String)
+     * @see #getAttribute(j86.java.lang.String)
      **/
     public void setAttribute(Attribute attribute)
         throws AttributeNotFoundException, InvalidAttributeValueException,
@@ -2188,7 +2188,7 @@ public class RequiredModelMBean
     public void addNotificationListener(NotificationListener listener,
                                         NotificationFilter filter,
                                         Object handback)
-        throws java.lang.IllegalArgumentException {
+        throws j86.java.lang.IllegalArgumentException {
         final String mth = "addNotificationListener(" +
                 "NotificationListener, NotificationFilter, Object)";
         if (MODELMBEAN_LOGGER.isLoggable(Level.FINER)) {
@@ -2840,7 +2840,7 @@ public class RequiredModelMBean
     /**
      * Return the Class Loader Repository used to perform class loading.
      * Subclasses may wish to redefine this method in order to return
-     * the appropriate {@link javax.management.loading.ClassLoaderRepository}
+     * the appropriate {@link j86.j86.javax.management.loading.ClassLoaderRepository}
      * that should be used in this object.
      *
      * @return the Class Loader Repository.
@@ -2913,14 +2913,14 @@ public class RequiredModelMBean
      * parameter is not null, it will usually but not necessarily be
      * the returned value.
      *
-     * @exception java.lang.Exception This exception will be caught by
+     * @exception j86.java.lang.Exception This exception will be caught by
      * the MBean server and re-thrown as an
-     * {@link javax.management.MBeanRegistrationException
+     * {@link j86.javax.management.MBeanRegistrationException
      * MBeanRegistrationException}.
      */
     public ObjectName preRegister(MBeanServer server,
                                   ObjectName name)
-        throws java.lang.Exception  {
+        throws j86.java.lang.Exception  {
         // Since ModelMbeanInfo cannot be null (otherwise exception
         // thrown at creation)
         // no exception thrown on ModelMBeanInfo not set.
@@ -2956,12 +2956,12 @@ public class RequiredModelMBean
      * method should call <code>super.preDeregister()</code> in its own
      * <code>preDeregister</code> implementation.
      *
-     * @exception java.lang.Exception This exception will be caught by
+     * @exception j86.java.lang.Exception This exception will be caught by
      * the MBean server and re-thrown as an
-     * {@link javax.management.MBeanRegistrationException
+     * {@link j86.javax.management.MBeanRegistrationException
      * MBeanRegistrationException}.
      */
-    public void preDeregister() throws java.lang.Exception {
+    public void preDeregister() throws j86.java.lang.Exception {
     }
 
     /**

@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.nio.fs;
+package j86.j86.sun.nio.fs;
 
-import java.nio.file.*;
-import java.util.*;
+import j86.j86.java.nio.file.*;
+import j86.java.util.*;
 
 /**
  * Base implementation class for watch keys.

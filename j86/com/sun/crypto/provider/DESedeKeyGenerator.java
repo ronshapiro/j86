@@ -23,16 +23,16 @@
  * questions.
  */
 
-package com.sun.crypto.provider;
+package j86.com.sun.crypto.provider;
 
-import javax.crypto.KeyGeneratorSpi;
-import javax.crypto.SecretKey;
-import javax.crypto.spec.DESedeKeySpec;
-import java.security.SecureRandom;
-import java.security.InvalidParameterException;
-import java.security.InvalidAlgorithmParameterException;
-import java.security.InvalidKeyException;
-import java.security.spec.AlgorithmParameterSpec;
+import j86.javax.crypto.KeyGeneratorSpi;
+import j86.javax.crypto.SecretKey;
+import j86.j86.javax.crypto.spec.DESedeKeySpec;
+import j86.java.security.SecureRandom;
+import j86.java.security.InvalidParameterException;
+import j86.java.security.InvalidAlgorithmParameterException;
+import j86.java.security.InvalidKeyException;
+import j86.j86.java.security.spec.AlgorithmParameterSpec;
 
 /**
  * This class generates a Triple DES key.
@@ -127,7 +127,7 @@ public final class DESedeKeyGenerator extends KeyGeneratorSpi {
             System.arraycopy(tmpkey, 0, rawkey, 0, tmpkey.length);
             // Copy the first 8 bytes into the last
             System.arraycopy(tmpkey, 0, rawkey, 16, 8);
-            java.util.Arrays.fill(tmpkey, (byte)0x00);
+            j86.java.util.Arrays.fill(tmpkey, (byte)0x00);
         }
 
         DESedeKey desEdeKey = null;
@@ -138,7 +138,7 @@ public final class DESedeKeyGenerator extends KeyGeneratorSpi {
             throw new RuntimeException(ike.getMessage());
         }
 
-        java.util.Arrays.fill(rawkey, (byte)0x00);
+        j86.java.util.Arrays.fill(rawkey, (byte)0x00);
 
         return desEdeKey;
     }

@@ -23,19 +23,19 @@
  * questions.
  */
 
-package javax.swing.plaf.metal;
+package j86.j86.j86.javax.swing.plaf.metal;
 
-import java.awt.event.*;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
-import javax.swing.*;
-import javax.swing.border.*;
-import javax.swing.event.*;
-import javax.swing.plaf.*;
-import javax.swing.plaf.basic.*;
-import java.awt.*;
-import java.io.*;
-import java.security.*;
+import j86.j86.java.awt.event.*;
+import j86.java.beans.PropertyChangeEvent;
+import j86.java.beans.PropertyChangeListener;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.border.*;
+import j86.j86.javax.swing.event.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.j86.javax.swing.plaf.basic.*;
+import j86.java.awt.*;
+import j86.java.io.*;
+import j86.java.security.*;
 
 /**
  * Provides the metal look and feel implementation of <code>RootPaneUI</code>.
@@ -57,8 +57,8 @@ import java.security.*;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @author Terry Kellerman
  * @since 1.4

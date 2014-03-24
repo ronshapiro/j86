@@ -32,13 +32,13 @@
  */
 
 
-package com.sun.tools.example.debug.tty;
+package j86.com.sun.tools.example.debug.tty;
 
-import com.sun.jdi.ThreadGroupReference;
-import java.util.List;
-import java.util.Stack;
-import java.util.ArrayList;
-import java.util.Iterator;
+import j86.com.sun.jdi.ThreadGroupReference;
+import j86.java.util.List;
+import j86.java.util.Stack;
+import j86.java.util.ArrayList;
+import j86.java.util.Iterator;
 
 /**
  * Descend the tree of thread groups.

@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.smartcardio;
+package j86.javax.smartcardio;
 
-import java.nio.ByteBuffer;
+import j86.java.nio.ByteBuffer;
 
 /**
  * A Smart Card with which a connection has been established. Card objects

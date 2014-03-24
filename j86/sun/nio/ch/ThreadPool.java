@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.nio.ch;
+package j86.j86.j86.sun.nio.ch;
 
-import java.util.concurrent.*;
-import java.security.AccessController;
-import sun.security.action.GetPropertyAction;
-import sun.security.action.GetIntegerAction;
+import j86.j86.java.util.concurrent.*;
+import j86.java.security.AccessController;
+import j86.sun.security.action.GetPropertyAction;
+import j86.sun.security.action.GetIntegerAction;
 
 /**
  * Encapsulates a thread pool associated with a channel group.
@@ -36,9 +36,9 @@ import sun.security.action.GetIntegerAction;
 
 public class ThreadPool {
     private static final String DEFAULT_THREAD_POOL_THREAD_FACTORY =
-        "java.nio.channels.DefaultThreadPool.threadFactory";
+        "j86.j86.java.nio.channels.DefaultThreadPool.threadFactory";
     private static final String DEFAULT_THREAD_POOL_INITIAL_SIZE =
-        "java.nio.channels.DefaultThreadPool.initialSize";
+        "j86.j86.java.nio.channels.DefaultThreadPool.initialSize";
     private static final ThreadFactory defaultThreadFactory = new ThreadFactory() {
          @Override
          public Thread newThread(Runnable r) {

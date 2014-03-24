@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.beans.beancontext;
+package j86.j86.java.beans.beancontext;
 
-import java.awt.Component;
+import j86.java.awt.Component;
 
 /**
  * <p>
@@ -37,14 +37,14 @@ import java.awt.Component;
  * @author Laurence P. G. Cable
  * @since 1.2
  *
- * @see java.beans.beancontext.BeanContext
- * @see java.beans.beancontext.BeanContextSupport
+ * @see j86.j86.java.beans.beancontext.BeanContext
+ * @see j86.j86.java.beans.beancontext.BeanContextSupport
  */
 
 public interface BeanContextChildComponentProxy {
 
     /**
-     * Gets the <code>java.awt.Component</code> associated with
+     * Gets the <code>j86.java.awt.Component</code> associated with
      * this <code>BeanContextChild</code>.
      * @return the AWT <code>Component</code> associated with
      * this <code>BeanContextChild</code>

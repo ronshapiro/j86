@@ -23,11 +23,11 @@
  * questions.
  */
 
-package java.lang;
+package j86.java.lang;
 
 /**
  * A class implements the <code>Cloneable</code> interface to
- * indicate to the {@link java.lang.Object#clone()} method that it
+ * indicate to the {@link j86.java.lang.Object#clone()} method that it
  * is legal for that method to make a
  * field-for-field copy of instances of that class.
  * <p>
@@ -37,7 +37,7 @@ package java.lang;
  * <p>
  * By convention, classes that implement this interface should override
  * <tt>Object.clone</tt> (which is protected) with a public method.
- * See {@link java.lang.Object#clone()} for details on overriding this
+ * See {@link j86.java.lang.Object#clone()} for details on overriding this
  * method.
  * <p>
  * Note that this interface does <i>not</i> contain the <tt>clone</tt> method.
@@ -46,8 +46,8 @@ package java.lang;
  * reflectively, there is no guarantee that it will succeed.
  *
  * @author  unascribed
- * @see     java.lang.CloneNotSupportedException
- * @see     java.lang.Object#clone()
+ * @see     j86.java.lang.CloneNotSupportedException
+ * @see     j86.java.lang.Object#clone()
  * @since   JDK1.0
  */
 public interface Cloneable {

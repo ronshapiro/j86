@@ -29,7 +29,7 @@
 // NO WARRANTY!  This class is in the public domain.
 // $Id: ContentHandler.java,v 1.2 2004/11/03 22:44:51 jsuttor Exp $
 
-package jdk.internal.org.xml.sax;
+package j86.jdk.internal.org.xml.sax;
 
 
 /**
@@ -62,10 +62,10 @@ package jdk.internal.org.xml.sax;
  * processors).</p>
  *
  * <p>Implementors should note that there is also a
- * <code>ContentHandler</code> class in the <code>java.net</code>
+ * <code>ContentHandler</code> class in the <code>j86.java.net</code>
  * package; that means that it's probably a bad idea to do</p>
  *
- * <pre>import java.net.*;
+ * <pre>import j86.java.net.*;
  * import org.xml.sax.*;
  * </pre>
  *

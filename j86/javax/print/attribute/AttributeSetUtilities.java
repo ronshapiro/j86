@@ -24,9 +24,9 @@
  */
 
 
-package javax.print.attribute;
+package j86.j86.javax.print.attribute;
 
-import java.io.Serializable;
+import j86.java.io.Serializable;
 
 /**
  * Class AttributeSetUtilities provides static methods for manipulating
@@ -55,7 +55,7 @@ import java.io.Serializable;
  * object <I>V</I> will be serializable if the attribute set object <I>S</I>
  * is serializable.
  * <P>
- * As mentioned in the package description of javax.print, a null reference
+ * As mentioned in the package description of j86.javax.print, a null reference
  * parameter to methods is
  * incorrect unless explicitly documented on the method as having a meaningful
  * interpretation.  Usage to the contrary is incorrect coding and may result in
@@ -490,23 +490,23 @@ public final class AttributeSetUtilities {
 
 
     /**
-     * Verify that the given object is a {@link java.lang.Class Class} that
+     * Verify that the given object is a {@link j86.java.lang.Class Class} that
      * implements the given interface, which is assumed to be interface {@link
      * Attribute Attribute} or a subinterface thereof.
      *
      * @param  object     Object to test.
      * @param  interfaceName  Interface the object must implement.
      *
-     * @return  If <CODE>object</CODE> is a {@link java.lang.Class Class}
+     * @return  If <CODE>object</CODE> is a {@link j86.java.lang.Class Class}
      *          that implements <CODE>interfaceName</CODE>,
      *          <CODE>object</CODE> is returned downcast to type {@link
-     *          java.lang.Class Class}; otherwise an exception is thrown.
+     *          j86.java.lang.Class Class}; otherwise an exception is thrown.
      *
      * @exception  NullPointerException
      *     (unchecked exception) Thrown if <CODE>object</CODE> is null.
      * @exception  ClassCastException
      *     (unchecked exception) Thrown if <CODE>object</CODE> is not a
-     *     {@link java.lang.Class Class} that implements
+     *     {@link j86.java.lang.Class Class} that implements
      *     <CODE>interfaceName</CODE>.
      */
     public static Class<?>

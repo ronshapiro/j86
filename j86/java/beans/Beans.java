@@ -23,36 +23,36 @@
  * questions.
  */
 
-package java.beans;
+package j86.java.beans;
 
-import com.sun.beans.finder.ClassFinder;
+import j86.j86.com.sun.beans.finder.ClassFinder;
 
-import java.applet.Applet;
-import java.applet.AppletContext;
-import java.applet.AppletStub;
-import java.applet.AudioClip;
+import j86.java.applet.Applet;
+import j86.java.applet.AppletContext;
+import j86.java.applet.AppletStub;
+import j86.java.applet.AudioClip;
 
-import java.awt.Image;
+import j86.java.awt.Image;
 
-import java.beans.beancontext.BeanContext;
+import j86.j86.java.beans.beancontext.BeanContext;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.ObjectInputStream;
-import java.io.ObjectStreamClass;
-import java.io.StreamCorruptedException;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.ObjectStreamClass;
+import j86.java.io.StreamCorruptedException;
 
-import java.lang.reflect.Modifier;
+import j86.j86.j86.java.lang.reflect.Modifier;
 
-import java.net.URL;
+import j86.java.net.URL;
 
-import java.security.AccessController;
-import java.security.PrivilegedAction;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
 
-import java.util.Enumeration;
-import java.util.Hashtable;
-import java.util.Iterator;
-import java.util.Vector;
+import j86.java.util.Enumeration;
+import j86.java.util.Hashtable;
+import j86.java.util.Iterator;
+import j86.java.util.Vector;
 
 /**
  * This class provides some general purpose beans control methods.
@@ -122,7 +122,7 @@ public class Beans {
      * that failed it would try to load the class "x.y" and create an
      * instance of that class.
      * <p>
-     * If the bean is a subtype of java.applet.Applet, then it is given
+     * If the bean is a subtype of j86.java.applet.Applet, then it is given
      * some special initialization.  First, it is supplied with a default
      * AppletStub and AppletContext.  Second, if it was instantiated from
      * a classname the applet's "init" method is called.  (If the bean was
@@ -550,7 +550,7 @@ class BeansAppletContext implements AppletContext {
                 return (Image) o;
             }
             // Otherwise it must be an ImageProducer.
-            Image img = target.createImage((java.awt.image.ImageProducer)o);
+            Image img = target.createImage((j86.j86.j86.java.awt.image.ImageProducer)o);
             imageCache.put(url, img);
             return img;
 

@@ -26,12 +26,12 @@
 /*
  * $Id: DOMKeyName.java 1333415 2012-05-03 12:03:51Z coheigea $
  */
-package org.jcp.xml.dsig.internal.dom;
+package j86.j86.org.jcp.xml.dsig.internal.dom;
 
-import javax.xml.crypto.*;
-import javax.xml.crypto.dom.DOMCryptoContext;
-import javax.xml.crypto.dsig.*;
-import javax.xml.crypto.dsig.keyinfo.KeyName;
+import j86.javax.xml.crypto.*;
+import j86.j86.javax.xml.crypto.dom.DOMCryptoContext;
+import j86.j86.javax.xml.crypto.dsig.*;
+import j86.j86.j86.javax.xml.crypto.dsig.keyinfo.KeyName;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;

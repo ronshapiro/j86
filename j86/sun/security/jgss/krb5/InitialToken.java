@@ -23,19 +23,19 @@
  * questions.
  */
 
-package sun.security.jgss.krb5;
+package j86.j86.sun.security.jgss.krb5;
 
-import org.ietf.jgss.*;
-import javax.security.auth.kerberos.DelegationPermission;
-import java.io.IOException;
-import java.net.InetAddress;
-import java.net.Inet4Address;
-import java.net.Inet6Address;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-import java.util.Arrays;
-import sun.security.krb5.*;
-import sun.security.krb5.internal.Krb5;
+import j86.org.ietf.jgss.*;
+import j86.j86.javax.security.auth.kerberos.DelegationPermission;
+import j86.java.io.IOException;
+import j86.java.net.InetAddress;
+import j86.java.net.Inet4Address;
+import j86.java.net.Inet6Address;
+import j86.java.security.MessageDigest;
+import j86.java.security.NoSuchAlgorithmException;
+import j86.java.util.Arrays;
+import j86.sun.security.krb5.*;
+import j86.j86.sun.security.krb5.internal.Krb5;
 
 abstract class InitialToken extends Krb5Token {
 

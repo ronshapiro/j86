@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.management;
+package j86.javax.management;
 
 // java import
-import java.io.Serializable;
+import j86.java.io.Serializable;
 
 /**
  * Allows a query to be performed in the context of a specific MBean server.

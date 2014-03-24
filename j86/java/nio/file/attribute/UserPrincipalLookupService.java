@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.nio.file.attribute;
+package j86.j86.j86.java.nio.file.attribute;
 
-import java.io.IOException;
+import j86.java.io.IOException;
 
 /**
  * An object to lookup user and group principals by name. A {@link UserPrincipal}
@@ -47,7 +47,7 @@ import java.io.IOException;
  *
  * @since 1.7
  *
- * @see java.nio.file.FileSystem#getUserPrincipalLookupService
+ * @see j86.j86.java.nio.file.FileSystem#getUserPrincipalLookupService
  */
 
 public abstract class UserPrincipalLookupService {

@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.misc;
+package j86.sun.misc;
 
-import java.io.OutputStream;
-import java.io.PushbackInputStream;
-import java.io.PrintStream;
+import j86.java.io.OutputStream;
+import j86.java.io.PushbackInputStream;
+import j86.java.io.PrintStream;
 
 /**
  * This class implements a BASE64 Character decoder as specified in RFC1521.
@@ -104,7 +104,7 @@ public class BASE64Decoder extends CharacterDecoder {
      */
     @SuppressWarnings("fallthrough")
     protected void decodeAtom(PushbackInputStream inStream, OutputStream outStream, int rem)
-        throws java.io.IOException
+        throws j86.java.io.IOException
     {
         int     i;
         byte    a = -1, b = -1, c = -1, d = -1;

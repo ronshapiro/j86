@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.util;
+package j86.java.util;
 
 /**
  * An object that implements the Enumeration interface generates a
@@ -46,14 +46,14 @@ package java.util;
  * has shorter method names.  New implementations should consider using
  * Iterator in preference to Enumeration.
  *
- * @see     java.util.Iterator
- * @see     java.io.SequenceInputStream
- * @see     java.util.Enumeration#nextElement()
- * @see     java.util.Hashtable
- * @see     java.util.Hashtable#elements()
- * @see     java.util.Hashtable#keys()
- * @see     java.util.Vector
- * @see     java.util.Vector#elements()
+ * @see     j86.java.util.Iterator
+ * @see     j86.java.io.SequenceInputStream
+ * @see     j86.java.util.Enumeration#nextElement()
+ * @see     j86.java.util.Hashtable
+ * @see     j86.java.util.Hashtable#elements()
+ * @see     j86.java.util.Hashtable#keys()
+ * @see     j86.java.util.Vector
+ * @see     j86.java.util.Vector#elements()
  *
  * @author  Lee Boynton
  * @since   JDK1.0

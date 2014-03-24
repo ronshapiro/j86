@@ -38,14 +38,14 @@
   * @author Rosanna Lee
   */
 
-package com.sun.jndi.toolkit.dir;
+package j86.com.sun.jndi.toolkit.dir;
 
-import javax.naming.*;
-import javax.naming.directory.*;
-import javax.naming.spi.DirectoryManager;
+import j86.javax.naming.*;
+import j86.j86.javax.naming.directory.*;
+import j86.j86.javax.naming.spi.DirectoryManager;
 
-import java.util.NoSuchElementException;
-import java.util.Hashtable;
+import j86.java.util.NoSuchElementException;
+import j86.java.util.Hashtable;
 
 final public class LazySearchEnumerationImpl
         implements NamingEnumeration<SearchResult> {

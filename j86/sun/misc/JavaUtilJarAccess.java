@@ -23,15 +23,15 @@
  * questions.
  */
 
-package sun.misc;
+package j86.sun.misc;
 
-import java.io.IOException;
-import java.net.URL;
-import java.security.CodeSource;
-import java.util.Enumeration;
-import java.util.List;
-import java.util.jar.JarEntry;
-import java.util.jar.JarFile;
+import j86.java.io.IOException;
+import j86.java.net.URL;
+import j86.java.security.CodeSource;
+import j86.java.util.Enumeration;
+import j86.java.util.List;
+import j86.j86.java.util.jar.JarEntry;
+import j86.j86.java.util.jar.JarFile;
 
 public interface JavaUtilJarAccess {
     public boolean jarFileHasClassPathAttribute(JarFile jar) throws IOException;

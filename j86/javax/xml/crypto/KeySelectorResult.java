@@ -25,9 +25,9 @@
 /*
  * $Id: KeySelectorResult.java,v 1.3 2005/05/10 15:47:42 mullan Exp $
  */
-package javax.xml.crypto;
+package j86.javax.xml.crypto;
 
-import java.security.Key;
+import j86.java.security.Key;
 
 /**
  * The result returned by the {@link KeySelector#select KeySelector.select}

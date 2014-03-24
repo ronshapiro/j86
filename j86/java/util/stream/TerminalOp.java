@@ -22,9 +22,9 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.util.stream;
+package j86.j86.java.util.stream;
 
-import java.util.Spliterator;
+import j86.java.util.Spliterator;
 
 /**
  * An operation in a stream pipeline that takes a stream as input and produces

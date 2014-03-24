@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.beans;
+package j86.java.beans;
 
 /**
  * An <code>Expression</code> object represents a primitive expression
@@ -113,7 +113,7 @@ public class Expression extends Statement {
      *                           it denies the method invocation
      * @throws Exception that is thrown by the invoked method
      *
-     * @see java.lang.reflect.Method
+     * @see j86.j86.j86.java.lang.reflect.Method
      * @since 1.7
      */
     @Override

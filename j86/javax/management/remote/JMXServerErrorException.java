@@ -24,12 +24,12 @@
  */
 
 
-package javax.management.remote;
+package j86.j86.javax.management.remote;
 
-import java.io.IOException;
+import j86.java.io.IOException;
 
 // imports for javadoc
-import javax.management.MBeanServer;
+import j86.javax.management.MBeanServer;
 
 /**
  * Exception thrown as the result of a remote {@link MBeanServer}
@@ -38,7 +38,7 @@ import javax.management.MBeanServer;
  * <code>JMXServerErrorException</code> instance contains the original
  * <code>Error</code> that occurred as its cause.
  *
- * @see java.rmi.ServerError
+ * @see j86.java.rmi.ServerError
  * @since 1.5
  */
 public class JMXServerErrorException extends IOException {

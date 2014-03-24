@@ -26,12 +26,12 @@
 /*
  */
 
-package java.io;
+package j86.java.io;
 
-import java.util.Iterator;
-import java.util.Map;
-import java.util.LinkedHashMap;
-import java.util.Set;
+import j86.java.util.Iterator;
+import j86.java.util.Map;
+import j86.java.util.LinkedHashMap;
+import j86.java.util.Set;
 
 class ExpiringCache {
     private long millisUntilExpiration;

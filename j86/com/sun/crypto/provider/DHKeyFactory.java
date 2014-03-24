@@ -23,20 +23,20 @@
  * questions.
  */
 
-package com.sun.crypto.provider;
+package j86.com.sun.crypto.provider;
 
-import java.security.Key;
-import java.security.PublicKey;
-import java.security.PrivateKey;
-import java.security.KeyFactorySpi;
-import java.security.InvalidKeyException;
-import java.security.spec.KeySpec;
-import java.security.spec.InvalidKeySpecException;
-import java.security.spec.X509EncodedKeySpec;
-import java.security.spec.PKCS8EncodedKeySpec;
-import javax.crypto.spec.DHPublicKeySpec;
-import javax.crypto.spec.DHPrivateKeySpec;
-import javax.crypto.spec.DHParameterSpec;
+import j86.java.security.Key;
+import j86.java.security.PublicKey;
+import j86.java.security.PrivateKey;
+import j86.java.security.KeyFactorySpi;
+import j86.java.security.InvalidKeyException;
+import j86.j86.java.security.spec.KeySpec;
+import j86.j86.java.security.spec.InvalidKeySpecException;
+import j86.j86.java.security.spec.X509EncodedKeySpec;
+import j86.j86.java.security.spec.PKCS8EncodedKeySpec;
+import j86.j86.javax.crypto.spec.DHPublicKeySpec;
+import j86.j86.javax.crypto.spec.DHPrivateKeySpec;
+import j86.j86.javax.crypto.spec.DHParameterSpec;
 
 /**
  * This class implements the Diffie-Hellman key factory of the Sun provider.
@@ -143,11 +143,11 @@ public final class DHKeyFactory extends KeyFactorySpi {
         throws InvalidKeySpecException {
         DHParameterSpec params;
 
-        if (key instanceof javax.crypto.interfaces.DHPublicKey) {
+        if (key instanceof j86.j86.javax.crypto.interfaces.DHPublicKey) {
 
             if (DHPublicKeySpec.class.isAssignableFrom(keySpec)) {
-                javax.crypto.interfaces.DHPublicKey dhPubKey
-                    = (javax.crypto.interfaces.DHPublicKey) key;
+                j86.j86.javax.crypto.interfaces.DHPublicKey dhPubKey
+                    = (j86.j86.javax.crypto.interfaces.DHPublicKey) key;
                 params = dhPubKey.getParams();
                 return keySpec.cast(new DHPublicKeySpec(dhPubKey.getY(),
                                                         params.getP(),
@@ -161,11 +161,11 @@ public final class DHKeyFactory extends KeyFactorySpi {
                     ("Inappropriate key specification");
             }
 
-        } else if (key instanceof javax.crypto.interfaces.DHPrivateKey) {
+        } else if (key instanceof j86.j86.javax.crypto.interfaces.DHPrivateKey) {
 
             if (DHPrivateKeySpec.class.isAssignableFrom(keySpec)) {
-                javax.crypto.interfaces.DHPrivateKey dhPrivKey
-                    = (javax.crypto.interfaces.DHPrivateKey)key;
+                j86.j86.javax.crypto.interfaces.DHPrivateKey dhPrivKey
+                    = (j86.j86.javax.crypto.interfaces.DHPrivateKey)key;
                 params = dhPrivKey.getParams();
                 return keySpec.cast(new DHPrivateKeySpec(dhPrivKey.getX(),
                                                          params.getP(),
@@ -200,9 +200,9 @@ public final class DHKeyFactory extends KeyFactorySpi {
     {
         try {
 
-            if (key instanceof javax.crypto.interfaces.DHPublicKey) {
+            if (key instanceof j86.j86.javax.crypto.interfaces.DHPublicKey) {
                 // Check if key originates from this factory
-                if (key instanceof com.sun.crypto.provider.DHPublicKey) {
+                if (key instanceof j86.com.sun.crypto.provider.DHPublicKey) {
                     return key;
                 }
                 // Convert key to spec
@@ -211,9 +211,9 @@ public final class DHKeyFactory extends KeyFactorySpi {
                 // Create key from spec, and return it
                 return engineGeneratePublic(dhPubKeySpec);
 
-            } else if (key instanceof javax.crypto.interfaces.DHPrivateKey) {
+            } else if (key instanceof j86.j86.javax.crypto.interfaces.DHPrivateKey) {
                 // Check if key originates from this factory
-                if (key instanceof com.sun.crypto.provider.DHPrivateKey) {
+                if (key instanceof j86.com.sun.crypto.provider.DHPrivateKey) {
                     return key;
                 }
                 // Convert key to spec

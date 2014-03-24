@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.tools.java;
+package j86.sun.tools.java;
 
 /**
  * Syntax errors, should always be caught inside the

@@ -23,20 +23,20 @@
  * questions.
  */
 
-package sun.management;
+package j86.sun.management;
 
-import java.io.IOException;
-import java.nio.ByteBuffer;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import java.util.concurrent.atomic.AtomicInteger;
+import j86.java.io.IOException;
+import j86.java.nio.ByteBuffer;
+import j86.java.util.HashMap;
+import j86.java.util.Iterator;
+import j86.java.util.List;
+import j86.java.util.Map;
+import j86.j86.j86.java.util.concurrent.atomic.AtomicInteger;
 
-import sun.misc.Perf;
-import sun.management.counter.Units;
-import sun.management.counter.Counter;
-import sun.management.counter.perf.PerfInstrumentation;
+import j86.sun.misc.Perf;
+import j86.j86.sun.management.counter.Units;
+import j86.j86.sun.management.counter.Counter;
+import j86.j86.j86.sun.management.counter.perf.PerfInstrumentation;
 
 /**
  * A utility class to support the exporting and importing of the address
@@ -47,13 +47,13 @@ import sun.management.counter.perf.PerfInstrumentation;
 public class ConnectorAddressLink {
 
     private static final String CONNECTOR_ADDRESS_COUNTER =
-            "sun.management.JMXConnectorServer.address";
+            "j86.sun.management.JMXConnectorServer.address";
 
     /*
      * The format of the jvmstat counters representing the properties of
      * a given out-of-the-box JMX remote connector will be as follows:
      *
-     * sun.management.JMXConnectorServer.<counter>.<key>=<value>
+     * j86.sun.management.JMXConnectorServer.<counter>.<key>=<value>
      *
      * where:
      *
@@ -65,14 +65,14 @@ public class ConnectorAddressLink {
      *
      * For example,
      *
-     * sun.management.JMXConnectorServer.0.remoteAddress=service:jmx:rmi:///jndi/rmi://myhost:5000/jmxrmi
-     * sun.management.JMXConnectorServer.0.authenticate=false
-     * sun.management.JMXConnectorServer.0.ssl=false
-     * sun.management.JMXConnectorServer.0.sslRegistry=false
-     * sun.management.JMXConnectorServer.0.sslNeedClientAuth=false
+     * j86.sun.management.JMXConnectorServer.0.remoteAddress=service:jmx:rmi:///jndi/rmi://myhost:5000/jmxrmi
+     * j86.sun.management.JMXConnectorServer.0.authenticate=false
+     * j86.sun.management.JMXConnectorServer.0.ssl=false
+     * j86.sun.management.JMXConnectorServer.0.sslRegistry=false
+     * j86.sun.management.JMXConnectorServer.0.sslNeedClientAuth=false
      */
     private static final String REMOTE_CONNECTOR_COUNTER_PREFIX =
-            "sun.management.JMXConnectorServer.";
+            "j86.sun.management.JMXConnectorServer.";
 
     /*
      * JMX remote connector counter (it will be incremented every

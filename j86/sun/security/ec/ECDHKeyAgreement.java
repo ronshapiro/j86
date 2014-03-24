@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.security.ec;
+package j86.sun.security.ec;
 
-import java.security.*;
-import java.security.interfaces.*;
-import java.security.spec.*;
+import j86.java.security.*;
+import j86.j86.java.security.interfaces.*;
+import j86.j86.java.security.spec.*;
 
-import javax.crypto.*;
-import javax.crypto.spec.*;
+import j86.javax.crypto.*;
+import j86.j86.javax.crypto.spec.*;
 
-import sun.security.util.ECUtil;
+import j86.sun.security.util.ECUtil;
 
 /**
  * KeyAgreement implementation for ECDH.

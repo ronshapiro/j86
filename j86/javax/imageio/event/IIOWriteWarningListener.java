@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.imageio.event;
+package j86.j86.javax.imageio.event;
 
-import java.util.EventListener;
-import javax.imageio.ImageWriter;
+import j86.java.util.EventListener;
+import j86.javax.imageio.ImageWriter;
 
 /**
  * An interface used by <code>ImageWriter</code> implementations to
@@ -39,8 +39,8 @@ import javax.imageio.ImageWriter;
  * with an <code>ImageWriter</code>.  It is up to the
  * <code>ImageWriter</code> to provide localized messages.
  *
- * @see javax.imageio.ImageWriter#addIIOWriteWarningListener
- * @see javax.imageio.ImageWriter#removeIIOWriteWarningListener
+ * @see j86.javax.imageio.ImageWriter#addIIOWriteWarningListener
+ * @see j86.javax.imageio.ImageWriter#removeIIOWriteWarningListener
  *
  */
 public interface IIOWriteWarningListener extends EventListener {

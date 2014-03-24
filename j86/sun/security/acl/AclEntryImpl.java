@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.security.acl;
+package j86.sun.security.acl;
 
-import java.util.*;
-import java.security.Principal;
-import java.security.acl.*;
+import j86.java.util.*;
+import j86.java.security.Principal;
+import j86.j86.java.security.acl.*;
 
 /**
  * This is a class that describes one entry that associates users

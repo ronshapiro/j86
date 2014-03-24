@@ -22,16 +22,16 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.jmx.snmp;
+package j86.com.sun.jmx.snmp;
 
-import java.net.InetAddress;
-import java.io.Serializable;
-import java.net.UnknownHostException;
-import java.util.StringTokenizer;
-import java.util.Arrays;
-import java.util.NoSuchElementException;
+import j86.java.net.InetAddress;
+import j86.java.io.Serializable;
+import j86.java.net.UnknownHostException;
+import j86.java.util.StringTokenizer;
+import j86.java.util.Arrays;
+import j86.java.util.NoSuchElementException;
 
-import com.sun.jmx.snmp.internal.SnmpTools;
+import j86.j86.com.sun.jmx.snmp.internal.SnmpTools;
 
 /**
  * This class is handling an <CODE>SnmpEngineId</CODE> data. It copes with binary as well as <CODE>String</CODE> representation of an engine Id. A string format engine is an hex string starting with 0x.
@@ -183,7 +183,7 @@ public class SnmpEngineId implements Serializable {
     * <P>The allowed formats :</P>
     * <ul>
     * <li> &lt;address&gt;:&lt;port&gt;:&lt;IANA number&gt
-    * <BR>   All these parameters are used to generate the Id. WARNING, this method is not compliant with IPv6 address format. Use { @link com.sun.jmx.snmp.SnmpEngineId#createEngineId(java.lang.String,java.lang.String) } instead.</li>
+    * <BR>   All these parameters are used to generate the Id. WARNING, this method is not compliant with IPv6 address format. Use { @link j86.com.sun.jmx.snmp.SnmpEngineId#createEngineId(j86.java.lang.String,java.lang.String) } instead.</li>
     * <li> &lt;address&gt;:&lt;port&gt;
     * <BR>   The IANA number will be the SUN Microsystems one (42). </li>
     * <li> address
@@ -220,7 +220,7 @@ public class SnmpEngineId implements Serializable {
 
     /**
      * Idem { @link
-     * com.sun.jmx.snmp.SnmpEngineId#createEngineId(java.lang.String) }
+     * j86.com.sun.jmx.snmp.SnmpEngineId#createEngineId(j86.java.lang.String) }
      * with the ability to provide your own separator. This allows IPv6
      * address format handling (eg: providing @ as separator).
      * @param str The string to parse.

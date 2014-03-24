@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.awt;
+package j86.sun.awt;
 
-import java.awt.event.WindowEvent;
-import java.awt.Window;
+import j86.j86.java.awt.event.WindowEvent;
+import j86.java.awt.Window;
 
 public class TimedWindowEvent extends WindowEvent {
 

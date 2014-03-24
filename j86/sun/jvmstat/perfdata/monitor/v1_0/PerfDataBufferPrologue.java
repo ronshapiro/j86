@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.jvmstat.perfdata.monitor.v1_0;
+package j86.j86.sun.jvmstat.perfdata.monitor.v1_0;
 
-import sun.jvmstat.monitor.*;
-import sun.jvmstat.perfdata.monitor.*;
-import java.nio.*;
+import j86.sun.jvmstat.monitor.*;
+import j86.sun.jvmstat.perfdata.monitor.*;
+import j86.java.nio.*;
 
 /**
  * Class representing the 1.0 version of the HotSpot PerfData instrumentation

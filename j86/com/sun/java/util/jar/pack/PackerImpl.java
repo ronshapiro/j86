@@ -23,30 +23,30 @@
  * questions.
  */
 
-package com.sun.java.util.jar.pack;
+package j86.com.sun.j86.j86.java.util.jar.pack;
 
-import com.sun.java.util.jar.pack.Attribute.Layout;
-import java.beans.PropertyChangeListener;
-import java.io.BufferedInputStream;
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.ListIterator;
-import java.util.Map;
-import java.util.SortedMap;
-import java.util.TimeZone;
-import java.util.jar.JarEntry;
-import java.util.jar.JarFile;
-import java.util.jar.JarInputStream;
-import java.util.jar.Pack200;
+import j86.com.sun.j86.j86.java.util.jar.pack.Attribute.Layout;
+import j86.java.beans.PropertyChangeListener;
+import j86.java.io.BufferedInputStream;
+import j86.java.io.ByteArrayInputStream;
+import j86.java.io.ByteArrayOutputStream;
+import j86.java.io.File;
+import j86.java.io.FileInputStream;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.io.OutputStream;
+import j86.java.util.ArrayList;
+import j86.java.util.Collections;
+import j86.java.util.HashMap;
+import j86.java.util.List;
+import j86.java.util.ListIterator;
+import j86.java.util.Map;
+import j86.java.util.SortedMap;
+import j86.java.util.TimeZone;
+import j86.j86.java.util.jar.JarEntry;
+import j86.j86.java.util.jar.JarFile;
+import j86.j86.java.util.jar.JarInputStream;
+import j86.j86.java.util.jar.Pack200;
 
 
 /*

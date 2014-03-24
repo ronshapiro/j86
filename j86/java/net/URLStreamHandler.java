@@ -23,15 +23,15 @@
  * questions.
  */
 
-package java.net;
+package j86.java.net;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.File;
-import java.io.OutputStream;
-import java.util.Hashtable;
-import sun.net.util.IPAddressUtil;
-import sun.net.www.ParseUtil;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.io.File;
+import j86.java.io.OutputStream;
+import j86.java.util.Hashtable;
+import j86.j86.sun.net.util.IPAddressUtil;
+import j86.j86.sun.net.www.ParseUtil;
 
 /**
  * The abstract class {@code URLStreamHandler} is the common
@@ -46,7 +46,7 @@ import sun.net.www.ParseUtil;
  * automatically loaded.
  *
  * @author  James Gosling
- * @see     java.net.URL#URL(java.lang.String, java.lang.String, int, java.lang.String)
+ * @see     j86.java.net.URL#URL(j86.java.lang.String, java.lang.String, int, java.lang.String)
  * @since   JDK1.0
  */
 public abstract class URLStreamHandler {
@@ -58,7 +58,7 @@ public abstract class URLStreamHandler {
      * <p>If for the handler's protocol (such as HTTP or JAR), there
      * exists a public, specialized URLConnection subclass belonging
      * to one of the following packages or one of their subpackages:
-     * java.lang, java.io, java.util, java.net, the connection
+     * j86.java.lang, j86.java.io, j86.java.util, j86.java.net, the connection
      * returned will be of that subclass. For example, for HTTP an
      * HttpURLConnection will be returned, and for JAR a
      * JarURLConnection will be returned.
@@ -318,7 +318,7 @@ public abstract class URLStreamHandler {
      * Provides the default equals calculation. May be overidden by handlers
      * for other protocols that have different requirements for equals().
      * This method requires that none of its arguments is null. This is
-     * guaranteed by the fact that it is only called by java.net.URL class.
+     * guaranteed by the fact that it is only called by j86.java.net.URL class.
      * @param u1 a URL object
      * @param u2 a URL object
      * @return {@code true} if the two urls are
@@ -383,7 +383,7 @@ public abstract class URLStreamHandler {
      * i.e., having the same protocol, host, port, and path.
      * This method requires that none of its arguments is null. This is
      * guaranteed by the fact that it is only called indirectly
-     * by java.net.URL class.
+     * by j86.java.net.URL class.
      * @param u1 a URL object
      * @param u2 a URL object
      * @return true if u1 and u2 refer to the same file
@@ -523,7 +523,7 @@ public abstract class URLStreamHandler {
      * @param   ref       the reference.
      * @exception       SecurityException       if the protocol handler of the URL is
      *                                  different from this one
-     * @see     java.net.URL#set(java.lang.String, java.lang.String, int, java.lang.String, java.lang.String)
+     * @see     j86.java.net.URL#set(j86.java.lang.String, java.lang.String, int, java.lang.String, java.lang.String)
      * @since 1.3
      */
        protected void setURL(URL u, String protocol, String host, int port,

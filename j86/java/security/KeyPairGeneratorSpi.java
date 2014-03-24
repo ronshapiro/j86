@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.security;
+package j86.java.security;
 
-import java.security.spec.AlgorithmParameterSpec;
+import j86.j86.java.security.spec.AlgorithmParameterSpec;
 
 /**
  * <p> This class defines the <i>Service Provider Interface</i> (<b>SPI</b>)
@@ -46,7 +46,7 @@ import java.security.spec.AlgorithmParameterSpec;
  *
  *
  * @see KeyPairGenerator
- * @see java.security.spec.AlgorithmParameterSpec
+ * @see j86.j86.java.security.spec.AlgorithmParameterSpec
  */
 
 public abstract class KeyPairGeneratorSpi {

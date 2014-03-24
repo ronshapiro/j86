@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.awt.dnd.peer;
+package j86.j86.j86.java.awt.dnd.peer;
 
-import java.awt.dnd.DropTarget;
+import j86.j86.java.awt.dnd.DropTarget;
 
 /**
  * <p>

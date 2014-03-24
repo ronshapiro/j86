@@ -23,26 +23,26 @@
  * questions.
  */
 
-package sun.dc;
+package j86.sun.dc;
 
-import java.awt.Shape;
-import java.awt.BasicStroke;
-import java.awt.geom.Path2D;
-import java.awt.geom.PathIterator;
-import java.awt.geom.AffineTransform;
+import j86.java.awt.Shape;
+import j86.java.awt.BasicStroke;
+import j86.j86.java.awt.geom.Path2D;
+import j86.j86.java.awt.geom.PathIterator;
+import j86.j86.java.awt.geom.AffineTransform;
 
-import sun.awt.geom.PathConsumer2D;
-import sun.java2d.pipe.Region;
-import sun.java2d.pipe.AATileGenerator;
-import sun.java2d.pipe.RenderingEngine;
+import j86.j86.sun.awt.geom.PathConsumer2D;
+import j86.j86.sun.java2d.pipe.Region;
+import j86.j86.sun.java2d.pipe.AATileGenerator;
+import j86.j86.sun.java2d.pipe.RenderingEngine;
 
-import sun.dc.pr.Rasterizer;
-import sun.dc.pr.PathStroker;
-import sun.dc.pr.PathDasher;
-import sun.dc.pr.PRException;
-import sun.dc.path.PathConsumer;
-import sun.dc.path.PathException;
-import sun.dc.path.FastPathProducer;
+import j86.sun.dc.pr.Rasterizer;
+import j86.sun.dc.pr.PathStroker;
+import j86.sun.dc.pr.PathDasher;
+import j86.sun.dc.pr.PRException;
+import j86.sun.dc.path.PathConsumer;
+import j86.sun.dc.path.PathException;
+import j86.sun.dc.path.FastPathProducer;
 
 public class DuctusRenderingEngine extends RenderingEngine {
     static final float PenUnits = 0.01f;

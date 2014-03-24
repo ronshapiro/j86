@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.sql;
+package j86.java.sql;
 
 /**
  * <P>Defines the constants that are used to identify generic
@@ -227,10 +227,10 @@ public enum JDBCType implements SQLType {
     /**
      * Returns the name of the vendor that supports this data type.
      * @return  The name of the vendor for this data type which is
-     * {@literal java.sql} for JDBCType.
+     * {@literal j86.java.sql} for JDBCType.
      */
     public String getVendor() {
-        return "java.sql";
+        return "j86.java.sql";
     }
 
     /**

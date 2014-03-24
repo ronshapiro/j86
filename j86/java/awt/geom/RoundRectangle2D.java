@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.awt.geom;
+package j86.j86.java.awt.geom;
 
-import java.io.Serializable;
+import j86.java.io.Serializable;
 
 /**
  * The <code>RoundRectangle2D</code> class defines a rectangle with
@@ -446,8 +446,8 @@ public abstract class RoundRectangle2D extends RectangularShape {
      * the information necessary to satisfy the various accessor
      * methods below.
      *
-     * @see java.awt.geom.RoundRectangle2D.Float
-     * @see java.awt.geom.RoundRectangle2D.Double
+     * @see j86.j86.java.awt.geom.RoundRectangle2D.Float
+     * @see j86.j86.java.awt.geom.RoundRectangle2D.Double
      * @since 1.2
      */
     protected RoundRectangle2D() {
@@ -640,12 +640,12 @@ public abstract class RoundRectangle2D extends RectangularShape {
      * @since 1.6
      */
     public int hashCode() {
-        long bits = java.lang.Double.doubleToLongBits(getX());
-        bits += java.lang.Double.doubleToLongBits(getY()) * 37;
-        bits += java.lang.Double.doubleToLongBits(getWidth()) * 43;
-        bits += java.lang.Double.doubleToLongBits(getHeight()) * 47;
-        bits += java.lang.Double.doubleToLongBits(getArcWidth()) * 53;
-        bits += java.lang.Double.doubleToLongBits(getArcHeight()) * 59;
+        long bits = j86.java.lang.Double.doubleToLongBits(getX());
+        bits += j86.java.lang.Double.doubleToLongBits(getY()) * 37;
+        bits += j86.java.lang.Double.doubleToLongBits(getWidth()) * 43;
+        bits += j86.java.lang.Double.doubleToLongBits(getHeight()) * 47;
+        bits += j86.java.lang.Double.doubleToLongBits(getArcWidth()) * 53;
+        bits += j86.java.lang.Double.doubleToLongBits(getArcHeight()) * 59;
         return (((int) bits) ^ ((int) (bits >> 32)));
     }
 

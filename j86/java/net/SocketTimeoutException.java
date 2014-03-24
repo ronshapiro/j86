@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.net;
+package j86.java.net;
 
 /**
  * Signals that a timeout has occurred on a socket read or accept.
@@ -31,7 +31,7 @@ package java.net;
  * @since   1.4
  */
 
-public class SocketTimeoutException extends java.io.InterruptedIOException {
+public class SocketTimeoutException extends j86.java.io.InterruptedIOException {
     private static final long serialVersionUID = -8846654841826352300L;
 
     /**

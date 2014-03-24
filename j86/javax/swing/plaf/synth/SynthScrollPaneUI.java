@@ -23,26 +23,26 @@
  * questions.
  */
 
-package javax.swing.plaf.synth;
+package j86.j86.j86.javax.swing.plaf.synth;
 
-import javax.swing.*;
-import javax.swing.text.JTextComponent;
-import javax.swing.border.*;
-import javax.swing.plaf.*;
-import javax.swing.plaf.basic.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.text.JTextComponent;
+import j86.j86.javax.swing.border.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.j86.javax.swing.plaf.basic.*;
 
-import java.beans.PropertyChangeListener;
-import java.beans.PropertyChangeEvent;
+import j86.java.beans.PropertyChangeListener;
+import j86.java.beans.PropertyChangeEvent;
 
-import java.awt.*;
-import java.awt.event.ContainerListener;
-import java.awt.event.ContainerEvent;
-import java.awt.event.FocusListener;
-import java.awt.event.FocusEvent;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.ContainerListener;
+import j86.j86.java.awt.event.ContainerEvent;
+import j86.j86.java.awt.event.FocusListener;
+import j86.j86.java.awt.event.FocusEvent;
 
 /**
  * Provides the Synth L&amp;F UI delegate for
- * {@link javax.swing.JScrollPane}.
+ * {@link j86.javax.swing.JScrollPane}.
  *
  * @author Scott Violet
  * @since 1.7

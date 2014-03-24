@@ -23,14 +23,14 @@
  * questions.
  */
 
-package com.sun.jmx.remote.internal;
+package j86.com.sun.jmx.remote.internal;
 
-import java.rmi.NoSuchObjectException;
-import java.rmi.Remote;
-import java.rmi.RemoteException;
-import java.rmi.server.RMIClientSocketFactory;
-import java.rmi.server.RMIServerSocketFactory;
-import java.rmi.server.UnicastRemoteObject;
+import j86.java.rmi.NoSuchObjectException;
+import j86.java.rmi.Remote;
+import j86.java.rmi.RemoteException;
+import j86.j86.java.rmi.server.RMIClientSocketFactory;
+import j86.j86.java.rmi.server.RMIServerSocketFactory;
+import j86.j86.java.rmi.server.UnicastRemoteObject;
 
 /**
  * <p>Unpublished interface controlling how the RMI Connector Server

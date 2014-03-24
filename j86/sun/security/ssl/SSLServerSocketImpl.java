@@ -24,20 +24,20 @@
  */
 
 
-package sun.security.ssl;
+package j86.sun.security.ssl;
 
-import java.io.IOException;
-import java.net.InetAddress;
-import java.net.Socket;
+import j86.java.io.IOException;
+import j86.java.net.InetAddress;
+import j86.java.net.Socket;
 
-import java.security.AlgorithmConstraints;
+import j86.java.security.AlgorithmConstraints;
 
-import java.util.*;
+import j86.java.util.*;
 
-import javax.net.ssl.SSLException;
-import javax.net.ssl.SSLServerSocket;
-import javax.net.ssl.SSLParameters;
-import javax.net.ssl.SNIMatcher;
+import j86.j86.javax.net.ssl.SSLException;
+import j86.j86.javax.net.ssl.SSLServerSocket;
+import j86.j86.javax.net.ssl.SSLParameters;
+import j86.j86.javax.net.ssl.SNIMatcher;
 
 
 /**

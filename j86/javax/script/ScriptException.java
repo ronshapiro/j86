@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.script;
+package j86.javax.script;
 
 /**
  * The generic <code>Exception</code> class for the Scripting APIs.  Checked

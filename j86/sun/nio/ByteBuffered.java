@@ -23,17 +23,17 @@
  * questions.
  */
 
-package sun.nio;
+package j86.sun.nio;
 
-import java.nio.ByteBuffer;
-import java.io.IOException;
+import j86.java.nio.ByteBuffer;
+import j86.java.io.IOException;
 
-/** This is an interface to adapt existing APIs to use {@link java.nio.ByteBuffer
+/** This is an interface to adapt existing APIs to use {@link j86.java.nio.ByteBuffer
  *  <tt>ByteBuffers</tt>} as the underlying
  *  data format.  Only the initial producer and final consumer have to be changed.<p>
  *
- *  For example, the Zip/Jar code supports {@link java.io.InputStream <tt>InputStreams</tt>}.
- *  To make the Zip code use {@link java.nio.MappedByteBuffer <tt>MappedByteBuffers</tt>} as
+ *  For example, the Zip/Jar code supports {@link j86.java.io.InputStream <tt>InputStreams</tt>}.
+ *  To make the Zip code use {@link j86.java.nio.MappedByteBuffer <tt>MappedByteBuffers</tt>} as
  *  the underlying data structure, it can create a class of InputStream that wraps the ByteBuffer,
  *  and implements the ByteBuffered interface. A co-operating class several layers
  *  away can ask the InputStream if it is an instance of ByteBuffered, then

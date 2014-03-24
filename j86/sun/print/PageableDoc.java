@@ -23,19 +23,19 @@
  * questions.
  */
 
-package sun.print;
+package j86.sun.print;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.Reader;
-import java.io.UnsupportedEncodingException;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.io.Reader;
+import j86.java.io.UnsupportedEncodingException;
 
-import java.awt.print.Pageable;
+import j86.j86.java.awt.print.Pageable;
 
-import javax.print.Doc;
-import javax.print.DocFlavor;
-import javax.print.attribute.DocAttributeSet;
-import javax.print.attribute.HashDocAttributeSet;
+import j86.javax.print.Doc;
+import j86.javax.print.DocFlavor;
+import j86.j86.javax.print.attribute.DocAttributeSet;
+import j86.j86.javax.print.attribute.HashDocAttributeSet;
 
 public class PageableDoc implements Doc {
 

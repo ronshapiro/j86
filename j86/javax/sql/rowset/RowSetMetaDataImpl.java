@@ -23,13 +23,13 @@
  * questions.
  */
 
-package javax.sql.rowset;
+package j86.j86.javax.sql.rowset;
 
-import java.sql.*;
-import javax.sql.*;
-import java.io.*;
+import j86.java.sql.*;
+import j86.javax.sql.*;
+import j86.java.io.*;
 
-import java.lang.reflect.*;
+import j86.j86.j86.java.lang.reflect.*;
 
 /**
  * Provides implementations for the methods that set and get
@@ -88,16 +88,16 @@ public class RowSetMetaDataImpl implements RowSetMetaData,  Serializable {
      * Checks to see that the given SQL type is a valid column type and throws an
      * <code>SQLException</code> object if it is not.
      * To be valid, a SQL type must be one of the constant values
-     * in the <code><a href="../../sql/Types.html">java.sql.Types</a></code>
+     * in the <code><a href="../../sql/Types.html">j86.java.sql.Types</a></code>
      * class.
      *
-     * @param SQLType an <code>int</code> defined in the class <code>java.sql.Types</code>
+     * @param SQLType an <code>int</code> defined in the class <code>j86.java.sql.Types</code>
      * @throws SQLException if the given <code>int</code> is not a constant defined in the
-     *         class <code>java.sql.Types</code>
+     *         class <code>j86.java.sql.Types</code>
      */
     private void checkColType(int SQLType) throws SQLException {
         try {
-            Class<?> c = java.sql.Types.class;
+            Class<?> c = j86.java.sql.Types.class;
             Field[] publicFields = c.getFields();
             int fieldValue = 0;
             for (int i = 0; i < publicFields.length; i++) {
@@ -439,20 +439,20 @@ public class RowSetMetaDataImpl implements RowSetMetaData,  Serializable {
 
     /**
      * Sets the SQL type code for values stored in the designated column
-     * to the given type code from the class <code>java.sql.Types</code>.
+     * to the given type code from the class <code>j86.java.sql.Types</code>.
      *
      * @param columnIndex the first column is 1, the second is 2, and so on;
      *        must be between <code>1</code> and the number of columns, inclusive
      * @param SQLType the designated column's SQL type, which must be one of the
-     *                constants in the class <code>java.sql.Types</code>
+     *                constants in the class <code>j86.java.sql.Types</code>
      * @throws SQLException if a database access error occurs,
      *         the given column number is out of bounds, or the column type
      *         specified is not one of the constants in
-     *         <code>java.sql.Types</code>
-     * @see java.sql.Types
+     *         <code>j86.java.sql.Types</code>
+     * @see j86.java.sql.Types
      */
     public void setColumnType(int columnIndex, int SQLType) throws SQLException {
-        // examine java.sql.Type reflectively, loop on the fields and check
+        // examine j86.java.sql.Type reflectively, loop on the fields and check
         // this. Separate out into a private method
         checkColType(SQLType);
         checkColRange(columnIndex);
@@ -723,7 +723,7 @@ public class RowSetMetaDataImpl implements RowSetMetaData,  Serializable {
     }
 
     /**
-     * Retrieves the type code (one of the <code>java.sql.Types</code>
+     * Retrieves the type code (one of the <code>j86.java.sql.Types</code>
      * constants) for the SQL type of the value stored in the
      * designated column.
      *
@@ -733,7 +733,7 @@ public class RowSetMetaDataImpl implements RowSetMetaData,  Serializable {
      * stored in the designated column
      * @throws SQLException if a database access error occurs
      * or the given column number is out of bounds
-     * @see java.sql.Types
+     * @see j86.java.sql.Types
      */
     public int getColumnType(int columnIndex) throws SQLException {
         checkColRange(columnIndex);
@@ -809,7 +809,7 @@ public class RowSetMetaDataImpl implements RowSetMetaData,  Serializable {
      * programming language to which a value in the designated column
      * will be mapped.  For example, if the value is an <code>int</code>,
      * the class name returned by this method will be
-     * <code>java.lang.Integer</code>.
+     * <code>j86.java.lang.Integer</code>.
      * <P>
      * If the value in the designated column has a custom mapping,
      * this method returns the name of the class that implements
@@ -835,36 +835,36 @@ public class RowSetMetaDataImpl implements RowSetMetaData,  Serializable {
 
         case Types.NUMERIC:
         case Types.DECIMAL:
-            className = java.math.BigDecimal.class.getName();
+            className = j86.java.math.BigDecimal.class.getName();
             break;
 
         case Types.BIT:
-            className = java.lang.Boolean.class.getName();
+            className = j86.java.lang.Boolean.class.getName();
             break;
 
         case Types.TINYINT:
-            className = java.lang.Byte.class.getName();
+            className = j86.java.lang.Byte.class.getName();
             break;
 
         case Types.SMALLINT:
-            className = java.lang.Short.class.getName();
+            className = j86.java.lang.Short.class.getName();
             break;
 
         case Types.INTEGER:
-            className = java.lang.Integer.class.getName();
+            className = j86.java.lang.Integer.class.getName();
             break;
 
         case Types.BIGINT:
-            className = java.lang.Long.class.getName();
+            className = j86.java.lang.Long.class.getName();
             break;
 
         case Types.REAL:
-            className = java.lang.Float.class.getName();
+            className = j86.java.lang.Float.class.getName();
             break;
 
         case Types.FLOAT:
         case Types.DOUBLE:
-            className = java.lang.Double.class.getName();
+            className = j86.java.lang.Double.class.getName();
             break;
 
         case Types.BINARY:
@@ -874,23 +874,23 @@ public class RowSetMetaDataImpl implements RowSetMetaData,  Serializable {
             break;
 
         case Types.DATE:
-            className = java.sql.Date.class.getName();
+            className = j86.java.sql.Date.class.getName();
             break;
 
         case Types.TIME:
-            className = java.sql.Time.class.getName();
+            className = j86.java.sql.Time.class.getName();
             break;
 
         case Types.TIMESTAMP:
-            className = java.sql.Timestamp.class.getName();
+            className = j86.java.sql.Timestamp.class.getName();
             break;
 
         case Types.BLOB:
-            className = java.sql.Blob.class.getName();
+            className = j86.java.sql.Blob.class.getName();
             break;
 
         case Types.CLOB:
-            className = java.sql.Clob.class.getName();
+            className = j86.java.sql.Clob.class.getName();
             break;
         }
 
@@ -908,10 +908,10 @@ public class RowSetMetaDataImpl implements RowSetMetaData,  Serializable {
      *
      * @param iface A Class defining an interface that the result must implement.
      * @return an object that implements the interface. May be a proxy for the actual implementing object.
-     * @throws java.sql.SQLException If no object found that implements the interface
+     * @throws j86.java.sql.SQLException If no object found that implements the interface
      * @since 1.6
      */
-    public <T> T unwrap(java.lang.Class<T> iface) throws java.sql.SQLException {
+    public <T> T unwrap(j86.java.lang.Class<T> iface) throws j86.java.sql.SQLException {
 
         if(isWrapperFor(iface)) {
             return iface.cast(this);
@@ -931,7 +931,7 @@ public class RowSetMetaDataImpl implements RowSetMetaData,  Serializable {
      *
      * @param interfaces a Class defining an interface.
      * @return true if this implements the interface or directly or indirectly wraps an object that does.
-     * @throws java.sql.SQLException  if an error occurs while determining whether this is a wrapper
+     * @throws j86.java.sql.SQLException  if an error occurs while determining whether this is a wrapper
      * for an object with the given interface.
      * @since 1.6
      */
@@ -1063,7 +1063,7 @@ public class RowSetMetaDataImpl implements RowSetMetaData,  Serializable {
         public String catName;
 
         /**
-         * The field that holds the type code from the class <code>java.sql.Types</code>
+         * The field that holds the type code from the class <code>j86.java.sql.Types</code>
          * indicating the type of the value in this column.
          *
          * @serial

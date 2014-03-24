@@ -23,20 +23,20 @@
  * questions.
  */
 
-package java.util.jar;
+package j86.j86.java.util.jar;
 
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
-import java.util.Collection;
-import java.util.AbstractSet;
-import java.util.Iterator;
-import sun.util.logging.PlatformLogger;
-import java.util.Comparator;
-import sun.misc.ASCIICaseInsensitiveComparator;
+import j86.java.io.DataInputStream;
+import j86.java.io.DataOutputStream;
+import j86.java.io.IOException;
+import j86.java.util.HashMap;
+import j86.java.util.Map;
+import j86.java.util.Set;
+import j86.java.util.Collection;
+import j86.java.util.AbstractSet;
+import j86.java.util.Iterator;
+import j86.j86.sun.util.logging.PlatformLogger;
+import j86.java.util.Comparator;
+import j86.sun.misc.ASCIICaseInsensitiveComparator;
 
 /**
  * The Attributes class maps Manifest attribute names to associated string
@@ -419,7 +419,7 @@ public class Attributes implements Map<Object,Object>, Cloneable {
             }
             try {
                 if ((putValue(name, value) != null) && (!lineContinued)) {
-                    PlatformLogger.getLogger("java.util.jar").warning(
+                    PlatformLogger.getLogger("j86.j86.java.util.jar").warning(
                                      "Duplicate name in Manifest: " + name
                                      + ".\n"
                                      + "Ensure that the manifest does not "

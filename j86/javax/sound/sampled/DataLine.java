@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.sound.sampled;
+package j86.javax.sound.sampled;
 
-import java.util.Arrays;
+import j86.java.util.Arrays;
 
 /**
  * <code>DataLine</code> adds media-related functionality to its
@@ -362,7 +362,7 @@ public interface DataLine extends Line {
          * <code>true</code> for all formats returned by <code>getFormats()</code>.
          *
          * Some fields in the AudioFormat instances can be set to
-         * {@link javax.sound.sampled.AudioSystem#NOT_SPECIFIED NOT_SPECIFIED}
+         * {@link j86.javax.sound.sampled.AudioSystem#NOT_SPECIFIED NOT_SPECIFIED}
          * if that field does not apply to the format,
          * or if the format supports a wide range of values for that field.
          * For example, a multi-channel device supporting up to

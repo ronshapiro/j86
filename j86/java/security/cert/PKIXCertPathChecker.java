@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.security.cert;
+package j86.j86.java.security.cert;
 
-import java.util.Collection;
-import java.util.Set;
+import j86.java.util.Collection;
+import j86.java.util.Set;
 
 /**
  * An abstract class that performs one or more checks on an
@@ -169,11 +169,11 @@ public abstract class PKIXCertPathChecker
      * {@inheritDoc}
      *
      * <p>This implementation calls
-     * {@code check(cert, java.util.Collections.<String>emptySet())}.
+     * {@code check(cert, j86.java.util.Collections.<String>emptySet())}.
      */
     @Override
     public void check(Certificate cert) throws CertPathValidatorException {
-        check(cert, java.util.Collections.<String>emptySet());
+        check(cert, j86.java.util.Collections.<String>emptySet());
     }
 
     /**

@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.tools.jstat;
+package j86.sun.tools.jstat;
 
-import java.io.*;
-import java.util.*;
+import j86.java.io.*;
+import j86.java.util.*;
 
 /**
  * A class implementing a simple predictive parser for output format

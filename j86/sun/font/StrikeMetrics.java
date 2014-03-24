@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.font;
+package j86.sun.font;
 
-import java.awt.geom.AffineTransform;
-import java.awt.geom.Point2D;
+import j86.j86.java.awt.geom.AffineTransform;
+import j86.j86.java.awt.geom.Point2D;
 
 /* These are font metrics: they are in user space, not device space.
  * Hence they are not truly "strike" metrics. However it is convenient to

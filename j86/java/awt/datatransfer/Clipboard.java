@@ -23,17 +23,17 @@
  * questions.
  */
 
-package java.awt.datatransfer;
+package j86.j86.java.awt.datatransfer;
 
-import java.awt.EventQueue;
+import j86.java.awt.EventQueue;
 
-import java.util.Set;
-import java.util.HashSet;
-import java.util.Arrays;
+import j86.java.util.Set;
+import j86.java.util.HashSet;
+import j86.java.util.Arrays;
 
-import java.io.IOException;
+import j86.java.io.IOException;
 
-import sun.awt.EventListenerAggregate;
+import j86.sun.awt.EventListenerAggregate;
 
 /**
  * A class that implements a mechanism to transfer data using
@@ -44,8 +44,8 @@ import sun.awt.EventListenerAggregate;
  * {@link DataFlavor}s available on this clipboard (see
  * {@link #addFlavorListener}).
  *
- * @see java.awt.Toolkit#getSystemClipboard
- * @see java.awt.Toolkit#getSystemSelection
+ * @see j86.java.awt.Toolkit#getSystemClipboard
+ * @see j86.java.awt.Toolkit#getSystemSelection
  *
  * @author      Amy Fowler
  * @author      Alexander Gerasimov
@@ -76,7 +76,7 @@ public class Clipboard {
     /**
      * Creates a clipboard object.
      *
-     * @see java.awt.Toolkit#getSystemClipboard
+     * @see j86.java.awt.Toolkit#getSystemClipboard
      */
     public Clipboard(String name) {
         this.name = name;
@@ -85,7 +85,7 @@ public class Clipboard {
     /**
      * Returns the name of this clipboard object.
      *
-     * @see java.awt.Toolkit#getSystemClipboard
+     * @see j86.java.awt.Toolkit#getSystemClipboard
      */
     public String getName() {
         return name;
@@ -114,7 +114,7 @@ public class Clipboard {
      *                 clipboard content
      * @param owner the object which owns the clipboard content
      * @throws IllegalStateException if the clipboard is currently unavailable
-     * @see java.awt.Toolkit#getSystemClipboard
+     * @see j86.java.awt.Toolkit#getSystemClipboard
      */
     public synchronized void setContents(Transferable contents, ClipboardOwner owner) {
         final ClipboardOwner oldOwner = this.owner;
@@ -145,7 +145,7 @@ public class Clipboard {
      * @param requestor the object requesting the clip data  (not used)
      * @return the current transferable object on the clipboard
      * @throws IllegalStateException if the clipboard is currently unavailable
-     * @see java.awt.Toolkit#getSystemClipboard
+     * @see j86.java.awt.Toolkit#getSystemClipboard
      */
     public synchronized Transferable getContents(Object requestor) {
         return contents;

@@ -23,21 +23,21 @@
  * questions.
  */
 
-package com.sun.jndi.url.dns;
+package j86.com.sun.jndi.url.dns;
 
 
-import java.net.MalformedURLException;
-import java.util.Hashtable;
+import j86.java.net.MalformedURLException;
+import j86.java.util.Hashtable;
 
-import javax.naming.*;
-import javax.naming.spi.ResolveResult;
-import com.sun.jndi.dns.*;
-import com.sun.jndi.toolkit.url.GenericURLDirContext;
+import j86.javax.naming.*;
+import j86.j86.javax.naming.spi.ResolveResult;
+import j86.com.sun.jndi.dns.*;
+import j86.com.sun.jndi.toolkit.url.GenericURLDirContext;
 
 
 /**
  * A DNS URL context resolves names that are DNS pseudo-URLs.
- * See com.sun.jndi.dns.DnsUrl for a description of the URL format.
+ * See j86.com.sun.jndi.dns.DnsUrl for a description of the URL format.
  *
  * @author Scott Seligman
  */

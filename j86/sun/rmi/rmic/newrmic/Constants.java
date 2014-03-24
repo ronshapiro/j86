@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.rmi.rmic.newrmic;
+package j86.j86.sun.rmi.rmic.newrmic;
 
 /**
  * Constants potentially useful to all rmic generators.
@@ -41,8 +41,8 @@ public final class Constants {
     /*
      * fully-qualified names of types used by rmic
      */
-    public static final String REMOTE = "java.rmi.Remote";
-    public static final String EXCEPTION = "java.lang.Exception";
-    public static final String REMOTE_EXCEPTION = "java.rmi.RemoteException";
-    public static final String RUNTIME_EXCEPTION = "java.lang.RuntimeException";
+    public static final String REMOTE = "j86.java.rmi.Remote";
+    public static final String EXCEPTION = "j86.java.lang.Exception";
+    public static final String REMOTE_EXCEPTION = "j86.java.rmi.RemoteException";
+    public static final String RUNTIME_EXCEPTION = "j86.java.lang.RuntimeException";
 }

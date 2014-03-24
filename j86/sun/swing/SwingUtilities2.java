@@ -23,46 +23,46 @@
  * questions.
  */
 
-package sun.swing;
+package j86.sun.swing;
 
-import java.security.*;
-import java.lang.reflect.*;
-import java.awt.*;
-import static java.awt.RenderingHints.*;
-import java.awt.event.*;
-import java.awt.font.*;
-import java.awt.geom.*;
-import java.awt.print.PrinterGraphics;
-import java.text.CharacterIterator;
-import java.text.AttributedCharacterIterator;
-import java.text.AttributedString;
+import j86.java.security.*;
+import j86.j86.j86.java.lang.reflect.*;
+import j86.java.awt.*;
+import static j86.java.awt.RenderingHints.*;
+import j86.j86.java.awt.event.*;
+import j86.j86.java.awt.font.*;
+import j86.j86.java.awt.geom.*;
+import j86.j86.java.awt.print.PrinterGraphics;
+import j86.java.text.CharacterIterator;
+import j86.java.text.AttributedCharacterIterator;
+import j86.java.text.AttributedString;
 
-import javax.swing.*;
-import javax.swing.event.TreeModelEvent;
-import javax.swing.text.Highlighter;
-import javax.swing.text.JTextComponent;
-import javax.swing.text.DefaultHighlighter;
-import javax.swing.text.DefaultCaret;
-import javax.swing.table.TableCellRenderer;
-import javax.swing.table.TableColumnModel;
-import javax.swing.tree.TreeModel;
-import javax.swing.tree.TreePath;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.event.TreeModelEvent;
+import j86.j86.javax.swing.text.Highlighter;
+import j86.j86.javax.swing.text.JTextComponent;
+import j86.j86.javax.swing.text.DefaultHighlighter;
+import j86.j86.javax.swing.text.DefaultCaret;
+import j86.j86.javax.swing.table.TableCellRenderer;
+import j86.j86.javax.swing.table.TableColumnModel;
+import j86.j86.javax.swing.tree.TreeModel;
+import j86.j86.javax.swing.tree.TreePath;
 
-import sun.swing.PrintColorUIResource;
-import sun.swing.ImageIconUIResource;
-import sun.print.ProxyPrintGraphics;
-import sun.awt.*;
-import sun.security.action.GetPropertyAction;
-import sun.security.util.SecurityConstants;
-import java.io.*;
-import java.util.*;
-import sun.font.FontDesignMetrics;
-import sun.font.FontUtilities;
-import sun.java2d.SunGraphicsEnvironment;
+import j86.sun.swing.PrintColorUIResource;
+import j86.sun.swing.ImageIconUIResource;
+import j86.sun.print.ProxyPrintGraphics;
+import j86.sun.awt.*;
+import j86.sun.security.action.GetPropertyAction;
+import j86.sun.security.util.SecurityConstants;
+import j86.java.io.*;
+import j86.java.util.*;
+import j86.sun.font.FontDesignMetrics;
+import j86.sun.font.FontUtilities;
+import j86.sun.java2d.SunGraphicsEnvironment;
 
-import java.util.concurrent.Callable;
-import java.util.concurrent.Future;
-import java.util.concurrent.FutureTask;
+import j86.j86.java.util.concurrent.Callable;
+import j86.j86.java.util.concurrent.Future;
+import j86.j86.java.util.concurrent.FutureTask;
 
 /**
  * A collection of utility methods for Swing.
@@ -1100,8 +1100,8 @@ public class SwingUtilities2 {
      * foreground for the specified highlight.
      *
      * Returns true only if the highlight painter for the specified highlight
-     * is the swing painter (whether inner class of javax.swing.text.DefaultHighlighter
-     * or com.sun.java.swing.plaf.windows.WindowsTextUI) and its background color
+     * is the swing painter (whether inner class of j86.j86.javax.swing.text.DefaultHighlighter
+     * or j86.j86.com.sun.java.swing.plaf.windows.WindowsTextUI) and its background color
      * is null or equals to the selection color of the text component.
      *
      * This is a hack for fixing both bugs 4761990 and 5003294
@@ -1109,8 +1109,8 @@ public class SwingUtilities2 {
     public static boolean useSelectedTextColor(Highlighter.Highlight h, JTextComponent c) {
         Highlighter.HighlightPainter painter = h.getPainter();
         String painterClass = painter.getClass().getName();
-        if (painterClass.indexOf("javax.swing.text.DefaultHighlighter") != 0 &&
-                painterClass.indexOf("com.sun.java.swing.plaf.windows.WindowsTextUI") != 0) {
+        if (painterClass.indexOf("j86.j86.javax.swing.text.DefaultHighlighter") != 0 &&
+                painterClass.indexOf("j86.j86.com.sun.java.swing.plaf.windows.WindowsTextUI") != 0) {
             return false;
         }
         try {
@@ -1272,7 +1272,7 @@ public class SwingUtilities2 {
         if (inputEvent_CanAccessSystemClipboard_Field == null) {
             inputEvent_CanAccessSystemClipboard_Field =
                 AccessController.doPrivileged(
-                    new java.security.PrivilegedAction<Field>() {
+                    new j86.java.security.PrivilegedAction<Field>() {
                         public Field run() {
                             try {
                                 Field field = InputEvent.class.
@@ -1464,8 +1464,8 @@ public class SwingUtilities2 {
                  * bytes, which we can convert to an image.
                  */
                 byte[] buffer =
-                    java.security.AccessController.doPrivileged(
-                        new java.security.PrivilegedAction<byte[]>() {
+                    j86.java.security.AccessController.doPrivileged(
+                        new j86.java.security.PrivilegedAction<byte[]>() {
                     public byte[] run() {
                         try {
                             InputStream resource = null;
@@ -1904,7 +1904,7 @@ public class SwingUtilities2 {
      * @return  the index of the corresponding column in the model
      *
      * @see JTable#convertColumnIndexToModel(int)
-     * @see javax.swing.plaf.basic.BasicTableHeaderUI
+     * @see j86.j86.j86.javax.swing.plaf.basic.BasicTableHeaderUI
      */
     public static int convertColumnIndexToModel(TableColumnModel cm,
                                                 int viewColumnIndex) {
@@ -1927,7 +1927,7 @@ public class SwingUtilities2 {
      * @return the index of the corresponding column in the view
      *
      * @see JTable#convertColumnIndexToView(int)
-     * @see javax.swing.plaf.basic.BasicTableHeaderUI
+     * @see j86.j86.j86.javax.swing.plaf.basic.BasicTableHeaderUI
      */
     public static int convertColumnIndexToView(TableColumnModel cm,
                                         int modelColumnIndex) {

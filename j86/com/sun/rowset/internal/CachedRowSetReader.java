@@ -23,17 +23,17 @@
  * questions.
  */
 
-package com.sun.rowset.internal;
+package j86.j86.com.sun.rowset.internal;
 
-import java.sql.*;
-import javax.sql.*;
-import javax.naming.*;
-import java.io.*;
-import java.lang.reflect.*;
+import j86.java.sql.*;
+import j86.javax.sql.*;
+import j86.javax.naming.*;
+import j86.java.io.*;
+import j86.j86.j86.java.lang.reflect.*;
 
-import com.sun.rowset.*;
-import javax.sql.rowset.*;
-import javax.sql.rowset.spi.*;
+import j86.com.sun.rowset.*;
+import j86.j86.javax.sql.rowset.*;
+import j86.j86.j86.javax.sql.rowset.spi.*;
 
 /**
  * The facility called by the <code>RIOptimisticProvider</code> object
@@ -53,9 +53,9 @@ import javax.sql.rowset.spi.*;
  * reader by invoking the <code>SyncProvider.getRowSetReader()</code> method.
  *
  * @author Jonathan Bruce
- * @see javax.sql.rowset.spi.SyncProvider
- * @see javax.sql.rowset.spi.SyncFactory
- * @see javax.sql.rowset.spi.SyncFactoryException
+ * @see j86.j86.j86.javax.sql.rowset.spi.SyncProvider
+ * @see j86.j86.j86.javax.sql.rowset.spi.SyncFactory
+ * @see j86.j86.j86.javax.sql.rowset.spi.SyncFactoryException
  */
 public class CachedRowSetReader implements RowSetReader, Serializable {
 
@@ -330,7 +330,7 @@ public class CachedRowSetReader implements RowSetReader, Serializable {
                      return ds.getConnection();
                 }
             }
-            catch (javax.naming.NamingException ex) {
+            catch (j86.javax.naming.NamingException ex) {
                 SQLException sqlEx = new SQLException(resBundle.handleGetObject("crsreader.connect").toString());
                 sqlEx.initCause(ex);
                 throw sqlEx;
@@ -386,14 +386,14 @@ public class CachedRowSetReader implements RowSetReader, Serializable {
                         continue;
                     }
 
-                    if (param[0] instanceof java.sql.Date ||
-                        param[0] instanceof java.sql.Time ||
-                        param[0] instanceof java.sql.Timestamp) {
+                    if (param[0] instanceof j86.java.sql.Date ||
+                        param[0] instanceof j86.java.sql.Time ||
+                        param[0] instanceof j86.java.sql.Timestamp) {
                         System.err.println(resBundle.handleGetObject("crsreader.datedetected").toString());
-                        if (param[1] instanceof java.util.Calendar) {
+                        if (param[1] instanceof j86.java.util.Calendar) {
                             System.err.println(resBundle.handleGetObject("crsreader.caldetected").toString());
-                            pstmt.setDate(i + 1, (java.sql.Date)param[0],
-                                       (java.util.Calendar)param[1]);
+                            pstmt.setDate(i + 1, (j86.java.sql.Date)param[0],
+                                       (j86.java.util.Calendar)param[1]);
                             continue;
                         }
                         else {
@@ -423,21 +423,21 @@ public class CachedRowSetReader implements RowSetReader, Serializable {
                         continue;
                     }
 
-                    if (param[0] instanceof java.io.InputStream) {
+                    if (param[0] instanceof j86.java.io.InputStream) {
                         switch (((Integer)param[2]).intValue()) {
                         case CachedRowSetImpl.UNICODE_STREAM_PARAM:
                             pstmt.setUnicodeStream(i + 1,
-                                                (java.io.InputStream)param[0],
+                                                (j86.java.io.InputStream)param[0],
                                                 ((Integer)param[1]).intValue());
                             break;
                         case CachedRowSetImpl.BINARY_STREAM_PARAM:
                             pstmt.setBinaryStream(i + 1,
-                                               (java.io.InputStream)param[0],
+                                               (j86.java.io.InputStream)param[0],
                                                ((Integer)param[1]).intValue());
                             break;
                         case CachedRowSetImpl.ASCII_STREAM_PARAM:
                             pstmt.setAsciiStream(i + 1,
-                                              (java.io.InputStream)param[0],
+                                              (j86.java.io.InputStream)param[0],
                                               ((Integer)param[1]).intValue());
                             break;
                         default:

@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.management.remote;
+package j86.j86.javax.management.remote;
 
-import java.security.Principal;
-import javax.security.auth.Subject;
+import j86.java.security.Principal;
+import j86.javax.security.auth.Subject;
 
 /**
  * <p>Interface to define how remote credentials are converted into a

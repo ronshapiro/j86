@@ -20,23 +20,23 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.sun.org.apache.xml.internal.security.algorithms;
+package j86.j86.com.sun.org.apache.xml.internal.security.algorithms;
 
-import java.security.Key;
-import java.security.SecureRandom;
-import java.security.spec.AlgorithmParameterSpec;
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
+import j86.java.security.Key;
+import j86.java.security.SecureRandom;
+import j86.j86.java.security.spec.AlgorithmParameterSpec;
+import j86.java.util.Map;
+import j86.j86.java.util.concurrent.ConcurrentHashMap;
 
-import com.sun.org.apache.xml.internal.security.algorithms.implementations.IntegrityHmac;
-import com.sun.org.apache.xml.internal.security.algorithms.implementations.SignatureBaseRSA;
-import com.sun.org.apache.xml.internal.security.algorithms.implementations.SignatureDSA;
-import com.sun.org.apache.xml.internal.security.algorithms.implementations.SignatureECDSA;
-import com.sun.org.apache.xml.internal.security.exceptions.AlgorithmAlreadyRegisteredException;
-import com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
-import com.sun.org.apache.xml.internal.security.signature.XMLSignature;
-import com.sun.org.apache.xml.internal.security.signature.XMLSignatureException;
-import com.sun.org.apache.xml.internal.security.utils.Constants;
+import j86.j86.j86.com.sun.org.apache.xml.internal.security.algorithms.implementations.IntegrityHmac;
+import j86.j86.j86.com.sun.org.apache.xml.internal.security.algorithms.implementations.SignatureBaseRSA;
+import j86.j86.j86.com.sun.org.apache.xml.internal.security.algorithms.implementations.SignatureDSA;
+import j86.j86.j86.com.sun.org.apache.xml.internal.security.algorithms.implementations.SignatureECDSA;
+import j86.j86.com.sun.org.apache.xml.internal.security.exceptions.AlgorithmAlreadyRegisteredException;
+import j86.j86.com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+import j86.j86.com.sun.org.apache.xml.internal.security.signature.XMLSignature;
+import j86.j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureException;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.Constants;
 import org.w3c.dom.Attr;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -50,8 +50,8 @@ import org.w3c.dom.Element;
 public class SignatureAlgorithm extends Algorithm {
 
     /** {@link org.apache.commons.logging} logging facility */
-    private static java.util.logging.Logger log =
-        java.util.logging.Logger.getLogger(SignatureAlgorithm.class.getName());
+    private static j86.j86.java.util.logging.Logger log =
+        j86.j86.java.util.logging.Logger.getLogger(SignatureAlgorithm.class.getName());
 
     /** All available algorithm classes are registered here */
     private static Map<String, Class<? extends SignatureAlgorithmSpi>> algorithmHash =
@@ -147,8 +147,8 @@ public class SignatureAlgorithm extends Algorithm {
         try {
             Class<? extends SignatureAlgorithmSpi> implementingClass =
                 algorithmHash.get(algorithmURI);
-            if (log.isLoggable(java.util.logging.Level.FINE)) {
-                log.log(java.util.logging.Level.FINE, "Create URI \"" + algorithmURI + "\" class \""
+            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                log.log(j86.j86.java.util.logging.Level.FINE, "Create URI \"" + algorithmURI + "\" class \""
                    + implementingClass + "\"");
             }
             return implementingClass.newInstance();
@@ -166,10 +166,10 @@ public class SignatureAlgorithm extends Algorithm {
 
 
     /**
-     * Proxy method for {@link java.security.Signature#sign()}
-     * which is executed on the internal {@link java.security.Signature} object.
+     * Proxy method for {@link j86.java.security.Signature#sign()}
+     * which is executed on the internal {@link j86.java.security.Signature} object.
      *
-     * @return the result of the {@link java.security.Signature#sign()} method
+     * @return the result of the {@link j86.java.security.Signature#sign()} method
      * @throws XMLSignatureException
      */
     public byte[] sign() throws XMLSignatureException {
@@ -177,10 +177,10 @@ public class SignatureAlgorithm extends Algorithm {
     }
 
     /**
-     * Proxy method for {@link java.security.Signature#getAlgorithm}
-     * which is executed on the internal {@link java.security.Signature} object.
+     * Proxy method for {@link j86.java.security.Signature#getAlgorithm}
+     * which is executed on the internal {@link j86.java.security.Signature} object.
      *
-     * @return the result of the {@link java.security.Signature#getAlgorithm} method
+     * @return the result of the {@link j86.java.security.Signature#getAlgorithm} method
      */
     public String getJCEAlgorithmString() {
         return signatureAlgorithm.engineGetJCEAlgorithmString();
@@ -196,8 +196,8 @@ public class SignatureAlgorithm extends Algorithm {
     }
 
     /**
-     * Proxy method for {@link java.security.Signature#update(byte[])}
-     * which is executed on the internal {@link java.security.Signature} object.
+     * Proxy method for {@link j86.java.security.Signature#update(byte[])}
+     * which is executed on the internal {@link j86.java.security.Signature} object.
      *
      * @param input
      * @throws XMLSignatureException
@@ -207,8 +207,8 @@ public class SignatureAlgorithm extends Algorithm {
     }
 
     /**
-     * Proxy method for {@link java.security.Signature#update(byte)}
-     * which is executed on the internal {@link java.security.Signature} object.
+     * Proxy method for {@link j86.java.security.Signature#update(byte)}
+     * which is executed on the internal {@link j86.java.security.Signature} object.
      *
      * @param input
      * @throws XMLSignatureException
@@ -218,8 +218,8 @@ public class SignatureAlgorithm extends Algorithm {
     }
 
     /**
-     * Proxy method for {@link java.security.Signature#update(byte[], int, int)}
-     * which is executed on the internal {@link java.security.Signature} object.
+     * Proxy method for {@link j86.java.security.Signature#update(byte[], int, int)}
+     * which is executed on the internal {@link j86.java.security.Signature} object.
      *
      * @param buf
      * @param offset
@@ -231,8 +231,8 @@ public class SignatureAlgorithm extends Algorithm {
     }
 
     /**
-     * Proxy method for {@link java.security.Signature#initSign(java.security.PrivateKey)}
-     * which is executed on the internal {@link java.security.Signature} object.
+     * Proxy method for {@link j86.java.security.Signature#initSign(java.security.PrivateKey)}
+     * which is executed on the internal {@link j86.java.security.Signature} object.
      *
      * @param signingKey
      * @throws XMLSignatureException
@@ -242,9 +242,9 @@ public class SignatureAlgorithm extends Algorithm {
     }
 
     /**
-     * Proxy method for {@link java.security.Signature#initSign(java.security.PrivateKey,
-     * java.security.SecureRandom)}
-     * which is executed on the internal {@link java.security.Signature} object.
+     * Proxy method for {@link j86.java.security.Signature#initSign(java.security.PrivateKey,
+     * j86.java.security.SecureRandom)}
+     * which is executed on the internal {@link j86.java.security.Signature} object.
      *
      * @param signingKey
      * @param secureRandom
@@ -255,8 +255,8 @@ public class SignatureAlgorithm extends Algorithm {
     }
 
     /**
-     * Proxy method for {@link java.security.Signature#initSign(java.security.PrivateKey)}
-     * which is executed on the internal {@link java.security.Signature} object.
+     * Proxy method for {@link j86.java.security.Signature#initSign(java.security.PrivateKey)}
+     * which is executed on the internal {@link j86.java.security.Signature} object.
      *
      * @param signingKey
      * @param algorithmParameterSpec
@@ -269,9 +269,9 @@ public class SignatureAlgorithm extends Algorithm {
     }
 
     /**
-     * Proxy method for {@link java.security.Signature#setParameter(
-     * java.security.spec.AlgorithmParameterSpec)}
-     * which is executed on the internal {@link java.security.Signature} object.
+     * Proxy method for {@link j86.java.security.Signature#setParameter(
+     * j86.j86.java.security.spec.AlgorithmParameterSpec)}
+     * which is executed on the internal {@link j86.java.security.Signature} object.
      *
      * @param params
      * @throws XMLSignatureException
@@ -281,8 +281,8 @@ public class SignatureAlgorithm extends Algorithm {
     }
 
     /**
-     * Proxy method for {@link java.security.Signature#initVerify(java.security.PublicKey)}
-     * which is executed on the internal {@link java.security.Signature} object.
+     * Proxy method for {@link j86.java.security.Signature#initVerify(java.security.PublicKey)}
+     * which is executed on the internal {@link j86.java.security.Signature} object.
      *
      * @param verificationKey
      * @throws XMLSignatureException
@@ -292,8 +292,8 @@ public class SignatureAlgorithm extends Algorithm {
     }
 
     /**
-     * Proxy method for {@link java.security.Signature#verify(byte[])}
-     * which is executed on the internal {@link java.security.Signature} object.
+     * Proxy method for {@link j86.java.security.Signature#verify(byte[])}
+     * which is executed on the internal {@link j86.java.security.Signature} object.
      *
      * @param signature
      * @return true if if the signature is valid.
@@ -326,8 +326,8 @@ public class SignatureAlgorithm extends Algorithm {
     public static void register(String algorithmURI, String implementingClass)
        throws AlgorithmAlreadyRegisteredException, ClassNotFoundException,
            XMLSignatureException {
-        if (log.isLoggable(java.util.logging.Level.FINE)) {
-            log.log(java.util.logging.Level.FINE, "Try to register " + algorithmURI + " " + implementingClass);
+        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+            log.log(j86.j86.java.util.logging.Level.FINE, "Try to register " + algorithmURI + " " + implementingClass);
         }
 
         // are we already registered?
@@ -361,8 +361,8 @@ public class SignatureAlgorithm extends Algorithm {
     public static void register(String algorithmURI, Class<? extends SignatureAlgorithmSpi> implementingClass)
        throws AlgorithmAlreadyRegisteredException, ClassNotFoundException,
            XMLSignatureException {
-        if (log.isLoggable(java.util.logging.Level.FINE)) {
-            log.log(java.util.logging.Level.FINE, "Try to register " + algorithmURI + " " + implementingClass);
+        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+            log.log(j86.j86.java.util.logging.Level.FINE, "Try to register " + algorithmURI + " " + implementingClass);
         }
 
         // are we already registered?

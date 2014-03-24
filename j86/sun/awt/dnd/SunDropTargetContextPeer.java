@@ -23,41 +23,41 @@
  * questions.
  */
 
-package sun.awt.dnd;
+package j86.j86.sun.awt.dnd;
 
-import java.awt.Component;
-import java.awt.Point;
+import j86.java.awt.Component;
+import j86.java.awt.Point;
 
-import java.awt.datatransfer.DataFlavor;
-import java.awt.datatransfer.Transferable;
-import java.awt.datatransfer.UnsupportedFlavorException;
+import j86.j86.java.awt.datatransfer.DataFlavor;
+import j86.j86.java.awt.datatransfer.Transferable;
+import j86.j86.java.awt.datatransfer.UnsupportedFlavorException;
 
-import java.awt.dnd.DnDConstants;
+import j86.j86.java.awt.dnd.DnDConstants;
 
-import java.awt.dnd.DropTarget;
-import java.awt.dnd.DropTargetContext;
-import java.awt.dnd.DropTargetListener;
-import java.awt.dnd.DropTargetEvent;
-import java.awt.dnd.DropTargetDragEvent;
-import java.awt.dnd.DropTargetDropEvent;
-import java.awt.dnd.InvalidDnDOperationException;
+import j86.j86.java.awt.dnd.DropTarget;
+import j86.j86.java.awt.dnd.DropTargetContext;
+import j86.j86.java.awt.dnd.DropTargetListener;
+import j86.j86.java.awt.dnd.DropTargetEvent;
+import j86.j86.java.awt.dnd.DropTargetDragEvent;
+import j86.j86.java.awt.dnd.DropTargetDropEvent;
+import j86.j86.java.awt.dnd.InvalidDnDOperationException;
 
-import java.awt.dnd.peer.DropTargetContextPeer;
+import j86.j86.j86.java.awt.dnd.peer.DropTargetContextPeer;
 
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Arrays;
+import j86.java.util.HashSet;
+import j86.java.util.Map;
+import j86.java.util.Arrays;
 
-import sun.util.logging.PlatformLogger;
+import j86.j86.sun.util.logging.PlatformLogger;
 
-import java.io.IOException;
-import java.io.InputStream;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
 
-import sun.awt.AppContext;
-import sun.awt.SunToolkit;
-import sun.awt.datatransfer.DataTransferer;
-import sun.awt.datatransfer.ToolkitThreadBlockedHandler;
-import sun.security.util.SecurityConstants;
+import j86.sun.awt.AppContext;
+import j86.sun.awt.SunToolkit;
+import j86.j86.sun.awt.datatransfer.DataTransferer;
+import j86.j86.sun.awt.datatransfer.ToolkitThreadBlockedHandler;
+import j86.sun.security.util.SecurityConstants;
 
 /**
  * <p>
@@ -105,7 +105,7 @@ public abstract class SunDropTargetContextPeer implements DropTargetContextPeer,
 
     protected static final Object _globalLock = new Object();
 
-    private static final PlatformLogger dndLog = PlatformLogger.getLogger("sun.awt.dnd.SunDropTargetContextPeer");
+    private static final PlatformLogger dndLog = PlatformLogger.getLogger("j86.j86.sun.awt.dnd.SunDropTargetContextPeer");
 
     /*
      * a primitive mechanism for advertising intra-JVM Transferables
@@ -256,7 +256,7 @@ public abstract class SunDropTargetContextPeer implements DropTargetContextPeer,
 
         if (df.isRepresentationClassRemote() &&
             currentDA != DnDConstants.ACTION_LINK) {
-            throw new InvalidDnDOperationException("only ACTION_LINK is permissable for transfer of java.rmi.Remote objects");
+            throw new InvalidDnDOperationException("only ACTION_LINK is permissable for transfer of j86.java.rmi.Remote objects");
         }
 
         final long format = lFormat.longValue();

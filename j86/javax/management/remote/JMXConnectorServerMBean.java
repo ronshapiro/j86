@@ -24,10 +24,10 @@
  */
 
 
-package javax.management.remote;
+package j86.j86.javax.management.remote;
 
-import java.io.IOException;
-import java.util.Map;
+import j86.java.io.IOException;
+import j86.java.util.Map;
 
 /**
  * <p>MBean interface for connector servers.  A JMX API connector server

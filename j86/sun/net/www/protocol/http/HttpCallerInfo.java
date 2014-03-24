@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.net.www.protocol.http;
+package j86.j86.j86.sun.net.www.protocol.http;
 
-import java.net.Authenticator.RequestorType;
-import java.net.InetAddress;
-import java.net.URL;
+import j86.java.net.Authenticator.RequestorType;
+import j86.java.net.InetAddress;
+import j86.java.net.URL;
 
 /**
  * Used in HTTP/Negotiate, to feed HTTP request info into JGSS as a HttpCaller,

@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.net.www.protocol.http;
+package j86.j86.j86.sun.net.www.protocol.http;
 
-import java.io.IOException;
-import java.lang.reflect.Constructor;
-import sun.util.logging.PlatformLogger;
+import j86.java.io.IOException;
+import j86.j86.j86.java.lang.reflect.Constructor;
+import j86.j86.sun.util.logging.PlatformLogger;
 
 /**
  * This abstract class is a bridge to connect NegotiteAuthentication and
@@ -48,7 +48,7 @@ public abstract class Negotiator {
         Class<?> clazz;
         Constructor<?> c;
         try {
-            clazz = Class.forName("sun.net.www.protocol.http.spnego.NegotiatorImpl", true, null);
+            clazz = Class.forName("j86.j86.j86.j86.sun.net.www.protocol.http.spnego.NegotiatorImpl", true, null);
             c = clazz.getConstructor(HttpCallerInfo.class);
         } catch (ClassNotFoundException cnfe) {
             finest(cnfe);

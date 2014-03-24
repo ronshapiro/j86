@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.security.pkcs11;
+package j86.j86.sun.security.pkcs11;
 
-import java.math.BigInteger;
-import java.security.*;
+import j86.java.math.BigInteger;
+import j86.java.security.*;
 
 /**
  * Collection of static utility methods.
@@ -49,7 +49,7 @@ public final class P11Util {
         if (p == null) {
             synchronized (LOCK) {
                 p = getProvider
-                    (sun, "SUN", "sun.security.provider.Sun");
+                    (sun, "SUN", "j86.sun.security.provider.Sun");
                 sun = p;
             }
         }
@@ -61,7 +61,7 @@ public final class P11Util {
         if (p == null) {
             synchronized (LOCK) {
                 p = getProvider
-                    (sunRsaSign, "SunRsaSign", "sun.security.rsa.SunRsaSign");
+                    (sunRsaSign, "SunRsaSign", "j86.sun.security.rsa.SunRsaSign");
                 sunRsaSign = p;
             }
         }
@@ -73,7 +73,7 @@ public final class P11Util {
         if (p == null) {
             synchronized (LOCK) {
                 p = getProvider
-                    (sunJce, "SunJCE", "com.sun.crypto.provider.SunJCE");
+                    (sunJce, "SunJCE", "j86.com.sun.crypto.provider.SunJCE");
                 sunJce = p;
             }
         }
@@ -145,7 +145,7 @@ public final class P11Util {
     static byte[] getBytesUTF8(String s) {
         try {
             return s.getBytes("UTF8");
-        } catch (java.io.UnsupportedEncodingException e) {
+        } catch (j86.java.io.UnsupportedEncodingException e) {
             throw new RuntimeException(e);
         }
     }

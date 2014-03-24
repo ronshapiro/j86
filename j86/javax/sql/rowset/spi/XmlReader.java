@@ -23,13 +23,13 @@
  * questions.
  */
 
-package javax.sql.rowset.spi;
+package j86.j86.j86.javax.sql.rowset.spi;
 
-import java.sql.SQLException;
-import java.io.Reader;
+import j86.java.sql.SQLException;
+import j86.java.io.Reader;
 
-import javax.sql.RowSetReader;
-import javax.sql.rowset.*;
+import j86.javax.sql.RowSetReader;
+import j86.j86.javax.sql.rowset.*;
 
 /**
  * A specialized interface that facilitates an extension of the
@@ -62,13 +62,13 @@ public interface XmlReader extends RowSetReader {
    * @param caller the <code>WebRowSet</code> object to be parsed, whose
    *        <code>xmlReader</code> field must contain a reference to
    *        this <code>XmlReader</code> object
-   * @param reader the <code>java.io.Reader</code> object from which
+   * @param reader the <code>j86.java.io.Reader</code> object from which
    *        <code>caller</code> will be read
    * @throws SQLException if a database access error occurs or
    *            this <code>XmlReader</code> object is not the reader
    *            for the given rowset
    */
-  public void readXML(WebRowSet caller, java.io.Reader reader)
+  public void readXML(WebRowSet caller, j86.java.io.Reader reader)
     throws SQLException;
 
 }

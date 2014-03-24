@@ -22,31 +22,31 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.management.snmp.jvminstr;
+package j86.j86.j86.sun.management.snmp.jvminstr;
 
 // java imports
 //
-import java.util.Map;
+import j86.java.util.Map;
 
 // jmx imports
 //
-import com.sun.jmx.snmp.SnmpStatusException;
-import com.sun.jmx.snmp.SnmpDefinitions;
+import j86.com.sun.jmx.snmp.SnmpStatusException;
+import j86.com.sun.jmx.snmp.SnmpDefinitions;
 
 // jdmk imports
 //
 
-import java.lang.management.MemoryUsage;
-import java.lang.management.MemoryType;
-import java.lang.management.MemoryPoolMXBean;
+import j86.j86.java.lang.management.MemoryUsage;
+import j86.j86.java.lang.management.MemoryType;
+import j86.j86.java.lang.management.MemoryPoolMXBean;
 
-import sun.management.snmp.jvmmib.JvmMemPoolEntryMBean;
-import sun.management.snmp.jvmmib.EnumJvmMemPoolState;
-import sun.management.snmp.jvmmib.EnumJvmMemPoolType;
-import sun.management.snmp.jvmmib.EnumJvmMemPoolThreshdSupport;
-import sun.management.snmp.jvmmib.EnumJvmMemPoolCollectThreshdSupport;
-import sun.management.snmp.util.MibLogger;
-import sun.management.snmp.util.JvmContextFactory;
+import j86.j86.j86.sun.management.snmp.jvmmib.JvmMemPoolEntryMBean;
+import j86.j86.j86.sun.management.snmp.jvmmib.EnumJvmMemPoolState;
+import j86.j86.j86.sun.management.snmp.jvmmib.EnumJvmMemPoolType;
+import j86.j86.j86.sun.management.snmp.jvmmib.EnumJvmMemPoolThreshdSupport;
+import j86.j86.j86.sun.management.snmp.jvmmib.EnumJvmMemPoolCollectThreshdSupport;
+import j86.j86.j86.sun.management.snmp.util.MibLogger;
+import j86.j86.j86.sun.management.snmp.util.JvmContextFactory;
 
 /**
  * The class is used for implementing the "JvmMemPoolEntry" group.

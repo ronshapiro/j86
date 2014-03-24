@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.util.jar;
+package j86.j86.java.util.jar;
 
 /**
  * Signals that an error of some sort has occurred while reading from
@@ -33,7 +33,7 @@ package java.util.jar;
  * @since   1.2
  */
 public
-class JarException extends java.util.zip.ZipException {
+class JarException extends j86.j86.java.util.zip.ZipException {
     private static final long serialVersionUID = 7159778400963954473L;
 
     /**

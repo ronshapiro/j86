@@ -22,16 +22,16 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.awt;
+package j86.java.awt;
 
-import java.awt.peer.MenuItemPeer;
-import java.awt.event.*;
-import java.util.EventListener;
-import java.io.ObjectOutputStream;
-import java.io.ObjectInputStream;
-import java.io.IOException;
-import javax.accessibility.*;
-import sun.awt.AWTAccessor;
+import j86.j86.java.awt.peer.MenuItemPeer;
+import j86.j86.java.awt.event.*;
+import j86.java.util.EventListener;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.IOException;
+import j86.javax.accessibility.*;
+import j86.sun.awt.AWTAccessor;
 
 /**
  * All items in a menu must belong to the class
@@ -175,7 +175,7 @@ public class MenuItem extends MenuComponent implements Accessible {
      * shortcut.
      * @exception HeadlessException if GraphicsEnvironment.isHeadless()
      * returns true.
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      * @since    JDK1.1
      */
     public MenuItem() throws HeadlessException {
@@ -191,7 +191,7 @@ public class MenuItem extends MenuComponent implements Accessible {
      * @param       label the label for this menu item.
      * @exception HeadlessException if GraphicsEnvironment.isHeadless()
      * returns true.
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      * @since       JDK1.0
      */
     public MenuItem(String label) throws HeadlessException {
@@ -208,7 +208,7 @@ public class MenuItem extends MenuComponent implements Accessible {
      *                       associated with this menu item.
      * @exception HeadlessException if GraphicsEnvironment.isHeadless()
      * returns true.
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      * @since       JDK1.1
      */
     public MenuItem(String label, MenuShortcut s) throws HeadlessException {
@@ -241,7 +241,7 @@ public class MenuItem extends MenuComponent implements Accessible {
      * Gets the label for this menu item.
      * @return  the label of this menu item, or <code>null</code>
                        if this menu item has no label.
-     * @see     java.awt.MenuItem#setLabel
+     * @see     j86.java.awt.MenuItem#setLabel
      * @since   JDK1.0
      */
     public String getLabel() {
@@ -251,7 +251,7 @@ public class MenuItem extends MenuComponent implements Accessible {
     /**
      * Sets the label for this menu item to the specified label.
      * @param     label   the new label, or <code>null</code> for no label.
-     * @see       java.awt.MenuItem#getLabel
+     * @see       j86.java.awt.MenuItem#getLabel
      * @since     JDK1.0
      */
     public synchronized void setLabel(String label) {
@@ -264,7 +264,7 @@ public class MenuItem extends MenuComponent implements Accessible {
 
     /**
      * Checks whether this menu item is enabled.
-     * @see        java.awt.MenuItem#setEnabled
+     * @see        j86.java.awt.MenuItem#setEnabled
      * @since      JDK1.0
      */
     public boolean isEnabled() {
@@ -275,7 +275,7 @@ public class MenuItem extends MenuComponent implements Accessible {
      * Sets whether or not this menu item can be chosen.
      * @param      b  if <code>true</code>, enables this menu item;
      *                       if <code>false</code>, disables it.
-     * @see        java.awt.MenuItem#isEnabled
+     * @see        j86.java.awt.MenuItem#isEnabled
      * @since      JDK1.1
      */
     public synchronized void setEnabled(boolean b) {
@@ -326,7 +326,7 @@ public class MenuItem extends MenuComponent implements Accessible {
      * menu item,
      * @return      the menu shortcut associated with this menu item,
      *                   or <code>null</code> if none has been specified.
-     * @see         java.awt.MenuItem#setShortcut
+     * @see         j86.java.awt.MenuItem#setShortcut
      * @since       JDK1.1
      */
     public MenuShortcut getShortcut() {
@@ -339,7 +339,7 @@ public class MenuItem extends MenuComponent implements Accessible {
      * this menu item, it is replaced.
      * @param       s  the menu shortcut to associate
      *                           with this menu item.
-     * @see         java.awt.MenuItem#getShortcut
+     * @see         j86.java.awt.MenuItem#getShortcut
      * @since       JDK1.1
      */
     public void setShortcut(MenuShortcut s) {
@@ -452,9 +452,9 @@ public class MenuItem extends MenuComponent implements Accessible {
      * regardless of whether a listener is registered.
      *
      * @param       eventsToEnable the event mask defining the event types
-     * @see         java.awt.MenuItem#processEvent
-     * @see         java.awt.MenuItem#disableEvents
-     * @see         java.awt.Component#enableEvents
+     * @see         j86.java.awt.MenuItem#processEvent
+     * @see         j86.java.awt.MenuItem#disableEvents
+     * @see         j86.java.awt.Component#enableEvents
      * @since       JDK1.1
      */
     protected final void enableEvents(long eventsToEnable) {
@@ -467,9 +467,9 @@ public class MenuItem extends MenuComponent implements Accessible {
      * defined by the specified event mask parameter.
      *
      * @param       eventsToDisable the event mask defining the event types
-     * @see         java.awt.MenuItem#processEvent
-     * @see         java.awt.MenuItem#enableEvents
-     * @see         java.awt.Component#disableEvents
+     * @see         j86.java.awt.MenuItem#processEvent
+     * @see         j86.java.awt.MenuItem#enableEvents
+     * @see         j86.java.awt.Component#disableEvents
      * @since       JDK1.1
      */
     protected final void disableEvents(long eventsToDisable) {
@@ -484,7 +484,7 @@ public class MenuItem extends MenuComponent implements Accessible {
      * the menu item.
      * @param       command   the action command to be set
      *                                for this menu item.
-     * @see         java.awt.MenuItem#getActionCommand
+     * @see         j86.java.awt.MenuItem#getActionCommand
      * @since       JDK1.1
      */
     public void setActionCommand(String command) {
@@ -494,7 +494,7 @@ public class MenuItem extends MenuComponent implements Accessible {
     /**
      * Gets the command name of the action event that is fired
      * by this menu item.
-     * @see         java.awt.MenuItem#setActionCommand
+     * @see         j86.java.awt.MenuItem#setActionCommand
      * @since       JDK1.1
      */
     public String getActionCommand() {
@@ -516,8 +516,8 @@ public class MenuItem extends MenuComponent implements Accessible {
      * @param      l the action listener.
      * @see        #removeActionListener
      * @see        #getActionListeners
-     * @see        java.awt.event.ActionEvent
-     * @see        java.awt.event.ActionListener
+     * @see        j86.j86.java.awt.event.ActionEvent
+     * @see        j86.j86.java.awt.event.ActionListener
      * @since      JDK1.1
      */
     public synchronized void addActionListener(ActionListener l) {
@@ -538,8 +538,8 @@ public class MenuItem extends MenuComponent implements Accessible {
      * @param      l the action listener.
      * @see        #addActionListener
      * @see        #getActionListeners
-     * @see        java.awt.event.ActionEvent
-     * @see        java.awt.event.ActionListener
+     * @see        j86.j86.java.awt.event.ActionEvent
+     * @see        j86.j86.java.awt.event.ActionListener
      * @since      JDK1.1
      */
     public synchronized void removeActionListener(ActionListener l) {
@@ -559,8 +559,8 @@ public class MenuItem extends MenuComponent implements Accessible {
      *
      * @see        #addActionListener
      * @see        #removeActionListener
-     * @see        java.awt.event.ActionEvent
-     * @see        java.awt.event.ActionListener
+     * @see        j86.j86.java.awt.event.ActionEvent
+     * @see        j86.j86.java.awt.event.ActionListener
      * @since 1.4
      */
     public synchronized ActionListener[] getActionListeners() {
@@ -588,14 +588,14 @@ public class MenuItem extends MenuComponent implements Accessible {
      *
      * @param listenerType the type of listeners requested; this parameter
      *          should specify an interface that descends from
-     *          <code>java.util.EventListener</code>
+     *          <code>j86.java.util.EventListener</code>
      * @return an array of all objects registered as
      *          <code><em>Foo</em>Listener</code>s on this menu item,
      *          or an empty array if no such
      *          listeners have been added
      * @exception ClassCastException if <code>listenerType</code>
      *          doesn't specify a class or interface that implements
-     *          <code>java.util.EventListener</code>
+     *          <code>j86.java.util.EventListener</code>
      *
      * @see #getActionListeners
      * @since 1.3
@@ -620,7 +620,7 @@ public class MenuItem extends MenuComponent implements Accessible {
      * exception.
      *
      * @param       e the event
-     * @see         java.awt.MenuItem#processActionEvent
+     * @see         j86.java.awt.MenuItem#processActionEvent
      * @since       JDK1.1
      */
     protected void processEvent(AWTEvent e) {
@@ -658,9 +658,9 @@ public class MenuItem extends MenuComponent implements Accessible {
      * exception.
      *
      * @param       e the action event
-     * @see         java.awt.event.ActionEvent
-     * @see         java.awt.event.ActionListener
-     * @see         java.awt.MenuItem#enableEvents
+     * @see         j86.j86.java.awt.event.ActionEvent
+     * @see         j86.j86.java.awt.event.ActionListener
+     * @see         j86.java.awt.MenuItem#enableEvents
      * @since       JDK1.1
      */
     protected void processActionEvent(ActionEvent e) {
@@ -904,7 +904,7 @@ public class MenuItem extends MenuComponent implements Accessible {
          *
          * @return An Integer of 0 if this isn't selected or an Integer of 1 if
          * this is selected.
-         * @see javax.swing.AbstractButton#isSelected()
+         * @see j86.javax.swing.AbstractButton#isSelected()
          */
         public Number getCurrentAccessibleValue() {
             return Integer.valueOf(0);

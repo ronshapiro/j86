@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.lang;
+package j86.java.lang;
 
 /**
  * An instance of {@code ThreadDeath} is thrown in the victim thread

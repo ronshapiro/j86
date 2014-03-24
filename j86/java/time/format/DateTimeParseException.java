@@ -59,9 +59,9 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package java.time.format;
+package j86.j86.java.time.format;
 
-import java.time.DateTimeException;
+import j86.java.time.DateTimeException;
 
 /**
  * An exception thrown when an error occurs during parsing.

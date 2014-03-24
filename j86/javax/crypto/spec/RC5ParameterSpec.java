@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.crypto.spec;
+package j86.j86.javax.crypto.spec;
 
-import java.security.spec.AlgorithmParameterSpec;
+import j86.j86.java.security.spec.AlgorithmParameterSpec;
 
 /**
  * This class specifies the parameters used with the
@@ -183,7 +183,7 @@ public class RC5ParameterSpec implements AlgorithmParameterSpec {
         return ((version == other.version) &&
                 (rounds == other.rounds) &&
                 (wordSize == other.wordSize) &&
-                java.util.Arrays.equals(iv, other.iv));
+                j86.java.util.Arrays.equals(iv, other.iv));
     }
 
     /**

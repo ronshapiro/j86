@@ -23,11 +23,11 @@
  * questions.
  */
 
-package java.awt.image;
+package j86.j86.j86.java.awt.image;
 
-import java.awt.geom.Rectangle2D;
-import java.awt.geom.Point2D;
-import java.awt.RenderingHints;
+import j86.j86.java.awt.geom.Rectangle2D;
+import j86.j86.java.awt.geom.Point2D;
+import j86.java.awt.RenderingHints;
 
 /**
  * This interface describes single-input/single-output

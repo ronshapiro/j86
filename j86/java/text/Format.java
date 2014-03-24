@@ -36,9 +36,9 @@
  *
  */
 
-package java.text;
+package j86.java.text;
 
-import java.io.Serializable;
+import j86.java.io.Serializable;
 
 /**
  * <code>Format</code> is an abstract base class for formatting locale-sensitive
@@ -123,11 +123,11 @@ import java.io.Serializable;
  * If multiple threads access a format concurrently, it must be synchronized
  * externally.
  *
- * @see          java.text.ParsePosition
- * @see          java.text.FieldPosition
- * @see          java.text.NumberFormat
- * @see          java.text.DateFormat
- * @see          java.text.MessageFormat
+ * @see          j86.java.text.ParsePosition
+ * @see          j86.java.text.FieldPosition
+ * @see          j86.java.text.NumberFormat
+ * @see          j86.java.text.DateFormat
+ * @see          j86.java.text.MessageFormat
  * @author       Mark Davis
  */
 public abstract class Format implements Serializable, Cloneable {

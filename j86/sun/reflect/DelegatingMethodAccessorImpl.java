@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.reflect;
+package j86.sun.reflect;
 
-import java.lang.reflect.InvocationTargetException;
+import j86.j86.j86.java.lang.reflect.InvocationTargetException;
 
 /** Delegates its invocation to another MethodAccessorImpl and can
     change its delegate at run time. */

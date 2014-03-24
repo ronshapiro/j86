@@ -22,14 +22,14 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.swing;
+package j86.sun.swing;
 
-import java.awt.Color;
-import java.awt.Insets;
-import javax.swing.*;
-import javax.swing.border.Border;
-import javax.swing.plaf.ComponentUI;
-import sun.awt.AppContext;
+import j86.java.awt.Color;
+import j86.java.awt.Insets;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.border.Border;
+import j86.j86.javax.swing.plaf.ComponentUI;
+import j86.sun.awt.AppContext;
 
 /**
  * DefaultLookup provides a way to customize the lookup done by the

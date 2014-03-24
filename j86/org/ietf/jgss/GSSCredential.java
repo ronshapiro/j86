@@ -23,7 +23,7 @@
  * questions.
  */
 
-package org.ietf.jgss;
+package j86.org.ietf.jgss;
 
 /**
  * This interface encapsulates the GSS-API credentials for an entity.  A
@@ -126,7 +126,7 @@ public interface GSSCredential extends Cloneable{
     /**
      * A lifetime constant representing indefinite credential lifetime.
      * This value must is set to the maximum integer value in Java -
-     * {@link java.lang.Integer#MAX_VALUE Integer.MAX_VALUE}.
+     * {@link j86.java.lang.Integer#MAX_VALUE Integer.MAX_VALUE}.
      */
     public static final int INDEFINITE_LIFETIME = Integer.MAX_VALUE;
 

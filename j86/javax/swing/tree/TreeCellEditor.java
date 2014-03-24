@@ -23,17 +23,17 @@
  * questions.
  */
 
-package javax.swing.tree;
+package j86.j86.javax.swing.tree;
 
-import java.awt.Component;
-import javax.swing.CellEditor;
-import javax.swing.JTree;
+import j86.java.awt.Component;
+import j86.javax.swing.CellEditor;
+import j86.javax.swing.JTree;
 
 /**
   * Adds to CellEditor the extensions necessary to configure an editor
   * in a tree.
   *
-  * @see javax.swing.JTree
+  * @see j86.javax.swing.JTree
   *
   * @author Scott Violet
   */

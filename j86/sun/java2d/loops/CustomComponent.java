@@ -28,18 +28,18 @@
  * @author Jim Graham
  */
 
-package sun.java2d.loops;
+package j86.j86.sun.java2d.loops;
 
-import java.awt.Composite;
-import java.awt.Rectangle;
-import java.awt.image.ColorModel;
-import java.awt.image.DataBuffer;
-import java.awt.image.Raster;
-import java.awt.image.WritableRaster;
-import sun.awt.image.IntegerComponentRaster;
-import sun.java2d.SurfaceData;
-import sun.java2d.pipe.Region;
-import sun.java2d.pipe.SpanIterator;
+import j86.java.awt.Composite;
+import j86.java.awt.Rectangle;
+import j86.j86.j86.java.awt.image.ColorModel;
+import j86.j86.j86.java.awt.image.DataBuffer;
+import j86.j86.j86.java.awt.image.Raster;
+import j86.j86.j86.java.awt.image.WritableRaster;
+import j86.j86.j86.sun.awt.image.IntegerComponentRaster;
+import j86.sun.java2d.SurfaceData;
+import j86.j86.sun.java2d.pipe.Region;
+import j86.j86.sun.java2d.pipe.SpanIterator;
 
 /**
  *   CustomComponent, collection of GraphicsPrimitive

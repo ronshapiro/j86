@@ -23,24 +23,24 @@
  * questions.
  */
 
-package sun.awt.image;
+package j86.j86.j86.sun.awt.image;
 
-import java.awt.AlphaComposite;
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.Font;
-import java.awt.Graphics2D;
-import java.awt.GraphicsConfiguration;
-import java.awt.ImageCapabilities;
-import java.awt.Transparency;
-import java.awt.image.BufferedImage;
-import java.awt.image.ImageObserver;
-import java.awt.image.VolatileImage;
-import sun.java2d.SunGraphics2D;
-import sun.java2d.SurfaceManagerFactory;
-import sun.java2d.DestSurfaceProvider;
-import sun.java2d.Surface;
-import static sun.java2d.pipe.hw.AccelSurface.*;
+import j86.java.awt.AlphaComposite;
+import j86.java.awt.Color;
+import j86.java.awt.Component;
+import j86.java.awt.Font;
+import j86.java.awt.Graphics2D;
+import j86.java.awt.GraphicsConfiguration;
+import j86.java.awt.ImageCapabilities;
+import j86.java.awt.Transparency;
+import j86.j86.j86.java.awt.image.BufferedImage;
+import j86.j86.j86.java.awt.image.ImageObserver;
+import j86.j86.j86.java.awt.image.VolatileImage;
+import j86.sun.java2d.SunGraphics2D;
+import j86.sun.java2d.SurfaceManagerFactory;
+import j86.sun.java2d.DestSurfaceProvider;
+import j86.sun.java2d.Surface;
+import static j86.j86.j86.sun.java2d.pipe.hw.AccelSurface.*;
 
 /**
  * This class is the base implementation of the VolatileImage
@@ -169,7 +169,7 @@ public class SunVolatileImage extends VolatileImage
          * unaccelerated VolatileImage by passing the capabilities object.
          */
         if (graphicsConfig instanceof BufferedImageGraphicsConfig ||
-            graphicsConfig instanceof sun.print.PrinterGraphicsConfig ||
+            graphicsConfig instanceof j86.sun.print.PrinterGraphicsConfig ||
             (caps != null && !caps.isAccelerated()))
         {
             return new BufImgVolatileSurfaceManager(this, context);
@@ -217,7 +217,7 @@ public class SunVolatileImage extends VolatileImage
         if (name == null) {
             throw new NullPointerException("null property name is not allowed");
         }
-        return java.awt.Image.UndefinedProperty;
+        return j86.java.awt.Image.UndefinedProperty;
     }
 
     public int getWidth(ImageObserver observer) {
@@ -261,7 +261,7 @@ public class SunVolatileImage extends VolatileImage
     /**
      * {@inheritDoc}
      *
-     * @see sun.java2d.DestSurfaceProvider#getDestSurface
+     * @see j86.sun.java2d.DestSurfaceProvider#getDestSurface
      */
     @Override
     public Surface getDestSurface() {

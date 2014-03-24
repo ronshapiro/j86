@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.awt.image;
+package j86.j86.j86.sun.awt.image;
 
-import java.awt.image.ImageConsumer;
+import j86.j86.j86.java.awt.image.ImageConsumer;
 
 class ImageConsumerQueue {
     ImageConsumerQueue next;

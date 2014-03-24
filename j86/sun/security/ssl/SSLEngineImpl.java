@@ -23,17 +23,17 @@
  * questions.
  */
 
-package sun.security.ssl;
+package j86.sun.security.ssl;
 
-import java.io.*;
-import java.nio.*;
-import java.util.*;
-import java.security.*;
+import j86.java.io.*;
+import j86.java.nio.*;
+import j86.java.util.*;
+import j86.java.security.*;
 
-import javax.crypto.BadPaddingException;
+import j86.javax.crypto.BadPaddingException;
 
-import javax.net.ssl.*;
-import javax.net.ssl.SSLEngineResult.*;
+import j86.j86.javax.net.ssl.*;
+import j86.j86.javax.net.ssl.SSLEngineResult.*;
 
 /**
  * Implementation of an non-blocking SSLEngine.

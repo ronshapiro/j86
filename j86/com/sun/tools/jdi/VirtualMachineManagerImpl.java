@@ -23,23 +23,23 @@
  * questions.
  */
 
-package com.sun.tools.jdi;
+package j86.com.sun.tools.jdi;
 
-import com.sun.jdi.*;
-import com.sun.jdi.connect.*;
-import com.sun.jdi.connect.spi.*;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.ResourceBundle;
-import java.io.IOException;
+import j86.com.sun.jdi.*;
+import j86.j86.com.sun.jdi.connect.*;
+import j86.j86.j86.com.sun.jdi.connect.spi.*;
+import j86.j86.j86.java.lang.reflect.Constructor;
+import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.java.util.List;
+import j86.java.util.ArrayList;
+import j86.java.util.Collections;
+import j86.java.util.Iterator;
+import j86.java.util.ResourceBundle;
+import j86.java.io.IOException;
 
-import java.util.ServiceLoader;
+import j86.java.util.ServiceLoader;
 
-/* Public for use by com.sun.jdi.Bootstrap */
+/* Public for use by j86.com.sun.jdi.Bootstrap */
 public class VirtualMachineManagerImpl implements VirtualMachineManagerService {
     private List<Connector> connectors = new ArrayList<Connector>();
     private LaunchingConnector defaultConnector = null;
@@ -143,13 +143,13 @@ public class VirtualMachineManagerImpl implements VirtualMachineManagerService {
 
         // Set the default launcher. In order to be compatible
         // 1.2/1.3/1.4 we try to make the default launcher
-        // "com.sun.jdi.CommandLineLaunch". If this connector
+        // "j86.com.sun.jdi.CommandLineLaunch". If this connector
         // isn't found then we arbitarly pick the first connector.
         //
         boolean found = false;
         List<LaunchingConnector> launchers = launchingConnectors();
         for (LaunchingConnector lc: launchers) {
-            if (lc.name().equals("com.sun.jdi.CommandLineLaunch")) {
+            if (lc.name().equals("j86.com.sun.jdi.CommandLineLaunch")) {
                 setDefaultConnector(lc);
                 found = true;
                 break;
@@ -263,7 +263,7 @@ public class VirtualMachineManagerImpl implements VirtualMachineManagerService {
 
     String getString(String key) {
         if (messages == null) {
-            messages = ResourceBundle.getBundle("com.sun.tools.jdi.resources.jdi");
+            messages = ResourceBundle.getBundle("j86.com.sun.tools.jdi.resources.jdi");
         }
         return messages.getString(key);
     }

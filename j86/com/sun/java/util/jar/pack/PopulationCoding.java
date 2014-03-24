@@ -23,16 +23,16 @@
  * questions.
  */
 
-package com.sun.java.util.jar.pack;
+package j86.com.sun.j86.j86.java.util.jar.pack;
 
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
-import static com.sun.java.util.jar.pack.Constants.*;
+import j86.java.io.ByteArrayOutputStream;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.io.OutputStream;
+import j86.java.util.Arrays;
+import j86.java.util.HashSet;
+import j86.java.util.Set;
+import static j86.com.sun.j86.j86.java.util.jar.pack.Constants.*;
 
 /**
  * Population-based coding.

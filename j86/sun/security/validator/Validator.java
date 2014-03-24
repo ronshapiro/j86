@@ -23,13 +23,13 @@
  * questions.
  */
 
-package sun.security.validator;
+package j86.sun.security.validator;
 
-import java.util.*;
+import j86.java.util.*;
 
-import java.security.AlgorithmConstraints;
-import java.security.KeyStore;
-import java.security.cert.*;
+import j86.java.security.AlgorithmConstraints;
+import j86.java.security.KeyStore;
+import j86.j86.java.security.cert.*;
 
 /**
  * Validator abstract base class. Concrete classes are instantiated by calling

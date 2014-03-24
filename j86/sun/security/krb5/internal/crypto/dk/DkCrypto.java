@@ -28,22 +28,22 @@
  * WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
  */
 
-package sun.security.krb5.internal.crypto.dk;
+package j86.j86.j86.j86.sun.security.krb5.internal.crypto.dk;
 
-import javax.crypto.Cipher;
-import javax.crypto.Mac;
-import java.security.GeneralSecurityException;
-import java.io.UnsupportedEncodingException;
-import java.util.Arrays;
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.nio.charset.Charset;
-import java.nio.CharBuffer;
-import java.nio.ByteBuffer;
-import sun.misc.HexDumpEncoder;
-import sun.security.krb5.Confounder;
-import sun.security.krb5.internal.crypto.KeyUsage;
-import sun.security.krb5.KrbCryptoException;
+import j86.javax.crypto.Cipher;
+import j86.javax.crypto.Mac;
+import j86.java.security.GeneralSecurityException;
+import j86.java.io.UnsupportedEncodingException;
+import j86.java.util.Arrays;
+import j86.java.io.ByteArrayInputStream;
+import j86.java.io.ByteArrayOutputStream;
+import j86.j86.java.nio.charset.Charset;
+import j86.java.nio.CharBuffer;
+import j86.java.nio.ByteBuffer;
+import j86.sun.misc.HexDumpEncoder;
+import j86.sun.security.krb5.Confounder;
+import j86.j86.j86.sun.security.krb5.internal.crypto.KeyUsage;
+import j86.sun.security.krb5.KrbCryptoException;
 
 /**
  * Implements Derive Key cryptography functionality as defined in RFC 3961.

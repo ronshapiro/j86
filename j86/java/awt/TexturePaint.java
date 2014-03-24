@@ -23,12 +23,12 @@
  * questions.
  */
 
-package java.awt;
+package j86.java.awt;
 
-import java.awt.geom.Rectangle2D;
-import java.awt.geom.AffineTransform;
-import java.awt.image.BufferedImage;
-import java.awt.image.ColorModel;
+import j86.j86.java.awt.geom.Rectangle2D;
+import j86.j86.java.awt.geom.AffineTransform;
+import j86.j86.j86.java.awt.image.BufferedImage;
+import j86.j86.j86.java.awt.image.ColorModel;
 
 /**
  * The <code>TexturePaint</code> class provides a way to fill a

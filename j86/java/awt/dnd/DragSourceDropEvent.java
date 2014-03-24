@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.awt.dnd;
+package j86.j86.java.awt.dnd;
 
 /**
  * The <code>DragSourceDropEvent</code> is delivered

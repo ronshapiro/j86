@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.util;
+package j86.java.util;
 
 /**
  * The <code>Stack</code> class represents a last-in-first-out
@@ -61,7 +61,7 @@ class Stack<E> extends Vector<E> {
      *
      * @param   item   the item to be pushed onto this stack.
      * @return  the <code>item</code> argument.
-     * @see     java.util.Vector#addElement
+     * @see     j86.java.util.Vector#addElement
      */
     public E push(E item) {
         addElement(item);

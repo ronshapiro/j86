@@ -22,14 +22,14 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.print.attribute.standard;
+package j86.j86.j86.javax.print.attribute.standard;
 
-import java.net.URI;
+import j86.java.net.URI;
 
-import javax.print.attribute.Attribute;
-import javax.print.attribute.URISyntax;
-import javax.print.attribute.PrintRequestAttribute;
-import javax.print.attribute.PrintJobAttribute;
+import j86.j86.javax.print.attribute.Attribute;
+import j86.j86.javax.print.attribute.URISyntax;
+import j86.j86.javax.print.attribute.PrintRequestAttribute;
+import j86.j86.javax.print.attribute.PrintJobAttribute;
 
 /**
  * Class Destination is a printing attribute class, a URI, that is used to
@@ -41,7 +41,7 @@ import javax.print.attribute.PrintJobAttribute;
  * to redirect output to a local disk file : eg."file:out.prn".
  * Note that proper construction of "file:" scheme URI instances should
  * be performed using the <code>toURI()</code> method of class
- * {@link java.io.File File}.
+ * {@link j86.java.io.File File}.
  * See the documentation on that class for more information.
  * <p>
  * If a destination URI is specified in a PrintRequest and it is not
@@ -102,7 +102,7 @@ public final class Destination extends URISyntax
      * For class Destination, the category is class Destination itself.
      *
      * @return  Printing attribute class (category), an instance of class
-     *          {@link java.lang.Class java.lang.Class}.
+     *          {@link j86.java.lang.Class java.lang.Class}.
      */
     public final Class<? extends Attribute> getCategory() {
         return Destination.class;

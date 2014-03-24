@@ -23,15 +23,15 @@
  * questions.
  */
 
-package sun.util;
+package j86.sun.util;
 
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.util.GregorianCalendar;
-import java.util.Locale;
-import java.util.Map;
-import java.util.TimeZone;
-import sun.util.locale.provider.CalendarDataUtility;
+import j86.java.io.IOException;
+import j86.java.io.ObjectInputStream;
+import j86.java.util.GregorianCalendar;
+import j86.java.util.Locale;
+import j86.java.util.Map;
+import j86.java.util.TimeZone;
+import j86.j86.j86.sun.util.locale.provider.CalendarDataUtility;
 
 public class BuddhistCalendar extends GregorianCalendar {
 

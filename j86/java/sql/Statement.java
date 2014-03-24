@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.sql;
+package j86.java.sql;
 
 /**
  * <P>The object used for executing a static SQL statement
@@ -1033,7 +1033,7 @@ public interface Statement extends Wrapper, AutoCloseable {
          * <p>
          * @since 1.6
          * <p>
-         * @see java.sql.Statement#setPoolable(boolean) setPoolable(boolean)
+         * @see j86.java.sql.Statement#setPoolable(boolean) setPoolable(boolean)
          */
         boolean isPoolable()
                 throws SQLException;

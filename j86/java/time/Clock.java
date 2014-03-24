@@ -59,14 +59,14 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package java.time;
+package j86.java.time;
 
-import static java.time.LocalTime.NANOS_PER_MINUTE;
-import static java.time.LocalTime.NANOS_PER_SECOND;
+import static j86.java.time.LocalTime.NANOS_PER_MINUTE;
+import static j86.java.time.LocalTime.NANOS_PER_SECOND;
 
-import java.io.Serializable;
-import java.util.Objects;
-import java.util.TimeZone;
+import j86.java.io.Serializable;
+import j86.java.util.Objects;
+import j86.java.util.TimeZone;
 
 /**
  * A clock providing access to the current instant, date and time using a time-zone.

@@ -23,21 +23,21 @@
  * questions.
  */
 
-package sun.font;
+package j86.sun.font;
 
-import java.awt.GraphicsConfiguration;
-import java.awt.GraphicsEnvironment;
-import java.lang.ref.Reference;
-import java.lang.ref.ReferenceQueue;
-import java.lang.ref.SoftReference;
-import java.lang.ref.WeakReference;
-import java.util.*;
+import j86.java.awt.GraphicsConfiguration;
+import j86.java.awt.GraphicsEnvironment;
+import j86.j86.java.lang.ref.Reference;
+import j86.j86.java.lang.ref.ReferenceQueue;
+import j86.j86.java.lang.ref.SoftReference;
+import j86.j86.java.lang.ref.WeakReference;
+import j86.java.util.*;
 
-import sun.java2d.Disposer;
-import sun.java2d.pipe.BufferedContext;
-import sun.java2d.pipe.RenderQueue;
-import sun.java2d.pipe.hw.AccelGraphicsConfig;
-import sun.misc.Unsafe;
+import j86.sun.java2d.Disposer;
+import j86.j86.sun.java2d.pipe.BufferedContext;
+import j86.j86.sun.java2d.pipe.RenderQueue;
+import j86.j86.j86.sun.java2d.pipe.hw.AccelGraphicsConfig;
+import j86.sun.misc.Unsafe;
 
 /**
 
@@ -158,8 +158,8 @@ public final class StrikeCache {
                                     nativeAddressSize);
         }
 
-        java.security.AccessController.doPrivileged(
-                                    new java.security.PrivilegedAction() {
+        j86.java.security.AccessController.doPrivileged(
+                                    new j86.java.security.PrivilegedAction() {
             public Object run() {
 
                /* Allow a client to override the reference type used to
@@ -169,11 +169,11 @@ public final class StrikeCache {
                 * memory more aggressively.
                 */
                String refType =
-                   System.getProperty("sun.java2d.font.reftype", "soft");
+                   System.getProperty("j86.sun.java2d.font.reftype", "soft");
                cacheRefTypeWeak = refType.equals("weak");
 
                 String minStrikesStr =
-                    System.getProperty("sun.java2d.font.minstrikes");
+                    System.getProperty("j86.sun.java2d.font.minstrikes");
                 if (minStrikesStr != null) {
                     try {
                         MINSTRIKES = Integer.parseInt(minStrikesStr);

@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.nio.file;
+package j86.j86.java.nio.file;
 
-import java.nio.file.spi.FileSystemProvider;
-import java.net.URI;
+import j86.j86.j86.java.nio.file.spi.FileSystemProvider;
+import j86.java.net.URI;
 
 /**
  * This class consists exclusively of static methods that return a {@link Path}
@@ -101,7 +101,7 @@ public final class Paths {
      * {@link FileSystems#getDefault default} file system.
      *
      * <p> The default provider provides a similar <em>round-trip</em> guarantee
-     * to the {@link java.io.File} class. For a given {@code Path} <i>p</i> it
+     * to the {@link j86.java.io.File} class. For a given {@code Path} <i>p</i> it
      * is guaranteed that
      * <blockquote><tt>
      * Paths.get(</tt><i>p</i><tt>.{@link Path#toUri() toUri}()).equals(</tt>

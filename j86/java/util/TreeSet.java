@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.util;
+package j86.java.util;
 
 /**
  * A {@link NavigableSet} implementation based on a {@link TreeMap}.
@@ -90,7 +90,7 @@ package java.util;
  */
 
 public class TreeSet<E> extends AbstractSet<E>
-    implements NavigableSet<E>, Cloneable, java.io.Serializable
+    implements NavigableSet<E>, Cloneable, j86.java.io.Serializable
 {
     /**
      * The backing map.
@@ -494,8 +494,8 @@ public class TreeSet<E> extends AbstractSet<E>
      *             set's Comparator, or by the elements' natural ordering if
      *             the set has no Comparator).
      */
-    private void writeObject(java.io.ObjectOutputStream s)
-        throws java.io.IOException {
+    private void writeObject(j86.java.io.ObjectOutputStream s)
+        throws j86.java.io.IOException {
         // Write out any hidden stuff
         s.defaultWriteObject();
 
@@ -514,8 +514,8 @@ public class TreeSet<E> extends AbstractSet<E>
      * Reconstitute the {@code TreeSet} instance from a stream (that is,
      * deserialize it).
      */
-    private void readObject(java.io.ObjectInputStream s)
-        throws java.io.IOException, ClassNotFoundException {
+    private void readObject(j86.java.io.ObjectInputStream s)
+        throws j86.java.io.IOException, ClassNotFoundException {
         // Read in any hidden stuff
         s.defaultReadObject();
 
@@ -544,7 +544,7 @@ public class TreeSet<E> extends AbstractSet<E>
      * the reporting of additional characteristic values.
      *
      * <p>The spliterator's comparator (see
-     * {@link java.util.Spliterator#getComparator()}) is {@code null} if
+     * {@link j86.java.util.Spliterator#getComparator()}) is {@code null} if
      * the tree set's comparator (see {@link #comparator()}) is {@code null}.
      * Otherwise, the spliterator's comparator is the same as or imposes the
      * same total ordering as the tree set's comparator.

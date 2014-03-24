@@ -24,12 +24,12 @@
  */
 
 
-package javax.management.openmbean;
+package j86.j86.javax.management.openmbean;
 
 
 // java import
 //
-import java.util.Collection;
+import j86.java.util.Collection;
 
 // jmx import
 //
@@ -119,7 +119,7 @@ public interface CompositeData {
      * <li>their composite types are equal</li>
      * <li>their contents, i.e. (name, value) pairs are equal. If a value contained in
      * the content is an array, the value comparison is done as if by calling
-     * the {@link java.util.Arrays#deepEquals(Object[], Object[]) deepEquals} method
+     * the {@link j86.java.util.Arrays#deepEquals(Object[], Object[]) deepEquals} method
      * for arrays of object reference types or the appropriate overloading of
      * {@code Arrays.equals(e1,e2)} for arrays of primitive types</li>
      * </ul>
@@ -127,8 +127,8 @@ public interface CompositeData {
      * This ensures that this <tt>equals</tt> method works properly for
      * <var>obj</var> parameters which are different implementations of the
      * <code>CompositeData</code> interface, with the restrictions mentioned in the
-     * {@link java.util.Collection#equals(Object) equals}
-     * method of the <tt>java.util.Collection</tt> interface.
+     * {@link j86.java.util.Collection#equals(Object) equals}
+     * method of the <tt>j86.java.util.Collection</tt> interface.
      *
      * @param  obj  the object to be compared for equality with this
      * <code>CompositeData</code> instance.
@@ -152,7 +152,7 @@ public interface CompositeData {
      * Each item value's hash code is added to the returned hash code.
      * If an item value is an array,
      * its hash code is obtained as if by calling the
-     * {@link java.util.Arrays#deepHashCode(Object[]) deepHashCode} method
+     * {@link j86.java.util.Arrays#deepHashCode(Object[]) deepHashCode} method
      * for arrays of object reference types or the appropriate overloading
      * of {@code Arrays.hashCode(e)} for arrays of primitive types.
      *

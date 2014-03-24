@@ -23,13 +23,13 @@
  * questions.
  */
 
-package sun.security.jgss;
+package j86.sun.security.jgss;
 
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.IOException;
-import java.io.EOFException;
-import sun.security.util.*;
+import j86.java.io.InputStream;
+import j86.java.io.OutputStream;
+import j86.java.io.IOException;
+import j86.java.io.EOFException;
+import j86.sun.security.util.*;
 
 /**
  * Utilities for processing GSS Tokens.

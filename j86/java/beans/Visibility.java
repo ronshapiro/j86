@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.beans;
+package j86.java.beans;
 
 /**
  * Under some circumstances a bean may be run on servers where a GUI

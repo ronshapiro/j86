@@ -23,11 +23,11 @@
  * questions.
  */
 
-package java.io;
+package j86.java.io;
 
-import java.io.InputStream;
-import java.util.Enumeration;
-import java.util.Vector;
+import j86.java.io.InputStream;
+import j86.java.util.Enumeration;
+import j86.java.util.Vector;
 
 /**
  * A <code>SequenceInputStream</code> represents
@@ -61,7 +61,7 @@ class SequenceInputStream extends InputStream {
      * <code>close</code> method.
      *
      * @param   e   an enumeration of input streams.
-     * @see     java.util.Enumeration
+     * @see     j86.java.util.Enumeration
      */
     public SequenceInputStream(Enumeration<? extends InputStream> e) {
         this.e = e;

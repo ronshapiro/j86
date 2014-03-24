@@ -23,26 +23,26 @@
  * questions.
  */
 
-package sun.tools.jconsole;
+package j86.sun.tools.jconsole;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.beans.*;
-import java.io.*;
-import java.lang.reflect.Array;
-import java.util.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.java.beans.*;
+import j86.java.io.*;
+import j86.j86.j86.java.lang.reflect.Array;
+import j86.java.util.*;
 
-import javax.accessibility.*;
-import javax.swing.*;
-import javax.swing.border.*;
-import javax.swing.filechooser.*;
-import javax.swing.filechooser.FileFilter;
+import j86.javax.accessibility.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.border.*;
+import j86.j86.javax.swing.filechooser.*;
+import j86.j86.javax.swing.filechooser.FileFilter;
 
 
-import com.sun.tools.jconsole.JConsoleContext;
+import com.j86.sun.tools.jconsole.JConsoleContext;
 
-import static sun.tools.jconsole.Formatter.*;
-import static sun.tools.jconsole.ProxyClient.*;
+import static j86.sun.tools.jconsole.Formatter.*;
+import static j86.sun.tools.jconsole.ProxyClient.*;
 
 @SuppressWarnings("serial")
 public class Plotter extends JComponent

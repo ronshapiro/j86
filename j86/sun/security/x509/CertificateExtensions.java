@@ -23,19 +23,19 @@
  * questions.
  */
 
-package sun.security.x509;
+package j86.sun.security.x509;
 
-import java.io.IOException;
-import java.io.OutputStream;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
-import java.security.cert.CertificateException;
-import java.util.*;
+import j86.java.io.IOException;
+import j86.java.io.OutputStream;
+import j86.j86.j86.java.lang.reflect.Constructor;
+import j86.j86.j86.java.lang.reflect.Field;
+import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.j86.java.security.cert.CertificateException;
+import j86.java.util.*;
 
-import sun.misc.HexDumpEncoder;
+import j86.sun.misc.HexDumpEncoder;
 
-import sun.security.util.*;
+import j86.sun.security.util.*;
 
 /**
  * This class defines the Extensions attribute for the Certificate.
@@ -376,6 +376,6 @@ class UnparseableExtension extends Extension {
     @Override public String toString() {
         return super.toString() +
                 "Unparseable " + name + "extension due to\n" + why + "\n\n" +
-                new sun.misc.HexDumpEncoder().encodeBuffer(getExtensionValue());
+                new j86.sun.misc.HexDumpEncoder().encodeBuffer(getExtensionValue());
     }
 }

@@ -23,28 +23,28 @@
  * questions.
  */
 
-package java.net;
+package j86.java.net;
 
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.Random;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.ArrayList;
-import java.util.ServiceLoader;
-import java.security.AccessController;
-import java.io.ObjectStreamException;
-import java.io.ObjectStreamField;
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectInputStream.GetField;
-import java.io.ObjectOutputStream;
-import java.io.ObjectOutputStream.PutField;
-import sun.security.action.*;
-import sun.net.InetAddressCachePolicy;
-import sun.net.util.IPAddressUtil;
-import sun.net.spi.nameservice.*;
+import j86.java.util.HashMap;
+import j86.java.util.LinkedHashMap;
+import j86.java.util.Random;
+import j86.java.util.Iterator;
+import j86.java.util.LinkedList;
+import j86.java.util.List;
+import j86.java.util.ArrayList;
+import j86.java.util.ServiceLoader;
+import j86.java.security.AccessController;
+import j86.java.io.ObjectStreamException;
+import j86.java.io.ObjectStreamField;
+import j86.java.io.IOException;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.ObjectInputStream.GetField;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectOutputStream.PutField;
+import j86.sun.security.action.*;
+import j86.sun.net.InetAddressCachePolicy;
+import j86.j86.sun.net.util.IPAddressUtil;
+import j86.j86.j86.sun.net.spi.nameservice.*;
 
 /**
  * This class represents an Internet Protocol (IP) address.
@@ -178,15 +178,15 @@ import sun.net.spi.nameservice.*;
  * </blockquote>
  *
  * @author  Chris Warth
- * @see     java.net.InetAddress#getByAddress(byte[])
- * @see     java.net.InetAddress#getByAddress(java.lang.String, byte[])
- * @see     java.net.InetAddress#getAllByName(java.lang.String)
- * @see     java.net.InetAddress#getByName(java.lang.String)
- * @see     java.net.InetAddress#getLocalHost()
+ * @see     j86.java.net.InetAddress#getByAddress(byte[])
+ * @see     j86.java.net.InetAddress#getByAddress(j86.java.lang.String, byte[])
+ * @see     j86.java.net.InetAddress#getAllByName(j86.java.lang.String)
+ * @see     j86.java.net.InetAddress#getByName(j86.java.lang.String)
+ * @see     j86.java.net.InetAddress#getLocalHost()
  * @since JDK1.0
  */
 public
-class InetAddress implements java.io.Serializable {
+class InetAddress implements j86.java.io.Serializable {
     /**
      * Specify the address family: Internet Protocol, Version 4
      * @since 1.4
@@ -265,10 +265,10 @@ class InetAddress implements java.io.Serializable {
      * Load net library into runtime, and perform initializations.
      */
     static {
-        preferIPv6Address = java.security.AccessController.doPrivileged(
-            new GetBooleanAction("java.net.preferIPv6Addresses")).booleanValue();
+        preferIPv6Address = j86.java.security.AccessController.doPrivileged(
+            new GetBooleanAction("j86.java.net.preferIPv6Addresses")).booleanValue();
         AccessController.doPrivileged(
-            new java.security.PrivilegedAction<Void>() {
+            new j86.java.security.PrivilegedAction<Void>() {
                 public Void run() {
                     System.loadLibrary("net");
                     return null;
@@ -683,7 +683,7 @@ class InetAddress implements java.io.Serializable {
      * @param   obj   the object to compare against.
      * @return  {@code true} if the objects are the same;
      *          {@code false} otherwise.
-     * @see     java.net.InetAddress#getAddress()
+     * @see     j86.java.net.InetAddress#getAddress()
      */
     public boolean equals(Object obj) {
         return false;
@@ -914,8 +914,8 @@ class InetAddress implements java.io.Serializable {
         } else {
             final String providerName = provider;
             try {
-                nameService = java.security.AccessController.doPrivileged(
-                    new java.security.PrivilegedExceptionAction<NameService>() {
+                nameService = j86.java.security.AccessController.doPrivileged(
+                    new j86.java.security.PrivilegedExceptionAction<NameService>() {
                         public NameService run() {
                             Iterator<NameServiceDescriptor> itr =
                                 ServiceLoader.load(NameServiceDescriptor.class)
@@ -940,7 +940,7 @@ class InetAddress implements java.io.Serializable {
                         }
                     }
                 );
-            } catch (java.security.PrivilegedActionException e) {
+            } catch (j86.java.security.PrivilegedActionException e) {
             }
         }
 
@@ -953,7 +953,7 @@ class InetAddress implements java.io.Serializable {
 
         // get name service if provided and requested
         String provider = null;;
-        String propPrefix = "sun.net.spi.nameservice.provider.";
+        String propPrefix = "j86.j86.j86.sun.net.spi.nameservice.provider.";
         int n = 1;
         nameServices = new ArrayList<NameService>();
         provider = AccessController.doPrivileged(
@@ -1444,7 +1444,7 @@ class InetAddress implements java.io.Serializable {
      *             be resolved into an address.
      *
      * @see SecurityManager#checkConnect
-     * @see java.net.InetAddress#getByName(java.lang.String)
+     * @see j86.java.net.InetAddress#getByName(j86.java.lang.String)
      */
     public static InetAddress getLocalHost() throws UnknownHostException {
 
@@ -1491,7 +1491,7 @@ class InetAddress implements java.io.Serializable {
                 }
             }
             return ret;
-        } catch (java.lang.SecurityException e) {
+        } catch (j86.java.lang.SecurityException e) {
             return impl.loopbackAddress();
         }
     }
@@ -1526,17 +1526,17 @@ class InetAddress implements java.io.Serializable {
         String prefix = AccessController.doPrivileged(
                       new GetPropertyAction("impl.prefix", ""));
         try {
-            impl = Class.forName("java.net." + prefix + implName).newInstance();
+            impl = Class.forName("j86.java.net." + prefix + implName).newInstance();
         } catch (ClassNotFoundException e) {
-            System.err.println("Class not found: java.net." + prefix +
+            System.err.println("Class not found: j86.java.net." + prefix +
                                implName + ":\ncheck impl.prefix property " +
                                "in your properties file.");
         } catch (InstantiationException e) {
-            System.err.println("Could not instantiate: java.net." + prefix +
+            System.err.println("Could not instantiate: j86.java.net." + prefix +
                                implName + ":\ncheck impl.prefix property " +
                                "in your properties file.");
         } catch (IllegalAccessException e) {
-            System.err.println("Cannot access class: java.net." + prefix +
+            System.err.println("Cannot access class: j86.java.net." + prefix +
                                implName + ":\ncheck impl.prefix property " +
                                "in your properties file.");
         }
@@ -1560,11 +1560,11 @@ class InetAddress implements java.io.Serializable {
     }
 
     private static final long FIELDS_OFFSET;
-    private static final sun.misc.Unsafe UNSAFE;
+    private static final j86.sun.misc.Unsafe UNSAFE;
 
     static {
         try {
-            sun.misc.Unsafe unsafe = sun.misc.Unsafe.getUnsafe();
+            j86.sun.misc.Unsafe unsafe = sun.misc.Unsafe.getUnsafe();
             FIELDS_OFFSET = unsafe.objectFieldOffset(
                 InetAddress.class.getDeclaredField("holder")
             );

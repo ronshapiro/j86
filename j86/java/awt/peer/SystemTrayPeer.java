@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.awt.peer;
+package j86.j86.java.awt.peer;
 
-import java.awt.Dimension;
-import java.awt.SystemTray;
+import j86.java.awt.Dimension;
+import j86.java.awt.SystemTray;
 
 /**
  * The peer interface for {@link SystemTray}. This doesn't need to be

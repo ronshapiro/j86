@@ -23,18 +23,18 @@
  * questions.
  */
 
-package sun.awt;
+package j86.sun.awt;
 
-import java.awt.IllegalComponentStateException;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
-import java.util.WeakHashMap;
+import j86.java.awt.IllegalComponentStateException;
+import j86.java.util.Collections;
+import j86.java.util.Iterator;
+import j86.java.util.HashMap;
+import j86.java.util.HashSet;
+import j86.java.util.Map;
+import j86.java.util.Set;
+import j86.java.util.WeakHashMap;
 
-import sun.util.logging.PlatformLogger;
+import j86.j86.sun.util.logging.PlatformLogger;
 
 /**
  * This class is used to aid in keeping track of DisplayChangedListeners and
@@ -56,7 +56,7 @@ import sun.util.logging.PlatformLogger;
  */
 public class SunDisplayChanger {
 
-    private static final PlatformLogger log = PlatformLogger.getLogger("sun.awt.multiscreen.SunDisplayChanger");
+    private static final PlatformLogger log = PlatformLogger.getLogger("j86.sun.awt.multiscreen.SunDisplayChanger");
 
     // Create a new synchronized map with initial capacity of one listener.
     // It is asserted that the most common case is to have one GraphicsDevice

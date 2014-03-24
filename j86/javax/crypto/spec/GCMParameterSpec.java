@@ -23,13 +23,13 @@
  * questions.
  */
 
-package javax.crypto.spec;
+package j86.j86.javax.crypto.spec;
 
-import java.security.spec.AlgorithmParameterSpec;
+import j86.j86.java.security.spec.AlgorithmParameterSpec;
 
 /**
  * Specifies the set of parameters required by a {@link
- * javax.crypto.Cipher} using the Galois/Counter Mode (GCM) mode.
+ * j86.javax.crypto.Cipher} using the Galois/Counter Mode (GCM) mode.
  * <p>
  * Simple block cipher modes (such as CBC) generally require only an
  * initialization vector (such as {@code IvParameterSpec}),
@@ -56,7 +56,7 @@ import java.security.spec.AlgorithmParameterSpec;
  * applications.  Other values can be specified for this class, but not
  * all CSP implementations will support them.
  *
- * @see javax.crypto.Cipher
+ * @see j86.javax.crypto.Cipher
  *
  * @since 1.7
  */

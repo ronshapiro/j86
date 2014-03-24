@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.sound.sampled;
+package j86.javax.sound.sampled;
 
 /**
  * A <code>FloatControl</code> object provides control over a range of

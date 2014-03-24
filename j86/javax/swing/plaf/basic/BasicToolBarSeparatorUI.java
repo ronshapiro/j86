@@ -23,17 +23,17 @@
  * questions.
  */
 
-package javax.swing.plaf.basic;
+package j86.j86.j86.javax.swing.plaf.basic;
 
-import javax.swing.*;
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.Graphics;
-import java.awt.Insets;
-import java.awt.Rectangle;
-import javax.swing.JToolBar;
-import javax.swing.plaf.*;
-import javax.swing.plaf.basic.BasicSeparatorUI;
+import j86.javax.swing.*;
+import j86.java.awt.Color;
+import j86.java.awt.Dimension;
+import j86.java.awt.Graphics;
+import j86.java.awt.Insets;
+import j86.java.awt.Rectangle;
+import j86.javax.swing.JToolBar;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.j86.javax.swing.plaf.basic.BasicSeparatorUI;
 
 
 /**

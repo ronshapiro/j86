@@ -57,13 +57,13 @@
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package jdk.internal.org.objectweb.asm.commons;
+package j86.j86.jdk.internal.org.objectweb.asm.commons;
 
-import jdk.internal.org.objectweb.asm.Handle;
-import jdk.internal.org.objectweb.asm.Label;
-import jdk.internal.org.objectweb.asm.MethodVisitor;
-import jdk.internal.org.objectweb.asm.Opcodes;
-import jdk.internal.org.objectweb.asm.Type;
+import j86.jdk.internal.org.objectweb.asm.Handle;
+import j86.jdk.internal.org.objectweb.asm.Label;
+import j86.jdk.internal.org.objectweb.asm.MethodVisitor;
+import j86.jdk.internal.org.objectweb.asm.Opcodes;
+import j86.jdk.internal.org.objectweb.asm.Type;
 
 /**
  * A {@link MethodVisitor} providing a more detailed API to generate and
@@ -73,7 +73,7 @@ import jdk.internal.org.objectweb.asm.Type;
  */
 public class InstructionAdapter extends MethodVisitor {
 
-    public final static Type OBJECT_TYPE = Type.getType("Ljava/lang/Object;");
+    public final static Type OBJECT_TYPE = Type.getType("Lj86.java.lang/Object;");
 
     /**
      * Creates a new {@link InstructionAdapter}. <i>Subclasses must not use this

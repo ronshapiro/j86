@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.net.www;
+package j86.j86.sun.net.www;
 
 /**
  * An exception thrown by the MimeLauncher when it is unable to launch

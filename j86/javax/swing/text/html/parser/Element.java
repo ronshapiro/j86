@@ -23,12 +23,12 @@
  * questions.
  */
 
-package javax.swing.text.html.parser;
+package j86.j86.j86.j86.javax.swing.text.html.parser;
 
-import java.util.Hashtable;
-import java.util.BitSet;
-import java.io.*;
-import sun.awt.AppContext;
+import j86.java.util.Hashtable;
+import j86.java.util.BitSet;
+import j86.java.io.*;
+import j86.sun.awt.AppContext;
 
 /**
  * An element as described in a DTD using the ELEMENT construct.

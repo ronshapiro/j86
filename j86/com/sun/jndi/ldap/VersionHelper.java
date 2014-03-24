@@ -23,10 +23,10 @@
  * questions.
  */
 
-package com.sun.jndi.ldap;
+package j86.com.sun.jndi.ldap;
 
-import java.net.MalformedURLException;
-import java.net.URL;
+import j86.java.net.MalformedURLException;
+import j86.java.net.URL;
 
 abstract class VersionHelper {
 
@@ -36,11 +36,11 @@ abstract class VersionHelper {
 
     static {
         try {
-            Class.forName("java.net.URLClassLoader"); // 1.2 test
-            Class.forName("java.security.PrivilegedAction"); // 1.2 test
+            Class.forName("j86.java.net.URLClassLoader"); // 1.2 test
+            Class.forName("j86.java.security.PrivilegedAction"); // 1.2 test
             helper = (VersionHelper)
                 Class.forName(
-                    "com.sun.jndi.ldap.VersionHelper12").newInstance();
+                    "j86.com.sun.jndi.ldap.VersionHelper12").newInstance();
         } catch (Exception e) {
         }
 
@@ -49,7 +49,7 @@ abstract class VersionHelper {
             try {
                 helper = (VersionHelper)
                     Class.forName(
-                        "com.sun.jndi.ldap.VersionHelper11").newInstance();
+                        "j86.com.sun.jndi.ldap.VersionHelper11").newInstance();
             } catch (Exception e) {
                 // should never happen
             }

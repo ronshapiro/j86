@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.security.ssl;
+package j86.sun.security.ssl;
 
-import java.io.PrintStream;
-import java.security.AccessController;
-import java.util.Locale;
+import j86.java.io.PrintStream;
+import j86.java.security.AccessController;
+import j86.java.util.Locale;
 
-import sun.security.action.GetPropertyAction;
+import j86.sun.security.action.GetPropertyAction;
 
 /**
- * This class has be shamefully lifted from sun.security.util.Debug
+ * This class has be shamefully lifted from j86.sun.security.util.Debug
  *
  * @author Gary Ellison
  */
@@ -43,8 +43,8 @@ public class Debug {
     private static String args;
 
     static {
-        args = java.security.AccessController.doPrivileged(
-            new GetPropertyAction("javax.net.debug", ""));
+        args = j86.java.security.AccessController.doPrivileged(
+            new GetPropertyAction("j86.javax.net.debug", ""));
         args = args.toLowerCase(Locale.ENGLISH);
         if (args.equals("help")) {
             Help();
@@ -106,7 +106,7 @@ public class Debug {
     }
 
     /**
-     * True if the property "javax.net.debug" contains the
+     * True if the property "j86.javax.net.debug" contains the
      * string "option".
      */
     public static boolean isOn(String option)
@@ -196,6 +196,6 @@ public class Debug {
     }
 
     static String toString(byte[] b) {
-        return sun.security.util.Debug.toString(b);
+        return j86.sun.security.util.Debug.toString(b);
     }
 }

@@ -25,11 +25,11 @@
 /*
  * $Id: URIReferenceException.java,v 1.4 2005/05/10 15:47:42 mullan Exp $
  */
-package javax.xml.crypto;
+package j86.javax.xml.crypto;
 
-import java.io.PrintStream;
-import java.io.PrintWriter;
-import javax.xml.crypto.dsig.keyinfo.RetrievalMethod;
+import j86.java.io.PrintStream;
+import j86.java.io.PrintWriter;
+import j86.j86.j86.javax.xml.crypto.dsig.keyinfo.RetrievalMethod;
 
 /**
  * Indicates an exceptional condition thrown while dereferencing a

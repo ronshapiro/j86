@@ -25,11 +25,11 @@
 /*
  * $Id: SignedInfo.java,v 1.7 2005/05/10 16:03:47 mullan Exp $
  */
-package javax.xml.crypto.dsig;
+package j86.j86.javax.xml.crypto.dsig;
 
-import javax.xml.crypto.XMLStructure;
-import java.io.InputStream;
-import java.util.List;
+import j86.javax.xml.crypto.XMLStructure;
+import j86.java.io.InputStream;
+import j86.java.util.List;
 
 /**
  * An representation of the XML <code>SignedInfo</code> element as
@@ -75,7 +75,7 @@ public interface SignedInfo extends XMLStructure {
     SignatureMethod getSignatureMethod();
 
     /**
-     * Returns an {@link java.util.Collections#unmodifiableList
+     * Returns an {@link j86.java.util.Collections#unmodifiableList
      * unmodifiable list} of one or more {@link Reference}s.
      *
      * @return an unmodifiable list of one or more {@link Reference}s

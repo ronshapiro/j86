@@ -22,10 +22,10 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.util.stream;
+package j86.j86.java.util.stream;
 
-import java.util.Spliterator;
-import java.util.function.IntFunction;
+import j86.java.util.Spliterator;
+import j86.j86.java.util.function.IntFunction;
 
 /**
  * Helper class for executing <a href="package-summary.html#StreamOps">
@@ -39,10 +39,10 @@ import java.util.function.IntFunction;
  * incorporate information about the terminal (or stateful) operation which
  * follows the last intermediate operation described by this
  * {@code PipelineHelper}. The {@code PipelineHelper} is passed to the
- * {@link TerminalOp#evaluateParallel(PipelineHelper, java.util.Spliterator)},
- * {@link TerminalOp#evaluateSequential(PipelineHelper, java.util.Spliterator)},
- * and {@link AbstractPipeline#opEvaluateParallel(PipelineHelper, java.util.Spliterator,
- * java.util.function.IntFunction)}, methods, which can use the
+ * {@link TerminalOp#evaluateParallel(PipelineHelper, j86.java.util.Spliterator)},
+ * {@link TerminalOp#evaluateSequential(PipelineHelper, j86.java.util.Spliterator)},
+ * and {@link AbstractPipeline#opEvaluateParallel(PipelineHelper, j86.java.util.Spliterator,
+ * j86.j86.java.util.function.IntFunction)}, methods, which can use the
  * {@code PipelineHelper} to access information about the pipeline such as
  * head shape, stream flags, and size, and use the helper methods
  * such as {@link #wrapAndCopyInto(Sink, Spliterator)},

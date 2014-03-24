@@ -23,25 +23,25 @@
  * questions.
  */
 
-package java.io;
+package j86.java.io;
 
-import java.io.ObjectStreamClass.WeakClassKey;
-import java.lang.ref.ReferenceQueue;
-import java.lang.reflect.Array;
-import java.lang.reflect.Modifier;
-import java.lang.reflect.Proxy;
-import java.security.AccessControlContext;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.security.PrivilegedActionException;
-import java.security.PrivilegedExceptionAction;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentMap;
-import java.util.concurrent.atomic.AtomicBoolean;
-import static java.io.ObjectStreamClass.processQueue;
-import sun.reflect.misc.ReflectUtil;
+import j86.java.io.ObjectStreamClass.WeakClassKey;
+import j86.j86.java.lang.ref.ReferenceQueue;
+import j86.j86.j86.java.lang.reflect.Array;
+import j86.j86.j86.java.lang.reflect.Modifier;
+import j86.j86.j86.java.lang.reflect.Proxy;
+import j86.java.security.AccessControlContext;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.security.PrivilegedActionException;
+import j86.java.security.PrivilegedExceptionAction;
+import j86.java.util.Arrays;
+import j86.java.util.HashMap;
+import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.j86.java.util.concurrent.ConcurrentMap;
+import j86.j86.j86.java.util.concurrent.atomic.AtomicBoolean;
+import static j86.java.io.ObjectStreamClass.processQueue;
+import j86.j86.sun.reflect.misc.ReflectUtil;
 
 /**
  * An ObjectInputStream deserializes primitive data and objects previously
@@ -58,8 +58,8 @@ import sun.reflect.misc.ReflectUtil;
  * created from the stream match the classes present in the Java Virtual
  * Machine.  Classes are loaded as required using the standard mechanisms.
  *
- * <p>Only objects that support the java.io.Serializable or
- * java.io.Externalizable interface can be read from streams.
+ * <p>Only objects that support the j86.java.io.Serializable or
+ * j86.java.io.Externalizable interface can be read from streams.
  *
  * <p>The method <code>readObject</code> is used to read an object from the
  * stream.  Java's safe casting should be used to get the desired type.  In
@@ -81,7 +81,7 @@ import sun.reflect.misc.ReflectUtil;
  * object.  Memory is allocated for the object and initialized to zero (NULL).
  * No-arg constructors are invoked for the non-serializable classes and then
  * the fields of the serializable classes are restored from the stream starting
- * with the serializable class closest to java.lang.object and finishing with
+ * with the serializable class closest to j86.java.lang.object and finishing with
  * the object's most specific class.
  *
  * <p>For example to read from a stream as written by the example in
@@ -99,7 +99,7 @@ import sun.reflect.misc.ReflectUtil;
  * </pre>
  *
  * <p>Classes control how they are serialized by implementing either the
- * java.io.Serializable or java.io.Externalizable interfaces.
+ * j86.java.io.Serializable or java.io.Externalizable interfaces.
  *
  * <p>Implementing the Serializable interface allows object serialization to
  * save and restore the entire state of the object and it allows classes to
@@ -112,9 +112,9 @@ import sun.reflect.misc.ReflectUtil;
  * methods:
  *
  * <pre>
- * private void writeObject(java.io.ObjectOutputStream stream)
+ * private void writeObject(j86.java.io.ObjectOutputStream stream)
  *     throws IOException;
- * private void readObject(java.io.ObjectInputStream stream)
+ * private void readObject(j86.java.io.ObjectInputStream stream)
  *     throws IOException, ClassNotFoundException;
  * private void readObjectNoData()
  *     throws ObjectStreamException;
@@ -160,7 +160,7 @@ import sun.reflect.misc.ReflectUtil;
  * stream.
  *
  * <p>Serialization does not read or assign values to the fields of any object
- * that does not implement the java.io.Serializable interface.  Subclasses of
+ * that does not implement the j86.java.io.Serializable interface.  Subclasses of
  * Objects that are not serializable can be serializable. In this case the
  * non-serializable class must have a no-arg constructor to allow its fields to
  * be initialized.  In this case it is the responsibility of the subclass to
@@ -197,9 +197,9 @@ import sun.reflect.misc.ReflectUtil;
  *
  * @author      Mike Warres
  * @author      Roger Riggs
- * @see java.io.DataInput
- * @see java.io.ObjectOutputStream
- * @see java.io.Serializable
+ * @see j86.java.io.DataInput
+ * @see j86.java.io.ObjectOutputStream
+ * @see j86.java.io.Serializable
  * @see <a href="../../../platform/serialization/spec/input.html"> Object Serialization Specification, Section 3, Object Input Classes</a>
  * @since   JDK1.1
  */
@@ -315,7 +315,7 @@ public class ObjectInputStream
      *          subclassing.
      * @throws  IOException if an I/O error occurs while creating this stream
      * @see SecurityManager#checkPermission
-     * @see java.io.SerializablePermission
+     * @see j86.java.io.SerializablePermission
      */
     protected ObjectInputStream() throws IOException, SecurityException {
         SecurityManager sm = System.getSecurityManager();
@@ -768,7 +768,7 @@ public class ObjectInputStream
      *          <code>checkPermission</code> method denies enabling the stream
      *          to allow objects read from the stream to be replaced.
      * @see SecurityManager#checkPermission
-     * @see java.io.SerializablePermission
+     * @see j86.java.io.SerializablePermission
      */
     protected boolean enableResolveObject(boolean enable)
         throws SecurityException
@@ -821,7 +821,7 @@ public class ObjectInputStream
      * @throws  IOException If an I/O error has occurred.
      * @throws  ClassNotFoundException If the Class of a serialized object used
      *          in the class descriptor representation cannot be found
-     * @see java.io.ObjectOutputStream#writeClassDescriptor(java.io.ObjectStreamClass)
+     * @see j86.java.io.ObjectOutputStream#writeClassDescriptor(java.io.ObjectStreamClass)
      * @since 1.3
      */
     protected ObjectStreamClass readClassDescriptor()
@@ -844,7 +844,7 @@ public class ObjectInputStream
 
     /**
      * Reads into an array of bytes.  This method will block until some input
-     * is available. Consider using java.io.DataInputStream.readFully to read
+     * is available. Consider using j86.java.io.DataInputStream.readFully to read
      * exactly 'length' bytes.
      *
      * @param   buf the buffer into which the data is read
@@ -853,7 +853,7 @@ public class ObjectInputStream
      * @return  the actual number of bytes read, -1 is returned when the end of
      *          the stream is reached.
      * @throws  IOException If an I/O error has occurred.
-     * @see java.io.DataInputStream#readFully(byte[],int,int)
+     * @see j86.java.io.DataInputStream#readFully(byte[],int,int)
      */
     public int read(byte[] buf, int off, int len) throws IOException {
         if (buf == null) {
@@ -2055,7 +2055,7 @@ public class ObjectInputStream
      * corresponding modifications to the above class.
      */
     private static ClassLoader latestUserDefinedLoader() {
-        return sun.misc.VM.latestUserDefinedLoader();
+        return j86.sun.misc.VM.latestUserDefinedLoader();
     }
 
     /**

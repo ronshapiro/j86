@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.net;
+package j86.sun.net;
 
-import java.io.*;
+import j86.java.io.*;
 
 /**
  * An unexpected result was received by the client when talking to the

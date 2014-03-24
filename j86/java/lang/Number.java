@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.lang;
+package j86.java.lang;
 
 /**
  * The abstract class {@code Number} is the superclass of platform
@@ -52,7 +52,7 @@ package java.lang;
  * @jls 5.1.3 Narrowing Primitive Conversions
  * @since   JDK1.0
  */
-public abstract class Number implements java.io.Serializable {
+public abstract class Number implements j86.java.io.Serializable {
     /**
      * Returns the value of the specified number as an {@code int},
      * which may involve rounding or truncation.

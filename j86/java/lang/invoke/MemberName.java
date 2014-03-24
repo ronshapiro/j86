@@ -23,24 +23,24 @@
  * questions.
  */
 
-package java.lang.invoke;
+package j86.j86.java.lang.invoke;
 
-import sun.invoke.util.BytecodeDescriptor;
-import sun.invoke.util.VerifyAccess;
+import j86.j86.sun.invoke.util.BytecodeDescriptor;
+import j86.j86.sun.invoke.util.VerifyAccess;
 
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Field;
-import java.lang.reflect.Method;
-import java.lang.reflect.Member;
-import java.lang.reflect.Modifier;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.List;
-import static java.lang.invoke.MethodHandleNatives.Constants.*;
-import static java.lang.invoke.MethodHandleStatics.*;
-import java.util.Objects;
+import j86.j86.j86.java.lang.reflect.Constructor;
+import j86.j86.j86.java.lang.reflect.Field;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.j86.j86.java.lang.reflect.Member;
+import j86.j86.j86.java.lang.reflect.Modifier;
+import j86.java.util.ArrayList;
+import j86.java.util.Arrays;
+import j86.java.util.Collections;
+import j86.java.util.Iterator;
+import j86.java.util.List;
+import static j86.j86.java.lang.invoke.MethodHandleNatives.Constants.*;
+import static j86.j86.java.lang.invoke.MethodHandleStatics.*;
+import j86.java.util.Objects;
 
 /**
  * A {@code MemberName} is a compact symbolic datum which fully characterizes
@@ -62,7 +62,7 @@ import java.util.Objects;
  * This representation is stateless and only decriptive.
  * It provides no private information and no capability to use the member.
  * <p>
- * By contrast, a {@linkplain java.lang.reflect.Method} contains fuller information
+ * By contrast, a {@linkplain j86.j86.j86.java.lang.reflect.Method} contains fuller information
  * about the internals of a method (except its bytecodes) and also
  * allows invocation.  A MemberName is much lighter than a Method,
  * since it contains about 7 fields to the 16 of Method (plus its sub-arrays),
@@ -238,7 +238,7 @@ import java.util.Objects;
     }
 
     /** Return the modifier flags of this member.
-     *  @see java.lang.reflect.Modifier
+     *  @see j86.j86.j86.java.lang.reflect.Modifier
      */
     public int getModifiers() {
         return (flags & RECOGNIZED_MODIFIERS);
@@ -819,7 +819,7 @@ import java.util.Objects;
     @Override
     public String toString() {
         if (isType())
-            return type.toString();  // class java.lang.String
+            return type.toString();  // class j86.java.lang.String
         // else it is a field, method, or constructor
         StringBuilder buf = new StringBuilder();
         if (getDeclaringClass() != null) {

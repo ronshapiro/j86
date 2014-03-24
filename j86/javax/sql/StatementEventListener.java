@@ -26,7 +26,7 @@
 /*
  * Created on Apr 28, 2005
  */
-package javax.sql;
+package j86.javax.sql;
 
 /**
  * An object that registers to be notified of events that occur on PreparedStatements
@@ -55,7 +55,7 @@ package javax.sql;
  * <p>
  * @since 1.6
  */
-public interface StatementEventListener  extends java.util.EventListener{
+public interface StatementEventListener  extends j86.java.util.EventListener{
   /**
    * The driver calls this method on all <code>StatementEventListener</code>s registered on the connection when it detects that a
    * <code>PreparedStatement</code> is closed.

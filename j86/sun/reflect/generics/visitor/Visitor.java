@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.reflect.generics.visitor;
+package j86.j86.sun.reflect.generics.visitor;
 
-import sun.reflect.generics.tree.*;
+import j86.j86.sun.reflect.generics.tree.*;
 
 public interface Visitor<T> extends TypeTreeVisitor<T> {
 

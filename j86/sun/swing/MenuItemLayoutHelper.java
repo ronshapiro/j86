@@ -23,17 +23,17 @@
  * questions.
  */
 
-package sun.swing;
+package j86.sun.swing;
 
-import static sun.swing.SwingUtilities2.BASICMENUITEMUI_MAX_TEXT_OFFSET;
+import static j86.sun.swing.SwingUtilities2.BASICMENUITEMUI_MAX_TEXT_OFFSET;
 
-import javax.swing.*;
-import javax.swing.plaf.basic.BasicHTML;
-import javax.swing.text.View;
-import java.awt.*;
-import java.awt.event.KeyEvent;
-import java.util.Map;
-import java.util.HashMap;
+import j86.javax.swing.*;
+import j86.j86.j86.javax.swing.plaf.basic.BasicHTML;
+import j86.j86.javax.swing.text.View;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.KeyEvent;
+import j86.java.util.Map;
+import j86.java.util.HashMap;
 
 /**
  * Calculates preferred size and layouts menu items.

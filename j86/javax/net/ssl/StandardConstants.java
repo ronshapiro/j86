@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.net.ssl;
+package j86.j86.javax.net.ssl;
 
 /**
  * Standard constants definitions
@@ -35,7 +35,7 @@ public final class StandardConstants {
     // Suppress default constructor for noninstantiability
     private StandardConstants() {
         throw new AssertionError(
-            "No javax.net.ssl.StandardConstants instances for you!");
+            "No j86.j86.javax.net.ssl.StandardConstants instances for you!");
     }
 
     /**

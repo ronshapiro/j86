@@ -23,43 +23,43 @@
  * questions.
  */
 
-package com.sun.media.sound;
+package j86.com.sun.media.sound;
 
-import java.io.BufferedInputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.lang.ref.WeakReference;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Properties;
-import java.util.StringTokenizer;
-import java.util.prefs.BackingStoreException;
-import java.util.prefs.Preferences;
+import j86.java.io.BufferedInputStream;
+import j86.java.io.File;
+import j86.java.io.FileInputStream;
+import j86.java.io.FileOutputStream;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.io.OutputStream;
+import j86.j86.java.lang.ref.WeakReference;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.util.ArrayList;
+import j86.java.util.Arrays;
+import j86.java.util.HashMap;
+import j86.java.util.List;
+import j86.java.util.Map;
+import j86.java.util.Properties;
+import j86.java.util.StringTokenizer;
+import j86.j86.java.util.prefs.BackingStoreException;
+import j86.j86.java.util.prefs.Preferences;
 
-import javax.sound.midi.Instrument;
-import javax.sound.midi.MidiChannel;
-import javax.sound.midi.MidiDevice;
-import javax.sound.midi.MidiSystem;
-import javax.sound.midi.MidiUnavailableException;
-import javax.sound.midi.Patch;
-import javax.sound.midi.Receiver;
-import javax.sound.midi.Soundbank;
-import javax.sound.midi.Transmitter;
-import javax.sound.midi.VoiceStatus;
-import javax.sound.sampled.AudioFormat;
-import javax.sound.sampled.AudioInputStream;
-import javax.sound.sampled.AudioSystem;
-import javax.sound.sampled.LineUnavailableException;
-import javax.sound.sampled.SourceDataLine;
+import j86.javax.sound.midi.Instrument;
+import j86.javax.sound.midi.MidiChannel;
+import j86.javax.sound.midi.MidiDevice;
+import j86.javax.sound.midi.MidiSystem;
+import j86.javax.sound.midi.MidiUnavailableException;
+import j86.javax.sound.midi.Patch;
+import j86.javax.sound.midi.Receiver;
+import j86.javax.sound.midi.Soundbank;
+import j86.javax.sound.midi.Transmitter;
+import j86.javax.sound.midi.VoiceStatus;
+import j86.javax.sound.sampled.AudioFormat;
+import j86.javax.sound.sampled.AudioInputStream;
+import j86.javax.sound.sampled.AudioSystem;
+import j86.javax.sound.sampled.LineUnavailableException;
+import j86.javax.sound.sampled.SourceDataLine;
 
 /**
  * The software synthesizer class.
@@ -849,7 +849,7 @@ public final class SoftSynthesizer implements AudioSynthesizer,
                 .doPrivileged(new PrivilegedAction<Properties>() {
                     public Properties run() {
                         Properties p = new Properties();
-                        String notePath = "/com/sun/media/sound/softsynthesizer";
+                        String notePath = "/j86.com.sun.media.sound/softsynthesizer";
                         try {
                             Preferences prefroot = Preferences.userRoot();
                             if (prefroot.nodeExists(notePath)) {

@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.net.ssl;
+package j86.j86.javax.net.ssl;
 
-import java.util.Arrays;
+import j86.java.util.Arrays;
 
 /**
  * Instances of this class represent a server name in a Server Name

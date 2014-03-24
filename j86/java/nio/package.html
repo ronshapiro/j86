@@ -53,10 +53,10 @@ other NIO packages.
 
 </ul>
 
-<p> The <tt>java.nio</tt> package defines the buffer classes, which are used
+<p> The <tt>j86.java.nio</tt> package defines the buffer classes, which are used
 throughout the NIO APIs.  The charset API is defined in the {@link
-java.nio.charset} package, and the channel and selector APIs are defined in the
-{@link java.nio.channels} package.  Each of these subpackages has its own
+j86.j86.java.nio.charset} package, and the channel and selector APIs are defined in the
+{@link j86.j86.java.nio.channels} package.  Each of these subpackages has its own
 service-provider (SPI) subpackage, the contents of which can be used to extend
 the platform's default implementations or to construct alternative
 implementations.
@@ -66,26 +66,26 @@ implementations.
 
 <blockquote><table cellspacing=1 cellpadding=0 summary="Description of the various buffers">
   <tr><th><p align="left">Buffers</p></th><th><p align="left">Description</p></th></tr> 
-  <tr><td valign=top><tt>{@link java.nio.Buffer}</tt></td>
+  <tr><td valign=top><tt>{@link j86.java.nio.Buffer}</tt></td>
       <td>Position, limit, and capacity;
           <br>clear, flip, rewind, and mark/reset</td></tr>
-  <tr><td valign=top><tt>&nbsp;&nbsp;{@link java.nio.ByteBuffer}</tt></td>
+  <tr><td valign=top><tt>&nbsp;&nbsp;{@link j86.java.nio.ByteBuffer}</tt></td>
       <td>Get/put, compact, views; allocate,&nbsp;wrap</td></tr>
-  <tr><td valign=top><tt>&nbsp;&nbsp;&nbsp;&nbsp;{@link java.nio.MappedByteBuffer}&nbsp;&nbsp;</tt></td>
+  <tr><td valign=top><tt>&nbsp;&nbsp;&nbsp;&nbsp;{@link j86.java.nio.MappedByteBuffer}&nbsp;&nbsp;</tt></td>
       <td>A byte buffer mapped to a file</td></tr>
-  <tr><td valign=top><tt>&nbsp;&nbsp;{@link java.nio.CharBuffer}</tt></td>
+  <tr><td valign=top><tt>&nbsp;&nbsp;{@link j86.java.nio.CharBuffer}</tt></td>
       <td>Get/put, compact; allocate,&nbsp;wrap</td></tr>
-  <tr><td valign=top><tt>&nbsp;&nbsp;{@link java.nio.DoubleBuffer}</tt></td>
+  <tr><td valign=top><tt>&nbsp;&nbsp;{@link j86.java.nio.DoubleBuffer}</tt></td>
       <td>&nbsp;&nbsp;&nbsp;&nbsp;'&nbsp;'</td></tr>
-  <tr><td valign=top><tt>&nbsp;&nbsp;{@link java.nio.FloatBuffer}</tt></td>
+  <tr><td valign=top><tt>&nbsp;&nbsp;{@link j86.java.nio.FloatBuffer}</tt></td>
       <td>&nbsp;&nbsp;&nbsp;&nbsp;'&nbsp;'</td></tr>
-  <tr><td valign=top><tt>&nbsp;&nbsp;{@link java.nio.IntBuffer}</tt></td>
+  <tr><td valign=top><tt>&nbsp;&nbsp;{@link j86.java.nio.IntBuffer}</tt></td>
       <td>&nbsp;&nbsp;&nbsp;&nbsp;'&nbsp;'</td></tr>
-  <tr><td valign=top><tt>&nbsp;&nbsp;{@link java.nio.LongBuffer}</tt></td>
+  <tr><td valign=top><tt>&nbsp;&nbsp;{@link j86.java.nio.LongBuffer}</tt></td>
       <td>&nbsp;&nbsp;&nbsp;&nbsp;'&nbsp;'</td></tr>
-  <tr><td valign=top><tt>&nbsp;&nbsp;{@link java.nio.ShortBuffer}</tt></td>
+  <tr><td valign=top><tt>&nbsp;&nbsp;{@link j86.java.nio.ShortBuffer}</tt></td>
       <td>&nbsp;&nbsp;&nbsp;&nbsp;'&nbsp;'</td></tr>
-  <tr><td valign=top><tt>{@link java.nio.ByteOrder}</tt></td>
+  <tr><td valign=top><tt>{@link j86.java.nio.ByteOrder}</tt></td>
       <td>Typesafe enumeration for&nbsp;byte&nbsp;orders</td></tr>
 </table></blockquote>
 
@@ -93,7 +93,7 @@ implementations.
 primitive type.  In addition to its content a buffer has a <i>position</i>,
 which is the index of the next element to be read or written, and a
 <i>limit</i>, which is the index of the first element that should not be read
-or written.  The base {@link java.nio.Buffer} class defines these properties as
+or written.  The base {@link j86.java.nio.Buffer} class defines these properties as
 well as methods for <i>clearing</i>, <i>flipping</i>, and <i>rewinding</i>, for
 <i>marking</i> the current position, and for <i>resetting</i> the position to
 the previous mark.
@@ -115,9 +115,9 @@ other buffer classes:
   best effort to perform native I/O operations directly upon it.  </p></li>
 
   <li><p> A byte buffer can be created by {@link
-  java.nio.channels.FileChannel#map <i>mapping</i>} a region of a
+  j86.j86.java.nio.channels.FileChannel#map <i>mapping</i>} a region of a
   file directly into memory, in which case a few additional file-related
-  operations defined in the {@link java.nio.MappedByteBuffer} class are
+  operations defined in the {@link j86.java.nio.MappedByteBuffer} class are
   available.  </p></li>
 
   <li><p> A byte buffer provides access to its content as either a heterogeneous
@@ -129,7 +129,7 @@ other buffer classes:
 
 <p> Unless otherwise noted, passing a <tt>null</tt> argument to a constructor
 or method in any class or interface in this package will cause a {@link
-java.lang.NullPointerException NullPointerException} to be thrown.
+j86.java.lang.NullPointerException NullPointerException} to be thrown.
 
 @since 1.4
 @author Mark Reinhold

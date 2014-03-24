@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.awt.peer;
+package j86.j86.java.awt.peer;
 
-import java.awt.FileDialog;
-import java.io.FilenameFilter;
+import j86.java.awt.FileDialog;
+import j86.java.io.FilenameFilter;
 
 /**
  * The peer interface for {@link FileDialog}.

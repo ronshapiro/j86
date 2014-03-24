@@ -26,18 +26,18 @@
 /*
  * $Id: DOMUtils.java 1333415 2012-05-03 12:03:51Z coheigea $
  */
-package org.jcp.xml.dsig.internal.dom;
+package j86.j86.org.jcp.xml.dsig.internal.dom;
 
-import java.util.*;
-import java.security.spec.AlgorithmParameterSpec;
+import j86.java.util.*;
+import j86.j86.java.security.spec.AlgorithmParameterSpec;
 import org.w3c.dom.Attr;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
-import javax.xml.crypto.*;
-import javax.xml.crypto.dsig.*;
-import javax.xml.crypto.dsig.spec.*;
+import j86.javax.xml.crypto.*;
+import j86.j86.javax.xml.crypto.dsig.*;
+import j86.j86.j86.javax.xml.crypto.dsig.spec.*;
 
 /**
  * Useful static DOM utility methods.
@@ -405,14 +405,14 @@ public class DOMUtils {
     {
 
         XMLStructure ostylesheet = spec2.getStylesheet();
-        if (!(ostylesheet instanceof javax.xml.crypto.dom.DOMStructure)) {
+        if (!(ostylesheet instanceof j86.j86.javax.xml.crypto.dom.DOMStructure)) {
             return false;
         }
         Node ostylesheetElem =
-            ((javax.xml.crypto.dom.DOMStructure) ostylesheet).getNode();
+            ((j86.j86.javax.xml.crypto.dom.DOMStructure) ostylesheet).getNode();
         XMLStructure stylesheet = spec1.getStylesheet();
         Node stylesheetElem =
-            ((javax.xml.crypto.dom.DOMStructure) stylesheet).getNode();
+            ((j86.j86.javax.xml.crypto.dom.DOMStructure) stylesheet).getNode();
         return nodesEqual(stylesheetElem, ostylesheetElem);
     }
 }

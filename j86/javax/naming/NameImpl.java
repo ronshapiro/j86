@@ -23,13 +23,13 @@
  * questions.
  */
 
-package javax.naming;
+package j86.javax.naming;
 
-import java.util.Locale;
-import java.util.Vector;
-import java.util.Enumeration;
-import java.util.Properties;
-import java.util.NoSuchElementException;
+import j86.java.util.Locale;
+import j86.java.util.Vector;
+import j86.java.util.Enumeration;
+import j86.java.util.Properties;
+import j86.java.util.NoSuchElementException;
 
 /**
   * The implementation class for CompoundName and CompositeName.

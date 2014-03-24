@@ -22,9 +22,9 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.jmx.snmp;
-import com.sun.jmx.snmp.SnmpStatusException;
-import com.sun.jmx.snmp.SnmpTooBigException;
+package j86.com.sun.jmx.snmp;
+import j86.com.sun.jmx.snmp.SnmpStatusException;
+import j86.com.sun.jmx.snmp.SnmpTooBigException;
 
 /**
  * Security parameters are security model dependent. Every security parameters class wishing to be passed to a security model must implement this marker interface.

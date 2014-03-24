@@ -23,15 +23,15 @@
  * questions.
  */
 
-package sun.tools.javac;
+package j86.j86.sun.tools.javac;
 
-import sun.tools.java.*;
-import sun.tools.tree.*;
+import j86.sun.tools.java.*;
+import j86.sun.tools.tree.*;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.Vector;
-import java.util.Enumeration;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.util.Vector;
+import j86.java.util.Enumeration;
 
 /**
  * Batch file parser, this needs more work.

@@ -30,7 +30,7 @@
  *******************************************************************************
  */
 
-package java.util;
+package j86.java.util;
 
 /**
  * Thrown by methods in {@link Locale} and {@link Locale.Builder} to

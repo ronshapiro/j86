@@ -23,13 +23,13 @@
  * questions.
  */
 
-package com.sun.beans.editors;
+package j86.j86.com.sun.beans.editors;
 
 /**
  * Property editor for a java builtin "boolean" type.
  */
 
-import java.beans.*;
+import j86.java.beans.*;
 
 public class BooleanEditor extends PropertyEditorSupport {
 
@@ -48,7 +48,7 @@ public class BooleanEditor extends PropertyEditorSupport {
              : null;
     }
 
-    public void setAsText(String text) throws java.lang.IllegalArgumentException {
+    public void setAsText(String text) throws j86.java.lang.IllegalArgumentException {
         if (text == null) {
             setValue(null);
         } else if (isValidName(true, text)) {
@@ -56,7 +56,7 @@ public class BooleanEditor extends PropertyEditorSupport {
         } else if (isValidName(false, text)) {
             setValue(Boolean.FALSE);
         } else {
-            throw new java.lang.IllegalArgumentException(text);
+            throw new j86.java.lang.IllegalArgumentException(text);
         }
     }
 

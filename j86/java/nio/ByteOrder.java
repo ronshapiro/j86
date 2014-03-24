@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.nio;
+package j86.java.nio;
 
 
 /**

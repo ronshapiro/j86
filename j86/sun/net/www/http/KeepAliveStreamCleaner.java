@@ -23,13 +23,13 @@
  * questions.
  */
 
-package sun.net.www.http;
+package j86.j86.j86.sun.net.www.http;
 
-import java.io.IOException;
-import java.util.LinkedList;
-import sun.net.NetProperties;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
+import j86.java.io.IOException;
+import j86.java.util.LinkedList;
+import j86.sun.net.NetProperties;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
 
 /**
  * This class is used to cleanup any remaining data that may be on a KeepAliveStream

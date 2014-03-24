@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.awt.geom;
+package j86.j86.java.awt.geom;
 
 /**
  * The <code>Dimension2D</code> class is to encapsulate a width
@@ -46,7 +46,7 @@ public abstract class Dimension2D implements Cloneable {
      * the information necessary to satisfy the various accessor
      * methods below.
      *
-     * @see java.awt.Dimension
+     * @see j86.java.awt.Dimension
      * @since 1.2
      */
     protected Dimension2D() {
@@ -72,8 +72,8 @@ public abstract class Dimension2D implements Cloneable {
      * Sets the size of this <code>Dimension</code> object to the
      * specified width and height.
      * This method is included for completeness, to parallel the
-     * {@link java.awt.Component#getSize getSize} method of
-     * {@link java.awt.Component}.
+     * {@link j86.java.awt.Component#getSize getSize} method of
+     * {@link j86.java.awt.Component}.
      * @param width  the new width for the <code>Dimension</code>
      * object
      * @param height  the new height for the <code>Dimension</code>
@@ -100,7 +100,7 @@ public abstract class Dimension2D implements Cloneable {
      *
      * @return     a clone of this instance.
      * @exception  OutOfMemoryError            if there is not enough memory.
-     * @see        java.lang.Cloneable
+     * @see        j86.java.lang.Cloneable
      * @since      1.2
      */
     public Object clone() {

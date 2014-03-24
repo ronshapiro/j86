@@ -23,13 +23,13 @@
  * questions.
  */
 
-package javax.management;
+package j86.javax.management;
 
-import java.io.IOException;
-import java.io.InvalidObjectException;
-import java.io.ObjectInputStream;
-import java.util.Arrays;
-import java.util.Objects;
+import j86.java.io.IOException;
+import j86.java.io.InvalidObjectException;
+import j86.java.io.ObjectInputStream;
+import j86.java.util.Arrays;
+import j86.java.util.Objects;
 
 /**
  * <p>The <CODE>MBeanNotificationInfo</CODE> class is used to describe the
@@ -42,7 +42,7 @@ import java.util.Objects;
  * <p>Instances of this class are immutable.  Subclasses may be
  * mutable but this is not recommended.</p>
  *
- * <p>This class extends <CODE>javax.management.MBeanFeatureInfo</CODE>
+ * <p>This class extends <CODE>j86.javax.management.MBeanFeatureInfo</CODE>
  * and thus provides <CODE>name</CODE> and <CODE>description</CODE> fields.
  * The <CODE>name</CODE> field should be the fully qualified Java class name of
  * the notification objects described by this class.</p>

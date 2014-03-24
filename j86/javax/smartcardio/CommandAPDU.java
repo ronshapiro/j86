@@ -23,11 +23,11 @@
  * questions.
  */
 
-package javax.smartcardio;
+package j86.javax.smartcardio;
 
-import java.util.Arrays;
+import j86.java.util.Arrays;
 
-import java.nio.ByteBuffer;
+import j86.java.nio.ByteBuffer;
 
 /**
  * A command APDU following the structure defined in ISO/IEC 7816-4.
@@ -62,7 +62,7 @@ import java.nio.ByteBuffer;
  * @author  Andreas Sterbenz
  * @author  JSR 268 Expert Group
  */
-public final class CommandAPDU implements java.io.Serializable {
+public final class CommandAPDU implements j86.java.io.Serializable {
 
     private static final long serialVersionUID = 398698301286670877L;
 
@@ -596,8 +596,8 @@ public final class CommandAPDU implements java.io.Serializable {
         return Arrays.hashCode(apdu);
     }
 
-    private void readObject(java.io.ObjectInputStream in)
-            throws java.io.IOException, ClassNotFoundException {
+    private void readObject(j86.java.io.ObjectInputStream in)
+            throws j86.java.io.IOException, ClassNotFoundException {
         apdu = (byte[])in.readUnshared();
         // initialize transient fields
         parse();

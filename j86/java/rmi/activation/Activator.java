@@ -23,12 +23,12 @@
  * questions.
  */
 
-package java.rmi.activation;
+package j86.j86.java.rmi.activation;
 
-import java.rmi.MarshalledObject;
-import java.rmi.Remote;
-import java.rmi.RemoteException;
-import java.rmi.activation.UnknownObjectException;
+import j86.java.rmi.MarshalledObject;
+import j86.java.rmi.Remote;
+import j86.java.rmi.RemoteException;
+import j86.j86.java.rmi.activation.UnknownObjectException;
 
 /**
  * The <code>Activator</code> facilitates remote object activation. A

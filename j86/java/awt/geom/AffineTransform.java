@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.awt.geom;
+package j86.j86.java.awt.geom;
 
-import java.awt.Shape;
-import java.beans.ConstructorProperties;
+import j86.java.awt.Shape;
+import j86.java.beans.ConstructorProperties;
 
 /**
  * The <code>AffineTransform</code> class represents a 2D affine transform
@@ -111,7 +111,7 @@ import java.beans.ConstructorProperties;
  * @author Jim Graham
  * @since 1.2
  */
-public class AffineTransform implements Cloneable, java.io.Serializable {
+public class AffineTransform implements Cloneable, j86.java.io.Serializable {
 
     /*
      * This constant is only useful for the cached type field.
@@ -3926,14 +3926,14 @@ public class AffineTransform implements Cloneable, java.io.Serializable {
      */
     private static final long serialVersionUID = 1330973210523860834L;
 
-    private void writeObject(java.io.ObjectOutputStream s)
-        throws java.lang.ClassNotFoundException, java.io.IOException
+    private void writeObject(j86.java.io.ObjectOutputStream s)
+        throws j86.java.lang.ClassNotFoundException, j86.java.io.IOException
     {
         s.defaultWriteObject();
     }
 
-    private void readObject(java.io.ObjectInputStream s)
-        throws java.lang.ClassNotFoundException, java.io.IOException
+    private void readObject(j86.java.io.ObjectInputStream s)
+        throws j86.java.lang.ClassNotFoundException, j86.java.io.IOException
     {
         s.defaultReadObject();
         updateState();

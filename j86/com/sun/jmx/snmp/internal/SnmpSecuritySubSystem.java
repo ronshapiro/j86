@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.jmx.snmp.internal;
+package j86.j86.com.sun.jmx.snmp.internal;
 
-import com.sun.jmx.snmp.SnmpTooBigException;
-import com.sun.jmx.snmp.SnmpStatusException;
-import com.sun.jmx.snmp.SnmpUnknownSecModelException;
-import com.sun.jmx.snmp.SnmpSecurityException;
-import com.sun.jmx.snmp.SnmpSecurityParameters;
+import j86.com.sun.jmx.snmp.SnmpTooBigException;
+import j86.com.sun.jmx.snmp.SnmpStatusException;
+import j86.com.sun.jmx.snmp.SnmpUnknownSecModelException;
+import j86.com.sun.jmx.snmp.SnmpSecurityException;
+import j86.com.sun.jmx.snmp.SnmpSecurityParameters;
 
 /**
  * Security sub system interface. To allow engine integration, a security sub system must implement this interface.
@@ -52,7 +52,7 @@ public interface SnmpSecuritySubSystem extends SnmpSubSystem {
 
      /**
      * Called when a request is to be sent to the network. It must be securized. This call is routed to the dedicated model according to the model ID.
-     * <BR>The specified parameters are defined in RFC 2572 (see also the {@link com.sun.jmx.snmp.SnmpV3Message} class).
+     * <BR>The specified parameters are defined in RFC 2572 (see also the {@link j86.com.sun.jmx.snmp.SnmpV3Message} class).
      * @param cache The cache that has been created by calling <CODE>createSecurityCache</CODE> on this model.
      * @param version The SNMP protocol version.
      * @param msgID The current request id.
@@ -83,7 +83,7 @@ public interface SnmpSecuritySubSystem extends SnmpSubSystem {
 
     /**
      * Called when a response is to be sent to the network. It must be securized. This call is routed to the dedicated model according to the model ID.
-     * <BR>The specified parameters are defined in RFC 2572 (see also the {@link com.sun.jmx.snmp.SnmpV3Message} class).
+     * <BR>The specified parameters are defined in RFC 2572 (see also the {@link j86.com.sun.jmx.snmp.SnmpV3Message} class).
      * @param cache The cache that has been created by calling <CODE>createSecurityCache</CODE> on this model.
      * @param version The SNMP protocol version.
      * @param msgID The current request id.
@@ -114,7 +114,7 @@ public interface SnmpSecuritySubSystem extends SnmpSubSystem {
                SnmpSecurityException, SnmpUnknownSecModelException;
       /**
      * Called when a request is received from the network. It handles authentication and privacy. This call is routed to the dedicated model according to the model ID.
-     * <BR>The specified parameters are defined in RFC 2572 (see also the {@link com.sun.jmx.snmp.SnmpV3Message} class).
+     * <BR>The specified parameters are defined in RFC 2572 (see also the {@link j86.com.sun.jmx.snmp.SnmpV3Message} class).
      * @param cache The cache that has been created by calling <CODE>createSecurityCache</CODE> on this model.
      * @param version The SNMP protocol version.
      * @param msgID The current request id.
@@ -146,7 +146,7 @@ public interface SnmpSecuritySubSystem extends SnmpSubSystem {
         throws SnmpStatusException, SnmpSecurityException, SnmpUnknownSecModelException;
           /**
      * Called when a response is received from the network. It handles authentication and privacy. This call is routed to the dedicated model according to the model ID.
-     * <BR>The specified parameters are defined in RFC 2572 (see also the {@link com.sun.jmx.snmp.SnmpV3Message} class).
+     * <BR>The specified parameters are defined in RFC 2572 (see also the {@link j86.com.sun.jmx.snmp.SnmpV3Message} class).
      * @param cache The cache that has been created by calling <CODE>createSecurityCache</CODE> on this model.
      * @param version The SNMP protocol version.
      * @param msgID The current request id.

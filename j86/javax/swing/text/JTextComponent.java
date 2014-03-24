@@ -22,63 +22,63 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text;
+package j86.j86.javax.swing.text;
 
-import java.lang.reflect.Method;
+import j86.j86.j86.java.lang.reflect.Method;
 
-import java.security.AccessController;
-import java.security.PrivilegedAction;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
 
-import java.beans.Transient;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Hashtable;
-import java.util.Enumeration;
-import java.util.Vector;
-import java.util.Map;
+import j86.java.beans.Transient;
+import j86.java.util.Collections;
+import j86.java.util.HashMap;
+import j86.java.util.Hashtable;
+import j86.java.util.Enumeration;
+import j86.java.util.Vector;
+import j86.java.util.Map;
 
-import java.util.concurrent.*;
+import j86.j86.java.util.concurrent.*;
 
-import java.io.*;
+import j86.java.io.*;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.awt.print.*;
-import java.awt.datatransfer.*;
-import java.awt.im.InputContext;
-import java.awt.im.InputMethodRequests;
-import java.awt.font.TextHitInfo;
-import java.awt.font.TextAttribute;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.j86.java.awt.print.*;
+import j86.j86.java.awt.datatransfer.*;
+import j86.j86.java.awt.im.InputContext;
+import j86.j86.java.awt.im.InputMethodRequests;
+import j86.j86.java.awt.font.TextHitInfo;
+import j86.j86.java.awt.font.TextAttribute;
 
-import java.awt.print.Printable;
-import java.awt.print.PrinterException;
+import j86.j86.java.awt.print.Printable;
+import j86.j86.java.awt.print.PrinterException;
 
-import javax.print.PrintService;
-import javax.print.attribute.PrintRequestAttributeSet;
+import j86.javax.print.PrintService;
+import j86.j86.javax.print.attribute.PrintRequestAttributeSet;
 
-import java.text.*;
-import java.text.AttributedCharacterIterator.Attribute;
+import j86.java.text.*;
+import j86.java.text.AttributedCharacterIterator.Attribute;
 
-import javax.swing.*;
-import javax.swing.event.*;
-import javax.swing.plaf.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.event.*;
+import j86.j86.javax.swing.plaf.*;
 
-import javax.accessibility.*;
+import j86.javax.accessibility.*;
 
-import javax.print.attribute.*;
+import j86.j86.javax.print.attribute.*;
 
-import sun.awt.AppContext;
+import j86.sun.awt.AppContext;
 
 
-import sun.swing.PrintingStatus;
-import sun.swing.SwingUtilities2;
-import sun.swing.text.TextComponentPrintable;
-import sun.swing.SwingAccessor;
+import j86.sun.swing.PrintingStatus;
+import j86.sun.swing.SwingUtilities2;
+import j86.j86.sun.swing.text.TextComponentPrintable;
+import j86.sun.swing.SwingAccessor;
 
 /**
  * <code>JTextComponent</code> is the base class for swing text
  * components.  It tries to be compatible with the
- * <code>java.awt.TextComponent</code> class
+ * <code>j86.java.awt.TextComponent</code> class
  * where it can reasonably do so.  Also provided are other services
  * for additional flexibility (beyond the pluggable UI and bean
  * support).
@@ -124,7 +124,7 @@ import sun.swing.SwingAccessor;
  * keymaps and the input method framework, while maintaining compatibility with
  * the AWT listener model.
  * <p>
- * A {@link javax.swing.text.Keymap} lets an application bind key
+ * A {@link j86.j86.javax.swing.text.Keymap} lets an application bind key
  * strokes to actions.
  * In order to allow keymaps to be shared across multiple text components, they
  * can use actions that extend <code>TextAction</code>.
@@ -142,7 +142,7 @@ import sun.swing.SwingAccessor;
  * with input methods. As a consequence, some key events do not reach the text
  * component because they are handled by an input method, and some text input
  * reaches the text component as committed text within an {@link
- * java.awt.event.InputMethodEvent} instead of as a key event.
+ * j86.j86.java.awt.event.InputMethodEvent} instead of as a key event.
  * The complete text input is the combination of the characters in
  * <code>keyTyped</code> key events and committed text in input method events.
  * <p>
@@ -274,8 +274,8 @@ import sun.swing.SwingAccessor;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @beaninfo
  *     attribute: isContainer false
@@ -346,7 +346,7 @@ public abstract class JTextComponent extends JComponent implements Scrollable, A
      * to the caret.
      *
      * @param listener the listener to be added
-     * @see javax.swing.event.CaretEvent
+     * @see j86.j86.javax.swing.event.CaretEvent
      */
     public void addCaretListener(CaretListener listener) {
         listenerList.add(CaretListener.class, listener);
@@ -356,7 +356,7 @@ public abstract class JTextComponent extends JComponent implements Scrollable, A
      * Removes a caret listener.
      *
      * @param listener the listener to be removed
-     * @see javax.swing.event.CaretEvent
+     * @see j86.j86.javax.swing.event.CaretEvent
      */
     public void removeCaretListener(CaretListener listener) {
         listenerList.remove(CaretListener.class, listener);
@@ -673,7 +673,7 @@ public abstract class JTextComponent extends JComponent implements Scrollable, A
      *            <code>b</code> is <code>true</code> and
      *            <code>GraphicsEnvironment.isHeadless()</code>
      *            returns <code>true</code>
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      * @see #getDragEnabled
      * @see #setTransferHandler
      * @see TransferHandler
@@ -724,7 +724,7 @@ public abstract class JTextComponent extends JComponent implements Scrollable, A
      * @see #getDropMode
      * @see #getDropLocation
      * @see #setTransferHandler
-     * @see javax.swing.TransferHandler
+     * @see j86.javax.swing.TransferHandler
      * @since 1.6
      */
     public final void setDropMode(DropMode dropMode) {
@@ -775,7 +775,7 @@ public abstract class JTextComponent extends JComponent implements Scrollable, A
      * <p>
      * Note: This method is meant to override
      * <code>JComponent.dropLocationForPoint()</code>, which is package-private
-     * in javax.swing. <code>TransferHandler</code> will detect text components
+     * in j86.javax.swing. <code>TransferHandler</code> will detect text components
      * and call this method instead via reflection. It's name should therefore
      * not be changed.
      *
@@ -821,7 +821,7 @@ public abstract class JTextComponent extends JComponent implements Scrollable, A
      * <p>
      * Note: This method is meant to override
      * <code>JComponent.setDropLocation()</code>, which is package-private
-     * in javax.swing. <code>TransferHandler</code> will detect text components
+     * in j86.javax.swing. <code>TransferHandler</code> will detect text components
      * and call this method instead via reflection. It's name should therefore
      * not be changed.
      *
@@ -1115,8 +1115,8 @@ public abstract class JTextComponent extends JComponent implements Scrollable, A
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     public static class KeyBinding {
 
@@ -1444,8 +1444,8 @@ public abstract class JTextComponent extends JComponent implements Scrollable, A
      * from the model.  The current selection is reset.  Does nothing
      * for <code>null</code> selections.
      *
-     * @see java.awt.Toolkit#getSystemClipboard
-     * @see java.awt.datatransfer.Clipboard
+     * @see j86.java.awt.Toolkit#getSystemClipboard
+     * @see j86.j86.java.awt.datatransfer.Clipboard
      */
     public void cut() {
         if (isEditable() && isEnabled()) {
@@ -1459,8 +1459,8 @@ public abstract class JTextComponent extends JComponent implements Scrollable, A
      * in the text model.  The current selection remains intact.
      * Does nothing for <code>null</code> selections.
      *
-     * @see java.awt.Toolkit#getSystemClipboard
-     * @see java.awt.datatransfer.Clipboard
+     * @see j86.java.awt.Toolkit#getSystemClipboard
+     * @see j86.j86.java.awt.datatransfer.Clipboard
      */
     public void copy() {
         invokeAction("copy", TransferHandler.getCopyAction());
@@ -1475,8 +1475,8 @@ public abstract class JTextComponent extends JComponent implements Scrollable, A
      * the associated view.  If the clipboard is empty, does nothing.
      *
      * @see #replaceSelection
-     * @see java.awt.Toolkit#getSystemClipboard
-     * @see java.awt.datatransfer.Clipboard
+     * @see j86.java.awt.Toolkit#getSystemClipboard
+     * @see j86.j86.java.awt.datatransfer.Clipboard
      */
     public void paste() {
         if (isEditable() && isEnabled()) {
@@ -1648,7 +1648,7 @@ public abstract class JTextComponent extends JComponent implements Scrollable, A
         }
     }
 
-    // --- java.awt.TextComponent methods ------------------------
+    // --- j86.java.awt.TextComponent methods ------------------------
 
     /**
      * Sets the position of the text insertion caret for the
@@ -1820,7 +1820,7 @@ public abstract class JTextComponent extends JComponent implements Scrollable, A
      * selection end.
      * <p>
      * This is available for backward compatibility to code
-     * that called this method on <code>java.awt.TextComponent</code>.
+     * that called this method on <code>j86.java.awt.TextComponent</code>.
      * This is implemented to forward to the <code>Caret</code>
      * implementation which is where the actual selection is maintained.
      *
@@ -1853,7 +1853,7 @@ public abstract class JTextComponent extends JComponent implements Scrollable, A
      * selection start.
      * <p>
      * This is available for backward compatibility to code
-     * that called this method on <code>java.awt.TextComponent</code>.
+     * that called this method on <code>j86.java.awt.TextComponent</code>.
      * This is implemented to forward to the <code>Caret</code>
      * implementation which is where the actual selection is maintained.
      *
@@ -1897,7 +1897,7 @@ public abstract class JTextComponent extends JComponent implements Scrollable, A
      * @see #moveCaretPosition
      */
     public void select(int selectionStart, int selectionEnd) {
-        // argument adjustment done by java.awt.TextComponent
+        // argument adjustment done by j86.java.awt.TextComponent
         int docLength = getDocument().getLength();
 
         if (selectionStart < 0) {
@@ -1949,9 +1949,9 @@ public abstract class JTextComponent extends JComponent implements Scrollable, A
      *
      * @param event the event in question
      * @return the string to be used as the tooltip for <code>event</code>
-     * @see javax.swing.JComponent#setToolTipText
-     * @see javax.swing.plaf.TextUI#getToolTipText
-     * @see javax.swing.ToolTipManager#registerComponent
+     * @see j86.javax.swing.JComponent#setToolTipText
+     * @see j86.j86.javax.swing.plaf.TextUI#getToolTipText
+     * @see j86.javax.swing.ToolTipManager#registerComponent
      */
     public String getToolTipText(MouseEvent event) {
         String retValue = super.getToolTipText(event);
@@ -2141,7 +2141,7 @@ public abstract class JTextComponent extends JComponent implements Scrollable, A
      *                           initiate a print job request
      *
      * @see #print(MessageFormat, MessageFormat, boolean, PrintService, PrintRequestAttributeSet, boolean)
-     * @see java.text.MessageFormat
+     * @see j86.java.text.MessageFormat
      * @since 1.6
      */
     public boolean print(final MessageFormat headerFormat,
@@ -2253,9 +2253,9 @@ public abstract class JTextComponent extends JComponent implements Scrollable, A
      *                           initiate a print job request
      *
      * @see #getPrintable
-     * @see java.text.MessageFormat
-     * @see java.awt.GraphicsEnvironment#isHeadless
-     * @see java.util.concurrent.FutureTask
+     * @see j86.java.text.MessageFormat
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.j86.java.util.concurrent.FutureTask
      *
      * @since 1.6
      */
@@ -2460,7 +2460,7 @@ public abstract class JTextComponent extends JComponent implements Scrollable, A
      * The returned {@code Printable} when printed, formats the
      * document content appropriately for the page size. For correct
      * line wrapping the {@code imageable width} of all pages must be the
-     * same. See {@link java.awt.print.PageFormat#getImageableWidth}.
+     * same. See {@link j86.j86.java.awt.print.PageFormat#getImageableWidth}.
      *
      * <p>
      * This method is thread-safe, although most Swing methods are not. Please
@@ -2484,9 +2484,9 @@ public abstract class JTextComponent extends JComponent implements Scrollable, A
      *         {@code JTextComponent}
      *
      *
-     * @see java.awt.print.Printable
-     * @see java.awt.print.PageFormat
-     * @see javax.swing.text.Document#render(java.lang.Runnable)
+     * @see j86.j86.java.awt.print.Printable
+     * @see j86.j86.java.awt.print.PageFormat
+     * @see j86.j86.javax.swing.text.Document#render(j86.java.lang.Runnable)
      *
      * @since 1.6
      */
@@ -2532,8 +2532,8 @@ public abstract class JTextComponent extends JComponent implements Scrollable, A
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     public class AccessibleJTextComponent extends AccessibleJComponent
     implements AccessibleText, CaretListener, DocumentListener,
@@ -3314,11 +3314,11 @@ public abstract class JTextComponent extends JComponent implements Scrollable, A
          * if <code>part</code> and <code>index</code> are valid.  Otherwise,
          * <code>null</code> is returned.
          *
-         * @see javax.accessibility.AccessibleText#CHARACTER
-         * @see javax.accessibility.AccessibleText#WORD
-         * @see javax.accessibility.AccessibleText#SENTENCE
-         * @see javax.accessibility.AccessibleExtendedText#LINE
-         * @see javax.accessibility.AccessibleExtendedText#ATTRIBUTE_RUN
+         * @see j86.javax.accessibility.AccessibleText#CHARACTER
+         * @see j86.javax.accessibility.AccessibleText#WORD
+         * @see j86.javax.accessibility.AccessibleText#SENTENCE
+         * @see j86.javax.accessibility.AccessibleExtendedText#LINE
+         * @see j86.javax.accessibility.AccessibleExtendedText#ATTRIBUTE_RUN
          *
          * @since 1.6
          */
@@ -3606,11 +3606,11 @@ public abstract class JTextComponent extends JComponent implements Scrollable, A
          * <code>part</code> and <code>index</code> are valid.  Otherwise,
          * <code>null</code> is returned
          *
-         * @see javax.accessibility.AccessibleText#CHARACTER
-         * @see javax.accessibility.AccessibleText#WORD
-         * @see javax.accessibility.AccessibleText#SENTENCE
-         * @see javax.accessibility.AccessibleExtendedText#LINE
-         * @see javax.accessibility.AccessibleExtendedText#ATTRIBUTE_RUN
+         * @see j86.javax.accessibility.AccessibleText#CHARACTER
+         * @see j86.javax.accessibility.AccessibleText#WORD
+         * @see j86.javax.accessibility.AccessibleText#SENTENCE
+         * @see j86.javax.accessibility.AccessibleExtendedText#LINE
+         * @see j86.javax.accessibility.AccessibleExtendedText#ATTRIBUTE_RUN
          *
          * @since 1.6
          */
@@ -3630,11 +3630,11 @@ public abstract class JTextComponent extends JComponent implements Scrollable, A
          * if <code>part</code> and <code>index</code> are valid.  Otherwise,
          * <code>null</code> is returned
          *
-         * @see javax.accessibility.AccessibleText#CHARACTER
-         * @see javax.accessibility.AccessibleText#WORD
-         * @see javax.accessibility.AccessibleText#SENTENCE
-         * @see javax.accessibility.AccessibleExtendedText#LINE
-         * @see javax.accessibility.AccessibleExtendedText#ATTRIBUTE_RUN
+         * @see j86.javax.accessibility.AccessibleText#CHARACTER
+         * @see j86.javax.accessibility.AccessibleText#WORD
+         * @see j86.javax.accessibility.AccessibleText#SENTENCE
+         * @see j86.javax.accessibility.AccessibleExtendedText#LINE
+         * @see j86.javax.accessibility.AccessibleExtendedText#ATTRIBUTE_RUN
          *
          * @since 1.6
          */
@@ -3654,11 +3654,11 @@ public abstract class JTextComponent extends JComponent implements Scrollable, A
          * if <code>part</code> and <code>index</code> are valid.  Otherwise,
          * <code>null</code> is returned
          *
-         * @see javax.accessibility.AccessibleText#CHARACTER
-         * @see javax.accessibility.AccessibleText#WORD
-         * @see javax.accessibility.AccessibleText#SENTENCE
-         * @see javax.accessibility.AccessibleExtendedText#LINE
-         * @see javax.accessibility.AccessibleExtendedText#ATTRIBUTE_RUN
+         * @see j86.javax.accessibility.AccessibleText#CHARACTER
+         * @see j86.javax.accessibility.AccessibleText#WORD
+         * @see j86.javax.accessibility.AccessibleText#SENTENCE
+         * @see j86.javax.accessibility.AccessibleExtendedText#LINE
+         * @see j86.javax.accessibility.AccessibleExtendedText#ATTRIBUTE_RUN
          *
          * @since 1.6
          */

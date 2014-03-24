@@ -24,42 +24,42 @@
  */
 
 
-package com.sun.jmx.snmp.daemon;
+package j86.j86.j86.com.sun.jmx.snmp.daemon;
 
 
 
 // java import
 //
-import java.io.ObjectInputStream;
-import java.io.IOException;
-import java.net.InetAddress;
-import java.util.logging.Level;
-import java.util.Vector;
-import java.util.NoSuchElementException;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.IOException;
+import j86.java.net.InetAddress;
+import j86.j86.java.util.logging.Level;
+import j86.java.util.Vector;
+import j86.java.util.NoSuchElementException;
 
 // jmx import
 //
-import javax.management.MBeanServer;
-import javax.management.MBeanRegistration;
-import javax.management.ObjectName;
-import javax.management.NotificationListener;
-import javax.management.NotificationFilter;
-import javax.management.NotificationBroadcaster;
-import javax.management.NotificationBroadcasterSupport;
-import javax.management.MBeanNotificationInfo;
-import javax.management.AttributeChangeNotification;
-import javax.management.ListenerNotFoundException;
+import j86.javax.management.MBeanServer;
+import j86.javax.management.MBeanRegistration;
+import j86.javax.management.ObjectName;
+import j86.javax.management.NotificationListener;
+import j86.javax.management.NotificationFilter;
+import j86.javax.management.NotificationBroadcaster;
+import j86.javax.management.NotificationBroadcasterSupport;
+import j86.javax.management.MBeanNotificationInfo;
+import j86.javax.management.AttributeChangeNotification;
+import j86.javax.management.ListenerNotFoundException;
 
-import static com.sun.jmx.defaults.JmxProperties.SNMP_ADAPTOR_LOGGER;
+import static j86.com.sun.jmx.defaults.JmxProperties.SNMP_ADAPTOR_LOGGER;
 
 // JSR 160 import
 //
 // XXX Revisit:
-//   used to import com.sun.jmx.snmp.MBeanServerForwarder
+//   used to import j86.com.sun.jmx.snmp.MBeanServerForwarder
 // Now using JSR 160 instead. => this is an additional
 // dependency to JSR 160.
 //
-import javax.management.remote.MBeanServerForwarder;
+import j86.j86.javax.management.remote.MBeanServerForwarder;
 
 /**
  * Defines generic behavior for the server part of a connector or an adaptor.
@@ -102,7 +102,7 @@ import javax.management.remote.MBeanServerForwarder;
  * <p>
  * When the value of the <CODE>State</CODE> attribute changes the
  * <CODE>CommunicatorServer</CODE> sends a
- * <tt>{@link javax.management.AttributeChangeNotification}</tt> to the
+ * <tt>{@link j86.javax.management.AttributeChangeNotification}</tt> to the
  * registered listeners, if any.
  *
  * <p><b>This API is a Sun Microsystems internal API  and is subject
@@ -243,7 +243,7 @@ public abstract class CommunicatorServer
      * @param connectorType Indicates the connector type. Possible values are:
      * SNMP_TYPE.
      *
-     * @exception <CODE>java.lang.IllegalArgumentException</CODE>
+     * @exception <CODE>j86.java.lang.IllegalArgumentException</CODE>
      *            This connector type is not correct.
      */
     public CommunicatorServer(int connectorType)
@@ -286,7 +286,7 @@ public abstract class CommunicatorServer
         synchronized (stateLock) {
             if (state == STOPPING) {
                 // Fix for bug 4352451:
-                //     "java.net.BindException: Address in use".
+                //     "j86.java.net.BindException: Address in use".
                 waitState(OFFLINE, 60000);
             }
             start = (state == OFFLINE);
@@ -646,11 +646,11 @@ public abstract class CommunicatorServer
      * @param port The port number used by this
      *             <CODE>CommunicatorServer</CODE>.
      *
-     * @exception java.lang.IllegalStateException This method has been invoked
+     * @exception j86.java.lang.IllegalStateException This method has been invoked
      * while the communicator was ONLINE or STARTING.
      */
     @Override
-    public void setPort(int port) throws java.lang.IllegalStateException {
+    public void setPort(int port) throws j86.java.lang.IllegalStateException {
         synchronized (stateLock) {
             if ((state == ONLINE) || (state == STARTING))
                 throw new IllegalStateException("Stop server before " +
@@ -710,11 +710,11 @@ public abstract class CommunicatorServer
      *
      * @param c The number of clients.
      *
-     * @exception java.lang.IllegalStateException This method has been invoked
+     * @exception j86.java.lang.IllegalStateException This method has been invoked
      * while the communicator was ONLINE or STARTING.
      */
     void setMaxActiveClientCount(int c)
-        throws java.lang.IllegalStateException {
+        throws j86.java.lang.IllegalStateException {
         synchronized (stateLock) {
             if ((state == ONLINE) || (state == STARTING)) {
                 throw new IllegalStateException(
@@ -775,7 +775,7 @@ public abstract class CommunicatorServer
         // Bind
         // ----------------------
         try {
-            // Fix for bug 4352451: "java.net.BindException: Address in use".
+            // Fix for bug 4352451: "j86.java.net.BindException: Address in use".
             //
             final int  bindRetries = getBindTries();
             final long sleepTime   = getBindSleepTime();
@@ -1177,7 +1177,7 @@ public abstract class CommunicatorServer
      * Adds a listener for the notifications emitted by this
      * CommunicatorServer.
      * There is only one type of notifications sent by the CommunicatorServer:
-     * they are <tt>{@link javax.management.AttributeChangeNotification}</tt>,
+     * they are <tt>{@link j86.javax.management.AttributeChangeNotification}</tt>,
      * sent when the <tt>State</tt> attribute of this CommunicatorServer
      * changes.
      *
@@ -1194,7 +1194,7 @@ public abstract class CommunicatorServer
     public void addNotificationListener(NotificationListener listener,
                                         NotificationFilter filter,
                                         Object handback)
-        throws java.lang.IllegalArgumentException {
+        throws j86.java.lang.IllegalArgumentException {
 
         if (SNMP_ADAPTOR_LOGGER.isLoggable(Level.FINEST)) {
             SNMP_ADAPTOR_LOGGER.logp(Level.FINEST, dbgTag,
@@ -1229,7 +1229,7 @@ public abstract class CommunicatorServer
      * Returns an array of MBeanNotificationInfo objects describing
      * the notification types sent by this CommunicatorServer.
      * There is only one type of notifications sent by the CommunicatorServer:
-     * it is <tt>{@link javax.management.AttributeChangeNotification}</tt>,
+     * it is <tt>{@link j86.javax.management.AttributeChangeNotification}</tt>,
      * sent when the <tt>State</tt> attribute of this CommunicatorServer
      * changes.
      */
@@ -1309,13 +1309,13 @@ public abstract class CommunicatorServer
      *
      *@return  The name of the MBean registered.
      *
-     *@exception java.langException This exception should be caught by
+     *@exception j86.java.langException This exception should be caught by
      *           the <CODE>MBeanServer</CODE> and re-thrown
      *           as an <CODE>MBeanRegistrationException</CODE>.
      */
     @Override
     public ObjectName preRegister(MBeanServer server, ObjectName name)
-            throws java.lang.Exception {
+            throws j86.java.lang.Exception {
         objectName = name;
         synchronized (this) {
             if (bottomMBS != null) {
@@ -1347,12 +1347,12 @@ public abstract class CommunicatorServer
     /**
      * Stop the connector.
      *
-     * @exception java.langException This exception should be caught by
+     * @exception j86.java.langException This exception should be caught by
      *            the <CODE>MBeanServer</CODE> and re-thrown
      *            as an <CODE>MBeanRegistrationException</CODE>.
      */
     @Override
-    public void preDeregister() throws java.lang.Exception {
+    public void preDeregister() throws j86.java.lang.Exception {
         synchronized (this) {
             topMBS = bottomMBS = null;
         }

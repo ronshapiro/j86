@@ -23,15 +23,15 @@
  * questions.
  */
 
-package com.sun.jmx.remote.util;
+package j86.com.sun.jmx.remote.util;
 
-import java.lang.ref.SoftReference;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.WeakHashMap;
+import j86.j86.java.lang.ref.SoftReference;
+import j86.java.util.Iterator;
+import j86.java.util.LinkedList;
+import j86.java.util.List;
+import j86.java.util.WeakHashMap;
 
-import com.sun.jmx.mbeanserver.Util;
+import j86.com.sun.jmx.mbeanserver.Util;
 
 /**
  * <p>Like WeakHashMap, except that the keys of the <em>n</em> most

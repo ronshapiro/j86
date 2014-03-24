@@ -23,7 +23,7 @@
  * questions.
  */
 
-package com.sun.jdi.connect;
+package j86.j86.com.sun.jdi.connect;
 
 /**
  * This exception may be thrown as a result of a timeout
@@ -40,22 +40,22 @@ package com.sun.jdi.connect;
  * timeout connector argument when accepting.
  *
  * <p> In addition, for developers creating {@link
- * com.sun.jdi.connect.spi.TransportService TransportService}
+ * j86.j86.j86.com.sun.jdi.connect.spi.TransportService TransportService}
  * implementations this exception is thrown when
- * {@link com.sun.jdi.connect.spi.TransportService#attach attach}
+ * {@link j86.j86.j86.com.sun.jdi.connect.spi.TransportService#attach attach}
  * times out when establishing a connection to a target VM,
- * or {@link com.sun.jdi.connect.spi.TransportService#accept
+ * or {@link j86.j86.j86.com.sun.jdi.connect.spi.TransportService#accept
  * accept} times out while waiting for a target VM to connect. </p>
  *
  * @see AttachingConnector#attach
  * @see ListeningConnector#accept
- * @see com.sun.jdi.connect.spi.TransportService#attach
- * @see com.sun.jdi.connect.spi.TransportService#accept
+ * @see j86.j86.j86.com.sun.jdi.connect.spi.TransportService#attach
+ * @see j86.j86.j86.com.sun.jdi.connect.spi.TransportService#accept
  *
  * @since 1.5
  */
 @jdk.Exported
-public class TransportTimeoutException extends java.io.IOException {
+public class TransportTimeoutException extends j86.java.io.IOException {
     private static final long serialVersionUID = 4107035242623365074L;
     /**
      * Constructs a <tt>TransportTimeoutException</tt> with no detail

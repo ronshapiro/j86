@@ -30,7 +30,7 @@
  * at JavaSoft/Sun.
  */
 
-package com.sun.tools.hat.internal.model;
+package j86.j86.com.sun.tools.hat.internal.model;
 
 /**
  * Represents a boolean (i.e. a boolean field in an instance).

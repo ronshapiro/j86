@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.util;
+package j86.java.util;
 
-import java.util.function.Consumer;
+import j86.j86.java.util.function.Consumer;
 
 /**
  * An unbounded priority {@linkplain Queue queue} based on a priority heap.
@@ -62,7 +62,7 @@ import java.util.function.Consumer;
  * Multiple threads should not access a {@code PriorityQueue}
  * instance concurrently if any of the threads modifies the queue.
  * Instead, use the thread-safe {@link
- * java.util.concurrent.PriorityBlockingQueue} class.
+ * j86.j86.java.util.concurrent.PriorityBlockingQueue} class.
  *
  * <p>Implementation note: this implementation provides
  * O(log(n)) time for the enqueuing and dequeuing methods
@@ -80,7 +80,7 @@ import java.util.function.Consumer;
  * @param <E> the type of elements held in this collection
  */
 public class PriorityQueue<E> extends AbstractQueue<E>
-    implements java.io.Serializable {
+    implements j86.java.io.Serializable {
 
     private static final long serialVersionUID = -7720805057305804111L;
 
@@ -757,8 +757,8 @@ public class PriorityQueue<E> extends AbstractQueue<E>
      *             (each an {@code Object}) in the proper order.
      * @param s the stream
      */
-    private void writeObject(java.io.ObjectOutputStream s)
-        throws java.io.IOException {
+    private void writeObject(j86.java.io.ObjectOutputStream s)
+        throws j86.java.io.IOException {
         // Write out element count, and any hidden stuff
         s.defaultWriteObject();
 
@@ -776,8 +776,8 @@ public class PriorityQueue<E> extends AbstractQueue<E>
      *
      * @param s the stream
      */
-    private void readObject(java.io.ObjectInputStream s)
-        throws java.io.IOException, ClassNotFoundException {
+    private void readObject(j86.java.io.ObjectInputStream s)
+        throws j86.java.io.IOException, ClassNotFoundException {
         // Read in size, and any hidden stuff
         s.defaultReadObject();
 

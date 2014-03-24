@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.swing;
+package j86.javax.swing;
 
-import java.awt.Component;
-import java.awt.Container;
+import j86.java.awt.Component;
+import j86.java.awt.Container;
 
 
 /**
@@ -102,7 +102,7 @@ public interface RootPaneContainer
      * Generally implemented with
      * <code>getRootPane().setContentPane(contentPane);</code>
      *
-     * @exception java.awt.IllegalComponentStateException (a runtime
+     * @exception j86.java.awt.IllegalComponentStateException (a runtime
      *            exception) if the content pane parameter is null
      * @param contentPane the Container to use for the contents of this
      *        JRootPane
@@ -132,7 +132,7 @@ public interface RootPaneContainer
      * Generally implemented with<pre>
      *    getRootPane().setLayeredPane(layeredPane);</pre>
      *
-     * @exception java.awt.IllegalComponentStateException (a runtime
+     * @exception j86.java.awt.IllegalComponentStateException (a runtime
      *            exception) if the layered pane parameter is null
      * @see #getLayeredPane
      * @see JRootPane#getLayeredPane

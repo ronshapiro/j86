@@ -33,8 +33,8 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package java.util.concurrent;
-import java.util.*;
+package j86.j86.java.util.concurrent;
+import j86.java.util.*;
 
 /**
  * A {@link ConcurrentMap} supporting {@link NavigableMap} operations,

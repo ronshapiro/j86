@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.management;
+package j86.sun.management;
 
-import java.io.Serializable;
-import java.util.*;
-import javax.management.openmbean.CompositeData;
-import javax.management.openmbean.CompositeType;
-import javax.management.openmbean.OpenType;
-import javax.management.openmbean.TabularType;
+import j86.java.io.Serializable;
+import j86.java.util.*;
+import j86.j86.javax.management.openmbean.CompositeData;
+import j86.j86.javax.management.openmbean.CompositeType;
+import j86.j86.javax.management.openmbean.OpenType;
+import j86.j86.javax.management.openmbean.TabularType;
 
 /**
  * This abstract class provides the implementation of the CompositeData
@@ -101,14 +101,14 @@ public abstract class LazyCompositeData
      * only requires JMX 1.2 classes but not any implementation
      * specific class.
      */
-    protected Object writeReplace() throws java.io.ObjectStreamException {
+    protected Object writeReplace() throws j86.java.io.ObjectStreamException {
         return compositeData();
     }
 
     /**
      * Returns the CompositeData representing this object.
      * The returned CompositeData object must be an instance
-     * of javax.management.openmbean.CompositeDataSupport class
+     * of j86.j86.javax.management.openmbean.CompositeDataSupport class
      * so that no implementation specific class is required
      * for unmarshalling besides JMX 1.2 classes.
      */

@@ -38,13 +38,13 @@
  *
  */
 
-package java.awt.font;
+package j86.j86.java.awt.font;
 
-import java.awt.Graphics2D;
-import java.awt.Font;
-import java.awt.Shape;
-import java.awt.geom.AffineTransform;
-import java.awt.geom.Rectangle2D;
+import j86.java.awt.Graphics2D;
+import j86.java.awt.Font;
+import j86.java.awt.Shape;
+import j86.j86.java.awt.geom.AffineTransform;
+import j86.j86.java.awt.geom.Rectangle2D;
 
 /**
  * This class is used with the CHAR_REPLACEMENT attribute.
@@ -151,7 +151,7 @@ public abstract class GraphicAttribute {
     }
 
     /**
-     * Return a {@link java.awt.Shape} that represents the region that
+     * Return a {@link j86.java.awt.Shape} that represents the region that
      * this <code>GraphicAttribute</code> renders.  This is used when a
      * {@link TextLayout} is requested to return the outline of the text.
      * The (untransformed) shape must not extend outside the rectangular

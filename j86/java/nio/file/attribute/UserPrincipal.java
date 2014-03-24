@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.nio.file.attribute;
+package j86.j86.j86.java.nio.file.attribute;
 
-import java.security.Principal;
+import j86.java.security.Principal;
 
 /**
  * A {@code Principal} representing an identity used to determine access rights

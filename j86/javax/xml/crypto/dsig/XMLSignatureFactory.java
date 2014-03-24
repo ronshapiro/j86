@@ -25,29 +25,29 @@
 /*
  * $Id: XMLSignatureFactory.java,v 1.14 2005/09/15 14:29:01 mullan Exp $
  */
-package javax.xml.crypto.dsig;
+package j86.j86.javax.xml.crypto.dsig;
 
-import javax.xml.crypto.Data;
-import javax.xml.crypto.MarshalException;
-import javax.xml.crypto.NoSuchMechanismException;
-import javax.xml.crypto.URIDereferencer;
-import javax.xml.crypto.XMLStructure;
-import javax.xml.crypto.dom.DOMStructure;
-import javax.xml.crypto.dsig.keyinfo.KeyInfo;
-import javax.xml.crypto.dsig.keyinfo.KeyInfoFactory;
-import javax.xml.crypto.dsig.spec.*;
-import javax.xml.crypto.dsig.dom.DOMValidateContext;
-import javax.xml.crypto.dsig.dom.DOMSignContext;
+import j86.javax.xml.crypto.Data;
+import j86.javax.xml.crypto.MarshalException;
+import j86.javax.xml.crypto.NoSuchMechanismException;
+import j86.javax.xml.crypto.URIDereferencer;
+import j86.javax.xml.crypto.XMLStructure;
+import j86.j86.javax.xml.crypto.dom.DOMStructure;
+import j86.j86.j86.javax.xml.crypto.dsig.keyinfo.KeyInfo;
+import j86.j86.j86.javax.xml.crypto.dsig.keyinfo.KeyInfoFactory;
+import j86.j86.j86.javax.xml.crypto.dsig.spec.*;
+import j86.j86.j86.javax.xml.crypto.dsig.dom.DOMValidateContext;
+import j86.j86.j86.javax.xml.crypto.dsig.dom.DOMSignContext;
 
-import java.security.InvalidAlgorithmParameterException;
-import java.security.NoSuchAlgorithmException;
-import java.security.NoSuchProviderException;
-import java.security.Provider;
-import java.security.Security;
-import java.util.List;
+import j86.java.security.InvalidAlgorithmParameterException;
+import j86.java.security.NoSuchAlgorithmException;
+import j86.java.security.NoSuchProviderException;
+import j86.java.security.Provider;
+import j86.java.security.Security;
+import j86.java.util.List;
 
-import sun.security.jca.*;
-import sun.security.jca.GetInstance.Instance;
+import j86.sun.security.jca.*;
+import j86.sun.security.jca.GetInstance.Instance;
 
 /**
  * A factory for creating {@link XMLSignature} objects from scratch or
@@ -74,7 +74,7 @@ import sun.security.jca.GetInstance.Instance;
  * mechanism types.
  *
  * <p><code>XMLSignatureFactory</code> implementations are registered and loaded
- * using the {@link java.security.Provider} mechanism.
+ * using the {@link j86.java.security.Provider} mechanism.
  * For example, a service provider that supports the
  * DOM mechanism would be specified in the <code>Provider</code> subclass as:
  * <pre>

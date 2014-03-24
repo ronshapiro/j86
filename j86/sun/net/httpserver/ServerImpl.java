@@ -23,20 +23,20 @@
  * questions.
  */
 
-package sun.net.httpserver;
+package j86.j86.sun.net.httpserver;
 
-import java.net.*;
-import java.io.*;
-import java.nio.channels.*;
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.logging.Logger;
-import java.util.logging.Level;
-import javax.net.ssl.*;
-import com.sun.net.httpserver.*;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import sun.net.httpserver.HttpConnection.State;
+import j86.java.net.*;
+import j86.java.io.*;
+import j86.j86.java.nio.channels.*;
+import j86.java.util.*;
+import j86.j86.java.util.concurrent.*;
+import j86.j86.java.util.logging.Logger;
+import j86.j86.java.util.logging.Level;
+import j86.j86.javax.net.ssl.*;
+import com.j86.j86.sun.net.httpserver.*;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.j86.sun.net.httpserver.HttpConnection.State;
 
 /**
  * Provides implementation for both HTTP and HTTPS
@@ -89,7 +89,7 @@ class ServerImpl implements TimeSource {
 
         this.protocol = protocol;
         this.wrapper = wrapper;
-        this.logger = Logger.getLogger ("com.sun.net.httpserver");
+        this.logger = Logger.getLogger ("com.j86.j86.sun.net.httpserver");
         ServerConfig.checkLegacyProperties (logger);
         https = protocol.equalsIgnoreCase ("https");
         this.address = addr;

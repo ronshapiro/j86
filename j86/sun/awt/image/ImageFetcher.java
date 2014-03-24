@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.awt.image;
+package j86.j86.j86.sun.awt.image;
 
-import java.util.Vector;
-import sun.awt.AppContext;
+import j86.java.util.Vector;
+import j86.sun.awt.AppContext;
 
 /**
   * An ImageFetcher is a thread used to fetch ImageFetchable objects.
@@ -302,8 +302,8 @@ class ImageFetcher extends Thread {
        }
        final ThreadGroup fetcherGroup = fetcherThreadGroup;
 
-       java.security.AccessController.doPrivileged(
-         new java.security.PrivilegedAction() {
+       j86.java.security.AccessController.doPrivileged(
+         new j86.java.security.PrivilegedAction() {
          public Object run() {
              for (int i = 0; i < info.fetchers.length; i++) {
                if (info.fetchers[i] == null) {

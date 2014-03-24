@@ -23,58 +23,58 @@
  * questions.
  */
 
-package sun.java2d;
+package j86.sun.java2d;
 
-import java.awt.Color;
-import java.awt.Rectangle;
-import java.awt.Transparency;
-import java.awt.GraphicsConfiguration;
-import java.awt.Image;
-import java.awt.image.ColorModel;
-import java.awt.image.IndexColorModel;
-import java.awt.image.Raster;
+import j86.java.awt.Color;
+import j86.java.awt.Rectangle;
+import j86.java.awt.Transparency;
+import j86.java.awt.GraphicsConfiguration;
+import j86.java.awt.Image;
+import j86.j86.j86.java.awt.image.ColorModel;
+import j86.j86.j86.java.awt.image.IndexColorModel;
+import j86.j86.j86.java.awt.image.Raster;
 
-import sun.java2d.loops.RenderCache;
-import sun.java2d.loops.RenderLoops;
-import sun.java2d.loops.CompositeType;
-import sun.java2d.loops.SurfaceType;
-import sun.java2d.loops.MaskFill;
-import sun.java2d.loops.DrawLine;
-import sun.java2d.loops.FillRect;
-import sun.java2d.loops.DrawRect;
-import sun.java2d.loops.DrawPolygons;
-import sun.java2d.loops.DrawPath;
-import sun.java2d.loops.FillPath;
-import sun.java2d.loops.FillSpans;
-import sun.java2d.loops.FillParallelogram;
-import sun.java2d.loops.DrawParallelogram;
-import sun.java2d.loops.FontInfo;
-import sun.java2d.loops.DrawGlyphList;
-import sun.java2d.loops.DrawGlyphListAA;
-import sun.java2d.loops.DrawGlyphListLCD;
-import sun.java2d.pipe.LoopPipe;
-import sun.java2d.pipe.ShapeDrawPipe;
-import sun.java2d.pipe.ParallelogramPipe;
-import sun.java2d.pipe.CompositePipe;
-import sun.java2d.pipe.GeneralCompositePipe;
-import sun.java2d.pipe.SpanClipRenderer;
-import sun.java2d.pipe.SpanShapeRenderer;
-import sun.java2d.pipe.AAShapePipe;
-import sun.java2d.pipe.AlphaPaintPipe;
-import sun.java2d.pipe.AlphaColorPipe;
-import sun.java2d.pipe.PixelToShapeConverter;
-import sun.java2d.pipe.PixelToParallelogramConverter;
-import sun.java2d.pipe.TextPipe;
-import sun.java2d.pipe.TextRenderer;
-import sun.java2d.pipe.AATextRenderer;
-import sun.java2d.pipe.LCDTextRenderer;
-import sun.java2d.pipe.SolidTextRenderer;
-import sun.java2d.pipe.OutlineTextRenderer;
-import sun.java2d.pipe.DrawImagePipe;
-import sun.java2d.pipe.DrawImage;
-import sun.awt.SunHints;
-import sun.awt.image.SurfaceManager;
-import sun.java2d.pipe.LoopBasedPipe;
+import j86.j86.sun.java2d.loops.RenderCache;
+import j86.j86.sun.java2d.loops.RenderLoops;
+import j86.j86.sun.java2d.loops.CompositeType;
+import j86.j86.sun.java2d.loops.SurfaceType;
+import j86.j86.sun.java2d.loops.MaskFill;
+import j86.j86.sun.java2d.loops.DrawLine;
+import j86.j86.sun.java2d.loops.FillRect;
+import j86.j86.sun.java2d.loops.DrawRect;
+import j86.j86.sun.java2d.loops.DrawPolygons;
+import j86.j86.sun.java2d.loops.DrawPath;
+import j86.j86.sun.java2d.loops.FillPath;
+import j86.j86.sun.java2d.loops.FillSpans;
+import j86.j86.sun.java2d.loops.FillParallelogram;
+import j86.j86.sun.java2d.loops.DrawParallelogram;
+import j86.j86.sun.java2d.loops.FontInfo;
+import j86.j86.sun.java2d.loops.DrawGlyphList;
+import j86.j86.sun.java2d.loops.DrawGlyphListAA;
+import j86.j86.sun.java2d.loops.DrawGlyphListLCD;
+import j86.j86.sun.java2d.pipe.LoopPipe;
+import j86.j86.sun.java2d.pipe.ShapeDrawPipe;
+import j86.j86.sun.java2d.pipe.ParallelogramPipe;
+import j86.j86.sun.java2d.pipe.CompositePipe;
+import j86.j86.sun.java2d.pipe.GeneralCompositePipe;
+import j86.j86.sun.java2d.pipe.SpanClipRenderer;
+import j86.j86.sun.java2d.pipe.SpanShapeRenderer;
+import j86.j86.sun.java2d.pipe.AAShapePipe;
+import j86.j86.sun.java2d.pipe.AlphaPaintPipe;
+import j86.j86.sun.java2d.pipe.AlphaColorPipe;
+import j86.j86.sun.java2d.pipe.PixelToShapeConverter;
+import j86.j86.sun.java2d.pipe.PixelToParallelogramConverter;
+import j86.j86.sun.java2d.pipe.TextPipe;
+import j86.j86.sun.java2d.pipe.TextRenderer;
+import j86.j86.sun.java2d.pipe.AATextRenderer;
+import j86.j86.sun.java2d.pipe.LCDTextRenderer;
+import j86.j86.sun.java2d.pipe.SolidTextRenderer;
+import j86.j86.sun.java2d.pipe.OutlineTextRenderer;
+import j86.j86.sun.java2d.pipe.DrawImagePipe;
+import j86.j86.sun.java2d.pipe.DrawImage;
+import j86.sun.awt.SunHints;
+import j86.j86.j86.sun.awt.image.SurfaceManager;
+import j86.j86.sun.java2d.pipe.LoopBasedPipe;
 
 /**
  * This class provides various pieces of information relevant to a
@@ -999,7 +999,7 @@ public abstract class SurfaceData
      */
     public abstract Rectangle getBounds();
 
-    static java.security.Permission compPermission;
+    static j86.java.security.Permission compPermission;
 
     /**
      * Performs Security Permissions checks to see if a Custom
@@ -1011,7 +1011,7 @@ public abstract class SurfaceData
         if (sm != null) {
             if (compPermission == null) {
                 compPermission =
-                    new java.awt.AWTPermission("readDisplayPixels");
+                    new j86.java.awt.AWTPermission("readDisplayPixels");
             }
             sm.checkPermission(compPermission);
         }

@@ -23,19 +23,19 @@
  * questions.
  */
 
-package javax.swing.plaf.metal;
+package j86.j86.j86.javax.swing.plaf.metal;
 
-import javax.swing.*;
-import javax.swing.event.*;
-import java.awt.*;
-import java.awt.event.*;
-import java.beans.*;
-import java.io.*;
-import java.util.*;
-import javax.swing.plaf.*;
-import javax.swing.tree.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.event.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.java.beans.*;
+import j86.java.io.*;
+import j86.java.util.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.javax.swing.tree.*;
 
-import javax.swing.plaf.basic.*;
+import j86.j86.j86.javax.swing.plaf.basic.*;
 
 /**
  * The metal look and feel implementation of <code>TreeUI</code>.
@@ -49,8 +49,8 @@ import javax.swing.plaf.basic.*;
  *    <th><p style="text-align:left">Angled</p></th>
  *    <td>A line is drawn connecting the child to the parent. For handling
  *          of the root node refer to
- *          {@link javax.swing.JTree#setRootVisible} and
- *          {@link javax.swing.JTree#setShowsRootHandles}.
+ *          {@link j86.javax.swing.JTree#setRootVisible} and
+ *          {@link j86.javax.swing.JTree#setShowsRootHandles}.
  *    </td>
  *  </tr>
  *  <tr>

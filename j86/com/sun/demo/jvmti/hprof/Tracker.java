@@ -29,7 +29,7 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package com.sun.demo.jvmti.hprof;
+package j86.com.sun.demo.jvmti.hprof;
 
 /* This class and it's methods are used by hprof when injecting bytecodes
  *   into class file images.

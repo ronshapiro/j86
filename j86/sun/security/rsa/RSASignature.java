@@ -23,17 +23,17 @@
  * questions.
  */
 
-package sun.security.rsa;
+package j86.sun.security.rsa;
 
-import java.io.IOException;
-import java.nio.ByteBuffer;
-import java.util.Arrays;
+import j86.java.io.IOException;
+import j86.java.nio.ByteBuffer;
+import j86.java.util.Arrays;
 
-import java.security.*;
-import java.security.interfaces.*;
+import j86.java.security.*;
+import j86.j86.java.security.interfaces.*;
 
-import sun.security.util.*;
-import sun.security.x509.AlgorithmId;
+import j86.sun.security.util.*;
+import j86.sun.security.x509.AlgorithmId;
 
 /**
  * PKCS#1 RSA signatures with the various message digest algorithms.
@@ -195,7 +195,7 @@ public abstract class RSASignature extends SignatureSpi {
             byte[] unpadded = padding.unpad(decrypted);
             byte[] decodedDigest = decodeSignature(digestOID, unpadded);
             return Arrays.equals(digest, decodedDigest);
-        } catch (javax.crypto.BadPaddingException e) {
+        } catch (j86.javax.crypto.BadPaddingException e) {
             // occurs if the app has used the wrong RSA public key
             // or if sigBytes is invalid
             // return false rather than propagating the exception for

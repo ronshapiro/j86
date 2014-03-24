@@ -23,12 +23,12 @@
  * questions.
  */
 
-package java.net;
+package j86.java.net;
 
-import java.io.IOException;
-import java.io.FileDescriptor;
+import j86.java.io.IOException;
+import j86.java.io.FileDescriptor;
 
-import sun.net.sdp.SdpSupport;
+import j86.j86.sun.net.sdp.SdpSupport;
 
 /**
  * SocketImpl that supports the SDP protocol

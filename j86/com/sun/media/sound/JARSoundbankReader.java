@@ -22,21 +22,21 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.media.sound;
+package j86.com.sun.media.sound;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.net.URL;
-import java.net.URLClassLoader;
-import java.util.ArrayList;
-import javax.sound.midi.InvalidMidiDataException;
-import javax.sound.midi.Soundbank;
-import javax.sound.midi.spi.SoundbankReader;
+import j86.java.io.BufferedReader;
+import j86.java.io.File;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.io.InputStreamReader;
+import j86.java.net.URL;
+import j86.java.net.URLClassLoader;
+import j86.java.util.ArrayList;
+import j86.javax.sound.midi.InvalidMidiDataException;
+import j86.javax.sound.midi.Soundbank;
+import j86.j86.javax.sound.midi.spi.SoundbankReader;
 
-import sun.reflect.misc.ReflectUtil;
+import j86.j86.sun.reflect.misc.ReflectUtil;
 
 /**
  * JarSoundbankReader is used to read soundbank object from jar files.
@@ -73,7 +73,7 @@ public final class JARSoundbankReader extends SoundbankReader {
         ArrayList<Soundbank> soundbanks = new ArrayList<Soundbank>();
         URLClassLoader ucl = URLClassLoader.newInstance(new URL[]{url});
         InputStream stream = ucl.getResourceAsStream(
-                "META-INF/services/javax.sound.midi.Soundbank");
+                "META-INF/services/j86.javax.sound.midi.Soundbank");
         if (stream == null)
             return null;
         try

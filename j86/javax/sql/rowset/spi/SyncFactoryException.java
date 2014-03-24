@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.sql.rowset.spi;
+package j86.j86.j86.javax.sql.rowset.spi;
 
-import java.sql.SQLException;
+import j86.java.sql.SQLException;
 
 /**
  * Indicates an error with <code>SyncFactory</code> mechanism. A disconnected
@@ -33,10 +33,10 @@ import java.sql.SQLException;
  * being successfully instantiated
  *
  * @author Jonathan Bruce
- * @see javax.sql.rowset.spi.SyncFactory
- * @see javax.sql.rowset.spi.SyncFactoryException
+ * @see j86.j86.j86.javax.sql.rowset.spi.SyncFactory
+ * @see j86.j86.j86.javax.sql.rowset.spi.SyncFactoryException
  */
-public class SyncFactoryException extends java.sql.SQLException {
+public class SyncFactoryException extends j86.java.sql.SQLException {
 
     /**
      * Creates new <code>SyncFactoryException</code> without detail message.

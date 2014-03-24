@@ -57,7 +57,7 @@
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package jdk.internal.org.objectweb.asm;
+package j86.jdk.internal.org.objectweb.asm;
 
 /**
  * The path to a type argument, wildcard bound, array element type, or static

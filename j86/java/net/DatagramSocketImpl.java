@@ -23,11 +23,11 @@
  * questions.
  */
 
-package java.net;
+package j86.java.net;
 
-import java.io.FileDescriptor;
-import java.io.IOException;
-import java.io.InterruptedIOException;
+import j86.java.io.FileDescriptor;
+import j86.java.io.IOException;
+import j86.java.io.InterruptedIOException;
 
 /**
  * Abstract datagram and multicast socket implementation base class.

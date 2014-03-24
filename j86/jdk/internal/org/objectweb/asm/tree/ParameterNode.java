@@ -56,9 +56,9 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-package jdk.internal.org.objectweb.asm.tree;
+package j86.j86.jdk.internal.org.objectweb.asm.tree;
 
-import jdk.internal.org.objectweb.asm.MethodVisitor;
+import j86.jdk.internal.org.objectweb.asm.MethodVisitor;
 
 /**
  * A node that represents a parameter access and name.
@@ -72,7 +72,7 @@ public class ParameterNode {
     public String name;
 
     /**
-     * The parameter's access flags (see {@link jdk.internal.org.objectweb.asm.Opcodes}).
+     * The parameter's access flags (see {@link j86.jdk.internal.org.objectweb.asm.Opcodes}).
      * Valid values are <tt>ACC_FINAL</tt>, <tt>ACC_SYNTHETIC</tt> and
      * <tt>ACC_MANDATED</tt>.
      */
@@ -84,7 +84,7 @@ public class ParameterNode {
      * @param access
      *            The parameter's access flags. Valid values are
      *            <tt>ACC_FINAL</tt>, <tt>ACC_SYNTHETIC</tt> or/and
-     *            <tt>ACC_MANDATED</tt> (see {@link jdk.internal.org.objectweb.asm.Opcodes}).
+     *            <tt>ACC_MANDATED</tt> (see {@link j86.jdk.internal.org.objectweb.asm.Opcodes}).
      * @param name
      *            the parameter's name.
      */

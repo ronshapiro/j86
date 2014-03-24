@@ -23,15 +23,15 @@
  * questions.
  */
 
-package sun.security.util;
+package j86.sun.security.util;
 
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.io.OutputStream;
-import java.math.BigInteger;
-import java.util.Date;
-import sun.util.calendar.CalendarDate;
-import sun.util.calendar.CalendarSystem;
+import j86.java.io.ByteArrayInputStream;
+import j86.java.io.IOException;
+import j86.java.io.OutputStream;
+import j86.java.math.BigInteger;
+import j86.java.util.Date;
+import j86.j86.sun.util.calendar.CalendarDate;
+import j86.j86.sun.util.calendar.CalendarSystem;
 
 /**
  * DER input buffer ... this is the main abstraction in the DER library

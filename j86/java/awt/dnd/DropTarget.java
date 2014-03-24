@@ -23,31 +23,31 @@
  * questions.
  */
 
-package java.awt.dnd;
+package j86.j86.java.awt.dnd;
 
-import java.util.TooManyListenersException;
+import j86.java.util.TooManyListenersException;
 
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.Serializable;
+import j86.java.io.IOException;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.Serializable;
 
-import java.awt.Component;
-import java.awt.Dimension;
-import java.awt.GraphicsEnvironment;
-import java.awt.HeadlessException;
-import java.awt.Insets;
-import java.awt.Point;
-import java.awt.Rectangle;
-import java.awt.Toolkit;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.datatransfer.FlavorMap;
-import java.awt.datatransfer.SystemFlavorMap;
-import javax.swing.Timer;
-import java.awt.peer.ComponentPeer;
-import java.awt.peer.LightweightPeer;
-import java.awt.dnd.peer.DropTargetPeer;
+import j86.java.awt.Component;
+import j86.java.awt.Dimension;
+import j86.java.awt.GraphicsEnvironment;
+import j86.java.awt.HeadlessException;
+import j86.java.awt.Insets;
+import j86.java.awt.Point;
+import j86.java.awt.Rectangle;
+import j86.java.awt.Toolkit;
+import j86.j86.java.awt.event.ActionEvent;
+import j86.j86.java.awt.event.ActionListener;
+import j86.j86.java.awt.datatransfer.FlavorMap;
+import j86.j86.java.awt.datatransfer.SystemFlavorMap;
+import j86.javax.swing.Timer;
+import j86.j86.java.awt.peer.ComponentPeer;
+import j86.j86.java.awt.peer.LightweightPeer;
+import j86.j86.j86.java.awt.dnd.peer.DropTargetPeer;
 
 
 /**
@@ -85,7 +85,7 @@ public class DropTarget implements DropTargetListener, Serializable {
      * @param fm        The <code>FlavorMap</code> to use, or null for the default <CODE>FlavorMap</CODE>
      * @exception HeadlessException if GraphicsEnvironment.isHeadless()
      *            returns true
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      */
     public DropTarget(Component c, int ops, DropTargetListener dtl,
                       boolean act, FlavorMap fm)
@@ -132,7 +132,7 @@ public class DropTarget implements DropTargetListener, Serializable {
      * @param act       Is the <code>DropTarget</code> accepting drops.
      * @exception HeadlessException if GraphicsEnvironment.isHeadless()
      *            returns true
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      */
     public DropTarget(Component c, int ops, DropTargetListener dtl,
                       boolean act)
@@ -145,7 +145,7 @@ public class DropTarget implements DropTargetListener, Serializable {
      * Creates a <code>DropTarget</code>.
      * @exception HeadlessException if GraphicsEnvironment.isHeadless()
      *            returns true
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      */
     public DropTarget() throws HeadlessException {
         this(null, DnDConstants.ACTION_COPY_OR_MOVE, null, true, null);
@@ -161,7 +161,7 @@ public class DropTarget implements DropTargetListener, Serializable {
      * @param dtl       The <code>DropTargetListener</code> for this <code>DropTarget</code>
      * @exception HeadlessException if GraphicsEnvironment.isHeadless()
      *            returns true
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      */
     public DropTarget(Component c, DropTargetListener dtl)
         throws HeadlessException
@@ -181,7 +181,7 @@ public class DropTarget implements DropTargetListener, Serializable {
      * @param dtl       The <code>DropTargetListener</code> for this <code>DropTarget</code>
      * @exception HeadlessException if GraphicsEnvironment.isHeadless()
      *            returns true
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      */
     public DropTarget(Component c, int ops, DropTargetListener dtl)
         throws HeadlessException
@@ -246,7 +246,7 @@ public class DropTarget implements DropTargetListener, Serializable {
      * Sets the default acceptable actions for this <code>DropTarget</code>
      * <P>
      * @param ops the default actions
-     * @see java.awt.dnd.DnDConstants
+     * @see j86.j86.java.awt.dnd.DnDConstants
      */
 
     public void setDefaultActions(int ops) {
@@ -486,7 +486,7 @@ public class DropTarget implements DropTargetListener, Serializable {
      * Notify the DropTarget that it has been associated with a Component
      *
      **********************************************************************
-     * This method is usually called from java.awt.Component.addNotify() of
+     * This method is usually called from j86.java.awt.Component.addNotify() of
      * the Component associated with this DropTarget to notify the DropTarget
      * that a ComponentPeer has been associated with that Component.
      *
@@ -521,7 +521,7 @@ public class DropTarget implements DropTargetListener, Serializable {
      * Notify the DropTarget that it has been disassociated from a Component
      *
      **********************************************************************
-     * This method is usually called from java.awt.Component.removeNotify() of
+     * This method is usually called from j86.java.awt.Component.removeNotify() of
      * the Component associated with this DropTarget to notify the DropTarget
      * that a ComponentPeer has been disassociated with that Component.
      *

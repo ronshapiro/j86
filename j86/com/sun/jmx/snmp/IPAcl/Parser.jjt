@@ -31,15 +31,15 @@ options {
   MULTI=true;
   STATIC=false;
   NODE_PREFIX= "JDM";
-  NODE_PACKAGE="com.sun.jmx.snmp.IPAcl";
+  NODE_PACKAGE="j86.j86.com.sun.jmx.snmp.IPAcl";
 }
 
 
 PARSER_BEGIN(Parser)
 
-package com.sun.jmx.snmp.IPAcl;
+package j86.j86.com.sun.jmx.snmp.IPAcl;
 
-import java.io.*;
+import j86.java.io.*;
 
 public class Parser {
 }

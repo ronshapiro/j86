@@ -22,9 +22,9 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.jmx.snmp.agent;
+package j86.j86.com.sun.jmx.snmp.agent;
 
-import com.sun.jmx.snmp.SnmpOid;
+import j86.com.sun.jmx.snmp.SnmpOid;
 
 /**
  * This class only adds a new constructor to SnmpOid...
@@ -44,7 +44,7 @@ class SnmpEntryOid extends SnmpOid {
     public SnmpEntryOid(long[] oid, int start) {
         final int subLength = oid.length - start;
         final long[] subOid = new long[subLength];
-        java.lang.System.arraycopy(oid, start, subOid, 0, subLength) ;
+        j86.java.lang.System.arraycopy(oid, start, subOid, 0, subLength) ;
         components = subOid;
         componentCount = subLength;
     }

@@ -23,17 +23,17 @@
  * questions.
  */
 
-package javax.swing.plaf.basic;
+package j86.j86.j86.javax.swing.plaf.basic;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.util.*;
-import javax.swing.*;
-import javax.swing.event.*;
-import javax.swing.plaf.*;
-import javax.swing.table.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.java.util.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.event.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.javax.swing.table.*;
 
-import sun.swing.*;
+import j86.sun.swing.*;
 
 /**
  * BasicTableHeaderUI implementation
@@ -587,7 +587,7 @@ public class BasicTableHeaderUI extends TableHeaderUI {
      *
      * @throws NullPointerException {@inheritDoc}
      * @throws IllegalArgumentException {@inheritDoc}
-     * @see javax.swing.JComponent#getBaseline(int, int)
+     * @see j86.javax.swing.JComponent#getBaseline(int, int)
      * @since 1.6
      */
     public int getBaseline(JComponent c, int width, int height) {

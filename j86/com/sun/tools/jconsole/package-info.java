@@ -30,4 +30,4 @@
  */
 
 @jdk.Exported
-package com.sun.tools.jconsole;
+package com.j86.sun.tools.jconsole;

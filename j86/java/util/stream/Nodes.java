@@ -22,24 +22,24 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.util.stream;
+package j86.j86.java.util.stream;
 
-import java.util.ArrayDeque;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Deque;
-import java.util.List;
-import java.util.Objects;
-import java.util.Spliterator;
-import java.util.Spliterators;
-import java.util.concurrent.CountedCompleter;
-import java.util.function.BinaryOperator;
-import java.util.function.Consumer;
-import java.util.function.DoubleConsumer;
-import java.util.function.IntConsumer;
-import java.util.function.IntFunction;
-import java.util.function.LongConsumer;
-import java.util.function.LongFunction;
+import j86.java.util.ArrayDeque;
+import j86.java.util.Arrays;
+import j86.java.util.Collection;
+import j86.java.util.Deque;
+import j86.java.util.List;
+import j86.java.util.Objects;
+import j86.java.util.Spliterator;
+import j86.java.util.Spliterators;
+import j86.j86.java.util.concurrent.CountedCompleter;
+import j86.j86.java.util.function.BinaryOperator;
+import j86.j86.java.util.function.Consumer;
+import j86.j86.java.util.function.DoubleConsumer;
+import j86.j86.java.util.function.IntConsumer;
+import j86.j86.java.util.function.IntFunction;
+import j86.j86.java.util.function.LongConsumer;
+import j86.j86.java.util.function.LongFunction;
 
 /**
  * Factory methods for constructing implementations of {@link Node} and

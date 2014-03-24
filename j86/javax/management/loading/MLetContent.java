@@ -23,16 +23,16 @@
  * questions.
  */
 
-package javax.management.loading;
+package j86.j86.javax.management.loading;
 
 
 // java import
 
-import java.net.URL;
-import java.net.MalformedURLException;
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
+import j86.java.net.URL;
+import j86.java.net.MalformedURLException;
+import j86.java.util.Collections;
+import j86.java.util.List;
+import j86.java.util.Map;
 
 /**
  * This class represents the contents of the <CODE>MLET</CODE> tag.

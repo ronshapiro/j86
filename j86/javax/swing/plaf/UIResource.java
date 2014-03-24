@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.swing.plaf;
+package j86.j86.javax.swing.plaf;
 
 
 /**
@@ -45,7 +45,7 @@ package javax.swing.plaf;
  *     list.setCellRenderer(null);
  * }
  *</pre>
- * This pattern applies to all properties except the java.awt.Component
+ * This pattern applies to all properties except the j86.java.awt.Component
  * properties font, foreground, and background.  If one of these
  * properties isn't initialized, or is explicitly set to null,
  * its container provides the value.  For this reason the

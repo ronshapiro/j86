@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.media.sound;
+package j86.com.sun.media.sound;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.OutputStream;
-import java.io.RandomAccessFile;
+import j86.java.io.File;
+import j86.java.io.FileNotFoundException;
+import j86.java.io.IOException;
+import j86.java.io.OutputStream;
+import j86.java.io.RandomAccessFile;
 
 /**
  * Resource Interchange File Format (RIFF) stream encoder.

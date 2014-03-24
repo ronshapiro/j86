@@ -23,12 +23,12 @@
  * questions.
  */
 
-package com.sun.jmx.snmp;
+package j86.com.sun.jmx.snmp;
 
 
-import java.io.*;
-import java.util.Hashtable;
-import java.util.*;
+import j86.java.io.*;
+import j86.java.util.Hashtable;
+import j86.java.util.*;
 
 
 

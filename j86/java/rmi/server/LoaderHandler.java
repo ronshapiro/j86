@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.rmi.server;
+package j86.j86.java.rmi.server;
 
-import java.net.MalformedURLException;
-import java.net.URL;
+import j86.java.net.MalformedURLException;
+import j86.java.net.URL;
 
 /**
  * <code>LoaderHandler</code> is an interface used internally by the RMI
@@ -42,16 +42,16 @@ import java.net.URL;
 public interface LoaderHandler {
 
     /** package of system <code>LoaderHandler</code> implementation. */
-    final static String packagePrefix = "sun.rmi.server";
+    final static String packagePrefix = "j86.sun.rmi.server";
 
     /**
      * Loads a class from the location specified by the
-     * <code>java.rmi.server.codebase</code> property.
+     * <code>j86.j86.java.rmi.server.codebase</code> property.
      *
      * @param  name the name of the class to load
      * @return the <code>Class</code> object representing the loaded class
      * @exception MalformedURLException
-     *            if the system property <b>java.rmi.server.codebase</b>
+     *            if the system property <b>j86.j86.java.rmi.server.codebase</b>
      *            contains an invalid URL
      * @exception ClassNotFoundException
      *            if a definition for the class could not

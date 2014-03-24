@@ -23,17 +23,17 @@
  * questions.
  */
 
-package javax.imageio.spi;
+package j86.j86.javax.imageio.spi;
 
-import java.io.File;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import java.util.NoSuchElementException;
-import java.util.Set;
-import java.util.ServiceLoader;
+import j86.java.io.File;
+import j86.java.util.ArrayList;
+import j86.java.util.HashMap;
+import j86.java.util.Iterator;
+import j86.java.util.List;
+import j86.java.util.Map;
+import j86.java.util.NoSuchElementException;
+import j86.java.util.Set;
+import j86.java.util.ServiceLoader;
 
 /**
  * A registry for service provider instances.
@@ -124,10 +124,10 @@ public class ServiceRegistry {
     }
 
     // The following two methods expose functionality from
-    // sun.misc.Service.  If that class is made public, they may be
+    // j86.sun.misc.Service.  If that class is made public, they may be
     // removed.
     //
-    // The sun.misc.ServiceConfigurationError class may also be
+    // The j86.sun.misc.ServiceConfigurationError class may also be
     // exposed, in which case the references to 'an
     // <code>Error</code>' below should be changed to 'a
     // <code>ServiceConfigurationError</code>'.

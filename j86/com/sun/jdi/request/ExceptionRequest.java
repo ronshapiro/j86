@@ -23,21 +23,21 @@
  * questions.
  */
 
-package com.sun.jdi.request;
+package j86.j86.com.sun.jdi.request;
 
-import com.sun.jdi.*;
+import j86.com.sun.jdi.*;
 
 /**
  * Request for notification when an exception occurs in the target VM.
  * When an enabled ExceptionRequest is satisfied, an
- * {@link com.sun.jdi.event.EventSet event set} containing an
- * {@link com.sun.jdi.event.ExceptionEvent ExceptionEvent} will be placed
- * on the {@link com.sun.jdi.event.EventQueue EventQueue}.
+ * {@link j86.j86.com.sun.jdi.event.EventSet event set} containing an
+ * {@link j86.j86.com.sun.jdi.event.ExceptionEvent ExceptionEvent} will be placed
+ * on the {@link j86.j86.com.sun.jdi.event.EventQueue EventQueue}.
  * The collection of existing ExceptionRequests is
  * managed by the {@link EventRequestManager}
  *
- * @see com.sun.jdi.event.ExceptionEvent
- * @see com.sun.jdi.event.EventQueue
+ * @see j86.j86.com.sun.jdi.event.ExceptionEvent
+ * @see j86.j86.com.sun.jdi.event.EventQueue
  * @see EventRequestManager
  *
  * @author Robert Field
@@ -61,7 +61,7 @@ public interface ExceptionRequest extends EventRequest {
      * <p>
      * Note that at the time an exception is thrown, it is not always
      * possible to determine whether it is truly caught. See
-     * {@link com.sun.jdi.event.ExceptionEvent#catchLocation} for
+     * {@link j86.j86.com.sun.jdi.event.ExceptionEvent#catchLocation} for
      * details.
      * @return
      * boolean true if caught exceptions will be reported, false
@@ -75,7 +75,7 @@ public interface ExceptionRequest extends EventRequest {
      * <p>
      * Note that at the time an exception is thrown, it is not always
      * possible to determine whether it is truly uncaught. See
-     * {@link com.sun.jdi.event.ExceptionEvent#catchLocation} for
+     * {@link j86.j86.com.sun.jdi.event.ExceptionEvent#catchLocation} for
      * details.
      * @return
      * boolean true if caught exceptions will be reported, false
@@ -145,7 +145,7 @@ public interface ExceptionRequest extends EventRequest {
      * @since 1.4
      * @param instance the object which must be the current instance
      * in order to pass this filter.
-     * @throws java.lang.UnsupportedOperationException if
+     * @throws j86.java.lang.UnsupportedOperationException if
      * the target virtual machine does not support this
      * operation.
      * @throws InvalidRequestStateException if this request is currently

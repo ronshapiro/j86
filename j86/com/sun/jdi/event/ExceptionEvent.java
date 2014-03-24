@@ -23,14 +23,14 @@
  * questions.
  */
 
-package com.sun.jdi.event;
+package j86.j86.com.sun.jdi.event;
 
-import com.sun.jdi.*;
+import j86.com.sun.jdi.*;
 
 /**
  * Notification of an exception in the target VM. When an exception
  * is thrown which satisfies a currently enabled
- * {@link com.sun.jdi.request.ExceptionRequest exception request},
+ * {@link j86.j86.com.sun.jdi.request.ExceptionRequest exception request},
  * an {@link EventSet event set}
  * containing an instance of this class will be added
  * to the VM's event queue.
@@ -49,7 +49,7 @@ public interface ExceptionEvent extends LocatableEvent {
 
     /**
      * Gets the thrown exception object. The exception object is
-     * an instance of {@link java.lang.Throwable} or a subclass in the
+     * an instance of {@link j86.java.lang.Throwable} or a subclass in the
      * target VM.
      *
      * @return an {@link ObjectReference} which mirrors the thrown object in

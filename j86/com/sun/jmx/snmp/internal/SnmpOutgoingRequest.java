@@ -23,19 +23,19 @@
  * questions.
  */
 
-package com.sun.jmx.snmp.internal;
+package j86.j86.com.sun.jmx.snmp.internal;
 
-import java.net.InetAddress;
+import j86.java.net.InetAddress;
 
-import com.sun.jmx.snmp.SnmpSecurityException;
-import com.sun.jmx.snmp.SnmpTooBigException;
-import com.sun.jmx.snmp.SnmpStatusException;
-import com.sun.jmx.snmp.SnmpPdu;
-import com.sun.jmx.snmp.SnmpMsg;
+import j86.com.sun.jmx.snmp.SnmpSecurityException;
+import j86.com.sun.jmx.snmp.SnmpTooBigException;
+import j86.com.sun.jmx.snmp.SnmpStatusException;
+import j86.com.sun.jmx.snmp.SnmpPdu;
+import j86.com.sun.jmx.snmp.SnmpMsg;
 
-import com.sun.jmx.snmp.internal.SnmpSecurityCache;
-import com.sun.jmx.snmp.SnmpUnknownSecModelException;
-import com.sun.jmx.snmp.SnmpBadSecurityLevelException;
+import j86.j86.com.sun.jmx.snmp.internal.SnmpSecurityCache;
+import j86.com.sun.jmx.snmp.SnmpUnknownSecModelException;
+import j86.com.sun.jmx.snmp.SnmpBadSecurityLevelException;
 /**
  * <P> An <CODE>SnmpOutgoingRequest</CODE> handles the marshalling of the message to send.</P>
  * <p><b>This API is a Sun Microsystems internal API  and is subject

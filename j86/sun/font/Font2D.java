@@ -23,15 +23,15 @@
  * questions.
  */
 
-package sun.font;
+package j86.sun.font;
 
-import java.awt.Font;
-import java.awt.font.FontRenderContext;
-import java.awt.geom.AffineTransform;
-import java.lang.ref.Reference;
-import java.lang.ref.SoftReference;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.Locale;
+import j86.java.awt.Font;
+import j86.j86.java.awt.font.FontRenderContext;
+import j86.j86.java.awt.geom.AffineTransform;
+import j86.j86.java.lang.ref.Reference;
+import j86.j86.java.lang.ref.SoftReference;
+import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.util.Locale;
 
 public abstract class Font2D {
 
@@ -475,7 +475,7 @@ public abstract class Font2D {
         return false;
     }
 
-    /* The following methods implement public methods on java.awt.Font */
+    /* The following methods implement public methods on j86.java.awt.Font */
     public String getPostscriptName() {
         return fullName;
     }

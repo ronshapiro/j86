@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.java2d;
+package j86.sun.java2d;
 
-import sun.java2d.StateTrackable.State;
-import static sun.java2d.StateTrackable.State.*;
+import j86.sun.java2d.StateTrackable.State;
+import static j86.sun.java2d.StateTrackable.State.*;
 
 /**
  * This class provides a basic pre-packaged implementation of the

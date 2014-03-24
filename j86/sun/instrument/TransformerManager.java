@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.instrument;
+package j86.sun.instrument;
 
 
-import java.lang.instrument.Instrumentation;
-import java.lang.instrument.ClassFileTransformer;
-import java.security.ProtectionDomain;
+import j86.j86.java.lang.instrument.Instrumentation;
+import j86.j86.java.lang.instrument.ClassFileTransformer;
+import j86.java.security.ProtectionDomain;
 
 /*
  * Copyright 2003 Wily Technology, Inc.

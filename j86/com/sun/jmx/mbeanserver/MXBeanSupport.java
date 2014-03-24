@@ -23,18 +23,18 @@
  * questions.
  */
 
-package com.sun.jmx.mbeanserver;
+package j86.com.sun.jmx.mbeanserver;
 
-import static com.sun.jmx.mbeanserver.Util.*;
+import static j86.com.sun.jmx.mbeanserver.Util.*;
 
-import java.util.Iterator;
-import java.util.Set;
+import j86.java.util.Iterator;
+import j86.java.util.Set;
 
-import javax.management.InstanceAlreadyExistsException;
-import javax.management.JMX;
-import javax.management.MBeanServer;
-import javax.management.NotCompliantMBeanException;
-import javax.management.ObjectName;
+import j86.javax.management.InstanceAlreadyExistsException;
+import j86.javax.management.JMX;
+import j86.javax.management.MBeanServer;
+import j86.javax.management.NotCompliantMBeanException;
+import j86.javax.management.ObjectName;
 
 /**
  * Base class for MXBeans.
@@ -142,7 +142,7 @@ public class MXBeanSupport extends MBeanSupport<ConvertingMethod> {
      * which will call the unregister method.  (Also call postRegister(false).)
      * (4) If we get this far, we can call postRegister(true).
      *
-     * When we are wrapped in an instance of javax.management.StandardMBean,
+     * When we are wrapped in an instance of j86.javax.management.StandardMBean,
      * things are simpler.  That class calls this method from its preRegister,
      * and propagates any exception.  There is no user preRegister in this case.
      * If this method succeeds but registration subsequently fails,

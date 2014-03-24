@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.jvmstat.perfdata.monitor.v1_0;
+package j86.j86.sun.jvmstat.perfdata.monitor.v1_0;
 
 /**
  * A typesafe enumeration for describing Java basic types.

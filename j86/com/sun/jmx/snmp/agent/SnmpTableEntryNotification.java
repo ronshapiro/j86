@@ -24,14 +24,14 @@
  */
 
 
-package com.sun.jmx.snmp.agent;
+package j86.j86.com.sun.jmx.snmp.agent;
 
 
 
 // jmx imports
 //
-import javax.management.Notification;
-import javax.management.ObjectName;
+import j86.javax.management.Notification;
+import j86.javax.management.ObjectName;
 
 /**
  * Represents a notification emitted when an

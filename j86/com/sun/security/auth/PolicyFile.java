@@ -23,15 +23,15 @@
  * questions.
  */
 
-package com.sun.security.auth;
+package j86.com.sun.security.auth;
 
-import java.security.CodeSource;
-import java.security.PermissionCollection;
-import javax.security.auth.Subject;
+import j86.java.security.CodeSource;
+import j86.java.security.PermissionCollection;
+import j86.javax.security.auth.Subject;
 
 /**
  * This class represents a default implementation for
- * <code>javax.security.auth.Policy</code>.
+ * <code>j86.javax.security.auth.Policy</code>.
  *
  * <p> This object stores the policy for entire Java runtime,
  * and is the amalgamation of multiple static policy
@@ -48,7 +48,7 @@ import javax.security.auth.Subject;
  *   policy file to be loaded.  Read in and load each policy.
  *
  * <li>
- *   The <code>java.lang.System</code> property <i>java.security.auth.policy</i>
+ *   The <code>j86.java.lang.System</code> property <i>j86.java.security.auth.policy</i>
  *   may also be set to a <code>URL</code> pointing to another policy file
  *   (which is the case when a user uses the -D switch at runtime).
  *   If this property is defined, and its use is allowed by the
@@ -57,7 +57,7 @@ import javax.security.auth.Subject;
  *   also load that policy.
  *
  * <li>
- *   If the <i>java.security.auth.policy</i> property is defined using
+ *   If the <i>j86.java.security.auth.policy</i> property is defined using
  *   "==" (rather than "="), then ignore all other specified
  *   policies and only load this policy.
  * </ol>
@@ -99,14 +99,14 @@ import javax.security.auth.Subject;
  *
  * <p> A permission entry must begin with the word <code>permission</code>.
  * The word <code><i>Type</i></code> in the template above is
- * a specific permission type, such as <code>java.io.FilePermission</code>
- * or <code>java.lang.RuntimePermission</code>.
+ * a specific permission type, such as <code>j86.java.io.FilePermission</code>
+ * or <code>j86.java.lang.RuntimePermission</code>.
  *
  * <p> The "<i>action</i>" is required for
- * many permission types, such as <code>java.io.FilePermission</code>
+ * many permission types, such as <code>j86.java.io.FilePermission</code>
  * (where it specifies what type of file access that is permitted).
  * It is not required for categories such as
- * <code>java.lang.RuntimePermission</code>
+ * <code>j86.java.lang.RuntimePermission</code>
  * where it is not necessary - you either have the
  * permission specified by the <code>"<i>name</i>"</code>
  * value following the type name or you don't.
@@ -143,14 +143,14 @@ import javax.security.auth.Subject;
  *   // grant it read/write to all files in /tmp.
  *
  *   grant codeBase "foo.com", principal foo.com.Principal "Duke" {
- *              permission java.io.FilePermission "/tmp/*", "read,write";
+ *              permission j86.java.io.FilePermission "/tmp/*", "read,write";
  *   };
  *
  *   // grant any code running as "Duke" permission to read
  *   // the "java.vendor" Property.
  *
  *   grant principal foo.com.Principal "Duke" {
- *         permission java.util.PropertyPermission "java.vendor";
+ *         permission j86.java.util.PropertyPermission "java.vendor";
  * </pre>
  *
  * <p> This <code>Policy</code> implementation supports
@@ -166,7 +166,7 @@ import javax.security.auth.Subject;
  *
  * <pre>
  *   grant principal foo.com.Principal "Duke" {
- *      permission javax.security.auth.PrivateCredentialPermission
+ *      permission j86.javax.security.auth.PrivateCredentialPermission
  *              "a.b.Credential self",
  *              "read";
  *    };
@@ -177,7 +177,7 @@ import javax.security.auth.Subject;
  *
  * <pre>
  *   grant principal foo.com.Principal "Duke" {
- *      permission javax.security.auth.PrivateCredentialPermission
+ *      permission j86.javax.security.auth.PrivateCredentialPermission
  *              "* self",
  *              "read";
  *    };
@@ -188,8 +188,8 @@ import javax.security.auth.Subject;
  * permission to access their own private Credentials:
  *
  * <pre>
- *   grant principal com.sun.security.auth.SolarisPrincipal * {
- *      permission javax.security.auth.PrivateCredentialPermission
+ *   grant principal j86.com.sun.security.auth.SolarisPrincipal * {
+ *      permission j86.javax.security.auth.PrivateCredentialPermission
  *              "* self",
  *              "read";
  *    };
@@ -200,33 +200,33 @@ import javax.security.auth.Subject;
  *
  * <pre>
  *   grant principal * * {
- *      permission javax.security.auth.PrivateCredentialPermission
+ *      permission j86.javax.security.auth.PrivateCredentialPermission
  *              "* self",
  *              "read";
  *    };
  * </pre>
 
  * @deprecated As of JDK&nbsp;1.4, replaced by
- *             <code>sun.security.provider.PolicyFile</code>.
+ *             <code>j86.sun.security.provider.PolicyFile</code>.
  *             This class is entirely deprecated.
  *
- * @see java.security.CodeSource
- * @see java.security.Permissions
- * @see java.security.ProtectionDomain
- * @see java.security.Security security properties
+ * @see j86.java.security.CodeSource
+ * @see j86.java.security.Permissions
+ * @see j86.java.security.ProtectionDomain
+ * @see j86.java.security.Security security properties
  */
 @jdk.Exported(false)
 @Deprecated
-public class PolicyFile extends javax.security.auth.Policy {
+public class PolicyFile extends j86.javax.security.auth.Policy {
 
-    private final sun.security.provider.AuthPolicyFile apf;
+    private final j86.sun.security.provider.AuthPolicyFile apf;
 
     /**
      * Initializes the Policy object and reads the default policy
      * configuration file(s) into the Policy object.
      */
     public PolicyFile() {
-        apf = new sun.security.provider.AuthPolicyFile();
+        apf = new j86.sun.security.provider.AuthPolicyFile();
     }
 
     /**
@@ -267,7 +267,7 @@ public class PolicyFile extends javax.security.auth.Policy {
      *      <code>P2.getName()</code> equals the P1's name.
      *
      * <li> P1 implements
-     *      <code>com.sun.security.auth.PrincipalComparator</code>,
+     *      <code>j86.com.sun.security.auth.PrincipalComparator</code>,
      *      and <code>P1.implies</code> the provided <code>Subject</code>.
      * </ol>
      *

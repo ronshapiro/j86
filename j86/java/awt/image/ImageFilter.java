@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.awt.image;
+package j86.j86.j86.java.awt.image;
 
-import java.util.Hashtable;
+import j86.java.util.Hashtable;
 
 /**
  * This class implements a filter for the set of interface methods that

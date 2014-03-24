@@ -23,41 +23,41 @@
  * questions.
  */
 
-package sun.print;
+package j86.sun.print;
 
-import java.io.OutputStream;
-import java.util.Iterator;
-import java.util.Locale;
+import j86.java.io.OutputStream;
+import j86.java.util.Iterator;
+import j86.java.util.Locale;
 
-import javax.print.DocFlavor;
-import javax.print.DocPrintJob;
-import javax.print.StreamPrintService;
-import javax.print.StreamPrintServiceFactory;
-import javax.print.ServiceUIFactory;
-import javax.print.attribute.Attribute;
-import javax.print.attribute.AttributeSet;
-import javax.print.attribute.AttributeSetUtilities;
-import javax.print.attribute.HashAttributeSet;
-import javax.print.attribute.HashPrintServiceAttributeSet;
-import javax.print.attribute.PrintServiceAttribute;
-import javax.print.attribute.PrintServiceAttributeSet;
-import javax.print.attribute.Size2DSyntax;
-import javax.print.event.PrintServiceAttributeListener;
-import javax.print.attribute.standard.JobName;
-import javax.print.attribute.standard.RequestingUserName;
-import javax.print.attribute.standard.Chromaticity;
-import javax.print.attribute.standard.ColorSupported;
-import javax.print.attribute.standard.Copies;
-import javax.print.attribute.standard.CopiesSupported;
-import javax.print.attribute.standard.Fidelity;
-import javax.print.attribute.standard.Media;
-import javax.print.attribute.standard.MediaPrintableArea;
-import javax.print.attribute.standard.MediaSize;
-import javax.print.attribute.standard.MediaSizeName;
-import javax.print.attribute.standard.OrientationRequested;
-import javax.print.attribute.standard.PageRanges;
-import javax.print.attribute.standard.SheetCollate;
-import javax.print.attribute.standard.Sides;
+import j86.javax.print.DocFlavor;
+import j86.javax.print.DocPrintJob;
+import j86.javax.print.StreamPrintService;
+import j86.javax.print.StreamPrintServiceFactory;
+import j86.javax.print.ServiceUIFactory;
+import j86.j86.javax.print.attribute.Attribute;
+import j86.j86.javax.print.attribute.AttributeSet;
+import j86.j86.javax.print.attribute.AttributeSetUtilities;
+import j86.j86.javax.print.attribute.HashAttributeSet;
+import j86.j86.javax.print.attribute.HashPrintServiceAttributeSet;
+import j86.j86.javax.print.attribute.PrintServiceAttribute;
+import j86.j86.javax.print.attribute.PrintServiceAttributeSet;
+import j86.j86.javax.print.attribute.Size2DSyntax;
+import j86.j86.javax.print.event.PrintServiceAttributeListener;
+import j86.j86.j86.javax.print.attribute.standard.JobName;
+import j86.j86.j86.javax.print.attribute.standard.RequestingUserName;
+import j86.j86.j86.javax.print.attribute.standard.Chromaticity;
+import j86.j86.j86.javax.print.attribute.standard.ColorSupported;
+import j86.j86.j86.javax.print.attribute.standard.Copies;
+import j86.j86.j86.javax.print.attribute.standard.CopiesSupported;
+import j86.j86.j86.javax.print.attribute.standard.Fidelity;
+import j86.j86.j86.javax.print.attribute.standard.Media;
+import j86.j86.j86.javax.print.attribute.standard.MediaPrintableArea;
+import j86.j86.j86.javax.print.attribute.standard.MediaSize;
+import j86.j86.j86.javax.print.attribute.standard.MediaSizeName;
+import j86.j86.j86.javax.print.attribute.standard.OrientationRequested;
+import j86.j86.j86.javax.print.attribute.standard.PageRanges;
+import j86.j86.j86.javax.print.attribute.standard.SheetCollate;
+import j86.j86.j86.javax.print.attribute.standard.Sides;
 
 public class PSStreamPrintService extends StreamPrintService
     implements SunPrinterJobService {
@@ -109,7 +109,7 @@ public class PSStreamPrintService extends StreamPrintService
     }
 
     public boolean usesClass(Class c) {
-        return (c == sun.print.PSPrinterJob.class);
+        return (c == j86.sun.print.PSPrinterJob.class);
     }
 
     public String getName() {

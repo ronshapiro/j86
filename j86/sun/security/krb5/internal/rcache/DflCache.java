@@ -24,37 +24,37 @@
  */
 
 
-package sun.security.krb5.internal.rcache;
+package j86.j86.j86.sun.security.krb5.internal.rcache;
 
-import java.io.*;
-import java.nio.BufferUnderflowException;
-import java.nio.ByteBuffer;
-import java.nio.ByteOrder;
-import java.nio.channels.SeekableByteChannel;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.StandardCopyOption;
-import java.nio.file.StandardOpenOption;
-import java.nio.file.attribute.PosixFilePermission;
-import java.security.AccessController;
-import java.util.*;
+import j86.java.io.*;
+import j86.java.nio.BufferUnderflowException;
+import j86.java.nio.ByteBuffer;
+import j86.java.nio.ByteOrder;
+import j86.j86.java.nio.channels.SeekableByteChannel;
+import j86.j86.java.nio.file.Files;
+import j86.j86.java.nio.file.Path;
+import j86.j86.java.nio.file.StandardCopyOption;
+import j86.j86.java.nio.file.StandardOpenOption;
+import j86.j86.j86.java.nio.file.attribute.PosixFilePermission;
+import j86.java.security.AccessController;
+import j86.java.util.*;
 
-import sun.security.action.GetPropertyAction;
-import sun.security.krb5.internal.KerberosTime;
-import sun.security.krb5.internal.Krb5;
-import sun.security.krb5.internal.KrbApErrException;
-import sun.security.krb5.internal.ReplayCache;
+import j86.sun.security.action.GetPropertyAction;
+import j86.j86.sun.security.krb5.internal.KerberosTime;
+import j86.j86.sun.security.krb5.internal.Krb5;
+import j86.j86.sun.security.krb5.internal.KrbApErrException;
+import j86.j86.sun.security.krb5.internal.ReplayCache;
 
 
 /**
  * A dfl file is used to sustores AuthTime entries when the system property
- * sun.security.krb5.rcache is set to
+ * j86.sun.security.krb5.rcache is set to
  *
  *    dfl(|:path/|:path/name|:name)
  *
  * The file will be path/name. If path is not given, it will be
  *
- *    System.getProperty("java.io.tmpdir")
+ *    System.getProperty("j86.java.io.tmpdir")
  *
  * If name is not given, it will be
  *
@@ -109,7 +109,7 @@ public class DflCache extends ReplayCache {
     static {
         try {
             // Available on Solaris, Linux and Mac. Otherwise, no _euid suffix
-            Class<?> clazz = Class.forName("com.sun.security.auth.module.UnixSystem");
+            Class<?> clazz = Class.forName("j86.j86.com.sun.security.auth.module.UnixSystem");
             uid = (int)(long)(Long)
                     clazz.getMethod("getUid").invoke(clazz.newInstance());
         } catch (Exception e) {
@@ -123,7 +123,7 @@ public class DflCache extends ReplayCache {
 
     private static String defaultPath() {
         return AccessController.doPrivileged(
-                new GetPropertyAction("java.io.tmpdir"));
+                new GetPropertyAction("j86.java.io.tmpdir"));
     }
 
     private static String defaultFile(String server) {

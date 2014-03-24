@@ -23,15 +23,15 @@
  * questions.
  */
 
-package sun.java2d.pipe;
+package j86.j86.sun.java2d.pipe;
 
-import java.awt.Rectangle;
-import java.awt.Shape;
-import java.awt.Font;
-import java.awt.font.GlyphVector;
-import sun.java2d.SunGraphics2D;
-import sun.java2d.loops.FontInfo;
-import sun.font.GlyphList;
+import j86.java.awt.Rectangle;
+import j86.java.awt.Shape;
+import j86.java.awt.Font;
+import j86.j86.java.awt.font.GlyphVector;
+import j86.sun.java2d.SunGraphics2D;
+import j86.j86.sun.java2d.loops.FontInfo;
+import j86.sun.font.GlyphList;
 
 /*
  * This class uses the alpha graybits arrays from a GlyphList object to

@@ -23,12 +23,12 @@
  * questions.
  */
 
-package java.nio.file;
+package j86.j86.java.nio.file;
 
-import java.io.File;
-import java.io.IOException;
-import java.net.URI;
-import java.util.Iterator;
+import j86.java.io.File;
+import j86.java.io.IOException;
+import j86.java.net.URI;
+import j86.java.util.Iterator;
 
 /**
  * An object that may be used to locate a file in a file system. It will
@@ -67,7 +67,7 @@ import java.util.Iterator;
  * <h2>Accessing Files</h2>
  * <p> Paths may be used with the {@link Files} class to operate on files,
  * directories, and other types of files. For example, suppose we want a {@link
- * java.io.BufferedReader} to read text from a file "{@code access.log}". The
+ * j86.java.io.BufferedReader} to read text from a file "{@code access.log}". The
  * file is located in a directory "{@code logs}" relative to the current working
  * directory and is UTF-8 encoded.
  * <pre>
@@ -77,13 +77,13 @@ import java.util.Iterator;
  *
  * <a name="interop"></a><h2>Interoperability</h2>
  * <p> Paths associated with the default {@link
- * java.nio.file.spi.FileSystemProvider provider} are generally interoperable
- * with the {@link java.io.File java.io.File} class. Paths created by other
+ * j86.j86.j86.java.nio.file.spi.FileSystemProvider provider} are generally interoperable
+ * with the {@link j86.java.io.File java.io.File} class. Paths created by other
  * providers are unlikely to be interoperable with the abstract path names
- * represented by {@code java.io.File}. The {@link java.io.File#toPath toPath}
+ * represented by {@code j86.java.io.File}. The {@link java.io.File#toPath toPath}
  * method may be used to obtain a {@code Path} from the abstract path name
- * represented by a {@code java.io.File} object. The resulting {@code Path} can
- * be used to operate on the same file as the {@code java.io.File} object. In
+ * represented by a {@code j86.java.io.File} object. The resulting {@code Path} can
+ * be used to operate on the same file as the {@code j86.java.io.File} object. In
  * addition, the {@link #toFile toFile} method is useful to construct a {@code
  * File} from the {@code String} representation of a {@code Path}.
  *
@@ -469,7 +469,7 @@ public interface Path
      * a {@link URI#getPath() path} component that is absolute. The query and
      * fragment components are undefined. Whether the authority component is
      * defined or not is implementation dependent. There is no guarantee that
-     * the {@code URI} may be used to construct a {@link java.io.File java.io.File}.
+     * the {@code URI} may be used to construct a {@link j86.java.io.File java.io.File}.
      * In particular, if this path represents a Universal Naming Convention (UNC)
      * path, then the UNC server name may be encoded in the authority component
      * of the resulting URI. In the case of the default provider, and the file
@@ -477,7 +477,7 @@ public interface Path
      * resulting {@code URI} will end with a slash.
      *
      * <p> The default provider provides a similar <em>round-trip</em> guarantee
-     * to the {@link java.io.File} class. For a given {@code Path} <i>p</i> it
+     * to the {@link j86.java.io.File} class. For a given {@code Path} <i>p</i> it
      * is guaranteed that
      * <blockquote><tt>
      * {@link Paths#get(URI) Paths.get}(</tt><i>p</i><tt>.toUri()).equals(</tt><i>p</i>
@@ -497,7 +497,7 @@ public interface Path
      *
      * @return  the URI representing this path
      *
-     * @throws  java.io.IOError
+     * @throws  j86.java.io.IOError
      *          if an I/O error occurs obtaining the absolute path, or where a
      *          file system is constructed to access the contents of a file as
      *          a file system, and the URI of the enclosing file system cannot be
@@ -522,7 +522,7 @@ public interface Path
      *
      * @return  a {@code Path} object representing the absolute path
      *
-     * @throws  java.io.IOError
+     * @throws  j86.java.io.IOError
      *          if an I/O error occurs
      * @throws  SecurityException
      *          In the case of the default provider, a security manager
@@ -764,7 +764,7 @@ public interface Path
      * paths locate the same file.
      *
      * <p> This method satisfies the general contract of the {@link
-     * java.lang.Object#equals(Object) Object.equals} method. </p>
+     * j86.java.lang.Object#equals(Object) Object.equals} method. </p>
      *
      * @param   other
      *          the object to which this object is to be compared

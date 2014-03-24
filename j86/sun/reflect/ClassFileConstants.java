@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.reflect;
+package j86.sun.reflect;
 
 /** Minimal set of class file constants for assembly of field and
     method accessors. */

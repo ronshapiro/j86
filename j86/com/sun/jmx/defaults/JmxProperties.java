@@ -23,9 +23,9 @@
  * questions.
  */
 
-package com.sun.jmx.defaults;
+package j86.com.sun.jmx.defaults;
 
-import java.util.logging.Logger;
+import j86.j86.java.util.logging.Logger;
 
 /**
  * This contains the property list defined for this
@@ -51,7 +51,7 @@ public class JmxProperties {
      * Property Name: <B>jmx.mlet.library.dir</B>
      */
     public static final String JMX_INITIAL_BUILDER =
-            "javax.management.builder.initial";
+            "j86.javax.management.builder.initial";
 
     /**
      * References the property that specifies the directory where
@@ -114,7 +114,7 @@ public class JmxProperties {
      * Logger name for MBean Server information.
      */
     public static final String MBEANSERVER_LOGGER_NAME =
-            "javax.management.mbeanserver";
+            "j86.javax.management.mbeanserver";
 
     /**
      * Logger for MBean Server information.
@@ -126,7 +126,7 @@ public class JmxProperties {
      * Logger name for MLet service information.
      */
     public static final String MLET_LOGGER_NAME =
-            "javax.management.mlet";
+            "j86.javax.management.mlet";
 
     /**
      * Logger for MLet service information.
@@ -138,7 +138,7 @@ public class JmxProperties {
      * Logger name for Monitor information.
      */
     public static final String MONITOR_LOGGER_NAME =
-            "javax.management.monitor";
+            "j86.j86.javax.management.monitor";
 
     /**
      * Logger for Monitor information.
@@ -150,7 +150,7 @@ public class JmxProperties {
      * Logger name for Timer information.
      */
     public static final String TIMER_LOGGER_NAME =
-            "javax.management.timer";
+            "j86.j86.javax.management.timer";
 
     /**
      * Logger for Timer information.
@@ -162,7 +162,7 @@ public class JmxProperties {
      * Logger name for Event Management information.
      */
     public static final String NOTIFICATION_LOGGER_NAME =
-            "javax.management.notification";
+            "j86.javax.management.notification";
 
     /**
      * Logger for Event Management information.
@@ -174,7 +174,7 @@ public class JmxProperties {
      * Logger name for Relation Service.
      */
     public static final String RELATION_LOGGER_NAME =
-            "javax.management.relation";
+            "j86.j86.javax.management.relation";
 
     /**
      * Logger for Relation Service.
@@ -186,7 +186,7 @@ public class JmxProperties {
      * Logger name for Model MBean.
      */
     public static final String MODELMBEAN_LOGGER_NAME =
-            "javax.management.modelmbean";
+            "j86.j86.javax.management.modelmbean";
 
     /**
      * Logger for Model MBean.
@@ -198,7 +198,7 @@ public class JmxProperties {
      * Logger name for all other JMX classes.
      */
     public static final String MISC_LOGGER_NAME =
-            "javax.management.misc";
+            "j86.javax.management.misc";
 
     /**
      * Logger for all other JMX classes.
@@ -210,7 +210,7 @@ public class JmxProperties {
      * Logger name for SNMP.
      */
     public static final String SNMP_LOGGER_NAME =
-            "javax.management.snmp";
+            "j86.javax.management.snmp";
 
     /**
      * Logger for SNMP.
@@ -222,7 +222,7 @@ public class JmxProperties {
      * Logger name for SNMP Adaptor.
      */
     public static final String SNMP_ADAPTOR_LOGGER_NAME =
-            "javax.management.snmp.daemon";
+            "j86.javax.management.snmp.daemon";
 
     /**
      * Logger for SNMP Adaptor.

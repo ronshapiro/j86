@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.awt.peer;
+package j86.j86.java.awt.peer;
 
-import java.awt.*;
+import j86.java.awt.*;
 
 /**
  * The peer interface for {@link Window}.
@@ -88,7 +88,7 @@ public interface WindowPeer extends ContainerPeer {
     /**
      * Updates the icons for the window.
      *
-     * @see Window#setIconImages(java.util.List)
+     * @see Window#setIconImages(j86.java.util.List)
      */
     void updateIconImages();
 

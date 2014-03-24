@@ -23,12 +23,12 @@
  * questions.
  */
 
-package javax.script;
+package j86.javax.script;
 
-import java.util.Map;
-import java.util.HashMap;
-import java.util.Collection;
-import java.util.Set;
+import j86.java.util.Map;
+import j86.java.util.HashMap;
+import j86.java.util.Collection;
+import j86.java.util.Set;
 
 /**
  * A simple implementation of Bindings backed by

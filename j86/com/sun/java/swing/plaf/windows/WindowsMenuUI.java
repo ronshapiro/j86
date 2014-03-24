@@ -23,18 +23,18 @@
  * questions.
  */
 
-package com.sun.java.swing.plaf.windows;
+package j86.j86.com.sun.java.swing.plaf.windows;
 
-import java.awt.*;
-import java.awt.event.MouseEvent;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.MouseEvent;
 
-import javax.swing.plaf.ComponentUI;
-import javax.swing.plaf.basic.BasicMenuUI;
-import javax.swing.event.MouseInputListener;
-import javax.swing.*;
+import j86.j86.javax.swing.plaf.ComponentUI;
+import j86.j86.j86.javax.swing.plaf.basic.BasicMenuUI;
+import j86.j86.javax.swing.event.MouseInputListener;
+import j86.javax.swing.*;
 
-import com.sun.java.swing.plaf.windows.TMSchema.Part;
-import com.sun.java.swing.plaf.windows.TMSchema.State;
+import j86.j86.com.sun.java.swing.plaf.windows.TMSchema.Part;
+import j86.j86.com.sun.java.swing.plaf.windows.TMSchema.State;
 
 /**
  * Windows rendition of the component.

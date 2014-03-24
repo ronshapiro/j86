@@ -24,7 +24,7 @@
  */
 
 
-package sun.tools.java;
+package j86.sun.tools.java;
 
 /**
  * This interface defines constant that are used
@@ -70,22 +70,22 @@ interface Constants extends RuntimeConstants {
     Identifier idTYPE = Identifier.lookup("TYPE");
     Identifier idFinallyReturnValue = Identifier.lookup("<return>");
 
-    Identifier idJavaLang = Identifier.lookup("java.lang");
+    Identifier idJavaLang = Identifier.lookup("j86.java.lang");
 
-    Identifier idJavaLangCloneable = Identifier.lookup("java.lang.Cloneable");
+    Identifier idJavaLangCloneable = Identifier.lookup("j86.java.lang.Cloneable");
 
-    Identifier idJavaLangError = Identifier.lookup("java.lang.Error");
-    Identifier idJavaLangException = Identifier.lookup("java.lang.Exception");
-    Identifier idJavaLangObject = Identifier.lookup("java.lang.Object");
-    Identifier idJavaLangClass = Identifier.lookup("java.lang.Class");
+    Identifier idJavaLangError = Identifier.lookup("j86.java.lang.Error");
+    Identifier idJavaLangException = Identifier.lookup("j86.java.lang.Exception");
+    Identifier idJavaLangObject = Identifier.lookup("j86.java.lang.Object");
+    Identifier idJavaLangClass = Identifier.lookup("j86.java.lang.Class");
     Identifier idJavaLangRuntimeException =
-          Identifier.lookup("java.lang.RuntimeException");
-    Identifier idJavaLangString = Identifier.lookup("java.lang.String");
+          Identifier.lookup("j86.java.lang.RuntimeException");
+    Identifier idJavaLangString = Identifier.lookup("j86.java.lang.String");
     Identifier idJavaLangStringBuffer =
-          Identifier.lookup("java.lang.StringBuffer");
-    Identifier idJavaLangThrowable = Identifier.lookup("java.lang.Throwable");
+          Identifier.lookup("j86.java.lang.StringBuffer");
+    Identifier idJavaLangThrowable = Identifier.lookup("j86.java.lang.Throwable");
 
-    Identifier idJavaIoSerializable = Identifier.lookup("java.io.Serializable");
+    Identifier idJavaIoSerializable = Identifier.lookup("j86.java.io.Serializable");
 
 
     Identifier idConstantValue = Identifier.lookup("ConstantValue");

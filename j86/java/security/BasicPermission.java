@@ -23,17 +23,17 @@
  * questions.
  */
 
-package java.security;
+package j86.java.security;
 
-import java.util.Enumeration;
-import java.util.Map;
-import java.util.HashMap;
-import java.util.Hashtable;
-import java.util.Collections;
-import java.io.ObjectStreamField;
-import java.io.ObjectOutputStream;
-import java.io.ObjectInputStream;
-import java.io.IOException;
+import j86.java.util.Enumeration;
+import j86.java.util.Map;
+import j86.java.util.HashMap;
+import j86.java.util.Hashtable;
+import j86.java.util.Collections;
+import j86.java.io.ObjectStreamField;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.IOException;
 
 /**
  * The BasicPermission class extends the Permission class, and
@@ -57,17 +57,17 @@ import java.io.IOException;
  * Subclasses may implement actions on top of BasicPermission,
  * if desired.
  * <p>
- * @see java.security.Permission
- * @see java.security.Permissions
- * @see java.security.PermissionCollection
- * @see java.lang.SecurityManager
+ * @see j86.java.security.Permission
+ * @see j86.java.security.Permissions
+ * @see j86.java.security.PermissionCollection
+ * @see j86.java.lang.SecurityManager
  *
  * @author Marianne Mueller
  * @author Roland Schemers
  */
 
 public abstract class BasicPermission extends Permission
-    implements java.io.Serializable
+    implements j86.java.io.Serializable
 {
 
     private static final long serialVersionUID = 6279438298436773498L;
@@ -287,8 +287,8 @@ public abstract class BasicPermission extends Permission
  * A BasicPermissionCollection handles comparing a permission like "a.b.c.d.e"
  * with a Permission such as "a.b.*", or "*".
  *
- * @see java.security.Permission
- * @see java.security.Permissions
+ * @see j86.java.security.Permission
+ * @see j86.java.security.Permissions
  *
  *
  * @author Roland Schemers
@@ -298,7 +298,7 @@ public abstract class BasicPermission extends Permission
 
 final class BasicPermissionCollection
     extends PermissionCollection
-    implements java.io.Serializable
+    implements j86.java.io.Serializable
 {
 
     private static final long serialVersionUID = 739301742472979399L;
@@ -470,7 +470,7 @@ final class BasicPermissionCollection
     //
     // private Hashtable permissions;
     /**
-     * @serialField permissions java.util.Hashtable
+     * @serialField permissions j86.java.util.Hashtable
      *    The BasicPermissions in this BasicPermissionCollection.
      *    All BasicPermissions in the collection must belong to the same class.
      *    The Hashtable is indexed by the BasicPermission name; the value
@@ -478,7 +478,7 @@ final class BasicPermissionCollection
      * @serialField all_allowed boolean
      *   This is set to {@code true} if this BasicPermissionCollection
      *   contains a BasicPermission with '*' as its permission name.
-     * @serialField permClass java.lang.Class
+     * @serialField permClass j86.java.lang.Class
      *   The class to which all BasicPermissions in this
      *   BasicPermissionCollection belongs.
      */
@@ -519,7 +519,7 @@ final class BasicPermissionCollection
      * readObject is called to restore the state of the
      * BasicPermissionCollection from a stream.
      */
-    private void readObject(java.io.ObjectInputStream in)
+    private void readObject(j86.java.io.ObjectInputStream in)
          throws IOException, ClassNotFoundException
     {
         // Don't call defaultReadObject()

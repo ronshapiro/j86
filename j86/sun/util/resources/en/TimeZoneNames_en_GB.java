@@ -38,9 +38,9 @@
  *
  */
 
-package sun.util.resources.en;
+package j86.j86.j86.sun.util.resources.en;
 
-import sun.util.resources.TimeZoneNamesBundle;
+import j86.j86.sun.util.resources.TimeZoneNamesBundle;
 
 public final class TimeZoneNames_en_GB extends TimeZoneNamesBundle {
 

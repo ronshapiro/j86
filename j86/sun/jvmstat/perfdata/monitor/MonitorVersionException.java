@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.jvmstat.perfdata.monitor;
+package j86.sun.jvmstat.perfdata.monitor;
 
-import sun.jvmstat.monitor.MonitorException;
+import j86.sun.jvmstat.monitor.MonitorException;
 
 /**
  * Exception thrown when version of the implementation does not

@@ -22,19 +22,19 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.rmi.transport.proxy;
+package j86.j86.sun.rmi.transport.proxy;
 
-import java.io.BufferedInputStream;
-import java.io.IOException;
-import java.net.ServerSocket;
-import java.net.Socket;
-import sun.rmi.runtime.Log;
+import j86.java.io.BufferedInputStream;
+import j86.java.io.IOException;
+import j86.java.net.ServerSocket;
+import j86.java.net.Socket;
+import j86.sun.rmi.runtime.Log;
 
 /**
- * The HttpAwareServerSocket class extends the java.net.ServerSocket
+ * The HttpAwareServerSocket class extends the j86.java.net.ServerSocket
  * class.  It behaves like a ServerSocket, except that if
  * the first four bytes of an accepted socket are the letters "POST",
- * then it returns an HttpReceiveSocket instead of a java.net.Socket.
+ * then it returns an HttpReceiveSocket instead of a j86.java.net.Socket.
  * This means that the accept method blocks until four bytes have been
  * read from the new socket's input stream.
  */

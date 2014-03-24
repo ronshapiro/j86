@@ -23,13 +23,13 @@
  * questions.
  */
 
-package sun.nio.ch;
+package j86.j86.j86.sun.nio.ch;
 
-import java.nio.channels.SocketChannel;
-import java.nio.channels.ServerSocketChannel;
-import java.nio.channels.spi.SelectorProvider;
-import java.io.FileDescriptor;
-import java.io.IOException;
+import j86.j86.java.nio.channels.SocketChannel;
+import j86.j86.java.nio.channels.ServerSocketChannel;
+import j86.j86.j86.java.nio.channels.spi.SelectorProvider;
+import j86.java.io.FileDescriptor;
+import j86.java.io.IOException;
 
 /**
  * Provides access to implementation private constructors and methods.

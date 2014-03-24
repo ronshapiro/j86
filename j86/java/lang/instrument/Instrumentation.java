@@ -23,11 +23,11 @@
  * questions.
  */
 
-package java.lang.instrument;
+package j86.j86.java.lang.instrument;
 
-import  java.io.File;
-import  java.io.IOException;
-import  java.util.jar.JarFile;
+import  j86.java.io.File;
+import  j86.java.io.IOException;
+import  j86.j86.java.util.jar.JarFile;
 
 /*
  * Copyright 2003 Wily Technology, Inc.
@@ -59,7 +59,7 @@ import  java.util.jar.JarFile;
  * </ol>
  * <p>
  * These mechanisms are described in the
- * {@linkplain java.lang.instrument package specification}.
+ * {@linkplain j86.j86.java.lang.instrument package specification}.
  * <p>
  * Once an agent acquires an <code>Instrumentation</code> instance,
  * the agent may call methods on the instance at any time.
@@ -74,7 +74,7 @@ public interface Instrumentation {
      * The transformer is called when classes are loaded, when they are
      * {@linkplain #redefineClasses redefined}. and if <code>canRetransform</code> is true,
      * when they are {@linkplain #retransformClasses retransformed}.
-     * See {@link java.lang.instrument.ClassFileTransformer#transform
+     * See {@link j86.j86.java.lang.instrument.ClassFileTransformer#transform
      * ClassFileTransformer.transform} for the order
      * of transform calls.
      * If a transformer throws
@@ -88,8 +88,8 @@ public interface Instrumentation {
      *
      * @param transformer          the transformer to register
      * @param canRetransform       can this transformer's transformations be retransformed
-     * @throws java.lang.NullPointerException if passed a <code>null</code> transformer
-     * @throws java.lang.UnsupportedOperationException if <code>canRetransform</code>
+     * @throws j86.java.lang.NullPointerException if passed a <code>null</code> transformer
+     * @throws j86.java.lang.UnsupportedOperationException if <code>canRetransform</code>
      * is true and the current configuration of the JVM does not allow
      * retransformation ({@link #isRetransformClassesSupported} is false)
      * @since 1.6
@@ -103,7 +103,7 @@ public interface Instrumentation {
      * Same as <code>addTransformer(transformer, false)</code>.
      *
      * @param transformer          the transformer to register
-     * @throws java.lang.NullPointerException if passed a <code>null</code> transformer
+     * @throws j86.java.lang.NullPointerException if passed a <code>null</code> transformer
      * @see    #addTransformer(ClassFileTransformer,boolean)
      */
     void
@@ -120,7 +120,7 @@ public interface Instrumentation {
      * @param transformer          the transformer to unregister
      * @return  true if the transformer was found and removed, false if the
      *           transformer was not found
-     * @throws java.lang.NullPointerException if passed a <code>null</code> transformer
+     * @throws j86.java.lang.NullPointerException if passed a <code>null</code> transformer
      */
     boolean
     removeTransformer(ClassFileTransformer transformer);
@@ -133,7 +133,7 @@ public interface Instrumentation {
      * Retransformation will only be supported if the
      * <code>Can-Retransform-Classes</code> manifest attribute is set to
      * <code>true</code> in the agent JAR file (as described in the
-     * {@linkplain java.lang.instrument package specification}) and the JVM supports
+     * {@linkplain j86.j86.java.lang.instrument package specification}) and the JVM supports
      * this capability.
      * During a single instantiation of a single JVM, multiple calls to this
      * method will always return the same answer.
@@ -154,7 +154,7 @@ public interface Instrumentation {
      * When classes are initially loaded or when they are
      * {@linkplain #redefineClasses redefined},
      * the initial class file bytes can be transformed with the
-     * {@link java.lang.instrument.ClassFileTransformer ClassFileTransformer}.
+     * {@link j86.j86.java.lang.instrument.ClassFileTransformer ClassFileTransformer}.
      * This function reruns the transformation process
      * (whether or not a transformation has previously occurred).
      * This retransformation follows these steps:
@@ -163,17 +163,17 @@ public interface Instrumentation {
      *    </li>
      *    <li>for each transformer that was added with <code>canRetransform</code>
      *      false, the bytes returned by
-     *      {@link java.lang.instrument.ClassFileTransformer#transform transform}
+     *      {@link j86.j86.java.lang.instrument.ClassFileTransformer#transform transform}
      *      during the last class load or redefine are
      *      reused as the output of the transformation; note that this is
      *      equivalent to reapplying the previous transformation, unaltered;
      *      except that
-     *      {@link java.lang.instrument.ClassFileTransformer#transform transform}
+     *      {@link j86.j86.java.lang.instrument.ClassFileTransformer#transform transform}
      *      is not called
      *    </li>
      *    <li>for each transformer that was added with <code>canRetransform</code>
      *      true, the
-     *      {@link java.lang.instrument.ClassFileTransformer#transform transform}
+     *      {@link j86.j86.java.lang.instrument.ClassFileTransformer#transform transform}
      *      method is called in these transformers
      *    </li>
      *    <li>the transformed class file bytes are installed as the new
@@ -183,13 +183,13 @@ public interface Instrumentation {
      * <P>
      *
      * The order of transformation is described in the
-     * {@link java.lang.instrument.ClassFileTransformer#transform transform} method.
+     * {@link j86.j86.java.lang.instrument.ClassFileTransformer#transform transform} method.
      * This same order is used in the automatic reapplication of retransformation
      * incapable transforms.
      * <P>
      *
      * The initial class file bytes represent the bytes passed to
-     * {@link java.lang.ClassLoader#defineClass ClassLoader.defineClass} or
+     * {@link j86.java.lang.ClassLoader#defineClass ClassLoader.defineClass} or
      * {@link #redefineClasses redefineClasses}
      * (before any transformations
      *  were applied), however they might not exactly match them.
@@ -236,22 +236,22 @@ public interface Instrumentation {
      *
      * @param classes array of classes to retransform;
      *                a zero-length array is allowed, in this case, this method does nothing
-     * @throws java.lang.instrument.UnmodifiableClassException if a specified class cannot be modified
+     * @throws j86.j86.java.lang.instrument.UnmodifiableClassException if a specified class cannot be modified
      * ({@link #isModifiableClass} would return <code>false</code>)
-     * @throws java.lang.UnsupportedOperationException if the current configuration of the JVM does not allow
+     * @throws j86.java.lang.UnsupportedOperationException if the current configuration of the JVM does not allow
      * retransformation ({@link #isRetransformClassesSupported} is false) or the retransformation attempted
      * to make unsupported changes
-     * @throws java.lang.ClassFormatError if the data did not contain a valid class
-     * @throws java.lang.NoClassDefFoundError if the name in the class file is not equal to the name of the class
-     * @throws java.lang.UnsupportedClassVersionError if the class file version numbers are not supported
-     * @throws java.lang.ClassCircularityError if the new classes contain a circularity
-     * @throws java.lang.LinkageError if a linkage error occurs
-     * @throws java.lang.NullPointerException if the supplied classes  array or any of its components
+     * @throws j86.java.lang.ClassFormatError if the data did not contain a valid class
+     * @throws j86.java.lang.NoClassDefFoundError if the name in the class file is not equal to the name of the class
+     * @throws j86.java.lang.UnsupportedClassVersionError if the class file version numbers are not supported
+     * @throws j86.java.lang.ClassCircularityError if the new classes contain a circularity
+     * @throws j86.java.lang.LinkageError if a linkage error occurs
+     * @throws j86.java.lang.NullPointerException if the supplied classes  array or any of its components
      *                                        is <code>null</code>.
      *
      * @see #isRetransformClassesSupported
      * @see #addTransformer
-     * @see java.lang.instrument.ClassFileTransformer
+     * @see j86.j86.java.lang.instrument.ClassFileTransformer
      * @since 1.6
      */
     void
@@ -265,7 +265,7 @@ public interface Instrumentation {
      * Redefinition will only be supported if the
      * <code>Can-Redefine-Classes</code> manifest attribute is set to
      * <code>true</code> in the agent JAR file (as described in the
-     * {@linkplain java.lang.instrument package specification}) and the JVM supports
+     * {@linkplain j86.j86.java.lang.instrument package specification}) and the JVM supports
      * this capability.
      * During a single instantiation of a single JVM, multiple calls to this
      * method will always return the same answer.
@@ -323,23 +323,23 @@ public interface Instrumentation {
      *
      * @param definitions array of classes to redefine with corresponding definitions;
      *                    a zero-length array is allowed, in this case, this method does nothing
-     * @throws java.lang.instrument.UnmodifiableClassException if a specified class cannot be modified
+     * @throws j86.j86.java.lang.instrument.UnmodifiableClassException if a specified class cannot be modified
      * ({@link #isModifiableClass} would return <code>false</code>)
-     * @throws java.lang.UnsupportedOperationException if the current configuration of the JVM does not allow
+     * @throws j86.java.lang.UnsupportedOperationException if the current configuration of the JVM does not allow
      * redefinition ({@link #isRedefineClassesSupported} is false) or the redefinition attempted
      * to make unsupported changes
-     * @throws java.lang.ClassFormatError if the data did not contain a valid class
-     * @throws java.lang.NoClassDefFoundError if the name in the class file is not equal to the name of the class
-     * @throws java.lang.UnsupportedClassVersionError if the class file version numbers are not supported
-     * @throws java.lang.ClassCircularityError if the new classes contain a circularity
-     * @throws java.lang.LinkageError if a linkage error occurs
-     * @throws java.lang.NullPointerException if the supplied definitions array or any of its components
+     * @throws j86.java.lang.ClassFormatError if the data did not contain a valid class
+     * @throws j86.java.lang.NoClassDefFoundError if the name in the class file is not equal to the name of the class
+     * @throws j86.java.lang.UnsupportedClassVersionError if the class file version numbers are not supported
+     * @throws j86.java.lang.ClassCircularityError if the new classes contain a circularity
+     * @throws j86.java.lang.LinkageError if a linkage error occurs
+     * @throws j86.java.lang.NullPointerException if the supplied definitions array or any of its components
      * is <code>null</code>
-     * @throws java.lang.ClassNotFoundException Can never be thrown (present for compatibility reasons only)
+     * @throws j86.java.lang.ClassNotFoundException Can never be thrown (present for compatibility reasons only)
      *
      * @see #isRedefineClassesSupported
      * @see #addTransformer
-     * @see java.lang.instrument.ClassFileTransformer
+     * @see j86.j86.java.lang.instrument.ClassFileTransformer
      */
     void
     redefineClasses(ClassDefinition... definitions)
@@ -360,12 +360,12 @@ public interface Instrumentation {
      * But the value of <code>isRedefineClassesSupported()</code> does not influence the value
      * returned by this function.
      * <P>
-     * Primitive classes (for example, <code>java.lang.Integer.TYPE</code>)
+     * Primitive classes (for example, <code>j86.java.lang.Integer.TYPE</code>)
      * and array classes are never modifiable.
      *
      * @param theClass the class to check for being modifiable
      * @return whether or not the argument class is modifiable
-     * @throws java.lang.NullPointerException if the specified class is <code>null</code>.
+     * @throws j86.java.lang.NullPointerException if the specified class is <code>null</code>.
      *
      * @see #retransformClasses
      * @see #isRetransformClassesSupported
@@ -407,7 +407,7 @@ public interface Instrumentation {
      *
      * @param objectToSize     the object to size
      * @return an implementation-specific approximation of the amount of storage consumed by the specified object
-     * @throws java.lang.NullPointerException if the supplied Object is <code>null</code>.
+     * @throws j86.java.lang.NullPointerException if the supplied Object is <code>null</code>.
      */
     long
     getObjectSize(Object objectToSize);
@@ -419,7 +419,7 @@ public interface Instrumentation {
      *
      * <p> When the virtual machine's built-in class loader, known as the "bootstrap
      * class loader", unsuccessfully searches for a class, the entries in the {@link
-     * java.util.jar.JarFile JAR file} will be searched as well.
+     * j86.j86.java.util.jar.JarFile JAR file} will be searched as well.
      *
      * <p> This method may be used multiple times to add multiple JAR files to be
      * searched in the order that this method was invoked.
@@ -456,8 +456,8 @@ public interface Instrumentation {
      *          If <code>jarfile</code> is <code>null</code>.
      *
      * @see     #appendToSystemClassLoaderSearch
-     * @see     java.lang.ClassLoader
-     * @see     java.util.jar.JarFile
+     * @see     j86.java.lang.ClassLoader
+     * @see     j86.j86.java.util.jar.JarFile
      *
      * @since 1.6
      */
@@ -469,9 +469,9 @@ public interface Instrumentation {
      * system class loader.
      *
      * When the system class loader for delegation (see
-     * {@link java.lang.ClassLoader#getSystemClassLoader getSystemClassLoader()})
+     * {@link j86.java.lang.ClassLoader#getSystemClassLoader getSystemClassLoader()})
      * unsuccessfully searches for a class, the entries in the {@link
-     * java.util.jar.JarFile JarFile} will be searched as well.
+     * j86.j86.java.util.jar.JarFile JarFile} will be searched as well.
      *
      * <p> This method may be used multiple times to add multiple JAR files to be
      * searched in the order that this method was invoked.
@@ -486,9 +486,9 @@ public interface Instrumentation {
      *
      * <p> The system class loader supports adding a JAR file to be searched if
      * it implements a method named <code>appendToClassPathForInstrumentation</code>
-     * which takes a single parameter of type <code>java.lang.String</code>. The
+     * which takes a single parameter of type <code>j86.java.lang.String</code>. The
      * method is not required to have <code>public</code> access. The name of
-     * the JAR file is obtained by invoking the {@link java.util.zip.ZipFile#getName
+     * the JAR file is obtained by invoking the {@link j86.j86.java.util.zip.ZipFile#getName
      * getName()} method on the <code>jarfile</code> and this is provided as the
      * parameter to the <code>appendToClassPathForInstrumentation</code> method.
      *
@@ -503,7 +503,7 @@ public interface Instrumentation {
      * resolve that reference will fail with the same error as the initial attempt.
      *
      * <p> This method does not change the value of <code>java.class.path</code>
-     * {@link java.lang.System#getProperties system property}.
+     * {@link j86.java.lang.System#getProperties system property}.
      *
      * @param   jarfile
      *          The JAR file to be searched when the system class loader
@@ -517,8 +517,8 @@ public interface Instrumentation {
      *          If <code>jarfile</code> is <code>null</code>.
      *
      * @see     #appendToBootstrapClassLoaderSearch
-     * @see     java.lang.ClassLoader#getSystemClassLoader
-     * @see     java.util.jar.JarFile
+     * @see     j86.java.lang.ClassLoader#getSystemClassLoader
+     * @see     j86.j86.java.util.jar.JarFile
      * @since 1.6
      */
     void
@@ -533,7 +533,7 @@ public interface Instrumentation {
      * Setting a native method prefix will only be supported if the
      * <code>Can-Set-Native-Method-Prefix</code> manifest attribute is set to
      * <code>true</code> in the agent JAR file (as described in the
-     * {@linkplain java.lang.instrument package specification}) and the JVM supports
+     * {@linkplain j86.j86.java.lang.instrument package specification}) and the JVM supports
      * this capability.
      * During a single instantiation of a single JVM, multiple
      * calls to this method will always return the same answer.
@@ -550,7 +550,7 @@ public interface Instrumentation {
      * native method resolution by allowing retry
      * with a prefix applied to the name.
      * When used with the
-     * {@link java.lang.instrument.ClassFileTransformer ClassFileTransformer},
+     * {@link j86.j86.java.lang.instrument.ClassFileTransformer ClassFileTransformer},
      * it enables native methods to be
      * instrumented.
      * <p>
@@ -651,11 +651,11 @@ public interface Instrumentation {
      *          is either <code>null</code> or the empty string, then
      *          failed native method resolutions are not retried for
      *          this transformer.
-     * @throws java.lang.NullPointerException if passed a <code>null</code> transformer.
-     * @throws java.lang.UnsupportedOperationException if the current configuration of
+     * @throws j86.java.lang.NullPointerException if passed a <code>null</code> transformer.
+     * @throws j86.java.lang.UnsupportedOperationException if the current configuration of
      *           the JVM does not allow setting a native method prefix
      *           ({@link #isNativeMethodPrefixSupported} is false).
-     * @throws java.lang.IllegalArgumentException if the transformer is not registered
+     * @throws j86.java.lang.IllegalArgumentException if the transformer is not registered
      *           (see {@link #addTransformer(ClassFileTransformer,boolean) addTransformer}).
      *
      * @since 1.6

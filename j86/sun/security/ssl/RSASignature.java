@@ -24,9 +24,9 @@
  */
 
 
-package sun.security.ssl;
+package j86.sun.security.ssl;
 
-import java.security.*;
+import j86.java.security.*;
 
 /**
  * Signature implementation for the SSL/TLS RSA Signature variant with both

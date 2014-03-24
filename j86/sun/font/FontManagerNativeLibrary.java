@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.font;
+package j86.sun.font;
 
-import sun.java2d.SunGraphicsEnvironment;
+import j86.sun.java2d.SunGraphicsEnvironment;
 
 public class FontManagerNativeLibrary {
     static {
-        java.security.AccessController.doPrivileged(
-                                    new java.security.PrivilegedAction() {
+        j86.java.security.AccessController.doPrivileged(
+                                    new j86.java.security.PrivilegedAction() {
             public Object run() {
                /* REMIND do we really have to load awt here? */
                System.loadLibrary("awt");

@@ -23,12 +23,12 @@
  * questions.
  */
 
-package javax.print;
+package j86.javax.print;
 
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.Serializable;
+import j86.java.io.IOException;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.Serializable;
 
 
 /**
@@ -46,14 +46,14 @@ import java.io.Serializable;
  * canonical name if no preferred name is specified. Additionally a few
  * historical names supported by earlier versions of the Java platform may
  * be recognized.
- * See <a href="../../java/lang/package-summary.html#charenc">
+ * See <a href="../../j86.java.lang/package-summary.html#charenc">
  * character encodings</a> for more information on the character encodings
  * supported on the Java platform.
  * <P>
  * <LI>
  * <B>Representation class name.</B> This specifies the fully-qualified name of
  * the class of the object from which the actual print data comes, as returned
- * by the {@link java.lang.Class#getName() Class.getName()} method.
+ * by the {@link j86.java.lang.Class#getName() Class.getName()} method.
  * (Thus the class name for <CODE>byte[]</CODE> is <CODE>"[B"</CODE>, for
  * <CODE>char[]</CODE> it is <CODE>"[C"</CODE>.)
  * </UL>
@@ -102,7 +102,7 @@ import java.io.Serializable;
  * The print data consists of the Unicode characters in the string.
  * <P>
  * <LI>
- * Character stream ({@link java.io.Reader java.io.Reader})
+ * Character stream ({@link j86.java.io.Reader java.io.Reader})
  * -- The print data consists of the Unicode characters read from the stream
  * up to the end-of-stream.
  * <P>
@@ -113,14 +113,14 @@ import java.io.Serializable;
  * default character set is US-ASCII.
  * <P>
  * <LI>
- * Byte stream ({@link java.io.InputStream java.io.InputStream}) --
+ * Byte stream ({@link j86.java.io.InputStream java.io.InputStream}) --
  * The print data consists of the bytes read from the stream up to the
  * end-of-stream. The bytes are encoded in the character set specified by the
  * doc flavor's MIME type. If the MIME type does not specify a character set,
  * the default character set is US-ASCII.
 
  * <LI>
- * Uniform Resource Locator ({@link java.net.URL URL})
+ * Uniform Resource Locator ({@link j86.java.net.URL URL})
  * -- The print data consists of the bytes read from the URL location.
  * The bytes are encoded in the character set specified by the doc flavor's
  * MIME type. If the MIME type does not specify a character set, the default
@@ -180,7 +180,7 @@ import java.io.Serializable;
  * For common flavors, the pre-defined *HOST DocFlavors may be used.
  * <p>
  * <p>
- * See <a href="../../java/lang/package-summary.html#charenc">
+ * See <a href="../../j86.java.lang/package-summary.html#charenc">
  * character encodings</a> for more information on the character encodings
  * supported on the Java platform.
  * <p>
@@ -312,13 +312,13 @@ import java.io.Serializable;
  * <LI>
  * Renderable image object -- The client supplies an object that implements
  * interface
- * {@link java.awt.image.renderable.RenderableImage RenderableImage}. The
+ * {@link j86.j86.j86.j86.java.awt.image.renderable.RenderableImage RenderableImage}. The
  * printer calls methods
  * in that interface to obtain the image to be printed.
  * <P>
  * <LI>
  * Printable object -- The client supplies an object that implements interface
- * {@link java.awt.print.Printable Printable}.
+ * {@link j86.j86.java.awt.print.Printable Printable}.
  * The printer calls methods in that interface to obtain the pages to be
  * printed, one by one.
  * For each page, the printer supplies a graphics context, and whatever the
@@ -326,7 +326,7 @@ import java.io.Serializable;
  * <P>
  * <LI>
  * Pageable object -- The client supplies an object that implements interface
- * {@link java.awt.print.Pageable Pageable}. The printer calls
+ * {@link j86.j86.java.awt.print.Pageable Pageable}. The printer calls
  * methods in that interface to obtain the pages to be printed, one by one.
  * For each page, the printer supplies a graphics context, and whatever
  * the client draws in that graphics context gets printed.
@@ -349,17 +349,17 @@ import java.io.Serializable;
  * Plain text print data provided through a byte stream. Specifically, the
  * following doc flavors are recommended to be supported:
  * <BR>&#183;&nbsp;&nbsp;
- * <CODE>("text/plain", "java.io.InputStream")</CODE>
+ * <CODE>("text/plain", "j86.java.io.InputStream")</CODE>
  * <BR>&#183;&nbsp;&nbsp;
- * <CODE>("text/plain; charset=us-ascii", "java.io.InputStream")</CODE>
+ * <CODE>("text/plain; charset=us-ascii", "j86.java.io.InputStream")</CODE>
  * <BR>&#183;&nbsp;&nbsp;
- * <CODE>("text/plain; charset=utf-8", "java.io.InputStream")</CODE>
+ * <CODE>("text/plain; charset=utf-8", "j86.java.io.InputStream")</CODE>
  * <P>
  * <LI>
  * Renderable image objects. Specifically, the following doc flavor is
  * recommended to be supported:
  * <BR>&#183;&nbsp;&nbsp;
- * <CODE>("application/x-java-jvm-local-objectref", "java.awt.image.renderable.RenderableImage")</CODE>
+ * <CODE>("application/x-java-jvm-local-objectref", "j86.j86.j86.j86.java.awt.image.renderable.RenderableImage")</CODE>
  * </UL>
  * <P>
  * A Java Print Service instance is allowed to support any other doc flavors
@@ -392,8 +392,8 @@ import java.io.Serializable;
  * <P>
  * <H3>Design Rationale</H3>
  * <P>
- * Class DocFlavor in package javax.print.data is similar to class
- * {@link java.awt.datatransfer.DataFlavor DataFlavor}. Class
+ * Class DocFlavor in package j86.javax.print.data is similar to class
+ * {@link j86.j86.java.awt.datatransfer.DataFlavor DataFlavor}. Class
  * <code>DataFlavor</code>
  * is not used in the Java Print Service (JPS) API
  * for three reasons which are all rooted in allowing the JPS API to be
@@ -405,13 +405,13 @@ import java.io.Serializable;
  * AWT.
  * <P>
  * <LI>
- * The implementation of class <code>java.awt.datatransfer.DataFlavor</code>
+ * The implementation of class <code>j86.j86.java.awt.datatransfer.DataFlavor</code>
  * does not guarantee that equivalent data flavors will have the same
  * serialized representation. DocFlavor does, and can be used in services
  * which need this.
  * <P>
  * <LI>
- * The implementation of class <code>java.awt.datatransfer.DataFlavor</code>
+ * The implementation of class <code>j86.j86.java.awt.datatransfer.DataFlavor</code>
  * includes a human presentable name as part of the serialized representation.
  * This is not appropriate as part of a service matching constraint.
  * </OL>
@@ -463,8 +463,8 @@ public class DocFlavor implements Serializable, Cloneable {
 
     static {
         hostEncoding =
-            (String)java.security.AccessController.doPrivileged(
-                  new sun.security.action.GetPropertyAction("file.encoding"));
+            (String)j86.java.security.AccessController.doPrivileged(
+                  new j86.sun.security.action.GetPropertyAction("file.encoding"));
     }
 
     /**
@@ -838,7 +838,7 @@ public class DocFlavor implements Serializable, Cloneable {
     /**
      * Class DocFlavor.INPUT_STREAM provides predefined static constant
      * DocFlavor objects for example doc flavors using a byte stream ({@link
-     * java.io.InputStream java.io.InputStream}) as the print
+     * j86.java.io.InputStream java.io.InputStream}) as the print
      * data representation class.
      * <P>
      *
@@ -851,7 +851,7 @@ public class DocFlavor implements Serializable, Cloneable {
         /**
          * Constructs a new doc flavor with the given MIME type and a print
          * data representation class name of
-         * <CODE>"java.io.InputStream"</CODE> (byte stream).
+         * <CODE>"j86.java.io.InputStream"</CODE> (byte stream).
          *
          * @param  mimeType   MIME media type string.
          *
@@ -862,7 +862,7 @@ public class DocFlavor implements Serializable, Cloneable {
          *     obey the syntax for a MIME media type string.
          */
         public INPUT_STREAM (String mimeType) {
-            super (mimeType, "java.io.InputStream");
+            super (mimeType, "j86.java.io.InputStream");
         }
 
         /**
@@ -870,7 +870,7 @@ public class DocFlavor implements Serializable, Cloneable {
          * encoded in the host platform encoding.
          * See {@link DocFlavor#hostEncoding hostEncoding}
          * Print data representation class name =
-         * <CODE>"java.io.InputStream"</CODE> (byte stream).
+         * <CODE>"j86.java.io.InputStream"</CODE> (byte stream).
          */
         public static final INPUT_STREAM TEXT_PLAIN_HOST =
             new INPUT_STREAM ("text/plain; charset="+hostEncoding);
@@ -879,7 +879,7 @@ public class DocFlavor implements Serializable, Cloneable {
          * Doc flavor with MIME type =
          * <CODE>"text/plain; charset=utf-8"</CODE>,
          * print data representation class name =
-         * <CODE>"java.io.InputStream"</CODE> (byte stream).
+         * <CODE>"j86.java.io.InputStream"</CODE> (byte stream).
          */
         public static final INPUT_STREAM TEXT_PLAIN_UTF_8 =
             new INPUT_STREAM ("text/plain; charset=utf-8");
@@ -888,7 +888,7 @@ public class DocFlavor implements Serializable, Cloneable {
          * Doc flavor with MIME type =
          * <CODE>"text/plain; charset=utf-16"</CODE>,
          * print data representation class name =
-         * <CODE>"java.io.InputStream"</CODE> (byte stream).
+         * <CODE>"j86.java.io.InputStream"</CODE> (byte stream).
          */
         public static final INPUT_STREAM TEXT_PLAIN_UTF_16 =
             new INPUT_STREAM ("text/plain; charset=utf-16");
@@ -898,7 +898,7 @@ public class DocFlavor implements Serializable, Cloneable {
          * <CODE>"text/plain; charset=utf-16be"</CODE>
          * (big-endian byte ordering),
          * print data representation class name =
-         * <CODE>"java.io.InputStream"</CODE> (byte stream).
+         * <CODE>"j86.java.io.InputStream"</CODE> (byte stream).
          */
         public static final INPUT_STREAM TEXT_PLAIN_UTF_16BE =
             new INPUT_STREAM ("text/plain; charset=utf-16be");
@@ -908,7 +908,7 @@ public class DocFlavor implements Serializable, Cloneable {
          * <CODE>"text/plain; charset=utf-16le"</CODE>
          * (little-endian byte ordering),
          * print data representation class name =
-         * <CODE>"java.io.InputStream"</CODE> (byte stream).
+         * <CODE>"j86.java.io.InputStream"</CODE> (byte stream).
          */
         public static final INPUT_STREAM TEXT_PLAIN_UTF_16LE =
             new INPUT_STREAM ("text/plain; charset=utf-16le");
@@ -917,7 +917,7 @@ public class DocFlavor implements Serializable, Cloneable {
          * Doc flavor with MIME type =
          * <CODE>"text/plain; charset=us-ascii"</CODE>,
          * print data representation class name =
-         * <CODE>"java.io.InputStream"</CODE> (byte stream).
+         * <CODE>"j86.java.io.InputStream"</CODE> (byte stream).
          */
         public static final INPUT_STREAM TEXT_PLAIN_US_ASCII =
                 new INPUT_STREAM ("text/plain; charset=us-ascii");
@@ -927,7 +927,7 @@ public class DocFlavor implements Serializable, Cloneable {
          * encoded in the host platform encoding.
          * See {@link DocFlavor#hostEncoding hostEncoding}
          * Print data representation class name =
-         * <CODE>"java.io.InputStream"</CODE> (byte stream).
+         * <CODE>"j86.java.io.InputStream"</CODE> (byte stream).
          */
         public static final INPUT_STREAM TEXT_HTML_HOST =
             new INPUT_STREAM ("text/html; charset="+hostEncoding);
@@ -936,7 +936,7 @@ public class DocFlavor implements Serializable, Cloneable {
          * Doc flavor with MIME type =
          * <CODE>"text/html; charset=utf-8"</CODE>,
          * print data representation class name =
-         * <CODE>"java.io.InputStream"</CODE> (byte stream).
+         * <CODE>"j86.java.io.InputStream"</CODE> (byte stream).
          */
         public static final INPUT_STREAM TEXT_HTML_UTF_8 =
             new INPUT_STREAM ("text/html; charset=utf-8");
@@ -945,7 +945,7 @@ public class DocFlavor implements Serializable, Cloneable {
          * Doc flavor with MIME type =
          * <CODE>"text/html; charset=utf-16"</CODE>,
          * print data representation class name =
-         * <CODE>"java.io.InputStream"</CODE> (byte stream).
+         * <CODE>"j86.java.io.InputStream"</CODE> (byte stream).
          */
         public static final INPUT_STREAM TEXT_HTML_UTF_16 =
             new INPUT_STREAM ("text/html; charset=utf-16");
@@ -955,7 +955,7 @@ public class DocFlavor implements Serializable, Cloneable {
          * <CODE>"text/html; charset=utf-16be"</CODE>
          * (big-endian byte ordering),
          * print data representation class name =
-         * <CODE>"java.io.InputStream"</CODE> (byte stream).
+         * <CODE>"j86.java.io.InputStream"</CODE> (byte stream).
          */
         public static final INPUT_STREAM TEXT_HTML_UTF_16BE =
             new INPUT_STREAM ("text/html; charset=utf-16be");
@@ -965,7 +965,7 @@ public class DocFlavor implements Serializable, Cloneable {
          * <CODE>"text/html; charset=utf-16le"</CODE>
          * (little-endian byte ordering),
          * print data representation class name =
-         * <CODE>"java.io.InputStream"</CODE> (byte stream).
+         * <CODE>"j86.java.io.InputStream"</CODE> (byte stream).
          */
         public static final INPUT_STREAM TEXT_HTML_UTF_16LE =
             new INPUT_STREAM ("text/html; charset=utf-16le");
@@ -974,7 +974,7 @@ public class DocFlavor implements Serializable, Cloneable {
          * Doc flavor with MIME type =
          * <CODE>"text/html; charset=us-ascii"</CODE>,
          * print data representation class name =
-         * <CODE>"java.io.InputStream"</CODE> (byte stream).
+         * <CODE>"j86.java.io.InputStream"</CODE> (byte stream).
          */
         public static final INPUT_STREAM TEXT_HTML_US_ASCII =
             new INPUT_STREAM ("text/html; charset=us-ascii");
@@ -982,7 +982,7 @@ public class DocFlavor implements Serializable, Cloneable {
 
         /**
          * Doc flavor with MIME type = <CODE>"application/pdf"</CODE>, print
-         * data representation class name = <CODE>"java.io.InputStream"</CODE>
+         * data representation class name = <CODE>"j86.java.io.InputStream"</CODE>
          * (byte stream).
          */
         public static final INPUT_STREAM PDF = new INPUT_STREAM ("application/pdf");
@@ -990,7 +990,7 @@ public class DocFlavor implements Serializable, Cloneable {
         /**
          * Doc flavor with MIME type = <CODE>"application/postscript"</CODE>,
          * print data representation class name =
-         * <CODE>"java.io.InputStream"</CODE> (byte stream).
+         * <CODE>"j86.java.io.InputStream"</CODE> (byte stream).
          */
         public static final INPUT_STREAM POSTSCRIPT =
             new INPUT_STREAM ("application/postscript");
@@ -998,7 +998,7 @@ public class DocFlavor implements Serializable, Cloneable {
         /**
          * Doc flavor with MIME type = <CODE>"application/vnd.hp-PCL"</CODE>,
          * print data representation class name =
-         * <CODE>"java.io.InputStream"</CODE> (byte stream).
+         * <CODE>"j86.java.io.InputStream"</CODE> (byte stream).
          */
         public static final INPUT_STREAM PCL =
             new INPUT_STREAM ("application/vnd.hp-PCL");
@@ -1006,21 +1006,21 @@ public class DocFlavor implements Serializable, Cloneable {
         /**
          * Doc flavor with MIME type = <CODE>"image/gif"</CODE>, print data
          * representation class name =
-         * <CODE>"java.io.InputStream"</CODE> (byte stream).
+         * <CODE>"j86.java.io.InputStream"</CODE> (byte stream).
          */
         public static final INPUT_STREAM GIF = new INPUT_STREAM ("image/gif");
 
         /**
          * Doc flavor with MIME type = <CODE>"image/jpeg"</CODE>, print data
          * representation class name =
-         * <CODE>"java.io.InputStream"</CODE> (byte stream).
+         * <CODE>"j86.java.io.InputStream"</CODE> (byte stream).
          */
         public static final INPUT_STREAM JPEG = new INPUT_STREAM ("image/jpeg");
 
         /**
          * Doc flavor with MIME type = <CODE>"image/png"</CODE>, print data
          * representation class name =
-         * <CODE>"java.io.InputStream"</CODE> (byte stream).
+         * <CODE>"j86.java.io.InputStream"</CODE> (byte stream).
          */
         public static final INPUT_STREAM PNG = new INPUT_STREAM ("image/png");
 
@@ -1028,7 +1028,7 @@ public class DocFlavor implements Serializable, Cloneable {
          * Doc flavor with MIME type =
          * <CODE>"application/octet-stream"</CODE>,
          * print data representation class name =
-         * <CODE>"java.io.InputStream"</CODE> (byte stream).
+         * <CODE>"j86.java.io.InputStream"</CODE> (byte stream).
          * The client must determine that data described
          * using this DocFlavor is valid for the printer.
          */
@@ -1041,7 +1041,7 @@ public class DocFlavor implements Serializable, Cloneable {
      * Class DocFlavor.URL provides predefined static constant DocFlavor
      * objects.
      * For example doc flavors using a Uniform Resource Locator ({@link
-     * java.net.URL java.net.URL}) as the print data
+     * j86.java.net.URL java.net.URL}) as the print data
      * representation  class.
      * <P>
      *
@@ -1051,7 +1051,7 @@ public class DocFlavor implements Serializable, Cloneable {
 
         /**
          * Constructs a new doc flavor with the given MIME type and a print
-         * data representation class name of <CODE>"java.net.URL"</CODE>.
+         * data representation class name of <CODE>"j86.java.net.URL"</CODE>.
          *
          * @param  mimeType   MIME media type string.
          *
@@ -1062,7 +1062,7 @@ public class DocFlavor implements Serializable, Cloneable {
          *     obey the syntax for a MIME media type string.
          */
         public URL (String mimeType) {
-            super (mimeType, "java.net.URL");
+            super (mimeType, "j86.java.net.URL");
         }
 
         /**
@@ -1070,7 +1070,7 @@ public class DocFlavor implements Serializable, Cloneable {
          * encoded in the host platform encoding.
          * See {@link DocFlavor#hostEncoding hostEncoding}
          * Print data representation class name =
-         * <CODE>"java.net.URL"</CODE> (byte stream).
+         * <CODE>"j86.java.net.URL"</CODE> (byte stream).
          */
         public static final URL TEXT_PLAIN_HOST =
             new URL ("text/plain; charset="+hostEncoding);
@@ -1079,7 +1079,7 @@ public class DocFlavor implements Serializable, Cloneable {
          * Doc flavor with MIME type =
          * <CODE>"text/plain; charset=utf-8"</CODE>,
          * print data representation class name =
-         * <CODE>"java.net.URL"</CODE> (byte stream).
+         * <CODE>"j86.java.net.URL"</CODE> (byte stream).
          */
         public static final URL TEXT_PLAIN_UTF_8 =
             new URL ("text/plain; charset=utf-8");
@@ -1088,7 +1088,7 @@ public class DocFlavor implements Serializable, Cloneable {
          * Doc flavor with MIME type =
          * <CODE>"text/plain; charset=utf-16"</CODE>,
          * print data representation class name =
-         * <CODE>java.net.URL""</CODE> (byte stream).
+         * <CODE>j86.java.net.URL""</CODE> (byte stream).
          */
         public static final URL TEXT_PLAIN_UTF_16 =
             new URL ("text/plain; charset=utf-16");
@@ -1098,7 +1098,7 @@ public class DocFlavor implements Serializable, Cloneable {
          * <CODE>"text/plain; charset=utf-16be"</CODE>
          * (big-endian byte ordering),
          * print data representation class name =
-         * <CODE>"java.net.URL"</CODE> (byte stream).
+         * <CODE>"j86.java.net.URL"</CODE> (byte stream).
          */
         public static final URL TEXT_PLAIN_UTF_16BE =
             new URL ("text/plain; charset=utf-16be");
@@ -1108,7 +1108,7 @@ public class DocFlavor implements Serializable, Cloneable {
          * <CODE>"text/plain; charset=utf-16le"</CODE>
          * (little-endian byte ordering),
          * print data representation class name =
-         * <CODE>"java.net.URL"</CODE> (byte stream).
+         * <CODE>"j86.java.net.URL"</CODE> (byte stream).
          */
         public static final URL TEXT_PLAIN_UTF_16LE =
             new URL ("text/plain; charset=utf-16le");
@@ -1117,7 +1117,7 @@ public class DocFlavor implements Serializable, Cloneable {
          * Doc flavor with MIME type =
          * <CODE>"text/plain; charset=us-ascii"</CODE>,
          * print data representation class name =
-         * <CODE>"java.net.URL"</CODE> (byte stream).
+         * <CODE>"j86.java.net.URL"</CODE> (byte stream).
          */
         public static final URL TEXT_PLAIN_US_ASCII =
             new URL ("text/plain; charset=us-ascii");
@@ -1127,7 +1127,7 @@ public class DocFlavor implements Serializable, Cloneable {
          * encoded in the host platform encoding.
          * See {@link DocFlavor#hostEncoding hostEncoding}
          * Print data representation class name =
-         * <CODE>"java.net.URL"</CODE> (byte stream).
+         * <CODE>"j86.java.net.URL"</CODE> (byte stream).
          */
         public static final URL TEXT_HTML_HOST =
             new URL ("text/html; charset="+hostEncoding);
@@ -1136,7 +1136,7 @@ public class DocFlavor implements Serializable, Cloneable {
          * Doc flavor with MIME type =
          * <CODE>"text/html; charset=utf-8"</CODE>,
          * print data representation class name =
-         * <CODE>"java.net.URL"</CODE> (byte stream).
+         * <CODE>"j86.java.net.URL"</CODE> (byte stream).
          */
         public static final URL TEXT_HTML_UTF_8 =
             new URL ("text/html; charset=utf-8");
@@ -1145,7 +1145,7 @@ public class DocFlavor implements Serializable, Cloneable {
          * Doc flavor with MIME type =
          * <CODE>"text/html; charset=utf-16"</CODE>,
          * print data representation class name =
-         * <CODE>"java.net.URL"</CODE> (byte stream).
+         * <CODE>"j86.java.net.URL"</CODE> (byte stream).
          */
         public static final URL TEXT_HTML_UTF_16 =
             new URL ("text/html; charset=utf-16");
@@ -1155,7 +1155,7 @@ public class DocFlavor implements Serializable, Cloneable {
          * <CODE>"text/html; charset=utf-16be"</CODE>
          * (big-endian byte ordering),
          * print data representation class name =
-         * <CODE>"java.net.URL"</CODE> (byte stream).
+         * <CODE>"j86.java.net.URL"</CODE> (byte stream).
          */
         public static final URL TEXT_HTML_UTF_16BE =
             new URL ("text/html; charset=utf-16be");
@@ -1165,7 +1165,7 @@ public class DocFlavor implements Serializable, Cloneable {
          * <CODE>"text/html; charset=utf-16le"</CODE>
          * (little-endian byte ordering),
          * print data representation class name =
-         * <CODE>"java.net.URL"</CODE> (byte stream).
+         * <CODE>"j86.java.net.URL"</CODE> (byte stream).
          */
         public static final URL TEXT_HTML_UTF_16LE =
             new URL ("text/html; charset=utf-16le");
@@ -1174,7 +1174,7 @@ public class DocFlavor implements Serializable, Cloneable {
          * Doc flavor with MIME type =
          * <CODE>"text/html; charset=us-ascii"</CODE>,
          * print data representation class name =
-         * <CODE>"java.net.URL"</CODE> (byte stream).
+         * <CODE>"j86.java.net.URL"</CODE> (byte stream).
          */
         public static final URL TEXT_HTML_US_ASCII =
             new URL ("text/html; charset=us-ascii");
@@ -1182,44 +1182,44 @@ public class DocFlavor implements Serializable, Cloneable {
 
         /**
          * Doc flavor with MIME type = <CODE>"application/pdf"</CODE>, print
-         * data representation class name = <CODE>"java.net.URL"</CODE>.
+         * data representation class name = <CODE>"j86.java.net.URL"</CODE>.
          */
         public static final URL PDF = new URL ("application/pdf");
 
         /**
          * Doc flavor with MIME type = <CODE>"application/postscript"</CODE>,
-         * print data representation class name = <CODE>"java.net.URL"</CODE>.
+         * print data representation class name = <CODE>"j86.java.net.URL"</CODE>.
          */
         public static final URL POSTSCRIPT = new URL ("application/postscript");
 
         /**
          * Doc flavor with MIME type = <CODE>"application/vnd.hp-PCL"</CODE>,
-         * print data representation class name = <CODE>"java.net.URL"</CODE>.
+         * print data representation class name = <CODE>"j86.java.net.URL"</CODE>.
          */
         public static final URL PCL = new URL ("application/vnd.hp-PCL");
 
         /**
          * Doc flavor with MIME type = <CODE>"image/gif"</CODE>, print data
-         * representation class name = <CODE>"java.net.URL"</CODE>.
+         * representation class name = <CODE>"j86.java.net.URL"</CODE>.
          */
         public static final URL GIF = new URL ("image/gif");
 
         /**
          * Doc flavor with MIME type = <CODE>"image/jpeg"</CODE>, print data
-         * representation class name = <CODE>"java.net.URL"</CODE>.
+         * representation class name = <CODE>"j86.java.net.URL"</CODE>.
          */
         public static final URL JPEG = new URL ("image/jpeg");
 
         /**
          * Doc flavor with MIME type = <CODE>"image/png"</CODE>, print data
-         * representation class name = <CODE>"java.net.URL"</CODE>.
+         * representation class name = <CODE>"j86.java.net.URL"</CODE>.
          */
         public static final URL PNG = new URL ("image/png");
 
         /**
          * Doc flavor with MIME type =
          * <CODE>"application/octet-stream"</CODE>,
-         * print data representation class name = <CODE>"java.net.URL"</CODE>.
+         * print data representation class name = <CODE>"j86.java.net.URL"</CODE>.
          *  The client must determine that data described
          * using this DocFlavor is valid for the printer.
          */
@@ -1279,8 +1279,8 @@ public class DocFlavor implements Serializable, Cloneable {
 
     /**
      * Class DocFlavor.STRING provides predefined static constant DocFlavor
-     * objects for example doc flavors using a string ({@link java.lang.String
-     * java.lang.String}) as the print data representation class.
+     * objects for example doc flavors using a string ({@link j86.java.lang.String
+     * j86.java.lang.String}) as the print data representation class.
      * As such, the character set is Unicode.
      * <P>
      *
@@ -1292,7 +1292,7 @@ public class DocFlavor implements Serializable, Cloneable {
 
         /**
          * Constructs a new doc flavor with the given MIME type and a print
-         * data representation class name of <CODE>"java.lang.String"</CODE>.
+         * data representation class name of <CODE>"j86.java.lang.String"</CODE>.
          *
          * @param  mimeType  MIME media type string. If it is a text media
          *                      type, it is assumed to contain a
@@ -1305,13 +1305,13 @@ public class DocFlavor implements Serializable, Cloneable {
          *     obey the syntax for a MIME media type string.
          */
         public STRING (String mimeType) {
-            super (mimeType, "java.lang.String");
+            super (mimeType, "j86.java.lang.String");
         }
 
         /**
          * Doc flavor with MIME type = <CODE>"text/plain;
          * charset=utf-16"</CODE>, print data representation class name =
-         * <CODE>"java.lang.String"</CODE>.
+         * <CODE>"j86.java.lang.String"</CODE>.
          */
         public static final STRING TEXT_PLAIN =
             new STRING ("text/plain; charset=utf-16");
@@ -1319,7 +1319,7 @@ public class DocFlavor implements Serializable, Cloneable {
         /**
          * Doc flavor with MIME type = <CODE>"text/html;
          * charset=utf-16"</CODE>, print data representation class name =
-         * <CODE>"java.lang.String"</CODE>.
+         * <CODE>"j86.java.lang.String"</CODE>.
          */
         public static final STRING TEXT_HTML =
             new STRING ("text/html; charset=utf-16");
@@ -1328,7 +1328,7 @@ public class DocFlavor implements Serializable, Cloneable {
     /**
      * Class DocFlavor.READER provides predefined static constant DocFlavor
      * objects for example doc flavors using a character stream ({@link
-     * java.io.Reader java.io.Reader}) as the print data
+     * j86.java.io.Reader java.io.Reader}) as the print data
      * representation class. As such, the character set is Unicode.
      * <P>
      *
@@ -1341,7 +1341,7 @@ public class DocFlavor implements Serializable, Cloneable {
         /**
          * Constructs a new doc flavor with the given MIME type and a print
          * data representation class name of\
-         * <CODE>"java.io.Reader"</CODE> (character stream).
+         * <CODE>"j86.java.io.Reader"</CODE> (character stream).
          *
          * @param  mimeType  MIME media type string. If it is a text media
          *                      type, it is assumed to contain a
@@ -1354,13 +1354,13 @@ public class DocFlavor implements Serializable, Cloneable {
          *     obey the syntax for a MIME media type string.
          */
         public READER (String mimeType) {
-            super (mimeType, "java.io.Reader");
+            super (mimeType, "j86.java.io.Reader");
         }
 
         /**
          * Doc flavor with MIME type = <CODE>"text/plain;
          * charset=utf-16"</CODE>, print data representation class name =
-         * <CODE>"java.io.Reader"</CODE> (character stream).
+         * <CODE>"j86.java.io.Reader"</CODE> (character stream).
          */
         public static final READER TEXT_PLAIN =
             new READER ("text/plain; charset=utf-16");
@@ -1368,7 +1368,7 @@ public class DocFlavor implements Serializable, Cloneable {
         /**
          * Doc flavor with MIME type = <CODE>"text/html;
          * charset=utf-16"</CODE>, print data representation class name =
-         * <CODE>"java.io.Reader"</CODE> (character stream).
+         * <CODE>"j86.java.io.Reader"</CODE> (character stream).
          */
         public static final READER TEXT_HTML =
             new READER ("text/html; charset=utf-16");
@@ -1406,27 +1406,27 @@ public class DocFlavor implements Serializable, Cloneable {
         /**
          * Service formatted print data doc flavor with print data
          * representation class name =
-         * <CODE>"java.awt.image.renderable.RenderableImage"</CODE>
+         * <CODE>"j86.j86.j86.j86.java.awt.image.renderable.RenderableImage"</CODE>
          * (renderable image object).
          */
         public static final SERVICE_FORMATTED RENDERABLE_IMAGE =
-            new SERVICE_FORMATTED("java.awt.image.renderable.RenderableImage");
+            new SERVICE_FORMATTED("j86.j86.j86.j86.java.awt.image.renderable.RenderableImage");
 
         /**
          * Service formatted print data doc flavor with print data
-         * representation class name = <CODE>"java.awt.print.Printable"</CODE>
+         * representation class name = <CODE>"j86.j86.java.awt.print.Printable"</CODE>
          * (printable object).
          */
         public static final SERVICE_FORMATTED PRINTABLE =
-            new SERVICE_FORMATTED ("java.awt.print.Printable");
+            new SERVICE_FORMATTED ("j86.j86.java.awt.print.Printable");
 
         /**
          * Service formatted print data doc flavor with print data
-         * representation class name = <CODE>"java.awt.print.Pageable"</CODE>
+         * representation class name = <CODE>"j86.j86.java.awt.print.Pageable"</CODE>
          * (pageable object).
          */
         public static final SERVICE_FORMATTED PAGEABLE =
-            new SERVICE_FORMATTED ("java.awt.print.Pageable");
+            new SERVICE_FORMATTED ("j86.j86.java.awt.print.Pageable");
 
         }
 

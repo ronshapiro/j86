@@ -23,34 +23,34 @@
  * questions.
  */
 
-package com.sun.imageio.plugins.wbmp;
+package j86.com.sun.imageio.plugins.wbmp;
 
-import java.awt.Point;
-import java.awt.Rectangle;
-import java.awt.image.ColorModel;
-import java.awt.image.DataBuffer;
-import java.awt.image.DataBufferByte;
-import java.awt.image.IndexColorModel;
-import java.awt.image.MultiPixelPackedSampleModel;
-import java.awt.image.Raster;
-import java.awt.image.RenderedImage;
-import java.awt.image.SampleModel;
-import java.awt.image.WritableRaster;
+import j86.java.awt.Point;
+import j86.java.awt.Rectangle;
+import j86.j86.j86.java.awt.image.ColorModel;
+import j86.j86.j86.java.awt.image.DataBuffer;
+import j86.j86.j86.java.awt.image.DataBufferByte;
+import j86.j86.j86.java.awt.image.IndexColorModel;
+import j86.j86.j86.java.awt.image.MultiPixelPackedSampleModel;
+import j86.j86.j86.java.awt.image.Raster;
+import j86.j86.j86.java.awt.image.RenderedImage;
+import j86.j86.j86.java.awt.image.SampleModel;
+import j86.j86.j86.java.awt.image.WritableRaster;
 
-import java.io.IOException;
+import j86.java.io.IOException;
 
-import javax.imageio.IIOImage;
-import javax.imageio.IIOException;
-import javax.imageio.ImageTypeSpecifier;
-import javax.imageio.ImageWriteParam;
-import javax.imageio.ImageWriter;
-import javax.imageio.metadata.IIOMetadata;
-import javax.imageio.metadata.IIOMetadataFormatImpl;
-import javax.imageio.metadata.IIOInvalidTreeException;
-import javax.imageio.spi.ImageWriterSpi;
-import javax.imageio.stream.ImageOutputStream;
+import j86.javax.imageio.IIOImage;
+import j86.javax.imageio.IIOException;
+import j86.javax.imageio.ImageTypeSpecifier;
+import j86.javax.imageio.ImageWriteParam;
+import j86.javax.imageio.ImageWriter;
+import j86.j86.javax.imageio.metadata.IIOMetadata;
+import j86.j86.javax.imageio.metadata.IIOMetadataFormatImpl;
+import j86.j86.javax.imageio.metadata.IIOInvalidTreeException;
+import j86.j86.javax.imageio.spi.ImageWriterSpi;
+import j86.j86.javax.imageio.stream.ImageOutputStream;
 
-import com.sun.imageio.plugins.common.I18N;
+import j86.com.sun.imageio.plugins.common.I18N;
 
 /**
  * The Java Image IO plugin writer for encoding a binary RenderedImage into

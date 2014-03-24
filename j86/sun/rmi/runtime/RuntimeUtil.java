@@ -23,24 +23,24 @@
  * questions.
  */
 
-package sun.rmi.runtime;
+package j86.sun.rmi.runtime;
 
-import java.security.AccessController;
-import java.security.Permission;
-import java.security.PrivilegedAction;
-import java.util.concurrent.ScheduledThreadPoolExecutor;
-import java.util.concurrent.ThreadFactory;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.atomic.AtomicInteger;
-import java.util.logging.Level;
-import sun.security.action.GetIntegerAction;
+import j86.java.security.AccessController;
+import j86.java.security.Permission;
+import j86.java.security.PrivilegedAction;
+import j86.j86.java.util.concurrent.ScheduledThreadPoolExecutor;
+import j86.j86.java.util.concurrent.ThreadFactory;
+import j86.j86.java.util.concurrent.TimeUnit;
+import j86.j86.j86.java.util.concurrent.atomic.AtomicInteger;
+import j86.j86.java.util.logging.Level;
+import j86.sun.security.action.GetIntegerAction;
 
 /**
  * RMI runtime implementation utilities.
  *
  * There is a single instance of this class, which can be obtained
  * with a GetInstanceAction.  Getting the instance requires
- * RuntimePermission("sun.rmi.runtime.RuntimeUtil.getInstance")
+ * RuntimePermission("j86.sun.rmi.runtime.RuntimeUtil.getInstance")
  * because the public methods of this class expose security-sensitive
  * capabilities.
  *
@@ -50,16 +50,16 @@ public final class RuntimeUtil {
 
     /** runtime package log */
     private static final Log runtimeLog =
-        Log.getLog("sun.rmi.runtime", null, false);
+        Log.getLog("j86.sun.rmi.runtime", null, false);
 
     /** number of scheduler threads */
     private static final int schedulerThreads =         // default 1
         AccessController.doPrivileged(
-            new GetIntegerAction("sun.rmi.runtime.schedulerThreads", 1));
+            new GetIntegerAction("j86.sun.rmi.runtime.schedulerThreads", 1));
 
     /** permission required to get instance */
     private static final Permission GET_INSTANCE_PERMISSION =
-        new RuntimePermission("sun.rmi.runtime.RuntimeUtil.getInstance");
+        new RuntimePermission("j86.sun.rmi.runtime.RuntimeUtil.getInstance");
 
     /** the singleton instance of this class */
     private static final RuntimeUtil instance = new RuntimeUtil();

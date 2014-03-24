@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.nio.fs;
+package j86.j86.sun.nio.fs;
 
-import java.nio.ByteBuffer;
-import java.nio.file.attribute.UserDefinedFileAttributeView;
-import java.io.IOException;
-import java.util.*;
+import j86.java.nio.ByteBuffer;
+import j86.j86.j86.java.nio.file.attribute.UserDefinedFileAttributeView;
+import j86.java.io.IOException;
+import j86.java.util.*;
 
 /**
  * Base implementation of UserDefinedAttributeView

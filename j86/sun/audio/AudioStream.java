@@ -23,15 +23,15 @@
  * questions.
  */
 
-package sun.audio;
+package j86.sun.audio;
 
-import java.io.InputStream;
-import java.io.FilterInputStream;
-import java.io.BufferedInputStream;
-import java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.io.FilterInputStream;
+import j86.java.io.BufferedInputStream;
+import j86.java.io.IOException;
 
-import javax.sound.sampled.*;
-import javax.sound.midi.*;
+import j86.javax.sound.sampled.*;
+import j86.javax.sound.midi.*;
 
 /**
  * Convert an InputStream to an AudioStream.

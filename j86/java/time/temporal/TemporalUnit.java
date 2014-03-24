@@ -59,15 +59,15 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package java.time.temporal;
+package j86.j86.java.time.temporal;
 
-import java.time.DateTimeException;
-import java.time.Duration;
-import java.time.LocalTime;
-import java.time.Period;
-import java.time.chrono.ChronoLocalDate;
-import java.time.chrono.ChronoLocalDateTime;
-import java.time.chrono.ChronoZonedDateTime;
+import j86.java.time.DateTimeException;
+import j86.java.time.Duration;
+import j86.java.time.LocalTime;
+import j86.java.time.Period;
+import j86.j86.java.time.chrono.ChronoLocalDate;
+import j86.j86.java.time.chrono.ChronoLocalDateTime;
+import j86.j86.java.time.chrono.ChronoZonedDateTime;
 
 /**
  * A unit of date-time, such as Days or Hours.

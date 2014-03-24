@@ -23,13 +23,13 @@
  * questions.
  */
 
-package java.nio.channels;
+package j86.j86.java.nio.channels;
 
-import java.nio.channels.spi.*;
-import java.net.SocketOption;
-import java.net.SocketAddress;
-import java.util.concurrent.Future;
-import java.io.IOException;
+import j86.j86.j86.java.nio.channels.spi.*;
+import j86.java.net.SocketOption;
+import j86.java.net.SocketAddress;
+import j86.j86.java.util.concurrent.Future;
+import j86.java.io.IOException;
 
 /**
  * An asynchronous channel for stream-oriented listening sockets.
@@ -58,11 +58,11 @@ import java.io.IOException;
  *     <th>Description</th>
  *   </tr>
  *   <tr>
- *     <td> {@link java.net.StandardSocketOptions#SO_RCVBUF SO_RCVBUF} </td>
+ *     <td> {@link j86.java.net.StandardSocketOptions#SO_RCVBUF SO_RCVBUF} </td>
  *     <td> The size of the socket receive buffer </td>
  *   </tr>
  *   <tr>
- *     <td> {@link java.net.StandardSocketOptions#SO_REUSEADDR SO_REUSEADDR} </td>
+ *     <td> {@link j86.java.net.StandardSocketOptions#SO_REUSEADDR SO_REUSEADDR} </td>
  *     <td> Re-use address </td>
  *   </tr>
  * </table>
@@ -119,9 +119,9 @@ public abstract class AsynchronousServerSocketChannel
      * Opens an asynchronous server-socket channel.
      *
      * <p> The new channel is created by invoking the {@link
-     * java.nio.channels.spi.AsynchronousChannelProvider#openAsynchronousServerSocketChannel
+     * j86.j86.j86.java.nio.channels.spi.AsynchronousChannelProvider#openAsynchronousServerSocketChannel
      * openAsynchronousServerSocketChannel} method on the {@link
-     * java.nio.channels.spi.AsynchronousChannelProvider} object that created
+     * j86.j86.j86.java.nio.channels.spi.AsynchronousChannelProvider} object that created
      * the given group. If the group parameter is <tt>null</tt> then the
      * resulting channel is created by the system-wide default provider, and
      * bound to the <em>default group</em>.
@@ -312,7 +312,7 @@ public abstract class AsynchronousServerSocketChannel
      * called with the local address and {@code -1} as its arguments to see
      * if the operation is allowed. If the operation is not allowed,
      * a {@code SocketAddress} representing the
-     * {@link java.net.InetAddress#getLoopbackAddress loopback} address and the
+     * {@link j86.java.net.InetAddress#getLoopbackAddress loopback} address and the
      * local port of the channel's socket is returned.
      *
      * @return  The {@code SocketAddress} that the socket is bound to, or the

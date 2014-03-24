@@ -23,19 +23,19 @@
  * questions.
  */
 
-package javax.management.remote.rmi;
+package j86.j86.j86.javax.management.remote.rmi;
 
-import java.io.IOException;
-import java.rmi.Remote;
-import java.security.AccessControlContext;
-import java.security.AccessController;
-import java.security.PrivilegedActionException;
-import java.security.PrivilegedExceptionAction;
-import java.util.Map;
-import java.util.Collections;
-import javax.security.auth.Subject;
+import j86.java.io.IOException;
+import j86.java.rmi.Remote;
+import j86.java.security.AccessControlContext;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedActionException;
+import j86.java.security.PrivilegedExceptionAction;
+import j86.java.util.Map;
+import j86.java.util.Collections;
+import j86.javax.security.auth.Subject;
 
-import com.sun.jmx.remote.internal.IIOPHelper;
+import j86.com.sun.jmx.remote.internal.IIOPHelper;
 
 /**
  * <p>An {@link RMIServerImpl} that is exported through IIOP and that
@@ -85,11 +85,11 @@ public class RMIIIOPServerImpl extends RMIServerImpl {
         // javax.rmi.CORBA.Stub stub =
         //    (javax.rmi.CORBA.Stub) PortableRemoteObject.toStub(this);
         final Remote stub = IIOPHelper.toStub(this);
-        // java.lang.System.out.println("NON CONNECTED STUB " + stub);
+        // j86.java.lang.System.out.println("NON CONNECTED STUB " + stub);
         // org.omg.CORBA.ORB orb =
         //    org.omg.CORBA.ORB.init((String[])null, (Properties)null);
         // stub.connect(orb);
-        // java.lang.System.out.println("CONNECTED STUB " + stub);
+        // j86.java.lang.System.out.println("CONNECTED STUB " + stub);
         return stub;
     }
 

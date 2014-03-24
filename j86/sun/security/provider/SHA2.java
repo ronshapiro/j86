@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.security.provider;
+package j86.sun.security.provider;
 
-import static sun.security.provider.ByteArrayAccess.*;
+import static j86.sun.security.provider.ByteArrayAccess.*;
 
 /**
  * This class implements the Secure Hash Algorithm SHA-256 developed by
  * the National Institute of Standards and Technology along with the
  * National Security Agency.
  *
- * <p>It implements java.security.MessageDigestSpi, and can be used
+ * <p>It implements j86.java.security.MessageDigestSpi, and can be used
  * through Java Cryptography Architecture (JCA), as a pluggable
  * MessageDigest implementation.
  *

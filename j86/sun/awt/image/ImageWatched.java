@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.awt.image;
+package j86.j86.j86.sun.awt.image;
 
-import java.lang.ref.WeakReference;
-import java.awt.Image;
-import java.awt.image.ImageObserver;
+import j86.j86.java.lang.ref.WeakReference;
+import j86.java.awt.Image;
+import j86.j86.j86.java.awt.image.ImageObserver;
 
 public abstract class ImageWatched {
     public static Link endlink = new Link();

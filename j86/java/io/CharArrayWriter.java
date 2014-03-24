@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.io;
+package j86.java.io;
 
-import java.util.Arrays;
+import j86.java.util.Arrays;
 
 /**
  * This class implements a character buffer that can be used as an Writer.

@@ -59,14 +59,14 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package java.time.temporal;
+package j86.j86.java.time.temporal;
 
-import java.time.DateTimeException;
-import java.time.chrono.Chronology;
-import java.time.format.ResolverStyle;
-import java.util.Locale;
-import java.util.Map;
-import java.util.Objects;
+import j86.java.time.DateTimeException;
+import j86.j86.java.time.chrono.Chronology;
+import j86.j86.java.time.format.ResolverStyle;
+import j86.java.util.Locale;
+import j86.java.util.Map;
+import j86.java.util.Objects;
 
 /**
  * A field of date-time, such as month-of-year or hour-of-minute.

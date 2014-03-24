@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.invoke.anon;
+package j86.j86.sun.invoke.anon;
 
-import java.io.IOException;
-import java.io.OutputStream;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.IdentityHashMap;
-import java.util.Map;
+import j86.java.io.IOException;
+import j86.java.io.OutputStream;
+import j86.java.util.Arrays;
+import j86.java.util.HashSet;
+import j86.java.util.IdentityHashMap;
+import j86.java.util.Map;
 
-import static sun.invoke.anon.ConstantPoolVisitor.*;
+import static j86.j86.sun.invoke.anon.ConstantPoolVisitor.*;
 
 /** A class and its patched constant pool.
  *

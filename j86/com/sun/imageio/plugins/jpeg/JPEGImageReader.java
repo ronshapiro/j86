@@ -23,41 +23,41 @@
  * questions.
  */
 
-package com.sun.imageio.plugins.jpeg;
+package j86.com.sun.imageio.plugins.jpeg;
 
-import javax.imageio.IIOException;
-import javax.imageio.ImageReader;
-import javax.imageio.ImageReadParam;
-import javax.imageio.ImageTypeSpecifier;
-import javax.imageio.metadata.IIOMetadata;
-import javax.imageio.spi.ImageReaderSpi;
-import javax.imageio.stream.ImageInputStream;
-import javax.imageio.plugins.jpeg.JPEGImageReadParam;
-import javax.imageio.plugins.jpeg.JPEGQTable;
-import javax.imageio.plugins.jpeg.JPEGHuffmanTable;
+import j86.javax.imageio.IIOException;
+import j86.javax.imageio.ImageReader;
+import j86.javax.imageio.ImageReadParam;
+import j86.javax.imageio.ImageTypeSpecifier;
+import j86.j86.javax.imageio.metadata.IIOMetadata;
+import j86.j86.javax.imageio.spi.ImageReaderSpi;
+import j86.j86.javax.imageio.stream.ImageInputStream;
+import j86.j86.javax.imageio.plugins.jpeg.JPEGImageReadParam;
+import j86.j86.javax.imageio.plugins.jpeg.JPEGQTable;
+import j86.j86.javax.imageio.plugins.jpeg.JPEGHuffmanTable;
 
-import java.awt.Point;
-import java.awt.Rectangle;
-import java.awt.color.ColorSpace;
-import java.awt.color.ICC_Profile;
-import java.awt.color.ICC_ColorSpace;
-import java.awt.color.CMMException;
-import java.awt.image.BufferedImage;
-import java.awt.image.Raster;
-import java.awt.image.WritableRaster;
-import java.awt.image.DataBuffer;
-import java.awt.image.DataBufferByte;
-import java.awt.image.ColorModel;
-import java.awt.image.IndexColorModel;
-import java.awt.image.ColorConvertOp;
-import java.io.IOException;
-import java.util.List;
-import java.util.Iterator;
-import java.util.ArrayList;
-import java.util.NoSuchElementException;
+import j86.java.awt.Point;
+import j86.java.awt.Rectangle;
+import j86.j86.java.awt.color.ColorSpace;
+import j86.j86.java.awt.color.ICC_Profile;
+import j86.j86.java.awt.color.ICC_ColorSpace;
+import j86.j86.java.awt.color.CMMException;
+import j86.j86.j86.java.awt.image.BufferedImage;
+import j86.j86.j86.java.awt.image.Raster;
+import j86.j86.j86.java.awt.image.WritableRaster;
+import j86.j86.j86.java.awt.image.DataBuffer;
+import j86.j86.j86.java.awt.image.DataBufferByte;
+import j86.j86.j86.java.awt.image.ColorModel;
+import j86.j86.j86.java.awt.image.IndexColorModel;
+import j86.j86.j86.java.awt.image.ColorConvertOp;
+import j86.java.io.IOException;
+import j86.java.util.List;
+import j86.java.util.Iterator;
+import j86.java.util.ArrayList;
+import j86.java.util.NoSuchElementException;
 
-import sun.java2d.Disposer;
-import sun.java2d.DisposerRecord;
+import j86.sun.java2d.Disposer;
+import j86.sun.java2d.DisposerRecord;
 
 public class JPEGImageReader extends ImageReader {
 
@@ -86,8 +86,8 @@ public class JPEGImageReader extends ImageReader {
     private int numImages = 0;
 
     static {
-        java.security.AccessController.doPrivileged(
-            new java.security.PrivilegedAction<Void>() {
+        j86.java.security.AccessController.doPrivileged(
+            new j86.java.security.PrivilegedAction<Void>() {
                 public Void run() {
                     System.loadLibrary("jpeg");
                     return null;
@@ -249,7 +249,7 @@ public class JPEGImageReader extends ImageReader {
                 throw new InternalError("Invalid warning index");
             }
             processWarningOccurred
-                ("com.sun.imageio.plugins.jpeg.JPEGImageReaderResources",
+                ("j86.com.sun.imageio.plugins.jpeg.JPEGImageReaderResources",
                  Integer.toString(code));
         } finally {
             cbLock.unlock();
@@ -686,7 +686,7 @@ public class JPEGImageReader extends ImageReader {
          * embedded data.
          */
         if (oldData == null ||
-            !java.util.Arrays.equals(oldData, newData))
+            !j86.java.util.Arrays.equals(oldData, newData))
         {
             iccCS = new ICC_ColorSpace(newProfile);
             // verify new color space

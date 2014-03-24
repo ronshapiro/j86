@@ -23,20 +23,20 @@
  * questions.
  */
 
-package javax.swing.plaf.synth;
+package j86.j86.j86.javax.swing.plaf.synth;
 
-import java.awt.*;
-import java.beans.*;
-import javax.swing.*;
-import javax.swing.border.*;
-import javax.swing.plaf.*;
-import javax.swing.plaf.basic.*;
-import javax.swing.table.*;
-import sun.swing.table.*;
+import j86.java.awt.*;
+import j86.java.beans.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.border.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.j86.javax.swing.plaf.basic.*;
+import j86.j86.javax.swing.table.*;
+import j86.j86.sun.swing.table.*;
 
 /**
  * Provides the Synth L&amp;F UI delegate for
- * {@link javax.swing.table.JTableHeader}.
+ * {@link j86.j86.javax.swing.table.JTableHeader}.
  *
  * @author Alan Chung
  * @author Philip Milne
@@ -241,7 +241,7 @@ public class SynthTableHeaderUI extends BasicTableHeaderUI
             //stuff a variable into the client property of this renderer indicating the sort order,
             //so that different rendering can be done for the header based on sorted state.
             RowSorter rs = table == null ? null : table.getRowSorter();
-            java.util.List<? extends RowSorter.SortKey> sortKeys = rs == null ? null : rs.getSortKeys();
+            j86.java.util.List<? extends RowSorter.SortKey> sortKeys = rs == null ? null : rs.getSortKeys();
             if (sortKeys != null && sortKeys.size() > 0 && sortKeys.get(0).getColumn() ==
                     table.convertColumnIndexToModel(column)) {
                 switch(sortKeys.get(0).getSortOrder()) {

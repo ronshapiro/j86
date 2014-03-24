@@ -23,10 +23,10 @@
  * questions.
  */
 
-package com.sun.jdi;
+package j86.com.sun.jdi;
 
-import java.util.List;
-import java.util.Map;
+import j86.java.util.List;
+import j86.java.util.Map;
 
 /**
  * An object that currently exists in the target VM. An ObjectReference
@@ -37,17 +37,17 @@ import java.util.Map;
  * <p>
  * Any method on <code>ObjectReference</code> which directly or
  * indirectly takes <code>ObjectReference</code> as an parameter may throw
- * {@link com.sun.jdi.VMDisconnectedException} if the target VM is
- * disconnected and the {@link com.sun.jdi.event.VMDisconnectEvent} has been or is
- * available to be read from the {@link com.sun.jdi.event.EventQueue}.
+ * {@link j86.com.sun.jdi.VMDisconnectedException} if the target VM is
+ * disconnected and the {@link j86.j86.com.sun.jdi.event.VMDisconnectEvent} has been or is
+ * available to be read from the {@link j86.j86.com.sun.jdi.event.EventQueue}.
  * <p>
  * Any method on <code>ObjectReference</code> which directly or
  * indirectly takes <code>ObjectReference</code> as an parameter may throw
- * {@link com.sun.jdi.VMOutOfMemoryException} if the target VM has run out of memory.
+ * {@link j86.com.sun.jdi.VMOutOfMemoryException} if the target VM has run out of memory.
  * <p>
  * Any method on <code>ObjectReference</code> or which directly or indirectly takes
  * <code>ObjectReference</code> as parameter may throw
- * {@link com.sun.jdi.ObjectCollectedException} if the mirrored object has been
+ * {@link j86.com.sun.jdi.ObjectCollectedException} if the mirrored object has been
  * garbage collected.
  *
  * @author Robert Field
@@ -66,8 +66,8 @@ public interface ObjectReference extends Value {
      * <p>
      * <code>Object obj = new String("Hello, world!");</code>
      * <p>
-     * The ReferenceType of obj will mirror java.lang.String and not
-     * java.lang.Object.
+     * The ReferenceType of obj will mirror j86.java.lang.String and not
+     * j86.java.lang.Object.
      * <p>
      * The type of an object never changes, so this method will
      * always return the same ReferenceType over the lifetime of the
@@ -88,7 +88,7 @@ public interface ObjectReference extends Value {
      *
      * @param sig the field containing the requested value
      * @return the {@link Value} of the instance field.
-     * @throws java.lang.IllegalArgumentException if the field is not valid for
+     * @throws j86.java.lang.IllegalArgumentException if the field is not valid for
      * this object's class.
      */
     Value getValue(Field sig);
@@ -103,7 +103,7 @@ public interface ObjectReference extends Value {
      * requested values.
      * @return a Map of the requested {@link Field} objects with
      * their {@link Value}.
-     * @throws java.lang.IllegalArgumentException if any field is not valid for
+     * @throws j86.java.lang.IllegalArgumentException if any field is not valid for
      * this object's class.
      */
     Map<Field,Value> getValues(List<? extends Field> fields);
@@ -126,7 +126,7 @@ public interface ObjectReference extends Value {
      *
      * @param field the field containing the requested value
      * @param value the new value to assign
-     * @throws java.lang.IllegalArgumentException if the field is not valid for
+     * @throws j86.java.lang.IllegalArgumentException if the field is not valid for
      * this object's class.
      * @throws InvalidTypeException if the value's type does not match
      * the field's type.
@@ -244,7 +244,7 @@ public interface ObjectReference extends Value {
      * in the order they appear in the method signature.
      * @param options the integer bit flag options.
      * @return a {@link Value} mirror of the invoked method's return value.
-     * @throws java.lang.IllegalArgumentException if the method is not
+     * @throws j86.java.lang.IllegalArgumentException if the method is not
      * a member of this object's class, if the size of the argument list
      * does not match the number of declared arguemnts for the method,
      * if the method is a constructor or static intializer, or
@@ -348,7 +348,7 @@ public interface ObjectReference extends Value {
      *
      * @return a List of {@link ThreadReference} objects. The list
      * has zero length if no threads are waiting for the monitor.
-     * @throws java.lang.UnsupportedOperationException if the
+     * @throws j86.java.lang.UnsupportedOperationException if the
      * target VM does not support this operation.
      * @throws IncompatibleThreadStateException if any
      * waiting thread is not suspended
@@ -370,7 +370,7 @@ public interface ObjectReference extends Value {
      * @return the {@link ThreadReference} which currently owns the
      * monitor, or null if it is unowned.
      *
-     * @throws java.lang.UnsupportedOperationException if the
+     * @throws j86.java.lang.UnsupportedOperationException if the
      * target VM does not support this operation.
      * @throws IncompatibleThreadStateException if the owning thread is
      * not suspended in the target VM
@@ -390,7 +390,7 @@ public interface ObjectReference extends Value {
      * @see #owningThread
      * @return the integer count of the number of entries.
      *
-     * @throws java.lang.UnsupportedOperationException if the
+     * @throws j86.java.lang.UnsupportedOperationException if the
      * target VM does not support this operation.
      * @throws IncompatibleThreadStateException if the owning thread is
      * not suspended in the target VM
@@ -416,11 +416,11 @@ public interface ObjectReference extends Value {
      *                      objects are returned.
      * @return a of List of {@link ObjectReference} objects. If there are
      *  no objects that reference this object, a zero-length list is returned..
-     * @throws java.lang.UnsupportedOperationException if
+     * @throws j86.java.lang.UnsupportedOperationException if
      * the target virtual machine does not support this
      * operation - see
      * {@link VirtualMachine#canGetInstanceInfo() canGetInstanceInfo()}
-     * @throws java.lang.IllegalArgumentException if maxReferrers is less
+     * @throws j86.java.lang.IllegalArgumentException if maxReferrers is less
      *         than zero.
      * @since 1.6
      */

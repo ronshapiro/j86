@@ -22,14 +22,14 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text;
+package j86.j86.javax.swing.text;
 
-import java.awt.*;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
-import java.util.Set;
-import javax.swing.SwingUtilities;
-import javax.swing.event.*;
+import j86.java.awt.*;
+import j86.java.beans.PropertyChangeEvent;
+import j86.java.beans.PropertyChangeListener;
+import j86.java.util.Set;
+import j86.javax.swing.SwingUtilities;
+import j86.j86.javax.swing.event.*;
 
 /**
  * Component decorator that implements the view interface.  The

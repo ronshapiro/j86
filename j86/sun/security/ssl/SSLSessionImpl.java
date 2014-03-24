@@ -24,34 +24,34 @@
  */
 
 
-package sun.security.ssl;
+package j86.sun.security.ssl;
 
-import java.net.*;
-import java.util.Enumeration;
-import java.util.Hashtable;
-import java.util.Vector;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
-import java.util.ArrayList;
+import j86.java.net.*;
+import j86.java.util.Enumeration;
+import j86.java.util.Hashtable;
+import j86.java.util.Vector;
+import j86.java.util.Collection;
+import j86.java.util.Collections;
+import j86.java.util.List;
+import j86.java.util.ArrayList;
 
-import java.security.Principal;
-import java.security.PrivateKey;
-import java.security.SecureRandom;
-import java.security.cert.X509Certificate;
-import java.security.cert.CertificateEncodingException;
+import j86.java.security.Principal;
+import j86.java.security.PrivateKey;
+import j86.java.security.SecureRandom;
+import j86.j86.java.security.cert.X509Certificate;
+import j86.j86.java.security.cert.CertificateEncodingException;
 
-import javax.crypto.SecretKey;
+import j86.javax.crypto.SecretKey;
 
-import javax.net.ssl.SSLSessionContext;
-import javax.net.ssl.SSLSessionBindingListener;
-import javax.net.ssl.SSLSessionBindingEvent;
-import javax.net.ssl.SSLPeerUnverifiedException;
-import javax.net.ssl.SSLPermission;
-import javax.net.ssl.ExtendedSSLSession;
-import javax.net.ssl.SNIServerName;
+import j86.j86.javax.net.ssl.SSLSessionContext;
+import j86.j86.javax.net.ssl.SSLSessionBindingListener;
+import j86.j86.javax.net.ssl.SSLSessionBindingEvent;
+import j86.j86.javax.net.ssl.SSLPeerUnverifiedException;
+import j86.j86.javax.net.ssl.SSLPermission;
+import j86.j86.javax.net.ssl.ExtendedSSLSession;
+import j86.j86.javax.net.ssl.SNIServerName;
 
-import static sun.security.ssl.CipherSuite.KeyExchange.*;
+import static j86.sun.security.ssl.CipherSuite.KeyExchange.*;
 
 /**
  * Implements the SSL session interface, and exposes the session context
@@ -382,7 +382,7 @@ final class SSLSessionImpl extends ExtendedSSLSession {
 
     /**
      * Return the cert chain presented by the peer in the
-     * java.security.cert format.
+     * j86.j86.java.security.cert format.
      * Note: This method can be used only when using certificate-based
      * cipher suites; using it with non-certificate-based cipher suites,
      * such as Kerberos, will throw an SSLPeerUnverifiedException.
@@ -391,7 +391,7 @@ final class SSLSessionImpl extends ExtendedSSLSession {
      *  first in the chain, and with the "root" CA last.
      */
     @Override
-    public java.security.cert.Certificate[] getPeerCertificates()
+    public j86.j86.java.security.cert.Certificate[] getPeerCertificates()
             throws SSLPeerUnverifiedException {
         //
         // clone to preserve integrity of session ... caller can't
@@ -409,12 +409,12 @@ final class SSLSessionImpl extends ExtendedSSLSession {
         // Certs are immutable objects, therefore we don't clone them.
         // But do need to clone the array, so that nothing is inserted
         // into peerCerts.
-        return (java.security.cert.Certificate[])peerCerts.clone();
+        return (j86.j86.java.security.cert.Certificate[])peerCerts.clone();
     }
 
     /**
      * Return the cert chain presented to the peer in the
-     * java.security.cert format.
+     * j86.j86.java.security.cert format.
      * Note: This method is useful only when using certificate-based
      * cipher suites.
      *
@@ -422,18 +422,18 @@ final class SSLSessionImpl extends ExtendedSSLSession {
      *  first in the chain, and with the "root" CA last.
      */
     @Override
-    public java.security.cert.Certificate[] getLocalCertificates() {
+    public j86.j86.java.security.cert.Certificate[] getLocalCertificates() {
         //
         // clone to preserve integrity of session ... caller can't
         // change record of peer identity even by accident, much
         // less do it intentionally.
         return (localCerts == null ? null :
-            (java.security.cert.Certificate[])localCerts.clone());
+            (j86.j86.java.security.cert.Certificate[])localCerts.clone());
     }
 
     /**
      * Return the cert chain presented by the peer in the
-     * javax.security.cert format.
+     * j86.javax.security.cert format.
      * Note: This method can be used only when using certificate-based
      * cipher suites; using it with non-certificate-based cipher suites,
      * such as Kerberos, will throw an SSLPeerUnverifiedException.
@@ -442,7 +442,7 @@ final class SSLSessionImpl extends ExtendedSSLSession {
      *  first in the chain, and with the "root" CA last.
      */
     @Override
-    public javax.security.cert.X509Certificate[] getPeerCertificateChain()
+    public j86.javax.security.cert.X509Certificate[] getPeerCertificateChain()
             throws SSLPeerUnverifiedException {
         //
         // clone to preserve integrity of session ... caller can't
@@ -457,16 +457,16 @@ final class SSLSessionImpl extends ExtendedSSLSession {
         if (peerCerts == null) {
             throw new SSLPeerUnverifiedException("peer not authenticated");
         }
-        javax.security.cert.X509Certificate[] certs;
-        certs = new javax.security.cert.X509Certificate[peerCerts.length];
+        j86.javax.security.cert.X509Certificate[] certs;
+        certs = new j86.javax.security.cert.X509Certificate[peerCerts.length];
         for (int i = 0; i < peerCerts.length; i++) {
             byte[] der = null;
             try {
                 der = peerCerts[i].getEncoded();
-                certs[i] = javax.security.cert.X509Certificate.getInstance(der);
+                certs[i] = j86.javax.security.cert.X509Certificate.getInstance(der);
             } catch (CertificateEncodingException e) {
                 throw new SSLPeerUnverifiedException(e.getMessage());
-            } catch (javax.security.cert.CertificateException e) {
+            } catch (j86.javax.security.cert.CertificateException e) {
                 throw new SSLPeerUnverifiedException(e.getMessage());
             }
         }
@@ -583,7 +583,7 @@ final class SSLSessionImpl extends ExtendedSSLSession {
     public InetAddress getPeerAddress() {
         try {
             return InetAddress.getByName(host);
-        } catch (java.net.UnknownHostException e) {
+        } catch (j86.java.net.UnknownHostException e) {
             return null;
         }
     }

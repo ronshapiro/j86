@@ -22,39 +22,39 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.plaf.synth;
+package j86.j86.j86.javax.swing.plaf.synth;
 
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.Font;
-import java.awt.Graphics;
-import java.awt.Image;
-import java.awt.Insets;
-import java.awt.Toolkit;
-import java.io.BufferedInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.net.URLClassLoader;
-import java.text.ParseException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Locale;
-import java.util.Map;
-import java.util.StringTokenizer;
-import java.util.regex.PatternSyntaxException;
+import j86.java.awt.Color;
+import j86.java.awt.Component;
+import j86.java.awt.Font;
+import j86.java.awt.Graphics;
+import j86.java.awt.Image;
+import j86.java.awt.Insets;
+import j86.java.awt.Toolkit;
+import j86.java.io.BufferedInputStream;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.net.MalformedURLException;
+import j86.java.net.URL;
+import j86.java.net.URLClassLoader;
+import j86.java.text.ParseException;
+import j86.java.util.ArrayList;
+import j86.java.util.HashMap;
+import j86.java.util.List;
+import j86.java.util.Locale;
+import j86.java.util.Map;
+import j86.java.util.StringTokenizer;
+import j86.j86.java.util.regex.PatternSyntaxException;
 
-import javax.swing.ImageIcon;
-import javax.swing.JSplitPane;
-import javax.swing.SwingConstants;
-import javax.swing.UIDefaults;
-import javax.swing.plaf.ColorUIResource;
-import javax.swing.plaf.DimensionUIResource;
-import javax.swing.plaf.FontUIResource;
-import javax.swing.plaf.InsetsUIResource;
-import javax.swing.plaf.UIResource;
+import j86.javax.swing.ImageIcon;
+import j86.javax.swing.JSplitPane;
+import j86.javax.swing.SwingConstants;
+import j86.javax.swing.UIDefaults;
+import j86.j86.javax.swing.plaf.ColorUIResource;
+import j86.j86.javax.swing.plaf.DimensionUIResource;
+import j86.j86.javax.swing.plaf.FontUIResource;
+import j86.j86.javax.swing.plaf.InsetsUIResource;
+import j86.j86.javax.swing.plaf.UIResource;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
@@ -66,7 +66,7 @@ import org.xml.sax.SAXException;
 import org.xml.sax.SAXParseException;
 import org.xml.sax.helpers.DefaultHandler;
 
-import com.sun.beans.decoder.DocumentHandler;
+import j86.j86.com.sun.beans.decoder.DocumentHandler;
 
 class SynthParser extends DefaultHandler {
     //

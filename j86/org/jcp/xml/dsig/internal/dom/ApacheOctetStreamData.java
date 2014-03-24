@@ -26,12 +26,12 @@
 /*
  * $Id: ApacheOctetStreamData.java 1197150 2011-11-03 14:34:57Z coheigea $
  */
-package org.jcp.xml.dsig.internal.dom;
+package j86.j86.org.jcp.xml.dsig.internal.dom;
 
-import java.io.IOException;
-import javax.xml.crypto.OctetStreamData;
-import com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
-import com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
+import j86.java.io.IOException;
+import j86.javax.xml.crypto.OctetStreamData;
+import j86.j86.com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
+import j86.j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
 
 public class ApacheOctetStreamData extends OctetStreamData
     implements ApacheData {

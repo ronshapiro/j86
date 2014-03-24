@@ -33,20 +33,20 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package java.util.concurrent.atomic;
-import java.util.function.UnaryOperator;
-import java.util.function.BinaryOperator;
-import sun.misc.Unsafe;
+package j86.j86.j86.java.util.concurrent.atomic;
+import j86.j86.java.util.function.UnaryOperator;
+import j86.j86.java.util.function.BinaryOperator;
+import j86.sun.misc.Unsafe;
 
 /**
  * An object reference that may be updated atomically. See the {@link
- * java.util.concurrent.atomic} package specification for description
+ * j86.j86.j86.java.util.concurrent.atomic} package specification for description
  * of the properties of atomic variables.
  * @since 1.5
  * @author Doug Lea
  * @param <V> The type of object referred to by this reference
  */
-public class AtomicReference<V> implements java.io.Serializable {
+public class AtomicReference<V> implements j86.java.io.Serializable {
     private static final long serialVersionUID = -1848883965231344442L;
 
     private static final Unsafe unsafe = Unsafe.getUnsafe();

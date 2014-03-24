@@ -23,24 +23,24 @@
  * questions.
  */
 
-package com.sun.jmx.mbeanserver;
+package j86.com.sun.jmx.mbeanserver;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.IdentityHashMap;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.util.SortedMap;
-import java.util.TreeMap;
-import javax.management.MalformedObjectNameException;
-import javax.management.ObjectName;
+import j86.java.util.ArrayList;
+import j86.java.util.Arrays;
+import j86.java.util.Collection;
+import j86.java.util.Collections;
+import j86.java.util.Comparator;
+import j86.java.util.HashMap;
+import j86.java.util.HashSet;
+import j86.java.util.IdentityHashMap;
+import j86.java.util.LinkedHashMap;
+import j86.java.util.List;
+import j86.java.util.Map;
+import j86.java.util.Set;
+import j86.java.util.SortedMap;
+import j86.java.util.TreeMap;
+import j86.javax.management.MalformedObjectNameException;
+import j86.javax.management.ObjectName;
 
 public class Util {
     public static ObjectName newObjectName(String string) {

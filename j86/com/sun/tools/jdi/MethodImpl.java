@@ -23,14 +23,14 @@
  * questions.
  */
 
-package com.sun.tools.jdi;
+package j86.com.sun.tools.jdi;
 
-import com.sun.jdi.*;
+import j86.com.sun.jdi.*;
 
-import java.util.List;
-import java.util.Iterator;
-import java.util.ArrayList;
-import java.util.Comparator;
+import j86.java.util.List;
+import j86.java.util.Iterator;
+import j86.java.util.ArrayList;
+import j86.java.util.Comparator;
 
 public abstract class MethodImpl extends TypeComponentImpl
     implements Method {

@@ -22,20 +22,20 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing;
+package j86.javax.swing;
 
-import java.applet.Applet;
-import java.awt.*;
-import java.awt.event.*;
-import java.beans.*;
-import java.security.AccessController;
-import javax.accessibility.*;
-import javax.swing.plaf.RootPaneUI;
-import java.util.Vector;
-import java.io.Serializable;
-import javax.swing.border.*;
-import sun.awt.AWTAccessor;
-import sun.security.action.GetBooleanAction;
+import j86.java.applet.Applet;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.java.beans.*;
+import j86.java.security.AccessController;
+import j86.javax.accessibility.*;
+import j86.j86.javax.swing.plaf.RootPaneUI;
+import j86.java.util.Vector;
+import j86.java.io.Serializable;
+import j86.j86.javax.swing.border.*;
+import j86.sun.awt.AWTAccessor;
+import j86.sun.security.action.GetBooleanAction;
 
 
 /**
@@ -180,8 +180,8 @@ import sun.security.action.GetBooleanAction;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @see JLayeredPane
  * @see JMenuBar
@@ -613,7 +613,7 @@ public class JRootPane extends JComponent implements Accessible {
      * replace it with an opaque <code>JComponent</code>.
      *
      * @param content the <code>Container</code> to use for component-contents
-     * @exception java.awt.IllegalComponentStateException (a runtime
+     * @exception j86.java.awt.IllegalComponentStateException (a runtime
      *            exception) if the content pane parameter is <code>null</code>
      */
     public void setContentPane(Container content) {
@@ -640,7 +640,7 @@ public class JRootPane extends JComponent implements Accessible {
      * typically holds a content pane and an optional <code>JMenuBar</code>.
      *
      * @param layered  the <code>JLayeredPane</code> to use
-     * @exception java.awt.IllegalComponentStateException (a runtime
+     * @exception j86.java.awt.IllegalComponentStateException (a runtime
      *            exception) if the layered pane parameter is <code>null</code>
      */
     public void setLayeredPane(JLayeredPane layered) {
@@ -726,7 +726,7 @@ public class JRootPane extends JComponent implements Accessible {
      * because both classes override <code>isValidateRoot</code> to return true.
      *
      * @see JComponent#isValidateRoot
-     * @see java.awt.Container#isValidateRoot
+     * @see j86.java.awt.Container#isValidateRoot
      * @return true
      */
     @Override
@@ -899,8 +899,8 @@ public class JRootPane extends JComponent implements Accessible {
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     @SuppressWarnings("serial")
     protected class RootLayout implements LayoutManager2, Serializable
@@ -1065,8 +1065,8 @@ public class JRootPane extends JComponent implements Accessible {
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     @SuppressWarnings("serial")
     protected class AccessibleJRootPane extends AccessibleJComponent {

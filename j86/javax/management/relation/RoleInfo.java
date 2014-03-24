@@ -23,21 +23,21 @@
  * questions.
  */
 
-package javax.management.relation;
+package j86.j86.javax.management.relation;
 
 
-import com.sun.jmx.mbeanserver.GetPropertyAction;
+import j86.com.sun.jmx.mbeanserver.GetPropertyAction;
 
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.ObjectStreamField;
-import java.io.Serializable;
-import java.security.AccessController;
+import j86.java.io.IOException;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectStreamField;
+import j86.java.io.Serializable;
+import j86.java.security.AccessController;
 
-import javax.management.MBeanServer;
+import j86.javax.management.MBeanServer;
 
-import javax.management.NotCompliantMBeanException;
+import j86.javax.management.NotCompliantMBeanException;
 
 /**
  * A RoleInfo object summarises a role in a relation type.

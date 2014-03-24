@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.lang;
+package j86.java.lang;
 
-import java.lang.annotation.Native;
+import j86.j86.java.lang.annotation.Native;
 
 /**
  * The {@code Integer} class wraps a value of the primitive type
@@ -114,7 +114,7 @@ public final class Integer extends Number implements Comparable<Integer> {
      * are used as radix-<var>N</var> digits in the order shown. Thus,
      * the digits for hexadecimal (radix 16) are
      * {@code 0123456789abcdef}. If uppercase letters are
-     * desired, the {@link java.lang.String#toUpperCase()} method may
+     * desired, the {@link j86.java.lang.String#toUpperCase()} method may
      * be called on the result:
      *
      * <blockquote>
@@ -124,8 +124,8 @@ public final class Integer extends Number implements Comparable<Integer> {
      * @param   i       an integer to be converted to a string.
      * @param   radix   the radix to use in the string representation.
      * @return  a string representation of the argument in the specified radix.
-     * @see     java.lang.Character#MAX_RADIX
-     * @see     java.lang.Character#MIN_RADIX
+     * @see     j86.java.lang.Character#MAX_RADIX
+     * @see     j86.java.lang.Character#MIN_RADIX
      */
     public static String toString(int i, int radix) {
         if (radix < Character.MIN_RADIX || radix > Character.MAX_RADIX)
@@ -215,7 +215,7 @@ public final class Integer extends Number implements Comparable<Integer> {
      * These are the characters {@code '\u005Cu0030'} through
      * {@code '\u005Cu0039'} and {@code '\u005Cu0061'} through
      * {@code '\u005Cu0066'}. If uppercase letters are
-     * desired, the {@link java.lang.String#toUpperCase()} method may
+     * desired, the {@link j86.java.lang.String#toUpperCase()} method may
      * be called on the result:
      *
      * <blockquote>
@@ -478,7 +478,7 @@ public final class Integer extends Number implements Comparable<Integer> {
      * Parses the string argument as a signed integer in the radix
      * specified by the second argument. The characters in the string
      * must all be digits of the specified radix (as determined by
-     * whether {@link java.lang.Character#digit(char, int)} returns a
+     * whether {@link j86.java.lang.Character#digit(char, int)} returns a
      * nonnegative value), except that the first character may be an
      * ASCII minus sign {@code '-'} ({@code '\u005Cu002D'}) to
      * indicate a negative value or an ASCII plus sign {@code '+'}
@@ -492,8 +492,8 @@ public final class Integer extends Number implements Comparable<Integer> {
      * length zero.
      *
      * <li>The radix is either smaller than
-     * {@link java.lang.Character#MIN_RADIX} or
-     * larger than {@link java.lang.Character#MAX_RADIX}.
+     * {@link j86.java.lang.Character#MIN_RADIX} or
+     * larger than {@link j86.java.lang.Character#MAX_RADIX}.
      *
      * <li>Any character of the string is not a digit of the specified
      * radix, except that the first character may be a minus sign
@@ -602,7 +602,7 @@ public final class Integer extends Number implements Comparable<Integer> {
      * ASCII plus sign {@code '+'} ({@code '\u005Cu002B'}) to
      * indicate a positive value. The resulting integer value is
      * returned, exactly as if the argument and the radix 10 were
-     * given as arguments to the {@link #parseInt(java.lang.String,
+     * given as arguments to the {@link #parseInt(j86.java.lang.String,
      * int)} method.
      *
      * @param s    a {@code String} containing the {@code int}
@@ -623,7 +623,7 @@ public final class Integer extends Number implements Comparable<Integer> {
      *
      * The characters in the string must all be digits of the
      * specified radix (as determined by whether {@link
-     * java.lang.Character#digit(char, int)} returns a nonnegative
+     * j86.java.lang.Character#digit(char, int)} returns a nonnegative
      * value), except that the first character may be an ASCII plus
      * sign {@code '+'} ({@code '\u005Cu002B'}). The resulting
      * integer value is returned.
@@ -635,8 +635,8 @@ public final class Integer extends Number implements Comparable<Integer> {
      * length zero.
      *
      * <li>The radix is either smaller than
-     * {@link java.lang.Character#MIN_RADIX} or
-     * larger than {@link java.lang.Character#MAX_RADIX}.
+     * {@link j86.java.lang.Character#MIN_RADIX} or
+     * larger than {@link j86.java.lang.Character#MAX_RADIX}.
      *
      * <li>Any character of the string is not a digit of the specified
      * radix, except that the first character may be a plus sign
@@ -698,7 +698,7 @@ public final class Integer extends Number implements Comparable<Integer> {
      * '+'} ({@code '\u005Cu002B'}). The resulting integer value
      * is returned, exactly as if the argument and the radix 10 were
      * given as arguments to the {@link
-     * #parseUnsignedInt(java.lang.String, int)} method.
+     * #parseUnsignedInt(j86.java.lang.String, int)} method.
      *
      * @param s   a {@code String} containing the unsigned {@code int}
      *            representation to be parsed
@@ -717,7 +717,7 @@ public final class Integer extends Number implements Comparable<Integer> {
      * with the radix given by the second argument. The first argument
      * is interpreted as representing a signed integer in the radix
      * specified by the second argument, exactly as if the arguments
-     * were given to the {@link #parseInt(java.lang.String, int)}
+     * were given to the {@link #parseInt(j86.java.lang.String, int)}
      * method. The result is an {@code Integer} object that
      * represents the integer value specified by the string.
      *
@@ -745,7 +745,7 @@ public final class Integer extends Number implements Comparable<Integer> {
      * value of the specified {@code String}. The argument is
      * interpreted as representing a signed decimal integer, exactly
      * as if the argument were given to the {@link
-     * #parseInt(java.lang.String)} method. The result is an
+     * #parseInt(j86.java.lang.String)} method. The result is an
      * {@code Integer} object that represents the integer value
      * specified by the string.
      *
@@ -772,9 +772,9 @@ public final class Integer extends Number implements Comparable<Integer> {
      *
      * The cache is initialized on first usage.  The size of the cache
      * may be controlled by the {@code -XX:AutoBoxCacheMax=<size>} option.
-     * During VM initialization, java.lang.Integer.IntegerCache.high property
+     * During VM initialization, j86.java.lang.Integer.IntegerCache.high property
      * may be set and saved in the private system properties in the
-     * sun.misc.VM class.
+     * j86.sun.misc.VM class.
      */
 
     private static class IntegerCache {
@@ -786,7 +786,7 @@ public final class Integer extends Number implements Comparable<Integer> {
             // high value may be configured by property
             int h = 127;
             String integerCacheHighPropValue =
-                sun.misc.VM.getSavedProperty("java.lang.Integer.IntegerCache.high");
+                j86.sun.misc.VM.getSavedProperty("j86.java.lang.Integer.IntegerCache.high");
             if (integerCacheHighPropValue != null) {
                 try {
                     int i = parseInt(integerCacheHighPropValue);
@@ -861,7 +861,7 @@ public final class Integer extends Number implements Comparable<Integer> {
      *                 {@code Integer}.
      * @exception  NumberFormatException  if the {@code String} does not
      *               contain a parsable integer.
-     * @see        java.lang.Integer#parseInt(java.lang.String, int)
+     * @see        j86.java.lang.Integer#parseInt(java.lang.String, int)
      */
     public Integer(String s) throws NumberFormatException {
         this.value = parseInt(s, 10);
@@ -926,7 +926,7 @@ public final class Integer extends Number implements Comparable<Integer> {
      * {@code Integer}'s value. The value is converted to signed
      * decimal representation and returned as a string, exactly as if
      * the integer value were given as an argument to the {@link
-     * java.lang.Integer#toString(int)} method.
+     * j86.java.lang.Integer#toString(int)} method.
      *
      * @return  a string representation of the value of this object in
      *          base&nbsp;10.
@@ -983,7 +983,7 @@ public final class Integer extends Number implements Comparable<Integer> {
      *
      * <p>The first argument is treated as the name of a system
      * property.  System properties are accessible through the {@link
-     * java.lang.System#getProperty(java.lang.String)} method. The
+     * j86.java.lang.System#getProperty(java.lang.String)} method. The
      * string value of this property is then interpreted as an integer
      * value using the grammar supported by {@link Integer#decode decode} and
      * an {@code Integer} object representing this value is returned.
@@ -1004,8 +1004,8 @@ public final class Integer extends Number implements Comparable<Integer> {
      * @return  the {@code Integer} value of the property.
      * @throws  SecurityException for the same reasons as
      *          {@link System#getProperty(String) System.getProperty}
-     * @see     java.lang.System#getProperty(java.lang.String)
-     * @see     java.lang.System#getProperty(java.lang.String, java.lang.String)
+     * @see     j86.java.lang.System#getProperty(java.lang.String)
+     * @see     j86.java.lang.System#getProperty(java.lang.String, java.lang.String)
      */
     public static Integer getInteger(String nm) {
         return getInteger(nm, null);
@@ -1017,7 +1017,7 @@ public final class Integer extends Number implements Comparable<Integer> {
      *
      * <p>The first argument is treated as the name of a system
      * property.  System properties are accessible through the {@link
-     * java.lang.System#getProperty(java.lang.String)} method. The
+     * j86.java.lang.System#getProperty(java.lang.String)} method. The
      * string value of this property is then interpreted as an integer
      * value using the grammar supported by {@link Integer#decode decode} and
      * an {@code Integer} object representing this value is returned.
@@ -1050,8 +1050,8 @@ public final class Integer extends Number implements Comparable<Integer> {
      * @return  the {@code Integer} value of the property.
      * @throws  SecurityException for the same reasons as
      *          {@link System#getProperty(String) System.getProperty}
-     * @see     java.lang.System#getProperty(java.lang.String)
-     * @see     java.lang.System#getProperty(java.lang.String, java.lang.String)
+     * @see     j86.java.lang.System#getProperty(java.lang.String)
+     * @see     j86.java.lang.System#getProperty(java.lang.String, java.lang.String)
      */
     public static Integer getInteger(String nm, int val) {
         Integer result = getInteger(nm, null);
@@ -1062,7 +1062,7 @@ public final class Integer extends Number implements Comparable<Integer> {
      * Returns the integer value of the system property with the
      * specified name.  The first argument is treated as the name of a
      * system property.  System properties are accessible through the
-     * {@link java.lang.System#getProperty(java.lang.String)} method.
+     * {@link j86.java.lang.System#getProperty(java.lang.String)} method.
      * The string value of this property is then interpreted as an
      * integer value, as per the {@link Integer#decode decode} method,
      * and an {@code Integer} object representing this value is
@@ -1072,13 +1072,13 @@ public final class Integer extends Number implements Comparable<Integer> {
      *         {@code 0x} or the ASCII character {@code #}, not
      *      followed by a minus sign, then the rest of it is parsed as a
      *      hexadecimal integer exactly as by the method
-     *      {@link #valueOf(java.lang.String, int)} with radix 16.
+     *      {@link #valueOf(j86.java.lang.String, int)} with radix 16.
      * <li>If the property value begins with the ASCII character
      *     {@code 0} followed by another character, it is parsed as an
      *     octal integer exactly as by the method
-     *     {@link #valueOf(java.lang.String, int)} with radix 8.
+     *     {@link #valueOf(j86.java.lang.String, int)} with radix 8.
      * <li>Otherwise, the property value is parsed as a decimal integer
-     * exactly as by the method {@link #valueOf(java.lang.String, int)}
+     * exactly as by the method {@link #valueOf(j86.java.lang.String, int)}
      * with radix 10.
      * </ul>
      *
@@ -1092,8 +1092,8 @@ public final class Integer extends Number implements Comparable<Integer> {
      * @return  the {@code Integer} value of the property.
      * @throws  SecurityException for the same reasons as
      *          {@link System#getProperty(String) System.getProperty}
-     * @see     System#getProperty(java.lang.String)
-     * @see     System#getProperty(java.lang.String, java.lang.String)
+     * @see     System#getProperty(j86.java.lang.String)
+     * @see     System#getProperty(j86.java.lang.String, java.lang.String)
      */
     public static Integer getInteger(String nm, Integer val) {
         String v = null;
@@ -1150,7 +1150,7 @@ public final class Integer extends Number implements Comparable<Integer> {
      *             value represented by {@code nm}
      * @exception NumberFormatException  if the {@code String} does not
      *            contain a parsable integer.
-     * @see java.lang.Integer#parseInt(java.lang.String, int)
+     * @see j86.java.lang.Integer#parseInt(java.lang.String, int)
      */
     public static Integer decode(String nm) throws NumberFormatException {
         int radix = 10;
@@ -1555,7 +1555,7 @@ public final class Integer extends Number implements Comparable<Integer> {
      * @param a the first operand
      * @param b the second operand
      * @return the sum of {@code a} and {@code b}
-     * @see java.util.function.BinaryOperator
+     * @see j86.j86.java.util.function.BinaryOperator
      * @since 1.8
      */
     public static int sum(int a, int b) {
@@ -1569,7 +1569,7 @@ public final class Integer extends Number implements Comparable<Integer> {
      * @param a the first operand
      * @param b the second operand
      * @return the greater of {@code a} and {@code b}
-     * @see java.util.function.BinaryOperator
+     * @see j86.j86.java.util.function.BinaryOperator
      * @since 1.8
      */
     public static int max(int a, int b) {
@@ -1583,7 +1583,7 @@ public final class Integer extends Number implements Comparable<Integer> {
      * @param a the first operand
      * @param b the second operand
      * @return the smaller of {@code a} and {@code b}
-     * @see java.util.function.BinaryOperator
+     * @see j86.j86.java.util.function.BinaryOperator
      * @since 1.8
      */
     public static int min(int a, int b) {

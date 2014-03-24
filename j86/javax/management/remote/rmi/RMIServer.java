@@ -23,11 +23,11 @@
  * questions.
  */
 
-package javax.management.remote.rmi;
+package j86.j86.j86.javax.management.remote.rmi;
 
-import java.io.IOException;
-import java.rmi.Remote;
-import java.rmi.RemoteException;
+import j86.java.io.IOException;
+import j86.java.rmi.Remote;
+import j86.java.rmi.RemoteException;
 
 /**
  * <p>RMI object used to establish connections to an RMI connector.

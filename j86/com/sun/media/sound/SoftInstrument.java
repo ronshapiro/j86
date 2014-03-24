@@ -22,10 +22,10 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.media.sound;
+package j86.com.sun.media.sound;
 
-import javax.sound.midi.Instrument;
-import javax.sound.midi.MidiChannel;
+import j86.javax.sound.midi.Instrument;
+import j86.javax.sound.midi.MidiChannel;
 
 /**
  * Software synthesizer internal instrument.

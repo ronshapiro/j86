@@ -33,15 +33,15 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package java.util.concurrent;
-import java.util.Map;
-import java.util.Objects;
-import java.util.function.BiConsumer;
-import java.util.function.BiFunction;
-import java.util.function.Function;
+package j86.j86.java.util.concurrent;
+import j86.java.util.Map;
+import j86.java.util.Objects;
+import j86.j86.java.util.function.BiConsumer;
+import j86.j86.java.util.function.BiFunction;
+import j86.j86.java.util.function.Function;
 
 /**
- * A {@link java.util.Map} providing thread safety and atomicity
+ * A {@link j86.java.util.Map} providing thread safety and atomicity
  * guarantees.
  *
  * <p>Memory consistency effects: As with other concurrent

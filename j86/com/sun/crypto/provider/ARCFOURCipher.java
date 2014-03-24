@@ -23,12 +23,12 @@
  * questions.
  */
 
-package com.sun.crypto.provider;
+package j86.com.sun.crypto.provider;
 
-import java.security.*;
-import java.security.spec.AlgorithmParameterSpec;
+import j86.java.security.*;
+import j86.j86.java.security.spec.AlgorithmParameterSpec;
 
-import javax.crypto.*;
+import j86.javax.crypto.*;
 
 /**
  * Implementation of the ARCFOUR cipher, an algorithm apparently compatible

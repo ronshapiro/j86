@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.sql.rowset.spi;
+package j86.j86.j86.javax.sql.rowset.spi;
 
-import javax.sql.*;
+import j86.javax.sql.*;
 
 /**
  * The synchronization mechanism that provides reader/writer capabilities for
@@ -40,8 +40,8 @@ import javax.sql.*;
  * all <code>RowSet</code> implementations.
  * The factory mechanism in the reference implementation uses this name to instantiate
  * the implementation, which can then provide a <code>RowSet</code> object with its
- * reader (a <code>javax.sql.RowSetReader</code> object) and its writer (a
- * <code>javax.sql.RowSetWriter</code> object).
+ * reader (a <code>j86.javax.sql.RowSetReader</code> object) and its writer (a
+ * <code>j86.javax.sql.RowSetWriter</code> object).
  * <P>
  * The Jdbc <code>RowSet</code> Implementations specification provides two
  * reference implementations of the <code>SyncProvider</code> abstract class:
@@ -53,7 +53,7 @@ import javax.sql.*;
  * <code>XmlWriter</code> object. A <code>WebRowSet</code> object uses the
  * <code>XmlReader</code> object to read data in XML format to populate itself with that
  * data.  It uses the <code>XmlWriter</code> object to write itself to a stream or
- * <code>java.io.Writer</code> object in XML format.
+ * <code>j86.java.io.Writer</code> object in XML format.
  *
  * <h3>1.0 Naming Convention for Implementations</h3>
  * As a guide  to naming <code>SyncProvider</code>
@@ -87,7 +87,7 @@ import javax.sql.*;
  * The default <code>SyncProvider</code> object provided with the reference
  * implementation uses the following name:
  * <pre>
- *     com.sun.rowset.providers.RIOptimisticProvider
+ *     j86.j86.com.sun.rowset.providers.RIOptimisticProvider
  * </pre>
  * <p>
  * A vendor can register a <code>SyncProvider</code> implementation class name
@@ -128,7 +128,7 @@ import javax.sql.*;
  * <code>com.fred.providers.HighAvailabilitySyncProvider</code> has been
  * registered with the <code>SyncFactory</code> instance, <i>crs</i> will be
  * assigned the default provider in the reference implementation, which is
- * <code>com.sun.rowset.providers.RIOptimisticProvider</code>.
+ * <code>j86.j86.com.sun.rowset.providers.RIOptimisticProvider</code>.
  *
  * <h3>3.0 Violations and Synchronization Issues</h3>
  * If an update between a disconnected <code>RowSet</code> object
@@ -207,8 +207,8 @@ import javax.sql.*;
  * </OL>
  *
  * @author Jonathan Bruce
- * @see javax.sql.rowset.spi.SyncFactory
- * @see javax.sql.rowset.spi.SyncFactoryException
+ * @see j86.j86.j86.javax.sql.rowset.spi.SyncFactory
+ * @see j86.j86.j86.javax.sql.rowset.spi.SyncFactoryException
  */
 public abstract class SyncProvider {
 
@@ -227,19 +227,19 @@ public abstract class SyncProvider {
     public abstract String getProviderID();
 
     /**
-     * Returns a <code>javax.sql.RowSetReader</code> object, which can be used to
+     * Returns a <code>j86.javax.sql.RowSetReader</code> object, which can be used to
      * populate a <code>RowSet</code> object with data.
      *
-     * @return a <code>javax.sql.RowSetReader</code> object
+     * @return a <code>j86.javax.sql.RowSetReader</code> object
      */
     public abstract RowSetReader getRowSetReader();
 
     /**
-     * Returns a <code>javax.sql.RowSetWriter</code> object, which can be
+     * Returns a <code>j86.javax.sql.RowSetWriter</code> object, which can be
      * used to write a <code>RowSet</code> object's data back to the
      * underlying data source.
      *
-     * @return a <code>javax.sql.RowSetWriter</code> object
+     * @return a <code>j86.javax.sql.RowSetWriter</code> object
      */
     public abstract RowSetWriter getRowSetWriter();
 

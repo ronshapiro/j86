@@ -23,59 +23,59 @@
  * questions.
  */
 
-package sun.security.pkcs11;
+package j86.j86.sun.security.pkcs11;
 
-import java.math.BigInteger;
+import j86.java.math.BigInteger;
 
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.IOException;
-import java.io.ByteArrayInputStream;
-import java.io.UnsupportedEncodingException;
+import j86.java.io.InputStream;
+import j86.java.io.OutputStream;
+import j86.java.io.IOException;
+import j86.java.io.ByteArrayInputStream;
+import j86.java.io.UnsupportedEncodingException;
 
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Date;
-import java.util.Enumeration;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.HashMap;
-import java.util.Set;
+import j86.java.util.Arrays;
+import j86.java.util.Collections;
+import j86.java.util.Date;
+import j86.java.util.Enumeration;
+import j86.java.util.ArrayList;
+import j86.java.util.HashSet;
+import j86.java.util.HashMap;
+import j86.java.util.Set;
 
-import java.security.*;
-import java.security.KeyStore.*;
+import j86.java.security.*;
+import j86.java.security.KeyStore.*;
 
-import java.security.cert.Certificate;
-import java.security.cert.X509Certificate;
-import java.security.cert.CertificateFactory;
-import java.security.cert.CertificateException;
+import j86.j86.java.security.cert.Certificate;
+import j86.j86.java.security.cert.X509Certificate;
+import j86.j86.java.security.cert.CertificateFactory;
+import j86.j86.java.security.cert.CertificateException;
 
-import java.security.interfaces.*;
-import java.security.spec.*;
+import j86.j86.java.security.interfaces.*;
+import j86.j86.java.security.spec.*;
 
-import javax.crypto.SecretKey;
-import javax.crypto.interfaces.*;
+import j86.javax.crypto.SecretKey;
+import j86.j86.javax.crypto.interfaces.*;
 
-import javax.security.auth.x500.X500Principal;
-import javax.security.auth.login.LoginException;
-import javax.security.auth.callback.Callback;
-import javax.security.auth.callback.PasswordCallback;
-import javax.security.auth.callback.CallbackHandler;
-import javax.security.auth.callback.UnsupportedCallbackException;
+import j86.j86.javax.security.auth.x500.X500Principal;
+import j86.j86.javax.security.auth.login.LoginException;
+import j86.j86.javax.security.auth.callback.Callback;
+import j86.j86.javax.security.auth.callback.PasswordCallback;
+import j86.j86.javax.security.auth.callback.CallbackHandler;
+import j86.j86.javax.security.auth.callback.UnsupportedCallbackException;
 
-import sun.security.util.Debug;
-import sun.security.util.DerValue;
-import sun.security.util.ECUtil;
+import j86.sun.security.util.Debug;
+import j86.sun.security.util.DerValue;
+import j86.sun.security.util.ECUtil;
 
-import sun.security.ec.ECParameters;
+import j86.sun.security.ec.ECParameters;
 
-import sun.security.pkcs11.Secmod.*;
-import static sun.security.pkcs11.P11Util.*;
+import j86.j86.sun.security.pkcs11.Secmod.*;
+import static j86.j86.sun.security.pkcs11.P11Util.*;
 
-import sun.security.pkcs11.wrapper.*;
-import static sun.security.pkcs11.wrapper.PKCS11Constants.*;
+import j86.j86.j86.sun.security.pkcs11.wrapper.*;
+import static j86.j86.j86.sun.security.pkcs11.wrapper.PKCS11Constants.*;
 
-import sun.security.rsa.RSAKeyFactory;
+import j86.sun.security.rsa.RSAKeyFactory;
 
 final class P11KeyStore extends KeyStoreSpi {
 
@@ -405,7 +405,7 @@ final class P11KeyStore extends KeyStoreSpi {
      * Assigns the given key to the given alias, protecting it with the given
      * password.
      *
-     * <p>If the given key is of type <code>java.security.PrivateKey</code>,
+     * <p>If the given key is of type <code>j86.java.security.PrivateKey</code>,
      * it must be accompanied by a certificate chain certifying the
      * corresponding public key.
      *
@@ -418,7 +418,7 @@ final class P11KeyStore extends KeyStoreSpi {
      * @param password the password to protect the key
      * @param chain the certificate chain for the corresponding public
      * key (only required if the given key is of type
-     * <code>java.security.PrivateKey</code>).
+     * <code>j86.java.security.PrivateKey</code>).
      *
      * @exception KeyStoreException if the given key cannot be protected, or
      * this operation fails for some other reason
@@ -462,7 +462,7 @@ final class P11KeyStore extends KeyStoreSpi {
      * alias.
      *
      * <p>If the protected key is of type
-     * <code>java.security.PrivateKey</code>,
+     * <code>j86.java.security.PrivateKey</code>,
      * it must be accompanied by a certificate chain certifying the
      * corresponding public key.
      *
@@ -474,7 +474,7 @@ final class P11KeyStore extends KeyStoreSpi {
      * @param key the key (in protected format) to be associated with the alias
      * @param chain the certificate chain for the corresponding public
      * key (only useful if the protected key is of type
-     * <code>java.security.PrivateKey</code>).
+     * <code>j86.java.security.PrivateKey</code>).
      *
      * @exception KeyStoreException if this operation fails.
      */

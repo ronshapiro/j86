@@ -23,13 +23,13 @@
  * questions.
  */
 
-package sun.util.spi;
+package j86.j86.sun.util.spi;
 
-import java.util.Properties;
-import java.util.InvalidPropertiesFormatException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.IOException;
+import j86.java.util.Properties;
+import j86.java.util.InvalidPropertiesFormatException;
+import j86.java.io.InputStream;
+import j86.java.io.OutputStream;
+import j86.java.io.IOException;
 
 /**
  * Service-provider class for loading and storing {@link Properites} in XML
@@ -55,7 +55,7 @@ public abstract class XmlPropertiesProvider {
      * @param props the properties table to populate
      * @param in the input stream from which to read the XML document
      * @throws IOException if reading from the specified input stream fails
-     * @throws java.io.UnsupportedEncodingException if the document's encoding
+     * @throws j86.java.io.UnsupportedEncodingException if the document's encoding
      *         declaration can be read and it specifies an encoding that is not
      *         supported
      * @throws InvalidPropertiesFormatException Data on input stream does not
@@ -76,7 +76,7 @@ public abstract class XmlPropertiesProvider {
      * @param encoding the name of a supported character encoding
      *
      * @throws IOException if writing to the specified output stream fails
-     * @throws java.io.UnsupportedEncodingException if the encoding is not
+     * @throws j86.java.io.UnsupportedEncodingException if the encoding is not
      *         supported by the implementation
      * @throws NullPointerException if {@code out} is null.
      * @throws ClassCastException  if this {@code Properties} object

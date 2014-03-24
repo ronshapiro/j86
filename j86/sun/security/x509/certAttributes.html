@@ -29,13 +29,13 @@ OR
 </pre>
 <p>
 <table border=1>
-<caption>sun.security.x509.X509CertImpl</caption>
+<caption>j86.sun.security.x509.X509CertImpl</caption>
 <tr>
 <td><strong>Attribute</strong></td>
 <td><strong>Fully-qualified identifier</strong></td>
 <td><strong>Defined constants</strong></td>
 <td><strong>Type of Object returned</strong><br>
-(in sun.security.x509 unless fully-qualified)</td>
+(in j86.sun.security.x509 unless fully-qualified)</td>
 </tr>
 <tr>
 <td>signatureAlgorithm</td>
@@ -62,7 +62,7 @@ x509.info.version.number</td>
 <td>CertificateVersion.IDENT<br>
 none</td>
 <td>CertificateVersion<br>
-java.lang.Integer</td>
+j86.java.lang.Integer</td>
 </tr>
 <tr>
 <td>serialNumber</td>
@@ -102,8 +102,8 @@ x509.info.validity.notBefore</td>
 none<br>
 none</td>
 <td>CertificateValidity<br>
-java.util.Date<br>
-java.util.Date</td>
+j86.java.util.Date<br>
+j86.java.util.Date</td>
 </tr>
 <tr>
 <td>subject</td>
@@ -227,8 +227,8 @@ UniqueIdentity</td>
 </table>
 <p>
 Extensions can be added by implementing the
-<code>sun.security.x509.CertAttrSet</code> interface and
-subclassing <code>sun.security.x509.Extension</code> class.
+<code>j86.sun.security.x509.CertAttrSet</code> interface and
+subclassing <code>j86.sun.security.x509.Extension</code> class.
 Register the new extension using the OIDMap class.
 The following extensions are not currently supported from the
 PKIX profile:

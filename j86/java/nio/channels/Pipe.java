@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.nio.channels;
+package j86.j86.java.nio.channels;
 
-import java.io.IOException;
-import java.nio.channels.spi.*;
+import j86.java.io.IOException;
+import j86.j86.j86.java.nio.channels.spi.*;
 
 
 /**
@@ -142,8 +142,8 @@ public abstract class Pipe {
      * Opens a pipe.
      *
      * <p> The new pipe is created by invoking the {@link
-     * java.nio.channels.spi.SelectorProvider#openPipe openPipe} method of the
-     * system-wide default {@link java.nio.channels.spi.SelectorProvider}
+     * j86.j86.j86.java.nio.channels.spi.SelectorProvider#openPipe openPipe} method of the
+     * system-wide default {@link j86.j86.j86.java.nio.channels.spi.SelectorProvider}
      * object.  </p>
      *
      * @return  A new pipe

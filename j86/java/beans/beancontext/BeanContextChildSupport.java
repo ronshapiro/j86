@@ -23,21 +23,21 @@
  * questions.
  */
 
-package java.beans.beancontext;
+package j86.j86.java.beans.beancontext;
 
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
-import java.beans.PropertyChangeSupport;
+import j86.java.beans.PropertyChangeEvent;
+import j86.java.beans.PropertyChangeListener;
+import j86.java.beans.PropertyChangeSupport;
 
-import java.beans.VetoableChangeListener;
-import java.beans.VetoableChangeSupport;
+import j86.java.beans.VetoableChangeListener;
+import j86.java.beans.VetoableChangeSupport;
 
-import java.beans.PropertyVetoException;
+import j86.java.beans.PropertyVetoException;
 
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.Serializable;
+import j86.java.io.IOException;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.Serializable;
 
 /**
  * <p>
@@ -51,9 +51,9 @@ import java.io.Serializable;
  * @author      Laurence P. G. Cable
  * @since       1.2
  *
- * @see java.beans.beancontext.BeanContext
- * @see java.beans.beancontext.BeanContextServices
- * @see java.beans.beancontext.BeanContextChild
+ * @see j86.j86.java.beans.beancontext.BeanContext
+ * @see j86.j86.java.beans.beancontext.BeanContextServices
+ * @see j86.j86.java.beans.beancontext.BeanContextChild
  */
 
 public class BeanContextChildSupport implements BeanContextChild, BeanContextServicesListener, Serializable {

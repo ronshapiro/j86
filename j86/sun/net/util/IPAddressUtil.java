@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.net.util;
+package j86.j86.sun.net.util;
 
 public class IPAddressUtil {
     private final static int INADDR4SZ = 4;

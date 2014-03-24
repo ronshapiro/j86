@@ -23,11 +23,11 @@
  * questions.
  */
 
-package javax.swing.undo;
+package j86.j86.javax.swing.undo;
 
-import javax.swing.event.*;
-import javax.swing.UIManager;
-import java.util.*;
+import j86.j86.javax.swing.event.*;
+import j86.javax.swing.UIManager;
+import j86.java.util.*;
 
 /**
  * {@code UndoManager} manages a list of {@code UndoableEdits},
@@ -127,8 +127,8 @@ import java.util.*;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @author Ray Ryan
  */

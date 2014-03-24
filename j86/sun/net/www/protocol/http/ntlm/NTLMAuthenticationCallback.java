@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.net.www.protocol.http.ntlm;
+package j86.j86.j86.j86.sun.net.www.protocol.http.ntlm;
 
-import java.net.URL;
+import j86.java.net.URL;
 
 /**
  * This class is used to call back to deployment to determine if a given

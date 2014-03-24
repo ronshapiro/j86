@@ -23,25 +23,25 @@
  * questions.
  */
 
-package com.sun.rowset;
+package j86.com.sun.rowset;
 
-import java.io.*;
-import java.util.*;
-import java.sql.*;
-import javax.sql.*;
-import java.math.*;
+import j86.java.io.*;
+import j86.java.util.*;
+import j86.java.sql.*;
+import j86.javax.sql.*;
+import j86.java.math.*;
 
-import javax.sql.rowset.*;
-import javax.sql.rowset.spi.*;
-import javax.sql.rowset.serial.*;
-import com.sun.rowset.providers.*;
-import com.sun.rowset.internal.*;
+import j86.j86.javax.sql.rowset.*;
+import j86.j86.j86.javax.sql.rowset.spi.*;
+import j86.j86.j86.javax.sql.rowset.serial.*;
+import j86.j86.com.sun.rowset.providers.*;
+import j86.j86.com.sun.rowset.internal.*;
 
 /**
  * The standard implementation of the <code>FilteredRowSet</code> interface. See the interface
  * definition for full behavior and implementation requirements.
  *
- * @see javax.sql.rowset.Predicate
+ * @see j86.j86.javax.sql.rowset.Predicate
  * @author Jonathan Bruce, Amit Handa
  */
 
@@ -947,7 +947,7 @@ public class FilteredRowSetImpl extends WebRowSetImpl implements Serializable, C
    /**
      * Sets the designated column in either the current row or the insert
      * row of this <code>CachedRowSetImpl</code> object with the given
-     * <code>java.math.BigDecimal</code> object.
+     * <code>j86.java.math.BigDecimal</code> object.
      * <P>
      * This method updates a column value in the current row or the insert
      * row of this rowset, but it does not update the database.
@@ -987,7 +987,7 @@ public class FilteredRowSetImpl extends WebRowSetImpl implements Serializable, C
    /**
      * Sets the designated column in either the current row or the insert
      * row of this <code>CachedRowSetImpl</code> object with the given
-     * <code>java.math.BigDecimal</code> object.
+     * <code>j86.java.math.BigDecimal</code> object.
      * <P>
      * This method updates a column value in the current row or the insert
      * row of this rowset, but it does not update the database.
@@ -1181,7 +1181,7 @@ public class FilteredRowSetImpl extends WebRowSetImpl implements Serializable, C
      *            an SQL <code>DATE</code> or <code>TIMESTAMP</code>, or
      *            (4) this rowset is <code>ResultSet.CONCUR_READ_ONLY</code>
      */
-   public void updateDate(int columnIndex , java.sql.Date x) throws SQLException {
+   public void updateDate(int columnIndex , j86.java.sql.Date x) throws SQLException {
 
       boolean bool;
 
@@ -1222,7 +1222,7 @@ public class FilteredRowSetImpl extends WebRowSetImpl implements Serializable, C
      *            <code>TIMESTAMP</code>, or (4) this rowset is
      *            <code>ResultSet.CONCUR_READ_ONLY</code>
      */
-   public void updateDate(String columnName , java.sql.Date x) throws SQLException {
+   public void updateDate(String columnName , j86.java.sql.Date x) throws SQLException {
 
       this.updateDate(findColumn(columnName),x);
    }
@@ -1392,7 +1392,7 @@ public class FilteredRowSetImpl extends WebRowSetImpl implements Serializable, C
      * @param length the number of one-byte ASCII characters in the stream
      * @throws SQLException if this method is invoked
      */
-   public void updateAsciiStream(int columnIndex , java.io.InputStream x ,int length) throws SQLException {
+   public void updateAsciiStream(int columnIndex , j86.java.io.InputStream x ,int length) throws SQLException {
 
       boolean bool;
 
@@ -1428,7 +1428,7 @@ public class FilteredRowSetImpl extends WebRowSetImpl implements Serializable, C
      * @param x the new column value
      * @param length the number of one-byte ASCII characters in the stream
      */
-   public void updateAsciiStream(String columnName , java.io.InputStream x , int length) throws SQLException {
+   public void updateAsciiStream(String columnName , j86.java.io.InputStream x , int length) throws SQLException {
 
       this.updateAsciiStream(findColumn(columnName),x,length);
    }
@@ -1436,7 +1436,7 @@ public class FilteredRowSetImpl extends WebRowSetImpl implements Serializable, C
    /**
      * Sets the designated column in either the current row or the insert
      * row of this <code>CachedRowSetImpl</code> object with the given
-     * <code>java.io.Reader</code> object.
+     * <code>j86.java.io.Reader</code> object.
      * <P>
      * This method updates a column value in either the current row or
      * the insert row of this rowset, but it does not update the
@@ -1450,7 +1450,7 @@ public class FilteredRowSetImpl extends WebRowSetImpl implements Serializable, C
      * @param columnIndex the first column is <code>1</code>, the second
      *        is <code>2</code>, and so on; must be <code>1</code> or larger
      *        and equal to or less than the number of columns in this rowset
-     * @param x the new column value; must be a <code>java.io.Reader</code>
+     * @param x the new column value; must be a <code>j86.java.io.Reader</code>
      *          containing <code>BINARY</code>, <code>VARBINARY</code>,
      *          <code>LONGVARBINARY</code>, <code>CHAR</code>, <code>VARCHAR</code>,
      *          or <code>LONGVARCHAR</code> data
@@ -1461,7 +1461,7 @@ public class FilteredRowSetImpl extends WebRowSetImpl implements Serializable, C
      *            character type, or (4) this rowset is
      *            <code>ResultSet.CONCUR_READ_ONLY</code>
      */
-   public void updateCharacterStream(int columnIndex , java.io.Reader x , int length) throws SQLException {
+   public void updateCharacterStream(int columnIndex , j86.java.io.Reader x , int length) throws SQLException {
 
       boolean bool;
 
@@ -1481,7 +1481,7 @@ public class FilteredRowSetImpl extends WebRowSetImpl implements Serializable, C
    /**
      * Sets the designated column in either the current row or the insert
      * row of this <code>CachedRowSetImpl</code> object with the given
-     * <code>java.io.Reader</code> object.
+     * <code>j86.java.io.Reader</code> object.
      * <P>
      * This method updates a column value in either the current row or
      * the insert row of this rowset, but it does not update the
@@ -1495,7 +1495,7 @@ public class FilteredRowSetImpl extends WebRowSetImpl implements Serializable, C
      * @param columnName a <code>String</code> object that must match the
      *        SQL name of a column in this rowset, ignoring case
      * @param reader the new column value; must be a
-     * <code>java.io.Reader</code> containing <code>BINARY</code>,
+     * <code>j86.java.io.Reader</code> containing <code>BINARY</code>,
      * <code>VARBINARY</code>, <code>LONGVARBINARY</code>, <code>CHAR</code>,
      * <code>VARCHAR</code>, or <code>LONGVARCHAR</code> data
      * @param length the length of the stream in characters
@@ -1505,14 +1505,14 @@ public class FilteredRowSetImpl extends WebRowSetImpl implements Serializable, C
      *            in the stream is not a binary or character type, or (4) this
      *            rowset is <code>ResultSet.CONCUR_READ_ONLY</code>
      */
-   public void updateCharacterStream(String columnName , java.io.Reader reader, int length) throws SQLException {
+   public void updateCharacterStream(String columnName , j86.java.io.Reader reader, int length) throws SQLException {
       this.updateCharacterStream(findColumn(columnName), reader, length);
    }
 
    /**
      * Sets the designated column in either the current row or the insert
      * row of this <code>CachedRowSetImpl</code> object with the given
-     * <code>java.io.InputStream</code> object.
+     * <code>j86.java.io.InputStream</code> object.
      * <P>
      * This method updates a column value in either the current row or
      * the insert row of this rowset, but it does not update the
@@ -1526,7 +1526,7 @@ public class FilteredRowSetImpl extends WebRowSetImpl implements Serializable, C
      * @param columnIndex the first column is <code>1</code>, the second
      *        is <code>2</code>, and so on; must be <code>1</code> or larger
      *        and equal to or less than the number of columns in this rowset
-     * @param x the new column value; must be a <code>java.io.InputStream</code>
+     * @param x the new column value; must be a <code>j86.java.io.InputStream</code>
      *          containing <code>BINARY</code>, <code>VARBINARY</code>, or
      *          <code>LONGVARBINARY</code> data
      * @param length the length of the stream in bytes
@@ -1535,7 +1535,7 @@ public class FilteredRowSetImpl extends WebRowSetImpl implements Serializable, C
      *            insert row, (3) the data in the stream is not binary, or
      *            (4) this rowset is <code>ResultSet.CONCUR_READ_ONLY</code>
      */
-   public void updateBinaryStream(int columnIndex , java.io.InputStream x , int length) throws SQLException {
+   public void updateBinaryStream(int columnIndex , j86.java.io.InputStream x , int length) throws SQLException {
 
       boolean bool;
 
@@ -1555,7 +1555,7 @@ public class FilteredRowSetImpl extends WebRowSetImpl implements Serializable, C
    /**
      * Sets the designated column in either the current row or the insert
      * row of this <code>CachedRowSetImpl</code> object with the given
-     * <code>java.io.InputStream</code> object.
+     * <code>j86.java.io.InputStream</code> object.
      * <P>
      * This method updates a column value in either the current row or
      * the insert row of this rowset, but it does not update the
@@ -1568,7 +1568,7 @@ public class FilteredRowSetImpl extends WebRowSetImpl implements Serializable, C
      *
      * @param columnName a <code>String</code> object that must match the
      *        SQL name of a column in this rowset, ignoring case
-     * @param x the new column value; must be a <code>java.io.InputStream</code>
+     * @param x the new column value; must be a <code>j86.java.io.InputStream</code>
      *          containing <code>BINARY</code>, <code>VARBINARY</code>, or
      *          <code>LONGVARBINARY</code> data
      * @param length the length of the stream in bytes
@@ -1578,7 +1578,7 @@ public class FilteredRowSetImpl extends WebRowSetImpl implements Serializable, C
      *            in the stream is not binary, or (4) this rowset is
      *            <code>ResultSet.CONCUR_READ_ONLY</code>
      */
-   public void updateBinaryStream(String columnName , java.io.InputStream x, int length) throws SQLException {
+   public void updateBinaryStream(String columnName , j86.java.io.InputStream x, int length) throws SQLException {
 
       this.updateBinaryStream(findColumn(columnName),x,length);
    }

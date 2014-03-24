@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.text;
+package j86.java.text;
 
 /**
 * An Annotation object is used as a wrapper for a text attribute value if

@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.lang;
+package j86.java.lang;
 
-import java.lang.annotation.*;
-import static java.lang.annotation.ElementType.*;
+import j86.j86.java.lang.annotation.*;
+import static j86.j86.java.lang.annotation.ElementType.*;
 
 /**
  * A program element annotated &#64;Deprecated is one that programmers

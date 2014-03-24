@@ -22,12 +22,12 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text;
+package j86.j86.javax.swing.text;
 
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.Toolkit;
-import javax.swing.Icon;
+import j86.java.awt.Color;
+import j86.java.awt.Component;
+import j86.java.awt.Toolkit;
+import j86.javax.swing.Icon;
 
 /**
  * <p>

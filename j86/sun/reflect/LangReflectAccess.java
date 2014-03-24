@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.reflect;
+package j86.sun.reflect;
 
-import java.lang.reflect.*;
+import j86.j86.j86.java.lang.reflect.*;
 
 /** An interface which gives privileged packages Java-level access to
-    internals of java.lang.reflect. */
+    internals of j86.j86.j86.java.lang.reflect. */
 
 public interface LangReflectAccess {
-    /** Creates a new java.lang.reflect.Field. Access checks as per
-        java.lang.reflect.AccessibleObject are not overridden. */
+    /** Creates a new j86.j86.j86.java.lang.reflect.Field. Access checks as per
+        j86.j86.j86.java.lang.reflect.AccessibleObject are not overridden. */
     public Field newField(Class<?> declaringClass,
                           String name,
                           Class<?> type,
@@ -41,8 +41,8 @@ public interface LangReflectAccess {
                           String signature,
                           byte[] annotations);
 
-    /** Creates a new java.lang.reflect.Method. Access checks as per
-      java.lang.reflect.AccessibleObject are not overridden. */
+    /** Creates a new j86.j86.j86.java.lang.reflect.Method. Access checks as per
+      j86.j86.j86.java.lang.reflect.AccessibleObject are not overridden. */
     public Method newMethod(Class<?> declaringClass,
                             String name,
                             Class<?>[] parameterTypes,
@@ -55,8 +55,8 @@ public interface LangReflectAccess {
                             byte[] parameterAnnotations,
                             byte[] annotationDefault);
 
-    /** Creates a new java.lang.reflect.Constructor. Access checks as
-      per java.lang.reflect.AccessibleObject are not overridden. */
+    /** Creates a new j86.j86.j86.java.lang.reflect.Constructor. Access checks as
+      per j86.j86.j86.java.lang.reflect.AccessibleObject are not overridden. */
     public <T> Constructor<T> newConstructor(Class<T> declaringClass,
                                              Class<?>[] parameterTypes,
                                              Class<?>[] checkedExceptions,
@@ -66,18 +66,18 @@ public interface LangReflectAccess {
                                              byte[] annotations,
                                              byte[] parameterAnnotations);
 
-    /** Gets the MethodAccessor object for a java.lang.reflect.Method */
+    /** Gets the MethodAccessor object for a j86.j86.j86.java.lang.reflect.Method */
     public MethodAccessor getMethodAccessor(Method m);
 
-    /** Sets the MethodAccessor object for a java.lang.reflect.Method */
+    /** Sets the MethodAccessor object for a j86.j86.j86.java.lang.reflect.Method */
     public void setMethodAccessor(Method m, MethodAccessor accessor);
 
     /** Gets the ConstructorAccessor object for a
-        java.lang.reflect.Constructor */
+        j86.j86.j86.java.lang.reflect.Constructor */
     public ConstructorAccessor getConstructorAccessor(Constructor<?> c);
 
     /** Sets the ConstructorAccessor object for a
-        java.lang.reflect.Constructor */
+        j86.j86.j86.java.lang.reflect.Constructor */
     public void setConstructorAccessor(Constructor<?> c,
                                        ConstructorAccessor accessor);
 

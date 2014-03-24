@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.security.ssl;
+package j86.sun.security.ssl;
 
-import java.security.AccessControlContext;
-import java.security.AccessController;
-import java.security.Permission;
-import java.security.Principal;
-import java.security.PrivilegedAction;
-import javax.crypto.SecretKey;
-import javax.security.auth.Subject;
-import javax.security.auth.login.LoginException;
+import j86.java.security.AccessControlContext;
+import j86.java.security.AccessController;
+import j86.java.security.Permission;
+import j86.java.security.Principal;
+import j86.java.security.PrivilegedAction;
+import j86.javax.crypto.SecretKey;
+import j86.javax.security.auth.Subject;
+import j86.j86.javax.security.auth.login.LoginException;
 
 /**
  * A helper class for Kerberos APIs.
@@ -43,7 +43,7 @@ public final class Krb5Helper {
 
     // loads Krb5Proxy implementation class if available
     private static final String IMPL_CLASS =
-        "sun.security.ssl.krb5.Krb5ProxyImpl";
+        "j86.j86.sun.security.ssl.krb5.Krb5ProxyImpl";
 
     private static final Krb5Proxy proxy =
         AccessController.doPrivileged(new PrivilegedAction<Krb5Proxy>() {

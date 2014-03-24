@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.script;
+package j86.javax.script;
 
-import java.util.List;
+import j86.java.util.List;
 
 /**
  * <code>ScriptEngineFactory</code> is used to describe and instantiate

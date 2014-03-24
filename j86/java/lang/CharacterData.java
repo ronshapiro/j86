@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.lang;
+package j86.java.lang;
 
 abstract class CharacterData {
     abstract int getProperties(int ch);

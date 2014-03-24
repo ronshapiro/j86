@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.management.counter;
+package j86.j86.sun.management.counter;
 
-import java.io.IOException;
-import java.io.ObjectOutputStream;
-import java.io.ObjectInputStream;
+import j86.java.io.IOException;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectInputStream;
 
 /**
  */

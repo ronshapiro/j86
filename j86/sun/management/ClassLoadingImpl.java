@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.management;
+package j86.sun.management;
 
-import java.lang.management.ClassLoadingMXBean;
-import java.lang.management.ManagementFactory;
-import javax.management.ObjectName;
+import j86.j86.java.lang.management.ClassLoadingMXBean;
+import j86.j86.java.lang.management.ManagementFactory;
+import j86.javax.management.ObjectName;
 
 /**
  * Implementation class for the class loading subsystem.

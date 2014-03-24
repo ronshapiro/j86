@@ -23,17 +23,17 @@
  * questions.
  */
 
-package com.sun.net.httpserver;
+package com.j86.j86.sun.net.httpserver;
 
-import java.net.*;
-import java.io.*;
-import java.nio.*;
-import java.security.*;
-import java.nio.channels.*;
-import java.util.*;
-import java.util.concurrent.*;
-import javax.net.ssl.*;
-import com.sun.net.httpserver.spi.*;
+import j86.java.net.*;
+import j86.java.io.*;
+import j86.java.nio.*;
+import j86.java.security.*;
+import j86.j86.java.nio.channels.*;
+import j86.java.util.*;
+import j86.j86.java.util.concurrent.*;
+import j86.j86.javax.net.ssl.*;
+import j86.com.j86.j86.sun.net.httpserver.spi.*;
 
 /**
  * This class is an extension of {@link HttpServer} which provides
@@ -66,7 +66,7 @@ public abstract class HttpsServer extends HttpServer {
 
     /**
      * Create a <code>HttpsServer</code> instance which will bind to the
-     * specified {@link java.net.InetSocketAddress} (IP address and port number)
+     * specified {@link j86.java.net.InetSocketAddress} (IP address and port number)
      *
      * A maximum backlog can also be specified. This is the maximum number of
      * queued incoming connections to allow on the listening socket.

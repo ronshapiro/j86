@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.reflect.generics.tree;
+package j86.j86.sun.reflect.generics.tree;
 
-import sun.reflect.generics.visitor.TypeTreeVisitor;
+import j86.j86.sun.reflect.generics.visitor.TypeTreeVisitor;
 
 /** AST that represents the type char. */
 public class CharSignature implements BaseType {

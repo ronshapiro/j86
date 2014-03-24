@@ -23,14 +23,14 @@
  * questions.
  */
 
-package javax.management;
+package j86.javax.management;
 
 
-import java.util.List;
-import java.util.Vector;
+import j86.java.util.List;
+import j86.java.util.Vector;
 
 /**
- * Provides an implementation of the {@link javax.management.NotificationFilter} interface.
+ * Provides an implementation of the {@link j86.javax.management.NotificationFilter} interface.
  * The filtering is performed on the notification type attribute.
  * <P>
  * Manages a list of enabled notification types.
@@ -51,7 +51,7 @@ import java.util.Vector;
  * </BLOCKQUOTE>
  * The listener <CODE>myListener</CODE> will only receive notifications the type of which equals/starts with "my_example.my_type".
  *
- * @see javax.management.NotificationBroadcaster#addNotificationListener
+ * @see j86.javax.management.NotificationBroadcaster#addNotificationListener
  *
  * @since 1.5
  */
@@ -89,7 +89,7 @@ public class NotificationFilterSupport implements NotificationFilter {
                     return true;
                 }
             }
-        } catch (java.lang.NullPointerException e) {
+        } catch (j86.java.lang.NullPointerException e) {
             // Should never occurs...
             return false;
         }
@@ -119,7 +119,7 @@ public class NotificationFilterSupport implements NotificationFilter {
      * will no match any notification type.
      *
      * @param prefix The prefix.
-     * @exception java.lang.IllegalArgumentException The prefix parameter is null.
+     * @exception j86.java.lang.IllegalArgumentException The prefix parameter is null.
      */
     public synchronized void enableType(String prefix)
             throws IllegalArgumentException {

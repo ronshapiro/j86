@@ -23,29 +23,29 @@
  * questions.
  */
 
-package javax.swing.plaf.metal;
+package j86.j86.j86.javax.swing.plaf.metal;
 
-import javax.swing.*;
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.Container;
-import java.awt.Dimension;
-import java.awt.Frame;
-import java.awt.Graphics;
-import java.awt.GraphicsEnvironment;
-import java.awt.Insets;
-import java.awt.Point;
-import java.awt.Rectangle;
-import java.awt.event.*;
-import java.lang.ref.WeakReference;
-import java.util.*;
+import j86.javax.swing.*;
+import j86.java.awt.Color;
+import j86.java.awt.Component;
+import j86.java.awt.Container;
+import j86.java.awt.Dimension;
+import j86.java.awt.Frame;
+import j86.java.awt.Graphics;
+import j86.java.awt.GraphicsEnvironment;
+import j86.java.awt.Insets;
+import j86.java.awt.Point;
+import j86.java.awt.Rectangle;
+import j86.j86.java.awt.event.*;
+import j86.j86.java.lang.ref.WeakReference;
+import j86.java.util.*;
 
-import java.beans.PropertyChangeListener;
+import j86.java.beans.PropertyChangeListener;
 
-import javax.swing.event.*;
-import javax.swing.border.*;
-import javax.swing.plaf.*;
-import javax.swing.plaf.basic.*;
+import j86.j86.javax.swing.event.*;
+import j86.j86.javax.swing.border.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.j86.javax.swing.plaf.basic.*;
 
 /**
  * A Metal Look and Feel implementation of ToolBarUI.  This implementation
@@ -287,8 +287,8 @@ public class MetalToolBarUI extends BasicToolBarUI
      * @param c JComponent painting on
      * @throws NullPointerException if <code>g</code> or <code>c</code> is
      *         null
-     * @see javax.swing.plaf.ComponentUI#update
-     * @see javax.swing.plaf.ComponentUI#paint
+     * @see j86.j86.javax.swing.plaf.ComponentUI#update
+     * @see j86.j86.javax.swing.plaf.ComponentUI#paint
      * @since 1.5
      */
     public void update(Graphics g, JComponent c) {

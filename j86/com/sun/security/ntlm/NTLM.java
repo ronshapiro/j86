@@ -23,26 +23,26 @@
  * questions.
  */
 
-package com.sun.security.ntlm;
+package j86.com.sun.security.ntlm;
 
-import static com.sun.security.ntlm.Version.*;
-import java.io.IOException;
-import java.io.UnsupportedEncodingException;
-import java.security.InvalidKeyException;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-import java.security.spec.InvalidKeySpecException;
-import java.util.Arrays;
-import java.util.Locale;
-import javax.crypto.BadPaddingException;
-import javax.crypto.Cipher;
-import javax.crypto.IllegalBlockSizeException;
-import javax.crypto.Mac;
-import javax.crypto.NoSuchPaddingException;
-import javax.crypto.SecretKey;
-import javax.crypto.SecretKeyFactory;
-import javax.crypto.spec.DESKeySpec;
-import javax.crypto.spec.SecretKeySpec;
+import static j86.com.sun.security.ntlm.Version.*;
+import j86.java.io.IOException;
+import j86.java.io.UnsupportedEncodingException;
+import j86.java.security.InvalidKeyException;
+import j86.java.security.MessageDigest;
+import j86.java.security.NoSuchAlgorithmException;
+import j86.j86.java.security.spec.InvalidKeySpecException;
+import j86.java.util.Arrays;
+import j86.java.util.Locale;
+import j86.javax.crypto.BadPaddingException;
+import j86.javax.crypto.Cipher;
+import j86.javax.crypto.IllegalBlockSizeException;
+import j86.javax.crypto.Mac;
+import j86.javax.crypto.NoSuchPaddingException;
+import j86.javax.crypto.SecretKey;
+import j86.javax.crypto.SecretKeyFactory;
+import j86.j86.javax.crypto.spec.DESKeySpec;
+import j86.j86.javax.crypto.spec.SecretKeySpec;
 
 /**
  * NTLM authentication implemented according to MS-NLMP, version 12.1
@@ -79,7 +79,7 @@ class NTLM {
         try {
             fac = SecretKeyFactory.getInstance ("DES");
             cipher = Cipher.getInstance ("DES/ECB/NoPadding");
-            md4 = sun.security.provider.MD4.getInstance();
+            md4 = j86.sun.security.provider.MD4.getInstance();
             hmac = Mac.getInstance("HmacMD5");
             md5 = MessageDigest.getInstance("MD5");
         } catch (NoSuchPaddingException e) {
@@ -97,7 +97,7 @@ class NTLM {
      * match their own debugging/logging mechanisms.
      * @param format a format string
      * @param args the arguments referenced by <code>format</code>
-     * @see java.io.PrintStream#printf(java.lang.String, java.lang.Object[])
+     * @see j86.java.io.PrintStream#printf(j86.java.lang.String, java.lang.Object[])
      */
     public void debug(String format, Object... args) {
         if (DEBUG) {
@@ -116,7 +116,7 @@ class NTLM {
     public void debug(byte[] bytes) {
         if (DEBUG) {
             try {
-                new sun.misc.HexDumpEncoder().encodeBuffer(bytes, System.out);
+                new j86.sun.misc.HexDumpEncoder().encodeBuffer(bytes, System.out);
             } catch (IOException ioe) {
                 // Impossible
             }

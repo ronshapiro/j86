@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.security;
+package j86.java.security;
 
-import java.util.Set;
+import j86.java.util.Set;
 
 /**
  * This interface specifies constraints for cryptographic algorithms,
@@ -43,8 +43,8 @@ import java.util.Set;
  * certificate in the certification path contains the required algorithm
  * constraints.
  *
- * @see javax.net.ssl.SSLParameters#getAlgorithmConstraints
- * @see javax.net.ssl.SSLParameters#setAlgorithmConstraints(AlgorithmConstraints)
+ * @see j86.j86.javax.net.ssl.SSLParameters#getAlgorithmConstraints
+ * @see j86.j86.javax.net.ssl.SSLParameters#setAlgorithmConstraints(AlgorithmConstraints)
  *
  * @since 1.7
  */

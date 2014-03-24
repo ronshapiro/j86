@@ -24,13 +24,13 @@
  */
 
 
-package javax.management.openmbean;
+package j86.j86.javax.management.openmbean;
 
 
 // java import
 //
-import java.util.Set;
-import java.util.Collection;
+import j86.java.util.Set;
+import j86.java.util.Collection;
 
 // jmx import
 //
@@ -253,7 +253,7 @@ public interface TabularData /*extends Map*/ {
 
 
 
-    /* ***  Commodity methods from java.lang.Object  *** */
+    /* ***  Commodity methods from j86.java.lang.Object  *** */
 
 
     /**

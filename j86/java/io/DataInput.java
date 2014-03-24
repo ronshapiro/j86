@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.io;
+package j86.java.io;
 
 /**
  * The {@code DataInput} interface provides
@@ -141,8 +141,8 @@ package java.io;
  *     are represented in the form of surrogate pairs.
  * </ul>
  * @author  Frank Yellin
- * @see     java.io.DataInputStream
- * @see     java.io.DataOutput
+ * @see     j86.java.io.DataInputStream
+ * @see     j86.java.io.DataOutput
  * @since   JDK1.0
  */
 public

@@ -32,16 +32,16 @@
 <H1 ALIGN=CENTER>Networking Properties</H1>
 <P ALIGN=LEFT>There are a few standard system properties used to
 alter the mechanisms and behavior of the various classes of the
-java.net package. Some are checked only once at startup of the VM,
+j86.java.net package. Some are checked only once at startup of the VM,
 and therefore are best set using the -D option of the java command,
 while others have a more dynamic nature and can also be changed using
-the <a href="../../lang/System.html#setProperty(java.lang.String, java.lang.String)">System.setProperty()</a> API. The purpose of this document is to list
+the <a href="../../lang/System.html#setProperty(j86.java.lang.String, java.lang.String)">System.setProperty()</a> API. The purpose of this document is to list
 and detail all of these properties.</P>
 <P>If there is no special note, a property value is checked every time it is used.</P>
 <a name="Ipv4IPv6"></a>
 <H2>IPv4 / IPv6</H2>
 <UL>
-	<LI><P><B>java.net.preferIPv4Stack</B> (default: false)<BR>
+	<LI><P><B>j86.java.net.preferIPv4Stack</B> (default: false)<BR>
 	If IPv6 is available on the operating system the
 	underlying native socket will be, by default, an IPv6 socket which
 	lets applications connect to, and accept connections from, both
@@ -49,7 +49,7 @@ and detail all of these properties.</P>
 	rather use IPv4 only sockets, then this property can be set to <B>true</B>.
 	The implication is that it will not be possible for the application
 	to communicate with IPv6 only hosts.</P>
-	<LI><P><B>java.net.preferIPv6Addresses</B> (default: false)<BR>
+	<LI><P><B>j86.java.net.preferIPv6Addresses</B> (default: false)<BR>
 	When dealing with a host which has both IPv4
 	and IPv6 addresses, and if IPv6 is available on the operating
 	system, the default behavior is to prefer using IPv4 addresses over
@@ -136,19 +136,19 @@ of proxies.</P>
                 default is <code>5</code> indicating SOCKS V5, alternatively
                 <code>4</code> can be specified for SOCKS V4. Setting the property
                 to values other than these leads to unspecified behavior.</P>
-		<LI><P><B>java.net.socks.username</B> (default: &lt;none&gt;)<BR>
+		<LI><P><B>j86.java.net.socks.username</B> (default: &lt;none&gt;)<BR>
 	        Username to use if the SOCKSv5 server asks for authentication
-	        and no java.net.Authenticator instance was found.</P>
-		<LI><P><B>java.net.socks.password</B> (default: &lt;none&gt;)<BR>
+	        and no j86.java.net.Authenticator instance was found.</P>
+		<LI><P><B>j86.java.net.socks.password</B> (default: &lt;none&gt;)<BR>
 	        Password to use if the SOCKSv5 server asks for authentication
-	        and no java.net.Authenticator instance was found.</P>
+	        and no j86.java.net.Authenticator instance was found.</P>
 		<P>Note that if no authentication is provided with either the above
 		properties or an Authenticator, and the proxy requires one, then
 		the <B>user.name</B> property will be used with no password.</P>
 	</UL>
-	<LI><P><B>java.net.useSystemProxies</B> (default: false)<BR>
+	<LI><P><B>j86.java.net.useSystemProxies</B> (default: false)<BR>
 	On recent Windows systems and on Gnome 2.x systems it is possible to
-	tell the java.net stack, setting this property to <B>true</B>, to use
+	tell the j86.java.net stack, setting this property to <B>true</B>, to use
 	the system proxy settings (both	these systems let you set proxies
 	globally through their user interface). Note that this property is
 	checked only once at startup.</P>
@@ -194,7 +194,7 @@ of proxies.</P>
 	HTTP request.</P>
 	<LI><P><B>http.auth.ntlm.domain</B> (default: &lt;none&gt;)<BR>
 	NTLM is another authentication scheme. It uses the
-	java.net.Authenticator class to acquire usernames and passwords when
+	j86.java.net.Authenticator class to acquire usernames and passwords when
 	they are needed. However NTLM also needs the NT domain name. There are
 	3 options for specifying that domain:</P>
 	<OL>
@@ -214,7 +214,7 @@ of proxies.</P>
 <P>All these properties are checked only once at startup.</P>
 <a name="AddressCache"></a>
 <H2>Address Cache</H2>
-<P>The java.net package, when doing name resolution, uses an address
+<P>The j86.java.net package, when doing name resolution, uses an address
 cache for both security and performance reasons. Any address
 resolution attempt, be it forward (name to IP address) or reverse (IP
 address to name), will have its result cached, whether it was

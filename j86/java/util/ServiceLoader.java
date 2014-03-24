@@ -23,21 +23,21 @@
  * questions.
  */
 
-package java.util;
+package j86.java.util;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.net.URL;
-import java.security.AccessController;
-import java.security.AccessControlContext;
-import java.security.PrivilegedAction;
-import java.util.ArrayList;
-import java.util.Enumeration;
-import java.util.Iterator;
-import java.util.List;
-import java.util.NoSuchElementException;
+import j86.java.io.BufferedReader;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.io.InputStreamReader;
+import j86.java.net.URL;
+import j86.java.security.AccessController;
+import j86.java.security.AccessControlContext;
+import j86.java.security.PrivilegedAction;
+import j86.java.util.ArrayList;
+import j86.java.util.Enumeration;
+import j86.java.util.Iterator;
+import j86.java.util.List;
+import j86.java.util.NoSuchElementException;
 
 
 /**
@@ -426,8 +426,8 @@ public final class ServiceLoader<S>
      *
      * <p> To achieve laziness the actual work of parsing the available
      * provider-configuration files and instantiating providers must be done by
-     * the iterator itself.  Its {@link java.util.Iterator#hasNext hasNext} and
-     * {@link java.util.Iterator#next next} methods can therefore throw a
+     * the iterator itself.  Its {@link j86.java.util.Iterator#hasNext hasNext} and
+     * {@link j86.java.util.Iterator#next next} methods can therefore throw a
      * {@link ServiceConfigurationError} if a provider-configuration file
      * violates the specified format, or if it names a provider class that
      * cannot be found and instantiated, or if the result of instantiating the
@@ -450,12 +450,12 @@ public final class ServiceLoader<S>
      * fail silently.</blockquote>
      *
      * <p> The iterator returned by this method does not support removal.
-     * Invoking its {@link java.util.Iterator#remove() remove} method will
+     * Invoking its {@link j86.java.util.Iterator#remove() remove} method will
      * cause an {@link UnsupportedOperationException} to be thrown.
      *
      * @implNote When adding providers to the cache, the {@link #iterator
      * Iterator} processes resources in the order that the {@link
-     * java.lang.ClassLoader#getResources(java.lang.String)
+     * j86.java.lang.ClassLoader#getResources(java.lang.String)
      * ClassLoader.getResources(String)} method finds the service configuration
      * files.
      *
@@ -512,7 +512,7 @@ public final class ServiceLoader<S>
 
     /**
      * Creates a new service loader for the given service type, using the
-     * current thread's {@linkplain java.lang.Thread#getContextClassLoader
+     * current thread's {@linkplain j86.java.lang.Thread#getContextClassLoader
      * context class loader}.
      *
      * <p> An invocation of this convenience method of the form
@@ -580,7 +580,7 @@ public final class ServiceLoader<S>
      * @return  A descriptive string
      */
     public String toString() {
-        return "java.util.ServiceLoader[" + service.getName() + "]";
+        return "j86.java.util.ServiceLoader[" + service.getName() + "]";
     }
 
 }

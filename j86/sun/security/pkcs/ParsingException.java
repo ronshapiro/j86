@@ -29,9 +29,9 @@
  * @author Benjamin Renaud
  */
 
-package sun.security.pkcs;
+package j86.sun.security.pkcs;
 
-import java.io.IOException;
+import j86.java.io.IOException;
 
 public class ParsingException extends IOException {
 

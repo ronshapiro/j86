@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.naming.spi;
+package j86.j86.javax.naming.spi;
 
-import java.util.Hashtable;
-import javax.naming.*;
+import j86.java.util.Hashtable;
+import j86.javax.naming.*;
 
 /**
   * This interface represents a factory that creates an initial context.
@@ -45,8 +45,8 @@ import javax.naming.*;
   *
   * @see InitialContextFactoryBuilder
   * @see NamingManager#getInitialContext
-  * @see javax.naming.InitialContext
-  * @see javax.naming.directory.InitialDirContext
+  * @see j86.javax.naming.InitialContext
+  * @see j86.j86.javax.naming.directory.InitialDirContext
   * @since 1.3
   */
 

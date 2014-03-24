@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.security.krb5.internal.crypto.dk;
+package j86.j86.j86.j86.sun.security.krb5.internal.crypto.dk;
 
-import java.security.*;
-import javax.crypto.*;
-import javax.crypto.spec.*;
-import java.util.*;
-import sun.security.krb5.EncryptedData;
-import sun.security.krb5.KrbCryptoException;
-import sun.security.krb5.Confounder;
-import sun.security.krb5.internal.crypto.KeyUsage;
+import j86.java.security.*;
+import j86.javax.crypto.*;
+import j86.j86.javax.crypto.spec.*;
+import j86.java.util.*;
+import j86.sun.security.krb5.EncryptedData;
+import j86.sun.security.krb5.KrbCryptoException;
+import j86.sun.security.krb5.Confounder;
+import j86.j86.j86.sun.security.krb5.internal.crypto.KeyUsage;
 
 /**
  * Support for ArcFour in Kerberos
@@ -87,7 +87,7 @@ public class ArcFourCrypto extends DkCrypto {
             passwd = charToUtf16(secret);
 
             // provider for MD4
-            MessageDigest md = sun.security.provider.MD4.getInstance();
+            MessageDigest md = j86.sun.security.provider.MD4.getInstance();
             md.update(passwd);
             digest = md.digest();
         } catch (Exception e) {

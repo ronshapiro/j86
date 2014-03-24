@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.security.acl;
+package j86.sun.security.acl;
 
-import java.security.*;
+import j86.java.security.*;
 
 /**
  * This class implements a group of principals.

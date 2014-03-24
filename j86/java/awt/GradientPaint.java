@@ -23,13 +23,13 @@
  * questions.
  */
 
-package java.awt;
+package j86.java.awt;
 
-import java.awt.geom.Point2D;
-import java.awt.geom.Rectangle2D;
-import java.awt.geom.AffineTransform;
-import java.awt.image.ColorModel;
-import java.beans.ConstructorProperties;
+import j86.j86.java.awt.geom.Point2D;
+import j86.j86.java.awt.geom.Rectangle2D;
+import j86.j86.java.awt.geom.AffineTransform;
+import j86.j86.j86.java.awt.image.ColorModel;
+import j86.java.beans.ConstructorProperties;
 
 /**
  * The <code>GradientPaint</code> class provides a way to fill

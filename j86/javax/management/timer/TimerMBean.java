@@ -23,21 +23,21 @@
  * questions.
  */
 
-package javax.management.timer;
+package j86.j86.javax.management.timer;
 
 
 
 // java imports
 //
-import java.util.Date;
-import java.util.Vector;
+import j86.java.util.Date;
+import j86.java.util.Vector;
 // NPCTE fix for bugId 4464388, esc 0,  MR , to be added after modification of jmx spec
-//import java.io.Serializable;
+//import j86.java.io.Serializable;
 // end of NPCTE fix for bugId 4464388
 
 // jmx imports
 //
-import javax.management.InstanceNotFoundException;
+import j86.javax.management.InstanceNotFoundException;
 
 /**
  * Exposes the management interface of the timer MBean.
@@ -77,7 +77,7 @@ public interface TimerMBean {
      * its associated date, period and number of occurrences cannot be updated.
      * <P>
      * In the case of a periodic notification, the value of parameter <i>fixedRate</i> is used to
-     * specify the execution scheme, as specified in {@link java.util.Timer}.
+     * specify the execution scheme, as specified in {@link j86.java.util.Timer}.
      *
      * @param type The timer notification type.
      * @param message The timer notification detailed message.
@@ -93,7 +93,7 @@ public interface TimerMBean {
      *
      * @return The identifier of the new created timer notification.
      *
-     * @exception java.lang.IllegalArgumentException The date is {@code null} or
+     * @exception j86.java.lang.IllegalArgumentException The date is {@code null} or
      * the period or the number of occurrences is negative.
      *
      * @see #addNotification(String, String, Object, Date, long, long)
@@ -105,7 +105,7 @@ public interface TimerMBean {
 
     public Integer addNotification(String type, String message, Object userData,
                                    Date date, long period, long nbOccurences, boolean fixedRate)
-        throws java.lang.IllegalArgumentException;
+        throws j86.java.lang.IllegalArgumentException;
 
     /**
      * Creates a new timer notification with the specified <CODE>type</CODE>, <CODE>message</CODE>
@@ -122,7 +122,7 @@ public interface TimerMBean {
      * its associated date, period and number of occurrences cannot be updated.
      * <P>
      * In the case of a periodic notification, uses a <i>fixed-delay</i> execution scheme, as specified in
-     * {@link java.util.Timer}. In order to use a <i>fixed-rate</i> execution scheme, use
+     * {@link j86.java.util.Timer}. In order to use a <i>fixed-rate</i> execution scheme, use
      * {@link #addNotification(String, String, Object, Date, long, long, boolean)} instead.
      *
      * @param type The timer notification type.
@@ -134,7 +134,7 @@ public interface TimerMBean {
      *
      * @return The identifier of the new created timer notification.
      *
-     * @exception java.lang.IllegalArgumentException The date is {@code null} or
+     * @exception j86.java.lang.IllegalArgumentException The date is {@code null} or
      * the period or the number of occurrences is negative.
      *
      * @see #addNotification(String, String, Object, Date, long, long, boolean)
@@ -146,7 +146,7 @@ public interface TimerMBean {
 
     public Integer addNotification(String type, String message, Object userData,
                                    Date date, long period, long nbOccurences)
-        throws java.lang.IllegalArgumentException;
+        throws j86.java.lang.IllegalArgumentException;
 
     /**
      * Creates a new timer notification with the specified <CODE>type</CODE>, <CODE>message</CODE>
@@ -154,7 +154,7 @@ public interface TimerMBean {
      * and period and a null number of occurrences.
      * <P>
      * The timer notification will repeat continuously using the timer period using a <i>fixed-delay</i>
-     * execution scheme, as specified in {@link java.util.Timer}. In order to use a <i>fixed-rate</i>
+     * execution scheme, as specified in {@link j86.java.util.Timer}. In order to use a <i>fixed-rate</i>
      * execution scheme, use {@link #addNotification(String, String, Object, Date, long, long,
      * boolean)} instead.
      * <P>
@@ -171,7 +171,7 @@ public interface TimerMBean {
      *
      * @return The identifier of the new created timer notification.
      *
-     * @exception java.lang.IllegalArgumentException The date is {@code null} or
+     * @exception j86.java.lang.IllegalArgumentException The date is {@code null} or
      * the period is negative.
      */
 // NPCTE fix for bugId 4464388, esc 0,  MR , to be added after modification of jmx spec
@@ -181,7 +181,7 @@ public interface TimerMBean {
 
     public Integer addNotification(String type, String message, Object userData,
                                    Date date, long period)
-        throws java.lang.IllegalArgumentException;
+        throws j86.java.lang.IllegalArgumentException;
 
     /**
      * Creates a new timer notification with the specified <CODE>type</CODE>, <CODE>message</CODE>
@@ -201,15 +201,15 @@ public interface TimerMBean {
      *
      * @return The identifier of the new created timer notification.
      *
-     * @exception java.lang.IllegalArgumentException The date is {@code null}.
+     * @exception j86.java.lang.IllegalArgumentException The date is {@code null}.
      */
 // NPCTE fix for bugId 4464388, esc 0,  MR, to be added after modification of jmx spec
 //  public synchronized Integer addNotification(String type, String message, Serializable userData, Date date)
-//      throws java.lang.IllegalArgumentException {
+//      throws j86.java.lang.IllegalArgumentException {
 // end of NPCTE fix for bugId 4464388
 
     public Integer addNotification(String type, String message, Object userData, Date date)
-        throws java.lang.IllegalArgumentException;
+        throws j86.java.lang.IllegalArgumentException;
 
     /**
      * Removes the timer notification corresponding to the specified identifier from the list of notifications.

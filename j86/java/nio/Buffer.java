@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.nio;
+package j86.java.nio;
 
-import java.util.Spliterator;
+import j86.java.util.Spliterator;
 
 /**
  * A container for data of a specific primitive type.
@@ -348,7 +348,7 @@ public abstract class Buffer {
      * out.write(buf);    // Write header + data to channel</pre></blockquote>
      *
      * <p> This method is often used in conjunction with the {@link
-     * java.nio.ByteBuffer#compact compact} method when transferring data from
+     * j86.java.nio.ByteBuffer#compact compact} method when transferring data from
      * one place to another.  </p>
      *
      * @return  This buffer

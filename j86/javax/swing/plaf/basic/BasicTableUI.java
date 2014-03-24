@@ -23,30 +23,30 @@
  * questions.
  */
 
-package javax.swing.plaf.basic;
+package j86.j86.j86.javax.swing.plaf.basic;
 
-import java.awt.*;
-import java.awt.datatransfer.*;
-import java.awt.dnd.*;
-import java.awt.event.*;
-import java.util.Enumeration;
-import java.util.EventObject;
-import java.util.Hashtable;
-import java.util.TooManyListenersException;
-import javax.swing.*;
-import javax.swing.event.*;
-import javax.swing.plaf.*;
-import javax.swing.text.*;
-import javax.swing.table.*;
-import javax.swing.plaf.basic.DragRecognitionSupport.BeforeDrag;
-import sun.swing.SwingUtilities2;
+import j86.java.awt.*;
+import j86.j86.java.awt.datatransfer.*;
+import j86.j86.java.awt.dnd.*;
+import j86.j86.java.awt.event.*;
+import j86.java.util.Enumeration;
+import j86.java.util.EventObject;
+import j86.java.util.Hashtable;
+import j86.java.util.TooManyListenersException;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.event.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.javax.swing.text.*;
+import j86.j86.javax.swing.table.*;
+import j86.j86.j86.javax.swing.plaf.basic.DragRecognitionSupport.BeforeDrag;
+import j86.sun.swing.SwingUtilities2;
 
 
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
+import j86.java.beans.PropertyChangeEvent;
+import j86.java.beans.PropertyChangeListener;
 
-import sun.swing.DefaultLookup;
-import sun.swing.UIAction;
+import j86.sun.swing.DefaultLookup;
+import j86.sun.swing.UIAction;
 
 /**
  * BasicTableUI implementation
@@ -1649,7 +1649,7 @@ public class BasicTableUI extends TableUI
      *
      * @throws NullPointerException {@inheritDoc}
      * @throws IllegalArgumentException {@inheritDoc}
-     * @see javax.swing.JComponent#getBaseline(int, int)
+     * @see j86.javax.swing.JComponent#getBaseline(int, int)
      * @since 1.6
      */
     public int getBaseline(JComponent c, int width, int height) {
@@ -1674,7 +1674,7 @@ public class BasicTableUI extends TableUI
      * changes as the size changes.
      *
      * @throws NullPointerException {@inheritDoc}
-     * @see javax.swing.JComponent#getBaseline(int, int)
+     * @see j86.javax.swing.JComponent#getBaseline(int, int)
      * @since 1.6
      */
     public Component.BaselineResizeBehavior getBaselineResizeBehavior(

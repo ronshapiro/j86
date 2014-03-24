@@ -28,16 +28,16 @@
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
 
-package sun.security.krb5.internal.ccache;
+package j86.j86.j86.sun.security.krb5.internal.ccache;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.Hashtable;
-import java.util.Vector;
-import java.util.StringTokenizer;
-import sun.security.krb5.*;
-import sun.security.krb5.internal.*;
-import sun.security.krb5.internal.util.KrbDataInputStream;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.util.Hashtable;
+import j86.java.util.Vector;
+import j86.java.util.StringTokenizer;
+import j86.sun.security.krb5.*;
+import j86.j86.sun.security.krb5.internal.*;
+import j86.j86.j86.sun.security.krb5.internal.util.KrbDataInputStream;
 
 /**
  * This class extends KrbDataInputStream. It is used for parsing FCC-format

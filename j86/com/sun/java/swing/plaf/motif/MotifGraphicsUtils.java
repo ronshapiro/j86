@@ -22,24 +22,24 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.java.swing.plaf.motif;
+package j86.j86.com.sun.java.swing.plaf.motif;
 
-import sun.swing.SwingUtilities2;
+import j86.sun.swing.SwingUtilities2;
 
-import javax.swing.*;
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.Graphics;
-import java.awt.Font;
-import java.awt.FontMetrics;
-import java.awt.Rectangle;
-import java.awt.Component;
-import java.awt.Insets;
-import java.awt.event.KeyEvent;
-import java.awt.Container;
+import j86.javax.swing.*;
+import j86.java.awt.Color;
+import j86.java.awt.Dimension;
+import j86.java.awt.Graphics;
+import j86.java.awt.Font;
+import j86.java.awt.FontMetrics;
+import j86.java.awt.Rectangle;
+import j86.java.awt.Component;
+import j86.java.awt.Insets;
+import j86.j86.java.awt.event.KeyEvent;
+import j86.java.awt.Container;
 
-import javax.swing.plaf.basic.*;
-import javax.swing.text.View;
+import j86.j86.j86.javax.swing.plaf.basic.*;
+import j86.j86.javax.swing.text.View;
 
 /*
  * @author Jeff Dinkins

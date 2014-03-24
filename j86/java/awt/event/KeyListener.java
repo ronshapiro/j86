@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.awt.event;
+package j86.j86.java.awt.event;
 
-import java.util.EventListener;
+import j86.java.util.EventListener;
 
 /**
  * The listener interface for receiving keyboard events (keystrokes).

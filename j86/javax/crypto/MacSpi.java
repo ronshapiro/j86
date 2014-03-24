@@ -23,12 +23,12 @@
  * questions.
  */
 
-package javax.crypto;
+package j86.javax.crypto;
 
-import java.security.*;
-import java.security.spec.*;
+import j86.java.security.*;
+import j86.j86.java.security.spec.*;
 
-import java.nio.ByteBuffer;
+import j86.java.nio.ByteBuffer;
 
 /**
  * This class defines the <i>Service Provider Interface</i> (<b>SPI</b>)

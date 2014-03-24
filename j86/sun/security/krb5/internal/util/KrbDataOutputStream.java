@@ -28,11 +28,11 @@
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
 
-package sun.security.krb5.internal.util;
+package j86.j86.j86.sun.security.krb5.internal.util;
 
-import java.io.BufferedOutputStream;
-import java.io.IOException;
-import java.io.OutputStream;
+import j86.java.io.BufferedOutputStream;
+import j86.java.io.IOException;
+import j86.java.io.OutputStream;
 
 /**
  * This class implements a buffered output stream. It provides methods to write a chunck of

@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.smartcardio;
+package j86.javax.smartcardio;
 
-import java.util.Arrays;
+import j86.java.util.Arrays;
 
 /**
  * A response APDU as defined in ISO/IEC 7816-4. It consists of a conditional
@@ -43,7 +43,7 @@ import java.util.Arrays;
  * @author  Andreas Sterbenz
  * @author  JSR 268 Expert Group
  */
-public final class ResponseAPDU implements java.io.Serializable {
+public final class ResponseAPDU implements j86.java.io.Serializable {
 
     private static final long serialVersionUID = 6962744978375594225L;
 
@@ -176,8 +176,8 @@ public final class ResponseAPDU implements java.io.Serializable {
         return Arrays.hashCode(apdu);
     }
 
-    private void readObject(java.io.ObjectInputStream in)
-            throws java.io.IOException, ClassNotFoundException {
+    private void readObject(j86.java.io.ObjectInputStream in)
+            throws j86.java.io.IOException, ClassNotFoundException {
         apdu = (byte[])in.readUnshared();
         check(apdu);
     }

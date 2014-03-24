@@ -28,9 +28,9 @@
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
 
-package sun.security.krb5;
+package j86.sun.security.krb5;
 
-import sun.security.krb5.internal.*;
+import j86.j86.sun.security.krb5.internal.*;
 
 abstract class KrbAppMessage {
 

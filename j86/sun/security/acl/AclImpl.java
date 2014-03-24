@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.security.acl;
+package j86.sun.security.acl;
 
-import java.io.*;
-import java.util.*;
-import java.security.Principal;
-import java.security.acl.*;
+import j86.java.io.*;
+import j86.java.util.*;
+import j86.java.security.Principal;
+import j86.j86.java.security.acl.*;
 
 /**
  * An Access Control List (ACL) is encapsulated by this class.

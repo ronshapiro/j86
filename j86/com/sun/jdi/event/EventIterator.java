@@ -23,11 +23,11 @@
  * questions.
  */
 
-package com.sun.jdi.event;
+package j86.j86.com.sun.jdi.event;
 
-import com.sun.jdi.*;
+import j86.com.sun.jdi.*;
 
-import java.util.Iterator;
+import j86.java.util.Iterator;
 
 /**
  * EventIterators are unmodifiable.

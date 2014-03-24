@@ -23,15 +23,15 @@
  * questions.
  */
 
-package com.sun.jndi.cosnaming;
+package j86.com.sun.jndi.cosnaming;
 
-import javax.naming.Name;
-import javax.naming.NamingException;
+import j86.javax.naming.Name;
+import j86.javax.naming.NamingException;
 
-import java.net.MalformedURLException;
-import java.util.Vector;
-import java.util.StringTokenizer;
-import com.sun.jndi.toolkit.url.UrlUtil;
+import j86.java.net.MalformedURLException;
+import j86.java.util.Vector;
+import j86.java.util.StringTokenizer;
+import j86.com.sun.jndi.toolkit.url.UrlUtil;
 
 /**
  * Extract components of an "iiop" or "iiopname" URL.

@@ -29,7 +29,7 @@
  * others. All Rights Reserved.                                                *
  *******************************************************************************
  */
-package sun.util.locale;
+package j86.j86.sun.util.locale;
 
 
 class Extension {

@@ -20,9 +20,9 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.sun.org.apache.xml.internal.security.c14n.implementations;
+package j86.j86.j86.com.sun.org.apache.xml.internal.security.c14n.implementations;
 
-import com.sun.org.apache.xml.internal.security.c14n.Canonicalizer;
+import j86.j86.com.sun.org.apache.xml.internal.security.c14n.Canonicalizer;
 
 /**
  * @author Christian Geuer-Pollmann

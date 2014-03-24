@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.imageio;
+package j86.javax.imageio;
 
-import java.awt.Point;
-import java.awt.Rectangle;
+import j86.java.awt.Point;
+import j86.java.awt.Rectangle;
 
 /**
  * A superclass of all classes describing how streams should be

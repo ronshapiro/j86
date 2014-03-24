@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.swing.table;
+package j86.j86.javax.swing.table;
 
-import java.awt.Component;
-import javax.swing.*;
+import j86.java.awt.Component;
+import j86.javax.swing.*;
 
 /**
  * This interface defines the method required by any object that
@@ -64,7 +64,7 @@ public interface TableCellRenderer {
      * <code>false</code> to prevent selection and focus from appearing
      * in the printed output. To do other customization based on whether
      * or not the table is being printed, check the return value from
-     * {@link javax.swing.JComponent#isPaintingForPrint()}.
+     * {@link j86.javax.swing.JComponent#isPaintingForPrint()}.
      *
      * @param   table           the <code>JTable</code> that is asking the
      *                          renderer to draw; can be <code>null</code>
@@ -86,7 +86,7 @@ public interface TableCellRenderer {
      *                          drawing the header, the value of
      *                          <code>row</code> is -1
      * @param   column          the column index of the cell being drawn
-     * @see javax.swing.JComponent#isPaintingForPrint()
+     * @see j86.javax.swing.JComponent#isPaintingForPrint()
      */
     Component getTableCellRendererComponent(JTable table, Object value,
                                             boolean isSelected, boolean hasFocus,

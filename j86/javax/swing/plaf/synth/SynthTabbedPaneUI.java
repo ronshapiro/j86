@@ -23,22 +23,22 @@
  * questions.
  */
 
-package javax.swing.plaf.synth;
+package j86.j86.j86.javax.swing.plaf.synth;
 
-import javax.swing.*;
-import javax.swing.plaf.*;
-import javax.swing.plaf.basic.*;
-import javax.swing.text.View;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.j86.javax.swing.plaf.basic.*;
+import j86.j86.javax.swing.text.View;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.beans.PropertyChangeListener;
-import java.beans.PropertyChangeEvent;
-import sun.swing.SwingUtilities2;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.java.beans.PropertyChangeListener;
+import j86.java.beans.PropertyChangeEvent;
+import j86.sun.swing.SwingUtilities2;
 
 /**
  * Provides the Synth L&amp;F UI delegate for
- * {@link javax.swing.JTabbedPane}.
+ * {@link j86.javax.swing.JTabbedPane}.
  *
  * <p>Looks up the {@code selectedTabPadInsets} property from the Style,
  * which represents additional insets for the selected tab.

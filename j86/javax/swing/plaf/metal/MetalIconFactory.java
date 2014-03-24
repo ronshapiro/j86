@@ -23,16 +23,16 @@
  * questions.
  */
 
-package javax.swing.plaf.metal;
+package j86.j86.j86.javax.swing.plaf.metal;
 
-import javax.swing.*;
-import javax.swing.plaf.UIResource;
-import java.awt.*;
-import java.awt.image.BufferedImage;
-import java.io.Serializable;
-import java.util.Enumeration;
-import java.util.Vector;
-import sun.swing.CachedPainter;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.plaf.UIResource;
+import j86.java.awt.*;
+import j86.j86.j86.java.awt.image.BufferedImage;
+import j86.java.io.Serializable;
+import j86.java.util.Enumeration;
+import j86.java.util.Vector;
+import j86.sun.swing.CachedPainter;
 
 /**
  * Factory object that vends <code>Icon</code>s for
@@ -53,8 +53,8 @@ import sun.swing.CachedPainter;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @author Michael C. Albers
  */
@@ -1551,8 +1551,8 @@ public class MetalIconFactory implements Serializable {
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     public static class FolderIcon16 implements Icon, Serializable {
 
@@ -1633,8 +1633,8 @@ public class MetalIconFactory implements Serializable {
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     public static class TreeFolderIcon extends FolderIcon16 {
         public int getShift() { return -1; }
@@ -1652,8 +1652,8 @@ public class MetalIconFactory implements Serializable {
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     public static class FileIcon16 implements Icon, Serializable {
 
@@ -1737,8 +1737,8 @@ public class MetalIconFactory implements Serializable {
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     public static class TreeControlIcon implements Icon, Serializable {
         // This data member should not have been exposed.  It's called

@@ -23,12 +23,12 @@
  * questions.
  */
 
-package javax.net.ssl;
+package j86.j86.javax.net.ssl;
 
-import java.security.Security;
-import java.security.*;
+import j86.java.security.Security;
+import j86.java.security.*;
 
-import sun.security.jca.GetInstance;
+import j86.sun.security.jca.GetInstance;
 
 /**
  * This class acts as a factory for trust managers based on a
@@ -56,7 +56,7 @@ public class TrustManagerFactory {
      * the value of the {@code ssl.TrustManagerFactory.algorithm}
      * security property to the desired algorithm name.
      *
-     * @see java.security.Security security properties
+     * @see j86.java.security.Security security properties
      * @return the default algorithm name as specified by the
      * {@code ssl.TrustManagerFactory.algorithm} security property, or an
      * implementation-specific default if no such property exists.
@@ -131,7 +131,7 @@ public class TrustManagerFactory {
      *          specified algorithm.
      * @exception NullPointerException if algorithm is null.
      *
-     * @see java.security.Provider
+     * @see j86.java.security.Provider
      */
     public static final TrustManagerFactory getInstance(String algorithm)
             throws NoSuchAlgorithmException {
@@ -174,7 +174,7 @@ public class TrustManagerFactory {
      * @throws IllegalArgumentException if the provider name is null or empty.
      * @throws NullPointerException if algorithm is null.
      *
-     * @see java.security.Provider
+     * @see j86.java.security.Provider
      */
     public static final TrustManagerFactory getInstance(String algorithm,
             String provider) throws NoSuchAlgorithmException,
@@ -212,7 +212,7 @@ public class TrustManagerFactory {
      * @throws IllegalArgumentException if the provider is null.
      * @throws NullPointerException if algorithm is null.
      *
-     * @see java.security.Provider
+     * @see j86.java.security.Provider
      */
     public static final TrustManagerFactory getInstance(String algorithm,
             Provider provider) throws NoSuchAlgorithmException {

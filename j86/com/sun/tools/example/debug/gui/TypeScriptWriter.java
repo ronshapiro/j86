@@ -32,9 +32,9 @@
  */
 
 
-package com.sun.tools.example.debug.gui;
+package j86.com.sun.tools.example.debug.gui;
 
-import java.io.*;
+import j86.java.io.*;
 
 public class TypeScriptWriter extends Writer {
 

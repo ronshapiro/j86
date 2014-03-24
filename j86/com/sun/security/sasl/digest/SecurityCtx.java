@@ -23,9 +23,9 @@
  * questions.
  */
 
-package com.sun.security.sasl.digest;
+package j86.j86.com.sun.security.sasl.digest;
 
-import javax.security.sasl.SaslException;
+import j86.javax.security.sasl.SaslException;
 
 /**
   * Interface used for classes implementing integrity checking and privacy

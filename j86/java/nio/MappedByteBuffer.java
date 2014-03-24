@@ -23,17 +23,17 @@
  * questions.
  */
 
-package java.nio;
+package j86.java.nio;
 
-import java.io.FileDescriptor;
-import sun.misc.Unsafe;
+import j86.java.io.FileDescriptor;
+import j86.sun.misc.Unsafe;
 
 
 /**
  * A direct byte buffer whose content is a memory-mapped region of a file.
  *
  * <p> Mapped byte buffers are created via the {@link
- * java.nio.channels.FileChannel#map FileChannel.map} method.  This class
+ * j86.j86.java.nio.channels.FileChannel#map FileChannel.map} method.  This class
  * extends the {@link ByteBuffer} class with operations that are specific to
  * memory-mapped file regions.
  *
@@ -191,7 +191,7 @@ public abstract class MappedByteBuffer
      * is made.
      *
      * <p> If this buffer was not mapped in read/write mode ({@link
-     * java.nio.channels.FileChannel.MapMode#READ_WRITE}) then invoking this
+     * j86.j86.java.nio.channels.FileChannel.MapMode#READ_WRITE}) then invoking this
      * method has no effect. </p>
      *
      * @return  This buffer

@@ -26,19 +26,19 @@
 /*
  * $Id: DOMURIDereferencer.java 1231033 2012-01-13 12:12:12Z coheigea $
  */
-package org.jcp.xml.dsig.internal.dom;
+package j86.j86.org.jcp.xml.dsig.internal.dom;
 
 import org.w3c.dom.Attr;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 
-import com.sun.org.apache.xml.internal.security.Init;
-import com.sun.org.apache.xml.internal.security.utils.XMLUtils;
-import com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolver;
-import com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
+import j86.com.sun.org.apache.xml.internal.security.Init;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
+import j86.j86.j86.com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolver;
+import j86.j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
 
-import javax.xml.crypto.*;
-import javax.xml.crypto.dom.*;
+import j86.javax.xml.crypto.*;
+import j86.j86.javax.xml.crypto.dom.*;
 
 /**
  * DOM-based implementation of URIDereferencer.
@@ -50,7 +50,7 @@ public class DOMURIDereferencer implements URIDereferencer {
     static final URIDereferencer INSTANCE = new DOMURIDereferencer();
 
     private DOMURIDereferencer() {
-        // need to call com.sun.org.apache.xml.internal.security.Init.init()
+        // need to call j86.com.sun.org.apache.xml.internal.security.Init.init()
         // before calling any apache security code
         Init.init();
     }

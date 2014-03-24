@@ -56,25 +56,25 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-package jdk.internal.org.objectweb.asm.tree.analysis;
+package j86.j86.j86.jdk.internal.org.objectweb.asm.tree.analysis;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import j86.java.util.ArrayList;
+import j86.java.util.HashMap;
+import j86.java.util.List;
+import j86.java.util.Map;
 
-import jdk.internal.org.objectweb.asm.Opcodes;
-import jdk.internal.org.objectweb.asm.Type;
-import jdk.internal.org.objectweb.asm.tree.AbstractInsnNode;
-import jdk.internal.org.objectweb.asm.tree.IincInsnNode;
-import jdk.internal.org.objectweb.asm.tree.InsnList;
-import jdk.internal.org.objectweb.asm.tree.JumpInsnNode;
-import jdk.internal.org.objectweb.asm.tree.LabelNode;
-import jdk.internal.org.objectweb.asm.tree.LookupSwitchInsnNode;
-import jdk.internal.org.objectweb.asm.tree.MethodNode;
-import jdk.internal.org.objectweb.asm.tree.TableSwitchInsnNode;
-import jdk.internal.org.objectweb.asm.tree.TryCatchBlockNode;
-import jdk.internal.org.objectweb.asm.tree.VarInsnNode;
+import j86.jdk.internal.org.objectweb.asm.Opcodes;
+import j86.jdk.internal.org.objectweb.asm.Type;
+import j86.j86.jdk.internal.org.objectweb.asm.tree.AbstractInsnNode;
+import j86.j86.jdk.internal.org.objectweb.asm.tree.IincInsnNode;
+import j86.j86.jdk.internal.org.objectweb.asm.tree.InsnList;
+import j86.j86.jdk.internal.org.objectweb.asm.tree.JumpInsnNode;
+import j86.j86.jdk.internal.org.objectweb.asm.tree.LabelNode;
+import j86.j86.jdk.internal.org.objectweb.asm.tree.LookupSwitchInsnNode;
+import j86.j86.jdk.internal.org.objectweb.asm.tree.MethodNode;
+import j86.j86.jdk.internal.org.objectweb.asm.tree.TableSwitchInsnNode;
+import j86.j86.jdk.internal.org.objectweb.asm.tree.TryCatchBlockNode;
+import j86.j86.jdk.internal.org.objectweb.asm.tree.VarInsnNode;
 
 /**
  * A semantic bytecode analyzer. <i>This class does not fully check that JSR and
@@ -305,7 +305,7 @@ public class Analyzer<V extends Value> implements Opcodes {
                         TryCatchBlockNode tcb = insnHandlers.get(i);
                         Type type;
                         if (tcb.type == null) {
-                            type = Type.getObjectType("java/lang/Throwable");
+                            type = Type.getObjectType("j86.java.lang/Throwable");
                         } else {
                             type = Type.getObjectType(tcb.type);
                         }

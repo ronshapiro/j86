@@ -23,19 +23,19 @@
  * questions.
  */
 
-package sun.security.util;
+package j86.sun.security.util;
 
 /**
  * <p> This class represents the <code>ResourceBundle</code>
  * for the following packages:
  *
  * <ol>
- * <li> com.sun.security.auth
- * <li> com.sun.security.auth.login
+ * <li> j86.com.sun.security.auth
+ * <li> j86.j86.com.sun.security.auth.login
  * </ol>
  *
  */
-public class AuthResources_es extends java.util.ListResourceBundle {
+public class AuthResources_es extends j86.java.util.ListResourceBundle {
 
     private static final Object[][] contents = {
 
@@ -59,7 +59,7 @@ public class AuthResources_es extends java.util.ListResourceBundle {
         {"UnixNumericUserPrincipal.name", "UnixNumericUserPrincipal: {0}"},
         {"UnixPrincipal.name", "UnixPrincipal: {0}"},
 
-        // com.sun.security.auth.login.ConfigFile
+        // j86.j86.com.sun.security.auth.login.ConfigFile
         {"Unable.to.properly.expand.config", "No se ha podido ampliar correctamente {0}"},
         {"extra.config.No.such.file.or.directory.",
                 "{0} (No existe tal archivo o directorio)"},
@@ -78,11 +78,11 @@ public class AuthResources_es extends java.util.ListResourceBundle {
         {"Configuration.Error.Line.line.system.property.value.expanded.to.empty.value",
             "Error de configuraci\u00F3n:\n\tL\u00EDnea {0}: propiedad de sistema [{1}] ampliada a valor vac\u00EDo"},
 
-        // com.sun.security.auth.module.JndiLoginModule
+        // j86.j86.com.sun.security.auth.module.JndiLoginModule
         {"username.","nombre de usuario: "},
         {"password.","contrase\u00F1a: "},
 
-        // com.sun.security.auth.module.KeyStoreLoginModule
+        // j86.j86.com.sun.security.auth.module.KeyStoreLoginModule
         {"Please.enter.keystore.information",
                 "Introduzca la informaci\u00F3n del almac\u00E9n de claves"},
         {"Keystore.alias.","Alias de Almac\u00E9n de Claves: "},
@@ -90,7 +90,7 @@ public class AuthResources_es extends java.util.ListResourceBundle {
         {"Private.key.password.optional.",
             "Contrase\u00F1a de Clave Privada (opcional): "},
 
-        // com.sun.security.auth.module.Krb5LoginModule
+        // j86.j86.com.sun.security.auth.module.Krb5LoginModule
         {"Kerberos.username.defUsername.",
                 "Nombre de usuario de Kerberos [{0}]: "},
         {"Kerberos.password.for.username.",
@@ -98,7 +98,7 @@ public class AuthResources_es extends java.util.ListResourceBundle {
 
         /***    EVERYTHING BELOW IS DEPRECATED  ***/
 
-        // com.sun.security.auth.PolicyFile
+        // j86.com.sun.security.auth.PolicyFile
         {".error.parsing.", ": error de an\u00E1lisis "},
         {"COLON", ": "},
         {".error.adding.Permission.", ": error al agregar el permiso "},
@@ -109,7 +109,7 @@ public class AuthResources_es extends java.util.ListResourceBundle {
         {"attempt.to.add.a.Permission.to.a.readonly.PermissionCollection",
             "se ha intentado agregar un permiso a una recopilaci\u00F3n de permisos de s\u00F3lo lectura"},
 
-        // com.sun.security.auth.PolicyParser
+        // j86.com.sun.security.auth.PolicyParser
         {"expected.keystore.type", "se esperaba un tipo de almac\u00E9n de claves"},
         {"can.not.specify.Principal.with.a.wildcard.class.without.a.wildcard.name",
                 "no se puede especificar Principal con una clase de comod\u00EDn sin un nombre de comod\u00EDn"},
@@ -136,7 +136,7 @@ public class AuthResources_es extends java.util.ListResourceBundle {
         {"SolarisPrincipal.", "SolarisPrincipal: "},
         // provided.null.name is the NullPointerException message when a
         // developer incorrectly passes a null name to the constructor of
-        // subclasses of java.security.Principal
+        // subclasses of j86.java.security.Principal
         {"provided.null.name", "se ha proporcionado un nombre nulo"}
 
     };

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.jvmstat.monitor;
+package j86.sun.jvmstat.monitor;
 
 /**
  * Utility class proving concenience methods for extracting various

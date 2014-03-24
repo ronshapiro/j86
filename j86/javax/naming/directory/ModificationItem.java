@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.naming.directory;
+package j86.j86.javax.naming.directory;
 
 /**
   * This class represents a modification item.
@@ -44,7 +44,7 @@ package javax.naming.directory;
   * modification op (and int) and the corresponding Attribute.
 */
 
-public class ModificationItem implements java.io.Serializable {
+public class ModificationItem implements j86.java.io.Serializable {
     /**
      * Contains an integer identify the modification
      * to be performed.

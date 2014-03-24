@@ -23,26 +23,26 @@
  * questions.
  */
 
-package java.util;
+package j86.java.util;
 
-import java.io.BufferedInputStream;
-import java.io.DataInputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.Serializable;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentMap;
-import java.util.regex.Pattern;
-import java.util.regex.Matcher;
-import java.util.spi.CurrencyNameProvider;
-import sun.util.locale.provider.LocaleServiceProviderPool;
-import sun.util.logging.PlatformLogger;
+import j86.java.io.BufferedInputStream;
+import j86.java.io.DataInputStream;
+import j86.java.io.File;
+import j86.java.io.FileInputStream;
+import j86.java.io.FileReader;
+import j86.java.io.IOException;
+import j86.java.io.Serializable;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.text.ParseException;
+import j86.java.text.SimpleDateFormat;
+import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.j86.java.util.concurrent.ConcurrentMap;
+import j86.j86.java.util.regex.Pattern;
+import j86.j86.java.util.regex.Matcher;
+import j86.j86.java.util.spi.CurrencyNameProvider;
+import j86.j86.j86.sun.util.locale.provider.LocaleServiceProviderPool;
+import j86.j86.sun.util.logging.PlatformLogger;
 
 
 /**
@@ -56,7 +56,7 @@ import sun.util.logging.PlatformLogger;
  * the <code>getInstance</code> methods.
  * <p>
  * Users can supersede the Java runtime currency data by means of the system
- * property {@code java.util.currency.data}. If this system property is
+ * property {@code j86.java.util.currency.data}. If this system property is
  * defined then its value is the location of a properties file, the contents of
  * which are key/value pairs of the ISO 3166 country codes and the ISO 4217
  * currency data respectively.  The value part consists of three ISO 4217 values
@@ -246,7 +246,7 @@ public final class Currency implements Serializable {
                 }
 
                 // look for the properties file for overrides
-                String propsFile = System.getProperty("java.util.currency.data");
+                String propsFile = System.getProperty("j86.java.util.currency.data");
                 if (propsFile == null) {
                     propsFile = homeDir + File.separator + "lib" +
                         File.separator + "currency.properties";
@@ -763,7 +763,7 @@ public final class Currency implements Serializable {
     }
 
     private static void info(String message, Throwable t) {
-        PlatformLogger logger = PlatformLogger.getLogger("java.util.Currency");
+        PlatformLogger logger = PlatformLogger.getLogger("j86.java.util.Currency");
         if (logger.isLoggable(PlatformLogger.Level.INFO)) {
             if (t != null) {
                 logger.info(message, t);

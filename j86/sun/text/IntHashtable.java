@@ -28,7 +28,7 @@
  * (C) Copyright IBM Corp. 1996, 1997 - All Rights Reserved
  */
 
-package sun.text;
+package j86.sun.text;
 
 /** Simple internal class for doing hash mapping. Much, much faster than the
  * standard Hashtable for integer to integer mappings,
@@ -173,7 +173,7 @@ public final class IntHashtable {
         } else if (primeIndex >= PRIMES.length) {
             System.out.println("TOO BIG");
             primeIndex = PRIMES.length - 1;
-            // throw new java.util.IllegalArgumentError();
+            // throw new j86.java.util.IllegalArgumentError();
         }
         this.primeIndex = primeIndex;
         int initialSize = PRIMES[primeIndex];

@@ -23,24 +23,24 @@
  * questions.
  */
 
-package com.sun.jdi.request;
+package j86.j86.com.sun.jdi.request;
 
-import com.sun.jdi.*;
+import j86.com.sun.jdi.*;
 
 /**
  * Identifies a {@link Location} in the target VM at which
  * execution should be stopped. When an enabled BreakpointRequest is
  * satisfied, an
- * {@link com.sun.jdi.event.EventSet event set} containing an
- * {@link com.sun.jdi.event.BreakpointEvent BreakpointEvent}
+ * {@link j86.j86.com.sun.jdi.event.EventSet event set} containing an
+ * {@link j86.j86.com.sun.jdi.event.BreakpointEvent BreakpointEvent}
  * will be placed on the
- * {@link com.sun.jdi.event.EventQueue EventQueue} and
+ * {@link j86.j86.com.sun.jdi.event.EventQueue EventQueue} and
  * the application is interrupted. The collection of existing breakpoints is
  * managed by the {@link EventRequestManager}
  *
  * @see Location
- * @see com.sun.jdi.event.BreakpointEvent
- * @see com.sun.jdi.event.EventQueue
+ * @see j86.j86.com.sun.jdi.event.BreakpointEvent
+ * @see j86.j86.com.sun.jdi.event.EventQueue
  * @see EventRequestManager
  *
  * @author Robert Field
@@ -77,7 +77,7 @@ public interface BreakpointRequest extends EventRequest, Locatable {
      * @since 1.4
      * @param instance the object which must be the current instance
      * in order to pass this filter.
-     * @throws java.lang.UnsupportedOperationException if
+     * @throws j86.java.lang.UnsupportedOperationException if
      * the target virtual machine does not support this
      * operation.
      * @throws InvalidRequestStateException if this request is currently

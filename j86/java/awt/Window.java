@@ -22,44 +22,44 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.awt;
+package j86.java.awt;
 
-import java.awt.event.*;
-import java.awt.geom.Path2D;
-import java.awt.geom.Point2D;
-import java.awt.im.InputContext;
-import java.awt.image.BufferStrategy;
-import java.awt.image.BufferedImage;
-import java.awt.peer.ComponentPeer;
-import java.awt.peer.WindowPeer;
-import java.beans.PropertyChangeListener;
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.OptionalDataException;
-import java.io.Serializable;
-import java.lang.ref.WeakReference;
-import java.lang.reflect.InvocationTargetException;
-import java.security.AccessController;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.EventListener;
-import java.util.Locale;
-import java.util.ResourceBundle;
-import java.util.Set;
-import java.util.Vector;
-import java.util.concurrent.atomic.AtomicBoolean;
-import javax.accessibility.*;
-import sun.awt.AWTAccessor;
-import sun.awt.AppContext;
-import sun.awt.CausedFocusEvent;
-import sun.awt.SunToolkit;
-import sun.awt.util.IdentityArrayList;
-import sun.java2d.Disposer;
-import sun.java2d.pipe.Region;
-import sun.security.action.GetPropertyAction;
-import sun.security.util.SecurityConstants;
-import sun.util.logging.PlatformLogger;
+import j86.j86.java.awt.event.*;
+import j86.j86.java.awt.geom.Path2D;
+import j86.j86.java.awt.geom.Point2D;
+import j86.j86.java.awt.im.InputContext;
+import j86.j86.j86.java.awt.image.BufferStrategy;
+import j86.j86.j86.java.awt.image.BufferedImage;
+import j86.j86.java.awt.peer.ComponentPeer;
+import j86.j86.java.awt.peer.WindowPeer;
+import j86.java.beans.PropertyChangeListener;
+import j86.java.io.IOException;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.OptionalDataException;
+import j86.java.io.Serializable;
+import j86.j86.java.lang.ref.WeakReference;
+import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.java.security.AccessController;
+import j86.java.util.ArrayList;
+import j86.java.util.Arrays;
+import j86.java.util.EventListener;
+import j86.java.util.Locale;
+import j86.java.util.ResourceBundle;
+import j86.java.util.Set;
+import j86.java.util.Vector;
+import j86.j86.j86.java.util.concurrent.atomic.AtomicBoolean;
+import j86.javax.accessibility.*;
+import j86.sun.awt.AWTAccessor;
+import j86.sun.awt.AppContext;
+import j86.sun.awt.CausedFocusEvent;
+import j86.sun.awt.SunToolkit;
+import j86.j86.sun.awt.util.IdentityArrayList;
+import j86.sun.java2d.Disposer;
+import j86.j86.sun.java2d.pipe.Region;
+import j86.sun.security.action.GetPropertyAction;
+import j86.sun.security.util.SecurityConstants;
+import j86.j86.sun.util.logging.PlatformLogger;
 
 /**
  * A {@code Window} object is a top-level window with no borders and no
@@ -142,7 +142,7 @@ import sun.util.logging.PlatformLogger;
  * @author      Arthur van Hoff
  * @see WindowEvent
  * @see #addWindowListener
- * @see java.awt.BorderLayout
+ * @see j86.java.awt.BorderLayout
  * @since       JDK1.0
  */
 public class Window extends Container implements Accessible {
@@ -214,7 +214,7 @@ public class Window extends Container implements Accessible {
      * @see #getIconImages
      * @see #setIconImages
      */
-    transient java.util.List<Image> icons;
+    transient j86.java.util.List<Image> icons;
 
     /**
      * Holds the reference to the component which last had focus in this window
@@ -286,7 +286,7 @@ public class Window extends Container implements Accessible {
     /**
      * @serial
      *
-     * @see java.awt.Dialog.ModalExclusionType
+     * @see j86.java.awt.Dialog.ModalExclusionType
      * @see #getModalExclusionType
      * @see #setModalExclusionType
      *
@@ -369,7 +369,7 @@ public class Window extends Container implements Accessible {
      */
     private static final long serialVersionUID = 4497834738069338734L;
 
-    private static final PlatformLogger log = PlatformLogger.getLogger("java.awt.Window");
+    private static final PlatformLogger log = PlatformLogger.getLogger("j86.java.awt.Window");
 
     private static final boolean locationByPlatformProp;
 
@@ -385,7 +385,7 @@ public class Window extends Container implements Accessible {
     /**
      * These fields represent the desired location for the security
      * warning if this window is untrusted.
-     * See com.sun.awt.SecurityWarning for more details.
+     * See com.j86.sun.awt.SecurityWarning for more details.
      */
     private transient double securityWarningPointX = 2.0;
     private transient double securityWarningPointY = 0.0;
@@ -399,11 +399,11 @@ public class Window extends Container implements Accessible {
             initIDs();
         }
 
-        String s = java.security.AccessController.doPrivileged(
-            new GetPropertyAction("java.awt.syncLWRequests"));
+        String s = j86.java.security.AccessController.doPrivileged(
+            new GetPropertyAction("j86.java.awt.syncLWRequests"));
         systemSyncLWRequests = (s != null && s.equals("true"));
-        s = java.security.AccessController.doPrivileged(
-            new GetPropertyAction("java.awt.Window.locationByPlatform"));
+        s = j86.java.security.AccessController.doPrivileged(
+            new GetPropertyAction("j86.java.awt.Window.locationByPlatform"));
         locationByPlatformProp = (s != null && s.equals("true"));
     }
 
@@ -430,14 +430,14 @@ public class Window extends Container implements Accessible {
      * @exception HeadlessException when
      *     {@code GraphicsEnvironment.isHeadless()} returns {@code true}
      *
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      */
     Window(GraphicsConfiguration gc) {
         init(gc);
     }
 
     transient Object anchor = new Object();
-    static class WindowDisposerRecord implements sun.java2d.DisposerRecord {
+    static class WindowDisposerRecord implements j86.sun.java2d.DisposerRecord {
         WeakReference<Window> owner;
         final WeakReference<Window> weakThis;
         final WeakReference<AppContext> context;
@@ -514,7 +514,7 @@ public class Window extends Container implements Accessible {
 
         modalExclusionType = Dialog.ModalExclusionType.NO_EXCLUDE;
         disposerRecord = new WindowDisposerRecord(appContext, this);
-        sun.java2d.Disposer.addRecord(anchor, disposerRecord);
+        j86.sun.java2d.Disposer.addRecord(anchor, disposerRecord);
 
         SunToolkit.checkAndSetPolicy(this);
     }
@@ -530,7 +530,7 @@ public class Window extends Container implements Accessible {
      * @exception HeadlessException when
      *     {@code GraphicsEnvironment.isHeadless()} returns {@code true}
      *
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      */
     Window() throws HeadlessException {
         GraphicsEnvironment.checkHeadless();
@@ -554,7 +554,7 @@ public class Window extends Container implements Accessible {
      * @exception HeadlessException when
      *    {@code GraphicsEnvironment.isHeadless} returns {@code true}
      *
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      * @see #isShowing
      */
     public Window(Frame owner) {
@@ -582,7 +582,7 @@ public class Window extends Container implements Accessible {
      *     {@code GraphicsEnvironment.isHeadless()} returns
      *     {@code true}
      *
-     * @see       java.awt.GraphicsEnvironment#isHeadless
+     * @see       j86.java.awt.GraphicsEnvironment#isHeadless
      * @see       #isShowing
      *
      * @since     1.2
@@ -616,7 +616,7 @@ public class Window extends Container implements Accessible {
      *     {@code GraphicsEnvironment.isHeadless()} returns
      *     {@code true}
      *
-     * @see       java.awt.GraphicsEnvironment#isHeadless
+     * @see       j86.java.awt.GraphicsEnvironment#isHeadless
      * @see       GraphicsConfiguration#getBounds
      * @see       #isShowing
      * @since     1.3
@@ -664,8 +664,8 @@ public class Window extends Container implements Accessible {
      * @see       #setIconImage(Image)
      * @since     1.6
      */
-    public java.util.List<Image> getIconImages() {
-        java.util.List<Image> icons = this.icons;
+    public j86.java.util.List<Image> getIconImages() {
+        j86.java.util.List<Image> icons = this.icons;
         if (icons == null || icons.size() == 0) {
             return new ArrayList<Image>();
         }
@@ -700,7 +700,7 @@ public class Window extends Container implements Accessible {
      * @see       #setIconImage(Image)
      * @since     1.6
      */
-    public synchronized void setIconImages(java.util.List<? extends Image> icons) {
+    public synchronized void setIconImages(j86.java.util.List<? extends Image> icons) {
         this.icons = (icons == null) ? new ArrayList<Image>() :
             new ArrayList<Image>(icons);
         WindowPeer peer = (WindowPeer)this.peer;
@@ -1003,12 +1003,12 @@ public class Window extends Container implements Accessible {
      * of its owned children.
      * The {@code Window} and its subcomponents can be made visible again
      * with a call to {@code #setVisible(true)}.
-     * @see java.awt.Component#isDisplayable
-     * @see java.awt.Component#setVisible
-     * @see java.awt.Window#toFront
-     * @see java.awt.Window#dispose
-     * @see java.awt.Window#setAutoRequestFocus
-     * @see java.awt.Window#isFocusableWindow
+     * @see j86.java.awt.Component#isDisplayable
+     * @see j86.java.awt.Component#setVisible
+     * @see j86.java.awt.Window#toFront
+     * @see j86.java.awt.Window#dispose
+     * @see j86.java.awt.Window#setAutoRequestFocus
+     * @see j86.java.awt.Window#isFocusableWindow
      */
     public void setVisible(boolean b) {
         super.setVisible(b);
@@ -1404,7 +1404,7 @@ public class Window extends Container implements Accessible {
      * If no locale has been set, then the default locale
      * is returned.
      * @return    the locale that is set for this window.
-     * @see       java.util.Locale
+     * @see       j86.java.util.Locale
      * @since     JDK1.1
      */
     public Locale getLocale() {
@@ -1647,7 +1647,7 @@ public class Window extends Container implements Accessible {
     /**
      * Specifies the modal exclusion type for this window. If a window is modal
      * excluded, it is not blocked by some modal dialogs. See {@link
-     * java.awt.Dialog.ModalExclusionType Dialog.ModalExclusionType} for
+     * j86.java.awt.Dialog.ModalExclusionType Dialog.ModalExclusionType} for
      * possible modal exclusion types.
      * <p>
      * If the given type is not supported, {@code NO_EXCLUDE} is used.
@@ -1661,9 +1661,9 @@ public class Window extends Container implements Accessible {
      * @throws SecurityException if the calling thread does not have permission
      *     to set the modal exclusion property to the window with the given
      *     {@code exclusionType}
-     * @see java.awt.Dialog.ModalExclusionType
-     * @see java.awt.Window#getModalExclusionType
-     * @see java.awt.Toolkit#isModalExclusionTypeSupported
+     * @see j86.java.awt.Dialog.ModalExclusionType
+     * @see j86.java.awt.Window#getModalExclusionType
+     * @see j86.java.awt.Toolkit#isModalExclusionTypeSupported
      *
      * @since 1.6
      */
@@ -1702,8 +1702,8 @@ public class Window extends Container implements Accessible {
      *
      * @return the modal exclusion type of this window
      *
-     * @see java.awt.Dialog.ModalExclusionType
-     * @see java.awt.Window#setModalExclusionType
+     * @see j86.java.awt.Dialog.ModalExclusionType
+     * @see j86.java.awt.Window#setModalExclusionType
      *
      * @since 1.6
      */
@@ -1932,14 +1932,14 @@ public class Window extends Container implements Accessible {
      *
      * @param listenerType the type of listeners requested; this parameter
      *          should specify an interface that descends from
-     *          {@code java.util.EventListener}
+     *          {@code j86.java.util.EventListener}
      * @return an array of all objects registered as
      *          <code><em>Foo</em>Listener</code>s on this window,
      *          or an empty array if no such
      *          listeners have been added
      * @exception ClassCastException if {@code listenerType}
      *          doesn't specify a class or interface that implements
-     *          {@code java.util.EventListener}
+     *          {@code j86.java.util.EventListener}
      * @exception NullPointerException if {@code listenerType} is {@code null}
      *
      * @see #getWindowListeners
@@ -2130,7 +2130,7 @@ public class Window extends Container implements Accessible {
      * exception.
      *
      * @param e the window state event
-     * @see java.awt.Component#enableEvents
+     * @see j86.java.awt.Component#enableEvents
      * @since 1.4
      */
     protected void processWindowStateEvent(WindowEvent e) {
@@ -2665,7 +2665,7 @@ public class Window extends Container implements Accessible {
      * @param    listener  the PropertyChangeListener to be added
      *
      * @see Component#removePropertyChangeListener
-     * @see #addPropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)
+     * @see #addPropertyChangeListener(j86.java.lang.String,j86.java.beans.PropertyChangeListener)
      */
     public void addPropertyChangeListener(PropertyChangeListener listener) {
         super.addPropertyChangeListener(listener);
@@ -2704,7 +2704,7 @@ public class Window extends Container implements Accessible {
      * @param propertyName one of the property names listed above
      * @param listener the PropertyChangeListener to be added
      *
-     * @see #addPropertyChangeListener(java.beans.PropertyChangeListener)
+     * @see #addPropertyChangeListener(j86.java.beans.PropertyChangeListener)
      * @see Component#removePropertyChangeListener
      */
     public void addPropertyChangeListener(String propertyName,
@@ -2720,7 +2720,7 @@ public class Window extends Container implements Accessible {
      *
      * @return {@code true}
      * @since 1.7
-     * @see java.awt.Container#isValidateRoot
+     * @see j86.java.awt.Container#isValidateRoot
      */
     @Override
     public boolean isValidateRoot() {
@@ -2909,7 +2909,7 @@ public class Window extends Container implements Accessible {
      *    {@code ownedWindowK} indicating a child
      *      {@code Window} object
      *
-     * @see AWTEventMulticaster#save(java.io.ObjectOutputStream, java.lang.String, java.util.EventListener)
+     * @see AWTEventMulticaster#save(j86.java.io.ObjectOutputStream, j86.java.lang.String, j86.java.util.EventListener)
      * @see Component#windowListenerK
      * @see Component#windowFocusListenerK
      * @see Component#ownedWindowK
@@ -2972,7 +2972,7 @@ public class Window extends Container implements Accessible {
 
         anchor = new Object();
         disposerRecord = new WindowDisposerRecord(appContext, this);
-        sun.java2d.Disposer.addRecord(anchor, disposerRecord);
+        j86.sun.java2d.Disposer.addRecord(anchor, disposerRecord);
 
         addToWindowList();
         initGC(null);
@@ -3056,7 +3056,7 @@ public class Window extends Container implements Accessible {
      * @exception HeadlessException if
      *   {@code GraphicsEnvironment.isHeadless} returns
      *   {@code true}
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      * @see #writeObject
      */
     private void readObject(ObjectInputStream s)
@@ -3133,7 +3133,7 @@ public class Window extends Container implements Accessible {
          *
          * @return an instance of AccessibleRole describing the role of the
          * object
-         * @see javax.accessibility.AccessibleRole
+         * @see j86.javax.accessibility.AccessibleRole
          */
         public AccessibleRole getAccessibleRole() {
             return AccessibleRole.WINDOW;
@@ -3144,7 +3144,7 @@ public class Window extends Container implements Accessible {
          *
          * @return an instance of AccessibleStateSet containing the current
          * state set of the object
-         * @see javax.accessibility.AccessibleState
+         * @see j86.javax.accessibility.AccessibleState
          */
         public AccessibleStateSet getAccessibleStateSet() {
             AccessibleStateSet states = super.getAccessibleStateSet();
@@ -3225,7 +3225,7 @@ public class Window extends Container implements Accessible {
      *
      * @param c  the component in relation to which the window's location
      *           is determined
-     * @see java.awt.GraphicsEnvironment#getCenterPoint
+     * @see j86.java.awt.GraphicsEnvironment#getCenterPoint
      * @since 1.4
      */
     public void setLocationRelativeTo(Component c) {
@@ -3400,7 +3400,7 @@ public class Window extends Container implements Accessible {
      * window is shown on the screen.
      * <p>
      * This behavior can also be enabled by setting the System Property
-     * "java.awt.Window.locationByPlatform" to "true", though calls to this method
+     * "j86.java.awt.Window.locationByPlatform" to "true", though calls to this method
      * take precedence.
      * <p>
      * Calls to {@code setVisible}, {@code setLocation} and
@@ -3434,7 +3434,7 @@ public class Window extends Container implements Accessible {
      * @see #isShowing
      * @see #setVisible
      * @see #isLocationByPlatform
-     * @see java.lang.System#getProperty(String)
+     * @see j86.java.lang.System#getProperty(String)
      * @since 1.5
      */
     public void setLocationByPlatform(boolean locationByPlatform) {
@@ -3904,13 +3904,13 @@ public class Window extends Container implements Accessible {
     private static void setLayersOpaque(Component component, boolean isOpaque) {
         // Shouldn't use instanceof to avoid loading Swing classes
         //    if it's a pure AWT application.
-        if (SunToolkit.isInstanceOf(component, "javax.swing.RootPaneContainer")) {
-            javax.swing.RootPaneContainer rpc = (javax.swing.RootPaneContainer)component;
-            javax.swing.JRootPane root = rpc.getRootPane();
-            javax.swing.JLayeredPane lp = root.getLayeredPane();
+        if (SunToolkit.isInstanceOf(component, "j86.javax.swing.RootPaneContainer")) {
+            j86.javax.swing.RootPaneContainer rpc = (javax.swing.RootPaneContainer)component;
+            j86.javax.swing.JRootPane root = rpc.getRootPane();
+            j86.javax.swing.JLayeredPane lp = root.getLayeredPane();
             Container c = root.getContentPane();
-            javax.swing.JComponent content =
-                (c instanceof javax.swing.JComponent) ? (javax.swing.JComponent)c : null;
+            j86.javax.swing.JComponent content =
+                (c instanceof j86.javax.swing.JComponent) ? (javax.swing.JComponent)c : null;
             lp.setOpaque(isOpaque);
             root.setOpaque(isOpaque);
             if (content != null) {
@@ -3923,7 +3923,7 @@ public class Window extends Container implements Accessible {
                     Component child = content.getComponent(0);
                     // It's OK to use instanceof here because we've
                     // already loaded the RootPaneContainer class by now
-                    if (child instanceof javax.swing.RootPaneContainer) {
+                    if (child instanceof j86.javax.swing.RootPaneContainer) {
                         setLayersOpaque(child, isOpaque);
                     }
                 }
@@ -4111,7 +4111,7 @@ public class Window extends Container implements Accessible {
  * This class is no longer used, but is maintained for Serialization
  * backward-compatibility.
  */
-class FocusManager implements java.io.Serializable {
+class FocusManager implements j86.java.io.Serializable {
     Container focusRoot;
     Component focusOwner;
 

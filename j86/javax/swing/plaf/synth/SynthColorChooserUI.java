@@ -23,21 +23,21 @@
  * questions.
  */
 
-package javax.swing.plaf.synth;
+package j86.j86.j86.javax.swing.plaf.synth;
 
 
-import javax.swing.*;
-import javax.swing.colorchooser.*;
-import javax.swing.plaf.*;
-import javax.swing.plaf.basic.BasicColorChooserUI;
-import java.awt.*;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.colorchooser.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.j86.javax.swing.plaf.basic.BasicColorChooserUI;
+import j86.java.awt.*;
+import j86.java.beans.PropertyChangeEvent;
+import j86.java.beans.PropertyChangeListener;
 
 
 /**
  * Provides the Synth L&amp;F UI delegate for
- * {@link javax.swing.JColorChooser}.
+ * {@link j86.javax.swing.JColorChooser}.
  *
  * @author Tom Santos
  * @author Steve Wilson

@@ -23,14 +23,14 @@
  * questions.
  */
 
-package com.sun.java.util.jar.pack;
+package j86.com.sun.j86.j86.java.util.jar.pack;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.util.HashMap;
-import java.util.Map;
-import static com.sun.java.util.jar.pack.Constants.*;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.io.OutputStream;
+import j86.java.util.HashMap;
+import j86.java.util.Map;
+import static j86.com.sun.j86.j86.java.util.jar.pack.Constants.*;
 /**
  * Define the conversions between sequences of small integers and raw bytes.
  * This is a schema of encodings which incorporates varying lengths,

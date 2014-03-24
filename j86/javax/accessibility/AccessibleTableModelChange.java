@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.accessibility;
+package j86.javax.accessibility;
 
 /**
  * The AccessibleTableModelChange interface describes a change to

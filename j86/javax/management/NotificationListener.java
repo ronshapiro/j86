@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.management;
+package j86.javax.management;
 
 
 /**
@@ -31,7 +31,7 @@ package javax.management;
  *
  * @since 1.5
  */
-public interface NotificationListener extends java.util.EventListener   {
+public interface NotificationListener extends j86.java.util.EventListener   {
 
     /**
     * Invoked when a JMX notification occurs.

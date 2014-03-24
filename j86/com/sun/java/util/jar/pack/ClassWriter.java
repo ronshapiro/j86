@@ -23,23 +23,23 @@
  * questions.
  */
 
-package com.sun.java.util.jar.pack;
+package j86.com.sun.j86.j86.java.util.jar.pack;
 
 
-import com.sun.java.util.jar.pack.ConstantPool.Entry;
-import com.sun.java.util.jar.pack.ConstantPool.Index;
-import com.sun.java.util.jar.pack.ConstantPool.NumberEntry;
-import com.sun.java.util.jar.pack.ConstantPool.MethodHandleEntry;
-import com.sun.java.util.jar.pack.ConstantPool.BootstrapMethodEntry;
-import com.sun.java.util.jar.pack.Package.Class;
-import com.sun.java.util.jar.pack.Package.InnerClass;
-import java.io.BufferedOutputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.DataOutputStream;
-import java.io.IOException;
-import java.io.OutputStream;
-import java.util.List;
-import static com.sun.java.util.jar.pack.Constants.*;
+import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.Entry;
+import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.Index;
+import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.NumberEntry;
+import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.MethodHandleEntry;
+import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.BootstrapMethodEntry;
+import j86.com.sun.j86.j86.java.util.jar.pack.Package.Class;
+import j86.com.sun.j86.j86.java.util.jar.pack.Package.InnerClass;
+import j86.java.io.BufferedOutputStream;
+import j86.java.io.ByteArrayOutputStream;
+import j86.java.io.DataOutputStream;
+import j86.java.io.IOException;
+import j86.java.io.OutputStream;
+import j86.java.util.List;
+import static j86.com.sun.j86.j86.java.util.jar.pack.Constants.*;
 /**
  * Writer for a class file that is incorporated into a package.
  * @author John Rose

@@ -23,19 +23,19 @@
  * questions.
  */
 
-package sun.rmi.server;
+package j86.sun.rmi.server;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.ObjectInputStream;
-import java.io.ObjectStreamClass;
-import java.io.StreamCorruptedException;
-import java.net.URL;
-import java.util.*;
-import java.security.AccessControlException;
-import java.security.Permission;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.ObjectStreamClass;
+import j86.java.io.StreamCorruptedException;
+import j86.java.net.URL;
+import j86.java.util.*;
+import j86.java.security.AccessControlException;
+import j86.java.security.Permission;
 
-import java.rmi.server.RMIClassLoader;
+import j86.j86.java.rmi.server.RMIClassLoader;
 
 /**
  * MarshalInputStream is an extension of ObjectInputStream.  When resolving
@@ -55,7 +55,7 @@ import java.rmi.server.RMIClassLoader;
 public class MarshalInputStream extends ObjectInputStream {
 
     /**
-     * Value of "java.rmi.server.useCodebaseOnly" property,
+     * Value of "j86.j86.java.rmi.server.useCodebaseOnly" property,
      * as cached at class initialization time.
      *
      * The default value is true. That is, the value is true
@@ -64,9 +64,9 @@ public class MarshalInputStream extends ObjectInputStream {
      * and is equal to "false".
      */
     private static final boolean useCodebaseOnlyProperty =
-        ! java.security.AccessController.doPrivileged(
-            new sun.security.action.GetPropertyAction(
-                "java.rmi.server.useCodebaseOnly", "true"))
+        ! j86.java.security.AccessController.doPrivileged(
+            new j86.sun.security.action.GetPropertyAction(
+                "j86.j86.java.rmi.server.useCodebaseOnly", "true"))
             .equalsIgnoreCase("false");
 
     /** table to hold sun classes to which access is explicitly permitted */
@@ -82,14 +82,14 @@ public class MarshalInputStream extends ObjectInputStream {
 
     /**
      * if true, load classes (if not available locally) only from the
-     * URL specified by the "java.rmi.server.codebase" property.
+     * URL specified by the "j86.j86.java.rmi.server.codebase" property.
      */
     private boolean useCodebaseOnly = useCodebaseOnlyProperty;
 
     /*
      * Fix for 4179055: The remote object services inside the
      * activation daemon use stubs that are in the package
-     * sun.rmi.server.  Classes for these stubs should be loaded from
+     * j86.sun.rmi.server.  Classes for these stubs should be loaded from
      * the classpath by RMI system code and not by the normal
      * unmarshalling process as applications should not need to have
      * permission to access the sun implementation classes.
@@ -103,8 +103,8 @@ public class MarshalInputStream extends ObjectInputStream {
     static {
         try {
             String system =
-                "sun.rmi.server.Activation$ActivationSystemImpl_Stub";
-            String registry = "sun.rmi.registry.RegistryImpl_Stub";
+                "j86.sun.rmi.server.Activation$ActivationSystemImpl_Stub";
+            String registry = "j86.sun.rmi.registry.RegistryImpl_Stub";
 
             permittedSunClasses.put(system, Class.forName(system));
             permittedSunClasses.put(registry, Class.forName(registry));
@@ -199,9 +199,9 @@ public class MarshalInputStream extends ObjectInputStream {
             skipDefaultResolveClass ? null : latestUserDefinedLoader();
 
         /*
-         * If the "java.rmi.server.useCodebaseOnly" property was true or
+         * If the "j86.j86.java.rmi.server.useCodebaseOnly" property was true or
          * useCodebaseOnly() was called or the annotation is not a String,
-         * load from the local loader using the "java.rmi.server.codebase"
+         * load from the local loader using the "j86.j86.java.rmi.server.codebase"
          * URL.  Otherwise, load from a loader using the codebase URL in
          * the annotation.
          */
@@ -261,7 +261,7 @@ public class MarshalInputStream extends ObjectInputStream {
      * if only code from the null class loader is on the stack.
      */
     private static ClassLoader latestUserDefinedLoader() {
-        return sun.misc.VM.latestUserDefinedLoader();
+        return j86.sun.misc.VM.latestUserDefinedLoader();
     }
 
     /**
@@ -283,8 +283,8 @@ public class MarshalInputStream extends ObjectInputStream {
         // if class not permitted, throw the SecurityException
         if ((name == null) ||
             (resolvedClass == null) ||
-            ((!name.equals("accessClassInPackage.sun.rmi.server")) &&
-            (!name.equals("accessClassInPackage.sun.rmi.registry"))))
+            ((!name.equals("accessClassInPackage.j86.sun.rmi.server")) &&
+            (!name.equals("accessClassInPackage.j86.sun.rmi.registry"))))
         {
             throw e;
         }
@@ -313,7 +313,7 @@ public class MarshalInputStream extends ObjectInputStream {
 
     /**
      * Disable code downloading except from the URL specified by the
-     * "java.rmi.server.codebase" property.
+     * "j86.j86.java.rmi.server.codebase" property.
      */
     void useCodebaseOnly() {
         useCodebaseOnly = true;

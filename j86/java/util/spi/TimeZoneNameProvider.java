@@ -23,17 +23,17 @@
  * questions.
  */
 
-package java.util.spi;
+package j86.j86.java.util.spi;
 
-import java.util.Locale;
+import j86.java.util.Locale;
 
 /**
  * An abstract class for service providers that
  * provide localized time zone names for the
- * {@link java.util.TimeZone TimeZone} class.
+ * {@link j86.java.util.TimeZone TimeZone} class.
  * The localized time zone names available from the implementations of
  * this class are also the source for the
- * {@link java.text.DateFormatSymbols#getZoneStrings()
+ * {@link j86.java.text.DateFormatSymbols#getZoneStrings()
  * DateFormatSymbols.getZoneStrings()} method.
  *
  * @since        1.6
@@ -63,18 +63,18 @@ public abstract class TimeZoneNameProvider extends LocaleServiceProvider {
      *
      * @param ID a time zone ID string
      * @param daylight if true, return the daylight saving name.
-     * @param style either {@link java.util.TimeZone#LONG TimeZone.LONG} or
-     *    {@link java.util.TimeZone#SHORT TimeZone.SHORT}
+     * @param style either {@link j86.java.util.TimeZone#LONG TimeZone.LONG} or
+     *    {@link j86.java.util.TimeZone#SHORT TimeZone.SHORT}
      * @param locale the desired locale
      * @return the human-readable name of the given time zone in the
      *     given locale, or null if it's not available.
      * @exception IllegalArgumentException if <code>style</code> is invalid,
      *     or <code>locale</code> isn't one of the locales returned from
-     *     {@link java.util.spi.LocaleServiceProvider#getAvailableLocales()
+     *     {@link j86.j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
      *     getAvailableLocales()}.
      * @exception NullPointerException if <code>ID</code> or <code>locale</code>
      *     is null
-     * @see java.util.TimeZone#getDisplayName(boolean, int, java.util.Locale)
+     * @see j86.java.util.TimeZone#getDisplayName(boolean, int, java.util.Locale)
      */
     public abstract String getDisplayName(String ID, boolean daylight, int style, Locale locale);
 
@@ -91,8 +91,8 @@ public abstract class TimeZoneNameProvider extends LocaleServiceProvider {
      * <p>The default implementation of this method returns {@code null}.
      *
      * @param ID a time zone ID string
-     * @param style either {@link java.util.TimeZone#LONG TimeZone.LONG} or
-     *    {@link java.util.TimeZone#SHORT TimeZone.SHORT}
+     * @param style either {@link j86.java.util.TimeZone#LONG TimeZone.LONG} or
+     *    {@link j86.java.util.TimeZone#SHORT TimeZone.SHORT}
      * @param locale the desired locale
      * @return the human-readable generic name of the given time zone in the
      *     given locale, or {@code null} if it's not available.

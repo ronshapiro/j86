@@ -23,17 +23,17 @@
  * questions.
  */
 
-package sun.java2d.pipe;
+package j86.j86.sun.java2d.pipe;
 
-import sun.java2d.SunGraphics2D;
-import sun.java2d.SurfaceData;
-import java.awt.Rectangle;
-import java.awt.Shape;
-import java.awt.BasicStroke;
-import java.awt.geom.PathIterator;
-import java.awt.geom.AffineTransform;
-import java.awt.geom.Rectangle2D;
-import sun.awt.SunHints;
+import j86.sun.java2d.SunGraphics2D;
+import j86.sun.java2d.SurfaceData;
+import j86.java.awt.Rectangle;
+import j86.java.awt.Shape;
+import j86.java.awt.BasicStroke;
+import j86.j86.java.awt.geom.PathIterator;
+import j86.j86.java.awt.geom.AffineTransform;
+import j86.j86.java.awt.geom.Rectangle2D;
+import j86.sun.awt.SunHints;
 
 /**
  * This class is used to convert raw geometry into a span iterator

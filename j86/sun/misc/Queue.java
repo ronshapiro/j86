@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.misc;
+package j86.sun.misc;
 
-import java.util.Enumeration;
-import java.util.NoSuchElementException;
+import j86.java.util.Enumeration;
+import j86.java.util.NoSuchElementException;
 
 /**
  * Queue: implements a simple queue mechanism.  Allows for enumeration of the
@@ -69,7 +69,7 @@ public class Queue<T> {
      * Dequeue the oldest object on the queue.  Will wait indefinitely.
      *
      * @return    the oldest object on the queue.
-     * @exception java.lang.InterruptedException if any thread has
+     * @exception j86.java.lang.InterruptedException if any thread has
      *              interrupted this thread.
      */
     public T dequeue() throws InterruptedException {
@@ -82,7 +82,7 @@ public class Queue<T> {
      * to arrive.
      *
      * @return    the oldest object on the queue.
-     * @exception java.lang.InterruptedException if any thread has
+     * @exception j86.java.lang.InterruptedException if any thread has
      *              interrupted this thread.
      */
     public synchronized T dequeue(long timeOut)

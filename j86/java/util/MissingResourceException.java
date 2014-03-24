@@ -38,11 +38,11 @@
  *
  */
 
-package java.util;
+package j86.java.util;
 
 /**
  * Signals that a resource is missing.
- * @see java.lang.Exception
+ * @see j86.java.lang.Exception
  * @see ResourceBundle
  * @author      Mark Davis
  * @since       JDK1.1

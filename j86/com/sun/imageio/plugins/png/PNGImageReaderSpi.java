@@ -23,16 +23,16 @@
  * questions.
  */
 
-package com.sun.imageio.plugins.png;
+package j86.com.sun.imageio.plugins.png;
 
-import java.io.IOException;
-import java.util.Locale;
-import java.util.Iterator;
-import javax.imageio.ImageReader;
-import javax.imageio.spi.ImageReaderSpi;
-import javax.imageio.metadata.IIOMetadataFormat;
-import javax.imageio.metadata.IIOMetadataFormatImpl;
-import javax.imageio.stream.ImageInputStream;
+import j86.java.io.IOException;
+import j86.java.util.Locale;
+import j86.java.util.Iterator;
+import j86.javax.imageio.ImageReader;
+import j86.j86.javax.imageio.spi.ImageReaderSpi;
+import j86.j86.javax.imageio.metadata.IIOMetadataFormat;
+import j86.j86.javax.imageio.metadata.IIOMetadataFormatImpl;
+import j86.j86.javax.imageio.stream.ImageInputStream;
 
 public class PNGImageReaderSpi extends ImageReaderSpi {
 
@@ -47,10 +47,10 @@ public class PNGImageReaderSpi extends ImageReaderSpi {
     private static final String[] MIMETypes = { "image/png", "image/x-png" };
 
     private static final String readerClassName =
-        "com.sun.imageio.plugins.png.PNGImageReader";
+        "j86.com.sun.imageio.plugins.png.PNGImageReader";
 
     private static final String[] writerSpiNames = {
-        "com.sun.imageio.plugins.png.PNGImageWriterSpi"
+        "j86.com.sun.imageio.plugins.png.PNGImageWriterSpi"
     };
 
     public PNGImageReaderSpi() {
@@ -67,7 +67,7 @@ public class PNGImageReaderSpi extends ImageReaderSpi {
               null, null,
               true,
               PNGMetadata.nativeMetadataFormatName,
-              "com.sun.imageio.plugins.png.PNGMetadataFormat",
+              "j86.com.sun.imageio.plugins.png.PNGMetadataFormat",
               null, null
               );
     }

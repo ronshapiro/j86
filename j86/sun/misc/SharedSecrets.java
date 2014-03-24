@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.misc;
+package j86.sun.misc;
 
-import java.util.jar.JarFile;
-import java.io.Console;
-import java.io.FileDescriptor;
-import java.security.ProtectionDomain;
+import j86.j86.java.util.jar.JarFile;
+import j86.java.io.Console;
+import j86.java.io.FileDescriptor;
+import j86.java.security.ProtectionDomain;
 
-import java.security.AccessController;
+import j86.java.security.AccessController;
 
 /** A repository of "shared secrets", which are a mechanism for
     calling implementation-private methods in another package without
@@ -48,7 +48,7 @@ public class SharedSecrets {
     private static JavaIOAccess javaIOAccess;
     private static JavaNetAccess javaNetAccess;
     private static JavaNetHttpCookieAccess javaNetHttpCookieAccess;
-    private static JavaNioAccess javaNioAccess;
+    private static JavaNioAccess j86.java.ioAccess;
     private static JavaIOFileDescriptorAccess javaIOFileDescriptorAccess;
     private static JavaSecurityProtectionDomainAccess javaSecurityProtectionDomainAccess;
     private static JavaSecurityAccess javaSecurityAccess;
@@ -90,22 +90,22 @@ public class SharedSecrets {
 
     public static JavaNetHttpCookieAccess getJavaNetHttpCookieAccess() {
         if (javaNetHttpCookieAccess == null)
-            unsafe.ensureClassInitialized(java.net.HttpCookie.class);
+            unsafe.ensureClassInitialized(j86.java.net.HttpCookie.class);
         return javaNetHttpCookieAccess;
     }
 
     public static void setJavaNioAccess(JavaNioAccess jna) {
-        javaNioAccess = jna;
+        j86.java.ioAccess = jna;
     }
 
     public static JavaNioAccess getJavaNioAccess() {
-        if (javaNioAccess == null) {
-            // Ensure java.nio.ByteOrder is initialized; we know that
-            // this class initializes java.nio.Bits that provides the
+        if (j86.java.ioAccess == null) {
+            // Ensure j86.java.nio.ByteOrder is initialized; we know that
+            // this class initializes j86.java.nio.Bits that provides the
             // shared secret.
-            unsafe.ensureClassInitialized(java.nio.ByteOrder.class);
+            unsafe.ensureClassInitialized(j86.java.nio.ByteOrder.class);
         }
-        return javaNioAccess;
+        return j86.java.ioAccess;
     }
 
     public static void setJavaIOAccess(JavaIOAccess jia) {
@@ -155,7 +155,7 @@ public class SharedSecrets {
 
     public static JavaUtilZipFileAccess getJavaUtilZipFileAccess() {
         if (javaUtilZipFileAccess == null)
-            unsafe.ensureClassInitialized(java.util.zip.ZipFile.class);
+            unsafe.ensureClassInitialized(j86.j86.java.util.zip.ZipFile.class);
         return javaUtilZipFileAccess;
     }
 

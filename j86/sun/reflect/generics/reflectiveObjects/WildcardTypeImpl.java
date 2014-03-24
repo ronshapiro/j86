@@ -23,15 +23,15 @@
  * questions.
  */
 
-package sun.reflect.generics.reflectiveObjects;
+package j86.j86.sun.reflect.generics.reflectiveObjects;
 
 
-import java.lang.reflect.Type;
-import java.lang.reflect.WildcardType;
-import sun.reflect.generics.factory.GenericsFactory;
-import sun.reflect.generics.tree.FieldTypeSignature;
-import sun.reflect.generics.visitor.Reifier;
-import java.util.Arrays;
+import j86.j86.j86.java.lang.reflect.Type;
+import j86.j86.j86.java.lang.reflect.WildcardType;
+import j86.j86.sun.reflect.generics.factory.GenericsFactory;
+import j86.j86.sun.reflect.generics.tree.FieldTypeSignature;
+import j86.j86.sun.reflect.generics.visitor.Reifier;
+import j86.java.util.Arrays;
 
 
 /**

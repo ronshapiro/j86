@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.net.ssl;
+package j86.j86.javax.net.ssl;
 
-import java.security.*;
+import j86.java.security.*;
 
 /**
  * This class defines the <i>Service Provider Interface</i> (<b>SPI</b>)
@@ -59,7 +59,7 @@ public abstract class SSLContextSpi {
      * @throws IllegalStateException if the SSLContextImpl requires
      *         initialization and the <code>engineInit()</code>
      *         has not been called
-     * @see javax.net.ssl.SSLContext#getSocketFactory()
+     * @see j86.j86.javax.net.ssl.SSLContext#getSocketFactory()
      */
     protected abstract SSLSocketFactory engineGetSocketFactory();
 
@@ -71,7 +71,7 @@ public abstract class SSLContextSpi {
      * @throws IllegalStateException if the SSLContextImpl requires
      *         initialization and the <code>engineInit()</code>
      *         has not been called
-     * @see javax.net.ssl.SSLContext#getServerSocketFactory()
+     * @see j86.j86.javax.net.ssl.SSLContext#getServerSocketFactory()
      */
     protected abstract SSLServerSocketFactory engineGetServerSocketFactory();
 
@@ -124,7 +124,7 @@ public abstract class SSLContextSpi {
      * this context.
      *
      * @return the <code>SSLSessionContext</code> object
-     * @see javax.net.ssl.SSLContext#getServerSessionContext()
+     * @see j86.j86.javax.net.ssl.SSLContext#getServerSessionContext()
      */
     protected abstract SSLSessionContext engineGetServerSessionContext();
 
@@ -133,7 +133,7 @@ public abstract class SSLContextSpi {
      * this context.
      *
      * @return the <code>SSLSessionContext</code> object
-     * @see javax.net.ssl.SSLContext#getClientSessionContext()
+     * @see j86.j86.javax.net.ssl.SSLContext#getClientSessionContext()
      */
     protected abstract SSLSessionContext engineGetClientSessionContext();
 
@@ -141,7 +141,7 @@ public abstract class SSLContextSpi {
         try {
             SSLSocketFactory factory = engineGetSocketFactory();
             return (SSLSocket)factory.createSocket();
-        } catch (java.io.IOException e) {
+        } catch (j86.java.io.IOException e) {
             throw new UnsupportedOperationException("Could not obtain parameters", e);
         }
     }
@@ -155,7 +155,7 @@ public abstract class SSLContextSpi {
      *
      * <p>The default implementation obtains the parameters from an
      * SSLSocket created by calling the
-     * {@linkplain javax.net.SocketFactory#createSocket
+     * {@linkplain j86.javax.net.SocketFactory#createSocket
      * SocketFactory.createSocket()} method of this context's SocketFactory.
      *
      * @return a copy of the SSLParameters object with the default settings
@@ -178,7 +178,7 @@ public abstract class SSLContextSpi {
      *
      * <p>The default implementation obtains the parameters from an
      * SSLSocket created by calling the
-     * {@linkplain javax.net.SocketFactory#createSocket
+     * {@linkplain j86.javax.net.SocketFactory#createSocket
      * SocketFactory.createSocket()} method of this context's SocketFactory.
      *
      * @return a copy of the SSLParameters object with the maximum supported

@@ -32,9 +32,9 @@
  */
 
 
-package com.sun.tools.example.trace;
+package j86.com.sun.tools.example.trace;
 
-import java.io.*;
+import j86.java.io.*;
 
 /**
  * StreamRedirectThread is a thread which copies it's input to

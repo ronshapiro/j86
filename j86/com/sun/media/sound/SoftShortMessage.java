@@ -22,10 +22,10 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.media.sound;
+package j86.com.sun.media.sound;
 
-import javax.sound.midi.InvalidMidiDataException;
-import javax.sound.midi.ShortMessage;
+import j86.javax.sound.midi.InvalidMidiDataException;
+import j86.javax.sound.midi.ShortMessage;
 
 /**
  * A short message class that support for than 16 midi channels.

@@ -23,22 +23,22 @@
  * questions.
  */
 
-package javax.swing.plaf.basic;
+package j86.j86.j86.javax.swing.plaf.basic;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.text.ParseException;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.java.text.ParseException;
 
-import javax.swing.*;
-import javax.swing.border.*;
-import javax.swing.event.*;
-import javax.swing.plaf.*;
-import javax.swing.text.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.border.*;
+import j86.j86.javax.swing.event.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.javax.swing.text.*;
 
-import java.beans.*;
-import java.text.*;
-import java.util.*;
-import sun.swing.DefaultLookup;
+import j86.java.beans.*;
+import j86.java.text.*;
+import j86.java.util.*;
+import j86.sun.swing.DefaultLookup;
 
 
 /**
@@ -553,7 +553,7 @@ public class BasicSpinnerUI extends SpinnerUI
      *
      * @throws NullPointerException {@inheritDoc}
      * @throws IllegalArgumentException {@inheritDoc}
-     * @see javax.swing.JComponent#getBaseline(int, int)
+     * @see j86.javax.swing.JComponent#getBaseline(int, int)
      * @since 1.6
      */
     public int getBaseline(JComponent c, int width, int height) {
@@ -576,7 +576,7 @@ public class BasicSpinnerUI extends SpinnerUI
      * changes as the size changes.
      *
      * @throws NullPointerException {@inheritDoc}
-     * @see javax.swing.JComponent#getBaseline(int, int)
+     * @see j86.javax.swing.JComponent#getBaseline(int, int)
      * @since 1.6
      */
     public Component.BaselineResizeBehavior getBaselineResizeBehavior(
@@ -603,7 +603,7 @@ public class BasicSpinnerUI extends SpinnerUI
      */
     private static class ArrowButtonHandler extends AbstractAction
                                             implements FocusListener, MouseListener, UIResource {
-        final javax.swing.Timer autoRepeatTimer;
+        final j86.javax.swing.Timer autoRepeatTimer;
         final boolean isNext;
         JSpinner spinner = null;
         JButton arrowButton = null;
@@ -611,7 +611,7 @@ public class BasicSpinnerUI extends SpinnerUI
         ArrowButtonHandler(String name, boolean isNext) {
             super(name);
             this.isNext = isNext;
-            autoRepeatTimer = new javax.swing.Timer(60, this);
+            autoRepeatTimer = new j86.javax.swing.Timer(60, this);
             autoRepeatTimer.setInitialDelay(300);
         }
 
@@ -626,7 +626,7 @@ public class BasicSpinnerUI extends SpinnerUI
         public void actionPerformed(ActionEvent e) {
             JSpinner spinner = this.spinner;
 
-            if (!(e.getSource() instanceof javax.swing.Timer)) {
+            if (!(e.getSource() instanceof j86.javax.swing.Timer)) {
                 // Most likely resulting from being in ActionMap.
                 spinner = eventToSpinner(e);
                 if (e.getSource() instanceof JButton) {

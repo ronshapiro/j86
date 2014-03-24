@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.rmi.server;
+package j86.j86.java.rmi.server;
 
-import java.rmi.RemoteException;
+import j86.java.rmi.RemoteException;
 
 /**
  * This exception is thrown when a call is received that does not

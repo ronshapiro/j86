@@ -23,17 +23,17 @@
  * questions.
  */
 
-package com.sun.tools.jdi;
+package j86.com.sun.tools.jdi;
 
-import com.sun.jdi.*;
+import j86.com.sun.jdi.*;
 
-import java.util.List;
-import java.util.Map;
-import java.util.Iterator;
-import java.util.ListIterator;
-import java.util.HashMap;
-import java.util.ArrayList;
-import java.util.Collections;
+import j86.java.util.List;
+import j86.java.util.Map;
+import j86.java.util.Iterator;
+import j86.java.util.ListIterator;
+import j86.java.util.HashMap;
+import j86.java.util.ArrayList;
+import j86.java.util.Collections;
 
 /**
  * Represents non-concrete (that is, native or abstract) methods.

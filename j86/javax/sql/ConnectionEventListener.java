@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.sql;
+package j86.javax.sql;
 
 /**
  * <P>
@@ -48,7 +48,7 @@ package javax.sql;
  * @since 1.4
  */
 
-public interface ConnectionEventListener extends java.util.EventListener {
+public interface ConnectionEventListener extends j86.java.util.EventListener {
 
   /**
    * Notifies this <code>ConnectionEventListener</code> that

@@ -22,9 +22,9 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.java.util.jar.pack;
+package j86.com.sun.j86.j86.java.util.jar.pack;
 
-import java.util.ListResourceBundle;
+import j86.java.util.ListResourceBundle;
 
 public class DriverResource_ja extends ListResourceBundle {
 

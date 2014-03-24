@@ -23,26 +23,26 @@
  * questions.
  */
 
-package com.sun.jmx.remote.protocol.iiop;
+package j86.com.sun.jmx.remote.protocol.iiop;
 
 import org.omg.CORBA.ORB;
 import org.omg.CORBA.portable.Delegate;
 import javax.rmi.PortableRemoteObject;
 import javax.rmi.CORBA.Stub;
 
-import java.util.Properties;
-import java.rmi.Remote;
-import java.rmi.RemoteException;
-import java.rmi.NoSuchObjectException;
+import j86.java.util.Properties;
+import j86.java.rmi.Remote;
+import j86.java.rmi.RemoteException;
+import j86.java.rmi.NoSuchObjectException;
 
-import com.sun.jmx.remote.internal.IIOPProxy;
-import java.io.SerializablePermission;
-import java.security.AccessControlContext;
-import java.security.AccessController;
-import java.security.Permissions;
-import java.security.PrivilegedActionException;
-import java.security.PrivilegedExceptionAction;
-import java.security.ProtectionDomain;
+import j86.com.sun.jmx.remote.internal.IIOPProxy;
+import j86.java.io.SerializablePermission;
+import j86.java.security.AccessControlContext;
+import j86.java.security.AccessController;
+import j86.java.security.Permissions;
+import j86.java.security.PrivilegedActionException;
+import j86.java.security.PrivilegedExceptionAction;
+import j86.java.security.ProtectionDomain;
 
 /**
  * An implementation of IIOPProxy that simply delegates to the appropriate

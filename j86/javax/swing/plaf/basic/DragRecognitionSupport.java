@@ -22,14 +22,14 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.plaf.basic;
+package j86.j86.j86.javax.swing.plaf.basic;
 
-import java.awt.Toolkit;
-import java.awt.event.*;
-import java.awt.dnd.DragSource;
-import javax.swing.*;
-import sun.awt.dnd.SunDragSourceContextPeer;
-import sun.awt.AppContext;
+import j86.java.awt.Toolkit;
+import j86.j86.java.awt.event.*;
+import j86.j86.java.awt.dnd.DragSource;
+import j86.javax.swing.*;
+import j86.j86.sun.awt.dnd.SunDragSourceContextPeer;
+import j86.sun.awt.AppContext;
 
 /**
  * Drag gesture recognition support for classes that have a

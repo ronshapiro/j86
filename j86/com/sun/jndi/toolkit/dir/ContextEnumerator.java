@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.jndi.toolkit.dir;
+package j86.com.sun.jndi.toolkit.dir;
 
-import javax.naming.*;
-import javax.naming.directory.SearchControls;
-import java.util.*;
+import j86.javax.naming.*;
+import j86.j86.javax.naming.directory.SearchControls;
+import j86.java.util.*;
 
 /**
   * A class for recursively enumerating the contents of a Context;

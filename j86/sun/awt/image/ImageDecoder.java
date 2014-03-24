@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.awt.image;
+package j86.j86.j86.sun.awt.image;
 
-import java.util.Hashtable;
-import java.io.InputStream;
-import java.io.IOException;
-import java.awt.image.*;
+import j86.java.util.Hashtable;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
+import j86.j86.j86.java.awt.image.*;
 
 public abstract class ImageDecoder {
     InputStreamImageSource source;
@@ -163,8 +163,8 @@ public abstract class ImageDecoder {
         aborted = true;
         source.doneDecoding(this);
         close();
-        java.security.AccessController.doPrivileged(
-            new java.security.PrivilegedAction() {
+        j86.java.security.AccessController.doPrivileged(
+            new j86.java.security.PrivilegedAction() {
             public Object run() {
                 feeder.interrupt();
                 return null;

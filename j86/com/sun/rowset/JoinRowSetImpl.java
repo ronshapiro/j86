@@ -23,18 +23,18 @@
  * questions.
  */
 
-package com.sun.rowset;
+package j86.com.sun.rowset;
 
-import java.sql.*;
-import javax.sql.*;
-import javax.naming.*;
-import java.io.*;
-import java.math.*;
-import java.util.*;
+import j86.java.sql.*;
+import j86.javax.sql.*;
+import j86.javax.naming.*;
+import j86.java.io.*;
+import j86.java.math.*;
+import j86.java.util.*;
 
-import javax.sql.rowset.*;
-import javax.sql.rowset.spi.SyncProvider;
-import javax.sql.rowset.spi.SyncProviderException;
+import j86.j86.javax.sql.rowset.*;
+import j86.j86.j86.javax.sql.rowset.spi.SyncProvider;
+import j86.j86.j86.javax.sql.rowset.spi.SyncProviderException;
 
 /**
  * The standard implementation of the <code>JoinRowSet</code>
@@ -463,9 +463,9 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      *         <code>JoinRowSet</code> object
      * @throws SQLException if an error occurs assembling the <code>CachedRowSet</code>
      *         object
-     * @see javax.sql.RowSet
-     * @see javax.sql.rowset.CachedRowSet
-     * @see javax.sql.rowset.spi.SyncProvider
+     * @see j86.javax.sql.RowSet
+     * @see j86.j86.javax.sql.rowset.CachedRowSet
+     * @see j86.j86.j86.javax.sql.rowset.spi.SyncProvider
      */
     public CachedRowSet toCachedRowSet() throws SQLException {
         return crsInternal;
@@ -1135,7 +1135,7 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
     /**
      * Retrieves the value of the designated column in the current row
      * of this <code>JoinRowSetImpl</code> object as a
-     * <code>java.math.BigDecimal</code> object.
+     * <code>j86.java.math.BigDecimal</code> object.
      * <P>
      * This method is deprecated; use the version of <code>getBigDecimal</code>
      * that does not take a scale parameter and returns a value with full
@@ -1179,7 +1179,7 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
     /**
      * Retrieves the value of the designated column in the current row
      * of this <code>JoinRowSetImpl</code> object as a
-     * <code>java.sql.Date</code> object.
+     * <code>j86.java.sql.Date</code> object.
      *
      * @param columnIndex the first column is <code>1</code>, the second
      *        is <code>2</code>, and so on; must be <code>1</code> or larger
@@ -1189,14 +1189,14 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      * @throws SQLException if the given column index is out of bounds,
      *            the cursor is not on a valid row, or this method fails
      */
-    public java.sql.Date getDate(int columnIndex) throws SQLException {
+    public j86.java.sql.Date getDate(int columnIndex) throws SQLException {
         return crsInternal.getDate(columnIndex);
     }
 
     /**
      * Retrieves the value of the designated column in the current row
      * of this <code>JoinRowSetImpl</code> object as a
-     * <code>java.sql.Time</code> object.
+     * <code>j86.java.sql.Time</code> object.
      *
      * @param columnIndex the first column is <code>1</code>, the second
      *        is <code>2</code>, and so on; must be <code>1</code> or larger
@@ -1206,14 +1206,14 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      * @throws SQLException if the given column index is out of bounds,
      *            the cursor is not on a valid row, or this method fails
      */
-    public java.sql.Time getTime(int columnIndex) throws SQLException {
+    public j86.java.sql.Time getTime(int columnIndex) throws SQLException {
         return crsInternal.getTime(columnIndex);
     }
 
     /**
      * Retrieves the value of the designated column in the current row
      * of this <code>JoinRowSetImpl</code> object as a
-     * <code>java.sql.Timestamp</code> object.
+     * <code>j86.java.sql.Timestamp</code> object.
      *
      * @param columnIndex the first column is <code>1</code>, the second
      *        is <code>2</code>, and so on; must be <code>1</code> or larger
@@ -1223,14 +1223,14 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      * @throws SQLException if the given column index is out of bounds,
      *            the cursor is not on a valid row, or this method fails
      */
-    public java.sql.Timestamp getTimestamp(int columnIndex) throws SQLException {
+    public j86.java.sql.Timestamp getTimestamp(int columnIndex) throws SQLException {
         return crsInternal.getTimestamp(columnIndex);
     }
 
     /**
      * Retrieves the value of the designated column in the current row
      * of this <code>JoinRowSetImpl</code> object as a
-     * <code>java.sql.Timestamp</code> object.
+     * <code>j86.java.sql.Timestamp</code> object.
      *
      * @param columnIndex the first column is <code>1</code>, the second
      *        is <code>2</code>, and so on; must be <code>1</code> or larger
@@ -1240,7 +1240,7 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      * @throws SQLException if the given column index is out of bounds,
      *            the cursor is not on a valid row, or this method fails
      */
-    public java.io.InputStream getAsciiStream(int columnIndex) throws SQLException {
+    public j86.java.io.InputStream getAsciiStream(int columnIndex) throws SQLException {
         return crsInternal.getAsciiStream(columnIndex);
     }
 
@@ -1266,7 +1266,7 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      * @deprecated
      */
     @Deprecated
-    public java.io.InputStream getUnicodeStream(int columnIndex) throws SQLException {
+    public j86.java.io.InputStream getUnicodeStream(int columnIndex) throws SQLException {
         return crsInternal.getUnicodeStream(columnIndex);
     }
 
@@ -1289,7 +1289,7 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      * then the result is null.
      * @throws SQLException if an error occurs
      */
-    public java.io.InputStream getBinaryStream(int columnIndex) throws SQLException {
+    public j86.java.io.InputStream getBinaryStream(int columnIndex) throws SQLException {
         return crsInternal.getBinaryStream(columnIndex);
     }
 
@@ -1425,7 +1425,7 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
 
     /**
      * Retrieves the value stored in the designated column
-     * of the current row as a <code>java.math.BigDecimal</code> object.
+     * of the current row as a <code>j86.java.math.BigDecimal</code> object.
      *
      * @param columnName a <code>String</code> object giving the SQL name of
      *        a column in this <code>JoinRowSetImpl</code> object
@@ -1462,7 +1462,7 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
 
     /**
      * Retrieves the value stored in the designated column
-     * of the current row as a <code>java.sql.Date</code> object.
+     * of the current row as a <code>j86.java.sql.Date</code> object.
      *
      * @param columnName a <code>String</code> object giving the SQL name of
      *        a column in this <code>JoinRowSetImpl</code> object
@@ -1472,13 +1472,13 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      *            this rowset's column names or the cursor is not on one of
      *            this rowset's rows or its insert row
      */
-    public java.sql.Date getDate(String columnName) throws SQLException {
+    public j86.java.sql.Date getDate(String columnName) throws SQLException {
         return crsInternal.getDate(columnName);
     }
 
     /**
      * Retrieves the value stored in the designated column
-     * of the current row as a <code>java.sql.Time</code> object.
+     * of the current row as a <code>j86.java.sql.Time</code> object.
      *
      * @param columnName a <code>String</code> object giving the SQL name of
      *        a column in this <code>JoinRowSetImpl</code> object
@@ -1488,13 +1488,13 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      *            this rowset's column names or the cursor is not on one of
      *            this rowset's rows or its insert row
      */
-    public java.sql.Time getTime(String columnName) throws SQLException {
+    public j86.java.sql.Time getTime(String columnName) throws SQLException {
         return crsInternal.getTime(columnName);
     }
 
     /**
      * Retrieves the value stored in the designated column
-     * of the current row as a <code>java.sql.Timestamp</code> object.
+     * of the current row as a <code>j86.java.sql.Timestamp</code> object.
      *
      * @param columnName a <code>String</code> object giving the SQL name of
      *        a column in this <code>JoinRowSetImpl</code> object
@@ -1504,7 +1504,7 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      *            this rowset's column names or the cursor is not on one of
      *            this rowset's rows or its insert row
      */
-    public java.sql.Timestamp getTimestamp(String columnName) throws SQLException {
+    public j86.java.sql.Timestamp getTimestamp(String columnName) throws SQLException {
         return crsInternal.getTimestamp(columnName);
     }
 
@@ -1528,13 +1528,13 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      *         <code>NULL</code>, the result is <code>null</code>.
      * @throws UnsupportedOperationException if this method is called
      */
-    public java.io.InputStream getAsciiStream(String columnName) throws SQLException {
+    public j86.java.io.InputStream getAsciiStream(String columnName) throws SQLException {
         return crsInternal.getAsciiStream(columnName);
     }
 
     /**
      * Retrieves the value stored in the designated column
-     * of the current row as a <code>java.io.InputStream</code> object.
+     * of the current row as a <code>j86.java.io.InputStream</code> object.
      * A column value can be retrieved as a stream of Unicode characters
      * and then read in chunks from the stream.  This method is particularly
      * suitable for retrieving large <code>LONGVARCHAR</code> values.
@@ -1556,13 +1556,13 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      * @deprecated use the method <code>getCharacterStream</code> instead
      */
     @Deprecated
-    public java.io.InputStream getUnicodeStream(String columnName) throws SQLException {
+    public j86.java.io.InputStream getUnicodeStream(String columnName) throws SQLException {
         return crsInternal.getUnicodeStream(columnName);
     }
 
     /**
      * Retrieves the value stored in the designated column
-     * of the current row as a <code>java.io.InputStream</code> object.
+     * of the current row as a <code>j86.java.io.InputStream</code> object.
      * A column value can be retrieved as a stream of uninterpreted bytes
      * and then read in chunks from the stream.  This method is particularly
      * suitable for retrieving large <code>LONGVARBINARY</code> values.
@@ -1580,7 +1580,7 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      *            this rowset's column names or the cursor is not on one of
      *            this rowset's rows or its insert row
      */
-    public java.io.InputStream getBinaryStream(String columnName) throws SQLException {
+    public j86.java.io.InputStream getBinaryStream(String columnName) throws SQLException {
         return crsInternal.getBinaryStream(columnName);
     }
 
@@ -1682,7 +1682,7 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      * @param columnIndex the first column is <code>1</code>, the second
      *        is <code>2</code>, and so on; must be <code>1</code> or larger
      *        and equal to or less than the number of columns in the rowset
-     * @return a <code>java.lang.Object</code> holding the column value;
+     * @return a <code>j86.java.lang.Object</code> holding the column value;
      *         if the value is SQL <code>NULL</code>, the result is <code>null</code>
      * @throws SQLException if the given column index is out of bounds,
      *            the cursor is not on a valid row, or there is a problem getting
@@ -1718,10 +1718,10 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      * @param columnIndex the first column is <code>1</code>, the second
      *         is <code>2</code>, and so on; must be <code>1</code> or larger
      *         and equal to or less than the number of columns in the rowset
-     * @param map a <code>java.util.Map</code> object showing the mapping
+     * @param map a <code>j86.java.util.Map</code> object showing the mapping
      *         from SQL type names to classes in the Java programming
      *         language
-     * @return a <code>java.lang.Object</code> holding the column value;
+     * @return a <code>j86.java.lang.Object</code> holding the column value;
      *         if the value is SQL <code>NULL</code>, the result is
      *         <code>null</code>
      * @throws SQLException if (1) the given column name does not match
@@ -1730,7 +1730,7 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      *         the <code>Class</code> object for a custom mapping
      */
     public Object getObject(int columnIndex,
-                            java.util.Map<String,Class<?>> map)
+                            j86.java.util.Map<String,Class<?>> map)
     throws SQLException {
         return crsInternal.getObject(columnIndex, map);
     }
@@ -1759,7 +1759,7 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      *
      * @param columnName a <code>String</code> object that must match the
      *        SQL name of a column in this rowset, ignoring case
-     * @return a <code>java.lang.Object</code> holding the column value;
+     * @return a <code>j86.java.lang.Object</code> holding the column value;
      *        if the value is SQL <code>NULL</code>, the result is
      *        <code>null</code>
      * @throws SQLException if (1) the given column name does not match
@@ -1775,12 +1775,12 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      * Retrieves the value of the designated column in this
      * <code>JoinRowSetImpl</code> object as an <code>Object</code> in
      * the Java programming lanugage, using the given
-     * <code>java.util.Map</code> object to custom map the value if
+     * <code>j86.java.util.Map</code> object to custom map the value if
      * appropriate.
      *
      * @param columnName a <code>String</code> object that must match the
      *        SQL name of a column in this rowset, ignoring case
-     * @param map a <code>java.util.Map</code> object showing the mapping
+     * @param map a <code>j86.java.util.Map</code> object showing the mapping
      *            from SQL type names to classes in the Java programming
      *            language
      * @return an <code>Object</code> representing the SQL value
@@ -1789,14 +1789,14 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      *            insert row
      */
     public Object getObject(String columnName,
-                            java.util.Map<String,Class<?>> map)
+                            j86.java.util.Map<String,Class<?>> map)
         throws SQLException {
         return crsInternal.getObject(columnName, map);
     }
 
     /**
      * Retrieves the value stored in the designated column
-     * of the current row as a <code>java.io.Reader</code> object.
+     * of the current row as a <code>j86.java.io.Reader</code> object.
      *
      * <P><B>Note:</B> All the data in the returned stream must
      * be read prior to getting the value of any other column. The
@@ -1806,18 +1806,18 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      *        is <code>2</code>, and so on; must be <code>1</code> or larger
      *        and equal to or less than the number of columns in the rowset
      * @return a Java character stream that delivers the database column value
-     *         as a <code>java.io.Reader</code> object.  If the value is
+     *         as a <code>j86.java.io.Reader</code> object.  If the value is
      *         SQL <code>NULL</code>, the result is <code>null</code>.
      * @throws SQLException if the given column index is out of bounds,
      *            the cursor is not on a valid row, or there is a type mismatch
      */
-    public java.io.Reader getCharacterStream(int columnIndex) throws SQLException {
+    public j86.java.io.Reader getCharacterStream(int columnIndex) throws SQLException {
         return crsInternal.getCharacterStream(columnIndex);
     }
 
     /**
      * Retrieves the value stored in the designated column
-     * of the current row as a <code>java.io.Reader</code> object.
+     * of the current row as a <code>j86.java.io.Reader</code> object.
      *
      * <P><B>Note:</B> All the data in the returned stream must
      * be read prior to getting the value of any other column. The
@@ -1831,19 +1831,19 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      * @throws SQLException if the given column index is out of bounds,
      *            the cursor is not on a valid row, or there is a type mismatch
      */
-    public java.io.Reader getCharacterStream(String columnName) throws SQLException {
+    public j86.java.io.Reader getCharacterStream(String columnName) throws SQLException {
         return crsInternal.getCharacterStream(columnName);
     }
 
     /**
      * Retrieves the value of the designated column in the current row
      * of this <code>JoinRowSetImpl</code> object as a
-     * <code>java.math.BigDecimal</code> object.
+     * <code>j86.java.math.BigDecimal</code> object.
      *
      * @param columnIndex the first column is <code>1</code>, the second
      *        is <code>2</code>, and so on; must be <code>1</code> or larger
      *        and equal to or less than the number of columns in the rowset
-     * @return a <code>java.math.BigDecimal</code> value with full precision;
+     * @return a <code>j86.java.math.BigDecimal</code> value with full precision;
      *         if the value is SQL <code>NULL</code>, the result is <code>null</code>
      * @throws SQLException if the given column index is out of bounds,
      *            the cursor is not on a valid row, or this method fails
@@ -1855,11 +1855,11 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
     /**
      * Retrieves the value of the designated column in the current row
      * of this <code>JoinRowSetImpl</code> object as a
-     * <code>java.math.BigDecimal</code> object.
+     * <code>j86.java.math.BigDecimal</code> object.
      *
      * @param columnName a <code>String</code> object that must match the
      *        SQL name of a column in this rowset, ignoring case
-     * @return a <code>java.math.BigDecimal</code> value with full precision;
+     * @return a <code>j86.java.math.BigDecimal</code> value with full precision;
      *         if the value is SQL <code>NULL</code>, the result is <code>null</code>
      * @throws SQLException if the given column index is out of bounds,
      *            the cursor is not on a valid row, or this method fails
@@ -2453,7 +2453,7 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
     /**
      * Sets the designated column in either the current row or the insert
      * row of this <code>JoinRowSetImpl</code> object with the given
-     * <code>java.math.BigDecimal</code> object.
+     * <code>j86.java.math.BigDecimal</code> object.
      * <P>
      * This method updates a column value in the current row or the insert
      * row of this rowset, but it does not update the database.
@@ -2558,7 +2558,7 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      *            an SQL <code>DATE</code> or <code>TIMESTAMP</code>, or
      *            (4) this rowset is <code>ResultSet.CONCUR_READ_ONLY</code>
      */
-    public void updateDate(int columnIndex, java.sql.Date x) throws SQLException {
+    public void updateDate(int columnIndex, j86.java.sql.Date x) throws SQLException {
         crsInternal.updateDate(columnIndex, x);
     }
 
@@ -2586,7 +2586,7 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      *            an SQL <code>TIME</code> or <code>TIMESTAMP</code>, or
      *            (4) this rowset is <code>ResultSet.CONCUR_READ_ONLY</code>
      */
-    public void updateTime(int columnIndex, java.sql.Time x) throws SQLException {
+    public void updateTime(int columnIndex, j86.java.sql.Time x) throws SQLException {
         crsInternal.updateTime(columnIndex, x);
     }
 
@@ -2615,7 +2615,7 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      *            <code>TIMESTAMP</code>, or (4) this rowset is
      *            <code>ResultSet.CONCUR_READ_ONLY</code>
      */
-    public void updateTimestamp(int columnIndex, java.sql.Timestamp x) throws SQLException {
+    public void updateTimestamp(int columnIndex, j86.java.sql.Timestamp x) throws SQLException {
         crsInternal.updateTimestamp(columnIndex, x);
     }
 
@@ -2640,14 +2640,14 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      * @param length the number of one-byte ASCII characters in the stream
      * @throws UnsupportedOperationException if this method is invoked
      */
-    public void updateAsciiStream(int columnIndex, java.io.InputStream x, int length) throws SQLException {
+    public void updateAsciiStream(int columnIndex, j86.java.io.InputStream x, int length) throws SQLException {
         crsInternal.updateAsciiStream(columnIndex, x, length);
     }
 
     /**
      * Sets the designated column in either the current row or the insert
      * row of this <code>JoinRowSetImpl</code> object with the given
-     * <code>java.io.InputStream</code> object.
+     * <code>j86.java.io.InputStream</code> object.
      * <P>
      * This method updates a column value in either the current row or
      * the insert row of this rowset, but it does not update the
@@ -2661,7 +2661,7 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      * @param columnIndex the first column is <code>1</code>, the second
      *        is <code>2</code>, and so on; must be <code>1</code> or larger
      *        and equal to or less than the number of columns in this rowset
-     * @param x the new column value; must be a <code>java.io.InputStream</code>
+     * @param x the new column value; must be a <code>j86.java.io.InputStream</code>
      *          containing <code>BINARY</code>, <code>VARBINARY</code>, or
      *          <code>LONGVARBINARY</code> data
      * @param length the length of the stream in bytes
@@ -2670,14 +2670,14 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      *            insert row, (3) the data in the stream is not binary, or
      *            (4) this rowset is <code>ResultSet.CONCUR_READ_ONLY</code>
      */
-    public void updateBinaryStream(int columnIndex, java.io.InputStream x, int length) throws SQLException {
+    public void updateBinaryStream(int columnIndex, j86.java.io.InputStream x, int length) throws SQLException {
         crsInternal.updateBinaryStream(columnIndex, x, length);
     }
 
     /**
      * Sets the designated column in either the current row or the insert
      * row of this <code>JoinRowSetImpl</code> object with the given
-     * <code>java.io.Reader</code> object.
+     * <code>j86.java.io.Reader</code> object.
      * <P>
      * This method updates a column value in either the current row or
      * the insert row of this rowset, but it does not update the
@@ -2691,7 +2691,7 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      * @param columnIndex the first column is <code>1</code>, the second
      *        is <code>2</code>, and so on; must be <code>1</code> or larger
      *        and equal to or less than the number of columns in this rowset
-     * @param x the new column value; must be a <code>java.io.Reader</code>
+     * @param x the new column value; must be a <code>j86.java.io.Reader</code>
      *          containing <code>BINARY</code>, <code>VARBINARY</code>,
      *          <code>LONGVARBINARY</code>, <code>CHAR</code>, <code>VARCHAR</code>,
      *          or <code>LONGVARCHAR</code> data
@@ -2702,7 +2702,7 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      *            character type, or (4) this rowset is
      *            <code>ResultSet.CONCUR_READ_ONLY</code>
      */
-    public void updateCharacterStream(int columnIndex, java.io.Reader x, int length) throws SQLException {
+    public void updateCharacterStream(int columnIndex, j86.java.io.Reader x, int length) throws SQLException {
         crsInternal.updateCharacterStream(columnIndex, x, length);
     }
 
@@ -2976,7 +2976,7 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
     /**
      * Sets the designated column in either the current row or the insert
      * row of this <code>JoinRowSetImpl</code> object with the given
-     * <code>java.math.BigDecimal</code> object.
+     * <code>j86.java.math.BigDecimal</code> object.
      * <P>
      * This method updates a column value in the current row or the insert
      * row of this rowset, but it does not update the database.
@@ -3075,7 +3075,7 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      *            <code>TIMESTAMP</code>, or (4) this rowset is
      *            <code>ResultSet.CONCUR_READ_ONLY</code>
      */
-    public void updateDate(String columnName, java.sql.Date x) throws SQLException {
+    public void updateDate(String columnName, j86.java.sql.Date x) throws SQLException {
         crsInternal.updateDate(columnName, x);
     }
 
@@ -3103,7 +3103,7 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      *            <code>TIMESTAMP</code>, or (4) this rowset is
      *            <code>ResultSet.CONCUR_READ_ONLY</code>
      */
-    public void updateTime(String columnName, java.sql.Time x) throws SQLException {
+    public void updateTime(String columnName, j86.java.sql.Time x) throws SQLException {
         crsInternal.updateTime(columnName, x);
     }
 
@@ -3134,7 +3134,7 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      *            <code>TIME</code>, or <code>TIMESTAMP</code>, or (4) this
      *            rowset is <code>ResultSet.CONCUR_READ_ONLY</code>
      */
-    public void updateTimestamp(String columnName, java.sql.Timestamp x) throws SQLException {
+    public void updateTimestamp(String columnName, j86.java.sql.Timestamp x) throws SQLException {
         crsInternal.updateTimestamp(columnName, x);
     }
 
@@ -3161,14 +3161,14 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      * @param length the number of one-byte ASCII characters in the stream
      * @throws UnsupportedOperationException if this method is invoked
      */
-    public void updateAsciiStream(String columnName, java.io.InputStream x, int length) throws SQLException {
+    public void updateAsciiStream(String columnName, j86.java.io.InputStream x, int length) throws SQLException {
         crsInternal.updateAsciiStream(columnName, x, length);
     }
 
     /**
      * Sets the designated column in either the current row or the insert
      * row of this <code>JoinRowSetImpl</code> object with the given
-     * <code>java.io.InputStream</code> object.
+     * <code>j86.java.io.InputStream</code> object.
      * <P>
      * This method updates a column value in either the current row or
      * the insert row of this rowset, but it does not update the
@@ -3181,7 +3181,7 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      *
      * @param columnName a <code>String</code> object that must match the
      *        SQL name of a column in this rowset, ignoring case
-     * @param x the new column value; must be a <code>java.io.InputStream</code>
+     * @param x the new column value; must be a <code>j86.java.io.InputStream</code>
      *          containing <code>BINARY</code>, <code>VARBINARY</code>, or
      *          <code>LONGVARBINARY</code> data
      * @param length the length of the stream in bytes
@@ -3191,14 +3191,14 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      *            in the stream is not binary, or (4) this rowset is
      *            <code>ResultSet.CONCUR_READ_ONLY</code>
      */
-    public void updateBinaryStream(String columnName, java.io.InputStream x, int length) throws SQLException {
+    public void updateBinaryStream(String columnName, j86.java.io.InputStream x, int length) throws SQLException {
         crsInternal.updateBinaryStream(columnName, x, length);
     }
 
     /**
      * Sets the designated column in either the current row or the insert
      * row of this <code>JoinRowSetImpl</code> object with the given
-     * <code>java.io.Reader</code> object.
+     * <code>j86.java.io.Reader</code> object.
      * <P>
      * This method updates a column value in either the current row or
      * the insert row of this rowset, but it does not update the
@@ -3211,7 +3211,7 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      *
      * @param columnName a <code>String</code> object that must match the
      *        SQL name of a column in this rowset, ignoring case
-     * @param x the new column value; must be a <code>java.io.Reader</code>
+     * @param x the new column value; must be a <code>j86.java.io.Reader</code>
      *          containing <code>BINARY</code>, <code>VARBINARY</code>,
      *          <code>LONGVARBINARY</code>, <code>CHAR</code>, <code>VARCHAR</code>,
      *          or <code>LONGVARCHAR</code> data
@@ -3222,7 +3222,7 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      *            in the stream is not a binary or character type, or (4) this
      *            rowset is <code>ResultSet.CONCUR_READ_ONLY</code>
      */
-    public void updateCharacterStream(String columnName, java.io.Reader x, int length) throws SQLException {
+    public void updateCharacterStream(String columnName, j86.java.io.Reader x, int length) throws SQLException {
         crsInternal.updateCharacterStream(columnName, x, length);
     }
 
@@ -3578,14 +3578,14 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
 
     /**
      * Retrieves the value of the designated column in the current row
-     * of this <code>JoinRowSetImpl</code> object as a <code>java.sql.Date</code>
+     * of this <code>JoinRowSetImpl</code> object as a <code>j86.java.sql.Date</code>
      * object, using the given <code>Calendar</code> object to construct an
      * appropriate millisecond value for the date.
      *
      * @param columnIndex the first column is <code>1</code>, the second
      *        is <code>2</code>, and so on; must be <code>1</code> or larger
      *        and equal to or less than the number of columns in the rowset
-     * @param cal the <code>java.util.Calendar</code> object to use in
+     * @param cal the <code>j86.java.util.Calendar</code> object to use in
      *            constructing the date
      * @return the column value; if the value is SQL <code>NULL</code>,
      *         the result is <code>null</code>
@@ -3595,19 +3595,19 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      *            column does not store an SQL <code>DATE</code> or
      *            <code>TIMESTAMP</code> value
      */
-    public java.sql.Date getDate(int columnIndex, Calendar cal) throws SQLException {
+    public j86.java.sql.Date getDate(int columnIndex, Calendar cal) throws SQLException {
         return crsInternal.getDate(columnIndex, cal);
     }
 
     /**
      * Retrieves the value of the designated column in the current row
-     * of this <code>JoinRowSetImpl</code> object as a <code>java.sql.Date</code>
+     * of this <code>JoinRowSetImpl</code> object as a <code>j86.java.sql.Date</code>
      * object, using the given <code>Calendar</code> object to construct an
      * appropriate millisecond value for the date.
      *
      * @param columnName a <code>String</code> object that must match the
      *        SQL name of a column in this rowset, ignoring case
-     * @param cal the <code>java.util.Calendar</code> object to use in
+     * @param cal the <code>j86.java.util.Calendar</code> object to use in
      *            constructing the date
      * @return the column value; if the value is SQL <code>NULL</code>,
      *         the result is <code>null</code>
@@ -3617,20 +3617,20 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      *            column does not store an SQL <code>DATE</code> or
      *            <code>TIMESTAMP</code> value
      */
-    public java.sql.Date getDate(String columnName, Calendar cal) throws SQLException {
+    public j86.java.sql.Date getDate(String columnName, Calendar cal) throws SQLException {
         return crsInternal.getDate(columnName, cal);
     }
 
     /**
      * Retrieves the value of the designated column in the current row
-     * of this <code>JoinRowSetImpl</code> object as a <code>java.sql.Time</code>
+     * of this <code>JoinRowSetImpl</code> object as a <code>j86.java.sql.Time</code>
      * object, using the given <code>Calendar</code> object to construct an
      * appropriate millisecond value for the date.
      *
      * @param columnIndex the first column is <code>1</code>, the second
      *        is <code>2</code>, and so on; must be <code>1</code> or larger
      *        and equal to or less than the number of columns in the rowset
-     * @param cal the <code>java.util.Calendar</code> object to use in
+     * @param cal the <code>j86.java.util.Calendar</code> object to use in
      *            constructing the date
      * @return the column value; if the value is SQL <code>NULL</code>,
      *         the result is <code>null</code>
@@ -3640,19 +3640,19 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      *            column does not store an SQL <code>TIME</code> or
      *            <code>TIMESTAMP</code> value
      */
-    public java.sql.Time getTime(int columnIndex, Calendar cal) throws SQLException {
+    public j86.java.sql.Time getTime(int columnIndex, Calendar cal) throws SQLException {
         return crsInternal.getTime(columnIndex, cal);
     }
 
     /**
      * Retrieves the value of the designated column in the current row
-     * of this <code>JoinRowSetImpl</code> object as a <code>java.sql.Time</code>
+     * of this <code>JoinRowSetImpl</code> object as a <code>j86.java.sql.Time</code>
      * object, using the given <code>Calendar</code> object to construct an
      * appropriate millisecond value for the date.
      *
      * @param columnName a <code>String</code> object that must match the
      *        SQL name of a column in this rowset, ignoring case
-     * @param cal the <code>java.util.Calendar</code> object to use in
+     * @param cal the <code>j86.java.util.Calendar</code> object to use in
      *            constructing the date
      * @return the column value; if the value is SQL <code>NULL</code>,
      *         the result is <code>null</code>
@@ -3662,20 +3662,20 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      *            column does not store an SQL <code>TIME</code> or
      *            <code>TIMESTAMP</code> value
      */
-    public java.sql.Time getTime(String columnName, Calendar cal) throws SQLException {
+    public j86.java.sql.Time getTime(String columnName, Calendar cal) throws SQLException {
         return crsInternal.getTime(columnName, cal);
     }
 
     /**
      * Retrieves the value of the designated column in the current row
-     * of this <code>JoinRowSetImpl</code> object as a <code>java.sql.Timestamp</code>
+     * of this <code>JoinRowSetImpl</code> object as a <code>j86.java.sql.Timestamp</code>
      * object, using the given <code>Calendar</code> object to construct an
      * appropriate millisecond value for the date.
      *
      * @param columnIndex the first column is <code>1</code>, the second
      *        is <code>2</code>, and so on; must be <code>1</code> or larger
      *        and equal to or less than the number of columns in the rowset
-     * @param cal the <code>java.util.Calendar</code> object to use in
+     * @param cal the <code>j86.java.util.Calendar</code> object to use in
      *            constructing the date
      * @return the column value; if the value is SQL <code>NULL</code>,
      *         the result is <code>null</code>
@@ -3685,20 +3685,20 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      *            column does not store an SQL <code>TIME</code> or
      *            <code>TIMESTAMP</code> value
      */
-    public java.sql.Timestamp getTimestamp(int columnIndex, Calendar cal) throws SQLException {
+    public j86.java.sql.Timestamp getTimestamp(int columnIndex, Calendar cal) throws SQLException {
         return crsInternal.getTimestamp(columnIndex, cal);
     }
 
     /**
      * Retrieves the value of the designated column in the current row
      * of this <code>JoinRowSetImpl</code> object as a
-     * <code>java.sql.Timestamp</code> object, using the given
+     * <code>j86.java.sql.Timestamp</code> object, using the given
      * <code>Calendar</code> object to construct an appropriate
      * millisecond value for the date.
      *
      * @param columnName a <code>String</code> object that must match the
      *        SQL name of a column in this rowset, ignoring case
-     * @param cal the <code>java.util.Calendar</code> object to use in
+     * @param cal the <code>j86.java.util.Calendar</code> object to use in
      *            constructing the date
      * @return the column value; if the value is SQL <code>NULL</code>,
      *         the result is <code>null</code>
@@ -3708,7 +3708,7 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      *            column does not store an SQL <code>DATE</code>,
      *            <code>TIME</code>, or <code>TIMESTAMP</code> value
      */
-    public java.sql.Timestamp getTimestamp(String columnName, Calendar cal) throws SQLException {
+    public j86.java.sql.Timestamp getTimestamp(String columnName, Calendar cal) throws SQLException {
         return crsInternal.getTimestamp(columnName, cal);
     }
 
@@ -3806,14 +3806,14 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      * @param columnIndex the first column is <code>1</code>, the second
      *        is <code>2</code>, and so on; must be <code>1</code> or larger
      *        and equal to or less than the number of columns in this rowset
-     * @param ref the <code>java.sql.Ref</code> object that will be set as
+     * @param ref the <code>j86.java.sql.Ref</code> object that will be set as
      *         the new column value
      * @throws SQLException if (1) the given column index is out of bounds,
      *            (2) the cursor is not on one of this rowset's rows or its
      *            insert row, or (3) this rowset is
      *            <code>ResultSet.CONCUR_READ_ONLY</code>
      */
-    public void updateRef(int columnIndex, java.sql.Ref ref) throws SQLException {
+    public void updateRef(int columnIndex, j86.java.sql.Ref ref) throws SQLException {
         crsInternal.updateRef(columnIndex, ref);
     }
 
@@ -3834,14 +3834,14 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      * @param columnName a <code>String</code> object giving the name of the column
      *        to be updated; must match one of the column names in this
      *        <code>JoinRowSetImpl</code> object
-     * @param ref the <code>java.sql.Ref</code> object that will be set as
+     * @param ref the <code>j86.java.sql.Ref</code> object that will be set as
      *         the new column value
      * @throws SQLException if (1) the given column name is not valid,
      *            (2) the cursor is not on one of this rowset's rows or its
      *            insert row, or (3) this rowset is
      *            <code>ResultSet.CONCUR_READ_ONLY</code>
      */
-    public void updateRef(String columnName, java.sql.Ref ref) throws SQLException {
+    public void updateRef(String columnName, j86.java.sql.Ref ref) throws SQLException {
         crsInternal.updateRef(columnName, ref);
     }
 
@@ -3862,7 +3862,7 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      * @param columnIndex the first column is <code>1</code>, the second
      *        is <code>2</code>, and so on; must be <code>1</code> or larger
      *        and equal to or less than the number of columns in this rowset
-     * @param c the <code>java.sql.Clob</code> object that will be set as
+     * @param c the <code>j86.java.sql.Clob</code> object that will be set as
      *         the new column value
      * @throws SQLException if (1) the given column index is out of bounds,
      *            (2) the cursor is not on one of this rowset's rows or its
@@ -3890,7 +3890,7 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      * @param columnName a <code>String</code> object giving the name of the column
      *        to be updated; must match one of the column names in this
      *        <code>JoinRowSetImpl</code> object
-     * @param c the <code>java.sql.Clob</code> object that will be set as
+     * @param c the <code>j86.java.sql.Clob</code> object that will be set as
      *         the new column value
      * @throws SQLException if (1) the given column name is not valid,
      *            (2) the cursor is not on one of this rowset's rows or its
@@ -3918,7 +3918,7 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      * @param columnIndex the first column is <code>1</code>, the second
      *        is <code>2</code>, and so on; must be <code>1</code> or larger
      *        and equal to or less than the number of columns in this rowset
-     * @param b the <code>java.sql.Blob</code> object that will be set as
+     * @param b the <code>j86.java.sql.Blob</code> object that will be set as
      *         the new column value
      * @throws SQLException if (1) the given column index is out of bounds,
      *            (2) the cursor is not on one of this rowset's rows or its
@@ -3946,7 +3946,7 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      * @param columnName a <code>String</code> object giving the name of the column
      *        to be updated; must match one of the column names in this
      *        <code>JoinRowSetImpl</code> object
-     * @param b the <code>java.sql.Blob</code> object that will be set as
+     * @param b the <code>j86.java.sql.Blob</code> object that will be set as
      *         the new column value
      * @throws SQLException if (1) the given column name is not valid,
      *            (2) the cursor is not on one of this rowset's rows or its
@@ -3974,7 +3974,7 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      * @param columnIndex the first column is <code>1</code>, the second
      *        is <code>2</code>, and so on; must be <code>1</code> or larger
      *        and equal to or less than the number of columns in this rowset
-     * @param a the <code>java.sql.Array</code> object that will be set as
+     * @param a the <code>j86.java.sql.Array</code> object that will be set as
      *         the new column value
      * @throws SQLException if (1) the given column index is out of bounds,
      *            (2) the cursor is not on one of this rowset's rows or its
@@ -4002,7 +4002,7 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      * @param columnName a <code>String</code> object giving the name of the column
      *        to be updated; must match one of the column names in this
      *        <code>JoinRowSetImpl</code> object
-     * @param a the <code>java.sql.Array</code> object that will be set as
+     * @param a the <code>j86.java.sql.Array</code> object that will be set as
      *         the new column value
      * @throws SQLException if (1) the given column name is not valid,
      *            (2) the cursor is not on one of this rowset's rows or its
@@ -4056,7 +4056,7 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      * @throws SQLException if an invalid <code>Connection</code> is supplied
      *           or an error occurs in establishing the connection to the
      *           data soure
-     * @see java.sql.Connection
+     * @see j86.java.sql.Connection
      */
     public void execute(Connection conn) throws SQLException {
         crsInternal.execute(conn);
@@ -4065,26 +4065,26 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
     /**
      * Provide interface coverage for getURL(int) in ResultSet->RowSet
      */
-    public java.net.URL getURL(int columnIndex) throws SQLException {
+    public j86.java.net.URL getURL(int columnIndex) throws SQLException {
         return crsInternal.getURL(columnIndex);
     }
 
     /**
      * Provide interface coverage for getURL(String) in ResultSet->RowSet
      */
-    public java.net.URL getURL(String columnName) throws SQLException {
+    public j86.java.net.URL getURL(String columnName) throws SQLException {
         return crsInternal.getURL(columnName);
     }
 
    /**
     * Creates a new <code>WebRowSet</code> object, populates it with the
     * data in the given <code>ResultSet</code> object, and writes it
-    * to the given <code>java.io.Writer</code> object in XML format.
+    * to the given <code>j86.java.io.Writer</code> object in XML format.
     *
     * @throws SQLException if an error occurs writing out the rowset
     *          contents to XML
     */
-    public void writeXml(ResultSet rs, java.io.Writer writer)
+    public void writeXml(ResultSet rs, j86.java.io.Writer writer)
         throws SQLException {
              wrs = new WebRowSetImpl();
              wrs.populate(rs);
@@ -4093,14 +4093,14 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
 
     /**
      * Writes this <code>JoinRowSet</code> object to the given
-     * <code>java.io.Writer</code> object in XML format. In
+     * <code>j86.java.io.Writer</code> object in XML format. In
      * addition to the rowset's data, its properties and metadata
      * are also included.
      *
      * @throws SQLException if an error occurs writing out the rowset
      *          contents to XML
      */
-    public void writeXml(java.io.Writer writer) throws SQLException {
+    public void writeXml(j86.java.io.Writer writer) throws SQLException {
         createWebRowSet().writeXml(writer);
 }
 
@@ -4109,7 +4109,7 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      *
      * @throws SQLException if a database access error occurs
      */
-    public void readXml(java.io.Reader reader) throws SQLException {
+    public void readXml(j86.java.io.Reader reader) throws SQLException {
         wrs = new WebRowSetImpl();
         wrs.readXml(reader);
         crsInternal = (CachedRowSetImpl)wrs;
@@ -4122,7 +4122,7 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      * @throws SQLException if a data source access occurs
      * @throws IOException if a IO exception occurs
      */
-    public void readXml(java.io.InputStream iStream) throws SQLException, IOException {
+    public void readXml(j86.java.io.InputStream iStream) throws SQLException, IOException {
          wrs = new WebRowSetImpl();
          wrs.readXml(iStream);
          crsInternal = (CachedRowSetImpl)wrs;
@@ -4135,7 +4135,7 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      * @throws SQLException if a datasource access occurs
      * @throws IOException if an IO exception occurs
      */
-    public void writeXml(java.io.OutputStream oStream) throws SQLException, IOException {
+    public void writeXml(j86.java.io.OutputStream oStream) throws SQLException, IOException {
          createWebRowSet().writeXml(oStream);
     }
 
@@ -4147,7 +4147,7 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      * @throws SQLException if a datasource access occurs
      * @throws IOException if an IO exception occurs
      */
-    public void writeXml(ResultSet rs, java.io.OutputStream oStream) throws SQLException, IOException {
+    public void writeXml(ResultSet rs, j86.java.io.OutputStream oStream) throws SQLException, IOException {
              wrs = new WebRowSetImpl();
              wrs.populate(rs);
              wrs.writeXml(oStream);
@@ -4201,7 +4201,7 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
     * event notifications from this <code>RowSet</code>.
     *
     * @param listener an object that has implemented the
-    *     <code>javax.sql.RowSetListener</code> interface and wants to be notified
+    *     <code>j86.javax.sql.RowSetListener</code> interface and wants to be notified
     *     of any events that occur on this <code>JoinRowSet</code> object; May be
     *     null.
     * @see #removeRowSetListener
@@ -4240,7 +4240,7 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      * @throws SQLException if an error occurs in generating the collection
      * @see #toCollection(int)
      * @see #toCollection(String)
-     * @see java.util.TreeMap
+     * @see j86.java.util.TreeMap
      */
      public Collection<?> toCollection() throws SQLException {
         return crsInternal.toCollection();
@@ -4262,7 +4262,7 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      *          an invalid column is provided.
      * @see #toCollection()
      * @see #toCollection(String)
-     * @see java.util.Vector
+     * @see j86.java.util.Vector
      */
     public Collection<?> toCollection(int column) throws SQLException {
         return crsInternal.toCollection(column);
@@ -4284,7 +4284,7 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      *          an invalid column is provided.
      * @see #toCollection()
      * @see #toCollection(int)
-     * @see java.util.Vector
+     * @see j86.java.util.Vector
      */
     public Collection<?> toCollection(String column) throws SQLException {
         return crsInternal.toCollection(column);
@@ -4309,8 +4309,8 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      * @see #createShared
      * @see #createCopy
      * @see #createCopyNoConstraints
-     * @see javax.sql.RowSetEvent
-     * @see javax.sql.RowSetListener
+     * @see j86.javax.sql.RowSetEvent
+     * @see j86.javax.sql.RowSetListener
      */
      public CachedRowSet createCopySchema() throws SQLException {
          return crsInternal.createCopySchema();

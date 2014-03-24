@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.media.sound;
+package j86.com.sun.media.sound;
 
-import java.io.EOFException;
-import java.io.IOException;
-import java.io.InputStream;
+import j86.java.io.EOFException;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
 
 /**
  * Resource Interchange File Format (RIFF) stream decoder.

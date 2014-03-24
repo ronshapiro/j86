@@ -24,7 +24,7 @@
  */
 
 
-package com.sun.jmx.snmp;
+package j86.com.sun.jmx.snmp;
 
 
 

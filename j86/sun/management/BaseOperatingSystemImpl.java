@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.management;
+package j86.sun.management;
 
-import java.lang.management.OperatingSystemMXBean;
-import java.lang.management.ManagementFactory;
-import javax.management.ObjectName;
-import sun.misc.Unsafe;
+import j86.j86.java.lang.management.OperatingSystemMXBean;
+import j86.j86.java.lang.management.ManagementFactory;
+import j86.javax.management.ObjectName;
+import j86.sun.misc.Unsafe;
 
 /**
  * Implementation class for the operating system.

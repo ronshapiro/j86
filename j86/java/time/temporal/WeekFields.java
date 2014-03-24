@@ -59,37 +59,37 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package java.time.temporal;
+package j86.j86.java.time.temporal;
 
-import static java.time.temporal.ChronoField.DAY_OF_MONTH;
-import static java.time.temporal.ChronoField.DAY_OF_WEEK;
-import static java.time.temporal.ChronoField.DAY_OF_YEAR;
-import static java.time.temporal.ChronoField.MONTH_OF_YEAR;
-import static java.time.temporal.ChronoField.YEAR;
-import static java.time.temporal.ChronoUnit.DAYS;
-import static java.time.temporal.ChronoUnit.FOREVER;
-import static java.time.temporal.ChronoUnit.MONTHS;
-import static java.time.temporal.ChronoUnit.WEEKS;
-import static java.time.temporal.ChronoUnit.YEARS;
+import static j86.j86.java.time.temporal.ChronoField.DAY_OF_MONTH;
+import static j86.j86.java.time.temporal.ChronoField.DAY_OF_WEEK;
+import static j86.j86.java.time.temporal.ChronoField.DAY_OF_YEAR;
+import static j86.j86.java.time.temporal.ChronoField.MONTH_OF_YEAR;
+import static j86.j86.java.time.temporal.ChronoField.YEAR;
+import static j86.j86.java.time.temporal.ChronoUnit.DAYS;
+import static j86.j86.java.time.temporal.ChronoUnit.FOREVER;
+import static j86.j86.java.time.temporal.ChronoUnit.MONTHS;
+import static j86.j86.java.time.temporal.ChronoUnit.WEEKS;
+import static j86.j86.java.time.temporal.ChronoUnit.YEARS;
 
-import java.io.IOException;
-import java.io.InvalidObjectException;
-import java.io.ObjectInputStream;
-import java.io.Serializable;
-import java.time.DateTimeException;
-import java.time.DayOfWeek;
-import java.time.chrono.ChronoLocalDate;
-import java.time.chrono.Chronology;
-import java.time.format.ResolverStyle;
-import java.util.Locale;
-import java.util.Map;
-import java.util.Objects;
-import java.util.ResourceBundle;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentMap;
-import sun.util.locale.provider.CalendarDataUtility;
-import sun.util.locale.provider.LocaleProviderAdapter;
-import sun.util.locale.provider.LocaleResources;
+import j86.java.io.IOException;
+import j86.java.io.InvalidObjectException;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.Serializable;
+import j86.java.time.DateTimeException;
+import j86.java.time.DayOfWeek;
+import j86.j86.java.time.chrono.ChronoLocalDate;
+import j86.j86.java.time.chrono.Chronology;
+import j86.j86.java.time.format.ResolverStyle;
+import j86.java.util.Locale;
+import j86.java.util.Map;
+import j86.java.util.Objects;
+import j86.java.util.ResourceBundle;
+import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.j86.java.util.concurrent.ConcurrentMap;
+import j86.j86.j86.sun.util.locale.provider.CalendarDataUtility;
+import j86.j86.j86.sun.util.locale.provider.LocaleProviderAdapter;
+import j86.j86.j86.sun.util.locale.provider.LocaleResources;
 
 /**
  * Localized definitions of the day-of-week, week-of-month and week-of-year fields.
@@ -828,7 +828,7 @@ public final class WeekFields implements Serializable {
          * of days.
          * @param temporal  a date of any chronology
          * @return the week of the year
-         * @see #localizedWeekBasedYear(java.time.temporal.TemporalAccessor)
+         * @see #localizedWeekBasedYear(j86.j86.java.time.temporal.TemporalAccessor)
          */
         private int localizedWeekOfWeekBasedYear(TemporalAccessor temporal) {
             int dow = localizedDayOfWeek(temporal);

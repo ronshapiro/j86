@@ -38,9 +38,9 @@
  *
  */
 
-package sun.text.resources.el;
+package j86.j86.j86.sun.text.resources.el;
 
-import sun.util.resources.ParallelListResourceBundle;
+import j86.j86.sun.util.resources.ParallelListResourceBundle;
 
 public class FormatData_el_GR extends ParallelListResourceBundle {
     /**

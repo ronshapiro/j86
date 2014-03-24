@@ -23,15 +23,15 @@
  * questions.
  */
 
-package sun.misc;
+package j86.sun.misc;
 
-import java.io.OutputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.InputStream;
-import java.io.PushbackInputStream;
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.nio.ByteBuffer;
+import j86.java.io.OutputStream;
+import j86.java.io.ByteArrayOutputStream;
+import j86.java.io.InputStream;
+import j86.java.io.PushbackInputStream;
+import j86.java.io.ByteArrayInputStream;
+import j86.java.io.IOException;
+import j86.java.nio.ByteBuffer;
 
 /**
  * This class defines the decoding half of character encoders.
@@ -131,7 +131,7 @@ public abstract class CharacterDecoder {
      * read method.
      */
     protected int readFully(InputStream in, byte buffer[], int offset, int len)
-        throws java.io.IOException {
+        throws j86.java.io.IOException {
         for (int i = 0; i < len; i++) {
             int q = in.read();
             if (q == -1)

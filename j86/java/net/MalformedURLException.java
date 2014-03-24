@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.net;
+package j86.java.net;
 
-import java.io.IOException;
+import j86.java.io.IOException;
 
 /**
  * Thrown to indicate that a malformed URL has occurred. Either no

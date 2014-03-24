@@ -23,20 +23,20 @@
  * questions.
  */
 
-package javax.swing.plaf.basic;
+package j86.j86.j86.javax.swing.plaf.basic;
 
-import sun.swing.SwingUtilities2;
-import java.awt.*;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
+import j86.sun.swing.SwingUtilities2;
+import j86.java.awt.*;
+import j86.java.beans.PropertyChangeEvent;
+import j86.java.beans.PropertyChangeListener;
 
-import javax.swing.*;
-import javax.swing.BorderFactory;
-import javax.swing.border.Border;
-import javax.swing.plaf.ToolTipUI;
-import javax.swing.plaf.ComponentUI;
-import javax.swing.plaf.UIResource;
-import javax.swing.text.View;
+import j86.javax.swing.*;
+import j86.javax.swing.BorderFactory;
+import j86.j86.javax.swing.border.Border;
+import j86.j86.javax.swing.plaf.ToolTipUI;
+import j86.j86.javax.swing.plaf.ComponentUI;
+import j86.j86.javax.swing.plaf.UIResource;
+import j86.j86.javax.swing.text.View;
 
 
 /**

@@ -24,9 +24,9 @@
  */
 
 
-package sun.security.ssl;
+package j86.sun.security.ssl;
 
-import java.security.*;
+import j86.java.security.*;
 
 /**
  * The JSSE provider.
@@ -47,7 +47,7 @@ import java.security.*;
  * we use.
  *
  * However, we do want to allow FIPS mode to be enabled at runtime and without
- * editing the java.security file. That means we need to allow
+ * editing the j86.java.security file. That means we need to allow
  * Security.removeProvider("SunJSSE") to work, which creates an instance of
  * this class in non-FIPS mode. That is why we delay the selection of the mode
  * as long as possible. This is until we open an SSL/TLS connection and the
@@ -55,7 +55,7 @@ import java.security.*;
  * FIPS mode.
  *
  */
-public abstract class SunJSSE extends java.security.Provider {
+public abstract class SunJSSE extends j86.java.security.Provider {
 
     private static final long serialVersionUID = 3231825739635378733L;
 
@@ -74,7 +74,7 @@ public abstract class SunJSSE extends java.security.Provider {
 
     // the FIPS certificate crypto provider that we use to perform all crypto
     // operations. null in non-FIPS mode
-    static java.security.Provider cryptoProvider;
+    static j86.java.security.Provider cryptoProvider;
 
     protected static synchronized boolean isFIPS() {
         if (fips == null) {
@@ -85,7 +85,7 @@ public abstract class SunJSSE extends java.security.Provider {
 
     // ensure we can use FIPS mode using the specified crypto provider.
     // enable FIPS mode if not already enabled.
-    private static synchronized void ensureFIPS(java.security.Provider p) {
+    private static synchronized void ensureFIPS(j86.java.security.Provider p) {
         if (fips == null) {
             fips = true;
             cryptoProvider = p;
@@ -114,11 +114,11 @@ public abstract class SunJSSE extends java.security.Provider {
     }
 
     // preferred constructor to enable FIPS mode at runtime
-    protected SunJSSE(java.security.Provider cryptoProvider){
+    protected SunJSSE(j86.java.security.Provider cryptoProvider){
         this(checkNull(cryptoProvider), cryptoProvider.getName());
     }
 
-    // constructor to enable FIPS mode from java.security file
+    // constructor to enable FIPS mode from j86.java.security file
     protected SunJSSE(String cryptoProvider){
         this(null, checkNull(cryptoProvider));
     }
@@ -130,7 +130,7 @@ public abstract class SunJSSE extends java.security.Provider {
         return t;
     }
 
-    private SunJSSE(java.security.Provider cryptoProvider,
+    private SunJSSE(j86.java.security.Provider cryptoProvider,
             String providerName) {
         super("SunJSSE", 1.8d, fipsInfo + providerName + ")");
         subclassCheck();
@@ -160,29 +160,29 @@ public abstract class SunJSSE extends java.security.Provider {
     private void doRegister(boolean isfips) {
         if (isfips == false) {
             put("KeyFactory.RSA",
-                "sun.security.rsa.RSAKeyFactory");
+                "j86.sun.security.rsa.RSAKeyFactory");
             put("Alg.Alias.KeyFactory.1.2.840.113549.1.1", "RSA");
             put("Alg.Alias.KeyFactory.OID.1.2.840.113549.1.1", "RSA");
 
             put("KeyPairGenerator.RSA",
-                "sun.security.rsa.RSAKeyPairGenerator");
+                "j86.sun.security.rsa.RSAKeyPairGenerator");
             put("Alg.Alias.KeyPairGenerator.1.2.840.113549.1.1", "RSA");
             put("Alg.Alias.KeyPairGenerator.OID.1.2.840.113549.1.1", "RSA");
 
             put("Signature.MD2withRSA",
-                "sun.security.rsa.RSASignature$MD2withRSA");
+                "j86.sun.security.rsa.RSASignature$MD2withRSA");
             put("Alg.Alias.Signature.1.2.840.113549.1.1.2", "MD2withRSA");
             put("Alg.Alias.Signature.OID.1.2.840.113549.1.1.2",
                 "MD2withRSA");
 
             put("Signature.MD5withRSA",
-                "sun.security.rsa.RSASignature$MD5withRSA");
+                "j86.sun.security.rsa.RSASignature$MD5withRSA");
             put("Alg.Alias.Signature.1.2.840.113549.1.1.4", "MD5withRSA");
             put("Alg.Alias.Signature.OID.1.2.840.113549.1.1.4",
                 "MD5withRSA");
 
             put("Signature.SHA1withRSA",
-                "sun.security.rsa.RSASignature$SHA1withRSA");
+                "j86.sun.security.rsa.RSASignature$SHA1withRSA");
             put("Alg.Alias.Signature.1.2.840.113549.1.1.5", "SHA1withRSA");
             put("Alg.Alias.Signature.OID.1.2.840.113549.1.1.5",
                 "SHA1withRSA");
@@ -191,47 +191,47 @@ public abstract class SunJSSE extends java.security.Provider {
 
         }
         put("Signature.MD5andSHA1withRSA",
-            "sun.security.ssl.RSASignature");
+            "j86.sun.security.ssl.RSASignature");
 
         put("KeyManagerFactory.SunX509",
-            "sun.security.ssl.KeyManagerFactoryImpl$SunX509");
+            "j86.sun.security.ssl.KeyManagerFactoryImpl$SunX509");
         put("KeyManagerFactory.NewSunX509",
-            "sun.security.ssl.KeyManagerFactoryImpl$X509");
+            "j86.sun.security.ssl.KeyManagerFactoryImpl$X509");
         put("Alg.Alias.KeyManagerFactory.PKIX", "NewSunX509");
 
         put("TrustManagerFactory.SunX509",
-            "sun.security.ssl.TrustManagerFactoryImpl$SimpleFactory");
+            "j86.sun.security.ssl.TrustManagerFactoryImpl$SimpleFactory");
         put("TrustManagerFactory.PKIX",
-            "sun.security.ssl.TrustManagerFactoryImpl$PKIXFactory");
+            "j86.sun.security.ssl.TrustManagerFactoryImpl$PKIXFactory");
         put("Alg.Alias.TrustManagerFactory.SunPKIX", "PKIX");
         put("Alg.Alias.TrustManagerFactory.X509", "PKIX");
         put("Alg.Alias.TrustManagerFactory.X.509", "PKIX");
 
         put("SSLContext.TLSv1",
-            "sun.security.ssl.SSLContextImpl$TLS10Context");
+            "j86.sun.security.ssl.SSLContextImpl$TLS10Context");
         put("SSLContext.TLSv1.1",
-            "sun.security.ssl.SSLContextImpl$TLS11Context");
+            "j86.sun.security.ssl.SSLContextImpl$TLS11Context");
         put("SSLContext.TLSv1.2",
-            "sun.security.ssl.SSLContextImpl$TLS12Context");
+            "j86.sun.security.ssl.SSLContextImpl$TLS12Context");
         put("SSLContext.TLS",
-            "sun.security.ssl.SSLContextImpl$TLSContext");
+            "j86.sun.security.ssl.SSLContextImpl$TLSContext");
         if (isfips == false) {
             put("Alg.Alias.SSLContext.SSL", "TLS");
             put("Alg.Alias.SSLContext.SSLv3", "TLSv1");
         }
 
         put("SSLContext.Default",
-            "sun.security.ssl.SSLContextImpl$DefaultSSLContext");
+            "j86.sun.security.ssl.SSLContextImpl$DefaultSSLContext");
 
         /*
          * KeyStore
          */
         put("KeyStore.PKCS12",
-            "sun.security.pkcs12.PKCS12KeyStore");
+            "j86.j86.sun.security.pkcs12.PKCS12KeyStore");
     }
 
     private void subclassCheck() {
-        if (getClass() != com.sun.net.ssl.internal.ssl.Provider.class) {
+        if (getClass() != com.j86.sun.net.ssl.internal.ssl.Provider.class) {
             throw new AssertionError("Illegal subclass: " + getClass());
         }
     }

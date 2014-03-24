@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.io;
+package j86.java.io;
 
 
 /**
@@ -57,7 +57,7 @@ package java.io;
  * @see PrintWriter
  * @see FileWriter
  * @see OutputStreamWriter
- * @see java.nio.file.Files#newBufferedWriter
+ * @see j86.j86.java.nio.file.Files#newBufferedWriter
  *
  * @author      Mark Reinhold
  * @since       JDK1.1
@@ -106,8 +106,8 @@ public class BufferedWriter extends Writer {
         nChars = sz;
         nextChar = 0;
 
-        lineSeparator = java.security.AccessController.doPrivileged(
-            new sun.security.action.GetPropertyAction("line.separator"));
+        lineSeparator = j86.java.security.AccessController.doPrivileged(
+            new j86.sun.security.action.GetPropertyAction("line.separator"));
     }
 
     /** Checks to make sure that the stream has not been closed */
@@ -146,7 +146,7 @@ public class BufferedWriter extends Writer {
     }
 
     /**
-     * Our own little min method, to avoid loading java.lang.Math if we've run
+     * Our own little min method, to avoid loading j86.java.lang.Math if we've run
      * out of file descriptors and we're trying to print a stack trace.
      */
     private int min(int a, int b) {
@@ -206,7 +206,7 @@ public class BufferedWriter extends Writer {
      *
      * <p> If the value of the <tt>len</tt> parameter is negative then no
      * characters are written.  This is contrary to the specification of this
-     * method in the {@linkplain java.io.Writer#write(java.lang.String,int,int)
+     * method in the {@linkplain j86.java.io.Writer#write(j86.java.lang.String,int,int)
      * superclass}, which requires that an {@link IndexOutOfBoundsException} be
      * thrown.
      *

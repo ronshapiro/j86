@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.security.jgss.krb5;
+package j86.j86.sun.security.jgss.krb5;
 
-import com.sun.security.jgss.AuthorizationDataEntry;
-import org.ietf.jgss.*;
-import java.io.InputStream;
-import java.io.IOException;
-import sun.security.krb5.*;
-import java.net.InetAddress;
-import sun.security.krb5.internal.AuthorizationData;
-import sun.security.krb5.internal.KerberosTime;
+import com.j86.sun.security.jgss.AuthorizationDataEntry;
+import j86.org.ietf.jgss.*;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
+import j86.sun.security.krb5.*;
+import j86.java.net.InetAddress;
+import j86.j86.sun.security.krb5.internal.AuthorizationData;
+import j86.j86.sun.security.krb5.internal.KerberosTime;
 
 class InitSecContextToken extends InitialToken {
 
@@ -98,7 +98,7 @@ class InitSecContextToken extends InitialToken {
 
         // XXX Modify KrbApReq cons to take an InputStream
         byte[] apReqBytes =
-            new sun.security.util.DerValue(is).toByteArray();
+            new j86.sun.security.util.DerValue(is).toByteArray();
         //debug("=====ApReqBytes: [" + getHexBytes(apReqBytes) + "]\n");
 
         InetAddress addr = null;

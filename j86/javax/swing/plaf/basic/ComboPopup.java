@@ -23,12 +23,12 @@
  * questions.
  */
 
-package javax.swing.plaf.basic;
+package j86.j86.j86.javax.swing.plaf.basic;
 
-import java.awt.event.MouseListener;
-import java.awt.event.MouseMotionListener;
-import java.awt.event.KeyListener;
-import javax.swing.JList;
+import j86.j86.java.awt.event.MouseListener;
+import j86.j86.java.awt.event.MouseMotionListener;
+import j86.j86.java.awt.event.KeyListener;
+import j86.javax.swing.JList;
 
 
 /**
@@ -41,8 +41,8 @@ import javax.swing.JList;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @author Tom Santos
  */

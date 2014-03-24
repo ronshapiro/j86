@@ -39,9 +39,9 @@
  * will not be liable for any third party claims against you.
  */
 
-package sun.text.resources;
+package j86.j86.sun.text.resources;
 
-import java.util.ListResourceBundle;
+import j86.java.util.ListResourceBundle;
 
 public class BreakIteratorInfo extends ListResourceBundle {
     protected final Object[][] getContents() {

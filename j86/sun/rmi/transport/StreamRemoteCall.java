@@ -23,22 +23,22 @@
  * questions.
  */
 
-package sun.rmi.transport;
+package j86.sun.rmi.transport;
 
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.io.IOException;
-import java.io.ObjectInput;
-import java.io.ObjectOutput;
-import java.io.StreamCorruptedException;
-import java.rmi.RemoteException;
-import java.rmi.MarshalException;
-import java.rmi.UnmarshalException;
-import java.rmi.server.ObjID;
-import java.rmi.server.RemoteCall;
-import sun.rmi.runtime.Log;
-import sun.rmi.server.UnicastRef;
-import sun.rmi.transport.tcp.TCPEndpoint;
+import j86.java.io.DataInputStream;
+import j86.java.io.DataOutputStream;
+import j86.java.io.IOException;
+import j86.java.io.ObjectInput;
+import j86.java.io.ObjectOutput;
+import j86.java.io.StreamCorruptedException;
+import j86.java.rmi.RemoteException;
+import j86.java.rmi.MarshalException;
+import j86.java.rmi.UnmarshalException;
+import j86.j86.java.rmi.server.ObjID;
+import j86.j86.java.rmi.server.RemoteCall;
+import j86.sun.rmi.runtime.Log;
+import j86.sun.rmi.server.UnicastRef;
+import j86.j86.sun.rmi.transport.tcp.TCPEndpoint;
 
 /**
  * Stream-based implementation of the RemoteCall interface.

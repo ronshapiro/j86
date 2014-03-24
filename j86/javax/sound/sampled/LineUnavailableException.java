@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.sound.sampled;
+package j86.javax.sound.sampled;
 
 /**
  * A <code>LineUnavailableException</code> is an exception indicating that a

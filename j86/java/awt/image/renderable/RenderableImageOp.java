@@ -33,13 +33,13 @@
  **********************************************************************
  **********************************************************************/
 
-package java.awt.image.renderable;
-import java.awt.geom.AffineTransform;
-import java.awt.geom.Rectangle2D;
-import java.awt.image.RenderedImage;
-import java.awt.RenderingHints;
-import java.util.Hashtable;
-import java.util.Vector;
+package j86.j86.j86.j86.java.awt.image.renderable;
+import j86.j86.java.awt.geom.AffineTransform;
+import j86.j86.java.awt.geom.Rectangle2D;
+import j86.j86.j86.java.awt.image.RenderedImage;
+import j86.java.awt.RenderingHints;
+import j86.java.util.Hashtable;
+import j86.java.util.Vector;
 
 /**
  * This class handles the renderable aspects of an operation with help
@@ -108,12 +108,12 @@ public class RenderableImageOp implements RenderableImage {
 
     /**
      * Gets a property from the property set of this image.
-     * If the property name is not recognized, java.awt.Image.UndefinedProperty
+     * If the property name is not recognized, j86.java.awt.Image.UndefinedProperty
      * will be returned.
      *
      * @param name the name of the property to get, as a String.
      * @return a reference to the property Object, or the value
-     *         java.awt.Image.UndefinedProperty.
+     *         j86.java.awt.Image.UndefinedProperty.
      */
     public Object getProperty(String name) {
         return myCRIF.getProperty(paramBlock, name);

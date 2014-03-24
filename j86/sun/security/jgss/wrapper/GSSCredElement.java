@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.security.jgss.wrapper;
+package j86.j86.sun.security.jgss.wrapper;
 
-import org.ietf.jgss.*;
-import java.security.Provider;
-import sun.security.jgss.GSSUtil;
-import sun.security.jgss.spi.GSSCredentialSpi;
-import sun.security.jgss.spi.GSSNameSpi;
+import j86.org.ietf.jgss.*;
+import j86.java.security.Provider;
+import j86.sun.security.jgss.GSSUtil;
+import j86.j86.sun.security.jgss.spi.GSSCredentialSpi;
+import j86.j86.sun.security.jgss.spi.GSSNameSpi;
 
 /**
  * This class is essentially a wrapper class for the gss_cred_id_t

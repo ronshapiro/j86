@@ -23,26 +23,26 @@
  * questions.
  */
 
-package sun.security.ssl;
+package j86.sun.security.ssl;
 
-import java.security.AlgorithmConstraints;
-import java.security.CryptoPrimitive;
-import java.security.AlgorithmParameters;
+import j86.java.security.AlgorithmConstraints;
+import j86.java.security.CryptoPrimitive;
+import j86.java.security.AlgorithmParameters;
 
-import javax.net.ssl.*;
+import j86.j86.javax.net.ssl.*;
 
-import java.security.Key;
+import j86.java.security.Key;
 
-import java.util.Set;
-import java.util.HashSet;
+import j86.java.util.Set;
+import j86.java.util.HashSet;
 
-import sun.security.util.DisabledAlgorithmConstraints;
-import sun.security.ssl.CipherSuite.*;
+import j86.sun.security.util.DisabledAlgorithmConstraints;
+import j86.sun.security.ssl.CipherSuite.*;
 
 /**
  * Algorithm constraints for disabled algorithms property
  *
- * See the "jdk.certpath.disabledAlgorithms" specification in java.security
+ * See the "jdk.certpath.disabledAlgorithms" specification in j86.java.security
  * for the syntax of the disabled algorithm string.
  */
 final class SSLAlgorithmConstraints implements AlgorithmConstraints {

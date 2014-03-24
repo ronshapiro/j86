@@ -23,11 +23,11 @@
  * questions.
  */
 
-package javax.print.event;
+package j86.j86.javax.print.event;
 
 /**
   * Implementations of this listener interface are attached to a
-  * {@link javax.print.PrintService PrintService} to monitor
+  * {@link j86.javax.print.PrintService PrintService} to monitor
   * the status of the print service.
   * <p>
   * To monitor a particular job see {@link PrintJobListener} and

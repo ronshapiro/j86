@@ -23,41 +23,41 @@
  * questions.
  */
 
-package sun.net.www.protocol.https;
+package j86.j86.j86.j86.sun.net.www.protocol.https;
 
-import java.net.URL;
-import java.net.Proxy;
-import java.net.SecureCacheResponse;
-import java.security.Principal;
-import java.io.IOException;
-import java.util.List;
-import javax.net.ssl.SSLPeerUnverifiedException;
-import sun.net.www.http.*;
-import sun.net.www.protocol.http.HttpURLConnection;
+import j86.java.net.URL;
+import j86.java.net.Proxy;
+import j86.java.net.SecureCacheResponse;
+import j86.java.security.Principal;
+import j86.java.io.IOException;
+import j86.java.util.List;
+import j86.j86.javax.net.ssl.SSLPeerUnverifiedException;
+import j86.j86.j86.sun.net.www.http.*;
+import j86.j86.j86.sun.net.www.protocol.http.HttpURLConnection;
 
 /**
  * HTTPS URL connection support.
  * We need this delegate because HttpsURLConnection is a subclass of
- * java.net.HttpURLConnection. We will avoid copying over the code from
- * sun.net.www.protocol.http.HttpURLConnection by having this class
+ * j86.java.net.HttpURLConnection. We will avoid copying over the code from
+ * j86.j86.j86.sun.net.www.protocol.http.HttpURLConnection by having this class
  *
  */
 public abstract class AbstractDelegateHttpsURLConnection extends
         HttpURLConnection {
 
     protected AbstractDelegateHttpsURLConnection(URL url,
-            sun.net.www.protocol.http.Handler handler) throws IOException {
+            j86.j86.j86.sun.net.www.protocol.http.Handler handler) throws IOException {
         this(url, null, handler);
     }
 
     protected AbstractDelegateHttpsURLConnection(URL url, Proxy p,
-            sun.net.www.protocol.http.Handler handler) throws IOException {
+            j86.j86.j86.sun.net.www.protocol.http.Handler handler) throws IOException {
         super(url, p, handler);
     }
 
-    protected abstract javax.net.ssl.SSLSocketFactory getSSLSocketFactory();
+    protected abstract j86.j86.javax.net.ssl.SSLSocketFactory getSSLSocketFactory();
 
-    protected abstract javax.net.ssl.HostnameVerifier getHostnameVerifier();
+    protected abstract j86.j86.javax.net.ssl.HostnameVerifier getHostnameVerifier();
 
     /**
      * No user application is able to call these routines, as no one
@@ -220,13 +220,13 @@ public abstract class AbstractDelegateHttpsURLConnection extends
      * Returns the certificate chain the client sent to the
      * server, or null if the client did not authenticate.
      */
-    public java.security.cert.Certificate[] getLocalCertificates() {
+    public j86.j86.java.security.cert.Certificate[] getLocalCertificates() {
         if (cachedResponse != null) {
-            List<java.security.cert.Certificate> l = ((SecureCacheResponse)cachedResponse).getLocalCertificateChain();
+            List<j86.j86.java.security.cert.Certificate> l = ((SecureCacheResponse)cachedResponse).getLocalCertificateChain();
             if (l == null) {
                 return null;
             } else {
-                return l.toArray(new java.security.cert.Certificate[0]);
+                return l.toArray(new j86.j86.java.security.cert.Certificate[0]);
             }
         }
         if (http == null) {
@@ -241,14 +241,14 @@ public abstract class AbstractDelegateHttpsURLConnection extends
      * SSLPeerUnverified Exception if
      * the server did not authenticate.
      */
-    public java.security.cert.Certificate[] getServerCertificates()
+    public j86.j86.java.security.cert.Certificate[] getServerCertificates()
             throws SSLPeerUnverifiedException {
         if (cachedResponse != null) {
-            List<java.security.cert.Certificate> l = ((SecureCacheResponse)cachedResponse).getServerCertificateChain();
+            List<j86.j86.java.security.cert.Certificate> l = ((SecureCacheResponse)cachedResponse).getServerCertificateChain();
             if (l == null) {
                 return null;
             } else {
-                return l.toArray(new java.security.cert.Certificate[0]);
+                return l.toArray(new j86.j86.java.security.cert.Certificate[0]);
             }
         }
 
@@ -263,7 +263,7 @@ public abstract class AbstractDelegateHttpsURLConnection extends
      * Returns the server's X.509 certificate chain, or null if
      * the server did not authenticate.
      */
-    public javax.security.cert.X509Certificate[] getServerCertificateChain()
+    public j86.javax.security.cert.X509Certificate[] getServerCertificateChain()
             throws SSLPeerUnverifiedException {
         if (cachedResponse != null) {
             throw new UnsupportedOperationException("this method is not supported when using cache");

@@ -23,13 +23,13 @@
  * questions.
  */
 
-package com.sun.crypto.provider;
+package j86.com.sun.crypto.provider;
 
-import java.io.UnsupportedEncodingException;
-import java.security.*;
-import java.security.spec.*;
-import javax.crypto.*;
-import javax.crypto.spec.*;
+import j86.java.io.UnsupportedEncodingException;
+import j86.java.security.*;
+import j86.j86.java.security.spec.*;
+import j86.javax.crypto.*;
+import j86.j86.javax.crypto.spec.*;
 
 /**
  * This class implements a proprietary password-based encryption algorithm.
@@ -51,7 +51,7 @@ import javax.crypto.spec.*;
  *    IV.
  *
  * @author Jan Luehe
- * @see javax.crypto.Cipher
+ * @see j86.javax.crypto.Cipher
  */
 public final class PBEWithMD5AndTripleDESCipher extends CipherSpi {
 

@@ -22,20 +22,20 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text;
+package j86.j86.javax.swing.text;
 
-import java.awt.*;
-import java.util.*;
-import java.io.*;
+import j86.java.awt.*;
+import j86.java.util.*;
+import j86.java.io.*;
 
-import javax.swing.SwingUtilities;
-import javax.swing.event.ChangeListener;
-import javax.swing.event.EventListenerList;
-import javax.swing.event.ChangeEvent;
-import java.lang.ref.WeakReference;
-import java.util.WeakHashMap;
+import j86.javax.swing.SwingUtilities;
+import j86.j86.javax.swing.event.ChangeListener;
+import j86.j86.javax.swing.event.EventListenerList;
+import j86.j86.javax.swing.event.ChangeEvent;
+import j86.j86.java.lang.ref.WeakReference;
+import j86.java.util.WeakHashMap;
 
-import sun.font.FontUtilities;
+import j86.sun.font.FontUtilities;
 
 /**
  * A pool of styles and their associated resources.  This class determines
@@ -57,8 +57,8 @@ import sun.font.FontUtilities;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @author  Timothy Prinzing
  */
@@ -700,7 +700,7 @@ public class StyleContext implements Serializable, AbstractDocument.AttributeCon
         return key.getClass().getName() + "." + key.toString();
     }
 
-    private void writeObject(java.io.ObjectOutputStream s)
+    private void writeObject(j86.java.io.ObjectOutputStream s)
         throws IOException
     {
         // clean out unused sets before saving
@@ -1241,8 +1241,8 @@ public class StyleContext implements Serializable, AbstractDocument.AttributeCon
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     public class NamedStyle implements Style, Serializable {
 

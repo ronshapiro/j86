@@ -34,16 +34,16 @@
  *******************************************************************************
  */
 
-package sun.text.normalizer;
+package j86.j86.sun.text.normalizer;
 
-import java.io.IOException;
-import java.util.MissingResourceException;
+import j86.java.io.IOException;
+import j86.java.util.MissingResourceException;
 
 /**
  * <p>
  * The UCharacter class provides extensions to the
- * <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Character.html">
- * java.lang.Character</a> class. These extensions provide support for
+ * <a href="http://docs.oracle.com/javase/1.5.0/docs/api/j86.java.lang/Character.html">
+ * j86.java.lang.Character</a> class. These extensions provide support for
  * more Unicode properties and together with the <a href=../text/UTF16.html>UTF16</a>
  * class, provide support for supplementary characters (those with code
  * points above U+FFFF).
@@ -74,7 +74,7 @@ import java.util.MissingResourceException;
  *      These include:
  *      <ul>
  *        <li> char charValue(),
- *        <li> int compareTo(java.lang.Character, java.lang.Character), etc.
+ *        <li> int compareTo(j86.java.lang.Character, java.lang.Character), etc.
  *      </ul>
  * <li> UCharacter does not include Character APIs that are deprecated, nor
  *      does it include the Java-specific character information, such as
@@ -192,7 +192,7 @@ public final class UCharacter
      * The highest Unicode code point value (scalar value) according to the
      * Unicode Standard.
      * This is a 21-bit value (21 bits, rounded up).<br>
-     * Up-to-date Unicode implementation of java.lang.Character.MIN_VALUE
+     * Up-to-date Unicode implementation of j86.java.lang.Character.MIN_VALUE
      * @stable ICU 2.1
      */
     public static final int MAX_VALUE = UTF16.CODEPOINT_MAX_VALUE;
@@ -209,9 +209,9 @@ public final class UCharacter
     /**
      * Retrieves the numeric value of a decimal digit code point.
      * <br>This method observes the semantics of
-     * <code>java.lang.Character.digit()</code>.  Note that this
+     * <code>j86.java.lang.Character.digit()</code>.  Note that this
      * will return positive values for code points for which isDigit
-     * returns false, just like java.lang.Character.
+     * returns false, just like j86.java.lang.Character.
      * <br><em>Semantic Change:</em> In release 1.3.1 and
      * prior, this did not treat the European letters as having a
      * digit value, and also treated numeric letters and other numbers as

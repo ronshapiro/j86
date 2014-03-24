@@ -23,14 +23,14 @@
  * questions.
  */
 
-package java.awt.event;
+package j86.j86.java.awt.event;
 
-import java.awt.Component;
-import java.awt.GraphicsEnvironment;
-import java.awt.Toolkit;
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import sun.awt.AWTAccessor;
+import j86.java.awt.Component;
+import j86.java.awt.GraphicsEnvironment;
+import j86.java.awt.Toolkit;
+import j86.java.io.IOException;
+import j86.java.io.ObjectInputStream;
+import j86.sun.awt.AWTAccessor;
 
 /**
  * An event which indicates that a keystroke occurred in a component.
@@ -1632,7 +1632,7 @@ public class KeyEvent extends InputEvent {
      */
     public static int getExtendedKeyCodeForChar(int c) {
         // Return a keycode (if any) associated with a character.
-        return sun.awt.ExtendedKeyCodes.getExtendedKeyCodeForChar(c);
+        return j86.sun.awt.ExtendedKeyCodes.getExtendedKeyCodeForChar(c);
     }
 
     /**

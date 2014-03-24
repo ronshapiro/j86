@@ -23,21 +23,21 @@
  * questions.
  */
 
-package sun.security.util;
+package j86.sun.security.util;
 
-import java.io.IOException;
+import j86.java.io.IOException;
 
-import java.math.BigInteger;
+import j86.java.math.BigInteger;
 
-import java.security.*;
+import j86.java.security.*;
 
-import java.security.interfaces.*;
+import j86.j86.java.security.interfaces.*;
 
-import java.security.spec.*;
+import j86.j86.java.security.spec.*;
 
-import java.util.Arrays;
+import j86.java.util.Arrays;
 
-import sun.security.x509.X509Key;
+import j86.sun.security.x509.X509Key;
 
 public class ECUtil {
 

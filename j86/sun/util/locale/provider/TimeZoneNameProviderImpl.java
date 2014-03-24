@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.util.locale.provider;
+package j86.j86.j86.sun.util.locale.provider;
 
-import java.util.Locale;
-import java.util.Set;
-import java.util.TimeZone;
-import java.util.spi.TimeZoneNameProvider;
+import j86.java.util.Locale;
+import j86.java.util.Set;
+import j86.java.util.TimeZone;
+import j86.j86.java.util.spi.TimeZoneNameProvider;
 
 /**
  * Concrete implementation of the
- * {@link java.util.spi.TimeZoneNameProvider TimeZoneNameProvider} class
+ * {@link j86.j86.java.util.spi.TimeZoneNameProvider TimeZoneNameProvider} class
  * for the JRE LocaleProviderAdapter.
  *
  * @author Naoto Sato
@@ -80,18 +80,18 @@ public class TimeZoneNameProviderImpl extends TimeZoneNameProvider {
      *
      * @param ID a time zone ID string
      * @param daylight if true, return the daylight saving name.
-     * @param style either {@link java.util.TimeZone#LONG TimeZone.LONG} or
-     *    {@link java.util.TimeZone#SHORT TimeZone.SHORT}
+     * @param style either {@link j86.java.util.TimeZone#LONG TimeZone.LONG} or
+     *    {@link j86.java.util.TimeZone#SHORT TimeZone.SHORT}
      * @param locale the desired locale
      * @return the human-readable name of the given time zone in the
      *     given locale, or null if it's not available.
      * @exception IllegalArgumentException if <code>style</code> is invalid,
      *     or <code>locale</code> isn't one of the locales returned from
-     *     {@link java.util.spi.LocaleServiceProvider#getAvailableLocales()
+     *     {@link j86.j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
      *     getAvailableLocales()}.
      * @exception NullPointerException if <code>ID</code> or <code>locale</code>
      *     is null
-     * @see java.util.TimeZone#getDisplayName(boolean, int, java.util.Locale)
+     * @see j86.java.util.TimeZone#getDisplayName(boolean, int, java.util.Locale)
      */
     @Override
     public String getDisplayName(String id, boolean daylight, int style, Locale locale) {

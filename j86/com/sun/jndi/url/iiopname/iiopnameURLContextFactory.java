@@ -23,9 +23,9 @@
  * questions.
  */
 
-package com.sun.jndi.url.iiopname;
+package j86.j86.com.sun.jndi.url.iiopname;
 
-import com.sun.jndi.url.iiop.iiopURLContextFactory;
+import j86.com.sun.jndi.url.iiop.iiopURLContextFactory;
 
 /**
  * An iiopname URL context factory.

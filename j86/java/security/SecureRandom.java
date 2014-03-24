@@ -23,15 +23,15 @@
  * questions.
  */
 
-package java.security;
+package j86.java.security;
 
-import java.util.*;
-import java.util.regex.*;
+import j86.java.util.*;
+import j86.j86.java.util.regex.*;
 
-import java.security.Provider.Service;
+import j86.java.security.Provider.Service;
 
-import sun.security.jca.*;
-import sun.security.jca.GetInstance.Instance;
+import j86.sun.security.jca.*;
+import j86.sun.security.jca.GetInstance.Instance;
 
 /**
  * This class provides a cryptographically strong random number
@@ -83,14 +83,14 @@ import sun.security.jca.GetInstance.Instance;
  * for example, if they need to read from /dev/random on various Unix-like
  * operating systems.
  *
- * @see java.security.SecureRandomSpi
- * @see java.util.Random
+ * @see j86.java.security.SecureRandomSpi
+ * @see j86.java.util.Random
  *
  * @author Benjamin Renaud
  * @author Josh Bloch
  */
 
-public class SecureRandom extends java.util.Random {
+public class SecureRandom extends j86.java.util.Random {
 
     /**
      * The provider.
@@ -189,7 +189,7 @@ public class SecureRandom extends java.util.Random {
         if (prng == null) {
             // bummer, get the SUN implementation
             prng = "SHA1PRNG";
-            this.secureRandomSpi = new sun.security.provider.SecureRandom();
+            this.secureRandomSpi = new j86.sun.security.provider.SecureRandom();
             this.provider = Providers.getSunProvider();
             if (setSeed) {
                 this.secureRandomSpi.engineSetSeed(seed);
@@ -423,7 +423,7 @@ public class SecureRandom extends java.util.Random {
      * are guaranteed never to reduce randomness.
      *
      * <p>This method is defined for compatibility with
-     * {@code java.util.Random}.
+     * {@code j86.java.util.Random}.
      *
      * @param seed the seed.
      *
@@ -460,7 +460,7 @@ public class SecureRandom extends java.util.Random {
     /**
      * Generates an integer containing the user-specified number of
      * pseudo-random bits (right justified, with leading zeros).  This
-     * method overrides a {@code java.util.Random} method, and serves
+     * method overrides a {@code j86.java.util.Random} method, and serves
      * to provide a source of random bits to all of the methods inherited
      * from that class (for example, {@code nextInt},
      * {@code nextLong}, and {@code nextFloat}).
@@ -661,7 +661,7 @@ public class SecureRandom extends java.util.Random {
      * @serial
      *
      * We know that the MessageDigest class does not implement
-     * java.io.Serializable.  However, since this field is no longer
+     * j86.java.io.Serializable.  However, since this field is no longer
      * used, it will always be NULL and won't affect the serialization
      * of the SecureRandom class itself.
      */

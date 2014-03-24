@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.imageio.metadata;
+package j86.j86.javax.imageio.metadata;
 
-import java.util.Locale;
-import javax.imageio.ImageTypeSpecifier;
+import j86.java.util.Locale;
+import j86.javax.imageio.ImageTypeSpecifier;
 
 /**
  * An object describing the structure of metadata documents returned

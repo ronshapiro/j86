@@ -22,9 +22,9 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.event;
+package j86.j86.javax.swing.event;
 
-import java.util.EventListener;
+import j86.java.util.EventListener;
 
 /**
  * Interface for an observer to register to receive notifications
@@ -46,8 +46,8 @@ import java.util.EventListener;
  * (i.e. the associated Document)</em>.
  *
  * @author  Timothy Prinzing
- * @see javax.swing.text.Document
- * @see javax.swing.text.StyledDocument
+ * @see j86.j86.javax.swing.text.Document
+ * @see j86.j86.javax.swing.text.StyledDocument
  * @see DocumentEvent
  */
 public interface DocumentListener extends EventListener {

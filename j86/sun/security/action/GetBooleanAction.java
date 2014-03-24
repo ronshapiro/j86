@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.security.action;
+package j86.sun.security.action;
 
 /**
  * A convenience class for retrieving the boolean value of a system property
@@ -36,18 +36,18 @@ package sun.security.action;
  * property named <code>"prop"</code> as a privileged action: <p>
  *
  * <pre>
- * boolean b = java.security.AccessController.doPrivileged
+ * boolean b = j86.java.security.AccessController.doPrivileged
  *              (new GetBooleanAction("prop")).booleanValue();
  * </pre>
  *
  * @author Roland Schemers
- * @see java.security.PrivilegedAction
- * @see java.security.AccessController
+ * @see j86.java.security.PrivilegedAction
+ * @see j86.java.security.AccessController
  * @since 1.2
  */
 
 public class GetBooleanAction
-        implements java.security.PrivilegedAction<Boolean> {
+        implements j86.java.security.PrivilegedAction<Boolean> {
     private String theProp;
 
     /**

@@ -23,14 +23,14 @@
  * questions.
  */
 
-package com.sun.jndi.toolkit.url;
+package j86.com.sun.jndi.toolkit.url;
 
-import javax.naming.*;
-import javax.naming.spi.ResolveResult;
-import javax.naming.spi.NamingManager;
+import j86.javax.naming.*;
+import j86.j86.javax.naming.spi.ResolveResult;
+import j86.j86.javax.naming.spi.NamingManager;
 
-import java.util.Hashtable;
-import java.net.MalformedURLException;
+import j86.java.util.Hashtable;
+import j86.java.net.MalformedURLException;
 
 /**
  * This abstract class is a generic URL context that accepts as the

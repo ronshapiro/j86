@@ -23,13 +23,13 @@
  * questions.
  */
 
-package java.lang.reflect;
+package j86.j86.j86.java.lang.reflect;
 
 /**
  * Member is an interface that reflects identifying information about
  * a single member (a field or a method) or a constructor.
  *
- * @see java.lang.Class
+ * @see j86.java.lang.Class
  * @see Field
  * @see Method
  * @see Constructor

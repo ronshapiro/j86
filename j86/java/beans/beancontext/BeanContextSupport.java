@@ -23,45 +23,45 @@
  * questions.
  */
 
-package java.beans.beancontext;
+package j86.j86.java.beans.beancontext;
 
-import java.awt.Component;
-import java.awt.Container;
+import j86.java.awt.Component;
+import j86.java.awt.Container;
 
-import java.beans.Beans;
-import java.beans.AppletInitializer;
+import j86.java.beans.Beans;
+import j86.java.beans.AppletInitializer;
 
-import java.beans.DesignMode;
+import j86.java.beans.DesignMode;
 
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
-import java.beans.PropertyChangeSupport;
+import j86.java.beans.PropertyChangeEvent;
+import j86.java.beans.PropertyChangeListener;
+import j86.java.beans.PropertyChangeSupport;
 
-import java.beans.VetoableChangeListener;
-import java.beans.VetoableChangeSupport;
-import java.beans.PropertyVetoException;
+import j86.java.beans.VetoableChangeListener;
+import j86.java.beans.VetoableChangeSupport;
+import j86.java.beans.PropertyVetoException;
 
-import java.beans.Visibility;
+import j86.java.beans.Visibility;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.Serializable;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.Serializable;
 
-import java.net.URL;
+import j86.java.net.URL;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Locale;
-import java.util.Map;
+import j86.java.util.ArrayList;
+import j86.java.util.Collection;
+import j86.java.util.HashMap;
+import j86.java.util.Iterator;
+import j86.java.util.Locale;
+import j86.java.util.Map;
 
 
 /**
  * This helper class provides a utility implementation of the
- * java.beans.beancontext.BeanContext interface.
+ * j86.j86.java.beans.beancontext.BeanContext interface.
  * <p>
  * Since this class directly implements the BeanContext interface, the class
  * can, and is intended to be used either by subclassing this implementation,
@@ -96,8 +96,8 @@ public class      BeanContextSupport extends BeanContextChildSupport
      *                  <tt>true</tt> if in design mode,
      *                  <tt>false</tt> if runtime.
      * @param visible   The initial visibility.
-     * @see java.util.Locale#getDefault()
-     * @see java.util.Locale#setDefault(java.util.Locale)
+     * @see j86.java.util.Locale#getDefault()
+     * @see j86.java.util.Locale#setDefault(java.util.Locale)
      */
     public BeanContextSupport(BeanContext peer, Locale lcle, boolean dTime, boolean visible) {
         super(peer);
@@ -121,8 +121,8 @@ public class      BeanContextSupport extends BeanContextChildSupport
      * @param dtime     The initial state, <tt>true</tt>
      *                  if in design mode,
      *                  <tt>false</tt> if runtime.
-     * @see java.util.Locale#getDefault()
-     * @see java.util.Locale#setDefault(java.util.Locale)
+     * @see j86.java.util.Locale#getDefault()
+     * @see j86.java.util.Locale#setDefault(java.util.Locale)
      */
     public BeanContextSupport(BeanContext peer, Locale lcle, boolean dtime) {
         this (peer, lcle, dtime, true);
@@ -141,8 +141,8 @@ public class      BeanContextSupport extends BeanContextChildSupport
      *                  the default locale
      *                  is assigned to the <tt>BeanContext</tt>
      *                  instance.
-     * @see java.util.Locale#getDefault()
-     * @see java.util.Locale#setDefault(java.util.Locale)
+     * @see j86.java.util.Locale#getDefault()
+     * @see j86.java.util.Locale#setDefault(java.util.Locale)
      */
     public BeanContextSupport(BeanContext peer, Locale lcle) {
         this (peer, lcle, false, true);
@@ -183,7 +183,7 @@ public class      BeanContextSupport extends BeanContextChildSupport
      * into a <tt>BeanContext</tt>.
      * </p>
      * <p>
-     * The semantics of the beanName parameter are defined by java.beans.Beans.instantiate.
+     * The semantics of the beanName parameter are defined by j86.java.beans.Beans.instantiate.
      * </p>
      *
      * @param beanName the name of the Bean to instantiate within this BeanContext
@@ -363,7 +363,7 @@ public class      BeanContextSupport extends BeanContextChildSupport
     /**
      * Adds/nests a child within this <tt>BeanContext</tt>.
      * <p>
-     * Invoked as a side effect of java.beans.Beans.instantiate().
+     * Invoked as a side effect of j86.java.beans.Beans.instantiate().
      * If the child object is not valid for adding then this method
      * throws an IllegalStateException.
      * </p>
@@ -392,7 +392,7 @@ public class      BeanContextSupport extends BeanContextChildSupport
 
 
             // The specification requires that we invoke setBeanContext() on the
-            // newly added child if it implements the java.beans.beancontext.BeanContextChild interface
+            // newly added child if it implements the j86.j86.java.beans.beancontext.BeanContextChild interface
 
             BeanContextChild cbcc  = getChildBeanContextChild(targetChild);
             BeanContextChild  bccp = null;
@@ -508,7 +508,7 @@ public class      BeanContextSupport extends BeanContextChildSupport
             Object   peer  = null;
 
             // we are required to notify the child that it is no longer nested here if
-            // it implements java.beans.beancontext.BeanContextChild
+            // it implements j86.j86.java.beans.beancontext.BeanContextChild
 
             synchronized(targetChild) {
                 if (callChildSetBC) {

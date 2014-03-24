@@ -33,17 +33,17 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package java.util.concurrent;
+package j86.j86.java.util.concurrent;
 
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.TimeoutException;
-import java.util.concurrent.atomic.AtomicReference;
-import java.util.concurrent.locks.LockSupport;
+import j86.j86.java.util.concurrent.TimeUnit;
+import j86.j86.java.util.concurrent.TimeoutException;
+import j86.j86.j86.java.util.concurrent.atomic.AtomicReference;
+import j86.j86.j86.java.util.concurrent.locks.LockSupport;
 
 /**
  * A reusable synchronization barrier, similar in functionality to
- * {@link java.util.concurrent.CyclicBarrier CyclicBarrier} and
- * {@link java.util.concurrent.CountDownLatch CountDownLatch}
+ * {@link j86.j86.java.util.concurrent.CyclicBarrier CyclicBarrier} and
+ * {@link j86.j86.java.util.concurrent.CountDownLatch CountDownLatch}
  * but supporting more flexible usage.
  *
  * <p><b>Registration.</b> Unlike the case for other barriers, the
@@ -62,7 +62,7 @@ import java.util.concurrent.locks.LockSupport;
  * <p><b>Synchronization.</b> Like a {@code CyclicBarrier}, a {@code
  * Phaser} may be repeatedly awaited.  Method {@link
  * #arriveAndAwaitAdvance} has effect analogous to {@link
- * java.util.concurrent.CyclicBarrier#await CyclicBarrier.await}. Each
+ * j86.j86.java.util.concurrent.CyclicBarrier#await CyclicBarrier.await}. Each
  * generation of a phaser has an associated phase number. The phase
  * number starts at zero, and advances when all parties arrive at the
  * phaser, wrapping around to zero after reaching {@code
@@ -1146,11 +1146,11 @@ public class Phaser {
 
     // Unsafe mechanics
 
-    private static final sun.misc.Unsafe UNSAFE;
+    private static final j86.sun.misc.Unsafe UNSAFE;
     private static final long stateOffset;
     static {
         try {
-            UNSAFE = sun.misc.Unsafe.getUnsafe();
+            UNSAFE = j86.sun.misc.Unsafe.getUnsafe();
             Class<?> k = Phaser.class;
             stateOffset = UNSAFE.objectFieldOffset
                 (k.getDeclaredField("state"));

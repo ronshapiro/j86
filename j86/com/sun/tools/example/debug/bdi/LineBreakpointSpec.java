@@ -32,10 +32,10 @@
  */
 
 
-package com.sun.tools.example.debug.bdi;
+package j86.com.sun.tools.example.debug.bdi;
 
-import com.sun.jdi.*;
-import java.util.List;
+import j86.com.sun.jdi.*;
+import j86.java.util.List;
 
 public class LineBreakpointSpec extends BreakpointSpec {
     int lineNumber;

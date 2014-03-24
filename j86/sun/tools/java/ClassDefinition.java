@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.tools.java;
+package j86.sun.tools.java;
 
-import java.util.*;
-import java.io.OutputStream;
-import java.io.PrintStream;
-import sun.tools.tree.Context;
-import sun.tools.tree.Vset;
-import sun.tools.tree.Expression;
-import sun.tools.tree.LocalMember;
-import sun.tools.tree.UplevelReference;
+import j86.java.util.*;
+import j86.java.io.OutputStream;
+import j86.java.io.PrintStream;
+import j86.sun.tools.tree.Context;
+import j86.sun.tools.tree.Vset;
+import j86.sun.tools.tree.Expression;
+import j86.sun.tools.tree.LocalMember;
+import j86.sun.tools.tree.UplevelReference;
 
 /**
  * This class is a Java class definition
@@ -182,7 +182,7 @@ class ClassDefinition implements Constants {
     }
 
     // *** DEBUG ***
-    protected boolean supersCheckStarted = !(this instanceof sun.tools.javac.SourceClass);
+    protected boolean supersCheckStarted = !(this instanceof j86.j86.sun.tools.javac.SourceClass);
 
     /**
      * Get the class' super class
@@ -1249,7 +1249,7 @@ class ClassDefinition implements Constants {
                 // Constructors are not inherited.
                 //
                 // Any non-abstract methods in an interface come
-                // from java.lang.Object.  This means that they
+                // from j86.java.lang.Object.  This means that they
                 // should have already been added to allMethods
                 // when we walked our superclass lineage.
                 if (method.isPrivate() ||
@@ -1274,7 +1274,7 @@ class ClassDefinition implements Constants {
                     !inSamePackage(method.getClassDeclaration())) {
 
                     if (override != null && this instanceof
-                        sun.tools.javac.SourceClass) {
+                        j86.j86.sun.tools.javac.SourceClass) {
                         // We give a warning when a class shadows an
                         // inaccessible package-private method from
                         // its superclass.  This warning is meant
@@ -1344,7 +1344,7 @@ class ClassDefinition implements Constants {
                             // to enable method lookup to work in the
                             // VM.
                             method =
-                                new sun.tools.javac.SourceMember(method,this,
+                                new j86.j86.sun.tools.javac.SourceMember(method,this,
                                                                  env);
                             mirandaMethods.add(method);
 
@@ -1405,7 +1405,7 @@ class ClassDefinition implements Constants {
                                 // to enable method lookup to work in the
                                 // VM.
                                 method =
-                                    new sun.tools.javac.SourceMember(method,
+                                    new j86.j86.sun.tools.javac.SourceMember(method,
                                                                      this,env);
 
                                 mirandaMethods.replace(method);
@@ -1648,7 +1648,7 @@ class ClassDefinition implements Constants {
     /**
      * We create a stub for this.  Source classes do more work.
      * Some calls from 'SourceClass.checkSupers' execute this method.
-     * @see sun.tools.javac.SourceClass#resolveTypeStructure
+     * @see j86.j86.sun.tools.javac.SourceClass#resolveTypeStructure
      */
 
     public void resolveTypeStructure(Environment env) {

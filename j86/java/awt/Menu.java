@@ -22,16 +22,16 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.awt;
+package j86.java.awt;
 
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.util.Vector;
-import java.util.Enumeration;
-import java.awt.peer.MenuPeer;
-import java.awt.event.KeyEvent;
-import javax.accessibility.*;
-import sun.awt.AWTAccessor;
+import j86.java.io.IOException;
+import j86.java.io.ObjectInputStream;
+import j86.java.util.Vector;
+import j86.java.util.Enumeration;
+import j86.j86.java.awt.peer.MenuPeer;
+import j86.j86.java.awt.event.KeyEvent;
+import j86.javax.accessibility.*;
+import j86.sun.awt.AWTAccessor;
 
 /**
  * A <code>Menu</code> object is a pull-down menu component
@@ -51,8 +51,8 @@ import sun.awt.AWTAccessor;
  * <code>CheckboxMenuItem</code>).
  *
  * @author Sami Shaio
- * @see     java.awt.MenuItem
- * @see     java.awt.CheckboxMenuItem
+ * @see     j86.java.awt.MenuItem
+ * @see     j86.java.awt.CheckboxMenuItem
  * @since   JDK1.0
  */
 public class Menu extends MenuItem implements MenuContainer, Accessible {
@@ -117,7 +117,7 @@ public class Menu extends MenuItem implements MenuContainer, Accessible {
      * a tear-off menu.
      * @exception HeadlessException if GraphicsEnvironment.isHeadless()
      * returns true.
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      * @since      JDK1.1
      */
     public Menu() throws HeadlessException {
@@ -131,7 +131,7 @@ public class Menu extends MenuItem implements MenuContainer, Accessible {
      *                   another menu of which this menu is a submenu.
      * @exception HeadlessException if GraphicsEnvironment.isHeadless()
      * returns true.
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      */
     public Menu(String label) throws HeadlessException {
         this(label, false);
@@ -150,7 +150,7 @@ public class Menu extends MenuItem implements MenuContainer, Accessible {
      *                   is a tear-off menu.
      * @exception HeadlessException if GraphicsEnvironment.isHeadless()
      * returns true.
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      * @since       JDK1.0.
      */
     public Menu(String label, boolean tearOff) throws HeadlessException {
@@ -262,8 +262,8 @@ public class Menu extends MenuItem implements MenuContainer, Accessible {
      *
      * @param       mi   the menu item to be added
      * @return      the menu item added
-     * @see         java.awt.Menu#insert(java.lang.String, int)
-     * @see         java.awt.Menu#insert(java.awt.MenuItem, int)
+     * @see         j86.java.awt.Menu#insert(j86.java.lang.String, int)
+     * @see         j86.java.awt.Menu#insert(java.awt.MenuItem, int)
      */
     public MenuItem add(MenuItem mi) {
         synchronized (getTreeLock()) {
@@ -285,8 +285,8 @@ public class Menu extends MenuItem implements MenuContainer, Accessible {
      * Adds an item with the specified label to this menu.
      *
      * @param       label   the text on the item
-     * @see         java.awt.Menu#insert(java.lang.String, int)
-     * @see         java.awt.Menu#insert(java.awt.MenuItem, int)
+     * @see         j86.java.awt.Menu#insert(j86.java.lang.String, int)
+     * @see         j86.java.awt.Menu#insert(java.awt.MenuItem, int)
      */
     public void add(String label) {
         add(new MenuItem(label));
@@ -299,8 +299,8 @@ public class Menu extends MenuItem implements MenuContainer, Accessible {
      * @param         menuitem  the menu item to be inserted.
      * @param         index     the position at which the menu
      *                          item should be inserted.
-     * @see           java.awt.Menu#add(java.lang.String)
-     * @see           java.awt.Menu#add(java.awt.MenuItem)
+     * @see           j86.java.awt.Menu#add(j86.java.lang.String)
+     * @see           j86.java.awt.Menu#add(java.awt.MenuItem)
      * @exception     IllegalArgumentException if the value of
      *                    <code>index</code> is less than zero
      * @since         JDK1.1
@@ -343,8 +343,8 @@ public class Menu extends MenuItem implements MenuContainer, Accessible {
      * @param       label the text on the item
      * @param       index the position at which the menu item
      *                      should be inserted
-     * @see         java.awt.Menu#add(java.lang.String)
-     * @see         java.awt.Menu#add(java.awt.MenuItem)
+     * @see         j86.java.awt.Menu#add(j86.java.lang.String)
+     * @see         j86.java.awt.Menu#add(java.awt.MenuItem)
      * @exception     IllegalArgumentException if the value of
      *                    <code>index</code> is less than zero
      * @since       JDK1.1
@@ -356,7 +356,7 @@ public class Menu extends MenuItem implements MenuContainer, Accessible {
 
     /**
      * Adds a separator line, or a hypen, to the menu at the current position.
-     * @see         java.awt.Menu#insertSeparator(int)
+     * @see         j86.java.awt.Menu#insertSeparator(int)
      */
     public void addSeparator() {
         add("-");
@@ -368,7 +368,7 @@ public class Menu extends MenuItem implements MenuContainer, Accessible {
      *                       menu separator should be inserted.
      * @exception   IllegalArgumentException if the value of
      *                       <code>index</code> is less than 0.
-     * @see         java.awt.Menu#addSeparator
+     * @see         j86.java.awt.Menu#addSeparator
      * @since       JDK1.1
      */
 
@@ -521,8 +521,8 @@ public class Menu extends MenuItem implements MenuContainer, Accessible {
      * @see AWTEventMulticaster#save(ObjectOutputStream, String, EventListener)
      * @see #readObject(ObjectInputStream)
      */
-    private void writeObject(java.io.ObjectOutputStream s)
-      throws java.io.IOException
+    private void writeObject(j86.java.io.ObjectOutputStream s)
+      throws j86.java.io.IOException
     {
       s.defaultWriteObject();
     }
@@ -535,7 +535,7 @@ public class Menu extends MenuItem implements MenuContainer, Accessible {
      * @exception HeadlessException if
      *   <code>GraphicsEnvironment.isHeadless</code> returns
      *   <code>true</code>
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      * @see #writeObject(ObjectOutputStream)
      */
     private void readObject(ObjectInputStream s)

@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.swing.plaf;
+package j86.j86.sun.swing.plaf;
 
-import javax.swing.JTextField;
-import javax.swing.UIDefaults;
-import javax.swing.text.DefaultEditorKit;
+import j86.javax.swing.JTextField;
+import j86.javax.swing.UIDefaults;
+import j86.j86.javax.swing.text.DefaultEditorKit;
 
 /**
  * WindowsKeybindings - The standard set of keymaps for the Windows Platform

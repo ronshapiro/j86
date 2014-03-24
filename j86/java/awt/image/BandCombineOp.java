@@ -23,16 +23,16 @@
  * questions.
  */
 
-package java.awt.image;
+package j86.j86.j86.java.awt.image;
 
-import java.awt.GraphicsEnvironment;
-import java.awt.color.ICC_Profile;
-import java.awt.geom.Rectangle2D;
-import java.awt.Rectangle;
-import java.awt.geom.Point2D;
-import java.awt.RenderingHints;
-import sun.awt.image.ImagingLib;
-import java.util.Arrays;
+import j86.java.awt.GraphicsEnvironment;
+import j86.j86.java.awt.color.ICC_Profile;
+import j86.j86.java.awt.geom.Rectangle2D;
+import j86.java.awt.Rectangle;
+import j86.j86.java.awt.geom.Point2D;
+import j86.java.awt.RenderingHints;
+import j86.j86.j86.sun.awt.image.ImagingLib;
+import j86.java.util.Arrays;
 
 /**
  * This class performs an arbitrary linear combination of the bands

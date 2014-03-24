@@ -23,11 +23,11 @@
  * questions.
  */
 
-package javax.print.event;
+package j86.j86.javax.print.event;
 
-import javax.print.DocPrintJob;
-import javax.print.attribute.AttributeSetUtilities;
-import javax.print.attribute.PrintJobAttributeSet;
+import j86.javax.print.DocPrintJob;
+import j86.j86.javax.print.attribute.AttributeSetUtilities;
+import j86.j86.javax.print.attribute.PrintJobAttributeSet;
 
 /**
  * Class PrintJobAttributeEvent encapsulates an event a PrintService

@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.jmx.snmp;
+package j86.com.sun.jmx.snmp;
 /**
  * This exception is thrown when the handled <CODE> SnmpSubSystem </CODE> is unknown.
  * <p><b>This API is a Sun Microsystems internal API  and is subject

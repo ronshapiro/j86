@@ -22,45 +22,45 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing;
+package j86.javax.swing;
 
-import java.awt.Component;
-import java.awt.Font;
-import java.awt.Color;
-import java.awt.Insets;
-import java.awt.Dimension;
-import java.awt.KeyboardFocusManager;
-import java.awt.KeyEventPostProcessor;
-import java.awt.Toolkit;
+import j86.java.awt.Component;
+import j86.java.awt.Font;
+import j86.java.awt.Color;
+import j86.java.awt.Insets;
+import j86.java.awt.Dimension;
+import j86.java.awt.KeyboardFocusManager;
+import j86.java.awt.KeyEventPostProcessor;
+import j86.java.awt.Toolkit;
 
-import java.awt.event.KeyEvent;
+import j86.j86.java.awt.event.KeyEvent;
 
-import java.security.AccessController;
+import j86.java.security.AccessController;
 
-import javax.swing.plaf.ComponentUI;
-import javax.swing.border.Border;
+import j86.j86.javax.swing.plaf.ComponentUI;
+import j86.j86.javax.swing.border.Border;
 
-import javax.swing.event.SwingPropertyChangeSupport;
-import java.beans.PropertyChangeListener;
+import j86.j86.javax.swing.event.SwingPropertyChangeSupport;
+import j86.java.beans.PropertyChangeListener;
 
-import java.io.Serializable;
-import java.io.File;
-import java.io.FileInputStream;
+import j86.java.io.Serializable;
+import j86.java.io.File;
+import j86.java.io.FileInputStream;
 
-import java.util.ArrayList;
-import java.util.Properties;
-import java.util.StringTokenizer;
-import java.util.Vector;
-import java.util.Locale;
+import j86.java.util.ArrayList;
+import j86.java.util.Properties;
+import j86.java.util.StringTokenizer;
+import j86.java.util.Vector;
+import j86.java.util.Locale;
 
-import sun.awt.SunToolkit;
-import sun.awt.OSInfo;
-import sun.security.action.GetPropertyAction;
-import sun.swing.SwingUtilities2;
-import java.lang.reflect.Method;
-import java.util.HashMap;
-import sun.awt.AppContext;
-import sun.awt.AWTAccessor;
+import j86.sun.awt.SunToolkit;
+import j86.sun.awt.OSInfo;
+import j86.sun.security.action.GetPropertyAction;
+import j86.sun.swing.SwingUtilities2;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.util.HashMap;
+import j86.sun.awt.AppContext;
+import j86.sun.awt.AWTAccessor;
 
 
 /**
@@ -82,7 +82,7 @@ import sun.awt.AWTAccessor;
  * The following example illustrates setting the look and feel based on
  * class name:
  * <pre>
- *   UIManager.setLookAndFeel("javax.swing.plaf.metal.MetalLookAndFeel");
+ *   UIManager.setLookAndFeel("j86.j86.j86.javax.swing.plaf.metal.MetalLookAndFeel");
  * </pre>
  * Once the look and feel has been changed it is imperative to invoke
  * {@code updateUI} on all {@code JComponents}. The method {@link
@@ -101,7 +101,7 @@ import sun.awt.AWTAccessor;
  *   <li>If the system property <code>swing.defaultlaf</code> is
  *       {@code non-null}, use its value as the default look and feel class
  *       name.
- *   <li>If the {@link java.util.Properties} file <code>swing.properties</code>
+ *   <li>If the {@link j86.java.util.Properties} file <code>swing.properties</code>
  *       exists and contains the key <code>swing.defaultlaf</code>,
  *       use its value as the default look and feel class name. The location
  *       that is checked for <code>swing.properties</code> may vary depending
@@ -168,8 +168,8 @@ import sun.awt.AWTAccessor;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @author Thomas Ball
  * @author Hans Muller
@@ -366,21 +366,21 @@ public class UIManager implements Serializable
     static {
         ArrayList<LookAndFeelInfo> iLAFs = new ArrayList<LookAndFeelInfo>(4);
         iLAFs.add(new LookAndFeelInfo(
-                      "Metal", "javax.swing.plaf.metal.MetalLookAndFeel"));
+                      "Metal", "j86.j86.j86.javax.swing.plaf.metal.MetalLookAndFeel"));
         iLAFs.add(new LookAndFeelInfo(
-                      "Nimbus", "javax.swing.plaf.nimbus.NimbusLookAndFeel"));
+                      "Nimbus", "j86.j86.j86.javax.swing.plaf.nimbus.NimbusLookAndFeel"));
         iLAFs.add(new LookAndFeelInfo("CDE/Motif",
-                  "com.sun.java.swing.plaf.motif.MotifLookAndFeel"));
+                  "j86.j86.com.sun.java.swing.plaf.motif.MotifLookAndFeel"));
 
         // Only include windows on Windows boxs.
         OSInfo.OSType osType = AccessController.doPrivileged(OSInfo.getOSTypeAction());
         if (osType == OSInfo.OSType.WINDOWS) {
             iLAFs.add(new LookAndFeelInfo("Windows",
-                        "com.sun.java.swing.plaf.windows.WindowsLookAndFeel"));
+                        "j86.j86.com.sun.java.swing.plaf.windows.WindowsLookAndFeel"));
             if (Toolkit.getDefaultToolkit().getDesktopProperty(
                     "win.xpstyle.themeActive") != null) {
                 iLAFs.add(new LookAndFeelInfo("Windows Classic",
-                 "com.sun.java.swing.plaf.windows.WindowsClassicLookAndFeel"));
+                 "j86.j86.com.sun.java.swing.plaf.windows.WindowsClassicLookAndFeel"));
             }
         }
         else if (osType == OSInfo.OSType.MACOSX) {
@@ -389,7 +389,7 @@ public class UIManager implements Serializable
         else {
             // GTK is not shipped on Windows.
             iLAFs.add(new LookAndFeelInfo("GTK+",
-                  "com.sun.java.swing.plaf.gtk.GTKLookAndFeel"));
+                  "j86.j86.com.sun.java.swing.plaf.gtk.GTKLookAndFeel"));
         }
         installedLAFs = iLAFs.toArray(new LookAndFeelInfo[iLAFs.size()]);
     }
@@ -534,7 +534,7 @@ public class UIManager implements Serializable
 
         lafState.lookAndFeel = newLookAndFeel;
         if (newLookAndFeel != null) {
-            sun.swing.DefaultLookup.setDefaultLookup(null);
+            j86.sun.swing.DefaultLookup.setDefaultLookup(null);
             newLookAndFeel.initialize();
             lafState.setLookAndFeelDefaults(newLookAndFeel.getDefaults());
         }
@@ -574,9 +574,9 @@ public class UIManager implements Serializable
                IllegalAccessException,
                UnsupportedLookAndFeelException
     {
-        if ("javax.swing.plaf.metal.MetalLookAndFeel".equals(className)) {
+        if ("j86.j86.j86.javax.swing.plaf.metal.MetalLookAndFeel".equals(className)) {
             // Avoid reflection for the common case of metal.
-            setLookAndFeel(new javax.swing.plaf.metal.MetalLookAndFeel());
+            setLookAndFeel(new j86.j86.j86.javax.swing.plaf.metal.MetalLookAndFeel());
         }
         else {
             Class lnfClass = SwingUtilities.loadSystemClass(className);
@@ -605,7 +605,7 @@ public class UIManager implements Serializable
         }
         OSInfo.OSType osType = AccessController.doPrivileged(OSInfo.getOSTypeAction());
         if (osType == OSInfo.OSType.WINDOWS) {
-            return "com.sun.java.swing.plaf.windows.WindowsLookAndFeel";
+            return "j86.j86.com.sun.java.swing.plaf.windows.WindowsLookAndFeel";
         } else {
             String desktop = AccessController.doPrivileged(new GetPropertyAction("sun.desktop"));
             Toolkit toolkit = Toolkit.getDefaultToolkit();
@@ -613,7 +613,7 @@ public class UIManager implements Serializable
                     toolkit instanceof SunToolkit &&
                     ((SunToolkit) toolkit).isNativeGTKAvailable()) {
                 // May be set on Linux and Solaris boxs.
-                return "com.sun.java.swing.plaf.gtk.GTKLookAndFeel";
+                return "j86.j86.com.sun.java.swing.plaf.gtk.GTKLookAndFeel";
             }
             if (osType == OSInfo.OSType.MACOSX) {
                 if (toolkit.getClass() .getName()
@@ -622,7 +622,7 @@ public class UIManager implements Serializable
                 }
             }
             if (osType == OSInfo.OSType.SOLARIS) {
-                return "com.sun.java.swing.plaf.motif.MotifLookAndFeel";
+                return "j86.j86.com.sun.java.swing.plaf.motif.MotifLookAndFeel";
             }
         }
         return getCrossPlatformLookAndFeelClassName();
@@ -645,7 +645,7 @@ public class UIManager implements Serializable
         if (laf != null) {
             return laf;
         }
-        return "javax.swing.plaf.metal.MetalLookAndFeel";
+        return "j86.j86.j86.javax.swing.plaf.metal.MetalLookAndFeel";
     }
 
 
@@ -1044,7 +1044,7 @@ public class UIManager implements Serializable
     private static LookAndFeel getMultiLookAndFeel() {
         LookAndFeel multiLookAndFeel = getLAFState().multiLookAndFeel;
         if (multiLookAndFeel == null) {
-            String defaultName = "javax.swing.plaf.multi.MultiLookAndFeel";
+            String defaultName = "j86.j86.j86.javax.swing.plaf.multi.MultiLookAndFeel";
             String className = getLAFState().swingProps.getProperty(multiplexingLAFKey, defaultName);
             try {
                 Class lnfClass = SwingUtilities.loadSystemClass(className);
@@ -1171,7 +1171,7 @@ public class UIManager implements Serializable
      * The listener is registered for all properties.
      *
      * @param listener  the <code>PropertyChangeListener</code> to be added
-     * @see java.beans.PropertyChangeSupport
+     * @see j86.java.beans.PropertyChangeSupport
      */
     public static void addPropertyChangeListener(PropertyChangeListener listener)
     {
@@ -1188,7 +1188,7 @@ public class UIManager implements Serializable
      * for all properties.
      *
      * @param listener  the <code>PropertyChangeListener</code> to be removed
-     * @see java.beans.PropertyChangeSupport
+     * @see j86.java.beans.PropertyChangeSupport
      */
     public static void removePropertyChangeListener(PropertyChangeListener listener)
     {
@@ -1225,8 +1225,8 @@ public class UIManager implements Serializable
         else {
             final Properties props = new Properties();
 
-            java.security.AccessController.doPrivileged(
-                new java.security.PrivilegedAction<Object>() {
+            j86.java.security.AccessController.doPrivileged(
+                new j86.java.security.PrivilegedAction<Object>() {
                 public Object run() {
                     OSInfo.OSType osType = AccessController.doPrivileged(OSInfo.getOSTypeAction());
                     if (osType == OSInfo.OSType.MACOSX) {
@@ -1462,7 +1462,7 @@ public class UIManager implements Serializable
 
         // Install Swing's PaintEventDispatcher
         if (RepaintManager.HANDLE_TOP_LEVEL_PAINT) {
-            sun.awt.PaintEventDispatcher.setPaintEventDispatcher(
+            j86.sun.awt.PaintEventDispatcher.setPaintEventDispatcher(
                                         new SwingPaintEventDispatcher());
         }
         // Install a hook that will be invoked if no one consumes the

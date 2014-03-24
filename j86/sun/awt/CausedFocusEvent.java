@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.awt;
+package j86.sun.awt;
 
-import java.awt.event.FocusEvent;
-import java.awt.Component;
+import j86.j86.java.awt.event.FocusEvent;
+import j86.java.awt.Component;
 
 /**
  * This class represents FocusEvents with a known "cause" - reason why this event happened. It can
@@ -61,7 +61,7 @@ public class CausedFocusEvent extends FocusEvent {
     }
 
     public String toString() {
-        return "java.awt.FocusEvent[" + super.paramString() + ",cause=" + cause + "] on " + getSource();
+        return "j86.java.awt.FocusEvent[" + super.paramString() + ",cause=" + cause + "] on " + getSource();
     }
 
     public CausedFocusEvent(Component source, int id, boolean temporary,

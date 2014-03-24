@@ -22,23 +22,23 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.plaf.multi;
+package j86.j86.j86.javax.swing.plaf.multi;
 
-import java.util.Vector;
-import javax.swing.plaf.TextUI;
-import java.lang.String;
-import javax.swing.text.JTextComponent;
-import java.awt.Point;
-import java.awt.Rectangle;
-import javax.swing.text.BadLocationException;
-import javax.swing.text.Position;
-import javax.swing.text.EditorKit;
-import javax.swing.text.View;
-import javax.swing.plaf.ComponentUI;
-import javax.swing.JComponent;
-import java.awt.Graphics;
-import java.awt.Dimension;
-import javax.accessibility.Accessible;
+import j86.java.util.Vector;
+import j86.j86.javax.swing.plaf.TextUI;
+import j86.java.lang.String;
+import j86.j86.javax.swing.text.JTextComponent;
+import j86.java.awt.Point;
+import j86.java.awt.Rectangle;
+import j86.j86.javax.swing.text.BadLocationException;
+import j86.j86.javax.swing.text.Position;
+import j86.j86.javax.swing.text.EditorKit;
+import j86.j86.javax.swing.text.View;
+import j86.j86.javax.swing.plaf.ComponentUI;
+import j86.javax.swing.JComponent;
+import j86.java.awt.Graphics;
+import j86.java.awt.Dimension;
+import j86.javax.accessibility.Accessible;
 
 /**
  * A multiplexing UI used to combine <code>TextUI</code>s.

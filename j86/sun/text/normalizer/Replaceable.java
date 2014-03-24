@@ -35,7 +35,7 @@
  *******************************************************************************
  */
 
-package sun.text.normalizer;
+package j86.j86.sun.text.normalizer;
 
 /**
  * <code>Replaceable</code> is an interface representing a

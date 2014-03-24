@@ -33,18 +33,18 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package java.util.concurrent;
+package j86.j86.java.util.concurrent;
 
-import java.util.concurrent.atomic.AtomicInteger;
-import java.util.concurrent.locks.Condition;
-import java.util.concurrent.locks.ReentrantLock;
-import java.util.AbstractQueue;
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.NoSuchElementException;
-import java.util.Spliterator;
-import java.util.Spliterators;
-import java.util.function.Consumer;
+import j86.j86.j86.java.util.concurrent.atomic.AtomicInteger;
+import j86.j86.j86.java.util.concurrent.locks.Condition;
+import j86.j86.j86.java.util.concurrent.locks.ReentrantLock;
+import j86.java.util.AbstractQueue;
+import j86.java.util.Collection;
+import j86.java.util.Iterator;
+import j86.java.util.NoSuchElementException;
+import j86.java.util.Spliterator;
+import j86.java.util.Spliterators;
+import j86.j86.java.util.function.Consumer;
 
 /**
  * An optionally-bounded {@linkplain BlockingQueue blocking queue} based on
@@ -78,7 +78,7 @@ import java.util.function.Consumer;
  * @param <E> the type of elements held in this collection
  */
 public class LinkedBlockingQueue<E> extends AbstractQueue<E>
-        implements BlockingQueue<E>, java.io.Serializable {
+        implements BlockingQueue<E>, j86.java.io.Serializable {
     private static final long serialVersionUID = -6903933977591709194L;
 
     /*
@@ -650,7 +650,7 @@ public class LinkedBlockingQueue<E> extends AbstractQueue<E>
         try {
             int size = count.get();
             if (a.length < size)
-                a = (T[])java.lang.reflect.Array.newInstance
+                a = (T[])j86.j86.j86.java.lang.reflect.Array.newInstance
                     (a.getClass().getComponentType(), size);
 
             int k = 0;
@@ -993,13 +993,13 @@ public class LinkedBlockingQueue<E> extends AbstractQueue<E>
      * Saves this queue to a stream (that is, serializes it).
      *
      * @param s the stream
-     * @throws java.io.IOException if an I/O error occurs
+     * @throws j86.java.io.IOException if an I/O error occurs
      * @serialData The capacity is emitted (int), followed by all of
      * its elements (each an {@code Object}) in the proper order,
      * followed by a null
      */
-    private void writeObject(java.io.ObjectOutputStream s)
-        throws java.io.IOException {
+    private void writeObject(j86.java.io.ObjectOutputStream s)
+        throws j86.java.io.IOException {
 
         fullyLock();
         try {
@@ -1022,10 +1022,10 @@ public class LinkedBlockingQueue<E> extends AbstractQueue<E>
      * @param s the stream
      * @throws ClassNotFoundException if the class of a serialized object
      *         could not be found
-     * @throws java.io.IOException if an I/O error occurs
+     * @throws j86.java.io.IOException if an I/O error occurs
      */
-    private void readObject(java.io.ObjectInputStream s)
-        throws java.io.IOException, ClassNotFoundException {
+    private void readObject(j86.java.io.ObjectInputStream s)
+        throws j86.java.io.IOException, ClassNotFoundException {
         // Read in capacity, and any hidden stuff
         s.defaultReadObject();
 

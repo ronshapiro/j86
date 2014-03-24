@@ -23,17 +23,17 @@
  * questions.
  */
 
-package sun.nio.cs;
+package j86.j86.j86.sun.nio.cs;
 
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-import java.util.*;
-import java.security.*;
+import j86.java.io.InputStream;
+import j86.java.io.InputStreamReader;
+import j86.java.io.OutputStream;
+import j86.java.io.BufferedReader;
+import j86.java.io.IOException;
+import j86.j86.java.util.regex.Matcher;
+import j86.j86.java.util.regex.Pattern;
+import j86.java.util.*;
+import j86.java.security.*;
 
 public class CharsetMapping {
     public final static char UNMAPPABLE_DECODING = '\uFFFD';

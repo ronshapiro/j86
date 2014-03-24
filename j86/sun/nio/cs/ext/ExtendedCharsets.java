@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.nio.cs.ext;
+package j86.j86.j86.j86.sun.nio.cs.ext;
 
-import java.lang.ref.SoftReference;
-import java.nio.charset.Charset;
-import java.nio.charset.spi.CharsetProvider;
-import sun.nio.cs.AbstractCharsetProvider;
-import java.security.AccessController;
-import sun.security.action.GetPropertyAction;
+import j86.j86.java.lang.ref.SoftReference;
+import j86.j86.java.nio.charset.Charset;
+import j86.j86.j86.java.nio.charset.spi.CharsetProvider;
+import j86.j86.j86.sun.nio.cs.AbstractCharsetProvider;
+import j86.java.security.AccessController;
+import j86.sun.security.action.GetPropertyAction;
 
 
 /**
@@ -45,7 +45,7 @@ public class ExtendedCharsets
 
     public ExtendedCharsets() {
 
-        super("sun.nio.cs.ext");  // identify provider pkg name.
+        super("j86.j86.j86.j86.sun.nio.cs.ext");  // identify provider pkg name.
 
         // Traditional Chinese
 
@@ -140,7 +140,7 @@ public class ExtendedCharsets
                 });
 
         // The definition of this charset may be overridden by the init method,
-        // below, if the sun.nio.cs.map property is defined.
+        // below, if the j86.j86.j86.sun.nio.cs.map property is defined.
         //
         charset("Shift_JIS", "SJIS",
                 new String[] {
@@ -154,7 +154,7 @@ public class ExtendedCharsets
                 });
 
         // The definition of this charset may be overridden by the init method,
-        // below, if the sun.nio.cs.map property is defined.
+        // below, if the j86.j86.j86.sun.nio.cs.map property is defined.
         //
         charset("windows-31j", "MS932",
                 new String[] {
@@ -1129,7 +1129,7 @@ public class ExtendedCharsets
 
     private boolean initialized = false;
 
-    // If the sun.nio.cs.map property is defined on the command line we won't
+    // If the j86.j86.j86.sun.nio.cs.map property is defined on the command line we won't
     // see it in the system-properties table until after the charset subsystem
     // has been initialized.  We therefore delay the effect of this property
     // until after the JRE has completely booted.
@@ -1171,11 +1171,11 @@ public class ExtendedCharsets
     protected void init() {
         if (initialized)
             return;
-        if (!sun.misc.VM.isBooted())
+        if (!j86.sun.misc.VM.isBooted())
             return;
 
         String map = AccessController.doPrivileged(
-            new GetPropertyAction("sun.nio.cs.map"));
+            new GetPropertyAction("j86.j86.j86.sun.nio.cs.map"));
         boolean sjisIsMS932 = false;
         boolean iso2022jpIsMS50221 = false;
         boolean iso2022jpIsMS50220 = false;

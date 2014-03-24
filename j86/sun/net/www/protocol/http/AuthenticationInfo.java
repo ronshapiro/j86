@@ -23,15 +23,15 @@
  * questions.
  */
 
-package sun.net.www.protocol.http;
+package j86.j86.j86.sun.net.www.protocol.http;
 
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.net.PasswordAuthentication;
-import java.net.URL;
-import java.util.HashMap;
+import j86.java.io.IOException;
+import j86.java.io.ObjectInputStream;
+import j86.java.net.PasswordAuthentication;
+import j86.java.net.URL;
+import j86.java.util.HashMap;
 
-import sun.net.www.HeaderParser;
+import j86.j86.sun.net.www.HeaderParser;
 
 
 /**
@@ -67,8 +67,8 @@ public abstract class AuthenticationInfo extends AuthCacheValue implements Clone
     static boolean serializeAuth;
 
     static {
-        serializeAuth = java.security.AccessController.doPrivileged(
-            new sun.security.action.GetBooleanAction(
+        serializeAuth = j86.java.security.AccessController.doPrivileged(
+            new j86.sun.security.action.GetBooleanAction(
                 "http.auth.serializeRequests")).booleanValue();
     }
 
@@ -442,7 +442,7 @@ public abstract class AuthenticationInfo extends AuthCacheValue implements Clone
         s1 = null; s2= null;
     }
 
-    private synchronized void writeObject(java.io.ObjectOutputStream s)
+    private synchronized void writeObject(j86.java.io.ObjectOutputStream s)
         throws IOException
     {
         s1 = pw.getUserName();

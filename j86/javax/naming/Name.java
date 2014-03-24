@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.naming;
+package j86.javax.naming;
 
-import java.util.Enumeration;
+import j86.java.util.Enumeration;
 
 /**
  * The <tt>Name</tt> interface represents a generic name -- an ordered
@@ -56,7 +56,7 @@ import java.util.Enumeration;
  */
 
 public interface Name
-    extends Cloneable, java.io.Serializable, Comparable<Object>
+    extends Cloneable, j86.java.io.Serializable, Comparable<Object>
 {
 
    /**

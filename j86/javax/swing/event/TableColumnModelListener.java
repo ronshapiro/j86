@@ -23,11 +23,11 @@
  * questions.
  */
 
-package javax.swing.event;
+package j86.j86.javax.swing.event;
 
-import javax.swing.event.ListSelectionEvent;
-import javax.swing.event.ChangeEvent;
-import java.util.EventListener;
+import j86.j86.javax.swing.event.ListSelectionEvent;
+import j86.j86.javax.swing.event.ChangeEvent;
+import j86.java.util.EventListener;
 
 /**
  * TableColumnModelListener defines the interface for an object that listens
@@ -37,7 +37,7 @@ import java.util.EventListener;
  * @see TableColumnModelEvent
  */
 
-public interface TableColumnModelListener extends java.util.EventListener
+public interface TableColumnModelListener extends j86.java.util.EventListener
 {
     /** Tells listeners that a column was added to the model. */
     public void columnAdded(TableColumnModelEvent e);

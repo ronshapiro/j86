@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.awt;
+package j86.sun.awt;
 
 /**
  * Listener interface so Java Plug-in can be notified

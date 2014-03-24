@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.security.action;
+package j86.sun.security.action;
 
-import java.io.*;
+import j86.java.io.*;
 
-import java.security.PrivilegedExceptionAction;
+import j86.java.security.PrivilegedExceptionAction;
 
 /**
  * A convenience class for opening a FileInputStream as a privileged action.

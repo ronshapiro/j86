@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.audio;
+package j86.sun.audio;
 
-import java.io.InputStream;
-import java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
 
 /**
  * Translator for native audio formats (not implemented in this release).

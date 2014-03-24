@@ -23,67 +23,67 @@
  * questions.
  */
 
-package sun.security.tools.keytool;
+package j86.j86.sun.security.tools.keytool;
 
-import java.io.*;
-import java.security.CodeSigner;
-import java.security.KeyStore;
-import java.security.KeyStoreException;
-import java.security.MessageDigest;
-import java.security.Key;
-import java.security.PublicKey;
-import java.security.PrivateKey;
-import java.security.Security;
-import java.security.Signature;
-import java.security.Timestamp;
-import java.security.UnrecoverableEntryException;
-import java.security.UnrecoverableKeyException;
-import java.security.NoSuchAlgorithmException;
-import java.security.Principal;
-import java.security.Provider;
-import java.security.cert.Certificate;
-import java.security.cert.CertificateFactory;
-import java.security.cert.CertStoreException;
-import java.security.cert.CRL;
-import java.security.cert.X509Certificate;
-import java.security.cert.CertificateException;
-import java.text.Collator;
-import java.text.MessageFormat;
-import java.util.*;
-import java.util.jar.JarEntry;
-import java.util.jar.JarFile;
-import java.lang.reflect.Constructor;
-import java.math.BigInteger;
-import java.net.URI;
-import java.net.URL;
-import java.net.URLClassLoader;
-import java.security.cert.CertStore;
+import j86.java.io.*;
+import j86.java.security.CodeSigner;
+import j86.java.security.KeyStore;
+import j86.java.security.KeyStoreException;
+import j86.java.security.MessageDigest;
+import j86.java.security.Key;
+import j86.java.security.PublicKey;
+import j86.java.security.PrivateKey;
+import j86.java.security.Security;
+import j86.java.security.Signature;
+import j86.java.security.Timestamp;
+import j86.java.security.UnrecoverableEntryException;
+import j86.java.security.UnrecoverableKeyException;
+import j86.java.security.NoSuchAlgorithmException;
+import j86.java.security.Principal;
+import j86.java.security.Provider;
+import j86.j86.java.security.cert.Certificate;
+import j86.j86.java.security.cert.CertificateFactory;
+import j86.j86.java.security.cert.CertStoreException;
+import j86.j86.java.security.cert.CRL;
+import j86.j86.java.security.cert.X509Certificate;
+import j86.j86.java.security.cert.CertificateException;
+import j86.java.text.Collator;
+import j86.java.text.MessageFormat;
+import j86.java.util.*;
+import j86.j86.java.util.jar.JarEntry;
+import j86.j86.java.util.jar.JarFile;
+import j86.j86.j86.java.lang.reflect.Constructor;
+import j86.java.math.BigInteger;
+import j86.java.net.URI;
+import j86.java.net.URL;
+import j86.java.net.URLClassLoader;
+import j86.j86.java.security.cert.CertStore;
 
-import java.security.cert.X509CRL;
-import java.security.cert.X509CRLEntry;
-import java.security.cert.X509CRLSelector;
-import javax.security.auth.x500.X500Principal;
-import java.util.Base64;
-import sun.security.util.ObjectIdentifier;
-import sun.security.pkcs10.PKCS10;
-import sun.security.pkcs10.PKCS10Attribute;
-import sun.security.provider.X509Factory;
-import sun.security.provider.certpath.CertStoreHelper;
-import sun.security.util.Password;
-import javax.crypto.KeyGenerator;
-import javax.crypto.SecretKey;
-import javax.crypto.SecretKeyFactory;
-import javax.crypto.spec.PBEKeySpec;
+import j86.j86.java.security.cert.X509CRL;
+import j86.j86.java.security.cert.X509CRLEntry;
+import j86.j86.java.security.cert.X509CRLSelector;
+import j86.j86.javax.security.auth.x500.X500Principal;
+import j86.java.util.Base64;
+import j86.sun.security.util.ObjectIdentifier;
+import j86.j86.sun.security.pkcs10.PKCS10;
+import j86.j86.sun.security.pkcs10.PKCS10Attribute;
+import j86.sun.security.provider.X509Factory;
+import j86.j86.sun.security.provider.certpath.CertStoreHelper;
+import j86.sun.security.util.Password;
+import j86.javax.crypto.KeyGenerator;
+import j86.javax.crypto.SecretKey;
+import j86.javax.crypto.SecretKeyFactory;
+import j86.j86.javax.crypto.spec.PBEKeySpec;
 
-import sun.security.pkcs.PKCS9Attribute;
-import sun.security.tools.KeyStoreUtil;
-import sun.security.tools.PathList;
-import sun.security.util.DerValue;
-import sun.security.x509.*;
+import j86.sun.security.pkcs.PKCS9Attribute;
+import j86.sun.security.tools.KeyStoreUtil;
+import j86.sun.security.tools.PathList;
+import j86.sun.security.util.DerValue;
+import j86.sun.security.x509.*;
 
-import static java.security.KeyStore.*;
-import static sun.security.tools.keytool.Main.Command.*;
-import static sun.security.tools.keytool.Main.Option.*;
+import static j86.java.security.KeyStore.*;
+import static j86.j86.sun.security.tools.keytool.Main.Command.*;
+import static j86.j86.sun.security.tools.keytool.Main.Option.*;
 
 /**
  * This tool manages keystores.
@@ -91,9 +91,9 @@ import static sun.security.tools.keytool.Main.Option.*;
  * @author Jan Luehe
  *
  *
- * @see java.security.KeyStore
- * @see sun.security.provider.KeyProtector
- * @see sun.security.provider.JavaKeyStore
+ * @see j86.java.security.KeyStore
+ * @see j86.sun.security.provider.KeyProtector
+ * @see j86.sun.security.provider.JavaKeyStore
  *
  * @since 1.2
  */
@@ -317,9 +317,9 @@ public final class Main {
     private final String keyAlias = "mykey";
 
     // for i18n
-    private static final java.util.ResourceBundle rb =
-        java.util.ResourceBundle.getBundle(
-            "sun.security.tools.keytool.Resources");
+    private static final j86.java.util.ResourceBundle rb =
+        j86.java.util.ResourceBundle.getBundle(
+            "j86.j86.sun.security.tools.keytool.Resources");
     private static final Collator collator = Collator.getInstance();
     static {
         // this is for case insensitive string comparisons
@@ -1180,7 +1180,7 @@ public final class Main {
         X509CertInfo info = new X509CertInfo();
         info.set(X509CertInfo.VALIDITY, interval);
         info.set(X509CertInfo.SERIAL_NUMBER, new CertificateSerialNumber(
-                    new java.util.Random().nextInt() & 0x7fffffff));
+                    new j86.java.util.Random().nextInt() & 0x7fffffff));
         info.set(X509CertInfo.VERSION,
                     new CertificateVersion(CertificateVersion.V3));
         info.set(X509CertInfo.ALGORITHM_ID,
@@ -2510,7 +2510,7 @@ public final class Main {
 
         // Make new serial number
         certInfo.set(X509CertInfo.SERIAL_NUMBER, new CertificateSerialNumber(
-                    new java.util.Random().nextInt() & 0x7fffffff));
+                    new j86.java.util.Random().nextInt() & 0x7fffffff));
 
         // Set owner and issuer fields
         X500Name owner;
@@ -2920,7 +2920,7 @@ public final class Main {
                 if (v.length == 0) {
                     out.println(rb.getString(".Empty.value."));
                 } else {
-                    new sun.misc.HexDumpEncoder().encodeBuffer(ext.getExtensionValue(), out);
+                    new j86.sun.misc.HexDumpEncoder().encodeBuffer(ext.getExtensionValue(), out);
                     out.println();
                 }
             }
@@ -4155,7 +4155,7 @@ public final class Main {
     }
 }
 
-// This class is exactly the same as com.sun.tools.javac.util.Pair,
+// This class is exactly the same as com.j86.j86.sun.tools.javac.util.Pair,
 // it's copied here since the original one is not included in JRE.
 class Pair<A, B> {
 

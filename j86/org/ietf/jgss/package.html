@@ -66,11 +66,11 @@ questions.
     aware of. However, the default model in the Java platform will be
     that mechanism providers must obtain credentials only from the private
     or public credential sets associated with the
-    {@link javax.security.auth.Subject Subject} in the
+    {@link j86.javax.security.auth.Subject Subject} in the
     current access control context.  The Kerberos v5  
     mechanism will search for the required INITIATE and ACCEPT credentials 
-    ({@link javax.security.auth.kerberos.KerberosTicket KerberosTicket} and
-     {@link javax.security.auth.kerberos.KerberosKey KerberosKey}) in
+    ({@link j86.j86.javax.security.auth.kerberos.KerberosTicket KerberosTicket} and
+     {@link j86.j86.javax.security.auth.kerberos.KerberosKey KerberosKey}) in
     the private credential set where as some other mechanism might look
     in the public set or in both.  If the desired credential is not
     present in the appropriate sets of the current Subject, the GSS-API
@@ -85,11 +85,11 @@ questions.
     mechanism would succeed.<p>
 
     This model does require that a {@link
-    javax.security.auth.login JAAS login} be performed in order to
+    j86.j86.javax.security.auth.login JAAS login} be performed in order to
     authenticate and populate a Subject that the JGSS mechanism can later 
     utilize. However, applications have the ability to relax this
     restriction by means of a system property:
-    <code>javax.security.auth.useSubjectCredsOnly</code>. By default
+    <code>j86.javax.security.auth.useSubjectCredsOnly</code>. By default
     this system property will be assumed to be <code>true</code> (even when
     it is unset) indicating that providers must only use the credentials
     that are present in the current Subject. However, if this property is

@@ -22,10 +22,10 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.plaf.synth;
+package j86.j86.j86.javax.swing.plaf.synth;
 
-import javax.swing.*;
-import java.util.*;
+import j86.javax.swing.*;
+import j86.java.util.*;
 
 /**
  * An immutable transient object containing contextual information about

@@ -39,7 +39,7 @@
 
     <p>
       This document, together with the API documentation for modality-related
-      classes (such as <code>java.awt.Dialog</code>), briefly describes the new
+      classes (such as <code>j86.java.awt.Dialog</code>), briefly describes the new
       modality features and how to use them. It contains the following sections:
     </p><ul>
       <li><a href="#Definitions">Definitions</a></li>
@@ -87,13 +87,13 @@
       then all its owned windows and child components are also excluded.
     </p><p>
       <u>Scope of blocking (SB)</u> - the set of windows (instances of
-      <code>java.awt.Window</code> and all derived classes) that are blocked by 
+      <code>j86.java.awt.Window</code> and all derived classes) that are blocked by 
       the modal dialog while it is visible.
     </p><p>
      <blockquote><hr>
       <b>Note</b>: Everywhere in this document the notion of "window" is equal
       to a top-level window in the Java programming language &mdash; in other words
-      an instance of <code>java.awt.Window</code> or any descendant class.
+      an instance of <code>j86.java.awt.Window</code> or any descendant class.
       <hr></blockquote>
 
     <a name="ModalityTypes"></a>
@@ -356,7 +356,7 @@
     </p><h3>Platform support</h3>
 
     <p>
-      Two <code>java.awt.Toolkit</code> methods allow you to check whether
+      Two <code>j86.java.awt.Toolkit</code> methods allow you to check whether
       the current platform supports specific modality features:
       </p><ul>
         <li><code>isModalityTypeSupported(modalityType)</code><br>

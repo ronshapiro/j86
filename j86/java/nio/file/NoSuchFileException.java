@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.nio.file;
+package j86.j86.java.nio.file;
 
 /**
  * Checked exception thrown when an attempt is made to access a file that does

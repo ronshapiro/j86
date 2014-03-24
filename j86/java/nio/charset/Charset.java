@@ -23,28 +23,28 @@
  * questions.
  */
 
-package java.nio.charset;
+package j86.j86.java.nio.charset;
 
-import java.nio.ByteBuffer;
-import java.nio.CharBuffer;
-import java.nio.charset.spi.CharsetProvider;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Locale;
-import java.util.Map;
-import java.util.NoSuchElementException;
-import java.util.Set;
-import java.util.ServiceLoader;
-import java.util.ServiceConfigurationError;
-import java.util.SortedMap;
-import java.util.TreeMap;
-import sun.misc.ASCIICaseInsensitiveComparator;
-import sun.nio.cs.StandardCharsets;
-import sun.nio.cs.ThreadLocalCoders;
-import sun.security.action.GetPropertyAction;
+import j86.java.nio.ByteBuffer;
+import j86.java.nio.CharBuffer;
+import j86.j86.j86.java.nio.charset.spi.CharsetProvider;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.util.Collections;
+import j86.java.util.HashSet;
+import j86.java.util.Iterator;
+import j86.java.util.Locale;
+import j86.java.util.Map;
+import j86.java.util.NoSuchElementException;
+import j86.java.util.Set;
+import j86.java.util.ServiceLoader;
+import j86.java.util.ServiceConfigurationError;
+import j86.java.util.SortedMap;
+import j86.java.util.TreeMap;
+import j86.sun.misc.ASCIICaseInsensitiveComparator;
+import j86.j86.j86.sun.nio.cs.StandardCharsets;
+import j86.j86.j86.sun.nio.cs.ThreadLocalCoders;
+import j86.sun.security.action.GetPropertyAction;
 
 
 /**
@@ -59,7 +59,7 @@ import sun.security.action.GetPropertyAction;
  * constructing a map that contains every charset for which support is
  * available in the current Java virtual machine.  Support for new charsets can
  * be added via the service-provider interface defined in the {@link
- * java.nio.charset.spi.CharsetProvider} class.
+ * j86.j86.j86.java.nio.charset.spi.CharsetProvider} class.
  *
  * <p> All of the methods defined in this class are safe for use by multiple
  * concurrent threads.
@@ -115,8 +115,8 @@ import sun.security.action.GetPropertyAction;
  * compatibility with previous versions of the Java platform.</a>  A charset's
  * historical name is either its canonical name or one of its aliases.  The
  * historical name is returned by the <tt>getEncoding()</tt> methods of the
- * {@link java.io.InputStreamReader#getEncoding InputStreamReader} and {@link
- * java.io.OutputStreamWriter#getEncoding OutputStreamWriter} classes.
+ * {@link j86.java.io.InputStreamReader#getEncoding InputStreamReader} and {@link
+ * j86.java.io.OutputStreamWriter#getEncoding OutputStreamWriter} classes.
  *
  * <p><a name="iana"> </a>If a charset listed in the <a
  * href="http://www.iana.org/assignments/character-sets"><i>IANA Charset
@@ -264,8 +264,8 @@ import sun.security.action.GetPropertyAction;
  *
  * @see CharsetDecoder
  * @see CharsetEncoder
- * @see java.nio.charset.spi.CharsetProvider
- * @see java.lang.Character
+ * @see j86.j86.j86.java.nio.charset.spi.CharsetProvider
+ * @see j86.java.lang.Character
  */
 
 public abstract class Charset
@@ -279,10 +279,10 @@ public abstract class Charset
     static boolean atBugLevel(String bl) {              // package-private
         String level = bugLevel;
         if (level == null) {
-            if (!sun.misc.VM.isBooted())
+            if (!j86.sun.misc.VM.isBooted())
                 return false;
             bugLevel = level = AccessController.doPrivileged(
-                new GetPropertyAction("sun.nio.cs.bugLevel", ""));
+                new GetPropertyAction("j86.j86.j86.sun.nio.cs.bugLevel", ""));
         }
         return level.equals(bl);
     }
@@ -394,7 +394,7 @@ public abstract class Charset
         // that loader to be prematurely initialized with incomplete
         // information.
         //
-        if (!sun.misc.VM.isBooted())
+        if (!j86.sun.misc.VM.isBooted())
             return null;
 
         if (gate.get() != null)
@@ -432,7 +432,7 @@ public abstract class Charset
                            public CharsetProvider run() {
                                 try {
                                     Class<?> epc
-                                        = Class.forName("sun.nio.cs.ext.ExtendedCharsets");
+                                        = Class.forName("j86.j86.j86.j86.sun.nio.cs.ext.ExtendedCharsets");
                                     return (CharsetProvider)epc.newInstance();
                                 } catch (ClassNotFoundException x) {
                                     // Extended charsets not available
@@ -793,7 +793,7 @@ public abstract class Charset
      * <p> This method always replaces malformed-input and unmappable-character
      * sequences with this charset's default replacement byte array.  In order
      * to detect such sequences, use the {@link
-     * CharsetDecoder#decode(java.nio.ByteBuffer)} method directly.  </p>
+     * CharsetDecoder#decode(j86.java.nio.ByteBuffer)} method directly.  </p>
      *
      * @param  bb  The byte buffer to be decoded
      *
@@ -829,7 +829,7 @@ public abstract class Charset
      * <p> This method always replaces malformed-input and unmappable-character
      * sequences with this charset's default replacement string.  In order to
      * detect such sequences, use the {@link
-     * CharsetEncoder#encode(java.nio.CharBuffer)} method directly.  </p>
+     * CharsetEncoder#encode(j86.java.nio.CharBuffer)} method directly.  </p>
      *
      * @param  cb  The char buffer to be encoded
      *

@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.java2d.pipe;
+package j86.j86.sun.java2d.pipe;
 
-import java.awt.geom.PathIterator;
-import java.awt.Rectangle;
+import j86.j86.java.awt.geom.PathIterator;
+import j86.java.awt.Rectangle;
 
 /**
  * This class clips a SpanIterator to a Region and outputs the
@@ -373,7 +373,7 @@ public class RegionClipSpanIterator implements SpanIterator {
      * The definition of the structure whose pointer is returned by
      * this method is defined in:
      * <pre>
-     *     src/share/native/sun/java2d/pipe/SpanIterator.h
+     *     src/share/native/j86.j86.sun.java2d.pipe/SpanIterator.h
      * </pre>
      */
     public long getNativeIterator() {

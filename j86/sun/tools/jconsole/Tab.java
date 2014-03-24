@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.tools.jconsole;
+package j86.sun.tools.jconsole;
 
-import java.awt.*;
-import javax.swing.*;
+import j86.java.awt.*;
+import j86.javax.swing.*;
 
 public abstract class Tab extends JPanel {
     private String name;

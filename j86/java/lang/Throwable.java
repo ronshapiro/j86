@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.lang;
-import  java.io.*;
-import  java.util.*;
+package j86.java.lang;
+import  j86.java.io.*;
+import  j86.java.util.*;
 
 /**
  * The {@code Throwable} class is the superclass of all errors and
@@ -40,8 +40,8 @@ import  java.util.*;
  * subclass of either {@link RuntimeException} or {@link Error} are
  * regarded as checked exceptions.
  *
- * <p>Instances of two subclasses, {@link java.lang.Error} and
- * {@link java.lang.Exception}, are conventionally used to indicate
+ * <p>Instances of two subclasses, {@link j86.java.lang.Error} and
+ * {@link j86.java.lang.Exception}, are conventionally used to indicate
  * that exceptional situations have occurred. Typically, these instances
  * are freshly created in the context of the exceptional situation so
  * as to include relevant information (such as stack trace data).
@@ -74,10 +74,10 @@ import  java.util.*;
  * <p>A second reason that a throwable may have a cause is that the method
  * that throws it must conform to a general-purpose interface that does not
  * permit the method to throw the cause directly.  For example, suppose
- * a persistent collection conforms to the {@link java.util.Collection
+ * a persistent collection conforms to the {@link j86.java.util.Collection
  * Collection} interface, and that its persistence is implemented atop
- * {@code java.io}.  Suppose the internals of the {@code add} method
- * can throw an {@link java.io.IOException IOException}.  The implementation
+ * {@code j86.java.io}.  Suppose the internals of the {@code add} method
+ * can throw an {@link j86.java.io.IOException IOException}.  The implementation
  * can communicate the details of the {@code IOException} to its caller
  * while conforming to the {@code Collection} interface by wrapping the
  * {@code IOException} in an appropriate unchecked exception.  (The
@@ -210,7 +210,7 @@ public class Throwable implements Serializable {
     private StackTraceElement[] stackTrace = UNASSIGNED_STACK;
 
     // Setting this static field introduces an acceptable
-    // initialization dependency on a few java.util classes.
+    // initialization dependency on a few j86.java.util classes.
     private static final List<Throwable> SUPPRESSED_SENTINEL =
         Collections.unmodifiableList(new ArrayList<Throwable>(0));
 
@@ -295,7 +295,7 @@ public class Throwable implements Serializable {
      * typically contains the class and detail message of {@code cause}).
      * This constructor is useful for throwables that are little more than
      * wrappers for other throwables (for example, {@link
-     * java.security.PrivilegedActionException}).
+     * j86.java.security.PrivilegedActionException}).
      *
      * <p>The {@link #fillInStackTrace()} method is called to initialize
      * the stack trace data in the newly created throwable.
@@ -492,7 +492,7 @@ public class Throwable implements Serializable {
      * information depends on the implementation, but the following
      * example may be regarded as typical:
      * <blockquote><pre>
-     * java.lang.NullPointerException
+     * j86.java.lang.NullPointerException
      *         at MyClass.mash(MyClass.java:9)
      *         at MyClass.crunch(MyClass.java:6)
      *         at MyClass.main(MyClass.java:3)
@@ -592,7 +592,7 @@ public class Throwable implements Serializable {
      * regarded as typical:
      *
      * <pre>
-     * Exception in thread "main" java.lang.Exception: Something happened
+     * Exception in thread "main" j86.java.lang.Exception: Something happened
      *  at Foo.bar(Foo.java:10)
      *  at Foo.main(Foo.java:5)
      *  Suppressed: Resource$CloseFailException: Resource ID = 0
@@ -607,7 +607,7 @@ public class Throwable implements Serializable {
      * <p>An exception can have both a cause and one or more suppressed
      * exceptions:
      * <pre>
-     * Exception in thread "main" java.lang.Exception: Main block
+     * Exception in thread "main" j86.java.lang.Exception: Main block
      *  at Foo3.main(Foo3.java:7)
      *  Suppressed: Resource$CloseFailException: Resource ID = 2
      *          at Resource.close(Resource.java:26)
@@ -615,17 +615,17 @@ public class Throwable implements Serializable {
      *  Suppressed: Resource$CloseFailException: Resource ID = 1
      *          at Resource.close(Resource.java:26)
      *          at Foo3.main(Foo3.java:5)
-     * Caused by: java.lang.Exception: I did it
+     * Caused by: j86.java.lang.Exception: I did it
      *  at Foo3.main(Foo3.java:8)
      * </pre>
      * Likewise, a suppressed exception can have a cause:
      * <pre>
-     * Exception in thread "main" java.lang.Exception: Main block
+     * Exception in thread "main" j86.java.lang.Exception: Main block
      *  at Foo4.main(Foo4.java:6)
      *  Suppressed: Resource2$CloseFailException: Resource ID = 1
      *          at Resource2.close(Resource2.java:20)
      *          at Foo4.main(Foo4.java:5)
-     *  Caused by: java.lang.Exception: Rats, you caught me
+     *  Caused by: j86.java.lang.Exception: Rats, you caught me
      *          at Resource2$CloseFailException.&lt;init&gt;(Resource2.java:45)
      *          ... 2 more
      * </pre>
@@ -775,7 +775,7 @@ public class Throwable implements Serializable {
      * writable}, calling this method has no effect.
      *
      * @return  a reference to this {@code Throwable} instance.
-     * @see     java.lang.Throwable#printStackTrace()
+     * @see     j86.java.lang.Throwable#printStackTrace()
      */
     public synchronized Throwable fillInStackTrace() {
         if (stackTrace != null ||

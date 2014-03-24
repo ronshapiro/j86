@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.awt.im;
+package j86.j86.java.awt.im;
 
-import java.awt.font.TextAttribute;
-import java.util.Map;
+import j86.j86.java.awt.font.TextAttribute;
+import j86.java.util.Map;
 
 /**
 * An InputMethodHighlight is used to describe the highlight
@@ -39,7 +39,7 @@ import java.util.Map;
 * abstract level; it may or may not provide the description at the concrete
 * level.
 * If no concrete style is provided, a renderer should use
-* {@link java.awt.Toolkit#mapInputMethodHighlight} to map to a concrete style.
+* {@link j86.java.awt.Toolkit#mapInputMethodHighlight} to map to a concrete style.
 * <p>
 * The abstract description consists of three fields: <code>selected</code>,
 * <code>state</code>, and <code>variation</code>.
@@ -59,10 +59,10 @@ import java.util.Map;
 *
 * InputMethodHighlight instances are typically used as attribute values
 * returned from AttributedCharacterIterator for the INPUT_METHOD_HIGHLIGHT
-* attribute. They may be wrapped into {@link java.text.Annotation Annotation}
+* attribute. They may be wrapped into {@link j86.java.text.Annotation Annotation}
 * instances to indicate separate text segments.
 *
-* @see java.text.AttributedCharacterIterator
+* @see j86.java.text.AttributedCharacterIterator
 * @since 1.2
 */
 

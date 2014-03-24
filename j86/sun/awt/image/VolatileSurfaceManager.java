@@ -23,21 +23,21 @@
  * questions.
  */
 
-package sun.awt.image;
+package j86.j86.j86.sun.awt.image;
 
-import java.awt.Color;
-import java.awt.Graphics;
-import java.awt.GraphicsConfiguration;
-import java.awt.GraphicsEnvironment;
-import java.awt.ImageCapabilities;
-import java.awt.image.BufferedImage;
-import java.awt.image.VolatileImage;
-import sun.awt.DisplayChangedListener;
-import sun.awt.image.SunVolatileImage;
-import sun.java2d.SunGraphicsEnvironment;
-import sun.java2d.SurfaceData;
-import sun.java2d.loops.CompositeType;
-import static sun.java2d.pipe.hw.AccelSurface.*;
+import j86.java.awt.Color;
+import j86.java.awt.Graphics;
+import j86.java.awt.GraphicsConfiguration;
+import j86.java.awt.GraphicsEnvironment;
+import j86.java.awt.ImageCapabilities;
+import j86.j86.j86.java.awt.image.BufferedImage;
+import j86.j86.j86.java.awt.image.VolatileImage;
+import j86.sun.awt.DisplayChangedListener;
+import j86.j86.j86.sun.awt.image.SunVolatileImage;
+import j86.sun.java2d.SunGraphicsEnvironment;
+import j86.sun.java2d.SurfaceData;
+import j86.j86.sun.java2d.loops.CompositeType;
+import static j86.j86.j86.sun.java2d.pipe.hw.AccelSurface.*;
 
 /**
  * This SurfaceManager variant manages an accelerated volatile surface, if it
@@ -193,7 +193,7 @@ public abstract class VolatileSurfaceManager
                     // let's release it now (it can always be restored later)
                     sdBackup = null;
                     returnCode = VolatileImage.IMAGE_RESTORED;
-                } catch (sun.java2d.InvalidPipeException e) {
+                } catch (j86.sun.java2d.InvalidPipeException e) {
                     // Set the current SurfaceData to software version so that
                     // drawing can continue.  Note that we still have
                     // the lostAccelSurface flag set so that we will continue
@@ -234,7 +234,7 @@ public abstract class VolatileSurfaceManager
     /**
      * Returns true if rendering data was lost since the last validate call.
      *
-     * @see java.awt.image.VolatileImage#contentsLost
+     * @see j86.j86.j86.java.awt.image.VolatileImage#contentsLost
      */
     public boolean contentsLost() {
         return lostSurface;

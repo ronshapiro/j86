@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.jvmstat.perfdata.monitor;
+package j86.sun.jvmstat.perfdata.monitor;
 
-import java.util.List;
+import j86.java.util.List;
 
 /**
  * Immutable class containing the list of inserted and deleted

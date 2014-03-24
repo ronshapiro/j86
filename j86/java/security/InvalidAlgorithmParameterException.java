@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.security;
+package j86.java.security;
 
 /**
  * This is the exception for invalid or inappropriate algorithm parameters.
@@ -32,7 +32,7 @@ package java.security;
  *
  *
  * @see AlgorithmParameters
- * @see java.security.spec.AlgorithmParameterSpec
+ * @see j86.j86.java.security.spec.AlgorithmParameterSpec
  *
  * @since 1.2
  */

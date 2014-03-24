@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.reflect.annotation;
+package j86.j86.sun.reflect.annotation;
 
 /**
  * An instance of this class is stored in an AnnotationInvocationHandler's
@@ -36,6 +36,6 @@ package sun.reflect.annotation;
  * @author  Josh Bloch
  * @since   1.5
  */
-public abstract class ExceptionProxy implements java.io.Serializable {
+public abstract class ExceptionProxy implements j86.java.io.Serializable {
     protected abstract RuntimeException generateException();
 }

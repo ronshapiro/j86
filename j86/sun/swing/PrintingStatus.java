@@ -22,20 +22,20 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.swing;
+package j86.sun.swing;
 
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
-import java.awt.print.PageFormat;
-import java.awt.print.Printable;
-import java.awt.print.PrinterException;
-import java.awt.print.PrinterJob;
-import java.text.MessageFormat;
-import java.util.concurrent.atomic.AtomicBoolean;
-import java.lang.reflect.InvocationTargetException;
+import j86.javax.swing.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.ActionEvent;
+import j86.j86.java.awt.event.WindowAdapter;
+import j86.j86.java.awt.event.WindowEvent;
+import j86.j86.java.awt.print.PageFormat;
+import j86.j86.java.awt.print.Printable;
+import j86.j86.java.awt.print.PrinterException;
+import j86.j86.java.awt.print.PrinterJob;
+import j86.java.text.MessageFormat;
+import j86.j86.j86.java.util.concurrent.atomic.AtomicBoolean;
+import j86.j86.j86.java.lang.reflect.InvocationTargetException;
 
 /**
  * The {@code PrintingStatus} provides a dialog that displays progress

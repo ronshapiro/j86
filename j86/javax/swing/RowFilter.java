@@ -22,16 +22,16 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing;
+package j86.javax.swing;
 
-import java.util.ArrayList;
-import java.math.BigDecimal;
-import java.math.BigInteger;
-import java.util.Date;
-import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-import java.util.regex.PatternSyntaxException;
+import j86.java.util.ArrayList;
+import j86.java.math.BigDecimal;
+import j86.java.math.BigInteger;
+import j86.java.util.Date;
+import j86.java.util.List;
+import j86.j86.java.util.regex.Matcher;
+import j86.j86.java.util.regex.Pattern;
+import j86.j86.java.util.regex.PatternSyntaxException;
 
 /**
  * <code>RowFilter</code> is used to filter out entries from the
@@ -91,7 +91,7 @@ import java.util.regex.PatternSyntaxException;
  * @param <M> the type of the model; for example <code>PersonModel</code>
  * @param <I> the type of the identifier; when using
  *            <code>TableRowSorter</code> this will be <code>Integer</code>
- * @see javax.swing.table.TableRowSorter
+ * @see j86.j86.javax.swing.table.TableRowSorter
  * @since 1.6
  */
 public abstract class RowFilter<M,I> {
@@ -151,12 +151,12 @@ public abstract class RowFilter<M,I> {
      *   RowFilter.regexFilter("^a");
      * </pre>
      * <p>
-     * The returned filter uses {@link java.util.regex.Matcher#find}
+     * The returned filter uses {@link j86.j86.java.util.regex.Matcher#find}
      * to test for inclusion.  To test for exact matches use the
      * characters '^' and '$' to match the beginning and end of the
      * string respectively.  For example, "^foo$" includes only rows whose
      * string is exactly "foo" and not, for example, "food".  See
-     * {@link java.util.regex.Pattern} for a complete description of
+     * {@link j86.j86.java.util.regex.Pattern} for a complete description of
      * the supported regular-expression constructs.
      *
      * @param regex the regular expression to filter on
@@ -169,7 +169,7 @@ public abstract class RowFilter<M,I> {
      *         are &lt; 0
      * @throws PatternSyntaxException if <code>regex</code> is
      *         not a valid regular expression.
-     * @see java.util.regex.Pattern
+     * @see j86.j86.java.util.regex.Pattern
      */
     public static <M,I> RowFilter<M,I> regexFilter(String regex,
                                                        int... indices) {
@@ -196,8 +196,8 @@ public abstract class RowFilter<M,I> {
      * @throws IllegalArgumentException if any of the <code>indices</code>
      *         are &lt; 0 or <code>type</code> is
      *         <code>null</code>
-     * @see java.util.Calendar
-     * @see java.util.Date
+     * @see j86.java.util.Calendar
+     * @see j86.java.util.Date
      */
     public static <M,I> RowFilter<M,I> dateFilter(ComparisonType type,
                                             Date date, int... indices) {
@@ -246,7 +246,7 @@ public abstract class RowFilter<M,I> {
      *         are <code>null</code>
      * @throws NullPointerException if <code>filters</code> is null
      * @return a <code>RowFilter</code> implementing the specified criteria
-     * @see java.util.Arrays#asList
+     * @see j86.java.util.Arrays#asList
      */
     public static <M,I> RowFilter<M,I> orFilter(
             Iterable<? extends RowFilter<? super M, ? super I>> filters) {
@@ -272,7 +272,7 @@ public abstract class RowFilter<M,I> {
      * @throws IllegalArgumentException if any of the filters
      *         are <code>null</code>
      * @throws NullPointerException if <code>filters</code> is null
-     * @see java.util.Arrays#asList
+     * @see j86.java.util.Arrays#asList
      */
     public static <M,I> RowFilter<M,I> andFilter(
             Iterable<? extends RowFilter<? super M, ? super I>> filters) {
@@ -324,8 +324,8 @@ public abstract class RowFilter<M,I> {
      * @param <M> the type of the model; for example <code>PersonModel</code>
      * @param <I> the type of the identifier; when using
      *            <code>TableRowSorter</code> this will be <code>Integer</code>
-     * @see javax.swing.RowFilter
-     * @see javax.swing.DefaultRowSorter#setRowFilter(javax.swing.RowFilter)
+     * @see j86.javax.swing.RowFilter
+     * @see j86.javax.swing.DefaultRowSorter#setRowFilter(javax.swing.RowFilter)
      * @since 1.6
      */
     public static abstract class Entry<M, I> {

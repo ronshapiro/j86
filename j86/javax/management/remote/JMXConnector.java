@@ -23,16 +23,16 @@
  * questions.
  */
 
-package javax.management.remote;
+package j86.j86.javax.management.remote;
 
-import java.io.Closeable;
-import java.io.IOException;
-import java.util.Map;
-import javax.management.ListenerNotFoundException;
-import javax.management.MBeanServerConnection;
-import javax.management.NotificationFilter;
-import javax.management.NotificationListener;
-import javax.security.auth.Subject;
+import j86.java.io.Closeable;
+import j86.java.io.IOException;
+import j86.java.util.Map;
+import j86.javax.management.ListenerNotFoundException;
+import j86.javax.management.MBeanServerConnection;
+import j86.javax.management.NotificationFilter;
+import j86.javax.management.NotificationListener;
+import j86.javax.security.auth.Subject;
 
 /**
  * <p>The client end of a JMX API connector.  An object of this type can
@@ -225,7 +225,7 @@ public interface JMXConnector extends Closeable {
      * null.
      *
      * @see #removeConnectionNotificationListener
-     * @see javax.management.NotificationBroadcaster#addNotificationListener
+     * @see j86.javax.management.NotificationBroadcaster#addNotificationListener
      */
     public void
         addConnectionNotificationListener(NotificationListener listener,
@@ -249,7 +249,7 @@ public interface JMXConnector extends Closeable {
      * @see #removeConnectionNotificationListener(NotificationListener,
      * NotificationFilter, Object)
      * @see #addConnectionNotificationListener
-     * @see javax.management.NotificationEmitter#removeNotificationListener
+     * @see j86.javax.management.NotificationEmitter#removeNotificationListener
      */
     public void
         removeConnectionNotificationListener(NotificationListener listener)
@@ -273,7 +273,7 @@ public interface JMXConnector extends Closeable {
      *
      * @see #removeConnectionNotificationListener(NotificationListener)
      * @see #addConnectionNotificationListener
-     * @see javax.management.NotificationEmitter#removeNotificationListener
+     * @see j86.javax.management.NotificationEmitter#removeNotificationListener
      */
     public void removeConnectionNotificationListener(NotificationListener l,
                                                      NotificationFilter f,
@@ -289,7 +289,7 @@ public interface JMXConnector extends Closeable {
      * @return the unique ID of this connection.  This is the same as
      * the ID that the connector server includes in its {@link
      * JMXConnectionNotification}s.  The {@link
-     * javax.management.remote package description} describes the
+     * j86.j86.javax.management.remote package description} describes the
      * conventions for connection IDs.
      *
      * @exception IOException if the connection ID cannot be obtained,

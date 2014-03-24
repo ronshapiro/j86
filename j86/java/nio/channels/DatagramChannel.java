@@ -23,16 +23,16 @@
  * questions.
  */
 
-package java.nio.channels;
+package j86.j86.java.nio.channels;
 
-import java.io.IOException;
-import java.net.ProtocolFamily;
-import java.net.DatagramSocket;
-import java.net.SocketOption;
-import java.net.SocketAddress;
-import java.nio.ByteBuffer;
-import java.nio.channels.spi.AbstractSelectableChannel;
-import java.nio.channels.spi.SelectorProvider;
+import j86.java.io.IOException;
+import j86.java.net.ProtocolFamily;
+import j86.java.net.DatagramSocket;
+import j86.java.net.SocketOption;
+import j86.java.net.SocketAddress;
+import j86.java.nio.ByteBuffer;
+import j86.j86.j86.java.nio.channels.spi.AbstractSelectableChannel;
+import j86.j86.j86.java.nio.channels.spi.SelectorProvider;
 
 /**
  * A selectable channel for datagram-oriented sockets.
@@ -45,8 +45,8 @@ import java.nio.channels.spi.SelectorProvider;
  * connected, by invoking its {@link #connect connect} method, in order to
  * avoid the overhead of the security checks are otherwise performed as part of
  * every send and receive operation.  A datagram channel must be connected in
- * order to use the {@link #read(java.nio.ByteBuffer) read} and {@link
- * #write(java.nio.ByteBuffer) write} methods, since those methods do not
+ * order to use the {@link #read(j86.java.nio.ByteBuffer) read} and {@link
+ * #write(j86.java.nio.ByteBuffer) write} methods, since those methods do not
  * accept or return socket addresses.
  *
  * <p> Once connected, a datagram channel remains connected until it is
@@ -63,37 +63,37 @@ import java.nio.channels.spi.SelectorProvider;
  *     <th>Description</th>
  *   </tr>
  *   <tr>
- *     <td> {@link java.net.StandardSocketOptions#SO_SNDBUF SO_SNDBUF} </td>
+ *     <td> {@link j86.java.net.StandardSocketOptions#SO_SNDBUF SO_SNDBUF} </td>
  *     <td> The size of the socket send buffer </td>
  *   </tr>
  *   <tr>
- *     <td> {@link java.net.StandardSocketOptions#SO_RCVBUF SO_RCVBUF} </td>
+ *     <td> {@link j86.java.net.StandardSocketOptions#SO_RCVBUF SO_RCVBUF} </td>
  *     <td> The size of the socket receive buffer </td>
  *   </tr>
  *   <tr>
- *     <td> {@link java.net.StandardSocketOptions#SO_REUSEADDR SO_REUSEADDR} </td>
+ *     <td> {@link j86.java.net.StandardSocketOptions#SO_REUSEADDR SO_REUSEADDR} </td>
  *     <td> Re-use address </td>
  *   </tr>
  *   <tr>
- *     <td> {@link java.net.StandardSocketOptions#SO_BROADCAST SO_BROADCAST} </td>
+ *     <td> {@link j86.java.net.StandardSocketOptions#SO_BROADCAST SO_BROADCAST} </td>
  *     <td> Allow transmission of broadcast datagrams </td>
  *   </tr>
  *   <tr>
- *     <td> {@link java.net.StandardSocketOptions#IP_TOS IP_TOS} </td>
+ *     <td> {@link j86.java.net.StandardSocketOptions#IP_TOS IP_TOS} </td>
  *     <td> The Type of Service (ToS) octet in the Internet Protocol (IP) header </td>
  *   </tr>
  *   <tr>
- *     <td> {@link java.net.StandardSocketOptions#IP_MULTICAST_IF IP_MULTICAST_IF} </td>
+ *     <td> {@link j86.java.net.StandardSocketOptions#IP_MULTICAST_IF IP_MULTICAST_IF} </td>
  *     <td> The network interface for Internet Protocol (IP) multicast datagrams </td>
  *   </tr>
  *   <tr>
- *     <td> {@link java.net.StandardSocketOptions#IP_MULTICAST_TTL
+ *     <td> {@link j86.java.net.StandardSocketOptions#IP_MULTICAST_TTL
  *       IP_MULTICAST_TTL} </td>
  *     <td> The <em>time-to-live</em> for Internet Protocol (IP) multicast
  *       datagrams </td>
  *   </tr>
  *   <tr>
- *     <td> {@link java.net.StandardSocketOptions#IP_MULTICAST_LOOP
+ *     <td> {@link j86.java.net.StandardSocketOptions#IP_MULTICAST_LOOP
  *       IP_MULTICAST_LOOP} </td>
  *     <td> Loopback for Internet Protocol (IP) multicast datagrams </td>
  *   </tr>
@@ -129,9 +129,9 @@ public abstract class DatagramChannel
      * Opens a datagram channel.
      *
      * <p> The new channel is created by invoking the {@link
-     * java.nio.channels.spi.SelectorProvider#openDatagramChannel()
+     * j86.j86.j86.java.nio.channels.spi.SelectorProvider#openDatagramChannel()
      * openDatagramChannel} method of the system-wide default {@link
-     * java.nio.channels.spi.SelectorProvider} object.  The channel will not be
+     * j86.j86.j86.java.nio.channels.spi.SelectorProvider} object.  The channel will not be
      * connected.
      *
      * <p> The {@link ProtocolFamily ProtocolFamily} of the channel's socket
@@ -158,9 +158,9 @@ public abstract class DatagramChannel
      * that this channel will join.
      *
      * <p> The new channel is created by invoking the {@link
-     * java.nio.channels.spi.SelectorProvider#openDatagramChannel(ProtocolFamily)
+     * j86.j86.j86.java.nio.channels.spi.SelectorProvider#openDatagramChannel(ProtocolFamily)
      * openDatagramChannel} method of the system-wide default {@link
-     * java.nio.channels.spi.SelectorProvider} object.  The channel will not be
+     * j86.j86.j86.java.nio.channels.spi.SelectorProvider} object.  The channel will not be
      * connected.
      *
      * @param   family
@@ -171,7 +171,7 @@ public abstract class DatagramChannel
      * @throws  UnsupportedOperationException
      *          If the specified protocol family is not supported. For example,
      *          suppose the parameter is specified as {@link
-     *          java.net.StandardProtocolFamily#INET6 StandardProtocolFamily.INET6}
+     *          j86.java.net.StandardProtocolFamily#INET6 StandardProtocolFamily.INET6}
      *          but IPv6 is not enabled on the platform.
      * @throws  IOException
      *          If an I/O error occurs
@@ -230,7 +230,7 @@ public abstract class DatagramChannel
      * Retrieves a datagram socket associated with this channel.
      *
      * <p> The returned object will not declare any public methods that are not
-     * declared in the {@link java.net.DatagramSocket} class.  </p>
+     * declared in the {@link j86.java.net.DatagramSocket} class.  </p>
      *
      * @return  A datagram socket associated with this channel
      */
@@ -254,11 +254,11 @@ public abstract class DatagramChannel
      * explicitly disconnected or until it is closed.
      *
      * <p> This method performs exactly the same security checks as the {@link
-     * java.net.DatagramSocket#connect connect} method of the {@link
-     * java.net.DatagramSocket} class.  That is, if a security manager has been
+     * j86.java.net.DatagramSocket#connect connect} method of the {@link
+     * j86.java.net.DatagramSocket} class.  That is, if a security manager has been
      * installed then this method verifies that its {@link
-     * java.lang.SecurityManager#checkAccept checkAccept} and {@link
-     * java.lang.SecurityManager#checkConnect checkConnect} methods permit
+     * j86.java.lang.SecurityManager#checkAccept checkAccept} and {@link
+     * j86.java.lang.SecurityManager#checkConnect checkConnect} methods permit
      * datagrams to be received from and sent to, respectively, the given
      * remote address.
      *
@@ -345,17 +345,17 @@ public abstract class DatagramChannel
      *
      * <p> The datagram is transferred into the given byte buffer starting at
      * its current position, as if by a regular {@link
-     * ReadableByteChannel#read(java.nio.ByteBuffer) read} operation.  If there
+     * ReadableByteChannel#read(j86.java.nio.ByteBuffer) read} operation.  If there
      * are fewer bytes remaining in the buffer than are required to hold the
      * datagram then the remainder of the datagram is silently discarded.
      *
      * <p> This method performs exactly the same security checks as the {@link
-     * java.net.DatagramSocket#receive receive} method of the {@link
-     * java.net.DatagramSocket} class.  That is, if the socket is not connected
+     * j86.java.net.DatagramSocket#receive receive} method of the {@link
+     * j86.java.net.DatagramSocket} class.  That is, if the socket is not connected
      * to a specific remote address and a security manager has been installed
      * then for each datagram received this method verifies that the source's
      * address and port number are permitted by the security manager's {@link
-     * java.lang.SecurityManager#checkAccept checkAccept} method.  The overhead
+     * j86.java.lang.SecurityManager#checkAccept checkAccept} method.  The overhead
      * of this security check can be avoided by first connecting the socket via
      * the {@link #connect connect} method.
      *
@@ -407,15 +407,15 @@ public abstract class DatagramChannel
      * address.
      *
      * <p> The datagram is transferred from the byte buffer as if by a regular
-     * {@link WritableByteChannel#write(java.nio.ByteBuffer) write} operation.
+     * {@link WritableByteChannel#write(j86.java.nio.ByteBuffer) write} operation.
      *
      * <p> This method performs exactly the same security checks as the {@link
-     * java.net.DatagramSocket#send send} method of the {@link
-     * java.net.DatagramSocket} class.  That is, if the socket is not connected
+     * j86.java.net.DatagramSocket#send send} method of the {@link
+     * j86.java.net.DatagramSocket} class.  That is, if the socket is not connected
      * to a specific remote address and a security manager has been installed
      * then for each datagram sent this method verifies that the target address
      * and port number are permitted by the security manager's {@link
-     * java.lang.SecurityManager#checkConnect checkConnect} method.  The
+     * j86.java.lang.SecurityManager#checkConnect checkConnect} method.  The
      * overhead of this security check can be avoided by first connecting the
      * socket via the {@link #connect connect} method.
      *
@@ -575,7 +575,7 @@ public abstract class DatagramChannel
      * called with the local address and {@code -1} as its arguments to see
      * if the operation is allowed. If the operation is not allowed,
      * a {@code SocketAddress} representing the
-     * {@link java.net.InetAddress#getLoopbackAddress loopback} address and the
+     * {@link j86.java.net.InetAddress#getLoopbackAddress loopback} address and the
      * local port of the channel's socket is returned.
      *
      * @return  The {@code SocketAddress} that the socket is bound to, or the

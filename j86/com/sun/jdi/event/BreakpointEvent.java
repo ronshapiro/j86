@@ -23,11 +23,11 @@
  * questions.
  */
 
-package com.sun.jdi.event;
+package j86.j86.com.sun.jdi.event;
 
-import com.sun.jdi.*;
+import j86.com.sun.jdi.*;
 
-import java.util.List;
+import j86.java.util.List;
 
 /**
  * Notification of a breakpoint in the target VM.
@@ -35,14 +35,14 @@ import java.util.List;
  * is generated before the code at its location is executed.
  * When a location
  * is reached which satisfies a currently enabled
- * {@link com.sun.jdi.request.BreakpointRequest breakpoint request},
+ * {@link j86.j86.com.sun.jdi.request.BreakpointRequest breakpoint request},
  * an {@link EventSet event set}
  * containing an instance of this class will be added
  * to the VM's event queue.
  *
  * @see EventQueue
  * @see VirtualMachine
- * @see com.sun.jdi.request.BreakpointRequest
+ * @see j86.j86.com.sun.jdi.request.BreakpointRequest
  *
  * @author Robert Field
  * @since  1.3

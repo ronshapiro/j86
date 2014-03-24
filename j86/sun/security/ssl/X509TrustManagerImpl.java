@@ -24,18 +24,18 @@
  */
 
 
-package sun.security.ssl;
+package j86.sun.security.ssl;
 
-import java.net.Socket;
-import javax.net.ssl.SSLSession;
+import j86.java.net.Socket;
+import j86.j86.javax.net.ssl.SSLSession;
 
-import java.util.*;
-import java.security.*;
-import java.security.cert.*;
-import javax.net.ssl.*;
+import j86.java.util.*;
+import j86.java.security.*;
+import j86.j86.java.security.cert.*;
+import j86.j86.javax.net.ssl.*;
 
-import sun.security.validator.*;
-import sun.security.util.HostnameChecker;
+import j86.sun.security.validator.*;
+import j86.sun.security.util.HostnameChecker;
 
 /**
  * This class implements the SunJSSE X.509 trust manager using the internal
@@ -440,7 +440,7 @@ final class X509TrustManagerImpl extends X509ExtendedTrustManager
     /*
      * Identify the peer by its certificate and hostname.
      *
-     * Lifted from sun.net.www.protocol.https.HttpsClient.
+     * Lifted from j86.j86.j86.j86.sun.net.www.protocol.https.HttpsClient.
      */
     static void checkIdentity(String hostname, X509Certificate cert,
             String algorithm) throws CertificateException {

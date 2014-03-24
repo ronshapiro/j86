@@ -23,7 +23,7 @@
  * questions.
  */
 
-package com.sun.security.auth;
+package j86.com.sun.security.auth;
 
 /**
  * <p> This class abstracts an NT security token
@@ -69,10 +69,10 @@ public class NTNumericCredential {
      * @return a string representation of this <code>NTNumericCredential</code>.
      */
     public String toString() {
-        java.text.MessageFormat form = new java.text.MessageFormat
-                (sun.security.util.ResourcesMgr.getString
+        j86.java.text.MessageFormat form = new java.text.MessageFormat
+                (j86.sun.security.util.ResourcesMgr.getString
                         ("NTNumericCredential.name",
-                        "sun.security.util.AuthResources"));
+                        "j86.sun.security.util.AuthResources"));
         Object[] source = {Long.toString(impersonationToken)};
         return form.format(source);
     }

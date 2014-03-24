@@ -22,22 +22,22 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.swing;
+package j86.sun.swing;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
-import java.io.*;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.java.beans.PropertyChangeEvent;
+import j86.java.beans.PropertyChangeListener;
+import j86.java.io.*;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
 
-import javax.swing.*;
-import javax.swing.border.*;
-import javax.swing.filechooser.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.border.*;
+import j86.j86.javax.swing.filechooser.*;
 
-import sun.awt.shell.*;
-import sun.awt.OSInfo;
+import j86.j86.sun.awt.shell.*;
+import j86.sun.awt.OSInfo;
 
 /**
  * <b>WARNING:</b> This class is an implementation detail and is only

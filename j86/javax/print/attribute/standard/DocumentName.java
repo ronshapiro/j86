@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.print.attribute.standard;
+package j86.j86.j86.javax.print.attribute.standard;
 
-import java.util.Locale;
+import j86.java.util.Locale;
 
-import javax.print.attribute.Attribute;
-import javax.print.attribute.TextSyntax;
-import javax.print.attribute.DocAttribute;
+import j86.j86.javax.print.attribute.Attribute;
+import j86.j86.javax.print.attribute.TextSyntax;
+import j86.j86.javax.print.attribute.DocAttribute;
 
 /**
  * Class DocumentName is a printing attribute class, a text attribute, that
@@ -100,7 +100,7 @@ public final class DocumentName extends TextSyntax implements DocAttribute {
      * For class DocumentName, the category is class DocumentName itself.
      *
      * @return  Printing attribute class (category), an instance of class
-     *          {@link java.lang.Class java.lang.Class}.
+     *          {@link j86.java.lang.Class java.lang.Class}.
      */
     public final Class<? extends Attribute> getCategory() {
         return DocumentName.class;

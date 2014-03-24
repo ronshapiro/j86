@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.net.ftp;
+package j86.j86.sun.net.ftp;
 
-import java.io.IOException;
+import j86.java.io.IOException;
 
 /**
  * This exception is thrown when an error is encountered during an

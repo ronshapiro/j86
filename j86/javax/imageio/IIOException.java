@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.imageio;
+package j86.javax.imageio;
 
-import java.io.IOException;
+import j86.java.io.IOException;
 
 /**
  * An exception class used for signaling run-time failure of reading

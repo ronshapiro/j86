@@ -23,11 +23,11 @@
  * questions.
  */
 
-package java.nio.channels;
+package j86.j86.java.nio.channels;
 
-import java.net.InetAddress;
-import java.net.NetworkInterface;
-import java.io.IOException;
+import j86.java.net.InetAddress;
+import j86.java.net.NetworkInterface;
+import j86.java.io.IOException;
 
 /**
  * A token representing the membership of an Internet Protocol (IP) multicast

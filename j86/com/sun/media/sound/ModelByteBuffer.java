@@ -22,16 +22,16 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.media.sound;
+package j86.com.sun.media.sound;
 
-import java.io.ByteArrayInputStream;
-import java.io.DataInputStream;
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.RandomAccessFile;
-import java.util.Collection;
+import j86.java.io.ByteArrayInputStream;
+import j86.java.io.DataInputStream;
+import j86.java.io.File;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.io.OutputStream;
+import j86.java.io.RandomAccessFile;
+import j86.java.util.Collection;
 
 /**
  * This class is a pointer to a binary array either in memory or on disk.

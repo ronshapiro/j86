@@ -23,17 +23,17 @@
  * questions.
  */
 
-package sun.security.provider;
+package j86.sun.security.provider;
 
-import java.net.URL;
-import java.util.*;
-import java.security.CodeSource;
-import java.security.Principal;
-import java.security.cert.Certificate;
-import java.lang.reflect.Constructor;
+import j86.java.net.URL;
+import j86.java.util.*;
+import j86.java.security.CodeSource;
+import j86.java.security.Principal;
+import j86.j86.java.security.cert.Certificate;
+import j86.j86.j86.java.lang.reflect.Constructor;
 
-import javax.security.auth.Subject;
-import sun.security.provider.PolicyParser.PrincipalEntry;
+import j86.javax.security.auth.Subject;
+import j86.sun.security.provider.PolicyParser.PrincipalEntry;
 
 /**
  * <p> This <code>SubjectCodeSource</code> class contains
@@ -43,24 +43,24 @@ import sun.security.provider.PolicyParser.PrincipalEntry;
  * (that represent a "subject" in a <code>Policy</code>).
  *
  */
-class SubjectCodeSource extends CodeSource implements java.io.Serializable {
+class SubjectCodeSource extends CodeSource implements j86.java.io.Serializable {
 
     private static final long serialVersionUID = 6039418085604715275L;
 
-    private static final java.util.ResourceBundle rb =
-        java.security.AccessController.doPrivileged
-        (new java.security.PrivilegedAction<java.util.ResourceBundle>() {
-            public java.util.ResourceBundle run() {
-                return (java.util.ResourceBundle.getBundle
-                        ("sun.security.util.AuthResources"));
+    private static final j86.java.util.ResourceBundle rb =
+        j86.java.security.AccessController.doPrivileged
+        (new j86.java.security.PrivilegedAction<j86.java.util.ResourceBundle>() {
+            public j86.java.util.ResourceBundle run() {
+                return (j86.java.util.ResourceBundle.getBundle
+                        ("j86.sun.security.util.AuthResources"));
             }
         });
 
     private Subject subject;
     private LinkedList<PrincipalEntry> principals;
     private static final Class<?>[] PARAMS = { String.class };
-    private static final sun.security.util.Debug debug =
-        sun.security.util.Debug.getInstance("auth", "\t[Auth Access]");
+    private static final j86.sun.security.util.Debug debug =
+        j86.sun.security.util.Debug.getInstance("auth", "\t[Auth Access]");
     private ClassLoader sysClassLoader;
 
     /**
@@ -95,8 +95,8 @@ class SubjectCodeSource extends CodeSource implements java.io.Serializable {
         this.principals = (principals == null ?
                 new LinkedList<PrincipalEntry>() :
                 new LinkedList<PrincipalEntry>(principals));
-        sysClassLoader = java.security.AccessController.doPrivileged
-        (new java.security.PrivilegedAction<ClassLoader>() {
+        sysClassLoader = j86.java.security.AccessController.doPrivileged
+        (new j86.java.security.PrivilegedAction<ClassLoader>() {
             public ClassLoader run() {
                     return ClassLoader.getSystemClassLoader();
             }
@@ -377,8 +377,8 @@ class SubjectCodeSource extends CodeSource implements java.io.Serializable {
             if (debug != null) {
                 final Subject finalSubject = getSubject();
                 returnMe = returnMe + "\n" +
-                        java.security.AccessController.doPrivileged
-                                (new java.security.PrivilegedAction<String>() {
+                        j86.java.security.AccessController.doPrivileged
+                                (new j86.java.security.PrivilegedAction<String>() {
                                 public String run() {
                                     return finalSubject.toString();
                                 }

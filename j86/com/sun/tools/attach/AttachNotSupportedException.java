@@ -23,16 +23,16 @@
  * questions.
  */
 
-package com.sun.tools.attach;
+package com.j86.sun.tools.attach;
 
-import com.sun.tools.attach.spi.AttachProvider;         // for javadoc
+import com.j86.sun.tools.attach.spi.AttachProvider;         // for javadoc
 
 /**
- * Thrown by {@link com.sun.tools.attach.VirtualMachine#attach
+ * Thrown by {@link com.j86.sun.tools.attach.VirtualMachine#attach
  * VirtalMachine.attach} when attempting to attach to a Java virtual machine
- * for which a compatible {@link com.sun.tools.attach.spi.AttachProvider
+ * for which a compatible {@link com.j86.sun.tools.attach.spi.AttachProvider
  * AttachProvider} does not exist. It is also thrown by {@link
- * com.sun.tools.attach.spi.AttachProvider#attachVirtualMachine
+ * com.j86.sun.tools.attach.spi.AttachProvider#attachVirtualMachine
  * AttachProvider.attachVirtualMachine} if the provider attempts to
  * attach to a Java virtual machine with which it not comptatible.
  */

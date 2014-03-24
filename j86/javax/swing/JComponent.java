@@ -22,49 +22,49 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing;
+package j86.javax.swing;
 
 
-import java.util.HashSet;
-import java.util.Hashtable;
-import java.util.Dictionary;
-import java.util.Enumeration;
-import java.util.Locale;
-import java.util.Vector;
-import java.util.EventListener;
-import java.util.Set;
-import java.util.Map;
-import java.util.HashMap;
+import j86.java.util.HashSet;
+import j86.java.util.Hashtable;
+import j86.java.util.Dictionary;
+import j86.java.util.Enumeration;
+import j86.java.util.Locale;
+import j86.java.util.Vector;
+import j86.java.util.EventListener;
+import j86.java.util.Set;
+import j86.java.util.Map;
+import j86.java.util.HashMap;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.awt.image.VolatileImage;
-import java.awt.Graphics2D;
-import java.awt.peer.LightweightPeer;
-import java.awt.dnd.DropTarget;
-import java.awt.font.FontRenderContext;
-import java.beans.PropertyChangeListener;
-import java.beans.VetoableChangeListener;
-import java.beans.VetoableChangeSupport;
-import java.beans.Transient;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.j86.j86.java.awt.image.VolatileImage;
+import j86.java.awt.Graphics2D;
+import j86.j86.java.awt.peer.LightweightPeer;
+import j86.j86.java.awt.dnd.DropTarget;
+import j86.j86.java.awt.font.FontRenderContext;
+import j86.java.beans.PropertyChangeListener;
+import j86.java.beans.VetoableChangeListener;
+import j86.java.beans.VetoableChangeSupport;
+import j86.java.beans.Transient;
 
-import java.applet.Applet;
+import j86.java.applet.Applet;
 
-import java.io.Serializable;
-import java.io.ObjectOutputStream;
-import java.io.ObjectInputStream;
-import java.io.IOException;
-import java.io.ObjectInputValidation;
-import java.io.InvalidObjectException;
+import j86.java.io.Serializable;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.IOException;
+import j86.java.io.ObjectInputValidation;
+import j86.java.io.InvalidObjectException;
 
-import javax.swing.border.*;
-import javax.swing.event.*;
-import javax.swing.plaf.*;
-import static javax.swing.ClientPropertyKey.*;
-import javax.accessibility.*;
+import j86.j86.javax.swing.border.*;
+import j86.j86.javax.swing.event.*;
+import j86.j86.javax.swing.plaf.*;
+import static j86.javax.swing.ClientPropertyKey.*;
+import j86.javax.accessibility.*;
 
-import sun.swing.SwingUtilities2;
-import sun.swing.UIClientPropertyKey;
+import j86.sun.swing.SwingUtilities2;
+import j86.sun.swing.UIClientPropertyKey;
 
 /**
  * The base class for all Swing components except top-level containers.
@@ -90,7 +90,7 @@ import sun.swing.UIClientPropertyKey;
  *     programmer or (optionally) selected by the user at runtime.
  *     The look and feel for each component is provided by a
  *     <em>UI delegate</em> -- an object that descends from
- *     {@link javax.swing.plaf.ComponentUI}.
+ *     {@link j86.j86.javax.swing.plaf.ComponentUI}.
  *     See <a
  * href="http://docs.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html">How
  *     to Set the Look and Feel</a>
@@ -164,8 +164,8 @@ import sun.swing.UIClientPropertyKey;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @see KeyStroke
  * @see Action
@@ -227,7 +227,7 @@ public abstract class JComponent extends Container implements Serializable,
             new StringBuilder("InputVerifierSourceKey");
 
     /* The following fields support set methods for the corresponding
-     * java.awt.Component properties.
+     * j86.java.awt.Component properties.
      */
     private boolean isAlignmentXSet;
     private float alignmentX;
@@ -356,7 +356,7 @@ public abstract class JComponent extends Container implements Serializable,
     /**
      * Temporary rectangles.
      */
-    private static java.util.List<Rectangle> tempRectangles = new java.util.ArrayList<Rectangle>(11);
+    private static j86.java.util.List<Rectangle> tempRectangles = new java.util.ArrayList<Rectangle>(11);
 
     /** Used for <code>WHEN_FOCUSED</code> bindings. */
     private InputMap focusInputMap;
@@ -791,7 +791,7 @@ public abstract class JComponent extends Container implements Serializable,
      * should not use a buffer to paint.
      * @param g  the <code>Graphics</code> context in which to paint
      * @see #paint
-     * @see java.awt.Container#paint
+     * @see j86.java.awt.Container#paint
      */
     protected void paintChildren(Graphics g) {
         Graphics sg = g;
@@ -956,7 +956,7 @@ public abstract class JComponent extends Container implements Serializable,
      * @param g the <code>Graphics</code> context in which to paint
      * @see #paint
      * @see #paintComponent
-     * @see javax.swing.plaf.ComponentUI
+     * @see j86.j86.javax.swing.plaf.ComponentUI
      */
     public void update(Graphics g) {
         paint(g);
@@ -1270,7 +1270,7 @@ public abstract class JComponent extends Container implements Serializable,
      * Note: This method provides complimentary functionality to that provided
      * by other high level Swing printing APIs. However, it deals strictly with
      * painting and should not be confused as providing information on higher
-     * level print processes. For example, a {@link javax.swing.JTable#print()}
+     * level print processes. For example, a {@link j86.javax.swing.JTable#print()}
      * operation doesn't necessarily result in a continuous rendering of the
      * full component, and the return value of this method can change multiple
      * times during that operation. It is even possible for the component to be
@@ -1299,7 +1299,7 @@ public abstract class JComponent extends Container implements Serializable,
      * <code>SortingFocusTraversalPolicy</code> from considering descendants
      * of this JComponent when computing a focus traversal cycle.
      *
-     * @see java.awt.Component#setFocusTraversalKeys
+     * @see j86.java.awt.Component#setFocusTraversalKeys
      * @see SortingFocusTraversalPolicy
      * @deprecated As of 1.4, replaced by
      *   <code>Component.setFocusTraversalKeys(int, Set)</code> and
@@ -1367,7 +1367,7 @@ public abstract class JComponent extends Container implements Serializable,
      *        <code>JComponent</code> in the focus traversal cycle
      *
      * @see #getNextFocusableComponent
-     * @see java.awt.FocusTraversalPolicy
+     * @see j86.java.awt.FocusTraversalPolicy
      * @deprecated As of 1.4, replaced by <code>FocusTraversalPolicy</code>
      */
     @Deprecated
@@ -1425,8 +1425,8 @@ public abstract class JComponent extends Container implements Serializable,
      *
      * @param requestFocusEnabled indicates whether you want this
      *        <code>JComponent</code> to be focusable or not
-     * @see <a href="../../java/awt/doc-files/FocusSpec.html">Focus Specification</a>
-     * @see java.awt.Component#setFocusable
+     * @see <a href="../../j86.java.awt/doc-files/FocusSpec.html">Focus Specification</a>
+     * @see j86.java.awt.Component#setFocusable
      */
     public void setRequestFocusEnabled(boolean requestFocusEnabled) {
         setFlag(REQUEST_FOCUS_DISABLED, !requestFocusEnabled);
@@ -1445,9 +1445,9 @@ public abstract class JComponent extends Container implements Serializable,
      * @return <code>true</code> if this component should get focus,
      *     otherwise returns <code>false</code>
      * @see #setRequestFocusEnabled
-     * @see <a href="../../java/awt/doc-files/FocusSpec.html">Focus
+     * @see <a href="../../j86.java.awt/doc-files/FocusSpec.html">Focus
      *      Specification</a>
-     * @see java.awt.Component#isFocusable
+     * @see j86.java.awt.Component#isFocusable
      */
     public boolean isRequestFocusEnabled() {
         return !getFlag(REQUEST_FOCUS_DISABLED);
@@ -1455,7 +1455,7 @@ public abstract class JComponent extends Container implements Serializable,
 
     /**
      * Requests that this <code>Component</code> gets the input focus.
-     * Refer to {@link java.awt.Component#requestFocus()
+     * Refer to {@link j86.java.awt.Component#requestFocus()
      * Component.requestFocus()} for a complete description of
      * this method.
      * <p>
@@ -1467,8 +1467,8 @@ public abstract class JComponent extends Container implements Serializable,
      * How to Use the Focus Subsystem</a>,
      * a section in <em>The Java Tutorial</em>.
      *
-     * @see java.awt.Component#requestFocusInWindow()
-     * @see java.awt.Component#requestFocusInWindow(boolean)
+     * @see j86.java.awt.Component#requestFocusInWindow()
+     * @see j86.java.awt.Component#requestFocusInWindow(boolean)
      * @since 1.4
      */
     public void requestFocus() {
@@ -1477,7 +1477,7 @@ public abstract class JComponent extends Container implements Serializable,
 
     /**
      * Requests that this <code>Component</code> gets the input focus.
-     * Refer to {@link java.awt.Component#requestFocus(boolean)
+     * Refer to {@link j86.java.awt.Component#requestFocus(boolean)
      * Component.requestFocus(boolean)} for a complete description of
      * this method.
      * <p>
@@ -1493,8 +1493,8 @@ public abstract class JComponent extends Container implements Serializable,
      * @param temporary boolean indicating if the focus change is temporary
      * @return <code>false</code> if the focus change request is guaranteed to
      *         fail; <code>true</code> if it is likely to succeed
-     * @see java.awt.Component#requestFocusInWindow()
-     * @see java.awt.Component#requestFocusInWindow(boolean)
+     * @see j86.java.awt.Component#requestFocusInWindow()
+     * @see j86.java.awt.Component#requestFocusInWindow(boolean)
      * @since 1.4
      */
     public boolean requestFocus(boolean temporary) {
@@ -1503,7 +1503,7 @@ public abstract class JComponent extends Container implements Serializable,
 
     /**
      * Requests that this <code>Component</code> gets the input focus.
-     * Refer to {@link java.awt.Component#requestFocusInWindow()
+     * Refer to {@link j86.java.awt.Component#requestFocusInWindow()
      * Component.requestFocusInWindow()} for a complete description of
      * this method.
      * <p>
@@ -1514,8 +1514,8 @@ public abstract class JComponent extends Container implements Serializable,
      *
      * @return <code>false</code> if the focus change request is guaranteed to
      *         fail; <code>true</code> if it is likely to succeed
-     * @see java.awt.Component#requestFocusInWindow()
-     * @see java.awt.Component#requestFocusInWindow(boolean)
+     * @see j86.java.awt.Component#requestFocusInWindow()
+     * @see j86.java.awt.Component#requestFocusInWindow(boolean)
      * @since 1.4
      */
     public boolean requestFocusInWindow() {
@@ -1524,7 +1524,7 @@ public abstract class JComponent extends Container implements Serializable,
 
     /**
      * Requests that this <code>Component</code> gets the input focus.
-     * Refer to {@link java.awt.Component#requestFocusInWindow(boolean)
+     * Refer to {@link j86.java.awt.Component#requestFocusInWindow(boolean)
      * Component.requestFocusInWindow(boolean)} for a complete description of
      * this method.
      * <p>
@@ -1536,8 +1536,8 @@ public abstract class JComponent extends Container implements Serializable,
      * @param temporary boolean indicating if the focus change is temporary
      * @return <code>false</code> if the focus change request is guaranteed to
      *         fail; <code>true</code> if it is likely to succeed
-     * @see java.awt.Component#requestFocusInWindow()
-     * @see java.awt.Component#requestFocusInWindow(boolean)
+     * @see j86.java.awt.Component#requestFocusInWindow()
+     * @see j86.java.awt.Component#requestFocusInWindow(boolean)
      * @since 1.4
      */
     protected boolean requestFocusInWindow(boolean temporary) {
@@ -1748,7 +1748,7 @@ public abstract class JComponent extends Container implements Serializable,
      * shape of this component for the sake of mouse processing.
      *
      * @return true if this component logically contains x,y
-     * @see java.awt.Component#contains(int, int)
+     * @see j86.java.awt.Component#contains(int, int)
      * @see ComponentUI
      */
     public boolean contains(int x, int y) {
@@ -1865,7 +1865,7 @@ public abstract class JComponent extends Container implements Serializable,
      *
      * @return the value of the <code>alignmentY</code> property
      * @see #setAlignmentY
-     * @see java.awt.Component#getAlignmentY
+     * @see j86.java.awt.Component#getAlignmentY
      */
     public float getAlignmentY() {
         if (isAlignmentYSet) {
@@ -1894,7 +1894,7 @@ public abstract class JComponent extends Container implements Serializable,
      *
      * @return the value of the <code>alignmentX</code> property
      * @see #setAlignmentX
-     * @see java.awt.Component#getAlignmentX
+     * @see j86.java.awt.Component#getAlignmentX
      */
     public float getAlignmentX() {
         if (isAlignmentXSet) {
@@ -2551,7 +2551,7 @@ public abstract class JComponent extends Container implements Serializable,
      *
      * @throws IllegalArgumentException {@inheritDoc}
      * @see #getBaselineResizeBehavior
-     * @see java.awt.FontMetrics
+     * @see j86.java.awt.FontMetrics
      * @since 1.6
      */
     public int getBaseline(int width, int height) {
@@ -2605,7 +2605,7 @@ public abstract class JComponent extends Container implements Serializable,
      * <code>FocusTraversalPolicy</code> of this <code>JComponent</code>'s
      * focus-cycle-root ancestor is used.
      *
-     * @see java.awt.FocusTraversalPolicy#getDefaultComponent
+     * @see j86.java.awt.FocusTraversalPolicy#getDefaultComponent
      * @deprecated As of 1.4, replaced by
      * <code>FocusTraversalPolicy.getDefaultComponent(Container).requestFocus()</code>
      */
@@ -2663,8 +2663,8 @@ public abstract class JComponent extends Container implements Serializable,
      * receiving MouseEvents.
      *
      * @param enabled true if this component should be enabled, false otherwise
-     * @see java.awt.Component#isEnabled
-     * @see java.awt.Component#isLightweight
+     * @see j86.java.awt.Component#isEnabled
+     * @see j86.java.awt.Component#isLightweight
      *
      * @beaninfo
      *    preferred: true
@@ -2687,7 +2687,7 @@ public abstract class JComponent extends Container implements Serializable,
      * it.
      *
      * @param fg  the desired foreground <code>Color</code>
-     * @see java.awt.Component#getForeground
+     * @see j86.java.awt.Component#getForeground
      *
      * @beaninfo
      *    preferred: true
@@ -2716,7 +2716,7 @@ public abstract class JComponent extends Container implements Serializable,
      * choose to ignore it.
      *
      * @param bg the desired background <code>Color</code>
-     * @see java.awt.Component#getBackground
+     * @see j86.java.awt.Component#getBackground
      * @see #setOpaque
      *
      * @beaninfo
@@ -2738,7 +2738,7 @@ public abstract class JComponent extends Container implements Serializable,
      * Sets the font for this component.
      *
      * @param font the desired <code>Font</code> for this component
-     * @see java.awt.Component#getFont
+     * @see j86.java.awt.Component#getFont
      *
      * @beaninfo
      *    preferred: true
@@ -2767,7 +2767,7 @@ public abstract class JComponent extends Container implements Serializable,
      *
      * @return the default <code>Locale</code>.
      * @see #setDefaultLocale
-     * @see java.awt.Component#getLocale
+     * @see j86.java.awt.Component#getLocale
      * @see #setLocale
      * @since 1.4
      */
@@ -2794,7 +2794,7 @@ public abstract class JComponent extends Container implements Serializable,
      *
      * @param l the desired default <code>Locale</code> for new components.
      * @see #getDefaultLocale
-     * @see java.awt.Component#getLocale
+     * @see j86.java.awt.Component#getLocale
      * @see #setLocale
      * @since 1.4
      */
@@ -3307,11 +3307,11 @@ public abstract class JComponent extends Container implements Serializable,
      * Processes mouse events occurring on this component by
      * dispatching them to any registered
      * <code>MouseListener</code> objects, refer to
-     * {@link java.awt.Component#processMouseEvent(MouseEvent)}
+     * {@link j86.java.awt.Component#processMouseEvent(MouseEvent)}
      * for a complete description of this method.
      *
      * @param       e the mouse event
-     * @see         java.awt.Component#processMouseEvent
+     * @see         j86.java.awt.Component#processMouseEvent
      * @since       1.5
      */
     protected void processMouseEvent(MouseEvent e) {
@@ -3552,11 +3552,11 @@ public abstract class JComponent extends Container implements Serializable,
       }
     }
 
-    static final sun.awt.RequestFocusController focusController =
-        new sun.awt.RequestFocusController() {
+    static final j86.sun.awt.RequestFocusController focusController =
+        new j86.sun.awt.RequestFocusController() {
             public boolean acceptRequestFocus(Component from, Component to,
                                               boolean temporary, boolean focusedWindowChangeAllowed,
-                                              sun.awt.CausedFocusEvent.Cause cause)
+                                              j86.sun.awt.CausedFocusEvent.Cause cause)
             {
                 if ((to == null) || !(to instanceof JComponent)) {
                     return true;
@@ -3612,7 +3612,7 @@ public abstract class JComponent extends Container implements Serializable,
 
     /**
      * @deprecated As of JDK version 1.1,
-     * replaced by <code>java.awt.Component.setEnabled(boolean)</code>.
+     * replaced by <code>j86.java.awt.Component.setEnabled(boolean)</code>.
      */
     @Deprecated
     public void enable() {
@@ -3628,7 +3628,7 @@ public abstract class JComponent extends Container implements Serializable,
 
     /**
      * @deprecated As of JDK version 1.1,
-     * replaced by <code>java.awt.Component.setEnabled(boolean)</code>.
+     * replaced by <code>j86.java.awt.Component.setEnabled(boolean)</code>.
      */
     @Deprecated
     public void disable() {
@@ -3654,8 +3654,8 @@ public abstract class JComponent extends Container implements Serializable,
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     public abstract class AccessibleJComponent extends AccessibleAWTContainer
        implements AccessibleExtendedComponent
@@ -3676,7 +3676,7 @@ public abstract class JComponent extends Container implements Serializable,
         private volatile transient int propertyListenersCount = 0;
 
         /**
-         * This field duplicates the one in java.awt.Component.AccessibleAWTComponent,
+         * This field duplicates the one in j86.java.awt.Component.AccessibleAWTComponent,
          * so it has been deprecated.
          */
         @Deprecated
@@ -3793,7 +3793,7 @@ public abstract class JComponent extends Container implements Serializable,
         //
         /**
          * Gets the accessible name of this object.  This should almost never
-         * return java.awt.Component.getName(), as that generally isn't
+         * return j86.java.awt.Component.getName(), as that generally isn't
          * a localized name, and doesn't have meaning for the user.  If the
          * object is fundamentally a text object (such as a menu item), the
          * accessible name should be the text of the object (for example,
@@ -4138,7 +4138,7 @@ public abstract class JComponent extends Container implements Serializable,
      * Sets the focus traversal keys for a given traversal operation for this
      * Component.
      * Refer to
-     * {@link java.awt.Component#setFocusTraversalKeys}
+     * {@link j86.java.awt.Component#setFocusTraversalKeys}
      * for a complete description of this method.
      * <p>
      * This method may throw a {@code ClassCastException} if any {@code Object}
@@ -4148,9 +4148,9 @@ public abstract class JComponent extends Container implements Serializable,
      *        KeyboardFocusManager.BACKWARD_TRAVERSAL_KEYS, or
      *        KeyboardFocusManager.UP_CYCLE_TRAVERSAL_KEYS
      * @param keystrokes the Set of AWTKeyStroke for the specified operation
-     * @see java.awt.KeyboardFocusManager#FORWARD_TRAVERSAL_KEYS
-     * @see java.awt.KeyboardFocusManager#BACKWARD_TRAVERSAL_KEYS
-     * @see java.awt.KeyboardFocusManager#UP_CYCLE_TRAVERSAL_KEYS
+     * @see j86.java.awt.KeyboardFocusManager#FORWARD_TRAVERSAL_KEYS
+     * @see j86.java.awt.KeyboardFocusManager#BACKWARD_TRAVERSAL_KEYS
+     * @see j86.java.awt.KeyboardFocusManager#UP_CYCLE_TRAVERSAL_KEYS
      * @throws IllegalArgumentException if id is not one of
      *         KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
      *         KeyboardFocusManager.BACKWARD_TRAVERSAL_KEYS, or
@@ -4173,9 +4173,9 @@ public abstract class JComponent extends Container implements Serializable,
         super.setFocusTraversalKeys(id,keystrokes);
     }
 
-    /* --- Transitional java.awt.Component Support ---
+    /* --- Transitional j86.java.awt.Component Support ---
      * The methods and fields in this section will migrate to
-     * java.awt.Component in the next JDK release.
+     * j86.java.awt.Component in the next JDK release.
      */
 
     /**
@@ -4200,7 +4200,7 @@ public abstract class JComponent extends Container implements Serializable,
      * @param y  the new vertical location
      * @param w  the new width
      * @param h  the new height
-     * @see java.awt.Component#setBounds
+     * @see j86.java.awt.Component#setBounds
      */
     @Deprecated
     public void reshape(int x, int y, int w, int h) {
@@ -4522,11 +4522,11 @@ public abstract class JComponent extends Container implements Serializable,
      * @param propertyName  the name of the property that was listened on
      * @param oldValue  the old value of the property
      * @param newValue  the new value of the property
-     * @exception java.beans.PropertyVetoException when the attempt to set the
+     * @exception j86.java.beans.PropertyVetoException when the attempt to set the
      *          property is vetoed by the component
      */
     protected void fireVetoableChange(String propertyName, Object oldValue, Object newValue)
-        throws java.beans.PropertyVetoException
+        throws j86.java.beans.PropertyVetoException
     {
         if (vetoableChangeSupport == null) {
             return;
@@ -4543,7 +4543,7 @@ public abstract class JComponent extends Container implements Serializable,
      */
     public synchronized void addVetoableChangeListener(VetoableChangeListener listener) {
         if (vetoableChangeSupport == null) {
-            vetoableChangeSupport = new java.beans.VetoableChangeSupport(this);
+            vetoableChangeSupport = new j86.java.beans.VetoableChangeSupport(this);
         }
         vetoableChangeSupport.addVetoableChangeListener(listener);
     }
@@ -4689,14 +4689,14 @@ public abstract class JComponent extends Container implements Serializable,
      *
      * @param listenerType the type of listeners requested; this parameter
      *          should specify an interface that descends from
-     *          <code>java.util.EventListener</code>
+     *          <code>j86.java.util.EventListener</code>
      * @return an array of all objects registered as
      *          <code><em>Foo</em>Listener</code>s on this component,
      *          or an empty array if no such
      *          listeners have been added
      * @exception ClassCastException if <code>listenerType</code>
      *          doesn't specify a class or interface that implements
-     *          <code>java.util.EventListener</code>
+     *          <code>j86.java.util.EventListener</code>
      *
      * @since 1.3
      *
@@ -4785,7 +4785,7 @@ public abstract class JComponent extends Container implements Serializable,
      * @param width  the width of the dirty region
      * @param height  the height of the dirty region
      * @see #isPaintingOrigin()
-     * @see java.awt.Component#isShowing
+     * @see j86.java.awt.Component#isShowing
      * @see RepaintManager#addDirtyRegion
      */
     public void repaint(long tm, int x, int y, int width, int height) {
@@ -4800,7 +4800,7 @@ public abstract class JComponent extends Container implements Serializable,
      *
      * @param  r a <code>Rectangle</code> containing the dirty region
      * @see #isPaintingOrigin()
-     * @see java.awt.Component#isShowing
+     * @see j86.java.awt.Component#isShowing
      * @see RepaintManager#addDirtyRegion
      */
     public void repaint(Rectangle r) {
@@ -4828,8 +4828,8 @@ public abstract class JComponent extends Container implements Serializable,
      * longer need to invoke <code>validate</code> to get the contents of the
      * GUI to update.
      *
-     * @see java.awt.Component#invalidate
-     * @see java.awt.Container#validate
+     * @see j86.java.awt.Component#invalidate
+     * @see j86.java.awt.Container#validate
      * @see #isValidateRoot
      * @see RepaintManager#addInvalidComponent
      */
@@ -4878,9 +4878,9 @@ public abstract class JComponent extends Container implements Serializable,
      *
      * @return always returns false
      * @see #revalidate
-     * @see java.awt.Component#invalidate
-     * @see java.awt.Container#validate
-     * @see java.awt.Container#isValidateRoot
+     * @see j86.java.awt.Component#invalidate
+     * @see j86.java.awt.Container#validate
+     * @see j86.java.awt.Container#isValidateRoot
      */
     @Override
     public boolean isValidateRoot() {
@@ -5023,7 +5023,7 @@ public abstract class JComponent extends Container implements Serializable,
         // the direct parent. Note that in testing it was faster to
         // alloc a new Vector vs keeping a stack of them around, and gc
         // seemed to have a minimal effect on this.
-        java.util.List<Component> path = new java.util.ArrayList<Component>(7);
+        j86.java.util.List<Component> path = new java.util.ArrayList<Component>(7);
         int pIndex = -1;
         int pCount = 0;
 
@@ -5375,7 +5375,7 @@ public abstract class JComponent extends Container implements Serializable,
          * for now.
          */
         if (getToolTipText() != null ||
-            this instanceof javax.swing.table.JTableHeader) {
+            this instanceof j86.j86.javax.swing.table.JTableHeader) {
             ToolTipManager.sharedInstance().unregisterComponent(JComponent.this);
         }
     }
@@ -5393,7 +5393,7 @@ public abstract class JComponent extends Container implements Serializable,
      * they're stored in the static <code>readObjectCallbacks</code>
      * hashtable.
      *
-     * @see java.io.ObjectInputStream#registerValidation
+     * @see j86.java.io.ObjectInputStream#registerValidation
      * @see SwingUtilities#updateComponentTreeUI
      */
     private class ReadObjectCallback implements ObjectInputValidation

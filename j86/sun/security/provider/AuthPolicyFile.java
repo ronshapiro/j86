@@ -23,63 +23,63 @@
  * questions.
  */
 
-package sun.security.provider;
+package j86.sun.security.provider;
 
-import java.io.*;
-import java.lang.reflect.*;
-import java.net.URL;
-import java.util.*;
+import j86.java.io.*;
+import j86.j86.j86.java.lang.reflect.*;
+import j86.java.net.URL;
+import j86.java.util.*;
 
-import java.security.AccessController;
-import java.security.CodeSource;
-import java.security.KeyStore;
-import java.security.KeyStoreException;
-import java.security.Permission;
-import java.security.Permissions;
-import java.security.PermissionCollection;
-import java.security.Principal;
-import java.security.PrivilegedAction;
-import java.security.UnresolvedPermission;
-import java.security.Security;
-import java.security.cert.Certificate;
-import java.security.cert.X509Certificate;
+import j86.java.security.AccessController;
+import j86.java.security.CodeSource;
+import j86.java.security.KeyStore;
+import j86.java.security.KeyStoreException;
+import j86.java.security.Permission;
+import j86.java.security.Permissions;
+import j86.java.security.PermissionCollection;
+import j86.java.security.Principal;
+import j86.java.security.PrivilegedAction;
+import j86.java.security.UnresolvedPermission;
+import j86.java.security.Security;
+import j86.j86.java.security.cert.Certificate;
+import j86.j86.java.security.cert.X509Certificate;
 
-import javax.security.auth.Subject;
-import javax.security.auth.PrivateCredentialPermission;
+import j86.javax.security.auth.Subject;
+import j86.javax.security.auth.PrivateCredentialPermission;
 
-import sun.security.provider.PolicyParser.GrantEntry;
-import sun.security.provider.PolicyParser.PermissionEntry;
-import sun.security.provider.PolicyParser.PrincipalEntry;
-import sun.security.util.Debug;
-import sun.security.util.PolicyUtil;
-import sun.security.util.PropertyExpander;
+import j86.sun.security.provider.PolicyParser.GrantEntry;
+import j86.sun.security.provider.PolicyParser.PermissionEntry;
+import j86.sun.security.provider.PolicyParser.PrincipalEntry;
+import j86.sun.security.util.Debug;
+import j86.sun.security.util.PolicyUtil;
+import j86.sun.security.util.PropertyExpander;
 
 /**
- * See {@code com.sun.security.auth.PolicyFile} for the class description.
+ * See {@code j86.com.sun.security.auth.PolicyFile} for the class description.
  * This class is necessary in order to support a default
- * {@code javax.security.auth.Policy} implementation on the compact1 and
+ * {@code j86.javax.security.auth.Policy} implementation on the compact1 and
  * compact2 profiles.
  *
  * @deprecated As of JDK&nbsp;1.4, replaced by
- *             {@code sun.security.provider.PolicyFile}.
+ *             {@code j86.sun.security.provider.PolicyFile}.
  *             This class is entirely deprecated.
  */
 @Deprecated
-public class AuthPolicyFile extends javax.security.auth.Policy {
+public class AuthPolicyFile extends j86.javax.security.auth.Policy {
 
     static final ResourceBundle rb =
         AccessController.doPrivileged(new PrivilegedAction<ResourceBundle>() {
             @Override public ResourceBundle run() {
                 return (ResourceBundle.getBundle
-                        ("sun.security.util.AuthResources"));
+                        ("j86.sun.security.util.AuthResources"));
             }
         });
 
     private static final Debug debug = Debug.getInstance("policy",
                                                          "\t[Auth Policy]");
 
-    private static final String AUTH_POLICY = "java.security.auth.policy";
-    private static final String SECURITY_MANAGER = "java.security.manager";
+    private static final String AUTH_POLICY = "j86.java.security.auth.policy";
+    private static final String SECURITY_MANAGER = "j86.java.security.manager";
     private static final String AUTH_POLICY_URL = "auth.policy.url.";
 
     private Vector<PolicyEntry> policyEntries;
@@ -125,9 +125,9 @@ public class AuthPolicyFile extends javax.security.auth.Policy {
     @Override
     public synchronized void refresh() {
 
-        java.lang.SecurityManager sm = System.getSecurityManager();
+        j86.java.lang.SecurityManager sm = System.getSecurityManager();
         if (sm != null) {
-            sm.checkPermission(new javax.security.auth.AuthPermission
+            sm.checkPermission(new j86.javax.security.auth.AuthPermission
                                 ("refreshPolicy"));
         }
 
@@ -136,7 +136,7 @@ public class AuthPolicyFile extends javax.security.auth.Policy {
         // 1)   if code instantiates PolicyFile directly, then it will need
         //      all the permissions required for the PolicyFile initialization
         // 2)   if code calls Policy.getPolicy, then it simply needs
-        //      AuthPermission(getPolicy), and the javax.security.auth.Policy
+        //      AuthPermission(getPolicy), and the j86.javax.security.auth.Policy
         //      implementation instantiates PolicyFile in a doPrivileged block
         // 3)   if after instantiating a Policy (either via #1 or #2),
         //      code calls refresh, it simply needs
@@ -163,7 +163,7 @@ public class AuthPolicyFile extends javax.security.auth.Policy {
                 try {
                     keyStoreUrl = new URL(keyStoreName);
                     // absolute URL
-                } catch (java.net.MalformedURLException e) {
+                } catch (j86.java.net.MalformedURLException e) {
                     // relative URL
                     keyStoreUrl = new URL(policyUrl, keyStoreName);
                 }
@@ -323,7 +323,7 @@ public class AuthPolicyFile extends javax.security.auth.Policy {
      * @return null if signedBy alias is not recognized
      */
     CodeSource getCodeSource(GrantEntry ge, KeyStore keyStore)
-            throws java.net.MalformedURLException
+            throws j86.java.net.MalformedURLException
     {
         Certificate[] certs = null;
         if (ge.signedBy != null) {
@@ -388,7 +388,7 @@ public class AuthPolicyFile extends javax.security.auth.Policy {
                     // XXX special case PrivateCredentialPermission-SELF
                     Permission perm;
                     if (pe.permission.equals
-                        ("javax.security.auth.PrivateCredentialPermission") &&
+                        ("j86.javax.security.auth.PrivateCredentialPermission") &&
                         pe.name.endsWith(" self")) {
                         perm = getInstance(pe.permission,
                                          pe.name + " \"self\"",
@@ -423,7 +423,7 @@ public class AuthPolicyFile extends javax.security.auth.Policy {
                                 debug.println("  "+perm);
                             }
                     }
-                } catch (java.lang.reflect.InvocationTargetException ite) {
+                } catch (j86.j86.j86.java.lang.reflect.InvocationTargetException ite) {
                     System.err.println
                         (AUTH_POLICY +
                         rb.getString(".error.adding.Permission.") +
@@ -563,7 +563,7 @@ public class AuthPolicyFile extends javax.security.auth.Policy {
         // 1)   if code instantiates PolicyFile directly, then it will need
         //      all the permissions required for the PolicyFile initialization
         // 2)   if code calls Policy.getPolicy, then it simply needs
-        //      AuthPermission(getPolicy), and the javax.security.auth.Policy
+        //      AuthPermission(getPolicy), and the j86.javax.security.auth.Policy
         //      implementation instantiates PolicyFile in a doPrivileged block
         // 3)   if after instantiating a Policy (either via #1 or #2),
         //      code calls getPermissions, PolicyFile wraps the call
@@ -675,7 +675,7 @@ public class AuthPolicyFile extends javax.security.auth.Policy {
                         // to the policy for us. next time
                         // around we'll find it. This time
                         // around we need to add it.
-                        perms.add(new java.security.AllPermission());
+                        perms.add(new j86.java.security.AllPermission());
                     }
                 }
             }
@@ -1038,7 +1038,7 @@ public class AuthPolicyFile extends javax.security.auth.Policy {
      * <p>
      * For example, the entry
      * <pre>
-     *          permission java.io.File "/tmp", "read,write",
+     *          permission j86.java.io.File "/tmp", "read,write",
      *          signedBy "Duke";
      * </pre>
      * is represented internally
@@ -1053,10 +1053,10 @@ public class AuthPolicyFile extends javax.security.auth.Policy {
      *
      * @author Marianne Mueller
      * @author Roland Schemers
-     * @see java.security.CodeSource
-     * @see java.security.Policy
-     * @see java.security.Permissions
-     * @see java.security.ProtectionDomain
+     * @see j86.java.security.CodeSource
+     * @see j86.java.security.Policy
+     * @see j86.java.security.Permissions
+     * @see j86.java.security.ProtectionDomain
      */
     private static class PolicyEntry {
 

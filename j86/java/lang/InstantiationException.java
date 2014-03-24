@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.lang;
+package j86.java.lang;
 
 /**
  * Thrown when an application tries to create an instance of a class
@@ -39,7 +39,7 @@ package java.lang;
  *</ul>
  *
  * @author  unascribed
- * @see     java.lang.Class#newInstance()
+ * @see     j86.java.lang.Class#newInstance()
  * @since   JDK1.0
  */
 public

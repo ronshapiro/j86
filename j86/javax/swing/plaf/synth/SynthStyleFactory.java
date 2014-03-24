@@ -22,9 +22,9 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.plaf.synth;
+package j86.j86.j86.javax.swing.plaf.synth;
 
-import javax.swing.JComponent;
+import j86.javax.swing.JComponent;
 
 /**
  * Factory used for obtaining <code>SynthStyle</code>s.  Each of the

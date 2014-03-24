@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.security.pkcs12;
+package j86.j86.sun.security.pkcs12;
 
-import java.io.*;
-import java.security.*;
+import j86.java.io.*;
+import j86.java.security.*;
 
-import sun.security.util.DerInputStream;
-import sun.security.util.DerOutputStream;
-import sun.security.util.DerValue;
-import sun.security.x509.AlgorithmId;
-import sun.security.pkcs.ParsingException;
+import j86.sun.security.util.DerInputStream;
+import j86.sun.security.util.DerOutputStream;
+import j86.sun.security.util.DerValue;
+import j86.sun.security.x509.AlgorithmId;
+import j86.sun.security.pkcs.ParsingException;
 
 
 /**

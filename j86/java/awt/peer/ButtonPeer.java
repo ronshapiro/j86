@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.awt.peer;
+package j86.j86.java.awt.peer;
 
-import java.awt.Button;
+import j86.java.awt.Button;
 
 /**
  * The peer interface for {@link Button}.

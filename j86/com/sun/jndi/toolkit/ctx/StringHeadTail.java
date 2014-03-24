@@ -23,7 +23,7 @@
  * questions.
  */
 
-package com.sun.jndi.toolkit.ctx;
+package j86.com.sun.jndi.toolkit.ctx;
 
 /**
   * A class for returning the result of c_parseComponent().

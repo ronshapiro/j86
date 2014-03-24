@@ -23,11 +23,11 @@
  * questions.
  */
 
-package com.sun.media.sound;
+package j86.com.sun.media.sound;
 
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.util.StringTokenizer;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.util.StringTokenizer;
 
 
 

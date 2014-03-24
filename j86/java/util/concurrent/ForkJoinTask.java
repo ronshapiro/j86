@@ -33,24 +33,24 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package java.util.concurrent;
+package j86.j86.java.util.concurrent;
 
-import java.io.Serializable;
-import java.util.Collection;
-import java.util.List;
-import java.util.RandomAccess;
-import java.lang.ref.WeakReference;
-import java.lang.ref.ReferenceQueue;
-import java.util.concurrent.Callable;
-import java.util.concurrent.CancellationException;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.Future;
-import java.util.concurrent.RejectedExecutionException;
-import java.util.concurrent.RunnableFuture;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.TimeoutException;
-import java.util.concurrent.locks.ReentrantLock;
-import java.lang.reflect.Constructor;
+import j86.java.io.Serializable;
+import j86.java.util.Collection;
+import j86.java.util.List;
+import j86.java.util.RandomAccess;
+import j86.j86.java.lang.ref.WeakReference;
+import j86.j86.java.lang.ref.ReferenceQueue;
+import j86.j86.java.util.concurrent.Callable;
+import j86.j86.java.util.concurrent.CancellationException;
+import j86.j86.java.util.concurrent.ExecutionException;
+import j86.j86.java.util.concurrent.Future;
+import j86.j86.java.util.concurrent.RejectedExecutionException;
+import j86.j86.java.util.concurrent.RunnableFuture;
+import j86.j86.java.util.concurrent.TimeUnit;
+import j86.j86.java.util.concurrent.TimeoutException;
+import j86.j86.j86.java.util.concurrent.locks.ReentrantLock;
+import j86.j86.j86.java.lang.reflect.Constructor;
 
 /**
  * Abstract base class for tasks that run within a {@link ForkJoinPool}.
@@ -140,11 +140,11 @@ import java.lang.reflect.Constructor;
  * {@link #isCompletedNormally} is true if a task completed without
  * cancellation or encountering an exception; {@link #isCancelled} is
  * true if the task was cancelled (in which case {@link #getException}
- * returns a {@link java.util.concurrent.CancellationException}); and
+ * returns a {@link j86.j86.java.util.concurrent.CancellationException}); and
  * {@link #isCompletedAbnormally} is true if a task was either
  * cancelled or encountered an exception, in which case {@link
  * #getException} will return either the encountered exception or
- * {@link java.util.concurrent.CancellationException}.
+ * {@link j86.j86.java.util.concurrent.CancellationException}.
  *
  * <p>The ForkJoinTask class is not usually directly subclassed.
  * Instead, you subclass one of the abstract classes that support a
@@ -1504,12 +1504,12 @@ public abstract class ForkJoinTask<V> implements Future<V>, Serializable {
      * Saves this task to a stream (that is, serializes it).
      *
      * @param s the stream
-     * @throws java.io.IOException if an I/O error occurs
+     * @throws j86.java.io.IOException if an I/O error occurs
      * @serialData the current run status and the exception thrown
      * during execution, or {@code null} if none
      */
-    private void writeObject(java.io.ObjectOutputStream s)
-        throws java.io.IOException {
+    private void writeObject(j86.java.io.ObjectOutputStream s)
+        throws j86.java.io.IOException {
         s.defaultWriteObject();
         s.writeObject(getException());
     }
@@ -1519,10 +1519,10 @@ public abstract class ForkJoinTask<V> implements Future<V>, Serializable {
      * @param s the stream
      * @throws ClassNotFoundException if the class of a serialized object
      *         could not be found
-     * @throws java.io.IOException if an I/O error occurs
+     * @throws j86.java.io.IOException if an I/O error occurs
      */
-    private void readObject(java.io.ObjectInputStream s)
-        throws java.io.IOException, ClassNotFoundException {
+    private void readObject(j86.java.io.ObjectInputStream s)
+        throws j86.java.io.IOException, ClassNotFoundException {
         s.defaultReadObject();
         Object ex = s.readObject();
         if (ex != null)
@@ -1530,7 +1530,7 @@ public abstract class ForkJoinTask<V> implements Future<V>, Serializable {
     }
 
     // Unsafe mechanics
-    private static final sun.misc.Unsafe U;
+    private static final j86.sun.misc.Unsafe U;
     private static final long STATUS;
 
     static {
@@ -1538,7 +1538,7 @@ public abstract class ForkJoinTask<V> implements Future<V>, Serializable {
         exceptionTableRefQueue = new ReferenceQueue<Object>();
         exceptionTable = new ExceptionNode[EXCEPTION_MAP_CAPACITY];
         try {
-            U = sun.misc.Unsafe.getUnsafe();
+            U = j86.sun.misc.Unsafe.getUnsafe();
             Class<?> k = ForkJoinTask.class;
             STATUS = U.objectFieldOffset
                 (k.getDeclaredField("status"));

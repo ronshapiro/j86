@@ -38,9 +38,9 @@
  *
  */
 
-package sun.text.resources.tr;
+package j86.j86.j86.sun.text.resources.tr;
 
-import sun.util.resources.ParallelListResourceBundle;
+import j86.j86.sun.util.resources.ParallelListResourceBundle;
 
 public class FormatData_tr_TR extends ParallelListResourceBundle {
     /**

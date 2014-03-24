@@ -23,15 +23,15 @@
  * questions.
  */
 
-package javax.security.auth.kerberos;
+package j86.j86.javax.security.auth.kerberos;
 
-import java.util.*;
-import java.security.Permission;
-import java.security.PermissionCollection;
-import java.io.ObjectStreamField;
-import java.io.ObjectOutputStream;
-import java.io.ObjectInputStream;
-import java.io.IOException;
+import j86.java.util.*;
+import j86.java.security.Permission;
+import j86.java.security.PermissionCollection;
+import j86.java.io.ObjectStreamField;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.IOException;
 
 /**
  * This class is used to protect Kerberos services and the
@@ -98,7 +98,7 @@ import java.io.IOException;
  */
 
 public final class ServicePermission extends Permission
-    implements java.io.Serializable {
+    implements j86.java.io.Serializable {
 
     private static final long serialVersionUID = -1227585031618624935L;
 
@@ -389,7 +389,7 @@ public final class ServicePermission extends Permission
      * to a stream. The actions are serialized, and the superclass
      * takes care of the name.
      */
-    private void writeObject(java.io.ObjectOutputStream s)
+    private void writeObject(j86.java.io.ObjectOutputStream s)
         throws IOException
     {
         // Write out the actions. The superclass takes care of the name
@@ -403,7 +403,7 @@ public final class ServicePermission extends Permission
      * readObject is called to restore the state of the
      * ServicePermission from a stream.
      */
-    private void readObject(java.io.ObjectInputStream s)
+    private void readObject(j86.java.io.ObjectInputStream s)
          throws IOException, ClassNotFoundException
     {
         // Read in the action, then initialize the rest
@@ -451,7 +451,7 @@ public final class ServicePermission extends Permission
 
 
 final class KrbServicePermissionCollection extends PermissionCollection
-    implements java.io.Serializable {
+    implements j86.java.io.Serializable {
 
     // Not serialized; see serialization section at end of class
     private transient List<Permission> perms;
@@ -545,7 +545,7 @@ final class KrbServicePermissionCollection extends PermissionCollection
     // private Vector permissions;
 
     /**
-     * @serialField permissions java.util.Vector
+     * @serialField permissions j86.java.util.Vector
      *     A list of ServicePermission objects.
      */
     private static final ObjectStreamField[] serialPersistentFields = {

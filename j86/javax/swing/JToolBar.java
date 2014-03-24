@@ -23,29 +23,29 @@
  * questions.
  */
 
-package javax.swing;
+package j86.javax.swing;
 
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.ComponentOrientation;
-import java.awt.Container;
-import java.awt.Dimension;
-import java.awt.Graphics;
-import java.awt.Insets;
-import java.awt.LayoutManager;
-import java.awt.LayoutManager2;
-import java.awt.event.*;
-import java.beans.*;
+import j86.java.awt.Color;
+import j86.java.awt.Component;
+import j86.java.awt.ComponentOrientation;
+import j86.java.awt.Container;
+import j86.java.awt.Dimension;
+import j86.java.awt.Graphics;
+import j86.java.awt.Insets;
+import j86.java.awt.LayoutManager;
+import j86.java.awt.LayoutManager2;
+import j86.j86.java.awt.event.*;
+import j86.java.beans.*;
 
-import javax.swing.border.Border;
-import javax.swing.plaf.*;
-import javax.accessibility.*;
+import j86.j86.javax.swing.border.Border;
+import j86.j86.javax.swing.plaf.*;
+import j86.javax.accessibility.*;
 
-import java.io.Serializable;
-import java.io.ObjectOutputStream;
-import java.io.ObjectInputStream;
-import java.io.IOException;
-import java.util.Hashtable;
+import j86.java.io.Serializable;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.IOException;
+import j86.java.util.Hashtable;
 
 
 /**
@@ -75,8 +75,8 @@ import java.util.Hashtable;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @beaninfo
  *   attribute: isContainer true

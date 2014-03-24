@@ -22,18 +22,18 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.rmi;
+package j86.java.rmi;
 
-import java.rmi.registry.*;
-import java.net.MalformedURLException;
-import java.net.URI;
-import java.net.URISyntaxException;
+import j86.j86.java.rmi.registry.*;
+import j86.java.net.MalformedURLException;
+import j86.java.net.URI;
+import j86.java.net.URISyntaxException;
 
 /**
  * The <code>Naming</code> class provides methods for storing and obtaining
  * references to remote objects in a remote object registry.  Each method of
  * the <code>Naming</code> class takes as one of its arguments a name that
- * is a <code>java.lang.String</code> in URL format (without the
+ * is a <code>j86.java.lang.String</code> in URL format (without the
  * scheme component) of the form:
  *
  * <PRE>
@@ -59,15 +59,15 @@ import java.net.URISyntaxException;
  * object by name, obtain its reference, and then invoke remote methods on the
  * object.  A registry may be shared by all servers running on a host or an
  * individual server process may create and use its own registry if desired
- * (see <code>java.rmi.registry.LocateRegistry.createRegistry</code> method
+ * (see <code>j86.j86.java.rmi.registry.LocateRegistry.createRegistry</code> method
  * for details).
  *
  * @author  Ann Wollrath
  * @author  Roger Riggs
  * @since   JDK1.1
- * @see     java.rmi.registry.Registry
- * @see     java.rmi.registry.LocateRegistry
- * @see     java.rmi.registry.LocateRegistry#createRegistry(int)
+ * @see     j86.j86.java.rmi.registry.Registry
+ * @see     j86.j86.java.rmi.registry.LocateRegistry
+ * @see     j86.j86.java.rmi.registry.LocateRegistry#createRegistry(int)
  */
 public final class Naming {
     /**
@@ -90,7 +90,7 @@ public final class Naming {
      */
     public static Remote lookup(String name)
         throws NotBoundException,
-            java.net.MalformedURLException,
+            j86.java.net.MalformedURLException,
             RemoteException
     {
         ParsedNamingURL parsed = parseURL(name);
@@ -116,7 +116,7 @@ public final class Naming {
      */
     public static void bind(String name, Remote obj)
         throws AlreadyBoundException,
-            java.net.MalformedURLException,
+            j86.java.net.MalformedURLException,
             RemoteException
     {
         ParsedNamingURL parsed = parseURL(name);
@@ -144,7 +144,7 @@ public final class Naming {
     public static void unbind(String name)
         throws RemoteException,
             NotBoundException,
-            java.net.MalformedURLException
+            j86.java.net.MalformedURLException
     {
         ParsedNamingURL parsed = parseURL(name);
         Registry registry = getRegistry(parsed);
@@ -166,7 +166,7 @@ public final class Naming {
      * @since JDK1.1
      */
     public static void rebind(String name, Remote obj)
-        throws RemoteException, java.net.MalformedURLException
+        throws RemoteException, j86.java.net.MalformedURLException
     {
         ParsedNamingURL parsed = parseURL(name);
         Registry registry = getRegistry(parsed);
@@ -193,7 +193,7 @@ public final class Naming {
      * @since JDK1.1
      */
     public static String[] list(String name)
-        throws RemoteException, java.net.MalformedURLException
+        throws RemoteException, j86.java.net.MalformedURLException
     {
         ParsedNamingURL parsed = parseURL(name);
         Registry registry = getRegistry(parsed);

@@ -22,9 +22,9 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.swing;
+package j86.sun.swing;
 
-import java.util.*;
+import j86.java.util.*;
 
 /**
  * <b>WARNING:</b> This class is an implementation detail and is only
@@ -53,7 +53,7 @@ public class BakedArrayList extends ArrayList {
         super(size);
     }
 
-    public BakedArrayList(java.util.List data) {
+    public BakedArrayList(j86.java.util.List data) {
         this(data.size());
         for (int counter = 0, max = data.size(); counter < max; counter++){
             add(data.get(counter));

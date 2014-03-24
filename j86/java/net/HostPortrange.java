@@ -23,12 +23,12 @@
  * questions.
  */
 
-package java.net;
+package j86.java.net;
 
-import java.net.*;
-import java.util.Formatter;
-import java.util.Locale;
-import sun.net.util.IPAddressUtil;
+import j86.java.net.*;
+import j86.java.util.Formatter;
+import j86.java.util.Locale;
+import j86.j86.sun.net.util.IPAddressUtil;
 
 /**
  * Parses a string containing a host/domain name and port range

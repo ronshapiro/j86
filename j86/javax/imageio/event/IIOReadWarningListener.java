@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.imageio.event;
+package j86.j86.javax.imageio.event;
 
-import java.util.EventListener;
-import javax.imageio.ImageReader;
+import j86.java.util.EventListener;
+import j86.javax.imageio.ImageReader;
 
 /**
  * An interface used by <code>ImageReader</code> implementations to
@@ -39,8 +39,8 @@ import javax.imageio.ImageReader;
  * with an <code>ImageReader</code>.  It is up to the
  * <code>ImageReader</code> to provide localized messages.
  *
- * @see javax.imageio.ImageReader#addIIOReadWarningListener
- * @see javax.imageio.ImageReader#removeIIOReadWarningListener
+ * @see j86.javax.imageio.ImageReader#addIIOReadWarningListener
+ * @see j86.javax.imageio.ImageReader#removeIIOReadWarningListener
  *
  */
 public interface IIOReadWarningListener extends EventListener {

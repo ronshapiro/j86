@@ -24,17 +24,17 @@
  */
 
 
-package javax.security.cert;
+package j86.javax.security.cert;
 
 /**
  * Certificate Encoding Exception. This is thrown whenever an error
  * occurs whilst attempting to encode a certificate.
  *
- * <p><em>Note: The classes in the package {@code javax.security.cert}
+ * <p><em>Note: The classes in the package {@code j86.javax.security.cert}
  * exist for compatibility with earlier versions of the
  * Java Secure Sockets Extension (JSSE). New applications should instead
  * use the standard Java SE certificate classes located in
- * {@code java.security.cert}.</em></p>
+ * {@code j86.j86.java.security.cert}.</em></p>
  *
  * @since 1.4
  * @author Hemma Prafullchandra

@@ -24,28 +24,28 @@
  */
 
 
-package sun.security.ssl;
+package j86.sun.security.ssl;
 
-import java.io.*;
-import java.util.*;
-import java.security.*;
-import java.security.cert.*;
-import java.security.interfaces.*;
-import java.security.spec.ECParameterSpec;
+import j86.java.io.*;
+import j86.java.util.*;
+import j86.java.security.*;
+import j86.j86.java.security.cert.*;
+import j86.j86.java.security.interfaces.*;
+import j86.j86.java.security.spec.ECParameterSpec;
 
-import javax.crypto.SecretKey;
-import javax.crypto.spec.SecretKeySpec;
+import j86.javax.crypto.SecretKey;
+import j86.j86.javax.crypto.spec.SecretKeySpec;
 
-import javax.net.ssl.*;
+import j86.j86.javax.net.ssl.*;
 
-import javax.security.auth.Subject;
+import j86.javax.security.auth.Subject;
 
-import sun.security.util.KeyUtil;
-import sun.security.action.GetPropertyAction;
-import sun.security.ssl.HandshakeMessage.*;
-import sun.security.ssl.CipherSuite.*;
-import sun.security.ssl.SignatureAndHashAlgorithm.*;
-import static sun.security.ssl.CipherSuite.KeyExchange.*;
+import j86.sun.security.util.KeyUtil;
+import j86.sun.security.action.GetPropertyAction;
+import j86.sun.security.ssl.HandshakeMessage.*;
+import j86.sun.security.ssl.CipherSuite.*;
+import j86.sun.security.ssl.SignatureAndHashAlgorithm.*;
+import static j86.sun.security.ssl.CipherSuite.KeyExchange.*;
 
 /**
  * ServerHandshaker does the protocol handshaking from the point
@@ -623,7 +623,7 @@ final class ServerHandshaker extends Handshaker {
                                 System.out.println("Kerberos credentials are" +
                                     " not present in the current Subject;" +
                                     " check if " +
-                                    " javax.security.auth.useSubjectAsCreds" +
+                                    " j86.javax.security.auth.useSubjectAsCreds" +
                                     " system property has been set to false");
                         }
                     }

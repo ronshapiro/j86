@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.util;
+package j86.java.util;
 
-import java.util.Map.Entry;
-import sun.misc.SharedSecrets;
+import j86.java.util.Map.Entry;
+import j86.sun.misc.SharedSecrets;
 
 /**
  * A specialized {@link Map} implementation for use with enum type keys.  All
@@ -77,7 +77,7 @@ import sun.misc.SharedSecrets;
  * @since 1.5
  */
 public class EnumMap<K extends Enum<K>, V> extends AbstractMap<K, V>
-    implements java.io.Serializable, Cloneable
+    implements j86.java.io.Serializable, Cloneable
 {
     /**
      * The <tt>Class</tt> object for the enum type of all the keys of this map.
@@ -112,7 +112,7 @@ public class EnumMap<K extends Enum<K>, V> extends AbstractMap<K, V>
         }
 
         public String toString() {
-            return "java.util.EnumMap.NULL";
+            return "j86.java.util.EnumMap.NULL";
         }
     };
 
@@ -498,7 +498,7 @@ public class EnumMap<K extends Enum<K>, V> extends AbstractMap<K, V>
         public <T> T[] toArray(T[] a) {
             int size = size();
             if (a.length < size)
-                a = (T[])java.lang.reflect.Array
+                a = (T[])j86.j86.j86.java.lang.reflect.Array
                     .newInstance(a.getClass().getComponentType(), size);
             if (a.length > size)
                 a[size] = null;
@@ -763,8 +763,8 @@ public class EnumMap<K extends Enum<K>, V> extends AbstractMap<K, V>
      *             and value (Object) for each key-value mapping represented
      *             by the enum map.
      */
-    private void writeObject(java.io.ObjectOutputStream s)
-        throws java.io.IOException
+    private void writeObject(j86.java.io.ObjectOutputStream s)
+        throws j86.java.io.IOException
     {
         // Write out the key type and any hidden stuff
         s.defaultWriteObject();
@@ -788,8 +788,8 @@ public class EnumMap<K extends Enum<K>, V> extends AbstractMap<K, V>
      * deserialize it).
      */
     @SuppressWarnings("unchecked")
-    private void readObject(java.io.ObjectInputStream s)
-        throws java.io.IOException, ClassNotFoundException
+    private void readObject(j86.java.io.ObjectInputStream s)
+        throws j86.java.io.IOException, ClassNotFoundException
     {
         // Read in the key type and any hidden stuff
         s.defaultReadObject();

@@ -22,9 +22,9 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.accessibility;
+package j86.javax.accessibility;
 
-import javax.swing.text.AttributeSet;
+import j86.j86.javax.swing.text.AttributeSet;
 
 
 /**
@@ -46,8 +46,8 @@ import javax.swing.text.AttributeSet;
  * is used by implementors of the class <code>AccessibleContext</code> in
  * order to generate <code>ACCESSIBLE_TEXT_ATTRIBUTES_CHANGED</code> events.
  *
- * @see javax.accessibility.AccessibleContext
- * @see javax.accessibility.AccessibleContext#ACCESSIBLE_TEXT_ATTRIBUTES_CHANGED
+ * @see j86.javax.accessibility.AccessibleContext
+ * @see j86.javax.accessibility.AccessibleContext#ACCESSIBLE_TEXT_ATTRIBUTES_CHANGED
  */
 public class AccessibleAttributeSequence {
     /** The start index of the text sequence */

@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.util.prefs;
+package j86.j86.java.util.prefs;
 
-import java.io.NotSerializableException;
+import j86.java.io.NotSerializableException;
 
 /**
  * Thrown to indicate that a preferences operation could not complete because

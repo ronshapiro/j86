@@ -23,14 +23,14 @@
  * questions.
  */
 
-package javax.sql.rowset.serial;
+package j86.j86.j86.javax.sql.rowset.serial;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.sql.*;
-import java.util.Map;
-import java.util.Vector;
+import j86.java.io.BufferedReader;
+import j86.java.io.IOException;
+import j86.java.io.InputStreamReader;
+import j86.java.sql.*;
+import j86.java.util.Map;
+import j86.java.util.Vector;
 
 /**
  * The output stream for writing the attributes of a
@@ -86,7 +86,7 @@ public class SQLOutputImpl implements SQLOutput {
      *        the UDT to be mapped to one or more objects in the Java
      *        programming language
      *
-     * @param map a <code>java.util.Map</code> object containing zero or
+     * @param map a <code>j86.java.util.Map</code> object containing zero or
      *        more entries, with each entry consisting of 1) a <code>String</code>
      *        giving the fully qualified name of a UDT and 2) the
      *        <code>Class</code> object for the <code>SQLData</code> implementation
@@ -108,7 +108,7 @@ public class SQLOutputImpl implements SQLOutput {
     //================================================================
     // Methods for writing attributes to the stream of SQL data.
     // These methods correspond to the column-accessor methods of
-    // java.sql.ResultSet.
+    // j86.java.sql.ResultSet.
     //================================================================
 
     /**
@@ -234,7 +234,7 @@ public class SQLOutputImpl implements SQLOutput {
     }
 
     /**
-     * Writes a <code>java.math.BigDecimal</code> object in the Java programming
+     * Writes a <code>j86.java.math.BigDecimal</code> object in the Java programming
      * language to this <code>SQLOutputImpl</code> object. The driver converts
      * it to an SQL <code>NUMERIC</code> before returning it to the database.
      *
@@ -244,7 +244,7 @@ public class SQLOutputImpl implements SQLOutput {
      *        values of a UDT to the database.
      */
     @SuppressWarnings("unchecked")
-    public void writeBigDecimal(java.math.BigDecimal x) throws SQLException{
+    public void writeBigDecimal(j86.java.math.BigDecimal x) throws SQLException{
         attribs.add(x);
     }
 
@@ -265,7 +265,7 @@ public class SQLOutputImpl implements SQLOutput {
     }
 
     /**
-     * Writes a <code>java.sql.Date</code> object in the Java programming
+     * Writes a <code>j86.java.sql.Date</code> object in the Java programming
      * language to this <code>SQLOutputImpl</code> object. The driver converts
      * it to an SQL <code>DATE</code> before returning it to the database.
      *
@@ -275,12 +275,12 @@ public class SQLOutputImpl implements SQLOutput {
      *        values of a UDT to the database.
      */
     @SuppressWarnings("unchecked")
-    public void writeDate(java.sql.Date x) throws SQLException {
+    public void writeDate(j86.java.sql.Date x) throws SQLException {
         attribs.add(x);
     }
 
     /**
-     * Writes a <code>java.sql.Time</code> object in the Java programming
+     * Writes a <code>j86.java.sql.Time</code> object in the Java programming
      * language to this <code>SQLOutputImpl</code> object. The driver converts
      * it to an SQL <code>TIME</code> before returning it to the database.
      *
@@ -290,12 +290,12 @@ public class SQLOutputImpl implements SQLOutput {
      *        values of a UDT to the database.
      */
     @SuppressWarnings("unchecked")
-    public void writeTime(java.sql.Time x) throws SQLException {
+    public void writeTime(j86.java.sql.Time x) throws SQLException {
         attribs.add(x);
     }
 
     /**
-     * Writes a <code>java.sql.Timestamp</code> object in the Java programming
+     * Writes a <code>j86.java.sql.Timestamp</code> object in the Java programming
      * language to this <code>SQLOutputImpl</code> object. The driver converts
      * it to an SQL <code>TIMESTAMP</code> before returning it to the database.
      *
@@ -305,7 +305,7 @@ public class SQLOutputImpl implements SQLOutput {
      *        values of a UDT to the database.
      */
     @SuppressWarnings("unchecked")
-    public void writeTimestamp(java.sql.Timestamp x) throws SQLException {
+    public void writeTimestamp(j86.java.sql.Timestamp x) throws SQLException {
         attribs.add(x);
     }
 
@@ -320,7 +320,7 @@ public class SQLOutputImpl implements SQLOutput {
      *        values of a UDT to the database.
      */
     @SuppressWarnings("unchecked")
-    public void writeCharacterStream(java.io.Reader x) throws SQLException {
+    public void writeCharacterStream(j86.java.io.Reader x) throws SQLException {
          BufferedReader bufReader = new BufferedReader(x);
          try {
              int i;
@@ -350,7 +350,7 @@ public class SQLOutputImpl implements SQLOutput {
      *        values of a UDT to the database.
      */
     @SuppressWarnings("unchecked")
-    public void writeAsciiStream(java.io.InputStream x) throws SQLException {
+    public void writeAsciiStream(j86.java.io.InputStream x) throws SQLException {
          BufferedReader bufReader = new BufferedReader(new InputStreamReader(x));
          try {
                int i;
@@ -380,7 +380,7 @@ public class SQLOutputImpl implements SQLOutput {
      *        values of a UDT to the database.
      */
     @SuppressWarnings("unchecked")
-    public void writeBinaryStream(java.io.InputStream x) throws SQLException {
+    public void writeBinaryStream(j86.java.io.InputStream x) throws SQLException {
          BufferedReader bufReader = new BufferedReader(new InputStreamReader(x));
          try {
                int i;
@@ -559,7 +559,7 @@ public class SQLOutputImpl implements SQLOutput {
     }
 
     /**
-     * Writes an <code>java.sql.Type.DATALINK</code> object in the Java
+     * Writes an <code>j86.java.sql.Type.DATALINK</code> object in the Java
      * programming language to this <code>SQLOutputImpl</code> object. The
      * driver converts this value to a serializable <code>SerialDatalink</code>
      * SQL <code>DATALINK</code> value before return it to the database.
@@ -570,7 +570,7 @@ public class SQLOutputImpl implements SQLOutput {
      *        values of a UDT to the database.
      */
     @SuppressWarnings("unchecked")
-    public void writeURL(java.net.URL url) throws SQLException {
+    public void writeURL(j86.java.net.URL url) throws SQLException {
         if (url == null) {
             attribs.add(null);
         } else {

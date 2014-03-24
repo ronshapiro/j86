@@ -59,25 +59,25 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package java.time.zone;
+package j86.j86.java.time.zone;
 
-import static java.time.temporal.TemporalAdjusters.nextOrSame;
-import static java.time.temporal.TemporalAdjusters.previousOrSame;
+import static j86.j86.java.time.temporal.TemporalAdjusters.nextOrSame;
+import static j86.j86.java.time.temporal.TemporalAdjusters.previousOrSame;
 
-import java.io.DataInput;
-import java.io.DataOutput;
-import java.io.IOException;
-import java.io.InvalidObjectException;
-import java.io.ObjectInputStream;
-import java.io.Serializable;
-import java.time.DayOfWeek;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.LocalTime;
-import java.time.Month;
-import java.time.ZoneOffset;
-import java.time.chrono.IsoChronology;
-import java.util.Objects;
+import j86.java.io.DataInput;
+import j86.java.io.DataOutput;
+import j86.java.io.IOException;
+import j86.java.io.InvalidObjectException;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.Serializable;
+import j86.java.time.DayOfWeek;
+import j86.java.time.LocalDate;
+import j86.java.time.LocalDateTime;
+import j86.java.time.LocalTime;
+import j86.java.time.Month;
+import j86.java.time.ZoneOffset;
+import j86.j86.java.time.chrono.IsoChronology;
+import j86.java.util.Objects;
 
 /**
  * A rule expressing how to create a transition.
@@ -243,10 +243,10 @@ public final class ZoneOffsetTransitionRule implements Serializable {
 
     /**
      * Writes the object using a
-     * <a href="../../../serialized-form.html#java.time.zone.Ser">dedicated serialized form</a>.
+     * <a href="../../../serialized-form.html#j86.j86.java.time.zone.Ser">dedicated serialized form</a>.
      * @serialData
      * Refer to the serialized form of
-     * <a href="../../../serialized-form.html#java.time.zone.ZoneRules">ZoneRules.writeReplace</a>
+     * <a href="../../../serialized-form.html#j86.j86.java.time.zone.ZoneRules">ZoneRules.writeReplace</a>
      * for the encoding of epoch seconds and offsets.
      * <pre style="font-size:1.0em">{@code
      *

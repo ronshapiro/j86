@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.management;
+package j86.sun.management;
 
-import java.util.Map;
-import java.util.HashMap;
-import sun.management.counter.Counter;
+import j86.java.util.Map;
+import j86.java.util.HashMap;
+import j86.j86.sun.management.counter.Counter;
 
 
 /**
@@ -53,7 +53,7 @@ class HotspotThread
     public Map<String, Long> getInternalThreadCpuTimes() {
         int count = getInternalThreadCount();
         if (count == 0) {
-            return java.util.Collections.emptyMap();
+            return j86.java.util.Collections.emptyMap();
         }
         String[] names = new String[count];
         long[] times = new long[count];
@@ -73,7 +73,7 @@ class HotspotThread
     private static final String THREADS_COUNTER_NAME_PATTERN =
         JAVA_THREADS + "|" + COM_SUN_THREADS + "|" + SUN_THREADS;
 
-    public java.util.List<Counter> getInternalThreadingCounters() {
+    public j86.java.util.List<Counter> getInternalThreadingCounters() {
         return jvm.getInternalCounters(THREADS_COUNTER_NAME_PATTERN);
     }
 }

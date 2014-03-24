@@ -23,26 +23,26 @@
  * questions.
  */
 
-package sun.applet;
+package j86.sun.applet;
 
-import java.util.*;
-import java.io.*;
-import java.awt.*;
-import java.awt.event.*;
-import java.awt.print.*;
-import javax.print.attribute.*;
-import java.applet.*;
-import java.net.URL;
-import java.net.MalformedURLException;
-import java.net.SocketPermission;
-import sun.misc.Ref;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import sun.awt.SunToolkit;
-import sun.awt.AppContext;
-import java.lang.ref.WeakReference;
+import j86.java.util.*;
+import j86.java.io.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.j86.java.awt.print.*;
+import j86.j86.javax.print.attribute.*;
+import j86.java.applet.*;
+import j86.java.net.URL;
+import j86.java.net.MalformedURLException;
+import j86.java.net.SocketPermission;
+import j86.sun.misc.Ref;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.sun.awt.SunToolkit;
+import j86.sun.awt.AppContext;
+import j86.j86.java.lang.ref.WeakReference;
 
 /**
  * A frame to show the applet tag in.
@@ -236,7 +236,7 @@ public class AppletViewer extends Frame implements AppletContext,
                         break;
                     }
                     case AppletPanel.APPLET_LOADING_COMPLETED: {
-                        Applet a = src.getApplet(); // sun.applet.AppletPanel
+                        Applet a = src.getApplet(); // j86.sun.applet.AppletPanel
 
                         // Fixed #4754451: Applet can have methods running on main
                         // thread event queue.
@@ -362,7 +362,7 @@ public class AppletViewer extends Frame implements AppletContext,
     }
 
     /*
-     * Methods for java.applet.AppletContext
+     * Methods for j86.java.applet.AppletContext
      */
 
     private static Map audioClips = new HashMap();
@@ -1032,7 +1032,7 @@ public class AppletViewer extends Frame implements AppletContext,
             }
             //statusMsgStream.println("PUT " + att + " = '" + val + "'");
             if (! val.equals("")) {
-                atts.put(att.toLowerCase(java.util.Locale.ENGLISH), val);
+                atts.put(att.toLowerCase(j86.java.util.Locale.ENGLISH), val);
             }
             while (true) {
                 if ((c == '>') || (c < 0) ||
@@ -1099,7 +1099,7 @@ public class AppletViewer extends Frame implements AppletContext,
         String embedRequiresWidthWarning = amh.getMessage("parse.warning.embed.requireswidth");
         String appNotLongerSupportedWarning = amh.getMessage("parse.warning.appnotLongersupported");
 
-        java.net.URLConnection conn = url.openConnection();
+        j86.java.net.URLConnection conn = url.openConnection();
         Reader in = makeReader(conn.getInputStream());
         /* The original URL may have been redirected - this
          * sets it to whatever URL/codebase we ended up getting
@@ -1264,13 +1264,13 @@ public class AppletViewer extends Frame implements AppletContext,
         SecurityManager security = System.getSecurityManager();
         if (security != null) {
             try {
-                java.security.Permission perm =
+                j86.java.security.Permission perm =
                     url.openConnection().getPermission();
                 if (perm != null)
                     security.checkPermission(perm);
                 else
                     security.checkConnect(url.getHost(), url.getPort());
-            } catch (java.io.IOException ioe) {
+            } catch (j86.java.io.IOException ioe) {
                     security.checkConnect(url.getHost(), url.getPort());
             }
         }

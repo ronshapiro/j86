@@ -28,10 +28,10 @@
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
 
-package sun.security.krb5.internal.ccache;
+package j86.j86.j86.sun.security.krb5.internal.ccache;
 
-import sun.security.krb5.*;
-import sun.security.krb5.internal.*;
+import j86.sun.security.krb5.*;
+import j86.j86.sun.security.krb5.internal.*;
 
 public class Credentials {
 
@@ -169,7 +169,7 @@ public class Credentials {
         return sname;
     }
 
-    public sun.security.krb5.Credentials setKrbCreds() {
+    public j86.sun.security.krb5.Credentials setKrbCreds() {
         // Note: We will not pass authorizationData to s.s.k.Credentials. The
         // field in that class will be passed to Krb5Context as the return
         // value of ExtendedGSSContext.inquireSecContext(KRB5_GET_AUTHZ_DATA),
@@ -180,7 +180,7 @@ public class Credentials {
         // is most likely to be the one in Authenticator in PA-TGS-REQ encoded
         // in TGS-REQ, therefore only stored with a service ticket. Currently
         // in Java, we only reads TGTs.
-        return new sun.security.krb5.Credentials(ticket,
+        return new j86.sun.security.krb5.Credentials(ticket,
                 cname, sname, key, flags, authtime, starttime, endtime, renewTill, caddr);
     }
 

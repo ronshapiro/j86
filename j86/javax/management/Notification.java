@@ -23,17 +23,17 @@
  * questions.
  */
 
-package javax.management;
+package j86.javax.management;
 
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.ObjectStreamField;
-import java.util.EventObject;
+import j86.java.io.IOException;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectStreamField;
+import j86.java.util.EventObject;
 
-import java.security.AccessController;
+import j86.java.security.AccessController;
 
-import com.sun.jmx.mbeanserver.GetPropertyAction;
+import j86.com.sun.jmx.mbeanserver.GetPropertyAction;
 
 /**
  * <p>The Notification class represents a notification emitted by an
@@ -185,7 +185,7 @@ public class Notification extends EventObject {
         this.source = source;
         this.type = type;
         this.sequenceNumber = sequenceNumber ;
-        this.timeStamp = (new java.util.Date()).getTime() ;
+        this.timeStamp = (new j86.java.util.Date()).getTime() ;
     }
 
     /**
@@ -203,7 +203,7 @@ public class Notification extends EventObject {
         this.source = source;
         this.type = type;
         this.sequenceNumber = sequenceNumber ;
-        this.timeStamp = (new java.util.Date()).getTime() ;
+        this.timeStamp = (new j86.java.util.Date()).getTime() ;
         this.message = message ;
     }
 

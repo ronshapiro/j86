@@ -27,11 +27,11 @@
  * (C) Copyright IBM Corp. 2013
  */
 
-package com.sun.crypto.provider;
+package j86.com.sun.crypto.provider;
 
-import java.security.*;
-import javax.crypto.*;
-import static com.sun.crypto.provider.AESConstants.AES_BLOCK_SIZE;
+import j86.java.security.*;
+import j86.javax.crypto.*;
+import static j86.com.sun.crypto.provider.AESConstants.AES_BLOCK_SIZE;
 
 /**
  * This class represents the GCTR function defined in NIST 800-38D

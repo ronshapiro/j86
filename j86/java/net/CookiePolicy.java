@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.net;
+package j86.java.net;
 
 /**
  * CookiePolicy implementations decide which cookies should be accepted

@@ -23,23 +23,23 @@
  * questions.
  */
 
-package sun.security.x509;
+package j86.sun.security.x509;
 
-import java.io.*;
-import java.util.Arrays;
-import java.util.Properties;
-import java.security.Key;
-import java.security.PublicKey;
-import java.security.KeyFactory;
-import java.security.Security;
-import java.security.Provider;
-import java.security.InvalidKeyException;
-import java.security.NoSuchAlgorithmException;
-import java.security.spec.InvalidKeySpecException;
-import java.security.spec.X509EncodedKeySpec;
+import j86.java.io.*;
+import j86.java.util.Arrays;
+import j86.java.util.Properties;
+import j86.java.security.Key;
+import j86.java.security.PublicKey;
+import j86.java.security.KeyFactory;
+import j86.java.security.Security;
+import j86.java.security.Provider;
+import j86.java.security.InvalidKeyException;
+import j86.java.security.NoSuchAlgorithmException;
+import j86.j86.java.security.spec.InvalidKeySpecException;
+import j86.j86.java.security.spec.X509EncodedKeySpec;
 
-import sun.misc.HexDumpEncoder;
-import sun.security.util.*;
+import j86.sun.misc.HexDumpEncoder;
+import j86.sun.security.util.*;
 
 /**
  * Holds an X.509 key, for example a public key found in an X.509
@@ -68,8 +68,8 @@ public class X509Key implements PublicKey {
      * The key bytes, without the algorithm information.
      * @deprecated Use the BitArray form which does not require keys to
      * be byte aligned.
-     * @see sun.security.x509.X509Key#setKey(BitArray)
-     * @see sun.security.x509.X509Key#getKey()
+     * @see j86.sun.security.x509.X509Key#setKey(BitArray)
+     * @see j86.sun.security.x509.X509Key#getKey()
      */
     @Deprecated
     protected byte[] key = null;

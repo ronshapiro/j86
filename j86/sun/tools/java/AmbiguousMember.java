@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.tools.java;
+package j86.sun.tools.java;
 
-import java.util.Enumeration;
+import j86.java.util.Enumeration;
 
 /**
  * This exception is thrown when a field reference is

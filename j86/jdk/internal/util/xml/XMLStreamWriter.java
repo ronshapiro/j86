@@ -23,11 +23,11 @@
  * questions.
  */
 
-package jdk.internal.util.xml;
+package j86.jdk.internal.util.xml;
 
 /**
  * Basic XMLStreamWriter for writing simple XML files such as those
- * defined in java.util.Properties
+ * defined in j86.java.util.Properties
  *
  * This is a subset of javax.xml.stream.XMLStreamWriter
  *

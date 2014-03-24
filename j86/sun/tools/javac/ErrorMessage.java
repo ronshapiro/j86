@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.tools.javac;
+package j86.j86.sun.tools.javac;
 
 /**
  * A sorted list of error messages

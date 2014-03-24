@@ -23,13 +23,13 @@
  * questions.
  */
 
-package javax.print.attribute;
+package j86.j86.javax.print.attribute;
 
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.Serializable;
-import java.util.HashMap;
+import j86.java.io.IOException;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.Serializable;
+import j86.java.util.HashMap;
 
 /**
  * Class HashAttributeSet provides an <code>AttributeSet</code>
@@ -257,7 +257,7 @@ public class HashAttributeSet implements AttributeSet, Serializable {
      *
      * @param  category  Attribute category whose associated attribute value
      *                   is to be returned. It must be a
-     *                   {@link java.lang.Class Class}
+     *                   {@link j86.java.lang.Class Class}
      *                   that implements interface {@link Attribute
      *                   Attribute}.
      *
@@ -270,7 +270,7 @@ public class HashAttributeSet implements AttributeSet, Serializable {
      *     (unchecked exception) Thrown if the <CODE>category</CODE> is null.
      * @throws  ClassCastException
      *     (unchecked exception) Thrown if the <CODE>category</CODE> is not a
-     *     {@link java.lang.Class Class} that implements interface {@link
+     *     {@link j86.java.lang.Class Class} that implements interface {@link
      *     Attribute Attribute}.
      */
     public Attribute get(Class<?> category) {
@@ -512,7 +512,7 @@ public class HashAttributeSet implements AttributeSet, Serializable {
      * This ensures that <tt>t1.equals(t2)</tt> implies that
      * <tt>t1.hashCode()==t2.hashCode()</tt> for any two attribute sets
      * <tt>t1</tt> and <tt>t2</tt>, as required by the general contract of
-     * {@link java.lang.Object#hashCode() Object.hashCode()}.
+     * {@link j86.java.lang.Object#hashCode() Object.hashCode()}.
      *
      * @return  The hash code value for this attribute set.
      */

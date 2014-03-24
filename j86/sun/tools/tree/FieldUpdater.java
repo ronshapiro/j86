@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.tools.tree;
+package j86.sun.tools.tree;
 
-import sun.tools.java.*;
-import sun.tools.asm.Assembler;
-import java.io.PrintStream;
+import j86.sun.tools.java.*;
+import j86.sun.tools.asm.Assembler;
+import j86.java.io.PrintStream;
 
 /**
  * This class encapsulates the information required to generate an update to a private

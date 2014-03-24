@@ -23,24 +23,24 @@
  * questions.
  */
 
-package com.oracle.net;
+package j86.com.oracle.net;
 
-import java.net.Socket;
-import java.net.ServerSocket;
-import java.net.SocketImpl;
-import java.net.SocketImplFactory;
-import java.net.SocketException;
-import java.nio.channels.SocketChannel;
-import java.nio.channels.ServerSocketChannel;
-import java.io.IOException;
-import java.io.FileDescriptor;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.AccessibleObject;
-import java.lang.reflect.InvocationTargetException;
+import j86.java.net.Socket;
+import j86.java.net.ServerSocket;
+import j86.java.net.SocketImpl;
+import j86.java.net.SocketImplFactory;
+import j86.java.net.SocketException;
+import j86.j86.java.nio.channels.SocketChannel;
+import j86.j86.java.nio.channels.ServerSocketChannel;
+import j86.java.io.IOException;
+import j86.java.io.FileDescriptor;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.j86.j86.java.lang.reflect.Constructor;
+import j86.j86.j86.java.lang.reflect.AccessibleObject;
+import j86.j86.j86.java.lang.reflect.InvocationTargetException;
 
-import sun.net.sdp.SdpSupport;
+import j86.j86.sun.net.sdp.SdpSupport;
 
 /**
  * This class consists exclusively of static methods that Sockets or Channels to
@@ -70,7 +70,7 @@ public final class Sdp {
     private static final Constructor<SocketImpl> socketImplCtor;
     static {
         try {
-            Class<?> cl = Class.forName("java.net.SdpSocketImpl", true, null);
+            Class<?> cl = Class.forName("j86.java.net.SdpSocketImpl", true, null);
             socketImplCtor = (Constructor<SocketImpl>)cl.getDeclaredConstructor();
             setAccessible(socketImplCtor);
         } catch (ClassNotFoundException e) {
@@ -115,7 +115,7 @@ public final class Sdp {
 
     /**
      * Creates an unconnected and unbound SDP socket. The {@code Socket} is
-     * associated with a {@link java.net.SocketImpl} of the system-default type.
+     * associated with a {@link j86.java.net.SocketImpl} of the system-default type.
      *
      * @return  a new Socket
      *
@@ -131,7 +131,7 @@ public final class Sdp {
 
     /**
      * Creates an unbound SDP server socket. The {@code ServerSocket} is
-     * associated with a {@link java.net.SocketImpl} of the system-default type.
+     * associated with a {@link j86.java.net.SocketImpl} of the system-default type.
      *
      * @return  a new ServerSocket
      *
@@ -163,7 +163,7 @@ public final class Sdp {
      * Opens a socket channel to a SDP socket.
      *
      * <p> The channel will be associated with the system-wide default
-     * {@link java.nio.channels.spi.SelectorProvider SelectorProvider}.
+     * {@link j86.j86.j86.java.nio.channels.spi.SelectorProvider SelectorProvider}.
      *
      * @return  a new SocketChannel
      *
@@ -175,14 +175,14 @@ public final class Sdp {
      */
     public static SocketChannel openSocketChannel() throws IOException {
         FileDescriptor fd = SdpSupport.createSocket();
-        return sun.nio.ch.Secrets.newSocketChannel(fd);
+        return j86.j86.j86.sun.nio.ch.Secrets.newSocketChannel(fd);
     }
 
     /**
      * Opens a socket channel to a SDP socket.
      *
      * <p> The channel will be associated with the system-wide default
-     * {@link java.nio.channels.spi.SelectorProvider SelectorProvider}.
+     * {@link j86.j86.j86.java.nio.channels.spi.SelectorProvider SelectorProvider}.
      *
      * @return  a new ServerSocketChannel
      *
@@ -196,6 +196,6 @@ public final class Sdp {
         throws IOException
     {
         FileDescriptor fd = SdpSupport.createSocket();
-        return sun.nio.ch.Secrets.newServerSocketChannel(fd);
+        return j86.j86.j86.sun.nio.ch.Secrets.newServerSocketChannel(fd);
     }
 }

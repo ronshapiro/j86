@@ -23,14 +23,14 @@
  * questions.
  */
 
-package javax.swing.plaf;
+package j86.j86.javax.swing.plaf;
 
-import javax.swing.ComponentInputMap;
-import javax.swing.JComponent;
+import j86.javax.swing.ComponentInputMap;
+import j86.javax.swing.JComponent;
 
 
 /**
- * A subclass of javax.swing.ComponentInputMap that implements UIResource.
+ * A subclass of j86.javax.swing.ComponentInputMap that implements UIResource.
  * UI classes which provide a ComponentInputMap should use this class.
  *
  * @author Scott Violet

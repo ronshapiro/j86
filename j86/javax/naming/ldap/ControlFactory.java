@@ -23,15 +23,15 @@
  * questions.
  */
 
-package javax.naming.ldap;
+package j86.j86.javax.naming.ldap;
 
-import javax.naming.NamingException;
-import javax.naming.Context;
+import j86.javax.naming.NamingException;
+import j86.javax.naming.Context;
 
-import java.util.Hashtable;
+import j86.java.util.Hashtable;
 
-import com.sun.naming.internal.FactoryEnumeration;
-import com.sun.naming.internal.ResourceManager;
+import j86.com.sun.naming.internal.FactoryEnumeration;
+import j86.com.sun.naming.internal.ResourceManager;
 
 
 /**

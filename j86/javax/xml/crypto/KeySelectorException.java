@@ -25,10 +25,10 @@
 /*
  * $Id: KeySelectorException.java,v 1.3 2005/05/10 15:47:42 mullan Exp $
  */
-package javax.xml.crypto;
+package j86.javax.xml.crypto;
 
-import java.io.PrintStream;
-import java.io.PrintWriter;
+import j86.java.io.PrintStream;
+import j86.java.io.PrintWriter;
 
 /**
  * Indicates an exceptional condition thrown by a {@link KeySelector}.

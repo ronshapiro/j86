@@ -23,8 +23,8 @@
  * questions.
  */
 
-package com.sun.tools.jdi;
-import com.sun.jdi.*;
+package j86.com.sun.tools.jdi;
+import j86.com.sun.jdi.*;
 
 class JDWPException extends Exception {
     private static final long serialVersionUID = -6321344442751299874L;

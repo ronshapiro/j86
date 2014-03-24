@@ -23,31 +23,31 @@
  * questions.
  */
 
-package java.beans;
+package j86.java.beans;
 
-import com.sun.beans.TypeResolver;
-import com.sun.beans.WeakCache;
-import com.sun.beans.finder.ClassFinder;
-import com.sun.beans.finder.MethodFinder;
+import j86.com.sun.beans.TypeResolver;
+import j86.com.sun.beans.WeakCache;
+import j86.j86.com.sun.beans.finder.ClassFinder;
+import j86.j86.com.sun.beans.finder.MethodFinder;
 
-import java.awt.Component;
+import j86.java.awt.Component;
 
-import java.lang.ref.Reference;
-import java.lang.ref.SoftReference;
-import java.lang.reflect.Method;
-import java.lang.reflect.Modifier;
-import java.lang.reflect.Type;
+import j86.j86.java.lang.ref.Reference;
+import j86.j86.java.lang.ref.SoftReference;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.j86.j86.java.lang.reflect.Modifier;
+import j86.j86.j86.java.lang.reflect.Type;
 
-import java.util.Map;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.EventListener;
-import java.util.EventObject;
-import java.util.List;
-import java.util.TreeMap;
+import j86.java.util.Map;
+import j86.java.util.ArrayList;
+import j86.java.util.HashMap;
+import j86.java.util.Iterator;
+import j86.java.util.EventListener;
+import j86.java.util.EventObject;
+import j86.java.util.List;
+import j86.java.util.TreeMap;
 
-import sun.reflect.misc.ReflectUtil;
+import j86.j86.sun.reflect.misc.ReflectUtil;
 
 /**
  * The Introspector class provides a standard way for tools to learn about
@@ -1067,7 +1067,7 @@ public class Introspector {
                     // If the adder method throws the TooManyListenersException then it
                     // is a Unicast event source.
                     if (throwsException(addMethod,
-                                        java.util.TooManyListenersException.class)) {
+                                        j86.java.util.TooManyListenersException.class)) {
                         esd.setUnicast(true);
                     }
                     addEvent(esd);
@@ -1257,7 +1257,7 @@ public class Introspector {
         String name = type.getName() + "Customizer";
         try {
             type = ClassFinder.findClass(name, type.getClassLoader());
-            // Each customizer should inherit java.awt.Component and implement java.beans.Customizer
+            // Each customizer should inherit j86.java.awt.Component and implement j86.java.beans.Customizer
             // according to the section 9.3 of JavaBeans&trade; specification
             if (Component.class.isAssignableFrom(type) && Customizer.class.isAssignableFrom(type)) {
                 return type;
@@ -1271,7 +1271,7 @@ public class Introspector {
 
     private boolean isEventHandler(Method m) {
         // We assume that a method is an event handler if it has a single
-        // argument, whose type inherit from java.util.Event.
+        // argument, whose type inherit from j86.java.util.Event.
         Type argTypes[] = m.getGenericParameterTypes();
         if (argTypes.length != 1) {
             return false;
@@ -1566,7 +1566,7 @@ class GenericBeanInfo extends SimpleBeanInfo {
         return beanDescriptor;
     }
 
-    public java.awt.Image getIcon(int iconKind) {
+    public j86.java.awt.Image getIcon(int iconKind) {
         BeanInfo targetBeanInfo = getTargetBeanInfo();
         if (targetBeanInfo != null) {
             return targetBeanInfo.getIcon(iconKind);

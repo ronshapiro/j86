@@ -23,23 +23,23 @@
  * questions.
  */
 
-package sun.awt;
+package j86.sun.awt;
 
-import java.awt.ScrollPane;
-import java.awt.Insets;
-import java.awt.Adjustable;
-import java.awt.event.MouseWheelEvent;
+import j86.java.awt.ScrollPane;
+import j86.java.awt.Insets;
+import j86.java.awt.Adjustable;
+import j86.j86.java.awt.event.MouseWheelEvent;
 
-import sun.util.logging.PlatformLogger;
+import j86.j86.sun.util.logging.PlatformLogger;
 
 /*
  * ScrollPaneWheelScroller is a helper class for implmenenting mouse wheel
- * scrolling on a java.awt.ScrollPane.  It contains only static methods.
+ * scrolling on a j86.java.awt.ScrollPane.  It contains only static methods.
  * No objects of this class may be instantiated, thus it is declared abstract.
  */
 public abstract class ScrollPaneWheelScroller {
 
-    private static final PlatformLogger log = PlatformLogger.getLogger("sun.awt.ScrollPaneWheelScroller");
+    private static final PlatformLogger log = PlatformLogger.getLogger("j86.sun.awt.ScrollPaneWheelScroller");
 
     private ScrollPaneWheelScroller() {}
 

@@ -23,13 +23,13 @@
  * questions.
  */
 
-package com.sun.jndi.ldap;
+package j86.com.sun.jndi.ldap;
 
-import java.util.Arrays; // JDK 1.2
-import java.util.Hashtable;
+import j86.java.util.Arrays; // JDK 1.2
+import j86.java.util.Hashtable;
 
-import java.io.OutputStream;
-import javax.naming.ldap.Control;
+import j86.java.io.OutputStream;
+import j86.j86.javax.naming.ldap.Control;
 
 /**
  * Extends SimpleClientId to add property values specific for Digest-MD5.
@@ -45,17 +45,17 @@ class DigestClientId extends SimpleClientId {
     private static final String[] SASL_PROPS = {
         "java.naming.security.sasl.authorizationId",
         "java.naming.security.sasl.realm",
-        "javax.security.sasl.qop",
-        "javax.security.sasl.strength",
-        "javax.security.sasl.reuse",
-        "javax.security.sasl.server.authentication",
-        "javax.security.sasl.maxbuffer",
-        "javax.security.sasl.policy.noplaintext",
-        "javax.security.sasl.policy.noactive",
-        "javax.security.sasl.policy.nodictionary",
-        "javax.security.sasl.policy.noanonymous",
-        "javax.security.sasl.policy.forward",
-        "javax.security.sasl.policy.credentials",
+        "j86.javax.security.sasl.qop",
+        "j86.javax.security.sasl.strength",
+        "j86.javax.security.sasl.reuse",
+        "j86.javax.security.sasl.server.authentication",
+        "j86.javax.security.sasl.maxbuffer",
+        "j86.javax.security.sasl.policy.noplaintext",
+        "j86.javax.security.sasl.policy.noactive",
+        "j86.javax.security.sasl.policy.nodictionary",
+        "j86.javax.security.sasl.policy.noanonymous",
+        "j86.javax.security.sasl.policy.forward",
+        "j86.javax.security.sasl.policy.credentials",
     };
 
     final private String[] propvals;

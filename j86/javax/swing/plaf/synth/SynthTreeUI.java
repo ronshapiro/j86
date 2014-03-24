@@ -22,36 +22,36 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.plaf.synth;
+package j86.j86.j86.javax.swing.plaf.synth;
 
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.Graphics;
-import java.awt.Insets;
-import java.awt.Rectangle;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
-import java.util.Enumeration;
-import javax.swing.DefaultCellEditor;
-import javax.swing.Icon;
-import javax.swing.JComponent;
-import javax.swing.JTextField;
-import javax.swing.JTree;
-import javax.swing.LookAndFeel;
-import javax.swing.plaf.ComponentUI;
-import javax.swing.plaf.UIResource;
-import javax.swing.plaf.basic.BasicTreeUI;
-import javax.swing.tree.DefaultTreeCellEditor;
-import javax.swing.tree.DefaultTreeCellRenderer;
-import javax.swing.tree.TreeCellEditor;
-import javax.swing.tree.TreeCellRenderer;
-import javax.swing.tree.TreeModel;
-import javax.swing.tree.TreePath;
-import sun.swing.plaf.synth.SynthIcon;
+import j86.java.awt.Color;
+import j86.java.awt.Component;
+import j86.java.awt.Graphics;
+import j86.java.awt.Insets;
+import j86.java.awt.Rectangle;
+import j86.java.beans.PropertyChangeEvent;
+import j86.java.beans.PropertyChangeListener;
+import j86.java.util.Enumeration;
+import j86.javax.swing.DefaultCellEditor;
+import j86.javax.swing.Icon;
+import j86.javax.swing.JComponent;
+import j86.javax.swing.JTextField;
+import j86.javax.swing.JTree;
+import j86.javax.swing.LookAndFeel;
+import j86.j86.javax.swing.plaf.ComponentUI;
+import j86.j86.javax.swing.plaf.UIResource;
+import j86.j86.j86.javax.swing.plaf.basic.BasicTreeUI;
+import j86.j86.javax.swing.tree.DefaultTreeCellEditor;
+import j86.j86.javax.swing.tree.DefaultTreeCellRenderer;
+import j86.j86.javax.swing.tree.TreeCellEditor;
+import j86.j86.javax.swing.tree.TreeCellRenderer;
+import j86.j86.javax.swing.tree.TreeModel;
+import j86.j86.javax.swing.tree.TreePath;
+import j86.j86.j86.sun.swing.plaf.synth.SynthIcon;
 
 /**
  * Provides the Synth L&amp;F UI delegate for
- * {@link javax.swing.JTree}.
+ * {@link j86.javax.swing.JTree}.
  *
  * @author Scott Violet
  * @since 1.7

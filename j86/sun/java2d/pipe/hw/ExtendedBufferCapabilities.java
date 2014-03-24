@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.java2d.pipe.hw;
+package j86.j86.j86.sun.java2d.pipe.hw;
 
-import java.awt.BufferCapabilities;
-import java.awt.ImageCapabilities;
+import j86.java.awt.BufferCapabilities;
+import j86.java.awt.ImageCapabilities;
 
 /**
  * Provides extended BufferStrategy capabilities, allowing to specify
@@ -42,8 +42,8 @@ import java.awt.ImageCapabilities;
  * throw {@code AWTException} when a v-synced BS could not be created when
  * requested.
  *
- * @see java.awt.Canvas#createBufferStrategy(int, BufferCapabilities)
- * @see java.awt.Window#createBufferStrategy(int, BufferCapabilities)
+ * @see j86.java.awt.Canvas#createBufferStrategy(int, BufferCapabilities)
+ * @see j86.java.awt.Window#createBufferStrategy(int, BufferCapabilities)
  */
 public class ExtendedBufferCapabilities extends BufferCapabilities {
 

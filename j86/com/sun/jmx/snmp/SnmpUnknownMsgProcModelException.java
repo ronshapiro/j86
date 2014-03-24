@@ -22,9 +22,9 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.jmx.snmp;
+package j86.com.sun.jmx.snmp;
 
-import com.sun.jmx.snmp.SnmpUnknownModelException;
+import j86.com.sun.jmx.snmp.SnmpUnknownModelException;
 
 /**
  * This exception is thrown when an <CODE>SnmpMsgProcessingSubSystem</CODE> doesn't know the passed ID.

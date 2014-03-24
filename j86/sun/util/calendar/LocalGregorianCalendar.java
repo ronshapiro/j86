@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.util.calendar;
+package j86.j86.sun.util.calendar;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Properties;
-import java.util.StringTokenizer;
-import java.util.TimeZone;
+import j86.java.io.IOException;
+import j86.java.util.ArrayList;
+import j86.java.util.List;
+import j86.java.util.Properties;
+import j86.java.util.StringTokenizer;
+import j86.java.util.TimeZone;
 
 /**
  *

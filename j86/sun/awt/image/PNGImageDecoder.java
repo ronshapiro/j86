@@ -23,13 +23,13 @@
  * questions.
  */
 
-package sun.awt.image;
+package j86.j86.j86.sun.awt.image;
 
-import java.io.*;
-import java.util.*;
-import java.util.zip.*;
-import java.awt.image.*;
-import java.awt.Color;
+import j86.java.io.*;
+import j86.java.util.*;
+import j86.j86.java.util.zip.*;
+import j86.j86.j86.java.awt.image.*;
+import j86.java.awt.Color;
 
 /** PNG - Portable Network Graphics - image file reader.
     See <a href=http://www.ietf.org/rfc/rfc2083.txt>RFC2083</a> for details. */
@@ -68,7 +68,7 @@ public class PNGImageDecoder extends ImageDecoder
     private int filterMethod;
     private int interlaceMethod;
     private int gamma = 100000;
-    private java.util.Hashtable properties;
+    private j86.java.util.Hashtable properties;
   /* this is not needed
     ImageConsumer target;
     */
@@ -83,7 +83,7 @@ public class PNGImageDecoder extends ImageDecoder
 
     private void property(String key,Object value) {
         if(value==null) return;
-        if(properties==null) properties=new java.util.Hashtable();
+        if(properties==null) properties=new j86.java.util.Hashtable();
         properties.put(key,value);
     }
     private void property(String key,float value) {

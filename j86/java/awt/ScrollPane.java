@@ -22,20 +22,20 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.awt;
+package j86.java.awt;
 
-import java.awt.peer.LightweightPeer;
-import java.awt.peer.ScrollPanePeer;
-import java.awt.event.*;
-import javax.accessibility.*;
-import sun.awt.ScrollPaneWheelScroller;
-import sun.awt.SunToolkit;
+import j86.j86.java.awt.peer.LightweightPeer;
+import j86.j86.java.awt.peer.ScrollPanePeer;
+import j86.j86.java.awt.event.*;
+import j86.javax.accessibility.*;
+import j86.sun.awt.ScrollPaneWheelScroller;
+import j86.sun.awt.SunToolkit;
 
-import java.beans.ConstructorProperties;
-import java.beans.Transient;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.IOException;
+import j86.java.beans.ConstructorProperties;
+import j86.java.beans.Transient;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.IOException;
 
 /**
  * A container class which implements automatic horizontal and/or
@@ -182,7 +182,7 @@ public class ScrollPane extends Container implements Accessible {
      * policy of "as needed".
      * @throws HeadlessException if GraphicsEnvironment.isHeadless()
      *     returns true
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      */
     public ScrollPane() throws HeadlessException {
         this(SCROLLBARS_AS_NEEDED);
@@ -195,7 +195,7 @@ public class ScrollPane extends Container implements Accessible {
      *     display policy is invalid
      * @throws HeadlessException if GraphicsEnvironment.isHeadless()
      *     returns true
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      */
     @ConstructorProperties({"scrollbarDisplayPolicy"})
     public ScrollPane(int scrollbarDisplayPolicy) throws HeadlessException {
@@ -323,7 +323,7 @@ public class ScrollPane extends Container implements Accessible {
      * represents the state of the vertical scrollbar.
      * The declared return type of this method is
      * <code>Adjustable</code> to maintain backward compatibility.
-     * @see java.awt.ScrollPaneAdjustable
+     * @see j86.java.awt.ScrollPaneAdjustable
      */
     public Adjustable getVAdjustable() {
         return vAdjustable;
@@ -334,7 +334,7 @@ public class ScrollPane extends Container implements Accessible {
      * represents the state of the horizontal scrollbar.
      * The declared return type of this method is
      * <code>Adjustable</code> to maintain backward compatibility.
-     * @see java.awt.ScrollPaneAdjustable
+     * @see j86.java.awt.ScrollPaneAdjustable
      */
     public Adjustable getHAdjustable() {
         return hAdjustable;
@@ -645,8 +645,8 @@ public class ScrollPane extends Container implements Accessible {
      *                      automatically for a MouseWheelEvent,
      *                      <code>false</code> otherwise.
      * @see #isWheelScrollingEnabled
-     * @see java.awt.event.MouseWheelEvent
-     * @see java.awt.event.MouseWheelListener
+     * @see j86.j86.java.awt.event.MouseWheelEvent
+     * @see j86.j86.java.awt.event.MouseWheelListener
      * @since 1.4
      */
     public void setWheelScrollingEnabled(boolean handleWheel) {
@@ -680,7 +680,7 @@ public class ScrollPane extends Container implements Accessible {
      * @exception HeadlessException if
      * <code>GraphicsEnvironment.isHeadless()</code> returns
      * <code>true</code>
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      */
     private void readObject(ObjectInputStream s)
         throws ClassNotFoundException, IOException, HeadlessException
@@ -714,7 +714,7 @@ public class ScrollPane extends Container implements Accessible {
 //      }
     }
 
-    class PeerFixer implements AdjustmentListener, java.io.Serializable
+    class PeerFixer implements AdjustmentListener, j86.java.io.Serializable
     {
         private static final long serialVersionUID = 1043664721353696630L;
 
@@ -801,7 +801,7 @@ public class ScrollPane extends Container implements Accessible {
 }
 
 /*
- * In JDK 1.1.1, the pkg private class java.awt.PeerFixer was moved to
+ * In JDK 1.1.1, the pkg private class j86.java.awt.PeerFixer was moved to
  * become an inner class of ScrollPane, which broke serialization
  * for ScrollPane objects using JDK 1.1.
  * Instead of moving it back out here, which would break all JDK 1.1.x
@@ -811,7 +811,7 @@ public class ScrollPane extends Container implements Accessible {
  * if the Java 2 platform is used to deserialize ScrollPane objects that were serialized
  * using JDK1.1
  */
-class PeerFixer implements AdjustmentListener, java.io.Serializable {
+class PeerFixer implements AdjustmentListener, j86.java.io.Serializable {
     /*
      * serialVersionUID
      */

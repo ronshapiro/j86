@@ -23,14 +23,14 @@
  * questions.
  */
 
-package java.lang.invoke;
+package j86.j86.java.lang.invoke;
 
-import jdk.internal.org.objectweb.asm.MethodVisitor;
-import jdk.internal.org.objectweb.asm.Opcodes;
-import jdk.internal.org.objectweb.asm.Type;
-import sun.invoke.util.BytecodeDescriptor;
-import sun.invoke.util.Wrapper;
-import static sun.invoke.util.Wrapper.*;
+import j86.jdk.internal.org.objectweb.asm.MethodVisitor;
+import j86.jdk.internal.org.objectweb.asm.Opcodes;
+import j86.jdk.internal.org.objectweb.asm.Type;
+import j86.j86.sun.invoke.util.BytecodeDescriptor;
+import j86.j86.sun.invoke.util.Wrapper;
+import static j86.j86.sun.invoke.util.Wrapper.*;
 
 class TypeConvertingMethodAdapter extends MethodVisitor {
 
@@ -40,8 +40,8 @@ class TypeConvertingMethodAdapter extends MethodVisitor {
 
     private static final int NUM_WRAPPERS = Wrapper.values().length;
 
-    private static final String NAME_OBJECT = "java/lang/Object";
-    private static final String WRAPPER_PREFIX = "Ljava/lang/";
+    private static final String NAME_OBJECT = "j86.java.lang/Object";
+    private static final String WRAPPER_PREFIX = "Lj86.java.lang/";
 
     // Same for all primitives; name of the boxing method
     private static final String NAME_BOX_METHOD = "valueOf";
@@ -123,7 +123,7 @@ class TypeConvertingMethodAdapter extends MethodVisitor {
     }
 
     private static String wrapperName(Wrapper w) {
-        return "java/lang/" + w.wrapperSimpleName();
+        return "j86.java.lang/" + w.wrapperSimpleName();
     }
 
     private static String unboxMethod(Wrapper w) {
@@ -267,7 +267,7 @@ class TypeConvertingMethodAdapter extends MethodVisitor {
                     String intermediate;
                     if (wTarget.isSigned() || wTarget.isFloating()) {
                         // Boxed number to primitive
-                        intermediate = "java/lang/Number";
+                        intermediate = "j86.java.lang/Number";
                     } else {
                         // Character or Boolean
                         intermediate = wrapperName(wTarget);

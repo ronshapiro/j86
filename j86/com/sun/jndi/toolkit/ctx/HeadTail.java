@@ -23,9 +23,9 @@
  * questions.
  */
 
-package com.sun.jndi.toolkit.ctx;
+package j86.com.sun.jndi.toolkit.ctx;
 
-import javax.naming.Name;
+import j86.javax.naming.Name;
 
 /**
   * A class for returning the result of p_parseComponent();

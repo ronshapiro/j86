@@ -34,10 +34,10 @@
  *
  */
 
-package java.awt;
+package j86.java.awt;
 
-import java.util.Locale;
-import java.util.ResourceBundle;
+import j86.java.util.Locale;
+import j86.java.util.ResourceBundle;
 
 /**
   * The ComponentOrientation class encapsulates the language-sensitive
@@ -88,7 +88,7 @@ import java.util.ResourceBundle;
   * This is unsafe, since more constants may be added in the future and
   * since it is not guaranteed that orientation objects will be unique.
   */
-public final class ComponentOrientation implements java.io.Serializable
+public final class ComponentOrientation implements j86.java.io.Serializable
 {
     /*
      * serialVersionUID
@@ -171,7 +171,7 @@ public final class ComponentOrientation implements java.io.Serializable
      * <li>Return the default locale's orientation.
      * </ol>
      *
-     * @deprecated As of J2SE 1.4, use {@link #getOrientation(java.util.Locale)}.
+     * @deprecated As of J2SE 1.4, use {@link #getOrientation(j86.java.util.Locale)}.
      */
     @Deprecated
     public static ComponentOrientation getOrientation(ResourceBundle bdl)

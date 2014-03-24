@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.awt.image;
-import java.awt.image.Raster;
-import java.awt.image.WritableRaster;
-import java.awt.image.RasterFormatException;
-import java.awt.image.SampleModel;
-import java.awt.image.BandedSampleModel;
-import java.awt.image.DataBuffer;
-import java.awt.image.DataBufferByte;
-import java.awt.Rectangle;
-import java.awt.Point;
+package j86.j86.j86.sun.awt.image;
+import j86.j86.j86.java.awt.image.Raster;
+import j86.j86.j86.java.awt.image.WritableRaster;
+import j86.j86.j86.java.awt.image.RasterFormatException;
+import j86.j86.j86.java.awt.image.SampleModel;
+import j86.j86.j86.java.awt.image.BandedSampleModel;
+import j86.j86.j86.java.awt.image.DataBuffer;
+import j86.j86.j86.java.awt.image.DataBufferByte;
+import j86.java.awt.Rectangle;
+import j86.java.awt.Point;
 
 /**
  * This class defines a Raster with pixels consisting of multiple

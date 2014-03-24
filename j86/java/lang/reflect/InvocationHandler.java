@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.lang.reflect;
+package j86.j86.j86.java.lang.reflect;
 
 /**
  * {@code InvocationHandler} is the interface implemented by
@@ -59,7 +59,7 @@ public interface InvocationHandler {
      * or {@code null} if interface method takes no arguments.
      * Arguments of primitive types are wrapped in instances of the
      * appropriate primitive wrapper class, such as
-     * {@code java.lang.Integer} or {@code java.lang.Boolean}.
+     * {@code j86.java.lang.Integer} or {@code java.lang.Boolean}.
      *
      * @return  the value to return from the method invocation on the
      * proxy instance.  If the declared return type of the interface
@@ -79,8 +79,8 @@ public interface InvocationHandler {
      * invocation on the proxy instance.  The exception's type must be
      * assignable either to any of the exception types declared in the
      * {@code throws} clause of the interface method or to the
-     * unchecked exception types {@code java.lang.RuntimeException}
-     * or {@code java.lang.Error}.  If a checked exception is
+     * unchecked exception types {@code j86.java.lang.RuntimeException}
+     * or {@code j86.java.lang.Error}.  If a checked exception is
      * thrown by this method that is not assignable to any of the
      * exception types declared in the {@code throws} clause of
      * the interface method, then an

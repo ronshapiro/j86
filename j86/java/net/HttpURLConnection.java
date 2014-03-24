@@ -23,12 +23,12 @@
  * questions.
  */
 
-package java.net;
+package j86.java.net;
 
-import java.io.InputStream;
-import java.io.IOException;
-import java.security.Permission;
-import java.util.Date;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
+import j86.java.security.Permission;
+import j86.java.util.Date;
 
 /**
  * A URLConnection with support for HTTP-specific features. See
@@ -63,7 +63,7 @@ import java.util.Date;
  * destination, then the caller must also have permission to connect to the
  * redirected host/URL.
  *
- * @see     java.net.HttpURLConnection#disconnect()
+ * @see     j86.java.net.HttpURLConnection#disconnect()
  * @since JDK1.1
  */
 abstract public class HttpURLConnection extends URLConnection {
@@ -211,7 +211,7 @@ abstract public class HttpURLConnection extends URLConnection {
 
     /* Default chunk size (including chunk header) if not specified;
      * we want to keep this in sync with the one defined in
-     * sun.net.www.http.ChunkedOutputStream
+     * j86.j86.j86.sun.net.www.http.ChunkedOutputStream
      */
     private static final int DEFAULT_CHUNK_SIZE = 4096;
 
@@ -263,7 +263,7 @@ abstract public class HttpURLConnection extends URLConnection {
      * @param   n   an index, where {@code n>=0}.
      * @return  the value of the {@code n}<sup>th</sup> header field,
      *          or {@code null} if the value does not exist.
-     * @see     java.net.HttpURLConnection#getHeaderFieldKey(int)
+     * @see     j86.java.net.HttpURLConnection#getHeaderFieldKey(int)
      */
     public String getHeaderField(int n) {
         return null;
@@ -303,9 +303,9 @@ abstract public class HttpURLConnection extends URLConnection {
      * Its default value is based on the value of the static followRedirects
      * at HttpURLConnection construction time.
      *
-     * @see     java.net.HttpURLConnection#setInstanceFollowRedirects(boolean)
-     * @see     java.net.HttpURLConnection#getInstanceFollowRedirects()
-     * @see     java.net.HttpURLConnection#setFollowRedirects(boolean)
+     * @see     j86.java.net.HttpURLConnection#setInstanceFollowRedirects(boolean)
+     * @see     j86.java.net.HttpURLConnection#getInstanceFollowRedirects()
+     * @see     j86.java.net.HttpURLConnection#setFollowRedirects(boolean)
      */
     protected boolean instanceFollowRedirects = followRedirects;
 
@@ -373,7 +373,7 @@ abstract public class HttpURLConnection extends URLConnection {
      * @param followRedirects a {@code boolean} indicating
      * whether or not to follow HTTP redirects.
      *
-     * @see    java.net.HttpURLConnection#instanceFollowRedirects
+     * @see    j86.java.net.HttpURLConnection#instanceFollowRedirects
      * @see #getInstanceFollowRedirects
      * @since 1.3
      */
@@ -387,7 +387,7 @@ abstract public class HttpURLConnection extends URLConnection {
      *
      * @return  the value of this {@code HttpURLConnection}'s
      *          {@code instanceFollowRedirects} field.
-     * @see     java.net.HttpURLConnection#instanceFollowRedirects
+     * @see     j86.java.net.HttpURLConnection#instanceFollowRedirects
      * @see #setInstanceFollowRedirects(boolean)
      * @since 1.3
      */
@@ -443,7 +443,7 @@ abstract public class HttpURLConnection extends URLConnection {
     /**
      * Get the request method.
      * @return the HTTP request method
-     * @see #setRequestMethod(java.lang.String)
+     * @see #setRequestMethod(j86.java.lang.String)
      */
     public String getRequestMethod() {
         return method;

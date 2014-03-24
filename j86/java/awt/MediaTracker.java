@@ -23,11 +23,11 @@
  * questions.
  */
 
-package java.awt;
+package j86.java.awt;
 
-import java.awt.Component;
-import java.awt.Image;
-import java.awt.image.ImageObserver;
+import j86.java.awt.Component;
+import j86.java.awt.Image;
+import j86.j86.j86.java.awt.image.ImageObserver;
 
 /**
  * The <code>MediaTracker</code> class is a utility class to track
@@ -67,11 +67,11 @@ import java.awt.image.ImageObserver;
  * Here is an example of using <code>MediaTracker</code>:
  * <p>
  * <hr><blockquote><pre>{@code
- * import java.applet.Applet;
- * import java.awt.Color;
- * import java.awt.Image;
- * import java.awt.Graphics;
- * import java.awt.MediaTracker;
+ * import j86.java.applet.Applet;
+ * import j86.java.awt.Color;
+ * import j86.java.awt.Image;
+ * import j86.java.awt.Graphics;
+ * import j86.java.awt.MediaTracker;
  *
  * public class ImageBlaster extends Applet implements Runnable {
  *      MediaTracker tracker;
@@ -165,7 +165,7 @@ import java.awt.image.ImageObserver;
  * @author      Jim Graham
  * @since       JDK1.0
  */
-public class MediaTracker implements java.io.Serializable {
+public class MediaTracker implements j86.java.io.Serializable {
 
     /**
      * A given <code>Component</code> that will be
@@ -228,31 +228,31 @@ public class MediaTracker implements java.io.Serializable {
 
     /**
      * Flag indicating that media is currently being loaded.
-     * @see         java.awt.MediaTracker#statusAll
-     * @see         java.awt.MediaTracker#statusID
+     * @see         j86.java.awt.MediaTracker#statusAll
+     * @see         j86.java.awt.MediaTracker#statusID
      */
     public static final int LOADING = 1;
 
     /**
      * Flag indicating that the downloading of media was aborted.
-     * @see         java.awt.MediaTracker#statusAll
-     * @see         java.awt.MediaTracker#statusID
+     * @see         j86.java.awt.MediaTracker#statusAll
+     * @see         j86.java.awt.MediaTracker#statusID
      */
     public static final int ABORTED = 2;
 
     /**
      * Flag indicating that the downloading of media encountered
      * an error.
-     * @see         java.awt.MediaTracker#statusAll
-     * @see         java.awt.MediaTracker#statusID
+     * @see         j86.java.awt.MediaTracker#statusAll
+     * @see         j86.java.awt.MediaTracker#statusID
      */
     public static final int ERRORED = 4;
 
     /**
      * Flag indicating that the downloading of media was completed
      * successfully.
-     * @see         java.awt.MediaTracker#statusAll
-     * @see         java.awt.MediaTracker#statusID
+     * @see         j86.java.awt.MediaTracker#statusAll
+     * @see         j86.java.awt.MediaTracker#statusID
      */
     public static final int COMPLETE = 8;
 
@@ -272,10 +272,10 @@ public class MediaTracker implements java.io.Serializable {
      * @return      <code>true</code> if all images have finished loading,
      *                       have been aborted, or have encountered
      *                       an error; <code>false</code> otherwise
-     * @see         java.awt.MediaTracker#checkAll(boolean)
-     * @see         java.awt.MediaTracker#checkID
-     * @see         java.awt.MediaTracker#isErrorAny
-     * @see         java.awt.MediaTracker#isErrorID
+     * @see         j86.java.awt.MediaTracker#checkAll(boolean)
+     * @see         j86.java.awt.MediaTracker#checkID
+     * @see         j86.java.awt.MediaTracker#isErrorAny
+     * @see         j86.java.awt.MediaTracker#isErrorID
      */
     public boolean checkAll() {
         return checkAll(false, true);
@@ -298,10 +298,10 @@ public class MediaTracker implements java.io.Serializable {
      * @return      <code>true</code> if all images have finished loading,
      *                       have been aborted, or have encountered
      *                       an error; <code>false</code> otherwise
-     * @see         java.awt.MediaTracker#checkID
-     * @see         java.awt.MediaTracker#checkAll()
-     * @see         java.awt.MediaTracker#isErrorAny()
-     * @see         java.awt.MediaTracker#isErrorID(int)
+     * @see         j86.java.awt.MediaTracker#checkID
+     * @see         j86.java.awt.MediaTracker#checkAll()
+     * @see         j86.java.awt.MediaTracker#isErrorAny()
+     * @see         j86.java.awt.MediaTracker#isErrorID(int)
      */
     public boolean checkAll(boolean load) {
         return checkAll(load, true);
@@ -324,8 +324,8 @@ public class MediaTracker implements java.io.Serializable {
      * @return   <code>true</code> if any of the images tracked
      *                  by this media tracker had an error during
      *                  loading; <code>false</code> otherwise
-     * @see      java.awt.MediaTracker#isErrorID
-     * @see      java.awt.MediaTracker#getErrorsAny
+     * @see      j86.java.awt.MediaTracker#isErrorID
+     * @see      j86.java.awt.MediaTracker#getErrorsAny
      */
     public synchronized boolean isErrorAny() {
         MediaEntry cur = head;
@@ -344,8 +344,8 @@ public class MediaTracker implements java.io.Serializable {
      *                        media tracker that have encountered
      *                        an error, or <code>null</code> if
      *                        there are none with errors
-     * @see          java.awt.MediaTracker#isErrorAny
-     * @see          java.awt.MediaTracker#getErrorsID
+     * @see          j86.java.awt.MediaTracker#isErrorAny
+     * @see          j86.java.awt.MediaTracker#getErrorsID
      */
     public synchronized Object[] getErrorsAny() {
         MediaEntry cur = head;
@@ -380,10 +380,10 @@ public class MediaTracker implements java.io.Serializable {
      * image is considered to have finished loading. Use the
      * <code>isErrorAny</code> or <code>isErrorID</code> methods to
      * check for errors.
-     * @see         java.awt.MediaTracker#waitForID(int)
-     * @see         java.awt.MediaTracker#waitForAll(long)
-     * @see         java.awt.MediaTracker#isErrorAny
-     * @see         java.awt.MediaTracker#isErrorID
+     * @see         j86.java.awt.MediaTracker#waitForID(int)
+     * @see         j86.java.awt.MediaTracker#waitForAll(long)
+     * @see         j86.java.awt.MediaTracker#isErrorAny
+     * @see         j86.java.awt.MediaTracker#isErrorID
      * @exception   InterruptedException  if any thread has
      *                                     interrupted this thread
      */
@@ -405,10 +405,10 @@ public class MediaTracker implements java.io.Serializable {
      *                       for the loading to complete
      * @return      <code>true</code> if all images were successfully
      *                       loaded; <code>false</code> otherwise
-     * @see         java.awt.MediaTracker#waitForID(int)
-     * @see         java.awt.MediaTracker#waitForAll(long)
-     * @see         java.awt.MediaTracker#isErrorAny
-     * @see         java.awt.MediaTracker#isErrorID
+     * @see         j86.java.awt.MediaTracker#waitForID(int)
+     * @see         j86.java.awt.MediaTracker#waitForAll(long)
+     * @see         j86.java.awt.MediaTracker#isErrorAny
+     * @see         j86.java.awt.MediaTracker#isErrorID
      * @exception   InterruptedException  if any thread has
      *                                     interrupted this thread.
      */
@@ -453,11 +453,11 @@ public class MediaTracker implements java.io.Serializable {
      *                            any images that are not yet being loaded
      * @return       the bitwise inclusive <b>OR</b> of the status of
      *                            all of the media being tracked
-     * @see          java.awt.MediaTracker#statusID(int, boolean)
-     * @see          java.awt.MediaTracker#LOADING
-     * @see          java.awt.MediaTracker#ABORTED
-     * @see          java.awt.MediaTracker#ERRORED
-     * @see          java.awt.MediaTracker#COMPLETE
+     * @see          j86.java.awt.MediaTracker#statusID(int, boolean)
+     * @see          j86.java.awt.MediaTracker#LOADING
+     * @see          j86.java.awt.MediaTracker#ABORTED
+     * @see          j86.java.awt.MediaTracker#ERRORED
+     * @see          j86.java.awt.MediaTracker#COMPLETE
      */
     public int statusAll(boolean load) {
         return statusAll(load, true);
@@ -488,10 +488,10 @@ public class MediaTracker implements java.io.Serializable {
      * @return      <code>true</code> if all images have finished loading,
      *                       have been aborted, or have encountered
      *                       an error; <code>false</code> otherwise
-     * @see         java.awt.MediaTracker#checkID(int, boolean)
-     * @see         java.awt.MediaTracker#checkAll()
-     * @see         java.awt.MediaTracker#isErrorAny()
-     * @see         java.awt.MediaTracker#isErrorID(int)
+     * @see         j86.java.awt.MediaTracker#checkID(int, boolean)
+     * @see         j86.java.awt.MediaTracker#checkAll()
+     * @see         j86.java.awt.MediaTracker#isErrorAny()
+     * @see         j86.java.awt.MediaTracker#isErrorID(int)
      */
     public boolean checkID(int id) {
         return checkID(id, false, true);
@@ -515,10 +515,10 @@ public class MediaTracker implements java.io.Serializable {
      * @return      <code>true</code> if all images have finished loading,
      *                       have been aborted, or have encountered
      *                       an error; <code>false</code> otherwise
-     * @see         java.awt.MediaTracker#checkID(int, boolean)
-     * @see         java.awt.MediaTracker#checkAll()
-     * @see         java.awt.MediaTracker#isErrorAny()
-     * @see         java.awt.MediaTracker#isErrorID(int)
+     * @see         j86.java.awt.MediaTracker#checkID(int, boolean)
+     * @see         j86.java.awt.MediaTracker#checkAll()
+     * @see         j86.java.awt.MediaTracker#isErrorAny()
+     * @see         j86.java.awt.MediaTracker#isErrorID(int)
      */
     public boolean checkID(int id, boolean load) {
         return checkID(id, load, true);
@@ -546,8 +546,8 @@ public class MediaTracker implements java.io.Serializable {
      * @return       <code>true</code> if any of the images with the
      *                          specified identifier had an error during
      *                          loading; <code>false</code> otherwise
-     * @see          java.awt.MediaTracker#isErrorAny
-     * @see          java.awt.MediaTracker#getErrorsID
+     * @see          j86.java.awt.MediaTracker#isErrorAny
+     * @see          j86.java.awt.MediaTracker#getErrorsID
      */
     public synchronized boolean isErrorID(int id) {
         MediaEntry cur = head;
@@ -570,9 +570,9 @@ public class MediaTracker implements java.io.Serializable {
      *                       tracker with the specified identifier
      *                       that have encountered an error, or
      *                       <code>null</code> if there are none with errors
-     * @see         java.awt.MediaTracker#isErrorID
-     * @see         java.awt.MediaTracker#isErrorAny
-     * @see         java.awt.MediaTracker#getErrorsAny
+     * @see         j86.java.awt.MediaTracker#isErrorID
+     * @see         j86.java.awt.MediaTracker#isErrorAny
+     * @see         j86.java.awt.MediaTracker#getErrorsAny
      */
     public synchronized Object[] getErrorsID(int id) {
         MediaEntry cur = head;
@@ -612,9 +612,9 @@ public class MediaTracker implements java.io.Serializable {
      * <code>isErrorAny</code> and <code>isErrorID</code> methods to
      * check for errors.
      * @param         id   the identifier of the images to check
-     * @see           java.awt.MediaTracker#waitForAll
-     * @see           java.awt.MediaTracker#isErrorAny()
-     * @see           java.awt.MediaTracker#isErrorID(int)
+     * @see           j86.java.awt.MediaTracker#waitForAll
+     * @see           j86.java.awt.MediaTracker#isErrorAny()
+     * @see           j86.java.awt.MediaTracker#isErrorID(int)
      * @exception     InterruptedException  if any thread has
      *                          interrupted this thread.
      */
@@ -636,11 +636,11 @@ public class MediaTracker implements java.io.Serializable {
      * @param         id   the identifier of the images to check
      * @param         ms   the length of time, in milliseconds, to wait
      *                           for the loading to complete
-     * @see           java.awt.MediaTracker#waitForAll
-     * @see           java.awt.MediaTracker#waitForID(int)
-     * @see           java.awt.MediaTracker#statusID
-     * @see           java.awt.MediaTracker#isErrorAny()
-     * @see           java.awt.MediaTracker#isErrorID(int)
+     * @see           j86.java.awt.MediaTracker#waitForAll
+     * @see           j86.java.awt.MediaTracker#waitForID(int)
+     * @see           j86.java.awt.MediaTracker#statusID
+     * @see           j86.java.awt.MediaTracker#isErrorAny()
+     * @see           j86.java.awt.MediaTracker#isErrorID(int)
      * @exception     InterruptedException  if any thread has
      *                          interrupted this thread.
      */
@@ -687,11 +687,11 @@ public class MediaTracker implements java.io.Serializable {
      * @return       the bitwise inclusive <b>OR</b> of the status of
      *                            all of the media with the specified
      *                            identifier that are being tracked
-     * @see          java.awt.MediaTracker#statusAll(boolean)
-     * @see          java.awt.MediaTracker#LOADING
-     * @see          java.awt.MediaTracker#ABORTED
-     * @see          java.awt.MediaTracker#ERRORED
-     * @see          java.awt.MediaTracker#COMPLETE
+     * @see          j86.java.awt.MediaTracker#statusAll(boolean)
+     * @see          j86.java.awt.MediaTracker#LOADING
+     * @see          j86.java.awt.MediaTracker#ABORTED
+     * @see          j86.java.awt.MediaTracker#ERRORED
+     * @see          j86.java.awt.MediaTracker#COMPLETE
      */
     public int statusID(int id, boolean load) {
         return statusID(id, load, true);
@@ -714,8 +714,8 @@ public class MediaTracker implements java.io.Serializable {
      * All instances of the specified image are removed,
      * regardless of scale or ID.
      * @param   image     the image to be removed
-     * @see     java.awt.MediaTracker#removeImage(java.awt.Image, int)
-     * @see     java.awt.MediaTracker#removeImage(java.awt.Image, int, int, int)
+     * @see     j86.java.awt.MediaTracker#removeImage(java.awt.Image, int)
+     * @see     j86.java.awt.MediaTracker#removeImage(java.awt.Image, int, int, int)
      * @since   JDK1.1
      */
     public synchronized void removeImage(Image image) {
@@ -745,8 +745,8 @@ public class MediaTracker implements java.io.Serializable {
      * under the specified ID are removed regardless of scale.
      * @param      image the image to be removed
      * @param      id the tracking ID from which to remove the image
-     * @see        java.awt.MediaTracker#removeImage(java.awt.Image)
-     * @see        java.awt.MediaTracker#removeImage(java.awt.Image, int, int, int)
+     * @see        j86.java.awt.MediaTracker#removeImage(java.awt.Image)
+     * @see        j86.java.awt.MediaTracker#removeImage(java.awt.Image, int, int, int)
      * @since      JDK1.1
      */
     public synchronized void removeImage(Image image, int id) {
@@ -777,8 +777,8 @@ public class MediaTracker implements java.io.Serializable {
      * @param   id the tracking ID from which to remove the image
      * @param   width the width to remove (-1 for unscaled)
      * @param   height the height to remove (-1 for unscaled)
-     * @see     java.awt.MediaTracker#removeImage(java.awt.Image)
-     * @see     java.awt.MediaTracker#removeImage(java.awt.Image, int)
+     * @see     j86.java.awt.MediaTracker#removeImage(java.awt.Image)
+     * @see     j86.java.awt.MediaTracker#removeImage(java.awt.Image, int)
      * @since   JDK1.1
      */
     public synchronized void removeImage(Image image, int id,
@@ -878,7 +878,7 @@ abstract class MediaEntry {
 }
 
 class ImageMediaEntry extends MediaEntry implements ImageObserver,
-java.io.Serializable {
+j86.java.io.Serializable {
     Image image;
     int width;
     int height;

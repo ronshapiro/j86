@@ -23,24 +23,24 @@
  * questions.
  */
 
-package sun.java2d.pipe;
+package j86.j86.sun.java2d.pipe;
 
-import java.awt.AlphaComposite;
-import java.awt.CompositeContext;
-import java.awt.PaintContext;
-import java.awt.Rectangle;
-import java.awt.Shape;
-import java.awt.RenderingHints;
-import java.awt.image.ColorModel;
-import java.awt.image.BufferedImage;
-import java.awt.image.Raster;
-import java.awt.image.WritableRaster;
-import sun.awt.image.BufImgSurfaceData;
-import sun.java2d.SunGraphics2D;
-import sun.java2d.SurfaceData;
-import sun.java2d.loops.Blit;
-import sun.java2d.loops.MaskBlit;
-import sun.java2d.loops.CompositeType;
+import j86.java.awt.AlphaComposite;
+import j86.java.awt.CompositeContext;
+import j86.java.awt.PaintContext;
+import j86.java.awt.Rectangle;
+import j86.java.awt.Shape;
+import j86.java.awt.RenderingHints;
+import j86.j86.j86.java.awt.image.ColorModel;
+import j86.j86.j86.java.awt.image.BufferedImage;
+import j86.j86.j86.java.awt.image.Raster;
+import j86.j86.j86.java.awt.image.WritableRaster;
+import j86.j86.j86.sun.awt.image.BufImgSurfaceData;
+import j86.sun.java2d.SunGraphics2D;
+import j86.sun.java2d.SurfaceData;
+import j86.j86.sun.java2d.loops.Blit;
+import j86.j86.sun.java2d.loops.MaskBlit;
+import j86.j86.sun.java2d.loops.CompositeType;
 
 public class GeneralCompositePipe implements CompositePipe {
     class TileContext {

@@ -23,11 +23,11 @@
  * questions.
  */
 
-package com.sun.jndi.ldap;
+package j86.com.sun.jndi.ldap;
 
-import java.util.Arrays;  // JDK1.2
-import java.io.OutputStream;
-import javax.naming.ldap.Control;
+import j86.java.util.Arrays;  // JDK1.2
+import j86.java.io.OutputStream;
+import j86.j86.javax.naming.ldap.Control;
 
 /**
  * Represents the identity of a 'simple' authenticated LDAP connection.

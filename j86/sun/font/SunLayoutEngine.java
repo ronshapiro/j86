@@ -28,13 +28,13 @@
  * (C) Copyright IBM Corp. 2003 - All Rights Reserved
  */
 
-package sun.font;
+package j86.sun.font;
 
-import sun.font.GlyphLayout.*;
-import java.awt.geom.Point2D;
-import java.lang.ref.SoftReference;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.Locale;
+import j86.sun.font.GlyphLayout.*;
+import j86.j86.java.awt.geom.Point2D;
+import j86.j86.java.lang.ref.SoftReference;
+import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.util.Locale;
 
 /*
  * different ways to do this

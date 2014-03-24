@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.security.sasl;
+package j86.javax.security.sasl;
 
 /**
  * Performs SASL authentication as a server.

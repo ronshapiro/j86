@@ -23,15 +23,15 @@
  * questions.
  */
 
-package com.sun.jndi.dns;
+package j86.com.sun.jndi.dns;
 
 
-import java.net.MalformedURLException;
-import java.util.Hashtable;
-import java.util.StringTokenizer;
+import j86.java.net.MalformedURLException;
+import j86.java.util.Hashtable;
+import j86.java.util.StringTokenizer;
 
-import com.sun.jndi.toolkit.url.Uri;
-import com.sun.jndi.toolkit.url.UrlUtil;
+import j86.com.sun.jndi.toolkit.url.Uri;
+import j86.com.sun.jndi.toolkit.url.UrlUtil;
 
 
 /**

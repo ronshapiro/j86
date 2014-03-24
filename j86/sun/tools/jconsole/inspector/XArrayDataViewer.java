@@ -23,15 +23,15 @@
  * questions.
  */
 
-package sun.tools.jconsole.inspector;
+package j86.j86.sun.tools.jconsole.inspector;
 
-import java.awt.Color;
-import java.awt.Component;
-import java.lang.reflect.Array;
-import java.util.Collection;
-import java.util.Map;
-import javax.swing.JEditorPane;
-import javax.swing.JScrollPane;
+import j86.java.awt.Color;
+import j86.java.awt.Component;
+import j86.j86.j86.java.lang.reflect.Array;
+import j86.java.util.Collection;
+import j86.java.util.Map;
+import j86.javax.swing.JEditorPane;
+import j86.javax.swing.JScrollPane;
 
 class XArrayDataViewer {
 

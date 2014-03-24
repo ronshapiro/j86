@@ -34,13 +34,13 @@
  *******************************************************************************
  */
 
-package sun.text.normalizer;
+package j86.j86.sun.text.normalizer;
 
-import java.io.BufferedInputStream;
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.io.BufferedInputStream;
-import java.io.InputStream;
+import j86.java.io.BufferedInputStream;
+import j86.java.io.ByteArrayInputStream;
+import j86.java.io.IOException;
+import j86.java.io.BufferedInputStream;
+import j86.java.io.InputStream;
 
 /**
  * @author  Ram Viswanadha
@@ -68,7 +68,7 @@ public final class NormalizerImpl {
      * unorm.icu, which is generated with the gennorm tool.
      * The format of that file is described at the end of this file.
      */
-    private static final String DATA_FILE_NAME = "/sun/text/resources/unorm.icu";
+    private static final String DATA_FILE_NAME = "/j86.j86.sun.text.resources/unorm.icu";
 
     // norm32 value constants
 
@@ -2676,7 +2676,7 @@ public final class NormalizerImpl {
      * 3.2 normalization with Corrigendum 4 corrections. However, normalization
      * without the corrections is necessary for IDNA/StringPrep support.
      * This method is called when NormalizerBase.UNICODE_3_2_0_ORIGINAL option
-     * (= sun.text.Normalizer.UNICODE_3_2) is used and normalizes five
+     * (= j86.sun.text.Normalizer.UNICODE_3_2) is used and normalizes five
      * characters in Corrigendum 4 before normalization in order to avoid
      * incorrect normalization.
      * For the Corrigendum 4 issue, refer

@@ -643,7 +643,7 @@ markers, as these parsing delimiters do not carry any meaningful metadata.
 <p>
 
 The first node is always a <code>JPEGvariety</code> node.  In the
-<code>javax_imageio_jpeg_image_1.0</code> version of the JPEG metadata
+<code>j86.javax.imageio_jpeg_image_1.0</code> version of the JPEG metadata
 format, this node may have one child, an <code>app0JFIF</code> node,
 indicating that the JPEG stream contains a JFIF marker segment and related
 data, or no children, indicating that the stream contains no JFIF marker.
@@ -653,7 +653,7 @@ which may appear as a child of the <code>JPEGvariety</code> node.
 <p>
 
 (Note that an application wishing to interpret Exif metadata given
-a metadata tree structure in the <code>javax_imageio_jpeg_image_1.0</code>
+a metadata tree structure in the <code>j86.javax.imageio_jpeg_image_1.0</code>
 format must check for an <code>unknown</code> marker segment with a tag
 indicating an <code>APP1</code> marker and containing data identifying it
 as an Exif marker segment.  Then it may use application-specific code to
@@ -894,9 +894,9 @@ format, performs a <code>reset</code> followed by a merge of the new tree.
 </h2>
 
 <pre>
-&lt;!DOCTYPE "javax_imageio_jpeg_image_1.0" [
+&lt;!DOCTYPE "j86.javax.imageio_jpeg_image_1.0" [
 
-  &lt;!ELEMENT "javax_imageio_jpeg_image_1.0" (JPEGvariety, markerSequence)&gt;
+  &lt;!ELEMENT "j86.javax.imageio_jpeg_image_1.0" (JPEGvariety, markerSequence)&gt;
 
     &lt;!ELEMENT "JPEGvariety" (app0JFIF)&gt;
       &lt;!-- A node grouping all marker segments specific to the variety of
@@ -980,7 +980,7 @@ format, performs a <code>reset</code> followed by a merge of the new tree.
 
         &lt;!ELEMENT "app2ICC" EMPTY&gt;
           &lt;!-- An ICC profile APP2 marker segment --&gt; 
-          &lt;!-- Optional User object: java.awt.color.ICC_Profile --&gt;
+          &lt;!-- Optional User object: j86.j86.java.awt.color.ICC_Profile --&gt;
 
     &lt;!ELEMENT "markerSequence" (dqt | dht | dri | com | unknown | 
       app14Adobe | sof | sos)*&gt;
@@ -993,7 +993,7 @@ format, performs a <code>reset</code> followed by a merge of the new tree.
 
         &lt;!ELEMENT "dqtable" EMPTY&gt;
           &lt;!-- A single quantization table --&gt; 
-          &lt;!-- User object: javax.imageio.plugins.jpeg.JPEGQTable --&gt;
+          &lt;!-- User object: j86.j86.javax.imageio.plugins.jpeg.JPEGQTable --&gt;
           &lt;!ATTLIST "dqtable" "elementPrecision" #CDATA "0"&gt;
             &lt;!-- The number of bits in each table element (0 = 8, 1 = 16) 
                  --&gt; 
@@ -1007,7 +1007,7 @@ format, performs a <code>reset</code> followed by a merge of the new tree.
 
         &lt;!ELEMENT "dhtable" EMPTY&gt;
           &lt;!-- A single Huffman table --&gt; 
-          &lt;!-- User object: javax.imageio.plugins.jpeg.JPEGHuffmanTable --&gt;
+          &lt;!-- User object: j86.j86.javax.imageio.plugins.jpeg.JPEGHuffmanTable --&gt;
           &lt;!ATTLIST "dhtable" "class" ("0" | "1") #REQUIRED&gt;
             &lt;!-- Indicates whether this is a DC (0) or an AC (1) table --&gt; 
           &lt;!ATTLIST "dhtable" "htableId" ("0" | "1" | "2" | "3") #REQUIRED&gt;
@@ -1160,8 +1160,8 @@ format, performs a <code>reset</code> followed by a merge of the new tree.
 </h2>
 
 <pre>
-&lt;!DOCTYPE "javax_imageio_jpeg_stream_1.0" [
-  &lt;!ELEMENT "javax_imageio_jpeg_stream_1.0" (dqt |
+&lt;!DOCTYPE "j86.javax.imageio_jpeg_stream_1.0" [
+  &lt;!ELEMENT "j86.javax.imageio_jpeg_stream_1.0" (dqt |
                       dht | 
                       dri | 
                       com | 

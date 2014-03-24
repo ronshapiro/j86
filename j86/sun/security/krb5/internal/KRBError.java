@@ -29,22 +29,22 @@
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
 
-package sun.security.krb5.internal;
+package j86.j86.sun.security.krb5.internal;
 
-import java.io.ObjectOutputStream;
-import sun.security.krb5.PrincipalName;
-import sun.security.krb5.Checksum;
-import sun.security.krb5.Asn1Exception;
-import sun.security.krb5.Realm;
-import sun.security.krb5.RealmException;
-import sun.security.util.*;
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.math.BigInteger;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import sun.security.krb5.internal.util.KerberosString;
+import j86.java.io.ObjectOutputStream;
+import j86.sun.security.krb5.PrincipalName;
+import j86.sun.security.krb5.Checksum;
+import j86.sun.security.krb5.Asn1Exception;
+import j86.sun.security.krb5.Realm;
+import j86.sun.security.krb5.RealmException;
+import j86.sun.security.util.*;
+import j86.java.io.IOException;
+import j86.java.io.ObjectInputStream;
+import j86.java.math.BigInteger;
+import j86.java.util.ArrayList;
+import j86.java.util.Arrays;
+import j86.java.util.List;
+import j86.j86.j86.sun.security.krb5.internal.util.KerberosString;
 /**
  * Implements the ASN.1 KRBError type.
  *
@@ -80,7 +80,7 @@ import sun.security.krb5.internal.util.KerberosString;
  * http://www.ietf.org/rfc/rfc4120.txt</a>.
  */
 
-public class KRBError implements java.io.Serializable {
+public class KRBError implements j86.java.io.Serializable {
     static final long serialVersionUID = 3643809337475284503L;
 
     private int pvno;
@@ -227,7 +227,7 @@ public class KRBError implements java.io.Serializable {
             } catch (Exception e) {
                 if (DEBUG) {
                     System.out.println("Unable to parse eData field of KRB-ERROR:\n" +
-                            new sun.misc.HexDumpEncoder().encodeBuffer(data));
+                            new j86.sun.misc.HexDumpEncoder().encodeBuffer(data));
                 }
                 IOException ioe = new IOException(
                         "Unable to parse eData field of KRB-ERROR");
@@ -237,7 +237,7 @@ public class KRBError implements java.io.Serializable {
         } else {
             if (DEBUG) {
                 System.out.println("Unknown eData field of KRB-ERROR:\n" +
-                        new sun.misc.HexDumpEncoder().encodeBuffer(data));
+                        new j86.sun.misc.HexDumpEncoder().encodeBuffer(data));
             }
         }
     }
@@ -491,7 +491,7 @@ public class KRBError implements java.io.Serializable {
                 isEqual(cname, other.cname) &&
                 isEqual(sname, other.sname) &&
                 isEqual(eText, other.eText) &&
-                java.util.Arrays.equals(eData, other.eData) &&
+                j86.java.util.Arrays.equals(eData, other.eData) &&
                 isEqual(eCksum, other.eCksum);
     }
 

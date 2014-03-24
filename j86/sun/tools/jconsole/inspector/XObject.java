@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.tools.jconsole.inspector;
+package j86.j86.sun.tools.jconsole.inspector;
 
 // java import
-import javax.swing.*;
-import java.util.Objects;
+import j86.javax.swing.*;
+import j86.java.util.Objects;
 
 /**
  * This provides a wrapper to the Object class to allow it to be

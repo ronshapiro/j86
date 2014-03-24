@@ -23,21 +23,21 @@
  * questions.
  */
 
-package sun.security.x509;
+package j86.sun.security.x509;
 
-import java.io.IOException;
-import java.io.OutputStream;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
-import java.security.cert.CRLException;
-import java.security.cert.CertificateException;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Enumeration;
-import java.util.Map;
-import java.util.TreeMap;
+import j86.java.io.IOException;
+import j86.java.io.OutputStream;
+import j86.j86.j86.java.lang.reflect.Constructor;
+import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.j86.java.security.cert.CRLException;
+import j86.j86.java.security.cert.CertificateException;
+import j86.java.util.Collection;
+import j86.java.util.Collections;
+import j86.java.util.Enumeration;
+import j86.java.util.Map;
+import j86.java.util.TreeMap;
 
-import sun.security.util.*;
+import j86.sun.security.util.*;
 
 /**
  * This class defines the CRL Extensions.

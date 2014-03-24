@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.nio.file;
+package j86.j86.java.nio.file;
 
 /**
  * Defines the <em>standard</em> event kinds.

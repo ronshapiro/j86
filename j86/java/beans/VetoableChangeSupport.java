@@ -22,15 +22,15 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.beans;
+package j86.java.beans;
 
-import java.io.Serializable;
-import java.io.ObjectStreamField;
-import java.io.ObjectOutputStream;
-import java.io.ObjectInputStream;
-import java.io.IOException;
-import java.util.Hashtable;
-import java.util.Map.Entry;
+import j86.java.io.Serializable;
+import j86.java.io.ObjectStreamField;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.IOException;
+import j86.java.util.Hashtable;
+import j86.java.util.Map.Entry;
 
 /**
  * This is a utility class that can be used by beans that support constrained

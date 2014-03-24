@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.security.timestamp;
+package j86.sun.security.timestamp;
 
-import java.io.IOException;
-import sun.security.pkcs.PKCS7;
-import sun.security.util.Debug;
-import sun.security.util.DerValue;
+import j86.java.io.IOException;
+import j86.sun.security.pkcs.PKCS7;
+import j86.sun.security.util.Debug;
+import j86.sun.security.util.DerValue;
 
 /**
  * This class provides the response corresponding to a timestamp request,

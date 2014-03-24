@@ -23,13 +23,13 @@
  * questions.
  */
 
-package sun.jvmstat.perfdata.monitor.protocol.local;
+package j86.j86.sun.jvmstat.perfdata.monitor.protocol.local;
 
-import sun.jvmstat.monitor.*;
-import sun.jvmstat.perfdata.monitor.MonitorStatus;
-import java.util.*;
-import java.util.regex.*;
-import java.io.*;
+import j86.sun.jvmstat.monitor.*;
+import j86.sun.jvmstat.perfdata.monitor.MonitorStatus;
+import j86.java.util.*;
+import j86.j86.java.util.regex.*;
+import j86.java.io.*;
 
 /**
  * Singleton Timer subclass to run polling tasks that generate events

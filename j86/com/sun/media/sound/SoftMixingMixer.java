@@ -22,26 +22,26 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.media.sound;
+package j86.com.sun.media.sound;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
+import j86.java.io.IOException;
+import j86.java.util.ArrayList;
+import j86.java.util.List;
 
-import javax.sound.sampled.AudioFormat;
-import javax.sound.sampled.AudioInputStream;
-import javax.sound.sampled.AudioSystem;
-import javax.sound.sampled.Clip;
-import javax.sound.sampled.Control;
-import javax.sound.sampled.DataLine;
-import javax.sound.sampled.Line;
-import javax.sound.sampled.LineEvent;
-import javax.sound.sampled.LineListener;
-import javax.sound.sampled.LineUnavailableException;
-import javax.sound.sampled.Mixer;
-import javax.sound.sampled.SourceDataLine;
-import javax.sound.sampled.AudioFormat.Encoding;
-import javax.sound.sampled.Control.Type;
+import j86.javax.sound.sampled.AudioFormat;
+import j86.javax.sound.sampled.AudioInputStream;
+import j86.javax.sound.sampled.AudioSystem;
+import j86.javax.sound.sampled.Clip;
+import j86.javax.sound.sampled.Control;
+import j86.javax.sound.sampled.DataLine;
+import j86.javax.sound.sampled.Line;
+import j86.javax.sound.sampled.LineEvent;
+import j86.javax.sound.sampled.LineListener;
+import j86.javax.sound.sampled.LineUnavailableException;
+import j86.javax.sound.sampled.Mixer;
+import j86.javax.sound.sampled.SourceDataLine;
+import j86.javax.sound.sampled.AudioFormat.Encoding;
+import j86.javax.sound.sampled.Control.Type;
 
 /**
  * Software audio mixer
@@ -90,11 +90,11 @@ public final class SoftMixingMixer implements Mixer {
 
     private final List<LineListener> listeners = new ArrayList<LineListener>();
 
-    private final javax.sound.sampled.Line.Info[] sourceLineInfo;
+    private final j86.javax.sound.sampled.Line.Info[] sourceLineInfo;
 
     public SoftMixingMixer() {
 
-        sourceLineInfo = new javax.sound.sampled.Line.Info[2];
+        sourceLineInfo = new j86.javax.sound.sampled.Line.Info[2];
 
         ArrayList<AudioFormat> formats = new ArrayList<AudioFormat>();
         for (int channels = 1; channels <= 2; channels++) {
@@ -163,21 +163,21 @@ public final class SoftMixingMixer implements Mixer {
         return 0;
     }
 
-    public javax.sound.sampled.Mixer.Info getMixerInfo() {
+    public j86.javax.sound.sampled.Mixer.Info getMixerInfo() {
         return info;
     }
 
-    public javax.sound.sampled.Line.Info[] getSourceLineInfo() {
+    public j86.javax.sound.sampled.Line.Info[] getSourceLineInfo() {
         Line.Info[] localArray = new Line.Info[sourceLineInfo.length];
         System.arraycopy(sourceLineInfo, 0, localArray, 0,
                 sourceLineInfo.length);
         return localArray;
     }
 
-    public javax.sound.sampled.Line.Info[] getSourceLineInfo(
-            javax.sound.sampled.Line.Info info) {
+    public j86.javax.sound.sampled.Line.Info[] getSourceLineInfo(
+            j86.javax.sound.sampled.Line.Info info) {
         int i;
-        ArrayList<javax.sound.sampled.Line.Info> infos = new ArrayList<javax.sound.sampled.Line.Info>();
+        ArrayList<j86.javax.sound.sampled.Line.Info> infos = new ArrayList<javax.sound.sampled.Line.Info>();
 
         for (i = 0; i < sourceLineInfo.length; i++) {
             if (info.matches(sourceLineInfo[i])) {
@@ -207,20 +207,20 @@ public final class SoftMixingMixer implements Mixer {
         return localLines;
     }
 
-    public javax.sound.sampled.Line.Info[] getTargetLineInfo() {
-        return new javax.sound.sampled.Line.Info[0];
+    public j86.javax.sound.sampled.Line.Info[] getTargetLineInfo() {
+        return new j86.javax.sound.sampled.Line.Info[0];
     }
 
-    public javax.sound.sampled.Line.Info[] getTargetLineInfo(
-            javax.sound.sampled.Line.Info info) {
-        return new javax.sound.sampled.Line.Info[0];
+    public j86.javax.sound.sampled.Line.Info[] getTargetLineInfo(
+            j86.javax.sound.sampled.Line.Info info) {
+        return new j86.javax.sound.sampled.Line.Info[0];
     }
 
     public Line[] getTargetLines() {
         return new Line[0];
     }
 
-    public boolean isLineSupported(javax.sound.sampled.Line.Info info) {
+    public boolean isLineSupported(j86.javax.sound.sampled.Line.Info info) {
         if (info != null) {
             for (int i = 0; i < sourceLineInfo.length; i++) {
                 if (info.matches(sourceLineInfo[i])) {
@@ -317,7 +317,7 @@ public final class SoftMixingMixer implements Mixer {
         return new Control[0];
     }
 
-    public javax.sound.sampled.Line.Info getLineInfo() {
+    public j86.javax.sound.sampled.Line.Info getLineInfo() {
         return new Line.Info(Mixer.class);
     }
 

@@ -23,13 +23,13 @@
  * questions.
  */
 
-package java.lang;
+package j86.java.lang;
 
-import java.io.Serializable;
-import java.io.IOException;
-import java.io.InvalidObjectException;
-import java.io.ObjectInputStream;
-import java.io.ObjectStreamException;
+import j86.java.io.Serializable;
+import j86.java.io.IOException;
+import j86.java.io.InvalidObjectException;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.ObjectStreamException;
 
 /**
  * This is the common base class of all Java language enumeration types.
@@ -41,15 +41,15 @@ import java.io.ObjectStreamException;
  *
  * <p> Note that when using an enumeration type as the type of a set
  * or as the type of the keys in a map, specialized and efficient
- * {@linkplain java.util.EnumSet set} and {@linkplain
- * java.util.EnumMap map} implementations are available.
+ * {@linkplain j86.java.util.EnumSet set} and {@linkplain
+ * j86.java.util.EnumMap map} implementations are available.
  *
  * @param <E> The enum type subclass
  * @author  Josh Bloch
  * @author  Neal Gafter
  * @see     Class#getEnumConstants()
- * @see     java.util.EnumSet
- * @see     java.util.EnumMap
+ * @see     j86.java.util.EnumSet
+ * @see     j86.java.util.EnumMap
  * @since   1.5
  */
 public abstract class Enum<E extends Enum<E>>
@@ -84,7 +84,7 @@ public abstract class Enum<E extends Enum<E>>
      *
      * Most programmers will have no use for this field.  It is designed
      * for use by sophisticated enum-based data structures, such as
-     * {@link java.util.EnumSet} and {@link java.util.EnumMap}.
+     * {@link j86.java.util.EnumSet} and {@link java.util.EnumMap}.
      */
     private final int ordinal;
 
@@ -95,7 +95,7 @@ public abstract class Enum<E extends Enum<E>>
      *
      * Most programmers will have no use for this method.  It is
      * designed for use by sophisticated enum-based data structures, such
-     * as {@link java.util.EnumSet} and {@link java.util.EnumMap}.
+     * as {@link j86.java.util.EnumSet} and {@link java.util.EnumMap}.
      *
      * @return the ordinal of this enumeration constant
      */

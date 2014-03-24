@@ -23,15 +23,15 @@
  * questions.
  */
 
-package com.sun.tools.attach;
+package com.j86.sun.tools.attach;
 
 /**
- * When a {@link java.lang.SecurityManager SecurityManager} set, this
+ * When a {@link j86.java.lang.SecurityManager SecurityManager} set, this
  * is the permission which will be checked when code invokes {@link
  * VirtualMachine#attach VirtalMachine.attach} to attach to a target virtual
  * machine.
  * This permission is also checked when an {@link
- * com.sun.tools.attach.spi.AttachProvider AttachProvider} is created. </p>
+ * com.j86.sun.tools.attach.spi.AttachProvider AttachProvider} is created. </p>
  *
  * <p> An <code>AttachPermission</code> object contains a name (also referred
  * to as a "target name") but no actions list; you either have the
@@ -75,12 +75,12 @@ package com.sun.tools.attach;
  * Instead they are created by the security policy code based on reading
  * the security policy file.
  *
- * @see com.sun.tools.attach.VirtualMachine
- * @see com.sun.tools.attach.spi.AttachProvider
+ * @see com.j86.sun.tools.attach.VirtualMachine
+ * @see com.j86.sun.tools.attach.spi.AttachProvider
  */
 
 @jdk.Exported
-public final class AttachPermission extends java.security.BasicPermission {
+public final class AttachPermission extends j86.java.security.BasicPermission {
 
     /** use serialVersionUID for interoperability */
     static final long serialVersionUID = -4619447669752976181L;

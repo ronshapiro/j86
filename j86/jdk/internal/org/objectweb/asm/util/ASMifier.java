@@ -56,20 +56,20 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-package jdk.internal.org.objectweb.asm.util;
+package j86.j86.jdk.internal.org.objectweb.asm.util;
 
-import java.io.FileInputStream;
-import java.io.PrintWriter;
-import java.util.HashMap;
-import java.util.Map;
+import j86.java.io.FileInputStream;
+import j86.java.io.PrintWriter;
+import j86.java.util.HashMap;
+import j86.java.util.Map;
 
-import jdk.internal.org.objectweb.asm.Attribute;
-import jdk.internal.org.objectweb.asm.ClassReader;
-import jdk.internal.org.objectweb.asm.Handle;
-import jdk.internal.org.objectweb.asm.Label;
-import jdk.internal.org.objectweb.asm.Opcodes;
-import jdk.internal.org.objectweb.asm.Type;
-import jdk.internal.org.objectweb.asm.TypePath;
+import j86.jdk.internal.org.objectweb.asm.Attribute;
+import j86.jdk.internal.org.objectweb.asm.ClassReader;
+import j86.jdk.internal.org.objectweb.asm.Handle;
+import j86.jdk.internal.org.objectweb.asm.Label;
+import j86.jdk.internal.org.objectweb.asm.Opcodes;
+import j86.jdk.internal.org.objectweb.asm.Type;
+import j86.jdk.internal.org.objectweb.asm.TypePath;
 
 /**
  * A {@link Printer} that prints the ASM code to generate the classes if visits.
@@ -204,9 +204,9 @@ public class ASMifier extends Printer {
                     + ";\n");
             simpleName = name.substring(n + 1);
         }
-        text.add("import java.util.*;\n");
-        text.add("import jdk.internal.org.objectweb.asm.*;\n");
-        text.add("import jdk.internal.org.objectweb.asm.attrs.*;\n");
+        text.add("import j86.java.util.*;\n");
+        text.add("import j86.jdk.internal.org.objectweb.asm.*;\n");
+        text.add("import j86.jdk.internal.org.objectweb.asm.attrs.*;\n");
         text.add("public class " + simpleName + "Dump implements Opcodes {\n\n");
         text.add("public static byte[] dump () throws Exception {\n\n");
         text.add("ClassWriter cw = new ClassWriter(0);\n");

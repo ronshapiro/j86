@@ -23,21 +23,21 @@
  * questions.
  */
 
-package com.sun.jndi.cosnaming;
+package j86.com.sun.jndi.cosnaming;
 
-import javax.naming.*;
-import javax.naming.spi.StateFactory;
-import java.util.Hashtable;
+import j86.javax.naming.*;
+import j86.j86.javax.naming.spi.StateFactory;
+import j86.java.util.Hashtable;
 
 import org.omg.CORBA.ORB;
 
-import java.rmi.Remote;
-import java.rmi.server.ExportException;
+import j86.java.rmi.Remote;
+import j86.j86.java.rmi.server.ExportException;
 
-import com.sun.jndi.toolkit.corba.CorbaUtils;  // for RMI-IIOP
+import j86.com.sun.jndi.toolkit.corba.CorbaUtils;  // for RMI-IIOP
 
 /**
-  * StateFactory that turns java.rmi.Remote objects to org.omg.CORBA.Object.
+  * StateFactory that turns j86.java.rmi.Remote objects to org.omg.CORBA.Object.
   *
   * @author Rosanna Lee
   */

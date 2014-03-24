@@ -23,7 +23,7 @@
  * questions.
  */
 
-package com.sun.security.auth.module;
+package j86.j86.com.sun.security.auth.module;
 
 /**
  * <p> This class implementation retrieves and makes available Unix

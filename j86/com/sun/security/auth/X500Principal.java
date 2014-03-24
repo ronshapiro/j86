@@ -23,10 +23,10 @@
  * questions.
  */
 
-package com.sun.security.auth;
+package j86.com.sun.security.auth;
 
-import java.security.Principal;
-import sun.security.x509.X500Name;
+import j86.java.security.Principal;
+import j86.sun.security.x509.X500Name;
 
 /**
  * <p> This class represents an X.500 <code>Principal</code>.
@@ -41,26 +41,26 @@ import sun.security.x509.X500Name;
  * on how to achieve this.  Authorization decisions can then be based upon
  * the Principals associated with a <code>Subject</code>.
  *
- * @see java.security.Principal
- * @see javax.security.auth.Subject
+ * @see j86.java.security.Principal
+ * @see j86.javax.security.auth.Subject
  * @deprecated A new X500Principal class is available in the Java platform.
  *             This X500Principal classs is entirely deprecated and
  *             is here to allow for a smooth transition to the new
  *             class.
- * @see javax.security.auth.x500.X500Principal
+ * @see j86.j86.javax.security.auth.x500.X500Principal
 */
 @jdk.Exported(false)
 @Deprecated
-public class X500Principal implements Principal, java.io.Serializable {
+public class X500Principal implements Principal, j86.java.io.Serializable {
 
     private static final long serialVersionUID = -8222422609431628648L;
 
-    private static final java.util.ResourceBundle rb =
-        java.security.AccessController.doPrivileged
-        (new java.security.PrivilegedAction<java.util.ResourceBundle>() {
-              public java.util.ResourceBundle run() {
-                  return (java.util.ResourceBundle.getBundle
-                                ("sun.security.util.AuthResources"));
+    private static final j86.java.util.ResourceBundle rb =
+        j86.java.security.AccessController.doPrivileged
+        (new j86.java.security.PrivilegedAction<j86.java.util.ResourceBundle>() {
+              public j86.java.util.ResourceBundle run() {
+                  return (j86.java.util.ResourceBundle.getBundle
+                                ("j86.sun.security.util.AuthResources"));
               }
         });
 
@@ -150,7 +150,7 @@ public class X500Principal implements Principal, java.io.Serializable {
                 return false;
             }
         } else if (o instanceof Principal) {
-            // this will return 'true' if 'o' is a sun.security.x509.X500Name
+            // this will return 'true' if 'o' is a j86.sun.security.x509.X500Name
             // and the X500Names are equal
             return o.equals(thisX500Name);
         }
@@ -172,9 +172,9 @@ public class X500Principal implements Principal, java.io.Serializable {
     /**
      * Reads this object from a stream (i.e., deserializes it)
      */
-    private void readObject(java.io.ObjectInputStream s) throws
-                                        java.io.IOException,
-                                        java.io.NotActiveException,
+    private void readObject(j86.java.io.ObjectInputStream s) throws
+                                        j86.java.io.IOException,
+                                        j86.java.io.NotActiveException,
                                         ClassNotFoundException {
 
         s.defaultReadObject();

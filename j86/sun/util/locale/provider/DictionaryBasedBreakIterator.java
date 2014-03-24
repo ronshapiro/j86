@@ -38,13 +38,13 @@
  * Taligent is a registered trademark of Taligent, Inc.
  */
 
-package sun.util.locale.provider;
+package j86.j86.j86.sun.util.locale.provider;
 
-import java.io.IOException;
-import java.text.CharacterIterator;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Stack;
+import j86.java.io.IOException;
+import j86.java.text.CharacterIterator;
+import j86.java.util.ArrayList;
+import j86.java.util.List;
+import j86.java.util.Stack;
 
 /**
  * A subclass of RuleBasedBreakIterator that adds the ability to use a dictionary

@@ -23,21 +23,21 @@
  * questions.
  */
 
-package java.net;
+package j86.java.net;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.util.Hashtable;
-import java.util.Date;
-import java.util.StringTokenizer;
-import java.util.Collections;
-import java.util.Map;
-import java.util.List;
-import java.security.Permission;
-import java.security.AccessController;
-import sun.security.util.SecurityConstants;
-import sun.net.www.MessageHeader;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.io.OutputStream;
+import j86.java.util.Hashtable;
+import j86.java.util.Date;
+import j86.java.util.StringTokenizer;
+import j86.java.util.Collections;
+import j86.java.util.Map;
+import j86.java.util.List;
+import j86.java.security.Permission;
+import j86.java.security.AccessController;
+import j86.sun.security.util.SecurityConstants;
+import j86.j86.sun.net.www.MessageHeader;
 
 /**
  * The abstract class {@code URLConnection} is the superclass
@@ -135,26 +135,26 @@ import sun.net.www.MessageHeader;
  * for it.
  *
  * @author  James Gosling
- * @see     java.net.URL#openConnection()
- * @see     java.net.URLConnection#connect()
- * @see     java.net.URLConnection#getContent()
- * @see     java.net.URLConnection#getContentEncoding()
- * @see     java.net.URLConnection#getContentLength()
- * @see     java.net.URLConnection#getContentType()
- * @see     java.net.URLConnection#getDate()
- * @see     java.net.URLConnection#getExpiration()
- * @see     java.net.URLConnection#getHeaderField(int)
- * @see     java.net.URLConnection#getHeaderField(java.lang.String)
- * @see     java.net.URLConnection#getInputStream()
- * @see     java.net.URLConnection#getLastModified()
- * @see     java.net.URLConnection#getOutputStream()
- * @see     java.net.URLConnection#setAllowUserInteraction(boolean)
- * @see     java.net.URLConnection#setDefaultUseCaches(boolean)
- * @see     java.net.URLConnection#setDoInput(boolean)
- * @see     java.net.URLConnection#setDoOutput(boolean)
- * @see     java.net.URLConnection#setIfModifiedSince(long)
- * @see     java.net.URLConnection#setRequestProperty(java.lang.String, java.lang.String)
- * @see     java.net.URLConnection#setUseCaches(boolean)
+ * @see     j86.java.net.URL#openConnection()
+ * @see     j86.java.net.URLConnection#connect()
+ * @see     j86.java.net.URLConnection#getContent()
+ * @see     j86.java.net.URLConnection#getContentEncoding()
+ * @see     j86.java.net.URLConnection#getContentLength()
+ * @see     j86.java.net.URLConnection#getContentType()
+ * @see     j86.java.net.URLConnection#getDate()
+ * @see     j86.java.net.URLConnection#getExpiration()
+ * @see     j86.java.net.URLConnection#getHeaderField(int)
+ * @see     j86.java.net.URLConnection#getHeaderField(j86.java.lang.String)
+ * @see     j86.java.net.URLConnection#getInputStream()
+ * @see     j86.java.net.URLConnection#getLastModified()
+ * @see     j86.java.net.URLConnection#getOutputStream()
+ * @see     j86.java.net.URLConnection#setAllowUserInteraction(boolean)
+ * @see     j86.java.net.URLConnection#setDefaultUseCaches(boolean)
+ * @see     j86.java.net.URLConnection#setDoInput(boolean)
+ * @see     j86.java.net.URLConnection#setDoOutput(boolean)
+ * @see     j86.java.net.URLConnection#setIfModifiedSince(long)
+ * @see     j86.java.net.URLConnection#setRequestProperty(j86.java.lang.String, java.lang.String)
+ * @see     j86.java.net.URLConnection#setUseCaches(boolean)
  * @since   JDK1.0
  */
 public abstract class URLConnection {
@@ -169,8 +169,8 @@ public abstract class URLConnection {
      * The default value of this variable is the value of the URL
      * argument in the {@code URLConnection} constructor.
      *
-     * @see     java.net.URLConnection#getURL()
-     * @see     java.net.URLConnection#url
+     * @see     j86.java.net.URLConnection#getURL()
+     * @see     j86.java.net.URLConnection#url
      */
     protected URL url;
 
@@ -184,8 +184,8 @@ public abstract class URLConnection {
      * <p>
      * The default value of this field is {@code true}.
      *
-     * @see     java.net.URLConnection#getDoInput()
-     * @see     java.net.URLConnection#setDoInput(boolean)
+     * @see     j86.java.net.URLConnection#getDoInput()
+     * @see     j86.java.net.URLConnection#setDoInput(boolean)
      */
     protected boolean doInput = true;
 
@@ -199,8 +199,8 @@ public abstract class URLConnection {
      * <p>
      * The default value of this field is {@code false}.
      *
-     * @see     java.net.URLConnection#getDoOutput()
-     * @see     java.net.URLConnection#setDoOutput(boolean)
+     * @see     j86.java.net.URLConnection#getDoOutput()
+     * @see     j86.java.net.URLConnection#setDoOutput(boolean)
      */
     protected boolean doOutput = false;
 
@@ -219,9 +219,9 @@ public abstract class URLConnection {
      * Its default value is the value of the argument in the last invocation
      * of the {@code setDefaultAllowUserInteraction} method.
      *
-     * @see     java.net.URLConnection#getAllowUserInteraction()
-     * @see     java.net.URLConnection#setAllowUserInteraction(boolean)
-     * @see     java.net.URLConnection#setDefaultAllowUserInteraction(boolean)
+     * @see     j86.java.net.URLConnection#getAllowUserInteraction()
+     * @see     j86.java.net.URLConnection#setAllowUserInteraction(boolean)
+     * @see     j86.java.net.URLConnection#setDefaultAllowUserInteraction(boolean)
      */
     protected boolean allowUserInteraction = defaultAllowUserInteraction;
 
@@ -238,9 +238,9 @@ public abstract class URLConnection {
      * Its default value is the value given in the last invocation of the
      * {@code setDefaultUseCaches} method.
      *
-     * @see     java.net.URLConnection#setUseCaches(boolean)
-     * @see     java.net.URLConnection#getUseCaches()
-     * @see     java.net.URLConnection#setDefaultUseCaches(boolean)
+     * @see     j86.java.net.URLConnection#setUseCaches(boolean)
+     * @see     j86.java.net.URLConnection#getUseCaches()
+     * @see     j86.java.net.URLConnection#setDefaultUseCaches(boolean)
      */
     protected boolean useCaches = defaultUseCaches;
 
@@ -259,8 +259,8 @@ public abstract class URLConnection {
      * The default value of this field is {@code 0}, indicating
      * that the fetching must always occur.
      *
-     * @see     java.net.URLConnection#getIfModifiedSince()
-     * @see     java.net.URLConnection#setIfModifiedSince(long)
+     * @see     j86.java.net.URLConnection#getIfModifiedSince()
+     * @see     j86.java.net.URLConnection#setIfModifiedSince(long)
      */
     protected long ifModifiedSince = 0;
 
@@ -300,11 +300,11 @@ public abstract class URLConnection {
      *
      * @return the FileNameMap
      * @since 1.2
-     * @see #setFileNameMap(java.net.FileNameMap)
+     * @see #setFileNameMap(j86.java.net.FileNameMap)
      */
     public static synchronized FileNameMap getFileNameMap() {
         if ((fileNameMap == null) && !fileNameMapLoaded) {
-            fileNameMap = sun.net.www.MimeTable.loadTable();
+            fileNameMap = j86.j86.sun.net.www.MimeTable.loadTable();
             fileNameMapLoaded = true;
         }
 
@@ -357,7 +357,7 @@ public abstract class URLConnection {
      *               the connection can be established
      * @exception  IOException  if an I/O error occurs while opening the
      *               connection.
-     * @see java.net.URLConnection#connected
+     * @see j86.java.net.URLConnection#connected
      * @see #getConnectTimeout()
      * @see #setConnectTimeout(int)
      */
@@ -368,7 +368,7 @@ public abstract class URLConnection {
      * when opening a communications link to the resource referenced
      * by this URLConnection.  If the timeout expires before the
      * connection can be established, a
-     * java.net.SocketTimeoutException is raised. A timeout of zero is
+     * j86.java.net.SocketTimeoutException is raised. A timeout of zero is
      * interpreted as an infinite timeout.
 
      * <p> Some non-standard implementation of this method may ignore
@@ -411,7 +411,7 @@ public abstract class URLConnection {
      * milliseconds. A non-zero value specifies the timeout when
      * reading from Input stream when a connection is established to a
      * resource. If the timeout expires before there is data available
-     * for read, a java.net.SocketTimeoutException is raised. A
+     * for read, a j86.java.net.SocketTimeoutException is raised. A
      * timeout of zero is interpreted as an infinite timeout.
      *
      *<p> Some non-standard implementation of this method ignores the
@@ -464,7 +464,7 @@ public abstract class URLConnection {
      *
      * @return  the value of this {@code URLConnection}'s {@code URL}
      *          field.
-     * @see     java.net.URLConnection#url
+     * @see     j86.java.net.URLConnection#url
      */
     public URL getURL() {
         return url;
@@ -506,7 +506,7 @@ public abstract class URLConnection {
      *
      * @return  the content type of the resource that the URL references,
      *          or {@code null} if not known.
-     * @see     java.net.URLConnection#getHeaderField(java.lang.String)
+     * @see     j86.java.net.URLConnection#getHeaderField(j86.java.lang.String)
      */
     public String getContentType() {
         return getHeaderField("content-type");
@@ -517,7 +517,7 @@ public abstract class URLConnection {
      *
      * @return  the content encoding of the resource that the URL references,
      *          or {@code null} if not known.
-     * @see     java.net.URLConnection#getHeaderField(java.lang.String)
+     * @see     j86.java.net.URLConnection#getHeaderField(j86.java.lang.String)
      */
     public String getContentEncoding() {
         return getHeaderField("content-encoding");
@@ -529,7 +529,7 @@ public abstract class URLConnection {
      * @return  the expiration date of the resource that this URL references,
      *          or 0 if not known. The value is the number of milliseconds since
      *          January 1, 1970 GMT.
-     * @see     java.net.URLConnection#getHeaderField(java.lang.String)
+     * @see     j86.java.net.URLConnection#getHeaderField(j86.java.lang.String)
      */
     public long getExpiration() {
         return getHeaderFieldDate("expires", 0);
@@ -541,7 +541,7 @@ public abstract class URLConnection {
      * @return  the sending date of the resource that the URL references,
      *          or {@code 0} if not known. The value returned is the
      *          number of milliseconds since January 1, 1970 GMT.
-     * @see     java.net.URLConnection#getHeaderField(java.lang.String)
+     * @see     j86.java.net.URLConnection#getHeaderField(j86.java.lang.String)
      */
     public long getDate() {
         return getHeaderFieldDate("date", 0);
@@ -553,7 +553,7 @@ public abstract class URLConnection {
      *
      * @return  the date the resource referenced by this
      *          {@code URLConnection} was last modified, or 0 if not known.
-     * @see     java.net.URLConnection#getHeaderField(java.lang.String)
+     * @see     j86.java.net.URLConnection#getHeaderField(j86.java.lang.String)
      */
     public long getLastModified() {
         return getHeaderFieldDate("last-modified", 0);
@@ -683,7 +683,7 @@ public abstract class URLConnection {
      * @param   n   an index, where {@code n>=0}
      * @return  the value of the {@code n}<sup>th</sup> header field
      *          or {@code null} if there are fewer than {@code n+1} fields
-     * @see     java.net.URLConnection#getHeaderFieldKey(int)
+     * @see     j86.java.net.URLConnection#getHeaderFieldKey(int)
      */
     public String getHeaderField(int n) {
         return null;
@@ -706,7 +706,7 @@ public abstract class URLConnection {
      *     factory's {@code createContentHandler} method returns
      *     {@code null}, then the application loads the class named:
      *     <blockquote><pre>
-     *         sun.net.www.content.&lt;<i>contentType</i>&gt;
+     *         j86.j86.sun.net.www.content.&lt;<i>contentType</i>&gt;
      *     </pre></blockquote>
      *     where &lt;<i>contentType</i>&gt; is formed by taking the
      *     content-type string, replacing all slash characters with a
@@ -728,9 +728,9 @@ public abstract class URLConnection {
      *               getting the content.
      * @exception  UnknownServiceException  if the protocol does not support
      *               the content type.
-     * @see        java.net.ContentHandlerFactory#createContentHandler(java.lang.String)
-     * @see        java.net.URLConnection#getContentType()
-     * @see        java.net.URLConnection#setContentHandlerFactory(java.net.ContentHandlerFactory)
+     * @see        j86.java.net.ContentHandlerFactory#createContentHandler(j86.java.lang.String)
+     * @see        j86.java.net.URLConnection#getContentType()
+     * @see        j86.java.net.URLConnection#setContentHandlerFactory(java.net.ContentHandlerFactory)
      */
     public Object getContent() throws IOException {
         // Must call getInputStream before GetHeaderField gets called
@@ -754,10 +754,10 @@ public abstract class URLConnection {
      *               getting the content.
      * @exception  UnknownServiceException  if the protocol does not support
      *               the content type.
-     * @see        java.net.URLConnection#getContent()
-     * @see        java.net.ContentHandlerFactory#createContentHandler(java.lang.String)
-     * @see        java.net.URLConnection#getContent(java.lang.Class[])
-     * @see        java.net.URLConnection#setContentHandlerFactory(java.net.ContentHandlerFactory)
+     * @see        j86.java.net.URLConnection#getContent()
+     * @see        j86.java.net.ContentHandlerFactory#createContentHandler(j86.java.lang.String)
+     * @see        j86.java.net.URLConnection#getContent(j86.java.lang.Class[])
+     * @see        j86.java.net.URLConnection#setContentHandlerFactory(java.net.ContentHandlerFactory)
      * @since 1.3
      */
     public Object getContent(Class[] classes) throws IOException {
@@ -773,12 +773,12 @@ public abstract class URLConnection {
      * necessary to make the connection represented by this
      * object. This method returns null if no permission is
      * required to make the connection. By default, this method
-     * returns {@code java.security.AllPermission}. Subclasses
+     * returns {@code j86.java.security.AllPermission}. Subclasses
      * should override this method and return the permission
      * that best represents the permission required to make a
      * a connection to the URL. For example, a {@code URLConnection}
      * representing a {@code file:} URL would return a
-     * {@code java.io.FilePermission} object.
+     * {@code j86.java.io.FilePermission} object.
      *
      * <p>The permission returned may dependent upon the state of the
      * connection. For example, the permission before connecting may be
@@ -862,7 +862,7 @@ public abstract class URLConnection {
      *
      * @param   doinput   the new value.
      * @throws IllegalStateException if already connected
-     * @see     java.net.URLConnection#doInput
+     * @see     j86.java.net.URLConnection#doInput
      * @see #getDoInput()
      */
     public void setDoInput(boolean doinput) {
@@ -1067,7 +1067,7 @@ public abstract class URLConnection {
      * @param   value   the value associated with it.
      * @throws IllegalStateException if already connected
      * @throws NullPointerException if key is <CODE>null</CODE>
-     * @see #getRequestProperty(java.lang.String)
+     * @see #getRequestProperty(j86.java.lang.String)
      */
     public void setRequestProperty(String key, String value) {
         if (connected)
@@ -1115,7 +1115,7 @@ public abstract class URLConnection {
      * @return  the value of the named general request property for this
      *           connection. If key is null, then null is returned.
      * @throws IllegalStateException if already connected
-     * @see #setRequestProperty(java.lang.String, java.lang.String)
+     * @see #setRequestProperty(j86.java.lang.String, java.lang.String)
      */
     public String getRequestProperty(String key) {
         if (connected)
@@ -1158,13 +1158,13 @@ public abstract class URLConnection {
      *                  (e.g., "{@code Accept}").
      * @param   value   the value associated with the key.
      *
-     * @see java.net.URLConnection#setRequestProperty(java.lang.String,java.lang.String)
+     * @see j86.java.net.URLConnection#setRequestProperty(j86.java.lang.String,java.lang.String)
      *
      * @deprecated The instance specific setRequestProperty method
      * should be used after an appropriate instance of URLConnection
      * is obtained. Invoking this method will have no effect.
      *
-     * @see #getDefaultRequestProperty(java.lang.String)
+     * @see #getDefaultRequestProperty(j86.java.lang.String)
      */
     @Deprecated
     public static void setDefaultRequestProperty(String key, String value) {
@@ -1178,13 +1178,13 @@ public abstract class URLConnection {
      * @return  the value of the default request property
      * for the specified key.
      *
-     * @see java.net.URLConnection#getRequestProperty(java.lang.String)
+     * @see j86.java.net.URLConnection#getRequestProperty(j86.java.lang.String)
      *
      * @deprecated The instance specific getRequestProperty method
      * should be used after an appropriate instance of URLConnection
      * is obtained.
      *
-     * @see #setDefaultRequestProperty(java.lang.String, java.lang.String)
+     * @see #setDefaultRequestProperty(j86.java.lang.String, java.lang.String)
      */
     @Deprecated
     public static String getDefaultRequestProperty(String key) {
@@ -1212,8 +1212,8 @@ public abstract class URLConnection {
      * @exception  Error  if the factory has already been defined.
      * @exception  SecurityException  if a security manager exists and its
      *             {@code checkSetFactory} method doesn't allow the operation.
-     * @see        java.net.ContentHandlerFactory
-     * @see        java.net.URLConnection#getContent()
+     * @see        j86.java.net.ContentHandlerFactory
+     * @see        j86.java.net.URLConnection#getContent()
      * @see        SecurityManager#checkSetFactory
      */
     public static synchronized void setContentHandlerFactory(ContentHandlerFactory fac) {
@@ -1277,12 +1277,12 @@ public abstract class URLConnection {
             return contentType;
     }
 
-    private static final String contentClassPrefix = "sun.net.www.content";
+    private static final String contentClassPrefix = "j86.j86.sun.net.www.content";
     private static final String contentPathProp = "java.content.handler.pkgs";
 
     /**
      * Looks for a content handler in a user-defineable set of places.
-     * By default it looks in sun.net.www.content, but users can define a
+     * By default it looks in j86.j86.sun.net.www.content, but users can define a
      * vertical-bar delimited set of class prefixes to search through in
      * addition by defining the java.content.handler.pkgs property.
      * The class name must be of the form:
@@ -1356,12 +1356,12 @@ public abstract class URLConnection {
      * Returns a vertical bar separated list of package prefixes for potential
      * content handlers.  Tries to get the java.content.handler.pkgs property
      * to use as a set of package prefixes to search.  Whether or not
-     * that property has been defined, the sun.net.www.content is always
+     * that property has been defined, the j86.j86.sun.net.www.content is always
      * the last one on the returned package list.
      */
     private String getContentHandlerPkgPrefixes() {
         String packagePrefixList = AccessController.doPrivileged(
-            new sun.security.action.GetPropertyAction(contentPathProp, ""));
+            new j86.sun.security.action.GetPropertyAction(contentPathProp, ""));
 
         if (packagePrefixList != "") {
             packagePrefixList += "|";
@@ -1379,7 +1379,7 @@ public abstract class URLConnection {
      * @param   fname   a filename.
      * @return  a guess as to what the content type of the object is,
      *          based upon its file name.
-     * @see     java.net.URLConnection#getContentType()
+     * @see     j86.java.net.URLConnection#getContentType()
      */
     public static String guessContentTypeFromName(String fname) {
         return getFileNameMap().getContentTypeFor(fname);
@@ -1402,9 +1402,9 @@ public abstract class URLConnection {
      *             can be determined.
      * @exception  IOException  if an I/O error occurs while reading the
      *               input stream.
-     * @see        java.io.InputStream#mark(int)
-     * @see        java.io.InputStream#markSupported()
-     * @see        java.net.URLConnection#getContentType()
+     * @see        j86.java.io.InputStream#mark(int)
+     * @see        j86.java.io.InputStream#markSupported()
+     * @see        j86.java.net.URLConnection#getContentType()
      */
     static public String guessContentTypeFromStream(InputStream is)
                         throws IOException {

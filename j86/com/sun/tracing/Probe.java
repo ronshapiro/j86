@@ -23,7 +23,7 @@
  * questions.
  */
 
-package com.sun.tracing;
+package com.j86.sun.tracing;
 
 /**
  * The {@code Probe} interface represents a tracepoint.

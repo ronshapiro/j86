@@ -22,18 +22,18 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.plaf.multi;
+package j86.j86.j86.javax.swing.plaf.multi;
 
-import java.util.Vector;
-import javax.swing.plaf.PopupMenuUI;
-import java.awt.event.MouseEvent;
-import javax.swing.Popup;
-import javax.swing.JPopupMenu;
-import javax.swing.plaf.ComponentUI;
-import javax.swing.JComponent;
-import java.awt.Graphics;
-import java.awt.Dimension;
-import javax.accessibility.Accessible;
+import j86.java.util.Vector;
+import j86.j86.javax.swing.plaf.PopupMenuUI;
+import j86.j86.java.awt.event.MouseEvent;
+import j86.javax.swing.Popup;
+import j86.javax.swing.JPopupMenu;
+import j86.j86.javax.swing.plaf.ComponentUI;
+import j86.javax.swing.JComponent;
+import j86.java.awt.Graphics;
+import j86.java.awt.Dimension;
+import j86.javax.accessibility.Accessible;
 
 /**
  * A multiplexing UI used to combine <code>PopupMenuUI</code>s.

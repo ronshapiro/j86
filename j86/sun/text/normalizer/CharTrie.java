@@ -34,11 +34,11 @@
  *******************************************************************************
  */
 
-package sun.text.normalizer;
+package j86.j86.sun.text.normalizer;
 
-import java.io.InputStream;
-import java.io.DataInputStream;
-import java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.io.DataInputStream;
+import j86.java.io.IOException;
 
 /**
  * Trie implementation which stores data in char, 16 bits.

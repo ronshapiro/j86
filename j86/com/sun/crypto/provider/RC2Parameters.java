@@ -23,15 +23,15 @@
  * questions.
  */
 
-package com.sun.crypto.provider;
+package j86.com.sun.crypto.provider;
 
-import java.io.IOException;
-import java.security.AlgorithmParametersSpi;
-import java.security.spec.AlgorithmParameterSpec;
-import java.security.spec.InvalidParameterSpecException;
-import javax.crypto.spec.RC2ParameterSpec;
-import sun.misc.HexDumpEncoder;
-import sun.security.util.*;
+import j86.java.io.IOException;
+import j86.java.security.AlgorithmParametersSpi;
+import j86.j86.java.security.spec.AlgorithmParameterSpec;
+import j86.j86.java.security.spec.InvalidParameterSpecException;
+import j86.j86.javax.crypto.spec.RC2ParameterSpec;
+import j86.sun.misc.HexDumpEncoder;
+import j86.sun.security.util.*;
 
 /**
  * This class implements the parameter set used with RC2

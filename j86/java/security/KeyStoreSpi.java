@@ -23,18 +23,18 @@
  * questions.
  */
 
-package java.security;
+package j86.java.security;
 
-import java.io.*;
-import java.util.*;
+import j86.java.io.*;
+import j86.java.util.*;
 
-import java.security.KeyStore.*;
-import java.security.cert.Certificate;
-import java.security.cert.CertificateException;
+import j86.java.security.KeyStore.*;
+import j86.j86.java.security.cert.Certificate;
+import j86.j86.java.security.cert.CertificateException;
 
-import javax.crypto.SecretKey;
+import j86.javax.crypto.SecretKey;
 
-import javax.security.auth.callback.*;
+import j86.j86.javax.security.auth.callback.*;
 
 /**
  * This class defines the <i>Service Provider Interface</i> (<b>SPI</b>)
@@ -126,7 +126,7 @@ public abstract class KeyStoreSpi {
      * Assigns the given key to the given alias, protecting it with the given
      * password.
      *
-     * <p>If the given key is of type {@code java.security.PrivateKey},
+     * <p>If the given key is of type {@code j86.java.security.PrivateKey},
      * it must be accompanied by a certificate chain certifying the
      * corresponding public key.
      *
@@ -139,7 +139,7 @@ public abstract class KeyStoreSpi {
      * @param password the password to protect the key
      * @param chain the certificate chain for the corresponding public
      * key (only required if the given key is of type
-     * {@code java.security.PrivateKey}).
+     * {@code j86.java.security.PrivateKey}).
      *
      * @exception KeyStoreException if the given key cannot be protected, or
      * this operation fails for some other reason
@@ -154,7 +154,7 @@ public abstract class KeyStoreSpi {
      * alias.
      *
      * <p>If the protected key is of type
-     * {@code java.security.PrivateKey},
+     * {@code j86.java.security.PrivateKey},
      * it must be accompanied by a certificate chain certifying the
      * corresponding public key.
      *
@@ -166,7 +166,7 @@ public abstract class KeyStoreSpi {
      * @param key the key (in protected format) to be associated with the alias
      * @param chain the certificate chain for the corresponding public
      * key (only useful if the protected key is of type
-     * {@code java.security.PrivateKey}).
+     * {@code j86.java.security.PrivateKey}).
      *
      * @exception KeyStoreException if this operation fails.
      */

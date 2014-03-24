@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.net;
+package j86.java.net;
 
 /**
  * This interface defines a factory for {@code URL} stream
@@ -33,8 +33,8 @@ package java.net;
  * {@code URLStreamHandler} for a specific protocol.
  *
  * @author  Arthur van Hoff
- * @see     java.net.URL
- * @see     java.net.URLStreamHandler
+ * @see     j86.java.net.URL
+ * @see     j86.java.net.URLStreamHandler
  * @since   JDK1.0
  */
 public interface URLStreamHandlerFactory {
@@ -45,7 +45,7 @@ public interface URLStreamHandlerFactory {
      * @param   protocol   the protocol ("{@code ftp}",
      *                     "{@code http}", "{@code nntp}", etc.).
      * @return  a {@code URLStreamHandler} for the specific protocol.
-     * @see     java.net.URLStreamHandler
+     * @see     j86.java.net.URLStreamHandler
      */
     URLStreamHandler createURLStreamHandler(String protocol);
 }

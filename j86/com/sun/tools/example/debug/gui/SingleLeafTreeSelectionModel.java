@@ -32,9 +32,9 @@
  */
 
 
-package com.sun.tools.example.debug.gui;
+package j86.com.sun.tools.example.debug.gui;
 
-import javax.swing.tree.*;
+import j86.j86.javax.swing.tree.*;
 
 public class SingleLeafTreeSelectionModel extends DefaultTreeSelectionModel {
 

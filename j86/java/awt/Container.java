@@ -22,46 +22,46 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.awt;
+package j86.java.awt;
 
-import java.awt.dnd.DropTarget;
+import j86.j86.java.awt.dnd.DropTarget;
 
-import java.awt.event.*;
+import j86.j86.java.awt.event.*;
 
-import java.awt.peer.ContainerPeer;
-import java.awt.peer.ComponentPeer;
-import java.awt.peer.LightweightPeer;
+import j86.j86.java.awt.peer.ContainerPeer;
+import j86.j86.java.awt.peer.ComponentPeer;
+import j86.j86.java.awt.peer.LightweightPeer;
 
-import java.beans.PropertyChangeListener;
+import j86.java.beans.PropertyChangeListener;
 
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.ObjectStreamField;
-import java.io.PrintStream;
-import java.io.PrintWriter;
+import j86.java.io.IOException;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectStreamField;
+import j86.java.io.PrintStream;
+import j86.java.io.PrintWriter;
 
-import java.security.AccessController;
+import j86.java.security.AccessController;
 
-import java.util.EventListener;
-import java.util.HashSet;
-import java.util.Set;
+import j86.java.util.EventListener;
+import j86.java.util.HashSet;
+import j86.java.util.Set;
 
-import javax.accessibility.*;
+import j86.javax.accessibility.*;
 
-import sun.util.logging.PlatformLogger;
+import j86.j86.sun.util.logging.PlatformLogger;
 
-import sun.awt.AppContext;
-import sun.awt.AWTAccessor;
-import sun.awt.CausedFocusEvent;
-import sun.awt.PeerEvent;
-import sun.awt.SunToolkit;
+import j86.sun.awt.AppContext;
+import j86.sun.awt.AWTAccessor;
+import j86.sun.awt.CausedFocusEvent;
+import j86.sun.awt.PeerEvent;
+import j86.sun.awt.SunToolkit;
 
-import sun.awt.dnd.SunDropTargetEvent;
+import j86.j86.sun.awt.dnd.SunDropTargetEvent;
 
-import sun.java2d.pipe.Region;
+import j86.j86.sun.java2d.pipe.Region;
 
-import sun.security.action.GetBooleanAction;
+import j86.sun.security.action.GetBooleanAction;
 
 /**
  * A generic Abstract Window Toolkit(AWT) container object is a component
@@ -77,20 +77,20 @@ import sun.security.action.GetBooleanAction;
  * <a href="http://docs.oracle.com/javase/tutorial/uiswing/misc/focus.html">
  * How to Use the Focus Subsystem</a>,
  * a section in <em>The Java Tutorial</em>, and the
- * <a href="../../java/awt/doc-files/FocusSpec.html">Focus Specification</a>
+ * <a href="../../j86.java.awt/doc-files/FocusSpec.html">Focus Specification</a>
  * for more information.
  *
  * @author      Arthur van Hoff
  * @author      Sami Shaio
- * @see       #add(java.awt.Component, int)
+ * @see       #add(j86.java.awt.Component, int)
  * @see       #getComponent(int)
  * @see       LayoutManager
  * @since     JDK1.0
  */
 public class Container extends Component {
 
-    private static final PlatformLogger log = PlatformLogger.getLogger("java.awt.Container");
-    private static final PlatformLogger eventLog = PlatformLogger.getLogger("java.awt.event.Container");
+    private static final PlatformLogger log = PlatformLogger.getLogger("j86.java.awt.Container");
+    private static final PlatformLogger eventLog = PlatformLogger.getLogger("j86.j86.java.awt.event.Container");
 
     private static final Component[] EMPTY_ARRAY = new Component[0];
 
@@ -99,7 +99,7 @@ public class Container extends Component {
      * @see #add
      * @see #getComponents
      */
-    private java.util.List<Component> component = new java.util.ArrayList<Component>();
+    private j86.java.util.List<Component> component = new java.util.ArrayList<Component>();
 
     /**
      * Layout manager for this container.
@@ -205,7 +205,7 @@ public class Container extends Component {
     private transient int numOfHWComponents = 0;
     private transient int numOfLWComponents = 0;
 
-    private static final PlatformLogger mixingLog = PlatformLogger.getLogger("java.awt.mixing.Container");
+    private static final PlatformLogger mixingLog = PlatformLogger.getLogger("j86.java.awt.mixing.Container");
 
     /**
      * @serialField ncomponents                     int
@@ -408,7 +408,7 @@ public class Container extends Component {
      * @see #addImpl
      * @see #invalidate
      * @see #validate
-     * @see javax.swing.JComponent#revalidate()
+     * @see j86.javax.swing.JComponent#revalidate()
      * @return    the component argument
      */
     public Component add(Component comp) {
@@ -459,7 +459,7 @@ public class Container extends Component {
      * @see #remove
      * @see #invalidate
      * @see #validate
-     * @see javax.swing.JComponent#revalidate()
+     * @see j86.javax.swing.JComponent#revalidate()
      */
     public Component add(Component comp, int index) {
         addImpl(comp, null, index);
@@ -713,7 +713,7 @@ public class Container extends Component {
      * If the component is a child of some other container, it is
      * removed from that container before being added to this container.
      * The important difference between this method and
-     * <code>java.awt.Container.add(Component, int)</code> is that this method
+     * <code>j86.java.awt.Container.add(Component, int)</code> is that this method
      * doesn't call <code>removeNotify</code> on the component while
      * removing it from its previous container unless necessary and when
      * allowed by the underlying native windowing system. This way, if the
@@ -748,7 +748,7 @@ public class Container extends Component {
      * @exception IllegalArgumentException if adding a container to itself
      * @exception IllegalArgumentException if adding a <code>Window</code>
      *            to a container
-     * @see #getComponentZOrder(java.awt.Component)
+     * @see #getComponentZOrder(j86.java.awt.Component)
      * @see #invalidate
      * @since 1.5
      */
@@ -928,7 +928,7 @@ public class Container extends Component {
      * @return  the z-order index of the component; otherwise
      *          returns -1 if the component is <code>null</code>
      *          or doesn't belong to the container
-     * @see #setComponentZOrder(java.awt.Component, int)
+     * @see #setComponentZOrder(j86.java.awt.Component, int)
      * @since 1.5
      */
     public int getComponentZOrder(Component comp) {
@@ -963,7 +963,7 @@ public class Container extends Component {
      * @see #addImpl
      * @see #invalidate
      * @see #validate
-     * @see javax.swing.JComponent#revalidate()
+     * @see j86.javax.swing.JComponent#revalidate()
      * @see       LayoutManager
      * @since     JDK1.1
      */
@@ -995,7 +995,7 @@ public class Container extends Component {
      * @see #addImpl
      * @see #invalidate
      * @see #validate
-     * @see javax.swing.JComponent#revalidate()
+     * @see j86.javax.swing.JComponent#revalidate()
      * @see #remove
      * @see LayoutManager
      */
@@ -1064,7 +1064,7 @@ public class Container extends Component {
      * @exception NullPointerException if {@code comp} is {@code null}
      * @see       #add(Component)
      * @see       #add(Component, int)
-     * @see       #add(Component, java.lang.Object)
+     * @see       #add(Component, j86.java.lang.Object)
      * @see #invalidate
      * @see       LayoutManager
      * @see       LayoutManager2
@@ -1517,7 +1517,7 @@ public class Container extends Component {
      * enables the {@code invalidate()} method to stop invalidating the
      * component hierarchy when the method encounters a validate root. However,
      * to preserve backward compatibility this new optimized behavior is
-     * enabled only when the {@code java.awt.smartInvalidate} system property
+     * enabled only when the {@code j86.java.awt.smartInvalidate} system property
      * value is set to {@code true}.
      * <p>
      * If a component hierarchy contains validate roots and the new optimized
@@ -1533,9 +1533,9 @@ public class Container extends Component {
      *
      * @return whether this container is a validate root
      * @see #invalidate
-     * @see java.awt.Component#invalidate
-     * @see javax.swing.JComponent#isValidateRoot
-     * @see javax.swing.JComponent#revalidate
+     * @see j86.java.awt.Component#invalidate
+     * @see j86.javax.swing.JComponent#isValidateRoot
+     * @see j86.javax.swing.JComponent#revalidate
      * @since 1.7
      */
     public boolean isValidateRoot() {
@@ -1546,7 +1546,7 @@ public class Container extends Component {
     static {
         // Don't lazy-read because every app uses invalidate()
         isJavaAwtSmartInvalidate = AccessController.doPrivileged(
-                new GetBooleanAction("java.awt.smartInvalidate"));
+                new GetBooleanAction("j86.java.awt.smartInvalidate"));
     }
 
     /**
@@ -1606,10 +1606,10 @@ public class Container extends Component {
      * the {@code validateTree} method and marks this {@code Container}
      * as valid. Otherwise, no action is performed.
      *
-     * @see #add(java.awt.Component)
+     * @see #add(j86.java.awt.Component)
      * @see #invalidate
      * @see Container#isValidateRoot
-     * @see javax.swing.JComponent#revalidate()
+     * @see j86.javax.swing.JComponent#revalidate()
      * @see #validateTree
      */
     public void validate() {
@@ -2043,7 +2043,7 @@ public class Container extends Component {
     }
 
     /**
-     * Simulates the peer callbacks into java.awt for printing of
+     * Simulates the peer callbacks into j86.java.awt for printing of
      * lightweight Containers.
      * @param     g   the graphics context to use for printing.
      * @see       Component#printAll
@@ -2079,7 +2079,7 @@ public class Container extends Component {
     }
 
     /**
-     * Simulates the peer callbacks into java.awt for printing of
+     * Simulates the peer callbacks into j86.java.awt for printing of
      * lightweight Containers.
      * @param     g   the graphics context to use for printing.
      * @see       Component#printAll
@@ -2177,13 +2177,13 @@ public class Container extends Component {
      *
      * @param listenerType the type of listeners requested; this parameter
      *          should specify an interface that descends from
-     *          <code>java.util.EventListener</code>
+     *          <code>j86.java.util.EventListener</code>
      * @return an array of all objects registered as
      *          <code><em>Foo</em>Listener</code>s on this container,
      *          or an empty array if no such listeners have been added
      * @exception ClassCastException if <code>listenerType</code>
      *          doesn't specify a class or interface that implements
-     *          <code>java.util.EventListener</code>
+     *          <code>j86.java.util.EventListener</code>
      * @exception NullPointerException if {@code listenerType} is {@code null}
      *
      * @see #getContainerListeners
@@ -2545,7 +2545,7 @@ public class Container extends Component {
             return null;
         }
         synchronized (getTreeLock()) {
-            // Two passes: see comment in sun.awt.SunGraphicsCallback
+            // Two passes: see comment in j86.sun.awt.SunGraphicsCallback
             for (int i = 0; i < component.size(); i++) {
                 Component comp = component.get(i);
                 if (comp != null &&
@@ -2604,8 +2604,8 @@ public class Container extends Component {
         if (GraphicsEnvironment.isHeadless()) {
             throw new HeadlessException();
         }
-        PointerInfo pi = java.security.AccessController.doPrivileged(
-            new java.security.PrivilegedAction<PointerInfo>() {
+        PointerInfo pi = j86.java.security.AccessController.doPrivileged(
+            new j86.java.security.PrivilegedAction<PointerInfo>() {
                 public PointerInfo run() {
                     return MouseInfo.getPointerInfo();
                 }
@@ -2655,7 +2655,7 @@ public class Container extends Component {
      * Private version of findComponentAt which has a controllable
      * behavior. Setting 'ignoreEnabled' to 'false' bypasses disabled
      * Components during the search. This behavior is used by the
-     * lightweight cursor support in sun.awt.GlobalCursorManager.
+     * lightweight cursor support in j86.sun.awt.GlobalCursorManager.
      *
      * The addition of this feature is temporary, pending the
      * adoption of new, public API which exports this feature.
@@ -2676,7 +2676,7 @@ public class Container extends Component {
             return null;
         }
 
-        // Two passes: see comment in sun.awt.SunGraphicsCallback
+        // Two passes: see comment in j86.sun.awt.SunGraphicsCallback
         for (int i = 0; i < component.size(); i++) {
             Component comp = component.get(i);
             if (comp != null &&
@@ -2868,7 +2868,7 @@ public class Container extends Component {
         // keep the KeyEvents from being dispatched
         // until the focus has been transfered
         long time = Toolkit.getEventQueue().getMostRecentKeyEventTime();
-        Component predictedFocusOwner = (Component.isInstanceOf(this, "javax.swing.JInternalFrame")) ? ((javax.swing.JInternalFrame)(this)).getMostRecentFocusOwner() : null;
+        Component predictedFocusOwner = (Component.isInstanceOf(this, "j86.javax.swing.JInternalFrame")) ? ((javax.swing.JInternalFrame)(this)).getMostRecentFocusOwner() : null;
         if (predictedFocusOwner != null) {
             KeyboardFocusManager.getCurrentKeyboardFocusManager().
                 enqueueKeyEvents(time, predictedFocusOwner);
@@ -3001,7 +3001,7 @@ public class Container extends Component {
      * @param    out      a print stream
      * @param    indent   the number of spaces to indent
      * @throws   NullPointerException if {@code out} is {@code null}
-     * @see      Component#list(java.io.PrintStream, int)
+     * @see      Component#list(j86.java.io.PrintStream, int)
      * @since    JDK1.0
      */
     public void list(PrintStream out, int indent) {
@@ -3028,7 +3028,7 @@ public class Container extends Component {
      * @param    out      a print writer
      * @param    indent   the number of spaces to indent
      * @throws   NullPointerException if {@code out} is {@code null}
-     * @see      Component#list(java.io.PrintWriter, int)
+     * @see      Component#list(j86.java.io.PrintWriter, int)
      * @since    JDK1.1
      */
     public void list(PrintWriter out, int indent) {
@@ -3603,7 +3603,7 @@ public class Container extends Component {
      * @param    listener  the PropertyChangeListener to be added
      *
      * @see Component#removePropertyChangeListener
-     * @see #addPropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)
+     * @see #addPropertyChangeListener(j86.java.lang.String,j86.java.beans.PropertyChangeListener)
      */
     public void addPropertyChangeListener(PropertyChangeListener listener) {
         super.addPropertyChangeListener(listener);
@@ -3642,7 +3642,7 @@ public class Container extends Component {
      * @param propertyName one of the property names listed above
      * @param listener the PropertyChangeListener to be added
      *
-     * @see #addPropertyChangeListener(java.beans.PropertyChangeListener)
+     * @see #addPropertyChangeListener(j86.java.beans.PropertyChangeListener)
      * @see Component#removePropertyChangeListener
      */
     public void addPropertyChangeListener(String propertyName,
@@ -3680,7 +3680,7 @@ public class Container extends Component {
      *   the <code>Container</code>'s <code>FocusTraversalPolicy</code>,
      *     or <code>null</code>
      *
-     * @see AWTEventMulticaster#save(java.io.ObjectOutputStream, java.lang.String, java.util.EventListener)
+     * @see AWTEventMulticaster#save(j86.java.io.ObjectOutputStream, j86.java.lang.String, j86.java.util.EventListener)
      * @see Container#containerListenerK
      * @see #readObject(ObjectInputStream)
      */
@@ -3699,7 +3699,7 @@ public class Container extends Component {
         AWTEventMulticaster.save(s, containerListenerK, containerListener);
         s.writeObject(null);
 
-        if (focusTraversalPolicy instanceof java.io.Serializable) {
+        if (focusTraversalPolicy instanceof j86.java.io.Serializable) {
             s.writeObject(focusTraversalPolicy);
         } else {
             s.writeObject(null);
@@ -3728,7 +3728,7 @@ public class Container extends Component {
         ObjectInputStream.GetField f = s.readFields();
         Component [] tmpComponent = (Component[])f.get("component", EMPTY_ARRAY);
         int ncomponents = (Integer) f.get("ncomponents", 0);
-        component = new java.util.ArrayList<Component>(ncomponents);
+        component = new j86.java.util.ArrayList<Component>(ncomponents);
         for (int i = 0; i < ncomponents; ++i) {
             component.add(tmpComponent[i]);
         }
@@ -3741,7 +3741,7 @@ public class Container extends Component {
         focusCycleRoot = f.get("focusCycleRoot", false);
         containerSerializedDataVersion = f.get("containerSerializedDataVersion", 1);
         focusTraversalPolicyProvider = f.get("focusTraversalPolicyProvider", false);
-        java.util.List<Component> component = this.component;
+        j86.java.util.List<Component> component = this.component;
         for(Component comp : component) {
             comp.parent = this;
             adjustListeningChildren(AWTEvent.HIERARCHY_EVENT_MASK,
@@ -3768,7 +3768,7 @@ public class Container extends Component {
             if (policy instanceof FocusTraversalPolicy) {
                 focusTraversalPolicy = (FocusTraversalPolicy)policy;
             }
-        } catch (java.io.OptionalDataException e) {
+        } catch (j86.java.io.OptionalDataException e) {
             // JDK 1.1/1.2/1.3 instances will not have this optional data.
             // e.eof will be true to indicate that there is no more data
             // available for this object. If e.eof is not true, throw the
@@ -4397,7 +4397,7 @@ public class Container extends Component {
  *
  * @author Timothy Prinzing
  */
-class LightweightDispatcher implements java.io.Serializable, AWTEventListener {
+class LightweightDispatcher implements j86.java.io.Serializable, AWTEventListener {
 
     /*
      * JDK 1.1 serialVersionUID
@@ -4409,7 +4409,7 @@ class LightweightDispatcher implements java.io.Serializable, AWTEventListener {
      */
     private static final int  LWD_MOUSE_DRAGGED_OVER = 1500;
 
-    private static final PlatformLogger eventLog = PlatformLogger.getLogger("java.awt.event.LightweightDispatcher");
+    private static final PlatformLogger eventLog = PlatformLogger.getLogger("j86.j86.java.awt.event.LightweightDispatcher");
 
     LightweightDispatcher(Container nativeContainer) {
         this.nativeContainer = nativeContainer;
@@ -4700,8 +4700,8 @@ class LightweightDispatcher implements java.io.Serializable, AWTEventListener {
      */
     private void startListeningForOtherDrags() {
         //System.out.println("Adding AWTEventListener");
-        java.security.AccessController.doPrivileged(
-            new java.security.PrivilegedAction<Object>() {
+        j86.java.security.AccessController.doPrivileged(
+            new j86.java.security.PrivilegedAction<Object>() {
                 public Object run() {
                     nativeContainer.getToolkit().addAWTEventListener(
                         LightweightDispatcher.this,
@@ -4715,8 +4715,8 @@ class LightweightDispatcher implements java.io.Serializable, AWTEventListener {
 
     private void stopListeningForOtherDrags() {
         //System.out.println("Removing AWTEventListener");
-        java.security.AccessController.doPrivileged(
-            new java.security.PrivilegedAction<Object>() {
+        j86.java.security.AccessController.doPrivileged(
+            new j86.java.security.PrivilegedAction<Object>() {
                 public Object run() {
                     nativeContainer.getToolkit().removeAWTEventListener(LightweightDispatcher.this);
                     return null;

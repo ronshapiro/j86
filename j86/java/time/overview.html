@@ -72,7 +72,7 @@
         The Java Time API is composed of several packages, each with a primary function:
     </p>
     <p>
-        {@link java.time} contains the main API based on the ISO-8601 standard.
+        {@link j86.java.time} contains the main API based on the ISO-8601 standard.
         The classes defined here represent the principal date-time concepts,
         including instants, durations, dates, times, time-zones and periods.
         They are based on the ISO calendar system, which is the <i>de facto</i> world
@@ -80,7 +80,7 @@
         All the classes are immutable and thread-safe.
     </p>
     <p>
-        {@link java.time.temporal} contains the API for accessing the fields and units
+        {@link j86.j86.java.time.temporal} contains the API for accessing the fields and units
         of date-time. Units are measurable, such as years, months and hours.
         For example, the expression "2 hours later" uses the hours unit.
         By contrast, fields are mini-calculations, defining a value.
@@ -88,18 +88,18 @@
         The set of supported units and fields can be extended by applications if desired.
     </p>
     <p>
-        {@link java.time.format} contains the API to print and parse fields into date-time
+        {@link j86.j86.java.time.format} contains the API to print and parse fields into date-time
         objects and to customize parsing and printing.
         Formatters can be created in a variety of ways, including constants, patterns,
         localized styles and a builder.
         Formatters are immutable and thread-safe.
     </p>
     <p>
-        {@link java.time.zone} contains the API to handle time-zones.
+        {@link j86.j86.java.time.zone} contains the API to handle time-zones.
         Detailed information is made available about the rules of each time-zone.
     </p>
     <p>
-        {@link java.time.chrono} contains the basic part of the calendar neutral API
+        {@link j86.j86.java.time.chrono} contains the basic part of the calendar neutral API
         and alternate calendar systems.
         This is intended for use by applications that need to use localized calendars.
         Support is provided for the Hijrah, Japanese, Minguo, and Thai Buddhist Calendars.
@@ -122,7 +122,7 @@
         In a language like Java, the use of many different types tends to cause API bloat.
         This is handled here through the use of common method naming patterns throughout the API.
         The common prefixes are 'of', 'get', 'is', 'with', 'plus', 'minus', 'to' and 'at'.
-        See {@link java.time.LocalDate} for an example of each of these methods.
+        See {@link j86.java.time.LocalDate} for an example of each of these methods.
     </p>
     <p>
         Following type-safety to its logical conclusion would result in more classes, especially for time -
@@ -130,8 +130,8 @@
         While logically pure, this was not possible in practice, as the additional classes would have
         excessively complicated the API. Notably, there would be additional combinations at the offset
         and date-time levels, such as offset-date-hour-minute.
-        To avoid this explosion of types, {@link java.time.LocalTime} is used for all precisions of time.
-        By contrast, some additional classes were used for dates, such as {@link java.time.YearMonth}.
+        To avoid this explosion of types, {@link j86.java.time.LocalTime} is used for all precisions of time.
+        By contrast, some additional classes were used for dates, such as {@link j86.java.time.YearMonth}.
         This proved necessary, as the API for year-month is significantly different to that for a date, whereas
         an absence of nanoseconds in a time can be approximated by returning zero.
     </p>
@@ -156,7 +156,7 @@
     <p>
         There are, however, some limited use cases where users believe they need to store and use
         dates in arbitrary calendar systems throughout the application.
-        This is supported by {@link java.time.chrono.ChronoLocalDate}, however it is vital to read
+        This is supported by {@link j86.j86.java.time.chrono.ChronoLocalDate}, however it is vital to read
         all the associated warnings in the Javadoc of that interface before using it.
         In summary, applications that require general interoperation between multiple calendar systems
         typically need to be written in a very different way to those only using the ISO calendar,

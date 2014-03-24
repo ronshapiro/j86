@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.management.openmbean;
+package j86.j86.javax.management.openmbean;
 
-import java.io.ObjectStreamException;
-import java.lang.reflect.Array;
+import j86.java.io.ObjectStreamException;
+import j86.j86.j86.java.lang.reflect.Array;
 
 /**
  * The <code>ArrayType</code> class is the <i>open type</i> class whose instances describe
@@ -34,31 +34,31 @@ import java.lang.reflect.Array;
  * <p>
  * Examples of valid {@code ArrayType} instances are:
  * <pre>{@code
- * // 2-dimension array of java.lang.String
+ * // 2-dimension array of j86.java.lang.String
  * ArrayType<String[][]> a1 = new ArrayType<String[][]>(2, SimpleType.STRING);
  *
  * // 1-dimension array of int
  * ArrayType<int[]> a2 = new ArrayType<int[]>(SimpleType.INTEGER, true);
  *
- * // 1-dimension array of java.lang.Integer
+ * // 1-dimension array of j86.java.lang.Integer
  * ArrayType<Integer[]> a3 = new ArrayType<Integer[]>(SimpleType.INTEGER, false);
  *
  * // 4-dimension array of int
  * ArrayType<int[][][][]> a4 = new ArrayType<int[][][][]>(3, a2);
  *
- * // 4-dimension array of java.lang.Integer
+ * // 4-dimension array of j86.java.lang.Integer
  * ArrayType<Integer[][][][]> a5 = new ArrayType<Integer[][][][]>(3, a3);
  *
- * // 1-dimension array of java.lang.String
+ * // 1-dimension array of j86.java.lang.String
  * ArrayType<String[]> a6 = new ArrayType<String[]>(SimpleType.STRING, false);
  *
  * // 1-dimension array of long
  * ArrayType<long[]> a7 = new ArrayType<long[]>(SimpleType.LONG, true);
  *
- * // 1-dimension array of java.lang.Integer
+ * // 1-dimension array of j86.java.lang.Integer
  * ArrayType<Integer[]> a8 = ArrayType.getArrayType(SimpleType.INTEGER);
  *
- * // 2-dimension array of java.lang.Integer
+ * // 2-dimension array of j86.java.lang.Integer
  * ArrayType<Integer[][]> a9 = ArrayType.getArrayType(a8);
  *
  * // 2-dimension array of int
@@ -73,22 +73,22 @@ import java.lang.reflect.Array;
  * // 2-dimension array of float
  * ArrayType<float[][]> a13 = ArrayType.getArrayType(a12);
  *
- * // 1-dimension array of javax.management.ObjectName
+ * // 1-dimension array of j86.javax.management.ObjectName
  * ArrayType<ObjectName[]> a14 = ArrayType.getArrayType(SimpleType.OBJECTNAME);
  *
- * // 2-dimension array of javax.management.ObjectName
+ * // 2-dimension array of j86.javax.management.ObjectName
  * ArrayType<ObjectName[][]> a15 = ArrayType.getArrayType(a14);
  *
- * // 3-dimension array of java.lang.String
+ * // 3-dimension array of j86.java.lang.String
  * ArrayType<String[][][]> a16 = new ArrayType<String[][][]>(3, SimpleType.STRING);
  *
- * // 1-dimension array of java.lang.String
+ * // 1-dimension array of j86.java.lang.String
  * ArrayType<String[]> a17 = new ArrayType<String[]>(1, SimpleType.STRING);
  *
- * // 2-dimension array of java.lang.String
+ * // 2-dimension array of j86.java.lang.String
  * ArrayType<String[][]> a18 = new ArrayType<String[][]>(1, a17);
  *
- * // 3-dimension array of java.lang.String
+ * // 3-dimension array of j86.java.lang.String
  * ArrayType<String[][][]> a19 = new ArrayType<String[][][]>(1, a18);
  * }</pre>
  *
@@ -227,7 +227,7 @@ public class ArrayType<T> extends OpenType<T> {
      * <p>
      * When invoked on an <tt>ArrayType</tt> instance, the {@link OpenType#getClassName() getClassName} method
      * returns the class name of the array instances it describes (following the rules defined by the
-     * {@link Class#getName() getName} method of <code>java.lang.Class</code>), not the class name of the array elements
+     * {@link Class#getName() getName} method of <code>j86.java.lang.Class</code>), not the class name of the array elements
      * (which is returned by a call to <tt>getElementOpenType().getClassName()</tt>).
      * <p>
      * The internal field corresponding to the type name of this <code>ArrayType</code> instance is also set to
@@ -250,10 +250,10 @@ public class ArrayType<T> extends OpenType<T> {
      * }</pre>
      * would produce the following output:
      * <pre>{@code
-     * array class name       = [[[Ljava.lang.String;
-     * element class name     = java.lang.String
-     * array type name        = [[[Ljava.lang.String;
-     * array type description = 3-dimension array of java.lang.String
+     * array class name       = [[[Lj86.java.lang.String;
+     * element class name     = j86.java.lang.String
+     * array type name        = [[[Lj86.java.lang.String;
+     * array type description = 3-dimension array of j86.java.lang.String
      * }</pre>
      * And the following piece of code which is equivalent to the one listed
      * above would also produce the same output:
@@ -320,7 +320,7 @@ public class ArrayType<T> extends OpenType<T> {
      * <p>
      * When invoked on an <tt>ArrayType</tt> instance, the {@link OpenType#getClassName() getClassName} method
      * returns the class name of the array instances it describes (following the rules defined by the
-     * {@link Class#getName() getName} method of <code>java.lang.Class</code>), not the class name of the array elements
+     * {@link Class#getName() getName} method of <code>j86.java.lang.Class</code>), not the class name of the array elements
      * (which is returned by a call to <tt>getElementOpenType().getClassName()</tt>).
      * <p>
      * The internal field corresponding to the type name of this <code>ArrayType</code> instance is also set to
@@ -344,7 +344,7 @@ public class ArrayType<T> extends OpenType<T> {
      * would produce the following output:
      * <pre>{@code
      * array class name       = [I
-     * element class name     = java.lang.Integer
+     * element class name     = j86.java.lang.Integer
      * array type name        = [I
      * array type description = 1-dimension array of int
      * }</pre>
@@ -738,7 +738,7 @@ public class ArrayType<T> extends OpenType<T> {
      * Returns a string representation of this <code>ArrayType</code> instance.
      * <p>
      * The string representation consists of the name of this class (i.e.
-     * <code>javax.management.openmbean.ArrayType</code>), the type name,
+     * <code>j86.j86.javax.management.openmbean.ArrayType</code>), the type name,
      * the dimension, the elements' open type and the primitive array flag
      * defined for this instance.
      * <p>
@@ -787,10 +787,10 @@ public class ArrayType<T> extends OpenType<T> {
      * }</pre>
      * would produce the following output:
      * <pre>{@code
-     * array class name       = [[[Ljava.lang.String;
-     * element class name     = java.lang.String
-     * array type name        = [[[Ljava.lang.String;
-     * array type description = 3-dimension array of java.lang.String
+     * array class name       = [[[Lj86.java.lang.String;
+     * element class name     = j86.java.lang.String
+     * array type name        = [[[Lj86.java.lang.String;
+     * array type description = 3-dimension array of j86.java.lang.String
      * }</pre>
      *
      * @param  elementType  the <i>open type</i> of element values contained
@@ -829,7 +829,7 @@ public class ArrayType<T> extends OpenType<T> {
      * would produce the following output:
      * <pre>{@code
      * array class name       = [[[I
-     * element class name     = java.lang.Integer
+     * element class name     = j86.java.lang.Integer
      * array type name        = [[[I
      * array type description = 3-dimension array of int
      * }</pre>
@@ -911,17 +911,17 @@ public class ArrayType<T> extends OpenType<T> {
      *   <li>if {@code primitiveArray} is {@code true} the {@code className}
      *       field is deserialized by replacing the array's component primitive
      *       wrapper type by the corresponding array's component primitive type,
-     *       e.g. {@code "[[Ljava.lang.Integer;"} will be deserialized as
+     *       e.g. {@code "[[Lj86.java.lang.Integer;"} will be deserialized as
      *       {@code "[[I"}.</li>
      *   <li>if {@code primitiveArray} is {@code true} the {@code typeName}
      *       field is deserialized by replacing the array's component primitive
      *       wrapper type by the corresponding array's component primitive type,
-     *       e.g. {@code "[[Ljava.lang.Integer;"} will be deserialized as
+     *       e.g. {@code "[[Lj86.java.lang.Integer;"} will be deserialized as
      *       {@code "[[I"}.</li>
      *   <li>if {@code primitiveArray} is {@code true} the {@code description}
      *       field is deserialized by replacing the array's component primitive
      *       wrapper type by the corresponding array's component primitive type,
-     *       e.g. {@code "2-dimension array of java.lang.Integer"} will be
+     *       e.g. {@code "2-dimension array of j86.java.lang.Integer"} will be
      *       deserialized as {@code "2-dimension array of int"}.</li>
      * </ul>
      *
@@ -980,17 +980,17 @@ public class ArrayType<T> extends OpenType<T> {
      *       field is serialized by replacing the array's component primitive
      *       type by the corresponding array's component primitive wrapper type,
      *       e.g. {@code "[[I"} will be serialized as
-     *       {@code "[[Ljava.lang.Integer;"}.</li>
+     *       {@code "[[Lj86.java.lang.Integer;"}.</li>
      *   <li>if {@code primitiveArray} is {@code true} the {@code typeName}
      *       field is serialized by replacing the array's component primitive
      *       type by the corresponding array's component primitive wrapper type,
      *       e.g. {@code "[[I"} will be serialized as
-     *       {@code "[[Ljava.lang.Integer;"}.</li>
+     *       {@code "[[Lj86.java.lang.Integer;"}.</li>
      *   <li>if {@code primitiveArray} is {@code true} the {@code description}
      *       field is serialized by replacing the array's component primitive
      *       type by the corresponding array's component primitive wrapper type,
      *       e.g. {@code "2-dimension array of int"} will be serialized as
-     *       {@code "2-dimension array of java.lang.Integer"}.</li>
+     *       {@code "2-dimension array of j86.java.lang.Integer"}.</li>
      * </ul>
      *
      * @since 1.6

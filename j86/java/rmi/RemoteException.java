@@ -23,13 +23,13 @@
  * questions.
  */
 
-package java.rmi;
+package j86.java.rmi;
 
 /**
  * A <code>RemoteException</code> is the common superclass for a number of
  * communication-related exceptions that may occur during the execution of a
  * remote method call.  Each method of a remote interface, an interface that
- * extends <code>java.rmi.Remote</code>, must list
+ * extends <code>j86.java.rmi.Remote</code>, must list
  * <code>RemoteException</code> in its throws clause.
  *
  * <p>As of release 1.4, this exception has been retrofitted to conform to
@@ -46,7 +46,7 @@ package java.rmi;
  * @author  Ann Wollrath
  * @since   JDK1.1
  */
-public class RemoteException extends java.io.IOException {
+public class RemoteException extends j86.java.io.IOException {
 
     /* indicate compatibility with JDK 1.1.x version of class */
     private static final long serialVersionUID = -5148567311918794206L;

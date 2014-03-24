@@ -23,13 +23,13 @@
  * questions.
  */
 
-package sun.management;
+package j86.sun.management;
 
-import java.lang.management.ManagementFactory;
+import j86.j86.java.lang.management.ManagementFactory;
 
-import java.lang.management.ThreadInfo;
+import j86.j86.java.lang.management.ThreadInfo;
 
-import javax.management.ObjectName;
+import j86.javax.management.ObjectName;
 
 /**
  * Implementation class for the thread subsystem.
@@ -38,7 +38,7 @@ import javax.management.ObjectName;
  * ManagementFactory.getThreadMXBean() returns an instance
  * of this class.
  */
-class ThreadImpl implements com.sun.management.ThreadMXBean {
+class ThreadImpl implements com.j86.sun.management.ThreadMXBean {
 
     private final VMManagement jvm;
 
@@ -252,7 +252,7 @@ class ThreadImpl implements com.sun.management.ThreadMXBean {
 
         int length = ids.length;
         long[] times = new long[length];
-        java.util.Arrays.fill(times, -1);
+        j86.java.util.Arrays.fill(times, -1);
 
         if (verified) {
             if (length == 1) {
@@ -287,7 +287,7 @@ class ThreadImpl implements com.sun.management.ThreadMXBean {
 
         int length = ids.length;
         long[] times = new long[length];
-        java.util.Arrays.fill(times, -1);
+        j86.java.util.Arrays.fill(times, -1);
 
         if (verified) {
             if (length == 1) {
@@ -343,7 +343,7 @@ class ThreadImpl implements com.sun.management.ThreadMXBean {
         boolean verified = verifyThreadAllocatedMemory(ids);
 
         long[] sizes = new long[ids.length];
-        java.util.Arrays.fill(sizes, -1);
+        j86.java.util.Arrays.fill(sizes, -1);
 
         if (verified) {
             getThreadAllocatedMemory1(ids, sizes);

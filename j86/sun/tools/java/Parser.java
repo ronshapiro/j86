@@ -23,13 +23,13 @@
  * questions.
  */
 
-package sun.tools.java;
+package j86.sun.tools.java;
 
-import sun.tools.tree.*;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.Enumeration;
-import java.util.Vector;
+import j86.sun.tools.tree.*;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.util.Enumeration;
+import j86.java.util.Vector;
 
 /**
  * This class is used to parse Java statements and expressions.

@@ -30,10 +30,10 @@
  * at JavaSoft/Sun.
  */
 
-package com.sun.tools.hat.internal.model;
+package j86.j86.com.sun.tools.hat.internal.model;
 
-import java.util.Enumeration;
-import java.util.Hashtable;
+import j86.java.util.Enumeration;
+import j86.java.util.Hashtable;
 
 
 /**
@@ -90,7 +90,7 @@ public abstract class JavaThing {
 
     /**
      * Compare our string representation to other's
-     * @see java.lang.String.compareTo()
+     * @see j86.java.lang.String.compareTo()
      */
     public int compareTo(JavaThing other) {
         return toString().compareTo(other.toString());

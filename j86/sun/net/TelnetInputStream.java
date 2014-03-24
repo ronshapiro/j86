@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.net;
+package j86.sun.net;
 
-import java.io.*;
+import j86.java.io.*;
 
 /**
  * This class provides input and output streams for telnet clients.

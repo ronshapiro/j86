@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.tools.jconsole.inspector;
+package j86.j86.sun.tools.jconsole.inspector;
 
-import java.awt.*;
-import javax.swing.*;
-import javax.management.*;
+import j86.java.awt.*;
+import j86.javax.swing.*;
+import j86.javax.management.*;
 
 @SuppressWarnings("serial")
 public class OperationEntry extends JPanel {

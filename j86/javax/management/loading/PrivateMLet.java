@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.management.loading;
+package j86.j86.javax.management.loading;
 
-import java.net.URL;
-import java.net.URLStreamHandlerFactory;
+import j86.java.net.URL;
+import j86.java.net.URLStreamHandlerFactory;
 
 /**
  * An MLet that is not added to the {@link ClassLoaderRepository}.

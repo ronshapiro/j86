@@ -25,16 +25,16 @@
 /*
  * $Id: KeySelector.java,v 1.6 2005/05/10 15:47:42 mullan Exp $
  */
-package javax.xml.crypto;
+package j86.javax.xml.crypto;
 
-import java.security.Key;
-import javax.xml.crypto.dsig.keyinfo.KeyInfo;
-import javax.xml.crypto.dsig.keyinfo.RetrievalMethod;
+import j86.java.security.Key;
+import j86.j86.j86.javax.xml.crypto.dsig.keyinfo.KeyInfo;
+import j86.j86.j86.javax.xml.crypto.dsig.keyinfo.RetrievalMethod;
 
 /**
  * A selector that finds and returns a key using the data contained in a
  * {@link KeyInfo} object. An example of an implementation of
- * this class is one that searches a {@link java.security.KeyStore} for
+ * this class is one that searches a {@link j86.java.security.KeyStore} for
  * trusted keys that match information contained in a <code>KeyInfo</code>.
  *
  * <p>Whether or not the returned key is trusted and the mechanisms

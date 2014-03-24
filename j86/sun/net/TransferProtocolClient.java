@@ -23,18 +23,18 @@
  * questions.
  */
 
-package sun.net;
+package j86.sun.net;
 
-import java.io.*;
-import java.util.Vector;
+import j86.java.io.*;
+import j86.java.util.Vector;
 
 /**
  * This class implements that basic intefaces of transfer protocols.
  * It is used by subclasses implementing specific protocols.
  *
  * @author      Jonathan Payne
- * @see         sun.net.ftp.FtpClient
- * @see         sun.net.nntp.NntpClient
+ * @see         j86.j86.sun.net.ftp.FtpClient
+ * @see         j86.sun.net.nntp.NntpClient
  */
 
 public class TransferProtocolClient extends NetworkClient {

@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.nio.ch;
+package j86.j86.j86.sun.nio.ch;
 
-import java.nio.channels.Channel;
-import java.io.FileDescriptor;
-import java.io.IOException;
+import j86.j86.java.nio.channels.Channel;
+import j86.java.io.FileDescriptor;
+import j86.java.io.IOException;
 
 
 /**

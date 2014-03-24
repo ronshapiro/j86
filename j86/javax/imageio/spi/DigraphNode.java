@@ -23,12 +23,12 @@
  * questions.
  */
 
-package javax.imageio.spi;
+package j86.j86.javax.imageio.spi;
 
-import java.io.Serializable;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Set;
+import j86.java.io.Serializable;
+import j86.java.util.HashSet;
+import j86.java.util.Iterator;
+import j86.java.util.Set;
 
 /**
  * A node in a directed graph.  In addition to an arbitrary

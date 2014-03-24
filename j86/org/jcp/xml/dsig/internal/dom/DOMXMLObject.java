@@ -26,14 +26,14 @@
 /*
  * $Id: DOMXMLObject.java 1333415 2012-05-03 12:03:51Z coheigea $
  */
-package org.jcp.xml.dsig.internal.dom;
+package j86.j86.org.jcp.xml.dsig.internal.dom;
 
-import javax.xml.crypto.*;
-import javax.xml.crypto.dom.DOMCryptoContext;
-import javax.xml.crypto.dsig.*;
+import j86.javax.xml.crypto.*;
+import j86.j86.javax.xml.crypto.dom.DOMCryptoContext;
+import j86.j86.javax.xml.crypto.dsig.*;
 
-import java.security.Provider;
-import java.util.*;
+import j86.java.security.Provider;
+import j86.java.util.*;
 
 import org.w3c.dom.Attr;
 import org.w3c.dom.Document;
@@ -129,7 +129,7 @@ public final class DOMXMLObject extends DOMStructure implements XMLObject {
                 }
                 //@@@FIXME: check for other dsig structures
             }
-            content.add(new javax.xml.crypto.dom.DOMStructure(child));
+            content.add(new j86.j86.javax.xml.crypto.dom.DOMStructure(child));
         }
         if (content.isEmpty()) {
             this.content = Collections.emptyList();
@@ -174,8 +174,8 @@ public final class DOMXMLObject extends DOMStructure implements XMLObject {
                 if (object instanceof DOMStructure) {
                     ((DOMStructure)object).marshal(objElem, dsPrefix, context);
                 } else {
-                    javax.xml.crypto.dom.DOMStructure domObject =
-                        (javax.xml.crypto.dom.DOMStructure)object;
+                    j86.j86.javax.xml.crypto.dom.DOMStructure domObject =
+                        (j86.j86.javax.xml.crypto.dom.DOMStructure)object;
                     DOMUtils.appendChild(objElem, domObject.getNode());
                 }
             }
@@ -234,12 +234,12 @@ public final class DOMXMLObject extends DOMStructure implements XMLObject {
         for (int i = 0, osize = otherContent.size(); i < osize; i++) {
             XMLStructure oxs = otherContent.get(i);
             XMLStructure xs = content.get(i);
-            if (oxs instanceof javax.xml.crypto.dom.DOMStructure) {
-                if (!(xs instanceof javax.xml.crypto.dom.DOMStructure)) {
+            if (oxs instanceof j86.j86.javax.xml.crypto.dom.DOMStructure) {
+                if (!(xs instanceof j86.j86.javax.xml.crypto.dom.DOMStructure)) {
                     return false;
                 }
-                Node onode = ((javax.xml.crypto.dom.DOMStructure)oxs).getNode();
-                Node node = ((javax.xml.crypto.dom.DOMStructure)xs).getNode();
+                Node onode = ((j86.j86.javax.xml.crypto.dom.DOMStructure)oxs).getNode();
+                Node node = ((j86.j86.javax.xml.crypto.dom.DOMStructure)xs).getNode();
                 if (!DOMUtils.nodesEqual(node, onode)) {
                     return false;
                 }

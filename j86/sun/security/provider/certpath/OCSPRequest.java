@@ -23,15 +23,15 @@
  * questions.
  */
 
-package sun.security.provider.certpath;
+package j86.j86.sun.security.provider.certpath;
 
-import java.io.IOException;
-import java.security.cert.Extension;
-import java.util.Collections;
-import java.util.List;
+import j86.java.io.IOException;
+import j86.j86.java.security.cert.Extension;
+import j86.java.util.Collections;
+import j86.java.util.List;
 
-import sun.misc.HexDumpEncoder;
-import sun.security.util.*;
+import j86.sun.misc.HexDumpEncoder;
+import j86.sun.security.util.*;
 
 /**
  * This class can be used to generate an OCSP request and send it over

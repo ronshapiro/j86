@@ -24,31 +24,31 @@
  */
 
 
-package com.sun.jmx.snmp.agent;
+package j86.j86.com.sun.jmx.snmp.agent;
 
 
 
 // java imports
 //
-import java.io.Serializable;
-import java.util.Vector;
-import java.util.Enumeration;
+import j86.java.io.Serializable;
+import j86.java.util.Vector;
+import j86.java.util.Enumeration;
 
 // jmx imports
 //
-import javax.management.MBeanServer;
-import javax.management.MBeanRegistration;
-import javax.management.ObjectName;
-import javax.management.InstanceNotFoundException;
-import javax.management.ServiceNotFoundException;
-import javax.management.ReflectionException;
-import javax.management.MBeanException;
-import com.sun.jmx.snmp.SnmpVarBind;
-import com.sun.jmx.snmp.SnmpDefinitions;
-import com.sun.jmx.snmp.SnmpStatusException;
-import com.sun.jmx.snmp.SnmpPdu;
-import com.sun.jmx.snmp.SnmpOid;
-import com.sun.jmx.snmp.SnmpEngine;
+import j86.javax.management.MBeanServer;
+import j86.javax.management.MBeanRegistration;
+import j86.javax.management.ObjectName;
+import j86.javax.management.InstanceNotFoundException;
+import j86.javax.management.ServiceNotFoundException;
+import j86.javax.management.ReflectionException;
+import j86.javax.management.MBeanException;
+import j86.com.sun.jmx.snmp.SnmpVarBind;
+import j86.com.sun.jmx.snmp.SnmpDefinitions;
+import j86.com.sun.jmx.snmp.SnmpStatusException;
+import j86.com.sun.jmx.snmp.SnmpPdu;
+import j86.com.sun.jmx.snmp.SnmpOid;
+import j86.com.sun.jmx.snmp.SnmpEngine;
 
 /**
  * Abstract class for representing an SNMP agent.
@@ -90,12 +90,12 @@ public abstract class SnmpMibAgent
      *
      * @return The name of the SNMP MIB registered.
      *
-     * @exception java.lang.Exception
+     * @exception j86.java.lang.Exception
      */
     @Override
     public abstract ObjectName preRegister(MBeanServer server,
                                            ObjectName name)
-        throws java.lang.Exception;
+        throws j86.java.lang.Exception;
 
     /**
      * Not used in this context.
@@ -108,7 +108,7 @@ public abstract class SnmpMibAgent
      * Not used in this context.
      */
     @Override
-    public void preDeregister() throws java.lang.Exception {
+    public void preDeregister() throws j86.java.lang.Exception {
     }
 
     /**
@@ -374,7 +374,7 @@ public abstract class SnmpMibAgent
         // Then update the reference to the new adaptor server.
         //
         Object[] params = {this};
-        String[] signature = {"com.sun.jmx.snmp.agent.SnmpMibAgent"};
+        String[] signature = {"j86.j86.com.sun.jmx.snmp.agent.SnmpMibAgent"};
         try {
             adaptor = (SnmpMibHandler)(server.invoke(name, "addMib", params,
                                                      signature));
@@ -420,7 +420,7 @@ public abstract class SnmpMibAgent
         // Then update the reference to the new adaptor server.
         //
         Object[] params = {this, oids};
-        String[] signature = {"com.sun.jmx.snmp.agent.SnmpMibAgent",
+        String[] signature = {"j86.j86.com.sun.jmx.snmp.agent.SnmpMibAgent",
         oids.getClass().getName()};
         try {
             adaptor = (SnmpMibHandler)(server.invoke(name, "addMib", params,
@@ -467,7 +467,7 @@ public abstract class SnmpMibAgent
         // Then update the reference to the new adaptor server.
         //
         Object[] params = {this, contextName};
-        String[] signature = {"com.sun.jmx.snmp.agent.SnmpMibAgent", "java.lang.String"};
+        String[] signature = {"j86.j86.com.sun.jmx.snmp.agent.SnmpMibAgent", "j86.java.lang.String"};
         try {
             adaptor = (SnmpMibHandler)(server.invoke(name, "addMib", params,
                                                      signature));
@@ -516,7 +516,7 @@ public abstract class SnmpMibAgent
         // Then update the reference to the new adaptor server.
         //
         Object[] params = {this, contextName, oids};
-        String[] signature = {"com.sun.jmx.snmp.agent.SnmpMibAgent", "java.lang.String", oids.getClass().getName()};
+        String[] signature = {"j86.j86.com.sun.jmx.snmp.agent.SnmpMibAgent", "j86.java.lang.String", oids.getClass().getName()};
         try {
             adaptor = (SnmpMibHandler)(server.invoke(name, "addMib", params,
                                                      signature));

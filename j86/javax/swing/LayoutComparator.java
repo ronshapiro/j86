@@ -22,24 +22,24 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing;
+package j86.javax.swing;
 
-import java.util.Comparator;
-import java.util.LinkedList;
-import java.util.ListIterator;
-import java.awt.Component;
-import java.awt.ComponentOrientation;
-import java.awt.Window;
+import j86.java.util.Comparator;
+import j86.java.util.LinkedList;
+import j86.java.util.ListIterator;
+import j86.java.awt.Component;
+import j86.java.awt.ComponentOrientation;
+import j86.java.awt.Window;
 
 
 /**
  * Comparator which attempts to sort Components based on their size and
- * position. Code adapted from original javax.swing.DefaultFocusManager
+ * position. Code adapted from original j86.javax.swing.DefaultFocusManager
  * implementation.
  *
  * @author David Mendenhall
  */
-final class LayoutComparator implements Comparator<Component>, java.io.Serializable {
+final class LayoutComparator implements Comparator<Component>, j86.java.io.Serializable {
 
     private static final int ROW_TOLERANCE = 10;
 

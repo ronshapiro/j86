@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.security.ssl;
+package j86.sun.security.ssl;
 
-import java.security.AccessControlContext;
-import java.security.Permission;
-import java.security.Principal;
-import javax.crypto.SecretKey;
-import javax.security.auth.Subject;
-import javax.security.auth.login.LoginException;
+import j86.java.security.AccessControlContext;
+import j86.java.security.Permission;
+import j86.java.security.Principal;
+import j86.javax.crypto.SecretKey;
+import j86.javax.security.auth.Subject;
+import j86.j86.javax.security.auth.login.LoginException;
 
 /**
  * An interface to a subset of the Kerberos APIs to avoid a static dependency

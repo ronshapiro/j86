@@ -36,9 +36,9 @@
  *
  */
 
-package java.text;
+package j86.java.text;
 
-import java.lang.Character;
+import j86.java.lang.Character;
 
 /**
  * Utility class for normalizing and merging patterns for collation.

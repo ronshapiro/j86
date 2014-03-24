@@ -25,12 +25,12 @@
 
 
 
-package javax.swing;
+package j86.javax.swing;
 
 
 
-import java.io.*;
-import java.awt.Component;
+import j86.java.io.*;
+import j86.java.awt.Component;
 
 
 

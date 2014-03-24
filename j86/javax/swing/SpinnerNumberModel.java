@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.swing;
+package j86.javax.swing;
 
-import java.util.*;
-import java.io.Serializable;
+import j86.java.util.*;
+import j86.java.io.Serializable;
 
 
 /**
@@ -245,7 +245,7 @@ public class SpinnerNumberModel extends AbstractSpinnerModel implements Serializ
      * as the <code>value</code> however it's possible to use any
      * <code>Comparable</code> with a <code>compareTo</code>
      * method for a <code>Number</code> with the same type as the value.
-     * See <a href="#setMinimum(java.lang.Comparable)">
+     * See <a href="#setMinimum(j86.java.lang.Comparable)">
      * <code>setMinimum</code></a> for an example.
      * <p>
      * This method fires a <code>ChangeEvent</code> if the

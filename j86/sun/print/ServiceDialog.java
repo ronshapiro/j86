@@ -23,57 +23,57 @@
  * questions.
  */
 
-package sun.print;
+package j86.sun.print;
 
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.Container;
-import java.awt.Dialog;
-import java.awt.FlowLayout;
-import java.awt.Frame;
-import java.awt.GraphicsConfiguration;
-import java.awt.GridBagLayout;
-import java.awt.GridBagConstraints;
-import java.awt.GridLayout;
-import java.awt.Insets;
-import java.awt.Toolkit;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.FocusEvent;
-import java.awt.event.FocusListener;
-import java.awt.event.ItemEvent;
-import java.awt.event.ItemListener;
-import java.awt.event.WindowEvent;
-import java.awt.event.WindowAdapter;
-import java.awt.print.PrinterJob;
-import java.io.File;
-import java.io.FilePermission;
-import java.io.IOException;
-import java.net.URI;
-import java.net.URL;
-import java.text.DecimalFormat;
-import java.util.Locale;
-import java.util.ResourceBundle;
-import java.util.Vector;
-import javax.print.*;
-import javax.print.attribute.*;
-import javax.print.attribute.standard.*;
-import javax.swing.*;
-import javax.swing.border.Border;
-import javax.swing.border.EmptyBorder;
-import javax.swing.border.TitledBorder;
-import javax.swing.event.ChangeEvent;
-import javax.swing.event.ChangeListener;
-import javax.swing.event.DocumentEvent;
-import javax.swing.event.DocumentListener;
-import javax.swing.event.PopupMenuEvent;
-import javax.swing.event.PopupMenuListener;
-import javax.swing.text.NumberFormatter;
-import sun.print.SunPageSelection;
-import java.awt.event.KeyEvent;
-import java.net.URISyntaxException;
-import java.lang.reflect.Field;
+import j86.java.awt.BorderLayout;
+import j86.java.awt.Color;
+import j86.java.awt.Component;
+import j86.java.awt.Container;
+import j86.java.awt.Dialog;
+import j86.java.awt.FlowLayout;
+import j86.java.awt.Frame;
+import j86.java.awt.GraphicsConfiguration;
+import j86.java.awt.GridBagLayout;
+import j86.java.awt.GridBagConstraints;
+import j86.java.awt.GridLayout;
+import j86.java.awt.Insets;
+import j86.java.awt.Toolkit;
+import j86.j86.java.awt.event.ActionEvent;
+import j86.j86.java.awt.event.ActionListener;
+import j86.j86.java.awt.event.FocusEvent;
+import j86.j86.java.awt.event.FocusListener;
+import j86.j86.java.awt.event.ItemEvent;
+import j86.j86.java.awt.event.ItemListener;
+import j86.j86.java.awt.event.WindowEvent;
+import j86.j86.java.awt.event.WindowAdapter;
+import j86.j86.java.awt.print.PrinterJob;
+import j86.java.io.File;
+import j86.java.io.FilePermission;
+import j86.java.io.IOException;
+import j86.java.net.URI;
+import j86.java.net.URL;
+import j86.java.text.DecimalFormat;
+import j86.java.util.Locale;
+import j86.java.util.ResourceBundle;
+import j86.java.util.Vector;
+import j86.javax.print.*;
+import j86.j86.javax.print.attribute.*;
+import j86.j86.j86.javax.print.attribute.standard.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.border.Border;
+import j86.j86.javax.swing.border.EmptyBorder;
+import j86.j86.javax.swing.border.TitledBorder;
+import j86.j86.javax.swing.event.ChangeEvent;
+import j86.j86.javax.swing.event.ChangeListener;
+import j86.j86.javax.swing.event.DocumentEvent;
+import j86.j86.javax.swing.event.DocumentListener;
+import j86.j86.javax.swing.event.PopupMenuEvent;
+import j86.j86.javax.swing.event.PopupMenuListener;
+import j86.j86.javax.swing.text.NumberFormatter;
+import j86.sun.print.SunPageSelection;
+import j86.j86.java.awt.event.KeyEvent;
+import j86.java.net.URISyntaxException;
+import j86.j86.j86.java.lang.reflect.Field;
 
 
 /**
@@ -98,7 +98,7 @@ public class ServiceDialog extends JDialog implements ActionListener {
      */
     public final static int CANCEL = 2;
 
-    private static final String strBundle = "sun.print.resources.serviceui";
+    private static final String strBundle = "j86.sun.print.resources.serviceui";
     private static final Insets panelInsets = new Insets(6, 6, 6, 6);
     private static final Insets compInsets = new Insets(3, 6, 3, 6);
 
@@ -460,13 +460,13 @@ public class ServiceDialog extends JDialog implements ActionListener {
      * Initialize ResourceBundle
      */
     public static void initResource() {
-        java.security.AccessController.doPrivileged(
-            new java.security.PrivilegedAction() {
+        j86.java.security.AccessController.doPrivileged(
+            new j86.java.security.PrivilegedAction() {
                 public Object run() {
                     try {
                         messageRB = ResourceBundle.getBundle(strBundle);
                         return null;
-                    } catch (java.util.MissingResourceException e) {
+                    } catch (j86.java.util.MissingResourceException e) {
                         throw new Error("Fatal: Resource for ServiceUI " +
                                         "is missing");
                     }
@@ -481,7 +481,7 @@ public class ServiceDialog extends JDialog implements ActionListener {
     public static String getMsg(String key) {
         try {
             return removeMnemonics(messageRB.getString(key));
-        } catch (java.util.MissingResourceException e) {
+        } catch (j86.java.util.MissingResourceException e) {
             throw new Error("Fatal: Resource for ServiceUI is broken; " +
                             "there is no " + key + " key in resource");
         }
@@ -537,7 +537,7 @@ public class ServiceDialog extends JDialog implements ActionListener {
 
         try {
             if (_keyEventClazz == null) {
-                _keyEventClazz= Class.forName("java.awt.event.KeyEvent",
+                _keyEventClazz= Class.forName("j86.j86.java.awt.event.KeyEvent",
                                  true, (ServiceDialog.class).getClassLoader());
             }
             Field field = _keyEventClazz.getDeclaredField(vkString);
@@ -552,8 +552,8 @@ public class ServiceDialog extends JDialog implements ActionListener {
      * Returns URL for image resource
      */
     private static URL getImageResource(final String key) {
-        URL url = (URL)java.security.AccessController.doPrivileged(
-                       new java.security.PrivilegedAction() {
+        URL url = (URL)j86.java.security.AccessController.doPrivileged(
+                       new j86.java.security.PrivilegedAction() {
                 public Object run() {
                     URL url = ServiceDialog.class.getResource(
                                                   "resources/" + key);
@@ -1924,7 +1924,7 @@ public class ServiceDialog extends JDialog implements ActionListener {
                 newkey = newkey.replace('#', 'n');
 
                 return messageRB.getString(newkey);
-            } catch (java.util.MissingResourceException e) {
+            } catch (j86.java.util.MissingResourceException e) {
                 return key;
             }
         }
@@ -2801,8 +2801,8 @@ public class ServiceDialog extends JDialog implements ActionListener {
         {
             super(new FlowLayout(FlowLayout.LEADING));
             final URL imgURL = getImageResource(img);
-            Icon icon = (Icon)java.security.AccessController.doPrivileged(
-                                 new java.security.PrivilegedAction() {
+            Icon icon = (Icon)j86.java.security.AccessController.doPrivileged(
+                                 new j86.java.security.PrivilegedAction() {
                 public Object run() {
                     Icon icon = new ImageIcon(imgURL);
                     return icon;

@@ -23,9 +23,9 @@
  * questions.
  */
 
-package com.sun.jndi.ldap;
+package j86.com.sun.jndi.ldap;
 
-import javax.naming.ldap.*;
+import j86.j86.javax.naming.ldap.*;
 
 /**
   * This class provides a basic implementation of the <tt>Control</tt>

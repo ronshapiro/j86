@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.util;
+package j86.java.util;
 
 
 /**
@@ -36,7 +36,7 @@ package java.util;
  *   <li> The format of a provider-configuration file violates the <a
  *   href="ServiceLoader.html#format">specification</a>; </li>
  *
- *   <li> An {@link java.io.IOException IOException} occurs while reading a
+ *   <li> An {@link j86.java.io.IOException IOException} occurs while reading a
  *   provider-configuration file; </li>
  *
  *   <li> A concrete provider class named in a provider-configuration file

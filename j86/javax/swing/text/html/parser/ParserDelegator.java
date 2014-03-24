@@ -23,18 +23,18 @@
  * questions.
  */
 
-package javax.swing.text.html.parser;
+package j86.j86.j86.j86.javax.swing.text.html.parser;
 
-import sun.awt.AppContext;
+import j86.sun.awt.AppContext;
 
-import javax.swing.text.html.HTMLEditorKit;
-import java.io.BufferedInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.DataInputStream;
-import java.io.ObjectInputStream;
-import java.io.Reader;
-import java.io.Serializable;
+import j86.j86.j86.javax.swing.text.html.HTMLEditorKit;
+import j86.java.io.BufferedInputStream;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.io.DataInputStream;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.Reader;
+import j86.java.io.Serializable;
 
 /**
  * Responsible for starting up a new DocumentParser

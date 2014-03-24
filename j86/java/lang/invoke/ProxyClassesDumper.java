@@ -22,19 +22,19 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.lang.invoke;
+package j86.j86.java.lang.invoke;
 
-import sun.util.logging.PlatformLogger;
+import j86.j86.sun.util.logging.PlatformLogger;
 
-import java.io.FilePermission;
-import java.nio.file.Files;
-import java.nio.file.InvalidPathException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.util.Objects;
-import java.util.concurrent.atomic.AtomicBoolean;
+import j86.java.io.FilePermission;
+import j86.j86.java.nio.file.Files;
+import j86.j86.java.nio.file.InvalidPathException;
+import j86.j86.java.nio.file.Path;
+import j86.j86.java.nio.file.Paths;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.util.Objects;
+import j86.j86.j86.java.util.concurrent.atomic.AtomicBoolean;
 
 /**
  * Helper class used by InnerClassLambdaMetafactory to log generated classes

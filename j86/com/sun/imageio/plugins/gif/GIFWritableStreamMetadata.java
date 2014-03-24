@@ -23,32 +23,32 @@
  * questions.
  */
 
-package com.sun.imageio.plugins.gif;
+package j86.com.sun.imageio.plugins.gif;
 
 /*
  * The source for this class was copied verbatim from the source for
- * package com.sun.imageio.plugins.gif.GIFImageMetadata and then modified
+ * package j86.com.sun.imageio.plugins.gif.GIFImageMetadata and then modified
  * to make the class read-write capable.
  */
 
-import javax.imageio.ImageTypeSpecifier;
-import javax.imageio.metadata.IIOInvalidTreeException;
-import javax.imageio.metadata.IIOMetadata;
-import javax.imageio.metadata.IIOMetadataNode;
-import javax.imageio.metadata.IIOMetadataFormat;
-import javax.imageio.metadata.IIOMetadataFormatImpl;
+import j86.javax.imageio.ImageTypeSpecifier;
+import j86.j86.javax.imageio.metadata.IIOInvalidTreeException;
+import j86.j86.javax.imageio.metadata.IIOMetadata;
+import j86.j86.javax.imageio.metadata.IIOMetadataNode;
+import j86.j86.javax.imageio.metadata.IIOMetadataFormat;
+import j86.j86.javax.imageio.metadata.IIOMetadataFormatImpl;
 import org.w3c.dom.Node;
 
 class GIFWritableStreamMetadata extends GIFStreamMetadata {
 
     // package scope
     static final String
-    NATIVE_FORMAT_NAME = "javax_imageio_gif_stream_1.0";
+    NATIVE_FORMAT_NAME = "j86.javax.imageio_gif_stream_1.0";
 
     public GIFWritableStreamMetadata() {
         super(true,
               NATIVE_FORMAT_NAME,
-              "com.sun.imageio.plugins.gif.GIFStreamMetadataFormat", // XXX J2SE
+              "j86.com.sun.imageio.plugins.gif.GIFStreamMetadataFormat", // XXX J2SE
               null, null);
 
         // initialize metadata fields by default values

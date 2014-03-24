@@ -23,17 +23,17 @@
  * questions.
  */
 
-package java.awt.peer;
+package j86.j86.java.awt.peer;
 
-import java.awt.*;
-import java.awt.event.PaintEvent;
-import java.awt.image.ImageProducer;
-import java.awt.image.ImageObserver;
-import java.awt.image.ColorModel;
-import java.awt.image.VolatileImage;
-import java.awt.GraphicsConfiguration;
-import sun.awt.CausedFocusEvent;
-import sun.java2d.pipe.Region;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.PaintEvent;
+import j86.j86.j86.java.awt.image.ImageProducer;
+import j86.j86.j86.java.awt.image.ImageObserver;
+import j86.j86.j86.java.awt.image.ColorModel;
+import j86.j86.j86.java.awt.image.VolatileImage;
+import j86.java.awt.GraphicsConfiguration;
+import j86.sun.awt.CausedFocusEvent;
+import j86.j86.sun.java2d.pipe.Region;
 
 
 /**
@@ -123,7 +123,7 @@ public interface ComponentPeer {
      *         {@code false} otherwise
      *
      * @see #canDetermineObscurity()
-     * @see javax.swing.JViewport#needsRepaintAfterBlit
+     * @see j86.javax.swing.JViewport#needsRepaintAfterBlit
      */
     boolean isObscured();
 
@@ -135,7 +135,7 @@ public interface ComponentPeer {
      *         has been obscured, {@code false} false otherwise
      *
      * @see #isObscured()
-     * @see javax.swing.JViewport#needsRepaintAfterBlit
+     * @see j86.javax.swing.JViewport#needsRepaintAfterBlit
      */
     boolean canDetermineObscurity();
 

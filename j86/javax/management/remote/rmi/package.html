@@ -41,7 +41,7 @@ questions.
 
     <p>Like most connectors in the JMX Remote API, an RMI connector
       usually has an address, which
-      is a {@link javax.management.remote.JMXServiceURL
+      is a {@link j86.j86.javax.management.remote.JMXServiceURL
       JMXServiceURL}.  The protocol part of this address is
       <code>rmi</code> for a connector that uses the default RMI
       transport (JRMP), or <code>iiop</code> for a connector that
@@ -53,11 +53,11 @@ questions.
       <li>
 	In the <em>JNDI form</em>, the URL indicates <em>where to find
 	an RMI stub for the connector</em>.  This RMI stub is a Java
-	object of type {@link javax.management.remote.rmi.RMIServer
+	object of type {@link j86.j86.j86.javax.management.remote.rmi.RMIServer
 	RMIServer} that gives remote access to the connector server.
 	With this address form, the RMI stub is obtained from an
 	external directory entry included in the URL.  An external
-	directory is any directory recognized by {@link javax.naming
+	directory is any directory recognized by {@link j86.javax.naming
 	JNDI}, typically the RMI registry, LDAP, or COS Naming.
 
       <li>
@@ -76,7 +76,7 @@ questions.
 
     <p>The usual way to create an RMI connector server is to supply an
       RMI connector address to the method {@link
-      javax.management.remote.JMXConnectorServerFactory#newJMXConnectorServer
+      j86.j86.javax.management.remote.JMXConnectorServerFactory#newJMXConnectorServer
       JMXConnectorServerFactory.newJMXConnectorServer}.  The MBean
       server to which the connector server is attached can be
       specified as a parameter to that method.  Alternatively, the
@@ -85,7 +85,7 @@ questions.
 
     <p>An RMI connector server can also be created by constructing an
       instance of {@link
-      javax.management.remote.rmi.RMIConnectorServer
+      j86.j86.j86.javax.management.remote.rmi.RMIConnectorServer
       RMIConnectorServer}, explicitly or through the MBean server's
       <code>createMBean</code> method.</p>
 
@@ -97,7 +97,7 @@ questions.
       <code>serviceURL</code> when creating the connector server.  You
       can also create specialized connector servers by instantiating
       an appropriate subclass of {@link
-      javax.management.remote.rmi.RMIServerImpl RMIServerImpl} and
+      j86.j86.j86.javax.management.remote.rmi.RMIServerImpl RMIServerImpl} and
       supplying it to the <code>RMIConnectorServer</code>
       constructor.</p>
 
@@ -120,7 +120,7 @@ questions.
 	</pre>
 
 	<p>then the connector server will generate an {@link
-	javax.management.remote.rmi.RMIJRMPServerImpl
+	j86.j86.j86.javax.management.remote.rmi.RMIJRMPServerImpl
 	RMIJRMPServerImpl} and the returned <code>JMXServiceURL</code>
 	looks like:</p>
 
@@ -139,7 +139,7 @@ questions.
 	</pre>
 	
 	<p>then the connector server will generate an {@link
-	javax.management.remote.rmi.RMIIIOPServerImpl
+	j86.j86.j86.javax.management.remote.rmi.RMIIIOPServerImpl
 	RMIIIOPServerImpl} and the returned
 	<code>JMXServiceURL</code> looks like:</p>
 
@@ -153,7 +153,7 @@ questions.
 
       <li><p>If there is no <code>serviceURL</code>, there must be a
 	user-provided <code>RMIServerImpl</code>.  If the {@link
-	javax.management.remote.rmi.RMIServerImpl#toStub toStub}
+	j86.j86.j86.javax.management.remote.rmi.RMIServerImpl#toStub toStub}
 	method on this object returns an instance of {@link
 	javax.rmi.CORBA.Stub}, then the connector server will generate
 	a <code>JMXServiceURL</code> using the <code>iiop</code>
@@ -204,8 +204,8 @@ questions.
     </pre>
 
     <p>Here, <code><em>jndi-name</em></code> is a string that can be
-      supplied to {@link javax.naming.InitialContext#bind
-      javax.naming.InitialContext.bind}.</p>
+      supplied to {@link j86.javax.naming.InitialContext#bind
+      j86.javax.naming.InitialContext.bind}.</p>
 
     <p>As usual, the <code><em>host</em></code> and
       <code>:<em>port</em></code> can be omitted.</p>
@@ -216,7 +216,7 @@ questions.
       <code>rmi</code>, the <code><em>port</em></code> if any.  When
       the connector server is started, it will derive a stub from this
       object using its {@link
-      javax.management.remote.rmi.RMIServerImpl#toStub toStub} method
+      j86.j86.j86.javax.management.remote.rmi.RMIServerImpl#toStub toStub} method
       and store the object using the given
       <code><em>jndi-name</em></code>.  The properties defined by the
       JNDI API are consulted as usual.</p>
@@ -304,15 +304,15 @@ questions.
       <code>environment</code> given to the
       <code>RMIConnectorServer</code> constructor.  The values of these
       attributes must be of type {@link
-      java.rmi.server.RMIClientSocketFactory} and {@link
-      java.rmi.server.RMIServerSocketFactory}, respectively.  These
+      j86.j86.java.rmi.server.RMIClientSocketFactory} and {@link
+      j86.j86.java.rmi.server.RMIServerSocketFactory}, respectively.  These
       factories are used when creating the RMI objects associated with
       the connector.</p>
 
     <h3>Creating an RMI connector client</h3>
 
     <p>An RMI connector client is usually constructed using {@link
-      javax.management.remote.JMXConnectorFactory}, with a
+      j86.j86.javax.management.remote.JMXConnectorFactory}, with a
       <code>JMXServiceURL</code> that has <code>rmi</code> or
       <code>iiop</code> as its protocol.</p>
 
@@ -338,9 +338,9 @@ questions.
     </pre>
 
     <p>If you have an RMI stub of type {@link
-      javax.management.remote.rmi.RMIServer RMIServer}, you can
+      j86.j86.j86.javax.management.remote.rmi.RMIServer RMIServer}, you can
       construct an RMI connection directly by using the appropriate
-      constructor of {@link javax.management.remote.rmi.RMIConnector
+      constructor of {@link j86.j86.j86.javax.management.remote.rmi.RMIConnector
       RMIConnector}.</p>
 
 
@@ -350,9 +350,9 @@ questions.
       specify what ORB to use
       with the attribute <code>java.naming.corba.orb</code>.
       Connection to the ORB happens at {@link 
-      javax.management.remote.rmi.RMIConnectorServer#start() start} time 
+      j86.j86.j86.javax.management.remote.rmi.RMIConnectorServer#start() start} time 
       for the connector server, and at {@link 
-      javax.management.remote.rmi.RMIConnector#connect(java.util.Map) 
+      j86.j86.j86.javax.management.remote.rmi.RMIConnector#connect(j86.java.util.Map) 
       connect} time for the connector client.
       If the <code>java.naming.corba.orb</code> attribute is contained
       in the environment Map, then its value (an {@link 
@@ -365,7 +365,7 @@ questions.
 
      <p>If the <code>java.naming.corba.orb</code> attribute is 
       specified and does not point to an {@link org.omg.CORBA.ORB ORB},
-      then an <code>{@link java.lang.IllegalArgumentException}</code> 
+      then an <code>{@link j86.java.lang.IllegalArgumentException}</code> 
       will be thrown.</p>
 
      <p>The mechanism described here does not apply when the IIOP

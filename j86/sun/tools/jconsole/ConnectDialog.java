@@ -23,24 +23,24 @@
  * questions.
  */
 
-package sun.tools.jconsole;
+package j86.sun.tools.jconsole;
 
-import java.util.List;
-import java.awt.*;
-import java.awt.event.*;
-import java.util.*;
+import j86.java.util.List;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.java.util.*;
 
-import javax.swing.*;
-import javax.swing.border.*;
-import javax.swing.event.*;
-import javax.swing.plaf.basic.BasicRadioButtonUI;
-import javax.swing.table.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.border.*;
+import j86.j86.javax.swing.event.*;
+import j86.j86.j86.javax.swing.plaf.basic.BasicRadioButtonUI;
+import j86.j86.javax.swing.table.*;
 
 
 
-import static java.awt.BorderLayout.*;
-import static javax.swing.ListSelectionModel.*;
-import static sun.tools.jconsole.Utilities.*;
+import static j86.java.awt.BorderLayout.*;
+import static j86.javax.swing.ListSelectionModel.*;
+import static j86.sun.tools.jconsole.Utilities.*;
 
 @SuppressWarnings("serial")
 public class ConnectDialog extends InternalDialog
@@ -406,7 +406,7 @@ public class ConnectDialog extends InternalDialog
 
         public String getToolTipText(MouseEvent e) {
             String tip = null;
-            java.awt.Point p = e.getPoint();
+            j86.java.awt.Point p = e.getPoint();
             int rowIndex = rowAtPoint(p);
             int colIndex = columnAtPoint(p);
             int realColumnIndex = convertColumnIndexToModel(colIndex);

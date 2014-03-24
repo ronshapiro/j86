@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.awt.datatransfer;
+package j86.j86.java.awt.datatransfer;
 
 
 /**

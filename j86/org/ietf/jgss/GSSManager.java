@@ -23,9 +23,9 @@
  * questions.
  */
 
-package org.ietf.jgss;
+package j86.org.ietf.jgss;
 
-import java.security.Provider;
+import j86.java.security.Provider;
 
 /**
  * This class serves as a factory for other important
@@ -144,7 +144,7 @@ public abstract class GSSManager {
      * @return a GSSManager implementation
      */
     public static GSSManager getInstance() {
-        return new sun.security.jgss.GSSManagerImpl();
+        return new j86.sun.security.jgss.GSSManagerImpl();
     }
 
     /**
@@ -347,7 +347,7 @@ public abstract class GSSManager {
      * credentials to which they are not entitled. The kinds of permissions
      * needed by different mechanism providers will be documented on a
      * per-mechanism basis. A failed permission check might cause a {@link
-     * java.lang.SecurityException SecurityException} to be thrown from
+     * j86.java.lang.SecurityException SecurityException} to be thrown from
      * this method.
      *
      * @param usage The intended usage for this credential object. The value
@@ -381,7 +381,7 @@ public abstract class GSSManager {
      * credentials to which they are not entitled. The kinds of permissions
      * needed by different mechanism providers will be documented on a
      * per-mechanism basis. A failed permission check might cause a {@link
-     * java.lang.SecurityException SecurityException} to be thrown from
+     * j86.java.lang.SecurityException SecurityException} to be thrown from
      * this method. <p>
      *
      * Non-default values for lifetime cannot always be honored by the
@@ -436,7 +436,7 @@ public abstract class GSSManager {
      * credentials to which they are not entitled. The kinds of permissions
      * needed by different mechanism providers will be documented on a
      * per-mechanism basis. A failed permission check might cause a {@link
-     * java.lang.SecurityException SecurityException} to be thrown from
+     * j86.java.lang.SecurityException SecurityException} to be thrown from
      * this method.<p>
      *
      * Non-default values for lifetime cannot always be honored by the
@@ -486,7 +486,7 @@ public abstract class GSSManager {
      *
      * Some mechanism providers might require that the caller be granted
      * permission to initiate a security context. A failed permission check
-     * might cause a {@link java.lang.SecurityException SecurityException}
+     * might cause a {@link j86.java.lang.SecurityException SecurityException}
      * to be thrown from this method.<p>
      *
      * Non-default values for lifetime cannot always be honored by the
@@ -529,7 +529,7 @@ public abstract class GSSManager {
     *
     * Some mechanism providers might require that the caller be granted
     * permission to accept a security context. A failed permission check
-    * might cause a {@link java.lang.SecurityException SecurityException}
+    * might cause a {@link j86.java.lang.SecurityException SecurityException}
     * to be thrown from this method.
     *
     * @param myCred the credentials for the acceptor.  Use
@@ -564,7 +564,7 @@ public abstract class GSSManager {
      *
      * Some mechanism providers might require that the caller be granted
      * permission to initiate or accept a security context. A failed
-     * permission check might cause a {@link java.lang.SecurityException
+     * permission check might cause a {@link j86.java.lang.SecurityException
      * SecurityException} to be thrown from this method.
      *
      * @param interProcessToken the token previously emitted from the

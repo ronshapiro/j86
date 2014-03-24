@@ -23,18 +23,18 @@
  * questions.
  */
 
-package sun.tools.java;
+package j86.sun.tools.java;
 
-import sun.tools.tree.Node;
-import sun.tools.tree.Vset;
-import sun.tools.tree.Expression;
-import sun.tools.tree.Statement;
-import sun.tools.tree.Context;
-import sun.tools.asm.Assembler;
-import java.io.PrintStream;
-import java.util.Vector;
-import java.util.Map;
-import java.util.HashMap;
+import j86.sun.tools.tree.Node;
+import j86.sun.tools.tree.Vset;
+import j86.sun.tools.tree.Expression;
+import j86.sun.tools.tree.Statement;
+import j86.sun.tools.tree.Context;
+import j86.sun.tools.asm.Assembler;
+import j86.java.io.PrintStream;
+import j86.java.util.Vector;
+import j86.java.util.Map;
+import j86.java.util.HashMap;
 
 /**
  * This class defines a member of a Java class:
@@ -108,7 +108,7 @@ class MemberDefinition implements Constants {
     /**
      * Create a member which is externally the same as `field' but
      * is defined in class `classDef'.  This is used by code
-     * in sun.tools.tree.(MethodExpression,FieldExpression) as
+     * in j86.sun.tools.tree.(MethodExpression,FieldExpression) as
      * part of the fix for bug 4135692.
      *
      * Proxy members should not be added, ala addMember(), to classes.
@@ -628,7 +628,7 @@ class MemberDefinition implements Constants {
         // the `method' has not been already compiled or
         // `this' has been already compiled.
         if (method.reportDeprecated(env) && !isDeprecated()
-               && this instanceof sun.tools.javac.SourceMember) {
+               && this instanceof j86.j86.sun.tools.javac.SourceMember) {
             reportError(env, "warn.override.is.deprecated",
                         clazz, method);
         }

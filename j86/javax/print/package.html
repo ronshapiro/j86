@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
 <html>
 <head>
-<title>javax.print package</title>
+<title>j86.javax.print package</title>
 <!--
 Copyright (c) 2000, 2013, Oracle and/or its affiliates. All rights reserved.
 DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
@@ -42,7 +42,7 @@ be printed.
 <h3>Print Service Discovery</h3>
 <p>
 An application invokes the static methods of the abstract class 
-{@link javax.print.PrintServiceLookup PrintServiceLookup} to locate print 
+{@link j86.javax.print.PrintServiceLookup PrintServiceLookup} to locate print 
 services that have the capabilities to satisfy the application's print 
 request.  For example, to print a double-sided document, the application 
 first needs to find printers that have the double-sided printing capability.
@@ -58,24 +58,24 @@ SPI JAR file specification</a>.
 
 <h3>Attribute Definitions</h3>
 
-The {@link javax.print.attribute} and {@link javax.print.attribute.standard} 
+The {@link j86.j86.javax.print.attribute} and {@link j86.javax.print.attribute.standard} 
 packages define print attributes, which describe the capabilities of a print 
 service, specify the requirements of a print job, and track the progress of 
 a print job.
 <p>
-The <code>javax.print.attribute</code> package describes the types of attributes and
-how they can be collected into sets.  The <code>javax.print.attribute.standard</code>
+The <code>j86.j86.javax.print.attribute</code> package describes the types of attributes and
+how they can be collected into sets.  The <code>j86.j86.j86.javax.print.attribute.standard</code>
 package enumerates all of the standard attributes supported by the API, most
 of which are implementations of attributes specified in the IETF Specification, 
 <a href="http://www.ietf.org/rfc/rfc2911.txt">
 RFC 2911 Internet Printing Protocol, 1.1: Model and Semantics</a>, dated 
-September 2000.  The attributes specified in <code>javax.print.attribute.standard</code>
+September 2000.  The attributes specified in <code>j86.j86.j86.javax.print.attribute.standard</code>
 include common capabilities, such as: resolution, copies, media sizes, 
 job priority, and page ranges.
 
 <h3>Document Type Specification</h3>
 
-The {@link javax.print.DocFlavor DocFlavor} class represents the print data 
+The {@link j86.javax.print.DocFlavor DocFlavor} class represents the print data 
 format, such as JPEG or PostScript.  A <code>DocFlavor</code> object 
 consists of a MIME type, which describes the format, and a document 
 representation class name that indicates how the document is delivered 
@@ -93,11 +93,11 @@ to process a print request:
 <li>Creates a set of attributes.</li>
 <li>Locates a print service that can handle the print request as specified
 by the <code>DocFlavor</code> and the attribute set.</li>
-<li>Creates a {@link javax.print.Doc Doc} object encapsulating the 
+<li>Creates a {@link j86.javax.print.Doc Doc} object encapsulating the 
 <code>DocFlavor</code>
 and the actual print data, which can take many forms including: a Postscript 
 file, a JPEG image, a URL, or plain text.</li>
-<li>Gets a print job, represented by {@link javax.print.DocPrintJob DocPrintJob},
+<li>Gets a print job, represented by {@link j86.javax.print.DocPrintJob DocPrintJob},
  from the print service.</li>
 <li>Calls the print method of the print job.</li>
 </ol>
@@ -135,7 +135,7 @@ if (services.length > 0) {
 </pre>
 </blockquote>
 <P>
-Please note: In the javax.print APIs, a null reference parameter to methods 
+Please note: In the j86.javax.print APIs, a null reference parameter to methods 
 is incorrect unless explicitly documented on the method as having a meaningful
 interpretation. Usage to the contrary is incorrect coding and may result
 in a run time exception either immediately or at some later time.

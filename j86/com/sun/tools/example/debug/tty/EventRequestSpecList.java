@@ -32,14 +32,14 @@
  */
 
 
-package com.sun.tools.example.debug.tty;
+package j86.com.sun.tools.example.debug.tty;
 
-import com.sun.jdi.request.EventRequest;
-import com.sun.jdi.event.ClassPrepareEvent;
+import j86.j86.com.sun.jdi.request.EventRequest;
+import j86.j86.com.sun.jdi.event.ClassPrepareEvent;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import j86.java.util.ArrayList;
+import j86.java.util.Collections;
+import j86.java.util.List;
 
 class EventRequestSpecList {
 

@@ -22,15 +22,15 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package jdk.internal.util.xml;
+package j86.jdk.internal.util.xml;
 
-import java.util.Properties;
-import java.util.InvalidPropertiesFormatException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.IOException;
+import j86.java.util.Properties;
+import j86.java.util.InvalidPropertiesFormatException;
+import j86.java.io.InputStream;
+import j86.java.io.OutputStream;
+import j86.java.io.IOException;
 
-import sun.util.spi.XmlPropertiesProvider;
+import j86.j86.sun.util.spi.XmlPropertiesProvider;
 
 /**
  * A {@code XmlPropertiesProvider} implementation that uses the UKit XML parser.

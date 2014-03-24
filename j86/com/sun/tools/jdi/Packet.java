@@ -23,10 +23,10 @@
  * questions.
  */
 
-package com.sun.tools.jdi;
+package j86.com.sun.tools.jdi;
 
-import com.sun.jdi.*;
-import java.io.IOException;
+import j86.com.sun.jdi.*;
+import j86.java.io.IOException;
 
 public class Packet extends Object {
     public final static short NoFlags = 0x0;

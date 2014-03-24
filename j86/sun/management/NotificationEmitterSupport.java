@@ -23,19 +23,19 @@
  * questions.
  */
 
-package sun.management;
+package j86.sun.management;
 
-import javax.management.ListenerNotFoundException;
-import javax.management.MBeanNotificationInfo;
-import javax.management.Notification;
-import javax.management.NotificationEmitter;
-import javax.management.NotificationFilter;
-import javax.management.NotificationListener;
+import j86.javax.management.ListenerNotFoundException;
+import j86.javax.management.MBeanNotificationInfo;
+import j86.javax.management.Notification;
+import j86.javax.management.NotificationEmitter;
+import j86.javax.management.NotificationFilter;
+import j86.javax.management.NotificationListener;
 
-import java.util.List;
-import java.util.ArrayList;
-import java.util.ListIterator;
-import java.util.Collections;
+import j86.java.util.List;
+import j86.java.util.ArrayList;
+import j86.java.util.ListIterator;
+import j86.java.util.Collections;
 
 /**
  * Abstract helper class for notification emitter support.

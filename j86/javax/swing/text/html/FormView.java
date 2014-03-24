@@ -22,16 +22,16 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text.html;
+package j86.j86.j86.javax.swing.text.html;
 
-import java.net.*;
-import java.io.*;
-import java.awt.*;
-import java.awt.event.*;
-import java.util.*;
-import javax.swing.*;
-import javax.swing.event.*;
-import javax.swing.text.*;
+import j86.java.net.*;
+import j86.java.io.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.java.util.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.event.*;
+import j86.j86.javax.swing.text.*;
 
 /**
  * Component decorator that implements the view interface
@@ -129,7 +129,7 @@ public class FormView extends ComponentView implements ActionListener {
      * Document attribute name for storing POST data. JEditorPane.getPostData()
      * uses the same name, should be kept in sync.
      */
-    final static String PostDataProperty = "javax.swing.JEditorPane.postdata";
+    final static String PostDataProperty = "j86.javax.swing.JEditorPane.postdata";
 
     /**
      * Used to indicate if the maximum span should be the same as the
@@ -320,7 +320,7 @@ public class FormView extends ComponentView implements ActionListener {
             // Need to remove stale ActionListener, ChangeListener and
             // ItemListener that are instance of AbstractButton$Handler.
             DefaultButtonModel buttonModel = (DefaultButtonModel) model;
-            String listenerClass = "javax.swing.AbstractButton$Handler";
+            String listenerClass = "j86.javax.swing.AbstractButton$Handler";
             for (ActionListener listener : buttonModel.getActionListeners()) {
                 if (listenerClass.equals(listener.getClass().getName())) {
                     buttonModel.removeActionListener(listener);
@@ -344,9 +344,9 @@ public class FormView extends ComponentView implements ActionListener {
             // BasicListUI$Handler and BasicComboBoxUI$Handler.
             AbstractListModel listModel = (AbstractListModel) model;
             String listenerClass1 =
-                    "javax.swing.plaf.basic.BasicListUI$Handler";
+                    "j86.j86.j86.javax.swing.plaf.basic.BasicListUI$Handler";
             String listenerClass2 =
-                    "javax.swing.plaf.basic.BasicComboBoxUI$Handler";
+                    "j86.j86.j86.javax.swing.plaf.basic.BasicComboBoxUI$Handler";
             for (ListDataListener listener : listModel.getListDataListeners()) {
                 if (listenerClass1.equals(listener.getClass().getName())
                         || listenerClass2.equals(listener.getClass().getName()))
@@ -358,9 +358,9 @@ public class FormView extends ComponentView implements ActionListener {
             // case of JPasswordField, JTextField and JTextArea
             // All have 2 stale DocumentListeners.
             String listenerClass1 =
-                    "javax.swing.plaf.basic.BasicTextUI$UpdateHandler";
+                    "j86.j86.j86.javax.swing.plaf.basic.BasicTextUI$UpdateHandler";
             String listenerClass2 =
-                    "javax.swing.text.DefaultCaret$Handler";
+                    "j86.j86.javax.swing.text.DefaultCaret$Handler";
             AbstractDocument docModel = (AbstractDocument) model;
             for (DocumentListener listener : docModel.getDocumentListeners()) {
                 if (listenerClass1.equals(listener.getClass().getName())

@@ -22,10 +22,10 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.misc;
+package j86.sun.misc;
 
-import java.math.BigInteger;
-import java.util.Arrays;
+import j86.java.math.BigInteger;
+import j86.java.util.Arrays;
 //@ model import org.jmlspecs.models.JMLMath;
 
 /**

@@ -23,18 +23,18 @@
  * questions.
  */
 
-package com.sun.tools.attach.spi;
+package com.j86.sun.tools.attach.spi;
 
-import java.io.IOException;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.ArrayList;
-import java.util.List;
-import com.sun.tools.attach.VirtualMachine;
-import com.sun.tools.attach.VirtualMachineDescriptor;
-import com.sun.tools.attach.AttachPermission;
-import com.sun.tools.attach.AttachNotSupportedException;
-import java.util.ServiceLoader;
+import j86.java.io.IOException;
+import j86.java.util.Collections;
+import j86.java.util.Iterator;
+import j86.java.util.ArrayList;
+import j86.java.util.List;
+import com.j86.sun.tools.attach.VirtualMachine;
+import com.j86.sun.tools.attach.VirtualMachineDescriptor;
+import com.j86.sun.tools.attach.AttachPermission;
+import com.j86.sun.tools.attach.AttachNotSupportedException;
+import j86.java.util.ServiceLoader;
 
 /**
  * Attach provider class for attaching to a Java virtual machine.
@@ -85,7 +85,7 @@ public abstract class AttachProvider {
      *
      * @throws  SecurityException
      *          If a security manager has been installed and it denies
-     *          {@link com.sun.tools.attach.AttachPermission AttachPermission}
+     *          {@link com.j86.sun.tools.attach.AttachPermission AttachPermission}
      *          <tt>("createAttachProvider")</tt>
      */
     protected AttachProvider() {
@@ -118,7 +118,7 @@ public abstract class AttachProvider {
      * <p> This method parses the identifier and maps the identifier to a Java
      * virtual machine (in an implementation dependent manner). If the identifier
      * cannot be parsed by the provider then an {@link
-     * com.sun.tools.attach.AttachNotSupportedException AttachNotSupportedException}
+     * com.j86.sun.tools.attach.AttachNotSupportedException AttachNotSupportedException}
      * is thrown. Once parsed this method attempts to attach to the Java virtual machine.
      * If the provider detects that the identifier corresponds to a Java virtual machine
      * that does not exist, or it corresponds to a Java virtual machine that does not support
@@ -133,7 +133,7 @@ public abstract class AttachProvider {
      *
      * @throws  SecurityException
      *          If a security manager has been installed and it denies
-     *          {@link com.sun.tools.attach.AttachPermission AttachPermission}
+     *          {@link com.j86.sun.tools.attach.AttachPermission AttachPermission}
      *          <tt>("attachVirtualMachine")</tt>, or other permission
      *          required by the implementation.
      *
@@ -156,9 +156,9 @@ public abstract class AttachProvider {
      * Attaches to a Java virtual machine.
      *
      * <p> A Java virtual machine can be described using a {@link
-     * com.sun.tools.attach.VirtualMachineDescriptor VirtualMachineDescriptor}.
+     * com.j86.sun.tools.attach.VirtualMachineDescriptor VirtualMachineDescriptor}.
      * This method invokes the descriptor's {@link
-     * com.sun.tools.attach.VirtualMachineDescriptor#provider() provider()} method
+     * com.j86.sun.tools.attach.VirtualMachineDescriptor#provider() provider()} method
      * to check that it is equal to this provider. It then attempts to attach to the
      * Java virtual machine.
      *
@@ -169,13 +169,13 @@ public abstract class AttachProvider {
      *
      * @throws  SecurityException
      *          If a security manager has been installed and it denies
-     *          {@link com.sun.tools.attach.AttachPermission AttachPermission}
+     *          {@link com.j86.sun.tools.attach.AttachPermission AttachPermission}
      *          <tt>("attachVirtualMachine")</tt>, or other permission
      *          required by the implementation.
      *
      * @throws  AttachNotSupportedException
      *          If the descriptor's {@link
-     *          com.sun.tools.attach.VirtualMachineDescriptor#provider() provider()} method
+     *          com.j86.sun.tools.attach.VirtualMachineDescriptor#provider() provider()} method
      *          returns a provider that is not this provider, or it does not correspond
      *          to a Java virtual machine to which this provider can attach.
      *
@@ -198,7 +198,7 @@ public abstract class AttachProvider {
      * Lists the Java virtual machines known to this provider.
      *
      * <p> This method returns a list of {@link
-     * com.sun.tools.attach.VirtualMachineDescriptor} elements. Each
+     * com.j86.sun.tools.attach.VirtualMachineDescriptor} elements. Each
      * <code>VirtualMachineDescriptor</code> describes a Java virtual machine
      * to which this provider can <i>potentially</i> attach.  There isn't any
      * guarantee that invoking {@link #attachVirtualMachine(VirtualMachineDescriptor)
@@ -218,11 +218,11 @@ public abstract class AttachProvider {
      * <ul>
      *   <li><p>It is installed in a JAR file that is visible to the defining
      *   class loader of the AttachProvider type (usually, but not required
-     *   to be, the {@link java.lang.ClassLoader#getSystemClassLoader system
+     *   to be, the {@link j86.java.lang.ClassLoader#getSystemClassLoader system
      *   class loader}).</p></li>
      *
      *   <li><p>The JAR file contains a provider configuration named
-     *   <tt>com.sun.tools.attach.spi.AttachProvider</tt> in the resource directory
+     *   <tt>com.j86.sun.tools.attach.spi.AttachProvider</tt> in the resource directory
      *   <tt>META-INF/services</tt>. </p></li>
      *
      *   <li><p>The provider configuration file lists the full-qualified class

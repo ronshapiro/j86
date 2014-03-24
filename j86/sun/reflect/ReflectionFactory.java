@@ -23,20 +23,20 @@
  * questions.
  */
 
-package sun.reflect;
+package j86.sun.reflect;
 
-import java.lang.reflect.Field;
-import java.lang.reflect.Executable;
-import java.lang.reflect.Method;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Modifier;
-import java.security.AccessController;
-import java.security.Permission;
-import java.security.PrivilegedAction;
-import sun.reflect.misc.ReflectUtil;
+import j86.j86.j86.java.lang.reflect.Field;
+import j86.j86.j86.java.lang.reflect.Executable;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.j86.j86.java.lang.reflect.Constructor;
+import j86.j86.j86.java.lang.reflect.Modifier;
+import j86.java.security.AccessController;
+import j86.java.security.Permission;
+import j86.java.security.PrivilegedAction;
+import j86.j86.sun.reflect.misc.ReflectUtil;
 
 /** <P> The master factory for all reflective objects, both those in
-    java.lang.reflect (Fields, Methods, Constructors) as well as their
+    j86.j86.j86.java.lang.reflect (Fields, Methods, Constructors) as well as their
     delegates (FieldAccessors, MethodAccessors, ConstructorAccessors).
     </P>
 
@@ -44,7 +44,7 @@ import sun.reflect.misc.ReflectUtil;
     subversion of both the language and the verifier. For this reason,
     they are all instance methods, and access to the constructor of
     this factory is guarded by a security check, in similar style to
-    {@link sun.misc.Unsafe}. </P>
+    {@link j86.sun.misc.Unsafe}. </P>
 */
 
 public class ReflectionFactory {
@@ -53,7 +53,7 @@ public class ReflectionFactory {
     private static Permission reflectionFactoryAccessPerm
         = new RuntimePermission("reflectionFactoryAccess");
     private static ReflectionFactory soleInstance = new ReflectionFactory();
-    // Provides access to package-private mechanisms in java.lang.reflect
+    // Provides access to package-private mechanisms in j86.j86.j86.java.lang.reflect
     private static volatile LangReflectAccess langReflectAccess;
 
     //
@@ -98,7 +98,7 @@ public class ReflectionFactory {
      *
      * <p> First, if there is a security manager, its
      * <code>checkPermission</code> method is called with a {@link
-     * java.lang.RuntimePermission} with target
+     * j86.java.lang.RuntimePermission} with target
      * <code>"reflectionFactoryAccess"</code>.  This may result in a
      * security exception.
      *
@@ -121,11 +121,11 @@ public class ReflectionFactory {
 
     //--------------------------------------------------------------------------
     //
-    // Routines used by java.lang.reflect
+    // Routines used by j86.j86.j86.java.lang.reflect
     //
     //
 
-    /** Called only by java.lang.reflect.Modifier's static initializer */
+    /** Called only by j86.j86.j86.java.lang.reflect.Modifier's static initializer */
     public void setLangReflectAccess(LangReflectAccess access) {
         langReflectAccess = access;
     }
@@ -172,7 +172,7 @@ public class ReflectionFactory {
         }
         if (declaringClass == Class.class) {
             return new InstantiationExceptionConstructorAccessorImpl
-                ("Can not instantiate java.lang.Class");
+                ("Can not instantiate j86.java.lang.Class");
         }
         // Bootstrapping issue: since we use Class.newInstance() in
         // the ConstructorAccessor generation process, we have to
@@ -200,12 +200,12 @@ public class ReflectionFactory {
 
     //--------------------------------------------------------------------------
     //
-    // Routines used by java.lang
+    // Routines used by j86.java.lang
     //
     //
 
-    /** Creates a new java.lang.reflect.Field. Access checks as per
-        java.lang.reflect.AccessibleObject are not overridden. */
+    /** Creates a new j86.j86.j86.java.lang.reflect.Field. Access checks as per
+        j86.j86.j86.java.lang.reflect.AccessibleObject are not overridden. */
     public Field newField(Class<?> declaringClass,
                           String name,
                           Class<?> type,
@@ -223,8 +223,8 @@ public class ReflectionFactory {
                                             annotations);
     }
 
-    /** Creates a new java.lang.reflect.Method. Access checks as per
-        java.lang.reflect.AccessibleObject are not overridden. */
+    /** Creates a new j86.j86.j86.java.lang.reflect.Method. Access checks as per
+        j86.j86.j86.java.lang.reflect.AccessibleObject are not overridden. */
     public Method newMethod(Class<?> declaringClass,
                             String name,
                             Class<?>[] parameterTypes,
@@ -250,8 +250,8 @@ public class ReflectionFactory {
                                              annotationDefault);
     }
 
-    /** Creates a new java.lang.reflect.Constructor. Access checks as
-        per java.lang.reflect.AccessibleObject are not overridden. */
+    /** Creates a new j86.j86.j86.java.lang.reflect.Constructor. Access checks as
+        per j86.j86.j86.java.lang.reflect.AccessibleObject are not overridden. */
     public Constructor<?> newConstructor(Class<?> declaringClass,
                                          Class<?>[] parameterTypes,
                                          Class<?>[] checkedExceptions,
@@ -271,24 +271,24 @@ public class ReflectionFactory {
                                                   parameterAnnotations);
     }
 
-    /** Gets the MethodAccessor object for a java.lang.reflect.Method */
+    /** Gets the MethodAccessor object for a j86.j86.j86.java.lang.reflect.Method */
     public MethodAccessor getMethodAccessor(Method m) {
         return langReflectAccess().getMethodAccessor(m);
     }
 
-    /** Sets the MethodAccessor object for a java.lang.reflect.Method */
+    /** Sets the MethodAccessor object for a j86.j86.j86.java.lang.reflect.Method */
     public void setMethodAccessor(Method m, MethodAccessor accessor) {
         langReflectAccess().setMethodAccessor(m, accessor);
     }
 
     /** Gets the ConstructorAccessor object for a
-        java.lang.reflect.Constructor */
+        j86.j86.j86.java.lang.reflect.Constructor */
     public ConstructorAccessor getConstructorAccessor(Constructor<?> c) {
         return langReflectAccess().getConstructorAccessor(c);
     }
 
     /** Sets the ConstructorAccessor object for a
-        java.lang.reflect.Constructor */
+        j86.j86.j86.java.lang.reflect.Constructor */
     public void setConstructorAccessor(Constructor<?> c,
                                        ConstructorAccessor accessor)
     {
@@ -368,9 +368,9 @@ public class ReflectionFactory {
     }
 
     /** We have to defer full initialization of this class until after
-        the static initializer is run since java.lang.reflect.Method's
+        the static initializer is run since j86.j86.j86.java.lang.reflect.Method's
         static initializer (more properly, that for
-        java.lang.reflect.AccessibleObject) causes this class's to be
+        j86.j86.j86.java.lang.reflect.AccessibleObject) causes this class's to be
         run, before the system properties are set up. */
     private static void checkInitted() {
         if (initted) return;
@@ -387,21 +387,21 @@ public class ReflectionFactory {
                     // has been run.
 
                     if (System.out == null) {
-                        // java.lang.System not yet fully initialized
+                        // j86.java.lang.System not yet fully initialized
                         return null;
                     }
 
-                    String val = System.getProperty("sun.reflect.noInflation");
+                    String val = System.getProperty("j86.sun.reflect.noInflation");
                     if (val != null && val.equals("true")) {
                         noInflation = true;
                     }
 
-                    val = System.getProperty("sun.reflect.inflationThreshold");
+                    val = System.getProperty("j86.sun.reflect.inflationThreshold");
                     if (val != null) {
                         try {
                             inflationThreshold = Integer.parseInt(val);
                         } catch (NumberFormatException e) {
-                            throw new RuntimeException("Unable to parse property sun.reflect.inflationThreshold", e);
+                            throw new RuntimeException("Unable to parse property j86.sun.reflect.inflationThreshold", e);
                         }
                     }
 
@@ -413,10 +413,10 @@ public class ReflectionFactory {
 
     private static LangReflectAccess langReflectAccess() {
         if (langReflectAccess == null) {
-            // Call a static method to get class java.lang.reflect.Modifier
+            // Call a static method to get class j86.j86.j86.java.lang.reflect.Modifier
             // initialized. Its static initializer will cause
             // setLangReflectAccess() to be called from the context of the
-            // java.lang.reflect package.
+            // j86.j86.j86.java.lang.reflect package.
             Modifier.isPublic(Modifier.PUBLIC);
         }
         return langReflectAccess;

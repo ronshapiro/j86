@@ -22,9 +22,9 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.nio.sctp;
+package j86.com.j86.sun.nio.sctp;
 
-import java.net.SocketOption;
+import j86.java.net.SocketOption;
 
 /**
  * A socket option associated with an SCTP channel.

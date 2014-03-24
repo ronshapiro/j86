@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.management;
+package j86.javax.management;
 
 
 /**
@@ -58,12 +58,12 @@ public interface MBeanRegistration   {
      * parameter is not null, it will usually but not necessarily be
      * the returned value.
      *
-     * @exception java.lang.Exception This exception will be caught by
+     * @exception j86.java.lang.Exception This exception will be caught by
      * the MBean Server and re-thrown as an {@link
      * MBeanRegistrationException}.
      */
     public ObjectName preRegister(MBeanServer server,
-                                  ObjectName name) throws java.lang.Exception;
+                                  ObjectName name) throws j86.java.lang.Exception;
 
     /**
      * Allows the MBean to perform any operations needed after having been
@@ -91,11 +91,11 @@ public interface MBeanRegistration   {
      * Allows the MBean to perform any operations it needs before
      * being unregistered by the MBean server.
      *
-     * @exception java.lang.Exception This exception will be caught by
+     * @exception j86.java.lang.Exception This exception will be caught by
      * the MBean server and re-thrown as an {@link
      * MBeanRegistrationException}.
      */
-    public void preDeregister() throws java.lang.Exception ;
+    public void preDeregister() throws j86.java.lang.Exception ;
 
     /**
      * Allows the MBean to perform any operations needed after having been

@@ -23,17 +23,17 @@
  * questions.
  */
 
-package sun.rmi.rmic.newrmic;
+package j86.j86.sun.rmi.rmic.newrmic;
 
 import com.sun.javadoc.ClassDoc;
 import com.sun.javadoc.RootDoc;
-import java.io.File;
-import java.text.MessageFormat;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import j86.java.io.File;
+import j86.java.text.MessageFormat;
+import j86.java.util.ArrayList;
+import j86.java.util.Collections;
+import j86.java.util.List;
 
-import static sun.rmi.rmic.newrmic.Constants.*;
+import static j86.j86.sun.rmi.rmic.newrmic.Constants.*;
 
 /**
  * The environment for an rmic compilation batch.

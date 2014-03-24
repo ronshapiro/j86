@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.io;
+package j86.java.io;
 
 /**
  * Signals that one of the ObjectStreamExceptions was thrown during a

@@ -23,11 +23,11 @@
  * questions.
  */
 
-package javax.naming.spi;
+package j86.j86.javax.naming.spi;
 
-import java.util.Hashtable;
+import j86.java.util.Hashtable;
 
-import javax.naming.*;
+import j86.javax.naming.*;
 
 /**
   * This interface represents a factory for creating an object.
@@ -54,7 +54,7 @@ import javax.naming.*;
   * The mention of URL in the documentation for this class refers to
   * a URL string as defined by RFC 1738 and its related RFCs. It is
   * any string that conforms to the syntax described therein, and
-  * may not always have corresponding support in the java.net.URL
+  * may not always have corresponding support in the j86.java.net.URL
   * class or Web browsers.
   *
   * @author Rosanna Lee

@@ -23,16 +23,16 @@
  * questions.
  */
 
-package javax.crypto;
+package j86.javax.crypto;
 
-import java.util.*;
+import j86.java.util.*;
 
-import java.security.*;
-import java.security.Provider.Service;
-import java.security.spec.*;
+import j86.java.security.*;
+import j86.java.security.Provider.Service;
+import j86.j86.java.security.spec.*;
 
-import sun.security.jca.*;
-import sun.security.jca.GetInstance.Instance;
+import j86.sun.security.jca.*;
+import j86.sun.security.jca.GetInstance.Instance;
 
 /**
  * This class represents a factory for secret keys.
@@ -49,8 +49,8 @@ import sun.security.jca.GetInstance.Instance;
  *
  * <P> Application developers should refer to their provider's documentation
  * to find out which key specifications are supported by the
- * {@link #generateSecret(java.security.spec.KeySpec) generateSecret} and
- * {@link #getKeySpec(javax.crypto.SecretKey, java.lang.Class) getKeySpec}
+ * {@link #generateSecret(j86.j86.java.security.spec.KeySpec) generateSecret} and
+ * {@link #getKeySpec(j86.javax.crypto.SecretKey, j86.java.lang.Class) getKeySpec}
  * methods.
  * For example, the DES secret-key factory supplied by the "SunJCE" provider
  * supports <code>DESKeySpec</code> as a transparent representation of DES
@@ -74,9 +74,9 @@ import sun.security.jca.GetInstance.Instance;
  * @author Jan Luehe
  *
  * @see SecretKey
- * @see javax.crypto.spec.DESKeySpec
- * @see javax.crypto.spec.DESedeKeySpec
- * @see javax.crypto.spec.PBEKeySpec
+ * @see j86.j86.javax.crypto.spec.DESKeySpec
+ * @see j86.j86.javax.crypto.spec.DESedeKeySpec
+ * @see j86.j86.javax.crypto.spec.PBEKeySpec
  * @since 1.4
  */
 
@@ -153,7 +153,7 @@ public class SecretKeyFactory {
      *          SecretKeyFactorySpi implementation for the
      *          specified algorithm.
      *
-     * @see java.security.Provider
+     * @see j86.java.security.Provider
      */
     public static final SecretKeyFactory getInstance(String algorithm)
             throws NoSuchAlgorithmException {
@@ -196,7 +196,7 @@ public class SecretKeyFactory {
      * @exception IllegalArgumentException if the <code>provider</code>
      *          is null or empty.
      *
-     * @see java.security.Provider
+     * @see j86.java.security.Provider
      */
     public static final SecretKeyFactory getInstance(String algorithm,
             String provider) throws NoSuchAlgorithmException,
@@ -237,7 +237,7 @@ public class SecretKeyFactory {
      * @exception IllegalArgumentException if the <code>provider</code>
      *          is null.
      *
-     * @see java.security.Provider
+     * @see j86.java.security.Provider
      */
     public static final SecretKeyFactory getInstance(String algorithm,
             Provider provider) throws NoSuchAlgorithmException {

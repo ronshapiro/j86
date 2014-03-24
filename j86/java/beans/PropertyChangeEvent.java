@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.beans;
+package j86.java.beans;
 
-import java.util.EventObject;
+import j86.java.util.EventObject;
 
 /**
  * A "PropertyChange" event gets delivered whenever a bean changes a "bound"
@@ -35,7 +35,7 @@ import java.util.EventObject;
  * Normally PropertyChangeEvents are accompanied by the name and the old
  * and new value of the changed property.  If the new value is a primitive
  * type (such as int or boolean) it must be wrapped as the
- * corresponding java.lang.* Object type (such as Integer or Boolean).
+ * corresponding j86.java.lang.* Object type (such as Integer or Boolean).
  * <P>
  * Null values may be provided for the old and the new values if their
  * true values are not known.

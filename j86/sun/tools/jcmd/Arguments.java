@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.tools.jcmd;
+package j86.sun.tools.jcmd;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import j86.java.io.BufferedReader;
+import j86.java.io.FileReader;
+import j86.java.io.IOException;
 
 class Arguments {
     private boolean listProcesses = false;

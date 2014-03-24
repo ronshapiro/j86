@@ -22,14 +22,14 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.lang.invoke;
+package j86.j86.java.lang.invoke;
 
-import java.io.Serializable;
-import java.lang.reflect.Method;
-import java.security.AccessController;
-import java.security.PrivilegedActionException;
-import java.security.PrivilegedExceptionAction;
-import java.util.Objects;
+import j86.java.io.Serializable;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedActionException;
+import j86.java.security.PrivilegedExceptionAction;
+import j86.java.util.Objects;
 
 /**
  * Serialized form of a lambda expression.  The properties of this class

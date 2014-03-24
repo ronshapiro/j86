@@ -23,29 +23,29 @@
  * questions.
  */
 
-package sun.tools.jconsole.inspector;
+package j86.j86.sun.tools.jconsole.inspector;
 
-import javax.swing.*;
-import javax.swing.table.*;
-import javax.swing.tree.*;
-import java.awt.Font;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.table.*;
+import j86.j86.javax.swing.tree.*;
+import j86.java.awt.Font;
 
-import java.text.SimpleDateFormat;
+import j86.java.text.SimpleDateFormat;
 
-import java.awt.Component;
-import java.awt.EventQueue;
-import java.awt.event.*;
-import java.awt.Dimension;
-import java.util.*;
-import java.io.*;
-import java.lang.reflect.Array;
+import j86.java.awt.Component;
+import j86.java.awt.EventQueue;
+import j86.j86.java.awt.event.*;
+import j86.java.awt.Dimension;
+import j86.java.util.*;
+import j86.java.io.*;
+import j86.j86.j86.java.lang.reflect.Array;
 
-import javax.management.*;
-import javax.management.openmbean.CompositeData;
-import javax.management.openmbean.TabularData;
+import j86.javax.management.*;
+import j86.j86.javax.management.openmbean.CompositeData;
+import j86.j86.javax.management.openmbean.TabularData;
 
-import sun.tools.jconsole.JConsole;
-import sun.tools.jconsole.Messages;
+import j86.sun.tools.jconsole.JConsole;
+import j86.sun.tools.jconsole.Messages;
 
 @SuppressWarnings("serial")
 public class XMBeanNotifications extends JTable implements NotificationListener {
@@ -545,7 +545,7 @@ public class XMBeanNotifications extends JTable implements NotificationListener 
     }
 
     class UserDataCellEditor extends XTextFieldEditor {
-        // implements javax.swing.table.TableCellEditor
+        // implements j86.j86.javax.swing.table.TableCellEditor
         @Override
         public Component getTableCellEditorComponent(
                 JTable table,

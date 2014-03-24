@@ -22,10 +22,10 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.awt;
+package j86.java.awt;
 
-import java.awt.event.*;
-import java.io.*;
+import j86.j86.java.awt.event.*;
+import j86.java.io.*;
 
 /**
  * <b>NOTE:</b> The <code>Event</code> class is obsolete and is
@@ -59,7 +59,7 @@ import java.io.*;
  * @author     Sami Shaio
  * @since      JDK1.0
  */
-public class Event implements java.io.Serializable {
+public class Event implements j86.java.io.Serializable {
     private transient long data;
 
     /* Modifier constants */
@@ -319,8 +319,8 @@ public class Event implements java.io.Serializable {
      * flag indicates that the middle button has been pressed.
      * The <code>META_MASK</code>flag indicates that the
      * right button has been pressed.
-     * @see     java.awt.Event#ALT_MASK
-     * @see     java.awt.Event#META_MASK
+     * @see     j86.java.awt.Event#ALT_MASK
+     * @see     j86.java.awt.Event#META_MASK
      */
     public static final int MOUSE_DOWN          = 1 + MOUSE_EVENT;
 
@@ -329,8 +329,8 @@ public class Event implements java.io.Serializable {
      * flag indicates that the middle button has been released.
      * The <code>META_MASK</code>flag indicates that the
      * right button has been released.
-     * @see     java.awt.Event#ALT_MASK
-     * @see     java.awt.Event#META_MASK
+     * @see     j86.java.awt.Event#ALT_MASK
+     * @see     j86.java.awt.Event#META_MASK
      */
     public static final int MOUSE_UP            = 2 + MOUSE_EVENT;
 
@@ -354,8 +354,8 @@ public class Event implements java.io.Serializable {
      * <code>ALT_MASK</code> flag indicates that the middle
      * button is being pressed. The <code>META_MASK</code> flag indicates
      * that the right button is being pressed.
-     * @see     java.awt.Event#ALT_MASK
-     * @see     java.awt.Event#META_MASK
+     * @see     j86.java.awt.Event#ALT_MASK
+     * @see     j86.java.awt.Event#META_MASK
      */
     public static final int MOUSE_DRAG          = 6 + MOUSE_EVENT;
 
@@ -451,7 +451,7 @@ public class Event implements java.io.Serializable {
      * This object has been replaced by AWTEvent.getSource()
      *
      * @serial
-     * @see java.awt.AWTEvent#getSource()
+     * @see j86.java.awt.AWTEvent#getSource()
      */
     public Object target;
 
@@ -460,7 +460,7 @@ public class Event implements java.io.Serializable {
      * Replaced by InputEvent.getWhen().
      *
      * @serial
-     * @see java.awt.event.InputEvent#getWhen()
+     * @see j86.j86.java.awt.event.InputEvent#getWhen()
      */
     public long when;
 
@@ -470,7 +470,7 @@ public class Event implements java.io.Serializable {
      * This has been replaced by AWTEvent.getID()
      *
      * @serial
-     * @see java.awt.AWTEvent#getID()
+     * @see j86.java.awt.AWTEvent#getID()
      */
     public int id;
 
@@ -479,7 +479,7 @@ public class Event implements java.io.Serializable {
      * Replaced by MouseEvent.getX()
      *
      * @serial
-     * @see java.awt.event.MouseEvent#getX()
+     * @see j86.j86.java.awt.event.MouseEvent#getX()
      */
     public int x;
 
@@ -488,7 +488,7 @@ public class Event implements java.io.Serializable {
      * Replaced by MouseEvent.getY()
      *
      * @serial
-     * @see java.awt.event.MouseEvent#getY()
+     * @see j86.j86.java.awt.event.MouseEvent#getY()
      */
     public int y;
 
@@ -497,7 +497,7 @@ public class Event implements java.io.Serializable {
      * This has been replaced by KeyEvent.getKeyCode()
      *
      * @serial
-     * @see java.awt.event.KeyEvent#getKeyCode()
+     * @see j86.j86.java.awt.event.KeyEvent#getKeyCode()
      */
     public int key;
 
@@ -513,7 +513,7 @@ public class Event implements java.io.Serializable {
      * of InputEvent.
      *
      * @serial
-     * @see java.awt.event.InputEvent#getModifiers()
+     * @see j86.j86.java.awt.event.InputEvent#getModifiers()
      */
     public int modifiers;
 
@@ -524,7 +524,7 @@ public class Event implements java.io.Serializable {
      * This field has been replaced by MouseEvent.getClickCount().
      *
      * @serial
-     * @see java.awt.event.MouseEvent#getClickCount()
+     * @see j86.j86.java.awt.event.MouseEvent#getClickCount()
      */
     public int clickCount;
 
@@ -543,7 +543,7 @@ public class Event implements java.io.Serializable {
      * This has been replaced by EventQueue.
      *
      * @serial
-     * @see java.awt.EventQueue
+     * @see j86.java.awt.EventQueue
      */
     public Event evt;
 
@@ -723,9 +723,9 @@ public class Event implements java.io.Serializable {
      * Checks if the Shift key is down.
      * @return    <code>true</code> if the key is down;
      *            <code>false</code> otherwise.
-     * @see       java.awt.Event#modifiers
-     * @see       java.awt.Event#controlDown
-     * @see       java.awt.Event#metaDown
+     * @see       j86.java.awt.Event#modifiers
+     * @see       j86.java.awt.Event#controlDown
+     * @see       j86.java.awt.Event#metaDown
      */
     public boolean shiftDown() {
         return (modifiers & SHIFT_MASK) != 0;
@@ -739,9 +739,9 @@ public class Event implements java.io.Serializable {
      * Checks if the Control key is down.
      * @return    <code>true</code> if the key is down;
      *            <code>false</code> otherwise.
-     * @see       java.awt.Event#modifiers
-     * @see       java.awt.Event#shiftDown
-     * @see       java.awt.Event#metaDown
+     * @see       j86.java.awt.Event#modifiers
+     * @see       j86.java.awt.Event#shiftDown
+     * @see       j86.java.awt.Event#metaDown
      */
     public boolean controlDown() {
         return (modifiers & CTRL_MASK) != 0;
@@ -756,9 +756,9 @@ public class Event implements java.io.Serializable {
      *
      * @return    <code>true</code> if the key is down;
      *            <code>false</code> otherwise.
-     * @see       java.awt.Event#modifiers
-     * @see       java.awt.Event#shiftDown
-     * @see       java.awt.Event#controlDown
+     * @see       j86.java.awt.Event#modifiers
+     * @see       j86.java.awt.Event#shiftDown
+     * @see       j86.java.awt.Event#controlDown
      */
     public boolean metaDown() {
         return (modifiers & META_MASK) != 0;
@@ -797,7 +797,7 @@ public class Event implements java.io.Serializable {
      * by the <code>AWTEvent</code> class and its subclasses.
      * <p>
      * Returns the integer key-code associated with the key in this event,
-     * as described in java.awt.Event.
+     * as described in j86.java.awt.Event.
      */
     static int getOldEventKey(KeyEvent e) {
         int keyCode = e.getKeyCode();
@@ -870,7 +870,7 @@ public class Event implements java.io.Serializable {
      * Returns a representation of this event's values as a string.
      * @return    a string that represents the event and the values
      *                 of its member fields.
-     * @see       java.awt.Event#paramString
+     * @see       j86.java.awt.Event#paramString
      * @since     JDK1.1
      */
     public String toString() {

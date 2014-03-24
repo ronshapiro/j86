@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.tools.asm;
+package j86.sun.tools.asm;
 
-import sun.tools.java.*;
-import java.util.Enumeration;
-import java.io.IOException;
-import java.io.DataOutputStream;
+import j86.sun.tools.java.*;
+import j86.java.util.Enumeration;
+import j86.java.io.IOException;
+import j86.java.io.DataOutputStream;
 
 /**
  * An Java instruction

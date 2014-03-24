@@ -23,15 +23,15 @@
  * questions.
  */
 
-package sun.rmi.log;
+package j86.sun.rmi.log;
 
-import java.io.*;
-import java.lang.reflect.Constructor;
-import java.rmi.server.RMIClassLoader;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import sun.security.action.GetBooleanAction;
-import sun.security.action.GetPropertyAction;
+import j86.java.io.*;
+import j86.j86.j86.java.lang.reflect.Constructor;
+import j86.j86.java.rmi.server.RMIClassLoader;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.sun.security.action.GetBooleanAction;
+import j86.sun.security.action.GetPropertyAction;
 
 /**
  * This class is a simple implementation of a reliable Log.  The
@@ -83,7 +83,7 @@ public class ReliableLog {
     public final static int PreferredMajorVersion = 0;
     public final static int PreferredMinorVersion = 2;
 
-    // sun.rmi.log.debug=false
+    // j86.sun.rmi.log.debug=false
     private boolean Debug = false;
 
     private static String snapshotPrefix = "Snapshot.";
@@ -113,7 +113,7 @@ public class ReliableLog {
 
     /**
      * Constructor for the log file.  If the system property
-     * sun.rmi.log.class is non-null and the class specified by this
+     * j86.sun.rmi.log.class is non-null and the class specified by this
      * property a) can be loaded, b) is a subclass of LogFile, and c) has a
      * public two-arg constructor (String, String), ReliableLog uses the
      * constructor to construct the LogFile.
@@ -141,7 +141,7 @@ public class ReliableLog {
     {
         super();
         this.Debug = AccessController.doPrivileged(
-            new GetBooleanAction("sun.rmi.log.debug")).booleanValue();
+            new GetBooleanAction("j86.sun.rmi.log.debug")).booleanValue();
         dir = new File(dirPath);
         if (!(dir.exists() && dir.isDirectory())) {
             // create directory
@@ -326,7 +326,7 @@ public class ReliableLog {
 
     /**
      * Returns the constructor for the log file if the system property
-     * sun.rmi.log.class is non-null and the class specified by the
+     * j86.sun.rmi.log.class is non-null and the class specified by the
      * property a) can be loaded, b) is a subclass of LogFile, and c) has a
      * public two-arg constructor (String, String); otherwise returns null.
      **/
@@ -334,7 +334,7 @@ public class ReliableLog {
         getLogClassConstructor() {
 
         String logClassName = AccessController.doPrivileged(
-            new GetPropertyAction("sun.rmi.log.class"));
+            new GetPropertyAction("j86.sun.rmi.log.class"));
         if (logClassName != null) {
             try {
                 ClassLoader loader =

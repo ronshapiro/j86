@@ -23,17 +23,17 @@
  * questions.
  */
 
-package com.sun.java.swing.plaf.windows;
+package j86.j86.com.sun.java.swing.plaf.windows;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.beans.PropertyChangeEvent;
-import javax.swing.plaf.*;
-import javax.swing.plaf.basic.BasicTextFieldUI;
-import javax.swing.text.*;
-import javax.swing.*;
-import javax.swing.plaf.UIResource;
-import sun.swing.DefaultLookup;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.java.beans.PropertyChangeEvent;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.j86.javax.swing.plaf.basic.BasicTextFieldUI;
+import j86.j86.javax.swing.text.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.plaf.UIResource;
+import j86.sun.swing.DefaultLookup;
 
 
 

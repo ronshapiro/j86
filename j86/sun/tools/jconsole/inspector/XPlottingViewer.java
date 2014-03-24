@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.tools.jconsole.inspector;
+package j86.j86.sun.tools.jconsole.inspector;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.util.*;
-import java.util.Timer;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.java.util.*;
+import j86.java.util.Timer;
 
-import javax.swing.*;
+import j86.javax.swing.*;
 
-import sun.tools.jconsole.*;
+import j86.sun.tools.jconsole.*;
 
 @SuppressWarnings("serial")
 public class XPlottingViewer extends PlotterPanel implements ActionListener {

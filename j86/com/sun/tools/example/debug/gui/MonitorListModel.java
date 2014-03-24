@@ -32,11 +32,11 @@
  */
 
 
-package com.sun.tools.example.debug.gui;
+package j86.com.sun.tools.example.debug.gui;
 
-import java.util.*;
+import j86.java.util.*;
 
-import javax.swing.AbstractListModel;
+import j86.javax.swing.AbstractListModel;
 
 public class MonitorListModel extends AbstractListModel {
 

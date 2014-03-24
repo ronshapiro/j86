@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.misc;
+package j86.sun.misc;
 
-import java.net.HttpCookie;
-import java.util.List;
+import j86.java.net.HttpCookie;
+import j86.java.util.List;
 
 public interface JavaNetHttpCookieAccess {
     /*

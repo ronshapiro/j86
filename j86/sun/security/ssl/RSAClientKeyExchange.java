@@ -24,17 +24,17 @@
  */
 
 
-package sun.security.ssl;
+package j86.sun.security.ssl;
 
-import java.io.*;
-import java.security.*;
+import j86.java.io.*;
+import j86.java.security.*;
 
-import javax.crypto.*;
+import j86.javax.crypto.*;
 
-import javax.net.ssl.*;
+import j86.j86.javax.net.ssl.*;
 
-import sun.security.internal.spec.TlsRsaPremasterSecretParameterSpec;
-import sun.security.util.KeyUtil;
+import j86.sun.security.internal.spec.TlsRsaPremasterSecretParameterSpec;
+import j86.sun.security.util.KeyUtil;
 
 /**
  * This is the client key exchange message (CLIENT --> SERVER) used with
@@ -56,7 +56,7 @@ final class RSAClientKeyExchange extends HandshakeMessage {
      * system property below allows to toggle the behavior.
      */
     private final static String PROP_NAME =
-                                "com.sun.net.ssl.rsaPreMasterSecretFix";
+                                "com.j86.sun.net.ssl.rsaPreMasterSecretFix";
 
     /*
      * Default is "false" (old behavior) for compatibility reasons in

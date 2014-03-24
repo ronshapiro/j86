@@ -23,12 +23,12 @@
  * questions.
  */
 
-package javax.swing.tree;
+package j86.j86.javax.swing.tree;
 
-import java.util.*;
-import java.beans.ConstructorProperties;
-import java.io.*;
-import javax.swing.event.*;
+import j86.java.util.*;
+import j86.java.beans.ConstructorProperties;
+import j86.java.io.*;
+import j86.j86.javax.swing.event.*;
 
 /**
  * A simple tree data model that uses TreeNodes.
@@ -42,8 +42,8 @@ import javax.swing.event.*;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @author Rob Davis
  * @author Ray Ryan
@@ -632,14 +632,14 @@ public class DefaultTreeModel implements Serializable, TreeModel {
      *
      * @param listenerType the type of listeners requested; this parameter
      *          should specify an interface that descends from
-     *          <code>java.util.EventListener</code>
+     *          <code>j86.java.util.EventListener</code>
      * @return an array of all objects registered as
      *          <code><em>Foo</em>Listener</code>s on this component,
      *          or an empty array if no such
      *          listeners have been added
      * @exception ClassCastException if <code>listenerType</code>
      *          doesn't specify a class or interface that implements
-     *          <code>java.util.EventListener</code>
+     *          <code>j86.java.util.EventListener</code>
      *
      * @see #getTreeModelListeners
      *

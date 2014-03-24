@@ -23,11 +23,11 @@
  * questions.
  */
 
-package com.sun.jmx.mbeanserver;
+package j86.com.sun.jmx.mbeanserver;
 
-import javax.management.DynamicMBean;
-import javax.management.MBeanServer;
-import javax.management.ObjectName;
+import j86.javax.management.DynamicMBean;
+import j86.javax.management.MBeanServer;
+import j86.javax.management.ObjectName;
 
 /**
  * A dynamic MBean that wraps an underlying resource.  A version of this
@@ -41,7 +41,7 @@ public interface DynamicMBean2 extends DynamicMBean {
      * class name should be reflected by the MBean's
      * getMBeanInfo().getClassName() for example.  For a "plain"
      * DynamicMBean it will be "this".  For an MBean that wraps another
-     * object, like javax.management.StandardMBean, it will be the wrapped
+     * object, like j86.javax.management.StandardMBean, it will be the wrapped
      * object.
      */
     public Object getResource();
@@ -57,10 +57,10 @@ public interface DynamicMBean2 extends DynamicMBean {
 
     /**
      * Additional registration hook.  This method is called after
-     * {@link javax.management.MBeanRegistration#preRegister preRegister}.
+     * {@link j86.javax.management.MBeanRegistration#preRegister preRegister}.
      * Unlike that method, if it throws an exception and the MBean implements
      * {@code MBeanRegistration}, then {@link
-     * javax.management.MBeanRegistration#postRegister postRegister(false)}
+     * j86.javax.management.MBeanRegistration#postRegister postRegister(false)}
      * will be called on the MBean.  This is the behavior that the MBean
      * expects for a problem that does not come from its own preRegister
      * method.

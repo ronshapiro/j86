@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.io;
+package j86.java.io;
 
 /**
  * Base class for character conversion exceptions.
@@ -31,7 +31,7 @@ package java.io;
  * @since       JDK1.1
  */
 public class CharConversionException
-    extends java.io.IOException
+    extends j86.java.io.IOException
 {
     private static final long serialVersionUID = -8680016352018427031L;
 

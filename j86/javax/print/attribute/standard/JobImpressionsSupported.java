@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.print.attribute.standard;
+package j86.j86.j86.javax.print.attribute.standard;
 
-import javax.print.attribute.Attribute;
-import javax.print.attribute.SetOfIntegerSyntax;
-import javax.print.attribute.SupportedValuesAttribute;
+import j86.j86.javax.print.attribute.Attribute;
+import j86.j86.javax.print.attribute.SetOfIntegerSyntax;
+import j86.j86.javax.print.attribute.SupportedValuesAttribute;
 
 /**
  * Class JobImpressionsSupported is a printing attribute class, a set of
@@ -39,7 +39,7 @@ import javax.print.attribute.SupportedValuesAttribute;
  * <B>IPP Compatibility:</B> The JobImpressionsSupported attribute's canonical
  * array form gives the lower and upper bound for the range of values to be
  * included in an IPP "job-impressions-supported" attribute. See class {@link
- * javax.print.attribute.SetOfIntegerSyntax SetOfIntegerSyntax} for an
+ * j86.j86.javax.print.attribute.SetOfIntegerSyntax SetOfIntegerSyntax} for an
  * explanation of canonical array form. The category name returned by
  * <CODE>getName()</CODE> gives the IPP attribute name.
  * <P>
@@ -108,7 +108,7 @@ public final class JobImpressionsSupported extends SetOfIntegerSyntax
      * JobImpressionsSupported itself.
      *
      * @return  Printing attribute class (category), an instance of class
-     *          {@link java.lang.Class java.lang.Class}.
+     *          {@link j86.java.lang.Class java.lang.Class}.
      */
     public final Class<? extends Attribute> getCategory() {
         return JobImpressionsSupported.class;

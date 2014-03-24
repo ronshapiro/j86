@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.security;
+package j86.java.security;
 
 /**
  * This exception, designed for use by the JCA/JCE engine classes,

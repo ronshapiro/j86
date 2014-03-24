@@ -20,28 +20,28 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.sun.org.apache.xml.internal.security.keys.keyresolver.implementations;
+package j86.j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.implementations;
 
-import java.security.PublicKey;
-import java.security.cert.Certificate;
-import java.security.cert.X509Certificate;
-import java.util.Iterator;
+import j86.java.security.PublicKey;
+import j86.j86.java.security.cert.Certificate;
+import j86.j86.java.security.cert.X509Certificate;
+import j86.java.util.Iterator;
 
-import com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
-import com.sun.org.apache.xml.internal.security.keys.content.X509Data;
-import com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509IssuerSerial;
-import com.sun.org.apache.xml.internal.security.keys.keyresolver.KeyResolverException;
-import com.sun.org.apache.xml.internal.security.keys.keyresolver.KeyResolverSpi;
-import com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver;
-import com.sun.org.apache.xml.internal.security.signature.XMLSignatureException;
-import com.sun.org.apache.xml.internal.security.utils.Constants;
+import j86.j86.com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+import j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.content.X509Data;
+import j86.j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509IssuerSerial;
+import j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.KeyResolverException;
+import j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.KeyResolverSpi;
+import j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver;
+import j86.j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureException;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.Constants;
 import org.w3c.dom.Element;
 
 public class X509IssuerSerialResolver extends KeyResolverSpi {
 
     /** {@link org.apache.commons.logging} logging facility */
-    private static java.util.logging.Logger log =
-        java.util.logging.Logger.getLogger(X509IssuerSerialResolver.class.getName());
+    private static j86.j86.java.util.logging.Logger log =
+        j86.j86.java.util.logging.Logger.getLogger(X509IssuerSerialResolver.class.getName());
 
 
     /** @inheritDoc */
@@ -63,21 +63,21 @@ public class X509IssuerSerialResolver extends KeyResolverSpi {
     public X509Certificate engineLookupResolveX509Certificate(
         Element element, String baseURI, StorageResolver storage
     ) throws KeyResolverException {
-        if (log.isLoggable(java.util.logging.Level.FINE)) {
-            log.log(java.util.logging.Level.FINE, "Can I resolve " + element.getTagName() + "?");
+        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+            log.log(j86.j86.java.util.logging.Level.FINE, "Can I resolve " + element.getTagName() + "?");
         }
 
         X509Data x509data = null;
         try {
             x509data = new X509Data(element, baseURI);
         } catch (XMLSignatureException ex) {
-            if (log.isLoggable(java.util.logging.Level.FINE)) {
-                log.log(java.util.logging.Level.FINE, "I can't");
+            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                log.log(j86.j86.java.util.logging.Level.FINE, "I can't");
             }
             return null;
         } catch (XMLSecurityException ex) {
-            if (log.isLoggable(java.util.logging.Level.FINE)) {
-                log.log(java.util.logging.Level.FINE, "I can't");
+            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                log.log(j86.j86.java.util.logging.Level.FINE, "I can't");
             }
             return null;
         }
@@ -91,8 +91,8 @@ public class X509IssuerSerialResolver extends KeyResolverSpi {
                 KeyResolverException ex =
                     new KeyResolverException("KeyResolver.needStorageResolver", exArgs);
 
-                if (log.isLoggable(java.util.logging.Level.FINE)) {
-                    log.log(java.util.logging.Level.FINE, "", ex);
+                if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                    log.log(j86.j86.java.util.logging.Level.FINE, "", ex);
                 }
                 throw ex;
             }
@@ -104,37 +104,37 @@ public class X509IssuerSerialResolver extends KeyResolverSpi {
                 X509Certificate cert = (X509Certificate)storageIterator.next();
                 XMLX509IssuerSerial certSerial = new XMLX509IssuerSerial(element.getOwnerDocument(), cert);
 
-                if (log.isLoggable(java.util.logging.Level.FINE)) {
-                    log.log(java.util.logging.Level.FINE, "Found Certificate Issuer: " + certSerial.getIssuerName());
-                    log.log(java.util.logging.Level.FINE, "Found Certificate Serial: " + certSerial.getSerialNumber().toString());
+                if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                    log.log(j86.j86.java.util.logging.Level.FINE, "Found Certificate Issuer: " + certSerial.getIssuerName());
+                    log.log(j86.j86.java.util.logging.Level.FINE, "Found Certificate Serial: " + certSerial.getSerialNumber().toString());
                 }
 
                 for (int i = 0; i < noOfISS; i++) {
                     XMLX509IssuerSerial xmliss = x509data.itemIssuerSerial(i);
 
-                    if (log.isLoggable(java.util.logging.Level.FINE)) {
-                        log.log(java.util.logging.Level.FINE, "Found Element Issuer:     "
+                    if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                        log.log(j86.j86.java.util.logging.Level.FINE, "Found Element Issuer:     "
                                   + xmliss.getIssuerName());
-                        log.log(java.util.logging.Level.FINE, "Found Element Serial:     "
+                        log.log(j86.j86.java.util.logging.Level.FINE, "Found Element Serial:     "
                                   + xmliss.getSerialNumber().toString());
                     }
 
                     if (certSerial.equals(xmliss)) {
-                        if (log.isLoggable(java.util.logging.Level.FINE)) {
-                            log.log(java.util.logging.Level.FINE, "match !!! ");
+                        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                            log.log(j86.j86.java.util.logging.Level.FINE, "match !!! ");
                         }
                         return cert;
                     }
-                    if (log.isLoggable(java.util.logging.Level.FINE)) {
-                        log.log(java.util.logging.Level.FINE, "no match...");
+                    if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                        log.log(j86.j86.java.util.logging.Level.FINE, "no match...");
                     }
                 }
             }
 
             return null;
         } catch (XMLSecurityException ex) {
-            if (log.isLoggable(java.util.logging.Level.FINE)) {
-                log.log(java.util.logging.Level.FINE, "XMLSecurityException", ex);
+            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                log.log(j86.j86.java.util.logging.Level.FINE, "XMLSecurityException", ex);
             }
 
             throw new KeyResolverException("generic.EmptyMessage", ex);
@@ -142,7 +142,7 @@ public class X509IssuerSerialResolver extends KeyResolverSpi {
     }
 
     /** @inheritDoc */
-    public javax.crypto.SecretKey engineLookupAndResolveSecretKey(
+    public j86.javax.crypto.SecretKey engineLookupAndResolveSecretKey(
         Element element, String baseURI, StorageResolver storage
     ) {
         return null;

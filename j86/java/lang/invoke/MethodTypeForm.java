@@ -23,12 +23,12 @@
  * questions.
  */
 
-package java.lang.invoke;
+package j86.j86.java.lang.invoke;
 
-import sun.invoke.util.Wrapper;
-import static java.lang.invoke.MethodHandleStatics.*;
-import static java.lang.invoke.MethodHandleNatives.Constants.*;
- import static java.lang.invoke.MethodHandles.Lookup.IMPL_LOOKUP;
+import j86.j86.sun.invoke.util.Wrapper;
+import static j86.j86.java.lang.invoke.MethodHandleStatics.*;
+import static j86.j86.java.lang.invoke.MethodHandleNatives.Constants.*;
+ import static j86.j86.java.lang.invoke.MethodHandles.Lookup.IMPL_LOOKUP;
 
 /**
  * Shared information for a group of method types, which differ
@@ -279,7 +279,7 @@ final class MethodTypeForm {
         }
     }
 
-    /** Codes for {@link #canonicalize(java.lang.Class, int)}.
+    /** Codes for {@link #canonicalize(j86.java.lang.Class, int)}.
      * ERASE means change every reference to {@code Object}.
      * WRAP means convert primitives (including {@code void} to their
      * corresponding wrapper types.  UNWRAP means the reverse of WRAP.

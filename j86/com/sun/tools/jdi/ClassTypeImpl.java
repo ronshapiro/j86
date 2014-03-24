@@ -23,11 +23,11 @@
  * questions.
  */
 
-package com.sun.tools.jdi;
+package j86.com.sun.tools.jdi;
 
-import com.sun.jdi.*;
+import j86.com.sun.jdi.*;
 
-import java.util.*;
+import j86.java.util.*;
 
 public class ClassTypeImpl extends ReferenceTypeImpl
     implements ClassType
@@ -112,7 +112,7 @@ public class ClassTypeImpl extends ReferenceTypeImpl
     public boolean isEnum() {
         ClassType superclass = superclass();
         if (superclass != null &&
-            superclass.name().equals("java.lang.Enum")) {
+            superclass.name().equals("j86.java.lang.Enum")) {
             return true;
         }
         return false;

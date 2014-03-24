@@ -25,15 +25,15 @@
 
 #warn This file is preprocessed before being compiled
 
-package java.nio;
+package j86.java.nio;
 
 #if[char]
-import java.io.IOException;
+import j86.java.io.IOException;
 #end[char]
 #if[streamableType]
-import java.util.Spliterator;
-import java.util.stream.StreamSupport;
-import java.util.stream.$Streamtype$Stream;
+import j86.java.util.Spliterator;
+import j86.j86.java.util.stream.StreamSupport;
+import j86.j86.java.util.stream.$Streamtype$Stream;
 #end[streamableType]
 
 /**
@@ -116,7 +116,7 @@ import java.util.stream.$Streamtype$Stream;
  * buffers only when they yield a measureable gain in program performance.
  *
  * <p> A direct byte buffer may also be created by {@link
- * java.nio.channels.FileChannel#map mapping} a region of a file
+ * j86.j86.java.nio.channels.FileChannel#map mapping} a region of a file
  * directly into memory.  An implementation of the Java platform may optionally
  * support the creation of direct byte buffers from native code via JNI.  If an
  * instance of one of these kinds of buffers refers to an inaccessible region
@@ -208,7 +208,7 @@ import java.util.stream.$Streamtype$Stream;
  *
  * <p> This class implements the {@link CharSequence} interface so that
  * character buffers may be used wherever character sequences are accepted, for
- * example in the regular-expression package <tt>{@link java.util.regex}</tt>.
+ * example in the regular-expression package <tt>{@link j86.j86.java.util.regex}</tt>.
  * </p>
  *
 #end[char]

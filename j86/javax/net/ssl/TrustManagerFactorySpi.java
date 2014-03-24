@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.net.ssl;
+package j86.j86.javax.net.ssl;
 
-import java.security.*;
+import j86.java.security.*;
 
 /**
  * This class defines the <i>Service Provider Interface</i> (<b>SPI</b>)

@@ -23,13 +23,13 @@
  * questions.
  */
 
-package javax.imageio.spi;
+package j86.j86.javax.imageio.spi;
 
-import java.awt.image.RenderedImage;
-import java.io.IOException;
-import javax.imageio.ImageTypeSpecifier;
-import javax.imageio.ImageWriter;
-import javax.imageio.stream.ImageOutputStream;
+import j86.j86.j86.java.awt.image.RenderedImage;
+import j86.java.io.IOException;
+import j86.javax.imageio.ImageTypeSpecifier;
+import j86.javax.imageio.ImageWriter;
+import j86.j86.javax.imageio.stream.ImageOutputStream;
 
 /**
  * The service provider interface (SPI) for <code>ImageWriter</code>s.
@@ -69,8 +69,8 @@ import javax.imageio.stream.ImageOutputStream;
  * invocation of this method.
  *
  * @see IIORegistry
- * @see javax.imageio.ImageTypeSpecifier
- * @see javax.imageio.ImageWriter
+ * @see j86.javax.imageio.ImageTypeSpecifier
+ * @see j86.javax.imageio.ImageWriter
  *
  */
 public abstract class ImageWriterSpi extends ImageReaderWriterSpi {
@@ -314,7 +314,7 @@ public abstract class ImageWriterSpi extends ImageReaderWriterSpi {
      * implementation associated with this service provider is able to
      * encode the given <code>RenderedImage</code> instance.  Note
      * that this includes instances of
-     * <code>java.awt.image.BufferedImage</code>.
+     * <code>j86.j86.j86.java.awt.image.BufferedImage</code>.
      *
      * <p> See the discussion for
      * <code>canEncodeImage(ImageTypeSpecifier)</code> for information
@@ -430,7 +430,7 @@ public abstract class ImageWriterSpi extends ImageReaderWriterSpi {
      * containing names of <code>ImageReaderSpi</code>s, or
      * <code>null</code>.
      *
-     * @see javax.imageio.ImageIO#getImageReader(ImageWriter)
+     * @see j86.javax.imageio.ImageIO#getImageReader(ImageWriter)
      * @see ImageReaderSpi#getImageWriterSpiNames()
      */
     public String[] getImageReaderSpiNames() {

@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.awt;
+package j86.sun.awt;
 
-import java.awt.event.InvocationEvent;
+import j86.j86.java.awt.event.InvocationEvent;
 
 @SuppressWarnings("serial")
 public class PeerEvent extends InvocationEvent {

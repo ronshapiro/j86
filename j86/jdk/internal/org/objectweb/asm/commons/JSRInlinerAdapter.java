@@ -56,35 +56,35 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-package jdk.internal.org.objectweb.asm.commons;
+package j86.j86.jdk.internal.org.objectweb.asm.commons;
 
-import java.util.AbstractMap;
-import java.util.ArrayList;
-import java.util.BitSet;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import j86.java.util.AbstractMap;
+import j86.java.util.ArrayList;
+import j86.java.util.BitSet;
+import j86.java.util.HashMap;
+import j86.java.util.Iterator;
+import j86.java.util.LinkedList;
+import j86.java.util.List;
+import j86.java.util.Map;
+import j86.java.util.Set;
 
-import jdk.internal.org.objectweb.asm.Label;
-import jdk.internal.org.objectweb.asm.MethodVisitor;
-import jdk.internal.org.objectweb.asm.Opcodes;
-import jdk.internal.org.objectweb.asm.Type;
-import jdk.internal.org.objectweb.asm.tree.AbstractInsnNode;
-import jdk.internal.org.objectweb.asm.tree.InsnList;
-import jdk.internal.org.objectweb.asm.tree.InsnNode;
-import jdk.internal.org.objectweb.asm.tree.JumpInsnNode;
-import jdk.internal.org.objectweb.asm.tree.LabelNode;
-import jdk.internal.org.objectweb.asm.tree.LocalVariableNode;
-import jdk.internal.org.objectweb.asm.tree.LookupSwitchInsnNode;
-import jdk.internal.org.objectweb.asm.tree.MethodNode;
-import jdk.internal.org.objectweb.asm.tree.TableSwitchInsnNode;
-import jdk.internal.org.objectweb.asm.tree.TryCatchBlockNode;
+import j86.jdk.internal.org.objectweb.asm.Label;
+import j86.jdk.internal.org.objectweb.asm.MethodVisitor;
+import j86.jdk.internal.org.objectweb.asm.Opcodes;
+import j86.jdk.internal.org.objectweb.asm.Type;
+import j86.j86.jdk.internal.org.objectweb.asm.tree.AbstractInsnNode;
+import j86.j86.jdk.internal.org.objectweb.asm.tree.InsnList;
+import j86.j86.jdk.internal.org.objectweb.asm.tree.InsnNode;
+import j86.j86.jdk.internal.org.objectweb.asm.tree.JumpInsnNode;
+import j86.j86.jdk.internal.org.objectweb.asm.tree.LabelNode;
+import j86.j86.jdk.internal.org.objectweb.asm.tree.LocalVariableNode;
+import j86.j86.jdk.internal.org.objectweb.asm.tree.LookupSwitchInsnNode;
+import j86.j86.jdk.internal.org.objectweb.asm.tree.MethodNode;
+import j86.j86.jdk.internal.org.objectweb.asm.tree.TableSwitchInsnNode;
+import j86.j86.jdk.internal.org.objectweb.asm.tree.TryCatchBlockNode;
 
 /**
- * A {@link jdk.internal.org.objectweb.asm.MethodVisitor} that removes JSR instructions and
+ * A {@link j86.jdk.internal.org.objectweb.asm.MethodVisitor} that removes JSR instructions and
  * inlines the referenced subroutines.
  *
  * <b>Explanation of how it works</b> TODO

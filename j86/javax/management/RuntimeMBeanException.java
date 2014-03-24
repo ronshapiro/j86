@@ -23,12 +23,12 @@
  * questions.
  */
 
-package javax.management;
+package j86.javax.management;
 
 
 /**
  * Represents runtime exceptions thrown by MBean methods in
- * the agent. It "wraps" the actual <CODE>java.lang.RuntimeException</CODE> exception thrown.
+ * the agent. It "wraps" the actual <CODE>j86.java.lang.RuntimeException</CODE> exception thrown.
  * This exception will be built by the MBeanServer when a call to an
  * MBean method throws a runtime exception.
  *
@@ -42,27 +42,27 @@ public class RuntimeMBeanException extends JMRuntimeException   {
     /**
      * @serial The encapsulated {@link RuntimeException}
      */
-    private java.lang.RuntimeException runtimeException ;
+    private j86.java.lang.RuntimeException runtimeException ;
 
 
     /**
-     * Creates a <CODE>RuntimeMBeanException</CODE> that wraps the actual <CODE>java.lang.RuntimeException</CODE>.
+     * Creates a <CODE>RuntimeMBeanException</CODE> that wraps the actual <CODE>j86.java.lang.RuntimeException</CODE>.
      *
      * @param e the wrapped exception.
      */
-    public RuntimeMBeanException(java.lang.RuntimeException e) {
+    public RuntimeMBeanException(j86.java.lang.RuntimeException e) {
         super() ;
         runtimeException = e ;
     }
 
     /**
-     * Creates a <CODE>RuntimeMBeanException</CODE> that wraps the actual <CODE>java.lang.RuntimeException</CODE> with
+     * Creates a <CODE>RuntimeMBeanException</CODE> that wraps the actual <CODE>j86.java.lang.RuntimeException</CODE> with
      * a detailed message.
      *
      * @param e the wrapped exception.
      * @param message the detail message.
      */
-    public RuntimeMBeanException(java.lang.RuntimeException e, String message) {
+    public RuntimeMBeanException(j86.java.lang.RuntimeException e, String message) {
         super(message) ;
         runtimeException = e ;
     }
@@ -72,7 +72,7 @@ public class RuntimeMBeanException extends JMRuntimeException   {
      *
      * @return the wrapped {@link RuntimeException}.
      */
-    public java.lang.RuntimeException getTargetException()  {
+    public j86.java.lang.RuntimeException getTargetException()  {
         return runtimeException ;
     }
 

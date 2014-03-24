@@ -24,9 +24,9 @@
  */
 
 
-package java.util.logging;
+package j86.j86.java.util.logging;
 
-import java.io.UnsupportedEncodingException;
+import j86.java.io.UnsupportedEncodingException;
 /**
  * A <tt>Handler</tt> object takes log messages from a <tt>Logger</tt> and
  * exports them.  It might for example, write them to a console
@@ -147,14 +147,14 @@ public abstract class Handler {
      *          not supported.
      */
     public synchronized void setEncoding(String encoding)
-                        throws SecurityException, java.io.UnsupportedEncodingException {
+                        throws SecurityException, j86.java.io.UnsupportedEncodingException {
         checkPermission();
         if (encoding != null) {
             try {
-                if(!java.nio.charset.Charset.isSupported(encoding)) {
+                if(!j86.j86.java.nio.charset.Charset.isSupported(encoding)) {
                     throw new UnsupportedEncodingException(encoding);
                 }
-            } catch (java.nio.charset.IllegalCharsetNameException e) {
+            } catch (j86.j86.java.nio.charset.IllegalCharsetNameException e) {
                 throw new UnsupportedEncodingException(encoding);
             }
         }

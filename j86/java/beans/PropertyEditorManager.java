@@ -23,12 +23,12 @@
  * questions.
  */
 
-package java.beans;
+package j86.java.beans;
 
 /**
  * The PropertyEditorManager can be used to locate a property editor for
  * any given type name.  This property editor must support the
- * java.beans.PropertyEditor interface for editing a given object.
+ * j86.java.beans.PropertyEditor interface for editing a given object.
  * <P>
  * The PropertyEditorManager uses three techniques for locating an editor
  * for a given type.  First, it provides a registerEditor method to allow
@@ -47,7 +47,7 @@ package java.beans;
  * <p>
  * Default PropertyEditors will be provided for the Java primitive types
  * "boolean", "byte", "short", "int", "long", "float", and "double"; and
- * for the classes java.lang.String. java.awt.Color, and java.awt.Font.
+ * for the classes j86.java.lang.String. j86.java.awt.Color, and java.awt.Font.
  */
 
 public class PropertyEditorManager {

@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.print.attribute.standard;
+package j86.j86.j86.javax.print.attribute.standard;
 
-import javax.print.attribute.Attribute;
-import javax.print.attribute.EnumSyntax;
-import javax.print.attribute.DocAttribute;
-import javax.print.attribute.PrintRequestAttribute;
-import javax.print.attribute.PrintJobAttribute;
+import j86.j86.javax.print.attribute.Attribute;
+import j86.j86.javax.print.attribute.EnumSyntax;
+import j86.j86.javax.print.attribute.DocAttribute;
+import j86.j86.javax.print.attribute.PrintRequestAttribute;
+import j86.j86.javax.print.attribute.PrintJobAttribute;
 
 /**
  * Class Sides is a printing attribute class, an enumeration, that specifies
@@ -201,7 +201,7 @@ public final class Sides extends EnumSyntax
      * For class Sides, the category is class Sides itself.
      *
      * @return  Printing attribute class (category), an instance of class
-     *          {@link java.lang.Class java.lang.Class}.
+     *          {@link j86.java.lang.Class java.lang.Class}.
      */
     public final Class<? extends Attribute> getCategory() {
         return Sides.class;

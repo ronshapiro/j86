@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.sound.midi;
+package j86.javax.sound.midi;
 
-import java.net.URL;
+import j86.java.net.URL;
 
 
 /**

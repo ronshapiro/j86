@@ -23,19 +23,19 @@
  * questions.
  */
 
-package java.security;
+package j86.java.security;
 
-import java.io.*;
-import java.net.URI;
-import java.security.cert.Certificate;
-import java.security.cert.X509Certificate;
-import java.security.cert.CertificateException;
-import java.security.spec.AlgorithmParameterSpec;
-import java.util.*;
-import javax.crypto.SecretKey;
+import j86.java.io.*;
+import j86.java.net.URI;
+import j86.j86.java.security.cert.Certificate;
+import j86.j86.java.security.cert.X509Certificate;
+import j86.j86.java.security.cert.CertificateException;
+import j86.j86.java.security.spec.AlgorithmParameterSpec;
+import j86.java.util.*;
+import j86.javax.crypto.SecretKey;
 
-import javax.security.auth.DestroyFailedException;
-import javax.security.auth.callback.*;
+import j86.javax.security.auth.DestroyFailedException;
+import j86.j86.javax.security.auth.callback.*;
 
 /**
  * This class represents a storage facility for cryptographic
@@ -108,7 +108,7 @@ import javax.security.auth.callback.*;
  * </ul>
  *
  * <p> Before a keystore can be accessed, it must be
- * {@link #load(java.io.InputStream, char[]) loaded}.
+ * {@link #load(j86.java.io.InputStream, char[]) loaded}.
  * <pre>
  *    KeyStore ks = KeyStore.getInstance(KeyStore.getDefaultType());
  *
@@ -136,7 +136,7 @@ import javax.security.auth.callback.*;
  *    PrivateKey myPrivateKey = pkEntry.getPrivateKey();
  *
  *    // save my secret key
- *    javax.crypto.SecretKey mySecretKey;
+ *    j86.javax.crypto.SecretKey mySecretKey;
  *    KeyStore.SecretKeyEntry skEntry =
  *        new KeyStore.SecretKeyEntry(mySecretKey);
  *    ks.setEntry("secretKeyAlias", skEntry, protParam);
@@ -168,9 +168,9 @@ import javax.security.auth.callback.*;
  *
  * @author Jan Luehe
  *
- * @see java.security.PrivateKey
- * @see javax.crypto.SecretKey
- * @see java.security.cert.Certificate
+ * @see j86.java.security.PrivateKey
+ * @see j86.javax.crypto.SecretKey
+ * @see j86.j86.java.security.cert.Certificate
  *
  * @since 1.2
  */
@@ -237,7 +237,7 @@ public class KeyStore {
      * @since 1.5
      */
     public static class PasswordProtection implements
-                ProtectionParameter, javax.security.auth.Destroyable {
+                ProtectionParameter, j86.javax.security.auth.Destroyable {
 
         private final char[] password;
         private final String protectionAlgorithm;
@@ -946,7 +946,7 @@ public class KeyStore {
      * @return the default keystore type as specified by the
      * {@code keystore.type} security property, or the string {@literal "jks"}
      * if no such property exists.
-     * @see java.security.Security security properties
+     * @see j86.java.security.Security security properties
      */
     public final static String getDefaultType() {
         String kstype;
@@ -1093,7 +1093,7 @@ public class KeyStore {
      * Assigns the given key to the given alias, protecting it with the given
      * password.
      *
-     * <p>If the given key is of type {@code java.security.PrivateKey},
+     * <p>If the given key is of type {@code j86.java.security.PrivateKey},
      * it must be accompanied by a certificate chain certifying the
      * corresponding public key.
      *
@@ -1106,7 +1106,7 @@ public class KeyStore {
      * @param password the password to protect the key
      * @param chain the certificate chain for the corresponding public
      * key (only required if the given key is of type
-     * {@code java.security.PrivateKey}).
+     * {@code j86.java.security.PrivateKey}).
      *
      * @exception KeyStoreException if the keystore has not been initialized
      * (loaded), the given key cannot be protected, or this operation fails
@@ -1133,7 +1133,7 @@ public class KeyStore {
      * alias.
      *
      * <p>If the protected key is of type
-     * {@code java.security.PrivateKey}, it must be accompanied by a
+     * {@code j86.java.security.PrivateKey}, it must be accompanied by a
      * certificate chain certifying the corresponding public key. If the
      * underlying keystore implementation is of type {@code jks},
      * {@code key} must be encoded as an
@@ -1147,7 +1147,7 @@ public class KeyStore {
      * @param key the key (in protected format) to be associated with the alias
      * @param chain the certificate chain for the corresponding public
      *          key (only useful if the protected key is of type
-     *          {@code java.security.PrivateKey}).
+     *          {@code j86.java.security.PrivateKey}).
      *
      * @exception KeyStoreException if the keystore has not been initialized
      * (loaded), or if this operation fails for some other reason.
@@ -1592,7 +1592,7 @@ public class KeyStore {
      * needed.
      *
      * @see KeyStore
-     * @see javax.net.ssl.KeyStoreBuilderParameters
+     * @see j86.j86.javax.net.ssl.KeyStoreBuilderParameters
      * @since 1.5
      */
     public static abstract class Builder {

@@ -22,14 +22,14 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text.rtf;
+package j86.j86.j86.javax.swing.text.rtf;
 
-import javax.swing.text.StyleConstants;
-import javax.swing.text.AttributeSet;
-import javax.swing.text.MutableAttributeSet;
-import javax.swing.text.TabStop;
-import java.util.*;
-import java.io.IOException;
+import j86.j86.javax.swing.text.StyleConstants;
+import j86.j86.javax.swing.text.AttributeSet;
+import j86.j86.javax.swing.text.MutableAttributeSet;
+import j86.j86.javax.swing.text.TabStop;
+import j86.java.util.*;
+import j86.java.io.IOException;
 
 class RTFAttributes
 {

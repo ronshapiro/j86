@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.management;
+package j86.sun.management;
 
-import java.lang.management.ManagementPermission;
-import java.util.List;
-import javax.management.ObjectName;
-import javax.management.MalformedObjectNameException;
+import j86.j86.java.lang.management.ManagementPermission;
+import j86.java.util.List;
+import j86.javax.management.ObjectName;
+import j86.javax.management.MalformedObjectNameException;
 
 
 public class Util {

@@ -23,30 +23,30 @@
  * questions.
  */
 
-package javax.management.relation;
+package j86.j86.javax.management.relation;
 
-import static com.sun.jmx.mbeanserver.Util.cast;
-import static com.sun.jmx.defaults.JmxProperties.RELATION_LOGGER;
-import com.sun.jmx.mbeanserver.GetPropertyAction;
+import static j86.com.sun.jmx.mbeanserver.Util.cast;
+import static j86.com.sun.jmx.defaults.JmxProperties.RELATION_LOGGER;
+import j86.com.sun.jmx.mbeanserver.GetPropertyAction;
 
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.ObjectStreamField;
-import java.security.AccessController;
+import j86.java.io.IOException;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectStreamField;
+import j86.java.security.AccessController;
 
-import java.util.List;
-import java.util.Vector;
+import j86.java.util.List;
+import j86.java.util.Vector;
 
-import javax.management.MBeanServerNotification;
+import j86.javax.management.MBeanServerNotification;
 
-import javax.management.Notification;
-import javax.management.NotificationFilterSupport;
-import javax.management.ObjectName;
+import j86.javax.management.Notification;
+import j86.javax.management.NotificationFilterSupport;
+import j86.javax.management.ObjectName;
 
-import java.util.List;
-import java.util.logging.Level;
-import java.util.Vector;
+import j86.java.util.List;
+import j86.j86.java.util.logging.Level;
+import j86.java.util.Vector;
 
 /**
  * Filter for {@link MBeanServerNotification}.

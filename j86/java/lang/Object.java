@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.lang;
+package j86.java.lang;
 
 /**
  * Class {@code Object} is the root of the class hierarchy.
@@ -31,7 +31,7 @@ package java.lang;
  * including arrays, implement the methods of this class.
  *
  * @author  unascribed
- * @see     java.lang.Class
+ * @see     j86.java.lang.Class
  * @since   JDK1.0
  */
 public class Object {
@@ -65,7 +65,7 @@ public class Object {
     /**
      * Returns a hash code value for the object. This method is
      * supported for the benefit of hash tables such as those provided by
-     * {@link java.util.HashMap}.
+     * {@link j86.java.util.HashMap}.
      * <p>
      * The general contract of {@code hashCode} is:
      * <ul>
@@ -79,7 +79,7 @@ public class Object {
      *     method, then calling the {@code hashCode} method on each of
      *     the two objects must produce the same integer result.
      * <li>It is <em>not</em> required that if two objects are unequal
-     *     according to the {@link java.lang.Object#equals(java.lang.Object)}
+     *     according to the {@link j86.java.lang.Object#equals(java.lang.Object)}
      *     method, then calling the {@code hashCode} method on each of the
      *     two objects must produce distinct integer results.  However, the
      *     programmer should be aware that producing distinct integer results
@@ -94,8 +94,8 @@ public class Object {
      * Java&trade; programming language.)
      *
      * @return  a hash code value for this object.
-     * @see     java.lang.Object#equals(java.lang.Object)
-     * @see     java.lang.System#identityHashCode
+     * @see     j86.java.lang.Object#equals(java.lang.Object)
+     * @see     j86.java.lang.System#identityHashCode
      */
     public native int hashCode();
 
@@ -143,7 +143,7 @@ public class Object {
      * @return  {@code true} if this object is the same as the obj
      *          argument; {@code false} otherwise.
      * @see     #hashCode()
-     * @see     java.util.HashMap
+     * @see     j86.java.util.HashMap
      */
     public boolean equals(Object obj) {
         return (this == obj);
@@ -207,7 +207,7 @@ public class Object {
      *               that override the {@code clone} method can also
      *               throw this exception to indicate that an instance cannot
      *               be cloned.
-     * @see java.lang.Cloneable
+     * @see j86.java.lang.Cloneable
      */
     protected native Object clone() throws CloneNotSupportedException;
 
@@ -265,8 +265,8 @@ public class Object {
      *
      * @throws  IllegalMonitorStateException  if the current thread is not
      *               the owner of this object's monitor.
-     * @see        java.lang.Object#notifyAll()
-     * @see        java.lang.Object#wait()
+     * @see        j86.java.lang.Object#notifyAll()
+     * @see        j86.java.lang.Object#wait()
      */
     public final native void notify();
 
@@ -289,15 +289,15 @@ public class Object {
      *
      * @throws  IllegalMonitorStateException  if the current thread is not
      *               the owner of this object's monitor.
-     * @see        java.lang.Object#notify()
-     * @see        java.lang.Object#wait()
+     * @see        j86.java.lang.Object#notify()
+     * @see        j86.java.lang.Object#wait()
      */
     public final native void notifyAll();
 
     /**
      * Causes the current thread to wait until either another thread invokes the
-     * {@link java.lang.Object#notify()} method or the
-     * {@link java.lang.Object#notifyAll()} method for this object, or a
+     * {@link j86.java.lang.Object#notify()} method or the
+     * {@link j86.java.lang.Object#notifyAll()} method for this object, or a
      * specified amount of time has elapsed.
      * <p>
      * The current thread must own this object's monitor.
@@ -349,7 +349,7 @@ public class Object {
      * 2000), or Item 50 in Joshua Bloch's "Effective Java Programming
      * Language Guide" (Addison-Wesley, 2001).
      *
-     * <p>If the current thread is {@linkplain java.lang.Thread#interrupt()
+     * <p>If the current thread is {@linkplain j86.java.lang.Thread#interrupt()
      * interrupted} by any thread before or while it is waiting, then an
      * {@code InterruptedException} is thrown.  This exception is not
      * thrown until the lock status of this object has been restored as
@@ -376,15 +376,15 @@ public class Object {
      *             was waiting for a notification.  The <i>interrupted
      *             status</i> of the current thread is cleared when
      *             this exception is thrown.
-     * @see        java.lang.Object#notify()
-     * @see        java.lang.Object#notifyAll()
+     * @see        j86.java.lang.Object#notify()
+     * @see        j86.java.lang.Object#notifyAll()
      */
     public final native void wait(long timeout) throws InterruptedException;
 
     /**
      * Causes the current thread to wait until another thread invokes the
-     * {@link java.lang.Object#notify()} method or the
-     * {@link java.lang.Object#notifyAll()} method for this object, or
+     * {@link j86.java.lang.Object#notify()} method or the
+     * {@link j86.java.lang.Object#notifyAll()} method for this object, or
      * some other thread interrupts the current thread, or a certain
      * amount of real time has elapsed.
      * <p>
@@ -462,8 +462,8 @@ public class Object {
 
     /**
      * Causes the current thread to wait until another thread invokes the
-     * {@link java.lang.Object#notify()} method or the
-     * {@link java.lang.Object#notifyAll()} method for this object.
+     * {@link j86.java.lang.Object#notify()} method or the
+     * {@link j86.java.lang.Object#notifyAll()} method for this object.
      * In other words, this method behaves exactly as if it simply
      * performs the call {@code wait(0)}.
      * <p>
@@ -495,8 +495,8 @@ public class Object {
      *             was waiting for a notification.  The <i>interrupted
      *             status</i> of the current thread is cleared when
      *             this exception is thrown.
-     * @see        java.lang.Object#notify()
-     * @see        java.lang.Object#notifyAll()
+     * @see        j86.java.lang.Object#notify()
+     * @see        j86.java.lang.Object#notifyAll()
      */
     public final void wait() throws InterruptedException {
         wait(0);
@@ -548,8 +548,8 @@ public class Object {
      * ignored.
      *
      * @throws Throwable the {@code Exception} raised by this method
-     * @see java.lang.ref.WeakReference
-     * @see java.lang.ref.PhantomReference
+     * @see j86.j86.java.lang.ref.WeakReference
+     * @see j86.j86.java.lang.ref.PhantomReference
      * @jls 12.6 Finalization of Class Instances
      */
     protected void finalize() throws Throwable { }

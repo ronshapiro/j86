@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.jvmstat.monitor.remote;
+package j86.j86.sun.jvmstat.monitor.remote;
 
-import java.rmi.Remote;
-import java.rmi.RemoteException;
+import j86.java.rmi.Remote;
+import j86.java.rmi.RemoteException;
 
 /**
  * Interface for accessing the instrumentation exported by a

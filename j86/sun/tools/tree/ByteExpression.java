@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.tools.tree;
+package j86.sun.tools.tree;
 
-import sun.tools.java.*;
-import java.io.PrintStream;
+import j86.sun.tools.java.*;
+import j86.java.io.PrintStream;
 
 /**
  * WARNING: The contents of this source file are not part of any

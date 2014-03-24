@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.awt;
+package j86.java.awt;
 
-import java.util.List;
-import java.util.ArrayList;
-import sun.util.logging.PlatformLogger;
+import j86.java.util.List;
+import j86.java.util.ArrayList;
+import j86.j86.sun.util.logging.PlatformLogger;
 
 /**
  * A FocusTraversalPolicy that determines traversal order based on the order
@@ -58,9 +58,9 @@ import sun.util.logging.PlatformLogger;
  * @since 1.4
  */
 public class ContainerOrderFocusTraversalPolicy extends FocusTraversalPolicy
-    implements java.io.Serializable
+    implements j86.java.io.Serializable
 {
-    private static final PlatformLogger log = PlatformLogger.getLogger("java.awt.ContainerOrderFocusTraversalPolicy");
+    private static final PlatformLogger log = PlatformLogger.getLogger("j86.java.awt.ContainerOrderFocusTraversalPolicy");
 
     final private int FORWARD_TRAVERSAL = 0;
     final private int BACKWARD_TRAVERSAL = 1;
@@ -100,7 +100,7 @@ public class ContainerOrderFocusTraversalPolicy extends FocusTraversalPolicy
      * applied to the FocusTraversalPolicy in general.
      * Thus, a descendant of this policy may wish to not reimplement the logic of
      * the 2nd point but just override the implementation of the 1st one.
-     * A striking example of such a descendant is the javax.swing.SortingFocusTraversalPolicy.
+     * A striking example of such a descendant is the j86.javax.swing.SortingFocusTraversalPolicy.
      */
     /*protected*/ private List<Component> getFocusTraversalCycle(Container aContainer) {
         List<Component> cycle = new ArrayList<Component>();

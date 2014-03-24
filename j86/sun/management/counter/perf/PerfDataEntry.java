@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.management.counter.perf;
+package j86.j86.j86.sun.management.counter.perf;
 
-import sun.management.counter.*;
-import java.nio.*;
-import java.io.UnsupportedEncodingException;
+import j86.j86.sun.management.counter.*;
+import j86.java.nio.*;
+import j86.java.io.UnsupportedEncodingException;
 
 class PerfDataEntry {
     private class EntryFieldOffset {

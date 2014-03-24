@@ -23,14 +23,14 @@
  * questions.
  */
 
-package com.sun.beans.editors;
+package j86.j86.com.sun.beans.editors;
 
 /**
  * Abstract Property editor for a java builtin number types.
  *
  */
 
-import java.beans.*;
+import j86.java.beans.*;
 
 abstract public class NumberEditor extends PropertyEditorSupport {
 

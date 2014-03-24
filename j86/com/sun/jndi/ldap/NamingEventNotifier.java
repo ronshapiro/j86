@@ -23,16 +23,16 @@
  * questions.
  */
 
-package com.sun.jndi.ldap;
+package j86.com.sun.jndi.ldap;
 
-import javax.naming.*;
-import javax.naming.directory.*;
-import javax.naming.event.*;
-import javax.naming.ldap.*;
-import javax.naming.ldap.LdapName;
+import j86.javax.naming.*;
+import j86.j86.javax.naming.directory.*;
+import j86.j86.javax.naming.event.*;
+import j86.j86.javax.naming.ldap.*;
+import j86.j86.javax.naming.ldap.LdapName;
 
-import java.util.Vector;
-import com.sun.jndi.toolkit.ctx.Continuation;
+import j86.java.util.Vector;
+import j86.com.sun.jndi.toolkit.ctx.Continuation;
 
 /**
   * Gathers information to generate events by using the Persistent Search
@@ -72,7 +72,7 @@ final class NamingEventNotifier implements Runnable {
                 true /* no info about original entry(s) */,
                 true /* additional info about changes */,
                 Control.CRITICAL);
-        } catch (java.io.IOException e) {
+        } catch (j86.java.io.IOException e) {
             NamingException ne = new NamingException(
                 "Problem creating persistent search control");
             ne.setRootCause(e);

@@ -23,13 +23,13 @@
  * questions.
  */
 
-package java.security.cert;
+package j86.j86.java.security.cert;
 
-import java.security.KeyStore;
-import java.security.KeyStoreException;
-import java.security.InvalidAlgorithmParameterException;
-import java.security.InvalidParameterException;
-import java.util.Set;
+import j86.java.security.KeyStore;
+import j86.java.security.KeyStoreException;
+import j86.java.security.InvalidAlgorithmParameterException;
+import j86.java.security.InvalidParameterException;
+import j86.java.util.Set;
 
 /**
  * Parameters used as input for the PKIX {@code CertPathBuilder}
@@ -96,7 +96,7 @@ public class PKIXBuilderParameters extends PKIXParameters {
      * {@code null}
      * @throws ClassCastException if any of the elements of
      * {@code trustAnchors} are not of type
-     * {@code java.security.cert.TrustAnchor}
+     * {@code j86.j86.java.security.cert.TrustAnchor}
      */
     public PKIXBuilderParameters(Set<TrustAnchor> trustAnchors, CertSelector
         targetConstraints) throws InvalidAlgorithmParameterException

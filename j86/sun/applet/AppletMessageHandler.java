@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.applet;
+package j86.sun.applet;
 
-import java.util.ResourceBundle;
-import java.util.MissingResourceException;
-import java.text.MessageFormat;
+import j86.java.util.ResourceBundle;
+import j86.java.util.MissingResourceException;
+import j86.java.text.MessageFormat;
 
 /**
  * An hanlder of localized messages.
@@ -41,7 +41,7 @@ class AppletMessageHandler {
     static {
         try {
             rb = ResourceBundle.getBundle
-                ("sun.applet.resources.MsgAppletViewer");
+                ("j86.j86.sun.applet.resources.MsgAppletViewer");
         } catch (MissingResourceException e) {
             System.out.println(e.getMessage());
             System.exit(1);
@@ -61,7 +61,7 @@ class AppletMessageHandler {
         MessageFormat msgfmt = new MessageFormat(basemsgfmt);
         Object msgobj[] = new Object[1];
         if (arg == null) {
-            arg = "null"; // mimic java.io.PrintStream.print(String)
+            arg = "null"; // mimic j86.java.io.PrintStream.print(String)
         }
         msgobj[0] = arg;
         return msgfmt.format(msgobj);

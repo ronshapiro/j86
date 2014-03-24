@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.tools.asm;
+package j86.sun.tools.asm;
 
-import sun.tools.java.*;
+import j86.sun.tools.java.*;
 
 /**
  * An object to represent a name and type constant pool data item.

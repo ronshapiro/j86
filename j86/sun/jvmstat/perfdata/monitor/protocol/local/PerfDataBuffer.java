@@ -23,17 +23,17 @@
  * questions.
  */
 
-package sun.jvmstat.perfdata.monitor.protocol.local;
+package j86.j86.sun.jvmstat.perfdata.monitor.protocol.local;
 
-import sun.misc.Perf;
-import sun.jvmstat.monitor.*;
-import sun.jvmstat.perfdata.monitor.*;
-import java.util.*;
-import java.io.*;
-import java.nio.ByteBuffer;
-import java.nio.channels.FileChannel;
-import java.lang.reflect.Constructor;
-import java.security.AccessController;
+import j86.sun.misc.Perf;
+import j86.sun.jvmstat.monitor.*;
+import j86.sun.jvmstat.perfdata.monitor.*;
+import j86.java.util.*;
+import j86.java.io.*;
+import j86.java.nio.ByteBuffer;
+import j86.j86.java.nio.channels.FileChannel;
+import j86.j86.j86.java.lang.reflect.Constructor;
+import j86.java.security.AccessController;
 
 /**
  * The concrete PerfDataBuffer implementation for the <em>local:</em>

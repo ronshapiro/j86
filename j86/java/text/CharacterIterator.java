@@ -38,7 +38,7 @@
  *
  */
 
-package java.text;
+package j86.java.text;
 
 
 /**

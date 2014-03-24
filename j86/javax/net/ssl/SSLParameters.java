@@ -23,16 +23,16 @@
  * questions.
  */
 
-package javax.net.ssl;
+package j86.j86.javax.net.ssl;
 
-import java.security.AlgorithmConstraints;
-import java.util.Map;
-import java.util.List;
-import java.util.HashMap;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.LinkedHashMap;
+import j86.java.security.AlgorithmConstraints;
+import j86.java.util.Map;
+import j86.java.util.List;
+import j86.java.util.HashMap;
+import j86.java.util.ArrayList;
+import j86.java.util.Collection;
+import j86.java.util.Collections;
+import j86.java.util.LinkedHashMap;
 
 /**
  * Encapsulates parameters for an SSL/TLS connection. The parameters

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.io;
+package j86.java.io;
 
 /**
  * Signals that a malformed string in
@@ -37,9 +37,9 @@ package java.io;
  * which modified UTF-8 strings are read and written.
  *
  * @author  Frank Yellin
- * @see     java.io.DataInput
- * @see     java.io.DataInputStream#readUTF(java.io.DataInput)
- * @see     java.io.IOException
+ * @see     j86.java.io.DataInput
+ * @see     j86.java.io.DataInputStream#readUTF(java.io.DataInput)
+ * @see     j86.java.io.IOException
  * @since   JDK1.0
  */
 public
@@ -58,8 +58,8 @@ class UTFDataFormatException extends IOException {
      * Constructs a <code>UTFDataFormatException</code> with the
      * specified detail message. The string <code>s</code> can be
      * retrieved later by the
-     * <code>{@link java.lang.Throwable#getMessage}</code>
-     * method of class <code>java.lang.Throwable</code>.
+     * <code>{@link j86.java.lang.Throwable#getMessage}</code>
+     * method of class <code>j86.java.lang.Throwable</code>.
      *
      * @param   s   the detail message.
      */

@@ -23,13 +23,13 @@
  * questions.
  */
 
-package sun.java2d.loops;
+package j86.j86.sun.java2d.loops;
 
-import java.awt.Composite;
-import java.lang.ref.WeakReference;
-import sun.java2d.loops.GraphicsPrimitive;
-import sun.java2d.SurfaceData;
-import sun.java2d.pipe.Region;
+import j86.java.awt.Composite;
+import j86.j86.java.lang.ref.WeakReference;
+import j86.j86.sun.java2d.loops.GraphicsPrimitive;
+import j86.sun.java2d.SurfaceData;
+import j86.j86.sun.java2d.pipe.Region;
 
 /**
  * MaskBlit

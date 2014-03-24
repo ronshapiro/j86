@@ -23,18 +23,18 @@
  * questions.
  */
 
-package java.rmi.server;
+package j86.j86.java.rmi.server;
 
-import java.io.*;
-import java.net.*;
+import j86.java.io.*;
+import j86.java.net.*;
 
 /**
  * An <code>RMIServerSocketFactory</code> instance is used by the RMI runtime
  * in order to obtain server sockets for RMI calls.  A remote object can be
  * associated with an <code>RMIServerSocketFactory</code> when it is
  * created/exported via the constructors or <code>exportObject</code> methods
- * of <code>java.rmi.server.UnicastRemoteObject</code> and
- * <code>java.rmi.activation.Activatable</code> .
+ * of <code>j86.j86.java.rmi.server.UnicastRemoteObject</code> and
+ * <code>j86.j86.java.rmi.activation.Activatable</code> .
  *
  * <p>An <code>RMIServerSocketFactory</code> instance associated with a remote
  * object is used to obtain the <code>ServerSocket</code> used to accept
@@ -54,9 +54,9 @@ import java.net.*;
  * @author  Ann Wollrath
  * @author  Peter Jones
  * @since   1.2
- * @see     java.rmi.server.UnicastRemoteObject
- * @see     java.rmi.activation.Activatable
- * @see     java.rmi.registry.LocateRegistry
+ * @see     j86.j86.java.rmi.server.UnicastRemoteObject
+ * @see     j86.j86.java.rmi.activation.Activatable
+ * @see     j86.j86.java.rmi.registry.LocateRegistry
  */
 public interface RMIServerSocketFactory {
 

@@ -22,12 +22,12 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.awt;
+package j86.sun.awt;
 
-import java.nio.charset.Charset;
-import java.nio.charset.CharsetEncoder;
-import java.nio.charset.StandardCharsets;
-import sun.nio.cs.HistoricallyNamedCharset;
+import j86.j86.java.nio.charset.Charset;
+import j86.j86.java.nio.charset.CharsetEncoder;
+import j86.j86.java.nio.charset.StandardCharsets;
+import j86.j86.j86.sun.nio.cs.HistoricallyNamedCharset;
 
 public class FontDescriptor implements Cloneable {
 
@@ -113,8 +113,8 @@ public class FontDescriptor implements Cloneable {
     }
     static boolean isLE;
     static {
-        String enc = (String) java.security.AccessController.doPrivileged(
-           new sun.security.action.GetPropertyAction("sun.io.unicode.encoding",
+        String enc = (String) j86.java.security.AccessController.doPrivileged(
+           new j86.sun.security.action.GetPropertyAction("sun.io.unicode.encoding",
                                                           "UnicodeBig"));
         isLE = !"UnicodeBig".equals(enc);
     }

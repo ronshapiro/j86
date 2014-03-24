@@ -23,7 +23,7 @@
  * questions.
  */
 
-package com.sun.jndi.cosnaming;
+package j86.com.sun.jndi.cosnaming;
 
 import org.omg.CORBA.ORB;
 

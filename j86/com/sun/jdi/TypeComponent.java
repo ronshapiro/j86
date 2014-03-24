@@ -23,7 +23,7 @@
  * questions.
  */
 
-package com.sun.jdi;
+package j86.com.sun.jdi;
 
 /**
  * An entity declared within a user defined
@@ -123,7 +123,7 @@ public interface TypeComponent extends Mirror, Accessible {
      *
      * @return <code>true</code> if this type component is synthetic;
      * <code>false</code> otherwise.
-     * @throws java.lang.UnsupportedOperationException if the target
+     * @throws j86.java.lang.UnsupportedOperationException if the target
      * VM cannot provide information on synthetic attributes.
      */
     boolean isSynthetic();

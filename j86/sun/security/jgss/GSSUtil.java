@@ -23,31 +23,31 @@
  * questions.
  */
 
-package sun.security.jgss;
+package j86.sun.security.jgss;
 
-import com.sun.security.auth.callback.TextCallbackHandler;
-import javax.security.auth.Subject;
-import javax.security.auth.kerberos.KerberosPrincipal;
-import javax.security.auth.kerberos.KerberosTicket;
-import javax.security.auth.kerberos.KerberosKey;
-import org.ietf.jgss.*;
-import sun.security.jgss.spi.GSSNameSpi;
-import sun.security.jgss.spi.GSSCredentialSpi;
-import sun.security.action.GetPropertyAction;
-import sun.security.jgss.krb5.Krb5NameElement;
-import sun.security.jgss.spnego.SpNegoCredElement;
-import java.util.Set;
-import java.util.HashSet;
-import java.util.Vector;
-import java.util.Iterator;
-import java.security.AccessController;
-import java.security.AccessControlContext;
-import java.security.PrivilegedExceptionAction;
-import java.security.PrivilegedActionException;
-import javax.security.auth.callback.CallbackHandler;
-import javax.security.auth.login.LoginContext;
-import javax.security.auth.login.LoginException;
-import sun.security.action.GetBooleanAction;
+import j86.j86.com.sun.security.auth.callback.TextCallbackHandler;
+import j86.javax.security.auth.Subject;
+import j86.j86.javax.security.auth.kerberos.KerberosPrincipal;
+import j86.j86.javax.security.auth.kerberos.KerberosTicket;
+import j86.j86.javax.security.auth.kerberos.KerberosKey;
+import j86.org.ietf.jgss.*;
+import j86.j86.sun.security.jgss.spi.GSSNameSpi;
+import j86.j86.sun.security.jgss.spi.GSSCredentialSpi;
+import j86.sun.security.action.GetPropertyAction;
+import j86.j86.sun.security.jgss.krb5.Krb5NameElement;
+import j86.j86.sun.security.jgss.spnego.SpNegoCredElement;
+import j86.java.util.Set;
+import j86.java.util.HashSet;
+import j86.java.util.Vector;
+import j86.java.util.Iterator;
+import j86.java.security.AccessController;
+import j86.java.security.AccessControlContext;
+import j86.java.security.PrivilegedExceptionAction;
+import j86.java.security.PrivilegedActionException;
+import j86.j86.javax.security.auth.callback.CallbackHandler;
+import j86.j86.javax.security.auth.login.LoginContext;
+import j86.j86.javax.security.auth.login.LoginException;
+import j86.sun.security.action.GetBooleanAction;
 
 /**
  * The GSSUtilImplementation that knows how to work with the internals of
@@ -72,7 +72,7 @@ public class GSSUtil {
     static final boolean DEBUG;
     static {
         DEBUG = (AccessController.doPrivileged
-                        (new GetBooleanAction("sun.security.jgss.debug"))).
+                        (new GetBooleanAction("j86.sun.security.jgss.debug"))).
                                 booleanValue();
     }
 
@@ -169,8 +169,8 @@ public class GSSUtil {
      * the same time, it converts any subclasses of KerberosTicket
      * into KerberosTicket instances and any subclasses of KerberosKey into
      * KerberosKey instances. (It is not desirable to expose the customer
-     * to sun.security.jgss.krb5.Krb5InitCredential which extends
-     * KerberosTicket and sun.security.jgss.krb5.Kbr5AcceptCredential which
+     * to j86.j86.sun.security.jgss.krb5.Krb5InitCredential which extends
+     * KerberosTicket and j86.j86.sun.security.jgss.krb5.Kbr5AcceptCredential which
      * extends KerberosKey.)
      */
     private static void populateCredentials(Set<Object> credentials,
@@ -190,7 +190,7 @@ public class GSSUtil {
 
             if (cred instanceof KerberosTicket) {
                 if (!cred.getClass().getName().equals
-                    ("javax.security.auth.kerberos.KerberosTicket")) {
+                    ("j86.j86.javax.security.auth.kerberos.KerberosTicket")) {
                     KerberosTicket tempTkt = (KerberosTicket) cred;
                     cred = new KerberosTicket(tempTkt.getEncoded(),
                                               tempTkt.getClient(),
@@ -207,7 +207,7 @@ public class GSSUtil {
                 credentials.add(cred);
             } else if (cred instanceof KerberosKey) {
                 if (!cred.getClass().getName().equals
-                    ("javax.security.auth.kerberos.KerberosKey")) {
+                    ("j86.j86.javax.security.auth.kerberos.KerberosKey")) {
                     KerberosKey tempKey = (KerberosKey) cred;
                     cred = new KerberosKey(tempKey.getPrincipal(),
                                            tempKey.getEncoded(),
@@ -234,11 +234,11 @@ public class GSSUtil {
 
         CallbackHandler cb = null;
         if (caller instanceof HttpCaller) {
-            cb = new sun.net.www.protocol.http.spnego.NegotiateCallbackHandler(
+            cb = new j86.j86.j86.j86.sun.net.www.protocol.http.spnego.NegotiateCallbackHandler(
                     ((HttpCaller)caller).info());
         } else {
             String defaultHandler =
-                    java.security.Security.getProperty(DEFAULT_HANDLER);
+                    j86.java.security.Security.getProperty(DEFAULT_HANDLER);
             // get the default callback handler
             if ((defaultHandler != null) && (defaultHandler.length() != 0)) {
                 cb = null;
@@ -263,12 +263,12 @@ public class GSSUtil {
      * application if this were the case.
      *
      * The application indicates this by explicitly setting the system
-     * property javax.security.auth.useSubjectCredsOnly to false.
+     * property j86.javax.security.auth.useSubjectCredsOnly to false.
      */
     public static boolean useSubjectCredsOnly(GSSCaller caller) {
 
         // HTTP/SPNEGO doesn't use the standard JAAS framework. Instead, it
-        // uses the java.net.Authenticator style, therefore always return
+        // uses the j86.java.net.Authenticator style, therefore always return
         // false here.
         if (caller instanceof HttpCaller) {
             return false;
@@ -278,7 +278,7 @@ public class GSSUtil {
          * (when this is unset) has to treated as true.
          */
         String propValue = AccessController.doPrivileged(
-                new GetPropertyAction("javax.security.auth.useSubjectCredsOnly",
+                new GetPropertyAction("j86.javax.security.auth.useSubjectCredsOnly",
                 "true"));
         /*
          * This property has to be explicitly set to "false". Invalid

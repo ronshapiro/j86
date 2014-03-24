@@ -29,16 +29,16 @@
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
 
-package sun.security.krb5.internal;
+package j86.j86.sun.security.krb5.internal;
 
-import sun.security.krb5.Config;
-import sun.security.krb5.Asn1Exception;
-import sun.security.util.*;
-import java.net.InetAddress;
-import java.net.Inet4Address;
-import java.net.Inet6Address;
-import java.net.UnknownHostException;
-import java.io.IOException;
+import j86.sun.security.krb5.Config;
+import j86.sun.security.krb5.Asn1Exception;
+import j86.sun.security.util.*;
+import j86.java.net.InetAddress;
+import j86.java.net.Inet4Address;
+import j86.java.net.Inet6Address;
+import j86.java.net.UnknownHostException;
+import j86.java.io.IOException;
 
 /**
  * Implements the ASN.1 HostAddress type.
@@ -62,7 +62,7 @@ public class HostAddress implements Cloneable {
     byte[] address = null;
 
     private static InetAddress localInetAddress; //caches local inet address
-    private static final boolean DEBUG = sun.security.krb5.internal.Krb5.DEBUG;
+    private static final boolean DEBUG = j86.j86.sun.security.krb5.internal.Krb5.DEBUG;
     private volatile int hashCode = 0;
 
     private HostAddress(int dummy) {}

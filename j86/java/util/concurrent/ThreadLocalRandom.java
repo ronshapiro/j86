@@ -33,27 +33,27 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package java.util.concurrent;
+package j86.j86.java.util.concurrent;
 
-import java.io.ObjectStreamField;
-import java.net.NetworkInterface;
-import java.util.Enumeration;
-import java.util.Random;
-import java.util.Spliterator;
-import java.util.concurrent.atomic.AtomicInteger;
-import java.util.concurrent.atomic.AtomicLong;
-import java.util.function.DoubleConsumer;
-import java.util.function.IntConsumer;
-import java.util.function.LongConsumer;
-import java.util.stream.DoubleStream;
-import java.util.stream.IntStream;
-import java.util.stream.LongStream;
-import java.util.stream.StreamSupport;
+import j86.java.io.ObjectStreamField;
+import j86.java.net.NetworkInterface;
+import j86.java.util.Enumeration;
+import j86.java.util.Random;
+import j86.java.util.Spliterator;
+import j86.j86.j86.java.util.concurrent.atomic.AtomicInteger;
+import j86.j86.j86.java.util.concurrent.atomic.AtomicLong;
+import j86.j86.java.util.function.DoubleConsumer;
+import j86.j86.java.util.function.IntConsumer;
+import j86.j86.java.util.function.LongConsumer;
+import j86.j86.java.util.stream.DoubleStream;
+import j86.j86.java.util.stream.IntStream;
+import j86.j86.java.util.stream.LongStream;
+import j86.j86.java.util.stream.StreamSupport;
 
 /**
  * A random number generator isolated to the current thread.  Like the
- * global {@link java.util.Random} generator used by the {@link
- * java.lang.Math} class, a {@code ThreadLocalRandom} is initialized
+ * global {@link j86.java.util.Random} generator used by the {@link
+ * j86.java.lang.Math} class, a {@code ThreadLocalRandom} is initialized
  * with an internally generated seed that may not otherwise be
  * modified. When applicable, use of {@code ThreadLocalRandom} rather
  * than shared {@code Random} objects in concurrent programs will
@@ -72,18 +72,18 @@ import java.util.stream.StreamSupport;
  * generation methods.
  *
  * <p>Instances of {@code ThreadLocalRandom} are not cryptographically
- * secure.  Consider instead using {@link java.security.SecureRandom}
+ * secure.  Consider instead using {@link j86.java.security.SecureRandom}
  * in security-sensitive applications. Additionally,
  * default-constructed instances do not use a cryptographically random
  * seed unless the {@linkplain System#getProperty system property}
- * {@code java.util.secureRandomSeed} is set to {@code true}.
+ * {@code j86.java.util.secureRandomSeed} is set to {@code true}.
  *
  * @since 1.7
  * @author Doug Lea
  */
 public class ThreadLocalRandom extends Random {
     /*
-     * This class implements the java.util.Random API (and subclasses
+     * This class implements the j86.java.util.Random API (and subclasses
      * Random) using a single static instance that accesses random
      * number state held in class Thread (primarily, field
      * threadLocalRandomSeed). In doing so, it also provides a home
@@ -99,8 +99,8 @@ public class ThreadLocalRandom extends Random {
      * application-level overhead and footprint of most concurrent
      * programs.
      *
-     * Even though this class subclasses java.util.Random, it uses the
-     * same basic algorithm as java.util.SplittableRandom.  (See its
+     * Even though this class subclasses j86.java.util.Random, it uses the
+     * same basic algorithm as j86.java.util.SplittableRandom.  (See its
      * internal documentation for explanations, which are not repeated
      * here.)  Because ThreadLocalRandoms are not splittable
      * though, we use only a single 64bit gamma.
@@ -137,11 +137,11 @@ public class ThreadLocalRandom extends Random {
     private static final AtomicLong seeder = new AtomicLong(initialSeed());
 
     private static long initialSeed() {
-        String pp = java.security.AccessController.doPrivileged(
-                new sun.security.action.GetPropertyAction(
-                        "java.util.secureRandomSeed"));
+        String pp = j86.java.security.AccessController.doPrivileged(
+                new j86.sun.security.action.GetPropertyAction(
+                        "j86.java.util.secureRandomSeed"));
         if (pp != null && pp.equalsIgnoreCase("true")) {
-            byte[] seedBytes = java.security.SecureRandom.getSeed(8);
+            byte[] seedBytes = j86.java.security.SecureRandom.getSeed(8);
             long s = (long)(seedBytes[0]) & 0xffL;
             for (int i = 1; i < 8; ++i)
                 s = (s << 8) | ((long)(seedBytes[i]) & 0xffL);
@@ -1060,12 +1060,12 @@ public class ThreadLocalRandom extends Random {
     /**
      * Saves the {@code ThreadLocalRandom} to a stream (that is, serializes it).
      * @param s the stream
-     * @throws java.io.IOException if an I/O error occurs
+     * @throws j86.java.io.IOException if an I/O error occurs
      */
-    private void writeObject(java.io.ObjectOutputStream s)
-        throws java.io.IOException {
+    private void writeObject(j86.java.io.ObjectOutputStream s)
+        throws j86.java.io.IOException {
 
-        java.io.ObjectOutputStream.PutField fields = s.putFields();
+        j86.java.io.ObjectOutputStream.PutField fields = s.putFields();
         fields.put("rnd", UNSAFE.getLong(Thread.currentThread(), SEED));
         fields.put("initialized", true);
         s.writeFields();
@@ -1080,13 +1080,13 @@ public class ThreadLocalRandom extends Random {
     }
 
     // Unsafe mechanics
-    private static final sun.misc.Unsafe UNSAFE;
+    private static final j86.sun.misc.Unsafe UNSAFE;
     private static final long SEED;
     private static final long PROBE;
     private static final long SECONDARY;
     static {
         try {
-            UNSAFE = sun.misc.Unsafe.getUnsafe();
+            UNSAFE = j86.sun.misc.Unsafe.getUnsafe();
             Class<?> tk = Thread.class;
             SEED = UNSAFE.objectFieldOffset
                 (tk.getDeclaredField("threadLocalRandomSeed"));

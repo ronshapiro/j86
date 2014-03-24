@@ -23,10 +23,10 @@
  * questions.
  */
 
-package com.sun.jndi.toolkit.dir;
+package j86.com.sun.jndi.toolkit.dir;
 
-import javax.naming.*;
-import javax.naming.directory.*;
+import j86.javax.naming.*;
+import j86.j86.javax.naming.directory.*;
 
 /**
   * A class for searching DirContexts

@@ -23,13 +23,13 @@
  * questions.
  */
 
-package javax.swing.plaf;
+package j86.j86.javax.swing.plaf;
 
-import javax.swing.ActionMap;
+import j86.javax.swing.ActionMap;
 
 
 /**
- * A subclass of javax.swing.ActionMap that implements UIResource.
+ * A subclass of j86.javax.swing.ActionMap that implements UIResource.
  * UI classes which provide an ActionMap should use this class.
  *
  * @author Scott Violet

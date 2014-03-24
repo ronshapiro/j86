@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.nio.file;
+package j86.j86.java.nio.file;
 
-import java.nio.file.attribute.BasicFileAttributes;
-import java.io.IOException;
+import j86.j86.j86.java.nio.file.attribute.BasicFileAttributes;
+import j86.java.io.IOException;
 
 /**
  * A visitor of files. An implementation of this interface is provided to the

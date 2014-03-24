@@ -23,17 +23,17 @@
  * questions.
  */
 
-package com.sun.jmx.mbeanserver;
-import java.io.InvalidObjectException;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.lang.reflect.Type;
+package j86.com.sun.jmx.mbeanserver;
+import j86.java.io.InvalidObjectException;
+import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.j86.j86.java.lang.reflect.Type;
 
-import javax.management.Descriptor;
-import javax.management.MBeanException;
-import javax.management.openmbean.OpenDataException;
-import javax.management.openmbean.OpenType;
-import sun.reflect.misc.MethodUtil;
+import j86.javax.management.Descriptor;
+import j86.javax.management.MBeanException;
+import j86.j86.javax.management.openmbean.OpenDataException;
+import j86.j86.javax.management.openmbean.OpenType;
+import j86.j86.sun.reflect.misc.MethodUtil;
 
 final class ConvertingMethod {
     static ConvertingMethod from(Method m) {

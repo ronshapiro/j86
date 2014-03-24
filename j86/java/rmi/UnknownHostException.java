@@ -23,11 +23,11 @@
  * questions.
  */
 
-package java.rmi;
+package j86.java.rmi;
 
 /**
  * An <code>UnknownHostException</code> is thrown if a
- * <code>java.net.UnknownHostException</code> occurs while creating
+ * <code>j86.java.net.UnknownHostException</code> occurs while creating
  * a connection to the remote host for a remote method call.
  *
  * @since   JDK1.1

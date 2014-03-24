@@ -23,18 +23,18 @@
  * questions.
  */
 
-package java.nio.channels;
+package j86.j86.java.nio.channels;
 
-import java.io.*;
-import java.nio.ByteBuffer;
-import java.nio.MappedByteBuffer;
-import java.nio.channels.spi.AbstractInterruptibleChannel;
-import java.nio.file.*;
-import java.nio.file.attribute.FileAttribute;
-import java.nio.file.spi.*;
-import java.util.Set;
-import java.util.HashSet;
-import java.util.Collections;
+import j86.java.io.*;
+import j86.java.nio.ByteBuffer;
+import j86.java.nio.MappedByteBuffer;
+import j86.j86.j86.java.nio.channels.spi.AbstractInterruptibleChannel;
+import j86.j86.java.nio.file.*;
+import j86.j86.j86.java.nio.file.attribute.FileAttribute;
+import j86.j86.j86.java.nio.file.spi.*;
+import j86.java.util.Set;
+import j86.java.util.HashSet;
+import j86.java.util.Collections;
 
 /**
  * A channel for reading, writing, mapping, and manipulating a file.
@@ -104,9 +104,9 @@ import java.util.Collections;
  *
  * <p> A file channel is created by invoking one of the {@link #open open}
  * methods defined by this class. A file channel can also be obtained from an
- * existing {@link java.io.FileInputStream#getChannel FileInputStream}, {@link
- * java.io.FileOutputStream#getChannel FileOutputStream}, or {@link
- * java.io.RandomAccessFile#getChannel RandomAccessFile} object by invoking
+ * existing {@link j86.java.io.FileInputStream#getChannel FileInputStream}, {@link
+ * j86.java.io.FileOutputStream#getChannel FileOutputStream}, or {@link
+ * j86.java.io.RandomAccessFile#getChannel RandomAccessFile} object by invoking
  * that object's <tt>getChannel</tt> method, which returns a file channel that
  * is connected to the same underlying file. Where the file channel is obtained
  * from an existing stream or random access file then the state of the file
@@ -121,20 +121,20 @@ import java.util.Collections;
  * <a name="open-mode"></a> <p> At various points this class specifies that an
  * instance that is "open for reading," "open for writing," or "open for
  * reading and writing" is required.  A channel obtained via the {@link
- * java.io.FileInputStream#getChannel getChannel} method of a {@link
- * java.io.FileInputStream} instance will be open for reading.  A channel
- * obtained via the {@link java.io.FileOutputStream#getChannel getChannel}
- * method of a {@link java.io.FileOutputStream} instance will be open for
+ * j86.java.io.FileInputStream#getChannel getChannel} method of a {@link
+ * j86.java.io.FileInputStream} instance will be open for reading.  A channel
+ * obtained via the {@link j86.java.io.FileOutputStream#getChannel getChannel}
+ * method of a {@link j86.java.io.FileOutputStream} instance will be open for
  * writing.  Finally, a channel obtained via the {@link
- * java.io.RandomAccessFile#getChannel getChannel} method of a {@link
- * java.io.RandomAccessFile} instance will be open for reading if the instance
+ * j86.java.io.RandomAccessFile#getChannel getChannel} method of a {@link
+ * j86.java.io.RandomAccessFile} instance will be open for reading if the instance
  * was created with mode <tt>"r"</tt> and will be open for reading and writing
  * if the instance was created with mode <tt>"rw"</tt>.
  *
  * <a name="append-mode"></a><p> A file channel that is open for writing may be in
  * <i>append mode</i>, for example if it was obtained from a file-output stream
  * that was created by invoking the {@link
- * java.io.FileOutputStream#FileOutputStream(java.io.File,boolean)
+ * j86.java.io.FileOutputStream#FileOutputStream(java.io.File,boolean)
  * FileOutputStream(File,boolean)} constructor and passing <tt>true</tt> for
  * the second parameter.  In this mode each invocation of a relative write
  * operation first advances the position to the end of the file and then writes
@@ -142,9 +142,9 @@ import java.util.Collections;
  * of the data are done in a single atomic operation is system-dependent and
  * therefore unspecified.
  *
- * @see java.io.FileInputStream#getChannel()
- * @see java.io.FileOutputStream#getChannel()
- * @see java.io.RandomAccessFile#getChannel()
+ * @see j86.java.io.FileInputStream#getChannel()
+ * @see j86.java.io.FileOutputStream#getChannel()
+ * @see j86.java.io.RandomAccessFile#getChannel()
  *
  * @author Mark Reinhold
  * @author Mike McCloskey
@@ -785,7 +785,7 @@ public abstract class FileChannel
      *
      * @since 1.4
      *
-     * @see java.nio.channels.FileChannel#map
+     * @see j86.j86.java.nio.channels.FileChannel#map
      */
     public static class MapMode {
 
@@ -833,7 +833,7 @@ public abstract class FileChannel
      * <ul>
      *
      *   <li><p> <i>Read-only:</i> Any attempt to modify the resulting buffer
-     *   will cause a {@link java.nio.ReadOnlyBufferException} to be thrown.
+     *   will cause a {@link j86.java.nio.ReadOnlyBufferException} to be thrown.
      *   ({@link MapMode#READ_ONLY MapMode.READ_ONLY}) </p></li>
      *
      *   <li><p> <i>Read/write:</i> Changes made to the resulting buffer will
@@ -890,7 +890,7 @@ public abstract class FileChannel
      *
      * @param  size
      *         The size of the region to be mapped; must be non-negative and
-     *         no greater than {@link java.lang.Integer#MAX_VALUE}
+     *         no greater than {@link j86.java.lang.Integer#MAX_VALUE}
      *
      * @return  The mapped byte buffer
      *
@@ -909,8 +909,8 @@ public abstract class FileChannel
      * @throws IOException
      *         If some other I/O error occurs
      *
-     * @see java.nio.channels.FileChannel.MapMode
-     * @see java.nio.MappedByteBuffer
+     * @see j86.j86.java.nio.channels.FileChannel.MapMode
+     * @see j86.java.nio.MappedByteBuffer
      */
     public abstract MappedByteBuffer map(MapMode mode,
                                          long position, long size)

@@ -31,16 +31,16 @@
  * The Kerberos network authentication protocol is defined in
  * <a href=http://www.ietf.org/rfc/rfc4120.txt>RFC 4120</a>. The Java
  * platform contains support for the client side of Kerberos via the
- * {@link org.ietf.jgss} package. There might also be
+ * {@link j86.org.ietf.jgss} package. There might also be
  * a login module that implements
- * {@link javax.security.auth.spi.LoginModule LoginModule} to authenticate
+ * {@link j86.j86.javax.security.auth.spi.LoginModule LoginModule} to authenticate
  * Kerberos principals.<p>
  *
  * You can provide the name of your default realm and Key Distribution
  * Center (KDC) host for that realm using the system properties
- * {@code java.security.krb5.realm} and {@code java.security.krb5.kdc}.
+ * {@code j86.java.security.krb5.realm} and {@code java.security.krb5.kdc}.
  * Both properties must be set.
- * Alternatively, the {@code java.security.krb5.conf} system property can
+ * Alternatively, the {@code j86.java.security.krb5.conf} system property can
  * be set to the location of an MIT style {@code krb5.conf} configuration
  * file. If none of these system properties are set, the {@code krb5.conf}
  * file is searched for in an implementation-specific manner. Typically,
@@ -50,4 +50,4 @@
  *
  * @since JDK1.4
  */
-package javax.security.auth.kerberos;
+package j86.j86.javax.security.auth.kerberos;

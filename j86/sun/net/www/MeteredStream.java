@@ -23,13 +23,13 @@
  * questions.
  */
 
-package sun.net.www;
+package j86.j86.sun.net.www;
 
-import java.net.URL;
-import java.util.*;
-import java.io.*;
-import sun.net.ProgressSource;
-import sun.net.www.http.ChunkedInputStream;
+import j86.java.net.URL;
+import j86.java.util.*;
+import j86.java.io.*;
+import j86.sun.net.ProgressSource;
+import j86.j86.j86.sun.net.www.http.ChunkedInputStream;
 
 
 public class MeteredStream extends FilterInputStream {
@@ -113,7 +113,7 @@ public class MeteredStream extends FilterInputStream {
         return true;
     }
 
-    public synchronized int read() throws java.io.IOException {
+    public synchronized int read() throws j86.java.io.IOException {
         if (closed) {
             return -1;
         }
@@ -127,7 +127,7 @@ public class MeteredStream extends FilterInputStream {
     }
 
     public synchronized int read(byte b[], int off, int len)
-                throws java.io.IOException {
+                throws j86.java.io.IOException {
         if (closed) {
             return -1;
         }

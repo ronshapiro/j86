@@ -23,22 +23,22 @@
  * questions.
  */
 
-package javax.swing.plaf.synth;
+package j86.j86.j86.javax.swing.plaf.synth;
 
-import javax.swing.*;
-import javax.swing.plaf.*;
-import javax.swing.plaf.basic.*;
-import javax.swing.text.View;
-import java.awt.Dimension;
-import java.awt.Rectangle;
-import java.awt.Insets;
-import java.awt.Graphics;
-import java.awt.FontMetrics;
-import java.beans.PropertyChangeEvent;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.j86.javax.swing.plaf.basic.*;
+import j86.j86.javax.swing.text.View;
+import j86.java.awt.Dimension;
+import j86.java.awt.Rectangle;
+import j86.java.awt.Insets;
+import j86.java.awt.Graphics;
+import j86.java.awt.FontMetrics;
+import j86.java.beans.PropertyChangeEvent;
 
 /**
  * Provides the Synth L&amp;F UI delegate for
- * {@link javax.swing.JLabel}.
+ * {@link j86.javax.swing.JLabel}.
  *
  * @author Scott Violet
  * @since 1.7

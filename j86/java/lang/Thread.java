@@ -23,23 +23,23 @@
  * questions.
  */
 
-package java.lang;
+package j86.java.lang;
 
-import java.lang.ref.Reference;
-import java.lang.ref.ReferenceQueue;
-import java.lang.ref.WeakReference;
-import java.security.AccessController;
-import java.security.AccessControlContext;
-import java.security.PrivilegedAction;
-import java.util.Map;
-import java.util.HashMap;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentMap;
-import java.util.concurrent.locks.LockSupport;
-import sun.nio.ch.Interruptible;
-import sun.reflect.CallerSensitive;
-import sun.reflect.Reflection;
-import sun.security.util.SecurityConstants;
+import j86.j86.java.lang.ref.Reference;
+import j86.j86.java.lang.ref.ReferenceQueue;
+import j86.j86.java.lang.ref.WeakReference;
+import j86.java.security.AccessController;
+import j86.java.security.AccessControlContext;
+import j86.java.security.PrivilegedAction;
+import j86.java.util.Map;
+import j86.java.util.HashMap;
+import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.j86.java.util.concurrent.ConcurrentMap;
+import j86.j86.j86.java.util.concurrent.locks.LockSupport;
+import j86.j86.j86.sun.nio.ch.Interruptible;
+import j86.sun.reflect.CallerSensitive;
+import j86.sun.reflect.Reflection;
+import j86.sun.security.util.SecurityConstants;
 
 
 /**
@@ -220,9 +220,9 @@ class Thread implements Runnable {
 
     /**
      * The argument supplied to the current call to
-     * java.util.concurrent.locks.LockSupport.park.
-     * Set by (private) java.util.concurrent.locks.LockSupport.setBlocker
-     * Accessed using java.util.concurrent.locks.LockSupport.getBlocker
+     * j86.j86.j86.java.util.concurrent.locks.LockSupport.park.
+     * Set by (private) j86.j86.j86.java.util.concurrent.locks.LockSupport.setBlocker
+     * Accessed using j86.j86.j86.java.util.concurrent.locks.LockSupport.getBlocker
      */
     volatile Object parkBlocker;
 
@@ -233,7 +233,7 @@ class Thread implements Runnable {
     private volatile Interruptible blocker;
     private final Object blockerLock = new Object();
 
-    /* Set the blocker field; invoked via sun.misc.SharedSecrets from java.nio code
+    /* Set the blocker field; invoked via j86.sun.misc.SharedSecrets from j86.java.nio code
      */
     void blockedOn(Interruptible b) {
         synchronized (blockerLock) {
@@ -277,7 +277,7 @@ class Thread implements Runnable {
      * for debugging or testing purposes, where it may help to reproduce
      * bugs due to race conditions. It may also be useful when designing
      * concurrency control constructs such as the ones in the
-     * {@link java.util.concurrent.locks} package.
+     * {@link j86.j86.j86.java.util.concurrent.locks} package.
      */
     public static native void yield();
 
@@ -885,16 +885,16 @@ class Thread implements Runnable {
      * will receive an {@link InterruptedException}.
      *
      * <p> If this thread is blocked in an I/O operation upon an {@link
-     * java.nio.channels.InterruptibleChannel InterruptibleChannel}
+     * j86.j86.java.nio.channels.InterruptibleChannel InterruptibleChannel}
      * then the channel will be closed, the thread's interrupt
      * status will be set, and the thread will receive a {@link
-     * java.nio.channels.ClosedByInterruptException}.
+     * j86.j86.java.nio.channels.ClosedByInterruptException}.
      *
-     * <p> If this thread is blocked in a {@link java.nio.channels.Selector}
+     * <p> If this thread is blocked in a {@link j86.j86.java.nio.channels.Selector}
      * then the thread's interrupt status will be set and it will return
      * immediately from the selection operation, possibly with a non-zero
      * value, just as if the selector's {@link
-     * java.nio.channels.Selector#wakeup wakeup} method were invoked.
+     * j86.j86.java.nio.channels.Selector#wakeup wakeup} method were invoked.
      *
      * <p> If none of the previous conditions hold then this thread's interrupt
      * status will be set. </p>
@@ -1147,7 +1147,7 @@ class Thread implements Runnable {
 
     /**
      * Returns an estimate of the number of active threads in the current
-     * thread's {@linkplain java.lang.ThreadGroup thread group} and its
+     * thread's {@linkplain j86.java.lang.ThreadGroup thread group} and its
      * subgroups. Recursively iterates over all subgroups in the current
      * thread's thread group.
      *
@@ -1168,7 +1168,7 @@ class Thread implements Runnable {
     /**
      * Copies into the specified array every active thread in the current
      * thread's thread group and its subgroups. This method simply
-     * invokes the {@link java.lang.ThreadGroup#enumerate(Thread[])}
+     * invokes the {@link j86.java.lang.ThreadGroup#enumerate(Thread[])}
      * method of the current thread's thread group.
      *
      * <p> An application might use the {@linkplain #activeCount activeCount}
@@ -1188,7 +1188,7 @@ class Thread implements Runnable {
      * @return  the number of threads put into the array
      *
      * @throws  SecurityException
-     *          if {@link java.lang.ThreadGroup#checkAccess} determines that
+     *          if {@link j86.java.lang.ThreadGroup#checkAccess} determines that
      *          the current thread cannot access its thread group
      */
     public static int enumerate(Thread tarray[]) {
@@ -1412,7 +1412,7 @@ class Thread implements Runnable {
      * <p>If a security manager is present, and the invoker's class loader is not
      * {@code null} and is not the same as or an ancestor of the context class
      * loader, then this method invokes the security manager's {@link
-     * SecurityManager#checkPermission(java.security.Permission) checkPermission}
+     * SecurityManager#checkPermission(j86.java.security.Permission) checkPermission}
      * method with a {@link RuntimePermission RuntimePermission}{@code
      * ("getClassLoader")} permission to verify that retrieval of the context
      * class loader is permitted.
@@ -1446,7 +1446,7 @@ class Thread implements Runnable {
      * when loading classes and resources.
      *
      * <p>If a security manager is present, its {@link
-     * SecurityManager#checkPermission(java.security.Permission) checkPermission}
+     * SecurityManager#checkPermission(j86.java.security.Permission) checkPermission}
      * method is invoked with a {@link RuntimePermission RuntimePermission}{@code
      * ("setContextClassLoader")} permission to see if setting the context
      * ClassLoader is permitted.
@@ -1806,7 +1806,7 @@ class Thread implements Runnable {
      */
     public State getState() {
         // get current thread state
-        return sun.misc.VM.toThreadState(threadStatus);
+        return j86.sun.misc.VM.toThreadState(threadStatus);
     }
 
     // Added in JSR-166
@@ -2015,21 +2015,21 @@ class Thread implements Runnable {
 
 
     // The following three initially uninitialized fields are exclusively
-    // managed by class java.util.concurrent.ThreadLocalRandom. These
+    // managed by class j86.j86.java.util.concurrent.ThreadLocalRandom. These
     // fields are used to build the high-performance PRNGs in the
     // concurrent code, and we can not risk accidental false sharing.
     // Hence, the fields are isolated with @Contended.
 
     /** The current seed for a ThreadLocalRandom */
-    @sun.misc.Contended("tlr")
+    @j86.sun.misc.Contended("tlr")
     long threadLocalRandomSeed;
 
     /** Probe hash value; nonzero if threadLocalRandomSeed initialized */
-    @sun.misc.Contended("tlr")
+    @j86.sun.misc.Contended("tlr")
     int threadLocalRandomProbe;
 
     /** Secondary seed isolated from public ThreadLocalRandom sequence */
-    @sun.misc.Contended("tlr")
+    @j86.sun.misc.Contended("tlr")
     int threadLocalRandomSecondarySeed;
 
     /* Some private helper methods */

@@ -56,13 +56,13 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-package jdk.internal.org.objectweb.asm.tree.analysis;
+package j86.j86.j86.jdk.internal.org.objectweb.asm.tree.analysis;
 
-import java.util.ArrayList;
-import java.util.List;
+import j86.java.util.ArrayList;
+import j86.java.util.List;
 
-import jdk.internal.org.objectweb.asm.tree.JumpInsnNode;
-import jdk.internal.org.objectweb.asm.tree.LabelNode;
+import j86.j86.jdk.internal.org.objectweb.asm.tree.JumpInsnNode;
+import j86.j86.jdk.internal.org.objectweb.asm.tree.LabelNode;
 
 /**
  * A method subroutine (corresponds to a JSR instruction).

@@ -23,13 +23,13 @@
  * questions.
  */
 
-package javax.management;
+package j86.javax.management;
 
-import com.sun.jmx.mbeanserver.Introspector;
-import java.lang.annotation.Annotation;
-import java.lang.reflect.Constructor;
-import java.util.Arrays;
-import java.util.Objects;
+import j86.com.sun.jmx.mbeanserver.Introspector;
+import j86.j86.java.lang.annotation.Annotation;
+import j86.j86.j86.java.lang.reflect.Constructor;
+import j86.java.util.Arrays;
+import j86.java.util.Objects;
 
 /**
  * Describes a constructor exposed by an MBean.  Instances of this
@@ -62,7 +62,7 @@ public class MBeanConstructorInfo extends MBeanFeatureInfo implements Cloneable 
      * meta-annotation.
      *
      * @param description A human readable description of the operation.
-     * @param constructor The <CODE>java.lang.reflect.Constructor</CODE>
+     * @param constructor The <CODE>j86.j86.j86.java.lang.reflect.Constructor</CODE>
      * object describing the MBean constructor.
      */
     public MBeanConstructorInfo(String description, Constructor<?> constructor) {

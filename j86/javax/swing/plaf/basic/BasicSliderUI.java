@@ -23,19 +23,19 @@
  * questions.
  */
 
-package javax.swing.plaf.basic;
+package j86.j86.j86.javax.swing.plaf.basic;
 
-import java.awt.event.*;
-import java.awt.*;
-import java.beans.*;
-import java.util.Dictionary;
-import java.util.Enumeration;
+import j86.j86.java.awt.event.*;
+import j86.java.awt.*;
+import j86.java.beans.*;
+import j86.java.util.Dictionary;
+import j86.java.util.Enumeration;
 
-import javax.swing.*;
-import javax.swing.event.*;
-import javax.swing.plaf.*;
-import sun.swing.DefaultLookup;
-import sun.swing.UIAction;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.event.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.sun.swing.DefaultLookup;
+import j86.sun.swing.UIAction;
 
 
 /**
@@ -314,7 +314,7 @@ public class BasicSliderUI extends SliderUI{
      *
      * @throws NullPointerException {@inheritDoc}
      * @throws IllegalArgumentException {@inheritDoc}
-     * @see javax.swing.JComponent#getBaseline(int, int)
+     * @see j86.javax.swing.JComponent#getBaseline(int, int)
      * @since 1.6
      */
     public int getBaseline(JComponent c, int width, int height) {
@@ -373,7 +373,7 @@ public class BasicSliderUI extends SliderUI{
      * changes as the size changes.
      *
      * @throws NullPointerException {@inheritDoc}
-     * @see javax.swing.JComponent#getBaseline(int, int)
+     * @see j86.javax.swing.JComponent#getBaseline(int, int)
      * @since 1.6
      */
     public Component.BaselineResizeBehavior getBaselineResizeBehavior(

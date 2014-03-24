@@ -20,7 +20,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.sun.org.apache.xml.internal.security.utils.resolver;
+package j86.j86.j86.com.sun.org.apache.xml.internal.security.utils.resolver;
 
 import org.w3c.dom.Attr;
 

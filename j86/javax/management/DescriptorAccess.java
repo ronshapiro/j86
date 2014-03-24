@@ -28,7 +28,7 @@
  * Copyright IBM Corp. 1999-2000.  All rights reserved.
  */
 
-package javax.management;
+package j86.javax.management;
 
 /**
  * This interface is used to gain access to descriptors of the Descriptor class

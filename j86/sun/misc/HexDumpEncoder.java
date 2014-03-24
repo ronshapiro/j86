@@ -24,10 +24,10 @@
  */
 
 
-package sun.misc;
-import java.io.PrintStream;
-import java.io.OutputStream;
-import java.io.IOException;
+package j86.sun.misc;
+import j86.java.io.PrintStream;
+import j86.java.io.OutputStream;
+import j86.java.io.IOException;
 
 /**
  * This class encodes a buffer into the classic: "Hexadecimal Dump" format of

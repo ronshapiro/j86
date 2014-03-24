@@ -22,10 +22,10 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.misc;
+package j86.sun.misc;
 
-import java.security.PermissionCollection;
-import java.security.ProtectionDomain;
+import j86.java.security.PermissionCollection;
+import j86.java.security.ProtectionDomain;
 
 public interface JavaSecurityProtectionDomainAccess {
     interface ProtectionDomainCache {

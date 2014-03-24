@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.net.www.protocol.http;
+package j86.j86.j86.sun.net.www.protocol.http;
 
-import java.net.URL;
-import java.net.PasswordAuthentication;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Method;
-import sun.util.logging.PlatformLogger;
+import j86.java.net.URL;
+import j86.java.net.PasswordAuthentication;
+import j86.j86.j86.java.lang.reflect.Constructor;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.j86.sun.util.logging.PlatformLogger;
 
 /**
  * Proxy class for loading NTLMAuthentication, so as to remove static
@@ -37,7 +37,7 @@ import sun.util.logging.PlatformLogger;
 class NTLMAuthenticationProxy {
     private static Method supportsTA;
     private static Method isTrustedSite;
-    private static final String clazzStr = "sun.net.www.protocol.http.ntlm.NTLMAuthentication";
+    private static final String clazzStr = "j86.j86.j86.j86.sun.net.www.protocol.http.ntlm.NTLMAuthentication";
     private static final String supportsTAStr = "supportsTransparentAuth";
     private static final String isTrustedSiteStr = "isTrustedSite";
 
@@ -127,7 +127,7 @@ class NTLMAuthenticationProxy {
                                             int.class,
                                             PasswordAuthentication.class);
                 supportsTA = cl.getDeclaredMethod(supportsTAStr);
-                isTrustedSite = cl.getDeclaredMethod(isTrustedSiteStr, java.net.URL.class);
+                isTrustedSite = cl.getDeclaredMethod(isTrustedSiteStr, j86.java.net.URL.class);
                 return new NTLMAuthenticationProxy(threeArg,
                                                    fiveArg);
             }

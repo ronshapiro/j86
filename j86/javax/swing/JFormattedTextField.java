@@ -22,18 +22,18 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing;
+package j86.javax.swing;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.awt.im.InputContext;
-import java.io.*;
-import java.text.*;
-import java.util.*;
-import javax.swing.UIManager;
-import javax.swing.event.*;
-import javax.swing.plaf.UIResource;
-import javax.swing.text.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.j86.java.awt.im.InputContext;
+import j86.java.io.*;
+import j86.java.text.*;
+import j86.java.util.*;
+import j86.javax.swing.UIManager;
+import j86.j86.javax.swing.event.*;
+import j86.j86.javax.swing.plaf.UIResource;
+import j86.j86.javax.swing.text.*;
 
 /**
  * <code>JFormattedTextField</code> extends <code>JTextField</code> adding
@@ -172,8 +172,8 @@ import javax.swing.text.*;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @since 1.4
  */
@@ -298,7 +298,7 @@ public class JFormattedTextField extends JTextField {
      *
      * @param format Format used to look up an AbstractFormatter
      */
-    public JFormattedTextField(java.text.Format format) {
+    public JFormattedTextField(j86.java.text.Format format) {
         this();
         setFormatterFactory(getDefaultFormatterFactory(format));
     }

@@ -22,9 +22,9 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text.html;
+package j86.j86.j86.javax.swing.text.html;
 
-import java.io.*;
+import j86.java.io.*;
 
 /**
  * A CSS parser. This works by way of a delegate that implements the

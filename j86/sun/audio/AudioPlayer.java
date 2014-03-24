@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.audio;
+package j86.sun.audio;
 
-import java.io.InputStream;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
+import j86.java.io.InputStream;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
 
 
 /**

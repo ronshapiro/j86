@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.security.jca;
+package j86.sun.security.jca;
 
-import java.io.File;
-import java.lang.reflect.*;
+import j86.java.io.File;
+import j86.j86.j86.java.lang.reflect.*;
 
-import java.security.*;
+import j86.java.security.*;
 
-import sun.security.util.PropertyExpander;
+import j86.sun.security.util.PropertyExpander;
 
 /**
  * Class representing a configured provider. Encapsulates configuration
@@ -42,12 +42,12 @@ import sun.security.util.PropertyExpander;
  */
 final class ProviderConfig {
 
-    private final static sun.security.util.Debug debug =
-        sun.security.util.Debug.getInstance("jca", "ProviderConfig");
+    private final static j86.sun.security.util.Debug debug =
+        j86.sun.security.util.Debug.getInstance("jca", "ProviderConfig");
 
     // classname of the SunPKCS11-Solaris provider
     private static final String P11_SOL_NAME =
-        "sun.security.pkcs11.SunPKCS11";
+        "j86.j86.sun.security.pkcs11.SunPKCS11";
 
     // config file argument of the SunPKCS11-Solaris provider
     private static final String P11_SOL_ARG  =
@@ -107,7 +107,7 @@ final class ProviderConfig {
                     return Boolean.FALSE;
                 }
                 if ("false".equalsIgnoreCase(System.getProperty
-                        ("sun.security.pkcs11.enable-solaris"))) {
+                        ("j86.j86.sun.security.pkcs11.enable-solaris"))) {
                     return Boolean.FALSE;
                 }
                 return Boolean.TRUE;

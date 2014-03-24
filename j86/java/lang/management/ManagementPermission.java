@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.lang.management;
+package j86.j86.java.lang.management;
 
 /**
  * The permission which the SecurityManager will check when code
@@ -77,15 +77,15 @@ package java.lang.management;
  * @author  Mandy Chung
  * @since   1.5
  *
- * @see java.security.BasicPermission
- * @see java.security.Permission
- * @see java.security.Permissions
- * @see java.security.PermissionCollection
- * @see java.lang.SecurityManager
+ * @see j86.java.security.BasicPermission
+ * @see j86.java.security.Permission
+ * @see j86.java.security.Permissions
+ * @see j86.java.security.PermissionCollection
+ * @see j86.java.lang.SecurityManager
  *
  */
 
-public final class ManagementPermission extends java.security.BasicPermission {
+public final class ManagementPermission extends j86.java.security.BasicPermission {
     private static final long serialVersionUID = 1897496590799378737L;
 
     /**

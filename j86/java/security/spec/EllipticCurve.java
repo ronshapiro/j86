@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.security.spec;
+package j86.j86.java.security.spec;
 
-import java.math.BigInteger;
-import java.util.Arrays;
+import j86.java.math.BigInteger;
+import j86.java.util.Arrays;
 
 /**
  * This immutable class holds the necessary values needed to represent

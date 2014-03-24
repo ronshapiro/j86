@@ -26,12 +26,12 @@
 /*
  */
 
-package sun.nio.cs;
+package j86.j86.j86.sun.nio.cs;
 
-import java.io.*;
-import java.nio.*;
-import java.nio.channels.*;
-import java.nio.charset.*;
+import j86.java.io.*;
+import j86.java.nio.*;
+import j86.j86.java.nio.channels.*;
+import j86.j86.java.nio.charset.*;
 
 public class StreamEncoder extends Writer
 {
@@ -45,7 +45,7 @@ public class StreamEncoder extends Writer
             throw new IOException("Stream closed");
     }
 
-    // Factories for java.io.OutputStreamWriter
+    // Factories for j86.java.io.OutputStreamWriter
     public static StreamEncoder forOutputStreamWriter(OutputStream out,
                                                       Object lock,
                                                       String charsetName)
@@ -76,7 +76,7 @@ public class StreamEncoder extends Writer
     }
 
 
-    // Factory for java.nio.channels.Channels.newWriter
+    // Factory for j86.j86.java.nio.channels.Channels.newWriter
 
     public static StreamEncoder forEncoder(WritableByteChannel ch,
                                            CharsetEncoder enc,

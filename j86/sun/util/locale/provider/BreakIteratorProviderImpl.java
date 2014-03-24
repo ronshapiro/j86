@@ -23,17 +23,17 @@
  * questions.
  */
 
-package sun.util.locale.provider;
+package j86.j86.j86.sun.util.locale.provider;
 
-import java.io.IOException;
-import java.text.BreakIterator;
-import java.text.spi.BreakIteratorProvider;
-import java.util.Locale;
-import java.util.MissingResourceException;
-import java.util.Set;
+import j86.java.io.IOException;
+import j86.java.text.BreakIterator;
+import j86.j86.java.text.spi.BreakIteratorProvider;
+import j86.java.util.Locale;
+import j86.java.util.MissingResourceException;
+import j86.java.util.Set;
 
 /**
- * Concrete implementation of the  {@link java.text.spi.BreakIteratorProvider
+ * Concrete implementation of the  {@link j86.j86.java.text.spi.BreakIteratorProvider
  * BreakIteratorProvider} class for the JRE LocaleProviderAdapter.
  *
  * @author Naoto Sato
@@ -76,9 +76,9 @@ public class BreakIteratorProviderImpl extends BreakIteratorProvider
      * @exception NullPointerException if <code>locale</code> is null
      * @exception IllegalArgumentException if <code>locale</code> isn't
      *     one of the locales returned from
-     *     {@link java.util.spi.LocaleServiceProvider#getAvailableLocales()
+     *     {@link j86.j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
      *     getAvailableLocales()}.
-     * @see java.text.BreakIterator#getWordInstance(java.util.Locale)
+     * @see j86.java.text.BreakIterator#getWordInstance(j86.java.util.Locale)
      */
     @Override
     public BreakIterator getWordInstance(Locale locale) {
@@ -97,9 +97,9 @@ public class BreakIteratorProviderImpl extends BreakIteratorProvider
      * @exception NullPointerException if <code>locale</code> is null
      * @exception IllegalArgumentException if <code>locale</code> isn't
      *     one of the locales returned from
-     *     {@link java.util.spi.LocaleServiceProvider#getAvailableLocales()
+     *     {@link j86.j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
      *     getAvailableLocales()}.
-     * @see java.text.BreakIterator#getLineInstance(java.util.Locale)
+     * @see j86.java.text.BreakIterator#getLineInstance(j86.java.util.Locale)
      */
     @Override
     public BreakIterator getLineInstance(Locale locale) {
@@ -118,9 +118,9 @@ public class BreakIteratorProviderImpl extends BreakIteratorProvider
      * @exception NullPointerException if <code>locale</code> is null
      * @exception IllegalArgumentException if <code>locale</code> isn't
      *     one of the locales returned from
-     *     {@link java.util.spi.LocaleServiceProvider#getAvailableLocales()
+     *     {@link j86.j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
      *     getAvailableLocales()}.
-     * @see java.text.BreakIterator#getCharacterInstance(java.util.Locale)
+     * @see j86.java.text.BreakIterator#getCharacterInstance(j86.java.util.Locale)
      */
     @Override
     public BreakIterator getCharacterInstance(Locale locale) {
@@ -139,9 +139,9 @@ public class BreakIteratorProviderImpl extends BreakIteratorProvider
      * @exception NullPointerException if <code>locale</code> is null
      * @exception IllegalArgumentException if <code>locale</code> isn't
      *     one of the locales returned from
-     *     {@link java.util.spi.LocaleServiceProvider#getAvailableLocales()
+     *     {@link j86.j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
      *     getAvailableLocales()}.
-     * @see java.text.BreakIterator#getSentenceInstance(java.util.Locale)
+     * @see j86.java.text.BreakIterator#getSentenceInstance(j86.java.util.Locale)
      */
     @Override
     public BreakIterator getSentenceInstance(Locale locale) {

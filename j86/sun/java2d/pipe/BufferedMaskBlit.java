@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.java2d.pipe;
+package j86.j86.sun.java2d.pipe;
 
-import java.awt.AlphaComposite;
-import java.awt.Composite;
-import sun.java2d.SurfaceData;
-import sun.java2d.loops.Blit;
-import sun.java2d.loops.CompositeType;
-import sun.java2d.loops.MaskBlit;
-import sun.java2d.loops.SurfaceType;
-import static sun.java2d.pipe.BufferedOpCodes.*;
+import j86.java.awt.AlphaComposite;
+import j86.java.awt.Composite;
+import j86.sun.java2d.SurfaceData;
+import j86.j86.sun.java2d.loops.Blit;
+import j86.j86.sun.java2d.loops.CompositeType;
+import j86.j86.sun.java2d.loops.MaskBlit;
+import j86.j86.sun.java2d.loops.SurfaceType;
+import static j86.j86.sun.java2d.pipe.BufferedOpCodes.*;
 
 /**
  * The MaskBlit operation is expressed as:

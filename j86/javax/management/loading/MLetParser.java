@@ -23,22 +23,22 @@
  * questions.
  */
 
-package javax.management.loading;
+package j86.j86.javax.management.loading;
 
-import static com.sun.jmx.defaults.JmxProperties.MLET_LOGGER;
+import static j86.com.sun.jmx.defaults.JmxProperties.MLET_LOGGER;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.Reader;
-import java.net.URL;
-import java.net.URLConnection;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.logging.Level;
+import j86.java.io.BufferedReader;
+import j86.java.io.File;
+import j86.java.io.IOException;
+import j86.java.io.InputStreamReader;
+import j86.java.io.Reader;
+import j86.java.net.URL;
+import j86.java.net.URLConnection;
+import j86.java.util.ArrayList;
+import j86.java.util.HashMap;
+import j86.java.util.List;
+import j86.java.util.Map;
+import j86.j86.java.util.logging.Level;
 
 /**
  * This class is used for parsing URLs.

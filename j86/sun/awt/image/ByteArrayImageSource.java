@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.awt.image;
+package j86.j86.j86.sun.awt.image;
 
-import java.io.InputStream;
-import java.io.ByteArrayInputStream;
-import java.io.BufferedInputStream;
+import j86.java.io.InputStream;
+import j86.java.io.ByteArrayInputStream;
+import j86.java.io.BufferedInputStream;
 
 public class ByteArrayImageSource extends InputStreamImageSource {
     byte[] imagedata;

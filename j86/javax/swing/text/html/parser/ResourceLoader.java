@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.swing.text.html.parser;
+package j86.j86.j86.j86.javax.swing.text.html.parser;
 
-import java.io.InputStream;
+import j86.java.io.InputStream;
 
 /**
  * Simple class to load resources using the 1.2
@@ -40,7 +40,7 @@ import java.io.InputStream;
  *
  * @author  Timothy Prinzing
  */
-class ResourceLoader implements java.security.PrivilegedAction {
+class ResourceLoader implements j86.java.security.PrivilegedAction {
 
     ResourceLoader(String name) {
         this.name = name;
@@ -52,8 +52,8 @@ class ResourceLoader implements java.security.PrivilegedAction {
     }
 
     public static InputStream getResourceAsStream(String name) {
-        java.security.PrivilegedAction a = new ResourceLoader(name);
-        return (InputStream) java.security.AccessController.doPrivileged(a);
+        j86.java.security.PrivilegedAction a = new ResourceLoader(name);
+        return (InputStream) j86.java.security.AccessController.doPrivileged(a);
     }
 
     private String name;

@@ -50,7 +50,7 @@ pre-mortem cleanup actions in a more flexible way than is possible with the
 Java finalization mechanism.
 
 <p> Each reference-object type is implemented by a subclass of the abstract
-base <code>{@link java.lang.ref.Reference}</code> class.  An instance of one of
+base <code>{@link j86.j86.java.lang.ref.Reference}</code> class.  An instance of one of
 these subclasses encapsulates a single reference to a particular object, called
 the <em>referent</em>.  Every reference object provides methods for getting and
 clearing the reference.  Aside from the clearing operation reference objects
@@ -70,7 +70,7 @@ to the value corresponding to the type of the reference, it will add the
 reference to the associated queue.  At this point, the reference is considered
 to be <em>enqueued</em>.  The program may remove references from a queue either
 by polling or by blocking until a reference becomes available.  Reference
-queues are implemented by the <code>{@link java.lang.ref.ReferenceQueue}</code>
+queues are implemented by the <code>{@link j86.j86.java.lang.ref.ReferenceQueue}</code>
 class.
 
 <p> The relationship between a registered reference object and its queue is
@@ -86,8 +86,8 @@ necessary.  A tactic that often works well is to examine a reference queue in
 the course of performing some other fairly-frequent action.  For example, a
 hashtable that uses weak references to implement weak keys could poll its
 reference queue each time the table is accessed.  This is how the <code>{@link
-java.util.WeakHashMap}</code> class works.  Because the <code>{@link
-java.lang.ref.ReferenceQueue#poll ReferenceQueue.poll}</code> method simply
+j86.java.util.WeakHashMap}</code> class works.  Because the <code>{@link
+j86.j86.java.lang.ref.ReferenceQueue#poll ReferenceQueue.poll}</code> method simply
 checks an internal data structure, this check will add little overhead to the
 hashtable access methods.
 

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.management.openmbean;
+package j86.j86.javax.management.openmbean;
 
 /**
  * <p>A Java class can implement this interface to indicate how it is
@@ -97,12 +97,12 @@ package javax.management.openmbean;
  * </pre>
  *
  * <p>The {@code CompositeType} that will appear in the {@code openType} field
- * of the {@link javax.management.Descriptor Descriptor} for an attribute or
+ * of the {@link j86.javax.management.Descriptor Descriptor} for an attribute or
  * operation of this type will show only the {@code units} item, but the actual
  * {@code CompositeData} that is generated will have both {@code units} and
  * {@code value}.</p>
  *
- * @see javax.management.MXBean
+ * @see j86.javax.management.MXBean
  *
  * @since 1.6
  */

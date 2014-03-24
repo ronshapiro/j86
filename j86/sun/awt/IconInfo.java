@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.awt;
-import java.awt.*;
-import java.awt.color.*;
-import java.awt.image.*;
-import sun.awt.image.ToolkitImage;
-import sun.awt.image.ImageRepresentation;
-import java.util.Arrays;
+package j86.sun.awt;
+import j86.java.awt.*;
+import j86.j86.java.awt.color.*;
+import j86.j86.j86.java.awt.image.*;
+import j86.j86.j86.sun.awt.image.ToolkitImage;
+import j86.j86.j86.sun.awt.image.ImageRepresentation;
+import j86.java.util.Arrays;
 
 public class IconInfo {
     /**

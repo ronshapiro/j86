@@ -23,16 +23,16 @@
  * questions.
  */
 
-package javax.crypto;
+package j86.javax.crypto;
 
-import java.util.*;
+import j86.java.util.*;
 
-import java.security.*;
-import java.security.Provider.Service;
-import java.security.spec.*;
+import j86.java.security.*;
+import j86.java.security.Provider.Service;
+import j86.j86.java.security.spec.*;
 
-import sun.security.jca.*;
-import sun.security.jca.GetInstance.Instance;
+import j86.sun.security.jca.*;
+import j86.sun.security.jca.GetInstance.Instance;
 
 /**
  * This class provides the functionality of a secret (symmetric) key generator.
@@ -53,7 +53,7 @@ import sun.security.jca.GetInstance.Instance;
  * <p>All key generators share the concepts of a <i>keysize</i> and a
  * <i>source of randomness</i>.
  * There is an
- * {@link #init(int, java.security.SecureRandom) init}
+ * {@link #init(int, j86.java.security.SecureRandom) init}
  * method in this KeyGenerator class that takes these two universally
  * shared types of arguments. There is also one that takes just a
  * <code>keysize</code> argument, and uses the SecureRandom implementation
@@ -70,7 +70,7 @@ import sun.security.jca.GetInstance.Instance;
  * <li><b>Algorithm-Specific Initialization</b>
  * <p>For situations where a set of algorithm-specific parameters already
  * exists, there are two
- * {@link #init(java.security.spec.AlgorithmParameterSpec) init}
+ * {@link #init(j86.j86.java.security.spec.AlgorithmParameterSpec) init}
  * methods that have an <code>AlgorithmParameterSpec</code>
  * argument. One also has a <code>SecureRandom</code> argument, while the
  * other uses the SecureRandom implementation
@@ -108,7 +108,7 @@ import sun.security.jca.GetInstance.Instance;
 
 public class KeyGenerator {
 
-    // see java.security.KeyPairGenerator for failover notes
+    // see j86.java.security.KeyPairGenerator for failover notes
 
     private final static int I_NONE   = 1;
     private final static int I_RANDOM = 2;
@@ -200,7 +200,7 @@ public class KeyGenerator {
      *          KeyGeneratorSpi implementation for the
      *          specified algorithm.
      *
-     * @see java.security.Provider
+     * @see j86.java.security.Provider
      */
     public static final KeyGenerator getInstance(String algorithm)
             throws NoSuchAlgorithmException {
@@ -241,7 +241,7 @@ public class KeyGenerator {
      * @exception IllegalArgumentException if the <code>provider</code>
      *          is null or empty.
      *
-     * @see java.security.Provider
+     * @see j86.java.security.Provider
      */
     public static final KeyGenerator getInstance(String algorithm,
             String provider) throws NoSuchAlgorithmException,
@@ -280,7 +280,7 @@ public class KeyGenerator {
      * @exception IllegalArgumentException if the <code>provider</code>
      *          is null.
      *
-     * @see java.security.Provider
+     * @see j86.java.security.Provider
      */
     public static final KeyGenerator getInstance(String algorithm,
             Provider provider) throws NoSuchAlgorithmException {
@@ -397,7 +397,7 @@ public class KeyGenerator {
      *
      * <p> If this key generator requires any random bytes, it will get them
      * using the
-     * {@link java.security.SecureRandom}
+     * {@link j86.java.security.SecureRandom}
      * implementation of the highest-priority installed
      * provider as the source of randomness.
      * (If none of the installed providers supply an implementation of
@@ -462,7 +462,7 @@ public class KeyGenerator {
      *
      * <p> If this key generator requires any random bytes, it will get them
      * using the
-     * {@link java.security.SecureRandom}
+     * {@link j86.java.security.SecureRandom}
      * implementation of the highest-priority installed
      * provider as the source of randomness.
      * (If none of the installed providers supply an implementation of

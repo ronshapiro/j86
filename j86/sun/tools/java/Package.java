@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.tools.java;
+package j86.sun.tools.java;
 
-import java.util.Enumeration;
-import java.io.File;
-import java.io.IOException;
+import j86.java.util.Enumeration;
+import j86.java.io.File;
+import j86.java.io.IOException;
 
 /**
  * This class is used to represent the classes in a package.

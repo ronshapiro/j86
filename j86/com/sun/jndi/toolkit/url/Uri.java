@@ -23,10 +23,10 @@
  * questions.
  */
 
-package com.sun.jndi.toolkit.url;
+package j86.com.sun.jndi.toolkit.url;
 
 
-import java.net.MalformedURLException;
+import j86.java.net.MalformedURLException;
 
 
 /**
@@ -34,7 +34,7 @@ import java.net.MalformedURLException;
  * (URI) as defined by RFC 2396 and updated by RFC 2373 and RFC 2732.
  * The most commonly used form of URI is the Uniform Resource Locator (URL).
  *
- * <p> The java.net.URL class cannot be used to parse URIs since it
+ * <p> The j86.java.net.URL class cannot be used to parse URIs since it
  * requires the installation of URL stream handlers that may not be
  * available.  The hack of getting around this by temporarily
  * replacing the scheme part of a URI is not appropriate here: JNDI
@@ -43,7 +43,7 @@ import java.net.MalformedURLException;
  * of the URL class.
  *
  * <p> It may be appropriate to drop this code in favor of the
- * java.net.URI class.  The changes would need to be written so as to
+ * j86.java.net.URI class.  The changes would need to be written so as to
  * still run on pre-1.4 platforms not containing that class.
  *
  * <p> The format of an absolute URI (see the RFCs mentioned above) is:
@@ -149,7 +149,7 @@ public class Uri {
      * Returns the host from the URI's authority part, or null
      * if no host is provided.  If the host is an IPv6 literal, the
      * delimiting brackets are part of the returned value (see
-     * {@link java.net.URI#getHost}).
+     * {@link j86.java.net.URI#getHost}).
      */
     public String getHost() {
         return host;

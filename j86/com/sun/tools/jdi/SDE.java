@@ -23,12 +23,12 @@
  * questions.
  */
 
-package com.sun.tools.jdi;
+package j86.com.sun.tools.jdi;
 
-import com.sun.jdi.*;
+import j86.com.sun.jdi.*;
 
-import java.util.*;
-import java.io.File;
+import j86.java.util.*;
+import j86.java.io.File;
 
 class SDE {
     private static final int INIT_SIZE_FILE = 3;

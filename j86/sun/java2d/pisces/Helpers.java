@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.java2d.pisces;
+package j86.j86.sun.java2d.pisces;
 
-import java.util.Arrays;
-import static java.lang.Math.PI;
-import static java.lang.Math.cos;
-import static java.lang.Math.sqrt;
-import static java.lang.Math.cbrt;
-import static java.lang.Math.acos;
+import j86.java.util.Arrays;
+import static j86.java.lang.Math.PI;
+import static j86.java.lang.Math.cos;
+import static j86.java.lang.Math.sqrt;
+import static j86.java.lang.Math.cbrt;
+import static j86.java.lang.Math.acos;
 
 
 final class Helpers {
@@ -234,7 +234,7 @@ final class Helpers {
         }
     }
 
-    // Most of these are copied from classes in java.awt.geom because we need
+    // Most of these are copied from classes in j86.j86.java.awt.geom because we need
     // float versions of these functions, and Line2D, CubicCurve2D,
     // QuadCurve2D don't provide them.
     /**

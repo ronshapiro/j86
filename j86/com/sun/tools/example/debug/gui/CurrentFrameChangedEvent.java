@@ -32,11 +32,11 @@
  */
 
 
-package com.sun.tools.example.debug.gui;
+package j86.com.sun.tools.example.debug.gui;
 
-import com.sun.jdi.*;
-import com.sun.tools.example.debug.bdi.*;
-import java.util.EventObject;
+import j86.com.sun.jdi.*;
+import j86.com.sun.tools.example.debug.bdi.*;
+import j86.java.util.EventObject;
 
 public class CurrentFrameChangedEvent extends EventObject {
 

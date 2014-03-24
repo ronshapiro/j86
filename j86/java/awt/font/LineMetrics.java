@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.awt.font;
+package j86.j86.java.awt.font;
 
 /**
 * The <code>LineMetrics</code> class allows access to the
@@ -34,7 +34,7 @@ package java.awt.font;
 * <p>
 * Fonts can have different metrics for different ranges of
 * characters.  The <code>getLineMetrics</code> methods of
-* {@link java.awt.Font Font} take some text as an argument
+* {@link j86.java.awt.Font Font} take some text as an argument
 * and return a <code>LineMetrics</code> object describing the
 * metrics of the initial number of characters in that text, as
 * returned by {@link #getNumChars}.
@@ -94,9 +94,9 @@ public abstract class LineMetrics {
     /**
      * Returns the baseline index of the text.
      * The index is one of
-     * {@link java.awt.Font#ROMAN_BASELINE ROMAN_BASELINE},
-     * {@link java.awt.Font#CENTER_BASELINE CENTER_BASELINE},
-     * {@link java.awt.Font#HANGING_BASELINE HANGING_BASELINE}.
+     * {@link j86.java.awt.Font#ROMAN_BASELINE ROMAN_BASELINE},
+     * {@link j86.java.awt.Font#CENTER_BASELINE CENTER_BASELINE},
+     * {@link j86.java.awt.Font#HANGING_BASELINE HANGING_BASELINE}.
      * @return the baseline of the text.
      */
     public abstract int getBaselineIndex();

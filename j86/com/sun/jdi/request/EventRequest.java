@@ -23,16 +23,16 @@
  * questions.
  */
 
-package com.sun.jdi.request;
+package j86.j86.com.sun.jdi.request;
 
-import com.sun.jdi.*;
+import j86.com.sun.jdi.*;
 
 /**
  * Represents a request for notification of an event.  Examples include
  * {@link BreakpointRequest} and {@link ExceptionRequest}.
  * When an event occurs for which an enabled request is present,
- * an  {@link com.sun.jdi.event.EventSet EventSet} will
- * be placed on the {@link com.sun.jdi.event.EventQueue EventQueue}.
+ * an  {@link j86.j86.com.sun.jdi.event.EventSet EventSet} will
+ * be placed on the {@link j86.j86.com.sun.jdi.event.EventQueue EventQueue}.
  * The collection of existing event requests is
  * managed by the {@link EventRequestManager}.
  * <p>
@@ -40,7 +40,7 @@ import com.sun.jdi.*;
  * through filters. Filters provide additional constraints that an event
  * must satisfy before it is placed on the event queue. Multiple filters can
  * be used by making multiple calls to filter addition methods such as
- * {@link ExceptionRequest#addClassFilter(java.lang.String classPattern)}.
+ * {@link ExceptionRequest#addClassFilter(j86.java.lang.String classPattern)}.
  * Filters are added to an event one at a time only while the event is
  * disabled. Multiple filters are applied with CUT-OFF AND, in the order
  * it was added to the request. Only events that satisfy all filters are
@@ -63,16 +63,16 @@ import com.sun.jdi.*;
  * <p>
  * Any method on <code>EventRequest</code> which
  * takes <code>EventRequest</code> as an parameter may throw
- * {@link com.sun.jdi.VMDisconnectedException} if the target VM is
- * disconnected and the {@link com.sun.jdi.event.VMDisconnectEvent} has been or is
- * available to be read from the {@link com.sun.jdi.event.EventQueue}.
+ * {@link j86.com.sun.jdi.VMDisconnectedException} if the target VM is
+ * disconnected and the {@link j86.j86.com.sun.jdi.event.VMDisconnectEvent} has been or is
+ * available to be read from the {@link j86.j86.com.sun.jdi.event.EventQueue}.
  * <p>
  * Any method on <code>EventRequest</code> which
  * takes <code>EventRequest</code> as an parameter may throw
- * {@link com.sun.jdi.VMOutOfMemoryException} if the target VM has run out of memory.
+ * {@link j86.com.sun.jdi.VMOutOfMemoryException} if the target VM has run out of memory.
  *
- * @see com.sun.jdi.event.BreakpointEvent
- * @see com.sun.jdi.event.EventQueue
+ * @see j86.j86.com.sun.jdi.event.BreakpointEvent
+ * @see j86.j86.com.sun.jdi.event.EventQueue
  * @see EventRequestManager
  *
  * @author Robert Field
@@ -160,8 +160,8 @@ public interface EventRequest extends Mirror {
      * <p>
      * Thread suspensions through events have the same functionality
      * as explicitly requested suspensions. See
-     * {@link com.sun.jdi.ThreadReference#suspend} and
-     * {@link com.sun.jdi.VirtualMachine#suspend} for details.
+     * {@link j86.com.sun.jdi.ThreadReference#suspend} and
+     * {@link j86.com.sun.jdi.VirtualMachine#suspend} for details.
      *
      * @param policy the selected suspend policy.
      * @throws InvalidRequestStateException if this request is currently
@@ -191,7 +191,7 @@ public interface EventRequest extends Mirror {
      * <p>
      * The <code>get/putProperty</code> methods provide access to
      * a small per-instance map. This is <b>not</b> to be confused
-     * with {@link java.util.Properties}.
+     * with {@link j86.java.util.Properties}.
      * <p>
      * If value is null this method will remove the property.
      *

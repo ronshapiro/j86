@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.applet;
+package j86.sun.applet;
 
-import java.io.IOException;
+import j86.java.io.IOException;
 
 /**
  * An applet IO exception.

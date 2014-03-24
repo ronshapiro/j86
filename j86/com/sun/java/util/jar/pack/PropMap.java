@@ -23,26 +23,26 @@
  * questions.
  */
 
-package com.sun.java.util.jar.pack;
+package j86.com.sun.j86.j86.java.util.jar.pack;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.PrintStream;
-import java.io.PrintWriter;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Properties;
-import java.util.Set;
-import java.util.SortedMap;
-import java.util.TreeMap;
-import java.util.jar.Pack200;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.io.PrintStream;
+import j86.java.io.PrintWriter;
+import j86.java.util.ArrayList;
+import j86.java.util.Collection;
+import j86.java.util.Comparator;
+import j86.java.util.HashMap;
+import j86.java.util.List;
+import j86.java.util.Map;
+import j86.java.util.Properties;
+import j86.java.util.Set;
+import j86.java.util.SortedMap;
+import j86.java.util.TreeMap;
+import j86.j86.java.util.jar.Pack200;
+import j86.j86.j86.java.lang.reflect.Constructor;
+import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.j86.j86.java.lang.reflect.Method;
 
 /**
  * Control block for publishing Pack200 options to the other classes.
@@ -51,7 +51,7 @@ import java.lang.reflect.Method;
 final class PropMap implements SortedMap<String, String>  {
     private final TreeMap<String, String> theMap = new TreeMap<>();;
 
-    // type is erased, elements are of type java.beans.PropertyChangeListener
+    // type is erased, elements are of type j86.java.beans.PropertyChangeListener
     private final List<Object> listenerList = new ArrayList<>(1);
 
     void addListener(Object listener) {
@@ -217,7 +217,7 @@ final class PropMap implements SortedMap<String, String>  {
     long toLong(String val) {
         try {
             return val == null ? 0 : Long.parseLong(val);
-        } catch (java.lang.NumberFormatException nfe) {
+        } catch (j86.java.lang.NumberFormatException nfe) {
             throw new IllegalArgumentException("Invalid value");
         }
     }
@@ -343,18 +343,18 @@ final class PropMap implements SortedMap<String, String>  {
     }
 
     /**
-     * A class that provides access to the java.beans.PropertyChangeListener
-     * and java.beans.PropertyChangeEvent without creating a static dependency
-     * on java.beans. This class can be removed once the addPropertyChangeListener
+     * A class that provides access to the j86.java.beans.PropertyChangeListener
+     * and j86.java.beans.PropertyChangeEvent without creating a static dependency
+     * on j86.java.beans. This class can be removed once the addPropertyChangeListener
      * and removePropertyChangeListener methods are removed from Packer and
      * Unpacker.
      */
     private static class Beans {
         private static final Class<?> propertyChangeListenerClass =
-            getClass("java.beans.PropertyChangeListener");
+            getClass("j86.java.beans.PropertyChangeListener");
 
         private static final Class<?> propertyChangeEventClass =
-            getClass("java.beans.PropertyChangeEvent");
+            getClass("j86.java.beans.PropertyChangeEvent");
 
         private static final Method propertyChangeMethod =
             getMethod(propertyChangeListenerClass,
@@ -392,7 +392,7 @@ final class PropMap implements SortedMap<String, String>  {
         }
 
         /**
-         * Returns {@code true} if java.beans is present.
+         * Returns {@code true} if j86.java.beans is present.
          */
         static boolean isBeansPresent() {
             return propertyChangeListenerClass != null &&

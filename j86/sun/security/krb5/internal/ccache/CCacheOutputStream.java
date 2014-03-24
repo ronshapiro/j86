@@ -28,14 +28,14 @@
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
 
-package sun.security.krb5.internal.ccache;
+package j86.j86.j86.sun.security.krb5.internal.ccache;
 
-import java.io.IOException;
-import java.io.FileOutputStream;
-import java.io.OutputStream;
-import sun.security.krb5.internal.util.KrbDataOutputStream;
-import sun.security.krb5.*;
-import sun.security.krb5.internal.*;
+import j86.java.io.IOException;
+import j86.java.io.FileOutputStream;
+import j86.java.io.OutputStream;
+import j86.j86.j86.sun.security.krb5.internal.util.KrbDataOutputStream;
+import j86.sun.security.krb5.*;
+import j86.j86.sun.security.krb5.internal.*;
 
 /**
  * This class implements a buffered output stream. It provides functions to write FCC-format data to a disk file.

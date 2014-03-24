@@ -23,13 +23,13 @@
  * questions.
  */
 
-package javax.crypto;
+package j86.javax.crypto;
 
-import java.security.*;
-import java.net.*;
-import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentMap;
+import j86.java.security.*;
+import j86.java.net.*;
+import j86.java.util.*;
+import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.j86.java.util.concurrent.ConcurrentMap;
 
 /**
  * The JCE security manager.
@@ -96,8 +96,8 @@ final class JceSecurityManager extends SecurityManager {
 
         // Determine the codebase of the caller of the JCE API.
         // This is the codebase of the first class which is not in
-        // javax.crypto.* packages.
-        // NOTE: javax.crypto.* package maybe subject to package
+        // j86.javax.crypto.* packages.
+        // NOTE: j86.javax.crypto.* package maybe subject to package
         // insertion, so need to check its classloader as well.
         Class<?>[] context = getClassContext();
         URL callerCodeBase = null;
@@ -108,7 +108,7 @@ final class JceSecurityManager extends SecurityManager {
             if (callerCodeBase != null) {
                 break;
             } else {
-                if (cls.getName().startsWith("javax.crypto.")) {
+                if (cls.getName().startsWith("j86.javax.crypto.")) {
                     // skip jce classes since they aren't the callers
                     continue;
                 }

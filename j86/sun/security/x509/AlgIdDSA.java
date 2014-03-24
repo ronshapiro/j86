@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.security.x509;
+package j86.sun.security.x509;
 
-import java.io.IOException;
-import java.math.BigInteger;
-import java.security.*;
-import java.security.interfaces.DSAParams;
+import j86.java.io.IOException;
+import j86.java.math.BigInteger;
+import j86.java.security.*;
+import j86.j86.java.security.interfaces.DSAParams;
 
-import sun.security.util.*;
+import j86.sun.security.util.*;
 
 
 /**
@@ -65,10 +65,10 @@ import sun.security.util.*;
  * DSAPublicKey usableKey = kf.generatePublic(ks);
  * </pre></code>
  *
- * @see java.security.interfaces.DSAParams
- * @see java.security.interfaces.DSAPublicKey
- * @see java.security.KeyFactory
- * @see java.security.spec.DSAPublicKeySpec
+ * @see j86.j86.java.security.interfaces.DSAParams
+ * @see j86.j86.java.security.interfaces.DSAPublicKey
+ * @see j86.java.security.KeyFactory
+ * @see j86.j86.java.security.spec.DSAPublicKeySpec
  *
  * @author David Brownell
  */

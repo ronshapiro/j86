@@ -74,16 +74,16 @@
  * <p>
  * Each date time instance is composed of fields that are conveniently
  * made available by the APIs.  For lower level access to the fields refer
- * to the {@code java.time.temporal} package.
+ * to the {@code j86.j86.java.time.temporal} package.
  * Each class includes support for printing and parsing all manner of dates and times.
- * Refer to the {@code java.time.format} package for customization options.
+ * Refer to the {@code j86.j86.java.time.format} package for customization options.
  * </p>
  * <p>
- * The {@code java.time.chrono} package contains the calendar neutral API
- * {@link java.time.chrono.ChronoLocalDate ChronoLocalDate},
- * {@link java.time.chrono.ChronoLocalDateTime ChronoLocalDateTime},
- * {@link java.time.chrono.ChronoZonedDateTime ChronoZonedDateTime} and
- * {@link java.time.chrono.Era Era}.
+ * The {@code j86.j86.java.time.chrono} package contains the calendar neutral API
+ * {@link j86.j86.java.time.chrono.ChronoLocalDate ChronoLocalDate},
+ * {@link j86.j86.java.time.chrono.ChronoLocalDateTime ChronoLocalDateTime},
+ * {@link j86.j86.java.time.chrono.ChronoZonedDateTime ChronoZonedDateTime} and
+ * {@link j86.j86.java.time.chrono.Era Era}.
  * This is intended for use by applications that need to use localized calendars.
  * It is recommended that applications use the ISO-8601 date and time classes from
  * this package across system boundaries, such as to the database or across the network.
@@ -92,28 +92,28 @@
  *
  * <h3>Dates and Times</h3>
  * <p>
- * {@link java.time.Instant} is essentially a numeric timestamp.
- * The current Instant can be retrieved from a {@link java.time.Clock}.
+ * {@link j86.java.time.Instant} is essentially a numeric timestamp.
+ * The current Instant can be retrieved from a {@link j86.java.time.Clock}.
  * This is useful for logging and persistence of a point in time
  * and has in the past been associated with storing the result
- * from {@link java.lang.System#currentTimeMillis()}.
+ * from {@link j86.java.lang.System#currentTimeMillis()}.
  * </p>
  * <p>
- * {@link java.time.LocalDate} stores a date without a time.
+ * {@link j86.java.time.LocalDate} stores a date without a time.
  * This stores a date like '2010-12-03' and could be used to store a birthday.
  * </p>
  * <p>
- * {@link java.time.LocalTime} stores a time without a date.
+ * {@link j86.java.time.LocalTime} stores a time without a date.
  * This stores a time like '11:30' and could be used to store an opening or closing time.
  * </p>
  * <p>
- * {@link java.time.LocalDateTime} stores a date and time.
+ * {@link j86.java.time.LocalDateTime} stores a date and time.
  * This stores a date-time like '2010-12-03T11:30'.
  * </p>
  * <p>
- * {@link java.time.ZonedDateTime} stores a date and time with a time-zone.
+ * {@link j86.java.time.ZonedDateTime} stores a date and time with a time-zone.
  * This is useful if you want to perform accurate calculations of
- * dates and times taking into account the {@link java.time.ZoneId}, such as 'Europe/Paris'.
+ * dates and times taking into account the {@link j86.java.time.ZoneId}, such as 'Europe/Paris'.
  * Where possible, it is recommended to use a simpler class without a time-zone.
  * The widespread use of time-zones tends to add considerable complexity to an application.
  * </p>
@@ -121,39 +121,39 @@
  * <h3>Duration and Period</h3>
  * <p>
  * Beyond dates and times, the API also allows the storage of period and durations of time.
- * A {@link java.time.Duration} is a simple measure of time along the time-line in nanoseconds.
- * A {@link java.time.Period} expresses an amount of time in units meaningful to humans, such as years or hours.
+ * A {@link j86.java.time.Duration} is a simple measure of time along the time-line in nanoseconds.
+ * A {@link j86.java.time.Period} expresses an amount of time in units meaningful to humans, such as years or hours.
  * </p>
  *
  * <h3>Additional value types</h3>
  * <p>
- * {@link java.time.Month} stores a month on its own.
+ * {@link j86.java.time.Month} stores a month on its own.
  * This stores a single month-of-year in isolation, such as 'DECEMBER'.
  * </p>
  * <p>
- * {@link java.time.DayOfWeek} stores a day-of-week on its own.
+ * {@link j86.java.time.DayOfWeek} stores a day-of-week on its own.
  * This stores a single day-of-week in isolation, such as 'TUESDAY'.
  * </p>
  * <p>
- * {@link java.time.Year} stores a year on its own.
+ * {@link j86.java.time.Year} stores a year on its own.
  * This stores a single year in isolation, such as '2010'.
  * </p>
  * <p>
- * {@link java.time.YearMonth} stores a year and month without a day or time.
+ * {@link j86.java.time.YearMonth} stores a year and month without a day or time.
  * This stores a year and month, such as '2010-12' and could be used for a credit card expiry.
  * </p>
  * <p>
- * {@link java.time.MonthDay} stores a month and day without a year or time.
+ * {@link j86.java.time.MonthDay} stores a month and day without a year or time.
  * This stores a month and day-of-month, such as '--12-03' and
  * could be used to store an annual event like a birthday without storing the year.
  * </p>
  * <p>
- * {@link java.time.OffsetTime} stores a time and offset from UTC without a date.
+ * {@link j86.java.time.OffsetTime} stores a time and offset from UTC without a date.
  * This stores a date like '11:30+01:00'.
- * The {@link java.time.ZoneOffset ZoneOffset} is of the form '+01:00'.
+ * The {@link j86.java.time.ZoneOffset ZoneOffset} is of the form '+01:00'.
  * </p>
  * <p>
- * {@link java.time.OffsetDateTime} stores a date and time and offset from UTC.
+ * {@link j86.java.time.OffsetDateTime} stores a date and time and offset from UTC.
  * This stores a date-time like '2010-12-03T11:30+01:00'.
  * This is sometimes found in XML messages and other forms of persistence,
  * but contains less information than a full time-zone.
@@ -162,13 +162,13 @@
  * <h3>Package specification</h3>
  * <p>
  * Unless otherwise noted, passing a null argument to a constructor or method in any class or interface
- * in this package will cause a {@link java.lang.NullPointerException NullPointerException} to be thrown.
+ * in this package will cause a {@link j86.java.lang.NullPointerException NullPointerException} to be thrown.
  * The Javadoc "@param" definition is used to summarise the null-behavior.
- * The "@throws {@link java.lang.NullPointerException}" is not explicitly documented in each method.
+ * The "@throws {@link j86.java.lang.NullPointerException}" is not explicitly documented in each method.
  * </p>
  * <p>
- * All calculations should check for numeric overflow and throw either an {@link java.lang.ArithmeticException}
- * or a {@link java.time.DateTimeException}.
+ * All calculations should check for numeric overflow and throw either an {@link j86.java.lang.ArithmeticException}
+ * or a {@link j86.java.time.DateTimeException}.
  * </p>
  *
  * <h3>Design notes (non normative)</h3>
@@ -183,20 +183,20 @@
  * plus variants for offset and time-zone.
  * This can seem like a lot of classes, but most applications can begin with just five date/time types.
  * <ul>
- * <li>{@link java.time.Instant} - a timestamp</li>
- * <li>{@link java.time.LocalDate} - a date without a time, or any reference to an offset or time-zone</li>
- * <li>{@link java.time.LocalTime} - a time without a date, or any reference to an offset or time-zone</li>
- * <li>{@link java.time.LocalDateTime} - combines date and time, but still without any offset or time-zone</li>
- * <li>{@link java.time.ZonedDateTime} - a "full" date-time with time-zone and resolved offset from UTC/Greenwich</li>
+ * <li>{@link j86.java.time.Instant} - a timestamp</li>
+ * <li>{@link j86.java.time.LocalDate} - a date without a time, or any reference to an offset or time-zone</li>
+ * <li>{@link j86.java.time.LocalTime} - a time without a date, or any reference to an offset or time-zone</li>
+ * <li>{@link j86.java.time.LocalDateTime} - combines date and time, but still without any offset or time-zone</li>
+ * <li>{@link j86.java.time.ZonedDateTime} - a "full" date-time with time-zone and resolved offset from UTC/Greenwich</li>
  * </ul>
  * <p>
- * {@code Instant} is the closest equivalent class to {@code java.util.Date}.
- * {@code ZonedDateTime} is the closest equivalent class to {@code java.util.GregorianCalendar}.
+ * {@code Instant} is the closest equivalent class to {@code j86.java.util.Date}.
+ * {@code ZonedDateTime} is the closest equivalent class to {@code j86.java.util.GregorianCalendar}.
  * </p>
  * <p>
  * Where possible, applications should use {@code LocalDate}, {@code LocalTime} and {@code LocalDateTime}
  * to better model the domain. For example, a birthday should be stored in a code {@code LocalDate}.
- * Bear in mind that any use of a {@linkplain java.time.ZoneId time-zone}, such as 'Europe/Paris', adds
+ * Bear in mind that any use of a {@linkplain j86.java.time.ZoneId time-zone}, such as 'Europe/Paris', adds
  * considerable complexity to a calculation.
  * Many applications can be written only using {@code LocalDate}, {@code LocalTime} and {@code Instant},
  * with the time-zone added at the user interface (UI) layer.
@@ -257,7 +257,7 @@
  * <p>
  * There are, however, some limited use cases where users believe they need to store and use
  * dates in arbitrary calendar systems throughout the application.
- * This is supported by {@link java.time.chrono.ChronoLocalDate}, however it is vital to read
+ * This is supported by {@link j86.j86.java.time.chrono.ChronoLocalDate}, however it is vital to read
  * all the associated warnings in the Javadoc of that interface before using it.
  * In summary, applications that require general interoperation between multiple calendar systems
  * typically need to be written in a very different way to those only using the ISO calendar,
@@ -265,11 +265,11 @@
  * </p>
  * <p>
  * The API is also designed for user extensibility, as there are many ways of calculating time.
- * The {@linkplain java.time.temporal.TemporalField field} and {@linkplain java.time.temporal.TemporalUnit unit}
- * API, accessed via {@link java.time.temporal.TemporalAccessor TemporalAccessor} and
- * {@link java.time.temporal.Temporal Temporal} provide considerable flexibility to applications.
- * In addition, the {@link java.time.temporal.TemporalQuery TemporalQuery} and
- * {@link java.time.temporal.TemporalAdjuster TemporalAdjuster} interfaces provide day-to-day
+ * The {@linkplain j86.j86.java.time.temporal.TemporalField field} and {@linkplain java.time.temporal.TemporalUnit unit}
+ * API, accessed via {@link j86.j86.java.time.temporal.TemporalAccessor TemporalAccessor} and
+ * {@link j86.j86.java.time.temporal.Temporal Temporal} provide considerable flexibility to applications.
+ * In addition, the {@link j86.j86.java.time.temporal.TemporalQuery TemporalQuery} and
+ * {@link j86.j86.java.time.temporal.TemporalAdjuster TemporalAdjuster} interfaces provide day-to-day
  * power, allowing code to read close to business requirements:
  * </p>
  * <pre>
@@ -284,4 +284,4 @@
  *
  * @since JDK1.8
  */
-package java.time;
+package j86.java.time;

@@ -22,18 +22,18 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text;
+package j86.j86.javax.swing.text;
 
-import java.io.*;
-import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
-import javax.swing.event.*;
-import javax.swing.Action;
-import javax.swing.JEditorPane;
-import javax.swing.KeyStroke;
-import javax.swing.UIManager;
+import j86.java.io.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.ActionEvent;
+import j86.java.beans.PropertyChangeEvent;
+import j86.java.beans.PropertyChangeListener;
+import j86.j86.javax.swing.event.*;
+import j86.javax.swing.Action;
+import j86.javax.swing.JEditorPane;
+import j86.javax.swing.KeyStroke;
+import j86.javax.swing.UIManager;
 
 /**
  * This is the set of things needed by a text component
@@ -372,8 +372,8 @@ public class StyledEditorKit extends DefaultEditorKit {
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     public abstract static class StyledTextAction extends TextAction {
 
@@ -491,8 +491,8 @@ public class StyledEditorKit extends DefaultEditorKit {
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     public static class FontFamilyAction extends StyledTextAction {
 
@@ -547,8 +547,8 @@ public class StyledEditorKit extends DefaultEditorKit {
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     public static class FontSizeAction extends StyledTextAction {
 
@@ -614,8 +614,8 @@ public class StyledEditorKit extends DefaultEditorKit {
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     public static class ForegroundAction extends StyledTextAction {
 
@@ -680,8 +680,8 @@ public class StyledEditorKit extends DefaultEditorKit {
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     public static class AlignmentAction extends StyledTextAction {
 
@@ -730,8 +730,8 @@ public class StyledEditorKit extends DefaultEditorKit {
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     public static class BoldAction extends StyledTextAction {
 
@@ -769,8 +769,8 @@ public class StyledEditorKit extends DefaultEditorKit {
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     public static class ItalicAction extends StyledTextAction {
 
@@ -808,8 +808,8 @@ public class StyledEditorKit extends DefaultEditorKit {
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     public static class UnderlineAction extends StyledTextAction {
 

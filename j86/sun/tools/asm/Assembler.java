@@ -23,23 +23,23 @@
  * questions.
  */
 
-package sun.tools.asm;
+package j86.sun.tools.asm;
 
-import sun.tools.java.*;
-import java.util.Enumeration;
-import java.io.IOException;
-import java.io.DataOutputStream;
-import java.io.PrintStream;
-import java.util.Vector;
+import j86.sun.tools.java.*;
+import j86.java.util.Enumeration;
+import j86.java.io.IOException;
+import j86.java.io.DataOutputStream;
+import j86.java.io.PrintStream;
+import j86.java.util.Vector;
 // JCOV
-import sun.tools.javac.*;
-import java.io.File;
-import java.io.BufferedInputStream;
-import java.io.DataInputStream;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.lang.String;
+import j86.j86.sun.tools.javac.*;
+import j86.java.io.File;
+import j86.java.io.BufferedInputStream;
+import j86.java.io.DataInputStream;
+import j86.java.io.FileInputStream;
+import j86.java.io.FileNotFoundException;
+import j86.java.io.FileOutputStream;
+import j86.java.lang.String;
 // end JCOV
 
 /**

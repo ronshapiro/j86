@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.awt;
+package j86.java.awt;
 
 /**
  * The <code>GridLayout</code> class is a layout manager that
@@ -35,8 +35,8 @@ package java.awt;
  *
  * <hr><blockquote>
  * <pre>
- * import java.awt.*;
- * import java.applet.Applet;
+ * import j86.java.awt.*;
+ * import j86.java.applet.Applet;
  * public class ButtonGrid extends Applet {
  *     public void init() {
  *         setLayout(new GridLayout(3,2));
@@ -90,7 +90,7 @@ package java.awt;
  * @author  Arthur van Hoff
  * @since   JDK1.0
  */
-public class GridLayout implements LayoutManager, java.io.Serializable {
+public class GridLayout implements LayoutManager, j86.java.io.Serializable {
     /*
      * serialVersionUID
      */
@@ -319,8 +319,8 @@ public class GridLayout implements LayoutManager, java.io.Serializable {
      * @param     parent   the container in which to do the layout
      * @return    the preferred dimensions to lay out the
      *                      subcomponents of the specified container
-     * @see       java.awt.GridLayout#minimumLayoutSize
-     * @see       java.awt.Container#getPreferredSize()
+     * @see       j86.java.awt.GridLayout#minimumLayoutSize
+     * @see       j86.java.awt.Container#getPreferredSize()
      */
     public Dimension preferredLayoutSize(Container parent) {
       synchronized (parent.getTreeLock()) {
@@ -368,8 +368,8 @@ public class GridLayout implements LayoutManager, java.io.Serializable {
      * @param       parent   the container in which to do the layout
      * @return      the minimum dimensions needed to lay out the
      *                      subcomponents of the specified container
-     * @see         java.awt.GridLayout#preferredLayoutSize
-     * @see         java.awt.Container#doLayout
+     * @see         j86.java.awt.GridLayout#preferredLayoutSize
+     * @see         j86.java.awt.Container#doLayout
      */
     public Dimension minimumLayoutSize(Container parent) {
       synchronized (parent.getTreeLock()) {
@@ -415,8 +415,8 @@ public class GridLayout implements LayoutManager, java.io.Serializable {
      * gap. All components in a grid layout are given the same size.
      *
      * @param      parent   the container in which to do the layout
-     * @see        java.awt.Container
-     * @see        java.awt.Container#doLayout
+     * @see        j86.java.awt.Container
+     * @see        j86.java.awt.Container#doLayout
      */
     public void layoutContainer(Container parent) {
       synchronized (parent.getTreeLock()) {

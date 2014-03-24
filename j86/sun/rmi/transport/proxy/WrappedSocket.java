@@ -22,18 +22,18 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.rmi.transport.proxy;
+package j86.j86.sun.rmi.transport.proxy;
 
-import java.io.*;
-import java.net.InetAddress;
-import java.net.Socket;
-import java.net.SocketException;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
+import j86.java.io.*;
+import j86.java.net.InetAddress;
+import j86.java.net.Socket;
+import j86.java.net.SocketException;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
 
 /**
  * The WrappedSocket class provides a general wrapper for providing an
- * extended implementation of java.net.Socket that can be attached to
+ * extended implementation of j86.java.net.Socket that can be attached to
  * a pre-existing Socket object.  WrappedSocket itself provides a
  * constructor for specifying alternate input or output streams to be
  * returned than those of the underlying Socket.
@@ -62,7 +62,7 @@ class WrappedSocket extends Socket {
     public WrappedSocket(Socket socket, InputStream in, OutputStream out)
         throws IOException
     {
-        super((java.net.SocketImpl)null);       // no underlying SocketImpl for this object
+        super((j86.java.net.SocketImpl)null);       // no underlying SocketImpl for this object
         this.socket = socket;
         this.in = in;
         this.out = out;

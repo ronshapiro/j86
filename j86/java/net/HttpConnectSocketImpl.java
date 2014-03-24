@@ -23,14 +23,14 @@
  * questions.
  */
 
-package java.net;
+package j86.java.net;
 
-import java.io.IOException;
-import java.lang.reflect.Field;
-import java.lang.reflect.Method;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
+import j86.java.io.IOException;
+import j86.j86.j86.java.lang.reflect.Field;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.util.HashMap;
+import j86.java.util.Map;
+import j86.java.util.Set;
 
 /**
  * Basic SocketImpl that relies on the internal HTTP protocol handler
@@ -44,8 +44,8 @@ import java.util.Set;
 /*package*/ class HttpConnectSocketImpl extends PlainSocketImpl {
 
     private static final String httpURLClazzStr =
-                                  "sun.net.www.protocol.http.HttpURLConnection";
-    private static final String netClientClazzStr = "sun.net.NetworkClient";
+                                  "j86.j86.j86.sun.net.www.protocol.http.HttpURLConnection";
+    private static final String netClientClazzStr = "j86.sun.net.NetworkClient";
     private static final String doTunnelingStr = "doTunneling";
     private static final Field httpField;
     private static final Field serverSocketField;
@@ -63,8 +63,8 @@ import java.util.Set;
             Class<?> netClientClazz = Class.forName(netClientClazzStr, true, null);
             serverSocketField = netClientClazz.getDeclaredField("serverSocket");
 
-            java.security.AccessController.doPrivileged(
-                new java.security.PrivilegedAction<Void>() {
+            j86.java.security.AccessController.doPrivileged(
+                new j86.java.security.PrivilegedAction<Void>() {
                     public Void run() {
                         httpField.setAccessible(true);
                         serverSocketField.setAccessible(true);
@@ -145,13 +145,13 @@ import java.util.Set;
         throws IOException
     {
         try {
-            return java.security.AccessController.doPrivileged(
-                new java.security.PrivilegedExceptionAction<Socket>() {
+            return j86.java.security.AccessController.doPrivileged(
+                new j86.java.security.PrivilegedExceptionAction<Socket>() {
                     public Socket run() throws IOException {
                         return doTunnel(urlString, timeout);
                 }
             });
-        } catch (java.security.PrivilegedActionException pae) {
+        } catch (j86.java.security.PrivilegedActionException pae) {
             throw (IOException) pae.getException();
         }
     }

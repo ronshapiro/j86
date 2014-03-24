@@ -28,15 +28,15 @@
  */
 // crc32.java
 
-package sun.security.krb5.internal.crypto;
+package j86.j86.j86.sun.security.krb5.internal.crypto;
 
-import java.security.MessageDigestSpi;
-import java.security.DigestException;
+import j86.java.security.MessageDigestSpi;
+import j86.java.security.DigestException;
 
 public final class crc32 extends MessageDigestSpi implements Cloneable {
     private static final int CRC32_LENGTH = 4; //32-bit
     private int seed;
-    private static boolean DEBUG = sun.security.krb5.internal.Krb5.DEBUG;
+    private static boolean DEBUG = j86.j86.sun.security.krb5.internal.Krb5.DEBUG;
     // buffer;
     // private int bufferIndex, bufferLeft;
 

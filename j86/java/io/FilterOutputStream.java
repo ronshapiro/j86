@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.io;
+package j86.java.io;
 
 /**
  * This class is the superclass of all classes that filter output
@@ -91,7 +91,7 @@ class FilterOutputStream extends OutputStream {
      *
      * @param      b   the data to be written.
      * @exception  IOException  if an I/O error occurs.
-     * @see        java.io.FilterOutputStream#write(byte[], int, int)
+     * @see        j86.java.io.FilterOutputStream#write(byte[], int, int)
      */
     public void write(byte b[]) throws IOException {
         write(b, 0, b.length);
@@ -115,7 +115,7 @@ class FilterOutputStream extends OutputStream {
      * @param      off   the start offset in the data.
      * @param      len   the number of bytes to write.
      * @exception  IOException  if an I/O error occurs.
-     * @see        java.io.FilterOutputStream#write(int)
+     * @see        j86.java.io.FilterOutputStream#write(int)
      */
     public void write(byte b[], int off, int len) throws IOException {
         if ((off | len | (b.length - (len + off)) | (off + len)) < 0)
@@ -134,7 +134,7 @@ class FilterOutputStream extends OutputStream {
      * calls the <code>flush</code> method of its underlying output stream.
      *
      * @exception  IOException  if an I/O error occurs.
-     * @see        java.io.FilterOutputStream#out
+     * @see        j86.java.io.FilterOutputStream#out
      */
     public void flush() throws IOException {
         out.flush();
@@ -149,8 +149,8 @@ class FilterOutputStream extends OutputStream {
      * <code>close</code> method of its underlying output stream.
      *
      * @exception  IOException  if an I/O error occurs.
-     * @see        java.io.FilterOutputStream#flush()
-     * @see        java.io.FilterOutputStream#out
+     * @see        j86.java.io.FilterOutputStream#flush()
+     * @see        j86.java.io.FilterOutputStream#out
      */
     @SuppressWarnings("try")
     public void close() throws IOException {

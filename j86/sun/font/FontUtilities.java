@@ -23,21 +23,21 @@
  * questions.
  */
 
-package sun.font;
+package j86.sun.font;
 
-import java.awt.Font;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.InputStreamReader;
-import java.lang.ref.SoftReference;
-import java.util.concurrent.ConcurrentHashMap;
-import java.security.AccessController;
+import j86.java.awt.Font;
+import j86.java.io.BufferedReader;
+import j86.java.io.File;
+import j86.java.io.FileInputStream;
+import j86.java.io.InputStreamReader;
+import j86.j86.java.lang.ref.SoftReference;
+import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.security.AccessController;
 
-import java.security.PrivilegedAction;
-import javax.swing.plaf.FontUIResource;
+import j86.java.security.PrivilegedAction;
+import j86.j86.javax.swing.plaf.FontUIResource;
 
-import sun.util.logging.PlatformLogger;
+import j86.j86.sun.util.logging.PlatformLogger;
 
 /**
  * A collection of utility methods.
@@ -80,7 +80,7 @@ public final class FontUtilities {
 
                 isMacOSX = osName.contains("OS X"); // TODO: MacOSX
 
-                String t2kStr = System.getProperty("sun.java2d.font.scaler");
+                String t2kStr = System.getProperty("j86.sun.java2d.font.scaler");
                 if (t2kStr != null) {
                     useT2K = "t2k".equals(t2kStr);
                 } else {
@@ -127,11 +127,11 @@ public final class FontUtilities {
                 isOpenJDK = !lucidaFile.exists();
 
                 String debugLevel =
-                    System.getProperty("sun.java2d.debugfonts");
+                    System.getProperty("j86.sun.java2d.debugfonts");
 
                 if (debugLevel != null && !debugLevel.equals("false")) {
                     debugFonts = true;
-                    logger = PlatformLogger.getLogger("sun.java2d");
+                    logger = PlatformLogger.getLogger("j86.sun.java2d");
                     if (debugLevel.equals("warning")) {
                         logger.setLevel(PlatformLogger.Level.WARNING);
                     } else if (debugLevel.equals("severe")) {
@@ -140,7 +140,7 @@ public final class FontUtilities {
                 }
 
                 if (debugFonts) {
-                    logger = PlatformLogger.getLogger("sun.java2d");
+                    logger = PlatformLogger.getLogger("j86.sun.java2d");
                     logging = logger.isEnabled();
                 }
 
@@ -170,7 +170,7 @@ public final class FontUtilities {
     public static final int MAX_LAYOUT_CHARCODE = 0x206F;
 
     /**
-     * Calls the private getFont2D() method in java.awt.Font objects.
+     * Calls the private getFont2D() method in j86.java.awt.Font objects.
      *
      * @param font the font object to call
      *

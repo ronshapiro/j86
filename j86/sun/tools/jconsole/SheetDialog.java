@@ -23,17 +23,17 @@
  * questions.
  */
 
-package sun.tools.jconsole;
+package j86.sun.tools.jconsole;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.beans.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.java.beans.*;
 
-import javax.swing.*;
-import javax.swing.border.*;
-import javax.swing.text.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.border.*;
+import j86.j86.javax.swing.text.*;
 
-import static javax.swing.JOptionPane.*;
+import static j86.javax.swing.JOptionPane.*;
 
 @SuppressWarnings("serial")
 public final class SheetDialog {

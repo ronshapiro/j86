@@ -23,13 +23,13 @@
  * questions.
  */
 
-package javax.management.loading;
+package j86.j86.javax.management.loading;
 
 
 // java import
 
-import java.io.*;
-import java.lang.reflect.Array;
+import j86.java.io.*;
+import j86.j86.j86.java.lang.reflect.Array;
 
 
 /**

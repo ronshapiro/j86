@@ -23,11 +23,11 @@
  * questions.
  */
 
-package com.sun.jndi.toolkit.ctx;
+package j86.com.sun.jndi.toolkit.ctx;
 
-import javax.naming.*;
-import javax.naming.spi.ResolveResult;
-import java.util.Hashtable;
+import j86.javax.naming.*;
+import j86.j86.javax.naming.spi.ResolveResult;
+import j86.java.util.Hashtable;
 
 /**
   * This class contains information required to continue
@@ -198,7 +198,7 @@ public class Continuation extends ResolveResult {
      * @param resObj The possibly null object that was resolved to.
      * @param remain The possibly String remaining name.
      *
-     * @see #setErrorNNS(java.lang.Object, javax.naming.Name)
+     * @see #setErrorNNS(j86.java.lang.Object, j86.javax.naming.Name)
      */
     public void setErrorNNS(Object resObj, String remain) {
         CompositeName rname = new CompositeName();
@@ -243,7 +243,7 @@ public class Continuation extends ResolveResult {
      * @param resObj The possibly null object that was resolved to.
      * @param remain The possibly String remaining name.
      *
-     * @see #setError(java.lang.Object, javax.naming.Name)
+     * @see #setError(j86.java.lang.Object, j86.javax.naming.Name)
      */
     public void setError(Object resObj, String remain) {
         CompositeName rname = new CompositeName();
@@ -305,7 +305,7 @@ public class Continuation extends ResolveResult {
      * @param resObj The possibly null resolved object.
      * @param relResName The non-null resolved name relative to currCtx.
      * @param currCtx The non-null context from which relResName is to be resolved.
-     * @see #setContinueNNS(java.lang.Object, javax.naming.Name, javax.naming.Context)
+     * @see #setContinueNNS(j86.java.lang.Object, j86.javax.naming.Name, javax.naming.Context)
      */
     public void setContinueNNS(Object resObj, String relResName, Context currCtx) {
         CompositeName relname = new CompositeName();
@@ -370,7 +370,7 @@ public class Continuation extends ResolveResult {
      * @param relResName The non-null resolved name relative to currCtx.
      * @param currCtx The non-null context from which relResName is to be resolved.
      * @param remain The non-null remaining name.
-     * @see #setContinue(java.lang.Object, java.lang.String, javax.naming.Context, java.lang.String)
+     * @see #setContinue(j86.java.lang.Object, java.lang.String, j86.javax.naming.Context, java.lang.String)
      */
     public void setContinue(Object obj, String relResName,
         Context currCtx, String remain) {

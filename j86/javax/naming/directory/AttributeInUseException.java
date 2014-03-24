@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.naming.directory;
+package j86.j86.javax.naming.directory;
 
-import javax.naming.NamingException;
+import j86.javax.naming.NamingException;
 
 /**
   * This exception is thrown when an operation attempts
@@ -46,7 +46,7 @@ public class AttributeInUseException extends NamingException {
      * an explanation. All other fields are set to null.
      *
      * @param   explanation     Possibly null additional detail about this exception.
-     * @see java.lang.Throwable#getMessage
+     * @see j86.java.lang.Throwable#getMessage
      */
     public AttributeInUseException(String explanation) {
         super(explanation);

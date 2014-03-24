@@ -22,28 +22,28 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text.html;
+package j86.j86.j86.javax.swing.text.html;
 
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.Insets;
-import java.awt.Polygon;
-import java.awt.Rectangle;
-import java.awt.Shape;
-import java.util.HashMap;
-import java.util.Map;
-import javax.swing.border.AbstractBorder;
-import javax.swing.text.AttributeSet;
-import javax.swing.text.View;
-import javax.swing.text.html.CSS.Attribute;
-import javax.swing.text.html.CSS.BorderStyle;
-import javax.swing.text.html.CSS.BorderWidthValue;
-import javax.swing.text.html.CSS.ColorValue;
-import javax.swing.text.html.CSS.CssValue;
-import javax.swing.text.html.CSS.LengthValue;
-import javax.swing.text.html.CSS.Value;
+import j86.java.awt.Color;
+import j86.java.awt.Component;
+import j86.java.awt.Graphics;
+import j86.java.awt.Graphics2D;
+import j86.java.awt.Insets;
+import j86.java.awt.Polygon;
+import j86.java.awt.Rectangle;
+import j86.java.awt.Shape;
+import j86.java.util.HashMap;
+import j86.java.util.Map;
+import j86.j86.javax.swing.border.AbstractBorder;
+import j86.j86.javax.swing.text.AttributeSet;
+import j86.j86.javax.swing.text.View;
+import j86.j86.j86.javax.swing.text.html.CSS.Attribute;
+import j86.j86.j86.javax.swing.text.html.CSS.BorderStyle;
+import j86.j86.j86.javax.swing.text.html.CSS.BorderWidthValue;
+import j86.j86.j86.javax.swing.text.html.CSS.ColorValue;
+import j86.j86.j86.javax.swing.text.html.CSS.CssValue;
+import j86.j86.j86.javax.swing.text.html.CSS.LengthValue;
+import j86.j86.j86.javax.swing.text.html.CSS.Value;
 
 /**
  * CSS-style borders for HTML elements.
@@ -193,7 +193,7 @@ class CSSBorder extends AbstractBorder {
     }
 
 
-    /* The javax.swing.border.Border methods.  */
+    /* The j86.j86.javax.swing.border.Border methods.  */
 
     public Insets getBorderInsets(Component c, Insets insets) {
         int[] widths = getWidths();

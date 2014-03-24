@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.imageio.metadata;
+package j86.j86.javax.imageio.metadata;
 
 import org.w3c.dom.Node;
-import java.lang.reflect.Method;
+import j86.j86.j86.java.lang.reflect.Method;
 
 /**
  * An abstract class to be extended by objects that represent metadata
@@ -51,16 +51,16 @@ import java.lang.reflect.Method;
  * between two native formats as losslessly as the image file formats
  * will allow, an <code>ImageTranscoder</code> object must be used.
  *
- * @see javax.imageio.ImageReader#getImageMetadata
- * @see javax.imageio.ImageReader#getStreamMetadata
- * @see javax.imageio.ImageReader#readAll
- * @see javax.imageio.ImageWriter#getDefaultStreamMetadata
- * @see javax.imageio.ImageWriter#getDefaultImageMetadata
- * @see javax.imageio.ImageWriter#write
- * @see javax.imageio.ImageWriter#convertImageMetadata
- * @see javax.imageio.ImageWriter#convertStreamMetadata
- * @see javax.imageio.IIOImage
- * @see javax.imageio.ImageTranscoder
+ * @see j86.javax.imageio.ImageReader#getImageMetadata
+ * @see j86.javax.imageio.ImageReader#getStreamMetadata
+ * @see j86.javax.imageio.ImageReader#readAll
+ * @see j86.javax.imageio.ImageWriter#getDefaultStreamMetadata
+ * @see j86.javax.imageio.ImageWriter#getDefaultImageMetadata
+ * @see j86.javax.imageio.ImageWriter#write
+ * @see j86.javax.imageio.ImageWriter#convertImageMetadata
+ * @see j86.javax.imageio.ImageWriter#convertStreamMetadata
+ * @see j86.javax.imageio.IIOImage
+ * @see j86.javax.imageio.ImageTranscoder
  *
  */
 public abstract class IIOMetadata {
@@ -403,8 +403,8 @@ public abstract class IIOMetadata {
             // firstly we try to use classloader used for loading
             // the IIOMetadata implemantation for this plugin.
             ClassLoader loader = (ClassLoader)
-                java.security.AccessController.doPrivileged(
-                    new java.security.PrivilegedAction() {
+                j86.java.security.AccessController.doPrivileged(
+                    new j86.java.security.PrivilegedAction() {
                             public Object run() {
                                 return o.getClass().getClassLoader();
                             }
@@ -418,8 +418,8 @@ public abstract class IIOMetadata {
                 // using IIOMetadata classloader.Next try is to
                 // use thread context classloader.
                 loader = (ClassLoader)
-                    java.security.AccessController.doPrivileged(
-                        new java.security.PrivilegedAction() {
+                    j86.java.security.AccessController.doPrivileged(
+                        new j86.java.security.PrivilegedAction() {
                                 public Object run() {
                                     return Thread.currentThread().getContextClassLoader();
                                 }
@@ -508,7 +508,7 @@ public abstract class IIOMetadata {
 
     /**
      * Returns an <code>IIOMetadataNode</code> representing the chroma
-     * information of the standard <code>javax_imageio_1.0</code>
+     * information of the standard <code>j86.javax.imageio_1.0</code>
      * metadata format, or <code>null</code> if no such information is
      * available.  This method is intended to be called by the utility
      * routine <code>getStandardTree</code>.
@@ -530,7 +530,7 @@ public abstract class IIOMetadata {
     /**
      * Returns an <code>IIOMetadataNode</code> representing the
      * compression information of the standard
-     * <code>javax_imageio_1.0</code> metadata format, or
+     * <code>j86.javax.imageio_1.0</code> metadata format, or
      * <code>null</code> if no such information is available.  This
      * method is intended to be called by the utility routine
      * <code>getStandardTree</code>.
@@ -552,7 +552,7 @@ public abstract class IIOMetadata {
     /**
      * Returns an <code>IIOMetadataNode</code> representing the data
      * format information of the standard
-     * <code>javax_imageio_1.0</code> metadata format, or
+     * <code>j86.javax.imageio_1.0</code> metadata format, or
      * <code>null</code> if no such information is available.  This
      * method is intended to be called by the utility routine
      * <code>getStandardTree</code>.
@@ -574,7 +574,7 @@ public abstract class IIOMetadata {
     /**
      * Returns an <code>IIOMetadataNode</code> representing the
      * dimension information of the standard
-     * <code>javax_imageio_1.0</code> metadata format, or
+     * <code>j86.javax.imageio_1.0</code> metadata format, or
      * <code>null</code> if no such information is available.  This
      * method is intended to be called by the utility routine
      * <code>getStandardTree</code>.
@@ -595,7 +595,7 @@ public abstract class IIOMetadata {
 
     /**
      * Returns an <code>IIOMetadataNode</code> representing the document
-     * information of the standard <code>javax_imageio_1.0</code>
+     * information of the standard <code>j86.javax.imageio_1.0</code>
      * metadata format, or <code>null</code> if no such information is
      * available.  This method is intended to be called by the utility
      * routine <code>getStandardTree</code>.
@@ -616,7 +616,7 @@ public abstract class IIOMetadata {
 
     /**
      * Returns an <code>IIOMetadataNode</code> representing the textual
-     * information of the standard <code>javax_imageio_1.0</code>
+     * information of the standard <code>j86.javax.imageio_1.0</code>
      * metadata format, or <code>null</code> if no such information is
      * available.  This method is intended to be called by the utility
      * routine <code>getStandardTree</code>.
@@ -637,7 +637,7 @@ public abstract class IIOMetadata {
 
     /**
      * Returns an <code>IIOMetadataNode</code> representing the tiling
-     * information of the standard <code>javax_imageio_1.0</code>
+     * information of the standard <code>j86.javax.imageio_1.0</code>
      * metadata format, or <code>null</code> if no such information is
      * available.  This method is intended to be called by the utility
      * routine <code>getStandardTree</code>.
@@ -659,7 +659,7 @@ public abstract class IIOMetadata {
     /**
      * Returns an <code>IIOMetadataNode</code> representing the
      * transparency information of the standard
-     * <code>javax_imageio_1.0</code> metadata format, or
+     * <code>j86.javax.imageio_1.0</code> metadata format, or
      * <code>null</code> if no such information is available.  This
      * method is intended to be called by the utility routine
      * <code>getStandardTree</code>.
@@ -690,7 +690,7 @@ public abstract class IIOMetadata {
      * A utility method to return a tree of
      * <code>IIOMetadataNode</code>s representing the metadata
      * contained within this object according to the conventions of
-     * the standard <code>javax_imageio_1.0</code> metadata format.
+     * the standard <code>j86.javax.imageio_1.0</code> metadata format.
      *
      * <p> This method calls the various <code>getStandard*Node</code>
      * methods to supply each of the subtrees rooted at the children
@@ -700,7 +700,7 @@ public abstract class IIOMetadata {
      * single root node will be returned.
      *
      * @return an <code>IIOMetadataNode</code> representing the root
-     * of a metadata tree in the <code>javax_imageio_1.0</code>
+     * of a metadata tree in the <code>j86.javax.imageio_1.0</code>
      * format.
      *
      * @see #getStandardChromaNode
@@ -768,10 +768,10 @@ public abstract class IIOMetadata {
      *
      * @exception IllegalStateException if this object is read-only.
      *
-     * @see javax.imageio.ImageReader#getStreamMetadata
-     * @see javax.imageio.ImageReader#getImageMetadata
-     * @see javax.imageio.ImageWriter#getDefaultStreamMetadata
-     * @see javax.imageio.ImageWriter#getDefaultImageMetadata
+     * @see j86.javax.imageio.ImageReader#getStreamMetadata
+     * @see j86.javax.imageio.ImageReader#getImageMetadata
+     * @see j86.javax.imageio.ImageWriter#getDefaultStreamMetadata
+     * @see j86.javax.imageio.ImageWriter#getDefaultImageMetadata
      */
     public abstract void reset();
 

@@ -23,13 +23,13 @@
  * questions.
  */
 
-package com.sun.tools.attach;
+package com.j86.sun.tools.attach;
 
-import com.sun.tools.attach.spi.AttachProvider;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Properties;
-import java.io.IOException;
+import com.j86.sun.tools.attach.spi.AttachProvider;
+import j86.java.util.ArrayList;
+import j86.java.util.List;
+import j86.java.util.Properties;
+import j86.java.io.IOException;
 
 
 /**
@@ -49,14 +49,14 @@ import java.io.IOException;
  * environments where each Java virtual machine runs in its own operating system process.
  * Alternatively, a <code>VirtualMachine</code> instance is obtained by invoking the
  * {@link #attach(VirtualMachineDescriptor) attach} method with a {@link
- * com.sun.tools.attach.VirtualMachineDescriptor VirtualMachineDescriptor} obtained
+ * com.j86.sun.tools.attach.VirtualMachineDescriptor VirtualMachineDescriptor} obtained
  * from the list of virtual machine descriptors returned by the {@link #list list} method.
  * Once a reference to a virtual machine is obtained, the {@link #loadAgent loadAgent},
  * {@link #loadAgentLibrary loadAgentLibrary}, and {@link #loadAgentPath loadAgentPath}
  * methods are used to load agents into target virtual machine. The {@link
  * #loadAgent loadAgent} method is used to load agents that are written in the Java
- * Language and deployed in a {@link java.util.jar.JarFile JAR file}. (See
- * {@link java.lang.instrument} for a detailed description on how these agents
+ * Language and deployed in a {@link j86.j86.java.util.jar.JarFile JAR file}. (See
+ * {@link j86.j86.java.lang.instrument} for a detailed description on how these agents
  * are loaded and started). The {@link #loadAgentLibrary loadAgentLibrary} and
  * {@link #loadAgentPath loadAgentPath} methods are used to load agents that
  * are deployed either in a dynamic library or statically linked into the VM and make use of the <a
@@ -64,7 +64,7 @@ import java.io.IOException;
  * Interface</a>. </p>
  *
  * <p> In addition to loading agents a VirtualMachine provides read access to the
- * {@link java.lang.System#getProperties() system properties} in the target VM.
+ * {@link j86.java.lang.System#getProperties() system properties} in the target VM.
  * This can be useful in some environments where properties such as
  * <code>java.home</code>, <code>os.name</code>, or <code>os.arch</code> are
  * used to construct the path to agent that will be loaded into the target VM.
@@ -85,7 +85,7 @@ import java.io.IOException;
  *          + "management-agent.jar";
  *
  *      // load agent into target VM
- *      vm.loadAgent(agent, "com.sun.management.jmxremote.port=5000");
+ *      vm.loadAgent(agent, "com.j86.j86.sun.management.jmxremote.port=5000");
  *
  *      // detach
  *      vm.detach();
@@ -134,12 +134,12 @@ public abstract class VirtualMachine {
      * Return a list of Java virtual machines.
      *
      * <p> This method returns a list of Java {@link
-     * com.sun.tools.attach.VirtualMachineDescriptor} elements.
+     * com.j86.sun.tools.attach.VirtualMachineDescriptor} elements.
      * The list is an aggregation of the virtual machine
      * descriptor lists obtained by invoking the {@link
-     * com.sun.tools.attach.spi.AttachProvider#listVirtualMachines
+     * com.j86.sun.tools.attach.spi.AttachProvider#listVirtualMachines
      * listVirtualMachines} method of all installed
-     * {@link com.sun.tools.attach.spi.AttachProvider attach providers}.
+     * {@link com.j86.sun.tools.attach.spi.AttachProvider attach providers}.
      * If there are no Java virtual machines known to any provider
      * then an empty list is returned.
      *
@@ -159,21 +159,21 @@ public abstract class VirtualMachine {
      * Attaches to a Java virtual machine.
      *
      * <p> This method obtains the list of attach providers by invoking the
-     * {@link com.sun.tools.attach.spi.AttachProvider#providers()
+     * {@link com.j86.sun.tools.attach.spi.AttachProvider#providers()
      * AttachProvider.providers()} method. It then iterates overs the list
      * and invokes each provider's {@link
-     * com.sun.tools.attach.spi.AttachProvider#attachVirtualMachine(java.lang.String)
+     * com.j86.sun.tools.attach.spi.AttachProvider#attachVirtualMachine(j86.java.lang.String)
      * attachVirtualMachine} method in turn. If a provider successfully
      * attaches then the iteration terminates, and the VirtualMachine created
      * by the provider that successfully attached is returned by this method.
      * If the <code>attachVirtualMachine</code> method of all providers throws
-     * {@link com.sun.tools.attach.AttachNotSupportedException AttachNotSupportedException}
+     * {@link com.j86.sun.tools.attach.AttachNotSupportedException AttachNotSupportedException}
      * then this method also throws <code>AttachNotSupportedException</code>.
      * This means that <code>AttachNotSupportedException</code> is thrown when
      * the identifier provided to this method is invalid, or the identifier
      * corresponds to a Java virtual machine that does not exist, or none
      * of the providers can attach to it. This exception is also thrown if
-     * {@link com.sun.tools.attach.spi.AttachProvider#providers()
+     * {@link com.j86.sun.tools.attach.spi.AttachProvider#providers()
      * AttachProvider.providers()} returns an empty list. </p>
      *
      * @param   id
@@ -183,7 +183,7 @@ public abstract class VirtualMachine {
      *
      * @throws  SecurityException
      *          If a security manager has been installed and it denies
-     *          {@link com.sun.tools.attach.AttachPermission AttachPermission}
+     *          {@link com.j86.sun.tools.attach.AttachPermission AttachPermission}
      *          <tt>("attachVirtualMachine")</tt>, or another permission
      *          required by the implementation.
      *
@@ -223,10 +223,10 @@ public abstract class VirtualMachine {
      * Attaches to a Java virtual machine.
      *
      * <p> This method first invokes the {@link
-     * com.sun.tools.attach.VirtualMachineDescriptor#provider() provider()} method
+     * com.j86.sun.tools.attach.VirtualMachineDescriptor#provider() provider()} method
      * of the given virtual machine descriptor to obtain the attach provider. It
      * then invokes the attach provider's {@link
-     * com.sun.tools.attach.spi.AttachProvider#attachVirtualMachine(VirtualMachineDescriptor)
+     * com.j86.sun.tools.attach.spi.AttachProvider#attachVirtualMachine(VirtualMachineDescriptor)
      * attachVirtualMachine} to attach to the target VM.
      *
      * @param   vmd
@@ -236,7 +236,7 @@ public abstract class VirtualMachine {
      *
      * @throws  SecurityException
      *          If a security manager has been installed and it denies
-     *          {@link com.sun.tools.attach.AttachPermission AttachPermission}
+     *          {@link com.j86.sun.tools.attach.AttachPermission AttachPermission}
      *          <tt>("attachVirtualMachine")</tt>, or another permission
      *          required by the implementation.
      *
@@ -260,7 +260,7 @@ public abstract class VirtualMachine {
      * Detach from the virtual machine.
      *
      * <p> After detaching from the virtual machine, any further attempt to invoke
-     * operations on that virtual machine will cause an {@link java.io.IOException
+     * operations on that virtual machine will cause an {@link j86.java.io.IOException
      * IOException} to be thrown. If an operation (such as {@link #loadAgent
      * loadAgent} for example) is in progress when this method is invoked then
      * the behaviour is implementation dependent. In other words, it is
@@ -320,10 +320,10 @@ public abstract class VirtualMachine {
      * <code>Agent_OnAttach_L</code>.</p>
      *
      * <p> If the <code>Agent_OnAttach[_L]</code> function in the agent library returns
-     * an error then an {@link com.sun.tools.attach.AgentInitializationException} is
+     * an error then an {@link com.j86.sun.tools.attach.AgentInitializationException} is
      * thrown. The return value from the <code>Agent_OnAttach[_L]</code> can then be
      * obtained by invoking the {@link
-     * com.sun.tools.attach.AgentInitializationException#returnValue() returnValue}
+     * com.j86.sun.tools.attach.AgentInitializationException#returnValue() returnValue}
      * method on the exception. </p>
      *
      * @param   agentLibrary
@@ -347,7 +347,7 @@ public abstract class VirtualMachine {
      * @throws  NullPointerException
      *          If <code>agentLibrary</code> is <code>null</code>.
      *
-     * @see     com.sun.tools.attach.AgentInitializationException#returnValue()
+     * @see     com.j86.sun.tools.attach.AgentInitializationException#returnValue()
      */
     public abstract void loadAgentLibrary(String agentLibrary, String options)
         throws AgentLoadException, AgentInitializationException, IOException;
@@ -415,10 +415,10 @@ public abstract class VirtualMachine {
      * is not expanded in the target virtual machine. </p>
      *
      * <p> If the <code>Agent_OnAttach[_L]</code> function in the agent library returns
-     * an error then an {@link com.sun.tools.attach.AgentInitializationException} is
+     * an error then an {@link com.j86.sun.tools.attach.AgentInitializationException} is
      * thrown. The return value from the <code>Agent_OnAttach[_L]</code> can then be
      * obtained by invoking the {@link
-     * com.sun.tools.attach.AgentInitializationException#returnValue() returnValue}
+     * com.j86.sun.tools.attach.AgentInitializationException#returnValue() returnValue}
      * method on the exception. </p>
      *
      * @param   agentPath
@@ -442,7 +442,7 @@ public abstract class VirtualMachine {
      * @throws  NullPointerException
      *          If <code>agentPath</code> is <code>null</code>.
      *
-     * @see     com.sun.tools.attach.AgentInitializationException#returnValue()
+     * @see     com.j86.sun.tools.attach.AgentInitializationException#returnValue()
      */
     public abstract void loadAgentPath(String agentPath, String options)
         throws AgentLoadException, AgentInitializationException, IOException;
@@ -486,7 +486,7 @@ public abstract class VirtualMachine {
      * <p> The agent provided to this method is a path name to a JAR file on the file
      * system of the target virtual machine. This path is passed to the target virtual
      * machine where it is interpreted. The target virtual machine attempts to start
-     * the agent as specified by the {@link java.lang.instrument} specification.
+     * the agent as specified by the {@link j86.j86.java.lang.instrument} specification.
      * That is, the specified JAR file is added to the system class path (of the target
      * virtual machine), and the <code>agentmain</code> method of the agent class, specified
      * by the <code>Agent-Class</code> attribute in the JAR manifest, is invoked. This
@@ -501,7 +501,7 @@ public abstract class VirtualMachine {
      *
      * @throws  AgentLoadException
      *          If the agent does not exist, or cannot be started in the manner
-     *          specified in the {@link java.lang.instrument} specification.
+     *          specified in the {@link j86.j86.java.lang.instrument} specification.
      *
      * @throws  AgentInitializationException
      *          If the <code>agentmain</code> throws an exception
@@ -529,7 +529,7 @@ public abstract class VirtualMachine {
      *
      * @throws  AgentLoadException
      *          If the agent does not exist, or cannot be started in the manner
-     *          specified in the {@link java.lang.instrument} specification.
+     *          specified in the {@link j86.j86.java.lang.instrument} specification.
      *
      * @throws  AgentInitializationException
      *          If the <code>agentmain</code> throws an exception
@@ -552,7 +552,7 @@ public abstract class VirtualMachine {
      * <p> This method returns the system properties in the target virtual
      * machine. Properties whose key or value is not a <tt>String</tt> are
      * omitted. The method is approximately equivalent to the invocation of the
-     * method {@link java.lang.System#getProperties System.getProperties}
+     * method {@link j86.java.lang.System#getProperties System.getProperties}
      * in the target virtual machine except that properties with a key or
      * value that is not a <tt>String</tt> are not included.
      *
@@ -567,7 +567,7 @@ public abstract class VirtualMachine {
      * @throws  IOException
      *          If an I/O error occurs
      *
-     * @see     java.lang.System#getProperties
+     * @see     j86.java.lang.System#getProperties
      * @see     #loadAgentLibrary
      * @see     #loadAgent
      */
@@ -599,7 +599,7 @@ public abstract class VirtualMachine {
     /**
      * Returns a hash-code value for this VirtualMachine. The hash
      * code is based upon the VirtualMachine's components, and satifies
-     * the general contract of the {@link java.lang.Object#hashCode()
+     * the general contract of the {@link j86.java.lang.Object#hashCode()
      * Object.hashCode} method.
      *
      * @return  A hash-code value for this virtual machine
@@ -621,7 +621,7 @@ public abstract class VirtualMachine {
      * provider, and their {@link VirtualMachineDescriptor#id() identifiers} are equal. </p>
      *
      * <p> This method satisfies the general contract of the {@link
-     * java.lang.Object#equals(Object) Object.equals} method. </p>
+     * j86.java.lang.Object#equals(Object) Object.equals} method. </p>
      *
      * @param   ob   The object to which this object is to be compared
      *

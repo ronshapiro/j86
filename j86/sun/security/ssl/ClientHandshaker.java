@@ -23,29 +23,29 @@
  * questions.
  */
 
-package sun.security.ssl;
+package j86.sun.security.ssl;
 
-import java.io.*;
-import java.math.BigInteger;
-import java.security.*;
-import java.util.*;
+import j86.java.io.*;
+import j86.java.math.BigInteger;
+import j86.java.security.*;
+import j86.java.util.*;
 
-import java.security.interfaces.ECPublicKey;
-import java.security.interfaces.RSAPublicKey;
-import java.security.spec.ECParameterSpec;
+import j86.j86.java.security.interfaces.ECPublicKey;
+import j86.j86.java.security.interfaces.RSAPublicKey;
+import j86.j86.java.security.spec.ECParameterSpec;
 
-import java.security.cert.X509Certificate;
-import java.security.cert.CertificateException;
+import j86.j86.java.security.cert.X509Certificate;
+import j86.j86.java.security.cert.CertificateException;
 
-import javax.crypto.SecretKey;
-import javax.crypto.spec.SecretKeySpec;
+import j86.javax.crypto.SecretKey;
+import j86.j86.javax.crypto.spec.SecretKeySpec;
 
-import javax.net.ssl.*;
+import j86.j86.javax.net.ssl.*;
 
-import javax.security.auth.Subject;
+import j86.javax.security.auth.Subject;
 
-import sun.security.ssl.HandshakeMessage.*;
-import static sun.security.ssl.CipherSuite.KeyExchange.*;
+import j86.sun.security.ssl.HandshakeMessage.*;
+import static j86.sun.security.ssl.CipherSuite.KeyExchange.*;
 
 /**
  * ClientHandshaker does the protocol handshaking from the point
@@ -537,7 +537,7 @@ final class ClientHandshaker extends Handshaker {
                         if (debug != null && Debug.isOn("session"))
                             System.out.println("Kerberos credentials are not" +
                                 " present in the current Subject; check if " +
-                                " javax.security.auth.useSubjectAsCreds" +
+                                " j86.javax.security.auth.useSubjectAsCreds" +
                                 " system property has been set to false");
                         throw new SSLProtocolException
                             ("Server resumed session with no subject");

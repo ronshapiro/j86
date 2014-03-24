@@ -24,15 +24,15 @@
  */
 
 
-package javax.management.openmbean;
+package j86.j86.javax.management.openmbean;
 
 
 // java import
 //
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.List;
+import j86.java.util.ArrayList;
+import j86.java.util.Collections;
+import j86.java.util.Iterator;
+import j86.java.util.List;
 
 // jmx import
 //
@@ -89,8 +89,8 @@ public class TabularType extends OpenType<TabularData> {
      *                     cannot be null or empty. Each element should be an item name defined in <var>rowType</var>
      *                     (no null or empty string allowed).
      *                     It is important to note that the <b>order</b> of the item names in <var>indexNames</var>
-     *                     is used by the methods {@link TabularData#get(java.lang.Object[]) get} and
-     *                     {@link TabularData#remove(java.lang.Object[]) remove} of class
+     *                     is used by the methods {@link TabularData#get(j86.java.lang.Object[]) get} and
+     *                     {@link TabularData#remove(j86.java.lang.Object[]) remove} of class
      *                     <code>TabularData</code> to match their array of values parameter to items.
      * <br>&nbsp;
      * @throws IllegalArgumentException  if <var>rowType</var> is null,
@@ -206,11 +206,11 @@ public class TabularType extends OpenType<TabularData> {
      * described by this <code>TabularType</code> instance.
      *
      * <p>If <var>obj</var> is null or is not an instance of
-     * <code>javax.management.openmbean.TabularData</code>,
+     * <code>j86.j86.javax.management.openmbean.TabularData</code>,
      * <code>isValue</code> returns <code>false</code>.</p>
      *
      * <p>If <var>obj</var> is an instance of
-     * <code>javax.management.openmbean.TabularData</code>, say {@code
+     * <code>j86.j86.javax.management.openmbean.TabularData</code>, say {@code
      * td}, the result is true if this {@code TabularType} is
      * <em>assignable from</em> {@link TabularData#getTabularType()
      * td.getTabularType()}, as defined in {@link
@@ -342,7 +342,7 @@ public class TabularType extends OpenType<TabularData> {
     /**
      * Returns a string representation of this <code>TabularType</code> instance.
      * <p>
-     * The string representation consists of the name of this class (ie <code>javax.management.openmbean.TabularType</code>),
+     * The string representation consists of the name of this class (ie <code>j86.j86.javax.management.openmbean.TabularType</code>),
      * the type name for this instance, the row type string representation of this instance,
      * and the index names of this instance.
      * <p>

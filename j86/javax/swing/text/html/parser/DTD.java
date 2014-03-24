@@ -23,25 +23,25 @@
  * questions.
  */
 
-package javax.swing.text.html.parser;
+package j86.j86.j86.j86.javax.swing.text.html.parser;
 
-import sun.awt.AppContext;
+import j86.sun.awt.AppContext;
 
-import java.io.PrintStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.InputStream;
-import java.io.IOException;
-import java.io.FileNotFoundException;
-import java.io.BufferedInputStream;
-import java.io.DataInputStream;
-import java.util.Hashtable;
-import java.util.Vector;
-import java.util.BitSet;
-import java.util.StringTokenizer;
-import java.util.Enumeration;
-import java.util.Properties;
-import java.net.URL;
+import j86.java.io.PrintStream;
+import j86.java.io.File;
+import j86.java.io.FileInputStream;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
+import j86.java.io.FileNotFoundException;
+import j86.java.io.BufferedInputStream;
+import j86.java.io.DataInputStream;
+import j86.java.util.Hashtable;
+import j86.java.util.Vector;
+import j86.java.util.BitSet;
+import j86.java.util.StringTokenizer;
+import j86.java.util.Enumeration;
+import j86.java.util.Properties;
+import j86.java.net.URL;
 
 /**
  * The representation of an SGML DTD.  DTD describes a document

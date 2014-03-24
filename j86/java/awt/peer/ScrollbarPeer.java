@@ -22,9 +22,9 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.awt.peer;
+package j86.j86.java.awt.peer;
 
-import java.awt.Scrollbar;
+import j86.java.awt.Scrollbar;
 
 /**
  * The peer interface for {@link Scrollbar}.

@@ -22,22 +22,22 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing;
+package j86.javax.swing;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.awt.image.*;
-import java.lang.reflect.*;
-import java.lang.ref.WeakReference;
-import java.util.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.j86.j86.java.awt.image.*;
+import j86.j86.j86.java.lang.reflect.*;
+import j86.j86.java.lang.ref.WeakReference;
+import j86.java.util.*;
 
-import com.sun.java.swing.SwingUtilities3;
+import j86.com.sun.java.swing.SwingUtilities3;
 
-import sun.awt.SubRegionShowable;
-import sun.java2d.SunGraphics2D;
-import sun.java2d.pipe.hw.ExtendedBufferCapabilities;
-import sun.awt.SunToolkit;
-import sun.util.logging.PlatformLogger;
+import j86.sun.awt.SubRegionShowable;
+import j86.sun.java2d.SunGraphics2D;
+import j86.j86.j86.sun.java2d.pipe.hw.ExtendedBufferCapabilities;
+import j86.sun.awt.SunToolkit;
+import j86.j86.sun.util.logging.PlatformLogger;
 
 /**
  * A PaintManager implementation that uses a BufferStrategy for
@@ -76,7 +76,7 @@ class BufferStrategyPaintManager extends RepaintManager.PaintManager {
     private static Method COMPONENT_GET_BUFFER_STRATEGY_METHOD;
 
     private static final PlatformLogger LOGGER = PlatformLogger.getLogger(
-                           "javax.swing.BufferStrategyPaintManager");
+                           "j86.javax.swing.BufferStrategyPaintManager");
 
     /**
      * List of BufferInfos.  We don't use a Map primarily because
@@ -158,8 +158,8 @@ class BufferStrategyPaintManager extends RepaintManager.PaintManager {
     }
 
     private static void getMethods() {
-        java.security.AccessController.doPrivileged(
-                            new java.security.PrivilegedAction<Object>() {
+        j86.java.security.AccessController.doPrivileged(
+                            new j86.java.security.PrivilegedAction<Object>() {
             public Object run() {
                 try {
                     COMPONENT_CREATE_BUFFER_STRATEGY_METHOD = Component.class.
@@ -198,7 +198,7 @@ class BufferStrategyPaintManager extends RepaintManager.PaintManager {
         // invokeLater.
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
-                java.util.List<BufferInfo> bufferInfos;
+                j86.java.util.List<BufferInfo> bufferInfos;
                 synchronized(BufferStrategyPaintManager.this) {
                     while (showing) {
                         try {
@@ -214,7 +214,7 @@ class BufferStrategyPaintManager extends RepaintManager.PaintManager {
         });
     }
 
-    private void dispose(java.util.List<BufferInfo> bufferInfos) {
+    private void dispose(j86.java.util.List<BufferInfo> bufferInfos) {
         if (LOGGER.isLoggable(PlatformLogger.Level.FINER)) {
             LOGGER.finer("BufferStrategyPaintManager disposed",
                          new RuntimeException());
@@ -570,7 +570,7 @@ class BufferStrategyPaintManager extends RepaintManager.PaintManager {
         xOffset = yOffset = 0;
         while (root != null &&
                (!(root instanceof Window) &&
-                !SunToolkit.isInstanceOf(root, "java.applet.Applet"))) {
+                !SunToolkit.isInstanceOf(root, "j86.java.applet.Applet"))) {
             xOffset += root.getX();
             yOffset += root.getY();
             root = root.getParent();
@@ -837,7 +837,7 @@ class BufferStrategyPaintManager extends RepaintManager.PaintManager {
                     null);
             }
             BufferStrategy bs = null;
-            if (SunToolkit.isInstanceOf(root, "java.applet.Applet")) {
+            if (SunToolkit.isInstanceOf(root, "j86.java.applet.Applet")) {
                 try {
                     getCreateBufferStrategyMethod().invoke(root, 2, caps);
                     bs = (BufferStrategy)getGetBufferStrategyMethod().

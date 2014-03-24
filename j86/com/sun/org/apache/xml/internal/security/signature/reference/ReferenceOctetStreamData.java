@@ -26,9 +26,9 @@
 /*
  * $Id$
  */
-package com.sun.org.apache.xml.internal.security.signature.reference;
+package j86.j86.j86.com.sun.org.apache.xml.internal.security.signature.reference;
 
-import java.io.InputStream;
+import j86.java.io.InputStream;
 
 /**
  * A representation of a <code>ReferenceData</code> type containing an OctetStream.

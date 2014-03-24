@@ -23,21 +23,21 @@
  * questions.
  */
 
-package sun.reflect.annotation;
+package j86.j86.sun.reflect.annotation;
 
-import java.lang.annotation.*;
-import java.lang.reflect.*;
-import java.nio.ByteBuffer;
-import java.nio.BufferUnderflowException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.Map;
-import sun.misc.JavaLangAccess;
-import sun.reflect.ConstantPool;
-import static sun.reflect.annotation.TypeAnnotation.*;
+import j86.j86.java.lang.annotation.*;
+import j86.j86.j86.java.lang.reflect.*;
+import j86.java.nio.ByteBuffer;
+import j86.java.nio.BufferUnderflowException;
+import j86.java.util.ArrayList;
+import j86.java.util.Arrays;
+import j86.java.util.List;
+import j86.java.util.HashMap;
+import j86.java.util.LinkedHashMap;
+import j86.java.util.Map;
+import j86.sun.misc.JavaLangAccess;
+import j86.sun.reflect.ConstantPool;
+import static j86.j86.sun.reflect.annotation.TypeAnnotation.*;
 
 /**
  * TypeAnnotationParser implements the logic needed to parse
@@ -310,7 +310,7 @@ public final class TypeAnnotationParser {
     static TypeAnnotation[] parseAllTypeAnnotations(AnnotatedElement decl) {
         Class<?> container;
         byte[] rawBytes;
-        JavaLangAccess javaLangAccess = sun.misc.SharedSecrets.getJavaLangAccess();
+        JavaLangAccess javaLangAccess = j86.sun.misc.SharedSecrets.getJavaLangAccess();
         if (decl instanceof Class) {
             container = (Class<?>)decl;
             rawBytes = javaLangAccess.getRawClassTypeAnnotations(container);

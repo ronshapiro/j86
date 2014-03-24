@@ -24,7 +24,7 @@
  * questions.
  */
 
-package java.util;
+package j86.java.util;
 
 /**
  * This is a near duplicate of {@link TimSort}, modified for use with

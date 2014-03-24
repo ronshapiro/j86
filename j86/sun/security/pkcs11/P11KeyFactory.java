@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.security.pkcs11;
+package j86.j86.sun.security.pkcs11;
 
-import java.security.*;
-import java.security.spec.*;
+import j86.java.security.*;
+import j86.j86.java.security.spec.*;
 
-import sun.security.pkcs11.wrapper.PKCS11Exception;
+import j86.j86.j86.sun.security.pkcs11.wrapper.PKCS11Exception;
 
 /**
  * KeyFactory base class. Provides common infrastructure for the RSA, DSA,

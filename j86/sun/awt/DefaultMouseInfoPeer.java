@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.awt;
+package j86.sun.awt;
 
-import java.awt.Point;
-import java.awt.Window;
-import java.awt.peer.MouseInfoPeer;
+import j86.java.awt.Point;
+import j86.java.awt.Window;
+import j86.j86.java.awt.peer.MouseInfoPeer;
 
 public class DefaultMouseInfoPeer implements MouseInfoPeer {
 

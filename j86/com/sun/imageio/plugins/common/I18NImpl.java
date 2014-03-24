@@ -23,11 +23,11 @@
  * questions.
  */
 
-package com.sun.imageio.plugins.common;
+package j86.com.sun.imageio.plugins.common;
 
-import java.io.InputStream;
-import java.util.PropertyResourceBundle;
-import java.net.URL;
+import j86.java.io.InputStream;
+import j86.java.util.PropertyResourceBundle;
+import j86.java.net.URL;
 
 /**
  * Class to simplify use of internationalization message strings.

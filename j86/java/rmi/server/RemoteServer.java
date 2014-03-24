@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.rmi.server;
+package j86.j86.java.rmi.server;
 
-import java.rmi.*;
-import sun.rmi.server.UnicastServerRef;
-import sun.rmi.runtime.Log;
+import j86.java.rmi.*;
+import j86.sun.rmi.server.UnicastServerRef;
+import j86.sun.rmi.runtime.Log;
 
 /**
  * The <code>RemoteServer</code> class is the common superclass to server
@@ -74,7 +74,7 @@ public abstract class RemoteServer extends RemoteObject
      * @since   JDK1.1
      */
     public static String getClientHost() throws ServerNotActiveException {
-        return sun.rmi.transport.tcp.TCPTransport.getClientHost();
+        return j86.j86.sun.rmi.transport.tcp.TCPTransport.getClientHost();
     }
 
     /**
@@ -83,7 +83,7 @@ public abstract class RemoteServer extends RemoteObject
      *
      * <p>If there is a security manager, its
      * <code>checkPermission</code> method will be invoked with a
-     * <code>java.util.logging.LoggingPermission("control")</code>
+     * <code>j86.j86.java.util.logging.LoggingPermission("control")</code>
      * permission; this could result in a <code>SecurityException</code>.
      *
      * @param   out the output stream to which RMI calls should be logged
@@ -93,7 +93,7 @@ public abstract class RemoteServer extends RemoteObject
      * @see #getLog
      * @since JDK1.1
      */
-    public static void setLog(java.io.OutputStream out)
+    public static void setLog(j86.java.io.OutputStream out)
     {
         logNull = (out == null);
         UnicastServerRef.callLog.setOutputStream(out);
@@ -105,7 +105,7 @@ public abstract class RemoteServer extends RemoteObject
      * @see #setLog
      * @since JDK1.1
      */
-    public static java.io.PrintStream getLog()
+    public static j86.java.io.PrintStream getLog()
     {
         return (logNull ? null : UnicastServerRef.callLog.getPrintStream());
     }

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.nio.file.attribute;
+package j86.j86.j86.java.nio.file.attribute;
 
 /**
  * Basic attributes associated with a file in a file system.
@@ -144,12 +144,12 @@ public interface BasicFileAttributes {
      *
      * <p> File keys returned by this method can be compared for equality and are
      * suitable for use in collections. If the file system and files remain static,
-     * and two files are the {@link java.nio.file.Files#isSameFile same} with
+     * and two files are the {@link j86.j86.java.nio.file.Files#isSameFile same} with
      * non-{@code null} file keys, then their file keys are equal.
      *
      * @return an object that uniquely identifies the given file, or {@code null}
      *
-     * @see java.nio.file.Files#walkFileTree
+     * @see j86.j86.java.nio.file.Files#walkFileTree
      */
     Object fileKey();
 }

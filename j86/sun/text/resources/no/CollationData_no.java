@@ -41,9 +41,9 @@
  *
  */
 
-package sun.text.resources.no;
+package j86.j86.j86.sun.text.resources.no;
 
-import java.util.ListResourceBundle;
+import j86.java.util.ListResourceBundle;
 
 public class CollationData_no extends ListResourceBundle {
 

@@ -24,21 +24,21 @@
  */
 
 
-package javax.management.remote;
+package j86.j86.javax.management.remote;
 
 
-import com.sun.jmx.remote.util.ClassLogger;
-import com.sun.jmx.remote.util.EnvHelp;
-import java.io.IOException;
-import java.io.InvalidObjectException;
-import java.io.ObjectInputStream;
+import j86.com.sun.jmx.remote.util.ClassLogger;
+import j86.com.sun.jmx.remote.util.EnvHelp;
+import j86.java.io.IOException;
+import j86.java.io.InvalidObjectException;
+import j86.java.io.ObjectInputStream;
 
-import java.io.Serializable;
-import java.net.InetAddress;
-import java.net.MalformedURLException;
-import java.net.UnknownHostException;
-import java.util.BitSet;
-import java.util.StringTokenizer;
+import j86.java.io.Serializable;
+import j86.java.net.InetAddress;
+import j86.java.net.MalformedURLException;
+import j86.java.net.UnknownHostException;
+import j86.java.util.BitSet;
+import j86.java.util.StringTokenizer;
 
 /**
  * <p>The address of a JMX API connector server.  Instances of this class
@@ -729,5 +729,5 @@ public class JMXServiceURL implements Serializable {
     private transient String toString;
 
     private static final ClassLogger logger =
-        new ClassLogger("javax.management.remote.misc", "JMXServiceURL");
+        new ClassLogger("j86.j86.javax.management.remote.misc", "JMXServiceURL");
 }

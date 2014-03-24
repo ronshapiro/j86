@@ -22,18 +22,18 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.awt.dnd;
+package j86.j86.java.awt.dnd;
 
-import java.awt.AWTEventMulticaster;
-import java.io.ObjectOutputStream;
-import java.io.IOException;
-import java.util.EventListener;
+import j86.java.awt.AWTEventMulticaster;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.IOException;
+import j86.java.util.EventListener;
 
 
 /**
  * A class extends <code>AWTEventMulticaster</code> to implement efficient and
  * thread-safe multi-cast event dispatching for the drag-and-drop events defined
- * in the java.awt.dnd package.
+ * in the j86.j86.java.awt.dnd package.
  *
  * @since       1.4
  * @see AWTEventMulticaster

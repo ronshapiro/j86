@@ -24,22 +24,22 @@
  */
 
 
-package com.sun.jmx.snmp.daemon;
+package j86.j86.j86.com.sun.jmx.snmp.daemon;
 
 
 
 // java imports
 //
-import java.util.Vector;
-import java.util.Enumeration;
+import j86.java.util.Vector;
+import j86.java.util.Enumeration;
 
 // jmx imports
 //
-import com.sun.jmx.snmp.SnmpOid;
+import j86.com.sun.jmx.snmp.SnmpOid;
 
 // SNMP Runtime imports
 //
-import com.sun.jmx.snmp.agent.SnmpMibAgent;
+import j86.j86.com.sun.jmx.snmp.agent.SnmpMibAgent;
 
 /**
  * The class is used for building a tree representation of the different

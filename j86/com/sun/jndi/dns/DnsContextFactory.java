@@ -23,19 +23,19 @@
  * questions.
  */
 
-package com.sun.jndi.dns;
+package j86.com.sun.jndi.dns;
 
 
-import java.net.MalformedURLException;
-import java.util.ArrayList;
-import java.util.Hashtable;
-import java.util.List;
+import j86.java.net.MalformedURLException;
+import j86.java.util.ArrayList;
+import j86.java.util.Hashtable;
+import j86.java.util.List;
 
-import javax.naming.*;
-import javax.naming.spi.*;
+import j86.javax.naming.*;
+import j86.j86.javax.naming.spi.*;
 
-import com.sun.jndi.toolkit.url.UrlUtil;
-import sun.net.dns.ResolverConfiguration;       // available since 1.4.1
+import j86.com.sun.jndi.toolkit.url.UrlUtil;
+import j86.j86.sun.net.dns.ResolverConfiguration;       // available since 1.4.1
 
 
 /**
@@ -193,7 +193,7 @@ public class DnsContextFactory implements InitialContextFactory {
         if (!domain.equals(".")) {
             try {
                 path = "/" + UrlUtil.encode(domain, "ISO-8859-1");
-            } catch (java.io.UnsupportedEncodingException e) {
+            } catch (j86.java.io.UnsupportedEncodingException e) {
                 // assert false : "ISO-Latin-1 charset unavailable";
             }
         }

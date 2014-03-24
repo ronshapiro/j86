@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.lang.annotation;
+package j86.j86.java.lang.annotation;
 
 /**
  * The common interface extended by all annotation types.  Note that an
@@ -34,7 +34,7 @@ package java.lang.annotation;
  * More information about annotation types can be found in section 9.6 of
  * <cite>The Java&trade; Language Specification</cite>.
  *
- * The {@link java.lang.reflect.AnnotatedElement} interface discusses
+ * The {@link j86.j86.j86.java.lang.reflect.AnnotatedElement} interface discusses
  * compatibility concerns when evolving an annotation type from being
  * non-repeatable to being repeatable.
  *
@@ -72,7 +72,7 @@ public interface Annotation {
      *
      *    <li>Two corresponding array typed members <tt>x</tt> and <tt>y</tt>
      *    are considered equal if <tt>Arrays.equals(x, y)</tt>, for the
-     *    appropriate overloading of {@link java.util.Arrays#equals}.
+     *    appropriate overloading of {@link j86.java.util.Arrays#equals}.
      * </ul>
      *
      * @return true if the specified object represents an annotation
@@ -107,7 +107,7 @@ public interface Annotation {
      *
      * <li>The hash code of an array member-value is computed by calling
      *     the appropriate overloading of
-     *     {@link java.util.Arrays#hashCode(long[]) Arrays.hashCode}
+     *     {@link j86.java.util.Arrays#hashCode(long[]) Arrays.hashCode}
      *     on the value.  (There is one overloading for each primitive
      *     type, and one for object reference types.)
      * </ul>

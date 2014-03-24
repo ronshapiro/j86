@@ -23,21 +23,21 @@
  * questions.
  */
 
-package javax.management;
+package j86.javax.management;
 
-import com.sun.jmx.mbeanserver.GetPropertyAction;
-import com.sun.jmx.mbeanserver.Util;
-import java.io.IOException;
-import java.io.InvalidObjectException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.ObjectStreamField;
-import java.security.AccessController;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Hashtable;
-import java.util.Map;
+import j86.com.sun.jmx.mbeanserver.GetPropertyAction;
+import j86.com.sun.jmx.mbeanserver.Util;
+import j86.java.io.IOException;
+import j86.java.io.InvalidObjectException;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectStreamField;
+import j86.java.security.AccessController;
+import j86.java.util.Arrays;
+import j86.java.util.Collections;
+import j86.java.util.HashMap;
+import j86.java.util.Hashtable;
+import j86.java.util.Map;
 
 /**
  * <p>Represents the object name of an MBean, or a pattern that can

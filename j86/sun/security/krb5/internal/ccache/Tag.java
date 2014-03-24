@@ -28,10 +28,10 @@
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
 
-package sun.security.krb5.internal.ccache;
+package j86.j86.j86.sun.security.krb5.internal.ccache;
 
-import sun.security.krb5.*;
-import java.io.ByteArrayOutputStream;
+import j86.sun.security.krb5.*;
+import j86.java.io.ByteArrayOutputStream;
 
 /**
  * tag field introduced in KRB5_FCC_FVNO_4

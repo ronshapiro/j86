@@ -23,33 +23,33 @@
  * questions.
  */
 
-package com.sun.jmx.snmp.daemon;
+package j86.j86.j86.com.sun.jmx.snmp.daemon;
 
 // java imports
 //
-import java.util.logging.Level;
-import java.util.Vector;
+import j86.j86.java.util.logging.Level;
+import j86.java.util.Vector;
 
 // jmx imports
 //
-import com.sun.jmx.snmp.SnmpEngine;
-import com.sun.jmx.snmp.SnmpPdu;
-import com.sun.jmx.snmp.SnmpValue;
-import com.sun.jmx.snmp.SnmpVarBind;
-import com.sun.jmx.snmp.SnmpVarBindList;
-import com.sun.jmx.snmp.SnmpOid;
-import com.sun.jmx.snmp.SnmpDefinitions;
-import com.sun.jmx.snmp.SnmpStatusException;
+import j86.com.sun.jmx.snmp.SnmpEngine;
+import j86.com.sun.jmx.snmp.SnmpPdu;
+import j86.com.sun.jmx.snmp.SnmpValue;
+import j86.com.sun.jmx.snmp.SnmpVarBind;
+import j86.com.sun.jmx.snmp.SnmpVarBindList;
+import j86.com.sun.jmx.snmp.SnmpOid;
+import j86.com.sun.jmx.snmp.SnmpDefinitions;
+import j86.com.sun.jmx.snmp.SnmpStatusException;
 // SNMP Runtime import
 //
-import static com.sun.jmx.defaults.JmxProperties.SNMP_ADAPTOR_LOGGER;
-import com.sun.jmx.snmp.agent.SnmpMibAgent;
-import com.sun.jmx.snmp.agent.SnmpMibRequest;
-import com.sun.jmx.snmp.daemon.SnmpAdaptorServer;
-import com.sun.jmx.snmp.internal.SnmpIncomingRequest;
+import static j86.com.sun.jmx.defaults.JmxProperties.SNMP_ADAPTOR_LOGGER;
+import j86.j86.com.sun.jmx.snmp.agent.SnmpMibAgent;
+import j86.j86.com.sun.jmx.snmp.agent.SnmpMibRequest;
+import j86.j86.j86.com.sun.jmx.snmp.daemon.SnmpAdaptorServer;
+import j86.j86.com.sun.jmx.snmp.internal.SnmpIncomingRequest;
 
 /* NPCTE fix for bugId 4492741, esc 0 */
-import com.sun.jmx.snmp.ThreadContext;
+import j86.com.sun.jmx.snmp.ThreadContext;
 /* end of NPCTE fix for bugId 4492741 */
 
 class SnmpSubNextRequestHandler extends SnmpSubRequestHandler {

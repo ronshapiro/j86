@@ -22,23 +22,23 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.jmx.snmp.agent;
+package j86.j86.com.sun.jmx.snmp.agent;
 
-import java.util.Vector;
-import java.util.Hashtable;
-import java.util.Enumeration;
-import java.util.Iterator;
-import java.util.NoSuchElementException;
-import java.util.Arrays;
-import java.util.logging.Level;
+import j86.java.util.Vector;
+import j86.java.util.Hashtable;
+import j86.java.util.Enumeration;
+import j86.java.util.Iterator;
+import j86.java.util.NoSuchElementException;
+import j86.java.util.Arrays;
+import j86.j86.java.util.logging.Level;
 
-import static com.sun.jmx.defaults.JmxProperties.SNMP_ADAPTOR_LOGGER;
-import com.sun.jmx.snmp.SnmpVarBind;
-import com.sun.jmx.snmp.SnmpStatusException;
-import com.sun.jmx.snmp.SnmpDefinitions;
-import com.sun.jmx.snmp.SnmpOid;
-import com.sun.jmx.snmp.SnmpPdu;
-import com.sun.jmx.snmp.SnmpEngine;
+import static j86.com.sun.jmx.defaults.JmxProperties.SNMP_ADAPTOR_LOGGER;
+import j86.com.sun.jmx.snmp.SnmpVarBind;
+import j86.com.sun.jmx.snmp.SnmpStatusException;
+import j86.com.sun.jmx.snmp.SnmpDefinitions;
+import j86.com.sun.jmx.snmp.SnmpOid;
+import j86.com.sun.jmx.snmp.SnmpPdu;
+import j86.com.sun.jmx.snmp.SnmpEngine;
 
 //  XXX: things to do: use SnmpOid rather than `instance' for future
 //       evolutions.
@@ -555,13 +555,13 @@ final class SnmpRequestTree {
 
                 // Copy original vectors up to `pos'
                 if (l1 > 0) {
-                    java.lang.System.arraycopy(olde,0,entryoids,
+                    j86.java.lang.System.arraycopy(olde,0,entryoids,
                                                0,l1);
-                    java.lang.System.arraycopy(oldl,0,entrylists,
+                    j86.java.lang.System.arraycopy(oldl,0,entrylists,
                                                0,l1);
-                    java.lang.System.arraycopy(oldn,0,isentrynew,
+                    j86.java.lang.System.arraycopy(oldn,0,isentrynew,
                                                0,l1);
-                    java.lang.System.arraycopy(oldr,0,rowstatus,
+                    j86.java.lang.System.arraycopy(oldr,0,rowstatus,
                                                0,l1);
                 }
 
@@ -569,13 +569,13 @@ final class SnmpRequestTree {
                 // an empty room at `pos' in the new vectors.
                 if (l2 > 0) {
                     final int l3 = l1+1;
-                    java.lang.System.arraycopy(olde,l1,entryoids,
+                    j86.java.lang.System.arraycopy(olde,l1,entryoids,
                                                l3,l2);
-                    java.lang.System.arraycopy(oldl,l1,entrylists,
+                    j86.java.lang.System.arraycopy(oldl,l1,entrylists,
                                                l3,l2);
-                    java.lang.System.arraycopy(oldn,l1,isentrynew,
+                    j86.java.lang.System.arraycopy(oldn,l1,isentrynew,
                                                l3,l2);
-                    java.lang.System.arraycopy(oldr,l1,rowstatus,
+                    j86.java.lang.System.arraycopy(oldr,l1,rowstatus,
                                                l3,l2);
                 }
 
@@ -588,13 +588,13 @@ final class SnmpRequestTree {
                 final int l1 = pos+1;
                 final int l2 = entrycount - pos;
 
-                java.lang.System.arraycopy(entryoids,pos,entryoids,
+                j86.java.lang.System.arraycopy(entryoids,pos,entryoids,
                                            l1,l2);
-                java.lang.System.arraycopy(entrylists,pos,entrylists,
+                j86.java.lang.System.arraycopy(entrylists,pos,entrylists,
                                            l1,l2);
-                java.lang.System.arraycopy(isentrynew,pos,isentrynew,
+                j86.java.lang.System.arraycopy(isentrynew,pos,isentrynew,
                                            l1,l2);
-                java.lang.System.arraycopy(rowstatus,pos,rowstatus,
+                j86.java.lang.System.arraycopy(rowstatus,pos,rowstatus,
                                            l1,l2);
             }
 

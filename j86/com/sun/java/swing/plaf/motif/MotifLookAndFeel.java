@@ -23,28 +23,28 @@
  * questions.
  */
 
-package com.sun.java.swing.plaf.motif;
+package j86.j86.com.sun.java.swing.plaf.motif;
 
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.Insets;
-import java.awt.event.KeyEvent;
-import java.awt.event.InputEvent;
-import java.util.*;
+import j86.java.awt.Color;
+import j86.java.awt.Font;
+import j86.java.awt.Insets;
+import j86.j86.java.awt.event.KeyEvent;
+import j86.j86.java.awt.event.InputEvent;
+import j86.java.util.*;
 
-import javax.swing.*;
-import javax.swing.plaf.*;
-import javax.swing.border.*;
-import javax.swing.text.JTextComponent;
-import javax.swing.text.DefaultEditorKit;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.javax.swing.border.*;
+import j86.j86.javax.swing.text.JTextComponent;
+import j86.j86.javax.swing.text.DefaultEditorKit;
 
-import javax.swing.plaf.basic.BasicLookAndFeel;
-import javax.swing.plaf.basic.BasicBorders;
-import javax.swing.plaf.basic.BasicComboBoxRenderer;
-import javax.swing.plaf.basic.BasicComboBoxEditor;
+import j86.j86.j86.javax.swing.plaf.basic.BasicLookAndFeel;
+import j86.j86.j86.javax.swing.plaf.basic.BasicBorders;
+import j86.j86.j86.javax.swing.plaf.basic.BasicComboBoxRenderer;
+import j86.j86.j86.javax.swing.plaf.basic.BasicComboBoxEditor;
 
-import sun.swing.SwingUtilities2;
-import sun.awt.OSInfo;
+import j86.sun.swing.SwingUtilities2;
+import j86.sun.awt.OSInfo;
 
 /**
  * Implements the Motif Look and Feel.
@@ -132,7 +132,7 @@ public class MotifLookAndFeel extends BasicLookAndFeel
     protected void initClassDefaults(UIDefaults table)
     {
         super.initClassDefaults(table);
-        String motifPackageName = "com.sun.java.swing.plaf.motif.";
+        String motifPackageName = "j86.j86.com.sun.java.swing.plaf.motif.";
 
         Object[] uiDefaults = {
                    "ButtonUI", motifPackageName + "MotifButtonUI",
@@ -178,7 +178,7 @@ public class MotifLookAndFeel extends BasicLookAndFeel
      * used for getting localized defaults.
      */
     private void initResourceBundle(UIDefaults table) {
-        table.addResourceBundle( "com.sun.java.swing.plaf.motif.resources.motif" );
+        table.addResourceBundle( "j86.j86.com.sun.java.swing.plaf.motif.resources.motif" );
     }
 
 

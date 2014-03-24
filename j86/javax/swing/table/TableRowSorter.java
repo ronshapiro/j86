@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.table;
+package j86.j86.javax.swing.table;
 
-import java.text.Collator;
-import java.util.*;
-import javax.swing.DefaultRowSorter;
-import javax.swing.RowFilter;
-import javax.swing.SortOrder;
+import j86.java.text.Collator;
+import j86.java.util.*;
+import j86.javax.swing.DefaultRowSorter;
+import j86.javax.swing.RowFilter;
+import j86.javax.swing.SortOrder;
 
 /**
  * An implementation of <code>RowSorter</code> that provides sorting
@@ -120,11 +120,11 @@ import javax.swing.SortOrder;
  *
  * @param <M> the type of the model, which must be an implementation of
  *            <code>TableModel</code>
- * @see javax.swing.JTable
- * @see javax.swing.RowFilter
- * @see javax.swing.table.DefaultTableModel
- * @see java.text.Collator
- * @see java.util.Comparator
+ * @see j86.javax.swing.JTable
+ * @see j86.javax.swing.RowFilter
+ * @see j86.j86.javax.swing.table.DefaultTableModel
+ * @see j86.java.text.Collator
+ * @see j86.java.util.Comparator
  * @since 1.6
  */
 public class TableRowSorter<M extends TableModel> extends DefaultRowSorter<M, Integer> {

@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.naming;
+package j86.javax.naming;
 
-import java.util.Hashtable;
+import j86.java.util.Hashtable;
 
 /**
  * This abstract class is used to represent a referral exception,
@@ -74,7 +74,7 @@ public abstract class ReferralException extends NamingException {
      * explanation supplied. All other fields are set to null.
      *
      * @param   explanation     Additional detail about this exception. Can be null.
-     * @see java.lang.Throwable#getMessage
+     * @see j86.java.lang.Throwable#getMessage
      */
     protected ReferralException(String explanation) {
         super(explanation);

@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.swing.event;
+package j86.j86.javax.swing.event;
 
-import javax.swing.undo.*;
+import j86.j86.javax.swing.undo.*;
 
 /**
  * Interface implemented by a class interested in hearing about
@@ -34,7 +34,7 @@ import javax.swing.undo.*;
  * @author Ray Ryan
  */
 
-public interface UndoableEditListener extends java.util.EventListener {
+public interface UndoableEditListener extends j86.java.util.EventListener {
 
     /**
      * An undoable edit happened

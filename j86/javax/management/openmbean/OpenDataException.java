@@ -23,11 +23,11 @@
  * questions.
  */
 
-package javax.management.openmbean;
+package j86.j86.javax.management.openmbean;
 
 // jmx import
 //
-import javax.management.JMException;
+import j86.javax.management.JMException;
 
 /**
  * This checked exception is thrown when an <i>open type</i>, an <i>open data</i>  or an <i>open MBean metadata info</i> instance

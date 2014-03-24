@@ -23,22 +23,22 @@
  * questions.
  */
 
-package com.sun.jdi.request;
+package j86.j86.com.sun.jdi.request;
 
-import com.sun.jdi.*;
+import j86.com.sun.jdi.*;
 
 /**
  * Request for notification when a thread starts execution in the target VM.
  * When an enabled ThreadStartRequest is hit, an
- * {@link com.sun.jdi.event.EventSet event set} containing a
- * {@link com.sun.jdi.event.ThreadStartEvent ThreadStartEvent}
+ * {@link j86.j86.com.sun.jdi.event.EventSet event set} containing a
+ * {@link j86.j86.com.sun.jdi.event.ThreadStartEvent ThreadStartEvent}
  * will be placed on the
- * {@link com.sun.jdi.event.EventQueue EventQueue}.
+ * {@link j86.j86.com.sun.jdi.event.EventQueue EventQueue}.
  * The collection of existing ThreadStartRequests is
  * managed by the {@link EventRequestManager}
  *
- * @see com.sun.jdi.event.ThreadStartEvent
- * @see com.sun.jdi.event.EventQueue
+ * @see j86.j86.com.sun.jdi.event.ThreadStartEvent
+ * @see j86.j86.com.sun.jdi.event.EventQueue
  * @see EventRequestManager
  *
  * @author Robert Field

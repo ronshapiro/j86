@@ -23,19 +23,19 @@
  * questions.
  */
 
-package java.awt.image;
+package j86.j86.j86.java.awt.image;
 
-import java.awt.geom.AffineTransform;
-import java.awt.geom.NoninvertibleTransformException;
-import java.awt.geom.Rectangle2D;
-import java.awt.geom.Point2D;
-import java.awt.AlphaComposite;
-import java.awt.GraphicsEnvironment;
-import java.awt.Rectangle;
-import java.awt.RenderingHints;
-import java.awt.Transparency;
-import java.lang.annotation.Native;
-import sun.awt.image.ImagingLib;
+import j86.j86.java.awt.geom.AffineTransform;
+import j86.j86.java.awt.geom.NoninvertibleTransformException;
+import j86.j86.java.awt.geom.Rectangle2D;
+import j86.j86.java.awt.geom.Point2D;
+import j86.java.awt.AlphaComposite;
+import j86.java.awt.GraphicsEnvironment;
+import j86.java.awt.Rectangle;
+import j86.java.awt.RenderingHints;
+import j86.java.awt.Transparency;
+import j86.j86.java.lang.annotation.Native;
+import j86.j86.j86.sun.awt.image.ImagingLib;
 
 /**
  * This class uses an affine transform to perform a linear mapping from
@@ -58,10 +58,10 @@ import sun.awt.image.ImagingLib;
  * </ul>
  * @see AffineTransform
  * @see BufferedImageFilter
- * @see java.awt.RenderingHints#KEY_INTERPOLATION
- * @see java.awt.RenderingHints#KEY_RENDERING
- * @see java.awt.RenderingHints#KEY_COLOR_RENDERING
- * @see java.awt.RenderingHints#KEY_DITHERING
+ * @see j86.java.awt.RenderingHints#KEY_INTERPOLATION
+ * @see j86.java.awt.RenderingHints#KEY_RENDERING
+ * @see j86.java.awt.RenderingHints#KEY_COLOR_RENDERING
+ * @see j86.java.awt.RenderingHints#KEY_DITHERING
  */
 public class AffineTransformOp implements BufferedImageOp, RasterOp {
     private AffineTransform xform;
@@ -101,8 +101,8 @@ public class AffineTransformOp implements BufferedImageOp, RasterOp {
      * the interpolation type for the operation.
      *
      * @throws ImagingOpException if the transform is non-invertible.
-     * @see java.awt.RenderingHints#KEY_INTERPOLATION
-     * @see java.awt.RenderingHints#KEY_RENDERING
+     * @see j86.java.awt.RenderingHints#KEY_INTERPOLATION
+     * @see j86.java.awt.RenderingHints#KEY_RENDERING
      */
     public AffineTransformOp(AffineTransform xform, RenderingHints hints){
         validateTransform(xform);
@@ -290,7 +290,7 @@ public class AffineTransformOp implements BufferedImageOp, RasterOp {
             ccop.filter(dst, origDst);
         }
         else if (origDst != dst) {
-            java.awt.Graphics2D g = origDst.createGraphics();
+            j86.java.awt.Graphics2D g = origDst.createGraphics();
             try {
                 g.setComposite(AlphaComposite.Src);
                 g.drawImage(dst, 0, 0, null);

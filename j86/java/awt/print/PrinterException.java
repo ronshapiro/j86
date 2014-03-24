@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.awt.print;
+package j86.j86.java.awt.print;
 
 /**
  * The <code>PrinterException</code> class and its subclasses are used

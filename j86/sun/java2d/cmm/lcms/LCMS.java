@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.java2d.cmm.lcms;
+package j86.j86.j86.sun.java2d.cmm.lcms;
 
-import java.awt.color.CMMException;
-import java.awt.color.ICC_Profile;
-import sun.java2d.cmm.ColorTransform;
-import sun.java2d.cmm.PCMM;
-import sun.java2d.cmm.Profile;
-import sun.java2d.cmm.lcms.LCMSProfile.TagData;
+import j86.j86.java.awt.color.CMMException;
+import j86.j86.java.awt.color.ICC_Profile;
+import j86.j86.sun.java2d.cmm.ColorTransform;
+import j86.j86.sun.java2d.cmm.PCMM;
+import j86.j86.sun.java2d.cmm.Profile;
+import j86.j86.j86.sun.java2d.cmm.lcms.LCMSProfile.TagData;
 
 public class LCMS implements PCMM {
 
@@ -200,8 +200,8 @@ public class LCMS implements PCMM {
             return theLcms;
         }
 
-        java.security.AccessController.doPrivileged(
-                new java.security.PrivilegedAction() {
+        j86.java.security.AccessController.doPrivileged(
+                new j86.java.security.PrivilegedAction() {
                     public Object run() {
                         /* We need to load awt here because of usage trace and
                          * disposer frameworks

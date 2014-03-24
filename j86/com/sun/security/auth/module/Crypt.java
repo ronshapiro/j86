@@ -51,7 +51,7 @@
  * @author Roland Schemers
  */
 
-package com.sun.security.auth.module;
+package j86.j86.com.sun.security.auth.module;
 
 class Crypt {
 
@@ -391,7 +391,7 @@ class Crypt {
             for (int i=0; i<result.length; i++) {
                 System.out.println(" "+i+" "+(char)result[i]);
             }
-        } catch (java.io.UnsupportedEncodingException uee) {
+        } catch (j86.java.io.UnsupportedEncodingException uee) {
             // cannot happen
         }
     }

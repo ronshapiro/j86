@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.util.calendar;
+package j86.j86.sun.util.calendar;
 
-import java.util.HashMap;
-import java.util.Map;
+import j86.java.util.HashMap;
+import j86.java.util.Map;
 
 public class CalendarUtils {
 

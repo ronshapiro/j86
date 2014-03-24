@@ -23,37 +23,37 @@
  * questions.
  */
 
-package sun.java2d;
+package j86.sun.java2d;
 
-import java.awt.GraphicsEnvironment;
-import java.awt.GraphicsDevice;
-import java.awt.Graphics2D;
-import java.awt.HeadlessException;
-import java.awt.image.BufferedImage;
-import java.awt.Font;
-import java.text.AttributedCharacterIterator;
-import java.awt.print.PrinterJob;
-import java.util.Map;
-import java.util.Hashtable;
-import java.util.Locale;
-import java.util.Vector;
-import java.util.StringTokenizer;
-import java.util.ResourceBundle;
-import java.util.MissingResourceException;
-import java.io.IOException;
-import java.io.FilenameFilter;
-import java.io.File;
-import java.util.NoSuchElementException;
-import sun.awt.FontConfiguration;
-import java.util.TreeMap;
-import java.util.Set;
-import java.awt.font.TextAttribute;
-import java.io.InputStream;
-import java.io.FileInputStream;
-import java.io.BufferedInputStream;
-import java.util.Properties;
-import java.awt.Point;
-import java.awt.Rectangle;
+import j86.java.awt.GraphicsEnvironment;
+import j86.java.awt.GraphicsDevice;
+import j86.java.awt.Graphics2D;
+import j86.java.awt.HeadlessException;
+import j86.j86.j86.java.awt.image.BufferedImage;
+import j86.java.awt.Font;
+import j86.java.text.AttributedCharacterIterator;
+import j86.j86.java.awt.print.PrinterJob;
+import j86.java.util.Map;
+import j86.java.util.Hashtable;
+import j86.java.util.Locale;
+import j86.java.util.Vector;
+import j86.java.util.StringTokenizer;
+import j86.java.util.ResourceBundle;
+import j86.java.util.MissingResourceException;
+import j86.java.io.IOException;
+import j86.java.io.FilenameFilter;
+import j86.java.io.File;
+import j86.java.util.NoSuchElementException;
+import j86.sun.awt.FontConfiguration;
+import j86.java.util.TreeMap;
+import j86.java.util.Set;
+import j86.j86.java.awt.font.TextAttribute;
+import j86.java.io.InputStream;
+import j86.java.io.FileInputStream;
+import j86.java.io.BufferedInputStream;
+import j86.java.util.Properties;
+import j86.java.awt.Point;
+import j86.java.awt.Rectangle;
 
 /**
  * Headless decorator implementation of a SunGraphicsEnvironment

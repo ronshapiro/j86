@@ -20,13 +20,13 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.sun.org.apache.xml.internal.security.algorithms;
+package j86.j86.com.sun.org.apache.xml.internal.security.algorithms;
 
-import java.security.Key;
-import java.security.SecureRandom;
-import java.security.spec.AlgorithmParameterSpec;
+import j86.java.security.Key;
+import j86.java.security.SecureRandom;
+import j86.j86.java.security.spec.AlgorithmParameterSpec;
 
-import com.sun.org.apache.xml.internal.security.signature.XMLSignatureException;
+import j86.j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureException;
 import org.w3c.dom.Element;
 
 public abstract class SignatureAlgorithmSpi {
@@ -39,10 +39,10 @@ public abstract class SignatureAlgorithmSpi {
     protected abstract String engineGetURI();
 
     /**
-     * Proxy method for {@link java.security.Signature#getAlgorithm}
-     * which is executed on the internal {@link java.security.Signature} object.
+     * Proxy method for {@link j86.java.security.Signature#getAlgorithm}
+     * which is executed on the internal {@link j86.java.security.Signature} object.
      *
-     * @return the result of the {@link java.security.Signature#getAlgorithm} method
+     * @return the result of the {@link j86.java.security.Signature#getAlgorithm} method
      */
     protected abstract String engineGetJCEAlgorithmString();
 
@@ -54,8 +54,8 @@ public abstract class SignatureAlgorithmSpi {
     protected abstract String engineGetJCEProviderName();
 
     /**
-     * Proxy method for {@link java.security.Signature#update(byte[])}
-     * which is executed on the internal {@link java.security.Signature} object.
+     * Proxy method for {@link j86.java.security.Signature#update(byte[])}
+     * which is executed on the internal {@link j86.java.security.Signature} object.
      *
      * @param input
      * @throws XMLSignatureException
@@ -63,8 +63,8 @@ public abstract class SignatureAlgorithmSpi {
     protected abstract void engineUpdate(byte[] input) throws XMLSignatureException;
 
     /**
-     * Proxy method for {@link java.security.Signature#update(byte[])}
-     * which is executed on the internal {@link java.security.Signature} object.
+     * Proxy method for {@link j86.java.security.Signature#update(byte[])}
+     * which is executed on the internal {@link j86.java.security.Signature} object.
      *
      * @param input
      * @throws XMLSignatureException
@@ -72,8 +72,8 @@ public abstract class SignatureAlgorithmSpi {
     protected abstract void engineUpdate(byte input) throws XMLSignatureException;
 
     /**
-     * Proxy method for {@link java.security.Signature#update(byte[], int, int)}
-     * which is executed on the internal {@link java.security.Signature} object.
+     * Proxy method for {@link j86.java.security.Signature#update(byte[], int, int)}
+     * which is executed on the internal {@link j86.java.security.Signature} object.
      *
      * @param buf
      * @param offset
@@ -84,8 +84,8 @@ public abstract class SignatureAlgorithmSpi {
         throws XMLSignatureException;
 
     /**
-     * Proxy method for {@link java.security.Signature#initSign(java.security.PrivateKey)}
-     * which is executed on the internal {@link java.security.Signature} object.
+     * Proxy method for {@link j86.java.security.Signature#initSign(java.security.PrivateKey)}
+     * which is executed on the internal {@link j86.java.security.Signature} object.
      *
      * @param signingKey
      * @throws XMLSignatureException if this method is called on a MAC
@@ -93,9 +93,9 @@ public abstract class SignatureAlgorithmSpi {
     protected abstract void engineInitSign(Key signingKey) throws XMLSignatureException;
 
     /**
-     * Proxy method for {@link java.security.Signature#initSign(java.security.PrivateKey,
-     * java.security.SecureRandom)}
-     * which is executed on the internal {@link java.security.Signature} object.
+     * Proxy method for {@link j86.java.security.Signature#initSign(java.security.PrivateKey,
+     * j86.java.security.SecureRandom)}
+     * which is executed on the internal {@link j86.java.security.Signature} object.
      *
      * @param signingKey
      * @param secureRandom
@@ -105,8 +105,8 @@ public abstract class SignatureAlgorithmSpi {
         throws XMLSignatureException;
 
     /**
-     * Proxy method for {@link javax.crypto.Mac}
-     * which is executed on the internal {@link javax.crypto.Mac#init(Key)} object.
+     * Proxy method for {@link j86.javax.crypto.Mac}
+     * which is executed on the internal {@link j86.javax.crypto.Mac#init(Key)} object.
      *
      * @param signingKey
      * @param algorithmParameterSpec
@@ -117,10 +117,10 @@ public abstract class SignatureAlgorithmSpi {
     ) throws XMLSignatureException;
 
     /**
-     * Proxy method for {@link java.security.Signature#sign()}
-     * which is executed on the internal {@link java.security.Signature} object.
+     * Proxy method for {@link j86.java.security.Signature#sign()}
+     * which is executed on the internal {@link j86.java.security.Signature} object.
      *
-     * @return the result of the {@link java.security.Signature#sign()} method
+     * @return the result of the {@link j86.java.security.Signature#sign()} method
      * @throws XMLSignatureException
      */
     protected abstract byte[] engineSign() throws XMLSignatureException;
@@ -134,8 +134,8 @@ public abstract class SignatureAlgorithmSpi {
     protected abstract void engineInitVerify(Key verificationKey) throws XMLSignatureException;
 
     /**
-     * Proxy method for {@link java.security.Signature#verify(byte[])}
-     * which is executed on the internal {@link java.security.Signature} object.
+     * Proxy method for {@link j86.java.security.Signature#verify(byte[])}
+     * which is executed on the internal {@link j86.java.security.Signature} object.
      *
      * @param signature
      * @return true if the signature is correct
@@ -144,9 +144,9 @@ public abstract class SignatureAlgorithmSpi {
     protected abstract boolean engineVerify(byte[] signature) throws XMLSignatureException;
 
     /**
-     * Proxy method for {@link java.security.Signature#setParameter(
-     * java.security.spec.AlgorithmParameterSpec)}
-     * which is executed on the internal {@link java.security.Signature} object.
+     * Proxy method for {@link j86.java.security.Signature#setParameter(
+     * j86.j86.java.security.spec.AlgorithmParameterSpec)}
+     * which is executed on the internal {@link j86.java.security.Signature} object.
      *
      * @param params
      * @throws XMLSignatureException

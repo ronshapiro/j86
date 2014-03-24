@@ -22,14 +22,14 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.swing.plaf.synth;
+package j86.j86.j86.sun.swing.plaf.synth;
 
-import javax.swing.plaf.synth.*;
-import java.awt.*;
-import java.util.*;
-import javax.swing.*;
-import javax.swing.border.Border;
-import javax.swing.plaf.*;
+import j86.j86.j86.javax.swing.plaf.synth.*;
+import j86.java.awt.*;
+import j86.java.util.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.border.Border;
+import j86.j86.javax.swing.plaf.*;
 
 /**
  * Default implementation of SynthStyle. Has setters for the various

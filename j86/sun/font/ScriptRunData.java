@@ -30,7 +30,7 @@
  *******************************************************************************
  */
 
-package sun.font;
+package j86.sun.font;
 
 public final class ScriptRunData {
     private ScriptRunData() {}

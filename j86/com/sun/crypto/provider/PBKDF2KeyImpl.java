@@ -23,20 +23,20 @@
  * questions.
  */
 
-package com.sun.crypto.provider;
+package j86.com.sun.crypto.provider;
 
-import java.io.ObjectStreamException;
-import java.nio.ByteBuffer;
-import java.nio.CharBuffer;
-import java.nio.charset.Charset;
-import java.util.Arrays;
-import java.security.KeyRep;
-import java.security.GeneralSecurityException;
-import java.security.NoSuchAlgorithmException;
-import java.security.spec.InvalidKeySpecException;
-import javax.crypto.Mac;
-import javax.crypto.SecretKey;
-import javax.crypto.spec.PBEKeySpec;
+import j86.java.io.ObjectStreamException;
+import j86.java.nio.ByteBuffer;
+import j86.java.nio.CharBuffer;
+import j86.j86.java.nio.charset.Charset;
+import j86.java.util.Arrays;
+import j86.java.security.KeyRep;
+import j86.java.security.GeneralSecurityException;
+import j86.java.security.NoSuchAlgorithmException;
+import j86.j86.java.security.spec.InvalidKeySpecException;
+import j86.javax.crypto.Mac;
+import j86.javax.crypto.SecretKey;
+import j86.j86.javax.crypto.spec.PBEKeySpec;
 
 /**
  * This class represents a PBE key derived using PBKDF2 defined
@@ -48,7 +48,7 @@ import javax.crypto.spec.PBEKeySpec;
  * @author Valerie Peng
  *
  */
-final class PBKDF2KeyImpl implements javax.crypto.interfaces.PBEKey {
+final class PBKDF2KeyImpl implements j86.j86.javax.crypto.interfaces.PBEKey {
 
     static final long serialVersionUID = -2234868909660948157L;
 
@@ -239,7 +239,7 @@ final class PBKDF2KeyImpl implements javax.crypto.interfaces.PBEKey {
             return false;
         byte[] thatEncoded = that.getEncoded();
         boolean ret = Arrays.equals(key, that.getEncoded());
-        java.util.Arrays.fill(thatEncoded, (byte)0x00);
+        j86.java.util.Arrays.fill(thatEncoded, (byte)0x00);
         return ret;
     }
 
@@ -263,11 +263,11 @@ final class PBKDF2KeyImpl implements javax.crypto.interfaces.PBEKey {
     protected void finalize() throws Throwable {
         try {
             if (this.passwd != null) {
-                java.util.Arrays.fill(this.passwd, '0');
+                j86.java.util.Arrays.fill(this.passwd, '0');
                 this.passwd = null;
             }
             if (this.key != null) {
-                java.util.Arrays.fill(this.key, (byte)0x00);
+                j86.java.util.Arrays.fill(this.key, (byte)0x00);
                 this.key = null;
             }
         } finally {

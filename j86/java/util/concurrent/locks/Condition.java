@@ -33,9 +33,9 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package java.util.concurrent.locks;
-import java.util.concurrent.TimeUnit;
-import java.util.Date;
+package j86.j86.j86.java.util.concurrent.locks;
+import j86.j86.java.util.concurrent.TimeUnit;
+import j86.java.util.Date;
 
 /**
  * {@code Condition} factors out the {@code Object} monitor
@@ -111,7 +111,7 @@ import java.util.Date;
  * }
  * </pre>
  *
- * (The {@link java.util.concurrent.ArrayBlockingQueue} class provides
+ * (The {@link j86.j86.java.util.concurrent.ArrayBlockingQueue} class provides
  * this functionality, so there is no reason to implement this
  * sample usage class.)
  *

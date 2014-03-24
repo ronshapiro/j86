@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.management.relation;
+package j86.j86.javax.management.relation;
 
 /**
  * This exception is raised when there is no role info with given name in a

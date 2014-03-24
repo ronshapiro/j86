@@ -23,12 +23,12 @@
  * questions.
  */
 
-package javax.net.ssl;
+package j86.j86.javax.net.ssl;
 
-import java.util.EventObject;
-import java.security.cert.Certificate;
-import java.security.Principal;
-import java.security.cert.X509Certificate;
+import j86.java.util.EventObject;
+import j86.j86.java.security.cert.Certificate;
+import j86.java.security.Principal;
+import j86.j86.java.security.cert.X509Certificate;
 
 /**
  * This event indicates that an SSL handshake completed on a given
@@ -108,7 +108,7 @@ public class HandshakeCompletedEvent extends EventObject
      *          then null is returned.
      * @see #getLocalPrincipal()
      */
-    public java.security.cert.Certificate [] getLocalCertificates()
+    public j86.j86.java.security.cert.Certificate [] getLocalCertificates()
     {
         return session.getLocalCertificates();
     }
@@ -127,7 +127,7 @@ public class HandshakeCompletedEvent extends EventObject
      * @exception SSLPeerUnverifiedException if the peer is not verified.
      * @see #getPeerPrincipal()
      */
-    public java.security.cert.Certificate [] getPeerCertificates()
+    public j86.j86.java.security.cert.Certificate [] getPeerCertificates()
             throws SSLPeerUnverifiedException
     {
         return session.getPeerCertificates();
@@ -149,11 +149,11 @@ public class HandshakeCompletedEvent extends EventObject
      *          with the peer's own certificate first followed by any
      *          certificate authorities.  (The certificates are in
      *          the original JSSE
-     *          {@link javax.security.cert.X509Certificate} format).
+     *          {@link j86.javax.security.cert.X509Certificate} format).
      * @exception SSLPeerUnverifiedException if the peer is not verified.
      * @see #getPeerPrincipal()
      */
-    public javax.security.cert.X509Certificate [] getPeerCertificateChain()
+    public j86.javax.security.cert.X509Certificate [] getPeerCertificateChain()
             throws SSLPeerUnverifiedException
     {
         return session.getPeerCertificateChain();

@@ -23,12 +23,12 @@
  * questions.
  */
 
-package java.lang.management;
+package j86.j86.java.lang.management;
 
-import javax.management.ObjectName;
+import j86.javax.management.ObjectName;
 
 /**
- * A platform managed object is a {@linkplain javax.management.MXBean JMX MXBean}
+ * A platform managed object is a {@linkplain j86.javax.management.MXBean JMX MXBean}
  * for monitoring and managing a component in the Java platform.
  * Each platform managed object has a unique
  * <a href="ManagementFactory.html#MXBean">object name</a>

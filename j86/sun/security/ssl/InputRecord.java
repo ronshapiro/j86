@@ -24,16 +24,16 @@
  */
 
 
-package sun.security.ssl;
+package j86.sun.security.ssl;
 
-import java.io.*;
-import java.nio.*;
+import j86.java.io.*;
+import j86.java.nio.*;
 
-import javax.crypto.BadPaddingException;
+import j86.javax.crypto.BadPaddingException;
 
-import javax.net.ssl.*;
+import j86.j86.javax.net.ssl.*;
 
-import sun.misc.HexDumpEncoder;
+import j86.sun.misc.HexDumpEncoder;
 
 
 /**

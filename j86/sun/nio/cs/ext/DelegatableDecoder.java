@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.nio.cs.ext;
+package j86.j86.j86.j86.sun.nio.cs.ext;
 
-import java.nio.ByteBuffer;
-import java.nio.CharBuffer;
-import java.nio.charset.CoderResult;
+import j86.java.nio.ByteBuffer;
+import j86.java.nio.CharBuffer;
+import j86.j86.java.nio.charset.CoderResult;
 
 /**
  * A decoder that can be delegated to by another decoder

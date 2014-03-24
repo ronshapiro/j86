@@ -22,19 +22,19 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.jmx.snmp.internal;
+package j86.j86.com.sun.jmx.snmp.internal;
 
-import java.net.InetAddress;
-import com.sun.jmx.snmp.SnmpPduFactory;
-import com.sun.jmx.snmp.SnmpSecurityParameters;
-import com.sun.jmx.snmp.SnmpSecurityException;
-import com.sun.jmx.snmp.SnmpTooBigException;
-import com.sun.jmx.snmp.SnmpStatusException;
-import com.sun.jmx.snmp.SnmpPdu;
-import com.sun.jmx.snmp.SnmpMsg;
+import j86.java.net.InetAddress;
+import j86.com.sun.jmx.snmp.SnmpPduFactory;
+import j86.com.sun.jmx.snmp.SnmpSecurityParameters;
+import j86.com.sun.jmx.snmp.SnmpSecurityException;
+import j86.com.sun.jmx.snmp.SnmpTooBigException;
+import j86.com.sun.jmx.snmp.SnmpStatusException;
+import j86.com.sun.jmx.snmp.SnmpPdu;
+import j86.com.sun.jmx.snmp.SnmpMsg;
 
-import com.sun.jmx.snmp.internal.SnmpSecurityCache;
-import com.sun.jmx.snmp.SnmpBadSecurityLevelException;
+import j86.j86.com.sun.jmx.snmp.internal.SnmpSecurityCache;
+import j86.com.sun.jmx.snmp.SnmpBadSecurityLevelException;
 /**
  * <P> An <CODE>SnmpIncomingResponse</CODE> handles the unmarshalling of the received response.</P>
  * <p><b>This API is a Sun Microsystems internal API  and is subject
@@ -67,7 +67,7 @@ public interface SnmpIncomingResponse {
     public void setSecurityCache(SnmpSecurityCache cache);
     /**
      * Gets the incoming response security level. This level is defined in
-     * {@link com.sun.jmx.snmp.SnmpEngine SnmpEngine}.
+     * {@link j86.com.sun.jmx.snmp.SnmpEngine SnmpEngine}.
      * @return The security level.
      */
     public int getSecurityLevel();

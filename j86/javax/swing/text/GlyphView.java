@@ -22,17 +22,17 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text;
+package j86.j86.javax.swing.text;
 
-import java.awt.*;
-import java.text.BreakIterator;
-import javax.swing.event.*;
-import java.util.BitSet;
-import java.util.Locale;
+import j86.java.awt.*;
+import j86.java.text.BreakIterator;
+import j86.j86.javax.swing.event.*;
+import j86.java.util.BitSet;
+import j86.java.util.Locale;
 
-import javax.swing.UIManager;
-import sun.swing.SwingUtilities2;
-import static sun.swing.SwingUtilities2.IMPLIED_CR;
+import j86.javax.swing.UIManager;
+import j86.sun.swing.SwingUtilities2;
+import static j86.sun.swing.SwingUtilities2.IMPLIED_CR;
 
 /**
  * A GlyphView is a styled chunk of text that represents a view
@@ -252,7 +252,7 @@ public class GlyphView extends View implements TabableView, Cloneable {
         if (painter == null) {
             if (defaultPainter == null) {
                 // the classname should probably come from a property file.
-                String classname = "javax.swing.text.GlyphPainter1";
+                String classname = "j86.j86.javax.swing.text.GlyphPainter1";
                 try {
                     Class c;
                     ClassLoader loader = getClass().getClassLoader();
@@ -537,7 +537,7 @@ public class GlyphView extends View implements TabableView, Cloneable {
      * @param axis  may be either {@code View.X_AXIS} or {@code View.Y_AXIS}
      * @return      the minimum span the view can be rendered into
      * @throws IllegalArgumentException if the {@code axis} parameter is invalid
-     * @see         javax.swing.text.View#getMinimumSpan
+     * @see         j86.j86.javax.swing.text.View#getMinimumSpan
      */
     @Override
     public float getMinimumSpan(int axis) {

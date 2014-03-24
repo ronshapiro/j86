@@ -23,31 +23,31 @@
  * questions.
  */
 
-package javax.swing.plaf.basic;
+package j86.j86.j86.javax.swing.plaf.basic;
 
-import sun.swing.SwingUtilities2;
-import sun.swing.DefaultLookup;
-import sun.swing.UIAction;
-import sun.awt.AppContext;
+import j86.sun.swing.SwingUtilities2;
+import j86.sun.swing.DefaultLookup;
+import j86.sun.swing.UIAction;
+import j86.sun.awt.AppContext;
 
-import javax.swing.*;
-import javax.swing.plaf.*;
-import javax.swing.text.View;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.javax.swing.text.View;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.KeyEvent;
-import java.awt.Component;
-import java.awt.Container;
-import java.awt.Dimension;
-import java.awt.Rectangle;
-import java.awt.Insets;
-import java.awt.Color;
-import java.awt.Graphics;
-import java.awt.Font;
-import java.awt.FontMetrics;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
+import j86.j86.java.awt.event.ActionEvent;
+import j86.j86.java.awt.event.ActionListener;
+import j86.j86.java.awt.event.KeyEvent;
+import j86.java.awt.Component;
+import j86.java.awt.Container;
+import j86.java.awt.Dimension;
+import j86.java.awt.Rectangle;
+import j86.java.awt.Insets;
+import j86.java.awt.Color;
+import j86.java.awt.Graphics;
+import j86.java.awt.Font;
+import j86.java.awt.FontMetrics;
+import j86.java.beans.PropertyChangeEvent;
+import j86.java.beans.PropertyChangeListener;
 
 /**
  * A Windows L&amp;F implementation of LabelUI.  This implementation
@@ -278,7 +278,7 @@ public class BasicLabelUI extends LabelUI implements  PropertyChangeListener
      *
      * @throws NullPointerException {@inheritDoc}
      * @throws IllegalArgumentException {@inheritDoc}
-     * @see javax.swing.JComponent#getBaseline(int, int)
+     * @see j86.javax.swing.JComponent#getBaseline(int, int)
      * @since 1.6
      */
     public int getBaseline(JComponent c, int width, int height) {
@@ -299,7 +299,7 @@ public class BasicLabelUI extends LabelUI implements  PropertyChangeListener
      * changes as the size changes.
      *
      * @throws NullPointerException {@inheritDoc}
-     * @see javax.swing.JComponent#getBaseline(int, int)
+     * @see j86.javax.swing.JComponent#getBaseline(int, int)
      * @since 1.6
      */
     public Component.BaselineResizeBehavior getBaselineResizeBehavior(

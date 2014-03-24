@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.security.ssl;
+package j86.sun.security.ssl;
 
-import java.io.IOException;
-import java.io.PrintStream;
-import java.security.AccessController;
-import java.security.AccessControlContext;
-import java.security.Principal;
-import java.security.PrivilegedAction;
-import java.security.SecureRandom;
-import javax.crypto.SecretKey;
+import j86.java.io.IOException;
+import j86.java.io.PrintStream;
+import j86.java.security.AccessController;
+import j86.java.security.AccessControlContext;
+import j86.java.security.Principal;
+import j86.java.security.PrivilegedAction;
+import j86.java.security.SecureRandom;
+import j86.javax.crypto.SecretKey;
 
 /**
  * A helper class that calls the KerberosClientKeyExchange implementation.
@@ -40,7 +40,7 @@ import javax.crypto.SecretKey;
 public class KerberosClientKeyExchange extends HandshakeMessage {
 
     private static final String IMPL_CLASS =
-        "sun.security.ssl.krb5.KerberosClientKeyExchangeImpl";
+        "j86.j86.sun.security.ssl.krb5.KerberosClientKeyExchangeImpl";
 
     private static final Class<?> implClass = AccessController.doPrivileged(
             new PrivilegedAction<Class<?>>() {

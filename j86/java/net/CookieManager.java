@@ -23,14 +23,14 @@
  * questions.
  */
 
-package java.net;
+package j86.java.net;
 
-import java.util.Map;
-import java.util.List;
-import java.util.Collections;
-import java.util.Comparator;
-import java.io.IOException;
-import sun.util.logging.PlatformLogger;
+import j86.java.util.Map;
+import j86.java.util.List;
+import j86.java.util.Collections;
+import j86.java.util.Comparator;
+import j86.java.io.IOException;
+import j86.j86.sun.util.logging.PlatformLogger;
 
 /**
  * CookieManager provides a concrete implementation of {@link CookieHandler},
@@ -39,7 +39,7 @@ import sun.util.logging.PlatformLogger;
  * which manages storage, and a {@link CookiePolicy} object, which makes
  * policy decisions on cookie acceptance/rejection.
  *
- * <p> The HTTP cookie management in java.net package looks like:
+ * <p> The HTTP cookie management in j86.java.net package looks like:
  * <blockquote>
  * <pre>{@code
  *                  use
@@ -202,13 +202,13 @@ public class CookieManager extends CookieHandler
         }
 
         Map<String, List<String>> cookieMap =
-                        new java.util.HashMap<String, List<String>>();
+                        new j86.java.util.HashMap<String, List<String>>();
         // if there's no default CookieStore, no way for us to get any cookie
         if (cookieJar == null)
             return Collections.unmodifiableMap(cookieMap);
 
         boolean secureLink = "https".equalsIgnoreCase(uri.getScheme());
-        List<HttpCookie> cookies = new java.util.ArrayList<HttpCookie>();
+        List<HttpCookie> cookies = new j86.java.util.ArrayList<HttpCookie>();
         String path = uri.getPath();
         if (path == null || path.isEmpty()) {
             path = "/";
@@ -263,7 +263,7 @@ public class CookieManager extends CookieHandler
         if (cookieJar == null)
             return;
 
-    PlatformLogger logger = PlatformLogger.getLogger("java.net.CookieManager");
+    PlatformLogger logger = PlatformLogger.getLogger("j86.java.net.CookieManager");
         for (String headerKey : responseHeaders.keySet()) {
             // RFC 2965 3.2.2, key must be 'Set-Cookie2'
             // we also accept 'Set-Cookie' here for backward compatibility
@@ -283,7 +283,7 @@ public class CookieManager extends CookieHandler
                         cookies = HttpCookie.parse(headerValue);
                     } catch (IllegalArgumentException e) {
                         // Bogus header, make an empty list and log the error
-                        cookies = java.util.Collections.emptyList();
+                        cookies = j86.java.util.Collections.emptyList();
                         if (logger.isLoggable(PlatformLogger.Level.SEVERE)) {
                             logger.severe("Invalid cookie for " + uri + ": " + headerValue);
                         }
@@ -411,7 +411,7 @@ public class CookieManager extends CookieHandler
     private List<String> sortByPath(List<HttpCookie> cookies) {
         Collections.sort(cookies, new CookiePathComparator());
 
-        List<String> cookieHeader = new java.util.ArrayList<String>();
+        List<String> cookieHeader = new j86.java.util.ArrayList<String>();
         for (HttpCookie cookie : cookies) {
             // Netscape cookie spec and RFC 2965 have different format of Cookie
             // header; RFC 2965 requires a leading $Version="1" string while Netscape

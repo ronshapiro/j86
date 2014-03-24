@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.tools.jstack;
+package j86.sun.tools.jstack;
 
-import java.lang.reflect.Method;
-import java.lang.reflect.Constructor;
-import java.io.IOException;
-import java.io.InputStream;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.j86.j86.java.lang.reflect.Constructor;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
 
-import com.sun.tools.attach.VirtualMachine;
-import com.sun.tools.attach.AttachNotSupportedException;
-import sun.tools.attach.HotSpotVirtualMachine;
+import com.j86.sun.tools.attach.VirtualMachine;
+import com.j86.sun.tools.attach.AttachNotSupportedException;
+import j86.sun.tools.attach.HotSpotVirtualMachine;
 
 /*
  * This class is the main class for the JStack utility. It parses its arguments

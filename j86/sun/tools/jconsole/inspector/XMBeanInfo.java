@@ -23,22 +23,22 @@
  * questions.
  */
 
-package sun.tools.jconsole.inspector;
+package j86.j86.sun.tools.jconsole.inspector;
 
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.GridLayout;
-import java.util.*;
-import javax.management.*;
-import javax.swing.*;
-import javax.swing.border.TitledBorder;
-import javax.swing.event.*;
-import javax.swing.table.*;
+import j86.java.awt.BorderLayout;
+import j86.java.awt.Color;
+import j86.java.awt.Component;
+import j86.java.awt.GridLayout;
+import j86.java.util.*;
+import j86.javax.management.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.border.TitledBorder;
+import j86.j86.javax.swing.event.*;
+import j86.j86.javax.swing.table.*;
 
-import sun.tools.jconsole.Messages;
+import j86.sun.tools.jconsole.Messages;
 
-import static sun.tools.jconsole.Utilities.*;
+import static j86.sun.tools.jconsole.Utilities.*;
 
 @SuppressWarnings("serial")
 public class XMBeanInfo extends JPanel {

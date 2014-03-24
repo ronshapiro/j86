@@ -23,19 +23,19 @@
  * questions.
  */
 
-package com.sun.jmx.snmp.agent;
+package j86.j86.com.sun.jmx.snmp.agent;
 
-import java.io.Serializable;
-import java.util.Enumeration;
-import java.util.logging.Level;
+import j86.java.io.Serializable;
+import j86.java.util.Enumeration;
+import j86.j86.java.util.logging.Level;
 
-import javax.management.ObjectName;
-import javax.management.MBeanServer;
+import j86.javax.management.ObjectName;
+import j86.javax.management.MBeanServer;
 
-import static com.sun.jmx.defaults.JmxProperties.SNMP_ADAPTOR_LOGGER;
-import com.sun.jmx.snmp.SnmpStatusException;
-import com.sun.jmx.snmp.SnmpDefinitions;
-import com.sun.jmx.snmp.SnmpVarBind;
+import static j86.com.sun.jmx.defaults.JmxProperties.SNMP_ADAPTOR_LOGGER;
+import j86.com.sun.jmx.snmp.SnmpStatusException;
+import j86.com.sun.jmx.snmp.SnmpDefinitions;
+import j86.com.sun.jmx.snmp.SnmpVarBind;
 
 /**
  * A simple MIB agent that implements SNMP calls (get, set, getnext and getbulk) in a way that only errors or exceptions are returned. Every call done on this agent fails. Error handling is done according to the manager's SNMP protocol version.
@@ -72,7 +72,7 @@ public class SnmpErrorHandlerAgent extends SnmpMibAgent
      *
      * @return The passed name parameter.
      *
-     * @exception java.lang.Exception
+     * @exception j86.java.lang.Exception
      */
 
     @Override

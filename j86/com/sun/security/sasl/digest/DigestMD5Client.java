@@ -23,26 +23,26 @@
  * questions.
  */
 
-package com.sun.security.sasl.digest;
+package j86.j86.com.sun.security.sasl.digest;
 
-import java.security.NoSuchAlgorithmException;
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.UnsupportedEncodingException;
-import java.util.StringTokenizer;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.Arrays;
+import j86.java.security.NoSuchAlgorithmException;
+import j86.java.io.ByteArrayOutputStream;
+import j86.java.io.IOException;
+import j86.java.io.UnsupportedEncodingException;
+import j86.java.util.StringTokenizer;
+import j86.java.util.ArrayList;
+import j86.java.util.List;
+import j86.java.util.Map;
+import j86.java.util.Arrays;
 
-import java.util.logging.Level;
+import j86.j86.java.util.logging.Level;
 
-import javax.security.sasl.*;
-import javax.security.auth.callback.CallbackHandler;
-import javax.security.auth.callback.PasswordCallback;
-import javax.security.auth.callback.NameCallback;
-import javax.security.auth.callback.Callback;
-import javax.security.auth.callback.UnsupportedCallbackException;
+import j86.javax.security.sasl.*;
+import j86.j86.javax.security.auth.callback.CallbackHandler;
+import j86.j86.javax.security.auth.callback.PasswordCallback;
+import j86.j86.javax.security.auth.callback.NameCallback;
+import j86.j86.javax.security.auth.callback.Callback;
+import j86.j86.javax.security.auth.callback.UnsupportedCallbackException;
 
 /**
   * An implementation of the DIGEST-MD5
@@ -67,21 +67,21 @@ import javax.security.auth.callback.UnsupportedCallbackException;
   *
   * Environment properties that affect behavior of implementation:
   *
-  * javax.security.sasl.qop
+  * j86.javax.security.sasl.qop
   *    quality of protection; list of auth, auth-int, auth-conf; default is "auth"
-  * javax.security.sasl.strength
+  * j86.javax.security.sasl.strength
   *    auth-conf strength; list of high, medium, low; default is highest
   *    available on platform ["high,medium,low"].
   *    high means des3 or rc4 (128); medium des or rc4-56; low is rc4-40;
   *    choice of cipher depends on its availablility on platform
-  * javax.security.sasl.maxbuf
+  * j86.javax.security.sasl.maxbuf
   *    max receive buffer size; default is 65536
-  * javax.security.sasl.sendmaxbuffer
+  * j86.javax.security.sasl.sendmaxbuffer
   *    max send buffer size; default is 65536; (min with server max recv size)
   *
-  * com.sun.security.sasl.digest.cipher
+  * j86.j86.com.sun.security.sasl.digest.cipher
   *    name a specific cipher to use; setting must be compatible with the
-  *    setting of the javax.security.sasl.strength property.
+  *    setting of the j86.javax.security.sasl.strength property.
   *
   * @see <a href="http://www.ietf.org/rfc/rfc2222.txt">RFC 2222</a>
   * - Simple Authentication and Security Layer (SASL)
@@ -100,7 +100,7 @@ final class DigestMD5Client extends DigestMD5Base implements SaslClient {
 
     // Property for specifying cipher explicitly
     private static final String CIPHER_PROPERTY =
-        "com.sun.security.sasl.digest.cipher";
+        "j86.j86.com.sun.security.sasl.digest.cipher";
 
     /* Directives encountered in challenges sent by the server. */
     private static final String[] DIRECTIVE_KEY = {

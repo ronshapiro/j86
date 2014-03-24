@@ -23,59 +23,59 @@
  * questions.
  */
 
-package java.nio.file;
+package j86.j86.java.nio.file;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.Closeable;
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
-import java.io.OutputStreamWriter;
-import java.io.Reader;
-import java.io.UncheckedIOException;
-import java.io.Writer;
-import java.nio.channels.Channels;
-import java.nio.channels.FileChannel;
-import java.nio.channels.SeekableByteChannel;
-import java.nio.charset.Charset;
-import java.nio.charset.CharsetDecoder;
-import java.nio.charset.CharsetEncoder;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.attribute.BasicFileAttributeView;
-import java.nio.file.attribute.BasicFileAttributes;
-import java.nio.file.attribute.DosFileAttributes;   // javadoc
-import java.nio.file.attribute.FileAttribute;
-import java.nio.file.attribute.FileAttributeView;
-import java.nio.file.attribute.FileOwnerAttributeView;
-import java.nio.file.attribute.FileStoreAttributeView;
-import java.nio.file.attribute.FileTime;
-import java.nio.file.attribute.PosixFileAttributeView;
-import java.nio.file.attribute.PosixFileAttributes;
-import java.nio.file.attribute.PosixFilePermission;
-import java.nio.file.attribute.UserPrincipal;
-import java.nio.file.spi.FileSystemProvider;
-import java.nio.file.spi.FileTypeDetector;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.EnumSet;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import java.util.Objects;
-import java.util.ServiceLoader;
-import java.util.Set;
-import java.util.Spliterator;
-import java.util.Spliterators;
-import java.util.function.BiPredicate;
-import java.util.stream.Stream;
-import java.util.stream.StreamSupport;
+import j86.java.io.BufferedReader;
+import j86.java.io.BufferedWriter;
+import j86.java.io.Closeable;
+import j86.java.io.File;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.io.InputStreamReader;
+import j86.java.io.OutputStream;
+import j86.java.io.OutputStreamWriter;
+import j86.java.io.Reader;
+import j86.java.io.UncheckedIOException;
+import j86.java.io.Writer;
+import j86.j86.java.nio.channels.Channels;
+import j86.j86.java.nio.channels.FileChannel;
+import j86.j86.java.nio.channels.SeekableByteChannel;
+import j86.j86.java.nio.charset.Charset;
+import j86.j86.java.nio.charset.CharsetDecoder;
+import j86.j86.java.nio.charset.CharsetEncoder;
+import j86.j86.java.nio.charset.StandardCharsets;
+import j86.j86.j86.java.nio.file.attribute.BasicFileAttributeView;
+import j86.j86.j86.java.nio.file.attribute.BasicFileAttributes;
+import j86.j86.j86.java.nio.file.attribute.DosFileAttributes;   // javadoc
+import j86.j86.j86.java.nio.file.attribute.FileAttribute;
+import j86.j86.j86.java.nio.file.attribute.FileAttributeView;
+import j86.j86.j86.java.nio.file.attribute.FileOwnerAttributeView;
+import j86.j86.j86.java.nio.file.attribute.FileStoreAttributeView;
+import j86.j86.j86.java.nio.file.attribute.FileTime;
+import j86.j86.j86.java.nio.file.attribute.PosixFileAttributeView;
+import j86.j86.j86.java.nio.file.attribute.PosixFileAttributes;
+import j86.j86.j86.java.nio.file.attribute.PosixFilePermission;
+import j86.j86.j86.java.nio.file.attribute.UserPrincipal;
+import j86.j86.j86.java.nio.file.spi.FileSystemProvider;
+import j86.j86.j86.java.nio.file.spi.FileTypeDetector;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.util.ArrayList;
+import j86.java.util.Arrays;
+import j86.java.util.Collections;
+import j86.java.util.EnumSet;
+import j86.java.util.HashSet;
+import j86.java.util.Iterator;
+import j86.java.util.List;
+import j86.java.util.Map;
+import j86.java.util.Objects;
+import j86.java.util.ServiceLoader;
+import j86.java.util.Set;
+import j86.java.util.Spliterator;
+import j86.java.util.Spliterators;
+import j86.j86.java.util.function.BiPredicate;
+import j86.j86.java.util.stream.Stream;
+import j86.j86.java.util.stream.StreamSupport;
 
 /**
  * This class consists exclusively of static methods that operate on files,
@@ -301,7 +301,7 @@ public final class Files {
      * file-attributes} to set atomically when a new file is created.
      *
      * <p> In the case of the default provider, the returned seekable byte channel
-     * is a {@link java.nio.channels.FileChannel}.
+     * is a {@link j86.j86.java.nio.channels.FileChannel}.
      *
      * <p> <b>Usage Examples:</b>
      * <pre>
@@ -351,7 +351,7 @@ public final class Files {
      *          invoked to check delete access if the file is opened with the
      *          {@code DELETE_ON_CLOSE} option.
      *
-     * @see java.nio.channels.FileChannel#open(Path,Set,FileAttribute[])
+     * @see j86.j86.java.nio.channels.FileChannel#open(Path,Set,FileAttribute[])
      */
     public static SeekableByteChannel newByteChannel(Path path,
                                                      Set<? extends OpenOption> options,
@@ -397,7 +397,7 @@ public final class Files {
      *          invoked to check delete access if the file is opened with the
      *          {@code DELETE_ON_CLOSE} option.
      *
-     * @see java.nio.channels.FileChannel#open(Path,OpenOption[])
+     * @see j86.j86.java.nio.channels.FileChannel#open(Path,OpenOption[])
      */
     public static SeekableByteChannel newByteChannel(Path path, OpenOption... options)
         throws IOException
@@ -494,7 +494,7 @@ public final class Files {
      *
      * @return  a new and open {@code DirectoryStream} object
      *
-     * @throws  java.util.regex.PatternSyntaxException
+     * @throws  j86.j86.java.util.regex.PatternSyntaxException
      *          if the pattern is invalid
      * @throws  NotDirectoryException
      *          if the file could not otherwise be opened because it is not
@@ -792,7 +792,7 @@ public final class Files {
      * implementation dependent and therefore not specified. Where possible
      * the {@code prefix} and {@code suffix} are used to construct candidate
      * names in the same manner as the {@link
-     * java.io.File#createTempFile(String,String,File)} method.
+     * j86.java.io.File#createTempFile(String,String,File)} method.
      *
      * <p> As with the {@code File.createTempFile} methods, this method is only
      * part of a temporary-file facility. Where used as a <em>work files</em>,
@@ -800,7 +800,7 @@ public final class Files {
      * StandardOpenOption#DELETE_ON_CLOSE DELETE_ON_CLOSE} option so that the
      * file is deleted when the appropriate {@code close} method is invoked.
      * Alternatively, a {@link Runtime#addShutdownHook shutdown-hook}, or the
-     * {@link java.io.File#deleteOnExit} mechanism may be used to delete the
+     * {@link j86.java.io.File#deleteOnExit} mechanism may be used to delete the
      * file automatically.
      *
      * <p> The {@code attrs} parameter is optional {@link FileAttribute
@@ -809,7 +809,7 @@ public final class Files {
      * attribute of the same name is included in the array then all but the last
      * occurrence is ignored. When no file attributes are specified, then the
      * resulting file may have more restrictive access permissions to files
-     * created by the {@link java.io.File#createTempFile(String,String,File)}
+     * created by the {@link j86.java.io.File#createTempFile(String,String,File)}
      * method.
      *
      * @param   dir
@@ -905,7 +905,7 @@ public final class Files {
      *
      * <p> As with the {@code createTempFile} methods, this method is only
      * part of a temporary-file facility. A {@link Runtime#addShutdownHook
-     * shutdown-hook}, or the {@link java.io.File#deleteOnExit} mechanism may be
+     * shutdown-hook}, or the {@link j86.java.io.File#deleteOnExit} mechanism may be
      * used to delete the directory automatically.
      *
      * <p> The {@code attrs} parameter is optional {@link FileAttribute
@@ -1495,7 +1495,7 @@ public final class Files {
      *          installed, the {@link SecurityManager#checkRead(String) checkRead}
      *          method is invoked to check read access to both files.
      *
-     * @see java.nio.file.attribute.BasicFileAttributes#fileKey
+     * @see j86.j86.j86.java.nio.file.attribute.BasicFileAttributes#fileKey
      */
     public static boolean isSameFile(Path path, Path path2) throws IOException {
         return provider(path).isSameFile(path, path2);
@@ -1540,7 +1540,7 @@ public final class Files {
             return AccessController
                 .doPrivileged(new PrivilegedAction<FileTypeDetector>() {
                     @Override public FileTypeDetector run() {
-                        return sun.nio.fs.DefaultFileTypeDetector.create();
+                        return j86.j86.sun.nio.fs.DefaultFileTypeDetector.create();
                 }});
         }
 
@@ -1580,7 +1580,7 @@ public final class Files {
      * bootstrap class loader is used. File type detectors are typically installed
      * by placing them in a JAR file on the application class path or in the
      * extension directory, the JAR file contains a provider-configuration file
-     * named {@code java.nio.file.spi.FileTypeDetector} in the resource directory
+     * named {@code j86.j86.j86.java.nio.file.spi.FileTypeDetector} in the resource directory
      * {@code META-INF/services}, and the file lists one or more fully-qualified
      * names of concrete subclass of {@code FileTypeDetector } that have a zero
      * argument constructor. If the process of locating or instantiating the
@@ -2112,7 +2112,7 @@ public final class Files {
      *          method denies write access to the file.
      *
      * @see FileSystem#getUserPrincipalLookupService
-     * @see java.nio.file.attribute.UserPrincipalLookupService
+     * @see j86.j86.j86.java.nio.file.attribute.UserPrincipalLookupService
      */
     public static Path setOwner(Path path, UserPrincipal owner)
         throws IOException
@@ -2568,7 +2568,7 @@ public final class Files {
      * and the error or exception is propagated to the caller of this method.
      *
      * <p> For each file encountered this method attempts to read its {@link
-     * java.nio.file.attribute.BasicFileAttributes}. If the file is not a
+     * j86.j86.j86.java.nio.file.attribute.BasicFileAttributes}. If the file is not a
      * directory then the {@link FileVisitor#visitFile visitFile} method is
      * invoked with the file attributes. If the file attributes cannot be read,
      * due to an I/O exception, then the {@link FileVisitor#visitFileFailed
@@ -2601,7 +2601,7 @@ public final class Files {
      * track of directories visited so that cycles can be detected. A cycle
      * arises when there is an entry in a directory that is an ancestor of the
      * directory. Cycle detection is done by recording the {@link
-     * java.nio.file.attribute.BasicFileAttributes#fileKey file-key} of directories,
+     * j86.j86.j86.java.nio.file.attribute.BasicFileAttributes#fileKey file-key} of directories,
      * or if file keys are not available, by invoking the {@link #isSameFile
      * isSameFile} method to test if a directory is the same file as an
      * ancestor. When a cycle is detected it is treated as an I/O error, and the
@@ -3040,8 +3040,8 @@ public final class Files {
      * is highly output stream and file system provider specific and therefore
      * not specified.
      *
-     * <p> Note that if the given output stream is {@link java.io.Flushable}
-     * then its {@link java.io.Flushable#flush flush} method may need to invoked
+     * <p> Note that if the given output stream is {@link j86.java.io.Flushable}
+     * then its {@link j86.java.io.Flushable#flush flush} method may need to invoked
      * after this method completes so as to flush any buffered output.
      *
      * @param   source
@@ -3516,7 +3516,7 @@ public final class Files {
      * track of directories visited so that cycles can be detected. A cycle
      * arises when there is an entry in a directory that is an ancestor of the
      * directory. Cycle detection is done by recording the {@link
-     * java.nio.file.attribute.BasicFileAttributes#fileKey file-key} of directories,
+     * j86.j86.j86.java.nio.file.attribute.BasicFileAttributes#fileKey file-key} of directories,
      * or if file keys are not available, by invoking the {@link #isSameFile
      * isSameFile} method to test if a directory is the same file as an
      * ancestor. When a cycle is detected it is treated as an I/O error with
@@ -3536,7 +3536,7 @@ public final class Files {
      * {@code try}-with-resources construct should be used to ensure that the
      * stream's {@link Stream#close close} method is invoked after the stream
      * operations are completed.  Operating on a closed stream will result in an
-     * {@link java.lang.IllegalStateException}.
+     * {@link j86.java.lang.IllegalStateException}.
      *
      * <p> If an {@link IOException} is thrown when accessing the directory
      * after this method has returned, it is wrapped in an {@link
@@ -3598,7 +3598,7 @@ public final class Files {
      * {@code try}-with-resources construct should be used to ensure that the
      * stream's {@link Stream#close close} method is invoked after the stream
      * operations are completed.  Operating on a closed stream will result in an
-     * {@link java.lang.IllegalStateException}.
+     * {@link j86.java.lang.IllegalStateException}.
      *
      * @param   start
      *          the starting file
@@ -3634,7 +3634,7 @@ public final class Files {
      * {@link Path#resolve(Path) resolving} the relative path against {@code
      * start} and is only included in the returned {@link Stream} if
      * the {@code BiPredicate} returns true. Compare to calling {@link
-     * java.util.stream.Stream#filter filter} on the {@code Stream}
+     * j86.j86.java.util.stream.Stream#filter filter} on the {@code Stream}
      * returned by {@code walk} method, this method may be more efficient by
      * avoiding redundant retrieval of the {@code BasicFileAttributes}.
      *
@@ -3643,7 +3643,7 @@ public final class Files {
      * {@code try}-with-resources construct should be used to ensure that the
      * stream's {@link Stream#close close} method is invoked after the stream
      * operations are completed.  Operating on a closed stream will result in an
-     * {@link java.lang.IllegalStateException}.
+     * {@link j86.java.lang.IllegalStateException}.
      *
      * <p> If an {@link IOException} is thrown when accessing the directory
      * after returned from this method, it is wrapped in an {@link
@@ -3707,7 +3707,7 @@ public final class Files {
      * occurs while reading from the file or when a malformed or unmappable byte
      * sequence is read, is wrapped in an {@link UncheckedIOException} that will
      * be thrown from the
-     * {@link java.util.stream.Stream} method that caused the read to take
+     * {@link j86.j86.java.util.stream.Stream} method that caused the read to take
      * place. In case an {@code IOException} is thrown when closing the file,
      * it is also wrapped as an {@code UncheckedIOException}.
      *
@@ -3734,7 +3734,7 @@ public final class Files {
      *
      * @see     #readAllLines(Path, Charset)
      * @see     #newBufferedReader(Path, Charset)
-     * @see     java.io.BufferedReader#lines()
+     * @see     j86.java.io.BufferedReader#lines()
      * @since   1.8
      */
     public static Stream<String> lines(Path path, Charset cs) throws IOException {

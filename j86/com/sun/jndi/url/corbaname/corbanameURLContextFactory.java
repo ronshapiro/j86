@@ -23,9 +23,9 @@
  * questions.
  */
 
-package com.sun.jndi.url.corbaname;
+package j86.com.sun.jndi.url.corbaname;
 
-import com.sun.jndi.url.iiop.iiopURLContextFactory;
+import j86.com.sun.jndi.url.iiop.iiopURLContextFactory;
 
 /**
  * A corbaname URL context factory.

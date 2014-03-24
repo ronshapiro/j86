@@ -23,19 +23,19 @@
  * questions.
  */
 
-package sun.security.util;
+package j86.sun.security.util;
 
 /**
  * <p> This class represents the <code>ResourceBundle</code>
  * for the following packages:
  *
  * <ol>
- * <li> com.sun.security.auth
- * <li> com.sun.security.auth.login
+ * <li> j86.com.sun.security.auth
+ * <li> j86.j86.com.sun.security.auth.login
  * </ol>
  *
  */
-public class AuthResources_sv extends java.util.ListResourceBundle {
+public class AuthResources_sv extends j86.java.util.ListResourceBundle {
 
     private static final Object[][] contents = {
 
@@ -59,7 +59,7 @@ public class AuthResources_sv extends java.util.ListResourceBundle {
         {"UnixNumericUserPrincipal.name", "UnixNumericUserPrincipal: {0}"},
         {"UnixPrincipal.name", "UnixPrincipal: {0}"},
 
-        // com.sun.security.auth.login.ConfigFile
+        // j86.j86.com.sun.security.auth.login.ConfigFile
         {"Unable.to.properly.expand.config", "Kan inte ut\u00F6ka korrekt {0}"},
         {"extra.config.No.such.file.or.directory.",
                 "{0} (det finns ingen s\u00E5dan fil eller katalog)"},
@@ -78,11 +78,11 @@ public class AuthResources_sv extends java.util.ListResourceBundle {
         {"Configuration.Error.Line.line.system.property.value.expanded.to.empty.value",
             "Konfigurationsfel:\n\tRad {0}: systemegenskapen [{1}] ut\u00F6kad till tomt v\u00E4rde"},
 
-        // com.sun.security.auth.module.JndiLoginModule
+        // j86.j86.com.sun.security.auth.module.JndiLoginModule
         {"username.","anv\u00E4ndarnamn: "},
         {"password.","l\u00F6senord: "},
 
-        // com.sun.security.auth.module.KeyStoreLoginModule
+        // j86.j86.com.sun.security.auth.module.KeyStoreLoginModule
         {"Please.enter.keystore.information",
                 "Ange nyckellagerinformation"},
         {"Keystore.alias.","Nyckellageralias: "},
@@ -90,7 +90,7 @@ public class AuthResources_sv extends java.util.ListResourceBundle {
         {"Private.key.password.optional.",
             "L\u00F6senord f\u00F6r personlig nyckel (valfritt): "},
 
-        // com.sun.security.auth.module.Krb5LoginModule
+        // j86.j86.com.sun.security.auth.module.Krb5LoginModule
         {"Kerberos.username.defUsername.",
                 "Kerberos-anv\u00E4ndarnamn [{0}]: "},
         {"Kerberos.password.for.username.",
@@ -98,7 +98,7 @@ public class AuthResources_sv extends java.util.ListResourceBundle {
 
         /***    EVERYTHING BELOW IS DEPRECATED  ***/
 
-        // com.sun.security.auth.PolicyFile
+        // j86.com.sun.security.auth.PolicyFile
         {".error.parsing.", ": tolkningsfel "},
         {"COLON", ": "},
         {".error.adding.Permission.", ": fel vid till\u00E4gg av beh\u00F6righet "},
@@ -109,7 +109,7 @@ public class AuthResources_sv extends java.util.ListResourceBundle {
         {"attempt.to.add.a.Permission.to.a.readonly.PermissionCollection",
             "f\u00F6rs\u00F6k att l\u00E4gga till beh\u00F6righet till skrivskyddad PermissionCollection"},
 
-        // com.sun.security.auth.PolicyParser
+        // j86.com.sun.security.auth.PolicyParser
         {"expected.keystore.type", "f\u00F6rv\u00E4ntad nyckellagertyp"},
         {"can.not.specify.Principal.with.a.wildcard.class.without.a.wildcard.name",
                 "kan inte ange identitetshavare med en jokerteckenklass utan ett jokerteckennamn"},
@@ -136,7 +136,7 @@ public class AuthResources_sv extends java.util.ListResourceBundle {
         {"SolarisPrincipal.", "SolarisPrincipal: "},
         // provided.null.name is the NullPointerException message when a
         // developer incorrectly passes a null name to the constructor of
-        // subclasses of java.security.Principal
+        // subclasses of j86.java.security.Principal
         {"provided.null.name", "angav null-namn"}
 
     };

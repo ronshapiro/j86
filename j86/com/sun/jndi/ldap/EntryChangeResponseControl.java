@@ -23,11 +23,11 @@
  * questions.
  */
 
-package com.sun.jndi.ldap;
+package j86.com.sun.jndi.ldap;
 
-import java.io.IOException;
-import javax.naming.*;
-import javax.naming.directory.*;
+import j86.java.io.IOException;
+import j86.javax.naming.*;
+import j86.j86.javax.naming.directory.*;
 
 /**
  * This class implements the LDAPv3 Response Control for entry-change
@@ -51,7 +51,7 @@ import javax.naming.directory.*;
  * </pre>
  *
  * @see PersistentSearchControl
- * @see com.sun.jndi.ldap.ctl.ResponseControlFactory ResponseControlFactory
+ * @see j86.com.sun.jndi.ldap.ctl.ResponseControlFactory ResponseControlFactory
  * @author Vincent Ryan
  */
 final public class EntryChangeResponseControl extends BasicControl {

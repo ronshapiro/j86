@@ -31,9 +31,9 @@
  * @author D. N. Hoover
  */
 
-package sun.security.util;
+package j86.sun.security.util;
 
-import java.util.Comparator;
+import j86.java.util.Comparator;
 
 public class ByteArrayTagOrder implements Comparator<byte[]> {
 

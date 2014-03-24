@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.text;
+package j86.sun.text;
 
-import sun.text.normalizer.NormalizerBase;
+import j86.j86.sun.text.normalizer.NormalizerBase;
 
 public class CollatorUtilities {
 

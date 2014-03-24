@@ -22,10 +22,10 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.rmi.server;
+package j86.j86.java.rmi.server;
 
-import java.io.*;
-import java.util.*;
+import j86.java.io.*;
+import j86.java.util.*;
 
 /**
  * <code>LogStream</code> provides a mechanism for logging errors that are
@@ -124,7 +124,7 @@ public class LogStream extends PrintStream {
 
         if (sm != null) {
             sm.checkPermission(
-                new java.util.logging.LoggingPermission("control", null));
+                new j86.j86.java.util.logging.LoggingPermission("control", null));
         }
 
         defaultStream = newDefault;

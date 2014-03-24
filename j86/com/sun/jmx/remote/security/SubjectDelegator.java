@@ -23,18 +23,18 @@
  * questions.
  */
 
-package com.sun.jmx.remote.security;
+package j86.com.sun.jmx.remote.security;
 
-import java.security.AccessController;
-import java.security.AccessControlContext;
-import java.security.Permission;
-import java.security.Principal;
-import java.security.PrivilegedAction;
-import javax.security.auth.Subject;
+import j86.java.security.AccessController;
+import j86.java.security.AccessControlContext;
+import j86.java.security.Permission;
+import j86.java.security.Principal;
+import j86.java.security.PrivilegedAction;
+import j86.javax.security.auth.Subject;
 
-import javax.management.remote.SubjectDelegationPermission;
+import j86.j86.javax.management.remote.SubjectDelegationPermission;
 
-import com.sun.jmx.remote.util.CacheMap;
+import j86.com.sun.jmx.remote.util.CacheMap;
 
 public class SubjectDelegator {
     private static final int PRINCIPALS_CACHE_SIZE = 10;

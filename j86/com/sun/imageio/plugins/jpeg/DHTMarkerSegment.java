@@ -23,17 +23,17 @@
  * questions.
  */
 
-package com.sun.imageio.plugins.jpeg;
+package j86.com.sun.imageio.plugins.jpeg;
 
-import javax.imageio.metadata.IIOInvalidTreeException;
-import javax.imageio.metadata.IIOMetadataNode;
-import javax.imageio.stream.ImageOutputStream;
-import javax.imageio.plugins.jpeg.JPEGHuffmanTable;
+import j86.j86.javax.imageio.metadata.IIOInvalidTreeException;
+import j86.j86.javax.imageio.metadata.IIOMetadataNode;
+import j86.j86.javax.imageio.stream.ImageOutputStream;
+import j86.j86.javax.imageio.plugins.jpeg.JPEGHuffmanTable;
 
-import java.io.IOException;
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Iterator;
+import j86.java.io.IOException;
+import j86.java.util.List;
+import j86.java.util.ArrayList;
+import j86.java.util.Iterator;
 
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;

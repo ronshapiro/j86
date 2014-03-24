@@ -23,11 +23,11 @@
  * questions.
  */
 
-package java.security;
+package j86.java.security;
 
-import java.net.URI;
-import java.util.*;
-import static java.security.KeyStore.*;
+import j86.java.net.URI;
+import j86.java.util.*;
+import static j86.java.security.KeyStore.*;
 
 /**
  * Configuration data that specifies the keystores in a keystore domain.
@@ -52,7 +52,7 @@ import static java.security.KeyStore.*;
  * string of colon-separated pairs of hexadecimal digits. Multi-valued
  * properties are represented as a comma-separated list of values,
  * enclosed in square brackets.
- * See {@link Arrays#toString(java.lang.Object[])}.
+ * See {@link Arrays#toString(j86.java.lang.Object[])}.
  * <p>
  * To ensure that keystore entries are uniquely identified, each
  * entry's alias is prefixed by its {@code keystoreName} followed
@@ -114,13 +114,13 @@ public final class DomainLoadStoreParameter implements LoadStoreParameter {
      *
      * @param configuration identifier for the domain configuration data.
      *     The name of the target domain should be specified in the
-     *     {@code java.net.URI} fragment component when it is necessary
+     *     {@code j86.java.net.URI} fragment component when it is necessary
      *     to distinguish between several domain configurations at the
      *     same location.
      *
      * @param protectionParams the map from keystore name to the parameter
      *     used to protect keystore data.
-     *     A {@code java.util.Collections.EMPTY_MAP} should be used
+     *     A {@code j86.java.util.Collections.EMPTY_MAP} should be used
      *     when protection parameters are not required or when they have
      *     been specified by properties in the domain configuration data.
      *     It is cloned to prevent subsequent modification.

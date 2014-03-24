@@ -23,76 +23,76 @@
  * questions.
  */
 
-package sun.java2d;
+package j86.sun.java2d;
 
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.RenderingHints;
-import java.awt.RenderingHints.Key;
-import java.awt.geom.Area;
-import java.awt.geom.AffineTransform;
-import java.awt.geom.NoninvertibleTransformException;
-import java.awt.AlphaComposite;
-import java.awt.BasicStroke;
-import java.awt.image.BufferedImage;
-import java.awt.image.BufferedImageOp;
-import java.awt.image.RenderedImage;
-import java.awt.image.renderable.RenderableImage;
-import java.awt.image.renderable.RenderContext;
-import java.awt.image.AffineTransformOp;
-import java.awt.image.Raster;
-import java.awt.image.WritableRaster;
-import java.awt.Image;
-import java.awt.Composite;
-import java.awt.Color;
-import java.awt.image.ColorModel;
-import java.awt.GraphicsConfiguration;
-import java.awt.Paint;
-import java.awt.GradientPaint;
-import java.awt.LinearGradientPaint;
-import java.awt.RadialGradientPaint;
-import java.awt.TexturePaint;
-import java.awt.geom.Rectangle2D;
-import java.awt.geom.PathIterator;
-import java.awt.geom.GeneralPath;
-import java.awt.Shape;
-import java.awt.Stroke;
-import java.awt.FontMetrics;
-import java.awt.Rectangle;
-import java.text.AttributedCharacterIterator;
-import java.awt.Font;
-import java.awt.image.ImageObserver;
-import java.awt.Transparency;
-import java.awt.font.GlyphVector;
-import java.awt.font.TextLayout;
+import j86.java.awt.Graphics;
+import j86.java.awt.Graphics2D;
+import j86.java.awt.RenderingHints;
+import j86.java.awt.RenderingHints.Key;
+import j86.j86.java.awt.geom.Area;
+import j86.j86.java.awt.geom.AffineTransform;
+import j86.j86.java.awt.geom.NoninvertibleTransformException;
+import j86.java.awt.AlphaComposite;
+import j86.java.awt.BasicStroke;
+import j86.j86.j86.java.awt.image.BufferedImage;
+import j86.j86.j86.java.awt.image.BufferedImageOp;
+import j86.j86.j86.java.awt.image.RenderedImage;
+import j86.j86.j86.j86.java.awt.image.renderable.RenderableImage;
+import j86.j86.j86.j86.java.awt.image.renderable.RenderContext;
+import j86.j86.j86.java.awt.image.AffineTransformOp;
+import j86.j86.j86.java.awt.image.Raster;
+import j86.j86.j86.java.awt.image.WritableRaster;
+import j86.java.awt.Image;
+import j86.java.awt.Composite;
+import j86.java.awt.Color;
+import j86.j86.j86.java.awt.image.ColorModel;
+import j86.java.awt.GraphicsConfiguration;
+import j86.java.awt.Paint;
+import j86.java.awt.GradientPaint;
+import j86.java.awt.LinearGradientPaint;
+import j86.java.awt.RadialGradientPaint;
+import j86.java.awt.TexturePaint;
+import j86.j86.java.awt.geom.Rectangle2D;
+import j86.j86.java.awt.geom.PathIterator;
+import j86.j86.java.awt.geom.GeneralPath;
+import j86.java.awt.Shape;
+import j86.java.awt.Stroke;
+import j86.java.awt.FontMetrics;
+import j86.java.awt.Rectangle;
+import j86.java.text.AttributedCharacterIterator;
+import j86.java.awt.Font;
+import j86.j86.j86.java.awt.image.ImageObserver;
+import j86.java.awt.Transparency;
+import j86.j86.java.awt.font.GlyphVector;
+import j86.j86.java.awt.font.TextLayout;
 
-import sun.awt.image.SurfaceManager;
-import sun.font.FontDesignMetrics;
-import sun.font.FontUtilities;
-import sun.java2d.pipe.PixelDrawPipe;
-import sun.java2d.pipe.PixelFillPipe;
-import sun.java2d.pipe.ShapeDrawPipe;
-import sun.java2d.pipe.ValidatePipe;
-import sun.java2d.pipe.ShapeSpanIterator;
-import sun.java2d.pipe.Region;
-import sun.java2d.pipe.TextPipe;
-import sun.java2d.pipe.DrawImagePipe;
-import sun.java2d.pipe.LoopPipe;
-import sun.java2d.loops.FontInfo;
-import sun.java2d.loops.RenderLoops;
-import sun.java2d.loops.CompositeType;
-import sun.java2d.loops.SurfaceType;
-import sun.java2d.loops.Blit;
-import sun.java2d.loops.MaskFill;
-import java.awt.font.FontRenderContext;
-import sun.java2d.loops.XORComposite;
-import sun.awt.ConstrainableGraphics;
-import sun.awt.SunHints;
-import java.util.Map;
-import java.util.Iterator;
-import sun.misc.PerformanceLogger;
+import j86.j86.j86.sun.awt.image.SurfaceManager;
+import j86.sun.font.FontDesignMetrics;
+import j86.sun.font.FontUtilities;
+import j86.j86.sun.java2d.pipe.PixelDrawPipe;
+import j86.j86.sun.java2d.pipe.PixelFillPipe;
+import j86.j86.sun.java2d.pipe.ShapeDrawPipe;
+import j86.j86.sun.java2d.pipe.ValidatePipe;
+import j86.j86.sun.java2d.pipe.ShapeSpanIterator;
+import j86.j86.sun.java2d.pipe.Region;
+import j86.j86.sun.java2d.pipe.TextPipe;
+import j86.j86.sun.java2d.pipe.DrawImagePipe;
+import j86.j86.sun.java2d.pipe.LoopPipe;
+import j86.j86.sun.java2d.loops.FontInfo;
+import j86.j86.sun.java2d.loops.RenderLoops;
+import j86.j86.sun.java2d.loops.CompositeType;
+import j86.j86.sun.java2d.loops.SurfaceType;
+import j86.j86.sun.java2d.loops.Blit;
+import j86.j86.sun.java2d.loops.MaskFill;
+import j86.j86.java.awt.font.FontRenderContext;
+import j86.j86.sun.java2d.loops.XORComposite;
+import j86.sun.awt.ConstrainableGraphics;
+import j86.sun.awt.SunHints;
+import j86.java.util.Map;
+import j86.java.util.Iterator;
+import j86.sun.misc.PerformanceLogger;
 
-import java.lang.annotation.Native;
+import j86.j86.java.lang.annotation.Native;
 
 /**
  * This is a the master Graphics2D superclass for all of the Sun
@@ -917,8 +917,8 @@ public final class SunGraphics2D
      * and fillPath.  It specifies how new pixels are to be combined with
      * the existing pixels on the graphics device in the rendering process.
      * @param comp The Composite object to be used for drawing.
-     * @see java.awt.Graphics#setXORMode
-     * @see java.awt.Graphics#setPaintMode
+     * @see j86.java.awt.Graphics#setXORMode
+     * @see j86.java.awt.Graphics#setPaintMode
      * @see AlphaComposite
      */
     public void setComposite(Composite comp) {
@@ -979,7 +979,7 @@ public final class SunGraphics2D
      * Sets the Paint in the current graphics state.
      * @param paint The Paint object to be used to generate color in
      * the rendering process.
-     * @see java.awt.Graphics#setColor
+     * @see j86.java.awt.Graphics#setColor
      * @see GradientPaint
      * @see TexturePaint
      */
@@ -1024,7 +1024,7 @@ public final class SunGraphics2D
         (AffineTransform.TYPE_GENERAL_TRANSFORM |
          AffineTransform.TYPE_GENERAL_SCALE);
     public static final double MinPenSizeAA =
-        sun.java2d.pipe.RenderingEngine.getInstance().getMinimumAAPenSize();
+        j86.j86.sun.java2d.pipe.RenderingEngine.getInstance().getMinimumAAPenSize();
     public static final double MinPenSizeAASquared =
         (MinPenSizeAA * MinPenSizeAA);
     // Since inaccuracies in the trig package can cause us to
@@ -1676,7 +1676,7 @@ public final class SunGraphics2D
     /**
      * Returns the current Paint in the Graphics2D state.
      * @see #setPaint
-     * @see java.awt.Graphics#setColor
+     * @see j86.java.awt.Graphics#setColor
      */
     public Paint getPaint() {
         return paint;
@@ -2449,7 +2449,7 @@ public final class SunGraphics2D
      * @param p The path to be drawn.
      * @see #setStroke
      * @see #setPaint
-     * @see java.awt.Graphics#setColor
+     * @see j86.java.awt.Graphics#setColor
      * @see #transform
      * @see #setTransform
      * @see #clip
@@ -2479,7 +2479,7 @@ public final class SunGraphics2D
      * graphics state. The rendering attributes applied include the
      * clip, transform, paint or color, and composite.
      * @see #setPaint
-     * @see java.awt.Graphics#setColor
+     * @see j86.java.awt.Graphics#setColor
      * @see #transform
      * @see #setTransform
      * @see #setComposite
@@ -3411,7 +3411,7 @@ public final class SunGraphics2D
 
     /**
      * This object has no resources to dispose of per se, but the
-     * doc comments for the base method in java.awt.Graphics imply
+     * doc comments for the base method in j86.java.awt.Graphics imply
      * that this object will not be useable after it is disposed.
      * So, we sabotage the object to prevent further use to prevent
      * developers from relying on behavior that may not work on
@@ -3450,7 +3450,7 @@ public final class SunGraphics2D
     /**
      * {@inheritDoc}
      *
-     * @see sun.java2d.DestSurfaceProvider#getDestSurface
+     * @see j86.sun.java2d.DestSurfaceProvider#getDestSurface
      */
     @Override
     public Surface getDestSurface() {

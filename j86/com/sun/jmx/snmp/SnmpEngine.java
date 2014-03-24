@@ -22,12 +22,12 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.jmx.snmp;
+package j86.com.sun.jmx.snmp;
 
 /**
  * This engine is conformant with the RFC 2571. It is the main object within an SNMP entity (agent, manager...).
  * To an engine is associated an {@link SnmpEngineId}.
- * Engine instantiation is based on a factory {@link com.sun.jmx.snmp.SnmpEngineFactory  SnmpEngineFactory}.
+ * Engine instantiation is based on a factory {@link j86.com.sun.jmx.snmp.SnmpEngineFactory  SnmpEngineFactory}.
  * When an <CODE> SnmpEngine </CODE> is created, a User based Security Model (USM) is initialized. The security configuration is located in a text file.
  * The text file is read when the engine is created.
  * <p>Note that the engine is not used when the agent is SNMPv1/SNMPv2 only.

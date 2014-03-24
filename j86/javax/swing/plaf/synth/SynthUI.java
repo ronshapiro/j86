@@ -22,10 +22,10 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.plaf.synth;
+package j86.j86.j86.javax.swing.plaf.synth;
 
-import java.awt.Graphics;
-import javax.swing.JComponent;
+import j86.java.awt.Graphics;
+import j86.javax.swing.JComponent;
 
 /**
  * SynthUI is used to fetch the SynthContext for a particular Component.

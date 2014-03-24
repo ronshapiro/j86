@@ -23,13 +23,13 @@
  * questions.
  */
 
-package javax.security.auth.spi;
+package j86.j86.javax.security.auth.spi;
 
-import javax.security.auth.Subject;
-import javax.security.auth.AuthPermission;
-import javax.security.auth.callback.*;
-import javax.security.auth.login.*;
-import java.util.Map;
+import j86.javax.security.auth.Subject;
+import j86.javax.security.auth.AuthPermission;
+import j86.j86.javax.security.auth.callback.*;
+import j86.j86.javax.security.auth.login.*;
+import j86.java.util.Map;
 
 /**
  * <p> {@code LoginModule} describes the interface
@@ -123,8 +123,8 @@ import java.util.Map;
  * no arguments.  This allows classes which load the {@code LoginModule}
  * to instantiate it.
  *
- * @see javax.security.auth.login.LoginContext
- * @see javax.security.auth.login.Configuration
+ * @see j86.j86.javax.security.auth.login.LoginContext
+ * @see j86.j86.javax.security.auth.login.Configuration
  */
 public interface LoginModule {
 

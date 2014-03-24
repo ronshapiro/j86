@@ -23,20 +23,20 @@
  * questions.
  */
 
-package sun.java2d.pipe;
+package j86.j86.sun.java2d.pipe;
 
-import java.awt.Font;
-import java.awt.Rectangle;
-import java.awt.Shape;
-import java.awt.font.FontRenderContext;
-import java.awt.font.GlyphVector;
-import java.awt.font.TextLayout;
+import j86.java.awt.Font;
+import j86.java.awt.Rectangle;
+import j86.java.awt.Shape;
+import j86.j86.java.awt.font.FontRenderContext;
+import j86.j86.java.awt.font.GlyphVector;
+import j86.j86.java.awt.font.TextLayout;
 
-import sun.awt.SunHints;
-import sun.java2d.SunGraphics2D;
-import sun.java2d.SurfaceData;
-import sun.font.GlyphList;
-import sun.java2d.loops.FontInfo;
+import j86.sun.awt.SunHints;
+import j86.sun.java2d.SunGraphics2D;
+import j86.sun.java2d.SurfaceData;
+import j86.sun.font.GlyphList;
+import j86.j86.sun.java2d.loops.FontInfo;
 
 /**
  * A delegate pipe of SG2D for drawing text.

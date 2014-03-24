@@ -25,15 +25,15 @@
 
 
 
-package javax.swing;
+package j86.javax.swing;
 
 
 
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.concurrent.locks.*;
-import java.util.concurrent.atomic.AtomicLong;
-import sun.awt.AppContext;
+import j86.java.util.*;
+import j86.j86.java.util.concurrent.*;
+import j86.j86.j86.java.util.concurrent.locks.*;
+import j86.j86.j86.java.util.concurrent.atomic.AtomicLong;
+import j86.sun.awt.AppContext;
 
 
 
@@ -96,8 +96,8 @@ class TimerQueue implements Runnable
             try {
                 final ThreadGroup threadGroup =
                     AppContext.getAppContext().getThreadGroup();
-                java.security.AccessController.doPrivileged(
-                    new java.security.PrivilegedAction<Object>() {
+                j86.java.security.AccessController.doPrivileged(
+                    new j86.java.security.PrivilegedAction<Object>() {
                     public Object run() {
                         Thread timerThread = new Thread(threadGroup, TimerQueue.this,
                                                         "TimerQueue");
@@ -240,7 +240,7 @@ class TimerQueue implements Runnable
 
     static class DelayedTimer implements Delayed {
         // most of it copied from
-        // java.util.concurrent.ScheduledThreadPoolExecutor
+        // j86.j86.java.util.concurrent.ScheduledThreadPoolExecutor
 
         /**
          * Sequence number to break scheduling ties, and in turn to

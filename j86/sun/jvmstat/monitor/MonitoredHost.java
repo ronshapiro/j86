@@ -23,13 +23,13 @@
  * questions.
  */
 
-package sun.jvmstat.monitor;
+package j86.sun.jvmstat.monitor;
 
-import java.util.*;
-import java.net.*;
-import java.lang.reflect.*;
+import j86.java.util.*;
+import j86.java.net.*;
+import j86.j86.j86.java.lang.reflect.*;
 
-import sun.jvmstat.monitor.event.HostListener;
+import j86.j86.sun.jvmstat.monitor.event.HostListener;
 
 /**
  * An abstraction for a host that contains instrumented Java Virtual
@@ -63,7 +63,7 @@ public abstract class MonitoredHost {
      * This property is not expected to be set in normal circumstances.
      */
     private static final String IMPL_OVERRIDE_PROP_NAME =
-            "sun.jvmstat.monitor.MonitoredHost";
+            "j86.sun.jvmstat.monitor.MonitoredHost";
 
     /*
      * The monitoring package name override mechanism. The value
@@ -72,7 +72,7 @@ public abstract class MonitoredHost {
      * expected to be set under normal circumstances.
      */
     private static final String IMPL_PKG_PROP_NAME =
-            "sun.jvmstat.monitor.package";
+            "j86.sun.jvmstat.monitor.package";
     private static final String IMPL_PACKAGE =
             System.getProperty(IMPL_PKG_PROP_NAME, "sun.jvmstat.perfdata");
 
@@ -84,7 +84,7 @@ public abstract class MonitoredHost {
      * This property is not expected to be set under normal circumstances.
      */
     private static final String LOCAL_PROTOCOL_PROP_NAME =
-            "sun.jvmstat.monitor.local";
+            "j86.sun.jvmstat.monitor.local";
     private static final String LOCAL_PROTOCOL =
             System.getProperty(LOCAL_PROTOCOL_PROP_NAME, "local");
 
@@ -96,7 +96,7 @@ public abstract class MonitoredHost {
      * This property is not expected to be set under normal circumstances.
      */
     private static final String REMOTE_PROTOCOL_PROP_NAME =
-            "sun.jvmstat.monitor.remote";
+            "j86.j86.sun.jvmstat.monitor.remote";
     private static final String REMOTE_PROTOCOL =
             System.getProperty(REMOTE_PROTOCOL_PROP_NAME, "rmi");
 

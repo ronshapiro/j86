@@ -29,12 +29,12 @@
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
 
-package sun.security.krb5.internal;
+package j86.j86.sun.security.krb5.internal;
 
-import sun.misc.IOUtils;
+import j86.sun.misc.IOUtils;
 
-import java.io.*;
-import java.net.*;
+import j86.java.io.*;
+import j86.java.net.*;
 
 public abstract class NetClient implements AutoCloseable {
     public static NetClient getInstance(String protocol, String hostname, int port,

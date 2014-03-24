@@ -22,19 +22,19 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.jmx.snmp.internal;
+package j86.j86.com.sun.jmx.snmp.internal;
 
-import java.util.Vector;
-import com.sun.jmx.snmp.SnmpMsg;
-import com.sun.jmx.snmp.SnmpParams;
-import com.sun.jmx.snmp.SnmpPdu;
-import com.sun.jmx.snmp.SnmpVarBind;
-import com.sun.jmx.snmp.SnmpStatusException;
-import com.sun.jmx.snmp.SnmpTooBigException;
-import com.sun.jmx.snmp.SnmpPduFactory;
-import com.sun.jmx.snmp.SnmpSecurityParameters;
+import j86.java.util.Vector;
+import j86.com.sun.jmx.snmp.SnmpMsg;
+import j86.com.sun.jmx.snmp.SnmpParams;
+import j86.com.sun.jmx.snmp.SnmpPdu;
+import j86.com.sun.jmx.snmp.SnmpVarBind;
+import j86.com.sun.jmx.snmp.SnmpStatusException;
+import j86.com.sun.jmx.snmp.SnmpTooBigException;
+import j86.com.sun.jmx.snmp.SnmpPduFactory;
+import j86.com.sun.jmx.snmp.SnmpSecurityParameters;
 
-import com.sun.jmx.snmp.SnmpUnknownMsgProcModelException;
+import j86.com.sun.jmx.snmp.SnmpUnknownMsgProcModelException;
 
 /**
  * Message processing sub system interface. To allow engine integration, a message processing sub system must implement this interface. This sub system is called by the dispatcher when receiving or sending calls.
@@ -89,7 +89,7 @@ public interface SnmpMsgProcessingSubSystem extends SnmpSubSystem {
                                                     SnmpPduFactory factory) throws SnmpUnknownMsgProcModelException;
     /**
      * This method is called to encode a full scoped pdu that as not been encrypted. <CODE>contextName</CODE>, <CODE>contextEngineID</CODE> and data are known. It will be routed to the dedicated model according to the version value.
-     * <BR>The specified parameters are defined in RFC 2572 (see also the {@link com.sun.jmx.snmp.SnmpV3Message} class).
+     * <BR>The specified parameters are defined in RFC 2572 (see also the {@link j86.com.sun.jmx.snmp.SnmpV3Message} class).
      * @param version The SNMP protocol version.
      * @param msgID The SNMP message ID.
      * @param msgMaxSize The max message size.
@@ -118,7 +118,7 @@ public interface SnmpMsgProcessingSubSystem extends SnmpSubSystem {
                SnmpUnknownMsgProcModelException ;
     /**
      * This method is called to encode a full scoped pdu that as been encrypted. <CODE>contextName</CODE>, <CODE>contextEngineID</CODE> and data are not known. It will be routed to the dedicated model according to the version value.
-     * <BR>The specified parameters are defined in RFC 2572 (see also the {@link com.sun.jmx.snmp.SnmpV3Message} class).
+     * <BR>The specified parameters are defined in RFC 2572 (see also the {@link j86.com.sun.jmx.snmp.SnmpV3Message} class).
      * @param version The SNMP protocol version.
      * @param msgID The SNMP message ID.
      * @param msgMaxSize The max message size.

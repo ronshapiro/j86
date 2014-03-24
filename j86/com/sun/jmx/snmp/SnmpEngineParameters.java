@@ -23,9 +23,9 @@
  * questions.
  */
 
-package com.sun.jmx.snmp;
+package j86.com.sun.jmx.snmp;
 
-import java.io.Serializable;
+import j86.java.io.Serializable;
 
 /**
  * This class is used to pass some specific parameters to an <CODE>
@@ -60,7 +60,7 @@ public class SnmpEngineParameters implements Serializable {
     /**
      * Sets a customized user ACL. User Acl is used in order to check
      * access for SNMP V3 requests. If no ACL is provided,
-     * <CODE>com.sun.jmx.snmp.usm.UserAcl.UserAcl</CODE> is instantiated.
+     * <CODE>j86.com.sun.jmx.snmp.usm.UserAcl.UserAcl</CODE> is instantiated.
      * @param uacl The user ACL to use.
      */
     public void setUserAcl(UserAcl uacl) {

@@ -23,19 +23,19 @@
  * questions.
  */
 
-package java.security.cert;
+package j86.j86.java.security.cert;
 
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.IOException;
-import java.util.Collections;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
-import javax.security.auth.x500.X500Principal;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.IOException;
+import j86.java.util.Collections;
+import j86.java.util.Date;
+import j86.java.util.HashMap;
+import j86.java.util.Map;
+import j86.j86.javax.security.auth.x500.X500Principal;
 
-import sun.security.util.ObjectIdentifier;
-import sun.security.x509.InvalidityDateExtension;
+import j86.sun.security.util.ObjectIdentifier;
+import j86.sun.security.x509.InvalidityDateExtension;
 
 /**
  * An exception that indicates an X.509 certificate is revoked. A
@@ -235,7 +235,7 @@ public class CertificateRevokedException extends CertificateException {
             int length = ois.readInt();
             byte[] extVal = new byte[length];
             ois.readFully(extVal);
-            Extension ext = sun.security.x509.Extension.newExtension
+            Extension ext = j86.sun.security.x509.Extension.newExtension
                 (new ObjectIdentifier(oid), critical, extVal);
             extensions.put(oid, ext);
         }

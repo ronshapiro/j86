@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.security.ssl;
+package j86.sun.security.ssl;
 
-import java.io.*;
-import java.net.*;
-import javax.net.ssl.SSLSocketFactory;
+import j86.java.io.*;
+import j86.java.net.*;
+import j86.j86.javax.net.ssl.SSLSocketFactory;
 
 
 /**
@@ -48,7 +48,7 @@ final public class SSLSocketFactoryImpl extends SSLSocketFactory {
     /**
      * Constructor used to instantiate the default factory. This method is
      * only called if the old "ssl.SocketFactory.provider" property in the
-     * java.security file is set.
+     * j86.java.security file is set.
      */
     public SSLSocketFactoryImpl() throws Exception {
         this.context = SSLContextImpl.DefaultSSLContext.getDefaultImpl();
@@ -65,7 +65,7 @@ final public class SSLSocketFactoryImpl extends SSLSocketFactory {
      * Creates an unconnected socket.
      *
      * @return the unconnected socket
-     * @see java.net.Socket#connect(java.net.SocketAddress, int)
+     * @see j86.java.net.Socket#connect(java.net.SocketAddress, int)
      */
     @Override
     public Socket createSocket() {

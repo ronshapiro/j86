@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.awt.image;
+package j86.j86.j86.sun.awt.image;
 
-import java.awt.GraphicsDevice;
-import java.awt.GraphicsConfiguration;
+import j86.java.awt.GraphicsDevice;
+import j86.java.awt.GraphicsConfiguration;
 
 public class BufferedImageDevice extends GraphicsDevice
 {

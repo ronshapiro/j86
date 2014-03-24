@@ -23,18 +23,18 @@
  * questions.
  */
 
-package java.rmi.activation;
+package j86.j86.java.rmi.activation;
 
-import java.rmi.MarshalledObject;
-import java.rmi.NoSuchObjectException;
-import java.rmi.Remote;
-import java.rmi.RemoteException;
-import java.rmi.activation.UnknownGroupException;
-import java.rmi.activation.UnknownObjectException;
-import java.rmi.server.RMIClientSocketFactory;
-import java.rmi.server.RMIServerSocketFactory;
-import java.rmi.server.RemoteServer;
-import sun.rmi.server.ActivatableServerRef;
+import j86.java.rmi.MarshalledObject;
+import j86.java.rmi.NoSuchObjectException;
+import j86.java.rmi.Remote;
+import j86.java.rmi.RemoteException;
+import j86.j86.java.rmi.activation.UnknownGroupException;
+import j86.j86.java.rmi.activation.UnknownObjectException;
+import j86.j86.java.rmi.server.RMIClientSocketFactory;
+import j86.j86.java.rmi.server.RMIServerSocketFactory;
+import j86.j86.java.rmi.server.RemoteServer;
+import j86.sun.rmi.server.ActivatableServerRef;
 
 /**
  * The <code>Activatable</code> class provides support for remote
@@ -43,7 +43,7 @@ import sun.rmi.server.ActivatableServerRef;
  *
  * <p>For the constructors and static <code>exportObject</code> methods,
  * the stub for a remote object being exported is obtained as described in
- * {@link java.rmi.server.UnicastRemoteObject}.
+ * {@link j86.j86.java.rmi.server.UnicastRemoteObject}.
  *
  * <p>An attempt to serialize explicitly an instance of this class will
  * fail.
@@ -257,7 +257,7 @@ public abstract class Activatable extends RemoteServer {
         // register object with activator.
         ActivationID id =
             ActivationGroup.getSystem().registerObject(desc);
-        return sun.rmi.server.ActivatableRef.getStub(desc, id);
+        return j86.sun.rmi.server.ActivatableRef.getStub(desc, id);
     }
 
     /**
@@ -560,7 +560,7 @@ public abstract class Activatable extends RemoteServer {
     public static boolean unexportObject(Remote obj, boolean force)
         throws NoSuchObjectException
     {
-        return sun.rmi.transport.ObjectTable.unexportObject(obj, force);
+        return j86.sun.rmi.transport.ObjectTable.unexportObject(obj, force);
     }
 
     /**

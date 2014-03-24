@@ -23,11 +23,11 @@
  * questions.
  */
 
-package javax.imageio.metadata;
+package j86.j86.javax.imageio.metadata;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+import j86.java.util.ArrayList;
+import j86.java.util.Iterator;
+import j86.java.util.List;
 
 import org.w3c.dom.Attr;
 import org.w3c.dom.Document;
@@ -76,7 +76,7 @@ class IIONamedNodeMap implements NamedNodeMap {
         return node;
     }
 
-    public Node removeNamedItem(java.lang.String name) {
+    public Node removeNamedItem(j86.java.lang.String name) {
         throw new DOMException(DOMException.NO_MODIFICATION_ALLOWED_ERR,
                                "This NamedNodeMap is read-only!");
     }

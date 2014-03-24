@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.sound.sampled;
+package j86.javax.sound.sampled;
 
-import java.security.BasicPermission;
+import j86.java.security.BasicPermission;
 
 
 /**

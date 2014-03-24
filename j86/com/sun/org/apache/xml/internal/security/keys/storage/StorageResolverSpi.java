@@ -20,10 +20,10 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.sun.org.apache.xml.internal.security.keys.storage;
+package j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.storage;
 
-import java.security.cert.Certificate;
-import java.util.Iterator;
+import j86.j86.java.security.cert.Certificate;
+import j86.java.util.Iterator;
 
 public abstract class StorageResolverSpi {
 

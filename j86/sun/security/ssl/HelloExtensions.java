@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.security.ssl;
+package j86.sun.security.ssl;
 
-import java.io.IOException;
-import java.io.PrintStream;
-import java.util.*;
-import javax.net.ssl.*;
+import j86.java.io.IOException;
+import j86.java.io.PrintStream;
+import j86.java.util.*;
+import j86.j86.javax.net.ssl.*;
 
 /**
  * This file contains all the classes relevant to TLS Extensions for the

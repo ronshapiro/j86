@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.io;
+package j86.java.io;
 
 /**
  * A <code>ByteArrayInputStream</code> contains
@@ -37,7 +37,7 @@ package java.io;
  * generating an <tt>IOException</tt>.
  *
  * @author  Arthur van Hoff
- * @see     java.io.StringBufferInputStream
+ * @see     j86.java.io.StringBufferInputStream
  * @since   JDK1.0
  */
 public

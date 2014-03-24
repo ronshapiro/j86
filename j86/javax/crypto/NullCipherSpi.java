@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.crypto;
+package j86.javax.crypto;
 
-import java.security.*;
-import java.security.spec.*;
+import j86.java.security.*;
+import j86.j86.java.security.spec.*;
 
 /**
  * This class provides a delegate for the identity cipher - one that does not

@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.security.acl;
+package j86.j86.java.security.acl;
 
-import java.util.Enumeration;
-import java.security.Principal;
+import j86.java.util.Enumeration;
+import j86.java.security.Principal;
 
 /**
  * Interface representing an Access Control List (ACL).  An Access
@@ -66,24 +66,24 @@ import java.security.Principal;
  *
  * </ul>
  *
- * The {@code  java.security.acl } package provides the
+ * The {@code  j86.j86.java.security.acl } package provides the
  * interfaces to the ACL and related data structures (ACL entries,
- * groups, permissions, etc.), and the {@code  sun.security.acl }
+ * groups, permissions, etc.), and the {@code  j86.sun.security.acl }
  * classes provide a default implementation of the interfaces. For
- * example, {@code  java.security.acl.Acl } provides the
- * interface to an ACL and the {@code  sun.security.acl.AclImpl }
+ * example, {@code  j86.j86.java.security.acl.Acl } provides the
+ * interface to an ACL and the {@code  j86.sun.security.acl.AclImpl }
  * class provides the default implementation of the interface.<p>
  *
- * The {@code  java.security.acl.Acl } interface extends the
- * {@code  java.security.acl.Owner } interface. The Owner
+ * The {@code  j86.j86.java.security.acl.Acl } interface extends the
+ * {@code  j86.j86.java.security.acl.Owner } interface. The Owner
  * interface is used to maintain a list of owners for each ACL.  Only
  * owners are allowed to modify an ACL. For example, only an owner can
  * call the ACL's {@code addEntry} method to add a new ACL entry
  * to the ACL.
  *
- * @see java.security.acl.AclEntry
- * @see java.security.acl.Owner
- * @see java.security.acl.Acl#getPermissions
+ * @see j86.j86.java.security.acl.AclEntry
+ * @see j86.j86.java.security.acl.Owner
+ * @see j86.j86.java.security.acl.Acl#getPermissions
  *
  * @author Satish Dharmaraj
  */

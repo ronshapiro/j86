@@ -23,30 +23,30 @@
  * questions.
  */
 
-package com.sun.tools.jdi;
+package j86.com.sun.tools.jdi;
 
-import com.sun.tools.jdi.*;
-import com.sun.jdi.*;
-import com.sun.jdi.connect.*;
-import com.sun.jdi.InternalException;
-import java.util.Collections;
-import java.util.Collection;
-import java.util.Map;
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.ResourceBundle;
-import java.io.Serializable;
+import j86.com.sun.tools.jdi.*;
+import j86.com.sun.jdi.*;
+import j86.j86.com.sun.jdi.connect.*;
+import j86.com.sun.jdi.InternalException;
+import j86.java.util.Collections;
+import j86.java.util.Collection;
+import j86.java.util.Map;
+import j86.java.util.List;
+import j86.java.util.ArrayList;
+import j86.java.util.Iterator;
+import j86.java.util.ResourceBundle;
+import j86.java.io.Serializable;
 
 abstract class ConnectorImpl implements Connector {
-    Map<String,Argument> defaultArguments = new java.util.LinkedHashMap<String,Argument>();
+    Map<String,Argument> defaultArguments = new j86.java.util.LinkedHashMap<String,Argument>();
 
     // Used by BooleanArgument
     static String trueString = null;
     static String falseString;
 
     public Map<String,Argument> defaultArguments() {
-        Map<String,Argument> defaults = new java.util.LinkedHashMap<String,Argument>();
+        Map<String,Argument> defaults = new j86.java.util.LinkedHashMap<String,Argument>();
         Collection<Argument> values = defaultArguments.values();
 
         Iterator<Argument> iter = values.iterator();
@@ -123,7 +123,7 @@ abstract class ConnectorImpl implements Connector {
 
     String getString(String key) {
         if (messages == null) {
-            messages = ResourceBundle.getBundle("com.sun.tools.jdi.resources.jdi");
+            messages = ResourceBundle.getBundle("j86.com.sun.tools.jdi.resources.jdi");
         }
         return messages.getString(key);
     }

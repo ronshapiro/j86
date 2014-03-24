@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.management;
+package j86.javax.management;
 
 
 /**
@@ -39,23 +39,23 @@ public class MBeanRegistrationException extends MBeanException   {
 
     /**
      * Creates an <CODE>MBeanRegistrationException</CODE> that wraps
-     * the actual <CODE>java.lang.Exception</CODE>.
+     * the actual <CODE>j86.java.lang.Exception</CODE>.
      *
      * @param e the wrapped exception.
      */
-    public MBeanRegistrationException(java.lang.Exception e) {
+    public MBeanRegistrationException(j86.java.lang.Exception e) {
         super(e) ;
     }
 
     /**
      * Creates an <CODE>MBeanRegistrationException</CODE> that wraps
-     * the actual <CODE>java.lang.Exception</CODE> with a detailed
+     * the actual <CODE>j86.java.lang.Exception</CODE> with a detailed
      * message.
      *
      * @param e the wrapped exception.
      * @param message the detail message.
      */
-    public MBeanRegistrationException(java.lang.Exception e, String message) {
+    public MBeanRegistrationException(j86.java.lang.Exception e, String message) {
         super(e, message) ;
     }
 }

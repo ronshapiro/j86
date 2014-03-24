@@ -23,14 +23,14 @@
  * questions.
  */
 
-package javax.naming.ldap;
+package j86.j86.javax.naming.ldap;
 
-import java.io.IOException;
-import javax.naming.*;
-import javax.naming.directory.*;
-import com.sun.jndi.ldap.Ber;
-import com.sun.jndi.ldap.BerDecoder;
-import com.sun.jndi.ldap.LdapCtx;
+import j86.java.io.IOException;
+import j86.javax.naming.*;
+import j86.j86.javax.naming.directory.*;
+import j86.com.sun.jndi.ldap.Ber;
+import j86.com.sun.jndi.ldap.BerDecoder;
+import j86.com.sun.jndi.ldap.LdapCtx;
 
 /**
  * Indicates whether the requested sort of search results was successful or not.

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.security.auth.callback;
+package j86.j86.javax.security.auth.callback;
 
 /**
  * <p> Underlying security services instantiate and pass a
@@ -31,9 +31,9 @@ package javax.security.auth.callback;
  * method of a {@code CallbackHandler} to ask for YES/NO,
  * OK/CANCEL, YES/NO/CANCEL or other similar confirmations.
  *
- * @see javax.security.auth.callback.CallbackHandler
+ * @see j86.j86.javax.security.auth.callback.CallbackHandler
  */
-public class ConfirmationCallback implements Callback, java.io.Serializable {
+public class ConfirmationCallback implements Callback, j86.java.io.Serializable {
 
     private static final long serialVersionUID = -9095656433782481624L;
 

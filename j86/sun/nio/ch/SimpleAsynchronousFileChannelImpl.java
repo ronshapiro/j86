@@ -23,15 +23,15 @@
  * questions.
  */
 
-package sun.nio.ch;
+package j86.j86.j86.sun.nio.ch;
 
-import java.nio.channels.*;
-import java.util.concurrent.*;
-import java.nio.ByteBuffer;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.io.FileDescriptor;
-import java.io.IOException;
+import j86.j86.java.nio.channels.*;
+import j86.j86.java.util.concurrent.*;
+import j86.java.nio.ByteBuffer;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.io.FileDescriptor;
+import j86.java.io.IOException;
 
 /**
  * "Portable" implementation of AsynchronousFileChannel for use on operating

@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.crypto.spec;
+package j86.j86.javax.crypto.spec;
 
-import java.security.InvalidKeyException;
+import j86.java.security.InvalidKeyException;
 
 /**
  * This class specifies a DES-EDE ("triple-DES") key.
@@ -34,7 +34,7 @@ import java.security.InvalidKeyException;
  *
  * @since 1.4
  */
-public class DESedeKeySpec implements java.security.spec.KeySpec {
+public class DESedeKeySpec implements j86.j86.java.security.spec.KeySpec {
 
     /**
      * The constant which defines the length of a DESede key in bytes.

@@ -23,9 +23,9 @@
  * questions.
  */
 
-package com.sun.media.sound;
+package j86.com.sun.media.sound;
 
-import javax.sound.sampled.Clip;
+import j86.javax.sound.sampled.Clip;
 
 /**
  * Interface for Clip objects that close themselves automatically

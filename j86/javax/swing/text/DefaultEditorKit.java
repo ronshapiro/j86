@@ -22,18 +22,18 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text;
+package j86.j86.javax.swing.text;
 
-import sun.awt.SunToolkit;
+import j86.sun.awt.SunToolkit;
 
-import java.io.*;
-import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.text.*;
-import javax.swing.Action;
-import javax.swing.KeyStroke;
-import javax.swing.SwingConstants;
-import javax.swing.UIManager;
+import j86.java.io.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.ActionEvent;
+import j86.java.text.*;
+import j86.javax.swing.Action;
+import j86.javax.swing.KeyStroke;
+import j86.javax.swing.SwingConstants;
+import j86.javax.swing.UIManager;
 
 /**
  * This is the set of things needed by a text component
@@ -841,8 +841,8 @@ public class DefaultEditorKit extends EditorKit {
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      *
      * @see DefaultEditorKit#defaultKeyTypedAction
      * @see DefaultEditorKit#getActions
@@ -900,8 +900,8 @@ public class DefaultEditorKit extends EditorKit {
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      *
      * @see DefaultEditorKit#insertContentAction
      * @see DefaultEditorKit#getActions
@@ -948,8 +948,8 @@ public class DefaultEditorKit extends EditorKit {
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      *
      * @see DefaultEditorKit#insertBreakAction
      * @see DefaultEditorKit#getActions
@@ -990,8 +990,8 @@ public class DefaultEditorKit extends EditorKit {
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      *
      * @see DefaultEditorKit#insertTabAction
      * @see DefaultEditorKit#getActions
@@ -1164,7 +1164,7 @@ public class DefaultEditorKit extends EditorKit {
                     if (deleteNextWordAction == getValue(Action.NAME)) {
                         end = Utilities.
                             getNextWordInParagraph(target, line, start, false);
-                        if (end == java.text.BreakIterator.DONE) {
+                        if (end == j86.java.text.BreakIterator.DONE) {
                             //last word in the paragraph
                             final int endOfLine = line.getEndOffset();
                             if (start == endOfLine - 1) {
@@ -1178,7 +1178,7 @@ public class DefaultEditorKit extends EditorKit {
                     } else {
                         end = Utilities.
                             getPrevWordInParagraph(target, line, start);
-                        if (end == java.text.BreakIterator.DONE) {
+                        if (end == j86.java.text.BreakIterator.DONE) {
                             //there is no previous word in the paragraph
                             final int startOfLine = line.getStartOffset();
                             if (start == startOfLine) {
@@ -1266,8 +1266,8 @@ public class DefaultEditorKit extends EditorKit {
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      *
      * @see DefaultEditorKit#cutAction
      * @see DefaultEditorKit#getActions
@@ -1302,8 +1302,8 @@ public class DefaultEditorKit extends EditorKit {
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      *
      * @see DefaultEditorKit#copyAction
      * @see DefaultEditorKit#getActions
@@ -1339,8 +1339,8 @@ public class DefaultEditorKit extends EditorKit {
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      *
      * @see DefaultEditorKit#pasteAction
      * @see DefaultEditorKit#getActions
@@ -1374,8 +1374,8 @@ public class DefaultEditorKit extends EditorKit {
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      *
      * @see DefaultEditorKit#beepAction
      * @see DefaultEditorKit#getActions

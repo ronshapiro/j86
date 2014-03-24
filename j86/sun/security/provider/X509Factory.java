@@ -23,20 +23,20 @@
  * questions.
  */
 
-package sun.security.provider;
+package j86.sun.security.provider;
 
-import java.io.*;
-import java.util.*;
-import java.security.cert.*;
-import sun.security.x509.X509CertImpl;
-import sun.security.x509.X509CRLImpl;
-import sun.security.pkcs.PKCS7;
-import sun.security.provider.certpath.X509CertPath;
-import sun.security.provider.certpath.X509CertificatePair;
-import sun.security.util.DerValue;
-import sun.security.util.Cache;
-import java.util.Base64;
-import sun.security.pkcs.ParsingException;
+import j86.java.io.*;
+import j86.java.util.*;
+import j86.j86.java.security.cert.*;
+import j86.sun.security.x509.X509CertImpl;
+import j86.sun.security.x509.X509CRLImpl;
+import j86.sun.security.pkcs.PKCS7;
+import j86.j86.sun.security.provider.certpath.X509CertPath;
+import j86.j86.sun.security.provider.certpath.X509CertificatePair;
+import j86.sun.security.util.DerValue;
+import j86.sun.security.util.Cache;
+import j86.java.util.Base64;
+import j86.sun.security.pkcs.ParsingException;
 
 /**
  * This class defines a certificate factory for X.509 v3 certificates &
@@ -47,14 +47,14 @@ import sun.security.pkcs.ParsingException;
  * @author Sean Mullan
  *
  *
- * @see java.security.cert.CertificateFactorySpi
- * @see java.security.cert.Certificate
- * @see java.security.cert.CertPath
- * @see java.security.cert.CRL
- * @see java.security.cert.X509Certificate
- * @see java.security.cert.X509CRL
- * @see sun.security.x509.X509CertImpl
- * @see sun.security.x509.X509CRLImpl
+ * @see j86.j86.java.security.cert.CertificateFactorySpi
+ * @see j86.j86.java.security.cert.Certificate
+ * @see j86.j86.java.security.cert.CertPath
+ * @see j86.j86.java.security.cert.CRL
+ * @see j86.j86.java.security.cert.X509Certificate
+ * @see j86.j86.java.security.cert.X509CRL
+ * @see j86.sun.security.x509.X509CertImpl
+ * @see j86.sun.security.x509.X509CRLImpl
  */
 
 public class X509Factory extends CertificateFactorySpi {
@@ -326,7 +326,7 @@ public class X509Factory extends CertificateFactorySpi {
      *
      * @exception CertificateException on parsing errors.
      */
-    public Collection<? extends java.security.cert.Certificate>
+    public Collection<? extends j86.j86.java.security.cert.Certificate>
             engineGenerateCertificates(InputStream is)
             throws CertificateException {
         if (is == null) {
@@ -388,7 +388,7 @@ public class X509Factory extends CertificateFactorySpi {
      *
      * @exception CRLException on parsing errors.
      */
-    public Collection<? extends java.security.cert.CRL> engineGenerateCRLs(
+    public Collection<? extends j86.j86.java.security.cert.CRL> engineGenerateCRLs(
             InputStream is) throws CRLException
     {
         if (is == null) {
@@ -406,7 +406,7 @@ public class X509Factory extends CertificateFactorySpi {
      * encoded X.509 certificates (in binary or base 64 encoded format) OR
      * as a single PKCS#7 encoded blob (in binary or base64 encoded format).
      */
-    private Collection<? extends java.security.cert.Certificate>
+    private Collection<? extends j86.j86.java.security.cert.Certificate>
         parseX509orPKCS7Cert(InputStream is)
         throws CertificateException, IOException
     {
@@ -439,7 +439,7 @@ public class X509Factory extends CertificateFactorySpi {
      * X.509 CRLs (in binary or base 64 encoded format) OR as a single PKCS#7
      * encoded blob (in binary or base 64 encoded format).
      */
-    private Collection<? extends java.security.cert.CRL>
+    private Collection<? extends j86.j86.java.security.cert.CRL>
         parseX509orPKCS7CRL(InputStream is)
         throws CRLException, IOException
     {

@@ -23,17 +23,17 @@
  * questions.
  */
 
-package sun.security.jgss.krb5;
+package j86.j86.sun.security.jgss.krb5;
 
-import org.ietf.jgss.*;
-import sun.security.jgss.spi.*;
-import sun.security.krb5.PrincipalName;
-import sun.security.krb5.KrbException;
-import java.io.UnsupportedEncodingException;
-import java.net.InetAddress;
-import java.net.UnknownHostException;
-import java.security.Provider;
-import java.util.Locale;
+import j86.org.ietf.jgss.*;
+import j86.j86.sun.security.jgss.spi.*;
+import j86.sun.security.krb5.PrincipalName;
+import j86.sun.security.krb5.KrbException;
+import j86.java.io.UnsupportedEncodingException;
+import j86.java.net.InetAddress;
+import j86.java.net.UnknownHostException;
+import j86.java.security.Provider;
+import j86.java.util.Locale;
 
 /**
  * Implements the GSSNameSpi for the krb5 mechanism.

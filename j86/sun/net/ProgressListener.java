@@ -22,9 +22,9 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.net;
+package j86.sun.net;
 
-import java.util.EventListener;
+import j86.java.util.EventListener;
 
 /**
  * ProgressListener is an interface to be implemented by parties

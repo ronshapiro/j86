@@ -23,20 +23,20 @@
  * questions.
  */
 
-package sun.net.spi.nameservice.dns;
+package j86.j86.j86.j86.sun.net.spi.nameservice.dns;
 
-import java.lang.ref.SoftReference;
-import java.net.InetAddress;
-import java.net.UnknownHostException;
-import javax.naming.*;
-import javax.naming.directory.*;
-import javax.naming.spi.NamingManager;
-import java.util.*;
-import sun.net.util.IPAddressUtil;
-import sun.net.dns.ResolverConfiguration;
-import sun.net.spi.nameservice.*;
-import java.security.AccessController;
-import sun.security.action.*;
+import j86.j86.java.lang.ref.SoftReference;
+import j86.java.net.InetAddress;
+import j86.java.net.UnknownHostException;
+import j86.javax.naming.*;
+import j86.j86.javax.naming.directory.*;
+import j86.j86.javax.naming.spi.NamingManager;
+import j86.java.util.*;
+import j86.j86.sun.net.util.IPAddressUtil;
+import j86.j86.sun.net.dns.ResolverConfiguration;
+import j86.j86.j86.sun.net.spi.nameservice.*;
+import j86.java.security.AccessController;
+import j86.sun.security.action.*;
 
 /*
  * A name service provider based on JNDI-DNS.
@@ -101,7 +101,7 @@ public final class DNSNameService implements NameService {
         if (thrCtxt == null) {
             final Hashtable<String,Object> env = new Hashtable<>();
             env.put("java.naming.factory.initial",
-                    "com.sun.jndi.dns.DnsContextFactory");
+                    "j86.com.sun.jndi.dns.DnsContextFactory");
 
             // If no nameservers property specified we create provider URL
             // based on system configured name servers
@@ -120,8 +120,8 @@ public final class DNSNameService implements NameService {
             //
             DirContext dirCtxt;
             try {
-                dirCtxt = java.security.AccessController.doPrivileged(
-                        new java.security.PrivilegedExceptionAction<DirContext>() {
+                dirCtxt = j86.java.security.AccessController.doPrivileged(
+                        new j86.java.security.PrivilegedExceptionAction<DirContext>() {
                             public DirContext run() throws NamingException {
                                 // Create the DNS context using NamingManager rather than using
                                 // the initial context constructor. This avoids having the initial
@@ -133,7 +133,7 @@ public final class DNSNameService implements NameService {
                                 return (DirContext)ctx;
                             }
                     });
-            } catch (java.security.PrivilegedActionException pae) {
+            } catch (j86.java.security.PrivilegedActionException pae) {
                 throw (NamingException)pae.getException();
             }
 
@@ -170,13 +170,13 @@ public final class DNSNameService implements NameService {
 
         // do the query
         try {
-            attrs = java.security.AccessController.doPrivileged(
-                    new java.security.PrivilegedExceptionAction<Attributes>() {
+            attrs = j86.java.security.AccessController.doPrivileged(
+                    new j86.java.security.PrivilegedExceptionAction<Attributes>() {
                         public Attributes run() throws NamingException {
                             return ctx.getAttributes(name, ids);
                         }
                 });
-        } catch (java.security.PrivilegedActionException pae) {
+        } catch (j86.java.security.PrivilegedActionException pae) {
             throw new UnknownHostException(pae.getException().getMessage());
         }
 
@@ -231,7 +231,7 @@ public final class DNSNameService implements NameService {
 
         // default domain
         String domain = AccessController.doPrivileged(
-            new GetPropertyAction("sun.net.spi.nameservice.domain"));
+            new GetPropertyAction("j86.j86.j86.sun.net.spi.nameservice.domain"));
         if (domain != null && domain.length() > 0) {
             domainList = new LinkedList<String>();
             domainList.add(domain);
@@ -239,7 +239,7 @@ public final class DNSNameService implements NameService {
 
         // name servers
         String nameservers = AccessController.doPrivileged(
-            new GetPropertyAction("sun.net.spi.nameservice.nameservers"));
+            new GetPropertyAction("j86.j86.j86.sun.net.spi.nameservice.nameservers"));
         if (nameservers != null && nameservers.length() > 0) {
             nameProviderUrl = createProviderURL(nameservers);
             if (nameProviderUrl.length() == 0) {

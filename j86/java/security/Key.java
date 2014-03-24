@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.security;
+package j86.java.security;
 
 /**
  * The Key interface is the top-level interface for all keys. It
@@ -92,14 +92,14 @@ package java.security;
  * @see KeyPairGenerator
  * @see KeyFactory
  * @see KeyRep
- * @see java.security.spec.KeySpec
+ * @see j86.j86.java.security.spec.KeySpec
  * @see Identity
  * @see Signer
  *
  * @author Benjamin Renaud
  */
 
-public interface Key extends java.io.Serializable {
+public interface Key extends j86.java.io.Serializable {
 
     // Declare serialVersionUID to be compatible with JDK1.1
 

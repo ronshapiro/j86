@@ -29,10 +29,10 @@
  *
  */
 
-package sun.font;
+package j86.sun.font;
 
-import java.awt.font.LineMetrics;
-import java.awt.font.GraphicAttribute;
+import j86.j86.java.awt.font.LineMetrics;
+import j86.j86.java.awt.font.GraphicAttribute;
 
 public final class CoreMetrics {
 

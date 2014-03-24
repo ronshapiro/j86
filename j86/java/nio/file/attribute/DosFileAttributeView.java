@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.nio.file.attribute;
+package j86.j86.j86.java.nio.file.attribute;
 
-import java.io.IOException;
+import j86.java.io.IOException;
 
 /**
  * A file attribute view that provides a view of the legacy "DOS" file attributes.
@@ -65,12 +65,12 @@ import java.io.IOException;
  * </table>
  * </blockquote>
  *
- * <p> The {@link java.nio.file.Files#getAttribute getAttribute} method may
+ * <p> The {@link j86.j86.java.nio.file.Files#getAttribute getAttribute} method may
  * be used to read any of these attributes, or any of the attributes defined by
  * {@link BasicFileAttributeView} as if by invoking the {@link #readAttributes
  * readAttributes()} method.
  *
- * <p> The {@link java.nio.file.Files#setAttribute setAttribute} method may
+ * <p> The {@link j86.j86.java.nio.file.Files#setAttribute setAttribute} method may
  * be used to update the file's last modified time, last access time or create
  * time attributes as defined by {@link BasicFileAttributeView}. It may also be
  * used to update the DOS attributes as if by invoking the {@link #setReadOnly

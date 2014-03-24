@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.swing;
+package j86.sun.swing;
 
 /**
  * An implementation of {@code UIClientPropertyKey} that wraps a {@code String}.

@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.security.spec;
+package j86.j86.java.security.spec;
 
-import java.security.GeneralSecurityException;
+import j86.java.security.GeneralSecurityException;
 
 /**
  * This is the exception for invalid key specifications.

@@ -23,14 +23,14 @@
  * questions.
  */
 
-package com.sun.crypto.provider;
+package j86.com.sun.crypto.provider;
 
-import java.io.*;
-import sun.security.util.*;
-import sun.misc.HexDumpEncoder;
-import java.security.spec.AlgorithmParameterSpec;
-import java.security.spec.InvalidParameterSpecException;
-import javax.crypto.spec.IvParameterSpec;
+import j86.java.io.*;
+import j86.sun.security.util.*;
+import j86.sun.misc.HexDumpEncoder;
+import j86.j86.java.security.spec.AlgorithmParameterSpec;
+import j86.j86.java.security.spec.InvalidParameterSpecException;
+import j86.j86.javax.crypto.spec.IvParameterSpec;
 
 /**
  * This class implements the parameter (IV) used with Block Ciphers

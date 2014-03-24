@@ -23,11 +23,11 @@
  * questions.
  */
 
-package java.awt.event;
+package j86.j86.java.awt.event;
 
-import java.awt.Component;
-import sun.awt.AppContext;
-import sun.awt.SunToolkit;
+import j86.java.awt.Component;
+import j86.sun.awt.AppContext;
+import j86.sun.awt.SunToolkit;
 
 /**
  * A low-level event which indicates that a Component has gained or lost the

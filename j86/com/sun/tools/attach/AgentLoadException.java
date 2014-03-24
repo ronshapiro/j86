@@ -23,17 +23,17 @@
  * questions.
  */
 
-package com.sun.tools.attach;
+package com.j86.sun.tools.attach;
 
 /**
  * The exception thrown when an agent cannot be loaded into the target
  * Java virtual machine.
  *
  * <p> This exception is thrown by {@link
- * com.sun.tools.attach.VirtualMachine#loadAgent VirtualMachine.loadAgent} or
- * {@link com.sun.tools.attach.VirtualMachine#loadAgentLibrary
+ * com.j86.sun.tools.attach.VirtualMachine#loadAgent VirtualMachine.loadAgent} or
+ * {@link com.j86.sun.tools.attach.VirtualMachine#loadAgentLibrary
  * VirtualMachine.loadAgentLibrary}, {@link
- * com.sun.tools.attach.VirtualMachine#loadAgentPath loadAgentPath} methods
+ * com.j86.sun.tools.attach.VirtualMachine#loadAgentPath loadAgentPath} methods
  * if the agent, or agent library, cannot be loaded.
  */
 @jdk.Exported

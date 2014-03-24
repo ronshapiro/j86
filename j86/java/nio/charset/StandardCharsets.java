@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.nio.charset;
+package j86.j86.java.nio.charset;
 
 /**
  * Constant definitions for the standard {@link Charset Charsets}. These
@@ -35,7 +35,7 @@ package java.nio.charset;
 public final class StandardCharsets {
 
     private StandardCharsets() {
-        throw new AssertionError("No java.nio.charset.StandardCharsets instances for you!");
+        throw new AssertionError("No j86.j86.java.nio.charset.StandardCharsets instances for you!");
     }
     /**
      * Seven-bit ASCII, a.k.a. ISO646-US, a.k.a. the Basic Latin block of the

@@ -23,8 +23,8 @@
  * questions.
  */
 
-package java.awt.print;
-import java.io.IOException;
+package j86.j86.java.awt.print;
+import j86.java.io.IOException;
 
 /**
  * The <code>PrinterIOException</code> class is a subclass of

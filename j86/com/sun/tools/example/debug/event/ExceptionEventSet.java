@@ -32,10 +32,10 @@
  */
 
 
-package com.sun.tools.example.debug.event;
+package j86.com.sun.tools.example.debug.event;
 
-import com.sun.jdi.*;
-import com.sun.jdi.event.*;
+import j86.com.sun.jdi.*;
+import j86.j86.com.sun.jdi.event.*;
 
 public class ExceptionEventSet extends LocatableEventSet {
 
@@ -47,7 +47,7 @@ public class ExceptionEventSet extends LocatableEventSet {
 
     /**
      * Gets the thrown exception object. The exception object is
-     * an instance of java.lang.Throwable or a subclass in the
+     * an instance of j86.java.lang.Throwable or a subclass in the
      * target VM.
      *
      * @return an {@link ObjectReference} which mirrors the thrown object in

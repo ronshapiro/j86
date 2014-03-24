@@ -56,7 +56,7 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-package jdk.internal.org.objectweb.asm.signature;
+package j86.j86.jdk.internal.org.objectweb.asm.signature;
 
 /**
  * A type signature parser to make a signature visitor visit an existing
@@ -89,10 +89,10 @@ public class SignatureReader {
      * constructor (see {@link #SignatureReader(String) SignatureReader}). This
      * method is intended to be called on a {@link SignatureReader} that was
      * created using a <i>ClassSignature</i> (such as the <code>signature</code>
-     * parameter of the {@link jdk.internal.org.objectweb.asm.ClassVisitor#visit
+     * parameter of the {@link j86.jdk.internal.org.objectweb.asm.ClassVisitor#visit
      * ClassVisitor.visit} method) or a <i>MethodTypeSignature</i> (such as the
      * <code>signature</code> parameter of the
-     * {@link jdk.internal.org.objectweb.asm.ClassVisitor#visitMethod
+     * {@link j86.jdk.internal.org.objectweb.asm.ClassVisitor#visitMethod
      * ClassVisitor.visitMethod} method).
      *
      * @param v
@@ -148,8 +148,8 @@ public class SignatureReader {
      * method is intended to be called on a {@link SignatureReader} that was
      * created using a <i>FieldTypeSignature</i>, such as the
      * <code>signature</code> parameter of the
-     * {@link jdk.internal.org.objectweb.asm.ClassVisitor#visitField ClassVisitor.visitField}
-     * or {@link jdk.internal.org.objectweb.asm.MethodVisitor#visitLocalVariable
+     * {@link j86.jdk.internal.org.objectweb.asm.ClassVisitor#visitField ClassVisitor.visitField}
+     * or {@link j86.jdk.internal.org.objectweb.asm.MethodVisitor#visitLocalVariable
      * MethodVisitor.visitLocalVariable} methods.
      *
      * @param v

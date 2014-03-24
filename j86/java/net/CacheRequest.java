@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.net;
+package j86.java.net;
 
-import java.io.OutputStream;
-import java.io.IOException;
+import j86.java.io.OutputStream;
+import j86.java.io.IOException;
 
 /**
  * Represents channels for storing resources in the

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.swing;
+package j86.javax.swing;
 
 /** DesktopManager objects are owned by a JDesktopPane object. They are responsible
   * for implementing L&amp;F specific behaviors for the JDesktopPane. JInternalFrame

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.lang;
+package j86.java.lang;
 
 /**
  * Thrown to indicate that the <code>clone</code> method in class
@@ -36,8 +36,8 @@ package java.lang;
  * should not be cloned.
  *
  * @author  unascribed
- * @see     java.lang.Cloneable
- * @see     java.lang.Object#clone()
+ * @see     j86.java.lang.Cloneable
+ * @see     j86.java.lang.Object#clone()
  * @since   JDK1.0
  */
 

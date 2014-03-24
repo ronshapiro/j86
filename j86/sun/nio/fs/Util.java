@@ -23,13 +23,13 @@
  * questions.
  */
 
-package sun.nio.fs;
+package j86.j86.sun.nio.fs;
 
-import java.util.*;
-import java.nio.file.*;
-import java.nio.charset.Charset;
-import java.security.*;
-import sun.security.action.*;
+import j86.java.util.*;
+import j86.j86.java.nio.file.*;
+import j86.j86.java.nio.charset.Charset;
+import j86.java.security.*;
+import j86.sun.security.action.*;
 
 /**
  * Utility methods

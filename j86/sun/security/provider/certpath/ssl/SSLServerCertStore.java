@@ -23,37 +23,37 @@
  * questions.
  */
 
-package sun.security.provider.certpath.ssl;
+package j86.j86.j86.sun.security.provider.certpath.ssl;
 
-import java.io.IOException;
-import java.net.URI;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
-import java.security.GeneralSecurityException;
-import java.security.InvalidAlgorithmParameterException;
-import java.security.Provider;
-import java.security.cert.CertificateException;
-import java.security.cert.CertSelector;
-import java.security.cert.CertStore;
-import java.security.cert.CertStoreException;
-import java.security.cert.CertStoreParameters;
-import java.security.cert.CertStoreSpi;
-import java.security.cert.CRLSelector;
-import java.security.cert.X509Certificate;
-import java.security.cert.X509CRL;
-import java.net.Socket;
-import java.net.URLConnection;
-import javax.net.ssl.HostnameVerifier;
-import javax.net.ssl.HttpsURLConnection;
-import javax.net.ssl.SSLContext;
-import javax.net.ssl.SSLSession;
-import javax.net.ssl.SSLEngine;
-import javax.net.ssl.SSLSocketFactory;
-import javax.net.ssl.TrustManager;
-import javax.net.ssl.X509ExtendedTrustManager;
+import j86.java.io.IOException;
+import j86.java.net.URI;
+import j86.java.util.ArrayList;
+import j86.java.util.Arrays;
+import j86.java.util.Collection;
+import j86.java.util.Collections;
+import j86.java.util.List;
+import j86.java.security.GeneralSecurityException;
+import j86.java.security.InvalidAlgorithmParameterException;
+import j86.java.security.Provider;
+import j86.j86.java.security.cert.CertificateException;
+import j86.j86.java.security.cert.CertSelector;
+import j86.j86.java.security.cert.CertStore;
+import j86.j86.java.security.cert.CertStoreException;
+import j86.j86.java.security.cert.CertStoreParameters;
+import j86.j86.java.security.cert.CertStoreSpi;
+import j86.j86.java.security.cert.CRLSelector;
+import j86.j86.java.security.cert.X509Certificate;
+import j86.j86.java.security.cert.X509CRL;
+import j86.java.net.Socket;
+import j86.java.net.URLConnection;
+import j86.j86.javax.net.ssl.HostnameVerifier;
+import j86.j86.javax.net.ssl.HttpsURLConnection;
+import j86.j86.javax.net.ssl.SSLContext;
+import j86.j86.javax.net.ssl.SSLSession;
+import j86.j86.javax.net.ssl.SSLEngine;
+import j86.j86.javax.net.ssl.SSLSocketFactory;
+import j86.j86.javax.net.ssl.TrustManager;
+import j86.j86.javax.net.ssl.X509ExtendedTrustManager;
 
 /**
  * A CertStore that retrieves an SSL server's certificate chain.

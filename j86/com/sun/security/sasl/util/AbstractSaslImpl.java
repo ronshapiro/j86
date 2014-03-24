@@ -23,17 +23,17 @@
  * questions.
  */
 
-package com.sun.security.sasl.util;
+package j86.j86.com.sun.security.sasl.util;
 
-import javax.security.sasl.*;
-import java.io.*;
-import java.util.Map;
-import java.util.StringTokenizer;
+import j86.javax.security.sasl.*;
+import j86.java.io.*;
+import j86.java.util.Map;
+import j86.java.util.StringTokenizer;
 
-import java.util.logging.Logger;
-import java.util.logging.Level;
+import j86.j86.java.util.logging.Logger;
+import j86.j86.java.util.logging.Level;
 
-import sun.misc.HexDumpEncoder;
+import j86.sun.misc.HexDumpEncoder;
 
 /**
  * The base class used by client and server implementations of SASL
@@ -329,8 +329,8 @@ public abstract class AbstractSaslImpl {
     }
 
     // ---------------- Constants  -----------------
-    private static final String SASL_LOGGER_NAME = "javax.security.sasl";
-    protected static final String MAX_SEND_BUF = "javax.security.sasl.sendmaxbuffer";
+    private static final String SASL_LOGGER_NAME = "j86.javax.security.sasl";
+    protected static final String MAX_SEND_BUF = "j86.javax.security.sasl.sendmaxbuffer";
 
     /**
      * Logger for debug messages

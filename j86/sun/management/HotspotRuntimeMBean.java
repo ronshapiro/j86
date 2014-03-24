@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.management;
+package j86.sun.management;
 
-import sun.management.counter.Counter;
+import j86.j86.sun.management.counter.Counter;
 
 /**
  * Hotspot internal management interface for the runtime system.
@@ -67,5 +67,5 @@ public interface HotspotRuntimeMBean {
      * @return a <tt>List</tt> of internal counters maintained in the VM
      * for the runtime system.
      */
-    public java.util.List<Counter> getInternalRuntimeCounters();
+    public j86.java.util.List<Counter> getInternalRuntimeCounters();
 }

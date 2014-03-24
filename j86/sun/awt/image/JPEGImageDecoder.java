@@ -29,13 +29,13 @@
  * The native implementation of the JPEG image decoder was adapted from
  * release 6 of the free JPEG software from the Independent JPEG Group.
  */
-package sun.awt.image;
+package j86.j86.j86.sun.awt.image;
 
-import java.util.Vector;
-import java.util.Hashtable;
-import java.io.InputStream;
-import java.io.IOException;
-import java.awt.image.*;
+import j86.java.util.Vector;
+import j86.java.util.Hashtable;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
+import j86.j86.j86.java.awt.image.*;
 
 /**
  * JPEG Image converter
@@ -53,8 +53,8 @@ public class JPEGImageDecoder extends ImageDecoder {
     private ColorModel colormodel;
 
     static {
-        java.security.AccessController.doPrivileged(
-            new java.security.PrivilegedAction<Void>() {
+        j86.java.security.AccessController.doPrivileged(
+            new j86.java.security.PrivilegedAction<Void>() {
                 public Void run() {
                     System.loadLibrary("jpeg");
                     return null;

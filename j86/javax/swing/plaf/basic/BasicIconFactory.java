@@ -23,16 +23,16 @@
  * questions.
  */
 
-package javax.swing.plaf.basic;
+package j86.j86.j86.javax.swing.plaf.basic;
 
-import javax.swing.*;
-import javax.swing.plaf.UIResource;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.plaf.UIResource;
 
-import java.awt.Graphics;
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.Polygon;
-import java.io.Serializable;
+import j86.java.awt.Graphics;
+import j86.java.awt.Color;
+import j86.java.awt.Component;
+import j86.java.awt.Polygon;
+import j86.java.io.Serializable;
 
 /**
  * Factory object that can vend Icons appropriate for the basic L &amp; F.
@@ -43,8 +43,8 @@ import java.io.Serializable;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @author David Kloba
  * @author Georges Saab

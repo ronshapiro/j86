@@ -23,13 +23,13 @@
  * questions.
  */
 
-package sun.tools.tree;
+package j86.sun.tools.tree;
 
-import sun.tools.java.*;
-import sun.tools.asm.Assembler;
-import sun.tools.asm.LocalVariable;
-import java.io.PrintStream;
-import java.util.Hashtable;
+import j86.sun.tools.java.*;
+import j86.sun.tools.asm.Assembler;
+import j86.sun.tools.asm.LocalVariable;
+import j86.java.io.PrintStream;
+import j86.java.util.Hashtable;
 
 /**
  * WARNING: The contents of this source file are not part of any

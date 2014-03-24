@@ -22,29 +22,29 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.media.sound;
+package j86.com.sun.media.sound;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.net.URL;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Stack;
+import j86.java.io.File;
+import j86.java.io.FileInputStream;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.io.OutputStream;
+import j86.java.net.URL;
+import j86.java.util.ArrayList;
+import j86.java.util.Arrays;
+import j86.java.util.HashMap;
+import j86.java.util.List;
+import j86.java.util.Map;
+import j86.java.util.Stack;
 
-import javax.sound.midi.Instrument;
-import javax.sound.midi.Patch;
-import javax.sound.midi.Soundbank;
-import javax.sound.midi.SoundbankResource;
-import javax.sound.sampled.AudioFormat;
-import javax.sound.sampled.AudioInputStream;
-import javax.sound.sampled.AudioSystem;
-import javax.sound.sampled.AudioFormat.Encoding;
+import j86.javax.sound.midi.Instrument;
+import j86.javax.sound.midi.Patch;
+import j86.javax.sound.midi.Soundbank;
+import j86.javax.sound.midi.SoundbankResource;
+import j86.javax.sound.sampled.AudioFormat;
+import j86.javax.sound.sampled.AudioInputStream;
+import j86.javax.sound.sampled.AudioSystem;
+import j86.javax.sound.sampled.AudioFormat.Encoding;
 
 /**
  * A DLS Level 1 and Level 2 soundbank reader (from files/url/streams).

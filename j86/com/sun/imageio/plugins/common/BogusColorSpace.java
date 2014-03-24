@@ -23,9 +23,9 @@
  * questions.
  */
 
-package com.sun.imageio.plugins.common;
+package j86.com.sun.imageio.plugins.common;
 
-import java.awt.color.ColorSpace;
+import j86.j86.java.awt.color.ColorSpace;
 
 /**
  * A dummy <code>ColorSpace</code> to enable <code>ColorModel</code>

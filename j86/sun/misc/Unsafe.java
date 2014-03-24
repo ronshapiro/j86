@@ -23,13 +23,13 @@
  * questions.
  */
 
-package sun.misc;
+package j86.sun.misc;
 
-import java.security.*;
-import java.lang.reflect.*;
+import j86.java.security.*;
+import j86.j86.j86.java.lang.reflect.*;
 
-import sun.reflect.CallerSensitive;
-import sun.reflect.Reflection;
+import j86.sun.reflect.CallerSensitive;
+import j86.sun.reflect.Reflection;
 
 
 /**
@@ -46,7 +46,7 @@ public final class Unsafe {
     private static native void registerNatives();
     static {
         registerNatives();
-        sun.reflect.Reflection.registerMethodsToFilter(Unsafe.class, "getUnsafe");
+        j86.sun.reflect.Reflection.registerMethodsToFilter(Unsafe.class, "getUnsafe");
     }
 
     private Unsafe() {}
@@ -107,7 +107,7 @@ public final class Unsafe {
      * The results are undefined unless one of the following cases is true:
      * <ul>
      * <li>The offset was obtained from {@link #objectFieldOffset} on
-     * the {@link java.lang.reflect.Field} of some Java field and the object
+     * the {@link j86.j86.j86.java.lang.reflect.Field} of some Java field and the object
      * referred to by <code>o</code> is of a class compatible with that
      * field's class.
      *
@@ -827,10 +827,10 @@ public final class Unsafe {
      * For each CP entry, the corresponding CP patch must either be null or have
      * the a format that matches its tag:
      * <ul>
-     * <li>Integer, Long, Float, Double: the corresponding wrapper object type from java.lang
+     * <li>Integer, Long, Float, Double: the corresponding wrapper object type from j86.java.lang
      * <li>Utf8: a string (must have suitable syntax if used as signature or name)
-     * <li>Class: any java.lang.Class object
-     * <li>String: any object (not just a java.lang.String)
+     * <li>Class: any j86.java.lang.Class object
+     * <li>String: any object (not just a j86.java.lang.String)
      * <li>InterfaceMethodRef: (NYI) a method handle to invoke on that call site's arguments
      * </ul>
      * @params hostClass context for linkage, access control, protection domain, and class loader

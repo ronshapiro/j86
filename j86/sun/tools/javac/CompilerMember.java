@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.tools.javac;
+package j86.j86.sun.tools.javac;
 
-import sun.tools.java.*;
-import sun.tools.asm.Assembler;
+import j86.sun.tools.java.*;
+import j86.sun.tools.asm.Assembler;
 
 /**
  * This class is used to represents fields while they are

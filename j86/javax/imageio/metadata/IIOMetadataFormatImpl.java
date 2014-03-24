@@ -23,25 +23,25 @@
  * questions.
  */
 
-package javax.imageio.metadata;
+package j86.j86.javax.imageio.metadata;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Locale;
-import java.util.Map;
-import java.util.MissingResourceException;
-import java.util.ResourceBundle;
-import javax.imageio.ImageTypeSpecifier;
-import com.sun.imageio.plugins.common.StandardMetadataFormat;
+import j86.java.util.ArrayList;
+import j86.java.util.Collection;
+import j86.java.util.HashMap;
+import j86.java.util.Iterator;
+import j86.java.util.List;
+import j86.java.util.Locale;
+import j86.java.util.Map;
+import j86.java.util.MissingResourceException;
+import j86.java.util.ResourceBundle;
+import j86.javax.imageio.ImageTypeSpecifier;
+import j86.com.sun.imageio.plugins.common.StandardMetadataFormat;
 
 /**
  * A concrete class providing a reusable implementation of the
  * <code>IIOMetadataFormat</code> interface.  In addition, a static
  * instance representing the standard, plug-in neutral
- * <code>javax_imageio_1.0</code> format is provided by the
+ * <code>j86.javax.imageio_1.0</code> format is provided by the
  * <code>getStandardFormatInstance</code> method.
  *
  * <p> In order to supply localized descriptions of elements and
@@ -78,10 +78,10 @@ public abstract class IIOMetadataFormatImpl implements IIOMetadataFormat {
 
     /**
      * A <code>String</code> constant containing the standard format
-     * name, <code>"javax_imageio_1.0"</code>.
+     * name, <code>"j86.javax.imageio_1.0"</code>.
      */
     public static final String standardMetadataFormatName =
-        "javax_imageio_1.0";
+        "j86.javax.imageio_1.0";
 
     private static IIOMetadataFormat standardFormat = null;
 
@@ -963,8 +963,8 @@ public abstract class IIOMetadataFormatImpl implements IIOMetadataFormat {
          * system class loader.
          */
         ClassLoader loader = (ClassLoader)
-            java.security.AccessController.doPrivileged(
-                new java.security.PrivilegedAction() {
+            j86.java.security.AccessController.doPrivileged(
+                new j86.java.security.PrivilegedAction() {
                    public Object run() {
                        return Thread.currentThread().getContextClassLoader();
                    }
@@ -1260,9 +1260,9 @@ public abstract class IIOMetadataFormatImpl implements IIOMetadataFormat {
 
     /**
      * Returns an <code>IIOMetadataFormat</code> object describing the
-     * standard, plug-in neutral <code>javax.imageio_1.0</code>
+     * standard, plug-in neutral <code>j86.javax.imageio_1.0</code>
      * metadata document format described in the comment of the
-     * <code>javax.imageio.metadata</code> package.
+     * <code>j86.j86.javax.imageio.metadata</code> package.
      *
      * @return a predefined <code>IIOMetadataFormat</code> instance.
      */

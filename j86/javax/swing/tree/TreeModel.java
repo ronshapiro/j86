@@ -22,9 +22,9 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.tree;
+package j86.j86.javax.swing.tree;
 
-import javax.swing.event.*;
+import j86.j86.javax.swing.event.*;
 
 /**
  * The model used by <code>JTree</code>.

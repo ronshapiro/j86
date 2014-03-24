@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.sql;
+package j86.javax.sql;
 
 /**
  * An <code>Event</code> object generated when an event occurs to a
@@ -41,7 +41,7 @@ package javax.sql;
  * @since 1.4
  */
 
-public class RowSetEvent extends java.util.EventObject {
+public class RowSetEvent extends j86.java.util.EventObject {
 
   /**
    * Constructs a <code>RowSetEvent</code> object initialized with the

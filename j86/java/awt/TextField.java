@@ -22,15 +22,15 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.awt;
+package j86.java.awt;
 
-import java.awt.peer.TextFieldPeer;
-import java.awt.event.*;
-import java.util.EventListener;
-import java.io.ObjectOutputStream;
-import java.io.ObjectInputStream;
-import java.io.IOException;
-import javax.accessibility.*;
+import j86.j86.java.awt.peer.TextFieldPeer;
+import j86.j86.java.awt.event.*;
+import j86.java.util.EventListener;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.IOException;
+import j86.javax.accessibility.*;
 
 
 /**
@@ -84,14 +84,14 @@ import javax.accessibility.*;
  * text field.
  *
  * @author      Sami Shaio
- * @see         java.awt.event.KeyEvent
- * @see         java.awt.event.KeyAdapter
- * @see         java.awt.event.KeyListener
- * @see         java.awt.event.ActionEvent
- * @see         java.awt.Component#addKeyListener
- * @see         java.awt.TextField#processEvent
- * @see         java.awt.TextField#processActionEvent
- * @see         java.awt.TextField#addActionListener
+ * @see         j86.j86.java.awt.event.KeyEvent
+ * @see         j86.j86.java.awt.event.KeyAdapter
+ * @see         j86.j86.java.awt.event.KeyListener
+ * @see         j86.j86.java.awt.event.ActionEvent
+ * @see         j86.java.awt.Component#addKeyListener
+ * @see         j86.java.awt.TextField#processEvent
+ * @see         j86.java.awt.TextField#processActionEvent
+ * @see         j86.java.awt.TextField#addActionListener
  * @since       JDK1.0
  */
 public class TextField extends TextComponent {
@@ -148,7 +148,7 @@ public class TextField extends TextComponent {
      * Constructs a new text field.
      * @exception HeadlessException if GraphicsEnvironment.isHeadless()
      * returns true.
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      */
     public TextField() throws HeadlessException {
         this("", 0);
@@ -161,7 +161,7 @@ public class TextField extends TextComponent {
      *             string <code>""</code> will be displayed.
      * @exception HeadlessException if GraphicsEnvironment.isHeadless()
      * returns true.
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      */
     public TextField(String text) throws HeadlessException {
         this(text, (text != null) ? text.length() : 0);
@@ -176,7 +176,7 @@ public class TextField extends TextComponent {
      *             <code>columns</code> is set to <code>0</code>.
      * @exception HeadlessException if GraphicsEnvironment.isHeadless()
      * returns true.
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      */
     public TextField(int columns) throws HeadlessException {
         this("", columns);
@@ -195,7 +195,7 @@ public class TextField extends TextComponent {
      *             <code>columns</code> is set to <code>0</code>.
      * @exception HeadlessException if GraphicsEnvironment.isHeadless()
      * returns true.
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      */
     public TextField(String text, int columns) throws HeadlessException {
         super(text);
@@ -239,8 +239,8 @@ public class TextField extends TextComponent {
      * character actually used by the TextField implementation might be
      * different.
      * @return      the echo character for this text field.
-     * @see         java.awt.TextField#echoCharIsSet
-     * @see         java.awt.TextField#setEchoChar
+     * @see         j86.java.awt.TextField#echoCharIsSet
+     * @see         j86.java.awt.TextField#setEchoChar
      */
     public char getEchoChar() {
         return echoChar;
@@ -263,8 +263,8 @@ public class TextField extends TextComponent {
      * or might not be identical to the echo character actually
      * used by the TextField implementation.
      * @param       c   the echo character for this text field.
-     * @see         java.awt.TextField#echoCharIsSet
-     * @see         java.awt.TextField#getEchoChar
+     * @see         j86.java.awt.TextField#echoCharIsSet
+     * @see         j86.java.awt.TextField#getEchoChar
      * @since       JDK1.1
      */
     public void setEchoChar(char c) {
@@ -290,7 +290,7 @@ public class TextField extends TextComponent {
      * Sets the text that is presented by this
      * text component to be the specified text.
      * @param       t   the new text.
-     * @see         java.awt.TextComponent#getText
+     * @see         j86.java.awt.TextComponent#getText
      */
     public void setText(String t) {
         super.setText(t);
@@ -309,8 +309,8 @@ public class TextField extends TextComponent {
      * @return     <code>true</code> if this text field has
      *                 a character set for echoing;
      *                 <code>false</code> otherwise.
-     * @see        java.awt.TextField#setEchoChar
-     * @see        java.awt.TextField#getEchoChar
+     * @see        j86.java.awt.TextField#setEchoChar
+     * @see        j86.java.awt.TextField#getEchoChar
      */
     public boolean echoCharIsSet() {
         return echoChar != 0;
@@ -320,7 +320,7 @@ public class TextField extends TextComponent {
      * Gets the number of columns in this text field. A column is an
      * approximate average character width that is platform-dependent.
      * @return     the number of columns.
-     * @see        java.awt.TextField#setColumns
+     * @see        j86.java.awt.TextField#setColumns
      * @since      JDK1.1
      */
     public int getColumns() {
@@ -331,7 +331,7 @@ public class TextField extends TextComponent {
      * Sets the number of columns in this text field. A column is an
      * approximate average character width that is platform-dependent.
      * @param      columns   the number of columns.
-     * @see        java.awt.TextField#getColumns
+     * @see        j86.java.awt.TextField#getColumns
      * @exception  IllegalArgumentException   if the value
      *                 supplied for <code>columns</code>
      *                 is less than <code>0</code>.
@@ -462,7 +462,7 @@ public class TextField extends TextComponent {
      * @param      l the action listener.
      * @see        #removeActionListener
      * @see        #getActionListeners
-     * @see        java.awt.event.ActionListener
+     * @see        j86.j86.java.awt.event.ActionListener
      * @since      JDK1.1
      */
     public synchronized void addActionListener(ActionListener l) {
@@ -483,7 +483,7 @@ public class TextField extends TextComponent {
      * @param           l the action listener.
      * @see             #addActionListener
      * @see             #getActionListeners
-     * @see             java.awt.event.ActionListener
+     * @see             j86.j86.java.awt.event.ActionListener
      * @since           JDK1.1
      */
     public synchronized void removeActionListener(ActionListener l) {
@@ -503,7 +503,7 @@ public class TextField extends TextComponent {
      *
      * @see #addActionListener
      * @see #removeActionListener
-     * @see java.awt.event.ActionListener
+     * @see j86.j86.java.awt.event.ActionListener
      * @since 1.4
      */
     public synchronized ActionListener[] getActionListeners() {
@@ -531,14 +531,14 @@ public class TextField extends TextComponent {
      *
      * @param listenerType the type of listeners requested; this parameter
      *          should specify an interface that descends from
-     *          <code>java.util.EventListener</code>
+     *          <code>j86.java.util.EventListener</code>
      * @return an array of all objects registered as
      *          <code><em>Foo</em>Listener</code>s on this textfield,
      *          or an empty array if no such
      *          listeners have been added
      * @exception ClassCastException if <code>listenerType</code>
      *          doesn't specify a class or interface that implements
-     *          <code>java.util.EventListener</code>
+     *          <code>j86.java.util.EventListener</code>
      *
      * @see #getActionListeners
      * @since 1.3
@@ -576,8 +576,8 @@ public class TextField extends TextComponent {
      * exception.
      *
      * @param      e the event
-     * @see        java.awt.event.ActionEvent
-     * @see        java.awt.TextField#processActionEvent
+     * @see        j86.j86.java.awt.event.ActionEvent
+     * @see        j86.java.awt.TextField#processActionEvent
      * @since      JDK1.1
      */
     protected void processEvent(AWTEvent e) {
@@ -606,9 +606,9 @@ public class TextField extends TextComponent {
      * exception.
      *
      * @param       e the action event
-     * @see         java.awt.event.ActionListener
-     * @see         java.awt.TextField#addActionListener
-     * @see         java.awt.Component#enableEvents
+     * @see         j86.j86.java.awt.event.ActionListener
+     * @see         j86.java.awt.TextField#addActionListener
+     * @see         j86.java.awt.Component#enableEvents
      * @since       JDK1.1
      */
     protected void processActionEvent(ActionEvent e) {
@@ -659,7 +659,7 @@ public class TextField extends TextComponent {
      *             ActionListenerK indicating and ActionListener object.
      *
      * @see AWTEventMulticaster#save(ObjectOutputStream, String, EventListener)
-     * @see java.awt.Component#actionListenerK
+     * @see j86.java.awt.Component#actionListenerK
      */
     private void writeObject(ObjectOutputStream s)
       throws IOException
@@ -681,7 +681,7 @@ public class TextField extends TextComponent {
      * <code>true</code>
      * @see #removeActionListener(ActionListener)
      * @see #addActionListener(ActionListener)
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      */
     private void readObject(ObjectInputStream s)
       throws ClassNotFoundException, IOException, HeadlessException

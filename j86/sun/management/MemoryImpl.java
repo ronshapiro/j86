@@ -23,18 +23,18 @@
  * questions.
  */
 
-package sun.management;
+package j86.sun.management;
 
-import java.lang.management.ManagementFactory;
-import java.lang.management.MemoryMXBean;
-import java.lang.management.MemoryUsage;
-import java.lang.management.MemoryNotificationInfo;
-import java.lang.management.MemoryManagerMXBean;
-import java.lang.management.MemoryPoolMXBean;
-import javax.management.ObjectName;
-import javax.management.MBeanNotificationInfo;
-import javax.management.Notification;
-import javax.management.openmbean.CompositeData;
+import j86.j86.java.lang.management.ManagementFactory;
+import j86.j86.java.lang.management.MemoryMXBean;
+import j86.j86.java.lang.management.MemoryUsage;
+import j86.j86.java.lang.management.MemoryNotificationInfo;
+import j86.j86.java.lang.management.MemoryManagerMXBean;
+import j86.j86.java.lang.management.MemoryPoolMXBean;
+import j86.javax.management.ObjectName;
+import j86.javax.management.MBeanNotificationInfo;
+import j86.javax.management.Notification;
+import j86.j86.javax.management.openmbean.CompositeData;
 
 /**
  * Implementation class for the memory subsystem.
@@ -59,7 +59,7 @@ class MemoryImpl extends NotificationEmitterSupport
     }
 
     public int getObjectPendingFinalizationCount() {
-        return sun.misc.VM.getFinalRefCount();
+        return j86.sun.misc.VM.getFinalRefCount();
     }
 
     public void gc() {
@@ -105,7 +105,7 @@ class MemoryImpl extends NotificationEmitterSupport
     private native void setVerboseGC(boolean value);
 
     private final static String notifName =
-        "javax.management.Notification";
+        "j86.javax.management.Notification";
     private final static String[] notifTypes = {
         MemoryNotificationInfo.MEMORY_THRESHOLD_EXCEEDED,
         MemoryNotificationInfo.MEMORY_COLLECTION_THRESHOLD_EXCEEDED

@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.management;
+package j86.sun.management;
 
-import com.sun.management.VMOption;
-import com.sun.management.VMOption.Origin;
-import javax.management.openmbean.CompositeType;
-import javax.management.openmbean.CompositeData;
-import javax.management.openmbean.CompositeDataSupport;
-import javax.management.openmbean.OpenDataException;
+import com.j86.sun.management.VMOption;
+import com.j86.sun.management.VMOption.Origin;
+import j86.j86.javax.management.openmbean.CompositeType;
+import j86.j86.javax.management.openmbean.CompositeData;
+import j86.j86.javax.management.openmbean.CompositeDataSupport;
+import j86.j86.javax.management.openmbean.OpenDataException;
 
 /**
  * A CompositeData for VMOption for the local management support.

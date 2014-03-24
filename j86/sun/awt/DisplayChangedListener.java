@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.awt;
+package j86.sun.awt;
 
-import java.util.EventListener;
+import j86.java.util.EventListener;
 
 /**
  * The listener interface for receiving display change events.

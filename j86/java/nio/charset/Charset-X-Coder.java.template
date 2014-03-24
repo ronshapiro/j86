@@ -25,16 +25,16 @@
 
 #warn This file is preprocessed before being compiled
 
-package java.nio.charset;
+package j86.j86.java.nio.charset;
 
-import java.nio.Buffer;
-import java.nio.ByteBuffer;
-import java.nio.CharBuffer;
-import java.nio.BufferOverflowException;
-import java.nio.BufferUnderflowException;
-import java.lang.ref.WeakReference;
-import java.nio.charset.CoderMalfunctionError;                  // javadoc
-import java.util.Arrays;
+import j86.java.nio.Buffer;
+import j86.java.nio.ByteBuffer;
+import j86.java.nio.CharBuffer;
+import j86.java.nio.BufferOverflowException;
+import j86.java.nio.BufferUnderflowException;
+import j86.j86.java.lang.ref.WeakReference;
+import j86.j86.java.nio.charset.CoderMalfunctionError;                  // javadoc
+import j86.java.util.Arrays;
 
 
 /**
@@ -924,7 +924,7 @@ public abstract class Charset$Coder$ {
      * <p> This method returns <tt>false</tt> if the given character is a
      * surrogate character; such characters can be interpreted only when they
      * are members of a pair consisting of a high surrogate followed by a low
-     * surrogate.  The {@link #canEncode(java.lang.CharSequence)
+     * surrogate.  The {@link #canEncode(j86.java.lang.CharSequence)
      * canEncode(CharSequence)} method may be used to test whether or not a
      * character sequence can be encoded.
      *

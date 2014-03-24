@@ -24,4 +24,4 @@
  */
 
 @jdk.Exported
-package com.sun.security.jgss;
+package com.j86.sun.security.jgss;

@@ -23,15 +23,15 @@
  * questions.
  */
 
-package sun.nio.cs.ext;
+package j86.j86.j86.j86.sun.nio.cs.ext;
 
-import java.nio.ByteBuffer;
-import java.nio.CharBuffer;
-import java.nio.charset.Charset;
-import java.nio.charset.CharsetDecoder;
-import java.nio.charset.CharsetEncoder;
-import java.nio.charset.CoderResult;
-import sun.nio.cs.HistoricallyNamedCharset;
+import j86.java.nio.ByteBuffer;
+import j86.java.nio.CharBuffer;
+import j86.j86.java.nio.charset.Charset;
+import j86.j86.java.nio.charset.CharsetDecoder;
+import j86.j86.java.nio.charset.CharsetEncoder;
+import j86.j86.java.nio.charset.CoderResult;
+import j86.j86.j86.sun.nio.cs.HistoricallyNamedCharset;
 
 public class EUC_JP_LINUX
     extends Charset

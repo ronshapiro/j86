@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.java2d;
+package j86.sun.java2d;
 
-import sun.awt.FontConfiguration;
+import j86.sun.awt.FontConfiguration;
 
 /**
  * Font support for graphics environment

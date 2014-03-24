@@ -23,16 +23,16 @@
  * questions.
  */
 
-package javax.swing.plaf.metal;
+package j86.j86.j86.javax.swing.plaf.metal;
 
-import javax.swing.plaf.*;
-import javax.swing.*;
-import java.awt.*;
-import java.awt.image.*;
-import java.lang.ref.*;
-import java.util.*;
-import sun.swing.CachedPainter;
-import sun.swing.ImageIconUIResource;
+import j86.j86.javax.swing.plaf.*;
+import j86.javax.swing.*;
+import j86.java.awt.*;
+import j86.j86.j86.java.awt.image.*;
+import j86.j86.java.lang.ref.*;
+import j86.java.util.*;
+import j86.sun.swing.CachedPainter;
+import j86.sun.swing.ImageIconUIResource;
 
 /**
  * This is a dumping ground for random stuff we want to use in several places.
@@ -210,7 +210,7 @@ class MetalUtils {
      */
     static boolean drawGradient(Component c, Graphics g, String key,
                                 int x, int y, int w, int h, boolean vertical) {
-        java.util.List gradient = (java.util.List)UIManager.get(key);
+        j86.java.util.List gradient = (java.util.List)UIManager.get(key);
         if (gradient == null || !(g instanceof Graphics2D)) {
             return false;
         }
@@ -251,7 +251,7 @@ class MetalUtils {
         }
 
         public void paint(Component c, Graphics2D g,
-                          java.util.List gradient, int x, int y, int w,
+                          j86.java.util.List gradient, int x, int y, int w,
                           int h, boolean isVertical) {
             int imageWidth;
             int imageHeight;
@@ -274,7 +274,7 @@ class MetalUtils {
         protected void paintToImage(Component c, Image image, Graphics g,
                                     int w, int h, Object[] args) {
             Graphics2D g2 = (Graphics2D)g;
-            java.util.List gradient = (java.util.List)args[0];
+            j86.java.util.List gradient = (java.util.List)args[0];
             boolean isVertical = ((Boolean)args[1]).booleanValue();
             // Render to the VolatileImage
             if (isVertical) {

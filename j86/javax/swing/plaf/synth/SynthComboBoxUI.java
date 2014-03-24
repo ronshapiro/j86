@@ -23,20 +23,20 @@
  * questions.
  */
 
-package javax.swing.plaf.synth;
+package j86.j86.j86.javax.swing.plaf.synth;
 
-import java.awt.*;
-import java.awt.event.*;
-import javax.swing.*;
-import javax.swing.plaf.*;
-import javax.swing.event.*;
-import javax.swing.plaf.basic.*;
-import java.beans.PropertyChangeListener;
-import java.beans.PropertyChangeEvent;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.javax.swing.event.*;
+import j86.j86.j86.javax.swing.plaf.basic.*;
+import j86.java.beans.PropertyChangeListener;
+import j86.java.beans.PropertyChangeEvent;
 
 /**
  * Provides the Synth L&amp;F UI delegate for
- * {@link javax.swing.JComboBox}.
+ * {@link j86.javax.swing.JComboBox}.
  *
  * @author Scott Violet
  * @since 1.7

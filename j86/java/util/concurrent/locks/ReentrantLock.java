@@ -33,9 +33,9 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package java.util.concurrent.locks;
-import java.util.concurrent.TimeUnit;
-import java.util.Collection;
+package j86.j86.j86.java.util.concurrent.locks;
+import j86.j86.java.util.concurrent.TimeUnit;
+import j86.java.util.Collection;
 
 /**
  * A reentrant mutual exclusion {@link Lock} with the same basic
@@ -103,7 +103,7 @@ import java.util.Collection;
  * @since 1.5
  * @author Doug Lea
  */
-public class ReentrantLock implements Lock, java.io.Serializable {
+public class ReentrantLock implements Lock, j86.java.io.Serializable {
     private static final long serialVersionUID = 7373984872572414699L;
     /** Synchronizer providing all implementation mechanics */
     private final Sync sync;
@@ -185,8 +185,8 @@ public class ReentrantLock implements Lock, java.io.Serializable {
         /**
          * Reconstitutes the instance from a stream (that is, deserializes it).
          */
-        private void readObject(java.io.ObjectInputStream s)
-            throws java.io.IOException, ClassNotFoundException {
+        private void readObject(j86.java.io.ObjectInputStream s)
+            throws j86.java.io.IOException, ClassNotFoundException {
             s.defaultReadObject();
             setState(0); // reset to unlocked state
         }

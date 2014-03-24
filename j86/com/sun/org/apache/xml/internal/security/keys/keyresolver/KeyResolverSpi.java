@@ -20,16 +20,16 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.sun.org.apache.xml.internal.security.keys.keyresolver;
+package j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.keyresolver;
 
-import java.security.PrivateKey;
-import java.security.PublicKey;
-import java.security.cert.X509Certificate;
-import java.util.HashMap;
+import j86.java.security.PrivateKey;
+import j86.java.security.PublicKey;
+import j86.j86.java.security.cert.X509Certificate;
+import j86.java.util.HashMap;
 
-import javax.crypto.SecretKey;
+import j86.javax.crypto.SecretKey;
 
-import com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver;
+import j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver;
 import org.w3c.dom.Element;
 
 /**
@@ -45,7 +45,7 @@ import org.w3c.dom.Element;
 public abstract class KeyResolverSpi {
 
     /** Field properties */
-    protected java.util.Map<String, String> properties = null;
+    protected j86.java.util.Map<String, String> properties = null;
 
     protected boolean globalResolver = false;
 

@@ -23,10 +23,10 @@
  * questions.
  */
 
-package com.sun.imageio.plugins.common;
+package j86.com.sun.imageio.plugins.common;
 
-import java.io.IOException;
-import javax.imageio.stream.ImageOutputStream;
+import j86.java.io.IOException;
+import j86.j86.javax.imageio.stream.ImageOutputStream;
 
 /*
  * Came from GIFEncoder initially.

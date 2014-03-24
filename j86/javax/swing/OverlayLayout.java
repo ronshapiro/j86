@@ -22,12 +22,12 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing;
+package j86.javax.swing;
 
 
-import java.awt.*;
-import java.beans.ConstructorProperties;
-import java.io.Serializable;
+import j86.java.awt.*;
+import j86.java.beans.ConstructorProperties;
+import j86.java.io.Serializable;
 
 /**
  * A layout manager to arrange components over the top
@@ -46,8 +46,8 @@ import java.io.Serializable;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @author   Timothy Prinzing
  */

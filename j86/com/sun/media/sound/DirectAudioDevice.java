@@ -23,17 +23,17 @@
  * questions.
  */
 
-package com.sun.media.sound;
+package j86.com.sun.media.sound;
 
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.util.Vector;
+import j86.java.io.ByteArrayOutputStream;
+import j86.java.io.IOException;
+import j86.java.util.Vector;
 
-import javax.sound.sampled.*;
+import j86.javax.sound.sampled.*;
 
 // IDEA:
-// Use java.util.concurrent.Semaphore,
-// java.util.concurrent.locks.ReentrantLock and other new classes/methods
+// Use j86.j86.java.util.concurrent.Semaphore,
+// j86.j86.j86.java.util.concurrent.locks.ReentrantLock and other new classes/methods
 // to improve this class's thread safety.
 
 

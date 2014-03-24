@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.awt.geom;
+package j86.j86.sun.awt.geom;
 
-import java.awt.geom.Rectangle2D;
-import java.awt.geom.PathIterator;
-import java.util.Vector;
+import j86.j86.java.awt.geom.Rectangle2D;
+import j86.j86.java.awt.geom.PathIterator;
+import j86.java.util.Vector;
 
 final class Order1 extends Curve {
     private double x0;

@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.swing.plaf;
+package j86.j86.javax.swing.plaf;
 
-import java.awt.Rectangle;
-import javax.swing.JTabbedPane;
+import j86.java.awt.Rectangle;
+import j86.javax.swing.JTabbedPane;
 
 /**
  * Pluggable look and feel interface for JTabbedPane.

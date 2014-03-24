@@ -23,18 +23,18 @@
  * questions.
  */
 
-package javax.swing;
+package j86.javax.swing;
 
 
-import javax.swing.border.*;
+import j86.j86.javax.swing.border.*;
 
-import java.awt.LayoutManager;
-import java.awt.Component;
-import java.awt.Container;
-import java.awt.Rectangle;
-import java.awt.Dimension;
-import java.awt.Insets;
-import java.io.Serializable;
+import j86.java.awt.LayoutManager;
+import j86.java.awt.Component;
+import j86.java.awt.Container;
+import j86.java.awt.Rectangle;
+import j86.java.awt.Dimension;
+import j86.java.awt.Insets;
+import j86.java.io.Serializable;
 
 
 /**
@@ -49,8 +49,8 @@ import java.io.Serializable;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @see JScrollPane
  * @see JViewport
@@ -1117,5 +1117,5 @@ public class ScrollPaneLayout
     /**
      * The UI resource version of <code>ScrollPaneLayout</code>.
      */
-    public static class UIResource extends ScrollPaneLayout implements javax.swing.plaf.UIResource {}
+    public static class UIResource extends ScrollPaneLayout implements j86.j86.javax.swing.plaf.UIResource {}
 }

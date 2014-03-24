@@ -24,13 +24,13 @@
  */
 
 
-package javax.net;
+package j86.javax.net;
 
-import java.io.IOException;
-import java.net.InetAddress;
-import java.net.Socket;
-import java.net.SocketException;
-import java.net.UnknownHostException;
+import j86.java.io.IOException;
+import j86.java.net.InetAddress;
+import j86.java.net.Socket;
+import j86.java.net.SocketException;
+import j86.java.net.UnknownHostException;
 
 /**
  * This class creates sockets.  It may be subclassed by other factories,
@@ -52,7 +52,7 @@ import java.net.UnknownHostException;
  *      or security parameters already configured.
  *
  *      <LI> The sockets returned to the application can be subclasses
- *      of java.net.Socket, so that they can directly expose new APIs
+ *      of j86.java.net.Socket, so that they can directly expose new APIs
  *      for features such as compression, security, record marking,
  *      statistics collection, or firewall tunneling.
  *
@@ -110,9 +110,9 @@ public abstract class SocketFactory
      *
      * @return the unconnected socket
      * @throws IOException if the socket cannot be created
-     * @see java.net.Socket#connect(java.net.SocketAddress)
-     * @see java.net.Socket#connect(java.net.SocketAddress, int)
-     * @see java.net.Socket#Socket()
+     * @see j86.java.net.Socket#connect(java.net.SocketAddress)
+     * @see j86.java.net.Socket#connect(java.net.SocketAddress, int)
+     * @see j86.java.net.Socket#Socket()
      */
     public Socket createSocket() throws IOException {
         //
@@ -150,7 +150,7 @@ public abstract class SocketFactory
      *         specified range of valid port values, which is between 0 and
      *         65535, inclusive.
      * @see SecurityManager#checkConnect
-     * @see java.net.Socket#Socket(String, int)
+     * @see j86.java.net.Socket#Socket(String, int)
      */
     public abstract Socket createSocket(String host, int port)
     throws IOException, UnknownHostException;
@@ -181,7 +181,7 @@ public abstract class SocketFactory
      *         parameter is outside the specified range of valid port values,
      *         which is between 0 and 65535, inclusive.
      * @see SecurityManager#checkConnect
-     * @see java.net.Socket#Socket(String, int, java.net.InetAddress, int)
+     * @see j86.java.net.Socket#Socket(String, int, java.net.InetAddress, int)
      */
     public abstract Socket
     createSocket(String host, int port, InetAddress localHost, int localPort)
@@ -208,7 +208,7 @@ public abstract class SocketFactory
      *         65535, inclusive.
      * @throws NullPointerException if <code>host</code> is null.
      * @see SecurityManager#checkConnect
-     * @see java.net.Socket#Socket(java.net.InetAddress, int)
+     * @see j86.java.net.Socket#Socket(java.net.InetAddress, int)
      */
     public abstract Socket createSocket(InetAddress host, int port)
     throws IOException;
@@ -237,8 +237,8 @@ public abstract class SocketFactory
      *         which is between 0 and 65535, inclusive.
      * @throws NullPointerException if <code>address</code> is null.
      * @see SecurityManager#checkConnect
-     * @see java.net.Socket#Socket(java.net.InetAddress, int,
-     *     java.net.InetAddress, int)
+     * @see j86.java.net.Socket#Socket(java.net.InetAddress, int,
+     *     j86.java.net.InetAddress, int)
      */
     public abstract Socket
     createSocket(InetAddress address, int port,

@@ -22,28 +22,28 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.tools.attach;
+package j86.sun.tools.attach;
 
-import com.sun.tools.attach.VirtualMachineDescriptor;
-import com.sun.tools.attach.VirtualMachine;
-import com.sun.tools.attach.AttachPermission;
-import com.sun.tools.attach.AttachNotSupportedException;
-import com.sun.tools.attach.spi.AttachProvider;
+import com.j86.sun.tools.attach.VirtualMachineDescriptor;
+import com.j86.sun.tools.attach.VirtualMachine;
+import com.j86.sun.tools.attach.AttachPermission;
+import com.j86.sun.tools.attach.AttachNotSupportedException;
+import com.j86.sun.tools.attach.spi.AttachProvider;
 
-import java.io.IOException;
-import java.util.List;
-import java.util.Iterator;
-import java.util.ArrayList;
-import java.util.Set;
-import java.net.URISyntaxException;
+import j86.java.io.IOException;
+import j86.java.util.List;
+import j86.java.util.Iterator;
+import j86.java.util.ArrayList;
+import j86.java.util.Set;
+import j86.java.net.URISyntaxException;
 
-import sun.jvmstat.monitor.HostIdentifier;
-import sun.jvmstat.monitor.Monitor;
-import sun.jvmstat.monitor.MonitoredHost;
-import sun.jvmstat.monitor.MonitoredVm;
-import sun.jvmstat.monitor.MonitoredVmUtil;
-import sun.jvmstat.monitor.VmIdentifier;
-import sun.jvmstat.monitor.MonitorException;
+import j86.sun.jvmstat.monitor.HostIdentifier;
+import j86.sun.jvmstat.monitor.Monitor;
+import j86.sun.jvmstat.monitor.MonitoredHost;
+import j86.sun.jvmstat.monitor.MonitoredVm;
+import j86.sun.jvmstat.monitor.MonitoredVmUtil;
+import j86.sun.jvmstat.monitor.VmIdentifier;
+import j86.sun.jvmstat.monitor.MonitorException;
 
 /*
  * Platform specific provider implementations extend this

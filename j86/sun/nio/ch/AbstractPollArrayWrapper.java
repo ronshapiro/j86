@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.nio.ch;
+package j86.j86.j86.sun.nio.ch;
 
-import sun.misc.*;
+import j86.sun.misc.*;
 
 
 /**

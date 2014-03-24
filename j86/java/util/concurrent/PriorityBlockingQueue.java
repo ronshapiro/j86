@@ -33,21 +33,21 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package java.util.concurrent;
+package j86.j86.java.util.concurrent;
 
-import java.util.concurrent.locks.Condition;
-import java.util.concurrent.locks.ReentrantLock;
-import java.util.AbstractQueue;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Comparator;
-import java.util.Iterator;
-import java.util.NoSuchElementException;
-import java.util.PriorityQueue;
-import java.util.Queue;
-import java.util.SortedSet;
-import java.util.Spliterator;
-import java.util.function.Consumer;
+import j86.j86.j86.java.util.concurrent.locks.Condition;
+import j86.j86.j86.java.util.concurrent.locks.ReentrantLock;
+import j86.java.util.AbstractQueue;
+import j86.java.util.Arrays;
+import j86.java.util.Collection;
+import j86.java.util.Comparator;
+import j86.java.util.Iterator;
+import j86.java.util.NoSuchElementException;
+import j86.java.util.PriorityQueue;
+import j86.java.util.Queue;
+import j86.java.util.SortedSet;
+import j86.java.util.Spliterator;
+import j86.j86.java.util.function.Consumer;
 
 /**
  * An unbounded {@linkplain BlockingQueue blocking queue} that uses
@@ -107,7 +107,7 @@ import java.util.function.Consumer;
  */
 @SuppressWarnings("unchecked")
 public class PriorityBlockingQueue<E> extends AbstractQueue<E>
-    implements BlockingQueue<E>, java.io.Serializable {
+    implements BlockingQueue<E>, j86.java.io.Serializable {
     private static final long serialVersionUID = 5595510919245408276L;
 
     /*
@@ -119,7 +119,7 @@ public class PriorityBlockingQueue<E> extends AbstractQueue<E>
      * postponement of waiting consumers and consequent element
      * build-up. The need to back away from lock during allocation
      * makes it impossible to simply wrap delegated
-     * java.util.PriorityQueue operations within a lock, as was done
+     * j86.java.util.PriorityQueue operations within a lock, as was done
      * in a previous version of this class. To maintain
      * interoperability, a plain PriorityQueue is still used during
      * serialization, which maintains compatibility at the expense of
@@ -909,14 +909,14 @@ public class PriorityBlockingQueue<E> extends AbstractQueue<E>
      * Saves this queue to a stream (that is, serializes it).
      *
      * For compatibility with previous version of this class, elements
-     * are first copied to a java.util.PriorityQueue, which is then
+     * are first copied to a j86.java.util.PriorityQueue, which is then
      * serialized.
      *
      * @param s the stream
-     * @throws java.io.IOException if an I/O error occurs
+     * @throws j86.java.io.IOException if an I/O error occurs
      */
-    private void writeObject(java.io.ObjectOutputStream s)
-        throws java.io.IOException {
+    private void writeObject(j86.java.io.ObjectOutputStream s)
+        throws j86.java.io.IOException {
         lock.lock();
         try {
             // avoid zero capacity argument
@@ -934,10 +934,10 @@ public class PriorityBlockingQueue<E> extends AbstractQueue<E>
      * @param s the stream
      * @throws ClassNotFoundException if the class of a serialized object
      *         could not be found
-     * @throws java.io.IOException if an I/O error occurs
+     * @throws j86.java.io.IOException if an I/O error occurs
      */
-    private void readObject(java.io.ObjectInputStream s)
-        throws java.io.IOException, ClassNotFoundException {
+    private void readObject(j86.java.io.ObjectInputStream s)
+        throws j86.java.io.IOException, ClassNotFoundException {
         try {
             s.defaultReadObject();
             this.queue = new Object[q.size()];
@@ -1028,11 +1028,11 @@ public class PriorityBlockingQueue<E> extends AbstractQueue<E>
     }
 
     // Unsafe mechanics
-    private static final sun.misc.Unsafe UNSAFE;
+    private static final j86.sun.misc.Unsafe UNSAFE;
     private static final long allocationSpinLockOffset;
     static {
         try {
-            UNSAFE = sun.misc.Unsafe.getUnsafe();
+            UNSAFE = j86.sun.misc.Unsafe.getUnsafe();
             Class<?> k = PriorityBlockingQueue.class;
             allocationSpinLockOffset = UNSAFE.objectFieldOffset
                 (k.getDeclaredField("allocationSpinLock"));

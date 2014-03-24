@@ -23,11 +23,11 @@
  * questions.
  */
 
-package javax.smartcardio;
+package j86.javax.smartcardio;
 
-import java.io.*;
+import j86.java.io.*;
 
-import java.security.Permission;
+import j86.java.security.Permission;
 
 /**
  * A permission for Smart Card operations. A CardPermission consists of the

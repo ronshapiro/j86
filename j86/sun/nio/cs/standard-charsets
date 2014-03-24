@@ -27,16 +27,16 @@
 #
 # Note that these "standard" charsets listed here are not
 # necessary to be the "Standard charsets" defined in the
-# specification of java.nio.charset.Charset. Instead these
+# specification of j86.j86.java.nio.charset.Charset. Instead these
 # are the charsets that this implementation believes should
 # be packaged into the charsets provider class "StandardCharsets"
-# which is initialized at startup time by java.nio.charset.Charset,
+# which is initialized at startup time by j86.j86.java.nio.charset.Charset,
 # compared to the charsets packaged in "ExtendedCharsets" provider,
 # which is lazy initialized.
 
 # This year should only change if the generated source is modified.
 copyright 2000, 2007,
-package sun.nio.cs
+package j86.j86.j86.sun.nio.cs
 class StandardCharsets
 
 charset US-ASCII US_ASCII

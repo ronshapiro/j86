@@ -23,22 +23,22 @@
  * questions.
  */
 
-package javax.swing;
+package j86.javax.swing;
 
-import java.awt.Color;
-import java.awt.Graphics;
+import j86.java.awt.Color;
+import j86.java.awt.Graphics;
 
-import java.text.Format;
-import java.text.NumberFormat;
+import j86.java.text.Format;
+import j86.java.text.NumberFormat;
 
-import java.io.Serializable;
-import java.io.ObjectOutputStream;
-import java.io.ObjectInputStream;
-import java.io.IOException;
+import j86.java.io.Serializable;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.IOException;
 
-import javax.swing.event.*;
-import javax.accessibility.*;
-import javax.swing.plaf.ProgressBarUI;
+import j86.j86.javax.swing.event.*;
+import j86.javax.accessibility.*;
+import j86.j86.javax.swing.plaf.ProgressBarUI;
 
 
 /**
@@ -115,12 +115,12 @@ import javax.swing.plaf.ProgressBarUI;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
- * @see javax.swing.plaf.basic.BasicProgressBarUI
- * @see javax.swing.BoundedRangeModel
- * @see javax.swing.SwingWorker
+ * @see j86.j86.j86.javax.swing.plaf.basic.BasicProgressBarUI
+ * @see j86.javax.swing.BoundedRangeModel
+ * @see j86.javax.swing.SwingWorker
  *
  * @beaninfo
  *      attribute: isContainer false
@@ -644,8 +644,8 @@ public class JProgressBar extends JComponent implements SwingConstants, Accessib
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     private class ModelListener implements ChangeListener, Serializable {
         public void stateChanged(ChangeEvent e) {
@@ -665,8 +665,8 @@ public class JProgressBar extends JComponent implements SwingConstants, Accessib
      *
      * @see #changeListener
      * @see #fireStateChanged
-     * @see javax.swing.event.ChangeListener
-     * @see javax.swing.BoundedRangeModel
+     * @see j86.j86.javax.swing.event.ChangeListener
+     * @see j86.javax.swing.BoundedRangeModel
      */
     protected ChangeListener createChangeListener() {
         return new ModelListener();
@@ -918,7 +918,7 @@ public class JProgressBar extends JComponent implements SwingConstants, Accessib
      *                  <code>false</code> if it should revert to normal.
      *
      * @see #isIndeterminate
-     * @see javax.swing.plaf.basic.BasicProgressBarUI
+     * @see j86.j86.j86.javax.swing.plaf.basic.BasicProgressBarUI
      *
      * @since 1.4
      *
@@ -1032,8 +1032,8 @@ public class JProgressBar extends JComponent implements SwingConstants, Accessib
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     protected class AccessibleJProgressBar extends AccessibleJComponent
         implements AccessibleValue {

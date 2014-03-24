@@ -22,16 +22,16 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.net;
+package j86.java.net;
 
-import java.io.InputStream;
-import java.io.IOException;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
 
-import sun.net.idn.StringPrep;
-import sun.net.idn.Punycode;
-import sun.text.normalizer.UCharacterIterator;
+import j86.j86.sun.net.idn.StringPrep;
+import j86.j86.sun.net.idn.Punycode;
+import j86.j86.sun.text.normalizer.UCharacterIterator;
 
 /**
  * Provides methods to convert internationalized domain names (IDNs) between
@@ -270,7 +270,7 @@ public final class IDN {
             UCharacterIterator iter = UCharacterIterator.getInstance(label);
             try {
                 dest = namePrep.prepare(iter, flag);
-            } catch (java.text.ParseException e) {
+            } catch (j86.java.text.ParseException e) {
                 throw new IllegalArgumentException(e);
             }
         } else {
@@ -318,7 +318,7 @@ public final class IDN {
                     // encode the sequence with punycode
                     try {
                         dest = Punycode.encode(dest, null);
-                    } catch (java.text.ParseException e) {
+                    } catch (j86.java.text.ParseException e) {
                         throw new IllegalArgumentException(e);
                     }
 

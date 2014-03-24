@@ -24,26 +24,26 @@
  */
 
 
-package sun.util.logging;
+package j86.j86.sun.util.logging;
 
-import java.lang.ref.WeakReference;
-import java.io.PrintStream;
-import java.io.PrintWriter;
-import java.io.StringWriter;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.util.Arrays;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
-import sun.misc.JavaLangAccess;
-import sun.misc.SharedSecrets;
+import j86.j86.java.lang.ref.WeakReference;
+import j86.java.io.PrintStream;
+import j86.java.io.PrintWriter;
+import j86.java.io.StringWriter;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.util.Arrays;
+import j86.java.util.Date;
+import j86.java.util.HashMap;
+import j86.java.util.Map;
+import j86.sun.misc.JavaLangAccess;
+import j86.sun.misc.SharedSecrets;
 
 /**
  * Platform logger provides an API for the JRE components to log
  * messages.  This enables the runtime components to eliminate the
  * static dependency of the logging facility and also defers the
- * java.util.logging initialization until it is enabled.
+ * j86.j86.java.util.logging initialization until it is enabled.
  * In addition, the PlatformLogger API can be used if the logging
  * module does not exist.
  *
@@ -53,40 +53,40 @@ import sun.misc.SharedSecrets;
  * the stack frame information issuing the log message.
  *
  * When the logging facility is enabled (at startup or runtime),
- * the java.util.logging.Logger will be created for each platform
+ * the j86.j86.java.util.logging.Logger will be created for each platform
  * logger and all log messages will be forwarded to the Logger
  * to handle.
  *
  * Logging facility is "enabled" when one of the following
  * conditions is met:
- * 1) a system property "java.util.logging.config.class" or
- *    "java.util.logging.config.file" is set
- * 2) java.util.logging.LogManager or java.util.logging.Logger
+ * 1) a system property "j86.j86.java.util.logging.config.class" or
+ *    "j86.j86.java.util.logging.config.file" is set
+ * 2) j86.j86.java.util.logging.LogManager or java.util.logging.Logger
  *    is referenced that will trigger the logging initialization.
  *
  * Default logging configuration:
  *   global logging level = INFO
- *   handlers = java.util.logging.ConsoleHandler
- *   java.util.logging.ConsoleHandler.level = INFO
- *   java.util.logging.ConsoleHandler.formatter = java.util.logging.SimpleFormatter
+ *   handlers = j86.j86.java.util.logging.ConsoleHandler
+ *   j86.j86.java.util.logging.ConsoleHandler.level = INFO
+ *   j86.j86.java.util.logging.ConsoleHandler.formatter = java.util.logging.SimpleFormatter
  *
  * Limitation:
  * <JAVA_HOME>/lib/logging.properties is the system-wide logging
  * configuration defined in the specification and read in the
- * default case to configure any java.util.logging.Logger instances.
+ * default case to configure any j86.j86.java.util.logging.Logger instances.
  * Platform loggers will not detect if <JAVA_HOME>/lib/logging.properties
- * is modified. In other words, unless the java.util.logging API
+ * is modified. In other words, unless the j86.j86.java.util.logging API
  * is used at runtime or the logging system properties is set,
  * the platform loggers will use the default setting described above.
  * The platform loggers are designed for JDK developers use and
  * this limitation can be workaround with setting
- * -Djava.util.logging.config.file system property.
+ * -Dj86.j86.java.util.logging.config.file system property.
  *
  * @since 1.7
  */
 public class PlatformLogger {
 
-    // The integer values must match that of {@code java.util.logging.Level}
+    // The integer values must match that of {@code j86.j86.java.util.logging.Level}
     // objects.
     private static final int OFF     = Integer.MAX_VALUE;
     private static final int SEVERE  = 1000;
@@ -102,7 +102,7 @@ public class PlatformLogger {
      * PlatformLogger logging levels.
      */
     public static enum Level {
-        // The name and value must match that of {@code java.util.logging.Level}s.
+        // The name and value must match that of {@code j86.j86.java.util.logging.Level}s.
         // Declare in ascending order of the given value for binary search.
         ALL,
         FINEST,
@@ -115,12 +115,12 @@ public class PlatformLogger {
         OFF;
 
         /**
-         * Associated java.util.logging.Level lazily initialized in
+         * Associated j86.j86.java.util.logging.Level lazily initialized in
          * JavaLoggerProxy's static initializer only once
-         * when java.util.logging is available and enabled.
+         * when j86.j86.java.util.logging is available and enabled.
          * Only accessed by JavaLoggerProxy.
          */
-        /* java.util.logging.Level */ Object javaLevel;
+        /* j86.j86.java.util.logging.Level */ Object javaLevel;
 
         // ascending order for binary search matching the list of enum constants
         private static final int[] LEVEL_VALUES = new int[] {
@@ -160,20 +160,20 @@ public class PlatformLogger {
         loggingEnabled = AccessController.doPrivileged(
             new PrivilegedAction<Boolean>() {
                 public Boolean run() {
-                    String cname = System.getProperty("java.util.logging.config.class");
-                    String fname = System.getProperty("java.util.logging.config.file");
+                    String cname = System.getProperty("j86.j86.java.util.logging.config.class");
+                    String fname = System.getProperty("j86.j86.java.util.logging.config.file");
                     return (cname != null || fname != null);
                 }
             });
 
         // force loading of all JavaLoggerProxy (sub)classes to make JIT de-optimizations
         // less probable.  Don't initialize JavaLoggerProxy class since
-        // java.util.logging may not be enabled.
+        // j86.j86.java.util.logging may not be enabled.
         try {
-            Class.forName("sun.util.logging.PlatformLogger$DefaultLoggerProxy",
+            Class.forName("j86.j86.sun.util.logging.PlatformLogger$DefaultLoggerProxy",
                           false,
                           PlatformLogger.class.getClassLoader());
-            Class.forName("sun.util.logging.PlatformLogger$JavaLoggerProxy",
+            Class.forName("j86.j86.sun.util.logging.PlatformLogger$JavaLoggerProxy",
                           false,   // do not invoke class initializer
                           PlatformLogger.class.getClassLoader());
         } catch (ClassNotFoundException ex) {
@@ -202,7 +202,7 @@ public class PlatformLogger {
     }
 
     /**
-     * Initialize java.util.logging.Logger objects for all platform loggers.
+     * Initialize j86.j86.java.util.logging.Logger objects for all platform loggers.
      * This method is called from LogManager.readPrimordialConfiguration().
      */
     public static synchronized void redirectPlatformLoggers() {
@@ -230,9 +230,9 @@ public class PlatformLogger {
     }
 
     // DefaultLoggerProxy may be replaced with a JavaLoggerProxy object
-    // when the java.util.logging facility is enabled
+    // when the j86.j86.java.util.logging facility is enabled
     private volatile LoggerProxy loggerProxy;
-    // javaLoggerProxy is only set when the java.util.logging facility is enabled
+    // javaLoggerProxy is only set when the j86.j86.java.util.logging facility is enabled
     private volatile JavaLoggerProxy javaLoggerProxy;
     private PlatformLogger(String name) {
         if (loggingEnabled) {
@@ -488,7 +488,7 @@ public class PlatformLogger {
             return level == null ? DEFAULT_LEVEL : level;
         }
 
-        // Copied from java.util.logging.Formatter.formatMessage
+        // Copied from j86.j86.java.util.logging.Formatter.formatMessage
         private String formatMessage(String format, Object... parameters) {
             // Do the formatting.
             try {
@@ -496,14 +496,14 @@ public class PlatformLogger {
                     // No parameters.  Just return format string.
                     return format;
                 }
-                // Is it a java.text style format?
+                // Is it a j86.java.text style format?
                 // Ideally we could match with
                 // Pattern.compile("\\{\\d").matcher(format).find())
                 // However the cost is 14% higher, so we cheaply check for
                 // 1 of the first 4 parameters
                 if (format.indexOf("{0") >= 0 || format.indexOf("{1") >=0 ||
                             format.indexOf("{2") >=0|| format.indexOf("{3") >=0) {
-                    return java.text.MessageFormat.format(format, parameters);
+                    return j86.java.text.MessageFormat.format(format, parameters);
                 }
                 return format;
             } catch (Exception ex) {
@@ -548,7 +548,7 @@ public class PlatformLogger {
             Throwable throwable = new Throwable();
             int depth = access.getStackTraceDepth(throwable);
 
-            String logClassName = "sun.util.logging.PlatformLogger";
+            String logClassName = "j86.j86.sun.util.logging.PlatformLogger";
             boolean lookingForLogger = true;
             for (int ix = 0; ix < depth; ix++) {
                 // Calling getStackTraceElement directly prevents the VM
@@ -581,7 +581,7 @@ public class PlatformLogger {
 
     /**
      * JavaLoggerProxy forwards all the calls to its corresponding
-     * java.util.logging.Logger object.
+     * j86.j86.java.util.logging.Logger object.
      */
     private static final class JavaLoggerProxy extends LoggerProxy {
         // initialize javaLevel fields for mapping from Level enum -> j.u.l.Level object
@@ -591,7 +591,7 @@ public class PlatformLogger {
             }
         }
 
-        private final /* java.util.logging.Logger */ Object javaLogger;
+        private final /* j86.j86.java.util.logging.Logger */ Object javaLogger;
 
         JavaLoggerProxy(String name) {
             this(name, null);

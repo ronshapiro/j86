@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.security.jgss;
+package j86.sun.security.jgss;
 
 /**
  * Denotes what client is calling the JGSS-API. The object can be sent deep

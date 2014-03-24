@@ -23,36 +23,36 @@
  * questions.
  */
 
-package java.io;
+package j86.java.io;
 
-import java.lang.ref.Reference;
-import java.lang.ref.ReferenceQueue;
-import java.lang.ref.SoftReference;
-import java.lang.ref.WeakReference;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Member;
-import java.lang.reflect.Method;
-import java.lang.reflect.Modifier;
-import java.lang.reflect.Proxy;
-import java.security.AccessController;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-import java.security.PrivilegedAction;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.HashSet;
-import java.util.Set;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentMap;
-import sun.misc.Unsafe;
-import sun.reflect.CallerSensitive;
-import sun.reflect.Reflection;
-import sun.reflect.ReflectionFactory;
-import sun.reflect.misc.ReflectUtil;
+import j86.j86.java.lang.ref.Reference;
+import j86.j86.java.lang.ref.ReferenceQueue;
+import j86.j86.java.lang.ref.SoftReference;
+import j86.j86.java.lang.ref.WeakReference;
+import j86.j86.j86.java.lang.reflect.Constructor;
+import j86.j86.j86.java.lang.reflect.Field;
+import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.j86.j86.java.lang.reflect.Member;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.j86.j86.java.lang.reflect.Modifier;
+import j86.j86.j86.java.lang.reflect.Proxy;
+import j86.java.security.AccessController;
+import j86.java.security.MessageDigest;
+import j86.java.security.NoSuchAlgorithmException;
+import j86.java.security.PrivilegedAction;
+import j86.java.util.ArrayList;
+import j86.java.util.Arrays;
+import j86.java.util.Collections;
+import j86.java.util.Comparator;
+import j86.java.util.HashSet;
+import j86.java.util.Set;
+import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.j86.java.util.concurrent.ConcurrentMap;
+import j86.sun.misc.Unsafe;
+import j86.sun.reflect.CallerSensitive;
+import j86.sun.reflect.Reflection;
+import j86.sun.reflect.ReflectionFactory;
+import j86.j86.sun.reflect.misc.ReflectUtil;
 
 /**
  * Serialization's descriptor for classes.  It contains the name and
@@ -200,8 +200,8 @@ public class ObjectStreamClass implements Serializable {
     /**
      * Find the descriptor for a class that can be serialized.  Creates an
      * ObjectStreamClass instance if one does not exist yet for class. Null is
-     * returned if the specified class does not implement java.io.Serializable
-     * or java.io.Externalizable.
+     * returned if the specified class does not implement j86.java.io.Serializable
+     * or j86.java.io.Externalizable.
      *
      * @param   cl class for which to get the descriptor
      * @return  the class descriptor for the specified class

@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.nio.fs;
+package j86.j86.sun.nio.fs;
 
-import java.nio.file.attribute.*;
-import java.util.*;
-import java.io.IOException;
+import j86.j86.j86.java.nio.file.attribute.*;
+import j86.java.util.*;
+import j86.java.io.IOException;
 
 /**
  * Base implementation of BasicFileAttributeView

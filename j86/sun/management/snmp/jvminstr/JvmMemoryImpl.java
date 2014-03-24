@@ -22,30 +22,30 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.management.snmp.jvminstr;
+package j86.j86.j86.sun.management.snmp.jvminstr;
 
 // jmx imports
 //
-import javax.management.MBeanServer;
-import com.sun.jmx.snmp.SnmpStatusException;
-import com.sun.jmx.snmp.SnmpDefinitions;
+import j86.javax.management.MBeanServer;
+import j86.com.sun.jmx.snmp.SnmpStatusException;
+import j86.com.sun.jmx.snmp.SnmpDefinitions;
 
 // jdmk imports
 //
-import com.sun.jmx.snmp.agent.SnmpMib;
+import j86.j86.com.sun.jmx.snmp.agent.SnmpMib;
 
-import java.util.Map;
-import java.lang.management.ManagementFactory;
-import java.lang.management.MemoryUsage;
-import java.lang.management.MemoryType;
-import java.lang.management.MemoryMXBean;
-import javax.management.openmbean.CompositeData;
+import j86.java.util.Map;
+import j86.j86.java.lang.management.ManagementFactory;
+import j86.j86.java.lang.management.MemoryUsage;
+import j86.j86.java.lang.management.MemoryType;
+import j86.j86.java.lang.management.MemoryMXBean;
+import j86.j86.javax.management.openmbean.CompositeData;
 
-import sun.management.snmp.jvmmib.JvmMemoryMBean;
-import sun.management.snmp.jvmmib.EnumJvmMemoryGCCall;
-import sun.management.snmp.jvmmib.EnumJvmMemoryGCVerboseLevel;
-import sun.management.snmp.util.MibLogger;
-import sun.management.snmp.util.JvmContextFactory;
+import j86.j86.j86.sun.management.snmp.jvmmib.JvmMemoryMBean;
+import j86.j86.j86.sun.management.snmp.jvmmib.EnumJvmMemoryGCCall;
+import j86.j86.j86.sun.management.snmp.jvmmib.EnumJvmMemoryGCVerboseLevel;
+import j86.j86.j86.sun.management.snmp.util.MibLogger;
+import j86.j86.j86.sun.management.snmp.util.JvmContextFactory;
 
 /**
  * The class is used for implementing the "JvmMemory" group.

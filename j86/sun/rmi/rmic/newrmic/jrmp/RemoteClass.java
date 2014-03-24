@@ -23,28 +23,28 @@
  * questions.
  */
 
-package sun.rmi.rmic.newrmic.jrmp;
+package j86.j86.j86.sun.rmi.rmic.newrmic.jrmp;
 
 import com.sun.javadoc.ClassDoc;
 import com.sun.javadoc.MethodDoc;
 import com.sun.javadoc.Parameter;
 import com.sun.javadoc.Type;
-import java.io.IOException;
-import java.io.ByteArrayOutputStream;
-import java.io.DataOutputStream;
-import java.security.MessageDigest;
-import java.security.DigestOutputStream;
-import java.security.NoSuchAlgorithmException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
-import java.util.HashMap;
-import java.util.Map;
-import sun.rmi.rmic.newrmic.BatchEnvironment;
+import j86.java.io.IOException;
+import j86.java.io.ByteArrayOutputStream;
+import j86.java.io.DataOutputStream;
+import j86.java.security.MessageDigest;
+import j86.java.security.DigestOutputStream;
+import j86.java.security.NoSuchAlgorithmException;
+import j86.java.util.ArrayList;
+import j86.java.util.Arrays;
+import j86.java.util.Comparator;
+import j86.java.util.List;
+import j86.java.util.HashMap;
+import j86.java.util.Map;
+import j86.j86.sun.rmi.rmic.newrmic.BatchEnvironment;
 
-import static sun.rmi.rmic.newrmic.Constants.*;
-import static sun.rmi.rmic.newrmic.jrmp.Constants.*;
+import static j86.j86.sun.rmi.rmic.newrmic.Constants.*;
+import static j86.j86.j86.sun.rmi.rmic.newrmic.jrmp.Constants.*;
 
 /**
  * Encapsulates RMI-specific information about a remote implementation
@@ -112,7 +112,7 @@ final class RemoteClass {
      * implementation class.
      *
      * A remote interface is an interface that is a subinterface of
-     * java.rmi.Remote.  The remote interfaces of a class are the
+     * j86.java.rmi.Remote.  The remote interfaces of a class are the
      * direct superinterfaces of the class and all of its superclasses
      * that are remote interfaces.
      *
@@ -333,9 +333,9 @@ final class RemoteClass {
 
             /*
              * Verify that the implementation of this method throws only
-             * java.lang.Exception or its subclasses (fix bugid 4092486).
+             * j86.java.lang.Exception or its subclasses (fix bugid 4092486).
              * JRMP does not support remote methods throwing
-             * java.lang.Throwable or other subclasses.
+             * j86.java.lang.Throwable or other subclasses.
              */
             MethodDoc implMethod = findImplMethod(method);
             if (implMethod != null) {           // should not be null
@@ -424,7 +424,7 @@ final class RemoteClass {
      *         for each declared exception, in alphabetical name order:
      *             (UTF-8) name of exception class
      * (where "UTF-8" includes a 16-bit length prefix as written by
-     * java.io.DataOutput.writeUTF).
+     * j86.java.io.DataOutput.writeUTF).
      **/
     private long computeInterfaceHash() {
         long hash = 0;
@@ -495,7 +495,7 @@ final class RemoteClass {
          **/
         private final MethodDoc methodDoc;
 
-        /** java.rmi.server.Operation string for this remote method */
+        /** j86.j86.java.rmi.server.Operation string for this remote method */
         private final String operationString;
 
         /** name and descriptor of this remote method */
@@ -573,7 +573,7 @@ final class RemoteClass {
         /**
          * Returns the string representation of this method
          * appropriate for the construction of a
-         * java.rmi.server.Operation object.
+         * j86.j86.java.rmi.server.Operation object.
          **/
         String operationString() {
             return operationString;
@@ -685,7 +685,7 @@ final class RemoteClass {
         /**
          * Computes the string representation of this method
          * appropriate for the construction of a
-         * java.rmi.server.Operation object.
+         * j86.j86.java.rmi.server.Operation object.
          **/
         private String computeOperationString() {
             /*

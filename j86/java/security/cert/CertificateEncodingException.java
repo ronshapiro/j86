@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.security.cert;
+package j86.j86.java.security.cert;
 
 /**
  * Certificate Encoding Exception. This is thrown whenever an error

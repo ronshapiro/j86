@@ -23,17 +23,17 @@
  * questions.
  */
 
-package com.sun.media.sound;
+package j86.com.sun.media.sound;
 
-import java.io.IOException;
-import java.io.InputStream;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.WeakHashMap;
+import j86.java.util.ArrayList;
+import j86.java.util.List;
+import j86.java.util.Map;
+import j86.java.util.WeakHashMap;
 
-import javax.sound.midi.*;
+import j86.javax.sound.midi.*;
 
 
 /**
@@ -1431,7 +1431,7 @@ final class RealTimeSequencer extends AbstractMidiDevice
         private boolean needReindex = false;
         private int currLoopCounter = 0;
 
-        //private sun.misc.Perf perf = sun.misc.Perf.getPerf();
+        //private j86.sun.misc.Perf perf = sun.misc.Perf.getPerf();
         //private long perfFreq = perf.highResFrequency();
 
 

@@ -22,18 +22,18 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.jmx.snmp;
+package j86.com.sun.jmx.snmp;
 
 
-import java.io.Serializable;
-import java.net.InetAddress;
+import j86.java.io.Serializable;
+import j86.java.net.InetAddress;
 /**
  * Is the fully decoded representation of an SNMP packet.
  * <P>
  * Classes are derived from <CODE>SnmpPdu</CODE> to
  * represent the different forms of SNMP packets
- * ({@link com.sun.jmx.snmp.SnmpPduPacket SnmpPduPacket},
- * {@link com.sun.jmx.snmp.SnmpScopedPduPacket SnmpScopedPduPacket})
+ * ({@link j86.com.sun.jmx.snmp.SnmpPduPacket SnmpPduPacket},
+ * {@link j86.com.sun.jmx.snmp.SnmpScopedPduPacket SnmpScopedPduPacket})
  * <BR>The <CODE>SnmpPdu</CODE> class defines the attributes
  * common to every form of SNMP packets.
  *
@@ -49,14 +49,14 @@ public abstract class SnmpPdu implements SnmpDefinitions, Serializable {
 
     /**
      * PDU type. Types are defined in
-     * {@link com.sun.jmx.snmp.SnmpDefinitions SnmpDefinitions}.
+     * {@link j86.com.sun.jmx.snmp.SnmpDefinitions SnmpDefinitions}.
      * @serial
      */
     public int type=0 ;
 
     /**
      * Protocol version. Versions are defined in
-     * {@link com.sun.jmx.snmp.SnmpDefinitions SnmpDefinitions}.
+     * {@link j86.com.sun.jmx.snmp.SnmpDefinitions SnmpDefinitions}.
      * @serial
      */
     public int version=0 ;

@@ -56,7 +56,7 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-package jdk.internal.org.objectweb.asm;
+package j86.jdk.internal.org.objectweb.asm;
 
 /**
  * A {@link MethodVisitor} that generates methods in bytecode form. Each visit
@@ -596,7 +596,7 @@ class MethodWriter extends MethodVisitor {
             return null;
         }
         ByteVector bv = new ByteVector();
-        if ("Ljava/lang/Synthetic;".equals(desc)) {
+        if ("Lj86.java.lang/Synthetic;".equals(desc)) {
             // workaround for a bug in javac with synthetic parameters
             // see ClassReader.readParameterAnnotations
             synthetics = Math.max(synthetics, parameter + 1);
@@ -1438,7 +1438,7 @@ class MethodWriter extends MethodVisitor {
                 Label h = handler.handler.getFirst();
                 Label e = handler.end.getFirst();
                 // computes the kind of the edges to 'h'
-                String t = handler.desc == null ? "java/lang/Throwable"
+                String t = handler.desc == null ? "j86.java.lang/Throwable"
                         : handler.desc;
                 int kind = Frame.OBJECT | cw.addType(t);
                 // h is an exception handler
@@ -1527,7 +1527,7 @@ class MethodWriter extends MethodVisitor {
                         // emits a frame for this unreachable block
                         int frameIndex = startFrame(start, 0, 1);
                         frame[frameIndex] = Frame.OBJECT
-                                | cw.addType("java/lang/Throwable");
+                                | cw.addType("j86.java.lang/Throwable");
                         endFrame();
                         // removes the start-end range from the exception
                         // handlers

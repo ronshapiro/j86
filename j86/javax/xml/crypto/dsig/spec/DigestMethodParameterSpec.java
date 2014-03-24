@@ -25,10 +25,10 @@
 /*
  * $Id: DigestMethodParameterSpec.java,v 1.3 2005/05/10 16:40:17 mullan Exp $
  */
-package javax.xml.crypto.dsig.spec;
+package j86.j86.j86.javax.xml.crypto.dsig.spec;
 
-import javax.xml.crypto.dsig.DigestMethod;
-import java.security.spec.AlgorithmParameterSpec;
+import j86.j86.javax.xml.crypto.dsig.DigestMethod;
+import j86.j86.java.security.spec.AlgorithmParameterSpec;
 
 /**
  * A specification of algorithm parameters for a {@link DigestMethod}

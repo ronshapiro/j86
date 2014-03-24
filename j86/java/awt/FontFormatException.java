@@ -23,14 +23,14 @@
  * questions.
  */
 
-package java.awt;
+package j86.java.awt;
 
 /**
  * Thrown by method createFont in the <code>Font</code> class to indicate
  * that the specified font is bad.
  *
  * @author  Parry Kejriwal
- * @see     java.awt.Font
+ * @see     j86.java.awt.Font
  * @since   1.3
  */
 public

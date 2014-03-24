@@ -23,22 +23,22 @@
  * questions.
  */
 
-package sun.security.ssl;
+package j86.sun.security.ssl;
 
-import java.lang.ref.*;
-import java.util.*;
-import static java.util.Locale.ENGLISH;
-import java.util.concurrent.atomic.AtomicLong;
-import java.net.Socket;
+import j86.j86.java.lang.ref.*;
+import j86.java.util.*;
+import static j86.java.util.Locale.ENGLISH;
+import j86.j86.j86.java.util.concurrent.atomic.AtomicLong;
+import j86.java.net.Socket;
 
-import java.security.*;
-import java.security.KeyStore.*;
-import java.security.cert.*;
-import java.security.cert.Certificate;
+import j86.java.security.*;
+import j86.java.security.KeyStore.*;
+import j86.j86.java.security.cert.*;
+import j86.j86.java.security.cert.Certificate;
 
-import javax.net.ssl.*;
+import j86.j86.javax.net.ssl.*;
 
-import sun.security.provider.certpath.AlgorithmChecker;
+import j86.j86.sun.security.provider.certpath.AlgorithmChecker;
 
 /**
  * The new X509 key manager implementation. The main differences to the
@@ -545,7 +545,7 @@ final class X509KeyManagerImpl extends X509ExtendedKeyManager
 
         // check if this certificate is appropriate for this type of use
         // first check extensions, if they match, check expiration
-        // note: we may want to move this code into the sun.security.validator
+        // note: we may want to move this code into the j86.sun.security.validator
         // package
         CheckResult check(X509Certificate cert, Date date,
                 List<SNIServerName> serverNames, String idAlgorithm) {

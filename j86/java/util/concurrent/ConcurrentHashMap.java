@@ -33,49 +33,49 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package java.util.concurrent;
+package j86.j86.java.util.concurrent;
 
-import java.io.ObjectStreamField;
-import java.io.Serializable;
-import java.lang.reflect.ParameterizedType;
-import java.lang.reflect.Type;
-import java.util.AbstractMap;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Comparator;
-import java.util.Enumeration;
-import java.util.HashMap;
-import java.util.Hashtable;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.NoSuchElementException;
-import java.util.Set;
-import java.util.Spliterator;
-import java.util.concurrent.ConcurrentMap;
-import java.util.concurrent.ForkJoinPool;
-import java.util.concurrent.atomic.AtomicReference;
-import java.util.concurrent.locks.LockSupport;
-import java.util.concurrent.locks.ReentrantLock;
-import java.util.function.BiConsumer;
-import java.util.function.BiFunction;
-import java.util.function.BinaryOperator;
-import java.util.function.Consumer;
-import java.util.function.DoubleBinaryOperator;
-import java.util.function.Function;
-import java.util.function.IntBinaryOperator;
-import java.util.function.LongBinaryOperator;
-import java.util.function.ToDoubleBiFunction;
-import java.util.function.ToDoubleFunction;
-import java.util.function.ToIntBiFunction;
-import java.util.function.ToIntFunction;
-import java.util.function.ToLongBiFunction;
-import java.util.function.ToLongFunction;
-import java.util.stream.Stream;
+import j86.java.io.ObjectStreamField;
+import j86.java.io.Serializable;
+import j86.j86.j86.java.lang.reflect.ParameterizedType;
+import j86.j86.j86.java.lang.reflect.Type;
+import j86.java.util.AbstractMap;
+import j86.java.util.Arrays;
+import j86.java.util.Collection;
+import j86.java.util.Comparator;
+import j86.java.util.Enumeration;
+import j86.java.util.HashMap;
+import j86.java.util.Hashtable;
+import j86.java.util.Iterator;
+import j86.java.util.Map;
+import j86.java.util.NoSuchElementException;
+import j86.java.util.Set;
+import j86.java.util.Spliterator;
+import j86.j86.java.util.concurrent.ConcurrentMap;
+import j86.j86.java.util.concurrent.ForkJoinPool;
+import j86.j86.j86.java.util.concurrent.atomic.AtomicReference;
+import j86.j86.j86.java.util.concurrent.locks.LockSupport;
+import j86.j86.j86.java.util.concurrent.locks.ReentrantLock;
+import j86.j86.java.util.function.BiConsumer;
+import j86.j86.java.util.function.BiFunction;
+import j86.j86.java.util.function.BinaryOperator;
+import j86.j86.java.util.function.Consumer;
+import j86.j86.java.util.function.DoubleBinaryOperator;
+import j86.j86.java.util.function.Function;
+import j86.j86.java.util.function.IntBinaryOperator;
+import j86.j86.java.util.function.LongBinaryOperator;
+import j86.j86.java.util.function.ToDoubleBiFunction;
+import j86.j86.java.util.function.ToDoubleFunction;
+import j86.j86.java.util.function.ToIntBiFunction;
+import j86.j86.java.util.function.ToIntFunction;
+import j86.j86.java.util.function.ToLongBiFunction;
+import j86.j86.java.util.function.ToLongFunction;
+import j86.j86.java.util.stream.Stream;
 
 /**
  * A hash table supporting full concurrency of retrievals and
  * high expected concurrency for updates. This class obeys the
- * same functional specification as {@link java.util.Hashtable}, and
+ * same functional specification as {@link j86.java.util.Hashtable}, and
  * includes versions of methods corresponding to each method of
  * {@code Hashtable}. However, even though all operations are
  * thread-safe, retrieval operations do <em>not</em> entail locking,
@@ -96,7 +96,7 @@ import java.util.stream.Stream;
  * Iterators, Spliterators and Enumerations return elements reflecting the
  * state of the hash table at some point at or since the creation of the
  * iterator/enumeration.  They do <em>not</em> throw {@link
- * java.util.ConcurrentModificationException ConcurrentModificationException}.
+ * j86.java.util.ConcurrentModificationException ConcurrentModificationException}.
  * However, iterators are designed to be used by only one thread at a time.
  * Bear in mind that the results of aggregate status methods including
  * {@code size}, {@code isEmpty}, and {@code containsValue} are typically
@@ -135,7 +135,7 @@ import java.util.stream.Stream;
  *
  * <p>A ConcurrentHashMap can be used as scalable frequency map (a
  * form of histogram or multiset) by using {@link
- * java.util.concurrent.atomic.LongAdder} values and initializing via
+ * j86.j86.j86.java.util.concurrent.atomic.LongAdder} values and initializing via
  * {@link #computeIfAbsent computeIfAbsent}. For example, to add a count
  * to a {@code ConcurrentHashMap<String,LongAdder> freqs}, you can use
  * {@code freqs.computeIfAbsent(k -> new LongAdder()).increment();}
@@ -160,7 +160,7 @@ import java.util.stream.Stream;
  * of supplied functions should not depend on any ordering, or on any
  * other objects or values that may transiently change while
  * computation is in progress; and except for forEach actions, should
- * ideally be side-effect-free. Bulk operations on {@link java.util.Map.Entry}
+ * ideally be side-effect-free. Bulk operations on {@link j86.java.util.Map.Entry}
  * objects do not support method {@code setValue}.
  *
  * <ul>
@@ -275,7 +275,7 @@ public class ConcurrentHashMap<K,V> extends AbstractMap<K,V>
      * concurrent readability (typically method get(), but also
      * iterators and related methods) while minimizing update
      * contention. Secondary goals are to keep space consumption about
-     * the same or better than java.util.HashMap, and to support high
+     * the same or better than j86.java.util.HashMap, and to support high
      * initial insertion rates on an empty table by many threads.
      *
      * This map usually acts as a binned (bucketed) hash table.  Each
@@ -300,7 +300,7 @@ public class ConcurrentHashMap<K,V> extends AbstractMap<K,V>
      * Table accesses require volatile/atomic reads, writes, and
      * CASes.  Because there is no other way to arrange this without
      * adding further indirections, we use intrinsics
-     * (sun.misc.Unsafe) operations.
+     * (j86.sun.misc.Unsafe) operations.
      *
      * We use the top (sign) bit of Node hash fields for control
      * purposes -- it is available anyway because of addressing
@@ -1377,14 +1377,14 @@ public class ConcurrentHashMap<K,V> extends AbstractMap<K,V>
      * Saves the state of the {@code ConcurrentHashMap} instance to a
      * stream (i.e., serializes it).
      * @param s the stream
-     * @throws java.io.IOException if an I/O error occurs
+     * @throws j86.java.io.IOException if an I/O error occurs
      * @serialData
      * the key (Object) and value (Object)
      * for each key-value mapping, followed by a null pair.
      * The key-value mappings are emitted in no particular order.
      */
-    private void writeObject(java.io.ObjectOutputStream s)
-        throws java.io.IOException {
+    private void writeObject(j86.java.io.ObjectOutputStream s)
+        throws j86.java.io.IOException {
         // For serialization compatibility
         // Emulate segment calculation from previous version of this class
         int sshift = 0;
@@ -1423,10 +1423,10 @@ public class ConcurrentHashMap<K,V> extends AbstractMap<K,V>
      * @param s the stream
      * @throws ClassNotFoundException if the class of a serialized object
      *         could not be found
-     * @throws java.io.IOException if an I/O error occurs
+     * @throws j86.java.io.IOException if an I/O error occurs
      */
-    private void readObject(java.io.ObjectInputStream s)
-        throws java.io.IOException, ClassNotFoundException {
+    private void readObject(j86.java.io.ObjectInputStream s)
+        throws j86.java.io.IOException, ClassNotFoundException {
         /*
          * To improve performance in typical cases, we create nodes
          * while reading, then place in table once size is known.
@@ -2052,7 +2052,7 @@ public class ConcurrentHashMap<K,V> extends AbstractMap<K,V>
      * Legacy method testing if some key maps into the specified value
      * in this table.  This method is identical in functionality to
      * {@link #containsValue(Object)}, and exists solely to ensure
-     * full compatibility with class {@link java.util.Hashtable},
+     * full compatibility with class {@link j86.java.util.Hashtable},
      * which supported this method prior to introduction of the
      * Java Collections framework.
      *
@@ -2503,7 +2503,7 @@ public class ConcurrentHashMap<K,V> extends AbstractMap<K,V>
      * A padded cell for distributing counts.  Adapted from LongAdder
      * and Striped64.  See their internal docs for explanation.
      */
-    @sun.misc.Contended static final class CounterCell {
+    @j86.sun.misc.Contended static final class CounterCell {
         volatile long value;
         CounterCell(long x) { value = x; }
     }
@@ -3240,11 +3240,11 @@ public class ConcurrentHashMap<K,V> extends AbstractMap<K,V>
             return true;
         }
 
-        private static final sun.misc.Unsafe U;
+        private static final j86.sun.misc.Unsafe U;
         private static final long LOCKSTATE;
         static {
             try {
-                U = sun.misc.Unsafe.getUnsafe();
+                U = j86.sun.misc.Unsafe.getUnsafe();
                 Class<?> k = TreeBin.class;
                 LOCKSTATE = U.objectFieldOffset
                     (k.getDeclaredField("lockState"));
@@ -4371,7 +4371,7 @@ public class ConcurrentHashMap<K,V> extends AbstractMap<K,V>
      * Base class for views.
      */
     abstract static class CollectionView<K,V,E>
-        implements Collection<E>, java.io.Serializable {
+        implements Collection<E>, j86.java.io.Serializable {
         private static final long serialVersionUID = 7249069246763182397L;
         final ConcurrentHashMap<K,V> map;
         CollectionView(ConcurrentHashMap<K,V> map)  { this.map = map; }
@@ -4436,7 +4436,7 @@ public class ConcurrentHashMap<K,V> extends AbstractMap<K,V>
                 throw new OutOfMemoryError(oomeMsg);
             int m = (int)sz;
             T[] r = (a.length >= m) ? a :
-                (T[])java.lang.reflect.Array
+                (T[])j86.j86.j86.java.lang.reflect.Array
                 .newInstance(a.getClass().getComponentType(), m);
             int n = r.length;
             int i = 0;
@@ -4534,7 +4534,7 @@ public class ConcurrentHashMap<K,V> extends AbstractMap<K,V>
      * @since 1.8
      */
     public static class KeySetView<K,V> extends CollectionView<K,V,K>
-        implements Set<K>, java.io.Serializable {
+        implements Set<K>, j86.java.io.Serializable {
         private static final long serialVersionUID = 7249069246763182397L;
         private final V value;
         KeySetView(ConcurrentHashMap<K,V> map, V value) {  // non-public
@@ -4657,7 +4657,7 @@ public class ConcurrentHashMap<K,V> extends AbstractMap<K,V>
      * directly instantiated. See {@link #values()}.
      */
     static final class ValuesView<K,V> extends CollectionView<K,V,V>
-        implements Collection<V>, java.io.Serializable {
+        implements Collection<V>, j86.java.io.Serializable {
         private static final long serialVersionUID = 2249069246763182397L;
         ValuesView(ConcurrentHashMap<K,V> map) { super(map); }
         public final boolean contains(Object o) {
@@ -4715,7 +4715,7 @@ public class ConcurrentHashMap<K,V> extends AbstractMap<K,V>
      * {@link #entrySet()}.
      */
     static final class EntrySetView<K,V> extends CollectionView<K,V,Map.Entry<K,V>>
-        implements Set<Map.Entry<K,V>>, java.io.Serializable {
+        implements Set<Map.Entry<K,V>>, j86.java.io.Serializable {
         private static final long serialVersionUID = 2249069246763182397L;
         EntrySetView(ConcurrentHashMap<K,V> map) { super(map); }
 
@@ -6275,7 +6275,7 @@ public class ConcurrentHashMap<K,V> extends AbstractMap<K,V>
     }
 
     // Unsafe mechanics
-    private static final sun.misc.Unsafe U;
+    private static final j86.sun.misc.Unsafe U;
     private static final long SIZECTL;
     private static final long TRANSFERINDEX;
     private static final long BASECOUNT;
@@ -6286,7 +6286,7 @@ public class ConcurrentHashMap<K,V> extends AbstractMap<K,V>
 
     static {
         try {
-            U = sun.misc.Unsafe.getUnsafe();
+            U = j86.sun.misc.Unsafe.getUnsafe();
             Class<?> k = ConcurrentHashMap.class;
             SIZECTL = U.objectFieldOffset
                 (k.getDeclaredField("sizeCtl"));

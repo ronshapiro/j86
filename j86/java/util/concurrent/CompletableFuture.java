@@ -33,25 +33,25 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package java.util.concurrent;
-import java.util.function.Supplier;
-import java.util.function.Consumer;
-import java.util.function.BiConsumer;
-import java.util.function.Function;
-import java.util.function.BiFunction;
-import java.util.concurrent.Future;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.ForkJoinPool;
-import java.util.concurrent.ForkJoinTask;
-import java.util.concurrent.Executor;
-import java.util.concurrent.ThreadLocalRandom;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.TimeoutException;
-import java.util.concurrent.CancellationException;
-import java.util.concurrent.CompletionException;
-import java.util.concurrent.CompletionStage;
-import java.util.concurrent.atomic.AtomicInteger;
-import java.util.concurrent.locks.LockSupport;
+package j86.j86.java.util.concurrent;
+import j86.j86.java.util.function.Supplier;
+import j86.j86.java.util.function.Consumer;
+import j86.j86.java.util.function.BiConsumer;
+import j86.j86.java.util.function.Function;
+import j86.j86.java.util.function.BiFunction;
+import j86.j86.java.util.concurrent.Future;
+import j86.j86.java.util.concurrent.TimeUnit;
+import j86.j86.java.util.concurrent.ForkJoinPool;
+import j86.j86.java.util.concurrent.ForkJoinTask;
+import j86.j86.java.util.concurrent.Executor;
+import j86.j86.java.util.concurrent.ThreadLocalRandom;
+import j86.j86.java.util.concurrent.ExecutionException;
+import j86.j86.java.util.concurrent.TimeoutException;
+import j86.j86.java.util.concurrent.CancellationException;
+import j86.j86.java.util.concurrent.CompletionException;
+import j86.j86.java.util.concurrent.CompletionStage;
+import j86.j86.j86.java.util.concurrent.atomic.AtomicInteger;
+import j86.j86.j86.java.util.concurrent.locks.LockSupport;
 
 /**
  * A {@link Future} that may be explicitly completed (setting its
@@ -2991,13 +2991,13 @@ public class CompletableFuture<T> implements Future<T>, CompletionStage<T> {
     }
 
     // Unsafe mechanics
-    private static final sun.misc.Unsafe UNSAFE;
+    private static final j86.sun.misc.Unsafe UNSAFE;
     private static final long RESULT;
     private static final long WAITERS;
     private static final long COMPLETIONS;
     static {
         try {
-            UNSAFE = sun.misc.Unsafe.getUnsafe();
+            UNSAFE = j86.sun.misc.Unsafe.getUnsafe();
             Class<?> k = CompletableFuture.class;
             RESULT = UNSAFE.objectFieldOffset
                 (k.getDeclaredField("result"));

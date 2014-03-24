@@ -23,12 +23,12 @@
  * questions.
  */
 
-package javax.swing;
+package j86.javax.swing;
 
-import java.awt.*;
+import j86.java.awt.*;
 
-import sun.awt.ModalExclude;
-import sun.awt.SunToolkit;
+import j86.sun.awt.ModalExclude;
+import j86.sun.awt.SunToolkit;
 
 /**
  * Popups are used to display a <code>Component</code> to the user, typically

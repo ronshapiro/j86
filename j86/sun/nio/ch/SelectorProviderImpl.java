@@ -23,15 +23,15 @@
  * questions.
  */
 
-package sun.nio.ch;
+package j86.j86.j86.sun.nio.ch;
 
-import java.io.FileDescriptor;
-import java.io.IOException;
-import java.net.ServerSocket;
-import java.net.Socket;
-import java.net.ProtocolFamily;
-import java.nio.channels.*;
-import java.nio.channels.spi.*;
+import j86.java.io.FileDescriptor;
+import j86.java.io.IOException;
+import j86.java.net.ServerSocket;
+import j86.java.net.Socket;
+import j86.java.net.ProtocolFamily;
+import j86.j86.java.nio.channels.*;
+import j86.j86.j86.java.nio.channels.spi.*;
 
 
 public abstract class SelectorProviderImpl

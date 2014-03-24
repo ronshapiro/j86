@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.jvmstat.perfdata.monitor;
+package j86.sun.jvmstat.perfdata.monitor;
 
-import java.net.*;
-import java.io.*;
-import java.util.*;
-import java.util.regex.*;
+import j86.java.net.*;
+import j86.java.io.*;
+import j86.java.util.*;
+import j86.j86.java.util.regex.*;
 
 /**
  * Class for parsing alias files. File format is expected to follow

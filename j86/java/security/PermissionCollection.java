@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.security;
+package j86.java.security;
 
-import java.util.*;
+import j86.java.util.*;
 
 /**
  * Abstract class representing a collection of Permission objects.
@@ -91,7 +91,7 @@ import java.util.*;
  * @author Roland Schemers
  */
 
-public abstract class PermissionCollection implements java.io.Serializable {
+public abstract class PermissionCollection implements j86.java.io.Serializable {
 
     private static final long serialVersionUID = -6727011328946861783L;
 

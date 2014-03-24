@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.tools.jstat;
+package j86.sun.tools.jstat;
 
-import java.io.StreamTokenizer;
+import j86.java.io.StreamTokenizer;
 
 /**
  * A class for encapsulating tokens returned from StreamTokenizer primarily

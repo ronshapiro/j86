@@ -23,13 +23,13 @@
  * questions.
  */
 
-package sun.java2d.pipe.hw;
+package j86.j86.j86.sun.java2d.pipe.hw;
 
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.GraphicsConfiguration;
-import sun.awt.image.SunVolatileImage;
-import static sun.java2d.pipe.hw.AccelSurface.*;
+import j86.java.awt.Graphics;
+import j86.java.awt.Graphics2D;
+import j86.java.awt.GraphicsConfiguration;
+import j86.j86.j86.sun.awt.image.SunVolatileImage;
+import static j86.j86.j86.sun.java2d.pipe.hw.AccelSurface.*;
 
 /**
  * This is an image with forced type of the accelerated surface.
@@ -43,11 +43,11 @@ public class AccelTypedVolatileImage extends SunVolatileImage {
      *        be created.
      * @param width width
      * @param height width
-     * @param transparency type of {@link java.awt.Transparency transparency}
+     * @param transparency type of {@link j86.java.awt.Transparency transparency}
      *        requested for the image
      * @param accType type of the desired accelerated surface as defined in
      *        AccelSurface interface
-     * @see sun.java2d.pipe.hw.AccelSurface
+     * @see j86.j86.j86.sun.java2d.pipe.hw.AccelSurface
      */
     public AccelTypedVolatileImage(GraphicsConfiguration graphicsConfig,
                                    int width, int height, int transparency,

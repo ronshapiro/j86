@@ -23,53 +23,53 @@
  * questions.
  */
 
-package com.sun.imageio.plugins.bmp;
+package j86.com.sun.imageio.plugins.bmp;
 
-import java.awt.Point;
-import java.awt.Rectangle;
-import java.awt.Transparency;
-import java.awt.color.ColorSpace;
-import java.awt.color.ICC_ColorSpace;
-import java.awt.color.ICC_Profile;
-import java.awt.image.BufferedImage;
-import java.awt.image.ColorModel;
-import java.awt.image.ComponentColorModel;
-import java.awt.image.ComponentSampleModel;
-import java.awt.image.DataBuffer;
-import java.awt.image.DataBufferByte;
-import java.awt.image.DataBufferInt;
-import java.awt.image.DataBufferUShort;
-import java.awt.image.DirectColorModel;
-import java.awt.image.IndexColorModel;
-import java.awt.image.MultiPixelPackedSampleModel;
-import java.awt.image.PixelInterleavedSampleModel;
-import java.awt.image.Raster;
-import java.awt.image.SampleModel;
-import java.awt.image.SinglePixelPackedSampleModel;
-import java.awt.image.WritableRaster;
+import j86.java.awt.Point;
+import j86.java.awt.Rectangle;
+import j86.java.awt.Transparency;
+import j86.j86.java.awt.color.ColorSpace;
+import j86.j86.java.awt.color.ICC_ColorSpace;
+import j86.j86.java.awt.color.ICC_Profile;
+import j86.j86.j86.java.awt.image.BufferedImage;
+import j86.j86.j86.java.awt.image.ColorModel;
+import j86.j86.j86.java.awt.image.ComponentColorModel;
+import j86.j86.j86.java.awt.image.ComponentSampleModel;
+import j86.j86.j86.java.awt.image.DataBuffer;
+import j86.j86.j86.java.awt.image.DataBufferByte;
+import j86.j86.j86.java.awt.image.DataBufferInt;
+import j86.j86.j86.java.awt.image.DataBufferUShort;
+import j86.j86.j86.java.awt.image.DirectColorModel;
+import j86.j86.j86.java.awt.image.IndexColorModel;
+import j86.j86.j86.java.awt.image.MultiPixelPackedSampleModel;
+import j86.j86.j86.java.awt.image.PixelInterleavedSampleModel;
+import j86.j86.j86.java.awt.image.Raster;
+import j86.j86.j86.java.awt.image.SampleModel;
+import j86.j86.j86.java.awt.image.SinglePixelPackedSampleModel;
+import j86.j86.j86.java.awt.image.WritableRaster;
 
-import javax.imageio.IIOException;
-import javax.imageio.ImageIO;
-import javax.imageio.ImageReader;
-import javax.imageio.ImageReadParam;
-import javax.imageio.ImageTypeSpecifier;
-import javax.imageio.metadata.IIOMetadata;
-import javax.imageio.spi.ImageReaderSpi;
-import javax.imageio.stream.ImageInputStream;
-import javax.imageio.event.IIOReadProgressListener;
-import javax.imageio.event.IIOReadUpdateListener;
-import javax.imageio.event.IIOReadWarningListener;
+import j86.javax.imageio.IIOException;
+import j86.javax.imageio.ImageIO;
+import j86.javax.imageio.ImageReader;
+import j86.javax.imageio.ImageReadParam;
+import j86.javax.imageio.ImageTypeSpecifier;
+import j86.j86.javax.imageio.metadata.IIOMetadata;
+import j86.j86.javax.imageio.spi.ImageReaderSpi;
+import j86.j86.javax.imageio.stream.ImageInputStream;
+import j86.j86.javax.imageio.event.IIOReadProgressListener;
+import j86.j86.javax.imageio.event.IIOReadUpdateListener;
+import j86.j86.javax.imageio.event.IIOReadWarningListener;
 
-import java.io.*;
-import java.nio.*;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.StringTokenizer;
+import j86.java.io.*;
+import j86.java.nio.*;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.util.ArrayList;
+import j86.java.util.Iterator;
+import j86.java.util.StringTokenizer;
 
-import com.sun.imageio.plugins.common.ImageUtil;
-import com.sun.imageio.plugins.common.I18N;
+import j86.com.sun.imageio.plugins.common.ImageUtil;
+import j86.com.sun.imageio.plugins.common.I18N;
 
 /** This class is the Java Image IO plugin reader for BMP images.
  *  It may subsample the image, clip the image, select sub-bands,

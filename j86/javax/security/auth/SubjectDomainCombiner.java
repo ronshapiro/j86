@@ -23,20 +23,20 @@
  * questions.
  */
 
-package javax.security.auth;
+package j86.javax.security.auth;
 
-import java.security.AccessController;
-import java.security.Permission;
-import java.security.Permissions;
-import java.security.PermissionCollection;
-import java.security.Policy;
-import java.security.Principal;
-import java.security.PrivilegedAction;
-import java.security.ProtectionDomain;
-import java.security.Security;
-import java.util.Set;
-import java.util.WeakHashMap;
-import java.lang.ref.WeakReference;
+import j86.java.security.AccessController;
+import j86.java.security.Permission;
+import j86.java.security.Permissions;
+import j86.java.security.PermissionCollection;
+import j86.java.security.Policy;
+import j86.java.security.Principal;
+import j86.java.security.PrivilegedAction;
+import j86.java.security.ProtectionDomain;
+import j86.java.security.Security;
+import j86.java.util.Set;
+import j86.java.util.WeakHashMap;
+import j86.j86.java.lang.ref.WeakReference;
 
 /**
  * A {@code SubjectDomainCombiner} updates ProtectionDomains
@@ -44,7 +44,7 @@ import java.lang.ref.WeakReference;
  * {@code SubjectDomainCombiner}.
  *
  */
-public class SubjectDomainCombiner implements java.security.DomainCombiner {
+public class SubjectDomainCombiner implements j86.java.security.DomainCombiner {
 
     private Subject subject;
     private WeakKeyValueMap<ProtectionDomain, ProtectionDomain> cachedPDs =
@@ -52,14 +52,14 @@ public class SubjectDomainCombiner implements java.security.DomainCombiner {
     private Set<Principal> principalSet;
     private Principal[] principals;
 
-    private static final sun.security.util.Debug debug =
-        sun.security.util.Debug.getInstance("combiner",
+    private static final j86.sun.security.util.Debug debug =
+        j86.sun.security.util.Debug.getInstance("combiner",
                                         "\t[SubjectDomainCombiner]");
 
     @SuppressWarnings("deprecation")
     // Note: check only at classloading time, not dynamically during combine()
     private static final boolean useJavaxPolicy =
-        javax.security.auth.Policy.isCustomPolicySet(debug);
+        j86.javax.security.auth.Policy.isCustomPolicySet(debug);
 
     // Relevant only when useJavaxPolicy is true
     private static final boolean allowCaching =
@@ -100,7 +100,7 @@ public class SubjectDomainCombiner implements java.security.DomainCombiner {
      *          {@code SubjectDomainCombiner}.
      */
     public Subject getSubject() {
-        java.lang.SecurityManager sm = System.getSecurityManager();
+        j86.java.lang.SecurityManager sm = System.getSecurityManager();
         if (sm != null) {
             sm.checkPermission(new AuthPermission
                 ("getSubjectFromDomainCombiner"));
@@ -162,7 +162,7 @@ public class SubjectDomainCombiner implements java.security.DomainCombiner {
             } else {
                 final Subject s = subject;
                 AccessController.doPrivileged
-                    (new java.security.PrivilegedAction<Void>() {
+                    (new j86.java.security.PrivilegedAction<Void>() {
                     public Void run() {
                         debug.println(s.toString());
                         return null;
@@ -201,7 +201,7 @@ public class SubjectDomainCombiner implements java.security.DomainCombiner {
         }
 
         // maintain backwards compatibility for developers who provide
-        // their own custom javax.security.auth.Policy implementations
+        // their own custom j86.javax.security.auth.Policy implementations
         if (useJavaxPolicy) {
             return combineJavaxPolicy(currentDomains, assignedDomains);
         }
@@ -221,7 +221,7 @@ public class SubjectDomainCombiner implements java.security.DomainCombiner {
                 // if the Subject was mutated, clear the PD cache
                 Set<Principal> newSet = subject.getPrincipals();
                 synchronized(newSet) {
-                    principalSet = new java.util.HashSet<Principal>(newSet);
+                    principalSet = new j86.java.util.HashSet<Principal>(newSet);
                 }
                 principals = principalSet.toArray
                         (new Principal[principalSet.size()]);
@@ -292,19 +292,19 @@ public class SubjectDomainCombiner implements java.security.DomainCombiner {
     }
 
     /**
-     * Use the javax.security.auth.Policy implementation
+     * Use the j86.javax.security.auth.Policy implementation
      */
     private ProtectionDomain[] combineJavaxPolicy(
         ProtectionDomain[] currentDomains,
         ProtectionDomain[] assignedDomains) {
 
         if (!allowCaching) {
-            java.security.AccessController.doPrivileged
+            j86.java.security.AccessController.doPrivileged
                 (new PrivilegedAction<Void>() {
                     @SuppressWarnings("deprecation")
                     public Void run() {
                         // Call refresh only caching is disallowed
-                        javax.security.auth.Policy.getPolicy().refresh();
+                        j86.javax.security.auth.Policy.getPolicy().refresh();
                         return null;
                     }
                 });
@@ -325,7 +325,7 @@ public class SubjectDomainCombiner implements java.security.DomainCombiner {
                 // if the Subject was mutated, clear the PD cache
                 Set<Principal> newSet = subject.getPrincipals();
                 synchronized(newSet) {
-                    principalSet = new java.util.HashSet<Principal>(newSet);
+                    principalSet = new j86.java.util.HashSet<Principal>(newSet);
                 }
                 principals = principalSet.toArray
                         (new Principal[principalSet.size()]);
@@ -351,7 +351,7 @@ public class SubjectDomainCombiner implements java.security.DomainCombiner {
                     // get the original perms
                     Permissions perms = new Permissions();
                     PermissionCollection coll = pd.getPermissions();
-                    java.util.Enumeration<Permission> e;
+                    j86.java.util.Enumeration<Permission> e;
                     if (coll != null) {
                         synchronized (coll) {
                             e = coll.elements();
@@ -365,15 +365,15 @@ public class SubjectDomainCombiner implements java.security.DomainCombiner {
 
                     // get perms from the policy
 
-                    final java.security.CodeSource finalCs = pd.getCodeSource();
+                    final j86.java.security.CodeSource finalCs = pd.getCodeSource();
                     final Subject finalS = subject;
                     PermissionCollection newPerms =
-                        java.security.AccessController.doPrivileged
+                        j86.java.security.AccessController.doPrivileged
                         (new PrivilegedAction<PermissionCollection>() {
                         @SuppressWarnings("deprecation")
                         public PermissionCollection run() {
                           return
-                          javax.security.auth.Policy.getPolicy().getPermissions
+                          j86.javax.security.auth.Policy.getPolicy().getPermissions
                                 (finalS, finalCs);
                         }
                     });

@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.awt.image;
+package j86.j86.j86.java.awt.image;
 
-import java.awt.Transparency;
-import java.awt.color.ColorSpace;
+import j86.java.awt.Transparency;
+import j86.j86.java.awt.color.ColorSpace;
 
 /**
  * The <code>PackedColorModel</code> class is an abstract

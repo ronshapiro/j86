@@ -24,27 +24,27 @@
  */
 
 
-package javax.management.openmbean;
+package j86.j86.javax.management.openmbean;
 
 
 // java import
 //
-import com.sun.jmx.mbeanserver.GetPropertyAction;
-import com.sun.jmx.mbeanserver.Util;
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.Serializable;
-import java.security.AccessController;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import j86.com.sun.jmx.mbeanserver.GetPropertyAction;
+import j86.com.sun.jmx.mbeanserver.Util;
+import j86.java.io.IOException;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.Serializable;
+import j86.java.security.AccessController;
+import j86.java.util.ArrayList;
+import j86.java.util.Arrays;
+import j86.java.util.Collection;
+import j86.java.util.Collections;
+import j86.java.util.HashMap;
+import j86.java.util.Iterator;
+import j86.java.util.LinkedHashMap;
+import j86.java.util.List;
+import j86.java.util.Map;
+import j86.java.util.Set;
 
 // jmx import
 //
@@ -455,7 +455,7 @@ public class TabularDataSupport
         try {
             values =
                 t.values().toArray(new CompositeData[t.size()]);
-        } catch (java.lang.ArrayStoreException e) {
+        } catch (j86.java.lang.ArrayStoreException e) {
             throw new ClassCastException("Map argument t contains values which are not instances of <tt>CompositeData</tt>");
         }
 
@@ -538,7 +538,7 @@ public class TabularDataSupport
 
 
 
-    /* ***  Informational methods from java.util.Map  *** */
+    /* ***  Informational methods from j86.java.util.Map  *** */
 
     /**
      * Returns the number of rows in this <code>TabularDataSupport</code> instance.
@@ -562,7 +562,7 @@ public class TabularDataSupport
 
 
 
-    /* ***  Collection views from java.util.Map  *** */
+    /* ***  Collection views from j86.java.util.Map  *** */
 
     /**
      * Returns a set view of the keys contained in the underlying map of this
@@ -643,7 +643,7 @@ public class TabularDataSupport
      *
      * @return a collection view ({@code Set<Map.Entry<List<?>,CompositeData>>})
      * of the mappings contained in this map.
-     * @see java.util.Map.Entry
+     * @see j86.java.util.Map.Entry
      */
     @SuppressWarnings("unchecked")  // historical confusion about the return type
     public Set<Map.Entry<Object,Object>> entrySet() {
@@ -652,7 +652,7 @@ public class TabularDataSupport
     }
 
 
-    /* ***  Commodity methods from java.lang.Object  *** */
+    /* ***  Commodity methods from j86.java.lang.Object  *** */
 
 
     /**
@@ -770,10 +770,10 @@ public class TabularDataSupport
     /**
      * Returns a string representation of this <code>TabularDataSupport</code> instance.
      * <p>
-     * The string representation consists of the name of this class (ie <code>javax.management.openmbean.TabularDataSupport</code>),
+     * The string representation consists of the name of this class (ie <code>j86.j86.javax.management.openmbean.TabularDataSupport</code>),
      * the string representation of the tabular type of this instance, and the string representation of the contents
      * (ie list the key=value mappings as returned by a call to
-     * <tt>dataMap.</tt>{@link java.util.HashMap#toString() toString()}).
+     * <tt>dataMap.</tt>{@link j86.java.util.HashMap#toString() toString()}).
      *
      * @return  a string representation of this <code>TabularDataSupport</code> instance
      */

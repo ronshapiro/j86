@@ -23,17 +23,17 @@
  * questions.
  */
 
-package com.sun.crypto.provider;
+package j86.com.sun.crypto.provider;
 
-import java.security.*;
-import java.security.spec.AlgorithmParameterSpec;
+import j86.java.security.*;
+import j86.j86.java.security.spec.AlgorithmParameterSpec;
 
-import javax.crypto.*;
+import j86.javax.crypto.*;
 
-import sun.security.internal.interfaces.TlsMasterSecret;
-import sun.security.internal.spec.TlsMasterSecretParameterSpec;
+import j86.sun.security.internal.interfaces.TlsMasterSecret;
+import j86.sun.security.internal.spec.TlsMasterSecretParameterSpec;
 
-import static com.sun.crypto.provider.TlsPrfGenerator.*;
+import static j86.com.sun.crypto.provider.TlsPrfGenerator.*;
 
 /**
  * KeyGenerator implementation for the SSL/TLS master secret derivation.

@@ -23,23 +23,23 @@
  * questions.
  */
 
-package sun.rmi.transport;
+package j86.sun.rmi.transport;
 
-import java.io.IOException;
-import java.io.ObjectOutput;
-import java.rmi.MarshalException;
-import java.rmi.NoSuchObjectException;
-import java.rmi.Remote;
-import java.rmi.RemoteException;
-import java.rmi.server.LogStream;
-import java.rmi.server.ObjID;
-import java.rmi.server.RemoteCall;
-import java.rmi.server.RemoteServer;
-import java.rmi.server.ServerNotActiveException;
-import java.security.AccessControlContext;
-import sun.rmi.runtime.Log;
-import sun.rmi.server.Dispatcher;
-import sun.rmi.server.UnicastServerRef;
+import j86.java.io.IOException;
+import j86.java.io.ObjectOutput;
+import j86.java.rmi.MarshalException;
+import j86.java.rmi.NoSuchObjectException;
+import j86.java.rmi.Remote;
+import j86.java.rmi.RemoteException;
+import j86.j86.java.rmi.server.LogStream;
+import j86.j86.java.rmi.server.ObjID;
+import j86.j86.java.rmi.server.RemoteCall;
+import j86.j86.java.rmi.server.RemoteServer;
+import j86.j86.java.rmi.server.ServerNotActiveException;
+import j86.java.security.AccessControlContext;
+import j86.sun.rmi.runtime.Log;
+import j86.sun.rmi.server.Dispatcher;
+import j86.sun.rmi.server.UnicastServerRef;
 
 /**
  * Transport abstraction for enabling communication between different
@@ -54,13 +54,13 @@ public abstract class Transport {
     static final int logLevel = LogStream.parseLevel(getLogLevel());
 
     private static String getLogLevel() {
-        return java.security.AccessController.doPrivileged(
-            new sun.security.action.GetPropertyAction("sun.rmi.transport.logLevel"));
+        return j86.java.security.AccessController.doPrivileged(
+            new j86.sun.security.action.GetPropertyAction("j86.sun.rmi.transport.logLevel"));
     }
 
     /* transport package log */
     static final Log transportLog =
-        Log.getLog("sun.rmi.transport.misc", "transport", Transport.logLevel);
+        Log.getLog("j86.sun.rmi.transport.misc", "transport", Transport.logLevel);
 
     /** References the current transport when a call is being serviced */
     private static final ThreadLocal<Transport> currentTransport = new ThreadLocal<>();
@@ -141,7 +141,7 @@ public abstract class Transport {
 
             try {
                 id = ObjID.read(call.getInputStream());
-            } catch (java.io.IOException e) {
+            } catch (j86.java.io.IOException e) {
                 throw new MarshalException("unable to read objID", e);
             }
 
@@ -171,15 +171,15 @@ public abstract class Transport {
                     t.setContextClassLoader(ccl);
                     currentTransport.set(this);
                     try {
-                        java.security.AccessController.doPrivileged(
-                            new java.security.PrivilegedExceptionAction<Void>() {
+                        j86.java.security.AccessController.doPrivileged(
+                            new j86.java.security.PrivilegedExceptionAction<Void>() {
                             public Void run() throws IOException {
                                 checkAcceptPermission(acc);
                                 disp.dispatch(impl, call);
                                 return null;
                             }
                         }, acc);
-                    } catch (java.security.PrivilegedActionException pae) {
+                    } catch (j86.java.security.PrivilegedActionException pae) {
                         throw (IOException) pae.getException();
                     }
                 } finally {

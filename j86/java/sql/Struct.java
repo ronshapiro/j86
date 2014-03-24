@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.sql;
+package j86.java.sql;
 
 /**
  * <p>The standard mapping in the Java programming language for an SQL
@@ -101,6 +101,6 @@ public interface Struct {
    * this method
    * @since 1.2
    */
-  Object[] getAttributes(java.util.Map<String,Class<?>> map)
+  Object[] getAttributes(j86.java.util.Map<String,Class<?>> map)
       throws SQLException;
 }

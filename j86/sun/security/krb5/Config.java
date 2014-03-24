@@ -28,27 +28,27 @@
  *  (C) Copyright IBM Corp. 1999 All Rights Reserved.
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
-package sun.security.krb5;
+package j86.sun.security.krb5;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.util.Hashtable;
-import java.util.Vector;
-import java.util.ArrayList;
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.io.IOException;
-import java.util.StringTokenizer;
-import java.net.InetAddress;
-import java.net.UnknownHostException;
-import java.security.AccessController;
-import java.security.PrivilegedExceptionAction;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Locale;
-import sun.net.dns.ResolverConfiguration;
-import sun.security.krb5.internal.crypto.EType;
-import sun.security.krb5.internal.Krb5;
+import j86.java.io.File;
+import j86.java.io.FileInputStream;
+import j86.java.util.Hashtable;
+import j86.java.util.Vector;
+import j86.java.util.ArrayList;
+import j86.java.io.BufferedReader;
+import j86.java.io.InputStreamReader;
+import j86.java.io.IOException;
+import j86.java.util.StringTokenizer;
+import j86.java.net.InetAddress;
+import j86.java.net.UnknownHostException;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedExceptionAction;
+import j86.java.util.Arrays;
+import j86.java.util.List;
+import j86.java.util.Locale;
+import j86.j86.sun.net.dns.ResolverConfiguration;
+import j86.j86.j86.sun.security.krb5.internal.crypto.EType;
+import j86.j86.sun.security.krb5.internal.Krb5;
 
 /**
  * This class maintains key-value pairs of Kerberos configurable constants
@@ -67,7 +67,7 @@ public class Config {
      */
     private Hashtable<String,Object> stanzaTable = new Hashtable<>();
 
-    private static boolean DEBUG = sun.security.krb5.internal.Krb5.DEBUG;
+    private static boolean DEBUG = j86.j86.sun.security.krb5.internal.Krb5.DEBUG;
 
     // these are used for hexdecimal calculation.
     private static final int BASE16_0 = 1;
@@ -90,8 +90,8 @@ public class Config {
      * singleton) is returned.
      *
      * @exception KrbException if error occurs when constructing a Config
-     * instance. Possible causes would be either of java.security.krb5.realm or
-     * java.security.krb5.kdc not specified, error reading configuration file.
+     * instance. Possible causes would be either of j86.java.security.krb5.realm or
+     * j86.java.security.krb5.kdc not specified, error reading configuration file.
      */
     public static synchronized Config getInstance() throws KrbException {
         if (singleton == null) {
@@ -103,13 +103,13 @@ public class Config {
     /**
      * Refresh and reload the Configuration. This could involve,
      * for example reading the Configuration file again or getting
-     * the java.security.krb5.* system properties again. This method
+     * the j86.java.security.krb5.* system properties again. This method
      * also tries its best to update static fields in other classes
      * that depend on the configuration.
      *
      * @exception KrbException if error occurs when constructing a Config
-     * instance. Possible causes would be either of java.security.krb5.realm or
-     * java.security.krb5.kdc not specified, error reading configuration file.
+     * instance. Possible causes would be either of j86.java.security.krb5.realm or
+     * j86.java.security.krb5.kdc not specified, error reading configuration file.
      */
 
     public static synchronized void refresh() throws KrbException {
@@ -152,19 +152,19 @@ public class Config {
         /*
          * If either one system property is specified, we throw exception.
          */
-        String tmp = getProperty("java.security.krb5.kdc");
+        String tmp = getProperty("j86.java.security.krb5.kdc");
         if (tmp != null) {
             // The user can specify a list of kdc hosts separated by ":"
             defaultKDC = tmp.replace(':', ' ');
         } else {
             defaultKDC = null;
         }
-        defaultRealm = getProperty("java.security.krb5.realm");
+        defaultRealm = getProperty("j86.java.security.krb5.realm");
         if ((defaultKDC == null && defaultRealm != null) ||
             (defaultRealm == null && defaultKDC != null)) {
             throw new KrbException
-                ("System property java.security.krb5.kdc and " +
-                 "java.security.krb5.realm both must be set or " +
+                ("System property j86.java.security.krb5.kdc and " +
+                 "j86.java.security.krb5.realm both must be set or " +
                  "neither must be set.");
         }
 
@@ -294,7 +294,7 @@ public class Config {
      * @return the int value, Integer.MIN_VALUE is returned if it cannot be
      * found or the value is not a legal integer.
      * @throw IllegalArgumentException if any of the keys is illegal
-     * @see #get(java.lang.String[])
+     * @see #get(j86.java.lang.String[])
      */
     public int getIntValue(String... keys) {
         String result = get(keys);
@@ -322,7 +322,7 @@ public class Config {
      * @return the boolean value, false is returned if it cannot be
      * found or the value is not "true" (case insensitive).
      * @throw IllegalArgumentException if any of the keys is illegal
-     * @see #get(java.lang.String[])
+     * @see #get(j86.java.lang.String[])
      */
     public boolean getBooleanValue(String... keys) {
         String val = get(keys);
@@ -563,7 +563,7 @@ public class Config {
                 }
             }
             return v;
-        } catch (java.security.PrivilegedActionException pe) {
+        } catch (j86.java.security.PrivilegedActionException pe) {
             throw (IOException)pe.getException();
         }
     }
@@ -652,7 +652,7 @@ public class Config {
     /**
      * Gets the default Java configuration file name.
      *
-     * If the system property "java.security.krb5.conf" is defined, we'll
+     * If the system property "j86.java.security.krb5.conf" is defined, we'll
      * use its value, no matter if the file exists or not. Otherwise, we
      * will look at $JAVA_HOME/lib/security directory with "krb5.conf" name,
      * and return it if the file exists.
@@ -660,7 +660,7 @@ public class Config {
      * The method returns null if it cannot find a Java config file.
      */
     private String getJavaFileName() {
-        String name = getProperty("java.security.krb5.conf");
+        String name = getProperty("j86.java.security.krb5.conf");
         if (name == null) {
             name = getProperty("java.home") + File.separator +
                                 "lib" + File.separator + "security" +
@@ -742,8 +742,8 @@ public class Config {
     }
 
     private static String getProperty(String property) {
-        return java.security.AccessController.doPrivileged(
-                new sun.security.action.GetPropertyAction(property));
+        return j86.java.security.AccessController.doPrivileged(
+                new j86.sun.security.action.GetPropertyAction(property));
     }
 
     private String findMacosConfigFile() {
@@ -991,8 +991,8 @@ public class Config {
             }
         }
         if (realm == null) {
-            realm = java.security.AccessController.doPrivileged(
-                    new java.security.PrivilegedAction<String>() {
+            realm = j86.java.security.AccessController.doPrivileged(
+                    new j86.java.security.PrivilegedAction<String>() {
                 @Override
                 public String run() {
                     String osname = System.getProperty("os.name");
@@ -1038,8 +1038,8 @@ public class Config {
             }
         }
         if (kdcs == null) {
-            kdcs = java.security.AccessController.doPrivileged(
-                    new java.security.PrivilegedAction<String>() {
+            kdcs = j86.java.security.AccessController.doPrivileged(
+                    new j86.java.security.PrivilegedAction<String>() {
                 @Override
                 public String run() {
                     String osname = System.getProperty("os.name");
@@ -1173,12 +1173,12 @@ public class Config {
     }
 
     private boolean fileExists(String name) {
-        return java.security.AccessController.doPrivileged(
+        return j86.java.security.AccessController.doPrivileged(
                                 new FileExistsAction(name));
     }
 
     static class FileExistsAction
-        implements java.security.PrivilegedAction<Boolean> {
+        implements j86.java.security.PrivilegedAction<Boolean> {
 
         private String fileName;
 

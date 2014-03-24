@@ -24,22 +24,22 @@
  */
 
 
-package sun.util.logging;
+package j86.j86.sun.util.logging;
 
-import java.lang.reflect.Field;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.util.Date;
+import j86.j86.j86.java.lang.reflect.Field;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.util.Date;
 
 /**
- * Internal API to support JRE implementation to detect if the java.util.logging
- * support is available but with no dependency on the java.util.logging
+ * Internal API to support JRE implementation to detect if the j86.j86.java.util.logging
+ * support is available but with no dependency on the j86.j86.java.util.logging
  * classes.  This LoggingSupport class provides several static methods to
- * access the java.util.logging functionality that requires the caller
+ * access the j86.j86.java.util.logging functionality that requires the caller
  * to ensure that the logging support is {@linkplain #isAvailable available}
  * before invoking it.
  *
- * @see sun.util.logging.PlatformLogger if you want to log messages even
+ * @see j86.j86.sun.util.logging.PlatformLogger if you want to log messages even
  * if the logging support is not available
  */
 public class LoggingSupport {
@@ -50,8 +50,8 @@ public class LoggingSupport {
             public LoggingProxy run() {
                 try {
                     // create a LoggingProxyImpl instance when
-                    // java.util.logging classes exist
-                    Class<?> c = Class.forName("java.util.logging.LoggingProxyImpl", true, null);
+                    // j86.j86.java.util.logging classes exist
+                    Class<?> c = Class.forName("j86.j86.java.util.logging.LoggingProxyImpl", true, null);
                     Field f = c.getDeclaredField("INSTANCE");
                     f.setAccessible(true);
                     return (LoggingProxy) f.get(null);
@@ -65,7 +65,7 @@ public class LoggingSupport {
             }});
 
     /**
-     * Returns true if java.util.logging support is available.
+     * Returns true if j86.j86.java.util.logging support is available.
      */
     public static boolean isAvailable() {
         return proxy != null;
@@ -76,7 +76,7 @@ public class LoggingSupport {
             throw new AssertionError("Should not here");
     }
 
-    public static java.util.List<String> getLoggerNames() {
+    public static j86.java.util.List<String> getLoggerNames() {
         ensureAvailable();
         return proxy.getLoggerNames();
     }
@@ -148,13 +148,13 @@ public class LoggingSupport {
     private static final String DEFAULT_FORMAT =
         "%1$tb %1$td, %1$tY %1$tl:%1$tM:%1$tS %1$Tp %2$s%n%4$s: %5$s%6$s%n";
 
-    private static final String FORMAT_PROP_KEY = "java.util.logging.SimpleFormatter.format";
+    private static final String FORMAT_PROP_KEY = "j86.j86.java.util.logging.SimpleFormatter.format";
     public static String getSimpleFormat() {
         return getSimpleFormat(true);
     }
 
     // useProxy if true will cause initialization of
-    // java.util.logging and read its configuration
+    // j86.j86.java.util.logging and read its configuration
     static String getSimpleFormat(boolean useProxy) {
         String format =
             AccessController.doPrivileged(

@@ -23,16 +23,16 @@
  * questions.
  */
 
-package javax.swing.text.html.parser;
+package j86.j86.j86.j86.javax.swing.text.html.parser;
 
-import javax.swing.text.SimpleAttributeSet;
-import javax.swing.text.html.HTMLEditorKit;
-import javax.swing.text.html.HTML;
-import javax.swing.text.ChangedCharSetException;
+import j86.j86.javax.swing.text.SimpleAttributeSet;
+import j86.j86.j86.javax.swing.text.html.HTMLEditorKit;
+import j86.j86.j86.javax.swing.text.html.HTML;
+import j86.j86.javax.swing.text.ChangedCharSetException;
 
-import java.util.*;
-import java.io.*;
-import java.net.*;
+import j86.java.util.*;
+import j86.java.io.*;
+import j86.java.net.*;
 
 /**
  * A Parser for HTML Documents (actually, you can specify a DTD, but
@@ -100,7 +100,7 @@ import java.net.*;
  *
  * @author      Sunita Mani
  */
-public class DocumentParser extends javax.swing.text.html.parser.Parser {
+public class DocumentParser extends j86.j86.j86.j86.javax.swing.text.html.parser.Parser {
 
     private int inbody;
     private int intitle;

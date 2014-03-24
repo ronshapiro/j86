@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.awt;
+package j86.java.awt;
 
 /**
  * An abstract class which provides a print graphics context for a page.

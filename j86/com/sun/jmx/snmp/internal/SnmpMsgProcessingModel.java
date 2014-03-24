@@ -22,18 +22,18 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.jmx.snmp.internal;
+package j86.j86.com.sun.jmx.snmp.internal;
 
 
-import com.sun.jmx.snmp.mpm.SnmpMsgTranslator;
+import j86.j86.com.sun.jmx.snmp.mpm.SnmpMsgTranslator;
 
-import com.sun.jmx.snmp.SnmpTooBigException;
-import com.sun.jmx.snmp.SnmpStatusException;
-import com.sun.jmx.snmp.SnmpPdu;
-import com.sun.jmx.snmp.SnmpPduFactory;
-import com.sun.jmx.snmp.SnmpSecurityParameters;
+import j86.com.sun.jmx.snmp.SnmpTooBigException;
+import j86.com.sun.jmx.snmp.SnmpStatusException;
+import j86.com.sun.jmx.snmp.SnmpPdu;
+import j86.com.sun.jmx.snmp.SnmpPduFactory;
+import j86.com.sun.jmx.snmp.SnmpSecurityParameters;
 
-import com.sun.jmx.snmp.SnmpParams;
+import j86.com.sun.jmx.snmp.SnmpParams;
 /**
  * The message processing model interface. Any message processing model must implement this interface in order to be integrated in the engine framework.
  * The model is called by the dispatcher when a call is received or when a call is sent.
@@ -71,7 +71,7 @@ public interface SnmpMsgProcessingModel extends SnmpModel {
 
     /**
      * This method is called to encode a full scoped pdu that has not been encrypted. <CODE>contextName</CODE>, <CODE>contextEngineID</CODE> and data are known.
-     * <BR>The specified parameters are defined in RFC 2572 (see also the {@link com.sun.jmx.snmp.SnmpV3Message} class).
+     * <BR>The specified parameters are defined in RFC 2572 (see also the {@link j86.com.sun.jmx.snmp.SnmpV3Message} class).
      * @param version The SNMP protocol version.
      * @param msgID The SNMP message ID.
      * @param msgMaxSize The max message size.
@@ -98,7 +98,7 @@ public interface SnmpMsgProcessingModel extends SnmpModel {
                       byte[] outputBytes) throws SnmpTooBigException;
     /**
      * This method is called to encode a full scoped pdu that as been encrypted. <CODE>contextName</CODE>, <CODE>contextEngineID</CODE> and data are known.
-     * <BR>The specified parameters are defined in RFC 2572 (see also the {@link com.sun.jmx.snmp.SnmpV3Message} class).
+     * <BR>The specified parameters are defined in RFC 2572 (see also the {@link j86.com.sun.jmx.snmp.SnmpV3Message} class).
      * @param version The SNMP protocol version.
      * @param msgID The SNMP message ID.
      * @param msgMaxSize The max message size.

@@ -23,16 +23,16 @@
  * questions.
  */
 
-package java.lang.reflect;
+package j86.j86.j86.java.lang.reflect;
 
-import sun.reflect.MethodAccessor;
-import sun.reflect.ConstructorAccessor;
+import j86.sun.reflect.MethodAccessor;
+import j86.sun.reflect.ConstructorAccessor;
 
 /** Package-private class implementing the
-    sun.reflect.LangReflectAccess interface, allowing the java.lang
+    j86.sun.reflect.LangReflectAccess interface, allowing the j86.java.lang
     package to instantiate objects in this package. */
 
-class ReflectAccess implements sun.reflect.LangReflectAccess {
+class ReflectAccess implements j86.sun.reflect.LangReflectAccess {
     public Field newField(Class<?> declaringClass,
                           String name,
                           Class<?> type,

@@ -22,9 +22,9 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text;
+package j86.j86.javax.swing.text;
 
-import java.text.CharacterIterator;
+import j86.java.text.CharacterIterator;
 
 /**
  * A segment of a character array representing a fragment
@@ -34,7 +34,7 @@ import java.text.CharacterIterator;
  * around characters.  This is effectively an unprotected
  * String.
  * <p>
- * The Segment implements the java.text.CharacterIterator
+ * The Segment implements the j86.java.text.CharacterIterator
  * interface to support use with the i18n support without
  * copying text into a string.
  *

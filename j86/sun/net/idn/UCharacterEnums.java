@@ -31,7 +31,7 @@
 // CHANGELOG
 //      2005-05-19 Edward Wang
 //          - copy this file from icu4jsrc_3_2/src/com/ibm/icu/lang/UCharacterEnums.java
-//          - move from package com.ibm.icu.lang to package sun.net.idn
+//          - move from package com.ibm.icu.lang to package j86.j86.sun.net.idn
 //
 //      2011-09-06 Kurchi Subhra Hazra
 //          - Added @Deprecated tag to the following:
@@ -50,7 +50,7 @@
 //              DIRECTIONALITY_BOUNDARY_NEUTRAL, DIRECTIONALITY_UNDEFINED
 //
 
-package sun.net.idn;
+package j86.j86.sun.net.idn;
 
 /**
  * A container for the different 'enumerated types' used by UCharacter.
@@ -67,7 +67,7 @@ class UCharacterEnums {
     /**
      * 'Enum' for the CharacterCategory constants.  These constants are
      * compatible in name <b>but not in value</b> with those defined in
-     * <code>java.lang.Character</code>.
+     * <code>j86.java.lang.Character</code>.
      * @see UCharacterCategory
      * @draft ICU 3.0
      * @deprecated This is a draft API and might change in a future release of ICU.
@@ -259,7 +259,7 @@ class UCharacterEnums {
 
         /**
          * Character type Pi
-         * This name is compatible with java.lang.Character's name for this type.
+         * This name is compatible with j86.java.lang.Character's name for this type.
          * @see #INITIAL_PUNCTUATION
          * @draft ICU 2.8
      * @deprecated This is a draft API and might change in a future release of ICU.
@@ -276,7 +276,7 @@ class UCharacterEnums {
 
         /**
          * Character type Pf
-         * This name is compatible with java.lang.Character's name for this type.
+         * This name is compatible with j86.java.lang.Character's name for this type.
          * @see #FINAL_PUNCTUATION
          * @draft ICU 2.8
      * @deprecated This is a draft API and might change in a future release of ICU.
@@ -295,7 +295,7 @@ class UCharacterEnums {
      * 'Enum' for the CharacterDirection constants.  There are two sets
      * of names, those used in ICU, and those used in the JDK.  The
      * JDK constants are compatible in name <b>but not in value</b>
-     * with those defined in <code>java.lang.Character</code>.
+     * with those defined in <code>j86.java.lang.Character</code>.
      * @see UCharacterDirection
      * @draft ICU 3.0
      * @deprecated This is a draft API and might change in a future release of ICU.

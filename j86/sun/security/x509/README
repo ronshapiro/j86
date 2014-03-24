@@ -8,13 +8,13 @@ and how to sign it.
 
 +++	+++	+++	+++	+++	+++	+++	+++	+++
 
-The X.509 support in JDK 1.2 builds on the java.security signature and
+The X.509 support in JDK 1.2 builds on the j86.java.security signature and
 key management APIs.  The following packages provide the X.509 support:
 
-    sun.security.util ... holds DER utilities, for parsing and generating
+    j86.sun.security.util ... holds DER utilities, for parsing and generating
 	streams of DER-encoded data values, including object identifiers.
 
-    sun.security.x509 ... basic X.509 certificate parsing and generation
+    j86.sun.security.x509 ... basic X.509 certificate parsing and generation
 	framework, including X.509 keys, X.500 names, algorithm IDs,
         X.509 v3 extensions, and more.
 

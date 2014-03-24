@@ -23,18 +23,18 @@
  * questions.
  */
 
-package com.sun.crypto.provider;
+package j86.com.sun.crypto.provider;
 
-import java.util.Arrays;
-import java.nio.ByteBuffer;
+import j86.java.util.Arrays;
+import j86.java.nio.ByteBuffer;
 
-import javax.crypto.MacSpi;
-import javax.crypto.SecretKey;
-import javax.crypto.spec.SecretKeySpec;
-import javax.crypto.spec.PBEKeySpec;
-import javax.crypto.spec.PBEParameterSpec;
-import java.security.*;
-import java.security.spec.*;
+import j86.javax.crypto.MacSpi;
+import j86.javax.crypto.SecretKey;
+import j86.j86.javax.crypto.spec.SecretKeySpec;
+import j86.j86.javax.crypto.spec.PBEKeySpec;
+import j86.j86.javax.crypto.spec.PBEParameterSpec;
+import j86.java.security.*;
+import j86.j86.java.security.spec.*;
 
 /**
  * This is an implementation of the PBMAC1 algorithms as defined
@@ -101,9 +101,9 @@ abstract class PBMAC1Core extends HmacCore {
         char[] passwdChars;
         byte[] salt = null;
         int iCount = 0;
-        if (key instanceof javax.crypto.interfaces.PBEKey) {
-            javax.crypto.interfaces.PBEKey pbeKey =
-                (javax.crypto.interfaces.PBEKey) key;
+        if (key instanceof j86.j86.javax.crypto.interfaces.PBEKey) {
+            j86.j86.javax.crypto.interfaces.PBEKey pbeKey =
+                (j86.j86.javax.crypto.interfaces.PBEKey) key;
             passwdChars = pbeKey.getPassword();
             salt = pbeKey.getSalt(); // maybe null if unspecified
             iCount = pbeKey.getIterationCount(); // maybe 0 if unspecified
@@ -122,7 +122,7 @@ abstract class PBMAC1Core extends HmacCore {
         }
         if (params == null) {
             // should not auto-generate default values since current
-            // javax.crypto.Mac api does not have any method for caller to
+            // j86.javax.crypto.Mac api does not have any method for caller to
             // retrieve the generated defaults.
             if ((salt == null) || (iCount == 0)) {
                 throw new InvalidAlgorithmParameterException
@@ -167,7 +167,7 @@ abstract class PBMAC1Core extends HmacCore {
             new PBEKeySpec(passwdChars, salt, iCount, blockLength);
             // password char[] was cloned in PBEKeySpec constructor,
             // so we can zero it out here
-        java.util.Arrays.fill(passwdChars, ' ');
+        j86.java.util.Arrays.fill(passwdChars, ' ');
 
         SecretKey s = null;
         PBKDF2Core kdf = getKDFImpl(kdfAlgo);

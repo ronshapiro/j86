@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.management.loading;
+package j86.j86.javax.management.loading;
 
-import javax.management.MBeanServer; // for Javadoc
+import j86.javax.management.MBeanServer; // for Javadoc
 
 /**
  * <p>Instances of this interface are used to keep the list of ClassLoaders
@@ -37,7 +37,7 @@ import javax.management.MBeanServer; // for Javadoc
  * always the MBean Server's own ClassLoader.</p>
  *
  * <p>When an MBean is registered in an MBean Server, if it is of a
- * subclass of {@link java.lang.ClassLoader} and if it does not
+ * subclass of {@link j86.java.lang.ClassLoader} and if it does not
  * implement the interface {@link PrivateClassLoader}, it is added to
  * the end of the MBean Server's <code>ClassLoaderRepository</code>.
  * If it is subsequently unregistered from the MBean Server, it is
@@ -53,7 +53,7 @@ import javax.management.MBeanServer; // for Javadoc
  * call to {@link MBeanServer#registerMBean} or one of the {@link
  * MBeanServer}<code>.createMBean</code> methods.</p>
  *
- * @see javax.management.MBeanServerFactory
+ * @see j86.javax.management.MBeanServerFactory
  *
  * @since 1.5
  */

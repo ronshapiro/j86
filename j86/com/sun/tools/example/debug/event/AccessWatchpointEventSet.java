@@ -32,9 +32,9 @@
  */
 
 
-package com.sun.tools.example.debug.event;
+package j86.com.sun.tools.example.debug.event;
 
-import com.sun.jdi.event.*;
+import j86.j86.com.sun.jdi.event.*;
 
 public class AccessWatchpointEventSet extends WatchpointEventSet {
 

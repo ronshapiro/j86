@@ -23,26 +23,26 @@
  * questions.
  */
 
-package javax.management.relation;
+package j86.j86.javax.management.relation;
 
 
 
-import java.util.ArrayList;
+import j86.java.util.ArrayList;
 
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.List;
+import j86.java.util.HashMap;
+import j86.java.util.Iterator;
+import j86.java.util.Map;
+import j86.java.util.List;
 
-import java.util.concurrent.atomic.AtomicBoolean;
-import static com.sun.jmx.defaults.JmxProperties.RELATION_LOGGER;
-import static com.sun.jmx.mbeanserver.Util.cast;
-import javax.management.InstanceNotFoundException;
-import javax.management.MBeanException;
-import javax.management.MBeanRegistration;
-import javax.management.MBeanServer;
-import javax.management.ObjectName;
-import javax.management.ReflectionException;
+import j86.j86.j86.java.util.concurrent.atomic.AtomicBoolean;
+import static j86.com.sun.jmx.defaults.JmxProperties.RELATION_LOGGER;
+import static j86.com.sun.jmx.mbeanserver.Util.cast;
+import j86.javax.management.InstanceNotFoundException;
+import j86.javax.management.MBeanException;
+import j86.javax.management.MBeanRegistration;
+import j86.javax.management.MBeanServer;
+import j86.javax.management.ObjectName;
+import j86.javax.management.ReflectionException;
 
 /**
  * A RelationSupport object is used internally by the Relation Service to
@@ -818,8 +818,8 @@ public class RelationSupport
                 params[0] = roleName;
                 params[1] = myRelTypeName;
                 String[] signature = new String[2];
-                signature[0] = "java.lang.String";
-                signature[1] = "java.lang.String";
+                signature[0] = "j86.java.lang.String";
+                signature[1] = "j86.java.lang.String";
                 // Can throw InstanceNotFoundException if the Relation
                 // Service is not registered (to be catched in any case and
                 // transformed into RelationServiceNotRegisteredException).
@@ -1137,9 +1137,9 @@ public class RelationSupport
                 params[1] = myRelTypeName;
                 params[2] = initFlg;
                 String[] signature = new String[3];
-                signature[0] = "javax.management.relation.Role";
-                signature[1] = "java.lang.String";
-                signature[2] = "java.lang.Boolean";
+                signature[0] = "j86.j86.javax.management.relation.Role";
+                signature[1] = "j86.java.lang.String";
+                signature[2] = "j86.java.lang.Boolean";
                 // Can throw InstanceNotFoundException if the Relation Service
                 // is not registered (to be transformed into
                 // RelationServiceNotRegisteredException in any case).
@@ -1309,9 +1309,9 @@ public class RelationSupport
             params[1] = newRole;
             params[2] = oldRoleValue;
             String[] signature = new String[3];
-            signature[0] = "java.lang.String";
-            signature[1] = "javax.management.relation.Role";
-            signature[2] = "java.util.List";
+            signature[0] = "j86.java.lang.String";
+            signature[1] = "j86.j86.javax.management.relation.Role";
+            signature[2] = "j86.java.util.List";
 
             // Can throw InstanceNotFoundException if the Relation Service
             // is not registered (to be transformed).
@@ -1404,9 +1404,9 @@ public class RelationSupport
             params[1] = newRole;
             params[2] = oldRoleValue;
             String[] signature = new String[3];
-            signature[0] = "java.lang.String";
-            signature[1] = "javax.management.relation.Role";
-            signature[2] = "java.util.List";
+            signature[0] = "j86.java.lang.String";
+            signature[1] = "j86.j86.javax.management.relation.Role";
+            signature[2] = "j86.java.util.List";
             // Can throw InstanceNotFoundException if the Relation Service
             // is not registered (to be transformed).
             // Can throw a MBeanException wrapping a RelationNotFoundException:

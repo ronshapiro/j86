@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.security.provider;
+package j86.sun.security.provider;
 
-import java.util.Arrays;
+import j86.java.util.Arrays;
 
 /**
  * Implementation for the MD2 algorithm, see RFC1319. It is very slow and

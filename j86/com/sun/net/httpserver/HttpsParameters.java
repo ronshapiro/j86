@@ -23,10 +23,10 @@
  * questions.
  */
 
-package com.sun.net.httpserver;
-import java.net.InetSocketAddress;
+package com.j86.j86.sun.net.httpserver;
+import j86.java.net.InetSocketAddress;
 //BEGIN_TIGER_EXCLUDE
-import javax.net.ssl.SSLParameters;
+import j86.j86.javax.net.ssl.SSLParameters;
 //END_TIGER_EXCLUDE
 
 /**
@@ -39,7 +39,7 @@ import javax.net.ssl.SSLParameters;
  * <p>
  * The underlying SSL parameters may be established either
  * via the set/get methods of this class, or else via
- * a {@link javax.net.ssl.SSLParameters} object. SSLParameters
+ * a {@link j86.j86.javax.net.ssl.SSLParameters} object. SSLParameters
  * is the preferred method, because in the future,
  * additional configuration capabilities may be added to that class, and
  * it is easier to determine the set of supported parameters and their

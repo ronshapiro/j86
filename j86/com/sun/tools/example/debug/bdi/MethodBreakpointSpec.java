@@ -32,11 +32,11 @@
  */
 
 
-package com.sun.tools.example.debug.bdi;
+package j86.com.sun.tools.example.debug.bdi;
 
-import com.sun.jdi.*;
-import java.util.ArrayList;
-import java.util.List;
+import j86.com.sun.jdi.*;
+import j86.java.util.ArrayList;
+import j86.java.util.List;
 
 public class MethodBreakpointSpec extends BreakpointSpec {
     String methodId;

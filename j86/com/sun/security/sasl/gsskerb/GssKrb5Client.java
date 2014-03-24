@@ -23,18 +23,18 @@
  * questions.
  */
 
-package com.sun.security.sasl.gsskerb;
+package j86.j86.com.sun.security.sasl.gsskerb;
 
-import java.io.IOException;
-import java.util.Map;
-import java.util.logging.Level;
-import javax.security.sasl.*;
+import j86.java.io.IOException;
+import j86.java.util.Map;
+import j86.j86.java.util.logging.Level;
+import j86.javax.security.sasl.*;
 
 // JAAS
-import javax.security.auth.callback.CallbackHandler;
+import j86.j86.javax.security.auth.callback.CallbackHandler;
 
 // JGSS
-import org.ietf.jgss.*;
+import j86.org.ietf.jgss.*;
 
 /**
   * Implements the GSSAPI SASL client mechanism for Kerberos V5.
@@ -53,7 +53,7 @@ import org.ietf.jgss.*;
   * S2: bind success response
   *
   * Expects the client's credentials to be supplied from the
-  * javax.security.sasl.credentials property or from the thread's Subject.
+  * j86.javax.security.sasl.credentials property or from the thread's Subject.
   * Otherwise the underlying KRB5 mech will attempt to acquire Kerberos creds
   * by logging into Kerberos (via default TextCallbackHandler).
   * These creds will be used for exchange with server.
@@ -62,18 +62,18 @@ import org.ietf.jgss.*;
   *
   * Environment properties that affect behavior of implementation:
   *
-  * javax.security.sasl.qop
+  * j86.javax.security.sasl.qop
   * - quality of protection; list of auth, auth-int, auth-conf; default is "auth"
-  * javax.security.sasl.maxbuf
+  * j86.javax.security.sasl.maxbuf
   * - max receive buffer size; default is 65536
-  * javax.security.sasl.sendmaxbuffer
+  * j86.javax.security.sasl.sendmaxbuffer
   * - max send buffer size; default is 65536; (min with server max recv size)
   *
-  * javax.security.sasl.server.authentication
+  * j86.javax.security.sasl.server.authentication
   * - "true" means require mutual authentication; default is "false"
   *
-  * javax.security.sasl.credentials
-  * - an {@link org.ietf.jgss.GSSCredential} used for delegated authentication.
+  * j86.javax.security.sasl.credentials
+  * - an {@link j86.org.ietf.jgss.GSSCredential} used for delegated authentication.
   *
   * @author Rosanna Lee
   */
@@ -115,7 +115,7 @@ final class GssKrb5Client extends GssKrb5Base implements SaslClient {
                     credentials = (GSSCredential) prop;
                     logger.log(Level.FINE,
                         "KRB5CLNT01:Using the credentials supplied in " +
-                        "javax.security.sasl.credentials");
+                        "j86.javax.security.sasl.credentials");
                 }
             }
 

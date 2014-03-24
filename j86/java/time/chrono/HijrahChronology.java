@@ -55,37 +55,37 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package java.time.chrono;
+package j86.j86.java.time.chrono;
 
-import static java.time.temporal.ChronoField.EPOCH_DAY;
+import static j86.j86.java.time.temporal.ChronoField.EPOCH_DAY;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InvalidObjectException;
-import java.io.ObjectInputStream;
-import java.io.Serializable;
-import java.security.AccessController;
-import java.security.PrivilegedActionException;
-import java.time.Clock;
-import java.time.DateTimeException;
-import java.time.Instant;
-import java.time.LocalDate;
-import java.time.ZoneId;
-import java.time.format.ResolverStyle;
-import java.time.temporal.ChronoField;
-import java.time.temporal.TemporalAccessor;
-import java.time.temporal.TemporalField;
-import java.time.temporal.ValueRange;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Objects;
-import java.util.Properties;
+import j86.java.io.File;
+import j86.java.io.FileInputStream;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.io.InvalidObjectException;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.Serializable;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedActionException;
+import j86.java.time.Clock;
+import j86.java.time.DateTimeException;
+import j86.java.time.Instant;
+import j86.java.time.LocalDate;
+import j86.java.time.ZoneId;
+import j86.j86.java.time.format.ResolverStyle;
+import j86.j86.java.time.temporal.ChronoField;
+import j86.j86.java.time.temporal.TemporalAccessor;
+import j86.j86.java.time.temporal.TemporalField;
+import j86.j86.java.time.temporal.ValueRange;
+import j86.java.util.Arrays;
+import j86.java.util.HashMap;
+import j86.java.util.List;
+import j86.java.util.Map;
+import j86.java.util.Objects;
+import j86.java.util.Properties;
 
-import sun.util.logging.PlatformLogger;
+import j86.j86.sun.util.logging.PlatformLogger;
 
 /**
  * The Hijrah calendar is a lunar calendar supporting Islamic calendars.
@@ -111,7 +111,7 @@ import sun.util.logging.PlatformLogger;
  * <tr class="tableSubHeadingColor">
  * <th class="colFirst" align="left" >Chronology ID</th>
  * <th class="colFirst" align="left" >Calendar Type</th>
- * <th class="colFirst" align="left" >Locale extension, see {@link java.util.Locale}</th>
+ * <th class="colFirst" align="left" >Locale extension, see {@link j86.java.util.Locale}</th>
  * <th class="colLast" align="left" >Description</th>
  * </tr>
  * </thead>
@@ -170,7 +170,7 @@ import sun.util.logging.PlatformLogger;
  * </table>
  * <p>
  * The Hijrah property resource is a set of properties that describe the calendar.
- * The syntax is defined by {@code java.util.Properties#load(Reader)}.
+ * The syntax is defined by {@code j86.java.util.Properties#load(Reader)}.
  * <table cellpadding="2" summary="Configuration of Hijrah Calendar">
  * <thead>
  * <tr class="tableSubHeadingColor">
@@ -300,7 +300,7 @@ public final class HijrahChronology extends AbstractChronology implements Serial
      */
     static {
         try {
-            calendarProperties = sun.util.calendar.BaseCalendar.getCalendarProperties();
+            calendarProperties = j86.j86.sun.util.calendar.BaseCalendar.getCalendarProperties();
         } catch (IOException ioe) {
             throw new InternalError("Can't initialize lib/calendars.properties", ioe);
         }
@@ -312,7 +312,7 @@ public final class HijrahChronology extends AbstractChronology implements Serial
             AbstractChronology.registerChrono(INSTANCE, "islamic");
         } catch (DateTimeException ex) {
             // Absence of Hijrah calendar is fatal to initializing this class.
-            PlatformLogger logger = PlatformLogger.getLogger("java.time.chrono");
+            PlatformLogger logger = PlatformLogger.getLogger("j86.j86.java.time.chrono");
             logger.severe("Unable to initialize Hijrah calendar: Hijrah-umalqura", ex);
             throw new RuntimeException("Unable to initialize Hijrah-umalqura calendar", ex.getCause());
         }
@@ -339,7 +339,7 @@ public final class HijrahChronology extends AbstractChronology implements Serial
                     AbstractChronology.registerChrono(chrono);
                 } catch (DateTimeException ex) {
                     // Log error and continue
-                    PlatformLogger logger = PlatformLogger.getLogger("java.time.chrono");
+                    PlatformLogger logger = PlatformLogger.getLogger("j86.j86.java.time.chrono");
                     logger.severe("Unable to initialize Hijrah calendar: " + id, ex);
                 }
             }
@@ -878,7 +878,7 @@ public final class HijrahChronology extends AbstractChronology implements Serial
     private static Properties readConfigProperties(final String resource) throws Exception {
         try {
             return AccessController
-                    .doPrivileged((java.security.PrivilegedExceptionAction<Properties>)
+                    .doPrivileged((j86.java.security.PrivilegedExceptionAction<Properties>)
                         () -> {
                         String libDir = System.getProperty("java.home") + File.separator + "lib";
                         File file = new File(libDir, resource);
@@ -975,7 +975,7 @@ public final class HijrahChronology extends AbstractChronology implements Serial
             }
         } catch (Exception ex) {
             // Log error and throw a DateTimeException
-            PlatformLogger logger = PlatformLogger.getLogger("java.time.chrono");
+            PlatformLogger logger = PlatformLogger.getLogger("j86.j86.java.time.chrono");
             logger.severe("Unable to initialize Hijrah calendar proxy: " + typeId, ex);
             throw new DateTimeException("Unable to initialize HijrahCalendar: " + typeId, ex);
         }
@@ -1079,7 +1079,7 @@ public final class HijrahChronology extends AbstractChronology implements Serial
     //-----------------------------------------------------------------------
     /**
      * Writes the Chronology using a
-     * <a href="../../../serialized-form.html#java.time.chrono.Ser">dedicated serialized form</a>.
+     * <a href="../../../serialized-form.html#j86.j86.java.time.chrono.Ser">dedicated serialized form</a>.
      * @serialData
      * <pre>
      *  out.writeByte(1);     // identifies a Chronology

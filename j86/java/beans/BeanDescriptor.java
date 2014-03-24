@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.beans;
+package j86.java.beans;
 
-import java.lang.ref.Reference;
+import j86.j86.java.lang.ref.Reference;
 
 /**
  * A BeanDescriptor provides global information about a "bean",

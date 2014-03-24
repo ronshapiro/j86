@@ -23,13 +23,13 @@
  * questions.
  */
 
-package sun.awt;
+package j86.sun.awt;
 
 /**
  * Interface used by Swing to make copies from the Swing back buffer
  * more optimal when using BufferStrategy; no need to copy the entire
  * buffer when only a small sub-region has changed.
- * @see javax.swing.BufferStrategyPaintManager
+ * @see j86.javax.swing.BufferStrategyPaintManager
  *
  */
 public interface SubRegionShowable {

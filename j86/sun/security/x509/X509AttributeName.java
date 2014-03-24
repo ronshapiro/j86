@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.security.x509;
+package j86.sun.security.x509;
 
 /**
  * This class is used to parse attribute names like "x509.info.extensions".

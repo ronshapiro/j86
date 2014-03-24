@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.java2d.pipe;
+package j86.j86.sun.java2d.pipe;
 
 /**
  * This interface defines a general method for iterating through the
@@ -88,7 +88,7 @@ public interface SpanIterator {
      * The definition of the structure whose pointer is returned by
      * this method is defined in:
      * <pre>
-     *     src/share/native/sun/java2d/pipe/SpanIterator.h
+     *     src/share/native/j86.j86.sun.java2d.pipe/SpanIterator.h
      * </pre>
      */
     public long getNativeIterator();

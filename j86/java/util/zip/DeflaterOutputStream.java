@@ -23,12 +23,12 @@
  * questions.
  */
 
-package java.util.zip;
+package j86.j86.java.util.zip;
 
-import java.io.FilterOutputStream;
-import java.io.OutputStream;
-import java.io.InputStream;
-import java.io.IOException;
+import j86.java.io.FilterOutputStream;
+import j86.java.io.OutputStream;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
 
 /**
  * This class implements an output stream filter for compressing data in

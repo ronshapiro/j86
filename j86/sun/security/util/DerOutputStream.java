@@ -23,18 +23,18 @@
  * questions.
  */
 
-package sun.security.util;
+package j86.sun.security.util;
 
-import java.io.ByteArrayOutputStream;
-import java.io.OutputStream;
-import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.TimeZone;
-import java.util.Comparator;
-import java.util.Arrays;
-import java.math.BigInteger;
-import java.util.Locale;
+import j86.java.io.ByteArrayOutputStream;
+import j86.java.io.OutputStream;
+import j86.java.io.IOException;
+import j86.java.text.SimpleDateFormat;
+import j86.java.util.Date;
+import j86.java.util.TimeZone;
+import j86.java.util.Comparator;
+import j86.java.util.Arrays;
+import j86.java.math.BigInteger;
+import j86.java.util.Locale;
 
 
 /**

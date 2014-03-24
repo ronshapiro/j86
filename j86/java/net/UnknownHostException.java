@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.net;
+package j86.java.net;
 
-import java.io.IOException;
+import j86.java.io.IOException;
 
 /**
  * Thrown to indicate that the IP address of a host could not be determined.

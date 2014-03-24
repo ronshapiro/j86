@@ -24,10 +24,10 @@
  */
 
 
-package javax.management.remote;
+package j86.j86.javax.management.remote;
 
-import javax.management.Notification;
-import javax.management.ObjectName;
+import j86.javax.management.Notification;
+import j86.javax.management.ObjectName;
 
 /**
  * <p>Notification emitted when a client connection is opened or

@@ -23,10 +23,10 @@
  * questions.
  */
 
-package com.sun.tools.jdi;
+package j86.com.sun.tools.jdi;
 
-import com.sun.jdi.*;
-import java.util.EventObject;
+import j86.com.sun.jdi.*;
+import j86.java.util.EventObject;
 
 /*
  * The name "action" is used to avoid confusion

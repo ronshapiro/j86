@@ -23,10 +23,10 @@
  * questions.
  */
 
-package com.sun.jndi.toolkit.ctx;
+package j86.com.sun.jndi.toolkit.ctx;
 
-import javax.naming.*;
-import javax.naming.spi.ResolveResult;
+import j86.javax.naming.*;
+import j86.j86.javax.naming.spi.ResolveResult;
 
 /**
   * Provides implementation of p_* operations using
@@ -187,7 +187,7 @@ public abstract class ComponentContext extends PartialCompositeContext {
                         private static final long serialVersionUID =
                             -8831204798861786362L;
                     };
-                    Reference ref = new Reference("java.lang.Object", addr);
+                    Reference ref = new Reference("j86.java.lang.Object", addr);
 
                     // Resolved name has trailing slash to indicate nns
                     CompositeName resName = (CompositeName)name.clone();
@@ -327,7 +327,7 @@ public abstract class ComponentContext extends PartialCompositeContext {
                 private static final long serialVersionUID =
                     -1389472957988053402L;
             };
-            Reference ref = new Reference("java.lang.Object", addr);
+            Reference ref = new Reference("j86.java.lang.Object", addr);
 
             // Set continuation leave it to PartialCompositeContext.getPCContext()
             // to throw the exception.

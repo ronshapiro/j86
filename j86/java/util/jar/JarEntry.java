@@ -23,12 +23,12 @@
  * questions.
  */
 
-package java.util.jar;
+package j86.j86.java.util.jar;
 
-import java.io.IOException;
-import java.util.zip.ZipEntry;
-import java.security.CodeSigner;
-import java.security.cert.Certificate;
+import j86.java.io.IOException;
+import j86.j86.java.util.zip.ZipEntry;
+import j86.java.security.CodeSigner;
+import j86.j86.java.security.cert.Certificate;
 
 /**
  * This class is used to represent a JAR file entry.

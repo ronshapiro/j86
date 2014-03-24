@@ -33,12 +33,12 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package java.util.concurrent;
-import java.util.concurrent.locks.AbstractQueuedSynchronizer;
-import java.util.concurrent.locks.Condition;
-import java.util.concurrent.locks.ReentrantLock;
-import java.util.concurrent.atomic.AtomicInteger;
-import java.util.*;
+package j86.j86.java.util.concurrent;
+import j86.j86.j86.java.util.concurrent.locks.AbstractQueuedSynchronizer;
+import j86.j86.j86.java.util.concurrent.locks.Condition;
+import j86.j86.j86.java.util.concurrent.locks.ReentrantLock;
+import j86.j86.j86.java.util.concurrent.atomic.AtomicInteger;
+import j86.java.util.*;
 
 /**
  * An {@link ExecutorService} that executes each submitted task using

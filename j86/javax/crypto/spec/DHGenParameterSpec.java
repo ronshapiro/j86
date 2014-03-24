@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.crypto.spec;
+package j86.j86.javax.crypto.spec;
 
-import java.math.BigInteger;
-import java.security.spec.AlgorithmParameterSpec;
+import j86.java.math.BigInteger;
+import j86.j86.java.security.spec.AlgorithmParameterSpec;
 
 /**
  * This class specifies the set of parameters used for generating
@@ -54,7 +54,7 @@ public class DHGenParameterSpec implements AlgorithmParameterSpec {
      * Constructs a parameter set for the generation of Diffie-Hellman
      * (system) parameters. The constructed parameter set can be used to
      * initialize an
-     * {@link java.security.AlgorithmParameterGenerator AlgorithmParameterGenerator}
+     * {@link j86.java.security.AlgorithmParameterGenerator AlgorithmParameterGenerator}
      * object for the generation of Diffie-Hellman parameters.
      *
      * @param primeSize the size (in bits) of the prime modulus.

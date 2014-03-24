@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.lang.annotation;
+package j86.j86.java.lang.annotation;
 
 /**
  * Annotation retention policy.  The constants of this enumerated type
@@ -51,7 +51,7 @@ public enum RetentionPolicy {
      * Annotations are to be recorded in the class file by the compiler and
      * retained by the VM at run time, so they may be read reflectively.
      *
-     * @see java.lang.reflect.AnnotatedElement
+     * @see j86.j86.j86.java.lang.reflect.AnnotatedElement
      */
     RUNTIME
 }

@@ -22,36 +22,36 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.jmx.snmp;
+package j86.com.sun.jmx.snmp;
 
 // java imports
 //
-import java.util.Vector;
-import java.util.logging.Level;
-import java.net.InetAddress;
+import j86.java.util.Vector;
+import j86.j86.java.util.logging.Level;
+import j86.java.net.InetAddress;
 
 // import debug stuff
 //
-import static com.sun.jmx.defaults.JmxProperties.SNMP_LOGGER;
-import com.sun.jmx.snmp.internal.SnmpMsgProcessingSubSystem;
-import com.sun.jmx.snmp.internal.SnmpSecurityModel;
-import com.sun.jmx.snmp.internal.SnmpDecryptedPdu;
-import com.sun.jmx.snmp.internal.SnmpSecurityCache;
+import static j86.com.sun.jmx.defaults.JmxProperties.SNMP_LOGGER;
+import j86.j86.com.sun.jmx.snmp.internal.SnmpMsgProcessingSubSystem;
+import j86.j86.com.sun.jmx.snmp.internal.SnmpSecurityModel;
+import j86.j86.com.sun.jmx.snmp.internal.SnmpDecryptedPdu;
+import j86.j86.com.sun.jmx.snmp.internal.SnmpSecurityCache;
 
-import com.sun.jmx.snmp.SnmpMsg;
-import com.sun.jmx.snmp.SnmpPdu;
-import com.sun.jmx.snmp.SnmpStatusException;
-import com.sun.jmx.snmp.SnmpTooBigException;
-import com.sun.jmx.snmp.SnmpScopedPduBulk;
-import com.sun.jmx.snmp.BerException;
-import com.sun.jmx.snmp.SnmpScopedPduRequest;
-import com.sun.jmx.snmp.BerDecoder;
-import com.sun.jmx.snmp.SnmpDefinitions;
-import com.sun.jmx.snmp.SnmpEngineId;
-import com.sun.jmx.snmp.SnmpScopedPduPacket;
-import com.sun.jmx.snmp.BerEncoder;
-import com.sun.jmx.snmp.SnmpPduRequestType;
-import com.sun.jmx.snmp.SnmpPduBulkType;
+import j86.com.sun.jmx.snmp.SnmpMsg;
+import j86.com.sun.jmx.snmp.SnmpPdu;
+import j86.com.sun.jmx.snmp.SnmpStatusException;
+import j86.com.sun.jmx.snmp.SnmpTooBigException;
+import j86.com.sun.jmx.snmp.SnmpScopedPduBulk;
+import j86.com.sun.jmx.snmp.BerException;
+import j86.com.sun.jmx.snmp.SnmpScopedPduRequest;
+import j86.com.sun.jmx.snmp.BerDecoder;
+import j86.com.sun.jmx.snmp.SnmpDefinitions;
+import j86.com.sun.jmx.snmp.SnmpEngineId;
+import j86.com.sun.jmx.snmp.SnmpScopedPduPacket;
+import j86.com.sun.jmx.snmp.BerEncoder;
+import j86.com.sun.jmx.snmp.SnmpPduRequestType;
+import j86.com.sun.jmx.snmp.SnmpPduBulkType;
 
 /**
  * Is a partially decoded representation of an SNMP V3 packet.

@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.nio.ch;
+package j86.j86.j86.sun.nio.ch;
 
-import java.io.*;
+import j86.java.io.*;
 
 abstract class FileDispatcher extends NativeDispatcher {
 

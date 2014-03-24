@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.security.spec;
+package j86.j86.java.security.spec;
 
-import java.math.BigInteger;
+import j86.java.math.BigInteger;
 
 /**
  * This class specifies an RSA multi-prime private key, as defined in the
@@ -35,8 +35,8 @@ import java.math.BigInteger;
  * @author Valerie Peng
  *
  *
- * @see java.security.Key
- * @see java.security.KeyFactory
+ * @see j86.java.security.Key
+ * @see j86.java.security.KeyFactory
  * @see KeySpec
  * @see PKCS8EncodedKeySpec
  * @see RSAPrivateKeySpec

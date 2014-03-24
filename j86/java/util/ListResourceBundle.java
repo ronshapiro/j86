@@ -38,9 +38,9 @@
  *
  */
 
-package java.util;
+package j86.java.util;
 
-import sun.util.ResourceBundleEnumeration;
+import j86.sun.util.ResourceBundleEnumeration;
 
 /**
  * <code>ListResourceBundle</code> is an abstract subclass of
@@ -123,7 +123,7 @@ public abstract class ListResourceBundle extends ResourceBundle {
     public ListResourceBundle() {
     }
 
-    // Implements java.util.ResourceBundle.handleGetObject; inherits javadoc specification.
+    // Implements j86.java.util.ResourceBundle.handleGetObject; inherits javadoc specification.
     public final Object handleGetObject(String key) {
         // lazily load the lookup hashtable.
         if (lookup == null) {

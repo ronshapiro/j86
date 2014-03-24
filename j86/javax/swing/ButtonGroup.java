@@ -22,12 +22,12 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing;
+package j86.javax.swing;
 
-import java.awt.event.*;
-import java.util.Vector;
-import java.util.Enumeration;
-import java.io.Serializable;
+import j86.j86.java.awt.event.*;
+import j86.java.util.Vector;
+import j86.java.util.Enumeration;
+import j86.java.io.Serializable;
 
 /**
  * This class is used to create a multiple-exclusion scope for
@@ -60,8 +60,8 @@ import java.io.Serializable;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @author Jeff Dinkins
  */

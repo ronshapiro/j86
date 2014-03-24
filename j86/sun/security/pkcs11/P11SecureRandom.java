@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.security.pkcs11;
+package j86.j86.sun.security.pkcs11;
 
-import java.io.*;
-import java.security.*;
-import sun.security.pkcs11.wrapper.*;
+import j86.java.io.*;
+import j86.java.security.*;
+import j86.j86.j86.sun.security.pkcs11.wrapper.*;
 
 /**
  * SecureRandom implementation class. Some tokens support only

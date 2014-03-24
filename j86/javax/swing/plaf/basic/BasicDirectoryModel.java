@@ -23,17 +23,17 @@
  * questions.
  */
 
-package javax.swing.plaf.basic;
+package j86.j86.j86.javax.swing.plaf.basic;
 
-import java.io.File;
-import java.util.*;
-import java.util.concurrent.Callable;
-import javax.swing.*;
-import javax.swing.filechooser.*;
-import javax.swing.event.*;
-import java.beans.*;
+import j86.java.io.File;
+import j86.java.util.*;
+import j86.j86.java.util.concurrent.Callable;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.filechooser.*;
+import j86.j86.javax.swing.event.*;
+import j86.java.beans.*;
 
-import sun.awt.shell.ShellFolder;
+import j86.j86.sun.awt.shell.ShellFolder;
 
 /**
  * Basic implementation of a file list.
@@ -397,7 +397,7 @@ public class BasicDirectoryModel extends AbstractListModel<Object> implements Pr
      *
      * @see      #addPropertyChangeListener
      * @see      #removePropertyChangeListener
-     * @see      java.beans.PropertyChangeSupport#getPropertyChangeListeners
+     * @see      j86.java.beans.PropertyChangeSupport#getPropertyChangeListeners
      *
      * @since 1.6
      */

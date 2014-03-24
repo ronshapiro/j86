@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.swing.plaf;
+package j86.j86.javax.swing.plaf;
 
-import javax.swing.*;
-import javax.swing.colorchooser.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.colorchooser.*;
 
 /**
  * Pluggable look and feel interface for JColorChooser.

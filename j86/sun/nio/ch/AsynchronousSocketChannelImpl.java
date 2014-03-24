@@ -23,22 +23,22 @@
  * questions.
  */
 
-package sun.nio.ch;
+package j86.j86.j86.sun.nio.ch;
 
-import java.nio.ByteBuffer;
-import java.nio.channels.*;
-import java.net.SocketOption;
-import java.net.StandardSocketOptions;
-import java.net.SocketAddress;
-import java.net.InetSocketAddress;
-import java.io.IOException;
-import java.io.FileDescriptor;
-import java.util.Set;
-import java.util.HashSet;
-import java.util.Collections;
-import java.util.concurrent.*;
-import java.util.concurrent.locks.*;
-import sun.net.NetHooks;
+import j86.java.nio.ByteBuffer;
+import j86.j86.java.nio.channels.*;
+import j86.java.net.SocketOption;
+import j86.java.net.StandardSocketOptions;
+import j86.java.net.SocketAddress;
+import j86.java.net.InetSocketAddress;
+import j86.java.io.IOException;
+import j86.java.io.FileDescriptor;
+import j86.java.util.Set;
+import j86.java.util.HashSet;
+import j86.java.util.Collections;
+import j86.j86.java.util.concurrent.*;
+import j86.j86.j86.java.util.concurrent.locks.*;
+import j86.sun.net.NetHooks;
 
 /**
  * Base implementation of AsynchronousSocketChannel

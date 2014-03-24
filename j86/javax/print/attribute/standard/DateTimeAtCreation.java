@@ -22,12 +22,12 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.print.attribute.standard;
+package j86.j86.j86.javax.print.attribute.standard;
 
-import java.util.Date;
-import javax.print.attribute.Attribute;
-import javax.print.attribute.DateTimeSyntax;
-import javax.print.attribute.PrintJobAttribute;
+import j86.java.util.Date;
+import j86.j86.javax.print.attribute.Attribute;
+import j86.j86.javax.print.attribute.DateTimeSyntax;
+import j86.j86.javax.print.attribute.PrintJobAttribute;
 
 /**
  * Class DateTimeAtCreation is a printing attribute class, a date-time
@@ -35,12 +35,12 @@ import javax.print.attribute.PrintJobAttribute;
  * created.
  * <P>
  * To construct a DateTimeAtCreation attribute from separate values of the year,
- * month, day, hour, minute, and so on, use a {@link java.util.Calendar
- * Calendar} object to construct a {@link java.util.Date Date} object, then use
- * the {@link java.util.Date Date} object to construct the DateTimeAtCreation
+ * month, day, hour, minute, and so on, use a {@link j86.java.util.Calendar
+ * Calendar} object to construct a {@link j86.java.util.Date Date} object, then use
+ * the {@link j86.java.util.Date Date} object to construct the DateTimeAtCreation
  * attribute. To convert a DateTimeAtCreation attribute to separate values of
  * the year, month, day, hour, minute, and so on, create a {@link
- * java.util.Calendar Calendar} object and set it to the {@link java.util.Date
+ * j86.java.util.Calendar Calendar} object and set it to the {@link java.util.Date
  * Date} from the DateTimeAtCreation attribute.
  * <P>
  * <B>IPP Compatibility:</B> The information needed to construct an IPP
@@ -58,9 +58,9 @@ public final class DateTimeAtCreation   extends DateTimeSyntax
 
     /**
      * Construct a new date-time at creation attribute with the given {@link
-     * java.util.Date Date} value.
+     * j86.java.util.Date Date} value.
      *
-     * @param  dateTime  {@link java.util.Date Date} value.
+     * @param  dateTime  {@link j86.java.util.Date Date} value.
      *
      * @exception  NullPointerException
      *     (unchecked exception) Thrown if <CODE>dateTime</CODE> is null.
@@ -79,8 +79,8 @@ public final class DateTimeAtCreation   extends DateTimeSyntax
      * <LI>
      * <CODE>object</CODE> is an instance of class DateTimeAtCreation.
      * <LI>
-     * This date-time at creation attribute's {@link java.util.Date Date} value
-     * and <CODE>object</CODE>'s {@link java.util.Date Date} value are equal.
+     * This date-time at creation attribute's {@link j86.java.util.Date Date} value
+     * and <CODE>object</CODE>'s {@link j86.java.util.Date Date} value are equal.
      * </OL>
      *
      * @param  object  Object to compare to.
@@ -101,7 +101,7 @@ public final class DateTimeAtCreation   extends DateTimeSyntax
      * DateTimeAtCreation itself.
      *
      * @return  Printing attribute class (category), an instance of class
-     *          {@link java.lang.Class java.lang.Class}.
+     *          {@link j86.java.lang.Class java.lang.Class}.
      */
     public final Class<? extends Attribute> getCategory() {
         return DateTimeAtCreation.class;

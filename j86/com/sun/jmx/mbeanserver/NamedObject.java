@@ -23,9 +23,9 @@
  * questions.
  */
 
-package com.sun.jmx.mbeanserver;
+package j86.com.sun.jmx.mbeanserver;
 
-import javax.management.* ;
+import j86.javax.management.* ;
 
 
 

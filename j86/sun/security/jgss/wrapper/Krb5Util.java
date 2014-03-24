@@ -22,10 +22,10 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.security.jgss.wrapper;
+package j86.j86.sun.security.jgss.wrapper;
 
-import org.ietf.jgss.*;
-import javax.security.auth.kerberos.ServicePermission;
+import j86.org.ietf.jgss.*;
+import j86.j86.javax.security.auth.kerberos.ServicePermission;
 
 /**
  * This class is an utility class for Kerberos related stuff.

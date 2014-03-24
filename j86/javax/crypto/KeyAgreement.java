@@ -23,17 +23,17 @@
  * questions.
  */
 
-package javax.crypto;
+package j86.javax.crypto;
 
-import java.util.*;
+import j86.java.util.*;
 
-import java.security.*;
-import java.security.Provider.Service;
-import java.security.spec.*;
+import j86.java.security.*;
+import j86.java.security.Provider.Service;
+import j86.j86.java.security.spec.*;
 
-import sun.security.util.Debug;
-import sun.security.jca.*;
-import sun.security.jca.GetInstance.Instance;
+import j86.sun.security.util.Debug;
+import j86.sun.security.jca.*;
+import j86.sun.security.jca.GetInstance.Instance;
 
 /**
  * This class provides the functionality of a key agreement (or key
@@ -161,7 +161,7 @@ public class KeyAgreement {
      *          KeyAgreementSpi implementation for the
      *          specified algorithm.
      *
-     * @see java.security.Provider
+     * @see j86.java.security.Provider
      */
     public static final KeyAgreement getInstance(String algorithm)
             throws NoSuchAlgorithmException {
@@ -216,7 +216,7 @@ public class KeyAgreement {
      * @exception IllegalArgumentException if the <code>provider</code>
      *          is null or empty.
      *
-     * @see java.security.Provider
+     * @see j86.java.security.Provider
      */
     public static final KeyAgreement getInstance(String algorithm,
             String provider) throws NoSuchAlgorithmException,
@@ -257,7 +257,7 @@ public class KeyAgreement {
      * @exception IllegalArgumentException if the <code>provider</code>
      *          is null.
      *
-     * @see java.security.Provider
+     * @see j86.java.security.Provider
      */
     public static final KeyAgreement getInstance(String algorithm,
             Provider provider) throws NoSuchAlgorithmException {
@@ -418,7 +418,7 @@ public class KeyAgreement {
      *
      * <p> If this key agreement requires any random bytes, it will get
      * them using the
-     * {@link java.security.SecureRandom}
+     * {@link j86.java.security.SecureRandom}
      * implementation of the highest-priority
      * installed provider as the source of randomness.
      * (If none of the installed providers supply an implementation of
@@ -476,7 +476,7 @@ public class KeyAgreement {
      *
      * <p> If this key agreement requires any random bytes, it will get
      * them using the
-     * {@link java.security.SecureRandom}
+     * {@link j86.java.security.SecureRandom}
      * implementation of the highest-priority
      * installed provider as the source of randomness.
      * (If none of the installed providers supply an implementation of

@@ -23,11 +23,11 @@
  * questions.
  */
 
-package javax.swing.text;
+package j86.j86.javax.swing.text;
 
-import java.io.Writer;
-import java.io.IOException;
-import java.util.Enumeration;
+import j86.java.io.Writer;
+import j86.java.io.IOException;
+import j86.java.util.Enumeration;
 
 /**
  * AbstractWriter is an abstract class that actually

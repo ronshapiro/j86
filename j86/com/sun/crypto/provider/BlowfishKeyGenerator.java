@@ -23,15 +23,15 @@
  * questions.
  */
 
-package com.sun.crypto.provider;
+package j86.com.sun.crypto.provider;
 
-import java.security.SecureRandom;
-import java.security.InvalidParameterException;
-import java.security.InvalidAlgorithmParameterException;
-import java.security.spec.AlgorithmParameterSpec;
-import javax.crypto.KeyGeneratorSpi;
-import javax.crypto.SecretKey;
-import javax.crypto.spec.SecretKeySpec;
+import j86.java.security.SecureRandom;
+import j86.java.security.InvalidParameterException;
+import j86.java.security.InvalidAlgorithmParameterException;
+import j86.j86.java.security.spec.AlgorithmParameterSpec;
+import j86.javax.crypto.KeyGeneratorSpi;
+import j86.javax.crypto.SecretKey;
+import j86.j86.javax.crypto.spec.SecretKeySpec;
 
 /**
  * This class generates a secret key for use with the Blowfish algorithm.

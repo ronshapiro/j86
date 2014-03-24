@@ -22,10 +22,10 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.awt.peer;
+package j86.j86.java.awt.peer;
 
-import java.awt.Menu;
-import java.awt.MenuItem;
+import j86.java.awt.Menu;
+import j86.java.awt.MenuItem;
 
 /**
  * The peer interface for menus. This is used by {@link Menu}.

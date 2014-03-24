@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.nio.ch;
+package j86.j86.j86.sun.nio.ch;
 
-import java.nio.channels.*;
-import java.util.concurrent.*;
-import java.security.AccessController;
-import sun.security.action.GetIntegerAction;
+import j86.j86.java.nio.channels.*;
+import j86.j86.java.util.concurrent.*;
+import j86.java.security.AccessController;
+import j86.sun.security.action.GetIntegerAction;
 
 /**
  * Defines static methods to invoke a completion handler or arbitrary task.
@@ -41,7 +41,7 @@ class Invoker {
     // thread before it re-directs invocations to the thread pool. This helps
     // avoid stack overflow and lessens the risk of starvation.
     private static final int maxHandlerInvokeCount = AccessController.doPrivileged(
-        new GetIntegerAction("sun.nio.ch.maxCompletionHandlersOnStack", 16));
+        new GetIntegerAction("j86.j86.j86.sun.nio.ch.maxCompletionHandlersOnStack", 16));
 
     // Per-thread object with reference to channel group and a counter for
     // the number of completion handlers invoked. This should be reset to 0

@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.applet;
+package j86.sun.applet;
 
-import java.awt.Toolkit;
-import java.awt.Image;
-import sun.awt.image.URLImageSource;
-import java.net.URL;
+import j86.java.awt.Toolkit;
+import j86.java.awt.Image;
+import j86.j86.j86.sun.awt.image.URLImageSource;
+import j86.java.net.URL;
 
-class AppletImageRef extends sun.misc.Ref {
+class AppletImageRef extends j86.sun.misc.Ref {
     URL url;
 
     /**

@@ -56,19 +56,19 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-package jdk.internal.org.objectweb.asm.tree.analysis;
+package j86.j86.j86.jdk.internal.org.objectweb.asm.tree.analysis;
 
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import j86.java.util.HashSet;
+import j86.java.util.List;
+import j86.java.util.Set;
 
-import jdk.internal.org.objectweb.asm.Opcodes;
-import jdk.internal.org.objectweb.asm.Type;
-import jdk.internal.org.objectweb.asm.tree.AbstractInsnNode;
-import jdk.internal.org.objectweb.asm.tree.FieldInsnNode;
-import jdk.internal.org.objectweb.asm.tree.InvokeDynamicInsnNode;
-import jdk.internal.org.objectweb.asm.tree.LdcInsnNode;
-import jdk.internal.org.objectweb.asm.tree.MethodInsnNode;
+import j86.jdk.internal.org.objectweb.asm.Opcodes;
+import j86.jdk.internal.org.objectweb.asm.Type;
+import j86.j86.jdk.internal.org.objectweb.asm.tree.AbstractInsnNode;
+import j86.j86.jdk.internal.org.objectweb.asm.tree.FieldInsnNode;
+import j86.j86.jdk.internal.org.objectweb.asm.tree.InvokeDynamicInsnNode;
+import j86.j86.jdk.internal.org.objectweb.asm.tree.LdcInsnNode;
+import j86.j86.jdk.internal.org.objectweb.asm.tree.MethodInsnNode;
 
 /**
  * An {@link Interpreter} for {@link SourceValue} values.

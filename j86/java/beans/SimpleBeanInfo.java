@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.beans;
+package j86.java.beans;
 
 /**
  * This is a support class to make it easier for people to provide
@@ -99,7 +99,7 @@ public class SimpleBeanInfo implements BeanInfo {
      * Claim there are no icons available.  You can override
      * this if you want to provide icons for your bean.
      */
-    public java.awt.Image getIcon(int iconKind) {
+    public j86.java.awt.Image getIcon(int iconKind) {
         return null;
     }
 
@@ -114,20 +114,20 @@ public class SimpleBeanInfo implements BeanInfo {
      *          "wombat.gif".
      * @return  an image object.  May be null if the load failed.
      */
-    public java.awt.Image loadImage(final String resourceName) {
+    public j86.java.awt.Image loadImage(final String resourceName) {
         try {
             final Class<?> c = getClass();
-            java.awt.image.ImageProducer ip = (java.awt.image.ImageProducer)
-                java.security.AccessController.doPrivileged(
-                new java.security.PrivilegedAction<Object>() {
+            j86.j86.j86.java.awt.image.ImageProducer ip = (java.awt.image.ImageProducer)
+                j86.java.security.AccessController.doPrivileged(
+                new j86.java.security.PrivilegedAction<Object>() {
                     public Object run() {
-                        java.net.URL url;
+                        j86.java.net.URL url;
                         if ((url = c.getResource(resourceName)) == null) {
                             return null;
                         } else {
                             try {
                                 return url.getContent();
-                            } catch (java.io.IOException ioe) {
+                            } catch (j86.java.io.IOException ioe) {
                                 return null;
                             }
                         }
@@ -136,7 +136,7 @@ public class SimpleBeanInfo implements BeanInfo {
 
             if (ip == null)
                 return null;
-            java.awt.Toolkit tk = java.awt.Toolkit.getDefaultToolkit();
+            j86.java.awt.Toolkit tk = java.awt.Toolkit.getDefaultToolkit();
             return tk.createImage(ip);
         } catch (Exception ex) {
             return null;

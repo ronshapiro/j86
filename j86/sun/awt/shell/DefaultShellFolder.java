@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.awt.shell;
+package j86.j86.sun.awt.shell;
 
-import java.io.File;
-import java.security.AccessController;
-import javax.swing.Icon;
-import sun.security.action.GetPropertyAction;
+import j86.java.io.File;
+import j86.java.security.AccessController;
+import j86.javax.swing.Icon;
+import j86.sun.security.action.GetPropertyAction;
 
 /**
  * @author Michael Martak
@@ -48,11 +48,11 @@ class DefaultShellFolder extends ShellFolder {
      * This method is implemented to make sure that no instances
      * of <code>ShellFolder</code> are ever serialized. An instance of
      * this default implementation can always be represented with a
-     * <code>java.io.File</code> object instead.
+     * <code>j86.java.io.File</code> object instead.
      *
-     * @returns a <code>java.io.File</code> replacement object.
+     * @returns a <code>j86.java.io.File</code> replacement object.
      */
-    protected Object writeReplace() throws java.io.ObjectStreamException {
+    protected Object writeReplace() throws j86.java.io.ObjectStreamException {
         return new File(getPath());
     }
 

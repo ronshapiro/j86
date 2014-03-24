@@ -23,19 +23,19 @@
  * questions.
  */
 
-package java.security.cert;
+package j86.j86.java.security.cert;
 
-import java.security.AccessController;
-import java.security.InvalidAlgorithmParameterException;
-import java.security.NoSuchAlgorithmException;
-import java.security.NoSuchProviderException;
-import java.security.PrivilegedAction;
-import java.security.Provider;
-import java.security.Security;
-import java.util.Collection;
+import j86.java.security.AccessController;
+import j86.java.security.InvalidAlgorithmParameterException;
+import j86.java.security.NoSuchAlgorithmException;
+import j86.java.security.NoSuchProviderException;
+import j86.java.security.PrivilegedAction;
+import j86.java.security.Provider;
+import j86.java.security.Security;
+import j86.java.util.Collection;
 
-import sun.security.jca.*;
-import sun.security.jca.GetInstance.Instance;
+import j86.sun.security.jca.*;
+import j86.sun.security.jca.GetInstance.Instance;
 
 /**
  * A class for retrieving {@code Certificate}s and {@code CRL}s
@@ -52,7 +52,7 @@ import sun.security.jca.GetInstance.Instance;
  * {@link #getCertificates(CertSelector selector) getCertificates} and
  * {@link #getCRLs(CRLSelector selector) getCRLs} methods.
  * <p>
- * Unlike a {@link java.security.KeyStore KeyStore}, which provides access
+ * Unlike a {@link j86.java.security.KeyStore KeyStore}, which provides access
  * to a cache of private keys and trusted certificates, a
  * {@code CertStore} is designed to provide access to a potentially
  * vast repository of untrusted certificates and CRLs. For example, an LDAP
@@ -219,7 +219,7 @@ public class CertStore {
      *          initialization parameters are inappropriate for this
      *          {@code CertStore}.
      *
-     * @see java.security.Provider
+     * @see j86.java.security.Provider
      */
     public static CertStore getInstance(String type, CertStoreParameters params)
             throws InvalidAlgorithmParameterException,
@@ -288,7 +288,7 @@ public class CertStore {
      * @exception IllegalArgumentException if the {@code provider} is
      *          null or empty.
      *
-     * @see java.security.Provider
+     * @see j86.java.security.Provider
      */
     public static CertStore getInstance(String type,
             CertStoreParameters params, String provider)
@@ -343,7 +343,7 @@ public class CertStore {
      * @exception IllegalArgumentException if the {@code provider} is
      *          null.
      *
-     * @see java.security.Provider
+     * @see j86.java.security.Provider
      */
     public static CertStore getInstance(String type, CertStoreParameters params,
             Provider provider) throws NoSuchAlgorithmException,
@@ -402,7 +402,7 @@ public class CertStore {
      * the value of the {@code certstore.type} security property to the
      * desired type.
      *
-     * @see java.security.Security security properties
+     * @see j86.java.security.Security security properties
      * @return the default {@code CertStore} type as specified by the
      * {@code certstore.type} security property, or the string
      * {@literal "LDAP"} if no such property exists.

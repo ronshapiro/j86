@@ -23,23 +23,23 @@
  * questions.
  */
 
-package sun.security.jgss.krb5;
+package j86.j86.sun.security.jgss.krb5;
 
-import javax.security.auth.kerberos.KerberosTicket;
-import javax.security.auth.kerberos.KerberosKey;
-import javax.security.auth.kerberos.KerberosPrincipal;
-import javax.security.auth.kerberos.KeyTab;
-import javax.security.auth.Subject;
+import j86.j86.javax.security.auth.kerberos.KerberosTicket;
+import j86.j86.javax.security.auth.kerberos.KerberosKey;
+import j86.j86.javax.security.auth.kerberos.KerberosPrincipal;
+import j86.j86.javax.security.auth.kerberos.KeyTab;
+import j86.javax.security.auth.Subject;
 
-import sun.security.krb5.Credentials;
-import sun.security.krb5.EncryptionKey;
-import sun.security.krb5.KrbException;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
-import sun.security.krb5.*;
-import sun.security.krb5.internal.Krb5;
+import j86.sun.security.krb5.Credentials;
+import j86.sun.security.krb5.EncryptionKey;
+import j86.sun.security.krb5.KrbException;
+import j86.java.io.IOException;
+import j86.java.util.ArrayList;
+import j86.java.util.List;
+import j86.java.util.Set;
+import j86.sun.security.krb5.*;
+import j86.j86.sun.security.krb5.internal.Krb5;
 
 /**
  * Credentials of a kerberos acceptor. A KerberosPrincipal object (kp) is

@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.awt;
+package j86.java.awt;
 
-import java.awt.event.*;
+import j86.j86.java.awt.event.*;
 
-import sun.awt.AppContext;
+import j86.sun.awt.AppContext;
 
 abstract class ModalEventFilter implements EventFilter {
 
@@ -54,7 +54,7 @@ abstract class ModalEventFilter implements EventFilter {
             eventID == WindowEvent.WINDOW_CLOSING)
         {
             Object o = event.getSource();
-            if (o instanceof sun.awt.ModalExclude) {
+            if (o instanceof j86.sun.awt.ModalExclude) {
                 // Exclude this object from modality and
                 // continue to pump it's events.
             } else if (o instanceof Component) {

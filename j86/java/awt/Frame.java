@@ -22,23 +22,23 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.awt;
+package j86.java.awt;
 
-import java.awt.peer.FramePeer;
-import java.awt.event.*;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Vector;
-import java.io.Serializable;
-import java.io.ObjectOutputStream;
-import java.io.ObjectInputStream;
-import java.io.IOException;
-import sun.awt.AppContext;
-import sun.awt.SunToolkit;
-import sun.awt.AWTAccessor;
-import java.lang.ref.WeakReference;
-import javax.accessibility.*;
+import j86.j86.java.awt.peer.FramePeer;
+import j86.j86.java.awt.event.*;
+import j86.java.util.ArrayList;
+import j86.java.util.Arrays;
+import j86.java.util.List;
+import j86.java.util.Vector;
+import j86.java.io.Serializable;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.IOException;
+import j86.sun.awt.AppContext;
+import j86.sun.awt.SunToolkit;
+import j86.sun.awt.AWTAccessor;
+import j86.j86.java.lang.ref.WeakReference;
+import j86.javax.accessibility.*;
 
 /**
  * A <code>Frame</code> is a top-level window with a title and a border.
@@ -351,7 +351,7 @@ public class Frame extends Window implements MenuContainer {
      * Note: in 1.2 this has been superceded by Window.ownedWindowList
      *
      * @serial
-     * @see java.awt.Window#ownedWindowList
+     * @see j86.java.awt.Window#ownedWindowList
      */
     Vector<Window> ownedWindows;
 
@@ -377,7 +377,7 @@ public class Frame extends Window implements MenuContainer {
      * is empty.
      * @exception HeadlessException when
      *     <code>GraphicsEnvironment.isHeadless()</code> returns <code>true</code>
-     * @see java.awt.GraphicsEnvironment#isHeadless()
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless()
      * @see Component#setSize
      * @see Component#setVisible(boolean)
      */
@@ -397,7 +397,7 @@ public class Frame extends Window implements MenuContainer {
      * <code>gc</code> is not from a screen device.
      * @exception HeadlessException when
      *     <code>GraphicsEnvironment.isHeadless()</code> returns <code>true</code>
-     * @see java.awt.GraphicsEnvironment#isHeadless()
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless()
      * @since     1.3
      */
     public Frame(GraphicsConfiguration gc) {
@@ -412,10 +412,10 @@ public class Frame extends Window implements MenuContainer {
      *              is treated as an empty string, "".
      * @exception HeadlessException when
      *     <code>GraphicsEnvironment.isHeadless()</code> returns <code>true</code>
-     * @see java.awt.GraphicsEnvironment#isHeadless()
-     * @see java.awt.Component#setSize
-     * @see java.awt.Component#setVisible(boolean)
-     * @see java.awt.GraphicsConfiguration#getBounds
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless()
+     * @see j86.java.awt.Component#setSize
+     * @see j86.java.awt.Component#setVisible(boolean)
+     * @see j86.java.awt.GraphicsConfiguration#getBounds
      */
     public Frame(String title) throws HeadlessException {
         init(title, null);
@@ -436,10 +436,10 @@ public class Frame extends Window implements MenuContainer {
      * is not from a screen device.
      * @exception HeadlessException when
      *     <code>GraphicsEnvironment.isHeadless()</code> returns <code>true</code>
-     * @see java.awt.GraphicsEnvironment#isHeadless()
-     * @see java.awt.Component#setSize
-     * @see java.awt.Component#setVisible(boolean)
-     * @see java.awt.GraphicsConfiguration#getBounds
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless()
+     * @see j86.java.awt.Component#setSize
+     * @see j86.java.awt.Component#setVisible(boolean)
+     * @see j86.java.awt.GraphicsConfiguration#getBounds
      * @since 1.3
      */
     public Frame(String title, GraphicsConfiguration gc) {
@@ -539,7 +539,7 @@ public class Frame extends Window implements MenuContainer {
      * @see       Window#setIconImages
      */
     public Image getIconImage() {
-        java.util.List<Image> icons = this.icons;
+        j86.java.util.List<Image> icons = this.icons;
         if (icons != null) {
             if (icons.size() > 0) {
                 return icons.get(0);
@@ -603,7 +603,7 @@ public class Frame extends Window implements MenuContainer {
      * By default, all frames are initially resizable.
      * @return    <code>true</code> if the user can resize this frame;
      *                        <code>false</code> otherwise.
-     * @see       java.awt.Frame#setResizable(boolean)
+     * @see       j86.java.awt.Frame#setResizable(boolean)
      */
     public boolean isResizable() {
         return resizable;
@@ -613,7 +613,7 @@ public class Frame extends Window implements MenuContainer {
      * Sets whether this frame is resizable by the user.
      * @param    resizable   <code>true</code> if this frame is resizable;
      *                       <code>false</code> otherwise.
-     * @see      java.awt.Frame#isResizable
+     * @see      j86.java.awt.Frame#isResizable
      */
     public void setResizable(boolean resizable) {
         boolean oldResizable = this.resizable;
@@ -660,14 +660,14 @@ public class Frame extends Window implements MenuContainer {
      * value of the {@link #getState} method will be
      * changed. The application may determine whether a
      * specific state is supported via the {@link
-     * java.awt.Toolkit#isFrameStateSupported} method.
+     * j86.java.awt.Toolkit#isFrameStateSupported} method.
      * <p><b>If the frame is currently visible on the
      * screen</b> (the {@link #isShowing} method returns
      * {@code true}), the developer should examine the
      * return value of the  {@link
-     * java.awt.event.WindowEvent#getNewState} method of
+     * j86.j86.java.awt.event.WindowEvent#getNewState} method of
      * the {@code WindowEvent} received through the
-     * {@link java.awt.event.WindowStateListener} to
+     * {@link j86.j86.java.awt.event.WindowStateListener} to
      * determine that the state has actually been
      * changed.
      * <p><b>If the frame is not visible on the
@@ -678,13 +678,13 @@ public class Frame extends Window implements MenuContainer {
      * setVisible(true)} method is invoked, the frame
      * will attempt to apply this state. Receiving any
      * {@link
-     * java.awt.event.WindowEvent#WINDOW_STATE_CHANGED}
+     * j86.j86.java.awt.event.WindowEvent#WINDOW_STATE_CHANGED}
      * events is not guaranteed in this case also.
      *
      * @param state either <code>Frame.NORMAL</code> or
      *     <code>Frame.ICONIFIED</code>.
      * @see #setExtendedState(int)
-     * @see java.awt.Window#addWindowStateListener
+     * @see j86.java.awt.Window#addWindowStateListener
      */
     public synchronized void setState(int state) {
         int current = getExtendedState();
@@ -714,14 +714,14 @@ public class Frame extends Window implements MenuContainer {
      * value of the {@link #getExtendedState} method will
      * be changed. The application may determine whether
      * a specific state is supported via the {@link
-     * java.awt.Toolkit#isFrameStateSupported} method.
+     * j86.java.awt.Toolkit#isFrameStateSupported} method.
      * <p><b>If the frame is currently visible on the
      * screen</b> (the {@link #isShowing} method returns
      * {@code true}), the developer should examine the
      * return value of the {@link
-     * java.awt.event.WindowEvent#getNewState} method of
+     * j86.j86.java.awt.event.WindowEvent#getNewState} method of
      * the {@code WindowEvent} received through the
-     * {@link java.awt.event.WindowStateListener} to
+     * {@link j86.j86.java.awt.event.WindowStateListener} to
      * determine that the state has actually been
      * changed.
      * <p><b>If the frame is not visible on the
@@ -732,12 +732,12 @@ public class Frame extends Window implements MenuContainer {
      * setVisible(true)} method is invoked, the frame
      * will attempt to apply this state. Receiving any
      * {@link
-     * java.awt.event.WindowEvent#WINDOW_STATE_CHANGED}
+     * j86.j86.java.awt.event.WindowEvent#WINDOW_STATE_CHANGED}
      * events is not guaranteed in this case also.
      *
      * @param state a bitwise mask of frame state constants
      * @since   1.4
-     * @see java.awt.Window#addWindowStateListener
+     * @see j86.java.awt.Window#addWindowStateListener
      */
     public void setExtendedState(int state) {
         if ( !isFrameStateSupported( state ) ) {
@@ -912,7 +912,7 @@ public class Frame extends Window implements MenuContainer {
      * @see    Window#getShape
      * @see    Window#getOpacity
      * @see    Window#getBackground
-     * @see    javax.swing.JFrame#setDefaultLookAndFeelDecorated(boolean)
+     * @see    j86.javax.swing.JFrame#setDefaultLookAndFeelDecorated(boolean)
      *
      * @since 1.4
      */
@@ -943,7 +943,7 @@ public class Frame extends Window implements MenuContainer {
      * By default, all frames are initially decorated.
      * @return    <code>true</code> if frame is undecorated;
      *                        <code>false</code> otherwise.
-     * @see       java.awt.Frame#setUndecorated(boolean)
+     * @see       j86.java.awt.Frame#setUndecorated(boolean)
      * @since 1.4
      */
     public boolean isUndecorated() {
@@ -1169,7 +1169,7 @@ public class Frame extends Window implements MenuContainer {
      *
      * @param s the <code>ObjectOutputStream</code> to write
      * @serialData an optional icon <code>Image</code>
-     * @see java.awt.Image
+     * @see j86.java.awt.Image
      * @see #getIconImage
      * @see #setIconImage(Image)
      * @see #readObject(ObjectInputStream)
@@ -1198,14 +1198,14 @@ public class Frame extends Window implements MenuContainer {
      * Unrecognized keys or values will be ignored.
      *
      * @param s the <code>ObjectInputStream</code> to read
-     * @exception java.io.OptionalDataException if an icon <code>Image</code>
+     * @exception j86.java.io.OptionalDataException if an icon <code>Image</code>
      *   is not available, but anything other than an EOF
      *   is detected
      * @exception HeadlessException if
      *   <code>GraphicsEnvironment.isHeadless</code> returns
      *   <code>true</code>
-     * @see java.awt.GraphicsEnvironment#isHeadless()
-     * @see java.awt.Image
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless()
+     * @see j86.java.awt.Image
      * @see #getIconImage
      * @see #setIconImage(Image)
      * @see #writeObject(ObjectOutputStream)
@@ -1221,7 +1221,7 @@ public class Frame extends Window implements MenuContainer {
               icons = new ArrayList<Image>();
               icons.add(icon);
           }
-      } catch (java.io.OptionalDataException e) {
+      } catch (j86.java.io.OptionalDataException e) {
           // pre-1.4 instances will not have this optional data.
           // 1.6 and later instances serialize icons in the Window class
           // e.eof will be true to indicate that there is no more

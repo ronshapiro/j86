@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.io;
+package j86.java.io;
 
 
 /**
@@ -64,8 +64,8 @@ public class PipedWriter extends Writer {
      * piped reader. It must be connected to a piped reader,
      * either by the receiver or the sender, before being used.
      *
-     * @see     java.io.PipedReader#connect(java.io.PipedWriter)
-     * @see     java.io.PipedWriter#connect(java.io.PipedReader)
+     * @see     j86.java.io.PipedReader#connect(java.io.PipedWriter)
+     * @see     j86.java.io.PipedWriter#connect(java.io.PipedReader)
      */
     public PipedWriter() {
     }
@@ -114,7 +114,7 @@ public class PipedWriter extends Writer {
      * @param      c   the <code>char</code> to be written.
      * @exception  IOException  if the pipe is
      *          <a href=PipedOutputStream.html#BROKEN> <code>broken</code></a>,
-     *          {@link #connect(java.io.PipedReader) unconnected}, closed
+     *          {@link #connect(j86.java.io.PipedReader) unconnected}, closed
      *          or an I/O error occurs.
      */
     public void write(int c)  throws IOException {
@@ -138,7 +138,7 @@ public class PipedWriter extends Writer {
      * @param      len   the number of characters to write.
      * @exception  IOException  if the pipe is
      *          <a href=PipedOutputStream.html#BROKEN> <code>broken</code></a>,
-     *          {@link #connect(java.io.PipedReader) unconnected}, closed
+     *          {@link #connect(j86.java.io.PipedReader) unconnected}, closed
      *          or an I/O error occurs.
      */
     public void write(char cbuf[], int off, int len) throws IOException {

@@ -23,30 +23,30 @@
  * questions.
  */
 
-package javax.management;
+package j86.javax.management;
 
-import static com.sun.jmx.defaults.JmxProperties.MISC_LOGGER;
-import com.sun.jmx.mbeanserver.DescriptorCache;
-import com.sun.jmx.mbeanserver.Introspector;
-import com.sun.jmx.mbeanserver.MBeanSupport;
-import com.sun.jmx.mbeanserver.MXBeanSupport;
-import com.sun.jmx.mbeanserver.StandardMBeanSupport;
-import com.sun.jmx.mbeanserver.Util;
+import static j86.com.sun.jmx.defaults.JmxProperties.MISC_LOGGER;
+import j86.com.sun.jmx.mbeanserver.DescriptorCache;
+import j86.com.sun.jmx.mbeanserver.Introspector;
+import j86.com.sun.jmx.mbeanserver.MBeanSupport;
+import j86.com.sun.jmx.mbeanserver.MXBeanSupport;
+import j86.com.sun.jmx.mbeanserver.StandardMBeanSupport;
+import j86.com.sun.jmx.mbeanserver.Util;
 
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.WeakHashMap;
-import java.util.logging.Level;
-import javax.management.openmbean.OpenMBeanAttributeInfo;
-import javax.management.openmbean.OpenMBeanAttributeInfoSupport;
-import javax.management.openmbean.OpenMBeanConstructorInfo;
-import javax.management.openmbean.OpenMBeanConstructorInfoSupport;
-import javax.management.openmbean.OpenMBeanOperationInfo;
-import javax.management.openmbean.OpenMBeanOperationInfoSupport;
-import javax.management.openmbean.OpenMBeanParameterInfo;
-import javax.management.openmbean.OpenMBeanParameterInfoSupport;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.util.HashMap;
+import j86.java.util.Map;
+import j86.java.util.WeakHashMap;
+import j86.j86.java.util.logging.Level;
+import j86.j86.javax.management.openmbean.OpenMBeanAttributeInfo;
+import j86.j86.javax.management.openmbean.OpenMBeanAttributeInfoSupport;
+import j86.j86.javax.management.openmbean.OpenMBeanConstructorInfo;
+import j86.j86.javax.management.openmbean.OpenMBeanConstructorInfoSupport;
+import j86.j86.javax.management.openmbean.OpenMBeanOperationInfo;
+import j86.j86.javax.management.openmbean.OpenMBeanOperationInfoSupport;
+import j86.j86.javax.management.openmbean.OpenMBeanParameterInfo;
+import j86.j86.javax.management.openmbean.OpenMBeanParameterInfoSupport;
 
 /**
  * <p>An MBean whose management interface is determined by reflection
@@ -80,7 +80,7 @@ import javax.management.openmbean.OpenMBeanParameterInfoSupport;
  * <ul>
  *
  * <li>Using the public constructor
- *     {@link #StandardMBean(java.lang.Object, java.lang.Class, boolean)
+ *     {@link #StandardMBean(j86.java.lang.Object, java.lang.Class, boolean)
  *     StandardMBean(impl,interface)}:
  *     <pre>
  *     MBeanServer mbs;
@@ -216,7 +216,7 @@ public class StandardMBean implements DynamicMBean, MBeanRegistration {
      * <p>Make a DynamicMBean out of <var>this</var>, using the specified
      * <var>mbeanInterface</var> class.</p>
      *
-     * <p>Calls {@link #StandardMBean(java.lang.Object, java.lang.Class)
+     * <p>Calls {@link #StandardMBean(j86.java.lang.Object, java.lang.Class)
      *       this(this,mbeanInterface)}.
      * This constructor is reserved to subclasses.</p>
      *
@@ -280,7 +280,7 @@ public class StandardMBean implements DynamicMBean, MBeanRegistration {
      * constructor {@link #StandardMBean(Object, Class)}, it
      * does not throw NotCompliantMBeanException.</p>
      *
-     * <p>Calls {@link #StandardMBean(java.lang.Object, java.lang.Class, boolean)
+     * <p>Calls {@link #StandardMBean(j86.java.lang.Object, java.lang.Class, boolean)
      *       this(this, mbeanInterface, isMXBean)}.
      * This constructor is reserved to subclasses.</p>
      *
@@ -409,7 +409,7 @@ public class StandardMBean implements DynamicMBean, MBeanRegistration {
      * Get the {@link MBeanInfo} for this MBean.
      * <p>
      * This method implements
-     * {@link javax.management.DynamicMBean#getMBeanInfo()
+     * {@link j86.javax.management.DynamicMBean#getMBeanInfo()
      *   DynamicMBean.getMBeanInfo()}.
      * <p>
      * This method first calls {@link #getCachedMBeanInfo()} in order to
@@ -422,7 +422,7 @@ public class StandardMBean implements DynamicMBean, MBeanRegistration {
      * While building the MBeanInfo, this method calls the customization
      * hooks that make it possible for subclasses to supply their custom
      * descriptions, parameter names, etc...<br>
-     * Finally, it calls {@link #cacheMBeanInfo(javax.management.MBeanInfo)
+     * Finally, it calls {@link #cacheMBeanInfo(j86.javax.management.MBeanInfo)
      * cacheMBeanInfo()} in order to cache the new MBeanInfo.
      * @return The cached MBeanInfo for that MBean, if not null, or a
      *         newly built MBeanInfo if none was cached.

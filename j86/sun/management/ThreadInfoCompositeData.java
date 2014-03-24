@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.management;
+package j86.sun.management;
 
-import java.lang.management.ThreadInfo;
-import java.lang.management.MonitorInfo;
-import java.lang.management.LockInfo;
-import javax.management.openmbean.CompositeType;
-import javax.management.openmbean.CompositeData;
-import javax.management.openmbean.CompositeDataSupport;
-import javax.management.openmbean.OpenDataException;
-import javax.management.openmbean.OpenType;
+import j86.j86.java.lang.management.ThreadInfo;
+import j86.j86.java.lang.management.MonitorInfo;
+import j86.j86.java.lang.management.LockInfo;
+import j86.j86.javax.management.openmbean.CompositeType;
+import j86.j86.javax.management.openmbean.CompositeData;
+import j86.j86.javax.management.openmbean.CompositeDataSupport;
+import j86.j86.javax.management.openmbean.OpenDataException;
+import j86.j86.javax.management.openmbean.OpenType;
 
 /**
  * A CompositeData for ThreadInfo for the local management support.
@@ -208,8 +208,8 @@ public class ThreadInfoCompositeData extends LazyCompositeData {
             }
 
             threadInfoV5CompositeType =
-                new CompositeType("java.lang.management.ThreadInfo",
-                                  "J2SE 5.0 java.lang.management.ThreadInfo",
+                new CompositeType("j86.j86.java.lang.management.ThreadInfo",
+                                  "J2SE 5.0 j86.j86.java.lang.management.ThreadInfo",
                                   v5ItemNames,
                                   v5ItemDescs,
                                   v5ItemTypes);

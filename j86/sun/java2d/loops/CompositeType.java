@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.java2d.loops;
+package j86.j86.sun.java2d.loops;
 
-import java.awt.image.BufferedImage;
-import java.awt.AlphaComposite;
-import java.util.HashMap;
+import j86.j86.j86.java.awt.image.BufferedImage;
+import j86.java.awt.AlphaComposite;
+import j86.java.util.HashMap;
 
 /**
  * A CompositeType object provides a chained description of a type of

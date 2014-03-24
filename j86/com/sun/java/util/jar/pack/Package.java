@@ -23,38 +23,38 @@
  * questions.
  */
 
-package com.sun.java.util.jar.pack;
+package j86.com.sun.j86.j86.java.util.jar.pack;
 
-import java.util.jar.Pack200;
-import com.sun.java.util.jar.pack.Attribute.Layout;
-import com.sun.java.util.jar.pack.ConstantPool.ClassEntry;
-import com.sun.java.util.jar.pack.ConstantPool.DescriptorEntry;
-import com.sun.java.util.jar.pack.ConstantPool.BootstrapMethodEntry;
-import com.sun.java.util.jar.pack.ConstantPool.Index;
-import com.sun.java.util.jar.pack.ConstantPool.LiteralEntry;
-import com.sun.java.util.jar.pack.ConstantPool.Utf8Entry;
-import com.sun.java.util.jar.pack.ConstantPool.Entry;
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.SequenceInputStream;
-import java.lang.reflect.Modifier;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.List;
-import java.util.ListIterator;
-import java.util.Map;
-import java.util.Set;
-import java.util.jar.JarFile;
-import static com.sun.java.util.jar.pack.Constants.*;
+import j86.j86.java.util.jar.Pack200;
+import j86.com.sun.j86.j86.java.util.jar.pack.Attribute.Layout;
+import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.ClassEntry;
+import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.DescriptorEntry;
+import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.BootstrapMethodEntry;
+import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.Index;
+import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.LiteralEntry;
+import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.Utf8Entry;
+import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.Entry;
+import j86.java.io.ByteArrayInputStream;
+import j86.java.io.ByteArrayOutputStream;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.io.OutputStream;
+import j86.java.io.SequenceInputStream;
+import j86.j86.j86.java.lang.reflect.Modifier;
+import j86.java.util.ArrayList;
+import j86.java.util.Arrays;
+import j86.java.util.Collection;
+import j86.java.util.Collections;
+import j86.java.util.Comparator;
+import j86.java.util.HashMap;
+import j86.java.util.HashSet;
+import j86.java.util.Iterator;
+import j86.java.util.List;
+import j86.java.util.ListIterator;
+import j86.java.util.Map;
+import j86.java.util.Set;
+import j86.j86.java.util.jar.JarFile;
+import static j86.com.sun.j86.j86.java.util.jar.pack.Constants.*;
 
 /**
  * Define the main data structure transmitted by pack/unpack.
@@ -703,14 +703,14 @@ class Package {
             return thisClass.stringValue() + ".class";
         }
 
-        public java.io.File getFileName(java.io.File parent) {
+        public j86.java.io.File getFileName(java.io.File parent) {
             String name = file.name.stringValue();
             if (name.equals(""))
                 name = canonicalFileName();
-            String fname = name.replace('/', java.io.File.separatorChar);
-            return new java.io.File(parent, fname);
+            String fname = name.replace('/', j86.java.io.File.separatorChar);
+            return new j86.java.io.File(parent, fname);
         }
-        public java.io.File getFileName() {
+        public j86.java.io.File getFileName() {
             return getFileName(null);
         }
 
@@ -751,7 +751,7 @@ class Package {
         int options = 0;  // random flag bits, such as deflate_hint
         Class stubClass;  // if this is a stub, here's the class
         ArrayList<byte[]> prepend = new ArrayList<>();  // list of byte[]
-        java.io.ByteArrayOutputStream append = new ByteArrayOutputStream();
+        j86.java.io.ByteArrayOutputStream append = new ByteArrayOutputStream();
 
         File(Utf8Entry name) {
             this.name = name;
@@ -807,14 +807,14 @@ class Package {
                 +"}";
         }
 
-        public java.io.File getFileName() {
+        public j86.java.io.File getFileName() {
             return getFileName(null);
         }
-        public java.io.File getFileName(java.io.File parent) {
+        public j86.java.io.File getFileName(java.io.File parent) {
             String lname = this.nameString;
             //if (name.startsWith("./"))  name = name.substring(2);
-            String fname = lname.replace('/', java.io.File.separatorChar);
-            return new java.io.File(parent, fname);
+            String fname = lname.replace('/', j86.java.io.File.separatorChar);
+            return new j86.java.io.File(parent, fname);
         }
 
         public void addBytes(byte[] bytes) {
@@ -876,7 +876,7 @@ class Package {
     }
 
     private static String fixupFileName(String name) {
-        String fname = name.replace(java.io.File.separatorChar, '/');
+        String fname = name.replace(j86.java.io.File.separatorChar, '/');
         if (fname.startsWith("/")) {
             throw new IllegalArgumentException("absolute file name "+fname);
         }

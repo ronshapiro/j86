@@ -32,18 +32,18 @@
  */
 
 
-package com.sun.tools.example.debug.gui;
+package j86.com.sun.tools.example.debug.gui;
 
-import java.util.*;
+import j86.java.util.*;
 
-import javax.swing.*;
-import javax.swing.tree.*;
-import java.awt.*;
-import java.awt.event.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.tree.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
 
-import com.sun.jdi.*;
-import com.sun.tools.example.debug.event.*;
-import com.sun.tools.example.debug.bdi.*;
+import j86.com.sun.jdi.*;
+import j86.com.sun.tools.example.debug.event.*;
+import j86.com.sun.tools.example.debug.bdi.*;
 
 public class ClassTreeTool extends JPanel {
 

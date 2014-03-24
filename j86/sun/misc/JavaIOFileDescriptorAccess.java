@@ -22,9 +22,9 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.misc;
+package j86.sun.misc;
 
-import java.io.FileDescriptor;
+import j86.java.io.FileDescriptor;
 
 /*
  * @author Chris Hegarty

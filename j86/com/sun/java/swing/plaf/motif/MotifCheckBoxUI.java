@@ -23,15 +23,15 @@
  * questions.
  */
 
-package com.sun.java.swing.plaf.motif;
+package j86.j86.com.sun.java.swing.plaf.motif;
 
-import sun.awt.AppContext;
+import j86.sun.awt.AppContext;
 
-import javax.swing.*;
+import j86.javax.swing.*;
 
-import javax.swing.plaf.*;
+import j86.j86.javax.swing.plaf.*;
 
-import java.awt.*;
+import j86.java.awt.*;
 
 /**
  * MotifCheckBox implementation

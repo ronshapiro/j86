@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.awt;
+package j86.java.awt;
 
 /**
  * Thrown when a serious Abstract Window Toolkit error has occurred.

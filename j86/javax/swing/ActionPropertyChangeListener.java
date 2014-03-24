@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing;
+package j86.javax.swing;
 
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
-import java.io.*;
-import java.lang.ref.WeakReference;
-import java.lang.ref.ReferenceQueue;
+import j86.java.beans.PropertyChangeEvent;
+import j86.java.beans.PropertyChangeListener;
+import j86.java.io.*;
+import j86.j86.java.lang.ref.WeakReference;
+import j86.j86.java.lang.ref.ReferenceQueue;
 
 /**
  * A package-private PropertyChangeListener which listens for

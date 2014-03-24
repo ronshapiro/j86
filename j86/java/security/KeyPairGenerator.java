@@ -23,16 +23,16 @@
  * questions.
  */
 
-package java.security;
+package j86.java.security;
 
-import java.util.*;
+import j86.java.util.*;
 
-import java.security.spec.AlgorithmParameterSpec;
+import j86.j86.java.security.spec.AlgorithmParameterSpec;
 
-import java.security.Provider.Service;
+import j86.java.security.Provider.Service;
 
-import sun.security.jca.*;
-import sun.security.jca.GetInstance.Instance;
+import j86.sun.security.jca.*;
+import j86.sun.security.jca.GetInstance.Instance;
 
 /**
  * The KeyPairGenerator class is used to generate pairs of
@@ -55,7 +55,7 @@ import sun.security.jca.GetInstance.Instance;
  * algorithms (e.g., in the case of the <i>DSA</i> algorithm, the keysize
  * corresponds to the length of the modulus).
  * There is an
- * {@link #initialize(int, java.security.SecureRandom) initialize}
+ * {@link #initialize(int, j86.java.security.SecureRandom) initialize}
  * method in this KeyPairGenerator class that takes these two universally
  * shared types of arguments. There is also one that takes just a
  * {@code keysize} argument, and uses the {@code SecureRandom}
@@ -81,7 +81,7 @@ import sun.security.jca.GetInstance.Instance;
  * <li><b>Algorithm-Specific Initialization</b>
  * <p>For situations where a set of algorithm-specific parameters already
  * exists (e.g., so-called <i>community parameters</i> in DSA), there are two
- * {@link #initialize(java.security.spec.AlgorithmParameterSpec)
+ * {@link #initialize(j86.j86.java.security.spec.AlgorithmParameterSpec)
  * initialize} methods that have an {@code AlgorithmParameterSpec}
  * argument. One also has a {@code SecureRandom} argument, while the
  * the other uses the {@code SecureRandom}
@@ -121,7 +121,7 @@ import sun.security.jca.GetInstance.Instance;
  *
  * @author Benjamin Renaud
  *
- * @see java.security.spec.AlgorithmParameterSpec
+ * @see j86.j86.java.security.spec.AlgorithmParameterSpec
  */
 
 public abstract class KeyPairGenerator extends KeyPairGeneratorSpi {
@@ -379,8 +379,8 @@ public abstract class KeyPairGenerator extends KeyPairGeneratorSpi {
      * abstract class.
      * This method calls the KeyPairGeneratorSpi
      * {@link KeyPairGeneratorSpi#initialize(
-     * java.security.spec.AlgorithmParameterSpec,
-     * java.security.SecureRandom) initialize} method,
+     * j86.j86.java.security.spec.AlgorithmParameterSpec,
+     * j86.java.security.SecureRandom) initialize} method,
      * passing it {@code params} and a source of randomness (obtained
      * from the highest-priority installed provider or system-provided if none
      * of the installed providers supply one).
@@ -407,8 +407,8 @@ public abstract class KeyPairGenerator extends KeyPairGeneratorSpi {
      * abstract class.
      * This method calls the KeyPairGeneratorSpi {@link
      * KeyPairGeneratorSpi#initialize(
-     * java.security.spec.AlgorithmParameterSpec,
-     * java.security.SecureRandom) initialize} method,
+     * j86.j86.java.security.spec.AlgorithmParameterSpec,
+     * j86.java.security.SecureRandom) initialize} method,
      * passing it {@code params} and {@code random}.
      * That {@code initialize}
      * method always throws an

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.swing.plaf;
+package j86.j86.javax.swing.plaf;
 
 
 /**
@@ -32,5 +32,5 @@ package javax.swing.plaf;
  * @author Hans Muller
  * @since 1.4
  */
-public abstract class SpinnerUI extends javax.swing.plaf.ComponentUI {
+public abstract class SpinnerUI extends j86.j86.javax.swing.plaf.ComponentUI {
 }

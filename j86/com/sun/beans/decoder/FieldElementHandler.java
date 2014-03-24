@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.beans.decoder;
+package j86.j86.com.sun.beans.decoder;
 
-import com.sun.beans.finder.FieldFinder;
+import j86.j86.com.sun.beans.finder.FieldFinder;
 
-import java.lang.reflect.Field;
+import j86.j86.j86.java.lang.reflect.Field;
 
 /**
  * This class is intended to handle &lt;field&gt; element.
@@ -36,7 +36,7 @@ import java.lang.reflect.Field;
  * This element defines getter if it contains no argument.
  * It returns the value of the field in this case.
  * For example:<pre>
- * &lt;field name="TYPE" class="java.lang.Long"/&gt;</pre>
+ * &lt;field name="TYPE" class="j86.java.lang.Long"/&gt;</pre>
  * is equivalent to {@code Long.TYPE} in Java code.
  * This element defines setter if it contains one argument.
  * It does not return the value of the field in this case.

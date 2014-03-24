@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.util.locale.provider;
+package j86.j86.j86.sun.util.locale.provider;
 
-import java.util.Set;
+import j86.java.util.Set;
 
 /**
  * An interface to return a set of available language tags supported by a

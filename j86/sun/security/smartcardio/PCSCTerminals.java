@@ -23,15 +23,15 @@
  * questions.
  */
 
-package sun.security.smartcardio;
+package j86.sun.security.smartcardio;
 
-import java.util.*;
-import java.lang.ref.*;
+import j86.java.util.*;
+import j86.j86.java.lang.ref.*;
 
-import javax.smartcardio.*;
-import static javax.smartcardio.CardTerminals.State.*;
+import j86.javax.smartcardio.*;
+import static j86.javax.smartcardio.CardTerminals.State.*;
 
-import static sun.security.smartcardio.PCSC.*;
+import static j86.sun.security.smartcardio.PCSC.*;
 
 /**
  * TerminalFactorySpi implementation class.
@@ -204,7 +204,7 @@ final class PCSCTerminals extends CardTerminals {
     static List<CardTerminal> waitForCards(List<? extends CardTerminal> terminals,
             long timeout, boolean wantPresent) throws CardException {
         // the argument sanity checks are performed in
-        // javax.smartcardio.TerminalFactory or TerminalImpl
+        // j86.javax.smartcardio.TerminalFactory or TerminalImpl
 
         long thisTimeout;
         if (timeout == 0) {

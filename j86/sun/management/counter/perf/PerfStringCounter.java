@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.management.counter.perf;
+package j86.j86.j86.sun.management.counter.perf;
 
-import sun.management.counter.*;
-import java.nio.ByteBuffer;
-import java.nio.ReadOnlyBufferException;
-import java.nio.charset.Charset;
+import j86.j86.sun.management.counter.*;
+import j86.java.nio.ByteBuffer;
+import j86.java.nio.ReadOnlyBufferException;
+import j86.j86.java.nio.charset.Charset;
 
 public class PerfStringCounter extends PerfByteArrayCounter
     implements StringCounter {
@@ -78,7 +78,7 @@ public class PerfStringCounter extends PerfByteArrayCounter
     /**
      * Serialize as a snapshot object.
      */
-    protected Object writeReplace() throws java.io.ObjectStreamException {
+    protected Object writeReplace() throws j86.java.io.ObjectStreamException {
         return new StringCounterSnapshot(getName(),
                                          getUnits(),
                                          getVariability(),

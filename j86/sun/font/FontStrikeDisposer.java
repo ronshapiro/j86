@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.font;
+package j86.sun.font;
 
-import sun.java2d.Disposer;
-import sun.java2d.DisposerRecord;
+import j86.sun.java2d.Disposer;
+import j86.sun.java2d.DisposerRecord;
 
 /*
  * This keeps track of data that needs to be cleaned up once a

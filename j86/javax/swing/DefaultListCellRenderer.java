@@ -23,18 +23,18 @@
  * questions.
  */
 
-package javax.swing;
+package j86.javax.swing;
 
-import javax.swing.*;
-import javax.swing.event.*;
-import javax.swing.border.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.event.*;
+import j86.j86.javax.swing.border.*;
 
-import java.awt.Component;
-import java.awt.Color;
-import java.awt.Rectangle;
+import j86.java.awt.Component;
+import j86.java.awt.Color;
+import j86.java.awt.Rectangle;
 
-import java.io.Serializable;
-import sun.swing.DefaultLookup;
+import j86.java.io.Serializable;
+import j86.sun.swing.DefaultLookup;
 
 
 /**
@@ -64,8 +64,8 @@ import sun.swing.DefaultLookup;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @author Philip Milne
  * @author Hans Muller
@@ -256,7 +256,7 @@ public class DefaultListCellRenderer extends JLabel
         if (propertyName == "text"
                 || ((propertyName == "font" || propertyName == "foreground")
                     && oldValue != newValue
-                    && getClientProperty(javax.swing.plaf.basic.BasicHTML.propertyKey) != null)) {
+                    && getClientProperty(j86.j86.j86.javax.swing.plaf.basic.BasicHTML.propertyKey) != null)) {
 
             super.firePropertyChange(propertyName, oldValue, newValue);
         }
@@ -338,11 +338,11 @@ public class DefaultListCellRenderer extends JLabel
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     public static class UIResource extends DefaultListCellRenderer
-        implements javax.swing.plaf.UIResource
+        implements j86.j86.javax.swing.plaf.UIResource
     {
     }
 }

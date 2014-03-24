@@ -23,17 +23,17 @@
  * questions.
  */
 
-package sun.print;
+package j86.sun.print;
 
-import java.awt.GraphicsConfiguration;
-import java.awt.GraphicsDevice;
+import j86.java.awt.GraphicsConfiguration;
+import j86.java.awt.GraphicsDevice;
 
-import java.awt.Rectangle;
-import java.awt.Transparency;
-import java.awt.geom.AffineTransform;
-import java.awt.image.BufferedImage;
-import java.awt.image.ColorModel;
-import java.awt.image.DirectColorModel;
+import j86.java.awt.Rectangle;
+import j86.java.awt.Transparency;
+import j86.j86.java.awt.geom.AffineTransform;
+import j86.j86.j86.java.awt.image.BufferedImage;
+import j86.j86.j86.java.awt.image.ColorModel;
+import j86.j86.j86.java.awt.image.DirectColorModel;
 
 public class PrinterGraphicsConfig extends GraphicsConfiguration {
 

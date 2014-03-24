@@ -23,13 +23,13 @@
  * questions.
  */
 
-package java.text;
+package j86.java.text;
 
-import java.io.InvalidObjectException;
-import java.io.Serializable;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
+import j86.java.io.InvalidObjectException;
+import j86.java.io.Serializable;
+import j86.java.util.HashMap;
+import j86.java.util.Map;
+import j86.java.util.Set;
 
 /**
  * An {@code AttributedCharacterIterator} allows iteration through both text and
@@ -67,10 +67,10 @@ import java.util.Set;
  *
  * <p>
  * Attribute keys are instances of {@link AttributedCharacterIterator.Attribute} and its
- * subclasses, such as {@link java.awt.font.TextAttribute}.
+ * subclasses, such as {@link j86.j86.java.awt.font.TextAttribute}.
  *
  * @see AttributedCharacterIterator.Attribute
- * @see java.awt.font.TextAttribute
+ * @see j86.j86.java.awt.font.TextAttribute
  * @see AttributedString
  * @see Annotation
  * @since 1.2
@@ -168,8 +168,8 @@ public interface AttributedCharacterIterator extends CharacterIterator {
 
         /**
          * Attribute key for the language of some text.
-         * <p> Values are instances of {@link java.util.Locale Locale}.
-         * @see java.util.Locale
+         * <p> Values are instances of {@link j86.java.util.Locale Locale}.
+         * @see j86.java.util.Locale
          */
         public static final Attribute LANGUAGE = new Attribute("language");
 
@@ -181,7 +181,7 @@ public interface AttributedCharacterIterator extends CharacterIterator {
          * <p>Values are instances of {@link Annotation} holding instances of {@link String}.
          *
          * @see Annotation
-         * @see java.lang.String
+         * @see j86.java.lang.String
          */
         public static final Attribute READING = new Attribute("reading");
 

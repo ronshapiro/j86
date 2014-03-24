@@ -22,40 +22,40 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.util.stream;
+package j86.j86.java.util.stream;
 
-import java.util.AbstractMap;
-import java.util.AbstractSet;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.DoubleSummaryStatistics;
-import java.util.EnumSet;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.IntSummaryStatistics;
-import java.util.Iterator;
-import java.util.List;
-import java.util.LongSummaryStatistics;
-import java.util.Map;
-import java.util.Objects;
-import java.util.Optional;
-import java.util.Set;
-import java.util.StringJoiner;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentMap;
-import java.util.function.BiConsumer;
-import java.util.function.BiFunction;
-import java.util.function.BinaryOperator;
-import java.util.function.Consumer;
-import java.util.function.Function;
-import java.util.function.Predicate;
-import java.util.function.Supplier;
-import java.util.function.ToDoubleFunction;
-import java.util.function.ToIntFunction;
-import java.util.function.ToLongFunction;
+import j86.java.util.AbstractMap;
+import j86.java.util.AbstractSet;
+import j86.java.util.ArrayList;
+import j86.java.util.Arrays;
+import j86.java.util.Collection;
+import j86.java.util.Collections;
+import j86.java.util.Comparator;
+import j86.java.util.DoubleSummaryStatistics;
+import j86.java.util.EnumSet;
+import j86.java.util.HashMap;
+import j86.java.util.HashSet;
+import j86.java.util.IntSummaryStatistics;
+import j86.java.util.Iterator;
+import j86.java.util.List;
+import j86.java.util.LongSummaryStatistics;
+import j86.java.util.Map;
+import j86.java.util.Objects;
+import j86.java.util.Optional;
+import j86.java.util.Set;
+import j86.java.util.StringJoiner;
+import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.j86.java.util.concurrent.ConcurrentMap;
+import j86.j86.java.util.function.BiConsumer;
+import j86.j86.java.util.function.BiFunction;
+import j86.j86.java.util.function.BinaryOperator;
+import j86.j86.java.util.function.Consumer;
+import j86.j86.java.util.function.Function;
+import j86.j86.java.util.function.Predicate;
+import j86.j86.java.util.function.Supplier;
+import j86.j86.java.util.function.ToDoubleFunction;
+import j86.j86.java.util.function.ToIntFunction;
+import j86.j86.java.util.function.ToLongFunction;
 
 /**
  * Implementations of {@link Collector} that implement various useful reduction
@@ -1169,7 +1169,7 @@ public final class Collectors {
      * @apiNote
      * It is common for either the key or the value to be the input elements.
      * In this case, the utility method
-     * {@link java.util.function.Function#identity()} may be helpful.
+     * {@link j86.j86.java.util.function.Function#identity()} may be helpful.
      * For example, the following produces a {@code Map} mapping
      * students to their grade point average:
      * <pre>{@code
@@ -1336,7 +1336,7 @@ public final class Collectors {
      * @apiNote
      * It is common for either the key or the value to be the input elements.
      * In this case, the utility method
-     * {@link java.util.function.Function#identity()} may be helpful.
+     * {@link j86.j86.java.util.function.Function#identity()} may be helpful.
      * For example, the following produces a {@code Map} mapping
      * students to their grade point average:
      * <pre>{@code

@@ -23,11 +23,11 @@
  * questions.
  */
 
-package com.sun.jndi.toolkit.url;
+package j86.com.sun.jndi.toolkit.url;
 
-import java.net.MalformedURLException;
-import java.io.UnsupportedEncodingException;
-import java.net.URLDecoder;
+import j86.java.net.MalformedURLException;
+import j86.java.io.UnsupportedEncodingException;
+import j86.java.net.URLDecoder;
 
 /**
  * Utilities for dealing with URLs.

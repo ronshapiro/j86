@@ -57,10 +57,10 @@
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package jdk.internal.org.objectweb.asm.commons;
+package j86.j86.jdk.internal.org.objectweb.asm.commons;
 
-import java.util.Collections;
-import java.util.Map;
+import j86.java.util.Collections;
+import j86.java.util.Map;
 
 /**
  * A {@link Remapper} using a {@link Map} to define its mapping.

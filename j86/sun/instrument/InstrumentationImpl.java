@@ -24,20 +24,20 @@
  */
 
 
-package sun.instrument;
+package j86.sun.instrument;
 
-import java.lang.reflect.Method;
-import java.lang.reflect.AccessibleObject;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.j86.j86.java.lang.reflect.AccessibleObject;
 
-import java.lang.instrument.ClassFileTransformer;
-import java.lang.instrument.ClassDefinition;
-import java.lang.instrument.Instrumentation;
+import j86.j86.java.lang.instrument.ClassFileTransformer;
+import j86.j86.java.lang.instrument.ClassDefinition;
+import j86.j86.java.lang.instrument.Instrumentation;
 
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.security.ProtectionDomain;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.security.ProtectionDomain;
 
-import java.util.jar.JarFile;
+import j86.j86.java.util.jar.JarFile;
 
 /*
  * Copyright 2003 Wily Technology, Inc.
@@ -327,7 +327,7 @@ public class InstrumentationImpl implements Instrumentation {
             m = javaAgentClass.getDeclaredMethod( methodname,
                                  new Class<?>[] {
                                      String.class,
-                                     java.lang.instrument.Instrumentation.class
+                                     j86.j86.java.lang.instrument.Instrumentation.class
                                  }
                                );
             twoArgAgent = true;
@@ -353,7 +353,7 @@ public class InstrumentationImpl implements Instrumentation {
                 m = javaAgentClass.getMethod( methodname,
                                  new Class<?>[] {
                                      String.class,
-                                     java.lang.instrument.Instrumentation.class
+                                     j86.j86.java.lang.instrument.Instrumentation.class
                                  }
                                );
                 twoArgAgent = true;

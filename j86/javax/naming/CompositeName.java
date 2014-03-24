@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.naming;
+package j86.javax.naming;
 
-import java.util.Enumeration;
-import java.util.Properties;
+import j86.java.util.Enumeration;
+import j86.java.util.Properties;
 
 /**
  * This class represents a composite name -- a sequence of
@@ -560,8 +560,8 @@ public class CompositeName implements Name {
      * @serialData The number of components (an <tt>int</tt>) followed by
      * the individual components (each a <tt>String</tt>).
      */
-    private void writeObject(java.io.ObjectOutputStream s)
-            throws java.io.IOException {
+    private void writeObject(j86.java.io.ObjectOutputStream s)
+            throws j86.java.io.IOException {
         s.writeInt(size());
         Enumeration<String> comps = getAll();
         while (comps.hasMoreElements()) {
@@ -572,8 +572,8 @@ public class CompositeName implements Name {
     /**
      * Overridden to avoid implementation dependency.
      */
-    private void readObject(java.io.ObjectInputStream s)
-            throws java.io.IOException, ClassNotFoundException {
+    private void readObject(j86.java.io.ObjectInputStream s)
+            throws j86.java.io.IOException, ClassNotFoundException {
         impl = new NameImpl(null);  // null means use default syntax
         int n = s.readInt();    // number of components
         try {
@@ -581,7 +581,7 @@ public class CompositeName implements Name {
                 add((String)s.readObject());
             }
         } catch (InvalidNameException e) {
-            throw (new java.io.StreamCorruptedException("Invalid name"));
+            throw (new j86.java.io.StreamCorruptedException("Invalid name"));
         }
     }
 
@@ -594,12 +594,12 @@ public class CompositeName implements Name {
     // %%% Test code for serialization.
     public static void main(String[] args) throws Exception {
         CompositeName c = new CompositeName("aaa/bbb");
-        java.io.FileOutputStream f1 = new java.io.FileOutputStream("/tmp/ser");
-        java.io.ObjectOutputStream s1 = new java.io.ObjectOutputStream(f1);
+        j86.java.io.FileOutputStream f1 = new java.io.FileOutputStream("/tmp/ser");
+        j86.java.io.ObjectOutputStream s1 = new java.io.ObjectOutputStream(f1);
         s1.writeObject(c);
         s1.close();
-        java.io.FileInputStream f2 = new java.io.FileInputStream("/tmp/ser");
-        java.io.ObjectInputStream s2 = new java.io.ObjectInputStream(f2);
+        j86.java.io.FileInputStream f2 = new java.io.FileInputStream("/tmp/ser");
+        j86.java.io.ObjectInputStream s2 = new java.io.ObjectInputStream(f2);
         c = (CompositeName)s2.readObject();
 
         System.out.println("Size: " + c.size());

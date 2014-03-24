@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.imageio.event;
+package j86.j86.javax.imageio.event;
 
-import java.util.EventListener;
-import javax.imageio.ImageReader;
+import j86.java.util.EventListener;
+import j86.javax.imageio.ImageReader;
 
 /**
  * An interface used by <code>ImageReader</code> implementations to
@@ -44,8 +44,8 @@ import javax.imageio.ImageReader;
  * provide an <code>IIOReadUpdateListener</code>.
  *
  * @see IIOReadUpdateListener
- * @see javax.imageio.ImageReader#addIIOReadProgressListener
- * @see javax.imageio.ImageReader#removeIIOReadProgressListener
+ * @see j86.javax.imageio.ImageReader#addIIOReadProgressListener
+ * @see j86.javax.imageio.ImageReader#removeIIOReadProgressListener
  *
  */
 public interface IIOReadProgressListener extends EventListener {

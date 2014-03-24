@@ -24,49 +24,49 @@
  */
 
 
-package com.sun.jmx.snmp.daemon;
+package j86.j86.j86.com.sun.jmx.snmp.daemon;
 
 
 
 // java import
 //
-import java.util.Vector;
-import java.util.Enumeration;
-import java.util.Hashtable;
-import java.util.logging.Level;
-import java.io.InterruptedIOException;
-import java.net.DatagramSocket;
-import java.net.DatagramPacket;
-import java.net.SocketException;
+import j86.java.util.Vector;
+import j86.java.util.Enumeration;
+import j86.java.util.Hashtable;
+import j86.j86.java.util.logging.Level;
+import j86.java.io.InterruptedIOException;
+import j86.java.net.DatagramSocket;
+import j86.java.net.DatagramPacket;
+import j86.java.net.SocketException;
 
 // jmx imports
 //
-import javax.management.MBeanServer;
-import javax.management.ObjectName;
-import com.sun.jmx.snmp.SnmpMessage;
-import com.sun.jmx.snmp.SnmpPduFactory;
-import com.sun.jmx.snmp.SnmpPduBulk;
-import com.sun.jmx.snmp.SnmpPduPacket;
-import com.sun.jmx.snmp.SnmpPduRequest;
-import com.sun.jmx.snmp.SnmpPduTrap;
-import com.sun.jmx.snmp.SnmpValue;
-import com.sun.jmx.snmp.SnmpVarBind;
-import com.sun.jmx.snmp.SnmpVarBindList;
-import com.sun.jmx.snmp.SnmpDefinitions;
-import com.sun.jmx.snmp.SnmpStatusException;
-import com.sun.jmx.snmp.SnmpTooBigException;
-import com.sun.jmx.snmp.SnmpDataTypeEnums;
+import j86.javax.management.MBeanServer;
+import j86.javax.management.ObjectName;
+import j86.com.sun.jmx.snmp.SnmpMessage;
+import j86.com.sun.jmx.snmp.SnmpPduFactory;
+import j86.com.sun.jmx.snmp.SnmpPduBulk;
+import j86.com.sun.jmx.snmp.SnmpPduPacket;
+import j86.com.sun.jmx.snmp.SnmpPduRequest;
+import j86.com.sun.jmx.snmp.SnmpPduTrap;
+import j86.com.sun.jmx.snmp.SnmpValue;
+import j86.com.sun.jmx.snmp.SnmpVarBind;
+import j86.com.sun.jmx.snmp.SnmpVarBindList;
+import j86.com.sun.jmx.snmp.SnmpDefinitions;
+import j86.com.sun.jmx.snmp.SnmpStatusException;
+import j86.com.sun.jmx.snmp.SnmpTooBigException;
+import j86.com.sun.jmx.snmp.SnmpDataTypeEnums;
 
 // RI imports
 //
-import static com.sun.jmx.defaults.JmxProperties.SNMP_ADAPTOR_LOGGER;
+import static j86.com.sun.jmx.defaults.JmxProperties.SNMP_ADAPTOR_LOGGER;
 
 // SNMP runtime import
 //
-import com.sun.jmx.snmp.agent.SnmpMibAgent;
-import com.sun.jmx.snmp.agent.SnmpUserDataFactory;
-//import com.sun.jmx.snmp.IPAcl.IPAcl;
-import com.sun.jmx.snmp.InetAddressAcl;
+import j86.j86.com.sun.jmx.snmp.agent.SnmpMibAgent;
+import j86.j86.com.sun.jmx.snmp.agent.SnmpUserDataFactory;
+//import j86.j86.com.sun.jmx.snmp.IPAcl.IPAcl;
+import j86.com.sun.jmx.snmp.InetAddressAcl;
 
 
 class SnmpRequestHandler extends ClientHandler implements SnmpDefinitions {

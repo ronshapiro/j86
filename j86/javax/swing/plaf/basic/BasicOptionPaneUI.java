@@ -23,25 +23,25 @@
  * questions.
  */
 
-package javax.swing.plaf.basic;
+package j86.j86.j86.javax.swing.plaf.basic;
 
-import sun.swing.DefaultLookup;
-import sun.swing.UIAction;
-import javax.swing.border.Border;
-import javax.swing.border.EmptyBorder;
-import javax.swing.*;
-import javax.swing.event.*;
-import javax.swing.plaf.ActionMapUIResource;
-import javax.swing.plaf.ComponentUI;
-import javax.swing.plaf.OptionPaneUI;
-import java.awt.*;
-import java.awt.event.*;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
-import java.util.Locale;
-import java.security.AccessController;
+import j86.sun.swing.DefaultLookup;
+import j86.sun.swing.UIAction;
+import j86.j86.javax.swing.border.Border;
+import j86.j86.javax.swing.border.EmptyBorder;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.event.*;
+import j86.j86.javax.swing.plaf.ActionMapUIResource;
+import j86.j86.javax.swing.plaf.ComponentUI;
+import j86.j86.javax.swing.plaf.OptionPaneUI;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.java.beans.PropertyChangeEvent;
+import j86.java.beans.PropertyChangeListener;
+import j86.java.util.Locale;
+import j86.java.security.AccessController;
 
-import sun.security.action.GetPropertyAction;
+import j86.sun.security.action.GetPropertyAction;
 
 
 /**
@@ -109,7 +109,7 @@ public class BasicOptionPaneUI extends OptionPaneUI {
 
 
     static {
-        newline = java.security.AccessController.doPrivileged(
+        newline = j86.java.security.AccessController.doPrivileged(
                                 new GetPropertyAction("line.separator"));
         if (newline == null) {
             newline = "\n";

@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.tools.java;
+package j86.sun.tools.java;
 
-import java.util.Hashtable;
+import j86.java.util.Hashtable;
 
 /**
  * This class represents an Java Type.<p>

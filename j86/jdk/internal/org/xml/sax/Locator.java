@@ -28,7 +28,7 @@
 // No warranty; no copyright -- use this as you will.
 // $Id: Locator.java,v 1.2 2004/11/03 22:55:32 jsuttor Exp $
 
-package jdk.internal.org.xml.sax;
+package j86.jdk.internal.org.xml.sax;
 
 
 /**

@@ -28,10 +28,10 @@
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
 
-package sun.security.krb5.internal;
+package j86.j86.sun.security.krb5.internal;
 
-import sun.security.krb5.EncryptionKey;
-import java.util.BitSet;
+import j86.sun.security.krb5.EncryptionKey;
+import j86.java.util.BitSet;
 
 public class AuthContext {
     public HostAddress remoteAddress;

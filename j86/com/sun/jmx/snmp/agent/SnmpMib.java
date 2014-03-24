@@ -23,25 +23,25 @@
  * questions.
  */
 
-package com.sun.jmx.snmp.agent;
+package j86.j86.com.sun.jmx.snmp.agent;
 
-import java.io.Serializable;
-import java.util.Enumeration;
-import java.util.logging.Level;
-import java.util.Vector;
+import j86.java.io.Serializable;
+import j86.java.util.Enumeration;
+import j86.j86.java.util.logging.Level;
+import j86.java.util.Vector;
 
-import javax.management.ObjectName;
-import javax.management.MBeanServer;
-import javax.management.MalformedObjectNameException;
-import javax.management.InstanceAlreadyExistsException;
-import javax.management.MBeanRegistrationException;
-import javax.management.NotCompliantMBeanException;
+import j86.javax.management.ObjectName;
+import j86.javax.management.MBeanServer;
+import j86.javax.management.MalformedObjectNameException;
+import j86.javax.management.InstanceAlreadyExistsException;
+import j86.javax.management.MBeanRegistrationException;
+import j86.javax.management.NotCompliantMBeanException;
 
-import static com.sun.jmx.defaults.JmxProperties.SNMP_ADAPTOR_LOGGER;
-import com.sun.jmx.snmp.SnmpOid;
-import com.sun.jmx.snmp.SnmpVarBind;
-import com.sun.jmx.snmp.SnmpDefinitions;
-import com.sun.jmx.snmp.SnmpStatusException;
+import static j86.com.sun.jmx.defaults.JmxProperties.SNMP_ADAPTOR_LOGGER;
+import j86.com.sun.jmx.snmp.SnmpOid;
+import j86.com.sun.jmx.snmp.SnmpVarBind;
+import j86.com.sun.jmx.snmp.SnmpDefinitions;
+import j86.com.sun.jmx.snmp.SnmpStatusException;
 
 /**
  * Abstract class for representing an SNMP MIB.

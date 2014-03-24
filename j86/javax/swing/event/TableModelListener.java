@@ -23,19 +23,19 @@
  * questions.
  */
 
-package javax.swing.event;
+package j86.j86.javax.swing.event;
 
-import java.util.EventListener;
+import j86.java.util.EventListener;
 
 /**
  * TableModelListener defines the interface for an object that listens
  * to changes in a TableModel.
  *
  * @author Alan Chung
- * @see javax.swing.table.TableModel
+ * @see j86.j86.javax.swing.table.TableModel
  */
 
-public interface TableModelListener extends java.util.EventListener
+public interface TableModelListener extends j86.java.util.EventListener
 {
     /**
      * This fine grain notification tells listeners the exact range

@@ -23,26 +23,26 @@
  * questions.
  */
 
-package javax.swing.plaf.basic;
+package j86.j86.j86.javax.swing.plaf.basic;
 
-import sun.swing.DefaultLookup;
-import sun.swing.UIAction;
+import j86.sun.swing.DefaultLookup;
+import j86.sun.swing.UIAction;
 
-import javax.swing.*;
-import javax.swing.event.*;
-import javax.swing.plaf.*;
-import javax.swing.text.Position;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.event.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.javax.swing.text.Position;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.awt.datatransfer.Transferable;
-import java.awt.geom.Point2D;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.j86.java.awt.datatransfer.Transferable;
+import j86.j86.java.awt.geom.Point2D;
 
-import java.beans.PropertyChangeListener;
-import java.beans.PropertyChangeEvent;
+import j86.java.beans.PropertyChangeListener;
+import j86.java.beans.PropertyChangeEvent;
 
-import sun.swing.SwingUtilities2;
-import javax.swing.plaf.basic.DragRecognitionSupport.BeforeDrag;
+import j86.sun.swing.SwingUtilities2;
+import j86.j86.j86.javax.swing.plaf.basic.DragRecognitionSupport.BeforeDrag;
 
 /**
  * An extensible implementation of {@code ListUI}.
@@ -468,7 +468,7 @@ public class BasicListUI extends ListUI
      *
      * @throws NullPointerException {@inheritDoc}
      * @throws IllegalArgumentException {@inheritDoc}
-     * @see javax.swing.JComponent#getBaseline(int, int)
+     * @see j86.javax.swing.JComponent#getBaseline(int, int)
      * @since 1.6
      */
     public int getBaseline(JComponent c, int width, int height) {
@@ -510,7 +510,7 @@ public class BasicListUI extends ListUI
      * changes as the size changes.
      *
      * @throws NullPointerException {@inheritDoc}
-     * @see javax.swing.JComponent#getBaseline(int, int)
+     * @see j86.javax.swing.JComponent#getBaseline(int, int)
      * @since 1.6
      */
     public Component.BaselineResizeBehavior getBaselineResizeBehavior(
@@ -1479,7 +1479,7 @@ public class BasicListUI extends ListUI
 
     /**
      * Mouse input, and focus handling for JList.  An instance of this
-     * class is added to the appropriate java.awt.Component lists
+     * class is added to the appropriate j86.java.awt.Component lists
      * at installUI() time.  Note keyboard input is handled with JComponent
      * KeyboardActions, see installKeyboardActions().
      * <p>
@@ -1489,8 +1489,8 @@ public class BasicListUI extends ListUI
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      *
      * @see #createMouseInputListener
      * @see #installKeyboardActions
@@ -1530,7 +1530,7 @@ public class BasicListUI extends ListUI
 
     /**
      * Creates a delegate that implements MouseInputListener.
-     * The delegate is added to the corresponding java.awt.Component listener
+     * The delegate is added to the corresponding j86.java.awt.Component listener
      * lists at installUI() time. Subclasses can override this method to return
      * a custom MouseInputListener, e.g.
      * <pre>
@@ -1593,8 +1593,8 @@ public class BasicListUI extends ListUI
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      *
      * @see #createListSelectionListener
      * @see #getCellBounds
@@ -1651,8 +1651,8 @@ public class BasicListUI extends ListUI
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      *
      * @see JList#getModel
      * @see #maybeUpdateLayoutState
@@ -1718,8 +1718,8 @@ public class BasicListUI extends ListUI
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      *
      * @see #maybeUpdateLayoutState
      * @see #createPropertyChangeListener

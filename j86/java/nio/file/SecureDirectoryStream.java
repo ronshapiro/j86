@@ -22,12 +22,12 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.nio.file;
+package j86.j86.java.nio.file;
 
-import java.nio.file.attribute.*;
-import java.nio.channels.SeekableByteChannel;
-import java.util.Set;
-import java.io.IOException;
+import j86.j86.j86.java.nio.file.attribute.*;
+import j86.j86.java.nio.channels.SeekableByteChannel;
+import j86.java.util.Set;
+import j86.java.io.IOException;
 
 /**
  * A {@code DirectoryStream} that defines operations on files that are located
@@ -47,7 +47,7 @@ import java.io.IOException;
  * newDirectoryStream} method will be a {@code SecureDirectoryStream} and must
  * be cast to that type in order to invoke the methods defined by this interface.
  *
- * <p> In the case of the default {@link java.nio.file.spi.FileSystemProvider
+ * <p> In the case of the default {@link j86.j86.j86.java.nio.file.spi.FileSystemProvider
  * provider}, and a security manager is set, then the permission checks are
  * performed using the path obtained by resolving the given relative path
  * against the <i>original path</i> of the directory (irrespective of if the

@@ -38,9 +38,9 @@
  *
  */
 
-package sun.text.resources.uk;
+package j86.j86.j86.sun.text.resources.uk;
 
-import sun.util.resources.ParallelListResourceBundle;
+import j86.j86.sun.util.resources.ParallelListResourceBundle;
 
 public class FormatData_uk_UA extends ParallelListResourceBundle {
     /**

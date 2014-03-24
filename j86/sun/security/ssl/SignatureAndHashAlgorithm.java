@@ -23,22 +23,22 @@
  * questions.
  */
 
-package sun.security.ssl;
+package j86.sun.security.ssl;
 
-import java.security.AlgorithmConstraints;
-import java.security.CryptoPrimitive;
-import java.security.PrivateKey;
+import j86.java.security.AlgorithmConstraints;
+import j86.java.security.CryptoPrimitive;
+import j86.java.security.PrivateKey;
 
-import java.util.Set;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.EnumSet;
-import java.util.TreeMap;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.ArrayList;
+import j86.java.util.Set;
+import j86.java.util.HashSet;
+import j86.java.util.Map;
+import j86.java.util.EnumSet;
+import j86.java.util.TreeMap;
+import j86.java.util.Collection;
+import j86.java.util.Collections;
+import j86.java.util.ArrayList;
 
-import sun.security.util.KeyUtil;
+import j86.sun.security.util.KeyUtil;
 
 /**
  * Signature and hash algorithm.

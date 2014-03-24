@@ -23,22 +23,22 @@
  * questions.
  */
 
-package com.sun.java.swing.plaf.gtk;
+package j86.j86.com.sun.java.swing.plaf.gtk;
 
-import java.awt.*;
-import java.lang.reflect.*;
-import java.security.*;
-import java.util.*;
-import javax.swing.*;
-import javax.swing.plaf.*;
-import javax.swing.plaf.synth.*;
+import j86.java.awt.*;
+import j86.j86.j86.java.lang.reflect.*;
+import j86.java.security.*;
+import j86.java.util.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.j86.javax.swing.plaf.synth.*;
 
-import sun.awt.AppContext;
-import sun.awt.UNIXToolkit;
-import sun.swing.SwingUtilities2;
-import sun.swing.plaf.synth.SynthIcon;
+import j86.sun.awt.AppContext;
+import j86.sun.awt.UNIXToolkit;
+import j86.sun.swing.SwingUtilities2;
+import j86.j86.j86.sun.swing.plaf.synth.SynthIcon;
 
-import com.sun.java.swing.plaf.gtk.GTKEngine.WidgetType;
+import j86.j86.com.sun.java.swing.plaf.gtk.GTKEngine.WidgetType;
 
 /**
  *
@@ -93,7 +93,7 @@ class GTKStyle extends SynthStyle implements GTKConstants {
         this.widgetType = widgetType.ordinal();
 
         String pangoFontName;
-        synchronized (sun.awt.UNIXToolkit.GTK_LOCK) {
+        synchronized (j86.sun.awt.UNIXToolkit.GTK_LOCK) {
             xThickness = nativeGetXThickness(this.widgetType);
             yThickness = nativeGetYThickness(this.widgetType);
             pangoFontName = nativeGetPangoFontName(this.widgetType);
@@ -190,7 +190,7 @@ class GTKStyle extends SynthStyle implements GTKConstants {
                                         ColorType type)
     {
         state = GTKLookAndFeel.synthStateToGTKStateType(state).ordinal();
-        synchronized (sun.awt.UNIXToolkit.GTK_LOCK) {
+        synchronized (j86.sun.awt.UNIXToolkit.GTK_LOCK) {
             int rgb = nativeGetColorForState(widgetType, state,
                                              type.getID());
             return new ColorUIResource(rgb);
@@ -632,7 +632,7 @@ class GTKStyle extends SynthStyle implements GTKConstants {
      * @return Value, or null if one has not been defined.
      */
     Object getClassSpecificValue(String key) {
-        synchronized (sun.awt.UNIXToolkit.GTK_LOCK) {
+        synchronized (j86.sun.awt.UNIXToolkit.GTK_LOCK) {
             return nativeGetClassValue(widgetType, key);
         }
     }
@@ -802,7 +802,7 @@ class GTKStyle extends SynthStyle implements GTKConstants {
                 // calculations come from gtkspinbutton.c (version 2.8.20),
                 // spin_button_get_arrow_size() method.
                 String pangoFontName;
-                synchronized (sun.awt.UNIXToolkit.GTK_LOCK) {
+                synchronized (j86.sun.awt.UNIXToolkit.GTK_LOCK) {
                     pangoFontName =
                         nativeGetPangoFontName(WidgetType.SPINNER.ordinal());
                 }

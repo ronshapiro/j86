@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.reflect.annotation;
-import java.lang.annotation.*;
-import java.lang.reflect.Method;
+package j86.j86.sun.reflect.annotation;
+import j86.j86.java.lang.annotation.*;
+import j86.j86.j86.java.lang.reflect.Method;
 
 /**
  * ExceptionProxy for AnnotationTypeMismatchException.

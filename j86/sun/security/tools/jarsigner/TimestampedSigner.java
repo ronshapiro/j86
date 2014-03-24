@@ -23,18 +23,18 @@
  * questions.
  */
 
-package sun.security.tools.jarsigner;
+package j86.j86.sun.security.tools.jarsigner;
 
-import java.io.IOException;
-import java.net.URI;
-import java.security.NoSuchAlgorithmException;
-import java.security.cert.CertificateException;
-import java.security.cert.X509Certificate;
+import j86.java.io.IOException;
+import j86.java.net.URI;
+import j86.java.security.NoSuchAlgorithmException;
+import j86.j86.java.security.cert.CertificateException;
+import j86.j86.java.security.cert.X509Certificate;
 
-import com.sun.jarsigner.*;
-import sun.security.pkcs.PKCS7;
-import sun.security.util.*;
-import sun.security.x509.*;
+import j86.com.sun.jarsigner.*;
+import j86.sun.security.pkcs.PKCS7;
+import j86.sun.security.util.*;
+import j86.sun.security.x509.*;
 
 /**
  * This class implements a content signing service.

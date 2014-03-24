@@ -23,14 +23,14 @@
  * questions.
  */
 
-package java.awt.image;
+package j86.j86.j86.java.awt.image;
 
-import java.awt.color.ColorSpace;
-import java.awt.geom.Rectangle2D;
-import java.awt.Rectangle;
-import java.awt.geom.Point2D;
-import java.awt.RenderingHints;
-import sun.awt.image.ImagingLib;
+import j86.j86.java.awt.color.ColorSpace;
+import j86.j86.java.awt.geom.Rectangle2D;
+import j86.java.awt.Rectangle;
+import j86.j86.java.awt.geom.Point2D;
+import j86.java.awt.RenderingHints;
+import j86.j86.j86.sun.awt.image.ImagingLib;
 
 /**
  * This class performs a pixel-by-pixel rescaling of the data in the
@@ -77,8 +77,8 @@ import sun.awt.image.ImagingLib;
  * <p>
  * Note that in-place operation is allowed (i.e. the source and destination can
  * be the same object).
- * @see java.awt.RenderingHints#KEY_COLOR_RENDERING
- * @see java.awt.RenderingHints#KEY_DITHERING
+ * @see j86.java.awt.RenderingHints#KEY_COLOR_RENDERING
+ * @see j86.java.awt.RenderingHints#KEY_DITHERING
  */
 public class RescaleOp implements BufferedImageOp, RasterOp {
     float[] scaleFactors;

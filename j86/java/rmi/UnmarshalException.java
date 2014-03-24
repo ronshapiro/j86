@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.rmi;
+package j86.java.rmi;
 
 /**
  * An <code>UnmarshalException</code> can be thrown while unmarshalling the
@@ -32,9 +32,9 @@ package java.rmi;
  * <ul>
  * <li> if an exception occurs while unmarshalling the call header
  * <li> if the protocol for the return value is invalid
- * <li> if a <code>java.io.IOException</code> occurs unmarshalling
+ * <li> if a <code>j86.java.io.IOException</code> occurs unmarshalling
  * parameters (on the server side) or the return value (on the client side).
- * <li> if a <code>java.lang.ClassNotFoundException</code> occurs during
+ * <li> if a <code>j86.java.lang.ClassNotFoundException</code> occurs during
  * unmarshalling parameters or return values
  * <li> if no skeleton can be loaded on the server-side; note that skeletons
  * are required in the 1.1 stub protocol, but not in the 1.2 stub protocol.

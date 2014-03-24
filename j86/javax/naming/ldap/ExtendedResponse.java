@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.naming.ldap;
+package j86.j86.javax.naming.ldap;
 
 /**
   * This interface represents an LDAP extended operation response as defined in
@@ -50,7 +50,7 @@ package javax.naming.ldap;
   * The GetTimeResponse class might look like:
   *<blockquote><pre>
   * public class GetTimeResponse implements ExtendedResponse {
-  *     public java.util.Date getDate() {...};
+  *     public j86.java.util.Date getDate() {...};
   *     public long getTime() {...};
   *     ....
   * }
@@ -59,7 +59,7 @@ package javax.naming.ldap;
   *<blockquote><pre>
   * GetTimeResponse resp =
   *     (GetTimeResponse) ectx.extendedOperation(new GetTimeRequest());
-  * java.util.Date now = resp.getDate();
+  * j86.java.util.Date now = resp.getDate();
   *</pre></blockquote>
   *
   * @author Rosanna Lee
@@ -70,7 +70,7 @@ package javax.naming.ldap;
   * @since 1.3
   */
 
-public interface ExtendedResponse extends java.io.Serializable {
+public interface ExtendedResponse extends j86.java.io.Serializable {
 
     /**
       * Retrieves the object identifier of the response.

@@ -23,13 +23,13 @@
  * questions.
  */
 
-package com.sun.java.swing.plaf.motif;
+package j86.j86.com.sun.java.swing.plaf.motif;
 
-import javax.swing.plaf.basic.BasicSplitPaneUI;
-import javax.swing.plaf.basic.BasicSplitPaneDivider;
-import javax.swing.plaf.*;
-import javax.swing.*;
-import java.awt.*;
+import j86.j86.j86.javax.swing.plaf.basic.BasicSplitPaneUI;
+import j86.j86.j86.javax.swing.plaf.basic.BasicSplitPaneDivider;
+import j86.j86.javax.swing.plaf.*;
+import j86.javax.swing.*;
+import j86.java.awt.*;
 
 /**
  * Motif rendition of a split pane.

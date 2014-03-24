@@ -23,19 +23,19 @@
  * questions.
  */
 
-package com.sun.jndi.ldap;
+package j86.com.sun.jndi.ldap;
 
-import java.util.Hashtable;
-import java.util.Vector;
-import java.util.Enumeration;
+import j86.java.util.Hashtable;
+import j86.java.util.Vector;
+import j86.java.util.Enumeration;
 
-import javax.naming.*;
-import javax.naming.directory.*;
-import javax.naming.spi.ObjectFactory;
-import javax.naming.spi.InitialContextFactory;
-import javax.naming.ldap.Control;
+import j86.javax.naming.*;
+import j86.j86.javax.naming.directory.*;
+import j86.j86.javax.naming.spi.ObjectFactory;
+import j86.j86.javax.naming.spi.InitialContextFactory;
+import j86.j86.javax.naming.ldap.Control;
 
-import com.sun.jndi.url.ldap.ldapURLContextFactory;
+import j86.com.sun.jndi.url.ldap.ldapURLContextFactory;
 
 final public class LdapCtxFactory implements ObjectFactory, InitialContextFactory {
     /**

@@ -22,10 +22,10 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text;
+package j86.j86.javax.swing.text;
 
-import java.util.Vector;
-import sun.awt.AppContext;
+import j86.java.util.Vector;
+import j86.sun.awt.AppContext;
 
 /**
  * A queue of text layout tasks.

@@ -23,22 +23,22 @@
  * questions.
  */
 
-package com.sun.crypto.provider;
+package j86.com.sun.crypto.provider;
 
-import java.util.Locale;
+import j86.java.util.Locale;
 
-import java.security.*;
-import java.security.interfaces.*;
-import java.security.spec.AlgorithmParameterSpec;
-import java.security.spec.InvalidParameterSpecException;
-import java.security.spec.MGF1ParameterSpec;
+import j86.java.security.*;
+import j86.j86.java.security.interfaces.*;
+import j86.j86.java.security.spec.AlgorithmParameterSpec;
+import j86.j86.java.security.spec.InvalidParameterSpecException;
+import j86.j86.java.security.spec.MGF1ParameterSpec;
 
-import javax.crypto.*;
-import javax.crypto.spec.PSource;
-import javax.crypto.spec.OAEPParameterSpec;
+import j86.javax.crypto.*;
+import j86.j86.javax.crypto.spec.PSource;
+import j86.j86.javax.crypto.spec.OAEPParameterSpec;
 
-import sun.security.rsa.*;
-import sun.security.jca.Providers;
+import j86.sun.security.rsa.*;
+import j86.sun.security.jca.Providers;
 
 /**
  * RSA cipher implementation. Supports RSA en/decryption and signing/verifying

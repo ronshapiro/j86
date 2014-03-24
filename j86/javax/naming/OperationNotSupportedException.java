@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.naming;
+package j86.javax.naming;
 
 /**
   * This exception is thrown when a context implementation does not support
@@ -54,7 +54,7 @@ public class OperationNotSupportedException extends NamingException {
       * explanation. All other fields default to null.
       *
       * @param  explanation     Possibly null additional detail about this exception
-      * @see java.lang.Throwable#getMessage
+      * @see j86.java.lang.Throwable#getMessage
       */
     public OperationNotSupportedException(String explanation) {
         super(explanation);

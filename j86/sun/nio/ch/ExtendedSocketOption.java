@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.nio.ch;
+package j86.j86.j86.sun.nio.ch;
 
-import java.net.SocketOption;
+import j86.java.net.SocketOption;
 
 /**
  * Defines socket options that are supported by the implementation

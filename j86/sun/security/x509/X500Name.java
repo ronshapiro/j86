@@ -23,21 +23,21 @@
  * questions.
  */
 
-package sun.security.x509;
+package j86.sun.security.x509;
 
-import java.lang.reflect.*;
-import java.io.IOException;
-import java.security.PrivilegedExceptionAction;
-import java.security.AccessController;
-import java.security.Principal;
-import java.util.*;
+import j86.j86.j86.java.lang.reflect.*;
+import j86.java.io.IOException;
+import j86.java.security.PrivilegedExceptionAction;
+import j86.java.security.AccessController;
+import j86.java.security.Principal;
+import j86.java.util.*;
 
-import sun.security.util.*;
-import javax.security.auth.x500.X500Principal;
+import j86.sun.security.util.*;
+import j86.j86.javax.security.auth.x500.X500Principal;
 
 /**
  * Note:  As of 1.4, the public class,
- * javax.security.auth.x500.X500Principal,
+ * j86.j86.javax.security.auth.x500.X500Principal,
  * should be used when parsing, generating, and comparing X.500 DNs.
  * This class contains other useful methods for checking name constraints
  * and retrieving DNs by keyword.
@@ -735,7 +735,7 @@ public class X500Name implements GeneralNameInterface, Principal {
 
     /**
      * Returns the value of toString().  This call is needed to
-     * implement the java.security.Principal interface.
+     * implement the j86.java.security.Principal interface.
      */
     public String getName() { return toString(); }
 

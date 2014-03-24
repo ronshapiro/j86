@@ -26,15 +26,15 @@
 /*
  * $Id: DOMDigestMethod.java 1333415 2012-05-03 12:03:51Z coheigea $
  */
-package org.jcp.xml.dsig.internal.dom;
+package j86.j86.org.jcp.xml.dsig.internal.dom;
 
-import javax.xml.crypto.*;
-import javax.xml.crypto.dom.DOMCryptoContext;
-import javax.xml.crypto.dsig.*;
-import javax.xml.crypto.dsig.spec.DigestMethodParameterSpec;
+import j86.javax.xml.crypto.*;
+import j86.j86.javax.xml.crypto.dom.DOMCryptoContext;
+import j86.j86.javax.xml.crypto.dsig.*;
+import j86.j86.j86.javax.xml.crypto.dsig.spec.DigestMethodParameterSpec;
 
-import java.security.InvalidAlgorithmParameterException;
-import java.security.spec.AlgorithmParameterSpec;
+import j86.java.security.InvalidAlgorithmParameterException;
+import j86.j86.java.security.spec.AlgorithmParameterSpec;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;

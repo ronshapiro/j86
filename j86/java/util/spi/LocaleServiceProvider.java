@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.util.spi;
+package j86.j86.java.util.spi;
 
-import java.util.Locale;
+import j86.java.util.Locale;
 
 /**
  * <p>
@@ -33,12 +33,12 @@ import java.util.Locale;
  * interfaces (SPIs).
  * <p>
  * Locale sensitive  service provider interfaces are interfaces that
- * correspond to locale sensitive classes in the <code>java.text</code>
- * and <code>java.util</code> packages. The interfaces enable the
+ * correspond to locale sensitive classes in the <code>j86.java.text</code>
+ * and <code>j86.java.util</code> packages. The interfaces enable the
  * construction of locale sensitive objects and the retrieval of
  * localized names for these packages. Locale sensitive factory methods
- * and methods for name retrieval in the <code>java.text</code> and
- * <code>java.util</code> packages use implementations of the provider
+ * and methods for name retrieval in the <code>j86.java.text</code> and
+ * <code>j86.java.util</code> packages use implementations of the provider
  * interfaces to offer support for locales beyond the set of locales
  * supported by the Java runtime environment itself.
  *
@@ -64,12 +64,12 @@ import java.util.Locale;
  * that loaded the file.
  * <p>
  * For example, an implementation of the
- * {@link java.text.spi.DateFormatProvider DateFormatProvider} class should
+ * {@link j86.j86.java.text.spi.DateFormatProvider DateFormatProvider} class should
  * take the form of a jar file which contains the file:
  * <pre>
- * META-INF/services/java.text.spi.DateFormatProvider
+ * META-INF/services/j86.j86.java.text.spi.DateFormatProvider
  * </pre>
- * And the file <code>java.text.spi.DateFormatProvider</code> should have
+ * And the file <code>j86.j86.java.text.spi.DateFormatProvider</code> should have
  * a line such as:
  * <pre>
  * <code>com.foo.DateFormatProviderImpl</code>
@@ -79,7 +79,7 @@ import java.util.Locale;
  * <h4>Invocation of Locale Sensitive Services</h4>
  * <p>
  * Locale sensitive factory methods and methods for name retrieval in the
- * <code>java.text</code> and <code>java.util</code> packages invoke
+ * <code>j86.java.text</code> and <code>j86.java.util</code> packages invoke
  * service provider methods when needed to support the requested locale.
  * The methods first check whether the Java runtime environment itself
  * supports the requested locale, and use its support if available.
@@ -95,7 +95,7 @@ import java.util.Locale;
  * locales and repeat the availability check for each until a match is found.
  * The algorithm used for creating a list of candidate locales is same as
  * the one used by <code>ResourceBundle</code> by default (see
- * {@link java.util.ResourceBundle.Control#getCandidateLocales getCandidateLocales}
+ * {@link j86.java.util.ResourceBundle.Control#getCandidateLocales getCandidateLocales}
  * for the details).  Even if a locale is resolved from the candidate list,
  * methods that return requested objects or names are invoked with the original
  * requested locale including {@code Locale} extensions. The Java runtime

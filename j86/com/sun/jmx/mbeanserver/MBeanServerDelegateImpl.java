@@ -22,27 +22,27 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.jmx.mbeanserver;
+package j86.com.sun.jmx.mbeanserver;
 
-import java.util.logging.Level;
+import j86.j86.java.util.logging.Level;
 
-import javax.management.Attribute;
-import javax.management.AttributeList;
-import javax.management.AttributeNotFoundException;
-import javax.management.DynamicMBean;
-import javax.management.InvalidAttributeValueException;
-import javax.management.JMRuntimeException;
-import javax.management.MBeanAttributeInfo;
-import javax.management.MBeanException;
-import javax.management.MBeanInfo;
-import javax.management.MBeanRegistration;
-import javax.management.MBeanServer;
-import javax.management.MBeanServerDelegate;
-import javax.management.ObjectName;
-import javax.management.ReflectionException;
-import javax.management.RuntimeOperationsException;
+import j86.javax.management.Attribute;
+import j86.javax.management.AttributeList;
+import j86.javax.management.AttributeNotFoundException;
+import j86.javax.management.DynamicMBean;
+import j86.javax.management.InvalidAttributeValueException;
+import j86.javax.management.JMRuntimeException;
+import j86.javax.management.MBeanAttributeInfo;
+import j86.javax.management.MBeanException;
+import j86.javax.management.MBeanInfo;
+import j86.javax.management.MBeanRegistration;
+import j86.javax.management.MBeanServer;
+import j86.javax.management.MBeanServerDelegate;
+import j86.javax.management.ObjectName;
+import j86.javax.management.ReflectionException;
+import j86.javax.management.RuntimeOperationsException;
 
-import static com.sun.jmx.defaults.JmxProperties.MBEANSERVER_LOGGER;
+import static j86.com.sun.jmx.defaults.JmxProperties.MBEANSERVER_LOGGER;
 
 /**
  * This class is the MBean implementation of the MBeanServerDelegate.
@@ -65,30 +65,30 @@ final class MBeanServerDelegateImpl
 
     private static final MBeanAttributeInfo[] attributeInfos =
         new MBeanAttributeInfo[] {
-            new MBeanAttributeInfo("MBeanServerId","java.lang.String",
+            new MBeanAttributeInfo("MBeanServerId","j86.java.lang.String",
                                    "The MBean server agent identification",
                                    true,false,false),
-            new MBeanAttributeInfo("SpecificationName","java.lang.String",
+            new MBeanAttributeInfo("SpecificationName","j86.java.lang.String",
                                    "The full name of the JMX specification "+
                                    "implemented by this product.",
                                    true,false,false),
-            new MBeanAttributeInfo("SpecificationVersion","java.lang.String",
+            new MBeanAttributeInfo("SpecificationVersion","j86.java.lang.String",
                                    "The version of the JMX specification "+
                                    "implemented by this product.",
                                    true,false,false),
-            new MBeanAttributeInfo("SpecificationVendor","java.lang.String",
+            new MBeanAttributeInfo("SpecificationVendor","j86.java.lang.String",
                                    "The vendor of the JMX specification "+
                                    "implemented by this product.",
                                    true,false,false),
-            new MBeanAttributeInfo("ImplementationName","java.lang.String",
+            new MBeanAttributeInfo("ImplementationName","j86.java.lang.String",
                                    "The JMX implementation name "+
                                    "(the name of this product)",
                                    true,false,false),
-            new MBeanAttributeInfo("ImplementationVersion","java.lang.String",
+            new MBeanAttributeInfo("ImplementationVersion","j86.java.lang.String",
                                    "The JMX implementation version "+
                                    "(the version of this product).",
                                    true,false,false),
-            new MBeanAttributeInfo("ImplementationVendor","java.lang.String",
+            new MBeanAttributeInfo("ImplementationVendor","j86.java.lang.String",
                                    "the JMX implementation vendor "+
                                    "(the vendor of this product).",
                                    true,false,false)
@@ -99,7 +99,7 @@ final class MBeanServerDelegateImpl
     public MBeanServerDelegateImpl () {
         super();
         delegateInfo =
-            new MBeanInfo("javax.management.MBeanServerDelegate",
+            new MBeanInfo("j86.javax.management.MBeanServerDelegate",
                           "Represents  the MBean server from the management "+
                           "point of view.",
                           MBeanServerDelegateImpl.attributeInfos, null,
@@ -107,7 +107,7 @@ final class MBeanServerDelegateImpl
     }
 
     final public ObjectName preRegister (MBeanServer server, ObjectName name)
-        throws java.lang.Exception {
+        throws j86.java.lang.Exception {
         if (name == null) return DELEGATE_NAME;
         else return name;
     }
@@ -116,7 +116,7 @@ final class MBeanServerDelegateImpl
     }
 
     final public void preDeregister()
-        throws java.lang.Exception {
+        throws j86.java.lang.Exception {
         throw new IllegalArgumentException(
                  "The MBeanServerDelegate MBean cannot be unregistered");
     }
@@ -133,7 +133,7 @@ final class MBeanServerDelegateImpl
      *
      * @exception AttributeNotFoundException
      * @exception MBeanException
-     *            Wraps a <CODE>java.lang.Exception</CODE> thrown by the
+     *            Wraps a <CODE>j86.java.lang.Exception</CODE> thrown by the
      *            MBean's getter.
      */
     public Object getAttribute(String attribute)
@@ -284,10 +284,10 @@ final class MBeanServerDelegateImpl
      * @return  The object returned by the action, which represents
      *          the result of invoking the action on the MBean specified.
      *
-     * @exception MBeanException  Wraps a <CODE>java.lang.Exception</CODE>
+     * @exception MBeanException  Wraps a <CODE>j86.java.lang.Exception</CODE>
      *         thrown by the MBean's invoked method.
      * @exception ReflectionException  Wraps a
-     *      <CODE>java.lang.Exception</CODE> thrown while trying to invoke
+     *      <CODE>j86.java.lang.Exception</CODE> thrown while trying to invoke
      *      the method.
      */
     public Object invoke(String actionName, Object params[],

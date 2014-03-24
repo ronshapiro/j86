@@ -23,13 +23,13 @@
  * questions.
  */
 
-package java.beans;
+package j86.java.beans;
 
-import java.lang.ref.Reference;
-import java.lang.ref.WeakReference;
-import java.lang.reflect.Method;
-import java.util.List;
-import java.util.ArrayList;
+import j86.j86.java.lang.ref.Reference;
+import j86.j86.java.lang.ref.WeakReference;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.util.List;
+import j86.java.util.ArrayList;
 
 /**
  * A MethodDescriptor describes a particular method that a Java Bean

@@ -32,10 +32,10 @@
   * @author Rosanna Lee
   */
 
-package com.sun.jndi.toolkit.dir;
+package j86.com.sun.jndi.toolkit.dir;
 
-import javax.naming.*;
-import javax.naming.directory.*;
+import j86.javax.naming.*;
+import j86.j86.javax.naming.directory.*;
 
 public class ContainmentFilter implements AttrFilter {
     private Attributes matchingAttrs;

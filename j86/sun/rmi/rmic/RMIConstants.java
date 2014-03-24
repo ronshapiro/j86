@@ -30,40 +30,40 @@
  *
  */
 
-package sun.rmi.rmic;
+package j86.sun.rmi.rmic;
 
-import sun.tools.java.Identifier;
+import j86.sun.tools.java.Identifier;
 
 /**
  * WARNING: The contents of this source file are not part of any
  * supported API.  Code that depends on them does so at its own risk:
  * they are subject to change or removal without notice.
  */
-public interface RMIConstants extends sun.rmi.rmic.Constants {
+public interface RMIConstants extends j86.sun.rmi.rmic.Constants {
 
     /*
      * identifiers for RMI classes referenced by rmic
      */
     public static final Identifier idRemoteObject =
-        Identifier.lookup("java.rmi.server.RemoteObject");
+        Identifier.lookup("j86.j86.java.rmi.server.RemoteObject");
     public static final Identifier idRemoteStub =
-        Identifier.lookup("java.rmi.server.RemoteStub");
+        Identifier.lookup("j86.j86.java.rmi.server.RemoteStub");
     public static final Identifier idRemoteRef =
-        Identifier.lookup("java.rmi.server.RemoteRef");
+        Identifier.lookup("j86.j86.java.rmi.server.RemoteRef");
     public static final Identifier idOperation =
-        Identifier.lookup("java.rmi.server.Operation");
+        Identifier.lookup("j86.j86.java.rmi.server.Operation");
     public static final Identifier idSkeleton =
-        Identifier.lookup("java.rmi.server.Skeleton");
+        Identifier.lookup("j86.j86.java.rmi.server.Skeleton");
     public static final Identifier idSkeletonMismatchException =
-        Identifier.lookup("java.rmi.server.SkeletonMismatchException");
+        Identifier.lookup("j86.j86.java.rmi.server.SkeletonMismatchException");
     public static final Identifier idRemoteCall =
-        Identifier.lookup("java.rmi.server.RemoteCall");
+        Identifier.lookup("j86.j86.java.rmi.server.RemoteCall");
     public static final Identifier idMarshalException =
-        Identifier.lookup("java.rmi.MarshalException");
+        Identifier.lookup("j86.java.rmi.MarshalException");
     public static final Identifier idUnmarshalException =
-        Identifier.lookup("java.rmi.UnmarshalException");
+        Identifier.lookup("j86.java.rmi.UnmarshalException");
     public static final Identifier idUnexpectedException =
-        Identifier.lookup("java.rmi.UnexpectedException");
+        Identifier.lookup("j86.java.rmi.UnexpectedException");
 
     /*
      * stub protocol versions

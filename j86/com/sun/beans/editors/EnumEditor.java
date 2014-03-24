@@ -22,19 +22,19 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.beans.editors;
+package j86.j86.com.sun.beans.editors;
 
-import java.awt.Component;
-import java.awt.Graphics;
-import java.awt.Rectangle;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
-import java.beans.PropertyEditor;
-import java.util.ArrayList;
-import java.util.List;
+import j86.java.awt.Component;
+import j86.java.awt.Graphics;
+import j86.java.awt.Rectangle;
+import j86.java.beans.PropertyChangeEvent;
+import j86.java.beans.PropertyChangeListener;
+import j86.java.beans.PropertyEditor;
+import j86.java.util.ArrayList;
+import j86.java.util.List;
 
 /**
- * Property editor for java.lang.Enum subclasses.
+ * Property editor for j86.java.lang.Enum subclasses.
  *
  * @see PropertyEditor
  *

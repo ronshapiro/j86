@@ -23,27 +23,27 @@
  * questions.
  */
 
-package sun.util.locale.provider;
+package j86.j86.j86.sun.util.locale.provider;
 
-import java.text.spi.BreakIteratorProvider;
-import java.text.spi.CollatorProvider;
-import java.text.spi.DateFormatProvider;
-import java.text.spi.DateFormatSymbolsProvider;
-import java.text.spi.DecimalFormatSymbolsProvider;
-import java.text.spi.NumberFormatProvider;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Locale;
-import java.util.Set;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentMap;
-import java.util.spi.CalendarDataProvider;
-import java.util.spi.CalendarNameProvider;
-import java.util.spi.CurrencyNameProvider;
-import java.util.spi.LocaleNameProvider;
-import java.util.spi.LocaleServiceProvider;
-import java.util.spi.TimeZoneNameProvider;
-import sun.util.spi.CalendarProvider;
+import j86.j86.java.text.spi.BreakIteratorProvider;
+import j86.j86.java.text.spi.CollatorProvider;
+import j86.j86.java.text.spi.DateFormatProvider;
+import j86.j86.java.text.spi.DateFormatSymbolsProvider;
+import j86.j86.java.text.spi.DecimalFormatSymbolsProvider;
+import j86.j86.java.text.spi.NumberFormatProvider;
+import j86.java.util.Arrays;
+import j86.java.util.HashSet;
+import j86.java.util.Locale;
+import j86.java.util.Set;
+import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.j86.java.util.concurrent.ConcurrentMap;
+import j86.j86.java.util.spi.CalendarDataProvider;
+import j86.j86.java.util.spi.CalendarNameProvider;
+import j86.j86.java.util.spi.CurrencyNameProvider;
+import j86.j86.java.util.spi.LocaleNameProvider;
+import j86.j86.java.util.spi.LocaleServiceProvider;
+import j86.j86.java.util.spi.TimeZoneNameProvider;
+import j86.j86.sun.util.spi.CalendarProvider;
 
 /**
  * An abstract parent class for the
@@ -114,7 +114,7 @@ public abstract class AuxLocaleProviderAdapter extends LocaleProviderAdapter {
     }
 
     /**
-     * Getter methods for java.util.spi.* providers
+     * Getter methods for j86.j86.java.util.spi.* providers
      */
     @Override
     public CurrencyNameProvider getCurrencyNameProvider() {
@@ -142,7 +142,7 @@ public abstract class AuxLocaleProviderAdapter extends LocaleProviderAdapter {
     }
 
     /**
-     * Getter methods for sun.util.spi.* providers
+     * Getter methods for j86.j86.sun.util.spi.* providers
      */
     @Override
     public CalendarProvider getCalendarProvider() {

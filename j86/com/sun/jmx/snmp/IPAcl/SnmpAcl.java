@@ -24,33 +24,33 @@
  */
 
 
-package com.sun.jmx.snmp.IPAcl;
+package j86.j86.com.sun.jmx.snmp.IPAcl;
 
 
 
 // java import
 //
-import java.io.Serializable;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.net.InetAddress;
-import java.net.UnknownHostException;
-import java.util.Hashtable;
-import java.util.logging.Level;
-import java.util.Vector;
-import java.util.Enumeration;
-import java.util.HashSet;
-import java.security.acl.AclEntry;
-import java.security.acl.NotOwnerException;
+import j86.java.io.Serializable;
+import j86.java.io.File;
+import j86.java.io.FileInputStream;
+import j86.java.io.FileNotFoundException;
+import j86.java.net.InetAddress;
+import j86.java.net.UnknownHostException;
+import j86.java.util.Hashtable;
+import j86.j86.java.util.logging.Level;
+import j86.java.util.Vector;
+import j86.java.util.Enumeration;
+import j86.java.util.HashSet;
+import j86.j86.java.security.acl.AclEntry;
+import j86.j86.java.security.acl.NotOwnerException;
 
 // SNMP Runtime import
 //
-import static com.sun.jmx.defaults.JmxProperties.SNMP_LOGGER;
-import com.sun.jmx.snmp.InetAddressAcl;
+import static j86.com.sun.jmx.defaults.JmxProperties.SNMP_LOGGER;
+import j86.com.sun.jmx.snmp.InetAddressAcl;
 
 /**
- * Defines an implementation of the {@link com.sun.jmx.snmp.InetAddressAcl InetAddressAcl} interface.
+ * Defines an implementation of the {@link j86.com.sun.jmx.snmp.InetAddressAcl InetAddressAcl} interface.
  * <p>
  * In this implementation the ACL information is stored on a flat file and
  * its default location is "$JRE/lib/snmp.acl" - See
@@ -122,7 +122,7 @@ public class SnmpAcl implements InetAddressAcl, Serializable {
 
     /**
      * Returns an enumeration of the entries in this ACL. Each element in the
-     * enumeration is of type <CODE>java.security.acl.AclEntry</CODE>.
+     * enumeration is of type <CODE>j86.j86.java.security.acl.AclEntry</CODE>.
      *
      * @return An enumeration of the entries in this ACL.
      */
@@ -433,8 +433,8 @@ public class SnmpAcl implements InetAddressAcl, Serializable {
                             "readAuthorizedListFile",
                             "===> " + aa.getPrincipal().toString());
                 }
-                for (Enumeration<java.security.acl.Permission> eee = aa.permissions();eee.hasMoreElements();) {
-                    java.security.acl.Permission perm = eee.nextElement();
+                for (Enumeration<j86.j86.java.security.acl.Permission> eee = aa.permissions();eee.hasMoreElements();) {
+                    j86.j86.java.security.acl.Permission perm = eee.nextElement();
                     if (SNMP_LOGGER.isLoggable(Level.FINER)) {
                         SNMP_LOGGER.logp(Level.FINER, SnmpAcl.class.getName(),
                                 "readAuthorizedListFile", "perm = " + perm);

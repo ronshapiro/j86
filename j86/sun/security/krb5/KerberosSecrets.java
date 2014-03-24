@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.security.krb5;
+package j86.sun.security.krb5;
 
-import javax.security.auth.kerberos.KeyTab;
-import sun.misc.Unsafe;
+import j86.j86.javax.security.auth.kerberos.KeyTab;
+import j86.sun.misc.Unsafe;
 
 public class KerberosSecrets {
     private static final Unsafe unsafe = Unsafe.getUnsafe();

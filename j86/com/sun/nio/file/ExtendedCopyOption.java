@@ -23,9 +23,9 @@
  * questions.
  */
 
-package com.sun.nio.file;
+package com.j86.sun.nio.file;
 
-import java.nio.file.CopyOption;
+import j86.j86.java.nio.file.CopyOption;
 
 /**
  * Defines <em>extended</em> copy options supported on some platforms

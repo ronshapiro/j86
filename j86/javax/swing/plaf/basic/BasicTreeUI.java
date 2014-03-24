@@ -23,30 +23,30 @@
  * questions.
  */
 
-package javax.swing.plaf.basic;
+package j86.j86.j86.javax.swing.plaf.basic;
 
-import javax.swing.*;
-import javax.swing.event.*;
-import java.awt.*;
-import java.awt.event.*;
-import java.awt.datatransfer.*;
-import java.beans.*;
-import java.util.Enumeration;
-import java.util.Hashtable;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import javax.swing.plaf.ComponentUI;
-import javax.swing.plaf.UIResource;
-import javax.swing.plaf.TreeUI;
-import javax.swing.tree.*;
-import javax.swing.text.Position;
-import javax.swing.plaf.basic.DragRecognitionSupport.BeforeDrag;
-import sun.awt.AWTAccessor;
-import sun.swing.SwingUtilities2;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.event.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.j86.java.awt.datatransfer.*;
+import j86.java.beans.*;
+import j86.java.util.Enumeration;
+import j86.java.util.Hashtable;
+import j86.java.util.ArrayList;
+import j86.java.util.Collections;
+import j86.java.util.Comparator;
+import j86.j86.javax.swing.plaf.ComponentUI;
+import j86.j86.javax.swing.plaf.UIResource;
+import j86.j86.javax.swing.plaf.TreeUI;
+import j86.j86.javax.swing.tree.*;
+import j86.j86.javax.swing.text.Position;
+import j86.j86.j86.javax.swing.plaf.basic.DragRecognitionSupport.BeforeDrag;
+import j86.sun.awt.AWTAccessor;
+import j86.sun.swing.SwingUtilities2;
 
-import sun.swing.DefaultLookup;
-import sun.swing.UIAction;
+import j86.sun.swing.DefaultLookup;
+import j86.sun.swing.UIAction;
 
 /**
  * The basic L&amp;F for a hierarchical data structure.
@@ -1091,7 +1091,7 @@ public class BasicTreeUI extends TreeUI
      *
      * @throws NullPointerException {@inheritDoc}
      * @throws IllegalArgumentException {@inheritDoc}
-     * @see javax.swing.JComponent#getBaseline(int, int)
+     * @see j86.javax.swing.JComponent#getBaseline(int, int)
      * @since 1.6
      */
     public int getBaseline(JComponent c, int width, int height) {
@@ -1122,7 +1122,7 @@ public class BasicTreeUI extends TreeUI
      * changes as the size changes.
      *
      * @throws NullPointerException {@inheritDoc}
-     * @see javax.swing.JComponent#getBaseline(int, int)
+     * @see j86.javax.swing.JComponent#getBaseline(int, int)
      * @since 1.6
      */
     public Component.BaselineResizeBehavior getBaselineResizeBehavior(
@@ -1243,8 +1243,8 @@ public class BasicTreeUI extends TreeUI
 
     /**
      * Tells if a {@code DropLocation} should be indicated by a line between
-     * nodes. This is meant for {@code javax.swing.DropMode.INSERT} and
-     * {@code javax.swing.DropMode.ON_OR_INSERT} drop modes.
+     * nodes. This is meant for {@code j86.javax.swing.DropMode.INSERT} and
+     * {@code j86.javax.swing.DropMode.ON_OR_INSERT} drop modes.
      *
      * @param loc a {@code DropLocation}
      * @return {@code true} if the drop location should be shown as a line

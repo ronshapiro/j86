@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.security.interfaces;
+package j86.j86.java.security.interfaces;
 
-import java.math.BigInteger;
+import j86.java.math.BigInteger;
 
 /**
  * The interface to an RSA private key.
@@ -36,7 +36,7 @@ import java.math.BigInteger;
  * @see RSAPrivateCrtKey
  */
 
-public interface RSAPrivateKey extends java.security.PrivateKey, RSAKey
+public interface RSAPrivateKey extends j86.java.security.PrivateKey, RSAKey
 {
 
     /**

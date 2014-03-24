@@ -23,22 +23,22 @@
  * questions.
  */
 
-package com.sun.jmx.mbeanserver;
+package j86.com.sun.jmx.mbeanserver;
 
 
-import javax.management.Attribute;
-import javax.management.AttributeList;
-import javax.management.AttributeNotFoundException;
-import javax.management.InvalidAttributeValueException;
-import javax.management.MBeanException;
-import javax.management.MBeanInfo;
-import javax.management.MBeanRegistration;
-import javax.management.MBeanServer;
-import javax.management.NotCompliantMBeanException;
-import javax.management.ObjectName;
-import javax.management.ReflectionException;
-import com.sun.jmx.mbeanserver.MXBeanMappingFactory;
-import sun.reflect.misc.ReflectUtil;
+import j86.javax.management.Attribute;
+import j86.javax.management.AttributeList;
+import j86.javax.management.AttributeNotFoundException;
+import j86.javax.management.InvalidAttributeValueException;
+import j86.javax.management.MBeanException;
+import j86.javax.management.MBeanInfo;
+import j86.javax.management.MBeanRegistration;
+import j86.javax.management.MBeanServer;
+import j86.javax.management.NotCompliantMBeanException;
+import j86.javax.management.ObjectName;
+import j86.javax.management.ReflectionException;
+import j86.com.sun.jmx.mbeanserver.MXBeanMappingFactory;
+import j86.j86.sun.reflect.misc.ReflectUtil;
 
 /**
  * Base class for MBeans.  There is one instance of this class for
@@ -154,7 +154,7 @@ public abstract class MBeanSupport<M>
         return perInterface.isMXBean();
     }
 
-    // Methods that javax.management.StandardMBean should call from its
+    // Methods that j86.javax.management.StandardMBean should call from its
     // preRegister and postRegister, given that it is not supposed to
     // call the contained object's preRegister etc methods even if it has them
     public abstract void register(MBeanServer mbs, ObjectName name)

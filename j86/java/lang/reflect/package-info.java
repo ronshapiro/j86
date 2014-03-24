@@ -37,7 +37,7 @@
  * <p>{@code Array} provides static methods to dynamically create and
  * access arrays.
  *
- * <p>Classes in this package, along with {@code java.lang.Class}
+ * <p>Classes in this package, along with {@code j86.java.lang.Class}
  * accommodate applications such as debuggers, interpreters, object
  * inspectors, class browsers, and services such as Object
  * Serialization and JavaBeans that need access to either the public
@@ -46,4 +46,4 @@
  *
  * @since JDK1.1
  */
-package java.lang.reflect;
+package j86.j86.j86.java.lang.reflect;

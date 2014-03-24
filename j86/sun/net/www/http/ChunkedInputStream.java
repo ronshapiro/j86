@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.net.www.http;
+package j86.j86.j86.sun.net.www.http;
 
-import java.io.*;
-import java.util.*;
+import j86.java.io.*;
+import j86.java.util.*;
 
-import sun.net.*;
-import sun.net.www.*;
+import j86.sun.net.*;
+import j86.j86.sun.net.www.*;
 
 /**
  * A <code>ChunkedInputStream</code> provides a stream for reading a body of
@@ -643,7 +643,7 @@ class ChunkedInputStream extends InputStream implements Hurryable {
      * @return     the next byte of data, or <code>-1</code> if the end of the
      *             stream is reached.
      * @exception  IOException  if an I/O error occurs.
-     * @see        java.io.FilterInputStream#in
+     * @see        j86.java.io.FilterInputStream#in
      */
     public synchronized int read() throws IOException {
         ensureOpen();
@@ -712,7 +712,7 @@ class ChunkedInputStream extends InputStream implements Hurryable {
      * @return     the number of bytes that can be read from this input
      *             stream without blocking.
      * @exception  IOException  if an I/O error occurs.
-     * @see        java.io.FilterInputStream#in
+     * @see        j86.java.io.FilterInputStream#in
      */
     public synchronized int available() throws IOException {
         ensureOpen();

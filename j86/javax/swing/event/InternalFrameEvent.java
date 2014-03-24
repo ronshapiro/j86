@@ -22,10 +22,10 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.event;
+package j86.j86.javax.swing.event;
 
-import java.awt.AWTEvent;
-import javax.swing.JInternalFrame;
+import j86.java.awt.AWTEvent;
+import j86.javax.swing.JInternalFrame;
 
 /**
  * An <code>AWTEvent</code> that adds support for
@@ -43,11 +43,11 @@ import javax.swing.JInternalFrame;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
- * @see java.awt.event.WindowEvent
- * @see java.awt.event.WindowListener
+ * @see j86.j86.java.awt.event.WindowEvent
+ * @see j86.j86.java.awt.event.WindowListener
  * @see JInternalFrame
  * @see InternalFrameListener
  *

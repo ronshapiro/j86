@@ -22,25 +22,25 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing;
+package j86.javax.swing;
 
-import java.util.EventListener;
-import java.awt.*;
-import java.awt.event.*;
-import java.awt.image.*;
+import j86.java.util.EventListener;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.j86.j86.java.awt.image.*;
 
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
+import j86.java.beans.PropertyChangeEvent;
+import j86.java.beans.PropertyChangeListener;
 
-import java.io.Serializable;
-import java.io.ObjectOutputStream;
-import java.io.ObjectInputStream;
-import java.io.IOException;
+import j86.java.io.Serializable;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.IOException;
 
-import javax.swing.plaf.*;
-import javax.swing.plaf.basic.*;
-import javax.swing.event.*;
-import javax.accessibility.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.j86.javax.swing.plaf.basic.*;
+import j86.j86.javax.swing.event.*;
+import j86.javax.accessibility.*;
 
 /**
  * An implementation of an item in a menu. A menu item is essentially a button
@@ -73,8 +73,8 @@ import javax.accessibility.*;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @beaninfo
  *   attribute: isContainer false
@@ -181,7 +181,7 @@ public class JMenuItem extends AbstractButton implements Accessible,MenuElement 
      * <code>JMenuItem</code>'s are focusable, but subclasses may
      * want to be, this provides them the opportunity to override this
      * and invoke something else, or nothing at all. Refer to
-     * {@link javax.swing.JMenu#initFocusability} for the motivation of
+     * {@link j86.javax.swing.JMenu#initFocusability} for the motivation of
      * this.
      */
     void initFocusability() {
@@ -685,7 +685,7 @@ public class JMenuItem extends AbstractButton implements Accessible,MenuElement 
     }
 
     /**
-     * Returns the <code>java.awt.Component</code> used to paint
+     * Returns the <code>j86.java.awt.Component</code> used to paint
      * this object. The returned component will be used to convert
      * events and detect if an event is inside a menu component.
      *
@@ -827,8 +827,8 @@ public class JMenuItem extends AbstractButton implements Accessible,MenuElement 
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     @SuppressWarnings("serial")
     protected class AccessibleJMenuItem extends AccessibleAbstractButton implements ChangeListener {

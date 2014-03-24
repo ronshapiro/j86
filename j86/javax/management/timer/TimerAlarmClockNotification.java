@@ -23,14 +23,14 @@
  * questions.
  */
 
-package javax.management.timer;
+package j86.j86.javax.management.timer;
 
 /**
  * <p>Definitions of the notifications sent by TimerAlarmClock
  * MBeans.</p>
  */
 class TimerAlarmClockNotification
-    extends javax.management.Notification {
+    extends j86.javax.management.Notification {
 
     /* Serial version */
     private static final long serialVersionUID = -4841061275673620641L;

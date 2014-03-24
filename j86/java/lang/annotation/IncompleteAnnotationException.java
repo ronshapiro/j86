@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.lang.annotation;
+package j86.j86.java.lang.annotation;
 
 /**
  * Thrown to indicate that a program has attempted to access an element of
@@ -31,11 +31,11 @@ package java.lang.annotation;
  * the annotation was compiled (or serialized).  This exception will not be
  * thrown if the new element has a default value.
  * This exception can be thrown by the {@linkplain
- * java.lang.reflect.AnnotatedElement API used to read annotations
+ * j86.j86.j86.java.lang.reflect.AnnotatedElement API used to read annotations
  * reflectively}.
  *
  * @author  Josh Bloch
- * @see     java.lang.reflect.AnnotatedElement
+ * @see     j86.j86.j86.java.lang.reflect.AnnotatedElement
  * @since 1.5
  */
 public class IncompleteAnnotationException extends RuntimeException {

@@ -23,13 +23,13 @@
  * questions.
  */
 
-package sun.security.validator;
+package j86.sun.security.validator;
 
-import java.util.*;
+import j86.java.util.*;
 
-import java.security.cert.*;
+import j86.j86.java.security.cert.*;
 
-import sun.security.x509.NetscapeCertTypeExtension;
+import j86.sun.security.x509.NetscapeCertTypeExtension;
 
 /**
  * Class to check if an end entity cert is suitable for use in some

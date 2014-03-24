@@ -23,21 +23,21 @@
  * questions.
  */
 
-package sun.awt.image;
+package j86.j86.j86.sun.awt.image;
 
-import java.awt.Point;
-import java.awt.Rectangle;
-import java.awt.Image;
-import java.awt.image.DataBuffer;
-import java.awt.image.DataBufferByte;
-import java.awt.image.DataBufferUShort;
-import java.awt.image.DataBufferInt;
-import java.awt.image.SampleModel;
-import java.awt.image.WritableRaster;
+import j86.java.awt.Point;
+import j86.java.awt.Rectangle;
+import j86.java.awt.Image;
+import j86.j86.j86.java.awt.image.DataBuffer;
+import j86.j86.j86.java.awt.image.DataBufferByte;
+import j86.j86.j86.java.awt.image.DataBufferUShort;
+import j86.j86.j86.java.awt.image.DataBufferInt;
+import j86.j86.j86.java.awt.image.SampleModel;
+import j86.j86.j86.java.awt.image.WritableRaster;
 
-import sun.java2d.StateTrackable.State;
-import sun.java2d.SurfaceData;
-import sun.java2d.StateTrackableDelegate;
+import j86.sun.java2d.StateTrackable.State;
+import j86.sun.java2d.SurfaceData;
+import j86.sun.java2d.StateTrackableDelegate;
 
 /**
  * This class exists as a middle layer between WritableRaster and its

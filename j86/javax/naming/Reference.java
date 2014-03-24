@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.naming;
+package j86.javax.naming;
 
-import java.util.Vector;
-import java.util.Enumeration;
+import j86.java.util.Vector;
+import j86.java.util.Enumeration;
 
 /**
   * This class represents a reference to an object that is found outside of
@@ -80,12 +80,12 @@ import java.util.Enumeration;
 */
 
 
-public class Reference implements Cloneable, java.io.Serializable {
+public class Reference implements Cloneable, j86.java.io.Serializable {
     /**
      * Contains the fully-qualified name of the class of the object to which
      * this Reference refers.
      * @serial
-     * @see java.lang.Class#getName
+     * @see j86.java.lang.Class#getName
      */
     protected String className;
     /**
@@ -148,8 +148,8 @@ public class Reference implements Cloneable, java.io.Serializable {
       * @param factoryLocation
       *         The possibly null location from which to load
       *         the factory (e.g. URL)
-      * @see javax.naming.spi.ObjectFactory
-      * @see javax.naming.spi.NamingManager#getObjectInstance
+      * @see j86.j86.javax.naming.spi.ObjectFactory
+      * @see j86.j86.javax.naming.spi.NamingManager#getObjectInstance
       */
     public Reference(String className, String factory, String factoryLocation) {
         this(className);
@@ -168,8 +168,8 @@ public class Reference implements Cloneable, java.io.Serializable {
       * @param factoryLocation  The possibly null location from which
       *                         to load the factory (e.g. URL)
       * @param addr     The non-null address of the object.
-      * @see javax.naming.spi.ObjectFactory
-      * @see javax.naming.spi.NamingManager#getObjectInstance
+      * @see j86.j86.javax.naming.spi.ObjectFactory
+      * @see j86.j86.javax.naming.spi.NamingManager#getObjectInstance
       */
     public Reference(String className, RefAddr addr,
                      String factory, String factoryLocation) {
@@ -182,7 +182,7 @@ public class Reference implements Cloneable, java.io.Serializable {
       * Retrieves the class name of the object to which this reference refers.
       *
       * @return The non-null fully-qualified class name of the object.
-      *         (e.g. "java.lang.String")
+      *         (e.g. "j86.java.lang.String")
       */
     public String getClassName() {
         return className;
@@ -193,7 +193,7 @@ public class Reference implements Cloneable, java.io.Serializable {
       * to which this reference refers.
       *
       * @return The possibly null fully-qualified class name of the factory.
-      *         (e.g. "java.lang.String")
+      *         (e.g. "j86.java.lang.String")
       */
     public String getFactoryClassName() {
         return classFactory;

@@ -23,9 +23,9 @@
  * questions.
  */
 
-package com.sun.jdi.event;
+package j86.j86.com.sun.jdi.event;
 
-import com.sun.jdi.*;
+import j86.com.sun.jdi.*;
 
 /**
  * Notification of a method return in the target VM. This event
@@ -62,7 +62,7 @@ public interface MethodExitEvent extends LocatableEvent {
      *
      * @return a {@link Value} which mirrors the value to be returned.
      *
-     * @throws java.lang.UnsupportedOperationException if
+     * @throws j86.java.lang.UnsupportedOperationException if
      * the target virtual machine does not support this
      * operation - see
      * {@link VirtualMachine#canGetMethodReturnValues() canGetMethodReturnValues()}

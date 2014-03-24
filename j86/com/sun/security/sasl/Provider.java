@@ -22,10 +22,10 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.security.sasl;
+package j86.com.sun.security.sasl;
 
-import java.security.AccessController;
-import java.security.PrivilegedAction;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
 
 /**
  * The SASL provider.
@@ -43,7 +43,7 @@ import java.security.PrivilegedAction;
  * - NTLM
  */
 
-public final class Provider extends java.security.Provider {
+public final class Provider extends j86.java.security.Provider {
 
     private static final long serialVersionUID = 8622598936488630849L;
 
@@ -59,28 +59,28 @@ public final class Provider extends java.security.Provider {
             public Void run() {
                 // Client mechanisms
                 put("SaslClientFactory.DIGEST-MD5",
-                    "com.sun.security.sasl.digest.FactoryImpl");
+                    "j86.j86.com.sun.security.sasl.digest.FactoryImpl");
                 put("SaslClientFactory.NTLM",
-                    "com.sun.security.sasl.ntlm.FactoryImpl");
+                    "j86.j86.com.sun.security.sasl.ntlm.FactoryImpl");
                 put("SaslClientFactory.GSSAPI",
-                    "com.sun.security.sasl.gsskerb.FactoryImpl");
+                    "j86.j86.com.sun.security.sasl.gsskerb.FactoryImpl");
 
                 put("SaslClientFactory.EXTERNAL",
-                    "com.sun.security.sasl.ClientFactoryImpl");
+                    "j86.com.sun.security.sasl.ClientFactoryImpl");
                 put("SaslClientFactory.PLAIN",
-                    "com.sun.security.sasl.ClientFactoryImpl");
+                    "j86.com.sun.security.sasl.ClientFactoryImpl");
                 put("SaslClientFactory.CRAM-MD5",
-                    "com.sun.security.sasl.ClientFactoryImpl");
+                    "j86.com.sun.security.sasl.ClientFactoryImpl");
 
                 // Server mechanisms
                 put("SaslServerFactory.CRAM-MD5",
-                    "com.sun.security.sasl.ServerFactoryImpl");
+                    "j86.com.sun.security.sasl.ServerFactoryImpl");
                 put("SaslServerFactory.GSSAPI",
-                    "com.sun.security.sasl.gsskerb.FactoryImpl");
+                    "j86.j86.com.sun.security.sasl.gsskerb.FactoryImpl");
                 put("SaslServerFactory.DIGEST-MD5",
-                    "com.sun.security.sasl.digest.FactoryImpl");
+                    "j86.j86.com.sun.security.sasl.digest.FactoryImpl");
                 put("SaslServerFactory.NTLM",
-                    "com.sun.security.sasl.ntlm.FactoryImpl");
+                    "j86.j86.com.sun.security.sasl.ntlm.FactoryImpl");
                 return null;
             }
         });

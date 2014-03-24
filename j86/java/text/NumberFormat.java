@@ -36,26 +36,26 @@
  *
  */
 
-package java.text;
+package j86.java.text;
 
-import java.io.InvalidObjectException;
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.math.BigInteger;
-import java.math.RoundingMode;
-import java.text.spi.NumberFormatProvider;
-import java.util.Currency;
-import java.util.HashMap;
-import java.util.Hashtable;
-import java.util.Locale;
-import java.util.Map;
-import java.util.ResourceBundle;
-import java.util.concurrent.atomic.AtomicInteger;
-import java.util.concurrent.atomic.AtomicLong;
-import java.util.spi.LocaleServiceProvider;
-import sun.util.locale.provider.LocaleProviderAdapter;
-import sun.util.locale.provider.LocaleServiceProviderPool;
+import j86.java.io.InvalidObjectException;
+import j86.java.io.IOException;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.ObjectOutputStream;
+import j86.java.math.BigInteger;
+import j86.java.math.RoundingMode;
+import j86.j86.java.text.spi.NumberFormatProvider;
+import j86.java.util.Currency;
+import j86.java.util.HashMap;
+import j86.java.util.Hashtable;
+import j86.java.util.Locale;
+import j86.java.util.Map;
+import j86.java.util.ResourceBundle;
+import j86.j86.j86.java.util.concurrent.atomic.AtomicInteger;
+import j86.j86.j86.java.util.concurrent.atomic.AtomicLong;
+import j86.j86.java.util.spi.LocaleServiceProvider;
+import j86.j86.j86.sun.util.locale.provider.LocaleProviderAdapter;
+import j86.j86.j86.sun.util.locale.provider.LocaleServiceProviderPool;
 
 /**
  * <code>NumberFormat</code> is the abstract base class for all number
@@ -184,14 +184,14 @@ public abstract class NumberFormat extends Format  {
     /**
      * Field constant used to construct a FieldPosition object. Signifies that
      * the position of the integer part of a formatted number should be returned.
-     * @see java.text.FieldPosition
+     * @see j86.java.text.FieldPosition
      */
     public static final int INTEGER_FIELD = 0;
 
     /**
      * Field constant used to construct a FieldPosition object. Signifies that
      * the position of the fraction part of a formatted number should be returned.
-     * @see java.text.FieldPosition
+     * @see j86.java.text.FieldPosition
      */
     public static final int FRACTION_FIELD = 1;
 
@@ -205,17 +205,17 @@ public abstract class NumberFormat extends Format  {
     /**
      * Formats a number and appends the resulting text to the given string
      * buffer.
-     * The number can be of any subclass of {@link java.lang.Number}.
+     * The number can be of any subclass of {@link j86.java.lang.Number}.
      * <p>
      * This implementation extracts the number's value using
-     * {@link java.lang.Number#longValue()} for all integral type values that
+     * {@link j86.java.lang.Number#longValue()} for all integral type values that
      * can be converted to <code>long</code> without loss of information,
      * including <code>BigInteger</code> values with a
-     * {@link java.math.BigInteger#bitLength() bit length} of less than 64,
-     * and {@link java.lang.Number#doubleValue()} for all other types. It
+     * {@link j86.java.math.BigInteger#bitLength() bit length} of less than 64,
+     * and {@link j86.java.lang.Number#doubleValue()} for all other types. It
      * then calls
-     * {@link #format(long,java.lang.StringBuffer,java.text.FieldPosition)}
-     * or {@link #format(double,java.lang.StringBuffer,java.text.FieldPosition)}.
+     * {@link #format(long,j86.java.lang.StringBuffer,j86.java.text.FieldPosition)}
+     * or {@link #format(double,j86.java.lang.StringBuffer,j86.java.text.FieldPosition)}.
      * This may result in loss of magnitude information and precision for
      * <code>BigInteger</code> and <code>BigDecimal</code> values.
      * @param number     the number to format
@@ -230,7 +230,7 @@ public abstract class NumberFormat extends Format  {
      *                   <code>pos</code> is null
      * @exception        ArithmeticException if rounding is needed with rounding
      *                   mode being set to RoundingMode.UNNECESSARY
-     * @see              java.text.FieldPosition
+     * @see              j86.java.text.FieldPosition
      */
     @Override
     public StringBuffer format(Object number,
@@ -285,7 +285,7 @@ public abstract class NumberFormat extends Format  {
      * @return the formatted String
      * @exception        ArithmeticException if rounding is needed with rounding
      *                   mode being set to RoundingMode.UNNECESSARY
-     * @see java.text.Format#format
+     * @see j86.java.text.Format#format
      */
     public final String format(double number) {
         // Use fast-path for double result if that works
@@ -310,7 +310,7 @@ public abstract class NumberFormat extends Format  {
      * @return the formatted String
      * @exception        ArithmeticException if rounding is needed with rounding
      *                   mode being set to RoundingMode.UNNECESSARY
-     * @see java.text.Format#format
+     * @see j86.java.text.Format#format
      */
     public final String format(long number) {
         return format(number, new StringBuffer(),
@@ -327,7 +327,7 @@ public abstract class NumberFormat extends Format  {
      * @return the formatted StringBuffer
      * @exception        ArithmeticException if rounding is needed with rounding
      *                   mode being set to RoundingMode.UNNECESSARY
-     * @see java.text.Format#format
+     * @see j86.java.text.Format#format
      */
     public abstract StringBuffer format(double number,
                                         StringBuffer toAppendTo,
@@ -343,7 +343,7 @@ public abstract class NumberFormat extends Format  {
      * @return the formatted StringBuffer
      * @exception        ArithmeticException if rounding is needed with rounding
      *                   mode being set to RoundingMode.UNNECESSARY
-     * @see java.text.Format#format
+     * @see j86.java.text.Format#format
      */
     public abstract StringBuffer format(long number,
                                         StringBuffer toAppendTo,
@@ -361,8 +361,8 @@ public abstract class NumberFormat extends Format  {
      * @param source the String to parse
      * @param parsePosition the parse position
      * @return the parsed value
-     * @see java.text.NumberFormat#isParseIntegerOnly
-     * @see java.text.Format#parseObject
+     * @see j86.java.text.NumberFormat#isParseIntegerOnly
+     * @see j86.java.text.Format#parseObject
      */
     public abstract Number parse(String source, ParsePosition parsePosition);
 
@@ -418,7 +418,7 @@ public abstract class NumberFormat extends Format  {
 
     /**
      * Returns a general-purpose number format for the current default
-     * {@link java.util.Locale.Category#FORMAT FORMAT} locale.
+     * {@link j86.java.util.Locale.Category#FORMAT FORMAT} locale.
      * This is the same as calling
      * {@link #getNumberInstance() getNumberInstance()}.
      *
@@ -432,7 +432,7 @@ public abstract class NumberFormat extends Format  {
     /**
      * Returns a general-purpose number format for the specified locale.
      * This is the same as calling
-     * {@link #getNumberInstance(java.util.Locale) getNumberInstance(inLocale)}.
+     * {@link #getNumberInstance(j86.java.util.Locale) getNumberInstance(inLocale)}.
      *
      * @param inLocale the desired locale
      * @return the {@code NumberFormat} instance for general-purpose number
@@ -444,15 +444,15 @@ public abstract class NumberFormat extends Format  {
 
     /**
      * Returns a general-purpose number format for the current default
-     * {@link java.util.Locale.Category#FORMAT FORMAT} locale.
+     * {@link j86.java.util.Locale.Category#FORMAT FORMAT} locale.
      * <p>This is equivalent to calling
      * {@link #getNumberInstance(Locale)
      *     getNumberInstance(Locale.getDefault(Locale.Category.FORMAT))}.
      *
      * @return the {@code NumberFormat} instance for general-purpose number
      * formatting
-     * @see java.util.Locale#getDefault(java.util.Locale.Category)
-     * @see java.util.Locale.Category#FORMAT
+     * @see j86.java.util.Locale#getDefault(java.util.Locale.Category)
+     * @see j86.java.util.Locale.Category#FORMAT
      */
     public final static NumberFormat getNumberInstance() {
         return getInstance(Locale.getDefault(Locale.Category.FORMAT), NUMBERSTYLE);
@@ -471,10 +471,10 @@ public abstract class NumberFormat extends Format  {
 
     /**
      * Returns an integer number format for the current default
-     * {@link java.util.Locale.Category#FORMAT FORMAT} locale. The
+     * {@link j86.java.util.Locale.Category#FORMAT FORMAT} locale. The
      * returned number format is configured to round floating point numbers
      * to the nearest integer using half-even rounding (see {@link
-     * java.math.RoundingMode#HALF_EVEN RoundingMode.HALF_EVEN}) for formatting,
+     * j86.java.math.RoundingMode#HALF_EVEN RoundingMode.HALF_EVEN}) for formatting,
      * and to parse only the integer part of an input string (see {@link
      * #isParseIntegerOnly isParseIntegerOnly}).
      * <p>This is equivalent to calling
@@ -482,8 +482,8 @@ public abstract class NumberFormat extends Format  {
      *     getIntegerInstance(Locale.getDefault(Locale.Category.FORMAT))}.
      *
      * @see #getRoundingMode()
-     * @see java.util.Locale#getDefault(java.util.Locale.Category)
-     * @see java.util.Locale.Category#FORMAT
+     * @see j86.java.util.Locale#getDefault(java.util.Locale.Category)
+     * @see j86.java.util.Locale.Category#FORMAT
      * @return a number format for integer values
      * @since 1.4
      */
@@ -495,7 +495,7 @@ public abstract class NumberFormat extends Format  {
      * Returns an integer number format for the specified locale. The
      * returned number format is configured to round floating point numbers
      * to the nearest integer using half-even rounding (see {@link
-     * java.math.RoundingMode#HALF_EVEN RoundingMode.HALF_EVEN}) for formatting,
+     * j86.java.math.RoundingMode#HALF_EVEN RoundingMode.HALF_EVEN}) for formatting,
      * and to parse only the integer part of an input string (see {@link
      * #isParseIntegerOnly isParseIntegerOnly}).
      *
@@ -510,14 +510,14 @@ public abstract class NumberFormat extends Format  {
 
     /**
      * Returns a currency format for the current default
-     * {@link java.util.Locale.Category#FORMAT FORMAT} locale.
+     * {@link j86.java.util.Locale.Category#FORMAT FORMAT} locale.
      * <p>This is equivalent to calling
      * {@link #getCurrencyInstance(Locale)
      *     getCurrencyInstance(Locale.getDefault(Locale.Category.FORMAT))}.
      *
      * @return the {@code NumberFormat} instance for currency formatting
-     * @see java.util.Locale#getDefault(java.util.Locale.Category)
-     * @see java.util.Locale.Category#FORMAT
+     * @see j86.java.util.Locale#getDefault(java.util.Locale.Category)
+     * @see j86.java.util.Locale.Category#FORMAT
      */
     public final static NumberFormat getCurrencyInstance() {
         return getInstance(Locale.getDefault(Locale.Category.FORMAT), CURRENCYSTYLE);
@@ -535,14 +535,14 @@ public abstract class NumberFormat extends Format  {
 
     /**
      * Returns a percentage format for the current default
-     * {@link java.util.Locale.Category#FORMAT FORMAT} locale.
+     * {@link j86.java.util.Locale.Category#FORMAT FORMAT} locale.
      * <p>This is equivalent to calling
      * {@link #getPercentInstance(Locale)
      *     getPercentInstance(Locale.getDefault(Locale.Category.FORMAT))}.
      *
      * @return the {@code NumberFormat} instance for percentage formatting
-     * @see java.util.Locale#getDefault(java.util.Locale.Category)
-     * @see java.util.Locale.Category#FORMAT
+     * @see j86.java.util.Locale#getDefault(java.util.Locale.Category)
+     * @see j86.java.util.Locale.Category#FORMAT
      */
     public final static NumberFormat getPercentInstance() {
         return getInstance(Locale.getDefault(Locale.Category.FORMAT), PERCENTSTYLE);
@@ -580,9 +580,9 @@ public abstract class NumberFormat extends Format  {
      * localized instances.
      * The returned array represents the union of locales supported by the Java
      * runtime and by installed
-     * {@link java.text.spi.NumberFormatProvider NumberFormatProvider} implementations.
+     * {@link j86.j86.java.text.spi.NumberFormatProvider NumberFormatProvider} implementations.
      * It must contain at least a <code>Locale</code> instance equal to
-     * {@link java.util.Locale#US Locale.US}.
+     * {@link j86.java.util.Locale#US Locale.US}.
      *
      * @return An array of locales for which localized
      *         <code>NumberFormat</code> instances are available.
@@ -784,7 +784,7 @@ public abstract class NumberFormat extends Format  {
      * currency values. The initial value is derived in a locale dependent
      * way. The returned value may be null if no valid
      * currency could be determined and no currency has been set using
-     * {@link #setCurrency(java.util.Currency) setCurrency}.
+     * {@link #setCurrency(j86.java.util.Currency) setCurrency}.
      * <p>
      * The default implementation throws
      * <code>UnsupportedOperationException</code>.
@@ -817,9 +817,9 @@ public abstract class NumberFormat extends Format  {
     }
 
     /**
-     * Gets the {@link java.math.RoundingMode} used in this NumberFormat.
+     * Gets the {@link j86.java.math.RoundingMode} used in this NumberFormat.
      * The default implementation of this method in NumberFormat
-     * always throws {@link java.lang.UnsupportedOperationException}.
+     * always throws {@link j86.java.lang.UnsupportedOperationException}.
      * Subclasses which handle different rounding modes should override
      * this method.
      *
@@ -834,9 +834,9 @@ public abstract class NumberFormat extends Format  {
     }
 
     /**
-     * Sets the {@link java.math.RoundingMode} used in this NumberFormat.
+     * Sets the {@link j86.java.math.RoundingMode} used in this NumberFormat.
      * The default implementation of this method in NumberFormat always
-     * throws {@link java.lang.UnsupportedOperationException}.
+     * throws {@link j86.java.lang.UnsupportedOperationException}.
      * Subclasses which handle different rounding modes should override
      * this method.
      *

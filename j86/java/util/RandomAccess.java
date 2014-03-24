@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.util;
+package j86.java.util;
 
 /**
  * Marker interface used by <tt>List</tt> implementations to indicate that

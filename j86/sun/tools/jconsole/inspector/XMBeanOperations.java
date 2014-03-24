@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.tools.jconsole.inspector;
+package j86.j86.sun.tools.jconsole.inspector;
 
-import javax.management.*;
-import java.util.ArrayList;
+import j86.javax.management.*;
+import j86.java.util.ArrayList;
 
-import sun.tools.jconsole.MBeansTab;
+import j86.sun.tools.jconsole.MBeansTab;
 
 @SuppressWarnings("serial")
 public class XMBeanOperations extends XOperations {

@@ -23,10 +23,10 @@
  * questions.
  */
 
-package com.sun.net.httpserver;
+package com.j86.j86.sun.net.httpserver;
 
-import java.io.IOException;
-import java.util.*;
+import j86.java.io.IOException;
+import j86.java.util.*;
 
 /**
  * A filter used to pre- and post-process incoming requests. Pre-processing occurs

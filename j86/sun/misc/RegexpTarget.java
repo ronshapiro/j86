@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.misc;
+package j86.sun.misc;
 
 /**
  * A class to define actions to be performed when a regular expression match

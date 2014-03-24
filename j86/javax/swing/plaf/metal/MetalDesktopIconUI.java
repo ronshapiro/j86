@@ -23,17 +23,17 @@
  * questions.
  */
 
-package javax.swing.plaf.metal;
+package j86.j86.j86.javax.swing.plaf.metal;
 
-import java.awt.*;
-import java.awt.event.*;
-import javax.swing.*;
-import javax.swing.border.*;
-import javax.swing.plaf.*;
-import java.beans.*;
-import java.util.EventListener;
-import java.io.Serializable;
-import javax.swing.plaf.basic.BasicDesktopIconUI;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.border.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.java.beans.*;
+import j86.java.util.EventListener;
+import j86.java.io.Serializable;
+import j86.j86.j86.javax.swing.plaf.basic.BasicDesktopIconUI;
 
 /**
  * Metal desktop icon.

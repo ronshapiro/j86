@@ -23,18 +23,18 @@
  * questions.
  */
 
-package java.awt;
+package j86.java.awt;
 
 /**
  * The {@code GridBagLayoutInfo} is an utility class for
  * {@code GridBagLayout} layout manager.
  * It stores align, size and baseline parameters for every component within a container.
  * <p>
- * @see       java.awt.GridBagLayout
- * @see       java.awt.GridBagConstraints
+ * @see       j86.java.awt.GridBagLayout
+ * @see       j86.java.awt.GridBagConstraints
  * @since 1.6
  */
-public class GridBagLayoutInfo implements java.io.Serializable {
+public class GridBagLayoutInfo implements j86.java.io.Serializable {
     /*
      * serialVersionUID
      */

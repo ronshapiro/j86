@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.smartcardio;
+package j86.javax.smartcardio;
 
-import java.util.*;
+import j86.java.util.*;
 
 /**
  * A Smart Card terminal, sometimes referred to as a Smart Card Reader.

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.sound.sampled;
+package j86.javax.sound.sampled;
 
 
 
@@ -51,7 +51,7 @@ package javax.sound.sampled;
  *
  * @author Kara Kytle
  */
-public interface LineListener extends java.util.EventListener {
+public interface LineListener extends j86.java.util.EventListener {
 
     /**
      * Informs the listener that a line's state has changed.  The listener can then invoke

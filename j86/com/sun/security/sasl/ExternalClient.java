@@ -23,9 +23,9 @@
  * questions.
  */
 
-package com.sun.security.sasl;
+package j86.com.sun.security.sasl;
 
-import javax.security.sasl.*;
+import j86.javax.security.sasl.*;
 
 /**
   * Implements the EXTERNAL SASL client mechanism.
@@ -50,7 +50,7 @@ final class ExternalClient implements SaslClient {
         if (authorizationID != null) {
             try {
                 username = authorizationID.getBytes("UTF8");
-            } catch (java.io.UnsupportedEncodingException e) {
+            } catch (j86.java.io.UnsupportedEncodingException e) {
                 throw new SaslException("Cannot convert " + authorizationID +
                     " into UTF-8", e);
             }

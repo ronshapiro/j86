@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.misc;
-import java.io.Console;
-import java.nio.charset.Charset;
+package j86.sun.misc;
+import j86.java.io.Console;
+import j86.j86.java.nio.charset.Charset;
 
 public interface JavaIOAccess {
     public Console console();

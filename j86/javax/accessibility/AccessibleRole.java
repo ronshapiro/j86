@@ -23,11 +23,11 @@
  * questions.
  */
 
-package javax.accessibility;
+package j86.javax.accessibility;
 
-import java.util.Locale;
-import java.util.MissingResourceException;
-import java.util.ResourceBundle;
+import j86.java.util.Locale;
+import j86.java.util.MissingResourceException;
+import j86.java.util.ResourceBundle;
 
 /**
  * <P>Class AccessibleRole determines the role of a component.  The role of a
@@ -523,7 +523,7 @@ public class AccessibleRole extends AccessibleBundle {
 
     /**
      * A DATE_EDITOR is a component that allows users to edit
-     * java.util.Date and java.util.Time objects
+     * j86.java.util.Date and java.util.Time objects
      */
     public static final AccessibleRole DATE_EDITOR
         = new AccessibleRole("dateeditor");

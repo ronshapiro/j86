@@ -22,16 +22,16 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.plaf.synth;
+package j86.j86.j86.javax.swing.plaf.synth;
 
-import sun.swing.SwingUtilities2;
-import sun.swing.MenuItemLayoutHelper;
+import j86.sun.swing.SwingUtilities2;
+import j86.sun.swing.MenuItemLayoutHelper;
 
-import java.awt.*;
-import javax.swing.*;
-import javax.swing.plaf.basic.BasicHTML;
-import javax.swing.text.*;
-import sun.swing.plaf.synth.*;
+import j86.java.awt.*;
+import j86.javax.swing.*;
+import j86.j86.j86.javax.swing.plaf.basic.BasicHTML;
+import j86.j86.javax.swing.text.*;
+import j86.j86.j86.sun.swing.plaf.synth.*;
 
 /**
  * Wrapper for primitive graphics calls.
@@ -609,7 +609,7 @@ public class SynthGraphicsUtils {
      * the SynthIcon with a given SynthContext.
      */
     private static class SynthIconWrapper implements Icon {
-        private static final java.util.List<SynthIconWrapper> CACHE = new java.util.ArrayList<SynthIconWrapper>(1);
+        private static final j86.java.util.List<SynthIconWrapper> CACHE = new java.util.ArrayList<SynthIconWrapper>(1);
 
         private SynthIcon synthIcon;
         private SynthContext context;

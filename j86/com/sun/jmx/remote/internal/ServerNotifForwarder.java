@@ -23,38 +23,38 @@
  * questions.
  */
 
-package com.sun.jmx.remote.internal;
+package j86.com.sun.jmx.remote.internal;
 
-import com.sun.jmx.remote.security.NotificationAccessController;
-import com.sun.jmx.remote.util.ClassLogger;
-import com.sun.jmx.remote.util.EnvHelp;
-import java.io.IOException;
-import java.security.AccessControlContext;
-import java.security.AccessController;
-import java.security.PrivilegedActionException;
-import java.security.PrivilegedExceptionAction;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import javax.management.InstanceNotFoundException;
-import javax.management.ListenerNotFoundException;
-import javax.management.MBeanPermission;
-import javax.management.MBeanServer;
-import javax.management.MBeanServerDelegate;
-import javax.management.MBeanServerNotification;
-import javax.management.Notification;
-import javax.management.NotificationBroadcaster;
-import javax.management.NotificationFilter;
-import javax.management.ObjectInstance;
-import javax.management.ObjectName;
-import javax.management.remote.NotificationResult;
-import javax.management.remote.TargetedNotification;
-import javax.management.MalformedObjectNameException;
-import javax.security.auth.Subject;
+import j86.com.sun.jmx.remote.security.NotificationAccessController;
+import j86.com.sun.jmx.remote.util.ClassLogger;
+import j86.com.sun.jmx.remote.util.EnvHelp;
+import j86.java.io.IOException;
+import j86.java.security.AccessControlContext;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedActionException;
+import j86.java.security.PrivilegedExceptionAction;
+import j86.java.util.ArrayList;
+import j86.java.util.Collections;
+import j86.java.util.HashMap;
+import j86.java.util.HashSet;
+import j86.java.util.List;
+import j86.java.util.Map;
+import j86.java.util.Set;
+import j86.javax.management.InstanceNotFoundException;
+import j86.javax.management.ListenerNotFoundException;
+import j86.javax.management.MBeanPermission;
+import j86.javax.management.MBeanServer;
+import j86.javax.management.MBeanServerDelegate;
+import j86.javax.management.MBeanServerNotification;
+import j86.javax.management.Notification;
+import j86.javax.management.NotificationBroadcaster;
+import j86.javax.management.NotificationFilter;
+import j86.javax.management.ObjectInstance;
+import j86.javax.management.ObjectName;
+import j86.j86.javax.management.remote.NotificationResult;
+import j86.j86.javax.management.remote.TargetedNotification;
+import j86.javax.management.MalformedObjectNameException;
+import j86.javax.security.auth.Subject;
 
 public class ServerNotifForwarder {
 
@@ -502,5 +502,5 @@ public class ServerNotifForwarder {
     private final NotificationAccessController notificationAccessController;
 
     private static final ClassLogger logger =
-        new ClassLogger("javax.management.remote.misc", "ServerNotifForwarder");
+        new ClassLogger("j86.j86.javax.management.remote.misc", "ServerNotifForwarder");
 }

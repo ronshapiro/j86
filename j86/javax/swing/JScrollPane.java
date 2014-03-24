@@ -23,26 +23,26 @@
  * questions.
  */
 
-package javax.swing;
+package j86.javax.swing;
 
-import javax.swing.plaf.*;
-import javax.swing.border.*;
-import javax.swing.event.*;
-import javax.accessibility.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.javax.swing.border.*;
+import j86.j86.javax.swing.event.*;
+import j86.javax.accessibility.*;
 
-import java.awt.Component;
-import java.awt.ComponentOrientation;
-import java.awt.Rectangle;
-import java.awt.Insets;
-import java.awt.LayoutManager;
-import java.awt.Point;
+import j86.java.awt.Component;
+import j86.java.awt.ComponentOrientation;
+import j86.java.awt.Rectangle;
+import j86.java.awt.Insets;
+import j86.java.awt.LayoutManager;
+import j86.java.awt.Point;
 
-import java.io.ObjectOutputStream;
-import java.io.IOException;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.IOException;
 
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
-import java.beans.Transient;
+import j86.java.beans.PropertyChangeEvent;
+import j86.java.beans.PropertyChangeListener;
+import j86.java.beans.Transient;
 
 /**
  * Provides a scrollable view of a lightweight component.
@@ -147,8 +147,8 @@ import java.beans.Transient;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @see JScrollBar
  * @see JViewport
@@ -414,7 +414,7 @@ public class JScrollPane extends JComponent implements ScrollPaneConstants, Acce
     /**
      * Sets the layout manager for this <code>JScrollPane</code>.
      * This method overrides <code>setLayout</code> in
-     * <code>java.awt.Container</code> to ensure that only
+     * <code>j86.java.awt.Container</code> to ensure that only
      * <code>LayoutManager</code>s which
      * are subclasses of <code>ScrollPaneLayout</code> can be used in a
      * <code>JScrollPane</code>. If <code>layout</code> is non-null, this
@@ -423,8 +423,8 @@ public class JScrollPane extends JComponent implements ScrollPaneConstants, Acce
      * @param layout the specified layout manager
      * @exception ClassCastException if layout is not a
      *                  <code>ScrollPaneLayout</code>
-     * @see java.awt.Container#getLayout
-     * @see java.awt.Container#setLayout
+     * @see j86.java.awt.Container#getLayout
+     * @see j86.java.awt.Container#setLayout
      *
      * @beaninfo
      *    hidden: true
@@ -450,10 +450,10 @@ public class JScrollPane extends JComponent implements ScrollPaneConstants, Acce
      * validated.
      *
      * @return true
-     * @see java.awt.Container#validate
+     * @see j86.java.awt.Container#validate
      * @see JComponent#revalidate
      * @see JComponent#isValidateRoot
-     * @see java.awt.Container#isValidateRoot
+     * @see j86.java.awt.Container#isValidateRoot
      *
      * @beaninfo
      *    hidden: true
@@ -678,8 +678,8 @@ public class JScrollPane extends JComponent implements ScrollPaneConstants, Acce
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      *
      * @see Scrollable
      * @see JScrollPane#createVerticalScrollBar
@@ -1278,11 +1278,11 @@ public class JScrollPane extends JComponent implements ScrollPaneConstants, Acce
      *
      * @param  co one of the following values:
      * <ul>
-     * <li>java.awt.ComponentOrientation.LEFT_TO_RIGHT
-     * <li>java.awt.ComponentOrientation.RIGHT_TO_LEFT
-     * <li>java.awt.ComponentOrientation.UNKNOWN
+     * <li>j86.java.awt.ComponentOrientation.LEFT_TO_RIGHT
+     * <li>j86.java.awt.ComponentOrientation.RIGHT_TO_LEFT
+     * <li>j86.java.awt.ComponentOrientation.UNKNOWN
      * </ul>
-     * @see java.awt.ComponentOrientation
+     * @see j86.java.awt.ComponentOrientation
      */
     public void setComponentOrientation( ComponentOrientation co ) {
         super.setComponentOrientation( co );
@@ -1312,8 +1312,8 @@ public class JScrollPane extends JComponent implements ScrollPaneConstants, Acce
      *                      automatically for a MouseWheelEvent,
      *                      <code>false</code> otherwise.
      * @see #isWheelScrollingEnabled
-     * @see java.awt.event.MouseWheelEvent
-     * @see java.awt.event.MouseWheelListener
+     * @see j86.j86.java.awt.event.MouseWheelEvent
+     * @see j86.j86.java.awt.event.MouseWheelListener
      * @since 1.4
      * @beaninfo
      *       bound: true
@@ -1438,8 +1438,8 @@ public class JScrollPane extends JComponent implements ScrollPaneConstants, Acce
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     protected class AccessibleJScrollPane extends AccessibleJComponent
         implements ChangeListener, PropertyChangeListener {

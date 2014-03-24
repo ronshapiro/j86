@@ -23,13 +23,13 @@
  * questions.
  */
 
-package java.beans;
+package j86.java.beans;
 
 /**
  * A customizer class provides a complete custom GUI for customizing
  * a target Java Bean.
  * <P>
- * Each customizer should inherit from the java.awt.Component class so
+ * Each customizer should inherit from the j86.java.awt.Component class so
  * it can be instantiated inside an AWT dialog or panel.
  * <P>
  * Each customizer should have a null constructor.

@@ -23,18 +23,18 @@
  * questions.
  */
 
-package sun.awt;
+package j86.sun.awt;
 
-import java.awt.*;
+import j86.java.awt.*;
 
-import sun.util.logging.PlatformLogger;
+import j86.j86.sun.util.logging.PlatformLogger;
 
 public abstract class SunGraphicsCallback {
     public static final int HEAVYWEIGHTS = 0x1;
     public static final int LIGHTWEIGHTS = 0x2;
     public static final int TWO_PASSES = 0x4;
 
-    private static final PlatformLogger log = PlatformLogger.getLogger("sun.awt.SunGraphicsCallback");
+    private static final PlatformLogger log = PlatformLogger.getLogger("j86.sun.awt.SunGraphicsCallback");
 
     public abstract void run(Component comp, Graphics cg);
 

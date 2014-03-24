@@ -23,18 +23,18 @@
  * questions.
  */
 
-package sun.tools.jar;
+package j86.sun.tools.jar;
 
-import java.io.*;
-import java.util.*;
-import java.security.*;
+import j86.java.io.*;
+import j86.java.util.*;
+import j86.java.security.*;
 
-import sun.net.www.MessageHeader;
-import java.util.Base64;
+import j86.j86.sun.net.www.MessageHeader;
+import j86.java.util.Base64;
 
 
-import sun.security.pkcs.*;
-import sun.security.x509.AlgorithmId;
+import j86.sun.security.pkcs.*;
+import j86.sun.security.x509.AlgorithmId;
 
 /**
  * <p>A signature file as defined in the <a

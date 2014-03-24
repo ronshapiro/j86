@@ -22,10 +22,10 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing;
+package j86.javax.swing;
 
-import java.awt.*;
-import java.awt.event.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
 
 /**
  * The editor component used for JComboBox components.

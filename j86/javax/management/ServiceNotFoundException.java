@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.management;
+package j86.javax.management;
 
 //RI import
-import javax.management.OperationsException;
+import j86.javax.management.OperationsException;
 
 
 /**

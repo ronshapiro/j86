@@ -23,22 +23,22 @@
  * questions.
  */
 
-package sun.security.pkcs;
+package j86.sun.security.pkcs;
 
-import java.io.IOException;
-import java.io.OutputStream;
-import java.security.cert.CertificateException;
-import java.util.Locale;
-import java.util.Date;
-import java.util.Hashtable;
-import sun.security.x509.CertificateExtensions;
-import sun.security.util.Debug;
-import sun.security.util.DerEncoder;
-import sun.security.util.DerValue;
-import sun.security.util.DerInputStream;
-import sun.security.util.DerOutputStream;
-import sun.security.util.ObjectIdentifier;
-import sun.misc.HexDumpEncoder;
+import j86.java.io.IOException;
+import j86.java.io.OutputStream;
+import j86.j86.java.security.cert.CertificateException;
+import j86.java.util.Locale;
+import j86.java.util.Date;
+import j86.java.util.Hashtable;
+import j86.sun.security.x509.CertificateExtensions;
+import j86.sun.security.util.Debug;
+import j86.sun.security.util.DerEncoder;
+import j86.sun.security.util.DerValue;
+import j86.sun.security.util.DerInputStream;
+import j86.sun.security.util.DerOutputStream;
+import j86.sun.security.util.ObjectIdentifier;
+import j86.sun.misc.HexDumpEncoder;
 
 /**
  * Class supporting any PKCS9 attributes.
@@ -335,19 +335,19 @@ public class PKCS9Attribute implements DerEncoder {
 
     static {
         try {
-            Class<?> str = Class.forName("[Ljava.lang.String;");
+            Class<?> str = Class.forName("[Lj86.java.lang.String;");
 
             VALUE_CLASSES[0] = null;  // not used
             VALUE_CLASSES[1] = str;   // EMailAddress
             VALUE_CLASSES[2] = str;   // UnstructuredName
             VALUE_CLASSES[3] =        // ContentType
-                Class.forName("sun.security.util.ObjectIdentifier");
+                Class.forName("j86.sun.security.util.ObjectIdentifier");
             VALUE_CLASSES[4] = BYTE_ARRAY_CLASS; // MessageDigest (byte[])
-            VALUE_CLASSES[5] = Class.forName("java.util.Date"); // SigningTime
+            VALUE_CLASSES[5] = Class.forName("j86.java.util.Date"); // SigningTime
             VALUE_CLASSES[6] =        // Countersignature
-                Class.forName("[Lsun.security.pkcs.SignerInfo;");
+                Class.forName("[Lj86.sun.security.pkcs.SignerInfo;");
             VALUE_CLASSES[7] =        // ChallengePassword
-                Class.forName("java.lang.String");
+                Class.forName("j86.java.lang.String");
             VALUE_CLASSES[8] = str;   // UnstructuredAddress
             VALUE_CLASSES[9] = null;  // ExtendedCertificateAttributes
             VALUE_CLASSES[10] = null;  // IssuerAndSerialNumber
@@ -355,7 +355,7 @@ public class PKCS9Attribute implements DerEncoder {
             VALUE_CLASSES[12] = null;  // not used
             VALUE_CLASSES[13] = null;  // not used
             VALUE_CLASSES[14] =        // ExtensionRequest
-                Class.forName("sun.security.x509.CertificateExtensions");
+                Class.forName("j86.sun.security.x509.CertificateExtensions");
             VALUE_CLASSES[15] = null;  // not supported yet
             VALUE_CLASSES[16] = null;  // not supported yet
             VALUE_CLASSES[17] = BYTE_ARRAY_CLASS;  // SignatureTimestampToken

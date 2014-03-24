@@ -23,12 +23,12 @@
  * questions.
  */
 
-package java.net;
+package j86.java.net;
 
-import java.util.Enumeration;
-import java.util.NoSuchElementException;
-import sun.security.action.*;
-import java.security.AccessController;
+import j86.java.util.Enumeration;
+import j86.java.util.NoSuchElementException;
+import j86.sun.security.action.*;
+import j86.java.security.AccessController;
 
 /**
  * This class represents a Network Interface made up of a name,
@@ -54,7 +54,7 @@ public final class NetworkInterface {
 
     static {
         AccessController.doPrivileged(
-            new java.security.PrivilegedAction<Void>() {
+            new j86.java.security.PrivilegedAction<Void>() {
                 public Void run() {
                     System.loadLibrary("net");
                     return null;
@@ -166,8 +166,8 @@ public final class NetworkInterface {
      *         InterfaceAddresss of this network interface
      * @since 1.6
      */
-    public java.util.List<InterfaceAddress> getInterfaceAddresses() {
-        java.util.List<InterfaceAddress> lst = new java.util.ArrayList<InterfaceAddress>(1);
+    public j86.java.util.List<InterfaceAddress> getInterfaceAddresses() {
+        j86.java.util.List<InterfaceAddress> lst = new java.util.ArrayList<InterfaceAddress>(1);
         SecurityManager sec = System.getSecurityManager();
         for (int j=0; j<bindings.length; j++) {
             try {
@@ -507,7 +507,7 @@ public final class NetworkInterface {
      * @param   obj   the object to compare against.
      * @return  {@code true} if the objects are the same;
      *          {@code false} otherwise.
-     * @see     java.net.InetAddress#getAddress()
+     * @see     j86.java.net.InetAddress#getAddress()
      */
     public boolean equals(Object obj) {
         if (!(obj instanceof NetworkInterface)) {

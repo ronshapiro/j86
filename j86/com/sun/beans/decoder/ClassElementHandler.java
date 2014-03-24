@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.beans.decoder;
+package j86.j86.com.sun.beans.decoder;
 
 /**
  * This class is intended to handle &lt;class&gt; element.
@@ -30,12 +30,12 @@ package com.sun.beans.decoder;
  * The result value is created from text of the body of this element.
  * The body parsing is described in the class {@link StringElementHandler}.
  * For example:<pre>
- * &lt;class&gt;java.lang.Class&lt;/class&gt;</pre>
+ * &lt;class&gt;j86.java.lang.Class&lt;/class&gt;</pre>
  * is shortcut to<pre>
- * &lt;method name="forName" class="java.lang.Class"&gt;
- *     &lt;string&gt;java.lang.Class&lt;/string&gt;
+ * &lt;method name="forName" class="j86.java.lang.Class"&gt;
+ *     &lt;string&gt;j86.java.lang.Class&lt;/string&gt;
  * &lt;/method&gt;</pre>
- * which is equivalent to {@code Class.forName("java.lang.Class")} in Java code.
+ * which is equivalent to {@code Class.forName("j86.java.lang.Class")} in Java code.
  * <p>The following attribute is supported:
  * <dl>
  * <dt>id

@@ -36,25 +36,25 @@
  *
  */
 
-package java.text;
+package j86.java.text;
 
-import java.io.IOException;
-import java.io.InvalidObjectException;
-import java.io.ObjectInputStream;
-import java.math.BigDecimal;
-import java.math.BigInteger;
-import java.math.RoundingMode;
-import java.text.spi.NumberFormatProvider;
-import java.util.ArrayList;
-import java.util.Currency;
-import java.util.Locale;
-import java.util.ResourceBundle;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentMap;
-import java.util.concurrent.atomic.AtomicInteger;
-import java.util.concurrent.atomic.AtomicLong;
-import sun.util.locale.provider.LocaleProviderAdapter;
-import sun.util.locale.provider.ResourceBundleBasedAdapter;
+import j86.java.io.IOException;
+import j86.java.io.InvalidObjectException;
+import j86.java.io.ObjectInputStream;
+import j86.java.math.BigDecimal;
+import j86.java.math.BigInteger;
+import j86.java.math.RoundingMode;
+import j86.j86.java.text.spi.NumberFormatProvider;
+import j86.java.util.ArrayList;
+import j86.java.util.Currency;
+import j86.java.util.Locale;
+import j86.java.util.ResourceBundle;
+import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.j86.java.util.concurrent.ConcurrentMap;
+import j86.j86.j86.java.util.concurrent.atomic.AtomicInteger;
+import j86.j86.j86.java.util.concurrent.atomic.AtomicLong;
+import j86.j86.j86.sun.util.locale.provider.LocaleProviderAdapter;
+import j86.j86.j86.sun.util.locale.provider.ResourceBundleBasedAdapter;
 
 /**
  * <code>DecimalFormat</code> is a concrete subclass of
@@ -294,8 +294,8 @@ import sun.util.locale.provider.ResourceBundleBasedAdapter;
  * <h4>Rounding</h4>
  *
  * <code>DecimalFormat</code> provides rounding modes defined in
- * {@link java.math.RoundingMode} for formatting.  By default, it uses
- * {@link java.math.RoundingMode#HALF_EVEN RoundingMode.HALF_EVEN}.
+ * {@link j86.java.math.RoundingMode} for formatting.  By default, it uses
+ * {@link j86.java.math.RoundingMode#HALF_EVEN RoundingMode.HALF_EVEN}.
  *
  * <h4>Digits</h4>
  *
@@ -382,7 +382,7 @@ public class DecimalFormat extends NumberFormat {
 
     /**
      * Creates a DecimalFormat using the default pattern and symbols
-     * for the default {@link java.util.Locale.Category#FORMAT FORMAT} locale.
+     * for the default {@link j86.java.util.Locale.Category#FORMAT FORMAT} locale.
      * This is a convenient way to obtain a
      * DecimalFormat when internationalization is not the main concern.
      * <p>
@@ -391,10 +391,10 @@ public class DecimalFormat extends NumberFormat {
      * return the most appropriate sub-class of NumberFormat for a given
      * locale.
      *
-     * @see java.text.NumberFormat#getInstance
-     * @see java.text.NumberFormat#getNumberInstance
-     * @see java.text.NumberFormat#getCurrencyInstance
-     * @see java.text.NumberFormat#getPercentInstance
+     * @see j86.java.text.NumberFormat#getInstance
+     * @see j86.java.text.NumberFormat#getNumberInstance
+     * @see j86.java.text.NumberFormat#getCurrencyInstance
+     * @see j86.java.text.NumberFormat#getPercentInstance
      */
     public DecimalFormat() {
         // Get the pattern for the default locale.
@@ -413,7 +413,7 @@ public class DecimalFormat extends NumberFormat {
 
     /**
      * Creates a DecimalFormat using the given pattern and the symbols
-     * for the default {@link java.util.Locale.Category#FORMAT FORMAT} locale.
+     * for the default {@link j86.java.util.Locale.Category#FORMAT FORMAT} locale.
      * This is a convenient way to obtain a
      * DecimalFormat when internationalization is not the main concern.
      * <p>
@@ -425,10 +425,10 @@ public class DecimalFormat extends NumberFormat {
      * @param pattern a non-localized pattern string.
      * @exception NullPointerException if <code>pattern</code> is null
      * @exception IllegalArgumentException if the given pattern is invalid.
-     * @see java.text.NumberFormat#getInstance
-     * @see java.text.NumberFormat#getNumberInstance
-     * @see java.text.NumberFormat#getCurrencyInstance
-     * @see java.text.NumberFormat#getPercentInstance
+     * @see j86.java.text.NumberFormat#getInstance
+     * @see j86.java.text.NumberFormat#getNumberInstance
+     * @see j86.java.text.NumberFormat#getCurrencyInstance
+     * @see j86.java.text.NumberFormat#getPercentInstance
      */
     public DecimalFormat(String pattern) {
         // Always applyPattern after the symbols are set
@@ -452,11 +452,11 @@ public class DecimalFormat extends NumberFormat {
      * @param symbols the set of symbols to be used
      * @exception NullPointerException if any of the given arguments is null
      * @exception IllegalArgumentException if the given pattern is invalid
-     * @see java.text.NumberFormat#getInstance
-     * @see java.text.NumberFormat#getNumberInstance
-     * @see java.text.NumberFormat#getCurrencyInstance
-     * @see java.text.NumberFormat#getPercentInstance
-     * @see java.text.DecimalFormatSymbols
+     * @see j86.java.text.NumberFormat#getInstance
+     * @see j86.java.text.NumberFormat#getNumberInstance
+     * @see j86.java.text.NumberFormat#getCurrencyInstance
+     * @see j86.java.text.NumberFormat#getPercentInstance
+     * @see j86.java.text.DecimalFormatSymbols
      */
     public DecimalFormat (String pattern, DecimalFormatSymbols symbols) {
         // Always applyPattern after the symbols are set
@@ -469,7 +469,7 @@ public class DecimalFormat extends NumberFormat {
     /**
      * Formats a number and appends the resulting text to the given string
      * buffer.
-     * The number can be of any subclass of {@link java.lang.Number}.
+     * The number can be of any subclass of {@link j86.java.lang.Number}.
      * <p>
      * This implementation uses the maximum precision permitted.
      * @param number     the number to format
@@ -484,7 +484,7 @@ public class DecimalFormat extends NumberFormat {
      *                   <code>pos</code> is null
      * @exception        ArithmeticException if rounding is needed with rounding
      *                   mode being set to RoundingMode.UNNECESSARY
-     * @see              java.text.FieldPosition
+     * @see              j86.java.text.FieldPosition
      */
     @Override
     public final StringBuffer format(Object number,
@@ -517,7 +517,7 @@ public class DecimalFormat extends NumberFormat {
      * @exception ArithmeticException if rounding is needed with rounding
      *            mode being set to RoundingMode.UNNECESSARY
      * @return The formatted number string
-     * @see java.text.FieldPosition
+     * @see j86.java.text.FieldPosition
      */
     @Override
     public StringBuffer format(double number, StringBuffer result,
@@ -635,7 +635,7 @@ public class DecimalFormat extends NumberFormat {
      * @exception       ArithmeticException if rounding is needed with rounding
      *                  mode being set to RoundingMode.UNNECESSARY
      * @return The formatted number string
-     * @see java.text.FieldPosition
+     * @see j86.java.text.FieldPosition
      */
     @Override
     public StringBuffer format(long number, StringBuffer result,
@@ -654,7 +654,7 @@ public class DecimalFormat extends NumberFormat {
      * @return The formatted number string
      * @exception        ArithmeticException if rounding is needed with rounding
      *                   mode being set to RoundingMode.UNNECESSARY
-     * @see java.text.FieldPosition
+     * @see j86.java.text.FieldPosition
      */
     private StringBuffer format(long number, StringBuffer result,
                                FieldDelegate delegate) {
@@ -723,7 +723,7 @@ public class DecimalFormat extends NumberFormat {
      * @return The formatted number string
      * @exception        ArithmeticException if rounding is needed with rounding
      *                   mode being set to RoundingMode.UNNECESSARY
-     * @see java.text.FieldPosition
+     * @see j86.java.text.FieldPosition
      */
     private StringBuffer format(BigDecimal number, StringBuffer result,
                                 FieldPosition fieldPosition) {
@@ -776,7 +776,7 @@ public class DecimalFormat extends NumberFormat {
      * @return The formatted number string
      * @exception        ArithmeticException if rounding is needed with rounding
      *                   mode being set to RoundingMode.UNNECESSARY
-     * @see java.text.FieldPosition
+     * @see j86.java.text.FieldPosition
      */
     private StringBuffer format(BigInteger number, StringBuffer result,
                                FieldPosition fieldPosition) {
@@ -794,7 +794,7 @@ public class DecimalFormat extends NumberFormat {
      * @return The formatted number string
      * @exception        ArithmeticException if rounding is needed with rounding
      *                   mode being set to RoundingMode.UNNECESSARY
-     * @see java.text.FieldPosition
+     * @see j86.java.text.FieldPosition
      */
     private StringBuffer format(BigInteger number, StringBuffer result,
                                FieldDelegate delegate, boolean formatLong) {
@@ -1971,7 +1971,7 @@ public class DecimalFormat extends NumberFormat {
      *       the type they want.
      *   <li>If <code>isParseBigDecimal()</code> is true, values are returned
      *       as <code>BigDecimal</code> objects. The values are the ones
-     *       constructed by {@link java.math.BigDecimal#BigDecimal(String)}
+     *       constructed by {@link j86.java.math.BigDecimal#BigDecimal(String)}
      *       for corresponding strings in locale-independent format. The
      *       special cases negative and positive infinity and NaN are returned
      *       as <code>Double</code> instances holding the values of the
@@ -2351,7 +2351,7 @@ public class DecimalFormat extends NumberFormat {
      * Returns a copy of the decimal format symbols, which is generally not
      * changed by the programmer or user.
      * @return a copy of the desired DecimalFormatSymbols
-     * @see java.text.DecimalFormatSymbols
+     * @see j86.java.text.DecimalFormatSymbols
      */
     public DecimalFormatSymbols getDecimalFormatSymbols() {
         try {
@@ -2367,7 +2367,7 @@ public class DecimalFormat extends NumberFormat {
      * Sets the decimal format symbols, which is generally not changed
      * by the programmer or user.
      * @param newSymbols desired DecimalFormatSymbols
-     * @see java.text.DecimalFormatSymbols
+     * @see j86.java.text.DecimalFormatSymbols
      */
     public void setDecimalFormatSymbols(DecimalFormatSymbols newSymbols) {
         try {
@@ -2593,8 +2593,8 @@ public class DecimalFormat extends NumberFormat {
      *
      * @return the grouping size
      * @see #setGroupingSize
-     * @see java.text.NumberFormat#isGroupingUsed
-     * @see java.text.DecimalFormatSymbols#getGroupingSeparator
+     * @see j86.java.text.NumberFormat#isGroupingUsed
+     * @see j86.java.text.DecimalFormatSymbols#getGroupingSeparator
      */
     public int getGroupingSize () {
         return groupingSize;
@@ -2609,8 +2609,8 @@ public class DecimalFormat extends NumberFormat {
      *
      * @param newValue the new grouping size
      * @see #getGroupingSize
-     * @see java.text.NumberFormat#setGroupingUsed
-     * @see java.text.DecimalFormatSymbols#setGroupingSeparator
+     * @see j86.java.text.NumberFormat#setGroupingUsed
+     * @see j86.java.text.DecimalFormatSymbols#setGroupingSeparator
      */
     public void setGroupingSize (int newValue) {
         groupingSize = (byte)newValue;
@@ -2643,7 +2643,7 @@ public class DecimalFormat extends NumberFormat {
     }
 
     /**
-     * Returns whether the {@link #parse(java.lang.String, java.text.ParsePosition)}
+     * Returns whether the {@link #parse(j86.java.lang.String, j86.java.text.ParsePosition)}
      * method returns <code>BigDecimal</code>. The default value is false.
      *
      * @return {@code true} if the parse method returns BigDecimal;
@@ -2656,7 +2656,7 @@ public class DecimalFormat extends NumberFormat {
     }
 
     /**
-     * Sets whether the {@link #parse(java.lang.String, java.text.ParsePosition)}
+     * Sets whether the {@link #parse(j86.java.lang.String, j86.java.text.ParsePosition)}
      * method returns <code>BigDecimal</code>.
      *
      * @param newValue {@code true} if the parse method returns BigDecimal;
@@ -3640,7 +3640,7 @@ public class DecimalFormat extends NumberFormat {
     }
 
     /**
-     * Gets the {@link java.math.RoundingMode} used in this DecimalFormat.
+     * Gets the {@link j86.java.math.RoundingMode} used in this DecimalFormat.
      *
      * @return The <code>RoundingMode</code> used for this DecimalFormat.
      * @see #setRoundingMode(RoundingMode)
@@ -3652,7 +3652,7 @@ public class DecimalFormat extends NumberFormat {
     }
 
     /**
-     * Sets the {@link java.math.RoundingMode} used in this DecimalFormat.
+     * Sets the {@link j86.java.math.RoundingMode} used in this DecimalFormat.
      *
      * @param roundingMode The <code>RoundingMode</code> to be used
      * @see #getRoundingMode()
@@ -3689,7 +3689,7 @@ public class DecimalFormat extends NumberFormat {
      * and this method throws an <code>InvalidObjectException</code>.
      * <li>
      * If <code>serialVersionOnStream</code> is less than 4, initialize
-     * <code>roundingMode</code> to {@link java.math.RoundingMode#HALF_EVEN
+     * <code>roundingMode</code> to {@link j86.java.math.RoundingMode#HALF_EVEN
      * RoundingMode.HALF_EVEN}.  This field is new with version 4.
      * <li>
      * If <code>serialVersionOnStream</code> is less than 3, then call
@@ -3856,7 +3856,7 @@ public class DecimalFormat extends NumberFormat {
      *
      * @serial
      * @see #getGroupingSize
-     * @see java.text.NumberFormat#isGroupingUsed
+     * @see j86.java.text.NumberFormat#isGroupingUsed
      */
     private byte    groupingSize = 3;  // invariant, > 0 if useThousands
 
@@ -3892,7 +3892,7 @@ public class DecimalFormat extends NumberFormat {
      *
      * @serial
      * @see #setDecimalFormatSymbols
-     * @see java.text.DecimalFormatSymbols
+     * @see j86.java.text.DecimalFormatSymbols
      */
     private DecimalFormatSymbols symbols = null; // LIU new DecimalFormatSymbols();
 
@@ -3992,7 +3992,7 @@ public class DecimalFormat extends NumberFormat {
     private int    minimumFractionDigits = super.getMinimumFractionDigits();
 
     /**
-     * The {@link java.math.RoundingMode} used in this DecimalFormat.
+     * The {@link j86.java.math.RoundingMode} used in this DecimalFormat.
      *
      * @serial
      * @since 1.6

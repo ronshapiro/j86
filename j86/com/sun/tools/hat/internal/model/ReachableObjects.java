@@ -30,14 +30,14 @@
  * at JavaSoft/Sun.
  */
 
-package com.sun.tools.hat.internal.model;
+package j86.j86.com.sun.tools.hat.internal.model;
 
-import java.util.Vector;
-import java.util.Hashtable;
-import java.util.Enumeration;
+import j86.java.util.Vector;
+import j86.java.util.Hashtable;
+import j86.java.util.Enumeration;
 
-import com.sun.tools.hat.internal.util.ArraySorter;
-import com.sun.tools.hat.internal.util.Comparer;
+import j86.j86.com.sun.tools.hat.internal.util.ArraySorter;
+import j86.j86.com.sun.tools.hat.internal.util.Comparer;
 
 /**
  * @author      A. Sundararajan

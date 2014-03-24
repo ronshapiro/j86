@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.misc;
+package j86.sun.misc;
 
 /* A package-private class implementing a signal handler in native code. */
 

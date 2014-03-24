@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.reflect.generics.tree;
+package j86.j86.sun.reflect.generics.tree;
 
-import java.util.List;
-import sun.reflect.generics.visitor.TypeTreeVisitor;
+import j86.java.util.List;
+import j86.j86.sun.reflect.generics.visitor.TypeTreeVisitor;
 
 
 /**

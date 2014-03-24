@@ -23,17 +23,17 @@
  * questions.
  */
 
-package com.sun.crypto.provider;
+package j86.com.sun.crypto.provider;
 
-import java.io.*;
-import java.util.Objects;
-import java.math.BigInteger;
-import java.security.KeyRep;
-import java.security.PrivateKey;
-import java.security.InvalidKeyException;
-import java.security.ProviderException;
-import javax.crypto.spec.DHParameterSpec;
-import sun.security.util.*;
+import j86.java.io.*;
+import j86.java.util.Objects;
+import j86.java.math.BigInteger;
+import j86.java.security.KeyRep;
+import j86.java.security.PrivateKey;
+import j86.java.security.InvalidKeyException;
+import j86.java.security.ProviderException;
+import j86.j86.javax.crypto.spec.DHParameterSpec;
+import j86.sun.security.util.*;
 
 /**
  * A private key in PKCS#8 format for the Diffie-Hellman key agreement
@@ -43,10 +43,10 @@ import sun.security.util.*;
  *
  *
  * @see DHPublicKey
- * @see java.security.KeyAgreement
+ * @see j86.java.security.KeyAgreement
  */
 final class DHPrivateKey implements PrivateKey,
-javax.crypto.interfaces.DHPrivateKey, Serializable {
+j86.j86.javax.crypto.interfaces.DHPrivateKey, Serializable {
 
     static final long serialVersionUID = 7565477590005668886L;
 
@@ -294,11 +294,11 @@ javax.crypto.interfaces.DHPrivateKey, Serializable {
     public boolean equals(Object obj) {
         if (this == obj) return true;
 
-        if (!(obj instanceof javax.crypto.interfaces.DHPrivateKey)) {
+        if (!(obj instanceof j86.j86.javax.crypto.interfaces.DHPrivateKey)) {
             return false;
         }
-        javax.crypto.interfaces.DHPrivateKey other =
-                (javax.crypto.interfaces.DHPrivateKey) obj;
+        j86.j86.javax.crypto.interfaces.DHPrivateKey other =
+                (j86.j86.javax.crypto.interfaces.DHPrivateKey) obj;
         DHParameterSpec otherParams = other.getParams();
         return ((this.x.compareTo(other.getX()) == 0) &&
                 (this.p.compareTo(otherParams.getP()) == 0) &&
@@ -310,10 +310,10 @@ javax.crypto.interfaces.DHPrivateKey, Serializable {
      *
      * @return the standard KeyRep object to be serialized
      *
-     * @throws java.io.ObjectStreamException if a new object representing
+     * @throws j86.java.io.ObjectStreamException if a new object representing
      * this DH private key could not be created
      */
-    private Object writeReplace() throws java.io.ObjectStreamException {
+    private Object writeReplace() throws j86.java.io.ObjectStreamException {
         return new KeyRep(KeyRep.Type.PRIVATE,
                         getAlgorithm(),
                         getFormat(),

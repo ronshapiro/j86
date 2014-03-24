@@ -23,24 +23,24 @@
  * questions.
  */
 
-package javax.swing.plaf.basic;
+package j86.j86.j86.javax.swing.plaf.basic;
 
-import javax.swing.*;
-import javax.swing.filechooser.*;
-import javax.swing.filechooser.FileFilter;
-import javax.swing.event.*;
-import javax.swing.plaf.*;
-import java.awt.*;
-import java.awt.event.*;
-import java.awt.datatransfer.*;
-import java.beans.*;
-import java.io.*;
-import java.util.*;
-import java.util.List;
-import java.util.regex.*;
-import sun.awt.shell.ShellFolder;
-import sun.swing.*;
-import sun.swing.SwingUtilities2;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.filechooser.*;
+import j86.j86.javax.swing.filechooser.FileFilter;
+import j86.j86.javax.swing.event.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.j86.java.awt.datatransfer.*;
+import j86.java.beans.*;
+import j86.java.io.*;
+import j86.java.util.*;
+import j86.java.util.List;
+import j86.j86.java.util.regex.*;
+import j86.j86.sun.awt.shell.ShellFolder;
+import j86.sun.swing.*;
+import j86.sun.swing.SwingUtilities2;
 
 /**
  * Basic L&amp;F implementation of a FileChooser.

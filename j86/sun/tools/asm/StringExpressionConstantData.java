@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.tools.asm;
+package j86.sun.tools.asm;
 
-import sun.tools.java.*;
-import sun.tools.tree.StringExpression;
-import java.io.IOException;
-import java.io.DataOutputStream;
+import j86.sun.tools.java.*;
+import j86.sun.tools.tree.StringExpression;
+import j86.java.io.IOException;
+import j86.java.io.DataOutputStream;
 
 /**
  * This is a string expression constant. This constant

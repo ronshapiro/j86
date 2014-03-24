@@ -23,15 +23,15 @@
  * questions.
  */
 
-package com.sun.tools.jdi;
+package j86.com.sun.tools.jdi;
 
-import com.sun.jdi.*;
-import com.sun.jdi.event.*;
-import com.sun.jdi.connect.spi.Connection;
-import com.sun.jdi.event.EventSet;
+import j86.com.sun.jdi.*;
+import j86.j86.com.sun.jdi.event.*;
+import j86.j86.j86.com.sun.jdi.connect.spi.Connection;
+import j86.j86.com.sun.jdi.event.EventSet;
 
-import java.util.*;
-import java.io.IOException;
+import j86.java.util.*;
+import j86.java.io.IOException;
 
 public class TargetVM implements Runnable {
     private Map<String, Packet> waitingQueue = new HashMap<String, Packet>(32,0.75f);

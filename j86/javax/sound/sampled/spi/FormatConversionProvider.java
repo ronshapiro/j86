@@ -23,12 +23,12 @@
  * questions.
  */
 
-package javax.sound.sampled.spi;
+package j86.j86.javax.sound.sampled.spi;
 
-import java.io.InputStream;
+import j86.java.io.InputStream;
 
-import javax.sound.sampled.AudioFormat;
-import javax.sound.sampled.AudioInputStream;
+import j86.javax.sound.sampled.AudioFormat;
+import j86.javax.sound.sampled.AudioInputStream;
 
 /**
  * A format conversion provider provides format conversion services

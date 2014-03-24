@@ -23,13 +23,13 @@
  * questions.
  */
 
-package com.sun.security.sasl.gsskerb;
+package j86.j86.com.sun.security.sasl.gsskerb;
 
-import javax.security.sasl.*;
-import com.sun.security.sasl.util.PolicyUtils;
+import j86.javax.security.sasl.*;
+import j86.j86.com.sun.security.sasl.util.PolicyUtils;
 
-import java.util.Map;
-import javax.security.auth.callback.CallbackHandler;
+import j86.java.util.Map;
+import j86.j86.javax.security.auth.callback.CallbackHandler;
 
 /**
   * Client/server factory for GSSAPI (Kerberos V5) SASL client/server mechs.

@@ -23,18 +23,18 @@
  * questions.
  */
 
-package sun.security.util;
+package j86.sun.security.util;
 
 /**
  * <p> This class represents the <code>ResourceBundle</code>
- * for javax.security.auth and sun.security.
+ * for j86.javax.security.auth and sun.security.
  *
  */
-public class Resources_es extends java.util.ListResourceBundle {
+public class Resources_es extends j86.java.util.ListResourceBundle {
 
     private static final Object[][] contents = {
 
-        // javax.security.auth.PrivateCredentialPermission
+        // j86.javax.security.auth.PrivateCredentialPermission
         {"invalid.null.input.s.", "entradas nulas no v\u00E1lidas"},
         {"actions.can.only.be.read.", "las acciones s\u00F3lo pueden 'leerse'"},
         {"permission.name.name.syntax.invalid.",
@@ -52,12 +52,12 @@ public class Resources_es extends java.util.ListResourceBundle {
         {"CredOwner.Principal.Class.class.Principal.Name.name",
                 "CredOwner:\n\tClase de Principal = {0}\n\tNombre de Principal = {1}"},
 
-        // javax.security.auth.x500
+        // j86.j86.javax.security.auth.x500
         {"provided.null.name", "se ha proporcionado un nombre nulo"},
         {"provided.null.keyword.map", "mapa de palabras clave proporcionado nulo"},
         {"provided.null.OID.map", "mapa de OID proporcionado nulo"},
 
-        // javax.security.auth.Subject
+        // j86.javax.security.auth.Subject
         {"NEWLINE", "\n"},
         {"invalid.null.AccessControlContext.provided",
                 "se ha proporcionado un AccessControlContext nulo no v\u00E1lido"},
@@ -72,15 +72,15 @@ public class Resources_es extends java.util.ListResourceBundle {
         {".Private.Credential.inaccessible.",
                 "\tCredencial Privada Inaccesible\n"},
         {"Subject.is.read.only", "El asunto es de s\u00F3lo lectura"},
-        {"attempting.to.add.an.object.which.is.not.an.instance.of.java.security.Principal.to.a.Subject.s.Principal.Set",
-                "intentando agregar un objeto que no es una instancia de java.security.Principal al juego principal de un asunto"},
+        {"attempting.to.add.an.object.which.is.not.an.instance.of.j86.java.security.Principal.to.a.Subject.s.Principal.Set",
+                "intentando agregar un objeto que no es una instancia de j86.java.security.Principal al juego principal de un asunto"},
         {"attempting.to.add.an.object.which.is.not.an.instance.of.class",
                 "intentando agregar un objeto que no es una instancia de {0}"},
 
-        // javax.security.auth.login.AppConfigurationEntry
+        // j86.j86.javax.security.auth.login.AppConfigurationEntry
         {"LoginModuleControlFlag.", "LoginModuleControlFlag: "},
 
-        // javax.security.auth.login.LoginContext
+        // j86.j86.javax.security.auth.login.LoginContext
         {"Invalid.null.input.name", "Entrada nula no v\u00E1lida: nombre"},
         {"No.LoginModules.configured.for.name",
          "No se han configurado LoginModules para {0}"},
@@ -102,14 +102,14 @@ public class Resources_es extends java.util.ListResourceBundle {
         {"Login.Failure.all.modules.ignored",
                 "Fallo en inicio de sesi\u00F3n: se han ignorado todos los m\u00F3dulos"},
 
-        // sun.security.provider.PolicyFile
+        // j86.sun.security.provider.PolicyFile
 
-        {"java.security.policy.error.parsing.policy.message",
-                "java.security.policy: error de an\u00E1lisis de {0}:\n\t{1}"},
-        {"java.security.policy.error.adding.Permission.perm.message",
-                "java.security.policy: error al agregar un permiso, {0}:\n\t{1}"},
-        {"java.security.policy.error.adding.Entry.message",
-                "java.security.policy: error al agregar una entrada:\n\t{0}"},
+        {"j86.java.security.policy.error.parsing.policy.message",
+                "j86.java.security.policy: error de an\u00E1lisis de {0}:\n\t{1}"},
+        {"j86.java.security.policy.error.adding.Permission.perm.message",
+                "j86.java.security.policy: error al agregar un permiso, {0}:\n\t{1}"},
+        {"j86.java.security.policy.error.adding.Entry.message",
+                "j86.java.security.policy: error al agregar una entrada:\n\t{0}"},
         {"alias.name.not.provided.pe.name.", "no se ha proporcionado el nombre de alias ({0})"},
         {"unable.to.perform.substitution.on.alias.suffix",
                 "no se puede realizar la sustituci\u00F3n en el alias, {0}"},
@@ -119,7 +119,7 @@ public class Resources_es extends java.util.ListResourceBundle {
         {"RPARAM", ")"},
         {"type.can.t.be.null","el tipo no puede ser nulo"},
 
-        // sun.security.provider.PolicyParser
+        // j86.sun.security.provider.PolicyParser
         {"keystorePasswordURL.can.not.be.specified.without.also.specifying.keystore",
                 "keystorePasswordURL no puede especificarse sin especificar tambi\u00E9n el almac\u00E9n de claves"},
         {"expected.keystore.type", "se esperaba un tipo de almac\u00E9n de claves"},
@@ -146,12 +146,12 @@ public class Resources_es extends java.util.ListResourceBundle {
         {"null.principalClass.or.principalName",
                 "principalClass o principalName nulos"},
 
-        // sun.security.pkcs11.SunPKCS11
+        // j86.j86.sun.security.pkcs11.SunPKCS11
         {"PKCS11.Token.providerName.Password.",
                 "Contrase\u00F1a del Token PKCS11 [{0}]: "},
 
         /* --- DEPRECATED --- */
-        // javax.security.auth.Policy
+        // j86.javax.security.auth.Policy
         {"unable.to.instantiate.Subject.based.policy",
                 "no se ha podido instanciar una pol\u00EDtica basada en asunto"}
     };

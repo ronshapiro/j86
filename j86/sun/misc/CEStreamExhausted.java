@@ -22,9 +22,9 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.misc;
+package j86.sun.misc;
 
-import java.io.IOException;
+import j86.java.io.IOException;
 
 /** This exception is thrown when EOF is reached */
 public class CEStreamExhausted extends IOException {

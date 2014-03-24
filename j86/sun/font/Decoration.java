@@ -28,27 +28,27 @@
  *
  */
 
-package sun.font;
+package j86.sun.font;
 
-import java.util.Map;
+import j86.java.util.Map;
 
-import java.awt.BasicStroke;
-import java.awt.Color;
-import java.awt.Graphics2D;
-import java.awt.Paint;
-import java.awt.RenderingHints;
-import java.awt.Shape;
-import java.awt.Stroke;
+import j86.java.awt.BasicStroke;
+import j86.java.awt.Color;
+import j86.java.awt.Graphics2D;
+import j86.java.awt.Paint;
+import j86.java.awt.RenderingHints;
+import j86.java.awt.Shape;
+import j86.java.awt.Stroke;
 
-import java.awt.font.TextAttribute;
+import j86.j86.java.awt.font.TextAttribute;
 
-import java.awt.geom.Area;
-import java.awt.geom.Line2D;
-import java.awt.geom.Rectangle2D;
-import java.awt.geom.GeneralPath;
+import j86.j86.java.awt.geom.Area;
+import j86.j86.java.awt.geom.Line2D;
+import j86.j86.java.awt.geom.Rectangle2D;
+import j86.j86.java.awt.geom.GeneralPath;
 
-import static sun.font.AttributeValues.*;
-import static sun.font.EAttribute.*;
+import static j86.sun.font.AttributeValues.*;
+import static j86.sun.font.EAttribute.*;
 
 /**
  * This class handles underlining, strikethrough, and foreground and

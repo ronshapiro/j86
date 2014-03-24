@@ -23,14 +23,14 @@
  * questions.
  */
 
-package javax.management;
+package j86.javax.management;
 
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.Serializable;
-import java.io.StreamCorruptedException;
-import java.util.Objects;
+import j86.java.io.IOException;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.Serializable;
+import j86.java.io.StreamCorruptedException;
+import j86.java.util.Objects;
 
 /**
  * <p>Provides general information for an MBean descriptor object.

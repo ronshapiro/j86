@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.util.spi;
+package j86.j86.java.util.spi;
 
-import java.util.Calendar;
-import java.util.Locale;
+import j86.java.util.Calendar;
+import j86.java.util.Locale;
 
 /**
  * An abstract class for service providers that provide locale-dependent {@link
@@ -57,7 +57,7 @@ public abstract class CalendarDataProvider extends LocaleServiceProvider {
      *         or 0 if the value isn't available for the {@code locale}
      * @throws NullPointerException
      *         if {@code locale} is {@code null}.
-     * @see java.util.Calendar#getFirstDayOfWeek()
+     * @see j86.java.util.Calendar#getFirstDayOfWeek()
      * @see <a href="../Calendar.html#first_week">First Week</a>
      */
     public abstract int getFirstDayOfWeek(Locale locale);
@@ -75,7 +75,7 @@ public abstract class CalendarDataProvider extends LocaleServiceProvider {
      *         or 0 if the value isn't available for the {@code locale}
      * @throws NullPointerException
      *         if {@code locale} is {@code null}.
-     * @see java.util.Calendar#getMinimalDaysInFirstWeek()
+     * @see j86.java.util.Calendar#getMinimalDaysInFirstWeek()
      */
     public abstract int getMinimalDaysInFirstWeek(Locale locale);
 }

@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.nio.file.attribute;
+package j86.j86.j86.java.nio.file.attribute;
 
-import java.io.IOException;
+import j86.java.io.IOException;
 
 /**
  * A file attribute view that provides a view of a <em>basic set</em> of file
@@ -85,11 +85,11 @@ import java.io.IOException;
  * </table>
  * </blockquote>
  *
- * <p> The {@link java.nio.file.Files#getAttribute getAttribute} method may be
+ * <p> The {@link j86.j86.java.nio.file.Files#getAttribute getAttribute} method may be
  * used to read any of these attributes as if by invoking the {@link
  * #readAttributes() readAttributes()} method.
  *
- * <p> The {@link java.nio.file.Files#setAttribute setAttribute} method may be
+ * <p> The {@link j86.j86.java.nio.file.Files#setAttribute setAttribute} method may be
  * used to update the file's last modified time, last access time or create time
  * attributes as if by invoking the {@link #setTimes setTimes} method.
  *
@@ -169,7 +169,7 @@ public interface BasicFileAttributeView
      *          installed, its  {@link SecurityManager#checkWrite(String) checkWrite}
      *          method is invoked to check write access to the file
      *
-     * @see java.nio.file.Files#setLastModifiedTime
+     * @see j86.j86.java.nio.file.Files#setLastModifiedTime
      */
     void setTimes(FileTime lastModifiedTime,
                   FileTime lastAccessTime,

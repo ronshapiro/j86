@@ -23,11 +23,11 @@
  * questions.
  */
 
-package java.nio;
+package j86.java.nio;
 
-import java.util.Comparator;
-import java.util.Spliterator;
-import java.util.function.IntConsumer;
+import j86.java.util.Comparator;
+import j86.java.util.Spliterator;
+import j86.j86.java.util.function.IntConsumer;
 
 /**
  * A Spliterator.OfInt for sources that traverse and split elements

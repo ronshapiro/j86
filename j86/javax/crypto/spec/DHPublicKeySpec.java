@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.crypto.spec;
+package j86.j86.javax.crypto.spec;
 
-import java.math.BigInteger;
+import j86.java.math.BigInteger;
 
 /**
  * This class specifies a Diffie-Hellman public key with its associated
@@ -40,7 +40,7 @@ import java.math.BigInteger;
  * @see DHPrivateKeySpec
  * @since 1.4
  */
-public class DHPublicKeySpec implements java.security.spec.KeySpec {
+public class DHPublicKeySpec implements j86.j86.java.security.spec.KeySpec {
 
     // The public value
     private BigInteger y;

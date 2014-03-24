@@ -23,12 +23,12 @@
  * questions.
  */
 
-package javax.crypto;
+package j86.javax.crypto;
 
-import java.io.*;
-import java.net.*;
-import java.security.*;
-import java.util.jar.*;
+import j86.java.io.*;
+import j86.java.net.*;
+import j86.java.security.*;
+import j86.j86.java.util.jar.*;
 
 /**
  * This class verifies JAR files (and any supporting JAR files), and
@@ -97,7 +97,7 @@ final class JarVerifier {
                                  return conn.getJarFile();
                              }
                          });
-            } catch (java.security.PrivilegedActionException pae) {
+            } catch (j86.java.security.PrivilegedActionException pae) {
                 throw new SecurityException("Cannot load " + url.toString(), pae);
             }
 
@@ -136,7 +136,7 @@ final class JarVerifier {
      * @throws Exception if the list of certs did not contain
      *          the framework signing certificate
      */
-    static void verifyPolicySigned(java.security.cert.Certificate[] certs)
+    static void verifyPolicySigned(j86.j86.java.security.cert.Certificate[] certs)
             throws Exception {
     }
 

@@ -23,11 +23,11 @@
  * questions.
  */
 
-package java.beans.beancontext;
+package j86.j86.java.beans.beancontext;
 
-import java.beans.beancontext.BeanContextServiceAvailableEvent;
-import java.beans.beancontext.BeanContextServiceRevokedEvent;
-import java.beans.beancontext.BeanContextServiceRevokedListener;
+import j86.j86.java.beans.beancontext.BeanContextServiceAvailableEvent;
+import j86.j86.java.beans.beancontext.BeanContextServiceRevokedEvent;
+import j86.j86.java.beans.beancontext.BeanContextServiceRevokedListener;
 
 /**
  * The listener interface for receiving

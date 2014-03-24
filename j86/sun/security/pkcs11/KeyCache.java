@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.security.pkcs11;
+package j86.j86.sun.security.pkcs11;
 
-import java.util.*;
-import java.lang.ref.*;
+import j86.java.util.*;
+import j86.j86.java.lang.ref.*;
 
-import java.security.Key;
+import j86.java.security.Key;
 
-import sun.security.util.Cache;
+import j86.sun.security.util.Cache;
 
 /**
  * Key to P11Key translation cache. The PKCS#11 token can only perform

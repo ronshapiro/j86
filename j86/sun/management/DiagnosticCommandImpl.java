@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.management;
+package j86.sun.management;
 
-import com.sun.management.DiagnosticCommandMBean;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
-import java.security.Permission;
-import java.util.*;
-import javax.management.*;
+import com.j86.sun.management.DiagnosticCommandMBean;
+import j86.j86.j86.java.lang.reflect.Constructor;
+import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.java.security.Permission;
+import j86.java.util.*;
+import j86.javax.management.*;
 
 /**
  * Implementation class for the diagnostic commands subsystem.
@@ -195,7 +195,7 @@ class DiagnosticCommandImpl extends NotificationEmitterSupport
         wrappers =  Collections.unmodifiableMap(wrappersmap);
         HashMap<String, Object> map = new HashMap<>();
         map.put("immutableInfo", "false");
-        map.put("interfaceClassName","com.sun.management.DiagnosticCommandMBean");
+        map.put("interfaceClassName","com.j86.sun.management.DiagnosticCommandMBean");
         map.put("mxbean", "false");
         Descriptor desc = new ImmutableDescriptor(map);
         return new MBeanInfo(
@@ -293,7 +293,7 @@ class DiagnosticCommandImpl extends NotificationEmitterSupport
     }
 
     private final static String notifName =
-        "javax.management.Notification";
+        "j86.javax.management.Notification";
 
     private final static String[] diagFramNotifTypes = {
         "jmx.mbean.info.changed"

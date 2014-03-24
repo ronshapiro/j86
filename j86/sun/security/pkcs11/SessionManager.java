@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.security.pkcs11;
+package j86.j86.sun.security.pkcs11;
 
-import java.util.*;
+import j86.java.util.*;
 
-import java.security.ProviderException;
+import j86.java.security.ProviderException;
 
-import sun.security.util.Debug;
+import j86.sun.security.util.Debug;
 
-import sun.security.pkcs11.wrapper.*;
-import static sun.security.pkcs11.wrapper.PKCS11Constants.*;
+import j86.j86.j86.sun.security.pkcs11.wrapper.*;
+import static j86.j86.j86.sun.security.pkcs11.wrapper.PKCS11Constants.*;
 
 /**
  * Session manager. There is one session manager object per PKCS#11

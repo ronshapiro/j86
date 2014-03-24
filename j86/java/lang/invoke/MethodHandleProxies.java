@@ -23,16 +23,16 @@
  * questions.
  */
 
-package java.lang.invoke;
+package j86.j86.java.lang.invoke;
 
-import java.lang.reflect.*;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import sun.invoke.WrapperInstance;
-import java.util.ArrayList;
-import sun.reflect.CallerSensitive;
-import sun.reflect.Reflection;
-import sun.reflect.misc.ReflectUtil;
+import j86.j86.j86.java.lang.reflect.*;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.sun.invoke.WrapperInstance;
+import j86.java.util.ArrayList;
+import j86.sun.reflect.CallerSensitive;
+import j86.sun.reflect.Reflection;
+import j86.j86.sun.reflect.misc.ReflectUtil;
 
 /**
  * This class consists exclusively of static methods that help adapt
@@ -49,7 +49,7 @@ public class MethodHandleProxies {
      * A single-method interface is an interface which declares a uniquely named method.
      * When determining the uniquely named method of a single-method interface,
      * the public {@code Object} methods ({@code toString}, {@code equals}, {@code hashCode})
-     * are disregarded.  For example, {@link java.util.Comparator} is a single-method interface,
+     * are disregarded.  For example, {@link j86.java.util.Comparator} is a single-method interface,
      * even though it re-declares the {@code Object.equals} method.
      * <p>
      * The interface must be public.  No additional access checks are performed.
@@ -80,21 +80,21 @@ public class MethodHandleProxies {
      * Therefore, each instance must implement a unique single-method interface.
      * Implementations may not bundle together
      * multiple single-method interfaces onto single implementation classes
-     * in the style of {@link java.awt.AWTEventMulticaster}.
+     * in the style of {@link j86.java.awt.AWTEventMulticaster}.
      * <p>
      * The method handle may throw an <em>undeclared exception</em>,
      * which means any checked exception (or other checked throwable)
      * not declared by the requested type's single abstract method.
      * If this happens, the throwable will be wrapped in an instance of
-     * {@link java.lang.reflect.UndeclaredThrowableException UndeclaredThrowableException}
+     * {@link j86.j86.j86.java.lang.reflect.UndeclaredThrowableException UndeclaredThrowableException}
      * and thrown in that wrapped form.
      * <p>
-     * Like {@link java.lang.Integer#valueOf Integer.valueOf},
+     * Like {@link j86.java.lang.Integer#valueOf Integer.valueOf},
      * {@code asInterfaceInstance} is a factory method whose results are defined
      * by their behavior.
      * It is not guaranteed to return a new instance for every call.
      * <p>
-     * Because of the possibility of {@linkplain java.lang.reflect.Method#isBridge bridge methods}
+     * Because of the possibility of {@linkplain j86.j86.j86.java.lang.reflect.Method#isBridge bridge methods}
      * and other corner cases, the interface may also have several abstract methods
      * with the same name but having distinct descriptors (types of returns and parameters).
      * In this case, all the methods are bound in common to the one given target.
@@ -195,7 +195,7 @@ public class MethodHandleProxies {
 
         final Object proxy;
         if (System.getSecurityManager() != null) {
-            // sun.invoke.WrapperInstance is a restricted interface not accessible
+            // j86.sun.invoke.WrapperInstance is a restricted interface not accessible
             // by any non-null class loader.
             final ClassLoader loader = proxyLoader;
             proxy = AccessController.doPrivileged(new PrivilegedAction<Object>() {

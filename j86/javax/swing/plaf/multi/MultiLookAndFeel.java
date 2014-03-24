@@ -22,12 +22,12 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.plaf.multi;
+package j86.j86.j86.javax.swing.plaf.multi;
 
-import java.util.Vector;
-import java.lang.reflect.Method;
-import javax.swing.*;
-import javax.swing.plaf.*;
+import j86.java.util.Vector;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.plaf.*;
 
 /**
  * <p>A multiplexing look and feel that allows more than one UI
@@ -48,11 +48,11 @@ import javax.swing.plaf.*;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @see UIManager#addAuxiliaryLookAndFeel
- * @see javax.swing.plaf.multi
+ * @see j86.j86.j86.javax.swing.plaf.multi
  *
  * @author Willie Walker
  */
@@ -119,13 +119,13 @@ public class MultiLookAndFeel extends LookAndFeel {
      * mappings of UI class IDs
      * (such as "ButtonUI")
      * to <code>ComponentUI</code> class names
-     * (such as "javax.swing.plaf.multi.MultiButtonUI").
+     * (such as "j86.j86.j86.javax.swing.plaf.multi.MultiButtonUI").
      *
      * @return an initialized <code>UIDefaults</code> object
-     * @see javax.swing.JComponent#getUIClassID
+     * @see j86.javax.swing.JComponent#getUIClassID
      */
     public UIDefaults getDefaults() {
-        String packageName = "javax.swing.plaf.multi.Multi";
+        String packageName = "j86.j86.j86.javax.swing.plaf.multi.Multi";
         Object[] uiDefaults = {
                    "ButtonUI", packageName + "ButtonUI",
          "CheckBoxMenuItemUI", packageName + "MenuItemUI",
@@ -214,8 +214,8 @@ public class MultiLookAndFeel extends LookAndFeel {
      *         otherwise, returns the UI object for the default look and feel
      *         or <code>null</code> if the default UI object couldn't be found
      *
-     * @see javax.swing.UIManager#getAuxiliaryLookAndFeels
-     * @see javax.swing.UIDefaults#getUI
+     * @see j86.javax.swing.UIManager#getAuxiliaryLookAndFeels
+     * @see j86.javax.swing.UIDefaults#getUI
      * @see MultiButtonUI#uis
      * @see MultiButtonUI#createUI
      */

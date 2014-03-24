@@ -23,19 +23,19 @@
  * questions.
  */
 
-package java.io;
+package j86.java.io;
 
-import java.net.URI;
-import java.net.URL;
-import java.net.MalformedURLException;
-import java.net.URISyntaxException;
-import java.util.List;
-import java.util.ArrayList;
-import java.security.AccessController;
-import java.security.SecureRandom;
-import java.nio.file.Path;
-import java.nio.file.FileSystems;
-import sun.security.action.GetPropertyAction;
+import j86.java.net.URI;
+import j86.java.net.URL;
+import j86.java.net.MalformedURLException;
+import j86.java.net.URISyntaxException;
+import j86.java.util.List;
+import j86.java.util.ArrayList;
+import j86.java.security.AccessController;
+import j86.java.security.SecureRandom;
+import j86.j86.java.nio.file.Path;
+import j86.j86.java.nio.file.FileSystems;
+import j86.sun.security.action.GetPropertyAction;
 
 /**
  * An abstract representation of file and directory pathnames.
@@ -74,7 +74,7 @@ import sun.security.action.GetPropertyAction;
  * that no other information is required in order to locate the file that it
  * denotes.  A relative pathname, in contrast, must be interpreted in terms of
  * information taken from some other pathname.  By default the classes in the
- * <code>java.io</code> package always resolve relative pathnames against the
+ * <code>j86.java.io</code> package always resolve relative pathnames against the
  * current user directory.  This directory is named by the system property
  * <code>user.dir</code>, and is typically the directory in which the Java
  * virtual machine was invoked.
@@ -129,16 +129,16 @@ import sun.security.action.GetPropertyAction;
  * created, the abstract pathname represented by a <code>File</code> object
  * will never change.
  *
- * <h3>Interoperability with {@code java.nio.file} package</h3>
+ * <h3>Interoperability with {@code j86.j86.java.nio.file} package</h3>
  *
- * <p> The <a href="../../java/nio/file/package-summary.html">{@code java.nio.file}</a>
+ * <p> The <a href="../../j86.j86.java.nio.file/package-summary.html">{@code java.nio.file}</a>
  * package defines interfaces and classes for the Java virtual machine to access
  * files, file attributes, and file systems. This API may be used to overcome
- * many of the limitations of the {@code java.io.File} class.
+ * many of the limitations of the {@code j86.java.io.File} class.
  * The {@link #toPath toPath} method may be used to obtain a {@link
  * Path} that uses the abstract path represented by a {@code File} object to
  * locate a file. The resulting {@code Path} may be used with the {@link
- * java.nio.file.Files} class to provide more efficient and extensive access to
+ * j86.j86.java.nio.file.Files} class to provide more efficient and extensive access to
  * additional file operations, file attributes, and I/O exceptions to help
  * diagnose errors when an operation on a file fails.
  *
@@ -210,7 +210,7 @@ public class File
      * property <code>file.separator</code>.  On UNIX systems the value of this
      * field is <code>'/'</code>; on Microsoft Windows systems it is <code>'\\'</code>.
      *
-     * @see     java.lang.System#getProperty(java.lang.String)
+     * @see     j86.java.lang.System#getProperty(java.lang.String)
      */
     public static final char separatorChar = fs.getSeparator();
 
@@ -229,7 +229,7 @@ public class File
      * On UNIX systems, this character is <code>':'</code>; on Microsoft Windows systems it
      * is <code>';'</code>.
      *
-     * @see     java.lang.System#getProperty(java.lang.String)
+     * @see     j86.java.lang.System#getProperty(java.lang.String)
      */
     public static final char pathSeparatorChar = fs.getPathSeparator();
 
@@ -406,7 +406,7 @@ public class File
      *          If the preconditions on the parameter do not hold
      *
      * @see #toURI()
-     * @see java.net.URI
+     * @see j86.java.net.URI
      * @since 1.4
      */
     public File(URI uri) {
@@ -550,7 +550,7 @@ public class File
      * @throws  SecurityException
      *          If a required system property value cannot be accessed.
      *
-     * @see     java.io.File#isAbsolute()
+     * @see     j86.java.io.File#isAbsolute()
      */
     public String getAbsolutePath() {
         return fs.resolve(this);
@@ -605,7 +605,7 @@ public class File
      * @throws  SecurityException
      *          If a required system property value cannot be accessed, or
      *          if a security manager exists and its <code>{@link
-     *          java.lang.SecurityManager#checkRead}</code> method denies
+     *          j86.java.lang.SecurityManager#checkRead}</code> method denies
      *          read access to the file
      *
      * @since   JDK1.1
@@ -633,7 +633,7 @@ public class File
      * @throws  SecurityException
      *          If a required system property value cannot be accessed, or
      *          if a security manager exists and its <code>{@link
-     *          java.lang.SecurityManager#checkRead}</code> method denies
+     *          j86.java.lang.SecurityManager#checkRead}</code> method denies
      *          read access to the file
      *
      * @since 1.2
@@ -667,16 +667,16 @@ public class File
      *          If the path cannot be parsed as a URL
      *
      * @see     #toURI()
-     * @see     java.net.URI
-     * @see     java.net.URI#toURL()
-     * @see     java.net.URL
+     * @see     j86.java.net.URI
+     * @see     j86.java.net.URI#toURL()
+     * @see     j86.java.net.URL
      * @since   1.2
      *
      * @deprecated This method does not automatically escape characters that
      * are illegal in URLs.  It is recommended that new code convert an
      * abstract pathname into a URL by first converting it into a URI, via the
      * {@link #toURI() toURI} method, and then converting the URI into a URL
-     * via the {@link java.net.URI#toURL() URI.toURL} method.
+     * via the {@link j86.java.net.URI#toURL() URI.toURL} method.
      */
     @Deprecated
     public URL toURL() throws MalformedURLException {
@@ -696,7 +696,7 @@ public class File
      * <p> For a given abstract pathname <i>f</i>, it is guaranteed that
      *
      * <blockquote><tt>
-     * new {@link #File(java.net.URI) File}(</tt><i>&nbsp;f</i><tt>.toURI()).equals(</tt><i>&nbsp;f</i><tt>.{@link #getAbsoluteFile() getAbsoluteFile}())
+     * new {@link #File(j86.java.net.URI) File}(</tt><i>&nbsp;f</i><tt>.toURI()).equals(</tt><i>&nbsp;f</i><tt>.{@link #getAbsoluteFile() getAbsoluteFile}())
      * </tt></blockquote>
      *
      * so long as the original abstract pathname, the URI, and the new abstract
@@ -721,9 +721,9 @@ public class File
      * @throws SecurityException If a required system property value cannot
      * be accessed.
      *
-     * @see #File(java.net.URI)
-     * @see java.net.URI
-     * @see java.net.URI#toURL()
+     * @see #File(j86.java.net.URI)
+     * @see j86.java.net.URI
+     * @see j86.java.net.URI#toURL()
      * @since 1.4
      */
     public URI toURI() {
@@ -754,7 +754,7 @@ public class File
      *
      * @throws  SecurityException
      *          If a security manager exists and its <code>{@link
-     *          java.lang.SecurityManager#checkRead(java.lang.String)}</code>
+     *          j86.java.lang.SecurityManager#checkRead(java.lang.String)}</code>
      *          method denies read access to the file
      */
     public boolean canRead() {
@@ -782,7 +782,7 @@ public class File
      *
      * @throws  SecurityException
      *          If a security manager exists and its <code>{@link
-     *          java.lang.SecurityManager#checkWrite(java.lang.String)}</code>
+     *          j86.java.lang.SecurityManager#checkWrite(java.lang.String)}</code>
      *          method denies write access to the file
      */
     public boolean canWrite() {
@@ -805,7 +805,7 @@ public class File
      *
      * @throws  SecurityException
      *          If a security manager exists and its <code>{@link
-     *          java.lang.SecurityManager#checkRead(java.lang.String)}</code>
+     *          j86.java.lang.SecurityManager#checkRead(java.lang.String)}</code>
      *          method denies read access to the file or directory
      */
     public boolean exists() {
@@ -826,7 +826,7 @@ public class File
      * <p> Where it is required to distinguish an I/O exception from the case
      * that the file is not a directory, or where several attributes of the
      * same file are required at the same time, then the {@link
-     * java.nio.file.Files#readAttributes(Path,Class,LinkOption[])
+     * j86.j86.java.nio.file.Files#readAttributes(Path,Class,LinkOption[])
      * Files.readAttributes} method may be used.
      *
      * @return <code>true</code> if and only if the file denoted by this
@@ -835,7 +835,7 @@ public class File
      *
      * @throws  SecurityException
      *          If a security manager exists and its <code>{@link
-     *          java.lang.SecurityManager#checkRead(java.lang.String)}</code>
+     *          j86.java.lang.SecurityManager#checkRead(java.lang.String)}</code>
      *          method denies read access to the file
      */
     public boolean isDirectory() {
@@ -859,7 +859,7 @@ public class File
      * <p> Where it is required to distinguish an I/O exception from the case
      * that the file is not a normal file, or where several attributes of the
      * same file are required at the same time, then the {@link
-     * java.nio.file.Files#readAttributes(Path,Class,LinkOption[])
+     * j86.j86.java.nio.file.Files#readAttributes(Path,Class,LinkOption[])
      * Files.readAttributes} method may be used.
      *
      * @return  <code>true</code> if and only if the file denoted by this
@@ -868,7 +868,7 @@ public class File
      *
      * @throws  SecurityException
      *          If a security manager exists and its <code>{@link
-     *          java.lang.SecurityManager#checkRead(java.lang.String)}</code>
+     *          j86.java.lang.SecurityManager#checkRead(java.lang.String)}</code>
      *          method denies read access to the file
      */
     public boolean isFile() {
@@ -895,7 +895,7 @@ public class File
      *
      * @throws  SecurityException
      *          If a security manager exists and its <code>{@link
-     *          java.lang.SecurityManager#checkRead(java.lang.String)}</code>
+     *          j86.java.lang.SecurityManager#checkRead(java.lang.String)}</code>
      *          method denies read access to the file
      *
      * @since 1.2
@@ -919,7 +919,7 @@ public class File
      * where {@code 0L} is returned, or where several attributes of the
      * same file are required at the same time, or where the time of last
      * access or the creation time are required, then the {@link
-     * java.nio.file.Files#readAttributes(Path,Class,LinkOption[])
+     * j86.j86.java.nio.file.Files#readAttributes(Path,Class,LinkOption[])
      * Files.readAttributes} method may be used.
      *
      * @return  A <code>long</code> value representing the time the file was
@@ -929,7 +929,7 @@ public class File
      *
      * @throws  SecurityException
      *          If a security manager exists and its <code>{@link
-     *          java.lang.SecurityManager#checkRead(java.lang.String)}</code>
+     *          j86.java.lang.SecurityManager#checkRead(java.lang.String)}</code>
      *          method denies read access to the file
      */
     public long lastModified() {
@@ -950,7 +950,7 @@ public class File
      * <p> Where it is required to distinguish an I/O exception from the case
      * that {@code 0L} is returned, or where several attributes of the same file
      * are required at the same time, then the {@link
-     * java.nio.file.Files#readAttributes(Path,Class,LinkOption[])
+     * j86.j86.java.nio.file.Files#readAttributes(Path,Class,LinkOption[])
      * Files.readAttributes} method may be used.
      *
      * @return  The length, in bytes, of the file denoted by this abstract
@@ -960,7 +960,7 @@ public class File
      *
      * @throws  SecurityException
      *          If a security manager exists and its <code>{@link
-     *          java.lang.SecurityManager#checkRead(java.lang.String)}</code>
+     *          j86.java.lang.SecurityManager#checkRead(java.lang.String)}</code>
      *          method denies read access to the file
      */
     public long length() {
@@ -986,7 +986,7 @@ public class File
      * <P>
      * Note: this method should <i>not</i> be used for file-locking, as
      * the resulting protocol cannot be made to work reliably. The
-     * {@link java.nio.channels.FileLock FileLock}
+     * {@link j86.j86.java.nio.channels.FileLock FileLock}
      * facility should be used instead.
      *
      * @return  <code>true</code> if the named file does not exist and was
@@ -998,7 +998,7 @@ public class File
      *
      * @throws  SecurityException
      *          If a security manager exists and its <code>{@link
-     *          java.lang.SecurityManager#checkWrite(java.lang.String)}</code>
+     *          j86.java.lang.SecurityManager#checkWrite(java.lang.String)}</code>
      *          method denies write access to the file
      *
      * @since 1.2
@@ -1017,8 +1017,8 @@ public class File
      * this pathname denotes a directory, then the directory must be empty in
      * order to be deleted.
      *
-     * <p> Note that the {@link java.nio.file.Files} class defines the {@link
-     * java.nio.file.Files#delete(Path) delete} method to throw an {@link IOException}
+     * <p> Note that the {@link j86.j86.java.nio.file.Files} class defines the {@link
+     * j86.j86.java.nio.file.Files#delete(Path) delete} method to throw an {@link IOException}
      * when a file cannot be deleted. This is useful for error reporting and to
      * diagnose why a file cannot be deleted.
      *
@@ -1027,7 +1027,7 @@ public class File
      *
      * @throws  SecurityException
      *          If a security manager exists and its <code>{@link
-     *          java.lang.SecurityManager#checkDelete}</code> method denies
+     *          j86.java.lang.SecurityManager#checkDelete}</code> method denies
      *          delete access to the file
      */
     public boolean delete() {
@@ -1056,12 +1056,12 @@ public class File
      * <P>
      * Note: this method should <i>not</i> be used for file-locking, as
      * the resulting protocol cannot be made to work reliably. The
-     * {@link java.nio.channels.FileLock FileLock}
+     * {@link j86.j86.java.nio.channels.FileLock FileLock}
      * facility should be used instead.
      *
      * @throws  SecurityException
      *          If a security manager exists and its <code>{@link
-     *          java.lang.SecurityManager#checkDelete}</code> method denies
+     *          j86.java.lang.SecurityManager#checkDelete}</code> method denies
      *          delete access to the file
      *
      * @see #delete
@@ -1094,8 +1094,8 @@ public class File
      * will appear in any specific order; they are not, in particular,
      * guaranteed to appear in alphabetical order.
      *
-     * <p> Note that the {@link java.nio.file.Files} class defines the {@link
-     * java.nio.file.Files#newDirectoryStream(Path) newDirectoryStream} method to
+     * <p> Note that the {@link j86.j86.java.nio.file.Files} class defines the {@link
+     * j86.j86.java.nio.file.Files#newDirectoryStream(Path) newDirectoryStream} method to
      * open a directory and iterate over the names of the files in the directory.
      * This may use less resources when working with very large directories, and
      * may be more responsive when working with remote directories.
@@ -1149,7 +1149,7 @@ public class File
      *          SecurityManager#checkRead(String)} method denies read access to
      *          the directory
      *
-     * @see java.nio.file.Files#newDirectoryStream(Path,String)
+     * @see j86.j86.java.nio.file.Files#newDirectoryStream(Path,String)
      */
     public String[] list(FilenameFilter filter) {
         String names[] = list();
@@ -1184,8 +1184,8 @@ public class File
      * will appear in any specific order; they are not, in particular,
      * guaranteed to appear in alphabetical order.
      *
-     * <p> Note that the {@link java.nio.file.Files} class defines the {@link
-     * java.nio.file.Files#newDirectoryStream(Path) newDirectoryStream} method
+     * <p> Note that the {@link j86.j86.java.nio.file.Files} class defines the {@link
+     * j86.j86.java.nio.file.Files#newDirectoryStream(Path) newDirectoryStream} method
      * to open a directory and iterate over the names of the files in the
      * directory. This may use less resources when working with very large
      * directories.
@@ -1242,7 +1242,7 @@ public class File
      *          the directory
      *
      * @since  1.2
-     * @see java.nio.file.Files#newDirectoryStream(Path,String)
+     * @see j86.j86.java.nio.file.Files#newDirectoryStream(Path,String)
      */
     public File[] listFiles(FilenameFilter filter) {
         String ss[] = list();
@@ -1280,7 +1280,7 @@ public class File
      *          the directory
      *
      * @since  1.2
-     * @see java.nio.file.Files#newDirectoryStream(Path,java.nio.file.DirectoryStream.Filter)
+     * @see j86.j86.java.nio.file.Files#newDirectoryStream(Path,java.nio.file.DirectoryStream.Filter)
      */
     public File[] listFiles(FileFilter filter) {
         String ss[] = list();
@@ -1302,7 +1302,7 @@ public class File
      *
      * @throws  SecurityException
      *          If a security manager exists and its <code>{@link
-     *          java.lang.SecurityManager#checkWrite(java.lang.String)}</code>
+     *          j86.java.lang.SecurityManager#checkWrite(java.lang.String)}</code>
      *          method does not permit the named directory to be created
      */
     public boolean mkdir() {
@@ -1328,11 +1328,11 @@ public class File
      *
      * @throws  SecurityException
      *          If a security manager exists and its <code>{@link
-     *          java.lang.SecurityManager#checkRead(java.lang.String)}</code>
+     *          j86.java.lang.SecurityManager#checkRead(java.lang.String)}</code>
      *          method does not permit verification of the existence of the
      *          named directory and all necessary parent directories; or if
      *          the <code>{@link
-     *          java.lang.SecurityManager#checkWrite(java.lang.String)}</code>
+     *          j86.java.lang.SecurityManager#checkWrite(java.lang.String)}</code>
      *          method does not permit the named directory and all necessary
      *          parent directories to be created
      */
@@ -1365,8 +1365,8 @@ public class File
      * already exists.  The return value should always be checked to make sure
      * that the rename operation was successful.
      *
-     * <p> Note that the {@link java.nio.file.Files} class defines the {@link
-     * java.nio.file.Files#move move} method to move or rename a file in a
+     * <p> Note that the {@link j86.j86.java.nio.file.Files} class defines the {@link
+     * j86.j86.java.nio.file.Files#move move} method to move or rename a file in a
      * platform independent manner.
      *
      * @param  dest  The new abstract pathname for the named file
@@ -1376,7 +1376,7 @@ public class File
      *
      * @throws  SecurityException
      *          If a security manager exists and its <code>{@link
-     *          java.lang.SecurityManager#checkWrite(java.lang.String)}</code>
+     *          j86.java.lang.SecurityManager#checkWrite(java.lang.String)}</code>
      *          method denies write access to either the old or new pathnames
      *
      * @throws  NullPointerException
@@ -1418,7 +1418,7 @@ public class File
      *
      * @throws  SecurityException
      *          If a security manager exists and its <code>{@link
-     *          java.lang.SecurityManager#checkWrite(java.lang.String)}</code>
+     *          j86.java.lang.SecurityManager#checkWrite(java.lang.String)}</code>
      *          method denies write access to the named file
      *
      * @since 1.2
@@ -1449,7 +1449,7 @@ public class File
      *
      * @throws  SecurityException
      *          If a security manager exists and its <code>{@link
-     *          java.lang.SecurityManager#checkWrite(java.lang.String)}</code>
+     *          j86.java.lang.SecurityManager#checkWrite(java.lang.String)}</code>
      *          method denies write access to the named file
      *
      * @since 1.2
@@ -1471,7 +1471,7 @@ public class File
      * machine with special privileges that allow it to modify files that
      * disallow write operations.
      *
-     * <p> The {@link java.nio.file.Files} class defines methods that operate on
+     * <p> The {@link j86.j86.java.nio.file.Files} class defines methods that operate on
      * file attributes including file permissions. This may be used when finer
      * manipulation of file permissions is required.
      *
@@ -1492,7 +1492,7 @@ public class File
      *
      * @throws  SecurityException
      *          If a security manager exists and its <code>{@link
-     *          java.lang.SecurityManager#checkWrite(java.lang.String)}</code>
+     *          j86.java.lang.SecurityManager#checkWrite(java.lang.String)}</code>
      *          method denies write access to the named file
      *
      * @since 1.6
@@ -1530,7 +1530,7 @@ public class File
      *
      * @throws  SecurityException
      *          If a security manager exists and its <code>{@link
-     *          java.lang.SecurityManager#checkWrite(java.lang.String)}</code>
+     *          j86.java.lang.SecurityManager#checkWrite(java.lang.String)}</code>
      *          method denies write access to the file
      *
      * @since 1.6
@@ -1545,7 +1545,7 @@ public class File
      * machine with special privileges that allow it to read files that are
      * marked as unreadable.
      *
-     * <p> The {@link java.nio.file.Files} class defines methods that operate on
+     * <p> The {@link j86.j86.java.nio.file.Files} class defines methods that operate on
      * file attributes including file permissions. This may be used when finer
      * manipulation of file permissions is required.
      *
@@ -1569,7 +1569,7 @@ public class File
      *
      * @throws  SecurityException
      *          If a security manager exists and its <code>{@link
-     *          java.lang.SecurityManager#checkWrite(java.lang.String)}</code>
+     *          j86.java.lang.SecurityManager#checkWrite(java.lang.String)}</code>
      *          method denies write access to the file
      *
      * @since 1.6
@@ -1610,7 +1610,7 @@ public class File
      *
      * @throws  SecurityException
      *          If a security manager exists and its <code>{@link
-     *          java.lang.SecurityManager#checkWrite(java.lang.String)}</code>
+     *          j86.java.lang.SecurityManager#checkWrite(java.lang.String)}</code>
      *          method denies write access to the file
      *
      * @since 1.6
@@ -1625,7 +1625,7 @@ public class File
      * machine with special privileges that allow it to execute files that are
      * not marked executable.
      *
-     * <p> The {@link java.nio.file.Files} class defines methods that operate on
+     * <p> The {@link j86.j86.java.nio.file.Files} class defines methods that operate on
      * file attributes including file permissions. This may be used when finer
      * manipulation of file permissions is required.
      *
@@ -1649,7 +1649,7 @@ public class File
      *
      * @throws  SecurityException
      *          If a security manager exists and its <code>{@link
-     *          java.lang.SecurityManager#checkWrite(java.lang.String)}</code>
+     *          j86.java.lang.SecurityManager#checkWrite(java.lang.String)}</code>
      *          method denies write access to the file
      *
      * @since 1.6
@@ -1690,7 +1690,7 @@ public class File
      *
      * @throws  SecurityException
      *          If a security manager exists and its <code>{@link
-     *          java.lang.SecurityManager#checkWrite(java.lang.String)}</code>
+     *          j86.java.lang.SecurityManager#checkWrite(java.lang.String)}</code>
      *          method denies write access to the file
      *
      * @since 1.6
@@ -1711,7 +1711,7 @@ public class File
      *
      * @throws  SecurityException
      *          If a security manager exists and its <code>{@link
-     *          java.lang.SecurityManager#checkExec(java.lang.String)}</code>
+     *          j86.java.lang.SecurityManager#checkExec(java.lang.String)}</code>
      *          method denies execute access to the file
      *
      * @since 1.6
@@ -1770,7 +1770,7 @@ public class File
      *          filesystem roots.
      *
      * @since  1.2
-     * @see java.nio.file.FileStore
+     * @see j86.j86.java.nio.file.FileStore
      */
     public static File[] listRoots() {
         return fs.listRoots();
@@ -1892,7 +1892,7 @@ public class File
 
         // temporary directory location
         private static final File tmpdir = new File(AccessController
-            .doPrivileged(new GetPropertyAction("java.io.tmpdir")));
+            .doPrivileged(new GetPropertyAction("j86.java.io.tmpdir")));
         static File location() {
             return tmpdir;
         }
@@ -1960,7 +1960,7 @@ public class File
      * <p> If the <code>directory</code> argument is <code>null</code> then the
      * system-dependent default temporary-file directory will be used.  The
      * default temporary-file directory is specified by the system property
-     * <code>java.io.tmpdir</code>.  On UNIX systems the default value of this
+     * <code>j86.java.io.tmpdir</code>.  On UNIX systems the default value of this
      * property is typically <code>"/tmp"</code> or <code>"/var/tmp"</code>; on
      * Microsoft Windows systems it is typically <code>"C:\\WINNT\\TEMP"</code>.  A different
      * value may be given to this system property when the Java virtual machine
@@ -1988,7 +1988,7 @@ public class File
      *
      * @throws  SecurityException
      *          If a security manager exists and its <code>{@link
-     *          java.lang.SecurityManager#checkWrite(java.lang.String)}</code>
+     *          j86.java.lang.SecurityManager#checkWrite(java.lang.String)}</code>
      *          method does not allow a file to be created
      *
      * @since 1.2
@@ -2030,12 +2030,12 @@ public class File
     /**
      * Creates an empty file in the default temporary-file directory, using
      * the given prefix and suffix to generate its name. Invoking this method
-     * is equivalent to invoking <code>{@link #createTempFile(java.lang.String,
-     * java.lang.String, java.io.File)
+     * is equivalent to invoking <code>{@link #createTempFile(j86.java.lang.String,
+     * j86.java.lang.String, j86.java.io.File)
      * createTempFile(prefix,&nbsp;suffix,&nbsp;null)}</code>.
      *
      * <p> The {@link
-     * java.nio.file.Files#createTempFile(String,String,java.nio.file.attribute.FileAttribute[])
+     * j86.j86.java.nio.file.Files#createTempFile(String,String,j86.java.nio.file.attribute.FileAttribute[])
      * Files.createTempFile} method provides an alternative method to create an
      * empty file in the temporary-file directory. Files created by that method
      * may have more restrictive access permissions to files created by this
@@ -2058,11 +2058,11 @@ public class File
      *
      * @throws  SecurityException
      *          If a security manager exists and its <code>{@link
-     *          java.lang.SecurityManager#checkWrite(java.lang.String)}</code>
+     *          j86.java.lang.SecurityManager#checkWrite(java.lang.String)}</code>
      *          method does not allow a file to be created
      *
      * @since 1.2
-     * @see java.nio.file.Files#createTempDirectory(String,FileAttribute[])
+     * @see j86.j86.java.nio.file.Files#createTempDirectory(String,FileAttribute[])
      */
     public static File createTempFile(String prefix, String suffix)
         throws IOException
@@ -2149,7 +2149,7 @@ public class File
      * <p>
      * @serialData  Default fields followed by separator character.
      */
-    private synchronized void writeObject(java.io.ObjectOutputStream s)
+    private synchronized void writeObject(j86.java.io.ObjectOutputStream s)
         throws IOException
     {
         s.defaultWriteObject();
@@ -2162,7 +2162,7 @@ public class File
      * than the separator character on this system, then the old separator
      * is replaced by the local separator.
      */
-    private synchronized void readObject(java.io.ObjectInputStream s)
+    private synchronized void readObject(j86.java.io.ObjectInputStream s)
          throws IOException, ClassNotFoundException
     {
         ObjectInputStream.GetField fields = s.readFields();
@@ -2177,10 +2177,10 @@ public class File
 
     private static final long PATH_OFFSET;
     private static final long PREFIX_LENGTH_OFFSET;
-    private static final sun.misc.Unsafe UNSAFE;
+    private static final j86.sun.misc.Unsafe UNSAFE;
     static {
         try {
-            sun.misc.Unsafe unsafe = sun.misc.Unsafe.getUnsafe();
+            j86.sun.misc.Unsafe unsafe = sun.misc.Unsafe.getUnsafe();
             PATH_OFFSET = unsafe.objectFieldOffset(
                     File.class.getDeclaredField("path"));
             PREFIX_LENGTH_OFFSET = unsafe.objectFieldOffset(
@@ -2195,20 +2195,20 @@ public class File
     /** use serialVersionUID from JDK 1.0.2 for interoperability */
     private static final long serialVersionUID = 301077366599181567L;
 
-    // -- Integration with java.nio.file --
+    // -- Integration with j86.j86.java.nio.file --
 
     private volatile transient Path filePath;
 
     /**
-     * Returns a {@link Path java.nio.file.Path} object constructed from the
+     * Returns a {@link Path j86.j86.java.nio.file.Path} object constructed from the
      * this abstract path. The resulting {@code Path} is associated with the
-     * {@link java.nio.file.FileSystems#getDefault default-filesystem}.
+     * {@link j86.j86.java.nio.file.FileSystems#getDefault default-filesystem}.
      *
      * <p> The first invocation of this method works as if invoking it were
      * equivalent to evaluating the expression:
      * <blockquote><pre>
-     * {@link java.nio.file.FileSystems#getDefault FileSystems.getDefault}().{@link
-     * java.nio.file.FileSystem#getPath getPath}(this.{@link #getPath getPath}());
+     * {@link j86.j86.java.nio.file.FileSystems#getDefault FileSystems.getDefault}().{@link
+     * j86.j86.java.nio.file.FileSystem#getPath getPath}(this.{@link #getPath getPath}());
      * </pre></blockquote>
      * Subsequent invocations of this method return the same {@code Path}.
      *
@@ -2218,9 +2218,9 @@ public class File
      *
      * @return  a {@code Path} constructed from this abstract path
      *
-     * @throws  java.nio.file.InvalidPathException
+     * @throws  j86.j86.java.nio.file.InvalidPathException
      *          if a {@code Path} object cannot be constructed from the abstract
-     *          path (see {@link java.nio.file.FileSystem#getPath FileSystem.getPath})
+     *          path (see {@link j86.j86.java.nio.file.FileSystem#getPath FileSystem.getPath})
      *
      * @since   1.7
      * @see Path#toFile

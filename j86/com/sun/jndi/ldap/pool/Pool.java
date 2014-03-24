@@ -23,19 +23,19 @@
  * questions.
  */
 
-package com.sun.jndi.ldap.pool;
+package j86.j86.com.sun.jndi.ldap.pool;
 
-import java.util.Map;
-import java.util.WeakHashMap;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.LinkedList;
+import j86.java.util.Map;
+import j86.java.util.WeakHashMap;
+import j86.java.util.Collection;
+import j86.java.util.Collections;
+import j86.java.util.Iterator;
+import j86.java.util.LinkedList;
 
-import java.io.PrintStream;
-import java.lang.ref.Reference;
-import java.lang.ref.ReferenceQueue;
-import javax.naming.NamingException;
+import j86.java.io.PrintStream;
+import j86.j86.java.lang.ref.Reference;
+import j86.j86.java.lang.ref.ReferenceQueue;
+import j86.javax.naming.NamingException;
 
 /**
  * A map of pool ids to Connections.
@@ -77,7 +77,7 @@ import javax.naming.NamingException;
 
 final public class Pool {
 
-    static final boolean debug = com.sun.jndi.ldap.LdapPoolManager.debug;
+    static final boolean debug = j86.com.sun.jndi.ldap.LdapPoolManager.debug;
 
     /*
      * Used for connections cleanup

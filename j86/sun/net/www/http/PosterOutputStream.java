@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.net.www.http;
+package j86.j86.j86.sun.net.www.http;
 
-import java.io.*;
-import java.net.*;
+import j86.java.io.*;
+import j86.java.net.*;
 
 /**
  * Instances of this class are returned to applications for the purpose of
@@ -85,7 +85,7 @@ public class PosterOutputStream extends ByteArrayOutputStream {
      * reusing the already allocated buffer space. If the output stream
      * has been closed, then this method has no effect.
      *
-     * @see     java.io.ByteArrayInputStream#count
+     * @see     j86.java.io.ByteArrayInputStream#count
      */
     public synchronized void reset() {
         if (closed) {

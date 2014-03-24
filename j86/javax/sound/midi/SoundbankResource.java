@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.sound.midi;
+package j86.javax.sound.midi;
 
 /**
  * A <code>SoundbankResource</code> represents any audio resource stored
@@ -47,7 +47,7 @@ package javax.sound.midi;
  * The data class for an audio sample will be an object
  * that encapsulates the audio sample data itself and information
  * about how to interpret it (the format of the audio data), such
- * as an <code>{@link javax.sound.sampled.AudioInputStream}</code>.     </li>
+ * as an <code>{@link j86.javax.sound.sampled.AudioInputStream}</code>.     </li>
  * <li>Embedded sequences.  A sound bank may contain built-in
  * song data stored in a data object such as a <code>{@link Sequence}</code>.
  * </ul>

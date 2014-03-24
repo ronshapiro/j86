@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.rmi;
+package j86.java.rmi;
 
 /**
  * An <code>UnexpectedException</code> is thrown if the client of a

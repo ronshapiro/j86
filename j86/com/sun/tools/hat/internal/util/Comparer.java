@@ -30,7 +30,7 @@
  * at JavaSoft/Sun.
  */
 
-package com.sun.tools.hat.internal.util;
+package j86.j86.com.sun.tools.hat.internal.util;
 
 /**
  * Base class for comparison of two objects.
@@ -43,7 +43,7 @@ abstract public class Comparer {
 
     /**
      * @return a number <, == or > 0 depending on lhs compared to rhs
-     * @see java.lang.String.compareTo
+     * @see j86.java.lang.String.compareTo
     **/
     abstract public int compare(Object lhs, Object rhs);
 }

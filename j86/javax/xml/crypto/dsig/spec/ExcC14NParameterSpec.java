@@ -25,12 +25,12 @@
 /*
  * $Id: ExcC14NParameterSpec.java,v 1.7 2005/05/13 18:45:42 mullan Exp $
  */
-package javax.xml.crypto.dsig.spec;
+package j86.j86.j86.javax.xml.crypto.dsig.spec;
 
-import javax.xml.crypto.dsig.CanonicalizationMethod;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import j86.j86.javax.xml.crypto.dsig.CanonicalizationMethod;
+import j86.java.util.ArrayList;
+import j86.java.util.Collections;
+import j86.java.util.List;
 
 /**
  * Parameters for the W3C Recommendation:
@@ -109,7 +109,7 @@ public final class ExcC14NParameterSpec implements C14NMethodParameterSpec {
      * is a <code>String</code> that represents a namespace prefix.
      *
      * <p>This implementation returns an {@link
-     * java.util.Collections#unmodifiableList unmodifiable list}.
+     * j86.java.util.Collections#unmodifiableList unmodifiable list}.
      *
      * @return the inclusive namespace prefix list (may be empty but never
      *    <code>null</code>)

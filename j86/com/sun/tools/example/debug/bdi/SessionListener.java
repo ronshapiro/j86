@@ -32,10 +32,10 @@
  */
 
 
-package com.sun.tools.example.debug.bdi;
+package j86.com.sun.tools.example.debug.bdi;
 
-import java.util.EventObject;
-import java.util.EventListener;
+import j86.java.util.EventObject;
+import j86.java.util.EventListener;
 
 public interface SessionListener extends EventListener {
 

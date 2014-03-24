@@ -23,9 +23,9 @@
  * questions.
  */
 
-package com.sun.nio.file;
+package com.j86.sun.nio.file;
 
-import java.nio.file.OpenOption;
+import j86.j86.java.nio.file.OpenOption;
 
 /**
  * Defines <em>extended</em> open options supported on some platforms

@@ -22,10 +22,10 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.tree;
+package j86.j86.javax.swing.tree;
 
-import java.awt.Component;
-import javax.swing.JTree;
+import j86.java.awt.Component;
+import j86.javax.swing.JTree;
 
 /**
  * Defines the requirements for an object that displays a tree node.

@@ -23,21 +23,21 @@
  * questions.
  */
 
-package sun.nio.ch;
+package j86.j86.j86.sun.nio.ch;
 
-import java.lang.ref.SoftReference;
-import java.lang.reflect.*;
-import java.io.IOException;
-import java.io.FileDescriptor;
-import java.nio.ByteBuffer;
-import java.nio.MappedByteBuffer;
-import java.nio.channels.*;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.util.*;
-import sun.misc.Unsafe;
-import sun.misc.Cleaner;
-import sun.security.action.GetPropertyAction;
+import j86.j86.java.lang.ref.SoftReference;
+import j86.j86.j86.java.lang.reflect.*;
+import j86.java.io.IOException;
+import j86.java.io.FileDescriptor;
+import j86.java.nio.ByteBuffer;
+import j86.java.nio.MappedByteBuffer;
+import j86.j86.java.nio.channels.*;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.util.*;
+import j86.sun.misc.Unsafe;
+import j86.sun.misc.Cleaner;
+import j86.sun.security.action.GetPropertyAction;
 
 
 public class Util {
@@ -301,7 +301,7 @@ public class Util {
         AccessController.doPrivileged(new PrivilegedAction<Void>() {
                 public Void run() {
                     try {
-                        Class<?> cl = Class.forName("java.nio.DirectByteBuffer");
+                        Class<?> cl = Class.forName("j86.java.nio.DirectByteBuffer");
                         Constructor<?> ctor = cl.getDeclaredConstructor(
                             new Class<?>[] { int.class,
                                              long.class,
@@ -346,7 +346,7 @@ public class Util {
         AccessController.doPrivileged(new PrivilegedAction<Void>() {
                 public Void run() {
                     try {
-                        Class<?> cl = Class.forName("java.nio.DirectByteBufferR");
+                        Class<?> cl = Class.forName("j86.java.nio.DirectByteBufferR");
                         Constructor<?> ctor = cl.getDeclaredConstructor(
                             new Class<?>[] { int.class,
                                              long.class,
@@ -392,10 +392,10 @@ public class Util {
 
     static boolean atBugLevel(String bl) {              // package-private
         if (bugLevel == null) {
-            if (!sun.misc.VM.isBooted())
+            if (!j86.sun.misc.VM.isBooted())
                 return false;
             String value = AccessController.doPrivileged(
-                new GetPropertyAction("sun.nio.ch.bugLevel"));
+                new GetPropertyAction("j86.j86.j86.sun.nio.ch.bugLevel"));
             bugLevel = (value != null) ? value : "";
         }
         return bugLevel.equals(bl);

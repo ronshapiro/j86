@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.print;
+package j86.sun.print;
 
 /**
  * Lookup services may implement this interface so that clients may

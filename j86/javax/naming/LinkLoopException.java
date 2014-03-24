@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.naming;
+package j86.javax.naming;
 
 /**
   * This exception is thrown when
@@ -46,7 +46,7 @@ public class LinkLoopException extends LinkException {
       * All the other fields are initialized to null.
       * @param  explanation     A possibly null string containing additional
       *                         detail about this exception.
-      * @see java.lang.Throwable#getMessage
+      * @see j86.java.lang.Throwable#getMessage
       */
     public LinkLoopException(String explanation) {
         super(explanation);

@@ -23,15 +23,15 @@
 # questions.
 #
 
-# Generated exception classes for java.nio.channels
+# Generated exception classes for j86.j86.java.nio.channels
 
 SINCE=1.4
-PACKAGE=java.nio.channels
+PACKAGE=j86.j86.java.nio.channels
 # This year should only change if the generated source is modified.
 COPYRIGHT_YEARS="2000, 2007,"
 
 
-SUPER=java.io.IOException
+SUPER=j86.java.io.IOException
 
 gen ClosedChannelException "
  * Checked exception thrown when an attempt is made to invoke or complete an
@@ -150,7 +150,7 @@ gen OverlappingFileLockException "
 
 SINCE=1.7
 
-SUPER=java.io.IOException
+SUPER=j86.java.io.IOException
 
 gen InterruptedByTimeoutException "
  * Checked exception received by a thread when a timeout elapses before an

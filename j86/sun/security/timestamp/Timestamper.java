@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.security.timestamp;
+package j86.sun.security.timestamp;
 
-import java.io.IOException;
+import j86.java.io.IOException;
 
 /**
  * A timestamping service which conforms to the Time-Stamp Protocol (TSP)

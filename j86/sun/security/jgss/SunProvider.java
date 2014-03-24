@@ -23,15 +23,15 @@
  * questions.
  */
 
-package sun.security.jgss;
+package j86.sun.security.jgss;
 
-import java.security.Provider;
-import java.security.AccessController;
+import j86.java.security.Provider;
+import j86.java.security.AccessController;
 
 /**
  * Defines the Sun JGSS provider.
  * Will merger this with the Sun security provider
- * sun.security.provider.Sun when the JGSS src is merged with the JDK
+ * j86.sun.security.provider.Sun when the JGSS src is merged with the JDK
  * src.
  *
  * Mechanisms supported are:
@@ -65,15 +65,15 @@ public final class SunProvider extends Provider {
         super("SunJGSS", 1.8d, INFO);
 
         AccessController.doPrivileged(
-                        new java.security.PrivilegedAction<Void>() {
+                        new j86.java.security.PrivilegedAction<Void>() {
             public Void run() {
                 put("GssApiMechanism.1.2.840.113554.1.2.2",
-                    "sun.security.jgss.krb5.Krb5MechFactory");
+                    "j86.j86.sun.security.jgss.krb5.Krb5MechFactory");
                 put("GssApiMechanism.1.3.6.1.5.5.2",
-                    "sun.security.jgss.spnego.SpNegoMechFactory");
+                    "j86.j86.sun.security.jgss.spnego.SpNegoMechFactory");
                 /*
                   put("GssApiMechanism.1.3.6.1.4.1.42.2.26.1.2",
-                  "sun.security.jgss.dummy.DummyMechFactory");
+                  "j86.sun.security.jgss.dummy.DummyMechFactory");
                 */
                 return null;
             }

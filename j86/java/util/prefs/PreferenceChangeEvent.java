@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.util.prefs;
+package j86.j86.java.util.prefs;
 
-import java.io.NotSerializableException;
+import j86.java.io.NotSerializableException;
 
 /**
  * An event emitted by a <tt>Preferences</tt> node to indicate that
@@ -42,7 +42,7 @@ import java.io.NotSerializableException;
  * @since   1.4
  * @serial exclude
  */
-public class PreferenceChangeEvent extends java.util.EventObject {
+public class PreferenceChangeEvent extends j86.java.util.EventObject {
 
     /**
      * Key of the preference that changed.
@@ -105,7 +105,7 @@ public class PreferenceChangeEvent extends java.util.EventObject {
      * Throws NotSerializableException, since NodeChangeEvent objects
      * are not intended to be serializable.
      */
-     private void writeObject(java.io.ObjectOutputStream out)
+     private void writeObject(j86.java.io.ObjectOutputStream out)
                                                throws NotSerializableException {
          throw new NotSerializableException("Not serializable.");
      }
@@ -114,7 +114,7 @@ public class PreferenceChangeEvent extends java.util.EventObject {
      * Throws NotSerializableException, since PreferenceChangeEvent objects
      * are not intended to be serializable.
      */
-     private void readObject(java.io.ObjectInputStream in)
+     private void readObject(j86.java.io.ObjectInputStream in)
                                                throws NotSerializableException {
          throw new NotSerializableException("Not serializable.");
      }

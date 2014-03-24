@@ -23,18 +23,18 @@
  * questions.
  */
 
-package javax.print;
+package j86.javax.print;
 
-import java.io.OutputStream;
+import j86.java.io.OutputStream;
 
-import java.util.ArrayList;
-import java.util.Iterator;
+import j86.java.util.ArrayList;
+import j86.java.util.Iterator;
 
-import javax.print.DocFlavor;
+import j86.javax.print.DocFlavor;
 
-import sun.awt.AppContext;
-import java.util.ServiceLoader;
-import java.util.ServiceConfigurationError;
+import j86.sun.awt.AppContext;
+import j86.java.util.ServiceLoader;
+import j86.java.util.ServiceConfigurationError;
 
 /**
  * A <code>StreamPrintServiceFactory</code> is the factory for
@@ -145,7 +145,7 @@ public abstract class StreamPrintServiceFactory {
      * the print system with
      * the {@link StreamPrintService#dispose() dispose} method
      * before returning from the
-     * {@link DocPrintJob#print(Doc, javax.print.attribute.PrintRequestAttributeSet) print}
+     * {@link DocPrintJob#print(Doc, j86.j86.javax.print.attribute.PrintRequestAttributeSet) print}
      * method of <code>DocPrintJob</code> so that the print system knows
      * this printer is no longer usable.
      * This is equivalent to a physical printer going offline - permanently.
@@ -173,8 +173,8 @@ public abstract class StreamPrintServiceFactory {
             }
 
             try {
-                java.security.AccessController.doPrivileged(
-                     new java.security.PrivilegedExceptionAction() {
+                j86.java.security.AccessController.doPrivileged(
+                     new j86.java.security.PrivilegedExceptionAction() {
                         public Object run() {
                             Iterator<StreamPrintServiceFactory> iterator =
                                 ServiceLoader.load
@@ -195,7 +195,7 @@ public abstract class StreamPrintServiceFactory {
                             return null;
                         }
                 });
-            } catch (java.security.PrivilegedActionException e) {
+            } catch (j86.java.security.PrivilegedActionException e) {
             }
             return listOfFactories;
         }

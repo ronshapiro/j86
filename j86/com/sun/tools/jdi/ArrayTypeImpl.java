@@ -23,14 +23,14 @@
  * questions.
  */
 
-package com.sun.tools.jdi;
+package j86.com.sun.tools.jdi;
 
-import com.sun.jdi.*;
+import j86.com.sun.jdi.*;
 
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.Map;
+import j86.java.util.List;
+import j86.java.util.ArrayList;
+import j86.java.util.Iterator;
+import j86.java.util.Map;
 
 public class ArrayTypeImpl extends ReferenceTypeImpl
     implements ArrayType
@@ -140,10 +140,10 @@ public class ArrayTypeImpl extends ReferenceTypeImpl
             }
         } else if (destType instanceof InterfaceType) {
             // Only valid InterfaceType assignee is Cloneable
-            return destType.name().equals("java.lang.Cloneable");
+            return destType.name().equals("j86.java.lang.Cloneable");
         } else {
             // Only valid ClassType assignee is Object
-            return destType.name().equals("java.lang.Object");
+            return destType.name().equals("j86.java.lang.Object");
         }
     }
 
@@ -165,7 +165,7 @@ public class ArrayTypeImpl extends ReferenceTypeImpl
          * For primitive arrays, the modifiers are always
          *   VMModifiers.FINAL | VMModifiers.PUBLIC
          *
-         * Reference com.sun.jdi.Accessible.java.
+         * Reference j86.com.sun.jdi.Accessible.java.
          */
         try {
             Type t = componentType();

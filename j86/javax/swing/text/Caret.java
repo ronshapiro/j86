@@ -22,12 +22,12 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text;
+package j86.j86.javax.swing.text;
 
-import java.awt.Graphics;
-import java.awt.Point;
-import javax.swing.Action;
-import javax.swing.event.ChangeListener;
+import j86.java.awt.Graphics;
+import j86.java.awt.Point;
+import j86.javax.swing.Action;
+import j86.j86.javax.swing.event.ChangeListener;
 
 /**
  * A place within a document view that represents where

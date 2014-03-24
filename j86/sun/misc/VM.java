@@ -23,13 +23,13 @@
  * questions.
  */
 
-package sun.misc;
+package j86.sun.misc;
 
-import static java.lang.Thread.State.*;
-import java.util.Properties;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
+import static j86.java.lang.Thread.State.*;
+import j86.java.util.Properties;
+import j86.java.util.HashMap;
+import j86.java.util.Map;
+import j86.java.util.Set;
 
 public class VM {
 
@@ -249,7 +249,7 @@ public class VM {
      * cause the library to deadlock.
      *
      * Note that the saved system properties do not include
-     * the ones set by sun.misc.Version.init().
+     * the ones set by j86.sun.misc.Version.init().
      *
      */
     public static String getSavedProperty(String key) {
@@ -277,9 +277,9 @@ public class VM {
         // Set the maximum amount of direct memory.  This value is controlled
         // by the vm option -XX:MaxDirectMemorySize=<size>.
         // The maximum amount of allocatable direct buffer memory (in bytes)
-        // from the system property sun.nio.MaxDirectMemorySize set by the VM.
+        // from the system property j86.sun.nio.MaxDirectMemorySize set by the VM.
         // The system property will be removed.
-        String s = (String)props.remove("sun.nio.MaxDirectMemorySize");
+        String s = (String)props.remove("j86.sun.nio.MaxDirectMemorySize");
         if (s != null) {
             if (s.equals("-1")) {
                 // -XX:MaxDirectMemorySize not given, take default
@@ -292,7 +292,7 @@ public class VM {
         }
 
         // Check if direct buffers should be page aligned
-        s = (String)props.remove("sun.nio.PageAlignDirectMemory");
+        s = (String)props.remove("j86.sun.nio.PageAlignDirectMemory");
         if ("true".equals(s))
             pageAlignDirectMemory = true;
 
@@ -305,13 +305,13 @@ public class VM {
                                : Boolean.parseBoolean(s));
 
         // Remove other private system properties
-        // used by java.lang.Integer.IntegerCache
-        props.remove("java.lang.Integer.IntegerCache.high");
+        // used by j86.java.lang.Integer.IntegerCache
+        props.remove("j86.java.lang.Integer.IntegerCache.high");
 
-        // used by java.util.zip.ZipFile
+        // used by j86.j86.java.util.zip.ZipFile
         props.remove("sun.zip.disableMemoryMapping");
 
-        // used by sun.launcher.LauncherHelper
+        // used by j86.sun.launcher.LauncherHelper
         props.remove("sun.java.launcher.diag");
     }
 

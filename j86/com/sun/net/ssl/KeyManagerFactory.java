@@ -24,12 +24,12 @@
  */
 
 /*
- * NOTE:  this file was copied from javax.net.ssl.KeyManagerFactory
+ * NOTE:  this file was copied from j86.j86.javax.net.ssl.KeyManagerFactory
  */
 
-package com.sun.net.ssl;
+package com.j86.sun.net.ssl;
 
-import java.security.*;
+import j86.java.security.*;
 
 /**
  * This class acts as a factory for key managers based on a
@@ -38,7 +38,7 @@ import java.security.*;
  * material is based on a KeyStore and/or provider specific sources.
  *
  * @deprecated As of JDK 1.4, this implementation-specific class was
- *      replaced by {@link javax.net.ssl.KeyManagerFactory}.
+ *      replaced by {@link j86.j86.javax.net.ssl.KeyManagerFactory}.
  */
 @Deprecated
 public class KeyManagerFactory {
@@ -59,7 +59,7 @@ public class KeyManagerFactory {
      * {@code sun.ssl.keymanager.type} security property, or an
      * implementation-specific default if no such property exists.
      *
-     * @see java.security.Security security properties
+     * @see j86.java.security.Security security properties
      */
     public final static String getDefaultAlgorithm() {
         String type;

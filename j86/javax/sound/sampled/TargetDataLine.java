@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.sound.sampled;
+package j86.javax.sound.sampled;
 
 /**
  * A target data line is a type of <code>{@link DataLine}</code> from which

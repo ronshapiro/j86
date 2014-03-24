@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.reflect;
+package j86.sun.reflect;
 
-import java.lang.reflect.*;
-import sun.misc.Unsafe;
+import j86.j86.j86.java.lang.reflect.*;
+import j86.sun.misc.Unsafe;
 
 /** Shared functionality for all accessor generators */
 
@@ -99,49 +99,49 @@ class AccessorGenerator implements ClassFileConstants {
 
     // Requires that superClass has been set up
     protected void emitCommonConstantPoolEntries() {
-        // +   [UTF-8] "java/lang/Throwable"
+        // +   [UTF-8] "j86.java.lang/Throwable"
         // +   [CONSTANT_Class_info] for above
-        // +   [UTF-8] "java/lang/ClassCastException"
+        // +   [UTF-8] "j86.java.lang/ClassCastException"
         // +   [CONSTANT_Class_info] for above
-        // +   [UTF-8] "java/lang/NullPointerException"
+        // +   [UTF-8] "j86.java.lang/NullPointerException"
         // +   [CONSTANT_Class_info] for above
-        // +   [UTF-8] "java/lang/IllegalArgumentException"
+        // +   [UTF-8] "j86.java.lang/IllegalArgumentException"
         // +   [CONSTANT_Class_info] for above
-        // +   [UTF-8] "java/lang/InvocationTargetException"
+        // +   [UTF-8] "j86.java.lang/InvocationTargetException"
         // +   [CONSTANT_Class_info] for above
         // +   [UTF-8] "<init>"
         // +   [UTF-8] "()V"
         // +   [CONSTANT_NameAndType_info] for above
         // +   [CONSTANT_Methodref_info] for NullPointerException's constructor
         // +   [CONSTANT_Methodref_info] for IllegalArgumentException's constructor
-        // +   [UTF-8] "(Ljava/lang/String;)V"
-        // +   [CONSTANT_NameAndType_info] for "<init>(Ljava/lang/String;)V"
+        // +   [UTF-8] "(Lj86.java.lang/String;)V"
+        // +   [CONSTANT_NameAndType_info] for "<init>(Lj86.java.lang/String;)V"
         // +   [CONSTANT_Methodref_info] for IllegalArgumentException's constructor taking a String
-        // +   [UTF-8] "(Ljava/lang/Throwable;)V"
-        // +   [CONSTANT_NameAndType_info] for "<init>(Ljava/lang/Throwable;)V"
+        // +   [UTF-8] "(Lj86.java.lang/Throwable;)V"
+        // +   [CONSTANT_NameAndType_info] for "<init>(Lj86.java.lang/Throwable;)V"
         // +   [CONSTANT_Methodref_info] for InvocationTargetException's constructor
         // +   [CONSTANT_Methodref_info] for "super()"
-        // +   [UTF-8] "java/lang/Object"
+        // +   [UTF-8] "j86.java.lang/Object"
         // +   [CONSTANT_Class_info] for above
         // +   [UTF-8] "toString"
-        // +   [UTF-8] "()Ljava/lang/String;"
-        // +   [CONSTANT_NameAndType_info] for "toString()Ljava/lang/String;"
+        // +   [UTF-8] "()Lj86.java.lang/String;"
+        // +   [CONSTANT_NameAndType_info] for "toString()Lj86.java.lang/String;"
         // +   [CONSTANT_Methodref_info] for Object's toString method
         // +   [UTF-8] "Code"
         // +   [UTF-8] "Exceptions"
-        asm.emitConstantPoolUTF8("java/lang/Throwable");
+        asm.emitConstantPoolUTF8("j86.java.lang/Throwable");
         asm.emitConstantPoolClass(asm.cpi());
         throwableClass = asm.cpi();
-        asm.emitConstantPoolUTF8("java/lang/ClassCastException");
+        asm.emitConstantPoolUTF8("j86.java.lang/ClassCastException");
         asm.emitConstantPoolClass(asm.cpi());
         classCastClass = asm.cpi();
-        asm.emitConstantPoolUTF8("java/lang/NullPointerException");
+        asm.emitConstantPoolUTF8("j86.java.lang/NullPointerException");
         asm.emitConstantPoolClass(asm.cpi());
         nullPointerClass = asm.cpi();
-        asm.emitConstantPoolUTF8("java/lang/IllegalArgumentException");
+        asm.emitConstantPoolUTF8("j86.java.lang/IllegalArgumentException");
         asm.emitConstantPoolClass(asm.cpi());
         illegalArgumentClass = asm.cpi();
-        asm.emitConstantPoolUTF8("java/lang/reflect/InvocationTargetException");
+        asm.emitConstantPoolUTF8("j86.j86.j86.java.lang.reflect/InvocationTargetException");
         asm.emitConstantPoolClass(asm.cpi());
         invocationTargetClass = asm.cpi();
         asm.emitConstantPoolUTF8("<init>");
@@ -153,22 +153,22 @@ class AccessorGenerator implements ClassFileConstants {
         nullPointerCtorIdx = asm.cpi();
         asm.emitConstantPoolMethodref(illegalArgumentClass, initNameAndTypeIdx);
         illegalArgumentCtorIdx = asm.cpi();
-        asm.emitConstantPoolUTF8("(Ljava/lang/String;)V");
+        asm.emitConstantPoolUTF8("(Lj86.java.lang/String;)V");
         asm.emitConstantPoolNameAndType(initIdx, asm.cpi());
         initStringNameAndTypeIdx = asm.cpi();
         asm.emitConstantPoolMethodref(illegalArgumentClass, initStringNameAndTypeIdx);
         illegalArgumentStringCtorIdx = asm.cpi();
-        asm.emitConstantPoolUTF8("(Ljava/lang/Throwable;)V");
+        asm.emitConstantPoolUTF8("(Lj86.java.lang/Throwable;)V");
         asm.emitConstantPoolNameAndType(initIdx, asm.cpi());
         asm.emitConstantPoolMethodref(invocationTargetClass, asm.cpi());
         invocationTargetCtorIdx = asm.cpi();
         asm.emitConstantPoolMethodref(superClass, initNameAndTypeIdx);
         superCtorIdx = asm.cpi();
-        asm.emitConstantPoolUTF8("java/lang/Object");
+        asm.emitConstantPoolUTF8("j86.java.lang/Object");
         asm.emitConstantPoolClass(asm.cpi());
         objectClass = asm.cpi();
         asm.emitConstantPoolUTF8("toString");
-        asm.emitConstantPoolUTF8("()Ljava/lang/String;");
+        asm.emitConstantPoolUTF8("()Lj86.java.lang/String;");
         asm.emitConstantPoolNameAndType(sub(asm.cpi(), S1), asm.cpi());
         asm.emitConstantPoolMethodref(objectClass, asm.cpi());
         toStringIdx = asm.cpi();
@@ -181,7 +181,7 @@ class AccessorGenerator implements ClassFileConstants {
     /** Constant pool entries required to be able to box/unbox primitive
         types. Note that we don't emit these if we don't need them. */
     protected void emitBoxingContantPoolEntries() {
-        //  *  [UTF-8] "java/lang/Boolean"
+        //  *  [UTF-8] "j86.java.lang/Boolean"
         //  *  [CONSTANT_Class_info] for above
         //  *  [UTF-8] "(Z)V"
         //  *  [CONSTANT_NameAndType_info] for above
@@ -190,7 +190,7 @@ class AccessorGenerator implements ClassFileConstants {
         //  *  [UTF-8] "()Z"
         //  *  [CONSTANT_NameAndType_info] for above
         //  *  [CONSTANT_Methodref_info] for above
-        //  *  [UTF-8] "java/lang/Byte"
+        //  *  [UTF-8] "j86.java.lang/Byte"
         //  *  [CONSTANT_Class_info] for above
         //  *  [UTF-8] "(B)V"
         //  *  [CONSTANT_NameAndType_info] for above
@@ -199,7 +199,7 @@ class AccessorGenerator implements ClassFileConstants {
         //  *  [UTF-8] "()B"
         //  *  [CONSTANT_NameAndType_info] for above
         //  *  [CONSTANT_Methodref_info] for above
-        //  *  [UTF-8] "java/lang/Character"
+        //  *  [UTF-8] "j86.java.lang/Character"
         //  *  [CONSTANT_Class_info] for above
         //  *  [UTF-8] "(C)V"
         //  *  [CONSTANT_NameAndType_info] for above
@@ -208,7 +208,7 @@ class AccessorGenerator implements ClassFileConstants {
         //  *  [UTF-8] "()C"
         //  *  [CONSTANT_NameAndType_info] for above
         //  *  [CONSTANT_Methodref_info] for above
-        //  *  [UTF-8] "java/lang/Double"
+        //  *  [UTF-8] "j86.java.lang/Double"
         //  *  [CONSTANT_Class_info] for above
         //  *  [UTF-8] "(D)V"
         //  *  [CONSTANT_NameAndType_info] for above
@@ -217,7 +217,7 @@ class AccessorGenerator implements ClassFileConstants {
         //  *  [UTF-8] "()D"
         //  *  [CONSTANT_NameAndType_info] for above
         //  *  [CONSTANT_Methodref_info] for above
-        //  *  [UTF-8] "java/lang/Float"
+        //  *  [UTF-8] "j86.java.lang/Float"
         //  *  [CONSTANT_Class_info] for above
         //  *  [UTF-8] "(F)V"
         //  *  [CONSTANT_NameAndType_info] for above
@@ -226,7 +226,7 @@ class AccessorGenerator implements ClassFileConstants {
         //  *  [UTF-8] "()F"
         //  *  [CONSTANT_NameAndType_info] for above
         //  *  [CONSTANT_Methodref_info] for above
-        //  *  [UTF-8] "java/lang/Integer"
+        //  *  [UTF-8] "j86.java.lang/Integer"
         //  *  [CONSTANT_Class_info] for above
         //  *  [UTF-8] "(I)V"
         //  *  [CONSTANT_NameAndType_info] for above
@@ -235,7 +235,7 @@ class AccessorGenerator implements ClassFileConstants {
         //  *  [UTF-8] "()I"
         //  *  [CONSTANT_NameAndType_info] for above
         //  *  [CONSTANT_Methodref_info] for above
-        //  *  [UTF-8] "java/lang/Long"
+        //  *  [UTF-8] "j86.java.lang/Long"
         //  *  [CONSTANT_Class_info] for above
         //  *  [UTF-8] "(J)V"
         //  *  [CONSTANT_NameAndType_info] for above
@@ -244,7 +244,7 @@ class AccessorGenerator implements ClassFileConstants {
         //  *  [UTF-8] "()J"
         //  *  [CONSTANT_NameAndType_info] for above
         //  *  [CONSTANT_Methodref_info] for above
-        //  *  [UTF-8] "java/lang/Short"
+        //  *  [UTF-8] "j86.java.lang/Short"
         //  *  [CONSTANT_Class_info] for above
         //  *  [UTF-8] "(S)V"
         //  *  [CONSTANT_NameAndType_info] for above
@@ -254,7 +254,7 @@ class AccessorGenerator implements ClassFileConstants {
         //  *  [CONSTANT_NameAndType_info] for above
         //  *  [CONSTANT_Methodref_info] for above
         // Boolean
-        asm.emitConstantPoolUTF8("java/lang/Boolean");
+        asm.emitConstantPoolUTF8("j86.java.lang/Boolean");
         asm.emitConstantPoolClass(asm.cpi());
         booleanIdx = asm.cpi();
         asm.emitConstantPoolUTF8("(Z)V");
@@ -268,7 +268,7 @@ class AccessorGenerator implements ClassFileConstants {
         booleanUnboxIdx = asm.cpi();
 
         // Byte
-        asm.emitConstantPoolUTF8("java/lang/Byte");
+        asm.emitConstantPoolUTF8("j86.java.lang/Byte");
         asm.emitConstantPoolClass(asm.cpi());
         byteIdx = asm.cpi();
         asm.emitConstantPoolUTF8("(B)V");
@@ -282,7 +282,7 @@ class AccessorGenerator implements ClassFileConstants {
         byteUnboxIdx = asm.cpi();
 
         // Character
-        asm.emitConstantPoolUTF8("java/lang/Character");
+        asm.emitConstantPoolUTF8("j86.java.lang/Character");
         asm.emitConstantPoolClass(asm.cpi());
         characterIdx = asm.cpi();
         asm.emitConstantPoolUTF8("(C)V");
@@ -296,7 +296,7 @@ class AccessorGenerator implements ClassFileConstants {
         characterUnboxIdx = asm.cpi();
 
         // Double
-        asm.emitConstantPoolUTF8("java/lang/Double");
+        asm.emitConstantPoolUTF8("j86.java.lang/Double");
         asm.emitConstantPoolClass(asm.cpi());
         doubleIdx = asm.cpi();
         asm.emitConstantPoolUTF8("(D)V");
@@ -310,7 +310,7 @@ class AccessorGenerator implements ClassFileConstants {
         doubleUnboxIdx = asm.cpi();
 
         // Float
-        asm.emitConstantPoolUTF8("java/lang/Float");
+        asm.emitConstantPoolUTF8("j86.java.lang/Float");
         asm.emitConstantPoolClass(asm.cpi());
         floatIdx = asm.cpi();
         asm.emitConstantPoolUTF8("(F)V");
@@ -324,7 +324,7 @@ class AccessorGenerator implements ClassFileConstants {
         floatUnboxIdx = asm.cpi();
 
         // Integer
-        asm.emitConstantPoolUTF8("java/lang/Integer");
+        asm.emitConstantPoolUTF8("j86.java.lang/Integer");
         asm.emitConstantPoolClass(asm.cpi());
         integerIdx = asm.cpi();
         asm.emitConstantPoolUTF8("(I)V");
@@ -338,7 +338,7 @@ class AccessorGenerator implements ClassFileConstants {
         integerUnboxIdx = asm.cpi();
 
         // Long
-        asm.emitConstantPoolUTF8("java/lang/Long");
+        asm.emitConstantPoolUTF8("j86.java.lang/Long");
         asm.emitConstantPoolClass(asm.cpi());
         longIdx = asm.cpi();
         asm.emitConstantPoolUTF8("(J)V");
@@ -352,7 +352,7 @@ class AccessorGenerator implements ClassFileConstants {
         longUnboxIdx = asm.cpi();
 
         // Short
-        asm.emitConstantPoolUTF8("java/lang/Short");
+        asm.emitConstantPoolUTF8("j86.java.lang/Short");
         asm.emitConstantPoolClass(asm.cpi());
         shortIdx = asm.cpi();
         asm.emitConstantPoolUTF8("(S)V");

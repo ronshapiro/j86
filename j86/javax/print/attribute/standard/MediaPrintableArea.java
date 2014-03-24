@@ -22,12 +22,12 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.print.attribute.standard;
+package j86.j86.j86.javax.print.attribute.standard;
 
-import javax.print.attribute.Attribute;
-import javax.print.attribute.DocAttribute;
-import javax.print.attribute.PrintJobAttribute;
-import javax.print.attribute.PrintRequestAttribute;
+import j86.j86.javax.print.attribute.Attribute;
+import j86.j86.javax.print.attribute.DocAttribute;
+import j86.j86.javax.print.attribute.PrintJobAttribute;
+import j86.j86.javax.print.attribute.PrintRequestAttribute;
 
 /**
  * Class MediaPrintableArea is a printing attribute used to distinguish
@@ -56,7 +56,7 @@ import javax.print.attribute.PrintRequestAttribute;
  * any specified finishings.
  * <code>PrintService</code> provides the method to query the supported
  * values of an attribute in a suitable context :
- * See  {@link javax.print.PrintService#getSupportedAttributeValues(Class,DocFlavor, AttributeSet) PrintService.getSupportedAttributeValues()}
+ * See  {@link j86.javax.print.PrintService#getSupportedAttributeValues(Class,DocFlavor, AttributeSet) PrintService.getSupportedAttributeValues()}
  * <p>
  * The rectangular printable area is defined thus:
  * The (x,y) origin is positioned at the top-left of the paper in portrait
@@ -267,7 +267,7 @@ public final class MediaPrintableArea
      * class MediaPrintableArea itself.
      *
      * @return  Printing attribute class (category), an instance of class
-     *          {@link java.lang.Class java.lang.Class}.
+     *          {@link j86.java.lang.Class java.lang.Class}.
      */
     public final Class<? extends Attribute> getCategory() {
         return MediaPrintableArea.class;

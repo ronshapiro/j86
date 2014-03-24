@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.management;
+package j86.sun.management;
 
-import sun.management.counter.Counter;
+import j86.j86.sun.management.counter.Counter;
 
 /**
  * Hotspot internal management interface for the compilation system.
@@ -46,7 +46,7 @@ public interface HotspotCompilationMBean {
      * the statistic of a compiler thread.
      *
      */
-    public java.util.List<CompilerThreadStat> getCompilerThreadStats();
+    public j86.java.util.List<CompilerThreadStat> getCompilerThreadStats();
 
     /**
      * Returns the total number of compiles.
@@ -112,5 +112,5 @@ public interface HotspotCompilationMBean {
      * @return a list of internal counters maintained in the VM
      * for the compilation system.
      */
-    public java.util.List<Counter> getInternalCompilerCounters();
+    public j86.java.util.List<Counter> getInternalCompilerCounters();
 }

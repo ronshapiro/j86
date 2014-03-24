@@ -23,12 +23,12 @@
  * questions.
  */
 
-package javax.naming.spi;
+package j86.j86.javax.naming.spi;
 
-import javax.naming.Name;
-import javax.naming.Context;
-import javax.naming.CompositeName;
-import javax.naming.InvalidNameException;
+import j86.javax.naming.Name;
+import j86.javax.naming.Context;
+import j86.javax.naming.CompositeName;
+import j86.javax.naming.InvalidNameException;
 
 /**
   * This class represents the result of resolution of a name.
@@ -43,7 +43,7 @@ import javax.naming.InvalidNameException;
   * @author Scott Seligman
   * @since 1.3
   */
-public class ResolveResult implements java.io.Serializable {
+public class ResolveResult implements j86.java.io.Serializable {
     /**
      * Field containing the Object that was resolved to successfully.
      * It can be null only when constructed using a subclass.

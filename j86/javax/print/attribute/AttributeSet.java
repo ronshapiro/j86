@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.print.attribute;
+package j86.j86.javax.print.attribute;
 
 /**
  * Interface AttributeSet specifies the interface for a set of printing
@@ -35,7 +35,7 @@ package javax.print.attribute;
  * Furthermore, each value in an attribute set is
  * a member of some <I>category,</I> and at most one value in any particular
  * category is allowed in the set. For an attribute set, the values are {@link
- * Attribute Attribute} objects, and the categories are {@link java.lang.Class
+ * Attribute Attribute} objects, and the categories are {@link j86.java.lang.Class
  * Class} objects. An attribute's category is the class (or interface) at the
  * root of the class hierarchy for that kind of attribute. Note that an
  * attribute object's category may be a superclass of the attribute object's
@@ -46,7 +46,7 @@ package javax.print.attribute;
  * Attribute}.
  * <P>
  * The interfaces of an AttributeSet resemble those of the Java Collections
- * API's java.util.Map interface, but is more restrictive in the types
+ * API's j86.java.util.Map interface, but is more restrictive in the types
  * it will accept, and combines keys and values into an Attribute.
  * <P>
  * Attribute sets are used in several places in the Print Service API. In
@@ -117,7 +117,7 @@ public interface AttributeSet {
      *
      * @param  category  Attribute category whose associated attribute value
      *                   is to be returned. It must be a
-     *                   {@link java.lang.Class Class}
+     *                   {@link j86.java.lang.Class Class}
      *                   that implements interface {@link Attribute
      *                   Attribute}.
      *
@@ -130,7 +130,7 @@ public interface AttributeSet {
      *     (unchecked exception) Thrown if the <CODE>category</CODE> is null.
      * @throws  ClassCastException
      *     (unchecked exception) Thrown if the <CODE>category</CODE> is not a
-     *     {@link java.lang.Class Class} that implements interface {@link
+     *     {@link j86.java.lang.Class Class} that implements interface {@link
      *     Attribute Attribute}.
      */
     public Attribute get(Class<?> category);
@@ -301,7 +301,7 @@ public interface AttributeSet {
      * This ensures that <tt>t1.equals(t2)</tt> implies that
      * <tt>t1.hashCode()==t2.hashCode()</tt> for any two attribute sets
      * <tt>t1</tt> and <tt>t2</tt>, as required by the general contract of
-     * {@link java.lang.Object#hashCode() Object.hashCode()}.
+     * {@link j86.java.lang.Object#hashCode() Object.hashCode()}.
      *
      * @return  The hash code value for this attribute set.
      */

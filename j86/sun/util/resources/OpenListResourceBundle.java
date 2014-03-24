@@ -38,21 +38,21 @@
  *
  */
 
-package sun.util.resources;
+package j86.j86.sun.util.resources;
 
-import java.util.Enumeration;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.ResourceBundle;
-import java.util.Set;
-import sun.util.ResourceBundleEnumeration;
+import j86.java.util.Enumeration;
+import j86.java.util.HashMap;
+import j86.java.util.HashSet;
+import j86.java.util.Map;
+import j86.java.util.ResourceBundle;
+import j86.java.util.Set;
+import j86.sun.util.ResourceBundleEnumeration;
 
 /**
  * Subclass of <code>ResourceBundle</code> which mimics
  * <code>ListResourceBundle</code>, but provides more hooks
  * for specialized subclass behavior. For general description,
- * see {@link java.util.ListResourceBundle}.
+ * see {@link j86.java.util.ListResourceBundle}.
  * <p>
  * This class leaves handleGetObject non-final, and
  * adds a method createMap which allows subclasses to
@@ -66,7 +66,7 @@ public abstract class OpenListResourceBundle extends ResourceBundle {
     protected OpenListResourceBundle() {
     }
 
-    // Implements java.util.ResourceBundle.handleGetObject; inherits javadoc specification.
+    // Implements j86.java.util.ResourceBundle.handleGetObject; inherits javadoc specification.
     @Override
     protected Object handleGetObject(String key) {
         if (key == null) {

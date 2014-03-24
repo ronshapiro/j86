@@ -23,19 +23,19 @@
  * questions.
  */
 
-package sun.security.provider;
+package j86.sun.security.provider;
 
-import java.io.*;
-import java.net.*;
-import java.security.*;
-import java.security.cert.Certificate;
-import java.security.cert.CertificateFactory;
-import java.security.cert.CertificateException;
-import java.util.*;
+import j86.java.io.*;
+import j86.java.net.*;
+import j86.java.security.*;
+import j86.j86.java.security.cert.Certificate;
+import j86.j86.java.security.cert.CertificateFactory;
+import j86.j86.java.security.cert.CertificateException;
+import j86.java.util.*;
 
-import sun.misc.IOUtils;
-import sun.security.pkcs.EncryptedPrivateKeyInfo;
-import sun.security.util.PolicyUtil;
+import j86.sun.misc.IOUtils;
+import j86.sun.security.pkcs.EncryptedPrivateKeyInfo;
+import j86.sun.security.util.PolicyUtil;
 
 /**
  * This class provides the domain keystore type identified as "DKS".
@@ -239,7 +239,7 @@ abstract class DomainKeyStore extends KeyStoreSpi {
      * Assigns the given private key to the given alias, protecting
      * it with the given password as defined in PKCS8.
      *
-     * <p>The given java.security.PrivateKey <code>key</code> must
+     * <p>The given j86.java.security.PrivateKey <code>key</code> must
      * be accompanied by a certificate chain certifying the
      * corresponding public key.
      *
@@ -252,7 +252,7 @@ abstract class DomainKeyStore extends KeyStoreSpi {
      * @param password the password to protect the key
      * @param chain the certificate chain for the corresponding public
      * key (only required if the given key is of type
-     * <code>java.security.PrivateKey</code>).
+     * <code>j86.java.security.PrivateKey</code>).
      *
      * @exception KeyStoreException if the given key is not a private key,
      * cannot be protected, or this operation fails for some other reason
@@ -279,7 +279,7 @@ abstract class DomainKeyStore extends KeyStoreSpi {
      * alias.
      *
      * <p>If the protected key is of type
-     * <code>java.security.PrivateKey</code>, it must be accompanied by a
+     * <code>j86.java.security.PrivateKey</code>, it must be accompanied by a
      * certificate chain certifying the corresponding public key. If the
      * underlying keystore implementation is of type <code>jks</code>,
      * <code>key</code> must be encoded as an
@@ -293,7 +293,7 @@ abstract class DomainKeyStore extends KeyStoreSpi {
      * @param key the key (in protected format) to be associated with the alias
      * @param chain the certificate chain for the corresponding public
      * key (only useful if the protected key is of type
-     * <code>java.security.PrivateKey</code>).
+     * <code>j86.java.security.PrivateKey</code>).
      *
      * @exception KeyStoreException if this operation fails.
      */

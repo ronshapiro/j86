@@ -23,26 +23,26 @@
  * questions.
  */
 
-package com.sun.jmx.remote.security;
+package j86.com.sun.jmx.remote.security;
 
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.security.AccessControlContext;
-import java.security.AccessController;
-import java.security.Principal;
-import java.security.PrivilegedAction;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import java.util.Properties;
-import java.util.Set;
-import java.util.StringTokenizer;
-import java.util.regex.Pattern;
-import javax.management.MBeanServer;
-import javax.management.ObjectName;
-import javax.security.auth.Subject;
+import j86.java.io.FileInputStream;
+import j86.java.io.IOException;
+import j86.java.security.AccessControlContext;
+import j86.java.security.AccessController;
+import j86.java.security.Principal;
+import j86.java.security.PrivilegedAction;
+import j86.java.util.ArrayList;
+import j86.java.util.HashMap;
+import j86.java.util.Iterator;
+import j86.java.util.List;
+import j86.java.util.Map;
+import j86.java.util.Properties;
+import j86.java.util.Set;
+import j86.java.util.StringTokenizer;
+import j86.j86.java.util.regex.Pattern;
+import j86.javax.management.MBeanServer;
+import j86.javax.management.ObjectName;
+import j86.javax.security.auth.Subject;
 
 /**
  * <p>An object of this class implements the MBeanServerAccessController
@@ -72,7 +72,7 @@ import javax.security.auth.Subject;
  * <pre>
  * monitorRole  readonly
  * controlRole  readwrite \
- *              create javax.management.timer.*,javax.management.monitor.* \
+ *              create j86.j86.javax.management.timer.*,j86.javax.management.monitor.* \
  *              unregister
  * </pre>
  *
@@ -368,7 +368,7 @@ public class MBeanServerFileAccessController
     private static boolean classNameMatch(String pattern, String className) {
         // We studiously avoided regexes when parsing the properties file,
         // because that is done whenever the VM is started with the
-        // appropriate -Dcom.sun.management options, even if nobody ever
+        // appropriate -Dcom.j86.sun.management options, even if nobody ever
         // creates an MBean.  We don't want to incur the overhead of loading
         // all the regex code whenever those options are specified, but if we
         // get as far as here then the VM is already running and somebody is

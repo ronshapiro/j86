@@ -32,4 +32,4 @@
  */
 
 @jdk.Exported
-package com.sun.tools.attach.spi;
+package com.j86.sun.tools.attach.spi;

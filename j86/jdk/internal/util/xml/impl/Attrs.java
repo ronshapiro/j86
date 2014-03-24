@@ -23,9 +23,9 @@
  * questions.
  */
 
-package jdk.internal.util.xml.impl;
+package j86.j86.jdk.internal.util.xml.impl;
 
-import jdk.internal.org.xml.sax.Attributes;
+import j86.jdk.internal.org.xml.sax.Attributes;
 
 public class Attrs implements Attributes {
 
@@ -309,7 +309,7 @@ public class Attrs implements Attributes {
      *
      * @param index The attribute index (zero-based).
      * @return true if the attribute was declared in the DTD, false otherwise.
-     * @exception java.lang.ArrayIndexOutOfBoundsException When the supplied
+     * @exception j86.java.lang.ArrayIndexOutOfBoundsException When the supplied
      * index does not identify an attribute.
      */
     public boolean isDeclared(int index) {
@@ -328,7 +328,7 @@ public class Attrs implements Attributes {
      *
      * @param qName The XML qualified (prefixed) name.
      * @return true if the attribute was declared in the DTD, false otherwise.
-     * @exception java.lang.IllegalArgumentException When the supplied name does
+     * @exception j86.java.lang.IllegalArgumentException When the supplied name does
      * not identify an attribute.
      */
     public boolean isDeclared(String qName) {
@@ -354,7 +354,7 @@ public class Attrs implements Attributes {
      * Namespace URI.
      * @param localName The attribute's local name.
      * @return true if the attribute was declared in the DTD, false otherwise.
-     * @exception java.lang.IllegalArgumentException When the supplied names do
+     * @exception j86.java.lang.IllegalArgumentException When the supplied names do
      * not identify an attribute.
      */
     public boolean isDeclared(String uri, String localName) {
@@ -372,7 +372,7 @@ public class Attrs implements Attributes {
      * @param index The attribute index (zero-based).
      * @return true if the value was found in the XML text, false if the value
      * was provided by DTD defaulting.
-     * @exception java.lang.ArrayIndexOutOfBoundsException When the supplied
+     * @exception j86.java.lang.ArrayIndexOutOfBoundsException When the supplied
      * index does not identify an attribute.
      */
     public boolean isSpecified(int index) {
@@ -396,7 +396,7 @@ public class Attrs implements Attributes {
      * @param localName The attribute's local name.
      * @return true if the value was found in the XML text, false if the value
      * was provided by DTD defaulting.
-     * @exception java.lang.IllegalArgumentException When the supplied names do
+     * @exception j86.java.lang.IllegalArgumentException When the supplied names do
      * not identify an attribute.
      */
     public boolean isSpecified(String uri, String localName) {
@@ -415,7 +415,7 @@ public class Attrs implements Attributes {
      * @param qName The XML qualified (prefixed) name.
      * @return true if the value was found in the XML text, false if the value
      * was provided by DTD defaulting.
-     * @exception java.lang.IllegalArgumentException When the supplied name does
+     * @exception j86.java.lang.IllegalArgumentException When the supplied name does
      * not identify an attribute.
      */
     public boolean isSpecified(String qName) {

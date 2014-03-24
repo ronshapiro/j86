@@ -24,23 +24,23 @@
  */
 
 
-package com.sun.jmx.snmp.agent;
+package j86.j86.com.sun.jmx.snmp.agent;
 
 
 
 // java imports
 //
-import java.util.Vector;
+import j86.java.util.Vector;
 
 // jmx imports
 //
-import javax.management.MBeanServer;
-import javax.management.ObjectName;
-import javax.management.MalformedObjectNameException;
-import javax.management.InstanceNotFoundException;
-import javax.management.ServiceNotFoundException;
-import com.sun.jmx.snmp.SnmpOid;
-import com.sun.jmx.snmp.SnmpStatusException;
+import j86.javax.management.MBeanServer;
+import j86.javax.management.ObjectName;
+import j86.javax.management.MalformedObjectNameException;
+import j86.javax.management.InstanceNotFoundException;
+import j86.javax.management.ServiceNotFoundException;
+import j86.com.sun.jmx.snmp.SnmpOid;
+import j86.com.sun.jmx.snmp.SnmpStatusException;
 
 /**
  * Exposes the remote management interface of the <CODE>SnmpMibAgent</CODE> MBean.

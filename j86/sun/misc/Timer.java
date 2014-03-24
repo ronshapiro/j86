@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.misc;
+package j86.sun.misc;
 
 /**
     A Timer object is used by algorithms that require timed events.

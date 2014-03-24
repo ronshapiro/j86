@@ -23,13 +23,13 @@
  * questions.
  */
 
-package java.security.cert;
+package j86.j86.java.security.cert;
 
-import java.util.*;
+import j86.java.util.*;
 
-import sun.security.provider.certpath.CertPathHelper;
+import j86.j86.sun.security.provider.certpath.CertPathHelper;
 
-import sun.security.x509.GeneralNameInterface;
+import j86.sun.security.x509.GeneralNameInterface;
 
 /**
  * Helper class that allows the Sun CertPath provider to access

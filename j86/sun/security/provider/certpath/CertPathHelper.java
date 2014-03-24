@@ -23,20 +23,20 @@
  * questions.
  */
 
-package sun.security.provider.certpath;
+package j86.j86.sun.security.provider.certpath;
 
-import java.util.Date;
-import java.util.Set;
+import j86.java.util.Date;
+import j86.java.util.Set;
 
-import java.security.cert.X509CertSelector;
-import java.security.cert.X509CRLSelector;
+import j86.j86.java.security.cert.X509CertSelector;
+import j86.j86.java.security.cert.X509CRLSelector;
 
-import sun.security.x509.GeneralNameInterface;
+import j86.sun.security.x509.GeneralNameInterface;
 
 /**
  * Helper class that allows access to Sun specific known-public methods in the
- * java.security.cert package. It relies on a subclass in the
- * java.security.cert packages that is initialized before any of these methods
+ * j86.j86.java.security.cert package. It relies on a subclass in the
+ * j86.j86.java.security.cert packages that is initialized before any of these methods
  * are called (achieved via static initializers).
  *
  * The methods are made available in this fashion for performance reasons.

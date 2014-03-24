@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.management;
+package j86.javax.management;
 
 
 /**
@@ -32,7 +32,7 @@ package javax.management;
  *
  * @since 1.5
  */
-public interface NotificationFilter extends java.io.Serializable {
+public interface NotificationFilter extends j86.java.io.Serializable {
 
     /**
      * Invoked before sending the specified notification to the listener.

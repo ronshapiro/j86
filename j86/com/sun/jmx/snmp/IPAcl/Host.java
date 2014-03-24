@@ -24,21 +24,21 @@
  */
 
 
-package com.sun.jmx.snmp.IPAcl;
+package j86.j86.com.sun.jmx.snmp.IPAcl;
 
 
 
 // java import
 //
-import java.io.Serializable;
-import java.net.InetAddress;
-import java.net.UnknownHostException;
-import java.util.Hashtable;
-import java.util.logging.Level;
-import java.util.Vector;
-import java.security.acl.NotOwnerException;
+import j86.java.io.Serializable;
+import j86.java.net.InetAddress;
+import j86.java.net.UnknownHostException;
+import j86.java.util.Hashtable;
+import j86.j86.java.util.logging.Level;
+import j86.java.util.Vector;
+import j86.j86.java.security.acl.NotOwnerException;
 
-import static com.sun.jmx.defaults.JmxProperties.SNMP_LOGGER;
+import static j86.com.sun.jmx.defaults.JmxProperties.SNMP_LOGGER;
 
 /**
  * The class defines an abstract representation of a host.
@@ -120,7 +120,7 @@ abstract class Host extends SimpleNode implements Serializable {
 
         InetAddress add = null;
         try {
-            add = java.net.InetAddress.getByName(getHname());
+            add = j86.java.net.InetAddress.getByName(getHname());
         } catch(UnknownHostException e) {
             if (SNMP_LOGGER.isLoggable(Level.FINEST)) {
                 SNMP_LOGGER.logp(Level.FINEST, Host.class.getName(),
@@ -153,7 +153,7 @@ abstract class Host extends SimpleNode implements Serializable {
 
         InetAddress add = null;
         try {
-            add = java.net.InetAddress.getByName(getHname());
+            add = j86.java.net.InetAddress.getByName(getHname());
         } catch(UnknownHostException e) {
             if (SNMP_LOGGER.isLoggable(Level.FINEST)) {
                 SNMP_LOGGER.logp(Level.FINEST, Host.class.getName(),

@@ -25,7 +25,7 @@
 /*
  * $Id: XMLCryptoContext.java,v 1.6 2005/05/10 15:47:42 mullan Exp $
  */
-package javax.xml.crypto;
+package j86.javax.xml.crypto;
 
 /**
  * Contains common context information for XML cryptographic operations.
@@ -37,8 +37,8 @@ package javax.xml.crypto;
  * and state specific to the XML cryptographic structure it is used with.
  * The results are unpredictable if an <code>XMLCryptoContext</code> is
  * used with multiple structures (for example, you should not use the same
- * {@link javax.xml.crypto.dsig.XMLValidateContext} instance to validate two
- * different {@link javax.xml.crypto.dsig.XMLSignature} objects).
+ * {@link j86.j86.javax.xml.crypto.dsig.XMLValidateContext} instance to validate two
+ * different {@link j86.j86.javax.xml.crypto.dsig.XMLSignature} objects).
  *
  * @author Sean Mullan
  * @author JSR 105 Expert Group

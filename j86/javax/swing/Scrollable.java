@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.swing;
+package j86.javax.swing;
 
-import java.awt.Dimension;
-import java.awt.Rectangle;
+import j86.java.awt.Dimension;
+import j86.java.awt.Rectangle;
 
 
 /**

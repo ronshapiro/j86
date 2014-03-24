@@ -20,13 +20,13 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.sun.org.apache.xml.internal.security.utils.resolver.implementations;
+package j86.j86.j86.j86.com.sun.org.apache.xml.internal.security.utils.resolver.implementations;
 
-import com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
-import com.sun.org.apache.xml.internal.security.utils.XMLUtils;
-import com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverContext;
-import com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverException;
-import com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverSpi;
+import j86.j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
+import j86.j86.j86.com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverContext;
+import j86.j86.j86.com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverException;
+import j86.j86.j86.com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverSpi;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -49,8 +49,8 @@ import org.w3c.dom.Node;
 public class ResolverXPointer extends ResourceResolverSpi {
 
     /** {@link org.apache.commons.logging} logging facility */
-    private static java.util.logging.Logger log =
-        java.util.logging.Logger.getLogger(ResolverXPointer.class.getName());
+    private static j86.j86.java.util.logging.Logger log =
+        j86.j86.java.util.logging.Logger.getLogger(ResolverXPointer.class.getName());
 
     private static final String XP = "#xpointer(id(";
     private static final int XP_LENGTH = XP.length();
@@ -148,8 +148,8 @@ public class ResolverXPointer extends ResourceResolverSpi {
             int idLen = idPlusDelim.length() -1;
             if (((idPlusDelim.charAt(0) == '"') && (idPlusDelim.charAt(idLen) == '"'))
                 || ((idPlusDelim.charAt(0) == '\'') && (idPlusDelim.charAt(idLen) == '\''))) {
-                if (log.isLoggable(java.util.logging.Level.FINE)) {
-                    log.log(java.util.logging.Level.FINE, "Id = " + idPlusDelim.substring(1, idLen));
+                if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                    log.log(j86.j86.java.util.logging.Level.FINE, "Id = " + idPlusDelim.substring(1, idLen));
                 }
                 return true;
             }

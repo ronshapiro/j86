@@ -23,16 +23,16 @@
  * questions.
  */
 
-package javax.naming.directory;
+package j86.j86.javax.naming.directory;
 
-import java.util.Vector;
-import java.util.Enumeration;
-import java.util.NoSuchElementException;
-import java.lang.reflect.Array;
+import j86.java.util.Vector;
+import j86.java.util.Enumeration;
+import j86.java.util.NoSuchElementException;
+import j86.j86.j86.java.lang.reflect.Array;
 
-import javax.naming.NamingException;
-import javax.naming.NamingEnumeration;
-import javax.naming.OperationNotSupportedException;
+import j86.javax.naming.NamingException;
+import j86.javax.naming.NamingEnumeration;
+import j86.javax.naming.OperationNotSupportedException;
 
 /**
   * This class provides a basic implementation of the <tt>Attribute</tt> interface.
@@ -499,8 +499,8 @@ public class BasicAttribute implements Attribute {
      * followed by the number of values (an int), and the
      * individual values.
      */
-    private void writeObject(java.io.ObjectOutputStream s)
-            throws java.io.IOException {
+    private void writeObject(j86.java.io.ObjectOutputStream s)
+            throws j86.java.io.IOException {
         s.defaultWriteObject(); // write out the attrID
         s.writeInt(values.size());
         for (int i = 0; i < values.size(); i++) {
@@ -511,8 +511,8 @@ public class BasicAttribute implements Attribute {
     /**
      * Overridden to avoid exposing implementation details.
      */
-    private void readObject(java.io.ObjectInputStream s)
-            throws java.io.IOException, ClassNotFoundException {
+    private void readObject(j86.java.io.ObjectInputStream s)
+            throws j86.java.io.IOException, ClassNotFoundException {
         s.defaultReadObject();  // read in the attrID
         int n = s.readInt();    // number of values
         values = new Vector<>(n);

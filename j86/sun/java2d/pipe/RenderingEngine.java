@@ -23,19 +23,19 @@
  * questions.
  */
 
-package sun.java2d.pipe;
+package j86.j86.sun.java2d.pipe;
 
-import java.awt.Shape;
-import java.awt.BasicStroke;
-import java.awt.geom.PathIterator;
-import java.awt.geom.AffineTransform;
+import j86.java.awt.Shape;
+import j86.java.awt.BasicStroke;
+import j86.j86.java.awt.geom.PathIterator;
+import j86.j86.java.awt.geom.AffineTransform;
 
-import java.security.PrivilegedAction;
-import java.security.AccessController;
-import java.util.ServiceLoader;
-import sun.security.action.GetPropertyAction;
+import j86.java.security.PrivilegedAction;
+import j86.java.security.AccessController;
+import j86.java.util.ServiceLoader;
+import j86.sun.security.action.GetPropertyAction;
 
-import sun.awt.geom.PathConsumer2D;
+import j86.j86.sun.awt.geom.PathConsumer2D;
 
 /**
  * This class abstracts a number of features for which the Java 2D
@@ -74,10 +74,10 @@ import sun.awt.geom.PathConsumer2D;
  * It searches the classpath for a registered provider of this API
  * and returns either the last one it finds, or the instance whose
  * class name matches the value supplied in the System property
- * {@code sun.java2d.renderer}.
+ * {@code j86.sun.java2d.renderer}.
  * Additionally, a runtime System property flag can be set to trace
  * all calls to methods on the {@code RenderingEngine} in use by
- * setting the sun.java2d.renderer.trace property to any non-null value.
+ * setting the j86.sun.java2d.renderer.trace property to any non-null value.
  * <p>
  * Parts of the system that need to use any of the above features should
  * call {@code RenderingEngine.getInstance()} to obtain the properly
@@ -93,12 +93,12 @@ public abstract class RenderingEngine {
      * A specific instance of the {@code RenderingEngine} can be
      * chosen by specifying the runtime flag:
      * <pre>
-     *     java -Dsun.java2d.renderer=&lt;classname&gt;
+     *     java -Dj86.sun.java2d.renderer=&lt;classname&gt;
      * </pre>
      *
      * If no specific {@code RenderingEngine} is specified on the command
      * or Ductus renderer is specified, it will attempt loading the
-     * sun.dc.DuctusRenderingEngine class using Class.forName as a fastpath;
+     * j86.sun.dc.DuctusRenderingEngine class using Class.forName as a fastpath;
      * if not found, use the ServiceLoader.
      * If no specific {@code RenderingEngine} is specified on the command
      * line then the last one returned by enumerating all subclasses of
@@ -107,7 +107,7 @@ public abstract class RenderingEngine {
      * Runtime tracing of the actions of the {@code RenderingEngine}
      * can be enabled by specifying the runtime flag:
      * <pre>
-     *     java -Dsun.java2d.renderer.trace=&lt;any string&gt;
+     *     java -Dj86.sun.java2d.renderer.trace=&lt;any string&gt;
      * </pre>
      * @return an instance of {@code RenderingEngine}
      * @since 1.7
@@ -120,9 +120,9 @@ public abstract class RenderingEngine {
         reImpl =
             AccessController.doPrivileged(new PrivilegedAction<RenderingEngine>() {
                 public RenderingEngine run() {
-                    final String ductusREClass = "sun.dc.DuctusRenderingEngine";
+                    final String ductusREClass = "j86.sun.dc.DuctusRenderingEngine";
                     String reClass =
-                        System.getProperty("sun.java2d.renderer", ductusREClass);
+                        System.getProperty("j86.sun.java2d.renderer", ductusREClass);
                     if (reClass.equals(ductusREClass)) {
                         try {
                             Class<?> cls = Class.forName(ductusREClass);
@@ -152,7 +152,7 @@ public abstract class RenderingEngine {
         }
 
         GetPropertyAction gpa =
-            new GetPropertyAction("sun.java2d.renderer.trace");
+            new GetPropertyAction("j86.sun.java2d.renderer.trace");
         String reTrace = AccessController.doPrivileged(gpa);
         if (reTrace != null) {
             reImpl = new Tracer(reImpl);

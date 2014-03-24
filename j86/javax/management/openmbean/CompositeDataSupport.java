@@ -24,23 +24,23 @@
  */
 
 
-package javax.management.openmbean;
+package j86.j86.javax.management.openmbean;
 
 
 // java import
 //
-import java.io.Serializable;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.Set;
-import java.util.SortedMap;
-import java.util.TreeMap;
+import j86.java.io.Serializable;
+import j86.java.util.Arrays;
+import j86.java.util.Collection;
+import j86.java.util.Collections;
+import j86.java.util.LinkedHashMap;
+import j86.java.util.Map;
+import j86.java.util.Set;
+import j86.java.util.SortedMap;
+import j86.java.util.TreeMap;
 
 // jmx import
-import java.util.TreeSet;
+import j86.java.util.TreeSet;
 //
 
 
@@ -150,7 +150,7 @@ public class CompositeDataSupport
      * Constructs a <tt>CompositeDataSupport</tt> instance with the specified <tt>compositeType</tt>, whose item names and corresponding values
      * are given by the mappings in the map <tt>items</tt>.
      * This constructor converts the keys to a string array and the values to an object array and calls
-     * <tt>CompositeDataSupport(javax.management.openmbean.CompositeType, java.lang.String[], java.lang.Object[])</tt>.
+     * <tt>CompositeDataSupport(j86.j86.javax.management.openmbean.CompositeType, j86.java.lang.String[], java.lang.Object[])</tt>.
      *
      * @param  compositeType  the <i>composite type </i> of this <i>composite data</i> instance;
      *                        must not be null.
@@ -168,7 +168,7 @@ public class CompositeDataSupport
      * is not a valid value for the corresponding item as defined in
      * <tt>compositeType</tt>.
      * @throws ArrayStoreException one or more keys in <tt>items</tt> is not of
-     * the class <tt>java.lang.String</tt>.
+     * the class <tt>j86.java.lang.String</tt>.
      */
     public CompositeDataSupport(CompositeType compositeType,
                                 Map<String,?> items)
@@ -339,7 +339,7 @@ public class CompositeDataSupport
      * <li>their composite types are equal</li>
      * <li>their contents, i.e. (name, value) pairs are equal. If a value contained in
      * the content is an array, the value comparison is done as if by calling
-     * the {@link java.util.Arrays#deepEquals(Object[], Object[]) deepEquals} method
+     * the {@link j86.java.util.Arrays#deepEquals(Object[], Object[]) deepEquals} method
      * for arrays of object reference types or the appropriate overloading of
      * {@code Arrays.equals(e1,e2)} for arrays of primitive types</li>
      * </ul>
@@ -347,8 +347,8 @@ public class CompositeDataSupport
      * This ensures that this <tt>equals</tt> method works properly for
      * <var>obj</var> parameters which are different implementations of the
      * <code>CompositeData</code> interface, with the restrictions mentioned in the
-     * {@link java.util.Collection#equals(Object) equals}
-     * method of the <tt>java.util.Collection</tt> interface.
+     * {@link j86.java.util.Collection#equals(Object) equals}
+     * method of the <tt>j86.java.util.Collection</tt> interface.
      *
      * @param  obj  the object to be compared for equality with this
      * <code>CompositeDataSupport</code> instance.
@@ -414,7 +414,7 @@ public class CompositeDataSupport
      * Each item value's hash code is added to the returned hash code.
      * If an item value is an array,
      * its hash code is obtained as if by calling the
-     * {@link java.util.Arrays#deepHashCode(Object[]) deepHashCode} method
+     * {@link j86.java.util.Arrays#deepHashCode(Object[]) deepHashCode} method
      * for arrays of object reference types or the appropriate overloading
      * of {@code Arrays.hashCode(e)} for arrays of primitive types.
      *
@@ -453,7 +453,7 @@ public class CompositeDataSupport
     /**
      * Returns a string representation of this <code>CompositeDataSupport</code> instance.
      * <p>
-     * The string representation consists of the name of this class (ie <code>javax.management.openmbean.CompositeDataSupport</code>),
+     * The string representation consists of the name of this class (ie <code>j86.j86.javax.management.openmbean.CompositeDataSupport</code>),
      * the string representation of the composite type of this instance, and the string representation of the contents
      * (ie list the itemName=itemValue mappings).
      *

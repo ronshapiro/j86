@@ -23,9 +23,9 @@
  * questions.
  */
 
-package com.sun.jdi;
+package j86.com.sun.jdi;
 
-import java.util.List;
+import j86.java.util.List;
 
 /**
  * A mirror of an interface in the target VM. An InterfaceType is

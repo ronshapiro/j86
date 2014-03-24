@@ -29,10 +29,10 @@
  *
  */
 
-package sun.font;
+package j86.sun.font;
 
-import java.awt.font.FontRenderContext;
-import java.awt.font.LineMetrics;
+import j86.j86.java.awt.font.FontRenderContext;
+import j86.j86.java.awt.font.LineMetrics;
 
 /**
  * Metrics from a font for layout of characters along a line

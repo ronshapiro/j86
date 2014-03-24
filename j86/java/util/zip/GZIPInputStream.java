@@ -23,14 +23,14 @@
  * questions.
  */
 
-package java.util.zip;
+package j86.j86.java.util.zip;
 
-import java.io.SequenceInputStream;
-import java.io.ByteArrayInputStream;
-import java.io.FilterInputStream;
-import java.io.InputStream;
-import java.io.IOException;
-import java.io.EOFException;
+import j86.java.io.SequenceInputStream;
+import j86.java.io.ByteArrayInputStream;
+import j86.java.io.FilterInputStream;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
+import j86.java.io.EOFException;
 
 /**
  * This class implements a stream filter for reading compressed data in

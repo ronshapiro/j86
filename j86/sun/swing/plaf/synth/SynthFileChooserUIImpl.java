@@ -22,31 +22,31 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.swing.plaf.synth;
+package j86.j86.j86.sun.swing.plaf.synth;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.beans.*;
-import java.io.*;
-import java.util.*;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.java.beans.*;
+import j86.java.io.*;
+import j86.java.util.*;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
 
-import javax.swing.*;
-import javax.swing.event.*;
-import javax.swing.filechooser.*;
-import javax.swing.filechooser.FileFilter;
-import javax.swing.plaf.basic.*;
-import javax.swing.plaf.synth.*;
-import javax.swing.plaf.ActionMapUIResource;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.event.*;
+import j86.j86.javax.swing.filechooser.*;
+import j86.j86.javax.swing.filechooser.FileFilter;
+import j86.j86.j86.javax.swing.plaf.basic.*;
+import j86.j86.j86.javax.swing.plaf.synth.*;
+import j86.j86.javax.swing.plaf.ActionMapUIResource;
 
-import sun.awt.shell.ShellFolder;
-import sun.swing.*;
+import j86.j86.sun.awt.shell.ShellFolder;
+import j86.sun.swing.*;
 
 /**
  * Synth FileChooserUI implementation.
  * <p>
- * Note that the classes in the com.sun.java.swing.plaf.synth
+ * Note that the classes in the j86.com.sun.java.swing.plaf.synth
  * package are not
  * part of the core Java APIs. They are a part of Sun's JDK and JRE
  * distributions. Although other licensees may choose to distribute

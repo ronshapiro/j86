@@ -35,9 +35,9 @@ options {
 
 PARSER_BEGIN(Parser)
 
-package com.sun.jmx.snmp.IPAcl;
+package j86.j86.com.sun.jmx.snmp.IPAcl;
 
-import java.io.*;
+import j86.java.io.*;
 
 public class Parser/*@bgen(jjtree)*/implements ParserTreeConstants/*@egen*/ {/*@bgen(jjtree)*/
   protected JJTParserState jjtree = new JJTParserState();

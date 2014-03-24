@@ -23,16 +23,16 @@
  * questions.
  */
 
-package javax.swing.tree;
+package j86.j86.javax.swing.tree;
 
-import javax.swing.event.TreeModelEvent;
-import java.awt.Rectangle;
-import java.util.Enumeration;
-import java.util.Hashtable;
-import java.util.NoSuchElementException;
-import java.util.Stack;
+import j86.j86.javax.swing.event.TreeModelEvent;
+import j86.java.awt.Rectangle;
+import j86.java.util.Enumeration;
+import j86.java.util.Hashtable;
+import j86.java.util.NoSuchElementException;
+import j86.java.util.Stack;
 
-import sun.swing.SwingUtilities2;
+import j86.sun.swing.SwingUtilities2;
 
 /**
  * NOTE: This will become more open in a future release.
@@ -43,8 +43,8 @@ import sun.swing.SwingUtilities2;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @author Scott Violet
  */

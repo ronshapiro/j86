@@ -23,11 +23,11 @@
  * questions.
  */
 
-package java.security;
+package j86.java.security;
 
-import java.io.*;
-import java.security.spec.AlgorithmParameterSpec;
-import java.security.spec.InvalidParameterSpecException;
+import j86.java.io.*;
+import j86.j86.java.security.spec.AlgorithmParameterSpec;
+import j86.j86.java.security.spec.InvalidParameterSpecException;
 
 /**
  * This class defines the <i>Service Provider Interface</i> (<b>SPI</b>)
@@ -42,8 +42,8 @@ import java.security.spec.InvalidParameterSpecException;
  *
  *
  * @see AlgorithmParameters
- * @see java.security.spec.AlgorithmParameterSpec
- * @see java.security.spec.DSAParameterSpec
+ * @see j86.j86.java.security.spec.AlgorithmParameterSpec
+ * @see j86.j86.java.security.spec.DSAParameterSpec
  *
  * @since 1.2
  */

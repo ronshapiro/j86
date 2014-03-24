@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.lang;
+package j86.java.lang;
 
 /**
  * Thrown by the security manager to indicate a security violation.
  *
  * @author  unascribed
- * @see     java.lang.SecurityManager
+ * @see     j86.java.lang.SecurityManager
  * @since   JDK1.0
  */
 public class SecurityException extends RuntimeException {

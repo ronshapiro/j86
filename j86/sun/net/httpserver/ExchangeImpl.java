@@ -23,15 +23,15 @@
  * questions.
  */
 
-package sun.net.httpserver;
+package j86.j86.sun.net.httpserver;
 
-import java.io.*;
-import java.net.*;
-import javax.net.ssl.*;
-import java.util.*;
-import java.util.logging.Logger;
-import java.text.*;
-import com.sun.net.httpserver.*;
+import j86.java.io.*;
+import j86.java.net.*;
+import j86.j86.javax.net.ssl.*;
+import j86.java.util.*;
+import j86.j86.java.util.logging.Logger;
+import j86.java.text.*;
+import com.j86.j86.sun.net.httpserver.*;
 
 class ExchangeImpl {
 
@@ -407,7 +407,7 @@ class ExchangeImpl {
  * the wrapped stream has been provided, then an IOException will
  * be thrown.
  */
-class PlaceholderOutputStream extends java.io.OutputStream {
+class PlaceholderOutputStream extends j86.java.io.OutputStream {
 
     OutputStream wrapped;
 

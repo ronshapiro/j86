@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.security;
+package j86.java.security;
 
-import java.io.*;
-import java.security.cert.CertPath;
+import j86.java.io.*;
+import j86.j86.java.security.cert.CertPath;
 
 /**
  * This class encapsulates information about a code signer.

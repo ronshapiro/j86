@@ -25,11 +25,11 @@
 /*
  * $Id: DOMStructure.java,v 1.6 2005/05/09 18:33:26 mullan Exp $
  */
-package javax.xml.crypto.dom;
+package j86.j86.javax.xml.crypto.dom;
 
 import org.w3c.dom.Node;
-import javax.xml.crypto.XMLStructure;
-import javax.xml.crypto.dsig.XMLSignature;
+import j86.javax.xml.crypto.XMLStructure;
+import j86.j86.javax.xml.crypto.dsig.XMLSignature;
 
 /**
  * A DOM-specific {@link XMLStructure}. The purpose of this class is to

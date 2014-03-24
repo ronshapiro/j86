@@ -23,16 +23,16 @@
  * questions.
  */
 
-package com.sun.tools.jdi;
+package j86.com.sun.tools.jdi;
 
-import com.sun.jdi.*;
+import j86.com.sun.jdi.*;
 
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Map;
-import java.util.Iterator;
-import java.util.Collections;
-import java.lang.ref.SoftReference;
+import j86.java.util.List;
+import j86.java.util.ArrayList;
+import j86.java.util.Map;
+import j86.java.util.Iterator;
+import j86.java.util.Collections;
+import j86.j86.java.lang.ref.SoftReference;
 
 public class InterfaceTypeImpl extends ReferenceTypeImpl
                                implements InterfaceType {

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.management;
+package j86.javax.management;
 
 
 /**
@@ -43,27 +43,27 @@ public class MBeanException extends JMException   {
     /**
      * @serial Encapsulated {@link Exception}
      */
-    private java.lang.Exception exception ;
+    private j86.java.lang.Exception exception ;
 
 
     /**
-     * Creates an <CODE>MBeanException</CODE> that wraps the actual <CODE>java.lang.Exception</CODE>.
+     * Creates an <CODE>MBeanException</CODE> that wraps the actual <CODE>j86.java.lang.Exception</CODE>.
      *
      * @param e the wrapped exception.
      */
-    public MBeanException(java.lang.Exception e) {
+    public MBeanException(j86.java.lang.Exception e) {
         super() ;
         exception = e ;
     }
 
     /**
-     * Creates an <CODE>MBeanException</CODE> that wraps the actual <CODE>java.lang.Exception</CODE> with
+     * Creates an <CODE>MBeanException</CODE> that wraps the actual <CODE>j86.java.lang.Exception</CODE> with
      * a detail message.
      *
      * @param e the wrapped exception.
      * @param message the detail message.
      */
-    public MBeanException(java.lang.Exception e, String message) {
+    public MBeanException(j86.java.lang.Exception e, String message) {
         super(message) ;
         exception = e ;
     }

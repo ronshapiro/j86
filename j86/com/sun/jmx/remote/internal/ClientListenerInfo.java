@@ -23,13 +23,13 @@
  * questions.
  */
 
-package com.sun.jmx.remote.internal;
+package j86.com.sun.jmx.remote.internal;
 
-import javax.management.NotificationFilter;
-import javax.management.NotificationListener;
-import javax.management.ObjectName;
+import j86.javax.management.NotificationFilter;
+import j86.javax.management.NotificationListener;
+import j86.javax.management.ObjectName;
 
-import javax.security.auth.Subject;
+import j86.javax.security.auth.Subject;
 
 
 /**

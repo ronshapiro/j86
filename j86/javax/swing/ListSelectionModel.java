@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.swing;
+package j86.javax.swing;
 
-import javax.swing.event.*;
+import j86.j86.javax.swing.event.*;
 
 /**
  * This interface represents the current state of the
@@ -241,7 +241,7 @@ public interface ListSelectionModel
      *
      * @param valueIsAdjusting the new value of the property
      * @see #getValueIsAdjusting
-     * @see javax.swing.event.ListSelectionEvent#getValueIsAdjusting
+     * @see j86.j86.javax.swing.event.ListSelectionEvent#getValueIsAdjusting
      */
     void setValueIsAdjusting(boolean valueIsAdjusting);
 

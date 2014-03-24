@@ -23,14 +23,14 @@
  * questions.
  */
 
-package java.awt.image;
+package j86.j86.j86.java.awt.image;
 
-import java.awt.image.ImageConsumer;
-import java.awt.image.ImageProducer;
-import java.awt.image.ColorModel;
-import java.util.Hashtable;
-import java.util.Vector;
-import java.util.Enumeration;
+import j86.j86.j86.java.awt.image.ImageConsumer;
+import j86.j86.j86.java.awt.image.ImageProducer;
+import j86.j86.j86.java.awt.image.ColorModel;
+import j86.java.util.Hashtable;
+import j86.java.util.Vector;
+import j86.java.util.Enumeration;
 
 /**
  * This class is an implementation of the ImageProducer interface which
@@ -127,7 +127,7 @@ public class MemoryImageSource implements ImageProducer {
      *        first pixel
      * @param scan the distance from one row of pixels to the next in
      *        the array
-     * @see java.awt.Component#createImage
+     * @see j86.java.awt.Component#createImage
      */
     public MemoryImageSource(int w, int h, ColorModel cm,
                              byte[] pix, int off, int scan) {
@@ -147,7 +147,7 @@ public class MemoryImageSource implements ImageProducer {
      *        the array
      * @param props a list of properties that the <code>ImageProducer</code>
      *        uses to process an image
-     * @see java.awt.Component#createImage
+     * @see j86.java.awt.Component#createImage
      */
     public MemoryImageSource(int w, int h, ColorModel cm,
                              byte[] pix, int off, int scan,
@@ -167,7 +167,7 @@ public class MemoryImageSource implements ImageProducer {
      *        first pixel
      * @param scan the distance from one row of pixels to the next in
      *        the array
-     * @see java.awt.Component#createImage
+     * @see j86.java.awt.Component#createImage
      */
     public MemoryImageSource(int w, int h, ColorModel cm,
                              int[] pix, int off, int scan) {
@@ -187,7 +187,7 @@ public class MemoryImageSource implements ImageProducer {
      *        the array
      * @param props a list of properties that the <code>ImageProducer</code>
      *        uses to process an image
-     * @see java.awt.Component#createImage
+     * @see j86.java.awt.Component#createImage
      */
     public MemoryImageSource(int w, int h, ColorModel cm,
                              int[] pix, int off, int scan,
@@ -220,7 +220,7 @@ public class MemoryImageSource implements ImageProducer {
      *        first pixel
      * @param scan the distance from one row of pixels to the next in
      *        the array
-     * @see java.awt.Component#createImage
+     * @see j86.java.awt.Component#createImage
      * @see ColorModel#getRGBdefault
      */
     public MemoryImageSource(int w, int h, int pix[], int off, int scan) {
@@ -240,7 +240,7 @@ public class MemoryImageSource implements ImageProducer {
      *        the array
      * @param props a list of properties that the <code>ImageProducer</code>
      *        uses to process an image
-     * @see java.awt.Component#createImage
+     * @see j86.java.awt.Component#createImage
      * @see ColorModel#getRGBdefault
      */
     public MemoryImageSource(int w, int h, int pix[], int off, int scan,

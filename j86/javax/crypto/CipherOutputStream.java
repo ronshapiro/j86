@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.crypto;
+package j86.javax.crypto;
 
-import java.io.*;
+import j86.java.io.*;
 
 /**
  * A CipherOutputStream is composed of an OutputStream and a Cipher so
@@ -39,7 +39,7 @@ import java.io.*;
  *
  * <p> This class adheres strictly to the semantics, especially the
  * failure semantics, of its ancestor classes
- * java.io.OutputStream and java.io.FilterOutputStream.  This class
+ * j86.java.io.OutputStream and java.io.FilterOutputStream.  This class
  * has exactly those methods specified in its ancestor classes, and
  * overrides them all.  Moreover, this class catches all exceptions
  * that are not thrown by its ancestor classes.
@@ -52,10 +52,10 @@ import java.io.*;
  * CipherOutputStream.
  *
  * @author  Li Gong
- * @see     java.io.OutputStream
- * @see     java.io.FilterOutputStream
- * @see     javax.crypto.Cipher
- * @see     javax.crypto.CipherInputStream
+ * @see     j86.java.io.OutputStream
+ * @see     j86.java.io.FilterOutputStream
+ * @see     j86.javax.crypto.Cipher
+ * @see     j86.javax.crypto.CipherInputStream
  *
  * @since 1.4
  */
@@ -137,7 +137,7 @@ public class CipherOutputStream extends FilterOutputStream {
      * @param      b   the data.
      * @exception  NullPointerException if <code>b</code> is null.
      * @exception  IOException  if an I/O error occurs.
-     * @see        javax.crypto.CipherOutputStream#write(byte[], int, int)
+     * @see        j86.javax.crypto.CipherOutputStream#write(byte[], int, int)
      * @since JCE1.2
      */
     public void write(byte b[]) throws IOException {

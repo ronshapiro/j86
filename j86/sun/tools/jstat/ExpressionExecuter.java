@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.tools.jstat;
+package j86.sun.tools.jstat;
 
-import java.util.*;
-import sun.jvmstat.monitor.*;
+import j86.java.util.*;
+import j86.sun.jvmstat.monitor.*;
 
 /**
  * A class implementing the ExpressionEvaluator to evaluate an expression

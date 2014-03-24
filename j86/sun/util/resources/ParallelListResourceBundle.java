@@ -23,19 +23,19 @@
  * questions.
  */
 
-package sun.util.resources;
+package j86.j86.sun.util.resources;
 
-import java.util.AbstractSet;
-import java.util.Collections;
-import java.util.Enumeration;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.NoSuchElementException;
-import java.util.ResourceBundle;
-import java.util.Set;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentMap;
-import java.util.concurrent.atomic.AtomicMarkableReference;
+import j86.java.util.AbstractSet;
+import j86.java.util.Collections;
+import j86.java.util.Enumeration;
+import j86.java.util.HashSet;
+import j86.java.util.Iterator;
+import j86.java.util.NoSuchElementException;
+import j86.java.util.ResourceBundle;
+import j86.java.util.Set;
+import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.j86.java.util.concurrent.ConcurrentMap;
+import j86.j86.j86.java.util.concurrent.atomic.AtomicMarkableReference;
 
 /**
  * ParallelListResourceBundle is another variant of ListResourceBundle

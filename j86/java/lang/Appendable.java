@@ -23,15 +23,15 @@
  * questions.
  */
 
-package java.lang;
+package j86.java.lang;
 
-import java.io.IOException;
+import j86.java.io.IOException;
 
 /**
  * An object to which <tt>char</tt> sequences and values can be appended.  The
  * <tt>Appendable</tt> interface must be implemented by any class whose
  * instances are intended to receive formatted output from a {@link
- * java.util.Formatter}.
+ * j86.java.util.Formatter}.
  *
  * <p> The characters to be appended should be valid Unicode characters as
  * described in <a href="Character.html#unicode">Unicode Character
@@ -55,7 +55,7 @@ public interface Appendable {
      *
      * <p> Depending on which class implements the character sequence
      * <tt>csq</tt>, the entire sequence may not be appended.  For
-     * instance, if <tt>csq</tt> is a {@link java.nio.CharBuffer} then
+     * instance, if <tt>csq</tt> is a {@link j86.java.nio.CharBuffer} then
      * the subsequence to append is defined by the buffer's position and limit.
      *
      * @param  csq

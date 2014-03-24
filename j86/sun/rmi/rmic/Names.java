@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.rmi.rmic;
+package j86.sun.rmi.rmic;
 
-import sun.tools.java.Identifier;
+import j86.sun.tools.java.Identifier;
 
 /**
  * Names provides static utility methods used by other rmic classes
@@ -64,7 +64,7 @@ public class Names {
      * inner classes by converting occurrences of ". " into "$".
      *
      * This code is taken from the "mangleInnerType" method of
-     * the "sun.tools.java.Type" class; this method cannot be accessed
+     * the "j86.sun.tools.java.Type" class; this method cannot be accessed
      * itself because it is package protected.
      */
     static final public Identifier mangleClass(Identifier className) {
@@ -78,7 +78,7 @@ public class Names {
          */
         Identifier mangled = Identifier.lookup(
                                                className.getFlatName().toString()
-                                               .replace('.', sun.tools.java.Constants.SIGC_INNERCLASS));
+                                               .replace('.', j86.sun.tools.java.Constants.SIGC_INNERCLASS));
         if (mangled.isInner())
             throw new Error("failed to mangle inner class name");
 

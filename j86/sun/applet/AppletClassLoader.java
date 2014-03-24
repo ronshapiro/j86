@@ -23,37 +23,37 @@
  * questions.
  */
 
-package sun.applet;
+package j86.sun.applet;
 
-import java.lang.NullPointerException;
-import java.net.URL;
-import java.net.URLClassLoader;
-import java.net.SocketPermission;
-import java.net.URLConnection;
-import java.net.MalformedURLException;
-import java.net.InetAddress;
-import java.net.UnknownHostException;
-import java.io.File;
-import java.io.FilePermission;
-import java.io.IOException;
-import java.io.BufferedInputStream;
-import java.io.InputStream;
-import java.util.Enumeration;
-import java.util.HashMap;
-import java.util.NoSuchElementException;
-import java.security.AccessController;
-import java.security.AccessControlContext;
-import java.security.PrivilegedAction;
-import java.security.PrivilegedExceptionAction;
-import java.security.PrivilegedActionException;
-import java.security.CodeSource;
-import java.security.Permission;
-import java.security.PermissionCollection;
-import sun.awt.AppContext;
-import sun.awt.SunToolkit;
-import sun.misc.IOUtils;
-import sun.net.www.ParseUtil;
-import sun.security.util.SecurityConstants;
+import j86.java.lang.NullPointerException;
+import j86.java.net.URL;
+import j86.java.net.URLClassLoader;
+import j86.java.net.SocketPermission;
+import j86.java.net.URLConnection;
+import j86.java.net.MalformedURLException;
+import j86.java.net.InetAddress;
+import j86.java.net.UnknownHostException;
+import j86.java.io.File;
+import j86.java.io.FilePermission;
+import j86.java.io.IOException;
+import j86.java.io.BufferedInputStream;
+import j86.java.io.InputStream;
+import j86.java.util.Enumeration;
+import j86.java.util.HashMap;
+import j86.java.util.NoSuchElementException;
+import j86.java.security.AccessController;
+import j86.java.security.AccessControlContext;
+import j86.java.security.PrivilegedAction;
+import j86.java.security.PrivilegedExceptionAction;
+import j86.java.security.PrivilegedActionException;
+import j86.java.security.CodeSource;
+import j86.java.security.Permission;
+import j86.java.security.PermissionCollection;
+import j86.sun.awt.AppContext;
+import j86.sun.awt.SunToolkit;
+import j86.sun.misc.IOUtils;
+import j86.j86.sun.net.www.ParseUtil;
+import j86.sun.security.util.SecurityConstants;
 
 /**
  * This class defines the class loader for loading applet classes and
@@ -79,7 +79,7 @@ public class AppletClassLoader extends URLClassLoader {
         super(new URL[0]);
         this.base = base;
         this.codesource =
-            new CodeSource(base, (java.security.cert.Certificate[]) null);
+            new CodeSource(base, (j86.j86.java.security.cert.Certificate[]) null);
         acc = AccessController.getContext();
     }
 
@@ -253,7 +253,7 @@ public class AppletClassLoader extends URLClassLoader {
 
         try {
             p = url.openConnection().getPermission();
-        } catch (java.io.IOException ioe) {
+        } catch (j86.java.io.IOException ioe) {
             p = null;
         }
 
@@ -287,7 +287,7 @@ public class AppletClassLoader extends URLClassLoader {
             Permission bperm;
                 try {
                     bperm = base.openConnection().getPermission();
-                } catch (java.io.IOException ioe) {
+                } catch (j86.java.io.IOException ioe) {
                     bperm = null;
                 }
                 if (bperm instanceof FilePermission) {
@@ -316,10 +316,10 @@ public class AppletClassLoader extends URLClassLoader {
      */
     private static byte[] getBytes(URL url) throws IOException {
         URLConnection uc = url.openConnection();
-        if (uc instanceof java.net.HttpURLConnection) {
-            java.net.HttpURLConnection huc = (java.net.HttpURLConnection) uc;
+        if (uc instanceof j86.java.net.HttpURLConnection) {
+            j86.java.net.HttpURLConnection huc = (java.net.HttpURLConnection) uc;
             int code = huc.getResponseCode();
-            if (code >= java.net.HttpURLConnection.HTTP_BAD_REQUEST) {
+            if (code >= j86.java.net.HttpURLConnection.HTTP_BAD_REQUEST) {
                 throw new IOException("open HTTP connection failed.");
             }
         }
@@ -519,18 +519,18 @@ public class AppletClassLoader extends URLClassLoader {
         boolean ok = true;
         try {
             URLConnection conn = url.openConnection();
-            if (conn instanceof java.net.HttpURLConnection) {
-                java.net.HttpURLConnection hconn =
-                    (java.net.HttpURLConnection) conn;
+            if (conn instanceof j86.java.net.HttpURLConnection) {
+                j86.java.net.HttpURLConnection hconn =
+                    (j86.java.net.HttpURLConnection) conn;
 
                 // To reduce overhead, using http HEAD method instead of GET method
                 hconn.setRequestMethod("HEAD");
 
                 int code = hconn.getResponseCode();
-                if (code == java.net.HttpURLConnection.HTTP_OK) {
+                if (code == j86.java.net.HttpURLConnection.HTTP_OK) {
                     return true;
                 }
-                if (code >= java.net.HttpURLConnection.HTTP_BAD_REQUEST) {
+                if (code >= j86.java.net.HttpURLConnection.HTTP_BAD_REQUEST) {
                     return false;
                 }
             } else {

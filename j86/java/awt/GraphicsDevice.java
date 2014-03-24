@@ -24,13 +24,13 @@
  */
 
 
-package java.awt;
+package j86.java.awt;
 
-import java.awt.image.ColorModel;
+import j86.j86.j86.java.awt.image.ColorModel;
 
-import sun.awt.AWTAccessor;
-import sun.awt.AppContext;
-import sun.awt.SunToolkit;
+import j86.sun.awt.AWTAccessor;
+import j86.sun.awt.AppContext;
+import j86.sun.awt.SunToolkit;
 
 /**
  * The <code>GraphicsDevice</code> class describes the graphics devices
@@ -217,7 +217,7 @@ public abstract class GraphicsDevice {
      * that permission is granted.
      * @return whether full-screen exclusive mode is available for
      * this graphics device
-     * @see java.awt.AWTPermission
+     * @see j86.java.awt.AWTPermission
      * @since 1.4
      */
     public boolean isFullScreenSupported() {
@@ -492,7 +492,7 @@ public abstract class GraphicsDevice {
      * @return number of bytes available in accelerated memory.
      * A negative return value indicates that the amount of accelerated memory
      * on this GraphicsDevice is indeterminate.
-     * @see java.awt.image.VolatileImage#flush
+     * @see j86.j86.j86.java.awt.image.VolatileImage#flush
      * @see ImageCapabilities#isAccelerated
      * @since 1.4
      */

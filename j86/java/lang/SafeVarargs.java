@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.lang;
+package j86.java.lang;
 
-import java.lang.annotation.*;
+import j86.j86.java.lang.annotation.*;
 
 /**
  * A programmer assertion that the body of the annotated method or

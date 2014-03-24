@@ -23,17 +23,17 @@
  * questions.
  */
 
-package javax.swing.event;
+package j86.j86.javax.swing.event;
 
 
-import java.util.EventListener;
+import j86.java.util.EventListener;
 
 
 /**
  * The listener that's notified when a lists selection value
  * changes.
  *
- * @see javax.swing.ListSelectionModel
+ * @see j86.javax.swing.ListSelectionModel
  *
  * @author Hans Muller
  */

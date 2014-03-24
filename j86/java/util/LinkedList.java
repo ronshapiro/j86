@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.util;
+package j86.java.util;
 
-import java.util.function.Consumer;
+import j86.j86.java.util.function.Consumer;
 
 /**
  * Doubly-linked list implementation of the {@code List} and {@code Deque}
@@ -82,7 +82,7 @@ import java.util.function.Consumer;
 
 public class LinkedList<E>
     extends AbstractSequentialList<E>
-    implements List<E>, Deque<E>, Cloneable, java.io.Serializable
+    implements List<E>, Deque<E>, Cloneable, j86.java.io.Serializable
 {
     transient int size = 0;
 
@@ -1095,7 +1095,7 @@ public class LinkedList<E>
     @SuppressWarnings("unchecked")
     public <T> T[] toArray(T[] a) {
         if (a.length < size)
-            a = (T[])java.lang.reflect.Array.newInstance(
+            a = (T[])j86.j86.j86.java.lang.reflect.Array.newInstance(
                                 a.getClass().getComponentType(), size);
         int i = 0;
         Object[] result = a;
@@ -1118,8 +1118,8 @@ public class LinkedList<E>
      *             contains) is emitted (int), followed by all of its
      *             elements (each an Object) in the proper order.
      */
-    private void writeObject(java.io.ObjectOutputStream s)
-        throws java.io.IOException {
+    private void writeObject(j86.java.io.ObjectOutputStream s)
+        throws j86.java.io.IOException {
         // Write out any hidden serialization magic
         s.defaultWriteObject();
 
@@ -1136,8 +1136,8 @@ public class LinkedList<E>
      * (that is, deserializes it).
      */
     @SuppressWarnings("unchecked")
-    private void readObject(java.io.ObjectInputStream s)
-        throws java.io.IOException, ClassNotFoundException {
+    private void readObject(j86.java.io.ObjectInputStream s)
+        throws j86.java.io.IOException, ClassNotFoundException {
         // Read in any hidden serialization magic
         s.defaultReadObject();
 

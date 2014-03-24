@@ -24,33 +24,33 @@
  * questions.
  */
 
-package com.sun.jmx.remote.util;
+package j86.com.sun.jmx.remote.util;
 
-import java.io.IOException;
-import java.io.ObjectOutputStream;
-import java.io.OutputStream;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Hashtable;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.SortedMap;
-import java.util.SortedSet;
-import java.util.StringTokenizer;
-import java.util.TreeMap;
-import java.util.TreeSet;
+import j86.java.io.IOException;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.OutputStream;
+import j86.java.util.Collection;
+import j86.java.util.HashMap;
+import j86.java.util.Hashtable;
+import j86.java.util.Iterator;
+import j86.java.util.Map;
+import j86.java.util.SortedMap;
+import j86.java.util.SortedSet;
+import j86.java.util.StringTokenizer;
+import j86.java.util.TreeMap;
+import j86.java.util.TreeSet;
 
-import java.security.AccessController;
+import j86.java.security.AccessController;
 
-import javax.management.ObjectName;
-import javax.management.MBeanServer;
-import javax.management.InstanceNotFoundException;
-import javax.management.remote.JMXConnectorFactory;
-import javax.management.remote.JMXConnectorServerFactory;
-import com.sun.jmx.mbeanserver.GetPropertyAction;
-import com.sun.jmx.remote.security.NotificationAccessController;
-import javax.management.remote.JMXConnector;
-import javax.management.remote.JMXConnectorServer;
+import j86.javax.management.ObjectName;
+import j86.javax.management.MBeanServer;
+import j86.javax.management.InstanceNotFoundException;
+import j86.j86.javax.management.remote.JMXConnectorFactory;
+import j86.j86.javax.management.remote.JMXConnectorServerFactory;
+import j86.com.sun.jmx.mbeanserver.GetPropertyAction;
+import j86.com.sun.jmx.remote.security.NotificationAccessController;
+import j86.j86.javax.management.remote.JMXConnector;
+import j86.j86.javax.management.remote.JMXConnectorServer;
 
 public class EnvHelp {
 
@@ -241,7 +241,7 @@ public class EnvHelp {
         Throwable ret = t;
 
         try {
-            java.lang.reflect.Method getCause =
+            j86.j86.j86.java.lang.reflect.Method getCause =
                 t.getClass().getMethod("getCause", (Class<?>[]) null);
             ret = (Throwable)getCause.invoke(t, (Object[]) null);
 
@@ -764,5 +764,5 @@ public class EnvHelp {
     }
 
     private static final ClassLogger logger =
-        new ClassLogger("javax.management.remote.misc", "EnvHelp");
+        new ClassLogger("j86.j86.javax.management.remote.misc", "EnvHelp");
 }

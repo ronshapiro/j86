@@ -23,19 +23,19 @@
  * questions.
  */
 
-package javax.management;
+package j86.javax.management;
 
-import java.util.Collections;
-import java.util.List;
-import java.util.Objects;
-import java.util.concurrent.CopyOnWriteArrayList;
-import java.util.concurrent.Executor;
+import j86.java.util.Collections;
+import j86.java.util.List;
+import j86.java.util.Objects;
+import j86.j86.java.util.concurrent.CopyOnWriteArrayList;
+import j86.j86.java.util.concurrent.Executor;
 
-import com.sun.jmx.remote.util.ClassLogger;
+import j86.com.sun.jmx.remote.util.ClassLogger;
 
 /**
  * <p>Provides an implementation of {@link
- * javax.management.NotificationEmitter NotificationEmitter}
+ * j86.javax.management.NotificationEmitter NotificationEmitter}
  * interface.  This can be used as the super class of an MBean that
  * sends notifications.</p>
  *
@@ -72,7 +72,7 @@ public class NotificationBroadcasterSupport implements NotificationEmitter {
 
     /**
      * Constructs a NotificationBroadcasterSupport where each listener is invoked using
-     * the given {@link java.util.concurrent.Executor}. When {@link #sendNotification
+     * the given {@link j86.j86.java.util.concurrent.Executor}. When {@link #sendNotification
      * sendNotification} is called, a listener is selected if it was added with a null
      * {@link NotificationFilter}, or if {@link NotificationFilter#isNotificationEnabled
      * isNotificationEnabled} returns true for the notification being sent. The call to
@@ -119,7 +119,7 @@ public class NotificationBroadcasterSupport implements NotificationEmitter {
 
     /**
      * <p>Constructs a NotificationBroadcasterSupport with information about the notifications that may be sent,
-     * and where each listener is invoked using the given {@link java.util.concurrent.Executor}.</p>
+     * and where each listener is invoked using the given {@link j86.j86.java.util.concurrent.Executor}.</p>
      *
      * <p>When {@link #sendNotification sendNotification} is called, a
      * listener is selected if it was added with a null {@link
@@ -363,5 +363,5 @@ public class NotificationBroadcasterSupport implements NotificationEmitter {
     }
 
     private static final ClassLogger logger =
-        new ClassLogger("javax.management", "NotificationBroadcasterSupport");
+        new ClassLogger("j86.javax.management", "NotificationBroadcasterSupport");
 }

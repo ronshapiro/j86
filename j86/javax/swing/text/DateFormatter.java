@@ -22,17 +22,17 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text;
+package j86.j86.javax.swing.text;
 
-import java.awt.event.*;
-import java.text.*;
-import java.util.*;
-import javax.swing.*;
-import javax.swing.text.*;
+import j86.j86.java.awt.event.*;
+import j86.java.text.*;
+import j86.java.util.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.text.*;
 
 /**
  * DateFormatter is an <code>InternationalFormatter</code> that does its
- * formatting by way of an instance of <code>java.text.DateFormat</code>.
+ * formatting by way of an instance of <code>j86.java.text.DateFormat</code>.
  * <p>
  * <strong>Warning:</strong>
  * Serialized objects of this class will not be compatible with
@@ -40,10 +40,10 @@ import javax.swing.text.*;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
- * @see java.text.DateFormat
+ * @see j86.java.text.DateFormat
  *
  * @since 1.4
  */

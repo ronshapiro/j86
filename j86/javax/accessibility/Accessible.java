@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.accessibility;
+package j86.javax.accessibility;
 
 /**
  * Interface Accessible is the main interface for the accessibility package.

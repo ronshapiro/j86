@@ -23,13 +23,13 @@
  * questions.
  */
 
-package javax.management;
+package j86.javax.management;
 
-import com.sun.jmx.mbeanserver.Introspector;
-import java.lang.annotation.Annotation;
-import java.lang.reflect.Method;
-import java.util.Arrays;
-import java.util.Objects;
+import j86.com.sun.jmx.mbeanserver.Introspector;
+import j86.j86.java.lang.annotation.Annotation;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.util.Arrays;
+import j86.java.util.Objects;
 
 /**
  * Describes a management operation exposed by an MBean.  Instances of
@@ -100,7 +100,7 @@ public class MBeanOperationInfo extends MBeanFeatureInfo implements Cloneable {
      * fields contributed by any annotations on the {@code Method}
      * object that contain the {@link DescriptorKey} meta-annotation.
      *
-     * @param method The <CODE>java.lang.reflect.Method</CODE> object
+     * @param method The <CODE>j86.j86.j86.java.lang.reflect.Method</CODE> object
      * describing the MBean operation.
      * @param description A human readable description of the operation.
      */

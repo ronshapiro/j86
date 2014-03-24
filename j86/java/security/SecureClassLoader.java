@@ -23,13 +23,13 @@
  * questions.
  */
 
-package java.security;
+package j86.java.security;
 
-import java.util.HashMap;
-import java.util.ArrayList;
-import java.net.URL;
+import j86.java.util.HashMap;
+import j86.java.util.ArrayList;
+import j86.java.net.URL;
 
-import sun.security.util.Debug;
+import j86.sun.security.util.Debug;
 
 /**
  * This class extends ClassLoader with additional support for defining
@@ -143,7 +143,7 @@ public class SecureClassLoader extends ClassLoader {
     }
 
     /**
-     * Converts a {@link java.nio.ByteBuffer ByteBuffer}
+     * Converts a {@link j86.java.nio.ByteBuffer ByteBuffer}
      * into an instance of class {@code Class}, with an optional CodeSource.
      * Before the class can be used it must be resolved.
      * <p>
@@ -168,7 +168,7 @@ public class SecureClassLoader extends ClassLoader {
      *
      * @since  1.5
      */
-    protected final Class<?> defineClass(String name, java.nio.ByteBuffer b,
+    protected final Class<?> defineClass(String name, j86.java.nio.ByteBuffer b,
                                          CodeSource cs)
     {
         return defineClass(name, b, getProtectionDomain(cs));

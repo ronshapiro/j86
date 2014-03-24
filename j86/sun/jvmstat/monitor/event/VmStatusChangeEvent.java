@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.jvmstat.monitor.event;
+package j86.j86.sun.jvmstat.monitor.event;
 
-import java.util.Set;
-import sun.jvmstat.monitor.MonitoredHost;
+import j86.java.util.Set;
+import j86.sun.jvmstat.monitor.MonitoredHost;
 
 /**
  * Provides a description of a change in status of the Java Virtual Machines

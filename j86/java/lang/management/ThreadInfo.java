@@ -23,12 +23,12 @@
  * questions.
  */
 
-package java.lang.management;
+package j86.j86.java.lang.management;
 
-import javax.management.openmbean.CompositeData;
-import sun.management.ManagementFactoryHelper;
-import sun.management.ThreadInfoCompositeData;
-import static java.lang.Thread.State.*;
+import j86.j86.javax.management.openmbean.CompositeData;
+import j86.sun.management.ManagementFactoryHelper;
+import j86.sun.management.ThreadInfoCompositeData;
+import static j86.java.lang.Thread.State.*;
 
 /**
  * Thread information. <tt>ThreadInfo</tt> contains the information
@@ -47,7 +47,7 @@ import static java.lang.Thread.State.*;
  *       <li>waiting to enter a synchronization block/method, or</li>
  *       <li>waiting to be notified in a {@link Object#wait Object.wait} method,
  *           or</li>
- *       <li>parking due to a {@link java.util.concurrent.locks.LockSupport#park
+ *       <li>parking due to a {@link j86.j86.j86.java.util.concurrent.locks.LockSupport#park
  *           LockSupport.park} call.</li>
  *       </ul>
  *   </li>
@@ -335,7 +335,7 @@ public class ThreadInfo {
      * has blocked to enter or reenter a monitor
      * since thread contention monitoring is enabled.
      * I.e. the total accumulated time the thread has been in the
-     * {@link java.lang.Thread.State#BLOCKED BLOCKED} state since thread
+     * {@link j86.java.lang.Thread.State#BLOCKED BLOCKED} state since thread
      * contention monitoring was last enabled.
      * This method returns <tt>-1</tt> if thread contention monitoring
      * is disabled.
@@ -348,7 +348,7 @@ public class ThreadInfo {
      * that a thread entered the <tt>BLOCKED</tt> state;
      * <tt>-1</tt> if thread contention monitoring is disabled.
      *
-     * @throws java.lang.UnsupportedOperationException if the Java
+     * @throws j86.java.lang.UnsupportedOperationException if the Java
      * virtual machine does not support this operation.
      *
      * @see ThreadMXBean#isThreadContentionMonitoringSupported
@@ -363,7 +363,7 @@ public class ThreadInfo {
      * the thread associated with this <tt>ThreadInfo</tt>
      * blocked to enter or reenter a monitor.
      * I.e. the number of times a thread has been in the
-     * {@link java.lang.Thread.State#BLOCKED BLOCKED} state.
+     * {@link j86.java.lang.Thread.State#BLOCKED BLOCKED} state.
      *
      * @return the total number of times that the thread
      * entered the <tt>BLOCKED</tt> state.
@@ -378,8 +378,8 @@ public class ThreadInfo {
      * has waited for notification
      * since thread contention monitoring is enabled.
      * I.e. the total accumulated time the thread has been in the
-     * {@link java.lang.Thread.State#WAITING WAITING}
-     * or {@link java.lang.Thread.State#TIMED_WAITING TIMED_WAITING} state
+     * {@link j86.java.lang.Thread.State#WAITING WAITING}
+     * or {@link j86.java.lang.Thread.State#TIMED_WAITING TIMED_WAITING} state
      * since thread contention monitoring is enabled.
      * This method returns <tt>-1</tt> if thread contention monitoring
      * is disabled.
@@ -393,7 +393,7 @@ public class ThreadInfo {
      * <tt>TIMED_WAITING</tt> state;
      * <tt>-1</tt> if thread contention monitoring is disabled.
      *
-     * @throws java.lang.UnsupportedOperationException if the Java
+     * @throws j86.java.lang.UnsupportedOperationException if the Java
      * virtual machine does not support this operation.
      *
      * @see ThreadMXBean#isThreadContentionMonitoringSupported
@@ -408,8 +408,8 @@ public class ThreadInfo {
      * the thread associated with this <tt>ThreadInfo</tt>
      * waited for notification.
      * I.e. the number of times that a thread has been
-     * in the {@link java.lang.Thread.State#WAITING WAITING}
-     * or {@link java.lang.Thread.State#TIMED_WAITING TIMED_WAITING} state.
+     * in the {@link j86.java.lang.Thread.State#WAITING WAITING}
+     * or {@link j86.java.lang.Thread.State#TIMED_WAITING TIMED_WAITING} state.
      *
      * @return the total number of times that the thread
      * was in the <tt>WAITING</tt> or <tt>TIMED_WAITING</tt> state.
@@ -426,26 +426,26 @@ public class ThreadInfo {
      * <ul>
      * <li>an object monitor to be acquired for entering or reentering
      *     a synchronization block/method.
-     *     <br>The thread is in the {@link java.lang.Thread.State#BLOCKED BLOCKED}
+     *     <br>The thread is in the {@link j86.java.lang.Thread.State#BLOCKED BLOCKED}
      *     state waiting to enter the <tt>synchronized</tt> statement
      *     or method.
      *     <p></li>
      * <li>an object monitor to be notified by another thread.
-     *     <br>The thread is in the {@link java.lang.Thread.State#WAITING WAITING}
-     *     or {@link java.lang.Thread.State#TIMED_WAITING TIMED_WAITING} state
+     *     <br>The thread is in the {@link j86.java.lang.Thread.State#WAITING WAITING}
+     *     or {@link j86.java.lang.Thread.State#TIMED_WAITING TIMED_WAITING} state
      *     due to a call to the {@link Object#wait Object.wait} method.
      *     <p></li>
      * <li>a synchronization object responsible for the thread parking.
-     *     <br>The thread is in the {@link java.lang.Thread.State#WAITING WAITING}
-     *     or {@link java.lang.Thread.State#TIMED_WAITING TIMED_WAITING} state
+     *     <br>The thread is in the {@link j86.java.lang.Thread.State#WAITING WAITING}
+     *     or {@link j86.java.lang.Thread.State#TIMED_WAITING TIMED_WAITING} state
      *     due to a call to the
-     *     {@link java.util.concurrent.locks.LockSupport#park(Object)
+     *     {@link j86.j86.j86.java.util.concurrent.locks.LockSupport#park(Object)
      *     LockSupport.park} method.  The synchronization object
      *     is the object returned from
-     *     {@link java.util.concurrent.locks.LockSupport#getBlocker
+     *     {@link j86.j86.j86.java.util.concurrent.locks.LockSupport#getBlocker
      *     LockSupport.getBlocker} method. Typically it is an
      *     <a href="LockInfo.html#OwnableSynchronizer"> ownable synchronizer</a>
-     *     or a {@link java.util.concurrent.locks.Condition Condition}.</li>
+     *     or a {@link j86.j86.j86.java.util.concurrent.locks.Condition Condition}.</li>
      * </ul>
      *
      * <p>This method returns <tt>null</tt> if the thread is not in any of
@@ -659,43 +659,43 @@ public class ThreadInfo {
      * </tr>
      * <tr>
      *   <td>threadId</td>
-     *   <td><tt>java.lang.Long</tt></td>
+     *   <td><tt>j86.java.lang.Long</tt></td>
      * </tr>
      * <tr>
      *   <td>threadName</td>
-     *   <td><tt>java.lang.String</tt></td>
+     *   <td><tt>j86.java.lang.String</tt></td>
      * </tr>
      * <tr>
      *   <td>threadState</td>
-     *   <td><tt>java.lang.String</tt></td>
+     *   <td><tt>j86.java.lang.String</tt></td>
      * </tr>
      * <tr>
      *   <td>suspended</td>
-     *   <td><tt>java.lang.Boolean</tt></td>
+     *   <td><tt>j86.java.lang.Boolean</tt></td>
      * </tr>
      * <tr>
      *   <td>inNative</td>
-     *   <td><tt>java.lang.Boolean</tt></td>
+     *   <td><tt>j86.java.lang.Boolean</tt></td>
      * </tr>
      * <tr>
      *   <td>blockedCount</td>
-     *   <td><tt>java.lang.Long</tt></td>
+     *   <td><tt>j86.java.lang.Long</tt></td>
      * </tr>
      * <tr>
      *   <td>blockedTime</td>
-     *   <td><tt>java.lang.Long</tt></td>
+     *   <td><tt>j86.java.lang.Long</tt></td>
      * </tr>
      * <tr>
      *   <td>waitedCount</td>
-     *   <td><tt>java.lang.Long</tt></td>
+     *   <td><tt>j86.java.lang.Long</tt></td>
      * </tr>
      * <tr>
      *   <td>waitedTime</td>
-     *   <td><tt>java.lang.Long</tt></td>
+     *   <td><tt>j86.java.lang.Long</tt></td>
      * </tr>
      * <tr>
      *   <td>lockInfo</td>
-     *   <td><tt>javax.management.openmbean.CompositeData</tt>
+     *   <td><tt>j86.j86.javax.management.openmbean.CompositeData</tt>
      *       - the mapped type for {@link LockInfo} as specified in the
      *         {@link LockInfo#from} method.
      *       <p>
@@ -705,19 +705,19 @@ public class ThreadInfo {
      * </tr>
      * <tr>
      *   <td>lockName</td>
-     *   <td><tt>java.lang.String</tt></td>
+     *   <td><tt>j86.java.lang.String</tt></td>
      * </tr>
      * <tr>
      *   <td>lockOwnerId</td>
-     *   <td><tt>java.lang.Long</tt></td>
+     *   <td><tt>j86.java.lang.Long</tt></td>
      * </tr>
      * <tr>
      *   <td>lockOwnerName</td>
-     *   <td><tt>java.lang.String</tt></td>
+     *   <td><tt>j86.java.lang.String</tt></td>
      * </tr>
      * <tr>
      *   <td><a name="StackTrace">stackTrace</a></td>
-     *   <td><tt>javax.management.openmbean.CompositeData[]</tt>
+     *   <td><tt>j86.j86.javax.management.openmbean.CompositeData[]</tt>
      *       <p>
      *       Each element is a <tt>CompositeData</tt> representing
      *       StackTraceElement containing the following attributes:
@@ -729,23 +729,23 @@ public class ThreadInfo {
      *       </tr>
      *       <tr>
      *         <td>className</td>
-     *         <td><tt>java.lang.String</tt></td>
+     *         <td><tt>j86.java.lang.String</tt></td>
      *       </tr>
      *       <tr>
      *         <td>methodName</td>
-     *         <td><tt>java.lang.String</tt></td>
+     *         <td><tt>j86.java.lang.String</tt></td>
      *       </tr>
      *       <tr>
      *         <td>fileName</td>
-     *         <td><tt>java.lang.String</tt></td>
+     *         <td><tt>j86.java.lang.String</tt></td>
      *       </tr>
      *       <tr>
      *         <td>lineNumber</td>
-     *         <td><tt>java.lang.Integer</tt></td>
+     *         <td><tt>j86.java.lang.Integer</tt></td>
      *       </tr>
      *       <tr>
      *         <td>nativeMethod</td>
-     *         <td><tt>java.lang.Boolean</tt></td>
+     *         <td><tt>j86.java.lang.Boolean</tt></td>
      *       </tr>
      *       </table>
      *       </blockquote>
@@ -753,7 +753,7 @@ public class ThreadInfo {
      * </tr>
      * <tr>
      *   <td>lockedMonitors</td>
-     *   <td><tt>javax.management.openmbean.CompositeData[]</tt>
+     *   <td><tt>j86.j86.javax.management.openmbean.CompositeData[]</tt>
      *       whose element type is the mapped type for
      *       {@link MonitorInfo} as specified in the
      *       {@link MonitorInfo#from Monitor.from} method.
@@ -763,7 +763,7 @@ public class ThreadInfo {
      * </tr>
      * <tr>
      *   <td>lockedSynchronizers</td>
-     *   <td><tt>javax.management.openmbean.CompositeData[]</tt>
+     *   <td><tt>j86.j86.javax.management.openmbean.CompositeData[]</tt>
      *       whose element type is the mapped type for
      *       {@link LockInfo} as specified in the {@link LockInfo#from} method.
      *       <p>

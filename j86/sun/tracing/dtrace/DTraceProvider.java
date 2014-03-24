@@ -23,26 +23,26 @@
  * questions.
  */
 
-package sun.tracing.dtrace;
+package j86.j86.sun.tracing.dtrace;
 
-import java.lang.reflect.Method;
-import java.lang.reflect.Modifier;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationHandler;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.annotation.Annotation;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.j86.j86.java.lang.reflect.Modifier;
+import j86.j86.j86.java.lang.reflect.Constructor;
+import j86.j86.j86.java.lang.reflect.InvocationHandler;
+import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.j86.java.lang.annotation.Annotation;
 
-import sun.tracing.ProviderSkeleton;
-import sun.tracing.ProbeSkeleton;
-import com.sun.tracing.Provider;
-import com.sun.tracing.ProbeName;
-import com.sun.tracing.dtrace.Attributes;
-import com.sun.tracing.dtrace.ModuleName;
-import com.sun.tracing.dtrace.FunctionName;
-import com.sun.tracing.dtrace.StabilityLevel;
-import com.sun.tracing.dtrace.DependencyClass;
+import j86.sun.tracing.ProviderSkeleton;
+import j86.sun.tracing.ProbeSkeleton;
+import com.j86.sun.tracing.Provider;
+import com.j86.sun.tracing.ProbeName;
+import com.j86.j86.sun.tracing.dtrace.Attributes;
+import com.j86.j86.sun.tracing.dtrace.ModuleName;
+import com.j86.j86.sun.tracing.dtrace.FunctionName;
+import com.j86.j86.sun.tracing.dtrace.StabilityLevel;
+import com.j86.j86.sun.tracing.dtrace.DependencyClass;
 
-import sun.misc.ProxyGenerator;
+import j86.sun.misc.ProxyGenerator;
 
 class DTraceProvider extends ProviderSkeleton {
 
@@ -89,7 +89,7 @@ class DTraceProvider extends ProviderSkeleton {
      * Magic routine which creates an implementation of the user's interface.
      *
      * This method uses the ProxyGenerator directly to bypass the
-     * java.lang.reflect.proxy cache so that we get a unique class each
+     * j86.j86.j86.java.lang.reflect.proxy cache so that we get a unique class each
      * time it's called and can't accidently reuse a $Proxy class.
      *
      * @return an implementation of the user's interface

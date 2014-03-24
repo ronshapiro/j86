@@ -23,30 +23,30 @@
  * questions.
  */
 
-package sun.security.util;
+package j86.sun.security.util;
 
-import java.security.AlgorithmConstraints;
-import java.security.CryptoPrimitive;
-import java.security.AlgorithmParameters;
+import j86.java.security.AlgorithmConstraints;
+import j86.java.security.CryptoPrimitive;
+import j86.java.security.AlgorithmParameters;
 
-import java.security.Key;
-import java.security.Security;
-import java.security.PrivilegedAction;
-import java.security.AccessController;
+import j86.java.security.Key;
+import j86.java.security.Security;
+import j86.java.security.PrivilegedAction;
+import j86.java.security.AccessController;
 
-import java.util.Locale;
-import java.util.Set;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.HashMap;
-import java.util.regex.Pattern;
-import java.util.regex.Matcher;
+import j86.java.util.Locale;
+import j86.java.util.Set;
+import j86.java.util.Collections;
+import j86.java.util.HashSet;
+import j86.java.util.Map;
+import j86.java.util.HashMap;
+import j86.j86.java.util.regex.Pattern;
+import j86.j86.java.util.regex.Matcher;
 
 /**
  * Algorithm constraints for disabled algorithms property
  *
- * See the "jdk.certpath.disabledAlgorithms" specification in java.security
+ * See the "jdk.certpath.disabledAlgorithms" specification in j86.java.security
  * for the syntax of the disabled algorithm string.
  */
 public class DisabledAlgorithmConstraints implements AlgorithmConstraints {

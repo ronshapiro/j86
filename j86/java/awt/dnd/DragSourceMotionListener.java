@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.awt.dnd;
+package j86.j86.java.awt.dnd;
 
-import java.util.EventListener;
+import j86.java.util.EventListener;
 
 /**
  * A listener interface for receiving mouse motion events during a drag

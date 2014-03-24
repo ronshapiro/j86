@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.swing;
+package j86.javax.swing;
 
-import java.util.*;
-import java.io.Serializable;
+import j86.java.util.*;
+import j86.java.io.Serializable;
 
 
 /**
@@ -40,7 +40,7 @@ import java.io.Serializable;
  * indicate that the sequence has no lower or upper limit.
  * <p>
  * The value of the <code>calendarField</code> property must be one of the
- * <code>java.util.Calendar</code> constants that specify a field
+ * <code>j86.java.util.Calendar</code> constants that specify a field
  * within a <code>Calendar</code>.  The <code>getNextValue</code>
  * and <code>getPreviousValue</code>
  * methods change the date forward or backwards by this amount.
@@ -126,7 +126,7 @@ public class SpinnerDateModel extends AbstractSpinnerModel implements Serializab
      * <code>calendarField</code> time unit.  For a precise description
      * of what it means to increment or decrement a <code>Calendar</code>
      * <code>field</code>, see the <code>add</code> method in
-     * <code>java.util.Calendar</code>.
+     * <code>j86.java.util.Calendar</code>.
      * <p>
      * The <code>start</code> and <code>end</code> parameters can be
      * <code>null</code> to indicate that the range doesn't have an

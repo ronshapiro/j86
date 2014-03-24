@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.security.provider.certpath;
+package j86.j86.sun.security.provider.certpath;
 
-import java.util.*;
-import java.security.cert.*;
-import java.security.cert.PKIXReason;
+import j86.java.util.*;
+import j86.j86.java.security.cert.*;
+import j86.j86.java.security.cert.PKIXReason;
 
-import sun.security.util.Debug;
-import static sun.security.x509.PKIXExtensions.*;
+import j86.sun.security.util.Debug;
+import static j86.sun.security.x509.PKIXExtensions.*;
 
 /**
  * KeyChecker is a <code>PKIXCertPathChecker</code> that checks that the

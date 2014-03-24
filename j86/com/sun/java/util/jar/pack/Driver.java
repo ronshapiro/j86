@@ -23,42 +23,42 @@
  * questions.
  */
 
-package com.sun.java.util.jar.pack;
+package j86.com.sun.j86.j86.java.util.jar.pack;
 
-import java.io.BufferedInputStream;
-import java.io.BufferedOutputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.PrintStream;
-import java.text.MessageFormat;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.ListIterator;
-import java.util.Map;
-import java.util.Properties;
-import java.util.ResourceBundle;
-import java.util.SortedMap;
-import java.util.TreeMap;
-import java.util.jar.JarFile;
-import java.util.jar.JarOutputStream;
-import java.util.jar.Pack200;
-import java.util.zip.GZIPInputStream;
-import java.util.zip.GZIPOutputStream;
+import j86.java.io.BufferedInputStream;
+import j86.java.io.BufferedOutputStream;
+import j86.java.io.File;
+import j86.java.io.FileInputStream;
+import j86.java.io.FileOutputStream;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.io.OutputStream;
+import j86.java.io.PrintStream;
+import j86.java.text.MessageFormat;
+import j86.j86.java.nio.file.Files;
+import j86.j86.java.nio.file.Path;
+import j86.java.util.ArrayList;
+import j86.java.util.Arrays;
+import j86.java.util.HashMap;
+import j86.java.util.Iterator;
+import j86.java.util.List;
+import j86.java.util.ListIterator;
+import j86.java.util.Map;
+import j86.java.util.Properties;
+import j86.java.util.ResourceBundle;
+import j86.java.util.SortedMap;
+import j86.java.util.TreeMap;
+import j86.j86.java.util.jar.JarFile;
+import j86.j86.java.util.jar.JarOutputStream;
+import j86.j86.java.util.jar.Pack200;
+import j86.j86.java.util.zip.GZIPInputStream;
+import j86.j86.java.util.zip.GZIPOutputStream;
 
 /** Command line interface for Pack200.
  */
 class Driver {
         private static final ResourceBundle RESOURCE =
-                ResourceBundle.getBundle("com.sun.java.util.jar.pack.DriverResource");
+                ResourceBundle.getBundle("j86.com.sun.j86.j86.java.util.jar.pack.DriverResource");
 
     public static void main(String[] ava) throws IOException {
         List<String> av = new ArrayList<>(Arrays.asList(ava));

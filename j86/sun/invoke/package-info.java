@@ -24,8 +24,8 @@
  */
 
 /**
- * Implementation details for JSR 292 RI, package java.lang.invoke.
+ * Implementation details for JSR 292 RI, package j86.j86.java.lang.invoke.
  * @author jrose
  */
 
-package sun.invoke;
+package j86.sun.invoke;

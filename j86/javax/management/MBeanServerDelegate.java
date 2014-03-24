@@ -23,11 +23,11 @@
  * questions.
  */
 
-package javax.management;
+package j86.javax.management;
 
-import com.sun.jmx.defaults.JmxProperties;
-import com.sun.jmx.defaults.ServiceName;
-import com.sun.jmx.mbeanserver.Util;
+import j86.com.sun.jmx.defaults.JmxProperties;
+import j86.com.sun.jmx.defaults.ServiceName;
+import j86.com.sun.jmx.mbeanserver.Util;
 
 /**
  * Represents  the MBean server from the management point of view.
@@ -60,7 +60,7 @@ public class MBeanServerDelegate implements MBeanServerDelegateMBean,
         notifsInfo = new MBeanNotificationInfo[1];
         notifsInfo[0] =
             new MBeanNotificationInfo(types,
-                    "javax.management.MBeanServerNotification",
+                    "j86.javax.management.MBeanServerNotification",
                     "Notifications sent by the MBeanServerDelegate MBean");
     }
 
@@ -82,8 +82,8 @@ public class MBeanServerDelegate implements MBeanServerDelegateMBean,
         if (mbeanServerId == null) {
             String localHost;
             try {
-                localHost = java.net.InetAddress.getLocalHost().getHostName();
-            } catch (java.net.UnknownHostException e) {
+                localHost = j86.java.net.InetAddress.getLocalHost().getHostName();
+            } catch (j86.java.net.UnknownHostException e) {
                 JmxProperties.MISC_LOGGER.finest("Can't get local host name, " +
                         "using \"localhost\" instead. Cause is: "+e);
                 localHost = "localhost";

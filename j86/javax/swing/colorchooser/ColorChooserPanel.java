@@ -23,20 +23,20 @@
  * questions.
  */
 
-package javax.swing.colorchooser;
+package j86.j86.javax.swing.colorchooser;
 
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.Container;
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
-import javax.swing.Icon;
-import javax.swing.JComponent;
-import javax.swing.JFormattedTextField;
-import javax.swing.JLabel;
-import javax.swing.SwingConstants;
+import j86.java.awt.Color;
+import j86.java.awt.Component;
+import j86.java.awt.Container;
+import j86.java.awt.GridBagConstraints;
+import j86.java.awt.GridBagLayout;
+import j86.java.beans.PropertyChangeEvent;
+import j86.java.beans.PropertyChangeListener;
+import j86.javax.swing.Icon;
+import j86.javax.swing.JComponent;
+import j86.javax.swing.JFormattedTextField;
+import j86.javax.swing.JLabel;
+import j86.javax.swing.SwingConstants;
 
 final class ColorChooserPanel extends AbstractColorChooserPanel implements PropertyChangeListener {
 

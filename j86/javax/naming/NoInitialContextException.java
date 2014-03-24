@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.naming;
+package j86.javax.naming;
 
 /**
   * This exception is thrown when no initial context implementation
@@ -44,9 +44,9 @@ package javax.naming;
   * @author Scott Seligman
   *
   * @see InitialContext
-  * @see javax.naming.directory.InitialDirContext
-  * @see javax.naming.spi.NamingManager#getInitialContext
-  * @see javax.naming.spi.NamingManager#setInitialContextFactoryBuilder
+  * @see j86.j86.javax.naming.directory.InitialDirContext
+  * @see j86.j86.javax.naming.spi.NamingManager#getInitialContext
+  * @see j86.j86.javax.naming.spi.NamingManager#setInitialContextFactoryBuilder
   * @since 1.3
   */
 public class NoInitialContextException extends NamingException {
@@ -62,7 +62,7 @@ public class NoInitialContextException extends NamingException {
       * Constructs an instance of NoInitialContextException with an
       * explanation. All other fields are initialized to null.
       * @param  explanation     Possibly null additional detail about this exception.
-      * @see java.lang.Throwable#getMessage
+      * @see j86.java.lang.Throwable#getMessage
       */
     public NoInitialContextException(String explanation) {
         super(explanation);

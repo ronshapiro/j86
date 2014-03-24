@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.nio.file.attribute;
+package j86.j86.j86.java.nio.file.attribute;
 
-import java.util.*;
+import j86.java.util.*;
 
 /**
  * An entry in an access control list (ACL).
@@ -331,7 +331,7 @@ public final class AclEntry {
      * components are equal, and their flags components are equal.
      *
      * <p> This method satisfies the general contract of the {@link
-     * java.lang.Object#equals(Object) Object.equals} method. </p>
+     * j86.java.lang.Object#equals(Object) Object.equals} method. </p>
      *
      * @param   ob   the object to which this object is to be compared
      *

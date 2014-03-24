@@ -23,14 +23,14 @@
  * questions.
  */
 
-package java.lang;
+package j86.java.lang;
 
-import java.io.IOException;
+import j86.java.io.IOException;
 
 /**
  * A <tt>Readable</tt> is a source of characters. Characters from
  * a <tt>Readable</tt> are made available to callers of the read
- * method via a {@link java.nio.CharBuffer CharBuffer}.
+ * method via a {@link j86.java.nio.CharBuffer CharBuffer}.
  *
  * @since 1.5
  */
@@ -47,7 +47,7 @@ public interface Readable {
      *                 or -1 if this source of characters is at its end
      * @throws IOException if an I/O error occurs
      * @throws NullPointerException if cb is null
-     * @throws java.nio.ReadOnlyBufferException if cb is a read only buffer
+     * @throws j86.java.nio.ReadOnlyBufferException if cb is a read only buffer
      */
-    public int read(java.nio.CharBuffer cb) throws IOException;
+    public int read(j86.java.nio.CharBuffer cb) throws IOException;
 }

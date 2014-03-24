@@ -23,31 +23,31 @@
  * questions.
  */
 
-package sun.awt;
+package j86.sun.awt;
 
-import sun.misc.Unsafe;
+import j86.sun.misc.Unsafe;
 
-import java.awt.*;
-import java.awt.KeyboardFocusManager;
-import java.awt.DefaultKeyboardFocusManager;
-import java.awt.event.InputEvent;
-import java.awt.event.InvocationEvent;
-import java.awt.event.KeyEvent;
-import java.awt.geom.Point2D;
-import java.awt.peer.ComponentPeer;
+import j86.java.awt.*;
+import j86.java.awt.KeyboardFocusManager;
+import j86.java.awt.DefaultKeyboardFocusManager;
+import j86.j86.java.awt.event.InputEvent;
+import j86.j86.java.awt.event.InvocationEvent;
+import j86.j86.java.awt.event.KeyEvent;
+import j86.j86.java.awt.geom.Point2D;
+import j86.j86.java.awt.peer.ComponentPeer;
 
-import java.lang.reflect.InvocationTargetException;
-import java.security.AccessControlContext;
+import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.java.security.AccessControlContext;
 
-import java.io.File;
-import java.util.ResourceBundle;
-import java.util.Vector;
+import j86.java.io.File;
+import j86.java.util.ResourceBundle;
+import j86.java.util.Vector;
 
 /**
  * The AWTAccessor utility class.
  * The main purpose of this class is to enable accessing
  * private and package-private fields of classes from
- * different classes/packages. See sun.misc.SharedSecretes
+ * different classes/packages. See j86.sun.misc.SharedSecretes
  * for another example.
  */
 public final class AWTAccessor {
@@ -63,7 +63,7 @@ public final class AWTAccessor {
     }
 
     /*
-     * An interface of accessor for the java.awt.Component class.
+     * An interface of accessor for the j86.java.awt.Component class.
      */
     public interface ComponentAccessor {
         /*
@@ -246,7 +246,7 @@ public final class AWTAccessor {
     }
 
     /*
-     * An interface of accessor for the java.awt.Container class.
+     * An interface of accessor for the j86.java.awt.Container class.
      */
     public interface ContainerAccessor {
         /**
@@ -264,7 +264,7 @@ public final class AWTAccessor {
     }
 
     /*
-     * An interface of accessor for java.awt.Window class.
+     * An interface of accessor for j86.java.awt.Window class.
      */
     public interface WindowAccessor {
         /*
@@ -378,7 +378,7 @@ public final class AWTAccessor {
     }
 
     /*
-     * An accessor for the java.awt.Frame class.
+     * An accessor for the j86.java.awt.Frame class.
      */
     public interface FrameAccessor {
         /*
@@ -396,7 +396,7 @@ public final class AWTAccessor {
     }
 
     /**
-     * An interface of accessor for the java.awt.KeyboardFocusManager class.
+     * An interface of accessor for the j86.java.awt.KeyboardFocusManager class.
      */
     public interface KeyboardFocusManagerAccessor {
         /**
@@ -759,14 +759,14 @@ public final class AWTAccessor {
     private static InvocationEventAccessor invocationEventAccessor;
 
     /*
-     * Set an accessor object for the java.awt.Component class.
+     * Set an accessor object for the j86.java.awt.Component class.
      */
     public static void setComponentAccessor(ComponentAccessor ca) {
         componentAccessor = ca;
     }
 
     /*
-     * Retrieve the accessor object for the java.awt.Component class.
+     * Retrieve the accessor object for the j86.java.awt.Component class.
      */
     public static ComponentAccessor getComponentAccessor() {
         if (componentAccessor == null) {
@@ -777,14 +777,14 @@ public final class AWTAccessor {
     }
 
     /*
-     * Set an accessor object for the java.awt.Container class.
+     * Set an accessor object for the j86.java.awt.Container class.
      */
     public static void setContainerAccessor(ContainerAccessor ca) {
         containerAccessor = ca;
     }
 
     /*
-     * Retrieve the accessor object for the java.awt.Container class.
+     * Retrieve the accessor object for the j86.java.awt.Container class.
      */
     public static ContainerAccessor getContainerAccessor() {
         if (containerAccessor == null) {
@@ -795,14 +795,14 @@ public final class AWTAccessor {
     }
 
     /*
-     * Set an accessor object for the java.awt.Window class.
+     * Set an accessor object for the j86.java.awt.Window class.
      */
     public static void setWindowAccessor(WindowAccessor wa) {
         windowAccessor = wa;
     }
 
     /*
-     * Retrieve the accessor object for the java.awt.Window class.
+     * Retrieve the accessor object for the j86.java.awt.Window class.
      */
     public static WindowAccessor getWindowAccessor() {
         if (windowAccessor == null) {
@@ -812,14 +812,14 @@ public final class AWTAccessor {
     }
 
     /*
-     * Set an accessor object for the java.awt.AWTEvent class.
+     * Set an accessor object for the j86.java.awt.AWTEvent class.
      */
     public static void setAWTEventAccessor(AWTEventAccessor aea) {
         awtEventAccessor = aea;
     }
 
     /*
-     * Retrieve the accessor object for the java.awt.AWTEvent class.
+     * Retrieve the accessor object for the j86.java.awt.AWTEvent class.
      */
     public static AWTEventAccessor getAWTEventAccessor() {
         if (awtEventAccessor == null) {
@@ -829,14 +829,14 @@ public final class AWTAccessor {
     }
 
     /*
-     * Set an accessor object for the java.awt.event.InputEvent class.
+     * Set an accessor object for the j86.j86.java.awt.event.InputEvent class.
      */
     public static void setInputEventAccessor(InputEventAccessor iea) {
         inputEventAccessor = iea;
     }
 
     /*
-     * Retrieve the accessor object for the java.awt.event.InputEvent class.
+     * Retrieve the accessor object for the j86.j86.java.awt.event.InputEvent class.
      */
     public static InputEventAccessor getInputEventAccessor() {
         if (inputEventAccessor == null) {
@@ -846,14 +846,14 @@ public final class AWTAccessor {
     }
 
     /*
-     * Set an accessor object for the java.awt.Frame class.
+     * Set an accessor object for the j86.java.awt.Frame class.
      */
     public static void setFrameAccessor(FrameAccessor fa) {
         frameAccessor = fa;
     }
 
     /*
-     * Retrieve the accessor object for the java.awt.Frame class.
+     * Retrieve the accessor object for the j86.java.awt.Frame class.
      */
     public static FrameAccessor getFrameAccessor() {
         if (frameAccessor == null) {
@@ -863,14 +863,14 @@ public final class AWTAccessor {
     }
 
     /*
-     * Set an accessor object for the java.awt.KeyboardFocusManager class.
+     * Set an accessor object for the j86.java.awt.KeyboardFocusManager class.
      */
     public static void setKeyboardFocusManagerAccessor(KeyboardFocusManagerAccessor kfma) {
         kfmAccessor = kfma;
     }
 
     /*
-     * Retrieve the accessor object for the java.awt.KeyboardFocusManager class.
+     * Retrieve the accessor object for the j86.java.awt.KeyboardFocusManager class.
      */
     public static KeyboardFocusManagerAccessor getKeyboardFocusManagerAccessor() {
         if (kfmAccessor == null) {
@@ -880,14 +880,14 @@ public final class AWTAccessor {
     }
 
     /*
-     * Set an accessor object for the java.awt.MenuComponent class.
+     * Set an accessor object for the j86.java.awt.MenuComponent class.
      */
     public static void setMenuComponentAccessor(MenuComponentAccessor mca) {
         menuComponentAccessor = mca;
     }
 
     /*
-     * Retrieve the accessor object for the java.awt.MenuComponent class.
+     * Retrieve the accessor object for the j86.java.awt.MenuComponent class.
      */
     public static MenuComponentAccessor getMenuComponentAccessor() {
         if (menuComponentAccessor == null) {
@@ -897,14 +897,14 @@ public final class AWTAccessor {
     }
 
     /*
-     * Set an accessor object for the java.awt.EventQueue class.
+     * Set an accessor object for the j86.java.awt.EventQueue class.
      */
     public static void setEventQueueAccessor(EventQueueAccessor eqa) {
         eventQueueAccessor = eqa;
     }
 
     /*
-     * Retrieve the accessor object for the java.awt.EventQueue class.
+     * Retrieve the accessor object for the j86.java.awt.EventQueue class.
      */
     public static EventQueueAccessor getEventQueueAccessor() {
         if (eventQueueAccessor == null) {
@@ -914,14 +914,14 @@ public final class AWTAccessor {
     }
 
     /*
-     * Set an accessor object for the java.awt.PopupMenu class.
+     * Set an accessor object for the j86.java.awt.PopupMenu class.
      */
     public static void setPopupMenuAccessor(PopupMenuAccessor pma) {
         popupMenuAccessor = pma;
     }
 
     /*
-     * Retrieve the accessor object for the java.awt.PopupMenu class.
+     * Retrieve the accessor object for the j86.java.awt.PopupMenu class.
      */
     public static PopupMenuAccessor getPopupMenuAccessor() {
         if (popupMenuAccessor == null) {
@@ -931,14 +931,14 @@ public final class AWTAccessor {
     }
 
     /*
-     * Set an accessor object for the java.awt.FileDialog class.
+     * Set an accessor object for the j86.java.awt.FileDialog class.
      */
     public static void setFileDialogAccessor(FileDialogAccessor fda) {
         fileDialogAccessor = fda;
     }
 
     /*
-     * Retrieve the accessor object for the java.awt.FileDialog class.
+     * Retrieve the accessor object for the j86.java.awt.FileDialog class.
      */
     public static FileDialogAccessor getFileDialogAccessor() {
         if (fileDialogAccessor == null) {
@@ -948,14 +948,14 @@ public final class AWTAccessor {
     }
 
     /*
-     * Set an accessor object for the java.awt.ScrollPaneAdjustable class.
+     * Set an accessor object for the j86.java.awt.ScrollPaneAdjustable class.
      */
     public static void setScrollPaneAdjustableAccessor(ScrollPaneAdjustableAccessor adj) {
         scrollPaneAdjustableAccessor = adj;
     }
 
     /*
-     * Retrieve the accessor object for the java.awt.ScrollPaneAdjustable
+     * Retrieve the accessor object for the j86.java.awt.ScrollPaneAdjustable
      * class.
      */
     public static ScrollPaneAdjustableAccessor getScrollPaneAdjustableAccessor() {
@@ -966,14 +966,14 @@ public final class AWTAccessor {
     }
 
     /**
-     * Set an accessor object for the java.awt.CheckboxMenuItem class.
+     * Set an accessor object for the j86.java.awt.CheckboxMenuItem class.
      */
     public static void setCheckboxMenuItemAccessor(CheckboxMenuItemAccessor cmia) {
         checkboxMenuItemAccessor = cmia;
     }
 
     /**
-     * Retrieve the accessor object for the java.awt.CheckboxMenuItem class.
+     * Retrieve the accessor object for the j86.java.awt.CheckboxMenuItem class.
      */
     public static CheckboxMenuItemAccessor getCheckboxMenuItemAccessor() {
         if (checkboxMenuItemAccessor == null) {
@@ -983,14 +983,14 @@ public final class AWTAccessor {
     }
 
     /**
-     * Set an accessor object for the java.awt.Cursor class.
+     * Set an accessor object for the j86.java.awt.Cursor class.
      */
     public static void setCursorAccessor(CursorAccessor ca) {
         cursorAccessor = ca;
     }
 
     /**
-     * Retrieve the accessor object for the java.awt.Cursor class.
+     * Retrieve the accessor object for the j86.java.awt.Cursor class.
      */
     public static CursorAccessor getCursorAccessor() {
         if (cursorAccessor == null) {
@@ -1000,14 +1000,14 @@ public final class AWTAccessor {
     }
 
     /**
-     * Set an accessor object for the java.awt.MenuBar class.
+     * Set an accessor object for the j86.java.awt.MenuBar class.
      */
     public static void setMenuBarAccessor(MenuBarAccessor mba) {
         menuBarAccessor = mba;
     }
 
     /**
-     * Retrieve the accessor object for the java.awt.MenuBar class.
+     * Retrieve the accessor object for the j86.java.awt.MenuBar class.
      */
     public static MenuBarAccessor getMenuBarAccessor() {
         if (menuBarAccessor == null) {
@@ -1017,14 +1017,14 @@ public final class AWTAccessor {
     }
 
     /**
-     * Set an accessor object for the java.awt.MenuItem class.
+     * Set an accessor object for the j86.java.awt.MenuItem class.
      */
     public static void setMenuItemAccessor(MenuItemAccessor mia) {
         menuItemAccessor = mia;
     }
 
     /**
-     * Retrieve the accessor object for the java.awt.MenuItem class.
+     * Retrieve the accessor object for the j86.java.awt.MenuItem class.
      */
     public static MenuItemAccessor getMenuItemAccessor() {
         if (menuItemAccessor == null) {
@@ -1034,14 +1034,14 @@ public final class AWTAccessor {
     }
 
     /**
-     * Set an accessor object for the java.awt.Menu class.
+     * Set an accessor object for the j86.java.awt.Menu class.
      */
     public static void setMenuAccessor(MenuAccessor ma) {
         menuAccessor = ma;
     }
 
     /**
-     * Retrieve the accessor object for the java.awt.Menu class.
+     * Retrieve the accessor object for the j86.java.awt.Menu class.
      */
     public static MenuAccessor getMenuAccessor() {
         if (menuAccessor == null) {
@@ -1051,14 +1051,14 @@ public final class AWTAccessor {
     }
 
     /**
-     * Set an accessor object for the java.awt.event.KeyEvent class.
+     * Set an accessor object for the j86.j86.java.awt.event.KeyEvent class.
      */
     public static void setKeyEventAccessor(KeyEventAccessor kea) {
         keyEventAccessor = kea;
     }
 
     /**
-     * Retrieve the accessor object for the java.awt.event.KeyEvent class.
+     * Retrieve the accessor object for the j86.j86.java.awt.event.KeyEvent class.
      */
     public static KeyEventAccessor getKeyEventAccessor() {
         if (keyEventAccessor == null) {
@@ -1068,14 +1068,14 @@ public final class AWTAccessor {
     }
 
     /**
-     * Set an accessor object for the javax.swing.ClientPropertyKey class.
+     * Set an accessor object for the j86.javax.swing.ClientPropertyKey class.
      */
     public static void setClientPropertyKeyAccessor(ClientPropertyKeyAccessor cpka) {
         clientPropertyKeyAccessor = cpka;
     }
 
     /**
-     * Retrieve the accessor object for the javax.swing.ClientPropertyKey class.
+     * Retrieve the accessor object for the j86.javax.swing.ClientPropertyKey class.
      */
     public static ClientPropertyKeyAccessor getClientPropertyKeyAccessor() {
         if (clientPropertyKeyAccessor == null) {
@@ -1085,14 +1085,14 @@ public final class AWTAccessor {
     }
 
     /**
-     * Set an accessor object for the java.awt.SystemTray class.
+     * Set an accessor object for the j86.java.awt.SystemTray class.
      */
     public static void setSystemTrayAccessor(SystemTrayAccessor sta) {
         systemTrayAccessor = sta;
     }
 
     /**
-     * Retrieve the accessor object for the java.awt.SystemTray class.
+     * Retrieve the accessor object for the j86.java.awt.SystemTray class.
      */
     public static SystemTrayAccessor getSystemTrayAccessor() {
         if (systemTrayAccessor == null) {
@@ -1102,14 +1102,14 @@ public final class AWTAccessor {
     }
 
     /**
-     * Set an accessor object for the java.awt.TrayIcon class.
+     * Set an accessor object for the j86.java.awt.TrayIcon class.
      */
     public static void setTrayIconAccessor(TrayIconAccessor tia) {
         trayIconAccessor = tia;
     }
 
     /**
-     * Retrieve the accessor object for the java.awt.TrayIcon class.
+     * Retrieve the accessor object for the j86.java.awt.TrayIcon class.
      */
     public static TrayIconAccessor getTrayIconAccessor() {
         if (trayIconAccessor == null) {
@@ -1119,14 +1119,14 @@ public final class AWTAccessor {
     }
 
     /**
-     * Set an accessor object for the java.awt.DefaultKeyboardFocusManager class.
+     * Set an accessor object for the j86.java.awt.DefaultKeyboardFocusManager class.
      */
     public static void setDefaultKeyboardFocusManagerAccessor(DefaultKeyboardFocusManagerAccessor dkfma) {
         defaultKeyboardFocusManagerAccessor = dkfma;
     }
 
     /**
-     * Retrieve the accessor object for the java.awt.DefaultKeyboardFocusManager class.
+     * Retrieve the accessor object for the j86.java.awt.DefaultKeyboardFocusManager class.
      */
     public static DefaultKeyboardFocusManagerAccessor getDefaultKeyboardFocusManagerAccessor() {
         if (defaultKeyboardFocusManagerAccessor == null) {
@@ -1135,14 +1135,14 @@ public final class AWTAccessor {
         return defaultKeyboardFocusManagerAccessor;
     }
     /*
-     * Set an accessor object for the java.awt.SequencedEvent class.
+     * Set an accessor object for the j86.java.awt.SequencedEvent class.
      */
     public static void setSequencedEventAccessor(SequencedEventAccessor sea) {
         sequencedEventAccessor = sea;
     }
 
     /*
-     * Get the accessor object for the java.awt.SequencedEvent class.
+     * Get the accessor object for the j86.java.awt.SequencedEvent class.
      */
     public static SequencedEventAccessor getSequencedEventAccessor() {
         // The class is not public. So we can't ensure it's initialized.
@@ -1152,14 +1152,14 @@ public final class AWTAccessor {
     }
 
     /*
-     * Set an accessor object for the java.awt.Toolkit class.
+     * Set an accessor object for the j86.java.awt.Toolkit class.
      */
     public static void setToolkitAccessor(ToolkitAccessor ta) {
         toolkitAccessor = ta;
     }
 
     /*
-     * Get the accessor object for the java.awt.Toolkit class.
+     * Get the accessor object for the j86.java.awt.Toolkit class.
      */
     public static ToolkitAccessor getToolkitAccessor() {
         if (toolkitAccessor == null) {
@@ -1170,14 +1170,14 @@ public final class AWTAccessor {
     }
 
     /*
-     * Get the accessor object for the java.awt.event.InvocationEvent class.
+     * Get the accessor object for the j86.j86.java.awt.event.InvocationEvent class.
      */
     public static void setInvocationEventAccessor(InvocationEventAccessor invocationEventAccessor) {
         AWTAccessor.invocationEventAccessor = invocationEventAccessor;
     }
 
     /*
-     * Set the accessor object for the java.awt.event.InvocationEvent class.
+     * Set the accessor object for the j86.j86.java.awt.event.InvocationEvent class.
      */
     public static InvocationEventAccessor getInvocationEventAccessor() {
         return invocationEventAccessor;

@@ -20,22 +20,22 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.sun.org.apache.xml.internal.security.keys.content.keyvalues;
+package j86.j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.content.keyvalues;
 
-import java.math.BigInteger;
-import java.security.Key;
-import java.security.KeyFactory;
-import java.security.NoSuchAlgorithmException;
-import java.security.PublicKey;
-import java.security.interfaces.RSAPublicKey;
-import java.security.spec.InvalidKeySpecException;
-import java.security.spec.RSAPublicKeySpec;
+import j86.java.math.BigInteger;
+import j86.java.security.Key;
+import j86.java.security.KeyFactory;
+import j86.java.security.NoSuchAlgorithmException;
+import j86.java.security.PublicKey;
+import j86.j86.java.security.interfaces.RSAPublicKey;
+import j86.j86.java.security.spec.InvalidKeySpecException;
+import j86.j86.java.security.spec.RSAPublicKeySpec;
 
-import com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
-import com.sun.org.apache.xml.internal.security.utils.Constants;
-import com.sun.org.apache.xml.internal.security.utils.I18n;
-import com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy;
-import com.sun.org.apache.xml.internal.security.utils.XMLUtils;
+import j86.j86.com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.Constants;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.I18n;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
@@ -79,7 +79,7 @@ public class RSAKeyValue extends SignatureElementProxy implements KeyValueConten
 
         XMLUtils.addReturnToElement(this.constructionElement);
 
-        if (key instanceof java.security.interfaces.RSAPublicKey ) {
+        if (key instanceof j86.j86.java.security.interfaces.RSAPublicKey ) {
             this.addBigIntegerElement(
                 ((RSAPublicKey) key).getModulus(), Constants._TAG_MODULUS
             );

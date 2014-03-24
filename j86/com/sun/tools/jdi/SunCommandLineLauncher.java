@@ -23,17 +23,17 @@
  * questions.
  */
 
-package com.sun.tools.jdi;
+package j86.com.sun.tools.jdi;
 
-import com.sun.tools.jdi.*;
-import com.sun.jdi.connect.*;
-import com.sun.jdi.connect.spi.*;
-import com.sun.jdi.VirtualMachine;
-import java.util.Map;
-import java.util.HashMap;
-import java.util.Random;
-import java.io.IOException;
-import java.io.File;
+import j86.com.sun.tools.jdi.*;
+import j86.j86.com.sun.jdi.connect.*;
+import j86.j86.j86.com.sun.jdi.connect.spi.*;
+import j86.com.sun.jdi.VirtualMachine;
+import j86.java.util.Map;
+import j86.java.util.HashMap;
+import j86.java.util.Random;
+import j86.java.io.IOException;
+import j86.java.io.File;
 
 public class SunCommandLineLauncher extends AbstractLauncher implements LaunchingConnector {
 
@@ -64,7 +64,7 @@ public class SunCommandLineLauncher extends AbstractLauncher implements Launchin
          * transport or the socket transport
          */
         try {
-            Class<?> c = Class.forName("com.sun.tools.jdi.SharedMemoryTransportService");
+            Class<?> c = Class.forName("j86.com.sun.tools.jdi.SharedMemoryTransportService");
             transportService = (TransportService)c.newInstance();
             transport = new Transport() {
                 public String name() {
@@ -230,7 +230,7 @@ public class SunCommandLineLauncher extends AbstractLauncher implements Launchin
     }
 
     public String name() {
-        return "com.sun.jdi.CommandLineLaunch";
+        return "j86.com.sun.jdi.CommandLineLaunch";
     }
 
     public String description() {

@@ -23,15 +23,15 @@
  * questions.
  */
 
-package java.lang;
+package j86.java.lang;
 
-import java.lang.ClassValue.ClassValueMap;
-import java.util.WeakHashMap;
-import java.lang.ref.WeakReference;
-import java.util.concurrent.atomic.AtomicInteger;
+import j86.java.lang.ClassValue.ClassValueMap;
+import j86.java.util.WeakHashMap;
+import j86.j86.java.lang.ref.WeakReference;
+import j86.j86.j86.java.util.concurrent.atomic.AtomicInteger;
 
-import static java.lang.ClassValue.ClassValueMap.probeHomeLocation;
-import static java.lang.ClassValue.ClassValueMap.probeBackupLocations;
+import static j86.java.lang.ClassValue.ClassValueMap.probeHomeLocation;
+import static j86.java.lang.ClassValue.ClassValueMap.probeBackupLocations;
 
 /**
  * Lazily associate a computed value with (potentially) every type.

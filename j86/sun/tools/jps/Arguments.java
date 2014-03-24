@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.tools.jps;
+package j86.sun.tools.jps;
 
-import java.io.*;
-import java.net.*;
-import sun.jvmstat.monitor.*;
+import j86.java.io.*;
+import j86.java.net.*;
+import j86.sun.jvmstat.monitor.*;
 
 /**
  * Class for processing command line arguments and providing method

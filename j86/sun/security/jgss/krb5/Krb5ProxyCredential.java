@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.security.jgss.krb5;
+package j86.j86.sun.security.jgss.krb5;
 
-import org.ietf.jgss.*;
-import sun.security.jgss.spi.*;
-import java.util.Date;
-import sun.security.krb5.internal.Ticket;
+import j86.org.ietf.jgss.*;
+import j86.j86.sun.security.jgss.spi.*;
+import j86.java.util.Date;
+import j86.j86.sun.security.krb5.internal.Ticket;
 
 /**
  * Implements the krb5 proxy credential element used in constrained
@@ -90,7 +90,7 @@ public class Krb5ProxyCredential
     }
 
     @Override
-    public final java.security.Provider getProvider() {
+    public final j86.java.security.Provider getProvider() {
         return Krb5MechFactory.PROVIDER;
     }
 
@@ -98,7 +98,7 @@ public class Krb5ProxyCredential
     public void dispose() throws GSSException {
         try {
             self.destroy();
-        } catch (javax.security.auth.DestroyFailedException e) {
+        } catch (j86.javax.security.auth.DestroyFailedException e) {
             GSSException gssException =
                 new GSSException(GSSException.FAILURE, -1,
                  "Could not destroy credentials - " + e.getMessage());

@@ -20,21 +20,21 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.sun.org.apache.xml.internal.security.utils;
+package j86.j86.com.sun.org.apache.xml.internal.security.utils;
 
-import java.io.IOException;
-import java.io.OutputStream;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Set;
+import j86.java.io.IOException;
+import j86.java.io.OutputStream;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.util.ArrayList;
+import j86.java.util.HashSet;
+import j86.java.util.Iterator;
+import j86.java.util.List;
+import j86.java.util.Set;
 
-import com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
-import com.sun.org.apache.xml.internal.security.c14n.Canonicalizer;
-import com.sun.org.apache.xml.internal.security.c14n.InvalidCanonicalizerException;
+import j86.j86.com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
+import j86.j86.com.sun.org.apache.xml.internal.security.c14n.Canonicalizer;
+import j86.j86.com.sun.org.apache.xml.internal.security.c14n.InvalidCanonicalizerException;
 import org.w3c.dom.Attr;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -55,7 +55,7 @@ public class XMLUtils {
         AccessController.doPrivileged(new PrivilegedAction<Boolean>() {
             public Boolean run() {
                 return Boolean.valueOf(Boolean.getBoolean
-                    ("com.sun.org.apache.xml.internal.security.ignoreLineBreaks"));
+                    ("j86.com.sun.org.apache.xml.internal.security.ignoreLineBreaks"));
             }
         }).booleanValue();
 
@@ -65,8 +65,8 @@ public class XMLUtils {
     private static volatile String xenc11Prefix = "xenc11";
 
     /** {@link org.apache.commons.logging} logging facility */
-    private static final java.util.logging.Logger log =
-        java.util.logging.Logger.getLogger(XMLUtils.class.getName());
+    private static final j86.j86.java.util.logging.Logger log =
+        j86.j86.java.util.logging.Logger.getLogger(XMLUtils.class.getName());
 
 
     /**
@@ -203,17 +203,17 @@ public class XMLUtils {
                 Canonicalizer.ALGO_ID_C14N_WITH_COMMENTS).canonicalizeSubtree(contextNode)
             );
         } catch (IOException ex) {
-            if (log.isLoggable(java.util.logging.Level.FINE)) {
-                log.log(java.util.logging.Level.FINE, ex.getMessage(), ex);
+            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                log.log(j86.j86.java.util.logging.Level.FINE, ex.getMessage(), ex);
             }
         }
         catch (InvalidCanonicalizerException ex) {
-            if (log.isLoggable(java.util.logging.Level.FINE)) {
-                log.log(java.util.logging.Level.FINE, ex.getMessage(), ex);
+            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                log.log(j86.j86.java.util.logging.Level.FINE, ex.getMessage(), ex);
             }
         } catch (CanonicalizationException ex) {
-            if (log.isLoggable(java.util.logging.Level.FINE)) {
-                log.log(java.util.logging.Level.FINE, ex.getMessage(), ex);
+            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                log.log(j86.j86.java.util.logging.Level.FINE, ex.getMessage(), ex);
             }
         }
     }
@@ -237,18 +237,18 @@ public class XMLUtils {
                 Canonicalizer.ALGO_ID_C14N_WITH_COMMENTS).canonicalizeSubtree(contextNode)
             );
         } catch (IOException ex) {
-            if (log.isLoggable(java.util.logging.Level.FINE)) {
-                log.log(java.util.logging.Level.FINE, ex.getMessage(), ex);
+            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                log.log(j86.j86.java.util.logging.Level.FINE, ex.getMessage(), ex);
             }
             // throw new RuntimeException(ex.getMessage());
         } catch (InvalidCanonicalizerException ex) {
-            if (log.isLoggable(java.util.logging.Level.FINE)) {
-                log.log(java.util.logging.Level.FINE, ex.getMessage(), ex);
+            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                log.log(j86.j86.java.util.logging.Level.FINE, ex.getMessage(), ex);
             }
             // throw new RuntimeException(ex.getMessage());
         } catch (CanonicalizationException ex) {
-            if (log.isLoggable(java.util.logging.Level.FINE)) {
-                log.log(java.util.logging.Level.FINE, ex.getMessage(), ex);
+            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                log.log(j86.j86.java.util.logging.Level.FINE, ex.getMessage(), ex);
             }
             // throw new RuntimeException(ex.getMessage());
         }
@@ -939,7 +939,7 @@ public class XMLUtils {
                                 // Continue searching to find duplicates
                                 foundElement = attr.getOwnerElement();
                             } else {
-                                log.log(java.util.logging.Level.FINE, "Multiple elements with the same 'Id' attribute value!");
+                                log.log(j86.j86.java.util.logging.Level.FINE, "Multiple elements with the same 'Id' attribute value!");
                                 return false;
                             }
                         }
@@ -995,7 +995,7 @@ public class XMLUtils {
                     for (int i = 0; i < attributes.getLength(); i++) {
                         Attr attr = (Attr)attributes.item(i);
                         if (attr.isId() && id.equals(attr.getValue()) && se != knownElement) {
-                            log.log(java.util.logging.Level.FINE, "Multiple elements with the same 'Id' attribute value!");
+                            log.log(j86.j86.java.util.logging.Level.FINE, "Multiple elements with the same 'Id' attribute value!");
                             return false;
                         }
                     }

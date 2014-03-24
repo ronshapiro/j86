@@ -22,14 +22,14 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing;
+package j86.javax.swing;
 
-import java.awt.Component;
-import java.awt.Container;
-import java.awt.Window;
-import java.util.*;
-import java.awt.FocusTraversalPolicy;
-import sun.util.logging.PlatformLogger;
+import j86.java.awt.Component;
+import j86.java.awt.Container;
+import j86.java.awt.Window;
+import j86.java.util.*;
+import j86.java.awt.FocusTraversalPolicy;
+import j86.j86.sun.util.logging.PlatformLogger;
 
 /**
  * A FocusTraversalPolicy that determines traversal order by sorting the
@@ -48,14 +48,14 @@ import sun.util.logging.PlatformLogger;
  * behavior by overriding the <code>accept</code> method.
  * <p>
  * This policy takes into account <a
- * href="../../java/awt/doc-files/FocusSpec.html#FocusTraversalPolicyProviders">focus traversal
+ * href="../../j86.java.awt/doc-files/FocusSpec.html#FocusTraversalPolicyProviders">focus traversal
  * policy providers</a>.  When searching for first/last/next/previous Component,
  * if a focus traversal policy provider is encountered, its focus traversal
  * policy is used to perform the search operation.
  *
  * @author David Mendenhall
  *
- * @see java.util.Comparator
+ * @see j86.java.util.Comparator
  * @since 1.4
  */
 public class SortingFocusTraversalPolicy
@@ -64,7 +64,7 @@ public class SortingFocusTraversalPolicy
     private Comparator<? super Component> comparator;
     private boolean implicitDownCycleTraversal = true;
 
-    private PlatformLogger log = PlatformLogger.getLogger("javax.swing.SortingFocusTraversalPolicy");
+    private PlatformLogger log = PlatformLogger.getLogger("j86.javax.swing.SortingFocusTraversalPolicy");
 
     /**
      * Used by getComponentAfter and getComponentBefore for efficiency. In
@@ -223,7 +223,7 @@ public class SortingFocusTraversalPolicy
      * default Component to focus. This behavior can be disabled using the
      * <code>setImplicitDownCycleTraversal</code> method.
      * <p>
-     * If aContainer is <a href="../../java/awt/doc-files/FocusSpec.html#FocusTraversalPolicyProviders">focus
+     * If aContainer is <a href="../../j86.java.awt/doc-files/FocusSpec.html#FocusTraversalPolicyProviders">focus
      * traversal policy provider</a>, the focus is always transferred down-cycle.
      *
      * @param aContainer a focus cycle root of aComponent or a focus traversal policy provider
@@ -327,7 +327,7 @@ public class SortingFocusTraversalPolicy
      * default Component to focus. This behavior can be disabled using the
      * <code>setImplicitDownCycleTraversal</code> method.
      * <p>
-     * If aContainer is <a href="../../java/awt/doc-files/FocusSpec.html#FocusTraversalPolicyProviders">focus
+     * If aContainer is <a href="../../j86.java.awt/doc-files/FocusSpec.html#FocusTraversalPolicyProviders">focus
      * traversal policy provider</a>, the focus is always transferred down-cycle.
      *
      * @param aContainer a focus cycle root of aComponent or a focus traversal policy provider
@@ -608,7 +608,7 @@ public class SortingFocusTraversalPolicy
 // Create our own subclass and change accept to public so that we can call
 // accept.
 class SwingContainerOrderFocusTraversalPolicy
-    extends java.awt.ContainerOrderFocusTraversalPolicy
+    extends j86.java.awt.ContainerOrderFocusTraversalPolicy
 {
     public boolean accept(Component aComponent) {
         return super.accept(aComponent);

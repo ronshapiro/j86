@@ -35,16 +35,16 @@ questions.
 Standard (Plug-in Neutral) Metadata Format Specification
 </h1></center>
 
-<p> The plug-in neutral "javax_imageio_1.0" format consists
-of a root node named "javax_imageio_1.0" which has child
+<p> The plug-in neutral "j86.javax.imageio_1.0" format consists
+of a root node named "j86.javax.imageio_1.0" which has child
 nodes "chroma", "compression", "dimension", "document", "text",
 "tile", and "transparency".  The format is described by the
 following DTD:
 
 <pre>
-&lt;!DOCTYPE "javax_imageio_1.0" [
+&lt;!DOCTYPE "j86.javax.imageio_1.0" [
 
-  &lt;!ELEMENT "javax_imageio_1.0" (Chroma?, Compression?, Data?, Dimension?, 
+  &lt;!ELEMENT "j86.javax.imageio_1.0" (Chroma?, Compression?, Data?, Dimension?, 
     Document?, Text?, Transparency?)&gt;
 
     &lt;!ELEMENT "Chroma" (ColorSpaceType?, NumChannels?, Gamma?, 

@@ -23,32 +23,32 @@
  * questions.
  */
 
-package sun.security.ssl;
+package j86.sun.security.ssl;
 
-import java.io.*;
-import java.math.BigInteger;
-import java.security.*;
-import java.security.interfaces.*;
-import java.security.spec.*;
-import java.security.cert.*;
-import java.security.cert.Certificate;
-import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
+import j86.java.io.*;
+import j86.java.math.BigInteger;
+import j86.java.security.*;
+import j86.j86.java.security.interfaces.*;
+import j86.j86.java.security.spec.*;
+import j86.j86.java.security.cert.*;
+import j86.j86.java.security.cert.Certificate;
+import j86.java.util.*;
+import j86.j86.java.util.concurrent.ConcurrentHashMap;
 
-import java.lang.reflect.*;
+import j86.j86.j86.java.lang.reflect.*;
 
-import javax.security.auth.x500.X500Principal;
+import j86.j86.javax.security.auth.x500.X500Principal;
 
-import javax.crypto.KeyGenerator;
-import javax.crypto.SecretKey;
-import javax.crypto.spec.DHPublicKeySpec;
+import j86.javax.crypto.KeyGenerator;
+import j86.javax.crypto.SecretKey;
+import j86.j86.javax.crypto.spec.DHPublicKeySpec;
 
-import javax.net.ssl.*;
+import j86.j86.javax.net.ssl.*;
 
-import sun.security.internal.spec.TlsPrfParameterSpec;
-import sun.security.ssl.CipherSuite.*;
-import static sun.security.ssl.CipherSuite.PRF.*;
-import sun.security.util.KeyUtil;
+import j86.sun.security.internal.spec.TlsPrfParameterSpec;
+import j86.sun.security.ssl.CipherSuite.*;
+import static j86.sun.security.ssl.CipherSuite.PRF.*;
+import j86.sun.security.util.KeyUtil;
 
 /**
  * Many data structures are involved in the handshake messages.  These
@@ -692,7 +692,7 @@ class DH_ServerKeyExchange extends ServerKeyExchange
 {
     // Fix message encoding, see 4348279
     private final static boolean dhKeyExchangeFix =
-        Debug.getBooleanProperty("com.sun.net.ssl.dhKeyExchangeFix", true);
+        Debug.getBooleanProperty("com.j86.sun.net.ssl.dhKeyExchangeFix", true);
 
     private byte                dh_p [];        // 1 to 2^16 - 1 bytes
     private byte                dh_g [];        // 1 to 2^16 - 1 bytes
@@ -1738,7 +1738,7 @@ static final class CertificateVerify extends HandshakeMessage {
 
     static {
         try {
-            delegate = Class.forName("java.security.MessageDigest$Delegate");
+            delegate = Class.forName("j86.java.security.MessageDigest$Delegate");
             spiField = delegate.getDeclaredField("digestSpi");
         } catch (Exception e) {
             throw new RuntimeException("Reflection failed", e);

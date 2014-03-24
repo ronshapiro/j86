@@ -27,12 +27,12 @@
  * (C) Copyright IBM Corp. 1998-2003 All Rights Reserved
  */
 
-package sun.font;
+package j86.sun.font;
 
-import java.awt.Graphics2D;
-import java.awt.Shape;
+import j86.java.awt.Graphics2D;
+import j86.java.awt.Shape;
 
-import java.awt.geom.Rectangle2D;
+import j86.j86.java.awt.geom.Rectangle2D;
 
 /**
  * A label.

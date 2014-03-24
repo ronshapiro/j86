@@ -23,15 +23,15 @@
  * questions.
  */
 
-package java.nio.file;
+package j86.j86.java.nio.file;
 
-import java.nio.file.attribute.BasicFileAttributes;
-import java.io.Closeable;
-import java.io.IOException;
-import java.util.ArrayDeque;
-import java.util.Collection;
-import java.util.Iterator;
-import sun.nio.fs.BasicFileAttributesHolder;
+import j86.j86.j86.java.nio.file.attribute.BasicFileAttributes;
+import j86.java.io.Closeable;
+import j86.java.io.IOException;
+import j86.java.util.ArrayDeque;
+import j86.java.util.Collection;
+import j86.java.util.Iterator;
+import j86.j86.sun.nio.fs.BasicFileAttributesHolder;
 
 /**
  * Walks a file tree, generating a sequence of events corresponding to the files

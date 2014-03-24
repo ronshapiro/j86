@@ -23,27 +23,27 @@
  * questions.
  */
 
-package sun.security.jgss.krb5;
+package j86.j86.sun.security.jgss.krb5;
 
-import javax.crypto.Cipher;
-import javax.crypto.SecretKey;
-import javax.crypto.spec.IvParameterSpec;
-import javax.crypto.spec.SecretKeySpec;
-import javax.crypto.CipherInputStream;
-import javax.crypto.CipherOutputStream;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.IOException;
-import org.ietf.jgss.*;
+import j86.javax.crypto.Cipher;
+import j86.javax.crypto.SecretKey;
+import j86.j86.javax.crypto.spec.IvParameterSpec;
+import j86.j86.javax.crypto.spec.SecretKeySpec;
+import j86.javax.crypto.CipherInputStream;
+import j86.javax.crypto.CipherOutputStream;
+import j86.java.io.InputStream;
+import j86.java.io.OutputStream;
+import j86.java.io.IOException;
+import j86.org.ietf.jgss.*;
 
-import java.security.MessageDigest;
-import java.security.GeneralSecurityException;
-import java.security.NoSuchAlgorithmException;
-import sun.security.krb5.*;
-import sun.security.krb5.internal.crypto.Des3;
-import sun.security.krb5.internal.crypto.Aes128;
-import sun.security.krb5.internal.crypto.Aes256;
-import sun.security.krb5.internal.crypto.ArcFourHmac;
+import j86.java.security.MessageDigest;
+import j86.java.security.GeneralSecurityException;
+import j86.java.security.NoSuchAlgorithmException;
+import j86.sun.security.krb5.*;
+import j86.j86.j86.sun.security.krb5.internal.crypto.Des3;
+import j86.j86.j86.sun.security.krb5.internal.crypto.Aes128;
+import j86.j86.j86.sun.security.krb5.internal.crypto.Aes256;
+import j86.j86.j86.sun.security.krb5.internal.crypto.ArcFourHmac;
 
 class CipherHelper {
 

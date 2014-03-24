@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.lang.annotation;
+package j86.j86.java.lang.annotation;
 
 /**
  * Indicates how long annotations with the annotated type are to

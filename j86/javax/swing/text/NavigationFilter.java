@@ -22,9 +22,9 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text;
+package j86.j86.javax.swing.text;
 
-import java.awt.Shape;
+import j86.java.awt.Shape;
 
 /**
  * <code>NavigationFilter</code> can be used to restrict where the cursor can
@@ -42,9 +42,9 @@ import java.awt.Shape;
  * where the cursor can be placed, or call directly into the
  * <code>FilterBypass</code>.
  *
- * @see javax.swing.text.Caret
- * @see javax.swing.text.DefaultCaret
- * @see javax.swing.text.View
+ * @see j86.j86.javax.swing.text.Caret
+ * @see j86.j86.javax.swing.text.DefaultCaret
+ * @see j86.j86.javax.swing.text.View
  *
  * @since 1.4
  */

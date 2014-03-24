@@ -23,10 +23,10 @@
  * questions.
  */
 
-package com.sun.naming.internal;
+package j86.com.sun.naming.internal;
 
-import java.util.List;
-import javax.naming.NamingException;
+import j86.java.util.List;
+import j86.javax.naming.NamingException;
 
 /**
   * The FactoryEnumeration is used for returning factory instances.

@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.awt.print;
+package j86.j86.java.awt.print;
 
-import java.util.Vector;
+import j86.java.util.Vector;
 
 /**
  * The <code>Book</code> class provides a representation of a document in

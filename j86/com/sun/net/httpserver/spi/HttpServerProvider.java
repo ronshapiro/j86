@@ -23,16 +23,16 @@
  * questions.
  */
 
-package com.sun.net.httpserver.spi;
+package j86.com.j86.j86.sun.net.httpserver.spi;
 
-import java.io.IOException;
-import java.net.*;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.util.Iterator;
-import java.util.ServiceLoader;
-import java.util.ServiceConfigurationError;
-import com.sun.net.httpserver.*;
+import j86.java.io.IOException;
+import j86.java.net.*;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.util.Iterator;
+import j86.java.util.ServiceLoader;
+import j86.java.util.ServiceConfigurationError;
+import com.j86.j86.sun.net.httpserver.*;
 
 /**
  * Service provider class for HttpServer.
@@ -86,7 +86,7 @@ public abstract class HttpServerProvider {
     }
 
     private static boolean loadProviderFromProperty() {
-        String cn = System.getProperty("com.sun.net.httpserver.HttpServerProvider");
+        String cn = System.getProperty("com.j86.j86.sun.net.httpserver.HttpServerProvider");
         if (cn == null)
             return false;
         try {
@@ -133,7 +133,7 @@ public abstract class HttpServerProvider {
      * <ol>
      *
      *   <li><p> If the system property
-     *   {@code com.sun.net.httpserver.HttpServerProvider} is defined then it
+     *   {@code com.j86.j86.sun.net.httpserver.HttpServerProvider} is defined then it
      *   is taken to be the fully-qualified name of a concrete provider class.
      *   The class is loaded and instantiated; if this process fails then an
      *   unspecified unchecked error or exception is thrown.  </p></li>
@@ -141,7 +141,7 @@ public abstract class HttpServerProvider {
      *   <li><p> If a provider class has been installed in a jar file that is
      *   visible to the system class loader, and that jar file contains a
      *   provider-configuration file named
-     *   {@code com.sun.net.httpserver.HttpServerProvider} in the resource
+     *   {@code com.j86.j86.sun.net.httpserver.HttpServerProvider} in the resource
      *   directory <tt>META-INF/services</tt>, then the first class name
      *   specified in that file is taken.  The class is loaded and
      *   instantiated; if this process fails then an unspecified unchecked error
@@ -169,7 +169,7 @@ public abstract class HttpServerProvider {
                                 return provider;
                             if (loadProviderAsService())
                                 return provider;
-                            provider = new sun.net.httpserver.DefaultHttpServerProvider();
+                            provider = new j86.j86.sun.net.httpserver.DefaultHttpServerProvider();
                             return provider;
                         }
                     });

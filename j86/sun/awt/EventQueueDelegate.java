@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.awt;
+package j86.sun.awt;
 
-import java.awt.AWTEvent;
-import java.awt.EventQueue;
+import j86.java.awt.AWTEvent;
+import j86.java.awt.EventQueue;
 
 
 public class EventQueueDelegate {

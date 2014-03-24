@@ -22,44 +22,44 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.awt;
+package j86.java.awt;
 
-import java.awt.event.FocusEvent;
-import java.awt.event.InputEvent;
-import java.awt.event.KeyEvent;
-import java.awt.event.WindowEvent;
+import j86.j86.java.awt.event.FocusEvent;
+import j86.j86.java.awt.event.InputEvent;
+import j86.j86.java.awt.event.KeyEvent;
+import j86.j86.java.awt.event.WindowEvent;
 
-import java.awt.peer.KeyboardFocusManagerPeer;
-import java.awt.peer.LightweightPeer;
+import j86.j86.java.awt.peer.KeyboardFocusManagerPeer;
+import j86.j86.java.awt.peer.LightweightPeer;
 
-import java.beans.PropertyChangeListener;
-import java.beans.PropertyChangeSupport;
-import java.beans.PropertyVetoException;
-import java.beans.VetoableChangeListener;
-import java.beans.VetoableChangeSupport;
+import j86.java.beans.PropertyChangeListener;
+import j86.java.beans.PropertyChangeSupport;
+import j86.java.beans.PropertyVetoException;
+import j86.java.beans.VetoableChangeListener;
+import j86.java.beans.VetoableChangeSupport;
 
-import java.lang.ref.WeakReference;
+import j86.j86.java.lang.ref.WeakReference;
 
-import java.lang.reflect.Field;
+import j86.j86.j86.java.lang.reflect.Field;
 
-import java.security.AccessController;
-import java.security.PrivilegedAction;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
 
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.Set;
-import java.util.StringTokenizer;
-import java.util.WeakHashMap;
+import j86.java.util.Collections;
+import j86.java.util.HashSet;
+import j86.java.util.Iterator;
+import j86.java.util.LinkedList;
+import j86.java.util.Set;
+import j86.java.util.StringTokenizer;
+import j86.java.util.WeakHashMap;
 
-import sun.util.logging.PlatformLogger;
+import j86.j86.sun.util.logging.PlatformLogger;
 
-import sun.awt.AppContext;
-import sun.awt.SunToolkit;
-import sun.awt.CausedFocusEvent;
-import sun.awt.KeyboardFocusManagerPeerProvider;
-import sun.awt.AWTAccessor;
+import j86.sun.awt.AppContext;
+import j86.sun.awt.SunToolkit;
+import j86.sun.awt.CausedFocusEvent;
+import j86.sun.awt.KeyboardFocusManagerPeerProvider;
+import j86.sun.awt.AWTAccessor;
 
 /**
  * The KeyboardFocusManager is responsible for managing the active and focused
@@ -91,7 +91,7 @@ import sun.awt.AWTAccessor;
  * <a href="http://docs.oracle.com/javase/tutorial/uiswing/misc/focus.html">
  * How to Use the Focus Subsystem</a>,
  * a section in <em>The Java Tutorial</em>, and the
- * <a href="../../java/awt/doc-files/FocusSpec.html">Focus Specification</a>
+ * <a href="../../j86.java.awt/doc-files/FocusSpec.html">Focus Specification</a>
  * for more information.
  *
  * @author David Mendenhall
@@ -99,9 +99,9 @@ import sun.awt.AWTAccessor;
  * @see Window
  * @see Frame
  * @see Dialog
- * @see java.awt.event.FocusEvent
- * @see java.awt.event.WindowEvent
- * @see java.awt.event.KeyEvent
+ * @see j86.j86.java.awt.event.FocusEvent
+ * @see j86.j86.java.awt.event.WindowEvent
+ * @see j86.j86.java.awt.event.KeyEvent
  * @since 1.4
  */
 public abstract class KeyboardFocusManager
@@ -109,7 +109,7 @@ public abstract class KeyboardFocusManager
 {
 
     // Shared focus engine logger
-    private static final PlatformLogger focusLog = PlatformLogger.getLogger("java.awt.focus.KeyboardFocusManager");
+    private static final PlatformLogger focusLog = PlatformLogger.getLogger("j86.java.awt.focus.KeyboardFocusManager");
 
     static {
         /* ensure that the necessary native libraries are loaded */
@@ -161,7 +161,7 @@ public abstract class KeyboardFocusManager
      */
     private static native void initIDs();
 
-    private static final PlatformLogger log = PlatformLogger.getLogger("java.awt.KeyboardFocusManager");
+    private static final PlatformLogger log = PlatformLogger.getLogger("j86.java.awt.KeyboardFocusManager");
 
     /**
      * The identifier for the Forward focus traversal keys.
@@ -376,7 +376,7 @@ public abstract class KeyboardFocusManager
      * KeyEventDispatchers are registered, this field may be null or refer to
      * a List of length 0.
      */
-    private java.util.LinkedList<KeyEventDispatcher> keyEventDispatchers;
+    private j86.java.util.LinkedList<KeyEventDispatcher> keyEventDispatchers;
 
     /**
      * This KeyboardFocusManager's KeyEventPostProcessor chain. The List does
@@ -385,12 +385,12 @@ public abstract class KeyboardFocusManager
      * If no other KeyEventPostProcessors are registered, this field may be
      * null or refer to a List of length 0.
      */
-    private java.util.LinkedList<KeyEventPostProcessor> keyEventPostProcessors;
+    private j86.java.util.LinkedList<KeyEventPostProcessor> keyEventPostProcessors;
 
     /**
      * Maps Windows to those Windows' most recent focus owners.
      */
-    private static java.util.Map<Window, WeakReference<Component>> mostRecentFocusOwners = new WeakHashMap<>();
+    private static j86.java.util.Map<Window, WeakReference<Component>> mostRecentFocusOwners = new WeakHashMap<>();
 
     /**
      * We cache the permission used to verify that the calling thread is
@@ -589,7 +589,7 @@ public abstract class KeyboardFocusManager
      * active Windows.
      *
      * @see Component#requestFocus()
-     * @see java.awt.event.FocusEvent#FOCUS_LOST
+     * @see j86.j86.java.awt.event.FocusEvent#FOCUS_LOST
      * @since 1.8
      */
     public void clearFocusOwner() {
@@ -618,7 +618,7 @@ public abstract class KeyboardFocusManager
      *
      * @see KeyboardFocusManager#clearFocusOwner
      * @see Component#requestFocus()
-     * @see java.awt.event.FocusEvent#FOCUS_LOST
+     * @see j86.j86.java.awt.event.FocusEvent#FOCUS_LOST
      * @throws SecurityException if the calling thread does not have
      *         "replaceKeyboardFocusManager" permission
      */
@@ -1328,7 +1328,7 @@ public abstract class KeyboardFocusManager
      * @param listener the PropertyChangeListener to be added
      * @see #removePropertyChangeListener
      * @see #getPropertyChangeListeners
-     * @see #addPropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)
+     * @see #addPropertyChangeListener(j86.java.lang.String,j86.java.beans.PropertyChangeListener)
      */
     public void addPropertyChangeListener(PropertyChangeListener listener) {
         if (listener != null) {
@@ -1351,7 +1351,7 @@ public abstract class KeyboardFocusManager
      * @param listener the PropertyChangeListener to be removed
      * @see #addPropertyChangeListener
      * @see #getPropertyChangeListeners
-     * @see #removePropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)
+     * @see #removePropertyChangeListener(j86.java.lang.String,j86.java.beans.PropertyChangeListener)
      */
     public void removePropertyChangeListener(PropertyChangeListener listener) {
         if (listener != null) {
@@ -1374,7 +1374,7 @@ public abstract class KeyboardFocusManager
      *
      * @see #addPropertyChangeListener
      * @see #removePropertyChangeListener
-     * @see #getPropertyChangeListeners(java.lang.String)
+     * @see #getPropertyChangeListeners(j86.java.lang.String)
      * @since 1.4
      */
     public synchronized PropertyChangeListener[] getPropertyChangeListeners() {
@@ -1412,9 +1412,9 @@ public abstract class KeyboardFocusManager
      *
      * @param propertyName one of the property names listed above
      * @param listener the PropertyChangeListener to be added
-     * @see #addPropertyChangeListener(java.beans.PropertyChangeListener)
-     * @see #removePropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)
-     * @see #getPropertyChangeListeners(java.lang.String)
+     * @see #addPropertyChangeListener(j86.java.beans.PropertyChangeListener)
+     * @see #removePropertyChangeListener(j86.java.lang.String,j86.java.beans.PropertyChangeListener)
+     * @see #getPropertyChangeListeners(j86.java.lang.String)
      */
     public void addPropertyChangeListener(String propertyName,
                                           PropertyChangeListener listener) {
@@ -1438,9 +1438,9 @@ public abstract class KeyboardFocusManager
      *
      * @param propertyName a valid property name
      * @param listener the PropertyChangeListener to be removed
-     * @see #addPropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)
-     * @see #getPropertyChangeListeners(java.lang.String)
-     * @see #removePropertyChangeListener(java.beans.PropertyChangeListener)
+     * @see #addPropertyChangeListener(j86.java.lang.String,j86.java.beans.PropertyChangeListener)
+     * @see #getPropertyChangeListeners(j86.java.lang.String)
+     * @see #removePropertyChangeListener(j86.java.beans.PropertyChangeListener)
      */
     public void removePropertyChangeListener(String propertyName,
                                              PropertyChangeListener listener) {
@@ -1462,8 +1462,8 @@ public abstract class KeyboardFocusManager
      *         the named property or an empty array if no such listeners have
      *         been added.
      *
-     * @see #addPropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)
-     * @see #removePropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)
+     * @see #addPropertyChangeListener(j86.java.lang.String,j86.java.beans.PropertyChangeListener)
+     * @see #removePropertyChangeListener(j86.java.lang.String,j86.java.beans.PropertyChangeListener)
      * @since 1.4
      */
     public synchronized PropertyChangeListener[] getPropertyChangeListeners(String propertyName) {
@@ -1509,7 +1509,7 @@ public abstract class KeyboardFocusManager
      * @param listener the VetoableChangeListener to be added
      * @see #removeVetoableChangeListener
      * @see #getVetoableChangeListeners
-     * @see #addVetoableChangeListener(java.lang.String,java.beans.VetoableChangeListener)
+     * @see #addVetoableChangeListener(j86.java.lang.String,j86.java.beans.VetoableChangeListener)
      */
     public void addVetoableChangeListener(VetoableChangeListener listener) {
         if (listener != null) {
@@ -1533,7 +1533,7 @@ public abstract class KeyboardFocusManager
      * @param listener the VetoableChangeListener to be removed
      * @see #addVetoableChangeListener
      * @see #getVetoableChangeListeners
-     * @see #removeVetoableChangeListener(java.lang.String,java.beans.VetoableChangeListener)
+     * @see #removeVetoableChangeListener(j86.java.lang.String,j86.java.beans.VetoableChangeListener)
      */
     public void removeVetoableChangeListener(VetoableChangeListener listener) {
         if (listener != null) {
@@ -1556,7 +1556,7 @@ public abstract class KeyboardFocusManager
      *
      * @see #addVetoableChangeListener
      * @see #removeVetoableChangeListener
-     * @see #getVetoableChangeListeners(java.lang.String)
+     * @see #getVetoableChangeListeners(j86.java.lang.String)
      * @since 1.4
      */
     public synchronized VetoableChangeListener[] getVetoableChangeListeners() {
@@ -1580,7 +1580,7 @@ public abstract class KeyboardFocusManager
      *
      * @param propertyName one of the property names listed above
      * @param listener the VetoableChangeListener to be added
-     * @see #addVetoableChangeListener(java.beans.VetoableChangeListener)
+     * @see #addVetoableChangeListener(j86.java.beans.VetoableChangeListener)
      * @see #removeVetoableChangeListener
      * @see #getVetoableChangeListeners
      */
@@ -1609,7 +1609,7 @@ public abstract class KeyboardFocusManager
      * @param listener the VetoableChangeListener to be removed
      * @see #addVetoableChangeListener
      * @see #getVetoableChangeListeners
-     * @see #removeVetoableChangeListener(java.beans.VetoableChangeListener)
+     * @see #removeVetoableChangeListener(j86.java.beans.VetoableChangeListener)
      */
     public void removeVetoableChangeListener(String propertyName,
                                              VetoableChangeListener listener) {
@@ -1631,8 +1631,8 @@ public abstract class KeyboardFocusManager
      *         the named property or an empty array if no such listeners have
      *         been added.
      *
-     * @see #addVetoableChangeListener(java.lang.String,java.beans.VetoableChangeListener)
-     * @see #removeVetoableChangeListener(java.lang.String,java.beans.VetoableChangeListener)
+     * @see #addVetoableChangeListener(j86.java.lang.String,j86.java.beans.VetoableChangeListener)
+     * @see #removeVetoableChangeListener(j86.java.lang.String,j86.java.beans.VetoableChangeListener)
      * @see #getVetoableChangeListeners
      * @since 1.4
      */
@@ -1655,7 +1655,7 @@ public abstract class KeyboardFocusManager
      * @param propertyName the name of the property that has changed
      * @param oldValue the property's previous value
      * @param newValue the property's new value
-     * @throws java.beans.PropertyVetoException if a
+     * @throws j86.java.beans.PropertyVetoException if a
      *         <code>VetoableChangeListener</code> threw
      *         <code>PropertyVetoException</code>
      */
@@ -1700,7 +1700,7 @@ public abstract class KeyboardFocusManager
         if (dispatcher != null) {
             synchronized (this) {
                 if (keyEventDispatchers == null) {
-                    keyEventDispatchers = new java.util.LinkedList<>();
+                    keyEventDispatchers = new j86.java.util.LinkedList<>();
                 }
                 keyEventDispatchers.add(dispatcher);
             }
@@ -1750,11 +1750,11 @@ public abstract class KeyboardFocusManager
      * @see #addKeyEventDispatcher
      * @see #removeKeyEventDispatcher
      */
-    protected synchronized java.util.List<KeyEventDispatcher>
+    protected synchronized j86.java.util.List<KeyEventDispatcher>
         getKeyEventDispatchers()
     {
         return (keyEventDispatchers != null)
-            ? (java.util.List)keyEventDispatchers.clone()
+            ? (j86.java.util.List)keyEventDispatchers.clone()
             : null;
     }
 
@@ -1788,7 +1788,7 @@ public abstract class KeyboardFocusManager
         if (processor != null) {
             synchronized (this) {
                 if (keyEventPostProcessors == null) {
-                    keyEventPostProcessors = new java.util.LinkedList<>();
+                    keyEventPostProcessors = new j86.java.util.LinkedList<>();
                 }
                 keyEventPostProcessors.add(processor);
             }
@@ -1841,11 +1841,11 @@ public abstract class KeyboardFocusManager
      * @see #addKeyEventPostProcessor
      * @see #removeKeyEventPostProcessor
      */
-    protected java.util.List<KeyEventPostProcessor>
+    protected j86.java.util.List<KeyEventPostProcessor>
         getKeyEventPostProcessors()
     {
         return (keyEventPostProcessors != null)
-            ? (java.util.List)keyEventPostProcessors.clone()
+            ? (j86.java.util.List)keyEventPostProcessors.clone()
             : null;
     }
 
@@ -1904,7 +1904,7 @@ public abstract class KeyboardFocusManager
 
     /*
      * Please be careful changing this method! It is called from
-     * javax.swing.JComponent.runInputVerifier() using reflection.
+     * j86.javax.swing.JComponent.runInputVerifier() using reflection.
      */
     static synchronized Component getMostRecentFocusOwner(Window window) {
         WeakReference<Component> weakValue =

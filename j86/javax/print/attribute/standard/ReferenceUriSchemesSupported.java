@@ -22,17 +22,17 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.print.attribute.standard;
+package j86.j86.j86.javax.print.attribute.standard;
 
-import javax.print.attribute.EnumSyntax;
-import javax.print.attribute.Attribute;
+import j86.j86.javax.print.attribute.EnumSyntax;
+import j86.j86.javax.print.attribute.Attribute;
 
 /**
  * Class ReferenceUriSchemesSupported is a printing attribute class
  * an enumeration, that indicates a "URI scheme," such as "http:" or "ftp:",
  * that a printer can use to retrieve print data stored at a URI location.
  * If a printer supports doc flavors with a print data representation class of
- * <CODE>"java.net.URL"</CODE>, the printer uses instances of class
+ * <CODE>"j86.java.net.URL"</CODE>, the printer uses instances of class
  * ReferenceUriSchemesSupported to advertise the URI schemes it can accept.
  * The acceptable URI schemes are included as service attributes in the
  * lookup service; this lets clients search the
@@ -160,7 +160,7 @@ public class ReferenceUriSchemesSupported
      * subclasses, the category is class ReferenceUriSchemesSupported itself.
      *
      * @return  Printing attribute class (category), an instance of class
-     *          {@link java.lang.Class java.lang.Class}.
+     *          {@link j86.java.lang.Class java.lang.Class}.
      */
     public final Class<? extends Attribute> getCategory() {
         return ReferenceUriSchemesSupported.class;

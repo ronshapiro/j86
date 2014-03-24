@@ -22,17 +22,17 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.security.provider.certpath;
+package j86.j86.sun.security.provider.certpath;
 
-import java.security.InvalidAlgorithmParameterException;
-import java.security.KeyStore;
-import java.security.PublicKey;
-import java.security.cert.*;
-import java.security.interfaces.DSAPublicKey;
-import java.util.*;
-import javax.security.auth.x500.X500Principal;
+import j86.java.security.InvalidAlgorithmParameterException;
+import j86.java.security.KeyStore;
+import j86.java.security.PublicKey;
+import j86.j86.java.security.cert.*;
+import j86.j86.java.security.interfaces.DSAPublicKey;
+import j86.java.util.*;
+import j86.j86.javax.security.auth.x500.X500Principal;
 
-import sun.security.util.Debug;
+import j86.sun.security.util.Debug;
 
 /**
  * Common utility methods and classes used by the PKIX CertPathValidator and

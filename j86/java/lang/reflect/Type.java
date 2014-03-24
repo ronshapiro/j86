@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.lang.reflect;
+package j86.j86.j86.java.lang.reflect;
 
 /**
  * Type is the common superinterface for all types in the Java

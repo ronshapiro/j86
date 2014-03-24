@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.crypto.spec;
+package j86.j86.javax.crypto.spec;
 
-import java.math.BigInteger;
-import java.security.spec.AlgorithmParameterSpec;
+import j86.java.math.BigInteger;
+import j86.j86.java.security.spec.AlgorithmParameterSpec;
 
 /**
  * This class specifies the set of parameters used with the Diffie-Hellman
@@ -49,7 +49,7 @@ import java.security.spec.AlgorithmParameterSpec;
  *
  * @author Jan Luehe
  *
- * @see javax.crypto.KeyAgreement
+ * @see j86.javax.crypto.KeyAgreement
  * @since 1.4
  */
 public class DHParameterSpec implements AlgorithmParameterSpec {

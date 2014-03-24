@@ -36,25 +36,25 @@
  *
  */
 
-package java.text;
+package j86.java.text;
 
-import java.io.IOException;
-import java.io.InvalidObjectException;
-import java.io.ObjectInputStream;
-import static java.text.DateFormatSymbols.*;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.GregorianCalendar;
-import java.util.Locale;
-import java.util.Map;
-import java.util.SimpleTimeZone;
-import java.util.SortedMap;
-import java.util.TimeZone;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentMap;
-import sun.util.calendar.CalendarUtils;
-import sun.util.calendar.ZoneInfoFile;
-import sun.util.locale.provider.LocaleProviderAdapter;
+import j86.java.io.IOException;
+import j86.java.io.InvalidObjectException;
+import j86.java.io.ObjectInputStream;
+import static j86.java.text.DateFormatSymbols.*;
+import j86.java.util.Calendar;
+import j86.java.util.Date;
+import j86.java.util.GregorianCalendar;
+import j86.java.util.Locale;
+import j86.java.util.Map;
+import j86.java.util.SimpleTimeZone;
+import j86.java.util.SortedMap;
+import j86.java.util.TimeZone;
+import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.j86.java.util.concurrent.ConcurrentMap;
+import j86.j86.sun.util.calendar.CalendarUtils;
+import j86.j86.sun.util.calendar.ZoneInfoFile;
+import j86.j86.j86.sun.util.locale.provider.LocaleProviderAdapter;
 
 /**
  * <code>SimpleDateFormat</code> is a concrete class for formatting and
@@ -268,7 +268,7 @@ import sun.util.locale.provider.LocaleProviderAdapter;
  *     years</a>, the calendar year ({@code 'y'}) is used instead. The
  *     support of week years can be tested with a call to {@link
  *     DateFormat#getCalendar() getCalendar()}.{@link
- *     java.util.Calendar#isWeekDateSupported()
+ *     j86.java.util.Calendar#isWeekDateSupported()
  *     isWeekDateSupported()}.<br><br></li>
  * <li><strong><a name="month">Month:</a></strong>
  *     If the number of pattern letters is 3 or more, the month is
@@ -412,8 +412,8 @@ import sun.util.locale.provider.LocaleProviderAdapter;
  * externally.
  *
  * @see          <a href="http://docs.oracle.com/javase/tutorial/i18n/format/simpleDateFormat.html">Java Tutorial</a>
- * @see          java.util.Calendar
- * @see          java.util.TimeZone
+ * @see          j86.java.util.Calendar
+ * @see          j86.java.util.TimeZone
  * @see          DateFormat
  * @see          DateFormatSymbols
  * @author       Mark Davis, Chen-Lieh Huang, Alan Liu
@@ -489,7 +489,7 @@ public class SimpleDateFormat extends DateFormat {
     /**
      * Locale dependent digit zero.
      * @see #zeroPaddingNumber
-     * @see java.text.DecimalFormatSymbols#getZeroDigit
+     * @see j86.java.text.DecimalFormatSymbols#getZeroDigit
      */
     transient private char zeroDigit;
 
@@ -497,7 +497,7 @@ public class SimpleDateFormat extends DateFormat {
      * The symbols used by this formatter for week names, month names,
      * etc.  May not be null.
      * @serial
-     * @see java.text.DateFormatSymbols
+     * @see j86.java.text.DateFormatSymbols
      */
     private DateFormatSymbols formatData;
 
@@ -547,7 +547,7 @@ public class SimpleDateFormat extends DateFormat {
     /**
      * Constructs a <code>SimpleDateFormat</code> using the default pattern and
      * date format symbols for the default
-     * {@link java.util.Locale.Category#FORMAT FORMAT} locale.
+     * {@link j86.java.util.Locale.Category#FORMAT FORMAT} locale.
      * <b>Note:</b> This constructor may not support all locales.
      * For full coverage, use the factory methods in the {@link DateFormat}
      * class.
@@ -561,7 +561,7 @@ public class SimpleDateFormat extends DateFormat {
     /**
      * Constructs a <code>SimpleDateFormat</code> using the given pattern and
      * the default date format symbols for the default
-     * {@link java.util.Locale.Category#FORMAT FORMAT} locale.
+     * {@link j86.java.util.Locale.Category#FORMAT FORMAT} locale.
      * <b>Note:</b> This constructor may not support all locales.
      * For full coverage, use the factory methods in the {@link DateFormat}
      * class.
@@ -569,8 +569,8 @@ public class SimpleDateFormat extends DateFormat {
      * {@link #SimpleDateFormat(String, Locale)
      *     SimpleDateFormat(pattern, Locale.getDefault(Locale.Category.FORMAT))}.
      *
-     * @see java.util.Locale#getDefault(java.util.Locale.Category)
-     * @see java.util.Locale.Category#FORMAT
+     * @see j86.java.util.Locale#getDefault(java.util.Locale.Category)
+     * @see j86.java.util.Locale.Category#FORMAT
      * @param pattern the pattern describing the date and time format
      * @exception NullPointerException if the given pattern is null
      * @exception IllegalArgumentException if the given pattern is invalid
@@ -1419,7 +1419,7 @@ public class SimpleDateFormat extends DateFormat {
      * TimeZone} value may be overwritten, depending on the given
      * pattern and the time zone value in {@code text}. Any {@code
      * TimeZone} value that has previously been set by a call to
-     * {@link #setTimeZone(java.util.TimeZone) setTimeZone} may need
+     * {@link #setTimeZone(j86.java.util.TimeZone) setTimeZone} may need
      * to be restored for further operations.
      *
      * @param text  A <code>String</code>, part of which should be parsed.

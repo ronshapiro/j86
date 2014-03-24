@@ -23,32 +23,32 @@
  * questions.
  */
 
-package sun.management;
+package j86.sun.management;
 
-import java.lang.management.*;
+import j86.j86.java.lang.management.*;
 
-import javax.management.DynamicMBean;
-import javax.management.InstanceAlreadyExistsException;
-import javax.management.InstanceNotFoundException;
-import javax.management.MBeanServer;
-import javax.management.MBeanRegistrationException;
-import javax.management.NotCompliantMBeanException;
-import javax.management.ObjectName;
-import javax.management.RuntimeOperationsException;
-import java.security.AccessController;
-import java.security.PrivilegedActionException;
-import java.security.PrivilegedExceptionAction;
+import j86.javax.management.DynamicMBean;
+import j86.javax.management.InstanceAlreadyExistsException;
+import j86.javax.management.InstanceNotFoundException;
+import j86.javax.management.MBeanServer;
+import j86.javax.management.MBeanRegistrationException;
+import j86.javax.management.NotCompliantMBeanException;
+import j86.javax.management.ObjectName;
+import j86.javax.management.RuntimeOperationsException;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedActionException;
+import j86.java.security.PrivilegedExceptionAction;
 
-import sun.util.logging.LoggingSupport;
+import j86.j86.sun.util.logging.LoggingSupport;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import com.sun.management.DiagnosticCommandMBean;
-import com.sun.management.HotSpotDiagnosticMXBean;
+import j86.java.util.ArrayList;
+import j86.java.util.Collections;
+import j86.java.util.HashMap;
+import j86.java.util.List;
+import com.j86.sun.management.DiagnosticCommandMBean;
+import com.j86.sun.management.HotSpotDiagnosticMXBean;
 
-import static java.lang.management.ManagementFactory.*;
+import static j86.j86.java.lang.management.ManagementFactory.*;
 
 /**
  * ManagementFactoryHelper provides static factory methods to create
@@ -147,25 +147,25 @@ public class ManagementFactoryHelper {
 
     /**
      * The logging MXBean object is an instance of
-     * PlatformLoggingMXBean and java.util.logging.LoggingMXBean
+     * PlatformLoggingMXBean and j86.j86.java.util.logging.LoggingMXBean
      * but it can't directly implement two MXBean interfaces
      * as a compliant MXBean implements exactly one MXBean interface,
      * or if it implements one interface that is a subinterface of
      * all the others; otherwise, it is a non-compliant MXBean
      * and MBeanServer will throw NotCompliantMBeanException.
-     * See the Definition of an MXBean section in javax.management.MXBean spec.
+     * See the Definition of an MXBean section in j86.javax.management.MXBean spec.
      *
      * To create a compliant logging MXBean, define a LoggingMXBean interface
      * that extend PlatformLoggingMXBean and j.u.l.LoggingMXBean
     */
     public interface LoggingMXBean
-        extends PlatformLoggingMXBean, java.util.logging.LoggingMXBean {
+        extends PlatformLoggingMXBean, j86.j86.java.util.logging.LoggingMXBean {
     }
 
     static class PlatformLoggingImpl implements LoggingMXBean
     {
         final static PlatformLoggingMXBean instance = new PlatformLoggingImpl();
-        final static String LOGGING_MXBEAN_NAME = "java.util.logging:type=Logging";
+        final static String LOGGING_MXBEAN_NAME = "j86.j86.java.util.logging:type=Logging";
 
         private volatile ObjectName objname;  // created lazily
         @Override
@@ -184,7 +184,7 @@ public class ManagementFactoryHelper {
         }
 
         @Override
-        public java.util.List<String> getLoggerNames() {
+        public j86.java.util.List<String> getLoggerNames() {
             return LoggingSupport.getLoggerNames();
         }
 
@@ -208,21 +208,21 @@ public class ManagementFactoryHelper {
     public static synchronized List<BufferPoolMXBean> getBufferPoolMXBeans() {
         if (bufferPools == null) {
             bufferPools = new ArrayList<>(2);
-            bufferPools.add(createBufferPoolMXBean(sun.misc.SharedSecrets.getJavaNioAccess()
+            bufferPools.add(createBufferPoolMXBean(j86.sun.misc.SharedSecrets.getJavaNioAccess()
                 .getDirectBufferPool()));
-            bufferPools.add(createBufferPoolMXBean(sun.nio.ch.FileChannelImpl
+            bufferPools.add(createBufferPoolMXBean(j86.j86.j86.sun.nio.ch.FileChannelImpl
                 .getMappedBufferPool()));
         }
         return bufferPools;
     }
 
-    private final static String BUFFER_POOL_MXBEAN_NAME = "java.nio:type=BufferPool";
+    private final static String BUFFER_POOL_MXBEAN_NAME = "j86.java.nio:type=BufferPool";
 
     /**
      * Creates management interface for the given buffer pool.
      */
     private static BufferPoolMXBean
-        createBufferPoolMXBean(final sun.misc.JavaNioAccess.BufferPool pool)
+        createBufferPoolMXBean(final j86.sun.misc.JavaNioAccess.BufferPool pool)
     {
         return new BufferPoolMXBean() {
             private volatile ObjectName objname;  // created lazily
@@ -363,22 +363,22 @@ public class ManagementFactoryHelper {
     }
 
     private final static String HOTSPOT_CLASS_LOADING_MBEAN_NAME =
-        "sun.management:type=HotspotClassLoading";
+        "j86.sun.management:type=HotspotClassLoading";
 
     private final static String HOTSPOT_COMPILATION_MBEAN_NAME =
-        "sun.management:type=HotspotCompilation";
+        "j86.sun.management:type=HotspotCompilation";
 
     private final static String HOTSPOT_MEMORY_MBEAN_NAME =
-        "sun.management:type=HotspotMemory";
+        "j86.sun.management:type=HotspotMemory";
 
     private static final String HOTSPOT_RUNTIME_MBEAN_NAME =
-        "sun.management:type=HotspotRuntime";
+        "j86.sun.management:type=HotspotRuntime";
 
     private final static String HOTSPOT_THREAD_MBEAN_NAME =
-        "sun.management:type=HotspotThreading";
+        "j86.sun.management:type=HotspotThreading";
 
     final static String HOTSPOT_DIAGNOSTIC_COMMAND_MBEAN_NAME =
-        "com.sun.management:type=DiagnosticCommand";
+        "com.j86.sun.management:type=DiagnosticCommand";
 
     public static HashMap<ObjectName, DynamicMBean> getPlatformDynamicMBeans() {
         HashMap<ObjectName, DynamicMBean> map = new HashMap<>();
@@ -446,7 +446,7 @@ public class ManagementFactoryHelper {
 
     static {
         AccessController.doPrivileged(
-            new java.security.PrivilegedAction<Void>() {
+            new j86.java.security.PrivilegedAction<Void>() {
                 public Void run() {
                     System.loadLibrary("management");
                     return null;
@@ -466,7 +466,7 @@ public class ManagementFactoryHelper {
     public static Thread.State toThreadState(int state) {
         // suspended and native bits may be set in state
         int threadStatus = state & ~JMM_THREAD_STATE_FLAG_MASK;
-        return sun.misc.VM.toThreadState(threadStatus);
+        return j86.sun.misc.VM.toThreadState(threadStatus);
     }
 
     // These values are defined in jmm.h

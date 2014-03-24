@@ -23,20 +23,20 @@
  * questions.
  */
 
-package jdk.internal.util.xml.impl;
+package j86.j86.jdk.internal.util.xml.impl;
 
-import java.io.IOException;
-import java.io.InputStream;
-import jdk.internal.org.xml.sax.ContentHandler;
-import jdk.internal.org.xml.sax.DTDHandler;
-import jdk.internal.org.xml.sax.EntityResolver;
-import jdk.internal.org.xml.sax.ErrorHandler;
-import jdk.internal.org.xml.sax.InputSource;
-import jdk.internal.org.xml.sax.Locator;
-import jdk.internal.org.xml.sax.SAXException;
-import jdk.internal.org.xml.sax.SAXParseException;
-import jdk.internal.org.xml.sax.XMLReader;
-import jdk.internal.org.xml.sax.helpers.DefaultHandler;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.jdk.internal.org.xml.sax.ContentHandler;
+import j86.jdk.internal.org.xml.sax.DTDHandler;
+import j86.jdk.internal.org.xml.sax.EntityResolver;
+import j86.jdk.internal.org.xml.sax.ErrorHandler;
+import j86.jdk.internal.org.xml.sax.InputSource;
+import j86.jdk.internal.org.xml.sax.Locator;
+import j86.jdk.internal.org.xml.sax.SAXException;
+import j86.jdk.internal.org.xml.sax.SAXParseException;
+import j86.jdk.internal.org.xml.sax.XMLReader;
+import j86.j86.jdk.internal.org.xml.sax.helpers.DefaultHandler;
 
 /**
  * XML non-validating push parser.
@@ -110,7 +110,7 @@ final class ParserSAX
      * immediately.</p>
      *
      * @param handler The content handler.
-     * @exception java.lang.NullPointerException If the handler argument is
+     * @exception j86.java.lang.NullPointerException If the handler argument is
      * null.
      * @see #getContentHandler
      */
@@ -142,7 +142,7 @@ final class ParserSAX
      * immediately.</p>
      *
      * @param handler The DTD handler.
-     * @exception java.lang.NullPointerException If the handler argument is
+     * @exception j86.java.lang.NullPointerException If the handler argument is
      * null.
      * @see #getDTDHandler
      */
@@ -176,7 +176,7 @@ final class ParserSAX
      * immediately.</p>
      *
      * @param handler The error handler.
-     * @exception java.lang.NullPointerException If the handler argument is
+     * @exception j86.java.lang.NullPointerException If the handler argument is
      * null.
      * @see #getErrorHandler
      */
@@ -208,7 +208,7 @@ final class ParserSAX
      * immediately.</p>
      *
      * @param resolver The entity resolver.
-     * @exception java.lang.NullPointerException If the resolver argument is
+     * @exception j86.java.lang.NullPointerException If the resolver argument is
      * null.
      * @see #getEntityResolver
      */
@@ -293,7 +293,7 @@ final class ParserSAX
      * @param systemId The system identifier (URI).
      * @exception org.xml.sax.SAXException Any SAX exception, possibly wrapping
      * another exception.
-     * @exception java.io.IOException An IO exception from the parser, possibly
+     * @exception j86.java.io.IOException An IO exception from the parser, possibly
      * from a byte stream or character stream supplied by the application.
      * @see #parse(org.xml.sax.InputSource)
      */
@@ -323,10 +323,10 @@ final class ParserSAX
      * @param is The input source for the top-level of the XML document.
      * @exception org.xml.sax.SAXException Any SAX exception, possibly wrapping
      * another exception.
-     * @exception java.io.IOException An IO exception from the parser, possibly
+     * @exception j86.java.io.IOException An IO exception from the parser, possibly
      * from a byte stream or character stream supplied by the application.
      * @see org.xml.sax.InputSource
-     * @see #parse(java.lang.String)
+     * @see #parse(j86.java.lang.String)
      * @see #setEntityResolver
      * @see #setDTDHandler
      * @see #setContentHandler
@@ -354,7 +354,7 @@ final class ParserSAX
     }
 
     /**
-     * Parse the content of the given {@link java.io.InputStream} instance as
+     * Parse the content of the given {@link j86.java.io.InputStream} instance as
      * XML using the specified {@link org.xml.sax.helpers.DefaultHandler}.
      *
      * @param src InputStream containing the content to be parsed.

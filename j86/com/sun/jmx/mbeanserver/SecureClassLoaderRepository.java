@@ -22,14 +22,14 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.jmx.mbeanserver;
+package j86.com.sun.jmx.mbeanserver;
 
-import javax.management.loading.ClassLoaderRepository;
+import j86.j86.javax.management.loading.ClassLoaderRepository;
 
 /**
  * Fix security hole in ClassLoaderRepository. This class wraps
  * the actual ClassLoaderRepository implementation so that
- * only the methods from {@link javax.management.loading.ClassLoaderRepository}
+ * only the methods from {@link j86.j86.javax.management.loading.ClassLoaderRepository}
  * can be accessed (read-only).
  *
  * @since 1.5

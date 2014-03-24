@@ -22,30 +22,30 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text;
+package j86.j86.javax.swing.text;
 
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.font.TextAttribute;
-import java.lang.ref.ReferenceQueue;
-import java.lang.ref.WeakReference;
-import java.util.Enumeration;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Stack;
-import java.util.Vector;
-import java.util.ArrayList;
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.Serializable;
-import javax.swing.event.*;
-import javax.swing.undo.AbstractUndoableEdit;
-import javax.swing.undo.CannotRedoException;
-import javax.swing.undo.CannotUndoException;
-import javax.swing.undo.UndoableEdit;
-import javax.swing.SwingUtilities;
-import static sun.swing.SwingUtilities2.IMPLIED_CR;
+import j86.java.awt.Color;
+import j86.java.awt.Font;
+import j86.j86.java.awt.font.TextAttribute;
+import j86.j86.java.lang.ref.ReferenceQueue;
+import j86.j86.java.lang.ref.WeakReference;
+import j86.java.util.Enumeration;
+import j86.java.util.HashMap;
+import j86.java.util.List;
+import j86.java.util.Map;
+import j86.java.util.Stack;
+import j86.java.util.Vector;
+import j86.java.util.ArrayList;
+import j86.java.io.IOException;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.Serializable;
+import j86.j86.javax.swing.event.*;
+import j86.j86.javax.swing.undo.AbstractUndoableEdit;
+import j86.j86.javax.swing.undo.CannotRedoException;
+import j86.j86.javax.swing.undo.CannotUndoException;
+import j86.j86.javax.swing.undo.UndoableEdit;
+import j86.javax.swing.SwingUtilities;
+import static j86.sun.swing.SwingUtilities2.IMPLIED_CR;
 
 /**
  * A document that can be marked up with character and paragraph
@@ -62,8 +62,8 @@ import static sun.swing.SwingUtilities2.IMPLIED_CR;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @author  Timothy Prinzing
  * @see     Document
@@ -1125,8 +1125,8 @@ public class DefaultStyledDocument extends AbstractDocument implements StyledDoc
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     protected class SectionElement extends BranchElement {
 
@@ -1156,8 +1156,8 @@ public class DefaultStyledDocument extends AbstractDocument implements StyledDoc
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     public static class ElementSpec {
 
@@ -1391,8 +1391,8 @@ public class DefaultStyledDocument extends AbstractDocument implements StyledDoc
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     public class ElementBuffer implements Serializable {
 

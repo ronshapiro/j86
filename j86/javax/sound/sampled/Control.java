@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.sound.sampled;
+package j86.javax.sound.sampled;
 
 /**
  * {@link Line Lines} often have a set of controls, such as gain and pan, that affect

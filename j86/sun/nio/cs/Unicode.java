@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.nio.cs;
+package j86.j86.j86.sun.nio.cs;
 
-import java.nio.charset.Charset;
+import j86.j86.java.nio.charset.Charset;
 
 abstract class Unicode extends Charset
     implements HistoricallyNamedCharset

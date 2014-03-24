@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.invoke.anon;
+package j86.j86.sun.invoke.anon;
 
-import java.io.IOException;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import sun.misc.IOUtils;
+import j86.java.io.IOException;
+import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.sun.misc.IOUtils;
 
 /**
  * Anonymous class loader.  Will load any valid classfile, producing
@@ -78,7 +78,7 @@ public class AnonymousClassLoader {
         this.hostClass = hostClass;
     }
 
-    public static AnonymousClassLoader make(sun.misc.Unsafe unsafe, Class<?> hostClass) {
+    public static AnonymousClassLoader make(j86.sun.misc.Unsafe unsafe, Class<?> hostClass) {
         if (unsafe == null)  throw new NullPointerException();
         return new AnonymousClassLoader(hostClass);
     }
@@ -189,13 +189,13 @@ public class AnonymousClassLoader {
     private static int fakeNameCounter = 99999;
 
     // ignore two warnings on this line:
-    private static sun.misc.Unsafe unsafe = sun.misc.Unsafe.getUnsafe();
+    private static j86.sun.misc.Unsafe unsafe = sun.misc.Unsafe.getUnsafe();
     // preceding line requires that this class be on the boot class path
 
     static private final Method defineAnonymousClass;
     static {
         Method dac = null;
-        Class<? extends sun.misc.Unsafe> unsafeClass = unsafe.getClass();
+        Class<? extends j86.sun.misc.Unsafe> unsafeClass = unsafe.getClass();
         try {
             dac = unsafeClass.getMethod("defineAnonymousClass",
                                         Class.class,
@@ -219,8 +219,8 @@ public class AnonymousClassLoader {
     public static byte[] readClassFile(Class<?> templateClass) throws IOException {
         String templateName = templateClass.getName();
         int lastDot = templateName.lastIndexOf('.');
-        java.net.URL url = templateClass.getResource(templateName.substring(lastDot+1)+".class");
-        java.net.URLConnection connection = url.openConnection();
+        j86.java.net.URL url = templateClass.getResource(templateName.substring(lastDot+1)+".class");
+        j86.java.net.URLConnection connection = url.openConnection();
         int contentLength = connection.getContentLength();
         if (contentLength < 0)
             throw new IOException("invalid content length "+contentLength);

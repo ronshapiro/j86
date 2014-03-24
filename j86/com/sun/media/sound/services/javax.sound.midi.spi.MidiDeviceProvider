@@ -1,5 +1,5 @@
 # Providers for midi devices
-com.sun.media.sound.RealTimeSequencerProvider
-com.sun.media.sound.MidiOutDeviceProvider
-com.sun.media.sound.MidiInDeviceProvider
-com.sun.media.sound.SoftProvider
+j86.com.sun.media.sound.RealTimeSequencerProvider
+j86.com.sun.media.sound.MidiOutDeviceProvider
+j86.com.sun.media.sound.MidiInDeviceProvider
+j86.com.sun.media.sound.SoftProvider

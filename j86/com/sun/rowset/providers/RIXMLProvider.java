@@ -23,14 +23,14 @@
  * questions.
  */
 
-package com.sun.rowset.providers;
+package j86.j86.com.sun.rowset.providers;
 
-import com.sun.rowset.JdbcRowSetResourceBundle;
-import java.io.IOException;
-import java.sql.*;
-import javax.sql.*;
+import j86.com.sun.rowset.JdbcRowSetResourceBundle;
+import j86.java.io.IOException;
+import j86.java.sql.*;
+import j86.javax.sql.*;
 
-import javax.sql.rowset.spi.*;
+import j86.j86.j86.javax.sql.rowset.spi.*;
 
 /**
  * A reference implementation of a JDBC RowSet synchronization provider
@@ -40,7 +40,7 @@ import javax.sql.rowset.spi.*;
  * <h3>1.0 Background</h3>
  * This synchronization provider is registered with the
  * <code>SyncFactory</code> by default as the
- * <code>com.sun.rowset.providers.RIXMLProvider</code>.
+ * <code>j86.j86.com.sun.rowset.providers.RIXMLProvider</code>.
  * <P>
  * A <code>WebRowSet</code> object uses an <code>RIXMLProvider</code> implementation
  * to read an XML data source or to write itself in XML format using the
@@ -64,23 +64,23 @@ import javax.sql.rowset.spi.*;
  * the following line of code is executed behind the scenes as part of the
  * implementation of the default constructor.
  * <pre>
- *     wrs.setSyncProvider("com.sun.rowset.providers.RIXMLProvider");
+ *     wrs.setSyncProvider("j86.j86.com.sun.rowset.providers.RIXMLProvider");
  * </pre>
  * See the standard <code>RowSet</code> reference implementations in the
- * <code>com.sun.rowset</code> package for more details.
+ * <code>j86.com.sun.rowset</code> package for more details.
  *
  * @author  Jonathan Bruce
- * @see javax.sql.rowset.spi.SyncProvider
- * @see javax.sql.rowset.spi.SyncProviderException
- * @see javax.sql.rowset.spi.SyncFactory
- * @see javax.sql.rowset.spi.SyncFactoryException
+ * @see j86.j86.j86.javax.sql.rowset.spi.SyncProvider
+ * @see j86.j86.j86.javax.sql.rowset.spi.SyncProviderException
+ * @see j86.j86.j86.javax.sql.rowset.spi.SyncFactory
+ * @see j86.j86.j86.javax.sql.rowset.spi.SyncFactoryException
  */
 public final class RIXMLProvider extends SyncProvider {
 
     /**
      * The unique provider identifier.
      */
-    private String providerID = "com.sun.rowset.providers.RIXMLProvider";
+    private String providerID = "j86.j86.com.sun.rowset.providers.RIXMLProvider";
 
     /**
      * The vendor name of this SyncProvider implementation.
@@ -111,7 +111,7 @@ public final class RIXMLProvider extends SyncProvider {
     }
 
     /**
-     * Returns <code>"javax.sql.rowset.providers.RIXMLProvider"</code>, which is
+     * Returns <code>"j86.j86.javax.sql.rowset.providers.RIXMLProvider"</code>, which is
      * the fully qualified class name of this provider implementation.
      *
      * @return a <code>String</code> object with the fully specified class name of

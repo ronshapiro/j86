@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.invoke.anon;
+package j86.j86.sun.invoke.anon;
 
 /** Exception used when there is an error in the constant pool
  *  format.

@@ -29,12 +29,12 @@
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
 
-package sun.security.krb5;
+package j86.sun.security.krb5;
 
-import sun.security.krb5.internal.*;
-import sun.security.krb5.internal.crypto.KeyUsage;
-import sun.security.util.*;
-import java.io.IOException;
+import j86.j86.sun.security.krb5.internal.*;
+import j86.j86.j86.sun.security.krb5.internal.crypto.KeyUsage;
+import j86.sun.security.util.*;
+import j86.java.io.IOException;
 
 /**
  * This class encapsulates a TGS-REP that is sent from the KDC to the
@@ -108,7 +108,7 @@ public class KrbTgsRep extends KrbKdcRep {
         return creds;
     }
 
-    sun.security.krb5.internal.ccache.Credentials setCredentials() {
-        return new sun.security.krb5.internal.ccache.Credentials(rep, secondTicket);
+    j86.j86.j86.sun.security.krb5.internal.ccache.Credentials setCredentials() {
+        return new j86.j86.j86.sun.security.krb5.internal.ccache.Credentials(rep, secondTicket);
     }
 }

@@ -23,11 +23,11 @@
  * questions.
  */
 
-package java.awt.image;
+package j86.j86.j86.java.awt.image;
 
-import java.awt.Transparency;
-import java.awt.color.ColorSpace;
-import java.math.BigInteger;
+import j86.java.awt.Transparency;
+import j86.j86.java.awt.color.ColorSpace;
+import j86.java.math.BigInteger;
 
 /**
  * The <code>IndexColorModel</code> class is a <code>ColorModel</code>
@@ -130,7 +130,7 @@ public class IndexColorModel extends ColorModel {
     private boolean allgrayopaque;
     private BigInteger validBits;
 
-    private sun.awt.image.BufImgSurfaceData.ICMColorData colorData = null;
+    private j86.j86.j86.sun.awt.image.BufImgSurfaceData.ICMColorData colorData = null;
 
     private static int[] opaqueBits = {8, 8, 8};
     private static int[] alphaBits = {8, 8, 8, 8};
@@ -590,7 +590,7 @@ public class IndexColorModel extends ColorModel {
     private BigInteger getAllValid() {
         int numbytes = (map_size+7)/8;
         byte[] valid = new byte[numbytes];
-        java.util.Arrays.fill(valid, (byte)0xff);
+        j86.java.util.Arrays.fill(valid, (byte)0xff);
         valid[0] = (byte)(0xff >>> (numbytes*8 - map_size));
 
         return new BigInteger(1, valid);
@@ -845,7 +845,7 @@ public class IndexColorModel extends ColorModel {
      * Returns a data element array representation of a pixel in this
      * ColorModel, given an integer pixel representation in the
      * default RGB color model.  This array can then be passed to the
-     * {@link WritableRaster#setDataElements(int, int, java.lang.Object) setDataElements}
+     * {@link WritableRaster#setDataElements(int, int, j86.java.lang.Object) setDataElements}
      * method of a {@link WritableRaster} object.  If the pixel variable is
      * <code>null</code>, a new array is allocated.  If <code>pixel</code>
      * is not <code>null</code>, it must be

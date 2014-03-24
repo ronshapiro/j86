@@ -30,11 +30,11 @@
 /*                                                                           */
 /*****************************************************************************/
 
-package sun.rmi.rmic;
+package j86.sun.rmi.rmic;
 
-import java.io.Writer;
-import java.io.BufferedWriter;
-import java.io.IOException;
+import j86.java.io.Writer;
+import j86.java.io.BufferedWriter;
+import j86.java.io.IOException;
 
 /**
  * IndentingWriter is a BufferedWriter subclass that supports automatic

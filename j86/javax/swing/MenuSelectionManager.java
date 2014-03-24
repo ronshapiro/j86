@@ -22,14 +22,14 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing;
+package j86.javax.swing;
 
-import java.awt.*;
-import java.util.*;
-import java.awt.event.*;
-import javax.swing.event.*;
+import j86.java.awt.*;
+import j86.java.util.*;
+import j86.j86.java.awt.event.*;
+import j86.j86.javax.swing.event.*;
 
-import sun.awt.AppContext;
+import j86.sun.awt.AppContext;
 
 /**
  * A MenuSelectionManager owns the selection in menu hierarchy.
@@ -45,7 +45,7 @@ public class MenuSelectionManager {
     private static final boolean DEBUG =   false;  // show bad params, misc.
 
     private static final StringBuilder MENU_SELECTION_MANAGER_KEY =
-                       new StringBuilder("javax.swing.MenuSelectionManager");
+                       new StringBuilder("j86.javax.swing.MenuSelectionManager");
 
     /**
      * Returns the default menu selection manager.

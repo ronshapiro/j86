@@ -29,7 +29,7 @@
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
 
-package sun.security.krb5;
+package j86.sun.security.krb5;
 
 public class RealmException extends KrbException {
 

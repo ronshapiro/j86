@@ -23,24 +23,24 @@
  * questions.
  */
 
-package java.util.prefs;
+package j86.j86.java.util.prefs;
 
-import java.io.InputStream;
-import java.io.IOException;
-import java.io.OutputStream;
-import java.security.AccessController;
-import java.security.Permission;
-import java.security.PrivilegedAction;
-import java.util.Iterator;
-import java.util.ServiceLoader;
-import java.util.ServiceConfigurationError;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
+import j86.java.io.OutputStream;
+import j86.java.security.AccessController;
+import j86.java.security.Permission;
+import j86.java.security.PrivilegedAction;
+import j86.java.util.Iterator;
+import j86.java.util.ServiceLoader;
+import j86.java.util.ServiceConfigurationError;
 
 // These imports needed only as a workaround for a JavaDoc bug
-import java.lang.RuntimePermission;
-import java.lang.Integer;
-import java.lang.Long;
-import java.lang.Float;
-import java.lang.Double;
+import j86.java.lang.RuntimePermission;
+import j86.java.lang.Integer;
+import j86.java.lang.Long;
+import j86.java.lang.Float;
+import j86.java.lang.Double;
 
 /**
  * A node in a hierarchical collection of preference data.  This class
@@ -194,7 +194,7 @@ import java.lang.Double;
  * <ol>
  *
  * <li><p>If the system property
- * <tt>java.util.prefs.PreferencesFactory</tt> is defined, then it is
+ * <tt>j86.j86.java.util.prefs.PreferencesFactory</tt> is defined, then it is
  * taken to be the fully-qualified name of a class implementing the
  * <tt>PreferencesFactory</tt> interface.  The class is loaded and
  * instantiated; if this process fails then an unspecified error is
@@ -202,9 +202,9 @@ import java.lang.Double;
  *
  * <li><p> If a <tt>PreferencesFactory</tt> implementation class file
  * has been installed in a jar file that is visible to the
- * {@link java.lang.ClassLoader#getSystemClassLoader system class loader},
+ * {@link j86.java.lang.ClassLoader#getSystemClassLoader system class loader},
  * and that jar file contains a provider-configuration file named
- * <tt>java.util.prefs.PreferencesFactory</tt> in the resource
+ * <tt>j86.j86.java.util.prefs.PreferencesFactory</tt> in the resource
  * directory <tt>META-INF/services</tt>, then the first class name
  * specified in that file is taken.  If more than one such jar file is
  * provided, the first one found will be used.  The class is loaded
@@ -231,7 +231,7 @@ public abstract class Preferences {
             new PrivilegedAction<String>() {
                 public String run() {
                     return System.getProperty(
-                        "java.util.prefs.PreferencesFactory");}});
+                        "j86.j86.java.util.prefs.PreferencesFactory");}});
         if (factoryName != null) {
             // FIXME: This code should be run in a doPrivileged and
             // not use the context classloader, to avoid being
@@ -248,7 +248,7 @@ public abstract class Preferences {
                     // load factory class using non-system classloader
                     SecurityManager sm = System.getSecurityManager();
                     if (sm != null) {
-                        sm.checkPermission(new java.security.AllPermission());
+                        sm.checkPermission(new j86.java.security.AllPermission());
                     }
                     return (PreferencesFactory)
                         Class.forName(factoryName, false,
@@ -292,11 +292,11 @@ public abstract class Preferences {
         String osName = System.getProperty("os.name");
         String platformFactory;
         if (osName.startsWith("Windows")) {
-            platformFactory = "java.util.prefs.WindowsPreferencesFactory";
+            platformFactory = "j86.j86.java.util.prefs.WindowsPreferencesFactory";
         } else if (osName.contains("OS X")) {
-            platformFactory = "java.util.prefs.MacOSXPreferencesFactory";
+            platformFactory = "j86.j86.java.util.prefs.MacOSXPreferencesFactory";
         } else {
-            platformFactory = "java.util.prefs.FileSystemPreferencesFactory";
+            platformFactory = "j86.j86.java.util.prefs.FileSystemPreferencesFactory";
         }
         try {
             return (PreferencesFactory)

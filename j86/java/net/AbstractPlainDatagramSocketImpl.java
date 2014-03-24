@@ -22,12 +22,12 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.net;
+package j86.java.net;
 
-import java.io.FileDescriptor;
-import java.io.IOException;
-import java.security.AccessController;
-import sun.net.ResourceManager;
+import j86.java.io.FileDescriptor;
+import j86.java.io.IOException;
+import j86.java.security.AccessController;
+import j86.sun.net.ResourceManager;
 
 /**
  * Abstract datagram and multicast socket implementation base class.
@@ -49,7 +49,7 @@ abstract class AbstractPlainDatagramSocketImpl extends DatagramSocketImpl
     private int connectedPort = -1;
 
     private static final String os = AccessController.doPrivileged(
-        new sun.security.action.GetPropertyAction("os.name")
+        new j86.sun.security.action.GetPropertyAction("os.name")
     );
 
     /**
@@ -61,8 +61,8 @@ abstract class AbstractPlainDatagramSocketImpl extends DatagramSocketImpl
      * Load net library into runtime.
      */
     static {
-        java.security.AccessController.doPrivileged(
-            new java.security.PrivilegedAction<Void>() {
+        j86.java.security.AccessController.doPrivileged(
+            new j86.java.security.PrivilegedAction<Void>() {
                 public Void run() {
                     System.loadLibrary("net");
                     return null;

@@ -23,12 +23,12 @@
  * questions.
  */
 
-package com.sun.imageio.stream;
+package j86.com.sun.imageio.stream;
 
-import java.io.IOException;
-import java.util.Set;
-import java.util.WeakHashMap;
-import javax.imageio.stream.ImageInputStream;
+import j86.java.io.IOException;
+import j86.java.util.Set;
+import j86.java.util.WeakHashMap;
+import j86.j86.javax.imageio.stream.ImageInputStream;
 
 /**
  * This class provide means to properly close hanging
@@ -81,8 +81,8 @@ public class StreamCloser {
                     }
                 };
 
-                java.security.AccessController.doPrivileged(
-                    new java.security.PrivilegedAction() {
+                j86.java.security.AccessController.doPrivileged(
+                    new j86.java.security.PrivilegedAction() {
                         public Object run() {
                             /* The thread must be a member of a thread group
                              * which will not get GCed before VM exit.

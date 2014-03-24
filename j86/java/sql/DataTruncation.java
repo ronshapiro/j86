@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.sql;
+package j86.java.sql;
 
 /**
  * An exception  thrown as a <code>DataTruncation</code> exception
@@ -48,7 +48,7 @@ public class DataTruncation extends SQLWarning {
      * the other fields set to the given values.
      * The <code>cause</code> is not initialized, and may subsequently be
      * initialized by a call to the
-     * {@link Throwable#initCause(java.lang.Throwable)} method.
+     * {@link Throwable#initCause(j86.java.lang.Throwable)} method.
      * <p>
      *
      * @param index The index of the parameter or column value

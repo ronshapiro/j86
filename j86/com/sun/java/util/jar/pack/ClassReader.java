@@ -23,26 +23,26 @@
  * questions.
  */
 
-package com.sun.java.util.jar.pack;
+package j86.com.sun.j86.j86.java.util.jar.pack;
 
-import com.sun.java.util.jar.pack.ConstantPool.ClassEntry;
-import com.sun.java.util.jar.pack.ConstantPool.DescriptorEntry;
-import com.sun.java.util.jar.pack.ConstantPool.Entry;
-import com.sun.java.util.jar.pack.ConstantPool.SignatureEntry;
-import com.sun.java.util.jar.pack.ConstantPool.MemberEntry;
-import com.sun.java.util.jar.pack.ConstantPool.MethodHandleEntry;
-import com.sun.java.util.jar.pack.ConstantPool.BootstrapMethodEntry;
-import com.sun.java.util.jar.pack.ConstantPool.Utf8Entry;
-import com.sun.java.util.jar.pack.Package.Class;
-import com.sun.java.util.jar.pack.Package.InnerClass;
-import java.io.DataInputStream;
-import java.io.FilterInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Map;
-import static com.sun.java.util.jar.pack.Constants.*;
+import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.ClassEntry;
+import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.DescriptorEntry;
+import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.Entry;
+import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.SignatureEntry;
+import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.MemberEntry;
+import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.MethodHandleEntry;
+import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.BootstrapMethodEntry;
+import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.Utf8Entry;
+import j86.com.sun.j86.j86.java.util.jar.pack.Package.Class;
+import j86.com.sun.j86.j86.java.util.jar.pack.Package.InnerClass;
+import j86.java.io.DataInputStream;
+import j86.java.io.FilterInputStream;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.util.ArrayList;
+import j86.java.util.Arrays;
+import j86.java.util.Map;
+import static j86.com.sun.j86.j86.java.util.jar.pack.Constants.*;
 
 /**
  * Reader for a class file that is being incorporated into a package.

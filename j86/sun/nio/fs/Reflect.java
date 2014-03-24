@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.nio.fs;
+package j86.j86.sun.nio.fs;
 
-import java.lang.reflect.*;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
+import j86.j86.j86.java.lang.reflect.*;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
 
 /**
  * Utility class for reflection.

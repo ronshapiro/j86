@@ -23,14 +23,14 @@
 # questions.
 #
 
-# Generated exception classes for java.nio.charset
+# Generated exception classes for j86.j86.java.nio.charset
 
 SINCE=1.4
-PACKAGE=java.nio.charset
+PACKAGE=j86.j86.java.nio.charset
 # This year should only change if the generated source is modified.
 COPYRIGHT_YEARS="2000, 2007,"
 
-SUPER=java.io.IOException
+SUPER=j86.java.io.IOException
 
 gen CharacterCodingException "
  * Checked exception thrown when a character encoding

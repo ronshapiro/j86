@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.print;
+package j86.javax.print;
 
-import java.io.OutputStream;
+import j86.java.io.OutputStream;
 
 /**
  * This class extends {@link PrintService} and represents a
@@ -36,13 +36,13 @@ import java.io.OutputStream;
  * or archiving.
  * The output format must be declared as a mime type.
  * This is equivalent to an output document flavor where the
- * representation class is always "java.io.OutputStream"
+ * representation class is always "j86.java.io.OutputStream"
  * An instance of the <code>StreamPrintService</code> class is
  * obtained from a {@link StreamPrintServiceFactory} instance.
  * <p>
  * Note that a <code>StreamPrintService</code> is different from a
  * <code>PrintService</code>, which supports a
- * {@link javax.print.attribute.standard.Destination Destination}
+ * {@link j86.j86.j86.javax.print.attribute.standard.Destination Destination}
  * attribute.  A <code>StreamPrintService</code> always requires an output
  * stream, whereas a <code>PrintService</code> optionally accepts a
  * <code>Destination</code>. A <code>StreamPrintService</code>

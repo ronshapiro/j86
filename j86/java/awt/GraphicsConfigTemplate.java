@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.awt;
+package j86.java.awt;
 
-import java.io.*;
+import j86.java.io.*;
 
 /**
  * The <code>GraphicsConfigTemplate</code> class is used to obtain a valid

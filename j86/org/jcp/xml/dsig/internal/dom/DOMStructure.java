@@ -26,11 +26,11 @@
 /*
  * $Id: DOMStructure.java 1197150 2011-11-03 14:34:57Z coheigea $
  */
-package org.jcp.xml.dsig.internal.dom;
+package j86.j86.org.jcp.xml.dsig.internal.dom;
 
-import javax.xml.crypto.MarshalException;
-import javax.xml.crypto.XMLStructure;
-import javax.xml.crypto.dom.DOMCryptoContext;
+import j86.javax.xml.crypto.MarshalException;
+import j86.javax.xml.crypto.XMLStructure;
+import j86.j86.javax.xml.crypto.dom.DOMCryptoContext;
 import org.w3c.dom.Node;
 
 /**

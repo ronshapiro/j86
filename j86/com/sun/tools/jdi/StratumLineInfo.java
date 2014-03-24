@@ -23,9 +23,9 @@
  * questions.
  */
 
-package com.sun.tools.jdi;
+package j86.com.sun.tools.jdi;
 
-import com.sun.jdi.*;
+import j86.com.sun.jdi.*;
 
 class StratumLineInfo implements LineInfo {
     private final String stratumID;

@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.security.util;
+package j86.sun.security.util;
 
-import java.math.BigInteger;
-import java.util.regex.Pattern;
-import java.util.regex.Matcher;
-import java.util.Locale;
+import j86.java.math.BigInteger;
+import j86.j86.java.util.regex.Pattern;
+import j86.j86.java.util.regex.Matcher;
+import j86.java.util.Locale;
 
 /**
  * A utility class for debuging.
@@ -42,13 +42,13 @@ public class Debug {
     private static String args;
 
     static {
-        args = java.security.AccessController.doPrivileged
-                (new sun.security.action.GetPropertyAction
-                ("java.security.debug"));
+        args = j86.java.security.AccessController.doPrivileged
+                (new j86.sun.security.action.GetPropertyAction
+                ("j86.java.security.debug"));
 
-        String args2 = java.security.AccessController.doPrivileged
-                (new sun.security.action.GetPropertyAction
-                ("java.security.auth.debug"));
+        String args2 = j86.java.security.AccessController.doPrivileged
+                (new j86.sun.security.action.GetPropertyAction
+                ("j86.java.security.auth.debug"));
 
         if (args == null) {
             args = args2;

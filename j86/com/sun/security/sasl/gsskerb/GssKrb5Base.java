@@ -24,13 +24,13 @@
  */
 
 
-package com.sun.security.sasl.gsskerb;
+package j86.j86.com.sun.security.sasl.gsskerb;
 
-import java.util.Map;
-import java.util.logging.Level;
-import javax.security.sasl.*;
-import com.sun.security.sasl.util.AbstractSaslImpl;
-import org.ietf.jgss.*;
+import j86.java.util.Map;
+import j86.j86.java.util.logging.Level;
+import j86.javax.security.sasl.*;
+import j86.j86.com.sun.security.sasl.util.AbstractSaslImpl;
+import j86.org.ietf.jgss.*;
 
 abstract class GssKrb5Base extends AbstractSaslImpl {
 

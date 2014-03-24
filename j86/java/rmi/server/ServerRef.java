@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.rmi.server;
+package j86.j86.java.rmi.server;
 
-import java.rmi.*;
+import j86.java.rmi.*;
 
 /**
  * A ServerRef represents the server-side handle for a remote object

@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.sql;
+package j86.javax.sql;
 
-import java.sql.Connection;
-import java.sql.SQLException;
+import j86.java.sql.Connection;
+import j86.java.sql.SQLException;
 
 /**
  * An object that provides hooks for connection pool management.
@@ -102,7 +102,7 @@ public interface PooledConnection {
    * @return  a <code>Connection</code> object that is a handle to
    *          this <code>PooledConnection</code> object
    * @exception SQLException if a database access error occurs
-   * @exception java.sql.SQLFeatureNotSupportedException if the JDBC driver does not support
+   * @exception j86.java.sql.SQLFeatureNotSupportedException if the JDBC driver does not support
    * this method
    * @since 1.4
    */
@@ -117,7 +117,7 @@ public interface PooledConnection {
    * information.
    *
    * @exception SQLException if a database access error occurs
-   * @exception java.sql.SQLFeatureNotSupportedException if the JDBC driver does not support
+   * @exception j86.java.sql.SQLFeatureNotSupportedException if the JDBC driver does not support
    * this method
    * @since 1.4
    */

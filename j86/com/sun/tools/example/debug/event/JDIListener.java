@@ -32,9 +32,9 @@
  */
 
 
-package com.sun.tools.example.debug.event;
+package j86.com.sun.tools.example.debug.event;
 
-import java.util.EventListener;
+import j86.java.util.EventListener;
 
 public interface JDIListener extends EventListener {
     void accessWatchpoint(AccessWatchpointEventSet e);

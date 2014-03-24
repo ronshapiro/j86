@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.rmi;
+package j86.java.rmi;
 
 /**
  * A <code>ConnectException</code> is thrown if a connection is refused

@@ -28,14 +28,14 @@
  * (C) Copyright IBM Corp. 1999,  All rights reserved.
  */
 
-package sun.font;
+package j86.sun.font;
 
-import java.awt.Font;
-import java.awt.GraphicsEnvironment;
-import java.awt.font.TextAttribute;
-import java.util.ArrayList;
-import java.util.Map;
-import sun.text.CodePointIterator;
+import j86.java.awt.Font;
+import j86.java.awt.GraphicsEnvironment;
+import j86.j86.java.awt.font.TextAttribute;
+import j86.java.util.ArrayList;
+import j86.java.util.Map;
+import j86.sun.text.CodePointIterator;
 
 /**
  * This class maps an individual character to a Font family which can

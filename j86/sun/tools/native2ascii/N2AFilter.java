@@ -32,9 +32,9 @@
  * character is emitted for each line of processed input
  */
 
-package sun.tools.native2ascii;
-import java.io.*;
-import java.nio.BufferOverflowException;
+package j86.sun.tools.native2ascii;
+import j86.java.io.*;
+import j86.java.nio.BufferOverflowException;
 
 class N2AFilter extends FilterWriter {
 

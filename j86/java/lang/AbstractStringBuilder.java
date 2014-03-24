@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.lang;
+package j86.java.lang;
 
-import sun.misc.FloatingDecimal;
-import java.util.Arrays;
+import j86.sun.misc.FloatingDecimal;
+import j86.java.util.Arrays;
 
 /**
  * A mutable sequence of characters.

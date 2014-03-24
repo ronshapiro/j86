@@ -23,11 +23,11 @@
  * questions.
  */
 
-package org.ietf.jgss;
+package j86.org.ietf.jgss;
 
-import sun.security.jgss.spi.*;
-import java.util.Vector;
-import java.util.Enumeration;
+import j86.j86.sun.security.jgss.spi.*;
+import j86.java.util.Vector;
+import j86.java.util.Enumeration;
 
 /**
  * This interface encapsulates a single GSS-API principal entity. The

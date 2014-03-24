@@ -23,12 +23,12 @@
  * questions.
  */
 
-package com.sun.jndi.ldap;
+package j86.com.sun.jndi.ldap;
 
-import javax.naming.ldap.UnsolicitedNotification;
-import javax.naming.NamingException;
-import javax.naming.ldap.Control;
-import java.util.Vector;
+import j86.j86.javax.naming.ldap.UnsolicitedNotification;
+import j86.javax.naming.NamingException;
+import j86.j86.javax.naming.ldap.Control;
+import j86.java.util.Vector;
 
 /**
  * A concrete implementation of an UnsolicitedNotification.

@@ -23,18 +23,18 @@
  * questions.
  */
 
-package java.nio.channels;
+package j86.j86.java.nio.channels;
 
-import java.nio.file.*;
-import java.nio.file.attribute.FileAttribute;
-import java.nio.file.spi.*;
-import java.nio.ByteBuffer;
-import java.io.IOException;
-import java.util.concurrent.Future;
-import java.util.concurrent.ExecutorService;
-import java.util.Set;
-import java.util.HashSet;
-import java.util.Collections;
+import j86.j86.java.nio.file.*;
+import j86.j86.j86.java.nio.file.attribute.FileAttribute;
+import j86.j86.j86.java.nio.file.spi.*;
+import j86.java.nio.ByteBuffer;
+import j86.java.io.IOException;
+import j86.j86.java.util.concurrent.Future;
+import j86.j86.java.util.concurrent.ExecutorService;
+import j86.java.util.Set;
+import j86.java.util.HashSet;
+import j86.java.util.Collections;
 
 /**
  * An asynchronous channel for reading, writing, and manipulating a file.
@@ -92,7 +92,7 @@ import java.util.Collections;
  * outstanding then the ordering of the I/O operations, and the order that the
  * completion handlers are invoked, is not specified; they are not, in particular,
  * guaranteed to execute in the order that the operations were initiated. The
- * {@link java.nio.ByteBuffer ByteBuffers} used when reading or writing are not
+ * {@link j86.java.nio.ByteBuffer ByteBuffers} used when reading or writing are not
  * safe for use by multiple concurrent I/O operations. Furthermore, after an I/O
  * operation is initiated then care should be taken to ensure that the buffer is
  * not accessed until after the operation has completed.

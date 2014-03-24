@@ -23,49 +23,49 @@
  * questions.
  */
 
-package sun.java2d;
+package j86.sun.java2d;
 
-import java.awt.AWTError;
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.Graphics2D;
-import java.awt.GraphicsConfiguration;
-import java.awt.GraphicsDevice;
-import java.awt.GraphicsEnvironment;
-import java.awt.Insets;
-import java.awt.Rectangle;
-import java.awt.Toolkit;
-import java.awt.font.TextAttribute;
-import java.awt.image.BufferedImage;
-import java.awt.peer.ComponentPeer;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FilenameFilter;
-import java.io.InputStreamReader;
-import java.io.IOException;
-import java.text.AttributedCharacterIterator;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Locale;
-import java.util.Map;
-import java.util.NoSuchElementException;
-import java.util.Set;
-import java.util.StringTokenizer;
-import java.util.TreeMap;
-import java.util.Vector;
-import java.util.concurrent.ConcurrentHashMap;
-import sun.awt.AppContext;
-import sun.awt.DisplayChangedListener;
-import sun.awt.FontConfiguration;
-import sun.awt.SunDisplayChanger;
-import sun.font.CompositeFontDescriptor;
-import sun.font.Font2D;
-import sun.font.FontManager;
-import sun.font.FontManagerFactory;
-import sun.font.FontManagerForSGE;
-import sun.font.NativeFont;
+import j86.java.awt.AWTError;
+import j86.java.awt.Color;
+import j86.java.awt.Font;
+import j86.java.awt.Graphics2D;
+import j86.java.awt.GraphicsConfiguration;
+import j86.java.awt.GraphicsDevice;
+import j86.java.awt.GraphicsEnvironment;
+import j86.java.awt.Insets;
+import j86.java.awt.Rectangle;
+import j86.java.awt.Toolkit;
+import j86.j86.java.awt.font.TextAttribute;
+import j86.j86.j86.java.awt.image.BufferedImage;
+import j86.j86.java.awt.peer.ComponentPeer;
+import j86.java.io.BufferedReader;
+import j86.java.io.File;
+import j86.java.io.FileInputStream;
+import j86.java.io.FilenameFilter;
+import j86.java.io.InputStreamReader;
+import j86.java.io.IOException;
+import j86.java.text.AttributedCharacterIterator;
+import j86.java.util.ArrayList;
+import j86.java.util.HashSet;
+import j86.java.util.Iterator;
+import j86.java.util.Locale;
+import j86.java.util.Map;
+import j86.java.util.NoSuchElementException;
+import j86.java.util.Set;
+import j86.java.util.StringTokenizer;
+import j86.java.util.TreeMap;
+import j86.java.util.Vector;
+import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.sun.awt.AppContext;
+import j86.sun.awt.DisplayChangedListener;
+import j86.sun.awt.FontConfiguration;
+import j86.sun.awt.SunDisplayChanger;
+import j86.sun.font.CompositeFontDescriptor;
+import j86.sun.font.Font2D;
+import j86.sun.font.FontManager;
+import j86.sun.font.FontManagerFactory;
+import j86.sun.font.FontManagerForSGE;
+import j86.sun.font.NativeFont;
 
 /**
  * This is an implementation of a GraphicsEnvironment object for the
@@ -81,8 +81,8 @@ public abstract class SunGraphicsEnvironment extends GraphicsEnvironment
     private static Font defaultFont;
 
     public SunGraphicsEnvironment() {
-        java.security.AccessController.doPrivileged(
-                                    new java.security.PrivilegedAction() {
+        j86.java.security.AccessController.doPrivileged(
+                                    new j86.java.security.PrivilegedAction() {
             public Object run() {
                     String version = System.getProperty("os.version", "0.0");
                     try {
@@ -213,7 +213,7 @@ public abstract class SunGraphicsEnvironment extends GraphicsEnvironment
             return installedFonts;
         } else {
             int newlen = installedFonts.length + created.length;
-            Font [] fonts = java.util.Arrays.copyOf(installedFonts, newlen);
+            Font [] fonts = j86.java.util.Arrays.copyOf(installedFonts, newlen);
             System.arraycopy(created, 0, fonts,
                              installedFonts.length, created.length);
             return fonts;
@@ -254,7 +254,7 @@ public abstract class SunGraphicsEnvironment extends GraphicsEnvironment
 
     /**
      * Return the bounds of a GraphicsDevice, less its screen insets.
-     * See also java.awt.GraphicsEnvironment.getUsableBounds();
+     * See also j86.java.awt.GraphicsEnvironment.getUsableBounds();
      */
     public static Rectangle getUsableBounds(GraphicsDevice gd) {
         GraphicsConfiguration gc = gd.getDefaultConfiguration();

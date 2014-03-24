@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.sound.midi.spi;
+package j86.j86.javax.sound.midi.spi;
 
-import javax.sound.midi.MidiDevice;
-import javax.sound.midi.MidiUnavailableException;
+import j86.javax.sound.midi.MidiDevice;
+import j86.javax.sound.midi.MidiUnavailableException;
 
 /**
  * A <code>MidiDeviceProvider</code> is a factory or provider for a particular

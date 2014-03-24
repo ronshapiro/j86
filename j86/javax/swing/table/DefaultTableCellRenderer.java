@@ -23,17 +23,17 @@
  * questions.
  */
 
-package javax.swing.table;
+package j86.j86.javax.swing.table;
 
-import javax.swing.*;
-import javax.swing.border.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.border.*;
 
-import java.awt.Component;
-import java.awt.Color;
-import java.awt.Rectangle;
+import j86.java.awt.Component;
+import j86.java.awt.Color;
+import j86.java.awt.Rectangle;
 
-import java.io.Serializable;
-import sun.swing.DefaultLookup;
+import j86.java.io.Serializable;
+import j86.sun.swing.DefaultLookup;
 
 
 /**
@@ -76,8 +76,8 @@ import sun.swing.DefaultLookup;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @author Philip Milne
  * @see JTable
@@ -162,7 +162,7 @@ public class DefaultTableCellRenderer extends JLabel
         setBackground(null);
     }
 
-    // implements javax.swing.table.TableCellRenderer
+    // implements j86.j86.javax.swing.table.TableCellRenderer
     /**
      *
      * Returns the default table cell renderer.
@@ -172,7 +172,7 @@ public class DefaultTableCellRenderer extends JLabel
      * <code>false</code> to prevent selection and focus from appearing
      * in the printed output. To do other customization based on whether
      * or not the table is being printed, check the return value from
-     * {@link javax.swing.JComponent#isPaintingForPrint()}.
+     * {@link j86.javax.swing.JComponent#isPaintingForPrint()}.
      *
      * @param table  the <code>JTable</code>
      * @param value  the value to assign to the cell at
@@ -182,7 +182,7 @@ public class DefaultTableCellRenderer extends JLabel
      * @param row  the row of the cell to render
      * @param column the column of the cell to render
      * @return the default table cell renderer
-     * @see javax.swing.JComponent#isPaintingForPrint()
+     * @see j86.javax.swing.JComponent#isPaintingForPrint()
      */
     public Component getTableCellRendererComponent(JTable table, Object value,
                           boolean isSelected, boolean hasFocus, int row, int column) {
@@ -215,7 +215,7 @@ public class DefaultTableCellRenderer extends JLabel
             Color background = unselectedBackground != null
                                     ? unselectedBackground
                                     : table.getBackground();
-            if (background == null || background instanceof javax.swing.plaf.UIResource) {
+            if (background == null || background instanceof j86.j86.javax.swing.plaf.UIResource) {
                 Color alternateColor = DefaultLookup.getColor(this, ui, "Table.alternateRowColor");
                 if (alternateColor != null && row % 2 != 0) {
                     background = alternateColor;
@@ -345,7 +345,7 @@ public class DefaultTableCellRenderer extends JLabel
                 || propertyName == "displayedMnemonic"
                 || ((propertyName == "font" || propertyName == "foreground")
                     && oldValue != newValue
-                    && getClientProperty(javax.swing.plaf.basic.BasicHTML.propertyKey) != null)) {
+                    && getClientProperty(j86.j86.j86.javax.swing.plaf.basic.BasicHTML.propertyKey) != null)) {
 
             super.firePropertyChange(propertyName, oldValue, newValue);
         }
@@ -388,11 +388,11 @@ public class DefaultTableCellRenderer extends JLabel
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     public static class UIResource extends DefaultTableCellRenderer
-        implements javax.swing.plaf.UIResource
+        implements j86.j86.javax.swing.plaf.UIResource
     {
     }
 

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.lang.invoke;
+package j86.j86.java.lang.invoke;
 
 /**
  * Thrown to indicate that code has attempted to call a method handle

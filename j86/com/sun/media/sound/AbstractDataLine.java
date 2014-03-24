@@ -23,14 +23,14 @@
  * questions.
  */
 
-package com.sun.media.sound;
+package j86.com.sun.media.sound;
 
-import javax.sound.sampled.AudioFormat;
-import javax.sound.sampled.AudioSystem;
-import javax.sound.sampled.Control;
-import javax.sound.sampled.DataLine;
-import javax.sound.sampled.LineEvent;
-import javax.sound.sampled.LineUnavailableException;
+import j86.javax.sound.sampled.AudioFormat;
+import j86.javax.sound.sampled.AudioSystem;
+import j86.javax.sound.sampled.Control;
+import j86.javax.sound.sampled.DataLine;
+import j86.javax.sound.sampled.LineEvent;
+import j86.javax.sound.sampled.LineUnavailableException;
 
 
 /**

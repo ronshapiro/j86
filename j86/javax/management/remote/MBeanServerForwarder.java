@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.management.remote;
+package j86.j86.javax.management.remote;
 
-import javax.management.MBeanServer;
+import j86.javax.management.MBeanServer;
 
 /**
  * <p>An object of this class implements the MBeanServer interface and

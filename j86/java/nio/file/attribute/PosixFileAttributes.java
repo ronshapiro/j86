@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.nio.file.attribute;
+package j86.j86.j86.java.nio.file.attribute;
 
-import java.util.Set;
+import j86.java.util.Set;
 
 /**
  * File attributes associated with files on file systems used by operating systems

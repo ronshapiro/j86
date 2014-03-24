@@ -38,13 +38,13 @@
  *
  */
 
-package java.text;
+package j86.java.text;
 
-import java.lang.ref.SoftReference;
-import java.text.spi.BreakIteratorProvider;
-import java.util.Locale;
-import sun.util.locale.provider.LocaleProviderAdapter;
-import sun.util.locale.provider.LocaleServiceProviderPool;
+import j86.j86.java.lang.ref.SoftReference;
+import j86.j86.java.text.spi.BreakIteratorProvider;
+import j86.java.util.Locale;
+import j86.j86.j86.sun.util.locale.provider.LocaleProviderAdapter;
+import j86.j86.j86.sun.util.locale.provider.LocaleServiceProviderPool;
 
 
 /**
@@ -583,9 +583,9 @@ public abstract class BreakIterator implements Cloneable
      * localized instances.
      * The returned array represents the union of locales supported by the Java
      * runtime and by installed
-     * {@link java.text.spi.BreakIteratorProvider BreakIteratorProvider} implementations.
+     * {@link j86.j86.java.text.spi.BreakIteratorProvider BreakIteratorProvider} implementations.
      * It must contain at least a <code>Locale</code>
-     * instance equal to {@link java.util.Locale#US Locale.US}.
+     * instance equal to {@link j86.java.util.Locale#US Locale.US}.
      *
      * @return An array of locales for which localized
      *         <code>BreakIterator</code> instances are available.

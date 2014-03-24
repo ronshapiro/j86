@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.security.cert;
+package j86.j86.java.security.cert;
 
-import java.security.GeneralSecurityException;
+import j86.java.security.GeneralSecurityException;
 
 /**
  * CRL (Certificate Revocation List) Exception.

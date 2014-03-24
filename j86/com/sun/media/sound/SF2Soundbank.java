@@ -22,24 +22,24 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.media.sound;
+package j86.com.sun.media.sound;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.net.URL;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
+import j86.java.io.File;
+import j86.java.io.FileInputStream;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.io.OutputStream;
+import j86.java.net.URL;
+import j86.java.util.ArrayList;
+import j86.java.util.Arrays;
+import j86.java.util.Iterator;
+import j86.java.util.List;
+import j86.java.util.Map;
 
-import javax.sound.midi.Instrument;
-import javax.sound.midi.Patch;
-import javax.sound.midi.Soundbank;
-import javax.sound.midi.SoundbankResource;
+import j86.javax.sound.midi.Instrument;
+import j86.javax.sound.midi.Patch;
+import j86.javax.sound.midi.Soundbank;
+import j86.javax.sound.midi.SoundbankResource;
 
 /**
  * A SoundFont 2.04 soundbank reader.

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.nio.file.attribute;
+package j86.j86.j86.java.nio.file.attribute;
 
 /**
  * An attribute view that is a read-only or updatable view of non-opaque
@@ -33,7 +33,7 @@ package java.nio.file.attribute;
  *
  * @since 1.7
  *
- * @see java.nio.file.Files#getFileAttributeView(Path,Class,java.nio.file.LinkOption[])
+ * @see j86.j86.java.nio.file.Files#getFileAttributeView(Path,Class,java.nio.file.LinkOption[])
  */
 
 public interface FileAttributeView

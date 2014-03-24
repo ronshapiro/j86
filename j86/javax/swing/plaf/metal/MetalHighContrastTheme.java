@@ -23,14 +23,14 @@
  * questions.
  */
 
-package javax.swing.plaf.metal;
+package j86.j86.j86.javax.swing.plaf.metal;
 
-import javax.swing.plaf.*;
-import javax.swing.plaf.basic.*;
-import javax.swing.plaf.metal.*;
-import javax.swing.*;
-import javax.swing.border.*;
-import java.awt.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.j86.javax.swing.plaf.basic.*;
+import j86.j86.j86.javax.swing.plaf.metal.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.border.*;
+import j86.java.awt.*;
 
 /**
  * A high contrast theme. This is used on Windows if the system property

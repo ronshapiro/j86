@@ -23,22 +23,22 @@
  * questions.
  */
 
-package java.net;
+package j86.java.net;
 
-import java.net.URI;
-import java.net.CookieStore;
-import java.net.HttpCookie;
-import java.net.URISyntaxException;
-import java.util.List;
-import java.util.Map;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.concurrent.locks.ReentrantLock;
+import j86.java.net.URI;
+import j86.java.net.CookieStore;
+import j86.java.net.HttpCookie;
+import j86.java.net.URISyntaxException;
+import j86.java.util.List;
+import j86.java.util.Map;
+import j86.java.util.ArrayList;
+import j86.java.util.HashMap;
+import j86.java.util.Collections;
+import j86.java.util.Iterator;
+import j86.j86.j86.java.util.concurrent.locks.ReentrantLock;
 
 /**
- * A simple in-memory java.net.CookieStore implementation
+ * A simple in-memory j86.java.net.CookieStore implementation
  *
  * @author Edward Wang
  * @since 1.6

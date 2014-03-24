@@ -23,19 +23,19 @@
  * questions.
  */
 
-package javax.swing;
+package j86.javax.swing;
 
-import javax.swing.event.*;
-import javax.swing.plaf.*;
-import javax.accessibility.*;
+import j86.j86.javax.swing.event.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.javax.accessibility.*;
 
-import java.io.Serializable;
-import java.io.ObjectOutputStream;
-import java.io.IOException;
+import j86.java.io.Serializable;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.IOException;
 
-import java.awt.*;
-import java.util.*;
-import java.beans.*;
+import j86.java.awt.*;
+import j86.java.util.*;
+import j86.java.beans.*;
 
 
 /**
@@ -69,8 +69,8 @@ import java.beans.*;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @beaninfo
  *      attribute: isContainer false
@@ -363,8 +363,8 @@ public class JSlider extends JComponent implements SwingConstants, Accessible {
      * slider.
      * @see #changeListener
      * @see #fireStateChanged
-     * @see javax.swing.event.ChangeListener
-     * @see javax.swing.BoundedRangeModel
+     * @see j86.j86.javax.swing.event.ChangeListener
+     * @see j86.javax.swing.BoundedRangeModel
      */
     protected ChangeListener createChangeListener() {
         return new ModelListener();
@@ -1426,8 +1426,8 @@ public class JSlider extends JComponent implements SwingConstants, Accessible {
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     protected class AccessibleJSlider extends AccessibleJComponent
     implements AccessibleValue {

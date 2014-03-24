@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.invoke.util;
+package j86.j86.sun.invoke.util;
 
-import java.lang.reflect.Modifier;
-import static java.lang.reflect.Modifier.*;
-import sun.reflect.Reflection;
+import j86.j86.j86.java.lang.reflect.Modifier;
+import static j86.j86.j86.java.lang.reflect.Modifier.*;
+import j86.sun.reflect.Reflection;
 
 /**
  * This class centralizes information about the JVM's linkage access control.
@@ -38,7 +38,7 @@ public class VerifyAccess {
     private VerifyAccess() { }  // cannot instantiate
 
     private static final int PACKAGE_ONLY = 0;
-    private static final int PACKAGE_ALLOWED = java.lang.invoke.MethodHandles.Lookup.PACKAGE;
+    private static final int PACKAGE_ALLOWED = j86.j86.java.lang.invoke.MethodHandles.Lookup.PACKAGE;
     private static final int PROTECTED_OR_PACKAGE_ALLOWED = (PACKAGE_ALLOWED|PROTECTED);
     private static final int ALL_ACCESS_MODES = (PUBLIC|PRIVATE|PROTECTED|PACKAGE_ONLY);
     private static final boolean ALLOW_NESTMATE_ACCESS = false;
@@ -203,7 +203,7 @@ public class VerifyAccess {
      * @param type the supposed type of a member or symbolic reference of refc
      * @param refc the class attempting to make the reference
      */
-    public static boolean isTypeVisible(java.lang.invoke.MethodType type, Class<?> refc) {
+    public static boolean isTypeVisible(j86.j86.java.lang.invoke.MethodType type, Class<?> refc) {
         for (int n = -1, max = type.parameterCount(); n < max; n++) {
             Class<?> ptype = (n < 0 ? type.returnType() : type.parameterType(n));
             if (!isTypeVisible(ptype, refc))

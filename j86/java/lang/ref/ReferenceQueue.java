@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.lang.ref;
+package j86.j86.java.lang.ref;
 
 /**
  * Reference queues, to which registered reference objects are appended by the
@@ -68,7 +68,7 @@ public class ReferenceQueue<T> {
             head = r;
             queueLength++;
             if (r instanceof FinalReference) {
-                sun.misc.VM.addFinalRefCount(1);
+                j86.sun.misc.VM.addFinalRefCount(1);
             }
             lock.notifyAll();
             return true;
@@ -86,7 +86,7 @@ public class ReferenceQueue<T> {
             r.next = r;
             queueLength--;
             if (r instanceof FinalReference) {
-                sun.misc.VM.addFinalRefCount(-1);
+                j86.sun.misc.VM.addFinalRefCount(-1);
             }
             return r;
         }

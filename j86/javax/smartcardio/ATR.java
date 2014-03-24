@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.smartcardio;
+package j86.javax.smartcardio;
 
-import java.util.*;
+import j86.java.util.*;
 
 /**
  * A Smart Card's answer-to-reset bytes. A Card's ATR object can be obtained
@@ -42,7 +42,7 @@ import java.util.*;
  * @author  Andreas Sterbenz
  * @author  JSR 268 Expert Group
  */
-public final class ATR implements java.io.Serializable {
+public final class ATR implements j86.java.io.Serializable {
 
     private static final long serialVersionUID = 6695383790847736493L;
 
@@ -156,8 +156,8 @@ public final class ATR implements java.io.Serializable {
         return Arrays.hashCode(atr);
     }
 
-    private void readObject(java.io.ObjectInputStream in)
-            throws java.io.IOException, ClassNotFoundException {
+    private void readObject(j86.java.io.ObjectInputStream in)
+            throws j86.java.io.IOException, ClassNotFoundException {
         atr = (byte[])in.readUnshared();
         parse();
     }

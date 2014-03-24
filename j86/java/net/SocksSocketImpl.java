@@ -22,17 +22,17 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.net;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.BufferedOutputStream;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.security.PrivilegedExceptionAction;
-import sun.net.SocksProxy;
-import sun.net.www.ParseUtil;
-/* import org.ietf.jgss.*; */
+package j86.java.net;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.io.OutputStream;
+import j86.java.io.BufferedOutputStream;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.security.PrivilegedExceptionAction;
+import j86.sun.net.SocksProxy;
+import j86.j86.sun.net.www.ParseUtil;
+/* import j86.org.ietf.jgss.*; */
 
 /**
  * SOCKS (V4 & V5) TCP socket implementation (RFC 1928).
@@ -82,7 +82,7 @@ class SocksSocketImpl extends PlainSocketImpl implements SocksConsts {
     {
         try {
             AccessController.doPrivileged(
-                new java.security.PrivilegedExceptionAction<Void>() {
+                new j86.java.security.PrivilegedExceptionAction<Void>() {
                     public Void run() throws IOException {
                               superConnectServer(host, port, timeout);
                               cmdIn = getInputStream();
@@ -90,7 +90,7 @@ class SocksSocketImpl extends PlainSocketImpl implements SocksConsts {
                               return null;
                           }
                       });
-        } catch (java.security.PrivilegedActionException pae) {
+        } catch (j86.java.security.PrivilegedActionException pae) {
             throw (IOException) pae.getException();
         }
     }
@@ -156,8 +156,8 @@ class SocksSocketImpl extends PlainSocketImpl implements SocksConsts {
             String password = null;
             final InetAddress addr = InetAddress.getByName(server);
             PasswordAuthentication pw =
-                java.security.AccessController.doPrivileged(
-                    new java.security.PrivilegedAction<PasswordAuthentication>() {
+                j86.java.security.AccessController.doPrivileged(
+                    new j86.java.security.PrivilegedAction<PasswordAuthentication>() {
                         public PasswordAuthentication run() {
                                 return Authenticator.requestPasswordAuthentication(
                                        server, addr, serverPort, "SOCKS5", "SOCKS authentication", null);
@@ -167,8 +167,8 @@ class SocksSocketImpl extends PlainSocketImpl implements SocksConsts {
                 userName = pw.getUserName();
                 password = new String(pw.getPassword());
             } else {
-                userName = java.security.AccessController.doPrivileged(
-                        new sun.security.action.GetPropertyAction("user.name"));
+                userName = j86.java.security.AccessController.doPrivileged(
+                        new j86.sun.security.action.GetPropertyAction("user.name"));
             }
             if (userName == null)
                 return false;
@@ -176,14 +176,14 @@ class SocksSocketImpl extends PlainSocketImpl implements SocksConsts {
             out.write(userName.length());
             try {
                 out.write(userName.getBytes("ISO-8859-1"));
-            } catch (java.io.UnsupportedEncodingException uee) {
+            } catch (j86.java.io.UnsupportedEncodingException uee) {
                 assert false;
             }
             if (password != null) {
                 out.write(password.length());
                 try {
                     out.write(password.getBytes("ISO-8859-1"));
-                } catch (java.io.UnsupportedEncodingException uee) {
+                } catch (j86.java.io.UnsupportedEncodingException uee) {
                     assert false;
                 }
             } else
@@ -272,7 +272,7 @@ class SocksSocketImpl extends PlainSocketImpl implements SocksConsts {
         String userName = getUserName();
         try {
             out.write(userName.getBytes("ISO-8859-1"));
-        } catch (java.io.UnsupportedEncodingException uee) {
+        } catch (j86.java.io.UnsupportedEncodingException uee) {
             assert false;
         }
         out.write(0);
@@ -350,8 +350,8 @@ class SocksSocketImpl extends PlainSocketImpl implements SocksConsts {
             // This is the general case
             // server is not null only when the socket was created with a
             // specified proxy in which case it does bypass the ProxySelector
-            ProxySelector sel = java.security.AccessController.doPrivileged(
-                new java.security.PrivilegedAction<ProxySelector>() {
+            ProxySelector sel = j86.java.security.AccessController.doPrivileged(
+                new j86.java.security.PrivilegedAction<ProxySelector>() {
                     public ProxySelector run() {
                             return ProxySelector.getDefault();
                         }
@@ -380,7 +380,7 @@ class SocksSocketImpl extends PlainSocketImpl implements SocksConsts {
             }
             Proxy p = null;
             IOException savedExc = null;
-            java.util.Iterator<Proxy> iProxy = null;
+            j86.java.util.Iterator<Proxy> iProxy = null;
             iProxy = sel.select(uri).iterator();
             if (iProxy == null || !(iProxy.hasNext())) {
                 super.connect(epoint, remainingMillis(deadlineMillis));
@@ -482,7 +482,7 @@ class SocksSocketImpl extends PlainSocketImpl implements SocksConsts {
             out.write(epoint.getHostName().length());
             try {
                 out.write(epoint.getHostName().getBytes("ISO-8859-1"));
-            } catch (java.io.UnsupportedEncodingException uee) {
+            } catch (j86.java.io.UnsupportedEncodingException uee) {
                 assert false;
             }
             out.write((epoint.getPort() >> 8) & 0xff);
@@ -608,7 +608,7 @@ class SocksSocketImpl extends PlainSocketImpl implements SocksConsts {
         String userName = getUserName();
         try {
             out.write(userName.getBytes("ISO-8859-1"));
-        } catch (java.io.UnsupportedEncodingException uee) {
+        } catch (j86.java.io.UnsupportedEncodingException uee) {
             assert false;
         }
         out.write(0);
@@ -667,8 +667,8 @@ class SocksSocketImpl extends PlainSocketImpl implements SocksConsts {
             // This is the general case
             // server is not null only when the socket was created with a
             // specified proxy in which case it does bypass the ProxySelector
-            ProxySelector sel = java.security.AccessController.doPrivileged(
-                new java.security.PrivilegedAction<ProxySelector>() {
+            ProxySelector sel = j86.java.security.AccessController.doPrivileged(
+                new j86.java.security.PrivilegedAction<ProxySelector>() {
                     public ProxySelector run() {
                             return ProxySelector.getDefault();
                         }
@@ -696,7 +696,7 @@ class SocksSocketImpl extends PlainSocketImpl implements SocksConsts {
             }
             Proxy p = null;
             Exception savedExc = null;
-            java.util.Iterator<Proxy> iProxy = null;
+            j86.java.util.Iterator<Proxy> iProxy = null;
             iProxy = sel.select(uri).iterator();
             if (iProxy == null || !(iProxy.hasNext())) {
                 return;
@@ -800,7 +800,7 @@ class SocksSocketImpl extends PlainSocketImpl implements SocksConsts {
             out.write(saddr.getHostName().length());
             try {
                 out.write(saddr.getHostName().getBytes("ISO-8859-1"));
-            } catch (java.io.UnsupportedEncodingException uee) {
+            } catch (j86.java.io.UnsupportedEncodingException uee) {
                 assert false;
             }
             out.write((lport >> 8) & 0xff);
@@ -1035,7 +1035,7 @@ class SocksSocketImpl extends PlainSocketImpl implements SocksConsts {
      * Returns the value of this socket's {@code address} field.
      *
      * @return  the value of this socket's {@code address} field.
-     * @see     java.net.SocketImpl#address
+     * @see     j86.java.net.SocketImpl#address
      */
     @Override
     protected InetAddress getInetAddress() {
@@ -1049,7 +1049,7 @@ class SocksSocketImpl extends PlainSocketImpl implements SocksConsts {
      * Returns the value of this socket's {@code port} field.
      *
      * @return  the value of this socket's {@code port} field.
-     * @see     java.net.SocketImpl#port
+     * @see     j86.java.net.SocketImpl#port
      */
     @Override
     protected int getPort() {
@@ -1084,8 +1084,8 @@ class SocksSocketImpl extends PlainSocketImpl implements SocksConsts {
                 userName = System.getProperty("user.name");
             } catch (SecurityException se) { /* swallow Exception */ }
         } else {
-            userName = java.security.AccessController.doPrivileged(
-                new sun.security.action.GetPropertyAction("user.name"));
+            userName = j86.java.security.AccessController.doPrivileged(
+                new j86.sun.security.action.GetPropertyAction("user.name"));
         }
         return userName;
     }

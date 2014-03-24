@@ -23,10 +23,10 @@
  * questions.
  */
 
-package com.sun.jndi.ldap;
+package j86.com.sun.jndi.ldap;
 
-import javax.naming.directory.SearchControls;
-import javax.naming.event.*;
+import j86.j86.javax.naming.directory.SearchControls;
+import j86.j86.javax.naming.event.*;
 
 /**
  * This class holds the information in an event registration/deregistration

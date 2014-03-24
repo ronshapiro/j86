@@ -23,11 +23,11 @@
  * questions.
  */
 
-package com.sun.jdi.connect;
+package j86.j86.com.sun.jdi.connect;
 
-import java.util.Map;
-import java.util.List;
-import java.io.Serializable;
+import j86.java.util.Map;
+import j86.java.util.List;
+import j86.java.io.Serializable;
 
 /**
  * A method of connection between a debugger and a target VM.
@@ -51,7 +51,7 @@ public interface Connector {
      * Returns a short identifier for the connector. Connector implementors
      * should follow similar naming conventions as are used with packages
      * to avoid name collisions. For example, the Sun connector
-     * implementations have names prefixed with "com.sun.jdi.".
+     * implementations have names prefixed with "j86.com.sun.jdi.".
      * Not intended for exposure to end-user.
      *
      * @return the name of this connector.

@@ -23,20 +23,20 @@
  * questions.
  */
 
-package sun.security.jgss.wrapper;
+package j86.j86.sun.security.jgss.wrapper;
 
-import org.ietf.jgss.*;
-import java.security.Provider;
-import java.security.Security;
-import java.io.IOException;
-import java.io.UnsupportedEncodingException;
-import sun.security.jgss.GSSUtil;
-import sun.security.util.ObjectIdentifier;
-import sun.security.util.DerInputStream;
-import sun.security.util.DerOutputStream;
-import sun.security.jgss.GSSUtil;
-import sun.security.jgss.GSSExceptionImpl;
-import sun.security.jgss.spi.GSSNameSpi;
+import j86.org.ietf.jgss.*;
+import j86.java.security.Provider;
+import j86.java.security.Security;
+import j86.java.io.IOException;
+import j86.java.io.UnsupportedEncodingException;
+import j86.sun.security.jgss.GSSUtil;
+import j86.sun.security.util.ObjectIdentifier;
+import j86.sun.security.util.DerInputStream;
+import j86.sun.security.util.DerOutputStream;
+import j86.sun.security.jgss.GSSUtil;
+import j86.sun.security.jgss.GSSExceptionImpl;
+import j86.j86.sun.security.jgss.spi.GSSNameSpi;
 
 /**
  * This class is essentially a wrapper class for the gss_name_t

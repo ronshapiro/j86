@@ -23,22 +23,22 @@
  * questions.
  */
 
-package javax.crypto;
+package j86.javax.crypto;
 
-import java.util.StringTokenizer;
-import java.util.NoSuchElementException;
-import java.security.AlgorithmParameters;
-import java.security.Provider;
-import java.security.Key;
-import java.security.SecureRandom;
-import java.security.NoSuchAlgorithmException;
-import java.security.NoSuchProviderException;
-import java.security.InvalidKeyException;
-import java.security.InvalidAlgorithmParameterException;
-import java.security.ProviderException;
-import java.security.spec.AlgorithmParameterSpec;
+import j86.java.util.StringTokenizer;
+import j86.java.util.NoSuchElementException;
+import j86.java.security.AlgorithmParameters;
+import j86.java.security.Provider;
+import j86.java.security.Key;
+import j86.java.security.SecureRandom;
+import j86.java.security.NoSuchAlgorithmException;
+import j86.java.security.NoSuchProviderException;
+import j86.java.security.InvalidKeyException;
+import j86.java.security.InvalidAlgorithmParameterException;
+import j86.java.security.ProviderException;
+import j86.j86.java.security.spec.AlgorithmParameterSpec;
 
-import java.nio.ByteBuffer;
+import j86.java.nio.ByteBuffer;
 
 /**
  * This class defines the <i>Service Provider Interface</i> (<b>SPI</b>)
@@ -50,7 +50,7 @@ import java.nio.ByteBuffer;
  * <p>In order to create an instance of <code>Cipher</code>, which
  * encapsulates an instance of this <code>CipherSpi</code> class, an
  * application calls one of the
- * {@link Cipher#getInstance(java.lang.String) getInstance}
+ * {@link Cipher#getInstance(j86.java.lang.String) getInstance}
  * factory methods of the
  * {@link Cipher Cipher} engine class and specifies the requested
  * <i>transformation</i>.
@@ -85,8 +85,8 @@ import java.nio.ByteBuffer;
  * (note the double slashes),
  * in which case the requested mode and/or padding are set automatically by
  * the <code>getInstance</code> methods of <code>Cipher</code>, which invoke
- * the {@link #engineSetMode(java.lang.String) engineSetMode} and
- * {@link #engineSetPadding(java.lang.String) engineSetPadding}
+ * the {@link #engineSetMode(j86.java.lang.String) engineSetMode} and
+ * {@link #engineSetPadding(j86.java.lang.String) engineSetPadding}
  * methods of the provider's subclass of <code>CipherSpi</code>.
  *
  * <p>A <code>Cipher</code> property in a provider master class may have one of
@@ -730,7 +730,7 @@ public abstract class CipherSpi {
         return bufferCrypt(input, output, false);
     }
 
-    // copied from sun.security.jca.JCAUtil
+    // copied from j86.sun.security.jca.JCAUtil
     // will be changed to reference that method once that code has been
     // integrated and promoted
     static int getTempArraySize(int totalSize) {

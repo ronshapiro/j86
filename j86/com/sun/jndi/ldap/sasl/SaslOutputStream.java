@@ -23,14 +23,14 @@
  * questions.
  */
 
-package com.sun.jndi.ldap.sasl;
+package j86.j86.com.sun.jndi.ldap.sasl;
 
-import javax.security.sasl.Sasl;
-import javax.security.sasl.SaslClient;
-import javax.security.sasl.SaslException;
-import java.io.IOException;
-import java.io.FilterOutputStream;
-import java.io.OutputStream;
+import j86.javax.security.sasl.Sasl;
+import j86.javax.security.sasl.SaslClient;
+import j86.javax.security.sasl.SaslException;
+import j86.java.io.IOException;
+import j86.java.io.FilterOutputStream;
+import j86.java.io.OutputStream;
 
 class SaslOutputStream extends FilterOutputStream {
     private static final boolean debug = false;
@@ -116,7 +116,7 @@ class SaslOutputStream extends FilterOutputStream {
         }
     }
 
-    // Copied from com.sun.security.sasl.util.SaslImpl
+    // Copied from j86.j86.com.sun.security.sasl.util.SaslImpl
     /**
      * Encodes an integer into 4 bytes in network byte order in the buffer
      * supplied.

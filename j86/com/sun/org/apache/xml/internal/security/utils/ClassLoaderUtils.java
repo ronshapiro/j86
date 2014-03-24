@@ -21,14 +21,14 @@
  * under the License.
  */
 
-package com.sun.org.apache.xml.internal.security.utils;
+package j86.j86.com.sun.org.apache.xml.internal.security.utils;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.URL;
-import java.util.ArrayList;
-import java.util.Enumeration;
-import java.util.List;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.net.URL;
+import j86.java.util.ArrayList;
+import j86.java.util.Enumeration;
+import j86.java.util.List;
 
 /**
  * This class is extremely useful for loading resources and classes in a fault
@@ -39,8 +39,8 @@ import java.util.List;
 final class ClassLoaderUtils {
 
     /** {@link org.apache.commons.logging} logging facility */
-    private static final java.util.logging.Logger log =
-        java.util.logging.Logger.getLogger(ClassLoaderUtils.class.getName());
+    private static final j86.j86.java.util.logging.Logger log =
+        j86.j86.java.util.logging.Logger.getLogger(ClassLoaderUtils.class.getName());
 
     private ClassLoaderUtils() {
     }
@@ -124,8 +124,8 @@ final class ClassLoaderUtils {
         try {
             urls = Thread.currentThread().getContextClassLoader().getResources(resourceName);
         } catch (IOException e) {
-            if (log.isLoggable(java.util.logging.Level.FINE)) {
-                log.log(java.util.logging.Level.FINE, e.getMessage(), e);
+            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                log.log(j86.j86.java.util.logging.Level.FINE, e.getMessage(), e);
             }
             //ignore
         }
@@ -137,8 +137,8 @@ final class ClassLoaderUtils {
                         resourceName.substring(1)
                     );
             } catch (IOException e) {
-                if (log.isLoggable(java.util.logging.Level.FINE)) {
-                    log.log(java.util.logging.Level.FINE, e.getMessage(), e);
+                if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                    log.log(j86.j86.java.util.logging.Level.FINE, e.getMessage(), e);
                 }
                 // ignore
             }
@@ -152,8 +152,8 @@ final class ClassLoaderUtils {
             try {
                 urls = cluClassloader.getResources(resourceName);
             } catch (IOException e) {
-                if (log.isLoggable(java.util.logging.Level.FINE)) {
-                    log.log(java.util.logging.Level.FINE, e.getMessage(), e);
+                if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                    log.log(j86.j86.java.util.logging.Level.FINE, e.getMessage(), e);
                 }
                 // ignore
             }
@@ -163,8 +163,8 @@ final class ClassLoaderUtils {
             try {
                 urls = cluClassloader.getResources(resourceName.substring(1));
             } catch (IOException e) {
-                if (log.isLoggable(java.util.logging.Level.FINE)) {
-                    log.log(java.util.logging.Level.FINE, e.getMessage(), e);
+                if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                    log.log(j86.j86.java.util.logging.Level.FINE, e.getMessage(), e);
                 }
                 // ignore
             }
@@ -177,8 +177,8 @@ final class ClassLoaderUtils {
                 try {
                     urls = cl.getResources(resourceName);
                 } catch (IOException e) {
-                    if (log.isLoggable(java.util.logging.Level.FINE)) {
-                        log.log(java.util.logging.Level.FINE, e.getMessage(), e);
+                    if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                        log.log(j86.j86.java.util.logging.Level.FINE, e.getMessage(), e);
                     }
                     // ignore
                 }
@@ -216,8 +216,8 @@ final class ClassLoaderUtils {
         try {
             return (url != null) ? url.openStream() : null;
         } catch (IOException e) {
-            if (log.isLoggable(java.util.logging.Level.FINE)) {
-                log.log(java.util.logging.Level.FINE, e.getMessage(), e);
+            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                log.log(j86.j86.java.util.logging.Level.FINE, e.getMessage(), e);
             }
             return null;
         }
@@ -246,8 +246,8 @@ final class ClassLoaderUtils {
                 return cl.loadClass(className);
             }
         } catch (ClassNotFoundException e) {
-            if (log.isLoggable(java.util.logging.Level.FINE)) {
-                log.log(java.util.logging.Level.FINE, e.getMessage(), e);
+            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                log.log(j86.j86.java.util.logging.Level.FINE, e.getMessage(), e);
             }
             //ignore
         }
@@ -268,8 +268,8 @@ final class ClassLoaderUtils {
                     return callingClass.getClassLoader().loadClass(className);
                 }
             }
-            if (log.isLoggable(java.util.logging.Level.FINE)) {
-                log.log(java.util.logging.Level.FINE, ex.getMessage(), ex);
+            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                log.log(j86.j86.java.util.logging.Level.FINE, ex.getMessage(), ex);
             }
             throw ex;
         }

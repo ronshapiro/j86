@@ -59,64 +59,64 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package java.time.format;
+package j86.j86.java.time.format;
 
-import static java.time.temporal.ChronoField.DAY_OF_MONTH;
-import static java.time.temporal.ChronoField.HOUR_OF_DAY;
-import static java.time.temporal.ChronoField.INSTANT_SECONDS;
-import static java.time.temporal.ChronoField.MINUTE_OF_HOUR;
-import static java.time.temporal.ChronoField.MONTH_OF_YEAR;
-import static java.time.temporal.ChronoField.NANO_OF_SECOND;
-import static java.time.temporal.ChronoField.OFFSET_SECONDS;
-import static java.time.temporal.ChronoField.SECOND_OF_MINUTE;
-import static java.time.temporal.ChronoField.YEAR;
+import static j86.j86.java.time.temporal.ChronoField.DAY_OF_MONTH;
+import static j86.j86.java.time.temporal.ChronoField.HOUR_OF_DAY;
+import static j86.j86.java.time.temporal.ChronoField.INSTANT_SECONDS;
+import static j86.j86.java.time.temporal.ChronoField.MINUTE_OF_HOUR;
+import static j86.j86.java.time.temporal.ChronoField.MONTH_OF_YEAR;
+import static j86.j86.java.time.temporal.ChronoField.NANO_OF_SECOND;
+import static j86.j86.java.time.temporal.ChronoField.OFFSET_SECONDS;
+import static j86.j86.java.time.temporal.ChronoField.SECOND_OF_MINUTE;
+import static j86.j86.java.time.temporal.ChronoField.YEAR;
 
-import java.lang.ref.SoftReference;
-import java.math.BigDecimal;
-import java.math.BigInteger;
-import java.math.RoundingMode;
-import java.text.ParsePosition;
-import java.time.DateTimeException;
-import java.time.Instant;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.ZoneId;
-import java.time.ZoneOffset;
-import java.time.chrono.ChronoLocalDate;
-import java.time.chrono.Chronology;
-import java.time.chrono.IsoChronology;
-import java.time.format.DateTimeTextProvider.LocaleStore;
-import java.time.temporal.ChronoField;
-import java.time.temporal.IsoFields;
-import java.time.temporal.TemporalAccessor;
-import java.time.temporal.TemporalField;
-import java.time.temporal.TemporalQueries;
-import java.time.temporal.TemporalQuery;
-import java.time.temporal.ValueRange;
-import java.time.temporal.WeekFields;
-import java.time.zone.ZoneRulesProvider;
-import java.util.AbstractMap.SimpleImmutableEntry;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Locale;
-import java.util.Map;
-import java.util.Map.Entry;
-import java.util.Objects;
-import java.util.Set;
-import java.util.TimeZone;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentMap;
+import j86.j86.java.lang.ref.SoftReference;
+import j86.java.math.BigDecimal;
+import j86.java.math.BigInteger;
+import j86.java.math.RoundingMode;
+import j86.java.text.ParsePosition;
+import j86.java.time.DateTimeException;
+import j86.java.time.Instant;
+import j86.java.time.LocalDate;
+import j86.java.time.LocalDateTime;
+import j86.java.time.ZoneId;
+import j86.java.time.ZoneOffset;
+import j86.j86.java.time.chrono.ChronoLocalDate;
+import j86.j86.java.time.chrono.Chronology;
+import j86.j86.java.time.chrono.IsoChronology;
+import j86.j86.java.time.format.DateTimeTextProvider.LocaleStore;
+import j86.j86.java.time.temporal.ChronoField;
+import j86.j86.java.time.temporal.IsoFields;
+import j86.j86.java.time.temporal.TemporalAccessor;
+import j86.j86.java.time.temporal.TemporalField;
+import j86.j86.java.time.temporal.TemporalQueries;
+import j86.j86.java.time.temporal.TemporalQuery;
+import j86.j86.java.time.temporal.ValueRange;
+import j86.j86.java.time.temporal.WeekFields;
+import j86.j86.java.time.zone.ZoneRulesProvider;
+import j86.java.util.AbstractMap.SimpleImmutableEntry;
+import j86.java.util.ArrayList;
+import j86.java.util.Arrays;
+import j86.java.util.Collections;
+import j86.java.util.Comparator;
+import j86.java.util.HashMap;
+import j86.java.util.HashSet;
+import j86.java.util.Iterator;
+import j86.java.util.LinkedHashMap;
+import j86.java.util.List;
+import j86.java.util.Locale;
+import j86.java.util.Map;
+import j86.java.util.Map.Entry;
+import j86.java.util.Objects;
+import j86.java.util.Set;
+import j86.java.util.TimeZone;
+import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.j86.java.util.concurrent.ConcurrentMap;
 
-import sun.util.locale.provider.LocaleProviderAdapter;
-import sun.util.locale.provider.LocaleResources;
-import sun.util.locale.provider.TimeZoneNameUtility;
+import j86.j86.j86.sun.util.locale.provider.LocaleProviderAdapter;
+import j86.j86.j86.sun.util.locale.provider.LocaleResources;
+import j86.j86.j86.sun.util.locale.provider.TimeZoneNameUtility;
 
 /**
  * Builder to create date-time formatters.
@@ -141,7 +141,7 @@ import sun.util.locale.provider.TimeZoneNameUtility;
  * </ul>
  * In addition, any of the elements may be decorated by padding, either with spaces or any other character.
  * <p>
- * Finally, a shorthand pattern, mostly compatible with {@code java.text.SimpleDateFormat SimpleDateFormat}
+ * Finally, a shorthand pattern, mostly compatible with {@code j86.java.text.SimpleDateFormat SimpleDateFormat}
  * can be used, see {@link #appendPattern(String)}.
  * In practice, this simply parses the pattern and calls other methods on the builder.
  *
@@ -215,7 +215,7 @@ public final class DateTimeFormatterBuilder {
     }
 
     /**
-     * Converts the given FormatStyle to the java.text.DateFormat style.
+     * Converts the given FormatStyle to the j86.java.text.DateFormat style.
      *
      * @param style  the FormatStyle style
      * @return the int style, or -1 if style is null, indicating un-required
@@ -378,7 +378,7 @@ public final class DateTimeFormatterBuilder {
      * The parser for a variable width value such as this normally behaves greedily,
      * requiring one digit, but accepting as many digits as possible.
      * This behavior can be affected by 'adjacent value parsing'.
-     * See {@link #appendValue(java.time.temporal.TemporalField, int)} for full details.
+     * See {@link #appendValue(j86.j86.java.time.temporal.TemporalField, int)} for full details.
      *
      * @param field  the field to append, not null
      * @return this, for chaining, not null
@@ -460,7 +460,7 @@ public final class DateTimeFormatterBuilder {
      * The parser for a variable width value such as this normally behaves greedily,
      * accepting as many digits as possible.
      * This behavior can be affected by 'adjacent value parsing'.
-     * See {@link #appendValue(java.time.temporal.TemporalField, int)} for full details.
+     * See {@link #appendValue(j86.j86.java.time.temporal.TemporalField, int)} for full details.
      * <p>
      * In strict parsing mode, the minimum number of parsed digits is {@code minWidth}
      * and the maximum is {@code maxWidth}.
@@ -1260,7 +1260,7 @@ public final class DateTimeFormatterBuilder {
      * is used, with {@code IsoChronology} as the fallback.
      * <p>
      * Note that this method provides similar functionality to methods on
-     * {@code DateFormat} such as {@link java.text.DateFormat#getDateTimeInstance(int, int)}.
+     * {@code DateFormat} such as {@link j86.java.text.DateFormat#getDateTimeInstance(int, int)}.
      *
      * @param dateStyle  the date style to use, null means no date required
      * @param timeStyle  the time style to use, null means no time required
@@ -1554,7 +1554,7 @@ public final class DateTimeFormatterBuilder {
      * to output directly to ensure that future changes do not break your application.
      * <p>
      * Note that the pattern string is similar, but not identical, to
-     * {@link java.text.SimpleDateFormat SimpleDateFormat}.
+     * {@link j86.java.text.SimpleDateFormat SimpleDateFormat}.
      * The pattern string is also similar, but not identical, to that defined by the
      * Unicode Common Locale Data Repository (CLDR/LDML).
      * Pattern letters 'X' and 'u' are aligned with Unicode CLDR/LDML.
@@ -2985,7 +2985,7 @@ public final class DateTimeFormatterBuilder {
          * Converts a value for this field to a fraction between 0 and 1.
          * <p>
          * The fractional value is between 0 (inclusive) and 1 (exclusive).
-         * It can only be returned if the {@link java.time.temporal.TemporalField#range() value range} is fixed.
+         * It can only be returned if the {@link j86.j86.java.time.temporal.TemporalField#range() value range} is fixed.
          * The fraction is obtained by calculation from the field range using 9 decimal
          * places and a rounding mode of {@link RoundingMode#FLOOR FLOOR}.
          * The calculation is inaccurate if the values do not run continuously from smallest to largest.
@@ -3012,7 +3012,7 @@ public final class DateTimeFormatterBuilder {
          * Converts a fraction from 0 to 1 for this field to a value.
          * <p>
          * The fractional value must be between 0 (inclusive) and 1 (exclusive).
-         * It can only be returned if the {@link java.time.temporal.TemporalField#range() value range} is fixed.
+         * It can only be returned if the {@link j86.j86.java.time.temporal.TemporalField#range() value range} is fixed.
          * The value is obtained by calculation from the field range and a rounding
          * mode of {@link RoundingMode#FLOOR FLOOR}.
          * The calculation is inaccurate if the values do not run continuously from smallest to largest.

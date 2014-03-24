@@ -23,10 +23,10 @@
  * questions.
  */
 
-package com.sun.crypto.provider;
+package j86.com.sun.crypto.provider;
 
-import javax.crypto.IllegalBlockSizeException;
-import javax.crypto.ShortBufferException;
+import j86.javax.crypto.IllegalBlockSizeException;
+import j86.javax.crypto.ShortBufferException;
 
 /**
  * This class represents ciphers in cipher text stealing (CTS) mode.

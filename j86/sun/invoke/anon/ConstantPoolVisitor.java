@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.invoke.anon;
+package j86.j86.sun.invoke.anon;
 
 /**
  * A visitor called by {@link ConstantPoolParser#parse(ConstantPoolVisitor)}

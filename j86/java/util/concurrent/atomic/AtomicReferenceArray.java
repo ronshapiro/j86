@@ -33,23 +33,23 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package java.util.concurrent.atomic;
-import java.util.function.UnaryOperator;
-import java.util.function.BinaryOperator;
-import java.util.Arrays;
-import java.lang.reflect.Array;
-import sun.misc.Unsafe;
+package j86.j86.j86.java.util.concurrent.atomic;
+import j86.j86.java.util.function.UnaryOperator;
+import j86.j86.java.util.function.BinaryOperator;
+import j86.java.util.Arrays;
+import j86.j86.j86.java.lang.reflect.Array;
+import j86.sun.misc.Unsafe;
 
 /**
  * An array of object references in which elements may be updated
- * atomically.  See the {@link java.util.concurrent.atomic} package
+ * atomically.  See the {@link j86.j86.j86.java.util.concurrent.atomic} package
  * specification for description of the properties of atomic
  * variables.
  * @since 1.5
  * @author Doug Lea
  * @param <E> The base class of elements held in this array
  */
-public class AtomicReferenceArray<E> implements java.io.Serializable {
+public class AtomicReferenceArray<E> implements j86.java.io.Serializable {
     private static final long serialVersionUID = -6209656149925076980L;
 
     private static final Unsafe unsafe;
@@ -315,13 +315,13 @@ public class AtomicReferenceArray<E> implements java.io.Serializable {
     /**
      * Reconstitutes the instance from a stream (that is, deserializes it).
      */
-    private void readObject(java.io.ObjectInputStream s)
-        throws java.io.IOException, ClassNotFoundException,
-        java.io.InvalidObjectException {
+    private void readObject(j86.java.io.ObjectInputStream s)
+        throws j86.java.io.IOException, ClassNotFoundException,
+        j86.java.io.InvalidObjectException {
         // Note: This must be changed if any additional fields are defined
         Object a = s.readFields().get("array", null);
         if (a == null || !a.getClass().isArray())
-            throw new java.io.InvalidObjectException("Not array type");
+            throw new j86.java.io.InvalidObjectException("Not array type");
         if (a.getClass() != Object[].class)
             a = Arrays.copyOf((Object[])a, Array.getLength(a), Object[].class);
         unsafe.putObjectVolatile(this, arrayFieldOffset, a);

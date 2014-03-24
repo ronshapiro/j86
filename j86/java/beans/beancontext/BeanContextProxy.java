@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.beans.beancontext;
+package j86.j86.java.beans.beancontext;
 
 /**
  * <p>
@@ -31,7 +31,7 @@ package java.beans.beancontext;
  * not directly have a BeanContext(Child) associated with
  * it (via implementing that interface or a subinterface thereof),
  * but has a public BeanContext(Child) delegated from it.
- * For example, a subclass of java.awt.Container may have a BeanContext
+ * For example, a subclass of j86.java.awt.Container may have a BeanContext
  * associated with it that all Component children of that Container shall
  * be contained within.
  * </p>
@@ -69,8 +69,8 @@ package java.beans.beancontext;
  * @author Laurence P. G. Cable
  * @since 1.2
  *
- * @see java.beans.beancontext.BeanContextChild
- * @see java.beans.beancontext.BeanContextChildSupport
+ * @see j86.j86.java.beans.beancontext.BeanContextChild
+ * @see j86.j86.java.beans.beancontext.BeanContextChildSupport
  */
 
 public interface BeanContextProxy {

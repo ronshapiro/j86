@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.nio.charset;
+package j86.j86.java.nio.charset;
 
 
 /**

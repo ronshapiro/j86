@@ -23,20 +23,20 @@
  * questions.
  */
 
-package sun.font;
+package j86.sun.font;
 
-import java.lang.ref.SoftReference;
-import java.lang.ref.WeakReference;
-import java.awt.Font;
-import java.awt.GraphicsEnvironment;
-import java.awt.Rectangle;
-import java.awt.geom.AffineTransform;
-import java.awt.geom.GeneralPath;
-import java.awt.geom.NoninvertibleTransformException;
-import java.awt.geom.Point2D;
-import java.awt.geom.Rectangle2D;
-import java.util.concurrent.ConcurrentHashMap;
-import static sun.awt.SunHints.*;
+import j86.j86.java.lang.ref.SoftReference;
+import j86.j86.java.lang.ref.WeakReference;
+import j86.java.awt.Font;
+import j86.java.awt.GraphicsEnvironment;
+import j86.java.awt.Rectangle;
+import j86.j86.java.awt.geom.AffineTransform;
+import j86.j86.java.awt.geom.GeneralPath;
+import j86.j86.java.awt.geom.NoninvertibleTransformException;
+import j86.j86.java.awt.geom.Point2D;
+import j86.j86.java.awt.geom.Rectangle2D;
+import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import static j86.sun.awt.SunHints.*;
 
 
 public class FileFontStrike extends PhysicalStrike {

@@ -20,21 +20,21 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.sun.org.apache.xml.internal.security.keys.content;
+package j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.content;
 
-import java.math.BigInteger;
-import java.security.cert.X509Certificate;
+import j86.java.math.BigInteger;
+import j86.j86.java.security.cert.X509Certificate;
 
-import com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
-import com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509CRL;
-import com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509Certificate;
-import com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509Digest;
-import com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509IssuerSerial;
-import com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509SKI;
-import com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509SubjectName;
-import com.sun.org.apache.xml.internal.security.utils.Constants;
-import com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy;
-import com.sun.org.apache.xml.internal.security.utils.XMLUtils;
+import j86.j86.com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+import j86.j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509CRL;
+import j86.j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509Certificate;
+import j86.j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509Digest;
+import j86.j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509IssuerSerial;
+import j86.j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509SKI;
+import j86.j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509SubjectName;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.Constants;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -42,8 +42,8 @@ import org.w3c.dom.Node;
 public class X509Data extends SignatureElementProxy implements KeyInfoContent {
 
     /** {@link org.apache.commons.logging} logging facility */
-    private static java.util.logging.Logger log =
-        java.util.logging.Logger.getLogger(X509Data.class.getName());
+    private static j86.j86.java.util.logging.Logger log =
+        j86.j86.java.util.logging.Logger.getLogger(X509Data.class.getName());
 
     /**
      * Constructor X509Data
@@ -463,8 +463,8 @@ public class X509Data extends SignatureElementProxy implements KeyInfoContent {
      * TODO implement
      **/
     public Element itemUnknownElement(int i) {
-        if (log.isLoggable(java.util.logging.Level.FINE)) {
-            log.log(java.util.logging.Level.FINE, "itemUnknownElement not implemented:" + i);
+        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+            log.log(j86.j86.java.util.logging.Level.FINE, "itemUnknownElement not implemented:" + i);
         }
         return null;
     }

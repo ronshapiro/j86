@@ -23,13 +23,13 @@
  * questions.
  */
 
-package com.sun.crypto.provider;
+package j86.com.sun.crypto.provider;
 
-import java.security.*;
-import java.security.spec.*;
+import j86.java.security.*;
+import j86.j86.java.security.spec.*;
 
-import javax.crypto.*;
-import javax.crypto.spec.RC2ParameterSpec;
+import j86.javax.crypto.*;
+import j86.j86.javax.crypto.spec.RC2ParameterSpec;
 
 /**
  * JCE CipherSpi for the RC2(tm) algorithm as described in RFC 2268.

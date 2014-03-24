@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.rmi.server;
+package j86.j86.java.rmi.server;
 
-import java.io.DataInput;
-import java.io.DataOutput;
-import java.io.IOException;
-import java.io.Serializable;
-import java.security.SecureRandom;
+import j86.java.io.DataInput;
+import j86.java.io.DataOutput;
+import j86.java.io.IOException;
+import j86.java.io.Serializable;
+import j86.java.security.SecureRandom;
 
 /**
  * A <code>UID</code> represents an identifier that is unique over time

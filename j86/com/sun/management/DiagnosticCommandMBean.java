@@ -23,26 +23,26 @@
  * questions.
  */
 
-package com.sun.management;
+package com.j86.sun.management;
 
-import java.lang.management.PlatformManagedObject;
-import javax.management.DynamicMBean;
+import j86.j86.java.lang.management.PlatformManagedObject;
+import j86.javax.management.DynamicMBean;
 
 /**
  * Management interface for the diagnostic commands for the HotSpot Virtual Machine.
  *
  * <p>The {code DiagnosticCommandMBean} is registered to the
- * {@linkplain java.lang.management.ManagementFactory#getPlatformMBeanServer
+ * {@linkplain j86.j86.java.lang.management.ManagementFactory#getPlatformMBeanServer
  * platform MBeanServer} as are other platform MBeans.
  *
- * <p>The {@link javax.management.ObjectName ObjectName} for uniquely identifying
+ * <p>The {@link j86.javax.management.ObjectName ObjectName} for uniquely identifying
  * the diagnostic MBean within an MBeanServer is:
  * <blockquote>
- *    {@code com.sun.management:type=DiagnosticCommand}
+ *    {@code com.j86.sun.management:type=DiagnosticCommand}
  * </blockquote>
  *
- * <p>This MBean is a {@link javax.management.DynamicMBean DynamicMBean}
- * and also a {@link javax.management.NotificationEmitter}.
+ * <p>This MBean is a {@link j86.javax.management.DynamicMBean DynamicMBean}
+ * and also a {@link j86.javax.management.NotificationEmitter}.
  * The {@code DiagnosticCommandMBean} is generated at runtime and is subject to
  * modifications during the lifetime of the Java virtual machine.
  *
@@ -52,7 +52,7 @@ import javax.management.DynamicMBean;
  * <li>the diagnostic command name which is the name being referenced in
  *     the HotSpot Virtual Machine</li>
  * <li>the MBean operation name which is the
- *     {@linkplain javax.management.MBeanOperationInfo#getName() name}
+ *     {@linkplain j86.javax.management.MBeanOperationInfo#getName() name}
  *     generated for the diagnostic command operation invocation.
  *     The MBean operation name is implementation dependent</li>
  * </ul>
@@ -84,23 +84,23 @@ import javax.management.DynamicMBean;
  * passed to the invocation method.
  *
  * <p>Like any operation of a dynamic MBean, each of these operations is
- * described by {@link javax.management.MBeanOperationInfo MBeanOperationInfo}
+ * described by {@link j86.javax.management.MBeanOperationInfo MBeanOperationInfo}
  * instance. Here's the values returned by this object:
  * <ul>
- *  <li>{@link javax.management.MBeanOperationInfo#getName() getName()}
+ *  <li>{@link j86.javax.management.MBeanOperationInfo#getName() getName()}
  *      returns the operation name generated from the diagnostic command name</li>
- *  <li>{@link javax.management.MBeanOperationInfo#getDescription() getDescription()}
+ *  <li>{@link j86.javax.management.MBeanOperationInfo#getDescription() getDescription()}
  *      returns the diagnostic command description
  *      (the same as the one return in the 'help' command)</li>
- *  <li>{@link javax.management.MBeanOperationInfo#getImpact() getImpact()}
+ *  <li>{@link j86.javax.management.MBeanOperationInfo#getImpact() getImpact()}
  *      returns <code>ACTION_INFO</code></li>
- *  <li>{@link javax.management.MBeanOperationInfo#getReturnType() getReturnType()}
- *      returns {@code java.lang.String}</li>
- *  <li>{@link javax.management.MBeanOperationInfo#getDescriptor() getDescriptor()}
+ *  <li>{@link j86.javax.management.MBeanOperationInfo#getReturnType() getReturnType()}
+ *      returns {@code j86.java.lang.String}</li>
+ *  <li>{@link j86.javax.management.MBeanOperationInfo#getDescriptor() getDescriptor()}
  *      returns a Descriptor instance (see below)</li>
  * </ul>
  *
- * <p>The {@link javax.management.Descriptor Descriptor}
+ * <p>The {@link j86.javax.management.Descriptor Descriptor}
  * is a collection of fields containing additional
  * meta-data for a JMX element. A field is a name and an associated value.
  * The additional meta-data provided for an operation associated with a
@@ -205,11 +205,11 @@ import javax.management.DynamicMBean;
  *
  * <p>When the set of diagnostic commands currently supported by the Java
  * Virtual Machine is modified, the {@code DiagnosticCommandMBean} emits
- * a {@link javax.management.Notification} with a
- * {@linkplain javax.management.Notification#getType() type} of
- * <a href="{@docRoot}/../../../../api/javax/management/MBeanInfo.html#info-changed">
+ * a {@link j86.javax.management.Notification} with a
+ * {@linkplain j86.javax.management.Notification#getType() type} of
+ * <a href="{@docRoot}/../../../../api/j86.javax.management/MBeanInfo.html#info-changed">
  * {@code "jmx.mbean.info.changed"}</a> and a
- * {@linkplain javax.management.Notification#getUserData() userData} that
+ * {@linkplain j86.javax.management.Notification#getUserData() userData} that
  * is the new {@code MBeanInfo}.
  *
  * @since 8

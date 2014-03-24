@@ -33,9 +33,9 @@
  * patents. This notice and attribution to IBM may not be removed.
  */
 
-package sun.font;
+package j86.sun.font;
 
-import java.text.Bidi;
+import j86.java.text.Bidi;
 
 public final class BidiUtils {
 

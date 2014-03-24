@@ -23,86 +23,86 @@
  * questions.
  */
 
-package sun.print;
+package j86.sun.print;
 
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.Font;
-import java.awt.FontMetrics;
-import java.awt.GraphicsEnvironment;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.HeadlessException;
-import java.awt.Rectangle;
-import java.awt.Shape;
+import j86.java.awt.Color;
+import j86.java.awt.Component;
+import j86.java.awt.Font;
+import j86.java.awt.FontMetrics;
+import j86.java.awt.GraphicsEnvironment;
+import j86.java.awt.Graphics;
+import j86.java.awt.Graphics2D;
+import j86.java.awt.HeadlessException;
+import j86.java.awt.Rectangle;
+import j86.java.awt.Shape;
 
-import java.awt.image.BufferedImage;
+import j86.j86.j86.java.awt.image.BufferedImage;
 
-import java.awt.font.FontRenderContext;
+import j86.j86.java.awt.font.FontRenderContext;
 
-import java.awt.geom.AffineTransform;
-import java.awt.geom.PathIterator;
-import java.awt.geom.Rectangle2D;
+import j86.j86.java.awt.geom.AffineTransform;
+import j86.j86.java.awt.geom.PathIterator;
+import j86.j86.java.awt.geom.Rectangle2D;
 
-import java.awt.image.BufferedImage;
+import j86.j86.j86.java.awt.image.BufferedImage;
 
-import java.awt.print.Pageable;
-import java.awt.print.PageFormat;
-import java.awt.print.Paper;
-import java.awt.print.Printable;
-import java.awt.print.PrinterException;
-import java.awt.print.PrinterIOException;
-import java.awt.print.PrinterJob;
+import j86.j86.java.awt.print.Pageable;
+import j86.j86.java.awt.print.PageFormat;
+import j86.j86.java.awt.print.Paper;
+import j86.j86.java.awt.print.Printable;
+import j86.j86.java.awt.print.PrinterException;
+import j86.j86.java.awt.print.PrinterIOException;
+import j86.j86.java.awt.print.PrinterJob;
 
-import javax.print.DocFlavor;
-import javax.print.PrintService;
-import javax.print.StreamPrintService;
-import javax.print.attribute.HashPrintRequestAttributeSet;
-import javax.print.attribute.PrintRequestAttributeSet;
-import javax.print.attribute.PrintServiceAttributeSet;
-import javax.print.attribute.standard.PrinterName;
-import javax.print.attribute.standard.Chromaticity;
-import javax.print.attribute.standard.Copies;
-import javax.print.attribute.standard.Destination;
-import javax.print.attribute.standard.DialogTypeSelection;
-import javax.print.attribute.standard.JobName;
-import javax.print.attribute.standard.Sides;
+import j86.javax.print.DocFlavor;
+import j86.javax.print.PrintService;
+import j86.javax.print.StreamPrintService;
+import j86.j86.javax.print.attribute.HashPrintRequestAttributeSet;
+import j86.j86.javax.print.attribute.PrintRequestAttributeSet;
+import j86.j86.javax.print.attribute.PrintServiceAttributeSet;
+import j86.j86.j86.javax.print.attribute.standard.PrinterName;
+import j86.j86.j86.javax.print.attribute.standard.Chromaticity;
+import j86.j86.j86.javax.print.attribute.standard.Copies;
+import j86.j86.j86.javax.print.attribute.standard.Destination;
+import j86.j86.j86.javax.print.attribute.standard.DialogTypeSelection;
+import j86.j86.j86.javax.print.attribute.standard.JobName;
+import j86.j86.j86.javax.print.attribute.standard.Sides;
 
-import java.io.BufferedInputStream;
-import java.io.BufferedOutputStream;
-import java.io.BufferedReader;
-import java.io.CharConversionException;
-import java.io.File;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.IOException;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.OutputStream;
-import java.io.PrintStream;
-import java.io.PrintWriter;
-import java.io.StringWriter;
+import j86.java.io.BufferedInputStream;
+import j86.java.io.BufferedOutputStream;
+import j86.java.io.BufferedReader;
+import j86.java.io.CharConversionException;
+import j86.java.io.File;
+import j86.java.io.InputStream;
+import j86.java.io.InputStreamReader;
+import j86.java.io.IOException;
+import j86.java.io.FileInputStream;
+import j86.java.io.FileOutputStream;
+import j86.java.io.OutputStream;
+import j86.java.io.PrintStream;
+import j86.java.io.PrintWriter;
+import j86.java.io.StringWriter;
 
-import java.util.ArrayList;
-import java.util.Enumeration;
-import java.util.Locale;
-import java.util.Properties;
+import j86.java.util.ArrayList;
+import j86.java.util.Enumeration;
+import j86.java.util.Locale;
+import j86.java.util.Properties;
 
-import sun.awt.CharsetString;
-import sun.awt.FontConfiguration;
-import sun.awt.FontDescriptor;
-import sun.awt.PlatformFont;
-import sun.awt.SunToolkit;
-import sun.font.FontManagerFactory;
-import sun.font.FontUtilities;
+import j86.sun.awt.CharsetString;
+import j86.sun.awt.FontConfiguration;
+import j86.sun.awt.FontDescriptor;
+import j86.sun.awt.PlatformFont;
+import j86.sun.awt.SunToolkit;
+import j86.sun.font.FontManagerFactory;
+import j86.sun.font.FontUtilities;
 
-import java.nio.charset.*;
-import java.nio.CharBuffer;
-import java.nio.ByteBuffer;
-import java.nio.file.Files;
+import j86.j86.java.nio.charset.*;
+import j86.java.nio.CharBuffer;
+import j86.java.nio.ByteBuffer;
+import j86.j86.java.nio.file.Files;
 
 //REMIND: Remove use of this class when IPPPrintService is moved to share directory.
-import java.lang.reflect.Method;
+import j86.j86.j86.java.lang.reflect.Method;
 
 /**
  * A class which initiates and executes a PostScript printer job.
@@ -345,8 +345,8 @@ public class PSPrinterJob extends RasterPrinterJob {
     static {
        //enable priviledges so initProps can access system properties,
         // open the property file, etc.
-        java.security.AccessController.doPrivileged(
-                            new java.security.PrivilegedAction() {
+        j86.java.security.AccessController.doPrivileged(
+                            new j86.java.security.PrivilegedAction() {
             public Object run() {
                 mFontProps = initProps();
                 String osName = System.getProperty("os.name");
@@ -425,7 +425,7 @@ public class PSPrinterJob extends RasterPrinterJob {
      *          true otherwise.
      * @exception HeadlessException if GraphicsEnvironment.isHeadless()
      * returns true.
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      */
     public boolean printDialog() throws HeadlessException {
 
@@ -498,7 +498,7 @@ public class PSPrinterJob extends RasterPrinterJob {
     protected void startDoc() throws PrinterException {
 
         // A security check has been performed in the
-        // java.awt.print.printerJob.getPrinterJob method.
+        // j86.j86.java.awt.print.printerJob.getPrinterJob method.
         // We use an inner class to execute the privilged open operations.
         // Note that we only open a file if it has been nominated by
         // the end-user in a dialog that we ouselves put up.
@@ -532,7 +532,7 @@ public class PSPrinterJob extends RasterPrinterJob {
                     }
                 } else {
                     PrinterOpener po = new PrinterOpener();
-                    java.security.AccessController.doPrivileged(po);
+                    j86.java.security.AccessController.doPrivileged(po);
                     if (po.pex != null) {
                         throw po.pex;
                     }
@@ -622,11 +622,11 @@ public class PSPrinterJob extends RasterPrinterJob {
                                            paperWidth + " "+ paperHeight+"]");
 
             final PrintService pservice = getPrintService();
-            Boolean isPS = (Boolean)java.security.AccessController.doPrivileged(
-                new java.security.PrivilegedAction() {
+            Boolean isPS = (Boolean)j86.java.security.AccessController.doPrivileged(
+                new j86.java.security.PrivilegedAction() {
                     public Object run() {
                        try {
-                           Class psClass = Class.forName("sun.print.IPPPrintService");
+                           Class psClass = Class.forName("j86.sun.print.IPPPrintService");
                            if (psClass.isInstance(pservice)) {
                                Method isPSMethod = psClass.getMethod("isPostscript",
                                                                      (Class[])null);
@@ -660,7 +660,7 @@ public class PSPrinterJob extends RasterPrinterJob {
 
     // Inner class to run "privileged" to open the printer output stream.
 
-    private class PrinterOpener implements java.security.PrivilegedAction {
+    private class PrinterOpener implements j86.java.security.PrivilegedAction {
         PrinterException pex;
         OutputStream result;
 
@@ -687,7 +687,7 @@ public class PSPrinterJob extends RasterPrinterJob {
 
     // Inner class to run "privileged" to invoke the system print command
 
-    private class PrinterSpooler implements java.security.PrivilegedAction {
+    private class PrinterSpooler implements j86.java.security.PrivilegedAction {
         PrinterException pex;
 
         private void handleProcessFailure(final Process failedProcess,
@@ -752,8 +752,8 @@ public class PSPrinterJob extends RasterPrinterJob {
         if (mPSStream != null && mDestType != RasterPrinterJob.STREAM) {
             mPSStream.close();
         }
-        java.security.AccessController.doPrivileged(
-            new java.security.PrivilegedAction() {
+        j86.java.security.AccessController.doPrivileged(
+            new j86.java.security.PrivilegedAction() {
 
             public Object run() {
                if (spoolFile != null && spoolFile.exists()) {
@@ -789,7 +789,7 @@ public class PSPrinterJob extends RasterPrinterJob {
                 }
             }
             PrinterSpooler spooler = new PrinterSpooler();
-            java.security.AccessController.doPrivileged(spooler);
+            j86.java.security.AccessController.doPrivileged(spooler);
             if (spooler.pex != null) {
                 throw spooler.pex;
             }
@@ -826,13 +826,13 @@ public class PSPrinterJob extends RasterPrinterJob {
 
             final PrintService pservice = getPrintService();
             Boolean isPS =
-                (Boolean)java.security.AccessController.doPrivileged(
+                (Boolean)j86.java.security.AccessController.doPrivileged(
 
-                new java.security.PrivilegedAction() {
+                new j86.java.security.PrivilegedAction() {
                     public Object run() {
                         try {
                             Class psClass =
-                                Class.forName("sun.print.IPPPrintService");
+                                Class.forName("j86.sun.print.IPPPrintService");
                             if (psClass.isInstance(pservice)) {
                                 Method isPSMethod =
                                     psClass.getMethod("isPostscript",
@@ -1115,7 +1115,7 @@ public class PSPrinterJob extends RasterPrinterJob {
             CharsetEncoder fontCS = cs.fontDescriptor.encoder;
             String charsetName = cs.fontDescriptor.getFontCharsetName();
             /*
-             * sun.awt.Symbol perhaps should return "symbol" for encoding.
+             * j86.sun.awt.Symbol perhaps should return "symbol" for encoding.
              * Similarly X11Dingbats should return "dingbats"
              * Forced to check for win32 & x/unix names for these converters.
              */
@@ -2215,7 +2215,7 @@ public class PSPrinterJob extends RasterPrinterJob {
                            llx + " " + lly + " " + urx + " " + ury);
             stream.println("%%Title: " + epsTitle);
             stream.println("%%Creator: Java Printing");
-            stream.println("%%CreationDate: " + new java.util.Date());
+            stream.println("%%CreationDate: " + new j86.java.util.Date());
             stream.println("%%EndComments");
             stream.println("/pluginSave save def");
             stream.println("mark"); // for restoring stack state on return

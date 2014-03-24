@@ -23,27 +23,27 @@
  * questions.
  */
 
-package sun.applet;
+package j86.sun.applet;
 
-import java.io.File;
-import java.io.FilePermission;
-import java.io.IOException;
-import java.io.FileDescriptor;
-import java.net.URL;
-import java.net.URLClassLoader;
-import java.net.InetAddress;
-import java.net.UnknownHostException;
-import java.net.SocketPermission;
-import java.util.Enumeration;
-import java.util.Iterator;
-import java.util.HashSet;
-import java.util.StringTokenizer;
-import java.security.*;
-import java.lang.reflect.*;
-import sun.awt.AWTSecurityManager;
-import sun.awt.AppContext;
-import sun.security.provider.*;
-import sun.security.util.SecurityConstants;
+import j86.java.io.File;
+import j86.java.io.FilePermission;
+import j86.java.io.IOException;
+import j86.java.io.FileDescriptor;
+import j86.java.net.URL;
+import j86.java.net.URLClassLoader;
+import j86.java.net.InetAddress;
+import j86.java.net.UnknownHostException;
+import j86.java.net.SocketPermission;
+import j86.java.util.Enumeration;
+import j86.java.util.Iterator;
+import j86.java.util.HashSet;
+import j86.java.util.StringTokenizer;
+import j86.java.security.*;
+import j86.j86.j86.java.lang.reflect.*;
+import j86.sun.awt.AWTSecurityManager;
+import j86.sun.awt.AppContext;
+import j86.sun.security.provider.*;
+import j86.sun.security.util.SecurityConstants;
 
 
 /**
@@ -273,7 +273,7 @@ class AppletSecurity extends AWTSecurityManager {
      * @param      pkg   the package name.
      * @exception  SecurityException  if the caller does not have
      *             permission to access the specified package.
-     * @see        java.lang.ClassLoader#loadClass(java.lang.String, boolean)
+     * @see        j86.java.lang.ClassLoader#loadClass(java.lang.String, boolean)
      */
     public void checkPackageAccess(final String pkgname) {
 
@@ -290,7 +290,7 @@ class AppletSecurity extends AWTSecurityManager {
             //
             if (pkgname.equals(pkg) || pkgname.startsWith(pkg + "."))
             {
-                checkPermission(new java.lang.RuntimePermission
+                checkPermission(new j86.java.lang.RuntimePermission
                             ("accessClassInPackage." + pkgname));
             }
         }
@@ -344,8 +344,8 @@ class AppletSecurity extends AWTSecurityManager {
       * calling context.
       *
       * @return  the AppContext corresponding to the current context.
-      * @see     sun.awt.AppContext
-      * @see     java.lang.SecurityManager
+      * @see     j86.sun.awt.AppContext
+      * @see     j86.java.lang.SecurityManager
       * @since   JDK1.2.1
       */
     public AppContext getAppContext() {

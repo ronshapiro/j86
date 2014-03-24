@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.awt.datatransfer;
+package j86.j86.java.awt.datatransfer;
 
-import java.util.Map;
+import j86.java.util.Map;
 
 
 /**
@@ -51,7 +51,7 @@ public interface FlavorMap {
      *        specified, a mapping of all <code>DataFlavor</code>s currently
      *        known to this <code>FlavorMap</code> to their corresponding
      *        <code>String</code> natives will be returned.
-     * @return a <code>java.util.Map</code> of <code>DataFlavor</code>s to
+     * @return a <code>j86.java.util.Map</code> of <code>DataFlavor</code>s to
      *         <code>String</code> natives
      */
     Map<DataFlavor,String> getNativesForFlavors(DataFlavor[] flavors);
@@ -68,7 +68,7 @@ public interface FlavorMap {
      *        specified, a mapping of all <code>String</code> natives currently
      *        known to this <code>FlavorMap</code> to their corresponding
      *        <code>DataFlavor</code>s will be returned.
-     * @return a <code>java.util.Map</code> of <code>String</code> natives to
+     * @return a <code>j86.java.util.Map</code> of <code>String</code> natives to
      *         <code>DataFlavor</code>s
      */
     Map<String,DataFlavor> getFlavorsForNatives(String[] natives);

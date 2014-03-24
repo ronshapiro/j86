@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.management.jdp;
+package j86.j86.sun.management.jdp;
 
-import java.io.ByteArrayOutputStream;
-import java.io.DataOutputStream;
-import java.io.IOException;
+import j86.java.io.ByteArrayOutputStream;
+import j86.java.io.DataOutputStream;
+import j86.java.io.IOException;
 
 /**
  * JdpPacketWriter responsible for writing a packet

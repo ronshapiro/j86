@@ -23,13 +23,13 @@
  * questions.
  */
 
-package java.awt.datatransfer;
+package j86.j86.java.awt.datatransfer;
 
-import java.util.Enumeration;
-import java.util.Hashtable;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Set;
+import j86.java.util.Enumeration;
+import j86.java.util.Hashtable;
+import j86.java.util.Iterator;
+import j86.java.util.Map;
+import j86.java.util.Set;
 
 
 /**

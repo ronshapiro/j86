@@ -23,20 +23,20 @@
  * questions.
  */
 
-package sun.security.pkcs11;
+package j86.j86.sun.security.pkcs11;
 
-import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
-import java.io.*;
-import java.lang.ref.*;
+import j86.java.util.*;
+import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.io.*;
+import j86.j86.java.lang.ref.*;
 
-import java.security.*;
-import javax.security.auth.login.LoginException;
+import j86.java.security.*;
+import j86.j86.javax.security.auth.login.LoginException;
 
-import sun.security.jca.JCAUtil;
+import j86.sun.security.jca.JCAUtil;
 
-import sun.security.pkcs11.wrapper.*;
-import static sun.security.pkcs11.wrapper.PKCS11Constants.*;
+import j86.j86.j86.sun.security.pkcs11.wrapper.*;
+import static j86.j86.j86.sun.security.pkcs11.wrapper.PKCS11Constants.*;
 
 /**
  * PKCS#11 token.

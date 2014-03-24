@@ -23,12 +23,12 @@
  * questions.
  */
 
-package java.awt.dnd;
+package j86.j86.java.awt.dnd;
 
-import java.util.EventListener;
+import j86.java.util.EventListener;
 
-import java.awt.dnd.DropTargetDragEvent;
-import java.awt.dnd.DropTargetDropEvent;
+import j86.j86.java.awt.dnd.DropTargetDragEvent;
+import j86.j86.java.awt.dnd.DropTargetDropEvent;
 
 /**
  * The <code>DropTargetListener</code> interface

@@ -56,13 +56,13 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-package jdk.internal.org.objectweb.asm.tree.analysis;
+package j86.j86.j86.jdk.internal.org.objectweb.asm.tree.analysis;
 
-import java.util.AbstractSet;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.NoSuchElementException;
-import java.util.Set;
+import j86.java.util.AbstractSet;
+import j86.java.util.HashSet;
+import j86.java.util.Iterator;
+import j86.java.util.NoSuchElementException;
+import j86.java.util.Set;
 
 /**
  * A set of at most two elements.

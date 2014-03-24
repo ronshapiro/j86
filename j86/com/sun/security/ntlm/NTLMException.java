@@ -23,9 +23,9 @@
  * questions.
  */
 
-package com.sun.security.ntlm;
+package j86.com.sun.security.ntlm;
 
-import java.security.GeneralSecurityException;
+import j86.java.security.GeneralSecurityException;
 
 /**
  * An NTLM-related Exception

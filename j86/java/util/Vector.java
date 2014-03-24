@@ -23,11 +23,11 @@
  * questions.
  */
 
-package java.util;
+package j86.java.util;
 
-import java.util.function.Consumer;
-import java.util.function.Predicate;
-import java.util.function.UnaryOperator;
+import j86.j86.java.util.function.Consumer;
+import j86.j86.java.util.function.Predicate;
+import j86.j86.java.util.function.UnaryOperator;
 
 /**
  * The {@code Vector} class implements a growable array of
@@ -82,7 +82,7 @@ import java.util.function.UnaryOperator;
  */
 public class Vector<E>
     extends AbstractList<E>
-    implements List<E>, RandomAccess, Cloneable, java.io.Serializable
+    implements List<E>, RandomAccess, Cloneable, j86.java.io.Serializable
 {
     /**
      * The array buffer into which the components of the vector are
@@ -1064,9 +1064,9 @@ public class Vector<E>
      * This method performs synchronization to ensure the consistency
      * of the serialized data.
      */
-    private void writeObject(java.io.ObjectOutputStream s)
-            throws java.io.IOException {
-        final java.io.ObjectOutputStream.PutField fields = s.putFields();
+    private void writeObject(j86.java.io.ObjectOutputStream s)
+            throws j86.java.io.IOException {
+        final j86.java.io.ObjectOutputStream.PutField fields = s.putFields();
         final Object[] data;
         synchronized (this) {
             fields.put("capacityIncrement", capacityIncrement);

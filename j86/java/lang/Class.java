@@ -23,53 +23,53 @@
  * questions.
  */
 
-package java.lang;
+package j86.java.lang;
 
-import java.lang.reflect.AnnotatedElement;
-import java.lang.reflect.Array;
-import java.lang.reflect.GenericArrayType;
-import java.lang.reflect.GenericDeclaration;
-import java.lang.reflect.Member;
-import java.lang.reflect.Field;
-import java.lang.reflect.Executable;
-import java.lang.reflect.Method;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Modifier;
-import java.lang.reflect.Type;
-import java.lang.reflect.TypeVariable;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.AnnotatedType;
-import java.lang.ref.SoftReference;
-import java.io.InputStream;
-import java.io.ObjectStreamField;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Set;
-import java.util.Map;
-import java.util.HashMap;
-import java.util.Objects;
-import sun.misc.Unsafe;
-import sun.reflect.CallerSensitive;
-import sun.reflect.ConstantPool;
-import sun.reflect.Reflection;
-import sun.reflect.ReflectionFactory;
-import sun.reflect.generics.factory.CoreReflectionFactory;
-import sun.reflect.generics.factory.GenericsFactory;
-import sun.reflect.generics.repository.ClassRepository;
-import sun.reflect.generics.repository.MethodRepository;
-import sun.reflect.generics.repository.ConstructorRepository;
-import sun.reflect.generics.scope.ClassScope;
-import sun.security.util.SecurityConstants;
-import java.lang.annotation.Annotation;
-import java.lang.reflect.Proxy;
-import sun.reflect.annotation.*;
-import sun.reflect.misc.ReflectUtil;
+import j86.j86.j86.java.lang.reflect.AnnotatedElement;
+import j86.j86.j86.java.lang.reflect.Array;
+import j86.j86.j86.java.lang.reflect.GenericArrayType;
+import j86.j86.j86.java.lang.reflect.GenericDeclaration;
+import j86.j86.j86.java.lang.reflect.Member;
+import j86.j86.j86.java.lang.reflect.Field;
+import j86.j86.j86.java.lang.reflect.Executable;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.j86.j86.java.lang.reflect.Constructor;
+import j86.j86.j86.java.lang.reflect.Modifier;
+import j86.j86.j86.java.lang.reflect.Type;
+import j86.j86.j86.java.lang.reflect.TypeVariable;
+import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.j86.j86.java.lang.reflect.AnnotatedType;
+import j86.j86.java.lang.ref.SoftReference;
+import j86.java.io.InputStream;
+import j86.java.io.ObjectStreamField;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.util.ArrayList;
+import j86.java.util.Arrays;
+import j86.java.util.Collection;
+import j86.java.util.HashSet;
+import j86.java.util.LinkedHashMap;
+import j86.java.util.List;
+import j86.java.util.Set;
+import j86.java.util.Map;
+import j86.java.util.HashMap;
+import j86.java.util.Objects;
+import j86.sun.misc.Unsafe;
+import j86.sun.reflect.CallerSensitive;
+import j86.sun.reflect.ConstantPool;
+import j86.sun.reflect.Reflection;
+import j86.sun.reflect.ReflectionFactory;
+import j86.j86.sun.reflect.generics.factory.CoreReflectionFactory;
+import j86.j86.sun.reflect.generics.factory.GenericsFactory;
+import j86.j86.sun.reflect.generics.repository.ClassRepository;
+import j86.j86.sun.reflect.generics.repository.MethodRepository;
+import j86.j86.sun.reflect.generics.repository.ConstructorRepository;
+import j86.j86.sun.reflect.generics.scope.ClassScope;
+import j86.sun.security.util.SecurityConstants;
+import j86.j86.java.lang.annotation.Annotation;
+import j86.j86.j86.java.lang.reflect.Proxy;
+import j86.j86.sun.reflect.annotation.*;
+import j86.j86.sun.reflect.misc.ReflectUtil;
 
 /**
  * Instances of the class {@code Class} represent classes and
@@ -113,10 +113,10 @@ import sun.reflect.misc.ReflectUtil;
  * unknown.
  *
  * @author  unascribed
- * @see     java.lang.ClassLoader#defineClass(byte[], int, int)
+ * @see     j86.java.lang.ClassLoader#defineClass(byte[], int, int)
  * @since   JDK1.0
  */
-public final class Class<T> implements java.io.Serializable,
+public final class Class<T> implements j86.java.io.Serializable,
                               GenericDeclaration,
                               Type,
                               AnnotatedElement {
@@ -236,10 +236,10 @@ public final class Class<T> implements java.io.Serializable,
      *
      * <p> For example, the following code fragment returns the
      * runtime {@code Class} descriptor for the class named
-     * {@code java.lang.Thread}:
+     * {@code j86.java.lang.Thread}:
      *
      * <blockquote>
-     *   {@code Class t = Class.forName("java.lang.Thread")}
+     *   {@code Class t = Class.forName("j86.java.lang.Thread")}
      * </blockquote>
      * <p>
      * A call to {@code forName("X")} causes the class named
@@ -318,8 +318,8 @@ public final class Class<T> implements java.io.Serializable,
      * @exception ClassNotFoundException if the class cannot be located by
      *            the specified class loader
      *
-     * @see       java.lang.Class#forName(String)
-     * @see       java.lang.ClassLoader
+     * @see       j86.java.lang.Class#forName(String)
+     * @see       j86.java.lang.ClassLoader
      * @since     1.2
      */
     @CallerSensitive
@@ -327,11 +327,11 @@ public final class Class<T> implements java.io.Serializable,
                                    ClassLoader loader)
         throws ClassNotFoundException
     {
-        if (sun.misc.VM.isSystemDomainLoader(loader)) {
+        if (j86.sun.misc.VM.isSystemDomainLoader(loader)) {
             SecurityManager sm = System.getSecurityManager();
             if (sm != null) {
                 ClassLoader ccl = ClassLoader.getClassLoader(Reflection.getCallerClass());
-                if (!sun.misc.VM.isSystemDomainLoader(ccl)) {
+                if (!j86.sun.misc.VM.isSystemDomainLoader(ccl)) {
                     sm.checkPermission(
                         SecurityConstants.GET_CLASSLOADER_PERMISSION);
                 }
@@ -356,10 +356,10 @@ public final class Class<T> implements java.io.Serializable,
      * this method effectively bypasses the compile-time exception
      * checking that would otherwise be performed by the compiler.
      * The {@link
-     * java.lang.reflect.Constructor#newInstance(java.lang.Object...)
+     * j86.j86.j86.java.lang.reflect.Constructor#newInstance(java.lang.Object...)
      * Constructor.newInstance} method avoids this problem by wrapping
      * any exception thrown by the constructor in a (checked) {@link
-     * java.lang.reflect.InvocationTargetException}.
+     * j86.j86.j86.java.lang.reflect.InvocationTargetException}.
      *
      * @return  a newly allocated instance of the class represented by this
      *          object.
@@ -395,7 +395,7 @@ public final class Class<T> implements java.io.Serializable,
         if (cachedConstructor == null) {
             if (this == Class.class) {
                 throw new IllegalAccessException(
-                    "Can not call newInstance() on the Class for java.lang.Class"
+                    "Can not call newInstance() on the Class for j86.java.lang.Class"
                 );
             }
             try {
@@ -405,8 +405,8 @@ public final class Class<T> implements java.io.Serializable,
                 // since we have to do the security check here anyway
                 // (the stack depth is wrong for the Constructor's
                 // security check to work)
-                java.security.AccessController.doPrivileged(
-                    new java.security.PrivilegedAction<Void>() {
+                j86.java.security.AccessController.doPrivileged(
+                    new j86.java.security.PrivilegedAction<Void>() {
                         public Void run() {
                                 c.setAccessible(true);
                                 return null;
@@ -419,7 +419,7 @@ public final class Class<T> implements java.io.Serializable,
             }
         }
         Constructor<T> tmpConstructor = cachedConstructor;
-        // Security check (same as in java.lang.reflect.Constructor)
+        // Security check (same as in j86.j86.j86.java.lang.reflect.Constructor)
         int modifiers = tmpConstructor.getModifiers();
         if (!Reflection.quickCheckMemberAccess(this, modifiers)) {
             Class<?> caller = Reflection.getCallerClass();
@@ -538,15 +538,15 @@ public final class Class<T> implements java.io.Serializable,
      *
      * @return true if and only if this class represents a primitive type
      *
-     * @see     java.lang.Boolean#TYPE
-     * @see     java.lang.Character#TYPE
-     * @see     java.lang.Byte#TYPE
-     * @see     java.lang.Short#TYPE
-     * @see     java.lang.Integer#TYPE
-     * @see     java.lang.Long#TYPE
-     * @see     java.lang.Float#TYPE
-     * @see     java.lang.Double#TYPE
-     * @see     java.lang.Void#TYPE
+     * @see     j86.java.lang.Boolean#TYPE
+     * @see     j86.java.lang.Character#TYPE
+     * @see     j86.java.lang.Byte#TYPE
+     * @see     j86.java.lang.Short#TYPE
+     * @see     j86.java.lang.Integer#TYPE
+     * @see     j86.java.lang.Long#TYPE
+     * @see     j86.java.lang.Float#TYPE
+     * @see     j86.java.lang.Double#TYPE
+     * @see     j86.java.lang.Void#TYPE
      * @since JDK1.1
      */
     public native boolean isPrimitive();
@@ -615,11 +615,11 @@ public final class Class<T> implements java.io.Serializable,
      * <p> Examples:
      * <blockquote><pre>
      * String.class.getName()
-     *     returns "java.lang.String"
+     *     returns "j86.java.lang.String"
      * byte.class.getName()
      *     returns "byte"
      * (new Object[3]).getClass().getName()
-     *     returns "[Ljava.lang.Object;"
+     *     returns "[Lj86.java.lang.Object;"
      * (new int[3][4][5][6][7][8][9]).getClass().getName()
      *     returns "[[[[[[[I"
      * </pre></blockquote>
@@ -660,9 +660,9 @@ public final class Class<T> implements java.io.Serializable,
      *    if a security manager exists and its
      *    {@code checkPermission} method denies
      *    access to the class loader for the class.
-     * @see java.lang.ClassLoader
+     * @see j86.java.lang.ClassLoader
      * @see SecurityManager#checkPermission
-     * @see java.lang.RuntimePermission
+     * @see j86.java.lang.RuntimePermission
      */
     @CallerSensitive
     public ClassLoader getClassLoader() {
@@ -689,7 +689,7 @@ public final class Class<T> implements java.io.Serializable,
      *
      * @return an array of {@code TypeVariable} objects that represent
      *     the type variables declared by this generic declaration
-     * @throws java.lang.reflect.GenericSignatureFormatError if the generic
+     * @throws j86.j86.j86.java.lang.reflect.GenericSignatureFormatError if the generic
      *     signature of this generic declaration does not conform to
      *     the format specified in
      *     <cite>The Java&trade; Virtual Machine Specification</cite>
@@ -729,7 +729,7 @@ public final class Class<T> implements java.io.Serializable,
      * parameters used in the source code. The parameterized type
      * representing the superclass is created if it had not been
      * created before. See the declaration of {@link
-     * java.lang.reflect.ParameterizedType ParameterizedType} for the
+     * j86.j86.j86.java.lang.reflect.ParameterizedType ParameterizedType} for the
      * semantics of the creation process for parameterized types.  If
      * this {@code Class} represents either the {@code Object}
      * class, an interface, a primitive type, or void, then null is
@@ -737,12 +737,12 @@ public final class Class<T> implements java.io.Serializable,
      * {@code Class} object representing the {@code Object} class is
      * returned.
      *
-     * @throws java.lang.reflect.GenericSignatureFormatError if the generic
+     * @throws j86.j86.j86.java.lang.reflect.GenericSignatureFormatError if the generic
      *     class signature does not conform to the format specified in
      *     <cite>The Java&trade; Virtual Machine Specification</cite>
      * @throws TypeNotPresentException if the generic superclass
      *     refers to a non-existent type declaration
-     * @throws java.lang.reflect.MalformedParameterizedTypeException if the
+     * @throws j86.j86.j86.java.lang.reflect.MalformedParameterizedTypeException if the
      *     generic superclass refers to a parameterized type that cannot be
      *     instantiated  for any reason
      * @return the superclass of the class represented by this object
@@ -823,7 +823,7 @@ public final class Class<T> implements java.io.Serializable,
      * returns an array of length 0.
      *
      * <p> If this {@code Class} object represents an array type, the
-     * interfaces {@code Cloneable} and {@code java.io.Serializable} are
+     * interfaces {@code Cloneable} and {@code j86.java.io.Serializable} are
      * returned in that order.
      *
      * @return an array of interfaces implemented by this class.
@@ -856,7 +856,7 @@ public final class Class<T> implements java.io.Serializable,
      * the actual type parameters used in the source code. The
      * parameterized type representing each superinterface is created
      * if it had not been created before. See the declaration of
-     * {@link java.lang.reflect.ParameterizedType ParameterizedType}
+     * {@link j86.j86.j86.java.lang.reflect.ParameterizedType ParameterizedType}
      * for the semantics of the creation process for parameterized
      * types.
      *
@@ -883,13 +883,13 @@ public final class Class<T> implements java.io.Serializable,
      * <p>If this object represents a primitive type or void, the
      * method returns an array of length 0.
      *
-     * @throws java.lang.reflect.GenericSignatureFormatError
+     * @throws j86.j86.j86.java.lang.reflect.GenericSignatureFormatError
      *     if the generic class signature does not conform to the format
      *     specified in
      *     <cite>The Java&trade; Virtual Machine Specification</cite>
      * @throws TypeNotPresentException if any of the generic
      *     superinterfaces refers to a non-existent type declaration
-     * @throws java.lang.reflect.MalformedParameterizedTypeException
+     * @throws j86.j86.j86.java.lang.reflect.MalformedParameterizedTypeException
      *     if any of the generic superinterfaces refer to a parameterized
      *     type that cannot be instantiated for any reason
      * @return an array of interfaces implemented by this class
@@ -908,7 +908,7 @@ public final class Class<T> implements java.io.Serializable,
      *
      * @return the {@code Class} representing the component type of this
      * class if this class is an array
-     * @see     java.lang.reflect.Array
+     * @see     j86.j86.j86.java.lang.reflect.Array
      * @since JDK1.1
      */
     public native Class<?> getComponentType();
@@ -938,7 +938,7 @@ public final class Class<T> implements java.io.Serializable,
      * Specification</em>, table 4.1.
      *
      * @return the {@code int} representing the modifiers for this class
-     * @see     java.lang.reflect.Modifier
+     * @see     j86.j86.j86.java.lang.reflect.Modifier
      * @since JDK1.1
      */
     public native int getModifiers();
@@ -964,7 +964,7 @@ public final class Class<T> implements java.io.Serializable,
     /**
      * If this {@code Class} object represents a local or anonymous
      * class within a method, returns a {@link
-     * java.lang.reflect.Method Method} object representing the
+     * j86.j86.j86.java.lang.reflect.Method Method} object representing the
      * immediately enclosing method of the underlying class. Returns
      * {@code null} otherwise.
      *
@@ -1119,7 +1119,7 @@ public final class Class<T> implements java.io.Serializable,
     /**
      * If this {@code Class} object represents a local or anonymous
      * class within a constructor, returns a {@link
-     * java.lang.reflect.Constructor Constructor} object representing
+     * j86.j86.j86.java.lang.reflect.Constructor Constructor} object representing
      * the immediately enclosing constructor of the underlying
      * class. Returns {@code null} otherwise.  In particular, this
      * method returns {@code null} if the underlying class is a local
@@ -1482,8 +1482,8 @@ public final class Class<T> implements java.io.Serializable,
         // out anything other than public members and (2) public member access
         // has already been ok'd by the SecurityManager.
 
-        return java.security.AccessController.doPrivileged(
-            new java.security.PrivilegedAction<Class<?>[]>() {
+        return j86.java.security.AccessController.doPrivileged(
+            new j86.java.security.PrivilegedAction<Class<?>[]>() {
                 public Class<?>[] run() {
                     List<Class<?>> list = new ArrayList<>();
                     Class<?> currentClass = Class.this;
@@ -1734,7 +1734,7 @@ public final class Class<T> implements java.io.Serializable,
      * increased flexibility in the virtual machine can be used to
      * implement various language features.  For example, covariant
      * returns can be implemented with {@linkplain
-     * java.lang.reflect.Method#isBridge bridge methods}; the bridge
+     * j86.j86.j86.java.lang.reflect.Method#isBridge bridge methods}; the bridge
      * method and the method being overridden would have the same
      * signature but different return types.
      *
@@ -2195,7 +2195,7 @@ public final class Class<T> implements java.io.Serializable,
      * </ul>
      *
      * @param  name name of the desired resource
-     * @return      A {@link java.io.InputStream} object or {@code null} if
+     * @return      A {@link j86.java.io.InputStream} object or {@code null} if
      *              no resource with this name is found
      * @throws  NullPointerException If {@code name} is {@code null}
      * @since  JDK1.1
@@ -2240,11 +2240,11 @@ public final class Class<T> implements java.io.Serializable,
      * </ul>
      *
      * @param  name name of the desired resource
-     * @return      A  {@link java.net.URL} object or {@code null} if no
+     * @return      A  {@link j86.java.net.URL} object or {@code null} if no
      *              resource with this name is found
      * @since  JDK1.1
      */
-    public java.net.URL getResource(String name) {
+    public j86.java.net.URL getResource(String name) {
         name = resolveName(name);
         ClassLoader cl = getClassLoader0();
         if (cl==null) {
@@ -2257,7 +2257,7 @@ public final class Class<T> implements java.io.Serializable,
 
 
     /** protection domain returned when the internal domain is null */
-    private static java.security.ProtectionDomain allPermDomain;
+    private static j86.java.security.ProtectionDomain allPermDomain;
 
 
     /**
@@ -2275,24 +2275,24 @@ public final class Class<T> implements java.io.Serializable,
      *        {@code checkPermission} method doesn't allow
      *        getting the ProtectionDomain.
      *
-     * @see java.security.ProtectionDomain
+     * @see j86.java.security.ProtectionDomain
      * @see SecurityManager#checkPermission
-     * @see java.lang.RuntimePermission
+     * @see j86.java.lang.RuntimePermission
      * @since 1.2
      */
-    public java.security.ProtectionDomain getProtectionDomain() {
+    public j86.java.security.ProtectionDomain getProtectionDomain() {
         SecurityManager sm = System.getSecurityManager();
         if (sm != null) {
             sm.checkPermission(SecurityConstants.GET_PD_PERMISSION);
         }
-        java.security.ProtectionDomain pd = getProtectionDomain0();
+        j86.java.security.ProtectionDomain pd = getProtectionDomain0();
         if (pd == null) {
             if (allPermDomain == null) {
-                java.security.Permissions perms =
-                    new java.security.Permissions();
+                j86.java.security.Permissions perms =
+                    new j86.java.security.Permissions();
                 perms.add(SecurityConstants.ALL_PERMISSION);
                 allPermDomain =
-                    new java.security.ProtectionDomain(null, perms);
+                    new j86.java.security.ProtectionDomain(null, perms);
             }
             pd = allPermDomain;
         }
@@ -2303,7 +2303,7 @@ public final class Class<T> implements java.io.Serializable,
     /**
      * Returns the ProtectionDomain of this class.
      */
-    private native java.security.ProtectionDomain getProtectionDomain0();
+    private native j86.java.security.ProtectionDomain getProtectionDomain0();
 
     /*
      * Return the Virtual Machine's Class object for the named
@@ -2416,7 +2416,7 @@ public final class Class<T> implements java.io.Serializable,
         private static long objectFieldOffset(Field[] fields, String fieldName) {
             Field field = searchFields(fields, fieldName);
             if (field == null) {
-                throw new Error("No " + fieldName + " field found in java.lang.Class");
+                throw new Error("No " + fieldName + " field found in j86.java.lang.Class");
             }
             return unsafe.objectFieldOffset(field);
         }
@@ -2551,7 +2551,7 @@ public final class Class<T> implements java.io.Serializable,
 
     //
     //
-    // java.lang.reflect.Field handling
+    // j86.j86.j86.java.lang.reflect.Field handling
     //
     //
 
@@ -2634,7 +2634,7 @@ public final class Class<T> implements java.io.Serializable,
 
     //
     //
-    // java.lang.reflect.Constructor handling
+    // j86.j86.j86.java.lang.reflect.Constructor handling
     //
     //
 
@@ -2669,7 +2669,7 @@ public final class Class<T> implements java.io.Serializable,
 
     //
     //
-    // java.lang.reflect.Method handling
+    // j86.j86.j86.java.lang.reflect.Method handling
     //
     //
 
@@ -3057,13 +3057,13 @@ public final class Class<T> implements java.io.Serializable,
      * <pre>
      *      {@code TC_CLASS} ClassDescriptor
      *      A ClassDescriptor is a special cased serialization of
-     *      a {@code java.io.ObjectStreamClass} instance.
+     *      a {@code j86.java.io.ObjectStreamClass} instance.
      * </pre>
      * A new handle is generated for the initial time the class descriptor
      * is written into the stream. Future references to the class descriptor
      * are written as references to the initial class descriptor instance.
      *
-     * @see java.io.ObjectStreamClass
+     * @see j86.java.io.ObjectStreamClass
      */
     private static final ObjectStreamField[] serialPersistentFields =
         new ObjectStreamField[0];
@@ -3088,9 +3088,9 @@ public final class Class<T> implements java.io.Serializable,
      * class when it was (or will be) initialized.
      *
      * @return the desired assertion status of the specified class.
-     * @see    java.lang.ClassLoader#setClassAssertionStatus
-     * @see    java.lang.ClassLoader#setPackageAssertionStatus
-     * @see    java.lang.ClassLoader#setDefaultAssertionStatus
+     * @see    j86.java.lang.ClassLoader#setClassAssertionStatus
+     * @see    j86.java.lang.ClassLoader#setPackageAssertionStatus
+     * @see    j86.java.lang.ClassLoader#setDefaultAssertionStatus
      * @since  1.4
      */
     public boolean desiredAssertionStatus() {
@@ -3121,19 +3121,19 @@ public final class Class<T> implements java.io.Serializable,
      * @since 1.5
      */
     public boolean isEnum() {
-        // An enum must both directly extend java.lang.Enum and have
+        // An enum must both directly extend j86.java.lang.Enum and have
         // the ENUM bit set; classes for specialized enum constants
         // don't do the former.
         return (this.getModifiers() & ENUM) != 0 &&
-        this.getSuperclass() == java.lang.Enum.class;
+        this.getSuperclass() == j86.java.lang.Enum.class;
     }
 
     // Fetches the factory for reflective objects
     private static ReflectionFactory getReflectionFactory() {
         if (reflectionFactory == null) {
             reflectionFactory =
-                java.security.AccessController.doPrivileged
-                    (new sun.reflect.ReflectionFactory.GetReflectionFactoryAction());
+                j86.java.security.AccessController.doPrivileged
+                    (new j86.sun.reflect.ReflectionFactory.GetReflectionFactoryAction());
         }
         return reflectionFactory;
     }
@@ -3155,13 +3155,13 @@ public final class Class<T> implements java.io.Serializable,
                     // has been run.
 
                     if (System.out == null) {
-                        // java.lang.System not yet fully initialized
+                        // j86.java.lang.System not yet fully initialized
                         return null;
                     }
 
                     // Doesn't use Boolean.getBoolean to avoid class init.
                     String val =
-                        System.getProperty("sun.reflect.noCaches");
+                        System.getProperty("j86.sun.reflect.noCaches");
                     if (val != null && val.equals("true")) {
                         useCaches = false;
                     }
@@ -3198,8 +3198,8 @@ public final class Class<T> implements java.io.Serializable,
             if (!isEnum()) return null;
             try {
                 final Method values = getMethod("values");
-                java.security.AccessController.doPrivileged(
-                    new java.security.PrivilegedAction<Void>() {
+                j86.java.security.AccessController.doPrivileged(
+                    new j86.java.security.PrivilegedAction<Void>() {
                         public Void run() {
                                 values.setAccessible(true);
                                 return null;

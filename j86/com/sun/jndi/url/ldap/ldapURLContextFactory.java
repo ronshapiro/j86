@@ -23,15 +23,15 @@
  * questions.
  */
 
-package com.sun.jndi.url.ldap;
+package j86.com.sun.jndi.url.ldap;
 
-import java.util.Hashtable;
-import javax.naming.*;
-import javax.naming.directory.DirContext;
-import javax.naming.spi.*;
-import com.sun.jndi.ldap.LdapCtx;
-import com.sun.jndi.ldap.LdapCtxFactory;
-import com.sun.jndi.ldap.LdapURL;
+import j86.java.util.Hashtable;
+import j86.javax.naming.*;
+import j86.j86.javax.naming.directory.DirContext;
+import j86.j86.javax.naming.spi.*;
+import j86.com.sun.jndi.ldap.LdapCtx;
+import j86.com.sun.jndi.ldap.LdapCtxFactory;
+import j86.com.sun.jndi.ldap.LdapURL;
 
 /**
  * An LDAP URL context factory.

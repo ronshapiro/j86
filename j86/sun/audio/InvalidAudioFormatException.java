@@ -23,8 +23,8 @@
  * questions.
  */
 
-package sun.audio;
-import java.io.IOException;
+package j86.sun.audio;
+import j86.java.io.IOException;
 
 /**
  * Signals an invalid audio stream for the stream handler.

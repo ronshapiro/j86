@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.net.httpserver;
+package j86.j86.sun.net.httpserver;
 
-import java.io.*;
+import j86.java.io.*;
 
 class StreamClosedException extends IOException {
     private static final long serialVersionUID = -4485921499356327937L;

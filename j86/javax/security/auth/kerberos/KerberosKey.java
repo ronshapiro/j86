@@ -23,12 +23,12 @@
  * questions.
  */
 
-package javax.security.auth.kerberos;
+package j86.j86.javax.security.auth.kerberos;
 
-import java.util.Arrays;
-import javax.crypto.SecretKey;
-import javax.security.auth.Destroyable;
-import javax.security.auth.DestroyFailedException;
+import j86.java.util.Arrays;
+import j86.javax.crypto.SecretKey;
+import j86.javax.security.auth.Destroyable;
+import j86.javax.security.auth.DestroyFailedException;
 
 /**
  * This class encapsulates a long term secret key for a Kerberos
@@ -39,20 +39,20 @@ import javax.security.auth.DestroyFailedException;
  * Sometimes, such as when authenticating a server in
  * the absence of user-to-user authentication, the login module will store
  * an instance of this class in the private credential set of a
- * {@link javax.security.auth.Subject Subject} during the commit phase of the
+ * {@link j86.javax.security.auth.Subject Subject} during the commit phase of the
  * authentication process.<p>
  *
  * A Kerberos service using a keytab to read secret keys should use
  * the {@link KeyTab} class, where latest keys can be read when needed.<p>
  *
  * It might be necessary for the application to be granted a
- * {@link javax.security.auth.PrivateCredentialPermission
+ * {@link j86.javax.security.auth.PrivateCredentialPermission
  * PrivateCredentialPermission} if it needs to access the KerberosKey
  * instance from a Subject. This permission is not needed when the
  * application depends on the default JGSS Kerberos mechanism to access the
  * KerberosKey. In that case, however, the application will need an
  * appropriate
- * {@link javax.security.auth.kerberos.ServicePermission ServicePermission}.
+ * {@link j86.j86.javax.security.auth.kerberos.ServicePermission ServicePermission}.
  *
  * @author Mayank Upadhyay
  * @since 1.4
@@ -166,7 +166,7 @@ public class KerberosKey implements SecretKey, Destroyable {
     }
 
     /*
-     * Methods from java.security.Key
+     * Methods from j86.java.security.Key
      */
 
     /**

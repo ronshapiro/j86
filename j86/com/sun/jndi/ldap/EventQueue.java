@@ -23,23 +23,23 @@
  * questions.
  */
 
-package com.sun.jndi.ldap;
+package j86.com.sun.jndi.ldap;
 
-import java.util.Vector;
-import java.util.EventObject;
+import j86.java.util.Vector;
+import j86.java.util.EventObject;
 
-import javax.naming.event.NamingEvent;
-import javax.naming.event.NamingExceptionEvent;
-import javax.naming.event.NamingListener;
-import javax.naming.ldap.UnsolicitedNotificationEvent;
-import javax.naming.ldap.UnsolicitedNotificationListener;
+import j86.j86.javax.naming.event.NamingEvent;
+import j86.j86.javax.naming.event.NamingExceptionEvent;
+import j86.j86.javax.naming.event.NamingListener;
+import j86.j86.javax.naming.ldap.UnsolicitedNotificationEvent;
+import j86.j86.javax.naming.ldap.UnsolicitedNotificationListener;
 
 /**
  * Package private class used by EventSupport to dispatch events.
  * This class implements an event queue, and a dispatcher thread that
  * dequeues and dispatches events from the queue.
  *
- * Pieces stolen from sun.misc.Queue.
+ * Pieces stolen from j86.sun.misc.Queue.
  *
  * @author      Bill Shannon (from javax.mail.event)
  * @author      Rosanna Lee (modified for JNDI-related events)
@@ -105,7 +105,7 @@ final class EventQueue implements Runnable {
      * Used only by the run() method.
      *
      * @return    the oldest object on the queue.
-     * @exception java.lang.InterruptedException if any thread has
+     * @exception j86.java.lang.InterruptedException if any thread has
      *              interrupted this thread.
      */
     private synchronized QueueElement dequeue()

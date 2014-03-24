@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.crypto;
+package j86.javax.crypto;
 
 /**
  * This exception is thrown when a {@link Cipher} operating in

@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.security.interfaces;
+package j86.j86.java.security.interfaces;
 
-import java.math.BigInteger;
+import j86.java.math.BigInteger;
 
 /**
  * Interface to a DSA-specific set of key parameters, which defines a
@@ -33,8 +33,8 @@ import java.math.BigInteger;
  * in NIST's FIPS-186.
  *
  * @see DSAKey
- * @see java.security.Key
- * @see java.security.Signature
+ * @see j86.java.security.Key
+ * @see j86.java.security.Signature
  *
  * @author Benjamin Renaud
  * @author Josh Bloch

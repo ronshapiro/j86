@@ -38,11 +38,11 @@
  *
  */
 
-package java.awt.font;
+package j86.j86.java.awt.font;
 
-import java.awt.geom.AffineTransform;
-import java.io.Serializable;
-import java.io.ObjectStreamException;
+import j86.j86.java.awt.geom.AffineTransform;
+import j86.java.io.Serializable;
+import j86.java.io.ObjectStreamException;
 
 /**
  * The <code>TransformAttribute</code> class provides an immutable
@@ -99,9 +99,9 @@ public final class TransformAttribute implements Serializable {
      */
     public static final TransformAttribute IDENTITY = new TransformAttribute(null);
 
-    private void writeObject(java.io.ObjectOutputStream s)
-      throws java.lang.ClassNotFoundException,
-             java.io.IOException
+    private void writeObject(j86.java.io.ObjectOutputStream s)
+      throws j86.java.lang.ClassNotFoundException,
+             j86.java.io.IOException
     {
         // sigh -- 1.3 expects transform is never null, so we need to always write one out
         if (this.transform == null) {

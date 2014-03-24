@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.net.www.http;
+package j86.j86.j86.sun.net.www.http;
 
-import java.io.*;
+import j86.java.io.*;
 
 class KeepAliveCleanerEntry
 {

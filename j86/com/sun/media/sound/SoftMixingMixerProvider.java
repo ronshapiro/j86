@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.media.sound;
+package j86.com.sun.media.sound;
 
-import javax.sound.sampled.Mixer;
-import javax.sound.sampled.Mixer.Info;
-import javax.sound.sampled.spi.MixerProvider;
+import j86.javax.sound.sampled.Mixer;
+import j86.javax.sound.sampled.Mixer.Info;
+import j86.j86.javax.sound.sampled.spi.MixerProvider;
 
 /**
  * Provider for software audio mixer

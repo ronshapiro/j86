@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.nio.channels.spi;
+package j86.j86.j86.java.nio.channels.spi;
 
-import java.nio.channels.*;
+import j86.j86.java.nio.channels.*;
 
 
 /**

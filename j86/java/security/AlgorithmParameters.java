@@ -23,11 +23,11 @@
  * questions.
  */
 
-package java.security;
+package j86.java.security;
 
-import java.io.*;
-import java.security.spec.AlgorithmParameterSpec;
-import java.security.spec.InvalidParameterSpecException;
+import j86.java.io.*;
+import j86.j86.java.security.spec.AlgorithmParameterSpec;
+import j86.j86.java.security.spec.InvalidParameterSpecException;
 
 /**
  * This class is used as an opaque representation of cryptographic parameters.
@@ -65,8 +65,8 @@ import java.security.spec.InvalidParameterSpecException;
  * @author Jan Luehe
  *
  *
- * @see java.security.spec.AlgorithmParameterSpec
- * @see java.security.spec.DSAParameterSpec
+ * @see j86.j86.java.security.spec.AlgorithmParameterSpec
+ * @see j86.j86.java.security.spec.DSAParameterSpec
  * @see KeyPairGenerator
  *
  * @since 1.2

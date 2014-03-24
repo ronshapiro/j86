@@ -24,11 +24,11 @@
  */
 
 
-package javax.print.attribute;
+package j86.j86.javax.print.attribute;
 
-import java.io.InvalidObjectException;
-import java.io.ObjectStreamException;
-import java.io.Serializable;
+import j86.java.io.InvalidObjectException;
+import j86.java.io.ObjectStreamException;
+import j86.java.io.Serializable;
 
 /**
  * Class EnumSyntax is an abstract base class providing the common
@@ -181,8 +181,8 @@ public abstract class EnumSyntax implements Serializable, Cloneable {
      *     value's integer value does not correspond to an element in the
      *     enumeration value table, or the corresponding element in the
      *     enumeration value table is null. (Note: {@link
-     *     java.io.InvalidObjectException InvalidObjectException} is a subclass
-     *     of {@link java.io.ObjectStreamException ObjectStreamException}, which
+     *     j86.java.io.InvalidObjectException InvalidObjectException} is a subclass
+     *     of {@link j86.java.io.ObjectStreamException ObjectStreamException}, which
      *     <CODE>readResolve()</CODE> is declared to throw.)
      */
     protected Object readResolve() throws ObjectStreamException {

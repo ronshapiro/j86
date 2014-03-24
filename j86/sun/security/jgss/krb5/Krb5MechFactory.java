@@ -23,15 +23,15 @@
  * questions.
  */
 
-package sun.security.jgss.krb5;
+package j86.j86.sun.security.jgss.krb5;
 
-import org.ietf.jgss.*;
-import sun.security.jgss.GSSUtil;
-import sun.security.jgss.GSSCaller;
-import sun.security.jgss.spi.*;
-import javax.security.auth.kerberos.ServicePermission;
-import java.security.Provider;
-import java.util.Vector;
+import j86.org.ietf.jgss.*;
+import j86.sun.security.jgss.GSSUtil;
+import j86.sun.security.jgss.GSSCaller;
+import j86.j86.sun.security.jgss.spi.*;
+import j86.j86.javax.security.auth.kerberos.ServicePermission;
+import j86.java.security.Provider;
+import j86.java.util.Vector;
 
 /**
  * Krb5 Mechanism plug in for JGSS
@@ -46,7 +46,7 @@ public final class Krb5MechFactory implements MechanismFactory {
     private static final boolean DEBUG = Krb5Util.DEBUG;
 
     static final Provider PROVIDER =
-        new sun.security.jgss.SunProvider();
+        new j86.sun.security.jgss.SunProvider();
 
     static final Oid GSS_KRB5_MECH_OID =
         createOid("1.2.840.113554.1.2.2");

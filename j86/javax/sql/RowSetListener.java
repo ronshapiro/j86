@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.sql;
+package j86.javax.sql;
 
 /**
  * An interface that must be implemented by a
@@ -37,7 +37,7 @@ package javax.sql;
  * @since 1.4
  */
 
-public interface RowSetListener extends java.util.EventListener {
+public interface RowSetListener extends j86.java.util.EventListener {
 
   /**
    * Notifies registered listeners that a <code>RowSet</code> object

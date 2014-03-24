@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.nio.file.attribute;
+package j86.j86.j86.java.nio.file.attribute;
 
 /**
  * File attributes associated with a file in a file system that supports

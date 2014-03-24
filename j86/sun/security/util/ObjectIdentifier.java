@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.security.util;
+package j86.sun.security.util;
 
-import java.io.*;
-import java.math.BigInteger;
-import java.util.Arrays;
+import j86.java.io.*;
+import j86.java.math.BigInteger;
+import j86.java.util.Arrays;
 
 /**
  * Represent an ISO Object Identifier.

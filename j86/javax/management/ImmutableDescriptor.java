@@ -23,16 +23,16 @@
  * questions.
  */
 
-package javax.management;
+package j86.javax.management;
 
-import com.sun.jmx.mbeanserver.Util;
-import java.io.InvalidObjectException;
-import java.lang.reflect.Array;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.Map;
-import java.util.SortedMap;
-import java.util.TreeMap;
+import j86.com.sun.jmx.mbeanserver.Util;
+import j86.java.io.InvalidObjectException;
+import j86.j86.j86.java.lang.reflect.Array;
+import j86.java.util.Arrays;
+import j86.java.util.Comparator;
+import j86.java.util.Map;
+import j86.java.util.SortedMap;
+import j86.java.util.TreeMap;
 
 /**
  * An immutable descriptor.
@@ -361,7 +361,7 @@ public class ImmutableDescriptor implements Descriptor {
      * otherwise.
      *
      */
-    // Note: this Javadoc is copied from javax.management.Descriptor
+    // Note: this Javadoc is copied from j86.javax.management.Descriptor
     //       due to 6369229.
     @Override
     public boolean equals(Object o) {
@@ -401,7 +401,7 @@ public class ImmutableDescriptor implements Descriptor {
      * <ul>
      * <li>If {@code v} is null then {@code h} is 0.</li>
      * <li>If {@code v} is a primitive array then {@code h} is computed using
-     * the appropriate overloading of {@code java.util.Arrays.hashCode}.</li>
+     * the appropriate overloading of {@code j86.java.util.Arrays.hashCode}.</li>
      * <li>If {@code v} is an object array then {@code h} is computed using
      * {@link Arrays#deepHashCode(Object[])}.</li>
      * <li>Otherwise {@code h} is {@code v.hashCode()}.</li>
@@ -410,7 +410,7 @@ public class ImmutableDescriptor implements Descriptor {
      * @return A hash code value for this object.
      *
      */
-    // Note: this Javadoc is copied from javax.management.Descriptor
+    // Note: this Javadoc is copied from j86.javax.management.Descriptor
     //       due to 6369229.
     @Override
     public int hashCode() {

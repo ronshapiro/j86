@@ -42,4 +42,4 @@
  *
  * @since JDK1.1
  */
-package java.math;
+package j86.java.math;

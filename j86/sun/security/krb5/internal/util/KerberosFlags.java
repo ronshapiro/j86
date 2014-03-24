@@ -28,16 +28,16 @@
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
 
-package sun.security.krb5.internal.util;
+package j86.j86.j86.sun.security.krb5.internal.util;
 
-import java.io.IOException;
-import java.util.Arrays;
-import sun.security.krb5.internal.Krb5;
-import sun.security.util.BitArray;
-import sun.security.util.DerOutputStream;
+import j86.java.io.IOException;
+import j86.java.util.Arrays;
+import j86.j86.sun.security.krb5.internal.Krb5;
+import j86.sun.security.util.BitArray;
+import j86.sun.security.util.DerOutputStream;
 
 /**
- * A wrapper class around sun.security.util.BitArray, so that KDCOptions,
+ * A wrapper class around j86.sun.security.util.BitArray, so that KDCOptions,
  * TicketFlags and ApOptions in krb5 classes can utilize some functions
  * in BitArray classes.
  *

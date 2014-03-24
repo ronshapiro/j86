@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.util;
+package j86.java.util;
 
 /**
  * Unchecked exception thrown when a format string contains an illegal syntax

@@ -23,14 +23,14 @@
  * questions.
  */
 
-package com.sun.crypto.provider;
+package j86.com.sun.crypto.provider;
 
-import java.math.BigInteger;
-import java.security.*;
-import java.security.spec.*;
-import java.util.Arrays;
-import javax.crypto.*;
-import javax.crypto.spec.*;
+import j86.java.math.BigInteger;
+import j86.java.security.*;
+import j86.j86.java.security.spec.*;
+import j86.java.util.Arrays;
+import j86.javax.crypto.*;
+import j86.j86.javax.crypto.spec.*;
 
 /**
  * This class implements password-base encryption algorithm with
@@ -41,7 +41,7 @@ import javax.crypto.spec.*;
  * as defined by PKCS #12 version 1.0 standard.
  *
  * @author Valerie Peng
- * @see javax.crypto.CipherSpi
+ * @see j86.javax.crypto.CipherSpi
  */
 final class PKCS12PBECipherCore {
 
@@ -258,9 +258,9 @@ final class PKCS12PBECipherCore {
         char[] passwdChars = null;
         salt = null;
         iCount = 0;
-        if (key instanceof javax.crypto.interfaces.PBEKey) {
-            javax.crypto.interfaces.PBEKey pbeKey =
-                (javax.crypto.interfaces.PBEKey) key;
+        if (key instanceof j86.j86.javax.crypto.interfaces.PBEKey) {
+            j86.j86.javax.crypto.interfaces.PBEKey pbeKey =
+                (j86.j86.javax.crypto.interfaces.PBEKey) key;
             passwdChars = pbeKey.getPassword();
             salt = pbeKey.getSalt(); // maybe null if unspecified
             iCount = pbeKey.getIterationCount(); // maybe 0 if unspecified

@@ -20,9 +20,9 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.sun.org.apache.xml.internal.security.utils;
+package j86.j86.com.sun.org.apache.xml.internal.security.utils;
 
-import java.io.OutputStream;
+import j86.java.io.OutputStream;
 
 /**
  * A simple Unsynced ByteArrayOutputStream

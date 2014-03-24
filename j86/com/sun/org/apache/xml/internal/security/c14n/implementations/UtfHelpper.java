@@ -20,11 +20,11 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.sun.org.apache.xml.internal.security.c14n.implementations;
+package j86.j86.j86.com.sun.org.apache.xml.internal.security.c14n.implementations;
 
-import java.io.IOException;
-import java.io.OutputStream;
-import java.util.Map;
+import j86.java.io.IOException;
+import j86.java.io.OutputStream;
+import j86.java.util.Map;
 
 public class UtfHelpper {
 

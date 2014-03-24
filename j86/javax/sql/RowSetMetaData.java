@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.sql;
+package j86.javax.sql;
 
-import java.sql.*;
+import j86.java.sql.*;
 
 /**
  * An object that contains information about the columns in a

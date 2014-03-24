@@ -34,10 +34,10 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package java.util.concurrent;
-import java.util.concurrent.atomic.AtomicInteger;
-import java.util.concurrent.atomic.AtomicReference;
-import java.util.concurrent.locks.LockSupport;
+package j86.j86.java.util.concurrent;
+import j86.j86.j86.java.util.concurrent.atomic.AtomicInteger;
+import j86.j86.j86.java.util.concurrent.atomic.AtomicReference;
+import j86.j86.j86.java.util.concurrent.locks.LockSupport;
 
 /**
  * A synchronization point at which threads can pair and swap elements
@@ -158,7 +158,7 @@ public class Exchanger<V> {
      * a value that is enough for common platforms.  Additionally,
      * extra care elsewhere is taken to avoid other false/unintended
      * sharing and to enhance locality, including adding padding (via
-     * sun.misc.Contended) to Nodes, embedding "bound" as an Exchanger
+     * j86.sun.misc.Contended) to Nodes, embedding "bound" as an Exchanger
      * field, and reworking some park/unpark mechanics compared to
      * LockSupport versions.
      *
@@ -307,10 +307,10 @@ public class Exchanger<V> {
 
     /**
      * Nodes hold partially exchanged data, plus other per-thread
-     * bookkeeping. Padded via @sun.misc.Contended to reduce memory
+     * bookkeeping. Padded via @j86.sun.misc.Contended to reduce memory
      * contention.
      */
-    @sun.misc.Contended static final class Node {
+    @j86.sun.misc.Contended static final class Node {
         int index;              // Arena index
         int bound;              // Last recorded value of Exchanger.bound
         int collides;           // Number of CAS failures at current bound
@@ -628,7 +628,7 @@ public class Exchanger<V> {
     }
 
     // Unsafe mechanics
-    private static final sun.misc.Unsafe U;
+    private static final j86.sun.misc.Unsafe U;
     private static final long BOUND;
     private static final long SLOT;
     private static final long MATCH;
@@ -637,7 +637,7 @@ public class Exchanger<V> {
     static {
         int s;
         try {
-            U = sun.misc.Unsafe.getUnsafe();
+            U = j86.sun.misc.Unsafe.getUnsafe();
             Class<?> ek = Exchanger.class;
             Class<?> nk = Node.class;
             Class<?> ak = Node[].class;

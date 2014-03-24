@@ -22,9 +22,9 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.awt.datatransfer;
+package j86.j86.java.awt.datatransfer;
 
-import java.util.EventObject;
+import j86.java.util.EventObject;
 
 
 /**

@@ -22,15 +22,15 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.plaf.synth;
+package j86.j86.j86.javax.swing.plaf.synth;
 
-import java.awt.Graphics;
-import javax.swing.JComponent;
-import javax.swing.plaf.ComponentUI;
+import j86.java.awt.Graphics;
+import j86.javax.swing.JComponent;
+import j86.j86.javax.swing.plaf.ComponentUI;
 
 /**
  * Provides the Synth L&amp;F UI delegate for
- * {@link javax.swing.JFormattedTextField}.
+ * {@link j86.javax.swing.JFormattedTextField}.
  *
  * @since 1.7
  */

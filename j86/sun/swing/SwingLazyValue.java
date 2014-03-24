@@ -22,15 +22,15 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.swing;
+package j86.sun.swing;
 
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Method;
-import java.lang.reflect.AccessibleObject;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import javax.swing.UIDefaults;
-import sun.reflect.misc.ReflectUtil;
+import j86.j86.j86.java.lang.reflect.Constructor;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.j86.j86.java.lang.reflect.AccessibleObject;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.javax.swing.UIDefaults;
+import j86.j86.sun.reflect.misc.ReflectUtil;
 
 /**
  * SwingLazyValue is a copy of ProxyLazyValue that does not snapshot the
@@ -104,11 +104,11 @@ public class SwingLazyValue implements UIDefaults.LazyValue {
                 /* PENDING(ges): At present only the primitive types
                    used are handled correctly; this should eventually
                    handle all primitive types */
-                if (args[i] instanceof java.lang.Integer) {
+                if (args[i] instanceof j86.java.lang.Integer) {
                     types[i]=Integer.TYPE;
-                } else if (args[i] instanceof java.lang.Boolean) {
+                } else if (args[i] instanceof j86.java.lang.Boolean) {
                     types[i]=Boolean.TYPE;
-                } else if (args[i] instanceof javax.swing.plaf.ColorUIResource) {
+                } else if (args[i] instanceof j86.j86.javax.swing.plaf.ColorUIResource) {
                     /* PENDING(ges) Currently the Reflection APIs do not
                        search superclasses of parameters supplied for
                        constructor/method lookup.  Since we only have
@@ -117,7 +117,7 @@ public class SwingLazyValue implements UIDefaults.LazyValue {
                        of mechanism for this.  Eventually this will
                        probably need to handle the general case as well.
                     */
-                    types[i]=java.awt.Color.class;
+                    types[i]=j86.java.awt.Color.class;
                 } else {
                     types[i]=args[i].getClass();
                 }

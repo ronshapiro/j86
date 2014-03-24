@@ -23,46 +23,46 @@
  * questions.
  */
 
-package com.sun.jmx.mbeanserver;
+package j86.com.sun.jmx.mbeanserver;
 
-import com.sun.jmx.interceptor.DefaultMBeanServerInterceptor;
-import com.sun.jmx.interceptor.MBeanServerInterceptor;
-import static com.sun.jmx.defaults.JmxProperties.MBEANSERVER_LOGGER;
+import j86.com.sun.jmx.interceptor.DefaultMBeanServerInterceptor;
+import j86.com.sun.jmx.interceptor.MBeanServerInterceptor;
+import static j86.com.sun.jmx.defaults.JmxProperties.MBEANSERVER_LOGGER;
 
-import java.io.ObjectInputStream;
-import java.security.AccessController;
-import java.security.Permission;
-import java.security.PrivilegedAction;
-import java.security.PrivilegedExceptionAction;
-import java.util.List;
-import java.util.Set;
-import java.util.logging.Level;
+import j86.java.io.ObjectInputStream;
+import j86.java.security.AccessController;
+import j86.java.security.Permission;
+import j86.java.security.PrivilegedAction;
+import j86.java.security.PrivilegedExceptionAction;
+import j86.java.util.List;
+import j86.java.util.Set;
+import j86.j86.java.util.logging.Level;
 
-import javax.management.Attribute;
-import javax.management.AttributeList;
-import javax.management.AttributeNotFoundException;
-import javax.management.InstanceAlreadyExistsException;
-import javax.management.InstanceNotFoundException;
-import javax.management.IntrospectionException;
-import javax.management.InvalidAttributeValueException;
-import javax.management.ListenerNotFoundException;
-import javax.management.MBeanException;
-import javax.management.MBeanInfo;
-import javax.management.MBeanPermission;
-import javax.management.MBeanRegistrationException;
-import javax.management.MBeanServer;
-import javax.management.MBeanServerDelegate;
-import javax.management.MBeanServerPermission;
-import javax.management.NotCompliantMBeanException;
-import javax.management.NotificationFilter;
-import javax.management.NotificationListener;
-import javax.management.ObjectInstance;
-import javax.management.ObjectName;
-import javax.management.OperationsException;
-import javax.management.QueryExp;
-import javax.management.ReflectionException;
-import javax.management.RuntimeOperationsException;
-import javax.management.loading.ClassLoaderRepository;
+import j86.javax.management.Attribute;
+import j86.javax.management.AttributeList;
+import j86.javax.management.AttributeNotFoundException;
+import j86.javax.management.InstanceAlreadyExistsException;
+import j86.javax.management.InstanceNotFoundException;
+import j86.javax.management.IntrospectionException;
+import j86.javax.management.InvalidAttributeValueException;
+import j86.javax.management.ListenerNotFoundException;
+import j86.javax.management.MBeanException;
+import j86.javax.management.MBeanInfo;
+import j86.javax.management.MBeanPermission;
+import j86.javax.management.MBeanRegistrationException;
+import j86.javax.management.MBeanServer;
+import j86.javax.management.MBeanServerDelegate;
+import j86.javax.management.MBeanServerPermission;
+import j86.javax.management.NotCompliantMBeanException;
+import j86.javax.management.NotificationFilter;
+import j86.javax.management.NotificationListener;
+import j86.javax.management.ObjectInstance;
+import j86.javax.management.ObjectName;
+import j86.javax.management.OperationsException;
+import j86.javax.management.QueryExp;
+import j86.javax.management.ReflectionException;
+import j86.javax.management.RuntimeOperationsException;
+import j86.j86.javax.management.loading.ClassLoaderRepository;
 
 /**
  * This is the base class for MBean manipulation on the agent side. It
@@ -77,12 +77,12 @@ import javax.management.loading.ClassLoaderRepository;
  * JMX compliant MBean.
  * <P>
  * When an MBean is registered or unregistered in the MBean server an
- * {@link javax.management.MBeanServerNotification MBeanServerNotification}
+ * {@link j86.javax.management.MBeanServerNotification MBeanServerNotification}
  * Notification is emitted. To register an object as listener to
  * MBeanServerNotifications you should call the MBean server method
  * {@link #addNotificationListener addNotificationListener} with
  * the <CODE>ObjectName</CODE> of the
- * {@link javax.management.MBeanServerDelegate MBeanServerDelegate}.
+ * {@link j86.javax.management.MBeanServerDelegate MBeanServerDelegate}.
  * This <CODE>ObjectName</CODE> is:
  * <BR>
  * <CODE>JMImplementation:type=MBeanServerDelegate</CODE>.
@@ -117,18 +117,18 @@ public final class JmxMBeanServer
      * of MBeans if no domain is specified by the user.
      * <ul><b>Note:</b>Using this constructor directly is strongly
      *     discouraged. You should use
-     *     {@link javax.management.MBeanServerFactory#createMBeanServer(java.lang.String)}
+     *     {@link j86.javax.management.MBeanServerFactory#createMBeanServer(j86.java.lang.String)}
      *     or
-     *     {@link javax.management.MBeanServerFactory#newMBeanServer(java.lang.String)}
+     *     {@link j86.javax.management.MBeanServerFactory#newMBeanServer(j86.java.lang.String)}
      *     instead.
      *     <p>
      *     By default, interceptors are disabled. Use
-     *     {@link #JmxMBeanServer(java.lang.String,javax.management.MBeanServer,javax.management.MBeanServerDelegate,boolean)} to enable them.
+     *     {@link #JmxMBeanServer(j86.java.lang.String,j86.javax.management.MBeanServer,javax.management.MBeanServerDelegate,boolean)} to enable them.
      * </ul>
      * @param domain The default domain name used by this MBeanServer.
      * @param outer A pointer to the MBeanServer object that must be
      *        passed to the MBeans when invoking their
-     *        {@link javax.management.MBeanRegistration} interface.
+     *        {@link j86.javax.management.MBeanRegistration} interface.
      * @param delegate A pointer to the MBeanServerDelegate associated
      *        with the new MBeanServer. The new MBeanServer must register
      *        this MBean in its MBean repository.
@@ -146,15 +146,15 @@ public final class JmxMBeanServer
      * of MBeans if no domain is specified by the user.
      * <ul><b>Note:</b>Using this constructor directly is strongly
      *     discouraged. You should use
-     *     {@link javax.management.MBeanServerFactory#createMBeanServer(java.lang.String)}
+     *     {@link j86.javax.management.MBeanServerFactory#createMBeanServer(j86.java.lang.String)}
      *     or
-     *     {@link javax.management.MBeanServerFactory#newMBeanServer(java.lang.String)}
+     *     {@link j86.javax.management.MBeanServerFactory#newMBeanServer(j86.java.lang.String)}
      *     instead.
      * </ul>
      * @param domain The default domain name used by this MBeanServer.
      * @param outer A pointer to the MBeanServer object that must be
      *        passed to the MBeans when invoking their
-     *        {@link javax.management.MBeanRegistration} interface.
+     *        {@link j86.javax.management.MBeanRegistration} interface.
      * @param delegate A pointer to the MBeanServerDelegate associated
      *        with the new MBeanServer. The new MBeanServer must register
      *        this MBean in its MBean repository.
@@ -176,7 +176,7 @@ public final class JmxMBeanServer
      * @param domain The default domain name used by this MBeanServer.
      * @param outer A pointer to the MBeanServer object that must be
      *        passed to the MBeans when invoking their
-     *        {@link javax.management.MBeanRegistration} interface.
+     *        {@link j86.javax.management.MBeanRegistration} interface.
      * @param delegate A pointer to the MBeanServerDelegate associated
      *        with the new MBeanServer. The new MBeanServer must register
      *        this MBean in its MBean repository.
@@ -201,7 +201,7 @@ public final class JmxMBeanServer
      * @param domain The default domain name used by this MBeanServer.
      * @param outer A pointer to the MBeanServer object that must be
      *        passed to the MBeans when invoking their
-     *        {@link javax.management.MBeanRegistration} interface.
+     *        {@link j86.javax.management.MBeanRegistration} interface.
      * @param delegate A pointer to the MBeanServerDelegate associated
      *        with the new MBeanServer. The new MBeanServer must register
      *        this MBean in its MBean repository.
@@ -214,7 +214,7 @@ public final class JmxMBeanServer
      *        {@link MBeanServerInterceptor} will be enabled (default is
      *        <code>false</code>).
      * @param fairLock If {@code true}, the MBean repository will use a {@link
-     *        java.util.concurrent.locks.ReentrantReadWriteLock#ReentrantReadWriteLock(boolean)
+     *        j86.j86.j86.java.util.concurrent.locks.ReentrantReadWriteLock#ReentrantReadWriteLock(boolean)
      *        fair locking} policy.
      */
     JmxMBeanServer(String domain, MBeanServer outer,
@@ -260,7 +260,7 @@ public final class JmxMBeanServer
      * object.
      * @return <code>true</code> if {@link MBeanServerInterceptor}s are
      *         enabled.
-     * @see #newMBeanServer(java.lang.String,javax.management.MBeanServer,javax.management.MBeanServerDelegate,boolean)
+     * @see #newMBeanServer(j86.java.lang.String,j86.javax.management.MBeanServer,javax.management.MBeanServerDelegate,boolean)
      **/
     public boolean interceptorsEnabled() {
         return interceptorsEnabled;
@@ -282,12 +282,12 @@ public final class JmxMBeanServer
     /**
      * Instantiates and registers an MBean in the MBean server.
      * The MBean server will use its
-     * {@link javax.management.loading.ClassLoaderRepository Default Loader Repository}
+     * {@link j86.j86.javax.management.loading.ClassLoaderRepository Default Loader Repository}
      * to load the class of the MBean.
      * An object name is associated to the MBean.
      * If the object name given is null, the MBean can automatically
      * provide its own name by implementing the
-     * {@link javax.management.MBeanRegistration MBeanRegistration} interface.
+     * {@link j86.javax.management.MBeanRegistration MBeanRegistration} interface.
      * The call returns an <CODE>ObjectInstance</CODE> object representing
      * the newly created MBean.
      *
@@ -299,8 +299,8 @@ public final class JmxMBeanServer
      *     instantiated MBean.
      *
      * @exception ReflectionException Wraps an
-     *     <CODE>{@link java.lang.ClassNotFoundException}</CODE> or an
-     *     <CODE>{@link java.lang.Exception}</CODE> that occurred
+     *     <CODE>{@link j86.java.lang.ClassNotFoundException}</CODE> or an
+     *     <CODE>{@link j86.java.lang.Exception}</CODE> that occurred
      *     when trying to invoke the MBean's constructor.
      * @exception InstanceAlreadyExistsException The MBean is already
      *     under the control of the MBean server.
@@ -312,7 +312,7 @@ public final class JmxMBeanServer
      * @exception NotCompliantMBeanException This class is not a JMX
      *     compliant MBean.
      * @exception RuntimeOperationsException Wraps an
-     *     <CODE>{@link java.lang.IllegalArgumentException}</CODE>:
+     *     <CODE>{@link j86.java.lang.IllegalArgumentException}</CODE>:
      *     The className passed in parameter is null, the
      *     <CODE>ObjectName</CODE> passed in parameter contains a pattern
      *     or no <CODE>ObjectName</CODE> is specified for the MBean.
@@ -337,7 +337,7 @@ public final class JmxMBeanServer
      * loaded the MBean server will be used.
      * If the MBean's object name given is null, the MBean can
      * automatically provide its own name by implementing the
-     * {@link javax.management.MBeanRegistration MBeanRegistration} interface.
+     * {@link j86.javax.management.MBeanRegistration MBeanRegistration} interface.
      * The call returns an <CODE>ObjectInstance</CODE> object representing
      * the newly created MBean.
      *
@@ -350,8 +350,8 @@ public final class JmxMBeanServer
      *     of the newly instantiated MBean.
      *
      * @exception ReflectionException  Wraps an
-     *     <CODE>{@link java.lang.ClassNotFoundException}</CODE> or an
-     *     <CODE>{@link java.lang.Exception}</CODE> that occurred when trying
+     *     <CODE>{@link j86.java.lang.ClassNotFoundException}</CODE> or an
+     *     <CODE>{@link j86.java.lang.Exception}</CODE> that occurred when trying
      *     to invoke the MBean's constructor.
      * @exception InstanceAlreadyExistsException The MBean is already
      *     under the control of the MBean server.
@@ -365,7 +365,7 @@ public final class JmxMBeanServer
      * @exception InstanceNotFoundException The specified class loader
      *     is not registered in the MBean server.
      * @exception RuntimeOperationsException Wraps an
-     *     <CODE>{@link java.lang.IllegalArgumentException}</CODE>: The
+     *     <CODE>{@link j86.java.lang.IllegalArgumentException}</CODE>: The
      *     className passed in parameter is null, the <CODE>ObjectName</CODE>
      *     passed in parameter contains a pattern or no
      *     <CODE>ObjectName</CODE> is specified for the MBean.
@@ -386,12 +386,12 @@ public final class JmxMBeanServer
     /**
      * Instantiates and registers an MBean in the MBean server.
      * The MBean server will use its
-     * {@link javax.management.loading.ClassLoaderRepository Default Loader Repository}
+     * {@link j86.j86.javax.management.loading.ClassLoaderRepository Default Loader Repository}
      * to load the class of the MBean.
      * An object name is associated to the MBean.
      * If the object name given is null, the MBean can automatically
      * provide its own name by implementing the
-     * {@link javax.management.MBeanRegistration MBeanRegistration} interface.
+     * {@link j86.javax.management.MBeanRegistration MBeanRegistration} interface.
      * The call returns an <CODE>ObjectInstance</CODE> object representing
      * the newly created MBean.
      *
@@ -407,8 +407,8 @@ public final class JmxMBeanServer
      *     of the newly instantiated MBean.
      *
      * @exception ReflectionException Wraps a
-     *     <CODE>{@link java.lang.ClassNotFoundException}</CODE> or an
-     *     <CODE>{@link java.lang.Exception}</CODE> that occurred
+     *     <CODE>{@link j86.java.lang.ClassNotFoundException}</CODE> or an
+     *     <CODE>{@link j86.java.lang.Exception}</CODE> that occurred
      *     when trying to invoke the MBean's constructor.
      * @exception InstanceAlreadyExistsException The MBean is already
      *     under the control of the MBean server.
@@ -418,7 +418,7 @@ public final class JmxMBeanServer
      * @exception MBeanException The constructor of the MBean has
      *     thrown an exception.
      * @exception RuntimeOperationsException Wraps an
-     *     <CODE>{@link java.lang.IllegalArgumentException}</CODE>: The
+     *     <CODE>{@link j86.java.lang.IllegalArgumentException}</CODE>: The
      *     className passed in parameter is null, the <CODE>ObjectName</CODE>
      *     passed in parameter contains a pattern or no
      *     <CODE>ObjectName</CODE> is specified for the MBean.
@@ -442,7 +442,7 @@ public final class JmxMBeanServer
      * MBean server will be used.
      * If  the MBean object name given is null, the MBean can automatically
      * provide its own name by implementing the
-     * {@link javax.management.MBeanRegistration MBeanRegistration} interface.
+     * {@link j86.javax.management.MBeanRegistration MBeanRegistration} interface.
      * The call returns an <CODE>ObjectInstance</CODE> object representing
      * the newly created MBean.
      *
@@ -459,8 +459,8 @@ public final class JmxMBeanServer
      *     instantiated MBean.
      *
      * @exception ReflectionException Wraps a
-     *     <CODE>{@link java.lang.ClassNotFoundException}</CODE> or an
-     *     <CODE>{@link java.lang.Exception}</CODE>
+     *     <CODE>{@link j86.java.lang.ClassNotFoundException}</CODE> or an
+     *     <CODE>{@link j86.java.lang.Exception}</CODE>
      *     that occurred when trying to invoke the MBean's constructor.
      * @exception InstanceAlreadyExistsException The MBean is already
      *     under the control of the MBean server.
@@ -472,7 +472,7 @@ public final class JmxMBeanServer
      * @exception InstanceNotFoundException The specified class loader is
      *      not registered in the MBean server.
      * @exception RuntimeOperationsException Wraps an
-     *     <CODE>{@link java.lang.IllegalArgumentException}</CODE>: The
+     *     <CODE>{@link j86.java.lang.IllegalArgumentException}</CODE>: The
      *     className passed in parameter is null, the <CODE>ObjectName</CODE>
      *     passed in parameter contains a pattern or no
      *     <CODE>ObjectName</CODE> is specified for the MBean.
@@ -493,7 +493,7 @@ public final class JmxMBeanServer
      * Registers a pre-existing object as an MBean with the MBean server.
      * If the object name given is null, the MBean may automatically
      * provide its own name by implementing the
-     * {@link javax.management.MBeanRegistration MBeanRegistration}  interface.
+     * {@link j86.javax.management.MBeanRegistration MBeanRegistration}  interface.
      * The call returns an <CODE>ObjectInstance</CODE> object representing
      * the registered MBean.
      *
@@ -511,7 +511,7 @@ public final class JmxMBeanServer
      * @exception NotCompliantMBeanException This object is not a JMX
      *      compliant MBean
      * @exception RuntimeOperationsException Wraps an
-     *      <CODE>{@link java.lang.IllegalArgumentException}</CODE>: The
+     *      <CODE>{@link j86.java.lang.IllegalArgumentException}</CODE>: The
      *      object passed in parameter is null or no object name is specified.
      *
      */
@@ -535,10 +535,10 @@ public final class JmxMBeanServer
      *     (<CODE>MBeanRegistration</CODE>  interface) method of the MBean
      *     has thrown an exception.
      * @exception RuntimeOperationsException Wraps an
-     *     <CODE>{@link java.lang.IllegalArgumentException}</CODE>: The
+     *     <CODE>{@link j86.java.lang.IllegalArgumentException}</CODE>: The
      *     object name in parameter is null or the MBean you are when
      *     trying to de-register is the
-     *     {@link javax.management.MBeanServerDelegate MBeanServerDelegate}
+     *     {@link j86.javax.management.MBeanServerDelegate MBeanServerDelegate}
      *     MBean.
      **/
     public void unregisterMBean(ObjectName name)
@@ -629,7 +629,7 @@ public final class JmxMBeanServer
      *     false otherwise.
      *
      * @exception RuntimeOperationsException Wraps an
-     *     <CODE>{@link java.lang.IllegalArgumentException}</CODE>: The object
+     *     <CODE>{@link j86.java.lang.IllegalArgumentException}</CODE>: The object
      *      name in parameter is null.
      *
      */
@@ -664,10 +664,10 @@ public final class JmxMBeanServer
      * @exception InstanceNotFoundException The MBean specified is not
      *     registered in the MBean server.
      * @exception ReflectionException  Wraps an
-     *     <CODE>{@link java.lang.Exception}</CODE> thrown when trying to
+     *     <CODE>{@link j86.java.lang.Exception}</CODE> thrown when trying to
      *     invoke the setter.
      * @exception RuntimeOperationsException Wraps an
-     *     <CODE>{@link java.lang.IllegalArgumentException}</CODE>:
+     *     <CODE>{@link j86.java.lang.IllegalArgumentException}</CODE>:
      *     The object name in parameter is null or the attribute in
      *     parameter is null.
      */
@@ -694,7 +694,7 @@ public final class JmxMBeanServer
      * @exception ReflectionException An exception occurred when trying
      *     to invoke the getAttributes method of a Dynamic MBean.
      * @exception RuntimeOperationsException Wrap an
-     *     <CODE>{@link java.lang.IllegalArgumentException}</CODE>: The
+     *     <CODE>{@link j86.java.lang.IllegalArgumentException}</CODE>: The
      *     object name in parameter is null or attributes in parameter
      *     is null.
      *
@@ -724,10 +724,10 @@ public final class JmxMBeanServer
      * @exception MBeanException Wraps an exception thrown by the
      *     MBean's setter.
      * @exception ReflectionException  Wraps an
-     *     <CODE>{@link java.lang.Exception}</CODE> thrown when trying
+     *     <CODE>{@link j86.java.lang.Exception}</CODE> thrown when trying
      *     to invoke the setter.
      * @exception RuntimeOperationsException Wraps an
-     *     <CODE>{@link java.lang.IllegalArgumentException}</CODE>: The
+     *     <CODE>{@link j86.java.lang.IllegalArgumentException}</CODE>: The
      *     object name in parameter is null or the attribute in parameter
      *     is null.
      */
@@ -756,7 +756,7 @@ public final class JmxMBeanServer
      * @exception ReflectionException An exception occurred when trying
      *      to invoke the getAttributes method of a Dynamic MBean.
      * @exception RuntimeOperationsException Wraps an
-     *      <CODE>{@link java.lang.IllegalArgumentException}</CODE>:
+     *      <CODE>{@link j86.java.lang.IllegalArgumentException}</CODE>:
      *     The object name in parameter is null or  attributes in
      *     parameter is null.
      *
@@ -790,7 +790,7 @@ public final class JmxMBeanServer
      * @exception MBeanException  Wraps an exception thrown by the MBean's
      *       invoked method.
      * @exception ReflectionException  Wraps an
-     *       <CODE>{@link java.lang.Exception}</CODE> thrown while trying
+     *       <CODE>{@link j86.java.lang.Exception}</CODE> thrown while trying
      *        to invoke the method.
      *
      */
@@ -923,7 +923,7 @@ public final class JmxMBeanServer
     /**
      * Instantiates an object using the list of all class loaders registered
      * in the MBean server (using its
-     * {@link javax.management.loading.ClassLoaderRepository Default Loader Repository}).
+     * {@link j86.j86.javax.management.loading.ClassLoaderRepository Default Loader Repository}).
      * The object's class should have a public constructor.
      * It returns a reference to the newly created object.
      * The newly created object is not registered in the MBean server.
@@ -933,13 +933,13 @@ public final class JmxMBeanServer
      * @return The newly instantiated object.
      *
      * @exception ReflectionException Wraps the
-     *     <CODE>{@link java.lang.ClassNotFoundException}</CODE> or the
-     *     <CODE>{@link java.lang.Exception}</CODE> that
+     *     <CODE>{@link j86.java.lang.ClassNotFoundException}</CODE> or the
+     *     <CODE>{@link j86.java.lang.Exception}</CODE> that
      *     occurred when trying to invoke the object's constructor.
      * @exception MBeanException The constructor of the object has thrown
      *     an exception.
      * @exception RuntimeOperationsException Wraps an
-     *     <CODE>{@link java.lang.IllegalArgumentException}</CODE>:
+     *     <CODE>{@link j86.java.lang.IllegalArgumentException}</CODE>:
      *     The className passed in parameter is null.
      *
      */
@@ -967,15 +967,15 @@ public final class JmxMBeanServer
      * @return The newly instantiated object.
      *
      * @exception ReflectionException Wraps the
-     *     <CODE>{@link java.lang.ClassNotFoundException}</CODE> or the
-     *     <CODE>{@link java.lang.Exception}</CODE> that
+     *     <CODE>{@link j86.java.lang.ClassNotFoundException}</CODE> or the
+     *     <CODE>{@link j86.java.lang.Exception}</CODE> that
      *     occurred when trying to invoke the object's constructor.
      * @exception MBeanException The constructor of the object has thrown
      *     an exception.
      * @exception InstanceNotFoundException The specified class loader
      *     is not registered in the MBaenServer.
      * @exception RuntimeOperationsException Wraps an
-     *     <CODE>{@link java.lang.IllegalArgumentException}</CODE>: The
+     *     <CODE>{@link j86.java.lang.IllegalArgumentException}</CODE>: The
      *     className passed in parameter is null.
      *
      */
@@ -993,7 +993,7 @@ public final class JmxMBeanServer
     /**
      * Instantiates an object using the list of all class loaders registered
      * in the MBean server (using its
-     * {@link javax.management.loading.ClassLoaderRepository Default Loader Repository}).
+     * {@link j86.j86.javax.management.loading.ClassLoaderRepository Default Loader Repository}).
      * The object's class should have a public constructor.
      * The call returns a reference to the newly created object.
      * The newly created object is not registered in the MBean server.
@@ -1007,13 +1007,13 @@ public final class JmxMBeanServer
      * @return The newly instantiated object.
      *
      * @exception ReflectionException Wraps the
-     *     <CODE>{@link java.lang.ClassNotFoundException}</CODE> or the
-     *     <CODE>{@link java.lang.Exception}</CODE> that
+     *     <CODE>{@link j86.java.lang.ClassNotFoundException}</CODE> or the
+     *     <CODE>{@link j86.java.lang.Exception}</CODE> that
      *     occurred when trying to invoke the object's constructor.
      * @exception MBeanException The constructor of the object has thrown
      *     an exception.
      * @exception RuntimeOperationsException Wraps an
-     *     <CODE>{@link java.lang.IllegalArgumentException}</CODE>:
+     *     <CODE>{@link j86.java.lang.IllegalArgumentException}</CODE>:
      *     The className passed in parameter is null.
      *
      */
@@ -1047,15 +1047,15 @@ public final class JmxMBeanServer
      * @return The newly instantiated object.
      *
      * @exception ReflectionException Wraps the
-     *    <CODE>{@link java.lang.ClassNotFoundException}</CODE> or the
-     *    <CODE>{@link java.lang.Exception}</CODE> that
+     *    <CODE>{@link j86.java.lang.ClassNotFoundException}</CODE> or the
+     *    <CODE>{@link j86.java.lang.Exception}</CODE> that
      *    occurred when trying to invoke the object's constructor.
      * @exception MBeanException The constructor of the object has thrown
      *    an exception.
      * @exception InstanceNotFoundException The specified class loader
      *    is not registered in the MBean server.
      * @exception RuntimeOperationsException Wraps an
-     *    <CODE>{@link java.lang.IllegalArgumentException}</CODE>:
+     *    <CODE>{@link j86.java.lang.IllegalArgumentException}</CODE>:
      *    The className passed in parameter is null.
      *
      */
@@ -1313,7 +1313,7 @@ public final class JmxMBeanServer
     }
 
     /**
-     * <p>Return the {@link java.lang.ClassLoader} that was used for
+     * <p>Return the {@link j86.java.lang.ClassLoader} that was used for
      * loading the class of the named MBean.
      * @param mbeanName The ObjectName of the MBean.
      * @return The ClassLoader used for that MBean.
@@ -1325,7 +1325,7 @@ public final class JmxMBeanServer
     }
 
     /**
-     * <p>Return the named {@link java.lang.ClassLoader}.
+     * <p>Return the named {@link j86.java.lang.ClassLoader}.
      * @param loaderName The ObjectName of the ClassLoader.
      * @return The named ClassLoader.
      * @exception InstanceNotFoundException if the named ClassLoader
@@ -1357,7 +1357,7 @@ public final class JmxMBeanServer
     /**
      * This method creates a new MBeanServerDelegate for a new MBeanServer.
      * When creating a new MBeanServer the
-     * {@link javax.management.MBeanServerBuilder} first calls this method
+     * {@link j86.javax.management.MBeanServerBuilder} first calls this method
      * in order to create a new MBeanServerDelegate.
      * <br>Then it calls
      * <code>newMBeanServer(defaultDomain,outer,delegate,interceptors)</code>
@@ -1368,7 +1368,7 @@ public final class JmxMBeanServer
      * be, for instance, a new object wrapping the previously
      * returned object.
      *
-     * @return A new {@link javax.management.MBeanServerDelegate}.
+     * @return A new {@link j86.javax.management.MBeanServerDelegate}.
      **/
     public static MBeanServerDelegate newMBeanServerDelegate() {
         return new MBeanServerDelegateImpl();
@@ -1377,9 +1377,9 @@ public final class JmxMBeanServer
     /**
      * This method creates a new MBeanServer implementation object.
      * When creating a new MBeanServer the
-     * {@link javax.management.MBeanServerBuilder} first calls
+     * {@link j86.javax.management.MBeanServerBuilder} first calls
      * <code>newMBeanServerDelegate()</code> in order to obtain a new
-     * {@link javax.management.MBeanServerDelegate} for the new
+     * {@link j86.javax.management.MBeanServerDelegate} for the new
      * MBeanServer. Then it calls
      * <code>newMBeanServer(defaultDomain,outer,delegate)</code>
      * passing the <var>delegate</var> that should be used by the
@@ -1389,11 +1389,11 @@ public final class JmxMBeanServer
      * be, for instance, a new object wrapping the previously
      * returned delegate.
      * <p>The <var>outer</var> parameter is a pointer to the MBeanServer that
-     * should be passed to the {@link javax.management.MBeanRegistration}
+     * should be passed to the {@link j86.javax.management.MBeanRegistration}
      * interface when registering MBeans inside the MBeanServer.
      * If <var>outer</var> is <code>null</code>, then the MBeanServer
      * implementation is free to use its own <code>this</code> pointer when
-     * invoking the {@link javax.management.MBeanRegistration} interface.
+     * invoking the {@link j86.javax.management.MBeanRegistration} interface.
      * <p>This makes it possible for a MBeanServer implementation to wrap
      * another MBeanServer implementation, in order to implement, e.g,
      * security checks, or to prevent access to the actual MBeanServer
@@ -1402,7 +1402,7 @@ public final class JmxMBeanServer
      * @param defaultDomain Default domain of the new MBeanServer.
      * @param outer A pointer to the MBeanServer object that must be
      *        passed to the MBeans when invoking their
-     *        {@link javax.management.MBeanRegistration} interface.
+     *        {@link j86.javax.management.MBeanRegistration} interface.
      * @param delegate A pointer to the MBeanServerDelegate associated
      *        with the new MBeanServer. The new MBeanServer must register
      *        this MBean in its MBean repository.
@@ -1414,8 +1414,8 @@ public final class JmxMBeanServer
      *        always used.
      * @return A new private implementation of an MBeanServer.
      * @see #interceptorsEnabled
-     * @see javax.management.MBeanServerBuilder
-     * @see com.sun.jmx.mbeanserver.JmxMBeanServerBuilder
+     * @see j86.javax.management.MBeanServerBuilder
+     * @see j86.com.sun.jmx.mbeanserver.JmxMBeanServerBuilder
      **/
     public static MBeanServer newMBeanServer(String defaultDomain,
                                              MBeanServer outer,

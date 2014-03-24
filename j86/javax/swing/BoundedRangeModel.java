@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.swing;
+package j86.javax.swing;
 
-import javax.swing.event.*;
+import j86.j86.javax.swing.event.*;
 
 
 /**

@@ -23,14 +23,14 @@
  * questions.
  */
 
-package javax.management;
+package j86.javax.management;
 
 
 
 /**
  * Represents exceptions thrown in the MBean server when using the
- * java.lang.reflect classes to invoke methods on MBeans. It "wraps" the
- * actual java.lang.Exception thrown.
+ * j86.j86.j86.java.lang.reflect classes to invoke methods on MBeans. It "wraps" the
+ * actual j86.java.lang.Exception thrown.
  *
  * @since 1.5
  */
@@ -42,27 +42,27 @@ public class ReflectionException extends JMException   {
     /**
      * @serial The wrapped {@link Exception}
      */
-    private java.lang.Exception exception ;
+    private j86.java.lang.Exception exception ;
 
 
     /**
-     * Creates a <CODE>ReflectionException</CODE> that wraps the actual <CODE>java.lang.Exception</CODE>.
+     * Creates a <CODE>ReflectionException</CODE> that wraps the actual <CODE>j86.java.lang.Exception</CODE>.
      *
      * @param e the wrapped exception.
      */
-    public ReflectionException(java.lang.Exception e) {
+    public ReflectionException(j86.java.lang.Exception e) {
         super() ;
         exception = e ;
     }
 
     /**
-     * Creates a <CODE>ReflectionException</CODE> that wraps the actual <CODE>java.lang.Exception</CODE> with
+     * Creates a <CODE>ReflectionException</CODE> that wraps the actual <CODE>j86.java.lang.Exception</CODE> with
      * a detail message.
      *
      * @param e the wrapped exception.
      * @param message the detail message.
      */
-    public ReflectionException(java.lang.Exception e, String message) {
+    public ReflectionException(j86.java.lang.Exception e, String message) {
         super(message) ;
         exception = e ;
     }
@@ -72,7 +72,7 @@ public class ReflectionException extends JMException   {
      *
      * @return the wrapped {@link Exception}.
      */
-    public java.lang.Exception getTargetException()  {
+    public j86.java.lang.Exception getTargetException()  {
         return exception ;
     }
 

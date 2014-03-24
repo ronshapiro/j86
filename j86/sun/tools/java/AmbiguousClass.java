@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.tools.java;
+package j86.sun.tools.java;
 
 /**
  * This exception is thrown when an unqualified class name

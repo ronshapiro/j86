@@ -23,14 +23,14 @@
  * questions.
  */
 
-package com.sun.java.util.jar.pack;
+package j86.com.sun.j86.j86.java.util.jar.pack;
 
-import com.sun.java.util.jar.pack.ConstantPool.Entry;
-import java.util.AbstractCollection;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.Objects;
+import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.Entry;
+import j86.java.util.AbstractCollection;
+import j86.java.util.ArrayList;
+import j86.java.util.Collection;
+import j86.java.util.Iterator;
+import j86.java.util.Objects;
 
 /**
  * Collection of relocatable constant pool references.

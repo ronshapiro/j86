@@ -23,27 +23,27 @@
  * questions.
  */
 
-package sun.security.ssl;
+package j86.sun.security.ssl;
 
-import java.util.*;
-import java.math.BigInteger;
+import j86.java.util.*;
+import j86.java.math.BigInteger;
 
-import java.security.*;
-import java.security.interfaces.RSAPublicKey;
-import java.security.spec.*;
+import j86.java.security.*;
+import j86.j86.java.security.interfaces.RSAPublicKey;
+import j86.j86.java.security.spec.*;
 
-import javax.crypto.*;
+import j86.javax.crypto.*;
 
 // explicit import to override the Provider class in this package
-import java.security.Provider;
+import j86.java.security.Provider;
 
 // need internal Sun classes for FIPS tricks
-import sun.security.jca.Providers;
-import sun.security.jca.ProviderList;
+import j86.sun.security.jca.Providers;
+import j86.sun.security.jca.ProviderList;
 
-import sun.security.util.ECUtil;
+import j86.sun.security.util.ECUtil;
 
-import static sun.security.ssl.SunJSSE.cryptoProvider;
+import static j86.sun.security.ssl.SunJSSE.cryptoProvider;
 
 /**
  * This class contains a few static methods for interaction with the JCA/JCE
@@ -71,7 +71,7 @@ final class JsseJce {
                     @Override
                     public Void run() throws Exception {
                         // Test for Kerberos using the bootstrap class loader
-                        Class.forName("sun.security.krb5.PrincipalName", true,
+                        Class.forName("j86.sun.security.krb5.PrincipalName", true,
                                 null);
                         return null;
                     }
@@ -390,7 +390,7 @@ final class JsseJce {
     }
 
     static ECPoint decodePoint(byte[] encoded, EllipticCurve curve)
-            throws java.io.IOException {
+            throws j86.java.io.IOException {
         return ECUtil.decodePoint(encoded, curve);
     }
 

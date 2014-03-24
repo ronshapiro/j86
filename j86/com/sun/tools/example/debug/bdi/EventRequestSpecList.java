@@ -32,12 +32,12 @@
  */
 
 
-package com.sun.tools.example.debug.bdi;
+package j86.com.sun.tools.example.debug.bdi;
 
-import com.sun.jdi.*;
-import com.sun.jdi.request.*;
+import j86.com.sun.jdi.*;
+import j86.j86.com.sun.jdi.request.*;
 
-import java.util.*;
+import j86.java.util.*;
 
 class EventRequestSpecList {
 

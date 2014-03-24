@@ -23,16 +23,16 @@
  * questions.
  */
 
-package com.sun.jmx.snmp.defaults;
+package j86.j86.com.sun.jmx.snmp.defaults;
 
 
 // java import
 //
-import java.io.File;
-import java.io.BufferedReader;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.util.StringTokenizer;
+import j86.java.io.File;
+import j86.java.io.BufferedReader;
+import j86.java.io.InputStream;
+import j86.java.io.InputStreamReader;
+import j86.java.util.StringTokenizer;
 
 /**
  * This class represents a set of default directories used by Java DMK.

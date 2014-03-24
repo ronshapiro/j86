@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.rmi.transport.proxy;
+package j86.j86.sun.rmi.transport.proxy;
 
-import java.io.*;
+import j86.java.io.*;
 
-import sun.rmi.runtime.Log;
+import j86.sun.rmi.runtime.Log;
 
 /**
  * The HttpInputStream class assists the HttpSendSocket and HttpReceiveSocket

@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.java2d.pisces;
+package j86.j86.sun.java2d.pisces;
 
-import java.util.Arrays;
+import j86.java.util.Arrays;
 
 /**
  * An object used to cache pre-rendered complex paths.

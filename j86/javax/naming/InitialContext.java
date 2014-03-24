@@ -23,11 +23,11 @@
  * questions.
  */
 
-package javax.naming;
+package j86.javax.naming;
 
-import java.util.Hashtable;
-import javax.naming.spi.NamingManager;
-import com.sun.naming.internal.ResourceManager;
+import j86.java.util.Hashtable;
+import j86.j86.javax.naming.spi.NamingManager;
+import j86.com.sun.naming.internal.ResourceManager;
 
 /**
  * This class is the starting context for performing naming operations.
@@ -333,7 +333,7 @@ public class InitialContext implements Context {
      *         initial context. The result cannot be null.
      * @exception NoInitialContextException If cannot find an initial context.
      * @exception NamingException In a naming exception is encountered.
-     * @see javax.naming.spi.NamingManager#getURLContext
+     * @see j86.j86.javax.naming.spi.NamingManager#getURLContext
      */
     protected Context getURLOrDefaultInitCtx(String name)
         throws NamingException {
@@ -390,7 +390,7 @@ public class InitialContext implements Context {
      * @exception NoInitialContextException If cannot find an initial context.
      * @exception NamingException In a naming exception is encountered.
      *
-     * @see javax.naming.spi.NamingManager#getURLContext
+     * @see j86.j86.javax.naming.spi.NamingManager#getURLContext
      */
     protected Context getURLOrDefaultInitCtx(Name name)
         throws NamingException {

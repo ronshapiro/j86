@@ -65,9 +65,9 @@
  * of the copyright holder.
  */
 
-package sun.text.resources.hi;
+package j86.j86.j86.sun.text.resources.hi;
 
-import sun.util.resources.ParallelListResourceBundle;
+import j86.j86.sun.util.resources.ParallelListResourceBundle;
 
 /**
  * The locale elements for Hindi.

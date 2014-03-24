@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.awt.dnd;
+package j86.j86.java.awt.dnd;
 
-import java.util.EventObject;
-import java.awt.dnd.DropTargetContext;
+import j86.java.util.EventObject;
+import j86.j86.java.awt.dnd.DropTargetContext;
 
 /**
  * The <code>DropTargetEvent</code> is the base
@@ -40,7 +40,7 @@ import java.awt.dnd.DropTargetContext;
  *
  */
 
-public class DropTargetEvent extends java.util.EventObject {
+public class DropTargetEvent extends j86.java.util.EventObject {
 
     private static final long serialVersionUID = 2821229066521922993L;
 

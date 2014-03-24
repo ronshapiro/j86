@@ -23,14 +23,14 @@
  * questions.
  */
 
-package javax.imageio.stream;
+package j86.j86.javax.imageio.stream;
 
-import java.io.File;
-import java.io.IOException;
-import java.io.OutputStream;
-import java.io.RandomAccessFile;
-import java.nio.file.Files;
-import com.sun.imageio.stream.StreamCloser;
+import j86.java.io.File;
+import j86.java.io.IOException;
+import j86.java.io.OutputStream;
+import j86.java.io.RandomAccessFile;
+import j86.j86.java.nio.file.Files;
+import j86.com.sun.imageio.stream.StreamCloser;
 
 /**
  * An implementation of <code>ImageOutputStream</code> that writes its

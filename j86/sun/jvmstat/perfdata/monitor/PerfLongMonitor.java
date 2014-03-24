@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.jvmstat.perfdata.monitor;
+package j86.sun.jvmstat.perfdata.monitor;
 
-import sun.jvmstat.monitor.*;
-import java.nio.LongBuffer;
+import j86.sun.jvmstat.monitor.*;
+import j86.java.nio.LongBuffer;
 
 /**
  * Class for monitoring a PerfData Long instrument.

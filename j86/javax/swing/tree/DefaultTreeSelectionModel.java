@@ -23,19 +23,19 @@
  * questions.
  */
 
-package javax.swing.tree;
+package j86.j86.javax.swing.tree;
 
-import java.beans.PropertyChangeListener;
-import java.io.*;
-import java.util.ArrayList;
-import java.util.BitSet;
-import java.util.Enumeration;
-import java.util.EventListener;
-import java.util.Hashtable;
-import java.util.List;
-import java.util.Vector;
-import javax.swing.event.*;
-import javax.swing.DefaultListSelectionModel;
+import j86.java.beans.PropertyChangeListener;
+import j86.java.io.*;
+import j86.java.util.ArrayList;
+import j86.java.util.BitSet;
+import j86.java.util.Enumeration;
+import j86.java.util.EventListener;
+import j86.java.util.Hashtable;
+import j86.java.util.List;
+import j86.java.util.Vector;
+import j86.j86.javax.swing.event.*;
+import j86.javax.swing.DefaultListSelectionModel;
 
 /**
  * Default implementation of TreeSelectionModel.  Listeners are notified
@@ -54,10 +54,10 @@ import javax.swing.DefaultListSelectionModel;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
- * @see javax.swing.JTree
+ * @see j86.javax.swing.JTree
  *
  * @author Scott Violet
  */
@@ -660,14 +660,14 @@ public class DefaultTreeSelectionModel implements Cloneable, Serializable, TreeS
      *
      * @param listenerType the type of listeners requested; this parameter
      *          should specify an interface that descends from
-     *          <code>java.util.EventListener</code>
+     *          <code>j86.java.util.EventListener</code>
      * @return an array of all objects registered as
      *          <code><em>Foo</em>Listener</code>s on this component,
      *          or an empty array if no such
      *          listeners have been added
      * @exception ClassCastException if <code>listenerType</code>
      *          doesn't specify a class or interface that implements
-     *          <code>java.util.EventListener</code>
+     *          <code>j86.java.util.EventListener</code>
      *
      * @see #getTreeSelectionListeners
      * @see #getPropertyChangeListeners

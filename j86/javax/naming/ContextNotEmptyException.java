@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.naming;
+package j86.javax.naming;
 
 /**
   * This exception is thrown when attempting to destroy a context that
@@ -51,7 +51,7 @@ public class ContextNotEmptyException extends NamingException {
      *
      * @param   explanation     Possibly null string containing
      * additional detail about this exception.
-     * @see java.lang.Throwable#getMessage
+     * @see j86.java.lang.Throwable#getMessage
      */
     public ContextNotEmptyException(String explanation) {
         super(explanation);

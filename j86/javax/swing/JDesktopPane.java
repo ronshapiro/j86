@@ -23,26 +23,26 @@
  * questions.
  */
 
-package javax.swing;
+package j86.javax.swing;
 
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Iterator;
-import javax.swing.plaf.*;
-import javax.accessibility.*;
+import j86.java.util.List;
+import j86.java.util.ArrayList;
+import j86.java.util.Collection;
+import j86.java.util.Iterator;
+import j86.j86.javax.swing.plaf.*;
+import j86.javax.accessibility.*;
 
-import java.awt.Component;
-import java.awt.Container;
-import java.awt.DefaultFocusTraversalPolicy;
-import java.awt.FocusTraversalPolicy;
-import java.awt.Window;
-import java.io.ObjectOutputStream;
-import java.io.ObjectInputStream;
-import java.io.IOException;
-import java.beans.PropertyVetoException;
-import java.util.Set;
-import java.util.TreeSet;
+import j86.java.awt.Component;
+import j86.java.awt.Container;
+import j86.java.awt.DefaultFocusTraversalPolicy;
+import j86.java.awt.FocusTraversalPolicy;
+import j86.java.awt.Window;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.IOException;
+import j86.java.beans.PropertyVetoException;
+import j86.java.util.Set;
+import j86.java.util.TreeSet;
 /**
  * A container used to create a multiple-document interface or a virtual desktop.
  * You create <code>JInternalFrame</code> objects and add them to the
@@ -77,8 +77,8 @@ import java.util.TreeSet;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @see JInternalFrame
  * @see JInternalFrame.JDesktopIcon
@@ -613,8 +613,8 @@ public class JDesktopPane extends JLayeredPane implements Accessible
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     protected class AccessibleJDesktopPane extends AccessibleJComponent {
 

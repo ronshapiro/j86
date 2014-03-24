@@ -23,13 +23,13 @@
  * questions.
  */
 
-package sun.security.provider.certpath;
+package j86.j86.sun.security.provider.certpath;
 
-import java.security.InvalidAlgorithmParameterException;
-import java.security.KeyStore;
-import java.security.KeyStoreException;
-import java.security.cert.*;
-import java.util.Set;
+import j86.java.security.InvalidAlgorithmParameterException;
+import j86.java.security.KeyStore;
+import j86.java.security.KeyStoreException;
+import j86.j86.java.security.cert.*;
+import j86.java.util.Set;
 
 /**
  * This class specifies the set of parameters used as input for the Sun
@@ -62,7 +62,7 @@ public class SunCertPathBuilderParameters extends PKIXBuilderParameters {
      * @throws NullPointerException if the specified <code>Set</code> is
      * <code>null</code>
      * @throws ClassCastException if any of the elements in the <code>Set</code>
-     * are not of type <code>java.security.cert.TrustAnchor</code>
+     * are not of type <code>j86.j86.java.security.cert.TrustAnchor</code>
      */
     public SunCertPathBuilderParameters(Set<TrustAnchor> trustAnchors,
         CertSelector targetConstraints) throws InvalidAlgorithmParameterException

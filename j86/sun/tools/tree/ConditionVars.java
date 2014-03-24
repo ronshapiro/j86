@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.tools.tree;
+package j86.sun.tools.tree;
 
 /**
  * This class is used to hold two sets of variables,

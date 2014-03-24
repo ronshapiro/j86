@@ -43,9 +43,9 @@
  * http://oss.software.ibm.com/cvs/icu/icu/source/data/locales/vi.txt?rev=1.38
  */
 
-package sun.text.resources.vi;
+package j86.j86.j86.sun.text.resources.vi;
 
-import java.util.ListResourceBundle;
+import j86.java.util.ListResourceBundle;
 
 public class CollationData_vi extends ListResourceBundle {
 

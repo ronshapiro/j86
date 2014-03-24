@@ -23,29 +23,29 @@
  * questions.
  */
 
-package sun.net.www.protocol.jar;
+package j86.j86.j86.sun.net.www.protocol.jar;
 
-import java.io.InputStream;
-import java.io.IOException;
-import java.io.FileNotFoundException;
-import java.io.BufferedInputStream;
-import java.net.URL;
-import java.net.URLConnection;
-import java.net.MalformedURLException;
-import java.net.UnknownServiceException;
-import java.util.Enumeration;
-import java.util.Map;
-import java.util.List;
-import java.util.jar.JarEntry;
-import java.util.jar.JarFile;
-import java.util.jar.Manifest;
-import java.security.Permission;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
+import j86.java.io.FileNotFoundException;
+import j86.java.io.BufferedInputStream;
+import j86.java.net.URL;
+import j86.java.net.URLConnection;
+import j86.java.net.MalformedURLException;
+import j86.java.net.UnknownServiceException;
+import j86.java.util.Enumeration;
+import j86.java.util.Map;
+import j86.java.util.List;
+import j86.j86.java.util.jar.JarEntry;
+import j86.j86.java.util.jar.JarFile;
+import j86.j86.java.util.jar.Manifest;
+import j86.java.security.Permission;
 
 /**
  * @author Benjamin Renaud
  * @since 1.2
  */
-public class JarURLConnection extends java.net.JarURLConnection {
+public class JarURLConnection extends j86.java.net.JarURLConnection {
 
     private static final boolean debug = false;
 
@@ -99,7 +99,7 @@ public class JarURLConnection extends java.net.JarURLConnection {
         return jarFileURLConnection.getPermission();
     }
 
-    class JarURLInputStream extends java.io.FilterInputStream {
+    class JarURLInputStream extends j86.java.io.FilterInputStream {
         JarURLInputStream (InputStream src) {
             super (src);
         }
@@ -282,7 +282,7 @@ public class JarURLConnection extends java.net.JarURLConnection {
      * this <code>URLConnection</code>.
      *
      * @param   allowuserinteraction   the new value.
-     * @see     java.net.URLConnection#allowUserInteraction
+     * @see     j86.java.net.URLConnection#allowUserInteraction
      */
     public void setAllowUserInteraction(boolean allowuserinteraction) {
         jarFileURLConnection.setAllowUserInteraction(allowuserinteraction);
@@ -294,7 +294,7 @@ public class JarURLConnection extends java.net.JarURLConnection {
      *
      * @return  the value of the <code>allowUserInteraction</code> field for
      *          this object.
-     * @see     java.net.URLConnection#allowUserInteraction
+     * @see     j86.java.net.URLConnection#allowUserInteraction
      */
     public boolean getAllowUserInteraction() {
         return jarFileURLConnection.getAllowUserInteraction();
@@ -316,7 +316,7 @@ public class JarURLConnection extends java.net.JarURLConnection {
      *  The default value comes from DefaultUseCaches, which defaults to
      * true.
      *
-     * @see     java.net.URLConnection#useCaches
+     * @see     j86.java.net.URLConnection#useCaches
      */
     public void setUseCaches(boolean usecaches) {
         jarFileURLConnection.setUseCaches(usecaches);
@@ -328,7 +328,7 @@ public class JarURLConnection extends java.net.JarURLConnection {
      *
      * @return  the value of this <code>URLConnection</code>'s
      *          <code>useCaches</code> field.
-     * @see     java.net.URLConnection#useCaches
+     * @see     j86.java.net.URLConnection#useCaches
      */
     public boolean getUseCaches() {
         return jarFileURLConnection.getUseCaches();
@@ -339,7 +339,7 @@ public class JarURLConnection extends java.net.JarURLConnection {
      * this <code>URLConnection</code> to the specified value.
      *
      * @param   value   the new value.
-     * @see     java.net.URLConnection#ifModifiedSince
+     * @see     j86.java.net.URLConnection#ifModifiedSince
      */
     public void setIfModifiedSince(long ifmodifiedsince) {
         jarFileURLConnection.setIfModifiedSince(ifmodifiedsince);
@@ -350,7 +350,7 @@ public class JarURLConnection extends java.net.JarURLConnection {
      * specified value.
      *
      * @param   defaultusecaches   the new value.
-     * @see     java.net.URLConnection#useCaches
+     * @see     j86.java.net.URLConnection#useCaches
      */
     public void setDefaultUseCaches(boolean defaultusecaches) {
         jarFileURLConnection.setDefaultUseCaches(defaultusecaches);
@@ -366,7 +366,7 @@ public class JarURLConnection extends java.net.JarURLConnection {
      *
      * @return  the default value of a <code>URLConnection</code>'s
      *          <code>useCaches</code> flag.
-     * @see     java.net.URLConnection#useCaches
+     * @see     j86.java.net.URLConnection#useCaches
      */
     public boolean getDefaultUseCaches() {
         return jarFileURLConnection.getDefaultUseCaches();

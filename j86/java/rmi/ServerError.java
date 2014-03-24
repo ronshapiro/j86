@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.rmi;
+package j86.java.rmi;
 
 /**
  * A <code>ServerError</code> is thrown as a result of a remote method

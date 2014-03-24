@@ -23,12 +23,12 @@
  * questions.
  */
 
-package com.sun.jmx.snmp.daemon;
+package j86.j86.j86.com.sun.jmx.snmp.daemon;
 
 // java import
 //
-import java.io.PrintStream;
-import java.io.PrintWriter;
+import j86.java.io.PrintStream;
+import j86.java.io.PrintWriter;
 
 /**
  * Represents exceptions raised due to communications problems,
@@ -38,7 +38,7 @@ import java.io.PrintWriter;
  * to change without notice.</b></p>
  */
 
-public class CommunicationException extends javax.management.JMRuntimeException {
+public class CommunicationException extends j86.javax.management.JMRuntimeException {
 
     /* Serial version */
     private static final long serialVersionUID = -2499186113233316177L;

@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.tools.java;
+package j86.sun.tools.java;
 
-import sun.tools.tree.*;
+import j86.sun.tools.tree.*;
 
 /**
  * This is the protocol by which a Parser makes callbacks

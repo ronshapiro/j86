@@ -68,8 +68,8 @@
 
   <target name="deploy" depends="compile" description="Creates a deployment bundle">
     <delete file="${build.dir}/${dist.jar}" />
-    <mkdir dir="${classes.dir}/com/sun/tools/hat/resources" />
-    <copy todir="${classes.dir}/com/sun/tools/hat/resources">
+    <mkdir dir="${classes.dir}/j86.com.sun.tools.hat/resources" />
+    <copy todir="${classes.dir}/j86.com.sun.tools.hat/resources">
       <fileset dir="${src.dir}/resources" includes="*" />
     </copy>
 

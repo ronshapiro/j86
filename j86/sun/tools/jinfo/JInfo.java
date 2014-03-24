@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.tools.jinfo;
+package j86.sun.tools.jinfo;
 
-import java.lang.reflect.Method;
-import java.io.IOException;
-import java.io.InputStream;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
 
-import com.sun.tools.attach.VirtualMachine;
-import sun.tools.attach.HotSpotVirtualMachine;
+import com.j86.sun.tools.attach.VirtualMachine;
+import j86.sun.tools.attach.HotSpotVirtualMachine;
 
 /*
  * This class is the main class for the JInfo utility. It parses its arguments

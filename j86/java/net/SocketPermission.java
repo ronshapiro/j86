@@ -23,30 +23,30 @@
  * questions.
  */
 
-package java.net;
+package j86.java.net;
 
-import java.util.Enumeration;
-import java.util.Vector;
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.StringTokenizer;
-import java.net.InetAddress;
-import java.security.Permission;
-import java.security.PermissionCollection;
-import java.security.PrivilegedAction;
-import java.security.AccessController;
-import java.security.Security;
-import java.io.Serializable;
-import java.io.ObjectStreamField;
-import java.io.ObjectOutputStream;
-import java.io.ObjectInputStream;
-import java.io.IOException;
-import sun.net.util.IPAddressUtil;
-import sun.net.RegisteredDomain;
-import sun.net.PortConfig;
-import sun.security.util.SecurityConstants;
-import sun.security.util.Debug;
+import j86.java.util.Enumeration;
+import j86.java.util.Vector;
+import j86.java.util.List;
+import j86.java.util.ArrayList;
+import j86.java.util.Collections;
+import j86.java.util.StringTokenizer;
+import j86.java.net.InetAddress;
+import j86.java.security.Permission;
+import j86.java.security.PermissionCollection;
+import j86.java.security.PrivilegedAction;
+import j86.java.security.AccessController;
+import j86.java.security.Security;
+import j86.java.io.Serializable;
+import j86.java.io.ObjectStreamField;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.IOException;
+import j86.j86.sun.net.util.IPAddressUtil;
+import j86.sun.net.RegisteredDomain;
+import j86.sun.net.PortConfig;
+import j86.sun.security.util.SecurityConstants;
+import j86.sun.security.util.Debug;
 
 
 /**
@@ -135,7 +135,7 @@ import sun.security.util.Debug;
  * transfer and share confidential data among parties who may not
  * otherwise have access to the data.
  *
- * @see java.security.Permissions
+ * @see j86.java.security.Permissions
  * @see SocketPermission
  *
  *
@@ -146,7 +146,7 @@ import sun.security.util.Debug;
  */
 
 public final class SocketPermission extends Permission
-    implements java.io.Serializable
+    implements j86.java.io.Serializable
 {
     private static final long serialVersionUID = -7204263841984476862L;
 
@@ -229,7 +229,7 @@ public final class SocketPermission extends Permission
     private transient boolean untrusted;
     private transient boolean trusted;
 
-    // true if the sun.net.trustNameService system property is set
+    // true if the j86.sun.net.trustNameService system property is set
     private static boolean trustNameService;
 
     private static Debug debug = null;
@@ -244,8 +244,8 @@ public final class SocketPermission extends Permission
     );
 
     static {
-        Boolean tmp = java.security.AccessController.doPrivileged(
-                new sun.security.action.GetBooleanAction("sun.net.trustNameService"));
+        Boolean tmp = j86.java.security.AccessController.doPrivileged(
+                new j86.sun.security.action.GetBooleanAction("j86.sun.net.trustNameService"));
         trustNameService = tmp.booleanValue();
     }
 
@@ -616,7 +616,7 @@ public final class SocketPermission extends Permission
         if (invalid || untrusted) return true;
         try {
             if (!trustNameService && (defaultDeny ||
-                sun.net.www.URLConnection.isProxiedHost(hostname))) {
+                j86.j86.sun.net.www.URLConnection.isProxiedHost(hostname))) {
                 if (this.cname == null) {
                     this.getCanonName();
                 }
@@ -1076,7 +1076,7 @@ public final class SocketPermission extends Permission
          * If this SocketPermission was initialized with an IP address
          * or a wildcard, use getName().hashCode(), otherwise use
          * the hashCode() of the host name returned from
-         * java.net.InetAddress.getHostName method.
+         * j86.java.net.InetAddress.getHostName method.
          */
 
         if (init_with_ip || wildcard) {
@@ -1182,7 +1182,7 @@ public final class SocketPermission extends Permission
      * to a stream. The actions are serialized, and the superclass
      * takes care of the name.
      */
-    private synchronized void writeObject(java.io.ObjectOutputStream s)
+    private synchronized void writeObject(j86.java.io.ObjectOutputStream s)
         throws IOException
     {
         // Write out the actions. The superclass takes care of the name
@@ -1196,7 +1196,7 @@ public final class SocketPermission extends Permission
      * readObject is called to restore the state of the SocketPermission from
      * a stream.
      */
-    private synchronized void readObject(java.io.ObjectInputStream s)
+    private synchronized void readObject(j86.java.io.ObjectInputStream s)
          throws IOException, ClassNotFoundException
     {
         // Read in the action, then initialize the rest
@@ -1319,9 +1319,9 @@ if wildcard, its the wild card
 else its the cname?
 
  *
- * @see java.security.Permission
- * @see java.security.Permissions
- * @see java.security.PermissionCollection
+ * @see j86.java.security.Permission
+ * @see j86.java.security.Permissions
+ * @see j86.java.security.PermissionCollection
  *
  *
  * @author Roland Schemers
@@ -1436,7 +1436,7 @@ final class SocketPermissionCollection extends PermissionCollection
     // private Vector permissions;
 
     /**
-     * @serialField permissions java.util.Vector
+     * @serialField permissions j86.java.util.Vector
      *     A list of the SocketPermissions for this set.
      */
     private static final ObjectStreamField[] serialPersistentFields = {

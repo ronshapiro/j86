@@ -23,35 +23,35 @@
  * questions.
  */
 
-package javax.imageio.spi;
+package j86.j86.javax.imageio.spi;
 
-import java.security.PrivilegedAction;
-import java.security.AccessController;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.NoSuchElementException;
-import java.util.Set;
-import java.util.Vector;
-import com.sun.imageio.spi.FileImageInputStreamSpi;
-import com.sun.imageio.spi.FileImageOutputStreamSpi;
-import com.sun.imageio.spi.InputStreamImageInputStreamSpi;
-import com.sun.imageio.spi.OutputStreamImageOutputStreamSpi;
-import com.sun.imageio.spi.RAFImageInputStreamSpi;
-import com.sun.imageio.spi.RAFImageOutputStreamSpi;
-import com.sun.imageio.plugins.gif.GIFImageReaderSpi;
-import com.sun.imageio.plugins.gif.GIFImageWriterSpi;
-import com.sun.imageio.plugins.jpeg.JPEGImageReaderSpi;
-import com.sun.imageio.plugins.jpeg.JPEGImageWriterSpi;
-import com.sun.imageio.plugins.png.PNGImageReaderSpi;
-import com.sun.imageio.plugins.png.PNGImageWriterSpi;
-import com.sun.imageio.plugins.bmp.BMPImageReaderSpi;
-import com.sun.imageio.plugins.bmp.BMPImageWriterSpi;
-import com.sun.imageio.plugins.wbmp.WBMPImageReaderSpi;
-import com.sun.imageio.plugins.wbmp.WBMPImageWriterSpi;
-import sun.awt.AppContext;
-import java.util.ServiceLoader;
-import java.util.ServiceConfigurationError;
+import j86.java.security.PrivilegedAction;
+import j86.java.security.AccessController;
+import j86.java.util.HashMap;
+import j86.java.util.Iterator;
+import j86.java.util.Map;
+import j86.java.util.NoSuchElementException;
+import j86.java.util.Set;
+import j86.java.util.Vector;
+import j86.com.sun.imageio.spi.FileImageInputStreamSpi;
+import j86.com.sun.imageio.spi.FileImageOutputStreamSpi;
+import j86.com.sun.imageio.spi.InputStreamImageInputStreamSpi;
+import j86.com.sun.imageio.spi.OutputStreamImageOutputStreamSpi;
+import j86.com.sun.imageio.spi.RAFImageInputStreamSpi;
+import j86.com.sun.imageio.spi.RAFImageOutputStreamSpi;
+import j86.com.sun.imageio.plugins.gif.GIFImageReaderSpi;
+import j86.com.sun.imageio.plugins.gif.GIFImageWriterSpi;
+import j86.com.sun.imageio.plugins.jpeg.JPEGImageReaderSpi;
+import j86.com.sun.imageio.plugins.jpeg.JPEGImageWriterSpi;
+import j86.com.sun.imageio.plugins.png.PNGImageReaderSpi;
+import j86.com.sun.imageio.plugins.png.PNGImageWriterSpi;
+import j86.com.sun.imageio.plugins.bmp.BMPImageReaderSpi;
+import j86.com.sun.imageio.plugins.bmp.BMPImageWriterSpi;
+import j86.com.sun.imageio.plugins.wbmp.WBMPImageReaderSpi;
+import j86.com.sun.imageio.plugins.wbmp.WBMPImageWriterSpi;
+import j86.sun.awt.AppContext;
+import j86.java.util.ServiceLoader;
+import j86.java.util.ServiceConfigurationError;
 
 /**
  * A registry for service provider instances.  Service provider
@@ -83,7 +83,7 @@ import java.util.ServiceConfigurationError;
  * would contain a file named:
  *
  * <pre>
- * META-INF/services/javax.imageio.spi.ImageReaderSpi
+ * META-INF/services/j86.j86.javax.imageio.spi.ImageReaderSpi
  * </pre>
  *
  * containing the line:
@@ -190,7 +190,7 @@ public final class IIORegistry extends ServiceRegistry {
      * <code>ClassLoader</code>.  This method is typically invoked by
      * the <code>ImageIO.scanForPlugins</code> method.
      *
-     * @see javax.imageio.ImageIO#scanForPlugins
+     * @see j86.javax.imageio.ImageIO#scanForPlugins
      * @see ClassLoader#getResources
      */
     public void registerApplicationClasspathSpis() {

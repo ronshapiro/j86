@@ -23,12 +23,12 @@
  * questions.
  */
 
-package javax.imageio.plugins.jpeg;
+package j86.j86.javax.imageio.plugins.jpeg;
 
-import java.util.Locale;
-import javax.imageio.ImageWriteParam;
+import j86.java.util.Locale;
+import j86.javax.imageio.ImageWriteParam;
 
-import com.sun.imageio.plugins.jpeg.JPEG;
+import j86.com.sun.imageio.plugins.jpeg.JPEG;
 
 /**
  * This class adds the ability to set JPEG quantization and Huffman
@@ -80,7 +80,7 @@ import com.sun.imageio.plugins.jpeg.JPEG;
  * set of tables has been written, only tables in the metadata can
  * override them for subsequent writes, whether to the same stream or
  * a different one.  In order to specify new tables using this class,
- * the {@link javax.imageio.ImageWriter#reset reset}
+ * the {@link j86.javax.imageio.ImageWriter#reset reset}
  * method of the writer must be called.
  *
  * <p>

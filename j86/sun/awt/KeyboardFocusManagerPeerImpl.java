@@ -22,33 +22,33 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.awt;
+package j86.sun.awt;
 
-import java.awt.Component;
-import java.awt.KeyboardFocusManager;
-import java.awt.Window;
-import java.awt.Canvas;
-import java.awt.Scrollbar;
-import java.awt.Panel;
+import j86.java.awt.Component;
+import j86.java.awt.KeyboardFocusManager;
+import j86.java.awt.Window;
+import j86.java.awt.Canvas;
+import j86.java.awt.Scrollbar;
+import j86.java.awt.Panel;
 
-import java.awt.event.FocusEvent;
+import j86.j86.java.awt.event.FocusEvent;
 
-import java.awt.peer.KeyboardFocusManagerPeer;
-import java.awt.peer.ComponentPeer;
+import j86.j86.java.awt.peer.KeyboardFocusManagerPeer;
+import j86.j86.java.awt.peer.ComponentPeer;
 
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
+import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.j86.j86.java.lang.reflect.Method;
 
-import sun.util.logging.PlatformLogger;
+import j86.j86.sun.util.logging.PlatformLogger;
 
 public abstract class KeyboardFocusManagerPeerImpl implements KeyboardFocusManagerPeer {
 
-    private static final PlatformLogger focusLog = PlatformLogger.getLogger("sun.awt.focus.KeyboardFocusManagerPeerImpl");
+    private static final PlatformLogger focusLog = PlatformLogger.getLogger("j86.sun.awt.focus.KeyboardFocusManagerPeerImpl");
 
     private static AWTAccessor.KeyboardFocusManagerAccessor kfmAccessor =
         AWTAccessor.getKeyboardFocusManagerAccessor();
 
-    // The constants are copied from java.awt.KeyboardFocusManager
+    // The constants are copied from j86.java.awt.KeyboardFocusManager
     public static final int SNFH_FAILURE         = 0;
     public static final int SNFH_SUCCESS_HANDLED = 1;
     public static final int SNFH_SUCCESS_PROCEED = 2;

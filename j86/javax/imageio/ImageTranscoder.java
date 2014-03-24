@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.imageio;
+package j86.javax.imageio;
 
-import javax.imageio.metadata.IIOMetadata;
+import j86.j86.javax.imageio.metadata.IIOMetadata;
 
 /**
  * An interface providing metadata transcoding capability.

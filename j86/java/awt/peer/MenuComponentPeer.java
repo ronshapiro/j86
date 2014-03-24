@@ -22,10 +22,10 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.awt.peer;
+package j86.j86.java.awt.peer;
 
-import java.awt.Font;
-import java.awt.MenuComponent;
+import j86.java.awt.Font;
+import j86.java.awt.MenuComponent;
 
 /**
  * The base interface for all kinds of menu components. This is used by

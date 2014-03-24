@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.sql;
+package j86.java.sql;
 
 /**
  * An object that is used to identify a generic SQL type, called a JDBC type or

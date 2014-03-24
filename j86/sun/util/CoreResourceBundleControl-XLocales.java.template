@@ -25,16 +25,16 @@
 
 #warn This file is preprocessed before being compiled
 
-package sun.util;
+package j86.sun.util;
 
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Locale;
-import java.util.ResourceBundle;
-import java.util.ResourceBundle.Control;
+import j86.java.util.Arrays;
+import j86.java.util.Collection;
+import j86.java.util.Collections;
+import j86.java.util.HashSet;
+import j86.java.util.List;
+import j86.java.util.Locale;
+import j86.java.util.ResourceBundle;
+import j86.java.util.ResourceBundle.Control;
 
 /**
  * This is a convenient class for loading some of internal resources faster

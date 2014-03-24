@@ -23,17 +23,17 @@
  * questions.
  */
 
-package java.util;
+package j86.java.util;
 
-import java.net.NetworkInterface;
-import java.util.concurrent.atomic.AtomicLong;
-import java.util.function.IntConsumer;
-import java.util.function.LongConsumer;
-import java.util.function.DoubleConsumer;
-import java.util.stream.StreamSupport;
-import java.util.stream.IntStream;
-import java.util.stream.LongStream;
-import java.util.stream.DoubleStream;
+import j86.java.net.NetworkInterface;
+import j86.j86.j86.java.util.concurrent.atomic.AtomicLong;
+import j86.j86.java.util.function.IntConsumer;
+import j86.j86.java.util.function.LongConsumer;
+import j86.j86.java.util.function.DoubleConsumer;
+import j86.j86.java.util.stream.StreamSupport;
+import j86.j86.java.util.stream.IntStream;
+import j86.j86.java.util.stream.LongStream;
+import j86.j86.java.util.stream.DoubleStream;
 
 /**
  * A generator of uniform pseudorandom values applicable for use in
@@ -41,7 +41,7 @@ import java.util.stream.DoubleStream;
  * generate subtasks. Class {@code SplittableRandom} supports methods for
  * producing pseudorandom numbers of type {@code int}, {@code long},
  * and {@code double} with similar usages as for class
- * {@link java.util.Random} but differs in the following ways:
+ * {@link j86.java.util.Random} but differs in the following ways:
  *
  * <ul>
  *
@@ -65,7 +65,7 @@ import java.util.stream.DoubleStream;
  *
  * <li>Instances of SplittableRandom are <em>not</em> thread-safe.
  * They are designed to be split, not shared, across threads. For
- * example, a {@link java.util.concurrent.ForkJoinTask
+ * example, a {@link j86.j86.java.util.concurrent.ForkJoinTask
  * fork/join-style} computation using random numbers might include a
  * construction of the form {@code new
  * Subtask(aSplittableRandom.split()).fork()}.
@@ -77,11 +77,11 @@ import java.util.stream.DoubleStream;
  * </ul>
  *
  * <p>Instances of {@code SplittableRandom} are not cryptographically
- * secure.  Consider instead using {@link java.security.SecureRandom}
+ * secure.  Consider instead using {@link j86.java.security.SecureRandom}
  * in security-sensitive applications. Additionally,
  * default-constructed instances do not use a cryptographically random
  * seed unless the {@linkplain System#getProperty system property}
- * {@code java.util.secureRandomSeed} is set to {@code true}.
+ * {@code j86.java.util.secureRandomSeed} is set to {@code true}.
  *
  * @author  Guy Steele
  * @author  Doug Lea
@@ -141,7 +141,7 @@ public final class SplittableRandom {
      * manner, so we use an AtomicLong to represent the seed rather
      * than use an explicit SplittableRandom. To bootstrap the
      * defaultGen, we start off using a seed based on current time and
-     * network interface address unless the java.util.secureRandomSeed
+     * network interface address unless the j86.java.util.secureRandomSeed
      * property is set. This serves as a slimmed-down (and insecure)
      * variant of SecureRandom that also avoids stalls that may occur
      * when using /dev/random.
@@ -227,11 +227,11 @@ public final class SplittableRandom {
     private static final AtomicLong defaultGen = new AtomicLong(initialSeed());
 
     private static long initialSeed() {
-        String pp = java.security.AccessController.doPrivileged(
-                new sun.security.action.GetPropertyAction(
-                        "java.util.secureRandomSeed"));
+        String pp = j86.java.security.AccessController.doPrivileged(
+                new j86.sun.security.action.GetPropertyAction(
+                        "j86.java.util.secureRandomSeed"));
         if (pp != null && pp.equalsIgnoreCase("true")) {
-            byte[] seedBytes = java.security.SecureRandom.getSeed(8);
+            byte[] seedBytes = j86.java.security.SecureRandom.getSeed(8);
             long s = (long)(seedBytes[0]) & 0xffL;
             for (int i = 1; i < 8; ++i)
                 s = (s << 8) | ((long)(seedBytes[i]) & 0xffL);

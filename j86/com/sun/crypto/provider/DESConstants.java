@@ -23,7 +23,7 @@
  * questions.
  */
 
-package com.sun.crypto.provider;
+package j86.com.sun.crypto.provider;
 
 /**
  * This class defines the constants used by the DES implementation.

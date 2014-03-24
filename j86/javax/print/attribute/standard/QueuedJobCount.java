@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.print.attribute.standard;
+package j86.j86.j86.javax.print.attribute.standard;
 
-import javax.print.attribute.Attribute;
-import javax.print.attribute.IntegerSyntax;
-import javax.print.attribute.PrintServiceAttribute;
+import j86.j86.javax.print.attribute.Attribute;
+import j86.j86.javax.print.attribute.IntegerSyntax;
+import j86.j86.javax.print.attribute.PrintServiceAttribute;
 
 /**
  * Class QueuedJobCount is an integer valued printing attribute that indicates
@@ -89,7 +89,7 @@ public final class QueuedJobCount extends IntegerSyntax
      * For class QueuedJobCount, the category is class QueuedJobCount itself.
      *
      * @return  Printing attribute class (category), an instance of class
-     *          {@link java.lang.Class java.lang.Class}.
+     *          {@link j86.java.lang.Class java.lang.Class}.
      */
     public final Class<? extends Attribute> getCategory() {
         return QueuedJobCount.class;

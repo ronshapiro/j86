@@ -22,16 +22,16 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text;
+package j86.j86.javax.swing.text;
 
-import sun.reflect.misc.ReflectUtil;
-import sun.swing.SwingUtilities2;
+import j86.j86.sun.reflect.misc.ReflectUtil;
+import j86.sun.swing.SwingUtilities2;
 
-import java.io.Serializable;
-import java.lang.reflect.*;
-import java.text.ParseException;
-import javax.swing.*;
-import javax.swing.text.*;
+import j86.java.io.Serializable;
+import j86.j86.j86.java.lang.reflect.*;
+import j86.java.text.ParseException;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.text.*;
 
 /**
  * <code>DefaultFormatter</code> formats arbitrary objects. Formatting is done
@@ -52,10 +52,10 @@ import javax.swing.text.*;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
- * @see javax.swing.JFormattedTextField.AbstractFormatter
+ * @see j86.javax.swing.JFormattedTextField.AbstractFormatter
  *
  * @since 1.4
  */

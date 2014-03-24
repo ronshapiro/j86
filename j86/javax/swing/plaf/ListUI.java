@@ -23,11 +23,11 @@
  * questions.
  */
 
-package javax.swing.plaf;
+package j86.j86.javax.swing.plaf;
 
-import javax.swing.JList;
-import java.awt.Point;
-import java.awt.Rectangle;
+import j86.javax.swing.JList;
+import j86.java.awt.Point;
+import j86.java.awt.Rectangle;
 
 
 /**

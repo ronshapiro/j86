@@ -23,14 +23,14 @@
  * questions.
  */
 
-package com.sun.jndi.url.ldap;
+package j86.com.sun.jndi.url.ldap;
 
-import javax.naming.spi.ResolveResult;
-import javax.naming.*;
-import javax.naming.directory.*;
-import java.util.Hashtable;
-import java.util.StringTokenizer;
-import com.sun.jndi.ldap.LdapURL;
+import j86.j86.javax.naming.spi.ResolveResult;
+import j86.javax.naming.*;
+import j86.j86.javax.naming.directory.*;
+import j86.java.util.Hashtable;
+import j86.java.util.StringTokenizer;
+import j86.com.sun.jndi.ldap.LdapURL;
 
 /**
  * An LDAP URL context.
@@ -40,7 +40,7 @@ import com.sun.jndi.ldap.LdapURL;
  */
 
 final public class ldapURLContext
-        extends com.sun.jndi.toolkit.url.GenericURLDirContext {
+        extends j86.com.sun.jndi.toolkit.url.GenericURLDirContext {
 
     ldapURLContext(Hashtable<?,?> env) {
         super(env);

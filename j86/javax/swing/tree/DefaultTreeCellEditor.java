@@ -23,18 +23,18 @@
  * questions.
  */
 
-package javax.swing.tree;
+package j86.j86.javax.swing.tree;
 
-import javax.swing.*;
-import javax.swing.border.*;
-import javax.swing.event.*;
-import javax.swing.plaf.FontUIResource;
-import java.awt.*;
-import java.awt.event.*;
-import java.beans.*;
-import java.io.*;
-import java.util.EventObject;
-import java.util.Vector;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.border.*;
+import j86.j86.javax.swing.event.*;
+import j86.j86.javax.swing.plaf.FontUIResource;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.java.beans.*;
+import j86.java.io.*;
+import j86.java.util.EventObject;
+import j86.java.util.Vector;
 
 /**
  * A <code>TreeCellEditor</code>. You need to supply an
@@ -53,10 +53,10 @@ import java.util.Vector;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
- * @see javax.swing.JTree
+ * @see j86.javax.swing.JTree
  *
  * @author Scott Violet
  */
@@ -626,7 +626,7 @@ public class DefaultTreeCellEditor implements ActionListener, TreeCellEditor,
             return border;
         }
 
-        // implements java.awt.MenuContainer
+        // implements j86.java.awt.MenuContainer
         public Font getFont() {
             Font     font = super.getFont();
 

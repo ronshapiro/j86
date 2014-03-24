@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.lang.management;
+package j86.j86.java.lang.management;
 
 /**
  * The management interface for the garbage collection of
@@ -45,7 +45,7 @@ package java.lang.management;
  * a garbage collector within an MBeanServer is:
  * <blockquote>
  *   {@link ManagementFactory#GARBAGE_COLLECTOR_MXBEAN_DOMAIN_TYPE
- *    <tt>java.lang:type=GarbageCollector</tt>}<tt>,name=</tt><i>collector's name</i>
+ *    <tt>j86.java.lang:type=GarbageCollector</tt>}<tt>,name=</tt><i>collector's name</i>
  * </blockquote>
  *
  * It can be obtained by calling the
@@ -57,7 +57,7 @@ package java.lang.management;
  * @see ManagementFactory#getPlatformMXBeans(Class)
  * @see MemoryMXBean
  *
- * @see <a href="../../../javax/management/package-summary.html">
+ * @see <a href="../../../j86.javax.management/package-summary.html">
  *      JMX Specification.</a>
  * @see <a href="package-summary.html#examples">
  *      Ways to Access MXBeans</a>

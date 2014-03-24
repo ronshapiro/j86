@@ -23,11 +23,11 @@
  * questions.
  */
 
-package java.beans;
+package j86.java.beans;
 
-import java.lang.annotation.*;
-import static java.lang.annotation.ElementType.*;
-import static java.lang.annotation.RetentionPolicy.*;
+import j86.j86.java.lang.annotation.*;
+import static j86.j86.java.lang.annotation.ElementType.*;
+import static j86.j86.java.lang.annotation.RetentionPolicy.*;
 
 /**
    <p>An annotation on a constructor that shows how the parameters of

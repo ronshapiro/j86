@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.reflect;
+package j86.sun.reflect;
 
-import java.lang.annotation.*;
-import static java.lang.annotation.ElementType.*;
+import j86.j86.java.lang.annotation.*;
+import static j86.j86.java.lang.annotation.ElementType.*;
 
 /**
  * A method annotated @CallerSensitive is sensitive to its calling class,
- * via {@link sun.reflect.Reflection#getCallerClass Reflection.getCallerClass},
+ * via {@link j86.sun.reflect.Reflection#getCallerClass Reflection.getCallerClass},
  * or via some equivalent.
  *
  * @author John R. Rose

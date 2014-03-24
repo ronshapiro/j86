@@ -23,17 +23,17 @@
  * questions.
  */
 
-package sun.rmi.transport.tcp;
+package j86.j86.sun.rmi.transport.tcp;
 
-import java.io.*;
-import java.net.InetAddress;
-import java.net.Socket;
-import java.net.SocketException;
-import java.rmi.*;
-import java.rmi.server.RMISocketFactory;
-import sun.rmi.runtime.Log;
-import sun.rmi.transport.*;
-import sun.rmi.transport.proxy.*;
+import j86.java.io.*;
+import j86.java.net.InetAddress;
+import j86.java.net.Socket;
+import j86.java.net.SocketException;
+import j86.java.rmi.*;
+import j86.j86.java.rmi.server.RMISocketFactory;
+import j86.sun.rmi.runtime.Log;
+import j86.sun.rmi.transport.*;
+import j86.j86.sun.rmi.transport.proxy.*;
 
 public class TCPConnection implements Connection {
 
@@ -116,7 +116,7 @@ public class TCPConnection implements Connection {
      * Determine if this connection can be used for multiple operations.
      * If the socket implements RMISocketInfo, then we can query it about
      * this; otherwise, assume that it does provide a full-duplex
-     * persistent connection like java.net.Socket.
+     * persistent connection like j86.java.net.Socket.
      */
     public boolean isReusable()
     {

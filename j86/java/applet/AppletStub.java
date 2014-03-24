@@ -22,9 +22,9 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.applet;
+package j86.java.applet;
 
-import java.net.URL;
+import j86.java.net.URL;
 
 /**
  * When an applet is first created, an applet stub is attached to it
@@ -34,7 +34,7 @@ import java.net.URL;
  * is running.
  *
  * @author      Arthur van Hoff
- * @see         java.applet.Applet#setStub(java.applet.AppletStub)
+ * @see         j86.java.applet.Applet#setStub(java.applet.AppletStub)
  * @since       JDK1.0
  */
 public interface AppletStub {
@@ -61,18 +61,18 @@ public interface AppletStub {
      *    http://www.oracle.com/technetwork/java/index.html
      * </pre></blockquote>
      *
-     * @return  the {@link java.net.URL} of the document that contains the
+     * @return  the {@link j86.java.net.URL} of the document that contains the
      *          applet.
-     * @see     java.applet.AppletStub#getCodeBase()
+     * @see     j86.java.applet.AppletStub#getCodeBase()
      */
     URL getDocumentBase();
 
     /**
      * Gets the base URL. This is the URL of the directory which contains the applet.
      *
-     * @return  the base {@link java.net.URL} of
+     * @return  the base {@link j86.java.net.URL} of
      *          the directory which contains the applet.
-     * @see     java.applet.AppletStub#getDocumentBase()
+     * @see     j86.java.applet.AppletStub#getDocumentBase()
      */
     URL getCodeBase();
 

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package com.sun.jmx.snmp;
+package j86.com.sun.jmx.snmp;
 
 /**
  * Used for storing default values used by SNMP Runtime services.

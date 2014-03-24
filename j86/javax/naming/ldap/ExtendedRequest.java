@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.naming.ldap;
+package j86.j86.javax.naming.ldap;
 
-import javax.naming.NamingException;
+import j86.javax.naming.NamingException;
 
 /**
   * This interface represents an LDAPv3 extended operation request as defined in
@@ -64,7 +64,7 @@ import javax.naming.NamingException;
   *         int length) throws NamingException {
   *         time =      ... // decode berValue to get time
   *     }
-  *     public java.util.Date getDate() { return new java.util.Date(time) };
+  *     public j86.java.util.Date getDate() { return new java.util.Date(time) };
   *     public long getTime() { return time };
   *     ...
   * }
@@ -84,7 +84,7 @@ import javax.naming.NamingException;
   * @see LdapContext#extendedOperation
   * @since 1.3
   */
-public interface ExtendedRequest extends java.io.Serializable {
+public interface ExtendedRequest extends j86.java.io.Serializable {
 
     /**
       * Retrieves the object identifier of the request.

@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.net.www;
+package j86.j86.sun.net.www;
 
-import java.util.Iterator;
+import j86.java.util.Iterator;
 
 /* This is useful for the nightmare of parsing multi-part HTTP/RFC822 headers
  * sensibly:

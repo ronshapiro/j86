@@ -30,16 +30,16 @@
  * @COPYRIGHT_MINI_LEGAL_NOTICE_PLACEHOLDER@
  */
 
-package sun.management.jmxremote;
+package j86.j86.sun.management.jmxremote;
 
-import java.rmi.AccessException;
-import java.rmi.NotBoundException;
-import java.rmi.Remote;
-import java.rmi.RemoteException;
-import java.rmi.server.RMIClientSocketFactory;
-import java.rmi.server.RMIServerSocketFactory;
+import j86.java.rmi.AccessException;
+import j86.java.rmi.NotBoundException;
+import j86.java.rmi.Remote;
+import j86.java.rmi.RemoteException;
+import j86.j86.java.rmi.server.RMIClientSocketFactory;
+import j86.j86.java.rmi.server.RMIServerSocketFactory;
 
-import sun.rmi.registry.RegistryImpl;
+import j86.sun.rmi.registry.RegistryImpl;
 
 /** A Registry that consists of a single entry that never changes. */
 public class SingleEntryRegistry extends RegistryImpl {

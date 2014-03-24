@@ -30,11 +30,11 @@
  * at JavaSoft/Sun.
  */
 
-package com.sun.tools.hat.internal.parser;
+package j86.j86.com.sun.tools.hat.internal.parser;
 
-import java.io.FilterInputStream;
-import java.io.IOException;
-import java.io.InputStream;
+import j86.java.io.FilterInputStream;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
 
 /**
  * InputStream that keeps track of total bytes read (in effect

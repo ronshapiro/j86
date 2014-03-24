@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.jvmstat.monitor;
+package j86.sun.jvmstat.monitor;
 
-import java.net.*;
+import j86.java.net.*;
 
 /**
  * An abstraction that identifies a target Java Virtual Machine.

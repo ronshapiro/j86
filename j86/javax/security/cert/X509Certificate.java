@@ -24,21 +24,21 @@
  */
 
 
-package javax.security.cert;
+package j86.javax.security.cert;
 
-import java.io.InputStream;
-import java.lang.Class;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
-import java.security.Security;
+import j86.java.io.InputStream;
+import j86.java.lang.Class;
+import j86.j86.j86.java.lang.reflect.Constructor;
+import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.java.security.Security;
 
-import java.math.BigInteger;
-import java.security.AccessController;
-import java.security.Principal;
-import java.security.PrivilegedAction;
-import java.security.PublicKey;
-import java.util.BitSet;
-import java.util.Date;
+import j86.java.math.BigInteger;
+import j86.java.security.AccessController;
+import j86.java.security.Principal;
+import j86.java.security.PrivilegedAction;
+import j86.java.security.PublicKey;
+import j86.java.util.BitSet;
+import j86.java.util.Date;
 
 /**
  * Abstract class for X.509 v1 certificates. This provides a standard
@@ -102,7 +102,7 @@ import java.util.Date;
  * The {@code cert.provider.x509v1} property is set to a default
  * implementation for X.509 such as:
  * <pre>
- * cert.provider.x509v1=com.sun.security.cert.internal.x509.X509V1CertImpl
+ * cert.provider.x509v1=j86.com.sun.security.cert.internal.x509.X509V1CertImpl
  * </pre>
  * <p>
  * The value of this {@code cert.provider.x509v1} property has to be
@@ -113,17 +113,17 @@ import java.util.Date;
  * initialization time and will fallback on a default implementation if
  * the Security property is not accessible.
  *
- * <p><em>Note: The classes in the package {@code javax.security.cert}
+ * <p><em>Note: The classes in the package {@code j86.javax.security.cert}
  * exist for compatibility with earlier versions of the
  * Java Secure Sockets Extension (JSSE). New applications should instead
  * use the standard Java SE certificate classes located in
- * {@code java.security.cert}.</em></p>
+ * {@code j86.j86.java.security.cert}.</em></p>
  *
  * @author Hemma Prafullchandra
  * @since 1.4
  * @see Certificate
- * @see java.security.cert.X509Extension
- * @see java.security.Security security properties
+ * @see j86.j86.java.security.cert.X509Extension
+ * @see j86.java.security.Security security properties
  */
 public abstract class X509Certificate extends Certificate {
 
@@ -132,7 +132,7 @@ public abstract class X509Certificate extends Certificate {
      * In the Security properties file the default implementation
      * for X.509 v3 is given as:
      * <pre>
-     * cert.provider.x509v1=com.sun.security.cert.internal.x509.X509V1CertImpl
+     * cert.provider.x509v1=j86.com.sun.security.cert.internal.x509.X509V1CertImpl
      * </pre>
      */
     private static final String X509_PROVIDER = "cert.provider.x509v1";
@@ -211,7 +211,7 @@ public abstract class X509Certificate extends Certificate {
         if (className == null || className.length() == 0) {
             // shouldn't happen, but assume corrupted properties file
             // provide access to sun implementation
-            className = "com.sun.security.cert.internal.x509.X509V1CertImpl";
+            className = "j86.com.sun.security.cert.internal.x509.X509V1CertImpl";
         }
         try {
             Class<?>[] params = null;

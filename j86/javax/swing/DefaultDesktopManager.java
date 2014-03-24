@@ -24,14 +24,14 @@
  */
 
 
-package javax.swing;
+package j86.javax.swing;
 
-import com.sun.awt.AWTUtilities;
-import sun.awt.AWTAccessor;
-import sun.awt.SunToolkit;
+import com.j86.sun.awt.AWTUtilities;
+import j86.sun.awt.AWTAccessor;
+import j86.sun.awt.SunToolkit;
 
-import java.awt.*;
-import java.beans.PropertyVetoException;
+import j86.java.awt.*;
+import j86.java.beans.PropertyVetoException;
 
 /** This is an implementation of the <code>DesktopManager</code>.
   * It currently implements the basic behaviors for managing
@@ -47,7 +47,7 @@ import java.beans.PropertyVetoException;
   * @author David Kloba
   * @author Steve Wilson
   */
-public class DefaultDesktopManager implements DesktopManager, java.io.Serializable {
+public class DefaultDesktopManager implements DesktopManager, j86.java.io.Serializable {
     final static String HAS_BEEN_ICONIFIED_PROPERTY = "wasIconOnce";
 
     final static int DEFAULT_DRAG_MODE = 0;
@@ -279,7 +279,7 @@ public class DefaultDesktopManager implements DesktopManager, java.io.Serializab
         f.moveToFront();
     }
 
-    // implements javax.swing.DesktopManager
+    // implements j86.javax.swing.DesktopManager
     public void deactivateFrame(JInternalFrame f) {
       JDesktopPane d = f.getDesktopPane();
       JInternalFrame currentlyActiveFrame =
@@ -288,7 +288,7 @@ public class DefaultDesktopManager implements DesktopManager, java.io.Serializab
         d.setSelectedFrame(null);
     }
 
-    // implements javax.swing.DesktopManager
+    // implements j86.javax.swing.DesktopManager
     public void beginDraggingFrame(JComponent f) {
         setupDragMode(f);
 
@@ -370,8 +370,8 @@ public class DefaultDesktopManager implements DesktopManager, java.io.Serializab
               * so drawing it "out" in fact draws it on, leaving garbage.
               * So only update/set currentLoc if the draw completed.
               */
-              sun.java2d.SurfaceData sData =
-                  ((sun.java2d.SunGraphics2D)g).getSurfaceData();
+              j86.sun.java2d.SurfaceData sData =
+                  ((j86.sun.java2d.SunGraphics2D)g).getSurfaceData();
 
               if (!sData.isSurfaceLost()) {
                   currentLoc = new Point (newX, newY);
@@ -386,7 +386,7 @@ public class DefaultDesktopManager implements DesktopManager, java.io.Serializab
         }
     }
 
-    // implements javax.swing.DesktopManager
+    // implements j86.javax.swing.DesktopManager
     public void endDraggingFrame(JComponent f) {
         if ( dragMode == OUTLINE_DRAG_MODE && currentLoc != null) {
             setBoundsForFrame(f, currentLoc.x, currentLoc.y, f.getWidth(), f.getHeight() );
@@ -402,7 +402,7 @@ public class DefaultDesktopManager implements DesktopManager, java.io.Serializab
         }
     }
 
-    // implements javax.swing.DesktopManager
+    // implements j86.javax.swing.DesktopManager
     public void beginResizingFrame(JComponent f, int direction) {
         setupDragMode(f);
     }
@@ -431,8 +431,8 @@ public class DefaultDesktopManager implements DesktopManager, java.io.Serializab
               g.drawRect( newX, newY, newWidth-1, newHeight-1);
 
               // Work around for 6635462, see comment in dragFrame()
-              sun.java2d.SurfaceData sData =
-                  ((sun.java2d.SunGraphics2D)g).getSurfaceData();
+              j86.sun.java2d.SurfaceData sData =
+                  ((j86.sun.java2d.SunGraphics2D)g).getSurfaceData();
               if (!sData.isSurfaceLost()) {
                   currentBounds = new Rectangle (newX, newY, newWidth, newHeight);
               }
@@ -444,7 +444,7 @@ public class DefaultDesktopManager implements DesktopManager, java.io.Serializab
 
     }
 
-    // implements javax.swing.DesktopManager
+    // implements j86.javax.swing.DesktopManager
     public void endResizingFrame(JComponent f) {
         if ( dragMode == OUTLINE_DRAG_MODE && currentBounds != null) {
             setBoundsForFrame(f, currentBounds.x, currentBounds.y, currentBounds.width, currentBounds.height );

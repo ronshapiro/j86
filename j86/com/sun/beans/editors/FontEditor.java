@@ -23,12 +23,12 @@
  * questions.
  */
 
-package com.sun.beans.editors;
+package j86.j86.com.sun.beans.editors;
 
-import java.awt.*;
-import java.beans.*;
+import j86.java.awt.*;
+import j86.java.beans.*;
 
-public class FontEditor extends Panel implements java.beans.PropertyEditor {
+public class FontEditor extends Panel implements j86.java.beans.PropertyEditor {
     private static final long serialVersionUID = 6732704486002715933L;
 
     public FontEditor() {
@@ -120,7 +120,7 @@ public class FontEditor extends Panel implements java.beans.PropertyEditor {
         if (this.font == null)
             return "null";
 
-        return "new java.awt.Font(\"" + font.getName() + "\", " +
+        return "new j86.java.awt.Font(\"" + font.getName() + "\", " +
                    font.getStyle() + ", " + font.getSize() + ")";
     }
 
@@ -143,7 +143,7 @@ public class FontEditor extends Panel implements java.beans.PropertyEditor {
         return true;
     }
 
-    public void paintValue(java.awt.Graphics gfx, java.awt.Rectangle box) {
+    public void paintValue(j86.java.awt.Graphics gfx, java.awt.Rectangle box) {
         // Silent noop.
         Font oldFont = gfx.getFont();
         gfx.setFont(font);
@@ -184,7 +184,7 @@ public class FontEditor extends Panel implements java.beans.PropertyEditor {
         return null;
     }
 
-    public java.awt.Component getCustomEditor() {
+    public j86.java.awt.Component getCustomEditor() {
         return this;
     }
 

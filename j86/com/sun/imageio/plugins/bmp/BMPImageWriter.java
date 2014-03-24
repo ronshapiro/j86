@@ -23,46 +23,46 @@
  * questions.
  */
 
-package com.sun.imageio.plugins.bmp;
+package j86.com.sun.imageio.plugins.bmp;
 
-import java.awt.Rectangle;
-import java.awt.image.ColorModel;
-import java.awt.image.ComponentSampleModel;
-import java.awt.image.DataBuffer;
-import java.awt.image.DataBufferByte;
-import java.awt.image.DataBufferInt;
-import java.awt.image.DataBufferShort;
-import java.awt.image.DataBufferUShort;
-import java.awt.image.DirectColorModel;
-import java.awt.image.IndexColorModel;
-import java.awt.image.MultiPixelPackedSampleModel;
-import java.awt.image.BandedSampleModel;
-import java.awt.image.Raster;
-import java.awt.image.RenderedImage;
-import java.awt.image.SampleModel;
-import java.awt.image.SinglePixelPackedSampleModel;
-import java.awt.image.BufferedImage;
+import j86.java.awt.Rectangle;
+import j86.j86.j86.java.awt.image.ColorModel;
+import j86.j86.j86.java.awt.image.ComponentSampleModel;
+import j86.j86.j86.java.awt.image.DataBuffer;
+import j86.j86.j86.java.awt.image.DataBufferByte;
+import j86.j86.j86.java.awt.image.DataBufferInt;
+import j86.j86.j86.java.awt.image.DataBufferShort;
+import j86.j86.j86.java.awt.image.DataBufferUShort;
+import j86.j86.j86.java.awt.image.DirectColorModel;
+import j86.j86.j86.java.awt.image.IndexColorModel;
+import j86.j86.j86.java.awt.image.MultiPixelPackedSampleModel;
+import j86.j86.j86.java.awt.image.BandedSampleModel;
+import j86.j86.j86.java.awt.image.Raster;
+import j86.j86.j86.java.awt.image.RenderedImage;
+import j86.j86.j86.java.awt.image.SampleModel;
+import j86.j86.j86.java.awt.image.SinglePixelPackedSampleModel;
+import j86.j86.j86.java.awt.image.BufferedImage;
 
-import java.io.IOException;
-import java.io.ByteArrayOutputStream;
-import java.nio.ByteOrder;
-import java.util.Iterator;
+import j86.java.io.IOException;
+import j86.java.io.ByteArrayOutputStream;
+import j86.java.nio.ByteOrder;
+import j86.java.util.Iterator;
 
-import javax.imageio.IIOImage;
-import javax.imageio.ImageIO;
-import javax.imageio.ImageTypeSpecifier;
-import javax.imageio.ImageWriteParam;
-import javax.imageio.ImageWriter;
-import javax.imageio.metadata.IIOMetadata;
-import javax.imageio.spi.ImageWriterSpi;
-import javax.imageio.stream.ImageOutputStream;
-import javax.imageio.event.IIOWriteProgressListener;
-import javax.imageio.event.IIOWriteWarningListener;
+import j86.javax.imageio.IIOImage;
+import j86.javax.imageio.ImageIO;
+import j86.javax.imageio.ImageTypeSpecifier;
+import j86.javax.imageio.ImageWriteParam;
+import j86.javax.imageio.ImageWriter;
+import j86.j86.javax.imageio.metadata.IIOMetadata;
+import j86.j86.javax.imageio.spi.ImageWriterSpi;
+import j86.j86.javax.imageio.stream.ImageOutputStream;
+import j86.j86.javax.imageio.event.IIOWriteProgressListener;
+import j86.j86.javax.imageio.event.IIOWriteWarningListener;
 
 
-import javax.imageio.plugins.bmp.BMPImageWriteParam;
-import com.sun.imageio.plugins.common.ImageUtil;
-import com.sun.imageio.plugins.common.I18N;
+import j86.j86.javax.imageio.plugins.bmp.BMPImageWriteParam;
+import j86.com.sun.imageio.plugins.common.ImageUtil;
+import j86.com.sun.imageio.plugins.common.I18N;
 
 /**
  * The Java Image IO plugin writer for encoding a binary RenderedImage into
@@ -71,7 +71,7 @@ import com.sun.imageio.plugins.common.I18N;
  * The encoding process may clip, subsample using the parameters
  * specified in the <code>ImageWriteParam</code>.
  *
- * @see javax.imageio.plugins.bmp.BMPImageWriteParam
+ * @see j86.j86.javax.imageio.plugins.bmp.BMPImageWriteParam
  */
 public class BMPImageWriter extends ImageWriter implements BMPConstants {
     /** The output stream to write into */

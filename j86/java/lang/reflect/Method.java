@@ -23,20 +23,20 @@
  * questions.
  */
 
-package java.lang.reflect;
+package j86.j86.j86.java.lang.reflect;
 
-import sun.reflect.CallerSensitive;
-import sun.reflect.MethodAccessor;
-import sun.reflect.Reflection;
-import sun.reflect.generics.repository.MethodRepository;
-import sun.reflect.generics.factory.CoreReflectionFactory;
-import sun.reflect.generics.factory.GenericsFactory;
-import sun.reflect.generics.scope.MethodScope;
-import sun.reflect.annotation.AnnotationType;
-import sun.reflect.annotation.AnnotationParser;
-import java.lang.annotation.Annotation;
-import java.lang.annotation.AnnotationFormatError;
-import java.nio.ByteBuffer;
+import j86.sun.reflect.CallerSensitive;
+import j86.sun.reflect.MethodAccessor;
+import j86.sun.reflect.Reflection;
+import j86.j86.sun.reflect.generics.repository.MethodRepository;
+import j86.j86.sun.reflect.generics.factory.CoreReflectionFactory;
+import j86.j86.sun.reflect.generics.factory.GenericsFactory;
+import j86.j86.sun.reflect.generics.scope.MethodScope;
+import j86.j86.sun.reflect.annotation.AnnotationType;
+import j86.j86.sun.reflect.annotation.AnnotationParser;
+import j86.j86.java.lang.annotation.Annotation;
+import j86.j86.java.lang.annotation.AnnotationFormatError;
+import j86.java.nio.ByteBuffer;
 
 /**
  * A {@code Method} provides information about, and access to, a single method
@@ -49,11 +49,11 @@ import java.nio.ByteBuffer;
  * narrowing conversion would occur.
  *
  * @see Member
- * @see java.lang.Class
- * @see java.lang.Class#getMethods()
- * @see java.lang.Class#getMethod(String, Class[])
- * @see java.lang.Class#getDeclaredMethods()
- * @see java.lang.Class#getDeclaredMethod(String, Class[])
+ * @see j86.java.lang.Class
+ * @see j86.java.lang.Class#getMethods()
+ * @see j86.java.lang.Class#getMethod(String, Class[])
+ * @see j86.java.lang.Class#getDeclaredMethods()
+ * @see j86.java.lang.Class#getDeclaredMethod(String, Class[])
  *
  * @author Kenneth Russell
  * @author Nakul Saraiya
@@ -104,8 +104,8 @@ public final class Method extends Executable {
 
     /**
      * Package-private constructor used by ReflectAccess to enable
-     * instantiation of these objects in Java code from the java.lang
-     * package via sun.reflect.LangReflectAccess.
+     * instantiation of these objects in Java code from the j86.java.lang
+     * package via j86.sun.reflect.LangReflectAccess.
      */
     Method(Class<?> declaringClass,
            String name,
@@ -132,7 +132,7 @@ public final class Method extends Executable {
     }
 
     /**
-     * Package-private routine (exposed to java.lang.Class via
+     * Package-private routine (exposed to j86.java.lang.Class via
      * ReflectAccess) which returns a copy of this Method. The copy's
      * "root" field points to this Method.
      */
@@ -141,7 +141,7 @@ public final class Method extends Executable {
         // among Method objects which refer to the same underlying
         // method in the VM. (All of this contortion is only necessary
         // because of the "accessibility" bit in AccessibleObject,
-        // which implicitly requires that new java.lang.reflect
+        // which implicitly requires that new j86.j86.j86.java.lang.reflect
         // objects be fabricated for each reflective call on Class
         // objects.)
         Method res = new Method(clazz, name, parameterTypes, returnType,
@@ -328,7 +328,7 @@ public final class Method extends Executable {
      * comma-separated list of the thrown exception types.
      * For example:
      * <pre>
-     *    public boolean java.lang.Object.equals(java.lang.Object)
+     *    public boolean j86.java.lang.Object.equals(java.lang.Object)
      * </pre>
      *
      * <p>The access modifiers are placed in canonical order as
@@ -590,10 +590,10 @@ public final class Method extends Executable {
             getReturnType());
         Object result = AnnotationParser.parseMemberValue(
             memberType, ByteBuffer.wrap(annotationDefault),
-            sun.misc.SharedSecrets.getJavaLangAccess().
+            j86.sun.misc.SharedSecrets.getJavaLangAccess().
                 getConstantPool(getDeclaringClass()),
             getDeclaringClass());
-        if (result instanceof sun.reflect.annotation.ExceptionProxy)
+        if (result instanceof j86.j86.sun.reflect.annotation.ExceptionProxy)
             throw new AnnotationFormatError("Invalid default: " + this);
         return result;
     }

@@ -32,15 +32,15 @@
  */
 
 
-package com.sun.tools.example.debug.tty;
+package j86.com.sun.tools.example.debug.tty;
 
-import com.sun.jdi.*;
-import com.sun.jdi.event.*;
-import com.sun.jdi.request.*;
-import com.sun.jdi.connect.*;
+import j86.com.sun.jdi.*;
+import j86.j86.com.sun.jdi.event.*;
+import j86.j86.com.sun.jdi.request.*;
+import j86.j86.com.sun.jdi.connect.*;
 
-import java.util.*;
-import java.io.*;
+import j86.java.util.*;
+import j86.java.io.*;
 
 public class TTY implements EventNotifier {
     EventHandler handler = null;
@@ -236,7 +236,7 @@ public class TTY implements EventNotifier {
                 String line;
                 try {
                     line = Env.sourceLine(loc, loc.lineNumber());
-                } catch (java.io.IOException e) {
+                } catch (j86.java.io.IOException e) {
                     line = null;
                 }
                 if (line != null) {
@@ -337,7 +337,7 @@ public class TTY implements EventNotifier {
      * If not found, return index < 0
      */
     private int isCommand(String key) {
-        //Reference: binarySearch() in java/util/Arrays.java
+        //Reference: binarySearch() in j86.java.util/Arrays.java
         //           Adapted for use with String[][0].
         int low = 0;
         int high = commandList.length - 1;
@@ -851,7 +851,7 @@ public class TTY implements EventNotifier {
         String connectSpec = null;
 
         MessageOutput.textResources = ResourceBundle.getBundle
-            ("com.sun.tools.example.debug.tty.TTYResources",
+            ("j86.com.sun.tools.example.debug.tty.TTYResources",
              Locale.getDefault());
 
         for (int i = 0; i < argv.length; i++) {
@@ -932,11 +932,11 @@ public class TTY implements EventNotifier {
                  * specification string based on this decision.
                  */
                 if (supportsSharedMemory()) {
-                    connectSpec = "com.sun.jdi.SharedMemoryAttach:name=" +
+                    connectSpec = "j86.com.sun.jdi.SharedMemoryAttach:name=" +
                                    address;
                 } else {
                     String suboptions = addressToSocketArgs(address);
-                    connectSpec = "com.sun.jdi.SocketAttach:" + suboptions;
+                    connectSpec = "j86.com.sun.jdi.SocketAttach:" + suboptions;
                 }
             } else if (token.equals("-listen") || token.equals("-listenany")) {
                 if (connectSpec != null) {
@@ -959,12 +959,12 @@ public class TTY implements EventNotifier {
                  * specification string based on this decision.
                  */
                 if (supportsSharedMemory()) {
-                    connectSpec = "com.sun.jdi.SharedMemoryListen:";
+                    connectSpec = "j86.com.sun.jdi.SharedMemoryListen:";
                     if (address != null) {
                         connectSpec += ("name=" + address);
                     }
                 } else {
-                    connectSpec = "com.sun.jdi.SocketListen:";
+                    connectSpec = "j86.com.sun.jdi.SocketListen:";
                     if (address != null) {
                         connectSpec += addressToSocketArgs(address);
                     }
@@ -1025,15 +1025,15 @@ public class TTY implements EventNotifier {
          * jdb hello a,b       a,b
          * jdb hello a, b      a,         b
          * jdb hello "a, b"    a, b
-         * jdb -connect "com.sun.jdi.CommandLineLaunch:main=hello  a,b"   illegal
-         * jdb -connect  com.sun.jdi.CommandLineLaunch:main=hello "a,b"   illegal
-         * jdb -connect 'com.sun.jdi.CommandLineLaunch:main=hello "a,b"'  arg1 = a,b
-         * jdb -connect 'com.sun.jdi.CommandLineLaunch:main=hello "a b"'  arg1 = a b
-         * jdb -connect 'com.sun.jdi.CommandLineLaunch:main=hello  a b'   arg1 = a  arg2 = b
-         * jdb -connect 'com.sun.jdi.CommandLineLaunch:main=hello "a," b' arg1 = a, arg2 = b
+         * jdb -connect "j86.com.sun.jdi.CommandLineLaunch:main=hello  a,b"   illegal
+         * jdb -connect  j86.com.sun.jdi.CommandLineLaunch:main=hello "a,b"   illegal
+         * jdb -connect 'j86.com.sun.jdi.CommandLineLaunch:main=hello "a,b"'  arg1 = a,b
+         * jdb -connect 'j86.com.sun.jdi.CommandLineLaunch:main=hello "a b"'  arg1 = a b
+         * jdb -connect 'j86.com.sun.jdi.CommandLineLaunch:main=hello  a b'   arg1 = a  arg2 = b
+         * jdb -connect 'j86.com.sun.jdi.CommandLineLaunch:main=hello "a," b' arg1 = a, arg2 = b
          */
         if (connectSpec == null) {
-            connectSpec = "com.sun.jdi.CommandLineLaunch:";
+            connectSpec = "j86.com.sun.jdi.CommandLineLaunch:";
         } else if (!connectSpec.endsWith(",") && !connectSpec.endsWith(":")) {
             connectSpec += ","; // (Bug ID 4285874)
         }
@@ -1042,7 +1042,7 @@ public class TTY implements EventNotifier {
         javaArgs = javaArgs.trim();
 
         if (cmdLine.length() > 0) {
-            if (!connectSpec.startsWith("com.sun.jdi.CommandLineLaunch:")) {
+            if (!connectSpec.startsWith("j86.com.sun.jdi.CommandLineLaunch:")) {
                 usageError("Cannot specify command line with connector:",
                            connectSpec);
                 return;
@@ -1051,7 +1051,7 @@ public class TTY implements EventNotifier {
         }
 
         if (javaArgs.length() > 0) {
-            if (!connectSpec.startsWith("com.sun.jdi.CommandLineLaunch:")) {
+            if (!connectSpec.startsWith("j86.com.sun.jdi.CommandLineLaunch:")) {
                 usageError("Cannot specify target vm arguments with connector:",
                            connectSpec);
                 return;

@@ -27,19 +27,19 @@
  * (C) Copyright IBM Corp. 1998, All Rights Reserved
  */
 
-package sun.font;
+package j86.sun.font;
 
-import java.awt.BasicStroke;
-import java.awt.Graphics2D;
-import java.awt.Shape;
-import java.awt.Stroke;
+import j86.java.awt.BasicStroke;
+import j86.java.awt.Graphics2D;
+import j86.java.awt.Shape;
+import j86.java.awt.Stroke;
 
-import java.awt.geom.GeneralPath;
-import java.awt.geom.Line2D;
+import j86.j86.java.awt.geom.GeneralPath;
+import j86.j86.java.awt.geom.Line2D;
 
-import java.awt.font.TextAttribute;
+import j86.j86.java.awt.font.TextAttribute;
 
-import java.util.concurrent.ConcurrentHashMap;
+import j86.j86.java.util.concurrent.ConcurrentHashMap;
 
 /**
  * This class provides drawing and bounds-measurement of

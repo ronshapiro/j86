@@ -56,21 +56,21 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-package jdk.internal.org.objectweb.asm.commons;
+package j86.j86.jdk.internal.org.objectweb.asm.commons;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import j86.java.util.ArrayList;
+import j86.java.util.HashMap;
+import j86.java.util.List;
+import j86.java.util.Map;
 
-import jdk.internal.org.objectweb.asm.Handle;
-import jdk.internal.org.objectweb.asm.Label;
-import jdk.internal.org.objectweb.asm.MethodVisitor;
-import jdk.internal.org.objectweb.asm.Opcodes;
-import jdk.internal.org.objectweb.asm.Type;
+import j86.jdk.internal.org.objectweb.asm.Handle;
+import j86.jdk.internal.org.objectweb.asm.Label;
+import j86.jdk.internal.org.objectweb.asm.MethodVisitor;
+import j86.jdk.internal.org.objectweb.asm.Opcodes;
+import j86.jdk.internal.org.objectweb.asm.Type;
 
 /**
- * A {@link jdk.internal.org.objectweb.asm.MethodVisitor} to insert before, after and around
+ * A {@link j86.jdk.internal.org.objectweb.asm.MethodVisitor} to insert before, after and around
  * advices in methods and constructors.
  * <p>
  * The behavior for constructors is like this:
@@ -649,7 +649,7 @@ public abstract class AdviceAdapter extends GeneratorAdapter implements Opcodes 
      *         box(Type.getReturnType(this.methodDesc));
      *     }
      *     visitIntInsn(SIPUSH, opcode);
-     *     visitMethodInsn(INVOKESTATIC, owner, "onExit", "(Ljava/lang/Object;I)V");
+     *     visitMethodInsn(INVOKESTATIC, owner, "onExit", "(Lj86.java.lang/Object;I)V");
      *   }
      *
      *   // an actual call back method

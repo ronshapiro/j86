@@ -23,14 +23,14 @@
  * questions.
  */
 
-package javax.imageio.spi;
+package j86.j86.javax.imageio.spi;
 
-import java.util.AbstractSet;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.Map;
-import java.util.Set;
+import j86.java.util.AbstractSet;
+import j86.java.util.HashMap;
+import j86.java.util.Iterator;
+import j86.java.util.LinkedList;
+import j86.java.util.Map;
+import j86.java.util.Set;
 
 /**
  * A set of <code>Object</code>s with pairwise orderings between them.

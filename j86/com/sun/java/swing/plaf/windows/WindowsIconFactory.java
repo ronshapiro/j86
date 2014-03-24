@@ -23,19 +23,19 @@
  * questions.
  */
 
-package com.sun.java.swing.plaf.windows;
+package j86.j86.com.sun.java.swing.plaf.windows;
 
-import javax.swing.*;
-import javax.swing.plaf.ButtonUI;
-import javax.swing.plaf.UIResource;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.plaf.ButtonUI;
+import j86.j86.javax.swing.plaf.UIResource;
 
-import java.awt.*;
-import java.io.Serializable;
+import j86.java.awt.*;
+import j86.java.io.Serializable;
 
-import static com.sun.java.swing.plaf.windows.TMSchema.*;
-import static com.sun.java.swing.plaf.windows.XPStyle.Skin;
+import static j86.j86.com.sun.java.swing.plaf.windows.TMSchema.*;
+import static j86.j86.com.sun.java.swing.plaf.windows.XPStyle.Skin;
 
-import sun.swing.MenuItemCheckIconFactory;
+import j86.sun.swing.MenuItemCheckIconFactory;
 
 /**
  * Factory object that can vend Icons appropriate for the Windows L & F.

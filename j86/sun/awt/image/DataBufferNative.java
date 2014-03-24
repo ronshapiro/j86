@@ -24,11 +24,11 @@
  */
 
 
-package sun.awt.image;
+package j86.j86.j86.sun.awt.image;
 
-import java.awt.image.DataBuffer;
-import sun.java2d.SurfaceData;
-import java.awt.Rectangle;
+import j86.j86.j86.java.awt.image.DataBuffer;
+import j86.sun.java2d.SurfaceData;
+import j86.java.awt.Rectangle;
 
 /**
  * This class extends <CODE>DataBuffer</CODE> and allows access to

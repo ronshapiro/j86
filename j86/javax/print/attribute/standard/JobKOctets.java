@@ -22,12 +22,12 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.print.attribute.standard;
+package j86.j86.j86.javax.print.attribute.standard;
 
-import javax.print.attribute.Attribute;
-import javax.print.attribute.IntegerSyntax;
-import javax.print.attribute.PrintRequestAttribute;
-import javax.print.attribute.PrintJobAttribute;
+import j86.j86.javax.print.attribute.Attribute;
+import j86.j86.javax.print.attribute.IntegerSyntax;
+import j86.j86.javax.print.attribute.PrintRequestAttribute;
+import j86.j86.javax.print.attribute.PrintJobAttribute;
 
 /**
  * Class JobKOctets is an integer valued printing attribute class that specifies
@@ -63,7 +63,7 @@ import javax.print.attribute.PrintJobAttribute;
  * document data, rather than a measure of the hardcopy output to be produced.
  * <P>
  * The size of a doc is computed based on the print data representation class as
- * specified by the doc's {@link javax.print.DocFlavor DocFlavor}, as
+ * specified by the doc's {@link j86.javax.print.DocFlavor DocFlavor}, as
  * shown in the table below.
  * <P>
  * <TABLE BORDER=1 CELLPADDING=2 CELLSPACING=1 SUMMARY="Table showing computation of doc sizes">
@@ -76,7 +76,7 @@ import javax.print.attribute.PrintJobAttribute;
  * <TD>Length of the byte array</TD>
  * </TR>
  * <TR>
- * <TD>java.io.InputStream</TD>
+ * <TD>j86.java.io.InputStream</TD>
  * <TD>Number of bytes read from the stream</TD>
  * </TR>
  * <TR>
@@ -84,27 +84,27 @@ import javax.print.attribute.PrintJobAttribute;
  * <TD>Length of the character array x 2</TD>
  * </TR>
  * <TR>
- * <TD>java.lang.String</TD>
+ * <TD>j86.java.lang.String</TD>
  * <TD>Length of the string x 2</TD>
  * </TR>
  * <TR>
- * <TD>java.io.Reader</TD>
+ * <TD>j86.java.io.Reader</TD>
  * <TD>Number of characters read from the stream x 2</TD>
  * </TR>
  * <TR>
- * <TD>java.net.URL</TD>
+ * <TD>j86.java.net.URL</TD>
  * <TD>Number of bytes read from the file at the given URL address</TD>
  * </TR>
  * <TR>
- * <TD>java.awt.image.renderable.RenderableImage</TD>
+ * <TD>j86.j86.j86.j86.java.awt.image.renderable.RenderableImage</TD>
  * <TD>Implementation dependent&#42;</TD>
  * </TR>
  * <TR>
- * <TD>java.awt.print.Printable</TD>
+ * <TD>j86.j86.java.awt.print.Printable</TD>
  * <TD>Implementation dependent&#42;</TD>
  * </TR>
  * <TR>
- * <TD>java.awt.print.Pageable</TD>
+ * <TD>j86.j86.java.awt.print.Pageable</TD>
  * <TD>Implementation dependent&#42;</TD>
  * </TR>
  * </TABLE>
@@ -173,7 +173,7 @@ public final class JobKOctets   extends IntegerSyntax
      * For class JobKOctets, the category is class JobKOctets itself.
      *
      * @return  Printing attribute class (category), an instance of class
-     *          {@link java.lang.Class java.lang.Class}.
+     *          {@link j86.java.lang.Class java.lang.Class}.
      */
     public final Class<? extends Attribute> getCategory() {
         return JobKOctets.class;

@@ -56,24 +56,24 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-package jdk.internal.org.objectweb.asm.commons;
+package j86.j86.jdk.internal.org.objectweb.asm.commons;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import j86.java.util.ArrayList;
+import j86.java.util.HashMap;
+import j86.java.util.List;
+import j86.java.util.Map;
 
-import jdk.internal.org.objectweb.asm.Handle;
-import jdk.internal.org.objectweb.asm.Label;
-import jdk.internal.org.objectweb.asm.MethodVisitor;
-import jdk.internal.org.objectweb.asm.Opcodes;
-import jdk.internal.org.objectweb.asm.Type;
+import j86.jdk.internal.org.objectweb.asm.Handle;
+import j86.jdk.internal.org.objectweb.asm.Label;
+import j86.jdk.internal.org.objectweb.asm.MethodVisitor;
+import j86.jdk.internal.org.objectweb.asm.Opcodes;
+import j86.jdk.internal.org.objectweb.asm.Type;
 
 /**
  * A {@link MethodVisitor} that keeps track of stack map frame changes between
  * {@link #visitFrame(int, int, Object[], int, Object[]) visitFrame} calls. This
  * adapter must be used with the
- * {@link jdk.internal.org.objectweb.asm.ClassReader#EXPAND_FRAMES} option. Each
+ * {@link j86.jdk.internal.org.objectweb.asm.ClassReader#EXPAND_FRAMES} option. Each
  * visit<i>X</i> instruction delegates to the next visitor in the chain, if any,
  * and then simulates the effect of this instruction on the stack map frame,
  * represented by {@link #locals} and {@link #stack}. The next visitor in the
@@ -451,18 +451,18 @@ public class AnalyzerAdapter extends MethodVisitor {
             push(Opcodes.DOUBLE);
             push(Opcodes.TOP);
         } else if (cst instanceof String) {
-            push("java/lang/String");
+            push("j86.java.lang/String");
         } else if (cst instanceof Type) {
             int sort = ((Type) cst).getSort();
             if (sort == Type.OBJECT || sort == Type.ARRAY) {
-                push("java/lang/Class");
+                push("j86.java.lang/Class");
             } else if (sort == Type.METHOD) {
-                push("java/lang/invoke/MethodType");
+                push("j86.j86.java.lang.invoke/MethodType");
             } else {
                 throw new IllegalArgumentException();
             }
         } else if (cst instanceof Handle) {
-            push("java/lang/invoke/MethodHandle");
+            push("j86.j86.java.lang.invoke/MethodHandle");
         } else {
             throw new IllegalArgumentException();
         }
@@ -690,7 +690,7 @@ public class AnalyzerAdapter extends MethodVisitor {
             if (t1 instanceof String) {
                 pushDesc(((String) t1).substring(1));
             } else {
-                push("java/lang/Object");
+                push("j86.java.lang/Object");
             }
             break;
         case Opcodes.ISTORE:

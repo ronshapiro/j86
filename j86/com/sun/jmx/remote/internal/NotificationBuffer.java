@@ -23,11 +23,11 @@
  * questions.
  */
 
-package com.sun.jmx.remote.internal;
+package j86.com.sun.jmx.remote.internal;
 
-import java.util.Set;
-import javax.management.remote.NotificationResult;
-import javax.management.remote.TargetedNotification;
+import j86.java.util.Set;
+import j86.j86.javax.management.remote.NotificationResult;
+import j86.j86.javax.management.remote.TargetedNotification;
 
 /** A buffer of notifications received from an MBean server. */
 public interface NotificationBuffer {

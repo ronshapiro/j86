@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.util.prefs;
+package j86.j86.java.util.prefs;
 
 /**
  * Static methods for translating Base64 encoded strings to byte arrays
@@ -239,7 +239,7 @@ class Base64 {
     public static void main(String args[]) {
         int numRuns  = Integer.parseInt(args[0]);
         int numBytes = Integer.parseInt(args[1]);
-        java.util.Random rnd = new java.util.Random();
+        j86.java.util.Random rnd = new java.util.Random();
         for (int i=0; i<numRuns; i++) {
             for (int j=0; j<numBytes; j++) {
                 byte[] arr = new byte[j];
@@ -248,12 +248,12 @@ class Base64 {
 
                 String s = byteArrayToBase64(arr);
                 byte [] b = base64ToByteArray(s);
-                if (!java.util.Arrays.equals(arr, b))
+                if (!j86.java.util.Arrays.equals(arr, b))
                     System.out.println("Dismal failure!");
 
                 s = byteArrayToAltBase64(arr);
                 b = altBase64ToByteArray(s);
-                if (!java.util.Arrays.equals(arr, b))
+                if (!j86.java.util.Arrays.equals(arr, b))
                     System.out.println("Alternate dismal failure!");
             }
         }

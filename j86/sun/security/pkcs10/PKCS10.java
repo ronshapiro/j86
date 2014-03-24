@@ -24,25 +24,25 @@
  */
 
 
-package sun.security.pkcs10;
+package j86.j86.sun.security.pkcs10;
 
-import java.io.PrintStream;
-import java.io.IOException;
-import java.math.BigInteger;
+import j86.java.io.PrintStream;
+import j86.java.io.IOException;
+import j86.java.math.BigInteger;
 
-import java.security.cert.CertificateException;
-import java.security.NoSuchAlgorithmException;
-import java.security.InvalidKeyException;
-import java.security.Signature;
-import java.security.SignatureException;
-import java.security.PublicKey;
+import j86.j86.java.security.cert.CertificateException;
+import j86.java.security.NoSuchAlgorithmException;
+import j86.java.security.InvalidKeyException;
+import j86.java.security.Signature;
+import j86.java.security.SignatureException;
+import j86.java.security.PublicKey;
 
-import java.util.Base64;
+import j86.java.util.Base64;
 
-import sun.security.util.*;
-import sun.security.x509.AlgorithmId;
-import sun.security.x509.X509Key;
-import sun.security.x509.X500Name;
+import j86.sun.security.util.*;
+import j86.sun.security.x509.AlgorithmId;
+import j86.sun.security.x509.X509Key;
+import j86.sun.security.x509.X500Name;
 
 /**
  * A PKCS #10 certificate request is created and sent to a Certificate
@@ -328,7 +328,7 @@ public class PKCS10 {
         if (otherEncoded == null)
             return false;
 
-        return java.util.Arrays.equals(encoded, otherEncoded);
+        return j86.java.util.Arrays.equals(encoded, otherEncoded);
     }
 
     /**

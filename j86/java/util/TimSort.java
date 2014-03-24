@@ -24,7 +24,7 @@
  * questions.
  */
 
-package java.util;
+package j86.java.util;
 
 /**
  * A stable, adaptive, iterative mergesort that requires far fewer than
@@ -153,7 +153,7 @@ class TimSort<T> {
             len >>> 1 : INITIAL_TMP_STORAGE_LENGTH;
         if (work == null || workLen < tlen || workBase + tlen > work.length) {
             @SuppressWarnings({"unchecked", "UnnecessaryLocalVariable"})
-            T[] newArray = (T[])java.lang.reflect.Array.newInstance
+            T[] newArray = (T[])j86.j86.j86.java.lang.reflect.Array.newInstance
                 (a.getClass().getComponentType(), tlen);
             tmp = newArray;
             tmpBase = 0;
@@ -926,7 +926,7 @@ class TimSort<T> {
                 newSize = Math.min(newSize, a.length >>> 1);
 
             @SuppressWarnings({"unchecked", "UnnecessaryLocalVariable"})
-            T[] newArray = (T[])java.lang.reflect.Array.newInstance
+            T[] newArray = (T[])j86.j86.j86.java.lang.reflect.Array.newInstance
                 (a.getClass().getComponentType(), newSize);
             tmp = newArray;
             tmpLen = newSize;

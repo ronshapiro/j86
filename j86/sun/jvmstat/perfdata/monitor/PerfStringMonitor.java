@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.jvmstat.perfdata.monitor;
+package j86.sun.jvmstat.perfdata.monitor;
 
-import sun.jvmstat.monitor.*;
-import java.nio.ByteBuffer;
-import java.nio.charset.Charset;
+import j86.sun.jvmstat.monitor.*;
+import j86.java.nio.ByteBuffer;
+import j86.j86.java.nio.charset.Charset;
 
 /**
  * Class for monitoring a PerfData String instrument.

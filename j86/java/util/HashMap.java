@@ -23,17 +23,17 @@
  * questions.
  */
 
-package java.util;
+package j86.java.util;
 
-import java.io.IOException;
-import java.io.InvalidObjectException;
-import java.io.Serializable;
-import java.lang.reflect.ParameterizedType;
-import java.lang.reflect.Type;
-import java.util.function.BiConsumer;
-import java.util.function.BiFunction;
-import java.util.function.Consumer;
-import java.util.function.Function;
+import j86.java.io.IOException;
+import j86.java.io.InvalidObjectException;
+import j86.java.io.Serializable;
+import j86.j86.j86.java.lang.reflect.ParameterizedType;
+import j86.j86.j86.java.lang.reflect.Type;
+import j86.j86.java.util.function.BiConsumer;
+import j86.j86.java.util.function.BiFunction;
+import j86.j86.java.util.function.Consumer;
+import j86.j86.java.util.function.Function;
 
 /**
  * Hash table based implementation of the <tt>Map</tt> interface.  This
@@ -145,7 +145,7 @@ public class HashMap<K,V> extends AbstractMap<K,V>
      * This map usually acts as a binned (bucketed) hash table, but
      * when bins get too large, they are transformed into bins of
      * TreeNodes, each structured similarly to those in
-     * java.util.TreeMap. Most methods try to use normal bins, but
+     * j86.java.util.TreeMap. Most methods try to use normal bins, but
      * relay to TreeNode methods when applicable (simply by checking
      * instanceof a node).  Bins of TreeNodes may be traversed and
      * used like any others, but additionally support faster lookup
@@ -1344,7 +1344,7 @@ public class HashMap<K,V> extends AbstractMap<K,V>
      *             for each key-value mapping.  The key-value mappings are
      *             emitted in no particular order.
      */
-    private void writeObject(java.io.ObjectOutputStream s)
+    private void writeObject(j86.java.io.ObjectOutputStream s)
         throws IOException {
         int buckets = capacity();
         // Write out the threshold, loadfactor, and any hidden stuff
@@ -1358,7 +1358,7 @@ public class HashMap<K,V> extends AbstractMap<K,V>
      * Reconstitute the {@code HashMap} instance from a stream (i.e.,
      * deserialize it).
      */
-    private void readObject(java.io.ObjectInputStream s)
+    private void readObject(j86.java.io.ObjectInputStream s)
         throws IOException, ClassNotFoundException {
         // Read in the threshold (ignored), loadfactor, and any hidden stuff
         s.defaultReadObject();
@@ -1768,7 +1768,7 @@ public class HashMap<K,V> extends AbstractMap<K,V>
     void afterNodeRemoval(Node<K,V> p) { }
 
     // Called only from writeObject, to ensure compatible ordering.
-    void internalWriteEntries(java.io.ObjectOutputStream s) throws IOException {
+    void internalWriteEntries(j86.java.io.ObjectOutputStream s) throws IOException {
         Node<K,V>[] tab;
         if (size > 0 && (tab = table) != null) {
             for (int i = 0; i < tab.length; ++i) {

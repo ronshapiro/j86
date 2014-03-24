@@ -23,15 +23,15 @@
  * questions.
  */
 
-package sun.tools.asm;
+package j86.sun.tools.asm;
 
-import sun.tools.java.*;
-import sun.tools.tree.StringExpression;
-import java.util.Enumeration;
-import java.util.Hashtable;
-import java.util.Vector;
-import java.io.IOException;
-import java.io.DataOutputStream;
+import j86.sun.tools.java.*;
+import j86.sun.tools.tree.StringExpression;
+import j86.java.util.Enumeration;
+import j86.java.util.Hashtable;
+import j86.java.util.Vector;
+import j86.java.io.IOException;
+import j86.java.io.DataOutputStream;
 
 /**
  * A table of constants

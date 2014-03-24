@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.nio.ch;
+package j86.j86.j86.sun.nio.ch;
 
-import java.nio.channels.*;
-import java.net.InetAddress;
-import java.net.NetworkInterface;
-import java.util.*;
+import j86.j86.java.nio.channels.*;
+import j86.java.net.InetAddress;
+import j86.java.net.NetworkInterface;
+import j86.java.util.*;
 
 /**
  * Simple registry of membership keys for a MulticastChannel.

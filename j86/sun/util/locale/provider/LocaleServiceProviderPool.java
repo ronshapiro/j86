@@ -23,26 +23,26 @@
  * questions.
  */
 
-package sun.util.locale.provider;
+package j86.j86.j86.sun.util.locale.provider;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.IllformedLocaleException;
-import java.util.List;
-import java.util.Locale;
-import java.util.Locale.Builder;
-import java.util.ResourceBundle.Control;
-import java.util.Set;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentMap;
-import java.util.spi.LocaleServiceProvider;
-import sun.util.logging.PlatformLogger;
+import j86.java.util.ArrayList;
+import j86.java.util.Arrays;
+import j86.java.util.Collections;
+import j86.java.util.HashSet;
+import j86.java.util.IllformedLocaleException;
+import j86.java.util.List;
+import j86.java.util.Locale;
+import j86.java.util.Locale.Builder;
+import j86.java.util.ResourceBundle.Control;
+import j86.java.util.Set;
+import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.j86.java.util.concurrent.ConcurrentMap;
+import j86.j86.java.util.spi.LocaleServiceProvider;
+import j86.j86.sun.util.logging.PlatformLogger;
 
 /**
  * An instance of this class holds a set of the third party implementations of a particular
- * locale sensitive service, such as {@link java.util.spi.LocaleNameProvider}.
+ * locale sensitive service, such as {@link j86.j86.java.util.spi.LocaleNameProvider}.
  *
  * @author Naoto Sato
  * @author Masayoshi Okutsu
@@ -90,16 +90,16 @@ public final class LocaleServiceProviderPool {
     @SuppressWarnings("unchecked")
     static final Class<LocaleServiceProvider>[] spiClasses =
                 (Class<LocaleServiceProvider>[]) new Class<?>[] {
-        java.text.spi.BreakIteratorProvider.class,
-        java.text.spi.CollatorProvider.class,
-        java.text.spi.DateFormatProvider.class,
-        java.text.spi.DateFormatSymbolsProvider.class,
-        java.text.spi.DecimalFormatSymbolsProvider.class,
-        java.text.spi.NumberFormatProvider.class,
-        java.util.spi.CurrencyNameProvider.class,
-        java.util.spi.LocaleNameProvider.class,
-        java.util.spi.TimeZoneNameProvider.class,
-        java.util.spi.CalendarDataProvider.class
+        j86.j86.java.text.spi.BreakIteratorProvider.class,
+        j86.j86.java.text.spi.CollatorProvider.class,
+        j86.j86.java.text.spi.DateFormatProvider.class,
+        j86.j86.java.text.spi.DateFormatSymbolsProvider.class,
+        j86.j86.java.text.spi.DecimalFormatSymbolsProvider.class,
+        j86.j86.java.text.spi.NumberFormatProvider.class,
+        j86.j86.java.util.spi.CurrencyNameProvider.class,
+        j86.j86.java.util.spi.LocaleNameProvider.class,
+        j86.j86.java.util.spi.TimeZoneNameProvider.class,
+        j86.j86.java.util.spi.CalendarDataProvider.class
     };
 
     /**

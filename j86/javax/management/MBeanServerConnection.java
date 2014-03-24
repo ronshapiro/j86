@@ -23,12 +23,12 @@
  * questions.
  */
 
-package javax.management;
+package j86.javax.management;
 
 
 // java import
-import java.io.IOException;
-import java.util.Set;
+import j86.java.io.IOException;
+import j86.java.util.Set;
 
 
 /**
@@ -43,11 +43,11 @@ public interface MBeanServerConnection {
     /**
      * <p>Instantiates and registers an MBean in the MBean server.  The
      * MBean server will use its {@link
-     * javax.management.loading.ClassLoaderRepository Default Loader
+     * j86.j86.javax.management.loading.ClassLoaderRepository Default Loader
      * Repository} to load the class of the MBean.  An object name is
      * associated with the MBean.  If the object name given is null, the
      * MBean must provide its own name by implementing the {@link
-     * javax.management.MBeanRegistration MBeanRegistration} interface
+     * j86.javax.management.MBeanRegistration MBeanRegistration} interface
      * and returning the name from the {@link
      * MBeanRegistration#preRegister preRegister} method.</p>
      *
@@ -66,8 +66,8 @@ public interface MBeanServerConnection {
      * <code>{@link #getMBeanInfo getMBeanInfo(n)}.getClassName()</code>.
      *
      * @exception ReflectionException Wraps a
-     * <CODE>java.lang.ClassNotFoundException</CODE> or a
-     * <CODE>java.lang.Exception</CODE> that occurred
+     * <CODE>j86.java.lang.ClassNotFoundException</CODE> or a
+     * <CODE>j86.java.lang.Exception</CODE> that occurred
      * when trying to invoke the MBean's constructor.
      * @exception InstanceAlreadyExistsException The MBean is already
      * under the control of the MBean server.
@@ -100,13 +100,13 @@ public interface MBeanServerConnection {
      * @exception NotCompliantMBeanException This class is not a JMX
      * compliant MBean
      * @exception RuntimeOperationsException Wraps a
-     * <CODE>java.lang.IllegalArgumentException</CODE>: The className
+     * <CODE>j86.java.lang.IllegalArgumentException</CODE>: The className
      * passed in parameter is null, the <CODE>ObjectName</CODE> passed
      * in parameter contains a pattern or no <CODE>ObjectName</CODE>
      * is specified for the MBean.
      * @exception IOException A communication problem occurred when
      * talking to the MBean server.
-     * @see javax.management.MBeanRegistration
+     * @see j86.javax.management.MBeanRegistration
      */
     public ObjectInstance createMBean(String className, ObjectName name)
             throws ReflectionException, InstanceAlreadyExistsException,
@@ -120,7 +120,7 @@ public interface MBeanServerConnection {
      * the loader is null, the ClassLoader that loaded the MBean
      * server will be used.  If the MBean's object name given is null,
      * the MBean must provide its own name by implementing the {@link
-     * javax.management.MBeanRegistration MBeanRegistration} interface
+     * j86.javax.management.MBeanRegistration MBeanRegistration} interface
      * and returning the name from the {@link
      * MBeanRegistration#preRegister preRegister} method.</p>
      *
@@ -140,8 +140,8 @@ public interface MBeanServerConnection {
      * <code>{@link #getMBeanInfo getMBeanInfo(n)}.getClassName()</code>.
      *
      * @exception ReflectionException Wraps a
-     * <CODE>java.lang.ClassNotFoundException</CODE> or a
-     * <CODE>java.lang.Exception</CODE> that occurred when trying to
+     * <CODE>j86.java.lang.ClassNotFoundException</CODE> or a
+     * <CODE>j86.java.lang.Exception</CODE> that occurred when trying to
      * invoke the MBean's constructor.
      * @exception InstanceAlreadyExistsException The MBean is already
      * under the control of the MBean server.
@@ -176,13 +176,13 @@ public interface MBeanServerConnection {
      * @exception InstanceNotFoundException The specified class loader
      * is not registered in the MBean server.
      * @exception RuntimeOperationsException Wraps a
-     * <CODE>java.lang.IllegalArgumentException</CODE>: The className
+     * <CODE>j86.java.lang.IllegalArgumentException</CODE>: The className
      * passed in parameter is null, the <CODE>ObjectName</CODE> passed
      * in parameter contains a pattern or no <CODE>ObjectName</CODE>
      * is specified for the MBean.
      * @exception IOException A communication problem occurred when
      * talking to the MBean server.
-     * @see javax.management.MBeanRegistration
+     * @see j86.javax.management.MBeanRegistration
      */
     public ObjectInstance createMBean(String className, ObjectName name,
                                       ObjectName loaderName)
@@ -195,11 +195,11 @@ public interface MBeanServerConnection {
     /**
      * Instantiates and registers an MBean in the MBean server.  The
      * MBean server will use its {@link
-     * javax.management.loading.ClassLoaderRepository Default Loader
+     * j86.j86.javax.management.loading.ClassLoaderRepository Default Loader
      * Repository} to load the class of the MBean.  An object name is
      * associated with the MBean.  If the object name given is null, the
      * MBean must provide its own name by implementing the {@link
-     * javax.management.MBeanRegistration MBeanRegistration} interface
+     * j86.javax.management.MBeanRegistration MBeanRegistration} interface
      * and returning the name from the {@link
      * MBeanRegistration#preRegister preRegister} method.
      *
@@ -217,8 +217,8 @@ public interface MBeanServerConnection {
      * <code>{@link #getMBeanInfo getMBeanInfo(n)}.getClassName()</code>.
      *
      * @exception ReflectionException Wraps a
-     * <CODE>java.lang.ClassNotFoundException</CODE> or a
-     * <CODE>java.lang.Exception</CODE> that occurred when trying to
+     * <CODE>j86.java.lang.ClassNotFoundException</CODE> or a
+     * <CODE>j86.java.lang.Exception</CODE> that occurred when trying to
      * invoke the MBean's constructor.
      * @exception InstanceAlreadyExistsException The MBean is already
      * under the control of the MBean server.
@@ -251,13 +251,13 @@ public interface MBeanServerConnection {
      * @exception NotCompliantMBeanException This class is not a JMX
      * compliant MBean
      * @exception RuntimeOperationsException Wraps a
-     * <CODE>java.lang.IllegalArgumentException</CODE>: The className
+     * <CODE>j86.java.lang.IllegalArgumentException</CODE>: The className
      * passed in parameter is null, the <CODE>ObjectName</CODE> passed
      * in parameter contains a pattern or no <CODE>ObjectName</CODE>
      * is specified for the MBean.
      * @exception IOException A communication problem occurred when
      * talking to the MBean server.
-     * @see javax.management.MBeanRegistration
+     * @see j86.javax.management.MBeanRegistration
      */
     public ObjectInstance createMBean(String className, ObjectName name,
                                       Object params[], String signature[])
@@ -272,7 +272,7 @@ public interface MBeanServerConnection {
      * the loader is not specified, the ClassLoader that loaded the
      * MBean server will be used.  If the MBean object name given is
      * null, the MBean must provide its own name by implementing the
-     * {@link javax.management.MBeanRegistration MBeanRegistration}
+     * {@link j86.javax.management.MBeanRegistration MBeanRegistration}
      * interface and returning the name from the {@link
      * MBeanRegistration#preRegister preRegister} method.
      *
@@ -291,8 +291,8 @@ public interface MBeanServerConnection {
      * <code>{@link #getMBeanInfo getMBeanInfo(n)}.getClassName()</code>.
      *
      * @exception ReflectionException Wraps a
-     * <CODE>java.lang.ClassNotFoundException</CODE> or a
-     * <CODE>java.lang.Exception</CODE> that occurred when trying to
+     * <CODE>j86.java.lang.ClassNotFoundException</CODE> or a
+     * <CODE>j86.java.lang.Exception</CODE> that occurred when trying to
      * invoke the MBean's constructor.
      * @exception InstanceAlreadyExistsException The MBean is already
      * under the control of the MBean server.
@@ -327,13 +327,13 @@ public interface MBeanServerConnection {
      * @exception InstanceNotFoundException The specified class loader
      * is not registered in the MBean server.
      * @exception RuntimeOperationsException Wraps a
-     * <CODE>java.lang.IllegalArgumentException</CODE>: The className
+     * <CODE>j86.java.lang.IllegalArgumentException</CODE>: The className
      * passed in parameter is null, the <CODE>ObjectName</CODE> passed
      * in parameter contains a pattern or no <CODE>ObjectName</CODE>
      * is specified for the MBean.
      * @exception IOException A communication problem occurred when
      * talking to the MBean server.
-     * @see javax.management.MBeanRegistration
+     * @see j86.javax.management.MBeanRegistration
      */
     public ObjectInstance createMBean(String className, ObjectName name,
                                       ObjectName loaderName, Object params[],
@@ -375,13 +375,13 @@ public interface MBeanServerConnection {
      * also be thrown by <CODE>preDeregister</CODE>, in which case the MBean
      * will remain registered.
      * @exception RuntimeOperationsException Wraps a
-     * <CODE>java.lang.IllegalArgumentException</CODE>: The object
+     * <CODE>j86.java.lang.IllegalArgumentException</CODE>: The object
      * name in parameter is null or the MBean you are when trying to
-     * unregister is the {@link javax.management.MBeanServerDelegate
+     * unregister is the {@link j86.javax.management.MBeanServerDelegate
      * MBeanServerDelegate} MBean.
      * @exception IOException A communication problem occurred when
      * talking to the MBean server.
-     * @see javax.management.MBeanRegistration
+     * @see j86.javax.management.MBeanRegistration
      */
     public void unregisterMBean(ObjectName name)
             throws InstanceNotFoundException, MBeanRegistrationException,
@@ -475,7 +475,7 @@ public interface MBeanServerConnection {
      * server, false otherwise.
      *
      * @exception RuntimeOperationsException Wraps a
-     * <CODE>java.lang.IllegalArgumentException</CODE>: The object
+     * <CODE>j86.java.lang.IllegalArgumentException</CODE>: The object
      * name in parameter is null.
      * @exception IOException A communication problem occurred when
      * talking to the MBean server.
@@ -513,10 +513,10 @@ public interface MBeanServerConnection {
      * @exception InstanceNotFoundException The MBean specified is not
      * registered in the MBean server.
      * @exception ReflectionException Wraps a
-     * <CODE>java.lang.Exception</CODE> thrown when trying to invoke
+     * <CODE>j86.java.lang.Exception</CODE> thrown when trying to invoke
      * the setter.
      * @exception RuntimeOperationsException Wraps a
-     * <CODE>java.lang.IllegalArgumentException</CODE>: The object
+     * <CODE>j86.java.lang.IllegalArgumentException</CODE>: The object
      * name in parameter is null or the attribute in parameter is
      * null.
      * @exception IOException A communication problem occurred when
@@ -550,7 +550,7 @@ public interface MBeanServerConnection {
      *     System.out.println("All attributes were retrieved successfully");
      * else {
      *     {@code List<String>} missing = new {@code ArrayList<String>}(<!--
-     * -->{@link java.util.Arrays#asList Arrays.asList}(attrNames));
+     * -->{@link j86.java.util.Arrays#asList Arrays.asList}(attrNames));
      *     for (Attribute a : list.asList())
      *         missing.remove(a.getName());
      *     System.out.println("Did not retrieve: " + missing);
@@ -568,7 +568,7 @@ public interface MBeanServerConnection {
      * @exception ReflectionException An exception occurred when
      * trying to invoke the getAttributes method of a Dynamic MBean.
      * @exception RuntimeOperationsException Wrap a
-     * <CODE>java.lang.IllegalArgumentException</CODE>: The object
+     * <CODE>j86.java.lang.IllegalArgumentException</CODE>: The object
      * name in parameter is null or attributes in parameter is null.
      * @exception IOException A communication problem occurred when
      * talking to the MBean server.
@@ -598,10 +598,10 @@ public interface MBeanServerConnection {
      * @exception MBeanException Wraps an exception thrown by the
      * MBean's setter.
      * @exception ReflectionException Wraps a
-     * <CODE>java.lang.Exception</CODE> thrown when trying to invoke
+     * <CODE>j86.java.lang.Exception</CODE> thrown when trying to invoke
      * the setter.
      * @exception RuntimeOperationsException Wraps a
-     * <CODE>java.lang.IllegalArgumentException</CODE>: The object
+     * <CODE>j86.java.lang.IllegalArgumentException</CODE>: The object
      * name in parameter is null or the attribute in parameter is
      * null.
      * @exception IOException A communication problem occurred when
@@ -661,7 +661,7 @@ public interface MBeanServerConnection {
      * @exception ReflectionException An exception occurred when
      * trying to invoke the getAttributes method of a Dynamic MBean.
      * @exception RuntimeOperationsException Wraps a
-     * <CODE>java.lang.IllegalArgumentException</CODE>: The object
+     * <CODE>j86.java.lang.IllegalArgumentException</CODE>: The object
      * name in parameter is null or attributes in parameter is null.
      * @exception IOException A communication problem occurred when
      * talking to the MBean server.
@@ -726,7 +726,7 @@ public interface MBeanServerConnection {
      * @exception MBeanException Wraps an exception thrown by the
      * MBean's invoked method.
      * @exception ReflectionException Wraps a
-     * <CODE>java.lang.Exception</CODE> thrown while trying to invoke
+     * <CODE>j86.java.lang.Exception</CODE> thrown while trying to invoke
      * the method.
      * @exception IOException A communication problem occurred when
      * talking to the MBean server.

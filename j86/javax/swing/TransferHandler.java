@@ -22,35 +22,35 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing;
+package j86.javax.swing;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.awt.datatransfer.*;
-import java.awt.dnd.*;
-import java.beans.*;
-import java.lang.reflect.*;
-import java.io.*;
-import java.util.TooManyListenersException;
-import javax.swing.plaf.UIResource;
-import javax.swing.event.*;
-import javax.swing.text.JTextComponent;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.j86.java.awt.datatransfer.*;
+import j86.j86.java.awt.dnd.*;
+import j86.java.beans.*;
+import j86.j86.j86.java.lang.reflect.*;
+import j86.java.io.*;
+import j86.java.util.TooManyListenersException;
+import j86.j86.javax.swing.plaf.UIResource;
+import j86.j86.javax.swing.event.*;
+import j86.j86.javax.swing.text.JTextComponent;
 
-import sun.reflect.misc.MethodUtil;
-import sun.swing.SwingUtilities2;
-import sun.awt.AppContext;
-import sun.swing.*;
-import sun.awt.SunToolkit;
+import j86.j86.sun.reflect.misc.MethodUtil;
+import j86.sun.swing.SwingUtilities2;
+import j86.sun.awt.AppContext;
+import j86.sun.swing.*;
+import j86.sun.awt.SunToolkit;
 
-import java.security.AccessController;
-import java.security.PrivilegedAction;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
 
-import java.security.AccessControlContext;
-import java.security.ProtectionDomain;
-import sun.misc.SharedSecrets;
-import sun.misc.JavaSecurityAccess;
+import j86.java.security.AccessControlContext;
+import j86.java.security.ProtectionDomain;
+import j86.sun.misc.SharedSecrets;
+import j86.sun.misc.JavaSecurityAccess;
 
-import sun.awt.AWTAccessor;
+import j86.sun.awt.AWTAccessor;
 
 /**
  * This class is used to handle the transfer of a <code>Transferable</code>
@@ -117,7 +117,7 @@ public class TransferHandler implements Serializable {
      * This value is used to specify that data should be linked in a drag
      * and drop operation.
      *
-     * @see java.awt.dnd.DnDConstants#ACTION_LINK
+     * @see j86.j86.java.awt.dnd.DnDConstants#ACTION_LINK
      * @since 1.6
      */
     public static final int LINK = DnDConstants.ACTION_LINK;
@@ -145,7 +145,7 @@ public class TransferHandler implements Serializable {
      * implementation by <code>TransferSupport</code> instances and by
      * components with a <code>getDropLocation()</code> method.
      *
-     * @see javax.swing.TransferHandler.TransferSupport#getDropLocation
+     * @see j86.javax.swing.TransferHandler.TransferSupport#getDropLocation
      * @since 1.6
      */
     public static class DropLocation {
@@ -294,7 +294,7 @@ public class TransferHandler implements Serializable {
                           ? ((DropTargetDragEvent)source).getLocation()
                           : ((DropTargetDropEvent)source).getLocation();
 
-            if (SunToolkit.isInstanceOf(component, "javax.swing.text.JTextComponent")) {
+            if (SunToolkit.isInstanceOf(component, "j86.j86.javax.swing.text.JTextComponent")) {
                 dropLocation = SwingAccessor.getJTextComponentAccessor().
                                    dropLocationForPoint((JTextComponent)component, p);
             } else if (component instanceof JComponent) {
@@ -461,8 +461,8 @@ public class TransferHandler implements Serializable {
          * {@code TransferSupport} represents a drop.
          * <p>
          * The user drop action is chosen for a drop as described in the
-         * documentation for {@link java.awt.dnd.DropTargetDragEvent} and
-         * {@link java.awt.dnd.DropTargetDropEvent}. A different action
+         * documentation for {@link j86.j86.java.awt.dnd.DropTargetDragEvent} and
+         * {@link j86.j86.java.awt.dnd.DropTargetDropEvent}. A different action
          * may be chosen as the drop action by way of the {@code setDropAction}
          * method.
          * <p>
@@ -641,14 +641,14 @@ public class TransferHandler implements Serializable {
     /**
      * image for the {@code startDrag} method
      *
-     * @see java.awt.dnd.DragGestureEvent#startDrag(Cursor dragCursor, Image dragImage, Point imageOffset, Transferable transferable, DragSourceListener dsl)
+     * @see j86.j86.java.awt.dnd.DragGestureEvent#startDrag(Cursor dragCursor, Image dragImage, Point imageOffset, Transferable transferable, DragSourceListener dsl)
      */
     private  Image dragImage;
 
     /**
      * anchor offset for the {@code startDrag} method
      *
-     * @see java.awt.dnd.DragGestureEvent#startDrag(Cursor dragCursor, Image dragImage, Point imageOffset, Transferable transferable, DragSourceListener dsl)
+     * @see j86.j86.java.awt.dnd.DragGestureEvent#startDrag(Cursor dragCursor, Image dragImage, Point imageOffset, Transferable transferable, DragSourceListener dsl)
      */
     private  Point dragImageOffset;
 
@@ -702,7 +702,7 @@ public class TransferHandler implements Serializable {
 
     /**
      * Causes the Swing drag support to be initiated.  This is called by
-     * the various UI implementations in the <code>javax.swing.plaf.basic</code>
+     * the various UI implementations in the <code>j86.j86.j86.javax.swing.plaf.basic</code>
      * package if the dragEnabled property is set on the component.
      * This can be called by custom UI
      * implementations to use the Swing drag support.  This method can also be called
@@ -712,7 +712,7 @@ public class TransferHandler implements Serializable {
      * The transfer <em>will not necessarily</em> have been completed at the
      * return of this call (i.e. the call does not block waiting for the drop).
      * The transfer will take place through the Swing implementation of the
-     * <code>java.awt.dnd</code> mechanism, requiring no further effort
+     * <code>j86.j86.java.awt.dnd</code> mechanism, requiring no further effort
      * from the developer. The <code>exportDone</code> method will be called
      * when the transfer has completed.
      *
@@ -752,7 +752,7 @@ public class TransferHandler implements Serializable {
      * given clipboard.  This method is called by the default cut and
      * copy actions registered in a component's action map.
      * <p>
-     * The transfer will take place using the <code>java.awt.datatransfer</code>
+     * The transfer will take place using the <code>j86.j86.java.awt.datatransfer</code>
      * mechanism, requiring no further effort from the developer. Any data
      * transfer <em>will</em> be complete and the <code>exportDone</code>
      * method will be called with the action that occurred, before this method
@@ -917,8 +917,8 @@ public class TransferHandler implements Serializable {
      *         <code>false</code> otherwise
      * @throws NullPointerException if <code>support</code> is {@code null}
      * @see #importData(TransferHandler.TransferSupport)
-     * @see javax.swing.TransferHandler.TransferSupport#setShowDropLocation
-     * @see javax.swing.TransferHandler.TransferSupport#setDropAction
+     * @see j86.javax.swing.TransferHandler.TransferSupport#setShowDropLocation
+     * @see j86.javax.swing.TransferHandler.TransferSupport#setDropAction
      * @since 1.6
      */
     public boolean canImport(TransferSupport support) {
@@ -1445,7 +1445,7 @@ public class TransferHandler implements Serializable {
                                         ? null
                                         : support.getDropLocation();
 
-            if (SunToolkit.isInstanceOf(component, "javax.swing.text.JTextComponent")) {
+            if (SunToolkit.isInstanceOf(component, "j86.j86.javax.swing.text.JTextComponent")) {
                 state = SwingAccessor.getJTextComponentAccessor().
                             setDropLocation((JTextComponent)component, dropLocation, state, forDrop);
             } else if (component instanceof JComponent) {
@@ -1775,11 +1775,11 @@ public class TransferHandler implements Serializable {
             if (SwingUtilities2.canAccessSystemClipboard()) {
                 return c.getToolkit().getSystemClipboard();
             }
-            Clipboard clipboard = (Clipboard)sun.awt.AppContext.getAppContext().
+            Clipboard clipboard = (Clipboard)j86.sun.awt.AppContext.getAppContext().
                 get(SandboxClipboardKey);
             if (clipboard == null) {
                 clipboard = new Clipboard("Sandboxed Component Clipboard");
-                sun.awt.AppContext.getAppContext().put(SandboxClipboardKey,
+                j86.sun.awt.AppContext.getAppContext().put(SandboxClipboardKey,
                                                        clipboard);
             }
             return clipboard;

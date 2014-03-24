@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.security.sasl;
+package j86.javax.security.sasl;
 
-import javax.security.auth.callback.ChoiceCallback;
+import j86.j86.javax.security.auth.callback.ChoiceCallback;
 
 /**
   * This callback is used by {@code SaslClient} and {@code SaslServer}

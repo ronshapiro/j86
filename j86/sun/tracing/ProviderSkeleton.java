@@ -23,21 +23,21 @@
  * questions.
  */
 
-package sun.tracing;
+package j86.sun.tracing;
 
-import java.lang.reflect.InvocationHandler;
-import java.lang.reflect.Method;
-import java.lang.reflect.Proxy;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.AnnotatedElement;
-import java.lang.annotation.Annotation;
-import java.util.HashMap;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
+import j86.j86.j86.java.lang.reflect.InvocationHandler;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.j86.j86.java.lang.reflect.Proxy;
+import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.j86.j86.java.lang.reflect.AnnotatedElement;
+import j86.j86.java.lang.annotation.Annotation;
+import j86.java.util.HashMap;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
 
-import com.sun.tracing.Provider;
-import com.sun.tracing.Probe;
-import com.sun.tracing.ProviderName;
+import com.j86.sun.tracing.Provider;
+import com.j86.sun.tracing.Probe;
+import com.j86.sun.tracing.ProviderName;
 
 /**
  * Provides a common code for implementation of {@code Provider} classes.
@@ -159,7 +159,7 @@ public abstract class ProviderSkeleton implements InvocationHandler, Provider {
         if (declaringClass != providerType) {
             try {
                 // delegate only to methods declared by
-                // com.sun.tracing.Provider or java.lang.Object
+                // com.j86.sun.tracing.Provider or j86.java.lang.Object
                 if (declaringClass == Provider.class ||
                     declaringClass == Object.class) {
                     return method.invoke(this, args);

@@ -25,10 +25,10 @@
 /*
  * $Id: Manifest.java,v 1.7 2005/05/10 16:03:46 mullan Exp $
  */
-package javax.xml.crypto.dsig;
+package j86.j86.javax.xml.crypto.dsig;
 
-import javax.xml.crypto.XMLStructure;
-import java.util.List;
+import j86.javax.xml.crypto.XMLStructure;
+import j86.java.util.List;
 
 /**
  * A representation of the XML <code>Manifest</code> element as defined in
@@ -80,7 +80,7 @@ public interface Manifest extends XMLStructure {
     String getId();
 
     /**
-     * Returns an {@link java.util.Collections#unmodifiableList unmodifiable
+     * Returns an {@link j86.java.util.Collections#unmodifiableList unmodifiable
      * list} of one or more {@link Reference}s that are contained in this
      * <code>Manifest</code>.
      *

@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.awt.shell;
+package j86.j86.sun.awt.shell;
 
-import javax.swing.*;
-import java.util.Comparator;
+import j86.javax.swing.*;
+import j86.java.util.Comparator;
 
 public class ShellFolderColumnInfo {
     private String title;

@@ -23,17 +23,17 @@
  * questions.
  */
 
-package javax.naming.spi;
+package j86.j86.javax.naming.spi;
 
-import java.util.Enumeration;
-import java.util.Hashtable;
-import java.util.StringTokenizer;
-import java.net.MalformedURLException;
+import j86.java.util.Enumeration;
+import j86.java.util.Hashtable;
+import j86.java.util.StringTokenizer;
+import j86.java.net.MalformedURLException;
 
-import javax.naming.*;
-import com.sun.naming.internal.VersionHelper;
-import com.sun.naming.internal.ResourceManager;
-import com.sun.naming.internal.FactoryEnumeration;
+import j86.javax.naming.*;
+import j86.com.sun.naming.internal.VersionHelper;
+import j86.com.sun.naming.internal.ResourceManager;
+import j86.com.sun.naming.internal.FactoryEnumeration;
 
 /**
  * This class contains methods for creating context objects
@@ -45,7 +45,7 @@ import com.sun.naming.internal.FactoryEnumeration;
  * The mention of URL in the documentation for this class refers to
  * a URL string as defined by RFC 1738 and its related RFCs. It is
  * any string that conforms to the syntax described therein, and
- * may not always have corresponding support in the java.net.URL
+ * may not always have corresponding support in the j86.java.net.URL
  * class or Web browsers.
  *<p>
  * NamingManager is safe for concurrent access by multiple threads.
@@ -103,7 +103,7 @@ public class NamingManager {
      * @see #getObjectInstance
      * @see ObjectFactory
      * @see ObjectFactoryBuilder
-     * @see java.lang.SecurityManager#checkSetFactory
+     * @see j86.java.lang.SecurityManager#checkSetFactory
      */
     public static synchronized void setObjectFactoryBuilder(
             ObjectFactoryBuilder builder) throws NamingException {
@@ -509,7 +509,7 @@ public class NamingManager {
      *<ul>
      * <li>com.widget.ldap.ldapURLContextFactory
      *  <li>com.wiz.jndi.ldap.ldapURLContextFactory
-     *  <li>com.sun.jndi.url.ldap.ldapURLContextFactory
+     *  <li>j86.com.sun.jndi.url.ldap.ldapURLContextFactory
      *</ul>
      * If none of the package prefixes work, null is returned.
      *<p>
@@ -581,7 +581,7 @@ public class NamingManager {
      * @param nameCtx Context whose provider resource file will be searched
      *          for package prefix values (or null if none)
      * @param environment Environment properties for creating the context
-     * @see javax.naming.InitialContext
+     * @see j86.javax.naming.InitialContext
      */
     private static Object getURLObject(String scheme, Object urlInfo,
                                        Name name, Context nameCtx,
@@ -644,8 +644,8 @@ public class NamingManager {
      *          or if the initial context could not be created for some other
      *          reason.
      * @exception NamingException If some other naming exception was encountered.
-     * @see javax.naming.InitialContext
-     * @see javax.naming.directory.InitialDirContext
+     * @see j86.javax.naming.InitialContext
+     * @see j86.j86.javax.naming.directory.InitialDirContext
      */
     public static Context getInitialContext(Hashtable<?,?> env)
         throws NamingException {
@@ -700,7 +700,7 @@ public class NamingManager {
      *         a non-security-related reason.
      * @exception IllegalStateException If a builder was previous installed.
      * @see #hasInitialContextFactoryBuilder
-     * @see java.lang.SecurityManager#checkSetFactory
+     * @see j86.java.lang.SecurityManager#checkSetFactory
      */
     public static synchronized void setInitialContextFactoryBuilder(
         InitialContextFactoryBuilder builder)

@@ -24,12 +24,12 @@
  */
 
 
-package javax.swing;
+package j86.javax.swing;
 
-import java.awt.*;
-import java.beans.ConstructorProperties;
-import java.io.Serializable;
-import java.io.PrintStream;
+import j86.java.awt.*;
+import j86.java.beans.ConstructorProperties;
+import j86.java.io.Serializable;
+import j86.java.io.PrintStream;
 
 /**
  * A layout manager that allows multiple components to be laid out either
@@ -125,11 +125,11 @@ import java.io.PrintStream;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @see Box
- * @see java.awt.ComponentOrientation
+ * @see j86.java.awt.ComponentOrientation
  * @see JComponent#getAlignmentX
  * @see JComponent#getAlignmentY
  *

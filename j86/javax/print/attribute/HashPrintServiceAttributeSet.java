@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.print.attribute;
+package j86.j86.javax.print.attribute;
 
-import java.io.Serializable;
+import j86.java.io.Serializable;
 
 /**
  * Class HashPrintServiceAttributeSet provides an attribute set

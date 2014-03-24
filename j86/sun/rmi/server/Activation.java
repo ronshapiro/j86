@@ -23,96 +23,96 @@
  * questions.
  */
 
-package sun.rmi.server;
+package j86.sun.rmi.server;
 
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.ObjectInputStream;
-import java.io.OutputStream;
-import java.io.PrintStream;
-import java.io.PrintWriter;
-import java.io.Serializable;
-import java.lang.Process;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.net.InetAddress;
-import java.net.ServerSocket;
-import java.net.Socket;
-import java.net.SocketAddress;
-import java.net.SocketException;
-import java.nio.file.Files;
-import java.nio.channels.Channel;
-import java.nio.channels.ServerSocketChannel;
-import java.rmi.AccessException;
-import java.rmi.AlreadyBoundException;
-import java.rmi.ConnectException;
-import java.rmi.ConnectIOException;
-import java.rmi.MarshalledObject;
-import java.rmi.NoSuchObjectException;
-import java.rmi.NotBoundException;
-import java.rmi.Remote;
-import java.rmi.RemoteException;
-import java.rmi.activation.ActivationDesc;
-import java.rmi.activation.ActivationException;
-import java.rmi.activation.ActivationGroupDesc;
-import java.rmi.activation.ActivationGroup;
-import java.rmi.activation.ActivationGroupID;
-import java.rmi.activation.ActivationID;
-import java.rmi.activation.ActivationInstantiator;
-import java.rmi.activation.ActivationMonitor;
-import java.rmi.activation.ActivationSystem;
-import java.rmi.activation.Activator;
-import java.rmi.activation.UnknownGroupException;
-import java.rmi.activation.UnknownObjectException;
-import java.rmi.registry.Registry;
-import java.rmi.server.ObjID;
-import java.rmi.server.RMIClassLoader;
-import java.rmi.server.RMIClientSocketFactory;
-import java.rmi.server.RMIServerSocketFactory;
-import java.rmi.server.RemoteObject;
-import java.rmi.server.RemoteServer;
-import java.rmi.server.UnicastRemoteObject;
-import java.security.AccessControlException;
-import java.security.AccessController;
-import java.security.AllPermission;
-import java.security.CodeSource;
-import java.security.Permission;
-import java.security.PermissionCollection;
-import java.security.Permissions;
-import java.security.Policy;
-import java.security.PrivilegedAction;
-import java.security.PrivilegedExceptionAction;
-import java.security.cert.Certificate;
-import java.text.MessageFormat;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Date;
-import java.util.Enumeration;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import java.util.MissingResourceException;
-import java.util.Properties;
-import java.util.ResourceBundle;
-import java.util.Set;
-import java.util.concurrent.ConcurrentHashMap;
-import sun.rmi.log.LogHandler;
-import sun.rmi.log.ReliableLog;
-import sun.rmi.registry.RegistryImpl;
-import sun.rmi.runtime.NewThreadAction;
-import sun.rmi.server.UnicastServerRef;
-import sun.rmi.transport.LiveRef;
-import sun.security.action.GetBooleanAction;
-import sun.security.action.GetIntegerAction;
-import sun.security.action.GetPropertyAction;
-import sun.security.provider.PolicyFile;
-import com.sun.rmi.rmid.ExecPermission;
-import com.sun.rmi.rmid.ExecOptionPermission;
+import j86.java.io.ByteArrayOutputStream;
+import j86.java.io.File;
+import j86.java.io.FileOutputStream;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.OutputStream;
+import j86.java.io.PrintStream;
+import j86.java.io.PrintWriter;
+import j86.java.io.Serializable;
+import j86.java.lang.Process;
+import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.net.InetAddress;
+import j86.java.net.ServerSocket;
+import j86.java.net.Socket;
+import j86.java.net.SocketAddress;
+import j86.java.net.SocketException;
+import j86.j86.java.nio.file.Files;
+import j86.j86.java.nio.channels.Channel;
+import j86.j86.java.nio.channels.ServerSocketChannel;
+import j86.java.rmi.AccessException;
+import j86.java.rmi.AlreadyBoundException;
+import j86.java.rmi.ConnectException;
+import j86.java.rmi.ConnectIOException;
+import j86.java.rmi.MarshalledObject;
+import j86.java.rmi.NoSuchObjectException;
+import j86.java.rmi.NotBoundException;
+import j86.java.rmi.Remote;
+import j86.java.rmi.RemoteException;
+import j86.j86.java.rmi.activation.ActivationDesc;
+import j86.j86.java.rmi.activation.ActivationException;
+import j86.j86.java.rmi.activation.ActivationGroupDesc;
+import j86.j86.java.rmi.activation.ActivationGroup;
+import j86.j86.java.rmi.activation.ActivationGroupID;
+import j86.j86.java.rmi.activation.ActivationID;
+import j86.j86.java.rmi.activation.ActivationInstantiator;
+import j86.j86.java.rmi.activation.ActivationMonitor;
+import j86.j86.java.rmi.activation.ActivationSystem;
+import j86.j86.java.rmi.activation.Activator;
+import j86.j86.java.rmi.activation.UnknownGroupException;
+import j86.j86.java.rmi.activation.UnknownObjectException;
+import j86.j86.java.rmi.registry.Registry;
+import j86.j86.java.rmi.server.ObjID;
+import j86.j86.java.rmi.server.RMIClassLoader;
+import j86.j86.java.rmi.server.RMIClientSocketFactory;
+import j86.j86.java.rmi.server.RMIServerSocketFactory;
+import j86.j86.java.rmi.server.RemoteObject;
+import j86.j86.java.rmi.server.RemoteServer;
+import j86.j86.java.rmi.server.UnicastRemoteObject;
+import j86.java.security.AccessControlException;
+import j86.java.security.AccessController;
+import j86.java.security.AllPermission;
+import j86.java.security.CodeSource;
+import j86.java.security.Permission;
+import j86.java.security.PermissionCollection;
+import j86.java.security.Permissions;
+import j86.java.security.Policy;
+import j86.java.security.PrivilegedAction;
+import j86.java.security.PrivilegedExceptionAction;
+import j86.j86.java.security.cert.Certificate;
+import j86.java.text.MessageFormat;
+import j86.java.util.ArrayList;
+import j86.java.util.Arrays;
+import j86.java.util.Date;
+import j86.java.util.Enumeration;
+import j86.java.util.HashMap;
+import j86.java.util.HashSet;
+import j86.java.util.Iterator;
+import j86.java.util.List;
+import j86.java.util.Map;
+import j86.java.util.MissingResourceException;
+import j86.java.util.Properties;
+import j86.java.util.ResourceBundle;
+import j86.java.util.Set;
+import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.sun.rmi.log.LogHandler;
+import j86.sun.rmi.log.ReliableLog;
+import j86.sun.rmi.registry.RegistryImpl;
+import j86.sun.rmi.runtime.NewThreadAction;
+import j86.sun.rmi.server.UnicastServerRef;
+import j86.sun.rmi.transport.LiveRef;
+import j86.sun.security.action.GetBooleanAction;
+import j86.sun.security.action.GetIntegerAction;
+import j86.sun.security.action.GetPropertyAction;
+import j86.sun.security.provider.PolicyFile;
+import j86.com.sun.rmi.rmid.ExecPermission;
+import j86.com.sun.rmi.rmid.ExecOptionPermission;
 
 /**
  * The Activator facilitates remote object activation. A "faulting"
@@ -1753,7 +1753,7 @@ public class Activation implements Serializable {
             }
         });
         System.arraycopy(childArgs, 0, command, 1, childArgs.length);
-        command[command.length-1] = "sun.rmi.server.ActivationGroupInit";
+        command[command.length-1] = "j86.sun.rmi.server.ActivationGroupInit";
     }
 
     private static void bomb(String error) {
@@ -1765,8 +1765,8 @@ public class Activation implements Serializable {
 
     /**
      * The default policy for checking a command before it is executed
-     * makes sure the appropriate com.sun.rmi.rmid.ExecPermission and
-     * set of com.sun.rmi.rmid.ExecOptionPermissions have been granted.
+     * makes sure the appropriate j86.com.sun.rmi.rmid.ExecPermission and
+     * set of j86.com.sun.rmi.rmid.ExecOptionPermissions have been granted.
      */
     public static class DefaultExecPolicy {
 
@@ -1870,7 +1870,7 @@ public class Activation implements Serializable {
             /*
              * The approach used here is taken from the similar method
              * getLoaderAccessControlContext() in the class
-             * sun.rmi.server.LoaderHandler.
+             * j86.sun.rmi.server.LoaderHandler.
              */
 
             // obtain permissions granted to all code in current policy
@@ -2010,7 +2010,7 @@ public class Activation implements Serializable {
             }
 
             debugExec = AccessController.doPrivileged(
-                new GetBooleanAction("sun.rmi.server.activation.debugExec"));
+                new GetBooleanAction("j86.sun.rmi.server.activation.debugExec"));
 
             /**
              * Determine class name for activation exec policy (if any).
@@ -2055,7 +2055,7 @@ public class Activation implements Serializable {
                 final int finalPort = port;
                 AccessController.doPrivileged(new PrivilegedAction<Void>() {
                     public Void run() {
-                        System.setProperty("java.rmi.activation.port",
+                        System.setProperty("j86.j86.java.rmi.activation.port",
                                            Integer.toString(finalPort));
                         return null;
                     }
@@ -2104,7 +2104,7 @@ public class Activation implements Serializable {
         if (Activation.resources == null) {
             try {
                 Activation.resources = ResourceBundle.getBundle(
-                    "sun.rmi.server.resources.rmid");
+                    "j86.sun.rmi.server.resources.rmid");
             } catch (MissingResourceException mre) {
             }
             if (Activation.resources == null) {

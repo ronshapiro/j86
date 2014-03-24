@@ -23,13 +23,13 @@
  * questions.
  */
 
-package java.beans;
+package j86.java.beans;
 
 /**
  * <p>
  * This interface is intended to be implemented by, or delegated from, instances
- * of java.beans.beancontext.BeanContext, in order to propagate to its nested hierarchy
- * of java.beans.beancontext.BeanContextChild instances, the current "designTime" property.
+ * of j86.j86.java.beans.beancontext.BeanContext, in order to propagate to its nested hierarchy
+ * of j86.j86.java.beans.beancontext.BeanContextChild instances, the current "designTime" property.
  * <p>
  * The JavaBeans&trade; specification defines the notion of design time as is a
  * mode in which JavaBeans instances should function during their composition
@@ -40,10 +40,10 @@ package java.beans;
  * @author Laurence P. G. Cable
  * @since 1.2
  *
- * @see java.beans.beancontext.BeanContext
- * @see java.beans.beancontext.BeanContextChild
- * @see java.beans.beancontext.BeanContextMembershipListener
- * @see java.beans.PropertyChangeEvent
+ * @see j86.j86.java.beans.beancontext.BeanContext
+ * @see j86.j86.java.beans.beancontext.BeanContextChild
+ * @see j86.j86.java.beans.beancontext.BeanContextMembershipListener
+ * @see j86.java.beans.PropertyChangeEvent
  */
 
 public interface DesignMode {
@@ -58,12 +58,12 @@ public interface DesignMode {
     /**
      * Sets the "value" of the "designTime" property.
      * <p>
-     * If the implementing object is an instance of java.beans.beancontext.BeanContext,
+     * If the implementing object is an instance of j86.j86.java.beans.beancontext.BeanContext,
      * or a subinterface thereof, then that BeanContext should fire a
      * PropertyChangeEvent, to its registered BeanContextMembershipListeners, with
      * parameters:
      * <ul>
-     *    <li><code>propertyName</code> - <code>java.beans.DesignMode.PROPERTYNAME</code>
+     *    <li><code>propertyName</code> - <code>j86.java.beans.DesignMode.PROPERTYNAME</code>
      *    <li><code>oldValue</code> - previous value of "designTime"
      *    <li><code>newValue</code> - current value of "designTime"
      * </ul>
@@ -71,9 +71,9 @@ public interface DesignMode {
      * associated with a BeanContext that it is nested within.
      *
      * @param designTime  the current "value" of the "designTime" property
-     * @see java.beans.beancontext.BeanContext
-     * @see java.beans.beancontext.BeanContextMembershipListener
-     * @see java.beans.PropertyChangeEvent
+     * @see j86.j86.java.beans.beancontext.BeanContext
+     * @see j86.j86.java.beans.beancontext.BeanContextMembershipListener
+     * @see j86.java.beans.PropertyChangeEvent
      */
 
     void setDesignTime(boolean designTime);

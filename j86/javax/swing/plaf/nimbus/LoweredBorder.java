@@ -22,18 +22,18 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.plaf.nimbus;
+package j86.j86.j86.javax.swing.plaf.nimbus;
 
-import javax.swing.border.Border;
-import javax.swing.JComponent;
-import java.awt.Insets;
-import java.awt.Component;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.Color;
-import java.awt.RenderingHints;
-import java.awt.Dimension;
-import java.awt.image.BufferedImage;
+import j86.j86.javax.swing.border.Border;
+import j86.javax.swing.JComponent;
+import j86.java.awt.Insets;
+import j86.java.awt.Component;
+import j86.java.awt.Graphics;
+import j86.java.awt.Graphics2D;
+import j86.java.awt.Color;
+import j86.java.awt.RenderingHints;
+import j86.java.awt.Dimension;
+import j86.j86.j86.java.awt.image.BufferedImage;
 
 /**
  * LoweredBorder - A recessed rounded inner shadowed border. Used as the

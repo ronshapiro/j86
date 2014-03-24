@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.jvmstat.perfdata.monitor;
+package j86.sun.jvmstat.perfdata.monitor;
 
-import java.util.*;
+import j86.java.util.*;
 
 /**
  * A TimerTask subclass that keeps a count of the number of executions

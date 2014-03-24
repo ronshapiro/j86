@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.applet;
+package j86.sun.applet;
 
-import java.util.EventListener;
-import java.io.Serializable;
-import java.io.ObjectOutputStream;
-import java.io.IOException;
+import j86.java.util.EventListener;
+import j86.java.io.Serializable;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.IOException;
 
 /**
  * AppletEventMulticaster class.  This class manages an immutable

@@ -22,9 +22,9 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.plaf.nimbus;
+package j86.j86.j86.javax.swing.plaf.nimbus;
 
-import java.awt.Color;
+import j86.java.awt.Color;
 
 /**
  * ShadowEffect - base class with all the standard properties for shadow effects

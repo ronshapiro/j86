@@ -23,32 +23,32 @@
  * questions.
  */
 
-package sun.management;
-import java.lang.management.MemoryUsage;
-import java.lang.management.MemoryNotificationInfo;
-import java.lang.management.MonitorInfo;
-import java.lang.management.LockInfo;
-import java.lang.management.ThreadInfo;
-import java.lang.reflect.*;
-import java.util.List;
-import java.util.Map;
-import java.util.*;
-import java.io.InvalidObjectException;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.security.PrivilegedActionException;
-import java.security.PrivilegedExceptionAction;
-import javax.management.*;
-import javax.management.openmbean.*;
-import static javax.management.openmbean.SimpleType.*;
-import com.sun.management.VMOption;
+package j86.sun.management;
+import j86.j86.java.lang.management.MemoryUsage;
+import j86.j86.java.lang.management.MemoryNotificationInfo;
+import j86.j86.java.lang.management.MonitorInfo;
+import j86.j86.java.lang.management.LockInfo;
+import j86.j86.java.lang.management.ThreadInfo;
+import j86.j86.j86.java.lang.reflect.*;
+import j86.java.util.List;
+import j86.java.util.Map;
+import j86.java.util.*;
+import j86.java.io.InvalidObjectException;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.security.PrivilegedActionException;
+import j86.java.security.PrivilegedExceptionAction;
+import j86.javax.management.*;
+import j86.j86.javax.management.openmbean.*;
+import static j86.j86.javax.management.openmbean.SimpleType.*;
+import com.j86.sun.management.VMOption;
 
 /**
  * A mapped mxbean type maps a Java type to an open type.
  * Only the following Java types are mappable
  * (currently required by the platform MXBeans):
  *   1. Primitive types
- *   2. Wrapper classes such java.lang.Integer, etc
+ *   2. Wrapper classes such j86.java.lang.Integer, etc
  *   3. Classes with only getter methods and with a static "from" method
  *      that takes a CompositeData argument.
  *   4. E[] where E is a type of 1-4 (can be multi-dimensional array)
@@ -526,7 +526,7 @@ public abstract class MappedMXBeanType {
                                   mapItemTypes);
 
             openType = new TabularType(typeName, typeName, rowType, mapIndexNames);
-            mappedTypeClass = javax.management.openmbean.TabularData.class;
+            mappedTypeClass = j86.j86.javax.management.openmbean.TabularData.class;
         }
 
         Type getJavaType() {
@@ -571,7 +571,7 @@ public abstract class MappedMXBeanType {
     }
 
     private static final Class<?> COMPOSITE_DATA_CLASS =
-        javax.management.openmbean.CompositeData.class;
+        j86.j86.javax.management.openmbean.CompositeData.class;
 
     // Classes that have a static from method
     //   Mapped open type - CompositeData
@@ -700,7 +700,7 @@ public abstract class MappedMXBeanType {
             }
 
             if (data instanceof LockInfo) {
-                if (data instanceof java.lang.management.MonitorInfo) {
+                if (data instanceof j86.j86.java.lang.management.MonitorInfo) {
                     return MonitorInfoCompositeData.toCompositeData((MonitorInfo) data);
                 }
                 return LockInfoCompositeData.toCompositeData((LockInfo) data);
@@ -759,7 +759,7 @@ public abstract class MappedMXBeanType {
                   "Marker to detect recursive type use -- internal use only!";
 
         InProgress() throws OpenDataException {
-            super("java.lang.String", "java.lang.String", description);
+            super("j86.java.lang.String", "java.lang.String", description);
         }
 
         public String toString() {
@@ -813,7 +813,7 @@ public abstract class MappedMXBeanType {
                     throw new AssertionError(e);
                 }
 
-                if (c.getName().startsWith("java.lang.")) {
+                if (c.getName().startsWith("j86.java.lang.")) {
                     try {
                         final Field typeField = c.getField("TYPE");
                         final Class<?> primitiveType = (Class<?>) typeField.get(null);

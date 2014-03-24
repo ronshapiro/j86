@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.lang.management;
+package j86.j86.java.lang.management;
 
 /**
  * The management interface for the class loading system of
@@ -41,14 +41,14 @@ package java.lang.management;
  * the class loading system within an <tt>MBeanServer</tt> is:
  * <blockquote>
  * {@link ManagementFactory#CLASS_LOADING_MXBEAN_NAME
- *        <tt>java.lang:type=ClassLoading</tt>}
+ *        <tt>j86.java.lang:type=ClassLoading</tt>}
  * </blockquote>
  *
  * It can be obtained by calling the
  * {@link PlatformManagedObject#getObjectName} method.
  *
  * @see ManagementFactory#getPlatformMXBeans(Class)
- * @see <a href="../../../javax/management/package-summary.html">
+ * @see <a href="../../../j86.javax.management/package-summary.html">
  *      JMX Specification.</a>
  * @see <a href="package-summary.html#examples">
  *      Ways to Access MXBeans</a>
@@ -105,7 +105,7 @@ public interface ClassLoadingMXBean extends PlatformManagedObject {
      * @param value <tt>true</tt> to enable the verbose output;
      *              <tt>false</tt> to disable.
      *
-     * @exception  java.lang.SecurityException if a security manager
+     * @exception  j86.java.lang.SecurityException if a security manager
      *             exists and the caller does not have
      *             ManagementPermission("control").
      */

@@ -56,21 +56,21 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-package jdk.internal.org.objectweb.asm.commons;
+package j86.j86.jdk.internal.org.objectweb.asm.commons;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import j86.java.util.ArrayList;
+import j86.java.util.Arrays;
+import j86.java.util.List;
 
-import jdk.internal.org.objectweb.asm.ClassVisitor;
-import jdk.internal.org.objectweb.asm.Handle;
-import jdk.internal.org.objectweb.asm.Label;
-import jdk.internal.org.objectweb.asm.MethodVisitor;
-import jdk.internal.org.objectweb.asm.Opcodes;
-import jdk.internal.org.objectweb.asm.Type;
+import j86.jdk.internal.org.objectweb.asm.ClassVisitor;
+import j86.jdk.internal.org.objectweb.asm.Handle;
+import j86.jdk.internal.org.objectweb.asm.Label;
+import j86.jdk.internal.org.objectweb.asm.MethodVisitor;
+import j86.jdk.internal.org.objectweb.asm.Opcodes;
+import j86.jdk.internal.org.objectweb.asm.Type;
 
 /**
- * A {@link jdk.internal.org.objectweb.asm.MethodVisitor} with convenient methods to generate
+ * A {@link j86.jdk.internal.org.objectweb.asm.MethodVisitor} with convenient methods to generate
  * code. For example, using this adapter, the class below
  *
  * <pre>
@@ -85,7 +85,7 @@ import jdk.internal.org.objectweb.asm.Type;
  *
  * <pre>
  * ClassWriter cw = new ClassWriter(true);
- * cw.visit(V1_1, ACC_PUBLIC, &quot;Example&quot;, null, &quot;java/lang/Object&quot;, null);
+ * cw.visit(V1_1, ACC_PUBLIC, &quot;Example&quot;, null, &quot;j86.java.lang/Object&quot;, null);
  *
  * Method m = Method.getMethod(&quot;void &lt;init&gt; ()&quot;);
  * GeneratorAdapter mg = new GeneratorAdapter(ACC_PUBLIC, m, null, null, cw);
@@ -113,35 +113,35 @@ import jdk.internal.org.objectweb.asm.Type;
  */
 public class GeneratorAdapter extends LocalVariablesSorter {
 
-    private static final String CLDESC = "Ljava/lang/Class;";
+    private static final String CLDESC = "Lj86.java.lang/Class;";
 
-    private static final Type BYTE_TYPE = Type.getObjectType("java/lang/Byte");
+    private static final Type BYTE_TYPE = Type.getObjectType("j86.java.lang/Byte");
 
     private static final Type BOOLEAN_TYPE = Type
-            .getObjectType("java/lang/Boolean");
+            .getObjectType("j86.java.lang/Boolean");
 
     private static final Type SHORT_TYPE = Type
-            .getObjectType("java/lang/Short");
+            .getObjectType("j86.java.lang/Short");
 
     private static final Type CHARACTER_TYPE = Type
-            .getObjectType("java/lang/Character");
+            .getObjectType("j86.java.lang/Character");
 
     private static final Type INTEGER_TYPE = Type
-            .getObjectType("java/lang/Integer");
+            .getObjectType("j86.java.lang/Integer");
 
     private static final Type FLOAT_TYPE = Type
-            .getObjectType("java/lang/Float");
+            .getObjectType("j86.java.lang/Float");
 
-    private static final Type LONG_TYPE = Type.getObjectType("java/lang/Long");
+    private static final Type LONG_TYPE = Type.getObjectType("j86.java.lang/Long");
 
     private static final Type DOUBLE_TYPE = Type
-            .getObjectType("java/lang/Double");
+            .getObjectType("j86.java.lang/Double");
 
     private static final Type NUMBER_TYPE = Type
-            .getObjectType("java/lang/Number");
+            .getObjectType("j86.java.lang/Number");
 
     private static final Type OBJECT_TYPE = Type
-            .getObjectType("java/lang/Object");
+            .getObjectType("j86.java.lang/Object");
 
     private static final Method BOOLEAN_VALUE = Method
             .getMethod("boolean booleanValue()");
@@ -482,35 +482,35 @@ public class GeneratorAdapter extends LocalVariablesSorter {
         } else {
             switch (value.getSort()) {
             case Type.BOOLEAN:
-                mv.visitFieldInsn(Opcodes.GETSTATIC, "java/lang/Boolean",
+                mv.visitFieldInsn(Opcodes.GETSTATIC, "j86.java.lang/Boolean",
                         "TYPE", CLDESC);
                 break;
             case Type.CHAR:
-                mv.visitFieldInsn(Opcodes.GETSTATIC, "java/lang/Character",
+                mv.visitFieldInsn(Opcodes.GETSTATIC, "j86.java.lang/Character",
                         "TYPE", CLDESC);
                 break;
             case Type.BYTE:
-                mv.visitFieldInsn(Opcodes.GETSTATIC, "java/lang/Byte", "TYPE",
+                mv.visitFieldInsn(Opcodes.GETSTATIC, "j86.java.lang/Byte", "TYPE",
                         CLDESC);
                 break;
             case Type.SHORT:
-                mv.visitFieldInsn(Opcodes.GETSTATIC, "java/lang/Short", "TYPE",
+                mv.visitFieldInsn(Opcodes.GETSTATIC, "j86.java.lang/Short", "TYPE",
                         CLDESC);
                 break;
             case Type.INT:
-                mv.visitFieldInsn(Opcodes.GETSTATIC, "java/lang/Integer",
+                mv.visitFieldInsn(Opcodes.GETSTATIC, "j86.java.lang/Integer",
                         "TYPE", CLDESC);
                 break;
             case Type.FLOAT:
-                mv.visitFieldInsn(Opcodes.GETSTATIC, "java/lang/Float", "TYPE",
+                mv.visitFieldInsn(Opcodes.GETSTATIC, "j86.java.lang/Float", "TYPE",
                         CLDESC);
                 break;
             case Type.LONG:
-                mv.visitFieldInsn(Opcodes.GETSTATIC, "java/lang/Long", "TYPE",
+                mv.visitFieldInsn(Opcodes.GETSTATIC, "j86.java.lang/Long", "TYPE",
                         CLDESC);
                 break;
             case Type.DOUBLE:
-                mv.visitFieldInsn(Opcodes.GETSTATIC, "java/lang/Double",
+                mv.visitFieldInsn(Opcodes.GETSTATIC, "j86.java.lang/Double",
                         "TYPE", CLDESC);
                 break;
             default:

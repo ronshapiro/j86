@@ -32,10 +32,10 @@
  */
 
 
-package com.sun.tools.example.debug.event;
+package j86.com.sun.tools.example.debug.event;
 
-import com.sun.jdi.*;
-import com.sun.jdi.event.*;
+import j86.com.sun.jdi.*;
+import j86.j86.com.sun.jdi.event.*;
 
 public abstract class WatchpointEventSet extends LocatableEventSet {
 

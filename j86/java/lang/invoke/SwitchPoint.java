@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.lang.invoke;
+package j86.j86.java.lang.invoke;
 
 /**
  * <p>

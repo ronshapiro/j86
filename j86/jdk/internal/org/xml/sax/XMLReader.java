@@ -29,9 +29,9 @@
 // NO WARRANTY!  This class is in the Public Domain.
 // $Id: XMLReader.java,v 1.3 2004/11/03 22:55:32 jsuttor Exp $
 
-package jdk.internal.org.xml.sax;
+package j86.jdk.internal.org.xml.sax;
 
-import java.io.IOException;
+import j86.java.io.IOException;
 
 
 /**
@@ -45,7 +45,7 @@ import java.io.IOException;
  * </blockquote>
  *
  * <p><strong>Note:</strong> despite its name, this interface does
- * <em>not</em> extend the standard Java {@link java.io.Reader Reader}
+ * <em>not</em> extend the standard Java {@link j86.java.io.Reader Reader}
  * interface, because reading XML is a fundamentally different activity
  * than reading character data.</p>
  *
@@ -386,11 +386,11 @@ public interface XMLReader
      *        XML document.
      * @exception org.xml.sax.SAXException Any SAX exception, possibly
      *            wrapping another exception.
-     * @exception java.io.IOException An IO exception from the parser,
+     * @exception j86.java.io.IOException An IO exception from the parser,
      *            possibly from a byte stream or character stream
      *            supplied by the application.
      * @see org.xml.sax.InputSource
-     * @see #parse(java.lang.String)
+     * @see #parse(j86.java.lang.String)
      * @see #setEntityResolver
      * @see #setDTDHandler
      * @see #setContentHandler
@@ -417,7 +417,7 @@ public interface XMLReader
      * @param systemId The system identifier (URI).
      * @exception org.xml.sax.SAXException Any SAX exception, possibly
      *            wrapping another exception.
-     * @exception java.io.IOException An IO exception from the parser,
+     * @exception j86.java.io.IOException An IO exception from the parser,
      *            possibly from a byte stream or character stream
      *            supplied by the application.
      * @see #parse(org.xml.sax.InputSource)

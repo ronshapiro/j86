@@ -34,7 +34,7 @@
 
 The following refers to standard AWT desktop properties that
 may be obtained via the
-<a href="../Toolkit.html#getDesktopProperty(java.lang.String)">
+<a href="../Toolkit.html#getDesktopProperty(j86.java.lang.String)">
 <code>Toolkit.getDesktopProperty</code></a> method.
 <p>
 Each desktop property is named by a unique string, which
@@ -65,12 +65,12 @@ here, and their value types.
 </tr>
 <tr>
 <td valign="TOP"><A href="#awt.font.desktophints">awt.font.desktophints</A></td>
-<td valign="TOP"><a href="../../util/Map.html">java.util.Map</a></td>
+<td valign="TOP"><a href="../../util/Map.html">j86.java.util.Map</a></td>
 <td valign="TOP">Font smoothing (text antialiasing) settings.</td>
 </tr>
 <tr>
-<td valign="TOP"><A href="#sun.awt.enableExtraMouseButtons">sun.awt.enableExtraMouseButtons</A></td>
-<td valign="TOP"><a href="../../lang/Boolean.html">java.lang.Boolean</a></td>
+<td valign="TOP"><A href="#j86.sun.awt.enableExtraMouseButtons">sun.awt.enableExtraMouseButtons</A></td>
+<td valign="TOP"><a href="../../lang/Boolean.html">j86.java.lang.Boolean</a></td>
 <td valign="TOP">Controls if mouse events from extra buttons are to be generated or not</td>
 </tr>
 </table>
@@ -85,7 +85,7 @@ However an application may want to render text using the same text
 antialiasing on a drawing surface or lightweight (non-platform) component using
 <a href="../Graphics2D.html"> <code>Graphics2D</code></a> methods.
 This is particularly important when creating
-<a href="../../../javax/swing/JComponent.html"> Swing components</a> which
+<a href="../../../j86.javax.swing/JComponent.html"> Swing components</a> which
 are required to appear consistent with native desktop components or other
 Swing components.
 
@@ -229,20 +229,20 @@ determine that there is a non-null return for any screen device using
 the per-device property name.
 </ul>
 <h2>Mouse Functionality</h2>
-<b>Desktop Property: <A name="sun.awt.enableExtraMouseButtons">"sun.awt.enableExtraMouseButtons"</A></b>
+<b>Desktop Property: <A name="j86.sun.awt.enableExtraMouseButtons">"sun.awt.enableExtraMouseButtons"</A></b>
 <p>
 This property determines if events from extra mouse buttons (if they are exist and are
 enabled by the underlying operating system) are allowed to be processed and posted into
 {@code EventQueue}.
 <br>
-The value could be changed by passing "sun.awt.enableExtraMouseButtons"
+The value could be changed by passing "j86.sun.awt.enableExtraMouseButtons"
 property value into java before application starts. This could be done with the following command:
 <pre>
-java -Dsun.awt.enableExtraMouseButtons=false Application
+java -Dj86.sun.awt.enableExtraMouseButtons=false Application
 </pre>
 Once set on application startup, it is impossible to change this value after.
 <br>
-Current value could also be queried using getDesktopProperty("sun.awt.enableExtraMouseButtons")
+Current value could also be queried using getDesktopProperty("j86.sun.awt.enableExtraMouseButtons")
 method.
 <br>
 If the property is set to {@code true} then 
@@ -250,14 +250,14 @@ If the property is set to {@code true} then
 <li> it is still legal to create {@code MouseEvent} objects with
 standard buttons and, if the mouse has more
 then three buttons, it is also legal to use buttons from the range started
-from 0 up to {@link java.awt.MouseInfo#getNumberOfButtons() getNumberOfButtons()}.
+from 0 up to {@link j86.java.awt.MouseInfo#getNumberOfButtons() getNumberOfButtons()}.
 
 <li> it is legal to use standard button masks when using {@code Robot.mousePress()}
 and {@code Robot.mouseRelease()} methods and, if the mouse has more then three buttons,
 it is also legal to use masks for existing extended mouse buttons.
 That way, if there are more then three buttons on the mouse then it is allowed to
 use button masks corresponding to the buttons 
-in the range from 1 up to {@link java.awt.MouseInfo#getNumberOfButtons() getNumberOfButtons()}
+in the range from 1 up to {@link j86.java.awt.MouseInfo#getNumberOfButtons() getNumberOfButtons()}
 </ul>
 <br>
 If the property is set to {@code false} then 

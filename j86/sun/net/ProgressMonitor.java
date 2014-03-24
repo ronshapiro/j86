@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.net;
+package j86.sun.net;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.net.URL;
+import j86.java.util.ArrayList;
+import j86.java.util.Iterator;
+import j86.java.net.URL;
 
 /**
  * ProgressMonitor is a class for monitoring progress in network input stream.

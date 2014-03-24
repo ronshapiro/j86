@@ -23,25 +23,25 @@
  * questions.
  */
 
-package sun.security.pkcs11;
+package j86.j86.sun.security.pkcs11;
 
-import java.io.IOException;
-import java.math.BigInteger;
-import java.nio.ByteBuffer;
+import j86.java.io.IOException;
+import j86.java.math.BigInteger;
+import j86.java.nio.ByteBuffer;
 
-import java.security.*;
-import java.security.interfaces.*;
-import sun.nio.ch.DirectBuffer;
+import j86.java.security.*;
+import j86.j86.java.security.interfaces.*;
+import j86.j86.j86.sun.nio.ch.DirectBuffer;
 
-import sun.security.util.*;
-import sun.security.x509.AlgorithmId;
+import j86.sun.security.util.*;
+import j86.sun.security.x509.AlgorithmId;
 
-import sun.security.rsa.RSASignature;
-import sun.security.rsa.RSAPadding;
+import j86.sun.security.rsa.RSASignature;
+import j86.sun.security.rsa.RSAPadding;
 
-import sun.security.pkcs11.wrapper.*;
-import static sun.security.pkcs11.wrapper.PKCS11Constants.*;
-import sun.security.util.KeyUtil;
+import j86.j86.j86.sun.security.pkcs11.wrapper.*;
+import static j86.j86.j86.sun.security.pkcs11.wrapper.PKCS11Constants.*;
+import j86.sun.security.util.KeyUtil;
 
 /**
  * Signature implementation class. This class currently supports the
@@ -697,7 +697,7 @@ final class P11Signature extends SignatureSpi {
             DerValue result = new DerValue(DerValue.tag_Sequence,
                                            outseq.toByteArray());
             return result.toByteArray();
-        } catch (java.io.IOException e) {
+        } catch (j86.java.io.IOException e) {
             throw new RuntimeException("Internal error", e);
         }
     }

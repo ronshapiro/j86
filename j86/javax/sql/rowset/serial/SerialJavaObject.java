@@ -23,16 +23,16 @@
  * questions.
  */
 
-package javax.sql.rowset.serial;
+package j86.j86.j86.javax.sql.rowset.serial;
 
-import java.io.*;
-import java.lang.reflect.*;
-import java.util.Arrays;
-import java.util.Vector;
-import javax.sql.rowset.RowSetWarning;
-import sun.reflect.CallerSensitive;
-import sun.reflect.Reflection;
-import sun.reflect.misc.ReflectUtil;
+import j86.java.io.*;
+import j86.j86.j86.java.lang.reflect.*;
+import j86.java.util.Arrays;
+import j86.java.util.Vector;
+import j86.j86.javax.sql.rowset.RowSetWarning;
+import j86.sun.reflect.CallerSensitive;
+import j86.sun.reflect.Reflection;
+import j86.j86.sun.reflect.misc.ReflectUtil;
 
 /**
  * A serializable mapping in the Java programming language of an SQL
@@ -85,7 +85,7 @@ public class SerialJavaObject implements Serializable, Cloneable {
         Class<?> c = obj.getClass();
 
         // determine if object implements Serializable i/f
-        if (!(obj instanceof java.io.Serializable)) {
+        if (!(obj instanceof j86.java.io.Serializable)) {
             setWarning(new RowSetWarning("Warning, the object passed to the constructor does not implement Serializable"));
         }
 
@@ -141,7 +141,7 @@ public class SerialJavaObject implements Serializable, Cloneable {
                  * Check if the caller is allowed to access the specified class's package.
                  * If access is denied, throw a SecurityException.
                  */
-                Class<?> caller = sun.reflect.Reflection.getCallerClass();
+                Class<?> caller = j86.sun.reflect.Reflection.getCallerClass();
                 if (ReflectUtil.needsPackageAccessCheck(caller.getClassLoader(),
                                                         c.getClassLoader())) {
                     ReflectUtil.checkPackageAccess(c);

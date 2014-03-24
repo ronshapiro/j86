@@ -23,25 +23,25 @@
  * questions.
  */
 
-package javax.naming.ldap;
+package j86.j86.javax.naming.ldap;
 
-import java.util.Iterator;
-import java.util.NoSuchElementException;
-import java.util.ArrayList;
-import java.util.Locale;
-import java.util.Collections;
+import j86.java.util.Iterator;
+import j86.java.util.NoSuchElementException;
+import j86.java.util.ArrayList;
+import j86.java.util.Locale;
+import j86.java.util.Collections;
 
-import javax.naming.InvalidNameException;
-import javax.naming.directory.BasicAttributes;
-import javax.naming.directory.Attributes;
-import javax.naming.directory.Attribute;
-import javax.naming.NamingEnumeration;
-import javax.naming.NamingException;
+import j86.javax.naming.InvalidNameException;
+import j86.j86.javax.naming.directory.BasicAttributes;
+import j86.j86.javax.naming.directory.Attributes;
+import j86.j86.javax.naming.directory.Attribute;
+import j86.javax.naming.NamingEnumeration;
+import j86.javax.naming.NamingException;
 
-import java.io.Serializable;
-import java.io.ObjectOutputStream;
-import java.io.ObjectInputStream;
-import java.io.IOException;
+import j86.java.io.Serializable;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.IOException;
 
 /**
  * This class represents a relative distinguished name, or RDN, which is a
@@ -50,11 +50,11 @@ import java.io.IOException;
  * An example of an RDN is "OU=Sales+CN=J.Smith". In this example,
  * the RDN consist of multiple attribute type/value pairs. The
  * RDN is parsed as described in the class description for
- * {@link javax.naming.ldap.LdapName <tt>LdapName</tt>}.
+ * {@link j86.j86.javax.naming.ldap.LdapName <tt>LdapName</tt>}.
  * <p>
  * The Rdn class represents an RDN as attribute type/value mappings,
  * which can be viewed using
- * {@link javax.naming.directory.Attributes Attributes}.
+ * {@link j86.j86.javax.naming.directory.Attributes Attributes}.
  * In addition, it contains convenience methods that allow easy retrieval
  * of type and value when the Rdn consist of a single type/value pair,
  * which is how it appears in a typical usage.
@@ -114,7 +114,7 @@ public class Rdn implements Serializable, Comparable<Object> {
 
     /**
      * Constructs an Rdn from the given attribute set. See
-     * {@link javax.naming.directory.Attributes Attributes}.
+     * {@link j86.j86.javax.naming.directory.Attributes Attributes}.
      * <p>
      * The string attribute values are not interpreted as
      * <a href="http://www.ietf.org/rfc/rfc2253.txt">RFC 2253</a>
@@ -154,7 +154,7 @@ public class Rdn implements Serializable, Comparable<Object> {
      * This constructor takes a string formatted according to the rules
      * defined in <a href="http://www.ietf.org/rfc/rfc2253.txt">RFC 2253</a>
      * and described in the class description for
-     * {@link javax.naming.ldap.LdapName}.
+     * {@link j86.j86.javax.naming.ldap.LdapName}.
      *
      * @param rdnString The non-null and non-empty RFC2253 formatted string.
      * @throws InvalidNameException If a syntax error occurs during
@@ -281,7 +281,7 @@ public class Rdn implements Serializable, Comparable<Object> {
     /**
      * Returns this Rdn as a string represented in a format defined by
      * <a href="http://www.ietf.org/rfc/rfc2253.txt">RFC 2253</a> and described
-     * in the class description for {@link javax.naming.ldap.LdapName LdapName}.
+     * in the class description for {@link j86.j86.javax.naming.ldap.LdapName LdapName}.
      *
      * @return The string representation of the Rdn.
      */
@@ -397,7 +397,7 @@ public class Rdn implements Serializable, Comparable<Object> {
     }
 
     /**
-     * Retrieves the {@link javax.naming.directory.Attributes Attributes}
+     * Retrieves the {@link j86.j86.javax.naming.directory.Attributes Attributes}
      * view of the type/value mappings contained in this Rdn.
      *
      * @return  The non-null attributes containing the type/value
@@ -644,7 +644,7 @@ public class Rdn implements Serializable, Comparable<Object> {
                         if (utf8.length > 0) {
                             try {
                                 builder.append(new String(utf8, "UTF8"));
-                            } catch (java.io.UnsupportedEncodingException e) {
+                            } catch (j86.java.io.UnsupportedEncodingException e) {
                                 // shouldn't happen
                             }
                             i += utf8.length * 3 - 1;
@@ -738,7 +738,7 @@ public class Rdn implements Serializable, Comparable<Object> {
      * @serialData      The RDN string
      */
     private void writeObject(ObjectOutputStream s)
-            throws java.io.IOException {
+            throws j86.java.io.IOException {
         s.defaultWriteObject();
         s.writeObject(toString());
     }
@@ -752,7 +752,7 @@ public class Rdn implements Serializable, Comparable<Object> {
             (new Rfc2253Parser(unparsed)).parseRdn(this);
         } catch (InvalidNameException e) {
             // shouldn't happen
-            throw new java.io.StreamCorruptedException(
+            throw new j86.java.io.StreamCorruptedException(
                     "Invalid name: " + unparsed);
         }
     }

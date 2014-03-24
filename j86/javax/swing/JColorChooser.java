@@ -23,18 +23,18 @@
  * questions.
  */
 
-package javax.swing;
+package j86.javax.swing;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.io.*;
-import java.util.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.java.io.*;
+import j86.java.util.*;
 
-import javax.swing.colorchooser.*;
-import javax.swing.plaf.ColorChooserUI;
-import javax.accessibility.*;
+import j86.j86.javax.swing.colorchooser.*;
+import j86.j86.javax.swing.plaf.ColorChooserUI;
+import j86.javax.accessibility.*;
 
-import sun.swing.SwingUtilities2;
+import j86.sun.swing.SwingUtilities2;
 
 
 /**
@@ -70,8 +70,8 @@ import sun.swing.SwingUtilities2;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  *
  * @beaninfo
@@ -129,7 +129,7 @@ public class JColorChooser extends JComponent implements Accessible {
      * @return the selected color or <code>null</code> if the user opted out
      * @exception HeadlessException if GraphicsEnvironment.isHeadless()
      * returns true.
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      */
     public static Color showDialog(Component component,
         String title, Color initialColor) throws HeadlessException {
@@ -167,7 +167,7 @@ public class JColorChooser extends JComponent implements Accessible {
      * @return a new dialog containing the color-chooser pane
      * @exception HeadlessException if GraphicsEnvironment.isHeadless()
      * returns true.
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      */
     public static JDialog createDialog(Component c, String title, boolean modal,
         JColorChooser chooserPane, ActionListener okListener,
@@ -297,7 +297,7 @@ public class JColorChooser extends JComponent implements Accessible {
      * @param g   an int specifying the amount of Green
      * @param b   an int specifying the amount of Blue
      * @exception IllegalArgumentException if r,g,b values are out of range
-     * @see java.awt.Color
+     * @see j86.java.awt.Color
      */
     public void setColor(int r, int g, int b) {
         setColor(new Color(r,g,b));
@@ -346,7 +346,7 @@ public class JColorChooser extends JComponent implements Accessible {
      *
      * @since 1.4
      *
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      * @see #getDragEnabled
      * @see #setTransferHandler
      * @see TransferHandler

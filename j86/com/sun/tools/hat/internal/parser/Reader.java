@@ -30,10 +30,10 @@
  * at JavaSoft/Sun.
  */
 
-package com.sun.tools.hat.internal.parser;
+package j86.j86.com.sun.tools.hat.internal.parser;
 
-import java.io.*;
-import com.sun.tools.hat.internal.model.*;
+import j86.java.io.*;
+import j86.j86.com.sun.tools.hat.internal.model.*;
 
 /**
  * Abstract base class for reading object dump files.  A reader need not be
@@ -71,7 +71,7 @@ public abstract class Reader {
             String num = heapFile.substring(pos+1, heapFile.length());
             try {
                 dumpNumber = Integer.parseInt(num, 10);
-            } catch (java.lang.NumberFormatException ex) {
+            } catch (j86.java.lang.NumberFormatException ex) {
                 String msg = "In file name \"" + heapFile
                              + "\", a dump number was "
                              + "expected after the :, but \""

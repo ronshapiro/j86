@@ -23,35 +23,35 @@
  * questions.
  */
 
-package java.lang.management;
-import javax.management.DynamicMBean;
-import javax.management.MBeanServer;
-import javax.management.MBeanServerConnection;
-import javax.management.MBeanServerFactory;
-import javax.management.MBeanServerPermission;
-import javax.management.NotificationEmitter;
-import javax.management.ObjectInstance;
-import javax.management.ObjectName;
-import javax.management.InstanceAlreadyExistsException;
-import javax.management.InstanceNotFoundException;
-import javax.management.MalformedObjectNameException;
-import javax.management.MBeanRegistrationException;
-import javax.management.NotCompliantMBeanException;
-import javax.management.StandardEmitterMBean;
-import javax.management.StandardMBean;
-import java.util.Collections;
-import java.util.List;
-import java.util.Set;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.security.AccessController;
-import java.security.Permission;
-import java.security.PrivilegedAction;
-import java.security.PrivilegedActionException;
-import java.security.PrivilegedExceptionAction;
-import javax.management.JMX;
-import sun.management.ManagementFactoryHelper;
+package j86.j86.java.lang.management;
+import j86.javax.management.DynamicMBean;
+import j86.javax.management.MBeanServer;
+import j86.javax.management.MBeanServerConnection;
+import j86.javax.management.MBeanServerFactory;
+import j86.javax.management.MBeanServerPermission;
+import j86.javax.management.NotificationEmitter;
+import j86.javax.management.ObjectInstance;
+import j86.javax.management.ObjectName;
+import j86.javax.management.InstanceAlreadyExistsException;
+import j86.javax.management.InstanceNotFoundException;
+import j86.javax.management.MalformedObjectNameException;
+import j86.javax.management.MBeanRegistrationException;
+import j86.javax.management.NotCompliantMBeanException;
+import j86.javax.management.StandardEmitterMBean;
+import j86.javax.management.StandardMBean;
+import j86.java.util.Collections;
+import j86.java.util.List;
+import j86.java.util.Set;
+import j86.java.util.HashMap;
+import j86.java.util.HashSet;
+import j86.java.util.Map;
+import j86.java.security.AccessController;
+import j86.java.security.Permission;
+import j86.java.security.PrivilegedAction;
+import j86.java.security.PrivilegedActionException;
+import j86.java.security.PrivilegedExceptionAction;
+import j86.javax.management.JMX;
+import j86.sun.management.ManagementFactoryHelper;
 
 /**
  * The {@code ManagementFactory} class is a factory class for getting
@@ -64,7 +64,7 @@ import sun.management.ManagementFactoryHelper;
  * <h3><a name="MXBean">Platform MXBeans</a></h3>
  * <p>
  * A platform MXBean is a <i>managed bean</i> that
- * conforms to the <a href="../../../javax/management/package-summary.html">JMX</a>
+ * conforms to the <a href="../../../j86.javax.management/package-summary.html">JMX</a>
  * Instrumentation Specification and only uses a set of basic data types.
  * A JMX management application and the {@linkplain
  * #getPlatformMBeanServer platform MBeanServer}
@@ -72,15 +72,15 @@ import sun.management.ManagementFactoryHelper;
  * data types.
  * The data types being transmitted between the JMX connector
  * server and the connector client are
- * {@linkplain javax.management.openmbean.OpenType open types}
+ * {@linkplain j86.j86.javax.management.openmbean.OpenType open types}
  * and this allows interoperation across versions.
- * See <a href="../../../javax/management/MXBean.html#MXBean-spec">
+ * See <a href="../../../j86.javax.management/MXBean.html#MXBean-spec">
  * the specification of MXBeans</a> for details.
  *
  * <a name="MXBeanNames"></a>
  * <p>Each platform MXBean is a {@link PlatformManagedObject}
  * and it has a unique
- * {@link javax.management.ObjectName ObjectName} for
+ * {@link j86.javax.management.ObjectName ObjectName} for
  * registration in the platform {@code MBeanServer} as returned by
  * by the {@link PlatformManagedObject#getObjectName getObjectName}
  * method.
@@ -114,12 +114,12 @@ import sun.management.ManagementFactoryHelper;
  *         MXBeans remotely.
  *         The attributes and operations of an MXBean use only
  *         <em>JMX open types</em> which include basic data types,
- *         {@link javax.management.openmbean.CompositeData CompositeData},
- *         and {@link javax.management.openmbean.TabularData TabularData}
+ *         {@link j86.j86.javax.management.openmbean.CompositeData CompositeData},
+ *         and {@link j86.j86.javax.management.openmbean.TabularData TabularData}
  *         defined in
- *         {@link javax.management.openmbean.OpenType OpenType}.
+ *         {@link j86.j86.javax.management.openmbean.OpenType OpenType}.
  *         The mapping is specified in
- *         the {@linkplain javax.management.MXBean MXBean} specification
+ *         the {@linkplain j86.javax.management.MXBean MXBean} specification
  *         for details.
  *        </li>
  * </ul>
@@ -143,32 +143,32 @@ import sun.management.ManagementFactoryHelper;
  * <tr>
  * <td> {@link ClassLoadingMXBean} </td>
  * <td> {@link #CLASS_LOADING_MXBEAN_NAME
- *             java.lang:type=ClassLoading}</td>
+ *             j86.java.lang:type=ClassLoading}</td>
  * </tr>
  * <tr>
  * <td> {@link MemoryMXBean} </td>
  * <td> {@link #MEMORY_MXBEAN_NAME
- *             java.lang:type=Memory}</td>
+ *             j86.java.lang:type=Memory}</td>
  * </tr>
  * <tr>
  * <td> {@link ThreadMXBean} </td>
  * <td> {@link #THREAD_MXBEAN_NAME
- *             java.lang:type=Threading}</td>
+ *             j86.java.lang:type=Threading}</td>
  * </tr>
  * <tr>
  * <td> {@link RuntimeMXBean} </td>
  * <td> {@link #RUNTIME_MXBEAN_NAME
- *             java.lang:type=Runtime}</td>
+ *             j86.java.lang:type=Runtime}</td>
  * </tr>
  * <tr>
  * <td> {@link OperatingSystemMXBean} </td>
  * <td> {@link #OPERATING_SYSTEM_MXBEAN_NAME
- *             java.lang:type=OperatingSystem}</td>
+ *             j86.java.lang:type=OperatingSystem}</td>
  * </tr>
  * <tr>
  * <td> {@link PlatformLoggingMXBean} </td>
- * <td> {@link java.util.logging.LogManager#LOGGING_MXBEAN_NAME
- *             java.util.logging:type=Logging}</td>
+ * <td> {@link j86.j86.java.util.logging.LogManager#LOGGING_MXBEAN_NAME
+ *             j86.j86.java.util.logging:type=Logging}</td>
  * </tr>
  * </table>
  * </blockquote>
@@ -186,7 +186,7 @@ import sun.management.ManagementFactoryHelper;
  * <tr>
  * <td> {@link CompilationMXBean} </td>
  * <td> {@link #COMPILATION_MXBEAN_NAME
- *             java.lang:type=Compilation}</td>
+ *             j86.java.lang:type=Compilation}</td>
  * </tr>
  * </table>
  * </blockquote>
@@ -203,30 +203,30 @@ import sun.management.ManagementFactoryHelper;
  * <tr>
  * <td> {@link GarbageCollectorMXBean} </td>
  * <td> {@link #GARBAGE_COLLECTOR_MXBEAN_DOMAIN_TYPE
- *             java.lang:type=GarbageCollector}<tt>,name=</tt><i>collector's name</i></td>
+ *             j86.java.lang:type=GarbageCollector}<tt>,name=</tt><i>collector's name</i></td>
  * </tr>
  * <tr>
  * <td> {@link MemoryManagerMXBean} </td>
  * <td> {@link #MEMORY_MANAGER_MXBEAN_DOMAIN_TYPE
- *             java.lang:type=MemoryManager}<tt>,name=</tt><i>manager's name</i></td>
+ *             j86.java.lang:type=MemoryManager}<tt>,name=</tt><i>manager's name</i></td>
  * </tr>
  * <tr>
  * <td> {@link MemoryPoolMXBean} </td>
  * <td> {@link #MEMORY_POOL_MXBEAN_DOMAIN_TYPE
- *             java.lang:type=MemoryPool}<tt>,name=</tt><i>pool's name</i></td>
+ *             j86.java.lang:type=MemoryPool}<tt>,name=</tt><i>pool's name</i></td>
  * </tr>
  * <tr>
  * <td> {@link BufferPoolMXBean} </td>
- * <td> {@code java.nio:type=BufferPool,name=}<i>pool name</i></td>
+ * <td> {@code j86.java.nio:type=BufferPool,name=}<i>pool name</i></td>
  * </tr>
  * </table>
  * </blockquote>
  *
- * @see <a href="../../../javax/management/package-summary.html">
+ * @see <a href="../../../j86.javax.management/package-summary.html">
  *      JMX Specification</a>
  * @see <a href="package-summary.html#examples">
  *      Ways to Access Management Metrics</a>
- * @see javax.management.MXBean
+ * @see j86.javax.management.MXBean
  *
  * @author  Mandy Chung
  * @since   1.5
@@ -240,42 +240,42 @@ public class ManagementFactory {
      * <tt>ObjectName</tt> for the {@link ClassLoadingMXBean}.
      */
     public final static String CLASS_LOADING_MXBEAN_NAME =
-        "java.lang:type=ClassLoading";
+        "j86.java.lang:type=ClassLoading";
 
     /**
      * String representation of the
      * <tt>ObjectName</tt> for the {@link CompilationMXBean}.
      */
     public final static String COMPILATION_MXBEAN_NAME =
-        "java.lang:type=Compilation";
+        "j86.java.lang:type=Compilation";
 
     /**
      * String representation of the
      * <tt>ObjectName</tt> for the {@link MemoryMXBean}.
      */
     public final static String MEMORY_MXBEAN_NAME =
-        "java.lang:type=Memory";
+        "j86.java.lang:type=Memory";
 
     /**
      * String representation of the
      * <tt>ObjectName</tt> for the {@link OperatingSystemMXBean}.
      */
     public final static String OPERATING_SYSTEM_MXBEAN_NAME =
-        "java.lang:type=OperatingSystem";
+        "j86.java.lang:type=OperatingSystem";
 
     /**
      * String representation of the
      * <tt>ObjectName</tt> for the {@link RuntimeMXBean}.
      */
     public final static String RUNTIME_MXBEAN_NAME =
-        "java.lang:type=Runtime";
+        "j86.java.lang:type=Runtime";
 
     /**
      * String representation of the
      * <tt>ObjectName</tt> for the {@link ThreadMXBean}.
      */
     public final static String THREAD_MXBEAN_NAME =
-        "java.lang:type=Threading";
+        "j86.java.lang:type=Threading";
 
     /**
      * The domain name and the type key property in
@@ -285,7 +285,7 @@ public class ManagementFactory {
      * "<tt>,name=</tt><i>collector's name</i>".
      */
     public final static String GARBAGE_COLLECTOR_MXBEAN_DOMAIN_TYPE =
-        "java.lang:type=GarbageCollector";
+        "j86.java.lang:type=GarbageCollector";
 
     /**
      * The domain name and the type key property in
@@ -295,7 +295,7 @@ public class ManagementFactory {
      * "<tt>,name=</tt><i>manager's name</i>".
      */
     public final static String MEMORY_MANAGER_MXBEAN_DOMAIN_TYPE=
-        "java.lang:type=MemoryManager";
+        "j86.java.lang:type=MemoryManager";
 
     /**
      * The domain name and the type key property in
@@ -305,7 +305,7 @@ public class ManagementFactory {
      * <tt>,name=</tt><i>pool's name</i>.
      */
     public final static String MEMORY_POOL_MXBEAN_DOMAIN_TYPE=
-        "java.lang:type=MemoryPool";
+        "j86.java.lang:type=MemoryPool";
 
     /**
      * Returns the managed bean for the class loading system of
@@ -417,10 +417,10 @@ public class ManagementFactory {
 
     private static MBeanServer platformMBeanServer;
     /**
-     * Returns the platform {@link javax.management.MBeanServer MBeanServer}.
+     * Returns the platform {@link j86.javax.management.MBeanServer MBeanServer}.
      * On the first call to this method, it first creates the platform
      * {@code MBeanServer} by calling the
-     * {@link javax.management.MBeanServerFactory#createMBeanServer
+     * {@link j86.javax.management.MBeanServerFactory#createMBeanServer
      * MBeanServerFactory.createMBeanServer}
      * method and registers each platform MXBean in this platform
      * {@code MBeanServer} with its
@@ -434,9 +434,9 @@ public class ManagementFactory {
      * will automatically be registered and deregistered into the platform
      * {@code MBeanServer}.
      * <p>
-     * If the system property {@code javax.management.builder.initial}
+     * If the system property {@code j86.javax.management.builder.initial}
      * is set, the platform {@code MBeanServer} creation will be done
-     * by the specified {@link javax.management.MBeanServerBuilder}.
+     * by the specified {@link j86.javax.management.MBeanServerBuilder}.
      * <p>
      * It is recommended that this platform MBeanServer also be used
      * to register other application managed beans
@@ -452,10 +452,10 @@ public class ManagementFactory {
      *
      * @exception SecurityException if there is a security manager
      * and the caller does not have the permission required by
-     * {@link javax.management.MBeanServerFactory#createMBeanServer}.
+     * {@link j86.javax.management.MBeanServerFactory#createMBeanServer}.
      *
-     * @see javax.management.MBeanServerFactory
-     * @see javax.management.MBeanServerFactory#createMBeanServer
+     * @see j86.javax.management.MBeanServerFactory
+     * @see j86.javax.management.MBeanServerFactory#createMBeanServer
      */
     public static synchronized MBeanServer getPlatformMBeanServer() {
         SecurityManager sm = System.getSecurityManager();
@@ -475,7 +475,7 @@ public class ManagementFactory {
                     // The MXBean instances for one platform component
                     // (returned by pc.getMXBeans()) might be also
                     // the MXBean instances for another platform component.
-                    // e.g. com.sun.management.GarbageCollectorMXBean
+                    // e.g. com.j86.sun.management.GarbageCollectorMXBean
                     //
                     // So need to check if an MXBean instance is registered
                     // before registering into the platform MBeanServer
@@ -501,12 +501,12 @@ public class ManagementFactory {
      *
      * <p>This method is equivalent to:
      * <blockquote>
-     * {@link java.lang.reflect.Proxy#newProxyInstance
+     * {@link j86.j86.j86.java.lang.reflect.Proxy#newProxyInstance
      *        Proxy.newProxyInstance}<tt>(mxbeanInterface.getClassLoader(),
      *        new Class[] { mxbeanInterface }, handler)</tt>
      * </blockquote>
      *
-     * where <tt>handler</tt> is an {@link java.lang.reflect.InvocationHandler
+     * where <tt>handler</tt> is an {@link j86.j86.j86.java.lang.reflect.InvocationHandler
      * InvocationHandler} to which method invocations to the MXBean interface
      * are dispatched. This <tt>handler</tt> converts an input parameter
      * from an MXBean data type to its mapped open type before forwarding
@@ -518,7 +518,7 @@ public class ManagementFactory {
      * <p>
      * If the MXBean is a notification emitter (i.e.,
      * it implements
-     * {@link javax.management.NotificationEmitter NotificationEmitter}),
+     * {@link j86.javax.management.NotificationEmitter NotificationEmitter}),
      * both the <tt>mxbeanInterface</tt> and <tt>NotificationEmitter</tt>
      * will be implemented by this proxy.
      *
@@ -529,7 +529,7 @@ public class ManagementFactory {
      * a platform MXBean of a running virtual machine.  All method
      * calls to the MXBean proxy are forwarded to an
      * <tt>MBeanServerConnection</tt> where
-     * {@link java.io.IOException IOException} may be thrown
+     * {@link j86.java.io.IOException IOException} may be thrown
      * when the communication problem occurs with the connector server.
      * An application remotely accesses the platform MXBeans using
      * proxy should prepare to catch <tt>IOException</tt> as if
@@ -539,14 +539,14 @@ public class ManagementFactory {
      * for a running virtual machine whose version is different than
      * the version on which the application is running,
      * it should prepare to catch
-     * {@link java.io.InvalidObjectException InvalidObjectException}
+     * {@link j86.java.io.InvalidObjectException InvalidObjectException}
      * which is thrown when an MXBean proxy receives a name of an
      * enum constant which is missing in the enum class loaded in
      * the client application. </li>
      *
-     * <li>{@link javax.management.MBeanServerInvocationHandler
+     * <li>{@link j86.javax.management.MBeanServerInvocationHandler
      * MBeanServerInvocationHandler} or its
-     * {@link javax.management.MBeanServerInvocationHandler#newProxyInstance
+     * {@link j86.javax.management.MBeanServerInvocationHandler#newProxyInstance
      * newProxyInstance} method cannot be used to create
      * a proxy for a platform MXBean. The proxy object created
      * by <tt>MBeanServerInvocationHandler</tt> does not handle
@@ -580,14 +580,14 @@ public class ManagementFactory {
      *     <tt>mxbeanInterface</tt></li>
      * </ul>
      *
-     * @throws java.io.IOException if a communication problem
+     * @throws j86.java.io.IOException if a communication problem
      * occurred when accessing the <tt>MBeanServerConnection</tt>.
      */
     public static <T> T
         newPlatformMXBeanProxy(MBeanServerConnection connection,
                                String mxbeanName,
                                Class<T> mxbeanInterface)
-            throws java.io.IOException {
+            throws j86.java.io.IOException {
 
         // Only allow MXBean interfaces from rt.jar loaded by the
         // bootstrap class loader
@@ -598,7 +598,7 @@ public class ManagementFactory {
                     return cls.getClassLoader();
                 }
             });
-        if (!sun.misc.VM.isSystemDomainLoader(loader)) {
+        if (!j86.sun.misc.VM.isSystemDomainLoader(loader)) {
             throw new IllegalArgumentException(mxbeanName +
                 " is not a platform MXBean");
         }
@@ -725,7 +725,7 @@ public class ManagementFactory {
      * @throws IllegalArgumentException if {@code mxbeanInterface}
      * is not a platform management interface or
      * not a singleton platform MXBean.
-     * @throws java.io.IOException if a communication problem
+     * @throws j86.java.io.IOException if a communication problem
      * occurred when accessing the {@code MBeanServerConnection}.
      *
      * @see #newPlatformMXBeanProxy
@@ -734,7 +734,7 @@ public class ManagementFactory {
     public static <T extends PlatformManagedObject>
             T getPlatformMXBean(MBeanServerConnection connection,
                                 Class<T> mxbeanInterface)
-        throws java.io.IOException
+        throws j86.java.io.IOException
     {
         PlatformComponent pc = PlatformComponent.getPlatformComponent(mxbeanInterface);
         if (pc == null)
@@ -768,7 +768,7 @@ public class ManagementFactory {
      * @throws IllegalArgumentException if {@code mxbeanInterface}
      * is not a platform management interface.
      *
-     * @throws java.io.IOException if a communication problem
+     * @throws j86.java.io.IOException if a communication problem
      * occurred when accessing the {@code MBeanServerConnection}.
      *
      * @see #newPlatformMXBeanProxy
@@ -777,7 +777,7 @@ public class ManagementFactory {
     public static <T extends PlatformManagedObject>
             List<T> getPlatformMXBeans(MBeanServerConnection connection,
                                        Class<T> mxbeanInterface)
-        throws java.io.IOException
+        throws j86.java.io.IOException
     {
         PlatformComponent pc = PlatformComponent.getPlatformComponent(mxbeanInterface);
         if (pc == null) {
@@ -812,7 +812,7 @@ public class ManagementFactory {
     }
 
     private static final String NOTIF_EMITTER =
-        "javax.management.NotificationEmitter";
+        "j86.javax.management.NotificationEmitter";
 
     /**
      * Registers an MXBean.

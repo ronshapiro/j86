@@ -23,24 +23,24 @@
  * questions.
  */
 
-package com.sun.security.auth.module;
+package j86.j86.com.sun.security.auth.module;
 
-import javax.security.auth.*;
-import javax.security.auth.callback.*;
-import javax.security.auth.login.*;
-import javax.security.auth.spi.*;
-import javax.naming.*;
-import javax.naming.directory.*;
+import j86.javax.security.auth.*;
+import j86.j86.javax.security.auth.callback.*;
+import j86.j86.javax.security.auth.login.*;
+import j86.j86.javax.security.auth.spi.*;
+import j86.javax.naming.*;
+import j86.j86.javax.naming.directory.*;
 
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.util.Map;
-import java.util.LinkedList;
-import java.util.ResourceBundle;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.util.Map;
+import j86.java.util.LinkedList;
+import j86.java.util.ResourceBundle;
 
-import com.sun.security.auth.UnixPrincipal;
-import com.sun.security.auth.UnixNumericUserPrincipal;
-import com.sun.security.auth.UnixNumericGroupPrincipal;
+import j86.com.sun.security.auth.UnixPrincipal;
+import j86.com.sun.security.auth.UnixNumericUserPrincipal;
+import j86.com.sun.security.auth.UnixNumericGroupPrincipal;
 
 
 /**
@@ -118,8 +118,8 @@ import com.sun.security.auth.UnixNumericGroupPrincipal;
  *
  *    useFirstPass   if, true, this LoginModule retrieves the
  *                   username and password from the module's shared state,
- *                   using "javax.security.auth.login.name" and
- *                   "javax.security.auth.login.password" as the respective
+ *                   using "j86.j86.javax.security.auth.login.name" and
+ *                   "j86.j86.javax.security.auth.login.password" as the respective
  *                   keys.  The retrieved values are used for authentication.
  *                   If authentication fails, no attempt for a retry is made,
  *                   and the failure is reported back to the calling
@@ -127,8 +127,8 @@ import com.sun.security.auth.UnixNumericGroupPrincipal;
  *
  *    tryFirstPass   if, true, this LoginModule retrieves the
  *                   the username and password from the module's shared state,
- *                   using "javax.security.auth.login.name" and
- *                   "javax.security.auth.login.password" as the respective
+ *                   using "j86.j86.javax.security.auth.login.name" and
+ *                   "j86.j86.javax.security.auth.login.password" as the respective
  *                   keys.  The retrieved values are used for authentication.
  *                   If authentication fails, the module uses the
  *                   CallbackHandler to retrieve a new username and password,
@@ -138,8 +138,8 @@ import com.sun.security.auth.UnixNumericGroupPrincipal;
  *
  *    storePass      if, true, this LoginModule stores the username and password
  *                   obtained from the CallbackHandler in the module's
- *                   shared state, using "javax.security.auth.login.name" and
- *                   "javax.security.auth.login.password" as the respective
+ *                   shared state, using "j86.j86.javax.security.auth.login.name" and
+ *                   "j86.j86.javax.security.auth.login.password" as the respective
  *                   keys.  This is not performed if existing values already
  *                   exist for the username and password in the shared state,
  *                   or if authentication fails.
@@ -158,7 +158,7 @@ public class JndiLoginModule implements LoginModule {
             new PrivilegedAction<ResourceBundle>() {
                 public ResourceBundle run() {
                     return ResourceBundle.getBundle(
-                            "sun.security.util.AuthResources");
+                            "j86.sun.security.util.AuthResources");
                 }
             }
     );
@@ -204,8 +204,8 @@ public class JndiLoginModule implements LoginModule {
     private static final String USER_UID = "uidNumber";
     private static final String USER_GID = "gidNumber";
     private static final String GROUP_ID = "gidNumber";
-    private static final String NAME = "javax.security.auth.login.name";
-    private static final String PWD = "javax.security.auth.login.password";
+    private static final String NAME = "j86.j86.javax.security.auth.login.name";
+    private static final String PWD = "j86.j86.javax.security.auth.login.password";
 
     /**
      * Initialize this <code>LoginModule</code>.
@@ -225,7 +225,7 @@ public class JndiLoginModule implements LoginModule {
      *                  <code>LoginModule</code>.
      */
     // Unchecked warning from (Map<String, Object>)sharedState is safe
-    // since javax.security.auth.login.LoginContext passes a raw HashMap.
+    // since j86.j86.javax.security.auth.login.LoginContext passes a raw HashMap.
     // Unchecked warnings from options.get(String) are safe since we are
     // passing known keys.
     @SuppressWarnings("unchecked")
@@ -651,7 +651,7 @@ public class JndiLoginModule implements LoginModule {
                 ne.printStackTrace();
             }
             throw new FailedLoginException("User not found");
-        } catch (java.io.UnsupportedEncodingException uee) {
+        } catch (j86.java.io.UnsupportedEncodingException uee) {
             // password stored in incorrect format
             if (debug) {
                 System.out.println("\t\t[JndiLoginModule]:  " +
@@ -712,7 +712,7 @@ public class JndiLoginModule implements LoginModule {
                                 password, 0, tmpPassword.length);
             ((PasswordCallback)callbacks[1]).clearPassword();
 
-        } catch (java.io.IOException ioe) {
+        } catch (j86.java.io.IOException ioe) {
             throw new LoginException(ioe.toString());
         } catch (UnsupportedCallbackException uce) {
             throw new LoginException("Error: " + uce.getCallback().toString() +
@@ -752,7 +752,7 @@ public class JndiLoginModule implements LoginModule {
                 if (oldCrypt[i] != newCrypt[i])
                     return false;
             }
-        } catch (java.io.UnsupportedEncodingException uee) {
+        } catch (j86.java.io.UnsupportedEncodingException uee) {
             // cannot happen, but return false just to be safe
             return false;
         }

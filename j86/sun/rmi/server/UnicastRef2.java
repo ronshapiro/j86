@@ -23,17 +23,17 @@
  * questions.
  */
 
-package sun.rmi.server;
+package j86.sun.rmi.server;
 
-import java.io.IOException;
-import java.io.ObjectInput;
-import java.io.ObjectOutput;
-import sun.rmi.transport.LiveRef;
+import j86.java.io.IOException;
+import j86.java.io.ObjectInput;
+import j86.java.io.ObjectOutput;
+import j86.sun.rmi.transport.LiveRef;
 
 /**
  * NOTE: There is a JDK-internal dependency on the existence of this
  * class and its getLiveRef method (inherited from UnicastRef) in the
- * implementation of javax.management.remote.rmi.RMIConnector.
+ * implementation of j86.j86.j86.javax.management.remote.rmi.RMIConnector.
  **/
 public class UnicastRef2 extends UnicastRef {
     private static final long serialVersionUID = 1829537514995881838L;

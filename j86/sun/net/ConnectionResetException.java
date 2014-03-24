@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.net;
+package j86.sun.net;
 
-import java.net.SocketException;
+import j86.java.net.SocketException;
 
 /**
  * Thrown to indicate a connection reset.

@@ -23,22 +23,22 @@
  * questions.
  */
 
-package javax.naming.ldap;
+package j86.j86.javax.naming.ldap;
 
-import javax.naming.Name;
-import javax.naming.InvalidNameException;
+import j86.javax.naming.Name;
+import j86.javax.naming.InvalidNameException;
 
-import java.util.Enumeration;
-import java.util.Collection;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Iterator;
-import java.util.ListIterator;
-import java.util.Collections;
+import j86.java.util.Enumeration;
+import j86.java.util.Collection;
+import j86.java.util.ArrayList;
+import j86.java.util.List;
+import j86.java.util.Iterator;
+import j86.java.util.ListIterator;
+import j86.java.util.Collections;
 
-import java.io.ObjectOutputStream;
-import java.io.ObjectInputStream;
-import java.io.IOException;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.IOException;
 
 /**
  * This class represents a distinguished name as specified by
@@ -761,20 +761,20 @@ public class LdapName implements Name {
      * @serialData      The DN string
      */
     private void writeObject(ObjectOutputStream s)
-            throws java.io.IOException {
+            throws j86.java.io.IOException {
         s.defaultWriteObject();
         s.writeObject(toString());
     }
 
     private void readObject(ObjectInputStream s)
-            throws java.io.IOException, ClassNotFoundException {
+            throws j86.java.io.IOException, ClassNotFoundException {
         s.defaultReadObject();
         unparsed = (String)s.readObject();
         try {
             parse();
         } catch (InvalidNameException e) {
             // shouldn't happen
-            throw new java.io.StreamCorruptedException(
+            throw new j86.java.io.StreamCorruptedException(
                     "Invalid name: " + unparsed);
         }
     }

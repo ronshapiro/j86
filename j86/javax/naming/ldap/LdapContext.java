@@ -23,11 +23,11 @@
  * questions.
  */
 
-package javax.naming.ldap;
+package j86.j86.javax.naming.ldap;
 
-import javax.naming.NamingException;
-import javax.naming.directory.DirContext;
-import java.util.Hashtable;
+import j86.javax.naming.NamingException;
+import j86.j86.javax.naming.directory.DirContext;
+import j86.java.util.Hashtable;
 
 /**
  * This interface represents a context in which you can perform
@@ -35,7 +35,7 @@ import java.util.Hashtable;
  * extended operations.
  *
  * For applications that do not require such controls or extended
- * operations, the more generic <tt>javax.naming.directory.DirContext</tt>
+ * operations, the more generic <tt>j86.j86.javax.naming.directory.DirContext</tt>
  * should be used instead.
  *
  * <h3>Usage Details About Controls</h3>
@@ -168,7 +168,7 @@ import java.util.Hashtable;
  * @author Vincent Ryan
  *
  * @see InitialLdapContext
- * @see LdapReferralException#getReferralContext(java.util.Hashtable,javax.naming.ldap.Control[])
+ * @see LdapReferralException#getReferralContext(j86.java.util.Hashtable,j86.j86.javax.naming.ldap.Control[])
  * @since 1.3
  */
 
@@ -340,8 +340,8 @@ public interface LdapContext extends DirContext {
      * The value of this constant is "java.naming.factory.control".
      *
      * @see ControlFactory
-     * @see javax.naming.Context#addToEnvironment
-     * @see javax.naming.Context#removeFromEnvironment
+     * @see j86.javax.naming.Context#addToEnvironment
+     * @see j86.javax.naming.Context#removeFromEnvironment
      */
     static final String CONTROL_FACTORIES = "java.naming.factory.control";
 }

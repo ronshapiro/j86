@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.invoke.util;
+package j86.j86.sun.invoke.util;
 
-import java.lang.invoke.MethodType;
-import java.util.ArrayList;
-import java.util.List;
+import j86.j86.java.lang.invoke.MethodType;
+import j86.java.util.ArrayList;
+import j86.java.util.List;
 
 /**
  * Utility routines for dealing with bytecode-level signatures.
@@ -87,7 +87,7 @@ public class BytecodeDescriptor {
         } else if (c == '[') {
             Class<?> t = parseSig(str, i, end, loader);
             if (t != null)
-                t = java.lang.reflect.Array.newInstance(t, 0).getClass();
+                t = j86.j86.j86.java.lang.reflect.Array.newInstance(t, 0).getClass();
             return t;
         } else {
             return Wrapper.forBasicType(c).primitiveType();

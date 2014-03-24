@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.security.x509;
+package j86.sun.security.x509;
 
-import java.io.IOException;
-import java.io.OutputStream;
-import java.util.Arrays;
-import sun.security.util.*;
+import j86.java.io.IOException;
+import j86.java.io.OutputStream;
+import j86.java.util.Arrays;
+import j86.sun.security.util.*;
 
 /**
  * Represent a X509 Extension Attribute.
@@ -58,7 +58,7 @@ import sun.security.util.*;
  * @author Amit Kapoor
  * @author Hemma Prafullchandra
  */
-public class Extension implements java.security.cert.Extension {
+public class Extension implements j86.j86.java.security.cert.Extension {
 
     protected ObjectIdentifier  extensionId = null;
     protected boolean           critical = false;

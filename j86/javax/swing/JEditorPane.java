@@ -22,23 +22,23 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing;
+package j86.javax.swing;
 
-import sun.swing.SwingUtilities2;
+import j86.sun.swing.SwingUtilities2;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.lang.reflect.*;
-import java.net.*;
-import java.util.*;
-import java.io.*;
-import java.util.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.j86.j86.java.lang.reflect.*;
+import j86.java.net.*;
+import j86.java.util.*;
+import j86.java.io.*;
+import j86.java.util.*;
 
-import javax.swing.plaf.*;
-import javax.swing.text.*;
-import javax.swing.event.*;
-import javax.swing.text.html.*;
-import javax.accessibility.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.javax.swing.text.*;
+import j86.j86.javax.swing.event.*;
+import j86.j86.j86.javax.swing.text.html.*;
+import j86.javax.accessibility.*;
 
 /**
  * A text component to edit various kinds of content.
@@ -64,11 +64,11 @@ import javax.accessibility.*;
  * <code>DefaultEditorKit</code> that produces a wrapped plain text view.
  * <dt><b>text/html</b>
  * <dd>HTML text.  The kit used in this case is the class
- * <code>javax.swing.text.html.HTMLEditorKit</code>
+ * <code>j86.j86.j86.javax.swing.text.html.HTMLEditorKit</code>
  * which provides HTML 3.2 support.
  * <dt><b>text/rtf</b>
  * <dd>RTF text.  The kit used in this case is the class
- * <code>javax.swing.text.rtf.RTFEditorKit</code>
+ * <code>j86.j86.j86.javax.swing.text.rtf.RTFEditorKit</code>
  * which provides a limited support of the Rich Text Format.
  * </dl>
  * <p>
@@ -180,8 +180,8 @@ import javax.accessibility.*;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @beaninfo
  *   attribute: isContainer false
@@ -321,7 +321,7 @@ public class JEditorPane extends JTextComponent {
      * @since 1.4
      */
     public synchronized HyperlinkListener[] getHyperlinkListeners() {
-        return listenerList.getListeners(javax.swing.event.HyperlinkListener.class);
+        return listenerList.getListeners(j86.j86.javax.swing.event.HyperlinkListener.class);
     }
 
     /**
@@ -1290,13 +1290,13 @@ public class JEditorPane extends JTextComponent {
             synchronized(defaultEditorKitMap) {
                 if (defaultEditorKitMap.size() == 0) {
                     defaultEditorKitMap.put("text/plain",
-                                            "javax.swing.JEditorPane$PlainEditorKit");
+                                            "j86.javax.swing.JEditorPane$PlainEditorKit");
                     defaultEditorKitMap.put("text/html",
-                                            "javax.swing.text.html.HTMLEditorKit");
+                                            "j86.j86.j86.javax.swing.text.html.HTMLEditorKit");
                     defaultEditorKitMap.put("text/rtf",
-                                            "javax.swing.text.rtf.RTFEditorKit");
+                                            "j86.j86.j86.javax.swing.text.rtf.RTFEditorKit");
                     defaultEditorKitMap.put("application/rtf",
-                                            "javax.swing.text.rtf.RTFEditorKit");
+                                            "j86.j86.j86.javax.swing.text.rtf.RTFEditorKit");
                 }
             }
             Hashtable ht = new Hashtable();
@@ -1310,7 +1310,7 @@ public class JEditorPane extends JTextComponent {
         }
     }
 
-    // --- java.awt.Component methods --------------------------
+    // --- j86.java.awt.Component methods --------------------------
 
     /**
      * Returns the preferred size for the <code>JEditorPane</code>.
@@ -1522,8 +1522,8 @@ public class JEditorPane extends JTextComponent {
 
     private Hashtable<String, Object> pageProperties;
 
-    /** Should be kept in sync with javax.swing.text.html.FormView counterpart. */
-    final static String PostDataProperty = "javax.swing.JEditorPane.postdata";
+    /** Should be kept in sync with j86.j86.j86.javax.swing.text.html.FormView counterpart. */
+    final static String PostDataProperty = "j86.javax.swing.JEditorPane.postdata";
 
     /**
      * Table of registered type handlers for this editor.
@@ -1637,8 +1637,8 @@ public class JEditorPane extends JTextComponent {
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     protected class AccessibleJEditorPane extends AccessibleJTextComponent {
 
@@ -1691,8 +1691,8 @@ public class JEditorPane extends JTextComponent {
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     protected class AccessibleJEditorPaneHTML extends AccessibleJEditorPane {
 
@@ -2120,7 +2120,7 @@ public class JEditorPane extends JTextComponent {
          * Paragraph for representing plain-text lines that support
          * bidirectional text.
          */
-        static class PlainParagraph extends javax.swing.text.ParagraphView {
+        static class PlainParagraph extends j86.j86.javax.swing.text.ParagraphView {
 
             PlainParagraph(Element elem) {
                 super(elem);

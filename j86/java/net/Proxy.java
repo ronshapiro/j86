@@ -23,14 +23,14 @@
  * questions.
  */
 
-package java.net;
+package j86.java.net;
 
 /**
  * This class represents a proxy setting, typically a type (http, socks) and
  * a socket address.
  * A {@code Proxy} is an immutable object.
  *
- * @see     java.net.ProxySelector
+ * @see     j86.java.net.ProxySelector
  * @author Yingxian Wang
  * @author Jean-Christophe Collet
  * @since   1.5
@@ -143,7 +143,7 @@ public class Proxy {
      * @param   obj   the object to compare against.
      * @return  {@code true} if the objects are the same;
      *          {@code false} otherwise.
-     * @see java.net.InetSocketAddress#equals(java.lang.Object)
+     * @see j86.java.net.InetSocketAddress#equals(j86.java.lang.Object)
      */
     public final boolean equals(Object obj) {
         if (obj == null || !(obj instanceof Proxy))

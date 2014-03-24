@@ -23,21 +23,21 @@
  * questions.
  */
 
-package javax.security.auth.login;
+package j86.j86.javax.security.auth.login;
 
-import javax.security.auth.AuthPermission;
+import j86.javax.security.auth.AuthPermission;
 
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.security.PrivilegedExceptionAction;
-import java.security.PrivilegedActionException;
-import java.security.NoSuchAlgorithmException;
-import java.security.NoSuchProviderException;
-import java.security.Provider;
-import java.security.Security;
-import java.util.Objects;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.security.PrivilegedExceptionAction;
+import j86.java.security.PrivilegedActionException;
+import j86.java.security.NoSuchAlgorithmException;
+import j86.java.security.NoSuchProviderException;
+import j86.java.security.Provider;
+import j86.java.security.Security;
+import j86.java.util.Objects;
 
-import sun.security.jca.GetInstance;
+import j86.sun.security.jca.GetInstance;
 
 /**
  * A Configuration object is responsible for specifying which LoginModules
@@ -133,8 +133,8 @@ import sun.security.jca.GetInstance;
  *
  * <pre>
  * Login {
- *   com.sun.security.auth.module.UnixLoginModule required;
- *   com.sun.security.auth.module.Krb5LoginModule optional
+ *   j86.j86.com.sun.security.auth.module.UnixLoginModule required;
+ *   j86.j86.com.sun.security.auth.module.Krb5LoginModule optional
  *                   useTicketCache="true"
  *                   ticketCache="${user.home}${/}tickets";
  * };
@@ -142,10 +142,10 @@ import sun.security.jca.GetInstance;
  *
  * <p> This {@code Configuration} specifies that an application named,
  * "Login", requires users to first authenticate to the
- * <i>com.sun.security.auth.module.UnixLoginModule</i>, which is
+ * <i>j86.j86.com.sun.security.auth.module.UnixLoginModule</i>, which is
  * required to succeed.  Even if the <i>UnixLoginModule</i>
  * authentication fails, the
- * <i>com.sun.security.auth.module.Krb5LoginModule</i>
+ * <i>j86.j86.com.sun.security.auth.module.Krb5LoginModule</i>
  * still gets invoked.  This helps hide the source of failure.
  * Since the <i>Krb5LoginModule</i> is <i>Optional</i>, the overall
  * authentication succeeds only if the <i>UnixLoginModule</i>
@@ -182,15 +182,15 @@ import sun.security.jca.GetInstance;
  * Java Cryptography Architecture Standard Algorithm Name Documentation</a>
  * for a list of standard Configuration types.
  *
- * @see javax.security.auth.login.LoginContext
- * @see java.security.Security security properties
+ * @see j86.j86.javax.security.auth.login.LoginContext
+ * @see j86.java.security.Security security properties
  */
 public abstract class Configuration {
 
     private static Configuration configuration;
 
-    private final java.security.AccessControlContext acc =
-            java.security.AccessController.getContext();
+    private final j86.java.security.AccessControlContext acc =
+            j86.java.security.AccessController.getContext();
 
     private static void checkPermission(String type) {
         SecurityManager sm = System.getSecurityManager();
@@ -233,12 +233,12 @@ public abstract class Configuration {
                 config_class = AccessController.doPrivileged
                     (new PrivilegedAction<String>() {
                     public String run() {
-                        return java.security.Security.getProperty
+                        return j86.java.security.Security.getProperty
                                     ("login.configuration.provider");
                     }
                 });
                 if (config_class == null) {
-                    config_class = "sun.security.provider.ConfigFile";
+                    config_class = "j86.sun.security.provider.ConfigFile";
                 }
 
                 try {

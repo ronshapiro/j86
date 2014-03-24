@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.lang.invoke;
+package j86.j86.java.lang.invoke;
 
-import java.lang.annotation.*;
+import j86.j86.java.lang.annotation.*;
 
 /**
  * Internal marker for some methods in the JSR 292 implementation.

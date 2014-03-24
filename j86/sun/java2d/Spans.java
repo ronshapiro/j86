@@ -23,13 +23,13 @@
  * questions.
  */
 
-package sun.java2d;
+package j86.sun.java2d;
 
-import java.util.Comparator;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Vector;
+import j86.java.util.Comparator;
+import j86.java.util.Collections;
+import j86.java.util.Iterator;
+import j86.java.util.List;
+import j86.java.util.Vector;
 
 /**
  * Maintains a list of half-open intervals, called Spans.

@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.net.httpserver;
+package j86.j86.sun.net.httpserver;
 
-import java.util.*;
-import com.sun.net.httpserver.*;
+import j86.java.util.*;
+import com.j86.j86.sun.net.httpserver.*;
 
 class UnmodifiableHeaders extends Headers {
 

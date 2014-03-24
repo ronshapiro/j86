@@ -23,16 +23,16 @@
  * questions.
  */
 
-package java.beans.beancontext;
+package j86.j86.java.beans.beancontext;
 
-import java.util.EventObject;
+import j86.java.util.EventObject;
 
-import java.beans.beancontext.BeanContext;
-import java.beans.beancontext.BeanContextEvent;
+import j86.j86.java.beans.beancontext.BeanContext;
+import j86.j86.java.beans.beancontext.BeanContextEvent;
 
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Iterator;
+import j86.java.util.Arrays;
+import j86.java.util.Collection;
+import j86.java.util.Iterator;
 
 /**
  * A <code>BeanContextMembershipEvent</code> encapsulates
@@ -50,9 +50,9 @@ import java.util.Iterator;
  *
  * @author      Laurence P. G. Cable
  * @since       1.2
- * @see         java.beans.beancontext.BeanContext
- * @see         java.beans.beancontext.BeanContextEvent
- * @see         java.beans.beancontext.BeanContextMembershipListener
+ * @see         j86.j86.java.beans.beancontext.BeanContext
+ * @see         j86.j86.java.beans.beancontext.BeanContextEvent
+ * @see         j86.j86.java.beans.beancontext.BeanContextMembershipListener
  */
 public class BeanContextMembershipEvent extends BeanContextEvent {
     private static final long serialVersionUID = 3499346510334590959L;

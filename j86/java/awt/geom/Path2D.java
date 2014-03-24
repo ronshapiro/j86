@@ -23,14 +23,14 @@
  * questions.
  */
 
-package java.awt.geom;
+package j86.j86.java.awt.geom;
 
-import java.awt.Shape;
-import java.awt.Rectangle;
-import sun.awt.geom.Curve;
-import java.io.Serializable;
-import java.io.StreamCorruptedException;
-import java.util.Arrays;
+import j86.java.awt.Shape;
+import j86.java.awt.Rectangle;
+import j86.j86.sun.awt.geom.Curve;
+import j86.java.io.Serializable;
+import j86.java.io.StreamCorruptedException;
+import j86.java.util.Arrays;
 
 /**
  * The {@code Path2D} class provides a simple, yet flexible
@@ -746,7 +746,7 @@ public abstract class Path2D implements Shape, Cloneable {
          *
          * @return     a clone of this instance.
          * @exception  OutOfMemoryError    if there is not enough memory.
-         * @see        java.lang.Cloneable
+         * @see        j86.java.lang.Cloneable
          * @since      1.6
          */
         public final Object clone() {
@@ -888,8 +888,8 @@ public abstract class Path2D implements Shape, Cloneable {
          *
          * @since 1.6
          */
-        private void writeObject(java.io.ObjectOutputStream s)
-            throws java.io.IOException
+        private void writeObject(j86.java.io.ObjectOutputStream s)
+            throws j86.java.io.IOException
         {
             super.writeObject(s, false);
         }
@@ -907,8 +907,8 @@ public abstract class Path2D implements Shape, Cloneable {
          *
          * @since 1.6
          */
-        private void readObject(java.io.ObjectInputStream s)
-            throws java.lang.ClassNotFoundException, java.io.IOException
+        private void readObject(j86.java.io.ObjectInputStream s)
+            throws j86.java.lang.ClassNotFoundException, j86.java.io.IOException
         {
             super.readObject(s, false);
         }
@@ -1476,7 +1476,7 @@ public abstract class Path2D implements Shape, Cloneable {
          *
          * @return     a clone of this instance.
          * @exception  OutOfMemoryError    if there is not enough memory.
-         * @see        java.lang.Cloneable
+         * @see        j86.java.lang.Cloneable
          * @since      1.6
          */
         public final Object clone() {
@@ -1614,8 +1614,8 @@ public abstract class Path2D implements Shape, Cloneable {
          *
          * @since 1.6
          */
-        private void writeObject(java.io.ObjectOutputStream s)
-            throws java.io.IOException
+        private void writeObject(j86.java.io.ObjectOutputStream s)
+            throws j86.java.io.IOException
         {
             super.writeObject(s, true);
         }
@@ -1633,8 +1633,8 @@ public abstract class Path2D implements Shape, Cloneable {
          *
          * @since 1.6
          */
-        private void readObject(java.io.ObjectInputStream s)
-            throws java.lang.ClassNotFoundException, java.io.IOException
+        private void readObject(j86.java.io.ObjectInputStream s)
+            throws j86.java.lang.ClassNotFoundException, j86.java.io.IOException
         {
             super.readObject(s, true);
         }
@@ -2070,7 +2070,7 @@ public abstract class Path2D implements Shape, Cloneable {
     public static boolean contains(PathIterator pi,
                                    double x, double y, double w, double h)
     {
-        if (java.lang.Double.isNaN(x+w) || java.lang.Double.isNaN(y+h)) {
+        if (j86.java.lang.Double.isNaN(x+w) || java.lang.Double.isNaN(y+h)) {
             /* [xy]+[wh] is NaN if any of those values are NaN,
              * or if adding the two together would produce NaN
              * by virtue of adding opposing Infinte values.
@@ -2142,7 +2142,7 @@ public abstract class Path2D implements Shape, Cloneable {
      * @since 1.6
      */
     public final boolean contains(double x, double y, double w, double h) {
-        if (java.lang.Double.isNaN(x+w) || java.lang.Double.isNaN(y+h)) {
+        if (j86.java.lang.Double.isNaN(x+w) || java.lang.Double.isNaN(y+h)) {
             /* [xy]+[wh] is NaN if any of those values are NaN,
              * or if adding the two together would produce NaN
              * by virtue of adding opposing Infinte values.
@@ -2220,7 +2220,7 @@ public abstract class Path2D implements Shape, Cloneable {
     public static boolean intersects(PathIterator pi,
                                      double x, double y, double w, double h)
     {
-        if (java.lang.Double.isNaN(x+w) || java.lang.Double.isNaN(y+h)) {
+        if (j86.java.lang.Double.isNaN(x+w) || java.lang.Double.isNaN(y+h)) {
             /* [xy]+[wh] is NaN if any of those values are NaN,
              * or if adding the two together would produce NaN
              * by virtue of adding opposing Infinte values.
@@ -2291,7 +2291,7 @@ public abstract class Path2D implements Shape, Cloneable {
      * @since 1.6
      */
     public final boolean intersects(double x, double y, double w, double h) {
-        if (java.lang.Double.isNaN(x+w) || java.lang.Double.isNaN(y+h)) {
+        if (j86.java.lang.Double.isNaN(x+w) || java.lang.Double.isNaN(y+h)) {
             /* [xy]+[wh] is NaN if any of those values are NaN,
              * or if adding the two together would produce NaN
              * by virtue of adding opposing Infinte values.
@@ -2355,7 +2355,7 @@ public abstract class Path2D implements Shape, Cloneable {
      *
      * @return     a clone of this instance.
      * @exception  OutOfMemoryError            if there is not enough memory.
-     * @see        java.lang.Cloneable
+     * @see        j86.java.lang.Cloneable
      * @since      1.6
      */
     public abstract Object clone();
@@ -2384,8 +2384,8 @@ public abstract class Path2D implements Shape, Cloneable {
     private static final byte SERIAL_SEG_CLOSE         = 0x60;
     private static final byte SERIAL_PATH_END          = 0x61;
 
-    final void writeObject(java.io.ObjectOutputStream s, boolean isdbl)
-        throws java.io.IOException
+    final void writeObject(j86.java.io.ObjectOutputStream s, boolean isdbl)
+        throws j86.java.io.IOException
     {
         s.defaultWriteObject();
 
@@ -2461,8 +2461,8 @@ public abstract class Path2D implements Shape, Cloneable {
         s.writeByte(SERIAL_PATH_END);
     }
 
-    final void readObject(java.io.ObjectInputStream s, boolean storedbl)
-        throws java.lang.ClassNotFoundException, java.io.IOException
+    final void readObject(j86.java.io.ObjectInputStream s, boolean storedbl)
+        throws j86.java.lang.ClassNotFoundException, j86.java.io.IOException
     {
         s.defaultReadObject();
 
@@ -2475,7 +2475,7 @@ public abstract class Path2D implements Shape, Cloneable {
         try {
             setWindingRule(s.readByte());
         } catch (IllegalArgumentException iae) {
-            throw new java.io.InvalidObjectException(iae.getMessage());
+            throw new j86.java.io.InvalidObjectException(iae.getMessage());
         }
 
         pointTypes = new byte[(nT < 0) ? INIT_SIZE : nT];

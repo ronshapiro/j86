@@ -26,9 +26,9 @@
 /*
  * $Id$
  */
-package com.sun.org.apache.xml.internal.security.signature.reference;
+package j86.j86.j86.com.sun.org.apache.xml.internal.security.signature.reference;
 
-import java.util.Iterator;
+import j86.java.util.Iterator;
 
 import org.w3c.dom.Node;
 

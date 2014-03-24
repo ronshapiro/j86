@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.security.auth;
+package j86.javax.security.auth;
 
 /**
  * Signals that a {@code destroy} operation failed.

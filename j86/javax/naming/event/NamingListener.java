@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.naming.event;
+package j86.j86.javax.naming.event;
 
 /**
   * This interface is the root of listener interfaces that
@@ -54,7 +54,7 @@ package javax.naming.event;
   * @see EventDirContext
   * @since 1.3
   */
-public interface NamingListener extends java.util.EventListener {
+public interface NamingListener extends j86.java.util.EventListener {
     /**
      * Called when a naming exception is thrown while attempting
      * to fire a <tt>NamingEvent</tt>.

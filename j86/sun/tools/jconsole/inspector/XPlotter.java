@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.tools.jconsole.inspector;
+package j86.j86.sun.tools.jconsole.inspector;
 
-import sun.tools.jconsole.Plotter;
-import javax.swing.JTable;
+import j86.sun.tools.jconsole.Plotter;
+import j86.javax.swing.JTable;
 
 @SuppressWarnings("serial")
 public class XPlotter extends Plotter {

@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.swing;
+package j86.sun.swing;
 
-import java.awt.GraphicsConfiguration;
-import java.awt.Image;
-import java.lang.ref.SoftReference;
-import java.util.Iterator;
-import java.util.LinkedList;
+import j86.java.awt.GraphicsConfiguration;
+import j86.java.awt.Image;
+import j86.j86.java.lang.ref.SoftReference;
+import j86.java.util.Iterator;
+import j86.java.util.LinkedList;
 
 /**
  * Cache is used to cache an image based on a set of arguments.

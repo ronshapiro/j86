@@ -23,14 +23,14 @@
  * questions.
  */
 
-package java.util.zip;
+package j86.j86.java.util.zip;
 
 /**
  * This class provides support for general purpose decompression using the
  * popular ZLIB compression library. The ZLIB compression library was
  * initially developed as part of the PNG graphics standard and is not
  * protected by patents. It is fully described in the specifications at
- * the <a href="package-summary.html#package_description">java.util.zip
+ * the <a href="package-summary.html#package_description">j86.j86.java.util.zip
  * package description</a>.
  *
  * <p>The following code fragment demonstrates a trivial compression
@@ -59,9 +59,9 @@ package java.util.zip;
  *
  *     // Decode the bytes into a String
  *     String outputString = new String(result, 0, resultLength, "UTF-8");
- * } catch(java.io.UnsupportedEncodingException ex) {
+ * } catch(j86.java.io.UnsupportedEncodingException ex) {
  *     // handle
- * } catch (java.util.zip.DataFormatException ex) {
+ * } catch (j86.j86.java.util.zip.DataFormatException ex) {
  *     // handle
  * }
  * </pre></blockquote>

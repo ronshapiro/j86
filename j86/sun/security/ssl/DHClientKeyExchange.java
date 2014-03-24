@@ -24,12 +24,12 @@
  */
 
 
-package sun.security.ssl;
+package j86.sun.security.ssl;
 
-import java.io.IOException;
-import java.io.PrintStream;
-import java.math.BigInteger;
-import javax.net.ssl.SSLHandshakeException;
+import j86.java.io.IOException;
+import j86.java.io.PrintStream;
+import j86.java.math.BigInteger;
+import j86.j86.javax.net.ssl.SSLHandshakeException;
 
 /*
  * Message used by clients to send their Diffie-Hellman public

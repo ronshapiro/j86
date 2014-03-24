@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.invoke.util;
+package j86.j86.sun.invoke.util;
 
 public enum Wrapper {
     BOOLEAN(Boolean.class, boolean.class, 'Z', (Boolean)false, new boolean[0], Format.unsigned(1)),
@@ -64,7 +64,7 @@ public enum Wrapper {
     /** For debugging, give the details of this wrapper. */
     public String detailString() {
         return wrapperSimpleName+
-                java.util.Arrays.asList(wrapperType, primitiveType,
+                j86.java.util.Arrays.asList(wrapperType, primitiveType,
                 basicTypeChar, zero,
                 "0x"+Integer.toHexString(format));
     }
@@ -310,7 +310,7 @@ public enum Wrapper {
     //   for signature chars c, do (c + (c >> 1)) % 16
     //   for primitive type names n, do (n[0] + n[2]) % 16
     // The type name hash works for both primitive and wrapper names.
-    // You can add "java/lang/Object" to the primitive names.
+    // You can add "j86.java.lang/Object" to the primitive names.
     // But you add the wrapper name Object, use (n[2] + (3*n[1])) % 16.
     private static final Wrapper[] FROM_PRIM = new Wrapper[16];
     private static final Wrapper[] FROM_WRAP = new Wrapper[16];
@@ -322,7 +322,7 @@ public enum Wrapper {
     }
     private static int hashWrap(Class<?> x) {
         String xn = x.getName();
-        final int offset = 10; assert(offset == "java.lang.".length());
+        final int offset = 10; assert(offset == "j86.java.lang.".length());
         if (xn.length() < offset+3)  return 0;
         return (3*xn.charAt(offset+1) + xn.charAt(offset+2)) % 16;
     }
@@ -341,7 +341,7 @@ public enum Wrapper {
             FROM_WRAP[wi] = w;
             FROM_CHAR[ci] = w;
         }
-        //assert(jdk.sun.invoke.util.WrapperTest.test(false));
+        //assert(jdk.j86.j86.sun.invoke.util.WrapperTest.test(false));
     }
 
     /** What is the primitive type wrapped by this wrapper? */
@@ -587,7 +587,7 @@ public enum Wrapper {
 
     // primitive array support
     public Object makeArray(int len) {
-        return java.lang.reflect.Array.newInstance(primitiveType, len);
+        return j86.j86.j86.java.lang.reflect.Array.newInstance(primitiveType, len);
     }
     public Class<?> arrayType() {
         return emptyArray.getClass();
@@ -598,14 +598,14 @@ public enum Wrapper {
         for (int i = 0; i < length; i++) {
             Object value = values[i+vpos];
             value = convert(value, primitiveType);
-            java.lang.reflect.Array.set(a, i+apos, value);
+            j86.j86.j86.java.lang.reflect.Array.set(a, i+apos, value);
         }
     }
     public void copyArrayBoxing(Object a, int apos, Object[] values, int vpos, int length) {
         if (a.getClass() != arrayType())
             arrayType().cast(a);  // throw NPE or CCE if bad type
         for (int i = 0; i < length; i++) {
-            Object value = java.lang.reflect.Array.get(a, i+apos);
+            Object value = j86.j86.j86.java.lang.reflect.Array.get(a, i+apos);
             //Already done: value = convert(value, primitiveType);
             assert(value.getClass() == wrapperType);
             values[i+vpos] = value;

@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.net.dns;
+package j86.j86.sun.net.dns;
 
-import java.util.List;
+import j86.java.util.List;
 
 /**
  * The configuration of the client resolver.
@@ -53,7 +53,7 @@ public abstract class ResolverConfiguration {
     public static ResolverConfiguration open() {
         synchronized (lock) {
             if (provider == null) {
-                provider = new sun.net.dns.ResolverConfigurationImpl();
+                provider = new j86.j86.sun.net.dns.ResolverConfigurationImpl();
             }
             return provider;
         }
@@ -62,7 +62,7 @@ public abstract class ResolverConfiguration {
     /**
      * Returns a list corresponding to the domain search path. The
      * list is ordered by the search order used for host name lookup.
-     * Each element in the list returns a {@link java.lang.String}
+     * Each element in the list returns a {@link j86.java.lang.String}
      * containing a domain name or suffix.
      *
      * @return list of domain names
@@ -71,7 +71,7 @@ public abstract class ResolverConfiguration {
 
     /**
      * Returns a list of name servers used for host name lookup.
-     * Each element in the list returns a {@link java.lang.String}
+     * Each element in the list returns a {@link j86.java.lang.String}
      * containing the textual representation of the IP address of
      * the name server.
      *

@@ -23,13 +23,13 @@
  * questions.
  */
 
-package sun.security.ssl;
+package j86.sun.security.ssl;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collection;
+import j86.java.io.IOException;
+import j86.java.util.ArrayList;
+import j86.java.util.Collection;
 
-import javax.net.ssl.SSLProtocolException;
+import j86.j86.javax.net.ssl.SSLProtocolException;
 
 /*
  * [RFC5246] The client uses the "signature_algorithms" extension to

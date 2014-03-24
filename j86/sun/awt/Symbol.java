@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.awt;
+package j86.sun.awt;
 
-import java.nio.ByteBuffer;
-import java.nio.CharBuffer;
-import java.nio.charset.*;
+import j86.java.nio.ByteBuffer;
+import j86.java.nio.CharBuffer;
+import j86.j86.java.nio.charset.*;
 
 public class Symbol extends Charset {
     public Symbol () {

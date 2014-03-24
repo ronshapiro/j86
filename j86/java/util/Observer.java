@@ -22,14 +22,14 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.util;
+package j86.java.util;
 
 /**
  * A class can implement the <code>Observer</code> interface when it
  * wants to be informed of changes in observable objects.
  *
  * @author  Chris Warth
- * @see     java.util.Observable
+ * @see     j86.java.util.Observable
  * @since   JDK1.0
  */
 public interface Observer {

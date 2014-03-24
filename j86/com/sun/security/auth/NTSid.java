@@ -23,9 +23,9 @@
  * questions.
  */
 
-package com.sun.security.auth;
+package j86.com.sun.security.auth;
 
-import java.security.Principal;
+import j86.java.security.Principal;
 
 /**
  * <p> This class implements the <code>Principal</code> interface
@@ -44,11 +44,11 @@ import java.security.Principal;
  * on how to achieve this.  Authorization decisions can then be based upon
  * the Principals associated with a <code>Subject</code>.
  *
- * @see java.security.Principal
- * @see javax.security.auth.Subject
+ * @see j86.java.security.Principal
+ * @see j86.javax.security.auth.Subject
  */
 @jdk.Exported
-public class NTSid implements Principal, java.io.Serializable {
+public class NTSid implements Principal, j86.java.io.Serializable {
 
     private static final long serialVersionUID = 4412290580770249885L;
 
@@ -72,18 +72,18 @@ public class NTSid implements Principal, java.io.Serializable {
      */
     public NTSid (String stringSid) {
         if (stringSid == null) {
-            java.text.MessageFormat form = new java.text.MessageFormat
-                (sun.security.util.ResourcesMgr.getString
+            j86.java.text.MessageFormat form = new java.text.MessageFormat
+                (j86.sun.security.util.ResourcesMgr.getString
                         ("invalid.null.input.value",
-                        "sun.security.util.AuthResources"));
+                        "j86.sun.security.util.AuthResources"));
             Object[] source = {"stringSid"};
             throw new NullPointerException(form.format(source));
         }
         if (stringSid.length() == 0) {
             throw new IllegalArgumentException
-                (sun.security.util.ResourcesMgr.getString
+                (j86.sun.security.util.ResourcesMgr.getString
                         ("Invalid.NTSid.value",
-                        "sun.security.util.AuthResources"));
+                        "j86.sun.security.util.AuthResources"));
         }
         sid = new String(stringSid);
     }
@@ -107,10 +107,10 @@ public class NTSid implements Principal, java.io.Serializable {
      * @return a string representation of this <code>NTSid</code>.
      */
     public String toString() {
-        java.text.MessageFormat form = new java.text.MessageFormat
-                (sun.security.util.ResourcesMgr.getString
+        j86.java.text.MessageFormat form = new java.text.MessageFormat
+                (j86.sun.security.util.ResourcesMgr.getString
                         ("NTSid.name",
-                        "sun.security.util.AuthResources"));
+                        "j86.sun.security.util.AuthResources"));
         Object[] source = {sid};
         return form.format(source);
     }

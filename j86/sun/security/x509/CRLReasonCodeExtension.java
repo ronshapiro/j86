@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.security.x509;
+package j86.sun.security.x509;
 
-import java.io.IOException;
-import java.io.OutputStream;
-import java.security.cert.CRLReason;
-import java.util.Enumeration;
+import j86.java.io.IOException;
+import j86.java.io.OutputStream;
+import j86.j86.java.security.cert.CRLReason;
+import j86.java.util.Enumeration;
 
-import sun.security.util.*;
+import j86.sun.security.util.*;
 
 /**
  * The reasonCode is a non-critical CRL entry extension that identifies

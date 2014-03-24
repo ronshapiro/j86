@@ -24,23 +24,23 @@
  */
 
 
-package com.sun.jmx.snmp.daemon;
+package j86.j86.j86.com.sun.jmx.snmp.daemon;
 
 
 
 // java import
 //
-import java.io.*;
-import java.util.logging.Level;
+import j86.java.io.*;
+import j86.j86.java.util.logging.Level;
 
 // jmx import
 //
-import javax.management.MBeanServer;
-import javax.management.ObjectName;
+import j86.javax.management.MBeanServer;
+import j86.javax.management.ObjectName;
 
 // jmx RI import
 //
-import static com.sun.jmx.defaults.JmxProperties.SNMP_ADAPTOR_LOGGER;
+import static j86.com.sun.jmx.defaults.JmxProperties.SNMP_ADAPTOR_LOGGER;
 
 /**
  * The <CODE>ClientHandler</CODE> class is the base class of each

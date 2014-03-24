@@ -20,7 +20,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.sun.org.apache.xml.internal.security.utils;
+package j86.j86.com.sun.org.apache.xml.internal.security.utils;
 
 /**
  * Provides all constants and some translation functions for i18n.
@@ -41,7 +41,7 @@ public class Constants {
 
     /** Field exceptionMessagesResourceBundleDir */
     public static final String exceptionMessagesResourceBundleDir =
-        "com/sun/org/apache/xml/internal/security/resource";
+        "j86.com.sun.org.apache.xml.internal.security/resource";
 
     /** Field exceptionMessagesResourceBundleBase is the location of the <CODE>ResourceBundle</CODE> */
     public static final String exceptionMessagesResourceBundleBase =

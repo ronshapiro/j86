@@ -23,23 +23,23 @@
  * questions.
  */
 
-package java.util.jar;
+package j86.j86.java.util.jar;
 
-import java.util.zip.*;
-import java.io.*;
-import sun.security.util.ManifestEntryVerifier;
-import sun.misc.JarIndex;
+import j86.j86.java.util.zip.*;
+import j86.java.io.*;
+import j86.sun.security.util.ManifestEntryVerifier;
+import j86.sun.misc.JarIndex;
 
 /**
  * The <code>JarInputStream</code> class is used to read the contents of
  * a JAR file from any input stream. It extends the class
- * <code>java.util.zip.ZipInputStream</code> with support for reading
+ * <code>j86.j86.java.util.zip.ZipInputStream</code> with support for reading
  * an optional <code>Manifest</code> entry. The <code>Manifest</code>
  * can be used to store meta-information about the JAR file and its entries.
  *
  * @author  David Connelly
  * @see     Manifest
- * @see     java.util.zip.ZipInputStream
+ * @see     j86.j86.java.util.zip.ZipInputStream
  * @since   1.2
  */
 public

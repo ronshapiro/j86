@@ -32,7 +32,7 @@
  */
 
 
-package com.sun.tools.example.debug.bdi;
+package j86.com.sun.tools.example.debug.bdi;
 
 public abstract class BreakpointSpec extends EventRequestSpec {
 

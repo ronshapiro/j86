@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.nio.ch.sctp;
+package j86.j86.j86.j86.sun.nio.ch.sctp;
 
-import java.net.SocketAddress;
-import com.sun.nio.sctp.MessageInfo;
-import com.sun.nio.sctp.Association;
+import j86.java.net.SocketAddress;
+import j86.com.j86.sun.nio.sctp.MessageInfo;
+import j86.com.j86.sun.nio.sctp.Association;
 
 /**
  * An implementation of a MessageInfo.

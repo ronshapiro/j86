@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.font;
+package j86.sun.font;
 
-import java.awt.Font;
-import java.util.Locale;
-import java.util.TreeMap;
+import j86.java.awt.Font;
+import j86.java.util.Locale;
+import j86.java.util.TreeMap;
 
 /**
  * This is an extension of the {@link FontManager} interface which has to

@@ -27,11 +27,11 @@
  * Basic .aiff audio handler.
  * @author  Jeff Nisewanger
  */
-package sun.net.www.content.audio;
+package j86.j86.j86.sun.net.www.content.audio;
 
-import java.net.*;
-import java.io.IOException;
-import sun.applet.AppletAudioClip;
+import j86.java.net.*;
+import j86.java.io.IOException;
+import j86.sun.applet.AppletAudioClip;
 
 /**
  * Returns an AppletAudioClip object.

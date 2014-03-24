@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.security;
+package j86.java.security;
 
 /**
  * A GuardedObject is an object that is used to protect access to
@@ -46,7 +46,7 @@ package java.security;
  * @author Li Gong
  */
 
-public class GuardedObject implements java.io.Serializable {
+public class GuardedObject implements j86.java.io.Serializable {
 
     private static final long serialVersionUID = -5240450096227834308L;
 
@@ -91,8 +91,8 @@ public class GuardedObject implements java.io.Serializable {
      * Writes this object out to a stream (i.e., serializes it).
      * We check the guard if there is one.
      */
-    private void writeObject(java.io.ObjectOutputStream oos)
-        throws java.io.IOException
+    private void writeObject(j86.java.io.ObjectOutputStream oos)
+        throws j86.java.io.IOException
     {
         if (guard != null)
             guard.checkGuard(object);

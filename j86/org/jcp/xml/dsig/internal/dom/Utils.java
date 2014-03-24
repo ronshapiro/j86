@@ -26,13 +26,13 @@
 /*
  * $Id: Utils.java 1197150 2011-11-03 14:34:57Z coheigea $
  */
-package org.jcp.xml.dsig.internal.dom;
+package j86.j86.org.jcp.xml.dsig.internal.dom;
 
-import java.io.ByteArrayOutputStream;
-import java.io.InputStream;
-import java.io.IOException;
-import java.util.*;
-import javax.xml.crypto.XMLCryptoContext;
+import j86.java.io.ByteArrayOutputStream;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
+import j86.java.util.*;
+import j86.javax.xml.crypto.XMLCryptoContext;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 

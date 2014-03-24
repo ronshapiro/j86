@@ -29,12 +29,12 @@
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
 
-package sun.security.krb5;
+package j86.sun.security.krb5;
 
-import sun.security.krb5.EncryptionKey;
-import sun.security.krb5.internal.*;
-import sun.security.krb5.internal.crypto.*;
-import java.io.IOException;
+import j86.sun.security.krb5.EncryptionKey;
+import j86.j86.sun.security.krb5.internal.*;
+import j86.j86.j86.sun.security.krb5.internal.crypto.*;
+import j86.java.io.IOException;
 
 class KrbSafe extends KrbAppMessage {
 

@@ -23,20 +23,20 @@
  * questions.
  */
 
-package sun.security.pkcs11;
+package j86.j86.sun.security.pkcs11;
 
-import java.util.*;
-import java.nio.ByteBuffer;
+import j86.java.util.*;
+import j86.java.nio.ByteBuffer;
 
-import java.security.*;
-import java.security.spec.AlgorithmParameterSpec;
+import j86.java.security.*;
+import j86.j86.java.security.spec.AlgorithmParameterSpec;
 
-import javax.crypto.MacSpi;
+import j86.javax.crypto.MacSpi;
 
-import sun.nio.ch.DirectBuffer;
+import j86.j86.j86.sun.nio.ch.DirectBuffer;
 
-import sun.security.pkcs11.wrapper.*;
-import static sun.security.pkcs11.wrapper.PKCS11Constants.*;
+import j86.j86.j86.sun.security.pkcs11.wrapper.*;
+import static j86.j86.j86.sun.security.pkcs11.wrapper.PKCS11Constants.*;
 
 /**
  * MAC implementation class. This class currently supports HMAC using

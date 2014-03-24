@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.management.counter;
+package j86.j86.sun.management.counter;
 
 /**
  * Provides a typesafe enumeration for describing units of measurement
@@ -31,7 +31,7 @@ package sun.management.counter;
  *
  * @author   Brian Doherty
  */
-public class Units implements java.io.Serializable {
+public class Units implements j86.java.io.Serializable {
 
     /* The enumeration values for this typesafe enumeration must be
      * kept in synchronization with the Units enum in the perfData.hpp file

@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.java2d;
+package j86.sun.java2d;
 
-import sun.awt.image.SunVolatileImage;
-import sun.awt.image.VolatileSurfaceManager;
+import j86.j86.j86.sun.awt.image.SunVolatileImage;
+import j86.j86.j86.sun.awt.image.VolatileSurfaceManager;
 
 /**
  * This factory creates platform specific VolatileSurfaceManager

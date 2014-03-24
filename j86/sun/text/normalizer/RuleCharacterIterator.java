@@ -43,9 +43,9 @@
  **********************************************************************
  */
 
-package sun.text.normalizer;
+package j86.j86.sun.text.normalizer;
 
-import java.text.ParsePosition;
+import j86.java.text.ParsePosition;
 
 /**
  * An iterator that returns 32-bit code points.  This class is deliberately

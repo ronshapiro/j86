@@ -29,19 +29,19 @@
 // NO WARRANTY!  This class is in the public domain.
 // $Id: DefaultHandler.java,v 1.3 2006/04/13 02:06:32 jeffsuttor Exp $
 
-package jdk.internal.org.xml.sax.helpers;
+package j86.j86.jdk.internal.org.xml.sax.helpers;
 
-import java.io.IOException;
+import j86.java.io.IOException;
 
-import jdk.internal.org.xml.sax.InputSource;
-import jdk.internal.org.xml.sax.Locator;
-import jdk.internal.org.xml.sax.Attributes;
-import jdk.internal.org.xml.sax.EntityResolver;
-import jdk.internal.org.xml.sax.DTDHandler;
-import jdk.internal.org.xml.sax.ContentHandler;
-import jdk.internal.org.xml.sax.ErrorHandler;
-import jdk.internal.org.xml.sax.SAXException;
-import jdk.internal.org.xml.sax.SAXParseException;
+import j86.jdk.internal.org.xml.sax.InputSource;
+import j86.jdk.internal.org.xml.sax.Locator;
+import j86.jdk.internal.org.xml.sax.Attributes;
+import j86.jdk.internal.org.xml.sax.EntityResolver;
+import j86.jdk.internal.org.xml.sax.DTDHandler;
+import j86.jdk.internal.org.xml.sax.ContentHandler;
+import j86.jdk.internal.org.xml.sax.ErrorHandler;
+import j86.jdk.internal.org.xml.sax.SAXException;
+import j86.jdk.internal.org.xml.sax.SAXParseException;
 
 
 /**
@@ -104,7 +104,7 @@ public class DefaultHandler
      *                 document.
      * @return The new input source, or null to require the
      *         default behaviour.
-     * @exception java.io.IOException If there is an error setting
+     * @exception j86.java.io.IOException If there is an error setting
      *            up the new input source.
      * @exception org.xml.sax.SAXException Any SAX exception, possibly
      *            wrapping another exception.

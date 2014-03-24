@@ -30,10 +30,10 @@
  * at JavaSoft/Sun.
  */
 
-package com.sun.tools.hat.internal.util;
+package j86.j86.com.sun.tools.hat.internal.util;
 
-import java.util.Enumeration;
-import java.util.NoSuchElementException;
+import j86.java.util.Enumeration;
+import j86.java.util.NoSuchElementException;
 
 public class CompositeEnumeration implements Enumeration {
     Enumeration e1;

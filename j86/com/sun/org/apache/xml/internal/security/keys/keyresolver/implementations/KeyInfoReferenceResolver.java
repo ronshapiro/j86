@@ -2,32 +2,32 @@
  * reserved comment block
  * DO NOT REMOVE OR ALTER!
  */
-package com.sun.org.apache.xml.internal.security.keys.keyresolver.implementations;
+package j86.j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.implementations;
 
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.security.PrivateKey;
-import java.security.PublicKey;
-import java.security.cert.X509Certificate;
+import j86.java.io.ByteArrayInputStream;
+import j86.java.io.IOException;
+import j86.java.security.PrivateKey;
+import j86.java.security.PublicKey;
+import j86.j86.java.security.cert.X509Certificate;
 
-import javax.crypto.SecretKey;
+import j86.javax.crypto.SecretKey;
 import javax.xml.XMLConstants;
 import javax.xml.namespace.QName;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
-import com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
-import com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
-import com.sun.org.apache.xml.internal.security.keys.KeyInfo;
-import com.sun.org.apache.xml.internal.security.keys.content.KeyInfoReference;
-import com.sun.org.apache.xml.internal.security.keys.keyresolver.KeyResolverException;
-import com.sun.org.apache.xml.internal.security.keys.keyresolver.KeyResolverSpi;
-import com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver;
-import com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
-import com.sun.org.apache.xml.internal.security.utils.Constants;
-import com.sun.org.apache.xml.internal.security.utils.XMLUtils;
-import com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolver;
+import j86.j86.com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
+import j86.j86.com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+import j86.j86.com.sun.org.apache.xml.internal.security.keys.KeyInfo;
+import j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.content.KeyInfoReference;
+import j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.KeyResolverException;
+import j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.KeyResolverSpi;
+import j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver;
+import j86.j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.Constants;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
+import j86.j86.j86.com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolver;
 import org.w3c.dom.Attr;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -42,8 +42,8 @@ import org.xml.sax.SAXException;
 public class KeyInfoReferenceResolver extends KeyResolverSpi {
 
     /** {@link org.apache.commons.logging} logging facility */
-    private static java.util.logging.Logger log =
-        java.util.logging.Logger.getLogger(KeyInfoReferenceResolver.class.getName());
+    private static j86.j86.java.util.logging.Logger log =
+        j86.j86.java.util.logging.Logger.getLogger(KeyInfoReferenceResolver.class.getName());
 
     /** {@inheritDoc}. */
     public boolean engineCanResolve(Element element, String baseURI, StorageResolver storage) {
@@ -54,8 +54,8 @@ public class KeyInfoReferenceResolver extends KeyResolverSpi {
     public PublicKey engineLookupAndResolvePublicKey(Element element, String baseURI, StorageResolver storage)
         throws KeyResolverException {
 
-        if (log.isLoggable(java.util.logging.Level.FINE)) {
-            log.log(java.util.logging.Level.FINE, "Can I resolve " + element.getTagName());
+        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+            log.log(j86.j86.java.util.logging.Level.FINE, "Can I resolve " + element.getTagName());
         }
 
         if (!engineCanResolve(element, baseURI, storage)) {
@@ -68,8 +68,8 @@ public class KeyInfoReferenceResolver extends KeyResolverSpi {
                 return referent.getPublicKey();
             }
         } catch (XMLSecurityException e) {
-            if (log.isLoggable(java.util.logging.Level.FINE)) {
-                log.log(java.util.logging.Level.FINE, "XMLSecurityException", e);
+            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                log.log(j86.j86.java.util.logging.Level.FINE, "XMLSecurityException", e);
             }
         }
 
@@ -80,8 +80,8 @@ public class KeyInfoReferenceResolver extends KeyResolverSpi {
     public X509Certificate engineLookupResolveX509Certificate(Element element, String baseURI, StorageResolver storage)
         throws KeyResolverException {
 
-        if (log.isLoggable(java.util.logging.Level.FINE)) {
-            log.log(java.util.logging.Level.FINE, "Can I resolve " + element.getTagName());
+        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+            log.log(j86.j86.java.util.logging.Level.FINE, "Can I resolve " + element.getTagName());
         }
 
         if (!engineCanResolve(element, baseURI, storage)) {
@@ -94,8 +94,8 @@ public class KeyInfoReferenceResolver extends KeyResolverSpi {
                 return referent.getX509Certificate();
             }
         } catch (XMLSecurityException e) {
-            if (log.isLoggable(java.util.logging.Level.FINE)) {
-                log.log(java.util.logging.Level.FINE, "XMLSecurityException", e);
+            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                log.log(j86.j86.java.util.logging.Level.FINE, "XMLSecurityException", e);
             }
         }
 
@@ -106,8 +106,8 @@ public class KeyInfoReferenceResolver extends KeyResolverSpi {
     public SecretKey engineLookupAndResolveSecretKey(Element element, String baseURI, StorageResolver storage)
         throws KeyResolverException {
 
-        if (log.isLoggable(java.util.logging.Level.FINE)) {
-            log.log(java.util.logging.Level.FINE, "Can I resolve " + element.getTagName());
+        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+            log.log(j86.j86.java.util.logging.Level.FINE, "Can I resolve " + element.getTagName());
         }
 
         if (!engineCanResolve(element, baseURI, storage)) {
@@ -120,8 +120,8 @@ public class KeyInfoReferenceResolver extends KeyResolverSpi {
                 return referent.getSecretKey();
             }
         } catch (XMLSecurityException e) {
-            if (log.isLoggable(java.util.logging.Level.FINE)) {
-                log.log(java.util.logging.Level.FINE, "XMLSecurityException", e);
+            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                log.log(j86.j86.java.util.logging.Level.FINE, "XMLSecurityException", e);
             }
         }
 
@@ -132,8 +132,8 @@ public class KeyInfoReferenceResolver extends KeyResolverSpi {
     public PrivateKey engineLookupAndResolvePrivateKey(Element element, String baseURI, StorageResolver storage)
         throws KeyResolverException {
 
-        if (log.isLoggable(java.util.logging.Level.FINE)) {
-            log.log(java.util.logging.Level.FINE, "Can I resolve " + element.getTagName());
+        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+            log.log(j86.j86.java.util.logging.Level.FINE, "Can I resolve " + element.getTagName());
         }
 
         if (!engineCanResolve(element, baseURI, storage)) {
@@ -146,8 +146,8 @@ public class KeyInfoReferenceResolver extends KeyResolverSpi {
                 return referent.getPrivateKey();
             }
         } catch (XMLSecurityException e) {
-            if (log.isLoggable(java.util.logging.Level.FINE)) {
-                log.log(java.util.logging.Level.FINE, "XMLSecurityException", e);
+            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                log.log(j86.j86.java.util.logging.Level.FINE, "XMLSecurityException", e);
             }
         }
 
@@ -173,14 +173,14 @@ public class KeyInfoReferenceResolver extends KeyResolverSpi {
         try {
             referentElement = obtainReferenceElement(resource);
         } catch (Exception e) {
-            if (log.isLoggable(java.util.logging.Level.FINE)) {
-                log.log(java.util.logging.Level.FINE, "XMLSecurityException", e);
+            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                log.log(j86.j86.java.util.logging.Level.FINE, "XMLSecurityException", e);
             }
             return null;
         }
 
         if (referentElement == null) {
-            log.log(java.util.logging.Level.FINE, "De-reference of KeyInfoReference URI returned null: " + uriAttr.getValue());
+            log.log(j86.j86.java.util.logging.Level.FINE, "De-reference of KeyInfoReference URI returned null: " + uriAttr.getValue());
             return null;
         }
 
@@ -253,7 +253,7 @@ public class KeyInfoReferenceResolver extends KeyResolverSpi {
         if (resource.isElement()){
             e = (Element) resource.getSubNode();
         } else if (resource.isNodeSet()) {
-            log.log(java.util.logging.Level.FINE, "De-reference of KeyInfoReference returned an unsupported NodeSet");
+            log.log(j86.j86.java.util.logging.Level.FINE, "De-reference of KeyInfoReference returned an unsupported NodeSet");
             return null;
         } else {
             // Retrieved resource is a byte stream

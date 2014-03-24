@@ -23,15 +23,15 @@
  * questions.
  */
 
-package sun.util.locale.provider;
+package j86.j86.j86.sun.util.locale.provider;
 
-import java.util.Locale;
-import java.util.Set;
-import java.util.spi.CurrencyNameProvider;
+import j86.java.util.Locale;
+import j86.java.util.Set;
+import j86.j86.java.util.spi.CurrencyNameProvider;
 
 /**
  * Concrete implementation of the
- * {@link java.util.spi.CurrencyNameProvider CurrencyNameProvider} class
+ * {@link j86.j86.java.util.spi.CurrencyNameProvider CurrencyNameProvider} class
  * for the JRE LocaleProviderAdapter.
  *
  * @author Naoto Sato
@@ -81,9 +81,9 @@ public class CurrencyNameProviderImpl extends CurrencyNameProvider
      * @exception IllegalArgumentException if <code>currencyCode</code> is not in
      *     the form of three upper-case letters, or <code>locale</code> isn't
      *     one of the locales returned from
-     *     {@link java.util.spi.LocaleServiceProvider#getAvailableLocales()
+     *     {@link j86.j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
      *     getAvailableLocales()}.
-     * @see java.util.Currency#getSymbol(java.util.Locale)
+     * @see j86.java.util.Currency#getSymbol(java.util.Locale)
      */
     @Override
     public String getSymbol(String currencyCode, Locale locale) {
@@ -103,7 +103,7 @@ public class CurrencyNameProviderImpl extends CurrencyNameProvider
      * @exception IllegalArgumentException if <code>currencyCode</code> is not in
      *     the form of three upper-case letters, or <code>locale</code> isn't
      *     one of the locales returned from
-     *     {@link java.util.spi.LocaleServiceProvider#getAvailableLocales()
+     *     {@link j86.j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
      *     getAvailableLocales()}.
      * @exception NullPointerException if <code>currencyCode</code> or
      *     <code>locale</code> is <code>null</code>

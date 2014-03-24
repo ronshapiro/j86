@@ -23,23 +23,23 @@
  * questions.
  */
 
-package javax.swing.plaf.metal;
+package j86.j86.j86.javax.swing.plaf.metal;
 
-import javax.swing.*;
-import javax.swing.border.*;
-import javax.swing.plaf.*;
-import javax.swing.plaf.basic.BasicBorders;
-import javax.swing.text.JTextComponent;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.border.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.j86.javax.swing.plaf.basic.BasicBorders;
+import j86.j86.javax.swing.text.JTextComponent;
 
-import java.awt.Component;
-import java.awt.Insets;
-import java.awt.Color;
-import java.awt.Dialog;
-import java.awt.Frame;
-import java.awt.Graphics;
-import java.awt.Window;
+import j86.java.awt.Component;
+import j86.java.awt.Insets;
+import j86.java.awt.Color;
+import j86.java.awt.Dialog;
+import j86.java.awt.Frame;
+import j86.java.awt.Graphics;
+import j86.java.awt.Window;
 
-import sun.swing.StringUIClientPropertyKey;
+import j86.sun.swing.StringUIClientPropertyKey;
 
 
 /**
@@ -924,7 +924,7 @@ public class MetalBorders {
      * Border for a Table Header
      * @since 1.3
      */
-    public static class TableHeaderBorder extends javax.swing.border.AbstractBorder {
+    public static class TableHeaderBorder extends j86.j86.javax.swing.border.AbstractBorder {
         protected Insets editorBorderInsets = new Insets( 2, 2, 2, 0 );
 
         public void paintBorder(Component c, Graphics g, int x, int y, int w, int h) {

@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.lang.annotation;
+package j86.j86.java.lang.annotation;
 
 /**
- * The annotation type {@code java.lang.annotation.Repeatable} is
+ * The annotation type {@code j86.j86.java.lang.annotation.Repeatable} is
  * used to indicate that the annotation type whose declaration it
  * (meta-)annotates is <em>repeatable</em>. The value of
  * {@code @Repeatable} indicates the <em>containing annotation

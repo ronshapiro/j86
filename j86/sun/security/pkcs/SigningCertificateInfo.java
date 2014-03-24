@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.security.pkcs;
+package j86.sun.security.pkcs;
 
-import java.io.IOException;
-import java.util.ArrayList;
+import j86.java.io.IOException;
+import j86.java.util.ArrayList;
 
-import sun.misc.HexDumpEncoder;
-import sun.security.util.DerInputStream;
-import sun.security.util.DerValue;
-import sun.security.x509.GeneralNames;
-import sun.security.x509.SerialNumber;
+import j86.sun.misc.HexDumpEncoder;
+import j86.sun.security.util.DerInputStream;
+import j86.sun.security.util.DerValue;
+import j86.sun.security.x509.GeneralNames;
+import j86.sun.security.x509.SerialNumber;
 
 /**
  * This class represents a signing certificate attribute.

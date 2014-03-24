@@ -56,22 +56,22 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-package jdk.internal.org.objectweb.asm.util;
+package j86.j86.jdk.internal.org.objectweb.asm.util;
 
-import java.io.FileInputStream;
-import java.io.PrintWriter;
-import java.util.HashMap;
-import java.util.Map;
+import j86.java.io.FileInputStream;
+import j86.java.io.PrintWriter;
+import j86.java.util.HashMap;
+import j86.java.util.Map;
 
-import jdk.internal.org.objectweb.asm.Attribute;
-import jdk.internal.org.objectweb.asm.ClassReader;
-import jdk.internal.org.objectweb.asm.Handle;
-import jdk.internal.org.objectweb.asm.Label;
-import jdk.internal.org.objectweb.asm.Opcodes;
-import jdk.internal.org.objectweb.asm.Type;
-import jdk.internal.org.objectweb.asm.TypePath;
-import jdk.internal.org.objectweb.asm.TypeReference;
-import jdk.internal.org.objectweb.asm.signature.SignatureReader;
+import j86.jdk.internal.org.objectweb.asm.Attribute;
+import j86.jdk.internal.org.objectweb.asm.ClassReader;
+import j86.jdk.internal.org.objectweb.asm.Handle;
+import j86.jdk.internal.org.objectweb.asm.Label;
+import j86.jdk.internal.org.objectweb.asm.Opcodes;
+import j86.jdk.internal.org.objectweb.asm.Type;
+import j86.jdk.internal.org.objectweb.asm.TypePath;
+import j86.jdk.internal.org.objectweb.asm.TypeReference;
+import j86.j86.jdk.internal.org.objectweb.asm.signature.SignatureReader;
 
 /**
  * A {@link Printer} that prints a disassembled view of the classes it visits.
@@ -275,7 +275,7 @@ public class Textifier extends Printer {
         }
         appendDescriptor(INTERNAL_NAME, name);
 
-        if (superName != null && !"java/lang/Object".equals(superName)) {
+        if (superName != null && !"j86.java.lang/Object".equals(superName)) {
             buf.append(" extends ");
             appendDescriptor(INTERNAL_NAME, superName);
             buf.append(' ');

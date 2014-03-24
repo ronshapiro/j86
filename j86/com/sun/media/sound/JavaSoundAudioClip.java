@@ -23,32 +23,32 @@
  * questions.
  */
 
-package com.sun.media.sound;
+package j86.com.sun.media.sound;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.BufferedInputStream;
-import java.io.ByteArrayOutputStream;
-import java.applet.AudioClip;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.io.BufferedInputStream;
+import j86.java.io.ByteArrayOutputStream;
+import j86.java.applet.AudioClip;
 
-import javax.sound.sampled.AudioSystem;
-import javax.sound.sampled.Clip;
-import javax.sound.sampled.AudioInputStream;
-import javax.sound.sampled.AudioFormat;
-import javax.sound.sampled.DataLine;
-import javax.sound.sampled.SourceDataLine;
-import javax.sound.sampled.LineEvent;
-import javax.sound.sampled.LineListener;
-import javax.sound.sampled.UnsupportedAudioFileException;
+import j86.javax.sound.sampled.AudioSystem;
+import j86.javax.sound.sampled.Clip;
+import j86.javax.sound.sampled.AudioInputStream;
+import j86.javax.sound.sampled.AudioFormat;
+import j86.javax.sound.sampled.DataLine;
+import j86.javax.sound.sampled.SourceDataLine;
+import j86.javax.sound.sampled.LineEvent;
+import j86.javax.sound.sampled.LineListener;
+import j86.javax.sound.sampled.UnsupportedAudioFileException;
 
-import javax.sound.midi.MidiSystem;
-import javax.sound.midi.MidiFileFormat;
-import javax.sound.midi.MetaMessage;
-import javax.sound.midi.Sequence;
-import javax.sound.midi.Sequencer;
-import javax.sound.midi.InvalidMidiDataException;
-import javax.sound.midi.MidiUnavailableException;
-import javax.sound.midi.MetaEventListener;
+import j86.javax.sound.midi.MidiSystem;
+import j86.javax.sound.midi.MidiFileFormat;
+import j86.javax.sound.midi.MetaMessage;
+import j86.javax.sound.midi.Sequence;
+import j86.javax.sound.midi.Sequencer;
+import j86.javax.sound.midi.InvalidMidiDataException;
+import j86.javax.sound.midi.MidiUnavailableException;
+import j86.javax.sound.midi.MetaEventListener;
 
 /**
  * Java Sound audio clip;

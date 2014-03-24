@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.net;
+package j86.java.net;
 
-import java.lang.annotation.Native;
+import j86.j86.java.lang.annotation.Native;
 
 /**
  * Interface of methods to get/set socket options.  This interface is
@@ -56,10 +56,10 @@ public interface SocketOptions {
      * s.setOption(SO_LINGER, new Integer(10));
      *    // OK - set SO_LINGER w/ timeout of 10 sec.
      * s.setOption(SO_LINGER, new Double(10));
-     *    // ERROR - expects java.lang.Integer
+     *    // ERROR - expects j86.java.lang.Integer
      *</PRE>
      * If the requested option is binary, it can be set using this method by
-     * a java.lang.Boolean:
+     * a j86.java.lang.Boolean:
      * <BR><PRE>
      * s.setOption(TCP_NODELAY, new Boolean(true));
      *    // OK - enables TCP_NODELAY, a binary option
@@ -91,8 +91,8 @@ public interface SocketOptions {
 
     /**
      * Fetch the value of an option.
-     * Binary options will return java.lang.Boolean(true)
-     * if enabled, java.lang.Boolean(false) if disabled, e.g.:
+     * Binary options will return j86.java.lang.Boolean(true)
+     * if enabled, j86.java.lang.Boolean(false) if disabled, e.g.:
      * <BR><PRE>
      * SocketImpl s;
      * ...
@@ -105,13 +105,13 @@ public interface SocketOptions {
      * <P>
      * For options that take a particular type as a parameter,
      * getOption(int) will return the parameter's value, else
-     * it will return java.lang.Boolean(false):
+     * it will return j86.java.lang.Boolean(false):
      * <PRE>
      * Object o = s.getOption(SO_LINGER);
      * if (o instanceof Integer) {
      *     System.out.print("Linger time is " + ((Integer)o).intValue());
      * } else {
-     *   // the true type of o is java.lang.Boolean(false);
+     *   // the true type of o is j86.java.lang.Boolean(false);
      * }
      * </PRE>
      *
@@ -120,7 +120,7 @@ public interface SocketOptions {
      * @throws SocketException if the socket is closed
      * @throws SocketException if <I>optID</I> is unknown along the
      *         protocol stack (including the SocketImpl)
-     * @see #setOption(int, java.lang.Object)
+     * @see #setOption(int, j86.java.lang.Object)
      */
     public Object getOption(int optID) throws SocketException;
 
@@ -249,7 +249,7 @@ public interface SocketOptions {
      * <P> The option must be set prior to entering a blocking
      * operation to take effect.  If the timeout expires and the
      * operation would continue to block,
-     * <B>java.io.InterruptedIOException</B> is raised.  The Socket is
+     * <B>j86.java.io.InterruptedIOException</B> is raised.  The Socket is
      * not closed in this case.
      *
      * <P> Valid for all sockets: SocketImpl, DatagramSocketImpl

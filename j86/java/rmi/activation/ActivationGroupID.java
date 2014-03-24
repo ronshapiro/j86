@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.rmi.activation;
+package j86.j86.java.rmi.activation;
 
-import java.rmi.server.UID;
+import j86.j86.java.rmi.server.UID;
 
 /**
  * The identifier for a registered activation group serves several
@@ -45,7 +45,7 @@ import java.rmi.server.UID;
  * @see         ActivationGroupDesc
  * @since       1.2
  */
-public class ActivationGroupID implements java.io.Serializable {
+public class ActivationGroupID implements j86.java.io.Serializable {
     /**
      * @serial The group's activation system.
      */
@@ -85,7 +85,7 @@ public class ActivationGroupID implements java.io.Serializable {
      * identifiers that refer to the same remote group will have the
      * same hash code.
      *
-     * @see java.util.Hashtable
+     * @see j86.java.util.Hashtable
      * @since 1.2
      */
     public int hashCode() {
@@ -101,7 +101,7 @@ public class ActivationGroupID implements java.io.Serializable {
      *
      * @param   obj     the Object to compare with
      * @return  true if these Objects are equal; false otherwise.
-     * @see             java.util.Hashtable
+     * @see             j86.java.util.Hashtable
      * @since 1.2
      */
     public boolean equals(Object obj) {

@@ -22,19 +22,19 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.rmi.transport.proxy;
+package j86.j86.sun.rmi.transport.proxy;
 
-import java.io.*;
-import java.net.*;
-import java.security.*;
-import java.util.*;
-import java.rmi.server.LogStream;
-import java.rmi.server.RMISocketFactory;
-import sun.rmi.runtime.Log;
-import sun.rmi.runtime.NewThreadAction;
-import sun.security.action.GetBooleanAction;
-import sun.security.action.GetLongAction;
-import sun.security.action.GetPropertyAction;
+import j86.java.io.*;
+import j86.java.net.*;
+import j86.java.security.*;
+import j86.java.util.*;
+import j86.j86.java.rmi.server.LogStream;
+import j86.j86.java.rmi.server.RMISocketFactory;
+import j86.sun.rmi.runtime.Log;
+import j86.sun.rmi.runtime.NewThreadAction;
+import j86.sun.security.action.GetBooleanAction;
+import j86.sun.security.action.GetLongAction;
+import j86.sun.security.action.GetPropertyAction;
 
 /**
  * RMIMasterSocketFactory attempts to create a socket connection to the
@@ -52,28 +52,28 @@ public class RMIMasterSocketFactory extends RMISocketFactory {
     static int logLevel = LogStream.parseLevel(getLogLevel());
 
     private static String getLogLevel() {
-        return java.security.AccessController.doPrivileged(
-            new sun.security.action.GetPropertyAction("sun.rmi.transport.proxy.logLevel"));
+        return j86.java.security.AccessController.doPrivileged(
+            new j86.sun.security.action.GetPropertyAction("j86.j86.sun.rmi.transport.proxy.logLevel"));
     }
 
     /* proxy package log */
     static final Log proxyLog =
-        Log.getLog("sun.rmi.transport.tcp.proxy",
+        Log.getLog("j86.j86.sun.rmi.transport.tcp.proxy",
                    "transport", RMIMasterSocketFactory.logLevel);
 
     /** timeout for attemping direct socket connections */
     private static long connectTimeout = getConnectTimeout();
 
     private static long getConnectTimeout() {
-        return java.security.AccessController.doPrivileged(
-                new GetLongAction("sun.rmi.transport.proxy.connectTimeout",
+        return j86.java.security.AccessController.doPrivileged(
+                new GetLongAction("j86.j86.sun.rmi.transport.proxy.connectTimeout",
                               15000)).longValue(); // default: 15 seconds
     }
 
     /** whether to fallback to HTTP on general connect failures */
     private static final boolean eagerHttpFallback =
-        java.security.AccessController.doPrivileged(new GetBooleanAction(
-            "sun.rmi.transport.proxy.eagerHttpFallback")).booleanValue();
+        j86.java.security.AccessController.doPrivileged(new GetBooleanAction(
+            "j86.j86.sun.rmi.transport.proxy.eagerHttpFallback")).booleanValue();
 
     /** table of hosts successfully connected to and the factory used */
     private Hashtable<String, RMISocketFactory> successTable =
@@ -103,15 +103,15 @@ public class RMIMasterSocketFactory extends RMISocketFactory {
 
         try {
             String proxyHost;
-            proxyHost = java.security.AccessController.doPrivileged(
+            proxyHost = j86.java.security.AccessController.doPrivileged(
                 new GetPropertyAction("http.proxyHost"));
 
             if (proxyHost == null)
-                proxyHost = java.security.AccessController.doPrivileged(
+                proxyHost = j86.java.security.AccessController.doPrivileged(
                     new GetPropertyAction("proxyHost"));
 
-            boolean disable = java.security.AccessController.doPrivileged(
-                new GetPropertyAction("java.rmi.server.disableHttp", "true"))
+            boolean disable = j86.java.security.AccessController.doPrivileged(
+                new GetPropertyAction("j86.j86.java.rmi.server.disableHttp", "true"))
                 .equalsIgnoreCase("true");
 
             if (!disable && proxyHost != null && proxyHost.length() > 0) {
@@ -180,7 +180,7 @@ public class RMIMasterSocketFactory extends RMISocketFactory {
         try {
             synchronized (connector) {
 
-                Thread t = java.security.AccessController.doPrivileged(
+                Thread t = j86.java.security.AccessController.doPrivileged(
                     new NewThreadAction(connector, "AsyncConnector", true));
                 t.start();
 
@@ -403,7 +403,7 @@ public class RMIMasterSocketFactory extends RMISocketFactory {
                  * network connection policy is not captured in the permission
                  * framework of the access control context we have.
                  *
-                 * java.security.AccessController.beginPrivileged(acc);
+                 * j86.java.security.AccessController.beginPrivileged(acc);
                  */
                 try {
                     Socket temp = factory.createSocket(host, port);
@@ -434,7 +434,7 @@ public class RMIMasterSocketFactory extends RMISocketFactory {
                  * See above comments for matching beginPrivileged() call that
                  * is also commented out.
                  *
-                 * java.security.AccessController.endPrivileged();
+                 * j86.java.security.AccessController.endPrivileged();
                  */
             }
         }

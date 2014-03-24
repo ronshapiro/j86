@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.nio.charset.spi;
+package j86.j86.j86.java.nio.charset.spi;
 
-import java.nio.charset.Charset;
-import java.util.Iterator;
+import j86.j86.java.nio.charset.Charset;
+import j86.java.util.Iterator;
 
 
 /**
@@ -39,11 +39,11 @@ import java.util.Iterator;
  * the usual extension directories.  Providers may also be made available by
  * adding them to the applet or application class path or by some other
  * platform-specific means.  Charset providers are looked up via the current
- * thread's {@link java.lang.Thread#getContextClassLoader() context class
+ * thread's {@link j86.java.lang.Thread#getContextClassLoader() context class
  * loader}.
  *
  * <p> A charset provider identifies itself with a provider-configuration file
- * named <tt>java.nio.charset.spi.CharsetProvider</tt> in the resource
+ * named <tt>j86.j86.j86.java.nio.charset.spi.CharsetProvider</tt> in the resource
  * directory <tt>META-INF/services</tt>.  The file should contain a list of
  * fully-qualified concrete charset-provider class names, one per line.  A line
  * is terminated by any one of a line feed (<tt>'\n'</tt>), a carriage return
@@ -66,7 +66,7 @@ import java.util.Iterator;
  * @author JSR-51 Expert Group
  * @since 1.4
  *
- * @see java.nio.charset.Charset
+ * @see j86.j86.java.nio.charset.Charset
  */
 
 public abstract class CharsetProvider {
@@ -87,7 +87,7 @@ public abstract class CharsetProvider {
     /**
      * Creates an iterator that iterates over the charsets supported by this
      * provider.  This method is used in the implementation of the {@link
-     * java.nio.charset.Charset#availableCharsets Charset.availableCharsets}
+     * j86.j86.java.nio.charset.Charset#availableCharsets Charset.availableCharsets}
      * method.
      *
      * @return  The new iterator

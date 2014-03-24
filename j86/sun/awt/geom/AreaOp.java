@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.awt.geom;
+package j86.j86.sun.awt.geom;
 
-import java.util.Vector;
-import java.util.Enumeration;
-import java.util.Comparator;
-import java.util.Arrays;
+import j86.java.util.Vector;
+import j86.java.util.Enumeration;
+import j86.java.util.Comparator;
+import j86.java.util.Arrays;
 
 public abstract class AreaOp {
     public static abstract class CAGOp extends AreaOp {

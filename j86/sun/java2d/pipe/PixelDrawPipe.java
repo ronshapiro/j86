@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.java2d.pipe;
+package j86.j86.sun.java2d.pipe;
 
-import sun.java2d.SunGraphics2D;
+import j86.sun.java2d.SunGraphics2D;
 
 /**
  * This interface defines the set of calls that pipeline objects

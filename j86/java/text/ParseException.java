@@ -36,14 +36,14 @@
  *
  */
 
-package java.text;
+package j86.java.text;
 
 /**
  * Signals that an error has been reached unexpectedly
  * while parsing.
- * @see java.lang.Exception
- * @see java.text.Format
- * @see java.text.FieldPosition
+ * @see j86.java.lang.Exception
+ * @see j86.java.text.Format
+ * @see j86.java.text.FieldPosition
  * @author      Mark Davis
  */
 public

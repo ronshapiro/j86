@@ -23,13 +23,13 @@
  * questions.
  */
 
-package com.sun.tools.jdi;
+package j86.com.sun.tools.jdi;
 
-import com.sun.jdi.*;
-import com.sun.jdi.request.*;
-import com.sun.tools.jdi.JDWP;
+import j86.com.sun.jdi.*;
+import j86.j86.com.sun.jdi.request.*;
+import j86.com.sun.tools.jdi.JDWP;
 
-import java.util.*;
+import j86.java.util.*;
 
 /**
  * This interface is used to create and remove Breakpoints, Watchpoints,
@@ -718,7 +718,7 @@ class EventRequestManagerImpl extends MirrorImpl
      */
     EventRequestManagerImpl(VirtualMachine vm) {
         super(vm);
-        java.lang.reflect.Field[] ekinds =
+        j86.j86.j86.java.lang.reflect.Field[] ekinds =
             JDWP.EventKind.class.getDeclaredFields();
         int highest = 0;
         for (int i = 0; i < ekinds.length; ++i) {

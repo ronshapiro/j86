@@ -23,10 +23,10 @@
  * questions.
  */
 
-package org.ietf.jgss;
+package j86.org.ietf.jgss;
 
-import java.net.InetAddress;
-import java.util.Arrays;
+import j86.java.net.InetAddress;
+import j86.java.util.Arrays;
 
 /**
  * This class encapsulates the concept of caller-provided channel
@@ -106,7 +106,7 @@ public class ChannelBinding {
 
         if (appData != null) {
             this.appData = new byte[appData.length];
-            java.lang.System.arraycopy(appData, 0, this.appData, 0,
+            j86.java.lang.System.arraycopy(appData, 0, this.appData, 0,
                                 appData.length);
         }
     }

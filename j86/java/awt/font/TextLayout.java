@@ -38,35 +38,35 @@
  *
  */
 
-package java.awt.font;
+package j86.j86.java.awt.font;
 
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.Graphics2D;
-import java.awt.Rectangle;
-import java.awt.Shape;
-import java.awt.font.NumericShaper;
-import java.awt.font.TextLine.TextLineMetrics;
-import java.awt.geom.AffineTransform;
-import java.awt.geom.GeneralPath;
-import java.awt.geom.NoninvertibleTransformException;
-import java.awt.geom.Point2D;
-import java.awt.geom.Rectangle2D;
-import java.text.AttributedString;
-import java.text.AttributedCharacterIterator;
-import java.text.AttributedCharacterIterator.Attribute;
-import java.text.CharacterIterator;
-import java.util.Map;
-import java.util.HashMap;
-import java.util.Hashtable;
-import sun.font.AttributeValues;
-import sun.font.CoreMetrics;
-import sun.font.Decoration;
-import sun.font.FontLineMetrics;
-import sun.font.FontResolver;
-import sun.font.GraphicComponent;
-import sun.font.LayoutPathImpl;
-import sun.text.CodePointIterator;
+import j86.java.awt.Color;
+import j86.java.awt.Font;
+import j86.java.awt.Graphics2D;
+import j86.java.awt.Rectangle;
+import j86.java.awt.Shape;
+import j86.j86.java.awt.font.NumericShaper;
+import j86.j86.java.awt.font.TextLine.TextLineMetrics;
+import j86.j86.java.awt.geom.AffineTransform;
+import j86.j86.java.awt.geom.GeneralPath;
+import j86.j86.java.awt.geom.NoninvertibleTransformException;
+import j86.j86.java.awt.geom.Point2D;
+import j86.j86.java.awt.geom.Rectangle2D;
+import j86.java.text.AttributedString;
+import j86.java.text.AttributedCharacterIterator;
+import j86.java.text.AttributedCharacterIterator.Attribute;
+import j86.java.text.CharacterIterator;
+import j86.java.util.Map;
+import j86.java.util.HashMap;
+import j86.java.util.Hashtable;
+import j86.sun.font.AttributeValues;
+import j86.sun.font.CoreMetrics;
+import j86.sun.font.Decoration;
+import j86.sun.font.FontLineMetrics;
+import j86.sun.font.FontResolver;
+import j86.sun.font.GraphicComponent;
+import j86.sun.font.LayoutPathImpl;
+import j86.sun.text.CodePointIterator;
 
 /**
  *
@@ -122,7 +122,7 @@ import sun.text.CodePointIterator;
  * origin.  Clients usually need to translate between a
  * <code>TextLayout</code> object's coordinate system and the coordinate
  * system in another object (such as a
- * {@link java.awt.Graphics Graphics} object).
+ * {@link j86.java.awt.Graphics Graphics} object).
  * <p>
  * <code>TextLayout</code> objects are constructed from styled text,
  * but they do not retain a reference to their source text.  Thus,
@@ -2627,7 +2627,7 @@ public final class TextLayout implements Cloneable {
 
     /**
      * Renders this <code>TextLayout</code> at the specified location in
-     * the specified {@link java.awt.Graphics2D Graphics2D} context.
+     * the specified {@link j86.java.awt.Graphics2D Graphics2D} context.
      * The origin of the layout is placed at x,&nbsp;y.  Rendering may touch
      * any point within <code>getBounds()</code> of this position.  This
      * leaves the <code>g2</code> unchanged.  Text is rendered along the

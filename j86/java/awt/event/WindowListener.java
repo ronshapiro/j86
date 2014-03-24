@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.awt.event;
+package j86.j86.java.awt.event;
 
-import java.util.EventListener;
+import j86.java.util.EventListener;
 
 /**
  * The listener interface for receiving window events.
@@ -71,7 +71,7 @@ public interface WindowListener extends EventListener {
      * minimized state. For many platforms, a minimized window
      * is displayed as the icon specified in the window's
      * iconImage property.
-     * @see java.awt.Frame#setIconImage
+     * @see j86.java.awt.Frame#setIconImage
      */
     public void windowIconified(WindowEvent e);
 

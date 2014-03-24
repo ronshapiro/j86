@@ -23,7 +23,7 @@
  * questions.
  */
 
-package com.sun.jdi;
+package j86.com.sun.jdi;
 
 /**
  * A class or instance variable in the target VM.
@@ -72,7 +72,7 @@ public interface Field extends TypeComponent, Comparable<Field> {
      *    Field baField = targetClass.fieldByName("ba");</PRE>
      * to mirror the corresponding fields, then <CODE>sField.type()</CODE>
      * is a {@link ShortType}, <CODE>dField.type()</CODE> is the
-     * {@link ReferenceType} for <CODE>java.util.Date</CODE> and
+     * {@link ReferenceType} for <CODE>j86.java.util.Date</CODE> and
      * <CODE>((ArrayType)(baField.type())).componentType()</CODE> is a
      * {@link ByteType}.
      * <P>

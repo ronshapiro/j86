@@ -23,20 +23,20 @@
  * questions.
  */
 
-package sun.misc;
+package j86.sun.misc;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.net.URL;
-import java.util.ArrayList;
-import java.util.Enumeration;
-import java.util.Iterator;
-import java.util.List;
-import java.util.NoSuchElementException;
-import java.util.Set;
-import java.util.TreeSet;
+import j86.java.io.BufferedReader;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.io.InputStreamReader;
+import j86.java.net.URL;
+import j86.java.util.ArrayList;
+import j86.java.util.Enumeration;
+import j86.java.util.Iterator;
+import j86.java.util.List;
+import j86.java.util.NoSuchElementException;
+import j86.java.util.Set;
+import j86.java.util.TreeSet;
 
 
 /**
@@ -81,7 +81,7 @@ import java.util.TreeSet;
  * note that this is not necessarily the class loader that found the file.
  *
  * <p> <b>Example:</b> Suppose we have a service class named
- * <tt>java.io.spi.CharCodec</tt>.  It has two abstract methods:
+ * <tt>j86.java.io.spi.CharCodec</tt>.  It has two abstract methods:
  *
  * <pre>
  *   public abstract CharEncoder getEncoder(String encodingName);
@@ -94,7 +94,7 @@ import java.util.TreeSet;
  *
  * <p> If <tt>sun.io.StandardCodec</tt> is a provider of the <tt>CharCodec</tt>
  * service then its jar file would contain the file
- * <tt>META-INF/services/java.io.spi.CharCodec</tt>.  This file would contain
+ * <tt>META-INF/services/j86.java.io.spi.CharCodec</tt>.  This file would contain
  * the single line:
  *
  * <pre>
@@ -347,8 +347,8 @@ public final class Service<S> {
      *         If a provider-configuration file violates the specified format
      *         or names a provider class that cannot be found and instantiated
      *
-     * @see #providers(java.lang.Class)
-     * @see #installedProviders(java.lang.Class)
+     * @see #providers(j86.java.lang.Class)
+     * @see #installedProviders(j86.java.lang.Class)
      */
     public static <S> Iterator<S> providers(Class<S> service, ClassLoader loader)
         throws ServiceConfigurationError
@@ -380,7 +380,7 @@ public final class Service<S> {
      *         If a provider-configuration file violates the specified format
      *         or names a provider class that cannot be found and instantiated
      *
-     * @see #providers(java.lang.Class, java.lang.ClassLoader)
+     * @see #providers(j86.java.lang.Class, java.lang.ClassLoader)
      */
     public static <S> Iterator<S> providers(Class<S> service)
         throws ServiceConfigurationError
@@ -417,7 +417,7 @@ public final class Service<S> {
      *         If a provider-configuration file violates the specified format
      *         or names a provider class that cannot be found and instantiated
      *
-     * @see #providers(java.lang.Class, java.lang.ClassLoader)
+     * @see #providers(j86.java.lang.Class, java.lang.ClassLoader)
      */
     public static <S> Iterator<S> installedProviders(Class<S> service)
         throws ServiceConfigurationError

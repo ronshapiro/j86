@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.io;
+package j86.java.io;
 
-import java.util.Arrays;
+import j86.java.util.Arrays;
 
 /**
  * This class implements an output stream in which the data is
@@ -160,7 +160,7 @@ public class ByteArrayOutputStream extends OutputStream {
      * output stream is discarded. The output stream can be used again,
      * reusing the already allocated buffer space.
      *
-     * @see     java.io.ByteArrayInputStream#count
+     * @see     j86.java.io.ByteArrayInputStream#count
      */
     public synchronized void reset() {
         count = 0;
@@ -172,7 +172,7 @@ public class ByteArrayOutputStream extends OutputStream {
      * have been copied into it.
      *
      * @return  the current contents of this output stream, as a byte array.
-     * @see     java.io.ByteArrayOutputStream#size()
+     * @see     j86.java.io.ByteArrayOutputStream#size()
      */
     public synchronized byte toByteArray()[] {
         return Arrays.copyOf(buf, count);
@@ -183,7 +183,7 @@ public class ByteArrayOutputStream extends OutputStream {
      *
      * @return  the value of the <code>count</code> field, which is the number
      *          of valid bytes in this output stream.
-     * @see     java.io.ByteArrayOutputStream#count
+     * @see     j86.java.io.ByteArrayOutputStream#count
      */
     public synchronized int size() {
         return count;
@@ -197,7 +197,7 @@ public class ByteArrayOutputStream extends OutputStream {
      *
      * <p> This method always replaces malformed-input and unmappable-character
      * sequences with the default replacement string for the platform's
-     * default character set. The {@linkplain java.nio.charset.CharsetDecoder}
+     * default character set. The {@linkplain j86.j86.java.nio.charset.CharsetDecoder}
      * class should be used when more control over the decoding process is
      * required.
      *
@@ -210,17 +210,17 @@ public class ByteArrayOutputStream extends OutputStream {
 
     /**
      * Converts the buffer's contents into a string by decoding the bytes using
-     * the named {@link java.nio.charset.Charset charset}. The length of the new
+     * the named {@link j86.j86.java.nio.charset.Charset charset}. The length of the new
      * <tt>String</tt> is a function of the charset, and hence may not be equal
      * to the length of the byte array.
      *
      * <p> This method always replaces malformed-input and unmappable-character
      * sequences with this charset's default replacement string. The {@link
-     * java.nio.charset.CharsetDecoder} class should be used when more control
+     * j86.j86.java.nio.charset.CharsetDecoder} class should be used when more control
      * over the decoding process is required.
      *
      * @param      charsetName  the name of a supported
-     *             {@link java.nio.charset.Charset charset}
+     *             {@link j86.j86.java.nio.charset.Charset charset}
      * @return     String decoded from the buffer's contents.
      * @exception  UnsupportedEncodingException
      *             If the named charset is not supported
@@ -250,9 +250,9 @@ public class ByteArrayOutputStream extends OutputStream {
      *
      * @param      hibyte    the high byte of each resulting Unicode character.
      * @return     the current contents of the output stream, as a string.
-     * @see        java.io.ByteArrayOutputStream#size()
-     * @see        java.io.ByteArrayOutputStream#toString(String)
-     * @see        java.io.ByteArrayOutputStream#toString()
+     * @see        j86.java.io.ByteArrayOutputStream#size()
+     * @see        j86.java.io.ByteArrayOutputStream#toString(String)
+     * @see        j86.java.io.ByteArrayOutputStream#toString()
      */
     @Deprecated
     public synchronized String toString(int hibyte) {

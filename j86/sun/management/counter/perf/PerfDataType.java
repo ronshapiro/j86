@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.management.counter.perf;
+package j86.j86.j86.sun.management.counter.perf;
 
-import java.io.UnsupportedEncodingException;
+import j86.java.io.UnsupportedEncodingException;
 
 /**
  * A typesafe enumeration for the data types supported for

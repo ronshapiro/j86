@@ -20,15 +20,15 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.sun.org.apache.xml.internal.security.transforms;
+package j86.j86.com.sun.org.apache.xml.internal.security.transforms;
 
-import java.io.IOException;
-import java.io.OutputStream;
+import j86.java.io.IOException;
+import j86.java.io.OutputStream;
 import javax.xml.parsers.ParserConfigurationException;
 
-import com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
-import com.sun.org.apache.xml.internal.security.c14n.InvalidCanonicalizerException;
-import com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
+import j86.j86.com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
+import j86.j86.com.sun.org.apache.xml.internal.security.c14n.InvalidCanonicalizerException;
+import j86.j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
 import org.xml.sax.SAXException;
 
 /**

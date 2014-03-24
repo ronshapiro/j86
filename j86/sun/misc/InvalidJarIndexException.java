@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.misc;
+package j86.sun.misc;
 
-import java.lang.LinkageError;
+import j86.java.lang.LinkageError;
 
 /**
  * Thrown if the URLClassLoader finds the INDEX.LIST file of

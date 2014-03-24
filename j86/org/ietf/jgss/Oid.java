@@ -23,13 +23,13 @@
  * questions.
  */
 
-package org.ietf.jgss;
+package j86.org.ietf.jgss;
 
-import java.io.InputStream;
-import java.io.IOException;
-import sun.security.util.DerValue;
-import sun.security.util.DerOutputStream;
-import sun.security.util.ObjectIdentifier;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
+import j86.sun.security.util.DerValue;
+import j86.sun.security.util.DerOutputStream;
+import j86.sun.security.util.ObjectIdentifier;
 
 /**
  * This class represents Universal Object Identifiers (Oids) and their

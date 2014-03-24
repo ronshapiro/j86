@@ -33,18 +33,18 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package java.util.concurrent;
-import java.util.Collection;
-import java.util.Set;
-import java.util.AbstractSet;
-import java.util.Iterator;
-import java.util.Spliterator;
-import java.util.Spliterators;
-import java.util.function.Predicate;
-import java.util.function.Consumer;
+package j86.j86.java.util.concurrent;
+import j86.java.util.Collection;
+import j86.java.util.Set;
+import j86.java.util.AbstractSet;
+import j86.java.util.Iterator;
+import j86.java.util.Spliterator;
+import j86.java.util.Spliterators;
+import j86.j86.java.util.function.Predicate;
+import j86.j86.java.util.function.Consumer;
 
 /**
- * A {@link java.util.Set} that uses an internal {@link CopyOnWriteArrayList}
+ * A {@link j86.java.util.Set} that uses an internal {@link CopyOnWriteArrayList}
  * for all of its operations.  Thus, it shares the same basic properties:
  * <ul>
  *  <li>It is best suited for applications in which set sizes generally
@@ -94,7 +94,7 @@ import java.util.function.Consumer;
  * @param <E> the type of elements held in this collection
  */
 public class CopyOnWriteArraySet<E> extends AbstractSet<E>
-        implements java.io.Serializable {
+        implements j86.java.io.Serializable {
     private static final long serialVersionUID = 5457747651344034263L;
 
     private final CopyOnWriteArrayList<E> al;

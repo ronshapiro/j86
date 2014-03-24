@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.management;
+package j86.sun.management;
 
-import sun.management.counter.Counter;
+import j86.j86.sun.management.counter.Counter;
 /**
  * Hotspot internal management interface for the compilation system.
  */
@@ -38,5 +38,5 @@ public interface HotspotMemoryMBean {
      * @return a list of internal counters maintained in the VM
      * for the memory system.
      */
-    public java.util.List<Counter> getInternalMemoryCounters();
+    public j86.java.util.List<Counter> getInternalMemoryCounters();
 }

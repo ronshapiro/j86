@@ -22,21 +22,21 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.plaf.basic;
+package j86.j86.j86.javax.swing.plaf.basic;
 
-import java.io.*;
-import java.awt.*;
-import java.net.URL;
+import j86.java.io.*;
+import j86.java.awt.*;
+import j86.java.net.URL;
 
-import javax.swing.*;
-import javax.swing.text.*;
-import javax.swing.text.html.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.text.*;
+import j86.j86.j86.javax.swing.text.html.*;
 
-import sun.swing.SwingUtilities2;
+import j86.sun.swing.SwingUtilities2;
 
 /**
  * Support for providing html views for the swing components.
- * This translates a simple html string to a javax.swing.text.View
+ * This translates a simple html string to a j86.j86.javax.swing.text.View
  * implementation that can render the html and provide the necessary
  * layout semantics.
  *
@@ -77,8 +77,8 @@ public class BasicHTML {
      * @throws IllegalArgumentException if width or height is &lt; 0
      * @return baseline or a value &lt; 0 indicating there is no reasonable
      *                  baseline
-     * @see java.awt.FontMetrics
-     * @see javax.swing.JComponent#getBaseline(int,int)
+     * @see j86.java.awt.FontMetrics
+     * @see j86.javax.swing.JComponent#getBaseline(int,int)
      * @since 1.6
      */
     public static int getHTMLBaseline(View view, int w, int h) {
@@ -140,7 +140,7 @@ public class BasicHTML {
             return -1;
         }
         View child = view.getView(index);
-        if (view instanceof javax.swing.text.ParagraphView) {
+        if (view instanceof j86.j86.javax.swing.text.ParagraphView) {
             Rectangle rect;
             if (bounds instanceof Rectangle) {
                 rect = (Rectangle)bounds;
@@ -155,7 +155,7 @@ public class BasicHTML {
     }
 
     private static boolean hasParagraph(View view) {
-        if (view instanceof javax.swing.text.ParagraphView) {
+        if (view instanceof j86.j86.javax.swing.text.ParagraphView) {
             return true;
         }
         if (view.getViewCount() == 0) {
@@ -362,7 +362,7 @@ public class BasicHTML {
          * a custom font or color.
          */
         private void setFontAndColor(Font font, Color fg) {
-            getStyleSheet().addRule(sun.swing.SwingUtilities2.
+            getStyleSheet().addRule(j86.sun.swing.SwingUtilities2.
                                     displayPropertiesToCSS(font,fg));
         }
     }

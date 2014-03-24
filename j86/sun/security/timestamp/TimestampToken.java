@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.security.timestamp;
+package j86.sun.security.timestamp;
 
-import java.io.IOException;
-import java.math.BigInteger;
-import java.util.Date;
-import sun.security.util.DerValue;
-import sun.security.util.ObjectIdentifier;
-import sun.security.x509.AlgorithmId;
+import j86.java.io.IOException;
+import j86.java.math.BigInteger;
+import j86.java.util.Date;
+import j86.sun.security.util.DerValue;
+import j86.sun.security.util.ObjectIdentifier;
+import j86.sun.security.x509.AlgorithmId;
 
 /**
  * This class provides the timestamp token info resulting from a successful

@@ -23,23 +23,23 @@
  * questions.
  */
 
-package com.sun.java.swing.plaf.windows;
+package j86.j86.com.sun.java.swing.plaf.windows;
 
-import sun.swing.SwingUtilities2;
+import j86.sun.swing.SwingUtilities2;
 
-import javax.swing.*;
-import javax.swing.border.*;
-import javax.swing.UIManager;
-import javax.swing.plaf.*;
-import javax.swing.plaf.basic.BasicInternalFrameTitlePane;
-import java.awt.*;
-import java.awt.event.*;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
-import java.beans.PropertyVetoException;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.border.*;
+import j86.javax.swing.UIManager;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.j86.javax.swing.plaf.basic.BasicInternalFrameTitlePane;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.java.beans.PropertyChangeEvent;
+import j86.java.beans.PropertyChangeListener;
+import j86.java.beans.PropertyVetoException;
 
-import static com.sun.java.swing.plaf.windows.TMSchema.*;
-import static com.sun.java.swing.plaf.windows.XPStyle.Skin;
+import static j86.j86.com.sun.java.swing.plaf.windows.TMSchema.*;
+import static j86.j86.com.sun.java.swing.plaf.windows.XPStyle.Skin;
 
 public class WindowsInternalFrameTitlePane extends BasicInternalFrameTitlePane {
     private Color selectedTitleGradientColor;

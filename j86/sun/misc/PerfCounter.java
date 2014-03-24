@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.misc;
+package j86.sun.misc;
 
-import java.nio.ByteBuffer;
-import java.nio.ByteOrder;
-import java.nio.LongBuffer;
-import java.security.AccessController;
+import j86.java.nio.ByteBuffer;
+import j86.java.nio.ByteOrder;
+import j86.java.nio.LongBuffer;
+import j86.java.security.AccessController;
 
 /**
  * Performance counter support for internal JRE classes.
@@ -134,7 +134,7 @@ public class PerfCounter {
     }
 
     static class WindowsClientCounters {
-        static final PerfCounter d3dAvailable = newConstantPerfCounter("sun.java2d.d3d.available");
+        static final PerfCounter d3dAvailable = newConstantPerfCounter("j86.sun.java2d.d3d.available");
     }
 
     /**

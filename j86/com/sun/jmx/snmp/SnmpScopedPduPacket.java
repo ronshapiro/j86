@@ -23,21 +23,21 @@
  * questions.
  */
 
-package com.sun.jmx.snmp;
+package j86.com.sun.jmx.snmp;
 
-import java.io.Serializable;
+import j86.java.io.Serializable;
 
-import com.sun.jmx.snmp.SnmpSecurityParameters;
+import j86.com.sun.jmx.snmp.SnmpSecurityParameters;
 
-import com.sun.jmx.snmp.SnmpDefinitions;
+import j86.com.sun.jmx.snmp.SnmpDefinitions;
 /**
  * Is the fully decoded representation of an SNMP V3 packet.
  * <P>
  *
  * Classes are derived from <CODE>SnmpPdu</CODE> to
  * represent the different forms of SNMP pdu
- * ({@link com.sun.jmx.snmp.SnmpScopedPduRequest SnmpScopedPduRequest},
- * {@link com.sun.jmx.snmp.SnmpScopedPduBulk SnmpScopedPduBulk}).
+ * ({@link j86.com.sun.jmx.snmp.SnmpScopedPduRequest SnmpScopedPduRequest},
+ * {@link j86.com.sun.jmx.snmp.SnmpScopedPduBulk SnmpScopedPduBulk}).
  * <BR>The <CODE>SnmpScopedPduPacket</CODE> class defines the attributes
  * common to every scoped SNMP packets.
  *

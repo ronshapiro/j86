@@ -23,20 +23,20 @@
  * questions.
  */
 
-package javax.swing.colorchooser;
+package j86.j86.javax.swing.colorchooser;
 
-import java.awt.event.FocusEvent;
-import java.awt.event.FocusListener;
-import java.text.ParseException;
-import static java.util.Locale.ENGLISH;
-import javax.swing.JFormattedTextField;
-import javax.swing.JFormattedTextField.AbstractFormatter;
-import javax.swing.SwingConstants;
-import javax.swing.SwingUtilities;
-import javax.swing.text.AttributeSet;
-import javax.swing.text.BadLocationException;
-import javax.swing.text.DefaultFormatterFactory;
-import javax.swing.text.DocumentFilter;
+import j86.j86.java.awt.event.FocusEvent;
+import j86.j86.java.awt.event.FocusListener;
+import j86.java.text.ParseException;
+import static j86.java.util.Locale.ENGLISH;
+import j86.javax.swing.JFormattedTextField;
+import j86.javax.swing.JFormattedTextField.AbstractFormatter;
+import j86.javax.swing.SwingConstants;
+import j86.javax.swing.SwingUtilities;
+import j86.j86.javax.swing.text.AttributeSet;
+import j86.j86.javax.swing.text.BadLocationException;
+import j86.j86.javax.swing.text.DefaultFormatterFactory;
+import j86.j86.javax.swing.text.DocumentFilter;
 
 final class ValueFormatter extends AbstractFormatter implements FocusListener, Runnable {
 

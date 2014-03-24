@@ -23,17 +23,17 @@
  * questions.
  */
 
-package javax.sql.rowset.serial;
+package j86.j86.j86.javax.sql.rowset.serial;
 
-import java.sql.*;
-import javax.sql.*;
-import java.io.*;
-import java.math.*;
-import java.util.Arrays;
-import java.util.Map;
-import java.util.Vector;
+import j86.java.sql.*;
+import j86.javax.sql.*;
+import j86.java.io.*;
+import j86.java.math.*;
+import j86.java.util.Arrays;
+import j86.java.util.Map;
+import j86.java.util.Vector;
 
-import javax.sql.rowset.*;
+import j86.j86.javax.sql.rowset.*;
 
 /**
  * A serialized mapping in the Java programming language of an SQL
@@ -83,18 +83,18 @@ public class SerialStruct implements Struct, Serializable, Cloneable {
 
     /**
      * Constructs a <code>SerialStruct</code> object from the given
-     * <code>Struct</code> object, using the given <code>java.util.Map</code>
+     * <code>Struct</code> object, using the given <code>j86.java.util.Map</code>
      * object for custom mapping the SQL structured type or any of its
      * attributes that are SQL structured types.
      *
      * @param in an instance of {@code Struct}
-     * @param map a <code>java.util.Map</code> object in which
+     * @param map a <code>j86.java.util.Map</code> object in which
      *        each entry consists of 1) a <code>String</code> object
      *        giving the fully qualified name of a UDT and 2) the
      *        <code>Class</code> object for the <code>SQLData</code> implementation
      *        that defines how the UDT is to be mapped
      * @throws SerialException if an error occurs
-     * @see java.sql.Struct
+     * @see j86.java.sql.Struct
      */
      public SerialStruct(Struct in, Map<String,Class<?>> map)
          throws SerialException
@@ -132,7 +132,7 @@ public class SerialStruct implements Struct, Serializable, Cloneable {
       * @param in an instance of the <code>SQLData</code> class
       *           that defines the mapping of the SQL structured
       *           type to one or more objects in the Java programming language
-      * @param map a <code>java.util.Map</code> object in which
+      * @param map a <code>j86.java.util.Map</code> object in which
       *        each entry consists of 1) a <code>String</code> object
       *        giving the fully qualified name of a UDT and 2) the
       *        <code>Class</code> object for the <code>SQLData</code> implementation
@@ -193,7 +193,7 @@ public class SerialStruct implements Struct, Serializable, Cloneable {
      * <code>Object</code> values, using the given type map for
      * custom mapping if appropriate.
      *
-     * @param map a <code>java.util.Map</code> object in which
+     * @param map a <code>j86.java.util.Map</code> object in which
      *        each entry consists of 1) a <code>String</code> object
      *        giving the fully qualified name of a UDT and 2) the
      *        <code>Class</code> object for the <code>SQLData</code> implementation
@@ -224,7 +224,7 @@ public class SerialStruct implements Struct, Serializable, Cloneable {
      * This method is called internally and is not used by an
      * application programmer.
      *
-     * @param map a <code>java.util.Map</code> object in which
+     * @param map a <code>j86.java.util.Map</code> object in which
      *        each entry consists of 1) a <code>String</code> object
      *        giving the fully qualified name of a UDT and 2) the
      *        <code>Class</code> object for the <code>SQLData</code> implementation
@@ -246,8 +246,8 @@ public class SerialStruct implements Struct, Serializable, Cloneable {
                 attribs[i] = new SerialClob((Clob)attribs[i]);
             } else if (attribs[i] instanceof Ref) {
                 attribs[i] = new SerialRef((Ref)attribs[i]);
-            } else if (attribs[i] instanceof java.sql.Array) {
-                attribs[i] = new SerialArray((java.sql.Array)attribs[i], map);
+            } else if (attribs[i] instanceof j86.java.sql.Array) {
+                attribs[i] = new SerialArray((j86.java.sql.Array)attribs[i], map);
             }
         }
 

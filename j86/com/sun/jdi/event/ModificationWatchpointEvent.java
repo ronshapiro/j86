@@ -23,9 +23,9 @@
  * questions.
  */
 
-package com.sun.jdi.event;
+package j86.j86.com.sun.jdi.event;
 
-import com.sun.jdi.*;
+import j86.com.sun.jdi.*;
 
 /**
  * Notification of a field modification in the
@@ -33,7 +33,7 @@ import com.sun.jdi.*;
  *
  * @see EventQueue
  * @see VirtualMachine
- * @see com.sun.jdi.request.ModificationWatchpointRequest
+ * @see j86.j86.com.sun.jdi.request.ModificationWatchpointRequest
  *
  * @author Robert Field
  * @since  1.3

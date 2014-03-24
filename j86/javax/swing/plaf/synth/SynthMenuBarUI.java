@@ -22,18 +22,18 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.plaf.synth;
+package j86.j86.j86.javax.swing.plaf.synth;
 
-import javax.swing.*;
-import java.awt.Graphics;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
-import javax.swing.plaf.*;
-import javax.swing.plaf.basic.*;
+import j86.javax.swing.*;
+import j86.java.awt.Graphics;
+import j86.java.beans.PropertyChangeEvent;
+import j86.java.beans.PropertyChangeListener;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.j86.javax.swing.plaf.basic.*;
 
 /**
  * Provides the Synth L&amp;F UI delegate for
- * {@link javax.swing.JMenuBar}.
+ * {@link j86.javax.swing.JMenuBar}.
  *
  * @author Scott Violet
  * @since 1.7

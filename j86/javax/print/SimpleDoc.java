@@ -23,16 +23,16 @@
  * questions.
  */
 
-package javax.print;
+package j86.javax.print;
 
-import java.io.ByteArrayInputStream;
-import java.io.CharArrayReader;
-import java.io.StringReader;
-import java.io.InputStream;
-import java.io.IOException;
-import java.io.Reader;
-import javax.print.attribute.AttributeSetUtilities;
-import javax.print.attribute.DocAttributeSet;
+import j86.java.io.ByteArrayInputStream;
+import j86.java.io.CharArrayReader;
+import j86.java.io.StringReader;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
+import j86.java.io.Reader;
+import j86.j86.javax.print.attribute.AttributeSetUtilities;
+import j86.j86.javax.print.attribute.DocAttributeSet;
 
 /**
  * This class is an implementation of interface <code>Doc</code> that can
@@ -92,7 +92,7 @@ public final class SimpleDoc implements Doc {
        Class repClass = null;
        try {
             String className = flavor.getRepresentationClassName();
-            sun.reflect.misc.ReflectUtil.checkPackageAccess(className);
+            j86.j86.sun.reflect.misc.ReflectUtil.checkPackageAccess(className);
             repClass = Class.forName(className, false,
                               Thread.currentThread().getContextClassLoader());
        } catch (Throwable e) {
@@ -167,8 +167,8 @@ public final class SimpleDoc implements Doc {
      * otherwise:
      * <UL>
      * <LI> <code>char[]</code>
-     * <LI> <code>java.lang.String</code>
-     * <LI> <code>java.io.Reader</code>
+     * <LI> <code>j86.java.lang.String</code>
+     * <LI> <code>j86.java.io.Reader</code>
      * </UL>
      * The doc's print data representation object is used to construct and
      * return a <code>Reader</code> for reading the print data as a stream
@@ -215,7 +215,7 @@ public final class SimpleDoc implements Doc {
      * returns <code>null</code>:
      * <UL>
      * <LI> <code>byte[]</code>
-     * <LI> <code>java.io.InputStream</code>
+     * <LI> <code>j86.java.io.InputStream</code>
      * </UL>
      * The doc's print data representation object is obtained.  Then, an
      * input stream for reading the print data

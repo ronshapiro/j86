@@ -22,9 +22,9 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.awt;
+package j86.java.awt;
 
-import javax.accessibility.*;
+import j86.javax.accessibility.*;
 
 /**
  * <code>Panel</code> is the simplest container class. A panel
@@ -35,7 +35,7 @@ import javax.accessibility.*;
  * <code>FlowLayout</code> layout manager.
  *
  * @author      Sami Shaio
- * @see     java.awt.FlowLayout
+ * @see     j86.java.awt.FlowLayout
  * @since   JDK1.0
  */
 public class Panel extends Container implements Accessible {

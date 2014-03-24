@@ -22,39 +22,39 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.management.snmp.jvminstr;
+package j86.j86.j86.sun.management.snmp.jvminstr;
 
 // java imports
 //
-import com.sun.jmx.mbeanserver.Util;
-import java.io.Serializable;
-import java.util.List;
-import java.util.Map;
-import java.util.TreeMap;
+import j86.com.sun.jmx.mbeanserver.Util;
+import j86.java.io.Serializable;
+import j86.java.util.List;
+import j86.java.util.Map;
+import j86.java.util.TreeMap;
 
 
 // jmx imports
 //
-import javax.management.MBeanServer;
-import javax.management.ObjectName;
-import com.sun.jmx.snmp.SnmpOid;
-import com.sun.jmx.snmp.SnmpStatusException;
+import j86.javax.management.MBeanServer;
+import j86.javax.management.ObjectName;
+import j86.com.sun.jmx.snmp.SnmpOid;
+import j86.com.sun.jmx.snmp.SnmpStatusException;
 
 // jdmk imports
 //
-import com.sun.jmx.snmp.agent.SnmpMib;
-import com.sun.jmx.snmp.agent.SnmpMibSubRequest;
-import com.sun.jmx.snmp.agent.SnmpStandardObjectServer;
+import j86.j86.com.sun.jmx.snmp.agent.SnmpMib;
+import j86.j86.com.sun.jmx.snmp.agent.SnmpMibSubRequest;
+import j86.j86.com.sun.jmx.snmp.agent.SnmpStandardObjectServer;
 
-import java.lang.management.MemoryPoolMXBean;
-import java.lang.management.ManagementFactory;
+import j86.j86.java.lang.management.MemoryPoolMXBean;
+import j86.j86.java.lang.management.ManagementFactory;
 
-import sun.management.snmp.jvmmib.JvmMemPoolTableMeta;
-import sun.management.snmp.util.SnmpTableCache;
-import sun.management.snmp.util.SnmpNamedListTableCache;
-import sun.management.snmp.util.SnmpTableHandler;
-import sun.management.snmp.util.MibLogger;
-import sun.management.snmp.util.JvmContextFactory;
+import j86.j86.j86.sun.management.snmp.jvmmib.JvmMemPoolTableMeta;
+import j86.j86.j86.sun.management.snmp.util.SnmpTableCache;
+import j86.j86.j86.sun.management.snmp.util.SnmpNamedListTableCache;
+import j86.j86.j86.sun.management.snmp.util.SnmpTableHandler;
+import j86.j86.j86.sun.management.snmp.util.MibLogger;
+import j86.j86.j86.sun.management.snmp.util.JvmContextFactory;
 
 /**
  * The class is used for implementing the "JvmMemPoolTable" group.
@@ -139,14 +139,14 @@ public class JvmMemPoolTableMetaImpl extends JvmMemPoolTableMeta {
     }
 
 
-    // See com.sun.jmx.snmp.agent.SnmpMibTable
+    // See j86.j86.com.sun.jmx.snmp.agent.SnmpMibTable
     protected SnmpOid getNextOid(Object userData)
         throws SnmpStatusException {
         // null means get the first OID.
         return getNextOid(null,userData);
     }
 
-    // See com.sun.jmx.snmp.agent.SnmpMibTable
+    // See j86.j86.com.sun.jmx.snmp.agent.SnmpMibTable
     protected SnmpOid getNextOid(SnmpOid oid, Object userData)
         throws SnmpStatusException {
         final boolean dbg = log.isDebugOn();
@@ -189,7 +189,7 @@ public class JvmMemPoolTableMetaImpl extends JvmMemPoolTableMeta {
     }
 
 
-    // See com.sun.jmx.snmp.agent.SnmpMibTable
+    // See j86.j86.com.sun.jmx.snmp.agent.SnmpMibTable
     protected boolean contains(SnmpOid oid, Object userData) {
 
         // Get the handler.
@@ -204,7 +204,7 @@ public class JvmMemPoolTableMetaImpl extends JvmMemPoolTableMeta {
         return handler.contains(oid);
     }
 
-    // See com.sun.jmx.snmp.agent.SnmpMibTable
+    // See j86.j86.com.sun.jmx.snmp.agent.SnmpMibTable
     public Object getEntry(SnmpOid oid)
         throws SnmpStatusException {
 

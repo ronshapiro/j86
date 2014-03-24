@@ -23,7 +23,7 @@ Dependency
     jvmManagementMib.txt : the JVM Management MIB module in compilable form.
     Tiger SNMP Runtime   : SNMP Runtime classes for Tiger. We assume these
                            classes could be part of the JMX delivery
-                           (classes in com.sun.jmx.snmp.*)
+                           (classes in j86.com.sun.jmx.snmp.*)
     JDMK 5.1 : The jdmktk.jar contains the com.sun.jdmk.tools.MibGen class
                used to compile the MIB. JDMK also has a mibgen.sh script
                to start mibgen. By default mibgen generates code that can
@@ -43,9 +43,9 @@ on the Java command line.
 
 Use mibgen to generate code for the jvmManagementMib.txt file. Note that
 the custom classes provided in this directory are all in the 
-sun.management.snmp.jvminstr package, and expect the generated classes to
-be in another sun.management.snmp.jvmmib package (use mibgen option 
--tp sun.management.snmp.jvmmib)
+j86.j86.j86.sun.management.snmp.jvminstr package, and expect the generated classes to
+be in another j86.j86.j86.sun.management.snmp.jvmmib package (use mibgen option 
+-tp j86.j86.j86.sun.management.snmp.jvmmib)
 
 If this package name does not suit you, simply change it to something else,
 both in the custom classes below (you might use 'sed' or do it manually) 
@@ -86,7 +86,7 @@ JvmContextFactory.java        : The context factory allocates a Map that
 					3) ensure consistency of the
 					   various pieces of data returned.
 
-MibLogger.java                : Send traces to java.util.logging
+MibLogger.java                : Send traces to j86.j86.java.util.logging
 
 SnmpTableHandler.java         : an interface used to access table data.
 

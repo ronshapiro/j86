@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.java2d.pipe;
+package j86.j86.sun.java2d.pipe;
 
-import sun.misc.Unsafe;
+import j86.sun.misc.Unsafe;
 
 
 /**

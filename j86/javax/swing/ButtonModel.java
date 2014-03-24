@@ -22,12 +22,12 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing;
+package j86.javax.swing;
 
 
-import java.awt.event.*;
-import java.awt.*;
-import javax.swing.event.*;
+import j86.j86.java.awt.event.*;
+import j86.java.awt.*;
+import j86.j86.javax.swing.event.*;
 
 /**
  * State model for buttons.
@@ -176,7 +176,7 @@ public interface ButtonModel extends ItemSelectable {
      *
      * @param s the <code>String</code> that identifies the generated event
      * @see #getActionCommand
-     * @see java.awt.event.ActionEvent#getActionCommand
+     * @see j86.j86.java.awt.event.ActionEvent#getActionCommand
      */
     public void setActionCommand(String s);
 

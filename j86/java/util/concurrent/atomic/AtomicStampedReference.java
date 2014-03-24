@@ -33,7 +33,7 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package java.util.concurrent.atomic;
+package j86.j86.j86.java.util.concurrent.atomic;
 
 /**
  * An {@code AtomicStampedReference} maintains an object reference
@@ -190,7 +190,7 @@ public class AtomicStampedReference<V> {
 
     // Unsafe mechanics
 
-    private static final sun.misc.Unsafe UNSAFE = sun.misc.Unsafe.getUnsafe();
+    private static final j86.sun.misc.Unsafe UNSAFE = sun.misc.Unsafe.getUnsafe();
     private static final long pairOffset =
         objectFieldOffset(UNSAFE, "pair", AtomicStampedReference.class);
 
@@ -198,7 +198,7 @@ public class AtomicStampedReference<V> {
         return UNSAFE.compareAndSwapObject(this, pairOffset, cmp, val);
     }
 
-    static long objectFieldOffset(sun.misc.Unsafe UNSAFE,
+    static long objectFieldOffset(j86.sun.misc.Unsafe UNSAFE,
                                   String field, Class<?> klazz) {
         try {
             return UNSAFE.objectFieldOffset(klazz.getDeclaredField(field));

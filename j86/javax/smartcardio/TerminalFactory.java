@@ -23,16 +23,16 @@
  * questions.
  */
 
-package javax.smartcardio;
+package j86.javax.smartcardio;
 
-import java.util.*;
+import j86.java.util.*;
 
-import java.security.*;
+import j86.java.security.*;
 
-import sun.security.jca.*;
-import sun.security.jca.GetInstance.*;
+import j86.sun.security.jca.*;
+import j86.sun.security.jca.GetInstance.*;
 
-import sun.security.action.GetPropertyAction;
+import j86.sun.security.action.GetPropertyAction;
 
 /**
  * A factory for CardTerminal objects.
@@ -71,7 +71,7 @@ import sun.security.action.GetPropertyAction;
  * <p><strong>Note:</strong>
  * Provider implementations that accept initialization parameters via the
  * <code>getInstance()</code> methods are strongly
- * encouraged to use a {@linkplain java.util.Properties} object as the
+ * encouraged to use a {@linkplain j86.java.util.Properties} object as the
  * representation for String name-value pair based parameters whenever
  * possible. This allows applications to more easily interoperate with
  * multiple providers than if each provider used different provider
@@ -91,7 +91,7 @@ import sun.security.action.GetPropertyAction;
 public final class TerminalFactory {
 
     private final static String PROP_NAME =
-                        "javax.smartcardio.TerminalFactory.DefaultType";
+                        "j86.javax.smartcardio.TerminalFactory.DefaultType";
 
     private final static String defaultType;
 
@@ -113,7 +113,7 @@ public final class TerminalFactory {
                 type = "PC/SC";
                 Provider sun = Security.getProvider("SunPCSC");
                 if (sun == null) {
-                    Class<?> clazz = Class.forName("sun.security.smartcardio.SunPCSC");
+                    Class<?> clazz = Class.forName("j86.sun.security.smartcardio.SunPCSC");
                     sun = (Provider)clazz.newInstance();
                 }
                 factory = TerminalFactory.getInstance(type, null, sun);
@@ -183,7 +183,7 @@ public final class TerminalFactory {
      * <p>It is determined as follows:
      *
      * when this class is initialized, the system property
-     * <code>javax.smartcardio.TerminalFactory.DefaultType</code>
+     * <code>j86.javax.smartcardio.TerminalFactory.DefaultType</code>
      * is examined. If it is set, a TerminalFactory of this type is
      * instantiated by calling the {@linkplain #getInstance
      * getInstance(String,Object)} method passing

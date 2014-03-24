@@ -23,16 +23,16 @@
  * questions.
  */
 
-package javax.naming.ldap;
+package j86.j86.javax.naming.ldap;
 
-import java.util.Iterator;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import javax.naming.ConfigurationException;
-import javax.naming.NamingException;
-import com.sun.naming.internal.VersionHelper;
-import java.util.ServiceLoader;
-import java.util.ServiceConfigurationError;
+import j86.java.util.Iterator;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.javax.naming.ConfigurationException;
+import j86.javax.naming.NamingException;
+import j86.com.sun.naming.internal.VersionHelper;
+import j86.java.util.ServiceLoader;
+import j86.java.util.ServiceConfigurationError;
 
 /**
  * This class implements the LDAPv3 Extended Request for StartTLS as
@@ -48,7 +48,7 @@ import java.util.ServiceConfigurationError;
  * the JNDI context on which <tt>extendedOperation()</tt> is invoked.
  * Typically, a JNDI program uses these classes as follows.
  * <blockquote><pre>
- * import javax.naming.ldap.*;
+ * import j86.j86.javax.naming.ldap.*;
  *
  * // Open an LDAP association
  * LdapContext ctx = new InitialLdapContext();
@@ -128,7 +128,7 @@ public class StartTlsRequest implements ExtendedRequest {
      * This method locates the implementation class by locating
      * configuration files that have the name:
      * <blockquote><tt>
-     *     META-INF/services/javax.naming.ldap.StartTlsResponse
+     *     META-INF/services/j86.j86.javax.naming.ldap.StartTlsResponse
      * </tt></blockquote>
      * The configuration files and their corresponding implementation classes must
      * be accessible to the calling thread's context class loader.
@@ -193,7 +193,7 @@ public class StartTlsRequest implements ExtendedRequest {
         try {
             VersionHelper helper = VersionHelper.getVersionHelper();
             Class<?> clas = helper.loadClass(
-                "com.sun.jndi.ldap.ext.StartTlsResponseImpl");
+                "j86.j86.com.sun.jndi.ldap.ext.StartTlsResponseImpl");
 
             resp = (StartTlsResponse) clas.newInstance();
 
@@ -216,7 +216,7 @@ public class StartTlsRequest implements ExtendedRequest {
      */
     private ConfigurationException wrapException(Exception e) {
         ConfigurationException ce = new ConfigurationException(
-            "Cannot load implementation of javax.naming.ldap.StartTlsResponse");
+            "Cannot load implementation of j86.j86.javax.naming.ldap.StartTlsResponse");
 
         ce.setRootCause(e);
         return ce;

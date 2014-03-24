@@ -24,15 +24,15 @@
  */
 
 
-package javax.print;
+package j86.javax.print;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import javax.print.attribute.AttributeSet;
+import j86.java.util.ArrayList;
+import j86.java.util.Iterator;
+import j86.j86.javax.print.attribute.AttributeSet;
 
-import sun.awt.AppContext;
-import java.util.ServiceLoader;
-import java.util.ServiceConfigurationError;
+import j86.sun.awt.AppContext;
+import j86.java.util.ServiceLoader;
+import j86.java.util.ServiceConfigurationError;
 
 /** Implementations of this class provide lookup services for
   * print services (typically equivalent to printers) of a particular type.
@@ -168,7 +168,7 @@ public abstract class PrintServiceLookup {
      * This may include making use of any preferences API that is available
      * as part of the Java or native platform.
      * This algorithm may be overridden by a user setting the property
-     * javax.print.defaultPrinter.
+     * j86.javax.print.defaultPrinter.
      * A service specified must be discovered to be valid and currently
      * available to be returned as the default.
      *
@@ -335,8 +335,8 @@ public abstract class PrintServiceLookup {
                 listOfLookupServices = initListOfLookupServices();
             }
             try {
-                java.security.AccessController.doPrivileged(
-                     new java.security.PrivilegedExceptionAction() {
+                j86.java.security.AccessController.doPrivileged(
+                     new j86.java.security.PrivilegedExceptionAction() {
                         public Object run() {
                             Iterator<PrintServiceLookup> iterator =
                                 ServiceLoader.load(PrintServiceLookup.class).
@@ -357,7 +357,7 @@ public abstract class PrintServiceLookup {
                             return null;
                         }
                 });
-            } catch (java.security.PrivilegedActionException e) {
+            } catch (j86.java.security.PrivilegedActionException e) {
             }
 
             return listOfLookupServices;

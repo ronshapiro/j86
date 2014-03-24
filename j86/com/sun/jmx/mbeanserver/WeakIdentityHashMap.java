@@ -23,15 +23,15 @@
  * questions.
  */
 
-package com.sun.jmx.mbeanserver;
+package j86.com.sun.jmx.mbeanserver;
 
-import static com.sun.jmx.mbeanserver.Util.*;
+import static j86.com.sun.jmx.mbeanserver.Util.*;
 
-import java.lang.ref.Reference;
-import java.lang.ref.ReferenceQueue;
-import java.lang.ref.WeakReference;
+import j86.j86.java.lang.ref.Reference;
+import j86.j86.java.lang.ref.ReferenceQueue;
+import j86.j86.java.lang.ref.WeakReference;
 
-import java.util.Map;
+import j86.java.util.Map;
 
 
 /**

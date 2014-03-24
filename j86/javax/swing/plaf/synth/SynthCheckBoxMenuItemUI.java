@@ -23,17 +23,17 @@
  * questions.
  */
 
-package javax.swing.plaf.synth;
+package j86.j86.j86.javax.swing.plaf.synth;
 
 
-import java.awt.*;
-import javax.swing.*;
-import javax.swing.plaf.*;
+import j86.java.awt.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.plaf.*;
 
 
 /**
  * Provides the Synth L&amp;F UI delegate for
- * {@link javax.swing.JCheckBoxMenuItem}.
+ * {@link j86.javax.swing.JCheckBoxMenuItem}.
  *
  * @author Leif Samuelsson
  * @author Georges Saab

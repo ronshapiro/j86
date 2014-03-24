@@ -25,14 +25,14 @@
 /*
  * $Id: DOMValidateContext.java,v 1.8 2005/05/10 16:31:14 mullan Exp $
  */
-package javax.xml.crypto.dsig.dom;
+package j86.j86.j86.javax.xml.crypto.dsig.dom;
 
-import javax.xml.crypto.KeySelector;
-import javax.xml.crypto.dom.DOMCryptoContext;
-import javax.xml.crypto.dsig.XMLSignature;
-import javax.xml.crypto.dsig.XMLSignatureFactory;
-import javax.xml.crypto.dsig.XMLValidateContext;
-import java.security.Key;
+import j86.javax.xml.crypto.KeySelector;
+import j86.j86.javax.xml.crypto.dom.DOMCryptoContext;
+import j86.j86.javax.xml.crypto.dsig.XMLSignature;
+import j86.j86.javax.xml.crypto.dsig.XMLSignatureFactory;
+import j86.j86.javax.xml.crypto.dsig.XMLValidateContext;
+import j86.java.security.Key;
 import org.w3c.dom.Node;
 
 /**

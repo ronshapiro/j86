@@ -27,11 +27,11 @@
  * @author Charlton Innovations, Inc.
  */
 
-package java.awt.font;
+package j86.j86.java.awt.font;
 
-import java.awt.RenderingHints;
-import static java.awt.RenderingHints.*;
-import java.awt.geom.AffineTransform;
+import j86.java.awt.RenderingHints;
+import static j86.java.awt.RenderingHints.*;
+import j86.j86.java.awt.geom.AffineTransform;
 
 /**
 *   The <code>FontRenderContext</code> class is a container for the
@@ -53,14 +53,14 @@ import java.awt.geom.AffineTransform;
 *   boundaries.
 *   <p>
 *   Typically, instances of <code>FontRenderContext</code> are
-*   obtained from a {@link java.awt.Graphics2D Graphics2D} object.  A
+*   obtained from a {@link j86.java.awt.Graphics2D Graphics2D} object.  A
 *   <code>FontRenderContext</code> which is directly constructed will
 *   most likely not represent any actual graphics device, and may lead
 *   to unexpected or incorrect results.
-*   @see java.awt.RenderingHints#KEY_TEXT_ANTIALIASING
-*   @see java.awt.RenderingHints#KEY_FRACTIONALMETRICS
-*   @see java.awt.Graphics2D#getFontRenderContext()
-*   @see java.awt.font.LineMetrics
+*   @see j86.java.awt.RenderingHints#KEY_TEXT_ANTIALIASING
+*   @see j86.java.awt.RenderingHints#KEY_FRACTIONALMETRICS
+*   @see j86.java.awt.Graphics2D#getFontRenderContext()
+*   @see j86.j86.java.awt.font.LineMetrics
 */
 
 public class FontRenderContext {
@@ -127,14 +127,14 @@ public class FontRenderContext {
      * to pixels in this <code>FontRenderContext</code>.  If null, an
      * identity transform is used.
      * @param aaHint - one of the text antialiasing rendering hint values
-     * defined in {@link java.awt.RenderingHints java.awt.RenderingHints}.
+     * defined in {@link j86.java.awt.RenderingHints java.awt.RenderingHints}.
      * Any other value will throw <code>IllegalArgumentException</code>.
-     * {@link java.awt.RenderingHints#VALUE_TEXT_ANTIALIAS_DEFAULT VALUE_TEXT_ANTIALIAS_DEFAULT}
+     * {@link j86.java.awt.RenderingHints#VALUE_TEXT_ANTIALIAS_DEFAULT VALUE_TEXT_ANTIALIAS_DEFAULT}
      * may be specified, in which case the mode used is implementation
      * dependent.
      * @param fmHint - one of the text fractional rendering hint values defined
-     * in {@link java.awt.RenderingHints java.awt.RenderingHints}.
-     * {@link java.awt.RenderingHints#VALUE_FRACTIONALMETRICS_DEFAULT VALUE_FRACTIONALMETRICS_DEFAULT}
+     * in {@link j86.java.awt.RenderingHints java.awt.RenderingHints}.
+     * {@link j86.java.awt.RenderingHints#VALUE_FRACTIONALMETRICS_DEFAULT VALUE_FRACTIONALMETRICS_DEFAULT}
      * may be specified, in which case the mode used is implementation
      * dependent.
      * Any other value will throw <code>IllegalArgumentException</code>
@@ -172,7 +172,7 @@ public class FontRenderContext {
      * @return  <code>true</code> if this <code>FontRenderContext</code>
      *          object has a non-identity AffineTransform attribute.
      *          <code>false</code> otherwise.
-     * @see     java.awt.font.FontRenderContext#getTransform
+     * @see     j86.j86.java.awt.font.FontRenderContext#getTransform
      * @since   1.6
      */
     public boolean isTransformed() {
@@ -186,7 +186,7 @@ public class FontRenderContext {
     /**
      * Returns the integer type of the affine transform for this
      * <code>FontRenderContext</code> as specified by
-     * {@link java.awt.geom.AffineTransform#getType()}
+     * {@link j86.j86.java.awt.geom.AffineTransform#getType()}
      * @return the type of the transform.
      * @see AffineTransform
      * @since 1.6
@@ -221,7 +221,7 @@ public class FontRenderContext {
     * for the specific rendering hint value.
     *   @return    <code>true</code>, if text is anti-aliased in this
     *   <code>FontRenderContext</code>; <code>false</code> otherwise.
-    *   @see        java.awt.RenderingHints#KEY_TEXT_ANTIALIASING
+    *   @see        j86.java.awt.RenderingHints#KEY_TEXT_ANTIALIASING
     *   @see #FontRenderContext(AffineTransform,boolean,boolean)
     *   @see #FontRenderContext(AffineTransform,Object,Object)
     */
@@ -238,7 +238,7 @@ public class FontRenderContext {
     *   @return    <code>true</code>, if layout should be performed with
     *   fractional metrics; <code>false</code> otherwise.
     *               in this <code>FontRenderContext</code>.
-    *   @see java.awt.RenderingHints#KEY_FRACTIONALMETRICS
+    *   @see j86.java.awt.RenderingHints#KEY_FRACTIONALMETRICS
     *   @see #FontRenderContext(AffineTransform,boolean,boolean)
     *   @see #FontRenderContext(AffineTransform,Object,Object)
     */
@@ -251,7 +251,7 @@ public class FontRenderContext {
      * Return the text anti-aliasing rendering mode hint used in this
      * <code>FontRenderContext</code>.
      * This will be one of the text antialiasing rendering hint values
-     * defined in {@link java.awt.RenderingHints java.awt.RenderingHints}.
+     * defined in {@link j86.java.awt.RenderingHints java.awt.RenderingHints}.
      * @return  text anti-aliasing rendering mode hint used in this
      * <code>FontRenderContext</code>.
      * @since 1.6
@@ -271,7 +271,7 @@ public class FontRenderContext {
      * Return the text fractional metrics rendering mode hint used in this
      * <code>FontRenderContext</code>.
      * This will be one of the text fractional metrics rendering hint values
-     * defined in {@link java.awt.RenderingHints java.awt.RenderingHints}.
+     * defined in {@link j86.java.awt.RenderingHints java.awt.RenderingHints}.
      * @return the text fractional metrics rendering mode hint used in this
      * <code>FontRenderContext</code>.
      * @since 1.6

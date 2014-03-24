@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.tracing.dtrace;
+package j86.j86.sun.tracing.dtrace;
 
-import java.lang.ref.WeakReference;
-import java.lang.ref.ReferenceQueue;
-import java.security.Permission;
-import java.util.HashSet;
+import j86.j86.java.lang.ref.WeakReference;
+import j86.j86.java.lang.ref.ReferenceQueue;
+import j86.java.security.Permission;
+import j86.java.util.HashSet;
 
 class Activation {
     private SystemResource resource;
@@ -38,7 +38,7 @@ class Activation {
         SecurityManager security = System.getSecurityManager();
         if (security != null) {
             Permission perm =
-                new RuntimePermission("com.sun.tracing.dtrace.createProvider");
+                new RuntimePermission("com.j86.j86.sun.tracing.dtrace.createProvider");
             security.checkPermission(perm);
         }
         referenceCount = providers.length;

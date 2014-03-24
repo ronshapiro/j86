@@ -23,14 +23,14 @@
  * questions.
  */
 
-package java.nio.channels;
+package j86.j86.java.nio.channels;
 
-import java.net.InetAddress;
-import java.net.NetworkInterface;
-import java.io.IOException;
-import java.net.ProtocolFamily;             // javadoc
-import java.net.StandardProtocolFamily;     // javadoc
-import java.net.StandardSocketOptions;      // javadoc
+import j86.java.net.InetAddress;
+import j86.java.net.NetworkInterface;
+import j86.java.io.IOException;
+import j86.java.net.ProtocolFamily;             // javadoc
+import j86.java.net.StandardProtocolFamily;     // javadoc
+import j86.java.net.StandardSocketOptions;      // javadoc
 
 /**
  * A network channel that supports Internet Protocol (IP) multicasting.

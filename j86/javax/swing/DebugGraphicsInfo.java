@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.swing;
+package j86.javax.swing;
 
-import java.awt.*;
-import java.util.*;
+import j86.java.awt.*;
+import j86.java.util.*;
 
 /** Class used by DebugGraphics for maintaining information about how
   * to render graphics calls.
@@ -39,7 +39,7 @@ class DebugGraphicsInfo {
     int                  flashCount = 2;
     Hashtable<JComponent, Integer> componentToDebug;
     JFrame               debugFrame = null;
-    java.io.PrintStream  stream = System.out;
+    j86.java.io.PrintStream  stream = System.out;
 
     void setDebugOptions(JComponent component, int debug) {
         if (debug == 0) {

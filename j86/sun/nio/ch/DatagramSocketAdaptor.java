@@ -23,18 +23,18 @@
  * questions.
  */
 
-package sun.nio.ch;
+package j86.j86.j86.sun.nio.ch;
 
-import java.io.*;
-import java.net.*;
-import java.nio.*;
-import java.nio.channels.*;
+import j86.java.io.*;
+import j86.java.net.*;
+import j86.java.nio.*;
+import j86.j86.java.nio.channels.*;
 
 
 // Make a datagram-socket channel look like a datagram socket.
 //
 // The methods in this class are defined in exactly the same order as in
-// java.net.DatagramSocket so as to simplify tracking future changes to that
+// j86.java.net.DatagramSocket so as to simplify tracking future changes to that
 // class.
 //
 

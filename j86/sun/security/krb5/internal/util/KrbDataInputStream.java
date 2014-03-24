@@ -29,11 +29,11 @@
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
 
-package sun.security.krb5.internal.util;
+package j86.j86.j86.sun.security.krb5.internal.util;
 
-import java.io.BufferedInputStream;
-import java.io.InputStream;
-import java.io.IOException;
+import j86.java.io.BufferedInputStream;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
 
 /**
  * This class implements a buffered input stream. It provides methods to read a chunck
@@ -46,8 +46,8 @@ public class KrbDataInputStream extends BufferedInputStream{
     private boolean bigEndian = true;
 
     public void setNativeByteOrder() {
-        if (java.nio.ByteOrder.nativeOrder().
-                equals(java.nio.ByteOrder.BIG_ENDIAN)) {
+        if (j86.java.nio.ByteOrder.nativeOrder().
+                equals(j86.java.nio.ByteOrder.BIG_ENDIAN)) {
             bigEndian = true;
         } else {
             bigEndian = false;

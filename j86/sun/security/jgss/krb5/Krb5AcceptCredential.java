@@ -23,18 +23,18 @@
  * questions.
  */
 
-package sun.security.jgss.krb5;
+package j86.j86.sun.security.jgss.krb5;
 
-import java.io.IOException;
-import org.ietf.jgss.*;
-import sun.security.jgss.GSSCaller;
-import sun.security.jgss.spi.*;
-import sun.security.krb5.*;
-import java.security.PrivilegedActionException;
-import java.security.PrivilegedExceptionAction;
-import java.security.AccessController;
-import java.security.AccessControlContext;
-import javax.security.auth.DestroyFailedException;
+import j86.java.io.IOException;
+import j86.org.ietf.jgss.*;
+import j86.sun.security.jgss.GSSCaller;
+import j86.j86.sun.security.jgss.spi.*;
+import j86.sun.security.krb5.*;
+import j86.java.security.PrivilegedActionException;
+import j86.java.security.PrivilegedExceptionAction;
+import j86.java.security.AccessController;
+import j86.java.security.AccessControlContext;
+import j86.javax.security.auth.DestroyFailedException;
 
 /**
  * Implements the krb5 acceptor credential element.
@@ -148,7 +148,7 @@ public class Krb5AcceptCredential
         return Krb5MechFactory.GSS_KRB5_MECH_OID;
     }
 
-    public final java.security.Provider getProvider() {
+    public final j86.java.security.Provider getProvider() {
         return Krb5MechFactory.PROVIDER;
     }
 

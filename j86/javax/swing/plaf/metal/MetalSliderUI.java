@@ -23,18 +23,18 @@
  * questions.
  */
 
-package javax.swing.plaf.metal;
+package j86.j86.j86.javax.swing.plaf.metal;
 
-import javax.swing.plaf.basic.BasicSliderUI;
+import j86.j86.j86.javax.swing.plaf.basic.BasicSliderUI;
 
-import java.awt.Graphics;
-import java.awt.Dimension;
-import java.awt.Rectangle;
-import java.awt.Color;
-import java.beans.*;
+import j86.java.awt.Graphics;
+import j86.java.awt.Dimension;
+import j86.java.awt.Rectangle;
+import j86.java.awt.Color;
+import j86.java.beans.*;
 
-import javax.swing.*;
-import javax.swing.plaf.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.plaf.*;
 
 /**
  * A Java L&amp;F implementation of SliderUI.
@@ -45,8 +45,8 @@ import javax.swing.plaf.*;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @author Tom Santos
  */

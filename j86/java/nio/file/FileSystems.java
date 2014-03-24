@@ -23,15 +23,15 @@
  * questions.
  */
 
-package java.nio.file;
+package j86.j86.java.nio.file;
 
-import java.nio.file.spi.FileSystemProvider;
-import java.net.URI;
-import java.io.IOException;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.util.*;
-import java.lang.reflect.Constructor;
+import j86.j86.j86.java.nio.file.spi.FileSystemProvider;
+import j86.java.net.URI;
+import j86.java.io.IOException;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.util.*;
+import j86.j86.j86.java.lang.reflect.Constructor;
 
 /**
  * Factory methods for file systems. This class defines the {@link #getDefault
@@ -55,7 +55,7 @@ import java.lang.reflect.Constructor;
  * if there is no extension class loader then the bootstrap class loader is used.
  * Providers are typically installed by placing them in a JAR file on the
  * application class path or in the extension directory, the JAR file contains a
- * provider-configuration file named {@code java.nio.file.spi.FileSystemProvider}
+ * provider-configuration file named {@code j86.j86.j86.java.nio.file.spi.FileSystemProvider}
  * in the resource directory {@code META-INF/services}, and the file lists one or
  * more fully-qualified names of concrete subclass of {@link FileSystemProvider}
  * that have a zero argument constructor.
@@ -105,12 +105,12 @@ public final class FileSystems {
 
         // returns default provider
         private static FileSystemProvider getDefaultProvider() {
-            FileSystemProvider provider = sun.nio.fs.DefaultFileSystemProvider.create();
+            FileSystemProvider provider = j86.j86.sun.nio.fs.DefaultFileSystemProvider.create();
 
-            // if the property java.nio.file.spi.DefaultFileSystemProvider is
+            // if the property j86.j86.j86.java.nio.file.spi.DefaultFileSystemProvider is
             // set then its value is the name of the default provider (or a list)
             String propValue = System
-                .getProperty("java.nio.file.spi.DefaultFileSystemProvider");
+                .getProperty("j86.j86.j86.java.nio.file.spi.DefaultFileSystemProvider");
             if (propValue != null) {
                 for (String cn: propValue.split(",")) {
                     try {
@@ -138,16 +138,16 @@ public final class FileSystems {
      * objects that provide access to the file systems accessible to the Java
      * virtual machine. The <em>working directory</em> of the file system is
      * the current user directory, named by the system property {@code user.dir}.
-     * This allows for interoperability with the {@link java.io.File java.io.File}
+     * This allows for interoperability with the {@link j86.java.io.File java.io.File}
      * class.
      *
      * <p> The first invocation of any of the methods defined by this class
      * locates the default {@link FileSystemProvider provider} object. Where the
-     * system property {@code java.nio.file.spi.DefaultFileSystemProvider} is
+     * system property {@code j86.j86.j86.java.nio.file.spi.DefaultFileSystemProvider} is
      * not defined then the default provider is a system-default provider that
      * is invoked to create the default file system.
      *
-     * <p> If the system property {@code java.nio.file.spi.DefaultFileSystemProvider}
+     * <p> If the system property {@code j86.j86.j86.java.nio.file.spi.DefaultFileSystemProvider}
      * is defined then it is taken to be a list of one or more fully-qualified
      * names of concrete provider classes identified by the URI scheme
      * {@code "file"}. Where the property is a list of more than one name then

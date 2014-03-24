@@ -23,8 +23,8 @@
  * questions.
  */
 
-package java.util;
-import java.util.Map.Entry;
+package j86.java.util;
+import j86.java.util.Map.Entry;
 
 /**
  * This class provides a skeletal implementation of the <tt>Map</tt>
@@ -582,7 +582,7 @@ public abstract class AbstractMap<K,V> implements Map<K,V> {
      * @since 1.6
      */
     public static class SimpleEntry<K,V>
-        implements Entry<K,V>, java.io.Serializable
+        implements Entry<K,V>, j86.java.io.Serializable
     {
         private static final long serialVersionUID = -8499721149061103585L;
 
@@ -712,7 +712,7 @@ public abstract class AbstractMap<K,V> implements Map<K,V> {
      * @since 1.6
      */
     public static class SimpleImmutableEntry<K,V>
-        implements Entry<K,V>, java.io.Serializable
+        implements Entry<K,V>, j86.java.io.Serializable
     {
         private static final long serialVersionUID = 7138329143949025153L;
 

@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.awt.datatransfer;
+package j86.j86.java.awt.datatransfer;
 
-import java.util.List;
+import j86.java.util.List;
 
 
 /**
@@ -53,7 +53,7 @@ public interface FlavorTable extends FlavorMap {
      *        should be returned. If <code>null</code> is specified, all
      *        natives currently known to this <code>FlavorTable</code> are
      *        returned in a non-deterministic order.
-     * @return a <code>java.util.List</code> of <code>java.lang.String</code>
+     * @return a <code>j86.java.util.List</code> of <code>j86.java.lang.String</code>
      *         objects which are platform-specific representations of platform-
      *         specific data formats
      */
@@ -74,7 +74,7 @@ public interface FlavorTable extends FlavorMap {
      *        <code>DataFlavor</code>s currently known to this
      *        <code>FlavorTable</code> are returned in a non-deterministic
      *        order.
-     * @return a <code>java.util.List</code> of <code>DataFlavor</code>
+     * @return a <code>j86.java.util.List</code> of <code>DataFlavor</code>
      *         objects into which platform-specific data in the specified,
      *         platform-specific native can be translated
      */

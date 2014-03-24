@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.tools.jstatd;
+package j86.j86.sun.tools.jstatd;
 
-import java.rmi.*;
-import java.rmi.server.*;
-import java.rmi.registry.Registry;
-import java.rmi.registry.LocateRegistry;
-import java.net.MalformedURLException;
-import sun.jvmstat.monitor.remote.*;
+import j86.java.rmi.*;
+import j86.j86.java.rmi.server.*;
+import j86.j86.java.rmi.registry.Registry;
+import j86.j86.java.rmi.registry.LocateRegistry;
+import j86.java.net.MalformedURLException;
+import j86.j86.sun.jvmstat.monitor.remote.*;
 
 /**
  * Application providing remote access to the jvmstat instrumentation
@@ -55,7 +55,7 @@ public class Jstatd {
 
         try {
             Naming.rebind(name, remoteHost);
-        } catch (java.rmi.ConnectException e) {
+        } catch (j86.java.rmi.ConnectException e) {
             /*
              * either the registry is not running or we cannot contact it.
              * start an internal registry if requested.
@@ -136,7 +136,7 @@ public class Jstatd {
 
         try {
             // use 1.5.0 dynamically generated subs.
-            System.setProperty("java.rmi.server.ignoreSubClasses", "true");
+            System.setProperty("j86.j86.java.rmi.server.ignoreSubClasses", "true");
             RemoteHostImpl remoteHost = new RemoteHostImpl();
             RemoteHost stub = (RemoteHost) UnicastRemoteObject.exportObject(
                     remoteHost, 0);
@@ -149,7 +149,7 @@ public class Jstatd {
                                    + e.getMessage());
             }
             System.exit(1);
-        } catch (java.rmi.ConnectException e) {
+        } catch (j86.java.rmi.ConnectException e) {
             // could not attach to or create a registry
             System.out.println("Could not contact RMI registry\n"
                                + e.getMessage());

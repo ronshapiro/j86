@@ -21,22 +21,22 @@
  * under the License.
  */
 
-package org.jcp.xml.dsig.internal.dom;
+package j86.j86.org.jcp.xml.dsig.internal.dom;
 
-import java.security.Key;
-import java.security.InvalidAlgorithmParameterException;
-import java.security.InvalidKeyException;
-import java.security.SignatureException;
-import java.security.spec.AlgorithmParameterSpec;
-import javax.xml.crypto.MarshalException;
-import javax.xml.crypto.dom.DOMCryptoContext;
-import javax.xml.crypto.dsig.SignatureMethod;
-import javax.xml.crypto.dsig.SignedInfo;
-import javax.xml.crypto.dsig.XMLSignature;
-import javax.xml.crypto.dsig.XMLSignatureException;
-import javax.xml.crypto.dsig.XMLSignContext;
-import javax.xml.crypto.dsig.XMLValidateContext;
-import javax.xml.crypto.dsig.spec.SignatureMethodParameterSpec;
+import j86.java.security.Key;
+import j86.java.security.InvalidAlgorithmParameterException;
+import j86.java.security.InvalidKeyException;
+import j86.java.security.SignatureException;
+import j86.j86.java.security.spec.AlgorithmParameterSpec;
+import j86.javax.xml.crypto.MarshalException;
+import j86.j86.javax.xml.crypto.dom.DOMCryptoContext;
+import j86.j86.javax.xml.crypto.dsig.SignatureMethod;
+import j86.j86.javax.xml.crypto.dsig.SignedInfo;
+import j86.j86.javax.xml.crypto.dsig.XMLSignature;
+import j86.j86.javax.xml.crypto.dsig.XMLSignatureException;
+import j86.j86.javax.xml.crypto.dsig.XMLSignContext;
+import j86.j86.javax.xml.crypto.dsig.XMLValidateContext;
+import j86.j86.j86.javax.xml.crypto.dsig.spec.SignatureMethodParameterSpec;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -91,7 +91,7 @@ abstract class AbstractDOMSignatureMethod extends DOMStructure
         throws InvalidKeyException, XMLSignatureException;
 
     /**
-     * Returns the java.security.Signature or javax.crypto.Mac standard
+     * Returns the j86.java.security.Signature or j86.javax.crypto.Mac standard
      * algorithm name.
      */
     abstract String getJCAAlgorithm();

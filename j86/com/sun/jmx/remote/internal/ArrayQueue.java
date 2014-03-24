@@ -23,10 +23,10 @@
  * questions.
  */
 
-package com.sun.jmx.remote.internal;
+package j86.com.sun.jmx.remote.internal;
 
-import java.util.AbstractList;
-import java.util.Iterator;
+import j86.java.util.AbstractList;
+import j86.java.util.Iterator;
 
 public class ArrayQueue<T> extends AbstractList<T> {
     public ArrayQueue(int capacity) {

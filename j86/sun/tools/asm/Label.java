@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.tools.asm;
+package j86.sun.tools.asm;
 
-import sun.tools.java.MemberDefinition;
-import java.io.OutputStream;
+import j86.sun.tools.java.MemberDefinition;
+import j86.java.io.OutputStream;
 
 /**
  * A label instruction. This is a 0 size instruction.

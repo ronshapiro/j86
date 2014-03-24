@@ -23,49 +23,49 @@
  * questions.
  */
 
-package java.util;
+package j86.java.util;
 
-import java.io.BufferedWriter;
-import java.io.Closeable;
-import java.io.IOException;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.FileNotFoundException;
-import java.io.Flushable;
-import java.io.OutputStream;
-import java.io.OutputStreamWriter;
-import java.io.PrintStream;
-import java.io.UnsupportedEncodingException;
-import java.math.BigDecimal;
-import java.math.BigInteger;
-import java.math.MathContext;
-import java.math.RoundingMode;
-import java.nio.charset.Charset;
-import java.nio.charset.IllegalCharsetNameException;
-import java.nio.charset.UnsupportedCharsetException;
-import java.text.DateFormatSymbols;
-import java.text.DecimalFormat;
-import java.text.DecimalFormatSymbols;
-import java.text.NumberFormat;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import j86.java.io.BufferedWriter;
+import j86.java.io.Closeable;
+import j86.java.io.IOException;
+import j86.java.io.File;
+import j86.java.io.FileOutputStream;
+import j86.java.io.FileNotFoundException;
+import j86.java.io.Flushable;
+import j86.java.io.OutputStream;
+import j86.java.io.OutputStreamWriter;
+import j86.java.io.PrintStream;
+import j86.java.io.UnsupportedEncodingException;
+import j86.java.math.BigDecimal;
+import j86.java.math.BigInteger;
+import j86.java.math.MathContext;
+import j86.java.math.RoundingMode;
+import j86.j86.java.nio.charset.Charset;
+import j86.j86.java.nio.charset.IllegalCharsetNameException;
+import j86.j86.java.nio.charset.UnsupportedCharsetException;
+import j86.java.text.DateFormatSymbols;
+import j86.java.text.DecimalFormat;
+import j86.java.text.DecimalFormatSymbols;
+import j86.java.text.NumberFormat;
+import j86.j86.java.util.regex.Matcher;
+import j86.j86.java.util.regex.Pattern;
 
-import java.time.DateTimeException;
-import java.time.Instant;
-import java.time.ZoneId;
-import java.time.ZoneOffset;
-import java.time.temporal.ChronoField;
-import java.time.temporal.TemporalAccessor;
-import java.time.temporal.TemporalQueries;
+import j86.java.time.DateTimeException;
+import j86.java.time.Instant;
+import j86.java.time.ZoneId;
+import j86.java.time.ZoneOffset;
+import j86.j86.java.time.temporal.ChronoField;
+import j86.j86.java.time.temporal.TemporalAccessor;
+import j86.j86.java.time.temporal.TemporalQueries;
 
-import sun.misc.DoubleConsts;
-import sun.misc.FormattedFloatingDecimal;
+import j86.sun.misc.DoubleConsts;
+import j86.sun.misc.FormattedFloatingDecimal;
 
 /**
  * An interpreter for printf-style format strings.  This class provides support
  * for layout justification and alignment, common formats for numeric, string,
  * and date/time data, and locale-specific output.  Common Java types such as
- * {@code byte}, {@link java.math.BigDecimal BigDecimal}, and {@link Calendar}
+ * {@code byte}, {@link j86.java.math.BigDecimal BigDecimal}, and {@link Calendar}
  * are supported.  Limited formatting customization for arbitrary user types is
  * provided through the {@link Formattable} interface.
  *
@@ -126,9 +126,9 @@ import sun.misc.FormattedFloatingDecimal;
  *
  * <blockquote><pre>
  *   // Format a string containing a date.
- *   import java.util.Calendar;
- *   import java.util.GregorianCalendar;
- *   import static java.util.Calendar.*;
+ *   import j86.java.util.Calendar;
+ *   import j86.java.util.GregorianCalendar;
+ *   import static j86.java.util.Calendar.*;
  *
  *   Calendar c = new GregorianCalendar(1995, MAY, 23);
  *   String s = String.format("Duke's Birthday: %1$tb %1$te, %1$tY", c);
@@ -172,7 +172,7 @@ import sun.misc.FormattedFloatingDecimal;
  *
  * The argument list consists of all arguments passed to the method after the
  * format string.  In the above example, the argument list is of size one and
- * consists of the {@link java.util.Calendar Calendar} object {@code c}.
+ * consists of the {@link j86.java.util.Calendar Calendar} object {@code c}.
  *
  * <ul>
  *
@@ -252,12 +252,12 @@ import sun.misc.FormattedFloatingDecimal;
  *
  * <li> <b>Integral</b> - may be applied to Java integral types: {@code byte},
  * {@link Byte}, {@code short}, {@link Short}, {@code int} and {@link
- * Integer}, {@code long}, {@link Long}, and {@link java.math.BigInteger
+ * Integer}, {@code long}, {@link Long}, and {@link j86.java.math.BigInteger
  * BigInteger} (but not {@code char} or {@link Character})
  *
  * <li><b>Floating Point</b> - may be applied to Java floating-point types:
  * {@code float}, {@link Float}, {@code double}, {@link Double}, and {@link
- * java.math.BigDecimal BigDecimal}
+ * j86.java.math.BigDecimal BigDecimal}
  *
  * </ol>
  *
@@ -277,7 +277,7 @@ import sun.misc.FormattedFloatingDecimal;
  * {@code 'S'}, {@code 'C'}, {@code 'X'}, {@code 'E'}, {@code 'G'},
  * {@code 'A'}, and {@code 'T'}) are the same as those for the corresponding
  * lower-case conversion characters except that the result is converted to
- * upper case according to the rules of the prevailing {@link java.util.Locale
+ * upper case according to the rules of the prevailing {@link j86.java.util.Locale
  * Locale}.  The result is equivalent to the following invocation of {@link
  * String#toUpperCase()}
  *
@@ -412,7 +412,7 @@ import sun.misc.FormattedFloatingDecimal;
  *
  * <tr><td valign="top">{@code 'p'}
  *     <td> Locale-specific {@linkplain
- *     java.text.DateFormatSymbols#getAmPmStrings morning or afternoon} marker
+ *     j86.java.text.DateFormatSymbols#getAmPmStrings morning or afternoon} marker
  *     in lower case, e.g."{@code am}" or "{@code pm}". Use of the conversion
  *     prefix {@code 'T'} forces this output to upper case.
  *
@@ -449,12 +449,12 @@ import sun.misc.FormattedFloatingDecimal;
  * <table cellpadding=5 summary="date">
  *
  * <tr><td valign="top">{@code 'B'}
- *     <td> Locale-specific {@linkplain java.text.DateFormatSymbols#getMonths
+ *     <td> Locale-specific {@linkplain j86.java.text.DateFormatSymbols#getMonths
  *     full month name}, e.g. {@code "January"}, {@code "February"}.
  *
  * <tr><td valign="top">{@code 'b'}
  *     <td> Locale-specific {@linkplain
- *     java.text.DateFormatSymbols#getShortMonths abbreviated month name},
+ *     j86.java.text.DateFormatSymbols#getShortMonths abbreviated month name},
  *     e.g. {@code "Jan"}, {@code "Feb"}.
  *
  * <tr><td valign="top">{@code 'h'}
@@ -462,12 +462,12 @@ import sun.misc.FormattedFloatingDecimal;
  *
  * <tr><td valign="top">{@code 'A'}
  *     <td> Locale-specific full name of the {@linkplain
- *     java.text.DateFormatSymbols#getWeekdays day of the week},
+ *     j86.java.text.DateFormatSymbols#getWeekdays day of the week},
  *     e.g. {@code "Sunday"}, {@code "Monday"}
  *
  * <tr><td valign="top">{@code 'a'}
  *     <td> Locale-specific short name of the {@linkplain
- *     java.text.DateFormatSymbols#getShortWeekdays day of the week},
+ *     j86.java.text.DateFormatSymbols#getShortWeekdays day of the week},
  *     e.g. {@code "Sun"}, {@code "Mon"}
  *
  * <tr><td valign="top">{@code 'C'}
@@ -586,7 +586,7 @@ import sun.misc.FormattedFloatingDecimal;
  *     <td align="center" valign="top"> y<sup>5</sup>
  *     <td align="center" valign="top"> -
  *     <td> The result will include locale-specific {@linkplain
- *     java.text.DecimalFormatSymbols#getGroupingSeparator grouping separators}
+ *     j86.java.text.DecimalFormatSymbols#getGroupingSeparator grouping separators}
  *
  * <tr><td> '(' <td align="center" valign="top"> -
  *     <td align="center" valign="top"> -
@@ -605,7 +605,7 @@ import sun.misc.FormattedFloatingDecimal;
  * conversions only.
  *
  * <p> <sup>4</sup> For {@code 'd'}, {@code 'o'}, {@code 'x'}, and
- * {@code 'X'} conversions applied to {@link java.math.BigInteger BigInteger}
+ * {@code 'X'} conversions applied to {@link j86.java.math.BigInteger BigInteger}
  * or {@code 'd'} applied to {@code byte}, {@link Byte}, {@code short}, {@link
  * Short}, {@code int} and {@link Integer}, {@code long}, and {@link Long}.
  *
@@ -680,14 +680,14 @@ import sun.misc.FormattedFloatingDecimal;
  * <p> All specified exceptions may be thrown by any of the {@code format}
  * methods of {@code Formatter} as well as by any {@code format} convenience
  * methods such as {@link String#format(String,Object...) String.format} and
- * {@link java.io.PrintStream#printf(String,Object...) PrintStream.printf}.
+ * {@link j86.java.io.PrintStream#printf(String,Object...) PrintStream.printf}.
  *
  * <p> Conversions denoted by an upper-case character (i.e. {@code 'B'},
  * {@code 'H'}, {@code 'S'}, {@code 'C'}, {@code 'X'}, {@code 'E'},
  * {@code 'G'}, {@code 'A'}, and {@code 'T'}) are the same as those for the
  * corresponding lower-case conversion characters except that the result is
  * converted to upper case according to the rules of the prevailing {@link
- * java.util.Locale Locale}.  The result is equivalent to the following
+ * j86.java.util.Locale Locale}.  The result is equivalent to the following
  * invocation of {@link String#toUpperCase()}
  *
  * <pre>
@@ -850,24 +850,24 @@ import sun.misc.FormattedFloatingDecimal;
  *
  * <li> Each digit character <i>d</i> in the string is replaced by a
  * locale-specific digit computed relative to the current locale's
- * {@linkplain java.text.DecimalFormatSymbols#getZeroDigit() zero digit}
+ * {@linkplain j86.java.text.DecimalFormatSymbols#getZeroDigit() zero digit}
  * <i>z</i>; that is <i>d&nbsp;-&nbsp;</i> {@code '0'}
  * <i>&nbsp;+&nbsp;z</i>.
  *
  * <li> If a decimal separator is present, a locale-specific {@linkplain
- * java.text.DecimalFormatSymbols#getDecimalSeparator decimal separator} is
+ * j86.java.text.DecimalFormatSymbols#getDecimalSeparator decimal separator} is
  * substituted.
  *
  * <li> If the {@code ','} (<tt>'&#92;u002c'</tt>)
  * <a name="L10nGroup">flag</a> is given, then the locale-specific {@linkplain
- * java.text.DecimalFormatSymbols#getGroupingSeparator grouping separator} is
+ * j86.java.text.DecimalFormatSymbols#getGroupingSeparator grouping separator} is
  * inserted by scanning the integer part of the string from least significant
  * to most significant digits and inserting a separator at intervals defined by
- * the locale's {@linkplain java.text.DecimalFormat#getGroupingSize() grouping
+ * the locale's {@linkplain j86.java.text.DecimalFormat#getGroupingSize() grouping
  * size}.
  *
  * <li> If the {@code '0'} flag is given, then the locale-specific {@linkplain
- * java.text.DecimalFormatSymbols#getZeroDigit() zero digits} are inserted
+ * j86.java.text.DecimalFormatSymbols#getZeroDigit() zero digits} are inserted
  * after the sign character, if any, and before the first non-zero digit, until
  * the length of the string is equal to the requested field width.
  *
@@ -998,7 +998,7 @@ import sun.misc.FormattedFloatingDecimal;
  * <tr><td valign="top"> {@code '0'}
  *     <td valign="top"> <tt>'&#92;u0030'</tt>
  *     <td> Requires the output to be padded with leading {@linkplain
- *     java.text.DecimalFormatSymbols#getZeroDigit zeros} to the minimum field
+ *     j86.java.text.DecimalFormatSymbols#getZeroDigit zeros} to the minimum field
  *     width following any sign or radix indicator except when converting NaN
  *     or infinity.  If the width is not provided, then a {@link
  *     MissingFormatWidthException} will be thrown.
@@ -1009,7 +1009,7 @@ import sun.misc.FormattedFloatingDecimal;
  * <tr><td valign="top"> {@code ','}
  *     <td valign="top"> <tt>'&#92;u002c'</tt>
  *     <td> Requires the output to include the locale-specific {@linkplain
- *     java.text.DecimalFormatSymbols#getGroupingSeparator group separators} as
+ *     j86.java.text.DecimalFormatSymbols#getGroupingSeparator group separators} as
  *     described in the <a href="#L10nGroup">"group" section</a> of the
  *     localization algorithm.
  *
@@ -1052,7 +1052,7 @@ import sun.misc.FormattedFloatingDecimal;
  * <p><a name="dnbint"><b> BigInteger </b></a>
  *
  * <p> The following conversions may be applied to {@link
- * java.math.BigInteger}.
+ * j86.java.math.BigInteger}.
  *
  * <table cellpadding=5 summary="BIntConv">
  *
@@ -1189,7 +1189,7 @@ import sun.misc.FormattedFloatingDecimal;
  *     than the number of digits which would appear after the decimal point in
  *     the string returned by {@link Float#toString(float)} or {@link
  *     Double#toString(double)} respectively, then the value will be rounded
- *     using the {@linkplain java.math.BigDecimal#ROUND_HALF_UP round half up
+ *     using the {@linkplain j86.java.math.BigDecimal#ROUND_HALF_UP round half up
  *     algorithm}.  Otherwise, zeros may be appended to reach the precision.
  *     For a canonical representation of the value, use {@link
  *     Float#toString(float)} or {@link Double#toString(double)} as
@@ -1258,7 +1258,7 @@ import sun.misc.FormattedFloatingDecimal;
  *     than the number of digits which would appear after the decimal point in
  *     the string returned by {@link Float#toString(float)} or {@link
  *     Double#toString(double)} respectively, then the value will be rounded
- *     using the {@linkplain java.math.BigDecimal#ROUND_HALF_UP round half up
+ *     using the {@linkplain j86.java.math.BigDecimal#ROUND_HALF_UP round half up
  *     algorithm}.  Otherwise, zeros may be appended to reach the precision.
  *     For a canonical representation of the value, use {@link
  *     Float#toString(float)} or {@link Double#toString(double)} as
@@ -1379,7 +1379,7 @@ import sun.misc.FormattedFloatingDecimal;
  *
  * <p><a name="dnbdec"><b> BigDecimal </b></a>
  *
- * <p> The following conversions may be applied {@link java.math.BigDecimal
+ * <p> The following conversions may be applied {@link j86.java.math.BigDecimal
  * BigDecimal}.
  *
  * <table cellpadding=5 summary="floatConv">
@@ -1418,7 +1418,7 @@ import sun.misc.FormattedFloatingDecimal;
  *     specified then the default value is {@code 6}.  If the precision is
  *     less than the number of digits to the right of the decimal point then
  *     the value will be rounded using the
- *     {@linkplain java.math.BigDecimal#ROUND_HALF_UP round half up
+ *     {@linkplain j86.java.math.BigDecimal#ROUND_HALF_UP round half up
  *     algorithm}.  Otherwise, zeros may be appended to reach the precision.
  *     For a canonical representation of the value, use {@link
  *     BigDecimal#toString()}.
@@ -1481,7 +1481,7 @@ import sun.misc.FormattedFloatingDecimal;
  *     specified then the default value is {@code 6}.  If the precision is
  *     less than the number of digits to the right of the decimal point
  *     then the value will be rounded using the
- *     {@linkplain java.math.BigDecimal#ROUND_HALF_UP round half up
+ *     {@linkplain j86.java.math.BigDecimal#ROUND_HALF_UP round half up
  *     algorithm}.  Otherwise, zeros may be appended to reach the precision.
  *     For a canonical representation of the value, use {@link
  *     BigDecimal#toString()}.
@@ -1576,7 +1576,7 @@ import sun.misc.FormattedFloatingDecimal;
  * <tr><td valign="top">{@code 'p'}
  *     <td valign="top"> <tt>'&#92;u0070'</tt>
  *     <td> Locale-specific {@linkplain
- *     java.text.DateFormatSymbols#getAmPmStrings morning or afternoon} marker
+ *     j86.java.text.DateFormatSymbols#getAmPmStrings morning or afternoon} marker
  *     in lower case, e.g."{@code am}" or "{@code pm}".  Use of the
  *     conversion prefix {@code 'T'} forces this output to upper case.  (Note
  *     that {@code 'p'} produces lower-case output.  This is different from
@@ -1622,13 +1622,13 @@ import sun.misc.FormattedFloatingDecimal;
  *
  * <tr><td valign="top">{@code 'B'}
  *     <td valign="top"> <tt>'&#92;u0042'</tt>
- *     <td> Locale-specific {@linkplain java.text.DateFormatSymbols#getMonths
+ *     <td> Locale-specific {@linkplain j86.java.text.DateFormatSymbols#getMonths
  *     full month name}, e.g. {@code "January"}, {@code "February"}.
  *
  * <tr><td valign="top">{@code 'b'}
  *     <td valign="top"> <tt>'&#92;u0062'</tt>
  *     <td> Locale-specific {@linkplain
- *     java.text.DateFormatSymbols#getShortMonths abbreviated month name},
+ *     j86.java.text.DateFormatSymbols#getShortMonths abbreviated month name},
  *     e.g. {@code "Jan"}, {@code "Feb"}.
  *
  * <tr><td valign="top">{@code 'h'}
@@ -1638,13 +1638,13 @@ import sun.misc.FormattedFloatingDecimal;
  * <tr><td valign="top">{@code 'A'}
  *     <td valign="top"> <tt>'&#92;u0041'</tt>
  *     <td> Locale-specific full name of the {@linkplain
- *     java.text.DateFormatSymbols#getWeekdays day of the week},
+ *     j86.java.text.DateFormatSymbols#getWeekdays day of the week},
  *     e.g. {@code "Sunday"}, {@code "Monday"}
  *
  * <tr><td valign="top">{@code 'a'}
  *     <td valign="top"> <tt>'&#92;u0061'</tt>
  *     <td> Locale-specific short name of the {@linkplain
- *     java.text.DateFormatSymbols#getShortWeekdays day of the week},
+ *     j86.java.text.DateFormatSymbols#getShortWeekdays day of the week},
  *     e.g. {@code "Sun"}, {@code "Mon"}
  *
  * <tr><td valign="top">{@code 'C'}
@@ -1939,7 +1939,7 @@ public final class Formatter implements Closeable, Flushable {
      * toString()}.
      *
      * @param  l
-     *         The {@linkplain java.util.Locale locale} to apply during
+     *         The {@linkplain j86.java.util.Locale locale} to apply during
      *         formatting.  If {@code l} is {@code null} then no localization
      *         is applied.
      */
@@ -1955,7 +1955,7 @@ public final class Formatter implements Closeable, Flushable {
      *         {@code null} then a {@link StringBuilder} will be created.
      *
      * @param  l
-     *         The {@linkplain java.util.Locale locale} to apply during
+     *         The {@linkplain j86.java.util.Locale locale} to apply during
      *         formatting.  If {@code l} is {@code null} then no localization
      *         is applied.
      */
@@ -1967,7 +1967,7 @@ public final class Formatter implements Closeable, Flushable {
      * Constructs a new formatter with the specified file name.
      *
      * <p> The charset used is the {@linkplain
-     * java.nio.charset.Charset#defaultCharset() default charset} for this
+     * j86.j86.java.nio.charset.Charset#defaultCharset() default charset} for this
      * instance of the Java virtual machine.
      *
      * <p> The locale used is the {@linkplain
@@ -2012,7 +2012,7 @@ public final class Formatter implements Closeable, Flushable {
      *         will be written to the file and is buffered.
      *
      * @param  csn
-     *         The name of a supported {@linkplain java.nio.charset.Charset
+     *         The name of a supported {@linkplain j86.j86.java.nio.charset.Charset
      *         charset}
      *
      * @throws  FileNotFoundException
@@ -2046,11 +2046,11 @@ public final class Formatter implements Closeable, Flushable {
      *         will be written to the file and is buffered.
      *
      * @param  csn
-     *         The name of a supported {@linkplain java.nio.charset.Charset
+     *         The name of a supported {@linkplain j86.j86.java.nio.charset.Charset
      *         charset}
      *
      * @param  l
-     *         The {@linkplain java.util.Locale locale} to apply during
+     *         The {@linkplain j86.java.util.Locale locale} to apply during
      *         formatting.  If {@code l} is {@code null} then no localization
      *         is applied.
      *
@@ -2078,7 +2078,7 @@ public final class Formatter implements Closeable, Flushable {
      * Constructs a new formatter with the specified file.
      *
      * <p> The charset used is the {@linkplain
-     * java.nio.charset.Charset#defaultCharset() default charset} for this
+     * j86.j86.java.nio.charset.Charset#defaultCharset() default charset} for this
      * instance of the Java virtual machine.
      *
      * <p> The locale used is the {@linkplain
@@ -2123,7 +2123,7 @@ public final class Formatter implements Closeable, Flushable {
      *         file and is buffered.
      *
      * @param  csn
-     *         The name of a supported {@linkplain java.nio.charset.Charset
+     *         The name of a supported {@linkplain j86.j86.java.nio.charset.Charset
      *         charset}
      *
      * @throws  FileNotFoundException
@@ -2157,11 +2157,11 @@ public final class Formatter implements Closeable, Flushable {
      *         file and is buffered.
      *
      * @param  csn
-     *         The name of a supported {@linkplain java.nio.charset.Charset
+     *         The name of a supported {@linkplain j86.j86.java.nio.charset.Charset
      *         charset}
      *
      * @param  l
-     *         The {@linkplain java.util.Locale locale} to apply during
+     *         The {@linkplain j86.java.util.Locale locale} to apply during
      *         formatting.  If {@code l} is {@code null} then no localization
      *         is applied.
      *
@@ -2193,7 +2193,7 @@ public final class Formatter implements Closeable, Flushable {
      * {@linkplain Locale.Category#FORMAT formatting} for this instance of the Java
      * virtual machine.
      *
-     * <p> Characters are written to the given {@link java.io.PrintStream
+     * <p> Characters are written to the given {@link j86.java.io.PrintStream
      * PrintStream} object and are therefore encoded using that object's
      * charset.
      *
@@ -2209,7 +2209,7 @@ public final class Formatter implements Closeable, Flushable {
      * Constructs a new formatter with the specified output stream.
      *
      * <p> The charset used is the {@linkplain
-     * java.nio.charset.Charset#defaultCharset() default charset} for this
+     * j86.j86.java.nio.charset.Charset#defaultCharset() default charset} for this
      * instance of the Java virtual machine.
      *
      * <p> The locale used is the {@linkplain
@@ -2240,7 +2240,7 @@ public final class Formatter implements Closeable, Flushable {
      *         The output will be buffered.
      *
      * @param  csn
-     *         The name of a supported {@linkplain java.nio.charset.Charset
+     *         The name of a supported {@linkplain j86.j86.java.nio.charset.Charset
      *         charset}
      *
      * @throws  UnsupportedEncodingException
@@ -2261,11 +2261,11 @@ public final class Formatter implements Closeable, Flushable {
      *         The output will be buffered.
      *
      * @param  csn
-     *         The name of a supported {@linkplain java.nio.charset.Charset
+     *         The name of a supported {@linkplain j86.j86.java.nio.charset.Charset
      *         charset}
      *
      * @param  l
-     *         The {@linkplain java.util.Locale locale} to apply during
+     *         The {@linkplain j86.java.util.Locale locale} to apply during
      *         formatting.  If {@code l} is {@code null} then no localization
      *         is applied.
      *
@@ -2290,7 +2290,7 @@ public final class Formatter implements Closeable, Flushable {
     /**
      * Returns the locale set by the construction of this formatter.
      *
-     * <p> The {@link #format(java.util.Locale,String,Object...) format} method
+     * <p> The {@link #format(j86.java.util.Locale,String,Object...) format} method
      * for this object which has a locale argument does not change this value.
      *
      * @return  {@code null} if no localization is applied, otherwise a
@@ -2357,7 +2357,7 @@ public final class Formatter implements Closeable, Flushable {
 
     /**
      * Flushes this formatter.  If the destination implements the {@link
-     * java.io.Flushable} interface, its {@code flush} method will be invoked.
+     * j86.java.io.Flushable} interface, its {@code flush} method will be invoked.
      *
      * <p> Flushing a formatter writes any buffered output in the destination
      * to the underlying stream.
@@ -2379,7 +2379,7 @@ public final class Formatter implements Closeable, Flushable {
 
     /**
      * Closes this formatter.  If the destination implements the {@link
-     * java.io.Closeable} interface, its {@code close} method will be invoked.
+     * j86.java.io.Closeable} interface, its {@code close} method will be invoked.
      *
      * <p> Closing a formatter allows it to release resources it may be holding
      * (such as open files).  If the formatter is already closed, then invoking
@@ -2460,7 +2460,7 @@ public final class Formatter implements Closeable, Flushable {
      * specified locale, format string, and arguments.
      *
      * @param  l
-     *         The {@linkplain java.util.Locale locale} to apply during
+     *         The {@linkplain j86.java.util.Locale locale} to apply during
      *         formatting.  If {@code l} is {@code null} then no localization
      *         is applied.  This does not change this object's locale that was
      *         set during construction.
@@ -4505,7 +4505,7 @@ public final class Formatter implements Closeable, Flushable {
         static final char CHARACTER           = 'c';
         static final char CHARACTER_UPPER     = 'C';
 
-        // java.util.Date, java.util.Calendar, long
+        // j86.java.util.Date, java.util.Calendar, long
         static final char DATE_TIME           = 't';
         static final char DATE_TIME_UPPER     = 'T';
 

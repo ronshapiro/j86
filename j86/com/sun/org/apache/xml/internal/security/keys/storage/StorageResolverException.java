@@ -20,9 +20,9 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.sun.org.apache.xml.internal.security.keys.storage;
+package j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.storage;
 
-import com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+import j86.j86.com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
 
 
 public class StorageResolverException extends XMLSecurityException {

@@ -23,15 +23,15 @@
  * questions.
  */
 
-package javax.swing.plaf.metal;
+package j86.j86.j86.javax.swing.plaf.metal;
 
-import javax.swing.*;
-import javax.swing.border.*;
-import java.io.Serializable;
-import java.awt.*;
-import java.awt.event.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.border.*;
+import j86.java.io.Serializable;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
 
-import javax.swing.plaf.basic.BasicComboBoxEditor;
+import j86.j86.j86.javax.swing.plaf.basic.BasicComboBoxEditor;
 
 /**
  * The default editor for Metal editable combo boxes
@@ -42,8 +42,8 @@ import javax.swing.plaf.basic.BasicComboBoxEditor;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @author Steve Wilson
  */
@@ -130,10 +130,10 @@ public class MetalComboBoxEditor extends BasicComboBoxEditor {
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     public static class UIResource extends MetalComboBoxEditor
-    implements javax.swing.plaf.UIResource {
+    implements j86.j86.javax.swing.plaf.UIResource {
     }
 }

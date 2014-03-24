@@ -23,13 +23,13 @@
  * questions.
  */
 
-package com.sun.jndi.ldap;
+package j86.com.sun.jndi.ldap;
 
-import java.io.IOException;
-import java.util.Hashtable;
-import java.util.Vector;
-import javax.naming.*;
-import javax.naming.directory.*;
+import j86.java.io.IOException;
+import j86.java.util.Hashtable;
+import j86.java.util.Vector;
+import j86.javax.naming.*;
+import j86.j86.javax.naming.directory.*;
 
 /**
   * This subclass is used by LDAP to implement the schema calls.
@@ -114,7 +114,7 @@ final class LdapAttribute extends BasicAttribute {
                 baseCtxEnv = new Hashtable<String, String>(3);
             }
             baseCtxEnv.put(Context.INITIAL_CONTEXT_FACTORY,
-                             "com.sun.jndi.ldap.LdapCtxFactory");
+                             "j86.com.sun.jndi.ldap.LdapCtxFactory");
             baseCtxEnv.put(Context.PROVIDER_URL,baseCtxURL);
             baseCtx = (new InitialDirContext(baseCtxEnv));
         }
@@ -128,7 +128,7 @@ final class LdapAttribute extends BasicAttribute {
      * variables is costly, so it is only done if the object
      * is actually serialized.
      */
-    private void writeObject(java.io.ObjectOutputStream out)
+    private void writeObject(j86.java.io.ObjectOutputStream out)
         throws IOException {
 
         // setup internal state

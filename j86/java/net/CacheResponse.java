@@ -23,12 +23,12 @@
  * questions.
  */
 
-package java.net;
+package j86.java.net;
 
-import java.io.InputStream;
-import java.util.Map;
-import java.util.List;
-import java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.util.Map;
+import j86.java.util.List;
+import j86.java.io.IOException;
 
 /**
  * Represent channels for retrieving resources from the

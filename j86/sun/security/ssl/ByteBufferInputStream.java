@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.security.ssl;
+package j86.sun.security.ssl;
 
-import java.io.*;
-import java.nio.*;
+import j86.java.io.*;
+import j86.java.nio.*;
 
 /**
  * A simple InputStream which uses ByteBuffers as it's backing store.

@@ -66,30 +66,30 @@
  * </p>
  * <p>
  * Printing and parsing is based around the
- * {@link java.time.format.DateTimeFormatter DateTimeFormatter} class.
+ * {@link j86.j86.java.time.format.DateTimeFormatter DateTimeFormatter} class.
  * Instances are generally obtained from
- * {@link java.time.format.DateTimeFormatter DateTimeFormatter}, however
- * {@link java.time.format.DateTimeFormatterBuilder DateTimeFormatterBuilder}
+ * {@link j86.j86.java.time.format.DateTimeFormatter DateTimeFormatter}, however
+ * {@link j86.j86.java.time.format.DateTimeFormatterBuilder DateTimeFormatterBuilder}
  * can be used if more power is needed.
  * </p>
  * <p>
  * Localization occurs by calling
- * {@link java.time.format.DateTimeFormatter#withLocale(java.util.Locale) withLocale(Locale)}
+ * {@link j86.j86.java.time.format.DateTimeFormatter#withLocale(j86.java.util.Locale) withLocale(Locale)}
  * on the formatter. Further customization is possible using
- * {@link java.time.format.DecimalStyle DecimalStyle}.
+ * {@link j86.j86.java.time.format.DecimalStyle DecimalStyle}.
  * </p>
  *
  * <h3>Package specification</h3>
  * <p>
  * Unless otherwise noted, passing a null argument to a constructor or method in any class or interface
- * in this package will cause a {@link java.lang.NullPointerException NullPointerException} to be thrown.
+ * in this package will cause a {@link j86.java.lang.NullPointerException NullPointerException} to be thrown.
  * The Javadoc "@param" definition is used to summarise the null-behavior.
- * The "@throws {@link java.lang.NullPointerException}" is not explicitly documented in each method.
+ * The "@throws {@link j86.java.lang.NullPointerException}" is not explicitly documented in each method.
  * </p>
  * <p>
- * All calculations should check for numeric overflow and throw either an {@link java.lang.ArithmeticException}
- * or a {@link java.time.DateTimeException}.
+ * All calculations should check for numeric overflow and throw either an {@link j86.java.lang.ArithmeticException}
+ * or a {@link j86.java.time.DateTimeException}.
  * </p>
  * @since JDK1.8
  */
-package java.time.format;
+package j86.j86.java.time.format;

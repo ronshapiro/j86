@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.awt.dnd;
+package j86.j86.java.awt.dnd;
 
-import java.awt.Insets;
-import java.awt.Point;
+import j86.java.awt.Insets;
+import j86.java.awt.Point;
 
 /**
  * During DnD operations it is possible that a user may wish to drop the

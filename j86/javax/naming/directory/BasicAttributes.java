@@ -24,14 +24,14 @@
  */
 
 
-package javax.naming.directory;
+package j86.j86.javax.naming.directory;
 
-import java.util.Hashtable;
-import java.util.Enumeration;
-import java.util.Locale;
+import j86.java.util.Hashtable;
+import j86.java.util.Enumeration;
+import j86.java.util.Locale;
 
-import javax.naming.NamingException;
-import javax.naming.NamingEnumeration;
+import j86.javax.naming.NamingException;
+import j86.javax.naming.NamingEnumeration;
 
 /**
   * This class provides a basic implementation
@@ -284,8 +284,8 @@ public class BasicAttributes implements Attributes {
      * the number of attributes in the set
      * (an int), and then the individual Attribute objects.
      */
-    private void writeObject(java.io.ObjectOutputStream s)
-            throws java.io.IOException {
+    private void writeObject(j86.java.io.ObjectOutputStream s)
+            throws j86.java.io.IOException {
         s.defaultWriteObject(); // write out the ignoreCase flag
         s.writeInt(attrs.size());
         Enumeration<Attribute> attrEnum = attrs.elements();
@@ -297,8 +297,8 @@ public class BasicAttributes implements Attributes {
     /**
      * Overridden to avoid exposing implementation details.
      */
-    private void readObject(java.io.ObjectInputStream s)
-            throws java.io.IOException, ClassNotFoundException {
+    private void readObject(j86.java.io.ObjectInputStream s)
+            throws j86.java.io.IOException, ClassNotFoundException {
         s.defaultReadObject();  // read in the ignoreCase flag
         int n = s.readInt();    // number of attributes
         attrs = (n >= 1)

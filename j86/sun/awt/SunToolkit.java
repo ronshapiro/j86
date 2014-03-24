@@ -23,36 +23,36 @@
  * questions.
  */
 
-package sun.awt;
+package j86.sun.awt;
 
-import java.awt.*;
-import static java.awt.RenderingHints.*;
-import java.awt.dnd.*;
-import java.awt.dnd.peer.DragSourceContextPeer;
-import java.awt.peer.*;
-import java.awt.event.WindowEvent;
-import java.awt.event.KeyEvent;
-import java.awt.image.*;
-import java.awt.TrayIcon;
-import java.awt.SystemTray;
-import java.awt.event.InputEvent;
-import java.net.URL;
-import java.util.*;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.locks.Condition;
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
+import j86.java.awt.*;
+import static j86.java.awt.RenderingHints.*;
+import j86.j86.java.awt.dnd.*;
+import j86.j86.j86.java.awt.dnd.peer.DragSourceContextPeer;
+import j86.j86.java.awt.peer.*;
+import j86.j86.java.awt.event.WindowEvent;
+import j86.j86.java.awt.event.KeyEvent;
+import j86.j86.j86.java.awt.image.*;
+import j86.java.awt.TrayIcon;
+import j86.java.awt.SystemTray;
+import j86.j86.java.awt.event.InputEvent;
+import j86.java.net.URL;
+import j86.java.util.*;
+import j86.j86.java.util.concurrent.TimeUnit;
+import j86.j86.j86.java.util.concurrent.locks.Condition;
+import j86.j86.j86.java.util.concurrent.locks.Lock;
+import j86.j86.j86.java.util.concurrent.locks.ReentrantLock;
 
-import sun.security.util.SecurityConstants;
-import sun.util.logging.PlatformLogger;
-import sun.misc.SoftCache;
-import sun.font.FontDesignMetrics;
-import sun.awt.im.InputContext;
-import sun.awt.image.*;
-import sun.security.action.GetPropertyAction;
-import sun.security.action.GetBooleanAction;
-import java.lang.reflect.InvocationTargetException;
-import java.security.AccessController;
+import j86.sun.security.util.SecurityConstants;
+import j86.j86.sun.util.logging.PlatformLogger;
+import j86.sun.misc.SoftCache;
+import j86.sun.font.FontDesignMetrics;
+import j86.j86.sun.awt.im.InputContext;
+import j86.j86.j86.sun.awt.image.*;
+import j86.sun.security.action.GetPropertyAction;
+import j86.sun.security.action.GetBooleanAction;
+import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.java.security.AccessController;
 
 public abstract class SunToolkit extends Toolkit
     implements WindowClosingSupport, WindowClosingListener,
@@ -62,7 +62,7 @@ public abstract class SunToolkit extends Toolkit
 
     /* Load debug settings for native code */
     static {
-        if (AccessController.doPrivileged(new GetBooleanAction("sun.awt.nativedebug"))) {
+        if (AccessController.doPrivileged(new GetBooleanAction("j86.sun.awt.nativedebug"))) {
             DebugSettings.init();
         }
     };
@@ -109,7 +109,7 @@ public abstract class SunToolkit extends Toolkit
         EventQueue eventQueue;
 
         String eqName = System.getProperty("AWT.EventQueueClass",
-                "java.awt.EventQueue");
+                "j86.java.awt.EventQueue");
 
         try {
             eventQueue = (EventQueue)Class.forName(eqName).newInstance();
@@ -155,7 +155,7 @@ public abstract class SunToolkit extends Toolkit
     public abstract LabelPeer createLabel(Label target)
         throws HeadlessException;
 
-    public abstract ListPeer createList(java.awt.List target)
+    public abstract ListPeer createList(j86.java.awt.List target)
         throws HeadlessException;
 
     public abstract CheckboxPeer createCheckbox(Checkbox target)
@@ -434,7 +434,7 @@ public abstract class SunToolkit extends Toolkit
         FocusTraversalPolicy policy = null;
         try {
             Class<?> layoutPolicyClass =
-                Class.forName("javax.swing.LayoutFocusTraversalPolicy");
+                Class.forName("j86.javax.swing.LayoutFocusTraversalPolicy");
             policy = (FocusTraversalPolicy)layoutPolicyClass.newInstance();
         }
         catch (ClassNotFoundException e) {
@@ -696,19 +696,19 @@ public abstract class SunToolkit extends Toolkit
     }
 
     /**
-     * Returns the value of "sun.awt.noerasebackground" property. Default
+     * Returns the value of "j86.sun.awt.noerasebackground" property. Default
      * value is {@code false}.
      */
     public static boolean getSunAwtNoerasebackground() {
-        return AccessController.doPrivileged(new GetBooleanAction("sun.awt.noerasebackground"));
+        return AccessController.doPrivileged(new GetBooleanAction("j86.sun.awt.noerasebackground"));
     }
 
     /**
-     * Returns the value of "sun.awt.erasebackgroundonresize" property. Default
+     * Returns the value of "j86.sun.awt.erasebackgroundonresize" property. Default
      * value is {@code false}.
      */
     public static boolean getSunAwtErasebackgroundonresize() {
-        return AccessController.doPrivileged(new GetBooleanAction("sun.awt.erasebackgroundonresize"));
+        return AccessController.doPrivileged(new GetBooleanAction("j86.sun.awt.erasebackgroundonresize"));
     }
 
 
@@ -718,7 +718,7 @@ public abstract class SunToolkit extends Toolkit
         SecurityManager sm = System.getSecurityManager();
         if (sm != null) {
             try {
-                java.security.Permission perm =
+                j86.java.security.Permission perm =
                     url.openConnection().getPermission();
                 if (perm != null) {
                     try {
@@ -726,11 +726,11 @@ public abstract class SunToolkit extends Toolkit
                     } catch (SecurityException se) {
                         // fallback to checkRead/checkConnect for pre 1.2
                         // security managers
-                        if ((perm instanceof java.io.FilePermission) &&
+                        if ((perm instanceof j86.java.io.FilePermission) &&
                             perm.getActions().indexOf("read") != -1) {
                             sm.checkRead(perm.getName());
                         } else if ((perm instanceof
-                            java.net.SocketPermission) &&
+                            j86.java.net.SocketPermission) &&
                             perm.getActions().indexOf("connect") != -1) {
                             sm.checkConnect(url.getHost(), url.getPort());
                         } else {
@@ -738,7 +738,7 @@ public abstract class SunToolkit extends Toolkit
                         }
                     }
                 }
-            } catch (java.io.IOException ioe) {
+            } catch (j86.java.io.IOException ioe) {
                     sm.checkConnect(url.getHost(), url.getPort());
             }
         }
@@ -794,7 +794,7 @@ public abstract class SunToolkit extends Toolkit
         SecurityManager sm = System.getSecurityManager();
         if (sm != null) {
             try {
-                java.security.Permission perm =
+                j86.java.security.Permission perm =
                     url.openConnection().getPermission();
                 if (perm != null) {
                     try {
@@ -802,11 +802,11 @@ public abstract class SunToolkit extends Toolkit
                     } catch (SecurityException se) {
                         // fallback to checkRead/checkConnect for pre 1.2
                         // security managers
-                        if ((perm instanceof java.io.FilePermission) &&
+                        if ((perm instanceof j86.java.io.FilePermission) &&
                             perm.getActions().indexOf("read") != -1) {
                             sm.checkRead(perm.getName());
                         } else if ((perm instanceof
-                            java.net.SocketPermission) &&
+                            j86.java.net.SocketPermission) &&
                             perm.getActions().indexOf("connect") != -1) {
                             sm.checkConnect(url.getHost(), url.getPort());
                         } else {
@@ -814,7 +814,7 @@ public abstract class SunToolkit extends Toolkit
                         }
                     }
                 }
-            } catch (java.io.IOException ioe) {
+            } catch (j86.java.io.IOException ioe) {
                     sm.checkConnect(url.getHost(), url.getPort());
             }
         }
@@ -870,7 +870,7 @@ public abstract class SunToolkit extends Toolkit
      * Scans {@code imageList} for best-looking image of specified dimensions.
      * Image can be scaled and/or padded with transparency.
      */
-    public static BufferedImage getScaledIconImage(java.util.List<Image> imageList, int width, int height) {
+    public static BufferedImage getScaledIconImage(j86.java.util.List<Image> imageList, int width, int height) {
         if (width == 0 || height == 0) {
             return null;
         }
@@ -977,7 +977,7 @@ public abstract class SunToolkit extends Toolkit
         return bimage;
     }
 
-    public static DataBufferInt getScaledIconData(java.util.List<Image> imageList, int width, int height) {
+    public static DataBufferInt getScaledIconData(j86.java.util.List<Image> imageList, int width, int height) {
         BufferedImage bimage = getScaledIconImage(imageList, width, height);
         if (bimage == null) {
             return null;
@@ -1061,16 +1061,16 @@ public abstract class SunToolkit extends Toolkit
 
     /**
      * Returns a new input method window, with behavior as specified in
-     * {@link java.awt.im.spi.InputMethodContext#createInputMethodWindow}.
+     * {@link j86.j86.j86.java.awt.im.spi.InputMethodContext#createInputMethodWindow}.
      * If the inputContext is not null, the window should return it from its
      * getInputContext() method. The window needs to implement
-     * sun.awt.im.InputMethodWindow.
+     * j86.j86.sun.awt.im.InputMethodWindow.
      * <p>
      * SunToolkit subclasses can override this method to return better input
      * method windows.
      */
     public Window createInputMethodWindow(String title, InputContext context) {
-        return new sun.awt.im.SimpleInputMethodWindow(title, context);
+        return new j86.j86.sun.awt.im.SimpleInputMethodWindow(title, context);
     }
 
     /**
@@ -1138,20 +1138,20 @@ public abstract class SunToolkit extends Toolkit
     // Support for window closing event notifications
     private transient WindowClosingListener windowClosingListener = null;
     /**
-     * @see sun.awt.WindowClosingSupport#getWindowClosingListener
+     * @see j86.sun.awt.WindowClosingSupport#getWindowClosingListener
      */
     public WindowClosingListener getWindowClosingListener() {
         return windowClosingListener;
     }
     /**
-     * @see sun.awt.WindowClosingSupport#setWindowClosingListener
+     * @see j86.sun.awt.WindowClosingSupport#setWindowClosingListener
      */
     public void setWindowClosingListener(WindowClosingListener wcl) {
         windowClosingListener = wcl;
     }
 
     /**
-     * @see sun.awt.WindowClosingListener#windowClosingNotify
+     * @see j86.sun.awt.WindowClosingListener#windowClosingNotify
      */
     public RuntimeException windowClosingNotify(WindowEvent event) {
         if (windowClosingListener != null) {
@@ -1161,7 +1161,7 @@ public abstract class SunToolkit extends Toolkit
         }
     }
     /**
-     * @see sun.awt.WindowClosingListener#windowClosingDelivered
+     * @see j86.sun.awt.WindowClosingListener#windowClosingDelivered
      */
     public RuntimeException windowClosingDelivered(WindowEvent event) {
         if (windowClosingListener != null) {
@@ -1188,7 +1188,7 @@ public abstract class SunToolkit extends Toolkit
      */
     public static boolean needsXEmbed() {
         String noxembed = AccessController.
-            doPrivileged(new GetPropertyAction("sun.awt.noxembed", "false"));
+            doPrivileged(new GetPropertyAction("j86.sun.awt.noxembed", "false"));
         if ("true".equals(noxembed)) {
             return false;
         }
@@ -1221,7 +1221,7 @@ public abstract class SunToolkit extends Toolkit
      * XEmbed-server-enabled CanvasPeer instead of the ordinary CanvasPeer.
      */
     protected final boolean isXEmbedServerRequested() {
-        return AccessController.doPrivileged(new GetBooleanAction("sun.awt.xembedserver"));
+        return AccessController.doPrivileged(new GetBooleanAction("j86.sun.awt.xembedserver"));
     }
 
     /**
@@ -1231,8 +1231,8 @@ public abstract class SunToolkit extends Toolkit
      *
      * @return true if modal exclusion is supported by the toolkit, false otherwise
      *
-     * @see sun.awt.SunToolkit#setModalExcluded(java.awt.Window)
-     * @see sun.awt.SunToolkit#isModalExcluded(java.awt.Window)
+     * @see j86.sun.awt.SunToolkit#setModalExcluded(j86.java.awt.Window)
+     * @see j86.sun.awt.SunToolkit#isModalExcluded(j86.java.awt.Window)
      *
      * @since 1.5
      */
@@ -1244,8 +1244,8 @@ public abstract class SunToolkit extends Toolkit
     /*
      * Default implementation for isModalExcludedSupportedImpl(), returns false.
      *
-     * @see sun.awt.windows.WToolkit#isModalExcludeSupportedImpl
-     * @see sun.awt.X11.XToolkit#isModalExcludeSupportedImpl
+     * @see j86.sun.awt.windows.WToolkit#isModalExcludeSupportedImpl
+     * @see j86.sun.awt.X11.XToolkit#isModalExcludeSupportedImpl
      *
      * @since 1.5
      */
@@ -1261,14 +1261,14 @@ public abstract class SunToolkit extends Toolkit
      * window, it's owned windows and child components, even in the
      * presence of a modal dialog.
      * For details on which <code>Window</code>s are normally blocked
-     * by modal dialog, see {@link java.awt.Dialog}.
+     * by modal dialog, see {@link j86.java.awt.Dialog}.
      * Invoking this method when the modal exclusion API is not supported by
      * the current toolkit has no effect.
      * @param window Window to be marked as not modally blocked
-     * @see java.awt.Dialog
-     * @see java.awt.Dialog#setModal(boolean)
-     * @see sun.awt.SunToolkit#isModalExcludedSupported
-     * @see sun.awt.SunToolkit#isModalExcluded(java.awt.Window)
+     * @see j86.java.awt.Dialog
+     * @see j86.java.awt.Dialog#setModal(boolean)
+     * @see j86.sun.awt.SunToolkit#isModalExcludedSupported
+     * @see j86.sun.awt.SunToolkit#isModalExcluded(j86.java.awt.Window)
      */
     public static void setModalExcluded(Window window)
     {
@@ -1289,8 +1289,8 @@ public abstract class SunToolkit extends Toolkit
      * the modal exclusion isn't supported by the current Toolkit, false
      * is returned
      *
-     * @see sun.awt.SunToolkit#isModalExcludedSupported
-     * @see sun.awt.SunToolkit#setModalExcluded(java.awt.Window)
+     * @see j86.sun.awt.SunToolkit#isModalExcludedSupported
+     * @see j86.sun.awt.SunToolkit#setModalExcluded(j86.java.awt.Window)
      *
      * @since 1.5
      */
@@ -1390,7 +1390,7 @@ public abstract class SunToolkit extends Toolkit
             || comp instanceof Checkbox
             || comp instanceof Choice
             || comp instanceof Label
-            || comp instanceof java.awt.List
+            || comp instanceof j86.java.awt.List
             || comp instanceof Panel
             || comp instanceof Scrollbar
             || comp instanceof ScrollPane
@@ -1635,7 +1635,7 @@ public abstract class SunToolkit extends Toolkit
     /**
      * Locates the splash screen library in a platform dependent way and closes
      * the splash screen. Should be invoked on first top-level frame display.
-     * @see java.awt.SplashScreen
+     * @see j86.java.awt.SplashScreen
      * @since 1.6
      */
     public static native void closeSplashScreen();
@@ -1833,13 +1833,13 @@ public abstract class SunToolkit extends Toolkit
     private static Boolean sunAwtDisableMixing = null;
 
     /**
-     * Returns the value of "sun.awt.disableMixing" property. Default
+     * Returns the value of "j86.sun.awt.disableMixing" property. Default
      * value is {@code false}.
      */
     public synchronized static boolean getSunAwtDisableMixing() {
         if (sunAwtDisableMixing == null) {
             sunAwtDisableMixing = AccessController.doPrivileged(
-                                      new GetBooleanAction("sun.awt.disableMixing"));
+                                      new GetBooleanAction("j86.sun.awt.disableMixing"));
         }
         return sunAwtDisableMixing.booleanValue();
     }

@@ -23,13 +23,13 @@
  * questions.
  */
 
-package java.awt;
+package j86.java.awt;
 
-import java.awt.geom.AffineTransform;
-import java.awt.geom.Point2D;
-import java.awt.geom.Rectangle2D;
-import java.awt.image.ColorModel;
-import java.beans.ConstructorProperties;
+import j86.j86.java.awt.geom.AffineTransform;
+import j86.j86.java.awt.geom.Point2D;
+import j86.j86.java.awt.geom.Rectangle2D;
+import j86.j86.j86.java.awt.image.ColorModel;
+import j86.java.beans.ConstructorProperties;
 
 /**
  * The {@code RadialGradientPaint} class provides a way to fill a shape with
@@ -144,8 +144,8 @@ import java.beans.ConstructorProperties;
  * output of the sample code">
  * </center>
  *
- * @see java.awt.Paint
- * @see java.awt.Graphics2D#setPaint
+ * @see j86.java.awt.Paint
+ * @see j86.java.awt.Graphics2D#setPaint
  * @author Nicholas Talian, Vincent Hardy, Jim Graham, Jerry Evans
  * @since 1.6
  */

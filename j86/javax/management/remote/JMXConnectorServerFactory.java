@@ -23,20 +23,20 @@
  * questions.
  */
 
-package javax.management.remote;
+package j86.j86.javax.management.remote;
 
 
-import com.sun.jmx.remote.util.ClassLogger;
-import com.sun.jmx.remote.util.EnvHelp;
+import j86.com.sun.jmx.remote.util.ClassLogger;
+import j86.com.sun.jmx.remote.util.EnvHelp;
 
-import java.io.IOException;
-import java.net.MalformedURLException;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
+import j86.java.io.IOException;
+import j86.java.net.MalformedURLException;
+import j86.java.util.Collections;
+import j86.java.util.HashMap;
+import j86.java.util.Iterator;
+import j86.java.util.Map;
 
-import javax.management.MBeanServer;
+import j86.javax.management.MBeanServer;
 
 /**
  * <p>Factory to create JMX API connector servers.  There
@@ -91,8 +91,8 @@ import javax.management.MBeanServer;
  * <code>jmx.remote.protocol.provider.class.loader</code> then the
  * associated value is the class loader to use to load the provider.
  * If the associated value is not an instance of {@link
- * java.lang.ClassLoader}, an {@link
- * java.lang.IllegalArgumentException} is thrown.</p>
+ * j86.java.lang.ClassLoader}, an {@link
+ * j86.java.lang.IllegalArgumentException} is thrown.</p>
  *
  * <p>If the <code>jmx.remote.protocol.provider.class.loader</code>
  * key is not present in the <code>environment</code> parameter, the
@@ -172,7 +172,7 @@ public class JMXConnectorServerFactory {
      * loader MBean name.  This class loader is used to deserialize objects in
      * requests received from the client, possibly after consulting an
      * MBean-specific class loader.  The value associated with this
-     * attribute is an instance of {@link javax.management.ObjectName
+     * attribute is an instance of {@link j86.javax.management.ObjectName
      * ObjectName}.</p>
      */
     public static final String DEFAULT_CLASS_LOADER_NAME =
@@ -200,7 +200,7 @@ public class JMXConnectorServerFactory {
         "com.sun.jmx.remote.protocol";
 
     private static final ClassLogger logger =
-        new ClassLogger("javax.management.remote.misc","JMXConnectorServerFactory");
+        new ClassLogger("j86.j86.javax.management.remote.misc","JMXConnectorServerFactory");
 
     /** There are no instances of this class.  */
     private JMXConnectorServerFactory() {
@@ -314,7 +314,7 @@ public class JMXConnectorServerFactory {
         if (provider == null) {
             // Loader is null when context class loader is set to null
             // and no loader has been provided in map.
-            // com.sun.jmx.remote.util.Service class extracted from j2se
+            // j86.com.sun.jmx.remote.util.Service class extracted from j2se
             // provider search algorithm doesn't handle well null classloader.
             if (loader != null) {
                 try {

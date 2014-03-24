@@ -22,12 +22,12 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.net.ftp;
+package j86.j86.sun.net.ftp;
 
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.util.ServiceConfigurationError;
-//import java.util.ServiceLoader;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.util.ServiceConfigurationError;
+//import j86.java.util.ServiceLoader;
 
 /**
  * Service provider class for FtpClient.
@@ -62,7 +62,7 @@ public abstract class FtpClientProvider {
     }
 
     private static boolean loadProviderFromProperty() {
-        String cm = System.getProperty("sun.net.ftpClientProvider");
+        String cm = System.getProperty("j86.j86.sun.net.ftpClientProvider");
         if (cm == null) {
             return false;
         }
@@ -108,7 +108,7 @@ public abstract class FtpClientProvider {
      * <ol>
      *
      *   <li><p> If the system property
-     *   <tt>java.net.FtpClientProvider</tt> is defined then it is
+     *   <tt>j86.java.net.FtpClientProvider</tt> is defined then it is
      *   taken to be the fully-qualified name of a concrete provider class.
      *   The class is loaded and instantiated; if this process fails then an
      *   unspecified unchecked error or exception is thrown.  </p></li>
@@ -116,7 +116,7 @@ public abstract class FtpClientProvider {
      *   <li><p> If a provider class has been installed in a jar file that is
      *   visible to the system class loader, and that jar file contains a
      *   provider-configuration file named
-     *   <tt>java.net.FtpClientProvider</tt> in the resource
+     *   <tt>j86.java.net.FtpClientProvider</tt> in the resource
      *   directory <tt>META-INF/services</tt>, then the first class name
      *   specified in that file is taken.  The class is loaded and
      *   instantiated; if this process fails then an unspecified unchecked error or exception is
@@ -148,7 +148,7 @@ public abstract class FtpClientProvider {
                             if (loadProviderAsService()) {
                                 return provider;
                             }
-                            provider = new sun.net.ftp.impl.DefaultFtpClientProvider();
+                            provider = new j86.j86.j86.sun.net.ftp.impl.DefaultFtpClientProvider();
                             return provider;
                         }
                     });

@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.management.counter.perf;
+package j86.j86.j86.sun.management.counter.perf;
 
-import sun.management.counter.*;
-import java.nio.*;
+import j86.j86.sun.management.counter.*;
+import j86.java.nio.*;
 
 public class PerfByteArrayCounter extends AbstractCounter
        implements ByteArrayCounter {
@@ -80,7 +80,7 @@ public class PerfByteArrayCounter extends AbstractCounter
     /**
      * Serialize as a snapshot object.
      */
-    protected Object writeReplace() throws java.io.ObjectStreamException {
+    protected Object writeReplace() throws j86.java.io.ObjectStreamException {
        return new ByteArrayCounterSnapshot(getName(),
                                            getUnits(),
                                            getVariability(),

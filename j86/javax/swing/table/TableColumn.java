@@ -23,17 +23,17 @@
  * questions.
  */
 
-package javax.swing.table;
+package j86.j86.javax.swing.table;
 
-import javax.swing.*;
-import javax.swing.border.*;
-import javax.swing.event.SwingPropertyChangeSupport;
-import java.lang.Integer;
-import java.awt.Color;
-import java.awt.Component;
-import java.io.Serializable;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.border.*;
+import j86.j86.javax.swing.event.SwingPropertyChangeSupport;
+import j86.java.lang.Integer;
+import j86.java.awt.Color;
+import j86.java.awt.Component;
+import j86.java.io.Serializable;
+import j86.java.beans.PropertyChangeEvent;
+import j86.java.beans.PropertyChangeListener;
 
 /**
  *  A <code>TableColumn</code> represents all the attributes of a column in a
@@ -68,15 +68,15 @@ import java.beans.PropertyChangeListener;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @author Alan Chung
  * @author Philip Milne
- * @see javax.swing.table.TableColumnModel
+ * @see j86.j86.javax.swing.table.TableColumnModel
  *
- * @see javax.swing.table.DefaultTableColumnModel
- * @see javax.swing.table.JTableHeader#getDefaultRenderer()
+ * @see j86.j86.javax.swing.table.DefaultTableColumnModel
+ * @see j86.j86.javax.swing.table.JTableHeader#getDefaultRenderer()
  * @see JTable#getDefaultRenderer(Class)
  * @see JTable#getDefaultEditor(Class)
  * @see JTable#getCellRenderer(int, int)
@@ -414,7 +414,7 @@ public class TableColumn extends Object implements Serializable {
      * @return  the <code>headerRenderer</code> property
      * @see     #setHeaderRenderer
      * @see     #setHeaderValue
-     * @see     javax.swing.table.JTableHeader#getDefaultRenderer()
+     * @see     j86.j86.javax.swing.table.JTableHeader#getDefaultRenderer()
      */
     public TableCellRenderer getHeaderRenderer() {
         return headerRenderer;
@@ -798,7 +798,7 @@ public class TableColumn extends Object implements Serializable {
      * renderer, just as the <code>JTable</code> does for its cell renderers.
      *
      * @return the default header renderer
-     * @see javax.swing.table.JTableHeader#createDefaultRenderer()
+     * @see j86.j86.javax.swing.table.JTableHeader#createDefaultRenderer()
      */
     protected TableCellRenderer createDefaultHeaderRenderer() {
         DefaultTableCellRenderer label = new DefaultTableCellRenderer() {

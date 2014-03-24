@@ -23,12 +23,12 @@
  * questions.
  */
 
-package java.security.cert;
+package j86.j86.java.security.cert;
 
-import java.io.IOException;
+import j86.java.io.IOException;
 
-import sun.misc.HexDumpEncoder;
-import sun.security.util.DerValue;
+import j86.sun.misc.HexDumpEncoder;
+import j86.sun.security.util.DerValue;
 
 /**
  * An immutable policy qualifier represented by the ASN.1 PolicyQualifierInfo

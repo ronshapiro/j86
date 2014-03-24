@@ -34,12 +34,12 @@
  **********************************************************************
  **********************************************************************/
 
-package java.awt.color;
+package j86.j86.java.awt.color;
 
-import java.lang.annotation.Native;
+import j86.j86.java.lang.annotation.Native;
 
-import sun.java2d.cmm.PCMM;
-import sun.java2d.cmm.CMSManager;
+import j86.j86.sun.java2d.cmm.PCMM;
+import j86.j86.sun.java2d.cmm.CMSManager;
 
 
 /**
@@ -95,7 +95,7 @@ import sun.java2d.cmm.CMSManager;
  * @see ICC_ColorSpace
  */
 
-public abstract class ColorSpace implements java.io.Serializable {
+public abstract class ColorSpace implements j86.java.io.Serializable {
 
     static final long serialVersionUID = -409452704308689724L;
 
@@ -332,7 +332,7 @@ public abstract class ColorSpace implements java.io.Serializable {
                 if (GRAYspace == null) {
                     ICC_Profile theProfile = ICC_Profile.getInstance (CS_GRAY);
                     GRAYspace = new ICC_ColorSpace (theProfile);
-                    /* to allow access from java.awt.ColorModel */
+                    /* to allow access from j86.java.awt.ColorModel */
                     CMSManager.GRAYspace = GRAYspace;
                 }
 
@@ -347,7 +347,7 @@ public abstract class ColorSpace implements java.io.Serializable {
                     ICC_Profile theProfile =
                         ICC_Profile.getInstance(CS_LINEAR_RGB);
                     LINEAR_RGBspace = new ICC_ColorSpace (theProfile);
-                    /* to allow access from java.awt.ColorModel */
+                    /* to allow access from j86.java.awt.ColorModel */
                     CMSManager.LINEAR_RGBspace = LINEAR_RGBspace;
                 }
 

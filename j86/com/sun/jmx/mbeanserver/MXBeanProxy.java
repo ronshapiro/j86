@@ -23,17 +23,17 @@
  * questions.
  */
 
-package com.sun.jmx.mbeanserver;
+package j86.com.sun.jmx.mbeanserver;
 
-import static com.sun.jmx.mbeanserver.Util.*;
+import static j86.com.sun.jmx.mbeanserver.Util.*;
 
-import java.lang.reflect.Method;
-import java.util.Map;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.util.Map;
 
-import javax.management.Attribute;
-import javax.management.MBeanServerConnection;
-import javax.management.NotCompliantMBeanException;
-import javax.management.ObjectName;
+import j86.javax.management.Attribute;
+import j86.javax.management.MBeanServerConnection;
+import j86.javax.management.NotCompliantMBeanException;
+import j86.javax.management.ObjectName;
 
 /**
    <p>Helper class for an {@link InvocationHandler} that forwards methods from an

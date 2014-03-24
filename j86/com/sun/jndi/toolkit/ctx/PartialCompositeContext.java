@@ -23,15 +23,15 @@
  * questions.
  */
 
-package com.sun.jndi.toolkit.ctx;
+package j86.com.sun.jndi.toolkit.ctx;
 
-import java.util.Hashtable;
-import java.util.Enumeration;
+import j86.java.util.Hashtable;
+import j86.java.util.Enumeration;
 
-import javax.naming.*;
-import javax.naming.spi.Resolver;
-import javax.naming.spi.ResolveResult;
-import javax.naming.spi.NamingManager;
+import j86.javax.naming.*;
+import j86.j86.javax.naming.spi.Resolver;
+import j86.j86.javax.naming.spi.ResolveResult;
+import j86.j86.javax.naming.spi.NamingManager;
 
 /**
   * PartialCompositeContext implements Context operations on

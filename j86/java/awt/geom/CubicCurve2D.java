@@ -23,17 +23,17 @@
  * questions.
  */
 
-package java.awt.geom;
+package j86.j86.java.awt.geom;
 
-import java.awt.Shape;
-import java.awt.Rectangle;
-import java.util.Arrays;
-import java.io.Serializable;
-import sun.awt.geom.Curve;
+import j86.java.awt.Shape;
+import j86.java.awt.Rectangle;
+import j86.java.util.Arrays;
+import j86.java.io.Serializable;
+import j86.j86.sun.awt.geom.Curve;
 
-import static java.lang.Math.abs;
-import static java.lang.Math.max;
-import static java.lang.Math.ulp;
+import static j86.java.lang.Math.abs;
+import static j86.java.lang.Math.max;
+import static j86.java.lang.Math.ulp;
 
 /**
  * The <code>CubicCurve2D</code> class defines a cubic parametric curve
@@ -585,8 +585,8 @@ public abstract class CubicCurve2D implements Shape, Cloneable {
      * the information necessary to satisfy the various accessor
      * methods below.
      *
-     * @see java.awt.geom.CubicCurve2D.Float
-     * @see java.awt.geom.CubicCurve2D.Double
+     * @see j86.j86.java.awt.geom.CubicCurve2D.Float
+     * @see j86.j86.java.awt.geom.CubicCurve2D.Double
      * @since 1.2
      */
     protected CubicCurve2D() {
@@ -1561,7 +1561,7 @@ public abstract class CubicCurve2D implements Shape, Cloneable {
      *
      * @return     a clone of this instance.
      * @exception  OutOfMemoryError            if there is not enough memory.
-     * @see        java.lang.Cloneable
+     * @see        j86.java.lang.Cloneable
      * @since      1.2
      */
     public Object clone() {

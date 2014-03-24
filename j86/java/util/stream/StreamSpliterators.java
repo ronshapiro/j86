@@ -22,22 +22,22 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.util.stream;
+package j86.j86.java.util.stream;
 
-import java.util.Comparator;
-import java.util.Objects;
-import java.util.Spliterator;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.atomic.AtomicLong;
-import java.util.function.BooleanSupplier;
-import java.util.function.Consumer;
-import java.util.function.DoubleConsumer;
-import java.util.function.DoubleSupplier;
-import java.util.function.IntConsumer;
-import java.util.function.IntSupplier;
-import java.util.function.LongConsumer;
-import java.util.function.LongSupplier;
-import java.util.function.Supplier;
+import j86.java.util.Comparator;
+import j86.java.util.Objects;
+import j86.java.util.Spliterator;
+import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.j86.j86.java.util.concurrent.atomic.AtomicLong;
+import j86.j86.java.util.function.BooleanSupplier;
+import j86.j86.java.util.function.Consumer;
+import j86.j86.java.util.function.DoubleConsumer;
+import j86.j86.java.util.function.DoubleSupplier;
+import j86.j86.java.util.function.IntConsumer;
+import j86.j86.java.util.function.IntSupplier;
+import j86.j86.java.util.function.LongConsumer;
+import j86.j86.java.util.function.LongSupplier;
+import j86.j86.java.util.function.Supplier;
 
 /**
  * Spliterator implementations for wrapping and delegating spliterators, used

@@ -23,29 +23,29 @@
  * questions.
  */
 
-package java.beans.beancontext;
+package j86.j86.java.beans.beancontext;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Map.Entry;
+import j86.java.util.ArrayList;
+import j86.java.util.Collection;
+import j86.java.util.HashMap;
+import j86.java.util.HashSet;
+import j86.java.util.Iterator;
+import j86.java.util.Map;
+import j86.java.util.Map.Entry;
 
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.Serializable;
+import j86.java.io.IOException;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.Serializable;
 
-import java.util.TooManyListenersException;
+import j86.java.util.TooManyListenersException;
 
-import java.util.Locale;
+import j86.java.util.Locale;
 
 /**
  * <p>
  * This helper class provides a utility implementation of the
- * java.beans.beancontext.BeanContextServices interface.
+ * j86.j86.java.beans.beancontext.BeanContextServices interface.
  * </p>
  * <p>
  * Since this class directly implements the BeanContextServices interface,

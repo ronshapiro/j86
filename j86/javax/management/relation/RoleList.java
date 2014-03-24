@@ -23,12 +23,12 @@
  * questions.
  */
 
-package javax.management.relation;
+package j86.j86.javax.management.relation;
 
-import com.sun.jmx.mbeanserver.Util;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
+import j86.com.sun.jmx.mbeanserver.Util;
+import j86.java.util.ArrayList;
+import j86.java.util.Collection;
+import j86.java.util.List;
 
 /**
  * A RoleList represents a list of roles (Role objects). It is used as
@@ -96,7 +96,7 @@ public class RoleList extends ArrayList<Object> {
      * is {@code null} or if the {@code list} parameter contains any
      * non-Role objects.
      *
-     * @see ArrayList#ArrayList(java.util.Collection)
+     * @see ArrayList#ArrayList(j86.java.util.Collection)
      */
     public RoleList(List<Role> list) throws IllegalArgumentException {
         // Check for null parameter

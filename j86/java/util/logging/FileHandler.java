@@ -23,21 +23,21 @@
  * questions.
  */
 
-package java.util.logging;
+package j86.j86.java.util.logging;
 
-import static java.nio.file.StandardOpenOption.CREATE_NEW;
-import static java.nio.file.StandardOpenOption.WRITE;
+import static j86.j86.java.nio.file.StandardOpenOption.CREATE_NEW;
+import static j86.j86.java.nio.file.StandardOpenOption.WRITE;
 
-import java.io.BufferedOutputStream;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.OutputStream;
-import java.nio.channels.FileChannel;
-import java.nio.file.FileAlreadyExistsException;
-import java.nio.file.Paths;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
+import j86.java.io.BufferedOutputStream;
+import j86.java.io.File;
+import j86.java.io.FileOutputStream;
+import j86.java.io.IOException;
+import j86.java.io.OutputStream;
+import j86.j86.java.nio.channels.FileChannel;
+import j86.j86.java.nio.file.FileAlreadyExistsException;
+import j86.j86.java.nio.file.Paths;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
 
 /**
  * Simple file logging <tt>Handler</tt>.
@@ -70,7 +70,7 @@ import java.security.PrivilegedAction;
  *        (defaults to no <tt>Filter</tt>). </li>
  * <li>   &lt;handler-name&gt;.formatter
  *        specifies the name of a <tt>Formatter</tt> class to use
- *        (defaults to <tt>java.util.logging.XMLFormatter</tt>) </li>
+ *        (defaults to <tt>j86.j86.java.util.logging.XMLFormatter</tt>) </li>
  * <li>   &lt;handler-name&gt;.encoding
  *        the name of the character set encoding to use (defaults to
  *        the default platform encoding). </li>
@@ -90,14 +90,14 @@ import java.security.PrivilegedAction;
  * <p>
  * For example, the properties for {@code FileHandler} would be:
  * <ul>
- * <li>   java.util.logging.FileHandler.level=INFO </li>
- * <li>   java.util.logging.FileHandler.formatter=java.util.logging.SimpleFormatter </li>
+ * <li>   j86.j86.java.util.logging.FileHandler.level=INFO </li>
+ * <li>   j86.j86.java.util.logging.FileHandler.formatter=java.util.logging.SimpleFormatter </li>
  * </ul>
  * <p>
  * For a custom handler, e.g. com.foo.MyHandler, the properties would be:
  * <ul>
  * <li>   com.foo.MyHandler.level=INFO </li>
- * <li>   com.foo.MyHandler.formatter=java.util.logging.SimpleFormatter </li>
+ * <li>   com.foo.MyHandler.formatter=j86.j86.java.util.logging.SimpleFormatter </li>
  * </ul>
  * <p>
  * A pattern consists of a string that includes the following special
@@ -149,7 +149,7 @@ public class FileHandler extends StreamHandler {
     private FileChannel lockFileChannel;
     private File files[];
     private static final int MAX_LOCKS = 100;
-    private static final java.util.HashMap<String, String> locks = new java.util.HashMap<>();
+    private static final j86.java.util.HashMap<String, String> locks = new java.util.HashMap<>();
 
     /**
      * A metered stream is a subclass of OutputStream that
@@ -525,7 +525,7 @@ public class FileHandler extends StreamHandler {
                 continue;
             } else  if (ch == '%') {
                 if (ch2 == 't') {
-                    String tmpDir = System.getProperty("java.io.tmpdir");
+                    String tmpDir = System.getProperty("j86.java.io.tmpdir");
                     if (tmpDir == null) {
                         tmpDir = System.getProperty("user.home");
                     }

@@ -23,25 +23,25 @@
  * questions.
  */
 
-package com.sun.jndi.toolkit.corba;
+package j86.com.sun.jndi.toolkit.corba;
 
 // Needed for RMI/IIOP
-import java.rmi.Remote;
+import j86.java.rmi.Remote;
 
-import java.lang.reflect.Method;
-import java.lang.reflect.InvocationTargetException;
-import java.util.Hashtable;
-import java.util.Properties;
-import java.util.Enumeration;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.java.util.Hashtable;
+import j86.java.util.Properties;
+import j86.java.util.Enumeration;
 
 import org.omg.CORBA.ORB;
 
-import javax.naming.Context;
-import javax.naming.ConfigurationException;
+import j86.javax.naming.Context;
+import j86.javax.naming.ConfigurationException;
 
 /**
   * Contains utilities for performing CORBA-related tasks:
-  * 1. Get the org.omg.CORBA.Object for a java.rmi.Remote object.
+  * 1. Get the org.omg.CORBA.Object for a j86.java.rmi.Remote object.
   * 2. Create an ORB to use for a given host/port, and environment properties.
   *
   * @author Simon Nash
@@ -56,7 +56,7 @@ public class CorbaUtils {
       * Use reflection to avoid hard dependencies on javax.rmi.CORBA package.
       * This method effective does the following:
       *<blockquote><pre>
-      * java.lang.Object stub;
+      * j86.java.lang.Object stub;
       * try {
       *     stub = PortableRemoteObject.toStub(remoteObj);
       * } catch (Exception e) {
@@ -92,10 +92,10 @@ public class CorbaUtils {
 
             // javax.rmi.CORBA.Stub stub = PortableRemoteObject.toStub(remoteObj);
 
-            java.lang.Object stub;
+            j86.java.lang.Object stub;
 
             try {
-                stub = toStubMethod.invoke(null, new java.lang.Object[]{remoteObj});
+                stub = toStubMethod.invoke(null, new j86.java.lang.Object[]{remoteObj});
 
             } catch (InvocationTargetException e) {
                 Throwable realException = e.getTargetException();
@@ -108,7 +108,7 @@ public class CorbaUtils {
 
             } catch (IllegalAccessException e) {
                 ConfigurationException ce = new ConfigurationException(
-    "Cannot invoke javax.rmi.PortableRemoteObject.toStub(java.rmi.Remote)");
+    "Cannot invoke javax.rmi.PortableRemoteObject.toStub(j86.java.rmi.Remote)");
 
                 ce.setRootCause(e);
                 throw ce;
@@ -123,13 +123,13 @@ public class CorbaUtils {
 // Next, make sure that the stub is connected
             // Invoke stub.connect(orb)
             try {
-                connectMethod.invoke(stub, new java.lang.Object[]{orb});
+                connectMethod.invoke(stub, new j86.java.lang.Object[]{orb});
 
             } catch (InvocationTargetException e) {
                 Throwable realException = e.getTargetException();
                 // realException.printStackTrace();
 
-                if (!(realException instanceof java.rmi.RemoteException)) {
+                if (!(realException instanceof j86.java.rmi.RemoteException)) {
                     ConfigurationException ce = new ConfigurationException(
                         "Problem invoking javax.rmi.CORBA.Stub.connect()");
                     ce.setRootCause(realException);
@@ -205,11 +205,11 @@ public class CorbaUtils {
 
     /**
      * This method returns a new ORB instance for the given applet
-     * without creating a static dependency on java.applet.
+     * without creating a static dependency on j86.java.applet.
      */
     private static ORB initAppletORB(Object applet, Properties orbProp) {
         try {
-            Class<?> appletClass  = Class.forName("java.applet.Applet", true, null);
+            Class<?> appletClass  = Class.forName("j86.java.applet.Applet", true, null);
             if (!appletClass.isInstance(applet)) {
                 throw new ClassCastException(applet.getClass().getName());
             }
@@ -218,7 +218,7 @@ public class CorbaUtils {
             Method method = ORB.class.getMethod("init", appletClass, Properties.class);
             return (ORB) method.invoke(null, applet, orbProp);
         } catch (ClassNotFoundException e) {
-            // java.applet.Applet doesn't exist and the applet parameter is
+            // j86.java.applet.Applet doesn't exist and the applet parameter is
             // non-null; so throw CCE
             throw new ClassCastException(applet.getClass().getName());
         } catch (NoSuchMethodException e) {
@@ -261,14 +261,14 @@ public class CorbaUtils {
         // Get javax.rmi.PortableRemoteObject class
         Class<?> proClass = Class.forName("javax.rmi.PortableRemoteObject");
 
-        // Get javax.rmi.PortableRemoteObject.toStub(java.rmi.Remote) method
+        // Get javax.rmi.PortableRemoteObject.toStub(j86.java.rmi.Remote) method
         try {
             toStubMethod = proClass.getMethod("toStub",
-                new Class<?>[] {java.rmi.Remote.class});
+                new Class<?>[] {j86.java.rmi.Remote.class});
 
         } catch (NoSuchMethodException e) {
             throw new IllegalStateException(
-"No method definition for javax.rmi.PortableRemoteObject.toStub(java.rmi.Remote)");
+"No method definition for javax.rmi.PortableRemoteObject.toStub(j86.java.rmi.Remote)");
         }
     }
 }

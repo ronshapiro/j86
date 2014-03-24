@@ -22,9 +22,9 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.management.snmp.util;
+package j86.j86.j86.sun.management.snmp.util;
 
-import com.sun.jmx.snmp.SnmpOid;
+import j86.com.sun.jmx.snmp.SnmpOid;
 
 /**
  * Defines the interface implemented by an object that holds

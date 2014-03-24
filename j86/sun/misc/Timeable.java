@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.misc;
+package j86.sun.misc;
 
 /**
  * This interface is used by the Timer class.  A class that uses

@@ -20,17 +20,17 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.sun.org.apache.xml.internal.security.c14n;
+package j86.j86.com.sun.org.apache.xml.internal.security.c14n;
 
-import java.io.ByteArrayInputStream;
-import java.io.OutputStream;
-import java.util.Set;
+import j86.java.io.ByteArrayInputStream;
+import j86.java.io.OutputStream;
+import j86.java.util.Set;
 
 import javax.xml.XMLConstants;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 
-import com.sun.org.apache.xml.internal.security.utils.XMLUtils;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
@@ -53,15 +53,15 @@ public abstract class CanonicalizerSpi {
      * @return the c14n bytes.
      *
      * @throws CanonicalizationException
-     * @throws java.io.IOException
+     * @throws j86.java.io.IOException
      * @throws javax.xml.parsers.ParserConfigurationException
      * @throws org.xml.sax.SAXException
      */
     public byte[] engineCanonicalize(byte[] inputBytes)
-        throws javax.xml.parsers.ParserConfigurationException, java.io.IOException,
+        throws javax.xml.parsers.ParserConfigurationException, j86.java.io.IOException,
         org.xml.sax.SAXException, CanonicalizationException {
 
-        java.io.InputStream bais = new ByteArrayInputStream(inputBytes);
+        j86.java.io.InputStream bais = new ByteArrayInputStream(inputBytes);
         InputSource in = new InputSource(bais);
         DocumentBuilderFactory dfactory = DocumentBuilderFactory.newInstance();
         dfactory.setFeature(XMLConstants.FEATURE_SECURE_PROCESSING, Boolean.TRUE);

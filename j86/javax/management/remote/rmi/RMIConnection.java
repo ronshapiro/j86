@@ -23,34 +23,34 @@
  * questions.
  */
 
-package javax.management.remote.rmi;
+package j86.j86.j86.javax.management.remote.rmi;
 
-import java.io.Closeable;
-import java.io.IOException;
-import java.rmi.MarshalledObject;
-import java.rmi.Remote;
-import java.util.Set;
+import j86.java.io.Closeable;
+import j86.java.io.IOException;
+import j86.java.rmi.MarshalledObject;
+import j86.java.rmi.Remote;
+import j86.java.util.Set;
 
-import javax.management.AttributeList;
-import javax.management.AttributeNotFoundException;
-import javax.management.InstanceAlreadyExistsException;
-import javax.management.InstanceNotFoundException;
-import javax.management.IntrospectionException;
-import javax.management.InvalidAttributeValueException;
-import javax.management.ListenerNotFoundException;
-import javax.management.MBeanException;
-import javax.management.MBeanInfo;
-import javax.management.MBeanRegistrationException;
-import javax.management.MBeanServerConnection;
-import javax.management.NotCompliantMBeanException;
+import j86.javax.management.AttributeList;
+import j86.javax.management.AttributeNotFoundException;
+import j86.javax.management.InstanceAlreadyExistsException;
+import j86.javax.management.InstanceNotFoundException;
+import j86.javax.management.IntrospectionException;
+import j86.javax.management.InvalidAttributeValueException;
+import j86.javax.management.ListenerNotFoundException;
+import j86.javax.management.MBeanException;
+import j86.javax.management.MBeanInfo;
+import j86.javax.management.MBeanRegistrationException;
+import j86.javax.management.MBeanServerConnection;
+import j86.javax.management.NotCompliantMBeanException;
 
-import javax.management.ObjectInstance;
-import javax.management.ObjectName;
-import javax.management.ReflectionException;
-import javax.management.RuntimeMBeanException;
-import javax.management.RuntimeOperationsException;
-import javax.management.remote.NotificationResult;
-import javax.security.auth.Subject;
+import j86.javax.management.ObjectInstance;
+import j86.javax.management.ObjectName;
+import j86.javax.management.ReflectionException;
+import j86.javax.management.RuntimeMBeanException;
+import j86.javax.management.RuntimeOperationsException;
+import j86.j86.javax.management.remote.NotificationResult;
+import j86.javax.security.auth.Subject;
 
 /**
  * <p>RMI object used to forward an MBeanServer request from a client
@@ -118,7 +118,7 @@ public interface RMIConnection extends Closeable, Remote {
 
     /**
      * Handles the method {@link
-     * javax.management.MBeanServerConnection#createMBean(String,
+     * j86.javax.management.MBeanServerConnection#createMBean(String,
      * ObjectName)}.
      *
      * @param className The class name of the MBean to be instantiated.
@@ -134,8 +134,8 @@ public interface RMIConnection extends Closeable, Remote {
      * <code>{@link #getMBeanInfo getMBeanInfo(n)}.getClassName()</code>.
      *
      * @throws ReflectionException Wraps a
-     * <code>java.lang.ClassNotFoundException</code> or a
-     * <code>java.lang.Exception</code> that occurred
+     * <code>j86.java.lang.ClassNotFoundException</code> or a
+     * <code>j86.java.lang.Exception</code> that occurred
      * when trying to invoke the MBean's constructor.
      * @throws InstanceAlreadyExistsException The MBean is already
      * under the control of the MBean server.
@@ -148,7 +148,7 @@ public interface RMIConnection extends Closeable, Remote {
      * @throws NotCompliantMBeanException This class is not a JMX
      * compliant MBean.
      * @throws RuntimeOperationsException Wraps a
-     * <code>java.lang.IllegalArgumentException</code>: The className
+     * <code>j86.java.lang.IllegalArgumentException</code>: The className
      * passed in parameter is null, the <code>ObjectName</code> passed
      * in parameter contains a pattern or no <code>ObjectName</code>
      * is specified for the MBean.
@@ -169,7 +169,7 @@ public interface RMIConnection extends Closeable, Remote {
 
     /**
      * Handles the method {@link
-     * javax.management.MBeanServerConnection#createMBean(String,
+     * j86.javax.management.MBeanServerConnection#createMBean(String,
      * ObjectName, ObjectName)}.
      *
      * @param className The class name of the MBean to be instantiated.
@@ -186,8 +186,8 @@ public interface RMIConnection extends Closeable, Remote {
      * <code>{@link #getMBeanInfo getMBeanInfo(n)}.getClassName()</code>.
      *
      * @throws ReflectionException Wraps a
-     * <code>java.lang.ClassNotFoundException</code> or a
-     * <code>java.lang.Exception</code> that occurred when trying to
+     * <code>j86.java.lang.ClassNotFoundException</code> or a
+     * <code>j86.java.lang.Exception</code> that occurred when trying to
      * invoke the MBean's constructor.
      * @throws InstanceAlreadyExistsException The MBean is already
      * under the control of the MBean server.
@@ -202,7 +202,7 @@ public interface RMIConnection extends Closeable, Remote {
      * @throws InstanceNotFoundException The specified class loader
      * is not registered in the MBean server.
      * @throws RuntimeOperationsException Wraps a
-     * <code>java.lang.IllegalArgumentException</code>: The className
+     * <code>j86.java.lang.IllegalArgumentException</code>: The className
      * passed in parameter is null, the <code>ObjectName</code> passed
      * in parameter contains a pattern or no <code>ObjectName</code>
      * is specified for the MBean.
@@ -225,7 +225,7 @@ public interface RMIConnection extends Closeable, Remote {
 
     /**
      * Handles the method {@link
-     * javax.management.MBeanServerConnection#createMBean(String,
+     * j86.javax.management.MBeanServerConnection#createMBean(String,
      * ObjectName, Object[], String[])}.  The <code>Object[]</code>
      * parameter is wrapped in a <code>MarshalledObject</code>.
      *
@@ -249,8 +249,8 @@ public interface RMIConnection extends Closeable, Remote {
      * <code>{@link #getMBeanInfo getMBeanInfo(n)}.getClassName()</code>.
      *
      * @throws ReflectionException Wraps a
-     * <code>java.lang.ClassNotFoundException</code> or a
-     * <code>java.lang.Exception</code> that occurred when trying to
+     * <code>j86.java.lang.ClassNotFoundException</code> or a
+     * <code>j86.java.lang.Exception</code> that occurred when trying to
      * invoke the MBean's constructor.
      * @throws InstanceAlreadyExistsException The MBean is already
      * under the control of the MBean server.
@@ -263,7 +263,7 @@ public interface RMIConnection extends Closeable, Remote {
      * @throws NotCompliantMBeanException This class is not a JMX
      * compliant MBean.
      * @throws RuntimeOperationsException Wraps a
-     * <code>java.lang.IllegalArgumentException</code>: The className
+     * <code>j86.java.lang.IllegalArgumentException</code>: The className
      * passed in parameter is null, the <code>ObjectName</code> passed
      * in parameter contains a pattern, or no <code>ObjectName</code>
      * is specified for the MBean.
@@ -286,7 +286,7 @@ public interface RMIConnection extends Closeable, Remote {
 
     /**
      * Handles the method {@link
-     * javax.management.MBeanServerConnection#createMBean(String,
+     * j86.javax.management.MBeanServerConnection#createMBean(String,
      * ObjectName, ObjectName, Object[], String[])}.  The
      * <code>Object[]</code> parameter is wrapped in a
      * <code>MarshalledObject</code>.
@@ -312,8 +312,8 @@ public interface RMIConnection extends Closeable, Remote {
      * <code>{@link #getMBeanInfo getMBeanInfo(n)}.getClassName()</code>.
      *
      * @throws ReflectionException Wraps a
-     * <code>java.lang.ClassNotFoundException</code> or a
-     * <code>java.lang.Exception</code> that occurred when trying to
+     * <code>j86.java.lang.ClassNotFoundException</code> or a
+     * <code>j86.java.lang.Exception</code> that occurred when trying to
      * invoke the MBean's constructor.
      * @throws InstanceAlreadyExistsException The MBean is already
      * under the control of the MBean server.
@@ -328,7 +328,7 @@ public interface RMIConnection extends Closeable, Remote {
      * @throws InstanceNotFoundException The specified class loader
      * is not registered in the MBean server.
      * @throws RuntimeOperationsException Wraps a
-     * <code>java.lang.IllegalArgumentException</code>: The className
+     * <code>j86.java.lang.IllegalArgumentException</code>: The className
      * passed in parameter is null, the <code>ObjectName</code> passed
      * in parameter contains a pattern, or no <code>ObjectName</code>
      * is specified for the MBean.
@@ -353,7 +353,7 @@ public interface RMIConnection extends Closeable, Remote {
 
     /**
      * Handles the method
-     * {@link javax.management.MBeanServerConnection#unregisterMBean(ObjectName)}.
+     * {@link j86.javax.management.MBeanServerConnection#unregisterMBean(ObjectName)}.
      *
      * @param name The object name of the MBean to be unregistered.
      * @param delegationSubject The <code>Subject</code> containing the
@@ -366,9 +366,9 @@ public interface RMIConnection extends Closeable, Remote {
      * ((<code>MBeanRegistration</code> interface) method of the MBean
      * has thrown an exception.
      * @throws RuntimeOperationsException Wraps a
-     * <code>java.lang.IllegalArgumentException</code>: The object
+     * <code>j86.java.lang.IllegalArgumentException</code>: The object
      * name in parameter is null or the MBean you are when trying to
-     * unregister is the {@link javax.management.MBeanServerDelegate
+     * unregister is the {@link j86.javax.management.MBeanServerDelegate
      * MBeanServerDelegate} MBean.
      * @throws SecurityException if the client, or the delegated Subject
      * if any, does not have permission to perform this operation.
@@ -382,7 +382,7 @@ public interface RMIConnection extends Closeable, Remote {
 
     /**
      * Handles the method
-     * {@link javax.management.MBeanServerConnection#getObjectInstance(ObjectName)}.
+     * {@link j86.javax.management.MBeanServerConnection#getObjectInstance(ObjectName)}.
      *
      * @param name The object name of the MBean.
      * @param delegationSubject The <code>Subject</code> containing the
@@ -397,7 +397,7 @@ public interface RMIConnection extends Closeable, Remote {
      * @throws InstanceNotFoundException The MBean specified is not
      * registered in the MBean server.
      * @throws RuntimeOperationsException Wraps a
-     * <code>java.lang.IllegalArgumentException</code>: The object
+     * <code>j86.java.lang.IllegalArgumentException</code>: The object
      * name in parameter is null.
      * @throws SecurityException if the client, or the delegated Subject
      * if any, does not have permission to perform this operation.
@@ -409,7 +409,7 @@ public interface RMIConnection extends Closeable, Remote {
 
     /**
      * Handles the method {@link
-     * javax.management.MBeanServerConnection#queryMBeans(ObjectName,
+     * j86.javax.management.MBeanServerConnection#queryMBeans(ObjectName,
      * QueryExp)}.  The <code>QueryExp</code> is wrapped in a
      * <code>MarshalledObject</code>.
      *
@@ -440,7 +440,7 @@ public interface RMIConnection extends Closeable, Remote {
 
     /**
      * Handles the method {@link
-     * javax.management.MBeanServerConnection#queryNames(ObjectName,
+     * j86.javax.management.MBeanServerConnection#queryNames(ObjectName,
      * QueryExp)}.  The <code>QueryExp</code> is wrapped in a
      * <code>MarshalledObject</code>.
      *
@@ -471,7 +471,7 @@ public interface RMIConnection extends Closeable, Remote {
 
     /**
      * Handles the method
-     * {@link javax.management.MBeanServerConnection#isRegistered(ObjectName)}.
+     * {@link j86.javax.management.MBeanServerConnection#isRegistered(ObjectName)}.
      *
      * @param name The object name of the MBean to be checked.
      * @param delegationSubject The <code>Subject</code> containing the
@@ -482,7 +482,7 @@ public interface RMIConnection extends Closeable, Remote {
      * server, false otherwise.
      *
      * @throws RuntimeOperationsException Wraps a
-     * <code>java.lang.IllegalArgumentException</code>: The object
+     * <code>j86.java.lang.IllegalArgumentException</code>: The object
      * name in parameter is null.
      * @throws SecurityException if the client, or the delegated Subject
      * if any, does not have permission to perform this operation.
@@ -493,7 +493,7 @@ public interface RMIConnection extends Closeable, Remote {
 
     /**
      * Handles the method
-     * {@link javax.management.MBeanServerConnection#getMBeanCount()}.
+     * {@link j86.javax.management.MBeanServerConnection#getMBeanCount()}.
      *
      * @param delegationSubject The <code>Subject</code> containing the
      * delegation principals or <code>null</code> if the authentication
@@ -510,7 +510,7 @@ public interface RMIConnection extends Closeable, Remote {
 
     /**
      * Handles the method {@link
-     * javax.management.MBeanServerConnection#getAttribute(ObjectName,
+     * j86.javax.management.MBeanServerConnection#getAttribute(ObjectName,
      * String)}.
      *
      * @param name The object name of the MBean from which the
@@ -530,10 +530,10 @@ public interface RMIConnection extends Closeable, Remote {
      * @throws InstanceNotFoundException The MBean specified is not
      * registered in the MBean server.
      * @throws ReflectionException Wraps a
-     * <code>java.lang.Exception</code> thrown when trying to invoke
+     * <code>j86.java.lang.Exception</code> thrown when trying to invoke
      * the getter.
      * @throws RuntimeOperationsException Wraps a
-     * <code>java.lang.IllegalArgumentException</code>: The object
+     * <code>j86.java.lang.IllegalArgumentException</code>: The object
      * name in parameter is null or the attribute in parameter is
      * null.
      * @throws RuntimeMBeanException Wraps a runtime exception thrown
@@ -556,7 +556,7 @@ public interface RMIConnection extends Closeable, Remote {
 
     /**
      * Handles the method {@link
-     * javax.management.MBeanServerConnection#getAttributes(ObjectName,
+     * j86.javax.management.MBeanServerConnection#getAttributes(ObjectName,
      * String[])}.
      *
      * @param name The object name of the MBean from which the
@@ -573,7 +573,7 @@ public interface RMIConnection extends Closeable, Remote {
      * @throws ReflectionException An exception occurred when
      * trying to invoke the getAttributes method of a Dynamic MBean.
      * @throws RuntimeOperationsException Wrap a
-     * <code>java.lang.IllegalArgumentException</code>: The object
+     * <code>j86.java.lang.IllegalArgumentException</code>: The object
      * name in parameter is null or attributes in parameter is null.
      * @throws SecurityException if the client, or the delegated Subject
      * if any, does not have permission to perform this operation.
@@ -591,7 +591,7 @@ public interface RMIConnection extends Closeable, Remote {
 
     /**
      * Handles the method {@link
-     * javax.management.MBeanServerConnection#setAttribute(ObjectName,
+     * j86.javax.management.MBeanServerConnection#setAttribute(ObjectName,
      * Attribute)}.  The <code>Attribute</code> parameter is wrapped
      * in a <code>MarshalledObject</code>.
      *
@@ -613,10 +613,10 @@ public interface RMIConnection extends Closeable, Remote {
      * @throws MBeanException Wraps an exception thrown by the
      * MBean's setter.
      * @throws ReflectionException Wraps a
-     * <code>java.lang.Exception</code> thrown when trying to invoke
+     * <code>j86.java.lang.Exception</code> thrown when trying to invoke
      * the setter.
      * @throws RuntimeOperationsException Wraps a
-     * <code>java.lang.IllegalArgumentException</code>: The object
+     * <code>j86.java.lang.IllegalArgumentException</code>: The object
      * name in parameter is null or the attribute in parameter is
      * null.
      * @throws SecurityException if the client, or the delegated Subject
@@ -638,7 +638,7 @@ public interface RMIConnection extends Closeable, Remote {
 
     /**
      * Handles the method {@link
-     * javax.management.MBeanServerConnection#setAttributes(ObjectName,
+     * j86.javax.management.MBeanServerConnection#setAttributes(ObjectName,
      * AttributeList)}.  The <code>AttributeList</code> parameter is
      * wrapped in a <code>MarshalledObject</code>.
      *
@@ -659,7 +659,7 @@ public interface RMIConnection extends Closeable, Remote {
      * @throws ReflectionException An exception occurred when
      * trying to invoke the getAttributes method of a Dynamic MBean.
      * @throws RuntimeOperationsException Wraps a
-     * <code>java.lang.IllegalArgumentException</code>: The object
+     * <code>j86.java.lang.IllegalArgumentException</code>: The object
      * name in parameter is null or attributes in parameter is null.
      * @throws SecurityException if the client, or the delegated Subject
      * if any, does not have permission to perform this operation.
@@ -677,7 +677,7 @@ public interface RMIConnection extends Closeable, Remote {
 
     /**
      * Handles the method {@link
-     * javax.management.MBeanServerConnection#invoke(ObjectName,
+     * j86.javax.management.MBeanServerConnection#invoke(ObjectName,
      * String, Object[], String[])}.  The <code>Object[]</code>
      * parameter is wrapped in a <code>MarshalledObject</code>.
      *
@@ -705,7 +705,7 @@ public interface RMIConnection extends Closeable, Remote {
      * @throws MBeanException Wraps an exception thrown by the
      * MBean's invoked method.
      * @throws ReflectionException Wraps a
-     * <code>java.lang.Exception</code> thrown while trying to invoke
+     * <code>j86.java.lang.Exception</code> thrown while trying to invoke
      * the method.
      * @throws SecurityException if the client, or the delegated Subject
      * if any, does not have permission to perform this operation.
@@ -727,7 +727,7 @@ public interface RMIConnection extends Closeable, Remote {
 
     /**
      * Handles the method
-     * {@link javax.management.MBeanServerConnection#getDefaultDomain()}.
+     * {@link j86.javax.management.MBeanServerConnection#getDefaultDomain()}.
      *
      * @param delegationSubject The <code>Subject</code> containing the
      * delegation principals or <code>null</code> if the authentication
@@ -744,7 +744,7 @@ public interface RMIConnection extends Closeable, Remote {
 
     /**
      * Handles the method
-     * {@link javax.management.MBeanServerConnection#getDomains()}.
+     * {@link j86.javax.management.MBeanServerConnection#getDomains()}.
      *
      * @param delegationSubject The <code>Subject</code> containing the
      * delegation principals or <code>null</code> if the authentication
@@ -761,7 +761,7 @@ public interface RMIConnection extends Closeable, Remote {
 
     /**
      * Handles the method
-     * {@link javax.management.MBeanServerConnection#getMBeanInfo(ObjectName)}.
+     * {@link j86.javax.management.MBeanServerConnection#getMBeanInfo(ObjectName)}.
      *
      * @param name The name of the MBean to analyze
      * @param delegationSubject The <code>Subject</code> containing the
@@ -781,7 +781,7 @@ public interface RMIConnection extends Closeable, Remote {
      * if any, does not have permission to perform this operation.
      * @throws IOException if a general communication exception occurred.
      * @throws RuntimeOperationsException Wraps a
-     * <code>java.lang.IllegalArgumentException</code>: The object
+     * <code>j86.java.lang.IllegalArgumentException</code>: The object
      * name in parameter is null.
      */
     public MBeanInfo getMBeanInfo(ObjectName name, Subject delegationSubject)
@@ -793,7 +793,7 @@ public interface RMIConnection extends Closeable, Remote {
 
     /**
      * Handles the method {@link
-     * javax.management.MBeanServerConnection#isInstanceOf(ObjectName,
+     * j86.javax.management.MBeanServerConnection#isInstanceOf(ObjectName,
      * String)}.
      *
      * @param name The <code>ObjectName</code> of the MBean.
@@ -811,7 +811,7 @@ public interface RMIConnection extends Closeable, Remote {
      * if any, does not have permission to perform this operation.
      * @throws IOException if a general communication exception occurred.
      * @throws RuntimeOperationsException Wraps a
-     * <code>java.lang.IllegalArgumentException</code>: The object
+     * <code>j86.java.lang.IllegalArgumentException</code>: The object
      * name in parameter is null.
      */
     public boolean isInstanceOf(ObjectName name,
@@ -821,7 +821,7 @@ public interface RMIConnection extends Closeable, Remote {
 
     /**
      * Handles the method {@link
-     * javax.management.MBeanServerConnection#addNotificationListener(ObjectName,
+     * j86.javax.management.MBeanServerConnection#addNotificationListener(ObjectName,
      * ObjectName, NotificationFilter, Object)}.  The
      * <code>NotificationFilter</code> parameter is wrapped in a
      * <code>MarshalledObject</code>.  The <code>Object</code>
@@ -849,7 +849,7 @@ public interface RMIConnection extends Closeable, Remote {
      * @throws RuntimeOperationsException Wraps an {@link
      * IllegalArgumentException}.  The MBean named by
      * <code>listener</code> exists but does not implement the
-     * {@link javax.management.NotificationListener} interface,
+     * {@link j86.javax.management.NotificationListener} interface,
      * or <code>name</code> or <code>listener</code> is null.
      * @throws SecurityException if the client, or the delegated Subject
      * if any, does not have permission to perform this operation.
@@ -868,7 +868,7 @@ public interface RMIConnection extends Closeable, Remote {
 
     /**
      * Handles the method {@link
-     * javax.management.MBeanServerConnection#removeNotificationListener(ObjectName,
+     * j86.javax.management.MBeanServerConnection#removeNotificationListener(ObjectName,
      * ObjectName)}.
      *
      * @param name The name of the MBean on which the listener should
@@ -901,7 +901,7 @@ public interface RMIConnection extends Closeable, Remote {
 
     /**
      * Handles the method {@link
-     * javax.management.MBeanServerConnection#removeNotificationListener(ObjectName,
+     * j86.javax.management.MBeanServerConnection#removeNotificationListener(ObjectName,
      * ObjectName, NotificationFilter, Object)}.  The
      * <code>NotificationFilter</code> parameter is wrapped in a
      * <code>MarshalledObject</code>.  The <code>Object</code>
@@ -947,7 +947,7 @@ public interface RMIConnection extends Closeable, Remote {
 
     /**
      * <p>Handles the method {@link
-     * javax.management.MBeanServerConnection#addNotificationListener(ObjectName,
+     * j86.javax.management.MBeanServerConnection#addNotificationListener(ObjectName,
      * NotificationListener, NotificationFilter, Object)}.</p>
      *
      * <p>Register for notifications from the given MBeans that match
@@ -1004,9 +1004,9 @@ public interface RMIConnection extends Closeable, Remote {
 
     /**
      * <p>Handles the
-     * {@link javax.management.MBeanServerConnection#removeNotificationListener(ObjectName,NotificationListener)
+     * {@link j86.javax.management.MBeanServerConnection#removeNotificationListener(ObjectName,NotificationListener)
      * removeNotificationListener(ObjectName, NotificationListener)} and
-     * {@link javax.management.MBeanServerConnection#removeNotificationListener(ObjectName,NotificationListener,NotificationFilter,Object)
+     * {@link j86.javax.management.MBeanServerConnection#removeNotificationListener(ObjectName,NotificationListener,NotificationFilter,Object)
      * removeNotificationListener(ObjectName, NotificationListener, NotificationFilter, Object)} methods.</p>
      *
      * <p>This method removes one or more

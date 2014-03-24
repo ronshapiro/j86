@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.invoke.util;
+package j86.j86.sun.invoke.util;
 
 /**
  * Utility routines for dealing with bytecode-level names.
@@ -275,7 +275,7 @@ public class BytecodeName {
      * @param s the bytecode name
      * @return the source name, which may possibly have unsafe characters
      * @throws IllegalArgumentException if the bytecode name is not {@link #isSafeBytecodeName safe}
-     * @see #isSafeBytecodeName(java.lang.String)
+     * @see #isSafeBytecodeName(j86.java.lang.String)
      */
     public static String toSourceName(String s) {
         checkSafeBytecodeName(s);
@@ -293,7 +293,7 @@ public class BytecodeName {
      * Each resulting array element will be either a dangerous character,
      * or else a safe bytecode name.
      * (The safe name might possibly be mangled to hide further dangerous characters.)
-     * For example, the qualified class name {@code java/lang/String}
+     * For example, the qualified class name {@code j86.java.lang/String}
      * will be parsed into the array {@code {"java", '/', "lang", '/', "String"}}.
      * The name {@code &lt;init&gt;} will be parsed into { '&lt;', "init", '&gt;'}}
      * The name {@code foo/bar$:baz} will be parsed into
@@ -341,7 +341,7 @@ public class BytecodeName {
 
     /**
      * Given a series of components, create a bytecode name for a classfile.
-     * This is the inverse of {@link #parseBytecodeName(java.lang.String)}.
+     * This is the inverse of {@link #parseBytecodeName(j86.java.lang.String)}.
      * Each component must either be an interned one-character string of
      * a dangerous character, or else a safe bytecode name.
      * @param components a series of name components

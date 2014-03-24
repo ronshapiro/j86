@@ -22,14 +22,14 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.awt;
+package j86.java.awt;
 
-import java.awt.geom.AffineTransform;
-import java.awt.geom.PathIterator;
-import java.awt.geom.Point2D;
-import java.awt.geom.Rectangle2D;
-import sun.awt.geom.Crossings;
-import java.util.Arrays;
+import j86.j86.java.awt.geom.AffineTransform;
+import j86.j86.java.awt.geom.PathIterator;
+import j86.j86.java.awt.geom.Point2D;
+import j86.j86.java.awt.geom.Rectangle2D;
+import j86.j86.sun.awt.geom.Crossings;
+import j86.java.util.Arrays;
 
 /**
  * The <code>Polygon</code> class encapsulates a description of a
@@ -43,7 +43,7 @@ import java.util.Arrays;
  * pairs of {@code (x,y)} points are joined by a line segment
  * that closes the polygon.  This <code>Polygon</code> is defined with
  * an even-odd winding rule.  See
- * {@link java.awt.geom.PathIterator#WIND_EVEN_ODD WIND_EVEN_ODD}
+ * {@link j86.j86.java.awt.geom.PathIterator#WIND_EVEN_ODD WIND_EVEN_ODD}
  * for a definition of the even-odd winding rule.
  * This class's hit-testing methods, which include the
  * <code>contains</code>, <code>intersects</code> and <code>inside</code>
@@ -55,7 +55,7 @@ import java.util.Arrays;
  * @author      Herb Jellinek
  * @since       1.0
  */
-public class Polygon implements Shape, java.io.Serializable {
+public class Polygon implements Shape, j86.java.io.Serializable {
 
     /**
      * The total number of points.  The value of <code>npoints</code>
@@ -177,7 +177,7 @@ public class Polygon implements Shape, java.io.Serializable {
      * the number of vertices in the new polygon data is significantly
      * smaller than the number of vertices in the data from before the
      * reset.
-     * @see         java.awt.Polygon#invalidate
+     * @see         j86.java.awt.Polygon#invalidate
      * @since 1.4
      */
     public void reset() {
@@ -194,7 +194,7 @@ public class Polygon implements Shape, java.io.Serializable {
      * from methods such as <code>getBounds</code> or <code>contains</code>
      * that might cache data from earlier computations relating to
      * the vertex coordinates.
-     * @see         java.awt.Polygon#getBounds
+     * @see         j86.java.awt.Polygon#getBounds
      * @since 1.4
      */
     public void invalidate() {
@@ -278,8 +278,8 @@ public class Polygon implements Shape, java.io.Serializable {
      * method updates the bounding box.
      * @param       x the specified X coordinate
      * @param       y the specified Y coordinate
-     * @see         java.awt.Polygon#getBounds
-     * @see         java.awt.Polygon#contains
+     * @see         j86.java.awt.Polygon#getBounds
+     * @see         j86.java.awt.Polygon#contains
      * @since 1.0
      */
     public void addPoint(int x, int y) {

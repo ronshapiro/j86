@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.java.util.jar.pack;
+package j86.com.sun.j86.j86.java.util.jar.pack;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.List;
-import java.util.ListIterator;
+import j86.java.util.ArrayList;
+import j86.java.util.Collection;
+import j86.java.util.Iterator;
+import j86.java.util.List;
+import j86.java.util.ListIterator;
 
 /*
  * @author ksrini

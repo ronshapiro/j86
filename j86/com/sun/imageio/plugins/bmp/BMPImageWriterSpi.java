@@ -23,26 +23,26 @@
  * questions.
  */
 
-package com.sun.imageio.plugins.bmp;
+package j86.com.sun.imageio.plugins.bmp;
 
-import java.awt.image.DataBuffer;
-import java.awt.image.SampleModel;
-import java.awt.image.SinglePixelPackedSampleModel;
+import j86.j86.j86.java.awt.image.DataBuffer;
+import j86.j86.j86.java.awt.image.SampleModel;
+import j86.j86.j86.java.awt.image.SinglePixelPackedSampleModel;
 
-import javax.imageio.spi.ImageWriterSpi;
-import javax.imageio.spi.ServiceRegistry;
-import javax.imageio.spi.IIORegistry;
-import javax.imageio.stream.ImageOutputStream;
-import javax.imageio.ImageWriter;
-import javax.imageio.ImageTypeSpecifier;
-import javax.imageio.IIOException;
-import java.util.Locale;
+import j86.j86.javax.imageio.spi.ImageWriterSpi;
+import j86.j86.javax.imageio.spi.ServiceRegistry;
+import j86.j86.javax.imageio.spi.IIORegistry;
+import j86.j86.javax.imageio.stream.ImageOutputStream;
+import j86.javax.imageio.ImageWriter;
+import j86.javax.imageio.ImageTypeSpecifier;
+import j86.javax.imageio.IIOException;
+import j86.java.util.Locale;
 
-import javax.imageio.plugins.bmp.BMPImageWriteParam;
+import j86.j86.javax.imageio.plugins.bmp.BMPImageWriteParam;
 
 public class BMPImageWriterSpi extends ImageWriterSpi {
     private static String [] readerSpiNames =
-        {"com.sun.imageio.plugins.bmp.BMPImageReaderSpi"};
+        {"j86.com.sun.imageio.plugins.bmp.BMPImageReaderSpi"};
     private static String[] formatNames = {"bmp", "BMP"};
     private static String[] entensions = {"bmp"};
     private static String[] mimeType = {"image/bmp"};
@@ -55,14 +55,14 @@ public class BMPImageWriterSpi extends ImageWriterSpi {
               formatNames,
               entensions,
               mimeType,
-              "com.sun.imageio.plugins.bmp.BMPImageWriter",
+              "j86.com.sun.imageio.plugins.bmp.BMPImageWriter",
               new Class[] { ImageOutputStream.class },
               readerSpiNames,
               false,
               null, null, null, null,
               true,
               BMPMetadata.nativeMetadataFormatName,
-              "com.sun.imageio.plugins.bmp.BMPMetadataFormat",
+              "j86.com.sun.imageio.plugins.bmp.BMPMetadataFormat",
               null, null);
     }
 

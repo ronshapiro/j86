@@ -23,14 +23,14 @@
  * questions.
  */
 
-package java.sql;
+package j86.java.sql;
 
-import java.time.Instant;
-import java.time.LocalDateTime;
-import java.util.StringTokenizer;
+import j86.java.time.Instant;
+import j86.java.time.LocalDateTime;
+import j86.java.util.StringTokenizer;
 
 /**
- * <P>A thin wrapper around <code>java.util.Date</code> that allows
+ * <P>A thin wrapper around <code>j86.java.util.Date</code> that allows
  * the JDBC API to identify this as an SQL <code>TIMESTAMP</code> value.
  * It adds the ability
  * to hold the SQL <code>TIMESTAMP</code> fractional seconds value, by allowing
@@ -46,30 +46,30 @@ import java.util.StringTokenizer;
  * its fractional seconds precision.
  *</ul>
  *
- * <P><B>Note:</B> This type is a composite of a <code>java.util.Date</code> and a
+ * <P><B>Note:</B> This type is a composite of a <code>j86.java.util.Date</code> and a
  * separate nanoseconds value. Only integral seconds are stored in the
- * <code>java.util.Date</code> component. The fractional seconds - the nanos - are
+ * <code>j86.java.util.Date</code> component. The fractional seconds - the nanos - are
  * separate.  The <code>Timestamp.equals(Object)</code> method never returns
  * <code>true</code> when passed an object
- * that isn't an instance of <code>java.sql.Timestamp</code>,
+ * that isn't an instance of <code>j86.java.sql.Timestamp</code>,
  * because the nanos component of a date is unknown.
  * As a result, the <code>Timestamp.equals(Object)</code>
  * method is not symmetric with respect to the
- * <code>java.util.Date.equals(Object)</code>
+ * <code>j86.java.util.Date.equals(Object)</code>
  * method.  Also, the <code>hashCode</code> method uses the underlying
- * <code>java.util.Date</code>
+ * <code>j86.java.util.Date</code>
  * implementation and therefore does not include nanos in its computation.
  * <P>
  * Due to the differences between the <code>Timestamp</code> class
- * and the <code>java.util.Date</code>
+ * and the <code>j86.java.util.Date</code>
  * class mentioned above, it is recommended that code not view
  * <code>Timestamp</code> values generically as an instance of
- * <code>java.util.Date</code>.  The
+ * <code>j86.java.util.Date</code>.  The
  * inheritance relationship between <code>Timestamp</code>
- * and <code>java.util.Date</code> really
+ * and <code>j86.java.util.Date</code> really
  * denotes implementation inheritance, and not type inheritance.
  */
-public class Timestamp extends java.util.Date {
+public class Timestamp extends j86.java.util.Date {
 
     /**
      * Constructs a <code>Timestamp</code> object initialized
@@ -105,7 +105,7 @@ public class Timestamp extends java.util.Date {
      * @param time milliseconds since January 1, 1970, 00:00:00 GMT.
      *        A negative number is the number of milliseconds before
      *         January 1, 1970, 00:00:00 GMT.
-     * @see java.util.Calendar
+     * @see j86.java.util.Calendar
      */
     public Timestamp(long time) {
         super((time/1000)*1000);
@@ -123,7 +123,7 @@ public class Timestamp extends java.util.Date {
      * @param time   the number of milliseconds.
      * @see #getTime
      * @see #Timestamp(long time)
-     * @see java.util.Calendar
+     * @see j86.java.util.Calendar
      */
     public void setTime(long time) {
         super.setTime((time/1000)*1000);
@@ -162,7 +162,7 @@ public class Timestamp extends java.util.Date {
      * and <code>dd</code> may also be omitted.
      *
      * @return corresponding <code>Timestamp</code> value
-     * @exception java.lang.IllegalArgumentException if the given argument
+     * @exception j86.java.lang.IllegalArgumentException if the given argument
      * does not have the format <code>yyyy-[m]m-[d]d hh:mm:ss[.f...]</code>
      */
     public static Timestamp valueOf(String s) {
@@ -192,7 +192,7 @@ public class Timestamp extends java.util.Date {
         String delimiterDate = "-";
         String delimiterTime = ":";
 
-        if (s == null) throw new java.lang.IllegalArgumentException("null string");
+        if (s == null) throw new j86.java.lang.IllegalArgumentException("null string");
 
         // Split the string into date and time components
         s = s.trim();
@@ -201,7 +201,7 @@ public class Timestamp extends java.util.Date {
             date_s = s.substring(0,dividingSpace);
             time_s = s.substring(dividingSpace+1);
         } else {
-            throw new java.lang.IllegalArgumentException(formatError);
+            throw new j86.java.lang.IllegalArgumentException(formatError);
         }
 
         // Parse the date
@@ -210,7 +210,7 @@ public class Timestamp extends java.util.Date {
 
         // Parse the time
         if (time_s == null)
-            throw new java.lang.IllegalArgumentException(formatError);
+            throw new j86.java.lang.IllegalArgumentException(formatError);
         firstColon = time_s.indexOf(':');
         secondColon = time_s.indexOf(':', firstColon+1);
         period = time_s.indexOf('.', secondColon+1);
@@ -234,7 +234,7 @@ public class Timestamp extends java.util.Date {
             }
         }
         if (! parsedDate) {
-            throw new java.lang.IllegalArgumentException(formatError);
+            throw new j86.java.lang.IllegalArgumentException(formatError);
         }
 
         // Convert the time; default missing nanos
@@ -248,18 +248,18 @@ public class Timestamp extends java.util.Date {
                     Integer.parseInt(time_s.substring(secondColon+1, period));
                 nanos_s = time_s.substring(period+1);
                 if (nanos_s.length() > 9)
-                    throw new java.lang.IllegalArgumentException(formatError);
+                    throw new j86.java.lang.IllegalArgumentException(formatError);
                 if (!Character.isDigit(nanos_s.charAt(0)))
-                    throw new java.lang.IllegalArgumentException(formatError);
+                    throw new j86.java.lang.IllegalArgumentException(formatError);
                 nanos_s = nanos_s + zeros.substring(0,9-nanos_s.length());
                 a_nanos = Integer.parseInt(nanos_s);
             } else if (period > 0) {
-                throw new java.lang.IllegalArgumentException(formatError);
+                throw new j86.java.lang.IllegalArgumentException(formatError);
             } else {
                 second = Integer.parseInt(time_s.substring(secondColon+1));
             }
         } else {
-            throw new java.lang.IllegalArgumentException(formatError);
+            throw new j86.java.lang.IllegalArgumentException(formatError);
         }
 
         return new Timestamp(year - 1900, month - 1, day, hour, minute, second, a_nanos);
@@ -380,7 +380,7 @@ public class Timestamp extends java.util.Date {
      * to the given value.
      *
      * @param n the new fractional seconds component
-     * @exception java.lang.IllegalArgumentException if the given argument
+     * @exception j86.java.lang.IllegalArgumentException if the given argument
      *            is greater than 999999999 or less than 0
      * @see #getNanos
      */
@@ -430,7 +430,7 @@ public class Timestamp extends java.util.Date {
      *         is equal to this <code>Timestamp</code> object;
      *         <code>false</code> otherwise
      */
-    public boolean equals(java.lang.Object ts) {
+    public boolean equals(j86.java.lang.Object ts) {
       if (ts instanceof Timestamp) {
         return this.equals((Timestamp)ts);
       } else {
@@ -503,7 +503,7 @@ public class Timestamp extends java.util.Date {
      *
      * @since   1.5
      */
-    public int compareTo(java.util.Date o) {
+    public int compareTo(j86.java.util.Date o) {
        if(o instanceof Timestamp) {
             // When Timestamp instance compare it with a Timestamp
             // Hence it is basically calling this.compareTo((Timestamp))o);
@@ -520,7 +520,7 @@ public class Timestamp extends java.util.Date {
     /**
      * {@inheritDoc}
      *
-     * The {@code hashCode} method uses the underlying {@code java.util.Date}
+     * The {@code hashCode} method uses the underlying {@code j86.java.util.Date}
      * implementation and therefore does not include nanos in its computation.
      *
      */

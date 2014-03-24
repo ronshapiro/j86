@@ -23,11 +23,11 @@
  * questions.
  */
 
-package java.beans;
+package j86.java.beans;
 
-import java.lang.ref.Reference;
-import java.lang.reflect.Method;
-import java.lang.reflect.Constructor;
+import j86.j86.java.lang.ref.Reference;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.j86.j86.java.lang.reflect.Constructor;
 
 /**
  * A PropertyDescriptor describes one property that a Java Bean
@@ -669,7 +669,7 @@ public class PropertyDescriptor extends FeatureDescriptor {
 
     /**
      * Returns a hash code value for the object.
-     * See {@link java.lang.Object#hashCode} for a complete description.
+     * See {@link j86.java.lang.Object#hashCode} for a complete description.
      *
      * @return a hash code value for this object.
      * @since 1.5

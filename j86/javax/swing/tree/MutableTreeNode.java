@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.swing.tree;
+package j86.j86.javax.swing.tree;
 
 /**
  * Defines the requirements for a tree node object that can change --
@@ -31,7 +31,7 @@ package javax.swing.tree;
  * of a user object stored in the node.
  *
  * @see DefaultMutableTreeNode
- * @see javax.swing.JTree
+ * @see j86.javax.swing.JTree
  *
  * @author Rob Davis
  * @author Scott Violet

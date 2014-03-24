@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.management;
+package j86.sun.management;
 
-import java.util.List;
-import sun.management.counter.*;
+import j86.java.util.List;
+import j86.j86.sun.management.counter.*;
 
 /**
  * Implementation class of HotspotMemoryMBean interface.
@@ -54,7 +54,7 @@ class HotspotMemory
     private static final String GC_COUNTER_NAME_PATTERN =
         JAVA_GC + "|" + COM_SUN_GC + "|" + SUN_GC;
 
-    public java.util.List<Counter> getInternalMemoryCounters() {
+    public j86.java.util.List<Counter> getInternalMemoryCounters() {
         return jvm.getInternalCounters(GC_COUNTER_NAME_PATTERN);
     }
 }

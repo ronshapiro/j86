@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.nio.fs;
+package j86.j86.sun.nio.fs;
 
-import sun.misc.Unsafe;
+import j86.sun.misc.Unsafe;
 
 /**
  * Factory for native buffers.

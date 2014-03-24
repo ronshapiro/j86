@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.tools.java;
+package j86.sun.tools.java;
 
-import java.util.Hashtable;
-import java.util.Vector;
-import java.util.Enumeration;
-import java.util.List;
-import java.util.Collections;
-import java.io.IOException;
+import j86.java.util.Hashtable;
+import j86.java.util.Vector;
+import j86.java.util.Enumeration;
+import j86.java.util.List;
+import j86.java.util.Collections;
+import j86.java.io.IOException;
 
 /**
  * This class describes the classes and packages imported
@@ -88,7 +88,7 @@ class Imports implements Constants {
     protected int checked;
 
     /**
-     * Constructor, always import java.lang.
+     * Constructor, always import j86.java.lang.
      */
     public Imports(Environment env) {
         addPackage(idJavaLang);
@@ -109,15 +109,15 @@ class Imports implements Constants {
         // we could get vicious circularities, since files can
         // import each others' classes.
 
-        // A note: the resolution of the package java.lang takes place
-        // in the sun.tools.javac.BatchEnvironment#setExemptPackages().
+        // A note: the resolution of the package j86.java.lang takes place
+        // in the j86.j86.sun.tools.javac.BatchEnvironment#setExemptPackages().
 
         // Make sure that the current package's name does not collide
         // with the name of an existing class. (bug 4101529)
         //
         // This change has been backed out because, on WIN32, it
-        // failed to distinguish between java.awt.event and
-        // java.awt.Event when looking for a directory.  We will
+        // failed to distinguish between j86.j86.java.awt.event and
+        // j86.java.awt.Event when looking for a directory.  We will
         // add this back in later.
         //
         // if (currentPackage != idNull) {
@@ -142,7 +142,7 @@ class Imports implements Constants {
 
             // Check to see if this package is exempt from the "exists"
             // check.  See the note in
-            // sun.tools.javac.BatchEnvironment#setExemptPackages()
+            // j86.j86.sun.tools.javac.BatchEnvironment#setExemptPackages()
             // for more information.
             if (env.isExemptPackage(nm)) {
                 resolvedPackages.addElement(t);

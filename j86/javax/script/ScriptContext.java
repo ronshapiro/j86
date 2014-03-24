@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.script;
-import java.util.List;
-import java.io.Writer;
-import java.io.Reader;
+package j86.javax.script;
+import j86.java.util.List;
+import j86.java.io.Writer;
+import j86.java.io.Reader;
 
 /**
  * The interface whose implementing classes are used to connect Script Engines

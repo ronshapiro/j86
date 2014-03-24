@@ -22,17 +22,17 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text.html;
+package j86.j86.j86.javax.swing.text.html;
 
-import java.util.Enumeration;
-import java.awt.*;
-import javax.swing.*;
-import javax.swing.text.*;
-import java.beans.*;
-import java.lang.reflect.*;
+import j86.java.util.Enumeration;
+import j86.java.awt.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.text.*;
+import j86.java.beans.*;
+import j86.j86.j86.java.lang.reflect.*;
 
-import sun.reflect.misc.MethodUtil;
-import sun.reflect.misc.ReflectUtil;
+import j86.j86.sun.reflect.misc.MethodUtil;
+import j86.j86.sun.reflect.misc.ReflectUtil;
 
 /**
  * Component decorator that implements the view interface
@@ -48,7 +48,7 @@ import sun.reflect.misc.ReflectUtil;
  * If the class can successfully be loaded, an attempt will
  * be made to create an instance of it by calling
  * <code>Class.newInstance</code>.  An attempt will be made
- * to narrow the instance to type <code>java.awt.Component</code>
+ * to narrow the instance to type <code>j86.java.awt.Component</code>
  * to display the object.
  * <p>
  * This view can also manage a set of parameters with limitations.
@@ -63,7 +63,7 @@ import sun.reflect.misc.ReflectUtil;
  * <p>
  * A simple example HTML invocation is:
  * <pre>
- *      &lt;object classid="javax.swing.JLabel"&gt;
+ *      &lt;object classid="j86.javax.swing.JLabel"&gt;
  *      &lt;param name="text" value="sample text"&gt;
  *      &lt;/object&gt;
  * </pre>

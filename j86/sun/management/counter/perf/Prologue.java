@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.management.counter.perf;
+package j86.j86.j86.sun.management.counter.perf;
 
-import sun.management.counter.*;
-import java.nio.*;
+import j86.j86.sun.management.counter.*;
+import j86.java.nio.*;
 
 class Prologue {
     // these constants should match their #define counterparts in vmdata.hpp

@@ -24,16 +24,16 @@
  */
 
 
-package javax.management.openmbean;
+package j86.j86.javax.management.openmbean;
 
 
 // java import
 //
-import java.util.Arrays;
+import j86.java.util.Arrays;
 
-import javax.management.Descriptor;
-import javax.management.MBeanConstructorInfo;
-import javax.management.MBeanParameterInfo;
+import j86.javax.management.Descriptor;
+import j86.javax.management.MBeanConstructorInfo;
+import j86.javax.management.MBeanParameterInfo;
 
 
 /**
@@ -147,7 +147,7 @@ public class OpenMBeanConstructorInfoSupport
     }
 
 
-    /* ***  Commodity methods from java.lang.Object  *** */
+    /* ***  Commodity methods from j86.java.lang.Object  *** */
 
 
     /**
@@ -221,7 +221,7 @@ public class OpenMBeanConstructorInfoSupport
      * information used in {@code equals} comparisons (ie: its name
      * and signature, where the signature hashCode is calculated by a
      * call to {@code
-     * java.util.Arrays.asList(this.getSignature).hashCode()}).</p>
+     * j86.java.util.Arrays.asList(this.getSignature).hashCode()}).</p>
      *
      * <p>This ensures that {@code t1.equals(t2)} implies that {@code
      * t1.hashCode()==t2.hashCode()} for any two {@code
@@ -232,7 +232,7 @@ public class OpenMBeanConstructorInfoSupport
      * <p>However, note that another instance of a class implementing
      * the {@code OpenMBeanConstructorInfo} interface may be equal to
      * this {@code OpenMBeanConstructorInfoSupport} instance as
-     * defined by {@link #equals(java.lang.Object)}, but may have a
+     * defined by {@link #equals(j86.java.lang.Object)}, but may have a
      * different hash code if it is calculated differently.</p>
      *
      * <p>As {@code OpenMBeanConstructorInfoSupport} instances are
@@ -266,7 +266,7 @@ public class OpenMBeanConstructorInfoSupport
      *
      * <p>The string representation consists of the name of this class
      * (ie {@code
-     * javax.management.openmbean.OpenMBeanConstructorInfoSupport}),
+     * j86.j86.javax.management.openmbean.OpenMBeanConstructorInfoSupport}),
      * the name and signature of the described constructor and the
      * string representation of its descriptor.</p>
      *

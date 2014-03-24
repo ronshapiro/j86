@@ -23,12 +23,12 @@
  * questions.
  */
 
-package com.sun.jndi.dns;
+package j86.com.sun.jndi.dns;
 
 
-import java.lang.ref.SoftReference;
-import java.util.Date;
-import java.util.Vector;
+import j86.j86.java.lang.ref.SoftReference;
+import j86.java.util.Date;
+import j86.java.util.Vector;
 
 
 /**

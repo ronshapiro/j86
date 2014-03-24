@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.beans;
+package j86.java.beans;
 
 /**
  * A "PropertyChange" event gets fired whenever a bean changes a "bound"
@@ -31,7 +31,7 @@ package java.beans;
  * bean so as to be notified of any bound property updates.
  */
 
-public interface PropertyChangeListener extends java.util.EventListener {
+public interface PropertyChangeListener extends j86.java.util.EventListener {
 
     /**
      * This method gets called when a bound property is changed.

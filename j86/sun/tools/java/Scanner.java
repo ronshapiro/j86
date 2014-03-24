@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.tools.java;
+package j86.sun.tools.java;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.Hashtable;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.util.Hashtable;
 
 /**
  * A Scanner for Java tokens. Errors are reported

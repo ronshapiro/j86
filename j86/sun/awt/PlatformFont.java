@@ -23,15 +23,15 @@
  * questions.
  */
 
-package sun.awt;
+package j86.sun.awt;
 
-import java.awt.peer.FontPeer;
-import java.util.Locale;
-import java.util.Vector;
-import sun.font.SunFontManager;
-import sun.java2d.FontSupport;
-import java.nio.CharBuffer;
-import java.nio.ByteBuffer;
+import j86.j86.java.awt.peer.FontPeer;
+import j86.java.util.Locale;
+import j86.java.util.Vector;
+import j86.sun.font.SunFontManager;
+import j86.sun.java2d.FontSupport;
+import j86.java.nio.CharBuffer;
+import j86.java.nio.ByteBuffer;
 
 public abstract class PlatformFont implements FontPeer {
 

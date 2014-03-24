@@ -24,14 +24,14 @@
  */
 
 
-package sun.security.ssl;
+package j86.sun.security.ssl;
 
-import java.io.*;
-import java.nio.*;
-import java.util.Arrays;
+import j86.java.io.*;
+import j86.java.nio.*;
+import j86.java.util.Arrays;
 
-import javax.net.ssl.SSLException;
-import sun.misc.HexDumpEncoder;
+import j86.j86.javax.net.ssl.SSLException;
+import j86.sun.misc.HexDumpEncoder;
 
 
 /**

@@ -35,9 +35,9 @@
  *******************************************************************************
  */
 
-package sun.text.normalizer;
+package j86.j86.sun.text.normalizer;
 
-import java.text.CharacterIterator;
+import j86.java.text.CharacterIterator;
 
 /**
  * This class is a wrapper around CharacterIterator and implements the

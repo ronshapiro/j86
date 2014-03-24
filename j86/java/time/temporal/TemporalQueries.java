@@ -59,17 +59,17 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package java.time.temporal;
+package j86.j86.java.time.temporal;
 
-import static java.time.temporal.ChronoField.EPOCH_DAY;
-import static java.time.temporal.ChronoField.NANO_OF_DAY;
-import static java.time.temporal.ChronoField.OFFSET_SECONDS;
+import static j86.j86.java.time.temporal.ChronoField.EPOCH_DAY;
+import static j86.j86.java.time.temporal.ChronoField.NANO_OF_DAY;
+import static j86.j86.java.time.temporal.ChronoField.OFFSET_SECONDS;
 
-import java.time.LocalDate;
-import java.time.LocalTime;
-import java.time.ZoneId;
-import java.time.ZoneOffset;
-import java.time.chrono.Chronology;
+import j86.java.time.LocalDate;
+import j86.java.time.LocalTime;
+import j86.java.time.ZoneId;
+import j86.java.time.ZoneOffset;
+import j86.j86.java.time.chrono.Chronology;
 
 /**
  * Common implementations of {@code TemporalQuery}.
@@ -138,8 +138,8 @@ public final class TemporalQueries {
      * This queries a {@code TemporalAccessor} for the zone.
      * The zone is only returned if the date-time conceptually contains a {@code ZoneId}.
      * It will not be returned if the date-time only conceptually has an {@code ZoneOffset}.
-     * Thus a {@link java.time.ZonedDateTime} will return the result of {@code getZone()},
-     * but an {@link java.time.OffsetDateTime} will return null.
+     * Thus a {@link j86.java.time.ZonedDateTime} will return the result of {@code getZone()},
+     * but an {@link j86.java.time.OffsetDateTime} will return null.
      * <p>
      * In most cases, applications should use {@link #zone()} as this query is too strict.
      * <p>
@@ -196,7 +196,7 @@ public final class TemporalQueries {
      * {@code ZoneOffset} returns null (does not represent a date)<br>
      * {@code Instant} returns null (does not represent a date)<br>
      * <p>
-     * The method {@link java.time.chrono.Chronology#from(TemporalAccessor)} can be used as a
+     * The method {@link j86.j86.java.time.chrono.Chronology#from(TemporalAccessor)} can be used as a
      * {@code TemporalQuery} via a method reference, {@code Chronology::from}.
      * That method is equivalent to this query, except that it throws an
      * exception if a chronology cannot be obtained.
@@ -252,8 +252,8 @@ public final class TemporalQueries {
      * This queries a {@code TemporalAccessor} for the zone.
      * It first tries to obtain the zone, using {@link #zoneId()}.
      * If that is not found it tries to obtain the {@link #offset()}.
-     * Thus a {@link java.time.ZonedDateTime} will return the result of {@code getZone()},
-     * while an {@link java.time.OffsetDateTime} will return the result of {@code getOffset()}.
+     * Thus a {@link j86.java.time.ZonedDateTime} will return the result of {@code getZone()},
+     * while an {@link j86.java.time.OffsetDateTime} will return the result of {@code getOffset()}.
      * <p>
      * In most cases, applications should use this query rather than {@code #zoneId()}.
      * <p>
@@ -278,7 +278,7 @@ public final class TemporalQueries {
      * The query implementation examines the {@link ChronoField#OFFSET_SECONDS OFFSET_SECONDS}
      * field and uses it to create a {@code ZoneOffset}.
      * <p>
-     * The method {@link java.time.ZoneOffset#from(TemporalAccessor)} can be used as a
+     * The method {@link j86.java.time.ZoneOffset#from(TemporalAccessor)} can be used as a
      * {@code TemporalQuery} via a method reference, {@code ZoneOffset::from}.
      * This query and {@code ZoneOffset::from} will return the same result if the
      * temporal object contains an offset. If the temporal object does not contain

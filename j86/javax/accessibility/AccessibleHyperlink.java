@@ -23,12 +23,12 @@
  * questions.
  */
 
-package javax.accessibility;
+package j86.javax.accessibility;
 
 
-import java.util.*;
-import java.awt.*;
-import javax.swing.text.*;
+import j86.java.util.*;
+import j86.java.awt.*;
+import j86.j86.javax.swing.text.*;
 
 
 /**
@@ -97,7 +97,7 @@ public abstract class AccessibleHyperlink implements AccessibleAction {
          * as appropriate for that link.  E.g. from HTML:
          *   &lt;a HREF="http://www.sun.com/access"&gt;Accessibility&lt;/a&gt;
          * this method would return a
-         * java.net.URL("http://www.sun.com/access.html");
+         * j86.java.net.URL("http://www.sun.com/access.html");
          *
          * @param i zero-based index of the actions
          * @return an Object representing the hypertext link itself

@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.security.ssl;
+package j86.sun.security.ssl;
 
-import java.security.*;
+import j86.java.security.*;
 
 /**
  * The "KeyManager" for ephemeral RSA keys. Ephemeral DH and ECDH keys

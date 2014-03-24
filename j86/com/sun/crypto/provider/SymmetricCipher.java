@@ -23,9 +23,9 @@
  * questions.
  */
 
-package com.sun.crypto.provider;
+package j86.com.sun.crypto.provider;
 
-import java.security.InvalidKeyException;
+import j86.java.security.InvalidKeyException;
 
 /**
  * This abstract class represents the core of all block ciphers. It allows to

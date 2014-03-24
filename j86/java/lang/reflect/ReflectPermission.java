@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.lang.reflect;
+package j86.j86.j86.java.lang.reflect;
 
 /**
  * The Permission class for reflective operations.
@@ -60,8 +60,8 @@ package java.lang.reflect;
  *
  * </table>
  *
- * @see java.security.Permission
- * @see java.security.BasicPermission
+ * @see j86.java.security.Permission
+ * @see j86.java.security.BasicPermission
  * @see AccessibleObject
  * @see Field#get
  * @see Field#set
@@ -72,7 +72,7 @@ package java.lang.reflect;
  * @since 1.2
  */
 public final
-class ReflectPermission extends java.security.BasicPermission {
+class ReflectPermission extends j86.java.security.BasicPermission {
 
     private static final long serialVersionUID = 7412737110241507485L;
 

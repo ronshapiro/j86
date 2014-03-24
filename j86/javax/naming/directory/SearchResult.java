@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.naming.directory;
+package j86.j86.javax.naming.directory;
 
-import javax.naming.Binding;
+import j86.javax.naming.Binding;
 
 /**
   * This class represents an item in the NamingEnumeration returned as a
@@ -64,8 +64,8 @@ public class SearchResult extends Binding {
       * @param obj  The object bound to name. Can be null.
       * @param attrs The attributes that were requested to be returned with
       * this search item. Cannot be null.
-      * @see javax.naming.NameClassPair#setClassName
-      * @see javax.naming.NameClassPair#getClassName
+      * @see j86.javax.naming.NameClassPair#setClassName
+      * @see j86.javax.naming.NameClassPair#getClassName
       */
     public SearchResult(String name, Object obj, Attributes attrs) {
         super(name, obj);
@@ -88,8 +88,8 @@ public class SearchResult extends Binding {
       *         to the target context of the search (which is named by
       *         the first parameter of the <code>search()</code> method);
       *         false if <code>name</code> is a URL string.
-      * @see javax.naming.NameClassPair#setClassName
-      * @see javax.naming.NameClassPair#getClassName
+      * @see j86.javax.naming.NameClassPair#setClassName
+      * @see j86.javax.naming.NameClassPair#getClassName
       */
     public SearchResult(String name, Object obj, Attributes attrs,
         boolean isRelative) {
@@ -112,8 +112,8 @@ public class SearchResult extends Binding {
       * @param obj  The object bound to name. Can be null.
       * @param attrs The attributes that were requested to be returned with
       * this search item. Cannot be null.
-      * @see javax.naming.NameClassPair#setClassName
-      * @see javax.naming.NameClassPair#getClassName
+      * @see j86.javax.naming.NameClassPair#setClassName
+      * @see j86.javax.naming.NameClassPair#getClassName
       */
     public SearchResult(String name, String className,
         Object obj, Attributes attrs) {
@@ -137,8 +137,8 @@ public class SearchResult extends Binding {
       *         to the target context of the search (which is named by
       *         the first parameter of the <code>search()</code> method);
       *         false if <code>name</code> is a URL string.
-      * @see javax.naming.NameClassPair#setClassName
-      * @see javax.naming.NameClassPair#getClassName
+      * @see j86.javax.naming.NameClassPair#setClassName
+      * @see j86.javax.naming.NameClassPair#getClassName
       */
     public SearchResult(String name, String className, Object obj,
         Attributes attrs, boolean isRelative) {

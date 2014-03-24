@@ -23,18 +23,18 @@
  * questions.
  */
 
-package com.sun.java.swing.plaf.motif;
+package j86.j86.com.sun.java.swing.plaf.motif;
 
-import java.awt.*;
-import java.awt.event.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
 
-import java.io.*;
-import java.util.*;
+import j86.java.io.*;
+import j86.java.util.*;
 
-import javax.swing.*;
-import javax.swing.plaf.*;
-import javax.swing.tree.*;
-import javax.swing.plaf.basic.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.javax.swing.tree.*;
+import j86.j86.j86.javax.swing.plaf.basic.*;
 
 /**
  * Motif rendition of the tree component.

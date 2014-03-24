@@ -24,9 +24,9 @@
  */
 
 
-package javax.naming;
+package j86.javax.naming;
 
-import javax.naming.Name;
+import j86.javax.naming.Name;
 
 /**
   * This exception is thrown when a method

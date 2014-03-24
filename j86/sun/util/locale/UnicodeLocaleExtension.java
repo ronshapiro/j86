@@ -30,14 +30,14 @@
  * others. All Rights Reserved.                                                *
  *******************************************************************************
  */
-package sun.util.locale;
+package j86.j86.sun.util.locale;
 
-import java.util.Collections;
-import java.util.Map;
-import java.util.Map.Entry;
-import java.util.Set;
-import java.util.SortedMap;
-import java.util.SortedSet;
+import j86.java.util.Collections;
+import j86.java.util.Map;
+import j86.java.util.Map.Entry;
+import j86.java.util.Set;
+import j86.java.util.SortedMap;
+import j86.java.util.SortedSet;
 
 public class UnicodeLocaleExtension extends Extension {
     public static final char SINGLETON = 'u';

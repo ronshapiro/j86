@@ -22,10 +22,10 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing;
+package j86.javax.swing;
 
-import java.awt.AWTKeyStroke;
-import java.awt.event.KeyEvent;
+import j86.java.awt.AWTKeyStroke;
+import j86.j86.java.awt.event.KeyEvent;
 
 /**
  * A KeyStroke represents a key action on the keyboard, or equivalent input
@@ -52,10 +52,10 @@ import java.awt.event.KeyEvent;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
- * @see javax.swing.text.Keymap
+ * @see j86.j86.javax.swing.text.Keymap
  * @see #getKeyStroke
  *
  * @author Arnaud Weber
@@ -116,19 +116,19 @@ public class KeyStroke extends AWTKeyStroke {
      * <code>getKeyStroke(int keyCode, int modifiers)</code>.
      *
      * The modifiers consist of any combination of following:<ul>
-     * <li>java.awt.event.InputEvent.SHIFT_DOWN_MASK
-     * <li>java.awt.event.InputEvent.CTRL_DOWN_MASK
-     * <li>java.awt.event.InputEvent.META_DOWN_MASK
-     * <li>java.awt.event.InputEvent.ALT_DOWN_MASK
-     * <li>java.awt.event.InputEvent.ALT_GRAPH_DOWN_MASK
+     * <li>j86.j86.java.awt.event.InputEvent.SHIFT_DOWN_MASK
+     * <li>j86.j86.java.awt.event.InputEvent.CTRL_DOWN_MASK
+     * <li>j86.j86.java.awt.event.InputEvent.META_DOWN_MASK
+     * <li>j86.j86.java.awt.event.InputEvent.ALT_DOWN_MASK
+     * <li>j86.j86.java.awt.event.InputEvent.ALT_GRAPH_DOWN_MASK
      * </ul>
      * The old modifiers listed below also can be used, but they are
      * mapped to _DOWN_ modifiers. <ul>
-     * <li>java.awt.event.InputEvent.SHIFT_MASK
-     * <li>java.awt.event.InputEvent.CTRL_MASK
-     * <li>java.awt.event.InputEvent.META_MASK
-     * <li>java.awt.event.InputEvent.ALT_MASK
-     * <li>java.awt.event.InputEvent.ALT_GRAPH_MASK
+     * <li>j86.j86.java.awt.event.InputEvent.SHIFT_MASK
+     * <li>j86.j86.java.awt.event.InputEvent.CTRL_MASK
+     * <li>j86.j86.java.awt.event.InputEvent.META_MASK
+     * <li>j86.j86.java.awt.event.InputEvent.ALT_MASK
+     * <li>j86.j86.java.awt.event.InputEvent.ALT_GRAPH_MASK
      * </ul>
      * also can be used, but they are mapped to _DOWN_ modifiers.
      *
@@ -141,7 +141,7 @@ public class KeyStroke extends AWTKeyStroke {
      * @return an KeyStroke object for that key
      * @throws IllegalArgumentException if keyChar is null
      *
-     * @see java.awt.event.InputEvent
+     * @see j86.j86.java.awt.event.InputEvent
      * @since 1.3
      */
     public static KeyStroke getKeyStroke(Character keyChar, int modifiers) {
@@ -156,28 +156,28 @@ public class KeyStroke extends AWTKeyStroke {
      * set of modifiers, specifying whether the key is activated when it is
      * pressed or released.
      * <p>
-     * The "virtual key" constants defined in java.awt.event.KeyEvent can be
+     * The "virtual key" constants defined in j86.j86.java.awt.event.KeyEvent can be
      * used to specify the key code. For example:<ul>
-     * <li>java.awt.event.KeyEvent.VK_ENTER
-     * <li>java.awt.event.KeyEvent.VK_TAB
-     * <li>java.awt.event.KeyEvent.VK_SPACE
+     * <li>j86.j86.java.awt.event.KeyEvent.VK_ENTER
+     * <li>j86.j86.java.awt.event.KeyEvent.VK_TAB
+     * <li>j86.j86.java.awt.event.KeyEvent.VK_SPACE
      * </ul>
      * Alternatively, the key code may be obtained by calling
-     * <code>java.awt.event.KeyEvent.getExtendedKeyCodeForChar</code>.
+     * <code>j86.j86.java.awt.event.KeyEvent.getExtendedKeyCodeForChar</code>.
      *
      * The modifiers consist of any combination of:<ul>
-     * <li>java.awt.event.InputEvent.SHIFT_DOWN_MASK
-     * <li>java.awt.event.InputEvent.CTRL_DOWN_MASK
-     * <li>java.awt.event.InputEvent.META_DOWN_MASK
-     * <li>java.awt.event.InputEvent.ALT_DOWN_MASK
-     * <li>java.awt.event.InputEvent.ALT_GRAPH_DOWN_MASK
+     * <li>j86.j86.java.awt.event.InputEvent.SHIFT_DOWN_MASK
+     * <li>j86.j86.java.awt.event.InputEvent.CTRL_DOWN_MASK
+     * <li>j86.j86.java.awt.event.InputEvent.META_DOWN_MASK
+     * <li>j86.j86.java.awt.event.InputEvent.ALT_DOWN_MASK
+     * <li>j86.j86.java.awt.event.InputEvent.ALT_GRAPH_DOWN_MASK
      * </ul>
      * The old modifiers <ul>
-     * <li>java.awt.event.InputEvent.SHIFT_MASK
-     * <li>java.awt.event.InputEvent.CTRL_MASK
-     * <li>java.awt.event.InputEvent.META_MASK
-     * <li>java.awt.event.InputEvent.ALT_MASK
-     * <li>java.awt.event.InputEvent.ALT_GRAPH_MASK
+     * <li>j86.j86.java.awt.event.InputEvent.SHIFT_MASK
+     * <li>j86.j86.java.awt.event.InputEvent.CTRL_MASK
+     * <li>j86.j86.java.awt.event.InputEvent.META_MASK
+     * <li>j86.j86.java.awt.event.InputEvent.ALT_MASK
+     * <li>j86.j86.java.awt.event.InputEvent.ALT_GRAPH_MASK
      * </ul>
      * also can be used, but they are mapped to _DOWN_ modifiers.
      *
@@ -191,8 +191,8 @@ public class KeyStroke extends AWTKeyStroke {
      *        a key release; <code>false</code> otherwise.
      * @return a KeyStroke object for that key
      *
-     * @see java.awt.event.KeyEvent
-     * @see java.awt.event.InputEvent
+     * @see j86.j86.java.awt.event.KeyEvent
+     * @see j86.j86.java.awt.event.InputEvent
      */
     public static KeyStroke getKeyStroke(int keyCode, int modifiers,
                                          boolean onKeyRelease) {
@@ -207,28 +207,28 @@ public class KeyStroke extends AWTKeyStroke {
      * Returns a shared instance of a KeyStroke, given a numeric key code and a
      * set of modifiers. The returned KeyStroke will correspond to a key press.
      * <p>
-     * The "virtual key" constants defined in java.awt.event.KeyEvent can be
+     * The "virtual key" constants defined in j86.j86.java.awt.event.KeyEvent can be
      * used to specify the key code. For example:<ul>
-     * <li>java.awt.event.KeyEvent.VK_ENTER
-     * <li>java.awt.event.KeyEvent.VK_TAB
-     * <li>java.awt.event.KeyEvent.VK_SPACE
+     * <li>j86.j86.java.awt.event.KeyEvent.VK_ENTER
+     * <li>j86.j86.java.awt.event.KeyEvent.VK_TAB
+     * <li>j86.j86.java.awt.event.KeyEvent.VK_SPACE
      * </ul>
      * Alternatively, the key code may be obtained by calling
-     * <code>java.awt.event.KeyEvent.getExtendedKeyCodeForChar</code>.
+     * <code>j86.j86.java.awt.event.KeyEvent.getExtendedKeyCodeForChar</code>.
      *
      * The modifiers consist of any combination of:<ul>
-     * <li>java.awt.event.InputEvent.SHIFT_DOWN_MASK
-     * <li>java.awt.event.InputEvent.CTRL_DOWN_MASK
-     * <li>java.awt.event.InputEvent.META_DOWN_MASK
-     * <li>java.awt.event.InputEvent.ALT_DOWN_MASK
-     * <li>java.awt.event.InputEvent.ALT_GRAPH_DOWN_MASK
+     * <li>j86.j86.java.awt.event.InputEvent.SHIFT_DOWN_MASK
+     * <li>j86.j86.java.awt.event.InputEvent.CTRL_DOWN_MASK
+     * <li>j86.j86.java.awt.event.InputEvent.META_DOWN_MASK
+     * <li>j86.j86.java.awt.event.InputEvent.ALT_DOWN_MASK
+     * <li>j86.j86.java.awt.event.InputEvent.ALT_GRAPH_DOWN_MASK
      * </ul>
      * The old modifiers <ul>
-     * <li>java.awt.event.InputEvent.SHIFT_MASK
-     * <li>java.awt.event.InputEvent.CTRL_MASK
-     * <li>java.awt.event.InputEvent.META_MASK
-     * <li>java.awt.event.InputEvent.ALT_MASK
-     * <li>java.awt.event.InputEvent.ALT_GRAPH_MASK
+     * <li>j86.j86.java.awt.event.InputEvent.SHIFT_MASK
+     * <li>j86.j86.java.awt.event.InputEvent.CTRL_MASK
+     * <li>j86.j86.java.awt.event.InputEvent.META_MASK
+     * <li>j86.j86.java.awt.event.InputEvent.ALT_MASK
+     * <li>j86.j86.java.awt.event.InputEvent.ALT_GRAPH_MASK
      * </ul>
      * also can be used, but they are mapped to _DOWN_ modifiers.
      *
@@ -240,8 +240,8 @@ public class KeyStroke extends AWTKeyStroke {
      * @param modifiers a bitwise-ored combination of any modifiers
      * @return a KeyStroke object for that key
      *
-     * @see java.awt.event.KeyEvent
-     * @see java.awt.event.InputEvent
+     * @see j86.j86.java.awt.event.KeyEvent
+     * @see j86.j86.java.awt.event.InputEvent
      */
     public static KeyStroke getKeyStroke(int keyCode, int modifiers) {
         synchronized (AWTKeyStroke.class) {
@@ -298,7 +298,7 @@ public class KeyStroke extends AWTKeyStroke {
      * @return a KeyStroke object for that String, or null if the specified
      *         String is null, or is formatted incorrectly
      *
-     * @see java.awt.event.KeyEvent
+     * @see j86.j86.java.awt.event.KeyEvent
      */
     public static KeyStroke getKeyStroke(String s) {
         if (s == null || s.length() == 0) {

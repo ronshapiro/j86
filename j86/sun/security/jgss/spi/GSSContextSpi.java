@@ -28,13 +28,13 @@
  *  (C) Copyright IBM Corp. 1999 All Rights Reserved.
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
-package sun.security.jgss.spi;
+package j86.j86.sun.security.jgss.spi;
 
-import org.ietf.jgss.*;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.security.Provider;
-import com.sun.security.jgss.*;
+import j86.org.ietf.jgss.*;
+import j86.java.io.InputStream;
+import j86.java.io.OutputStream;
+import j86.java.security.Provider;
+import com.j86.sun.security.jgss.*;
 
 /**
  * This interface is implemented by a mechanism specific instance of a GSS
@@ -274,7 +274,7 @@ public interface GSSContextSpi {
      * or want to avoid them for whatever reason. (Say, they are using
      * block ciphers.)
      *
-     * NOTE: This method is not defined in public class org.ietf.jgss.GSSContext
+     * NOTE: This method is not defined in public class j86.org.ietf.jgss.GSSContext
      *
     public int wrap(byte inBuf[], int inOffset, int len,
                     byte[] outBuf, int outOffset,
@@ -291,7 +291,7 @@ public interface GSSContextSpi {
      * ByteInputStream. Provided to keep the API consistent
      * with unwrap.
      *
-     * NOTE: This method is not defined in public class org.ietf.jgss.GSSContext
+     * NOTE: This method is not defined in public class j86.org.ietf.jgss.GSSContext
      *
     public void wrap(byte inBuf[], int offset, int len,
                      OutputStream os, MessageProp msgProp)
@@ -323,7 +323,7 @@ public interface GSSContextSpi {
      * or want to avoid them for whatever reason. (Say, they are using
      * block ciphers.)
      *
-     * NOTE: This method is not defined in public class org.ietf.jgss.GSSContext
+     * NOTE: This method is not defined in public class j86.org.ietf.jgss.GSSContext
      *
     public int unwrap(byte inBuf[], int inOffset, int len,
                       byte[] outBuf, int outOffset,
@@ -337,7 +337,7 @@ public interface GSSContextSpi {
      * application provided buffer, say to reduce buffer allocation or
      * subsequent copy.
      *
-     * NOTE: This method is not defined in public class org.ietf.jgss.GSSContext
+     * NOTE: This method is not defined in public class j86.org.ietf.jgss.GSSContext
      *
     public int unwrap(InputStream is,
                        byte[] outBuf, int outOffset,

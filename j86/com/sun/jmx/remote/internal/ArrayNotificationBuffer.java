@@ -23,39 +23,39 @@
  * questions.
  */
 
-package com.sun.jmx.remote.internal;
+package j86.com.sun.jmx.remote.internal;
 
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.security.PrivilegedActionException;
-import java.security.PrivilegedExceptionAction;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-import java.util.HashMap;
-import java.util.Map;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.security.PrivilegedActionException;
+import j86.java.security.PrivilegedExceptionAction;
+import j86.java.util.ArrayList;
+import j86.java.util.Collection;
+import j86.java.util.Collections;
+import j86.java.util.HashSet;
+import j86.java.util.List;
+import j86.java.util.Set;
+import j86.java.util.HashMap;
+import j86.java.util.Map;
 
-import javax.management.InstanceNotFoundException;
-import javax.management.MBeanServer;
-import javax.management.MBeanServerDelegate;
-import javax.management.MBeanServerNotification;
-import javax.management.Notification;
-import javax.management.NotificationBroadcaster;
-import javax.management.NotificationFilter;
-import javax.management.NotificationFilterSupport;
-import javax.management.NotificationListener;
-import javax.management.ObjectName;
-import javax.management.QueryEval;
-import javax.management.QueryExp;
+import j86.javax.management.InstanceNotFoundException;
+import j86.javax.management.MBeanServer;
+import j86.javax.management.MBeanServerDelegate;
+import j86.javax.management.MBeanServerNotification;
+import j86.javax.management.Notification;
+import j86.javax.management.NotificationBroadcaster;
+import j86.javax.management.NotificationFilter;
+import j86.javax.management.NotificationFilterSupport;
+import j86.javax.management.NotificationListener;
+import j86.javax.management.ObjectName;
+import j86.javax.management.QueryEval;
+import j86.javax.management.QueryExp;
 
-import javax.management.remote.NotificationResult;
-import javax.management.remote.TargetedNotification;
+import j86.j86.javax.management.remote.NotificationResult;
+import j86.j86.javax.management.remote.TargetedNotification;
 
-import com.sun.jmx.remote.util.EnvHelp;
-import com.sun.jmx.remote.util.ClassLogger;
+import j86.com.sun.jmx.remote.util.EnvHelp;
+import j86.com.sun.jmx.remote.util.ClassLogger;
 
 /** A circular buffer of notifications received from an MBean server. */
 /*
@@ -837,7 +837,7 @@ public class ArrayNotificationBuffer implements NotificationBuffer {
     }
 
     private static final ClassLogger logger =
-        new ClassLogger("javax.management.remote.misc",
+        new ClassLogger("j86.j86.javax.management.remote.misc",
                         "ArrayNotificationBuffer");
 
     private final MBeanServer mBeanServer;

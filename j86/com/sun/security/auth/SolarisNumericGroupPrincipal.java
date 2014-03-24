@@ -23,9 +23,9 @@
  * questions.
  */
 
-package com.sun.security.auth;
+package j86.com.sun.security.auth;
 
-import java.security.Principal;
+import j86.java.security.Principal;
 
 /**
  * <p> This class implements the <code>Principal</code> interface
@@ -42,23 +42,23 @@ import java.security.Principal;
  *             {@link UnixNumericGroupPrincipal}.
  *             This class is entirely deprecated.
  *
- * @see java.security.Principal
- * @see javax.security.auth.Subject
+ * @see j86.java.security.Principal
+ * @see j86.javax.security.auth.Subject
  */
 @jdk.Exported(false)
 @Deprecated
 public class SolarisNumericGroupPrincipal implements
                                         Principal,
-                                        java.io.Serializable {
+                                        j86.java.io.Serializable {
 
     private static final long serialVersionUID = 2345199581042573224L;
 
-    private static final java.util.ResourceBundle rb =
-          java.security.AccessController.doPrivileged
-          (new java.security.PrivilegedAction<java.util.ResourceBundle>() {
-              public java.util.ResourceBundle run() {
-                  return (java.util.ResourceBundle.getBundle
-                                ("sun.security.util.AuthResources"));
+    private static final j86.java.util.ResourceBundle rb =
+          j86.java.security.AccessController.doPrivileged
+          (new j86.java.security.PrivilegedAction<j86.java.util.ResourceBundle>() {
+              public j86.java.util.ResourceBundle run() {
+                  return (j86.java.util.ResourceBundle.getBundle
+                                ("j86.sun.security.util.AuthResources"));
               }
           });
 

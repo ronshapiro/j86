@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.security.provider;
+package j86.sun.security.provider;
 
-import java.security.MessageDigestSpi;
-import java.security.DigestException;
-import java.security.ProviderException;
+import j86.java.security.MessageDigestSpi;
+import j86.java.security.DigestException;
+import j86.java.security.ProviderException;
 
 /**
  * Common base message digest implementation for the Sun provider.

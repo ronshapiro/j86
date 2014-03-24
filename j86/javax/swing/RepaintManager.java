@@ -22,29 +22,29 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing;
+package j86.javax.swing;
 
 
-import java.awt.*;
-import java.awt.event.*;
-import java.awt.image.VolatileImage;
-import java.security.AccessControlContext;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.util.*;
-import java.util.concurrent.atomic.AtomicInteger;
-import java.applet.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.j86.j86.java.awt.image.VolatileImage;
+import j86.java.security.AccessControlContext;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.util.*;
+import j86.j86.j86.java.util.concurrent.atomic.AtomicInteger;
+import j86.java.applet.*;
 
-import sun.awt.AWTAccessor;
-import sun.awt.AppContext;
-import sun.awt.DisplayChangedListener;
-import sun.awt.SunToolkit;
-import sun.java2d.SunGraphicsEnvironment;
-import sun.misc.JavaSecurityAccess;
-import sun.misc.SharedSecrets;
-import sun.security.action.GetPropertyAction;
+import j86.sun.awt.AWTAccessor;
+import j86.sun.awt.AppContext;
+import j86.sun.awt.DisplayChangedListener;
+import j86.sun.awt.SunToolkit;
+import j86.sun.java2d.SunGraphicsEnvironment;
+import j86.sun.misc.JavaSecurityAccess;
+import j86.sun.misc.SharedSecrets;
+import j86.sun.security.action.GetPropertyAction;
 
-import com.sun.java.swing.SwingUtilities3;
+import j86.com.sun.java.swing.SwingUtilities3;
 
 /**
  * This class manages repaint requests, allowing the number
@@ -94,10 +94,10 @@ public class RepaintManager
 
     private Map<Component,Rectangle> dirtyComponents;
     private Map<Component,Rectangle> tmpDirtyComponents;
-    private java.util.List<Component> invalidComponents;
+    private j86.java.util.List<Component> invalidComponents;
 
     // List of Runnables that need to be processed before painting from AWT.
-    private java.util.List<Runnable> runnableList;
+    private j86.java.util.List<Runnable> runnableList;
 
     boolean   doubleBufferingEnabled = true;
 
@@ -671,7 +671,7 @@ public class RepaintManager
      * @see #addInvalidComponent
      */
     public void validateInvalidComponents() {
-        final java.util.List<Component> ic;
+        final j86.java.util.List<Component> ic;
         synchronized(this) {
             if (invalidComponents == null) {
                 return;
@@ -704,7 +704,7 @@ public class RepaintManager
      */
     private void prePaintDirtyRegions() {
         Map<Component,Rectangle> dirtyComponents;
-        java.util.List<Runnable> runnableList;
+        j86.java.util.List<Runnable> runnableList;
         synchronized(this) {
             dirtyComponents = this.dirtyComponents;
             runnableList = this.runnableList;
@@ -776,7 +776,7 @@ public class RepaintManager
             return;
         }
 
-        final java.util.List<Component> roots =
+        final j86.java.util.List<Component> roots =
             new ArrayList<Component>(tmpDirtyComponents.size());
         for (Component dirty : tmpDirtyComponents.keySet()) {
             collectDirtyComponents(tmpDirtyComponents, dirty, roots);
@@ -857,7 +857,7 @@ public class RepaintManager
      * root.
      */
     private void adjustRoots(JComponent root,
-                             java.util.List<Component> roots, int index) {
+                             j86.java.util.List<Component> roots, int index) {
         for (int i = roots.size() - 1; i >= index; i--) {
             Component c = roots.get(i);
             for(;;) {
@@ -876,7 +876,7 @@ public class RepaintManager
 
     void collectDirtyComponents(Map<Component,Rectangle> dirtyComponents,
                                 Component dirtyComponent,
-                                java.util.List<Component> roots) {
+                                j86.java.util.List<Component> roots) {
         int dx, dy, rootDx, rootDy;
         Component component, rootDirtyComponent,parent;
         Rectangle cBounds;
@@ -994,7 +994,7 @@ public class RepaintManager
    * This happens when the maximum double buffer size has been set for this
    * repaint manager.
    *
-   * @see java.awt.image.VolatileImage
+   * @see j86.j86.j86.java.awt.image.VolatileImage
    * @since 1.4
    */
     public Image getVolatileOffscreenBuffer(Component c,
@@ -1440,7 +1440,7 @@ public class RepaintManager
             if (repaintManager.useVolatileDoubleBuffer() &&
                 (offscreen = getValidImage(repaintManager.
                 getVolatileOffscreenBuffer(bufferComponent, w, h))) != null) {
-                VolatileImage vImage = (java.awt.image.VolatileImage)offscreen;
+                VolatileImage vImage = (j86.j86.j86.java.awt.image.VolatileImage)offscreen;
                 GraphicsConfiguration gc = bufferComponent.
                                             getGraphicsConfiguration();
                 for (int i = 0; !paintCompleted &&
@@ -1450,7 +1450,7 @@ public class RepaintManager
                         repaintManager.resetVolatileDoubleBuffer(gc);
                         offscreen = repaintManager.getVolatileOffscreenBuffer(
                             bufferComponent,w, h);
-                        vImage = (java.awt.image.VolatileImage)offscreen;
+                        vImage = (j86.j86.j86.java.awt.image.VolatileImage)offscreen;
                     }
                     paintDoubleBuffered(paintingComponent, vImage, g, x, y,
                                         w, h);

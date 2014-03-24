@@ -23,41 +23,41 @@
  * questions.
  */
 
-package sun.security.ssl.krb5;
+package j86.j86.sun.security.ssl.krb5;
 
-import java.io.IOException;
-import java.io.PrintStream;
-import java.security.AccessController;
-import java.security.AccessControlContext;
-import java.security.PrivilegedExceptionAction;
-import java.security.PrivilegedActionException;
-import java.security.SecureRandom;
-import java.net.InetAddress;
-import java.security.PrivilegedAction;
+import j86.java.io.IOException;
+import j86.java.io.PrintStream;
+import j86.java.security.AccessController;
+import j86.java.security.AccessControlContext;
+import j86.java.security.PrivilegedExceptionAction;
+import j86.java.security.PrivilegedActionException;
+import j86.java.security.SecureRandom;
+import j86.java.net.InetAddress;
+import j86.java.security.PrivilegedAction;
 
-import javax.security.auth.kerberos.KerberosTicket;
-import javax.security.auth.kerberos.KerberosKey;
-import javax.security.auth.kerberos.KerberosPrincipal;
-import javax.security.auth.kerberos.ServicePermission;
-import sun.security.jgss.GSSCaller;
+import j86.j86.javax.security.auth.kerberos.KerberosTicket;
+import j86.j86.javax.security.auth.kerberos.KerberosKey;
+import j86.j86.javax.security.auth.kerberos.KerberosPrincipal;
+import j86.j86.javax.security.auth.kerberos.ServicePermission;
+import j86.sun.security.jgss.GSSCaller;
 
-import sun.security.krb5.EncryptionKey;
-import sun.security.krb5.EncryptedData;
-import sun.security.krb5.PrincipalName;
-import sun.security.krb5.internal.Ticket;
-import sun.security.krb5.internal.EncTicketPart;
-import sun.security.krb5.internal.crypto.KeyUsage;
+import j86.sun.security.krb5.EncryptionKey;
+import j86.sun.security.krb5.EncryptedData;
+import j86.sun.security.krb5.PrincipalName;
+import j86.j86.sun.security.krb5.internal.Ticket;
+import j86.j86.sun.security.krb5.internal.EncTicketPart;
+import j86.j86.j86.sun.security.krb5.internal.crypto.KeyUsage;
 
-import sun.security.jgss.krb5.Krb5Util;
-import sun.security.jgss.krb5.ServiceCreds;
-import sun.security.krb5.KrbException;
-import sun.security.krb5.internal.Krb5;
+import j86.j86.sun.security.jgss.krb5.Krb5Util;
+import j86.j86.sun.security.jgss.krb5.ServiceCreds;
+import j86.sun.security.krb5.KrbException;
+import j86.j86.sun.security.krb5.internal.Krb5;
 
-import sun.security.ssl.Debug;
-import sun.security.ssl.HandshakeInStream;
-import sun.security.ssl.HandshakeOutStream;
-import sun.security.ssl.Krb5Helper;
-import sun.security.ssl.ProtocolVersion;
+import j86.sun.security.ssl.Debug;
+import j86.sun.security.ssl.HandshakeInStream;
+import j86.sun.security.ssl.HandshakeOutStream;
+import j86.sun.security.ssl.Krb5Helper;
+import j86.sun.security.ssl.ProtocolVersion;
 
 /**
  * This is Kerberos option in the client key exchange message
@@ -82,7 +82,7 @@ import sun.security.ssl.ProtocolVersion;
  *
  */
 public final class KerberosClientKeyExchangeImpl
-    extends sun.security.ssl.KerberosClientKeyExchange {
+    extends j86.sun.security.ssl.KerberosClientKeyExchange {
 
     private KerberosPreMasterSecret preMaster;
     private byte[] encodedTicket;
@@ -291,7 +291,7 @@ public final class KerberosClientKeyExchangeImpl
         }
     }
 
-    // Similar to sun.security.jgss.krb5.Krb5InitCredenetial/Krb5Context
+    // Similar to j86.j86.sun.security.jgss.krb5.Krb5InitCredenetial/Krb5Context
     private static KerberosTicket getServiceTicket(String serverName,
         final AccessControlContext acc) throws IOException {
 
@@ -301,12 +301,12 @@ public final class KerberosClientKeyExchangeImpl
             if (debug != null && Debug.isOn("handshake")) {
                 System.out.println("Get the local hostname");
             }
-            String localHost = java.security.AccessController.doPrivileged(
-                new java.security.PrivilegedAction<String>() {
+            String localHost = j86.java.security.AccessController.doPrivileged(
+                new j86.java.security.PrivilegedAction<String>() {
                 public String run() {
                     try {
                         return InetAddress.getLocalHost().getHostName();
-                    } catch (java.net.UnknownHostException e) {
+                    } catch (j86.java.net.UnknownHostException e) {
                         if (debug != null && Debug.isOn("handshake")) {
                             System.out.println("Warning,"
                                 + " cannot get the local hostname: "
@@ -396,7 +396,7 @@ public final class KerberosClientKeyExchangeImpl
      * is null or zero, in case any side does not have kvno info available.
      *
      * Note: zero is included because N/A is not a legal value for kvno
-     * in javax.security.auth.kerberos.KerberosKey. Therefore, the info
+     * in j86.j86.javax.security.auth.kerberos.KerberosKey. Therefore, the info
      * that the kvno is N/A might be lost when converting between
      * EncryptionKey and KerberosKey.
      */

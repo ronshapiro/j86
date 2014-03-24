@@ -23,19 +23,19 @@
  * questions.
  */
 
-package javax.swing.plaf.basic;
+package j86.j86.j86.javax.swing.plaf.basic;
 
-import sun.swing.DefaultLookup;
-import sun.swing.UIAction;
-import java.awt.*;
-import java.awt.event.*;
-import java.beans.*;
-import javax.swing.*;
-import javax.swing.event.*;
-import javax.swing.plaf.*;
-import javax.swing.border.*;
-import java.util.Arrays;
-import java.util.ArrayList;
+import j86.sun.swing.DefaultLookup;
+import j86.sun.swing.UIAction;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.java.beans.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.event.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.javax.swing.border.*;
+import j86.java.util.Arrays;
+import j86.java.util.ArrayList;
 
 
 /**
@@ -318,7 +318,7 @@ public class BasicMenuUI extends BasicMenuItemUI
      * methods should call the parent methods so that the menu selection
      * is correct.
      *
-     * @see javax.swing.MenuSelectionManager
+     * @see j86.javax.swing.MenuSelectionManager
      * @since 1.4
      */
     protected class MouseInputHandler implements MouseInputListener {
@@ -372,7 +372,7 @@ public class BasicMenuUI extends BasicMenuItemUI
          * Delegates the mouse event to the MenuSelectionManager.
          *
          * @param e the mouse event
-         * @see java.awt.event.MouseMotionListener#mouseDragged
+         * @see j86.j86.java.awt.event.MouseMotionListener#mouseDragged
          */
         public void mouseDragged(MouseEvent e) {
             getHandler().mouseDragged(e);
@@ -535,7 +535,7 @@ public class BasicMenuUI extends BasicMenuItemUI
          * Delegates the mouse event to the MenuSelectionManager.
          *
          * @param e the mouse event
-         * @see java.awt.event.MouseMotionListener#mouseDragged
+         * @see j86.j86.java.awt.event.MouseMotionListener#mouseDragged
          */
         public void mouseDragged(MouseEvent e) {
             JMenu menu = (JMenu)menuItem;

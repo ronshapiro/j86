@@ -23,12 +23,12 @@
  * questions.
  */
 
-package jdk.internal.util.xml.impl;
+package j86.j86.jdk.internal.util.xml.impl;
 
-import java.io.Reader;
-import java.io.InputStream;
-import java.io.IOException;
-import java.io.UnsupportedEncodingException;
+import j86.java.io.Reader;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
+import j86.java.io.UnsupportedEncodingException;
 
 /**
  * UTF-8 transformed UCS-2 character stream reader.

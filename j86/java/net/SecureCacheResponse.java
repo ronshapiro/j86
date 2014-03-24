@@ -23,12 +23,12 @@
  * questions.
  */
 
-package java.net;
+package j86.java.net;
 
-import java.security.cert.Certificate;
-import javax.net.ssl.SSLPeerUnverifiedException;
-import java.security.Principal;
-import java.util.List;
+import j86.j86.java.security.cert.Certificate;
+import j86.j86.javax.net.ssl.SSLPeerUnverifiedException;
+import j86.java.security.Principal;
+import j86.java.util.List;
 
 /**
  * Represents a cache response originally retrieved through secure

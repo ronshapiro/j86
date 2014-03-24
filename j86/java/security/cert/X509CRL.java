@@ -23,23 +23,23 @@
  * questions.
  */
 
-package java.security.cert;
+package j86.j86.java.security.cert;
 
-import java.security.NoSuchAlgorithmException;
-import java.security.NoSuchProviderException;
-import java.security.InvalidKeyException;
-import java.security.SignatureException;
-import java.security.Principal;
-import java.security.Provider;
-import java.security.PublicKey;
-import javax.security.auth.x500.X500Principal;
+import j86.java.security.NoSuchAlgorithmException;
+import j86.java.security.NoSuchProviderException;
+import j86.java.security.InvalidKeyException;
+import j86.java.security.SignatureException;
+import j86.java.security.Principal;
+import j86.java.security.Provider;
+import j86.java.security.PublicKey;
+import j86.j86.javax.security.auth.x500.X500Principal;
 
-import java.math.BigInteger;
-import java.util.Date;
-import java.util.Set;
-import java.util.Arrays;
+import j86.java.math.BigInteger;
+import j86.java.util.Date;
+import j86.java.util.Set;
+import j86.java.util.Arrays;
 
-import sun.security.x509.X509CRLImpl;
+import j86.sun.security.x509.X509CRLImpl;
 
 /**
  * <p>
@@ -454,7 +454,7 @@ public abstract class X509CRL extends CRL implements X509Extension {
      * algorithm parameters are null; the parameters are usually
      * supplied with the public key.
      * If access to individual parameter values is needed then use
-     * {@link java.security.AlgorithmParameters AlgorithmParameters}
+     * {@link j86.java.security.AlgorithmParameters AlgorithmParameters}
      * and instantiate with the name returned by
      * {@link #getSigAlgName() getSigAlgName}.
      *

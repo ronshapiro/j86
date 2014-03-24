@@ -23,12 +23,12 @@
  * questions.
  */
 
-package javax.swing.plaf;
+package j86.j86.javax.swing.plaf;
 
-import javax.swing.*;
-import javax.swing.filechooser.FileFilter;
-import javax.swing.filechooser.FileView;
-import java.io.File;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.filechooser.FileFilter;
+import j86.j86.javax.swing.filechooser.FileView;
+import j86.java.io.File;
 
 /**
  * Pluggable look and feel interface for <code>JFileChooser</code>.

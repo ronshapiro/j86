@@ -23,21 +23,21 @@
  * questions.
  */
 
-package sun.security.pkcs11;
+package j86.j86.sun.security.pkcs11;
 
-import java.io.IOException;
-import java.math.BigInteger;
+import j86.java.io.IOException;
+import j86.java.math.BigInteger;
 
-import java.security.*;
-import java.security.interfaces.*;
-import java.security.spec.*;
+import j86.java.security.*;
+import j86.j86.java.security.interfaces.*;
+import j86.j86.java.security.spec.*;
 
-import static sun.security.pkcs11.TemplateManager.*;
-import sun.security.pkcs11.wrapper.*;
-import static sun.security.pkcs11.wrapper.PKCS11Constants.*;
+import static j86.j86.sun.security.pkcs11.TemplateManager.*;
+import j86.j86.j86.sun.security.pkcs11.wrapper.*;
+import static j86.j86.j86.sun.security.pkcs11.wrapper.PKCS11Constants.*;
 
-import sun.security.util.DerValue;
-import sun.security.util.ECUtil;
+import j86.sun.security.util.DerValue;
+import j86.sun.security.util.ECUtil;
 
 /**
  * EC KeyFactory implementation.

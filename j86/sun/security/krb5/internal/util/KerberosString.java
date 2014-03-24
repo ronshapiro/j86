@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.security.krb5.internal.util;
+package j86.j86.j86.sun.security.krb5.internal.util;
 
-import java.io.IOException;
-import java.security.AccessController;
-import sun.security.action.GetBooleanAction;
-import sun.security.util.DerValue;
+import j86.java.io.IOException;
+import j86.java.security.AccessController;
+import j86.sun.security.action.GetBooleanAction;
+import j86.sun.security.util.DerValue;
 
 /**
  * Implements the ASN.1 KerberosString type.
@@ -53,7 +53,7 @@ public final class KerberosString {
      * GeneralString.
      */
     public static final boolean MSNAME = AccessController.doPrivileged(
-            new GetBooleanAction("sun.security.krb5.msinterop.kstring"));
+            new GetBooleanAction("j86.sun.security.krb5.msinterop.kstring"));
 
     private final String s;
 

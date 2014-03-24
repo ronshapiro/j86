@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.security.provider;
+package j86.sun.security.provider;
 
-import java.security.*;
-import java.math.BigInteger;
+import j86.java.security.*;
+import j86.java.math.BigInteger;
 
-import static sun.security.provider.ByteArrayAccess.*;
+import static j86.sun.security.provider.ByteArrayAccess.*;
 
 /**
  * This class implements the Secure Hash Algorithm SHA-384 and SHA-512
@@ -39,7 +39,7 @@ import static sun.security.provider.ByteArrayAccess.*;
  * class SHA5 and two nested static subclasses as the classes to be used
  * by the JCA framework.
  *
- * <p>It implements java.security.MessageDigestSpi, and can be used
+ * <p>It implements j86.java.security.MessageDigestSpi, and can be used
  * through Java Cryptography Architecture (JCA), as a pluggable
  * MessageDigest implementation.
  *

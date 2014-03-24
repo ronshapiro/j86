@@ -33,18 +33,18 @@
  * at http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package java.util.concurrent;
+package j86.j86.java.util.concurrent;
 
-import java.util.AbstractCollection;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Deque;
-import java.util.Iterator;
-import java.util.NoSuchElementException;
-import java.util.Queue;
-import java.util.Spliterator;
-import java.util.Spliterators;
-import java.util.function.Consumer;
+import j86.java.util.AbstractCollection;
+import j86.java.util.ArrayList;
+import j86.java.util.Collection;
+import j86.java.util.Deque;
+import j86.java.util.Iterator;
+import j86.java.util.NoSuchElementException;
+import j86.java.util.Queue;
+import j86.java.util.Spliterator;
+import j86.java.util.Spliterators;
+import j86.j86.java.util.function.Consumer;
 
 /**
  * An unbounded concurrent {@linkplain Deque deque} based on linked nodes.
@@ -91,7 +91,7 @@ import java.util.function.Consumer;
  */
 public class ConcurrentLinkedDeque<E>
     extends AbstractCollection<E>
-    implements Deque<E>, java.io.Serializable {
+    implements Deque<E>, j86.java.io.Serializable {
 
     /*
      * This is an implementation of a concurrent lock-free deque
@@ -325,14 +325,14 @@ public class ConcurrentLinkedDeque<E>
 
         // Unsafe mechanics
 
-        private static final sun.misc.Unsafe UNSAFE;
+        private static final j86.sun.misc.Unsafe UNSAFE;
         private static final long prevOffset;
         private static final long itemOffset;
         private static final long nextOffset;
 
         static {
             try {
-                UNSAFE = sun.misc.Unsafe.getUnsafe();
+                UNSAFE = j86.sun.misc.Unsafe.getUnsafe();
                 Class<?> k = Node.class;
                 prevOffset = UNSAFE.objectFieldOffset
                     (k.getDeclaredField("prev"));
@@ -1505,12 +1505,12 @@ public class ConcurrentLinkedDeque<E>
      * Saves this deque to a stream (that is, serializes it).
      *
      * @param s the stream
-     * @throws java.io.IOException if an I/O error occurs
+     * @throws j86.java.io.IOException if an I/O error occurs
      * @serialData All of the elements (each an {@code E}) in
      * the proper order, followed by a null
      */
-    private void writeObject(java.io.ObjectOutputStream s)
-        throws java.io.IOException {
+    private void writeObject(j86.java.io.ObjectOutputStream s)
+        throws j86.java.io.IOException {
 
         // Write out any hidden stuff
         s.defaultWriteObject();
@@ -1531,10 +1531,10 @@ public class ConcurrentLinkedDeque<E>
      * @param s the stream
      * @throws ClassNotFoundException if the class of a serialized object
      *         could not be found
-     * @throws java.io.IOException if an I/O error occurs
+     * @throws j86.java.io.IOException if an I/O error occurs
      */
-    private void readObject(java.io.ObjectInputStream s)
-        throws java.io.IOException, ClassNotFoundException {
+    private void readObject(j86.java.io.ObjectInputStream s)
+        throws j86.java.io.IOException, ClassNotFoundException {
         s.defaultReadObject();
 
         // Read in elements until trailing null sentinel found
@@ -1564,7 +1564,7 @@ public class ConcurrentLinkedDeque<E>
 
     // Unsafe mechanics
 
-    private static final sun.misc.Unsafe UNSAFE;
+    private static final j86.sun.misc.Unsafe UNSAFE;
     private static final long headOffset;
     private static final long tailOffset;
     static {
@@ -1573,7 +1573,7 @@ public class ConcurrentLinkedDeque<E>
         NEXT_TERMINATOR = new Node<Object>();
         NEXT_TERMINATOR.prev = NEXT_TERMINATOR;
         try {
-            UNSAFE = sun.misc.Unsafe.getUnsafe();
+            UNSAFE = j86.sun.misc.Unsafe.getUnsafe();
             Class<?> k = ConcurrentLinkedDeque.class;
             headOffset = UNSAFE.objectFieldOffset
                 (k.getDeclaredField("head"));

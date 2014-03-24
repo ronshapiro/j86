@@ -22,12 +22,12 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text.html;
+package j86.j86.j86.javax.swing.text.html;
 
-import java.awt.*;
-import java.text.BreakIterator;
-import javax.swing.event.DocumentEvent;
-import javax.swing.text.*;
+import j86.java.awt.*;
+import j86.java.text.BreakIterator;
+import j86.j86.javax.swing.event.DocumentEvent;
+import j86.j86.javax.swing.text.*;
 
 /**
  * Displays the <dfn>inline element</dfn> styles
@@ -138,10 +138,10 @@ public class InlineView extends LabelView {
      *   ForcedBreakWeight and BadBreakWeight.
      * @see LabelView
      * @see ParagraphView
-     * @see javax.swing.text.View#BadBreakWeight
-     * @see javax.swing.text.View#GoodBreakWeight
-     * @see javax.swing.text.View#ExcellentBreakWeight
-     * @see javax.swing.text.View#ForcedBreakWeight
+     * @see j86.j86.javax.swing.text.View#BadBreakWeight
+     * @see j86.j86.javax.swing.text.View#GoodBreakWeight
+     * @see j86.j86.javax.swing.text.View#ExcellentBreakWeight
+     * @see j86.j86.javax.swing.text.View#ForcedBreakWeight
      */
     public int getBreakWeight(int axis, float pos, float len) {
         if (nowrap) {
@@ -152,7 +152,7 @@ public class InlineView extends LabelView {
 
     /**
      * Tries to break this view on the given axis. Refer to
-     * {@link javax.swing.text.View#breakView} for a complete
+     * {@link j86.j86.javax.swing.text.View#breakView} for a complete
      * description of this method.
      * <p>Behavior of this method is unspecified in case <code>axis</code>
      * is neither <code>View.X_AXIS</code> nor <code>View.Y_AXIS</code>, and
@@ -173,7 +173,7 @@ public class InlineView extends LabelView {
      * @return the fragment of the view that represents the
      *  given span.
      * @since 1.5
-     * @see javax.swing.text.View#breakView
+     * @see j86.j86.javax.swing.text.View#breakView
      */
     public View breakView(int axis, int offset, float pos, float len) {
         return super.breakView(axis, offset, pos, len);

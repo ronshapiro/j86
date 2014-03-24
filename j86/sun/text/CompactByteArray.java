@@ -36,7 +36,7 @@
  *
  */
 
-package sun.text;
+package j86.sun.text;
 
 
 /**

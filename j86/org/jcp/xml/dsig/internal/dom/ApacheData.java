@@ -26,10 +26,10 @@
 /*
  * $Id: ApacheData.java 1333869 2012-05-04 10:42:44Z coheigea $
  */
-package org.jcp.xml.dsig.internal.dom;
+package j86.j86.org.jcp.xml.dsig.internal.dom;
 
-import javax.xml.crypto.Data;
-import com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
+import j86.javax.xml.crypto.Data;
+import j86.j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
 
 /**
  * XMLSignatureInput Data wrapper.

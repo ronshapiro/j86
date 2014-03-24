@@ -59,9 +59,9 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package java.time.temporal;
+package j86.j86.java.time.temporal;
 
-import java.time.DateTimeException;
+import j86.java.time.DateTimeException;
 
 /**
  * Framework-level interface defining read-write access to a temporal object,
@@ -80,8 +80,8 @@ import java.time.DateTimeException;
  * See {@link ChronoField} for the standard set of fields.
  * <p>
  * Two pieces of date/time information cannot be represented by numbers,
- * the {@linkplain java.time.chrono.Chronology chronology} and the
- * {@linkplain java.time.ZoneId time-zone}.
+ * the {@linkplain j86.j86.java.time.chrono.Chronology chronology} and the
+ * {@linkplain j86.java.time.ZoneId time-zone}.
  * These can be accessed via {@link #query(TemporalQuery) queries} using
  * the static methods defined on {@link TemporalQuery}.
  * <p>
@@ -90,7 +90,7 @@ import java.time.DateTimeException;
  * around instances of concrete types, such as {@code LocalDate}.
  * There are many reasons for this, part of which is that implementations
  * of this interface may be in calendar systems other than ISO.
- * See {@link java.time.chrono.ChronoLocalDate} for a fuller discussion of the issues.
+ * See {@link j86.j86.java.time.chrono.ChronoLocalDate} for a fuller discussion of the issues.
  *
  * <h3>When to implement</h3>
  * <p>
@@ -228,8 +228,8 @@ public interface Temporal extends TemporalAccessor {
      * Returns an object of the same type as this object with an amount added.
      * <p>
      * This adjusts this temporal, adding according to the rules of the specified amount.
-     * The amount is typically a {@link java.time.Period} but may be any other type implementing
-     * the {@link TemporalAmount} interface, such as {@link java.time.Duration}.
+     * The amount is typically a {@link j86.java.time.Period} but may be any other type implementing
+     * the {@link TemporalAmount} interface, such as {@link j86.java.time.Duration}.
      * <p>
      * Some example code indicating how and why this method is used:
      * <pre>
@@ -300,8 +300,8 @@ public interface Temporal extends TemporalAccessor {
      * Returns an object of the same type as this object with an amount subtracted.
      * <p>
      * This adjusts this temporal, subtracting according to the rules of the specified amount.
-     * The amount is typically a {@link java.time.Period} but may be any other type implementing
-     * the {@link TemporalAmount} interface, such as {@link java.time.Duration}.
+     * The amount is typically a {@link j86.java.time.Period} but may be any other type implementing
+     * the {@link TemporalAmount} interface, such as {@link j86.java.time.Duration}.
      * <p>
      * Some example code indicating how and why this method is used:
      * <pre>

@@ -26,16 +26,16 @@
 /*
  * $Id: SignerOutputStream.java,v 1.2 2005/09/15 14:29:02 mullan Exp $
  */
-package org.jcp.xml.dsig.internal;
+package j86.org.jcp.xml.dsig.internal;
 
-import java.io.ByteArrayOutputStream;
-import java.security.Signature;
-import java.security.SignatureException;
+import j86.java.io.ByteArrayOutputStream;
+import j86.java.security.Signature;
+import j86.java.security.SignatureException;
 
 /**
- * Derived from Apache sources and changed to use java.security.Signature
+ * Derived from Apache sources and changed to use j86.java.security.Signature
  * objects as input instead of
- * com.sun.org.apache.xml.internal.security.algorithms.SignatureAlgorithm objects.
+ * j86.j86.com.sun.org.apache.xml.internal.security.algorithms.SignatureAlgorithm objects.
  *
  * @author raul
  * @author Sean Mullan

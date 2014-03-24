@@ -23,22 +23,22 @@
  * questions.
  */
 
-package com.sun.java.swing.plaf.windows;
+package j86.j86.com.sun.java.swing.plaf.windows;
 
-import java.awt.*;
-import java.awt.event.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
 
-import java.io.*;
-import java.util.*;
+import j86.java.io.*;
+import j86.java.util.*;
 
-import javax.swing.plaf.basic.*;
-import javax.swing.*;
-import javax.swing.plaf.*;
+import j86.j86.j86.javax.swing.plaf.basic.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.plaf.*;
 
-import javax.swing.tree.*;
+import j86.j86.javax.swing.tree.*;
 
-import static com.sun.java.swing.plaf.windows.TMSchema.*;
-import static com.sun.java.swing.plaf.windows.XPStyle.Skin;
+import static j86.j86.com.sun.java.swing.plaf.windows.TMSchema.*;
+import static j86.j86.com.sun.java.swing.plaf.windows.XPStyle.Skin;
 
 
 /**

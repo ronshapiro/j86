@@ -29,12 +29,12 @@
  * others. All Rights Reserved.                                                *
  *******************************************************************************
  */
-package sun.util.locale;
+package j86.j86.sun.util.locale;
 
-import java.lang.ref.ReferenceQueue;
-import java.lang.ref.SoftReference;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentMap;
+import j86.j86.java.lang.ref.ReferenceQueue;
+import j86.j86.java.lang.ref.SoftReference;
+import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.j86.java.util.concurrent.ConcurrentMap;
 
 public abstract class LocaleObjectCache<K, V> {
     private ConcurrentMap<K, CacheEntry<K, V>> map;

@@ -23,13 +23,13 @@
  * questions.
  */
 
-package java.net;
+package j86.java.net;
 
-import java.io.FileDescriptor;
-import java.io.IOException;
-import java.nio.channels.ServerSocketChannel;
-import java.security.AccessController;
-import java.security.PrivilegedExceptionAction;
+import j86.java.io.FileDescriptor;
+import j86.java.io.IOException;
+import j86.j86.java.nio.channels.ServerSocketChannel;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedExceptionAction;
 
 /**
  * This class implements server sockets. A server socket waits for
@@ -43,13 +43,13 @@ import java.security.PrivilegedExceptionAction;
  * appropriate to the local firewall.
  *
  * @author  unascribed
- * @see     java.net.SocketImpl
- * @see     java.net.ServerSocket#setSocketFactory(java.net.SocketImplFactory)
- * @see     java.nio.channels.ServerSocketChannel
+ * @see     j86.java.net.SocketImpl
+ * @see     j86.java.net.ServerSocket#setSocketFactory(java.net.SocketImplFactory)
+ * @see     j86.j86.java.nio.channels.ServerSocketChannel
  * @since   JDK1.0
  */
 public
-class ServerSocket implements java.io.Closeable {
+class ServerSocket implements j86.java.io.Closeable {
     /**
      * Various states of this socket.
      */
@@ -119,9 +119,9 @@ class ServerSocket implements java.io.Closeable {
      *             the specified range of valid port values, which is between
      *             0 and 65535, inclusive.
      *
-     * @see        java.net.SocketImpl
-     * @see        java.net.SocketImplFactory#createSocketImpl()
-     * @see        java.net.ServerSocket#setSocketFactory(java.net.SocketImplFactory)
+     * @see        j86.java.net.SocketImpl
+     * @see        j86.java.net.SocketImplFactory#createSocketImpl()
+     * @see        j86.java.net.ServerSocket#setSocketFactory(java.net.SocketImplFactory)
      * @see        SecurityManager#checkListen
      */
     public ServerSocket(int port) throws IOException {
@@ -172,9 +172,9 @@ class ServerSocket implements java.io.Closeable {
      *             the specified range of valid port values, which is between
      *             0 and 65535, inclusive.
      *
-     * @see        java.net.SocketImpl
-     * @see        java.net.SocketImplFactory#createSocketImpl()
-     * @see        java.net.ServerSocket#setSocketFactory(java.net.SocketImplFactory)
+     * @see        j86.java.net.SocketImpl
+     * @see        j86.java.net.SocketImplFactory#createSocketImpl()
+     * @see        j86.java.net.ServerSocket#setSocketFactory(java.net.SocketImplFactory)
      * @see        SecurityManager#checkListen
      */
     public ServerSocket(int port, int backlog) throws IOException {
@@ -273,7 +273,7 @@ class ServerSocket implements java.io.Closeable {
                         return null;
                     }
                 });
-        } catch (java.security.PrivilegedActionException e) {
+        } catch (j86.java.security.PrivilegedActionException e) {
             oldImpl = true;
         }
     }
@@ -494,7 +494,7 @@ class ServerSocket implements java.io.Closeable {
      *             {@code checkAccept} method doesn't allow the operation.
      * @exception  SocketTimeoutException if a timeout was previously set with setSoTimeout and
      *             the timeout has been reached.
-     * @exception  java.nio.channels.IllegalBlockingModeException
+     * @exception  j86.j86.java.nio.channels.IllegalBlockingModeException
      *             if this socket has an associated channel, the channel is in
      *             non-blocking mode, and there is no connection ready to be
      *             accepted
@@ -521,7 +521,7 @@ class ServerSocket implements java.io.Closeable {
      * return from implAccept the FooSocket will be connected to a client.
      *
      * @param s the Socket
-     * @throws java.nio.channels.IllegalBlockingModeException
+     * @throws j86.j86.java.nio.channels.IllegalBlockingModeException
      *         if this socket has an associated channel,
      *         and the channel is in non-blocking mode
      * @throws IOException if an I/O error occurs when waiting
@@ -588,12 +588,12 @@ class ServerSocket implements java.io.Closeable {
     }
 
     /**
-     * Returns the unique {@link java.nio.channels.ServerSocketChannel} object
+     * Returns the unique {@link j86.j86.java.nio.channels.ServerSocketChannel} object
      * associated with this socket, if any.
      *
      * <p> A server socket will have a channel if, and only if, the channel
      * itself was created via the {@link
-     * java.nio.channels.ServerSocketChannel#open ServerSocketChannel.open}
+     * j86.j86.java.nio.channels.ServerSocketChannel#open ServerSocketChannel.open}
      * method.
      *
      * @return  the server-socket channel associated with this socket,
@@ -635,7 +635,7 @@ class ServerSocket implements java.io.Closeable {
      * specified timeout, in milliseconds.  With this option set to a non-zero
      * timeout, a call to accept() for this ServerSocket
      * will block for only this amount of time.  If the timeout expires,
-     * a <B>java.net.SocketTimeoutException</B> is raised, though the
+     * a <B>j86.java.net.SocketTimeoutException</B> is raised, though the
      * ServerSocket is still valid.  The option <B>must</B> be enabled
      * prior to entering the blocking operation to have effect.  The
      * timeout must be {@code > 0}.
@@ -790,7 +790,7 @@ class ServerSocket implements java.io.Closeable {
      * @exception  SocketException  if the factory has already been defined.
      * @exception  SecurityException  if a security manager exists and its
      *             {@code checkSetFactory} method doesn't allow the operation.
-     * @see        java.net.SocketImplFactory#createSocketImpl()
+     * @see        j86.java.net.SocketImplFactory#createSocketImpl()
      * @see        SecurityManager#checkSetFactory
      */
     public static synchronized void setSocketFactory(SocketImplFactory fac) throws IOException {

@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.swing.event;
+package j86.j86.javax.swing.event;
 
-import java.awt.event.MouseAdapter;
+import j86.j86.java.awt.event.MouseAdapter;
 
 /**
  * An empty implementation of the {@code MouseInputListener} interface, provided

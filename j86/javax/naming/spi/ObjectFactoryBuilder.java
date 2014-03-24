@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.naming.spi;
+package j86.j86.javax.naming.spi;
 
-import java.util.Hashtable;
-import javax.naming.NamingException;
+import j86.java.util.Hashtable;
+import j86.javax.naming.NamingException;
 
  /**
   * This interface represents a builder that creates object factories.

@@ -103,8 +103,8 @@
  * <p>
  *
 <PRE>
-   import com.sun.tracing.Provider;
-   import com.sun.tracing.ProviderFactory;
+   import com.j86.sun.tracing.Provider;
+   import com.j86.sun.tracing.ProviderFactory;
 
    interface MyProvider extends Provider {
        void startProbe();
@@ -143,7 +143,7 @@
  * <li>{@code <probe>} the probe name as specified by the application</li>
  * </ul>
  * <p>
- * The {@code com.sun.tracing.dtrace} package contains additional
+ * The {@code com.j86.j86.sun.tracing.dtrace} package contains additional
  * annotations that can be used to control the names used for the
  * <code>module</code> and <code>function</code> fields, as well as annotations
  * that can be added to the provider to control probe stability and dependency
@@ -154,7 +154,7 @@
  * the built-in argument variables, {@code arg0 ... arg_n}.  Integer-types
  * are passed by value (boxed values are unboxed), floating-point types are
  * passed as encoded integer
- * arguments, and {@code java.lang.String} objects are converted
+ * arguments, and {@code j86.java.lang.String} objects are converted
  * to UTF8 strings, so they can be read into the DTrace script using the
  * {@code copyinstr()} intrinsic.  Non-string and non-boxed primitive
  * reference arguments are only
@@ -173,11 +173,11 @@
  * following circumstances:
  * <ul>
  * <li>DTrace is not supported on the underlying system.</li>
- * <li>The property {@code com.sun.tracing.dtrace} is set to "disable".</li>
- * <li>The RuntimePermission {@code com.sun.tracing.dtrace.createProvider}
+ * <li>The property {@code com.j86.j86.sun.tracing.dtrace} is set to "disable".</li>
+ * <li>The RuntimePermission {@code com.j86.j86.sun.tracing.dtrace.createProvider}
  * is denied to the process.</li>
  * </ul>
  * <p>
  */
 
-package com.sun.tracing;
+package com.j86.sun.tracing;

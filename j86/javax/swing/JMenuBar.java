@@ -23,28 +23,28 @@
  * questions.
  */
 
-package javax.swing;
+package j86.javax.swing;
 
-import java.awt.Component;
-import java.awt.Dimension;
-import java.awt.Graphics;
-import java.awt.Insets;
-import java.awt.Point;
-import java.awt.Rectangle;
-import java.awt.event.*;
-import java.beans.Transient;
-import java.util.Vector;
-import java.util.Enumeration;
+import j86.java.awt.Component;
+import j86.java.awt.Dimension;
+import j86.java.awt.Graphics;
+import j86.java.awt.Insets;
+import j86.java.awt.Point;
+import j86.java.awt.Rectangle;
+import j86.j86.java.awt.event.*;
+import j86.java.beans.Transient;
+import j86.java.util.Vector;
+import j86.java.util.Enumeration;
 
-import java.io.Serializable;
-import java.io.ObjectOutputStream;
-import java.io.ObjectInputStream;
-import java.io.IOException;
+import j86.java.io.Serializable;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.IOException;
 
-import javax.swing.event.*;
-import javax.swing.border.Border;
-import javax.swing.plaf.*;
-import javax.accessibility.*;
+import j86.j86.javax.swing.event.*;
+import j86.j86.javax.swing.border.Border;
+import j86.j86.javax.swing.plaf.*;
+import j86.javax.accessibility.*;
 
 /**
  * An implementation of a menu bar. You add <code>JMenu</code> objects to the
@@ -68,8 +68,8 @@ import javax.accessibility.*;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  * <p>
  * <strong>Warning:</strong>
  * By default, pressing the Tab key does not transfer focus from a <code>
@@ -503,8 +503,8 @@ public class JMenuBar extends JComponent implements Accessible,MenuElement
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     @SuppressWarnings("serial")
     protected class AccessibleJMenuBar extends AccessibleJComponent

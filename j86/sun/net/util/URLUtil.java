@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.net.util;
+package j86.j86.sun.net.util;
 
-import java.net.URL;
+import j86.java.net.URL;
 
 /**
  * URL Utility class.
@@ -39,7 +39,7 @@ public class URLUtil {
      * lookup is done on the hostname (only string comparison), and the fragment
      * is not considered.
      *
-     * @see java.net.URLStreamHandler.sameFile(java.net.URL)
+     * @see j86.java.net.URLStreamHandler.sameFile(java.net.URL)
      */
     public static String urlNoFragString(URL url) {
         StringBuilder strForm = new StringBuilder();

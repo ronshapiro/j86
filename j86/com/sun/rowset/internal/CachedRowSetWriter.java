@@ -23,22 +23,22 @@
  * questions.
  */
 
-package com.sun.rowset.internal;
+package j86.j86.com.sun.rowset.internal;
 
-import java.sql.*;
-import javax.sql.*;
-import java.util.*;
-import java.io.*;
+import j86.java.sql.*;
+import j86.javax.sql.*;
+import j86.java.util.*;
+import j86.java.io.*;
 
-import com.sun.rowset.*;
-import java.text.MessageFormat;
-import javax.sql.rowset.*;
-import javax.sql.rowset.serial.SQLInputImpl;
-import javax.sql.rowset.serial.SerialArray;
-import javax.sql.rowset.serial.SerialBlob;
-import javax.sql.rowset.serial.SerialClob;
-import javax.sql.rowset.serial.SerialStruct;
-import javax.sql.rowset.spi.*;
+import j86.com.sun.rowset.*;
+import j86.java.text.MessageFormat;
+import j86.j86.javax.sql.rowset.*;
+import j86.j86.j86.javax.sql.rowset.serial.SQLInputImpl;
+import j86.j86.j86.javax.sql.rowset.serial.SerialArray;
+import j86.j86.j86.javax.sql.rowset.serial.SerialBlob;
+import j86.j86.j86.javax.sql.rowset.serial.SerialClob;
+import j86.j86.j86.javax.sql.rowset.serial.SerialStruct;
+import j86.j86.j86.javax.sql.rowset.spi.*;
 
 
 /**
@@ -61,9 +61,9 @@ import javax.sql.rowset.spi.*;
  *
  * @version 0.2
  * @author Jonathan Bruce
- * @see javax.sql.rowset.spi.SyncProvider
- * @see javax.sql.rowset.spi.SyncFactory
- * @see javax.sql.rowset.spi.SyncFactoryException
+ * @see j86.j86.j86.javax.sql.rowset.spi.SyncProvider
+ * @see j86.j86.j86.javax.sql.rowset.spi.SyncFactory
+ * @see j86.j86.j86.javax.sql.rowset.spi.SyncFactoryException
  */
 public class CachedRowSetWriter implements TransactionalWriter, Serializable {
 
@@ -573,10 +573,10 @@ public class CachedRowSetWriter implements TransactionalWriter, Serializable {
                         SQLData obj = null;
                         try {
                             obj = (SQLData)c.newInstance();
-                        } catch (java.lang.InstantiationException ex) {
+                        } catch (j86.java.lang.InstantiationException ex) {
                             throw new SQLException(MessageFormat.format(resBundle.handleGetObject("cachedrowsetimpl.unableins").toString(),
                             ex.getMessage()));
-                        } catch (java.lang.IllegalAccessException ex) {
+                        } catch (j86.java.lang.IllegalAccessException ex) {
                             throw new SQLException(MessageFormat.format(resBundle.handleGetObject("cachedrowsetimpl.unableins").toString(),
                             ex.getMessage()));
                         }
@@ -594,8 +594,8 @@ public class CachedRowSetWriter implements TransactionalWriter, Serializable {
                     rsval = new SerialBlob((Blob)rsval);
                 } else if (rsval instanceof Clob) {
                     rsval = new SerialClob((Clob)rsval);
-                } else if (rsval instanceof java.sql.Array) {
-                    rsval = new SerialArray((java.sql.Array)rsval, map);
+                } else if (rsval instanceof j86.java.sql.Array) {
+                    rsval = new SerialArray((j86.java.sql.Array)rsval, map);
                 }
 
                 // reset boolNull if it had been set
@@ -782,7 +782,7 @@ public class CachedRowSetWriter implements TransactionalWriter, Serializable {
                  *
                  * NOTE:
                  * ------
-                 * In the database if a column that is mapped to java.sql.Types.REAL stores
+                 * In the database if a column that is mapped to j86.java.sql.Types.REAL stores
                  * a Double value and is compared with value got from ResultSet.getFloat()
                  * no row is retrieved and will throw a SyncProviderException. For details
                  * see bug Id 5053830
@@ -1250,12 +1250,12 @@ public class CachedRowSetWriter implements TransactionalWriter, Serializable {
             ArrayList<Integer> listKeys = new ArrayList<Integer>();
 
             for (int i = 0; i < callerColumnCount; i++ ) {
-                if(resultsetmd.getColumnType(i+1) != java.sql.Types.CLOB &&
-                        resultsetmd.getColumnType(i+1) != java.sql.Types.STRUCT &&
-                        resultsetmd.getColumnType(i+1) != java.sql.Types.SQLXML &&
-                        resultsetmd.getColumnType(i+1) != java.sql.Types.BLOB &&
-                        resultsetmd.getColumnType(i+1) != java.sql.Types.ARRAY &&
-                        resultsetmd.getColumnType(i+1) != java.sql.Types.OTHER )
+                if(resultsetmd.getColumnType(i+1) != j86.java.sql.Types.CLOB &&
+                        resultsetmd.getColumnType(i+1) != j86.java.sql.Types.STRUCT &&
+                        resultsetmd.getColumnType(i+1) != j86.java.sql.Types.SQLXML &&
+                        resultsetmd.getColumnType(i+1) != j86.java.sql.Types.BLOB &&
+                        resultsetmd.getColumnType(i+1) != j86.java.sql.Types.ARRAY &&
+                        resultsetmd.getColumnType(i+1) != j86.java.sql.Types.OTHER )
                     listKeys.add(i+1);
             }
             keyCols = new int[listKeys.size()];

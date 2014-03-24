@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.util;
+package j86.java.util;
 
 /**
  * A collection that contains no duplicate elements.  More formally, sets
@@ -77,7 +77,7 @@ package java.util;
  * @see HashSet
  * @see TreeSet
  * @see AbstractSet
- * @see Collections#singleton(java.lang.Object)
+ * @see Collections#singleton(j86.java.lang.Object)
  * @see Collections#EMPTY_SET
  * @since 1.2
  */

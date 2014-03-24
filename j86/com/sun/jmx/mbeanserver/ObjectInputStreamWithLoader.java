@@ -23,14 +23,14 @@
  * questions.
  */
 
-package com.sun.jmx.mbeanserver;
+package j86.com.sun.jmx.mbeanserver;
 
 // Java import
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.ObjectInputStream;
-import java.io.ObjectStreamClass;
-import sun.reflect.misc.ReflectUtil;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.ObjectStreamClass;
+import j86.j86.sun.reflect.misc.ReflectUtil;
 
 /**
  * This class deserializes an object in the context of a specific class loader.

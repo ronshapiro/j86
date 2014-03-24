@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.security.ssl;
+package j86.sun.security.ssl;
 
-import java.util.ArrayList;
-import java.util.List;
+import j86.java.util.ArrayList;
+import j86.java.util.List;
 
 final class ExtensionType {
 

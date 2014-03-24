@@ -23,20 +23,20 @@
  * questions.
  */
 
-package java.util;
+package j86.java.util;
 
-import java.nio.file.Path;
-import java.nio.file.Files;
-import java.util.regex.*;
-import java.io.*;
-import java.math.*;
-import java.nio.*;
-import java.nio.channels.*;
-import java.nio.charset.*;
-import java.text.*;
-import java.util.Locale;
+import j86.j86.java.nio.file.Path;
+import j86.j86.java.nio.file.Files;
+import j86.j86.java.util.regex.*;
+import j86.java.io.*;
+import j86.java.math.*;
+import j86.java.nio.*;
+import j86.j86.java.nio.channels.*;
+import j86.j86.java.nio.charset.*;
+import j86.java.text.*;
+import j86.java.util.Locale;
 
-import sun.misc.LRUCache;
+import j86.sun.misc.LRUCache;
 
 /**
  * A simple text scanner which can parse primitive types and strings using
@@ -96,8 +96,8 @@ import sun.misc.LRUCache;
  * }</pre></blockquote>
  *
  * <p>The <a name="default-delimiter">default whitespace delimiter</a> used
- * by a scanner is as recognized by {@link java.lang.Character}.{@link
- * java.lang.Character#isWhitespace(char) isWhitespace}. The {@link #reset}
+ * by a scanner is as recognized by {@link j86.java.lang.Character}.{@link
+ * j86.java.lang.Character#isWhitespace(char) isWhitespace}. The {@link #reset}
  * method will reset the value of the scanner's delimiter to the default
  * whitespace delimiter regardless of whether it was previously changed.
  *
@@ -128,14 +128,14 @@ import sun.misc.LRUCache;
  * space at a time.
  *
  * <p> A scanner can read text from any object which implements the {@link
- * java.lang.Readable} interface.  If an invocation of the underlying
- * readable's {@link java.lang.Readable#read} method throws an {@link
- * java.io.IOException} then the scanner assumes that the end of the input
+ * j86.java.lang.Readable} interface.  If an invocation of the underlying
+ * readable's {@link j86.java.lang.Readable#read} method throws an {@link
+ * j86.java.io.IOException} then the scanner assumes that the end of the input
  * has been reached.  The most recent <tt>IOException</tt> thrown by the
  * underlying readable can be retrieved via the {@link #ioException} method.
  *
  * <p>When a <code>Scanner</code> is closed, it will close its input source
- * if the source implements the {@link java.io.Closeable} interface.
+ * if the source implements the {@link j86.java.io.Closeable} interface.
  *
  * <p>A <code>Scanner</code> is not safe for multithreaded use without
  * external synchronization.
@@ -154,7 +154,7 @@ import sun.misc.LRUCache;
  * <p> An instance of this class is capable of scanning numbers in the standard
  * formats as well as in the formats of the scanner's locale. A scanner's
  * <a name="initial-locale">initial locale </a>is the value returned by the {@link
- * java.util.Locale#getDefault(Locale.Category)
+ * j86.java.util.Locale#getDefault(Locale.Category)
  * Locale.getDefault(Locale.Category.FORMAT)} method; it may be changed via the {@link
  * #useLocale} method. The {@link #reset} method will reset the value of the
  * scanner's locale to the initial locale regardless of whether it was
@@ -162,51 +162,51 @@ import sun.misc.LRUCache;
  *
  * <p>The localized formats are defined in terms of the following parameters,
  * which for a particular locale are taken from that locale's {@link
- * java.text.DecimalFormat DecimalFormat} object, <tt>df</tt>, and its and
- * {@link java.text.DecimalFormatSymbols DecimalFormatSymbols} object,
+ * j86.java.text.DecimalFormat DecimalFormat} object, <tt>df</tt>, and its and
+ * {@link j86.java.text.DecimalFormatSymbols DecimalFormatSymbols} object,
  * <tt>dfs</tt>.
  *
  * <blockquote><dl>
  *     <dt><i>LocalGroupSeparator&nbsp;&nbsp;</i>
  *         <dd>The character used to separate thousands groups,
  *         <i>i.e.,</i>&nbsp;<tt>dfs.</tt>{@link
- *         java.text.DecimalFormatSymbols#getGroupingSeparator
+ *         j86.java.text.DecimalFormatSymbols#getGroupingSeparator
  *         getGroupingSeparator()}
  *     <dt><i>LocalDecimalSeparator&nbsp;&nbsp;</i>
  *         <dd>The character used for the decimal point,
  *     <i>i.e.,</i>&nbsp;<tt>dfs.</tt>{@link
- *     java.text.DecimalFormatSymbols#getDecimalSeparator
+ *     j86.java.text.DecimalFormatSymbols#getDecimalSeparator
  *     getDecimalSeparator()}
  *     <dt><i>LocalPositivePrefix&nbsp;&nbsp;</i>
  *         <dd>The string that appears before a positive number (may
  *         be empty), <i>i.e.,</i>&nbsp;<tt>df.</tt>{@link
- *         java.text.DecimalFormat#getPositivePrefix
+ *         j86.java.text.DecimalFormat#getPositivePrefix
  *         getPositivePrefix()}
  *     <dt><i>LocalPositiveSuffix&nbsp;&nbsp;</i>
  *         <dd>The string that appears after a positive number (may be
  *         empty), <i>i.e.,</i>&nbsp;<tt>df.</tt>{@link
- *         java.text.DecimalFormat#getPositiveSuffix
+ *         j86.java.text.DecimalFormat#getPositiveSuffix
  *         getPositiveSuffix()}
  *     <dt><i>LocalNegativePrefix&nbsp;&nbsp;</i>
  *         <dd>The string that appears before a negative number (may
  *         be empty), <i>i.e.,</i>&nbsp;<tt>df.</tt>{@link
- *         java.text.DecimalFormat#getNegativePrefix
+ *         j86.java.text.DecimalFormat#getNegativePrefix
  *         getNegativePrefix()}
  *     <dt><i>LocalNegativeSuffix&nbsp;&nbsp;</i>
  *         <dd>The string that appears after a negative number (may be
  *         empty), <i>i.e.,</i>&nbsp;<tt>df.</tt>{@link
- *     java.text.DecimalFormat#getNegativeSuffix
+ *     j86.java.text.DecimalFormat#getNegativeSuffix
  *     getNegativeSuffix()}
  *     <dt><i>LocalNaN&nbsp;&nbsp;</i>
  *         <dd>The string that represents not-a-number for
  *         floating-point values,
  *         <i>i.e.,</i>&nbsp;<tt>dfs.</tt>{@link
- *         java.text.DecimalFormatSymbols#getNaN
+ *         j86.java.text.DecimalFormatSymbols#getNaN
  *         getNaN()}
  *     <dt><i>LocalInfinity&nbsp;&nbsp;</i>
  *         <dd>The string that represents infinity for floating-point
  *         values, <i>i.e.,</i>&nbsp;<tt>dfs.</tt>{@link
- *         java.text.DecimalFormatSymbols#getInfinity
+ *         j86.java.text.DecimalFormatSymbols#getInfinity
  *         getInfinity()}
  * </dl></blockquote>
  *
@@ -219,7 +219,7 @@ import sun.misc.LRUCache;
  * <dl>
  *   <dt><i>NonAsciiDigit</i>:
  *       <dd>A non-ASCII character c for which
- *            {@link java.lang.Character#isDigit Character.isDigit}<tt>(c)</tt>
+ *            {@link j86.java.lang.Character#isDigit Character.isDigit}<tt>(c)</tt>
  *                        returns&nbsp;true
  *
  *   <dt><i>Non0Digit</i>:
@@ -555,7 +555,7 @@ public final class Scanner implements Iterator<String>, Closeable {
      * Constructs a new <code>Scanner</code> that produces values scanned
      * from the specified input stream. Bytes from the stream are converted
      * into characters using the underlying platform's
-     * {@linkplain java.nio.charset.Charset#defaultCharset() default charset}.
+     * {@linkplain j86.j86.java.nio.charset.Charset#defaultCharset() default charset}.
      *
      * @param  source An input stream to be scanned
      */
@@ -602,7 +602,7 @@ public final class Scanner implements Iterator<String>, Closeable {
      * Constructs a new <code>Scanner</code> that produces values scanned
      * from the specified file. Bytes from the file are converted into
      * characters using the underlying platform's
-     * {@linkplain java.nio.charset.Charset#defaultCharset() default charset}.
+     * {@linkplain j86.j86.java.nio.charset.Charset#defaultCharset() default charset}.
      *
      * @param  source A file to be scanned
      * @throws FileNotFoundException if source is not found
@@ -653,7 +653,7 @@ public final class Scanner implements Iterator<String>, Closeable {
      * Constructs a new <code>Scanner</code> that produces values scanned
      * from the specified file. Bytes from the file are converted into
      * characters using the underlying platform's
-     * {@linkplain java.nio.charset.Charset#defaultCharset() default charset}.
+     * {@linkplain j86.j86.java.nio.charset.Charset#defaultCharset() default charset}.
      *
      * @param   source
      *          the path to the file to be scanned
@@ -706,7 +706,7 @@ public final class Scanner implements Iterator<String>, Closeable {
      * Constructs a new <code>Scanner</code> that produces values scanned
      * from the specified channel. Bytes from the source are converted into
      * characters using the underlying platform's
-     * {@linkplain java.nio.charset.Charset#defaultCharset() default charset}.
+     * {@linkplain j86.j86.java.nio.charset.Charset#defaultCharset() default charset}.
      *
      * @param  source A channel to scan
      */
@@ -1076,8 +1076,8 @@ public final class Scanner implements Iterator<String>, Closeable {
      * Closes this scanner.
      *
      * <p> If this scanner has not yet been closed then if its underlying
-     * {@linkplain java.lang.Readable readable} also implements the {@link
-     * java.io.Closeable} interface then the readable's <tt>close</tt> method
+     * {@linkplain j86.java.lang.Readable readable} also implements the {@link
+     * j86.java.io.Closeable} interface then the readable's <tt>close</tt> method
      * will be invoked.  If this scanner is already closed then invoking this
      * method will have no effect.
      *
@@ -1303,7 +1303,7 @@ public final class Scanner implements Iterator<String>, Closeable {
      */
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("java.util.Scanner");
+        sb.append("j86.java.util.Scanner");
         sb.append("[delimiters=" + delimPattern + "]");
         sb.append("[position=" + position + "]");
         sb.append("[match valid=" + matchValid + "]");
@@ -1328,7 +1328,7 @@ public final class Scanner implements Iterator<String>, Closeable {
      *
      * @return true if and only if this scanner has another token
      * @throws IllegalStateException if this scanner is closed
-     * @see java.util.Iterator
+     * @see j86.java.util.Iterator
      */
     public boolean hasNext() {
         ensureOpen();
@@ -1352,7 +1352,7 @@ public final class Scanner implements Iterator<String>, Closeable {
      * @return the next token
      * @throws NoSuchElementException if no more tokens are available
      * @throws IllegalStateException if this scanner is closed
-     * @see java.util.Iterator
+     * @see j86.java.util.Iterator
      */
     public String next() {
         ensureOpen();
@@ -1377,7 +1377,7 @@ public final class Scanner implements Iterator<String>, Closeable {
      * <code>Iterator</code>.
      *
      * @throws UnsupportedOperationException if this method is invoked.
-     * @see java.util.Iterator
+     * @see j86.java.util.Iterator
      */
     public void remove() {
         throw new UnsupportedOperationException();
@@ -2461,7 +2461,7 @@ public final class Scanner implements Iterator<String>, Closeable {
     }
 
     /**
-     * Scans the next token of the input as a {@link java.math.BigInteger
+     * Scans the next token of the input as a {@link j86.java.math.BigInteger
      * BigInteger}.
      *
      * <p> An invocation of this method of the form
@@ -2481,7 +2481,7 @@ public final class Scanner implements Iterator<String>, Closeable {
     }
 
     /**
-     * Scans the next token of the input as a {@link java.math.BigInteger
+     * Scans the next token of the input as a {@link j86.java.math.BigInteger
      * BigInteger}.
      *
      * <p> If the next token matches the <a
@@ -2490,7 +2490,7 @@ public final class Scanner implements Iterator<String>, Closeable {
      * by removing all group separators, mapping non-ASCII digits into ASCII
      * digits via the {@link Character#digit Character.digit}, and passing the
      * resulting string to the {@link
-     * java.math.BigInteger#BigInteger(java.lang.String)
+     * j86.java.math.BigInteger#BigInteger(j86.java.lang.String)
      * BigInteger(String, int)} constructor with the specified radix.
      *
      * @param radix the radix used to interpret the token
@@ -2548,7 +2548,7 @@ public final class Scanner implements Iterator<String>, Closeable {
     }
 
     /**
-     * Scans the next token of the input as a {@link java.math.BigDecimal
+     * Scans the next token of the input as a {@link j86.java.math.BigDecimal
      * BigDecimal}.
      *
      * <p> If the next token matches the <a
@@ -2557,7 +2557,7 @@ public final class Scanner implements Iterator<String>, Closeable {
      * by removing all group separators, mapping non-ASCII digits into ASCII
      * digits via the {@link Character#digit Character.digit}, and passing the
      * resulting string to the {@link
-     * java.math.BigDecimal#BigDecimal(java.lang.String) BigDecimal(String)}
+     * j86.java.math.BigDecimal#BigDecimal(j86.java.lang.String) BigDecimal(String)}
      * constructor.
      *
      * @return the <tt>BigDecimal</tt> scanned from the input

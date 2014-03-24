@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.jmx.snmp;
+package j86.com.sun.jmx.snmp;
 /**
  * Is used to represent <CODE>get</CODE>, <CODE>get-next</CODE>, <CODE>set</CODE>, <CODE>response</CODE> SNMP V3 scoped PDUs.
  *
@@ -49,7 +49,7 @@ public class SnmpScopedPduRequest extends SnmpScopedPduPacket
     }
     /**
      * Error status setter. Statuses are defined in
-     * {@link com.sun.jmx.snmp.SnmpDefinitions SnmpDefinitions}.
+     * {@link j86.com.sun.jmx.snmp.SnmpDefinitions SnmpDefinitions}.
      * @param s Error status.
      */
     public void setErrorStatus(int s) {
@@ -65,7 +65,7 @@ public class SnmpScopedPduRequest extends SnmpScopedPduPacket
     public int getErrorIndex() { return errorIndex; }
     /**
      * Error status getter. Statuses are defined in
-     * {@link com.sun.jmx.snmp.SnmpDefinitions SnmpDefinitions}.
+     * {@link j86.com.sun.jmx.snmp.SnmpDefinitions SnmpDefinitions}.
      * @return Error status.
      */
     public int getErrorStatus() { return errorStatus; }

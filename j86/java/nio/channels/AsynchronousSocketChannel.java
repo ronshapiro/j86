@@ -23,15 +23,15 @@
  * questions.
  */
 
-package java.nio.channels;
+package j86.j86.java.nio.channels;
 
-import java.nio.channels.spi.*;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.Future;
-import java.io.IOException;
-import java.net.SocketOption;
-import java.net.SocketAddress;
-import java.nio.ByteBuffer;
+import j86.j86.j86.java.nio.channels.spi.*;
+import j86.j86.java.util.concurrent.TimeUnit;
+import j86.j86.java.util.concurrent.Future;
+import j86.java.io.IOException;
+import j86.java.net.SocketOption;
+import j86.java.net.SocketAddress;
+import j86.java.nio.ByteBuffer;
 
 /**
  * An asynchronous channel for stream-oriented connecting sockets.
@@ -42,7 +42,7 @@ import java.nio.ByteBuffer;
  * not yet connected. A connected {@code AsynchronousSocketChannel} is created
  * when a connection is made to the socket of an {@link AsynchronousServerSocketChannel}.
  * It is not possible to create an asynchronous socket channel for an arbitrary,
- * pre-existing {@link java.net.Socket socket}.
+ * pre-existing {@link j86.java.net.Socket socket}.
  *
  * <p> A newly-created channel is connected by invoking its {@link #connect connect}
  * method; once connected, a channel remains connected until it is closed.  Whether
@@ -68,23 +68,23 @@ import java.nio.ByteBuffer;
  *     <th>Description</th>
  *   </tr>
  *   <tr>
- *     <td> {@link java.net.StandardSocketOptions#SO_SNDBUF SO_SNDBUF} </td>
+ *     <td> {@link j86.java.net.StandardSocketOptions#SO_SNDBUF SO_SNDBUF} </td>
  *     <td> The size of the socket send buffer </td>
  *   </tr>
  *   <tr>
- *     <td> {@link java.net.StandardSocketOptions#SO_RCVBUF SO_RCVBUF} </td>
+ *     <td> {@link j86.java.net.StandardSocketOptions#SO_RCVBUF SO_RCVBUF} </td>
  *     <td> The size of the socket receive buffer </td>
  *   </tr>
  *   <tr>
- *     <td> {@link java.net.StandardSocketOptions#SO_KEEPALIVE SO_KEEPALIVE} </td>
+ *     <td> {@link j86.java.net.StandardSocketOptions#SO_KEEPALIVE SO_KEEPALIVE} </td>
  *     <td> Keep connection alive </td>
  *   </tr>
  *   <tr>
- *     <td> {@link java.net.StandardSocketOptions#SO_REUSEADDR SO_REUSEADDR} </td>
+ *     <td> {@link j86.java.net.StandardSocketOptions#SO_REUSEADDR SO_REUSEADDR} </td>
  *     <td> Re-use address </td>
  *   </tr>
  *   <tr>
- *     <td> {@link java.net.StandardSocketOptions#TCP_NODELAY TCP_NODELAY} </td>
+ *     <td> {@link j86.java.net.StandardSocketOptions#TCP_NODELAY TCP_NODELAY} </td>
  *     <td> Disable the Nagle algorithm </td>
  *   </tr>
  * </table>
@@ -267,7 +267,7 @@ public abstract class AsynchronousSocketChannel
      *
      * <p> Where the channel is bound and connected to an Internet Protocol
      * socket address then the return value from this method is of type {@link
-     * java.net.InetSocketAddress}.
+     * j86.java.net.InetSocketAddress}.
      *
      * @return  The remote address; {@code null} if the channel's socket is not
      *          connected
@@ -291,9 +291,9 @@ public abstract class AsynchronousSocketChannel
      * closed.
      *
      * <p> This method performs exactly the same security checks as the {@link
-     * java.net.Socket} class.  That is, if a security manager has been
+     * j86.java.net.Socket} class.  That is, if a security manager has been
      * installed then this method verifies that its {@link
-     * java.lang.SecurityManager#checkConnect checkConnect} method permits
+     * j86.java.lang.SecurityManager#checkConnect checkConnect} method permits
      * connecting to the address and port number of the given remote endpoint.
      *
      * @param   <A>
@@ -672,7 +672,7 @@ public abstract class AsynchronousSocketChannel
      * called with the local address and {@code -1} as its arguments to see
      * if the operation is allowed. If the operation is not allowed,
      * a {@code SocketAddress} representing the
-     * {@link java.net.InetAddress#getLoopbackAddress loopback} address and the
+     * {@link j86.java.net.InetAddress#getLoopbackAddress loopback} address and the
      * local port of the channel's socket is returned.
      *
      * @return  The {@code SocketAddress} that the socket is bound to, or the

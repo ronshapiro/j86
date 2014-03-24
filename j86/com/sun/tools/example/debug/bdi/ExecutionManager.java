@@ -32,20 +32,20 @@
  */
 
 
-package com.sun.tools.example.debug.bdi;
+package j86.com.sun.tools.example.debug.bdi;
 
-import com.sun.jdi.*;
-import com.sun.jdi.request.*;
-import com.sun.jdi.connect.*;
-import com.sun.tools.example.debug.expr.ExpressionParser;
-import com.sun.tools.example.debug.expr.ParseException;
+import j86.com.sun.jdi.*;
+import j86.j86.com.sun.jdi.request.*;
+import j86.j86.com.sun.jdi.connect.*;
+import j86.com.sun.tools.example.debug.expr.ExpressionParser;
+import j86.com.sun.tools.example.debug.expr.ParseException;
 
-import java.io.*;
-import java.util.*;
+import j86.java.io.*;
+import j86.java.util.*;
 
-import com.sun.tools.example.debug.event.*;
+import j86.com.sun.tools.example.debug.event.*;
 
-import javax.swing.SwingUtilities;
+import j86.javax.swing.SwingUtilities;
 
 /**
  * Move this towards being only state and functionality
@@ -327,9 +327,9 @@ public class ExecutionManager {
         //### Set a breakpoint on 'main' method.
         //### Would be cleaner if we could just bring up VM already suspended.
         if (suspended) {
-            //### Set breakpoint at 'main(java.lang.String[])'.
+            //### Set breakpoint at 'main(j86.java.lang.String[])'.
             List<String> argList = new ArrayList<String>(1);
-            argList.add("java.lang.String[]");
+            argList.add("j86.java.lang.String[]");
             createMethodBreakpoint(className, "main", argList);
         }
 

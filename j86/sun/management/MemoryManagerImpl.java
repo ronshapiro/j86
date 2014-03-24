@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.management;
+package j86.sun.management;
 
-import java.lang.management.ManagementFactory;
-import java.lang.management.MemoryManagerMXBean;
-import java.lang.management.MemoryPoolMXBean;
+import j86.j86.java.lang.management.ManagementFactory;
+import j86.j86.java.lang.management.MemoryManagerMXBean;
+import j86.j86.java.lang.management.MemoryPoolMXBean;
 
-import javax.management.MBeanNotificationInfo;
-import javax.management.ObjectName;
+import j86.javax.management.MBeanNotificationInfo;
+import j86.javax.management.ObjectName;
 
 /**
  * Implementation class for a memory manager.

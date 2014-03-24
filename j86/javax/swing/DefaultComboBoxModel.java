@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing;
+package j86.javax.swing;
 
-import java.util.*;
+import j86.java.util.*;
 
-import java.io.Serializable;
+import j86.java.io.Serializable;
 
 /**
  * The default model for combo boxes.
@@ -80,7 +80,7 @@ public class DefaultComboBoxModel<E> extends AbstractListModel<E> implements Mut
         }
     }
 
-    // implements javax.swing.ComboBoxModel
+    // implements j86.javax.swing.ComboBoxModel
     /**
      * Set the value of the selected item. The selected item may be null.
      *
@@ -94,17 +94,17 @@ public class DefaultComboBoxModel<E> extends AbstractListModel<E> implements Mut
         }
     }
 
-    // implements javax.swing.ComboBoxModel
+    // implements j86.javax.swing.ComboBoxModel
     public Object getSelectedItem() {
         return selectedObject;
     }
 
-    // implements javax.swing.ListModel
+    // implements j86.javax.swing.ListModel
     public int getSize() {
         return objects.size();
     }
 
-    // implements javax.swing.ListModel
+    // implements j86.javax.swing.ListModel
     public E getElementAt(int index) {
         if ( index >= 0 && index < objects.size() )
             return objects.elementAt(index);
@@ -123,7 +123,7 @@ public class DefaultComboBoxModel<E> extends AbstractListModel<E> implements Mut
         return objects.indexOf(anObject);
     }
 
-    // implements javax.swing.MutableComboBoxModel
+    // implements j86.javax.swing.MutableComboBoxModel
     public void addElement(E anObject) {
         objects.addElement(anObject);
         fireIntervalAdded(this,objects.size()-1, objects.size()-1);
@@ -132,13 +132,13 @@ public class DefaultComboBoxModel<E> extends AbstractListModel<E> implements Mut
         }
     }
 
-    // implements javax.swing.MutableComboBoxModel
+    // implements j86.javax.swing.MutableComboBoxModel
     public void insertElementAt(E anObject,int index) {
         objects.insertElementAt(anObject,index);
         fireIntervalAdded(this, index, index);
     }
 
-    // implements javax.swing.MutableComboBoxModel
+    // implements j86.javax.swing.MutableComboBoxModel
     public void removeElementAt(int index) {
         if ( getElementAt( index ) == selectedObject ) {
             if ( index == 0 ) {
@@ -154,7 +154,7 @@ public class DefaultComboBoxModel<E> extends AbstractListModel<E> implements Mut
         fireIntervalRemoved(this, index, index);
     }
 
-    // implements javax.swing.MutableComboBoxModel
+    // implements j86.javax.swing.MutableComboBoxModel
     public void removeElement(Object anObject) {
         int index = objects.indexOf(anObject);
         if ( index != -1 ) {

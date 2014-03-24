@@ -23,26 +23,26 @@
  * questions.
  */
 
-package javax.swing;
+package j86.javax.swing;
 
-import java.awt.Component;
-import java.awt.Font;
-import java.awt.Image;
-import java.awt.*;
-import java.text.*;
-import java.awt.geom.*;
-import java.beans.Transient;
+import j86.java.awt.Component;
+import j86.java.awt.Font;
+import j86.java.awt.Image;
+import j86.java.awt.*;
+import j86.java.text.*;
+import j86.j86.java.awt.geom.*;
+import j86.java.beans.Transient;
 
-import java.io.ObjectOutputStream;
-import java.io.ObjectInputStream;
-import java.io.IOException;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.IOException;
 
-import javax.swing.plaf.LabelUI;
-import javax.accessibility.*;
-import javax.swing.text.*;
-import javax.swing.text.html.*;
-import javax.swing.plaf.basic.*;
-import java.util.*;
+import j86.j86.javax.swing.plaf.LabelUI;
+import j86.javax.accessibility.*;
+import j86.j86.javax.swing.text.*;
+import j86.j86.j86.javax.swing.text.html.*;
+import j86.j86.j86.javax.swing.plaf.basic.*;
+import j86.java.util.*;
 
 
 /**
@@ -70,7 +70,7 @@ import java.util.*;
  * with the text and image vertically aligned.
  * <p>
  * A label's leading and trailing edge are determined from the value of its
- * {@link java.awt.ComponentOrientation} property.  At present, the default
+ * {@link j86.java.awt.ComponentOrientation} property.  At present, the default
  * ComponentOrientation setting maps the leading edge to left and the trailing
  * edge to right.
  *
@@ -95,8 +95,8 @@ import java.util.*;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @beaninfo
  *   attribute: isContainer false
@@ -421,7 +421,7 @@ public class JLabel extends JComponent implements SwingConstants, Accessible
      *
      * @return the <code>disabledIcon</code> property
      * @see #setDisabledIcon
-     * @see javax.swing.LookAndFeel#getDisabledIcon
+     * @see j86.javax.swing.LookAndFeel#getDisabledIcon
      * @see ImageIcon
      */
     @Transient
@@ -504,8 +504,8 @@ public class JLabel extends JComponent implements SwingConstants, Accessible
      * @see #setDisplayedMnemonic(int)
      */
     public void setDisplayedMnemonic(char aChar) {
-        int vk = java.awt.event.KeyEvent.getExtendedKeyCodeForChar(aChar);
-        if (vk != java.awt.event.KeyEvent.VK_UNDEFINED) {
+        int vk = j86.j86.java.awt.event.KeyEvent.getExtendedKeyCodeForChar(aChar);
+        if (vk != j86.j86.java.awt.event.KeyEvent.VK_UNDEFINED) {
             setDisplayedMnemonic(vk);
         }
     }
@@ -885,8 +885,8 @@ public class JLabel extends JComponent implements SwingConstants, Accessible
      * This is overridden to return false if the current Icon's Image is
      * not equal to the passed in Image <code>img</code>.
      *
-     * @see     java.awt.image.ImageObserver
-     * @see     java.awt.Component#imageUpdate(java.awt.Image, int, int, int, int, int)
+     * @see     j86.j86.j86.java.awt.image.ImageObserver
+     * @see     j86.java.awt.Component#imageUpdate(java.awt.Image, int, int, int, int, int)
      */
     public boolean imageUpdate(Image img, int infoflags,
                                int x, int y, int w, int h) {
@@ -1065,8 +1065,8 @@ public class JLabel extends JComponent implements SwingConstants, Accessible
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     @SuppressWarnings("serial")
     protected class AccessibleJLabel extends AccessibleJComponent
@@ -1601,9 +1601,9 @@ public class JLabel extends JComponent implements SwingConstants, Accessible
 
             /**
              * Returns a key binding for this object.  The value returned is an
-             * java.lang.Object which must be cast to appropriate type depending
+             * j86.java.lang.Object which must be cast to appropriate type depending
              * on the underlying implementation of the key.  For example, if the
-             * Object returned is a javax.swing.KeyStroke, the user of this
+             * Object returned is a j86.javax.swing.KeyStroke, the user of this
              * method should do the following:
              * <nf><code>
              * Component c = <get the component that has the key bindings>
@@ -1611,8 +1611,8 @@ public class JLabel extends JComponent implements SwingConstants, Accessible
              * AccessibleKeyBinding akb = ac.getAccessibleKeyBinding();
              * for (int i = 0; i < akb.getAccessibleKeyBindingCount(); i++) {
              *     Object o = akb.getAccessibleKeyBinding(i);
-             *     if (o instanceof javax.swing.KeyStroke) {
-             *         javax.swing.KeyStroke keyStroke = (javax.swing.KeyStroke)o;
+             *     if (o instanceof j86.javax.swing.KeyStroke) {
+             *         j86.javax.swing.KeyStroke keyStroke = (javax.swing.KeyStroke)o;
              *         <do something with the key binding>
              *     }
              * }
@@ -1624,7 +1624,7 @@ public class JLabel extends JComponent implements SwingConstants, Accessible
              * out of bounds
              * @see #getAccessibleKeyBindingCount
              */
-            public java.lang.Object getAccessibleKeyBinding(int i) {
+            public j86.java.lang.Object getAccessibleKeyBinding(int i) {
                 if (i != 0) {
                     throw new IllegalArgumentException();
                 }

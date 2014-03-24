@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.swing.filechooser;
+package j86.j86.javax.swing.filechooser;
 
-import java.io.File;
-import java.util.Locale;
+import j86.java.io.File;
+import j86.java.util.Locale;
 
 /**
  * An implementation of {@code FileFilter} that filters using a
@@ -44,9 +44,9 @@ import java.util.Locale;
  * </pre>
  *
  * @see FileFilter
- * @see javax.swing.JFileChooser#setFileFilter
- * @see javax.swing.JFileChooser#addChoosableFileFilter
- * @see javax.swing.JFileChooser#getFileFilter
+ * @see j86.javax.swing.JFileChooser#setFileFilter
+ * @see j86.javax.swing.JFileChooser#addChoosableFileFilter
+ * @see j86.javax.swing.JFileChooser#getFileFilter
  *
  * @since 1.6
  */
@@ -106,7 +106,7 @@ public final class FileNameExtensionFilter extends FileFilter {
             // NOTE: we tested implementations using Maps, binary search
             // on a sorted list and this implementation. All implementations
             // provided roughly the same speed, most likely because of
-            // overhead associated with java.io.File. Therefor we've stuck
+            // overhead associated with j86.java.io.File. Therefor we've stuck
             // with the simple lightweight approach.
             String fileName = f.getName();
             int i = fileName.lastIndexOf('.');
@@ -153,6 +153,6 @@ public final class FileNameExtensionFilter extends FileFilter {
      */
     public String toString() {
         return super.toString() + "[description=" + getDescription() +
-            " extensions=" + java.util.Arrays.asList(getExtensions()) + "]";
+            " extensions=" + j86.java.util.Arrays.asList(getExtensions()) + "]";
     }
 }

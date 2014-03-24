@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.security;
+package j86.java.security;
 
-import java.io.*;
+import j86.java.io.*;
 
 /**
  * This class is used to represent an Identity that can also digitally
@@ -40,9 +40,9 @@ import java.io.*;
  * @author Benjamin Renaud
  *
  * @deprecated This class is no longer used. Its functionality has been
- * replaced by {@code java.security.KeyStore}, the
- * {@code java.security.cert} package, and
- * {@code java.security.Principal}.
+ * replaced by {@code j86.java.security.KeyStore}, the
+ * {@code j86.j86.java.security.cert} package, and
+ * {@code j86.java.security.Principal}.
  */
 @Deprecated
 public abstract class Signer extends Identity {

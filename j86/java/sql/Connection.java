@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.sql;
+package j86.java.sql;
 
-import java.util.Properties;
-import java.util.concurrent.Executor;
+import j86.java.util.Properties;
+import j86.j86.java.util.concurrent.Executor;
 
 /**
  * <P>A connection (session) with a specific
@@ -58,8 +58,8 @@ import java.util.concurrent.Executor;
  * class indicated.  If there is no entry, the UDT will be mapped using the
  * standard mapping.
  * <p>
- * A user may create a new type map, which is a <code>java.util.Map</code>
- * object, make an entry in it, and pass it to the <code>java.sql</code>
+ * A user may create a new type map, which is a <code>j86.java.util.Map</code>
+ * object, make an entry in it, and pass it to the <code>j86.java.sql</code>
  * methods that can perform custom mapping.  In this case, the method
  * will use the given type map instead of the one associated with
  * the connection.
@@ -71,7 +71,7 @@ import java.util.concurrent.Executor;
  * </code> object <code>con</code>, inserts the entry into it, and then sets
  * the type map with the new entry as the connection's type map.
  * <pre>
- *      java.util.Map map = con.getTypeMap();
+ *      j86.java.util.Map map = con.getTypeMap();
  *      map.put("mySchemaName.ATHLETES", Class.forName("Athletes"));
  *      con.setTypeMap(map);
  * </pre>
@@ -617,7 +617,7 @@ public interface Connection  extends Wrapper, AutoCloseable {
      *      myMap.put("mySchemaName.ATHLETES", Athletes.class);
      *      con.setTypeMap(myMap);
      * </pre>
-     * @return the <code>java.util.Map</code> object associated
+     * @return the <code>j86.java.util.Map</code> object associated
      *         with this <code>Connection</code> object
      * @exception SQLException if a database access error occurs
      * or this method is called on a closed connection
@@ -626,7 +626,7 @@ public interface Connection  extends Wrapper, AutoCloseable {
      * @since 1.2
      * @see #setTypeMap
      */
-    java.util.Map<String,Class<?>> getTypeMap() throws SQLException;
+    j86.java.util.Map<String,Class<?>> getTypeMap() throws SQLException;
 
     /**
      * Installs the given <code>TypeMap</code> object as the type map for
@@ -642,19 +642,19 @@ public interface Connection  extends Wrapper, AutoCloseable {
      *      myMap.put("mySchemaName.ATHLETES", Athletes.class);
      *      con.setTypeMap(myMap);
      * </pre>
-     * @param map the <code>java.util.Map</code> object to install
+     * @param map the <code>j86.java.util.Map</code> object to install
      *        as the replacement for this <code>Connection</code>
      *        object's default type map
      * @exception SQLException if a database access error occurs, this
      * method is called on a closed connection or
-     *        the given parameter is not a <code>java.util.Map</code>
+     *        the given parameter is not a <code>j86.java.util.Map</code>
      *        object
      * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
      * this method
      * @since 1.2
      * @see #getTypeMap
      */
-    void setTypeMap(java.util.Map<String,Class<?>> map) throws SQLException;
+    void setTypeMap(j86.java.util.Map<String,Class<?>> map) throws SQLException;
 
     //--------------------------JDBC 3.0-----------------------------
 
@@ -1120,7 +1120,7 @@ public interface Connection  extends Wrapper, AutoCloseable {
          * is less then 0
          * @since 1.6
          *
-         * @see java.sql.DatabaseMetaData#getClientInfoProperties
+         * @see j86.java.sql.DatabaseMetaData#getClientInfoProperties
          */
          boolean isValid(int timeout) throws SQLException;
 
@@ -1202,7 +1202,7 @@ public interface Connection  extends Wrapper, AutoCloseable {
      *
      * @param properties                the list of client info properties to set
      * <p>
-     * @see java.sql.Connection#setClientInfo(String, String) setClientInfo(String, String)
+     * @see j86.java.sql.Connection#setClientInfo(String, String) setClientInfo(String, String)
      * @since 1.6
      * <p>
      * @throws SQLClientInfoException if the database server returns an error while
@@ -1233,7 +1233,7 @@ public interface Connection  extends Wrapper, AutoCloseable {
          * <p>
          * @since 1.6
          *
-         * @see java.sql.DatabaseMetaData#getClientInfoProperties
+         * @see j86.java.sql.DatabaseMetaData#getClientInfoProperties
          */
          String getClientInfo(String name)
                 throws SQLException;
@@ -1266,7 +1266,7 @@ public interface Connection  extends Wrapper, AutoCloseable {
   * <p>
   * <b>Note: </b>The JDBC driver is responsible for mapping the elements
   * <code>Object</code> array to the default JDBC SQL type defined in
-  * java.sql.Types for the given class of <code>Object</code>. The default
+  * j86.java.sql.Types for the given class of <code>Object</code>. The default
   * mapping is specified in Appendix B of the JDBC specification.  If the
   * resulting JDBC type is not the appropriate type for the given typeName then
   * it is implementation defined whether an <code>SQLException</code> is
@@ -1361,12 +1361,12 @@ throws SQLException;
      * <code>SecurityManager</code> exists and its
      * <code>checkPermission</code> method denies calling <code>abort</code>,
      * this method throws a
-     * <code>java.lang.SecurityException</code>.
+     * <code>j86.java.lang.SecurityException</code>.
      * @param executor  The <code>Executor</code>  implementation which will
      * be used by <code>abort</code>.
-     * @throws java.sql.SQLException if a database access error occurs or
+     * @throws j86.java.sql.SQLException if a database access error occurs or
      * the {@code executor} is {@code null},
-     * @throws java.lang.SecurityException if a security manager exists and its
+     * @throws j86.java.lang.SecurityException if a security manager exists and its
      *    <code>checkPermission</code> method denies calling <code>abort</code>
      * @see SecurityManager#checkPermission
      * @see Executor
@@ -1437,7 +1437,7 @@ throws SQLException;
      * <code>SecurityManager</code> exists and its
      * <code>checkPermission</code> method denies calling
      * <code>setNetworkTimeout</code>, this method throws a
-     * <code>java.lang.SecurityException</code>.
+     * <code>j86.java.lang.SecurityException</code>.
      *
      * @param executor  The <code>Executor</code>  implementation which will
      * be used by <code>setNetworkTimeout</code>.
@@ -1448,11 +1448,11 @@ throws SQLException;
      * timeout period expires before the operation
      * completes, a SQLException will be thrown.
      * A value of 0 indicates that there is not timeout for database operations.
-     * @throws java.sql.SQLException if a database access error occurs, this
+     * @throws j86.java.sql.SQLException if a database access error occurs, this
      * method is called on a closed connection,
      * the {@code executor} is {@code null},
      * or the value specified for <code>seconds</code> is less than 0.
-     * @throws java.lang.SecurityException if a security manager exists and its
+     * @throws j86.java.lang.SecurityException if a security manager exists and its
      *    <code>checkPermission</code> method denies calling
      * <code>setNetworkTimeout</code>.
      * @exception SQLFeatureNotSupportedException if the JDBC driver does not support

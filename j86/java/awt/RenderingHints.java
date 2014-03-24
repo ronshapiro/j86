@@ -23,25 +23,25 @@
  * questions.
  */
 
-package java.awt;
+package j86.java.awt;
 
-import java.util.Map;
-import java.util.Set;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Iterator;
-import sun.awt.SunHints;
-import java.lang.ref.WeakReference;
+import j86.java.util.Map;
+import j86.java.util.Set;
+import j86.java.util.Collection;
+import j86.java.util.Collections;
+import j86.java.util.HashMap;
+import j86.java.util.Iterator;
+import j86.sun.awt.SunHints;
+import j86.j86.java.lang.ref.WeakReference;
 
 /**
  * The {@code RenderingHints} class defines and manages collections of
  * keys and associated values which allow an application to provide input
  * into the choice of algorithms used by other classes which perform
  * rendering and image manipulation services.
- * The {@link java.awt.Graphics2D} class, and classes that implement
- * {@link java.awt.image.BufferedImageOp} and
- * {@link java.awt.image.RasterOp} all provide methods to get and
+ * The {@link j86.java.awt.Graphics2D} class, and classes that implement
+ * {@link j86.j86.j86.java.awt.image.BufferedImageOp} and
+ * {@link j86.j86.j86.java.awt.image.RasterOp} all provide methods to get and
  * possibly to set individual or groups of {@code RenderingHints}
  * keys and their associated values.
  * When those implementations perform any rendering or image manipulation
@@ -62,7 +62,7 @@ import java.lang.ref.WeakReference;
  * have little control over dithering when antialiasing is on.
  * The full set of supported keys and hints may also vary by destination
  * since runtimes may use different underlying modules to render to
- * the screen, or to {@link java.awt.image.BufferedImage} objects,
+ * the screen, or to {@link j86.j86.j86.java.awt.image.BufferedImage} objects,
  * or while printing.
  * <p>
  * Implementations are free to ignore the hints completely, but should
@@ -834,7 +834,7 @@ public class RenderingHints
      * Simply performing the most basic color format conversion to
      * store colors into a destination can potentially ignore a
      * difference in the calibration of the
-     * {@link java.awt.color.ColorSpace}
+     * {@link j86.j86.java.awt.color.ColorSpace}
      * of the source and destination or other factors such as the
      * linearity of the gamma correction.
      * Unless the source and destination {@code ColorSpace} are
@@ -1064,7 +1064,7 @@ public class RenderingHints
      * @exception ClassCastException if the key can not
      *            be cast to {@code RenderingHints.Key}
      * @exception IllegalArgumentException if the
-     *            {@link Key#isCompatibleValue(java.lang.Object)
+     *            {@link Key#isCompatibleValue(j86.java.lang.Object)
      *                   Key.isCompatibleValue()}
      *            method of the specified key returns false for the
      *            specified value
@@ -1252,7 +1252,7 @@ public class RenderingHints
      * contract of <code>Object.hashCode</code>.
      *
      * @return the hash code value for this <code>RenderingHints</code>.
-     * @see java.util.Map.Entry#hashCode()
+     * @see j86.java.util.Map.Entry#hashCode()
      * @see Object#hashCode()
      * @see Object#equals(Object)
      * @see #equals(Object)

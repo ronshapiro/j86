@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.util.zip;
+package j86.j86.java.util.zip;
 
 /**
  * An interface representing a data checksum.

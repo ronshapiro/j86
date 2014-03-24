@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.java.swing;
+package j86.com.sun.java.swing;
 
 /**
  * This class is preserved for backward compatibility with JDK 6.
  *
- * @deprecated Use {@link javax.swing.Painter} instead.
+ * @deprecated Use {@link j86.javax.swing.Painter} instead.
  */
 @Deprecated
-public interface Painter<T> extends javax.swing.Painter<T> {
+public interface Painter<T> extends j86.javax.swing.Painter<T> {
 }

@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.management.counter.perf;
+package j86.j86.j86.sun.management.counter.perf;
 
-import sun.management.counter.*;
-import java.nio.LongBuffer;
-import java.nio.ReadOnlyBufferException;
+import j86.j86.sun.management.counter.*;
+import j86.java.nio.LongBuffer;
+import j86.java.nio.ReadOnlyBufferException;
 
 public class PerfLongCounter extends AbstractCounter
        implements LongCounter {
@@ -55,7 +55,7 @@ public class PerfLongCounter extends AbstractCounter
     /**
      * Serialize as a snapshot object.
      */
-    protected Object writeReplace() throws java.io.ObjectStreamException {
+    protected Object writeReplace() throws j86.java.io.ObjectStreamException {
         return new LongCounterSnapshot(getName(),
                                        getUnits(),
                                        getVariability(),

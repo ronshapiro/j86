@@ -23,15 +23,15 @@
  * questions.
  */
 
-package javax.swing.plaf.metal;
+package j86.j86.j86.javax.swing.plaf.metal;
 
-import javax.swing.plaf.*;
-import javax.swing.*;
-import java.awt.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.javax.swing.*;
+import j86.java.awt.*;
 
-import sun.awt.AppContext;
-import sun.security.action.GetPropertyAction;
-import sun.swing.SwingUtilities2;
+import j86.sun.awt.AppContext;
+import j86.sun.security.action.GetPropertyAction;
+import j86.sun.swing.SwingUtilities2;
 
 /**
  * A concrete implementation of {@code MetalTheme} providing
@@ -80,8 +80,8 @@ import sun.swing.SwingUtilities2;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @see MetalLookAndFeel
  * @see MetalLookAndFeel#setCurrentTheme
@@ -181,7 +181,7 @@ public class DefaultMetalTheme extends MetalTheme {
     }
 
     static {
-        Object boldProperty = java.security.AccessController.doPrivileged(
+        Object boldProperty = j86.java.security.AccessController.doPrivileged(
             new GetPropertyAction("swing.boldMetal"));
         if (boldProperty == null || !"false".equals(boldProperty)) {
             PLAIN_FONTS = false;
@@ -387,8 +387,8 @@ public class DefaultMetalTheme extends MetalTheme {
          * that it is wrapped inside a <code>doPrivileged</code> call.
          */
         protected Font getPrivilegedFont(final int key) {
-            return java.security.AccessController.doPrivileged(
-                new java.security.PrivilegedAction<Font>() {
+            return j86.java.security.AccessController.doPrivileged(
+                new j86.java.security.PrivilegedAction<Font>() {
                     public Font run() {
                         return Font.getFont(getDefaultPropertyName(key));
                     }

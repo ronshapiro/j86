@@ -24,9 +24,9 @@
  */
 
 
-package com.sun.beans.editors;
+package j86.j86.com.sun.beans.editors;
 
-import java.beans.*;
+import j86.java.beans.*;
 
 public class StringEditor extends PropertyEditorSupport {
 

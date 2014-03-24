@@ -23,13 +23,13 @@
  * questions.
  */
 
-package com.sun.jndi.url.rmi;
+package j86.com.sun.jndi.url.rmi;
 
 
-import java.util.Hashtable;
+import j86.java.util.Hashtable;
 
-import javax.naming.*;
-import javax.naming.spi.ObjectFactory;
+import j86.javax.naming.*;
+import j86.j86.javax.naming.spi.ObjectFactory;
 
 
 /**

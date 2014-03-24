@@ -23,26 +23,26 @@
  * questions.
  */
 
-package sun.reflect.misc;
+package j86.j86.sun.reflect.misc;
 
-import java.security.AllPermission;
-import java.security.AccessController;
-import java.security.PermissionCollection;
-import java.security.SecureClassLoader;
-import java.security.PrivilegedExceptionAction;
-import java.security.CodeSource;
-import java.io.InputStream;
-import java.io.BufferedInputStream;
-import java.io.IOException;
-import java.net.URL;
-import java.net.URLConnection;
-import java.lang.reflect.Method;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.AccessibleObject;
-import java.lang.reflect.Modifier;
-import java.util.HashMap;
-import java.util.Map;
-import sun.misc.IOUtils;
+import j86.java.security.AllPermission;
+import j86.java.security.AccessController;
+import j86.java.security.PermissionCollection;
+import j86.java.security.SecureClassLoader;
+import j86.java.security.PrivilegedExceptionAction;
+import j86.java.security.CodeSource;
+import j86.java.io.InputStream;
+import j86.java.io.BufferedInputStream;
+import j86.java.io.IOException;
+import j86.java.net.URL;
+import j86.java.net.URLConnection;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.j86.j86.java.lang.reflect.AccessibleObject;
+import j86.j86.j86.java.lang.reflect.Modifier;
+import j86.java.util.HashMap;
+import j86.java.util.Map;
+import j86.sun.misc.IOUtils;
 
 
 class Trampoline {
@@ -59,7 +59,7 @@ class Trampoline {
         Class<?> clazz = m.getDeclaringClass();
         if (clazz.equals(AccessController.class) ||
             clazz.equals(Method.class) ||
-            clazz.getName().startsWith("java.lang.invoke."))
+            clazz.getName().startsWith("j86.j86.java.lang.invoke."))
             throw new InvocationTargetException(
                 new UnsupportedOperationException("invocation not supported"));
     }
@@ -76,7 +76,7 @@ class Trampoline {
  * Create a trampoline class.
  */
 public final class MethodUtil extends SecureClassLoader {
-    private static String MISC_PKG = "sun.reflect.misc.";
+    private static String MISC_PKG = "j86.j86.sun.reflect.misc.";
     private static String TRAMPOLINE = MISC_PKG + "Trampoline";
     private static Method bounce = getTrampoline();
 
@@ -361,7 +361,7 @@ public final class MethodUtil extends SecureClassLoader {
      */
     private Class<?> defineClass(String name, URL url) throws IOException {
         byte[] b = getBytes(url);
-        CodeSource cs = new CodeSource(null, (java.security.cert.Certificate[])null);
+        CodeSource cs = new CodeSource(null, (j86.j86.java.security.cert.Certificate[])null);
         if (!name.equals(TRAMPOLINE)) {
             throw new IOException("MethodUtil: bad name " + name);
         }
@@ -374,10 +374,10 @@ public final class MethodUtil extends SecureClassLoader {
      */
     private static byte[] getBytes(URL url) throws IOException {
         URLConnection uc = url.openConnection();
-        if (uc instanceof java.net.HttpURLConnection) {
-            java.net.HttpURLConnection huc = (java.net.HttpURLConnection) uc;
+        if (uc instanceof j86.java.net.HttpURLConnection) {
+            j86.java.net.HttpURLConnection huc = (java.net.HttpURLConnection) uc;
             int code = huc.getResponseCode();
-            if (code >= java.net.HttpURLConnection.HTTP_BAD_REQUEST) {
+            if (code >= j86.java.net.HttpURLConnection.HTTP_BAD_REQUEST) {
                 throw new IOException("open HTTP connection failed.");
             }
         }

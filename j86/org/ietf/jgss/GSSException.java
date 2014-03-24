@@ -23,7 +23,7 @@
  * questions.
  */
 
-package org.ietf.jgss;
+package j86.org.ietf.jgss;
 
 /**
  * This exception is thrown whenever a GSS-API error occurs, including

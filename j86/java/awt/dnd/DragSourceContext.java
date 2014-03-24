@@ -23,25 +23,25 @@
  * questions.
  */
 
-package java.awt.dnd;
+package j86.j86.java.awt.dnd;
 
-import java.awt.Component;
-import java.awt.Cursor;
-import java.awt.Image;
-import java.awt.Point;
+import j86.java.awt.Component;
+import j86.java.awt.Cursor;
+import j86.java.awt.Image;
+import j86.java.awt.Point;
 
-import java.awt.datatransfer.DataFlavor;
-import java.awt.datatransfer.Transferable;
-import java.awt.datatransfer.UnsupportedFlavorException;
+import j86.j86.java.awt.datatransfer.DataFlavor;
+import j86.j86.java.awt.datatransfer.Transferable;
+import j86.j86.java.awt.datatransfer.UnsupportedFlavorException;
 
-import java.awt.dnd.peer.DragSourceContextPeer;
+import j86.j86.j86.java.awt.dnd.peer.DragSourceContextPeer;
 
-import java.io.IOException;
-import java.io.ObjectOutputStream;
-import java.io.ObjectInputStream;
-import java.io.Serializable;
+import j86.java.io.IOException;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.Serializable;
 
-import java.util.TooManyListenersException;
+import j86.java.util.TooManyListenersException;
 
 /**
  * The <code>DragSourceContext</code> class is responsible for managing the

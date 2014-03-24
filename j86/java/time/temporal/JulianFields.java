@@ -59,17 +59,17 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package java.time.temporal;
+package j86.j86.java.time.temporal;
 
-import static java.time.temporal.ChronoField.EPOCH_DAY;
-import static java.time.temporal.ChronoUnit.DAYS;
-import static java.time.temporal.ChronoUnit.FOREVER;
+import static j86.j86.java.time.temporal.ChronoField.EPOCH_DAY;
+import static j86.j86.java.time.temporal.ChronoUnit.DAYS;
+import static j86.j86.java.time.temporal.ChronoUnit.FOREVER;
 
-import java.time.DateTimeException;
-import java.time.chrono.ChronoLocalDate;
-import java.time.chrono.Chronology;
-import java.time.format.ResolverStyle;
-import java.util.Map;
+import j86.java.time.DateTimeException;
+import j86.j86.java.time.chrono.ChronoLocalDate;
+import j86.j86.java.time.chrono.Chronology;
+import j86.j86.java.time.format.ResolverStyle;
+import j86.java.util.Map;
 
 /**
  * A set of date fields that provide access to Julian Days.

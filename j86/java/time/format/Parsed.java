@@ -59,45 +59,45 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package java.time.format;
+package j86.j86.java.time.format;
 
-import static java.time.temporal.ChronoField.AMPM_OF_DAY;
-import static java.time.temporal.ChronoField.CLOCK_HOUR_OF_AMPM;
-import static java.time.temporal.ChronoField.CLOCK_HOUR_OF_DAY;
-import static java.time.temporal.ChronoField.HOUR_OF_AMPM;
-import static java.time.temporal.ChronoField.HOUR_OF_DAY;
-import static java.time.temporal.ChronoField.MICRO_OF_DAY;
-import static java.time.temporal.ChronoField.MICRO_OF_SECOND;
-import static java.time.temporal.ChronoField.MILLI_OF_DAY;
-import static java.time.temporal.ChronoField.MILLI_OF_SECOND;
-import static java.time.temporal.ChronoField.MINUTE_OF_DAY;
-import static java.time.temporal.ChronoField.MINUTE_OF_HOUR;
-import static java.time.temporal.ChronoField.NANO_OF_DAY;
-import static java.time.temporal.ChronoField.NANO_OF_SECOND;
-import static java.time.temporal.ChronoField.SECOND_OF_DAY;
-import static java.time.temporal.ChronoField.SECOND_OF_MINUTE;
+import static j86.j86.java.time.temporal.ChronoField.AMPM_OF_DAY;
+import static j86.j86.java.time.temporal.ChronoField.CLOCK_HOUR_OF_AMPM;
+import static j86.j86.java.time.temporal.ChronoField.CLOCK_HOUR_OF_DAY;
+import static j86.j86.java.time.temporal.ChronoField.HOUR_OF_AMPM;
+import static j86.j86.java.time.temporal.ChronoField.HOUR_OF_DAY;
+import static j86.j86.java.time.temporal.ChronoField.MICRO_OF_DAY;
+import static j86.j86.java.time.temporal.ChronoField.MICRO_OF_SECOND;
+import static j86.j86.java.time.temporal.ChronoField.MILLI_OF_DAY;
+import static j86.j86.java.time.temporal.ChronoField.MILLI_OF_SECOND;
+import static j86.j86.java.time.temporal.ChronoField.MINUTE_OF_DAY;
+import static j86.j86.java.time.temporal.ChronoField.MINUTE_OF_HOUR;
+import static j86.j86.java.time.temporal.ChronoField.NANO_OF_DAY;
+import static j86.j86.java.time.temporal.ChronoField.NANO_OF_SECOND;
+import static j86.j86.java.time.temporal.ChronoField.SECOND_OF_DAY;
+import static j86.j86.java.time.temporal.ChronoField.SECOND_OF_MINUTE;
 
-import java.time.DateTimeException;
-import java.time.LocalDate;
-import java.time.LocalTime;
-import java.time.Period;
-import java.time.ZoneId;
-import java.time.chrono.ChronoLocalDate;
-import java.time.chrono.ChronoLocalDateTime;
-import java.time.chrono.ChronoZonedDateTime;
-import java.time.chrono.Chronology;
-import java.time.temporal.ChronoField;
-import java.time.temporal.TemporalAccessor;
-import java.time.temporal.TemporalField;
-import java.time.temporal.TemporalQueries;
-import java.time.temporal.TemporalQuery;
-import java.time.temporal.UnsupportedTemporalTypeException;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Map.Entry;
-import java.util.Objects;
-import java.util.Set;
+import j86.java.time.DateTimeException;
+import j86.java.time.LocalDate;
+import j86.java.time.LocalTime;
+import j86.java.time.Period;
+import j86.java.time.ZoneId;
+import j86.j86.java.time.chrono.ChronoLocalDate;
+import j86.j86.java.time.chrono.ChronoLocalDateTime;
+import j86.j86.java.time.chrono.ChronoZonedDateTime;
+import j86.j86.java.time.chrono.Chronology;
+import j86.j86.java.time.temporal.ChronoField;
+import j86.j86.java.time.temporal.TemporalAccessor;
+import j86.j86.java.time.temporal.TemporalField;
+import j86.j86.java.time.temporal.TemporalQueries;
+import j86.j86.java.time.temporal.TemporalQuery;
+import j86.j86.java.time.temporal.UnsupportedTemporalTypeException;
+import j86.java.util.HashMap;
+import j86.java.util.Iterator;
+import j86.java.util.Map;
+import j86.java.util.Map.Entry;
+import j86.java.util.Objects;
+import j86.java.util.Set;
 
 /**
  * A store of parsed data.

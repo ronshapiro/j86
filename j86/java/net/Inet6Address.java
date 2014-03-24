@@ -23,15 +23,15 @@
  * questions.
  */
 
-package java.net;
+package j86.java.net;
 
-import java.io.IOException;
-import java.io.InvalidObjectException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.ObjectStreamField;
-import java.util.Enumeration;
-import java.util.Arrays;
+import j86.java.io.IOException;
+import j86.java.io.InvalidObjectException;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectStreamField;
+import j86.java.util.Enumeration;
+import j86.java.util.Arrays;
 
 /**
  * This class represents an Internet Protocol version 6 (IPv6) address.
@@ -160,7 +160,7 @@ import java.util.Arrays;
  * tools on the system. Each interface may have multiple values, one for each
  * scope. If the scope is unspecified, then the default value used is zero.</li>
  * <li><i>As a string.</i> This must be the exact string that is returned by
- * {@link java.net.NetworkInterface#getName()} for the particular interface in
+ * {@link j86.java.net.NetworkInterface#getName()} for the particular interface in
  * question. When an Inet6Address is created in this way, the numeric scope-id
  * is determined at the time the object is created by querying the relevant
  * NetworkInterface.</li></ol>
@@ -576,11 +576,11 @@ class Inet6Address extends InetAddress {
     };
 
     private static final long FIELDS_OFFSET;
-    private static final sun.misc.Unsafe UNSAFE;
+    private static final j86.sun.misc.Unsafe UNSAFE;
 
     static {
         try {
-            sun.misc.Unsafe unsafe = sun.misc.Unsafe.getUnsafe();
+            j86.sun.misc.Unsafe unsafe = sun.misc.Unsafe.getUnsafe();
             FIELDS_OFFSET = unsafe.objectFieldOffset(
                     Inet6Address.class.getDeclaredField("holder6"));
             UNSAFE = unsafe;
@@ -896,7 +896,7 @@ class Inet6Address extends InetAddress {
      *
      * @return  {@code true} if the objects are the same; {@code false} otherwise.
      *
-     * @see     java.net.InetAddress#getAddress()
+     * @see     j86.java.net.InetAddress#getAddress()
      */
     @Override
     public boolean equals(Object obj) {

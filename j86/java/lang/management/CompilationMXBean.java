@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.lang.management;
+package j86.j86.java.lang.management;
 
 /**
  * The management interface for the compilation system of
@@ -41,14 +41,14 @@ package java.lang.management;
  * the compilation system within an MBeanServer is:
  * <blockquote>
  *  {@link ManagementFactory#COMPILATION_MXBEAN_NAME
- *         <tt>java.lang:type=Compilation</tt>}
+ *         <tt>j86.java.lang:type=Compilation</tt>}
  * </blockquote>
  *
  * It can be obtained by calling the
  * {@link PlatformManagedObject#getObjectName} method.
  *
  * @see ManagementFactory#getPlatformMXBeans(Class)
- * @see <a href="../../../javax/management/package-summary.html">
+ * @see <a href="../../../j86.javax.management/package-summary.html">
  *      JMX Specification.</a>
  * @see <a href="package-summary.html#examples">
  *      Ways to Access MXBeans</a>
@@ -62,7 +62,7 @@ public interface CompilationMXBean extends PlatformManagedObject {
      *
      * @return the name of the JIT compiler.
      */
-    public java.lang.String    getName();
+    public j86.java.lang.String    getName();
 
     /**
      * Tests if the Java virtual machine supports the monitoring of
@@ -92,7 +92,7 @@ public interface CompilationMXBean extends PlatformManagedObject {
      * measurements of the compilation time.
      *
      * @return Compilation time in milliseconds
-     * @throws java.lang.UnsupportedOperationException if the Java
+     * @throws j86.java.lang.UnsupportedOperationException if the Java
      * virtual machine does not support
      * this operation.
      *

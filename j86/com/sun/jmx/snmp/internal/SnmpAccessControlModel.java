@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.jmx.snmp.internal;
+package j86.j86.com.sun.jmx.snmp.internal;
 
-import com.sun.jmx.snmp.SnmpStatusException;
-import com.sun.jmx.snmp.SnmpOid;
-import com.sun.jmx.snmp.SnmpPdu;
+import j86.com.sun.jmx.snmp.SnmpStatusException;
+import j86.com.sun.jmx.snmp.SnmpOid;
+import j86.com.sun.jmx.snmp.SnmpPdu;
 /**
  * Access Control Model interface. Every access control model must implement this interface in order to be integrated in the engine based framework.
  * <p><b>This API is a Sun Microsystems internal API  and is subject

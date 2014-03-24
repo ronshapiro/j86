@@ -38,29 +38,29 @@
  *
  */
 
-package java.util;
+package j86.java.util;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.lang.ref.ReferenceQueue;
-import java.lang.ref.SoftReference;
-import java.lang.ref.WeakReference;
-import java.net.JarURLConnection;
-import java.net.URL;
-import java.net.URLConnection;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.security.PrivilegedActionException;
-import java.security.PrivilegedExceptionAction;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentMap;
-import java.util.jar.JarEntry;
-import java.util.spi.ResourceBundleControlProvider;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.j86.java.lang.ref.ReferenceQueue;
+import j86.j86.java.lang.ref.SoftReference;
+import j86.j86.java.lang.ref.WeakReference;
+import j86.java.net.JarURLConnection;
+import j86.java.net.URL;
+import j86.java.net.URLConnection;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.security.PrivilegedActionException;
+import j86.java.security.PrivilegedExceptionAction;
+import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.j86.java.util.concurrent.ConcurrentMap;
+import j86.j86.java.util.jar.JarEntry;
+import j86.j86.java.util.spi.ResourceBundleControlProvider;
 
-import sun.reflect.CallerSensitive;
-import sun.reflect.Reflection;
-import sun.util.locale.BaseLocale;
-import sun.util.locale.LocaleObjectCache;
+import j86.sun.reflect.CallerSensitive;
+import j86.sun.reflect.Reflection;
+import j86.j86.sun.util.locale.BaseLocale;
+import j86.j86.sun.util.locale.LocaleObjectCache;
 
 
 /**
@@ -109,7 +109,7 @@ import sun.util.locale.LocaleObjectCache;
  * <P>
  * When your program needs a locale-specific object, it loads
  * the <code>ResourceBundle</code> class using the
- * {@link #getBundle(java.lang.String, java.util.Locale) getBundle}
+ * {@link #getBundle(j86.java.lang.String, j86.java.util.Locale) getBundle}
  * method:
  * <blockquote>
  * <pre>
@@ -327,7 +327,7 @@ public abstract class ResourceBundle {
      * @return The base name of the resource bundle, as provided to and expected
      * by the {@code ResourceBundle.getBundle(...)} methods.
      *
-     * @see #getBundle(java.lang.String, java.util.Locale, java.lang.ClassLoader)
+     * @see #getBundle(j86.java.lang.String, j86.java.util.Locale, java.lang.ClassLoader)
      *
      * @since 1.8
      */
@@ -394,7 +394,7 @@ public abstract class ResourceBundle {
      * Gets a string for the given key from this resource bundle or one of its parents.
      * Calling this method is equivalent to calling
      * <blockquote>
-     * <code>(String) {@link #getObject(java.lang.String) getObject}(key)</code>.
+     * <code>(String) {@link #getObject(j86.java.lang.String) getObject}(key)</code>.
      * </blockquote>
      *
      * @param key the key for the desired string
@@ -411,7 +411,7 @@ public abstract class ResourceBundle {
      * Gets a string array for the given key from this resource bundle or one of its parents.
      * Calling this method is equivalent to calling
      * <blockquote>
-     * <code>(String[]) {@link #getObject(java.lang.String) getObject}(key)</code>.
+     * <code>(String[]) {@link #getObject(j86.java.lang.String) getObject}(key)</code>.
      * </blockquote>
      *
      * @param key the key for the desired string array
@@ -427,7 +427,7 @@ public abstract class ResourceBundle {
     /**
      * Gets an object for the given key from this resource bundle or one of its parents.
      * This method first tries to obtain the object from this resource bundle using
-     * {@link #handleGetObject(java.lang.String) handleGetObject}.
+     * {@link #handleGetObject(j86.java.lang.String) handleGetObject}.
      * If not successful, and the parent resource bundle is not null,
      * it calls the parent's <code>getObject</code> method.
      * If still not successful, it throws a MissingResourceException.
@@ -761,7 +761,7 @@ public abstract class ResourceBundle {
      * for a complete description of the search and instantiation strategy.
      *
      * @param baseName the base name of the resource bundle, a fully qualified class name
-     * @exception java.lang.NullPointerException
+     * @exception j86.java.lang.NullPointerException
      *     if <code>baseName</code> is <code>null</code>
      * @exception MissingResourceException
      *     if no resource bundle for the specified base name can be found
@@ -907,7 +907,7 @@ public abstract class ResourceBundle {
      * behavior</a>.
      *
      * <p><code>getBundle</code> uses the base name, the specified locale, and
-     * the default locale (obtained from {@link java.util.Locale#getDefault()
+     * the default locale (obtained from {@link j86.java.util.Locale#getDefault()
      * Locale.getDefault}) to generate a sequence of <a
      * name="candidates"><em>candidate bundle names</em></a>.  If the specified
      * locale's language, script, country, and variant are all empty strings,
@@ -981,7 +981,7 @@ public abstract class ResourceBundle {
      * path name from the candidate bundle name by replacing all "." characters
      * with "/" and appending the string ".properties".  It attempts to find a
      * "resource" with this name using {@link
-     * java.lang.ClassLoader#getResource(java.lang.String)
+     * j86.java.lang.ClassLoader#getResource(java.lang.String)
      * ClassLoader.getResource}.  (Note that a "resource" in the sense of
      * <code>getResource</code> has nothing to do with the contents of a
      * resource bundle, it is just a container of data, such as a file.)  If it
@@ -1013,7 +1013,7 @@ public abstract class ResourceBundle {
      * looking for a class and then a properties file, as described above).
      *
      * <p>Whenever it succeeds, it calls the previously instantiated resource
-     * bundle's {@link #setParent(java.util.ResourceBundle) setParent} method
+     * bundle's {@link #setParent(j86.java.util.ResourceBundle) setParent} method
      * with the new resource bundle.  This continues until the list of names
      * is exhausted or the current bundle already has a non-null parent.
      *
@@ -1067,7 +1067,7 @@ public abstract class ResourceBundle {
      * @param locale the locale for which a resource bundle is desired
      * @param loader the class loader from which to load the resource bundle
      * @return a resource bundle for the given base name and locale
-     * @exception java.lang.NullPointerException
+     * @exception j86.java.lang.NullPointerException
      *        if <code>baseName</code>, <code>locale</code>, or <code>loader</code> is <code>null</code>
      * @exception MissingResourceException
      *        if no resource bundle for the specified base name can be found
@@ -1922,8 +1922,8 @@ public abstract class ResourceBundle {
      * up only properties-based resources.
      *
      * <pre>
-     * import java.util.*;
-     * import static java.util.ResourceBundle.Control.*;
+     * import j86.java.util.*;
+     * import static j86.java.util.ResourceBundle.Control.*;
      * ...
      * ResourceBundle bundle =
      *   ResourceBundle.getBundle("MyResources", new Locale("fr", "CH"),
@@ -1942,7 +1942,7 @@ public abstract class ResourceBundle {
      * <p><b>Example 2</b>
      *
      * <p>The following is an example of loading XML-based bundles
-     * using {@link Properties#loadFromXML(java.io.InputStream)
+     * using {@link Properties#loadFromXML(j86.java.io.InputStream)
      * Properties.loadFromXML}.
      *
      * <pre>

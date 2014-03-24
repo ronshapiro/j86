@@ -23,13 +23,13 @@
  * questions.
  */
 
-package sun.security.x509;
+package j86.sun.security.x509;
 
-import java.io.IOException;
-import java.lang.reflect.Constructor;
-import java.util.Arrays;
+import j86.java.io.IOException;
+import j86.j86.j86.java.lang.reflect.Constructor;
+import j86.java.util.Arrays;
 
-import sun.security.util.*;
+import j86.sun.security.util.*;
 
 /**
  * This class represents the OtherName as required by the GeneralNames

@@ -23,18 +23,18 @@
  * questions.
  */
 
-package com.sun.security.sasl.gsskerb;
+package j86.j86.com.sun.security.sasl.gsskerb;
 
-import javax.security.sasl.*;
-import java.io.*;
-import java.util.Map;
-import java.util.logging.Level;
+import j86.javax.security.sasl.*;
+import j86.java.io.*;
+import j86.java.util.Map;
+import j86.j86.java.util.logging.Level;
 
 // JAAS
-import javax.security.auth.callback.*;
+import j86.j86.javax.security.auth.callback.*;
 
 // JGSS
-import org.ietf.jgss.*;
+import j86.org.ietf.jgss.*;
 
 /**
   * Implements the GSSAPI SASL server mechanism for Kerberos V5.
@@ -53,11 +53,11 @@ import org.ietf.jgss.*;
   *
   * Environment properties that affect behavior of implementation:
   *
-  * javax.security.sasl.qop
+  * j86.javax.security.sasl.qop
   * - quality of protection; list of auth, auth-int, auth-conf; default is "auth"
-  * javax.security.sasl.maxbuf
+  * j86.javax.security.sasl.maxbuf
   * - max receive buffer size; default is 65536
-  * javax.security.sasl.sendmaxbuffer
+  * j86.javax.security.sasl.sendmaxbuffer
   * - max send buffer size; default is 65536; (min with client max recv size)
   *
   * @author Rosanna Lee

@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.security.ec;
+package j86.sun.security.ec;
 
-import java.io.IOException;
+import j86.java.io.IOException;
 
-import java.security.*;
-import java.security.interfaces.*;
-import java.security.spec.*;
+import j86.java.security.*;
+import j86.j86.java.security.interfaces.*;
+import j86.j86.java.security.spec.*;
 
-import sun.security.util.*;
-import sun.security.x509.*;
+import j86.sun.security.util.*;
+import j86.sun.security.x509.*;
 
 /**
  * Key implementation for EC public keys.
@@ -120,7 +120,7 @@ public final class ECPublicKeyImpl extends X509Key implements ECPublicKey {
             + "\n  parameters: " + params;
     }
 
-    protected Object writeReplace() throws java.io.ObjectStreamException {
+    protected Object writeReplace() throws j86.java.io.ObjectStreamException {
         return new KeyRep(KeyRep.Type.PUBLIC,
                         getAlgorithm(),
                         getFormat(),

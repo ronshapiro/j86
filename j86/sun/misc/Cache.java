@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.misc;
+package j86.sun.misc;
 
-import java.util.Dictionary;
-import java.util.Enumeration;
-import java.util.NoSuchElementException;
+import j86.java.util.Dictionary;
+import j86.java.util.Enumeration;
+import j86.java.util.NoSuchElementException;
 
 /**
  * Caches the collision list.
@@ -70,9 +70,9 @@ class CacheEntry extends Ref {
  *      }
  * </pre>
  *
- * @see java.lang.Object#hashCode
- * @see java.lang.Object#equals
- * @see sun.misc.Ref
+ * @see j86.java.lang.Object#hashCode
+ * @see j86.java.lang.Object#equals
+ * @see j86.sun.misc.Ref
  */
 public
 class Cache extends Dictionary {

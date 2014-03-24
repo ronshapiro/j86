@@ -23,17 +23,17 @@
  * questions.
  */
 
-package java.security;
+package j86.java.security;
 
-import java.lang.reflect.*;
-import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
-import java.io.*;
-import java.net.URL;
-import sun.security.util.Debug;
-import sun.security.util.PropertyExpander;
+import j86.j86.j86.java.lang.reflect.*;
+import j86.java.util.*;
+import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.io.*;
+import j86.java.net.URL;
+import j86.sun.security.util.Debug;
+import j86.sun.security.util.PropertyExpander;
 
-import sun.security.jca.*;
+import j86.sun.security.jca.*;
 
 /**
  * <p>This class centralizes all security properties and common security
@@ -41,7 +41,7 @@ import sun.security.jca.*;
  *
  * <p>The default values of security properties are read from an
  * implementation-specific location, which is typically the properties file
- * {@code lib/security/java.security} in the Java installation directory.
+ * {@code lib/security/j86.java.security} in the Java installation directory.
  *
  * @author Benjamin Renaud
  */
@@ -52,7 +52,7 @@ public final class Security {
     private static final Debug sdebug =
                         Debug.getInstance("properties");
 
-    /* The java.security properties */
+    /* The j86.java.security properties */
     private static Properties props;
 
     // An element in the cache
@@ -81,7 +81,7 @@ public final class Security {
 
         // first load the system properties file
         // to determine the value of security.overridePropertiesFile
-        File propFile = securityPropFile("java.security");
+        File propFile = securityPropFile("j86.java.security");
         if (propFile.exists()) {
             InputStream is = null;
             try {
@@ -117,7 +117,7 @@ public final class Security {
                 ("security.overridePropertiesFile"))) {
 
             String extraPropFile = System.getProperty
-                                        ("java.security.properties");
+                                        ("j86.java.security.properties");
             if (extraPropFile != null && extraPropFile.startsWith("=")) {
                 overrideAll = true;
                 extraPropFile = extraPropFile.substring(1);
@@ -190,16 +190,16 @@ public final class Security {
     }
 
     /*
-     * Initialize to default values, if <java.home>/lib/java.security
+     * Initialize to default values, if <java.home>/lib/j86.java.security
      * is not found.
      */
     private static void initializeStatic() {
-        props.put("security.provider.1", "sun.security.provider.Sun");
-        props.put("security.provider.2", "sun.security.rsa.SunRsaSign");
-        props.put("security.provider.3", "com.sun.net.ssl.internal.ssl.Provider");
-        props.put("security.provider.4", "com.sun.crypto.provider.SunJCE");
-        props.put("security.provider.5", "sun.security.jgss.SunProvider");
-        props.put("security.provider.6", "com.sun.security.sasl.Provider");
+        props.put("security.provider.1", "j86.sun.security.provider.Sun");
+        props.put("security.provider.2", "j86.sun.security.rsa.SunRsaSign");
+        props.put("security.provider.3", "com.j86.sun.net.ssl.internal.ssl.Provider");
+        props.put("security.provider.4", "j86.com.sun.crypto.provider.SunJCE");
+        props.put("security.provider.5", "j86.sun.security.jgss.SunProvider");
+        props.put("security.provider.6", "j86.com.sun.security.sasl.Provider");
     }
 
     /**
@@ -327,7 +327,7 @@ public final class Security {
      * <p>A provider cannot be added if it is already installed.
      *
      * <p>If there is a security manager, the
-     * {@link java.lang.SecurityManager#checkSecurityAccess} method is called
+     * {@link j86.java.lang.SecurityManager#checkSecurityAccess} method is called
      * with the {@code "insertProvider"} permission target name to see if
      * it's ok to add a new provider. If this permission check is denied,
      * {@code checkSecurityAccess} is called again with the
@@ -346,12 +346,12 @@ public final class Security {
      * @throws  NullPointerException if provider is null
      * @throws  SecurityException
      *          if a security manager exists and its {@link
-     *          java.lang.SecurityManager#checkSecurityAccess} method
+     *          j86.java.lang.SecurityManager#checkSecurityAccess} method
      *          denies access to add a new provider
      *
      * @see #getProvider
      * @see #removeProvider
-     * @see java.security.SecurityPermission
+     * @see j86.java.security.SecurityPermission
      */
     public static synchronized int insertProviderAt(Provider provider,
             int position) {
@@ -370,7 +370,7 @@ public final class Security {
      * Adds a provider to the next position available.
      *
      * <p>If there is a security manager, the
-     * {@link java.lang.SecurityManager#checkSecurityAccess} method is called
+     * {@link j86.java.lang.SecurityManager#checkSecurityAccess} method is called
      * with the {@code "insertProvider"} permission target name to see if
      * it's ok to add a new provider. If this permission check is denied,
      * {@code checkSecurityAccess} is called again with the
@@ -386,12 +386,12 @@ public final class Security {
      * @throws  NullPointerException if provider is null
      * @throws  SecurityException
      *          if a security manager exists and its {@link
-     *          java.lang.SecurityManager#checkSecurityAccess} method
+     *          j86.java.lang.SecurityManager#checkSecurityAccess} method
      *          denies access to add a new provider
      *
      * @see #getProvider
      * @see #removeProvider
-     * @see java.security.SecurityPermission
+     * @see j86.java.security.SecurityPermission
      */
     public static int addProvider(Provider provider) {
         /*
@@ -428,7 +428,7 @@ public final class Security {
      *
      * @throws  SecurityException
      *          if a security manager exists and its {@link
-     *          java.lang.SecurityManager#checkSecurityAccess} method
+     *          j86.java.lang.SecurityManager#checkSecurityAccess} method
      *          denies
      *          access to remove the provider
      *
@@ -473,7 +473,7 @@ public final class Security {
      * specified selection criterion, or null if no such providers have been
      * installed. The returned providers are ordered
      * according to their
-     * {@linkplain #insertProviderAt(java.security.Provider, int) preference order}.
+     * {@linkplain #insertProviderAt(j86.java.security.Provider, int) preference order}.
      *
      * <p> A cryptographic service is always associated with a particular
      * algorithm or type. For example, a digital signature service is
@@ -525,7 +525,7 @@ public final class Security {
      *         if the filter is not in the required format
      * @throws NullPointerException if filter is null
      *
-     * @see #getProviders(java.util.Map)
+     * @see #getProviders(j86.java.util.Map)
      * @since 1.3
      */
     public static Provider[] getProviders(String filter) {
@@ -552,7 +552,7 @@ public final class Security {
      * specified* selection criteria, or null if no such providers have been
      * installed. The returned providers are ordered
      * according to their
-     * {@linkplain #insertProviderAt(java.security.Provider, int)
+     * {@linkplain #insertProviderAt(j86.java.security.Provider, int)
      * preference order}.
      *
      * <p>The selection criteria are represented by a map.
@@ -596,7 +596,7 @@ public final class Security {
      *         if the filter is not in the required format
      * @throws NullPointerException if filter is null
      *
-     * @see #getProviders(java.lang.String)
+     * @see #getProviders(j86.java.lang.String)
      * @since 1.3
      */
     public static Provider[] getProviders(Map<String,String> filter) {
@@ -663,7 +663,7 @@ public final class Security {
 
     /**
      * Return the Class object for the given engine type
-     * (e.g. "MessageDigest"). Works for Spis in the java.security package
+     * (e.g. "MessageDigest"). Works for Spis in the j86.java.security package
      * only.
      */
     private static Class<?> getSpiClass(String type) {
@@ -672,7 +672,7 @@ public final class Security {
             return clazz;
         }
         try {
-            clazz = Class.forName("java.security." + type + "Spi");
+            clazz = Class.forName("j86.java.security." + type + "Spi");
             spiMap.put(type, clazz);
             return clazz;
         } catch (ClassNotFoundException e) {
@@ -736,7 +736,7 @@ public final class Security {
      *
      * <p>First, if there is a security manager, its
      * {@code checkPermission}  method is called with a
-     * {@code java.security.SecurityPermission("getProperty."+key)}
+     * {@code j86.java.security.SecurityPermission("getProperty."+key)}
      * permission to see if it's ok to retrieve the specified
      * security property value..
      *
@@ -746,13 +746,13 @@ public final class Security {
      *
      * @throws  SecurityException
      *          if a security manager exists and its {@link
-     *          java.lang.SecurityManager#checkPermission} method
+     *          j86.java.lang.SecurityManager#checkPermission} method
      *          denies
      *          access to retrieve the specified security property value
      * @throws  NullPointerException is key is null
      *
      * @see #setProperty
-     * @see java.security.SecurityPermission
+     * @see j86.java.security.SecurityPermission
      */
     public static String getProperty(String key) {
         SecurityManager sm = System.getSecurityManager();
@@ -771,7 +771,7 @@ public final class Security {
      *
      * <p>First, if there is a security manager, its
      * {@code checkPermission} method is called with a
-     * {@code java.security.SecurityPermission("setProperty."+key)}
+     * {@code j86.java.security.SecurityPermission("setProperty."+key)}
      * permission to see if it's ok to set the specified
      * security property value.
      *
@@ -781,12 +781,12 @@ public final class Security {
      *
      * @throws  SecurityException
      *          if a security manager exists and its {@link
-     *          java.lang.SecurityManager#checkPermission} method
+     *          j86.java.lang.SecurityManager#checkPermission} method
      *          denies access to set the specified security property value
      * @throws  NullPointerException if key or datum is null
      *
      * @see #getProperty
-     * @see java.security.SecurityPermission
+     * @see j86.java.security.SecurityPermission
      */
     public static void setProperty(String key, String datum) {
         check("setProperty."+key);
@@ -815,7 +815,7 @@ public final class Security {
                     try {
                         /* Get the class via the bootstrap class loader. */
                         Class<?> cl = Class.forName(
-                            "java.lang.SecurityManager", false, null);
+                            "j86.java.lang.SecurityManager", false, null);
                         Field f = null;
                         boolean accessible = false;
 

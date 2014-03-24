@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing;
+package j86.javax.swing;
 
-import java.awt.Container;
-import javax.swing.plaf.ComponentUI;
-import sun.awt.AppContext;
+import j86.java.awt.Container;
+import j86.j86.javax.swing.plaf.ComponentUI;
+import j86.sun.awt.AppContext;
 
 /**
  * <code>LayoutStyle</code> provides information about how to position

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.sound.sampled;
+package j86.javax.sound.sampled;
 
 /**
  * The <code>LineEvent</code> class encapsulates information that a line
@@ -45,7 +45,7 @@ package javax.sound.sampled;
  *
  * @serial exclude
  */
-public class LineEvent extends java.util.EventObject {
+public class LineEvent extends j86.java.util.EventObject {
 
     // INSTANCE VARIABLES
 

@@ -28,13 +28,13 @@
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
 
-package sun.security.krb5.internal;
+package j86.j86.sun.security.krb5.internal;
 
-import sun.security.krb5.KrbException;
-import sun.security.util.*;
-import sun.security.krb5.Asn1Exception;
-import java.io.IOException;
-import sun.security.krb5.internal.util.KerberosString;
+import j86.sun.security.krb5.KrbException;
+import j86.sun.security.util.*;
+import j86.sun.security.krb5.Asn1Exception;
+import j86.java.io.IOException;
+import j86.j86.j86.sun.security.krb5.internal.util.KerberosString;
 
 /**
  * Implements the ASN.1 PA-DATA type.
@@ -303,7 +303,7 @@ public class PAData {
                             } else if (s2kparams.length == 0) {
                                 sb.append("empty\n");
                             } else {
-                                sb.append(new sun.misc.HexDumpEncoder()
+                                sb.append(new j86.sun.misc.HexDumpEncoder()
                                         .encodeBuffer(s2kparams));
                             }
                         }

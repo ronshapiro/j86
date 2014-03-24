@@ -23,17 +23,17 @@
  * questions.
  */
 
-package sun.awt;
+package j86.sun.awt;
 
-import java.awt.AWTEvent;
+import j86.java.awt.AWTEvent;
 
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.IdentityHashMap;
-import java.util.Map;
-import java.util.Set;
+import j86.java.util.Collections;
+import j86.java.util.HashSet;
+import j86.java.util.IdentityHashMap;
+import j86.java.util.Map;
+import j86.java.util.Set;
 
-import sun.util.logging.PlatformLogger;
+import j86.j86.sun.util.logging.PlatformLogger;
 
 /**
  * This class is to let AWT shutdown automatically when a user is done

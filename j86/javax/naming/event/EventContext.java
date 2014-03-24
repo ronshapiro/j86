@@ -23,11 +23,11 @@
  * questions.
  */
 
-package javax.naming.event;
+package j86.j86.javax.naming.event;
 
-import javax.naming.Name;
-import javax.naming.Context;
-import javax.naming.NamingException;
+import j86.javax.naming.Name;
+import j86.javax.naming.Context;
+import j86.javax.naming.NamingException;
 
 
 /**

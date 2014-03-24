@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.util;
+package j86.java.util;
 
-import java.io.InvalidObjectException;
+import j86.java.io.InvalidObjectException;
 
 /**
  * This class implements the <tt>Set</tt> interface, backed by a hash table
@@ -88,7 +88,7 @@ import java.io.InvalidObjectException;
 
 public class HashSet<E>
     extends AbstractSet<E>
-    implements Set<E>, Cloneable, java.io.Serializable
+    implements Set<E>, Cloneable, j86.java.io.Serializable
 {
     static final long serialVersionUID = -5024744406713321676L;
 
@@ -270,8 +270,8 @@ public class HashSet<E>
      *             (int), followed by all of its elements (each an Object) in
      *             no particular order.
      */
-    private void writeObject(java.io.ObjectOutputStream s)
-        throws java.io.IOException {
+    private void writeObject(j86.java.io.ObjectOutputStream s)
+        throws j86.java.io.IOException {
         // Write out any hidden serialization magic
         s.defaultWriteObject();
 
@@ -291,8 +291,8 @@ public class HashSet<E>
      * Reconstitute the <tt>HashSet</tt> instance from a stream (that is,
      * deserialize it).
      */
-    private void readObject(java.io.ObjectInputStream s)
-        throws java.io.IOException, ClassNotFoundException {
+    private void readObject(j86.java.io.ObjectInputStream s)
+        throws j86.java.io.IOException, ClassNotFoundException {
         // Read in any hidden serialization magic
         s.defaultReadObject();
 

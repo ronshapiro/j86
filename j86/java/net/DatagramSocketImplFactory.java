@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.net;
+package j86.java.net;
 
 /**
  * This interface defines a factory for datagram socket implementations. It
@@ -31,7 +31,7 @@ package java.net;
  * implementations.
  *
  * @author  Yingxian Wang
- * @see     java.net.DatagramSocket
+ * @see     j86.java.net.DatagramSocket
  * @since   1.3
  */
 public
@@ -40,7 +40,7 @@ interface DatagramSocketImplFactory {
      * Creates a new {@code DatagramSocketImpl} instance.
      *
      * @return  a new instance of {@code DatagramSocketImpl}.
-     * @see     java.net.DatagramSocketImpl
+     * @see     j86.java.net.DatagramSocketImpl
      */
     DatagramSocketImpl createDatagramSocketImpl();
 }

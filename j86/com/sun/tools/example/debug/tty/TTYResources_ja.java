@@ -32,18 +32,18 @@
  */
 
 
-package com.sun.tools.example.debug.tty;
+package j86.com.sun.tools.example.debug.tty;
 
 /**
  * <p> This class represents the <code>ResourceBundle</code>
  * for the following package(s):
  *
  * <ol>
- * <li> com.sun.tools.example.debug.tty
+ * <li> j86.com.sun.tools.example.debug.tty
  * </ol>
  *
  */
-public class TTYResources_ja extends java.util.ListResourceBundle {
+public class TTYResources_ja extends j86.java.util.ListResourceBundle {
 
 
     /**
@@ -57,7 +57,7 @@ public class TTYResources_ja extends java.util.ListResourceBundle {
     public Object[][] getContents() {
         Object[][] temp = new Object[][] {
         // NOTE: The value strings in this file containing "{0}" are
-        //       processed by the java.text.MessageFormat class.  Any
+        //       processed by the j86.java.text.MessageFormat class.  Any
         //       single quotes appearing in these strings need to be
         //       doubled up.
         //

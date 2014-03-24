@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.imageio.spi;
+package j86.j86.javax.imageio.spi;
 
-import javax.imageio.ImageTranscoder;
+import j86.javax.imageio.ImageTranscoder;
 
 /**
  * The service provider interface (SPI) for <code>ImageTranscoder</code>s.
@@ -33,7 +33,7 @@ import javax.imageio.ImageTranscoder;
  * for the <code>IIORegistry</code> class.
  *
  * @see IIORegistry
- * @see javax.imageio.ImageTranscoder
+ * @see j86.javax.imageio.ImageTranscoder
  *
  */
 public abstract class ImageTranscoderSpi extends IIOServiceProvider {

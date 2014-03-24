@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.awt;
+package j86.sun.awt;
 
-import java.awt.*;
+import j86.java.awt.*;
 
 /**
  * An interface for the EventQueue delegate.
@@ -48,12 +48,12 @@ public interface FwDispatcher {
 
     /**
      * Forwards a runnable to the delegate, which executes it on an appropriate thread.
-     * @param r - a runnable calling {@link EventQueue#dispatchEventImpl(java.awt.AWTEvent, Object)}
+     * @param r - a runnable calling {@link EventQueue#dispatchEventImpl(j86.java.awt.AWTEvent, Object)}
      */
     void scheduleDispatch(Runnable r);
 
     /**
-     * Delegates the {@link java.awt.EventQueue#createSecondaryLoop()} method
+     * Delegates the {@link j86.java.awt.EventQueue#createSecondaryLoop()} method
      */
     SecondaryLoop createSecondaryLoop();
 }

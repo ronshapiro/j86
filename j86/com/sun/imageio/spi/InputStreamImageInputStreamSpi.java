@@ -23,16 +23,16 @@
  * questions.
  */
 
-package com.sun.imageio.spi;
+package j86.com.sun.imageio.spi;
 
-import java.io.File;
-import java.io.InputStream;
-import java.io.IOException;
-import java.util.Locale;
-import javax.imageio.spi.ImageInputStreamSpi;
-import javax.imageio.stream.ImageInputStream;
-import javax.imageio.stream.FileCacheImageInputStream;
-import javax.imageio.stream.MemoryCacheImageInputStream;
+import j86.java.io.File;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
+import j86.java.util.Locale;
+import j86.j86.javax.imageio.spi.ImageInputStreamSpi;
+import j86.j86.javax.imageio.stream.ImageInputStream;
+import j86.j86.javax.imageio.stream.FileCacheImageInputStream;
+import j86.j86.javax.imageio.stream.MemoryCacheImageInputStream;
 
 public class InputStreamImageInputStreamSpi extends ImageInputStreamSpi {
 

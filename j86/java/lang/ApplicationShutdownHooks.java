@@ -22,16 +22,16 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.lang;
+package j86.java.lang;
 
-import java.util.*;
+import j86.java.util.*;
 
 /*
  * Class to track and run user level shutdown hooks registered through
  * <tt>{@link Runtime#addShutdownHook Runtime.addShutdownHook}</tt>.
  *
- * @see java.lang.Runtime#addShutdownHook
- * @see java.lang.Runtime#removeShutdownHook
+ * @see j86.java.lang.Runtime#addShutdownHook
+ * @see j86.java.lang.Runtime#removeShutdownHook
  */
 
 class ApplicationShutdownHooks {

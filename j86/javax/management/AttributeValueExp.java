@@ -23,12 +23,12 @@
  * questions.
  */
 
-package javax.management;
+package j86.javax.management;
 
 
-import com.sun.jmx.mbeanserver.Introspector;
-import java.io.IOException;
-import java.io.ObjectInputStream;
+import j86.com.sun.jmx.mbeanserver.Introspector;
+import j86.java.io.IOException;
+import j86.java.io.ObjectInputStream;
 
 /**
  * <p>Represents attributes used as arguments to relational constraints.

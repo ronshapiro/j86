@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.util.locale.provider;
+package j86.j86.j86.sun.util.locale.provider;
 
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.Locale;
-import java.util.Set;
+import j86.java.util.Collections;
+import j86.java.util.HashSet;
+import j86.java.util.Locale;
+import j86.java.util.Set;
 
 /**
  * FallbackProviderAdapter implementation.

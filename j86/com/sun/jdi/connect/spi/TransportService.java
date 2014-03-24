@@ -23,10 +23,10 @@
  * questions.
  */
 
-package com.sun.jdi.connect.spi;
+package j86.j86.j86.com.sun.jdi.connect.spi;
 
-import java.io.IOException;
-import com.sun.jdi.connect.TransportTimeoutException;
+import j86.java.io.IOException;
+import j86.j86.com.sun.jdi.connect.TransportTimeoutException;
 
 /**
  * A transport service for connections between a debugger and
@@ -35,7 +35,7 @@ import com.sun.jdi.connect.TransportTimeoutException;
  * <p> A transport service is a concrete subclass of this class
  * that has a zero-argument constructor and implements the abstract
  * methods specified below. It is the underlying service
- * used by a {@link com.sun.jdi.connect.Transport} for
+ * used by a {@link j86.j86.com.sun.jdi.connect.Transport} for
  * connections between a debugger and a target VM.
  *
  * <p> A transport service is used to establish a connection

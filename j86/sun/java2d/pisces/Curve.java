@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.java2d.pisces;
+package j86.j86.sun.java2d.pisces;
 
-import java.util.Iterator;
+import j86.java.util.Iterator;
 
 final class Curve {
 

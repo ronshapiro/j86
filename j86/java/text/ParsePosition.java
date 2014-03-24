@@ -36,7 +36,7 @@
  *
  */
 
-package java.text;
+package j86.java.text;
 
 
 /**
@@ -51,7 +51,7 @@ package java.text;
  * records the current position.
  *
  * @author      Mark Davis
- * @see         java.text.Format
+ * @see         j86.java.text.Format
  */
 
 public class ParsePosition {

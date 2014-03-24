@@ -23,24 +23,24 @@
  * questions.
  */
 
-package sun.java2d.pipe;
+package j86.j86.sun.java2d.pipe;
 
-import java.lang.ref.WeakReference;
-import java.awt.Rectangle;
-import java.awt.Shape;
-import java.awt.PaintContext;
-import java.awt.Transparency;
-import java.awt.image.ColorModel;
-import java.awt.image.Raster;
-import java.awt.image.WritableRaster;
-import java.awt.image.BufferedImage;
-import sun.awt.image.BufImgSurfaceData;
-import sun.java2d.SunGraphics2D;
-import sun.java2d.SurfaceData;
-import sun.java2d.loops.Blit;
-import sun.java2d.loops.MaskBlit;
-import sun.java2d.loops.CompositeType;
-import sun.java2d.loops.GraphicsPrimitiveMgr;
+import j86.j86.java.lang.ref.WeakReference;
+import j86.java.awt.Rectangle;
+import j86.java.awt.Shape;
+import j86.java.awt.PaintContext;
+import j86.java.awt.Transparency;
+import j86.j86.j86.java.awt.image.ColorModel;
+import j86.j86.j86.java.awt.image.Raster;
+import j86.j86.j86.java.awt.image.WritableRaster;
+import j86.j86.j86.java.awt.image.BufferedImage;
+import j86.j86.j86.sun.awt.image.BufImgSurfaceData;
+import j86.sun.java2d.SunGraphics2D;
+import j86.sun.java2d.SurfaceData;
+import j86.j86.sun.java2d.loops.Blit;
+import j86.j86.sun.java2d.loops.MaskBlit;
+import j86.j86.sun.java2d.loops.CompositeType;
+import j86.j86.sun.java2d.loops.GraphicsPrimitiveMgr;
 
 /**
  * This class implements a CompositePipe that renders path alpha tiles

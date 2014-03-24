@@ -22,9 +22,9 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.beans.decoder;
+package j86.j86.com.sun.beans.decoder;
 
-import java.beans.XMLDecoder;
+import j86.java.beans.XMLDecoder;
 
 /**
  * This class is intended to handle &lt;java&gt; element.

@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.util.calendar;
+package j86.j86.sun.util.calendar;
 
-import java.util.TimeZone;
+import j86.java.util.TimeZone;
 
 /**
  * The <code>BaseCalendar</code> provides basic calendar calculation
@@ -359,7 +359,7 @@ public abstract class BaseCalendar extends AbstractCalendar {
                             (BaseCalendar.Date) date);
     }
 
-    // public for java.util.GregorianCalendar
+    // public for j86.java.util.GregorianCalendar
     public long getFixedDate(int year, int month, int dayOfMonth, BaseCalendar.Date cache) {
         boolean isJan1 = month == JANUARY && dayOfMonth == 1;
 

@@ -26,20 +26,20 @@
 /*
  * $Id: DOMPGPData.java 1203846 2011-11-18 21:18:17Z mullan $
  */
-package org.jcp.xml.dsig.internal.dom;
+package j86.j86.org.jcp.xml.dsig.internal.dom;
 
-import java.util.*;
-import javax.xml.crypto.*;
-import javax.xml.crypto.dom.DOMCryptoContext;
-import javax.xml.crypto.dsig.*;
-import javax.xml.crypto.dsig.keyinfo.PGPData;
+import j86.java.util.*;
+import j86.javax.xml.crypto.*;
+import j86.j86.javax.xml.crypto.dom.DOMCryptoContext;
+import j86.j86.javax.xml.crypto.dsig.*;
+import j86.j86.j86.javax.xml.crypto.dsig.keyinfo.PGPData;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-import com.sun.org.apache.xml.internal.security.exceptions.Base64DecodingException;
-import com.sun.org.apache.xml.internal.security.utils.Base64;
+import j86.j86.com.sun.org.apache.xml.internal.security.exceptions.Base64DecodingException;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.Base64;
 
 /**
  * DOM-based implementation of PGPData.
@@ -164,7 +164,7 @@ public final class DOMPGPData extends DOMStructure implements PGPData {
                         keyPacket = Base64.decode(childElem);
                     } else {
                         other.add
-                            (new javax.xml.crypto.dom.DOMStructure(childElem));
+                            (new j86.j86.javax.xml.crypto.dom.DOMStructure(childElem));
                     }
                 } catch (Base64DecodingException bde) {
                     throw new MarshalException(bde);
@@ -218,7 +218,7 @@ public final class DOMPGPData extends DOMStructure implements PGPData {
 
         // create and append any elements
         for (XMLStructure extElem : externalElements) {
-            DOMUtils.appendChild(pdElem, ((javax.xml.crypto.dom.DOMStructure)
+            DOMUtils.appendChild(pdElem, ((j86.j86.javax.xml.crypto.dom.DOMStructure)
                 extElem).getNode());
         }
 

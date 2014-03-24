@@ -24,9 +24,9 @@
  */
 
 
-package javax.naming.directory;
+package j86.j86.javax.naming.directory;
 
-import javax.naming.NamingException;
+import j86.javax.naming.NamingException;
 
 /**
   * This exception is thrown when a method
@@ -42,12 +42,12 @@ import javax.naming.NamingException;
   * @author Rosanna Lee
   * @author Scott Seligman
   *
-  * @see javax.naming.Context#bind
+  * @see j86.javax.naming.Context#bind
   * @see DirContext#bind
-  * @see javax.naming.Context#rebind
+  * @see j86.javax.naming.Context#rebind
   * @see DirContext#rebind
   * @see DirContext#createSubcontext
-  * @see javax.naming.Context#createSubcontext
+  * @see j86.javax.naming.Context#createSubcontext
   * @see DirContext#modifyAttributes
   * @since 1.3
   */
@@ -64,7 +64,7 @@ public class SchemaViolationException extends NamingException {
      * Constructs a new instance of SchemaViolationException
      * using the explanation supplied. All other fields are set to null.
      * @param explanation Detail about this exception. Can be null.
-     * @see java.lang.Throwable#getMessage
+     * @see j86.java.lang.Throwable#getMessage
      */
     public SchemaViolationException(String explanation) {
         super(explanation);

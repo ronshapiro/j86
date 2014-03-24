@@ -24,10 +24,10 @@
  */
 
 
-package javax.print.attribute;
+package j86.j86.javax.print.attribute;
 
-import java.io.Serializable;
-import java.util.Vector;
+import j86.java.io.Serializable;
+import j86.java.util.Vector;
 
 /**
  * Class SetOfIntegerSyntax is an abstract base class providing the common

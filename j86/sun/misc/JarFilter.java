@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.misc;
+package j86.sun.misc;
 
-import java.io.File;
-import java.io.FilenameFilter;
+import j86.java.io.File;
+import j86.java.io.FilenameFilter;
 
 /**
  * <p>

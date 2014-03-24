@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.java.swing.plaf.windows;
+package j86.j86.com.sun.java.swing.plaf.windows;
 
-import javax.swing.JWindow;
-import java.awt.Window;
-import java.awt.Graphics;
+import j86.javax.swing.JWindow;
+import j86.java.awt.Window;
+import j86.java.awt.Graphics;
 
 /**
  * A class which tags a window with a particular semantic usage,

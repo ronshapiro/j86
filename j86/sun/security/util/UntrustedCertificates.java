@@ -22,17 +22,17 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.security.util;
+package j86.sun.security.util;
 
-import java.io.*;
-import java.security.AccessController;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-import java.security.PrivilegedAction;
-import java.security.cert.X509Certificate;
-import java.security.cert.CertificateException;
-import java.util.*;
-import sun.security.x509.X509CertImpl;
+import j86.java.io.*;
+import j86.java.security.AccessController;
+import j86.java.security.MessageDigest;
+import j86.java.security.NoSuchAlgorithmException;
+import j86.java.security.PrivilegedAction;
+import j86.j86.java.security.cert.X509Certificate;
+import j86.j86.java.security.cert.CertificateException;
+import j86.java.util.*;
+import j86.sun.security.x509.X509CertImpl;
 
 /**
  * A utility class to check if a certificate is untrusted. This is an internal

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.management.relation;
+package j86.j86.javax.management.relation;
 
 /**
  * This exception is raised when, in a role info, its minimum degree is greater

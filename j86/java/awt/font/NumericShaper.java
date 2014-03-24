@@ -23,14 +23,14 @@
  * questions.
  */
 
-package java.awt.font;
+package j86.j86.java.awt.font;
 
-import java.io.IOException;
-import java.io.ObjectOutputStream;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.EnumSet;
-import java.util.Set;
+import j86.java.io.IOException;
+import j86.java.io.ObjectOutputStream;
+import j86.java.util.Arrays;
+import j86.java.util.Comparator;
+import j86.java.util.EnumSet;
+import j86.java.util.Set;
 
 /**
  * The <code>NumericShaper</code> class is used to convert Latin-1 (European)
@@ -133,7 +133,7 @@ import java.util.Set;
  * @since 1.4
  */
 
-public final class NumericShaper implements java.io.Serializable {
+public final class NumericShaper implements j86.java.io.Serializable {
     /**
      * A {@code NumericShaper.Range} represents a Unicode range of a
      * script having its own decimal digits. For example, the {@link
@@ -1340,7 +1340,7 @@ public final class NumericShaper implements java.io.Serializable {
     /**
      * Returns a hash code for this shaper.
      * @return this shaper's hash code.
-     * @see java.lang.Object#hashCode
+     * @see j86.java.lang.Object#hashCode
      */
     public int hashCode() {
         int hash = mask;
@@ -1370,7 +1370,7 @@ public final class NumericShaper implements java.io.Serializable {
      * @return <code>true</code> if <code>o</code> is an instance
      *         of <code>NumericShaper</code> and shapes in the same way;
      *         <code>false</code> otherwise.
-     * @see java.lang.Object#equals(java.lang.Object)
+     * @see j86.java.lang.Object#equals(java.lang.Object)
      */
     public boolean equals(Object o) {
         if (o != null) {

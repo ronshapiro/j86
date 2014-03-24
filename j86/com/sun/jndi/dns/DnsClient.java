@@ -23,20 +23,20 @@
  * questions.
  */
 
-package com.sun.jndi.dns;
+package j86.com.sun.jndi.dns;
 
-import java.io.IOException;
-import java.net.DatagramSocket;
-import java.net.DatagramPacket;
-import java.net.InetAddress;
-import java.net.Socket;
-import javax.naming.*;
+import j86.java.io.IOException;
+import j86.java.net.DatagramSocket;
+import j86.java.net.DatagramPacket;
+import j86.java.net.InetAddress;
+import j86.java.net.Socket;
+import j86.javax.naming.*;
 
-import java.util.Collections;
-import java.util.Map;
-import java.util.HashMap;
-import java.util.Set;
-import java.util.HashSet;
+import j86.java.util.Collections;
+import j86.java.util.Map;
+import j86.java.util.HashMap;
+import j86.java.util.Set;
+import j86.java.util.HashSet;
 
 // Some of this code began life as part of sun.javaos.net.DnsClient
 // originally by sritchie@eng 1/96.  It was first hacked up for JNDI
@@ -104,7 +104,7 @@ public class DnsClient {
         this.retries = retries;
         try {
             udpSocket = new DatagramSocket();
-        } catch (java.net.SocketException e) {
+        } catch (j86.java.net.SocketException e) {
             NamingException ne = new ConfigurationException();
             ne.setRootCause(e);
             throw ne;
@@ -127,7 +127,7 @@ public class DnsClient {
                 : servers[i].substring(0, colon);
             try {
                 this.servers[i] = InetAddress.getByName(server);
-            } catch (java.net.UnknownHostException e) {
+            } catch (j86.java.net.UnknownHostException e) {
                 NamingException ne = new ConfigurationException(
                         "Unknown DNS server: " + server);
                 ne.setRootCause(e);
@@ -274,7 +274,7 @@ public class DnsClient {
                     // Use reflection to allow pre-1.4 compilation.
                     // This won't be needed much longer.
                     if (e.getClass().getName().equals(
-                            "java.net.PortUnreachableException")) {
+                            "j86.java.net.PortUnreachableException")) {
                         doNotRetry[i] = true;
                     }
                 } catch (NameNotFoundException e) {
@@ -635,14 +635,14 @@ public class DnsClient {
 class Tcp {
 
     private Socket sock;
-    java.io.InputStream in;
-    java.io.OutputStream out;
+    j86.java.io.InputStream in;
+    j86.java.io.OutputStream out;
 
     Tcp(InetAddress server, int port) throws IOException {
         sock = new Socket(server, port);
         sock.setTcpNoDelay(true);
-        out = new java.io.BufferedOutputStream(sock.getOutputStream());
-        in = new java.io.BufferedInputStream(sock.getInputStream());
+        out = new j86.java.io.BufferedOutputStream(sock.getOutputStream());
+        in = new j86.java.io.BufferedInputStream(sock.getInputStream());
     }
 
     void close() throws IOException {

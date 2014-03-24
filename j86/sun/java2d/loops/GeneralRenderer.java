@@ -27,20 +27,20 @@
  * @author Charlton Innovations, Inc.
  */
 
-package sun.java2d.loops;
+package j86.j86.sun.java2d.loops;
 
-import java.awt.image.WritableRaster;
-import java.awt.image.DataBuffer;
-import java.awt.image.ColorModel;
-import java.awt.geom.Path2D;
-import java.awt.geom.PathIterator;
-import java.awt.geom.AffineTransform;
-import sun.java2d.pipe.Region;
-import sun.java2d.pipe.SpanIterator;
-import sun.java2d.SunGraphics2D;
-import sun.java2d.SurfaceData;
-import sun.java2d.loops.ProcessPath;
-import sun.font.GlyphList;
+import j86.j86.j86.java.awt.image.WritableRaster;
+import j86.j86.j86.java.awt.image.DataBuffer;
+import j86.j86.j86.java.awt.image.ColorModel;
+import j86.j86.java.awt.geom.Path2D;
+import j86.j86.java.awt.geom.PathIterator;
+import j86.j86.java.awt.geom.AffineTransform;
+import j86.j86.sun.java2d.pipe.Region;
+import j86.j86.sun.java2d.pipe.SpanIterator;
+import j86.sun.java2d.SunGraphics2D;
+import j86.sun.java2d.SurfaceData;
+import j86.j86.sun.java2d.loops.ProcessPath;
+import j86.sun.font.GlyphList;
 
 /**
  * GeneralRenderer collection

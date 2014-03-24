@@ -26,24 +26,24 @@
 /*
  * $Id: ApacheTransform.java 1333869 2012-05-04 10:42:44Z coheigea $
  */
-package org.jcp.xml.dsig.internal.dom;
+package j86.j86.org.jcp.xml.dsig.internal.dom;
 
-import java.io.OutputStream;
-import java.security.InvalidAlgorithmParameterException;
-import java.security.spec.AlgorithmParameterSpec;
-import java.util.Set;
+import j86.java.io.OutputStream;
+import j86.java.security.InvalidAlgorithmParameterException;
+import j86.j86.java.security.spec.AlgorithmParameterSpec;
+import j86.java.util.Set;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 
-import com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
-import com.sun.org.apache.xml.internal.security.transforms.Transform;
-import com.sun.org.apache.xml.internal.security.transforms.Transforms;
+import j86.j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
+import j86.j86.com.sun.org.apache.xml.internal.security.transforms.Transform;
+import j86.j86.com.sun.org.apache.xml.internal.security.transforms.Transforms;
 
-import javax.xml.crypto.*;
-import javax.xml.crypto.dom.DOMCryptoContext;
-import javax.xml.crypto.dsig.*;
-import javax.xml.crypto.dsig.spec.TransformParameterSpec;
+import j86.javax.xml.crypto.*;
+import j86.j86.javax.xml.crypto.dom.DOMCryptoContext;
+import j86.j86.javax.xml.crypto.dsig.*;
+import j86.j86.j86.javax.xml.crypto.dsig.spec.TransformParameterSpec;
 
 /**
  * This is a wrapper/glue class which invokes the Apache XML-Security
@@ -55,11 +55,11 @@ import javax.xml.crypto.dsig.spec.TransformParameterSpec;
 public abstract class ApacheTransform extends TransformService {
 
     static {
-        com.sun.org.apache.xml.internal.security.Init.init();
+        j86.com.sun.org.apache.xml.internal.security.Init.init();
     }
 
-    private static java.util.logging.Logger log =
-        java.util.logging.Logger.getLogger("org.jcp.xml.dsig.internal.dom");
+    private static j86.j86.java.util.logging.Logger log =
+        j86.j86.java.util.logging.Logger.getLogger("j86.j86.org.jcp.xml.dsig.internal.dom");
     private Transform apacheTransform;
     protected Document ownerDoc;
     protected Element transformElem;
@@ -79,11 +79,11 @@ public abstract class ApacheTransform extends TransformService {
         if (parent == null) {
             throw new NullPointerException();
         }
-        if (!(parent instanceof javax.xml.crypto.dom.DOMStructure)) {
+        if (!(parent instanceof j86.j86.javax.xml.crypto.dom.DOMStructure)) {
             throw new ClassCastException("parent must be of type DOMStructure");
         }
         transformElem = (Element)
-            ((javax.xml.crypto.dom.DOMStructure) parent).getNode();
+            ((j86.j86.javax.xml.crypto.dom.DOMStructure) parent).getNode();
         ownerDoc = DOMUtils.getOwnerDocument(transformElem);
     }
 
@@ -97,11 +97,11 @@ public abstract class ApacheTransform extends TransformService {
         if (parent == null) {
             throw new NullPointerException();
         }
-        if (!(parent instanceof javax.xml.crypto.dom.DOMStructure)) {
+        if (!(parent instanceof j86.j86.javax.xml.crypto.dom.DOMStructure)) {
             throw new ClassCastException("parent must be of type DOMStructure");
         }
         transformElem = (Element)
-            ((javax.xml.crypto.dom.DOMStructure) parent).getNode();
+            ((j86.j86.javax.xml.crypto.dom.DOMStructure) parent).getNode();
         ownerDoc = DOMUtils.getOwnerDocument(transformElem);
     }
 
@@ -138,8 +138,8 @@ public abstract class ApacheTransform extends TransformService {
                 apacheTransform =
                     new Transform(ownerDoc, getAlgorithm(), transformElem.getChildNodes());
                 apacheTransform.setElement(transformElem, xc.getBaseURI());
-                if (log.isLoggable(java.util.logging.Level.FINE)) {
-                    log.log(java.util.logging.Level.FINE, "Created transform for algorithm: " +
+                if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                    log.log(j86.j86.java.util.logging.Level.FINE, "Created transform for algorithm: " +
                             getAlgorithm());
                 }
             } catch (Exception ex) {
@@ -159,17 +159,17 @@ public abstract class ApacheTransform extends TransformService {
 
         XMLSignatureInput in;
         if (data instanceof ApacheData) {
-            if (log.isLoggable(java.util.logging.Level.FINE)) {
-                log.log(java.util.logging.Level.FINE, "ApacheData = true");
+            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                log.log(j86.j86.java.util.logging.Level.FINE, "ApacheData = true");
             }
             in = ((ApacheData)data).getXMLSignatureInput();
         } else if (data instanceof NodeSetData) {
-            if (log.isLoggable(java.util.logging.Level.FINE)) {
-                log.log(java.util.logging.Level.FINE, "isNodeSet() = true");
+            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                log.log(j86.j86.java.util.logging.Level.FINE, "isNodeSet() = true");
             }
             if (data instanceof DOMSubTreeData) {
-                if (log.isLoggable(java.util.logging.Level.FINE)) {
-                    log.log(java.util.logging.Level.FINE, "DOMSubTreeData = true");
+                if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                    log.log(j86.j86.java.util.logging.Level.FINE, "DOMSubTreeData = true");
                 }
                 DOMSubTreeData subTree = (DOMSubTreeData)data;
                 in = new XMLSignatureInput(subTree.getRoot());
@@ -181,8 +181,8 @@ public abstract class ApacheTransform extends TransformService {
                 in = new XMLSignatureInput(nodeSet);
             }
         } else {
-            if (log.isLoggable(java.util.logging.Level.FINE)) {
-                log.log(java.util.logging.Level.FINE, "isNodeSet() = false");
+            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                log.log(j86.j86.java.util.logging.Level.FINE, "isNodeSet() = false");
             }
             try {
                 in = new XMLSignatureInput

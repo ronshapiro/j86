@@ -23,21 +23,21 @@
  * questions.
  */
 
-package sun.security.util;
+package j86.sun.security.util;
 
-import java.security.cert.CertPath;
-import java.security.cert.X509Certificate;
-import java.security.cert.CertificateException;
-import java.security.cert.CertificateFactory;
-import java.security.*;
-import java.io.*;
-import java.util.*;
-import java.util.jar.*;
+import j86.j86.java.security.cert.CertPath;
+import j86.j86.java.security.cert.X509Certificate;
+import j86.j86.java.security.cert.CertificateException;
+import j86.j86.java.security.cert.CertificateFactory;
+import j86.java.security.*;
+import j86.java.io.*;
+import j86.java.util.*;
+import j86.j86.java.util.jar.*;
 
-import sun.security.pkcs.*;
-import java.util.Base64;
+import j86.sun.security.pkcs.*;
+import j86.java.util.Base64;
 
-import sun.security.jca.Providers;
+import j86.sun.security.jca.Providers;
 
 public class SignatureFileVerifier {
 
@@ -397,7 +397,7 @@ public class SignatureFileVerifier {
 
         if (sfAttr != null) {
 
-            //sun.misc.HexDumpEncoder hex = new sun.misc.HexDumpEncoder();
+            //j86.sun.misc.HexDumpEncoder hex = new sun.misc.HexDumpEncoder();
             //hex.encodeBuffer(data, System.out);
 
             // go through all the attributes and process *-Digest entries

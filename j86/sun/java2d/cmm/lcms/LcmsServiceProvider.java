@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.java2d.cmm.lcms;
+package j86.j86.j86.sun.java2d.cmm.lcms;
 
-import sun.java2d.cmm.CMMServiceProvider;
-import sun.java2d.cmm.PCMM;
+import j86.j86.sun.java2d.cmm.CMMServiceProvider;
+import j86.j86.sun.java2d.cmm.PCMM;
 
 public final class LcmsServiceProvider extends CMMServiceProvider {
     @Override

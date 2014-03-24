@@ -23,21 +23,21 @@
  * questions.
  */
 
-package javax.swing.plaf.synth;
+package j86.j86.j86.javax.swing.plaf.synth;
 
-import java.beans.*;
-import javax.swing.*;
-import java.awt.Dimension;
-import java.awt.Graphics;
-import java.awt.Insets;
-import javax.swing.plaf.ComponentUI;
-import javax.swing.plaf.SeparatorUI;
-import javax.swing.plaf.UIResource;
-import javax.swing.plaf.DimensionUIResource;
+import j86.java.beans.*;
+import j86.javax.swing.*;
+import j86.java.awt.Dimension;
+import j86.java.awt.Graphics;
+import j86.java.awt.Insets;
+import j86.j86.javax.swing.plaf.ComponentUI;
+import j86.j86.javax.swing.plaf.SeparatorUI;
+import j86.j86.javax.swing.plaf.UIResource;
+import j86.j86.javax.swing.plaf.DimensionUIResource;
 
 /**
  * Provides the Synth L&amp;F UI delegate for
- * {@link javax.swing.JSeparator}.
+ * {@link j86.javax.swing.JSeparator}.
  *
  * @author Shannon Hickey
  * @author Joshua Outwater

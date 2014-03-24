@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.security.rsa;
+package j86.sun.security.rsa;
 
-import java.util.Map;
+import j86.java.util.Map;
 
 /**
  * Defines the entries of the SunRsaSign provider.
@@ -43,28 +43,28 @@ public final class SunRsaSignEntries {
         // main algorithms
 
         map.put("KeyFactory.RSA",
-                "sun.security.rsa.RSAKeyFactory");
+                "j86.sun.security.rsa.RSAKeyFactory");
         map.put("KeyPairGenerator.RSA",
-                "sun.security.rsa.RSAKeyPairGenerator");
+                "j86.sun.security.rsa.RSAKeyPairGenerator");
         map.put("Signature.MD2withRSA",
-                "sun.security.rsa.RSASignature$MD2withRSA");
+                "j86.sun.security.rsa.RSASignature$MD2withRSA");
         map.put("Signature.MD5withRSA",
-                "sun.security.rsa.RSASignature$MD5withRSA");
+                "j86.sun.security.rsa.RSASignature$MD5withRSA");
         map.put("Signature.SHA1withRSA",
-                "sun.security.rsa.RSASignature$SHA1withRSA");
+                "j86.sun.security.rsa.RSASignature$SHA1withRSA");
         map.put("Signature.SHA224withRSA",
-                "sun.security.rsa.RSASignature$SHA224withRSA");
+                "j86.sun.security.rsa.RSASignature$SHA224withRSA");
         map.put("Signature.SHA256withRSA",
-                "sun.security.rsa.RSASignature$SHA256withRSA");
+                "j86.sun.security.rsa.RSASignature$SHA256withRSA");
         map.put("Signature.SHA384withRSA",
-                "sun.security.rsa.RSASignature$SHA384withRSA");
+                "j86.sun.security.rsa.RSASignature$SHA384withRSA");
         map.put("Signature.SHA512withRSA",
-                "sun.security.rsa.RSASignature$SHA512withRSA");
+                "j86.sun.security.rsa.RSASignature$SHA512withRSA");
 
         // attributes for supported key classes
 
-        String rsaKeyClasses = "java.security.interfaces.RSAPublicKey" +
-                "|java.security.interfaces.RSAPrivateKey";
+        String rsaKeyClasses = "j86.j86.java.security.interfaces.RSAPublicKey" +
+                "|j86.j86.java.security.interfaces.RSAPrivateKey";
         map.put("Signature.MD2withRSA SupportedKeyClasses", rsaKeyClasses);
         map.put("Signature.MD5withRSA SupportedKeyClasses", rsaKeyClasses);
         map.put("Signature.SHA1withRSA SupportedKeyClasses", rsaKeyClasses);

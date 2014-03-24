@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.swing;
+package j86.sun.swing;
 
-import javax.swing.JComponent;
-import java.awt.Cursor;
+import j86.javax.swing.JComponent;
+import j86.java.awt.Cursor;
 
 /**
  * The interface by means of which the {@link JLightweightFrame} class

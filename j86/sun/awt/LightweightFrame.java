@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.awt;
+package j86.sun.awt;
 
-import java.awt.Container;
-import java.awt.Frame;
-import java.awt.Graphics;
-import java.awt.Image;
-import java.awt.MenuBar;
-import java.awt.MenuComponent;
-import java.awt.Toolkit;
-import java.awt.peer.FramePeer;
+import j86.java.awt.Container;
+import j86.java.awt.Frame;
+import j86.java.awt.Graphics;
+import j86.java.awt.Image;
+import j86.java.awt.MenuBar;
+import j86.java.awt.MenuComponent;
+import j86.java.awt.Toolkit;
+import j86.j86.java.awt.peer.FramePeer;
 
 /**
  * The class provides basic functionality for a lightweight frame
@@ -72,7 +72,7 @@ public abstract class LightweightFrame extends Frame {
 
     @Override public final void setTitle(String title) {}
     @Override public final void setIconImage(Image image) {}
-    @Override public final void setIconImages(java.util.List<? extends Image> icons) {}
+    @Override public final void setIconImages(j86.java.util.List<? extends Image> icons) {}
     @Override public final void setMenuBar(MenuBar mb) {}
     @Override public final void setResizable(boolean resizable) {}
     @Override public final void remove(MenuComponent m) {}
@@ -113,7 +113,7 @@ public abstract class LightweightFrame extends Frame {
      * Delegates the focus grab action to the client (embedding) application.
      * The method is called by the AWT grab machinery.
      *
-     * @see SunToolkit#grab(java.awt.Window)
+     * @see SunToolkit#grab(j86.java.awt.Window)
      */
     public abstract void grabFocus();
 
@@ -121,7 +121,7 @@ public abstract class LightweightFrame extends Frame {
      * Delegates the focus ungrab action to the client (embedding) application.
      * The method is called by the AWT grab machinery.
      *
-     * @see SunToolkit#ungrab(java.awt.Window)
+     * @see SunToolkit#ungrab(j86.java.awt.Window)
      */
     public abstract void ungrabFocus();
 }

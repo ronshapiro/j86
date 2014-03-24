@@ -23,12 +23,12 @@
  * questions.
  */
 
-package java.net;
+package j86.java.net;
 
-import java.io.FileDescriptor;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.nio.channels.FileChannel;
+import j86.java.io.FileDescriptor;
+import j86.java.io.FileOutputStream;
+import j86.java.io.IOException;
+import j86.j86.java.nio.channels.FileChannel;
 
 /**
  * This stream extends FileOutputStream to implement a
@@ -61,7 +61,7 @@ class SocketOutputStream extends FileOutputStream
     }
 
     /**
-     * Returns the unique {@link java.nio.channels.FileChannel FileChannel}
+     * Returns the unique {@link j86.j86.java.nio.channels.FileChannel FileChannel}
      * object associated with this file output stream. </p>
      *
      * The {@code getChannel} method of {@code SocketOutputStream}
@@ -108,7 +108,7 @@ class SocketOutputStream extends FileOutputStream
         try {
             socketWrite0(fd, b, off, len);
         } catch (SocketException se) {
-            if (se instanceof sun.net.ConnectionResetException) {
+            if (se instanceof j86.sun.net.ConnectionResetException) {
                 impl.setConnectionResetPending();
                 se = new SocketException("Connection reset");
             }

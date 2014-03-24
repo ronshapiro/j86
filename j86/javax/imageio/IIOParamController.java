@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.imageio;
+package j86.javax.imageio;
 
 /**
  * An interface to be implemented by objects that can determine the

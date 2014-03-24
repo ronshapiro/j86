@@ -23,19 +23,19 @@
  * questions.
  */
 
-package com.sun.management;
+package com.j86.sun.management;
 
-import java.lang.management.MemoryUsage;
-import javax.management.openmbean.CompositeData;
-import javax.management.openmbean.CompositeDataView;
-import javax.management.openmbean.CompositeType;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.List;
-import sun.management.GcInfoCompositeData;
-import sun.management.GcInfoBuilder;
+import j86.j86.java.lang.management.MemoryUsage;
+import j86.j86.javax.management.openmbean.CompositeData;
+import j86.j86.javax.management.openmbean.CompositeDataView;
+import j86.j86.javax.management.openmbean.CompositeType;
+import j86.java.util.Collection;
+import j86.java.util.Collections;
+import j86.java.util.HashMap;
+import j86.java.util.Map;
+import j86.java.util.List;
+import j86.sun.management.GcInfoCompositeData;
+import j86.sun.management.GcInfoBuilder;
 
 /**
  * Garbage collection information.  It contains the following
@@ -193,23 +193,23 @@ public class GcInfo implements CompositeData, CompositeDataView {
      * </tr>
      * <tr>
      *   <td>index</td>
-     *   <td><tt>java.lang.Long</tt></td>
+     *   <td><tt>j86.java.lang.Long</tt></td>
      * </tr>
      * <tr>
      *   <td>startTime</td>
-     *   <td><tt>java.lang.Long</tt></td>
+     *   <td><tt>j86.java.lang.Long</tt></td>
      * </tr>
      * <tr>
      *   <td>endTime</td>
-     *   <td><tt>java.lang.Long</tt></td>
+     *   <td><tt>j86.java.lang.Long</tt></td>
      * </tr>
      * <tr>
      *   <td>memoryUsageBeforeGc</td>
-     *   <td><tt>javax.management.openmbean.TabularData</tt></td>
+     *   <td><tt>j86.j86.javax.management.openmbean.TabularData</tt></td>
      * </tr>
      * <tr>
      *   <td>memoryUsageAfterGc</td>
-     *   <td><tt>javax.management.openmbean.TabularData</tt></td>
+     *   <td><tt>j86.j86.javax.management.openmbean.TabularData</tt></td>
      * </tr>
      * </table>
      * </blockquote>

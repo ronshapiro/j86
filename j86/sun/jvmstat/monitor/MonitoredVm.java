@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.jvmstat.monitor;
+package j86.sun.jvmstat.monitor;
 
-import java.util.List;
+import j86.java.util.List;
 
-import sun.jvmstat.monitor.event.VmListener;
+import j86.j86.sun.jvmstat.monitor.event.VmListener;
 
 /**
  * Interface for interacting with a monitorable Java Virtual Machine.
@@ -73,7 +73,7 @@ public interface MonitoredVm {
      * the name of each object matches the given pattern.
      *
      * @param patternString a string containing a pattern as described in
-     *                      {@link java.util.regex.Pattern}.
+     *                      {@link j86.j86.java.util.regex.Pattern}.
      * @return List<Monitor> - a List of {@link Monitor} objects that can be used to
      *                monitor the instrumentation objects whose names match
      *                the given pattern. If no instrumentation objects have`
@@ -81,7 +81,7 @@ public interface MonitoredVm {
      *                is returned.
      * @throws MonitorException Thrown if an error occurs while communicating
      *                          with the target Java Virtual Machine.
-     * @see java.util.regex.Pattern
+     * @see j86.j86.java.util.regex.Pattern
      */
     List<Monitor> findByPattern(String patternString) throws MonitorException;
 

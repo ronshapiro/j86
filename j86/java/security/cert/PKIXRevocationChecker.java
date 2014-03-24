@@ -22,17 +22,17 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.security.cert;
+package j86.j86.java.security.cert;
 
-import java.net.URI;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Map.Entry;
-import java.util.Set;
+import j86.java.net.URI;
+import j86.java.util.ArrayList;
+import j86.java.util.Collections;
+import j86.java.util.HashMap;
+import j86.java.util.HashSet;
+import j86.java.util.List;
+import j86.java.util.Map;
+import j86.java.util.Map.Entry;
+import j86.java.util.Set;
 
 /**
  * A {@code PKIXCertPathChecker} for checking the revocation status of

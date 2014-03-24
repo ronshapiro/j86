@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.net.www.protocol.http.logging;
+package j86.j86.j86.j86.sun.net.www.protocol.http.logging;
 
-import java.util.logging.LogRecord;
-import java.util.regex.*;
+import j86.j86.java.util.logging.LogRecord;
+import j86.j86.java.util.regex.*;
 
 /**
  * A Formatter to make the HTTP logs a bit more palatable to the developer
@@ -34,7 +34,7 @@ import java.util.regex.*;
  * commands and headers are easily spotted (i.e. on separate lines).
  * @author jccollet
  */
-public class HttpLogFormatter extends java.util.logging.SimpleFormatter {
+public class HttpLogFormatter extends j86.j86.java.util.logging.SimpleFormatter {
     // Pattern for MessageHeader data. Mostly pairs within curly brackets
     private static volatile Pattern pattern = null;
     // Pattern for Cookies
@@ -51,13 +51,13 @@ public class HttpLogFormatter extends java.util.logging.SimpleFormatter {
     public String format(LogRecord record) {
         String sourceClassName = record.getSourceClassName();
         if (sourceClassName == null ||
-            !(sourceClassName.startsWith("sun.net.www.protocol.http") ||
-              sourceClassName.startsWith("sun.net.www.http"))) {
+            !(sourceClassName.startsWith("j86.j86.j86.sun.net.www.protocol.http") ||
+              sourceClassName.startsWith("j86.j86.j86.sun.net.www.http"))) {
             return super.format(record);
         }
         String src = record.getMessage();
         StringBuilder buf = new StringBuilder("HTTP: ");
-        if (src.startsWith("sun.net.www.MessageHeader@")) {
+        if (src.startsWith("j86.j86.sun.net.www.MessageHeader@")) {
             // MessageHeader logs are composed of pairs within curly brackets
             // Let's extract them to make it more readable. That way we get one
             // header pair (name, value) per line. A lot easier to read.

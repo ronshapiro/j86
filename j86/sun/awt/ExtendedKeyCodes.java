@@ -1,9 +1,9 @@
-package sun.awt;
+package j86.sun.awt;
 
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.awt.event.KeyEvent;
+import j86.java.util.Collections;
+import j86.java.util.HashMap;
+import j86.java.util.HashSet;
+import j86.j86.java.awt.event.KeyEvent;
 
 public class ExtendedKeyCodes {
     /**

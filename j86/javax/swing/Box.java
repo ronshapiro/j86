@@ -24,14 +24,14 @@
  */
 
 
-package javax.swing;
+package j86.javax.swing;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.beans.ConstructorProperties;
-import java.util.Locale;
-import java.io.Serializable;
-import javax.accessibility.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.java.beans.ConstructorProperties;
+import j86.java.util.Locale;
+import j86.java.io.Serializable;
+import j86.javax.accessibility.*;
 
 /**
  * A lightweight container
@@ -69,8 +69,8 @@ import javax.accessibility.*;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @see BoxLayout
  *
@@ -299,8 +299,8 @@ public class Box extends JComponent implements Accessible {
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     @SuppressWarnings("serial")
     public static class Filler extends JComponent implements Accessible {

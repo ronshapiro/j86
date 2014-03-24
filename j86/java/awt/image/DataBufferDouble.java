@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.awt.image;
+package j86.j86.j86.java.awt.image;
 
-import static sun.java2d.StateTrackable.State.*;
+import static j86.sun.java2d.StateTrackable.State.*;
 
 /**
  * This class extends <code>DataBuffer</code> and stores data internally

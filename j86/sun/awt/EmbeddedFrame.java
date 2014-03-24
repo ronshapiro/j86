@@ -23,18 +23,18 @@
  * questions.
  */
 
-package sun.awt;
+package j86.sun.awt;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.awt.image.*;
-import java.awt.peer.*;
-import java.beans.PropertyChangeListener;
-import java.beans.PropertyChangeEvent;
-import java.util.Set;
-import java.awt.AWTKeyStroke;
-import java.applet.Applet;
-import sun.applet.AppletPanel;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.j86.j86.java.awt.image.*;
+import j86.j86.java.awt.peer.*;
+import j86.java.beans.PropertyChangeListener;
+import j86.java.beans.PropertyChangeEvent;
+import j86.java.util.Set;
+import j86.java.awt.AWTKeyStroke;
+import j86.java.applet.Applet;
+import j86.sun.applet.AppletPanel;
 
 /**
  * A generic container used for embedding Java components, usually applets.
@@ -311,7 +311,7 @@ public abstract class EmbeddedFrame extends Frame
      */
     public void setTitle(String title) {}
     public void setIconImage(Image image) {}
-    public void setIconImages(java.util.List<? extends Image> icons) {}
+    public void setIconImages(j86.java.util.List<? extends Image> icons) {}
     public void setMenuBar(MenuBar mb) {}
     public void setResizable(boolean resizable) {}
     public void remove(MenuComponent m) {}
@@ -380,7 +380,7 @@ public abstract class EmbeddedFrame extends Frame
      * </p>
      * @param x the new <i>x</i>-coordinate relative to the parent component
      * @param y the new <i>y</i>-coordinate relative to the parent component
-     * @see java.awt.Component#setLocation
+     * @see j86.java.awt.Component#setLocation
      * @see #getLocationPrivate
      * @see #setBoundsPrivate
      * @see #getBoundsPrivate
@@ -409,7 +409,7 @@ public abstract class EmbeddedFrame extends Frame
      * but getBounds() after setBoundsPrivate() may return unpredictable value.
      * </p>
      * @return a point indicating this embedded frame's top-left corner
-     * @see java.awt.Component#getLocation
+     * @see j86.java.awt.Component#getLocation
      * @see #setLocationPrivate
      * @see #setBoundsPrivate
      * @see #getBoundsPrivate
@@ -443,7 +443,7 @@ public abstract class EmbeddedFrame extends Frame
      * @param y the new <i>y</i>-coordinate relative to the parent component
      * @param width the new <code>width</code> of this embedded frame
      * @param height the new <code>height</code> of this embedded frame
-     * @see java.awt.Component#setBounds
+     * @see j86.java.awt.Component#setBounds
      * @see #setLocationPrivate
      * @see #getLocationPrivate
      * @see #getBoundsPrivate
@@ -475,7 +475,7 @@ public abstract class EmbeddedFrame extends Frame
      * but getBounds() after setBoundsPrivate() may return unpredictable value.
      * </p>
      * @return a rectangle indicating this embedded frame's bounds
-     * @see java.awt.Component#getBounds
+     * @see j86.java.awt.Component#getBounds
      * @see #setLocationPrivate
      * @see #getLocationPrivate
      * @see #setBoundsPrivate
@@ -550,14 +550,14 @@ public abstract class EmbeddedFrame extends Frame
         public void setModalBlocked(Dialog blocker, boolean blocked) {}
 
         /**
-         * @see java.awt.peer.ContainerPeer#restack
+         * @see j86.j86.java.awt.peer.ContainerPeer#restack
          */
         public void restack() {
             throw new UnsupportedOperationException();
         }
 
         /**
-         * @see java.awt.peer.ContainerPeer#isRestackSupported
+         * @see j86.j86.java.awt.peer.ContainerPeer#isRestackSupported
          */
         public boolean isRestackSupported() {
             return false;

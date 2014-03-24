@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.security.jgss.spnego;
+package j86.j86.sun.security.jgss.spnego;
 
-import com.sun.security.jgss.ExtendedGSSContext;
-import com.sun.security.jgss.InquireType;
-import java.io.*;
-import java.security.Provider;
-import org.ietf.jgss.*;
-import sun.security.jgss.*;
-import sun.security.jgss.spi.*;
-import sun.security.util.*;
+import com.j86.sun.security.jgss.ExtendedGSSContext;
+import com.j86.sun.security.jgss.InquireType;
+import j86.java.io.*;
+import j86.java.security.Provider;
+import j86.org.ietf.jgss.*;
+import j86.sun.security.jgss.*;
+import j86.j86.sun.security.jgss.spi.*;
+import j86.sun.security.util.*;
 
 /**
  * Implements the mechanism specific context class for SPNEGO
@@ -84,8 +84,8 @@ public class SpNegoContext implements GSSContextSpi {
 
     // debug property
     static final boolean DEBUG =
-        java.security.AccessController.doPrivileged(
-            new sun.security.action.GetBooleanAction
+        j86.java.security.AccessController.doPrivileged(
+            new j86.sun.security.action.GetBooleanAction
             ("sun.security.spnego.debug")).booleanValue();
 
     /**

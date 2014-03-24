@@ -23,16 +23,16 @@
  * questions.
  */
 
-package com.sun.jndi.rmi.registry;
+package j86.com.sun.jndi.rmi.registry;
 
 
-import java.util.Enumeration;
-import java.util.Hashtable;
+import j86.java.util.Enumeration;
+import j86.java.util.Hashtable;
 
-import javax.naming.*;
-import javax.naming.spi.*;
+import j86.javax.naming.*;
+import j86.j86.javax.naming.spi.*;
 
-import com.sun.jndi.url.rmi.rmiURLContextFactory;
+import j86.com.sun.jndi.url.rmi.rmiURLContextFactory;
 
 /**
  * A RegistryContextFactory takes an RMI registry reference, and

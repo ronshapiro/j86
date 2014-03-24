@@ -23,17 +23,17 @@
  * questions.
  */
 
-package com.sun.imageio.plugins.wbmp;
+package j86.com.sun.imageio.plugins.wbmp;
 
-import java.util.Locale;
-import javax.imageio.spi.ImageReaderSpi;
-import javax.imageio.stream.ImageInputStream;
-import javax.imageio.spi.IIORegistry;
-import javax.imageio.spi.ServiceRegistry;
-import java.io.IOException;
-import javax.imageio.ImageReader;
-import javax.imageio.IIOException;
-import com.sun.imageio.plugins.common.ReaderUtil;
+import j86.java.util.Locale;
+import j86.j86.javax.imageio.spi.ImageReaderSpi;
+import j86.j86.javax.imageio.stream.ImageInputStream;
+import j86.j86.javax.imageio.spi.IIORegistry;
+import j86.j86.javax.imageio.spi.ServiceRegistry;
+import j86.java.io.IOException;
+import j86.javax.imageio.ImageReader;
+import j86.javax.imageio.IIOException;
+import j86.com.sun.imageio.plugins.common.ReaderUtil;
 
 public class WBMPImageReaderSpi extends ImageReaderSpi {
 
@@ -41,7 +41,7 @@ public class WBMPImageReaderSpi extends ImageReaderSpi {
     private static final int MAX_WBMP_HEIGHT = 768;
 
     private static String [] writerSpiNames =
-        {"com.sun.imageio.plugins.wbmp.WBMPImageWriterSpi"};
+        {"j86.com.sun.imageio.plugins.wbmp.WBMPImageWriterSpi"};
     private static String[] formatNames = {"wbmp", "WBMP"};
     private static String[] entensions = {"wbmp"};
     private static String[] mimeType = {"image/vnd.wap.wbmp"};
@@ -54,14 +54,14 @@ public class WBMPImageReaderSpi extends ImageReaderSpi {
               formatNames,
               entensions,
               mimeType,
-              "com.sun.imageio.plugins.wbmp.WBMPImageReader",
+              "j86.com.sun.imageio.plugins.wbmp.WBMPImageReader",
               new Class[] { ImageInputStream.class },
               writerSpiNames,
               true,
               null, null, null, null,
               true,
               WBMPMetadata.nativeMetadataFormatName,
-              "com.sun.imageio.plugins.wbmp.WBMPMetadataFormat",
+              "j86.com.sun.imageio.plugins.wbmp.WBMPMetadataFormat",
               null, null);
     }
 

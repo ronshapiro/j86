@@ -23,15 +23,15 @@
  * questions.
  */
 
-package javax.swing.plaf.synth;
+package j86.j86.j86.javax.swing.plaf.synth;
 
-import javax.swing.*;
-import java.awt.*;
-import javax.swing.plaf.*;
+import j86.javax.swing.*;
+import j86.java.awt.*;
+import j86.j86.javax.swing.plaf.*;
 
 /**
  * Provides the Synth L&amp;F UI delegate for
- * {@link javax.swing.JRadioButtonMenuItem}.
+ * {@link j86.javax.swing.JRadioButtonMenuItem}.
  *
  * @author Georges Saab
  * @author David Karlton

@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.tools.javac;
+package j86.j86.sun.tools.javac;
 
-import sun.tools.java.*;
-import sun.tools.tree.Node;
-import sun.tools.java.Package;
+import j86.sun.tools.java.*;
+import j86.sun.tools.tree.Node;
+import j86.sun.tools.java.Package;
 
-import java.util.*;
-import java.io.*;
+import j86.java.util.*;
+import j86.java.io.*;
 
 /**
  * Main environment of the batch version of the Java compiler,
@@ -315,7 +315,7 @@ class BatchEnvironment extends Environment implements ErrorConsumer {
         // In order to implement this, we collect the current packages
         // (and prefixes) of all packages we have found so far.  These
         // will be exempt from the "exists" check in
-        // sun.tools.java.Imports#resolve().
+        // j86.sun.tools.java.Imports#resolve().
 
         exemptPackages = new HashSet(101);
 
@@ -337,32 +337,32 @@ class BatchEnvironment extends Environment implements ErrorConsumer {
             }
         }
 
-        // Before we go any further, we make sure java.lang is
+        // Before we go any further, we make sure j86.java.lang is
         // accessible and that it is not ambiguous.  These checks
         // are performed for "ordinary" packages in
-        // sun.tools.java.Imports#resolve().  The reason we perform
-        // them specially for java.lang is that we want to report
+        // j86.sun.tools.java.Imports#resolve().  The reason we perform
+        // them specially for j86.java.lang is that we want to report
         // the error once, and outside of any particular file.
 
-        // Check to see if java.lang is accessible.
+        // Check to see if j86.java.lang is accessible.
         if (!exemptPackages.contains(idJavaLang)) {
-            // Add java.lang to the set of exempt packages.
+            // Add j86.java.lang to the set of exempt packages.
             exemptPackages.add(idJavaLang);
 
             try {
                 if (!getPackage(idJavaLang).exists()) {
-                    // java.lang doesn't exist.
+                    // j86.java.lang doesn't exist.
                     error(0, "package.not.found.strong", idJavaLang);
                     return;
                 }
             } catch (IOException ee) {
                 // We got an IO exception checking to see if the package
-                // java.lang exists.
+                // j86.java.lang exists.
                 error(0, "io.exception.package", idJavaLang);
             }
         }
 
-        // Next we ensure that java.lang is not both a class and
+        // Next we ensure that j86.java.lang is not both a class and
         // a package.  (Fix for 4101529)
         //
         // This change has been backed out because, on WIN32, it
@@ -577,7 +577,7 @@ class BatchEnvironment extends Environment implements ErrorConsumer {
             error(0, "class.format", file.getPath(), e.getMessage());
             if (tracing) dtExit("loadFile: CLASS FORMAT ERROR " + file);
             return null;
-        } catch (java.io.EOFException e) {
+        } catch (j86.java.io.EOFException e) {
             // If we get an EOF while processing a class file, then
             // it has been truncated.  We let other I/O errors pass
             // through.  Fix for 4088443.

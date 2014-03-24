@@ -23,14 +23,14 @@
  * questions.
  */
 
-package com.sun.net.httpserver;
+package com.j86.j86.sun.net.httpserver;
 
-import java.util.*;
+import j86.java.util.*;
 
 /**
  * HTTP request and response headers are represented by this class which implements
- * the interface {@link java.util.Map}&lt;
- * {@link java.lang.String},{@link java.util.List}&lt;{@link java.lang.String}&gt;&gt;.
+ * the interface {@link j86.java.util.Map}&lt;
+ * {@link j86.java.lang.String},{@link j86.java.util.List}&lt;{@link java.lang.String}&gt;&gt;.
  * The keys are case-insensitive Strings representing the header names and
  * the value associated with each key is a {@link List}&lt;{@link String}&gt; with one
  * element for each occurrence of the header name in the request or response.
@@ -42,7 +42,7 @@ import java.util.*;
  * HeaderName: value2
  * </blockquote></pre>
  * <p>
- * All the normal {@link java.util.Map} methods are provided, but the following
+ * All the normal {@link j86.java.util.Map} methods are provided, but the following
  * additional convenience methods are most likely to be used:
  * <ul>
  * <li>{@link #getFirst(String)} returns a single valued header or the first value of

@@ -23,15 +23,15 @@
  * questions.
  */
 
-package com.sun.jmx.remote.security;
+package j86.com.sun.jmx.remote.security;
 
-import java.security.AccessControlContext;
-import java.security.AccessController;
-import java.security.CodeSource;
-import java.security.Permissions;
-import java.security.ProtectionDomain;
-import javax.security.auth.Subject;
-import javax.security.auth.SubjectDomainCombiner;
+import j86.java.security.AccessControlContext;
+import j86.java.security.AccessController;
+import j86.java.security.CodeSource;
+import j86.java.security.Permissions;
+import j86.java.security.ProtectionDomain;
+import j86.javax.security.auth.Subject;
+import j86.javax.security.auth.SubjectDomainCombiner;
 
 /**
  * <p>This class represents an extension to the {@link SubjectDomainCombiner}
@@ -75,7 +75,7 @@ public class JMXSubjectDomainCombiner extends SubjectDomainCombiner {
      * A null CodeSource.
      */
     private static final CodeSource nullCodeSource =
-        new CodeSource(null, (java.security.cert.Certificate[]) null);
+        new CodeSource(null, (j86.j86.java.security.cert.Certificate[]) null);
 
     /**
      * A ProtectionDomain with a null CodeSource and an empty permission set.

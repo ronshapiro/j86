@@ -22,9 +22,9 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.rmi.transport.tcp;
+package j86.j86.sun.rmi.transport.tcp;
 
-import java.io.*;
+import j86.java.io.*;
 
 /**
  * MultiplexInputStream manages receiving data over a connection managed

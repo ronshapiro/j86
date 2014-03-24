@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.security.internal.spec;
+package j86.sun.security.internal.spec;
 
-import java.security.spec.AlgorithmParameterSpec;
+import j86.j86.java.security.spec.AlgorithmParameterSpec;
 
-import javax.crypto.SecretKey;
+import j86.javax.crypto.SecretKey;
 
 /**
  * Parameters for the TLS PRF (pseudo-random function). The PRF function

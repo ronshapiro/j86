@@ -23,45 +23,45 @@
  * questions.
  */
 
-package sun.rmi.server;
+package j86.sun.rmi.server;
 
-import java.io.File;
-import java.io.FilePermission;
-import java.io.IOException;
-import java.lang.ref.ReferenceQueue;
-import java.lang.ref.SoftReference;
-import java.lang.ref.WeakReference;
-import java.lang.reflect.Modifier;
-import java.lang.reflect.Proxy;
-import java.net.JarURLConnection;
-import java.net.MalformedURLException;
-import java.net.SocketPermission;
-import java.net.URL;
-import java.net.URLClassLoader;
-import java.net.URLConnection;
-import java.security.AccessControlContext;
-import java.security.CodeSource;
-import java.security.Permission;
-import java.security.Permissions;
-import java.security.PermissionCollection;
-import java.security.Policy;
-import java.security.ProtectionDomain;
-import java.rmi.server.LogStream;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Enumeration;
-import java.util.HashMap;
-import java.util.IdentityHashMap;
-import java.util.Map;
-import java.util.StringTokenizer;
-import java.util.WeakHashMap;
-import sun.reflect.misc.ReflectUtil;
-import sun.rmi.runtime.Log;
-import sun.security.action.GetPropertyAction;
+import j86.java.io.File;
+import j86.java.io.FilePermission;
+import j86.java.io.IOException;
+import j86.j86.java.lang.ref.ReferenceQueue;
+import j86.j86.java.lang.ref.SoftReference;
+import j86.j86.java.lang.ref.WeakReference;
+import j86.j86.j86.java.lang.reflect.Modifier;
+import j86.j86.j86.java.lang.reflect.Proxy;
+import j86.java.net.JarURLConnection;
+import j86.java.net.MalformedURLException;
+import j86.java.net.SocketPermission;
+import j86.java.net.URL;
+import j86.java.net.URLClassLoader;
+import j86.java.net.URLConnection;
+import j86.java.security.AccessControlContext;
+import j86.java.security.CodeSource;
+import j86.java.security.Permission;
+import j86.java.security.Permissions;
+import j86.java.security.PermissionCollection;
+import j86.java.security.Policy;
+import j86.java.security.ProtectionDomain;
+import j86.j86.java.rmi.server.LogStream;
+import j86.java.util.Arrays;
+import j86.java.util.Collections;
+import j86.java.util.Enumeration;
+import j86.java.util.HashMap;
+import j86.java.util.IdentityHashMap;
+import j86.java.util.Map;
+import j86.java.util.StringTokenizer;
+import j86.java.util.WeakHashMap;
+import j86.j86.sun.reflect.misc.ReflectUtil;
+import j86.sun.rmi.runtime.Log;
+import j86.sun.security.action.GetPropertyAction;
 
 /**
  * <code>LoaderHandler</code> provides the implementation of the static
- * methods of the <code>java.rmi.server.RMIClassLoader</code> class.
+ * methods of the <code>j86.j86.java.rmi.server.RMIClassLoader</code> class.
  *
  * @author      Ann Wollrath
  * @author      Peter Jones
@@ -72,7 +72,7 @@ public final class LoaderHandler {
 
     /** RMI class loader log level */
     static final int logLevel = LogStream.parseLevel(
-        java.security.AccessController.doPrivileged(
+        j86.java.security.AccessController.doPrivileged(
             new GetPropertyAction("sun.rmi.loader.logLevel")));
 
     /* loader system log */
@@ -80,13 +80,13 @@ public final class LoaderHandler {
         Log.getLog("sun.rmi.loader", "loader", LoaderHandler.logLevel);
 
     /**
-     * value of "java.rmi.server.codebase" property, as cached at class
+     * value of "j86.j86.java.rmi.server.codebase" property, as cached at class
      * initialization time.  It may contain malformed URLs.
      */
     private static String codebaseProperty = null;
     static {
-        String prop = java.security.AccessController.doPrivileged(
-            new GetPropertyAction("java.rmi.server.codebase"));
+        String prop = j86.java.security.AccessController.doPrivileged(
+            new GetPropertyAction("j86.j86.java.rmi.server.codebase"));
         if (prop != null && prop.trim().length() > 0) {
             codebaseProperty = prop;
         }
@@ -127,7 +127,7 @@ public final class LoaderHandler {
 
     /**
      * Returns an array of URLs initialized with the value of the
-     * java.rmi.server.codebase property as the URL path.
+     * j86.j86.java.rmi.server.codebase property as the URL path.
      */
     private static synchronized URL[] getDefaultCodebaseURLs()
         throws MalformedURLException
@@ -217,7 +217,7 @@ public final class LoaderHandler {
          * Get the class's class loader.  If it is null, the system class
          * loader, an ancestor of the base class loader (such as the loader
          * for installed extensions), return the value of the
-         * "java.rmi.server.codebase" property.
+         * "j86.j86.java.rmi.server.codebase" property.
          */
         ClassLoader loader = cl.getClassLoader();
         if (loader == null || codebaseLoaders.containsKey(loader)) {
@@ -348,7 +348,7 @@ public final class LoaderHandler {
 
     /**
      * Register a class loader as one whose classes should always be
-     * annotated with the value of the "java.rmi.server.codebase" property.
+     * annotated with the value of the "j86.j86.java.rmi.server.codebase" property.
      */
     public static void registerCodebaseLoader(ClassLoader loader) {
         codebaseLoaders.put(loader, null);
@@ -879,8 +879,8 @@ public final class LoaderHandler {
                  * necessary to load classes from its codebase URL path.
                  */
                 AccessControlContext acc = getLoaderAccessControlContext(urls);
-                loader = java.security.AccessController.doPrivileged(
-                    new java.security.PrivilegedAction<Loader>() {
+                loader = j86.java.security.AccessController.doPrivileged(
+                    new j86.java.security.PrivilegedAction<Loader>() {
                         public Loader run() {
                             return new Loader(urls, parent);
                         }
@@ -983,16 +983,16 @@ public final class LoaderHandler {
     {
         /*
          * The approach used here is taken from the similar method
-         * getAccessControlContext() in the sun.applet.AppletPanel class.
+         * getAccessControlContext() in the j86.sun.applet.AppletPanel class.
          */
         // begin with permissions granted to all code in current policy
         PermissionCollection perms =
-            java.security.AccessController.doPrivileged(
-                new java.security.PrivilegedAction<PermissionCollection>() {
+            j86.java.security.AccessController.doPrivileged(
+                new j86.java.security.PrivilegedAction<PermissionCollection>() {
                 public PermissionCollection run() {
                     CodeSource codesource = new CodeSource(null,
-                        (java.security.cert.Certificate[]) null);
-                    Policy p = java.security.Policy.getPolicy();
+                        (j86.j86.java.security.cert.Certificate[]) null);
+                    Policy p = j86.java.security.Policy.getPolicy();
                     if (p != null) {
                         return p.getPermissions(codesource);
                     } else {
@@ -1005,7 +1005,7 @@ public final class LoaderHandler {
         perms.add(new RuntimePermission("createClassLoader"));
 
         // add permissions to read any "java.*" property
-        perms.add(new java.util.PropertyPermission("java.*","read"));
+        perms.add(new j86.java.util.PropertyPermission("java.*","read"));
 
         // add permissions reuiqred to load from codebase URL path
         addPermissionsForURLs(urls, perms, true);
@@ -1016,7 +1016,7 @@ public final class LoaderHandler {
          */
         ProtectionDomain pd = new ProtectionDomain(
             new CodeSource((urls.length > 0 ? urls[0] : null),
-                (java.security.cert.Certificate[]) null),
+                (j86.j86.java.security.cert.Certificate[]) null),
             perms);
         return new AccessControlContext(new ProtectionDomain[] { pd });
     }

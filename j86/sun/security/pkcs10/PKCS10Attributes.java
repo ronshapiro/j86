@@ -23,17 +23,17 @@
  * questions.
  */
 
-package sun.security.pkcs10;
+package j86.j86.sun.security.pkcs10;
 
-import java.io.IOException;
-import java.io.OutputStream;
-import java.security.cert.CertificateException;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Enumeration;
-import java.util.Hashtable;
+import j86.java.io.IOException;
+import j86.java.io.OutputStream;
+import j86.j86.java.security.cert.CertificateException;
+import j86.java.util.Collection;
+import j86.java.util.Collections;
+import j86.java.util.Enumeration;
+import j86.java.util.Hashtable;
 
-import sun.security.util.*;
+import j86.sun.security.util.*;
 
 /**
  * This class defines the PKCS10 attributes for the request.

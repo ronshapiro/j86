@@ -23,21 +23,21 @@
  * questions.
  */
 
-package javax.security.auth.kerberos;
+package j86.j86.javax.security.auth.kerberos;
 
-import java.io.*;
-import java.util.Date;
-import java.util.Arrays;
-import java.net.InetAddress;
-import javax.crypto.SecretKey;
-import javax.security.auth.Refreshable;
-import javax.security.auth.Destroyable;
-import javax.security.auth.RefreshFailedException;
-import javax.security.auth.DestroyFailedException;
-import sun.misc.HexDumpEncoder;
-import sun.security.krb5.EncryptionKey;
-import sun.security.krb5.Asn1Exception;
-import sun.security.util.*;
+import j86.java.io.*;
+import j86.java.util.Date;
+import j86.java.util.Arrays;
+import j86.java.net.InetAddress;
+import j86.javax.crypto.SecretKey;
+import j86.javax.security.auth.Refreshable;
+import j86.javax.security.auth.Destroyable;
+import j86.javax.security.auth.RefreshFailedException;
+import j86.javax.security.auth.DestroyFailedException;
+import j86.sun.misc.HexDumpEncoder;
+import j86.sun.security.krb5.EncryptionKey;
+import j86.sun.security.krb5.Asn1Exception;
+import j86.sun.security.util.*;
 
 /**
  * This class encapsulates a Kerberos ticket and associated
@@ -52,32 +52,32 @@ import sun.security.util.*;
  * directly communicating with the KDC. During the commit phase of the JAAS
  * authentication process, the JAAS login module should instantiate this
  * class and store the instance in the private credential set of a
- * {@link javax.security.auth.Subject Subject}.<p>
+ * {@link j86.javax.security.auth.Subject Subject}.<p>
  *
  * It might be necessary for the application to be granted a
- * {@link javax.security.auth.PrivateCredentialPermission
+ * {@link j86.javax.security.auth.PrivateCredentialPermission
  * PrivateCredentialPermission} if it needs to access a KerberosTicket
  * instance from a Subject. This permission is not needed when the
  * application depends on the default JGSS Kerberos mechanism to access the
  * KerberosTicket. In that case, however, the application will need an
  * appropriate
- * {@link javax.security.auth.kerberos.ServicePermission ServicePermission}.
+ * {@link j86.j86.javax.security.auth.kerberos.ServicePermission ServicePermission}.
  * <p>
  * Note that this class is applicable to both ticket granting tickets and
  * other regular service tickets. A ticket granting ticket is just a
  * special case of a more generalized service ticket.
  *
- * @see javax.security.auth.Subject
- * @see javax.security.auth.PrivateCredentialPermission
- * @see javax.security.auth.login.LoginContext
- * @see org.ietf.jgss.GSSCredential
- * @see org.ietf.jgss.GSSManager
+ * @see j86.javax.security.auth.Subject
+ * @see j86.javax.security.auth.PrivateCredentialPermission
+ * @see j86.j86.javax.security.auth.login.LoginContext
+ * @see j86.org.ietf.jgss.GSSCredential
+ * @see j86.org.ietf.jgss.GSSManager
  *
  * @author Mayank Upadhyay
  * @since 1.4
  */
 public class KerberosTicket implements Destroyable, Refreshable,
-         java.io.Serializable {
+         j86.java.io.Serializable {
 
     private static final long serialVersionUID = 7395334370157380539L;
 
@@ -459,7 +459,7 @@ public class KerberosTicket implements Destroyable, Refreshable,
      * @return the time that the client was authenticated
      *         or null if not set.
      */
-    public final java.util.Date getAuthTime() {
+    public final j86.java.util.Date getAuthTime() {
         return (authTime == null) ? null : (Date)authTime.clone();
     }
 
@@ -469,7 +469,7 @@ public class KerberosTicket implements Destroyable, Refreshable,
      * @return the start time for this ticket's validity period
      *         or null if not set.
      */
-    public final java.util.Date getStartTime() {
+    public final j86.java.util.Date getStartTime() {
         return (startTime == null) ? null : (Date)startTime.clone();
     }
 
@@ -478,7 +478,7 @@ public class KerberosTicket implements Destroyable, Refreshable,
      *
      * @return the expiration time for this ticket's validity period.
      */
-    public final java.util.Date getEndTime() {
+    public final j86.java.util.Date getEndTime() {
         return (Date) endTime.clone();
     }
 
@@ -488,7 +488,7 @@ public class KerberosTicket implements Destroyable, Refreshable,
      *
      * @return the latest expiration time for this ticket.
      */
-    public final java.util.Date getRenewTill() {
+    public final j86.java.util.Date getRenewTill() {
         return (renewTill == null) ? null: (Date)renewTill.clone();
     }
 
@@ -498,7 +498,7 @@ public class KerberosTicket implements Destroyable, Refreshable,
      * @return ths list of addresses or null, if the field was not
      * provided.
      */
-    public final java.net.InetAddress[] getClientAddresses() {
+    public final j86.java.net.InetAddress[] getClientAddresses() {
         return (clientAddresses == null) ? null: clientAddresses.clone();
     }
 
@@ -550,10 +550,10 @@ public class KerberosTicket implements Destroyable, Refreshable,
             throw new RefreshFailedException("This ticket is past "
                                              + "its last renewal time.");
         Throwable e = null;
-        sun.security.krb5.Credentials krb5Creds = null;
+        j86.sun.security.krb5.Credentials krb5Creds = null;
 
         try {
-            krb5Creds = new sun.security.krb5.Credentials(asn1Encoding,
+            krb5Creds = new j86.sun.security.krb5.Credentials(asn1Encoding,
                                                     client.toString(),
                                                     server.toString(),
                                                     sessionKey.getEncoded(),
@@ -565,9 +565,9 @@ public class KerberosTicket implements Destroyable, Refreshable,
                                                     renewTill,
                                                     clientAddresses);
             krb5Creds = krb5Creds.renew();
-        } catch (sun.security.krb5.KrbException krbException) {
+        } catch (j86.sun.security.krb5.KrbException krbException) {
             e = krbException;
-        } catch (java.io.IOException ioException) {
+        } catch (j86.java.io.IOException ioException) {
             e = ioException;
         }
 

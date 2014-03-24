@@ -23,21 +23,21 @@
  * questions.
  */
 
-package java.lang.invoke;
+package j86.j86.java.lang.invoke;
 
-import sun.misc.Unsafe;
-import java.lang.reflect.Method;
-import java.util.Arrays;
-import sun.invoke.util.VerifyAccess;
-import static java.lang.invoke.MethodHandleNatives.Constants.*;
-import static java.lang.invoke.LambdaForm.*;
-import static java.lang.invoke.MethodTypeForm.*;
-import static java.lang.invoke.MethodHandleStatics.*;
-import java.lang.ref.WeakReference;
-import java.lang.reflect.Field;
-import sun.invoke.util.ValueConversions;
-import sun.invoke.util.VerifyType;
-import sun.invoke.util.Wrapper;
+import j86.sun.misc.Unsafe;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.util.Arrays;
+import j86.j86.sun.invoke.util.VerifyAccess;
+import static j86.j86.java.lang.invoke.MethodHandleNatives.Constants.*;
+import static j86.j86.java.lang.invoke.LambdaForm.*;
+import static j86.j86.java.lang.invoke.MethodTypeForm.*;
+import static j86.j86.java.lang.invoke.MethodHandleStatics.*;
+import j86.j86.java.lang.ref.WeakReference;
+import j86.j86.j86.java.lang.reflect.Field;
+import j86.j86.sun.invoke.util.ValueConversions;
+import j86.j86.sun.invoke.util.VerifyType;
+import j86.j86.sun.invoke.util.Wrapper;
 
 /**
  * The flavor of method handle which implements a constant reference

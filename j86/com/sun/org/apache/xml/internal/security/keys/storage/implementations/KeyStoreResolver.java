@@ -20,21 +20,21 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.sun.org.apache.xml.internal.security.keys.storage.implementations;
+package j86.j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.storage.implementations;
 
-import java.security.KeyStore;
-import java.security.KeyStoreException;
-import java.security.cert.Certificate;
-import java.util.Enumeration;
-import java.util.Iterator;
-import java.util.NoSuchElementException;
+import j86.java.security.KeyStore;
+import j86.java.security.KeyStoreException;
+import j86.j86.java.security.cert.Certificate;
+import j86.java.util.Enumeration;
+import j86.java.util.Iterator;
+import j86.java.util.NoSuchElementException;
 
-import com.sun.org.apache.xml.internal.security.keys.storage.StorageResolverException;
-import com.sun.org.apache.xml.internal.security.keys.storage.StorageResolverSpi;
+import j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.storage.StorageResolverException;
+import j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.storage.StorageResolverSpi;
 
 /**
  * Makes the Certificates from a JAVA {@link KeyStore} object available to the
- * {@link com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver}.
+ * {@link j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver}.
  */
 public class KeyStoreResolver extends StorageResolverSpi {
 

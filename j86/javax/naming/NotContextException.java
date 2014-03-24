@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.naming;
+package j86.javax.naming;
 
 /**
   * This exception is thrown when a naming operation proceeds to a point
@@ -52,7 +52,7 @@ public class NotContextException extends NamingException {
      * explanation. All other fields default to null.
      *
      * @param   explanation     Possibly null additional detail about this exception.
-     * @see java.lang.Throwable#getMessage
+     * @see j86.java.lang.Throwable#getMessage
      */
     public NotContextException(String explanation) {
         super(explanation);

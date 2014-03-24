@@ -23,27 +23,27 @@
  * questions.
  */
 
-package javax.swing.plaf.metal;
+package j86.j86.j86.javax.swing.plaf.metal;
 
-import javax.swing.*;
-import javax.swing.border.EmptyBorder;
-import javax.swing.filechooser.*;
-import javax.swing.event.*;
-import javax.swing.plaf.*;
-import javax.swing.plaf.basic.*;
-import java.awt.*;
-import java.awt.event.*;
-import java.beans.*;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.util.*;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import javax.accessibility.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.border.EmptyBorder;
+import j86.j86.javax.swing.filechooser.*;
+import j86.j86.javax.swing.event.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.j86.javax.swing.plaf.basic.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.java.beans.*;
+import j86.java.io.File;
+import j86.java.io.FileNotFoundException;
+import j86.java.io.IOException;
+import j86.java.util.*;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.javax.accessibility.*;
 
-import sun.awt.shell.ShellFolder;
-import sun.swing.*;
+import j86.j86.sun.awt.shell.ShellFolder;
+import j86.sun.swing.*;
 
 /**
  * Metal L&amp;F implementation of a FileChooser.

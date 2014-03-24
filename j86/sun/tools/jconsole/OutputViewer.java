@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.tools.jconsole;
+package j86.sun.tools.jconsole;
 
-import java.awt.Font;
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
-import java.io.*;
+import j86.java.awt.Font;
+import j86.j86.java.awt.event.WindowAdapter;
+import j86.j86.java.awt.event.WindowEvent;
+import j86.java.io.*;
 
-import javax.swing.*;
+import j86.javax.swing.*;
 
 /**
  * A simple console window to display messages sent to System.out and
@@ -113,7 +113,7 @@ public class OutputViewer {
                     // Any thread should be allowed to write except this one
                     // but we just use this one to keep the pipe alive.
                     try {
-                        java.lang.reflect.Field f =
+                        j86.j86.j86.java.lang.reflect.Field f =
                             PipedInputStream.class.getDeclaredField("writeSide");
                         f.setAccessible(true);
                         f.set(inPipe, this);

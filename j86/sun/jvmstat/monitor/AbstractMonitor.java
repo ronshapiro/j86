@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.jvmstat.monitor;
+package j86.sun.jvmstat.monitor;
 
 /**
  * The base class for Instrumentation Monitoring Objects. This base class

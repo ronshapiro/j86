@@ -23,13 +23,13 @@
  * questions.
  */
 
-package sun.jvmstat.perfdata.monitor.protocol.local;
+package j86.j86.sun.jvmstat.perfdata.monitor.protocol.local;
 
-import sun.jvmstat.monitor.*;
-import sun.jvmstat.monitor.event.*;
-import sun.jvmstat.perfdata.monitor.*;
-import java.util.*;
-import java.net.*;
+import j86.sun.jvmstat.monitor.*;
+import j86.j86.sun.jvmstat.monitor.event.*;
+import j86.sun.jvmstat.perfdata.monitor.*;
+import j86.java.util.*;
+import j86.java.net.*;
 
 /**
  * Concrete implementation of the MonitoredHost interface for the

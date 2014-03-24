@@ -23,39 +23,39 @@
  * questions.
  */
 
-package sun.rmi.runtime;
+package j86.sun.rmi.runtime;
 
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.PrintStream;
-import java.io.OutputStream;
-import java.rmi.server.LogStream;
-import java.util.logging.ConsoleHandler;
-import java.util.logging.Handler;
-import java.util.logging.Formatter;
-import java.util.logging.SimpleFormatter;
-import java.util.logging.StreamHandler;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import java.util.logging.LogManager;
-import java.util.logging.LogRecord;
-import java.util.logging.StreamHandler;
-import java.util.Map;
-import java.util.HashMap;
+import j86.java.io.ByteArrayOutputStream;
+import j86.java.io.IOException;
+import j86.java.io.PrintStream;
+import j86.java.io.OutputStream;
+import j86.j86.java.rmi.server.LogStream;
+import j86.j86.java.util.logging.ConsoleHandler;
+import j86.j86.java.util.logging.Handler;
+import j86.j86.java.util.logging.Formatter;
+import j86.j86.java.util.logging.SimpleFormatter;
+import j86.j86.java.util.logging.StreamHandler;
+import j86.j86.java.util.logging.Level;
+import j86.j86.java.util.logging.Logger;
+import j86.j86.java.util.logging.LogManager;
+import j86.j86.java.util.logging.LogRecord;
+import j86.j86.java.util.logging.StreamHandler;
+import j86.java.util.Map;
+import j86.java.util.HashMap;
 
 /**
  * Utility which provides an abstract "logger" like RMI internal API
  * which can be directed to use one of two types of logging
- * infrastructure: the java.util.logging API or the
- * java.rmi.server.LogStream API.  The default behavior is to use the
- * java.util.logging API.  The LogStream API may be used instead by
- * setting the system property sun.rmi.log.useOld to true.
+ * infrastructure: the j86.j86.java.util.logging API or the
+ * j86.j86.java.rmi.server.LogStream API.  The default behavior is to use the
+ * j86.j86.java.util.logging API.  The LogStream API may be used instead by
+ * setting the system property j86.sun.rmi.log.useOld to true.
  *
  * For backwards compatibility, supports the RMI system logging
  * properties which pre-1.4 comprised the only way to configure RMI
- * logging.  If the java.util.logging API is used and RMI system log
+ * logging.  If the j86.j86.java.util.logging API is used and RMI system log
  * properties are set, the system properties override initial RMI
- * logger values as appropriate. If the java.util.logging API is
+ * logger values as appropriate. If the j86.j86.java.util.logging API is
  * turned off, pre-1.4 logging behavior is used.
  *
  * @author Laird Dornin
@@ -72,9 +72,9 @@ public abstract class Log {
     private static final LogFactory logFactory;
     static {
         boolean useOld =
-            Boolean.valueOf(java.security.AccessController.
-                doPrivileged(new sun.security.action.GetPropertyAction(
-                    "sun.rmi.log.useOld"))).booleanValue();
+            Boolean.valueOf(j86.java.security.AccessController.
+                doPrivileged(new j86.sun.security.action.GetPropertyAction(
+                    "j86.sun.rmi.log.useOld"))).booleanValue();
 
         /* set factory to select the logging facility to use */
         logFactory = (useOld ? (LogFactory) new LogStreamLogFactory() :
@@ -155,7 +155,7 @@ public abstract class Log {
 
     /**
      * Factory to create Log objects which deliver log messages to the
-     * java.util.logging API.
+     * j86.j86.java.util.logging API.
      */
     private static class LoggerLogFactory implements LogFactory {
         LoggerLogFactory() {}
@@ -175,14 +175,14 @@ public abstract class Log {
     }
 
     /**
-     * Class specialized to log messages to the java.util.logging API
+     * Class specialized to log messages to the j86.j86.java.util.logging API
      */
     private static class LoggerLog extends Log {
 
         /* alternate console handler for RMI loggers */
         private static final Handler alternateConsole =
-                java.security.AccessController.doPrivileged(
-                new java.security.PrivilegedAction<Handler>() {
+                j86.java.security.AccessController.doPrivileged(
+                new j86.java.security.PrivilegedAction<Handler>() {
                     public Handler run() {
                             InternalStreamHandler alternate =
                                 new InternalStreamHandler(System.err);
@@ -205,8 +205,8 @@ public abstract class Log {
             this.logger = logger;
 
             if (level != null){
-                java.security.AccessController.doPrivileged(
-                    new java.security.PrivilegedAction<Void>() {
+                j86.java.security.AccessController.doPrivileged(
+                    new j86.java.security.PrivilegedAction<Void>() {
                         public Void run() {
                             if (!logger.isLoggable(level)) {
                                 logger.setLevel(level);
@@ -349,7 +349,7 @@ public abstract class Log {
 
     /**
      * Factory to create Log objects which deliver log messages to the
-     * java.rmi.server.LogStream API
+     * j86.j86.java.rmi.server.LogStream API
      */
     private static class LogStreamLogFactory implements LogFactory {
         LogStreamLogFactory() {}
@@ -368,7 +368,7 @@ public abstract class Log {
 
     /**
      * Class specialized to log messages to the
-     * java.rmi.server.LogStream API
+     * j86.j86.java.rmi.server.LogStream API
      */
     private static class LogStreamLog extends Log {
         /** Log stream to which log messages are written */

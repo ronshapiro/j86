@@ -23,23 +23,23 @@
  * questions.
  */
 
-package com.sun.crypto.provider;
+package j86.com.sun.crypto.provider;
 
-import java.io.*;
-import java.util.*;
-import java.security.DigestInputStream;
-import java.security.DigestOutputStream;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-import java.security.Key;
-import java.security.PrivateKey;
-import java.security.KeyStoreSpi;
-import java.security.KeyStoreException;
-import java.security.UnrecoverableKeyException;
-import java.security.cert.Certificate;
-import java.security.cert.CertificateFactory;
-import java.security.cert.CertificateException;
-import javax.crypto.SealedObject;
+import j86.java.io.*;
+import j86.java.util.*;
+import j86.java.security.DigestInputStream;
+import j86.java.security.DigestOutputStream;
+import j86.java.security.MessageDigest;
+import j86.java.security.NoSuchAlgorithmException;
+import j86.java.security.Key;
+import j86.java.security.PrivateKey;
+import j86.java.security.KeyStoreSpi;
+import j86.java.security.KeyStoreException;
+import j86.java.security.UnrecoverableKeyException;
+import j86.j86.java.security.cert.Certificate;
+import j86.j86.java.security.cert.CertificateFactory;
+import j86.j86.java.security.cert.CertificateException;
+import j86.javax.crypto.SealedObject;
 
 /**
  * This class provides the keystore implementation referred to as "jceks".
@@ -52,7 +52,7 @@ import javax.crypto.SealedObject;
  * @author Jan Luehe
  *
  *
- * @see java.security.KeyStoreSpi
+ * @see j86.java.security.KeyStoreSpi
  */
 
 public final class JceKeyStore extends KeyStoreSpi {
@@ -206,7 +206,7 @@ public final class JceKeyStore extends KeyStoreSpi {
         Object entry = entries.get(alias.toLowerCase());
 
         if (entry != null) {
-            // We have to create a new instance of java.util.Date because
+            // We have to create a new instance of j86.java.util.Date because
             // dates are not immutable
             if (entry instanceof TrustedCertEntry) {
                 date = new Date(((TrustedCertEntry)entry).date.getTime());
@@ -224,7 +224,7 @@ public final class JceKeyStore extends KeyStoreSpi {
      * Assigns the given key to the given alias, protecting it with the given
      * password.
      *
-     * <p>If the given key is of type <code>java.security.PrivateKey</code>,
+     * <p>If the given key is of type <code>j86.java.security.PrivateKey</code>,
      * it must be accompanied by a certificate chain certifying the
      * corresponding public key.
      *
@@ -237,7 +237,7 @@ public final class JceKeyStore extends KeyStoreSpi {
      * @param password the password to protect the key
      * @param chain the certificate chain for the corresponding public
      * key (only required if the given key is of type
-     * <code>java.security.PrivateKey</code>).
+     * <code>j86.java.security.PrivateKey</code>).
      *
      * @exception KeyStoreException if the given key cannot be protected, or
      * this operation fails for some other reason
@@ -288,7 +288,7 @@ public final class JceKeyStore extends KeyStoreSpi {
      * alias.
      *
      * <p>If the protected key is of type
-     * <code>java.security.PrivateKey</code>,
+     * <code>j86.java.security.PrivateKey</code>,
      * it must be accompanied by a certificate chain certifying the
      * corresponding public key.
      *
@@ -300,7 +300,7 @@ public final class JceKeyStore extends KeyStoreSpi {
      * @param key the key (in protected format) to be associated with the alias
      * @param chain the certificate chain for the corresponding public
      * key (only useful if the protected key is of type
-     * <code>java.security.PrivateKey</code>).
+     * <code>j86.java.security.PrivateKey</code>).
      *
      * @exception KeyStoreException if this operation fails.
      */

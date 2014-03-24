@@ -20,14 +20,14 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.sun.org.apache.xml.internal.security.utils;
+package j86.j86.com.sun.org.apache.xml.internal.security.utils;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
+import j86.java.io.File;
+import j86.java.io.FileInputStream;
+import j86.java.io.FileNotFoundException;
+import j86.java.io.FileOutputStream;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
 
 /**
  * A collection of different, general-purpose methods for JAVA-specific things
@@ -36,8 +36,8 @@ import java.io.InputStream;
 public class JavaUtils {
 
     /** {@link org.apache.commons.logging} logging facility */
-    private static java.util.logging.Logger log =
-        java.util.logging.Logger.getLogger(JavaUtils.class.getName());
+    private static j86.j86.java.util.logging.Logger log =
+        j86.j86.java.util.logging.Logger.getLogger(JavaUtils.class.getName());
 
     private JavaUtils() {
         // we don't allow instantiation
@@ -99,8 +99,8 @@ public class JavaUtils {
                 fos.write(bytes);
                 fos.close();
             } else {
-                if (log.isLoggable(java.util.logging.Level.FINE)) {
-                    log.log(java.util.logging.Level.FINE, "writeBytesToFilename got null byte[] pointed");
+                if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                    log.log(j86.j86.java.util.logging.Level.FINE, "writeBytesToFilename got null byte[] pointed");
                 }
             }
         } catch (IOException ex) {
@@ -108,8 +108,8 @@ public class JavaUtils {
                 try {
                     fos.close();
                 } catch (IOException ioe) {
-                    if (log.isLoggable(java.util.logging.Level.FINE)) {
-                        log.log(java.util.logging.Level.FINE, ioe.getMessage(), ioe);
+                    if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                        log.log(j86.j86.java.util.logging.Level.FINE, ioe.getMessage(), ioe);
                     }
                 }
             }

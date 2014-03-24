@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.lang.reflect;
+package j86.j86.j86.java.lang.reflect;
 
-import java.lang.annotation.*;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Objects;
-import sun.reflect.annotation.AnnotationSupport;
+import j86.j86.java.lang.annotation.*;
+import j86.java.util.HashMap;
+import j86.java.util.Map;
+import j86.java.util.Objects;
+import j86.j86.sun.reflect.annotation.AnnotationSupport;
 
 /**
  * Information about method parameters.

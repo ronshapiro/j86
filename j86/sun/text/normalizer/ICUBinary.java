@@ -35,12 +35,12 @@
  *******************************************************************************
  */
 
-package sun.text.normalizer;
+package j86.j86.sun.text.normalizer;
 
-import java.io.InputStream;
-import java.io.DataInputStream;
-import java.io.IOException;
-import java.util.Arrays;
+import j86.java.io.InputStream;
+import j86.java.io.DataInputStream;
+import j86.java.io.IOException;
+import j86.java.util.Arrays;
 
 public final class ICUBinary
 {

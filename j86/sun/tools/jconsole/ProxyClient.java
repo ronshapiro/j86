@@ -23,28 +23,28 @@
  * questions.
  */
 
-package sun.tools.jconsole;
+package j86.sun.tools.jconsole;
 
-import com.sun.management.HotSpotDiagnosticMXBean;
-import com.sun.tools.jconsole.JConsoleContext;
-import java.beans.PropertyChangeListener;
-import java.beans.PropertyChangeEvent;
-import java.io.IOException;
-import java.lang.management.*;
-import static java.lang.management.ManagementFactory.*;
-import java.lang.ref.WeakReference;
-import java.lang.reflect.*;
-import java.rmi.*;
-import java.rmi.registry.*;
-import java.rmi.server.*;
-import java.util.*;
-import javax.management.*;
-import javax.management.remote.*;
-import javax.management.remote.rmi.*;
-import javax.rmi.ssl.SslRMIClientSocketFactory;
-import javax.swing.event.SwingPropertyChangeSupport;
-import sun.rmi.server.UnicastRef2;
-import sun.rmi.transport.LiveRef;
+import com.j86.sun.management.HotSpotDiagnosticMXBean;
+import com.j86.sun.tools.jconsole.JConsoleContext;
+import j86.java.beans.PropertyChangeListener;
+import j86.java.beans.PropertyChangeEvent;
+import j86.java.io.IOException;
+import j86.j86.java.lang.management.*;
+import static j86.j86.java.lang.management.ManagementFactory.*;
+import j86.j86.java.lang.ref.WeakReference;
+import j86.j86.j86.java.lang.reflect.*;
+import j86.java.rmi.*;
+import j86.j86.java.rmi.registry.*;
+import j86.j86.java.rmi.server.*;
+import j86.java.util.*;
+import j86.javax.management.*;
+import j86.j86.javax.management.remote.*;
+import j86.j86.j86.javax.management.remote.rmi.*;
+import j86.javax.rmi.ssl.SslRMIClientSocketFactory;
+import j86.j86.javax.swing.event.SwingPropertyChangeSupport;
+import j86.sun.rmi.server.UnicastRef2;
+import j86.sun.rmi.transport.LiveRef;
 
 public class ProxyClient implements JConsoleContext {
 
@@ -97,14 +97,14 @@ public class ProxyClient implements JConsoleContext {
     private RuntimeMXBean         runtimeMBean = null;
     private ThreadMXBean          threadMBean = null;
 
-    private com.sun.management.OperatingSystemMXBean sunOperatingSystemMXBean = null;
+    private com.j86.sun.management.OperatingSystemMXBean sunOperatingSystemMXBean = null;
     private HotSpotDiagnosticMXBean                  hotspotDiagnosticMXBean = null;
 
     private List<MemoryPoolProxy>           memoryPoolProxies = null;
     private List<GarbageCollectorMXBean>    garbageCollectorMBeans = null;
 
     final static private String HOTSPOT_DIAGNOSTIC_MXBEAN_NAME =
-        "com.sun.management:type=HotSpotDiagnostic";
+        "com.j86.sun.management:type=HotSpotDiagnostic";
 
     private ProxyClient(String hostName, int port,
                         String userName, String password) throws IOException {
@@ -171,7 +171,7 @@ public class ProxyClient implements JConsoleContext {
             }
         }
         // Check RemoteRef in stub is from the expected class
-        // "sun.rmi.server.UnicastRef2".
+        // "j86.sun.rmi.server.UnicastRef2".
         //
         RemoteRef ref = ((RemoteObject)stub).getRef();
         if (ref.getClass() != UnicastRef2.class) {
@@ -180,7 +180,7 @@ public class ProxyClient implements JConsoleContext {
                 " remote reference in stub!");
         }
         // Check RMIClientSocketFactory in stub is from the expected class
-        // "javax.rmi.ssl.SslRMIClientSocketFactory".
+        // "j86.javax.rmi.ssl.SslRMIClientSocketFactory".
         //
         LiveRef liveRef = ((UnicastRef2)ref).getLiveRef();
         RMIClientSocketFactory csf = liveRef.getClientSocketFactory();
@@ -192,7 +192,7 @@ public class ProxyClient implements JConsoleContext {
     }
 
     private static final String rmiServerImplStubClassName =
-        "javax.management.remote.rmi.RMIServerImpl_Stub";
+        "j86.j86.j86.javax.management.remote.rmi.RMIServerImpl_Stub";
     private static final Class<? extends Remote> rmiServerImplStubClass;
 
     static {
@@ -788,18 +788,18 @@ public class ProxyClient implements JConsoleContext {
         return operatingSystemMBean;
     }
 
-    public synchronized com.sun.management.OperatingSystemMXBean
+    public synchronized com.j86.sun.management.OperatingSystemMXBean
         getSunOperatingSystemMXBean() throws IOException {
 
         try {
             ObjectName on = new ObjectName(OPERATING_SYSTEM_MXBEAN_NAME);
             if (sunOperatingSystemMXBean == null) {
                 if (server.isInstanceOf(on,
-                        "com.sun.management.OperatingSystemMXBean")) {
+                        "com.j86.sun.management.OperatingSystemMXBean")) {
                     sunOperatingSystemMXBean =
                         newPlatformMXBeanProxy(server,
                             OPERATING_SYSTEM_MXBEAN_NAME,
-                            com.sun.management.OperatingSystemMXBean.class);
+                            com.j86.sun.management.OperatingSystemMXBean.class);
                 }
             }
         } catch (InstanceNotFoundException e) {

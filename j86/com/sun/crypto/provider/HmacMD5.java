@@ -23,14 +23,14 @@
  * questions.
  */
 
-package com.sun.crypto.provider;
+package j86.com.sun.crypto.provider;
 
-import java.nio.ByteBuffer;
+import j86.java.nio.ByteBuffer;
 
-import javax.crypto.MacSpi;
-import javax.crypto.SecretKey;
-import java.security.*;
-import java.security.spec.*;
+import j86.javax.crypto.MacSpi;
+import j86.javax.crypto.SecretKey;
+import j86.java.security.*;
+import j86.j86.java.security.spec.*;
 
 /**
  * This is an implementation of the HMAC-MD5 algorithm.

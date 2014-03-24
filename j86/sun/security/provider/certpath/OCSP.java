@@ -22,36 +22,36 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.security.provider.certpath;
+package j86.j86.sun.security.provider.certpath;
 
-import java.io.InputStream;
-import java.io.IOException;
-import java.io.OutputStream;
-import java.net.URI;
-import java.net.URL;
-import java.net.HttpURLConnection;
-import java.security.cert.CertificateException;
-import java.security.cert.CertPathValidatorException;
-import java.security.cert.CertPathValidatorException.BasicReason;
-import java.security.cert.CRLReason;
-import java.security.cert.Extension;
-import java.security.cert.X509Certificate;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Date;
-import java.util.List;
-import java.util.Map;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
+import j86.java.io.OutputStream;
+import j86.java.net.URI;
+import j86.java.net.URL;
+import j86.java.net.HttpURLConnection;
+import j86.j86.java.security.cert.CertificateException;
+import j86.j86.java.security.cert.CertPathValidatorException;
+import j86.j86.java.security.cert.CertPathValidatorException.BasicReason;
+import j86.j86.java.security.cert.CRLReason;
+import j86.j86.java.security.cert.Extension;
+import j86.j86.java.security.cert.X509Certificate;
+import j86.java.util.Arrays;
+import j86.java.util.Collections;
+import j86.java.util.Date;
+import j86.java.util.List;
+import j86.java.util.Map;
 
-import static sun.security.provider.certpath.OCSPResponse.*;
-import sun.security.action.GetIntegerAction;
-import sun.security.util.Debug;
-import sun.security.util.ObjectIdentifier;
-import sun.security.x509.AccessDescription;
-import sun.security.x509.AuthorityInfoAccessExtension;
-import sun.security.x509.GeneralName;
-import sun.security.x509.GeneralNameInterface;
-import sun.security.x509.URIName;
-import sun.security.x509.X509CertImpl;
+import static j86.j86.sun.security.provider.certpath.OCSPResponse.*;
+import j86.sun.security.action.GetIntegerAction;
+import j86.sun.security.util.Debug;
+import j86.sun.security.util.ObjectIdentifier;
+import j86.sun.security.x509.AccessDescription;
+import j86.sun.security.x509.AuthorityInfoAccessExtension;
+import j86.sun.security.x509.GeneralName;
+import j86.sun.security.x509.GeneralNameInterface;
+import j86.sun.security.x509.URIName;
+import j86.sun.security.x509.X509CertImpl;
 
 /**
  * This is a class that checks the revocation status of a certificate(s) using
@@ -85,7 +85,7 @@ public final class OCSP {
      * value is negative, set the timeout length to the default.
      */
     private static int initializeTimeout() {
-        Integer tmp = java.security.AccessController.doPrivileged(
+        Integer tmp = j86.java.security.AccessController.doPrivileged(
                 new GetIntegerAction("com.sun.security.ocsp.timeout"));
         if (tmp == null || tmp < 0) {
             return DEFAULT_CONNECT_TIMEOUT;

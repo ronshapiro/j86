@@ -23,12 +23,12 @@
  * questions.
  */
 
-package javax.naming.ldap;
+package j86.j86.javax.naming.ldap;
 
-import javax.naming.ReferralException;
-import javax.naming.Context;
-import javax.naming.NamingException;
-import java.util.Hashtable;
+import j86.javax.naming.ReferralException;
+import j86.javax.naming.Context;
+import j86.javax.naming.NamingException;
+import j86.java.util.Hashtable;
 
 /**
  * This abstract class is used to represent an LDAP referral exception.
@@ -55,7 +55,7 @@ public abstract class LdapReferralException extends ReferralException {
      * explanation supplied. All other fields are set to null.
      *
      * @param   explanation     Additional detail about this exception. Can be null.
-     * @see java.lang.Throwable#getMessage
+     * @see j86.java.lang.Throwable#getMessage
      */
     protected LdapReferralException(String explanation) {
         super(explanation);

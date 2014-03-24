@@ -20,13 +20,13 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.sun.org.apache.xml.internal.security.algorithms;
+package j86.j86.com.sun.org.apache.xml.internal.security.algorithms;
 
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
+import j86.java.util.Map;
+import j86.j86.java.util.concurrent.ConcurrentHashMap;
 
-import com.sun.org.apache.xml.internal.security.encryption.XMLCipher;
-import com.sun.org.apache.xml.internal.security.signature.XMLSignature;
+import j86.j86.com.sun.org.apache.xml.internal.security.encryption.XMLCipher;
+import j86.j86.com.sun.org.apache.xml.internal.security.signature.XMLSignature;
 import org.w3c.dom.Element;
 
 
@@ -36,8 +36,8 @@ import org.w3c.dom.Element;
 public class JCEMapper {
 
     /** {@link org.apache.commons.logging} logging facility */
-    private static java.util.logging.Logger log =
-        java.util.logging.Logger.getLogger(JCEMapper.class.getName());
+    private static j86.j86.java.util.logging.Logger log =
+        j86.j86.java.util.logging.Logger.getLogger(JCEMapper.class.getName());
 
     private static Map<String, Algorithm> algorithmsMap =
         new ConcurrentHashMap<String, Algorithm>();
@@ -219,8 +219,8 @@ public class JCEMapper {
      * @return the JCE standard name corresponding to the given URI
      */
     public static String translateURItoJCEID(String algorithmURI) {
-        if (log.isLoggable(java.util.logging.Level.FINE)) {
-            log.log(java.util.logging.Level.FINE, "Request for URI " + algorithmURI);
+        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+            log.log(j86.j86.java.util.logging.Level.FINE, "Request for URI " + algorithmURI);
         }
 
         Algorithm algorithm = algorithmsMap.get(algorithmURI);
@@ -236,8 +236,8 @@ public class JCEMapper {
      * @return the class name that implements this algorithm
      */
     public static String getAlgorithmClassFromURI(String algorithmURI) {
-        if (log.isLoggable(java.util.logging.Level.FINE)) {
-            log.log(java.util.logging.Level.FINE, "Request for URI " + algorithmURI);
+        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+            log.log(j86.j86.java.util.logging.Level.FINE, "Request for URI " + algorithmURI);
         }
 
         Algorithm algorithm = algorithmsMap.get(algorithmURI);
@@ -254,8 +254,8 @@ public class JCEMapper {
      * @return The length of the key used in the algorithm
      */
     public static int getKeyLengthFromURI(String algorithmURI) {
-        if (log.isLoggable(java.util.logging.Level.FINE)) {
-            log.log(java.util.logging.Level.FINE, "Request for URI " + algorithmURI);
+        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+            log.log(j86.j86.java.util.logging.Level.FINE, "Request for URI " + algorithmURI);
         }
         Algorithm algorithm = algorithmsMap.get(algorithmURI);
         if (algorithm != null) {
@@ -271,8 +271,8 @@ public class JCEMapper {
      * @return The KeyAlgorithm for the given URI.
      */
     public static String getJCEKeyAlgorithmFromURI(String algorithmURI) {
-        if (log.isLoggable(java.util.logging.Level.FINE)) {
-            log.log(java.util.logging.Level.FINE, "Request for URI " + algorithmURI);
+        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+            log.log(j86.j86.java.util.logging.Level.FINE, "Request for URI " + algorithmURI);
         }
         Algorithm algorithm = algorithmsMap.get(algorithmURI);
         if (algorithm != null) {

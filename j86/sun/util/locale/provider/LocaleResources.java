@@ -38,24 +38,24 @@
  *
  */
 
-package sun.util.locale.provider;
+package j86.j86.j86.sun.util.locale.provider;
 
-import java.lang.ref.ReferenceQueue;
-import java.lang.ref.SoftReference;
-import java.text.MessageFormat;
-import java.util.Calendar;
-import java.util.LinkedHashSet;
-import java.util.Locale;
-import java.util.Map;
-import java.util.ResourceBundle;
-import java.util.Set;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentMap;
-import sun.util.calendar.ZoneInfo;
-import sun.util.resources.LocaleData;
-import sun.util.resources.OpenListResourceBundle;
-import sun.util.resources.ParallelListResourceBundle;
-import sun.util.resources.TimeZoneNamesBundle;
+import j86.j86.java.lang.ref.ReferenceQueue;
+import j86.j86.java.lang.ref.SoftReference;
+import j86.java.text.MessageFormat;
+import j86.java.util.Calendar;
+import j86.java.util.LinkedHashSet;
+import j86.java.util.Locale;
+import j86.java.util.Map;
+import j86.java.util.ResourceBundle;
+import j86.java.util.Set;
+import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.j86.java.util.concurrent.ConcurrentMap;
+import j86.j86.sun.util.calendar.ZoneInfo;
+import j86.j86.sun.util.resources.LocaleData;
+import j86.j86.sun.util.resources.OpenListResourceBundle;
+import j86.j86.sun.util.resources.ParallelListResourceBundle;
+import j86.j86.sun.util.resources.TimeZoneNamesBundle;
 
 /**
  * Central accessor to locale-dependent resources for JRE/CLDR provider adapters.
@@ -370,7 +370,7 @@ public class LocaleResources {
     public String getJavaTimeDateTimePattern(int timeStyle, int dateStyle, String calType) {
         calType = CalendarDataUtility.normalizeCalendarType(calType);
         String pattern;
-        pattern = getDateTimePattern("java.time.", timeStyle, dateStyle, calType);
+        pattern = getDateTimePattern("j86.java.time.", timeStyle, dateStyle, calType);
         if (pattern == null) {
             pattern = getDateTimePattern(null, timeStyle, dateStyle, calType);
         }

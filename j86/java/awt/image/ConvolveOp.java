@@ -23,15 +23,15 @@
  * questions.
  */
 
-package java.awt.image;
+package j86.j86.j86.java.awt.image;
 
-import java.awt.color.ICC_Profile;
-import java.awt.geom.Rectangle2D;
-import java.awt.Rectangle;
-import java.awt.RenderingHints;
-import java.awt.geom.Point2D;
-import java.lang.annotation.Native;
-import sun.awt.image.ImagingLib;
+import j86.j86.java.awt.color.ICC_Profile;
+import j86.j86.java.awt.geom.Rectangle2D;
+import j86.java.awt.Rectangle;
+import j86.java.awt.RenderingHints;
+import j86.j86.java.awt.geom.Point2D;
+import j86.j86.java.lang.annotation.Native;
+import j86.j86.j86.sun.awt.image.ImagingLib;
 
 /**
  * This class implements a convolution from the source
@@ -63,8 +63,8 @@ import sun.awt.image.ImagingLib;
  *<p>
  * Note that the Source and the Destination may not be the same object.
  * @see Kernel
- * @see java.awt.RenderingHints#KEY_COLOR_RENDERING
- * @see java.awt.RenderingHints#KEY_DITHERING
+ * @see j86.java.awt.RenderingHints#KEY_COLOR_RENDERING
+ * @see j86.java.awt.RenderingHints#KEY_DITHERING
  */
 public class ConvolveOp implements BufferedImageOp, RasterOp {
     Kernel kernel;
@@ -96,7 +96,7 @@ public class ConvolveOp implements BufferedImageOp, RasterOp {
      * @see Kernel
      * @see #EDGE_NO_OP
      * @see #EDGE_ZERO_FILL
-     * @see java.awt.RenderingHints
+     * @see j86.java.awt.RenderingHints
      */
     public ConvolveOp(Kernel kernel, int edgeCondition, RenderingHints hints) {
         this.kernel   = kernel;
@@ -203,7 +203,7 @@ public class ConvolveOp implements BufferedImageOp, RasterOp {
             ccop.filter(dst, origDst);
         }
         else if (origDst != dst) {
-            java.awt.Graphics2D g = origDst.createGraphics();
+            j86.java.awt.Graphics2D g = origDst.createGraphics();
             try {
                 g.drawImage(dst, 0, 0, null);
             } finally {

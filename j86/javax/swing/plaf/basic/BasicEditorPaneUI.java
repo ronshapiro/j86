@@ -22,18 +22,18 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.plaf.basic;
+package j86.j86.j86.javax.swing.plaf.basic;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.beans.*;
-import java.net.URL;
-import java.net.MalformedURLException;
-import javax.swing.*;
-import javax.swing.text.*;
-import javax.swing.text.html.*;
-import javax.swing.plaf.*;
-import javax.swing.border.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.java.beans.*;
+import j86.java.net.URL;
+import j86.java.net.MalformedURLException;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.text.*;
+import j86.j86.j86.javax.swing.text.html.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.javax.swing.border.*;
 
 
 /**
@@ -45,8 +45,8 @@ import javax.swing.border.*;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @author  Timothy Prinzing
  */
@@ -265,7 +265,7 @@ public class BasicEditorPaneUI extends BasicTextUI {
 
     /**
      * Attribute key to reference the default font.
-     * used in javax.swing.text.StyleContext.getFont
+     * used in j86.j86.javax.swing.text.StyleContext.getFont
      * to resolve the default font.
      */
     private static final String FONT_ATTRIBUTE_KEY = "FONT_ATTRIBUTE_KEY";
@@ -310,7 +310,7 @@ public class BasicEditorPaneUI extends BasicTextUI {
                     }
                 }
             }
-            String cssRule = sun.swing.
+            String cssRule = j86.sun.swing.
                 SwingUtilities2.displayPropertiesToCSS(font,
                                                        fg);
             styleSheet.addRule(cssRule);

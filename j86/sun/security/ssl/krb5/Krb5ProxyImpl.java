@@ -23,24 +23,24 @@
  * questions.
  */
 
-package sun.security.ssl.krb5;
+package j86.j86.sun.security.ssl.krb5;
 
-import java.security.AccessControlContext;
-import java.security.Permission;
-import java.security.Principal;
-import java.util.Set;
-import javax.crypto.SecretKey;
-import javax.security.auth.Subject;
-import javax.security.auth.kerberos.KerberosKey;
-import javax.security.auth.kerberos.KeyTab;
-import javax.security.auth.kerberos.ServicePermission;
-import javax.security.auth.login.LoginException;
+import j86.java.security.AccessControlContext;
+import j86.java.security.Permission;
+import j86.java.security.Principal;
+import j86.java.util.Set;
+import j86.javax.crypto.SecretKey;
+import j86.javax.security.auth.Subject;
+import j86.j86.javax.security.auth.kerberos.KerberosKey;
+import j86.j86.javax.security.auth.kerberos.KeyTab;
+import j86.j86.javax.security.auth.kerberos.ServicePermission;
+import j86.j86.javax.security.auth.login.LoginException;
 
-import sun.security.jgss.GSSCaller;
-import sun.security.jgss.krb5.Krb5Util;
-import sun.security.jgss.krb5.ServiceCreds;
-import sun.security.krb5.PrincipalName;
-import sun.security.ssl.Krb5Proxy;
+import j86.sun.security.jgss.GSSCaller;
+import j86.j86.sun.security.jgss.krb5.Krb5Util;
+import j86.j86.sun.security.jgss.krb5.ServiceCreds;
+import j86.sun.security.krb5.PrincipalName;
+import j86.sun.security.ssl.Krb5Proxy;
 
 /**
  * An implementation of Krb5Proxy that simply delegates to the appropriate

@@ -23,12 +23,12 @@
  * questions.
  */
 
-package javax.management.relation;
+package j86.j86.javax.management.relation;
 
-import java.util.List;
-import java.util.Map;
+import j86.java.util.List;
+import j86.java.util.Map;
 
-import javax.management.ObjectName;
+import j86.javax.management.ObjectName;
 
 /**
  * This interface has to be implemented by any MBean class expected to

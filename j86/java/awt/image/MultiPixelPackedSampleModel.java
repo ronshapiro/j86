@@ -33,7 +33,7 @@
  ******************************************************************
  ******************************************************************/
 
-package java.awt.image;
+package j86.j86.j86.java.awt.image;
 
 /**
  * The <code>MultiPixelPackedSampleModel</code> class represents

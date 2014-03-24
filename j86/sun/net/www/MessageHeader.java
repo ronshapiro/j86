@@ -27,11 +27,11 @@
  *      news stream opener
  */
 
-package sun.net.www;
+package j86.j86.sun.net.www;
 
-import java.io.*;
-import java.util.Collections;
-import java.util.*;
+import j86.java.io.*;
+import j86.java.util.Collections;
+import j86.java.util.*;
 
 /** An RFC 844 or MIME message header.  Includes methods
     for parsing headers from incoming streams, fetching
@@ -50,7 +50,7 @@ class MessageHeader {
         grow();
     }
 
-    public MessageHeader (InputStream is) throws java.io.IOException {
+    public MessageHeader (InputStream is) throws j86.java.io.IOException {
         parseHeader(is);
     }
 
@@ -433,7 +433,7 @@ class MessageHeader {
     }
 
     /** Parse a MIME header from an input stream. */
-    public void parseHeader(InputStream is) throws java.io.IOException {
+    public void parseHeader(InputStream is) throws j86.java.io.IOException {
         synchronized (this) {
             nkeys = 0;
         }
@@ -442,7 +442,7 @@ class MessageHeader {
 
     /** Parse and merge a MIME header from an input stream. */
     @SuppressWarnings("fallthrough")
-    public void mergeHeader(InputStream is) throws java.io.IOException {
+    public void mergeHeader(InputStream is) throws j86.java.io.IOException {
         if (is == null)
             return;
         char s[] = new char[10];

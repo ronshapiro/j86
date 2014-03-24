@@ -23,17 +23,17 @@
  * questions.
  */
 
-package com.sun.tools.jdi;
+package j86.com.sun.tools.jdi;
 
-import java.util.Map;
-import java.util.HashMap;
-import java.util.ArrayList;
-import java.io.IOException;
+import j86.java.util.Map;
+import j86.java.util.HashMap;
+import j86.java.util.ArrayList;
+import j86.java.io.IOException;
 
-import com.sun.jdi.Bootstrap;
-import com.sun.jdi.VirtualMachine;
-import com.sun.jdi.connect.*;
-import com.sun.jdi.connect.spi.*;
+import j86.com.sun.jdi.Bootstrap;
+import j86.com.sun.jdi.VirtualMachine;
+import j86.j86.com.sun.jdi.connect.*;
+import j86.j86.j86.com.sun.jdi.connect.spi.*;
 
 /*
  * A ListeningConnector to listen for connections from target VM

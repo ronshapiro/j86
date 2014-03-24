@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.rmi.activation;
+package j86.j86.java.rmi.activation;
 
 /**
  * This exception is thrown by the RMI runtime when activation
@@ -32,7 +32,7 @@ package java.rmi.activation;
  * @author      Ann Wollrath
  * @since       1.2
  */
-public class ActivateFailedException extends java.rmi.RemoteException {
+public class ActivateFailedException extends j86.java.rmi.RemoteException {
 
     /** indicate compatibility with the Java 2 SDK v1.2 version of class */
     private static final long serialVersionUID = 4863550261346652506L;

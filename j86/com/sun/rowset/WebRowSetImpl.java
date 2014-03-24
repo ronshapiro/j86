@@ -23,22 +23,22 @@
  * questions.
  */
 
-package com.sun.rowset;
+package j86.com.sun.rowset;
 
-import java.sql.*;
-import javax.sql.*;
-import java.io.*;
-import java.math.*;
-import java.util.*;
-import java.text.*;
+import j86.java.sql.*;
+import j86.javax.sql.*;
+import j86.java.io.*;
+import j86.java.math.*;
+import j86.java.util.*;
+import j86.java.text.*;
 
 import org.xml.sax.*;
 
-import javax.sql.rowset.*;
-import javax.sql.rowset.spi.*;
+import j86.j86.javax.sql.rowset.*;
+import j86.j86.j86.javax.sql.rowset.spi.*;
 
-import com.sun.rowset.providers.*;
-import com.sun.rowset.internal.*;
+import j86.j86.com.sun.rowset.providers.*;
+import j86.j86.com.sun.rowset.internal.*;
 
 /**
  * The standard implementation of the <code>WebRowSet</code> interface. See the interface
@@ -115,7 +115,7 @@ public class WebRowSetImpl extends CachedRowSetImpl implements WebRowSet {
         }
 
         String providerName =
-            (String)env.get(javax.sql.rowset.spi.SyncFactory.ROWSET_SYNC_PROVIDER);
+            (String)env.get(j86.j86.j86.javax.sql.rowset.spi.SyncFactory.ROWSET_SYNC_PROVIDER);
 
         // set the Reader, this maybe overridden latter
         provider = SyncFactory.getInstance(providerName);
@@ -127,13 +127,13 @@ public class WebRowSetImpl extends CachedRowSetImpl implements WebRowSet {
    /**
     * Populates this <code>WebRowSet</code> object with the
     * data in the given <code>ResultSet</code> object and writes itself
-    * to the given <code>java.io.Writer</code> object in XML format.
+    * to the given <code>j86.java.io.Writer</code> object in XML format.
     * This includes the rowset's data,  properties, and metadata.
     *
     * @throws SQLException if an error occurs writing out the rowset
     *          contents to XML
     */
-    public void writeXml(ResultSet rs, java.io.Writer writer)
+    public void writeXml(ResultSet rs, j86.java.io.Writer writer)
         throws SQLException {
             // WebRowSetImpl wrs = new WebRowSetImpl();
             this.populate(rs);
@@ -146,13 +146,13 @@ public class WebRowSetImpl extends CachedRowSetImpl implements WebRowSet {
 
     /**
      * Writes this <code>WebRowSet</code> object to the given
-     * <code>java.io.Writer</code> object in XML format. This
+     * <code>j86.java.io.Writer</code> object in XML format. This
      * includes the rowset's data,  properties, and metadata.
      *
      * @throws SQLException if an error occurs writing out the rowset
      *          contents to XML
      */
-    public void writeXml(java.io.Writer writer) throws SQLException {
+    public void writeXml(j86.java.io.Writer writer) throws SQLException {
         // %%%
         // This will change to a XmlReader, which over-rides the default
         // Xml that is used when a WRS is instantiated.
@@ -173,7 +173,7 @@ public class WebRowSetImpl extends CachedRowSetImpl implements WebRowSet {
      *
      * @throws SQLException if a database access error occurs
      */
-    public void readXml(java.io.Reader reader) throws SQLException {
+    public void readXml(j86.java.io.Reader reader) throws SQLException {
         // %%%
         // This will change to a XmlReader, which over-rides the default
         // Xml that is used when a WRS is instantiated.
@@ -210,7 +210,7 @@ public class WebRowSetImpl extends CachedRowSetImpl implements WebRowSet {
      * @throws SQLException if a data source access error occurs
      * @throws IOException if a IO exception occurs
      */
-    public void readXml(java.io.InputStream iStream) throws SQLException, IOException {
+    public void readXml(j86.java.io.InputStream iStream) throws SQLException, IOException {
         if (iStream != null) {
             xmlReader.readXML(this, iStream);
 
@@ -240,7 +240,7 @@ public class WebRowSetImpl extends CachedRowSetImpl implements WebRowSet {
      * @throws SQLException if a datasource access error occurs
      * @throws IOException if an IO exception occurs
      */
-    public void writeXml(java.io.OutputStream oStream) throws SQLException, IOException {
+    public void writeXml(j86.java.io.OutputStream oStream) throws SQLException, IOException {
         if (xmlWriter != null) {
 
             // Store the cursor position before writing
@@ -256,13 +256,13 @@ public class WebRowSetImpl extends CachedRowSetImpl implements WebRowSet {
     /**
      * Populates this <code>WebRowSet</code> object with the
      * data in the given <code>ResultSet</code> object and writes itself
-     * to the given <code>java.io.OutputStream</code> object in XML format.
+     * to the given <code>j86.java.io.OutputStream</code> object in XML format.
      * This includes the rowset's data,  properties, and metadata.
      *
      * @throws SQLException if a datasource access error occurs
      * @throws IOException if an IO exception occurs
      */
-    public void writeXml(ResultSet rs, java.io.OutputStream oStream) throws SQLException, IOException {
+    public void writeXml(ResultSet rs, j86.java.io.OutputStream oStream) throws SQLException, IOException {
             this.populate(rs);
 
             // Store the cursor position before writing

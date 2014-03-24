@@ -22,22 +22,22 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing;
+package j86.javax.swing;
 
-import sun.swing.SwingUtilities2;
+import j86.sun.swing.SwingUtilities2;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.beans.*;
-import javax.swing.text.*;
-import javax.swing.plaf.*;
-import javax.swing.event.*;
-import javax.accessibility.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.java.beans.*;
+import j86.j86.javax.swing.text.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.javax.swing.event.*;
+import j86.javax.accessibility.*;
 
-import java.io.ObjectOutputStream;
-import java.io.ObjectInputStream;
-import java.io.IOException;
-import java.io.Serializable;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.IOException;
+import j86.java.io.Serializable;
 
 /**
  * <code>JTextField</code> is a lightweight component that allows the editing
@@ -49,18 +49,18 @@ import java.io.Serializable;
  *
  * <p>
  * <code>JTextField</code> is intended to be source-compatible
- * with <code>java.awt.TextField</code> where it is reasonable to do so.  This
- * component has capabilities not found in the <code>java.awt.TextField</code>
+ * with <code>j86.java.awt.TextField</code> where it is reasonable to do so.  This
+ * component has capabilities not found in the <code>j86.java.awt.TextField</code>
  * class.  The superclass should be consulted for additional capabilities.
  * <p>
  * <code>JTextField</code> has a method to establish the string used as the
  * command string for the action event that gets fired.  The
- * <code>java.awt.TextField</code> used the text of the field as the command
+ * <code>j86.java.awt.TextField</code> used the text of the field as the command
  * string for the <code>ActionEvent</code>.
  * <code>JTextField</code> will use the command
  * string set with the <code>setActionCommand</code> method if not <code>null</code>,
  * otherwise it will use the text of the field as a compatibility with
- * <code>java.awt.TextField</code>.
+ * <code>j86.java.awt.TextField</code>.
  * <p>
  * The method <code>setEchoChar</code> and <code>getEchoChar</code>
  * are not provided directly to avoid a new implementation of a
@@ -69,7 +69,7 @@ import java.io.Serializable;
  * extends <code>JTextField</code> to provide this service with an independently
  * pluggable look-and-feel.
  * <p>
- * The <code>java.awt.TextField</code> could be monitored for changes by adding
+ * The <code>j86.java.awt.TextField</code> could be monitored for changes by adding
  * a <code>TextListener</code> for <code>TextEvent</code>'s.
  * In the <code>JTextComponent</code> based
  * components, changes are broadcasted from the model via a
@@ -149,8 +149,8 @@ import java.io.Serializable;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @beaninfo
  *   attribute: isContainer false
@@ -288,7 +288,7 @@ public class JTextField extends JTextComponent implements SwingConstants {
      *
      * @see JComponent#revalidate
      * @see JComponent#isValidateRoot
-     * @see java.awt.Container#isValidateRoot
+     * @see j86.java.awt.Container#isValidateRoot
      */
     @Override
     public boolean isValidateRoot() {
@@ -940,8 +940,8 @@ public class JTextField extends JTextComponent implements SwingConstants {
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     protected class AccessibleJTextField extends AccessibleJTextComponent {
 

@@ -24,9 +24,9 @@
  */
 
 
-package sun.security.ssl;
+package j86.sun.security.ssl;
 
-import java.io.*;
+import j86.java.io.*;
 
 /**
  * InputStream for application data as returned by SSLSocket.getInputStream().

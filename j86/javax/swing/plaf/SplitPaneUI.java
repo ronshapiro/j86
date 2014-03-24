@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.swing.plaf;
+package j86.j86.javax.swing.plaf;
 
-import javax.swing.JSplitPane;
-import java.awt.Graphics;
+import j86.javax.swing.JSplitPane;
+import j86.java.awt.Graphics;
 
 /**
  * Pluggable look and feel interface for JSplitPane.

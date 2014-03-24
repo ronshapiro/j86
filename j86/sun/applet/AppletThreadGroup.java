@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.applet;
+package j86.sun.applet;
 
 /**
  * This class defines an applet thread group.
@@ -54,7 +54,7 @@ public class AppletThreadGroup extends ThreadGroup {
      *               <code>null</code>.
      * @exception  SecurityException  if the current thread cannot create a
      *               thread in the specified thread group.
-     * @see     java.lang.SecurityException
+     * @see     j86.java.lang.SecurityException
      * @since   JDK1.1.1
      */
     public AppletThreadGroup(ThreadGroup parent, String name) {

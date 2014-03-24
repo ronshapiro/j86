@@ -23,9 +23,9 @@
  * questions.
  */
 
-package com.sun.jdi.event;
+package j86.j86.com.sun.jdi.event;
 
-import com.sun.jdi.*;
+import j86.com.sun.jdi.*;
 
 /**
  * Notification of a method invocation in the target VM. This event

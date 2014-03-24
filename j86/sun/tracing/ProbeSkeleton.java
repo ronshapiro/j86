@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.tracing;
+package j86.sun.tracing;
 
-import java.lang.reflect.Method;
-import java.lang.reflect.Field;
-import com.sun.tracing.Probe;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.j86.j86.java.lang.reflect.Field;
+import com.j86.sun.tracing.Probe;
 
 /**
  * Provides common code for implementation of {@code Probe} classes.

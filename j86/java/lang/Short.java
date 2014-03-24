@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.lang;
+package j86.java.lang;
 
 /**
  * The {@code Short} class wraps a value of primitive type {@code
@@ -37,7 +37,7 @@ package java.lang;
  *
  * @author  Nakul Saraiya
  * @author  Joseph D. Darcy
- * @see     java.lang.Number
+ * @see     j86.java.lang.Number
  * @since   JDK1.1
  */
 public final class Short extends Number implements Comparable<Short> {
@@ -67,7 +67,7 @@ public final class Short extends Number implements Comparable<Short> {
      *
      * @param s the {@code short} to be converted
      * @return the string representation of the specified {@code short}
-     * @see java.lang.Integer#toString(int)
+     * @see j86.java.lang.Integer#toString(int)
      */
     public static String toString(short s) {
         return Integer.toString((int)s, 10);
@@ -77,7 +77,7 @@ public final class Short extends Number implements Comparable<Short> {
      * Parses the string argument as a signed {@code short} in the
      * radix specified by the second argument. The characters in the
      * string must all be digits, of the specified radix (as
-     * determined by whether {@link java.lang.Character#digit(char,
+     * determined by whether {@link j86.java.lang.Character#digit(char,
      * int)} returns a nonnegative value) except that the first
      * character may be an ASCII minus sign {@code '-'}
      * ({@code '\u005Cu002D'}) to indicate a negative value or an
@@ -92,8 +92,8 @@ public final class Short extends Number implements Comparable<Short> {
      * length zero.
      *
      * <li> The radix is either smaller than {@link
-     * java.lang.Character#MIN_RADIX} or larger than {@link
-     * java.lang.Character#MAX_RADIX}.
+     * j86.java.lang.Character#MIN_RADIX} or larger than {@link
+     * j86.java.lang.Character#MAX_RADIX}.
      *
      * <li> Any character of the string is not a digit of the
      * specified radix, except that the first character may be a minus
@@ -131,7 +131,7 @@ public final class Short extends Number implements Comparable<Short> {
      * ({@code '\u005Cu002B'}) to indicate a positive value.  The
      * resulting {@code short} value is returned, exactly as if the
      * argument and the radix 10 were given as arguments to the {@link
-     * #parseShort(java.lang.String, int)} method.
+     * #parseShort(j86.java.lang.String, int)} method.
      *
      * @param s a {@code String} containing the {@code short}
      *          representation to be parsed
@@ -150,7 +150,7 @@ public final class Short extends Number implements Comparable<Short> {
      * with the radix given by the second argument. The first argument
      * is interpreted as representing a signed {@code short} in
      * the radix specified by the second argument, exactly as if the
-     * argument were given to the {@link #parseShort(java.lang.String,
+     * argument were given to the {@link #parseShort(j86.java.lang.String,
      * int)} method. The result is a {@code Short} object that
      * represents the {@code short} value specified by the string.
      *
@@ -179,7 +179,7 @@ public final class Short extends Number implements Comparable<Short> {
      * value given by the specified {@code String}. The argument
      * is interpreted as representing a signed decimal
      * {@code short}, exactly as if the argument were given to
-     * the {@link #parseShort(java.lang.String)} method. The result is
+     * the {@link #parseShort(j86.java.lang.String)} method. The result is
      * a {@code Short} object that represents the
      * {@code short} value specified by the string.
      *
@@ -276,7 +276,7 @@ public final class Short extends Number implements Comparable<Short> {
      *            value represented by {@code nm}
      * @throws    NumberFormatException  if the {@code String} does not
      *            contain a parsable {@code short}.
-     * @see java.lang.Short#parseShort(java.lang.String, int)
+     * @see j86.java.lang.Short#parseShort(java.lang.String, int)
      */
     public static Short decode(String nm) throws NumberFormatException {
         int i = Integer.decode(nm);
@@ -315,7 +315,7 @@ public final class Short extends Number implements Comparable<Short> {
      *          {@code Short}
      * @throws  NumberFormatException If the {@code String}
      *          does not contain a parsable {@code short}.
-     * @see     java.lang.Short#parseShort(java.lang.String, int)
+     * @see     j86.java.lang.Short#parseShort(java.lang.String, int)
      */
     public Short(String s) throws NumberFormatException {
         this.value = parseShort(s, 10);
@@ -379,7 +379,7 @@ public final class Short extends Number implements Comparable<Short> {
      * {@code Short}'s value.  The value is converted to signed
      * decimal representation and returned as a string, exactly as if
      * the {@code short} value were given as an argument to the
-     * {@link java.lang.Short#toString(short)} method.
+     * {@link j86.java.lang.Short#toString(short)} method.
      *
      * @return  a string representation of the value of this object in
      *          base&nbsp;10.

@@ -31,10 +31,10 @@
  * this sample code.
  */
 
-package com.sun.tools.example.debug.tty;
+package j86.com.sun.tools.example.debug.tty;
 
-import java.util.*;
-import java.text.MessageFormat;
+import j86.java.util.*;
+import j86.java.text.MessageFormat;
 /**
  * Internationalization (i18n) convenience methods for jdb.
  *

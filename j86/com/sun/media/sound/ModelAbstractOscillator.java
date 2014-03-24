@@ -22,15 +22,15 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.media.sound;
+package j86.com.sun.media.sound;
 
-import java.io.IOException;
-import javax.sound.midi.Instrument;
-import javax.sound.midi.MidiChannel;
-import javax.sound.midi.Patch;
-import javax.sound.midi.Soundbank;
-import javax.sound.midi.SoundbankResource;
-import javax.sound.midi.VoiceStatus;
+import j86.java.io.IOException;
+import j86.javax.sound.midi.Instrument;
+import j86.javax.sound.midi.MidiChannel;
+import j86.javax.sound.midi.Patch;
+import j86.javax.sound.midi.Soundbank;
+import j86.javax.sound.midi.SoundbankResource;
+import j86.javax.sound.midi.VoiceStatus;
 
 /**
  * A abstract class used to simplify creating custom ModelOscillator.

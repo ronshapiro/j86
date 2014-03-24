@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.awt;
+package j86.java.awt;
 
-import java.io.ObjectStreamException;
+import j86.java.io.ObjectStreamException;
 
-import java.lang.annotation.Native;
+import j86.j86.java.lang.annotation.Native;
 
 /**
  * A class to encapsulate symbolic colors representing the color of
@@ -42,14 +42,14 @@ import java.lang.annotation.Native;
  * rendered differently on each platform.
  * <p>
  * System color values may also be available through the <code>getDesktopProperty</code>
- * method on <code>java.awt.Toolkit</code>.
+ * method on <code>j86.java.awt.Toolkit</code>.
  *
  * @see Toolkit#getDesktopProperty
  *
  * @author      Carl Quinn
  * @author      Amy Fowler
  */
-public final class SystemColor extends Color implements java.io.Serializable {
+public final class SystemColor extends Color implements j86.java.io.Serializable {
 
    /**
      * The array index for the

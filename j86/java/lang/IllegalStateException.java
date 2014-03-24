@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.lang;
+package j86.java.lang;
 
 /**
  * Signals that a method has been invoked at an illegal or
@@ -81,7 +81,7 @@ class IllegalStateException extends RuntimeException {
      * typically contains the class and detail message of <tt>cause</tt>).
      * This constructor is useful for exceptions that are little more than
      * wrappers for other throwables (for example, {@link
-     * java.security.PrivilegedActionException}).
+     * j86.java.security.PrivilegedActionException}).
      *
      * @param  cause the cause (which is saved for later retrieval by the
      *         {@link Throwable#getCause()} method).  (A <tt>null</tt> value is

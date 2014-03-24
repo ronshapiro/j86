@@ -23,17 +23,17 @@
  * questions.
  */
 
-package sun.tools.jconsole;
+package j86.sun.tools.jconsole;
 
-import java.awt.event.KeyEvent;
-import java.lang.reflect.Field;
-import java.lang.reflect.Modifier;
-import java.text.MessageFormat;
-import java.util.Collections;
-import java.util.IdentityHashMap;
-import java.util.Map;
-import java.util.MissingResourceException;
-import java.util.ResourceBundle;
+import j86.j86.java.awt.event.KeyEvent;
+import j86.j86.j86.java.lang.reflect.Field;
+import j86.j86.j86.java.lang.reflect.Modifier;
+import j86.java.text.MessageFormat;
+import j86.java.util.Collections;
+import j86.java.util.IdentityHashMap;
+import j86.java.util.Map;
+import j86.java.util.MissingResourceException;
+import j86.java.util.ResourceBundle;
 
 /**
  * Toolkit that provides resource support for JConsole.

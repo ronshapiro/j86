@@ -41,9 +41,9 @@
  *
  */
 
-package sun.text.resources.is;
+package j86.j86.j86.sun.text.resources.is;
 
-import java.util.ListResourceBundle;
+import j86.java.util.ListResourceBundle;
 
 public class CollationData_is extends ListResourceBundle {
 

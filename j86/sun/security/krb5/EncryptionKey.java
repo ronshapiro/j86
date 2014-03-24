@@ -29,18 +29,18 @@
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
 
-package sun.security.krb5;
+package j86.sun.security.krb5;
 
-import sun.security.util.*;
-import sun.security.krb5.internal.*;
-import sun.security.krb5.internal.crypto.*;
-import java.io.IOException;
-import java.security.GeneralSecurityException;
-import java.util.Arrays;
-import sun.security.krb5.internal.ktab.KeyTab;
-import sun.security.krb5.internal.ccache.CCacheOutputStream;
-import javax.crypto.spec.DESKeySpec;
-import javax.crypto.spec.DESedeKeySpec;
+import j86.sun.security.util.*;
+import j86.j86.sun.security.krb5.internal.*;
+import j86.j86.j86.sun.security.krb5.internal.crypto.*;
+import j86.java.io.IOException;
+import j86.java.security.GeneralSecurityException;
+import j86.java.util.Arrays;
+import j86.j86.j86.sun.security.krb5.internal.ktab.KeyTab;
+import j86.j86.j86.sun.security.krb5.internal.ccache.CCacheOutputStream;
+import j86.j86.javax.crypto.spec.DESKeySpec;
+import j86.j86.javax.crypto.spec.DESedeKeySpec;
 
 /**
  * This class encapsulates the concept of an EncryptionKey. An encryption
@@ -219,7 +219,7 @@ public class EncryptionKey
      *
      */
      // Used in JSSE (KerberosWrapper), Credentials,
-     // javax.security.auth.kerberos.KeyImpl
+     // j86.j86.javax.security.auth.kerberos.KeyImpl
     public EncryptionKey(int keyType,
                          byte[] keyValue) {
         this(keyValue, keyType, null);
@@ -266,7 +266,7 @@ public class EncryptionKey
         }
     }
 
-    // Used in javax.security.auth.kerberos.KeyImpl
+    // Used in j86.j86.javax.security.auth.kerberos.KeyImpl
     public EncryptionKey(char[] password,
                          String salt,
                          String algorithm) throws KrbCryptoException {
@@ -355,7 +355,7 @@ public class EncryptionKey
      *
      *
      */
-         // Used in javax.security.auth.kerberos.KeyImpl
+         // Used in j86.j86.javax.security.auth.kerberos.KeyImpl
     public EncryptionKey(DerValue encoding) throws Asn1Exception, IOException {
         DerValue der;
         if (encoding.getTag() != DerValue.tag_Sequence) {
@@ -459,7 +459,7 @@ public class EncryptionKey
      *
      * @param cos a <code>CCacheOutputStream</code> to be written to.
      * @exception IOException if an I/O exception occurs.
-     * @see sun.security.krb5.internal.ccache.CCacheOutputStream
+     * @see j86.j86.j86.sun.security.krb5.internal.ccache.CCacheOutputStream
      *
      */
     public synchronized void writeKey(CCacheOutputStream cos)
@@ -498,7 +498,7 @@ public class EncryptionKey
      * is null or zero, in case any side does not have kvno info available.
      *
      * Note: zero is included because N/A is not a legal value for kvno
-     * in javax.security.auth.kerberos.KerberosKey. Therefore, the info
+     * in j86.j86.javax.security.auth.kerberos.KerberosKey. Therefore, the info
      * that the kvno is N/A might be lost when converting between this
      * class and KerberosKey.
      */

@@ -23,28 +23,28 @@
  * questions.
  */
 
-package com.sun.java.swing.plaf.windows;
+package j86.j86.com.sun.java.swing.plaf.windows;
 
-import java.security.AccessController;
-import sun.security.action.GetBooleanAction;
+import j86.java.security.AccessController;
+import j86.sun.security.action.GetBooleanAction;
 
-import java.util.*;
-import java.beans.PropertyChangeListener;
-import java.beans.PropertyChangeEvent;
-import java.awt.*;
-import java.awt.event.*;
-import javax.swing.*;
+import j86.java.util.*;
+import j86.java.beans.PropertyChangeListener;
+import j86.java.beans.PropertyChangeEvent;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.javax.swing.*;
 
 
 
-import sun.swing.UIClientPropertyKey;
-import com.sun.java.swing.plaf.windows.TMSchema.State;
-import static com.sun.java.swing.plaf.windows.TMSchema.State.*;
-import com.sun.java.swing.plaf.windows.TMSchema.Part;
-import com.sun.java.swing.plaf.windows.TMSchema.Prop;
-import com.sun.java.swing.plaf.windows.XPStyle.Skin;
+import j86.sun.swing.UIClientPropertyKey;
+import j86.j86.com.sun.java.swing.plaf.windows.TMSchema.State;
+import static j86.j86.com.sun.java.swing.plaf.windows.TMSchema.State.*;
+import j86.j86.com.sun.java.swing.plaf.windows.TMSchema.Part;
+import j86.j86.com.sun.java.swing.plaf.windows.TMSchema.Prop;
+import j86.j86.com.sun.java.swing.plaf.windows.XPStyle.Skin;
 
-import sun.awt.AppContext;
+import j86.sun.awt.AppContext;
 
 /**
  * A class to help mimic Vista theme animations.  The only kind of
@@ -81,8 +81,8 @@ class AnimationController implements ActionListener, PropertyChangeListener {
 
     //this timer is used to cause repaint on animated components
     //30 repaints per second should give smooth animation affect
-    private final javax.swing.Timer timer =
-        new javax.swing.Timer(1000/30, this);
+    private final j86.javax.swing.Timer timer =
+        new j86.javax.swing.Timer(1000/30, this);
 
     private static synchronized AnimationController getAnimationController() {
         AppContext appContext = AppContext.getAppContext();
@@ -103,7 +103,7 @@ class AnimationController implements ActionListener, PropertyChangeListener {
 
     private static void triggerAnimation(JComponent c,
                            Part part, State newState) {
-        if (c instanceof javax.swing.JTabbedPane
+        if (c instanceof j86.javax.swing.JTabbedPane
             || part == Part.TP_BUTTON) {
             //idk: we can not handle tabs animation because
             //the same (component,part) is used to handle all the tabs
@@ -263,8 +263,8 @@ class AnimationController implements ActionListener, PropertyChangeListener {
     }
 
     public synchronized void actionPerformed(ActionEvent e) {
-        java.util.List<JComponent> componentsToRemove = null;
-        java.util.List<Part> partsToRemove = null;
+        j86.java.util.List<JComponent> componentsToRemove = null;
+        j86.java.util.List<Part> partsToRemove = null;
         for (JComponent component : animationStateMap.keySet()) {
             component.repaint();
             if (partsToRemove != null) {

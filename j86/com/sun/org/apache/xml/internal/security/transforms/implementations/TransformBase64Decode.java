@@ -20,24 +20,24 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.sun.org.apache.xml.internal.security.transforms.implementations;
+package j86.j86.j86.com.sun.org.apache.xml.internal.security.transforms.implementations;
 
-import java.io.BufferedInputStream;
-import java.io.IOException;
-import java.io.OutputStream;
+import j86.java.io.BufferedInputStream;
+import j86.java.io.IOException;
+import j86.java.io.OutputStream;
 
 import javax.xml.XMLConstants;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
-import com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
-import com.sun.org.apache.xml.internal.security.exceptions.Base64DecodingException;
-import com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
-import com.sun.org.apache.xml.internal.security.transforms.Transform;
-import com.sun.org.apache.xml.internal.security.transforms.TransformSpi;
-import com.sun.org.apache.xml.internal.security.transforms.TransformationException;
-import com.sun.org.apache.xml.internal.security.transforms.Transforms;
-import com.sun.org.apache.xml.internal.security.utils.Base64;
+import j86.j86.com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
+import j86.j86.com.sun.org.apache.xml.internal.security.exceptions.Base64DecodingException;
+import j86.j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
+import j86.j86.com.sun.org.apache.xml.internal.security.transforms.Transform;
+import j86.j86.com.sun.org.apache.xml.internal.security.transforms.TransformSpi;
+import j86.j86.com.sun.org.apache.xml.internal.security.transforms.TransformationException;
+import j86.j86.com.sun.org.apache.xml.internal.security.transforms.Transforms;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.Base64;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -68,7 +68,7 @@ import org.xml.sax.SAXException;
  * The output of this transform is an octet stream.</p>
  *
  * @author Christian Geuer-Pollmann
- * @see com.sun.org.apache.xml.internal.security.utils.Base64
+ * @see j86.j86.com.sun.org.apache.xml.internal.security.utils.Base64
  */
 public class TransformBase64Decode extends TransformSpi {
 

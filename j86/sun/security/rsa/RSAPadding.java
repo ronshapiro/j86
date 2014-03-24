@@ -23,20 +23,20 @@
  * questions.
  */
 
-package sun.security.rsa;
+package j86.sun.security.rsa;
 
-import java.math.BigInteger;
-import java.util.*;
+import j86.java.math.BigInteger;
+import j86.java.util.*;
 
-import java.security.*;
-import java.security.interfaces.*;
-import java.security.spec.*;
+import j86.java.security.*;
+import j86.j86.java.security.interfaces.*;
+import j86.j86.java.security.spec.*;
 
-import javax.crypto.BadPaddingException;
-import javax.crypto.spec.PSource;
-import javax.crypto.spec.OAEPParameterSpec;
+import j86.javax.crypto.BadPaddingException;
+import j86.j86.javax.crypto.spec.PSource;
+import j86.j86.javax.crypto.spec.OAEPParameterSpec;
 
-import sun.security.jca.JCAUtil;
+import j86.sun.security.jca.JCAUtil;
 
 /**
  * RSA padding and unpadding.
@@ -54,7 +54,7 @@ import sun.security.jca.JCAUtil;
  *     implementation must be available
  *   . MGF1 as the mask generation function
  *   . the empty string as the default value for label L and whatever
- *     specified in javax.crypto.spec.OAEPParameterSpec
+ *     specified in j86.j86.javax.crypto.spec.OAEPParameterSpec
  *
  * Note: RSA keys should be at least 512 bits long
  *

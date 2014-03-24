@@ -22,12 +22,12 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.security.provider.certpath;
+package j86.j86.sun.security.provider.certpath;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.List;
+import j86.java.util.ArrayList;
+import j86.java.util.Collections;
+import j86.java.util.Iterator;
+import j86.java.util.List;
 
 /**
  * An AdjacencyList is used to store the history of certification paths
@@ -76,8 +76,8 @@ import java.util.List;
  * the end of the build process, and there will not be any more entries in
  * the list.
  * <p>
- * @see sun.security.provider.certpath.BuildStep
- * @see sun.security.provider.certpath.Vertex
+ * @see j86.j86.sun.security.provider.certpath.BuildStep
+ * @see j86.j86.sun.security.provider.certpath.Vertex
  * <p>
  * @author  seth proctor
  * @since   1.4

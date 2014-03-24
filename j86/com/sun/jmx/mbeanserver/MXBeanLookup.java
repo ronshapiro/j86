@@ -23,20 +23,20 @@
  * questions.
  */
 
-package com.sun.jmx.mbeanserver;
+package j86.com.sun.jmx.mbeanserver;
 
-import static com.sun.jmx.mbeanserver.Util.*;
-import java.util.Map;
-import java.lang.ref.WeakReference;
-import java.lang.reflect.InvocationHandler;
-import java.lang.reflect.Proxy;
-import java.security.AccessController;
-import javax.management.InstanceAlreadyExistsException;
-import javax.management.JMX;
-import javax.management.MBeanServerConnection;
-import javax.management.MBeanServerInvocationHandler;
-import javax.management.ObjectName;
-import javax.management.openmbean.OpenDataException;
+import static j86.com.sun.jmx.mbeanserver.Util.*;
+import j86.java.util.Map;
+import j86.j86.java.lang.ref.WeakReference;
+import j86.j86.j86.java.lang.reflect.InvocationHandler;
+import j86.j86.j86.java.lang.reflect.Proxy;
+import j86.java.security.AccessController;
+import j86.javax.management.InstanceAlreadyExistsException;
+import j86.javax.management.JMX;
+import j86.javax.management.MBeanServerConnection;
+import j86.javax.management.MBeanServerInvocationHandler;
+import j86.javax.management.ObjectName;
+import j86.j86.javax.management.openmbean.OpenDataException;
 
 /**
  * @since 1.6

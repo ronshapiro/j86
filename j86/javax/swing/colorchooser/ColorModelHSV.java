@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.swing.colorchooser;
+package j86.j86.javax.swing.colorchooser;
 
 final class ColorModelHSV extends ColorModel {
 

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.math;
+package j86.java.math;
 
 /**
  * A class used to represent multiprecision integers that makes efficient
@@ -42,9 +42,9 @@ package java.math;
  * @since   1.3
  */
 
-import static java.math.BigDecimal.INFLATED;
-import static java.math.BigInteger.LONG_MASK;
-import java.util.Arrays;
+import static j86.java.math.BigDecimal.INFLATED;
+import static j86.java.math.BigInteger.LONG_MASK;
+import j86.java.util.Arrays;
 
 class MutableBigInteger {
     /**

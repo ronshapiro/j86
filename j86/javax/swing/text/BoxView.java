@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text;
+package j86.j86.javax.swing.text;
 
-import java.io.PrintStream;
-import java.util.Vector;
-import java.awt.*;
-import javax.swing.event.DocumentEvent;
-import javax.swing.SizeRequirements;
+import j86.java.io.PrintStream;
+import j86.java.util.Vector;
+import j86.java.awt.*;
+import j86.j86.javax.swing.event.DocumentEvent;
+import j86.javax.swing.SizeRequirements;
 
 /**
  * A view that arranges its children into a box shape by tiling
@@ -857,7 +857,7 @@ public class BoxView extends CompositeView {
      * @param r the <code>SizeRequirements</code> object;
      *          if <code>null</code> one will be created
      * @return the newly initialized <code>SizeRequirements</code> object
-     * @see javax.swing.SizeRequirements
+     * @see j86.javax.swing.SizeRequirements
      */
     protected SizeRequirements calculateMajorAxisRequirements(int axis, SizeRequirements r) {
         // calculate tiled request
@@ -891,7 +891,7 @@ public class BoxView extends CompositeView {
      * @param r the <code>SizeRequirements</code> object;
      *          if <code>null</code> one will be created
      * @return the newly initialized <code>SizeRequirements</code> object
-     * @see javax.swing.SizeRequirements
+     * @see j86.javax.swing.SizeRequirements
      */
     protected SizeRequirements calculateMinorAxisRequirements(int axis, SizeRequirements r) {
         int min = 0;

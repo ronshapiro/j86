@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.font;
+package j86.sun.font;
 
 /*
  * This isn't a critical performance case, so don't do any

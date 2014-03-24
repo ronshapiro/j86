@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.font;
+package j86.sun.font;
 
-import java.awt.Font;
+import j86.java.awt.Font;
 
 /* Remind: need to enhance to extend component list with a fallback
  * list, which is not used in metrics or queries on the composite, but
@@ -447,8 +447,8 @@ public final class CompositeFont extends Font2D {
     }
 
     public String toString() {
-        String ls = (String)java.security.AccessController.doPrivileged(
-                new sun.security.action.GetPropertyAction("line.separator"));
+        String ls = (String)j86.java.security.AccessController.doPrivileged(
+                new j86.sun.security.action.GetPropertyAction("line.separator"));
         String componentsStr = "";
         for (int i=0; i<numSlots; i++) {
             componentsStr += "    Slot["+i+"]="+getSlotFont(i)+ls;

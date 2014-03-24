@@ -27,20 +27,20 @@
 /*
  * (C) Copyright IBM Corp. 1999,  All rights reserved.
  */
-package java.awt.font;
+package j86.j86.java.awt.font;
 
-import java.awt.Font;
-import java.awt.Toolkit;
-import java.awt.im.InputMethodHighlight;
-import java.text.Annotation;
-import java.text.AttributedCharacterIterator;
-import java.text.AttributedCharacterIterator.Attribute;
-import java.util.Vector;
-import java.util.HashMap;
-import java.util.Map;
-import sun.font.Decoration;
-import sun.font.FontResolver;
-import sun.text.CodePointIterator;
+import j86.java.awt.Font;
+import j86.java.awt.Toolkit;
+import j86.j86.java.awt.im.InputMethodHighlight;
+import j86.java.text.Annotation;
+import j86.java.text.AttributedCharacterIterator;
+import j86.java.text.AttributedCharacterIterator.Attribute;
+import j86.java.util.Vector;
+import j86.java.util.HashMap;
+import j86.java.util.Map;
+import j86.sun.font.Decoration;
+import j86.sun.font.FontResolver;
+import j86.sun.text.CodePointIterator;
 
 /**
  * This class stores Font, GraphicAttribute, and Decoration intervals

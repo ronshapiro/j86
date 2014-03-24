@@ -23,14 +23,14 @@
  * questions.
  */
 
-package javax.imageio.stream;
+package j86.j86.javax.imageio.stream;
 
-import java.io.DataInputStream;
-import java.io.EOFException;
-import java.io.IOException;
-import java.nio.ByteOrder;
-import java.util.Stack;
-import javax.imageio.IIOException;
+import j86.java.io.DataInputStream;
+import j86.java.io.EOFException;
+import j86.java.io.IOException;
+import j86.java.nio.ByteOrder;
+import j86.java.util.Stack;
+import j86.javax.imageio.IIOException;
 
 /**
  * An abstract class implementing the <code>ImageInputStream</code> interface.
@@ -63,7 +63,7 @@ public abstract class ImageInputStreamImpl implements ImageInputStream {
 
     /**
      * The byte order of the stream as an instance of the enumeration
-     * class <code>java.nio.ByteOrder</code>, where
+     * class <code>j86.java.nio.ByteOrder</code>, where
      * <code>ByteOrder.BIG_ENDIAN</code> indicates network byte order
      * and <code>ByteOrder.LITTLE_ENDIAN</code> indicates the reverse
      * order.  By default, the value is

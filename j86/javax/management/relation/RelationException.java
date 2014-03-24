@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.management.relation;
+package j86.j86.javax.management.relation;
 
-import javax.management.JMException;
+import j86.javax.management.JMException;
 
 /**
  * This class is the superclass of any exception which can be raised during

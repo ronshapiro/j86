@@ -23,15 +23,15 @@
  * questions.
  */
 
-package javax.swing.plaf.synth;
+package j86.j86.j86.javax.swing.plaf.synth;
 
-import sun.swing.StringUIClientPropertyKey;
-import sun.swing.MenuItemLayoutHelper;
-import sun.swing.plaf.synth.SynthIcon;
+import j86.sun.swing.StringUIClientPropertyKey;
+import j86.sun.swing.MenuItemLayoutHelper;
+import j86.j86.j86.sun.swing.plaf.synth.SynthIcon;
 
-import javax.swing.*;
-import javax.swing.text.View;
-import java.awt.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.text.View;
+import j86.java.awt.*;
 
 /**
  * Calculates preferred size and layouts synth menu items.

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.swing.event;
+package j86.j86.javax.swing.event;
 
 /**
  * An abstract adapter class for receiving internal frame events.
@@ -36,7 +36,7 @@ package javax.swing.event;
  *
  * @see InternalFrameEvent
  * @see InternalFrameListener
- * @see java.awt.event.WindowListener
+ * @see j86.j86.java.awt.event.WindowListener
  *
  * @author Thomas Ball
  */

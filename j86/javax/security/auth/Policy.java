@@ -23,14 +23,14 @@
  * questions.
  */
 
-package javax.security.auth;
+package j86.javax.security.auth;
 
-import java.security.Security;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.security.PrivilegedExceptionAction;
-import java.util.Objects;
-import sun.security.util.Debug;
+import j86.java.security.Security;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.security.PrivilegedExceptionAction;
+import j86.java.util.Objects;
+import j86.sun.security.util.Debug;
 
 /**
  * <p> This is an abstract class for representing the system policy for
@@ -82,8 +82,8 @@ import sun.security.util.Debug;
  *
  * <pre>
  *      grant CodeBase "foo.com", Signedby "foo",
- *            Principal com.sun.security.auth.SolarisPrincipal "duke" {
- *          permission java.io.FilePermission "/home/duke", "read, write";
+ *            Principal j86.com.sun.security.auth.SolarisPrincipal "duke" {
+ *          permission j86.java.io.FilePermission "/home/duke", "read, write";
  *      };
  * </pre>
  *
@@ -107,10 +107,10 @@ import sun.security.util.Debug;
  * for that {@code Subject} to be granted the specified Permissions.
  *
  * <pre>
- *      grant Principal com.sun.security.auth.SolarisPrincipal "duke",
- *            Principal com.sun.security.auth.SolarisNumericUserPrincipal "0" {
- *          permission java.io.FilePermission "/home/duke", "read, write";
- *          permission java.net.SocketPermission "duke.com", "connect";
+ *      grant Principal j86.com.sun.security.auth.SolarisPrincipal "duke",
+ *            Principal j86.com.sun.security.auth.SolarisNumericUserPrincipal "0" {
+ *          permission j86.java.io.FilePermission "/home/duke", "read, write";
+ *          permission j86.java.net.SocketPermission "duke.com", "connect";
  *      };
  * </pre>
  *
@@ -123,22 +123,22 @@ import sun.security.util.Debug;
  *
  * <pre>
  *      grant CodeBase "foo.com", Signedby "foo" {
- *          permission java.io.FilePermission "/tmp/scratch", "read, write";
+ *          permission j86.java.io.FilePermission "/tmp/scratch", "read, write";
  *      };
  * </pre>
  *
  * are rejected.  Such permission must be listed in the
- * {@code java.security.Policy}.
+ * {@code j86.java.security.Policy}.
  *
  * <p> The default {@code Policy} implementation can be changed by
  * setting the value of the {@code auth.policy.provider} security property to
  * the fully qualified name of the desired {@code Policy} implementation class.
  *
- * @deprecated  as of JDK version 1.4 -- Replaced by java.security.Policy.
- *              java.security.Policy has a method:
+ * @deprecated  as of JDK version 1.4 -- Replaced by j86.java.security.Policy.
+ *              j86.java.security.Policy has a method:
  * <pre>
  *      public PermissionCollection getPermissions
- *          (java.security.ProtectionDomain pd)
+ *          (j86.java.security.ProtectionDomain pd)
  *
  * </pre>
  * and ProtectionDomain has a constructor:
@@ -153,17 +153,17 @@ import sun.security.util.Debug;
  * These two APIs provide callers the means to query the
  * Policy for Principal-based Permission entries.
  *
- * @see java.security.Security security properties
+ * @see j86.java.security.Security security properties
  */
 @Deprecated
 public abstract class Policy {
 
     private static Policy policy;
     private final static String AUTH_POLICY =
-        "sun.security.provider.AuthPolicyFile";
+        "j86.sun.security.provider.AuthPolicyFile";
 
-    private final java.security.AccessControlContext acc =
-            java.security.AccessController.getContext();
+    private final j86.java.security.AccessControlContext acc =
+            j86.java.security.AccessController.getContext();
 
     // true if a custom (not AUTH_POLICY) system-wide policy object is set
     private static boolean isCustomPolicy;
@@ -186,13 +186,13 @@ public abstract class Policy {
      * @return the installed Policy.  The return value cannot be
      *          {@code null}.
      *
-     * @exception java.lang.SecurityException if the current thread does not
+     * @exception j86.java.lang.SecurityException if the current thread does not
      *      have permission to get the Policy object.
      *
      * @see #setPolicy
      */
     public static Policy getPolicy() {
-        java.lang.SecurityManager sm = System.getSecurityManager();
+        j86.java.lang.SecurityManager sm = System.getSecurityManager();
         if (sm != null) sm.checkPermission(new AuthPermission("getPolicy"));
         return getPolicyNoCheck();
     }
@@ -213,7 +213,7 @@ public abstract class Policy {
                     policy_class = AccessController.doPrivileged
                         (new PrivilegedAction<String>() {
                         public String run() {
-                            return java.security.Security.getProperty
+                            return j86.java.security.Security.getProperty
                                 ("auth.policy.provider");
                         }
                     });
@@ -247,7 +247,7 @@ public abstract class Policy {
                         );
                     } catch (Exception e) {
                         throw new SecurityException
-                                (sun.security.util.ResourcesMgr.getString
+                                (j86.sun.security.util.ResourcesMgr.getString
                                 ("unable.to.instantiate.Subject.based.policy"));
                     }
                 }
@@ -267,13 +267,13 @@ public abstract class Policy {
      *
      * @param policy the new system Policy object.
      *
-     * @exception java.lang.SecurityException if the current thread does not
+     * @exception j86.java.lang.SecurityException if the current thread does not
      *          have permission to set the Policy.
      *
      * @see #getPolicy
      */
     public static void setPolicy(Policy policy) {
-        java.lang.SecurityManager sm = System.getSecurityManager();
+        j86.java.lang.SecurityManager sm = System.getSecurityManager();
         if (sm != null) sm.checkPermission(new AuthPermission("setPolicy"));
         Policy.policy = policy;
         // all non-null policy objects are assumed to be custom
@@ -284,7 +284,7 @@ public abstract class Policy {
      * Returns true if a custom (not AUTH_POLICY) system-wide policy object
      * has been set or installed. This method is called by
      * SubjectDomainCombiner to provide backwards compatibility for
-     * developers that provide their own javax.security.auth.Policy
+     * developers that provide their own j86.javax.security.auth.Policy
      * implementations.
      *
      * @return true if a custom (not AUTH_POLICY) system-wide policy object
@@ -294,14 +294,14 @@ public abstract class Policy {
         if (policy != null) {
             if (debug != null && isCustomPolicy) {
                 debug.println("Providing backwards compatibility for " +
-                              "javax.security.auth.policy implementation: " +
+                              "j86.javax.security.auth.policy implementation: " +
                               policy.toString());
             }
             return isCustomPolicy;
         }
         // check if custom policy has been set using auth.policy.provider prop
-        String policyClass = java.security.AccessController.doPrivileged
-            (new java.security.PrivilegedAction<String>() {
+        String policyClass = j86.java.security.AccessController.doPrivileged
+            (new j86.java.security.PrivilegedAction<String>() {
                 public String run() {
                     return Security.getProperty("auth.policy.provider");
                 }
@@ -309,7 +309,7 @@ public abstract class Policy {
         if (policyClass != null && !policyClass.equals(AUTH_POLICY)) {
             if (debug != null) {
                 debug.println("Providing backwards compatibility for " +
-                              "javax.security.auth.policy implementation: " +
+                              "j86.javax.security.auth.policy implementation: " +
                               policyClass);
             }
             return true;
@@ -341,9 +341,9 @@ public abstract class Policy {
      *                  the provided <i>subject</i> and <i>cs</i>
      *                  parameters.
      */
-    public abstract java.security.PermissionCollection getPermissions
+    public abstract j86.java.security.PermissionCollection getPermissions
                                         (Subject subject,
-                                        java.security.CodeSource cs);
+                                        j86.java.security.CodeSource cs);
 
     /**
      * Refresh and reload the Policy.

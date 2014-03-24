@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.misc.resources;
+package j86.j86.sun.misc.resources;
 
 /**
  * <p> This class represents the <code>ResourceBundle</code>
- * for sun.misc.
+ * for j86.sun.misc.
  *
  * @author Michael Colburn
  */
 
-public class Messages_zh_TW extends java.util.ListResourceBundle {
+public class Messages_zh_TW extends j86.java.util.ListResourceBundle {
 
     /**
      * Returns the contents of this <code>ResourceBundle</code>.

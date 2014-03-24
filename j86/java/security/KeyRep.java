@@ -23,17 +23,17 @@
  * questions.
  */
 
-package java.security;
+package j86.java.security;
 
-import java.io.*;
-import java.util.Locale;
+import j86.java.io.*;
+import j86.java.util.Locale;
 
-import java.security.spec.PKCS8EncodedKeySpec;
-import java.security.spec.X509EncodedKeySpec;
-import java.security.spec.InvalidKeySpecException;
+import j86.j86.java.security.spec.PKCS8EncodedKeySpec;
+import j86.j86.java.security.spec.X509EncodedKeySpec;
+import j86.j86.java.security.spec.InvalidKeySpecException;
 
-import javax.crypto.SecretKeyFactory;
-import javax.crypto.spec.SecretKeySpec;
+import j86.javax.crypto.SecretKeyFactory;
+import j86.j86.javax.crypto.spec.SecretKeySpec;
 
 /**
  * Standardized representation for serialized Key objects.
@@ -48,9 +48,9 @@ import javax.crypto.spec.SecretKeySpec;
  *
  * @see Key
  * @see KeyFactory
- * @see javax.crypto.spec.SecretKeySpec
- * @see java.security.spec.X509EncodedKeySpec
- * @see java.security.spec.PKCS8EncodedKeySpec
+ * @see j86.j86.javax.crypto.spec.SecretKeySpec
+ * @see j86.j86.java.security.spec.X509EncodedKeySpec
+ * @see j86.j86.java.security.spec.PKCS8EncodedKeySpec
  *
  * @since 1.5
  */
@@ -185,7 +185,7 @@ public class KeyRep implements Serializable {
             throw nse;
         } catch (Exception e) {
             NotSerializableException nse = new NotSerializableException
-                                        ("java.security.Key: " +
+                                        ("j86.java.security.Key: " +
                                         "[" + type + "] " +
                                         "[" + algorithm + "] " +
                                         "[" + format + "]");

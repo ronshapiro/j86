@@ -23,28 +23,28 @@
  * questions.
  */
 
-package com.sun.jmx.mbeanserver;
+package j86.com.sun.jmx.mbeanserver;
 
-import com.sun.jmx.mbeanserver.MBeanIntrospector.MBeanInfoMap;
-import com.sun.jmx.mbeanserver.MBeanIntrospector.PerInterfaceMap;
-import java.lang.annotation.Annotation;
-import java.lang.reflect.GenericArrayType;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.lang.reflect.ParameterizedType;
-import java.lang.reflect.Type;
-import javax.management.Descriptor;
-import javax.management.ImmutableDescriptor;
-import javax.management.MBeanAttributeInfo;
-import javax.management.MBeanException;
-import javax.management.MBeanOperationInfo;
-import javax.management.MBeanParameterInfo;
-import javax.management.NotCompliantMBeanException;
-import javax.management.openmbean.OpenMBeanAttributeInfoSupport;
-import javax.management.openmbean.OpenMBeanOperationInfoSupport;
-import javax.management.openmbean.OpenMBeanParameterInfo;
-import javax.management.openmbean.OpenMBeanParameterInfoSupport;
-import javax.management.openmbean.OpenType;
+import j86.com.sun.jmx.mbeanserver.MBeanIntrospector.MBeanInfoMap;
+import j86.com.sun.jmx.mbeanserver.MBeanIntrospector.PerInterfaceMap;
+import j86.j86.java.lang.annotation.Annotation;
+import j86.j86.j86.java.lang.reflect.GenericArrayType;
+import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.j86.j86.java.lang.reflect.ParameterizedType;
+import j86.j86.j86.java.lang.reflect.Type;
+import j86.javax.management.Descriptor;
+import j86.javax.management.ImmutableDescriptor;
+import j86.javax.management.MBeanAttributeInfo;
+import j86.javax.management.MBeanException;
+import j86.javax.management.MBeanOperationInfo;
+import j86.javax.management.MBeanParameterInfo;
+import j86.javax.management.NotCompliantMBeanException;
+import j86.j86.javax.management.openmbean.OpenMBeanAttributeInfoSupport;
+import j86.j86.javax.management.openmbean.OpenMBeanOperationInfoSupport;
+import j86.j86.javax.management.openmbean.OpenMBeanParameterInfo;
+import j86.j86.javax.management.openmbean.OpenMBeanParameterInfoSupport;
+import j86.j86.javax.management.openmbean.OpenType;
 
 /**
  * Introspector for MXBeans.  There is exactly one instance of this class.
@@ -310,7 +310,7 @@ class MXBeanIntrospector extends MBeanIntrospector<ConvertingMethod> {
      * <p>Compatibility with JSR 174 means that primitive types must be
      * represented by an MBean*Info whose getType() is the primitive type
      * string, e.g. "int".  If we used an OpenMBean*Info then this string
-     * would be the wrapped type, e.g. "java.lang.Integer".</p>
+     * would be the wrapped type, e.g. "j86.java.lang.Integer".</p>
      *
      * <p>Compatibility with JMX 1.2 (including J2SE 5.0) means that arrays
      * of primitive types cannot use an ArrayType representing an array of

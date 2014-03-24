@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.security.util;
+package j86.sun.security.util;
 
-import java.security.*;
-import java.util.HashMap;
-import java.io.ByteArrayOutputStream;
+import j86.java.security.*;
+import j86.java.util.HashMap;
+import j86.java.io.ByteArrayOutputStream;
 
 /**
  * This class is used to compute digests on sections of the Manifest.
@@ -171,7 +171,7 @@ public class ManifestDigester {
                             new Entry(start, sectionLen, sectionLenWithBlank,
                                 rawBytes));
 
-                    } catch (java.io.UnsupportedEncodingException uee) {
+                    } catch (j86.java.io.UnsupportedEncodingException uee) {
                         throw new IllegalStateException(
                             "UTF8 not available on platform");
                     }

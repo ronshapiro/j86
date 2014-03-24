@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.tools.java;
+package j86.sun.tools.java;
 
 /**
  * A single exception handler.  This class hangs off BinaryCode.

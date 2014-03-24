@@ -23,35 +23,35 @@
  * questions.
  */
 
-package javax.swing.plaf.metal;
+package j86.j86.j86.javax.swing.plaf.metal;
 
-import java.awt.Component;
-import java.awt.Container;
-import java.awt.LayoutManager;
-import java.awt.Adjustable;
-import java.awt.event.AdjustmentListener;
-import java.awt.event.AdjustmentEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
-import java.awt.event.MouseListener;
-import java.awt.event.MouseMotionListener;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-import java.awt.Graphics;
-import java.awt.Dimension;
-import java.awt.Rectangle;
-import java.awt.Point;
-import java.awt.Insets;
-import java.awt.Color;
-import java.awt.IllegalComponentStateException;
+import j86.java.awt.Component;
+import j86.java.awt.Container;
+import j86.java.awt.LayoutManager;
+import j86.java.awt.Adjustable;
+import j86.j86.java.awt.event.AdjustmentListener;
+import j86.j86.java.awt.event.AdjustmentEvent;
+import j86.j86.java.awt.event.ActionListener;
+import j86.j86.java.awt.event.ActionEvent;
+import j86.j86.java.awt.event.MouseListener;
+import j86.j86.java.awt.event.MouseMotionListener;
+import j86.j86.java.awt.event.MouseAdapter;
+import j86.j86.java.awt.event.MouseEvent;
+import j86.java.awt.Graphics;
+import j86.java.awt.Dimension;
+import j86.java.awt.Rectangle;
+import j86.java.awt.Point;
+import j86.java.awt.Insets;
+import j86.java.awt.Color;
+import j86.java.awt.IllegalComponentStateException;
 
-import java.beans.*;
+import j86.java.beans.*;
 
-import javax.swing.*;
-import javax.swing.event.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.event.*;
 
-import javax.swing.plaf.*;
-import javax.swing.plaf.basic.BasicScrollBarUI;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.j86.javax.swing.plaf.basic.BasicScrollBarUI;
 
 
 /**

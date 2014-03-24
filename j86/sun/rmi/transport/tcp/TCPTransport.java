@@ -22,60 +22,60 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.rmi.transport.tcp;
+package j86.j86.sun.rmi.transport.tcp;
 
-import java.lang.ref.Reference;
-import java.lang.ref.SoftReference;
-import java.lang.ref.WeakReference;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.UndeclaredThrowableException;
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.BufferedInputStream;
-import java.io.BufferedOutputStream;
-import java.net.InetAddress;
-import java.net.ServerSocket;
-import java.net.Socket;
-import java.rmi.RemoteException;
-import java.rmi.server.ExportException;
-import java.rmi.server.LogStream;
-import java.rmi.server.RMIFailureHandler;
-import java.rmi.server.RMISocketFactory;
-import java.rmi.server.RemoteCall;
-import java.rmi.server.ServerNotActiveException;
-import java.rmi.server.UID;
-import java.security.AccessControlContext;
-import java.security.AccessController;
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-import java.util.WeakHashMap;
-import java.util.logging.Level;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.RejectedExecutionException;
-import java.util.concurrent.SynchronousQueue;
-import java.util.concurrent.ThreadFactory;
-import java.util.concurrent.ThreadPoolExecutor;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.atomic.AtomicInteger;
-import sun.rmi.runtime.Log;
-import sun.rmi.runtime.NewThreadAction;
-import sun.rmi.transport.Channel;
-import sun.rmi.transport.Connection;
-import sun.rmi.transport.DGCAckHandler;
-import sun.rmi.transport.Endpoint;
-import sun.rmi.transport.StreamRemoteCall;
-import sun.rmi.transport.Target;
-import sun.rmi.transport.Transport;
-import sun.rmi.transport.TransportConstants;
-import sun.rmi.transport.proxy.HttpReceiveSocket;
-import sun.security.action.GetIntegerAction;
-import sun.security.action.GetLongAction;
-import sun.security.action.GetPropertyAction;
+import j86.j86.java.lang.ref.Reference;
+import j86.j86.java.lang.ref.SoftReference;
+import j86.j86.java.lang.ref.WeakReference;
+import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.j86.j86.java.lang.reflect.UndeclaredThrowableException;
+import j86.java.io.DataInputStream;
+import j86.java.io.DataOutputStream;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.io.OutputStream;
+import j86.java.io.BufferedInputStream;
+import j86.java.io.BufferedOutputStream;
+import j86.java.net.InetAddress;
+import j86.java.net.ServerSocket;
+import j86.java.net.Socket;
+import j86.java.rmi.RemoteException;
+import j86.j86.java.rmi.server.ExportException;
+import j86.j86.java.rmi.server.LogStream;
+import j86.j86.java.rmi.server.RMIFailureHandler;
+import j86.j86.java.rmi.server.RMISocketFactory;
+import j86.j86.java.rmi.server.RemoteCall;
+import j86.j86.java.rmi.server.ServerNotActiveException;
+import j86.j86.java.rmi.server.UID;
+import j86.java.security.AccessControlContext;
+import j86.java.security.AccessController;
+import j86.java.util.ArrayList;
+import j86.java.util.LinkedList;
+import j86.java.util.List;
+import j86.java.util.Map;
+import j86.java.util.WeakHashMap;
+import j86.j86.java.util.logging.Level;
+import j86.j86.java.util.concurrent.ExecutorService;
+import j86.j86.java.util.concurrent.RejectedExecutionException;
+import j86.j86.java.util.concurrent.SynchronousQueue;
+import j86.j86.java.util.concurrent.ThreadFactory;
+import j86.j86.java.util.concurrent.ThreadPoolExecutor;
+import j86.j86.java.util.concurrent.TimeUnit;
+import j86.j86.j86.java.util.concurrent.atomic.AtomicInteger;
+import j86.sun.rmi.runtime.Log;
+import j86.sun.rmi.runtime.NewThreadAction;
+import j86.sun.rmi.transport.Channel;
+import j86.sun.rmi.transport.Connection;
+import j86.sun.rmi.transport.DGCAckHandler;
+import j86.sun.rmi.transport.Endpoint;
+import j86.sun.rmi.transport.StreamRemoteCall;
+import j86.sun.rmi.transport.Target;
+import j86.sun.rmi.transport.Transport;
+import j86.sun.rmi.transport.TransportConstants;
+import j86.j86.sun.rmi.transport.proxy.HttpReceiveSocket;
+import j86.sun.security.action.GetIntegerAction;
+import j86.sun.security.action.GetLongAction;
+import j86.sun.security.action.GetPropertyAction;
 
 /**
  * TCPTransport is the socket-based implementation of the RMI Transport
@@ -88,20 +88,20 @@ import sun.security.action.GetPropertyAction;
 public class TCPTransport extends Transport {
 
     /* tcp package log */
-    static final Log tcpLog = Log.getLog("sun.rmi.transport.tcp", "tcp",
+    static final Log tcpLog = Log.getLog("j86.j86.sun.rmi.transport.tcp", "tcp",
         LogStream.parseLevel(AccessController.doPrivileged(
-            new GetPropertyAction("sun.rmi.transport.tcp.logLevel"))));
+            new GetPropertyAction("j86.j86.sun.rmi.transport.tcp.logLevel"))));
 
     /** maximum number of connection handler threads */
     private static final int maxConnectionThreads =     // default no limit
         AccessController.doPrivileged(
-            new GetIntegerAction("sun.rmi.transport.tcp.maxConnectionThreads",
+            new GetIntegerAction("j86.j86.sun.rmi.transport.tcp.maxConnectionThreads",
                                  Integer.MAX_VALUE));
 
     /** keep alive time for idle connection handler threads */
     private static final long threadKeepAliveTime =     // default 1 minute
         AccessController.doPrivileged(
-            new GetLongAction("sun.rmi.transport.tcp.threadKeepAliveTime",
+            new GetLongAction("j86.j86.sun.rmi.transport.tcp.threadKeepAliveTime",
                               60000));
 
     /** thread pool for connection handlers */
@@ -144,7 +144,7 @@ public class TCPTransport extends Transport {
      */
     private static final int connectionReadTimeout =    // default 2 hours
         AccessController.doPrivileged(
-            new GetIntegerAction("sun.rmi.transport.tcp.readTimeout",
+            new GetIntegerAction("j86.j86.sun.rmi.transport.tcp.readTimeout",
                                  2 * 3600 * 1000));
 
     /**
@@ -326,7 +326,7 @@ public class TCPTransport extends Transport {
                     new NewThreadAction(new AcceptLoop(server),
                                         "TCP Accept-" + port, true));
                 t.start();
-            } catch (java.net.BindException e) {
+            } catch (j86.java.net.BindException e) {
                 throw new ExportException("Port already in use: " + port, e);
             } catch (IOException e) {
                 throw new ExportException("Listen failed on port: " + port, e);

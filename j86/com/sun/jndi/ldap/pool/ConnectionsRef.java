@@ -23,14 +23,14 @@
  * questions.
  */
 
-package com.sun.jndi.ldap.pool;
+package j86.j86.com.sun.jndi.ldap.pool;
 
 /**
  * Is a reference to Connections that is stored in Pool.
  * This is an intermediate object that is outside of the circular
  * reference loop of
- *  com.sun.jndi.ldap.Connection <-> com.sun.jndi.ldap.LdapClient
- *    <-> com.sun.jndi.ldap.pool.Connections
+ *  j86.com.sun.jndi.ldap.Connection <-> com.sun.jndi.ldap.LdapClient
+ *    <-> j86.j86.com.sun.jndi.ldap.pool.Connections
  *
  * Because Connection is a daemon thread, it will keep LdapClient
  * alive until LdapClient closes Connection. This will in turn
@@ -38,7 +38,7 @@ package com.sun.jndi.ldap.pool;
  * from (the WeakHashMap of) Pool, it won't be finalized.
  * ConnectionsRef acts as Connections's finalizer.
  *
- * Without connection pooling, com.sun.jndi.ldap.LdapCtx's finalize()
+ * Without connection pooling, j86.com.sun.jndi.ldap.LdapCtx's finalize()
  * closes LdapClient, which in turn closes Connection.
  * With connection pooling, ConnectionsRef's finalize() calls
  * Connections.close(), which in turn will close all idle connections

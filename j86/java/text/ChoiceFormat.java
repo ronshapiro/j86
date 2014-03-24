@@ -36,12 +36,12 @@
  *
  */
 
-package java.text;
+package j86.java.text;
 
-import java.io.InvalidObjectException;
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.util.Arrays;
+import j86.java.io.InvalidObjectException;
+import j86.java.io.IOException;
+import j86.java.io.ObjectInputStream;
+import j86.java.util.Arrays;
 
 /**
  * A <code>ChoiceFormat</code> allows you to attach a format to a range of numbers.

@@ -22,25 +22,25 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing;
+package j86.javax.swing;
 
-import java.awt.Component;
-import java.awt.Container;
-import java.awt.FocusTraversalPolicy;
-import java.util.Comparator;
+import j86.java.awt.Component;
+import j86.java.awt.Container;
+import j86.java.awt.FocusTraversalPolicy;
+import j86.java.util.Comparator;
 
 
 /**
  * This class has been obsoleted by the 1.4 focus APIs. While client code may
  * still use this class, developers are strongly encouraged to use
- * <code>java.awt.KeyboardFocusManager</code> and
- * <code>java.awt.DefaultKeyboardFocusManager</code> instead.
+ * <code>j86.java.awt.KeyboardFocusManager</code> and
+ * <code>j86.java.awt.DefaultKeyboardFocusManager</code> instead.
  * <p>
  * Please see
  * <a href="http://docs.oracle.com/javase/tutorial/uiswing/misc/focus.html">
  * How to Use the Focus Subsystem</a>,
  * a section in <em>The Java Tutorial</em>, and the
- * <a href="../../java/awt/doc-files/FocusSpec.html">Focus Specification</a>
+ * <a href="../../j86.java.awt/doc-files/FocusSpec.html">Focus Specification</a>
  * for more information.
  *
  * @author Arnaud Weber

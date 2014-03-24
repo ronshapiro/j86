@@ -54,18 +54,18 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package java.time;
+package j86.java.time;
 
-import java.io.DataInput;
-import java.io.DataOutput;
-import java.io.IOException;
-import java.io.InvalidObjectException;
-import java.io.ObjectInputStream;
-import java.io.Serializable;
-import java.time.zone.ZoneRules;
-import java.time.zone.ZoneRulesException;
-import java.time.zone.ZoneRulesProvider;
-import java.util.Objects;
+import j86.java.io.DataInput;
+import j86.java.io.DataOutput;
+import j86.java.io.IOException;
+import j86.java.io.InvalidObjectException;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.Serializable;
+import j86.j86.java.time.zone.ZoneRules;
+import j86.j86.java.time.zone.ZoneRulesException;
+import j86.j86.java.time.zone.ZoneRulesProvider;
+import j86.java.util.Objects;
 
 /**
  * A geographical region where the same time-zone rules apply.
@@ -180,7 +180,7 @@ final class ZoneRegion extends ZoneId implements Serializable {
     //-----------------------------------------------------------------------
     /**
      * Writes the object using a
-     * <a href="../../serialized-form.html#java.time.Ser">dedicated serialized form</a>.
+     * <a href="../../serialized-form.html#j86.java.time.Ser">dedicated serialized form</a>.
      * @serialData
      * <pre>
      *  out.writeByte(7);  // identifies a ZoneId (not ZoneOffset)

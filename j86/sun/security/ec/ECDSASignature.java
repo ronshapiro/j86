@@ -23,17 +23,17 @@
  * questions.
  */
 
-package sun.security.ec;
+package j86.sun.security.ec;
 
-import java.nio.ByteBuffer;
-import java.math.BigInteger;
+import j86.java.nio.ByteBuffer;
+import j86.java.math.BigInteger;
 
-import java.security.*;
-import java.security.interfaces.*;
-import java.security.spec.*;
+import j86.java.security.*;
+import j86.j86.java.security.interfaces.*;
+import j86.j86.java.security.spec.*;
 
-import sun.security.jca.JCAUtil;
-import sun.security.util.*;
+import j86.sun.security.jca.JCAUtil;
+import j86.sun.security.util.*;
 
 /**
  * ECDSA signature implementation. This class currently supports the

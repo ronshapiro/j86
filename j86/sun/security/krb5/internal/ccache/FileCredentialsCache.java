@@ -31,19 +31,19 @@
  * ===========================================================================
  *
  */
-package sun.security.krb5.internal.ccache;
+package j86.j86.j86.sun.security.krb5.internal.ccache;
 
-import sun.security.krb5.*;
-import sun.security.krb5.internal.*;
-import java.util.StringTokenizer;
-import java.util.Vector;
-import java.io.IOException;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.lang.reflect.*;
+import j86.sun.security.krb5.*;
+import j86.j86.sun.security.krb5.internal.*;
+import j86.java.util.StringTokenizer;
+import j86.java.util.Vector;
+import j86.java.io.IOException;
+import j86.java.io.File;
+import j86.java.io.FileInputStream;
+import j86.java.io.FileOutputStream;
+import j86.java.io.BufferedReader;
+import j86.java.io.InputStreamReader;
+import j86.j86.j86.java.lang.reflect.*;
 
 /**
  * CredentialsCache stores credentials(tickets, session keys, etc) in a
@@ -361,8 +361,8 @@ public class FileCredentialsCache extends CredentialsCache
 
         // The env var can start with TYPE:, we only support FILE: here.
         // http://docs.oracle.com/cd/E19082-01/819-2252/6n4i8rtr3/index.html
-        name = java.security.AccessController.doPrivileged(
-                new java.security.PrivilegedAction<String>() {
+        name = j86.java.security.AccessController.doPrivileged(
+                new j86.java.security.PrivilegedAction<String>() {
             @Override
             public String run() {
                 String cache = System.getenv("KRB5CCNAME");
@@ -383,8 +383,8 @@ public class FileCredentialsCache extends CredentialsCache
 
         // get cache name from system.property
         String osname =
-            java.security.AccessController.doPrivileged(
-                        new sun.security.action.GetPropertyAction("os.name"));
+            j86.java.security.AccessController.doPrivileged(
+                        new j86.sun.security.action.GetPropertyAction("os.name"));
 
         /*
          * For Unix platforms we use the default cache name to be
@@ -406,7 +406,7 @@ public class FileCredentialsCache extends CredentialsCache
                 (osname.startsWith("Linux"))) {
                 try {
                     Class<?> c = Class.forName
-                        ("com.sun.security.auth.module.UnixSystem");
+                        ("j86.j86.com.sun.security.auth.module.UnixSystem");
                     Constructor<?> constructor = c.getConstructor();
                     Object obj = constructor.newInstance();
                     Method method = c.getMethod("getUid");
@@ -435,17 +435,17 @@ public class FileCredentialsCache extends CredentialsCache
 
 
         String user_name =
-            java.security.AccessController.doPrivileged(
-                        new sun.security.action.GetPropertyAction("user.name"));
+            j86.java.security.AccessController.doPrivileged(
+                        new j86.sun.security.action.GetPropertyAction("user.name"));
 
         String user_home =
-            java.security.AccessController.doPrivileged(
-                        new sun.security.action.GetPropertyAction("user.home"));
+            j86.java.security.AccessController.doPrivileged(
+                        new j86.sun.security.action.GetPropertyAction("user.home"));
 
         if (user_home == null) {
             user_home =
-                java.security.AccessController.doPrivileged(
-                        new sun.security.action.GetPropertyAction("user.dir"));
+                j86.java.security.AccessController.doPrivileged(
+                        new j86.sun.security.action.GetPropertyAction("user.dir"));
         }
 
         if (user_name != null) {
@@ -499,12 +499,12 @@ public class FileCredentialsCache extends CredentialsCache
         try {
 
             Process p =
-                java.security.AccessController.doPrivileged
-                (new java.security.PrivilegedAction<Process> () {
+                j86.java.security.AccessController.doPrivileged
+                (new j86.java.security.PrivilegedAction<Process> () {
                         public Process run() {
                             try {
                                 return (Runtime.getRuntime().exec(command));
-                            } catch (java.io.IOException e) {
+                            } catch (j86.java.io.IOException e) {
                                 if (DEBUG) {
                                     e.printStackTrace();
                                 }

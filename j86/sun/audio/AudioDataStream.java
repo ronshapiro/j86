@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.audio;
+package j86.sun.audio;
 
-import java.io.*;
+import j86.java.io.*;
 
 /**
  * An input stream to play AudioData.

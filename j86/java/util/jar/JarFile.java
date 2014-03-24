@@ -23,29 +23,29 @@
  * questions.
  */
 
-package java.util.jar;
+package j86.j86.java.util.jar;
 
-import java.io.*;
-import java.lang.ref.SoftReference;
-import java.net.URL;
-import java.util.*;
-import java.util.stream.Stream;
-import java.util.stream.StreamSupport;
-import java.util.zip.*;
-import java.security.CodeSigner;
-import java.security.cert.Certificate;
-import java.security.AccessController;
-import java.security.CodeSource;
-import sun.misc.IOUtils;
-import sun.security.action.GetPropertyAction;
-import sun.security.util.ManifestEntryVerifier;
-import sun.misc.SharedSecrets;
-import sun.security.util.SignatureFileVerifier;
+import j86.java.io.*;
+import j86.j86.java.lang.ref.SoftReference;
+import j86.java.net.URL;
+import j86.java.util.*;
+import j86.j86.java.util.stream.Stream;
+import j86.j86.java.util.stream.StreamSupport;
+import j86.j86.java.util.zip.*;
+import j86.java.security.CodeSigner;
+import j86.j86.java.security.cert.Certificate;
+import j86.java.security.AccessController;
+import j86.java.security.CodeSource;
+import j86.sun.misc.IOUtils;
+import j86.sun.security.action.GetPropertyAction;
+import j86.sun.security.util.ManifestEntryVerifier;
+import j86.sun.misc.SharedSecrets;
+import j86.sun.security.util.SignatureFileVerifier;
 
 /**
  * The <code>JarFile</code> class is used to read the contents of a jar file
- * from any file that can be opened with <code>java.io.RandomAccessFile</code>.
- * It extends the class <code>java.util.zip.ZipFile</code> with support
+ * from any file that can be opened with <code>j86.java.io.RandomAccessFile</code>.
+ * It extends the class <code>j86.j86.java.util.zip.ZipFile</code> with support
  * for reading an optional <code>Manifest</code> entry. The
  * <code>Manifest</code> can be used to specify meta-information about the
  * jar file and its entries.
@@ -63,8 +63,8 @@ import sun.security.util.SignatureFileVerifier;
  *
  * @author  David Connelly
  * @see     Manifest
- * @see     java.util.zip.ZipFile
- * @see     java.util.jar.JarEntry
+ * @see     j86.j86.java.util.zip.ZipFile
+ * @see     j86.j86.java.util.jar.JarEntry
  * @since   1.2
  */
 public
@@ -217,7 +217,7 @@ class JarFile extends ZipFile {
      * @throws IllegalStateException
      *         may be thrown if the jar file has been closed
      *
-     * @see java.util.jar.JarEntry
+     * @see j86.j86.java.util.jar.JarEntry
      */
     public JarEntry getJarEntry(String name) {
         return (JarEntry)getEntry(name);
@@ -234,7 +234,7 @@ class JarFile extends ZipFile {
      * @throws IllegalStateException
      *         may be thrown if the jar file has been closed
      *
-     * @see java.util.zip.ZipEntry
+     * @see j86.j86.java.util.zip.ZipEntry
      */
     public ZipEntry getEntry(String name) {
         ZipEntry ze = super.getEntry(name);

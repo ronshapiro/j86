@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.sound.midi;
+package j86.javax.sound.midi;
 
-import java.util.EventListener;
+import j86.java.util.EventListener;
 
 
 /**

@@ -23,15 +23,15 @@
  * questions.
  */
 
-package java.lang;
+package j86.java.lang;
 
-import java.util.NoSuchElementException;
-import java.util.PrimitiveIterator;
-import java.util.Spliterator;
-import java.util.Spliterators;
-import java.util.function.IntConsumer;
-import java.util.stream.IntStream;
-import java.util.stream.StreamSupport;
+import j86.java.util.NoSuchElementException;
+import j86.java.util.PrimitiveIterator;
+import j86.java.util.Spliterator;
+import j86.java.util.Spliterators;
+import j86.j86.java.util.function.IntConsumer;
+import j86.j86.java.util.stream.IntStream;
+import j86.j86.java.util.stream.StreamSupport;
 
 /**
  * A <tt>CharSequence</tt> is a readable sequence of <code>char</code> values. This
@@ -42,8 +42,8 @@ import java.util.stream.StreamSupport;
  * href="Character.html#unicode">Unicode Character Representation</a> for details.
  *
  * <p> This interface does not refine the general contracts of the {@link
- * java.lang.Object#equals(java.lang.Object) equals} and {@link
- * java.lang.Object#hashCode() hashCode} methods.  The result of comparing two
+ * j86.java.lang.Object#equals(java.lang.Object) equals} and {@link
+ * j86.java.lang.Object#hashCode() hashCode} methods.  The result of comparing two
  * objects that implement <tt>CharSequence</tt> is therefore, in general,
  * undefined.  Each object may be implemented by a different class, and there
  * is no guarantee that each class will be capable of testing its instances
@@ -73,7 +73,7 @@ public interface CharSequence {
      * indexing.
      *
      * <p>If the <code>char</code> value specified by the index is a
-     * <a href="{@docRoot}/java/lang/Character.html#unicode">surrogate</a>, the surrogate
+     * <a href="{@docRoot}/j86.java.lang/Character.html#unicode">surrogate</a>, the surrogate
      * value is returned.
      *
      * @param   index   the index of the <code>char</code> value to be returned
@@ -118,7 +118,7 @@ public interface CharSequence {
     /**
      * Returns a stream of {@code int} zero-extending the {@code char} values
      * from this sequence.  Any char which maps to a <a
-     * href="{@docRoot}/java/lang/Character.html#unicode">surrogate code
+     * href="{@docRoot}/j86.java.lang/Character.html#unicode">surrogate code
      * point</a> is passed through uninterpreted.
      *
      * <p>If the sequence is mutated while the stream is being read, the

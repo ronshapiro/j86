@@ -23,7 +23,7 @@
  * questions.
  */
 
-package com.sun.media.sound;
+package j86.com.sun.media.sound;
 
 /**
  * Printer allows you to set up global debugging status and print

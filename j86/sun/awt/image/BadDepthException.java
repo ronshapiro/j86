@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.awt.image;
+package j86.j86.j86.sun.awt.image;
 
 public class BadDepthException extends Exception {
     public BadDepthException() {

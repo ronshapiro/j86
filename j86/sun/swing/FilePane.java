@@ -22,29 +22,29 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.swing;
+package j86.sun.swing;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
-import java.io.*;
-import java.text.DateFormat;
-import java.text.MessageFormat;
-import java.util.*;
-import java.util.List;
-import java.util.concurrent.Callable;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.java.beans.PropertyChangeEvent;
+import j86.java.beans.PropertyChangeListener;
+import j86.java.io.*;
+import j86.java.text.DateFormat;
+import j86.java.text.MessageFormat;
+import j86.java.util.*;
+import j86.java.util.List;
+import j86.j86.java.util.concurrent.Callable;
 
-import javax.accessibility.AccessibleContext;
-import javax.swing.*;
-import javax.swing.border.*;
-import javax.swing.event.*;
-import javax.swing.filechooser.*;
-import javax.swing.plaf.basic.*;
-import javax.swing.table.*;
-import javax.swing.text.*;
+import j86.javax.accessibility.AccessibleContext;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.border.*;
+import j86.j86.javax.swing.event.*;
+import j86.j86.javax.swing.filechooser.*;
+import j86.j86.j86.javax.swing.plaf.basic.*;
+import j86.j86.javax.swing.table.*;
+import j86.j86.javax.swing.text.*;
 
-import sun.awt.shell.*;
+import j86.j86.sun.awt.shell.*;
 
 /**
  * <b>WARNING:</b> This class is an implementation detail and is only
@@ -52,7 +52,7 @@ import sun.awt.shell.*;
  * this public API.
  * <p>
  * This component is intended to be used in a subclass of
- * javax.swing.plaf.basic.BasicFileChooserUI. It realies heavily on the
+ * j86.j86.j86.javax.swing.plaf.basic.BasicFileChooserUI. It realies heavily on the
  * implementation of BasicFileChooserUI, and is intended to be API compatible
  * with earlier implementations of MetalFileChooserUI and WindowsFileChooserUI.
  *
@@ -1951,7 +1951,7 @@ public class FilePane extends JPanel implements PropertyChangeListener {
      * Property to remember the directory that is currently selected in the UI.
      *
      * @return the value of the <code>directory</code> property
-     * @see javax.swing.plaf.basic.BasicFileChooserUI#setDirectory
+     * @see j86.j86.j86.javax.swing.plaf.basic.BasicFileChooserUI#setDirectory
      */
     protected File getDirectory() {
         return fileChooserUIAccessor.getDirectory();

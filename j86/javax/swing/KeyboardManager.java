@@ -22,16 +22,16 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing;
+package j86.javax.swing;
 
 
-import java.util.*;
-import java.awt.*;
-import java.awt.event.*;
-import java.applet.*;
-import java.beans.*;
-import javax.swing.event.*;
-import sun.awt.EmbeddedFrame;
+import j86.java.util.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.java.applet.*;
+import j86.java.beans.*;
+import j86.j86.javax.swing.event.*;
+import j86.sun.awt.EmbeddedFrame;
 
 /**
   * The KeyboardManager class is used to help dispatch keyboard actions for the

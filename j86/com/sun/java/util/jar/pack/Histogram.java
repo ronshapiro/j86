@@ -23,12 +23,12 @@
  * questions.
  */
 
-package com.sun.java.util.jar.pack;
+package j86.com.sun.j86.j86.java.util.jar.pack;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.PrintStream;
-import java.util.Arrays;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.io.PrintStream;
+import j86.java.util.Arrays;
 
 /**
  * Histogram derived from an integer array of events (int[]).

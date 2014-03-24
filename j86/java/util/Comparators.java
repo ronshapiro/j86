@@ -22,14 +22,14 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.util;
+package j86.java.util;
 
-import java.io.Serializable;
-import java.util.function.BinaryOperator;
-import java.util.function.Function;
-import java.util.function.ToDoubleFunction;
-import java.util.function.ToIntFunction;
-import java.util.function.ToLongFunction;
+import j86.java.io.Serializable;
+import j86.j86.java.util.function.BinaryOperator;
+import j86.j86.java.util.function.Function;
+import j86.j86.java.util.function.ToDoubleFunction;
+import j86.j86.java.util.function.ToIntFunction;
+import j86.j86.java.util.function.ToLongFunction;
 
 /**
  * Package private supporting class for {@link Comparator}.

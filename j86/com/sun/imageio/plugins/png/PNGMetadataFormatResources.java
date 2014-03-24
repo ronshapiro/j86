@@ -23,9 +23,9 @@
  * questions.
  */
 
-package com.sun.imageio.plugins.png;
+package j86.com.sun.imageio.plugins.png;
 
-import java.util.ListResourceBundle;
+import j86.java.util.ListResourceBundle;
 
 public class PNGMetadataFormatResources extends ListResourceBundle {
 

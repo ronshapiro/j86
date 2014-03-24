@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.security.ssl;
+package j86.sun.security.ssl;
 
-import java.util.*;
+import j86.java.util.*;
 
 /**
  * A list of ProtocolVersions. Also maintains the list of supported protocols.

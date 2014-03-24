@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.print;
+package j86.sun.print;
 
-import javax.print.attribute.PrintRequestAttribute;
-import java.awt.Frame;
+import j86.j86.javax.print.attribute.PrintRequestAttribute;
+import j86.java.awt.Frame;
 
 /**
  * Class DialogOwner is a printing attribute class that identifies
@@ -69,7 +69,7 @@ public final class DialogOwner
      * DialogOwner itself.
      *
      * @return  Printing attribute class (category), an instance of class
-     *          {@link java.lang.Class java.lang.Class}.
+     *          {@link j86.java.lang.Class java.lang.Class}.
      */
     public final Class getCategory() {
         return DialogOwner.class;

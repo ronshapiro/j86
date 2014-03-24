@@ -23,12 +23,12 @@
  * questions.
  */
 
-package java.util.logging;
+package j86.j86.java.util.logging;
 
-import sun.util.logging.LoggingProxy;
+import j86.j86.sun.util.logging.LoggingProxy;
 
 /**
- * Implementation of LoggingProxy when java.util.logging classes exist.
+ * Implementation of LoggingProxy when j86.j86.java.util.logging classes exist.
  */
 class LoggingProxyImpl implements LoggingProxy {
     static final LoggingProxy INSTANCE = new LoggingProxyImpl();
@@ -72,7 +72,7 @@ class LoggingProxyImpl implements LoggingProxy {
     }
 
     @Override
-    public java.util.List<String> getLoggerNames() {
+    public j86.java.util.List<String> getLoggerNames() {
         return LogManager.getLoggingMXBean().getLoggerNames();
     }
 

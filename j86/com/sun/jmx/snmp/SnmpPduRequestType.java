@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.jmx.snmp;
+package j86.com.sun.jmx.snmp;
 
 /**
  * Interface implemented by classes modelizing request pdu.
@@ -40,7 +40,7 @@ public interface SnmpPduRequestType extends SnmpAckPdu {
     public void setErrorIndex(int i);
     /**
      * Error status setter. Statuses are defined in
-     * {@link com.sun.jmx.snmp.SnmpDefinitions SnmpDefinitions}.
+     * {@link j86.com.sun.jmx.snmp.SnmpDefinitions SnmpDefinitions}.
      * @param i Error status.
      */
     public void setErrorStatus(int i);
@@ -53,7 +53,7 @@ public interface SnmpPduRequestType extends SnmpAckPdu {
     public int getErrorIndex();
     /**
      * Error status getter. Statuses are defined in
-     * {@link com.sun.jmx.snmp.SnmpDefinitions SnmpDefinitions}.
+     * {@link j86.com.sun.jmx.snmp.SnmpDefinitions SnmpDefinitions}.
      * @return Error status.
      */
     public int getErrorStatus();

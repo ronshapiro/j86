@@ -22,16 +22,16 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.java.swing.plaf.motif;
+package j86.j86.com.sun.java.swing.plaf.motif;
 
-import java.awt.*;
-import javax.swing.*;
-import javax.swing.plaf.*;
-import javax.swing.border.*;
-import javax.swing.plaf.basic.*;
-import java.io.Serializable;
-import java.awt.event.*;
-import java.beans.*;
+import j86.java.awt.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.javax.swing.border.*;
+import j86.j86.j86.javax.swing.plaf.basic.*;
+import j86.java.io.Serializable;
+import j86.j86.java.awt.event.*;
+import j86.java.beans.*;
 
 /**
  * ComboBox motif look and feel

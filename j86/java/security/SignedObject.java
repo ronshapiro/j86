@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.security;
+package j86.java.security;
 
-import java.io.*;
+import j86.java.io.*;
 
 /**
  * <p> SignedObject is a class for the purpose of creating authentic
@@ -59,7 +59,7 @@ import java.io.*;
  * if (so.verify(publickey, verificationEngine))
  *     try {
  *         Object myobj = so.getObject();
- *     } catch (java.lang.ClassNotFoundException e) {};
+ *     } catch (j86.java.lang.ClassNotFoundException e) {};
  * }</pre>
  *
  * <p> Several points are worth noting.  First, there is no need to
@@ -248,9 +248,9 @@ public final class SignedObject implements Serializable {
      * readObject is called to restore the state of the SignedObject from
      * a stream.
      */
-    private void readObject(java.io.ObjectInputStream s)
-        throws java.io.IOException, ClassNotFoundException {
-            java.io.ObjectInputStream.GetField fields = s.readFields();
+    private void readObject(j86.java.io.ObjectInputStream s)
+        throws j86.java.io.IOException, ClassNotFoundException {
+            j86.java.io.ObjectInputStream.GetField fields = s.readFields();
             content = ((byte[])fields.get("content", null)).clone();
             signature = ((byte[])fields.get("signature", null)).clone();
             thealgorithm = (String)fields.get("thealgorithm", null);

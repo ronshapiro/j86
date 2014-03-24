@@ -23,15 +23,15 @@
  * questions.
  */
 
-package javax.sound.sampled.spi;
+package j86.j86.javax.sound.sampled.spi;
 
-import java.io.File;
-import java.io.InputStream;
-import java.io.IOException;
-import java.io.OutputStream;
+import j86.java.io.File;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
+import j86.java.io.OutputStream;
 
-import javax.sound.sampled.AudioFileFormat;
-import javax.sound.sampled.AudioInputStream;
+import j86.javax.sound.sampled.AudioFileFormat;
+import j86.javax.sound.sampled.AudioInputStream;
 
 
 /**
@@ -112,7 +112,7 @@ public abstract class AudioFileWriter {
      * start to finish unless the length is known in advance.  An attempt
      * to write such a file type will fail with an IOException if the length in
      * the audio file format is
-     * {@link javax.sound.sampled.AudioSystem#NOT_SPECIFIED AudioSystem.NOT_SPECIFIED}.
+     * {@link j86.javax.sound.sampled.AudioSystem#NOT_SPECIFIED AudioSystem.NOT_SPECIFIED}.
      * @param stream the audio input stream containing audio data to be
      * written to the output stream
      * @param fileType file type to be written to the output stream

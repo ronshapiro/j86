@@ -23,9 +23,9 @@
  * questions.
  */
 
-package com.sun.jdi;
+package j86.com.sun.jdi;
 
-import java.util.List;
+import j86.java.util.List;
 
 /**
  * A point within the executing code of the target VM.
@@ -75,10 +75,10 @@ import java.util.List;
  * returned as the default.  To determine the available strata
  * use {@link ReferenceType#availableStrata()}.
  *
- * @see com.sun.jdi.request.EventRequestManager
+ * @see j86.j86.com.sun.jdi.request.EventRequestManager
  * @see StackFrame
- * @see com.sun.jdi.event.BreakpointEvent
- * @see com.sun.jdi.event.ExceptionEvent
+ * @see j86.j86.com.sun.jdi.event.BreakpointEvent
+ * @see j86.j86.com.sun.jdi.event.ExceptionEvent
  * @see Locatable
  *
  * @author Robert Field
@@ -141,7 +141,7 @@ public interface Location extends Mirror, Comparable<Location> {
      * <P>
      * The returned string is the unqualified name of the source
      * file for this Location.  For example,
-     * <CODE>java.lang.Thread</CODE> would return
+     * <CODE>j86.java.lang.Thread</CODE> would return
      * <CODE>"Thread.java"</CODE>.
      *
      * @param stratum The stratum to retrieve information from
@@ -192,9 +192,9 @@ public interface Location extends Mirror, Comparable<Location> {
      * unqualified name of the source file for this Location
      * ({@link #sourceName sourceName(stratum)}).
      * For example, on a
-     * Windows platform, <CODE>java.lang.Thread</CODE>
+     * Windows platform, <CODE>j86.java.lang.Thread</CODE>
      * would return
-     * <CODE>"java\lang\Thread.java"</CODE>.
+     * <CODE>"j86.java.lang\Thread.java"</CODE>.
      *
      * @param stratum The stratum to retrieve information from
      * or <code>null</code> for the declaring type's

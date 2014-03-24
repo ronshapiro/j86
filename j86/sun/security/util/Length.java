@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.security.util;
+package j86.sun.security.util;
 
 /**
  * The Length interface defines the length of an object
@@ -33,7 +33,7 @@ public interface Length {
     /**
      * Gets the length of this object
      * <p>
-     * Note that if a class of java.security.Key implements this interfaces,
+     * Note that if a class of j86.java.security.Key implements this interfaces,
      * the length should be measured in bits.
      *
      * @return the length of this object

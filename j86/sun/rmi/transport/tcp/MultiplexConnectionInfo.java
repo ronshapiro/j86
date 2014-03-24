@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.rmi.transport.tcp;
+package j86.j86.sun.rmi.transport.tcp;
 
 /**
  * MultiplexConnectionInfo groups related information about a

@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.net.www;
-import java.net.URL;
-import java.io.*;
-import java.util.StringTokenizer;
+package j86.j86.sun.net.www;
+import j86.java.net.URL;
+import j86.java.io.*;
+import j86.java.util.StringTokenizer;
 
 public class MimeEntry implements Cloneable {
     private String typeName;    // of the form: "type/subtype"
@@ -153,7 +153,7 @@ public class MimeEntry implements Cloneable {
         File file = new File(filename);
         if (file.getParent() == null) {
             imageFileName = System.getProperty(
-                                     "java.net.ftp.imagepath."+filename);
+                                     "j86.java.net.ftp.imagepath."+filename);
         }
         else {
             imageFileName = filename;
@@ -216,7 +216,7 @@ public class MimeEntry implements Cloneable {
      * <li>A document (?) --
      * </ol>
      */
-    public Object launch(java.net.URLConnection urlc, InputStream is, MimeTable mt) throws ApplicationLaunchException {
+    public Object launch(j86.java.net.URLConnection urlc, InputStream is, MimeTable mt) throws ApplicationLaunchException {
         switch (action) {
         case SAVE_TO_FILE:
             // REMIND: is this really the right thing to do?

@@ -24,17 +24,17 @@
  */
 
 
-package javax.management.openmbean;
+package j86.j86.javax.management.openmbean;
 
 
 // java import
 //
-import java.util.Arrays;
+import j86.java.util.Arrays;
 
-import javax.management.Descriptor;
-import javax.management.ImmutableDescriptor;
-import javax.management.MBeanOperationInfo;
-import javax.management.MBeanParameterInfo;
+import j86.javax.management.Descriptor;
+import j86.javax.management.ImmutableDescriptor;
+import j86.javax.management.MBeanOperationInfo;
+import j86.javax.management.MBeanParameterInfo;
 
 
 /**
@@ -216,7 +216,7 @@ public class OpenMBeanOperationInfoSupport
     }
 
 
-    // [JF]: should we add constructor with java.lang.reflect.Method
+    // [JF]: should we add constructor with j86.j86.j86.java.lang.reflect.Method
     // method parameter ?  would need to add consistency check between
     // OpenType<?> returnOpenType and method.getReturnType().
 
@@ -233,7 +233,7 @@ public class OpenMBeanOperationInfoSupport
 
 
 
-    /* ***  Commodity methods from java.lang.Object  *** */
+    /* ***  Commodity methods from j86.java.lang.Object  *** */
 
 
     /**
@@ -319,7 +319,7 @@ public class OpenMBeanOperationInfoSupport
      * information used in {@code equals} comparisons (ie: its name,
      * return open type, impact and signature, where the signature
      * hashCode is calculated by a call to {@code
-     * java.util.Arrays.asList(this.getSignature).hashCode()}).</p>
+     * j86.java.util.Arrays.asList(this.getSignature).hashCode()}).</p>
      *
      * <p>This ensures that {@code t1.equals(t2) } implies that {@code
      * t1.hashCode()==t2.hashCode() } for any two {@code
@@ -330,7 +330,7 @@ public class OpenMBeanOperationInfoSupport
      * <p>However, note that another instance of a class implementing
      * the {@code OpenMBeanOperationInfo} interface may be equal to
      * this {@code OpenMBeanOperationInfoSupport} instance as defined
-     * by {@link #equals(java.lang.Object)}, but may have a different
+     * by {@link #equals(j86.java.lang.Object)}, but may have a different
      * hash code if it is calculated differently.</p>
      *
      * <p>As {@code OpenMBeanOperationInfoSupport} instances are
@@ -366,7 +366,7 @@ public class OpenMBeanOperationInfoSupport
      *
      * <p>The string representation consists of the name of this class
      * (ie {@code
-     * javax.management.openmbean.OpenMBeanOperationInfoSupport}), and
+     * j86.j86.javax.management.openmbean.OpenMBeanOperationInfoSupport}), and
      * the name, signature, return open type and impact of the
      * described operation and the string representation of its descriptor.</p>
      *

@@ -23,17 +23,17 @@
  * questions.
  */
 
-package sun.security.jgss.spnego;
+package j86.j86.sun.security.jgss.spnego;
 
-import org.ietf.jgss.*;
-import sun.security.jgss.*;
-import sun.security.jgss.spi.*;
-import sun.security.jgss.krb5.Krb5MechFactory;
-import sun.security.jgss.krb5.Krb5InitCredential;
-import sun.security.jgss.krb5.Krb5AcceptCredential;
-import sun.security.jgss.krb5.Krb5NameElement;
-import java.security.Provider;
-import java.util.Vector;
+import j86.org.ietf.jgss.*;
+import j86.sun.security.jgss.*;
+import j86.j86.sun.security.jgss.spi.*;
+import j86.j86.sun.security.jgss.krb5.Krb5MechFactory;
+import j86.j86.sun.security.jgss.krb5.Krb5InitCredential;
+import j86.j86.sun.security.jgss.krb5.Krb5AcceptCredential;
+import j86.j86.sun.security.jgss.krb5.Krb5NameElement;
+import j86.java.security.Provider;
+import j86.java.util.Vector;
 
 /**
  * SpNego Mechanism plug in for JGSS
@@ -47,7 +47,7 @@ import java.util.Vector;
 public final class SpNegoMechFactory implements MechanismFactory {
 
     static final Provider PROVIDER =
-        new sun.security.jgss.SunProvider();
+        new j86.sun.security.jgss.SunProvider();
 
     static final Oid GSS_SPNEGO_MECH_OID =
         GSSUtil.createOid("1.3.6.1.5.5.2");

@@ -25,19 +25,19 @@
 
 
 
-package javax.swing;
+package j86.javax.swing;
 
 
 
-import java.beans.ConstructorProperties;
-import javax.swing.plaf.*;
-import javax.accessibility.*;
+import j86.java.beans.ConstructorProperties;
+import j86.j86.javax.swing.plaf.*;
+import j86.javax.accessibility.*;
 
-import java.awt.*;
+import j86.java.awt.*;
 
-import java.io.ObjectOutputStream;
-import java.io.ObjectInputStream;
-import java.io.IOException;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.IOException;
 
 
 
@@ -90,8 +90,8 @@ import java.io.IOException;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @see #setDividerLocation
  * @see #resetToPreferredSizes
@@ -944,7 +944,7 @@ public class JSplitPane extends JComponent implements Accessible
      *
      * @return true
      * @see JComponent#revalidate
-     * @see java.awt.Container#isValidateRoot
+     * @see j86.java.awt.Container#isValidateRoot
      *
      * @beaninfo
      *    hidden: true
@@ -983,7 +983,7 @@ public class JSplitPane extends JComponent implements Accessible
      *                    list.
      * @exception IllegalArgumentException  if the <code>constraints</code>
      *          object does not match an existing component
-     * @see java.awt.Container#addImpl(Component, Object, int)
+     * @see j86.java.awt.Container#addImpl(Component, Object, int)
      */
     protected void addImpl(Component comp, Object constraints, int index)
     {
@@ -1153,8 +1153,8 @@ public class JSplitPane extends JComponent implements Accessible
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     protected class AccessibleJSplitPane extends AccessibleJComponent
         implements AccessibleValue {

@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.management.jmxremote;
+package j86.j86.sun.management.jmxremote;
 
-import java.io.IOException;
-import java.net.InetAddress;
-import java.net.NetworkInterface;
-import java.net.ServerSocket;
-import java.net.Socket;
-import java.net.SocketException;
-import java.rmi.server.RMIServerSocketFactory;
-import java.util.Enumeration;
+import j86.java.io.IOException;
+import j86.java.net.InetAddress;
+import j86.java.net.NetworkInterface;
+import j86.java.net.ServerSocket;
+import j86.java.net.Socket;
+import j86.java.net.SocketException;
+import j86.j86.java.rmi.server.RMIServerSocketFactory;
+import j86.java.util.Enumeration;
 
 /**
  * This RMI server socket factory creates server sockets that

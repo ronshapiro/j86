@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.security.sasl;
+package j86.javax.security.sasl;
 
-import javax.security.auth.callback.TextInputCallback;
+import j86.j86.javax.security.auth.callback.TextInputCallback;
 
 /**
   * This callback is used by {@code SaslClient} and {@code SaslServer}

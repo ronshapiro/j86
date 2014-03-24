@@ -23,30 +23,30 @@
  * questions.
  */
 
-package sun.awt;
+package j86.sun.awt;
 
-import java.awt.EventQueue;
-import java.awt.Window;
-import java.awt.SystemTray;
-import java.awt.TrayIcon;
-import java.awt.Toolkit;
-import java.awt.GraphicsEnvironment;
-import java.awt.event.InvocationEvent;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.IdentityHashMap;
-import java.util.Map;
-import java.util.Set;
-import java.util.HashSet;
-import java.beans.PropertyChangeSupport;
-import java.beans.PropertyChangeListener;
-import sun.util.logging.PlatformLogger;
-import java.util.concurrent.locks.Condition;
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
-import java.util.concurrent.atomic.AtomicInteger;
+import j86.java.awt.EventQueue;
+import j86.java.awt.Window;
+import j86.java.awt.SystemTray;
+import j86.java.awt.TrayIcon;
+import j86.java.awt.Toolkit;
+import j86.java.awt.GraphicsEnvironment;
+import j86.j86.java.awt.event.InvocationEvent;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.util.Collections;
+import j86.java.util.HashMap;
+import j86.java.util.IdentityHashMap;
+import j86.java.util.Map;
+import j86.java.util.Set;
+import j86.java.util.HashSet;
+import j86.java.beans.PropertyChangeSupport;
+import j86.java.beans.PropertyChangeListener;
+import j86.j86.sun.util.logging.PlatformLogger;
+import j86.j86.j86.java.util.concurrent.locks.Condition;
+import j86.j86.j86.java.util.concurrent.locks.Lock;
+import j86.j86.j86.java.util.concurrent.locks.ReentrantLock;
+import j86.j86.j86.java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * The AppContext is a table referenced by ThreadGroup which stores
@@ -117,7 +117,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * blocked.
  *
  * Note: If a SecurityManager is installed which derives from
- * sun.awt.AWTSecurityManager, it may override the
+ * j86.sun.awt.AWTSecurityManager, it may override the
  * AWTSecurityManager.getAppContext() method to return the proper
  * AppContext based on the execution context, in the case where
  * the default ThreadGroup-based AppContext indexing would return
@@ -131,7 +131,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * @author  Fred Ecks
  */
 public final class AppContext {
-    private static final PlatformLogger log = PlatformLogger.getLogger("sun.awt.AppContext");
+    private static final PlatformLogger log = PlatformLogger.getLogger("j86.sun.awt.AppContext");
 
     /* Since the contents of an AppContext are unique to each Java
      * session, this class should never be serialized. */
@@ -230,7 +230,7 @@ public final class AppContext {
      * That creates both the new AppContext and its EventQueue.
      *
      * @param   threadGroup     The ThreadGroup for the new AppContext
-     * @see     sun.awt.SunToolkit
+     * @see     j86.sun.awt.SunToolkit
      * @since   1.2
      */
     AppContext(ThreadGroup threadGroup) {
@@ -286,7 +286,7 @@ public final class AppContext {
      * context.
      *
      * @return  the AppContext for the caller.
-     * @see     java.lang.ThreadGroup
+     * @see     j86.java.lang.ThreadGroup
      * @since   1.2
      */
     public final static AppContext getAppContext() {
@@ -702,7 +702,7 @@ public final class AppContext {
      * Returns the context ClassLoader that was used to create this
      * AppContext.
      *
-     * @see java.lang.Thread#getContextClassLoader
+     * @see j86.java.lang.Thread#getContextClassLoader
      */
     public ClassLoader getContextClassLoader() {
         return contextClassLoader;
@@ -727,8 +727,8 @@ public final class AppContext {
      *
      * @see      #addPropertyChangeListener
      * @see      #removePropertyChangeListener
-     * @see      #getPropertyChangeListeners(java.lang.String)
-     * @see      java.beans.PropertyChangeSupport#getPropertyChangeListeners
+     * @see      #getPropertyChangeListeners(j86.java.lang.String)
+     * @see      j86.java.beans.PropertyChangeSupport#getPropertyChangeListeners
      * @since    1.4
      */
     public synchronized PropertyChangeListener[] getPropertyChangeListeners() {
@@ -757,9 +757,9 @@ public final class AppContext {
      * @param propertyName one of the property names listed above
      * @param listener the PropertyChangeListener to be added
      *
-     * @see #removePropertyChangeListener(java.lang.String, java.beans.PropertyChangeListener)
-     * @see #getPropertyChangeListeners(java.lang.String)
-     * @see #addPropertyChangeListener(java.lang.String, java.beans.PropertyChangeListener)
+     * @see #removePropertyChangeListener(j86.java.lang.String, j86.java.beans.PropertyChangeListener)
+     * @see #getPropertyChangeListeners(j86.java.lang.String)
+     * @see #addPropertyChangeListener(j86.java.lang.String, j86.java.beans.PropertyChangeListener)
      */
     public synchronized void addPropertyChangeListener(
                              String propertyName,
@@ -783,9 +783,9 @@ public final class AppContext {
      * @param propertyName a valid property name
      * @param listener the PropertyChangeListener to be removed
      *
-     * @see #addPropertyChangeListener(java.lang.String, java.beans.PropertyChangeListener)
-     * @see #getPropertyChangeListeners(java.lang.String)
-     * @see #removePropertyChangeListener(java.beans.PropertyChangeListener)
+     * @see #addPropertyChangeListener(j86.java.lang.String, j86.java.beans.PropertyChangeListener)
+     * @see #getPropertyChangeListeners(j86.java.lang.String)
+     * @see #removePropertyChangeListener(j86.java.beans.PropertyChangeListener)
      */
     public synchronized void removePropertyChangeListener(
                              String propertyName,
@@ -804,8 +804,8 @@ public final class AppContext {
      *         the named property or an empty array if no listeners have
      *         been added
      *
-     * @see #addPropertyChangeListener(java.lang.String, java.beans.PropertyChangeListener)
-     * @see #removePropertyChangeListener(java.lang.String, java.beans.PropertyChangeListener)
+     * @see #addPropertyChangeListener(j86.java.lang.String, j86.java.beans.PropertyChangeListener)
+     * @see #removePropertyChangeListener(j86.java.lang.String, j86.java.beans.PropertyChangeListener)
      * @see #getPropertyChangeListeners
      * @since 1.4
      */
@@ -819,7 +819,7 @@ public final class AppContext {
 
     // Set up JavaAWTAccess in SharedSecrets
     static {
-        sun.misc.SharedSecrets.setJavaAWTAccess(new sun.misc.JavaAWTAccess() {
+        j86.sun.misc.SharedSecrets.setJavaAWTAccess(new sun.misc.JavaAWTAccess() {
             private boolean hasRootThreadGroup(final AppContext ecx) {
                 return AccessController.doPrivileged(new PrivilegedAction<Boolean>() {
                     @Override

@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.jvmstat.perfdata.monitor.protocol.local;
+package j86.j86.sun.jvmstat.perfdata.monitor.protocol.local;
 
-import java.io.File;
-import java.io.FilenameFilter;
+import j86.java.io.File;
+import j86.java.io.FilenameFilter;
 
 /**
  * Class to provide translations from the local Vm Identifier
@@ -39,7 +39,7 @@ import java.io.FilenameFilter;
  *
  * @author Brian Doherty
  * @since 1.5
- * @see java.io.File
+ * @see j86.java.io.File
  */
 public class PerfDataFile {
     private PerfDataFile() { };
@@ -92,7 +92,7 @@ public class PerfDataFile {
      * @param lvmid  the local Java Virtual Machine Identifier for the target
      * @return File - a File object to the backing store file for the named
      *                shared memory region of the target JVM.
-     * @see java.io.File
+     * @see j86.java.io.File
      * @see #getTempDirectory()
      */
     public static File getFile(int lvmid) {
@@ -175,7 +175,7 @@ public class PerfDataFile {
      * @param lvmid  the local Java Virtual Machine Identifier for the target
      * @return File - a File object to the backing store file for the named
      *                shared memory region of the target JVM.
-     * @see java.io.File
+     * @see j86.java.io.File
      * @see #getTempDirectory()
      */
     public static File getFile(String user, int lvmid) {
@@ -229,7 +229,7 @@ public class PerfDataFile {
      *             shared memory region for a target JVM
      * @return int - the local Java Virtual Machine Identifier for the target
      *               associated with the file
-     * @throws java.lang.IllegalArgumentException Thrown if the file name
+     * @throws j86.java.lang.IllegalArgumentException Thrown if the file name
      *               does not conform to the expected pattern
      */
     public static int getLocalVmId(File file) {
@@ -260,7 +260,7 @@ public class PerfDataFile {
      * Return the name of the temporary directory being searched for
      * HotSpot PerfData backing store files.
      * <p>
-     * This method generally returns the value of the java.io.tmpdir
+     * This method generally returns the value of the j86.java.io.tmpdir
      * property. However, on some platforms it may return a different
      * directory, as the JVM implementation may store the PerfData backing
      * store files in a different directory for performance reasons.
@@ -276,7 +276,7 @@ public class PerfDataFile {
      * for HotSpot PerfData backing store files for a given user.
      * <p>
      * This method generally returns the name of a subdirectory of
-     * the directory indicated in the java.io.tmpdir property. However,
+     * the directory indicated in the j86.java.io.tmpdir property. However,
      * on some platforms it may return a different directory, as the
      * JVM implementation may store the PerfData backing store files
      * in a different directory for performance reasons.
@@ -289,26 +289,26 @@ public class PerfDataFile {
 
     /*
      * this static initializer would not be necessary if the
-     * Solaris java.io.tmpdir property were set to /tmp by default
+     * Solaris j86.java.io.tmpdir property were set to /tmp by default
      */
     static {
         /*
-         * Why is java.io.tmpdir on Solaris set to "/var/tmp/" when the
+         * Why is j86.java.io.tmpdir on Solaris set to "/var/tmp/" when the
          * HotSpot JVM os:get_temp_path() method returns "/tmp/"
          *
          * Why do Solaris and Windows return a string with a trailing
          * file separator character where as Linix does not? (this change
          * seems to have occurred sometime during hopper beta)
          */
-        String tmpdir = System.getProperty("java.io.tmpdir");
+        String tmpdir = System.getProperty("j86.java.io.tmpdir");
 
         if (tmpdir.compareTo("/var/tmp/") == 0) {
              /*
               * shared memory files are created in /tmp. Interestingly,
-              * java.io.tmpdir is set to "/var/tmp/" on Solaris and Linux,
+              * j86.java.io.tmpdir is set to "/var/tmp/" on Solaris and Linux,
               * but os::get_temp_directory() is set to "/tmp/" on these
-              * platforms. the java.io.logging packages also makes reference
-              * to java.io.tmpdir.
+              * platforms. the j86.java.io.logging packages also makes reference
+              * to j86.java.io.tmpdir.
               */
              tmpdir = "/tmp/";
         }
@@ -316,7 +316,7 @@ public class PerfDataFile {
         /*
          * Assure that the string returned has a trailing File.separator
          * character. This check was added because the Linux implementation
-         * changed such that the java.io.tmpdir string no longer terminates
+         * changed such that the j86.java.io.tmpdir string no longer terminates
          * with a File.separator character.
          */
         if (tmpdir.lastIndexOf(File.separator) != (tmpdir.length()-1)) {

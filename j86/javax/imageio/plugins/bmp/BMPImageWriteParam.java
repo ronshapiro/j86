@@ -23,13 +23,13 @@
  * questions.
  */
 
-package javax.imageio.plugins.bmp;
+package j86.j86.javax.imageio.plugins.bmp;
 
-import java.util.Locale;
-import javax.imageio.ImageWriteParam;
+import j86.java.util.Locale;
+import j86.javax.imageio.ImageWriteParam;
 
-import com.sun.imageio.plugins.bmp.BMPConstants;
-import com.sun.imageio.plugins.bmp.BMPCompressionTypes;
+import j86.com.sun.imageio.plugins.bmp.BMPConstants;
+import j86.com.sun.imageio.plugins.bmp.BMPCompressionTypes;
 
 /**
  * A subclass of <code>ImageWriteParam</code> for encoding images in

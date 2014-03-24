@@ -22,16 +22,16 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.plaf.basic;
+package j86.j86.j86.javax.swing.plaf.basic;
 
-import java.beans.*;
-import java.awt.*;
-import java.awt.event.KeyEvent;
-import java.awt.event.InputEvent;
-import javax.swing.*;
-import javax.swing.event.DocumentEvent;
-import javax.swing.text.*;
-import javax.swing.plaf.*;
+import j86.java.beans.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.KeyEvent;
+import j86.j86.java.awt.event.InputEvent;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.event.DocumentEvent;
+import j86.j86.javax.swing.text.*;
+import j86.j86.javax.swing.plaf.*;
 
 /**
  * Provides the look and feel for a plain text editor.  In this
@@ -44,8 +44,8 @@ import javax.swing.plaf.*;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @author  Timothy Prinzing
  */
@@ -181,7 +181,7 @@ public class BasicTextAreaUI extends BasicTextUI {
      *
      * @throws NullPointerException {@inheritDoc}
      * @throws IllegalArgumentException {@inheritDoc}
-     * @see javax.swing.JComponent#getBaseline(int, int)
+     * @see j86.javax.swing.JComponent#getBaseline(int, int)
      * @since 1.6
      */
     public int getBaseline(JComponent c, int width, int height) {
@@ -213,7 +213,7 @@ public class BasicTextAreaUI extends BasicTextUI {
      * changes as the size changes.
      *
      * @throws NullPointerException {@inheritDoc}
-     * @see javax.swing.JComponent#getBaseline(int, int)
+     * @see j86.javax.swing.JComponent#getBaseline(int, int)
      * @since 1.6
      */
     public Component.BaselineResizeBehavior getBaselineResizeBehavior(

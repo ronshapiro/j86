@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.awt.print;
+package j86.j86.java.awt.print;
 
-import java.awt.Graphics;
+import j86.java.awt.Graphics;
 
 
 /**
@@ -95,9 +95,9 @@ import java.awt.Graphics;
  * for each page index. Calculations of page breaks must account for this.
  * </ul>
  * <p>
- * @see java.awt.print.Pageable
- * @see java.awt.print.PageFormat
- * @see java.awt.print.PrinterJob
+ * @see j86.j86.java.awt.print.Pageable
+ * @see j86.j86.java.awt.print.PageFormat
+ * @see j86.j86.java.awt.print.PrinterJob
  */
 public interface Printable {
 
@@ -135,7 +135,7 @@ public interface Printable {
      * @return PAGE_EXISTS if the page is rendered successfully
      *         or NO_SUCH_PAGE if <code>pageIndex</code> specifies a
      *         non-existent page.
-     * @exception java.awt.print.PrinterException
+     * @exception j86.j86.java.awt.print.PrinterException
      *         thrown when the print job is terminated.
      */
     int print(Graphics graphics, PageFormat pageFormat, int pageIndex)

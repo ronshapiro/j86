@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.tools.jstat;
+package j86.sun.tools.jstat;
 
-import java.io.StreamTokenizer;
-import java.util.Set;
-import java.util.Iterator;
+import j86.java.io.StreamTokenizer;
+import j86.java.util.Set;
+import j86.java.util.Iterator;
 
 /**
  * An exception class for syntax exceptions detected by the options file

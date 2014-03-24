@@ -23,17 +23,17 @@
  * questions.
  */
 
-package sun.tracing;
+package j86.sun.tracing;
 
-import java.lang.reflect.Method;
-import java.io.PrintStream;
-import java.util.HashMap;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.io.PrintStream;
+import j86.java.util.HashMap;
 
-import com.sun.tracing.ProviderFactory;
-import com.sun.tracing.Provider;
-import com.sun.tracing.ProviderName;
-import com.sun.tracing.Probe;
-import com.sun.tracing.ProbeName;
+import com.j86.sun.tracing.ProviderFactory;
+import com.j86.sun.tracing.Provider;
+import com.j86.sun.tracing.ProviderName;
+import com.j86.sun.tracing.Probe;
+import com.j86.sun.tracing.ProbeName;
 
 /**
  * Factory class to create tracing Providers.

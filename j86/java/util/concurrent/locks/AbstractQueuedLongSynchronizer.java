@@ -33,12 +33,12 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package java.util.concurrent.locks;
-import java.util.concurrent.TimeUnit;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Date;
-import sun.misc.Unsafe;
+package j86.j86.j86.java.util.concurrent.locks;
+import j86.j86.java.util.concurrent.TimeUnit;
+import j86.java.util.ArrayList;
+import j86.java.util.Collection;
+import j86.java.util.Date;
+import j86.sun.misc.Unsafe;
 
 /**
  * A version of {@link AbstractQueuedSynchronizer} in
@@ -59,7 +59,7 @@ import sun.misc.Unsafe;
  */
 public abstract class AbstractQueuedLongSynchronizer
     extends AbstractOwnableSynchronizer
-    implements java.io.Serializable {
+    implements j86.java.io.Serializable {
 
     private static final long serialVersionUID = 7373984972572414692L;
 
@@ -1607,7 +1607,7 @@ public abstract class AbstractQueuedLongSynchronizer
      *
      * @since 1.6
      */
-    public class ConditionObject implements Condition, java.io.Serializable {
+    public class ConditionObject implements Condition, j86.java.io.Serializable {
         private static final long serialVersionUID = 1173984872572414699L;
         /** First node of condition queue. */
         private transient Node firstWaiter;

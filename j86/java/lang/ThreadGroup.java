@@ -23,11 +23,11 @@
  * questions.
  */
 
-package java.lang;
+package j86.java.lang;
 
-import java.io.PrintStream;
-import java.util.Arrays;
-import sun.misc.VM;
+import j86.java.io.PrintStream;
+import j86.java.util.Arrays;
+import j86.sun.misc.VM;
 
 /**
  * A thread group represents a set of threads. In addition, a thread
@@ -89,7 +89,7 @@ class ThreadGroup implements Thread.UncaughtExceptionHandler {
      * @param   name   the name of the new thread group.
      * @exception  SecurityException  if the current thread cannot create a
      *               thread in the specified thread group.
-     * @see     java.lang.ThreadGroup#checkAccess()
+     * @see     j86.java.lang.ThreadGroup#checkAccess()
      * @since   JDK1.0
      */
     public ThreadGroup(String name) {
@@ -109,8 +109,8 @@ class ThreadGroup implements Thread.UncaughtExceptionHandler {
      *               <code>null</code>.
      * @exception  SecurityException  if the current thread cannot create a
      *               thread in the specified thread group.
-     * @see     java.lang.SecurityException
-     * @see     java.lang.ThreadGroup#checkAccess()
+     * @see     j86.java.lang.SecurityException
+     * @see     j86.java.lang.ThreadGroup#checkAccess()
      * @since   JDK1.0
      */
     public ThreadGroup(ThreadGroup parent, String name) {
@@ -157,9 +157,9 @@ class ThreadGroup implements Thread.UncaughtExceptionHandler {
      *          is the only thread group whose parent is <code>null</code>.
      * @exception  SecurityException  if the current thread cannot modify
      *               this thread group.
-     * @see        java.lang.ThreadGroup#checkAccess()
-     * @see        java.lang.SecurityException
-     * @see        java.lang.RuntimePermission
+     * @see        j86.java.lang.ThreadGroup#checkAccess()
+     * @see        j86.java.lang.SecurityException
+     * @see        j86.java.lang.RuntimePermission
      * @since   JDK1.0
      */
     public final ThreadGroup getParent() {
@@ -219,8 +219,8 @@ class ThreadGroup implements Thread.UncaughtExceptionHandler {
      *                      thread group as normal.
      * @exception  SecurityException  if the current thread cannot modify
      *               this thread group.
-     * @see        java.lang.SecurityException
-     * @see        java.lang.ThreadGroup#checkAccess()
+     * @see        j86.java.lang.SecurityException
+     * @see        j86.java.lang.ThreadGroup#checkAccess()
      * @since      JDK1.0
      */
     public final void setDaemon(boolean daemon) {
@@ -252,8 +252,8 @@ class ThreadGroup implements Thread.UncaughtExceptionHandler {
      * @exception  SecurityException  if the current thread cannot modify
      *               this thread group.
      * @see        #getMaxPriority
-     * @see        java.lang.SecurityException
-     * @see        java.lang.ThreadGroup#checkAccess()
+     * @see        j86.java.lang.SecurityException
+     * @see        j86.java.lang.ThreadGroup#checkAccess()
      * @since      JDK1.0
      */
     public final void setMaxPriority(int pri) {
@@ -306,7 +306,7 @@ class ThreadGroup implements Thread.UncaughtExceptionHandler {
      *
      * @exception  SecurityException  if the current thread is not allowed to
      *               access this thread group.
-     * @see        java.lang.SecurityManager#checkAccess(java.lang.ThreadGroup)
+     * @see        j86.java.lang.SecurityManager#checkAccess(java.lang.ThreadGroup)
      * @since      JDK1.0
      */
     public final void checkAccess() {
@@ -600,9 +600,9 @@ class ThreadGroup implements Thread.UncaughtExceptionHandler {
      * @exception  SecurityException  if the current thread is not allowed
      *               to access this thread group or any of the threads in
      *               the thread group.
-     * @see        java.lang.SecurityException
-     * @see        java.lang.Thread#stop()
-     * @see        java.lang.ThreadGroup#checkAccess()
+     * @see        j86.java.lang.SecurityException
+     * @see        j86.java.lang.Thread#stop()
+     * @see        j86.java.lang.ThreadGroup#checkAccess()
      * @since      JDK1.0
      * @deprecated    This method is inherently unsafe.  See
      *     {@link Thread#stop} for details.
@@ -625,9 +625,9 @@ class ThreadGroup implements Thread.UncaughtExceptionHandler {
      * @exception  SecurityException  if the current thread is not allowed
      *               to access this thread group or any of the threads in
      *               the thread group.
-     * @see        java.lang.Thread#interrupt()
-     * @see        java.lang.SecurityException
-     * @see        java.lang.ThreadGroup#checkAccess()
+     * @see        j86.java.lang.Thread#interrupt()
+     * @see        j86.java.lang.SecurityException
+     * @see        j86.java.lang.ThreadGroup#checkAccess()
      * @since      1.2
      */
     public final void interrupt() {
@@ -662,9 +662,9 @@ class ThreadGroup implements Thread.UncaughtExceptionHandler {
      * @exception  SecurityException  if the current thread is not allowed
      *               to access this thread group or any of the threads in
      *               the thread group.
-     * @see        java.lang.Thread#suspend()
-     * @see        java.lang.SecurityException
-     * @see        java.lang.ThreadGroup#checkAccess()
+     * @see        j86.java.lang.Thread#suspend()
+     * @see        j86.java.lang.SecurityException
+     * @see        j86.java.lang.ThreadGroup#checkAccess()
      * @since      JDK1.0
      * @deprecated    This method is inherently deadlock-prone.  See
      *     {@link Thread#suspend} for details.
@@ -723,9 +723,9 @@ class ThreadGroup implements Thread.UncaughtExceptionHandler {
      * @exception  SecurityException  if the current thread is not allowed to
      *               access this thread group or any of the threads in the
      *               thread group.
-     * @see        java.lang.SecurityException
-     * @see        java.lang.Thread#resume()
-     * @see        java.lang.ThreadGroup#checkAccess()
+     * @see        j86.java.lang.SecurityException
+     * @see        j86.java.lang.Thread#resume()
+     * @see        j86.java.lang.ThreadGroup#checkAccess()
      * @since      JDK1.0
      * @deprecated    This method is used solely in conjunction with
      *      <tt>Thread.suspend</tt> and <tt>ThreadGroup.suspend</tt>,
@@ -766,7 +766,7 @@ class ThreadGroup implements Thread.UncaughtExceptionHandler {
      *               empty or if the thread group has already been destroyed.
      * @exception  SecurityException  if the current thread cannot modify this
      *               thread group.
-     * @see        java.lang.ThreadGroup#checkAccess()
+     * @see        j86.java.lang.ThreadGroup#checkAccess()
      * @since      JDK1.0
      */
     public final void destroy() {

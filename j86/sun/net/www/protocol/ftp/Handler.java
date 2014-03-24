@@ -27,18 +27,18 @@
  *      FTP stream opener
  */
 
-package sun.net.www.protocol.ftp;
+package j86.j86.j86.sun.net.www.protocol.ftp;
 
-import java.io.IOException;
-import java.net.URL;
-import java.net.Proxy;
-import java.util.Map;
-import java.util.HashMap;
-import sun.net.ftp.FtpClient;
-import sun.net.www.protocol.http.HttpURLConnection;
+import j86.java.io.IOException;
+import j86.java.net.URL;
+import j86.java.net.Proxy;
+import j86.java.util.Map;
+import j86.java.util.HashMap;
+import j86.j86.sun.net.ftp.FtpClient;
+import j86.j86.j86.sun.net.www.protocol.http.HttpURLConnection;
 
 /** open an ftp connection given a URL */
-public class Handler extends java.net.URLStreamHandler {
+public class Handler extends j86.java.net.URLStreamHandler {
 
     protected int getDefaultPort() {
         return 21;
@@ -51,12 +51,12 @@ public class Handler extends java.net.URLStreamHandler {
             (userInfo1 == null? userInfo2 == null: userInfo1.equals(userInfo2));
     }
 
-    protected java.net.URLConnection openConnection(URL u)
+    protected j86.java.net.URLConnection openConnection(URL u)
         throws IOException {
         return openConnection(u, null);
     }
 
-    protected java.net.URLConnection openConnection(URL u, Proxy p)
+    protected j86.java.net.URLConnection openConnection(URL u, Proxy p)
         throws IOException {
         return new FtpURLConnection(u, p);
     }

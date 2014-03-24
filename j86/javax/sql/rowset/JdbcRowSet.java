@@ -23,14 +23,14 @@
  * questions.
  */
 
-package javax.sql.rowset;
+package j86.j86.javax.sql.rowset;
 
-import java.sql.*;
-import javax.sql.*;
-import javax.naming.*;
-import java.io.*;
-import java.math.*;
-import java.io.*;
+import j86.java.sql.*;
+import j86.javax.sql.*;
+import j86.javax.naming.*;
+import j86.java.io.*;
+import j86.java.math.*;
+import j86.java.io.*;
 
 /**
  * The standard interface that all standard implementations of
@@ -219,7 +219,7 @@ public interface JdbcRowSet extends RowSet, Joinable {
     *
     * @throws SQLException if a database access error occurs or this
     * Connection object within this <code>JdbcRowSet</code> is in auto-commit mode
-    * @see java.sql.Connection#setAutoCommit
+    * @see j86.java.sql.Connection#setAutoCommit
     */
     public void commit() throws SQLException;
 
@@ -240,7 +240,7 @@ public interface JdbcRowSet extends RowSet, Joinable {
     *
     * @return {@code true} if auto-commit is enabled; {@code false} otherwise
     * @throws SQLException if a database access error occurs
-    * @see java.sql.Connection#getAutoCommit()
+    * @see j86.java.sql.Connection#getAutoCommit()
     */
     public boolean getAutoCommit() throws SQLException;
 
@@ -255,7 +255,7 @@ public interface JdbcRowSet extends RowSet, Joinable {
     * @param autoCommit {@code true} to enable auto-commit; {@code false} to
     * disable auto-commit
     * @throws SQLException if a database access error occurs
-    * @see java.sql.Connection#setAutoCommit(boolean)
+    * @see j86.java.sql.Connection#setAutoCommit(boolean)
     */
     public void setAutoCommit(boolean autoCommit) throws SQLException;
 

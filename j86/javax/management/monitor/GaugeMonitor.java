@@ -23,14 +23,14 @@
  * questions.
  */
 
-package javax.management.monitor;
+package j86.j86.javax.management.monitor;
 
-import static com.sun.jmx.defaults.JmxProperties.MONITOR_LOGGER;
-import java.util.logging.Level;
-import javax.management.MBeanNotificationInfo;
-import javax.management.ObjectName;
-import static javax.management.monitor.Monitor.NumericalType.*;
-import static javax.management.monitor.MonitorNotification.*;
+import static j86.com.sun.jmx.defaults.JmxProperties.MONITOR_LOGGER;
+import j86.j86.java.util.logging.Level;
+import j86.javax.management.MBeanNotificationInfo;
+import j86.javax.management.ObjectName;
+import static j86.j86.javax.management.monitor.Monitor.NumericalType.*;
+import static j86.j86.javax.management.monitor.MonitorNotification.*;
 
 /**
  * Defines a monitor MBean designed to observe the values of a gauge attribute.
@@ -191,7 +191,7 @@ public class GaugeMonitor extends Monitor implements GaugeMonitorMBean {
     private static final MBeanNotificationInfo[] notifsInfo = {
         new MBeanNotificationInfo(
             types,
-            "javax.management.monitor.MonitorNotification",
+            "j86.j86.javax.management.monitor.MonitorNotification",
             "Notifications sent by the GaugeMonitor MBean")
     };
 
@@ -719,15 +719,15 @@ public class GaugeMonitor extends Monitor implements GaugeMonitorMBean {
                                                    Number less,
                                                    String className) {
 
-        if (className.equals("java.lang.Integer") ||
-            className.equals("java.lang.Byte") ||
-            className.equals("java.lang.Short") ||
-            className.equals("java.lang.Long")) {
+        if (className.equals("j86.java.lang.Integer") ||
+            className.equals("j86.java.lang.Byte") ||
+            className.equals("j86.java.lang.Short") ||
+            className.equals("j86.java.lang.Long")) {
 
             return (greater.longValue() > less.longValue());
         }
-        else if (className.equals("java.lang.Float") ||
-                 className.equals("java.lang.Double")) {
+        else if (className.equals("j86.java.lang.Float") ||
+                 className.equals("j86.java.lang.Double")) {
 
             return (greater.doubleValue() > less.doubleValue());
         }

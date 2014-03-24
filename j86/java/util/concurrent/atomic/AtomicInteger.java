@@ -33,25 +33,25 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package java.util.concurrent.atomic;
-import java.util.function.IntUnaryOperator;
-import java.util.function.IntBinaryOperator;
-import sun.misc.Unsafe;
+package j86.j86.j86.java.util.concurrent.atomic;
+import j86.j86.java.util.function.IntUnaryOperator;
+import j86.j86.java.util.function.IntBinaryOperator;
+import j86.sun.misc.Unsafe;
 
 /**
  * An {@code int} value that may be updated atomically.  See the
- * {@link java.util.concurrent.atomic} package specification for
+ * {@link j86.j86.j86.java.util.concurrent.atomic} package specification for
  * description of the properties of atomic variables. An
  * {@code AtomicInteger} is used in applications such as atomically
  * incremented counters, and cannot be used as a replacement for an
- * {@link java.lang.Integer}. However, this class does extend
+ * {@link j86.java.lang.Integer}. However, this class does extend
  * {@code Number} to allow uniform access by tools and utilities that
  * deal with numerically-based classes.
  *
  * @since 1.5
  * @author Doug Lea
 */
-public class AtomicInteger extends Number implements java.io.Serializable {
+public class AtomicInteger extends Number implements j86.java.io.Serializable {
     private static final long serialVersionUID = 6214790243416807050L;
 
     // setup to use Unsafe.compareAndSwapInt for updates

@@ -33,21 +33,21 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package java.util.concurrent.atomic;
-import sun.misc.Unsafe;
+package j86.j86.j86.java.util.concurrent.atomic;
+import j86.sun.misc.Unsafe;
 
 /**
  * A {@code boolean} value that may be updated atomically. See the
- * {@link java.util.concurrent.atomic} package specification for
+ * {@link j86.j86.j86.java.util.concurrent.atomic} package specification for
  * description of the properties of atomic variables. An
  * {@code AtomicBoolean} is used in applications such as atomically
  * updated flags, and cannot be used as a replacement for a
- * {@link java.lang.Boolean}.
+ * {@link j86.java.lang.Boolean}.
  *
  * @since 1.5
  * @author Doug Lea
  */
-public class AtomicBoolean implements java.io.Serializable {
+public class AtomicBoolean implements j86.java.io.Serializable {
     private static final long serialVersionUID = 4654671469794556979L;
     // setup to use Unsafe.compareAndSwapInt for updates
     private static final Unsafe unsafe = Unsafe.getUnsafe();

@@ -23,13 +23,13 @@
  * questions.
  */
 
-package sun.rmi.server;
+package j86.sun.rmi.server;
 
-import java.io.*;
-import java.rmi.Remote;
-import java.rmi.server.RemoteStub;
-import sun.rmi.transport.ObjectTable;
-import sun.rmi.transport.Target;
+import j86.java.io.*;
+import j86.java.rmi.Remote;
+import j86.j86.java.rmi.server.RemoteStub;
+import j86.sun.rmi.transport.ObjectTable;
+import j86.sun.rmi.transport.Target;
 
 /**
  * A MarshalOutputStream extends ObjectOutputStream to add functions
@@ -63,8 +63,8 @@ public class MarshalOutputStream extends ObjectOutputStream
     {
         super(out);
         this.useProtocolVersion(protocolVersion);
-        java.security.AccessController.doPrivileged(
-            new java.security.PrivilegedAction<Void>() {
+        j86.java.security.AccessController.doPrivileged(
+            new j86.java.security.PrivilegedAction<Void>() {
                 public Void run() {
                 enableReplaceObject(true);
                 return null;
@@ -73,7 +73,7 @@ public class MarshalOutputStream extends ObjectOutputStream
     }
 
     /**
-     * Checks for objects that are instances of java.rmi.Remote
+     * Checks for objects that are instances of j86.java.rmi.Remote
      * that need to be serialized as proxy objects.
      */
     protected final Object replaceObject(Object obj) throws IOException {
@@ -90,7 +90,7 @@ public class MarshalOutputStream extends ObjectOutputStream
      * Serializes a location from which to load the the specified class.
      */
     protected void annotateClass(Class<?> cl) throws IOException {
-        writeLocation(java.rmi.server.RMIClassLoader.getClassAnnotation(cl));
+        writeLocation(j86.j86.java.rmi.server.RMIClassLoader.getClassAnnotation(cl));
     }
 
     /**

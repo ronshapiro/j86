@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.sql;
+package j86.java.sql;
 
 /**
  * Interface for JDBC classes which provide the ability to retrieve the delegate instance when the instance
@@ -56,10 +56,10 @@ public interface Wrapper {
      * @param <T> the type of the class modeled by this Class object
      * @param iface A Class defining an interface that the result must implement.
      * @return an object that implements the interface. May be a proxy for the actual implementing object.
-     * @throws java.sql.SQLException If no object found that implements the interface
+     * @throws j86.java.sql.SQLException If no object found that implements the interface
      * @since 1.6
      */
-        <T> T unwrap(java.lang.Class<T> iface) throws java.sql.SQLException;
+        <T> T unwrap(j86.java.lang.Class<T> iface) throws j86.java.sql.SQLException;
 
     /**
      * Returns true if this either implements the interface argument or is directly or indirectly a wrapper
@@ -72,10 +72,10 @@ public interface Wrapper {
      *
      * @param iface a Class defining an interface.
      * @return true if this implements the interface or directly or indirectly wraps an object that does.
-     * @throws java.sql.SQLException  if an error occurs while determining whether this is a wrapper
+     * @throws j86.java.sql.SQLException  if an error occurs while determining whether this is a wrapper
      * for an object with the given interface.
      * @since 1.6
      */
-    boolean isWrapperFor(java.lang.Class<?> iface) throws java.sql.SQLException;
+    boolean isWrapperFor(j86.java.lang.Class<?> iface) throws j86.java.sql.SQLException;
 
 }

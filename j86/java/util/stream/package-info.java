@@ -41,8 +41,8 @@
  * operation.)
  *
  * <p>The key abstraction introduced in this package is <em>stream</em>.  The
- * classes {@link java.util.stream.Stream}, {@link java.util.stream.IntStream},
- * {@link java.util.stream.LongStream}, and {@link java.util.stream.DoubleStream}
+ * classes {@link j86.j86.java.util.stream.Stream}, {@link java.util.stream.IntStream},
+ * {@link j86.j86.java.util.stream.LongStream}, and {@link java.util.stream.DoubleStream}
  * are streams over objects and the primitive {@code int}, {@code long} and
  * {@code double} types.  Streams differ from collections in several ways:
  *
@@ -68,27 +68,27 @@
  *     {@code findFirst()} can allow computations on infinite streams to
  *     complete in finite time.</li>
  *     <li>Consumable. The elements of a stream are only visited once during
- *     the life of a stream. Like an {@link java.util.Iterator}, a new stream
+ *     the life of a stream. Like an {@link j86.java.util.Iterator}, a new stream
  *     must be generated to revisit the same elements of the source.
  *     </li>
  * </ul>
  *
  * Streams can be obtained in a number of ways. Some examples include:
  * <ul>
- *     <li>From a {@link java.util.Collection} via the {@code stream()} and
+ *     <li>From a {@link j86.java.util.Collection} via the {@code stream()} and
  *     {@code parallelStream()} methods;</li>
- *     <li>From an array via {@link java.util.Arrays#stream(Object[])};</li>
+ *     <li>From an array via {@link j86.java.util.Arrays#stream(Object[])};</li>
  *     <li>From static factory methods on the stream classes, such as
- *     {@link java.util.stream.Stream#of(Object[])},
- *     {@link java.util.stream.IntStream#range(int, int)}
- *     or {@link java.util.stream.Stream#iterate(Object, UnaryOperator)};</li>
- *     <li>The lines of a file can be obtained from {@link java.io.BufferedReader#lines()};</li>
- *     <li>Streams of file paths can be obtained from methods in {@link java.nio.file.Files};</li>
- *     <li>Streams of random numbers can be obtained from {@link java.util.Random#ints()};</li>
+ *     {@link j86.j86.java.util.stream.Stream#of(Object[])},
+ *     {@link j86.j86.java.util.stream.IntStream#range(int, int)}
+ *     or {@link j86.j86.java.util.stream.Stream#iterate(Object, UnaryOperator)};</li>
+ *     <li>The lines of a file can be obtained from {@link j86.java.io.BufferedReader#lines()};</li>
+ *     <li>Streams of file paths can be obtained from methods in {@link j86.j86.java.nio.file.Files};</li>
+ *     <li>Streams of random numbers can be obtained from {@link j86.java.util.Random#ints()};</li>
  *     <li>Numerous other stream-bearing methods in the JDK, including
- *     {@link java.util.BitSet#stream()},
- *     {@link java.util.regex.Pattern#splitAsStream(java.lang.CharSequence)},
- *     and {@link java.util.jar.JarFile#stream()}.</li>
+ *     {@link j86.java.util.BitSet#stream()},
+ *     {@link j86.j86.java.util.regex.Pattern#splitAsStream(j86.java.lang.CharSequence)},
+ *     and {@link j86.j86.java.util.jar.JarFile#stream()}.</li>
  * </ul>
  *
  * <p>Additional stream sources can be provided by third-party libraries using
@@ -167,11 +167,11 @@
  * element.  All streams operations can execute either in serial or in parallel.
  * The stream implementations in the JDK create serial streams unless parallelism is
  * explicitly requested.  For example, {@code Collection} has methods
- * {@link java.util.Collection#stream} and {@link java.util.Collection#parallelStream},
+ * {@link j86.java.util.Collection#stream} and {@link java.util.Collection#parallelStream},
  * which produce sequential and parallel streams respectively; other
- * stream-bearing methods such as {@link java.util.stream.IntStream#range(int, int)}
+ * stream-bearing methods such as {@link j86.j86.java.util.stream.IntStream#range(int, int)}
  * produce sequential streams but these streams can be efficiently parallelized by
- * invoking their {@link java.util.stream.BaseStream#parallel()} method.
+ * invoking their {@link j86.j86.java.util.stream.BaseStream#parallel()} method.
  * To execute the prior "sum of weights of widgets" query in parallel, we would
  * do:
  *
@@ -189,8 +189,8 @@
  * orientation of the stream on which it is invoked.  Whether a stream will execute in serial or
  * parallel can be determined with the {@code isParallel()} method, and the
  * orientation of a stream can be modified with the
- * {@link java.util.stream.BaseStream#sequential()} and
- * {@link java.util.stream.BaseStream#parallel()} operations.  When the terminal
+ * {@link j86.j86.java.util.stream.BaseStream#sequential()} and
+ * {@link j86.j86.java.util.stream.BaseStream#parallel()} operations.  When the terminal
  * operation is initiated, the stream pipeline is executed sequentially or in
  * parallel depending on the mode of the stream on which it is invoked.
  *
@@ -203,7 +203,7 @@
  * these <em>behavioral parameters</em> must be <em>non-interfering</em>, and in
  * most cases must be <em>stateless</em>.  Such parameters are always instances
  * of a <a href="../function/package-summary.html">functional interface</a> such
- * as {@link java.util.function.Function}, and are often lambda expressions or
+ * as {@link j86.j86.java.util.function.Function}, and are often lambda expressions or
  * method references.
  *
  * <h3><a name="NonInterference">Non-interference</a></h3>
@@ -340,7 +340,7 @@
  * arrays) are intrinsically ordered, whereas others (such as {@code HashSet})
  * are not.  Some intermediate operations, such as {@code sorted()}, may impose
  * an encounter order on an otherwise unordered stream, and others may render an
- * ordered stream unordered, such as {@link java.util.stream.BaseStream#unordered()}.
+ * ordered stream unordered, such as {@link j86.j86.java.util.stream.BaseStream#unordered()}.
  * Further, some terminal operations may ignore encounter order, such as
  * {@code forEach()}.
  *
@@ -366,7 +366,7 @@
  * buffering to ensure proper ordering, undermining the benefit of parallelism.
  * In cases where the stream has an encounter order, but the user does not
  * particularly <em>care</em> about that encounter order, explicitly de-ordering
- * the stream with {@link java.util.stream.BaseStream#unordered() unordered()} may
+ * the stream with {@link j86.j86.java.util.stream.BaseStream#unordered() unordered()} may
  * improve parallel performance for some stateful or terminal operations.
  * However, most stream pipelines, such as the "sum of weight of blocks" example
  * above, still parallelize efficiently even under ordering constraints.
@@ -378,11 +378,11 @@
  * application of a combining operation, such as finding the sum or maximum of
  * a set of numbers, or accumulating elements into a list.  The streams classes have
  * multiple forms of general reduction operations, called
- * {@link java.util.stream.Stream#reduce(java.util.function.BinaryOperator) reduce()}
- * and {@link java.util.stream.Stream#collect(java.util.stream.Collector) collect()},
+ * {@link j86.j86.java.util.stream.Stream#reduce(j86.java.util.function.BinaryOperator) reduce()}
+ * and {@link j86.j86.java.util.stream.Stream#collect(java.util.stream.Collector) collect()},
  * as well as multiple specialized reduction forms such as
- * {@link java.util.stream.IntStream#sum() sum()}, {@link java.util.stream.IntStream#max() max()},
- * or {@link java.util.stream.IntStream#count() count()}.
+ * {@link j86.j86.java.util.stream.IntStream#sum() sum()}, {@link java.util.stream.IntStream#max() max()},
+ * or {@link j86.j86.java.util.stream.IntStream#count() count()}.
  *
  * <p>Of course, such operations can be readily implemented as simple sequential
  * loops, as in:
@@ -492,12 +492,12 @@
  * we might not be happy about the performance!  Such an implementation would do
  * a great deal of string copying, and the run time would be <em>O(n^2)</em> in
  * the number of characters.  A more performant approach would be to accumulate
- * the results into a {@link java.lang.StringBuilder}, which is a mutable
+ * the results into a {@link j86.java.lang.StringBuilder}, which is a mutable
  * container for accumulating strings.  We can use the same technique to
  * parallelize mutable reduction as we do with ordinary reduction.
  *
  * <p>The mutable reduction operation is called
- * {@link java.util.stream.Stream#collect(Collector) collect()},
+ * {@link j86.j86.java.util.stream.Stream#collect(Collector) collect()},
  * as it collects together the desired results into a result container such
  * as a {@code Collection}.
  * A {@code collect} operation requires three functions:
@@ -536,14 +536,14 @@
  *     List<String> strings = stream.map(Object::toString)
  *                                  .collect(ArrayList::new, ArrayList::add, ArrayList::addAll);
  * }</pre>
- * Here, our supplier is just the {@link java.util.ArrayList#ArrayList()
+ * Here, our supplier is just the {@link j86.java.util.ArrayList#ArrayList()
  * ArrayList constructor}, the accumulator adds the stringified element to an
- * {@code ArrayList}, and the combiner simply uses {@link java.util.ArrayList#addAll addAll}
+ * {@code ArrayList}, and the combiner simply uses {@link j86.java.util.ArrayList#addAll addAll}
  * to copy the strings from one container into the other.
  *
  * <p>The three aspects of {@code collect} -- supplier, accumulator, and
  * combiner -- are tightly coupled.  We can use the abstraction of a
- * {@link java.util.stream.Collector} to capture all three aspects.  The
+ * {@link j86.j86.java.util.stream.Collector} to capture all three aspects.  The
  * above example for collecting strings into a {@code List} can be rewritten
  * using a standard {@code Collector} as:
  * <pre>{@code
@@ -552,7 +552,7 @@
  * }</pre>
  *
  * <p>Packaging mutable reductions into a Collector has another advantage:
- * composability.  The class {@link java.util.stream.Collectors} contains a
+ * composability.  The class {@link j86.j86.java.util.stream.Collectors} contains a
  * number of predefined factories for collectors, including combinators
  * that transform one collector into another.  For example, suppose we have a
  * collector that computes the sum of the salaries of a stream of
@@ -567,7 +567,7 @@
  * care about the intermediate representation used by this collector.)
  * If we wanted to create a collector to tabulate the sum of salaries by
  * department, we could reuse {@code summingSalaries} using
- * {@link java.util.stream.Collectors#groupingBy(java.util.function.Function, java.util.stream.Collector) groupingBy}:
+ * {@link j86.j86.java.util.stream.Collectors#groupingBy(j86.java.util.function.Function, java.util.stream.Collector) groupingBy}:
  *
  * <pre>{@code
  *     Map<Department, Integer> salariesByDept
@@ -599,7 +599,7 @@
  *     R r2 = finisher.apply(combiner.apply(a2, a3));  // result with splitting
  * }</pre>
  *
- * <p>Here, equivalence generally means according to {@link java.lang.Object#equals(Object)}.
+ * <p>Here, equivalence generally means according to {@link j86.java.lang.Object#equals(Object)}.
  * but in some cases equivalence may be relaxed to account for differences in
  * order.
  *
@@ -618,38 +618,38 @@
  *
  * <p>Suppose, however, that the result container used in this reduction
  * was a concurrently modifiable collection -- such as a
- * {@link java.util.concurrent.ConcurrentHashMap}. In that case, the parallel
+ * {@link j86.j86.java.util.concurrent.ConcurrentHashMap}. In that case, the parallel
  * invocations of the accumulator could actually deposit their results
  * concurrently into the same shared result container, eliminating the need for
  * the combiner to merge distinct result containers. This potentially provides
  * a boost to the parallel execution performance. We call this a
  * <em>concurrent</em> reduction.
  *
- * <p>A {@link java.util.stream.Collector} that supports concurrent reduction is
- * marked with the {@link java.util.stream.Collector.Characteristics#CONCURRENT}
+ * <p>A {@link j86.j86.java.util.stream.Collector} that supports concurrent reduction is
+ * marked with the {@link j86.j86.java.util.stream.Collector.Characteristics#CONCURRENT}
  * characteristic.  However, a concurrent collection also has a downside.  If
  * multiple threads are depositing results concurrently into a shared container,
  * the order in which results are deposited is non-deterministic. Consequently,
  * a concurrent reduction is only possible if ordering is not important for the
- * stream being processed. The {@link java.util.stream.Stream#collect(Collector)}
+ * stream being processed. The {@link j86.j86.java.util.stream.Stream#collect(Collector)}
  * implementation will only perform a concurrent reduction if
  * <ul>
  * <li>The stream is parallel;</li>
  * <li>The collector has the
- * {@link java.util.stream.Collector.Characteristics#CONCURRENT} characteristic,
+ * {@link j86.j86.java.util.stream.Collector.Characteristics#CONCURRENT} characteristic,
  * and;</li>
  * <li>Either the stream is unordered, or the collector has the
- * {@link java.util.stream.Collector.Characteristics#UNORDERED} characteristic.
+ * {@link j86.j86.java.util.stream.Collector.Characteristics#UNORDERED} characteristic.
  * </ul>
  * You can ensure the stream is unordered by using the
- * {@link java.util.stream.BaseStream#unordered()} method.  For example:
+ * {@link j86.j86.java.util.stream.BaseStream#unordered()} method.  For example:
  * <pre>{@code
  *     Map<Buyer, List<Transaction>> salesByBuyer
  *         = txns.parallelStream()
  *               .unordered()
  *               .collect(groupingByConcurrent(Transaction::getBuyer));
  * }</pre>
- * (where {@link java.util.stream.Collectors#groupingByConcurrent} is the
+ * (where {@link j86.j86.java.util.stream.Collectors#groupingByConcurrent} is the
  * concurrent equivalent of {@code groupingBy}).
  *
  * <p>Note that if it is important that the elements for a given key appear in
@@ -679,13 +679,13 @@
  * <h2><a name="StreamSources">Low-level stream construction</a></h2>
  *
  * So far, all the stream examples have used methods like
- * {@link java.util.Collection#stream()} or {@link java.util.Arrays#stream(Object[])}
+ * {@link j86.java.util.Collection#stream()} or {@link java.util.Arrays#stream(Object[])}
  * to obtain a stream.  How are those stream-bearing methods implemented?
  *
- * <p>The class {@link java.util.stream.StreamSupport} has a number of
+ * <p>The class {@link j86.j86.java.util.stream.StreamSupport} has a number of
  * low-level methods for creating a stream, all using some form of a
- * {@link java.util.Spliterator}. A spliterator is the parallel analogue of an
- * {@link java.util.Iterator}; it describes a (possibly infinite) collection of
+ * {@link j86.java.util.Spliterator}. A spliterator is the parallel analogue of an
+ * {@link j86.java.util.Iterator}; it describes a (possibly infinite) collection of
  * elements, with support for sequentially advancing, bulk traversal, and
  * splitting off some portion of the input into another spliterator which can
  * be processed in parallel.  At the lowest level, all streams are driven by a
@@ -696,7 +696,7 @@
  * implementation and runtime performance of streams using that spliterator.
  * The simplest, but least performant, way to create a spliterator is to
  * create one from an iterator using
- * {@link java.util.Spliterators#spliteratorUnknownSize(java.util.Iterator, int)}.
+ * {@link j86.java.util.Spliterators#spliteratorUnknownSize(java.util.Iterator, int)}.
  * While such a spliterator will work, it will likely offer poor parallel
  * performance, since we have lost sizing information (how big is the
  * underlying data set), as well as being constrained to a simplistic
@@ -704,7 +704,7 @@
  *
  * <p>A higher-quality spliterator will provide balanced and known-size
  * splits, accurate sizing information, and a number of other
- * {@link java.util.Spliterator#characteristics() characteristics} of the
+ * {@link j86.java.util.Spliterator#characteristics() characteristics} of the
  * spliterator or data that can be used by implementations to optimize
  * execution.
  *
@@ -718,7 +718,7 @@
  * cannot directly supply a recommended spliterator, it may indirectly supply
  * a spliterator using a {@code Supplier}, and construct a stream via the
  * {@code Supplier}-accepting versions of
- * {@link java.util.stream.StreamSupport#stream(Supplier, int, boolean) stream()}.
+ * {@link j86.j86.java.util.stream.StreamSupport#stream(Supplier, int, boolean) stream()}.
  * The spliterator is obtained from the supplier only after the terminal
  * operation of the stream pipeline commences.
  *
@@ -734,7 +734,7 @@
  *
  * @since 1.8
  */
-package java.util.stream;
+package j86.j86.java.util.stream;
 
-import java.util.function.BinaryOperator;
-import java.util.function.UnaryOperator;
+import j86.j86.java.util.function.BinaryOperator;
+import j86.j86.java.util.function.UnaryOperator;

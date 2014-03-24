@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.sql;
+package j86.java.sql;
 
 /**
  * The subclass of {@link SQLException} for the SQLState class
@@ -35,7 +35,7 @@ package java.sql;
  * conditions for which this <code>Exception</code> may be thrown.
  * @since 1.6
  */
-public class SQLTransientConnectionException extends java.sql.SQLTransientException {
+public class SQLTransientConnectionException extends j86.java.sql.SQLTransientException {
 
         /**
          * Constructs a <code>SQLTransientConnectionException</code> object.
@@ -44,7 +44,7 @@ public class SQLTransientConnectionException extends java.sql.SQLTransientExcept
          *
          * The <code>cause</code> is not initialized, and may subsequently be
          * initialized by a call to the
-         * {@link Throwable#initCause(java.lang.Throwable)} method.
+         * {@link Throwable#initCause(j86.java.lang.Throwable)} method.
          * <p>
          * @since 1.6
          */
@@ -60,7 +60,7 @@ public class SQLTransientConnectionException extends java.sql.SQLTransientExcept
          *
          * The <code>cause</code> is not initialized, and may subsequently be
          * initialized by a call to the
-         * {@link Throwable#initCause(java.lang.Throwable)} method.
+         * {@link Throwable#initCause(j86.java.lang.Throwable)} method.
          * <p>
          * @param reason a description of the exception
          * @since 1.6
@@ -75,7 +75,7 @@ public class SQLTransientConnectionException extends java.sql.SQLTransientExcept
          *
          * The <code>cause</code> is not initialized, and may subsequently be
          * initialized by a call to the
-         * {@link Throwable#initCause(java.lang.Throwable)} method. The vendor code
+         * {@link Throwable#initCause(j86.java.lang.Throwable)} method. The vendor code
          * is initialized to 0.
          * <p>
          * @param reason a description of the exception
@@ -93,7 +93,7 @@ public class SQLTransientConnectionException extends java.sql.SQLTransientExcept
          *
          * The <code>cause</code> is not initialized, and may subsequently be
          * initialized by a call to the
-         * {@link Throwable#initCause(java.lang.Throwable)} method.
+         * {@link Throwable#initCause(j86.java.lang.Throwable)} method.
          * <p>
          * @param reason a description of the exception
          * @param SQLState an XOPEN or SQL:2003 code identifying the exception

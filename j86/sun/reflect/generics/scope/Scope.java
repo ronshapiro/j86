@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.reflect.generics.scope;
+package j86.j86.sun.reflect.generics.scope;
 
-import java.lang.reflect.TypeVariable;
+import j86.j86.j86.java.lang.reflect.TypeVariable;
 
 
 public interface Scope {

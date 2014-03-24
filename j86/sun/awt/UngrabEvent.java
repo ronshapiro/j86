@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.awt;
+package j86.sun.awt;
 
-import java.awt.AWTEvent;
-import java.awt.Component;
+import j86.java.awt.AWTEvent;
+import j86.java.awt.Component;
 
 /**
  * Sent when one of the following events occur on the grabbed window: <ul>
@@ -37,7 +37,7 @@ import java.awt.Component;
  * </ul>
  *
  * <p>Notice that this event is not generated on mouse click inside of the window area.
- * <p>To listen for this event, install AWTEventListener with {@value sun.awt.SunToolkit#GRAB_EVENT_MASK}
+ * <p>To listen for this event, install AWTEventListener with {@value j86.sun.awt.SunToolkit#GRAB_EVENT_MASK}
  */
 @SuppressWarnings("serial")
 public class UngrabEvent extends AWTEvent {
@@ -49,6 +49,6 @@ public class UngrabEvent extends AWTEvent {
     }
 
     public String toString() {
-        return "sun.awt.UngrabEvent[" + getSource() + "]";
+        return "j86.sun.awt.UngrabEvent[" + getSource() + "]";
     }
 }

@@ -23,13 +23,13 @@
  * questions.
  */
 
-package sun.awt;
+package j86.sun.awt;
 
-import java.security.PrivilegedAction;
-import java.util.HashMap;
-import java.util.Map;
+import j86.java.security.PrivilegedAction;
+import j86.java.util.HashMap;
+import j86.java.util.Map;
 
-import static sun.awt.OSInfo.OSType.*;
+import static j86.sun.awt.OSInfo.OSType.*;
 
 /**
  * @author Pavel Porvatov

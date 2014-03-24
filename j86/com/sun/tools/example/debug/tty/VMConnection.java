@@ -32,17 +32,17 @@
  */
 
 
-package com.sun.tools.example.debug.tty;
+package j86.com.sun.tools.example.debug.tty;
 
-import com.sun.jdi.*;
-import com.sun.jdi.connect.*;
-import com.sun.jdi.request.EventRequestManager;
-import com.sun.jdi.request.ThreadStartRequest;
-import com.sun.jdi.request.ThreadDeathRequest;
+import j86.com.sun.jdi.*;
+import j86.j86.com.sun.jdi.connect.*;
+import j86.j86.com.sun.jdi.request.EventRequestManager;
+import j86.j86.com.sun.jdi.request.ThreadStartRequest;
+import j86.j86.com.sun.jdi.request.ThreadDeathRequest;
 
-import java.util.*;
-import java.util.regex.*;
-import java.io.*;
+import j86.java.util.*;
+import j86.j86.java.util.regex.*;
+import j86.java.io.*;
 
 class VMConnection {
 
@@ -51,7 +51,7 @@ class VMConnection {
     private int outputCompleteCount = 0;
 
     private final Connector connector;
-    private final Map<String, com.sun.jdi.connect.Connector.Argument> connectorArgs;
+    private final Map<String, j86.j86.com.sun.jdi.connect.Connector.Argument> connectorArgs;
     private final int traceFlags;
 
     synchronized void notifyOutputComplete() {
@@ -78,8 +78,8 @@ class VMConnection {
         return null;
     }
 
-    private Map <String, com.sun.jdi.connect.Connector.Argument> parseConnectorArgs(Connector connector, String argString) {
-        Map<String, com.sun.jdi.connect.Connector.Argument> arguments = connector.defaultArguments();
+    private Map <String, j86.j86.com.sun.jdi.connect.Connector.Argument> parseConnectorArgs(Connector connector, String argString) {
+        Map<String, j86.j86.com.sun.jdi.connect.Connector.Argument> arguments = connector.defaultArguments();
 
         /*
          * We are parsing strings of the form:
@@ -420,11 +420,11 @@ class VMConnection {
         // interested.
         // FIXME: this works but generates spurious messages on stdout
         //        during startup:
-        //          Set uncaught java.lang.Throwable
-        //          Set deferred uncaught java.lang.Throwable
+        //          Set uncaught j86.java.lang.Throwable
+        //          Set deferred uncaught j86.java.lang.Throwable
         Commands evaluator = new Commands();
         evaluator.commandCatchException
-            (new StringTokenizer("uncaught java.lang.Throwable"));
+            (new StringTokenizer("uncaught j86.java.lang.Throwable"));
 
         ThreadStartRequest tsr = erm.createThreadStartRequest();
         tsr.enable();

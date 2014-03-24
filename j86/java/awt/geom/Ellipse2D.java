@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.awt.geom;
+package j86.j86.java.awt.geom;
 
-import java.io.Serializable;
+import j86.java.io.Serializable;
 
 /**
  * The <code>Ellipse2D</code> class describes an ellipse that is defined
@@ -317,8 +317,8 @@ public abstract class Ellipse2D extends RectangularShape {
      * the information necessary to satisfy the various accessor
      * methods below.
      *
-     * @see java.awt.geom.Ellipse2D.Float
-     * @see java.awt.geom.Ellipse2D.Double
+     * @see j86.j86.java.awt.geom.Ellipse2D.Float
+     * @see j86.j86.java.awt.geom.Ellipse2D.Double
      * @since 1.2
      */
     protected Ellipse2D() {
@@ -428,10 +428,10 @@ public abstract class Ellipse2D extends RectangularShape {
      * @since 1.6
      */
     public int hashCode() {
-        long bits = java.lang.Double.doubleToLongBits(getX());
-        bits += java.lang.Double.doubleToLongBits(getY()) * 37;
-        bits += java.lang.Double.doubleToLongBits(getWidth()) * 43;
-        bits += java.lang.Double.doubleToLongBits(getHeight()) * 47;
+        long bits = j86.java.lang.Double.doubleToLongBits(getX());
+        bits += j86.java.lang.Double.doubleToLongBits(getY()) * 37;
+        bits += j86.java.lang.Double.doubleToLongBits(getWidth()) * 43;
+        bits += j86.java.lang.Double.doubleToLongBits(getHeight()) * 47;
         return (((int) bits) ^ ((int) (bits >> 32)));
     }
 

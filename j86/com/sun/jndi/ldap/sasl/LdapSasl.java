@@ -23,24 +23,24 @@
  * questions.
  */
 
-package com.sun.jndi.ldap.sasl;
+package j86.j86.com.sun.jndi.ldap.sasl;
 
-import java.io.*;
-import java.util.Vector;
-import java.util.Hashtable;
-import java.util.StringTokenizer;
+import j86.java.io.*;
+import j86.java.util.Vector;
+import j86.java.util.Hashtable;
+import j86.java.util.StringTokenizer;
 
-import javax.naming.AuthenticationException;
-import javax.naming.AuthenticationNotSupportedException;
-import javax.naming.NamingException;
+import j86.javax.naming.AuthenticationException;
+import j86.javax.naming.AuthenticationNotSupportedException;
+import j86.javax.naming.NamingException;
 
-import javax.naming.ldap.Control;
+import j86.j86.javax.naming.ldap.Control;
 
-import javax.security.auth.callback.CallbackHandler;
-import javax.security.sasl.*;
-import com.sun.jndi.ldap.Connection;
-import com.sun.jndi.ldap.LdapClient;
-import com.sun.jndi.ldap.LdapResult;
+import j86.j86.javax.security.auth.callback.CallbackHandler;
+import j86.javax.security.sasl.*;
+import j86.com.sun.jndi.ldap.Connection;
+import j86.com.sun.jndi.ldap.LdapClient;
+import j86.com.sun.jndi.ldap.LdapResult;
 
 /**
   * Handles SASL support.

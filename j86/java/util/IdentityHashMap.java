@@ -23,13 +23,13 @@
  * questions.
  */
 
-package java.util;
+package j86.java.util;
 
-import java.io.*;
-import java.lang.reflect.Array;
-import java.util.function.BiConsumer;
-import java.util.function.BiFunction;
-import java.util.function.Consumer;
+import j86.java.io.*;
+import j86.j86.j86.java.lang.reflect.Array;
+import j86.j86.java.util.function.BiConsumer;
+import j86.j86.java.util.function.BiFunction;
+import j86.j86.java.util.function.Consumer;
 
 /**
  * This class implements the <tt>Map</tt> interface with a hash table, using
@@ -138,7 +138,7 @@ import java.util.function.Consumer;
 
 public class IdentityHashMap<K,V>
     extends AbstractMap<K,V>
-    implements Map<K,V>, java.io.Serializable, Cloneable
+    implements Map<K,V>, j86.java.io.Serializable, Cloneable
 {
     /**
      * The initial capacity used by the no-args constructor.
@@ -1275,8 +1275,8 @@ public class IdentityHashMap<K,V>
      *          IdentityHashMap.  The key-value mappings are emitted in no
      *          particular order.
      */
-    private void writeObject(java.io.ObjectOutputStream s)
-        throws java.io.IOException  {
+    private void writeObject(j86.java.io.ObjectOutputStream s)
+        throws j86.java.io.IOException  {
         // Write out and any hidden stuff
         s.defaultWriteObject();
 
@@ -1298,8 +1298,8 @@ public class IdentityHashMap<K,V>
      * Reconstitute the <tt>IdentityHashMap</tt> instance from a stream (i.e.,
      * deserialize it).
      */
-    private void readObject(java.io.ObjectInputStream s)
-        throws java.io.IOException, ClassNotFoundException  {
+    private void readObject(j86.java.io.ObjectInputStream s)
+        throws j86.java.io.IOException, ClassNotFoundException  {
         // Read in any hidden stuff
         s.defaultReadObject();
 
@@ -1334,7 +1334,7 @@ public class IdentityHashMap<K,V>
         Object item;
         while ( (item = tab[i]) != null) {
             if (item == k)
-                throw new java.io.StreamCorruptedException();
+                throw new j86.java.io.StreamCorruptedException();
             i = nextKeyIndex(i, len);
         }
         tab[i] = k;

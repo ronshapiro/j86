@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.text;
+package j86.java.text;
 
-import java.util.Calendar;
-import static java.util.GregorianCalendar.*;
+import j86.java.util.Calendar;
+import static j86.java.util.GregorianCalendar.*;
 
 /**
  * {@code CalendarBuilder} keeps field-value pairs for setting
@@ -43,7 +43,7 @@ import static java.util.GregorianCalendar.*;
  */
 class CalendarBuilder {
     /*
-     * Pseudo time stamp constants used in java.util.Calendar
+     * Pseudo time stamp constants used in j86.java.util.Calendar
      */
     private static final int UNSET = 0;
     private static final int COMPUTED = 1;

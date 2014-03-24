@@ -23,20 +23,20 @@
  * questions.
  */
 
-package com.sun.java.util.jar.pack;
+package j86.com.sun.j86.j86.java.util.jar.pack;
 
-import com.sun.java.util.jar.pack.ConstantPool.Entry;
-import com.sun.java.util.jar.pack.ConstantPool.Index;
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import static com.sun.java.util.jar.pack.Constants.*;
+import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.Entry;
+import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.Index;
+import j86.java.io.ByteArrayOutputStream;
+import j86.java.io.IOException;
+import j86.java.util.ArrayList;
+import j86.java.util.Arrays;
+import j86.java.util.Collection;
+import j86.java.util.Collections;
+import j86.java.util.HashMap;
+import j86.java.util.List;
+import j86.java.util.Map;
+import static j86.com.sun.j86.j86.java.util.jar.pack.Constants.*;
 
 /**
  * Represents an attribute in a class-file.
@@ -1559,7 +1559,7 @@ class Attribute implements Comparable<Attribute> {
         Package.Class cls = new Package().new Class("");
         cls.cpMap = cpMap;
         class TestValueStream extends ValueStream {
-            java.util.Random rand = new java.util.Random(0);
+            j86.java.util.Random rand = new java.util.Random(0);
             ArrayList history = new ArrayList();
             int ckidx = 0;
             int maxVal;

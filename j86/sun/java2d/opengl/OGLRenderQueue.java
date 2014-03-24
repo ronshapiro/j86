@@ -23,13 +23,13 @@
  * questions.
  */
 
-package sun.java2d.opengl;
+package j86.j86.sun.java2d.opengl;
 
-import sun.java2d.pipe.RenderBuffer;
-import sun.java2d.pipe.RenderQueue;
-import static sun.java2d.pipe.BufferedOpCodes.*;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
+import j86.j86.sun.java2d.pipe.RenderBuffer;
+import j86.j86.sun.java2d.pipe.RenderQueue;
+import static j86.j86.sun.java2d.pipe.BufferedOpCodes.*;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
 
 /**
  * OGL-specific implementation of RenderQueue.  This class provides a

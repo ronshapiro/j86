@@ -22,15 +22,15 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.plaf.basic;
+package j86.j86.j86.javax.swing.plaf.basic;
 
-import javax.swing.ComboBoxEditor;
-import javax.swing.JTextField;
-import javax.swing.border.Border;
-import java.awt.Component;
-import java.awt.event.*;
+import j86.javax.swing.ComboBoxEditor;
+import j86.javax.swing.JTextField;
+import j86.j86.javax.swing.border.Border;
+import j86.java.awt.Component;
+import j86.j86.java.awt.event.*;
 
-import java.lang.reflect.Method;
+import j86.j86.j86.java.lang.reflect.Method;
 
 /**
  * The default editor for editable combo boxes. The editor is implemented as a JTextField.
@@ -161,10 +161,10 @@ public class BasicComboBoxEditor implements ComboBoxEditor,FocusListener {
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     public static class UIResource extends BasicComboBoxEditor
-    implements javax.swing.plaf.UIResource {
+    implements j86.j86.javax.swing.plaf.UIResource {
     }
 }

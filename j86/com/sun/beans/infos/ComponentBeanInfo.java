@@ -23,16 +23,16 @@
  * questions.
  */
 
-package com.sun.beans.infos;
+package j86.j86.com.sun.beans.infos;
 
-import java.beans.*;
+import j86.java.beans.*;
 
 /**
  * BeanInfo descriptor for a standard AWT component.
  */
 
 public class ComponentBeanInfo extends SimpleBeanInfo {
-    private static final Class<java.awt.Component> beanClass = java.awt.Component.class;
+    private static final Class<j86.java.awt.Component> beanClass = java.awt.Component.class;
 
     public PropertyDescriptor[] getPropertyDescriptors() {
         try {

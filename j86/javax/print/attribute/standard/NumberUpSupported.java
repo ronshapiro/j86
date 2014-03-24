@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.print.attribute.standard;
+package j86.j86.j86.javax.print.attribute.standard;
 
-import javax.print.attribute.Attribute;
-import javax.print.attribute.SetOfIntegerSyntax;
-import javax.print.attribute.SupportedValuesAttribute;
+import j86.j86.javax.print.attribute.Attribute;
+import j86.j86.javax.print.attribute.SetOfIntegerSyntax;
+import j86.j86.javax.print.attribute.SupportedValuesAttribute;
 
 /**
  * Class NumberUpSupported is a printing attribute class, a set of integers,
@@ -35,7 +35,7 @@ import javax.print.attribute.SupportedValuesAttribute;
  * <B>IPP Compatibility:</B> The NumberUpSupported attribute's canonical array
  * form gives the lower and upper bound for each range of number-up to be
  * included in an IPP "number-up-supported" attribute. See class {@link
- * javax.print.attribute.SetOfIntegerSyntax SetOfIntegerSyntax} for an
+ * j86.j86.javax.print.attribute.SetOfIntegerSyntax SetOfIntegerSyntax} for an
  * explanation of canonical array form. The category name returned by
  * <CODE>getName()</CODE> gives the IPP attribute name.
  * <P>
@@ -52,7 +52,7 @@ public final class NumberUpSupported    extends SetOfIntegerSyntax
      * Construct a new number up supported attribute with the given members.
      * The supported values for NumberUp are specified in "array form;" see
      * class
-     * {@link javax.print.attribute.SetOfIntegerSyntax SetOfIntegerSyntax}
+     * {@link j86.j86.javax.print.attribute.SetOfIntegerSyntax SetOfIntegerSyntax}
      * for an explanation of array form.
      *
      * @param  members  Set members in array form.
@@ -157,7 +157,7 @@ public final class NumberUpSupported    extends SetOfIntegerSyntax
      * category is class NumberUpSupported itself.
      *
      * @return  Printing attribute class (category), an instance of class
-     *          {@link java.lang.Class java.lang.Class}.
+     *          {@link j86.java.lang.Class java.lang.Class}.
      */
     public final Class<? extends Attribute> getCategory() {
         return NumberUpSupported.class;

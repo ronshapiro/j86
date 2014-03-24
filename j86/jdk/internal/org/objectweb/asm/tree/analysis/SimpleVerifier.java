@@ -56,11 +56,11 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-package jdk.internal.org.objectweb.asm.tree.analysis;
+package j86.j86.j86.jdk.internal.org.objectweb.asm.tree.analysis;
 
-import java.util.List;
+import j86.java.util.List;
 
-import jdk.internal.org.objectweb.asm.Type;
+import j86.jdk.internal.org.objectweb.asm.Type;
 
 /**
  * An extended {@link BasicVerifier} that performs more precise verifications.

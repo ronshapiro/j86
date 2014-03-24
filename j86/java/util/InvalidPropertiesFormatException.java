@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.util;
+package j86.java.util;
 
-import java.io.NotSerializableException;
-import java.io.IOException;
+import j86.java.io.NotSerializableException;
+import j86.java.io.IOException;
 
 /**
  * Thrown to indicate that an operation could not complete because
@@ -74,7 +74,7 @@ public class InvalidPropertiesFormatException extends IOException {
      * Throws NotSerializableException, since InvalidPropertiesFormatException
      * objects are not intended to be serializable.
      */
-    private void writeObject(java.io.ObjectOutputStream out)
+    private void writeObject(j86.java.io.ObjectOutputStream out)
         throws NotSerializableException
     {
         throw new NotSerializableException("Not serializable.");
@@ -84,7 +84,7 @@ public class InvalidPropertiesFormatException extends IOException {
      * Throws NotSerializableException, since InvalidPropertiesFormatException
      * objects are not intended to be serializable.
      */
-    private void readObject(java.io.ObjectInputStream in)
+    private void readObject(j86.java.io.ObjectInputStream in)
         throws NotSerializableException
     {
         throw new NotSerializableException("Not serializable.");

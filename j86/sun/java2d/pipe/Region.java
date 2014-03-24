@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.java2d.pipe;
+package j86.j86.sun.java2d.pipe;
 
-import java.awt.Rectangle;
-import java.awt.Shape;
-import java.awt.geom.AffineTransform;
-import java.awt.geom.RectangularShape;
+import j86.java.awt.Rectangle;
+import j86.java.awt.Shape;
+import j86.j86.java.awt.geom.AffineTransform;
+import j86.j86.java.awt.geom.RectangularShape;
 
 /**
  * This class encapsulates a definition of a two dimensional region which
@@ -73,8 +73,8 @@ public class Region {
         }
 
         // Override all the methods that mutate the object
-        public void appendSpans(sun.java2d.pipe.SpanIterator si) {}
-        public void setOutputArea(java.awt.Rectangle r) {}
+        public void appendSpans(j86.j86.sun.java2d.pipe.SpanIterator si) {}
+        public void setOutputArea(j86.java.awt.Rectangle r) {}
         public void setOutputAreaXYWH(int x, int y, int w, int h) {}
         public void setOutputArea(int[] box) {}
         public void setOutputAreaXYXY(int lox, int loy, int hix, int hiy) {}

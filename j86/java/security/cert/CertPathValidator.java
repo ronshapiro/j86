@@ -23,19 +23,19 @@
  * questions.
  */
 
-package java.security.cert;
+package j86.j86.java.security.cert;
 
-import java.security.AccessController;
-import java.security.InvalidAlgorithmParameterException;
-import java.security.NoSuchAlgorithmException;
-import java.security.NoSuchProviderException;
-import java.security.PrivilegedAction;
-import java.security.Provider;
-import java.security.Security;
-import sun.security.util.Debug;
+import j86.java.security.AccessController;
+import j86.java.security.InvalidAlgorithmParameterException;
+import j86.java.security.NoSuchAlgorithmException;
+import j86.java.security.NoSuchProviderException;
+import j86.java.security.PrivilegedAction;
+import j86.java.security.Provider;
+import j86.java.security.Security;
+import j86.sun.security.util.Debug;
 
-import sun.security.jca.*;
-import sun.security.jca.GetInstance.Instance;
+import j86.sun.security.jca.*;
+import j86.sun.security.jca.GetInstance.Instance;
 
 /**
  * A class for validating certification paths (also known as certificate
@@ -156,7 +156,7 @@ public class CertPathValidator {
      *          CertPathValidatorSpi implementation for the
      *          specified algorithm.
      *
-     * @see java.security.Provider
+     * @see j86.java.security.Provider
      */
     public static CertPathValidator getInstance(String algorithm)
             throws NoSuchAlgorithmException {
@@ -199,7 +199,7 @@ public class CertPathValidator {
      * @exception IllegalArgumentException if the {@code provider} is
      *          null or empty.
      *
-     * @see java.security.Provider
+     * @see j86.java.security.Provider
      */
     public static CertPathValidator getInstance(String algorithm,
             String provider) throws NoSuchAlgorithmException,
@@ -237,7 +237,7 @@ public class CertPathValidator {
      * @exception IllegalArgumentException if the {@code provider} is
      *          null.
      *
-     * @see java.security.Provider
+     * @see j86.java.security.Provider
      */
     public static CertPathValidator getInstance(String algorithm,
             Provider provider) throws NoSuchAlgorithmException {
@@ -306,7 +306,7 @@ public class CertPathValidator {
      * setting the value of the {@code certpathvalidator.type} security
      * property to the desired type.
      *
-     * @see java.security.Security security properties
+     * @see j86.java.security.Security security properties
      * @return the default {@code CertPathValidator} type as specified
      * by the {@code certpathvalidator.type} security property, or the string
      * {@literal "PKIX"} if no such property exists.

@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.security.util;
+package j86.sun.security.util;
 
-import java.io.IOException;
-import java.io.OutputStream;
+import j86.java.io.IOException;
+import j86.java.io.OutputStream;
 
 /**
  * Interface to an object that knows how to write its own DER

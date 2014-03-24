@@ -20,27 +20,27 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.sun.org.apache.xml.internal.security;
+package j86.com.sun.org.apache.xml.internal.security;
 
-import java.io.InputStream;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.util.ArrayList;
-import java.util.List;
+import j86.java.io.InputStream;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.util.ArrayList;
+import j86.java.util.List;
 
 import javax.xml.XMLConstants;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 
-import com.sun.org.apache.xml.internal.security.algorithms.JCEMapper;
-import com.sun.org.apache.xml.internal.security.algorithms.SignatureAlgorithm;
-import com.sun.org.apache.xml.internal.security.c14n.Canonicalizer;
-import com.sun.org.apache.xml.internal.security.keys.keyresolver.KeyResolver;
-import com.sun.org.apache.xml.internal.security.transforms.Transform;
-import com.sun.org.apache.xml.internal.security.utils.ElementProxy;
-import com.sun.org.apache.xml.internal.security.utils.I18n;
-import com.sun.org.apache.xml.internal.security.utils.XMLUtils;
-import com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolver;
+import j86.j86.com.sun.org.apache.xml.internal.security.algorithms.JCEMapper;
+import j86.j86.com.sun.org.apache.xml.internal.security.algorithms.SignatureAlgorithm;
+import j86.j86.com.sun.org.apache.xml.internal.security.c14n.Canonicalizer;
+import j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.KeyResolver;
+import j86.j86.com.sun.org.apache.xml.internal.security.transforms.Transform;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.ElementProxy;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.I18n;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
+import j86.j86.j86.com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolver;
 import org.w3c.dom.Attr;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -59,8 +59,8 @@ public class Init {
     public static final String CONF_NS = "http://www.xmlsecurity.org/NS/#configuration";
 
     /** {@link org.apache.commons.logging} logging facility */
-    private static java.util.logging.Logger log =
-        java.util.logging.Logger.getLogger(Init.class.getName());
+    private static j86.j86.java.util.logging.Logger log =
+        j86.j86.java.util.logging.Logger.getLogger(Init.class.getName());
 
     /** Field alreadyInitialized */
     private static boolean alreadyInitialized = false;
@@ -87,7 +87,7 @@ public class Init {
                 new PrivilegedAction<InputStream>() {
                     public InputStream run() {
                         String cfile =
-                            System.getProperty("com.sun.org.apache.xml.internal.security.resource.config");
+                            System.getProperty("j86.com.sun.org.apache.xml.internal.security.resource.config");
                         if (cfile == null) {
                             return null;
                         }
@@ -114,8 +114,8 @@ public class Init {
         //
         I18n.init("en", "US");
 
-        if (log.isLoggable(java.util.logging.Level.FINE)) {
-            log.log(java.util.logging.Level.FINE, "Registering default algorithms");
+        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+            log.log(j86.j86.java.util.logging.Level.FINE, "Registering default algorithms");
         }
         try {
             //
@@ -153,7 +153,7 @@ public class Init {
             //
             KeyResolver.registerDefaultResolvers();
         } catch (Exception ex) {
-            log.log(java.util.logging.Level.SEVERE, ex.getMessage(), ex);
+            log.log(j86.j86.java.util.logging.Level.SEVERE, ex.getMessage(), ex);
             ex.printStackTrace();
         }
     }
@@ -179,7 +179,7 @@ public class Init {
                 }
             }
             if (config == null) {
-                log.log(java.util.logging.Level.SEVERE, "Error in reading configuration file - Configuration element not found");
+                log.log(j86.j86.java.util.logging.Level.SEVERE, "Error in reading configuration file - Configuration element not found");
                 return;
             }
             for (Node el = config.getFirstChild(); el != null; el = el.getNextSibling()) {
@@ -209,12 +209,12 @@ public class Init {
                             list[i].getAttributeNS(null, "JAVACLASS");
                         try {
                             Canonicalizer.register(uri, javaClass);
-                            if (log.isLoggable(java.util.logging.Level.FINE)) {
-                                log.log(java.util.logging.Level.FINE, "Canonicalizer.register(" + uri + ", " + javaClass + ")");
+                            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                                log.log(j86.j86.java.util.logging.Level.FINE, "Canonicalizer.register(" + uri + ", " + javaClass + ")");
                             }
                         } catch (ClassNotFoundException e) {
                             Object exArgs[] = { uri, javaClass };
-                            log.log(java.util.logging.Level.SEVERE, I18n.translate("algorithm.classDoesNotExist", exArgs));
+                            log.log(j86.j86.java.util.logging.Level.SEVERE, I18n.translate("algorithm.classDoesNotExist", exArgs));
                         }
                     }
                 }
@@ -229,15 +229,15 @@ public class Init {
                             tranElem[i].getAttributeNS(null, "JAVACLASS");
                         try {
                             Transform.register(uri, javaClass);
-                            if (log.isLoggable(java.util.logging.Level.FINE)) {
-                                log.log(java.util.logging.Level.FINE, "Transform.register(" + uri + ", " + javaClass + ")");
+                            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                                log.log(j86.j86.java.util.logging.Level.FINE, "Transform.register(" + uri + ", " + javaClass + ")");
                             }
                         } catch (ClassNotFoundException e) {
                             Object exArgs[] = { uri, javaClass };
 
-                            log.log(java.util.logging.Level.SEVERE, I18n.translate("algorithm.classDoesNotExist", exArgs));
+                            log.log(j86.j86.java.util.logging.Level.SEVERE, I18n.translate("algorithm.classDoesNotExist", exArgs));
                         } catch (NoClassDefFoundError ex) {
-                            log.log(java.util.logging.Level.WARNING, "Not able to found dependencies for algorithm, I'll keep working.");
+                            log.log(j86.j86.java.util.logging.Level.WARNING, "Not able to found dependencies for algorithm, I'll keep working.");
                         }
                     }
                 }
@@ -268,14 +268,14 @@ public class Init {
 
                         try {
                             SignatureAlgorithm.register(uri, javaClass);
-                            if (log.isLoggable(java.util.logging.Level.FINE)) {
-                                log.log(java.util.logging.Level.FINE, "SignatureAlgorithm.register(" + uri + ", "
+                            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                                log.log(j86.j86.java.util.logging.Level.FINE, "SignatureAlgorithm.register(" + uri + ", "
                                           + javaClass + ")");
                             }
                         } catch (ClassNotFoundException e) {
                             Object exArgs[] = { uri, javaClass };
 
-                            log.log(java.util.logging.Level.SEVERE, I18n.translate("algorithm.classDoesNotExist", exArgs));
+                            log.log(j86.j86.java.util.logging.Level.SEVERE, I18n.translate("algorithm.classDoesNotExist", exArgs));
                         }
                     }
                 }
@@ -291,20 +291,20 @@ public class Init {
                             resolverElem[i].getAttributeNS(null, "DESCRIPTION");
 
                         if ((description != null) && (description.length() > 0)) {
-                            if (log.isLoggable(java.util.logging.Level.FINE)) {
-                                log.log(java.util.logging.Level.FINE, "Register Resolver: " + javaClass + ": "
+                            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                                log.log(j86.j86.java.util.logging.Level.FINE, "Register Resolver: " + javaClass + ": "
                                           + description);
                             }
                         } else {
-                            if (log.isLoggable(java.util.logging.Level.FINE)) {
-                                log.log(java.util.logging.Level.FINE, "Register Resolver: " + javaClass
+                            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                                log.log(j86.j86.java.util.logging.Level.FINE, "Register Resolver: " + javaClass
                                           + ": For unknown purposes");
                             }
                         }
                         try {
                             ResourceResolver.register(javaClass);
                         } catch (Throwable e) {
-                            log.log(java.util.logging.Level.WARNING,
+                            log.log(j86.j86.java.util.logging.Level.WARNING,
                                  "Cannot register:" + javaClass
                                  + " perhaps some needed jars are not installed",
                                  e
@@ -324,13 +324,13 @@ public class Init {
                             resolverElem[i].getAttributeNS(null, "DESCRIPTION");
 
                         if ((description != null) && (description.length() > 0)) {
-                            if (log.isLoggable(java.util.logging.Level.FINE)) {
-                                log.log(java.util.logging.Level.FINE, "Register Resolver: " + javaClass + ": "
+                            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                                log.log(j86.j86.java.util.logging.Level.FINE, "Register Resolver: " + javaClass + ": "
                                           + description);
                             }
                         } else {
-                            if (log.isLoggable(java.util.logging.Level.FINE)) {
-                                log.log(java.util.logging.Level.FINE, "Register Resolver: " + javaClass
+                            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                                log.log(j86.j86.java.util.logging.Level.FINE, "Register Resolver: " + javaClass
                                           + ": For unknown purposes");
                             }
                         }
@@ -341,8 +341,8 @@ public class Init {
 
 
                 if (tag.equals("PrefixMappings")){
-                    if (log.isLoggable(java.util.logging.Level.FINE)) {
-                        log.log(java.util.logging.Level.FINE, "Now I try to bind prefixes:");
+                    if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                        log.log(j86.j86.java.util.logging.Level.FINE, "Now I try to bind prefixes:");
                     }
 
                     Element[] nl =
@@ -351,15 +351,15 @@ public class Init {
                     for (int i = 0; i < nl.length; i++) {
                         String namespace = nl[i].getAttributeNS(null, "namespace");
                         String prefix = nl[i].getAttributeNS(null, "prefix");
-                        if (log.isLoggable(java.util.logging.Level.FINE)) {
-                            log.log(java.util.logging.Level.FINE, "Now I try to bind " + prefix + " to " + namespace);
+                        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                            log.log(j86.j86.java.util.logging.Level.FINE, "Now I try to bind " + prefix + " to " + namespace);
                         }
                         ElementProxy.setDefaultPrefix(namespace, prefix);
                     }
                 }
             }
         } catch (Exception e) {
-            log.log(java.util.logging.Level.SEVERE, "Bad: ", e);
+            log.log(j86.j86.java.util.logging.Level.SEVERE, "Bad: ", e);
             e.printStackTrace();
         }
     }

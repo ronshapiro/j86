@@ -23,13 +23,13 @@
  * questions.
  */
 
-package sun.security.krb5.internal.crypto;
+package j86.j86.j86.sun.security.krb5.internal.crypto;
 
-import sun.security.krb5.KrbCryptoException;
-import sun.security.krb5.internal.*;
-import java.security.GeneralSecurityException;
-import sun.security.krb5.EncryptedData;
-import sun.security.krb5.Checksum;
+import j86.sun.security.krb5.KrbCryptoException;
+import j86.j86.sun.security.krb5.internal.*;
+import j86.java.security.GeneralSecurityException;
+import j86.sun.security.krb5.EncryptedData;
+import j86.sun.security.krb5.Checksum;
 
 /*
  * This class encapsulates the encryption type for AES256

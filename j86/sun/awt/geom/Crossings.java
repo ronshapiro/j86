@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.awt.geom;
+package j86.j86.sun.awt.geom;
 
-import java.awt.geom.PathIterator;
-import java.util.Vector;
-import java.util.Enumeration;
+import j86.j86.java.awt.geom.PathIterator;
+import j86.java.util.Vector;
+import j86.java.util.Enumeration;
 
 public abstract class Crossings {
     public static final boolean debug = false;

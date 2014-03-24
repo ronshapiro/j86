@@ -23,12 +23,12 @@
  * questions.
  */
 
-package java.sql;
+package j86.java.sql;
 
-import java.math.BigDecimal;
-import java.util.Calendar;
-import java.io.Reader;
-import java.io.InputStream;
+import j86.java.math.BigDecimal;
+import j86.java.util.Calendar;
+import j86.java.io.Reader;
+import j86.java.io.InputStream;
 
 /**
  * A table of data representing a database result set, which
@@ -344,7 +344,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
     /**
      * Retrieves the value of the designated column in the current row
      * of this <code>ResultSet</code> object as
-     * a <code>java.sql.BigDecimal</code> in the Java programming language.
+     * a <code>j86.java.sql.BigDecimal</code> in the Java programming language.
      *
      * @param columnIndex the first column is 1, the second is 2, ...
      * @param scale the number of digits to the right of the decimal point
@@ -379,7 +379,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
     /**
      * Retrieves the value of the designated column in the current row
      * of this <code>ResultSet</code> object as
-     * a <code>java.sql.Date</code> object in the Java programming language.
+     * a <code>j86.java.sql.Date</code> object in the Java programming language.
      *
      * @param columnIndex the first column is 1, the second is 2, ...
      * @return the column value; if the value is SQL <code>NULL</code>, the
@@ -388,12 +388,12 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * if a database access error occurs or this method is
      *            called on a closed result set
      */
-    java.sql.Date getDate(int columnIndex) throws SQLException;
+    j86.java.sql.Date getDate(int columnIndex) throws SQLException;
 
     /**
      * Retrieves the value of the designated column in the current row
      * of this <code>ResultSet</code> object as
-     * a <code>java.sql.Time</code> object in the Java programming language.
+     * a <code>j86.java.sql.Time</code> object in the Java programming language.
      *
      * @param columnIndex the first column is 1, the second is 2, ...
      * @return the column value; if the value is SQL <code>NULL</code>, the
@@ -402,12 +402,12 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * if a database access error occurs or this method is
      *            called on a closed result set
      */
-    java.sql.Time getTime(int columnIndex) throws SQLException;
+    j86.java.sql.Time getTime(int columnIndex) throws SQLException;
 
     /**
      * Retrieves the value of the designated column in the current row
      * of this <code>ResultSet</code> object as
-     * a <code>java.sql.Timestamp</code> object in the Java programming language.
+     * a <code>j86.java.sql.Timestamp</code> object in the Java programming language.
      *
      * @param columnIndex the first column is 1, the second is 2, ...
      * @return the column value; if the value is SQL <code>NULL</code>, the
@@ -416,7 +416,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * if a database access error occurs or this method is
      *            called on a closed result set
      */
-    java.sql.Timestamp getTimestamp(int columnIndex) throws SQLException;
+    j86.java.sql.Timestamp getTimestamp(int columnIndex) throws SQLException;
 
     /**
      * Retrieves the value of the designated column in the current row
@@ -443,7 +443,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * if a database access error occurs or this method is
      *            called on a closed result set
      */
-    java.io.InputStream getAsciiStream(int columnIndex) throws SQLException;
+    j86.java.io.InputStream getAsciiStream(int columnIndex) throws SQLException;
 
     /**
      * Retrieves the value of the designated column in the current row
@@ -479,7 +479,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      *              <code>getUnicodeStream</code>
      */
     @Deprecated
-    java.io.InputStream getUnicodeStream(int columnIndex) throws SQLException;
+    j86.java.io.InputStream getUnicodeStream(int columnIndex) throws SQLException;
 
     /**
      * Retrieves the value of the designated column in the current row
@@ -504,7 +504,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * if a database access error occurs or this method is
      *            called on a closed result set
      */
-    java.io.InputStream getBinaryStream(int columnIndex)
+    j86.java.io.InputStream getBinaryStream(int columnIndex)
         throws SQLException;
 
 
@@ -632,7 +632,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
     /**
      * Retrieves the value of the designated column in the current row
      * of this <code>ResultSet</code> object as
-     * a <code>java.math.BigDecimal</code> in the Java programming language.
+     * a <code>j86.java.math.BigDecimal</code> in the Java programming language.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
      * @param scale the number of digits to the right of the decimal point
@@ -667,7 +667,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
     /**
      * Retrieves the value of the designated column in the current row
      * of this <code>ResultSet</code> object as
-     * a <code>java.sql.Date</code> object in the Java programming language.
+     * a <code>j86.java.sql.Date</code> object in the Java programming language.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
      * @return the column value; if the value is SQL <code>NULL</code>, the
@@ -676,12 +676,12 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * if a database access error occurs or this method is
      *            called on a closed result set
      */
-    java.sql.Date getDate(String columnLabel) throws SQLException;
+    j86.java.sql.Date getDate(String columnLabel) throws SQLException;
 
     /**
      * Retrieves the value of the designated column in the current row
      * of this <code>ResultSet</code> object as
-     * a <code>java.sql.Time</code> object in the Java programming language.
+     * a <code>j86.java.sql.Time</code> object in the Java programming language.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
      * @return the column value;
@@ -691,12 +691,12 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * if a database access error occurs or this method is
      *            called on a closed result set
      */
-    java.sql.Time getTime(String columnLabel) throws SQLException;
+    j86.java.sql.Time getTime(String columnLabel) throws SQLException;
 
     /**
      * Retrieves the value of the designated column in the current row
      * of this <code>ResultSet</code> object as
-     * a <code>java.sql.Timestamp</code> object in the Java programming language.
+     * a <code>j86.java.sql.Timestamp</code> object in the Java programming language.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
      * @return the column value; if the value is SQL <code>NULL</code>, the
@@ -705,7 +705,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * if a database access error occurs or this method is
      *            called on a closed result set
      */
-    java.sql.Timestamp getTimestamp(String columnLabel) throws SQLException;
+    j86.java.sql.Timestamp getTimestamp(String columnLabel) throws SQLException;
 
     /**
      * Retrieves the value of the designated column in the current row
@@ -731,7 +731,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * if a database access error occurs or this method is
      *            called on a closed result set
      */
-    java.io.InputStream getAsciiStream(String columnLabel) throws SQLException;
+    j86.java.io.InputStream getAsciiStream(String columnLabel) throws SQLException;
 
     /**
      * Retrieves the value of the designated column in the current row
@@ -765,7 +765,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @deprecated use <code>getCharacterStream</code> instead
      */
     @Deprecated
-    java.io.InputStream getUnicodeStream(String columnLabel) throws SQLException;
+    j86.java.io.InputStream getUnicodeStream(String columnLabel) throws SQLException;
 
     /**
      * Retrieves the value of the designated column in the current row
@@ -790,7 +790,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * if a database access error occurs or this method is
      *            called on a closed result set
      */
-    java.io.InputStream getBinaryStream(String columnLabel)
+    j86.java.io.InputStream getBinaryStream(String columnLabel)
         throws SQLException;
 
 
@@ -899,7 +899,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * underlying SQL type of the DISTINCT type.
      *
      * @param columnIndex the first column is 1, the second is 2, ...
-     * @return a <code>java.lang.Object</code> holding the column value
+     * @return a <code>j86.java.lang.Object</code> holding the column value
      * @exception SQLException if the columnIndex is not valid;
      * if a database access error occurs or this method is
      *            called on a closed result set
@@ -929,7 +929,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * this.getStatement().getConnection().getTypeMap())</code>.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @return a <code>java.lang.Object</code> holding the column value
+     * @return a <code>j86.java.lang.Object</code> holding the column value
      * @exception SQLException if the columnLabel is not valid;
      * if a database access error occurs or this method is
      *            called on a closed result set
@@ -960,8 +960,8 @@ public interface ResultSet extends Wrapper, AutoCloseable {
     /**
      * Retrieves the value of the designated column in the current row
      * of this <code>ResultSet</code> object as a
-     * <code>java.io.Reader</code> object.
-     * @return a <code>java.io.Reader</code> object that contains the column
+     * <code>j86.java.io.Reader</code> object.
+     * @return a <code>j86.java.io.Reader</code> object that contains the column
      * value; if the value is SQL <code>NULL</code>, the value returned is
      * <code>null</code> in the Java programming language.
      * @param columnIndex the first column is 1, the second is 2, ...
@@ -970,15 +970,15 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      *            called on a closed result set
      * @since 1.2
      */
-    java.io.Reader getCharacterStream(int columnIndex) throws SQLException;
+    j86.java.io.Reader getCharacterStream(int columnIndex) throws SQLException;
 
     /**
      * Retrieves the value of the designated column in the current row
      * of this <code>ResultSet</code> object as a
-     * <code>java.io.Reader</code> object.
+     * <code>j86.java.io.Reader</code> object.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @return a <code>java.io.Reader</code> object that contains the column
+     * @return a <code>j86.java.io.Reader</code> object that contains the column
      * value; if the value is SQL <code>NULL</code>, the value returned is
      * <code>null</code> in the Java programming language
      * @exception SQLException if the columnLabel is not valid;
@@ -986,12 +986,12 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      *            called on a closed result set
      * @since 1.2
      */
-    java.io.Reader getCharacterStream(String columnLabel) throws SQLException;
+    j86.java.io.Reader getCharacterStream(String columnLabel) throws SQLException;
 
     /**
      * Retrieves the value of the designated column in the current row
      * of this <code>ResultSet</code> object as a
-     * <code>java.math.BigDecimal</code> with full precision.
+     * <code>j86.java.math.BigDecimal</code> with full precision.
      *
      * @param columnIndex the first column is 1, the second is 2, ...
      * @return the column value (full precision);
@@ -1007,7 +1007,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
     /**
      * Retrieves the value of the designated column in the current row
      * of this <code>ResultSet</code> object as a
-     * <code>java.math.BigDecimal</code> with full precision.
+     * <code>j86.java.math.BigDecimal</code> with full precision.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
      * @return the column value (full precision);
@@ -1646,7 +1646,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
     void updateDouble(int columnIndex, double x) throws SQLException;
 
     /**
-     * Updates the designated column with a <code>java.math.BigDecimal</code>
+     * Updates the designated column with a <code>j86.java.math.BigDecimal</code>
      * value.
      * The updater methods are used to update column values in the
      * current row or the insert row.  The updater methods do not
@@ -1704,7 +1704,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
     void updateBytes(int columnIndex, byte x[]) throws SQLException;
 
     /**
-     * Updates the designated column with a <code>java.sql.Date</code> value.
+     * Updates the designated column with a <code>j86.java.sql.Date</code> value.
      * The updater methods are used to update column values in the
      * current row or the insert row.  The updater methods do not
      * update the underlying database; instead the <code>updateRow</code> or
@@ -1720,10 +1720,10 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * this method
      * @since 1.2
      */
-    void updateDate(int columnIndex, java.sql.Date x) throws SQLException;
+    void updateDate(int columnIndex, j86.java.sql.Date x) throws SQLException;
 
     /**
-     * Updates the designated column with a <code>java.sql.Time</code> value.
+     * Updates the designated column with a <code>j86.java.sql.Time</code> value.
      * The updater methods are used to update column values in the
      * current row or the insert row.  The updater methods do not
      * update the underlying database; instead the <code>updateRow</code> or
@@ -1739,10 +1739,10 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * this method
      * @since 1.2
      */
-    void updateTime(int columnIndex, java.sql.Time x) throws SQLException;
+    void updateTime(int columnIndex, j86.java.sql.Time x) throws SQLException;
 
     /**
-     * Updates the designated column with a <code>java.sql.Timestamp</code>
+     * Updates the designated column with a <code>j86.java.sql.Timestamp</code>
      * value.
      * The updater methods are used to update column values in the
      * current row or the insert row.  The updater methods do not
@@ -1759,7 +1759,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * this method
      * @since 1.2
      */
-    void updateTimestamp(int columnIndex, java.sql.Timestamp x)
+    void updateTimestamp(int columnIndex, j86.java.sql.Timestamp x)
       throws SQLException;
 
     /**
@@ -1782,7 +1782,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @since 1.2
      */
     void updateAsciiStream(int columnIndex,
-                           java.io.InputStream x,
+                           j86.java.io.InputStream x,
                            int length) throws SQLException;
 
     /**
@@ -1805,7 +1805,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @since 1.2
      */
     void updateBinaryStream(int columnIndex,
-                            java.io.InputStream x,
+                            j86.java.io.InputStream x,
                             int length) throws SQLException;
 
     /**
@@ -1828,7 +1828,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @since 1.2
      */
     void updateCharacterStream(int columnIndex,
-                             java.io.Reader x,
+                             j86.java.io.Reader x,
                              int length) throws SQLException;
 
     /**
@@ -1847,7 +1847,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      *
      * @param columnIndex the first column is 1, the second is 2, ...
      * @param x the new column value
-     * @param scaleOrLength for an object of <code>java.math.BigDecimal</code> ,
+     * @param scaleOrLength for an object of <code>j86.java.math.BigDecimal</code> ,
      *          this is the number of digits after the decimal point. For
      *          Java Object types <code>InputStream</code> and <code>Reader</code>,
      *          this is the length
@@ -2036,7 +2036,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
     void updateDouble(String columnLabel, double x) throws SQLException;
 
     /**
-     * Updates the designated column with a <code>java.sql.BigDecimal</code>
+     * Updates the designated column with a <code>j86.java.sql.BigDecimal</code>
      * value.
      * The updater methods are used to update column values in the
      * current row or the insert row.  The updater methods do not
@@ -2095,7 +2095,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
     void updateBytes(String columnLabel, byte x[]) throws SQLException;
 
     /**
-     * Updates the designated column with a <code>java.sql.Date</code> value.
+     * Updates the designated column with a <code>j86.java.sql.Date</code> value.
      * The updater methods are used to update column values in the
      * current row or the insert row.  The updater methods do not
      * update the underlying database; instead the <code>updateRow</code> or
@@ -2111,10 +2111,10 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * this method
      * @since 1.2
      */
-    void updateDate(String columnLabel, java.sql.Date x) throws SQLException;
+    void updateDate(String columnLabel, j86.java.sql.Date x) throws SQLException;
 
     /**
-     * Updates the designated column with a <code>java.sql.Time</code> value.
+     * Updates the designated column with a <code>j86.java.sql.Time</code> value.
      * The updater methods are used to update column values in the
      * current row or the insert row.  The updater methods do not
      * update the underlying database; instead the <code>updateRow</code> or
@@ -2130,10 +2130,10 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * this method
      * @since 1.2
      */
-    void updateTime(String columnLabel, java.sql.Time x) throws SQLException;
+    void updateTime(String columnLabel, j86.java.sql.Time x) throws SQLException;
 
     /**
-     * Updates the designated column with a <code>java.sql.Timestamp</code>
+     * Updates the designated column with a <code>j86.java.sql.Timestamp</code>
      * value.
      * The updater methods are used to update column values in the
      * current row or the insert row.  The updater methods do not
@@ -2150,7 +2150,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * this method
      * @since 1.2
      */
-    void updateTimestamp(String columnLabel, java.sql.Timestamp x)
+    void updateTimestamp(String columnLabel, j86.java.sql.Timestamp x)
       throws SQLException;
 
     /**
@@ -2173,7 +2173,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @since 1.2
      */
     void updateAsciiStream(String columnLabel,
-                           java.io.InputStream x,
+                           j86.java.io.InputStream x,
                            int length) throws SQLException;
 
     /**
@@ -2196,7 +2196,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @since 1.2
      */
     void updateBinaryStream(String columnLabel,
-                            java.io.InputStream x,
+                            j86.java.io.InputStream x,
                             int length) throws SQLException;
 
     /**
@@ -2208,7 +2208,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @param reader the <code>java.io.Reader</code> object containing
+     * @param reader the <code>j86.java.io.Reader</code> object containing
      *        the new column value
      * @param length the length of the stream
      * @exception SQLException if the columnLabel is not valid;
@@ -2220,7 +2220,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @since 1.2
      */
     void updateCharacterStream(String columnLabel,
-                             java.io.Reader reader,
+                             j86.java.io.Reader reader,
                              int length) throws SQLException;
 
     /**
@@ -2239,7 +2239,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
      * @param x the new column value
-     * @param scaleOrLength for an object of <code>java.math.BigDecimal</code> ,
+     * @param scaleOrLength for an object of <code>j86.java.math.BigDecimal</code> ,
      *          this is the number of digits after the decimal point. For
      *          Java Object types <code>InputStream</code> and <code>Reader</code>,
      *          this is the length
@@ -2443,7 +2443,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * SQL structured or distinct type that is being retrieved.
      *
      * @param columnIndex the first column is 1, the second is 2, ...
-     * @param map a <code>java.util.Map</code> object that contains the mapping
+     * @param map a <code>j86.java.util.Map</code> object that contains the mapping
      * from SQL type names to classes in the Java programming language
      * @return an <code>Object</code> in the Java programming language
      * representing the SQL value
@@ -2454,7 +2454,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * this method
      * @since 1.2
      */
-    Object getObject(int columnIndex, java.util.Map<String,Class<?>> map)
+    Object getObject(int columnIndex, j86.java.util.Map<String,Class<?>> map)
         throws SQLException;
 
     /**
@@ -2535,7 +2535,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * custom mapping if appropriate.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @param map a <code>java.util.Map</code> object that contains the mapping
+     * @param map a <code>j86.java.util.Map</code> object that contains the mapping
      * from SQL type names to classes in the Java programming language
      * @return an <code>Object</code> representing the SQL value in the
      *         specified column
@@ -2546,7 +2546,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * this method
      * @since 1.2
      */
-    Object getObject(String columnLabel, java.util.Map<String,Class<?>> map)
+    Object getObject(String columnLabel, j86.java.util.Map<String,Class<?>> map)
       throws SQLException;
 
     /**
@@ -2619,16 +2619,16 @@ public interface ResultSet extends Wrapper, AutoCloseable {
 
     /**
      * Retrieves the value of the designated column in the current row
-     * of this <code>ResultSet</code> object as a <code>java.sql.Date</code> object
+     * of this <code>ResultSet</code> object as a <code>j86.java.sql.Date</code> object
      * in the Java programming language.
      * This method uses the given calendar to construct an appropriate millisecond
      * value for the date if the underlying database does not store
      * timezone information.
      *
      * @param columnIndex the first column is 1, the second is 2, ...
-     * @param cal the <code>java.util.Calendar</code> object
+     * @param cal the <code>j86.java.util.Calendar</code> object
      * to use in constructing the date
-     * @return the column value as a <code>java.sql.Date</code> object;
+     * @return the column value as a <code>j86.java.sql.Date</code> object;
      * if the value is SQL <code>NULL</code>,
      * the value returned is <code>null</code> in the Java programming language
      * @exception SQLException if the columnIndex is not valid;
@@ -2636,20 +2636,20 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * or this method is called on a closed result set
      * @since 1.2
      */
-    java.sql.Date getDate(int columnIndex, Calendar cal) throws SQLException;
+    j86.java.sql.Date getDate(int columnIndex, Calendar cal) throws SQLException;
 
     /**
      * Retrieves the value of the designated column in the current row
-     * of this <code>ResultSet</code> object as a <code>java.sql.Date</code> object
+     * of this <code>ResultSet</code> object as a <code>j86.java.sql.Date</code> object
      * in the Java programming language.
      * This method uses the given calendar to construct an appropriate millisecond
      * value for the date if the underlying database does not store
      * timezone information.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @param cal the <code>java.util.Calendar</code> object
+     * @param cal the <code>j86.java.util.Calendar</code> object
      * to use in constructing the date
-     * @return the column value as a <code>java.sql.Date</code> object;
+     * @return the column value as a <code>j86.java.sql.Date</code> object;
      * if the value is SQL <code>NULL</code>,
      * the value returned is <code>null</code> in the Java programming language
      * @exception SQLException if the columnLabel is not valid;
@@ -2657,20 +2657,20 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * or this method is called on a closed result set
      * @since 1.2
      */
-    java.sql.Date getDate(String columnLabel, Calendar cal) throws SQLException;
+    j86.java.sql.Date getDate(String columnLabel, Calendar cal) throws SQLException;
 
     /**
      * Retrieves the value of the designated column in the current row
-     * of this <code>ResultSet</code> object as a <code>java.sql.Time</code> object
+     * of this <code>ResultSet</code> object as a <code>j86.java.sql.Time</code> object
      * in the Java programming language.
      * This method uses the given calendar to construct an appropriate millisecond
      * value for the time if the underlying database does not store
      * timezone information.
      *
      * @param columnIndex the first column is 1, the second is 2, ...
-     * @param cal the <code>java.util.Calendar</code> object
+     * @param cal the <code>j86.java.util.Calendar</code> object
      * to use in constructing the time
-     * @return the column value as a <code>java.sql.Time</code> object;
+     * @return the column value as a <code>j86.java.sql.Time</code> object;
      * if the value is SQL <code>NULL</code>,
      * the value returned is <code>null</code> in the Java programming language
      * @exception SQLException if the columnIndex is not valid;
@@ -2678,20 +2678,20 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * or this method is called on a closed result set
      * @since 1.2
      */
-    java.sql.Time getTime(int columnIndex, Calendar cal) throws SQLException;
+    j86.java.sql.Time getTime(int columnIndex, Calendar cal) throws SQLException;
 
     /**
      * Retrieves the value of the designated column in the current row
-     * of this <code>ResultSet</code> object as a <code>java.sql.Time</code> object
+     * of this <code>ResultSet</code> object as a <code>j86.java.sql.Time</code> object
      * in the Java programming language.
      * This method uses the given calendar to construct an appropriate millisecond
      * value for the time if the underlying database does not store
      * timezone information.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @param cal the <code>java.util.Calendar</code> object
+     * @param cal the <code>j86.java.util.Calendar</code> object
      * to use in constructing the time
-     * @return the column value as a <code>java.sql.Time</code> object;
+     * @return the column value as a <code>j86.java.sql.Time</code> object;
      * if the value is SQL <code>NULL</code>,
      * the value returned is <code>null</code> in the Java programming language
      * @exception SQLException if the columnLabel is not valid;
@@ -2699,20 +2699,20 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * or this method is called on a closed result set
      * @since 1.2
      */
-    java.sql.Time getTime(String columnLabel, Calendar cal) throws SQLException;
+    j86.java.sql.Time getTime(String columnLabel, Calendar cal) throws SQLException;
 
     /**
      * Retrieves the value of the designated column in the current row
-     * of this <code>ResultSet</code> object as a <code>java.sql.Timestamp</code> object
+     * of this <code>ResultSet</code> object as a <code>j86.java.sql.Timestamp</code> object
      * in the Java programming language.
      * This method uses the given calendar to construct an appropriate millisecond
      * value for the timestamp if the underlying database does not store
      * timezone information.
      *
      * @param columnIndex the first column is 1, the second is 2, ...
-     * @param cal the <code>java.util.Calendar</code> object
+     * @param cal the <code>j86.java.util.Calendar</code> object
      * to use in constructing the timestamp
-     * @return the column value as a <code>java.sql.Timestamp</code> object;
+     * @return the column value as a <code>j86.java.sql.Timestamp</code> object;
      * if the value is SQL <code>NULL</code>,
      * the value returned is <code>null</code> in the Java programming language
      * @exception SQLException if the columnIndex is not valid;
@@ -2720,21 +2720,21 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * or this method is called on a closed result set
      * @since 1.2
      */
-    java.sql.Timestamp getTimestamp(int columnIndex, Calendar cal)
+    j86.java.sql.Timestamp getTimestamp(int columnIndex, Calendar cal)
       throws SQLException;
 
     /**
      * Retrieves the value of the designated column in the current row
-     * of this <code>ResultSet</code> object as a <code>java.sql.Timestamp</code> object
+     * of this <code>ResultSet</code> object as a <code>j86.java.sql.Timestamp</code> object
      * in the Java programming language.
      * This method uses the given calendar to construct an appropriate millisecond
      * value for the timestamp if the underlying database does not store
      * timezone information.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @param cal the <code>java.util.Calendar</code> object
+     * @param cal the <code>j86.java.util.Calendar</code> object
      * to use in constructing the date
-     * @return the column value as a <code>java.sql.Timestamp</code> object;
+     * @return the column value as a <code>j86.java.sql.Timestamp</code> object;
      * if the value is SQL <code>NULL</code>,
      * the value returned is <code>null</code> in the Java programming language
      * @exception SQLException if the columnLabel is not valid or
@@ -2742,7 +2742,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * or this method is called on a closed result set
      * @since 1.2
      */
-    java.sql.Timestamp getTimestamp(String columnLabel, Calendar cal)
+    j86.java.sql.Timestamp getTimestamp(String columnLabel, Calendar cal)
       throws SQLException;
 
     //-------------------------- JDBC 3.0 ----------------------------------------
@@ -2765,11 +2765,11 @@ public interface ResultSet extends Wrapper, AutoCloseable {
 
     /**
      * Retrieves the value of the designated column in the current row
-     * of this <code>ResultSet</code> object as a <code>java.net.URL</code>
+     * of this <code>ResultSet</code> object as a <code>j86.java.net.URL</code>
      * object in the Java programming language.
      *
      * @param columnIndex the index of the column 1 is the first, 2 is the second,...
-     * @return the column value as a <code>java.net.URL</code> object;
+     * @return the column value as a <code>j86.java.net.URL</code> object;
      * if the value is SQL <code>NULL</code>,
      * the value returned is <code>null</code> in the Java programming language
      * @exception SQLException if the columnIndex is not valid;
@@ -2779,15 +2779,15 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * this method
      * @since 1.4
      */
-    java.net.URL getURL(int columnIndex) throws SQLException;
+    j86.java.net.URL getURL(int columnIndex) throws SQLException;
 
     /**
      * Retrieves the value of the designated column in the current row
-     * of this <code>ResultSet</code> object as a <code>java.net.URL</code>
+     * of this <code>ResultSet</code> object as a <code>j86.java.net.URL</code>
      * object in the Java programming language.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @return the column value as a <code>java.net.URL</code> object;
+     * @return the column value as a <code>j86.java.net.URL</code> object;
      * if the value is SQL <code>NULL</code>,
      * the value returned is <code>null</code> in the Java programming language
      * @exception SQLException if the columnLabel is not valid;
@@ -2797,10 +2797,10 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * this method
      * @since 1.4
      */
-    java.net.URL getURL(String columnLabel) throws SQLException;
+    j86.java.net.URL getURL(String columnLabel) throws SQLException;
 
     /**
-     * Updates the designated column with a <code>java.sql.Ref</code> value.
+     * Updates the designated column with a <code>j86.java.sql.Ref</code> value.
      * The updater methods are used to update column values in the
      * current row or the insert row.  The updater methods do not
      * update the underlying database; instead the <code>updateRow</code> or
@@ -2816,10 +2816,10 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * this method
      * @since 1.4
      */
-    void updateRef(int columnIndex, java.sql.Ref x) throws SQLException;
+    void updateRef(int columnIndex, j86.java.sql.Ref x) throws SQLException;
 
     /**
-     * Updates the designated column with a <code>java.sql.Ref</code> value.
+     * Updates the designated column with a <code>j86.java.sql.Ref</code> value.
      * The updater methods are used to update column values in the
      * current row or the insert row.  The updater methods do not
      * update the underlying database; instead the <code>updateRow</code> or
@@ -2835,10 +2835,10 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * this method
      * @since 1.4
      */
-    void updateRef(String columnLabel, java.sql.Ref x) throws SQLException;
+    void updateRef(String columnLabel, j86.java.sql.Ref x) throws SQLException;
 
     /**
-     * Updates the designated column with a <code>java.sql.Blob</code> value.
+     * Updates the designated column with a <code>j86.java.sql.Blob</code> value.
      * The updater methods are used to update column values in the
      * current row or the insert row.  The updater methods do not
      * update the underlying database; instead the <code>updateRow</code> or
@@ -2854,10 +2854,10 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * this method
      * @since 1.4
      */
-    void updateBlob(int columnIndex, java.sql.Blob x) throws SQLException;
+    void updateBlob(int columnIndex, j86.java.sql.Blob x) throws SQLException;
 
     /**
-     * Updates the designated column with a <code>java.sql.Blob</code> value.
+     * Updates the designated column with a <code>j86.java.sql.Blob</code> value.
      * The updater methods are used to update column values in the
      * current row or the insert row.  The updater methods do not
      * update the underlying database; instead the <code>updateRow</code> or
@@ -2873,10 +2873,10 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * this method
      * @since 1.4
      */
-    void updateBlob(String columnLabel, java.sql.Blob x) throws SQLException;
+    void updateBlob(String columnLabel, j86.java.sql.Blob x) throws SQLException;
 
     /**
-     * Updates the designated column with a <code>java.sql.Clob</code> value.
+     * Updates the designated column with a <code>j86.java.sql.Clob</code> value.
      * The updater methods are used to update column values in the
      * current row or the insert row.  The updater methods do not
      * update the underlying database; instead the <code>updateRow</code> or
@@ -2892,10 +2892,10 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * this method
      * @since 1.4
      */
-    void updateClob(int columnIndex, java.sql.Clob x) throws SQLException;
+    void updateClob(int columnIndex, j86.java.sql.Clob x) throws SQLException;
 
     /**
-     * Updates the designated column with a <code>java.sql.Clob</code> value.
+     * Updates the designated column with a <code>j86.java.sql.Clob</code> value.
      * The updater methods are used to update column values in the
      * current row or the insert row.  The updater methods do not
      * update the underlying database; instead the <code>updateRow</code> or
@@ -2911,10 +2911,10 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * this method
      * @since 1.4
      */
-    void updateClob(String columnLabel, java.sql.Clob x) throws SQLException;
+    void updateClob(String columnLabel, j86.java.sql.Clob x) throws SQLException;
 
     /**
-     * Updates the designated column with a <code>java.sql.Array</code> value.
+     * Updates the designated column with a <code>j86.java.sql.Array</code> value.
      * The updater methods are used to update column values in the
      * current row or the insert row.  The updater methods do not
      * update the underlying database; instead the <code>updateRow</code> or
@@ -2930,10 +2930,10 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * this method
      * @since 1.4
      */
-    void updateArray(int columnIndex, java.sql.Array x) throws SQLException;
+    void updateArray(int columnIndex, j86.java.sql.Array x) throws SQLException;
 
     /**
-     * Updates the designated column with a <code>java.sql.Array</code> value.
+     * Updates the designated column with a <code>j86.java.sql.Array</code> value.
      * The updater methods are used to update column values in the
      * current row or the insert row.  The updater methods do not
      * update the underlying database; instead the <code>updateRow</code> or
@@ -2949,13 +2949,13 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * this method
      * @since 1.4
      */
-    void updateArray(String columnLabel, java.sql.Array x) throws SQLException;
+    void updateArray(String columnLabel, j86.java.sql.Array x) throws SQLException;
 
     //------------------------- JDBC 4.0 -----------------------------------
 
     /**
      * Retrieves the value of the designated column in the current row of this
-     * <code>ResultSet</code> object as a <code>java.sql.RowId</code> object in the Java
+     * <code>ResultSet</code> object as a <code>j86.java.sql.RowId</code> object in the Java
      * programming language.
      *
      * @param columnIndex the first column is 1, the second 2, ...
@@ -2972,7 +2972,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
 
     /**
      * Retrieves the value of the designated column in the current row of this
-     * <code>ResultSet</code> object as a <code>java.sql.RowId</code> object in the Java
+     * <code>ResultSet</code> object as a <code>j86.java.sql.RowId</code> object in the Java
      * programming language.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
@@ -3091,7 +3091,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
     void updateNString(String columnLabel, String nString) throws SQLException;
 
     /**
-     * Updates the designated column with a <code>java.sql.NClob</code> value.
+     * Updates the designated column with a <code>j86.java.sql.NClob</code> value.
      * The updater methods are used to update column values in the
      * current row or the insert row.  The updater methods do not
      * update the underlying database; instead the <code>updateRow</code> or
@@ -3112,7 +3112,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
     void updateNClob(int columnIndex, NClob nClob) throws SQLException;
 
     /**
-     * Updates the designated column with a <code>java.sql.NClob</code> value.
+     * Updates the designated column with a <code>j86.java.sql.NClob</code> value.
      * The updater methods are used to update column values in the
      * current row or the insert row.  The updater methods do not
      * update the underlying database; instead the <code>updateRow</code> or
@@ -3173,7 +3173,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
     /**
      * Retrieves the value of the designated column in  the current row of
      *  this <code>ResultSet</code> as a
-     * <code>java.sql.SQLXML</code> object in the Java programming language.
+     * <code>j86.java.sql.SQLXML</code> object in the Java programming language.
      * @param columnIndex the first column is 1, the second is 2, ...
      * @return a <code>SQLXML</code> object that maps an <code>SQL XML</code> value
      * @throws SQLException if the columnIndex is not valid;
@@ -3188,7 +3188,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
     /**
      * Retrieves the value of the designated column in  the current row of
      *  this <code>ResultSet</code> as a
-     * <code>java.sql.SQLXML</code> object in the Java programming language.
+     * <code>j86.java.sql.SQLXML</code> object in the Java programming language.
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
      * @return a <code>SQLXML</code> object that maps an <code>SQL XML</code> value
      * @throws SQLException if the columnLabel is not valid;
@@ -3200,7 +3200,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      */
     SQLXML getSQLXML(String columnLabel) throws SQLException;
     /**
-     * Updates the designated column with a <code>java.sql.SQLXML</code> value.
+     * Updates the designated column with a <code>j86.java.sql.SQLXML</code> value.
      * The updater
      * methods are used to update column values in the current row or the insert
      * row. The updater methods do not update the underlying database; instead
@@ -3226,7 +3226,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      */
     void updateSQLXML(int columnIndex, SQLXML xmlObject) throws SQLException;
     /**
-     * Updates the designated column with a <code>java.sql.SQLXML</code> value.
+     * Updates the designated column with a <code>j86.java.sql.SQLXML</code> value.
      * The updater
      * methods are used to update column values in the current row or the insert
      * row. The updater methods do not update the underlying database; instead
@@ -3297,12 +3297,12 @@ public interface ResultSet extends Wrapper, AutoCloseable {
     /**
      * Retrieves the value of the designated column in the current row
      * of this <code>ResultSet</code> object as a
-     * <code>java.io.Reader</code> object.
+     * <code>j86.java.io.Reader</code> object.
      * It is intended for use when
      * accessing  <code>NCHAR</code>,<code>NVARCHAR</code>
      * and <code>LONGNVARCHAR</code> columns.
      *
-     * @return a <code>java.io.Reader</code> object that contains the column
+     * @return a <code>j86.java.io.Reader</code> object that contains the column
      * value; if the value is SQL <code>NULL</code>, the value returned is
      * <code>null</code> in the Java programming language.
      * @param columnIndex the first column is 1, the second is 2, ...
@@ -3313,18 +3313,18 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * this method
      * @since 1.6
      */
-    java.io.Reader getNCharacterStream(int columnIndex) throws SQLException;
+    j86.java.io.Reader getNCharacterStream(int columnIndex) throws SQLException;
 
     /**
      * Retrieves the value of the designated column in the current row
      * of this <code>ResultSet</code> object as a
-     * <code>java.io.Reader</code> object.
+     * <code>j86.java.io.Reader</code> object.
      * It is intended for use when
      * accessing  <code>NCHAR</code>,<code>NVARCHAR</code>
      * and <code>LONGNVARCHAR</code> columns.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @return a <code>java.io.Reader</code> object that contains the column
+     * @return a <code>j86.java.io.Reader</code> object that contains the column
      * value; if the value is SQL <code>NULL</code>, the value returned is
      * <code>null</code> in the Java programming language
      * @exception SQLException if the columnLabel is not valid;
@@ -3334,7 +3334,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * this method
      * @since 1.6
      */
-    java.io.Reader getNCharacterStream(String columnLabel) throws SQLException;
+    j86.java.io.Reader getNCharacterStream(String columnLabel) throws SQLException;
 
     /**
      * Updates the designated column with a character stream value, which will have
@@ -3361,7 +3361,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @since 1.6
      */
     void updateNCharacterStream(int columnIndex,
-                             java.io.Reader x,
+                             j86.java.io.Reader x,
                              long length) throws SQLException;
 
     /**
@@ -3379,7 +3379,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @param reader the <code>java.io.Reader</code> object containing
+     * @param reader the <code>j86.java.io.Reader</code> object containing
      *        the new column value
      * @param length the length of the stream
      * @exception SQLException if the columnLabel is not valid;
@@ -3390,7 +3390,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @since 1.6
      */
     void updateNCharacterStream(String columnLabel,
-                             java.io.Reader reader,
+                             j86.java.io.Reader reader,
                              long length) throws SQLException;
     /**
      * Updates the designated column with an ascii stream value, which will have
@@ -3413,7 +3413,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @since 1.6
      */
     void updateAsciiStream(int columnIndex,
-                           java.io.InputStream x,
+                           j86.java.io.InputStream x,
                            long length) throws SQLException;
 
     /**
@@ -3437,7 +3437,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @since 1.6
      */
     void updateBinaryStream(int columnIndex,
-                            java.io.InputStream x,
+                            j86.java.io.InputStream x,
                             long length) throws SQLException;
 
     /**
@@ -3461,7 +3461,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @since 1.6
      */
     void updateCharacterStream(int columnIndex,
-                             java.io.Reader x,
+                             j86.java.io.Reader x,
                              long length) throws SQLException;
     /**
      * Updates the designated column with an ascii stream value, which will have
@@ -3484,7 +3484,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @since 1.6
      */
     void updateAsciiStream(String columnLabel,
-                           java.io.InputStream x,
+                           j86.java.io.InputStream x,
                            long length) throws SQLException;
 
     /**
@@ -3508,7 +3508,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @since 1.6
      */
     void updateBinaryStream(String columnLabel,
-                            java.io.InputStream x,
+                            j86.java.io.InputStream x,
                             long length) throws SQLException;
 
     /**
@@ -3521,7 +3521,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @param reader the <code>java.io.Reader</code> object containing
+     * @param reader the <code>j86.java.io.Reader</code> object containing
      *        the new column value
      * @param length the length of the stream
      * @exception SQLException if the columnLabel is not valid;
@@ -3533,7 +3533,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @since 1.6
      */
     void updateCharacterStream(String columnLabel,
-                             java.io.Reader reader,
+                             j86.java.io.Reader reader,
                              long length) throws SQLException;
     /**
      * Updates the designated column using the given input stream, which
@@ -3588,7 +3588,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * object, which is the given number of characters long.
      * When a very large UNICODE value is input to a <code>LONGVARCHAR</code>
      * parameter, it may be more practical to send it via a
-     * <code>java.io.Reader</code> object. The JDBC driver will
+     * <code>j86.java.io.Reader</code> object. The JDBC driver will
      * do any necessary conversion from UNICODE to the database char format.
      *
      * <p>
@@ -3615,7 +3615,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * object, which is the given number of characters long.
      * When a very large UNICODE value is input to a <code>LONGVARCHAR</code>
      * parameter, it may be more practical to send it via a
-     * <code>java.io.Reader</code> object.  The JDBC driver will
+     * <code>j86.java.io.Reader</code> object.  The JDBC driver will
      * do any necessary conversion from UNICODE to the database char format.
      *
      * <p>
@@ -3641,7 +3641,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * object, which is the given number of characters long.
      * When a very large UNICODE value is input to a <code>LONGVARCHAR</code>
      * parameter, it may be more practical to send it via a
-     * <code>java.io.Reader</code> object. The JDBC driver will
+     * <code>j86.java.io.Reader</code> object. The JDBC driver will
      * do any necessary conversion from UNICODE to the database char format.
      *
      * <p>
@@ -3670,7 +3670,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * object, which is the given number of characters long.
      * When a very large UNICODE value is input to a <code>LONGVARCHAR</code>
      * parameter, it may be more practical to send it via a
-     * <code>java.io.Reader</code> object. The JDBC driver will
+     * <code>j86.java.io.Reader</code> object. The JDBC driver will
      * do any necessary conversion from UNICODE to the database char format.
      *
      * <p>
@@ -3725,7 +3725,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @since 1.6
      */
     void updateNCharacterStream(int columnIndex,
-                             java.io.Reader x) throws SQLException;
+                             j86.java.io.Reader x) throws SQLException;
 
     /**
      * Updates the designated column with a character stream value.
@@ -3747,7 +3747,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>updateNCharacterStream</code> which takes a length parameter.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @param reader the <code>java.io.Reader</code> object containing
+     * @param reader the <code>j86.java.io.Reader</code> object containing
      *        the new column value
      * @exception SQLException if the columnLabel is not valid;
      * if a database access error occurs;
@@ -3757,7 +3757,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @since 1.6
      */
     void updateNCharacterStream(String columnLabel,
-                             java.io.Reader reader) throws SQLException;
+                             j86.java.io.Reader reader) throws SQLException;
     /**
      * Updates the designated column with an ascii stream value.
      * The data will be read from the stream
@@ -3783,7 +3783,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @since 1.6
      */
     void updateAsciiStream(int columnIndex,
-                           java.io.InputStream x) throws SQLException;
+                           j86.java.io.InputStream x) throws SQLException;
 
     /**
      * Updates the designated column with a binary stream value.
@@ -3810,7 +3810,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @since 1.6
      */
     void updateBinaryStream(int columnIndex,
-                            java.io.InputStream x) throws SQLException;
+                            j86.java.io.InputStream x) throws SQLException;
 
     /**
      * Updates the designated column with a character stream value.
@@ -3837,7 +3837,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @since 1.6
      */
     void updateCharacterStream(int columnIndex,
-                             java.io.Reader x) throws SQLException;
+                             j86.java.io.Reader x) throws SQLException;
     /**
      * Updates the designated column with an ascii stream value.
      * The data will be read from the stream
@@ -3863,7 +3863,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @since 1.6
      */
     void updateAsciiStream(String columnLabel,
-                           java.io.InputStream x) throws SQLException;
+                           j86.java.io.InputStream x) throws SQLException;
 
     /**
      * Updates the designated column with a binary stream value.
@@ -3890,7 +3890,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @since 1.6
      */
     void updateBinaryStream(String columnLabel,
-                            java.io.InputStream x) throws SQLException;
+                            j86.java.io.InputStream x) throws SQLException;
 
     /**
      * Updates the designated column with a character stream value.
@@ -3907,7 +3907,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>updateCharacterStream</code> which takes a length parameter.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @param reader the <code>java.io.Reader</code> object containing
+     * @param reader the <code>j86.java.io.Reader</code> object containing
      *        the new column value
      * @exception SQLException if the columnLabel is not valid; if a database access error occurs;
      * the result set concurrency is <code>CONCUR_READ_ONLY</code>
@@ -3917,7 +3917,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @since 1.6
      */
     void updateCharacterStream(String columnLabel,
-                             java.io.Reader reader) throws SQLException;
+                             j86.java.io.Reader reader) throws SQLException;
     /**
      * Updates the designated column using the given input stream. The data will be read from the stream
      * as needed until end-of-stream is reached.
@@ -4167,7 +4167,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @param columnIndex the first column is 1, the second is 2, ...
      * @param x the new column value
      * @param targetSqlType the SQL type to be sent to the database
-     * @param scaleOrLength for an object of {@code java.math.BigDecimal} ,
+     * @param scaleOrLength for an object of {@code j86.java.math.BigDecimal} ,
      *          this is the number of digits after the decimal point. For
      *          Java Object types {@code InputStream} and {@code Reader},
      *          this is the length
@@ -4210,7 +4210,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * the name of the column
      * @param x the new column value
      * @param targetSqlType the SQL type to be sent to the database
-     * @param scaleOrLength for an object of {@code java.math.BigDecimal} ,
+     * @param scaleOrLength for an object of {@code j86.java.math.BigDecimal} ,
      *          this is the number of digits after the decimal point. For
      *          Java Object types {@code InputStream} and {@code Reader},
      *          this is the length

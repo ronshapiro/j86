@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.awt;
+package j86.java.awt;
 
-import java.awt.event.*;
+import j86.j86.java.awt.event.*;
 
 /**
  * The interface for objects which contain a set of items for

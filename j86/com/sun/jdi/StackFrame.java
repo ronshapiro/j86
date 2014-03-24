@@ -23,10 +23,10 @@
  * questions.
  */
 
-package com.sun.jdi;
+package j86.com.sun.jdi;
 
-import java.util.List;
-import java.util.Map;
+import j86.java.util.List;
+import j86.java.util.Map;
 
 /**
  * The state of one method invocation on a thread's call stack.
@@ -45,13 +45,13 @@ import java.util.Map;
  * <p>
  * Any method on <code>StackFrame</code> which
  * takes <code>StackFrame</code> as an parameter may throw
- * {@link com.sun.jdi.VMDisconnectedException} if the target VM is
- * disconnected and the {@link com.sun.jdi.event.VMDisconnectEvent} has been or is
- * available to be read from the {@link com.sun.jdi.event.EventQueue}.
+ * {@link j86.com.sun.jdi.VMDisconnectedException} if the target VM is
+ * disconnected and the {@link j86.j86.com.sun.jdi.event.VMDisconnectEvent} has been or is
+ * available to be read from the {@link j86.j86.com.sun.jdi.event.EventQueue}.
  * <p>
  * Any method on <code>StackFrame</code> which
  * takes <code>StackFrame</code> as an parameter may throw
- * {@link com.sun.jdi.VMOutOfMemoryException} if the target VM has run out of memory.
+ * {@link j86.com.sun.jdi.VMOutOfMemoryException} if the target VM has run out of memory.
  *
  * @author Robert Field
  * @author Gordon Hirsch
@@ -168,7 +168,7 @@ public interface StackFrame extends Mirror, Locatable {
      *
      * @param variable the {@link LocalVariable} to be accessed
      * @return the {@link Value} of the instance field.
-     * @throws java.lang.IllegalArgumentException if the variable is
+     * @throws j86.java.lang.IllegalArgumentException if the variable is
      * either invalid for this frame's method or not visible.
      * @throws InvalidStackFrameException if this stack frame has become
      * invalid. Once the frame's thread is resumed, the stack frame is
@@ -184,7 +184,7 @@ public interface StackFrame extends Mirror, Locatable {
      * @param variables a list of {@link LocalVariable} objects to be accessed
      * @return a map associating each {@link LocalVariable} with
      * its {@link Value}
-     * @throws java.lang.IllegalArgumentException if any variable is
+     * @throws j86.java.lang.IllegalArgumentException if any variable is
      * either invalid for this frame's method or not visible.
      * @throws InvalidStackFrameException if this stack frame has become
      * invalid. Once the frame's thread is resumed, the stack frame is
@@ -207,7 +207,7 @@ public interface StackFrame extends Mirror, Locatable {
      *
      * @param variable the field containing the requested value
      * @param value the new value to assign
-     * @throws java.lang.IllegalArgumentException if the field is not valid for
+     * @throws j86.java.lang.IllegalArgumentException if the field is not valid for
      * this object's class.
      * @throws InvalidTypeException if the value's type does not match
      * the variable's type.

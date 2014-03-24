@@ -25,12 +25,12 @@
 /*
  * $Id: XPathType.java,v 1.4 2005/05/10 16:40:17 mullan Exp $
  */
-package javax.xml.crypto.dsig.spec;
+package j86.j86.j86.javax.xml.crypto.dsig.spec;
 
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.HashMap;
-import java.util.Map;
+import j86.java.util.Collections;
+import j86.java.util.Iterator;
+import j86.java.util.HashMap;
+import j86.java.util.Map;
 
 /**
  * The XML Schema Definition of the <code>XPath</code> element as defined in the

@@ -23,11 +23,11 @@
  * questions.
  */
 
-package javax.script;
-import java.util.*;
-import java.security.*;
-import java.util.ServiceLoader;
-import java.util.ServiceConfigurationError;
+package j86.javax.script;
+import j86.java.util.*;
+import j86.java.security.*;
+import j86.java.util.ServiceLoader;
+import j86.java.util.ServiceConfigurationError;
 
 /**
  * The <code>ScriptEngineManager</code> implements a discovery and instantiation
@@ -54,7 +54,7 @@ public class ScriptEngineManager  {
      * The effect of calling this constructor is the same as calling
      * <code>ScriptEngineManager(Thread.currentThread().getContextClassLoader())</code>.
      *
-     * @see java.lang.Thread#getContextClassLoader
+     * @see j86.java.lang.Thread#getContextClassLoader
      */
     public ScriptEngineManager() {
         ClassLoader ctxtLoader = Thread.currentThread().getContextClassLoader();

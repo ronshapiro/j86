@@ -23,25 +23,25 @@
  * questions.
  */
 
-package java.awt;
+package j86.java.awt;
 
-import java.util.EventObject;
-import java.awt.event.*;
-import java.awt.peer.ComponentPeer;
-import java.awt.peer.LightweightPeer;
-import java.lang.reflect.Field;
-import sun.awt.AWTAccessor;
-import sun.util.logging.PlatformLogger;
+import j86.java.util.EventObject;
+import j86.j86.java.awt.event.*;
+import j86.j86.java.awt.peer.ComponentPeer;
+import j86.j86.java.awt.peer.LightweightPeer;
+import j86.j86.j86.java.lang.reflect.Field;
+import j86.sun.awt.AWTAccessor;
+import j86.j86.sun.util.logging.PlatformLogger;
 
-import java.security.AccessControlContext;
-import java.security.AccessController;
+import j86.java.security.AccessControlContext;
+import j86.java.security.AccessController;
 
 /**
  * The root event class for all AWT events.
  * This class and its subclasses supercede the original
- * java.awt.Event class.
+ * j86.java.awt.Event class.
  * Subclasses of this root AWTEvent class defined outside of the
- * java.awt.event package should define event ID values greater than
+ * j86.j86.java.awt.event package should define event ID values greater than
  * the value defined by RESERVED_ID_MAX.
  * <p>
  * The event masks defined in this class are needed by Component subclasses
@@ -57,28 +57,28 @@ import java.security.AccessController;
  * @see Component#enableEvents
  * @see Toolkit#addAWTEventListener
  *
- * @see java.awt.event.ActionEvent
- * @see java.awt.event.AdjustmentEvent
- * @see java.awt.event.ComponentEvent
- * @see java.awt.event.ContainerEvent
- * @see java.awt.event.FocusEvent
- * @see java.awt.event.InputMethodEvent
- * @see java.awt.event.InvocationEvent
- * @see java.awt.event.ItemEvent
- * @see java.awt.event.HierarchyEvent
- * @see java.awt.event.KeyEvent
- * @see java.awt.event.MouseEvent
- * @see java.awt.event.MouseWheelEvent
- * @see java.awt.event.PaintEvent
- * @see java.awt.event.TextEvent
- * @see java.awt.event.WindowEvent
+ * @see j86.j86.java.awt.event.ActionEvent
+ * @see j86.j86.java.awt.event.AdjustmentEvent
+ * @see j86.j86.java.awt.event.ComponentEvent
+ * @see j86.j86.java.awt.event.ContainerEvent
+ * @see j86.j86.java.awt.event.FocusEvent
+ * @see j86.j86.java.awt.event.InputMethodEvent
+ * @see j86.j86.java.awt.event.InvocationEvent
+ * @see j86.j86.java.awt.event.ItemEvent
+ * @see j86.j86.java.awt.event.HierarchyEvent
+ * @see j86.j86.java.awt.event.KeyEvent
+ * @see j86.j86.java.awt.event.MouseEvent
+ * @see j86.j86.java.awt.event.MouseWheelEvent
+ * @see j86.j86.java.awt.event.PaintEvent
+ * @see j86.j86.java.awt.event.TextEvent
+ * @see j86.j86.java.awt.event.WindowEvent
  *
  * @author Carl Quinn
  * @author Amy Fowler
  * @since 1.1
  */
 public abstract class AWTEvent extends EventObject {
-    private static final PlatformLogger log = PlatformLogger.getLogger("java.awt.AWTEvent");
+    private static final PlatformLogger log = PlatformLogger.getLogger("j86.java.awt.AWTEvent");
     private byte bdata[];
 
     /**
@@ -287,8 +287,8 @@ public abstract class AWTEvent extends EventObject {
     private static synchronized Field get_InputEvent_CanAccessSystemClipboard() {
         if (inputEvent_CanAccessSystemClipboard_Field == null) {
             inputEvent_CanAccessSystemClipboard_Field =
-                java.security.AccessController.doPrivileged(
-                    new java.security.PrivilegedAction<Field>() {
+                j86.java.security.AccessController.doPrivileged(
+                    new j86.java.security.PrivilegedAction<Field>() {
                             public Field run() {
                                 Field field = null;
                                 try {
@@ -457,8 +457,8 @@ public abstract class AWTEvent extends EventObject {
      * exists) then this returns null.
      *
      * Note: this method is here instead of in each individual new
-     * event class in java.awt.event because we don't want to make
-     * it public and it needs to be called from java.awt.
+     * event class in j86.j86.java.awt.event because we don't want to make
+     * it public and it needs to be called from j86.java.awt.
      */
     Event convertToOld() {
         Object src = getSource();

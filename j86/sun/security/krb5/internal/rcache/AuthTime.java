@@ -29,15 +29,15 @@
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
 
-package sun.security.krb5.internal.rcache;
+package j86.j86.j86.sun.security.krb5.internal.rcache;
 
-import java.io.IOException;
-import java.nio.BufferUnderflowException;
-import java.nio.ByteBuffer;
-import java.nio.ByteOrder;
-import java.nio.channels.SeekableByteChannel;
-import java.nio.charset.StandardCharsets;
-import java.util.StringTokenizer;
+import j86.java.io.IOException;
+import j86.java.nio.BufferUnderflowException;
+import j86.java.nio.ByteBuffer;
+import j86.java.nio.ByteOrder;
+import j86.j86.java.nio.channels.SeekableByteChannel;
+import j86.j86.java.nio.charset.StandardCharsets;
+import j86.java.util.StringTokenizer;
 
 /**
  * The class represents an old style replay cache entry. It is only used in

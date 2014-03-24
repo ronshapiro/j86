@@ -33,18 +33,18 @@
  **********************************************************************
  **********************************************************************/
 
-package java.awt.image.renderable;
-import java.awt.color.ColorSpace;
-import java.awt.image.ColorModel;
-import java.awt.image.DataBuffer;
-import java.awt.image.DirectColorModel;
-import java.awt.image.ImageConsumer;
-import java.awt.image.ImageProducer;
-import java.awt.image.Raster;
-import java.awt.image.RenderedImage;
-import java.awt.image.SampleModel;
-import java.util.Enumeration;
-import java.util.Vector;
+package j86.j86.j86.j86.java.awt.image.renderable;
+import j86.j86.java.awt.color.ColorSpace;
+import j86.j86.j86.java.awt.image.ColorModel;
+import j86.j86.j86.java.awt.image.DataBuffer;
+import j86.j86.j86.java.awt.image.DirectColorModel;
+import j86.j86.j86.java.awt.image.ImageConsumer;
+import j86.j86.j86.java.awt.image.ImageProducer;
+import j86.j86.j86.java.awt.image.Raster;
+import j86.j86.j86.java.awt.image.RenderedImage;
+import j86.j86.j86.java.awt.image.SampleModel;
+import j86.java.util.Enumeration;
+import j86.java.util.Vector;
 
 /**
  * An adapter class that implements ImageProducer to allow the

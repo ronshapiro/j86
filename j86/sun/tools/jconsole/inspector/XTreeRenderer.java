@@ -23,13 +23,13 @@
  * questions.
  */
 
-package sun.tools.jconsole.inspector;
+package j86.j86.sun.tools.jconsole.inspector;
 
-import java.awt.Component;
-import javax.swing.ImageIcon;
-import javax.swing.JTree;
-import javax.swing.tree.DefaultMutableTreeNode;
-import javax.swing.tree.DefaultTreeCellRenderer;
+import j86.java.awt.Component;
+import j86.javax.swing.ImageIcon;
+import j86.javax.swing.JTree;
+import j86.j86.javax.swing.tree.DefaultMutableTreeNode;
+import j86.j86.javax.swing.tree.DefaultTreeCellRenderer;
 
 @SuppressWarnings("serial")
 public class XTreeRenderer extends DefaultTreeCellRenderer {

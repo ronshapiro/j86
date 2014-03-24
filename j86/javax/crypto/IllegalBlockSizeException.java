@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.crypto;
+package j86.javax.crypto;
 
 /**
  * This exception is thrown when the length of data provided to a block
@@ -35,7 +35,7 @@ package javax.crypto;
  */
 
 public class IllegalBlockSizeException
-    extends java.security.GeneralSecurityException {
+    extends j86.java.security.GeneralSecurityException {
 
     private static final long serialVersionUID = -1965144811953540392L;
 

@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.awt;
+package j86.sun.awt;
 
-import java.awt.RenderingHints;
-import java.lang.annotation.Native;
+import j86.java.awt.RenderingHints;
+import j86.j86.java.lang.annotation.Native;
 
 /**
  * This class contains rendering hints that can be used by the
- * {@link java.awt.Graphics2D} class, and classes that implement
- * {@link java.awt.image.BufferedImageOp} and
- * {@link java.awt.image.Raster}.
+ * {@link j86.java.awt.Graphics2D} class, and classes that implement
+ * {@link j86.j86.j86.java.awt.image.BufferedImageOp} and
+ * {@link j86.j86.j86.java.awt.image.Raster}.
  */
 public class SunHints {
     /**

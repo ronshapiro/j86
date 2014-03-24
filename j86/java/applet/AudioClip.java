@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.applet;
+package j86.java.applet;
 
 /**
  * The <code>AudioClip</code> interface is a simple abstraction for

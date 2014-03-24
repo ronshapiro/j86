@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.nio.file.attribute;
+package j86.j86.j86.java.nio.file.attribute;
 
 /**
  * An object that provides a read-only or updatable <em>view</em> of non-opaque

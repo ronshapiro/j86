@@ -27,10 +27,10 @@
  * Portions Copyright IBM Corporation, 2001. All Rights Reserved.
  */
 
-package java.math;
+package j86.java.math;
 
-import java.util.Arrays;
-import static java.math.BigInteger.LONG_MASK;
+import j86.java.util.Arrays;
+import static j86.java.math.BigInteger.LONG_MASK;
 
 /**
  * Immutable, arbitrary-precision signed decimal numbers.  A
@@ -196,11 +196,11 @@ import static java.math.BigInteger.LONG_MASK;
  * {@code BigDecimal} numerically equal to 0.19 having a scale of 2.
  *
  * <p>Note: care should be exercised if {@code BigDecimal} objects
- * are used as keys in a {@link java.util.SortedMap SortedMap} or
- * elements in a {@link java.util.SortedSet SortedSet} since
+ * are used as keys in a {@link j86.java.util.SortedMap SortedMap} or
+ * elements in a {@link j86.java.util.SortedSet SortedSet} since
  * {@code BigDecimal}'s <i>natural ordering</i> is <i>inconsistent
  * with equals</i>.  See {@link Comparable}, {@link
- * java.util.SortedMap} or {@link java.util.SortedSet} for more
+ * j86.java.util.SortedMap} or {@link java.util.SortedSet} for more
  * information.
  *
  * <p>All methods and constructors for this class throw
@@ -210,8 +210,8 @@ import static java.math.BigInteger.LONG_MASK;
  * @see     BigInteger
  * @see     MathContext
  * @see     RoundingMode
- * @see     java.util.SortedMap
- * @see     java.util.SortedSet
+ * @see     j86.java.util.SortedMap
+ * @see     j86.java.util.SortedSet
  * @author  Josh Bloch
  * @author  Mike Cowlishaw
  * @author  Joseph D. Darcy
@@ -763,7 +763,7 @@ public class BigDecimal extends Number implements Comparable<BigDecimal> {
      * {@code Integer.MAX_VALUE}, inclusive.
      *
      * <p>The character-to-digit mapping is provided by {@link
-     * java.lang.Character#digit} set to convert to radix 10.  The
+     * j86.java.lang.Character#digit} set to convert to radix 10.  The
      * String may not contain any extraneous characters (whitespace,
      * for example).
      *
@@ -1913,7 +1913,7 @@ public class BigDecimal extends Number implements Comparable<BigDecimal> {
      *         rounding mode is {@code UNNECESSARY}, or {@code mc.precision}
      *         {@literal >} 0 and the result of {@code this.divideToIntgralValue(divisor)} would
      *         require a precision of more than {@code mc.precision} digits.
-     * @see    #divideToIntegralValue(java.math.BigDecimal, java.math.MathContext)
+     * @see    #divideToIntegralValue(j86.java.math.BigDecimal, java.math.MathContext)
      * @since  1.5
      */
     public BigDecimal remainder(BigDecimal divisor, MathContext mc) {
@@ -1937,8 +1937,8 @@ public class BigDecimal extends Number implements Comparable<BigDecimal> {
      *         (the result of {@code divideToIntegralValue}) is the initial element
      *         and the remainder is the final element.
      * @throws ArithmeticException if {@code divisor==0}
-     * @see    #divideToIntegralValue(java.math.BigDecimal, java.math.MathContext)
-     * @see    #remainder(java.math.BigDecimal, java.math.MathContext)
+     * @see    #divideToIntegralValue(j86.java.math.BigDecimal, java.math.MathContext)
+     * @see    #remainder(j86.java.math.BigDecimal, java.math.MathContext)
      * @since  1.5
      */
     public BigDecimal[] divideAndRemainder(BigDecimal divisor) {
@@ -1972,8 +1972,8 @@ public class BigDecimal extends Number implements Comparable<BigDecimal> {
      *         rounding mode is {@code UNNECESSARY}, or {@code mc.precision}
      *         {@literal >} 0 and the result of {@code this.divideToIntgralValue(divisor)} would
      *         require a precision of more than {@code mc.precision} digits.
-     * @see    #divideToIntegralValue(java.math.BigDecimal, java.math.MathContext)
-     * @see    #remainder(java.math.BigDecimal, java.math.MathContext)
+     * @see    #divideToIntegralValue(j86.java.math.BigDecimal, java.math.MathContext)
+     * @see    #remainder(j86.java.math.BigDecimal, java.math.MathContext)
      * @since  1.5
      */
     public BigDecimal[] divideAndRemainder(BigDecimal divisor, MathContext mc) {
@@ -2701,7 +2701,7 @@ public class BigDecimal extends Number implements Comparable<BigDecimal> {
      * @return {@code true} if and only if the specified {@code Object} is a
      *         {@code BigDecimal} whose value and scale are equal to this
      *         {@code BigDecimal}'s.
-     * @see    #compareTo(java.math.BigDecimal)
+     * @see    #compareTo(j86.java.math.BigDecimal)
      * @see    #hashCode
      */
     @Override
@@ -2734,7 +2734,7 @@ public class BigDecimal extends Number implements Comparable<BigDecimal> {
      *         {@code BigDecimal} and {@code val}.  If they are equal,
      *         as defined by the {@link #compareTo(BigDecimal) compareTo}
      *         method, {@code this} is returned.
-     * @see    #compareTo(java.math.BigDecimal)
+     * @see    #compareTo(j86.java.math.BigDecimal)
      */
     public BigDecimal min(BigDecimal val) {
         return (compareTo(val) <= 0 ? this : val);
@@ -2748,7 +2748,7 @@ public class BigDecimal extends Number implements Comparable<BigDecimal> {
      *         {@code BigDecimal} and {@code val}.  If they are equal,
      *         as defined by the {@link #compareTo(BigDecimal) compareTo}
      *         method, {@code this} is returned.
-     * @see    #compareTo(java.math.BigDecimal)
+     * @see    #compareTo(j86.java.math.BigDecimal)
      */
     public BigDecimal max(BigDecimal val) {
         return (compareTo(val) >= 0 ? this : val);
@@ -2860,7 +2860,7 @@ public class BigDecimal extends Number implements Comparable<BigDecimal> {
      * as a canonical string representation for exchanging decimal
      * data, or as a key for a Hashtable, etc.  Locale-sensitive
      * number formatting and parsing is handled by the {@link
-     * java.text.NumberFormat} class and its subclasses.
+     * j86.java.text.NumberFormat} class and its subclasses.
      *
      * <li>The {@link #toEngineeringString} method may be used for
      * presenting numbers with exponents in engineering notation, and the
@@ -2875,7 +2875,7 @@ public class BigDecimal extends Number implements Comparable<BigDecimal> {
      *
      * @return string representation of this {@code BigDecimal}.
      * @see    Character#forDigit
-     * @see    #BigDecimal(java.lang.String)
+     * @see    #BigDecimal(j86.java.lang.String)
      */
     @Override
     public String toString() {
@@ -3079,7 +3079,7 @@ public class BigDecimal extends Number implements Comparable<BigDecimal> {
             return intCompact;
         // If more than 19 digits in integer part it cannot possibly fit
         if ((precision() - scale) > 19) // [OK for negative scale too]
-            throw new java.lang.ArithmeticException("Overflow");
+            throw new j86.java.lang.ArithmeticException("Overflow");
         // Fastpath zero and < 1.0 numbers (the latter can be very slow
         // to round if very small)
         if (this.signum() == 0)
@@ -3104,7 +3104,7 @@ public class BigDecimal extends Number implements Comparable<BigDecimal> {
             BigInteger intVal = num.inflated();
             if (intVal.compareTo(LONGMIN) < 0 ||
                 intVal.compareTo(LONGMAX) > 0)
-                throw new java.lang.ArithmeticException("Overflow");
+                throw new j86.java.lang.ArithmeticException("Overflow");
         }
     }
 
@@ -3146,7 +3146,7 @@ public class BigDecimal extends Number implements Comparable<BigDecimal> {
        long num;
        num = this.longValueExact();     // will check decimal part
        if ((int)num != num)
-           throw new java.lang.ArithmeticException("Overflow");
+           throw new j86.java.lang.ArithmeticException("Overflow");
        return (int)num;
     }
 
@@ -3166,7 +3166,7 @@ public class BigDecimal extends Number implements Comparable<BigDecimal> {
        long num;
        num = this.longValueExact();     // will check decimal part
        if ((short)num != num)
-           throw new java.lang.ArithmeticException("Overflow");
+           throw new j86.java.lang.ArithmeticException("Overflow");
        return (short)num;
     }
 
@@ -3186,7 +3186,7 @@ public class BigDecimal extends Number implements Comparable<BigDecimal> {
        long num;
        num = this.longValueExact();     // will check decimal part
        if ((byte)num != num)
-           throw new java.lang.ArithmeticException("Overflow");
+           throw new j86.java.lang.ArithmeticException("Overflow");
        return (byte)num;
     }
 
@@ -3713,12 +3713,12 @@ public class BigDecimal extends Number implements Comparable<BigDecimal> {
     }
 
     private static class UnsafeHolder {
-        private static final sun.misc.Unsafe unsafe;
+        private static final j86.sun.misc.Unsafe unsafe;
         private static final long intCompactOffset;
         private static final long intValOffset;
         static {
             try {
-                unsafe = sun.misc.Unsafe.getUnsafe();
+                unsafe = j86.sun.misc.Unsafe.getUnsafe();
                 intCompactOffset = unsafe.objectFieldOffset
                     (BigDecimal.class.getDeclaredField("intCompact"));
                 intValOffset = unsafe.objectFieldOffset
@@ -3742,14 +3742,14 @@ public class BigDecimal extends Number implements Comparable<BigDecimal> {
      *
      * @param s the stream being read.
      */
-    private void readObject(java.io.ObjectInputStream s)
-        throws java.io.IOException, ClassNotFoundException {
+    private void readObject(j86.java.io.ObjectInputStream s)
+        throws j86.java.io.IOException, ClassNotFoundException {
         // Read in all fields
         s.defaultReadObject();
         // validate possibly bad fields
         if (intVal == null) {
             String message = "BigDecimal: null intVal in stream";
-            throw new java.io.StreamCorruptedException(message);
+            throw new j86.java.io.StreamCorruptedException(message);
         // [all values of scale are now allowed]
         }
         UnsafeHolder.setIntCompactVolatile(this, compactValFor(intVal));
@@ -3760,8 +3760,8 @@ public class BigDecimal extends Number implements Comparable<BigDecimal> {
     *
     * @param s the stream to serialize to.
     */
-   private void writeObject(java.io.ObjectOutputStream s)
-       throws java.io.IOException {
+   private void writeObject(j86.java.io.ObjectOutputStream s)
+       throws j86.java.io.IOException {
        // Must inflate to maintain compatible serial form.
        if (this.intVal == null)
            UnsafeHolder.setIntValVolatile(this, BigInteger.valueOf(this.intCompact));

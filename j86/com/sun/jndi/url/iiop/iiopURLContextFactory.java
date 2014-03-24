@@ -23,14 +23,14 @@
  * questions.
  */
 
-package com.sun.jndi.url.iiop;
+package j86.com.sun.jndi.url.iiop;
 
-import javax.naming.*;
-import javax.naming.spi.*;
+import j86.javax.naming.*;
+import j86.j86.javax.naming.spi.*;
 
-import java.util.Hashtable;
+import j86.java.util.Hashtable;
 
-import com.sun.jndi.cosnaming.CNCtx;
+import j86.com.sun.jndi.cosnaming.CNCtx;
 
 /**
  * An IIOP URL context factory.

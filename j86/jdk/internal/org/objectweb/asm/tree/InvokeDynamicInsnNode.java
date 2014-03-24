@@ -56,13 +56,13 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-package jdk.internal.org.objectweb.asm.tree;
+package j86.j86.jdk.internal.org.objectweb.asm.tree;
 
-import java.util.Map;
+import j86.java.util.Map;
 
-import jdk.internal.org.objectweb.asm.Handle;
-import jdk.internal.org.objectweb.asm.MethodVisitor;
-import jdk.internal.org.objectweb.asm.Opcodes;
+import j86.jdk.internal.org.objectweb.asm.Handle;
+import j86.jdk.internal.org.objectweb.asm.MethodVisitor;
+import j86.jdk.internal.org.objectweb.asm.Opcodes;
 
 /**
  * A node that represents an invokedynamic instruction.
@@ -97,7 +97,7 @@ public class InvokeDynamicInsnNode extends AbstractInsnNode {
      * @param name
      *            invokedynamic name.
      * @param desc
-     *            invokedynamic descriptor (see {@link jdk.internal.org.objectweb.asm.Type}).
+     *            invokedynamic descriptor (see {@link j86.jdk.internal.org.objectweb.asm.Type}).
      * @param bsm
      *            the bootstrap method.
      * @param bsmArgs

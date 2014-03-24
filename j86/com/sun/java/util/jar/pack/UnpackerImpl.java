@@ -23,27 +23,27 @@
  * questions.
  */
 
-package com.sun.java.util.jar.pack;
+package j86.com.sun.j86.j86.java.util.jar.pack;
 
-import java.beans.PropertyChangeListener;
-import java.io.BufferedInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.util.HashSet;
-import java.util.Set;
-import java.util.SortedMap;
-import java.util.TimeZone;
-import java.util.jar.JarEntry;
-import java.util.jar.JarInputStream;
-import java.util.jar.JarOutputStream;
-import java.util.jar.Pack200;
-import java.util.zip.CRC32;
-import java.util.zip.CheckedOutputStream;
-import java.util.zip.ZipEntry;
+import j86.java.beans.PropertyChangeListener;
+import j86.java.io.BufferedInputStream;
+import j86.java.io.ByteArrayOutputStream;
+import j86.java.io.File;
+import j86.java.io.FileInputStream;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.io.OutputStream;
+import j86.java.util.HashSet;
+import j86.java.util.Set;
+import j86.java.util.SortedMap;
+import j86.java.util.TimeZone;
+import j86.j86.java.util.jar.JarEntry;
+import j86.j86.java.util.jar.JarInputStream;
+import j86.j86.java.util.jar.JarOutputStream;
+import j86.j86.java.util.jar.Pack200;
+import j86.j86.java.util.zip.CRC32;
+import j86.j86.java.util.zip.CheckedOutputStream;
+import j86.j86.java.util.zip.ZipEntry;
 
 /*
  * Implementation of the Pack provider.
@@ -199,7 +199,7 @@ public class UnpackerImpl extends TLGlobals implements Pack200.Unpacker {
             }
 
             deflateHint = (keepDeflateHint) ? false :
-                props.getBoolean(java.util.jar.Pack200.Unpacker.DEFLATE_HINT);
+                props.getBoolean(j86.j86.java.util.jar.Pack200.Unpacker.DEFLATE_HINT);
         }
 
         // Checksum apparatus.
@@ -222,13 +222,13 @@ public class UnpackerImpl extends TLGlobals implements Pack200.Unpacker {
         }
 
         private void unpackSegment(InputStream in, JarOutputStream out) throws IOException {
-            props.setProperty(java.util.jar.Pack200.Unpacker.PROGRESS,"0");
+            props.setProperty(j86.j86.java.util.jar.Pack200.Unpacker.PROGRESS,"0");
             // Process the output directory or jar output.
             new PackageReader(pkg, in).read();
 
             if (props.getBoolean("unpack.strip.debug"))    pkg.stripAttributeKind("Debug");
             if (props.getBoolean("unpack.strip.compile"))  pkg.stripAttributeKind("Compile");
-            props.setProperty(java.util.jar.Pack200.Unpacker.PROGRESS,"50");
+            props.setProperty(j86.j86.java.util.jar.Pack200.Unpacker.PROGRESS,"50");
             pkg.ensureAllClassFiles();
             // Now write out the files.
             Set<Package.Class> classesToWrite = new HashSet<>(pkg.getClasses());
@@ -278,7 +278,7 @@ public class UnpackerImpl extends TLGlobals implements Pack200.Unpacker {
                     Utils.log.info("Writing "+Utils.zeString((ZipEntry)je));
             }
             assert(classesToWrite.isEmpty());
-            props.setProperty(java.util.jar.Pack200.Unpacker.PROGRESS,"100");
+            props.setProperty(j86.j86.java.util.jar.Pack200.Unpacker.PROGRESS,"100");
             pkg.reset();  // reset for the next segment, if any
         }
     }

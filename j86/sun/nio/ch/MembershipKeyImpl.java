@@ -23,13 +23,13 @@
  * questions.
  */
 
-package sun.nio.ch;
+package j86.j86.j86.sun.nio.ch;
 
-import java.nio.channels.*;
-import java.net.InetAddress;
-import java.net.NetworkInterface;
-import java.io.IOException;
-import java.util.HashSet;
+import j86.j86.java.nio.channels.*;
+import j86.java.net.InetAddress;
+import j86.java.net.NetworkInterface;
+import j86.java.io.IOException;
+import j86.java.util.HashSet;
 
 /**
  * MembershipKey implementation.

@@ -23,11 +23,11 @@
  * questions.
  */
 
-package javax.management;
+package j86.javax.management;
 
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.security.Permission;
+import j86.java.io.IOException;
+import j86.java.io.ObjectInputStream;
+import j86.java.security.Permission;
 
 /**
  * <p>Permission controlling access to MBeanServer operations.  If a
@@ -71,9 +71,9 @@ import java.security.Permission;
  * Java conventions for dot-separated class names.  It may end with
  * "<code>.*</code>" meaning that the permission grants access to any
  * class that begins with the string preceding "<code>.*</code>".  For
- * instance, "<code>javax.management.*</code>" grants access to
- * <code>javax.management.MBeanServerDelegate</code> and
- * <code>javax.management.timer.Timer</code>, among other classes.</p>
+ * instance, "<code>j86.javax.management.*</code>" grants access to
+ * <code>j86.javax.management.MBeanServerDelegate</code> and
+ * <code>j86.j86.javax.management.timer.Timer</code>, among other classes.</p>
  *
  * <p>A class name pattern can also be empty or the single character
  * "<code>*</code>", both of which grant access to any class.</p>

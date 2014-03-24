@@ -23,13 +23,13 @@
  * questions.
  */
 
-package javax.crypto;
+package j86.javax.crypto;
 
-import java.security.Key;
-import java.security.AlgorithmParameters;
-import java.security.InvalidKeyException;
-import java.security.InvalidAlgorithmParameterException;
-import java.security.spec.AlgorithmParameterSpec;
+import j86.java.security.Key;
+import j86.java.security.AlgorithmParameters;
+import j86.java.security.InvalidKeyException;
+import j86.java.security.InvalidAlgorithmParameterException;
+import j86.j86.java.security.spec.AlgorithmParameterSpec;
 
 /**
  * This class defines the <i>Service Provider Interface</i> (<b>SPI</b>)

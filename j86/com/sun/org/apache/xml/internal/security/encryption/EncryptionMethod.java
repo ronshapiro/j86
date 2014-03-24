@@ -20,9 +20,9 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.sun.org.apache.xml.internal.security.encryption;
+package j86.j86.com.sun.org.apache.xml.internal.security.encryption;
 
-import java.util.Iterator;
+import j86.java.util.Iterator;
 import org.w3c.dom.Element;
 
 /**

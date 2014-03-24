@@ -23,24 +23,24 @@
  * questions.
  */
 
-package com.sun.tools.extcheck;
+package j86.com.sun.tools.extcheck;
 
-import java.util.*;
-import java.net.MalformedURLException;
-import java.util.Vector;
-import java.io.*;
-import java.util.StringTokenizer;
-import java.net.URL;
-import java.util.jar.JarFile;
-import java.util.jar.JarEntry;
-import java.util.jar.Manifest;
-import java.util.jar.Attributes;
-import java.util.jar.Attributes.Name;
-import java.net.URLConnection;
-import java.security.Permission;
-import java.util.jar.*;
-import java.net.JarURLConnection;
-import sun.net.www.ParseUtil;
+import j86.java.util.*;
+import j86.java.net.MalformedURLException;
+import j86.java.util.Vector;
+import j86.java.io.*;
+import j86.java.util.StringTokenizer;
+import j86.java.net.URL;
+import j86.j86.java.util.jar.JarFile;
+import j86.j86.java.util.jar.JarEntry;
+import j86.j86.java.util.jar.Manifest;
+import j86.j86.java.util.jar.Attributes;
+import j86.j86.java.util.jar.Attributes.Name;
+import j86.java.net.URLConnection;
+import j86.java.security.Permission;
+import j86.j86.java.util.jar.*;
+import j86.java.net.JarURLConnection;
+import j86.j86.sun.net.www.ParseUtil;
 
 /**
  * ExtCheck reports on clashes between a specified (target)
@@ -249,7 +249,7 @@ public class ExtCheck {
     }
 
     /**
-     *  See comment in method java.lang.Package.isCompatibleWith.
+     *  See comment in method j86.java.lang.Package.isCompatibleWith.
      *  Return true if already is not older than target. i.e. the
      *  target file may be superseded by a file already installed
      */
@@ -317,7 +317,7 @@ public class ExtCheck {
     /**
      * Inner class used to represent a loader of resources and classes
      * from a base URL. Somewhat modified version of code in
-     * sun.misc.URLClassPath.JarLoader
+     * j86.sun.misc.URLClassPath.JarLoader
      */
     private static class JarLoader {
         private final URL base;

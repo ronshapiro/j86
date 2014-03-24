@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing;
+package j86.javax.swing;
 
 /**
  * Drop modes, used to determine the method by which a component
@@ -32,7 +32,7 @@ package javax.swing;
  * @see JTable#setDropMode
  * @see JList#setDropMode
  * @see JTree#setDropMode
- * @see javax.swing.text.JTextComponent#setDropMode
+ * @see j86.j86.javax.swing.text.JTextComponent#setDropMode
  * @since 1.6
  */
 public enum DropMode {

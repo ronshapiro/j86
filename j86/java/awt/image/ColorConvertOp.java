@@ -34,18 +34,18 @@
  **********************************************************************
  **********************************************************************/
 
-package java.awt.image;
+package j86.j86.j86.java.awt.image;
 
-import java.awt.Point;
-import java.awt.Graphics2D;
-import java.awt.color.*;
-import sun.java2d.cmm.ColorTransform;
-import sun.java2d.cmm.CMSManager;
-import sun.java2d.cmm.ProfileDeferralMgr;
-import sun.java2d.cmm.PCMM;
-import java.awt.geom.Rectangle2D;
-import java.awt.geom.Point2D;
-import java.awt.RenderingHints;
+import j86.java.awt.Point;
+import j86.java.awt.Graphics2D;
+import j86.j86.java.awt.color.*;
+import j86.j86.sun.java2d.cmm.ColorTransform;
+import j86.j86.sun.java2d.cmm.CMSManager;
+import j86.j86.sun.java2d.cmm.ProfileDeferralMgr;
+import j86.j86.sun.java2d.cmm.PCMM;
+import j86.j86.java.awt.geom.Rectangle2D;
+import j86.j86.java.awt.geom.Point2D;
+import j86.java.awt.RenderingHints;
 
 /**
  * This class performs a pixel-by-pixel color conversion of the data in
@@ -65,8 +65,8 @@ import java.awt.RenderingHints;
  * color conversion.
  * <p>
  * Note that Source and Destination may be the same object.
- * @see java.awt.RenderingHints#KEY_COLOR_RENDERING
- * @see java.awt.RenderingHints#KEY_DITHERING
+ * @see j86.java.awt.RenderingHints#KEY_COLOR_RENDERING
+ * @see j86.java.awt.RenderingHints#KEY_DITHERING
  */
 public class ColorConvertOp implements BufferedImageOp, RasterOp {
     ICC_Profile[]    profileList;

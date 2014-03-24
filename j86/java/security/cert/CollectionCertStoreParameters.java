@@ -23,11 +23,11 @@
  * questions.
  */
 
-package java.security.cert;
+package j86.j86.java.security.cert;
 
-import java.io.Serializable;
-import java.util.Collection;
-import java.util.Collections;
+import j86.java.io.Serializable;
+import j86.java.util.Collection;
+import j86.java.util.Collections;
 
 /**
  * Parameters used as input for the Collection {@code CertStore}
@@ -49,7 +49,7 @@ import java.util.Collections;
  *
  * @since       1.4
  * @author      Steve Hanna
- * @see         java.util.Collection
+ * @see         j86.java.util.Collection
  * @see         CertStore
  */
 public class CollectionCertStoreParameters

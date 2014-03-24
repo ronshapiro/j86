@@ -56,21 +56,21 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-package jdk.internal.org.objectweb.asm.tree.analysis;
+package j86.j86.j86.jdk.internal.org.objectweb.asm.tree.analysis;
 
-import java.util.List;
+import j86.java.util.List;
 
-import jdk.internal.org.objectweb.asm.Handle;
-import jdk.internal.org.objectweb.asm.Opcodes;
-import jdk.internal.org.objectweb.asm.Type;
-import jdk.internal.org.objectweb.asm.tree.AbstractInsnNode;
-import jdk.internal.org.objectweb.asm.tree.FieldInsnNode;
-import jdk.internal.org.objectweb.asm.tree.IntInsnNode;
-import jdk.internal.org.objectweb.asm.tree.InvokeDynamicInsnNode;
-import jdk.internal.org.objectweb.asm.tree.LdcInsnNode;
-import jdk.internal.org.objectweb.asm.tree.MethodInsnNode;
-import jdk.internal.org.objectweb.asm.tree.MultiANewArrayInsnNode;
-import jdk.internal.org.objectweb.asm.tree.TypeInsnNode;
+import j86.jdk.internal.org.objectweb.asm.Handle;
+import j86.jdk.internal.org.objectweb.asm.Opcodes;
+import j86.jdk.internal.org.objectweb.asm.Type;
+import j86.j86.jdk.internal.org.objectweb.asm.tree.AbstractInsnNode;
+import j86.j86.jdk.internal.org.objectweb.asm.tree.FieldInsnNode;
+import j86.j86.jdk.internal.org.objectweb.asm.tree.IntInsnNode;
+import j86.j86.jdk.internal.org.objectweb.asm.tree.InvokeDynamicInsnNode;
+import j86.j86.jdk.internal.org.objectweb.asm.tree.LdcInsnNode;
+import j86.j86.jdk.internal.org.objectweb.asm.tree.MethodInsnNode;
+import j86.j86.jdk.internal.org.objectweb.asm.tree.MultiANewArrayInsnNode;
+import j86.j86.jdk.internal.org.objectweb.asm.tree.TypeInsnNode;
 
 /**
  * An {@link Interpreter} for {@link BasicValue} values.
@@ -155,21 +155,21 @@ public class BasicInterpreter extends Interpreter<BasicValue> implements
             } else if (cst instanceof Double) {
                 return BasicValue.DOUBLE_VALUE;
             } else if (cst instanceof String) {
-                return newValue(Type.getObjectType("java/lang/String"));
+                return newValue(Type.getObjectType("j86.java.lang/String"));
             } else if (cst instanceof Type) {
                 int sort = ((Type) cst).getSort();
                 if (sort == Type.OBJECT || sort == Type.ARRAY) {
-                    return newValue(Type.getObjectType("java/lang/Class"));
+                    return newValue(Type.getObjectType("j86.java.lang/Class"));
                 } else if (sort == Type.METHOD) {
                     return newValue(Type
-                            .getObjectType("java/lang/invoke/MethodType"));
+                            .getObjectType("j86.j86.java.lang.invoke/MethodType"));
                 } else {
                     throw new IllegalArgumentException("Illegal LDC constant "
                             + cst);
                 }
             } else if (cst instanceof Handle) {
                 return newValue(Type
-                        .getObjectType("java/lang/invoke/MethodHandle"));
+                        .getObjectType("j86.j86.java.lang.invoke/MethodHandle"));
             } else {
                 throw new IllegalArgumentException("Illegal LDC constant "
                         + cst);

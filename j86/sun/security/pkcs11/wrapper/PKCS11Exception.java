@@ -45,9 +45,9 @@
  *  POSSIBILITY  OF SUCH DAMAGE.
  */
 
-package sun.security.pkcs11.wrapper;
+package j86.j86.j86.sun.security.pkcs11.wrapper;
 
-import java.util.*;
+import j86.java.util.*;
 
 
 /**

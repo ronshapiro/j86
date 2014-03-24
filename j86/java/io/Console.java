@@ -23,12 +23,12 @@
  * questions.
  */
 
-package java.io;
+package j86.java.io;
 
-import java.util.*;
-import java.nio.charset.Charset;
-import sun.nio.cs.StreamDecoder;
-import sun.nio.cs.StreamEncoder;
+import j86.java.util.*;
+import j86.j86.java.nio.charset.Charset;
+import j86.j86.j86.sun.nio.cs.StreamDecoder;
+import j86.j86.j86.sun.nio.cs.StreamEncoder;
 
 /**
  * Methods to access the character-based console device, if any, associated
@@ -46,7 +46,7 @@ import sun.nio.cs.StreamEncoder;
  * <p>
  * If this virtual machine has a console then it is represented by a
  * unique instance of this class which can be obtained by invoking the
- * {@link java.lang.System#console()} method.  If no console device is
+ * {@link j86.java.lang.System#console()} method.  If no console device is
  * available then an invocation of that method will return <tt>null</tt>.
  * <p>
  * Read and write operations are synchronized to guarantee the atomic
@@ -81,7 +81,7 @@ import sun.nio.cs.StreamEncoder;
  * if ((cons = System.console()) != null &&
  *     (passwd = cons.readPassword("[%s]", "Password:")) != null) {
  *     ...
- *     java.util.Arrays.fill(passwd, ' ');
+ *     j86.java.util.Arrays.fill(passwd, ' ');
  * }
  * }</pre></blockquote>
  *
@@ -92,7 +92,7 @@ import sun.nio.cs.StreamEncoder;
 public final class Console implements Flushable
 {
    /**
-    * Retrieves the unique {@link java.io.PrintWriter PrintWriter} object
+    * Retrieves the unique {@link j86.java.io.PrintWriter PrintWriter} object
     * associated with this console.
     *
     * @return  The printwriter associated with this console
@@ -102,11 +102,11 @@ public final class Console implements Flushable
     }
 
    /**
-    * Retrieves the unique {@link java.io.Reader Reader} object associated
+    * Retrieves the unique {@link j86.java.io.Reader Reader} object associated
     * with this console.
     * <p>
     * This method is intended to be used by sophisticated applications, for
-    * example, a {@link java.util.Scanner} object which utilizes the rich
+    * example, a {@link j86.java.util.Scanner} object which utilizes the rich
     * parsing/scanning functionality provided by the <tt>Scanner</tt>:
     * <blockquote><pre>
     * Console con = System.console();
@@ -119,9 +119,9 @@ public final class Console implements Flushable
     * For simple applications requiring only line-oriented reading, use
     * <tt>{@link #readLine}</tt>.
     * <p>
-    * The bulk read operations {@link java.io.Reader#read(char[]) read(char[]) },
-    * {@link java.io.Reader#read(char[], int, int) read(char[], int, int) } and
-    * {@link java.io.Reader#read(java.nio.CharBuffer) read(java.nio.CharBuffer)}
+    * The bulk read operations {@link j86.java.io.Reader#read(char[]) read(char[]) },
+    * {@link j86.java.io.Reader#read(char[], int, int) read(char[], int, int) } and
+    * {@link j86.java.io.Reader#read(j86.java.nio.CharBuffer) read(java.nio.CharBuffer)}
     * on the returned object will not read in characters beyond the line
     * bound for each invocation, even if the destination buffer has space for
     * more characters. The {@code Reader}'s {@code read} methods may block if a
@@ -518,7 +518,7 @@ public final class Console implements Flushable
         try {
             // Add a shutdown hook to restore console's echo state should
             // it be necessary.
-            sun.misc.SharedSecrets.getJavaLangAccess()
+            j86.sun.misc.SharedSecrets.getJavaLangAccess()
                 .registerShutdownHook(0 /* shutdown hook invocation order */,
                     false /* only register if shutdown is not in progress */,
                     new Runnable() {
@@ -535,7 +535,7 @@ public final class Console implements Flushable
             // by a shutdown hook
         }
 
-        sun.misc.SharedSecrets.setJavaIOAccess(new sun.misc.JavaIOAccess() {
+        j86.sun.misc.SharedSecrets.setJavaIOAccess(new sun.misc.JavaIOAccess() {
             public Console console() {
                 if (istty()) {
                     if (cons == null)
@@ -546,7 +546,7 @@ public final class Console implements Flushable
             }
 
             public Charset charset() {
-                // This method is called in sun.security.util.Password,
+                // This method is called in j86.sun.security.util.Password,
                 // cons already exists when this method is called
                 return cons.cs;
             }

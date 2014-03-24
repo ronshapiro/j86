@@ -32,15 +32,15 @@
  */
 
 
-package com.sun.tools.example.debug.gui;
+package j86.com.sun.tools.example.debug.gui;
 
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.*;
-import java.util.Vector;
-import java.util.List;
+import j86.javax.swing.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.java.util.Vector;
+import j86.java.util.List;
 
-import com.sun.tools.example.debug.bdi.*;
+import j86.com.sun.tools.example.debug.bdi.*;
 
 //### This is currently just a placeholder!
 

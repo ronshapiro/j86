@@ -23,39 +23,39 @@
  * questions.
  */
 
-package sun.security.provider.certpath;
+package j86.j86.sun.security.provider.certpath;
 
-import java.security.AlgorithmConstraints;
-import java.security.CryptoPrimitive;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Set;
-import java.util.EnumSet;
-import java.util.HashSet;
-import java.math.BigInteger;
-import java.security.PublicKey;
-import java.security.KeyFactory;
-import java.security.AlgorithmParameters;
-import java.security.NoSuchAlgorithmException;
-import java.security.GeneralSecurityException;
-import java.security.cert.Certificate;
-import java.security.cert.X509CRL;
-import java.security.cert.X509Certificate;
-import java.security.cert.PKIXCertPathChecker;
-import java.security.cert.TrustAnchor;
-import java.security.cert.CRLException;
-import java.security.cert.CertificateException;
-import java.security.cert.CertPathValidatorException;
-import java.security.cert.CertPathValidatorException.BasicReason;
-import java.security.cert.PKIXReason;
-import java.io.IOException;
-import java.security.interfaces.*;
-import java.security.spec.*;
+import j86.java.security.AlgorithmConstraints;
+import j86.java.security.CryptoPrimitive;
+import j86.java.util.Collection;
+import j86.java.util.Collections;
+import j86.java.util.Set;
+import j86.java.util.EnumSet;
+import j86.java.util.HashSet;
+import j86.java.math.BigInteger;
+import j86.java.security.PublicKey;
+import j86.java.security.KeyFactory;
+import j86.java.security.AlgorithmParameters;
+import j86.java.security.NoSuchAlgorithmException;
+import j86.java.security.GeneralSecurityException;
+import j86.j86.java.security.cert.Certificate;
+import j86.j86.java.security.cert.X509CRL;
+import j86.j86.java.security.cert.X509Certificate;
+import j86.j86.java.security.cert.PKIXCertPathChecker;
+import j86.j86.java.security.cert.TrustAnchor;
+import j86.j86.java.security.cert.CRLException;
+import j86.j86.java.security.cert.CertificateException;
+import j86.j86.java.security.cert.CertPathValidatorException;
+import j86.j86.java.security.cert.CertPathValidatorException.BasicReason;
+import j86.j86.java.security.cert.PKIXReason;
+import j86.java.io.IOException;
+import j86.j86.java.security.interfaces.*;
+import j86.j86.java.security.spec.*;
 
-import sun.security.util.DisabledAlgorithmConstraints;
-import sun.security.x509.X509CertImpl;
-import sun.security.x509.X509CRLImpl;
-import sun.security.x509.AlgorithmId;
+import j86.sun.security.util.DisabledAlgorithmConstraints;
+import j86.sun.security.x509.X509CertImpl;
+import j86.sun.security.x509.X509CRLImpl;
+import j86.sun.security.x509.AlgorithmId;
 
 /**
  * A <code>PKIXCertPathChecker</code> implementation to check whether a

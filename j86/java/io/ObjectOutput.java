@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.io;
+package j86.java.io;
 
 /**
  * ObjectOutput extends the DataOutput interface to include writing of objects.
@@ -31,9 +31,9 @@ package java.io;
  * extends that interface to include objects, arrays, and Strings.
  *
  * @author  unascribed
- * @see java.io.InputStream
- * @see java.io.ObjectOutputStream
- * @see java.io.ObjectInputStream
+ * @see j86.java.io.InputStream
+ * @see j86.java.io.ObjectOutputStream
+ * @see j86.java.io.ObjectInputStream
  * @since   JDK1.1
  */
 public interface ObjectOutput extends DataOutput, AutoCloseable {

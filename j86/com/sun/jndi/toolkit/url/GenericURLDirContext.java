@@ -22,14 +22,14 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.jndi.toolkit.url;
+package j86.com.sun.jndi.toolkit.url;
 
-import javax.naming.*;
-import javax.naming.directory.*;
-import javax.naming.spi.ResolveResult;
-import javax.naming.spi.DirectoryManager;
+import j86.javax.naming.*;
+import j86.j86.javax.naming.directory.*;
+import j86.j86.javax.naming.spi.ResolveResult;
+import j86.j86.javax.naming.spi.DirectoryManager;
 
-import java.util.Hashtable;
+import j86.java.util.Hashtable;
 
 /**
  * This abstract class is a generic URL DirContext that accepts as the

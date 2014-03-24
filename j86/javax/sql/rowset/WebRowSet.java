@@ -23,13 +23,13 @@
  * questions.
  */
 
-package javax.sql.rowset;
+package j86.j86.javax.sql.rowset;
 
-import java.sql.*;
-import javax.sql.*;
-import javax.naming.*;
-import java.io.*;
-import java.math.*;
+import j86.java.sql.*;
+import j86.javax.sql.*;
+import j86.javax.naming.*;
+import j86.java.io.*;
+import j86.java.math.*;
 import org.xml.sax.*;
 
 /**
@@ -67,7 +67,7 @@ import org.xml.sax.*;
  * </li>
  * <li>metadata - This describes the metadata associated with the tabular structure governed by a
  * {@code WebRowSet} object. The metadata described is closely aligned with the
- * metadata accessible in the underlying {@code java.sql.ResultSet} interface.
+ * metadata accessible in the underlying {@code j86.java.sql.ResultSet} interface.
  * </li>
  * <li>data - This describes the original data (the state of data since the
  * last population
@@ -404,10 +404,10 @@ import org.xml.sax.*;
  * </data>
  * }</PRE>
  *
- * @see javax.sql.rowset.JdbcRowSet
- * @see javax.sql.rowset.CachedRowSet
- * @see javax.sql.rowset.FilteredRowSet
- * @see javax.sql.rowset.JoinRowSet
+ * @see j86.j86.javax.sql.rowset.JdbcRowSet
+ * @see j86.j86.javax.sql.rowset.CachedRowSet
+ * @see j86.j86.javax.sql.rowset.FilteredRowSet
+ * @see j86.j86.javax.sql.rowset.JoinRowSet
  */
 
 public interface WebRowSet extends CachedRowSet {
@@ -416,23 +416,23 @@ public interface WebRowSet extends CachedRowSet {
     * Reads a {@code WebRowSet} object in its XML format from the given
     * {@code Reader} object.
     *
-    * @param reader the {@code java.io.Reader} stream from which this
+    * @param reader the {@code j86.java.io.Reader} stream from which this
     *        {@code WebRowSet} object will be populated
 
     * @throws SQLException if a database access error occurs
     */
-    public void readXml(java.io.Reader reader) throws SQLException;
+    public void readXml(j86.java.io.Reader reader) throws SQLException;
 
     /**
      * Reads a stream based XML input to populate this {@code WebRowSet}
      * object.
      *
-     * @param iStream the {@code java.io.InputStream} from which this
+     * @param iStream the {@code j86.java.io.InputStream} from which this
      *        {@code WebRowSet} object will be populated
      * @throws SQLException if a data source access error occurs
      * @throws IOException if an IO exception occurs
      */
-    public void readXml(java.io.InputStream iStream) throws SQLException, IOException;
+    public void readXml(j86.java.io.InputStream iStream) throws SQLException, IOException;
 
    /**
     * Populates this {@code WebRowSet} object with
@@ -446,11 +446,11 @@ public interface WebRowSet extends CachedRowSet {
     *
     * @param rs the {@code ResultSet} object with which to populate this
     *        {@code WebRowSet} object
-    * @param writer the {@code java.io.Writer} object to write to.
+    * @param writer the {@code j86.java.io.Writer} object to write to.
     * @throws SQLException if an error occurs writing out the rowset
     *          contents in XML format
     */
-    public void writeXml(ResultSet rs, java.io.Writer writer) throws SQLException;
+    public void writeXml(ResultSet rs, j86.java.io.Writer writer) throws SQLException;
 
    /**
     * Populates this {@code WebRowSet} object with
@@ -464,31 +464,31 @@ public interface WebRowSet extends CachedRowSet {
     *
     * @param rs the {@code ResultSet} object with which to populate this
     *        {@code WebRowSet} object
-    * @param oStream the {@code java.io.OutputStream} to write to
+    * @param oStream the {@code j86.java.io.OutputStream} to write to
     * @throws SQLException if a data source access error occurs
     * @throws IOException if a IO exception occurs
     */
-    public void writeXml(ResultSet rs, java.io.OutputStream oStream) throws SQLException, IOException;
+    public void writeXml(ResultSet rs, j86.java.io.OutputStream oStream) throws SQLException, IOException;
 
    /**
     * Writes the data, properties, and metadata for this {@code WebRowSet} object
     * to the given {@code Writer} object in XML format.
     *
-    * @param writer the {@code java.io.Writer} stream to write to
+    * @param writer the {@code j86.java.io.Writer} stream to write to
     * @throws SQLException if an error occurs writing out the rowset
     *          contents to XML
     */
-    public void writeXml(java.io.Writer writer) throws SQLException;
+    public void writeXml(j86.java.io.Writer writer) throws SQLException;
 
     /**
      * Writes the data, properties, and metadata for this {@code WebRowSet} object
      * to the given {@code OutputStream} object in XML format.
      *
-     * @param oStream the {@code java.io.OutputStream} stream to write to
+     * @param oStream the {@code j86.java.io.OutputStream} stream to write to
      * @throws SQLException if a data source access error occurs
      * @throws IOException if a IO exception occurs
      */
-    public void writeXml(java.io.OutputStream oStream) throws SQLException, IOException;
+    public void writeXml(j86.java.io.OutputStream oStream) throws SQLException, IOException;
 
     /**
      * The public identifier for the XML Schema definition that defines the XML

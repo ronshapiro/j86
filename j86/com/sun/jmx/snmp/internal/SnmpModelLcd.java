@@ -23,7 +23,7 @@
  * questions.
  */
 
-package com.sun.jmx.snmp.internal;
+package j86.j86.com.sun.jmx.snmp.internal;
 
 /**
  * An interface to implement when developping customized model configuration datastore.

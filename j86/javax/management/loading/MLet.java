@@ -23,55 +23,55 @@
  * questions.
  */
 
-package javax.management.loading;
+package j86.j86.javax.management.loading;
 
 // Java import
-import com.sun.jmx.defaults.JmxProperties;
+import j86.com.sun.jmx.defaults.JmxProperties;
 
-import com.sun.jmx.defaults.ServiceName;
+import j86.com.sun.jmx.defaults.ServiceName;
 
-import com.sun.jmx.remote.util.EnvHelp;
+import j86.com.sun.jmx.remote.util.EnvHelp;
 
-import java.io.Externalizable;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.ObjectInput;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutput;
-import java.lang.reflect.Constructor;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.net.URLStreamHandlerFactory;
-import java.nio.file.Files;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.logging.Level;
-import java.util.Map;
-import java.util.Set;
-import java.util.StringTokenizer;
+import j86.java.io.Externalizable;
+import j86.java.io.File;
+import j86.java.io.FileOutputStream;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.io.ObjectInput;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.ObjectOutput;
+import j86.j86.j86.java.lang.reflect.Constructor;
+import j86.java.net.MalformedURLException;
+import j86.java.net.URL;
+import j86.java.net.URLStreamHandlerFactory;
+import j86.j86.java.nio.file.Files;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.util.ArrayList;
+import j86.java.util.Arrays;
+import j86.java.util.HashMap;
+import j86.java.util.HashSet;
+import j86.java.util.List;
+import j86.j86.java.util.logging.Level;
+import j86.java.util.Map;
+import j86.java.util.Set;
+import j86.java.util.StringTokenizer;
 
-import javax.management.InstanceAlreadyExistsException;
-import javax.management.InstanceNotFoundException;
-import javax.management.MBeanException;
-import javax.management.MBeanRegistration;
-import javax.management.MBeanRegistrationException;
-import javax.management.MBeanServer;
-import javax.management.NotCompliantMBeanException;
-import javax.management.ObjectInstance;
-import javax.management.ObjectName;
-import javax.management.ReflectionException;
+import j86.javax.management.InstanceAlreadyExistsException;
+import j86.javax.management.InstanceNotFoundException;
+import j86.javax.management.MBeanException;
+import j86.javax.management.MBeanRegistration;
+import j86.javax.management.MBeanRegistrationException;
+import j86.javax.management.MBeanServer;
+import j86.javax.management.NotCompliantMBeanException;
+import j86.javax.management.ObjectInstance;
+import j86.javax.management.ObjectName;
+import j86.javax.management.ReflectionException;
 
-import static com.sun.jmx.defaults.JmxProperties.MLET_LIB_DIR;
-import static com.sun.jmx.defaults.JmxProperties.MLET_LOGGER;
-import com.sun.jmx.defaults.ServiceName;
-import javax.management.ServiceNotFoundException;
+import static j86.com.sun.jmx.defaults.JmxProperties.MLET_LIB_DIR;
+import static j86.com.sun.jmx.defaults.JmxProperties.MLET_LOGGER;
+import j86.com.sun.jmx.defaults.ServiceName;
+import j86.javax.management.ServiceNotFoundException;
 
 /**
  * Allows you to instantiate and register one or several MBeans in the MBean server
@@ -129,7 +129,7 @@ import javax.management.ServiceNotFoundException;
  * MBean instance when the m-let service registers it. If
  * <VAR>mbeanname</VAR> starts with the colon character (:), the domain
  * part of the object name is the default domain of the MBean server,
- * as returned by {@link javax.management.MBeanServer#getDefaultDomain()}.
+ * as returned by {@link j86.javax.management.MBeanServer#getDefaultDomain()}.
  * </DD>
  * <DT><CODE>VERSION = </CODE><VAR>version</VAR></DT>
  * <DD>
@@ -154,21 +154,21 @@ import javax.management.ServiceNotFoundException;
  * </DD>
  * </DL>
  * <P>The arguments' type in the argument list should be a Java primitive type or a Java basic type
- * (<CODE>java.lang.Boolean, java.lang.Byte, java.lang.Short, java.lang.Long, java.lang.Integer, java.lang.Float, java.lang.Double, java.lang.String</CODE>).
+ * (<CODE>j86.java.lang.Boolean, java.lang.Byte, java.lang.Short, java.lang.Long, java.lang.Integer, java.lang.Float, java.lang.Double, java.lang.String</CODE>).
  * </DD>
  * </DL>
  *
  * When an m-let text file is loaded, an
  * instance of each MBean specified in the file is created and registered.
  * <P>
- * The m-let service extends the <CODE>java.net.URLClassLoader</CODE> and can be used to load remote classes
+ * The m-let service extends the <CODE>j86.java.net.URLClassLoader</CODE> and can be used to load remote classes
  * and jar files in the VM of the agent.
- * <p><STRONG>Note - </STRONG> The <CODE>MLet</CODE> class loader uses the {@link javax.management.MBeanServerFactory#getClassLoaderRepository(javax.management.MBeanServer)}
+ * <p><STRONG>Note - </STRONG> The <CODE>MLet</CODE> class loader uses the {@link j86.javax.management.MBeanServerFactory#getClassLoaderRepository(javax.management.MBeanServer)}
  * to load classes that could not be found in the loaded jar files.
  *
  * @since 1.5
  */
-public class MLet extends java.net.URLClassLoader
+public class MLet extends j86.java.net.URLClassLoader
      implements MLetMBean, MBeanRegistration, Externalizable {
 
      private static final long serialVersionUID = 3636148327800330130L;
@@ -379,7 +379,7 @@ public class MLet extends java.net.URLClassLoader
          } catch (SecurityException e) {
              // OK : We don't do AccessController.doPrivileged, but we don't
              //      stop the user from creating an MLet just because they
-             //      can't read the MLET_LIB_DIR or java.io.tmpdir properties
+             //      can't read the MLET_LIB_DIR or j86.java.io.tmpdir properties
              //      either.
          }
      }
@@ -764,7 +764,7 @@ public class MLet extends java.net.URLClassLoader
       *
       * @return  The name of the m-let registered.
       *
-      * @exception java.lang.Exception This exception should be caught by the MBean server and re-thrown
+      * @exception j86.java.lang.Exception This exception should be caught by the MBean server and re-thrown
       *as an MBeanRegistrationException.
       */
      public ObjectName preRegister(MBeanServer server, ObjectName name)
@@ -798,11 +798,11 @@ public class MLet extends java.net.URLClassLoader
       * Allows the m-let to perform any operations it needs before being unregistered
       * by the MBean server.
       *
-      * @exception java.lang.Exception This exception should be caught
+      * @exception j86.java.lang.Exception This exception should be caught
       * by the MBean server and re-thrown as an
       * MBeanRegistrationException.
       */
-     public void preDeregister() throws java.lang.Exception {
+     public void preDeregister() throws j86.java.lang.Exception {
      }
 
 
@@ -923,13 +923,13 @@ public class MLet extends java.net.URLClassLoader
      }
 
      /**
-      * Called by {@link MLet#findClass(java.lang.String)}.
+      * Called by {@link MLet#findClass(j86.java.lang.String)}.
       *
       * @param name The name of the class that we want to load/find.
       * @param clr The ClassLoaderRepository that can be used to search
       *            for the given class. This parameter is
       *            <code>null</code> when called from within the
-      *            {@link javax.management.MBeanServerFactory#getClassLoaderRepository(javax.management.MBeanServer) Class Loader Repository}.
+      *            {@link j86.javax.management.MBeanServerFactory#getClassLoaderRepository(javax.management.MBeanServer) Class Loader Repository}.
       * @exception ClassNotFoundException The specified class could not be
       *            found.
       *
@@ -1011,7 +1011,7 @@ public class MLet extends java.net.URLClassLoader
       * </OL>
       *
       * <p>More specifically, let <em>{@code nativelibname}</em> be the result of
-      * {@link System#mapLibraryName(java.lang.String)
+      * {@link System#mapLibraryName(j86.java.lang.String)
       * System.mapLibraryName}{@code (libname)}.  Then the following names are
       * searched in the JAR files, in order:<br>
       * <em>{@code nativelibname}</em><br>
@@ -1114,7 +1114,7 @@ public class MLet extends java.net.URLClassLoader
 
      private String getTmpDir() {
          // JDK 1.4
-         String tmpDir = System.getProperty("java.io.tmpdir");
+         String tmpDir = System.getProperty("j86.java.io.tmpdir");
          if (tmpDir != null) return tmpDir;
 
          // JDK < 1.4
@@ -1304,21 +1304,21 @@ public class MLet extends java.net.URLClassLoader
                         "constructParameter", "Got unexpected exception", e);
             }
         }
-        if (type.compareTo("java.lang.Boolean") == 0)
+        if (type.compareTo("j86.java.lang.Boolean") == 0)
              return Boolean.valueOf(param);
-        if (type.compareTo("java.lang.Byte") == 0)
+        if (type.compareTo("j86.java.lang.Byte") == 0)
              return new Byte(param);
-        if (type.compareTo("java.lang.Short") == 0)
+        if (type.compareTo("j86.java.lang.Short") == 0)
              return new Short(param);
-        if (type.compareTo("java.lang.Long") == 0)
+        if (type.compareTo("j86.java.lang.Long") == 0)
              return new Long(param);
-        if (type.compareTo("java.lang.Integer") == 0)
+        if (type.compareTo("j86.java.lang.Integer") == 0)
              return new Integer(param);
-        if (type.compareTo("java.lang.Float") == 0)
+        if (type.compareTo("j86.java.lang.Float") == 0)
              return new Float(param);
-        if (type.compareTo("java.lang.Double") == 0)
+        if (type.compareTo("j86.java.lang.Double") == 0)
              return new Double(param);
-        if (type.compareTo("java.lang.String") == 0)
+        if (type.compareTo("j86.java.lang.String") == 0)
              return param;
 
         return param;

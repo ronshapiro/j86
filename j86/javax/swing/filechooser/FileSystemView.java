@@ -23,25 +23,25 @@
  * questions.
  */
 
-package javax.swing.filechooser;
+package j86.j86.javax.swing.filechooser;
 
 
-import javax.swing.*;
+import j86.javax.swing.*;
 
-import java.awt.Image;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.text.MessageFormat;
-import java.util.List;
-import java.util.ArrayList;
-import java.lang.ref.WeakReference;
-import java.beans.PropertyChangeListener;
-import java.beans.PropertyChangeEvent;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
+import j86.java.awt.Image;
+import j86.java.io.File;
+import j86.java.io.FileNotFoundException;
+import j86.java.io.IOException;
+import j86.java.text.MessageFormat;
+import j86.java.util.List;
+import j86.java.util.ArrayList;
+import j86.j86.java.lang.ref.WeakReference;
+import j86.java.beans.PropertyChangeListener;
+import j86.java.beans.PropertyChangeEvent;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
 
-import sun.awt.shell.*;
+import j86.j86.sun.awt.shell.*;
 
 /**
  * FileSystemView is JFileChooser's gateway to the

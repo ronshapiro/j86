@@ -23,30 +23,30 @@
  * questions.
  */
 
-package sun.java2d.pipe;
+package j86.j86.sun.java2d.pipe;
 
-import java.awt.Color;
-import java.awt.GradientPaint;
-import java.awt.LinearGradientPaint;
-import java.awt.MultipleGradientPaint;
-import java.awt.MultipleGradientPaint.ColorSpaceType;
-import java.awt.MultipleGradientPaint.CycleMethod;
-import java.awt.Paint;
-import java.awt.RadialGradientPaint;
-import java.awt.TexturePaint;
-import java.awt.geom.AffineTransform;
-import java.awt.geom.Point2D;
-import java.awt.geom.Rectangle2D;
-import java.awt.image.AffineTransformOp;
-import java.awt.image.BufferedImage;
-import sun.awt.image.PixelConverter;
-import sun.java2d.SunGraphics2D;
-import sun.java2d.SurfaceData;
-import sun.java2d.loops.CompositeType;
-import sun.java2d.loops.SurfaceType;
-import static sun.java2d.pipe.BufferedOpCodes.*;
+import j86.java.awt.Color;
+import j86.java.awt.GradientPaint;
+import j86.java.awt.LinearGradientPaint;
+import j86.java.awt.MultipleGradientPaint;
+import j86.java.awt.MultipleGradientPaint.ColorSpaceType;
+import j86.java.awt.MultipleGradientPaint.CycleMethod;
+import j86.java.awt.Paint;
+import j86.java.awt.RadialGradientPaint;
+import j86.java.awt.TexturePaint;
+import j86.j86.java.awt.geom.AffineTransform;
+import j86.j86.java.awt.geom.Point2D;
+import j86.j86.java.awt.geom.Rectangle2D;
+import j86.j86.j86.java.awt.image.AffineTransformOp;
+import j86.j86.j86.java.awt.image.BufferedImage;
+import j86.j86.j86.sun.awt.image.PixelConverter;
+import j86.sun.java2d.SunGraphics2D;
+import j86.sun.java2d.SurfaceData;
+import j86.j86.sun.java2d.loops.CompositeType;
+import j86.j86.sun.java2d.loops.SurfaceType;
+import static j86.j86.sun.java2d.pipe.BufferedOpCodes.*;
 
-import java.lang.annotation.Native;
+import j86.j86.java.lang.annotation.Native;
 
 public class BufferedPaints {
 
@@ -186,7 +186,7 @@ public class BufferedPaints {
             p0 = at.getScaleX();
             p1 = at.getShearX();
             p3 = at.getTranslateX();
-        } catch (java.awt.geom.NoninvertibleTransformException e) {
+        } catch (j86.j86.java.awt.geom.NoninvertibleTransformException e) {
             p0 = p1 = p3 = 0.0;
         }
 
@@ -270,7 +270,7 @@ public class BufferedPaints {
             yp0 = at.getShearY();
             yp1 = at.getScaleY();
             yp3 = at.getTranslateY();
-        } catch (java.awt.geom.NoninvertibleTransformException e) {
+        } catch (j86.j86.java.awt.geom.NoninvertibleTransformException e) {
             xp0 = xp1 = xp3 = yp0 = yp1 = yp3 = 0.0;
         }
 
@@ -435,7 +435,7 @@ public class BufferedPaints {
             p0 = (float)at.getScaleX();
             p1 = (float)at.getShearX();
             p3 = (float)at.getTranslateX();
-        } catch (java.awt.geom.NoninvertibleTransformException e) {
+        } catch (j86.j86.java.awt.geom.NoninvertibleTransformException e) {
             p0 = p1 = p3 = 0.0f;
         }
 

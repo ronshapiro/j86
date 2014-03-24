@@ -23,30 +23,30 @@
  * questions.
  */
 
-package com.sun.security.auth.module;
+package j86.j86.com.sun.security.auth.module;
 
-import java.security.AccessController;
-import java.net.SocketPermission;
-import java.security.Principal;
-import java.security.PrivilegedAction;
-import java.util.Arrays;
-import java.util.Hashtable;
-import java.util.Map;
-import java.util.ResourceBundle;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-import java.util.Set;
+import j86.java.security.AccessController;
+import j86.java.net.SocketPermission;
+import j86.java.security.Principal;
+import j86.java.security.PrivilegedAction;
+import j86.java.util.Arrays;
+import j86.java.util.Hashtable;
+import j86.java.util.Map;
+import j86.java.util.ResourceBundle;
+import j86.j86.java.util.regex.Matcher;
+import j86.j86.java.util.regex.Pattern;
+import j86.java.util.Set;
 
-import javax.naming.*;
-import javax.naming.directory.*;
-import javax.naming.ldap.*;
-import javax.security.auth.*;
-import javax.security.auth.callback.*;
-import javax.security.auth.login.*;
-import javax.security.auth.spi.*;
+import j86.javax.naming.*;
+import j86.j86.javax.naming.directory.*;
+import j86.j86.javax.naming.ldap.*;
+import j86.javax.security.auth.*;
+import j86.j86.javax.security.auth.callback.*;
+import j86.j86.javax.security.auth.login.*;
+import j86.j86.javax.security.auth.spi.*;
 
-import com.sun.security.auth.LdapPrincipal;
-import com.sun.security.auth.UserPrincipal;
+import j86.com.sun.security.auth.LdapPrincipal;
+import j86.com.sun.security.auth.UserPrincipal;
 
 
 /**
@@ -107,7 +107,7 @@ import com.sun.security.auth.UserPrincipal;
  *      in turn, until the first successful connection is established.
  *      Spaces in the distinguished name component of the URL must be escaped
  *      using the standard mechanism of percent character ('<code>%</code>')
- *      followed by two hexadecimal digits (see {@link java.net.URI}).
+ *      followed by two hexadecimal digits (see {@link j86.java.net.URI}).
  *      Query components must also be omitted from the URL.
  *
  *      <p>
@@ -165,16 +165,16 @@ import com.sun.security.auth.UserPrincipal;
  *
  * <dt> <code>useFirstPass</code> </dt>
  * <dd> if <code>true</code>, this module retrieves the username and password
- *      from the module's shared state, using "javax.security.auth.login.name"
- *      and "javax.security.auth.login.password" as the respective keys. The
+ *      from the module's shared state, using "j86.j86.javax.security.auth.login.name"
+ *      and "j86.j86.javax.security.auth.login.password" as the respective keys. The
  *      retrieved values are used for authentication. If authentication fails,
  *      no attempt for a retry is made, and the failure is reported back to
  *      the calling application.</dd>
  *
  * <dt> <code>tryFirstPass</code> </dt>
  * <dd> if <code>true</code>, this module retrieves the username and password
- *      from the module's shared state, using "javax.security.auth.login.name"
- *       and "javax.security.auth.login.password" as the respective keys.  The
+ *      from the module's shared state, using "j86.j86.javax.security.auth.login.name"
+ *       and "j86.j86.javax.security.auth.login.password" as the respective keys.  The
  *      retrieved values are used for authentication. If authentication fails,
  *      the module uses the {@link CallbackHandler} to retrieve a new username
  *      and password, and another attempt to authenticate is made. If the
@@ -185,8 +185,8 @@ import com.sun.security.auth.UserPrincipal;
  * <dd> if <code>true</code>, this module stores the username and password
  *      obtained from the {@link CallbackHandler} in the module's shared state,
  *      using
- *      "javax.security.auth.login.name" and
- *      "javax.security.auth.login.password" as the respective keys.  This is
+ *      "j86.j86.javax.security.auth.login.name" and
+ *      "j86.j86.javax.security.auth.login.password" as the respective keys.  This is
  *      not performed if existing values already exist for the username and
  *      password in the shared state, or if authentication fails.</dd>
  *
@@ -234,7 +234,7 @@ import com.sun.security.auth.UserPrincipal;
  * <pre>
  *
  *     ExampleApplication {
- *         com.sun.security.auth.module.LdapLoginModule REQUIRED
+ *         j86.j86.com.sun.security.auth.module.LdapLoginModule REQUIRED
  *             userProvider="ldap://ldap-svr/ou=people,dc=example,dc=com"
  *             userFilter="(&(uid={USERNAME})(objectClass=inetOrgPerson))"
  *             authzIdentity="{EMPLOYEENUMBER}"
@@ -242,7 +242,7 @@ import com.sun.security.auth.UserPrincipal;
  *     };
  *
  *     ExampleApplication {
- *         com.sun.security.auth.module.LdapLoginModule REQUIRED
+ *         j86.j86.com.sun.security.auth.module.LdapLoginModule REQUIRED
  *             userProvider="ldap:///cn=users,dc=example,dc=com"
  *             authIdentity="{USERNAME}"
  *             userFilter="(&(|(samAccountName={USERNAME})(userPrincipalName={USERNAME})(cn={USERNAME}))(objectClass=user))"
@@ -251,7 +251,7 @@ import com.sun.security.auth.UserPrincipal;
  *     };
  *
  *     ExampleApplication {
- *         com.sun.security.auth.module.LdapLoginModule REQUIRED
+ *         j86.j86.com.sun.security.auth.module.LdapLoginModule REQUIRED
  *             userProvider="ldap://ldap-svr1 ldap://ldap-svr2"
  *             authIdentity="cn={USERNAME},ou=people,dc=example,dc=com"
  *             authzIdentity="staff"
@@ -274,7 +274,7 @@ import com.sun.security.auth.UserPrincipal;
  *     <pre>
  *
  *     grant codebase "file:${user.dir}/" {
- *         permission javax.security.auth.AuthPermission "createLoginContext.*";
+ *         permission j86.javax.security.auth.AuthPermission "createLoginContext.*";
  *     };
  *     </pre>
  *
@@ -294,9 +294,9 @@ import com.sun.security.auth.UserPrincipal;
  *     <pre>
  *
  *     grant codebase "file:${user.dir}/" {
- *         permission java.net.SocketPermission "*:389", "connect";
- *         permission java.net.SocketPermission "*:636", "connect";
- *         permission javax.security.auth.AuthPermission "modifyPrincipals";
+ *         permission j86.java.net.SocketPermission "*:389", "connect";
+ *         permission j86.java.net.SocketPermission "*:636", "connect";
+ *         permission j86.javax.security.auth.AuthPermission "modifyPrincipals";
  *     };
  *     </pre>
  * </dd>
@@ -312,15 +312,15 @@ public class LdapLoginModule implements LoginModule {
             new PrivilegedAction<ResourceBundle>() {
                 public ResourceBundle run() {
                     return ResourceBundle.getBundle(
-                        "sun.security.util.AuthResources");
+                        "j86.sun.security.util.AuthResources");
                 }
             }
         );
 
     // Keys to retrieve the stored username and password
-    private static final String USERNAME_KEY = "javax.security.auth.login.name";
+    private static final String USERNAME_KEY = "j86.j86.javax.security.auth.login.name";
     private static final String PASSWORD_KEY =
-        "javax.security.auth.login.password";
+        "j86.j86.javax.security.auth.login.password";
 
     // Option names
     private static final String USER_PROVIDER = "userProvider";
@@ -384,7 +384,7 @@ public class LdapLoginModule implements LoginModule {
      *                  <code>LoginModule</code>.
      */
     // Unchecked warning from (Map<String, Object>)sharedState is safe
-    // since javax.security.auth.login.LoginContext passes a raw HashMap.
+    // since j86.j86.javax.security.auth.login.LoginContext passes a raw HashMap.
     @SuppressWarnings("unchecked")
     public void initialize(Subject subject, CallbackHandler callbackHandler,
                         Map<String, ?> sharedState, Map<String, ?> options) {
@@ -396,7 +396,7 @@ public class LdapLoginModule implements LoginModule {
 
         ldapEnvironment = new Hashtable<String, Object>(9);
         ldapEnvironment.put(Context.INITIAL_CONTEXT_FACTORY,
-            "com.sun.jndi.ldap.LdapCtxFactory");
+            "j86.com.sun.jndi.ldap.LdapCtxFactory");
 
         // Add any JNDI properties to the environment
         for (String key : options.keySet()) {
@@ -982,7 +982,7 @@ public class LdapLoginModule implements LoginModule {
                                 password, 0, tmpPassword.length);
             ((PasswordCallback)callbacks[1]).clearPassword();
 
-        } catch (java.io.IOException ioe) {
+        } catch (j86.java.io.IOException ioe) {
             throw new LoginException(ioe.toString());
 
         } catch (UnsupportedCallbackException uce) {

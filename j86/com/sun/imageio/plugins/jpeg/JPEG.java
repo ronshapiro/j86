@@ -23,15 +23,15 @@
  * questions.
  */
 
-package com.sun.imageio.plugins.jpeg;
+package j86.com.sun.imageio.plugins.jpeg;
 
-import javax.imageio.ImageTypeSpecifier;
-import javax.imageio.plugins.jpeg.JPEGQTable;
-import javax.imageio.plugins.jpeg.JPEGHuffmanTable;
+import j86.javax.imageio.ImageTypeSpecifier;
+import j86.j86.javax.imageio.plugins.jpeg.JPEGQTable;
+import j86.j86.javax.imageio.plugins.jpeg.JPEGHuffmanTable;
 
-import java.awt.image.ColorModel;
-import java.awt.color.ColorSpace;
-import java.awt.color.ICC_ColorSpace;
+import j86.j86.j86.java.awt.image.ColorModel;
+import j86.j86.java.awt.color.ColorSpace;
+import j86.j86.java.awt.color.ICC_ColorSpace;
 
 /**
  * A class containing JPEG-related constants, definitions, and
@@ -173,13 +173,13 @@ public class JPEG {
     static final String [] suffixes = {"jpg", "jpeg"};
     static final String [] MIMETypes = {"image/jpeg"};
     public static final String nativeImageMetadataFormatName =
-        "javax_imageio_jpeg_image_1.0";
+        "j86.javax.imageio_jpeg_image_1.0";
     public static final String nativeImageMetadataFormatClassName =
-        "com.sun.imageio.plugins.jpeg.JPEGImageMetadataFormat";
+        "j86.com.sun.imageio.plugins.jpeg.JPEGImageMetadataFormat";
     public static final String nativeStreamMetadataFormatName =
-        "javax_imageio_jpeg_stream_1.0";
+        "j86.javax.imageio_jpeg_stream_1.0";
     public static final String nativeStreamMetadataFormatClassName =
-        "com.sun.imageio.plugins.jpeg.JPEGStreamMetadataFormat";
+        "j86.com.sun.imageio.plugins.jpeg.JPEGStreamMetadataFormat";
 
     // IJG Color codes.
     public static final int JCS_UNKNOWN = 0;       // error/unspecified

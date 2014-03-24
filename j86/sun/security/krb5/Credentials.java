@@ -29,15 +29,15 @@
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
 
-package sun.security.krb5;
+package j86.sun.security.krb5;
 
-import sun.security.krb5.internal.*;
-import sun.security.krb5.internal.ccache.CredentialsCache;
-import sun.security.krb5.internal.crypto.EType;
-import java.io.IOException;
-import java.util.Date;
-import java.util.Locale;
-import java.net.InetAddress;
+import j86.j86.sun.security.krb5.internal.*;
+import j86.j86.j86.sun.security.krb5.internal.ccache.CredentialsCache;
+import j86.j86.j86.sun.security.krb5.internal.crypto.EType;
+import j86.java.io.IOException;
+import j86.java.util.Date;
+import j86.java.util.Locale;
+import j86.java.net.InetAddress;
 
 /**
  * This class encapsulates the concept of a Kerberos service
@@ -288,8 +288,8 @@ public class Credentials {
 
         if (ticketCache == null) {
             // The default ticket cache on Windows and Mac is not a file.
-            String os = java.security.AccessController.doPrivileged(
-                        new sun.security.action.GetPropertyAction("os.name"));
+            String os = j86.java.security.AccessController.doPrivileged(
+                        new j86.sun.security.action.GetPropertyAction("os.name"));
             if (os.toUpperCase(Locale.ENGLISH).startsWith("WINDOWS") ||
                     os.toUpperCase(Locale.ENGLISH).contains("OS X")) {
                 Credentials creds = acquireDefaultCreds();
@@ -336,7 +336,7 @@ public class Credentials {
             return null;
         }
 
-        sun.security.krb5.internal.ccache.Credentials tgtCred  =
+        j86.j86.j86.sun.security.krb5.internal.ccache.Credentials tgtCred  =
             ccache.getDefaultCreds();
 
         if (tgtCred == null) {
@@ -384,7 +384,7 @@ public class Credentials {
             cache = CredentialsCache.getInstance();
         }
         if (cache != null) {
-            sun.security.krb5.internal.ccache.Credentials temp =
+            j86.j86.j86.sun.security.krb5.internal.ccache.Credentials temp =
                 cache.getDefaultCreds();
             if (temp != null) {
                 if (DEBUG) {
@@ -495,8 +495,8 @@ public class Credentials {
 
 
     static void ensureLoaded() {
-        java.security.AccessController.doPrivileged(
-                new java.security.PrivilegedAction<Void> () {
+        j86.java.security.AccessController.doPrivileged(
+                new j86.java.security.PrivilegedAction<Void> () {
                         public Void run() {
                                 if (System.getProperty("os.name").contains("OS X")) {
                                     System.loadLibrary("osxkrb5");

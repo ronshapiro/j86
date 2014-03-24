@@ -23,17 +23,17 @@
  * questions.
  */
 
-package sun.awt;
+package j86.sun.awt;
 
 class NativeLibLoader {
 
     /**
-     * This is copied from java.awt.Toolkit since we need the library
-     * loaded in sun.awt.image also:
+     * This is copied from j86.java.awt.Toolkit since we need the library
+     * loaded in j86.j86.j86.sun.awt.image also:
      *
      * WARNING: This is a temporary workaround for a problem in the
      * way the AWT loads native libraries. A number of classes in this
-     * package (sun.awt.image) have a native method, initIDs(),
+     * package (j86.j86.j86.sun.awt.image) have a native method, initIDs(),
      * which initializes
      * the JNI field and method ids used in the native portion of
      * their implementation.
@@ -45,7 +45,7 @@ class NativeLibLoader {
      * problem is that this means that the native libraries must be
      * loaded by the java.* classes, which do not necessarily know the
      * names of the libraries to load. A better way of doing this
-     * would be to provide a separate library which defines java.awt.*
+     * would be to provide a separate library which defines j86.java.awt.*
      * initIDs, and exports the relevant symbols out to the
      * implementation libraries.
      *
@@ -53,8 +53,8 @@ class NativeLibLoader {
      * that the name of the library is "awt".  -br.
      */
     static void loadLibraries() {
-        java.security.AccessController.doPrivileged(
-            new java.security.PrivilegedAction<Void>() {
+        j86.java.security.AccessController.doPrivileged(
+            new j86.java.security.PrivilegedAction<Void>() {
                 public Void run() {
                     System.loadLibrary("awt");
                     return null;

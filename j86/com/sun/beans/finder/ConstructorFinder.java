@@ -22,15 +22,15 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.beans.finder;
+package j86.j86.com.sun.beans.finder;
 
-import com.sun.beans.util.Cache;
+import j86.j86.com.sun.beans.util.Cache;
 
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Modifier;
+import j86.j86.j86.java.lang.reflect.Constructor;
+import j86.j86.j86.java.lang.reflect.Modifier;
 
-import static com.sun.beans.util.Cache.Kind.SOFT;
-import static sun.reflect.misc.ReflectUtil.isPackageAccessible;
+import static j86.j86.com.sun.beans.util.Cache.Kind.SOFT;
+import static j86.j86.sun.reflect.misc.ReflectUtil.isPackageAccessible;
 
 /**
  * This utility class provides {@code static} methods

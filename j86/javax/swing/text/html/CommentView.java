@@ -22,18 +22,18 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text.html;
+package j86.j86.j86.javax.swing.text.html;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.io.*;
-import java.net.MalformedURLException;
-import java.net.URL;
-import javax.swing.text.*;
-import javax.swing.*;
-import javax.swing.border.*;
-import javax.swing.event.*;
-import java.util.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.java.io.*;
+import j86.java.net.MalformedURLException;
+import j86.java.net.URL;
+import j86.j86.javax.swing.text.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.border.*;
+import j86.j86.javax.swing.event.*;
+import j86.java.util.*;
 
 /**
  * CommentView subclasses HiddenTagView to contain a JTextArea showing

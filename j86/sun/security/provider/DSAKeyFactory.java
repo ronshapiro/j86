@@ -23,23 +23,23 @@
  * questions.
  */
 
-package sun.security.provider;
+package j86.sun.security.provider;
 
-import java.security.Key;
-import java.security.PublicKey;
-import java.security.PrivateKey;
-import java.security.KeyFactorySpi;
-import java.security.InvalidKeyException;
-import java.security.AccessController;
-import java.security.interfaces.DSAParams;
-import java.security.spec.DSAPublicKeySpec;
-import java.security.spec.DSAPrivateKeySpec;
-import java.security.spec.KeySpec;
-import java.security.spec.InvalidKeySpecException;
-import java.security.spec.X509EncodedKeySpec;
-import java.security.spec.PKCS8EncodedKeySpec;
+import j86.java.security.Key;
+import j86.java.security.PublicKey;
+import j86.java.security.PrivateKey;
+import j86.java.security.KeyFactorySpi;
+import j86.java.security.InvalidKeyException;
+import j86.java.security.AccessController;
+import j86.j86.java.security.interfaces.DSAParams;
+import j86.j86.java.security.spec.DSAPublicKeySpec;
+import j86.j86.java.security.spec.DSAPrivateKeySpec;
+import j86.j86.java.security.spec.KeySpec;
+import j86.j86.java.security.spec.InvalidKeySpecException;
+import j86.j86.java.security.spec.X509EncodedKeySpec;
+import j86.j86.java.security.spec.PKCS8EncodedKeySpec;
 
-import sun.security.action.GetPropertyAction;
+import j86.sun.security.action.GetPropertyAction;
 
 /**
  * This class implements the DSA key factory of the Sun provider.
@@ -64,8 +64,8 @@ public class DSAKeyFactory extends KeyFactorySpi {
          * a key object serialized in JDK 5.0 must be deserializable in
          * JDK 1.4.
          *
-         * If true, then we generate sun.security.provider.DSAPublicKey.
-         * If false, then we generate sun.security.provider.DSAPublicKeyImpl.
+         * If true, then we generate j86.sun.security.provider.DSAPublicKey.
+         * If false, then we generate j86.sun.security.provider.DSAPublicKeyImpl.
          *
          * By default this is false.
          * This incompatibility was introduced by 4532506.
@@ -179,17 +179,17 @@ public class DSAKeyFactory extends KeyFactorySpi {
 
         try {
 
-            if (key instanceof java.security.interfaces.DSAPublicKey) {
+            if (key instanceof j86.j86.java.security.interfaces.DSAPublicKey) {
 
                 // Determine valid key specs
                 Class<?> dsaPubKeySpec = Class.forName
-                    ("java.security.spec.DSAPublicKeySpec");
+                    ("j86.j86.java.security.spec.DSAPublicKeySpec");
                 Class<?> x509KeySpec = Class.forName
-                    ("java.security.spec.X509EncodedKeySpec");
+                    ("j86.j86.java.security.spec.X509EncodedKeySpec");
 
                 if (dsaPubKeySpec.isAssignableFrom(keySpec)) {
-                    java.security.interfaces.DSAPublicKey dsaPubKey
-                        = (java.security.interfaces.DSAPublicKey)key;
+                    j86.j86.java.security.interfaces.DSAPublicKey dsaPubKey
+                        = (j86.j86.java.security.interfaces.DSAPublicKey)key;
                     params = dsaPubKey.getParams();
                     return keySpec.cast(new DSAPublicKeySpec(dsaPubKey.getY(),
                                                              params.getP(),
@@ -204,17 +204,17 @@ public class DSAKeyFactory extends KeyFactorySpi {
                         ("Inappropriate key specification");
                 }
 
-            } else if (key instanceof java.security.interfaces.DSAPrivateKey) {
+            } else if (key instanceof j86.j86.java.security.interfaces.DSAPrivateKey) {
 
                 // Determine valid key specs
                 Class<?> dsaPrivKeySpec = Class.forName
-                    ("java.security.spec.DSAPrivateKeySpec");
+                    ("j86.j86.java.security.spec.DSAPrivateKeySpec");
                 Class<?> pkcs8KeySpec = Class.forName
-                    ("java.security.spec.PKCS8EncodedKeySpec");
+                    ("j86.j86.java.security.spec.PKCS8EncodedKeySpec");
 
                 if (dsaPrivKeySpec.isAssignableFrom(keySpec)) {
-                    java.security.interfaces.DSAPrivateKey dsaPrivKey
-                        = (java.security.interfaces.DSAPrivateKey)key;
+                    j86.j86.java.security.interfaces.DSAPrivateKey dsaPrivKey
+                        = (j86.j86.java.security.interfaces.DSAPrivateKey)key;
                     params = dsaPrivKey.getParams();
                     return keySpec.cast(new DSAPrivateKeySpec(dsaPrivKey.getX(),
                                                               params.getP(),
@@ -254,9 +254,9 @@ public class DSAKeyFactory extends KeyFactorySpi {
 
         try {
 
-            if (key instanceof java.security.interfaces.DSAPublicKey) {
+            if (key instanceof j86.j86.java.security.interfaces.DSAPublicKey) {
                 // Check if key originates from this factory
-                if (key instanceof sun.security.provider.DSAPublicKey) {
+                if (key instanceof j86.sun.security.provider.DSAPublicKey) {
                     return key;
                 }
                 // Convert key to spec
@@ -265,9 +265,9 @@ public class DSAKeyFactory extends KeyFactorySpi {
                 // Create key from spec, and return it
                 return engineGeneratePublic(dsaPubKeySpec);
 
-            } else if (key instanceof java.security.interfaces.DSAPrivateKey) {
+            } else if (key instanceof j86.j86.java.security.interfaces.DSAPrivateKey) {
                 // Check if key originates from this factory
-                if (key instanceof sun.security.provider.DSAPrivateKey) {
+                if (key instanceof j86.sun.security.provider.DSAPrivateKey) {
                     return key;
                 }
                 // Convert key to spec

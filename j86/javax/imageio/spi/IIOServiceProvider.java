@@ -23,11 +23,11 @@
  * questions.
  */
 
-package javax.imageio.spi;
+package j86.j86.javax.imageio.spi;
 
-import java.util.Locale;
-import javax.imageio.spi.RegisterableService;
-import javax.imageio.spi.ServiceRegistry;
+import j86.java.util.Locale;
+import j86.j86.javax.imageio.spi.RegisterableService;
+import j86.j86.javax.imageio.spi.ServiceRegistry;
 
 /**
  * A superinterface for functionality common to all Image I/O service
@@ -36,10 +36,10 @@ import javax.imageio.spi.ServiceRegistry;
  * <code>IIORegistry</code> class.
  *
  * @see IIORegistry
- * @see javax.imageio.spi.ImageReaderSpi
- * @see javax.imageio.spi.ImageWriterSpi
- * @see javax.imageio.spi.ImageTranscoderSpi
- * @see javax.imageio.spi.ImageInputStreamSpi
+ * @see j86.j86.javax.imageio.spi.ImageReaderSpi
+ * @see j86.j86.javax.imageio.spi.ImageWriterSpi
+ * @see j86.j86.javax.imageio.spi.ImageTranscoderSpi
+ * @see j86.j86.javax.imageio.spi.ImageInputStreamSpi
  *
  */
 public abstract class IIOServiceProvider implements RegisterableService {

@@ -23,15 +23,15 @@
  * questions.
  */
 
-package com.sun.jmx.snmp.defaults;
+package j86.j86.com.sun.jmx.snmp.defaults;
 
 // java import
 //
-import java.io.FileInputStream;
-import java.io.InputStream;
-import java.io.IOException;
-import java.util.Properties;
-import java.util.Enumeration;
+import j86.java.io.FileInputStream;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
+import j86.java.util.Properties;
+import j86.java.util.Enumeration;
 
 /**
  * This class reads a file containing the property list defined for Java DMK

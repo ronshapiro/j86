@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.lang.management;
+package j86.j86.java.lang.management;
 
-import javax.management.openmbean.CompositeData;
-import sun.management.MemoryUsageCompositeData;
+import j86.j86.javax.management.openmbean.CompositeData;
+import j86.sun.management.MemoryUsageCompositeData;
 
 /**
  * A <tt>MemoryUsage</tt> object represents a snapshot of memory usage.
@@ -259,19 +259,19 @@ public class MemoryUsage {
      * </tr>
      * <tr>
      *   <td>init</td>
-     *   <td><tt>java.lang.Long</tt></td>
+     *   <td><tt>j86.java.lang.Long</tt></td>
      * </tr>
      * <tr>
      *   <td>used</td>
-     *   <td><tt>java.lang.Long</tt></td>
+     *   <td><tt>j86.java.lang.Long</tt></td>
      * </tr>
      * <tr>
      *   <td>committed</td>
-     *   <td><tt>java.lang.Long</tt></td>
+     *   <td><tt>j86.java.lang.Long</tt></td>
      * </tr>
      * <tr>
      *   <td>max</td>
-     *   <td><tt>java.lang.Long</tt></td>
+     *   <td><tt>j86.java.lang.Long</tt></td>
      * </tr>
      * </table>
      * </blockquote>

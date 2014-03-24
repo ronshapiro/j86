@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.net;
+package j86.java.net;
 
 class InetAddressContainer {
     InetAddress addr;

@@ -23,28 +23,28 @@
  * questions.
  */
 
-package sun.nio.ch;
+package j86.j86.j86.sun.nio.ch;
 
-import java.io.*;
-import java.lang.ref.*;
-import java.net.*;
-import java.nio.*;
-import java.nio.channels.*;
-import java.security.AccessController;
-import java.security.PrivilegedExceptionAction;
-import java.util.*;
+import j86.java.io.*;
+import j86.j86.java.lang.ref.*;
+import j86.java.net.*;
+import j86.java.nio.*;
+import j86.j86.java.nio.channels.*;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedExceptionAction;
+import j86.java.util.*;
 
 
 // Make a socket channel look like a socket.
 //
-// The only aspects of java.net.Socket-hood that we don't attempt to emulate
+// The only aspects of j86.java.net.Socket-hood that we don't attempt to emulate
 // here are the interrupted-I/O exceptions (which our Solaris implementations
 // attempt to support) and the sending of urgent data.  Otherwise an adapted
-// socket should look enough like a real java.net.Socket to fool most of the
+// socket should look enough like a real j86.java.net.Socket to fool most of the
 // developers most of the time, right down to the exception message strings.
 //
 // The methods in this class are defined in exactly the same order as in
-// java.net.Socket so as to simplify tracking future changes to that class.
+// j86.java.net.Socket so as to simplify tracking future changes to that class.
 //
 
 public class SocketAdaptor
@@ -236,7 +236,7 @@ public class SocketAdaptor
                             return new SocketInputStream();
                         }
                     });
-            } catch (java.security.PrivilegedActionException e) {
+            } catch (j86.java.security.PrivilegedActionException e) {
                 throw (IOException)e.getException();
             }
         }
@@ -258,7 +258,7 @@ public class SocketAdaptor
                         return Channels.newOutputStream(sc);
                     }
                 });
-        } catch (java.security.PrivilegedActionException e) {
+        } catch (j86.java.security.PrivilegedActionException e) {
             throw (IOException)e.getException();
         }
         return os;

@@ -33,9 +33,9 @@
  * patents. This notice and attribution to IBM may not be removed.
  */
 
-package java.text;
+package j86.java.text;
 
-import sun.text.bidi.BidiBase;
+import j86.j86.sun.text.bidi.BidiBase;
 
 /**
  * This class implements the Unicode Bidirectional Algorithm.
@@ -121,9 +121,9 @@ public final class Bidi {
      *
      * @param paragraph a paragraph of text with optional character and paragraph attribute information
      *
-     * @see java.awt.font.TextAttribute#BIDI_EMBEDDING
-     * @see java.awt.font.TextAttribute#NUMERIC_SHAPING
-     * @see java.awt.font.TextAttribute#RUN_DIRECTION
+     * @see j86.j86.java.awt.font.TextAttribute#BIDI_EMBEDDING
+     * @see j86.j86.java.awt.font.TextAttribute#NUMERIC_SHAPING
+     * @see j86.j86.java.awt.font.TextAttribute#RUN_DIRECTION
      */
     public Bidi(AttributedCharacterIterator paragraph) {
         if (paragraph == null) {

@@ -22,10 +22,10 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.rmi.server;
+package j86.sun.rmi.server;
 
-import java.rmi.Remote;
-import java.rmi.server.RemoteCall;
+import j86.java.rmi.Remote;
+import j86.j86.java.rmi.server.RemoteCall;
 
 /**
  * The Dispatcher interface allows the transport to make
@@ -46,5 +46,5 @@ public interface Dispatcher {
      * return result
      */
     void dispatch(Remote obj, RemoteCall call)
-        throws java.io.IOException;
+        throws j86.java.io.IOException;
 }

@@ -23,12 +23,12 @@
  * questions.
  */
 
-package javax.net.ssl;
+package j86.j86.javax.net.ssl;
 
-import java.net.URL;
-import java.net.HttpURLConnection;
-import java.security.Principal;
-import java.security.cert.X509Certificate;
+import j86.java.net.URL;
+import j86.java.net.HttpURLConnection;
+import j86.java.security.Principal;
+import j86.j86.java.security.cert.X509Certificate;
 
 /**
  * <code>HttpsURLConnection</code> extends <code>HttpURLConnection</code>
@@ -95,7 +95,7 @@ class HttpsURLConnection extends HttpURLConnection
      *          the connection has been established.
      * @see #getLocalPrincipal()
      */
-    public abstract java.security.cert.Certificate [] getLocalCertificates();
+    public abstract j86.j86.java.security.cert.Certificate [] getLocalCertificates();
 
     /**
      * Returns the server's certificate chain which was established
@@ -113,7 +113,7 @@ class HttpsURLConnection extends HttpURLConnection
      *          the connection has been established.
      * @see #getPeerPrincipal()
      */
-    public abstract java.security.cert.Certificate [] getServerCertificates()
+    public abstract j86.j86.java.security.cert.Certificate [] getServerCertificates()
             throws SSLPeerUnverifiedException;
 
     /**
@@ -142,7 +142,7 @@ class HttpsURLConnection extends HttpURLConnection
     public Principal getPeerPrincipal()
             throws SSLPeerUnverifiedException {
 
-        java.security.cert.Certificate[] certs = getServerCertificates();
+        j86.j86.java.security.cert.Certificate[] certs = getServerCertificates();
         return ((X509Certificate)certs[0]).getSubjectX500Principal();
     }
 
@@ -169,7 +169,7 @@ class HttpsURLConnection extends HttpURLConnection
      */
     public Principal getLocalPrincipal() {
 
-        java.security.cert.Certificate[] certs = getLocalCertificates();
+        j86.j86.java.security.cert.Certificate[] certs = getLocalCertificates();
         if (certs != null) {
             return ((X509Certificate)certs[0]).getSubjectX500Principal();
         } else {

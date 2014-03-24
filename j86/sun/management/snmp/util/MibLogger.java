@@ -22,10 +22,10 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.management.snmp.util;
+package j86.j86.j86.sun.management.snmp.util;
 
-import java.util.logging.Logger;
-import java.util.logging.Level;
+import j86.j86.java.util.logging.Logger;
+import j86.j86.java.util.logging.Level;
 
 public class MibLogger {
 
@@ -45,11 +45,11 @@ public class MibLogger {
     }
 
     static String getLoggerName(Class<?> clazz) {
-        if (clazz == null) return "sun.management.snmp.jvminstr";
+        if (clazz == null) return "j86.j86.j86.sun.management.snmp.jvminstr";
         Package p = clazz.getPackage();
-        if (p == null) return "sun.management.snmp.jvminstr";
+        if (p == null) return "j86.j86.j86.sun.management.snmp.jvminstr";
         final String pname = p.getName();
-        if (pname == null) return "sun.management.snmp.jvminstr";
+        if (pname == null) return "j86.j86.j86.sun.management.snmp.jvminstr";
         else return pname;
     }
 
@@ -63,7 +63,7 @@ public class MibLogger {
     }
 
     public MibLogger(String className) {
-        this("sun.management.snmp.jvminstr",className);
+        this("j86.j86.j86.sun.management.snmp.jvminstr",className);
     }
 
     public MibLogger(String loggerName, String className) {

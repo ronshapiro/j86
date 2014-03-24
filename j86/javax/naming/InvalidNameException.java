@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.naming;
+package j86.javax.naming;
 
 /**
   * This exception indicates that the name being specified does
@@ -38,7 +38,7 @@ package javax.naming;
   * @author Scott Seligman
   *
   * @see Context
-  * @see javax.naming.directory.DirContext
+  * @see j86.j86.javax.naming.directory.DirContext
   * @see CompositeName
   * @see CompoundName
   * @see NameParser
@@ -51,7 +51,7 @@ public class InvalidNameException extends NamingException {
       * explanation of the problem.
       * All other fields are initialized to null.
       * @param explanation      A possibly null message explaining the problem.
-      * @see java.lang.Throwable#getMessage
+      * @see j86.java.lang.Throwable#getMessage
       */
     public InvalidNameException(String explanation) {
         super(explanation);

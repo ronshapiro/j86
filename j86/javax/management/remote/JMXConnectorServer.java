@@ -24,19 +24,19 @@
  */
 
 
-package javax.management.remote;
+package j86.j86.javax.management.remote;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
+import j86.java.io.IOException;
+import j86.java.util.ArrayList;
+import j86.java.util.List;
+import j86.java.util.Map;
 
-import javax.management.MBeanNotificationInfo;
-import javax.management.MBeanRegistration;
-import javax.management.MBeanServer;
-import javax.management.Notification;
-import javax.management.NotificationBroadcasterSupport;
-import javax.management.ObjectName;
+import j86.javax.management.MBeanNotificationInfo;
+import j86.javax.management.MBeanRegistration;
+import j86.javax.management.MBeanServer;
+import j86.javax.management.Notification;
+import j86.javax.management.NotificationBroadcasterSupport;
+import j86.javax.management.ObjectName;
 
 /**
  * <p>Superclass of every connector server.  A connector server is

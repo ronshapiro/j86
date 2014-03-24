@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.tools.jstat;
+package j86.sun.tools.jstat;
 
-import java.util.*;
-import java.net.*;
-import java.io.*;
+import j86.java.util.*;
+import j86.java.net.*;
+import j86.java.io.*;
 
 /**
  * A class for finding a specific special option in the jstat_options file.

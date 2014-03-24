@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.awt;
+package j86.sun.awt;
 
 /**
  * Classes implementing this interface have public getWindow method,

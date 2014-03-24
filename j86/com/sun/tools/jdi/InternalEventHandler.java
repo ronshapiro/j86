@@ -23,11 +23,11 @@
  * questions.
  */
 
-package com.sun.tools.jdi;
+package j86.com.sun.tools.jdi;
 
-import com.sun.jdi.*;
-import com.sun.jdi.event.*;
-import java.util.*;
+import j86.com.sun.jdi.*;
+import j86.j86.com.sun.jdi.event.*;
+import j86.java.util.*;
 
 public class InternalEventHandler implements Runnable
 {

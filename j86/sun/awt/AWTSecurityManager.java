@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.awt;
+package j86.sun.awt;
 
 /**
   * The AWTSecurityManager class provides the ability to secondarily
@@ -54,8 +54,8 @@ public class AWTSecurityManager extends SecurityManager {
       * calling context.
       *
       * @return  the AppContext corresponding to the current context.
-      * @see     sun.awt.AppContext
-      * @see     java.lang.SecurityManager
+      * @see     j86.sun.awt.AppContext
+      * @see     j86.java.lang.SecurityManager
       * @since   JDK1.2.1
       */
     public AppContext getAppContext() {

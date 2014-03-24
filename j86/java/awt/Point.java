@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.awt;
+package j86.java.awt;
 
-import java.awt.geom.Point2D;
-import java.beans.Transient;
+import j86.j86.java.awt.geom.Point2D;
+import j86.java.beans.Transient;
 
 /**
  * A point representing a location in {@code (x,y)} coordinate space,
@@ -35,7 +35,7 @@ import java.beans.Transient;
  * @author      Sami Shaio
  * @since       1.0
  */
-public class Point extends Point2D implements java.io.Serializable {
+public class Point extends Point2D implements j86.java.io.Serializable {
     /**
      * The X coordinate of this <code>Point</code>.
      * If no X coordinate is set it will default to 0.
@@ -115,9 +115,9 @@ public class Point extends Point2D implements java.io.Serializable {
      * This method is included for completeness, to parallel the
      * <code>getLocation</code> method of <code>Component</code>.
      * @return      a copy of this point, at the same location
-     * @see         java.awt.Component#getLocation
-     * @see         java.awt.Point#setLocation(java.awt.Point)
-     * @see         java.awt.Point#setLocation(int, int)
+     * @see         j86.java.awt.Component#getLocation
+     * @see         j86.java.awt.Point#setLocation(java.awt.Point)
+     * @see         j86.java.awt.Point#setLocation(int, int)
      * @since       1.1
      */
     @Transient
@@ -130,8 +130,8 @@ public class Point extends Point2D implements java.io.Serializable {
      * This method is included for completeness, to parallel the
      * <code>setLocation</code> method of <code>Component</code>.
      * @param       p  a point, the new location for this point
-     * @see         java.awt.Component#setLocation(java.awt.Point)
-     * @see         java.awt.Point#getLocation
+     * @see         j86.java.awt.Component#setLocation(java.awt.Point)
+     * @see         j86.java.awt.Point#getLocation
      * @since       1.1
      */
     public void setLocation(Point p) {
@@ -146,9 +146,9 @@ public class Point extends Point2D implements java.io.Serializable {
      * Its behavior is identical with <code>move(int,&nbsp;int)</code>.
      * @param       x the X coordinate of the new location
      * @param       y the Y coordinate of the new location
-     * @see         java.awt.Component#setLocation(int, int)
-     * @see         java.awt.Point#getLocation
-     * @see         java.awt.Point#move(int, int)
+     * @see         j86.java.awt.Component#setLocation(int, int)
+     * @see         j86.java.awt.Point#getLocation
+     * @see         j86.java.awt.Point#move(int, int)
      * @since       1.1
      */
     public void setLocation(int x, int y) {
@@ -178,7 +178,7 @@ public class Point extends Point2D implements java.io.Serializable {
      * is identical with <code>setLocation(int,&nbsp;int)</code>.
      * @param       x the X coordinate of the new location
      * @param       y the Y coordinate of the new location
-     * @see         java.awt.Component#setLocation(int, int)
+     * @see         j86.java.awt.Component#setLocation(int, int)
      */
     public void move(int x, int y) {
         this.x = x;

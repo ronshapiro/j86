@@ -23,26 +23,26 @@
  * questions.
  */
 
-package com.sun.java.util.jar.pack;
+package j86.com.sun.j86.j86.java.util.jar.pack;
 
-import java.io.BufferedInputStream;
-import java.io.BufferedOutputStream;
-import java.io.File;
-import java.io.FilterOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.util.Collections;
-import java.util.Date;
-import java.util.jar.JarEntry;
-import java.util.jar.JarFile;
-import java.util.jar.JarInputStream;
-import java.util.jar.JarOutputStream;
-import java.util.zip.ZipEntry;
-import sun.util.logging.PlatformLogger;
+import j86.java.io.BufferedInputStream;
+import j86.java.io.BufferedOutputStream;
+import j86.java.io.File;
+import j86.java.io.FilterOutputStream;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.io.OutputStream;
+import j86.java.util.Collections;
+import j86.java.util.Date;
+import j86.j86.java.util.jar.JarEntry;
+import j86.j86.java.util.jar.JarFile;
+import j86.j86.java.util.jar.JarInputStream;
+import j86.j86.java.util.jar.JarOutputStream;
+import j86.j86.java.util.zip.ZipEntry;
+import j86.j86.sun.util.logging.PlatformLogger;
 
 class Utils {
-    static final String COM_PREFIX = "com.sun.java.util.jar.pack.";
+    static final String COM_PREFIX = "j86.com.sun.j86.j86.java.util.jar.pack.";
     static final String METAINF    = "META-INF";
 
     /*
@@ -204,7 +204,7 @@ class Utils {
     }
 
     static final Pack200Logger log
-        = new Pack200Logger("java.util.jar.Pack200");
+        = new Pack200Logger("j86.j86.java.util.jar.Pack200");
 
     // Returns the Max Version String of this implementation
     static String getVersionString() {

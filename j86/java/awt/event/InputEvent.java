@@ -23,17 +23,17 @@
  * questions.
  */
 
-package java.awt.event;
+package j86.j86.java.awt.event;
 
-import java.awt.Event;
-import java.awt.Component;
-import java.awt.GraphicsEnvironment;
-import java.awt.Toolkit;
-import java.util.Arrays;
+import j86.java.awt.Event;
+import j86.java.awt.Component;
+import j86.java.awt.GraphicsEnvironment;
+import j86.java.awt.Toolkit;
+import j86.java.util.Arrays;
 
-import sun.awt.AWTAccessor;
-import sun.util.logging.PlatformLogger;
-import sun.security.util.SecurityConstants;
+import j86.sun.awt.AWTAccessor;
+import j86.j86.sun.util.logging.PlatformLogger;
+import j86.sun.security.util.SecurityConstants;
 
 /**
  * The root event class for all component-level input events.
@@ -58,7 +58,7 @@ import sun.security.util.SecurityConstants;
  */
 public abstract class InputEvent extends ComponentEvent {
 
-    private static final PlatformLogger logger = PlatformLogger.getLogger("java.awt.event.InputEvent");
+    private static final PlatformLogger logger = PlatformLogger.getLogger("j86.j86.java.awt.event.InputEvent");
 
     /**
      * The Shift key modifier constant.
@@ -198,8 +198,8 @@ public abstract class InputEvent extends ComponentEvent {
      * A method to obtain a mask for any existing mouse button.
      * The returned mask may be used for different purposes. Following are some of them:
      * <ul>
-     * <li> {@link java.awt.Robot#mousePress(int) mousePress(buttons)} and
-     *      {@link java.awt.Robot#mouseRelease(int) mouseRelease(buttons)}
+     * <li> {@link j86.java.awt.Robot#mousePress(int) mousePress(buttons)} and
+     *      {@link j86.java.awt.Robot#mouseRelease(int) mouseRelease(buttons)}
      * <li> as a {@code modifiers} parameter when creating a new {@link MouseEvent} instance
      * <li> to check {@link MouseEvent#getModifiersEx() modifiersEx} of existing {@code MouseEvent}
      * </ul>
@@ -213,7 +213,7 @@ public abstract class InputEvent extends ComponentEvent {
      * int button = InputEvent.getMaskForButton(MouseEvent.BUTTON1);
      * </pre>
      * because {@link MouseEvent#BUTTON1 MouseEvent.BUTTON1} equals to 1.
-     * If a mouse has three enabled buttons(see {@link java.awt.MouseInfo#getNumberOfButtons() MouseInfo.getNumberOfButtons()})
+     * If a mouse has three enabled buttons(see {@link j86.java.awt.MouseInfo#getNumberOfButtons() MouseInfo.getNumberOfButtons()})
      * then the values from the left column passed into the method will return
      * corresponding values from the right column:
      * <PRE>
@@ -232,12 +232,12 @@ public abstract class InputEvent extends ComponentEvent {
      * implementation dependent and may vary.
      * This limit is defined by the relevant number
      * of buttons that may hypothetically exist on the mouse but it is greater than the
-     * {@link java.awt.MouseInfo#getNumberOfButtons() MouseInfo.getNumberOfButtons()}.
+     * {@link j86.java.awt.MouseInfo#getNumberOfButtons() MouseInfo.getNumberOfButtons()}.
      * <p>
      * @throws IllegalArgumentException if {@code button} is less than zero or greater than the number
      *         of button masks reserved for buttons
      * @since 7.0
-     * @see java.awt.MouseInfo#getNumberOfButtons()
+     * @see j86.java.awt.MouseInfo#getNumberOfButtons()
      * @see Toolkit#areExtraMouseButtonsEnabled()
      * @see MouseEvent#getModifiers()
      * @see MouseEvent#getModifiersEx()
@@ -275,8 +275,8 @@ public abstract class InputEvent extends ComponentEvent {
      * @serial
      * @see #getModifiers()
      * @see #getModifiersEx()
-     * @see java.awt.event.KeyEvent
-     * @see java.awt.event.MouseEvent
+     * @see j86.j86.java.awt.event.KeyEvent
+     * @see j86.j86.java.awt.event.MouseEvent
      */
     int modifiers;
 

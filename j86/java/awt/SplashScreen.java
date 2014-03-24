@@ -22,15 +22,15 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.awt;
+package j86.java.awt;
 
-import java.io.IOException;
-import java.awt.image.*;
-import java.net.URL;
-import java.net.URLConnection;
-import java.io.File;
-import sun.util.logging.PlatformLogger;
-import sun.awt.image.SunWritableRaster;
+import j86.java.io.IOException;
+import j86.j86.j86.java.awt.image.*;
+import j86.java.net.URL;
+import j86.java.net.URLConnection;
+import j86.java.io.File;
+import j86.j86.sun.util.logging.PlatformLogger;
+import j86.j86.j86.sun.awt.image.SunWritableRaster;
 
 /**
  * The splash screen can be displayed at application startup, before the
@@ -118,8 +118,8 @@ public final class SplashScreen {
             }
             // SplashScreen class is now a singleton
             if (!wasClosed && theInstance == null) {
-                java.security.AccessController.doPrivileged(
-                    new java.security.PrivilegedAction<Void>() {
+                j86.java.security.AccessController.doPrivileged(
+                    new j86.java.security.PrivilegedAction<Void>() {
                         public Void run() {
                             System.loadLibrary("splashscreen");
                             return null;
@@ -154,7 +154,7 @@ public final class SplashScreen {
         URLConnection connection = imageURL.openConnection();
         connection.connect();
         int length = connection.getContentLength();
-        java.io.InputStream stream = connection.getInputStream();
+        j86.java.io.InputStream stream = connection.getInputStream();
         byte[] buf = new byte[length];
         int off = 0;
         while(true) {
@@ -218,7 +218,7 @@ public final class SplashScreen {
                         }
                     }
                 }
-                catch(java.net.MalformedURLException e) {
+                catch(j86.java.net.MalformedURLException e) {
                     if (log.isLoggable(PlatformLogger.Level.FINE)) {
                         log.fine("MalformedURLException caught in the getImageURL() method", e);
                     }
@@ -391,7 +391,7 @@ public final class SplashScreen {
      */
     private static SplashScreen theInstance = null;
 
-    private static final PlatformLogger log = PlatformLogger.getLogger("java.awt.SplashScreen");
+    private static final PlatformLogger log = PlatformLogger.getLogger("j86.java.awt.SplashScreen");
 
     private native static void _update(long splashPtr, int[] data, int x, int y, int width, int height, int scanlineStride);
     private native static boolean _isVisible(long splashPtr);

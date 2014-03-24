@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.security.provider;
+package j86.sun.security.provider;
 
-import java.math.BigInteger;
-import java.security.KeyRep;
-import java.security.InvalidKeyException;
+import j86.java.math.BigInteger;
+import j86.java.security.KeyRep;
+import j86.java.security.InvalidKeyException;
 
 /**
  * An X.509 public key for the Digital Signature Algorithm.
@@ -70,7 +70,7 @@ public final class DSAPublicKeyImpl extends DSAPublicKey {
         super(encoded);
     }
 
-    protected Object writeReplace() throws java.io.ObjectStreamException {
+    protected Object writeReplace() throws j86.java.io.ObjectStreamException {
         return new KeyRep(KeyRep.Type.PUBLIC,
                         getAlgorithm(),
                         getFormat(),

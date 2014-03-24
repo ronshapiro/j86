@@ -41,9 +41,9 @@
  *
  */
 
-package sun.text.resources.iw;
+package j86.j86.j86.sun.text.resources.iw;
 
-import java.util.ListResourceBundle;
+import j86.java.util.ListResourceBundle;
 
 public class CollationData_iw extends ListResourceBundle {
 

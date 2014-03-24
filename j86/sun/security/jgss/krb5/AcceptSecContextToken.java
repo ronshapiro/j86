@@ -23,15 +23,15 @@
  * questions.
  */
 
-package sun.security.jgss.krb5;
+package j86.j86.sun.security.jgss.krb5;
 
-import org.ietf.jgss.*;
-import java.io.InputStream;
-import java.io.IOException;
-import java.security.AccessController;
+import j86.org.ietf.jgss.*;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
+import j86.java.security.AccessController;
 
-import sun.security.action.GetBooleanAction;
-import sun.security.krb5.*;
+import j86.sun.security.action.GetBooleanAction;
+import j86.sun.security.krb5.*;
 
 class AcceptSecContextToken extends InitialToken {
 
@@ -46,7 +46,7 @@ class AcceptSecContextToken extends InitialToken {
         throws KrbException, IOException, GSSException {
 
         boolean useSubkey = AccessController.doPrivileged(
-                new GetBooleanAction("sun.security.krb5.acceptor.subkey"));
+                new GetBooleanAction("j86.sun.security.krb5.acceptor.subkey"));
 
         boolean useSequenceNumber = true;
 
@@ -81,7 +81,7 @@ class AcceptSecContextToken extends InitialToken {
                                    "AP_REP token id does not match!");
 
         byte[] apRepBytes =
-            new sun.security.util.DerValue(is).toByteArray();
+            new j86.sun.security.util.DerValue(is).toByteArray();
 
         KrbApRep apRep = new KrbApRep(apRepBytes, serviceCreds, apReq);
 

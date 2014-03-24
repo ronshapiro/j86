@@ -23,31 +23,31 @@
  * questions.
  */
 
-package sun.util.locale.provider;
+package j86.j86.j86.sun.util.locale.provider;
 
-import java.io.File;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.text.spi.BreakIteratorProvider;
-import java.text.spi.CollatorProvider;
-import java.text.spi.DateFormatProvider;
-import java.text.spi.DateFormatSymbolsProvider;
-import java.text.spi.DecimalFormatSymbolsProvider;
-import java.text.spi.NumberFormatProvider;
-import java.util.HashSet;
-import java.util.Locale;
-import java.util.Set;
-import java.util.StringTokenizer;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentMap;
-import java.util.spi.CalendarDataProvider;
-import java.util.spi.CalendarNameProvider;
-import java.util.spi.CurrencyNameProvider;
-import java.util.spi.LocaleNameProvider;
-import java.util.spi.LocaleServiceProvider;
-import java.util.spi.TimeZoneNameProvider;
-import sun.util.resources.LocaleData;
-import sun.util.spi.CalendarProvider;
+import j86.java.io.File;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.j86.java.text.spi.BreakIteratorProvider;
+import j86.j86.java.text.spi.CollatorProvider;
+import j86.j86.java.text.spi.DateFormatProvider;
+import j86.j86.java.text.spi.DateFormatSymbolsProvider;
+import j86.j86.java.text.spi.DecimalFormatSymbolsProvider;
+import j86.j86.java.text.spi.NumberFormatProvider;
+import j86.java.util.HashSet;
+import j86.java.util.Locale;
+import j86.java.util.Set;
+import j86.java.util.StringTokenizer;
+import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.j86.java.util.concurrent.ConcurrentMap;
+import j86.j86.java.util.spi.CalendarDataProvider;
+import j86.j86.java.util.spi.CalendarNameProvider;
+import j86.j86.java.util.spi.CurrencyNameProvider;
+import j86.j86.java.util.spi.LocaleNameProvider;
+import j86.j86.java.util.spi.LocaleServiceProvider;
+import j86.j86.java.util.spi.TimeZoneNameProvider;
+import j86.j86.sun.util.resources.LocaleData;
+import j86.j86.sun.util.spi.CalendarProvider;
 
 /**
  * LocaleProviderAdapter implementation for the legacy JRE locale data.
@@ -128,7 +128,7 @@ public class JRELocaleProviderAdapter extends LocaleProviderAdapter implements R
     private volatile CalendarProvider calendarProvider = null;
 
     /*
-     * Getter methods for java.text.spi.* providers
+     * Getter methods for j86.j86.java.text.spi.* providers
      */
     @Override
     public BreakIteratorProvider getBreakIteratorProvider() {
@@ -214,7 +214,7 @@ public class JRELocaleProviderAdapter extends LocaleProviderAdapter implements R
     }
 
     /**
-     * Getter methods for java.util.spi.* providers
+     * Getter methods for j86.j86.java.util.spi.* providers
      */
     @Override
     public CurrencyNameProvider getCurrencyNameProvider() {
@@ -289,7 +289,7 @@ public class JRELocaleProviderAdapter extends LocaleProviderAdapter implements R
     }
 
     /**
-     * Getter methods for sun.util.spi.* providers
+     * Getter methods for j86.j86.sun.util.spi.* providers
      */
     @Override
     public CalendarProvider getCalendarProvider() {
@@ -333,7 +333,7 @@ public class JRELocaleProviderAdapter extends LocaleProviderAdapter implements R
 
     /**
      * Returns a list of the installed locales. Currently, this simply returns
-     * the list of locales for which a sun.text.resources.FormatData bundle
+     * the list of locales for which a j86.j86.sun.text.resources.FormatData bundle
      * exists. This bundle family happens to be the one with the broadest
      * locale coverage in the JRE.
      */
@@ -440,8 +440,8 @@ public class JRELocaleProviderAdapter extends LocaleProviderAdapter implements R
                 if (isNonENSupported == null) {
                     final String sep = File.separator;
                     String localeDataJar =
-                            java.security.AccessController.doPrivileged(
-                            new sun.security.action.GetPropertyAction("java.home"))
+                            j86.java.security.AccessController.doPrivileged(
+                            new j86.sun.security.action.GetPropertyAction("java.home"))
                             + sep + "lib" + sep + "ext" + sep + LOCALE_DATA_JAR_NAME;
 
                     /*

@@ -23,13 +23,13 @@
  * questions.
  */
 
-package java.nio.channels;
+package j86.j86.java.nio.channels;
 
-import java.nio.channels.spi.AsynchronousChannelProvider;
-import java.io.IOException;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.ThreadFactory;
-import java.util.concurrent.TimeUnit;
+import j86.j86.j86.java.nio.channels.spi.AsynchronousChannelProvider;
+import j86.java.io.IOException;
+import j86.j86.java.util.concurrent.ExecutorService;
+import j86.j86.java.util.concurrent.ThreadFactory;
+import j86.j86.java.util.concurrent.TimeUnit;
 
 /**
  * A grouping of asynchronous channels for the purpose of resource sharing.
@@ -56,7 +56,7 @@ import java.util.concurrent.TimeUnit;
  * construction time are bound to the default group. The default group has an
  * associated thread pool that creates new threads as needed. The default group
  * may be configured by means of system properties defined in the table below.
- * Where the {@link java.util.concurrent.ThreadFactory ThreadFactory} for the
+ * Where the {@link j86.j86.java.util.concurrent.ThreadFactory ThreadFactory} for the
  * default group is not configured then the pooled threads of the default group
  * are {@link Thread#isDaemon daemon} threads.
  *
@@ -66,18 +66,18 @@ import java.util.concurrent.TimeUnit;
  *     <th>Description</th>
  *   </tr>
  *   <tr>
- *     <td> {@code java.nio.channels.DefaultThreadPool.threadFactory} </td>
+ *     <td> {@code j86.j86.java.nio.channels.DefaultThreadPool.threadFactory} </td>
  *     <td> The value of this property is taken to be the fully-qualified name
- *     of a concrete {@link java.util.concurrent.ThreadFactory ThreadFactory}
+ *     of a concrete {@link j86.j86.java.util.concurrent.ThreadFactory ThreadFactory}
  *     class. The class is loaded using the system class loader and instantiated.
- *     The factory's {@link java.util.concurrent.ThreadFactory#newThread
+ *     The factory's {@link j86.j86.java.util.concurrent.ThreadFactory#newThread
  *     newThread} method is invoked to create each thread for the default
  *     group's thread pool. If the process to load and instantiate the value
  *     of the property fails then an unspecified error is thrown during the
  *     construction of the default group. </td>
  *   </tr>
  *   <tr>
- *     <td> {@code java.nio.channels.DefaultThreadPool.initialSize} </td>
+ *     <td> {@code j86.j86.java.nio.channels.DefaultThreadPool.initialSize} </td>
  *     <td> The value of the {@code initialSize} parameter for the default
  *     group (see {@link #withCachedThreadPool withCachedThreadPool}).
  *     The value of the property is taken to be the {@code String}
@@ -223,7 +223,7 @@ public abstract class AsynchronousChannelGroup {
      * @throws  IOException
      *          If an I/O error occurs
      *
-     * @see java.util.concurrent.Executors#newCachedThreadPool
+     * @see j86.j86.java.util.concurrent.Executors#newCachedThreadPool
      */
     public static AsynchronousChannelGroup withCachedThreadPool(ExecutorService executor,
                                                                 int initialSize)

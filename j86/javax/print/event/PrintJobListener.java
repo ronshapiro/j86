@@ -23,11 +23,11 @@
  * questions.
  */
 
-package javax.print.event;
+package j86.j86.javax.print.event;
 
 /**
   * Implementations of this listener interface should be attached to a
-  * {@link javax.print.DocPrintJob DocPrintJob} to monitor the status of
+  * {@link j86.javax.print.DocPrintJob DocPrintJob} to monitor the status of
   * the printer job.
   * These callback methods may be invoked on the thread processing the
   * print job, or a service created notification thread. In either case

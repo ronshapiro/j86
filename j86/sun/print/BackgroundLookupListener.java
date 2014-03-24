@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.print;
+package j86.sun.print;
 
-import javax.print.PrintService;
+import j86.javax.print.PrintService;
 
 /**
  * Implement this to be called back when a complete list of services is

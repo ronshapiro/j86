@@ -56,9 +56,9 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-package jdk.internal.org.objectweb.asm.tree;
+package j86.j86.jdk.internal.org.objectweb.asm.tree;
 
-import jdk.internal.org.objectweb.asm.ClassVisitor;
+import j86.jdk.internal.org.objectweb.asm.ClassVisitor;
 
 /**
  * A node that represents an inner class.
@@ -69,13 +69,13 @@ public class InnerClassNode {
 
     /**
      * The internal name of an inner class (see
-     * {@link jdk.internal.org.objectweb.asm.Type#getInternalName() getInternalName}).
+     * {@link j86.jdk.internal.org.objectweb.asm.Type#getInternalName() getInternalName}).
      */
     public String name;
 
     /**
      * The internal name of the class to which the inner class belongs (see
-     * {@link jdk.internal.org.objectweb.asm.Type#getInternalName() getInternalName}). May be
+     * {@link j86.jdk.internal.org.objectweb.asm.Type#getInternalName() getInternalName}). May be
      * <tt>null</tt>.
      */
     public String outerName;
@@ -97,11 +97,11 @@ public class InnerClassNode {
      *
      * @param name
      *            the internal name of an inner class (see
-     *            {@link jdk.internal.org.objectweb.asm.Type#getInternalName()
+     *            {@link j86.jdk.internal.org.objectweb.asm.Type#getInternalName()
      *            getInternalName}).
      * @param outerName
      *            the internal name of the class to which the inner class
-     *            belongs (see {@link jdk.internal.org.objectweb.asm.Type#getInternalName()
+     *            belongs (see {@link j86.jdk.internal.org.objectweb.asm.Type#getInternalName()
      *            getInternalName}). May be <tt>null</tt>.
      * @param innerName
      *            the (simple) name of the inner class inside its enclosing

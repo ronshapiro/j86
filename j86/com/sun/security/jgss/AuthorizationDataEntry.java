@@ -23,7 +23,7 @@
  * questions.
  */
 
-package com.sun.security.jgss;
+package com.j86.sun.security.jgss;
 
 /**
  * Kerberos 5 AuthorizationData entry.
@@ -64,6 +64,6 @@ public final class AuthorizationDataEntry {
     public String toString() {
         return "AuthorizationDataEntry: type="+type+", data=" +
                 data.length + " bytes:\n" +
-                new sun.misc.HexDumpEncoder().encodeBuffer(data);
+                new j86.sun.misc.HexDumpEncoder().encodeBuffer(data);
     }
 }

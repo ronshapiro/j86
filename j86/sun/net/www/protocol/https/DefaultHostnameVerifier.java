@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.net.www.protocol.https;
+package j86.j86.j86.j86.sun.net.www.protocol.https;
 
-import javax.net.ssl.HostnameVerifier;
-import javax.net.ssl.SSLSession;
+import j86.j86.javax.net.ssl.HostnameVerifier;
+import j86.j86.javax.net.ssl.SSLSession;
 
 /**
  * <code>HostnameVerifier</code> provides a callback mechanism so that

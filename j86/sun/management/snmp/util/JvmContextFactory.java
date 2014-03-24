@@ -22,16 +22,16 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.management.snmp.util;
+package j86.j86.j86.sun.management.snmp.util;
 
-import com.sun.jmx.mbeanserver.Util;
-import com.sun.jmx.snmp.agent.SnmpUserDataFactory;
-import com.sun.jmx.snmp.SnmpPdu;
-import com.sun.jmx.snmp.SnmpStatusException;
+import j86.com.sun.jmx.mbeanserver.Util;
+import j86.j86.com.sun.jmx.snmp.agent.SnmpUserDataFactory;
+import j86.com.sun.jmx.snmp.SnmpPdu;
+import j86.com.sun.jmx.snmp.SnmpStatusException;
 
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
+import j86.java.util.Collections;
+import j86.java.util.HashMap;
+import j86.java.util.Map;
 
 
 public class JvmContextFactory implements SnmpUserDataFactory {
@@ -46,7 +46,7 @@ public class JvmContextFactory implements SnmpUserDataFactory {
      * will never access this object directly - it will simply pass
      * it to the <code>SnmpMibAgent</code> within
      * <code>SnmpMibRequest</code> objects - from where it can be retrieved
-     * through the {@link com.sun.jmx.snmp.agent.SnmpMibRequest#getUserData() getUserData()} accessor.
+     * through the {@link j86.j86.com.sun.jmx.snmp.agent.SnmpMibRequest#getUserData() getUserData()} accessor.
      * <code>null</code> is considered to be a valid return value.
      *
      * This method is called just after the SnmpPduPacket has been
@@ -101,7 +101,7 @@ public class JvmContextFactory implements SnmpUserDataFactory {
 
     public static Map<Object, Object> getUserData() {
         final Object userData =
-            com.sun.jmx.snmp.ThreadContext.get("SnmpUserData");
+            j86.com.sun.jmx.snmp.ThreadContext.get("SnmpUserData");
 
         if (userData instanceof Map<?, ?>) return Util.cast(userData);
         else return null;

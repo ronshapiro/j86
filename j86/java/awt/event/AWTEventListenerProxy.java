@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.awt.event;
+package j86.j86.java.awt.event;
 
-import java.util.EventListenerProxy;
-import java.awt.AWTEvent;
+import j86.java.util.EventListenerProxy;
+import j86.java.awt.AWTEvent;
 
 /**
  * A class which extends the {@code EventListenerProxy}
@@ -39,8 +39,8 @@ import java.awt.AWTEvent;
  * can return a mixture of {@code AWTEventListener}
  * and {@code AWTEventListenerProxy} objects.
  *
- * @see java.awt.Toolkit
- * @see java.util.EventListenerProxy
+ * @see j86.java.awt.Toolkit
+ * @see j86.java.util.EventListenerProxy
  * @since 1.4
  */
 public class AWTEventListenerProxy

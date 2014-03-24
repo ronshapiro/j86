@@ -37,7 +37,7 @@
  * Taligent is a registered trademark of Taligent, Inc.
  */
 
-package java.awt.font;
+package j86.j86.java.awt.font;
 
 /**
  * The <code>GlyphJustificationInfo</code> class represents information

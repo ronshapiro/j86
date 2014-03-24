@@ -23,21 +23,21 @@
  * questions.
  */
 
-package sun.tools.jconsole.inspector;
+package j86.j86.sun.tools.jconsole.inspector;
 
-import java.awt.Component;
-import java.awt.event.ActionEvent;
-import java.awt.event.FocusAdapter;
-import java.awt.event.FocusEvent;
-import java.awt.event.FocusListener;
-import java.util.EventObject;
-import javax.swing.JMenuItem;
-import javax.swing.JTable;
-import javax.swing.JTextField;
-import javax.swing.event.CellEditorListener;
-import javax.swing.event.ChangeEvent;
-import javax.swing.event.EventListenerList;
-import javax.swing.table.TableCellEditor;
+import j86.java.awt.Component;
+import j86.j86.java.awt.event.ActionEvent;
+import j86.j86.java.awt.event.FocusAdapter;
+import j86.j86.java.awt.event.FocusEvent;
+import j86.j86.java.awt.event.FocusListener;
+import j86.java.util.EventObject;
+import j86.javax.swing.JMenuItem;
+import j86.javax.swing.JTable;
+import j86.javax.swing.JTextField;
+import j86.j86.javax.swing.event.CellEditorListener;
+import j86.j86.javax.swing.event.ChangeEvent;
+import j86.j86.javax.swing.event.EventListenerList;
+import j86.j86.javax.swing.table.TableCellEditor;
 
 @SuppressWarnings("serial")
 public class XTextFieldEditor extends XTextField implements TableCellEditor {

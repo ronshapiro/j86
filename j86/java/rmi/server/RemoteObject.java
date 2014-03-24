@@ -23,16 +23,16 @@
  * questions.
  */
 
-package java.rmi.server;
+package j86.j86.java.rmi.server;
 
-import java.rmi.Remote;
-import java.rmi.NoSuchObjectException;
-import java.lang.reflect.Proxy;
-import sun.rmi.server.Util;
+import j86.java.rmi.Remote;
+import j86.java.rmi.NoSuchObjectException;
+import j86.j86.j86.java.lang.reflect.Proxy;
+import j86.sun.rmi.server.Util;
 
 /**
  * The <code>RemoteObject</code> class implements the
- * <code>java.lang.Object</code> behavior for remote objects.
+ * <code>j86.java.lang.Object</code> behavior for remote objects.
  * <code>RemoteObject</code> provides the remote semantics of Object by
  * implementing methods for hashCode, equals, and toString.
  *
@@ -41,7 +41,7 @@ import sun.rmi.server.Util;
  * @author      Peter Jones
  * @since       JDK1.1
  */
-public abstract class RemoteObject implements Remote, java.io.Serializable {
+public abstract class RemoteObject implements Remote, j86.java.io.Serializable {
 
     /** The object's remote reference. */
     transient protected RemoteRef ref;
@@ -103,7 +103,7 @@ public abstract class RemoteObject implements Remote, java.io.Serializable {
         {
             return obj;
         } else {
-            return sun.rmi.transport.ObjectTable.getStub(obj);
+            return j86.sun.rmi.transport.ObjectTable.getStub(obj);
         }
     }
 
@@ -112,7 +112,7 @@ public abstract class RemoteObject implements Remote, java.io.Serializable {
      * that refer to the same remote object will have the same hash code
      * (in order to support remote objects as keys in hash tables).
      *
-     * @see             java.util.Hashtable
+     * @see             j86.java.util.Hashtable
      */
     public int hashCode() {
         return (ref == null) ? super.hashCode() : ref.remoteHashCode();
@@ -129,7 +129,7 @@ public abstract class RemoteObject implements Remote, java.io.Serializable {
      * as the argument.
      * @param   obj     the Object to compare with
      * @return  true if these Objects are equal; false otherwise.
-     * @see             java.util.Hashtable
+     * @see             j86.java.util.Hashtable
      */
     public boolean equals(Object obj) {
         if (obj instanceof RemoteObject) {
@@ -166,7 +166,7 @@ public abstract class RemoteObject implements Remote, java.io.Serializable {
      * <p>This method writes this object's serialized form for this class
      * as follows:
      *
-     * <p>The {@link RemoteRef#getRefClass(java.io.ObjectOutput) getRefClass}
+     * <p>The {@link RemoteRef#getRefClass(j86.java.io.ObjectOutput) getRefClass}
      * method is invoked on this object's <code>ref</code> field
      * to obtain its external ref type name.
      * If the value returned by <code>getRefClass</code> was
@@ -210,7 +210,7 @@ public abstract class RemoteObject implements Remote, java.io.Serializable {
      * If this object is an instance of
      * <code>RemoteStub</code> or <code>RemoteObjectInvocationHandler</code>
      * that was returned from any of
-     * the <code>java.rmi.activation.Activatable.exportObject</code> methods,
+     * the <code>j86.j86.java.rmi.activation.Activatable.exportObject</code> methods,
      * the external ref type name is <code>"ActivatableRef"</code>.
      *
      * If this object is an instance of
@@ -228,7 +228,7 @@ public abstract class RemoteObject implements Remote, java.io.Serializable {
      * when this object was deserialized.
      *
      * <p>If this object is an instance of
-     * <code>java.rmi.server.UnicastRemoteObject</code> that does not
+     * <code>j86.j86.java.rmi.server.UnicastRemoteObject</code> that does not
      * use custom socket factories,
      * the external ref type name is <code>"UnicastServerRef"</code>.
      *
@@ -248,17 +248,17 @@ public abstract class RemoteObject implements Remote, java.io.Serializable {
      * <ul>
      *
      * <li>the hostname of the referenced remote object,
-     * written by {@link java.io.ObjectOutput#writeUTF(String)}
+     * written by {@link j86.java.io.ObjectOutput#writeUTF(String)}
      *
      * <li>the port of the referenced remote object,
-     * written by {@link java.io.ObjectOutput#writeInt(int)}
+     * written by {@link j86.java.io.ObjectOutput#writeInt(int)}
      *
      * <li>the data written as a result of calling
-     * {link java.rmi.server.ObjID#write(java.io.ObjectOutput)}
+     * {link j86.j86.java.rmi.server.ObjID#write(j86.java.io.ObjectOutput)}
      * on the <code>ObjID</code> instance contained in the reference
      *
      * <li>the boolean value <code>false</code>,
-     * written by {@link java.io.ObjectOutput#writeBoolean(boolean)}
+     * written by {@link j86.java.io.ObjectOutput#writeBoolean(boolean)}
      *
      * </ul>
      *
@@ -269,20 +269,20 @@ public abstract class RemoteObject implements Remote, java.io.Serializable {
      *
      * <li>the byte value <code>0x00</code>
      * (indicating <code>null</code> client socket factory),
-     * written by {@link java.io.ObjectOutput#writeByte(int)}
+     * written by {@link j86.java.io.ObjectOutput#writeByte(int)}
      *
      * <li>the hostname of the referenced remote object,
-     * written by {@link java.io.ObjectOutput#writeUTF(String)}
+     * written by {@link j86.java.io.ObjectOutput#writeUTF(String)}
      *
      * <li>the port of the referenced remote object,
-     * written by {@link java.io.ObjectOutput#writeInt(int)}
+     * written by {@link j86.java.io.ObjectOutput#writeInt(int)}
      *
      * <li>the data written as a result of calling
-     * {link java.rmi.server.ObjID#write(java.io.ObjectOutput)}
+     * {link j86.j86.java.rmi.server.ObjID#write(j86.java.io.ObjectOutput)}
      * on the <code>ObjID</code> instance contained in the reference
      *
      * <li>the boolean value <code>false</code>,
-     * written by {@link java.io.ObjectOutput#writeBoolean(boolean)}
+     * written by {@link j86.java.io.ObjectOutput#writeBoolean(boolean)}
      *
      * </ul>
      *
@@ -293,25 +293,25 @@ public abstract class RemoteObject implements Remote, java.io.Serializable {
      *
      * <li>the byte value <code>0x01</code>
      * (indicating non-<code>null</code> client socket factory),
-     * written by {@link java.io.ObjectOutput#writeByte(int)}
+     * written by {@link j86.java.io.ObjectOutput#writeByte(int)}
      *
      * <li>the hostname of the referenced remote object,
-     * written by {@link java.io.ObjectOutput#writeUTF(String)}
+     * written by {@link j86.java.io.ObjectOutput#writeUTF(String)}
      *
      * <li>the port of the referenced remote object,
-     * written by {@link java.io.ObjectOutput#writeInt(int)}
+     * written by {@link j86.java.io.ObjectOutput#writeInt(int)}
      *
      * <li>a client socket factory (object of type
-     * <code>java.rmi.server.RMIClientSocketFactory</code>),
+     * <code>j86.j86.java.rmi.server.RMIClientSocketFactory</code>),
      * written by passing it to an invocation of
      * <code>writeObject</code> on the stream instance
      *
      * <li>the data written as a result of calling
-     * {link java.rmi.server.ObjID#write(java.io.ObjectOutput)}
+     * {link j86.j86.java.rmi.server.ObjID#write(j86.java.io.ObjectOutput)}
      * on the <code>ObjID</code> instance contained in the reference
      *
      * <li>the boolean value <code>false</code>,
-     * written by {@link java.io.ObjectOutput#writeBoolean(boolean)}
+     * written by {@link j86.java.io.ObjectOutput#writeBoolean(boolean)}
      *
      * </ul>
      *
@@ -321,12 +321,12 @@ public abstract class RemoteObject implements Remote, java.io.Serializable {
      * <ul>
      *
      * <li>an instance of
-     * <code>java.rmi.activation.ActivationID</code>,
+     * <code>j86.j86.java.rmi.activation.ActivationID</code>,
      * written by passing it to an invocation of
      * <code>writeObject</code> on the stream instance
      *
      * <li>a zero-length string (<code>""</code>),
-     * written by {@link java.io.ObjectOutput#writeUTF(String)}
+     * written by {@link j86.java.io.ObjectOutput#writeUTF(String)}
      *
      * </ul>
      *
@@ -336,13 +336,13 @@ public abstract class RemoteObject implements Remote, java.io.Serializable {
      * <ul>
      *
      * <li>an instance of
-     * <code>java.rmi.activation.ActivationID</code>,
+     * <code>j86.j86.java.rmi.activation.ActivationID</code>,
      * written by passing it to an invocation of
      * <code>writeObject</code> on the stream instance
      *
      * <li>the external ref type name of the nested remote reference,
      * which must be <code>"UnicastRef2"</code>,
-     * written by {@link java.io.ObjectOutput#writeUTF(String)}
+     * written by {@link j86.java.io.ObjectOutput#writeUTF(String)}
      *
      * <li>the external form of the nested remote reference,
      * written by invoking its <code>writeExternal</code> method
@@ -357,11 +357,11 @@ public abstract class RemoteObject implements Remote, java.io.Serializable {
      * <code>writeExternal</code> method or read by the
      * <code>readExternal</code> method.
      */
-    private void writeObject(java.io.ObjectOutputStream out)
-        throws java.io.IOException, java.lang.ClassNotFoundException
+    private void writeObject(j86.java.io.ObjectOutputStream out)
+        throws j86.java.io.IOException, j86.java.lang.ClassNotFoundException
     {
         if (ref == null) {
-            throw new java.rmi.MarshalException("Invalid remote object");
+            throw new j86.java.rmi.MarshalException("Invalid remote object");
         } else {
             String refClassName = ref.getRefClass(out);
             if (refClassName == null || refClassName.length() == 0) {
@@ -418,8 +418,8 @@ public abstract class RemoteObject implements Remote, java.io.Serializable {
      * case this object's <code>ref</code> field will be set to an
      * instance of that implementation-specific class.
      */
-    private void readObject(java.io.ObjectInputStream in)
-        throws java.io.IOException, java.lang.ClassNotFoundException
+    private void readObject(j86.java.io.ObjectInputStream in)
+        throws j86.java.io.IOException, j86.java.lang.ClassNotFoundException
     {
         String refClassName = in.readUTF();
         if (refClassName == null || refClassName.length() == 0) {

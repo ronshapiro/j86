@@ -23,18 +23,18 @@
  * questions.
  */
 
-package com.sun.java.swing.plaf.motif;
+package j86.j86.com.sun.java.swing.plaf.motif;
 
-import javax.swing.*;
-import java.awt.Rectangle;
-import java.awt.Dimension;
-import java.awt.Insets;
-import java.awt.Color;
-import java.awt.Graphics;
-import java.awt.Component;
-import java.awt.Point;
-import javax.swing.plaf.*;
-import java.io.Serializable;
+import j86.javax.swing.*;
+import j86.java.awt.Rectangle;
+import j86.java.awt.Dimension;
+import j86.java.awt.Insets;
+import j86.java.awt.Color;
+import j86.java.awt.Graphics;
+import j86.java.awt.Component;
+import j86.java.awt.Point;
+import j86.j86.javax.swing.plaf.*;
+import j86.java.io.Serializable;
 
 /**
  * <p>
@@ -47,7 +47,7 @@ import java.io.Serializable;
  *
  * @author David Kloba
  */
-public class MotifDesktopPaneUI extends javax.swing.plaf.basic.BasicDesktopPaneUI
+public class MotifDesktopPaneUI extends j86.j86.j86.javax.swing.plaf.basic.BasicDesktopPaneUI
 {
 
 /// DesktopPaneUI methods

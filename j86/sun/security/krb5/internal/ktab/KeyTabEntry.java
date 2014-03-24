@@ -28,11 +28,11 @@
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
 
-package sun.security.krb5.internal.ktab;
+package j86.j86.j86.sun.security.krb5.internal.ktab;
 
-import sun.security.krb5.*;
-import sun.security.krb5.internal.*;
-import java.io.UnsupportedEncodingException;
+import j86.sun.security.krb5.*;
+import j86.j86.sun.security.krb5.internal.*;
+import j86.java.io.UnsupportedEncodingException;
 
 /**
  * This class represents a Key Table entry. Each entry contains the service principal of

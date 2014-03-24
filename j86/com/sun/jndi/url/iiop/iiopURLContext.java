@@ -23,15 +23,15 @@
  * questions.
  */
 
-package com.sun.jndi.url.iiop;
+package j86.com.sun.jndi.url.iiop;
 
-import javax.naming.spi.ResolveResult;
-import javax.naming.*;
-import java.util.Hashtable;
-import java.net.MalformedURLException;
+import j86.j86.javax.naming.spi.ResolveResult;
+import j86.javax.naming.*;
+import j86.java.util.Hashtable;
+import j86.java.net.MalformedURLException;
 
-import com.sun.jndi.cosnaming.IiopUrl;
-import com.sun.jndi.cosnaming.CorbanameUrl;
+import j86.com.sun.jndi.cosnaming.IiopUrl;
+import j86.com.sun.jndi.cosnaming.CorbanameUrl;
 
 /**
  * An IIOP URL context.
@@ -40,7 +40,7 @@ import com.sun.jndi.cosnaming.CorbanameUrl;
  */
 
 public class iiopURLContext
-        extends com.sun.jndi.toolkit.url.GenericURLContext {
+        extends j86.com.sun.jndi.toolkit.url.GenericURLContext {
 
     iiopURLContext(Hashtable<?,?> env) {
         super(env);

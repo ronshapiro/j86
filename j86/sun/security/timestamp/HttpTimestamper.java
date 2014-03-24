@@ -23,18 +23,18 @@
  * questions.
  */
 
-package sun.security.timestamp;
+package j86.sun.security.timestamp;
 
-import java.io.BufferedInputStream;
-import java.io.DataOutputStream;
-import java.io.IOException;
-import java.net.URI;
-import java.net.URL;
-import java.net.HttpURLConnection;
-import java.util.*;
+import j86.java.io.BufferedInputStream;
+import j86.java.io.DataOutputStream;
+import j86.java.io.IOException;
+import j86.java.net.URI;
+import j86.java.net.URL;
+import j86.java.net.HttpURLConnection;
+import j86.java.util.*;
 
-import sun.misc.IOUtils;
-import sun.security.util.Debug;
+import j86.sun.misc.IOUtils;
+import j86.sun.security.util.Debug;
 
 /**
  * A timestamper that communicates with a Timestamping Authority (TSA)

@@ -22,15 +22,15 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.misc;
+package j86.sun.misc;
 
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.util.Properties;
-import java.util.Set;
-import java.util.jar.JarFile;
-import java.util.jar.Manifest;
-import java.util.jar.Attributes;
+import j86.java.io.ByteArrayOutputStream;
+import j86.java.io.IOException;
+import j86.java.util.Properties;
+import j86.java.util.Set;
+import j86.j86.java.util.jar.JarFile;
+import j86.j86.java.util.jar.Manifest;
+import j86.j86.java.util.jar.Attributes;
 
 /*
  * Support class used by JVMTI and VM attach mechanism.

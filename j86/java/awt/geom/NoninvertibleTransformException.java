@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.awt.geom;
+package j86.j86.java.awt.geom;
 
 /**
  * The <code>NoninvertibleTransformException</code> class represents
@@ -32,7 +32,7 @@ package java.awt.geom;
  * <code>AffineTransform</code> is in a non-invertible state.
  */
 
-public class NoninvertibleTransformException extends java.lang.Exception {
+public class NoninvertibleTransformException extends j86.java.lang.Exception {
     /**
      * Constructs an instance of
      * <code>NoninvertibleTransformException</code>

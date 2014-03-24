@@ -23,39 +23,39 @@
  * questions.
  */
 
-package javax.swing;
+package j86.javax.swing;
 
-import java.awt.AWTEvent;
-import java.awt.Component;
-import java.awt.ComponentOrientation;
-import java.awt.Container;
-import java.awt.Dimension;
-import java.awt.Frame;
-import java.awt.Graphics;
-import java.awt.GraphicsConfiguration;
-import java.awt.GraphicsDevice;
-import java.awt.GraphicsEnvironment;
-import java.awt.Insets;
-import java.awt.Point;
-import java.awt.Polygon;
-import java.awt.Rectangle;
-import java.awt.Toolkit;
-import java.awt.event.*;
-import java.beans.*;
+import j86.java.awt.AWTEvent;
+import j86.java.awt.Component;
+import j86.java.awt.ComponentOrientation;
+import j86.java.awt.Container;
+import j86.java.awt.Dimension;
+import j86.java.awt.Frame;
+import j86.java.awt.Graphics;
+import j86.java.awt.GraphicsConfiguration;
+import j86.java.awt.GraphicsDevice;
+import j86.java.awt.GraphicsEnvironment;
+import j86.java.awt.Insets;
+import j86.java.awt.Point;
+import j86.java.awt.Polygon;
+import j86.java.awt.Rectangle;
+import j86.java.awt.Toolkit;
+import j86.j86.java.awt.event.*;
+import j86.java.beans.*;
 
-import java.util.*;
+import j86.java.util.*;
 
-import java.io.Serializable;
-import java.io.ObjectOutputStream;
-import java.io.ObjectInputStream;
-import java.io.IOException;
+import j86.java.io.Serializable;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.IOException;
 
-import javax.swing.event.*;
-import javax.swing.plaf.*;
-import javax.swing.plaf.basic.*;
-import javax.accessibility.*;
+import j86.j86.javax.swing.event.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.j86.javax.swing.plaf.basic.*;
+import j86.javax.accessibility.*;
 
-import java.lang.ref.WeakReference;
+import j86.j86.java.lang.ref.WeakReference;
 
 /**
  * An implementation of a menu -- a popup window containing
@@ -94,8 +94,8 @@ import java.lang.ref.WeakReference;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @beaninfo
  *   attribute: isContainer true
@@ -594,7 +594,7 @@ public class JMenu extends JMenuItem implements Accessible,MenuElement
      * @param     index    the position at which to insert the component
      * @return    the <code>Component</code> added
      * @see       #remove
-     * @see java.awt.Container#add(Component, int)
+     * @see j86.java.awt.Container#add(Component, int)
      */
     public Component add(Component c, int index) {
         ensurePopupMenuCreated();
@@ -1150,8 +1150,8 @@ public class JMenu extends JMenuItem implements Accessible,MenuElement
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     @SuppressWarnings("serial")
     protected class WinListener extends WindowAdapter implements Serializable {
@@ -1207,9 +1207,9 @@ public class JMenu extends JMenuItem implements Accessible,MenuElement
     }
 
 
-    // implements javax.swing.MenuElement
+    // implements j86.javax.swing.MenuElement
     /**
-     * Returns the <code>java.awt.Component</code> used to
+     * Returns the <code>j86.java.awt.Component</code> used to
      * paint this <code>MenuElement</code>.
      * The returned component is used to convert events and detect if
      * an event is inside a menu component.
@@ -1227,8 +1227,8 @@ public class JMenu extends JMenuItem implements Accessible,MenuElement
      * @param o the new component orientation of this menu and
      *        the components contained within it.
      * @exception NullPointerException if <code>orientation</code> is null.
-     * @see java.awt.Component#setComponentOrientation
-     * @see java.awt.Component#getComponentOrientation
+     * @see j86.java.awt.Component#setComponentOrientation
+     * @see j86.java.awt.Component#getComponentOrientation
      * @since 1.4
      */
     public void applyComponentOrientation(ComponentOrientation o) {
@@ -1387,8 +1387,8 @@ public class JMenu extends JMenuItem implements Accessible,MenuElement
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     @SuppressWarnings("serial")
     protected class AccessibleJMenu extends AccessibleJMenuItem

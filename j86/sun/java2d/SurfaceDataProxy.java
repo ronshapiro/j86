@@ -23,24 +23,24 @@
  * questions.
  */
 
-package sun.java2d;
+package j86.sun.java2d;
 
-import java.awt.Color;
-import java.awt.Rectangle;
-import java.awt.AlphaComposite;
-import java.awt.GraphicsEnvironment;
+import j86.java.awt.Color;
+import j86.java.awt.Rectangle;
+import j86.java.awt.AlphaComposite;
+import j86.java.awt.GraphicsEnvironment;
 
-import sun.awt.DisplayChangedListener;
-import sun.java2d.StateTrackable.State;
-import sun.java2d.loops.CompositeType;
-import sun.java2d.loops.SurfaceType;
-import sun.java2d.loops.Blit;
-import sun.java2d.loops.BlitBg;
-import sun.awt.image.SurfaceManager;
-import sun.awt.image.SurfaceManager.FlushableCacheData;
+import j86.sun.awt.DisplayChangedListener;
+import j86.sun.java2d.StateTrackable.State;
+import j86.j86.sun.java2d.loops.CompositeType;
+import j86.j86.sun.java2d.loops.SurfaceType;
+import j86.j86.sun.java2d.loops.Blit;
+import j86.j86.sun.java2d.loops.BlitBg;
+import j86.j86.j86.sun.awt.image.SurfaceManager;
+import j86.j86.j86.sun.awt.image.SurfaceManager.FlushableCacheData;
 
-import java.security.AccessController;
-import sun.security.action.GetPropertyAction;
+import j86.java.security.AccessController;
+import j86.sun.security.action.GetPropertyAction;
 
 /**
  * The proxy class encapsulates the logic for managing alternate
@@ -72,7 +72,7 @@ public abstract class SurfaceDataProxy
     static {
         cachingAllowed = true;
         String manimg = AccessController.doPrivileged(
-            new GetPropertyAction("sun.java2d.managedimages"));
+            new GetPropertyAction("j86.sun.java2d.managedimages"));
         if (manimg != null && manimg.equals("false")) {
             cachingAllowed = false;
             System.out.println("Disabling managed images");
@@ -80,7 +80,7 @@ public abstract class SurfaceDataProxy
 
         defaultThreshold = 1;
         String num = AccessController.doPrivileged(
-            new GetPropertyAction("sun.java2d.accthreshold"));
+            new GetPropertyAction("j86.sun.java2d.accthreshold"));
         if (num != null) {
             try {
                 int parsed = Integer.parseInt(num);

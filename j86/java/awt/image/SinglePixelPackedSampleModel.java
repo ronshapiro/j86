@@ -33,9 +33,9 @@
  ******************************************************************
  ******************************************************************/
 
-package java.awt.image;
+package j86.j86.j86.java.awt.image;
 
-import java.util.Arrays;
+import j86.java.util.Arrays;
 
 /**
  *  This class represents pixel data packed such that the N samples which make

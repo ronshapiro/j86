@@ -23,16 +23,16 @@
  * questions.
  */
 
-package java.text.spi;
+package j86.j86.java.text.spi;
 
-import java.text.Collator;
-import java.util.Locale;
-import java.util.spi.LocaleServiceProvider;
+import j86.java.text.Collator;
+import j86.java.util.Locale;
+import j86.j86.java.util.spi.LocaleServiceProvider;
 
 /**
  * An abstract class for service providers that
  * provide concrete implementations of the
- * {@link java.text.Collator Collator} class.
+ * {@link j86.java.text.Collator Collator} class.
  *
  * @since        1.6
  */
@@ -53,9 +53,9 @@ public abstract class CollatorProvider extends LocaleServiceProvider {
      * <code>locale</code> is null
      * @exception IllegalArgumentException if <code>locale</code> isn't
      *     one of the locales returned from
-     *     {@link java.util.spi.LocaleServiceProvider#getAvailableLocales()
+     *     {@link j86.j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
      *     getAvailableLocales()}.
-     * @see java.text.Collator#getInstance(java.util.Locale)
+     * @see j86.java.text.Collator#getInstance(j86.java.util.Locale)
      */
     public abstract Collator getInstance(Locale locale);
 }

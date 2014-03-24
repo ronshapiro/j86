@@ -22,12 +22,12 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.media.sound;
+package j86.com.sun.media.sound;
 
-import java.util.Arrays;
-import javax.sound.midi.MidiDevice;
-import javax.sound.midi.MidiDevice.Info;
-import javax.sound.midi.spi.MidiDeviceProvider;
+import j86.java.util.Arrays;
+import j86.javax.sound.midi.MidiDevice;
+import j86.javax.sound.midi.MidiDevice.Info;
+import j86.j86.javax.sound.midi.spi.MidiDeviceProvider;
 
 /**
  * Software synthesizer provider class.

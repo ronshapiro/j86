@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.security.jgss;
+package j86.sun.security.jgss;
 
-import org.ietf.jgss.*;
+import j86.org.ietf.jgss.*;
 
 /**
- * This class helps overcome a limitation of the org.ietf.jgss.GSSException
+ * This class helps overcome a limitation of the j86.org.ietf.jgss.GSSException
  * class that does not allow the thrower to set a string corresponding to
  * the major code.
  */
@@ -76,7 +76,7 @@ public class GSSExceptionImpl extends GSSException {
 
     /**
      * Returns the message that was embedded in this object, otherwise it
-     * returns the default message that an org.ietf.jgss.GSSException
+     * returns the default message that an j86.org.ietf.jgss.GSSException
      * generates.
      */
     public String getMessage() {

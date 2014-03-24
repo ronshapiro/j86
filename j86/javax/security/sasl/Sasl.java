@@ -23,18 +23,18 @@
  * questions.
  */
 
-package javax.security.sasl;
+package j86.javax.security.sasl;
 
-import javax.security.auth.callback.CallbackHandler;
+import j86.j86.javax.security.auth.callback.CallbackHandler;
 
-import java.util.Enumeration;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Set;
-import java.util.HashSet;
-import java.util.Collections;
-import java.security.Provider;
-import java.security.Security;
+import j86.java.util.Enumeration;
+import j86.java.util.Iterator;
+import j86.java.util.Map;
+import j86.java.util.Set;
+import j86.java.util.HashSet;
+import j86.java.util.Collections;
+import j86.java.security.Provider;
+import j86.java.security.Security;
 
 /**
  * A static class for creating SASL clients and servers.
@@ -80,9 +80,9 @@ public class Sasl {
      *
      * The order of the list specifies the preference order of the client or
      * server. If this property is absent, the default qop is {@code "auth"}.
-     * The value of this constant is {@code "javax.security.sasl.qop"}.
+     * The value of this constant is {@code "j86.javax.security.sasl.qop"}.
      */
-    public static final String QOP = "javax.security.sasl.qop";
+    public static final String QOP = "j86.javax.security.sasl.qop";
 
     /**
      * The name of a property that specifies the cipher strength to use.
@@ -102,9 +102,9 @@ public class Sasl {
      * <BR>
      * If this property is absent, the default strength is
      * {@code "high,medium,low"}.
-     * The value of this constant is {@code "javax.security.sasl.strength"}.
+     * The value of this constant is {@code "j86.javax.security.sasl.strength"}.
      */
-    public static final String STRENGTH = "javax.security.sasl.strength";
+    public static final String STRENGTH = "j86.javax.security.sasl.strength";
 
     /**
      * The name of a property that specifies whether the
@@ -113,10 +113,10 @@ public class Sasl {
      * authenticate the to client; {@code "false"} otherwise.
      * The default is {@code "false"}.
      * <br>The value of this constant is
-     * {@code "javax.security.sasl.server.authentication"}.
+     * {@code "j86.javax.security.sasl.server.authentication"}.
      */
     public static final String SERVER_AUTH =
-    "javax.security.sasl.server.authentication";
+    "j86.javax.security.sasl.server.authentication";
 
     /**
      * The name of a property that specifies the bound server name for
@@ -125,10 +125,10 @@ public class Sasl {
      * The property contains the bound host name after the authentication
      * exchange has completed. It is only available on the server side.
      * <br>The value of this constant is
-     * {@code "javax.security.sasl.bound.server.name"}.
+     * {@code "j86.javax.security.sasl.bound.server.name"}.
      */
     public static final String BOUND_SERVER_NAME =
-    "javax.security.sasl.bound.server.name";
+    "j86.javax.security.sasl.bound.server.name";
 
     /**
      * The name of a property that specifies the maximum size of the receive
@@ -136,9 +136,9 @@ public class Sasl {
      * The property contains the string representation of an integer.
      * <br>If this property is absent, the default size
      * is defined by the mechanism.
-     * <br>The value of this constant is {@code "javax.security.sasl.maxbuffer"}.
+     * <br>The value of this constant is {@code "j86.javax.security.sasl.maxbuffer"}.
      */
-    public static final String MAX_BUFFER = "javax.security.sasl.maxbuffer";
+    public static final String MAX_BUFFER = "j86.javax.security.sasl.maxbuffer";
 
     /**
      * The name of a property that specifies the maximum size of the raw send
@@ -146,9 +146,9 @@ public class Sasl {
      * The property contains the string representation of an integer.
      * The value of this property is negotiated between the client and server
      * during the authentication exchange.
-     * <br>The value of this constant is {@code "javax.security.sasl.rawsendsize"}.
+     * <br>The value of this constant is {@code "j86.javax.security.sasl.rawsendsize"}.
      */
-    public static final String RAW_SEND_SIZE = "javax.security.sasl.rawsendsize";
+    public static final String RAW_SEND_SIZE = "j86.javax.security.sasl.rawsendsize";
 
     /**
      * The name of a property that specifies whether to reuse previously
@@ -163,7 +163,7 @@ public class Sasl {
      * reuse.
      *
      * The property's default value is "false".  The value of this constant
-     * is "javax.security.sasl.reuse".
+     * is "j86.javax.security.sasl.reuse".
      *
      * Note that all other parameters and properties required to create a
      * SASL client/server instance must be provided regardless of whether
@@ -175,7 +175,7 @@ public class Sasl {
      * criteria for reusability. Such customizations are
      * implementation-dependent.
      */
-     public static final String REUSE = "javax.security.sasl.reuse";
+     public static final String REUSE = "j86.javax.security.sasl.reuse";
 
     /**
      * The name of a property that specifies
@@ -185,10 +185,10 @@ public class Sasl {
      * {@code "false"} if such mechanisms are permitted.
      * The default is {@code "false"}.
      * <br>The value of this constant is
-     * {@code "javax.security.sasl.policy.noplaintext"}.
+     * {@code "j86.javax.security.sasl.policy.noplaintext"}.
      */
     public static final String POLICY_NOPLAINTEXT =
-    "javax.security.sasl.policy.noplaintext";
+    "j86.javax.security.sasl.policy.noplaintext";
 
     /**
      * The name of a property that specifies whether
@@ -199,10 +199,10 @@ public class Sasl {
      * are not permitted; {@code "false"} if such mechanisms are permitted.
      * The default is {@code "false"}.
      * <br>The value of this constant is
-     * {@code "javax.security.sasl.policy.noactive"}.
+     * {@code "j86.javax.security.sasl.policy.noactive"}.
      */
     public static final String POLICY_NOACTIVE =
-    "javax.security.sasl.policy.noactive";
+    "j86.javax.security.sasl.policy.noactive";
 
     /**
      * The name of a property that specifies whether
@@ -213,10 +213,10 @@ public class Sasl {
      * The default is {@code "false"}.
      *<br>
      * The value of this constant is
-     * {@code "javax.security.sasl.policy.nodictionary"}.
+     * {@code "j86.javax.security.sasl.policy.nodictionary"}.
      */
     public static final String POLICY_NODICTIONARY =
-    "javax.security.sasl.policy.nodictionary";
+    "j86.javax.security.sasl.policy.nodictionary";
 
     /**
      * The name of a property that specifies whether mechanisms that accept
@@ -226,10 +226,10 @@ public class Sasl {
      * if such mechanisms are permitted. The default is {@code "false"}.
      *<br>
      * The value of this constant is
-     * {@code "javax.security.sasl.policy.noanonymous"}.
+     * {@code "j86.javax.security.sasl.policy.noanonymous"}.
      */
     public static final String POLICY_NOANONYMOUS =
-    "javax.security.sasl.policy.noanonymous";
+    "j86.javax.security.sasl.policy.noanonymous";
 
      /**
       * The name of a property that specifies whether mechanisms that implement
@@ -242,10 +242,10 @@ public class Sasl {
       * are not required. The default is {@code "false"}.
       *<br>
       * The value of this constant is
-      * {@code "javax.security.sasl.policy.forward"}.
+      * {@code "j86.javax.security.sasl.policy.forward"}.
       */
     public static final String POLICY_FORWARD_SECRECY =
-    "javax.security.sasl.policy.forward";
+    "j86.javax.security.sasl.policy.forward";
 
     /**
      * The name of a property that specifies whether
@@ -255,10 +255,10 @@ public class Sasl {
      * if such mechanisms are not required. The default is {@code "false"}.
      *<br>
      * The value of this constant is
-     * {@code "javax.security.sasl.policy.credentials"}.
+     * {@code "j86.javax.security.sasl.policy.credentials"}.
      */
     public static final String POLICY_PASS_CREDENTIALS =
-    "javax.security.sasl.policy.credentials";
+    "j86.javax.security.sasl.policy.credentials";
 
     /**
      * The name of a property that specifies the credentials to use.
@@ -269,9 +269,9 @@ public class Sasl {
      * supports delegated authentication.
      *<br>
      * The value of this constant is
-     * {@code "javax.security.sasl.credentials"}.
+     * {@code "j86.javax.security.sasl.credentials"}.
      */
-    public static final String CREDENTIALS = "javax.security.sasl.credentials";
+    public static final String CREDENTIALS = "j86.javax.security.sasl.credentials";
 
     /**
      * Creates a {@code SaslClient} using the parameters supplied.
@@ -295,7 +295,7 @@ public class Sasl {
      * {@code SaslClientFactory.}<em>{@code mechanism_name}</em>
      * <br>
      * and values that are class names of implementations of
-     * {@code javax.security.sasl.SaslClientFactory}.
+     * {@code j86.javax.security.sasl.SaslClientFactory}.
      *
      * For example, a provider that contains a factory class,
      * {@code com.wiz.sasl.digest.ClientFactory}, that supports the
@@ -445,7 +445,7 @@ public class Sasl {
      * {@code SaslServerFactory.}<em>{@code mechanism_name}</em>
      * <br>
      * and values that are class names of implementations of
-     * {@code javax.security.sasl.SaslServerFactory}.
+     * {@code j86.javax.security.sasl.SaslServerFactory}.
      *
      * For example, a provider that contains a factory class,
      * {@code com.wiz.sasl.digest.ServerFactory}, that supports the
@@ -498,7 +498,7 @@ public class Sasl {
                     String protocol,
                     String serverName,
                     Map<String,?> props,
-                    javax.security.auth.callback.CallbackHandler cbh)
+                    j86.j86.javax.security.auth.callback.CallbackHandler cbh)
         throws SaslException {
 
         SaslServer mech = null;

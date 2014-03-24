@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.awt;
+package j86.java.awt;
 
-import java.awt.image.Raster;
-import java.awt.image.ColorModel;
+import j86.j86.j86.java.awt.image.Raster;
+import j86.j86.j86.java.awt.image.ColorModel;
 
 /**
  * The <code>PaintContext</code> interface defines the encapsulated

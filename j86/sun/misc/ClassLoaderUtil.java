@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.misc;
+package j86.sun.misc;
 
 /**
  * Provides utility functions related to URLClassLoaders or subclasses of it.
@@ -31,16 +31,16 @@ package sun.misc;
  *                  W  A  R  N  I  N  G
  *
  * This class uses undocumented, unpublished, private data structures inside
- * java.net.URLClassLoader and sun.misc.URLClassPath.  Use with extreme caution.
+ * j86.java.net.URLClassLoader and j86.sun.misc.URLClassPath.  Use with extreme caution.
  *
  * @author      tjquinn
  */
 
 
-import java.io.IOException;
-import java.net.URLClassLoader;
-import java.util.*;
-import java.util.jar.JarFile;
+import j86.java.io.IOException;
+import j86.java.net.URLClassLoader;
+import j86.java.util.*;
+import j86.j86.java.util.jar.JarFile;
 
 public class ClassLoaderUtil {
 

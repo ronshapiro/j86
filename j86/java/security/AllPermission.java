@@ -23,13 +23,13 @@
  * questions.
  */
 
-package java.security;
+package j86.java.security;
 
-import java.security.*;
-import java.util.Enumeration;
-import java.util.Hashtable;
-import java.util.StringTokenizer;
-import sun.security.util.SecurityConstants;
+import j86.java.security.*;
+import j86.java.util.Enumeration;
+import j86.java.util.Hashtable;
+import j86.java.util.StringTokenizer;
+import j86.sun.security.util.SecurityConstants;
 
 /**
  * The AllPermission is a permission that implies all other permissions.
@@ -43,11 +43,11 @@ import sun.security.util.SecurityConstants;
  * completely trusted and adding the necessary permissions to the policy
  * is prohibitively cumbersome.
  *
- * @see java.security.Permission
- * @see java.security.AccessController
- * @see java.security.Permissions
- * @see java.security.PermissionCollection
- * @see java.lang.SecurityManager
+ * @see j86.java.security.Permission
+ * @see j86.java.security.AccessController
+ * @see j86.java.security.Permissions
+ * @see j86.java.security.PermissionCollection
+ * @see j86.java.lang.SecurityManager
  *
  *
  * @author Roland Schemers
@@ -142,8 +142,8 @@ public final class AllPermission extends Permission {
  * order, but enable the implies function to evaluate the implies
  * method in an efficient (and consistent) manner.
  *
- * @see java.security.Permission
- * @see java.security.Permissions
+ * @see j86.java.security.Permission
+ * @see j86.java.security.Permissions
  *
  *
  * @author Roland Schemers
@@ -153,7 +153,7 @@ public final class AllPermission extends Permission {
 
 final class AllPermissionCollection
     extends PermissionCollection
-    implements java.io.Serializable
+    implements j86.java.io.Serializable
 {
 
     // use serialVersionUID from JDK 1.2.2 for interoperability

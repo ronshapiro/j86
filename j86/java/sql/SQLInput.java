@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.sql;
+package j86.java.sql;
 
 /**
  * An input stream that contains a stream of values representing an
@@ -59,7 +59,7 @@ public interface SQLInput {
     //================================================================
     // Methods for reading attributes from the stream of SQL data.
     // These methods correspond to the column-accessor methods of
-    // java.sql.ResultSet.
+    // j86.java.sql.ResultSet.
     //================================================================
 
     /**
@@ -159,7 +159,7 @@ public interface SQLInput {
     double readDouble() throws SQLException;
 
     /**
-     * Reads the next attribute in the stream and returns it as a <code>java.math.BigDecimal</code>
+     * Reads the next attribute in the stream and returns it as a <code>j86.java.math.BigDecimal</code>
      * object in the Java programming language.
      *
      * @return the attribute; if the value is SQL <code>NULL</code>, returns <code>null</code>
@@ -168,7 +168,7 @@ public interface SQLInput {
      * this method
      * @since 1.2
      */
-    java.math.BigDecimal readBigDecimal() throws SQLException;
+    j86.java.math.BigDecimal readBigDecimal() throws SQLException;
 
     /**
      * Reads the next attribute in the stream and returns it as an array of bytes
@@ -183,7 +183,7 @@ public interface SQLInput {
     byte[] readBytes() throws SQLException;
 
     /**
-     * Reads the next attribute in the stream and returns it as a <code>java.sql.Date</code> object.
+     * Reads the next attribute in the stream and returns it as a <code>j86.java.sql.Date</code> object.
      *
      * @return the attribute; if the value is SQL <code>NULL</code>, returns <code>null</code>
      * @exception SQLException if a database access error occurs
@@ -191,10 +191,10 @@ public interface SQLInput {
      * this method
      * @since 1.2
      */
-    java.sql.Date readDate() throws SQLException;
+    j86.java.sql.Date readDate() throws SQLException;
 
     /**
-     * Reads the next attribute in the stream and returns it as a <code>java.sql.Time</code> object.
+     * Reads the next attribute in the stream and returns it as a <code>j86.java.sql.Time</code> object.
      *
      * @return the attribute; if the value is SQL <code>NULL</code>, returns <code>null</code>
      * @exception SQLException if a database access error occurs
@@ -202,10 +202,10 @@ public interface SQLInput {
      * this method
      * @since 1.2
      */
-    java.sql.Time readTime() throws SQLException;
+    j86.java.sql.Time readTime() throws SQLException;
 
     /**
-     * Reads the next attribute in the stream and returns it as a <code>java.sql.Timestamp</code> object.
+     * Reads the next attribute in the stream and returns it as a <code>j86.java.sql.Timestamp</code> object.
      *
      * @return the attribute; if the value is SQL <code>NULL</code>, returns <code>null</code>
      * @exception SQLException if a database access error occurs
@@ -213,7 +213,7 @@ public interface SQLInput {
      * this method
      * @since 1.2
      */
-    java.sql.Timestamp readTimestamp() throws SQLException;
+    j86.java.sql.Timestamp readTimestamp() throws SQLException;
 
     /**
      * Reads the next attribute in the stream and returns it as a stream of Unicode characters.
@@ -224,7 +224,7 @@ public interface SQLInput {
      * this method
      * @since 1.2
      */
-    java.io.Reader readCharacterStream() throws SQLException;
+    j86.java.io.Reader readCharacterStream() throws SQLException;
 
     /**
      * Reads the next attribute in the stream and returns it as a stream of ASCII characters.
@@ -235,7 +235,7 @@ public interface SQLInput {
      * this method
      * @since 1.2
      */
-    java.io.InputStream readAsciiStream() throws SQLException;
+    j86.java.io.InputStream readAsciiStream() throws SQLException;
 
     /**
      * Reads the next attribute in the stream and returns it as a stream of uninterpreted
@@ -247,7 +247,7 @@ public interface SQLInput {
      * this method
      * @since 1.2
      */
-    java.io.InputStream readBinaryStream() throws SQLException;
+    j86.java.io.InputStream readBinaryStream() throws SQLException;
 
     //================================================================
     // Methods for reading items of SQL user-defined types from the stream.
@@ -352,16 +352,16 @@ public interface SQLInput {
 
     /**
      * Reads an SQL <code>DATALINK</code> value from the stream and returns it as a
-     * <code>java.net.URL</code> object in the Java programming language.
+     * <code>j86.java.net.URL</code> object in the Java programming language.
      *
-     * @return a <code>java.net.URL</code> object.
+     * @return a <code>j86.java.net.URL</code> object.
      * @exception SQLException if a database access error occurs,
      *            or if a URL is malformed
      * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
      * this method
      * @since 1.4
      */
-    java.net.URL readURL() throws SQLException;
+    j86.java.net.URL readURL() throws SQLException;
 
      //---------------------------- JDBC 4.0 -------------------------
 

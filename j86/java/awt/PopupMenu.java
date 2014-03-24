@@ -23,13 +23,13 @@
  * questions.
  */
 
-package java.awt;
+package j86.java.awt;
 
-import java.awt.peer.PopupMenuPeer;
-import javax.accessibility.*;
+import j86.j86.java.awt.peer.PopupMenuPeer;
+import j86.javax.accessibility.*;
 
 
-import sun.awt.AWTAccessor;
+import j86.sun.awt.AWTAccessor;
 
 /**
  * A class that implements a menu which can be dynamically popped up
@@ -68,7 +68,7 @@ public class PopupMenu extends Menu {
      * Creates a new popup menu with an empty name.
      * @exception HeadlessException if GraphicsEnvironment.isHeadless()
      * returns true.
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      */
     public PopupMenu() throws HeadlessException {
         this("");
@@ -81,7 +81,7 @@ public class PopupMenu extends Menu {
      *                the popup menu's label
      * @exception HeadlessException if GraphicsEnvironment.isHeadless()
      * returns true.
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      */
     public PopupMenu(String label) throws HeadlessException {
         super(label);

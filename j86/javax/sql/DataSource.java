@@ -23,11 +23,11 @@
  * questions.
  */
 
-package javax.sql;
+package j86.javax.sql;
 
-import java.sql.Connection;
-import java.sql.SQLException;
-import java.sql.Wrapper;
+import j86.java.sql.Connection;
+import j86.java.sql.SQLException;
+import j86.java.sql.Wrapper;
 
 /**
  * <p>A factory for connections to the physical data source that this
@@ -82,7 +82,7 @@ public interface DataSource  extends CommonDataSource, Wrapper {
    *
    * @return  a connection to the data source
    * @exception SQLException if a database access error occurs
-   * @throws java.sql.SQLTimeoutException  when the driver has determined that the
+   * @throws j86.java.sql.SQLTimeoutException  when the driver has determined that the
    * timeout value specified by the {@code setLoginTimeout} method
    * has been exceeded and has at least tried to cancel the
    * current database connection attempt
@@ -98,7 +98,7 @@ public interface DataSource  extends CommonDataSource, Wrapper {
    * @param password the user's password
    * @return  a connection to the data source
    * @exception SQLException if a database access error occurs
-   * @throws java.sql.SQLTimeoutException  when the driver has determined that the
+   * @throws j86.java.sql.SQLTimeoutException  when the driver has determined that the
    * timeout value specified by the {@code setLoginTimeout} method
    * has been exceeded and has at least tried to cancel the
    * current database connection attempt

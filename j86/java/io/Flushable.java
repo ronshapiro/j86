@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.io;
+package j86.java.io;
 
-import java.io.IOException;
+import j86.java.io.IOException;
 
 /**
  * A <tt>Flushable</tt> is a destination of data that can be flushed.  The

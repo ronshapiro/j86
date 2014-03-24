@@ -23,17 +23,17 @@
  * questions.
  */
 
-package sun.management;
+package j86.sun.management;
 
-import java.lang.management.RuntimeMXBean;
-import java.lang.management.ManagementFactory;
+import j86.j86.java.lang.management.RuntimeMXBean;
+import j86.j86.java.lang.management.ManagementFactory;
 
-import java.util.List;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
-import java.util.Properties;
-import javax.management.ObjectName;
+import j86.java.util.List;
+import j86.java.util.HashMap;
+import j86.java.util.Map;
+import j86.java.util.Set;
+import j86.java.util.Properties;
+import j86.javax.management.ObjectName;
 
 /**
  * Implementation class for the runtime subsystem.

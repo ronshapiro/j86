@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.audio;
+package j86.sun.audio;
 
 public interface AudioSecurityExceptionAction {
     Object run() throws Exception;

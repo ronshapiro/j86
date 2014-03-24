@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.awt.event;
+package j86.j86.java.awt.event;
 
-import java.awt.AWTEvent;
+import j86.java.awt.AWTEvent;
 
 /**
  * A semantic event which indicates that an object's text changed.
@@ -45,7 +45,7 @@ import java.awt.AWTEvent;
  *
  * @author Georges Saab
  *
- * @see java.awt.TextComponent
+ * @see j86.java.awt.TextComponent
  * @see TextListener
  *
  * @since 1.1

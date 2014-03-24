@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.management;
+package j86.sun.management;
 
-import java.util.List;
+import j86.java.util.List;
 
 /**
  * Diagnostic command information. It contains the description of a

@@ -23,25 +23,25 @@
  * questions.
  */
 
-package java.util;
+package j86.java.util;
 
-import java.io.IOException;
+import j86.java.io.IOException;
 
 /**
  * The <tt>Formattable</tt> interface must be implemented by any class that
  * needs to perform custom formatting using the <tt>'s'</tt> conversion
- * specifier of {@link java.util.Formatter}.  This interface allows basic
+ * specifier of {@link j86.java.util.Formatter}.  This interface allows basic
  * control for formatting arbitrary objects.
  *
  * For example, the following class prints out different representations of a
  * stock's name depending on the flags and length constraints:
  *
  * {@code
- *   import java.nio.CharBuffer;
- *   import java.util.Formatter;
- *   import java.util.Formattable;
- *   import java.util.Locale;
- *   import static java.util.FormattableFlags.*;
+ *   import j86.java.nio.CharBuffer;
+ *   import j86.java.util.Formatter;
+ *   import j86.java.util.Formattable;
+ *   import j86.java.util.Locale;
+ *   import static j86.java.util.FormattableFlags.*;
  *
  *  ...
  *
@@ -91,7 +91,7 @@ import java.io.IOException;
  *   }
  * }
  *
- * <p> When used in conjunction with the {@link java.util.Formatter}, the above
+ * <p> When used in conjunction with the {@link j86.java.util.Formatter}, the above
  * class produces the following output for various format strings.
  *
  * {@code

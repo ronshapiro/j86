@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.security.krb5.internal.rcache;
+package j86.j86.j86.sun.security.krb5.internal.rcache;
 
-import java.util.Objects;
+import j86.java.util.Objects;
 
 /**
  * The class represents a new style replay cache entry. It can be either used

@@ -23,19 +23,19 @@
  * questions.
  */
 
-package javax.swing;
+package j86.javax.swing;
 
 
-import javax.swing.event.*;
-import java.awt.event.*;
+import j86.j86.javax.swing.event.*;
+import j86.j86.java.awt.event.*;
 
-import java.awt.Component;
-import java.awt.Container;
-import java.awt.Window;
-import java.beans.PropertyChangeListener;
-import java.beans.PropertyChangeEvent;
+import j86.java.awt.Component;
+import j86.java.awt.Container;
+import j86.java.awt.Window;
+import j86.java.beans.PropertyChangeListener;
+import j86.java.beans.PropertyChangeEvent;
 
-import java.io.Serializable;
+import j86.java.io.Serializable;
 
 
 /**

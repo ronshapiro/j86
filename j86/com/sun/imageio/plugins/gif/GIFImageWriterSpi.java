@@ -23,16 +23,16 @@
  * questions.
  */
 
-package com.sun.imageio.plugins.gif;
+package j86.com.sun.imageio.plugins.gif;
 
-import java.awt.image.ColorModel;
-import java.awt.image.SampleModel;
-import java.util.Locale;
-import javax.imageio.ImageTypeSpecifier;
-import javax.imageio.ImageWriter;
-import javax.imageio.spi.ImageWriterSpi;
-import javax.imageio.stream.ImageOutputStream;
-import com.sun.imageio.plugins.common.PaletteBuilder;
+import j86.j86.j86.java.awt.image.ColorModel;
+import j86.j86.j86.java.awt.image.SampleModel;
+import j86.java.util.Locale;
+import j86.javax.imageio.ImageTypeSpecifier;
+import j86.javax.imageio.ImageWriter;
+import j86.j86.javax.imageio.spi.ImageWriterSpi;
+import j86.j86.javax.imageio.stream.ImageOutputStream;
+import j86.com.sun.imageio.plugins.common.PaletteBuilder;
 
 public class GIFImageWriterSpi extends ImageWriterSpi {
 
@@ -47,10 +47,10 @@ public class GIFImageWriterSpi extends ImageWriterSpi {
     private static final String[] MIMETypes = { "image/gif" };
 
     private static final String writerClassName =
-    "com.sun.imageio.plugins.gif.GIFImageWriter";
+    "j86.com.sun.imageio.plugins.gif.GIFImageWriter";
 
     private static final String[] readerSpiNames = {
-        "com.sun.imageio.plugins.gif.GIFImageReaderSpi"
+        "j86.com.sun.imageio.plugins.gif.GIFImageReaderSpi"
     };
 
     public GIFImageWriterSpi() {
@@ -64,11 +64,11 @@ public class GIFImageWriterSpi extends ImageWriterSpi {
               readerSpiNames,
               true,
               GIFWritableStreamMetadata.NATIVE_FORMAT_NAME,
-              "com.sun.imageio.plugins.gif.GIFStreamMetadataFormat",
+              "j86.com.sun.imageio.plugins.gif.GIFStreamMetadataFormat",
               null, null,
               true,
               GIFWritableImageMetadata.NATIVE_FORMAT_NAME,
-              "com.sun.imageio.plugins.gif.GIFImageMetadataFormat",
+              "j86.com.sun.imageio.plugins.gif.GIFImageMetadataFormat",
               null, null
               );
     }

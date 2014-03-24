@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.net.ssl;
+package j86.j86.javax.net.ssl;
 
-import java.security.Principal;
+import j86.java.security.Principal;
 
 /**
  * In SSL, sessions are used to describe an ongoing relationship between
@@ -227,7 +227,7 @@ public interface SSLSession {
      *          been verified
      * @see #getPeerPrincipal()
      */
-    public java.security.cert.Certificate [] getPeerCertificates()
+    public j86.j86.java.security.cert.Certificate [] getPeerCertificates()
             throws SSLPeerUnverifiedException;
 
     /**
@@ -250,7 +250,7 @@ public interface SSLSession {
      *
      * @see #getLocalPrincipal()
      */
-    public java.security.cert.Certificate [] getLocalCertificates();
+    public j86.j86.java.security.cert.Certificate [] getLocalCertificates();
 
     /**
      * Returns the identity of the peer which was identified as part
@@ -268,12 +268,12 @@ public interface SSLSession {
      *          with the peer's own certificate first followed by any
      *          certificate authorities.  (The certificates are in
      *          the original JSSE certificate
-     *          {@link javax.security.cert.X509Certificate} format.)
+     *          {@link j86.javax.security.cert.X509Certificate} format.)
      * @exception SSLPeerUnverifiedException if the peer's identity
      *          has not been verified
      * @see #getPeerPrincipal()
      */
-    public javax.security.cert.X509Certificate [] getPeerCertificateChain()
+    public j86.javax.security.cert.X509Certificate [] getPeerCertificateChain()
             throws SSLPeerUnverifiedException;
 
     /**

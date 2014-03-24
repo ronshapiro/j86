@@ -23,15 +23,15 @@
  * questions.
  */
 
-package javax.crypto;
+package j86.javax.crypto;
 
-import java.io.*;
-import java.security.*;
-import java.security.spec.*;
-import sun.security.x509.AlgorithmId;
-import sun.security.util.DerValue;
-import sun.security.util.DerInputStream;
-import sun.security.util.DerOutputStream;
+import j86.java.io.*;
+import j86.java.security.*;
+import j86.j86.java.security.spec.*;
+import j86.sun.security.x509.AlgorithmId;
+import j86.sun.security.util.DerValue;
+import j86.sun.security.util.DerInputStream;
+import j86.sun.security.util.DerOutputStream;
 
 /**
  * This class implements the <code>EncryptedPrivateKeyInfo</code> type
@@ -50,7 +50,7 @@ import sun.security.util.DerOutputStream;
  *
  * @author Valerie Peng
  *
- * @see java.security.spec.PKCS8EncodedKeySpec
+ * @see j86.j86.java.security.spec.PKCS8EncodedKeySpec
  *
  * @since 1.4
  */

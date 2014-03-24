@@ -28,25 +28,25 @@
  * Copyright IBM Corp. 1999-2000.  All rights reserved.
  */
 
-package javax.management.modelmbean;
+package j86.j86.javax.management.modelmbean;
 
-import static com.sun.jmx.defaults.JmxProperties.MODELMBEAN_LOGGER;
-import com.sun.jmx.mbeanserver.GetPropertyAction;
+import static j86.com.sun.jmx.defaults.JmxProperties.MODELMBEAN_LOGGER;
+import j86.com.sun.jmx.mbeanserver.GetPropertyAction;
 
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.ObjectStreamField;
-import java.lang.reflect.Method;
-import java.security.AccessController;
-import java.util.logging.Level;
+import j86.java.io.IOException;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectStreamField;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.security.AccessController;
+import j86.j86.java.util.logging.Level;
 
-import javax.management.Descriptor;
-import javax.management.DescriptorAccess;
-import javax.management.DescriptorKey;
-import javax.management.MBeanOperationInfo;
-import javax.management.MBeanParameterInfo;
-import javax.management.RuntimeOperationsException;
+import j86.javax.management.Descriptor;
+import j86.javax.management.DescriptorAccess;
+import j86.javax.management.DescriptorKey;
+import j86.javax.management.MBeanOperationInfo;
+import j86.javax.management.MBeanParameterInfo;
+import j86.javax.management.RuntimeOperationsException;
 
 /**
  * <p>The ModelMBeanOperationInfo object describes a management operation of
@@ -175,7 +175,7 @@ public class ModelMBeanOperationInfo extends MBeanOperationInfo
          * on the {@code Method} object that contain the {@link
          * DescriptorKey} meta-annotation.
          *
-         * @param operationMethod The java.lang.reflect.Method object
+         * @param operationMethod The j86.j86.j86.java.lang.reflect.Method object
          * describing the MBean operation.
          * @param description A human readable description of the operation.
          */
@@ -200,7 +200,7 @@ public class ModelMBeanOperationInfo extends MBeanOperationInfo
          * contributed by any annotations on the {@code Method} object
          * that contain the {@link DescriptorKey} meta-annotation.
          *
-         * @param operationMethod The java.lang.reflect.Method object
+         * @param operationMethod The j86.j86.j86.java.lang.reflect.Method object
          * describing the MBean operation.
          * @param description A human readable description of the
          * operation.
@@ -498,10 +498,10 @@ public class ModelMBeanOperationInfo extends MBeanOperationInfo
             }
             final Object targetValue = clone.getFieldValue("targetType");
             if (targetValue != null) {
-                if (!(targetValue instanceof java.lang.String)) {
+                if (!(targetValue instanceof j86.java.lang.String)) {
                     throw new RuntimeOperationsException(new IllegalArgumentException("Invalid Descriptor argument"),
                     "The Descriptor field \"targetValue\" is invalid class. " +
-                     " Expected: java.lang.String, " + " was: " + targetValue.getClass().getName());
+                     " Expected: j86.java.lang.String, " + " was: " + targetValue.getClass().getName());
                 }
             }
             return clone;

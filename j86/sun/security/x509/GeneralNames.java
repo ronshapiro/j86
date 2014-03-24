@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.security.x509;
+package j86.sun.security.x509;
 
-import java.util.*;
-import java.io.IOException;
+import j86.java.util.*;
+import j86.java.io.IOException;
 
-import sun.security.util.*;
+import j86.sun.security.util.*;
 
 /**
  * This object class represents the GeneralNames type required in

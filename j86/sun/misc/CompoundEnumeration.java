@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.misc;
+package j86.sun.misc;
 
-import java.util.Enumeration;
-import java.util.NoSuchElementException;
+import j86.java.util.Enumeration;
+import j86.java.util.NoSuchElementException;
 
 /*
  * A useful utility class that will enumerate over an array of

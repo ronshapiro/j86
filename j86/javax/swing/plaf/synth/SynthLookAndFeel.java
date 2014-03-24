@@ -22,24 +22,24 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.plaf.synth;
+package j86.j86.j86.javax.swing.plaf.synth;
 
-import java.awt.*;
-import java.beans.*;
-import java.io.*;
-import java.lang.ref.*;
-import java.net.*;
-import java.security.*;
-import java.text.*;
-import java.util.*;
-import javax.swing.*;
-import javax.swing.plaf.*;
-import javax.swing.plaf.basic.*;
+import j86.java.awt.*;
+import j86.java.beans.*;
+import j86.java.io.*;
+import j86.j86.java.lang.ref.*;
+import j86.java.net.*;
+import j86.java.security.*;
+import j86.java.text.*;
+import j86.java.util.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.j86.javax.swing.plaf.basic.*;
 
-import sun.awt.*;
-import sun.security.action.*;
-import sun.swing.*;
-import sun.swing.plaf.synth.*;
+import j86.sun.awt.*;
+import j86.sun.security.action.*;
+import j86.sun.swing.*;
+import j86.j86.j86.sun.swing.plaf.synth.*;
 
 /**
  * SynthLookAndFeel provides the basis for creating a customized look and
@@ -49,7 +49,7 @@ import sun.swing.plaf.synth.*;
  * {@link #load} method, or provide your own {@link SynthStyleFactory}
  * to {@link #setStyleFactory}. Refer to the
  * <a href="package-summary.html">package summary</a> for an example of
- * loading a file, and {@link javax.swing.plaf.synth.SynthStyleFactory} for
+ * loading a file, and {@link j86.j86.j86.javax.swing.plaf.synth.SynthStyleFactory} for
  * an example of providing your own <code>SynthStyleFactory</code> to
  * <code>setStyleFactory</code>.
  * <p>
@@ -74,7 +74,7 @@ public class SynthLookAndFeel extends BasicLookAndFeel {
      * AppContext key to get the current SynthStyleFactory.
      */
     private static final Object STYLE_FACTORY_KEY =
-                  new StringBuffer("com.sun.java.swing.plaf.gtk.StyleCache");
+                  new StringBuffer("j86.j86.com.sun.java.swing.plaf.gtk.StyleCache");
 
     /**
      * AppContext key to get selectedUI.
@@ -643,8 +643,8 @@ public class SynthLookAndFeel extends BasicLookAndFeel {
         Region.registerUIs(table);
         table.setDefaultLocale(Locale.getDefault());
         table.addResourceBundle(
-              "com.sun.swing.internal.plaf.basic.resources.basic" );
-        table.addResourceBundle("com.sun.swing.internal.plaf.synth.resources.synth");
+              "com.j86.sun.swing.internal.plaf.basic.resources.basic" );
+        table.addResourceBundle("com.j86.sun.swing.internal.plaf.synth.resources.synth");
 
         // SynthTabbedPaneUI supports rollover on tabs, GTK does not
         table.put("TabbedPane.isTabRollover", Boolean.TRUE);
@@ -788,7 +788,7 @@ public class SynthLookAndFeel extends BasicLookAndFeel {
      * Returns the antialiasing information as specified by the host desktop.
      * Antialiasing might be forced off if the desktop is GNOME and the user
      * has set his locale to Chinese, Japanese or Korean. This is consistent
-     * with what GTK does. See com.sun.java.swing.plaf.gtk.GtkLookAndFeel
+     * with what GTK does. See j86.j86.com.sun.java.swing.plaf.gtk.GtkLookAndFeel
      * for more information about CJK and antialiased fonts.
      *
      * @return the text antialiasing information associated to the desktop
@@ -909,7 +909,7 @@ public class SynthLookAndFeel extends BasicLookAndFeel {
         }
     }
 
-    private void writeObject(java.io.ObjectOutputStream out)
+    private void writeObject(j86.java.io.ObjectOutputStream out)
             throws IOException {
         throw new NotSerializableException(this.getClass().getName());
     }

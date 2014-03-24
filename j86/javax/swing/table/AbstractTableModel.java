@@ -23,12 +23,12 @@
  * questions.
  */
 
-package javax.swing.table;
+package j86.j86.javax.swing.table;
 
-import javax.swing.*;
-import javax.swing.event.*;
-import java.io.Serializable;
-import java.util.EventListener;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.event.*;
+import j86.java.io.Serializable;
+import j86.java.util.EventListener;
 
 /**
  *  This abstract class provides default implementations for most of
@@ -51,8 +51,8 @@ import java.util.EventListener;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @author Alan Chung
  * @author Philip Milne
@@ -192,7 +192,7 @@ public abstract class AbstractTableModel implements TableModel, Serializable
      *
      * @see TableModelEvent
      * @see EventListenerList
-     * @see javax.swing.JTable#tableChanged(TableModelEvent)
+     * @see j86.javax.swing.JTable#tableChanged(TableModelEvent)
      */
     public void fireTableDataChanged() {
         fireTableChanged(new TableModelEvent(this));
@@ -321,14 +321,14 @@ public abstract class AbstractTableModel implements TableModel, Serializable
      *
      * @param listenerType the type of listeners requested; this parameter
      *          should specify an interface that descends from
-     *          <code>java.util.EventListener</code>
+     *          <code>j86.java.util.EventListener</code>
      * @return an array of all objects registered as
      *          <code><em>Foo</em>Listener</code>s on this component,
      *          or an empty array if no such
      *          listeners have been added
      * @exception ClassCastException if <code>listenerType</code>
      *          doesn't specify a class or interface that implements
-     *          <code>java.util.EventListener</code>
+     *          <code>j86.java.util.EventListener</code>
      *
      * @see #getTableModelListeners
      *

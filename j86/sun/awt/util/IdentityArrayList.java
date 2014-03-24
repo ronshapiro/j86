@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.awt.util;
+package j86.j86.sun.awt.util;
 
-import java.util.AbstractList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.ConcurrentModificationException;
-import java.util.List;
-import java.util.RandomAccess;
+import j86.java.util.AbstractList;
+import j86.java.util.Arrays;
+import j86.java.util.Collection;
+import j86.java.util.ConcurrentModificationException;
+import j86.java.util.List;
+import j86.java.util.RandomAccess;
 
 /**
  * Resizable-array implementation of the <tt>List</tt> interface.  Implements

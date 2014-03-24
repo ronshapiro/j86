@@ -20,16 +20,16 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.sun.org.apache.xml.internal.security.utils.resolver.implementations;
+package j86.j86.j86.j86.com.sun.org.apache.xml.internal.security.utils.resolver.implementations;
 
-import java.io.FileInputStream;
-import java.net.URI;
-import java.net.URISyntaxException;
+import j86.java.io.FileInputStream;
+import j86.java.net.URI;
+import j86.java.net.URISyntaxException;
 
-import com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
-import com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverContext;
-import com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverException;
-import com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverSpi;
+import j86.j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
+import j86.j86.j86.com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverContext;
+import j86.j86.j86.com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverException;
+import j86.j86.j86.com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverSpi;
 
 /**
  * A simple ResourceResolver for requests into the local filesystem.
@@ -39,8 +39,8 @@ public class ResolverLocalFilesystem extends ResourceResolverSpi {
     private static final int FILE_URI_LENGTH = "file:/".length();
 
     /** {@link org.apache.commons.logging} logging facility */
-    private static java.util.logging.Logger log =
-        java.util.logging.Logger.getLogger(ResolverLocalFilesystem.class.getName());
+    private static j86.j86.java.util.logging.Logger log =
+        j86.j86.java.util.logging.Logger.getLogger(ResolverLocalFilesystem.class.getName());
 
     @Override
     public boolean engineIsThreadSafe() {
@@ -119,24 +119,24 @@ public class ResolverLocalFilesystem extends ResourceResolverSpi {
         }
 
         try {
-            if (log.isLoggable(java.util.logging.Level.FINE)) {
-                log.log(java.util.logging.Level.FINE, "I was asked whether I can resolve " + context.uriToResolve);
+            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                log.log(j86.j86.java.util.logging.Level.FINE, "I was asked whether I can resolve " + context.uriToResolve);
             }
 
             if (context.uriToResolve.startsWith("file:") || context.baseUri.startsWith("file:")) {
-                if (log.isLoggable(java.util.logging.Level.FINE)) {
-                    log.log(java.util.logging.Level.FINE, "I state that I can resolve " + context.uriToResolve);
+                if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                    log.log(j86.j86.java.util.logging.Level.FINE, "I state that I can resolve " + context.uriToResolve);
                 }
                 return true;
             }
         } catch (Exception e) {
-            if (log.isLoggable(java.util.logging.Level.FINE)) {
-                log.log(java.util.logging.Level.FINE, e.getMessage(), e);
+            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                log.log(j86.j86.java.util.logging.Level.FINE, e.getMessage(), e);
             }
         }
 
-        if (log.isLoggable(java.util.logging.Level.FINE)) {
-            log.log(java.util.logging.Level.FINE, "But I can't");
+        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+            log.log(j86.j86.java.util.logging.Level.FINE, "But I can't");
         }
 
         return false;

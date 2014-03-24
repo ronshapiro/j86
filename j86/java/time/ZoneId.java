@@ -59,30 +59,30 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package java.time;
+package j86.java.time;
 
-import java.io.DataOutput;
-import java.io.IOException;
-import java.io.InvalidObjectException;
-import java.io.ObjectInputStream;
-import java.io.Serializable;
-import java.time.format.DateTimeFormatterBuilder;
-import java.time.format.TextStyle;
-import java.time.temporal.TemporalAccessor;
-import java.time.temporal.TemporalField;
-import java.time.temporal.TemporalQueries;
-import java.time.temporal.TemporalQuery;
-import java.time.temporal.UnsupportedTemporalTypeException;
-import java.time.zone.ZoneRules;
-import java.time.zone.ZoneRulesException;
-import java.time.zone.ZoneRulesProvider;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Locale;
-import java.util.Map;
-import java.util.Objects;
-import java.util.Set;
-import java.util.TimeZone;
+import j86.java.io.DataOutput;
+import j86.java.io.IOException;
+import j86.java.io.InvalidObjectException;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.Serializable;
+import j86.j86.java.time.format.DateTimeFormatterBuilder;
+import j86.j86.java.time.format.TextStyle;
+import j86.j86.java.time.temporal.TemporalAccessor;
+import j86.j86.java.time.temporal.TemporalField;
+import j86.j86.java.time.temporal.TemporalQueries;
+import j86.j86.java.time.temporal.TemporalQuery;
+import j86.j86.java.time.temporal.UnsupportedTemporalTypeException;
+import j86.j86.java.time.zone.ZoneRules;
+import j86.j86.java.time.zone.ZoneRulesException;
+import j86.j86.java.time.zone.ZoneRulesProvider;
+import j86.java.util.Collections;
+import j86.java.util.HashMap;
+import j86.java.util.Locale;
+import j86.java.util.Map;
+import j86.java.util.Objects;
+import j86.java.util.Set;
+import j86.java.util.TimeZone;
 
 /**
  * A time-zone ID, such as {@code Europe/Paris}.
@@ -161,7 +161,7 @@ import java.util.TimeZone;
  * queried, but not modified, on a Java Runtime with incomplete time-zone information.
  *
  * <p>
- * This is a <a href="{@docRoot}/java/lang/doc-files/ValueBased.html">value-based</a>
+ * This is a <a href="{@docRoot}/j86.java.lang/doc-files/ValueBased.html">value-based</a>
  * class; use of identity-sensitive operations (including reference equality
  * ({@code ==}), identity hash code, or synchronization) on instances of
  * {@code ZoneId} may have unpredictable results and should be avoided.
@@ -179,7 +179,7 @@ public abstract class ZoneId implements Serializable {
     /**
      * A map of zone overrides to enable the short time-zone names to be used.
      * <p>
-     * Use of short zone IDs has been deprecated in {@code java.util.TimeZone}.
+     * Use of short zone IDs has been deprecated in {@code j86.java.util.TimeZone}.
      * This map allows the IDs to continue to be used via the
      * {@link #of(String, Map)} factory method.
      * <p>
@@ -347,7 +347,7 @@ public abstract class ZoneId implements Serializable {
      *  The detailed format of the region ID depends on the group supplying the data.
      *  The default set of data is supplied by the IANA Time Zone Database (TZDB).
      *  This has region IDs of the form '{area}/{city}', such as 'Europe/Paris' or 'America/New_York'.
-     *  This is compatible with most IDs from {@link java.util.TimeZone}.
+     *  This is compatible with most IDs from {@link j86.java.util.TimeZone}.
      * </ul>
      *
      * @param zoneId  the time-zone ID, not null
@@ -643,7 +643,7 @@ public abstract class ZoneId implements Serializable {
     //-----------------------------------------------------------------------
     /**
      * Writes the object using a
-     * <a href="../../serialized-form.html#java.time.Ser">dedicated serialized form</a>.
+     * <a href="../../serialized-form.html#j86.java.time.Ser">dedicated serialized form</a>.
      * @serialData
      * <pre>
      *  out.writeByte(7);  // identifies a ZoneId (not ZoneOffset)

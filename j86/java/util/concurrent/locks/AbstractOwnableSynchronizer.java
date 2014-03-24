@@ -33,7 +33,7 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package java.util.concurrent.locks;
+package j86.j86.j86.java.util.concurrent.locks;
 
 /**
  * A synchronizer that may be exclusively owned by a thread.  This
@@ -48,7 +48,7 @@ package java.util.concurrent.locks;
  * @author Doug Lea
  */
 public abstract class AbstractOwnableSynchronizer
-    implements java.io.Serializable {
+    implements j86.java.io.Serializable {
 
     /** Use serial ID even though all fields transient. */
     private static final long serialVersionUID = 3737899427754241961L;

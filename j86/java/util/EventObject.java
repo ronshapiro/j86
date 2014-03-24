@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.util;
+package j86.java.util;
 
 /**
  * <p>
@@ -36,7 +36,7 @@ package java.util;
  * @since JDK1.1
  */
 
-public class EventObject implements java.io.Serializable {
+public class EventObject implements j86.java.io.Serializable {
 
     private static final long serialVersionUID = 5516075349620653480L;
 

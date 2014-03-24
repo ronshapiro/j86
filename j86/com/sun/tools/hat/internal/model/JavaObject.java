@@ -30,10 +30,10 @@
  * at JavaSoft/Sun.
  */
 
-package com.sun.tools.hat.internal.model;
+package j86.j86.com.sun.tools.hat.internal.model;
 
-import java.io.IOException;
-import com.sun.tools.hat.internal.parser.ReadBuffer;
+import j86.java.io.IOException;
+import j86.j86.com.sun.tools.hat.internal.parser.ReadBuffer;
 
 /**
  * Represents Java instance

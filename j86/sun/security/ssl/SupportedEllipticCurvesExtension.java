@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.security.ssl;
+package j86.sun.security.ssl;
 
-import java.io.IOException;
-import java.security.spec.ECParameterSpec;
-import java.util.HashMap;
-import java.util.Map;
+import j86.java.io.IOException;
+import j86.j86.java.security.spec.ECParameterSpec;
+import j86.java.util.HashMap;
+import j86.java.util.Map;
 
-import javax.net.ssl.SSLProtocolException;
+import j86.j86.javax.net.ssl.SSLProtocolException;
 
 final class SupportedEllipticCurvesExtension extends HelloExtension {
 
@@ -176,7 +176,7 @@ final class SupportedEllipticCurvesExtension extends HelloExtension {
     private final static int ARBITRARY_PRIME = 0xff01;
     private final static int ARBITRARY_CHAR2 = 0xff02;
 
-    // See sun.security.ec.NamedCurve for the OIDs
+    // See j86.sun.security.ec.NamedCurve for the OIDs
     private final static String[] NAMED_CURVE_OID_TABLE = new String[] {
         null,                   //  (0) unused
         "1.3.132.0.1",          //  (1) sect163k1, NIST K-163

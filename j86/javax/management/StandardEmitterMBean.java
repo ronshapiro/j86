@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.management;
+package j86.javax.management;
 
 /**
  * <p>An MBean whose management interface is determined by reflection

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.rmi.transport;
+package j86.sun.rmi.transport;
 
 public class TransportConstants {
     /** Transport magic number: "JRMI"*/

@@ -23,25 +23,25 @@
  * questions.
  */
 
-package sun.security.pkcs;
+package j86.sun.security.pkcs;
 
-import java.io.*;
-import java.util.Properties;
-import java.math.*;
-import java.security.Key;
-import java.security.KeyRep;
-import java.security.PrivateKey;
-import java.security.KeyFactory;
-import java.security.Security;
-import java.security.Provider;
-import java.security.InvalidKeyException;
-import java.security.NoSuchAlgorithmException;
-import java.security.spec.InvalidKeySpecException;
-import java.security.spec.PKCS8EncodedKeySpec;
+import j86.java.io.*;
+import j86.java.util.Properties;
+import j86.java.math.*;
+import j86.java.security.Key;
+import j86.java.security.KeyRep;
+import j86.java.security.PrivateKey;
+import j86.java.security.KeyFactory;
+import j86.java.security.Security;
+import j86.java.security.Provider;
+import j86.java.security.InvalidKeyException;
+import j86.java.security.NoSuchAlgorithmException;
+import j86.j86.java.security.spec.InvalidKeySpecException;
+import j86.j86.java.security.spec.PKCS8EncodedKeySpec;
 
-import sun.misc.HexDumpEncoder;
-import sun.security.x509.*;
-import sun.security.util.*;
+import j86.sun.misc.HexDumpEncoder;
+import j86.sun.security.x509.*;
+import j86.sun.security.util.*;
 
 /**
  * Holds a PKCS#8 key, for example a private key
@@ -356,7 +356,7 @@ public class PKCS8Key implements PrivateKey {
         decode(new ByteArrayInputStream(encodedKey));
     }
 
-    protected Object writeReplace() throws java.io.ObjectStreamException {
+    protected Object writeReplace() throws j86.java.io.ObjectStreamException {
         return new KeyRep(KeyRep.Type.PRIVATE,
                         getAlgorithm(),
                         getFormat(),

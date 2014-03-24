@@ -22,18 +22,18 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing;
+package j86.javax.swing;
 
-import java.awt.*;
-import java.awt.event.ActionEvent;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.ActionEvent;
 
-import java.io.ObjectOutputStream;
-import java.io.ObjectInputStream;
-import java.io.IOException;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.IOException;
 
-import javax.swing.text.*;
-import javax.swing.event.*;
-import javax.swing.plaf.*;
+import j86.j86.javax.swing.text.*;
+import j86.j86.javax.swing.event.*;
+import j86.j86.javax.swing.plaf.*;
 
 /**
  * A text component that can be marked up with attributes that are
@@ -69,15 +69,15 @@ import javax.swing.plaf.*;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @beaninfo
  *   attribute: isContainer true
  * description: A text component that can be marked up with attributes that are graphically represented.
  *
  * @author  Timothy Prinzing
- * @see javax.swing.text.StyledEditorKit
+ * @see j86.j86.javax.swing.text.StyledEditorKit
  */
 public class JTextPane extends JEditorPane {
 
@@ -100,7 +100,7 @@ public class JTextPane extends JEditorPane {
 
     /**
      * Creates a new <code>JTextPane</code>, with a specified document model.
-     * A new instance of <code>javax.swing.text.StyledEditorKit</code>
+     * A new instance of <code>j86.j86.javax.swing.text.StyledEditorKit</code>
      *  is created and set.
      *
      * @param doc the document model
@@ -451,7 +451,7 @@ public class JTextPane extends JEditorPane {
 
     /**
      * Creates the <code>EditorKit</code> to use by default.  This
-     * is implemented to return <code>javax.swing.text.StyledEditorKit</code>.
+     * is implemented to return <code>j86.j86.javax.swing.text.StyledEditorKit</code>.
      *
      * @return the editor kit
      */

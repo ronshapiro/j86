@@ -32,15 +32,15 @@
  */
 
 
-package com.sun.tools.example.debug.gui;
+package j86.com.sun.tools.example.debug.gui;
 
-import java.io.*;
-import java.util.*;
+import j86.java.io.*;
+import j86.java.util.*;
 
-import com.sun.jdi.*;
-import com.sun.jdi.request.*;
+import j86.com.sun.jdi.*;
+import j86.j86.com.sun.jdi.request.*;
 
-import javax.swing.*;
+import j86.javax.swing.*;
 
 /**
  * Represents and manages one source file.
@@ -166,7 +166,7 @@ public class SourceModel extends AbstractListModel {
     }
 
     /**
-     * @return List of currently known {@link com.sun.jdi.ReferenceType}
+     * @return List of currently known {@link j86.com.sun.jdi.ReferenceType}
      * in this source file.
      */
     public List<ReferenceType> referenceTypes() {

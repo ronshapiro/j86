@@ -25,10 +25,10 @@
 /*
  * $Id: XSLTTransformParameterSpec.java,v 1.4 2005/05/10 16:40:18 mullan Exp $
  */
-package javax.xml.crypto.dsig.spec;
+package j86.j86.j86.javax.xml.crypto.dsig.spec;
 
-import javax.xml.crypto.dsig.Transform;
-import javax.xml.crypto.XMLStructure;
+import j86.j86.javax.xml.crypto.dsig.Transform;
+import j86.javax.xml.crypto.XMLStructure;
 
 /**
  * Parameters for the <a href="http://www.w3.org/TR/1999/REC-xslt-19991116">

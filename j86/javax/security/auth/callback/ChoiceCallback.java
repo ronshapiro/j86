@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.security.auth.callback;
+package j86.j86.javax.security.auth.callback;
 
 /**
  * <p> Underlying security services instantiate and pass a
@@ -31,9 +31,9 @@ package javax.security.auth.callback;
  * method of a {@code CallbackHandler} to display a list of choices
  * and to retrieve the selected choice(s).
  *
- * @see javax.security.auth.callback.CallbackHandler
+ * @see j86.j86.javax.security.auth.callback.CallbackHandler
  */
-public class ChoiceCallback implements Callback, java.io.Serializable {
+public class ChoiceCallback implements Callback, j86.java.io.Serializable {
 
     private static final long serialVersionUID = -3975664071579892167L;
 

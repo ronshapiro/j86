@@ -23,17 +23,17 @@
  * questions.
  */
 
-package sun.reflect.generics.reflectiveObjects;
+package j86.j86.sun.reflect.generics.reflectiveObjects;
 
-import sun.reflect.generics.tree.FieldTypeSignature;
+import j86.j86.sun.reflect.generics.tree.FieldTypeSignature;
 
-import java.lang.reflect.MalformedParameterizedTypeException;
-import java.lang.reflect.Method;
-import java.lang.reflect.ParameterizedType;
-import java.lang.reflect.Type;
-import java.lang.reflect.TypeVariable;
-import java.util.Arrays;
-import java.util.Objects;
+import j86.j86.j86.java.lang.reflect.MalformedParameterizedTypeException;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.j86.j86.java.lang.reflect.ParameterizedType;
+import j86.j86.j86.java.lang.reflect.Type;
+import j86.j86.j86.java.lang.reflect.TypeVariable;
+import j86.java.util.Arrays;
+import j86.java.util.Objects;
 
 /** Implementing class for ParameterizedType interface. */
 
@@ -149,7 +149,7 @@ public class ParameterizedTypeImpl implements ParameterizedType {
     }
 
     /*
-     * From the JavaDoc for java.lang.reflect.ParameterizedType
+     * From the JavaDoc for j86.j86.j86.java.lang.reflect.ParameterizedType
      * "Instances of classes that implement this interface must
      * implement an equals() method that equates any two instances
      * that share the same generic type declaration and have equal

@@ -33,7 +33,7 @@
  ******************************************************************
  ******************************************************************/
 
-package java.awt.image;
+package j86.j86.j86.java.awt.image;
 
 /**
  *  This class represents image data which is stored in a band interleaved

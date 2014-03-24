@@ -57,7 +57,7 @@
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package jdk.internal.org.objectweb.asm;
+package j86.jdk.internal.org.objectweb.asm;
 
 /**
  * Information about a class being parsed in a {@link ClassReader}.

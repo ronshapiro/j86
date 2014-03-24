@@ -23,13 +23,13 @@
  * questions.
  */
 
-package com.sun.net.ssl.internal.ssl;
+package com.j86.sun.net.ssl.internal.ssl;
 
-import sun.security.ssl.SunJSSE;
+import j86.sun.security.ssl.SunJSSE;
 
 /**
  * Main class for the SunJSSE provider. The actual code was moved to the
- * class sun.security.ssl.SunJSSE, but for backward compatibility we
+ * class j86.sun.security.ssl.SunJSSE, but for backward compatibility we
  * continue to use this class as the main Provider class.
  */
 public final class Provider extends SunJSSE {
@@ -42,11 +42,11 @@ public final class Provider extends SunJSSE {
     }
 
     // preferred constructor to enable FIPS mode at runtime
-    public Provider(java.security.Provider cryptoProvider) {
+    public Provider(j86.java.security.Provider cryptoProvider) {
         super(cryptoProvider);
     }
 
-    // constructor to enable FIPS mode from java.security file
+    // constructor to enable FIPS mode from j86.java.security file
     public Provider(String cryptoProvider) {
         super(cryptoProvider);
     }

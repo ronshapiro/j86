@@ -35,7 +35,7 @@
  *******************************************************************************
  */
 
-package sun.text.normalizer;
+package j86.j86.sun.text.normalizer;
 
 /**
  * <code>UnicodeMatcher</code> defines a protocol for objects that can

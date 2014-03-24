@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.font;
+package j86.sun.font;
 
 public class FontScalerException extends Exception {
     public FontScalerException() {

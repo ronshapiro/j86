@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.java2d.pipe;
+package j86.j86.sun.java2d.pipe;
 
-import java.awt.Rectangle;
+import j86.java.awt.Rectangle;
 
 /**
  * This class defines the API for iterating through the bands

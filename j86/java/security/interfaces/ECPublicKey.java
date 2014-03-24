@@ -22,10 +22,10 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.security.interfaces;
+package j86.j86.java.security.interfaces;
 
-import java.security.PublicKey;
-import java.security.spec.ECPoint;
+import j86.java.security.PublicKey;
+import j86.j86.java.security.spec.ECPoint;
 
 /**
  * The interface to an elliptic curve (EC) public key.
@@ -35,7 +35,7 @@ import java.security.spec.ECPoint;
  *
  * @see PublicKey
  * @see ECKey
- * @see java.security.spec.ECPoint
+ * @see j86.j86.java.security.spec.ECPoint
  *
  * @since 1.5
  */

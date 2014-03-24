@@ -23,13 +23,13 @@
  * questions.
  */
 
-package java.awt;
+package j86.java.awt;
 
-import java.awt.MultipleGradientPaint.CycleMethod;
-import java.awt.MultipleGradientPaint.ColorSpaceType;
-import java.awt.geom.AffineTransform;
-import java.awt.geom.Rectangle2D;
-import java.awt.image.ColorModel;
+import j86.java.awt.MultipleGradientPaint.CycleMethod;
+import j86.java.awt.MultipleGradientPaint.ColorSpaceType;
+import j86.j86.java.awt.geom.AffineTransform;
+import j86.j86.java.awt.geom.Rectangle2D;
+import j86.j86.j86.java.awt.image.ColorModel;
 
 /**
  * Provides the actual implementation for the RadialGradientPaint.

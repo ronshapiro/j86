@@ -24,11 +24,11 @@
  */
 
 
-package javax.naming.directory;
+package j86.j86.javax.naming.directory;
 
-import java.util.Hashtable;
-import javax.naming.spi.NamingManager;
-import javax.naming.*;
+import j86.java.util.Hashtable;
+import j86.j86.javax.naming.spi.NamingManager;
+import j86.javax.naming.*;
 
 /**
  * This class is the starting context for performing
@@ -39,7 +39,7 @@ import javax.naming.*;
  * @author Rosanna Lee
  * @author Scott Seligman
  *
- * @see javax.naming.InitialContext
+ * @see j86.javax.naming.InitialContext
  * @since 1.3
  */
 
@@ -82,7 +82,7 @@ public class InitialDirContext extends InitialContext implements DirContext {
     /**
      * Constructs an initial DirContext using the supplied environment.
      * Environment properties are discussed in the
-     * <tt>javax.naming.InitialContext</tt> class description.
+     * <tt>j86.javax.naming.InitialContext</tt> class description.
      *
      * <p> This constructor will not modify <tt>environment</tt>
      * or save a reference to it, but may save a clone.

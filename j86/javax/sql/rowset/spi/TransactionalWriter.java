@@ -23,14 +23,14 @@
  * questions.
  */
 
-package javax.sql.rowset.spi;
+package j86.j86.j86.javax.sql.rowset.spi;
 
-import java.sql.SQLException;
-import java.io.Reader;
+import j86.java.sql.SQLException;
+import j86.java.io.Reader;
 
-import javax.sql.RowSetWriter;
-import javax.sql.rowset.*;
-import java.sql.Savepoint;
+import j86.javax.sql.RowSetWriter;
+import j86.j86.javax.sql.rowset.*;
+import j86.java.sql.Savepoint;
 
 /**
  * A specialized interface that facilitates an extension of the standard

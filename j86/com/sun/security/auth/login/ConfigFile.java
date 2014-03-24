@@ -23,21 +23,21 @@
  * questions.
  */
 
-package com.sun.security.auth.login;
+package j86.j86.com.sun.security.auth.login;
 
-import javax.security.auth.login.AppConfigurationEntry;
-import javax.security.auth.login.Configuration;
-import java.net.URI;
+import j86.j86.javax.security.auth.login.AppConfigurationEntry;
+import j86.j86.javax.security.auth.login.Configuration;
+import j86.java.net.URI;
 
 // NOTE: As of JDK 8, this class instantiates
-// sun.security.provider.ConfigFile.Spi and forwards all methods to that
+// j86.sun.security.provider.ConfigFile.Spi and forwards all methods to that
 // implementation. All implementation fixes and enhancements should be made to
-// sun.security.provider.ConfigFile.Spi and not this class.
+// j86.sun.security.provider.ConfigFile.Spi and not this class.
 // See JDK-8005117 for more information.
 
 /**
  * This class represents a default implementation for
- * {@code javax.security.auth.login.Configuration}.
+ * {@code j86.j86.javax.security.auth.login.Configuration}.
  *
  * <p> This object stores the runtime login configuration representation,
  * and is the amalgamation of multiple static login
@@ -55,8 +55,8 @@ import java.net.URI;
  *   each configuration.
  *
  * <li>
- *   The {@code java.lang.System} property
- *   <i>java.security.auth.login.config</i>
+ *   The {@code j86.java.lang.System} property
+ *   <i>j86.java.security.auth.login.config</i>
  *   may also be set to a {@code URL} pointing to another
  *   login configuration file
  *   (which is the case when a user uses the -D switch at runtime).
@@ -66,7 +66,7 @@ import java.net.URI;
  *   also load that login configuration.
  *
  * <li>
- *   If the <i>java.security.auth.login.config</i> property is defined using
+ *   If the <i>j86.java.security.auth.login.config</i> property is defined using
  *   "==" (rather than "="), then ignore all other specified
  *   login configurations and only load this configuration.
  *
@@ -78,15 +78,15 @@ import java.net.URI;
  *
  * <p> The configuration syntax supported by this implementation
  * is exactly that syntax specified in the
- * {@code javax.security.auth.login.Configuration} class.
+ * {@code j86.j86.javax.security.auth.login.Configuration} class.
  *
- * @see javax.security.auth.login.LoginContext
- * @see java.security.Security security properties
+ * @see j86.j86.javax.security.auth.login.LoginContext
+ * @see j86.java.security.Security security properties
  */
 @jdk.Exported
 public class ConfigFile extends Configuration {
 
-    private final sun.security.provider.ConfigFile.Spi spi;
+    private final j86.sun.security.provider.ConfigFile.Spi spi;
 
     /**
      * Create a new {@code Configuration} object.
@@ -95,7 +95,7 @@ public class ConfigFile extends Configuration {
      *                           initialized
      */
     public ConfigFile() {
-        spi = new sun.security.provider.ConfigFile.Spi();
+        spi = new j86.sun.security.provider.ConfigFile.Spi();
     }
 
     /**
@@ -107,7 +107,7 @@ public class ConfigFile extends Configuration {
      * @throws NullPointerException if {@code uri} is null
      */
     public ConfigFile(URI uri) {
-        spi = new sun.security.provider.ConfigFile.Spi(uri);
+        spi = new j86.sun.security.provider.ConfigFile.Spi(uri);
     }
 
     /**

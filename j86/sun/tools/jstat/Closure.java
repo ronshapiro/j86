@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.tools.jstat;
+package j86.sun.tools.jstat;
 
-import java.util.List;
-import sun.jvmstat.monitor.MonitorException;
+import j86.java.util.List;
+import j86.sun.jvmstat.monitor.MonitorException;
 
 /**
  * An interface for visitor object on a binary tree.

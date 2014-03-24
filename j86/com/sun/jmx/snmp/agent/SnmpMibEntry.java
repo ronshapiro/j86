@@ -23,13 +23,13 @@
  * questions.
  */
 
-package com.sun.jmx.snmp.agent;
+package j86.j86.com.sun.jmx.snmp.agent;
 
 // java imports
 //
-import com.sun.jmx.snmp.SnmpDefinitions;
-import java.io.Serializable;
-import com.sun.jmx.snmp.SnmpStatusException;
+import j86.com.sun.jmx.snmp.SnmpDefinitions;
+import j86.java.io.Serializable;
+import j86.com.sun.jmx.snmp.SnmpStatusException;
 
 /**
  * Represents a node in an SNMP MIB which corresponds to a table entry
@@ -83,7 +83,7 @@ public abstract class SnmpMibEntry extends SnmpMibNode
      *
      * @param userData A contextual object containing user-data.
      *        This object is allocated through the <code>
-     *        {@link com.sun.jmx.snmp.agent.SnmpUserDataFactory}</code>
+     *        {@link j86.j86.com.sun.jmx.snmp.agent.SnmpUserDataFactory}</code>
      *        for each incoming SNMP request.
      *
      * @exception If the given `arc' does not identify any variable in this

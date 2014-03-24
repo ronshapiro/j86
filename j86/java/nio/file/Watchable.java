@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.nio.file;
+package j86.j86.java.nio.file;
 
-import java.io.IOException;
+import j86.java.io.IOException;
 
 /**
  * An object that may be registered with a watch service so that it can be

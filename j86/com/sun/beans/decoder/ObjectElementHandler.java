@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.beans.decoder;
+package j86.j86.com.sun.beans.decoder;
 
-import java.beans.Expression;
+import j86.java.beans.Expression;
 
-import static java.util.Locale.ENGLISH;
+import static j86.java.util.Locale.ENGLISH;
 
 /**
  * This class is intended to handle &lt;object&gt; element.

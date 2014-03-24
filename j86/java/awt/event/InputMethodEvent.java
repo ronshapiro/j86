@@ -23,17 +23,17 @@
  * questions.
  */
 
-package java.awt.event;
+package j86.j86.java.awt.event;
 
-import java.awt.AWTEvent;
-import java.awt.Component;
-import java.awt.EventQueue;
-import java.awt.font.TextHitInfo;
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.text.AttributedCharacterIterator;
-import java.text.CharacterIterator;
-import java.lang.annotation.Native;
+import j86.java.awt.AWTEvent;
+import j86.java.awt.Component;
+import j86.java.awt.EventQueue;
+import j86.j86.java.awt.font.TextHitInfo;
+import j86.java.io.IOException;
+import j86.java.io.ObjectInputStream;
+import j86.java.text.AttributedCharacterIterator;
+import j86.java.text.CharacterIterator;
+import j86.j86.java.lang.annotation.Native;
 
 /**
  * Input method events contain information about text that is being
@@ -182,7 +182,7 @@ public class InputMethodEvent extends AWTEvent {
      * the composed text within the <code>text</code> of the
      * preceding <code>INPUT_METHOD_TEXT_CHANGED</code> event otherwise.
      * The time stamp for this event is initialized by invoking
-     * {@link java.awt.EventQueue#getMostRecentEventTime()}.
+     * {@link j86.java.awt.EventQueue#getMostRecentEventTime()}.
      * <p>Note that passing in an invalid <code>id</code> results in
      * unspecified behavior. This method throws an
      * <code>IllegalArgumentException</code> if <code>source</code>
@@ -236,7 +236,7 @@ public class InputMethodEvent extends AWTEvent {
      * <code>caret</code> and <code>visiblePosition</code> must be
      * <code>null</code>.
      * The time stamp for this event is initialized by invoking
-     * {@link java.awt.EventQueue#getMostRecentEventTime()}.
+     * {@link j86.java.awt.EventQueue#getMostRecentEventTime()}.
      * <p>Note that passing in an invalid <code>id</code> results in
      * unspecified behavior. This method throws an
      * <code>IllegalArgumentException</code> if <code>source</code>
@@ -405,7 +405,7 @@ public class InputMethodEvent extends AWTEvent {
     /**
      * Initializes the <code>when</code> field if it is not present in the
      * object input stream. In that case, the field will be initialized by
-     * invoking {@link java.awt.EventQueue#getMostRecentEventTime()}.
+     * invoking {@link j86.java.awt.EventQueue#getMostRecentEventTime()}.
      */
     private void readObject(ObjectInputStream s) throws ClassNotFoundException, IOException {
         s.defaultReadObject();

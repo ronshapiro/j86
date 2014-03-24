@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.rmi.rmic.newrmic;
+package j86.j86.sun.rmi.rmic.newrmic;
 
 import com.sun.javadoc.ClassDoc;
-import java.io.File;
-import java.util.Set;
+import j86.java.io.File;
+import j86.java.util.Set;
 
 /**
  * The interface to rmic back end implementations.  Classes that

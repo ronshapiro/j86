@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.lang.instrument;
+package j86.j86.java.lang.instrument;
 
 /*
  * Copyright 2003 Wily Technology, Inc.
@@ -33,7 +33,7 @@ package java.lang.instrument;
  * This class serves as a parameter block to the <code>Instrumentation.redefineClasses</code> method.
  * Serves to bind the <code>Class</code> that needs redefining together with the new class file bytes.
  *
- * @see     java.lang.instrument.Instrumentation#redefineClasses
+ * @see     j86.j86.java.lang.instrument.Instrumentation#redefineClasses
  * @since   1.5
  */
 public final class ClassDefinition {
@@ -54,7 +54,7 @@ public final class ClassDefinition {
      * @param theClass the <code>Class</code> that needs redefining
      * @param theClassFile the new class file bytes
      *
-     * @throws java.lang.NullPointerException if the supplied class or array is <code>null</code>.
+     * @throws j86.java.lang.NullPointerException if the supplied class or array is <code>null</code>.
      */
     public
     ClassDefinition(    Class<?> theClass,

@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.awt.image;
+package j86.j86.j86.sun.awt.image;
 
-import sun.java2d.SurfaceData;
+import j86.sun.java2d.SurfaceData;
 
 /**
  * This SurfaceManager variant manages an unaccelerated volatile surface.

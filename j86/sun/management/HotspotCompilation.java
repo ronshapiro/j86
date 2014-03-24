@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.management;
+package j86.sun.management;
 
-import java.util.regex.*;
-import java.util.List;
-import java.util.ListIterator;
-import java.util.Iterator;
-import java.util.ArrayList;
-import java.util.Map;
-import java.util.TreeMap;
-import sun.management.counter.*;
+import j86.j86.java.util.regex.*;
+import j86.java.util.List;
+import j86.java.util.ListIterator;
+import j86.java.util.Iterator;
+import j86.java.util.ArrayList;
+import j86.java.util.Map;
+import j86.java.util.TreeMap;
+import j86.j86.sun.management.counter.*;
 
 /**
  * Implementation class of HotspotCompilationMBean interface.
@@ -197,7 +197,7 @@ class HotspotCompilation
         return nmethodSize.longValue();
     }
 
-    public java.util.List<CompilerThreadStat> getCompilerThreadStats() {
+    public j86.java.util.List<CompilerThreadStat> getCompilerThreadStats() {
         List<CompilerThreadStat> list = new ArrayList<>(threads.length);
         int i = 0;
         if (threads[0] == null) {
@@ -228,7 +228,7 @@ class HotspotCompilation
                               -1);
     }
 
-    public java.util.List<Counter> getInternalCompilerCounters() {
+    public j86.java.util.List<Counter> getInternalCompilerCounters() {
         return jvm.getInternalCounters(CI_COUNTER_NAME_PATTERN);
     }
 }

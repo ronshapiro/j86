@@ -23,12 +23,12 @@
  * questions.
  */
 
-package com.sun.jmx.remote.internal;
+package j86.com.sun.jmx.remote.internal;
 
-import java.util.Properties;
-import java.rmi.Remote;
-import java.rmi.RemoteException;
-import java.rmi.NoSuchObjectException;
+import j86.java.util.Properties;
+import j86.java.rmi.Remote;
+import j86.java.rmi.RemoteException;
+import j86.java.rmi.NoSuchObjectException;
 
 /**
  * An interface to a subset of the RMI-IIOP and CORBA APIs to avoid a

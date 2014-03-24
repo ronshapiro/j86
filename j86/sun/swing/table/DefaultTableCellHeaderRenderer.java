@@ -22,22 +22,22 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.swing.table;
+package j86.j86.sun.swing.table;
 
-import sun.swing.DefaultLookup;
+import j86.sun.swing.DefaultLookup;
 
-import java.awt.Component;
-import java.awt.Color;
-import java.awt.FontMetrics;
-import java.awt.Graphics;
-import java.awt.Insets;
-import java.awt.Point;
-import java.awt.Rectangle;
-import java.io.Serializable;
-import javax.swing.*;
-import javax.swing.plaf.UIResource;
-import javax.swing.border.Border;
-import javax.swing.table.*;
+import j86.java.awt.Component;
+import j86.java.awt.Color;
+import j86.java.awt.FontMetrics;
+import j86.java.awt.Graphics;
+import j86.java.awt.Insets;
+import j86.java.awt.Point;
+import j86.java.awt.Rectangle;
+import j86.java.io.Serializable;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.plaf.UIResource;
+import j86.j86.javax.swing.border.Border;
+import j86.j86.javax.swing.table.*;
 
 public class DefaultTableCellHeaderRenderer extends DefaultTableCellRenderer
         implements UIResource {
@@ -130,7 +130,7 @@ public class DefaultTableCellHeaderRenderer extends DefaultTableCellRenderer
         if (table == null || table.getRowSorter() == null) {
             return rv;
         }
-        java.util.List<? extends RowSorter.SortKey> sortKeys =
+        j86.java.util.List<? extends RowSorter.SortKey> sortKeys =
             table.getRowSorter().getSortKeys();
         if (sortKeys.size() > 0 && sortKeys.get(0).getColumn() ==
             table.convertColumnIndexToModel(column)) {

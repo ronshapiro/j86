@@ -27,10 +27,10 @@
  *  Poseidon for UML is developed by <A HREF="http://www.gentleware.com">Gentleware</A>.
  *  Generated with <A HREF="http://jakarta.apache.org/velocity/">velocity</A> template engine.
  */
-package com.sun.pept.presentation;
+package j86.j86.com.sun.pept.presentation;
 
-import com.sun.pept.ept.MessageInfo;
-import java.util.*;
+import j86.j86.com.sun.pept.ept.MessageInfo;
+import j86.java.util.*;
 
 /**
  * <p>

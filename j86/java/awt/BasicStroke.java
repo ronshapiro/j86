@@ -23,11 +23,11 @@
  * questions.
  */
 
-package java.awt;
+package j86.java.awt;
 
-import java.beans.ConstructorProperties;
+import j86.java.beans.ConstructorProperties;
 
-import java.lang.annotation.Native;
+import j86.j86.java.lang.annotation.Native;
 
 /**
  * The <code>BasicStroke</code> class defines a basic set of rendering
@@ -46,14 +46,14 @@ import java.lang.annotation.Native;
  * <dd>The decoration applied to the ends of unclosed subpaths and
  * dash segments.  Subpaths that start and end on the same point are
  * still considered unclosed if they do not have a CLOSE segment.
- * See {@link java.awt.geom.PathIterator#SEG_CLOSE SEG_CLOSE}
+ * See {@link j86.j86.java.awt.geom.PathIterator#SEG_CLOSE SEG_CLOSE}
  * for more information on the CLOSE segment.
  * The three different decorations are: {@link #CAP_BUTT},
  * {@link #CAP_ROUND}, and {@link #CAP_SQUARE}.
  * <dt><i>line joins</i>
  * <dd>The decoration applied at the intersection of two path segments
  * and at the intersection of the endpoints of a subpath that is closed
- * using {@link java.awt.geom.PathIterator#SEG_CLOSE SEG_CLOSE}.
+ * using {@link j86.j86.java.awt.geom.PathIterator#SEG_CLOSE SEG_CLOSE}.
  * The three different decorations are: {@link #JOIN_BEVEL},
  * {@link #JOIN_MITER}, and {@link #JOIN_ROUND}.
  * <dt><i>miter limit</i>
@@ -296,8 +296,8 @@ public class BasicStroke implements Stroke {
      * @return the <code>Shape</code> of the stroked outline.
      */
     public Shape createStrokedShape(Shape s) {
-        sun.java2d.pipe.RenderingEngine re =
-            sun.java2d.pipe.RenderingEngine.getInstance();
+        j86.j86.sun.java2d.pipe.RenderingEngine re =
+            j86.j86.sun.java2d.pipe.RenderingEngine.getInstance();
         return re.createStrokedShape(s, width, cap, join, miterlimit,
                                      dash, dash_phase);
     }
@@ -434,7 +434,7 @@ public class BasicStroke implements Stroke {
                 return false;
             }
 
-            if (!java.util.Arrays.equals(dash, bs.dash)) {
+            if (!j86.java.util.Arrays.equals(dash, bs.dash)) {
                 return false;
             }
         }

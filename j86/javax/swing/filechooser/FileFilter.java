@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.swing.filechooser;
+package j86.j86.javax.swing.filechooser;
 
-import java.io.File;
+import j86.java.io.File;
 
 /**
  * <code>FileFilter</code> is an abstract class used by {@code JFileChooser}
@@ -43,8 +43,8 @@ import java.io.File;
  * a section in <em>The Java Tutorial</em>.
  *
  * @see FileNameExtensionFilter
- * @see javax.swing.JFileChooser#setFileFilter
- * @see javax.swing.JFileChooser#addChoosableFileFilter
+ * @see j86.javax.swing.JFileChooser#setFileFilter
+ * @see j86.javax.swing.JFileChooser#addChoosableFileFilter
  *
  * @author Jeff Dinkins
  */

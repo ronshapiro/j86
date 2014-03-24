@@ -23,17 +23,17 @@
  * questions.
  */
 
-package com.sun.tools.attach;
+package com.j86.sun.tools.attach;
 
 /**
  * The exception thrown when an agent fails to initialize in the target
  * Java virtual machine.
  *
  * <p> This exception is thrown by {@link
- * com.sun.tools.attach.VirtualMachine#loadAgent VirtualMachine.loadAgent},
- * {@link com.sun.tools.attach.VirtualMachine#loadAgentLibrary
+ * com.j86.sun.tools.attach.VirtualMachine#loadAgent VirtualMachine.loadAgent},
+ * {@link com.j86.sun.tools.attach.VirtualMachine#loadAgentLibrary
  * VirtualMachine.loadAgentLibrary}, {@link
- * com.sun.tools.attach.VirtualMachine#loadAgentPath VirtualMachine.loadAgentPath}
+ * com.j86.sun.tools.attach.VirtualMachine#loadAgentPath VirtualMachine.loadAgentPath}
  * methods if an agent, or agent library, cannot be initialized.
  * When thrown by <tt>VirtualMachine.loadAgentLibrary</tt>, or
  * <tt>VirtualMachine.loadAgentPath</tt> then the exception encapsulates

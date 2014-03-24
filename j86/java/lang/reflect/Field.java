@@ -23,22 +23,22 @@
  * questions.
  */
 
-package java.lang.reflect;
+package j86.j86.j86.java.lang.reflect;
 
-import sun.reflect.CallerSensitive;
-import sun.reflect.FieldAccessor;
-import sun.reflect.Reflection;
-import sun.reflect.generics.repository.FieldRepository;
-import sun.reflect.generics.factory.CoreReflectionFactory;
-import sun.reflect.generics.factory.GenericsFactory;
-import sun.reflect.generics.scope.ClassScope;
-import java.lang.annotation.Annotation;
-import java.util.Map;
-import java.util.Objects;
-import sun.reflect.annotation.AnnotationParser;
-import sun.reflect.annotation.AnnotationSupport;
-import sun.reflect.annotation.TypeAnnotation;
-import sun.reflect.annotation.TypeAnnotationParser;
+import j86.sun.reflect.CallerSensitive;
+import j86.sun.reflect.FieldAccessor;
+import j86.sun.reflect.Reflection;
+import j86.j86.sun.reflect.generics.repository.FieldRepository;
+import j86.j86.sun.reflect.generics.factory.CoreReflectionFactory;
+import j86.j86.sun.reflect.generics.factory.GenericsFactory;
+import j86.j86.sun.reflect.generics.scope.ClassScope;
+import j86.j86.java.lang.annotation.Annotation;
+import j86.java.util.Map;
+import j86.java.util.Objects;
+import j86.j86.sun.reflect.annotation.AnnotationParser;
+import j86.j86.sun.reflect.annotation.AnnotationSupport;
+import j86.j86.sun.reflect.annotation.TypeAnnotation;
+import j86.j86.sun.reflect.annotation.TypeAnnotationParser;
 
 /**
  * A {@code Field} provides information about, and dynamic access to, a
@@ -50,11 +50,11 @@ import sun.reflect.annotation.TypeAnnotationParser;
  * narrowing conversion would occur.
  *
  * @see Member
- * @see java.lang.Class
- * @see java.lang.Class#getFields()
- * @see java.lang.Class#getField(String)
- * @see java.lang.Class#getDeclaredFields()
- * @see java.lang.Class#getDeclaredField(String)
+ * @see j86.java.lang.Class
+ * @see j86.java.lang.Class#getFields()
+ * @see j86.java.lang.Class#getField(String)
+ * @see j86.java.lang.Class#getDeclaredFields()
+ * @see j86.java.lang.Class#getDeclaredField(String)
  *
  * @author Kenneth Russell
  * @author Nakul Saraiya
@@ -108,8 +108,8 @@ class Field extends AccessibleObject implements Member {
 
     /**
      * Package-private constructor used by ReflectAccess to enable
-     * instantiation of these objects in Java code from the java.lang
-     * package via sun.reflect.LangReflectAccess.
+     * instantiation of these objects in Java code from the j86.java.lang
+     * package via j86.sun.reflect.LangReflectAccess.
      */
     Field(Class<?> declaringClass,
           String name,
@@ -129,7 +129,7 @@ class Field extends AccessibleObject implements Member {
     }
 
     /**
-     * Package-private routine (exposed to java.lang.Class via
+     * Package-private routine (exposed to j86.java.lang.Class via
      * ReflectAccess) which returns a copy of this Field. The copy's
      * "root" field points to this Field.
      */
@@ -138,7 +138,7 @@ class Field extends AccessibleObject implements Member {
         // among Field objects which refer to the same underlying
         // method in the VM. (All of this contortion is only necessary
         // because of the "accessibility" bit in AccessibleObject,
-        // which implicitly requires that new java.lang.reflect
+        // which implicitly requires that new j86.j86.j86.java.lang.reflect
         // objects be fabricated for each reflective call on Class
         // objects.)
         Field res = new Field(clazz, name, type, modifiers, slot, signature, annotations);
@@ -277,8 +277,8 @@ class Field extends AccessibleObject implements Member {
      * followed by a period, followed by the name of the field.
      * For example:
      * <pre>
-     *    public static final int java.lang.Thread.MIN_PRIORITY
-     *    private int java.io.FileDescriptor.fd
+     *    public static final int j86.java.lang.Thread.MIN_PRIORITY
+     *    private int j86.java.io.FileDescriptor.fd
      * </pre>
      *
      * <p>The modifiers are placed in canonical order as specified by
@@ -1138,7 +1138,7 @@ class Field extends AccessibleObject implements Member {
     private synchronized  Map<Class<? extends Annotation>, Annotation> declaredAnnotations() {
         if (declaredAnnotations == null) {
             declaredAnnotations = AnnotationParser.parseAnnotations(
-                annotations, sun.misc.SharedSecrets.getJavaLangAccess().
+                annotations, j86.sun.misc.SharedSecrets.getJavaLangAccess().
                 getConstantPool(getDeclaringClass()),
                 getDeclaringClass());
         }
@@ -1157,7 +1157,7 @@ class Field extends AccessibleObject implements Member {
      */
     public AnnotatedType getAnnotatedType() {
         return TypeAnnotationParser.buildAnnotatedType(getTypeAnnotationBytes0(),
-                                                       sun.misc.SharedSecrets.getJavaLangAccess().
+                                                       j86.sun.misc.SharedSecrets.getJavaLangAccess().
                                                            getConstantPool(getDeclaringClass()),
                                                        this,
                                                        getDeclaringClass(),

@@ -23,24 +23,24 @@
  * questions.
  */
 
-package java.lang.invoke;
+package j86.j86.java.lang.invoke;
 
-import jdk.internal.org.objectweb.asm.*;
-import sun.invoke.util.BytecodeDescriptor;
-import sun.misc.Unsafe;
-import sun.security.action.GetPropertyAction;
+import j86.jdk.internal.org.objectweb.asm.*;
+import j86.j86.sun.invoke.util.BytecodeDescriptor;
+import j86.sun.misc.Unsafe;
+import j86.sun.security.action.GetPropertyAction;
 
-import java.io.FilePermission;
-import java.io.Serializable;
-import java.lang.reflect.Constructor;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.util.LinkedHashSet;
-import java.util.concurrent.atomic.AtomicInteger;
-import java.util.PropertyPermission;
-import java.util.Set;
+import j86.java.io.FilePermission;
+import j86.java.io.Serializable;
+import j86.j86.j86.java.lang.reflect.Constructor;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.util.LinkedHashSet;
+import j86.j86.j86.java.util.concurrent.atomic.AtomicInteger;
+import j86.java.util.PropertyPermission;
+import j86.java.util.Set;
 
-import static jdk.internal.org.objectweb.asm.Opcodes.*;
+import static j86.jdk.internal.org.objectweb.asm.Opcodes.*;
 
 /**
  * Lambda metafactory implementation which dynamically creates an
@@ -53,16 +53,16 @@ import static jdk.internal.org.objectweb.asm.Opcodes.*;
 
     private static final int CLASSFILE_VERSION = 52;
     private static final String METHOD_DESCRIPTOR_VOID = Type.getMethodDescriptor(Type.VOID_TYPE);
-    private static final String JAVA_LANG_OBJECT = "java/lang/Object";
+    private static final String JAVA_LANG_OBJECT = "j86.java.lang/Object";
     private static final String NAME_CTOR = "<init>";
     private static final String NAME_FACTORY = "get$Lambda";
 
     //Serialization support
-    private static final String NAME_SERIALIZED_LAMBDA = "java/lang/invoke/SerializedLambda";
-    private static final String NAME_NOT_SERIALIZABLE_EXCEPTION = "java/io/NotSerializableException";
-    private static final String DESCR_METHOD_WRITE_REPLACE = "()Ljava/lang/Object;";
-    private static final String DESCR_METHOD_WRITE_OBJECT = "(Ljava/io/ObjectOutputStream;)V";
-    private static final String DESCR_METHOD_READ_OBJECT = "(Ljava/io/ObjectInputStream;)V";
+    private static final String NAME_SERIALIZED_LAMBDA = "j86.j86.java.lang.invoke/SerializedLambda";
+    private static final String NAME_NOT_SERIALIZABLE_EXCEPTION = "j86.java.io/NotSerializableException";
+    private static final String DESCR_METHOD_WRITE_REPLACE = "()Lj86.java.lang/Object;";
+    private static final String DESCR_METHOD_WRITE_OBJECT = "(Lj86.java.io/ObjectOutputStream;)V";
+    private static final String DESCR_METHOD_READ_OBJECT = "(Lj86.java.io/ObjectInputStream;)V";
     private static final String NAME_METHOD_WRITE_REPLACE = "writeReplace";
     private static final String NAME_METHOD_READ_OBJECT = "readObject";
     private static final String NAME_METHOD_WRITE_OBJECT = "writeObject";
@@ -97,8 +97,8 @@ import static jdk.internal.org.objectweb.asm.Opcodes.*;
     // See context values in AbstractValidatingLambdaMetafactory
     private final String implMethodClassName;        // Name of type containing implementation "CC"
     private final String implMethodName;             // Name of implementation method "impl"
-    private final String implMethodDesc;             // Type descriptor for implementation methods "(I)Ljava/lang/String;"
-    private final Class<?> implMethodReturnClass;    // class for implementaion method return type "Ljava/lang/String;"
+    private final String implMethodDesc;             // Type descriptor for implementation methods "(I)Lj86.java.lang/String;"
+    private final Class<?> implMethodReturnClass;    // class for implementaion method return type "Lj86.java.lang/String;"
     private final MethodType constructorType;        // Generated class constructor type "(CC)void"
     private final ClassWriter cw;                    // ASM class writer
     private final String[] argNames;                 // Generated names for the constructor arguments

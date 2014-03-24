@@ -23,11 +23,11 @@
  * questions.
  */
 
-package org.ietf.jgss;
+package j86.org.ietf.jgss;
 
-import sun.security.jgss.spi.*;
-import java.io.InputStream;
-import java.io.OutputStream;
+import j86.j86.sun.security.jgss.spi.*;
+import j86.java.io.InputStream;
+import j86.java.io.OutputStream;
 
 /**
  * This interface encapsulates the GSS-API security context and provides
@@ -182,7 +182,7 @@ public interface GSSContext {
     /**
      * A lifetime constant representing indefinite context lifetime.
      * This value must is set to the maximum integer value in Java -
-     * {@link java.lang.Integer#MAX_VALUE Integer.MAX_VALUE}.
+     * {@link j86.java.lang.Integer#MAX_VALUE Integer.MAX_VALUE}.
      */
     public static final int INDEFINITE_LIFETIME = Integer.MAX_VALUE;
 
@@ -209,7 +209,7 @@ public interface GSSContext {
      *
      * Some mechanism providers might require that the caller be granted
      * permission to initiate a security context. A failed permission check
-     * might cause a {@link java.lang.SecurityException SecurityException}
+     * might cause a {@link j86.java.lang.SecurityException SecurityException}
      * to be thrown from this method.<p>
      *
      * @return a byte[] containing the token to be sent to the
@@ -244,7 +244,7 @@ public interface GSSContext {
      * <code>OutpuStream</code>, which the application will
      * need to send to the peer for processing by its
      * <code>acceptSecContext</code> call. Typically, the application would
-     * ensure this by calling the  {@link java.io.OutputStream#flush() flush}
+     * ensure this by calling the  {@link j86.java.io.OutputStream#flush() flush}
      * method on an <code>OutputStream</code> that encapsulates the
      * connection between the two peers. The application can
      * determine if a token is written to the OutputStream from the return
@@ -273,7 +273,7 @@ public interface GSSContext {
      *
      * Some mechanism providers might require that the caller be granted
      * permission to initiate a security context. A failed permission check
-     * might cause a {@link java.lang.SecurityException SecurityException}
+     * might cause a {@link j86.java.lang.SecurityException SecurityException}
      * to be thrown from this method.<p>
      *
      * The following example code demonstrates how this method might be
@@ -343,7 +343,7 @@ public interface GSSContext {
      *
      * Some mechanism providers might require that the caller be granted
      * permission to accept a security context. A failed permission check
-     * might cause a {@link java.lang.SecurityException SecurityException}
+     * might cause a {@link j86.java.lang.SecurityException SecurityException}
      * to be thrown from this method.<p>
      *
      * The following example code demonstrates how this method might be
@@ -394,7 +394,7 @@ public interface GSSContext {
      * <code>OutputStream</code>, which the application
      * will need to send to the peer for processing by its
      * <code>initSecContext</code> method.  Typically, the application would
-     * ensure this by calling the  {@link java.io.OutputStream#flush() flush}
+     * ensure this by calling the  {@link j86.java.io.OutputStream#flush() flush}
      * method on an <code>OutputStream</code> that encapsulates the
      * connection between the two peers. The application can call
      * {@link #isEstablished() isEstablished} to determine if the context
@@ -420,7 +420,7 @@ public interface GSSContext {
      *
      * Some mechanism providers might require that the caller be granted
      * permission to accept a security context. A failed permission check
-     * might cause a {@link java.lang.SecurityException SecurityException}
+     * might cause a {@link j86.java.lang.SecurityException SecurityException}
      * to be thrown from this method.<p>
      *
      * The following example code demonstrates how this method might be
@@ -581,7 +581,7 @@ public interface GSSContext {
      *
      * The application will be responsible for sending the token to the
      * peer.  Typically, the application would
-     * ensure this by calling the  {@link java.io.OutputStream#flush() flush}
+     * ensure this by calling the  {@link j86.java.io.OutputStream#flush() flush}
      * method on an <code>OutputStream</code> that encapsulates the
      * connection between the two peers.<p>
      *

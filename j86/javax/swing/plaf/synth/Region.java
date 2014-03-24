@@ -22,15 +22,15 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.plaf.synth;
+package j86.j86.j86.javax.swing.plaf.synth;
 
-import sun.awt.AppContext;
+import j86.sun.awt.AppContext;
 
-import java.util.HashMap;
-import java.util.Locale;
-import java.util.Map;
-import javax.swing.JComponent;
-import javax.swing.UIDefaults;
+import j86.java.util.HashMap;
+import j86.java.util.Locale;
+import j86.java.util.Map;
+import j86.javax.swing.JComponent;
+import j86.javax.swing.UIDefaults;
 
 /**
  * A distinct rendering area of a Swing component.  A component may
@@ -496,7 +496,7 @@ public class Region {
 
     static void registerUIs(UIDefaults table) {
         for (Object key : getUItoRegionMap().keySet()) {
-            table.put(key, "javax.swing.plaf.synth.SynthLookAndFeel");
+            table.put(key, "j86.j86.j86.javax.swing.plaf.synth.SynthLookAndFeel");
         }
     }
 

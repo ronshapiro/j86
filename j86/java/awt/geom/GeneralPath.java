@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.awt.geom;
+package j86.j86.java.awt.geom;
 
-import java.awt.Shape;
+import j86.java.awt.Shape;
 
 /**
  * The {@code GeneralPath} class represents a geometric path

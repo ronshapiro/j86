@@ -23,14 +23,14 @@
  * questions.
  */
 
-package java.lang;
+package j86.java.lang;
 
 /**
  * Thrown if the Java Virtual Machine cannot find an appropriate
  * native-language definition of a method declared <code>native</code>.
  *
  * @author unascribed
- * @see     java.lang.Runtime
+ * @see     j86.java.lang.Runtime
  * @since   JDK1.0
  */
 public

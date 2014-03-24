@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.misc;
+package j86.sun.misc;
 
 /**
  * The CRC-16 class calculates a 16 bit cyclic redundancy check of a set

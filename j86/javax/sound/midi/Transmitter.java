@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.sound.midi;
+package j86.javax.sound.midi;
 
 
 /**
@@ -68,9 +68,9 @@ public interface Transmitter extends AutoCloseable {
      * by calling {@link MidiDevice#close MidiDevice.close}, the
      * <code>Transmitter</code> is closed, too.  For a detailed
      * description of open/close behaviour see the class description
-     * of {@link javax.sound.midi.MidiDevice MidiDevice}.
+     * of {@link j86.javax.sound.midi.MidiDevice MidiDevice}.
      *
-     * @see javax.sound.midi.MidiSystem#getTransmitter
+     * @see j86.javax.sound.midi.MidiSystem#getTransmitter
      */
     public void close();
 }

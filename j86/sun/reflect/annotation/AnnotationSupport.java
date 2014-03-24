@@ -23,21 +23,21 @@
  * questions.
  */
 
-package sun.reflect.annotation;
+package j86.j86.sun.reflect.annotation;
 
-import java.lang.annotation.*;
-import java.lang.reflect.*;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
-import java.util.Objects;
+import j86.j86.java.lang.annotation.*;
+import j86.j86.j86.java.lang.reflect.*;
+import j86.java.util.ArrayList;
+import j86.java.util.Arrays;
+import j86.java.util.Collections;
+import j86.java.util.List;
+import j86.java.util.Map;
+import j86.java.util.Objects;
 
-import sun.misc.JavaLangAccess;
+import j86.sun.misc.JavaLangAccess;
 
 public final class AnnotationSupport {
-    private static final JavaLangAccess LANG_ACCESS = sun.misc.SharedSecrets.getJavaLangAccess();
+    private static final JavaLangAccess LANG_ACCESS = j86.sun.misc.SharedSecrets.getJavaLangAccess();
 
     /**
      * Finds and returns all annotations in {@code annotations} matching

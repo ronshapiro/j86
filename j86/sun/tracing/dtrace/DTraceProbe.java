@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.tracing.dtrace;
+package j86.j86.sun.tracing.dtrace;
 
-import java.lang.reflect.Method;
-import java.lang.reflect.InvocationTargetException;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.j86.j86.java.lang.reflect.InvocationTargetException;
 
-import sun.tracing.ProbeSkeleton;
+import j86.sun.tracing.ProbeSkeleton;
 
 class DTraceProbe extends ProbeSkeleton {
     private Object proxy;

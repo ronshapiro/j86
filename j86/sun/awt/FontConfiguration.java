@@ -23,34 +23,34 @@
  * questions.
  */
 
-package sun.awt;
+package j86.sun.awt;
 
-import java.awt.Font;
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.InputStream;
-import java.io.IOException;
-import java.io.OutputStream;
-import java.nio.charset.Charset;
-import java.nio.charset.CharsetEncoder;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Hashtable;
-import java.util.Locale;
-import java.util.Map.Entry;
-import java.util.Properties;
-import java.util.Set;
-import java.util.Vector;
-import sun.font.CompositeFontDescriptor;
-import sun.font.SunFontManager;
-import sun.font.FontManagerFactory;
-import sun.font.FontUtilities;
-import sun.util.logging.PlatformLogger;
+import j86.java.awt.Font;
+import j86.java.io.DataInputStream;
+import j86.java.io.DataOutputStream;
+import j86.java.io.File;
+import j86.java.io.FileInputStream;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
+import j86.java.io.OutputStream;
+import j86.j86.java.nio.charset.Charset;
+import j86.j86.java.nio.charset.CharsetEncoder;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.util.Arrays;
+import j86.java.util.HashMap;
+import j86.java.util.HashSet;
+import j86.java.util.Hashtable;
+import j86.java.util.Locale;
+import j86.java.util.Map.Entry;
+import j86.java.util.Properties;
+import j86.java.util.Set;
+import j86.java.util.Vector;
+import j86.sun.font.CompositeFontDescriptor;
+import j86.sun.font.SunFontManager;
+import j86.sun.font.FontManagerFactory;
+import j86.sun.font.FontUtilities;
+import j86.j86.sun.util.logging.PlatformLogger;
 
 /**
  * Provides the definitions of the five logical fonts: Serif, SansSerif,
@@ -87,7 +87,7 @@ public abstract class FontConfiguration {
                 .info("Creating standard Font Configuration");
         }
         if (FontUtilities.debugFonts() && logger == null) {
-            logger = PlatformLogger.getLogger("sun.awt.FontConfiguration");
+            logger = PlatformLogger.getLogger("j86.sun.awt.FontConfiguration");
         }
         fontManager = fm;
         setOsNameAndVersion();  /* static initialization */
@@ -159,8 +159,8 @@ public abstract class FontConfiguration {
         short fontNameID = compFontNameIDs[0][0][0];
         short fileNameID = getComponentFileID(fontNameID);
         final String fileName = mapFileName(getComponentFileName(fileNameID));
-        Boolean exists = (Boolean)java.security.AccessController.doPrivileged(
-            new java.security.PrivilegedAction() {
+        Boolean exists = (Boolean)j86.java.security.AccessController.doPrivileged(
+            new j86.java.security.PrivilegedAction() {
                  public Object run() {
                      try {
                          File f = new File(fileName);
@@ -182,7 +182,7 @@ public abstract class FontConfiguration {
             throw new Error("java.home property not set");
         }
         javaLib = javaHome + File.separator + "lib";
-        String userConfigFile = System.getProperty("sun.awt.fontconfig");
+        String userConfigFile = System.getProperty("j86.sun.awt.fontconfig");
         if (userConfigFile != null) {
             fontConfigFile = new File(userConfigFile);
         } else {
@@ -390,7 +390,7 @@ public abstract class FontConfiguration {
         stringTable = new StringBuilder(4096);
 
         if (verbose && logger == null) {
-            logger = PlatformLogger.getLogger("sun.awt.FontConfiguration");
+            logger = PlatformLogger.getLogger("j86.sun.awt.FontConfiguration");
         }
         new PropertiesHandler().load(in);
 
@@ -688,7 +688,7 @@ public abstract class FontConfiguration {
     /**
      * Returns the font face name for the given logical font
      * family name and style.
-     * The style argument is interpreted as in java.awt.Font.Font.
+     * The style argument is interpreted as in j86.java.awt.Font.Font.
      */
     public static String getLogicalFontFaceName(String familyName, int style) {
         assert isLogicalFontFamilyName(familyName);
@@ -698,7 +698,7 @@ public abstract class FontConfiguration {
     /**
      * Returns the string typically used in properties files
      * for the given style.
-     * The style argument is interpreted as in java.awt.Font.Font.
+     * The style argument is interpreted as in j86.java.awt.Font.Font.
      */
     public static String getStyleString(int style) {
         return getStyleName(getStyleIndex(style));
@@ -846,7 +846,7 @@ public abstract class FontConfiguration {
      * Returns FontDescriptors describing the physical fonts used for the
      * given logical font name and style. The font name is interpreted
      * in a case insensitive way.
-     * The style argument is interpreted as in java.awt.Font.Font.
+     * The style argument is interpreted as in j86.java.awt.Font.Font.
      */
     public FontDescriptor[] getFontDescriptors(String fontName, int style) {
         assert isLogicalFontFamilyName(fontName);
@@ -919,7 +919,7 @@ public abstract class FontConfiguration {
     }
 
     /**
-     * Returns the java.io name of the platform character encoding for the
+     * Returns the j86.java.io name of the platform character encoding for the
      * given AWT font name and character subset. May return "default"
      * to indicate that getDefaultFontCharset should be called to obtain
      * a charset encoder.
@@ -940,7 +940,7 @@ public abstract class FontConfiguration {
             return fc.newEncoder();
         }
 
-        if (!charsetName.startsWith("sun.awt.") && !charsetName.equals("default")) {
+        if (!charsetName.startsWith("j86.sun.awt.") && !charsetName.equals("default")) {
             fc = Charset.forName(charsetName);
         } else {
             Class fcc = (Class) AccessController.doPrivileged(new PrivilegedAction() {
@@ -1377,8 +1377,8 @@ public abstract class FontConfiguration {
 
         //This method will only be called during build time, do we
         //need do PrivilegedAction?
-        String osName = (String)java.security.AccessController.doPrivileged(
-                            new java.security.PrivilegedAction() {
+        String osName = (String)j86.java.security.AccessController.doPrivileged(
+                            new j86.java.security.PrivilegedAction() {
             public Object run() {
                 return System.getProperty("os.name");
             }

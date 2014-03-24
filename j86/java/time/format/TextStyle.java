@@ -59,9 +59,9 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package java.time.format;
+package j86.j86.java.time.format;
 
-import java.util.Calendar;
+import j86.java.util.Calendar;
 
 /**
  * Enumeration of the style of text formatting and parsing.
@@ -162,10 +162,10 @@ public enum TextStyle {
 
     /**
      * Returns the relative index value to an element of the {@link
-     * java.text.DateFormatSymbols#getZoneStrings() DateFormatSymbols.getZoneStrings()}
+     * j86.java.text.DateFormatSymbols#getZoneStrings() DateFormatSymbols.getZoneStrings()}
      * value, 0 for long names and 1 for short names (abbreviations). Note that these values
-     * do <em>not</em> correspond to the {@link java.util.TimeZone#LONG} and {@link
-     * java.util.TimeZone#SHORT} values.
+     * do <em>not</em> correspond to the {@link j86.java.util.TimeZone#LONG} and {@link
+     * j86.java.util.TimeZone#SHORT} values.
      *
      * @return the relative index value to time zone names array
      */

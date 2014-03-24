@@ -23,20 +23,20 @@
  * questions.
  */
 
-package sun.security.krb5.internal.crypto.dk;
+package j86.j86.j86.j86.sun.security.krb5.internal.crypto.dk;
 
-import javax.crypto.Cipher;
-import javax.crypto.Mac;
-import javax.crypto.SecretKeyFactory;
-import javax.crypto.SecretKey;
-import javax.crypto.spec.SecretKeySpec;
-import javax.crypto.spec.DESKeySpec;
-import javax.crypto.spec.DESedeKeySpec;
-import javax.crypto.spec.IvParameterSpec;
-import java.security.spec.KeySpec;
-import java.security.GeneralSecurityException;
-import java.security.InvalidKeyException;
-import java.util.Arrays;
+import j86.javax.crypto.Cipher;
+import j86.javax.crypto.Mac;
+import j86.javax.crypto.SecretKeyFactory;
+import j86.javax.crypto.SecretKey;
+import j86.j86.javax.crypto.spec.SecretKeySpec;
+import j86.j86.javax.crypto.spec.DESKeySpec;
+import j86.j86.javax.crypto.spec.DESedeKeySpec;
+import j86.j86.javax.crypto.spec.IvParameterSpec;
+import j86.j86.java.security.spec.KeySpec;
+import j86.java.security.GeneralSecurityException;
+import j86.java.security.InvalidKeyException;
+import j86.java.util.Arrays;
 
 public class Des3DkCrypto extends DkCrypto {
 

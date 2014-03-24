@@ -24,7 +24,7 @@
  */
 
 
-package javax.print.attribute;
+package j86.j86.javax.print.attribute;
 
 /**
  * Interface PrintServiceAttributeSet specifies the interface for a set of

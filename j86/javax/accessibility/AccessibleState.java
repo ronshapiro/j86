@@ -23,12 +23,12 @@
  * questions.
  */
 
-package javax.accessibility;
+package j86.javax.accessibility;
 
-import java.util.Vector;
-import java.util.Locale;
-import java.util.MissingResourceException;
-import java.util.ResourceBundle;
+import j86.java.util.Vector;
+import j86.java.util.Locale;
+import j86.java.util.MissingResourceException;
+import j86.java.util.ResourceBundle;
 
 /**
  * <P>Class AccessibleState describes a component's particular state.  The actual

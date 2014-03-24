@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.net;
+package j86.sun.net;
 
-import java.net.Proxy;
-import java.net.SocketAddress;
+import j86.java.net.Proxy;
+import j86.java.net.SocketAddress;
 
 /**
  * Proxy wrapper class so that we can determine application set

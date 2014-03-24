@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.tools.java;
+package j86.sun.tools.java;
 
 /**
  * WARNING: The contents of this source file are not part of any

@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.awt;
+package j86.java.awt;
 
-import java.awt.image.BufferStrategy;
-import java.awt.peer.CanvasPeer;
-import javax.accessibility.*;
+import j86.j86.j86.java.awt.image.BufferStrategy;
+import j86.j86.java.awt.peer.CanvasPeer;
+import j86.javax.accessibility.*;
 
 /**
  * A <code>Canvas</code> component represents a blank rectangular
@@ -93,8 +93,8 @@ public class Canvas extends Component implements Accessible {
     /**
      * Creates the peer of the canvas.  This peer allows you to change the
      * user interface of the canvas without changing its functionality.
-     * @see     java.awt.Toolkit#createCanvas(java.awt.Canvas)
-     * @see     java.awt.Component#getToolkit()
+     * @see     j86.java.awt.Toolkit#createCanvas(java.awt.Canvas)
+     * @see     j86.java.awt.Component#getToolkit()
      */
     public void addNotify() {
         synchronized (getTreeLock()) {

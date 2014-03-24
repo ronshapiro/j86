@@ -30,16 +30,16 @@
  * at JavaSoft/Sun.
  */
 
-package com.sun.tools.hat.internal.model;
+package j86.j86.com.sun.tools.hat.internal.model;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.InputStreamReader;
-import java.io.Reader;
-import java.io.BufferedReader;
-import java.io.IOException;
+import j86.java.io.File;
+import j86.java.io.FileInputStream;
+import j86.java.io.InputStreamReader;
+import j86.java.io.Reader;
+import j86.java.io.BufferedReader;
+import j86.java.io.IOException;
 
-import java.util.Hashtable;
+import j86.java.util.Hashtable;
 
 /**
  * This represents a set of data members that should be excluded from the

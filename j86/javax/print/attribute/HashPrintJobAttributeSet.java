@@ -24,9 +24,9 @@
  */
 
 
-package javax.print.attribute;
+package j86.j86.javax.print.attribute;
 
-import java.io.Serializable;
+import j86.java.io.Serializable;
 
 /**
  * Class HashPrintJobAttributeSet provides an attribute set

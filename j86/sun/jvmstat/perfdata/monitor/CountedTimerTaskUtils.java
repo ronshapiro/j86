@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.jvmstat.perfdata.monitor;
+package j86.sun.jvmstat.perfdata.monitor;
 
-import java.util.*;
+import j86.java.util.*;
 
 /**
  * Utility methods for use with {@link CountedTimerTask} instances.

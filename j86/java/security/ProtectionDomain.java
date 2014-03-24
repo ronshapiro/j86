@@ -23,20 +23,20 @@
  * questions.
  */
 
-package java.security;
+package j86.java.security;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Enumeration;
-import java.util.List;
-import java.util.Map;
-import java.util.WeakHashMap;
-import sun.misc.JavaSecurityProtectionDomainAccess;
-import static sun.misc.JavaSecurityProtectionDomainAccess.ProtectionDomainCache;
-import sun.security.util.Debug;
-import sun.security.util.SecurityConstants;
-import sun.misc.JavaSecurityAccess;
-import sun.misc.SharedSecrets;
+import j86.java.util.ArrayList;
+import j86.java.util.Collections;
+import j86.java.util.Enumeration;
+import j86.java.util.List;
+import j86.java.util.Map;
+import j86.java.util.WeakHashMap;
+import j86.sun.misc.JavaSecurityProtectionDomainAccess;
+import static j86.sun.misc.JavaSecurityProtectionDomainAccess.ProtectionDomainCache;
+import j86.sun.security.util.Debug;
+import j86.sun.security.util.SecurityConstants;
+import j86.sun.misc.JavaSecurityAccess;
+import j86.sun.misc.SharedSecrets;
 
 /**
  *
@@ -250,7 +250,7 @@ public class ProtectionDomain {
      * However, if the ProtectionDomain was constructed with
      * the constructor variant which supports
      * {@link #ProtectionDomain(CodeSource, PermissionCollection,
-     * ClassLoader, java.security.Principal[]) dynamically binding}
+     * ClassLoader, j86.java.security.Principal[]) dynamically binding}
      * permissions, then the permission will be checked against the
      * combination of the PermissionCollection supplied at construction and
      * the current Policy binding.
@@ -360,8 +360,8 @@ public class ProtectionDomain {
             return permissions;
 
         PermissionCollection perms =
-            java.security.AccessController.doPrivileged
-            (new java.security.PrivilegedAction<PermissionCollection>() {
+            j86.java.security.AccessController.doPrivileged
+            (new j86.java.security.PrivilegedAction<PermissionCollection>() {
                     public PermissionCollection run() {
                         Policy p = Policy.getPolicyNoCheck();
                         return p.getPermissions(ProtectionDomain.this);

@@ -22,10 +22,10 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.management.snmp.jvminstr;
+package j86.j86.j86.sun.management.snmp.jvminstr;
 
-import java.net.InetAddress;
-import java.net.UnknownHostException;
+import j86.java.net.InetAddress;
+import j86.java.net.UnknownHostException;
 
 /**
  * Notification Target data.
@@ -36,7 +36,7 @@ public class NotificationTargetImpl implements NotificationTarget {
     private String community;
 
     /**
-     * Target parameter is a <CODE>java.lang.String</CODE>
+     * Target parameter is a <CODE>j86.java.lang.String</CODE>
      * target synctax is <host>:<port>:community. Eg: "localhost:163:private".
      * <p>The <code><em>host</em></code> is a host name, an IPv4 numeric
      * host address, or an IPv6 numeric address enclosed in square

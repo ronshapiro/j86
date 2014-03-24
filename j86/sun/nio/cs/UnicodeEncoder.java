@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.nio.cs;
+package j86.j86.j86.sun.nio.cs;
 
-import java.nio.*;
-import java.nio.charset.*;
+import j86.java.nio.*;
+import j86.j86.java.nio.charset.*;
 
 /**
  * Base class for different flavors of UTF-16 encoders

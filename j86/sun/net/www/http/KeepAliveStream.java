@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.net.www.http;
+package j86.j86.j86.sun.net.www.http;
 
-import java.io.*;
-import sun.net.ProgressSource;
-import sun.net.www.MeteredStream;
+import j86.java.io.*;
+import j86.sun.net.ProgressSource;
+import j86.j86.sun.net.www.MeteredStream;
 
 /**
  * A stream that has the property of being able to be kept alive for
@@ -168,8 +168,8 @@ class KeepAliveStream extends MeteredStream implements Hurryable {
             }
 
             if (startCleanupThread) {
-                java.security.AccessController.doPrivileged(
-                    new java.security.PrivilegedAction<Void>() {
+                j86.java.security.AccessController.doPrivileged(
+                    new j86.java.security.PrivilegedAction<Void>() {
                     public Void run() {
                         // We want to create the Keep-Alive-SocketCleaner in the
                         // system threadgroup

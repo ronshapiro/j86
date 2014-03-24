@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.awt.peer;
+package j86.j86.java.awt.peer;
 
-import java.awt.Component;
-import java.awt.Window;
+import j86.java.awt.Component;
+import j86.java.awt.Window;
 
 /**
  * The native peer interface for {@link KeyboardFocusManager}.

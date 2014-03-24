@@ -23,33 +23,33 @@
  * questions.
  */
 
-package com.sun.imageio.plugins.png;
+package j86.com.sun.imageio.plugins.png;
 
-import java.awt.Rectangle;
-import java.awt.image.ColorModel;
-import java.awt.image.IndexColorModel;
-import java.awt.image.Raster;
-import java.awt.image.WritableRaster;
-import java.awt.image.RenderedImage;
-import java.awt.image.SampleModel;
-import java.io.ByteArrayOutputStream;
-import java.io.DataOutput;
-import java.io.IOException;
-import java.io.OutputStream;
-import java.util.Iterator;
-import java.util.Locale;
-import java.util.zip.Deflater;
-import java.util.zip.DeflaterOutputStream;
-import javax.imageio.IIOException;
-import javax.imageio.IIOImage;
-import javax.imageio.ImageTypeSpecifier;
-import javax.imageio.ImageWriteParam;
-import javax.imageio.ImageWriter;
-import javax.imageio.metadata.IIOMetadata;
-import javax.imageio.metadata.IIOMetadata;
-import javax.imageio.spi.ImageWriterSpi;
-import javax.imageio.stream.ImageOutputStream;
-import javax.imageio.stream.ImageOutputStreamImpl;
+import j86.java.awt.Rectangle;
+import j86.j86.j86.java.awt.image.ColorModel;
+import j86.j86.j86.java.awt.image.IndexColorModel;
+import j86.j86.j86.java.awt.image.Raster;
+import j86.j86.j86.java.awt.image.WritableRaster;
+import j86.j86.j86.java.awt.image.RenderedImage;
+import j86.j86.j86.java.awt.image.SampleModel;
+import j86.java.io.ByteArrayOutputStream;
+import j86.java.io.DataOutput;
+import j86.java.io.IOException;
+import j86.java.io.OutputStream;
+import j86.java.util.Iterator;
+import j86.java.util.Locale;
+import j86.j86.java.util.zip.Deflater;
+import j86.j86.java.util.zip.DeflaterOutputStream;
+import j86.javax.imageio.IIOException;
+import j86.javax.imageio.IIOImage;
+import j86.javax.imageio.ImageTypeSpecifier;
+import j86.javax.imageio.ImageWriteParam;
+import j86.javax.imageio.ImageWriter;
+import j86.j86.javax.imageio.metadata.IIOMetadata;
+import j86.j86.javax.imageio.metadata.IIOMetadata;
+import j86.j86.javax.imageio.spi.ImageWriterSpi;
+import j86.j86.javax.imageio.stream.ImageOutputStream;
+import j86.j86.javax.imageio.stream.ImageOutputStreamImpl;
 
 class CRC {
 

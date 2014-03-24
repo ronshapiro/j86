@@ -23,31 +23,31 @@
  * questions.
  */
 
-package javax.crypto;
+package j86.javax.crypto;
 
-import java.security.*;
-import java.security.spec.AlgorithmParameterSpec;
-import java.io.Serializable;
-import java.util.Enumeration;
-import java.util.Vector;
+import j86.java.security.*;
+import j86.j86.java.security.spec.AlgorithmParameterSpec;
+import j86.java.io.Serializable;
+import j86.java.util.Enumeration;
+import j86.java.util.Vector;
 
-import javax.crypto.spec.*;
+import j86.j86.javax.crypto.spec.*;
 
 /**
  * The CryptoPermission class extends the
- * java.security.Permission class. A
+ * j86.java.security.Permission class. A
  * CryptoPermission object is used to represent
  * the ability of an application/applet to use certain
  * algorithms with certain key sizes and other
  * restrictions in certain environments. <p>
  *
- * @see java.security.Permission
+ * @see j86.java.security.Permission
  *
  * @author Jan Luehe
  * @author Sharon Liu
  * @since 1.4
  */
-class CryptoPermission extends java.security.Permission {
+class CryptoPermission extends j86.java.security.Permission {
 
     private static final long serialVersionUID = 8987399626114087514L;
 
@@ -464,9 +464,9 @@ class CryptoPermission extends java.security.Permission {
  * A CryptoPermissionCollection stores a set of CryptoPermission
  * permissions.
  *
- * @see java.security.Permission
- * @see java.security.Permissions
- * @see java.security.PermissionCollection
+ * @see j86.java.security.Permission
+ * @see j86.java.security.Permissions
+ * @see j86.java.security.PermissionCollection
  *
  * @author Sharon Liu
  */

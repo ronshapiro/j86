@@ -23,24 +23,24 @@
  * questions.
  */
 
-package javax.crypto;
+package j86.javax.crypto;
 
-import java.security.*;
-import java.util.Enumeration;
-import java.util.Hashtable;
-import java.util.Vector;
-import java.util.NoSuchElementException;
-import java.util.concurrent.ConcurrentHashMap;
-import java.io.Serializable;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.BufferedReader;
-import java.io.ObjectStreamField;
-import java.io.ObjectInputStream;
-import java.io.ObjectInputStream.GetField;
-import java.io.ObjectOutputStream;
-import java.io.ObjectOutputStream.PutField;
-import java.io.IOException;
+import j86.java.security.*;
+import j86.java.util.Enumeration;
+import j86.java.util.Hashtable;
+import j86.java.util.Vector;
+import j86.java.util.NoSuchElementException;
+import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.io.Serializable;
+import j86.java.io.InputStream;
+import j86.java.io.InputStreamReader;
+import j86.java.io.BufferedReader;
+import j86.java.io.ObjectStreamField;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.ObjectInputStream.GetField;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectOutputStream.PutField;
+import j86.java.io.IOException;
 
 /**
  * This class contains CryptoPermission objects, organized into
@@ -55,9 +55,9 @@ import java.io.IOException;
  * is called on the CryptoPermission or CryptoAllPermission class to
  * create the PermissionCollection and add it to the Permissions object.
  *
- * @see javax.crypto.CryptoPermission
- * @see java.security.PermissionCollection
- * @see java.security.Permissions
+ * @see j86.javax.crypto.CryptoPermission
+ * @see j86.java.security.PermissionCollection
+ * @see j86.java.security.Permissions
  *
  * @author Sharon Liu
  * @since 1.4
@@ -68,7 +68,7 @@ implements Serializable {
     private static final long serialVersionUID = 4946547168093391015L;
 
     /**
-     * @serialField perms java.util.Hashtable
+     * @serialField perms j86.java.util.Hashtable
      */
     private static final ObjectStreamField[] serialPersistentFields = {
         new ObjectStreamField("perms", Hashtable.class),

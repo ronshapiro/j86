@@ -23,12 +23,12 @@
  * questions.
  */
 
-package java.nio.channels;
+package j86.j86.java.nio.channels;
 
-import java.net.SocketOption;
-import java.net.SocketAddress;
-import java.util.Set;
-import java.io.IOException;
+import j86.java.net.SocketOption;
+import j86.java.net.SocketAddress;
+import j86.java.util.Set;
+import j86.java.io.IOException;
 
 /**
  * A channel to a network socket.
@@ -91,7 +91,7 @@ public interface NetworkChannel
      *
      * <p> Where the channel is {@link #bind bound} to an Internet Protocol
      * socket address then the return value from this method is of type {@link
-     * java.net.InetSocketAddress}.
+     * j86.java.net.InetSocketAddress}.
      *
      * @return  The socket address that the socket is bound to, or {@code null}
      *          if the channel's socket is not bound
@@ -125,7 +125,7 @@ public interface NetworkChannel
      * @throws  IOException
      *          If an I/O error occurs
      *
-     * @see java.net.StandardSocketOptions
+     * @see j86.java.net.StandardSocketOptions
      */
     <T> NetworkChannel setOption(SocketOption<T> name, T value) throws IOException;
 
@@ -147,7 +147,7 @@ public interface NetworkChannel
      * @throws  IOException
      *          If an I/O error occurs
      *
-     * @see java.net.StandardSocketOptions
+     * @see j86.java.net.StandardSocketOptions
      */
     <T> T getOption(SocketOption<T> name) throws IOException;
 

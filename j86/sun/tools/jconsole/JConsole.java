@@ -23,28 +23,28 @@
  * questions.
  */
 
-package sun.tools.jconsole;
+package j86.sun.tools.jconsole;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.beans.*;
-import java.io.*;
-import java.net.*;
-import java.util.*;
-import java.util.List;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.java.beans.*;
+import j86.java.io.*;
+import j86.java.net.*;
+import j86.java.util.*;
+import j86.java.util.List;
 
-import javax.swing.*;
-import javax.swing.border.*;
-import javax.swing.event.*;
-import javax.swing.plaf.*;
-import javax.security.auth.login.FailedLoginException;
-import javax.net.ssl.SSLHandshakeException;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.border.*;
+import j86.j86.javax.swing.event.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.javax.security.auth.login.FailedLoginException;
+import j86.j86.javax.net.ssl.SSLHandshakeException;
 
-import com.sun.tools.jconsole.JConsolePlugin;
+import com.j86.sun.tools.jconsole.JConsolePlugin;
 
-import sun.net.util.IPAddressUtil;
+import j86.j86.sun.net.util.IPAddressUtil;
 
-import static sun.tools.jconsole.Utilities.*;
+import static j86.sun.tools.jconsole.Utilities.*;
 
 @SuppressWarnings("serial")
 public class JConsole extends JFrame
@@ -58,8 +58,8 @@ public class JConsole extends JFrame
         // the L&F is not specified using a system property.
         if (System.getProperty("swing.defaultlaf") == null) {
             String systemLaF = UIManager.getSystemLookAndFeelClassName();
-            if (systemLaF.equals("com.sun.java.swing.plaf.gtk.GTKLookAndFeel") ||
-                systemLaF.equals("com.sun.java.swing.plaf.windows.WindowsLookAndFeel")) {
+            if (systemLaF.equals("j86.j86.com.sun.java.swing.plaf.gtk.GTKLookAndFeel") ||
+                systemLaF.equals("j86.j86.com.sun.java.swing.plaf.windows.WindowsLookAndFeel")) {
 
                 try {
                     UIManager.setLookAndFeel(systemLaF);
@@ -75,8 +75,8 @@ public class JConsole extends JFrame
 
     static void updateLafValues() {
         String lafName = UIManager.getLookAndFeel().getClass().getName();
-        IS_GTK = lafName.equals("com.sun.java.swing.plaf.gtk.GTKLookAndFeel");
-        IS_WIN = lafName.equals("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
+        IS_GTK = lafName.equals("j86.j86.com.sun.java.swing.plaf.gtk.GTKLookAndFeel");
+        IS_WIN = lafName.equals("j86.j86.com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
 
         //BorderedComponent.updateLafValues();
     }
@@ -953,8 +953,8 @@ public class JConsole extends JFrame
     static {
         boolean supported;
         try {
-            Class.forName("com.sun.tools.attach.VirtualMachine");
-            Class.forName("sun.management.ConnectorAddressLink");
+            Class.forName("com.j86.sun.tools.attach.VirtualMachine");
+            Class.forName("j86.sun.management.ConnectorAddressLink");
             supported = true;
         } catch (NoClassDefFoundError x) {
             supported = false;

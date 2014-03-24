@@ -23,20 +23,20 @@
  * questions.
  */
 
-package java.rmi.activation;
+package j86.j86.java.rmi.activation;
 
-import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
-import java.rmi.MarshalledObject;
-import java.rmi.Naming;
-import java.rmi.Remote;
-import java.rmi.RemoteException;
-import java.rmi.activation.UnknownGroupException;
-import java.rmi.activation.UnknownObjectException;
-import java.rmi.server.RMIClassLoader;
-import java.rmi.server.UnicastRemoteObject;
-import java.security.AccessController;
-import sun.security.action.GetIntegerAction;
+import j86.j86.j86.java.lang.reflect.Constructor;
+import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.java.rmi.MarshalledObject;
+import j86.java.rmi.Naming;
+import j86.java.rmi.Remote;
+import j86.java.rmi.RemoteException;
+import j86.j86.java.rmi.activation.UnknownGroupException;
+import j86.j86.java.rmi.activation.UnknownObjectException;
+import j86.j86.java.rmi.server.RMIClassLoader;
+import j86.j86.java.rmi.server.UnicastRemoteObject;
+import j86.java.security.AccessController;
+import j86.sun.security.action.GetIntegerAction;
 
 /**
  * An <code>ActivationGroup</code> is responsible for creating new
@@ -68,7 +68,7 @@ import sun.security.action.GetIntegerAction;
  * <ul>
  * <li> the group's <code>ActivationGroupID</code>, and
  * <li> the group's initialization data (in a
- *      <code>java.rmi.MarshalledObject</code>)</ul><p>
+ *      <code>j86.java.rmi.MarshalledObject</code>)</ul><p>
  *
  * When created, the default implementation of
  * <code>ActivationGroup</code> will override the system properties
@@ -86,7 +86,7 @@ import sun.security.action.GetIntegerAction;
  * requires the use of a security manager other than
  * {@link SecurityManager}, in the
  * ActivativationGroupDescriptor properties list you can set
- * <code>java.security.manager</code> property to the name of the security
+ * <code>j86.java.security.manager</code> property to the name of the security
  * manager you would like to install.
  *
  * @author      Ann Wollrath
@@ -129,7 +129,7 @@ public abstract class ActivationGroup
     /**
      * Constructs an activation group with the given activation group
      * identifier.  The group is exported as a
-     * <code>java.rmi.server.UnicastRemoteObject</code>.
+     * <code>j86.j86.java.rmi.server.UnicastRemoteObject</code>.
      *
      * @param   groupID the group's identifier
      * @throws  RemoteException if this group could not be exported
@@ -296,7 +296,7 @@ public abstract class ActivationGroup
             String groupClassName = desc.getClassName();
             Class<? extends ActivationGroup> cl;
             Class<? extends ActivationGroup> defaultGroupClass =
-                sun.rmi.server.ActivationGroupImpl.class;
+                j86.sun.rmi.server.ActivationGroupImpl.class;
             if (groupClassName == null ||       // see 4252236
                 groupClassName.equals(defaultGroupClass.getName()))
             {
@@ -384,11 +384,11 @@ public abstract class ActivationGroup
      * system is not set via this call, then the <code>getSystem</code>
      * method attempts to obtain a reference to the
      * <code>ActivationSystem</code> by looking up the name
-     * "java.rmi.activation.ActivationSystem" in the Activator's
+     * "j86.j86.java.rmi.activation.ActivationSystem" in the Activator's
      * registry. By default, the port number used to look up the
      * activation system is defined by
      * <code>ActivationSystem.SYSTEM_PORT</code>. This port can be overridden
-     * by setting the property <code>java.rmi.activation.port</code>.
+     * by setting the property <code>j86.j86.java.rmi.activation.port</code>.
      *
      * <p>If there is a security manager, this method first
      * calls the security manager's <code>checkSetFactory</code> method.
@@ -425,12 +425,12 @@ public abstract class ActivationGroup
      * activation system is not set via the <code>setSystem</code>
      * method, then the <code>getSystem</code> method attempts to
      * obtain a reference to the <code>ActivationSystem</code> by
-     * looking up the name "java.rmi.activation.ActivationSystem" in
+     * looking up the name "j86.j86.java.rmi.activation.ActivationSystem" in
      * the Activator's registry. By default, the port number used to
      * look up the activation system is defined by
      * <code>ActivationSystem.SYSTEM_PORT</code>. This port can be
      * overridden by setting the property
-     * <code>java.rmi.activation.port</code>.
+     * <code>j86.j86.java.rmi.activation.port</code>.
      *
      * @return the activation system for the VM/group
      * @exception ActivationException if activation system cannot be
@@ -447,11 +447,11 @@ public abstract class ActivationGroup
         if (currSystem == null) {
             try {
                 int port = AccessController.doPrivileged(
-                    new GetIntegerAction("java.rmi.activation.port",
+                    new GetIntegerAction("j86.j86.java.rmi.activation.port",
                                          ActivationSystem.SYSTEM_PORT));
                 currSystem = (ActivationSystem)
                     Naming.lookup("//:" + port +
-                                  "/java.rmi.activation.ActivationSystem");
+                                  "/j86.j86.java.rmi.activation.ActivationSystem");
             } catch (Exception e) {
                 throw new ActivationException(
                     "unable to obtain ActivationSystem", e);

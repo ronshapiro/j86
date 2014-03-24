@@ -23,17 +23,17 @@
  * questions.
  */
 
-package sun.tracing;
+package j86.sun.tracing;
 
-import java.lang.reflect.Method;
-import java.lang.reflect.InvocationTargetException;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Set;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.java.util.HashMap;
+import j86.java.util.HashSet;
+import j86.java.util.Set;
 
-import com.sun.tracing.ProviderFactory;
-import com.sun.tracing.Provider;
-import com.sun.tracing.Probe;
+import com.j86.sun.tracing.ProviderFactory;
+import com.j86.sun.tracing.Provider;
+import com.j86.sun.tracing.Probe;
 
 /**
  * Factory class to create tracing Providers.
@@ -125,7 +125,7 @@ class MultiplexProbe extends ProbeSkeleton {
                 // so we can't call it directly.
                 try {
                     Method m = Probe.class.getMethod(
-                        "trigger", Class.forName("[java.lang.Object"));
+                        "trigger", Class.forName("[j86.java.lang.Object"));
                     m.invoke(p, args);
                 } catch (Exception e1) {
                     assert false; // This shouldn't happen

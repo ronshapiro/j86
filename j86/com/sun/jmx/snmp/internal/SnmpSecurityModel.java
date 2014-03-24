@@ -22,12 +22,12 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.jmx.snmp.internal;
+package j86.j86.com.sun.jmx.snmp.internal;
 
-import com.sun.jmx.snmp.SnmpSecurityException;
-import com.sun.jmx.snmp.SnmpStatusException;
-import com.sun.jmx.snmp.SnmpTooBigException;
-import com.sun.jmx.snmp.SnmpSecurityParameters;
+import j86.com.sun.jmx.snmp.SnmpSecurityException;
+import j86.com.sun.jmx.snmp.SnmpStatusException;
+import j86.com.sun.jmx.snmp.SnmpTooBigException;
+import j86.com.sun.jmx.snmp.SnmpSecurityParameters;
 
 /**
  * Security model interface. Any security model implementation must implement this interface in order to be integrated in the engine framework. Security models are called when SNMP messages are received or sent. They deal with security (authentication and privacy).
@@ -38,7 +38,7 @@ import com.sun.jmx.snmp.SnmpSecurityParameters;
 public interface SnmpSecurityModel extends SnmpModel {
     /**
      * Called when a request is to be sent to the network. It must be securized.
-     * <BR>The specified parameters are defined in RFC 2572 (see also the {@link com.sun.jmx.snmp.SnmpV3Message} class).
+     * <BR>The specified parameters are defined in RFC 2572 (see also the {@link j86.com.sun.jmx.snmp.SnmpV3Message} class).
      * @param cache The cache that has been created by calling <CODE>createSecurityCache</CODE> on this model.
      * @param version The SNMP protocol version.
      * @param msgID The current request id.
@@ -70,7 +70,7 @@ public interface SnmpSecurityModel extends SnmpModel {
 
     /**
      * Called when a response is to be sent to the network. It must be securized.
-     * <BR>The specified parameters are defined in RFC 2572 (see also the {@link com.sun.jmx.snmp.SnmpV3Message} class).
+     * <BR>The specified parameters are defined in RFC 2572 (see also the {@link j86.com.sun.jmx.snmp.SnmpV3Message} class).
      * @param cache The cache that has been created by calling <CODE>createSecurityCache</CODE> on this model.
      * @param version The SNMP protocol version.
      * @param msgID The current request id.
@@ -101,7 +101,7 @@ public interface SnmpSecurityModel extends SnmpModel {
                SnmpSecurityException;
     /**
      * Called when a request is received from the network. It handles authentication and privacy.
-     * <BR>The specified parameters are defined in RFC 2572 (see also the {@link com.sun.jmx.snmp.SnmpV3Message} class).
+     * <BR>The specified parameters are defined in RFC 2572 (see also the {@link j86.com.sun.jmx.snmp.SnmpV3Message} class).
      * @param cache The cache that has been created by calling <CODE>createSecurityCache</CODE> on this model.
      * @param version The SNMP protocol version.
      * @param msgID The current request id.
@@ -133,7 +133,7 @@ public interface SnmpSecurityModel extends SnmpModel {
         throws SnmpStatusException, SnmpSecurityException;
  /**
      * Called when a response is received from the network. It handles authentication and privacy.
-     * <BR>The specified parameters are defined in RFC 2572 (see also the {@link com.sun.jmx.snmp.SnmpV3Message} class).
+     * <BR>The specified parameters are defined in RFC 2572 (see also the {@link j86.com.sun.jmx.snmp.SnmpV3Message} class).
      * @param cache The cache that has been created by calling <CODE>createSecurityCache</CODE> on this model.
      * @param version The SNMP protocol version.
      * @param msgID The current request id.

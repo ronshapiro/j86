@@ -23,19 +23,19 @@
  * questions.
  */
 
-package com.sun.net.ssl.internal.www.protocol.https;
+package com.j86.sun.net.ssl.internal.www.protocol.https;
 
-import java.io.IOException;
-import java.net.URL;
-import java.net.Proxy;
+import j86.java.io.IOException;
+import j86.java.net.URL;
+import j86.java.net.Proxy;
 
 /**
  * This class exists for compatibility with previous JSSE releases
  * only. The HTTPS implementation can now be found in
- * sun.net.www.protocol.https.
+ * j86.j86.j86.j86.sun.net.www.protocol.https.
  *
  */
-public class Handler extends sun.net.www.protocol.https.Handler {
+public class Handler extends j86.j86.j86.j86.sun.net.www.protocol.https.Handler {
 
     public Handler() {
         super();
@@ -45,11 +45,11 @@ public class Handler extends sun.net.www.protocol.https.Handler {
         super(proxy, port);
     }
 
-    protected java.net.URLConnection openConnection(URL u) throws IOException {
+    protected j86.java.net.URLConnection openConnection(URL u) throws IOException {
         return openConnection(u, (Proxy)null);
     }
 
-    protected java.net.URLConnection openConnection(URL u, Proxy p) throws IOException {
+    protected j86.java.net.URLConnection openConnection(URL u, Proxy p) throws IOException {
         return new HttpsURLConnectionOldImpl(u, p, this);
     }
 }

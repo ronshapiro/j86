@@ -22,12 +22,12 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.plaf.nimbus;
+package j86.j86.j86.javax.swing.plaf.nimbus;
 
-import sun.awt.AppContext;
+import j86.sun.awt.AppContext;
 
-import java.awt.image.BufferedImage;
-import java.lang.ref.SoftReference;
+import j86.j86.j86.java.awt.image.BufferedImage;
+import j86.j86.java.lang.ref.SoftReference;
 
 /**
  * Effect

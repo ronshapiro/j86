@@ -23,14 +23,14 @@
  * questions.
  */
 
-package com.sun.jndi.ldap;
+package j86.com.sun.jndi.ldap;
 
-import java.util.Locale;
-import java.util.Arrays; // JDK 1.2
-import java.io.OutputStream;
-import javax.naming.ldap.Control;
-import java.lang.reflect.Method;
-import javax.net.SocketFactory;
+import j86.java.util.Locale;
+import j86.java.util.Arrays; // JDK 1.2
+import j86.java.io.OutputStream;
+import j86.j86.javax.naming.ldap.Control;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.javax.net.SocketFactory;
 
 /**
  * Represents identity information about an anonymous LDAP connection.
@@ -86,7 +86,7 @@ class ClientId {
             try {
                 Class<?> socketFactoryClass =
                         Obj.helper.loadClass(socketFactory);
-                Class<?> objClass = Class.forName("java.lang.Object");
+                Class<?> objClass = Class.forName("j86.java.lang.Object");
                 this.sockComparator = socketFactoryClass.getMethod(
                                 "compare", new Class<?>[]{objClass, objClass});
                 Method getDefault = socketFactoryClass.getMethod(

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.text;
+package j86.sun.text;
 
 /**
  * SupplementaryCharacterData is an SMI-private class which was written for

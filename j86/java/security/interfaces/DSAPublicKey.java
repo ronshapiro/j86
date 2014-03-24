@@ -23,22 +23,22 @@
  * questions.
  */
 
-package java.security.interfaces;
+package j86.j86.java.security.interfaces;
 
-import java.math.BigInteger;
+import j86.java.math.BigInteger;
 
 /**
  * The interface to a DSA public key. DSA (Digital Signature Algorithm)
  * is defined in NIST's FIPS-186.
  *
- * @see java.security.Key
- * @see java.security.Signature
+ * @see j86.java.security.Key
+ * @see j86.java.security.Signature
  * @see DSAKey
  * @see DSAPrivateKey
  *
  * @author Benjamin Renaud
  */
-public interface DSAPublicKey extends DSAKey, java.security.PublicKey {
+public interface DSAPublicKey extends DSAKey, j86.java.security.PublicKey {
 
     // Declare serialVersionUID to be compatible with JDK1.1
 

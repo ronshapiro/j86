@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.security.x509;
+package j86.sun.security.x509;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.math.BigInteger;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.math.BigInteger;
 
-import sun.security.util.*;
+import j86.sun.security.util.*;
 
 /**
  * This class defines the SerialNumber class used by certificates.

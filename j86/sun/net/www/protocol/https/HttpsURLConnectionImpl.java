@@ -24,27 +24,27 @@
  */
 
 /*
- * NOTE: This class lives in the package sun.net.www.protocol.https.
- * There is a copy in com.sun.net.ssl.internal.www.protocol.https for JSSE
+ * NOTE: This class lives in the package j86.j86.j86.j86.sun.net.www.protocol.https.
+ * There is a copy in com.j86.sun.net.ssl.internal.www.protocol.https for JSSE
  * 1.0.2 compatibility. It is 100% identical except the package and extends
- * lines. Any changes should be made to be class in sun.net.* and then copied
- * to com.sun.net.*.
+ * lines. Any changes should be made to be class in j86.sun.net.* and then copied
+ * to com.j86.sun.net.*.
  */
 
 // For both copies of the file, uncomment one line and comment the other
-package sun.net.www.protocol.https;
-// package com.sun.net.ssl.internal.www.protocol.https;
+package j86.j86.j86.j86.sun.net.www.protocol.https;
+// package com.j86.sun.net.ssl.internal.www.protocol.https;
 
-import java.net.URL;
-import java.net.Proxy;
-import java.net.ProtocolException;
-import java.io.*;
-import javax.net.ssl.*;
-import java.security.Permission;
-import java.security.Principal;
-import java.util.Map;
-import java.util.List;
-import sun.net.www.http.HttpClient;
+import j86.java.net.URL;
+import j86.java.net.Proxy;
+import j86.java.net.ProtocolException;
+import j86.java.io.*;
+import j86.j86.javax.net.ssl.*;
+import j86.java.security.Permission;
+import j86.java.security.Principal;
+import j86.java.util.Map;
+import j86.java.util.List;
+import j86.j86.j86.sun.net.www.http.HttpClient;
 
 /**
  * A class to represent an HTTP connection to a remote object.
@@ -56,7 +56,7 @@ import sun.net.www.http.HttpClient;
  * handler.
  *
  * Since it would use a delegate to access
- * sun.net.www.protocol.http.HttpURLConnection functionalities, it
+ * j86.j86.j86.sun.net.www.protocol.http.HttpURLConnection functionalities, it
  * needs to implement all public methods in it's super class and all
  * the way to Object.
  *
@@ -66,9 +66,9 @@ import sun.net.www.http.HttpClient;
 // other. The differences between the two copies are introduced for
 // plugin, and it is marked as such.
 public class HttpsURLConnectionImpl
-        extends javax.net.ssl.HttpsURLConnection {
+        extends j86.j86.javax.net.ssl.HttpsURLConnection {
 // public class HttpsURLConnectionOldImpl
-//      extends com.sun.net.ssl.HttpsURLConnection {
+//      extends com.j86.sun.net.ssl.HttpsURLConnection {
 
     // NOTE: made protected for plugin so that subclass can set it.
     protected DelegateHttpsURLConnection delegate;
@@ -182,7 +182,7 @@ public class HttpsURLConnectionImpl
      * Returns the certificate chain the client sent to the
      * server, or null if the client did not authenticate.
      */
-    public java.security.cert.Certificate []
+    public j86.j86.java.security.cert.Certificate []
         getLocalCertificates() {
         return delegate.getLocalCertificates();
     }
@@ -192,7 +192,7 @@ public class HttpsURLConnectionImpl
      * SSLPeerUnverified Exception if
      * the server did not authenticate.
      */
-    public java.security.cert.Certificate []
+    public j86.j86.java.security.cert.Certificate []
         getServerCertificates() throws SSLPeerUnverifiedException {
         return delegate.getServerCertificates();
     }
@@ -202,15 +202,15 @@ public class HttpsURLConnectionImpl
      * the server did not authenticate.
      *
      * NOTE: This method is not necessary for the version of this class
-     * implementing javax.net.ssl.HttpsURLConnection, but provided for
-     * compatibility with the com.sun.net.ssl.HttpsURLConnection version.
+     * implementing j86.j86.javax.net.ssl.HttpsURLConnection, but provided for
+     * compatibility with the com.j86.sun.net.ssl.HttpsURLConnection version.
      */
-    public javax.security.cert.X509Certificate[] getServerCertificateChain() {
+    public j86.javax.security.cert.X509Certificate[] getServerCertificateChain() {
         try {
             return delegate.getServerCertificateChain();
         } catch (SSLPeerUnverifiedException e) {
             // this method does not throw an exception as declared in
-            // com.sun.net.ssl.HttpsURLConnection.
+            // com.j86.sun.net.ssl.HttpsURLConnection.
             // Return null for compatibility.
             return null;
         }
@@ -324,7 +324,7 @@ public class HttpsURLConnectionImpl
      * @param   key     the keyword by which the request is known
      *                  (e.g., "<code>accept</code>").
      * @param   value  the value associated with it.
-     * @see #getRequestProperties(java.lang.String)
+     * @see #getRequestProperties(j86.java.lang.String)
      * @since 1.4
      */
     public void addRequestProperty(String key, String value) {
@@ -493,7 +493,7 @@ public class HttpsURLConnectionImpl
 
     /*
      * finalize (dispose) the delegated object.  Otherwise
-     * sun.net.www.protocol.http.HttpURLConnection's finalize()
+     * j86.j86.j86.sun.net.www.protocol.http.HttpURLConnection's finalize()
      * would have to be made public.
      */
     protected void finalize() throws Throwable {

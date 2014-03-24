@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text;
+package j86.j86.javax.swing.text;
 
-import java.util.Vector;
-import java.io.Serializable;
-import javax.swing.undo.UndoableEdit;
+import j86.java.util.Vector;
+import j86.java.io.Serializable;
+import j86.j86.javax.swing.undo.UndoableEdit;
 
 /**
  * An implementation of a gapped buffer similar to that used by

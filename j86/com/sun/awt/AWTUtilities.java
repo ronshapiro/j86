@@ -23,12 +23,12 @@
  * questions.
  */
 
-package com.sun.awt;
+package com.j86.sun.awt;
 
-import java.awt.*;
+import j86.java.awt.*;
 
-import sun.awt.AWTAccessor;
-import sun.awt.SunToolkit;
+import j86.sun.awt.AWTAccessor;
+import j86.sun.awt.SunToolkit;
 
 /**
  * A collection of utility methods for AWT.

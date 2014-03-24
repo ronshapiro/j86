@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.naming;
+package j86.javax.naming;
 
 /**
   * This exception is thrown when the naming operation
@@ -43,9 +43,9 @@ package javax.naming;
   * @author Scott Seligman
   *
   * @see Context
-  * @see javax.naming.directory.DirContext
-  * @see java.lang.Thread#interrupt
-  * @see java.lang.InterruptedException
+  * @see j86.j86.javax.naming.directory.DirContext
+  * @see j86.java.lang.Thread#interrupt
+  * @see j86.java.lang.InterruptedException
   * @since 1.3
   */
 
@@ -55,7 +55,7 @@ public class InterruptedNamingException extends NamingException {
       * explanation of the problem.
       * All name resolution-related fields are initialized to null.
       * @param explanation      A possibly null message explaining the problem.
-      * @see java.lang.Throwable#getMessage
+      * @see j86.java.lang.Throwable#getMessage
       */
     public InterruptedNamingException(String explanation) {
         super(explanation);

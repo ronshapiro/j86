@@ -23,9 +23,9 @@
  * questions.
  */
 
-package com.sun.tools.attach;
+package com.j86.sun.tools.attach;
 
-import com.sun.tools.attach.spi.AttachProvider;
+import com.j86.sun.tools.attach.spi.AttachProvider;
 
 /**
  * Describes a Java virtual machine.
@@ -33,7 +33,7 @@ import com.sun.tools.attach.spi.AttachProvider;
  * <p> A <code>VirtualMachineDescriptor</code> is a container class used to
  * describe a Java virtual machine. It encapsulates an identifier that identifies
  * a target virtual machine, and a reference to the {@link
- * com.sun.tools.attach.spi.AttachProvider AttachProvider} that should be used
+ * com.j86.sun.tools.attach.spi.AttachProvider AttachProvider} that should be used
  * when attempting to attach to the virtual machine. The identifier is
  * implementation-dependent but is typically the process identifier (or pid)
  * environments where each Java virtual machine runs in its own operating system
@@ -48,10 +48,10 @@ import com.sun.tools.attach.spi.AttachProvider;
  * used as the <i>display name</i>.
  *
  * <p> <code>VirtualMachineDescriptor</code> instances are typically created by
- * invoking the {@link com.sun.tools.attach.VirtualMachine#list VirtualMachine.list()}
+ * invoking the {@link com.j86.sun.tools.attach.VirtualMachine#list VirtualMachine.list()}
  * method. This returns the complete list of descriptors to describe the
  * Java virtual machines known to all installed {@link
- * com.sun.tools.attach.spi.AttachProvider attach providers}.
+ * com.j86.sun.tools.attach.spi.AttachProvider attach providers}.
  *
  * @since 1.6
  */
@@ -144,7 +144,7 @@ public class VirtualMachineDescriptor {
     /**
      * Returns a hash-code value for this VirtualMachineDescriptor. The hash
      * code is based upon the descriptor's components, and satifies
-     * the general contract of the {@link java.lang.Object#hashCode()
+     * the general contract of the {@link j86.java.lang.Object#hashCode()
      * Object.hashCode} method.
      *
      * @return  A hash-code value for this descriptor.
@@ -166,7 +166,7 @@ public class VirtualMachineDescriptor {
      * provider, and their {@link #id() identifiers} are equal. </p>
      *
      * <p> This method satisfies the general contract of the {@link
-     * java.lang.Object#equals(Object) Object.equals} method. </p>
+     * j86.java.lang.Object#equals(Object) Object.equals} method. </p>
      *
      * @param   ob   The object to which this object is to be compared
      *

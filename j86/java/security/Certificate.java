@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.security;
+package j86.java.security;
 
-import java.io.*;
-import java.util.Date;
+import j86.java.io.*;
+import j86.java.util.Date;
 
 /**
  * <p>This is an interface of abstract methods for managing a
@@ -60,7 +60,7 @@ import java.util.Date;
  *             This Certificate interface is entirely deprecated and
  *             is here to allow for a smooth transition to the new
  *             package.
- * @see java.security.cert.Certificate
+ * @see j86.j86.java.security.cert.Certificate
  */
 @Deprecated
 public interface Certificate {

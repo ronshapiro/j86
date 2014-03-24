@@ -23,13 +23,13 @@
  * questions.
  */
 
-package java.util;
+package j86.java.util;
 
-import java.io.*;
-import java.util.concurrent.ThreadLocalRandom;
-import java.util.function.BiConsumer;
-import java.util.function.Function;
-import java.util.function.BiFunction;
+import j86.java.io.*;
+import j86.j86.java.util.concurrent.ThreadLocalRandom;
+import j86.j86.java.util.function.BiConsumer;
+import j86.j86.java.util.function.Function;
+import j86.j86.java.util.function.BiFunction;
 
 /**
  * This class implements a hash table, which maps keys to values. Any
@@ -112,13 +112,13 @@ import java.util.function.BiFunction;
  * thread-safe implementation is not needed, it is recommended to use
  * {@link HashMap} in place of {@code Hashtable}.  If a thread-safe
  * highly-concurrent implementation is desired, then it is recommended
- * to use {@link java.util.concurrent.ConcurrentHashMap} in place of
+ * to use {@link j86.j86.java.util.concurrent.ConcurrentHashMap} in place of
  * {@code Hashtable}.
  *
  * @author  Arthur van Hoff
  * @author  Josh Bloch
  * @author  Neal Gafter
- * @see     Object#equals(java.lang.Object)
+ * @see     Object#equals(j86.java.lang.Object)
  * @see     Object#hashCode()
  * @see     Hashtable#rehash()
  * @see     Collection
@@ -129,7 +129,7 @@ import java.util.function.BiFunction;
  */
 public class Hashtable<K,V>
     extends Dictionary<K,V>
-    implements Map<K,V>, Cloneable, java.io.Serializable {
+    implements Map<K,V>, Cloneable, j86.java.io.Serializable {
 
     /**
      * The hash table data.
@@ -263,7 +263,7 @@ public class Hashtable<K,V>
      * sequentially.
      *
      * @return  an enumeration of the values in this hashtable.
-     * @see     java.util.Enumeration
+     * @see     j86.java.util.Enumeration
      * @see     #keys()
      * @see     #values()
      * @see     Map
@@ -1127,7 +1127,7 @@ public class Hashtable<K,V>
      *             for each key-value mapping represented by the Hashtable
      *             The key-value mappings are emitted in no particular order.
      */
-    private void writeObject(java.io.ObjectOutputStream s)
+    private void writeObject(j86.java.io.ObjectOutputStream s)
             throws IOException {
         Entry<Object, Object> entryStack = null;
 
@@ -1162,7 +1162,7 @@ public class Hashtable<K,V>
     /**
      * Reconstitute the Hashtable from a stream (i.e., deserialize it).
      */
-    private void readObject(java.io.ObjectInputStream s)
+    private void readObject(j86.java.io.ObjectInputStream s)
          throws IOException, ClassNotFoundException
     {
         // Read in the length, threshold, and loadfactor
@@ -1211,7 +1211,7 @@ public class Hashtable<K,V>
         throws StreamCorruptedException
     {
         if (value == null) {
-            throw new java.io.StreamCorruptedException();
+            throw new j86.java.io.StreamCorruptedException();
         }
         // Makes sure the key is not already in the hashtable.
         // This should not happen in deserialized version.
@@ -1219,7 +1219,7 @@ public class Hashtable<K,V>
         int index = (hash & 0x7FFFFFFF) % tab.length;
         for (Entry<?,?> e = tab[index] ; e != null ; e = e.next) {
             if ((e.hash == hash) && e.key.equals(key)) {
-                throw new java.io.StreamCorruptedException();
+                throw new j86.java.io.StreamCorruptedException();
             }
         }
         // Creates the new entry.

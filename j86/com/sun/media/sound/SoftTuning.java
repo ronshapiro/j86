@@ -22,12 +22,12 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.media.sound;
+package j86.com.sun.media.sound;
 
-import java.io.UnsupportedEncodingException;
-import java.util.Arrays;
+import j86.java.io.UnsupportedEncodingException;
+import j86.java.util.Arrays;
 
-import javax.sound.midi.Patch;
+import j86.javax.sound.midi.Patch;
 
 /**
  * A tuning program container, for use with MIDI Tuning.

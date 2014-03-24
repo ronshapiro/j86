@@ -22,10 +22,10 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.security.spec;
+package j86.j86.java.security.spec;
 
-import java.math.BigInteger;
-import java.util.Arrays;
+import j86.java.math.BigInteger;
+import j86.java.util.Arrays;
 
 /**
  * This immutable class defines an elliptic curve (EC)

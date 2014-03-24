@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.print.attribute.standard;
+package j86.j86.j86.javax.print.attribute.standard;
 
-import java.util.HashMap;
-import java.util.Vector;
+import j86.java.util.HashMap;
+import j86.java.util.Vector;
 
-import javax.print.attribute.Size2DSyntax;
-import javax.print.attribute.Attribute;
+import j86.j86.javax.print.attribute.Size2DSyntax;
+import j86.j86.javax.print.attribute.Attribute;
 
 /**
  * Class MediaSize is a two-dimensional size valued printing attribute class
@@ -266,7 +266,7 @@ public class MediaSize extends Size2DSyntax implements Attribute {
      * class MediaSize itself.
      *
      * @return  Printing attribute class (category), an instance of class
-     *          {@link java.lang.Class java.lang.Class}.
+     *          {@link j86.java.lang.Class java.lang.Class}.
      */
     public final Class<? extends Attribute> getCategory() {
         return MediaSize.class;

@@ -23,13 +23,13 @@
  * questions.
  */
 
-package javax.sql.rowset.spi;
+package j86.j86.j86.javax.sql.rowset.spi;
 
-import java.sql.SQLException;
-import java.io.Writer;
+import j86.java.sql.SQLException;
+import j86.java.io.Writer;
 
-import javax.sql.RowSetWriter;
-import javax.sql.rowset.*;
+import j86.javax.sql.RowSetWriter;
+import j86.j86.javax.sql.rowset.*;
 
 /**
  * A specialized interface that facilitates an extension of the
@@ -49,7 +49,7 @@ public interface XmlWriter extends RowSetWriter {
 
   /**
    * Writes the given <code>WebRowSet</code> object to the specified
-   * <code>java.io.Writer</code> output stream as an XML document.
+   * <code>j86.java.io.Writer</code> output stream as an XML document.
    * This document includes the rowset's data, metadata, and properties
    * plus the appropriate XML tags.
    * <P>
@@ -59,14 +59,14 @@ public interface XmlWriter extends RowSetWriter {
    *
    * @param caller the <code>WebRowSet</code> instance to be written,
    *        for which this <code>XmlWriter</code> object is the writer
-   * @param writer the <code>java.io.Writer</code> object that serves
+   * @param writer the <code>j86.java.io.Writer</code> object that serves
    *        as the output stream for writing <code>caller</code> as
    *        an XML document
    * @throws SQLException if a database access error occurs or
    *            this <code>XmlWriter</code> object is not the writer
    *            for the given <code>WebRowSet</code> object
    */
-  public void writeXML(WebRowSet caller, java.io.Writer writer)
+  public void writeXML(WebRowSet caller, j86.java.io.Writer writer)
     throws SQLException;
 
 

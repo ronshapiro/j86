@@ -23,12 +23,12 @@
  * questions.
  */
 
-package java.io;
+package j86.java.io;
 
-import java.lang.reflect.Field;
-import sun.reflect.CallerSensitive;
-import sun.reflect.Reflection;
-import sun.reflect.misc.ReflectUtil;
+import j86.j86.j86.java.lang.reflect.Field;
+import j86.sun.reflect.CallerSensitive;
+import j86.sun.reflect.Reflection;
+import j86.j86.sun.reflect.misc.ReflectUtil;
 
 /**
  * A description of a Serializable field from a Serializable class.  An array

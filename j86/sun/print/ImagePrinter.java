@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.print;
+package j86.sun.print;
 
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.image.BufferedImage;
-import java.awt.print.PageFormat;
-import java.awt.print.Printable;
-import java.net.URL;
-import java.io.InputStream;
-import javax.imageio.ImageIO;
+import j86.java.awt.Graphics;
+import j86.java.awt.Graphics2D;
+import j86.j86.j86.java.awt.image.BufferedImage;
+import j86.j86.java.awt.print.PageFormat;
+import j86.j86.java.awt.print.Printable;
+import j86.java.net.URL;
+import j86.java.io.InputStream;
+import j86.javax.imageio.ImageIO;
 
 class ImagePrinter implements Printable {
 

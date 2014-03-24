@@ -23,12 +23,12 @@
  * questions.
  */
 
-package java.awt.event;
+package j86.j86.java.awt.event;
 
-import sun.awt.AWTAccessor;
+import j86.sun.awt.AWTAccessor;
 
-import java.awt.ActiveEvent;
-import java.awt.AWTEvent;
+import j86.java.awt.ActiveEvent;
+import j86.java.awt.AWTEvent;
 
 /**
  * An event which executes the <code>run()</code> method on a <code>Runnable
@@ -49,9 +49,9 @@ import java.awt.AWTEvent;
  * @author      Fred Ecks
  * @author      David Mendenhall
  *
- * @see         java.awt.ActiveEvent
- * @see         java.awt.EventQueue#invokeLater
- * @see         java.awt.EventQueue#invokeAndWait
+ * @see         j86.java.awt.ActiveEvent
+ * @see         j86.java.awt.EventQueue#invokeLater
+ * @see         j86.java.awt.EventQueue#invokeAndWait
  * @see         AWTEventListener
  *
  * @since       1.2

@@ -23,29 +23,29 @@
  * questions.
  */
 
-package com.sun.jmx.snmp.agent;
+package j86.j86.com.sun.jmx.snmp.agent;
 
-import java.io.Serializable;
-import java.util.Enumeration;
-import java.util.logging.Level;
-import java.util.Vector;
+import j86.java.io.Serializable;
+import j86.java.util.Enumeration;
+import j86.j86.java.util.logging.Level;
+import j86.java.util.Vector;
 
-import javax.management.ObjectName;
-import javax.management.MBeanServer;
-import javax.management.MalformedObjectNameException;
-import javax.management.InstanceAlreadyExistsException;
-import javax.management.MBeanRegistrationException;
-import javax.management.NotCompliantMBeanException;
+import j86.javax.management.ObjectName;
+import j86.javax.management.MBeanServer;
+import j86.javax.management.MalformedObjectNameException;
+import j86.javax.management.InstanceAlreadyExistsException;
+import j86.javax.management.MBeanRegistrationException;
+import j86.javax.management.NotCompliantMBeanException;
 
-import static com.sun.jmx.defaults.JmxProperties.SNMP_ADAPTOR_LOGGER;
-import com.sun.jmx.snmp.SnmpOid;
-import com.sun.jmx.snmp.SnmpVarBind;
-import com.sun.jmx.snmp.SnmpDefinitions;
-import com.sun.jmx.snmp.SnmpStatusException;
-import com.sun.jmx.snmp.SnmpEngine;
-import com.sun.jmx.snmp.SnmpUnknownModelException;
-import com.sun.jmx.snmp.internal.SnmpAccessControlModel;
-import com.sun.jmx.snmp.internal.SnmpEngineImpl;
+import static j86.com.sun.jmx.defaults.JmxProperties.SNMP_ADAPTOR_LOGGER;
+import j86.com.sun.jmx.snmp.SnmpOid;
+import j86.com.sun.jmx.snmp.SnmpVarBind;
+import j86.com.sun.jmx.snmp.SnmpDefinitions;
+import j86.com.sun.jmx.snmp.SnmpStatusException;
+import j86.com.sun.jmx.snmp.SnmpEngine;
+import j86.com.sun.jmx.snmp.SnmpUnknownModelException;
+import j86.j86.com.sun.jmx.snmp.internal.SnmpAccessControlModel;
+import j86.j86.com.sun.jmx.snmp.internal.SnmpEngineImpl;
 
 /**
  * This list is used in order to construct the OID during the getnext.
@@ -83,12 +83,12 @@ final class LongList {
     }
 
     /**
-     * Same behaviour than size() in {@link java.util.List}.
+     * Same behaviour than size() in {@link j86.java.util.List}.
      **/
     public final int size() { return size;}
 
     /**
-     * Same behaviour than add(long o) in {@link java.util.List}.
+     * Same behaviour than add(long o) in {@link j86.java.util.List}.
      * Any access to this method should be protected in a synchronized
      * block on the LongList object.
      **/
@@ -101,7 +101,7 @@ final class LongList {
 
     /**
      * Same behaviour than add(int index, long o) in
-     * {@link java.util.List}.
+     * {@link j86.java.util.List}.
      * Any access to this method should be protected in a synchronized
      * block on the LongList object.
      **/
@@ -113,7 +113,7 @@ final class LongList {
             return;
         }
 
-        java.lang.System.arraycopy(list,index,list,index+1,size-index);
+        j86.java.lang.System.arraycopy(list,index,list,index+1,size-index);
         list[index]=o;
         size++;
     }
@@ -135,9 +135,9 @@ final class LongList {
         if (at > size) throw new IndexOutOfBoundsException();
         ensure(size+count);
         if (at < size) {
-            java.lang.System.arraycopy(list,at,list,at+count,size-at);
+            j86.java.lang.System.arraycopy(list,at,list,at+count,size-at);
         }
-        java.lang.System.arraycopy(src,from,list,at,count);
+        j86.java.lang.System.arraycopy(src,from,list,at,count);
         size+=count;
     }
 
@@ -155,13 +155,13 @@ final class LongList {
 
         if (from == size) return o;
 
-        java.lang.System.arraycopy(list,from+count,list,from,
+        j86.java.lang.System.arraycopy(list,from+count,list,from,
                                    size-from);
         return o;
     }
 
     /**
-     * Same behaviour than remove(int index) in {@link java.util.List}.
+     * Same behaviour than remove(int index) in {@link j86.java.util.List}.
      * Any access to this method should be protected in a synchronized
      * block on the LongList object.
      **/
@@ -171,25 +171,25 @@ final class LongList {
         list[index]=0;
         if (index == --size) return o;
 
-        java.lang.System.arraycopy(list,index+1,list,index,
+        j86.java.lang.System.arraycopy(list,index+1,list,index,
                                    size-index);
         return o;
     }
 
     /**
      * Same behaviour than the toArray(long[] a) method in
-     * {@link java.util.List}.
+     * {@link j86.java.util.List}.
      * Any access to this method should be protected in a synchronized
      * block on the LongList object.
      **/
     public final long[] toArray(long[] a) {
-        java.lang.System.arraycopy(list,0,a,0,size);
+        j86.java.lang.System.arraycopy(list,0,a,0,size);
         return a;
     }
 
     /**
      * Same behaviour than the toArray() method in
-     * {@link java.util.List}.
+     * {@link j86.java.util.List}.
      * Any access to this method should be protected in a synchronized
      * block on the LongList object.
      **/
@@ -204,7 +204,7 @@ final class LongList {
      **/
     private final void resize() {
         final long[] newlist = allocate(list.length + DELTA);
-        java.lang.System.arraycopy(list,0,newlist,0,size);
+        j86.java.lang.System.arraycopy(list,0,newlist,0,size);
         list = newlist;
     }
 
@@ -220,7 +220,7 @@ final class LongList {
             final int min = list.length+DELTA;
             length=(length<min)?min:length;
             final long[] newlist = allocate(length);
-            java.lang.System.arraycopy(list,0,newlist,0,size);
+            j86.java.lang.System.arraycopy(list,0,newlist,0,size);
             list = newlist;
         }
     }

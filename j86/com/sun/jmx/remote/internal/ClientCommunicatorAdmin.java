@@ -23,13 +23,13 @@
  * questions.
  */
 
-package com.sun.jmx.remote.internal;
+package j86.com.sun.jmx.remote.internal;
 
-import java.io.IOException;
-import java.io.InterruptedIOException;
+import j86.java.io.IOException;
+import j86.java.io.InterruptedIOException;
 
-import com.sun.jmx.remote.util.ClassLogger;
-import com.sun.jmx.remote.util.EnvHelp;
+import j86.com.sun.jmx.remote.util.ClassLogger;
+import j86.com.sun.jmx.remote.util.EnvHelp;
 
 public abstract class ClientCommunicatorAdmin {
     private static volatile long threadNo = 1;
@@ -248,6 +248,6 @@ public abstract class ClientCommunicatorAdmin {
     private final int[] lock = new int[0];
 
     private static final ClassLogger logger =
-        new ClassLogger("javax.management.remote.misc",
+        new ClassLogger("j86.j86.javax.management.remote.misc",
                         "ClientCommunicatorAdmin");
 }

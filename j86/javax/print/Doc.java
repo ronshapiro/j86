@@ -23,13 +23,13 @@
  * questions.
  */
 
-package javax.print;
+package j86.javax.print;
 
-import java.io.InputStream;
-import java.io.IOException;
-import java.io.Reader;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
+import j86.java.io.Reader;
 
-import javax.print.attribute.DocAttributeSet;
+import j86.j86.javax.print.attribute.DocAttributeSet;
 
 
 /**
@@ -53,9 +53,9 @@ import javax.print.attribute.DocAttributeSet;
  * <LI>
  * Obtain the printing attributes that specify additional characteristics of
  * the doc or that specify processing instructions to be applied to the doc.
- * Printing attributes are defined in package {@link javax.print.attribute
- * javax.print.attribute}. The doc returns its printing attributes stored in
- * an {@link javax.print.attribute.DocAttributeSet javax.print.attribute.DocAttributeSet}.
+ * Printing attributes are defined in package {@link j86.j86.javax.print.attribute
+ * j86.j86.javax.print.attribute}. The doc returns its printing attributes stored in
+ * an {@link j86.j86.javax.print.attribute.DocAttributeSet javax.print.attribute.DocAttributeSet}.
  * </UL>
  * <P>
  * Each method in an implementation of interface Doc is permitted always to
@@ -161,8 +161,8 @@ public interface Doc {
      * and return null otherwise:
      * <UL>
      * <LI> char[]
-     * <LI> java.lang.String
-     * <LI> java.io.Reader
+     * <LI> j86.java.lang.String
+     * <LI> j86.java.io.Reader
      * </UL>
      * The doc's print data representation object is used to construct and
      * return a Reader for reading the print data as a stream of characters
@@ -186,7 +186,7 @@ public interface Doc {
      * classes, and return null otherwise:
      * <UL>
      * <LI> byte[]
-     * <LI> java.io.InputStream
+     * <LI> j86.java.io.InputStream
      * </UL>
      * This doc's print data representation object is obtained, then an input
      * stream for reading the print data from the print data representation

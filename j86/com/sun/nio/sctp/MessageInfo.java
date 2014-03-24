@@ -22,9 +22,9 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.nio.sctp;
+package j86.com.j86.sun.nio.sctp;
 
-import java.net.SocketAddress;
+import j86.java.net.SocketAddress;
 
 /**
  * The {@code MessageInfo} class provides additional ancillary information about
@@ -35,7 +35,7 @@ import java.net.SocketAddress;
  * SctpMultiChannel#receive SctpMultiChannel.receive},
  * return a {@code MessageInfo} instance that can be queried to determine
  * ancillary information about the received message. Messages being sent should
- * use one of the {@link #createOutgoing(java.net.SocketAddress,int)
+ * use one of the {@link #createOutgoing(j86.java.net.SocketAddress,int)
  * createOutgoing} methods to provide ancillary data for the message being
  * sent, and may use the appropriate setter methods to override the default
  * values provided for {@link #isUnordered() unordered}, {@link #timeToLive()
@@ -95,7 +95,7 @@ public abstract class MessageInfo {
         if (streamNumber < 0 || streamNumber > 65536)
             throw new IllegalArgumentException("Invalid stream number");
 
-        return new sun.nio.ch.sctp.MessageInfoImpl(null, address, streamNumber);
+        return new j86.j86.j86.j86.sun.nio.ch.sctp.MessageInfoImpl(null, address, streamNumber);
     }
     /**
      * Creates a {@code MessageInfo} instance suitable for use when
@@ -134,7 +134,7 @@ public abstract class MessageInfo {
         if (streamNumber < 0 || streamNumber > 65536)
             throw new IllegalArgumentException("Invalid stream number");
 
-        return new sun.nio.ch.sctp.MessageInfoImpl(association,
+        return new j86.j86.j86.j86.sun.nio.ch.sctp.MessageInfoImpl(association,
                                                    address, streamNumber);
     }
 

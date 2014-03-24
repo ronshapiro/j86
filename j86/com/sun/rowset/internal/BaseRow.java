@@ -23,11 +23,11 @@
  * questions.
  */
 
-package com.sun.rowset.internal;
+package j86.j86.com.sun.rowset.internal;
 
-import java.sql.*;
-import java.io.*;
-import java.util.Arrays;
+import j86.java.sql.*;
+import j86.java.io.*;
+import j86.java.util.Arrays;
 
 /**
  * The abstract base class from which the classes <code>Row</code>

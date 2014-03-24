@@ -29,13 +29,13 @@
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
 
-package sun.security.krb5;
+package j86.sun.security.krb5;
 
-import sun.security.util.*;
-import sun.security.krb5.internal.crypto.*;
-import sun.security.krb5.internal.*;
-import java.io.IOException;
-import java.math.BigInteger;
+import j86.sun.security.util.*;
+import j86.j86.j86.sun.security.krb5.internal.crypto.*;
+import j86.j86.sun.security.krb5.internal.*;
+import j86.java.io.IOException;
+import j86.java.math.BigInteger;
 
 /**
  * This class encapsulates Kerberos encrypted data. It allows
@@ -97,7 +97,7 @@ public class EncryptedData implements Cloneable {
         return new_encryptedData;
     }
 
-     // Used in JSSE (com.sun.net.ssl.internal.KerberosPreMasterSecret)
+     // Used in JSSE (com.j86.sun.net.ssl.internal.KerberosPreMasterSecret)
     public EncryptedData(
                          int new_eType,
                          Integer new_kvno,
@@ -121,7 +121,7 @@ public class EncryptedData implements Cloneable {
     */
 
      // used in KrbApRep, KrbApReq, KrbAsReq, KrbCred, KrbPriv
-     // Used in JSSE (com.sun.net.ssl.internal.KerberosPreMasterSecret)
+     // Used in JSSE (com.j86.sun.net.ssl.internal.KerberosPreMasterSecret)
     public EncryptedData(
                          EncryptionKey key,
                          byte[] plaintext,

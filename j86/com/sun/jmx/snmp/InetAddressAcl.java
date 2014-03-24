@@ -23,12 +23,12 @@
  * questions.
  */
 
-package com.sun.jmx.snmp;
+package j86.com.sun.jmx.snmp;
 
 // java import
 //
-import java.net.InetAddress;
-import java.util.Enumeration;
+import j86.java.net.InetAddress;
+import j86.java.util.Enumeration;
 
 /**
  * Defines the IP address based ACL used by the SNMP protocol adaptor.

@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.crypto.spec;
+package j86.j86.javax.crypto.spec;
 
-import java.security.spec.KeySpec;
+import j86.j86.java.security.spec.KeySpec;
 
 /**
  * A user-chosen password that can be used with password-based encryption
@@ -56,7 +56,7 @@ import java.security.spec.KeySpec;
  * @author Jan Luehe
  * @author Valerie Peng
  *
- * @see javax.crypto.SecretKeyFactory
+ * @see j86.javax.crypto.SecretKeyFactory
  * @see PBEParameterSpec
  * @since 1.4
  */

@@ -23,12 +23,12 @@
  * questions.
  */
 
-package javax.swing.text;
+package j86.j86.javax.swing.text;
 
-import java.text.BreakIterator;
-import java.text.CharacterIterator;
-import java.text.StringCharacterIterator;
-import java.util.Arrays;
+import j86.java.text.BreakIterator;
+import j86.java.text.CharacterIterator;
+import j86.java.text.StringCharacterIterator;
+import j86.java.util.Arrays;
 
 /**
  * A simple whitespace-based BreakIterator implementation.

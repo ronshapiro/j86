@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.swing;
+package j86.javax.swing;
 
-import java.util.EventObject;
-import javax.swing.event.*;
+import j86.java.util.EventObject;
+import j86.j86.javax.swing.event.*;
 
 /**
  * This interface defines the methods any general editor should be able
@@ -54,7 +54,7 @@ import javax.swing.event.*;
  * that contains an instance of the 3rd party editor object and "translate"
  * the <code>CellEditor</code> API into the 3rd party editor's API.
  *
- * @see javax.swing.event.CellEditorListener
+ * @see j86.j86.javax.swing.event.CellEditorListener
  *
  * @author Alan Chung
  */

@@ -34,32 +34,32 @@
  **********************************************************************
  **********************************************************************/
 
-package java.awt.color;
+package j86.j86.java.awt.color;
 
-import sun.java2d.cmm.PCMM;
-import sun.java2d.cmm.CMSManager;
-import sun.java2d.cmm.Profile;
-import sun.java2d.cmm.ProfileDataVerifier;
-import sun.java2d.cmm.ProfileDeferralMgr;
-import sun.java2d.cmm.ProfileDeferralInfo;
-import sun.java2d.cmm.ProfileActivator;
+import j86.j86.sun.java2d.cmm.PCMM;
+import j86.j86.sun.java2d.cmm.CMSManager;
+import j86.j86.sun.java2d.cmm.Profile;
+import j86.j86.sun.java2d.cmm.ProfileDataVerifier;
+import j86.j86.sun.java2d.cmm.ProfileDeferralMgr;
+import j86.j86.sun.java2d.cmm.ProfileDeferralInfo;
+import j86.j86.sun.java2d.cmm.ProfileActivator;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.ObjectStreamException;
-import java.io.OutputStream;
-import java.io.Serializable;
+import j86.java.io.File;
+import j86.java.io.FileInputStream;
+import j86.java.io.FileNotFoundException;
+import j86.java.io.FileOutputStream;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectStreamException;
+import j86.java.io.OutputStream;
+import j86.java.io.Serializable;
 
-import java.util.StringTokenizer;
+import j86.java.util.StringTokenizer;
 
-import java.security.AccessController;
-import java.security.PrivilegedAction;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
 
 
 /**

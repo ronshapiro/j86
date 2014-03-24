@@ -20,34 +20,34 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.sun.org.apache.xml.internal.security.transforms;
+package j86.j86.com.sun.org.apache.xml.internal.security.transforms;
 
-import java.io.IOException;
-import java.io.OutputStream;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.Map;
+import j86.java.io.IOException;
+import j86.java.io.OutputStream;
+import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.util.Map;
 import javax.xml.parsers.ParserConfigurationException;
 
-import com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
-import com.sun.org.apache.xml.internal.security.c14n.InvalidCanonicalizerException;
-import com.sun.org.apache.xml.internal.security.exceptions.AlgorithmAlreadyRegisteredException;
-import com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
-import com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
-import com.sun.org.apache.xml.internal.security.transforms.implementations.TransformBase64Decode;
-import com.sun.org.apache.xml.internal.security.transforms.implementations.TransformC14N;
-import com.sun.org.apache.xml.internal.security.transforms.implementations.TransformC14N11;
-import com.sun.org.apache.xml.internal.security.transforms.implementations.TransformC14N11_WithComments;
-import com.sun.org.apache.xml.internal.security.transforms.implementations.TransformC14NExclusive;
-import com.sun.org.apache.xml.internal.security.transforms.implementations.TransformC14NExclusiveWithComments;
-import com.sun.org.apache.xml.internal.security.transforms.implementations.TransformC14NWithComments;
-import com.sun.org.apache.xml.internal.security.transforms.implementations.TransformEnvelopedSignature;
-import com.sun.org.apache.xml.internal.security.transforms.implementations.TransformXPath;
-import com.sun.org.apache.xml.internal.security.transforms.implementations.TransformXPath2Filter;
-import com.sun.org.apache.xml.internal.security.transforms.implementations.TransformXSLT;
-import com.sun.org.apache.xml.internal.security.utils.Constants;
-import com.sun.org.apache.xml.internal.security.utils.HelperNodeList;
-import com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy;
-import com.sun.org.apache.xml.internal.security.utils.XMLUtils;
+import j86.j86.com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
+import j86.j86.com.sun.org.apache.xml.internal.security.c14n.InvalidCanonicalizerException;
+import j86.j86.com.sun.org.apache.xml.internal.security.exceptions.AlgorithmAlreadyRegisteredException;
+import j86.j86.com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+import j86.j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
+import j86.j86.j86.com.sun.org.apache.xml.internal.security.transforms.implementations.TransformBase64Decode;
+import j86.j86.j86.com.sun.org.apache.xml.internal.security.transforms.implementations.TransformC14N;
+import j86.j86.j86.com.sun.org.apache.xml.internal.security.transforms.implementations.TransformC14N11;
+import j86.j86.j86.com.sun.org.apache.xml.internal.security.transforms.implementations.TransformC14N11_WithComments;
+import j86.j86.j86.com.sun.org.apache.xml.internal.security.transforms.implementations.TransformC14NExclusive;
+import j86.j86.j86.com.sun.org.apache.xml.internal.security.transforms.implementations.TransformC14NExclusiveWithComments;
+import j86.j86.j86.com.sun.org.apache.xml.internal.security.transforms.implementations.TransformC14NWithComments;
+import j86.j86.j86.com.sun.org.apache.xml.internal.security.transforms.implementations.TransformEnvelopedSignature;
+import j86.j86.j86.com.sun.org.apache.xml.internal.security.transforms.implementations.TransformXPath;
+import j86.j86.j86.com.sun.org.apache.xml.internal.security.transforms.implementations.TransformXPath2Filter;
+import j86.j86.j86.com.sun.org.apache.xml.internal.security.transforms.implementations.TransformXSLT;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.Constants;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.HelperNodeList;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
@@ -69,8 +69,8 @@ import org.xml.sax.SAXException;
 public final class Transform extends SignatureElementProxy {
 
     /** {@link org.apache.commons.logging} logging facility */
-    private static java.util.logging.Logger log =
-        java.util.logging.Logger.getLogger(Transform.class.getName());
+    private static j86.j86.java.util.logging.Logger log =
+        j86.j86.java.util.logging.Logger.getLogger(Transform.class.getName());
 
     /** All available Transform classes are registered here */
     private static Map<String, Class<? extends TransformSpi>> transformSpiHash =
@@ -351,10 +351,10 @@ public final class Transform extends SignatureElementProxy {
             );
         }
 
-        if (log.isLoggable(java.util.logging.Level.FINE)) {
-            log.log(java.util.logging.Level.FINE, "Create URI \"" + algorithmURI + "\" class \""
+        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+            log.log(j86.j86.java.util.logging.Level.FINE, "Create URI \"" + algorithmURI + "\" class \""
                       + newTransformSpi.getClass() + "\"");
-            log.log(java.util.logging.Level.FINE, "The NodeList is " + contextNodes);
+            log.log(j86.j86.java.util.logging.Level.FINE, "The NodeList is " + contextNodes);
         }
 
         // give it to the current document

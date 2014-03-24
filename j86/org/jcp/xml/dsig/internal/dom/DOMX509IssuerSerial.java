@@ -26,15 +26,15 @@
 /*
  * $Id: DOMX509IssuerSerial.java 1333415 2012-05-03 12:03:51Z coheigea $
  */
-package org.jcp.xml.dsig.internal.dom;
+package j86.j86.org.jcp.xml.dsig.internal.dom;
 
-import javax.xml.crypto.*;
-import javax.xml.crypto.dom.DOMCryptoContext;
-import javax.xml.crypto.dsig.*;
-import javax.xml.crypto.dsig.keyinfo.X509IssuerSerial;
+import j86.javax.xml.crypto.*;
+import j86.j86.javax.xml.crypto.dom.DOMCryptoContext;
+import j86.j86.javax.xml.crypto.dsig.*;
+import j86.j86.j86.javax.xml.crypto.dsig.keyinfo.X509IssuerSerial;
 
-import java.math.BigInteger;
-import javax.security.auth.x500.X500Principal;
+import j86.java.math.BigInteger;
+import j86.j86.javax.security.auth.x500.X500Principal;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;

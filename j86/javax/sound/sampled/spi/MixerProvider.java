@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.sound.sampled.spi;
+package j86.j86.javax.sound.sampled.spi;
 
-import javax.sound.sampled.Mixer;
+import j86.javax.sound.sampled.Mixer;
 
 /**
  * A provider or factory for a particular mixer type.
@@ -75,8 +75,8 @@ public abstract class MixerProvider {
      * are returned by the {@code getMixer} method.
      *
      * @return a set of mixer info objects
-     * @see #getMixer(javax.sound.sampled.Mixer.Info) getMixer(Mixer.Info)
-     * @see #isMixerSupported(javax.sound.sampled.Mixer.Info) isMixerSupported(Mixer.Info)
+     * @see #getMixer(j86.javax.sound.sampled.Mixer.Info) getMixer(Mixer.Info)
+     * @see #isMixerSupported(j86.javax.sound.sampled.Mixer.Info) isMixerSupported(Mixer.Info)
      */
     public abstract Mixer.Info[] getMixerInfo();
 
@@ -95,7 +95,7 @@ public abstract class MixerProvider {
      * @throws IllegalArgumentException if the info object specified does not
      *     match the info object for a mixer supported by this MixerProvider.
      * @see #getMixerInfo()
-     * @see #isMixerSupported(javax.sound.sampled.Mixer.Info) isMixerSupported(Mixer.Info)
+     * @see #isMixerSupported(j86.javax.sound.sampled.Mixer.Info) isMixerSupported(Mixer.Info)
      */
     public abstract Mixer getMixer(Mixer.Info info);
 }

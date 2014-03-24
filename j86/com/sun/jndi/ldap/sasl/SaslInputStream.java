@@ -23,14 +23,14 @@
  * questions.
  */
 
-package com.sun.jndi.ldap.sasl;
+package j86.j86.com.sun.jndi.ldap.sasl;
 
-import javax.security.sasl.Sasl;
-import javax.security.sasl.SaslClient;
-import javax.security.sasl.SaslException;
-import java.io.IOException;
-import java.io.EOFException;
-import java.io.InputStream;
+import j86.javax.security.sasl.Sasl;
+import j86.javax.security.sasl.SaslClient;
+import j86.javax.security.sasl.SaslException;
+import j86.java.io.IOException;
+import j86.java.io.EOFException;
+import j86.java.io.InputStream;
 
 /**
  * This class is used by clients of Java SASL that need to create an input stream
@@ -201,7 +201,7 @@ public class SaslInputStream extends InputStream {
     /**
      * Returns the integer represented by  4 bytes in network byte order.
      */
-    // Copied from com.sun.security.sasl.util.SaslImpl.
+    // Copied from j86.j86.com.sun.security.sasl.util.SaslImpl.
     private static int networkByteOrderToInt(byte[] buf, int start, int count) {
         if (count > 4) {
             throw new IllegalArgumentException("Cannot handle more than 4 bytes");

@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.naming.directory;
+package j86.j86.javax.naming.directory;
 
-import javax.naming.NamingException;
+import j86.javax.naming.NamingException;
 
 /**
   * This class is thrown when an attempt is
@@ -49,7 +49,7 @@ public class InvalidAttributeValueException extends NamingException {
      * Constructs a new instance of InvalidAttributeValueException using
      * an explanation. All other fields are set to null.
      * @param   explanation     Additional detail about this exception. Can be null.
-     * @see java.lang.Throwable#getMessage
+     * @see j86.java.lang.Throwable#getMessage
      */
     public InvalidAttributeValueException(String explanation) {
         super(explanation);

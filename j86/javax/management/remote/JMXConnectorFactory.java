@@ -23,23 +23,23 @@
  * questions.
  */
 
-package javax.management.remote;
+package j86.j86.javax.management.remote;
 
-import com.sun.jmx.mbeanserver.Util;
-import java.io.IOException;
-import java.net.MalformedURLException;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Iterator;
-import java.util.ServiceLoader;
-import java.util.StringTokenizer;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
+import j86.com.sun.jmx.mbeanserver.Util;
+import j86.java.io.IOException;
+import j86.java.net.MalformedURLException;
+import j86.java.util.Collections;
+import j86.java.util.HashMap;
+import j86.java.util.Map;
+import j86.java.util.Iterator;
+import j86.java.util.ServiceLoader;
+import j86.java.util.StringTokenizer;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
 
-import com.sun.jmx.remote.util.ClassLogger;
-import com.sun.jmx.remote.util.EnvHelp;
-import sun.reflect.misc.ReflectUtil;
+import j86.com.sun.jmx.remote.util.ClassLogger;
+import j86.com.sun.jmx.remote.util.EnvHelp;
+import j86.j86.sun.reflect.misc.ReflectUtil;
 
 
 /**
@@ -100,8 +100,8 @@ import sun.reflect.misc.ReflectUtil;
  * key <code>jmx.remote.protocol.provider.class.loader</code> then the
  * associated value is the class loader to use to load the provider.
  * If the associated value is not an instance of {@link
- * java.lang.ClassLoader}, an {@link
- * java.lang.IllegalArgumentException} is thrown.</p>
+ * j86.java.lang.ClassLoader}, an {@link
+ * j86.java.lang.IllegalArgumentException} is thrown.</p>
  *
  * <p>If the <code>jmx.remote.protocol.provider.class.loader</code>
  * key is not present in the <code>environment</code> parameter, the
@@ -197,7 +197,7 @@ public class JMXConnectorFactory {
         "com.sun.jmx.remote.protocol";
 
     private static final ClassLogger logger =
-        new ClassLogger("javax.management.remote.misc", "JMXConnectorFactory");
+        new ClassLogger("j86.j86.javax.management.remote.misc", "JMXConnectorFactory");
 
     /** There are no instances of this class.  */
     private JMXConnectorFactory() {
@@ -336,7 +336,7 @@ public class JMXConnectorFactory {
         if (provider == null) {
             // Loader is null when context class loader is set to null
             // and no loader has been provided in map.
-            // com.sun.jmx.remote.util.Service class extracted from j2se
+            // j86.com.sun.jmx.remote.util.Service class extracted from j2se
             // provider search algorithm doesn't handle well null classloader.
             if (loader != null) {
                 try {
@@ -556,7 +556,7 @@ public class JMXConnectorFactory {
                 final String msg =
                     "The ClassLoader supplied in the environment map using " +
                     "the " + PROTOCOL_PROVIDER_CLASS_LOADER +
-                    " attribute is not an instance of java.lang.ClassLoader";
+                    " attribute is not an instance of j86.java.lang.ClassLoader";
                 throw new IllegalArgumentException(msg);
             }
         }

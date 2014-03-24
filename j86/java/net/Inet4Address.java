@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.net;
+package j86.java.net;
 
-import java.io.ObjectStreamException;
+import j86.java.io.ObjectStreamException;
 
 /**
  * This class represents an Internet Protocol version 4 (IPv4) address.
@@ -349,7 +349,7 @@ class Inet4Address extends InetAddress {
      * @param   obj   the object to compare against.
      * @return  {@code true} if the objects are the same;
      *          {@code false} otherwise.
-     * @see     java.net.InetAddress#getAddress()
+     * @see     j86.java.net.InetAddress#getAddress()
      */
     public boolean equals(Object obj) {
         return (obj != null) && (obj instanceof Inet4Address) &&

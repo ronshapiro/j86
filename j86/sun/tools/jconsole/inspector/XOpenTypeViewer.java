@@ -23,26 +23,26 @@
  * questions.
  */
 
-package sun.tools.jconsole.inspector;
+package j86.j86.sun.tools.jconsole.inspector;
 
-import javax.swing.*;
-import javax.swing.event.*;
-import javax.swing.table.*;
-import java.awt.BorderLayout;
-import java.awt.FlowLayout;
-import java.awt.Component;
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.event.*;
-import java.awt.Dimension;
-import java.util.*;
-import java.lang.reflect.Array;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.event.*;
+import j86.j86.javax.swing.table.*;
+import j86.java.awt.BorderLayout;
+import j86.java.awt.FlowLayout;
+import j86.java.awt.Component;
+import j86.java.awt.Color;
+import j86.java.awt.Font;
+import j86.j86.java.awt.event.*;
+import j86.java.awt.Dimension;
+import j86.java.util.*;
+import j86.j86.j86.java.lang.reflect.Array;
 
-import javax.management.openmbean.*;
+import j86.j86.javax.management.openmbean.*;
 
-import sun.tools.jconsole.JConsole;
-import sun.tools.jconsole.Messages;
-import sun.tools.jconsole.Resources;
+import j86.sun.tools.jconsole.JConsole;
+import j86.sun.tools.jconsole.Messages;
+import j86.sun.tools.jconsole.Resources;
 
 @SuppressWarnings("serial")
 public class XOpenTypeViewer extends JPanel implements ActionListener {

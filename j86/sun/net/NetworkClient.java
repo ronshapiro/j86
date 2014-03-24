@@ -22,17 +22,17 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.net;
+package j86.sun.net;
 
-import java.io.*;
-import java.net.Socket;
-import java.net.InetAddress;
-import java.net.InetSocketAddress;
-import java.net.UnknownHostException;
-import java.net.Proxy;
-import java.util.Arrays;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
+import j86.java.io.*;
+import j86.java.net.Socket;
+import j86.java.net.InetAddress;
+import j86.java.net.InetSocketAddress;
+import j86.java.net.UnknownHostException;
+import j86.java.net.Proxy;
+import j86.java.util.Arrays;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
 
 /**
  * This is the base class for network clients.
@@ -71,8 +71,8 @@ public class NetworkClient {
         AccessController.doPrivileged(
                 new PrivilegedAction<Void>() {
                     public Void run() {
-                        vals[0] = Integer.getInteger("sun.net.client.defaultReadTimeout", 0).intValue();
-                        vals[1] = Integer.getInteger("sun.net.client.defaultConnectTimeout", 0).intValue();
+                        vals[0] = Integer.getInteger("j86.sun.net.client.defaultReadTimeout", 0).intValue();
+                        vals[1] = Integer.getInteger("j86.sun.net.client.defaultConnectTimeout", 0).intValue();
                         encs[0] = System.getProperty("file.encoding", "ISO8859_1");
                         return null;
             }
@@ -194,7 +194,7 @@ public class NetworkClient {
      * to create the socket.
      */
     protected Socket createSocket() throws IOException {
-        return new java.net.Socket();
+        return new j86.java.net.Socket();
     }
 
     protected InetAddress getLocalAddress() throws IOException {

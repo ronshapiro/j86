@@ -28,9 +28,9 @@
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
 
-package sun.security.krb5.internal;
+package j86.j86.sun.security.krb5.internal;
 
-public class KrbErrException extends sun.security.krb5.KrbException {
+public class KrbErrException extends j86.sun.security.krb5.KrbException {
 
     private static final long serialVersionUID = 2186533836785448317L;
 

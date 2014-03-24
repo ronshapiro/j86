@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.management;
+package j86.sun.management;
 
-import java.util.*;
-import com.sun.management.VMOption;
-import com.sun.management.VMOption.Origin;
+import j86.java.util.*;
+import com.j86.sun.management.VMOption;
+import com.j86.sun.management.VMOption.Origin;
 
 /**
  * Flag class is a helper class for constructing a VMOption.

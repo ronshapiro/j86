@@ -23,24 +23,24 @@
  * questions.
  */
 
-package javax.management.relation;
+package j86.j86.javax.management.relation;
 
-import static com.sun.jmx.mbeanserver.Util.cast;
-import com.sun.jmx.mbeanserver.GetPropertyAction;
+import static j86.com.sun.jmx.mbeanserver.Util.cast;
+import j86.com.sun.jmx.mbeanserver.GetPropertyAction;
 
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.ObjectStreamField;
-import java.io.Serializable;
+import j86.java.io.IOException;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectStreamField;
+import j86.java.io.Serializable;
 
-import java.security.AccessController;
+import j86.java.security.AccessController;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+import j86.java.util.ArrayList;
+import j86.java.util.Iterator;
+import j86.java.util.List;
 
-import javax.management.ObjectName;
+import j86.javax.management.ObjectName;
 
 /**
  * Represents an unresolved role: a role not retrieved from a relation due

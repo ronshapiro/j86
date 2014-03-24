@@ -23,11 +23,11 @@
  * questions.
  */
 
-package java.lang;
+package j86.java.lang;
 
-import sun.misc.FloatingDecimal;
-import sun.misc.FloatConsts;
-import sun.misc.DoubleConsts;
+import j86.sun.misc.FloatingDecimal;
+import j86.sun.misc.FloatConsts;
+import j86.sun.misc.DoubleConsts;
 
 /**
  * The {@code Float} class wraps a value of primitive type
@@ -178,7 +178,7 @@ public final class Float extends Number implements Comparable<Float> {
      *      <i>a</i>, followed by the letter '{@code E}'
      *      ({@code '\u005Cu0045'}), followed by a representation
      *      of <i>n</i> as a decimal integer, as produced by the
-     *      method {@link java.lang.Integer#toString(int)}.
+     *      method {@link j86.java.lang.Integer#toString(int)}.
      *
      * </ul>
      * </ul>
@@ -197,7 +197,7 @@ public final class Float extends Number implements Comparable<Float> {
      * <i>f</i> must be {@code 0}.
      *
      * <p>To create localized string representations of a floating-point
-     * value, use subclasses of {@link java.text.NumberFormat}.
+     * value, use subclasses of {@link j86.java.text.NumberFormat}.
      *
      * @param   f   the float to be converted.
      * @return a string representation of the argument.
@@ -381,7 +381,7 @@ public final class Float extends Number implements Comparable<Float> {
      *
      * <p>To interpret localized string representations of a
      * floating-point value, use subclasses of {@link
-     * java.text.NumberFormat}.
+     * j86.java.text.NumberFormat}.
      *
      * <p>Note that trailing format specifiers, specifiers that
      * determine the type of a floating-point literal
@@ -444,7 +444,7 @@ public final class Float extends Number implements Comparable<Float> {
      * @throws NullPointerException  if the string is null
      * @throws NumberFormatException if the string does not contain a
      *               parsable {@code float}.
-     * @see    java.lang.Float#valueOf(String)
+     * @see    j86.java.lang.Float#valueOf(String)
      * @since 1.2
      */
     public static float parseFloat(String s) throws NumberFormatException {
@@ -526,7 +526,7 @@ public final class Float extends Number implements Comparable<Float> {
      * @param      s   a string to be converted to a {@code Float}.
      * @throws  NumberFormatException  if the string does not contain a
      *               parsable number.
-     * @see        java.lang.Float#valueOf(java.lang.String)
+     * @see        j86.java.lang.Float#valueOf(java.lang.String)
      */
     public Float(String s) throws NumberFormatException {
         value = parseFloat(s);
@@ -562,7 +562,7 @@ public final class Float extends Number implements Comparable<Float> {
      * {@code toString} of one argument.
      *
      * @return  a {@code String} representation of this object.
-     * @see java.lang.Float#toString(float)
+     * @see j86.java.lang.Float#toString(float)
      */
     public String toString() {
         return Float.toString(value);
@@ -702,7 +702,7 @@ public final class Float extends Number implements Comparable<Float> {
      * @param obj the object to be compared
      * @return  {@code true} if the objects are the same;
      *          {@code false} otherwise.
-     * @see java.lang.Float#floatToIntBits(float)
+     * @see j86.java.lang.Float#floatToIntBits(float)
      */
     public boolean equals(Object obj) {
         return (obj instanceof Float)
@@ -925,7 +925,7 @@ public final class Float extends Number implements Comparable<Float> {
      * @param b the second operand
      * @return the sum of {@code a} and {@code b}
      * @jls 4.2.4 Floating-Point Operations
-     * @see java.util.function.BinaryOperator
+     * @see j86.j86.java.util.function.BinaryOperator
      * @since 1.8
      */
     public static float sum(float a, float b) {
@@ -939,7 +939,7 @@ public final class Float extends Number implements Comparable<Float> {
      * @param a the first operand
      * @param b the second operand
      * @return the greater of {@code a} and {@code b}
-     * @see java.util.function.BinaryOperator
+     * @see j86.j86.java.util.function.BinaryOperator
      * @since 1.8
      */
     public static float max(float a, float b) {
@@ -953,7 +953,7 @@ public final class Float extends Number implements Comparable<Float> {
      * @param a the first operand
      * @param b the second operand
      * @return the smaller of {@code a} and {@code b}
-     * @see java.util.function.BinaryOperator
+     * @see j86.j86.java.util.function.BinaryOperator
      * @since 1.8
      */
     public static float min(float a, float b) {

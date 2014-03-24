@@ -23,11 +23,11 @@
  * questions.
  */
 
-package com.sun.jarsigner;
+package j86.com.sun.jarsigner;
 
-import java.io.IOException;
-import java.security.NoSuchAlgorithmException;
-import java.security.cert.CertificateException;
+import j86.java.io.IOException;
+import j86.java.security.NoSuchAlgorithmException;
+import j86.j86.java.security.cert.CertificateException;
 
 /**
  * This class defines a content signing service.

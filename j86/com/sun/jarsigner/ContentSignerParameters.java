@@ -23,11 +23,11 @@
  * questions.
  */
 
-package com.sun.jarsigner;
+package j86.com.sun.jarsigner;
 
-import java.net.URI;
-import java.security.cert.X509Certificate;
-import java.util.zip.ZipFile;
+import j86.java.net.URI;
+import j86.j86.java.security.cert.X509Certificate;
+import j86.j86.java.util.zip.ZipFile;
 
 /**
  * This interface encapsulates the parameters for a ContentSigner object.

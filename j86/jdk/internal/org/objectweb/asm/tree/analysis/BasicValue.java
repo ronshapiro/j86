@@ -56,9 +56,9 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-package jdk.internal.org.objectweb.asm.tree.analysis;
+package j86.j86.j86.jdk.internal.org.objectweb.asm.tree.analysis;
 
-import jdk.internal.org.objectweb.asm.Type;
+import j86.jdk.internal.org.objectweb.asm.Type;
 
 /**
  * A {@link Value} that is represented by its type in a seven types type system.
@@ -81,7 +81,7 @@ public class BasicValue implements Value {
             Type.DOUBLE_TYPE);
 
     public static final BasicValue REFERENCE_VALUE = new BasicValue(
-            Type.getObjectType("java/lang/Object"));
+            Type.getObjectType("j86.java.lang/Object"));
 
     public static final BasicValue RETURNADDRESS_VALUE = new BasicValue(
             Type.VOID_TYPE);

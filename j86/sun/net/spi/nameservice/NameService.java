@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.net.spi.nameservice;
+package j86.j86.j86.sun.net.spi.nameservice;
 
-import java.net.UnknownHostException;
+import j86.java.net.UnknownHostException;
 
 public interface NameService {
-    public java.net.InetAddress[] lookupAllHostAddr(String host) throws UnknownHostException;
+    public j86.java.net.InetAddress[] lookupAllHostAddr(String host) throws UnknownHostException;
     public String getHostByAddr(byte[] addr) throws UnknownHostException;
 }

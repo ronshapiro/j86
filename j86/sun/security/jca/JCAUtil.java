@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.security.jca;
+package j86.sun.security.jca;
 
-import java.lang.ref.*;
+import j86.j86.java.lang.ref.*;
 
-import java.security.*;
+import j86.java.security.*;
 
 /**
  * Collection of static utility methods used by the security framework.

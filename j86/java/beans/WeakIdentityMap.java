@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.beans;
+package j86.java.beans;
 
-import java.lang.ref.ReferenceQueue;
-import java.lang.ref.WeakReference;
+import j86.j86.java.lang.ref.ReferenceQueue;
+import j86.j86.java.lang.ref.WeakReference;
 
 /**
  * Hash table based mapping, which uses weak references to store keys
@@ -38,8 +38,8 @@ import java.lang.ref.WeakReference;
  * of synchronized blocks and volatile fields.
  * Be very careful during editing!
  *
- * @see java.util.IdentityHashMap
- * @see java.util.WeakHashMap
+ * @see j86.java.util.IdentityHashMap
+ * @see j86.java.util.WeakHashMap
  */
 abstract class WeakIdentityMap<T> {
 

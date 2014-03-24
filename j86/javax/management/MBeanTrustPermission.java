@@ -23,12 +23,12 @@
  * questions.
  */
 
-package javax.management;
+package j86.javax.management;
 
-import java.security.BasicPermission;
-import java.io.IOException;
-import java.io.InvalidObjectException;
-import java.io.ObjectInputStream;
+import j86.java.security.BasicPermission;
+import j86.java.io.IOException;
+import j86.java.io.InvalidObjectException;
+import j86.java.io.ObjectInputStream;
 
 /**
  * This permission represents "trust" in a signer or codebase.

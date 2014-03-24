@@ -24,14 +24,14 @@
  */
 
 
-package java.security;
+package j86.java.security;
 
-import java.util.Enumeration;
-import java.util.WeakHashMap;
-import java.util.concurrent.atomic.AtomicReference;
-import sun.security.jca.GetInstance;
-import sun.security.util.Debug;
-import sun.security.util.SecurityConstants;
+import j86.java.util.Enumeration;
+import j86.java.util.WeakHashMap;
+import j86.j86.j86.java.util.concurrent.atomic.AtomicReference;
+import j86.sun.security.jca.GetInstance;
+import j86.sun.security.util.Debug;
+import j86.sun.security.util.SecurityConstants;
 
 
 /**
@@ -77,10 +77,10 @@ import sun.security.util.SecurityConstants;
  *
  * @author Roland Schemers
  * @author Gary Ellison
- * @see java.security.Provider
- * @see java.security.ProtectionDomain
- * @see java.security.Permission
- * @see java.security.Security security properties
+ * @see j86.java.security.Provider
+ * @see j86.java.security.ProtectionDomain
+ * @see j86.java.security.Permission
+ * @see j86.java.security.Security security properties
  */
 
 public abstract class Policy {
@@ -144,7 +144,7 @@ public abstract class Policy {
      *        getting the Policy object.
      *
      * @see SecurityManager#checkPermission(Permission)
-     * @see #setPolicy(java.security.Policy)
+     * @see #setPolicy(j86.java.security.Policy)
      */
     public static Policy getPolicy()
     {
@@ -176,7 +176,7 @@ public abstract class Policy {
                         }
                     });
                     if (policy_class == null) {
-                        policy_class = "sun.security.provider.PolicyFile";
+                        policy_class = "j86.sun.security.provider.PolicyFile";
                     }
 
                     try {
@@ -193,7 +193,7 @@ public abstract class Policy {
                          */
 
                         // install the bootstrap provider to avoid recursion
-                        Policy polFile = new sun.security.provider.PolicyFile();
+                        Policy polFile = new j86.sun.security.provider.PolicyFile();
                         pinfo = new PolicyInfo(polFile, false);
                         policy.set(pinfo);
 
@@ -231,7 +231,7 @@ public abstract class Policy {
                             pinfo = new PolicyInfo(pol, true);
                         } else {
                             if (debug != null) {
-                                debug.println("using sun.security.provider.PolicyFile");
+                                debug.println("using j86.sun.security.provider.PolicyFile");
                             }
                             pinfo = new PolicyInfo(polFile, true);
                         }
@@ -700,7 +700,7 @@ public abstract class Policy {
      * @return true if "permission" is a proper subset of a permission
      * granted to this ProtectionDomain.
      *
-     * @see java.security.ProtectionDomain
+     * @see j86.java.security.ProtectionDomain
      * @since 1.4
      */
     public boolean implies(ProtectionDomain domain, Permission permission) {

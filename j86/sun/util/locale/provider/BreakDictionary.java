@@ -37,16 +37,16 @@
  * This notice and attribution to Taligent may not be removed.
  * Taligent is a registered trademark of Taligent, Inc.
  */
-package sun.util.locale.provider;
+package j86.j86.j86.sun.util.locale.provider;
 
-import java.io.BufferedInputStream;
-import java.io.IOException;
-import java.security.AccessController;
-import java.security.PrivilegedActionException;
-import java.security.PrivilegedExceptionAction;
-import java.util.MissingResourceException;
-import sun.text.CompactByteArray;
-import sun.text.SupplementaryCharacterData;
+import j86.java.io.BufferedInputStream;
+import j86.java.io.IOException;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedActionException;
+import j86.java.security.PrivilegedExceptionAction;
+import j86.java.util.MissingResourceException;
+import j86.sun.text.CompactByteArray;
+import j86.sun.text.SupplementaryCharacterData;
 
 /**
  * This is the class that represents the list of known words used by
@@ -150,7 +150,7 @@ class BreakDictionary {
                 new PrivilegedExceptionAction<BufferedInputStream>() {
                     @Override
                     public BufferedInputStream run() throws Exception {
-                        return new BufferedInputStream(getClass().getResourceAsStream("/sun/text/resources/" + dictionaryName));
+                        return new BufferedInputStream(getClass().getResourceAsStream("/j86.j86.sun.text.resources/" + dictionaryName));
                     }
                 }
             );

@@ -23,21 +23,21 @@
  * questions.
  */
 
-package javax.security.auth.kerberos;
+package j86.j86.javax.security.auth.kerberos;
 
-import java.io.*;
-import java.util.Arrays;
-import javax.crypto.SecretKey;
-import javax.security.auth.Destroyable;
-import javax.security.auth.DestroyFailedException;
-import sun.misc.HexDumpEncoder;
-import sun.security.krb5.Asn1Exception;
-import sun.security.krb5.PrincipalName;
-import sun.security.krb5.EncryptionKey;
-import sun.security.krb5.EncryptedData;
-import sun.security.krb5.KrbException;
-import sun.security.krb5.KrbCryptoException;
-import sun.security.util.DerValue;
+import j86.java.io.*;
+import j86.java.util.Arrays;
+import j86.javax.crypto.SecretKey;
+import j86.javax.security.auth.Destroyable;
+import j86.javax.security.auth.DestroyFailedException;
+import j86.sun.misc.HexDumpEncoder;
+import j86.sun.security.krb5.Asn1Exception;
+import j86.sun.security.krb5.PrincipalName;
+import j86.sun.security.krb5.EncryptionKey;
+import j86.sun.security.krb5.EncryptedData;
+import j86.sun.security.krb5.KrbException;
+import j86.sun.security.krb5.KrbCryptoException;
+import j86.sun.security.util.DerValue;
 
 /**
  * This class encapsulates a Kerberos encryption key. It is not associated
@@ -105,7 +105,7 @@ class KeyImpl implements SecretKey, Destroyable, Serializable {
     }
 
     /*
-     * Methods from java.security.Key
+     * Methods from j86.java.security.Key
      */
 
     public final String getAlgorithm() {

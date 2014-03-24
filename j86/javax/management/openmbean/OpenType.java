@@ -23,20 +23,20 @@
  * questions.
  */
 
-package javax.management.openmbean;
+package j86.j86.javax.management.openmbean;
 
-import com.sun.jmx.mbeanserver.GetPropertyAction;
-import java.io.IOException;
-import java.io.InvalidObjectException;
-import java.io.ObjectInputStream;
-import java.io.Serializable;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-import javax.management.Descriptor;
-import javax.management.ImmutableDescriptor;
+import j86.com.sun.jmx.mbeanserver.GetPropertyAction;
+import j86.java.io.IOException;
+import j86.java.io.InvalidObjectException;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.Serializable;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.util.Arrays;
+import j86.java.util.Collections;
+import j86.java.util.List;
+import j86.javax.management.Descriptor;
+import j86.javax.management.ImmutableDescriptor;
 
 /**
  * The <code>OpenType</code> class is the parent abstract class of all classes which describe the actual <i>open type</i>
@@ -73,20 +73,20 @@ public abstract class OpenType<T> implements Serializable {
      * data values.
      *
        <pre>ALLOWED_CLASSNAMES_LIST = {
-        "java.lang.Void",
-        "java.lang.Boolean",
-        "java.lang.Character",
-        "java.lang.Byte",
-        "java.lang.Short",
-        "java.lang.Integer",
-        "java.lang.Long",
-        "java.lang.Float",
-        "java.lang.Double",
-        "java.lang.String",
-        "java.math.BigDecimal",
-        "java.math.BigInteger",
-        "java.util.Date",
-        "javax.management.ObjectName",
+        "j86.java.lang.Void",
+        "j86.java.lang.Boolean",
+        "j86.java.lang.Character",
+        "j86.java.lang.Byte",
+        "j86.java.lang.Short",
+        "j86.java.lang.Integer",
+        "j86.java.lang.Long",
+        "j86.java.lang.Float",
+        "j86.java.lang.Double",
+        "j86.java.lang.String",
+        "j86.java.math.BigDecimal",
+        "j86.java.math.BigInteger",
+        "j86.java.util.Date",
+        "j86.javax.management.ObjectName",
         CompositeData.class.getName(),
         TabularData.class.getName() } ;
        </pre>
@@ -95,20 +95,20 @@ public abstract class OpenType<T> implements Serializable {
     public static final List<String> ALLOWED_CLASSNAMES_LIST =
       Collections.unmodifiableList(
         Arrays.asList(
-          "java.lang.Void",
-          "java.lang.Boolean",
-          "java.lang.Character",
-          "java.lang.Byte",
-          "java.lang.Short",
-          "java.lang.Integer",
-          "java.lang.Long",
-          "java.lang.Float",
-          "java.lang.Double",
-          "java.lang.String",
-          "java.math.BigDecimal",
-          "java.math.BigInteger",
-          "java.util.Date",
-          "javax.management.ObjectName",
+          "j86.java.lang.Void",
+          "j86.java.lang.Boolean",
+          "j86.java.lang.Character",
+          "j86.java.lang.Byte",
+          "j86.java.lang.Short",
+          "j86.java.lang.Integer",
+          "j86.java.lang.Long",
+          "j86.java.lang.Float",
+          "j86.java.lang.Double",
+          "j86.java.lang.String",
+          "j86.java.math.BigDecimal",
+          "j86.java.math.BigInteger",
+          "j86.java.util.Date",
+          "j86.javax.management.ObjectName",
           CompositeData.class.getName(),        // better refer to these two class names like this, rather than hardcoding a string,
           TabularData.class.getName()) );       // in case the package of these classes should change (who knows...)
 
@@ -160,9 +160,9 @@ public abstract class OpenType<T> implements Serializable {
      *                    A multidimensional array of any one of these classes
      *                    or their corresponding primitive types is also an allowed class,
      *                    in which case the class name follows the rules defined by the method
-     *                    {@link Class#getName() getName()} of <code>java.lang.Class</code>.
+     *                    {@link Class#getName() getName()} of <code>j86.java.lang.Class</code>.
      *                    For example, a 3-dimensional array of Strings has for class name
-     *                    &quot;<code>[[[Ljava.lang.String;</code>&quot; (without the quotes).
+     *                    &quot;<code>[[[Lj86.java.lang.String;</code>&quot; (without the quotes).
      * <br>&nbsp;
      * @param  typeName  The name given to the open type this instance represents; cannot be a null or empty string.
      * <br>&nbsp;
@@ -223,7 +223,7 @@ public abstract class OpenType<T> implements Serializable {
         className   = valid("className", className);
 
         // Check if className describes an array class, and determines its elements' class name.
-        // (eg: a 3-dimensional array of Strings has for class name: "[[[Ljava.lang.String;")
+        // (eg: a 3-dimensional array of Strings has for class name: "[[[Lj86.java.lang.String;")
         //
         int n = 0;
         while (className.startsWith("[", n)) {
@@ -293,11 +293,11 @@ public abstract class OpenType<T> implements Serializable {
      * A multidimensional array of any one of these classes or their
      * corresponding primitive types is also an allowed class,
      * in which case the class name follows the rules defined by the method
-     * {@link Class#getName() getName()} of <code>java.lang.Class</code>.
+     * {@link Class#getName() getName()} of <code>j86.java.lang.Class</code>.
      * For example, a 3-dimensional array of Strings has for class name
-     * &quot;<code>[[[Ljava.lang.String;</code>&quot; (without the quotes),
+     * &quot;<code>[[[Lj86.java.lang.String;</code>&quot; (without the quotes),
      * a 3-dimensional array of Integers has for class name
-     * &quot;<code>[[[Ljava.lang.Integer;</code>&quot; (without the quotes),
+     * &quot;<code>[[[Lj86.java.lang.Integer;</code>&quot; (without the quotes),
      * and a 3-dimensional array of int has for class name
      * &quot;<code>[[[I</code>&quot; (without the quotes)
      *
@@ -389,7 +389,7 @@ public abstract class OpenType<T> implements Serializable {
     public abstract String toString() ;
 
     /**
-     * Deserializes an {@link OpenType} from an {@link java.io.ObjectInputStream}.
+     * Deserializes an {@link OpenType} from an {@link j86.java.io.ObjectInputStream}.
      */
     private void readObject(ObjectInputStream in)
             throws IOException, ClassNotFoundException {

@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.security.tools.jarsigner;
+package j86.j86.sun.security.tools.jarsigner;
 
 /**
  * <p> This class represents the <code>ResourceBundle</code>
  * for JarSigner.
  *
  */
-public class Resources_zh_CN extends java.util.ListResourceBundle {
+public class Resources_zh_CN extends j86.java.util.ListResourceBundle {
 
     private static final Object[][] contents = {
 

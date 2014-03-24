@@ -23,9 +23,9 @@
  * questions.
  */
 
-package com.sun.crypto.provider;
+package j86.com.sun.crypto.provider;
 
-import javax.crypto.ShortBufferException;
+import j86.javax.crypto.ShortBufferException;
 
 /**
  * This class implements padding as specified in the W3 XML ENC standard.

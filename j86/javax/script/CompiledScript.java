@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.script;
+package j86.javax.script;
 
-import java.util.Map;
+import j86.java.util.Map;
 
 /**
  * Extended by classes that store results of compilations.  State

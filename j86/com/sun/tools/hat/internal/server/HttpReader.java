@@ -30,7 +30,7 @@
  * at JavaSoft/Sun.
  */
 
-package com.sun.tools.hat.internal.server;
+package j86.j86.com.sun.tools.hat.internal.server;
 
 /**
  * Reads a single HTTP query from a socket, and starts up a QueryHandler
@@ -40,18 +40,18 @@ package com.sun.tools.hat.internal.server;
  */
 
 
-import java.net.Socket;
+import j86.java.net.Socket;
 
-import java.io.InputStream;
-import java.io.BufferedInputStream;
-import java.io.IOException;
-import java.io.BufferedWriter;
-import java.io.PrintWriter;
-import java.io.OutputStreamWriter;
+import j86.java.io.InputStream;
+import j86.java.io.BufferedInputStream;
+import j86.java.io.IOException;
+import j86.java.io.BufferedWriter;
+import j86.java.io.PrintWriter;
+import j86.java.io.OutputStreamWriter;
 
-import com.sun.tools.hat.internal.model.Snapshot;
-import com.sun.tools.hat.internal.oql.OQLEngine;
-import com.sun.tools.hat.internal.util.Misc;
+import j86.j86.com.sun.tools.hat.internal.model.Snapshot;
+import j86.j86.com.sun.tools.hat.internal.oql.OQLEngine;
+import j86.j86.com.sun.tools.hat.internal.util.Misc;
 
 public class HttpReader implements Runnable {
 
@@ -89,7 +89,7 @@ public class HttpReader implements Runnable {
                 queryBuf.append(ch);
             }
             String query = queryBuf.toString();
-            query = java.net.URLDecoder.decode(query, "UTF-8");
+            query = j86.java.net.URLDecoder.decode(query, "UTF-8");
             QueryHandler handler = null;
             if (snapshot == null) {
                 outputError("The heap snapshot is still being read.");

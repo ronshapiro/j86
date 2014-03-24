@@ -23,22 +23,22 @@
  * questions.
  */
 
-package com.sun.jmx.mbeanserver;
+package j86.com.sun.jmx.mbeanserver;
 
 
-import static com.sun.jmx.defaults.JmxProperties.MBEANSERVER_LOGGER;
-import java.security.Permission;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Hashtable;
-import java.util.List;
-import java.util.Map;
-import java.util.logging.Level;
-import javax.management.MBeanPermission;
+import static j86.com.sun.jmx.defaults.JmxProperties.MBEANSERVER_LOGGER;
+import j86.java.security.Permission;
+import j86.java.util.ArrayList;
+import j86.java.util.Arrays;
+import j86.java.util.Hashtable;
+import j86.java.util.List;
+import j86.java.util.Map;
+import j86.j86.java.util.logging.Level;
+import j86.javax.management.MBeanPermission;
 
-import javax.management.ObjectName;
-import javax.management.loading.PrivateClassLoader;
-import sun.reflect.misc.ReflectUtil;
+import j86.javax.management.ObjectName;
+import j86.j86.javax.management.loading.PrivateClassLoader;
+import j86.j86.sun.reflect.misc.ReflectUtil;
 
 /**
  * This class keeps the list of Class Loaders registered in the MBean Server.
@@ -81,7 +81,7 @@ final class ClassLoaderRepositorySupport
     private LoaderEntry[] loaders = EMPTY_LOADER_ARRAY;
 
     /**
-     * Same behavior as add(Object o) in {@link java.util.List}.
+     * Same behavior as add(Object o) in {@link j86.java.util.List}.
      * Replace the loader list with a new one in which the new
      * loader has been added.
      **/
@@ -94,7 +94,7 @@ final class ClassLoaderRepositorySupport
     }
 
     /**
-     * Same behavior as remove(Object o) in {@link java.util.List}.
+     * Same behavior as remove(Object o) in {@link j86.java.util.List}.
      * Replace the loader list with a new one in which the old loader
      * has been removed.
      *
@@ -138,14 +138,14 @@ final class ClassLoaderRepositorySupport
     private final Map<ObjectName,ClassLoader> loadersWithNames =
         new Hashtable<ObjectName,ClassLoader>(10);
 
-    // from javax.management.loading.DefaultLoaderRepository
+    // from j86.j86.javax.management.loading.DefaultLoaderRepository
     public final Class<?> loadClass(String className)
         throws ClassNotFoundException {
         return  loadClass(loaders, className, null, null);
     }
 
 
-    // from javax.management.loading.DefaultLoaderRepository
+    // from j86.j86.javax.management.loading.DefaultLoaderRepository
     public final Class<?> loadClassWithout(ClassLoader without, String className)
             throws ClassNotFoundException {
         if (MBEANSERVER_LOGGER.isLoggable(Level.FINER)) {

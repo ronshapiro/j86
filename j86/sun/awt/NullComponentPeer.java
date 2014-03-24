@@ -23,35 +23,35 @@
  * questions.
  */
 
-package sun.awt;
+package j86.sun.awt;
 
-import java.awt.AWTException;
-import java.awt.BufferCapabilities;
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.Cursor;
-import java.awt.Dimension;
-import java.awt.Font;
-import java.awt.FontMetrics;
-import java.awt.Graphics;
-import java.awt.GraphicsConfiguration;
-import java.awt.Image;
-import java.awt.Insets;
-import java.awt.MenuBar;
-import java.awt.Point;
-import java.awt.Event;
-import java.awt.event.PaintEvent;
-import java.awt.image.ColorModel;
-import java.awt.image.ImageObserver;
-import java.awt.image.ImageProducer;
-import java.awt.image.VolatileImage;
-import java.awt.peer.CanvasPeer;
-import java.awt.peer.LightweightPeer;
-import java.awt.peer.PanelPeer;
-import java.awt.peer.ComponentPeer;
-import java.awt.peer.ContainerPeer;
-import java.awt.Rectangle;
-import sun.java2d.pipe.Region;
+import j86.java.awt.AWTException;
+import j86.java.awt.BufferCapabilities;
+import j86.java.awt.Color;
+import j86.java.awt.Component;
+import j86.java.awt.Cursor;
+import j86.java.awt.Dimension;
+import j86.java.awt.Font;
+import j86.java.awt.FontMetrics;
+import j86.java.awt.Graphics;
+import j86.java.awt.GraphicsConfiguration;
+import j86.java.awt.Image;
+import j86.java.awt.Insets;
+import j86.java.awt.MenuBar;
+import j86.java.awt.Point;
+import j86.java.awt.Event;
+import j86.j86.java.awt.event.PaintEvent;
+import j86.j86.j86.java.awt.image.ColorModel;
+import j86.j86.j86.java.awt.image.ImageObserver;
+import j86.j86.j86.java.awt.image.ImageProducer;
+import j86.j86.j86.java.awt.image.VolatileImage;
+import j86.j86.java.awt.peer.CanvasPeer;
+import j86.j86.java.awt.peer.LightweightPeer;
+import j86.j86.java.awt.peer.PanelPeer;
+import j86.j86.java.awt.peer.ComponentPeer;
+import j86.j86.java.awt.peer.ContainerPeer;
+import j86.java.awt.Rectangle;
+import j86.j86.sun.java2d.pipe.Region;
 
 
 /**
@@ -67,8 +67,8 @@ import sun.java2d.pipe.Region;
  * something useful for some of the other peer interfaces to minimize the
  * native code.
  *
- * This was renamed from java.awt.LightweightPeer (a horrible and confusing
- * name) and moved from java.awt.Toolkit into sun.awt as a public class in
+ * This was renamed from j86.java.awt.LightweightPeer (a horrible and confusing
+ * name) and moved from j86.java.awt.Toolkit into j86.sun.awt as a public class in
  * its own file.
  *
  * @author Timothy Prinzing
@@ -130,7 +130,7 @@ public class NullComponentPeer implements LightweightPeer,
         return false;
     }
 
-    public void handleEvent(java.awt.AWTEvent arg0) {
+    public void handleEvent(j86.java.awt.AWTEvent arg0) {
     }
 
     public Dimension getPreferredSize() {
@@ -261,14 +261,14 @@ public class NullComponentPeer implements LightweightPeer,
     }
 
     /**
-     * @see java.awt.peer.ComponentPeer#isReparentSupported
+     * @see j86.j86.java.awt.peer.ComponentPeer#isReparentSupported
      */
     public boolean isReparentSupported() {
         return false;
     }
 
     /**
-     * @see java.awt.peer.ComponentPeer#reparent
+     * @see j86.j86.java.awt.peer.ComponentPeer#reparent
      */
     public void reparent(ContainerPeer newNativeParent) {
         throw new UnsupportedOperationException();

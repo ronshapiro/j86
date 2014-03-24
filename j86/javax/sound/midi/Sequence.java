@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.sound.midi;
+package j86.javax.sound.midi;
 
-import java.util.Vector;
-import com.sun.media.sound.MidiUtils;
+import j86.java.util.Vector;
+import j86.com.sun.media.sound.MidiUtils;
 
 
 /**
@@ -45,7 +45,7 @@ import com.sun.media.sound.MidiUtils;
  * <code>Tracks</code> to an empty <code>Sequence</code>, and adding
  * <code>{@link MidiEvent}</code> objects to these <code>Tracks</code>.
  *
- * @see Sequencer#setSequence(java.io.InputStream stream)
+ * @see Sequencer#setSequence(j86.java.io.InputStream stream)
  * @see Sequencer#setSequence(Sequence sequence)
  * @see Track#add(MidiEvent)
  * @see MidiFileFormat
@@ -294,7 +294,7 @@ public class Sequence {
      */
     public long getMicrosecondLength() {
 
-        return com.sun.media.sound.MidiUtils.tick2microsecond(this, getTickLength(), null);
+        return j86.com.sun.media.sound.MidiUtils.tick2microsecond(this, getTickLength(), null);
     }
 
 

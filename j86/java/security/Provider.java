@@ -23,16 +23,16 @@
  * questions.
  */
 
-package java.security;
+package j86.java.security;
 
-import java.io.*;
-import java.util.*;
-import static java.util.Locale.ENGLISH;
-import java.lang.ref.*;
-import java.lang.reflect.*;
-import java.util.function.BiConsumer;
-import java.util.function.BiFunction;
-import java.util.function.Function;
+import j86.java.io.*;
+import j86.java.util.*;
+import static j86.java.util.Locale.ENGLISH;
+import j86.j86.java.lang.ref.*;
+import j86.j86.j86.java.lang.reflect.*;
+import j86.j86.java.util.function.BiConsumer;
+import j86.j86.java.util.function.BiFunction;
+import j86.j86.java.util.function.Function;
 
 /**
  * This class represents a "provider" for the
@@ -90,8 +90,8 @@ public abstract class Provider extends Properties {
     // Declare serialVersionUID to be compatible with JDK1.1
     static final long serialVersionUID = -4298000515446427739L;
 
-    private static final sun.security.util.Debug debug =
-        sun.security.util.Debug.getInstance
+    private static final j86.sun.security.util.Debug debug =
+        j86.sun.security.util.Debug.getInstance
         ("provider", "Provider");
 
     /**
@@ -195,7 +195,7 @@ public abstract class Provider extends Properties {
      *
      * @throws  SecurityException
      *          if a security manager exists and its {@link
-     *          java.lang.SecurityManager#checkSecurityAccess} method
+     *          j86.java.lang.SecurityManager#checkSecurityAccess} method
      *          denies access to clear this provider
      *
      * @since 1.2
@@ -215,7 +215,7 @@ public abstract class Provider extends Properties {
      * @param inStream   the input stream.
      * @exception  IOException  if an error occurred when reading from the
      *               input stream.
-     * @see java.util.Properties#load
+     * @see j86.java.util.Properties#load
      */
     @Override
     public synchronized void load(InputStream inStream) throws IOException {
@@ -248,7 +248,7 @@ public abstract class Provider extends Properties {
      * Returns an unmodifiable Set view of the property entries contained
      * in this Provider.
      *
-     * @see   java.util.Map.Entry
+     * @see   j86.java.util.Map.Entry
      * @since 1.2
      */
     @Override
@@ -307,7 +307,7 @@ public abstract class Provider extends Properties {
      *
      * @throws  SecurityException
      *          if a security manager exists and its {@link
-     *          java.lang.SecurityManager#checkSecurityAccess} method
+     *          j86.java.lang.SecurityManager#checkSecurityAccess} method
      *          denies access to set property values.
      *
      * @since 1.2
@@ -334,7 +334,7 @@ public abstract class Provider extends Properties {
      *
      * @throws  SecurityException
      *          if a security manager exists and its {@link
-     *          java.lang.SecurityManager#checkSecurityAccess} method
+     *          j86.java.lang.SecurityManager#checkSecurityAccess} method
      *          denies access to set property values.
      *
      * @since 1.8
@@ -360,7 +360,7 @@ public abstract class Provider extends Properties {
      *
      * @throws  SecurityException
      *          if a security manager exists and its {@link
-     *          java.lang.SecurityManager#checkSecurityAccess} method
+     *          j86.java.lang.SecurityManager#checkSecurityAccess} method
      *          denies access to remove this provider's properties.
      *
      * @since 1.2
@@ -385,7 +385,7 @@ public abstract class Provider extends Properties {
      *
      * @throws  SecurityException
      *          if a security manager exists and its {@link
-     *          java.lang.SecurityManager#checkSecurityAccess} method
+     *          j86.java.lang.SecurityManager#checkSecurityAccess} method
      *          denies access to remove this provider's properties.
      *
      * @since 1.8
@@ -410,7 +410,7 @@ public abstract class Provider extends Properties {
      *
      * @throws  SecurityException
      *          if a security manager exists and its {@link
-     *          java.lang.SecurityManager#checkSecurityAccess} method
+     *          j86.java.lang.SecurityManager#checkSecurityAccess} method
      *          denies access to set property values.
      *
      * @since 1.8
@@ -437,7 +437,7 @@ public abstract class Provider extends Properties {
      *
      * @throws  SecurityException
      *          if a security manager exists and its {@link
-     *          java.lang.SecurityManager#checkSecurityAccess} method
+     *          j86.java.lang.SecurityManager#checkSecurityAccess} method
      *          denies access to set property values.
      *
      * @since 1.8
@@ -465,7 +465,7 @@ public abstract class Provider extends Properties {
      *
      * @throws  SecurityException
      *          if a security manager exists and its {@link
-     *          java.lang.SecurityManager#checkSecurityAccess} method
+     *          j86.java.lang.SecurityManager#checkSecurityAccess} method
      *          denies access to set property values.
      *
      * @since 1.8
@@ -493,7 +493,7 @@ public abstract class Provider extends Properties {
      *
      * @throws  SecurityException
      *          if a security manager exists and its {@link
-     *          java.lang.SecurityManager#checkSecurityAccess} method
+     *          j86.java.lang.SecurityManager#checkSecurityAccess} method
      *          denies access to set property values or remove properties.
      *
      * @since 1.8
@@ -524,7 +524,7 @@ public abstract class Provider extends Properties {
      *
      * @throws  SecurityException
      *          if a security manager exists and its {@link
-     *          java.lang.SecurityManager#checkSecurityAccess} method
+     *          j86.java.lang.SecurityManager#checkSecurityAccess} method
      *          denies access to set property values and remove properties.
      *
      * @since 1.8
@@ -553,7 +553,7 @@ public abstract class Provider extends Properties {
      *
      * @throws  SecurityException
      *          if a security manager exists and its {@link
-     *          java.lang.SecurityManager#checkSecurityAccess} method
+     *          j86.java.lang.SecurityManager#checkSecurityAccess} method
      *          denies access to set property values or remove properties.
      *
      * @since 1.8
@@ -585,7 +585,7 @@ public abstract class Provider extends Properties {
      *
      * @throws  SecurityException
      *          if a security manager exists and its {@link
-     *          java.lang.SecurityManager#checkSecurityAccess} method
+     *          j86.java.lang.SecurityManager#checkSecurityAccess} method
      *          denies access to set property values or remove properties.
      *
      * @since 1.8
@@ -973,7 +973,7 @@ public abstract class Provider extends Properties {
             }
             int i = typeAndAlg[1].indexOf(' ');
             if (i == -1) {
-                // e.g. put("MessageDigest.SHA-1", "sun.security.provider.SHA");
+                // e.g. put("MessageDigest.SHA-1", "j86.sun.security.provider.SHA");
                 String type = getEngineName(typeAndAlg[0]);
                 String stdAlg = typeAndAlg[1].intern();
                 String className = value;
@@ -1110,7 +1110,7 @@ public abstract class Provider extends Properties {
      *
      * @throws SecurityException
      *      if a security manager exists and its {@link
-     *      java.lang.SecurityManager#checkSecurityAccess} method denies
+     *      j86.java.lang.SecurityManager#checkSecurityAccess} method denies
      *      access to set property values.
      * @throws NullPointerException if s is null
      *
@@ -1202,7 +1202,7 @@ public abstract class Provider extends Properties {
      *
      * @throws  SecurityException
      *          if a security manager exists and its {@link
-     *          java.lang.SecurityManager#checkSecurityAccess} method denies
+     *          j86.java.lang.SecurityManager#checkSecurityAccess} method denies
      *          access to remove this provider's properties.
      * @throws NullPointerException if s is null
      *
@@ -1315,7 +1315,7 @@ public abstract class Provider extends Properties {
         addEngine("CertPathBuilder",                    false, null);
         addEngine("CertPathValidator",                  false, null);
         addEngine("CertStore",                          false,
-                            "java.security.cert.CertStoreParameters");
+                            "j86.j86.java.security.cert.CertStoreParameters");
         // JCE
         addEngine("Cipher",                             true,  null);
         addEngine("ExemptionMechanism",                 false, null);
@@ -1334,17 +1334,17 @@ public abstract class Provider extends Properties {
         addEngine("SaslServerFactory",                  false, null);
         // POLICY
         addEngine("Policy",                             false,
-                            "java.security.Policy$Parameters");
+                            "j86.java.security.Policy$Parameters");
         // CONFIGURATION
         addEngine("Configuration",                      false,
-                            "javax.security.auth.login.Configuration$Parameters");
+                            "j86.j86.javax.security.auth.login.Configuration$Parameters");
         // XML DSig
         addEngine("XMLSignatureFactory",                false, null);
         addEngine("KeyInfoFactory",                     false, null);
         addEngine("TransformService",                   false, null);
         // Smart Card I/O
         addEngine("TerminalFactory",                    false,
-                            "java.lang.Object");
+                            "j86.java.lang.Object");
     }
 
     // get the "standard" (mixed-case) engine name for arbitary case engine name

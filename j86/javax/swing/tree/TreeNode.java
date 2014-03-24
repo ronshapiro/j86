@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.swing.tree;
+package j86.j86.javax.swing.tree;
 
-import java.util.Enumeration;
+import j86.java.util.Enumeration;
 
 /**
  * Defines the requirements for an object that can be used as a
@@ -33,7 +33,7 @@ import java.util.Enumeration;
  * <p>
  * Implementations of <code>TreeNode</code> that override <code>equals</code>
  * will typically need to override <code>hashCode</code> as well.  Refer
- * to {@link javax.swing.tree.TreeModel} for more information.
+ * to {@link j86.j86.javax.swing.tree.TreeModel} for more information.
  *
  * For further information and examples of using tree nodes,
  * see <a

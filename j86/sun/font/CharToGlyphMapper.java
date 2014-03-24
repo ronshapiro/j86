@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.font;
+package j86.sun.font;
 
 /*
  * NB the versions that take a char as an int are used by the opentype

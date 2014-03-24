@@ -27,23 +27,23 @@
  * Portions Copyright (c) 1995  Colin Plumb.  All rights reserved.
  */
 
-package java.math;
+package j86.java.math;
 
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.ObjectStreamField;
-import java.util.Arrays;
-import java.util.Random;
-import java.util.concurrent.ThreadLocalRandom;
-import sun.misc.DoubleConsts;
-import sun.misc.FloatConsts;
+import j86.java.io.IOException;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectStreamField;
+import j86.java.util.Arrays;
+import j86.java.util.Random;
+import j86.j86.java.util.concurrent.ThreadLocalRandom;
+import j86.sun.misc.DoubleConsts;
+import j86.sun.misc.FloatConsts;
 
 /**
  * Immutable arbitrary-precision integers.  All operations behave as if
  * BigIntegers were represented in two's-complement notation (like Java's
  * primitive integer types).  BigInteger provides analogues to all of Java's
- * primitive integer operators, and all relevant methods from java.lang.Math.
+ * primitive integer operators, and all relevant methods from j86.java.lang.Math.
  * Additionally, BigInteger provides operations for modular arithmetic, GCD
  * calculation, primality testing, prime generation, bit manipulation,
  * and a few other miscellaneous operations.
@@ -1504,7 +1504,7 @@ public class BigInteger extends Number implements Comparable<BigInteger> {
             carry = product >>> 32;
         }
         if (carry == 0L) {
-            rmag = java.util.Arrays.copyOfRange(rmag, 1, rmag.length);
+            rmag = j86.java.util.Arrays.copyOfRange(rmag, 1, rmag.length);
         } else {
             rmag[rstart] = (int)carry;
         }
@@ -1549,7 +1549,7 @@ public class BigInteger extends Number implements Comparable<BigInteger> {
             rmag[0] = (int)carry;
         }
         if (carry == 0L)
-            rmag = java.util.Arrays.copyOfRange(rmag, 1, rmag.length);
+            rmag = j86.java.util.Arrays.copyOfRange(rmag, 1, rmag.length);
         return new BigInteger(rmag, rsign);
     }
 
@@ -3520,7 +3520,7 @@ public class BigInteger extends Number implements Comparable<BigInteger> {
      * @return String representation of this BigInteger in the given radix.
      * @see    Integer#toString
      * @see    Character#forDigit
-     * @see    #BigInteger(java.lang.String, int)
+     * @see    #BigInteger(j86.java.lang.String, int)
      */
     public String toString(int radix) {
         if (signum == 0)
@@ -3688,7 +3688,7 @@ public class BigInteger extends Number implements Comparable<BigInteger> {
      *
      * @return decimal String representation of this BigInteger.
      * @see    Character#forDigit
-     * @see    #BigInteger(java.lang.String)
+     * @see    #BigInteger(j86.java.lang.String)
      */
     public String toString() {
         return toString(10);
@@ -3955,7 +3955,7 @@ public class BigInteger extends Number implements Comparable<BigInteger> {
         // Find first nonzero byte
         for (keep = 0; keep < vlen && val[keep] == 0; keep++)
             ;
-        return java.util.Arrays.copyOfRange(val, keep, vlen);
+        return j86.java.util.Arrays.copyOfRange(val, keep, vlen);
     }
 
     /**
@@ -3969,7 +3969,7 @@ public class BigInteger extends Number implements Comparable<BigInteger> {
         // Find first nonzero byte
         for (keep = 0; keep < vlen && val[keep] == 0; keep++)
             ;
-        return keep == 0 ? val : java.util.Arrays.copyOfRange(val, keep, vlen);
+        return keep == 0 ? val : j86.java.util.Arrays.copyOfRange(val, keep, vlen);
     }
 
     /**
@@ -4228,8 +4228,8 @@ public class BigInteger extends Number implements Comparable<BigInteger> {
      * readObject because those fields already have a 0 value be default since
      * defaultReadObject is not being used.
      */
-    private void readObject(java.io.ObjectInputStream s)
-        throws java.io.IOException, ClassNotFoundException {
+    private void readObject(j86.java.io.ObjectInputStream s)
+        throws j86.java.io.IOException, ClassNotFoundException {
         /*
          * In order to maintain compatibility with previous serialized forms,
          * the magnitude of a BigInteger is serialized as an array of bytes.
@@ -4250,14 +4250,14 @@ public class BigInteger extends Number implements Comparable<BigInteger> {
             String message = "BigInteger: Invalid signum value";
             if (fields.defaulted("signum"))
                 message = "BigInteger: Signum not present in stream";
-            throw new java.io.StreamCorruptedException(message);
+            throw new j86.java.io.StreamCorruptedException(message);
         }
         int[] mag = stripLeadingZeroBytes(magnitude);
         if ((mag.length == 0) != (sign == 0)) {
             String message = "BigInteger: signum-magnitude mismatch";
             if (fields.defaulted("magnitude"))
                 message = "BigInteger: Magnitude not present in stream";
-            throw new java.io.StreamCorruptedException(message);
+            throw new j86.java.io.StreamCorruptedException(message);
         }
 
         // Commit final fields via Unsafe
@@ -4269,19 +4269,19 @@ public class BigInteger extends Number implements Comparable<BigInteger> {
             try {
                 checkRange();
             } catch (ArithmeticException e) {
-                throw new java.io.StreamCorruptedException("BigInteger: Out of the supported range");
+                throw new j86.java.io.StreamCorruptedException("BigInteger: Out of the supported range");
             }
         }
     }
 
     // Support for resetting final fields while deserializing
     private static class UnsafeHolder {
-        private static final sun.misc.Unsafe unsafe;
+        private static final j86.sun.misc.Unsafe unsafe;
         private static final long signumOffset;
         private static final long magOffset;
         static {
             try {
-                unsafe = sun.misc.Unsafe.getUnsafe();
+                unsafe = j86.sun.misc.Unsafe.getUnsafe();
                 signumOffset = unsafe.objectFieldOffset
                     (BigInteger.class.getDeclaredField("signum"));
                 magOffset = unsafe.objectFieldOffset

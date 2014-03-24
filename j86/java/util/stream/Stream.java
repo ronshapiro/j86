@@ -22,32 +22,32 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.util.stream;
+package j86.j86.java.util.stream;
 
-import java.nio.charset.Charset;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Comparator;
-import java.util.Iterator;
-import java.util.Objects;
-import java.util.Optional;
-import java.util.Spliterator;
-import java.util.Spliterators;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.function.BiConsumer;
-import java.util.function.BiFunction;
-import java.util.function.BinaryOperator;
-import java.util.function.Consumer;
-import java.util.function.Function;
-import java.util.function.IntFunction;
-import java.util.function.Predicate;
-import java.util.function.Supplier;
-import java.util.function.ToDoubleFunction;
-import java.util.function.ToIntFunction;
-import java.util.function.ToLongFunction;
-import java.util.function.UnaryOperator;
+import j86.j86.java.nio.charset.Charset;
+import j86.j86.java.nio.file.Files;
+import j86.j86.java.nio.file.Path;
+import j86.java.util.Arrays;
+import j86.java.util.Collection;
+import j86.java.util.Comparator;
+import j86.java.util.Iterator;
+import j86.java.util.Objects;
+import j86.java.util.Optional;
+import j86.java.util.Spliterator;
+import j86.java.util.Spliterators;
+import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.j86.java.util.function.BiConsumer;
+import j86.j86.java.util.function.BiFunction;
+import j86.j86.java.util.function.BinaryOperator;
+import j86.j86.java.util.function.Consumer;
+import j86.j86.java.util.function.Function;
+import j86.j86.java.util.function.IntFunction;
+import j86.j86.java.util.function.Predicate;
+import j86.j86.java.util.function.Supplier;
+import j86.j86.java.util.function.ToDoubleFunction;
+import j86.j86.java.util.function.ToIntFunction;
+import j86.j86.java.util.function.ToLongFunction;
+import j86.j86.java.util.function.UnaryOperator;
 
 /**
  * A sequence of elements supporting sequential and parallel aggregate
@@ -114,7 +114,7 @@ import java.util.function.UnaryOperator;
  *
  * <p>Such parameters are always instances of a
  * <a href="../function/package-summary.html">functional interface</a> such
- * as {@link java.util.function.Function}, and are often lambda expressions or
+ * as {@link j86.j86.java.util.function.Function}, and are often lambda expressions or
  * method references.  Unless otherwise specified these parameters must be
  * <em>non-null</em>.
  *
@@ -149,7 +149,7 @@ import java.util.function.UnaryOperator;
  * @see IntStream
  * @see LongStream
  * @see DoubleStream
- * @see <a href="package-summary.html">java.util.stream</a>
+ * @see <a href="package-summary.html">j86.j86.java.util.stream</a>
  */
 public interface Stream<T> extends BaseStream<T, Stream<T>> {
 
@@ -229,7 +229,7 @@ public interface Stream<T> extends BaseStream<T, Stream<T>> {
      * Returns a stream consisting of the results of replacing each element of
      * this stream with the contents of a mapped stream produced by applying
      * the provided mapping function to each element.  Each mapped stream is
-     * {@link java.util.stream.BaseStream#close() closed} after its contents
+     * {@link j86.j86.java.util.stream.BaseStream#close() closed} after its contents
      * have been placed into this stream.  (If a mapped stream is {@code null}
      * an empty stream is used, instead.)
      *
@@ -273,7 +273,7 @@ public interface Stream<T> extends BaseStream<T, Stream<T>> {
      * Returns an {@code IntStream} consisting of the results of replacing each
      * element of this stream with the contents of a mapped stream produced by
      * applying the provided mapping function to each element.  Each mapped
-     * stream is {@link java.util.stream.BaseStream#close() closed} after its
+     * stream is {@link j86.j86.java.util.stream.BaseStream#close() closed} after its
      * contents have been placed into this stream.  (If a mapped stream is
      * {@code null} an empty stream is used, instead.)
      *
@@ -293,7 +293,7 @@ public interface Stream<T> extends BaseStream<T, Stream<T>> {
      * Returns an {@code LongStream} consisting of the results of replacing each
      * element of this stream with the contents of a mapped stream produced by
      * applying the provided mapping function to each element.  Each mapped
-     * stream is {@link java.util.stream.BaseStream#close() closed} after its
+     * stream is {@link j86.j86.java.util.stream.BaseStream#close() closed} after its
      * contents have been placed into this stream.  (If a mapped stream is
      * {@code null} an empty stream is used, instead.)
      *
@@ -313,7 +313,7 @@ public interface Stream<T> extends BaseStream<T, Stream<T>> {
      * Returns an {@code DoubleStream} consisting of the results of replacing
      * each element of this stream with the contents of a mapped stream produced
      * by applying the provided mapping function to each element.  Each mapped
-     * stream is {@link java.util.stream.BaseStream#close() closed} after its
+     * stream is {@link j86.j86.java.util.stream.BaseStream#close() closed} after its
      * contents have placed been into this stream.  (If a mapped stream is
      * {@code null} an empty stream is used, instead.)
      *
@@ -361,7 +361,7 @@ public interface Stream<T> extends BaseStream<T, Stream<T>> {
     /**
      * Returns a stream consisting of the elements of this stream, sorted
      * according to natural order.  If the elements of this stream are not
-     * {@code Comparable}, a {@code java.lang.ClassCastException} may be thrown
+     * {@code Comparable}, a {@code j86.java.lang.ClassCastException} may be thrown
      * when the terminal operation is executed.
      *
      * <p>For ordered streams, the sort is stable.  For unordered streams, no

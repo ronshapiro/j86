@@ -26,24 +26,24 @@
 /*
  * $Id: DOMX509Data.java 1333415 2012-05-03 12:03:51Z coheigea $
  */
-package org.jcp.xml.dsig.internal.dom;
+package j86.j86.org.jcp.xml.dsig.internal.dom;
 
-import java.io.ByteArrayInputStream;
-import java.security.cert.*;
-import java.util.*;
-import javax.xml.crypto.*;
-import javax.xml.crypto.dom.DOMCryptoContext;
-import javax.xml.crypto.dsig.*;
-import javax.xml.crypto.dsig.keyinfo.X509IssuerSerial;
-import javax.xml.crypto.dsig.keyinfo.X509Data;
-import javax.security.auth.x500.X500Principal;
+import j86.java.io.ByteArrayInputStream;
+import j86.j86.java.security.cert.*;
+import j86.java.util.*;
+import j86.javax.xml.crypto.*;
+import j86.j86.javax.xml.crypto.dom.DOMCryptoContext;
+import j86.j86.javax.xml.crypto.dsig.*;
+import j86.j86.j86.javax.xml.crypto.dsig.keyinfo.X509IssuerSerial;
+import j86.j86.j86.javax.xml.crypto.dsig.keyinfo.X509Data;
+import j86.j86.javax.security.auth.x500.X500Principal;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-import com.sun.org.apache.xml.internal.security.exceptions.Base64DecodingException;
-import com.sun.org.apache.xml.internal.security.utils.Base64;
+import j86.j86.com.sun.org.apache.xml.internal.security.exceptions.Base64DecodingException;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.Base64;
 
 /**
  * DOM-based implementation of X509Data.
@@ -61,7 +61,7 @@ public final class DOMX509Data extends DOMStructure implements X509Data {
      *
      * @param content a list of one or more X.509 data types. Valid types are
      *    {@link String} (subject names), <code>byte[]</code> (subject key ids),
-     *    {@link java.security.cert.X509Certificate}, {@link X509CRL},
+     *    {@link j86.j86.java.security.cert.X509Certificate}, {@link X509CRL},
      *    or {@link javax.xml.dsig.XMLStructure} ({@link X509IssuerSerial}
      *    objects or elements from an external namespace). The list is
      *    defensively copied to protect against subsequent modification.
@@ -129,7 +129,7 @@ public final class DOMX509Data extends DOMStructure implements X509Data {
             } else if (localName.equals("X509CRL")) {
                 content.add(unmarshalX509CRL(childElem));
             } else {
-                content.add(new javax.xml.crypto.dom.DOMStructure(childElem));
+                content.add(new j86.j86.javax.xml.crypto.dom.DOMStructure(childElem));
             }
         }
         this.content = Collections.unmodifiableList(content);
@@ -156,8 +156,8 @@ public final class DOMX509Data extends DOMStructure implements X509Data {
                     ((DOMX509IssuerSerial)object).marshal
                         (xdElem, dsPrefix, context);
                 } else {
-                    javax.xml.crypto.dom.DOMStructure domContent =
-                        (javax.xml.crypto.dom.DOMStructure)object;
+                    j86.j86.javax.xml.crypto.dom.DOMStructure domContent =
+                        (j86.j86.javax.xml.crypto.dom.DOMStructure)object;
                     DOMUtils.appendChild(xdElem, domContent.getNode());
                 }
             } else if (object instanceof byte[]) {

@@ -30,12 +30,12 @@
  * at JavaSoft/Sun.
  */
 
-package com.sun.tools.hat.internal.model;
+package j86.j86.com.sun.tools.hat.internal.model;
 
-import java.lang.ref.SoftReference;
-import java.util.*;
-import com.sun.tools.hat.internal.parser.ReadBuffer;
-import com.sun.tools.hat.internal.util.Misc;
+import j86.j86.java.lang.ref.SoftReference;
+import j86.java.util.*;
+import j86.j86.com.sun.tools.hat.internal.parser.ReadBuffer;
+import j86.j86.com.sun.tools.hat.internal.util.Misc;
 
 /**
  *
@@ -86,16 +86,16 @@ public class Snapshot {
     // represents null reference
     private JavaThing nullThing;
 
-    // java.lang.ref.Reference class
+    // j86.j86.java.lang.ref.Reference class
     private JavaClass weakReferenceClass;
-    // index of 'referent' field in java.lang.ref.Reference class
+    // index of 'referent' field in j86.j86.java.lang.ref.Reference class
     private int referentFieldIndex;
 
-    // java.lang.Class class
+    // j86.java.lang.Class class
     private JavaClass javaLangClass;
-    // java.lang.String class
+    // j86.java.lang.String class
     private JavaClass javaLangString;
-    // java.lang.ClassLoader class
+    // j86.java.lang.ClassLoader class
     private JavaClass javaLangClassLoader;
 
     // unknown "other" array class
@@ -236,24 +236,24 @@ public class Snapshot {
         // First, resolve the classes.  All classes must be resolved before
         // we try any objects, because the objects use classes in their
         // resolution.
-        javaLangClass = findClass("java.lang.Class");
+        javaLangClass = findClass("j86.java.lang.Class");
         if (javaLangClass == null) {
-            System.out.println("WARNING:  hprof file does not include java.lang.Class!");
-            javaLangClass = new JavaClass("java.lang.Class", 0, 0, 0, 0,
+            System.out.println("WARNING:  hprof file does not include j86.java.lang.Class!");
+            javaLangClass = new JavaClass("j86.java.lang.Class", 0, 0, 0, 0,
                                  EMPTY_FIELD_ARRAY, EMPTY_STATIC_ARRAY, 0);
             addFakeClass(javaLangClass);
         }
-        javaLangString = findClass("java.lang.String");
+        javaLangString = findClass("j86.java.lang.String");
         if (javaLangString == null) {
-            System.out.println("WARNING:  hprof file does not include java.lang.String!");
-            javaLangString = new JavaClass("java.lang.String", 0, 0, 0, 0,
+            System.out.println("WARNING:  hprof file does not include j86.java.lang.String!");
+            javaLangString = new JavaClass("j86.java.lang.String", 0, 0, 0, 0,
                                  EMPTY_FIELD_ARRAY, EMPTY_STATIC_ARRAY, 0);
             addFakeClass(javaLangString);
         }
-        javaLangClassLoader = findClass("java.lang.ClassLoader");
+        javaLangClassLoader = findClass("j86.java.lang.ClassLoader");
         if (javaLangClassLoader == null) {
-            System.out.println("WARNING:  hprof file does not include java.lang.ClassLoader!");
-            javaLangClassLoader = new JavaClass("java.lang.ClassLoader", 0, 0, 0, 0,
+            System.out.println("WARNING:  hprof file does not include j86.java.lang.ClassLoader!");
+            javaLangClassLoader = new JavaClass("j86.java.lang.ClassLoader", 0, 0, 0, 0,
                                  EMPTY_FIELD_ARRAY, EMPTY_STATIC_ARRAY, 0);
             addFakeClass(javaLangClassLoader);
         }
@@ -274,9 +274,9 @@ public class Snapshot {
         heapObjects.putAll(fakeClasses);
         fakeClasses.clear();
 
-        weakReferenceClass = findClass("java.lang.ref.Reference");
+        weakReferenceClass = findClass("j86.j86.java.lang.ref.Reference");
         if (weakReferenceClass == null)  {      // JDK 1.1.x
-            weakReferenceClass = findClass("sun.misc.Ref");
+            weakReferenceClass = findClass("j86.sun.misc.Ref");
             referentFieldIndex = 0;
         } else {
             JavaField[] fields = weakReferenceClass.getFieldsForInstance();
@@ -402,7 +402,7 @@ public class Snapshot {
             return obj.elements();
         }
 
-        JavaClass clazz = findClass("java.lang.ref.Finalizer");
+        JavaClass clazz = findClass("j86.j86.java.lang.ref.Finalizer");
         JavaObject queue = (JavaObject) clazz.getStaticField("queue");
         JavaThing tmp = queue.getField("head");
         Vector<JavaHeapObject> finalizables = new Vector<JavaHeapObject>();

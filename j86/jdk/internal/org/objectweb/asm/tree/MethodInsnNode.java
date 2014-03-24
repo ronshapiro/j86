@@ -56,12 +56,12 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-package jdk.internal.org.objectweb.asm.tree;
+package j86.j86.jdk.internal.org.objectweb.asm.tree;
 
-import java.util.Map;
+import j86.java.util.Map;
 
-import jdk.internal.org.objectweb.asm.MethodVisitor;
-import jdk.internal.org.objectweb.asm.Opcodes;
+import j86.jdk.internal.org.objectweb.asm.MethodVisitor;
+import j86.jdk.internal.org.objectweb.asm.Opcodes;
 
 /**
  * A node that represents a method instruction. A method instruction is an
@@ -73,7 +73,7 @@ public class MethodInsnNode extends AbstractInsnNode {
 
     /**
      * The internal name of the method's owner class (see
-     * {@link jdk.internal.org.objectweb.asm.Type#getInternalName() getInternalName}).
+     * {@link j86.jdk.internal.org.objectweb.asm.Type#getInternalName() getInternalName}).
      */
     public String owner;
 
@@ -83,7 +83,7 @@ public class MethodInsnNode extends AbstractInsnNode {
     public String name;
 
     /**
-     * The method's descriptor (see {@link jdk.internal.org.objectweb.asm.Type}).
+     * The method's descriptor (see {@link j86.jdk.internal.org.objectweb.asm.Type}).
      */
     public String desc;
 
@@ -101,12 +101,12 @@ public class MethodInsnNode extends AbstractInsnNode {
      *            INVOKEINTERFACE.
      * @param owner
      *            the internal name of the method's owner class (see
-     *            {@link jdk.internal.org.objectweb.asm.Type#getInternalName()
+     *            {@link j86.jdk.internal.org.objectweb.asm.Type#getInternalName()
      *            getInternalName}).
      * @param name
      *            the method's name.
      * @param desc
-     *            the method's descriptor (see {@link jdk.internal.org.objectweb.asm.Type}).
+     *            the method's descriptor (see {@link j86.jdk.internal.org.objectweb.asm.Type}).
      */
     @Deprecated
     public MethodInsnNode(final int opcode, final String owner,
@@ -123,12 +123,12 @@ public class MethodInsnNode extends AbstractInsnNode {
      *            INVOKEINTERFACE.
      * @param owner
      *            the internal name of the method's owner class (see
-     *            {@link jdk.internal.org.objectweb.asm.Type#getInternalName()
+     *            {@link j86.jdk.internal.org.objectweb.asm.Type#getInternalName()
      *            getInternalName}).
      * @param name
      *            the method's name.
      * @param desc
-     *            the method's descriptor (see {@link jdk.internal.org.objectweb.asm.Type}).
+     *            the method's descriptor (see {@link j86.jdk.internal.org.objectweb.asm.Type}).
      * @param itf
      *            if the method's owner class is an interface.
      */

@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.plaf.nimbus;
+package j86.j86.j86.javax.swing.plaf.nimbus;
 
-import java.awt.Graphics;
-import java.awt.Image;
-import java.awt.Insets;
+import j86.java.awt.Graphics;
+import j86.java.awt.Image;
+import j86.java.awt.Insets;
 
 /**
  * ImageScalingHelper

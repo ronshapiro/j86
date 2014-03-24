@@ -23,12 +23,12 @@
  * questions.
  */
 
-package com.sun.imageio.plugins.gif;
+package j86.com.sun.imageio.plugins.gif;
 
-import java.util.Arrays;
-import javax.imageio.ImageTypeSpecifier;
-import javax.imageio.metadata.IIOMetadataFormat;
-import javax.imageio.metadata.IIOMetadataFormatImpl;
+import j86.java.util.Arrays;
+import j86.javax.imageio.ImageTypeSpecifier;
+import j86.j86.javax.imageio.metadata.IIOMetadataFormat;
+import j86.j86.javax.imageio.metadata.IIOMetadataFormatImpl;
 
 public class GIFImageMetadataFormat extends IIOMetadataFormatImpl {
 

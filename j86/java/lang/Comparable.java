@@ -23,8 +23,8 @@
  * questions.
  */
 
-package java.lang;
-import java.util.*;
+package j86.java.lang;
+import j86.java.util.*;
 
 /**
  * This interface imposes a total ordering on the objects of each class that
@@ -64,7 +64,7 @@ import java.util.*;
  *
  * Virtually all Java core classes that implement <tt>Comparable</tt> have natural
  * orderings that are consistent with equals.  One exception is
- * <tt>java.math.BigDecimal</tt>, whose natural ordering equates
+ * <tt>j86.java.math.BigDecimal</tt>, whose natural ordering equates
  * <tt>BigDecimal</tt> objects with equal values and different precisions
  * (such as 4.0 and 4.00).<p>
  *
@@ -90,7 +90,7 @@ import java.util.*;
  * @param <T> the type of objects that this object may be compared to
  *
  * @author  Josh Bloch
- * @see java.util.Comparator
+ * @see j86.java.util.Comparator
  * @since 1.2
  */
 public interface Comparable<T> {

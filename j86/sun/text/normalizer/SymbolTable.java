@@ -35,9 +35,9 @@
  *******************************************************************************
  */
 
-package sun.text.normalizer;
+package j86.j86.sun.text.normalizer;
 
-import java.text.ParsePosition;
+import j86.java.text.ParsePosition;
 
 /**
  * An interface that defines both lookup protocol and parsing of

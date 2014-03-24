@@ -56,14 +56,14 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-package jdk.internal.org.objectweb.asm.commons;
+package j86.j86.jdk.internal.org.objectweb.asm.commons;
 
-import jdk.internal.org.objectweb.asm.AnnotationVisitor;
-import jdk.internal.org.objectweb.asm.Label;
-import jdk.internal.org.objectweb.asm.MethodVisitor;
-import jdk.internal.org.objectweb.asm.Opcodes;
-import jdk.internal.org.objectweb.asm.Type;
-import jdk.internal.org.objectweb.asm.TypePath;
+import j86.jdk.internal.org.objectweb.asm.AnnotationVisitor;
+import j86.jdk.internal.org.objectweb.asm.Label;
+import j86.jdk.internal.org.objectweb.asm.MethodVisitor;
+import j86.jdk.internal.org.objectweb.asm.Opcodes;
+import j86.jdk.internal.org.objectweb.asm.Type;
+import j86.jdk.internal.org.objectweb.asm.TypePath;
 
 /**
  * A {@link MethodVisitor} that renumbers local variables in their order of
@@ -80,7 +80,7 @@ import jdk.internal.org.objectweb.asm.TypePath;
 public class LocalVariablesSorter extends MethodVisitor {
 
     private static final Type OBJECT_TYPE = Type
-            .getObjectType("java/lang/Object");
+            .getObjectType("j86.java.lang/Object");
 
     /**
      * Mapping from old to new local variable indexes. A local variable at index

@@ -29,13 +29,13 @@
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
 
-package sun.security.krb5;
+package j86.sun.security.krb5;
 
-import sun.security.krb5.internal.*;
-import sun.security.krb5.internal.crypto.*;
-import java.io.IOException;
-import java.net.UnknownHostException;
-import java.util.Arrays;
+import j86.j86.sun.security.krb5.internal.*;
+import j86.j86.j86.sun.security.krb5.internal.crypto.*;
+import j86.java.io.IOException;
+import j86.java.net.UnknownHostException;
+import j86.java.util.Arrays;
 
 /**
  * This class encapsulates a Kerberos TGS-REQ that is sent from the

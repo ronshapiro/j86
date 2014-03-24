@@ -23,13 +23,13 @@
  * questions.
  */
 
-package java.nio.file;
+package j86.j86.java.nio.file;
 
-import java.util.ConcurrentModificationException;
-import java.util.Objects;
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.InvalidObjectException;
+import j86.java.util.ConcurrentModificationException;
+import j86.java.util.Objects;
+import j86.java.io.IOException;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.InvalidObjectException;
 
 /**
  * Runtime exception thrown if an I/O error is encountered when iterating over

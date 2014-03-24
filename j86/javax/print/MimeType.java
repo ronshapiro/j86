@@ -23,17 +23,17 @@
  * questions.
  */
 
-package javax.print;
+package j86.javax.print;
 
-import java.io.Serializable;
+import j86.java.io.Serializable;
 
-import java.util.AbstractMap;
-import java.util.AbstractSet;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.NoSuchElementException;
-import java.util.Set;
-import java.util.Vector;
+import j86.java.util.AbstractMap;
+import j86.java.util.AbstractSet;
+import j86.java.util.Iterator;
+import j86.java.util.Map;
+import j86.java.util.NoSuchElementException;
+import j86.java.util.Set;
+import j86.java.util.Vector;
 
 /**
  * Class MimeType encapsulates a Multipurpose Internet Mail Extensions (MIME)
@@ -43,8 +43,8 @@ import java.util.Vector;
  * specifies the format of the print data.
  * <P>
  * Class MimeType is similar to the like-named
- * class in package {@link java.awt.datatransfer java.awt.datatransfer}. Class
- * java.awt.datatransfer.MimeType is not used in the Jini Print Service API
+ * class in package {@link j86.j86.java.awt.datatransfer java.awt.datatransfer}. Class
+ * j86.j86.java.awt.datatransfer.MimeType is not used in the Jini Print Service API
  * for two reasons:
  * <OL TYPE=1>
  * <LI>
@@ -52,12 +52,12 @@ import java.util.Vector;
  * not depend on an AWT class.
  * <P>
  * <LI>
- * The implementation of class java.awt.datatransfer.MimeType does not
+ * The implementation of class j86.j86.java.awt.datatransfer.MimeType does not
  * guarantee
  * that equivalent MIME types will have the same serialized representation.
  * Thus, since the Jini Lookup Service (JLUS) matches service attributes based
  * on equality of serialized representations, JLUS searches involving MIME
- * types encapsulated in class java.awt.datatransfer.MimeType may incorrectly
+ * types encapsulated in class j86.j86.java.awt.datatransfer.MimeType may incorrectly
  * fail to match.
  * </OL>
  * <P>

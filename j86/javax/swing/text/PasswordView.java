@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text;
+package j86.j86.javax.swing.text;
 
-import sun.swing.SwingUtilities2;
-import java.awt.*;
-import javax.swing.JPasswordField;
+import j86.sun.swing.SwingUtilities2;
+import j86.java.awt.*;
+import j86.javax.swing.JPasswordField;
 
 /**
  * Implements a View suitable for use in JPasswordField

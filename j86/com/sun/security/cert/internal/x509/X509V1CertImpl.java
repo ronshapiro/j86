@@ -23,39 +23,39 @@
  * questions.
  */
 
-package com.sun.security.cert.internal.x509;
+package j86.com.sun.security.cert.internal.x509;
 
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.io.Serializable;
-import java.io.InputStream;
-import java.io.ObjectInputStream;
-import java.io.OutputStream;
-import java.io.ObjectOutputStream;
-import java.math.BigInteger;
-import java.security.Signature;
-import javax.security.cert.*;
-import java.security.*;
-import java.util.Date;
-import java.util.BitSet;
-import java.util.Enumeration;
-import java.util.Vector;
+import j86.java.io.ByteArrayInputStream;
+import j86.java.io.IOException;
+import j86.java.io.Serializable;
+import j86.java.io.InputStream;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.OutputStream;
+import j86.java.io.ObjectOutputStream;
+import j86.java.math.BigInteger;
+import j86.java.security.Signature;
+import j86.javax.security.cert.*;
+import j86.java.security.*;
+import j86.java.util.Date;
+import j86.java.util.BitSet;
+import j86.java.util.Enumeration;
+import j86.java.util.Vector;
 
 /**
  * The X509V1CertImpl class is used as a conversion wrapper around
- * sun.security.x509.X509Cert certificates when running under JDK1.1.x.
+ * j86.sun.security.x509.X509Cert certificates when running under JDK1.1.x.
  *
  * @author Jeff Nisewanger
  */
 public class X509V1CertImpl extends X509Certificate implements Serializable {
     static final long serialVersionUID = -2048442350420423405L;
-    private java.security.cert.X509Certificate wrappedCert;
+    private j86.j86.java.security.cert.X509Certificate wrappedCert;
 
-    synchronized private static java.security.cert.CertificateFactory
+    synchronized private static j86.j86.java.security.cert.CertificateFactory
     getFactory()
-    throws java.security.cert.CertificateException
+    throws j86.j86.java.security.cert.CertificateException
     {
-        return java.security.cert.CertificateFactory.getInstance("X.509");
+        return j86.j86.java.security.cert.CertificateFactory.getInstance("X.509");
     }
 
     /**
@@ -81,9 +81,9 @@ public class X509V1CertImpl extends X509Certificate implements Serializable {
             ByteArrayInputStream bs;
 
             bs = new ByteArrayInputStream(certData);
-            wrappedCert = (java.security.cert.X509Certificate)
+            wrappedCert = (j86.j86.java.security.cert.X509Certificate)
                 getFactory().generateCertificate(bs);
-        } catch (java.security.cert.CertificateException e) {
+        } catch (j86.j86.java.security.cert.CertificateException e) {
             throw new CertificateException(e.getMessage());
         }
     }
@@ -97,9 +97,9 @@ public class X509V1CertImpl extends X509Certificate implements Serializable {
     public X509V1CertImpl(InputStream in)
     throws CertificateException {
         try {
-            wrappedCert = (java.security.cert.X509Certificate)
+            wrappedCert = (j86.j86.java.security.cert.X509Certificate)
                 getFactory().generateCertificate(in);
-        } catch (java.security.cert.CertificateException e) {
+        } catch (j86.j86.java.security.cert.CertificateException e) {
             throw new CertificateException(e.getMessage());
         }
     }
@@ -113,7 +113,7 @@ public class X509V1CertImpl extends X509Certificate implements Serializable {
     public byte[] getEncoded() throws CertificateEncodingException {
         try {
             return wrappedCert.getEncoded();
-        } catch (java.security.cert.CertificateEncodingException e) {
+        } catch (j86.j86.java.security.cert.CertificateEncodingException e) {
             throw new CertificateEncodingException(e.getMessage());
         }
     }
@@ -133,7 +133,7 @@ public class X509V1CertImpl extends X509Certificate implements Serializable {
     {
         try {
             wrappedCert.verify(key);
-        } catch (java.security.cert.CertificateException e) {
+        } catch (j86.j86.java.security.cert.CertificateException e) {
             throw new CertificateException(e.getMessage());
         }
     }
@@ -154,7 +154,7 @@ public class X509V1CertImpl extends X509Certificate implements Serializable {
     {
         try {
             wrappedCert.verify(key, sigProvider);
-        } catch (java.security.cert.CertificateException e) {
+        } catch (j86.j86.java.security.cert.CertificateException e) {
             throw new CertificateException(e.getMessage());
         }
     }
@@ -180,9 +180,9 @@ public class X509V1CertImpl extends X509Certificate implements Serializable {
       CertificateExpiredException, CertificateNotYetValidException {
         try {
             wrappedCert.checkValidity(date);
-        } catch (java.security.cert.CertificateNotYetValidException e) {
+        } catch (j86.j86.java.security.cert.CertificateNotYetValidException e) {
             throw new CertificateNotYetValidException(e.getMessage());
-        } catch (java.security.cert.CertificateExpiredException e) {
+        } catch (j86.j86.java.security.cert.CertificateExpiredException e) {
             throw new CertificateExpiredException(e.getMessage());
         }
     }
@@ -313,14 +313,14 @@ public class X509V1CertImpl extends X509Certificate implements Serializable {
     private synchronized void readObject(ObjectInputStream stream)
         throws IOException {
         try {
-            wrappedCert = (java.security.cert.X509Certificate)
+            wrappedCert = (j86.j86.java.security.cert.X509Certificate)
                 getFactory().generateCertificate(stream);
-        } catch (java.security.cert.CertificateException e) {
+        } catch (j86.j86.java.security.cert.CertificateException e) {
             throw new IOException("generateCertificate failed: " + e.getMessage());
         }
     }
 
-    public java.security.cert.X509Certificate getX509Certificate() {
+    public j86.j86.java.security.cert.X509Certificate getX509Certificate() {
         return wrappedCert;
     }
 }

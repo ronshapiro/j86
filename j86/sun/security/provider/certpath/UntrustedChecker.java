@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.security.provider.certpath;
+package j86.j86.sun.security.provider.certpath;
 
-import java.security.cert.Certificate;
-import java.security.cert.X509Certificate;
-import java.security.cert.CertPathValidatorException;
-import java.security.cert.PKIXCertPathChecker;
-import java.util.Set;
-import java.util.Collection;
-import sun.security.util.Debug;
-import sun.security.util.UntrustedCertificates;
+import j86.j86.java.security.cert.Certificate;
+import j86.j86.java.security.cert.X509Certificate;
+import j86.j86.java.security.cert.CertPathValidatorException;
+import j86.j86.java.security.cert.PKIXCertPathChecker;
+import j86.java.util.Set;
+import j86.java.util.Collection;
+import j86.sun.security.util.Debug;
+import j86.sun.security.util.UntrustedCertificates;
 
 /**
  * A <code>PKIXCertPathChecker</code> implementation to check whether a

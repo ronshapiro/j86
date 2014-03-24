@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing;
+package j86.javax.swing;
 
-import java.awt.BasicStroke;
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.Paint;
-import javax.swing.border.*;
+import j86.java.awt.BasicStroke;
+import j86.java.awt.Color;
+import j86.java.awt.Font;
+import j86.java.awt.Paint;
+import j86.j86.javax.swing.border.*;
 
 /**
  * Factory class for vending standard <code>Border</code> objects.  Wherever

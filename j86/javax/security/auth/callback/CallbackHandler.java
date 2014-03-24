@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.security.auth.callback;
+package j86.j86.javax.security.auth.callback;
 
 /**
  * <p> An application implements a {@code CallbackHandler} and passes
@@ -63,7 +63,7 @@ package javax.security.auth.callback;
  * <p> All default handler implementations must provide a public
  * zero-argument constructor.
  *
- * @see java.security.Security security properties
+ * @see j86.java.security.Security security properties
  */
 public interface CallbackHandler {
 
@@ -139,12 +139,12 @@ public interface CallbackHandler {
      *          by an underlying security service which contains
      *          the information requested to be retrieved or displayed.
      *
-     * @exception java.io.IOException if an input or output error occurs. <p>
+     * @exception j86.java.io.IOException if an input or output error occurs. <p>
      *
      * @exception UnsupportedCallbackException if the implementation of this
      *          method does not support one or more of the Callbacks
      *          specified in the {@code callbacks} parameter.
      */
     void handle(Callback[] callbacks)
-    throws java.io.IOException, UnsupportedCallbackException;
+    throws j86.java.io.IOException, UnsupportedCallbackException;
 }

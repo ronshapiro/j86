@@ -23,20 +23,20 @@
  * questions.
  */
 
-package java.security.cert;
+package j86.j86.java.security.cert;
 
-import java.io.IOException;
-import java.math.BigInteger;
-import java.security.PublicKey;
-import java.util.*;
-import javax.security.auth.x500.X500Principal;
+import j86.java.io.IOException;
+import j86.java.math.BigInteger;
+import j86.java.security.PublicKey;
+import j86.java.util.*;
+import j86.j86.javax.security.auth.x500.X500Principal;
 
-import sun.misc.HexDumpEncoder;
-import sun.security.util.Debug;
-import sun.security.util.DerInputStream;
-import sun.security.util.DerValue;
-import sun.security.util.ObjectIdentifier;
-import sun.security.x509.*;
+import j86.sun.misc.HexDumpEncoder;
+import j86.sun.security.util.Debug;
+import j86.sun.security.util.DerInputStream;
+import j86.sun.security.util.DerValue;
+import j86.sun.security.util.ObjectIdentifier;
+import j86.sun.security.x509.*;
 
 /**
  * A {@code CertSelector} that selects {@code X509Certificates} that
@@ -1883,7 +1883,7 @@ public class X509CertSelector implements CertSelector {
         return sb.toString();
     }
 
-    // Copied from sun.security.x509.KeyUsageExtension
+    // Copied from j86.sun.security.x509.KeyUsageExtension
     // (without calling the superclass)
     /**
      * Returns a printable representation of the KeyUsage.

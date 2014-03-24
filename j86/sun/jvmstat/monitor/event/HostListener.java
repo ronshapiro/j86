@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.jvmstat.monitor.event;
+package j86.j86.sun.jvmstat.monitor.event;
 
-import java.util.EventListener;
+import j86.java.util.EventListener;
 
 /**
  * Interface for listeners of MonitoredHost events.
  *
  * @author Brian Doherty
  * @since 1.5
- * @see sun.jvmstat.monitor.MonitoredHost
+ * @see j86.sun.jvmstat.monitor.MonitoredHost
  */
 public interface HostListener extends EventListener {
 

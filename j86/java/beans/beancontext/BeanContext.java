@@ -23,18 +23,18 @@
  * questions.
  */
 
-package java.beans.beancontext;
+package j86.j86.java.beans.beancontext;
 
-import java.beans.DesignMode;
-import java.beans.Visibility;
+import j86.java.beans.DesignMode;
+import j86.java.beans.Visibility;
 
-import java.io.InputStream;
-import java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
 
-import java.net.URL;
+import j86.java.net.URL;
 
-import java.util.Collection;
-import java.util.Locale;
+import j86.java.util.Collection;
+import j86.java.util.Locale;
 
 /**
  * <p>
@@ -44,13 +44,13 @@ import java.util.Locale;
  * @author Laurence P. G. Cable
  * @since 1.2
  *
- * @see java.beans.Beans
- * @see java.beans.beancontext.BeanContextChild
- * @see java.beans.beancontext.BeanContextMembershipListener
- * @see java.beans.PropertyChangeEvent
- * @see java.beans.DesignMode
- * @see java.beans.Visibility
- * @see java.util.Collection
+ * @see j86.java.beans.Beans
+ * @see j86.j86.java.beans.beancontext.BeanContextChild
+ * @see j86.j86.java.beans.beancontext.BeanContextMembershipListener
+ * @see j86.java.beans.PropertyChangeEvent
+ * @see j86.java.beans.DesignMode
+ * @see j86.java.beans.Visibility
+ * @see j86.java.util.Collection
  */
 
 @SuppressWarnings("rawtypes")
@@ -62,7 +62,7 @@ public interface BeanContext extends BeanContextChild, Collection, DesignMode, V
      * The implementation of the JavaBean is
      * derived from the value of the beanName parameter,
      * and is defined by the
-     * <code>java.beans.Beans.instantiate()</code> method.
+     * <code>j86.java.beans.Beans.instantiate()</code> method.
      *
      * @return a javaBean named as a child of this
      * <code>BeanContext</code>
@@ -75,7 +75,7 @@ public interface BeanContext extends BeanContextChild, Collection, DesignMode, V
     Object instantiateChild(String beanName) throws IOException, ClassNotFoundException;
 
     /**
-     * Analagous to <code>java.lang.ClassLoader.getResourceAsStream()</code>,
+     * Analagous to <code>j86.java.lang.ClassLoader.getResourceAsStream()</code>,
      * this method allows a <code>BeanContext</code> implementation
      * to interpose behavior between the child <code>Component</code>
      * and underlying <code>ClassLoader</code>.
@@ -91,7 +91,7 @@ public interface BeanContext extends BeanContextChild, Collection, DesignMode, V
     InputStream getResourceAsStream(String name, BeanContextChild bcc) throws IllegalArgumentException;
 
     /**
-     * Analagous to <code>java.lang.ClassLoader.getResource()</code>, this
+     * Analagous to <code>j86.java.lang.ClassLoader.getResource()</code>, this
      * method allows a <code>BeanContext</code> implementation to interpose
      * behavior between the child <code>Component</code>
      * and underlying <code>ClassLoader</code>.

@@ -59,32 +59,32 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package java.time;
+package j86.java.time;
 
-import static java.time.temporal.ChronoField.DAY_OF_MONTH;
-import static java.time.temporal.ChronoField.MONTH_OF_YEAR;
+import static j86.j86.java.time.temporal.ChronoField.DAY_OF_MONTH;
+import static j86.j86.java.time.temporal.ChronoField.MONTH_OF_YEAR;
 
-import java.io.DataInput;
-import java.io.DataOutput;
-import java.io.IOException;
-import java.io.InvalidObjectException;
-import java.io.ObjectInputStream;
-import java.io.Serializable;
-import java.time.chrono.Chronology;
-import java.time.chrono.IsoChronology;
-import java.time.format.DateTimeFormatter;
-import java.time.format.DateTimeFormatterBuilder;
-import java.time.format.DateTimeParseException;
-import java.time.temporal.ChronoField;
-import java.time.temporal.Temporal;
-import java.time.temporal.TemporalAccessor;
-import java.time.temporal.TemporalAdjuster;
-import java.time.temporal.TemporalField;
-import java.time.temporal.TemporalQueries;
-import java.time.temporal.TemporalQuery;
-import java.time.temporal.UnsupportedTemporalTypeException;
-import java.time.temporal.ValueRange;
-import java.util.Objects;
+import j86.java.io.DataInput;
+import j86.java.io.DataOutput;
+import j86.java.io.IOException;
+import j86.java.io.InvalidObjectException;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.Serializable;
+import j86.j86.java.time.chrono.Chronology;
+import j86.j86.java.time.chrono.IsoChronology;
+import j86.j86.java.time.format.DateTimeFormatter;
+import j86.j86.java.time.format.DateTimeFormatterBuilder;
+import j86.j86.java.time.format.DateTimeParseException;
+import j86.j86.java.time.temporal.ChronoField;
+import j86.j86.java.time.temporal.Temporal;
+import j86.j86.java.time.temporal.TemporalAccessor;
+import j86.j86.java.time.temporal.TemporalAdjuster;
+import j86.j86.java.time.temporal.TemporalField;
+import j86.j86.java.time.temporal.TemporalQueries;
+import j86.j86.java.time.temporal.TemporalQuery;
+import j86.j86.java.time.temporal.UnsupportedTemporalTypeException;
+import j86.j86.java.time.temporal.ValueRange;
+import j86.java.util.Objects;
 
 /**
  * A month-day in the ISO-8601 calendar system, such as {@code --12-03}.
@@ -113,7 +113,7 @@ import java.util.Objects;
  * to be accurate will find the ISO-8601 approach unsuitable.
  *
  * <p>
- * This is a <a href="{@docRoot}/java/lang/doc-files/ValueBased.html">value-based</a>
+ * This is a <a href="{@docRoot}/j86.java.lang/doc-files/ValueBased.html">value-based</a>
  * class; use of identity-sensitive operations (including reference equality
  * ({@code ==}), identity hash code, or synchronization) on instances of
  * {@code MonthDay} may have unpredictable results and should be avoided.
@@ -154,7 +154,7 @@ public final class MonthDay
     /**
      * Obtains the current month-day from the system clock in the default time-zone.
      * <p>
-     * This will query the {@link java.time.Clock#systemDefaultZone() system clock} in the default
+     * This will query the {@link j86.java.time.Clock#systemDefaultZone() system clock} in the default
      * time-zone to obtain the current month-day.
      * <p>
      * Using this method will prevent the ability to use an alternate clock for testing
@@ -169,7 +169,7 @@ public final class MonthDay
     /**
      * Obtains the current month-day from the system clock in the specified time-zone.
      * <p>
-     * This will query the {@link Clock#system(java.time.ZoneId) system clock} to obtain the current month-day.
+     * This will query the {@link Clock#system(j86.java.time.ZoneId) system clock} to obtain the current month-day.
      * Specifying the time-zone avoids dependence on the default time-zone.
      * <p>
      * Using this method will prevent the ability to use an alternate clock for testing
@@ -754,7 +754,7 @@ public final class MonthDay
     //-----------------------------------------------------------------------
     /**
      * Writes the object using a
-     * <a href="../../serialized-form.html#java.time.Ser">dedicated serialized form</a>.
+     * <a href="../../serialized-form.html#j86.java.time.Ser">dedicated serialized form</a>.
      * @serialData
      * <pre>
      *  out.writeByte(13);  // identifies a MonthDay

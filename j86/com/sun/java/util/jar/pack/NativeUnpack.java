@@ -24,20 +24,20 @@
  */
 
 
-package com.sun.java.util.jar.pack;
+package j86.com.sun.j86.j86.java.util.jar.pack;
 
-import java.io.BufferedInputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.nio.ByteBuffer;
-import java.util.jar.JarOutputStream;
-import java.util.jar.Pack200;
-import java.util.zip.CRC32;
-import java.util.zip.Deflater;
-import java.util.zip.ZipEntry;
-import java.util.zip.ZipOutputStream;
+import j86.java.io.BufferedInputStream;
+import j86.java.io.File;
+import j86.java.io.FileInputStream;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.nio.ByteBuffer;
+import j86.j86.java.util.jar.JarOutputStream;
+import j86.j86.java.util.jar.Pack200;
+import j86.j86.java.util.zip.CRC32;
+import j86.j86.java.util.zip.Deflater;
+import j86.j86.java.util.zip.ZipEntry;
+import j86.j86.java.util.zip.ZipOutputStream;
 
 class NativeUnpack {
     // Pointer to the native unpacker obj
@@ -86,8 +86,8 @@ class NativeUnpack {
     static {
         // If loading from stand alone build uncomment this.
         // System.loadLibrary("unpack");
-        java.security.AccessController.doPrivileged(
-            new java.security.PrivilegedAction<Void>() {
+        j86.java.security.AccessController.doPrivileged(
+            new j86.java.security.PrivilegedAction<Void>() {
                 public Void run() {
                     System.loadLibrary("unpack");
                     return null;

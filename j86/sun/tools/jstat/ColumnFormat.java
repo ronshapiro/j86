@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.tools.jstat;
+package j86.sun.tools.jstat;
 
-import java.util.*;
+import j86.java.util.*;
 
 /**
  * A class to represent the format for a column of data.

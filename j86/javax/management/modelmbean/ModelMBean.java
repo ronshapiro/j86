@@ -28,13 +28,13 @@
  * Copyright IBM Corp. 1999-2000.  All rights reserved.
  */
 
-package javax.management.modelmbean;
+package j86.j86.javax.management.modelmbean;
 
-import javax.management.DynamicMBean;
-import javax.management.InstanceNotFoundException;
-import javax.management.MBeanException;
-import javax.management.PersistentMBean;
-import javax.management.RuntimeOperationsException;
+import j86.javax.management.DynamicMBean;
+import j86.javax.management.InstanceNotFoundException;
+import j86.javax.management.MBeanException;
+import j86.javax.management.PersistentMBean;
+import j86.javax.management.RuntimeOperationsException;
 
 /**
  * This interface must be implemented by the ModelMBeans. An implementation of this interface
@@ -78,7 +78,7 @@ public interface ModelMBean extends
          * registered with the MBeanServer.
          * <P>
          * If the ModelMBean is currently registered, this method throws
-         * a {@link javax.management.RuntimeOperationsException} wrapping an
+         * a {@link j86.javax.management.RuntimeOperationsException} wrapping an
          * {@link IllegalStateException}
          *
          * @param inModelMBeanInfo The ModelMBeanInfo object to be used

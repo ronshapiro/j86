@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.lang;
+package j86.java.lang;
 
 
 /**
@@ -62,20 +62,20 @@ package java.lang;
  *
  * <p>Instances of {@code StringBuilder} are not safe for
  * use by multiple threads. If such synchronization is required then it is
- * recommended that {@link java.lang.StringBuffer} be used.
+ * recommended that {@link j86.java.lang.StringBuffer} be used.
  *
  * <p>Unless otherwise noted, passing a {@code null} argument to a constructor
  * or method in this class will cause a {@link NullPointerException} to be
  * thrown.
  *
  * @author      Michael McCloskey
- * @see         java.lang.StringBuffer
- * @see         java.lang.String
+ * @see         j86.java.lang.StringBuffer
+ * @see         j86.java.lang.String
  * @since       1.5
  */
 public final class StringBuilder
     extends AbstractStringBuilder
-    implements java.io.Serializable, CharSequence
+    implements j86.java.io.Serializable, CharSequence
 {
 
     /** use serialVersionUID for interoperability */
@@ -418,8 +418,8 @@ public final class StringBuilder
      *             characters currently stored in the string builder, in which
      *             case extra characters are ignored.
      */
-    private void writeObject(java.io.ObjectOutputStream s)
-        throws java.io.IOException {
+    private void writeObject(j86.java.io.ObjectOutputStream s)
+        throws j86.java.io.IOException {
         s.defaultWriteObject();
         s.writeInt(count);
         s.writeObject(value);
@@ -429,8 +429,8 @@ public final class StringBuilder
      * readObject is called to restore the state of the StringBuffer from
      * a stream.
      */
-    private void readObject(java.io.ObjectInputStream s)
-        throws java.io.IOException, ClassNotFoundException {
+    private void readObject(j86.java.io.ObjectInputStream s)
+        throws j86.java.io.IOException, ClassNotFoundException {
         s.defaultReadObject();
         count = s.readInt();
         value = (char[]) s.readObject();

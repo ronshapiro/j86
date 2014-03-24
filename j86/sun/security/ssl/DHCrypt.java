@@ -24,18 +24,18 @@
  */
 
 
-package sun.security.ssl;
+package j86.sun.security.ssl;
 
-import java.math.BigInteger;
-import java.security.*;
-import java.io.IOException;
-import javax.net.ssl.SSLHandshakeException;
-import javax.crypto.SecretKey;
-import javax.crypto.KeyAgreement;
-import javax.crypto.interfaces.DHPublicKey;
-import javax.crypto.spec.*;
+import j86.java.math.BigInteger;
+import j86.java.security.*;
+import j86.java.io.IOException;
+import j86.j86.javax.net.ssl.SSLHandshakeException;
+import j86.javax.crypto.SecretKey;
+import j86.javax.crypto.KeyAgreement;
+import j86.j86.javax.crypto.interfaces.DHPublicKey;
+import j86.j86.javax.crypto.spec.*;
 
-import sun.security.util.KeyUtil;
+import j86.sun.security.util.KeyUtil;
 
 /**
  * This class implements the Diffie-Hellman key exchange algorithm.

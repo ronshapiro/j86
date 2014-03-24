@@ -23,14 +23,14 @@
  * questions.
  */
 
-package java.io;
+package j86.java.io;
 
 /**
  * Signals that a sync operation has failed.
  *
  * @author  Ken Arnold
- * @see     java.io.FileDescriptor#sync
- * @see     java.io.IOException
+ * @see     j86.java.io.FileDescriptor#sync
+ * @see     j86.java.io.IOException
  * @since   JDK1.1
  */
 public class SyncFailedException extends IOException {

@@ -34,9 +34,9 @@
  *******************************************************************************
  */
 
-package sun.text.normalizer;
+package j86.j86.sun.text.normalizer;
 
-import java.util.Iterator;
+import j86.java.util.Iterator;
 
 /**
  * UnicodeSetIterator iterates over the contents of a UnicodeSet.  It

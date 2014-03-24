@@ -23,18 +23,18 @@
  * questions.
  */
 
-package com.sun.crypto.provider;
+package j86.com.sun.crypto.provider;
 
-import java.io.IOException;
-import java.io.Serializable;
-import java.io.ObjectStreamException;
-import java.security.AlgorithmParameters;
-import java.security.NoSuchAlgorithmException;
-import java.security.NoSuchProviderException;
-import javax.crypto.Cipher;
-import javax.crypto.IllegalBlockSizeException;
-import javax.crypto.SealedObject;
-import javax.crypto.spec.*;
+import j86.java.io.IOException;
+import j86.java.io.Serializable;
+import j86.java.io.ObjectStreamException;
+import j86.java.security.AlgorithmParameters;
+import j86.java.security.NoSuchAlgorithmException;
+import j86.java.security.NoSuchProviderException;
+import j86.javax.crypto.Cipher;
+import j86.javax.crypto.IllegalBlockSizeException;
+import j86.javax.crypto.SealedObject;
+import j86.j86.javax.crypto.spec.*;
 
 /**
  * This class is introduced to workaround a problem in
@@ -50,7 +50,7 @@ import javax.crypto.spec.*;
  * @see JceKeyStore
  */
 
-final class ai extends javax.crypto.SealedObject {
+final class ai extends j86.javax.crypto.SealedObject {
 
     static final long serialVersionUID = -7051502576727967444L;
 

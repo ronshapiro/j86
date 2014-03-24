@@ -23,22 +23,22 @@
  * questions.
  */
 
-package com.sun.naming.internal;
+package j86.com.sun.naming.internal;
 
-import java.io.InputStream;
-import java.io.IOException;
-import java.net.MalformedURLException;
-import java.net.URLClassLoader;
-import java.net.URL;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.security.PrivilegedActionException;
-import java.security.PrivilegedExceptionAction;
-import java.util.Enumeration;
-import java.util.NoSuchElementException;
-import java.util.Properties;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
+import j86.java.net.MalformedURLException;
+import j86.java.net.URLClassLoader;
+import j86.java.net.URL;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.security.PrivilegedActionException;
+import j86.java.security.PrivilegedExceptionAction;
+import j86.java.util.Enumeration;
+import j86.java.util.NoSuchElementException;
+import j86.java.util.Properties;
 
-import javax.naming.*;
+import j86.javax.naming.*;
 
 /**
  * VersionHelper was used by JNDI to accommodate differences between
@@ -142,9 +142,9 @@ final class VersionHelper12 extends VersionHelper {
                         if (javahome == null) {
                             return null;
                         }
-                        String pathname = javahome + java.io.File.separator +
-                            "lib" + java.io.File.separator + filename;
-                        return new java.io.FileInputStream(pathname);
+                        String pathname = javahome + j86.java.io.File.separator +
+                            "lib" + j86.java.io.File.separator + filename;
+                        return new j86.java.io.FileInputStream(pathname);
                     } catch (Exception e) {
                         return null;
                     }

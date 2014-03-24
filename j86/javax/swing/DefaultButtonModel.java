@@ -22,14 +22,14 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing;
+package j86.javax.swing;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.awt.image.*;
-import java.io.Serializable;
-import java.util.EventListener;
-import javax.swing.event.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.j86.j86.java.awt.image.*;
+import j86.java.io.Serializable;
+import j86.java.util.EventListener;
+import j86.j86.javax.swing.event.*;
 
 /**
  * The default implementation of a <code>Button</code> component's data model.
@@ -40,8 +40,8 @@ import javax.swing.event.*;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing. As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @author Jeff Dinkins
  */
@@ -478,7 +478,7 @@ public class DefaultButtonModel implements ButtonModel, Serializable {
      *
      * @param listenerType  the type of listeners requested;
      *          this parameter should specify an interface
-     *          that descends from <code>java.util.EventListener</code>
+     *          that descends from <code>j86.java.util.EventListener</code>
      * @return an array of all objects registered as
      *          <code><em>Foo</em>Listener</code>s
      *          on this model,
@@ -486,7 +486,7 @@ public class DefaultButtonModel implements ButtonModel, Serializable {
      *          listeners have been added
      * @exception ClassCastException if <code>listenerType</code> doesn't
      *          specify a class or interface that implements
-     *          <code>java.util.EventListener</code>
+     *          <code>j86.java.util.EventListener</code>
      *
      * @see #getActionListeners
      * @see #getChangeListeners

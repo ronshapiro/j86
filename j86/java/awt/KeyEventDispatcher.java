@@ -22,9 +22,9 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.awt;
+package j86.java.awt;
 
-import java.awt.event.KeyEvent;
+import j86.j86.java.awt.event.KeyEvent;
 
 
 /**

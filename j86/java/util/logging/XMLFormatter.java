@@ -24,11 +24,11 @@
  */
 
 
-package java.util.logging;
+package j86.j86.java.util.logging;
 
-import java.io.*;
-import java.nio.charset.Charset;
-import java.util.*;
+import j86.java.io.*;
+import j86.j86.java.nio.charset.Charset;
+import j86.java.util.*;
 
 /**
  * Format a LogRecord into a standard XML format.
@@ -237,7 +237,7 @@ public class XMLFormatter extends Formatter {
 
         if (encoding == null) {
             // Figure out the default encoding.
-            encoding = java.nio.charset.Charset.defaultCharset().name();
+            encoding = j86.j86.java.nio.charset.Charset.defaultCharset().name();
         }
         // Try to map the encoding name to a canonical name.
         try {

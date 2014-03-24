@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.sql;
+package j86.java.sql;
 
 /**
  * The subclass of {@link SQLException} thrown when the SQLState class value
@@ -44,7 +44,7 @@ public class SQLDataException extends SQLNonTransientException {
          *
          * The <code>cause</code> is not initialized, and may subsequently be
          * initialized by a call to
-         * {@link Throwable#initCause(java.lang.Throwable)} method.
+         * {@link Throwable#initCause(j86.java.lang.Throwable)} method.
          * <p>
          *
          * @since 1.6
@@ -61,7 +61,7 @@ public class SQLDataException extends SQLNonTransientException {
          *
          * The <code>cause</code> is not initialized, and may subsequently be
          * initialized by a call to
-         * {@link Throwable#initCause(java.lang.Throwable)} method.
+         * {@link Throwable#initCause(j86.java.lang.Throwable)} method.
          * <p>
          *
          * @param reason a description of the exception
@@ -78,7 +78,7 @@ public class SQLDataException extends SQLNonTransientException {
          *
          * The <code>cause</code> is not initialized, and may subsequently be
          * initialized by a call to
-         * {@link Throwable#initCause(java.lang.Throwable)} method.
+         * {@link Throwable#initCause(j86.java.lang.Throwable)} method.
          * <p>
          * @param reason a description of the exception
          * @param SQLState an XOPEN or SQL:2003 code identifying the exception
@@ -95,7 +95,7 @@ public class SQLDataException extends SQLNonTransientException {
          *
          * The <code>cause</code> is not initialized, and may subsequently be
          * initialized by a call to
-         * {@link Throwable#initCause(java.lang.Throwable)} method.
+         * {@link Throwable#initCause(j86.java.lang.Throwable)} method.
          * <p>
          * @param reason a description of the exception
          * @param SQLState an XOPEN or SQL:2003 code identifying the exception

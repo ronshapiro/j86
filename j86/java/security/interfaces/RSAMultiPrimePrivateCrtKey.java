@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.security.interfaces;
+package j86.j86.java.security.interfaces;
 
-import java.math.BigInteger;
-import java.security.spec.RSAOtherPrimeInfo;
+import j86.java.math.BigInteger;
+import j86.j86.java.security.spec.RSAOtherPrimeInfo;
 
 /**
  * The interface to an RSA multi-prime private key, as defined in the
@@ -36,8 +36,8 @@ import java.security.spec.RSAOtherPrimeInfo;
  * @author Valerie Peng
  *
  *
- * @see java.security.spec.RSAPrivateKeySpec
- * @see java.security.spec.RSAMultiPrimePrivateCrtKeySpec
+ * @see j86.j86.java.security.spec.RSAPrivateKeySpec
+ * @see j86.j86.java.security.spec.RSAMultiPrimePrivateCrtKeySpec
  * @see RSAPrivateKey
  * @see RSAPrivateCrtKey
  *

@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.sql;
+package j86.java.sql;
 
-import java.util.logging.Logger;
+import j86.j86.java.util.logging.Logger;
 
 /**
  * The interface that every driver class must implement.
@@ -87,7 +87,7 @@ public interface Driver {
      * @exception SQLException if a database access error occurs or the url is
      * {@code null}
      */
-    Connection connect(String url, java.util.Properties info)
+    Connection connect(String url, j86.java.util.Properties info)
         throws SQLException;
 
     /**
@@ -124,7 +124,7 @@ public interface Driver {
      *          no properties are required.
      * @exception SQLException if a database access error occurs
      */
-    DriverPropertyInfo[] getPropertyInfo(String url, java.util.Properties info)
+    DriverPropertyInfo[] getPropertyInfo(String url, j86.java.util.Properties info)
                          throws SQLException;
 
 
@@ -174,7 +174,7 @@ public interface Driver {
      *
      * @return the parent Logger for this driver
      * @throws SQLFeatureNotSupportedException if the driver does not use
-     * {@code java.util.logging}.
+     * {@code j86.j86.java.util.logging}.
      * @since 1.7
      */
     public Logger getParentLogger() throws SQLFeatureNotSupportedException;

@@ -23,13 +23,13 @@
  * questions.
  */
 
-package java.util.logging;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Locale;
-import java.util.Map;
-import java.util.ResourceBundle;
+package j86.j86.java.util.logging;
+import j86.java.util.ArrayList;
+import j86.java.util.HashMap;
+import j86.java.util.List;
+import j86.java.util.Locale;
+import j86.java.util.Map;
+import j86.java.util.ResourceBundle;
 
 /**
  * The Level class defines a set of standard logging levels that
@@ -63,8 +63,8 @@ import java.util.ResourceBundle;
  * @since 1.4
  */
 
-public class Level implements java.io.Serializable {
-    private static final String defaultBundle = "sun.util.logging.resources.logging";
+public class Level implements j86.java.io.Serializable {
+    private static final String defaultBundle = "j86.j86.sun.util.logging.resources.logging";
 
     /**
      * @serial  The non-localized name of the level.

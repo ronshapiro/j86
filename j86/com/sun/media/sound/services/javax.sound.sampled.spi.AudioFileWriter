@@ -1,4 +1,4 @@
 # Providers for writing audio files
-com.sun.media.sound.AuFileWriter
-com.sun.media.sound.AiffFileWriter
-com.sun.media.sound.WaveFileWriter
+j86.com.sun.media.sound.AuFileWriter
+j86.com.sun.media.sound.AiffFileWriter
+j86.com.sun.media.sound.WaveFileWriter

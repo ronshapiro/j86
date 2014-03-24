@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.jmx.snmp;
+package j86.com.sun.jmx.snmp;
 
 /**
  * This exception is thrown when an error occurs in an <CODE> SnmpSecurityModel </CODE>.
@@ -38,7 +38,7 @@ public class SnmpSecurityException extends Exception {
      */
     public SnmpVarBind[] list = null;
     /**
-     * The status of the exception. See {@link com.sun.jmx.snmp.SnmpDefinitions} for possible values.
+     * The status of the exception. See {@link j86.com.sun.jmx.snmp.SnmpDefinitions} for possible values.
      */
     public int status = SnmpDefinitions.snmpReqUnknownError;
     /**

@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.tools.jstat;
+package j86.sun.tools.jstat;
 
-import sun.jvmstat.monitor.MonitorException;
+import j86.sun.jvmstat.monitor.MonitorException;
 
 /**
  * An interface to allow an object to visit an Expression object and

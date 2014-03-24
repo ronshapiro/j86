@@ -23,36 +23,36 @@
  * questions.
  */
 
-package javax.imageio;
+package j86.javax.imageio;
 
-import java.awt.image.BufferedImage;
-import java.awt.image.RenderedImage;
-import java.io.File;
-import java.io.FilePermission;
-import java.io.InputStream;
-import java.io.IOException;
-import java.io.OutputStream;
-import java.lang.reflect.Method;
-import java.net.URL;
-import java.security.AccessController;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.NoSuchElementException;
-import java.util.Set;
-import javax.imageio.spi.IIORegistry;
-import javax.imageio.spi.ImageReaderSpi;
-import javax.imageio.spi.ImageReaderWriterSpi;
-import javax.imageio.spi.ImageWriterSpi;
-import javax.imageio.spi.ImageInputStreamSpi;
-import javax.imageio.spi.ImageOutputStreamSpi;
-import javax.imageio.spi.ImageTranscoderSpi;
-import javax.imageio.spi.ServiceRegistry;
-import javax.imageio.stream.ImageInputStream;
-import javax.imageio.stream.ImageOutputStream;
-import sun.awt.AppContext;
-import sun.security.action.GetPropertyAction;
+import j86.j86.j86.java.awt.image.BufferedImage;
+import j86.j86.j86.java.awt.image.RenderedImage;
+import j86.java.io.File;
+import j86.java.io.FilePermission;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
+import j86.java.io.OutputStream;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.net.URL;
+import j86.java.security.AccessController;
+import j86.java.util.Arrays;
+import j86.java.util.Collections;
+import j86.java.util.HashSet;
+import j86.java.util.Iterator;
+import j86.java.util.NoSuchElementException;
+import j86.java.util.Set;
+import j86.j86.javax.imageio.spi.IIORegistry;
+import j86.j86.javax.imageio.spi.ImageReaderSpi;
+import j86.j86.javax.imageio.spi.ImageReaderWriterSpi;
+import j86.j86.javax.imageio.spi.ImageWriterSpi;
+import j86.j86.javax.imageio.spi.ImageInputStreamSpi;
+import j86.j86.javax.imageio.spi.ImageOutputStreamSpi;
+import j86.j86.javax.imageio.spi.ImageTranscoderSpi;
+import j86.j86.javax.imageio.spi.ServiceRegistry;
+import j86.j86.javax.imageio.stream.ImageInputStream;
+import j86.j86.javax.imageio.stream.ImageOutputStream;
+import j86.sun.awt.AppContext;
+import j86.sun.security.action.GetPropertyAction;
 
 /**
  * A class containing static convenience methods for locating
@@ -87,7 +87,7 @@ public final class ImageIO {
      * <p> The <code>getResources</code> method of the context
      * <code>ClassLoader</code> is used locate JAR files containing
      * files named
-     * <code>META-INF/services/javax.imageio.spi.</code><i>classname</i>,
+     * <code>META-INF/services/j86.j86.javax.imageio.spi.</code><i>classname</i>,
      * where <i>classname</i> is one of <code>ImageReaderSpi</code>,
      * <code>ImageWriterSpi</code>, <code>ImageTranscoderSpi</code>,
      * <code>ImageInputStreamSpi</code>, or
@@ -165,10 +165,10 @@ public final class ImageIO {
 
     /**
      * Returns the default temporary (cache) directory as defined by the
-     * java.io.tmpdir system property.
+     * j86.java.io.tmpdir system property.
      */
     private static String getTempDir() {
-        GetPropertyAction a = new GetPropertyAction("java.io.tmpdir");
+        GetPropertyAction a = new GetPropertyAction("j86.java.io.tmpdir");
         return (String)AccessController.doPrivileged(a);
     }
 
@@ -331,7 +331,7 @@ public final class ImageIO {
      * @exception IOException if a cache file is needed but cannot be
      * created.
      *
-     * @see javax.imageio.spi.ImageInputStreamSpi
+     * @see j86.j86.javax.imageio.spi.ImageInputStreamSpi
      */
     public static ImageInputStream createImageInputStream(Object input)
         throws IOException {
@@ -393,7 +393,7 @@ public final class ImageIO {
      * @exception IOException if a cache file is needed but cannot be
      * created.
      *
-     * @see javax.imageio.spi.ImageOutputStreamSpi
+     * @see j86.j86.javax.imageio.spi.ImageOutputStreamSpi
      */
     public static ImageOutputStream createImageOutputStream(Object output)
         throws IOException {
@@ -634,7 +634,7 @@ public final class ImageIO {
      * @exception IllegalArgumentException if <code>input</code> is
      * <code>null</code>.
      *
-     * @see javax.imageio.spi.ImageReaderSpi#canDecodeInput
+     * @see j86.j86.javax.imageio.spi.ImageReaderSpi#canDecodeInput
      */
     public static Iterator<ImageReader> getImageReaders(Object input) {
         if (input == null) {
@@ -694,7 +694,7 @@ public final class ImageIO {
      * @exception IllegalArgumentException if <code>formatName</code>
      * is <code>null</code>.
      *
-     * @see javax.imageio.spi.ImageReaderSpi#getFormatNames
+     * @see j86.j86.javax.imageio.spi.ImageReaderSpi#getFormatNames
      */
     public static Iterator<ImageReader>
         getImageReadersByFormatName(String formatName)
@@ -729,7 +729,7 @@ public final class ImageIO {
      * @exception IllegalArgumentException if <code>fileSuffix</code>
      * is <code>null</code>.
      *
-     * @see javax.imageio.spi.ImageReaderSpi#getFileSuffixes
+     * @see j86.j86.javax.imageio.spi.ImageReaderSpi#getFileSuffixes
      */
     public static Iterator<ImageReader>
         getImageReadersBySuffix(String fileSuffix)
@@ -764,7 +764,7 @@ public final class ImageIO {
      * @exception IllegalArgumentException if <code>MIMEType</code> is
      * <code>null</code>.
      *
-     * @see javax.imageio.spi.ImageReaderSpi#getMIMETypes
+     * @see j86.j86.javax.imageio.spi.ImageReaderSpi#getMIMETypes
      */
     public static Iterator<ImageReader>
         getImageReadersByMIMEType(String MIMEType)
@@ -877,7 +877,7 @@ public final class ImageIO {
      * @exception IllegalArgumentException if <code>formatName</code> is
      * <code>null</code>.
      *
-     * @see javax.imageio.spi.ImageWriterSpi#getFormatNames
+     * @see j86.j86.javax.imageio.spi.ImageWriterSpi#getFormatNames
      */
     public static Iterator<ImageWriter>
         getImageWritersByFormatName(String formatName)
@@ -911,7 +911,7 @@ public final class ImageIO {
      * @exception IllegalArgumentException if <code>fileSuffix</code> is
      * <code>null</code>.
      *
-     * @see javax.imageio.spi.ImageWriterSpi#getFileSuffixes
+     * @see j86.j86.javax.imageio.spi.ImageWriterSpi#getFileSuffixes
      */
     public static Iterator<ImageWriter>
         getImageWritersBySuffix(String fileSuffix)
@@ -945,7 +945,7 @@ public final class ImageIO {
      * @exception IllegalArgumentException if <code>MIMEType</code> is
      * <code>null</code>.
      *
-     * @see javax.imageio.spi.ImageWriterSpi#getMIMETypes
+     * @see j86.j86.javax.imageio.spi.ImageWriterSpi#getMIMETypes
      */
     public static Iterator<ImageWriter>
         getImageWritersByMIMEType(String MIMEType)
@@ -983,7 +983,7 @@ public final class ImageIO {
      * anything about the structure of the metadata, or even about
      * the image format.  Note that this method returns the
      * "preferred" writer, which is the first in the list returned by
-     * <code>javax.imageio.spi.ImageReaderSpi.getImageWriterSpiNames()</code>.
+     * <code>j86.j86.javax.imageio.spi.ImageReaderSpi.getImageWriterSpiNames()</code>.
      *
      * @param reader an instance of a registered <code>ImageReader</code>.
      *
@@ -993,7 +993,7 @@ public final class ImageIO {
      * <code>null</code>.
      *
      * @see #getImageReader(ImageWriter)
-     * @see javax.imageio.spi.ImageReaderSpi#getImageWriterSpiNames()
+     * @see j86.j86.javax.imageio.spi.ImageReaderSpi#getImageWriterSpiNames()
      */
     public static ImageWriter getImageWriter(ImageReader reader) {
         if (reader == null) {
@@ -1063,7 +1063,7 @@ public final class ImageIO {
      * <code>getImageWriter(ImageReader)</code>.  Note that this
      * method returns the "preferred" reader, which is the first in
      * the list returned by
-     * javax.imageio.spi.ImageWriterSpi.<code>getImageReaderSpiNames()</code>.
+     * j86.j86.javax.imageio.spi.ImageWriterSpi.<code>getImageReaderSpiNames()</code>.
      *
      * @param writer an instance of a registered <code>ImageWriter</code>.
      *
@@ -1073,7 +1073,7 @@ public final class ImageIO {
      * <code>null</code>.
      *
      * @see #getImageWriter(ImageReader)
-     * @see javax.imageio.spi.ImageWriterSpi#getImageReaderSpiNames()
+     * @see j86.j86.javax.imageio.spi.ImageWriterSpi#getImageReaderSpiNames()
      */
     public static ImageReader getImageReader(ImageWriter writer) {
         if (writer == null) {
@@ -1148,7 +1148,7 @@ public final class ImageIO {
      * @exception IllegalArgumentException if any parameter is
      * <code>null</code>.
      *
-     * @see javax.imageio.spi.ImageWriterSpi#canEncodeImage(ImageTypeSpecifier)
+     * @see j86.j86.javax.imageio.spi.ImageWriterSpi#canEncodeImage(ImageTypeSpecifier)
      */
     public static Iterator<ImageWriter>
         getImageWriters(ImageTypeSpecifier type, String formatName)

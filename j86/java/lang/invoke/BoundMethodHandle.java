@@ -23,26 +23,26 @@
  * questions.
  */
 
-package java.lang.invoke;
+package j86.j86.java.lang.invoke;
 
-import static jdk.internal.org.objectweb.asm.Opcodes.*;
-import static java.lang.invoke.LambdaForm.basicTypes;
-import static java.lang.invoke.MethodHandleNatives.Constants.REF_invokeStatic;
-import static java.lang.invoke.MethodHandleStatics.*;
+import static j86.jdk.internal.org.objectweb.asm.Opcodes.*;
+import static j86.j86.java.lang.invoke.LambdaForm.basicTypes;
+import static j86.j86.java.lang.invoke.MethodHandleNatives.Constants.REF_invokeStatic;
+import static j86.j86.java.lang.invoke.MethodHandleStatics.*;
 
-import java.lang.invoke.LambdaForm.Name;
-import java.lang.invoke.LambdaForm.NamedFunction;
-import java.lang.invoke.MethodHandles.Lookup;
-import java.lang.reflect.Field;
-import java.util.Arrays;
-import java.util.HashMap;
+import j86.j86.java.lang.invoke.LambdaForm.Name;
+import j86.j86.java.lang.invoke.LambdaForm.NamedFunction;
+import j86.j86.java.lang.invoke.MethodHandles.Lookup;
+import j86.j86.j86.java.lang.reflect.Field;
+import j86.java.util.Arrays;
+import j86.java.util.HashMap;
 
-import sun.invoke.util.ValueConversions;
-import sun.invoke.util.Wrapper;
+import j86.j86.sun.invoke.util.ValueConversions;
+import j86.j86.sun.invoke.util.Wrapper;
 
-import jdk.internal.org.objectweb.asm.ClassWriter;
-import jdk.internal.org.objectweb.asm.MethodVisitor;
-import jdk.internal.org.objectweb.asm.Type;
+import j86.jdk.internal.org.objectweb.asm.ClassWriter;
+import j86.jdk.internal.org.objectweb.asm.MethodVisitor;
+import j86.jdk.internal.org.objectweb.asm.Type;
 
 /**
  * The flavor of method handle which emulates an invoke instruction
@@ -499,14 +499,14 @@ import jdk.internal.org.objectweb.asm.Type;
      */
     static class Factory {
 
-        static final String JLO_SIG  = "Ljava/lang/Object;";
-        static final String JLS_SIG  = "Ljava/lang/String;";
-        static final String JLC_SIG  = "Ljava/lang/Class;";
-        static final String MH       = "java/lang/invoke/MethodHandle";
+        static final String JLO_SIG  = "Lj86.java.lang/Object;";
+        static final String JLS_SIG  = "Lj86.java.lang/String;";
+        static final String JLC_SIG  = "Lj86.java.lang/Class;";
+        static final String MH       = "j86.j86.java.lang.invoke/MethodHandle";
         static final String MH_SIG   = "L"+MH+";";
-        static final String BMH      = "java/lang/invoke/BoundMethodHandle";
+        static final String BMH      = "j86.j86.java.lang.invoke/BoundMethodHandle";
         static final String BMH_SIG  = "L"+BMH+";";
-        static final String SPECIES_DATA     = "java/lang/invoke/BoundMethodHandle$SpeciesData";
+        static final String SPECIES_DATA     = "j86.j86.java.lang.invoke/BoundMethodHandle$SpeciesData";
         static final String SPECIES_DATA_SIG = "L"+SPECIES_DATA+";";
 
         static final String SPECIES_PREFIX_NAME = "Species_";
@@ -517,11 +517,11 @@ import jdk.internal.org.objectweb.asm.Type;
         static final String MYSPECIES_DATA_SIG = "()" + SPECIES_DATA_SIG;
         static final String VOID_SIG   = "()V";
 
-        static final String SIG_INCIPIT = "(Ljava/lang/invoke/MethodType;Ljava/lang/invoke/LambdaForm;";
+        static final String SIG_INCIPIT = "(Lj86.j86.java.lang.invoke/MethodType;Ljava/lang/invoke/LambdaForm;";
 
         static final Class<?>[] TYPES = new Class<?>[] { Object.class, int.class, long.class, float.class, double.class };
 
-        static final String[] E_THROWABLE = new String[] { "java/lang/Throwable" };
+        static final String[] E_THROWABLE = new String[] { "j86.java.lang/Throwable" };
 
         /**
          * Generate a concrete subclass of BMH for a given combination of bound types.

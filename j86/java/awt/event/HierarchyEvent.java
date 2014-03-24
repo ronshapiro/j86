@@ -23,11 +23,11 @@
  * questions.
  */
 
-package java.awt.event;
+package j86.j86.java.awt.event;
 
-import java.awt.AWTEvent;
-import java.awt.Component;
-import java.awt.Container;
+import j86.java.awt.AWTEvent;
+import j86.java.awt.Component;
+import j86.java.awt.Container;
 
 /**
  * An event which indicates a change to the <code>Component</code>
@@ -98,7 +98,7 @@ public class HierarchyEvent extends AWTEvent {
     /**
      * Marks the first integer id for the range of hierarchy event ids.
      */
-    public static final int HIERARCHY_FIRST = 1400; // 1300 used by sun.awt.windows.ModalityEvent
+    public static final int HIERARCHY_FIRST = 1400; // 1300 used by j86.sun.awt.windows.ModalityEvent
 
     /**
      * The event id indicating that modification was made to the
@@ -137,9 +137,9 @@ public class HierarchyEvent extends AWTEvent {
      * <code>Component.addNotify</code> and
      * <code>Component.removeNotify</code> methods.
      *
-     * @see java.awt.Component#isDisplayable()
-     * @see java.awt.Component#addNotify()
-     * @see java.awt.Component#removeNotify()
+     * @see j86.java.awt.Component#isDisplayable()
+     * @see j86.java.awt.Component#addNotify()
+     * @see j86.java.awt.Component#removeNotify()
      */
     public static final int DISPLAYABILITY_CHANGED = 0x2;
 
@@ -154,11 +154,11 @@ public class HierarchyEvent extends AWTEvent {
      * or implicit calls of the <code>Component.show</code> and
      * <code>Component.hide</code> methods.
      *
-     * @see java.awt.Component#isShowing()
-     * @see java.awt.Component#addNotify()
-     * @see java.awt.Component#removeNotify()
-     * @see java.awt.Component#show()
-     * @see java.awt.Component#hide()
+     * @see j86.java.awt.Component#isShowing()
+     * @see j86.java.awt.Component#addNotify()
+     * @see j86.java.awt.Component#removeNotify()
+     * @see j86.java.awt.Component#show()
+     * @see j86.java.awt.Component#hide()
      */
     public static final int SHOWING_CHANGED = 0x4;
 

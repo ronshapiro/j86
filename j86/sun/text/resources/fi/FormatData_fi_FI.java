@@ -38,9 +38,9 @@
  *
  */
 
-package sun.text.resources.fi;
+package j86.j86.j86.sun.text.resources.fi;
 
-import sun.util.resources.ParallelListResourceBundle;
+import j86.j86.sun.util.resources.ParallelListResourceBundle;
 
 public class FormatData_fi_FI extends ParallelListResourceBundle {
     /**

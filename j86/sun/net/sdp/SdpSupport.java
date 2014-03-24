@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.net.sdp;
+package j86.j86.sun.net.sdp;
 
-import java.io.IOException;
-import java.io.FileDescriptor;
-import java.security.AccessController;
+import j86.java.io.IOException;
+import j86.java.io.FileDescriptor;
+import j86.java.security.AccessController;
 
-import sun.misc.SharedSecrets;
-import sun.misc.JavaIOFileDescriptorAccess;
+import j86.sun.misc.SharedSecrets;
+import j86.sun.misc.JavaIOFileDescriptorAccess;
 
 
 /**
@@ -40,7 +40,7 @@ import sun.misc.JavaIOFileDescriptorAccess;
 
 public final class SdpSupport {
     private static final String os = AccessController
-        .doPrivileged(new sun.security.action.GetPropertyAction("os.name"));
+        .doPrivileged(new j86.sun.security.action.GetPropertyAction("os.name"));
     private static final boolean isSupported = (os.equals("SunOS") || (os.equals("Linux")));
     private static final JavaIOFileDescriptorAccess fdAccess =
         SharedSecrets.getJavaIOFileDescriptorAccess();
@@ -76,7 +76,7 @@ public final class SdpSupport {
 
     static {
         AccessController.doPrivileged(
-            new java.security.PrivilegedAction<Void>() {
+            new j86.java.security.PrivilegedAction<Void>() {
                 public Void run() {
                     System.loadLibrary("net");
                     return null;

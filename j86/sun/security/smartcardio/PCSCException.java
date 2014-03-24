@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.security.smartcardio;
+package j86.sun.security.smartcardio;
 
-import static sun.security.smartcardio.PCSC.*;
+import static j86.sun.security.smartcardio.PCSC.*;
 
 /**
  * Exception for PC/SC errors. The native code portion checks the return value

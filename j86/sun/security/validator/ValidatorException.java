@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.security.validator;
+package j86.sun.security.validator;
 
-import java.security.cert.*;
+import j86.j86.java.security.cert.*;
 
 /**
  * ValidatorException thrown by the Validator. It has optional fields that

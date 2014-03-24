@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.print.attribute.standard;
+package j86.j86.j86.javax.print.attribute.standard;
 
-import java.util.Locale;
-import javax.print.attribute.Attribute;
-import javax.print.attribute.EnumSyntax;
+import j86.java.util.Locale;
+import j86.j86.javax.print.attribute.Attribute;
+import j86.j86.javax.print.attribute.EnumSyntax;
 
 /**
  * Class MediaName is a subclass of Media, a printing attribute class (an

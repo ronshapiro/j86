@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.java2d;
+package j86.sun.java2d;
 
-import java.lang.ref.Reference;
-import java.lang.ref.ReferenceQueue;
-import java.lang.ref.PhantomReference;
-import java.lang.ref.WeakReference;
-import java.util.ArrayList;
-import java.util.Hashtable;
+import j86.j86.java.lang.ref.Reference;
+import j86.j86.java.lang.ref.ReferenceQueue;
+import j86.j86.java.lang.ref.PhantomReference;
+import j86.j86.java.lang.ref.WeakReference;
+import j86.java.util.ArrayList;
+import j86.java.util.Hashtable;
 
 /**
  * This class is used for registering and disposing the native
@@ -56,16 +56,16 @@ public class Disposer implements Runnable {
     public static int refType = PHANTOM;
 
     static {
-        java.security.AccessController.doPrivileged(
-            new java.security.PrivilegedAction<Void>() {
+        j86.java.security.AccessController.doPrivileged(
+            new j86.java.security.PrivilegedAction<Void>() {
                 public Void run() {
                     System.loadLibrary("awt");
                     return null;
                 }
             });
         initIDs();
-        String type = (String) java.security.AccessController.doPrivileged(
-                new sun.security.action.GetPropertyAction("sun.java2d.reftype"));
+        String type = (String) j86.java.security.AccessController.doPrivileged(
+                new j86.sun.security.action.GetPropertyAction("j86.sun.java2d.reftype"));
         if (type != null) {
             if (type.equals("weak")) {
                 refType = WEAK;
@@ -76,8 +76,8 @@ public class Disposer implements Runnable {
             }
         }
         disposerInstance = new Disposer();
-        java.security.AccessController.doPrivileged(
-            new java.security.PrivilegedAction() {
+        j86.java.security.AccessController.doPrivileged(
+            new j86.java.security.PrivilegedAction() {
                 public Object run() {
                     /* The thread must be a member of a thread group
                      * which will not get GCed before VM exit.
@@ -135,7 +135,7 @@ public class Disposer implements Runnable {
         if (target instanceof DisposerTarget) {
             target = ((DisposerTarget)target).getDisposerReferent();
         }
-        java.lang.ref.Reference ref;
+        j86.j86.java.lang.ref.Reference ref;
         if (refType == PHANTOM) {
             ref = new PhantomReference(target, queue);
         } else {

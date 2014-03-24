@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.lang.invoke;
+package j86.j86.java.lang.invoke;
 
-import java.io.Serializable;
-import java.util.Arrays;
+import j86.java.io.Serializable;
+import j86.java.util.Arrays;
 
 /**
  * <p>Methods to facilitate the creation of simple "function objects" that

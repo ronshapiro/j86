@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.print.attribute;
+package j86.j86.javax.print.attribute;
 
-import java.io.Serializable;
+import j86.java.io.Serializable;
 
 /**
  * Interface Attribute is the base interface implemented by any and every
@@ -43,7 +43,7 @@ public interface Attribute extends Serializable {
    * for this printing attribute value when it is added to an attribute set.
    *
    * @return  Printing attribute class (category), an instance of class
-   *          {@link java.lang.Class java.lang.Class}.
+   *          {@link j86.java.lang.Class java.lang.Class}.
    */
   public Class<? extends Attribute> getCategory();
 

@@ -23,11 +23,11 @@
  * questions.
  */
 
-package java.awt;
+package j86.java.awt;
 
-import java.awt.image.ColorModel;
-import java.lang.annotation.Native;
-import sun.java2d.SunCompositeContext;
+import j86.j86.j86.java.awt.image.ColorModel;
+import j86.j86.java.lang.annotation.Native;
+import j86.sun.java2d.SunCompositeContext;
 
 /**
  * The <code>AlphaComposite</code> class implements basic alpha

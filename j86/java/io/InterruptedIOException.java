@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.io;
+package j86.java.io;
 
 /**
  * Signals that an I/O operation has been interrupted. An
@@ -34,9 +34,9 @@ package java.io;
  * the interruption occurred.
  *
  * @author  unascribed
- * @see     java.io.InputStream
- * @see     java.io.OutputStream
- * @see     java.lang.Thread#interrupt()
+ * @see     j86.java.io.InputStream
+ * @see     j86.java.io.OutputStream
+ * @see     j86.java.lang.Thread#interrupt()
  * @since   JDK1.0
  */
 public
@@ -55,8 +55,8 @@ class InterruptedIOException extends IOException {
      * Constructs an <code>InterruptedIOException</code> with the
      * specified detail message. The string <code>s</code> can be
      * retrieved later by the
-     * <code>{@link java.lang.Throwable#getMessage}</code>
-     * method of class <code>java.lang.Throwable</code>.
+     * <code>{@link j86.java.lang.Throwable#getMessage}</code>
+     * method of class <code>j86.java.lang.Throwable</code>.
      *
      * @param   s   the detail message.
      */

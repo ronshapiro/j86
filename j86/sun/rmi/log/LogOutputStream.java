@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.rmi.log;
+package j86.sun.rmi.log;
 
-import java.io.*;
+import j86.java.io.*;
 
 public
 class LogOutputStream extends OutputStream {

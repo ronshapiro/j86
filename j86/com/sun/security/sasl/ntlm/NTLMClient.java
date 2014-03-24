@@ -23,23 +23,23 @@
  * questions.
  */
 
-package com.sun.security.sasl.ntlm;
+package j86.j86.com.sun.security.sasl.ntlm;
 
-import com.sun.security.ntlm.Client;
-import com.sun.security.ntlm.NTLMException;
-import java.io.IOException;
-import java.net.InetAddress;
-import java.net.UnknownHostException;
-import java.util.Map;
-import java.util.Random;
-import javax.security.auth.callback.Callback;
+import j86.com.sun.security.ntlm.Client;
+import j86.com.sun.security.ntlm.NTLMException;
+import j86.java.io.IOException;
+import j86.java.net.InetAddress;
+import j86.java.net.UnknownHostException;
+import j86.java.util.Map;
+import j86.java.util.Random;
+import j86.j86.javax.security.auth.callback.Callback;
 
 
-import javax.security.sasl.*;
-import javax.security.auth.callback.CallbackHandler;
-import javax.security.auth.callback.NameCallback;
-import javax.security.auth.callback.PasswordCallback;
-import javax.security.auth.callback.UnsupportedCallbackException;
+import j86.javax.security.sasl.*;
+import j86.j86.javax.security.auth.callback.CallbackHandler;
+import j86.j86.javax.security.auth.callback.NameCallback;
+import j86.j86.javax.security.auth.callback.PasswordCallback;
+import j86.j86.javax.security.auth.callback.UnsupportedCallbackException;
 
 /**
   * Required callbacks:
@@ -52,10 +52,10 @@ import javax.security.auth.callback.UnsupportedCallbackException;
   *
   * Environment properties that affect behavior of implementation:
   *
-  * javax.security.sasl.qop
+  * j86.javax.security.sasl.qop
   *    String, quality of protection; only "auth" is accepted, default "auth"
   *
-  * com.sun.security.sasl.ntlm.version
+  * j86.j86.com.sun.security.sasl.ntlm.version
   *    String, name a specific version to use; can be:
   *      LM/NTLM: Original NTLM v1
   *      LM: Original NTLM v1, LM only
@@ -67,17 +67,17 @@ import javax.security.auth.callback.UnsupportedCallbackException;
   *    If not specified, use system property "ntlm.version". If
   *    still not specified, use default value "LMv2/NTLMv2".
   *
-  * com.sun.security.sasl.ntlm.random
-  *    java.util.Random, the nonce source to be used in NTLM v2 or NTLM v1 with
-  *    Client Challenge. Default null, an internal java.util.Random object
+  * j86.j86.com.sun.security.sasl.ntlm.random
+  *    j86.java.util.Random, the nonce source to be used in NTLM v2 or NTLM v1 with
+  *    Client Challenge. Default null, an internal j86.java.util.Random object
   *    will be used
   *
   * Negotiated Properties:
   *
-  * javax.security.sasl.qop
+  * j86.javax.security.sasl.qop
   *    Always "auth"
   *
-  * com.sun.security.sasl.html.domain
+  * j86.com.sun.security.sasl.html.domain
   *    The domain for the user, provided by the server
   *
   * @see <a href="http://www.ietf.org/rfc/rfc2222.txt">RFC 2222</a>
@@ -87,13 +87,13 @@ import javax.security.auth.callback.UnsupportedCallbackException;
 final class NTLMClient implements SaslClient {
 
     private static final String NTLM_VERSION =
-            "com.sun.security.sasl.ntlm.version";
+            "j86.j86.com.sun.security.sasl.ntlm.version";
     private static final String NTLM_RANDOM =
-            "com.sun.security.sasl.ntlm.random";
+            "j86.j86.com.sun.security.sasl.ntlm.random";
     private final static String NTLM_DOMAIN =
-            "com.sun.security.sasl.ntlm.domain";
+            "j86.j86.com.sun.security.sasl.ntlm.domain";
     private final static String NTLM_HOSTNAME =
-            "com.sun.security.sasl.ntlm.hostname";
+            "j86.j86.com.sun.security.sasl.ntlm.hostname";
 
     private final Client client;
     private final String mech;

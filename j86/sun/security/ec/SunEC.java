@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.security.ec;
+package j86.sun.security.ec;
 
-import java.util.*;
-import java.security.*;
-import sun.security.action.PutAllAction;
+import j86.java.util.*;
+import j86.java.security.*;
+import j86.sun.security.action.PutAllAction;
 
 /**
  * Provider class for the Elliptic Curve provider.

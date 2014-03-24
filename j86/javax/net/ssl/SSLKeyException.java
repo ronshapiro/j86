@@ -24,7 +24,7 @@
  */
 
 
-package javax.net.ssl;
+package j86.j86.javax.net.ssl;
 
 /**
  * Reports a bad SSL key.  Normally, this indicates misconfiguration

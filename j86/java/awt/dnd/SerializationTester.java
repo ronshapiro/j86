@@ -23,12 +23,12 @@
  * questions.
  */
 
-package java.awt.dnd;
+package j86.j86.java.awt.dnd;
 
-import java.io.OutputStream;
-import java.io.ObjectOutputStream;
-import java.io.IOException;
-import java.io.Serializable;
+import j86.java.io.OutputStream;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.IOException;
+import j86.java.io.Serializable;
 
 /**
  * Tests if an object can truly be serialized by serializing it to a null

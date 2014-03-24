@@ -23,38 +23,38 @@
  * questions.
  */
 
-package com.sun.imageio.plugins.common;
+package j86.com.sun.imageio.plugins.common;
 
-import java.awt.Point;
-import java.awt.Rectangle;
-import java.awt.Transparency;
-import java.awt.color.ColorSpace;
-import java.awt.image.BufferedImage;
-import java.awt.image.ColorModel;
-import java.awt.image.ComponentColorModel;
-import java.awt.image.ComponentSampleModel;
-import java.awt.image.DataBuffer;
-import java.awt.image.DataBufferByte;
-import java.awt.image.DataBufferInt;
-import java.awt.image.DataBufferShort;
-import java.awt.image.DataBufferUShort;
-import java.awt.image.DirectColorModel;
-import java.awt.image.IndexColorModel;
-import java.awt.image.MultiPixelPackedSampleModel;
-import java.awt.image.Raster;
-import java.awt.image.RenderedImage;
-import java.awt.image.SampleModel;
-import java.awt.image.SinglePixelPackedSampleModel;
-import java.awt.image.WritableRaster;
-import java.util.Arrays;
+import j86.java.awt.Point;
+import j86.java.awt.Rectangle;
+import j86.java.awt.Transparency;
+import j86.j86.java.awt.color.ColorSpace;
+import j86.j86.j86.java.awt.image.BufferedImage;
+import j86.j86.j86.java.awt.image.ColorModel;
+import j86.j86.j86.java.awt.image.ComponentColorModel;
+import j86.j86.j86.java.awt.image.ComponentSampleModel;
+import j86.j86.j86.java.awt.image.DataBuffer;
+import j86.j86.j86.java.awt.image.DataBufferByte;
+import j86.j86.j86.java.awt.image.DataBufferInt;
+import j86.j86.j86.java.awt.image.DataBufferShort;
+import j86.j86.j86.java.awt.image.DataBufferUShort;
+import j86.j86.j86.java.awt.image.DirectColorModel;
+import j86.j86.j86.java.awt.image.IndexColorModel;
+import j86.j86.j86.java.awt.image.MultiPixelPackedSampleModel;
+import j86.j86.j86.java.awt.image.Raster;
+import j86.j86.j86.java.awt.image.RenderedImage;
+import j86.j86.j86.java.awt.image.SampleModel;
+import j86.j86.j86.java.awt.image.SinglePixelPackedSampleModel;
+import j86.j86.j86.java.awt.image.WritableRaster;
+import j86.java.util.Arrays;
 
-//import javax.imageio.ImageTypeSpecifier;
+//import j86.javax.imageio.ImageTypeSpecifier;
 
-import javax.imageio.IIOException;
-import javax.imageio.IIOImage;
-import javax.imageio.ImageTypeSpecifier;
-import javax.imageio.ImageWriter;
-import javax.imageio.spi.ImageWriterSpi;
+import j86.javax.imageio.IIOException;
+import j86.javax.imageio.IIOImage;
+import j86.javax.imageio.ImageTypeSpecifier;
+import j86.javax.imageio.ImageWriter;
+import j86.j86.javax.imageio.spi.ImageWriterSpi;
 
 public class ImageUtil {
     /* XXX testing only
@@ -92,7 +92,7 @@ public class ImageUtil {
                                             false);
 
         SampleModel bandedSM =
-            new java.awt.image.BandedSampleModel(DataBuffer.TYPE_BYTE,
+            new j86.j86.j86.java.awt.image.BandedSampleModel(DataBuffer.TYPE_BYTE,
                                                  1, 1, 15);
 
         System.out.println(createColorModel(bilevel.getSampleModel()));

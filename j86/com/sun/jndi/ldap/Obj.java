@@ -23,30 +23,30 @@
  * questions.
  */
 
-package com.sun.jndi.ldap;
+package j86.com.sun.jndi.ldap;
 
-import javax.naming.*;
-import javax.naming.directory.*;
-import javax.naming.spi.DirectoryManager;
-import javax.naming.spi.DirStateFactory;
+import j86.javax.naming.*;
+import j86.j86.javax.naming.directory.*;
+import j86.j86.javax.naming.spi.DirectoryManager;
+import j86.j86.javax.naming.spi.DirStateFactory;
 
-import java.io.IOException;
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.ObjectStreamClass;
-import java.io.InputStream;
+import j86.java.io.IOException;
+import j86.java.io.ByteArrayInputStream;
+import j86.java.io.ByteArrayOutputStream;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectStreamClass;
+import j86.java.io.InputStream;
 
-import java.util.Hashtable;
-import java.util.Vector;
-import java.util.StringTokenizer;
+import j86.java.util.Hashtable;
+import j86.java.util.Vector;
+import j86.java.util.StringTokenizer;
 
-import sun.misc.BASE64Encoder;
-import sun.misc.BASE64Decoder;
+import j86.sun.misc.BASE64Encoder;
+import j86.sun.misc.BASE64Decoder;
 
-import java.lang.reflect.Proxy;
-import java.lang.reflect.Modifier;
+import j86.j86.j86.java.lang.reflect.Proxy;
+import j86.j86.j86.java.lang.reflect.Modifier;
 
 /**
   * Class containing static methods and constants for dealing with
@@ -160,7 +160,7 @@ final class Obj {
                 return (encodeReference(separator, (Reference)obj, attrs, null));
 
     // Serializable Object
-            } else if (obj instanceof java.io.Serializable) {
+            } else if (obj instanceof j86.java.io.Serializable) {
                 objectClass.add(JAVA_OBJECT_CLASSES[BASE_OBJECT]);
                 if (!(objectClass.contains(JAVA_OBJECT_CLASSES[MAR_OBJECT]) ||
                     objectClass.contains(JAVA_OBJECT_CLASSES_LOWER[MAR_OBJECT]))) {

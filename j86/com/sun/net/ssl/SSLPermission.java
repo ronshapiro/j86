@@ -24,17 +24,17 @@
  */
 
 /*
- * NOTE:  this file was copied from javax.net.ssl.SSLPermission
+ * NOTE:  this file was copied from j86.j86.javax.net.ssl.SSLPermission
  */
 
-package com.sun.net.ssl;
+package com.j86.sun.net.ssl;
 
-import java.security.*;
-import java.util.Enumeration;
-import java.util.Hashtable;
-import java.util.StringTokenizer;
-import java.security.Permissions;
-import java.lang.SecurityManager;
+import j86.java.security.*;
+import j86.java.util.Enumeration;
+import j86.java.util.Hashtable;
+import j86.java.util.StringTokenizer;
+import j86.java.security.Permissions;
+import j86.java.lang.SecurityManager;
 
 /**
  * This class is for various network permissions.
@@ -86,18 +86,18 @@ import java.lang.SecurityManager;
  *
  * </table>
  *
- * @see java.security.BasicPermission
- * @see java.security.Permission
- * @see java.security.Permissions
- * @see java.security.PermissionCollection
- * @see java.lang.SecurityManager
+ * @see j86.java.security.BasicPermission
+ * @see j86.java.security.Permission
+ * @see j86.java.security.Permissions
+ * @see j86.java.security.PermissionCollection
+ * @see j86.java.lang.SecurityManager
  *
  *
  * @author Marianne Mueller
  * @author Roland Schemers
  *
  * @deprecated As of JDK 1.4, this implementation-specific class was
- *      replaced by {@link javax.net.ssl.SSLPermission}.
+ *      replaced by {@link j86.j86.javax.net.ssl.SSLPermission}.
  */
 @Deprecated
 public final class SSLPermission extends BasicPermission {

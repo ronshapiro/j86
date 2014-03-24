@@ -23,15 +23,15 @@
  * questions.
  */
 
-package com.sun.imageio.plugins.png;
+package j86.com.sun.imageio.plugins.png;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.ListResourceBundle;
-import javax.imageio.ImageTypeSpecifier;
-import javax.imageio.metadata.IIOMetadataFormat;
-import javax.imageio.metadata.IIOMetadataFormatImpl;
+import j86.java.util.ArrayList;
+import j86.java.util.Arrays;
+import j86.java.util.List;
+import j86.java.util.ListResourceBundle;
+import j86.javax.imageio.ImageTypeSpecifier;
+import j86.j86.javax.imageio.metadata.IIOMetadataFormat;
+import j86.j86.javax.imageio.metadata.IIOMetadataFormatImpl;
 
 public class PNGMetadataFormat extends IIOMetadataFormatImpl {
 

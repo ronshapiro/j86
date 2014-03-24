@@ -32,10 +32,10 @@
  */
 
 
-package com.sun.tools.example.debug.bdi;
+package j86.com.sun.tools.example.debug.bdi;
 
-import com.sun.jdi.VirtualMachine;
-import com.sun.jdi.VMDisconnectedException;
+import j86.com.sun.jdi.VirtualMachine;
+import j86.com.sun.jdi.VMDisconnectedException;
 
 /**
  * Our repository of what we know about the state of one

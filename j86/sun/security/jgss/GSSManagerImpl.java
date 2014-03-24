@@ -23,13 +23,13 @@
  * questions.
  */
 
-package sun.security.jgss;
+package j86.sun.security.jgss;
 
-import org.ietf.jgss.*;
-import sun.security.jgss.spi.*;
-import java.security.Provider;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
+import j86.org.ietf.jgss.*;
+import j86.j86.sun.security.jgss.spi.*;
+import j86.java.security.Provider;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
 
 /**
  * This class provides the default implementation of the GSSManager
@@ -39,7 +39,7 @@ public class GSSManagerImpl extends GSSManager {
 
     // Undocumented property
     private static final String USE_NATIVE_PROP =
-        "sun.security.jgss.native";
+        "j86.sun.security.jgss.native";
     private static final Boolean USE_NATIVE;
 
     static {

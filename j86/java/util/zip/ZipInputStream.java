@@ -23,16 +23,16 @@
  * questions.
  */
 
-package java.util.zip;
+package j86.j86.java.util.zip;
 
-import java.io.InputStream;
-import java.io.IOException;
-import java.io.EOFException;
-import java.io.PushbackInputStream;
-import java.nio.charset.Charset;
-import java.nio.charset.StandardCharsets;
-import static java.util.zip.ZipConstants64.*;
-import static java.util.zip.ZipUtils.*;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
+import j86.java.io.EOFException;
+import j86.java.io.PushbackInputStream;
+import j86.j86.java.nio.charset.Charset;
+import j86.j86.java.nio.charset.StandardCharsets;
+import static j86.j86.java.util.zip.ZipConstants64.*;
+import static j86.j86.java.util.zip.ZipUtils.*;
 
 /**
  * This class implements an input stream filter for reading files in the
@@ -71,7 +71,7 @@ class ZipInputStream extends InflaterInputStream implements ZipConstants {
     /**
      * Creates a new ZIP input stream.
      *
-     * <p>The UTF-8 {@link java.nio.charset.Charset charset} is used to
+     * <p>The UTF-8 {@link j86.j86.java.nio.charset.Charset charset} is used to
      * decode the entry names.
      *
      * @param in the actual input stream
@@ -86,7 +86,7 @@ class ZipInputStream extends InflaterInputStream implements ZipConstants {
      * @param in the actual input stream
      *
      * @param charset
-     *        The {@linkplain java.nio.charset.Charset charset} to be
+     *        The {@linkplain j86.j86.java.nio.charset.Charset charset} to be
      *        used to decode the ZIP entry name (ignored if the
      *        <a href="package-summary.html#lang_encoding"> language
      *        encoding bit</a> of the ZIP entry's general purpose bit

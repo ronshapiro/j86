@@ -23,13 +23,13 @@
  * questions.
  */
 
-package javax.management;
+package j86.javax.management;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
+import j86.java.util.ArrayList;
+import j86.java.util.Collection;
+import j86.java.util.LinkedHashMap;
+import j86.java.util.List;
+import j86.java.util.Map;
 
 /**
  * <p>Represents a list of values for attributes of an MBean.  See the
@@ -100,7 +100,7 @@ public class AttributeList extends ArrayList<Object> {
      * @param list the <code>AttributeList</code> that defines the initial
      * contents of the new <code>AttributeList</code>.
      *
-     * @see ArrayList#ArrayList(java.util.Collection)
+     * @see ArrayList#ArrayList(j86.java.util.Collection)
      */
     public AttributeList(AttributeList list) {
         super(list);
@@ -118,7 +118,7 @@ public class AttributeList extends ArrayList<Object> {
      * is {@code null} or if the {@code list} parameter contains any
      * non-Attribute objects.
      *
-     * @see ArrayList#ArrayList(java.util.Collection)
+     * @see ArrayList#ArrayList(j86.java.util.Collection)
      *
      * @since 1.6
      */
@@ -180,7 +180,7 @@ public class AttributeList extends ArrayList<Object> {
      * Elements with an index greater than or equal to the current position are
      * shifted up. If the index is out of range {@literal (index < 0 || index >
      * size())} a RuntimeOperationsException should be raised, wrapping the
-     * java.lang.IndexOutOfBoundsException thrown.
+     * j86.java.lang.IndexOutOfBoundsException thrown.
      *
      * @param object  The <CODE>Attribute</CODE> object to be inserted.
      * @param index The position in the list where the new {@code Attribute}
@@ -200,7 +200,7 @@ public class AttributeList extends ArrayList<Object> {
      * Sets the element at the position specified to be the attribute specified.
      * The previous element at that position is discarded. If the index is
      * out of range {@literal (index < 0 || index > size())} a RuntimeOperationsException
-     * should be raised, wrapping the java.lang.IndexOutOfBoundsException thrown.
+     * should be raised, wrapping the j86.java.lang.IndexOutOfBoundsException thrown.
      *
      * @param object  The value to which the attribute element should be set.
      * @param index  The position specified.
@@ -224,7 +224,7 @@ public class AttributeList extends ArrayList<Object> {
      *
      * @return true if this list changed as a result of the call.
      *
-     * @see ArrayList#addAll(java.util.Collection)
+     * @see ArrayList#addAll(j86.java.util.Collection)
      */
     public boolean addAll(AttributeList list)  {
         return (super.addAll(list));
@@ -236,7 +236,7 @@ public class AttributeList extends ArrayList<Object> {
      * they are returned by the Iterator of the {@code AttributeList} specified.
      * If the index is out of range {@literal (index < 0 || index > size())} a
      * RuntimeOperationsException should be raised, wrapping the
-     * java.lang.IndexOutOfBoundsException thrown.
+     * j86.java.lang.IndexOutOfBoundsException thrown.
      *
      * @param list  Elements to be inserted into the list.
      * @param index  Position at which to insert the first element from the
@@ -244,7 +244,7 @@ public class AttributeList extends ArrayList<Object> {
      *
      * @return true if this list changed as a result of the call.
      *
-     * @see ArrayList#addAll(int, java.util.Collection)
+     * @see ArrayList#addAll(int, j86.java.util.Collection)
      */
     public boolean addAll(int index, AttributeList list)  {
         try {

@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.swing.plaf.synth;
+package j86.j86.j86.sun.swing.plaf.synth;
 
-import java.awt.*;
-import java.awt.image.BufferedImage;
-import sun.swing.CachedPainter;
+import j86.java.awt.*;
+import j86.j86.j86.java.awt.image.BufferedImage;
+import j86.sun.swing.CachedPainter;
 
 /**
  * Paint9Painter is used for painting images for both Synth and GTK's

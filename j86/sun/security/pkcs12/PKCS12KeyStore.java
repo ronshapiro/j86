@@ -23,52 +23,52 @@
  * questions.
  */
 
-package sun.security.pkcs12;
+package j86.j86.sun.security.pkcs12;
 
-import java.io.*;
-import java.security.AccessController;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-import java.security.Key;
-import java.security.KeyFactory;
-import java.security.KeyStore;
-import java.security.KeyStoreSpi;
-import java.security.KeyStoreException;
-import java.security.PKCS12Attribute;
-import java.security.PrivateKey;
-import java.security.PrivilegedAction;
-import java.security.UnrecoverableEntryException;
-import java.security.UnrecoverableKeyException;
-import java.security.SecureRandom;
-import java.security.Security;
-import java.security.cert.Certificate;
-import java.security.cert.CertificateFactory;
-import java.security.cert.X509Certificate;
-import java.security.cert.CertificateException;
-import java.security.spec.AlgorithmParameterSpec;
-import java.security.spec.KeySpec;
-import java.security.spec.PKCS8EncodedKeySpec;
-import java.util.*;
+import j86.java.io.*;
+import j86.java.security.AccessController;
+import j86.java.security.MessageDigest;
+import j86.java.security.NoSuchAlgorithmException;
+import j86.java.security.Key;
+import j86.java.security.KeyFactory;
+import j86.java.security.KeyStore;
+import j86.java.security.KeyStoreSpi;
+import j86.java.security.KeyStoreException;
+import j86.java.security.PKCS12Attribute;
+import j86.java.security.PrivateKey;
+import j86.java.security.PrivilegedAction;
+import j86.java.security.UnrecoverableEntryException;
+import j86.java.security.UnrecoverableKeyException;
+import j86.java.security.SecureRandom;
+import j86.java.security.Security;
+import j86.j86.java.security.cert.Certificate;
+import j86.j86.java.security.cert.CertificateFactory;
+import j86.j86.java.security.cert.X509Certificate;
+import j86.j86.java.security.cert.CertificateException;
+import j86.j86.java.security.spec.AlgorithmParameterSpec;
+import j86.j86.java.security.spec.KeySpec;
+import j86.j86.java.security.spec.PKCS8EncodedKeySpec;
+import j86.java.util.*;
 
-import java.security.AlgorithmParameters;
-import javax.crypto.spec.PBEParameterSpec;
-import javax.crypto.spec.PBEKeySpec;
-import javax.crypto.spec.SecretKeySpec;
-import javax.crypto.SecretKeyFactory;
-import javax.crypto.SecretKey;
-import javax.crypto.Cipher;
-import javax.crypto.Mac;
-import javax.security.auth.DestroyFailedException;
-import javax.security.auth.x500.X500Principal;
+import j86.java.security.AlgorithmParameters;
+import j86.j86.javax.crypto.spec.PBEParameterSpec;
+import j86.j86.javax.crypto.spec.PBEKeySpec;
+import j86.j86.javax.crypto.spec.SecretKeySpec;
+import j86.javax.crypto.SecretKeyFactory;
+import j86.javax.crypto.SecretKey;
+import j86.javax.crypto.Cipher;
+import j86.javax.crypto.Mac;
+import j86.javax.security.auth.DestroyFailedException;
+import j86.j86.javax.security.auth.x500.X500Principal;
 
-import sun.security.util.Debug;
-import sun.security.util.DerInputStream;
-import sun.security.util.DerOutputStream;
-import sun.security.util.DerValue;
-import sun.security.util.ObjectIdentifier;
-import sun.security.pkcs.ContentInfo;
-import sun.security.x509.AlgorithmId;
-import sun.security.pkcs.EncryptedPrivateKeyInfo;
+import j86.sun.security.util.Debug;
+import j86.sun.security.util.DerInputStream;
+import j86.sun.security.util.DerOutputStream;
+import j86.sun.security.util.DerValue;
+import j86.sun.security.util.ObjectIdentifier;
+import j86.sun.security.pkcs.ContentInfo;
+import j86.sun.security.x509.AlgorithmId;
+import j86.sun.security.pkcs.EncryptedPrivateKeyInfo;
 
 
 /**
@@ -122,7 +122,7 @@ import sun.security.pkcs.EncryptedPrivateKeyInfo;
  * @author Jan Luehe
  *
  * @see KeyProtector
- * @see java.security.KeyStoreSpi
+ * @see j86.java.security.KeyStoreSpi
  * @see KeyTool
  *
  *
@@ -520,7 +520,7 @@ public final class PKCS12KeyStore extends KeyStoreSpi {
      * Assigns the given key to the given alias, protecting it with the given
      * password.
      *
-     * <p>If the given key is of type <code>java.security.PrivateKey</code>,
+     * <p>If the given key is of type <code>j86.java.security.PrivateKey</code>,
      * it must be accompanied by a certificate chain certifying the
      * corresponding public key.
      *
@@ -533,7 +533,7 @@ public final class PKCS12KeyStore extends KeyStoreSpi {
      * @param password the password to protect the key
      * @param chain the certificate chain for the corresponding public
      * key (only required if the given key is of type
-     * <code>java.security.PrivateKey</code>).
+     * <code>j86.java.security.PrivateKey</code>).
      *
      * @exception KeyStoreException if the given key cannot be protected, or
      * this operation fails for some other reason
@@ -657,7 +657,7 @@ public final class PKCS12KeyStore extends KeyStoreSpi {
      * alias.
      *
      * <p>If the protected key is of type
-     * <code>java.security.PrivateKey</code>, it must be accompanied by a
+     * <code>j86.java.security.PrivateKey</code>, it must be accompanied by a
      * certificate chain certifying the corresponding public key. If the
      * underlying keystore implementation is of type <code>jks</code>,
      * <code>key</code> must be encoded as an
@@ -671,7 +671,7 @@ public final class PKCS12KeyStore extends KeyStoreSpi {
      * @param key the key (in protected format) to be associated with the alias
      * @param chain the certificate chain for the corresponding public
      * key (only useful if the protected key is of type
-     * <code>java.security.PrivateKey</code>).
+     * <code>j86.java.security.PrivateKey</code>).
      *
      * @exception KeyStoreException if this operation fails.
      */

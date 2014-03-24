@@ -29,15 +29,15 @@
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
 
-package sun.security.krb5.internal.ktab;
+package j86.j86.j86.sun.security.krb5.internal.ktab;
 
-import sun.security.krb5.internal.*;
-import sun.security.krb5.PrincipalName;
-import sun.security.krb5.Realm;
-import sun.security.krb5.RealmException;
-import sun.security.krb5.internal.util.KrbDataInputStream;
-import java.io.IOException;
-import java.io.InputStream;
+import j86.j86.sun.security.krb5.internal.*;
+import j86.sun.security.krb5.PrincipalName;
+import j86.sun.security.krb5.Realm;
+import j86.sun.security.krb5.RealmException;
+import j86.j86.j86.sun.security.krb5.internal.util.KrbDataInputStream;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
 
 /**
  * This class implements a buffered input stream. It is used for parsing key table

@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.security.util;
+package j86.sun.security.util;
 
-import java.io.*;
-import java.nio.*;
-import java.nio.charset.*;
-import java.util.Arrays;
+import j86.java.io.*;
+import j86.java.nio.*;
+import j86.j86.java.nio.charset.*;
+import j86.java.util.Arrays;
 
 /**
  * A utility class for reading passwords
@@ -51,7 +51,7 @@ public class Password {
         byte[] consoleBytes = null;
 
         try {
-            // Use the new java.io.Console class
+            // Use the new j86.java.io.Console class
             Console con = null;
             if (!isEchoOn && in == System.in && ((con = System.console()) != null)) {
                 consoleEntered = con.readPassword();
@@ -139,7 +139,7 @@ public class Password {
     private static byte[] convertToBytes(char[] pass) {
         if (enc == null) {
             synchronized (Password.class) {
-                enc = sun.misc.SharedSecrets.getJavaIOAccess()
+                enc = j86.sun.misc.SharedSecrets.getJavaIOAccess()
                         .charset()
                         .newEncoder()
                         .onMalformedInput(CodingErrorAction.REPLACE)

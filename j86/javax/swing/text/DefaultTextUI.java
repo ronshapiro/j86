@@ -22,15 +22,15 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text;
+package j86.j86.javax.swing.text;
 
-import javax.swing.plaf.basic.BasicTextUI;
+import j86.j86.j86.javax.swing.plaf.basic.BasicTextUI;
 
 /**
  * <p>
  * This class has been deprecated and should no longer be used.
  * The basis of the various TextUI implementations can be found
- * in the javax.swing.plaf.basic package and the class
+ * in the j86.j86.j86.javax.swing.plaf.basic package and the class
  * BasicTextUI replaces this class.
  *
  * @deprecated

@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.util.regex;
+package j86.j86.java.util.regex;
 
-import java.util.HashMap;
-import java.util.Locale;
+import j86.java.util.HashMap;
+import j86.java.util.Locale;
 
 enum UnicodeProp {
 

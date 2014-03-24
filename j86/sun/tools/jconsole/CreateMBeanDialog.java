@@ -23,24 +23,24 @@
  * questions.
  */
 
-package sun.tools.jconsole;
+package j86.sun.tools.jconsole;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.util.List;
-import java.util.TreeSet;
-import java.util.Comparator;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.java.util.List;
+import j86.java.util.TreeSet;
+import j86.java.util.Comparator;
 
-import javax.swing.*;
-import javax.swing.border.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.border.*;
 
-import javax.management.MBeanServerConnection;
-import javax.management.ObjectName;
-import javax.management.InstanceAlreadyExistsException;
-import javax.management.InstanceNotFoundException;
+import j86.javax.management.MBeanServerConnection;
+import j86.javax.management.ObjectName;
+import j86.javax.management.InstanceAlreadyExistsException;
+import j86.javax.management.InstanceNotFoundException;
 
 
-import static sun.tools.jconsole.Utilities.*;
+import static j86.sun.tools.jconsole.Utilities.*;
 
 @SuppressWarnings("serial")
 public class CreateMBeanDialog extends InternalDialog
@@ -50,9 +50,9 @@ public class CreateMBeanDialog extends InternalDialog
     JButton createMBeanButton, unregisterMBeanButton, cancelButton;
 
     private static final String HOTSPOT_MBEAN =
-        "sun.management.HotspotInternal";
+        "j86.sun.management.HotspotInternal";
     private static final String HOTSPOT_MBEAN_OBJECTNAME =
-        "sun.management:type=HotspotInternal";
+        "j86.sun.management:type=HotspotInternal";
     public CreateMBeanDialog(JConsole jConsole) {
         super(jConsole, "JConsole: Hotspot MBeans", true);
 

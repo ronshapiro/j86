@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.swing;
+package j86.sun.swing;
 
-import java.awt.*;
-import java.awt.image.*;
-import java.util.*;
+import j86.java.awt.*;
+import j86.j86.j86.java.awt.image.*;
+import j86.java.util.*;
 
 /**
  * A base class used for icons or images that are expensive to paint.

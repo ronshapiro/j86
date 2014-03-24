@@ -23,9 +23,9 @@
  * questions.
  */
 
-package com.sun.tools.extcheck;
+package j86.com.sun.tools.extcheck;
 
-import java.io.*;
+import j86.java.io.*;
 
 /**
  * Main program of extcheck

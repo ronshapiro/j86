@@ -23,30 +23,30 @@
  * questions.
  */
 
-package java.util.zip;
+package j86.j86.java.util.zip;
 
-import java.io.Closeable;
-import java.io.InputStream;
-import java.io.IOException;
-import java.io.EOFException;
-import java.io.File;
-import java.nio.charset.Charset;
-import java.nio.charset.StandardCharsets;
-import java.util.ArrayDeque;
-import java.util.Deque;
-import java.util.Enumeration;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.NoSuchElementException;
-import java.util.Spliterator;
-import java.util.Spliterators;
-import java.util.WeakHashMap;
-import java.util.stream.Stream;
-import java.util.stream.StreamSupport;
+import j86.java.io.Closeable;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
+import j86.java.io.EOFException;
+import j86.java.io.File;
+import j86.j86.java.nio.charset.Charset;
+import j86.j86.java.nio.charset.StandardCharsets;
+import j86.java.util.ArrayDeque;
+import j86.java.util.Deque;
+import j86.java.util.Enumeration;
+import j86.java.util.HashMap;
+import j86.java.util.Iterator;
+import j86.java.util.Map;
+import j86.java.util.NoSuchElementException;
+import j86.java.util.Spliterator;
+import j86.java.util.Spliterators;
+import j86.java.util.WeakHashMap;
+import j86.j86.java.util.stream.Stream;
+import j86.j86.java.util.stream.StreamSupport;
 
-import static java.util.zip.ZipConstants64.*;
-import static java.util.zip.ZipUtils.*;
+import static j86.j86.java.util.zip.ZipConstants64.*;
+import static j86.j86.java.util.zip.ZipUtils.*;
 
 /**
  * This class is used to read entries from a zip file.
@@ -94,7 +94,7 @@ class ZipFile implements ZipConstants, Closeable {
     static {
         // A system prpperty to disable mmap use to avoid vm crash when
         // in-use zip file is accidently overwritten by others.
-        String prop = sun.misc.VM.getSavedProperty("sun.zip.disableMemoryMapping");
+        String prop = j86.sun.misc.VM.getSavedProperty("sun.zip.disableMemoryMapping");
         usemmap = (prop == null ||
                    !(prop.length() == 0 || prop.equalsIgnoreCase("true")));
     }
@@ -106,7 +106,7 @@ class ZipFile implements ZipConstants, Closeable {
      * method is called with the <code>name</code> argument as its argument
      * to ensure the read is allowed.
      *
-     * <p>The UTF-8 {@link java.nio.charset.Charset charset} is used to
+     * <p>The UTF-8 {@link j86.j86.java.nio.charset.Charset charset} is used to
      * decode the entry names and comments.
      *
      * @param name the name of the zip file
@@ -115,7 +115,7 @@ class ZipFile implements ZipConstants, Closeable {
      * @throws SecurityException if a security manager exists and its
      *         <code>checkRead</code> method doesn't allow read access to the file.
      *
-     * @see SecurityManager#checkRead(java.lang.String)
+     * @see SecurityManager#checkRead(j86.java.lang.String)
      */
     public ZipFile(String name) throws IOException {
         this(new File(name), OPEN_READ);
@@ -130,7 +130,7 @@ class ZipFile implements ZipConstants, Closeable {
      * method is called with the <code>name</code> argument as its argument to
      * ensure the read is allowed.
      *
-     * <p>The UTF-8 {@link java.nio.charset.Charset charset} is used to
+     * <p>The UTF-8 {@link j86.j86.java.nio.charset.Charset charset} is used to
      * decode the entry names and comments
      *
      * @param file the ZIP file to be opened for reading
@@ -143,7 +143,7 @@ class ZipFile implements ZipConstants, Closeable {
      *         or its <code>checkDelete</code> method doesn't allow deleting
      *         the file when the <tt>OPEN_DELETE</tt> flag is set.
      * @throws IllegalArgumentException if the <tt>mode</tt> argument is invalid
-     * @see SecurityManager#checkRead(java.lang.String)
+     * @see SecurityManager#checkRead(j86.java.lang.String)
      * @since 1.3
      */
     public ZipFile(File file, int mode) throws IOException {
@@ -153,7 +153,7 @@ class ZipFile implements ZipConstants, Closeable {
     /**
      * Opens a ZIP file for reading given the specified File object.
      *
-     * <p>The UTF-8 {@link java.nio.charset.Charset charset} is used to
+     * <p>The UTF-8 {@link j86.j86.java.nio.charset.Charset charset} is used to
      * decode the entry names and comments.
      *
      * @param file the ZIP file to be opened for reading
@@ -178,7 +178,7 @@ class ZipFile implements ZipConstants, Closeable {
      * @param file the ZIP file to be opened for reading
      * @param mode the mode in which the file is to be opened
      * @param charset
-     *        the {@linkplain java.nio.charset.Charset charset} to
+     *        the {@linkplain j86.j86.java.nio.charset.Charset charset} to
      *        be used to decode the ZIP entry name and comment that are not
      *        encoded by using UTF-8 encoding (indicated by entry's general
      *        purpose flag).
@@ -194,7 +194,7 @@ class ZipFile implements ZipConstants, Closeable {
      *
      * @throws IllegalArgumentException if the <tt>mode</tt> argument is invalid
      *
-     * @see SecurityManager#checkRead(java.lang.String)
+     * @see SecurityManager#checkRead(j86.java.lang.String)
      *
      * @since 1.7
      */
@@ -218,8 +218,8 @@ class ZipFile implements ZipConstants, Closeable {
         this.zc = ZipCoder.get(charset);
         long t0 = System.nanoTime();
         jzfile = open(name, mode, file.lastModified(), usemmap);
-        sun.misc.PerfCounter.getZipFileOpenTime().addElapsedTimeFrom(t0);
-        sun.misc.PerfCounter.getZipFileCount().increment();
+        j86.sun.misc.PerfCounter.getZipFileOpenTime().addElapsedTimeFrom(t0);
+        j86.sun.misc.PerfCounter.getZipFileCount().increment();
         this.name = name;
         this.total = getTotal(jzfile);
         this.locsig = startsWithLOC(jzfile);
@@ -234,7 +234,7 @@ class ZipFile implements ZipConstants, Closeable {
      *
      * @param name the name of the zip file
      * @param charset
-     *        the {@linkplain java.nio.charset.Charset charset} to
+     *        the {@linkplain j86.j86.java.nio.charset.Charset charset} to
      *        be used to decode the ZIP entry name and comment that are not
      *        encoded by using UTF-8 encoding (indicated by entry's general
      *        purpose flag).
@@ -245,7 +245,7 @@ class ZipFile implements ZipConstants, Closeable {
      *         if a security manager exists and its <code>checkRead</code>
      *         method doesn't allow read access to the file
      *
-     * @see SecurityManager#checkRead(java.lang.String)
+     * @see SecurityManager#checkRead(j86.java.lang.String)
      *
      * @since 1.7
      */
@@ -258,7 +258,7 @@ class ZipFile implements ZipConstants, Closeable {
      * Opens a ZIP file for reading given the specified File object.
      * @param file the ZIP file to be opened for reading
      * @param charset
-     *        The {@linkplain java.nio.charset.Charset charset} to be
+     *        The {@linkplain j86.j86.java.nio.charset.Charset charset} to be
      *        used to decode the ZIP entry name and comment (ignored if
      *        the <a href="package-summary.html#lang_encoding"> language
      *        encoding bit</a> of the ZIP entry's general purpose bit
@@ -657,7 +657,7 @@ class ZipFile implements ZipConstants, Closeable {
      * length of time.
      *
      * @throws IOException if an I/O error has occurred
-     * @see    java.util.zip.ZipFile#close()
+     * @see    j86.j86.java.util.zip.ZipFile#close()
      */
     protected void finalize() throws IOException {
         close();
@@ -776,8 +776,8 @@ class ZipFile implements ZipConstants, Closeable {
     }
 
     static {
-        sun.misc.SharedSecrets.setJavaUtilZipFileAccess(
-            new sun.misc.JavaUtilZipFileAccess() {
+        j86.sun.misc.SharedSecrets.setJavaUtilZipFileAccess(
+            new j86.sun.misc.JavaUtilZipFileAccess() {
                 public boolean startsWithLocHeader(ZipFile zip) {
                     return zip.startsWithLocHeader();
                 }

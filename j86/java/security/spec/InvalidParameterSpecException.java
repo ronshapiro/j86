@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.security.spec;
+package j86.j86.java.security.spec;
 
-import java.security.GeneralSecurityException;
+import j86.java.security.GeneralSecurityException;
 
 /**
  * This is the exception for invalid parameter specifications.
@@ -33,7 +33,7 @@ import java.security.GeneralSecurityException;
  * @author Jan Luehe
  *
  *
- * @see java.security.AlgorithmParameters
+ * @see j86.java.security.AlgorithmParameters
  * @see AlgorithmParameterSpec
  * @see DSAParameterSpec
  *

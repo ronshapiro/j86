@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.beans.beancontext;
+package j86.j86.java.beans.beancontext;
 
-import java.awt.Container;
+import j86.java.awt.Container;
 
 /**
  * <p>
@@ -36,16 +36,16 @@ import java.awt.Container;
  * @author Laurence P. G. Cable
  * @since 1.2
  *
- * @see java.beans.beancontext.BeanContext
- * @see java.beans.beancontext.BeanContextSupport
+ * @see j86.j86.java.beans.beancontext.BeanContext
+ * @see j86.j86.java.beans.beancontext.BeanContextSupport
  */
 
 public interface BeanContextContainerProxy {
 
     /**
-     * Gets the <code>java.awt.Container</code> associated
+     * Gets the <code>j86.java.awt.Container</code> associated
      * with this <code>BeanContext</code>.
-     * @return the <code>java.awt.Container</code> associated
+     * @return the <code>j86.java.awt.Container</code> associated
      * with this <code>BeanContext</code>.
      */
     Container getContainer();

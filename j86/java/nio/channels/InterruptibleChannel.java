@@ -26,9 +26,9 @@
 /*
  */
 
-package java.nio.channels;
+package j86.j86.java.nio.channels;
 
-import java.io.IOException;
+import j86.java.io.IOException;
 
 
 /**

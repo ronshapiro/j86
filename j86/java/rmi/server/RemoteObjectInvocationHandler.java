@@ -22,19 +22,19 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.rmi.server;
+package j86.j86.java.rmi.server;
 
-import java.io.InvalidObjectException;
-import java.lang.reflect.InvocationHandler;
-import java.lang.reflect.Method;
-import java.lang.reflect.Proxy;
-import java.rmi.Remote;
-import java.rmi.UnexpectedException;
-import java.rmi.activation.Activatable;
-import java.util.Map;
-import java.util.WeakHashMap;
-import sun.rmi.server.Util;
-import sun.rmi.server.WeakClassHashMap;
+import j86.java.io.InvalidObjectException;
+import j86.j86.j86.java.lang.reflect.InvocationHandler;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.j86.j86.java.lang.reflect.Proxy;
+import j86.java.rmi.Remote;
+import j86.java.rmi.UnexpectedException;
+import j86.j86.java.rmi.activation.Activatable;
+import j86.java.util.Map;
+import j86.java.util.WeakHashMap;
+import j86.sun.rmi.server.Util;
+import j86.sun.rmi.server.WeakClassHashMap;
 
 /**
  * An implementation of the <code>InvocationHandler</code> interface for
@@ -150,7 +150,7 @@ public class RemoteObjectInvocationHandler
     }
 
     /**
-     * Handles java.lang.Object methods.
+     * Handles j86.java.lang.Object methods.
      **/
     private Object invokeObjectMethod(Object proxy,
                                       Method method,
@@ -225,7 +225,7 @@ public class RemoteObjectInvocationHandler
             return "Proxy[" + this + "]";
         }
         String iface = interfaces[0].getName();
-        if (iface.equals("java.rmi.Remote") && interfaces.length > 1) {
+        if (iface.equals("j86.java.rmi.Remote") && interfaces.length > 1) {
             iface = interfaces[1].getName();
         }
         int dot = iface.lastIndexOf('.');

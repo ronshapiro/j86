@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.util.prefs;
+package j86.j86.java.util.prefs;
 
 /**
  * A listener for receiving preference node change events.
@@ -35,7 +35,7 @@ package java.util.prefs;
  * @since   1.4
  */
 
-public interface NodeChangeListener extends java.util.EventListener {
+public interface NodeChangeListener extends j86.java.util.EventListener {
     /**
      * This method gets called when a child node is added.
      *

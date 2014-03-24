@@ -23,13 +23,13 @@
  * questions.
  */
 
-package java.lang.invoke;
+package j86.j86.java.lang.invoke;
 
-import java.lang.invoke.MethodHandles.Lookup;
-import java.lang.reflect.Field;
-import static java.lang.invoke.MethodHandleNatives.Constants.*;
-import static java.lang.invoke.MethodHandleStatics.*;
-import static java.lang.invoke.MethodHandles.Lookup.IMPL_LOOKUP;
+import j86.j86.java.lang.invoke.MethodHandles.Lookup;
+import j86.j86.j86.java.lang.reflect.Field;
+import static j86.j86.java.lang.invoke.MethodHandleNatives.Constants.*;
+import static j86.j86.java.lang.invoke.MethodHandleStatics.*;
+import static j86.j86.java.lang.invoke.MethodHandles.Lookup.IMPL_LOOKUP;
 
 /**
  * The JVM interface for the method handles package is all here.
@@ -49,7 +49,7 @@ class MethodHandleNatives {
     static native int getMembers(Class<?> defc, String matchName, String matchSig,
             int matchFlags, Class<?> caller, int skip, MemberName[] results);
 
-    /// Field layout queries parallel to sun.misc.Unsafe:
+    /// Field layout queries parallel to j86.sun.misc.Unsafe:
     static native long objectFieldOffset(MemberName self);  // e.g., returns vmindex
     static native long staticFieldOffset(MemberName self);  // e.g., returns vmindex
     static native Object staticFieldBase(MemberName self);  // e.g., returns clazz
@@ -488,9 +488,9 @@ class MethodHandleNatives {
         Class<?> defc = mem.getDeclaringClass();
         switch (mem.getName()) {
         case "checkMemberAccess":
-            return canBeCalledVirtual(mem, java.lang.SecurityManager.class);
+            return canBeCalledVirtual(mem, j86.java.lang.SecurityManager.class);
         case "getContextClassLoader":
-            return canBeCalledVirtual(mem, java.lang.Thread.class);
+            return canBeCalledVirtual(mem, j86.java.lang.Thread.class);
         }
         return false;
     }

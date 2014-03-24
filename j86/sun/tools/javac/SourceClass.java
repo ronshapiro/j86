@@ -23,22 +23,22 @@
  * questions.
  */
 
-package sun.tools.javac;
+package j86.j86.sun.tools.javac;
 
-import sun.tools.java.*;
-import sun.tools.tree.*;
-import sun.tools.tree.CompoundStatement;
-import sun.tools.asm.Assembler;
-import sun.tools.asm.ConstantPool;
-import java.util.Vector;
-import java.util.Enumeration;
-import java.util.Hashtable;
-import java.util.Iterator;
-import java.io.IOException;
-import java.io.OutputStream;
-import java.io.DataOutputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.File;
+import j86.sun.tools.java.*;
+import j86.sun.tools.tree.*;
+import j86.sun.tools.tree.CompoundStatement;
+import j86.sun.tools.asm.Assembler;
+import j86.sun.tools.asm.ConstantPool;
+import j86.java.util.Vector;
+import j86.java.util.Enumeration;
+import j86.java.util.Hashtable;
+import j86.java.util.Iterator;
+import j86.java.io.IOException;
+import j86.java.io.OutputStream;
+import j86.java.io.DataOutputStream;
+import j86.java.io.ByteArrayOutputStream;
+import j86.java.io.File;
 
 /**
  * This class represents an Java class as it is read from
@@ -606,15 +606,15 @@ class SourceClass extends ClassDefinition {
             // necessary for inner classes.  (bug 4101529)
             //
             // This change has been backed out because, on WIN32, it
-            // failed to distinguish between java.awt.event and
-            // java.awt.Event when looking for a directory.  We will
+            // failed to distinguish between j86.j86.java.awt.event and
+            // j86.java.awt.Event when looking for a directory.  We will
             // add this back in later.
             //
             // try {
             //  if (env.getPackage(nm).exists()) {
             //      env.error(where, "class.package.conflict", nm);
             //  }
-            // } catch (java.io.IOException ee) {
+            // } catch (j86.java.io.IOException ee) {
             //  env.error(where, "io.exception.package", nm);
             // }
 
@@ -793,7 +793,7 @@ class SourceClass extends ClassDefinition {
                 // 'resolveSupers'.  This should normally not happen,
                 // as 'resolveSupers' sets 'superClass' to a non-null
                 // value for all named classes, except for one special
-                // case: 'java.lang.Object', which has no superclass.
+                // case: 'j86.java.lang.Object', which has no superclass.
                 if (isAnonymous()) {
                     // checker should have filled it in first
                     throw new CompilerError("anonymous super");
@@ -1160,7 +1160,7 @@ class SourceClass extends ClassDefinition {
      *
      * For a definition of Miranda methods, see the comment above the
      * method addMirandaMethods() in the file
-     * sun/tools/java/ClassDeclaration.java
+     * j86.sun.tools.java/ClassDeclaration.java
      */
     protected void addMirandaMethods(Environment env,
                                      Iterator mirandas) {
@@ -1295,7 +1295,7 @@ class SourceClass extends ClassDefinition {
         // Find the super class
         if (superClassId != null && superClass == null) {
             superClass = resolveSuper(env, superClassId);
-            // Special-case java.lang.Object here (not in the parser).
+            // Special-case j86.java.lang.Object here (not in the parser).
             // In all other cases, if we have a valid 'superClassId',
             // we return with a valid and non-null 'superClass' value.
             if (superClass == getClassDeclaration()
@@ -1422,7 +1422,7 @@ class SourceClass extends ClassDefinition {
 
         // This check has been removed as part of the fix for 4055017.
         // In the anonymous class created to hold the 'class$' method
-        // of an interface, 'superClassId' refers to 'java.lang.Object'.
+        // of an interface, 'superClassId' refers to 'j86.java.lang.Object'.
         /*---------------------*
         if (!(superClass == null && superClassId.getName() == idNull)) {
             throw new CompilerError("superclass "+superClass);
@@ -1986,9 +1986,9 @@ class SourceClass extends ClassDefinition {
         Statement body = new ReturnStatement(w, e);
         // map the exceptions
         Identifier idClassNotFound =
-            Identifier.lookup("java.lang.ClassNotFoundException");
+            Identifier.lookup("j86.java.lang.ClassNotFoundException");
         Identifier idNoClassDefFound =
-            Identifier.lookup("java.lang.NoClassDefFoundError");
+            Identifier.lookup("j86.java.lang.NoClassDefFoundError");
         Type ctyp = Type.tClass(idClassNotFound);
         Type exptyp = Type.tClass(idNoClassDefFound);
         Identifier idGetMessage = Identifier.lookup("getMessage");
@@ -2238,7 +2238,7 @@ class SourceClass extends ClassDefinition {
         CompilerMember[] ordered_methods =
             new CompilerMember[methods.size()];
         methods.copyInto(ordered_methods);
-        java.util.Arrays.sort(ordered_methods);
+        j86.java.util.Arrays.sort(ordered_methods);
         for (int i=0; i<methods.size(); i++)
             methods.setElementAt(ordered_methods[i], i);
 
@@ -2637,7 +2637,7 @@ class SourceClass extends ClassDefinition {
             String src = ((ClassFile)getSource()).getAbsoluteName();
 
             // Class name, fully qualified
-            //   e.g. "java.lang.Object" or "FooBar" or "sun.tools.javac.Main"
+            //   e.g. "j86.java.lang.Object" or "FooBar" or "j86.j86.sun.tools.javac.Main"
             // Inner class names must be mangled, as ordinary '.' qualification
             // is used internally where the spec requires '$' separators.
             //   String className = getName().toString();

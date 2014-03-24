@@ -25,11 +25,11 @@
 /*
  * $Id: PGPData.java,v 1.4 2005/05/10 16:35:35 mullan Exp $
  */
-package javax.xml.crypto.dsig.keyinfo;
+package j86.j86.j86.javax.xml.crypto.dsig.keyinfo;
 
-import java.util.Collections;
-import java.util.List;
-import javax.xml.crypto.XMLStructure;
+import j86.java.util.Collections;
+import j86.java.util.List;
+import j86.javax.xml.crypto.XMLStructure;
 
 /**
  * A representation of the XML <code>PGPData</code> element as defined in

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.net;
+package j86.sun.net;
 
 /**
  * Helper class to map URL "abbreviations" to real URLs.

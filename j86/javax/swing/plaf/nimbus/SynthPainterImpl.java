@@ -22,19 +22,19 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.plaf.nimbus;
+package j86.j86.j86.javax.swing.plaf.nimbus;
 
-import java.awt.*;
-import java.awt.geom.AffineTransform;
-import java.awt.geom.NoninvertibleTransformException;
-import java.awt.image.BufferedImage;
-import java.util.*;
-import javax.swing.*;
-import javax.swing.plaf.synth.SynthContext;
-import javax.swing.plaf.synth.SynthPainter;
-import javax.swing.plaf.synth.SynthConstants;
+import j86.java.awt.*;
+import j86.j86.java.awt.geom.AffineTransform;
+import j86.j86.java.awt.geom.NoninvertibleTransformException;
+import j86.j86.j86.java.awt.image.BufferedImage;
+import j86.java.util.*;
+import j86.javax.swing.*;
+import j86.j86.j86.javax.swing.plaf.synth.SynthContext;
+import j86.j86.j86.javax.swing.plaf.synth.SynthPainter;
+import j86.j86.j86.javax.swing.plaf.synth.SynthConstants;
 
-import javax.swing.Painter;
+import j86.javax.swing.Painter;
 
 
 class SynthPainterImpl extends SynthPainter {

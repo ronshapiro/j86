@@ -26,7 +26,7 @@
 /**
  * This package defines connections between the virtual machine
  * using the JDI and the target virtual machine.
- * In concert with {@link com.sun.jdi.VirtualMachineManager}
+ * In concert with {@link j86.com.sun.jdi.VirtualMachineManager}
  * it is the mechanism for launching, attaching, etc to
  * target virtual machines.
  * <p>
@@ -36,4 +36,4 @@
  */
 
 @jdk.Exported
-package com.sun.jdi.connect;
+package j86.j86.com.sun.jdi.connect;

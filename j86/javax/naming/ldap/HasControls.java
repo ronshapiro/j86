@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.naming.ldap;
+package j86.j86.javax.naming.ldap;
 
-import javax.naming.NamingException;
+import j86.javax.naming.NamingException;
 
 /**
   * This interface is for returning controls with objects returned

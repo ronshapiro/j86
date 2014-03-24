@@ -24,13 +24,13 @@
  */
 
 
-package javax.naming.directory;
+package j86.j86.javax.naming.directory;
 
-import java.util.Hashtable;
-import java.util.Enumeration;
+import j86.java.util.Hashtable;
+import j86.java.util.Enumeration;
 
-import javax.naming.NamingException;
-import javax.naming.NamingEnumeration;
+import j86.javax.naming.NamingException;
+import j86.javax.naming.NamingEnumeration;
 
 /**
   * This interface represents a collection of attributes.
@@ -68,7 +68,7 @@ import javax.naming.NamingEnumeration;
   * @since 1.3
   */
 
-public interface Attributes extends Cloneable, java.io.Serializable {
+public interface Attributes extends Cloneable, j86.java.io.Serializable {
     /**
       * Determines whether the attribute set ignores the case of
       * attribute identifiers when retrieving or adding attributes.

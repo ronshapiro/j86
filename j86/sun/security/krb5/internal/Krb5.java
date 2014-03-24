@@ -29,9 +29,9 @@
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
 
-package sun.security.krb5.internal;
+package j86.j86.sun.security.krb5.internal;
 
-import java.util.Hashtable;
+import j86.java.util.Hashtable;
 
 // Constants and other defined values from RFC 4120
 
@@ -304,10 +304,10 @@ public class Krb5 {
 
 
     public static final boolean DEBUG =
-        java.security.AccessController.doPrivileged(
-              new sun.security.action.GetBooleanAction("sun.security.krb5.debug"));
-    public static final sun.misc.HexDumpEncoder hexDumper =
-        new sun.misc.HexDumpEncoder();
+        j86.java.security.AccessController.doPrivileged(
+              new j86.sun.security.action.GetBooleanAction("j86.sun.security.krb5.debug"));
+    public static final j86.sun.misc.HexDumpEncoder hexDumper =
+        new j86.sun.misc.HexDumpEncoder();
 
     static {
         errMsgList = new Hashtable<Integer,String> ();
@@ -359,7 +359,7 @@ public class Krb5 {
         errMsgList.put(KRB_ERR_RESPONSE_TOO_BIG, "Response too big for UDP, retry with TCP");
         errMsgList.put(KRB_ERR_GENERIC, "Generic error (description in e-text)");
         errMsgList.put(KRB_ERR_FIELD_TOOLONG, "Field is too long for this implementation");
-        errMsgList.put(KRB_AP_ERR_NOREALM, "Realm name not available"); //used in setDefaultCreds() in sun.security.krb5.Credentials
+        errMsgList.put(KRB_AP_ERR_NOREALM, "Realm name not available"); //used in setDefaultCreds() in j86.sun.security.krb5.Credentials
 
         // error messages specific to this implementation
 

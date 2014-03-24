@@ -23,14 +23,14 @@
  * questions.
  */
 
-package javax.sound.sampled;
+package j86.javax.sound.sampled;
 
-import java.io.File;
-import java.io.OutputStream;
-import java.io.IOException;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
+import j86.java.io.File;
+import j86.java.io.OutputStream;
+import j86.java.io.IOException;
+import j86.java.util.Collections;
+import j86.java.util.HashMap;
+import j86.java.util.Map;
 
 
 /**
@@ -65,32 +65,32 @@ import java.util.Map;
  *  </tr>
  *  <tr>
  *   <td>&quot;duration&quot;</td>
- *   <td>{@link java.lang.Long Long}</td>
+ *   <td>{@link j86.java.lang.Long Long}</td>
  *   <td>playback duration of the file in microseconds</td>
  *  </tr>
  *  <tr>
  *   <td>&quot;author&quot;</td>
- *   <td>{@link java.lang.String String}</td>
+ *   <td>{@link j86.java.lang.String String}</td>
  *   <td>name of the author of this file</td>
  *  </tr>
  *  <tr>
  *   <td>&quot;title&quot;</td>
- *   <td>{@link java.lang.String String}</td>
+ *   <td>{@link j86.java.lang.String String}</td>
  *   <td>title of this file</td>
  *  </tr>
  *  <tr>
  *   <td>&quot;copyright&quot;</td>
- *   <td>{@link java.lang.String String}</td>
+ *   <td>{@link j86.java.lang.String String}</td>
  *   <td>copyright message</td>
  *  </tr>
  *  <tr>
  *   <td>&quot;date&quot;</td>
- *   <td>{@link java.util.Date Date}</td>
+ *   <td>{@link j86.java.util.Date Date}</td>
  *   <td>date of the recording or release</td>
  *  </tr>
  *  <tr>
  *   <td>&quot;comment&quot;</td>
- *   <td>{@link java.lang.String String}</td>
+ *   <td>{@link j86.java.lang.String String}</td>
  *   <td>an arbitrary text</td>
  *  </tr>
  * </table>

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.crypto.spec;
+package j86.j86.javax.crypto.spec;
 
 /**
  * This class specifies the source for encoding input P in OAEP Padding,

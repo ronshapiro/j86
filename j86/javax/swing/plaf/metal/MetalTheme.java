@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.swing.plaf.metal;
+package j86.j86.j86.javax.swing.plaf.metal;
 
-import javax.swing.plaf.*;
-import javax.swing.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.javax.swing.*;
 
 /**
  * {@code MetalTheme} provides the color palette and fonts used by

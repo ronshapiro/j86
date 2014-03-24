@@ -33,12 +33,12 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package java.util.concurrent.locks;
-import java.util.concurrent.TimeUnit;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Date;
-import sun.misc.Unsafe;
+package j86.j86.j86.java.util.concurrent.locks;
+import j86.j86.java.util.concurrent.TimeUnit;
+import j86.java.util.ArrayList;
+import j86.java.util.Collection;
+import j86.java.util.Date;
+import j86.sun.misc.Unsafe;
 
 /**
  * Provides a framework for implementing blocking locks and related
@@ -181,8 +181,8 @@ import sun.misc.Unsafe;
  * synchronizers that can rely on {@code int} state, acquire, and
  * release parameters, and an internal FIFO wait queue. When this does
  * not suffice, you can build synchronizers from a lower level using
- * {@link java.util.concurrent.atomic atomic} classes, your own custom
- * {@link java.util.Queue} classes, and {@link LockSupport} blocking
+ * {@link j86.j86.j86.java.util.concurrent.atomic atomic} classes, your own custom
+ * {@link j86.java.util.Queue} classes, and {@link LockSupport} blocking
  * support.
  *
  * <h3>Usage Examples</h3>
@@ -196,7 +196,7 @@ import sun.misc.Unsafe;
  * one of the instrumentation methods:
  *
  *  <pre> {@code
- * class Mutex implements Lock, java.io.Serializable {
+ * class Mutex implements Lock, j86.java.io.Serializable {
  *
  *   // Our internal helper class
  *   private static class Sync extends AbstractQueuedSynchronizer {
@@ -254,7 +254,7 @@ import sun.misc.Unsafe;
  * }}</pre>
  *
  * <p>Here is a latch class that is like a
- * {@link java.util.concurrent.CountDownLatch CountDownLatch}
+ * {@link j86.j86.java.util.concurrent.CountDownLatch CountDownLatch}
  * except that it only requires a single {@code signal} to
  * fire. Because a latch is non-exclusive, it uses the {@code shared}
  * acquire and release methods.
@@ -288,7 +288,7 @@ import sun.misc.Unsafe;
  */
 public abstract class AbstractQueuedSynchronizer
     extends AbstractOwnableSynchronizer
-    implements java.io.Serializable {
+    implements j86.java.io.Serializable {
 
     private static final long serialVersionUID = 7373984972572414691L;
 
@@ -1827,7 +1827,7 @@ public abstract class AbstractQueuedSynchronizer
      * <p>This class is Serializable, but all fields are transient,
      * so deserialized conditions have no waiters.
      */
-    public class ConditionObject implements Condition, java.io.Serializable {
+    public class ConditionObject implements Condition, j86.java.io.Serializable {
         private static final long serialVersionUID = 1173984872572414699L;
         /** First node of condition queue. */
         private transient Node firstWaiter;

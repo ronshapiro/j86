@@ -24,10 +24,10 @@
  */
 
 
-package javax.net.ssl;
+package j86.j86.javax.net.ssl;
 
-import java.io.IOException;
-import java.net.*;
+import j86.java.io.IOException;
+import j86.java.net.*;
 
 /**
  * This class extends <code>Socket</code>s and provides secure
@@ -128,7 +128,7 @@ import java.net.*;
  * socket can not switch between client and server modes, even when
  * performing renegotiations.
  *
- * @see java.net.Socket
+ * @see j86.java.net.Socket
  * @see SSLServerSocket
  * @see SSLSocketFactory
  *

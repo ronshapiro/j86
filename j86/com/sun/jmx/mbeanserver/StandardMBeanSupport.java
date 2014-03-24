@@ -23,14 +23,14 @@
  * questions.
  */
 
-package com.sun.jmx.mbeanserver;
+package j86.com.sun.jmx.mbeanserver;
 
-import java.lang.reflect.Method;
+import j86.j86.j86.java.lang.reflect.Method;
 
-import javax.management.MBeanInfo;
-import javax.management.MBeanServer;
-import javax.management.NotCompliantMBeanException;
-import javax.management.ObjectName;
+import j86.javax.management.MBeanInfo;
+import j86.javax.management.MBeanServer;
+import j86.javax.management.NotCompliantMBeanException;
+import j86.javax.management.ObjectName;
 
 /**
  * Base class for Standard MBeans.

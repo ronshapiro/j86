@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.swing.plaf;
+package j86.j86.javax.swing.plaf;
 
-import javax.swing.JOptionPane;
+import j86.javax.swing.JOptionPane;
 
 /**
  * Pluggable look and feel interface for JOptionPane.

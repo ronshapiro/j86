@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.awt.peer;
+package j86.j86.java.awt.peer;
 
-import java.awt.*;
+import j86.java.awt.*;
 
 /**
  * The peer interface for {@link Dialog}. This adds a couple of dialog specific
@@ -66,5 +66,5 @@ public interface DialogPeer extends WindowPeer {
      * @see Dialog#modalShow()
      * @see Dialog#blockWindows()
      */
-    void blockWindows(java.util.List<Window> windows);
+    void blockWindows(j86.java.util.List<Window> windows);
 }

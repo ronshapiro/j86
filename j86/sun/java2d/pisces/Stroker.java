@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.java2d.pisces;
+package j86.j86.sun.java2d.pisces;
 
-import java.util.Arrays;
-import java.util.Iterator;
-import static java.lang.Math.ulp;
-import static java.lang.Math.sqrt;
+import j86.java.util.Arrays;
+import j86.java.util.Iterator;
+import static j86.java.lang.Math.ulp;
+import static j86.java.lang.Math.sqrt;
 
-import sun.awt.geom.PathConsumer2D;
+import j86.j86.sun.awt.geom.PathConsumer2D;
 
 // TODO: some of the arithmetic here is too verbose and prone to hard to
 // debug typos. We should consider making a small Point/Vector class that

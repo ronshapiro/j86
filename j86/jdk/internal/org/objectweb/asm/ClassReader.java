@@ -56,10 +56,10 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-package jdk.internal.org.objectweb.asm;
+package j86.jdk.internal.org.objectweb.asm;
 
-import java.io.IOException;
-import java.io.InputStream;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
 
 /**
  * A Java class parser to make a {@link ClassVisitor} visit an existing class.
@@ -1765,7 +1765,7 @@ public class ClassReader {
         AnnotationVisitor av;
         for (i = 0; i < synthetics; ++i) {
             // virtual annotation to detect synthetic parameters in MethodWriter
-            av = mv.visitParameterAnnotation(i, "Ljava/lang/Synthetic;", false);
+            av = mv.visitParameterAnnotation(i, "Lj86.java.lang/Synthetic;", false);
             if (av != null) {
                 av.visitEnd();
             }

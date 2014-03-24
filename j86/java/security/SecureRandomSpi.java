@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.security;
+package j86.java.security;
 
 /**
  * This class defines the <i>Service Provider Interface</i> (<b>SPI</b>)
@@ -37,7 +37,7 @@ package java.security;
  * @since 1.2
  */
 
-public abstract class SecureRandomSpi implements java.io.Serializable {
+public abstract class SecureRandomSpi implements j86.java.io.Serializable {
 
     private static final long serialVersionUID = -2991854161009191830L;
 

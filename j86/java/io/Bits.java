@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.io;
+package j86.java.io;
 
 /**
  * Utility methods for packing/unpacking primitive values in/out of byte arrays

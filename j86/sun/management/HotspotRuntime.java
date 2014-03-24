@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.management;
+package j86.sun.management;
 
-import java.util.List;
-import java.util.ArrayList;
-import sun.management.counter.Counter;
+import j86.java.util.List;
+import j86.java.util.ArrayList;
+import j86.j86.sun.management.counter.Counter;
 
 
 /**
@@ -71,7 +71,7 @@ class HotspotRuntime
         JAVA_RT + "|" + COM_SUN_RT + "|" + SUN_RT + "|" +
         JAVA_PROPERTY + "|" + COM_SUN_PROPERTY + "|" + SUN_PROPERTY;
 
-    public java.util.List<Counter> getInternalRuntimeCounters() {
+    public j86.java.util.List<Counter> getInternalRuntimeCounters() {
         return jvm.getInternalCounters(RT_COUNTER_NAME_PATTERN);
     }
 }

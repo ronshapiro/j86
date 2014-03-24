@@ -22,15 +22,15 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.beans.decoder;
+package j86.j86.com.sun.beans.decoder;
 
-import com.sun.beans.finder.ConstructorFinder;
+import j86.j86.com.sun.beans.finder.ConstructorFinder;
 
-import java.lang.reflect.Array;
-import java.lang.reflect.Constructor;
+import j86.j86.j86.java.lang.reflect.Array;
+import j86.j86.j86.java.lang.reflect.Constructor;
 
-import java.util.ArrayList;
-import java.util.List;
+import j86.java.util.ArrayList;
+import j86.java.util.List;
 
 /**
  * This class is intended to handle &lt;new&gt; element.
@@ -39,7 +39,7 @@ import java.util.List;
  * the name of the class to instantiate.
  * The inner elements specifies the arguments of the constructor.
  * For example:<pre>
- * &lt;new class="java.lang.Long"&gt;
+ * &lt;new class="j86.java.lang.Long"&gt;
  *     &lt;string&gt;10&lt;/string&gt;
  * &lt;/new&gt;</pre>
  * is equivalent to {@code new Long("10")} in Java code.

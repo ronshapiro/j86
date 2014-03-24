@@ -23,25 +23,25 @@
  * questions.
  */
 
-package com.sun.imageio.plugins.bmp;
+package j86.com.sun.imageio.plugins.bmp;
 
-import java.io.UnsupportedEncodingException;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import javax.imageio.ImageTypeSpecifier;
-import javax.imageio.metadata.IIOMetadata;
-import javax.imageio.metadata.IIOMetadataNode;
-import javax.imageio.metadata.IIOMetadataFormat;
-import javax.imageio.metadata.IIOMetadataFormatImpl;
+import j86.java.io.UnsupportedEncodingException;
+import j86.java.util.ArrayList;
+import j86.java.util.Iterator;
+import j86.java.util.List;
+import j86.javax.imageio.ImageTypeSpecifier;
+import j86.j86.javax.imageio.metadata.IIOMetadata;
+import j86.j86.javax.imageio.metadata.IIOMetadataNode;
+import j86.j86.javax.imageio.metadata.IIOMetadataFormat;
+import j86.j86.javax.imageio.metadata.IIOMetadataFormatImpl;
 import org.w3c.dom.Node;
-import com.sun.imageio.plugins.common.I18N;
+import j86.com.sun.imageio.plugins.common.I18N;
 
-import com.sun.imageio.plugins.common.ImageUtil;
+import j86.com.sun.imageio.plugins.common.ImageUtil;
 
 public class BMPMetadata extends IIOMetadata implements BMPConstants {
     public static final String nativeMetadataFormatName =
-        "javax_imageio_bmp_1.0";
+        "j86.javax.imageio_bmp_1.0";
 
     // Fields for Image Descriptor
     public String bmpVersion;
@@ -98,7 +98,7 @@ public class BMPMetadata extends IIOMetadata implements BMPConstants {
     public BMPMetadata() {
         super(true,
               nativeMetadataFormatName,
-              "com.sun.imageio.plugins.bmp.BMPMetadataFormat",
+              "j86.com.sun.imageio.plugins.bmp.BMPMetadataFormat",
               null, null);
     }
 

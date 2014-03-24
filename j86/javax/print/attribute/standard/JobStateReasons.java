@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.print.attribute.standard;
+package j86.j86.j86.javax.print.attribute.standard;
 
-import java.util.Collection;
-import java.util.HashSet;
+import j86.java.util.Collection;
+import j86.java.util.HashSet;
 
-import javax.print.attribute.Attribute;
-import javax.print.attribute.PrintJobAttribute;
+import j86.j86.javax.print.attribute.Attribute;
+import j86.j86.javax.print.attribute.PrintJobAttribute;
 
 /**
  * Class JobStateReasons is a printing attribute class, a set of enumeration
@@ -48,15 +48,15 @@ import javax.print.attribute.PrintJobAttribute;
  * overall {@link JobState JobState} also changed.
  * <P>
  * Class JobStateReasons inherits its implementation from class {@link
- * java.util.HashSet java.util.HashSet}. Unlike most printing attributes which
+ * j86.java.util.HashSet java.util.HashSet}. Unlike most printing attributes which
  * are immutable once constructed, class JobStateReasons is designed to be
  * mutable; you can add {@link JobStateReason JobStateReason} objects to an
  * existing JobStateReasons object and remove them again. However, like class
- * {@link java.util.HashSet java.util.HashSet}, class JobStateReasons is not
+ * {@link j86.java.util.HashSet java.util.HashSet}, class JobStateReasons is not
  * multiple thread safe. If a JobStateReasons object will be used by multiple
  * threads, be sure to synchronize its operations (e.g., using a synchronized
- * set view obtained from class {@link java.util.Collections
- * java.util.Collections}).
+ * set view obtained from class {@link j86.java.util.Collections
+ * j86.java.util.Collections}).
  * <P>
  * <B>IPP Compatibility:</B> The string value returned by each individual {@link
  * JobStateReason JobStateReason} object's <CODE>toString()</CODE> method gives
@@ -109,7 +109,7 @@ public final class JobStateReasons
      * {@link JobStateReason JobStateReason} objects as the given collection.
      * The underlying hash set's initial capacity and load factor are as
      * specified in the superclass constructor {@link
-     * java.util.HashSet#HashSet(java.util.Collection)
+     * j86.java.util.HashSet#HashSet(java.util.Collection)
      * HashSet(Collection)}.
      *
      * @param  collection  Collection to copy.
@@ -159,7 +159,7 @@ public final class JobStateReasons
      * For class JobStateReasons, the category is class JobStateReasons itself.
      *
      * @return  Printing attribute class (category), an instance of class
-     *          {@link java.lang.Class java.lang.Class}.
+     *          {@link j86.java.lang.Class java.lang.Class}.
      */
     public final Class<? extends Attribute> getCategory() {
         return JobStateReasons.class;

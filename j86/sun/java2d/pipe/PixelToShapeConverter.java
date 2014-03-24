@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.java2d.pipe;
+package j86.j86.sun.java2d.pipe;
 
-import java.awt.Rectangle;
-import java.awt.Shape;
-import java.awt.geom.Arc2D;
-import java.awt.geom.Ellipse2D;
-import java.awt.geom.Line2D;
-import java.awt.geom.RoundRectangle2D;
-import java.awt.geom.GeneralPath;
-import sun.java2d.SunGraphics2D;
+import j86.java.awt.Rectangle;
+import j86.java.awt.Shape;
+import j86.j86.java.awt.geom.Arc2D;
+import j86.j86.java.awt.geom.Ellipse2D;
+import j86.j86.java.awt.geom.Line2D;
+import j86.j86.java.awt.geom.RoundRectangle2D;
+import j86.j86.java.awt.geom.GeneralPath;
+import j86.sun.java2d.SunGraphics2D;
 
 /**
  * This class converts calls to the basic pixel rendering methods

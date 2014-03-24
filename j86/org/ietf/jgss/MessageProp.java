@@ -23,7 +23,7 @@
  * questions.
  */
 
-package org.ietf.jgss;
+package j86.org.ietf.jgss;
 
 /**
  * This is a utility class used within the per-message GSSContext

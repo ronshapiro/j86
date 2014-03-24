@@ -24,9 +24,9 @@
  */
 
 
-package sun.security.ssl;
+package j86.sun.security.ssl;
 
-import java.security.SecureRandom;
+import j86.java.security.SecureRandom;
 
 /**
  * Encapsulates an SSL session ID.  SSL Session IDs are not reused by

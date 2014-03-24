@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.rmi.transport;
+package j86.sun.rmi.transport;
 
-import java.io.IOException;
-import java.rmi.server.UID;
-import sun.rmi.server.MarshalOutputStream;
+import j86.java.io.IOException;
+import j86.j86.java.rmi.server.UID;
+import j86.sun.rmi.server.MarshalOutputStream;
 
 /**
  * Special stream to keep track of refs being marshaled as return

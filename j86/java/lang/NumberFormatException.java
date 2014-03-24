@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.lang;
+package j86.java.lang;
 
 /**
  * Thrown to indicate that the application has attempted to convert
@@ -31,7 +31,7 @@ package java.lang;
  * have the appropriate format.
  *
  * @author  unascribed
- * @see     java.lang.Integer#parseInt(String)
+ * @see     j86.java.lang.Integer#parseInt(String)
  * @since   JDK1.0
  */
 public

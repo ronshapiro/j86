@@ -23,14 +23,14 @@
  * questions.
  */
 
-package com.sun.jndi.url.rmi;
+package j86.com.sun.jndi.url.rmi;
 
-import java.util.Hashtable;
+import j86.java.util.Hashtable;
 
-import javax.naming.*;
-import javax.naming.spi.ResolveResult;
-import com.sun.jndi.toolkit.url.GenericURLContext;
-import com.sun.jndi.rmi.registry.RegistryContext;
+import j86.javax.naming.*;
+import j86.j86.javax.naming.spi.ResolveResult;
+import j86.com.sun.jndi.toolkit.url.GenericURLContext;
+import j86.com.sun.jndi.rmi.registry.RegistryContext;
 
 
 /**

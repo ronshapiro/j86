@@ -23,13 +23,13 @@
  * questions.
  */
 
-package sun.security.ssl;
+package j86.sun.security.ssl;
 
-import java.io.IOException;
-import java.net.InetAddress;
-import java.net.ServerSocket;
+import j86.java.io.IOException;
+import j86.java.net.InetAddress;
+import j86.java.net.ServerSocket;
 
-import javax.net.ssl.SSLServerSocketFactory;
+import j86.j86.javax.net.ssl.SSLServerSocketFactory;
 
 /**
  * This class creates SSL server sockets.
@@ -46,7 +46,7 @@ public class SSLServerSocketFactoryImpl extends SSLServerSocketFactory
     /**
      * Constructor used to instantiate the default factory. This method is
      * only called if the old "ssl.ServerSocketFactory.provider" property in the
-     * java.security file is set.
+     * j86.java.security file is set.
      */
     public SSLServerSocketFactoryImpl() throws Exception {
         this.context = SSLContextImpl.DefaultSSLContext.getDefaultImpl();
@@ -65,7 +65,7 @@ public class SSLServerSocketFactoryImpl extends SSLServerSocketFactory
      *
      * @return the unbound socket
      * @throws IOException if the socket cannot be created
-     * @see java.net.Socket#bind(java.net.SocketAddress)
+     * @see j86.java.net.Socket#bind(java.net.SocketAddress)
      */
     @Override
     public ServerSocket createServerSocket() throws IOException {

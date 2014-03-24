@@ -23,32 +23,32 @@
  * questions.
  */
 
-package sun.security.provider.certpath;
+package j86.j86.sun.security.provider.certpath;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.security.cert.CertificateEncodingException;
-import java.security.cert.Certificate;
-import java.security.cert.CertificateException;
-import java.security.cert.CertificateFactory;
-import java.security.cert.CertPath;
-import java.security.cert.X509Certificate;
-import java.util.*;
+import j86.java.io.ByteArrayInputStream;
+import j86.java.io.ByteArrayOutputStream;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.j86.java.security.cert.CertificateEncodingException;
+import j86.j86.java.security.cert.Certificate;
+import j86.j86.java.security.cert.CertificateException;
+import j86.j86.java.security.cert.CertificateFactory;
+import j86.j86.java.security.cert.CertPath;
+import j86.j86.java.security.cert.X509Certificate;
+import j86.java.util.*;
 
-import sun.security.pkcs.ContentInfo;
-import sun.security.pkcs.PKCS7;
-import sun.security.pkcs.SignerInfo;
-import sun.security.x509.AlgorithmId;
-import sun.security.util.DerValue;
-import sun.security.util.DerOutputStream;
-import sun.security.util.DerInputStream;
+import j86.sun.security.pkcs.ContentInfo;
+import j86.sun.security.pkcs.PKCS7;
+import j86.sun.security.pkcs.SignerInfo;
+import j86.sun.security.x509.AlgorithmId;
+import j86.sun.security.util.DerValue;
+import j86.sun.security.util.DerOutputStream;
+import j86.sun.security.util.DerInputStream;
 
 /**
- * A {@link java.security.cert.CertPath CertPath} (certification path)
+ * A {@link j86.j86.java.security.cert.CertPath CertPath} (certification path)
  * consisting exclusively of
- * {@link java.security.cert.X509Certificate X509Certificate}s.
+ * {@link j86.j86.java.security.cert.X509Certificate X509Certificate}s.
  * <p>
  * By convention, X.509 <code>CertPath</code>s are stored from target
  * to trust anchor.

@@ -23,11 +23,11 @@
  * questions.
  */
 
-package com.sun.jdi.connect;
+package j86.j86.com.sun.jdi.connect;
 
-import java.util.Map;
-import java.io.IOException;
-import com.sun.jdi.VirtualMachine;
+import j86.java.util.Map;
+import j86.java.io.IOException;
+import j86.com.sun.jdi.VirtualMachine;
 
 /**
  * A connector which listens for a connection initiated by a target VM.
@@ -75,7 +75,7 @@ public interface ListeningConnector extends Connector {
      *
      * @return the address at which the connector is listening
      * for a connection.
-     * @throws java.io.IOException when unable to start listening.
+     * @throws j86.java.io.IOException when unable to start listening.
      * Specific exceptions are dependent on the Connector implementation
      * in use.
      * @throws IllegalConnectorArgumentsException when one of the
@@ -88,7 +88,7 @@ public interface ListeningConnector extends Connector {
      * Cancels listening for connections. The given argument map should match
      * the argument map given for a previous {@link #startListening} invocation.
      *
-     * @throws java.io.IOException when unable to stop listening.
+     * @throws j86.java.io.IOException when unable to stop listening.
      * Specific exceptions are dependent on the Connector implementation
      * in use.
      * @throws IllegalConnectorArgumentsException when one of the
@@ -106,7 +106,7 @@ public interface ListeningConnector extends Connector {
      * {@link Connector.Argument} representing a timeout has been set
      * in the argument map, and a timeout occurs whilst waiting for
      * the target VM to connect.
-     * @throws java.io.IOException when unable to accept.
+     * @throws j86.java.io.IOException when unable to accept.
      * Specific exceptions are dependent on the Connector implementation
      * in use.
      * @throws IllegalConnectorArgumentsException when one of the

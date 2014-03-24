@@ -23,28 +23,28 @@
  * questions.
  */
 
-package com.sun.imageio.plugins.png;
+package j86.com.sun.imageio.plugins.png;
 
-import java.awt.image.ColorModel;
-import java.awt.image.IndexColorModel;
-import java.awt.image.SampleModel;
-import java.util.ArrayList;
-import java.util.StringTokenizer;
-import javax.imageio.ImageTypeSpecifier;
-import javax.imageio.metadata.IIOInvalidTreeException;
-import javax.imageio.metadata.IIOMetadata;
-import javax.imageio.metadata.IIOMetadataFormatImpl;
-import javax.imageio.metadata.IIOMetadataNode;
+import j86.j86.j86.java.awt.image.ColorModel;
+import j86.j86.j86.java.awt.image.IndexColorModel;
+import j86.j86.j86.java.awt.image.SampleModel;
+import j86.java.util.ArrayList;
+import j86.java.util.StringTokenizer;
+import j86.javax.imageio.ImageTypeSpecifier;
+import j86.j86.javax.imageio.metadata.IIOInvalidTreeException;
+import j86.j86.javax.imageio.metadata.IIOMetadata;
+import j86.j86.javax.imageio.metadata.IIOMetadataFormatImpl;
+import j86.j86.javax.imageio.metadata.IIOMetadataNode;
 import org.w3c.dom.Node;
 
 public class PNGMetadata extends IIOMetadata implements Cloneable {
 
     // package scope
     public static final String
-        nativeMetadataFormatName = "javax_imageio_png_1.0";
+        nativeMetadataFormatName = "j86.javax.imageio_png_1.0";
 
     protected static final String nativeMetadataFormatClassName
-        = "com.sun.imageio.plugins.png.PNGMetadataFormat";
+        = "j86.com.sun.imageio.plugins.png.PNGMetadataFormat";
 
     // Color types for IHDR chunk
     static final String[] IHDR_colorTypeNames = {

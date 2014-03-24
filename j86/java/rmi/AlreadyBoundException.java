@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.rmi;
+package j86.java.rmi;
 
 /**
  * An <code>AlreadyBoundException</code> is thrown if an attempt
@@ -32,10 +32,10 @@ package java.rmi;
  * @since   JDK1.1
  * @author  Ann Wollrath
  * @author  Roger Riggs
- * @see     java.rmi.Naming#bind(String, java.rmi.Remote)
- * @see     java.rmi.registry.Registry#bind(String, java.rmi.Remote)
+ * @see     j86.java.rmi.Naming#bind(String, java.rmi.Remote)
+ * @see     j86.j86.java.rmi.registry.Registry#bind(String, java.rmi.Remote)
  */
-public class AlreadyBoundException extends java.lang.Exception {
+public class AlreadyBoundException extends j86.java.lang.Exception {
 
     /* indicate compatibility with JDK 1.1.x version of class */
     private static final long serialVersionUID = 9218657361741657110L;

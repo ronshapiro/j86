@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.swing.undo;
+package j86.j86.javax.swing.undo;
 
-import javax.swing.event.*;
-import java.util.*;
+import j86.j86.javax.swing.event.*;
+import j86.java.util.*;
 
 /**
  * A support class used for managing <code>UndoableEdit</code> listeners.

@@ -23,13 +23,13 @@
  * questions.
  */
 
-package sun.security.smartcardio;
+package j86.sun.security.smartcardio;
 
-import java.nio.ByteBuffer;
+import j86.java.nio.ByteBuffer;
 
-import javax.smartcardio.*;
+import j86.javax.smartcardio.*;
 
-import static sun.security.smartcardio.PCSC.*;
+import static j86.sun.security.smartcardio.PCSC.*;
 
 /**
  * Card implementation.

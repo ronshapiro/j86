@@ -23,16 +23,16 @@
  * questions.
  */
 
-package java.awt.peer;
+package j86.j86.java.awt.peer;
 
-import java.awt.*;
+import j86.java.awt.*;
 
 /**
  * RobotPeer defines an interface whereby toolkits support automated testing
  * by allowing native input events to be generated from Java code.
  *
  * This interface should not be directly imported by code outside the
- * java.awt.* hierarchy; it is not to be considered public and is subject
+ * j86.java.awt.* hierarchy; it is not to be considered public and is subject
  * to change.
  *
  * @author      Robi Khan

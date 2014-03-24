@@ -23,11 +23,11 @@
  * questions.
  */
 
-package javax.imageio.stream;
+package j86.j86.javax.imageio.stream;
 
-import java.io.IOException;
-import java.io.UTFDataFormatException;
-import java.nio.ByteOrder;
+import j86.java.io.IOException;
+import j86.java.io.UTFDataFormatException;
+import j86.java.nio.ByteOrder;
 
 /**
  * An abstract class implementing the <code>ImageOutputStream</code> interface.

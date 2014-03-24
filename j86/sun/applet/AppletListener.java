@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.applet;
+package j86.sun.applet;
 
-import java.util.EventListener;
+import j86.java.util.EventListener;
 
 /**
  * Applet Listener interface.  This interface is to be implemented

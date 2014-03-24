@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.print.attribute.standard;
+package j86.j86.j86.javax.print.attribute.standard;
 
-import java.net.URI;
+import j86.java.net.URI;
 
-import javax.print.attribute.Attribute;
-import javax.print.attribute.URISyntax;
-import javax.print.attribute.PrintServiceAttribute;
+import j86.j86.javax.print.attribute.Attribute;
+import j86.j86.javax.print.attribute.URISyntax;
+import j86.j86.javax.print.attribute.PrintServiceAttribute;
 
 /**
  * Class PrinterMoreInfo is a printing attribute class, a URI, that is used to
@@ -101,7 +101,7 @@ public final class PrinterMoreInfo extends URISyntax
      * For class PrinterMoreInfo, the category is class PrinterMoreInfo itself.
      *
      * @return  Printing attribute class (category), an instance of class
-     *          {@link java.lang.Class java.lang.Class}.
+     *          {@link j86.java.lang.Class java.lang.Class}.
      */
     public final Class<? extends Attribute> getCategory() {
         return PrinterMoreInfo.class;

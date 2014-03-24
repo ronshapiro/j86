@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.awt;
+package j86.sun.awt;
 
-import java.net.URL;
+import j86.java.net.URL;
 
 public abstract class DesktopBrowse {
     private static volatile DesktopBrowse mInstance;

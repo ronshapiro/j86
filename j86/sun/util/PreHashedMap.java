@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.util;
+package j86.sun.util;
 
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Set;
-import java.util.AbstractMap;
-import java.util.AbstractSet;
-import java.util.NoSuchElementException;
+import j86.java.util.Iterator;
+import j86.java.util.Map;
+import j86.java.util.Set;
+import j86.java.util.AbstractMap;
+import j86.java.util.AbstractSet;
+import j86.java.util.NoSuchElementException;
 
 
 /**
@@ -40,7 +40,7 @@ import java.util.NoSuchElementException;
  *
  * <blockquote><pre>
  * class FooMap
- *     extends sun.util.PreHashedMap&lt;String&gt;
+ *     extends j86.sun.util.PreHashedMap&lt;String&gt;
  * {
  *
  *     private FooMap() {
@@ -70,7 +70,7 @@ import java.util.NoSuchElementException;
  *
  * <p> Instances of this class are mutable and are not safe for concurrent
  * access.  They may be made immutable and thread-safe via the appropriate
- * methods in the {@link java.util.Collections} utility class.
+ * methods in the {@link j86.java.util.Collections} utility class.
  *
  * <p> In the JDK build, subclasses of this class are typically created via the
  * <tt>Hasher</tt> program in the <tt>make/tools/Hasher</tt> directory.
@@ -78,7 +78,7 @@ import java.util.NoSuchElementException;
  * @author Mark Reinhold
  * @since 1.5
  *
- * @see java.util.AbstractMap
+ * @see j86.java.util.AbstractMap
  */
 
 public abstract class PreHashedMap<V>

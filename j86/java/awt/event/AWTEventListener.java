@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.awt.event;
+package j86.j86.java.awt.event;
 
-import java.util.EventListener;
-import java.awt.AWTEvent;
+import j86.java.util.EventListener;
+import j86.java.awt.AWTEvent;
 
 /**
  * The listener interface for receiving notification of events
@@ -45,9 +45,9 @@ import java.awt.AWTEvent;
  * dispatched anywhere in the AWT, that object's
  * <code>eventDispatched</code> method is invoked.
  *
- * @see java.awt.AWTEvent
- * @see java.awt.Toolkit#addAWTEventListener
- * @see java.awt.Toolkit#removeAWTEventListener
+ * @see j86.java.awt.AWTEvent
+ * @see j86.java.awt.Toolkit#addAWTEventListener
+ * @see j86.java.awt.Toolkit#removeAWTEventListener
  *
  * @author Fred Ecks
  * @since 1.2

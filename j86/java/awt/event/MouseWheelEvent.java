@@ -23,11 +23,11 @@
  * questions.
  */
 
-package java.awt.event;
+package j86.j86.java.awt.event;
 
-import java.awt.Component;
+import j86.java.awt.Component;
 
-import java.lang.annotation.Native;
+import j86.j86.java.lang.annotation.Native;
 
 /**
  * An event which indicates that the mouse wheel was rotated in a component.
@@ -92,10 +92,10 @@ import java.lang.annotation.Native;
  *
  * @author Brent Christian
  * @see MouseWheelListener
- * @see java.awt.ScrollPane
- * @see java.awt.ScrollPane#setWheelScrollingEnabled(boolean)
- * @see javax.swing.JScrollPane
- * @see javax.swing.JScrollPane#setWheelScrollingEnabled(boolean)
+ * @see j86.java.awt.ScrollPane
+ * @see j86.java.awt.ScrollPane#setWheelScrollingEnabled(boolean)
+ * @see j86.javax.swing.JScrollPane
+ * @see j86.javax.swing.JScrollPane#setWheelScrollingEnabled(boolean)
  * @since 1.4
  */
 
@@ -191,8 +191,8 @@ public class MouseWheelEvent extends MouseEvent {
      *                       wheel was rotated
      *
      * @throws IllegalArgumentException if <code>source</code> is null
-     * @see MouseEvent#MouseEvent(java.awt.Component, int, long, int, int, int, int, boolean)
-     * @see MouseEvent#MouseEvent(java.awt.Component, int, long, int, int, int, int, int, int, boolean, int)
+     * @see MouseEvent#MouseEvent(j86.java.awt.Component, int, long, int, int, int, int, boolean)
+     * @see MouseEvent#MouseEvent(j86.java.awt.Component, int, long, int, int, int, int, int, int, boolean, int)
      */
     public MouseWheelEvent (Component source, int id, long when, int modifiers,
                       int x, int y, int clickCount, boolean popupTrigger,
@@ -237,8 +237,8 @@ public class MouseWheelEvent extends MouseEvent {
      *                       wheel was rotated
      *
      * @throws IllegalArgumentException if <code>source</code> is null
-     * @see MouseEvent#MouseEvent(java.awt.Component, int, long, int, int, int, int, boolean)
-     * @see MouseEvent#MouseEvent(java.awt.Component, int, long, int, int, int, int, int, int, boolean, int)
+     * @see MouseEvent#MouseEvent(j86.java.awt.Component, int, long, int, int, int, int, boolean)
+     * @see MouseEvent#MouseEvent(j86.java.awt.Component, int, long, int, int, int, int, int, int, boolean, int)
      * @since 1.6
      */
     public MouseWheelEvent (Component source, int id, long when, int modifiers,
@@ -291,8 +291,8 @@ public class MouseWheelEvent extends MouseEvent {
      *                       was rotated
      *
      * @throws IllegalArgumentException if <code>source</code> is null
-     * @see MouseEvent#MouseEvent(java.awt.Component, int, long, int, int, int, int, boolean)
-     * @see MouseEvent#MouseEvent(java.awt.Component, int, long, int, int, int, int, int, int, boolean, int)
+     * @see MouseEvent#MouseEvent(j86.java.awt.Component, int, long, int, int, int, int, boolean)
+     * @see MouseEvent#MouseEvent(j86.java.awt.Component, int, long, int, int, int, int, int, int, boolean, int)
      * @since 1.7
      */
     public MouseWheelEvent (Component source, int id, long when, int modifiers,
@@ -320,10 +320,10 @@ public class MouseWheelEvent extends MouseEvent {
      * @return either MouseWheelEvent.WHEEL_UNIT_SCROLL or
      *  MouseWheelEvent.WHEEL_BLOCK_SCROLL, depending on the configuration of
      *  the native platform.
-     * @see java.awt.Adjustable#getUnitIncrement
-     * @see java.awt.Adjustable#getBlockIncrement
-     * @see javax.swing.Scrollable#getScrollableUnitIncrement
-     * @see javax.swing.Scrollable#getScrollableBlockIncrement
+     * @see j86.java.awt.Adjustable#getUnitIncrement
+     * @see j86.java.awt.Adjustable#getBlockIncrement
+     * @see j86.javax.swing.Scrollable#getScrollableUnitIncrement
+     * @see j86.javax.swing.Scrollable#getScrollableBlockIncrement
      */
     public int getScrollType() {
         return scrollType;
@@ -411,14 +411,14 @@ public class MouseWheelEvent extends MouseEvent {
      * @see #getScrollType
      * @see #getScrollAmount
      * @see MouseWheelListener
-     * @see java.awt.Adjustable
-     * @see java.awt.Adjustable#getUnitIncrement
-     * @see javax.swing.Scrollable
-     * @see javax.swing.Scrollable#getScrollableUnitIncrement
-     * @see java.awt.ScrollPane
-     * @see java.awt.ScrollPane#setWheelScrollingEnabled
-     * @see javax.swing.JScrollPane
-     * @see javax.swing.JScrollPane#setWheelScrollingEnabled
+     * @see j86.java.awt.Adjustable
+     * @see j86.java.awt.Adjustable#getUnitIncrement
+     * @see j86.javax.swing.Scrollable
+     * @see j86.javax.swing.Scrollable#getScrollableUnitIncrement
+     * @see j86.java.awt.ScrollPane
+     * @see j86.java.awt.ScrollPane#setWheelScrollingEnabled
+     * @see j86.javax.swing.JScrollPane
+     * @see j86.javax.swing.JScrollPane#setWheelScrollingEnabled
      */
     public int getUnitsToScroll() {
         return scrollAmount * wheelRotation;

@@ -23,26 +23,26 @@
  * questions.
  */
 
-package javax.sound.sampled;
+package j86.javax.sound.sampled;
 
-import java.io.File;
-import java.io.InputStream;
-import java.io.IOException;
-import java.io.OutputStream;
-import java.net.URL;
+import j86.java.io.File;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
+import j86.java.io.OutputStream;
+import j86.java.net.URL;
 
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-import java.util.Vector;
-import java.util.ArrayList;
+import j86.java.util.HashSet;
+import j86.java.util.List;
+import j86.java.util.Set;
+import j86.java.util.Vector;
+import j86.java.util.ArrayList;
 
-import javax.sound.sampled.spi.AudioFileWriter;
-import javax.sound.sampled.spi.AudioFileReader;
-import javax.sound.sampled.spi.FormatConversionProvider;
-import javax.sound.sampled.spi.MixerProvider;
+import j86.j86.javax.sound.sampled.spi.AudioFileWriter;
+import j86.j86.javax.sound.sampled.spi.AudioFileReader;
+import j86.j86.javax.sound.sampled.spi.FormatConversionProvider;
+import j86.j86.javax.sound.sampled.spi.MixerProvider;
 
-import com.sun.media.sound.JDK13Services;
+import j86.com.sun.media.sound.JDK13Services;
 
 /* $fb TODO:
  * - consistent usage of (typed) collections
@@ -70,7 +70,7 @@ import com.sun.media.sound.JDK13Services;
  * properties file, the system property takes precedence. If none is
  * specified, a suitable default is chosen among the available devices.
  * The syntax of the properties file is specified in
- * {@link java.util.Properties#load(InputStream) Properties.load}. The
+ * {@link j86.java.util.Properties#load(InputStream) Properties.load}. The
  * following table lists the available property keys and which methods
  * consider them:
  *
@@ -82,22 +82,22 @@ import com.sun.media.sound.JDK13Services;
  *   <th>Affected Method(s)</th>
  *  </tr>
  *  <tr>
- *   <td><code>javax.sound.sampled.Clip</code></td>
+ *   <td><code>j86.javax.sound.sampled.Clip</code></td>
  *   <td>{@link Clip}</td>
  *   <td>{@link #getLine}, {@link #getClip}</td>
  *  </tr>
  *  <tr>
- *   <td><code>javax.sound.sampled.Port</code></td>
+ *   <td><code>j86.javax.sound.sampled.Port</code></td>
  *   <td>{@link Port}</td>
  *   <td>{@link #getLine}</td>
  *  </tr>
  *  <tr>
- *   <td><code>javax.sound.sampled.SourceDataLine</code></td>
+ *   <td><code>j86.javax.sound.sampled.SourceDataLine</code></td>
  *   <td>{@link SourceDataLine}</td>
  *   <td>{@link #getLine}, {@link #getSourceDataLine}</td>
  *  </tr>
  *  <tr>
- *   <td><code>javax.sound.sampled.TargetDataLine</code></td>
+ *   <td><code>j86.javax.sound.sampled.TargetDataLine</code></td>
  *   <td>{@link TargetDataLine}</td>
  *   <td>{@link #getLine}, {@link #getTargetDataLine}</td>
  *  </tr>
@@ -106,7 +106,7 @@ import com.sun.media.sound.JDK13Services;
  * The property value consists of the provider class name
  * and the mixer name, separated by the hash mark (&quot;#&quot;).
  * The provider class name is the fully-qualified
- * name of a concrete {@link javax.sound.sampled.spi.MixerProvider
+ * name of a concrete {@link j86.j86.javax.sound.sampled.spi.MixerProvider
  * mixer provider} class. The mixer name is matched against
  * the <code>String</code> returned by the <code>getName</code>
  * method of <code>Mixer.Info</code>.
@@ -133,13 +133,13 @@ import com.sun.media.sound.JDK13Services;
  * list, which provides the respective line
  * interface, will be returned.
  *
- * For example, the property <code>javax.sound.sampled.Clip</code>
+ * For example, the property <code>j86.javax.sound.sampled.Clip</code>
  * with a value
- * <code>&quot;com.sun.media.sound.MixerProvider#SunClip&quot;</code>
+ * <code>&quot;j86.com.sun.media.sound.MixerProvider#SunClip&quot;</code>
  * will have the following consequences when
  * <code>getLine</code> is called requesting a <code>Clip</code>
  * instance:
- * if the class <code>com.sun.media.sound.MixerProvider</code> exists
+ * if the class <code>j86.com.sun.media.sound.MixerProvider</code> exists
  * in the list of installed mixer providers,
  * the first <code>Clip</code> from the first mixer with name
  * <code>&quot;SunClip&quot;</code> will be returned. If it cannot
@@ -380,10 +380,10 @@ public class AudioSystem {
      * <code>DataLine</code>.
      *
      * <p>If system properties
-     * <code>javax.sound.sampled.Clip</code>,
-     * <code>javax.sound.sampled.Port</code>,
-     * <code>javax.sound.sampled.SourceDataLine</code> and
-     * <code>javax.sound.sampled.TargetDataLine</code> are defined
+     * <code>j86.javax.sound.sampled.Clip</code>,
+     * <code>j86.javax.sound.sampled.Port</code>,
+     * <code>j86.javax.sound.sampled.SourceDataLine</code> and
+     * <code>j86.javax.sound.sampled.TargetDataLine</code> are defined
      * or they are defined in the file &quot;sound.properties&quot;,
      * they are used to retrieve default lines.
      * For details, refer to the {@link AudioSystem class description}.
@@ -496,7 +496,7 @@ public class AudioSystem {
      * and <code>getLine</code> internally.
      *
      * <p>If the system property
-     * <code>javax.sound.sampled.Clip</code>
+     * <code>j86.javax.sound.sampled.Clip</code>
      * is defined or it is defined in the file &quot;sound.properties&quot;,
      * it is used to retrieve the default clip.
      * For details, refer to the {@link AudioSystem class description}.
@@ -579,7 +579,7 @@ public class AudioSystem {
      * audio format will be initialized with <code>format</code>.
      *
      * <p>If the system property
-     * <code>javax.sound.sampled.SourceDataLine</code>
+     * <code>j86.javax.sound.sampled.SourceDataLine</code>
      * is defined or it is defined in the file &quot;sound.properties&quot;,
      * it is used to retrieve the default source data line.
      * For details, refer to the {@link AudioSystem class description}.
@@ -673,7 +673,7 @@ public class AudioSystem {
      * audio format will be initialized with <code>format</code>.
      *
      * <p>If the system property
-     * {@code javax.sound.sampled.TargetDataLine}
+     * {@code j86.javax.sound.sampled.TargetDataLine}
      * is defined or it is defined in the file &quot;sound.properties&quot;,
      * it is used to retrieve the default target data line.
      * For details, refer to the {@link AudioSystem class description}.
@@ -1383,7 +1383,7 @@ public class AudioSystem {
      * Obtains the set of format converters (codecs, transcoders, etc.)
      * that are currently installed on the system.
      * @return an array of
-     * {@link javax.sound.sampled.spi.FormatConversionProvider
+     * {@link j86.j86.javax.sound.sampled.spi.FormatConversionProvider
      * FormatConversionProvider}
      * objects representing the available format converters.  If no format
      * converters readers are available on the system, an array of length 0 is
@@ -1397,7 +1397,7 @@ public class AudioSystem {
     /**
      * Obtains the set of audio file readers that are currently installed on the system.
      * @return a List of
-     * {@link javax.sound.sampled.spi.AudioFileReader
+     * {@link j86.j86.javax.sound.sampled.spi.AudioFileReader
      * AudioFileReader}
      * objects representing the installed audio file readers.  If no audio file
      * readers are available on the system, an empty List is returned.
@@ -1623,7 +1623,7 @@ public class AudioSystem {
 
     /**
      * Obtains the set of services currently installed on the system
-     * using sun.misc.Service, the SPI mechanism in 1.3.
+     * using j86.sun.misc.Service, the SPI mechanism in 1.3.
      * @return a List of instances of providers for the requested service.
      * If no providers are available, a vector of length 0 will be returned.
      */

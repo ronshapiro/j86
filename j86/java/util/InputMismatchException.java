@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.util;
+package j86.java.util;
 
 /**
  * Thrown by a <code>Scanner</code> to indicate that the token
@@ -31,7 +31,7 @@ package java.util;
  * that the token is out of range for the expected type.
  *
  * @author  unascribed
- * @see     java.util.Scanner
+ * @see     j86.java.util.Scanner
  * @since   1.5
  */
 public

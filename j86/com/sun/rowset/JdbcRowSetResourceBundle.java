@@ -23,10 +23,10 @@
  * questions.
  */
 
-package com.sun.rowset;
+package j86.com.sun.rowset;
 
-import java.io.*;
-import java.util.*;
+import j86.java.io.*;
+import j86.java.util.*;
 
 /**
  * This class is used to help in localization of resources,
@@ -80,7 +80,7 @@ public class JdbcRowSetResourceBundle implements Serializable {
      * The variable where the default resource bundle will
      * be placed.
      **/
-    private static final String PATH = "com/sun/rowset/RowSetResourceBundle";
+    private static final String PATH = "j86.com.sun.rowset/RowSetResourceBundle";
 
     /**
      * The constructor which initializes the resource bundle.

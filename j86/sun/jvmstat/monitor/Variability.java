@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.jvmstat.monitor;
+package j86.sun.jvmstat.monitor;
 
 /**
  * Provides a typesafe enumeration for the Variability attribute for
@@ -31,7 +31,7 @@ package sun.jvmstat.monitor;
  *
  * @author   Brian Doherty
  */
-public class Variability implements java.io.Serializable {
+public class Variability implements j86.java.io.Serializable {
 
     /* The enumeration values for this typesafe enumeration must be
      * kept in synchronization with the Variability enum in the perfData.hpp file

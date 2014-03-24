@@ -56,12 +56,12 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-package jdk.internal.org.objectweb.asm.tree;
+package j86.j86.jdk.internal.org.objectweb.asm.tree;
 
-import java.util.Map;
+import j86.java.util.Map;
 
-import jdk.internal.org.objectweb.asm.MethodVisitor;
-import jdk.internal.org.objectweb.asm.Opcodes;
+import j86.jdk.internal.org.objectweb.asm.MethodVisitor;
+import j86.jdk.internal.org.objectweb.asm.Opcodes;
 
 /**
  * A node that represents a MULTIANEWARRAY instruction.
@@ -71,7 +71,7 @@ import jdk.internal.org.objectweb.asm.Opcodes;
 public class MultiANewArrayInsnNode extends AbstractInsnNode {
 
     /**
-     * An array type descriptor (see {@link jdk.internal.org.objectweb.asm.Type}).
+     * An array type descriptor (see {@link j86.jdk.internal.org.objectweb.asm.Type}).
      */
     public String desc;
 
@@ -84,7 +84,7 @@ public class MultiANewArrayInsnNode extends AbstractInsnNode {
      * Constructs a new {@link MultiANewArrayInsnNode}.
      *
      * @param desc
-     *            an array type descriptor (see {@link jdk.internal.org.objectweb.asm.Type}).
+     *            an array type descriptor (see {@link j86.jdk.internal.org.objectweb.asm.Type}).
      * @param dims
      *            number of dimensions of the array to allocate.
      */

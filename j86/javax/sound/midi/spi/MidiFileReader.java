@@ -23,16 +23,16 @@
  * questions.
  */
 
-package javax.sound.midi.spi;
+package j86.j86.javax.sound.midi.spi;
 
-import java.io.File;
-import java.io.InputStream;
-import java.io.IOException;
-import java.net.URL;
+import j86.java.io.File;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
+import j86.java.net.URL;
 
-import javax.sound.midi.MidiFileFormat;
-import javax.sound.midi.Sequence;
-import javax.sound.midi.InvalidMidiDataException;
+import j86.javax.sound.midi.MidiFileFormat;
+import j86.javax.sound.midi.Sequence;
+import j86.javax.sound.midi.InvalidMidiDataException;
 
 /**
  * A <code>MidiFileReader</code> supplies MIDI file-reading services.  Classes implementing this

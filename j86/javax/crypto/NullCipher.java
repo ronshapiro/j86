@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.crypto;
+package j86.javax.crypto;
 
 /**
  * The NullCipher class is a class that provides an

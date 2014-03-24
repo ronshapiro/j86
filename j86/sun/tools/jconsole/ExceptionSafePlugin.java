@@ -22,16 +22,16 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.tools.jconsole;
+package j86.sun.tools.jconsole;
 
-import java.util.HashMap;
-import java.util.Map;
+import j86.java.util.HashMap;
+import j86.java.util.Map;
 
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.SwingWorker;
+import j86.javax.swing.JOptionPane;
+import j86.javax.swing.JPanel;
+import j86.javax.swing.SwingWorker;
 
-import com.sun.tools.jconsole.JConsolePlugin;
+import com.j86.sun.tools.jconsole.JConsolePlugin;
 
 /**
  * Proxy that shields GUI from plug-in exceptions.

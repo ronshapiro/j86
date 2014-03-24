@@ -23,18 +23,18 @@
  * questions.
  */
 
-package javax.swing.plaf.synth;
+package j86.j86.j86.javax.swing.plaf.synth;
 
-import java.awt.*;
-import javax.swing.*;
-import javax.swing.text.*;
-import javax.swing.plaf.*;
-import javax.swing.plaf.basic.BasicEditorPaneUI;
-import java.beans.PropertyChangeEvent;
+import j86.java.awt.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.text.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.j86.javax.swing.plaf.basic.BasicEditorPaneUI;
+import j86.java.beans.PropertyChangeEvent;
 
 /**
  * Provides the Synth L&amp;F UI delegate for
- * {@link javax.swing.JEditorPane}.
+ * {@link j86.javax.swing.JEditorPane}.
  *
  * @author  Shannon Hickey
  * @since 1.7

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.naming.ldap;
+package j86.j86.javax.naming.ldap;
 
 /**
  * A sort key and its associated sort parameters.

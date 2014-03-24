@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.applet;
+package j86.sun.applet;
 
-import java.util.EventObject;
+import j86.java.util.EventObject;
 
 
 /**

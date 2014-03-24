@@ -23,13 +23,13 @@
  * questions.
  */
 
-package com.sun.security.jgss;
+package com.j86.sun.security.jgss;
 
-import org.ietf.jgss.*;
+import j86.org.ietf.jgss.*;
 
 /**
  * The extended GSSCredential interface for supporting additional
- * functionalities not defined by {@code org.ietf.jgss.GSSCredential}.
+ * functionalities not defined by {@code j86.org.ietf.jgss.GSSCredential}.
  * @since 1.8
  */
 @jdk.Exported

@@ -23,16 +23,16 @@
  * questions.
  */
 
-package com.sun.security.sasl;
+package j86.com.sun.security.sasl;
 
-import javax.security.sasl.SaslException;
-import javax.security.sasl.Sasl;
+import j86.javax.security.sasl.SaslException;
+import j86.javax.security.sasl.Sasl;
 
 // For HMAC_MD5
-import java.security.NoSuchAlgorithmException;
-import java.security.MessageDigest;
+import j86.java.security.NoSuchAlgorithmException;
+import j86.java.security.MessageDigest;
 
-import java.util.logging.Logger;
+import j86.j86.java.util.logging.Logger;
 
 /**
   * Base class for implementing CRAM-MD5 client and server mechanisms.
@@ -221,6 +221,6 @@ abstract class CramMD5Base {
     /**
      * Logger for debug messages
      */
-    private static final String SASL_LOGGER_NAME = "javax.security.sasl";
+    private static final String SASL_LOGGER_NAME = "j86.javax.security.sasl";
     protected static Logger logger;  // set in initLogger(); lazily loads logger
 }

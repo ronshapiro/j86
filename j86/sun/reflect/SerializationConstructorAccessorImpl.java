@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.reflect;
+package j86.sun.reflect;
 
-/** <P> Java serialization (in java.io) expects to be able to
+/** <P> Java serialization (in j86.java.io) expects to be able to
     instantiate a class and invoke a no-arg constructor of that
     class's first non-Serializable superclass. This is not a valid
     operation according to the VM specification; one can not (for

@@ -23,11 +23,11 @@
  * questions.
  */
 
-package com.sun.jmx.remote.security;
+package j86.com.sun.jmx.remote.security;
 
-import javax.management.Notification;
-import javax.management.ObjectName;
-import javax.security.auth.Subject;
+import j86.javax.management.Notification;
+import j86.javax.management.ObjectName;
+import j86.javax.security.auth.Subject;
 
 /**
  * <p>This interface allows to control remote access to the
@@ -47,8 +47,8 @@ public interface NotificationAccessController {
 
     /**
      * This method is called when a remote
-     * {@link javax.management.remote.JMXConnector} invokes the method
-     * {@link javax.management.MBeanServerConnection#addNotificationListener(ObjectName,NotificationListener,NotificationFilter,Object)}.
+     * {@link j86.j86.javax.management.remote.JMXConnector} invokes the method
+     * {@link j86.javax.management.MBeanServerConnection#addNotificationListener(ObjectName,NotificationListener,NotificationFilter,Object)}.
      *
      * @param connectionId the {@code connectionId} of the remote client
      * adding the listener.
@@ -66,10 +66,10 @@ public interface NotificationAccessController {
 
     /**
      * This method is called when a remote
-     * {@link javax.management.remote.JMXConnector} invokes the method
-     * {@link javax.management.MBeanServerConnection#removeNotificationListener(ObjectName,NotificationListener)}
+     * {@link j86.j86.javax.management.remote.JMXConnector} invokes the method
+     * {@link j86.javax.management.MBeanServerConnection#removeNotificationListener(ObjectName,NotificationListener)}
      * or the method
-     * {@link javax.management.MBeanServerConnection#removeNotificationListener(ObjectName,NotificationListener,NotificationFilter,Object)}.
+     * {@link j86.javax.management.MBeanServerConnection#removeNotificationListener(ObjectName,NotificationListener,NotificationFilter,Object)}.
      *
      * @param connectionId the {@code connectionId} of the remote client
      * removing the listener.
@@ -87,7 +87,7 @@ public interface NotificationAccessController {
 
     /**
      * This method is called before the
-     * {@link javax.management.remote.JMXConnectorServer}
+     * {@link j86.j86.javax.management.remote.JMXConnectorServer}
      * forwards the notification to the interested remote
      * listener represented by the authenticated subject.
      *

@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.java2d.cmm;
+package j86.j86.sun.java2d.cmm;
 
-import java.io.InputStream;
-import java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
 
 
 /**

@@ -23,16 +23,16 @@
  * questions.
  */
 
-package javax.security.auth.kerberos;
+package j86.j86.javax.security.auth.kerberos;
 
-import java.util.*;
-import java.security.Permission;
-import java.security.BasicPermission;
-import java.security.PermissionCollection;
-import java.io.ObjectStreamField;
-import java.io.ObjectOutputStream;
-import java.io.ObjectInputStream;
-import java.io.IOException;
+import j86.java.util.*;
+import j86.java.security.Permission;
+import j86.java.security.BasicPermission;
+import j86.java.security.PermissionCollection;
+import j86.java.io.ObjectStreamField;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.IOException;
 
 /**
  * This class is used to restrict the usage of the Kerberos
@@ -64,7 +64,7 @@ import java.io.IOException;
  */
 
 public final class DelegationPermission extends BasicPermission
-    implements java.io.Serializable {
+    implements j86.java.io.Serializable {
 
     private static final long serialVersionUID = 883133252142523922L;
 
@@ -205,7 +205,7 @@ public final class DelegationPermission extends BasicPermission
      * to a stream. The actions are serialized, and the superclass
      * takes care of the name.
      */
-    private synchronized void writeObject(java.io.ObjectOutputStream s)
+    private synchronized void writeObject(j86.java.io.ObjectOutputStream s)
         throws IOException
     {
         s.defaultWriteObject();
@@ -215,7 +215,7 @@ public final class DelegationPermission extends BasicPermission
      * readObject is called to restore the state of the
      * DelegationPermission from a stream.
      */
-    private synchronized void readObject(java.io.ObjectInputStream s)
+    private synchronized void readObject(j86.java.io.ObjectInputStream s)
          throws IOException, ClassNotFoundException
     {
         // Read in the action, then initialize the rest
@@ -263,7 +263,7 @@ public final class DelegationPermission extends BasicPermission
 
 
 final class KrbDelegationPermissionCollection extends PermissionCollection
-    implements java.io.Serializable {
+    implements j86.java.io.Serializable {
 
     // Not serialized; see serialization section at end of class.
     private transient List<Permission> perms;
@@ -339,7 +339,7 @@ final class KrbDelegationPermissionCollection extends PermissionCollection
     // which had the serializable field:
     //    private Vector permissions;
     /**
-     * @serialField permissions java.util.Vector
+     * @serialField permissions j86.java.util.Vector
      *     A list of DelegationPermission objects.
      */
     private static final ObjectStreamField[] serialPersistentFields = {

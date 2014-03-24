@@ -29,10 +29,10 @@
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
 
-package sun.security.krb5;
+package j86.sun.security.krb5;
 
-import sun.security.krb5.internal.Krb5;
-import sun.security.krb5.internal.KRBError;
+import j86.j86.sun.security.krb5.internal.Krb5;
+import j86.j86.sun.security.krb5.internal.KRBError;
 
 public class KrbException extends Exception {
 

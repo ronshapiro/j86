@@ -23,37 +23,37 @@
  * questions.
  */
 
-package com.sun.imageio.plugins.jpeg;
+package j86.com.sun.imageio.plugins.jpeg;
 
-import javax.imageio.ImageTypeSpecifier;
-import javax.imageio.ImageWriteParam;
-import javax.imageio.IIOException;
-import javax.imageio.stream.ImageInputStream;
-import javax.imageio.stream.ImageOutputStream;
-import javax.imageio.metadata.IIOMetadata;
-import javax.imageio.metadata.IIOMetadataNode;
-import javax.imageio.metadata.IIOMetadataFormat;
-import javax.imageio.metadata.IIOMetadataFormatImpl;
-import javax.imageio.metadata.IIOInvalidTreeException;
-import javax.imageio.plugins.jpeg.JPEGQTable;
-import javax.imageio.plugins.jpeg.JPEGHuffmanTable;
-import javax.imageio.plugins.jpeg.JPEGImageWriteParam;
+import j86.javax.imageio.ImageTypeSpecifier;
+import j86.javax.imageio.ImageWriteParam;
+import j86.javax.imageio.IIOException;
+import j86.j86.javax.imageio.stream.ImageInputStream;
+import j86.j86.javax.imageio.stream.ImageOutputStream;
+import j86.j86.javax.imageio.metadata.IIOMetadata;
+import j86.j86.javax.imageio.metadata.IIOMetadataNode;
+import j86.j86.javax.imageio.metadata.IIOMetadataFormat;
+import j86.j86.javax.imageio.metadata.IIOMetadataFormatImpl;
+import j86.j86.javax.imageio.metadata.IIOInvalidTreeException;
+import j86.j86.javax.imageio.plugins.jpeg.JPEGQTable;
+import j86.j86.javax.imageio.plugins.jpeg.JPEGHuffmanTable;
+import j86.j86.javax.imageio.plugins.jpeg.JPEGImageWriteParam;
 
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.w3c.dom.NamedNodeMap;
 
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.ListIterator;
-import java.io.IOException;
-import java.awt.color.ICC_Profile;
-import java.awt.color.ICC_ColorSpace;
-import java.awt.color.ColorSpace;
-import java.awt.image.ColorModel;
-import java.awt.Point;
+import j86.java.util.List;
+import j86.java.util.ArrayList;
+import j86.java.util.Arrays;
+import j86.java.util.Iterator;
+import j86.java.util.ListIterator;
+import j86.java.io.IOException;
+import j86.j86.java.awt.color.ICC_Profile;
+import j86.j86.java.awt.color.ICC_ColorSpace;
+import j86.j86.java.awt.color.ColorSpace;
+import j86.j86.j86.java.awt.image.ColorModel;
+import j86.java.awt.Point;
 
 /**
  * Metadata for the JPEG plug-in.

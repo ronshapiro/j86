@@ -23,32 +23,32 @@
  * questions.
  */
 
-package java.awt;
+package j86.java.awt;
 
-import java.awt.event.*;
+import j86.j86.java.awt.event.*;
 
-import java.awt.peer.ComponentPeer;
+import j86.j86.java.awt.peer.ComponentPeer;
 
-import java.lang.ref.WeakReference;
-import java.lang.reflect.InvocationTargetException;
+import j86.j86.java.lang.ref.WeakReference;
+import j86.j86.j86.java.lang.reflect.InvocationTargetException;
 
-import java.security.AccessController;
-import java.security.PrivilegedAction;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
 
-import java.util.EmptyStackException;
+import j86.java.util.EmptyStackException;
 
-import sun.awt.*;
-import sun.awt.dnd.SunDropTargetEvent;
-import sun.util.logging.PlatformLogger;
+import j86.sun.awt.*;
+import j86.j86.sun.awt.dnd.SunDropTargetEvent;
+import j86.j86.sun.util.logging.PlatformLogger;
 
-import java.util.concurrent.locks.Condition;
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.atomic.AtomicInteger;
+import j86.j86.j86.java.util.concurrent.locks.Condition;
+import j86.j86.j86.java.util.concurrent.locks.Lock;
+import j86.j86.j86.java.util.concurrent.atomic.AtomicInteger;
 
-import java.security.AccessControlContext;
+import j86.java.security.AccessControlContext;
 
-import sun.misc.SharedSecrets;
-import sun.misc.JavaSecurityAccess;
+import j86.sun.misc.SharedSecrets;
+import j86.sun.misc.JavaSecurityAccess;
 
 /**
  * <code>EventQueue</code> is a platform-independent class
@@ -182,7 +182,7 @@ public class EventQueue {
 
     private FwDispatcher fwDispatcher;
 
-    private static final PlatformLogger eventLog = PlatformLogger.getLogger("java.awt.event.EventQueue");
+    private static final PlatformLogger eventLog = PlatformLogger.getLogger("j86.j86.java.awt.event.EventQueue");
 
     static {
         AWTAccessor.setEventQueueAccessor(
@@ -241,7 +241,7 @@ public class EventQueue {
      * and event source, the source <code>Component</code>'s
      * <code>coalesceEvents</code> method will be called.
      *
-     * @param theEvent an instance of <code>java.awt.AWTEvent</code>,
+     * @param theEvent an instance of <code>j86.java.awt.AWTEvent</code>,
      *          or a subclass of it
      * @throws NullPointerException if <code>theEvent</code> is <code>null</code>
      */
@@ -256,7 +256,7 @@ public class EventQueue {
      * and event source, the source <code>Component</code>'s
      * <code>coalesceEvents</code> method will be called.
      *
-     * @param theEvent an instance of <code>java.awt.AWTEvent</code>,
+     * @param theEvent an instance of <code>j86.java.awt.AWTEvent</code>,
      *          or a subclass of it
      */
     private final void postEventPrivate(AWTEvent theEvent) {
@@ -305,7 +305,7 @@ public class EventQueue {
      * Posts the event to the internal Queue of specified priority,
      * coalescing as appropriate.
      *
-     * @param theEvent an instance of <code>java.awt.AWTEvent</code>,
+     * @param theEvent an instance of <code>j86.java.awt.AWTEvent</code>,
      *          or a subclass of it
      * @param priority  the desired priority of the event
      */
@@ -681,7 +681,7 @@ public class EventQueue {
      * </tr>
      * </table>
      * <p>
-     * @param event an instance of <code>java.awt.AWTEvent</code>,
+     * @param event an instance of <code>j86.java.awt.AWTEvent</code>,
      *          or a subclass of it
      * @throws NullPointerException if <code>event</code> is <code>null</code>
      * @since           1.2
@@ -781,9 +781,9 @@ public class EventQueue {
      *         dispatched, or <code>System.currentTimeMillis()</code> if this
      *         method is invoked on a thread other than an event dispatching
      *         thread
-     * @see java.awt.event.InputEvent#getWhen
-     * @see java.awt.event.ActionEvent#getWhen
-     * @see java.awt.event.InvocationEvent#getWhen
+     * @see j86.j86.java.awt.event.InputEvent#getWhen
+     * @see j86.j86.java.awt.event.ActionEvent#getWhen
+     * @see j86.j86.java.awt.event.InvocationEvent#getWhen
      * @see #isDispatchThread
      *
      * @since 1.4
@@ -847,7 +847,7 @@ public class EventQueue {
      *
      * @param newEventQueue an <code>EventQueue</code>
      *          (or subclass thereof) instance to be use
-     * @see      java.awt.EventQueue#pop
+     * @see      j86.java.awt.EventQueue#pop
      * @throws NullPointerException if <code>newEventQueue</code> is <code>null</code>
      * @since           1.2
      */
@@ -913,7 +913,7 @@ public class EventQueue {
      *
      * @exception EmptyStackException if no previous push was made
      *  on this <code>EventQueue</code>
-     * @see      java.awt.EventQueue#push
+     * @see      j86.java.awt.EventQueue#push
      * @since           1.2
      */
     protected void pop() throws EmptyStackException {
@@ -1104,8 +1104,8 @@ public class EventQueue {
      * @return the event dispatch thread associated with this event queue
      *         or <code>null</code> if this event queue doesn't have a
      *         working thread associated with it
-     * @see    java.awt.EventQueue#initDispatchThread
-     * @see    java.awt.EventQueue#detachDispatchThread
+     * @see    j86.java.awt.EventQueue#initDispatchThread
+     * @see    j86.java.awt.EventQueue#detachDispatchThread
      */
     final EventDispatchThread getDispatchThread() {
         pushPopLock.lock();
@@ -1197,7 +1197,7 @@ public class EventQueue {
             // This series of 'instanceof' checks should be replaced with a
             // polymorphic type (for example, an interface which declares a
             // getWhen() method). However, this would require us to make such
-            // a type public, or to place it in sun.awt. Both of these approaches
+            // a type public, or to place it in j86.sun.awt. Both of these approaches
             // have been frowned upon. So for now, we hack.
             //
             // In tiger, we will probably give timestamps to all events, so this

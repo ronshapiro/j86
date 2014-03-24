@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.net;
+package j86.java.net;
 
-import java.io.IOException;
+import j86.java.io.IOException;
 
 /**
  * The abstract class {@code ContentHandler} is the superclass
@@ -46,7 +46,7 @@ import java.io.IOException;
  * <p>
  * If no content handler could be found, URLConnection will
  * look for a content handler in a user-defineable set of places.
- * By default it looks in sun.net.www.content, but users can define a
+ * By default it looks in j86.j86.sun.net.www.content, but users can define a
  * vertical-bar delimited set of class prefixes to search through in
  * addition by defining the java.content.handler.pkgs property.
  * The class name must be of the form:
@@ -60,12 +60,12 @@ import java.io.IOException;
  * the JVM will need the RuntimePermission "getClassLoader".
  *
  * @author  James Gosling
- * @see     java.net.ContentHandler#getContent(java.net.URLConnection)
- * @see     java.net.ContentHandlerFactory
- * @see     java.net.URL#getContent()
- * @see     java.net.URLConnection
- * @see     java.net.URLConnection#getContent()
- * @see     java.net.URLConnection#setContentHandlerFactory(java.net.ContentHandlerFactory)
+ * @see     j86.java.net.ContentHandler#getContent(java.net.URLConnection)
+ * @see     j86.java.net.ContentHandlerFactory
+ * @see     j86.java.net.URL#getContent()
+ * @see     j86.java.net.URLConnection
+ * @see     j86.java.net.URLConnection#getContent()
+ * @see     j86.java.net.URLConnection#setContentHandlerFactory(java.net.ContentHandlerFactory)
  * @since   JDK1.0
  */
 abstract public class ContentHandler {

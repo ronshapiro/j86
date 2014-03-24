@@ -23,13 +23,13 @@
  * questions.
  */
 
-package sun.print;
+package j86.sun.print;
 
-import java.awt.Window;
-import java.awt.print.PrinterJob;
-import javax.print.PrintService;
-import javax.print.ServiceUIFactory;
-import javax.print.attribute.PrintRequestAttributeSet;
+import j86.java.awt.Window;
+import j86.j86.java.awt.print.PrinterJob;
+import j86.javax.print.PrintService;
+import j86.javax.print.ServiceUIFactory;
+import j86.j86.javax.print.attribute.PrintRequestAttributeSet;
 
 public abstract class DocumentPropertiesUI {
 

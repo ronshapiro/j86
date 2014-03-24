@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.security.x509;
+package j86.sun.security.x509;
 
-import java.io.IOException;
-import java.util.Locale;
+import j86.java.io.IOException;
+import j86.java.util.Locale;
 
-import sun.security.util.*;
+import j86.sun.security.util.*;
 
 /**
  * This class implements the DNSName as required by the GeneralNames

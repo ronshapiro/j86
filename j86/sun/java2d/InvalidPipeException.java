@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.java2d;
+package j86.sun.java2d;
 
 /**
  * Signals that some part of a graphics pipeline is not in an appropriate

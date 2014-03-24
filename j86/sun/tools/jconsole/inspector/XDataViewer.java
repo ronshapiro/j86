@@ -23,18 +23,18 @@
  * questions.
  */
 
-package sun.tools.jconsole.inspector;
+package j86.j86.sun.tools.jconsole.inspector;
 
-import javax.swing.JTable;
-import javax.swing.JScrollPane;
-import javax.swing.JButton;
+import j86.javax.swing.JTable;
+import j86.javax.swing.JScrollPane;
+import j86.javax.swing.JButton;
 
-import java.awt.event.MouseListener;
-import java.awt.Component;
-import java.awt.Container;
+import j86.j86.java.awt.event.MouseListener;
+import j86.java.awt.Component;
+import j86.java.awt.Container;
 
-import sun.tools.jconsole.MBeansTab;
-import sun.tools.jconsole.Messages;
+import j86.sun.tools.jconsole.MBeansTab;
+import j86.sun.tools.jconsole.Messages;
 
 public class XDataViewer {
 

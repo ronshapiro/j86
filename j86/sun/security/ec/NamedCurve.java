@@ -23,15 +23,15 @@
  * questions.
  */
 
-package sun.security.ec;
+package j86.sun.security.ec;
 
-import java.io.IOException;
-import java.math.BigInteger;
+import j86.java.io.IOException;
+import j86.java.math.BigInteger;
 
-import java.security.spec.*;
+import j86.j86.java.security.spec.*;
 
-import sun.security.util.DerOutputStream;
-import sun.security.util.ObjectIdentifier;
+import j86.sun.security.util.DerOutputStream;
+import j86.sun.security.util.ObjectIdentifier;
 
 
 /**

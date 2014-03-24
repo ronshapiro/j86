@@ -30,9 +30,9 @@
  * at JavaSoft/Sun.
  */
 
-package com.sun.tools.hat.internal.server;
+package j86.j86.com.sun.tools.hat.internal.server;
 
-import java.io.*;
+import j86.java.io.*;
 
 /**
  * This handles Object Query Language (OQL) help.
@@ -46,7 +46,7 @@ class OQLHelp extends QueryHandler {
     }
 
     public void run() {
-        InputStream is = getClass().getResourceAsStream("/com/sun/tools/hat/resources/oqlhelp.html");
+        InputStream is = getClass().getResourceAsStream("/j86.com.sun.tools.hat/resources/oqlhelp.html");
         int ch = -1;
         try {
             is = new BufferedInputStream(is);

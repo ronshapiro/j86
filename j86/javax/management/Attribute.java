@@ -23,11 +23,11 @@
  * questions.
  */
 
-package javax.management;
+package j86.javax.management;
 
 
 // java import
-import java.io.Serializable;
+import j86.java.io.Serializable;
 
 
 /**

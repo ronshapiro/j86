@@ -29,7 +29,7 @@
  * at JavaSoft/Sun.
  */
 
-var hatPkg = Packages.com.sun.tools.hat.internal;
+var hatPkg = Packages.j86.com.sun.tools.hat.internal;
 
 /**
  * This is JavaScript interface for heap analysis using HAT
@@ -46,7 +46,7 @@ var hatPkg = Packages.com.sun.tools.hat.internal;
 // returns an enumeration that wraps elements of
 // the input enumeration elements.
 function wrapperEnumeration(e) {
-    return new java.util.Enumeration() {
+    return new j86.java.util.Enumeration() {
         hasMoreElements: function() {
             return e.hasMoreElements();
         },
@@ -77,7 +77,7 @@ function filterEnumeration(e, func, wrap) {
         }
     }
 
-    return new java.util.Enumeration() {
+    return new j86.java.util.Enumeration() {
         hasMoreElements: function() {
             findNext();
             return next != undefined;
@@ -99,7 +99,7 @@ function filterEnumeration(e, func, wrap) {
 }
 
 // enumeration that has no elements ..
-var emptyEnumeration = new java.util.Enumeration() {
+var emptyEnumeration = new j86.java.util.Enumeration() {
         hasMoreElements: function() { 
             return false;
         },
@@ -194,7 +194,7 @@ function wrapJavaValue(thing) {
         } else if (thing instanceof hatPkg.model.JavaChar) {
             return thing.toString() + '';
         } else {
-            return java.lang.Double.parseDouble(thing.toString());
+            return j86.java.lang.Double.parseDouble(thing.toString());
         }			
     } else {
         // wrap Java object as script object
@@ -376,7 +376,7 @@ function wrapJavaObject(thing) {
     
     // returns wrapper for Java primitive arrays
     function JavaValueArrayWrapper(array) {
-        var type = String(java.lang.Character.toString(array.elementType));
+        var type = String(j86.java.lang.Character.toString(array.elementType));
         var elements = array.elements;
         // array elements can be accessed in natural syntax
         // also, 'length' property is supported.
@@ -480,7 +480,7 @@ function readHeapDump(file, stack, refs, debug) {
  */
 function wrapHeapSnapshot(heap) {
     function getClazz(clazz) {
-        if (clazz == undefined) clazz = "java.lang.Object";
+        if (clazz == undefined) clazz = "j86.java.lang.Object";
         var type = typeof(clazz);
         if (type == "string") {
             clazz = heap.findClass(clazz);		
@@ -518,7 +518,7 @@ function wrapHeapSnapshot(heap) {
          */
         roots: function() {
             var e = this.snapshot.roots;
-            return new java.util.Enumeration() {
+            return new j86.java.util.Enumeration() {
                 hasMoreElements: function() {
                     return e.hasMoreElements();
                 },
@@ -543,7 +543,7 @@ function wrapHeapSnapshot(heap) {
          *
          * @param callback function to be called. 
          * @param clazz Class whose objects are retrieved.
-         *        Optional, default is 'java.lang.Object'
+         *        Optional, default is 'j86.java.lang.Object'
          * @param includeSubtypes flag to tell if objects of subtypes
          *        are included or not. optional, default is true.
          */
@@ -565,7 +565,7 @@ function wrapHeapSnapshot(heap) {
          * Returns an enumeration of Java objects in the heap.
          * 
          * @param clazz Class whose objects are retrieved.
-         *        Optional, default is 'java.lang.Object'
+         *        Optional, default is 'j86.java.lang.Object'
          * @param includeSubtypes flag to tell if objects of subtypes
          *        are included or not. optional, default is true.
          * @param where (optional) filter expression or function to
@@ -893,7 +893,7 @@ function reachables(jobject, excludes) {
     if (excludes == undefined) {
         excludes = null;
     } else if (typeof(excludes) == 'string') {
-        var st = new java.util.StringTokenizer(excludes, ",");
+        var st = new j86.java.util.StringTokenizer(excludes, ",");
         var excludedFields = new Array();
         while (st.hasMoreTokens()) {
             excludedFields[excludedFields.length] = st.nextToken().trim();
@@ -1010,7 +1010,7 @@ function toHtml(obj) {
     var tmp = unwrapJavaObject(obj);
     if (tmp != undefined) {
         var id = tmp.idString;
-        if (tmp instanceof Packages.com.sun.tools.hat.internal.model.JavaClass) {
+        if (tmp instanceof Packages.j86.j86.com.sun.tools.hat.internal.model.JavaClass) {
             var name = tmp.name;
             return "<a href='/class/" + id + "'>class " + name + "</a>";
         } else {
@@ -1049,7 +1049,7 @@ function toHtml(obj) {
         // a Java object
         obj = wrapIterator(obj);
         // special case for enumeration
-        if (obj instanceof java.util.Enumeration) {
+        if (obj instanceof j86.java.util.Enumeration) {
             var res = "[ ";
             while (obj.hasMoreElements()) {
                 res += toHtml(obj.nextElement()) + ", ";
@@ -1071,8 +1071,8 @@ function toHtml(obj) {
 
 // private function to wrap an Iterator as an Enumeration
 function wrapIterator(itr, wrap) {
-    if (itr instanceof java.util.Iterator) {
-        return new java.util.Enumeration() {
+    if (itr instanceof j86.java.util.Iterator) {
+        return new j86.java.util.Enumeration() {
                    hasMoreElements: function() {
                        return itr.hasNext();
                    },
@@ -1093,7 +1093,7 @@ function wrapIterator(itr, wrap) {
  */
 function toArray(obj) {	
     obj = wrapIterator(obj);
-    if (obj instanceof java.util.Enumeration) {
+    if (obj instanceof j86.java.util.Enumeration) {
         var res = new Array();
         while (obj.hasMoreElements()) {
             res[res.length] = obj.nextElement();
@@ -1132,7 +1132,7 @@ function contains(array, code) {
         func = new Function("it", "index", "array",  "return " + code);
     }
 
-    if (array instanceof java.util.Enumeration) {
+    if (array instanceof j86.java.util.Enumeration) {
         var index = 0;
         while (array.hasMoreElements()) {
             var it = array.nextElement();
@@ -1165,9 +1165,9 @@ function concat(array1, array2) {
     array2 = wrapIterator(array2);
     if (array1 instanceof Array && array2 instanceof Array) {
         return array1.concat(array2);
-    } else if (array1 instanceof java.util.Enumeration &&
-               array2 instanceof java.util.Enumeration) {
-        return new Packages.com.sun.tools.hat.internal.util.CompositeEnumeration(array1, array2);
+    } else if (array1 instanceof j86.java.util.Enumeration &&
+               array2 instanceof j86.java.util.Enumeration) {
+        return new Packages.j86.j86.com.sun.tools.hat.internal.util.CompositeEnumeration(array1, array2);
     } else {
         return undefined;
     }
@@ -1197,7 +1197,7 @@ function count(array, code) {
     }
 
     var result = 0;
-    if (array instanceof java.util.Enumeration) {
+    if (array instanceof j86.java.util.Enumeration) {
         var index = 0;
         while (array.hasMoreElements()) {
             var it = array.nextElement();
@@ -1238,7 +1238,7 @@ function filter(array, code) {
     if (typeof(code) != 'function') {
         func = new Function("it", "index", "array", "result", "return " + code);
     }
-    if (array instanceof java.util.Enumeration) {
+    if (array instanceof j86.java.util.Enumeration) {
         return filterEnumeration(array, func, false);
     } else {
         var result = new Array();
@@ -1261,7 +1261,7 @@ function length(array) {
     array = wrapIterator(array);
     if (array instanceof Array) {
         return array.length;
-    } else if (array instanceof java.util.Enumeration) {
+    } else if (array instanceof j86.java.util.Enumeration) {
         var cnt = 0;
         while (array.hasMoreElements()) {
             array.nextElement(); 
@@ -1302,9 +1302,9 @@ function map(array, code) {
         func = new Function("it", "index", "array", "result", "return " + code);
     }
 
-    if (array instanceof java.util.Enumeration) {
+    if (array instanceof j86.java.util.Enumeration) {
         var index = 0;
-        var result = new java.util.Enumeration() {
+        var result = new j86.java.util.Enumeration() {
             hasMoreElements: function() {
                 return array.hasMoreElements();
             },
@@ -1329,7 +1329,7 @@ function minmax(array, code) {
         code = new Function("lhs", "rhs", "return " + code);
     }
     array = wrapIterator(array);
-    if (array instanceof java.util.Enumeration) {
+    if (array instanceof j86.java.util.Enumeration) {
         if (! array.hasMoreElements()) {
             return undefined;
         }
@@ -1425,7 +1425,7 @@ function sum(array, code) {
         array = map(array, code);
     }
     var result = 0;
-    if (array instanceof java.util.Enumeration) {
+    if (array instanceof j86.java.util.Enumeration) {
         while (array.hasMoreElements()) {
             result += Number(array.nextElement());
         }
@@ -1454,7 +1454,7 @@ function unique(array, code) {
         code = new Function("it", "return " + code);
     }
     var tmp = new Object();
-    if (array instanceof java.util.Enumeration) {
+    if (array instanceof j86.java.util.Enumeration) {
         while (array.hasMoreElements()) {
             var it = array.nextElement();
             tmp[code(it)] = it;

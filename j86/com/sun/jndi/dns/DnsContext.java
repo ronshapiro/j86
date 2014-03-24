@@ -23,17 +23,17 @@
  * questions.
  */
 
-package com.sun.jndi.dns;
+package j86.com.sun.jndi.dns;
 
 
-import java.util.Enumeration;
-import java.util.Hashtable;
+import j86.java.util.Enumeration;
+import j86.java.util.Hashtable;
 
-import javax.naming.*;
-import javax.naming.directory.*;
-import javax.naming.spi.DirectoryManager;
+import j86.javax.naming.*;
+import j86.j86.javax.naming.directory.*;
+import j86.j86.javax.naming.spi.DirectoryManager;
 
-import com.sun.jndi.toolkit.ctx.*;
+import j86.com.sun.jndi.toolkit.ctx.*;
 
 
 /**
@@ -70,16 +70,16 @@ public class DnsContext extends ComponentDirContext {
     private static final int DEFAULT_INIT_TIMEOUT = 1000;
     private static final int DEFAULT_RETRIES = 4;
     private static final String INIT_TIMEOUT =
-                                          "com.sun.jndi.dns.timeout.initial";
-    private static final String RETRIES = "com.sun.jndi.dns.timeout.retries";
+                                          "j86.com.sun.jndi.dns.timeout.initial";
+    private static final String RETRIES = "j86.com.sun.jndi.dns.timeout.retries";
 
     // The resource record type and class to use for lookups, and the
     // property used to modify them
     private CT lookupCT;
-    private static final String LOOKUP_ATTR = "com.sun.jndi.dns.lookup.attr";
+    private static final String LOOKUP_ATTR = "j86.com.sun.jndi.dns.lookup.attr";
 
     // Property used to disallow recursion on queries
-    private static final String RECURSION = "com.sun.jndi.dns.recursion";
+    private static final String RECURSION = "j86.com.sun.jndi.dns.recursion";
 
     // ANY == ResourceRecord.QCLASS_STAR == ResourceRecord.QTYPE_STAR
     private static final int ANY = ResourceRecord.QTYPE_STAR;
@@ -995,8 +995,8 @@ abstract class BaseNameClassPairEnumeration<T> implements NamingEnumeration<T> {
         try {
             return next();
         } catch (NamingException e) {
-            java.util.NoSuchElementException nsee =
-                    new java.util.NoSuchElementException();
+            j86.java.util.NoSuchElementException nsee =
+                    new j86.java.util.NoSuchElementException();
             nsee.initCause(e);
             throw nsee;
         }
@@ -1022,13 +1022,13 @@ final class NameClassPairEnumeration
     @Override
     public NameClassPair next() throws NamingException {
         if (!hasMore()) {
-            throw new java.util.NoSuchElementException();
+            throw new j86.java.util.NoSuchElementException();
         }
         NameNode nnode = nodes.nextElement();
         String className = (nnode.isZoneCut() ||
                             (nnode.getChildren() != null))
-            ? "javax.naming.directory.DirContext"
-            : "java.lang.Object";
+            ? "j86.j86.javax.naming.directory.DirContext"
+            : "j86.java.lang.Object";
 
         String label = nnode.getLabel();
         Name compName = (new DnsName()).add(label);
@@ -1058,7 +1058,7 @@ final class BindingEnumeration extends BaseNameClassPairEnumeration<Binding>
     @Override
     public Binding next() throws NamingException {
         if (!hasMore()) {
-            throw (new java.util.NoSuchElementException());
+            throw (new j86.java.util.NoSuchElementException());
         }
         NameNode nnode = nodes.nextElement();
 

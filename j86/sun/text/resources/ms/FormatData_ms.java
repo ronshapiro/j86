@@ -38,9 +38,9 @@
  * of the copyright holder.
  */
 
-package sun.text.resources.ms;
+package j86.j86.j86.sun.text.resources.ms;
 
-import sun.util.resources.ParallelListResourceBundle;
+import j86.j86.sun.util.resources.ParallelListResourceBundle;
 
 public class FormatData_ms extends ParallelListResourceBundle {
     protected final Object[][] getContents() {

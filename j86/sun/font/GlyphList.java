@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.font;
+package j86.sun.font;
 
-import java.awt.Font;
-import java.awt.font.GlyphVector;
-import java.awt.font.FontRenderContext;
-import sun.java2d.loops.FontInfo;
+import j86.java.awt.Font;
+import j86.j86.java.awt.font.GlyphVector;
+import j86.j86.java.awt.font.FontRenderContext;
+import j86.j86.sun.java2d.loops.FontInfo;
 
 /*
  * This class represents a list of actual renderable glyphs.

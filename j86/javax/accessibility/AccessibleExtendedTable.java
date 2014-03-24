@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.accessibility;
+package j86.javax.accessibility;
 
 /**
   * Class AccessibleExtendedTable provides extended information about

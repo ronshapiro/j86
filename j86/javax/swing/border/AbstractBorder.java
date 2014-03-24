@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.border;
+package j86.j86.javax.swing.border;
 
-import java.awt.Graphics;
-import java.awt.Insets;
-import java.awt.Rectangle;
-import java.awt.Component;
-import java.io.Serializable;
+import j86.java.awt.Graphics;
+import j86.java.awt.Insets;
+import j86.java.awt.Rectangle;
+import j86.java.awt.Component;
+import j86.java.io.Serializable;
 
 /**
  * A class that implements an empty border with no size.
@@ -41,8 +41,8 @@ import java.io.Serializable;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @author David Kloba
  */
@@ -145,8 +145,8 @@ public abstract class AbstractBorder implements Border, Serializable
      * @return the baseline or &lt; 0 indicating there is no reasonable
      *         baseline
      * @throws IllegalArgumentException if width or height is &lt; 0
-     * @see java.awt.Component#getBaseline(int,int)
-     * @see java.awt.Component#getBaselineResizeBehavior()
+     * @see j86.java.awt.Component#getBaseline(int,int)
+     * @see j86.java.awt.Component#getBaselineResizeBehavior()
      * @since 1.6
      */
     public int getBaseline(Component c, int width, int height) {
@@ -176,8 +176,8 @@ public abstract class AbstractBorder implements Border, Serializable
      * @param c <code>Component</code> to return baseline resize behavior for
      * @return an enum indicating how the baseline changes as the border is
      *         resized
-     * @see java.awt.Component#getBaseline(int,int)
-     * @see java.awt.Component#getBaselineResizeBehavior()
+     * @see j86.java.awt.Component#getBaseline(int,int)
+     * @see j86.java.awt.Component#getBaselineResizeBehavior()
      * @since 1.6
      */
     public Component.BaselineResizeBehavior getBaselineResizeBehavior(

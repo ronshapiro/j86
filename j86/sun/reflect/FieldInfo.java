@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.reflect;
+package j86.sun.reflect;
 
-import java.lang.reflect.Field;
-import java.lang.reflect.Modifier;
+import j86.j86.j86.java.lang.reflect.Field;
+import j86.j86.j86.java.lang.reflect.Modifier;
 
 /** NOTE: obsolete as of JDK 1.4 B75 and should be removed from the
     workspace (FIXME) */
@@ -38,7 +38,7 @@ public class FieldInfo {
     private String signature;
     private int    modifiers;
     // This is compatible with the old reflection implementation's
-    // "slot" value to allow sun.misc.Unsafe to work
+    // "slot" value to allow j86.sun.misc.Unsafe to work
     private int    slot;
 
     // Not really necessary to provide a constructor since the VM

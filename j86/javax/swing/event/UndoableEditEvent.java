@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.swing.event;
+package j86.j86.javax.swing.event;
 
-import javax.swing.undo.*;
+import j86.j86.javax.swing.undo.*;
 
 /**
  * An event indicating that an operation which can be undone has occurred.
@@ -36,12 +36,12 @@ import javax.swing.undo.*;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @author Ray Ryan
  */
-public class UndoableEditEvent extends java.util.EventObject {
+public class UndoableEditEvent extends j86.java.util.EventObject {
     private UndoableEdit myEdit;
 
     /**

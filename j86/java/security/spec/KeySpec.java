@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.security.spec;
+package j86.j86.java.security.spec;
 
 /**
  * A (transparent) specification of the key material
@@ -48,8 +48,8 @@ package java.security.spec;
  * @author Jan Luehe
  *
  *
- * @see java.security.Key
- * @see java.security.KeyFactory
+ * @see j86.java.security.Key
+ * @see j86.java.security.KeyFactory
  * @see EncodedKeySpec
  * @see X509EncodedKeySpec
  * @see PKCS8EncodedKeySpec

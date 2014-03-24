@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.security.x509;
+package j86.sun.security.x509;
 
-import java.io.IOException;
-import java.util.*;
+import j86.java.io.IOException;
+import j86.java.util.*;
 
-import sun.security.util.BitArray;
-import sun.security.util.DerOutputStream;
-import sun.security.util.DerValue;
+import j86.sun.security.util.BitArray;
+import j86.sun.security.util.DerOutputStream;
+import j86.sun.security.util.DerValue;
 
 /**
  * Represents the DistributionPointName ASN.1 type.

@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.swing.event;
+package j86.j86.javax.swing.event;
 
-import java.util.EventObject;
-import javax.swing.table.*;
+import j86.java.util.EventObject;
+import j86.j86.javax.swing.table.*;
 
 /**
  * TableModelEvent is used to notify listeners that a table model
@@ -58,14 +58,14 @@ import javax.swing.table.*;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @author Alan Chung
  * @author Philip Milne
  * @see TableModel
  */
-public class TableModelEvent extends java.util.EventObject
+public class TableModelEvent extends j86.java.util.EventObject
 {
     /** Identifies the addition of new rows or columns. */
     public static final int INSERT =  1;

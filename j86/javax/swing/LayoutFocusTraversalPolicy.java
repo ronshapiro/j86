@@ -22,14 +22,14 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing;
+package j86.javax.swing;
 
-import java.awt.Component;
-import java.awt.Container;
-import java.awt.ComponentOrientation;
-import java.util.Comparator;
-import java.io.*;
-import sun.awt.SunToolkit;
+import j86.java.awt.Component;
+import j86.java.awt.Container;
+import j86.java.awt.ComponentOrientation;
+import j86.java.util.Comparator;
+import j86.java.io.*;
+import j86.sun.awt.SunToolkit;
 
 
 /**
@@ -44,7 +44,7 @@ import sun.awt.SunToolkit;
  *
  * @author David Mendenhall
  *
- * @see java.awt.ComponentOrientation
+ * @see j86.java.awt.ComponentOrientation
  * @since 1.4
  */
 public class LayoutFocusTraversalPolicy extends SortingFocusTraversalPolicy
@@ -80,7 +80,7 @@ public class LayoutFocusTraversalPolicy extends SortingFocusTraversalPolicy
      * default Component to focus. This behavior can be disabled using the
      * <code>setImplicitDownCycleTraversal</code> method.
      * <p>
-     * If aContainer is <a href="../../java/awt/doc-files/FocusSpec.html#FocusTraversalPolicyProviders">focus
+     * If aContainer is <a href="../../j86.java.awt/doc-files/FocusSpec.html#FocusTraversalPolicyProviders">focus
      * traversal policy provider</a>, the focus is always transferred down-cycle.
      *
      * @param aContainer a focus cycle root of aComponent or a focus traversal policy provider
@@ -116,7 +116,7 @@ public class LayoutFocusTraversalPolicy extends SortingFocusTraversalPolicy
      * default Component to focus. This behavior can be disabled using the
      * <code>setImplicitDownCycleTraversal</code> method.
      * <p>
-     * If aContainer is <a href="../../java/awt/doc-files/FocusSpec.html#FocusTraversalPolicyProviders">focus
+     * If aContainer is <a href="../../j86.java.awt/doc-files/FocusSpec.html#FocusTraversalPolicyProviders">focus
      * traversal policy provider</a>, the focus is always transferred down-cycle.
      *
      * @param aContainer a focus cycle root of aComponent or a focus traversal policy provider
@@ -213,13 +213,13 @@ public class LayoutFocusTraversalPolicy extends SortingFocusTraversalPolicy
      *
      * @param aComponent the <code>Component</code> whose fitness
      *                   as a focus owner is to be tested
-     * @see java.awt.Component#isVisible
-     * @see java.awt.Component#isDisplayable
-     * @see java.awt.Component#isEnabled
-     * @see java.awt.Component#isFocusable
-     * @see javax.swing.plaf.ComboBoxUI#isFocusTraversable
-     * @see javax.swing.JComponent#getInputMap
-     * @see java.awt.DefaultFocusTraversalPolicy#accept
+     * @see j86.java.awt.Component#isVisible
+     * @see j86.java.awt.Component#isDisplayable
+     * @see j86.java.awt.Component#isEnabled
+     * @see j86.java.awt.Component#isFocusable
+     * @see j86.j86.javax.swing.plaf.ComboBoxUI#isFocusTraversable
+     * @see j86.javax.swing.JComponent#getInputMap
+     * @see j86.java.awt.DefaultFocusTraversalPolicy#accept
      * @return <code>true</code> if <code>aComponent</code> is a valid choice
      *         for a focus owner;
      *         otherwise <code>false</code>
@@ -227,11 +227,11 @@ public class LayoutFocusTraversalPolicy extends SortingFocusTraversalPolicy
      protected boolean accept(Component aComponent) {
         if (!super.accept(aComponent)) {
             return false;
-        } else if (SunToolkit.isInstanceOf(aComponent, "javax.swing.JTable")) {
+        } else if (SunToolkit.isInstanceOf(aComponent, "j86.javax.swing.JTable")) {
             // JTable only has ancestor focus bindings, we thus force it
             // to be focusable by returning true here.
             return true;
-        } else if (SunToolkit.isInstanceOf(aComponent, "javax.swing.JComboBox")) {
+        } else if (SunToolkit.isInstanceOf(aComponent, "j86.javax.swing.JComboBox")) {
             JComboBox box = (JComboBox)aComponent;
             return box.getUI().isFocusTraversable(box);
         } else if (aComponent instanceof JComponent) {
@@ -266,7 +266,7 @@ public class LayoutFocusTraversalPolicy extends SortingFocusTraversalPolicy
 // Create our own subclass and change accept to public so that we can call
 // accept.
 class SwingDefaultFocusTraversalPolicy
-    extends java.awt.DefaultFocusTraversalPolicy
+    extends j86.java.awt.DefaultFocusTraversalPolicy
 {
     public boolean accept(Component aComponent) {
         return super.accept(aComponent);

@@ -23,11 +23,11 @@
  * questions.
  */
 
-package javax.naming.event;
-import javax.naming.Name;
-import javax.naming.NamingException;
-import javax.naming.directory.DirContext;
-import javax.naming.directory.SearchControls;
+package j86.j86.javax.naming.event;
+import j86.javax.naming.Name;
+import j86.javax.naming.NamingException;
+import j86.j86.javax.naming.directory.DirContext;
+import j86.j86.javax.naming.directory.SearchControls;
 
 /**
  * Contains methods for registering listeners to be notified
@@ -84,7 +84,7 @@ public interface EventDirContext extends EventContext, DirContext {
      * @exception NamingException If a problem was encountered while
      * adding the listener.
      * @see EventContext#removeNamingListener
-     * @see javax.naming.directory.DirContext#search(javax.naming.Name, java.lang.String, javax.naming.directory.SearchControls)
+     * @see j86.j86.javax.naming.directory.DirContext#search(javax.naming.Name, j86.java.lang.String, javax.naming.directory.SearchControls)
      */
     void addNamingListener(Name target, String filter, SearchControls ctls,
         NamingListener l) throws NamingException;
@@ -104,7 +104,7 @@ public interface EventDirContext extends EventContext, DirContext {
      * @exception NamingException If a problem was encountered while
      * adding the listener.
      * @see EventContext#removeNamingListener
-     * @see javax.naming.directory.DirContext#search(java.lang.String, java.lang.String, javax.naming.directory.SearchControls)
+     * @see j86.j86.javax.naming.directory.DirContext#search(j86.java.lang.String, java.lang.String, javax.naming.directory.SearchControls)
      */
     void addNamingListener(String target, String filter, SearchControls ctls,
         NamingListener l) throws NamingException;
@@ -131,7 +131,7 @@ public interface EventDirContext extends EventContext, DirContext {
      * @exception NamingException If a problem was encountered while
      * adding the listener.
      * @see EventContext#removeNamingListener
-     * @see javax.naming.directory.DirContext#search(javax.naming.Name, java.lang.String, java.lang.Object[], javax.naming.directory.SearchControls)
+     * @see j86.j86.javax.naming.directory.DirContext#search(javax.naming.Name, j86.java.lang.String, java.lang.Object[], javax.naming.directory.SearchControls)
      */
     void addNamingListener(Name target, String filter, Object[] filterArgs,
         SearchControls ctls, NamingListener l) throws NamingException;
@@ -153,7 +153,7 @@ public interface EventDirContext extends EventContext, DirContext {
      * @exception NamingException If a problem was encountered while
      * adding the listener.
      * @see EventContext#removeNamingListener
-     * @see javax.naming.directory.DirContext#search(java.lang.String, java.lang.String, java.lang.Object[], javax.naming.directory.SearchControls)      */
+     * @see j86.j86.javax.naming.directory.DirContext#search(j86.java.lang.String, java.lang.String, java.lang.Object[], javax.naming.directory.SearchControls)      */
     void addNamingListener(String target, String filter, Object[] filterArgs,
         SearchControls ctls, NamingListener l) throws NamingException;
 }

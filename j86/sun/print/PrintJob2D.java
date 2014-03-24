@@ -23,56 +23,56 @@
  * questions.
  */
 
-package sun.print;
+package j86.sun.print;
 
-import java.awt.Dimension;
-import java.awt.Frame;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.PrintJob;
-import java.awt.JobAttributes;
-import java.awt.JobAttributes.*;
-import java.awt.PageAttributes;
-import java.awt.PageAttributes.*;
+import j86.java.awt.Dimension;
+import j86.java.awt.Frame;
+import j86.java.awt.Graphics;
+import j86.java.awt.Graphics2D;
+import j86.java.awt.PrintJob;
+import j86.java.awt.JobAttributes;
+import j86.java.awt.JobAttributes.*;
+import j86.java.awt.PageAttributes;
+import j86.java.awt.PageAttributes.*;
 
-import java.awt.print.PageFormat;
-import java.awt.print.Paper;
-import java.awt.print.Printable;
-import java.awt.print.PrinterException;
-import java.awt.print.PrinterJob;
+import j86.j86.java.awt.print.PageFormat;
+import j86.j86.java.awt.print.Paper;
+import j86.j86.java.awt.print.Printable;
+import j86.j86.java.awt.print.PrinterException;
+import j86.j86.java.awt.print.PrinterJob;
 
-import java.io.File;
-import java.io.FilePermission;
-import java.io.IOException;
+import j86.java.io.File;
+import j86.java.io.FilePermission;
+import j86.java.io.IOException;
 
-import java.net.URI;
-import java.net.URISyntaxException;
+import j86.java.net.URI;
+import j86.java.net.URISyntaxException;
 
-import java.util.ArrayList;
-import java.util.Properties;
+import j86.java.util.ArrayList;
+import j86.java.util.Properties;
 
-import javax.print.PrintService;
-import javax.print.attribute.HashPrintRequestAttributeSet;
-import javax.print.attribute.PrintRequestAttributeSet;
-import javax.print.attribute.ResolutionSyntax;
-import javax.print.attribute.Size2DSyntax;
-import javax.print.attribute.standard.Chromaticity;
-import javax.print.attribute.standard.Copies;
-import javax.print.attribute.standard.Destination;
-import javax.print.attribute.standard.DialogTypeSelection;
-import javax.print.attribute.standard.JobName;
-import javax.print.attribute.standard.MediaSize;
-import javax.print.attribute.standard.PrintQuality;
-import javax.print.attribute.standard.PrinterResolution;
-import javax.print.attribute.standard.SheetCollate;
-import javax.print.attribute.standard.Sides;
-import javax.print.attribute.standard.Media;
-import javax.print.attribute.standard.OrientationRequested;
-import javax.print.attribute.standard.MediaSizeName;
-import javax.print.attribute.standard.PageRanges;
+import j86.javax.print.PrintService;
+import j86.j86.javax.print.attribute.HashPrintRequestAttributeSet;
+import j86.j86.javax.print.attribute.PrintRequestAttributeSet;
+import j86.j86.javax.print.attribute.ResolutionSyntax;
+import j86.j86.javax.print.attribute.Size2DSyntax;
+import j86.j86.j86.javax.print.attribute.standard.Chromaticity;
+import j86.j86.j86.javax.print.attribute.standard.Copies;
+import j86.j86.j86.javax.print.attribute.standard.Destination;
+import j86.j86.j86.javax.print.attribute.standard.DialogTypeSelection;
+import j86.j86.j86.javax.print.attribute.standard.JobName;
+import j86.j86.j86.javax.print.attribute.standard.MediaSize;
+import j86.j86.j86.javax.print.attribute.standard.PrintQuality;
+import j86.j86.j86.javax.print.attribute.standard.PrinterResolution;
+import j86.j86.j86.javax.print.attribute.standard.SheetCollate;
+import j86.j86.j86.javax.print.attribute.standard.Sides;
+import j86.j86.j86.javax.print.attribute.standard.Media;
+import j86.j86.j86.javax.print.attribute.standard.OrientationRequested;
+import j86.j86.j86.javax.print.attribute.standard.MediaSizeName;
+import j86.j86.j86.javax.print.attribute.standard.PageRanges;
 
-import sun.print.SunPageSelection;
-import sun.print.SunMinMaxPage;
+import j86.sun.print.SunPageSelection;
+import j86.sun.print.SunMinMaxPage;
 
 /**
  * A class which initiates and executes a print job using
@@ -115,7 +115,7 @@ public class PrintJob2D extends PrintJob implements Printable, Runnable {
     };
 
     /* This array maps the above array to the objects used by the
-     * javax.print APIs
+     * j86.javax.print APIs
          */
     private static final MediaSizeName JAVAXSIZES[] = {
         null, null, MediaSizeName.ISO_A0,
@@ -945,7 +945,7 @@ public class PrintJob2D extends PrintJob implements Printable, Runnable {
      * @return PAGE_EXISTS if the page is rendered successfully
      *         or NO_SUCH_PAGE if <code>pageIndex</code> specifies a
      *         non-existent page.
-     * @exception java.awt.print.PrinterException
+     * @exception j86.j86.java.awt.print.PrinterException
      *         thrown when the print job is terminated.
      */
     public int print(Graphics graphics, PageFormat pageFormat, int pageIndex)

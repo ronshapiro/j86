@@ -23,13 +23,13 @@
  * questions.
  */
 
-package com.sun.java.swing.plaf.motif;
+package j86.j86.com.sun.java.swing.plaf.motif;
 
-import sun.awt.AppContext;
+import j86.sun.awt.AppContext;
 
-import javax.swing.*;
-import javax.swing.plaf.basic.BasicLabelUI;
-import javax.swing.plaf.ComponentUI;
+import j86.javax.swing.*;
+import j86.j86.j86.javax.swing.plaf.basic.BasicLabelUI;
+import j86.j86.javax.swing.plaf.ComponentUI;
 
 /**
  * A Motif L&F implementation of LabelUI.

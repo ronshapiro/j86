@@ -23,22 +23,22 @@
  * questions.
  */
 
-package sun.security.util;
+package j86.sun.security.util;
 
-import java.security.Key;
-import java.security.PrivilegedAction;
-import java.security.AccessController;
-import java.security.InvalidKeyException;
-import java.security.interfaces.ECKey;
-import java.security.interfaces.RSAKey;
-import java.security.interfaces.DSAKey;
-import java.security.spec.KeySpec;
-import javax.crypto.SecretKey;
-import javax.crypto.interfaces.DHKey;
-import javax.crypto.interfaces.DHPublicKey;
-import javax.crypto.spec.DHParameterSpec;
-import javax.crypto.spec.DHPublicKeySpec;
-import java.math.BigInteger;
+import j86.java.security.Key;
+import j86.java.security.PrivilegedAction;
+import j86.java.security.AccessController;
+import j86.java.security.InvalidKeyException;
+import j86.j86.java.security.interfaces.ECKey;
+import j86.j86.java.security.interfaces.RSAKey;
+import j86.j86.java.security.interfaces.DSAKey;
+import j86.j86.java.security.spec.KeySpec;
+import j86.javax.crypto.SecretKey;
+import j86.j86.javax.crypto.interfaces.DHKey;
+import j86.j86.javax.crypto.interfaces.DHPublicKey;
+import j86.j86.javax.crypto.spec.DHParameterSpec;
+import j86.j86.javax.crypto.spec.DHPublicKeySpec;
+import j86.java.math.BigInteger;
 
 /**
  * A utility class to get key length, valiate keys, etc.

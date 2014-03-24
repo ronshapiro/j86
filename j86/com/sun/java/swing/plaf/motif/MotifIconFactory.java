@@ -23,19 +23,19 @@
  * questions.
  */
 
-package com.sun.java.swing.plaf.motif;
+package j86.j86.com.sun.java.swing.plaf.motif;
 
-import javax.swing.*;
+import j86.javax.swing.*;
 
-import javax.swing.plaf.UIResource;
+import j86.j86.javax.swing.plaf.UIResource;
 
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.Dimension;
-import java.awt.Graphics;
-import java.awt.Polygon;
+import j86.java.awt.Color;
+import j86.java.awt.Component;
+import j86.java.awt.Dimension;
+import j86.java.awt.Graphics;
+import j86.java.awt.Polygon;
 
-import java.io.Serializable;
+import j86.java.io.Serializable;
 
 /**
  * Icon factory for the CDE/Motif Look and Feel

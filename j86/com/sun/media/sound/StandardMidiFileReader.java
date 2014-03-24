@@ -23,26 +23,26 @@
  * questions.
  */
 
-package com.sun.media.sound;
+package j86.com.sun.media.sound;
 
-import java.io.DataInputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.InputStream;
-import java.io.IOException;
-import java.io.EOFException;
-import java.io.BufferedInputStream;
-import java.net.URL;
+import j86.java.io.DataInputStream;
+import j86.java.io.File;
+import j86.java.io.FileInputStream;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
+import j86.java.io.EOFException;
+import j86.java.io.BufferedInputStream;
+import j86.java.net.URL;
 
-import javax.sound.midi.MidiFileFormat;
-import javax.sound.midi.InvalidMidiDataException;
-import javax.sound.midi.MetaMessage;
-import javax.sound.midi.MidiEvent;
-import javax.sound.midi.MidiMessage;
-import javax.sound.midi.Sequence;
-import javax.sound.midi.SysexMessage;
-import javax.sound.midi.Track;
-import javax.sound.midi.spi.MidiFileReader;
+import j86.javax.sound.midi.MidiFileFormat;
+import j86.javax.sound.midi.InvalidMidiDataException;
+import j86.javax.sound.midi.MetaMessage;
+import j86.javax.sound.midi.MidiEvent;
+import j86.javax.sound.midi.MidiMessage;
+import j86.javax.sound.midi.Sequence;
+import j86.javax.sound.midi.SysexMessage;
+import j86.javax.sound.midi.Track;
+import j86.j86.javax.sound.midi.spi.MidiFileReader;
 
 
 

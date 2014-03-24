@@ -23,14 +23,14 @@
  * questions.
  */
 
-package java.awt.image;
+package j86.j86.j86.java.awt.image;
 
-import java.awt.Image;
-import java.awt.image.ImageFilter;
-import java.awt.image.ImageConsumer;
-import java.awt.image.ImageProducer;
-import java.util.Hashtable;
-import java.awt.image.ColorModel;
+import j86.java.awt.Image;
+import j86.j86.j86.java.awt.image.ImageFilter;
+import j86.j86.j86.java.awt.image.ImageConsumer;
+import j86.j86.j86.java.awt.image.ImageProducer;
+import j86.java.util.Hashtable;
+import j86.j86.j86.java.awt.image.ColorModel;
 
 /**
  * This class is an implementation of the ImageProducer interface which
@@ -61,7 +61,7 @@ public class FilteredImageSource implements ImageProducer {
      * @param orig the specified <code>ImageProducer</code>
      * @param imgf the specified <code>ImageFilter</code>
      * @see ImageFilter
-     * @see java.awt.Component#createImage
+     * @see j86.java.awt.Component#createImage
      */
     public FilteredImageSource(ImageProducer orig, ImageFilter imgf) {
         src = orig;

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.io;
+package j86.java.io;
 
 /**
  * This abstract class is the superclass of all classes representing
@@ -35,12 +35,12 @@ package java.io;
  * that writes one byte of output.
  *
  * @author  Arthur van Hoff
- * @see     java.io.BufferedOutputStream
- * @see     java.io.ByteArrayOutputStream
- * @see     java.io.DataOutputStream
- * @see     java.io.FilterOutputStream
- * @see     java.io.InputStream
- * @see     java.io.OutputStream#write(int)
+ * @see     j86.java.io.BufferedOutputStream
+ * @see     j86.java.io.ByteArrayOutputStream
+ * @see     j86.java.io.DataOutputStream
+ * @see     j86.java.io.FilterOutputStream
+ * @see     j86.java.io.InputStream
+ * @see     j86.java.io.OutputStream#write(int)
  * @since   JDK1.0
  */
 public abstract class OutputStream implements Closeable, Flushable {
@@ -69,7 +69,7 @@ public abstract class OutputStream implements Closeable, Flushable {
      *
      * @param      b   the data.
      * @exception  IOException  if an I/O error occurs.
-     * @see        java.io.OutputStream#write(byte[], int, int)
+     * @see        j86.java.io.OutputStream#write(byte[], int, int)
      */
     public void write(byte b[]) throws IOException {
         write(b, 0, b.length);

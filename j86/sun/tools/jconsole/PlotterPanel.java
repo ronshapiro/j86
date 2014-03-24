@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.tools.jconsole;
+package j86.sun.tools.jconsole;
 
-import java.awt.event.*;
+import j86.j86.java.awt.event.*;
 
-import javax.accessibility.*;
-import javax.swing.*;
+import j86.javax.accessibility.*;
+import j86.javax.swing.*;
 
 @SuppressWarnings("serial")
 public class PlotterPanel extends BorderedComponent {

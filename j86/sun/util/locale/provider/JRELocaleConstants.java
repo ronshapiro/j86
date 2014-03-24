@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.util.locale.provider;
+package j86.j86.j86.sun.util.locale.provider;
 
-import java.util.Locale;
+import j86.java.util.Locale;
 
 /**
  * Singletons for the well-known JRE-specific Locales. (th_TH isn't JRE specific,

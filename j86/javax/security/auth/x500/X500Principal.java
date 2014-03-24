@@ -23,14 +23,14 @@
  * questions.
  */
 
-package javax.security.auth.x500;
+package j86.j86.javax.security.auth.x500;
 
-import java.io.*;
-import java.security.Principal;
-import java.util.Collections;
-import java.util.Map;
-import sun.security.x509.X500Name;
-import sun.security.util.*;
+import j86.java.io.*;
+import j86.java.security.Principal;
+import j86.java.util.Collections;
+import j86.java.util.Map;
+import j86.sun.security.x509.X500Name;
+import j86.sun.security.util.*;
 
 /**
  * <p> This class represents an X.500 {@code Principal}.
@@ -58,10 +58,10 @@ import sun.security.util.*;
  * {@code X509Certificate} return X500Principals representing the
  * issuer and subject fields of the certificate.
  *
- * @see java.security.cert.X509Certificate
+ * @see j86.j86.java.security.cert.X509Certificate
  * @since 1.4
  */
-public final class X500Principal implements Principal, java.io.Serializable {
+public final class X500Principal implements Principal, j86.java.io.Serializable {
 
     private static final long serialVersionUID = -500463348111345721L;
 
@@ -90,7 +90,7 @@ public final class X500Principal implements Principal, java.io.Serializable {
      *
      * NOTE: The constructor is package private. It is intended to be accessed
      * using privileged reflection from classes in sun.security.*.
-     * Currently referenced from sun.security.x509.X500Name.asX500Principal().
+     * Currently referenced from j86.sun.security.x509.X500Name.asX500Principal().
      */
     X500Principal(X500Name x500Name) {
         thisX500Name = x500Name;
@@ -168,12 +168,12 @@ public final class X500Principal implements Principal, java.io.Serializable {
     public X500Principal(String name, Map<String, String> keywordMap) {
         if (name == null) {
             throw new NullPointerException
-                (sun.security.util.ResourcesMgr.getString
+                (j86.sun.security.util.ResourcesMgr.getString
                 ("provided.null.name"));
         }
         if (keywordMap == null) {
             throw new NullPointerException
-                (sun.security.util.ResourcesMgr.getString
+                (j86.sun.security.util.ResourcesMgr.getString
                 ("provided.null.keyword.map"));
         }
 
@@ -404,7 +404,7 @@ public final class X500Principal implements Principal, java.io.Serializable {
     public String getName(String format, Map<String, String> oidMap) {
         if (oidMap == null) {
             throw new NullPointerException
-                (sun.security.util.ResourcesMgr.getString
+                (j86.sun.security.util.ResourcesMgr.getString
                 ("provided.null.OID.map"));
         }
         if (format != null) {
@@ -494,7 +494,7 @@ public final class X500Principal implements Principal, java.io.Serializable {
      *          by writing out its DER-encoded form
      *          (the value of {@code getEncoded} is serialized).
      */
-    private void writeObject(java.io.ObjectOutputStream s)
+    private void writeObject(j86.java.io.ObjectOutputStream s)
         throws IOException {
         s.writeObject(thisX500Name.getEncodedInternal());
     }
@@ -502,9 +502,9 @@ public final class X500Principal implements Principal, java.io.Serializable {
     /**
      * Reads this object from a stream (i.e., deserializes it).
      */
-    private void readObject(java.io.ObjectInputStream s)
-        throws java.io.IOException,
-               java.io.NotActiveException,
+    private void readObject(j86.java.io.ObjectInputStream s)
+        throws j86.java.io.IOException,
+               j86.java.io.NotActiveException,
                ClassNotFoundException {
 
         // re-create thisX500Name

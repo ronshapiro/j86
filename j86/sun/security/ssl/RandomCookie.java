@@ -24,10 +24,10 @@
  */
 
 
-package sun.security.ssl;
+package j86.sun.security.ssl;
 
-import java.io.*;
-import java.security.SecureRandom;
+import j86.java.io.*;
+import j86.java.security.SecureRandom;
 
 /*
  * RandomCookie ... SSL hands standard format random cookies (nonces)

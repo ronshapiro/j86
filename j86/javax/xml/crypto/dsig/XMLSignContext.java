@@ -25,10 +25,10 @@
 /*
  * $Id: XMLSignContext.java,v 1.8 2005/05/10 16:03:48 mullan Exp $
  */
-package javax.xml.crypto.dsig;
+package j86.j86.javax.xml.crypto.dsig;
 
-import javax.xml.crypto.KeySelector;
-import javax.xml.crypto.XMLCryptoContext;
+import j86.javax.xml.crypto.KeySelector;
+import j86.javax.xml.crypto.XMLCryptoContext;
 
 /**
  * Contains context information for generating XML Signatures. This interface
@@ -45,7 +45,7 @@ import javax.xml.crypto.XMLCryptoContext;
  * <p>The following properties can be set using the
  * {@link #setProperty setProperty} method.
  * <ul>
- *   <li><code>javax.xml.crypto.dsig.cacheReference</code>: value must be a
+ *   <li><code>j86.j86.javax.xml.crypto.dsig.cacheReference</code>: value must be a
  *      {@link Boolean}. This property controls whether or not the digested
  *      {@link Reference} objects will cache the dereferenced content and
  *      pre-digested input for subsequent retrieval via the

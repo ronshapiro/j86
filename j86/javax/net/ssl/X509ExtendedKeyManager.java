@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.net.ssl;
+package j86.j86.javax.net.ssl;
 
-import java.security.Principal;
+import j86.java.security.Principal;
 
 /**
  * Abstract class that provides for extension of the X509KeyManager

@@ -25,14 +25,14 @@
 /*
  * $Id: DOMCryptoContext.java,v 1.3 2005/05/09 18:33:26 mullan Exp $
  */
-package javax.xml.crypto.dom;
+package j86.j86.javax.xml.crypto.dom;
 
-import javax.xml.crypto.KeySelector;
-import javax.xml.crypto.URIDereferencer;
-import javax.xml.crypto.XMLCryptoContext;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Iterator;
+import j86.javax.xml.crypto.KeySelector;
+import j86.javax.xml.crypto.URIDereferencer;
+import j86.javax.xml.crypto.XMLCryptoContext;
+import j86.java.util.Collections;
+import j86.java.util.HashMap;
+import j86.java.util.Iterator;
 import org.w3c.dom.Element;
 
 /**
@@ -107,7 +107,7 @@ public class DOMCryptoContext implements XMLCryptoContext {
      */
     public void setBaseURI(String baseURI) {
         if (baseURI != null) {
-            java.net.URI.create(baseURI);
+            j86.java.net.URI.create(baseURI);
         }
         this.baseURI = baseURI;
     }
@@ -213,7 +213,7 @@ public class DOMCryptoContext implements XMLCryptoContext {
      * {@link Iterator#remove} method throw an
      * <code>UnsupportedOperationException</code>. The mappings are returned
      * in no particular order. Each element in the iteration is represented as a
-     * {@link java.util.Map.Entry}. If the <code>DOMCryptoContext</code> is
+     * {@link j86.java.util.Map.Entry}. If the <code>DOMCryptoContext</code> is
      * modified while an iteration is in progress, the results of the
      * iteration are undefined.
      *

@@ -23,13 +23,13 @@
  * questions.
  */
 
-package sun.security.jgss;
+package j86.sun.security.jgss;
 
-import org.ietf.jgss.GSSException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.IOException;
-import sun.security.util.*;
+import j86.org.ietf.jgss.GSSException;
+import j86.java.io.InputStream;
+import j86.java.io.OutputStream;
+import j86.java.io.IOException;
+import j86.sun.security.util.*;
 
 /**
  * This class represents the mechanism independent part of a GSS-API
@@ -47,7 +47,7 @@ import sun.security.util.*;
  * The RFC states that implementations should explicitly follow the
  * encoding scheme descibed in this section rather than use ASN.1
  * compilers. However, we should consider removing duplicate ASN.1
- * like code from here and depend on sun.security.util if possible.
+ * like code from here and depend on j86.sun.security.util if possible.
  */
 
 public class GSSHeader {
@@ -233,7 +233,7 @@ public class GSSHeader {
      * @return the length or -1 if indefinite length found.
      * @exception IOException on parsing error or unsupported lengths.
      */
-    // shameless lifted from sun.security.util.DerInputStream.
+    // shameless lifted from j86.sun.security.util.DerInputStream.
     private int getLength(InputStream in) throws IOException {
         return getLength(in.read(), in);
     }
@@ -245,7 +245,7 @@ public class GSSHeader {
      * @return the length or -1 if indefinite length found.
      * @exception IOException on parsing error or unsupported lengths.
      */
-    // shameless lifted from sun.security.util.DerInputStream.
+    // shameless lifted from j86.sun.security.util.DerInputStream.
     private int getLength(int lenByte, InputStream in) throws IOException {
         int value, tmp;
 
@@ -282,7 +282,7 @@ public class GSSHeader {
      * @return the number of bytes written
      * @exception IOException on writing errors.
      */
-    // Shameless lifted from sun.security.util.DerOutputStream.
+    // Shameless lifted from j86.sun.security.util.DerOutputStream.
     private int putLength(int len, OutputStream out) throws IOException {
         int retVal = 0;
         if (len < 128) {

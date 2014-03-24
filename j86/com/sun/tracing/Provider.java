@@ -23,7 +23,7 @@
  * questions.
  */
 
-package com.sun.tracing;
+package com.j86.sun.tracing;
 
 /**
  * {@code Provider} is a superinterface for user-defined tracing providers.
@@ -47,7 +47,7 @@ package com.sun.tracing;
  * {@code void} return type. Methods can have parameters, and when called the
  * values of the arguments will be passed to the tracing implementation.
  * If any methods do not have a {@code void} return type, an
- * {@code java.lang.IllegalArgumentException} will be thrown when the
+ * {@code j86.java.lang.IllegalArgumentException} will be thrown when the
  * provider is registered.
  * @since 1.7
  */
@@ -64,7 +64,7 @@ public interface Provider {
      * @param method a method declared in the provider.
      * @return the specified probe represented by that method, or null.
      */
-    Probe getProbe(java.lang.reflect.Method method);
+    Probe getProbe(j86.j86.j86.java.lang.reflect.Method method);
 
     /**
      * Disposes system resources associated with this provider.

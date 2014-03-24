@@ -24,11 +24,11 @@
  */
 
 
-package com.sun.jmx.snmp;
+package j86.com.sun.jmx.snmp;
 
 
 
-import java.io.Serializable;
+import j86.java.io.Serializable;
 
 /**
  * Is an abstract representation of an SNMP Value.
@@ -72,7 +72,7 @@ public abstract class SnmpValue implements Cloneable, Serializable, SnmpDataType
 
     /**
      * This method returns <CODE>false</CODE> by default and is redefined
-     * in the {@link com.sun.jmx.snmp.SnmpNull} class.
+     * in the {@link j86.com.sun.jmx.snmp.SnmpNull} class.
      */
     public boolean isNoSuchObjectValue() {
         return false;
@@ -80,7 +80,7 @@ public abstract class SnmpValue implements Cloneable, Serializable, SnmpDataType
 
     /**
      * This method returns <CODE>false</CODE> by default and is redefined
-     * in the {@link com.sun.jmx.snmp.SnmpNull} class.
+     * in the {@link j86.com.sun.jmx.snmp.SnmpNull} class.
      */
     public boolean isNoSuchInstanceValue() {
         return false;
@@ -88,7 +88,7 @@ public abstract class SnmpValue implements Cloneable, Serializable, SnmpDataType
 
     /**
      * This method returns <CODE>false</CODE> by default and is redefined
-     * in the {@link com.sun.jmx.snmp.SnmpNull} class.
+     * in the {@link j86.com.sun.jmx.snmp.SnmpNull} class.
      */
     public boolean isEndOfMibViewValue() {
         return false;

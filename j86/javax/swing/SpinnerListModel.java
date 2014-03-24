@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.swing;
+package j86.javax.swing;
 
-import java.util.*;
-import java.io.Serializable;
+import j86.java.util.*;
+import j86.java.io.Serializable;
 
 
 /**

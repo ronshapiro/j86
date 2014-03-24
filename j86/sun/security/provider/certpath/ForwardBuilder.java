@@ -23,32 +23,32 @@
  * questions.
  */
 
-package sun.security.provider.certpath;
+package j86.j86.sun.security.provider.certpath;
 
-import java.io.IOException;
-import java.security.GeneralSecurityException;
-import java.security.InvalidKeyException;
-import java.security.PublicKey;
-import java.security.cert.CertificateException;
-import java.security.cert.CertPathValidatorException;
-import java.security.cert.PKIXReason;
-import java.security.cert.CertStore;
-import java.security.cert.CertStoreException;
-import java.security.cert.PKIXBuilderParameters;
-import java.security.cert.PKIXCertPathChecker;
-import java.security.cert.TrustAnchor;
-import java.security.cert.X509Certificate;
-import java.security.cert.X509CertSelector;
-import java.util.*;
-import javax.security.auth.x500.X500Principal;
+import j86.java.io.IOException;
+import j86.java.security.GeneralSecurityException;
+import j86.java.security.InvalidKeyException;
+import j86.java.security.PublicKey;
+import j86.j86.java.security.cert.CertificateException;
+import j86.j86.java.security.cert.CertPathValidatorException;
+import j86.j86.java.security.cert.PKIXReason;
+import j86.j86.java.security.cert.CertStore;
+import j86.j86.java.security.cert.CertStoreException;
+import j86.j86.java.security.cert.PKIXBuilderParameters;
+import j86.j86.java.security.cert.PKIXCertPathChecker;
+import j86.j86.java.security.cert.TrustAnchor;
+import j86.j86.java.security.cert.X509Certificate;
+import j86.j86.java.security.cert.X509CertSelector;
+import j86.java.util.*;
+import j86.j86.javax.security.auth.x500.X500Principal;
 
-import sun.security.provider.certpath.PKIX.BuilderParams;
-import sun.security.util.Debug;
-import sun.security.x509.AccessDescription;
-import sun.security.x509.AuthorityInfoAccessExtension;
-import static sun.security.x509.PKIXExtensions.*;
-import sun.security.x509.X500Name;
-import sun.security.x509.AuthorityKeyIdentifierExtension;
+import j86.j86.sun.security.provider.certpath.PKIX.BuilderParams;
+import j86.sun.security.util.Debug;
+import j86.sun.security.x509.AccessDescription;
+import j86.sun.security.x509.AuthorityInfoAccessExtension;
+import static j86.sun.security.x509.PKIXExtensions.*;
+import j86.sun.security.x509.X500Name;
+import j86.sun.security.x509.AuthorityKeyIdentifierExtension;
 
 /**
  * This class represents a forward builder, which is able to retrieve

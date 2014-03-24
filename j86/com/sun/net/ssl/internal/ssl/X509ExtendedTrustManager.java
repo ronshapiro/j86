@@ -23,12 +23,12 @@
  * questions.
  */
 
-package com.sun.net.ssl.internal.ssl;
+package com.j86.sun.net.ssl.internal.ssl;
 
-import javax.net.ssl.X509TrustManager;
+import j86.j86.javax.net.ssl.X509TrustManager;
 
-import java.security.cert.X509Certificate;
-import java.security.cert.CertificateException;
+import j86.j86.java.security.cert.X509Certificate;
+import j86.j86.java.security.cert.CertificateException;
 
 /**
  * Instance of this class is an extension of <code>X509TrustManager</code>.

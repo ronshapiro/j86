@@ -23,15 +23,15 @@
  * questions.
  */
 
-package sun.security.jgss.wrapper;
+package j86.j86.sun.security.jgss.wrapper;
 
-import java.util.Hashtable;
-import org.ietf.jgss.Oid;
-import org.ietf.jgss.GSSName;
-import org.ietf.jgss.ChannelBinding;
-import org.ietf.jgss.MessageProp;
-import org.ietf.jgss.GSSException;
-import sun.security.jgss.GSSUtil;
+import j86.java.util.Hashtable;
+import j86.org.ietf.jgss.Oid;
+import j86.org.ietf.jgss.GSSName;
+import j86.org.ietf.jgss.ChannelBinding;
+import j86.org.ietf.jgss.MessageProp;
+import j86.org.ietf.jgss.GSSException;
+import j86.sun.security.jgss.GSSUtil;
 
 /**
  * This class is essentially a JNI calling stub for all wrapper classes.

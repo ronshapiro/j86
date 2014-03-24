@@ -23,19 +23,19 @@
  * questions.
  */
 
-package javax.swing.colorchooser;
+package j86.j86.javax.swing.colorchooser;
 
-import javax.swing.*;
-import javax.swing.border.*;
-import javax.swing.event.*;
-import javax.swing.text.*;
-import java.awt.*;
-import java.awt.image.*;
-import java.awt.event.*;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
-import java.io.Serializable;
-import sun.swing.SwingUtilities2;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.border.*;
+import j86.j86.javax.swing.event.*;
+import j86.j86.javax.swing.text.*;
+import j86.java.awt.*;
+import j86.j86.j86.java.awt.image.*;
+import j86.j86.java.awt.event.*;
+import j86.java.beans.PropertyChangeEvent;
+import j86.java.beans.PropertyChangeListener;
+import j86.java.io.Serializable;
+import j86.sun.swing.SwingUtilities2;
 
 
 /**
@@ -47,8 +47,8 @@ import sun.swing.SwingUtilities2;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @author Steve Wilson
  * @see JColorChooser

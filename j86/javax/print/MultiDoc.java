@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.print;
+package j86.javax.print;
 
-import java.io.IOException;
+import j86.java.io.IOException;
 
 /**
  * Interface MultiDoc specifies the interface for an object that supplies more

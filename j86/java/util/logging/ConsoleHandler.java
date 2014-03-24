@@ -24,7 +24,7 @@
  */
 
 
-package java.util.logging;
+package j86.j86.java.util.logging;
 
 /**
  * This <tt>Handler</tt> publishes log records to <tt>System.err</tt>.
@@ -45,7 +45,7 @@ package java.util.logging;
  *        (defaults to no <tt>Filter</tt>). </li>
  * <li>   &lt;handler-name&gt;.formatter
  *        specifies the name of a <tt>Formatter</tt> class to use
- *        (defaults to <tt>java.util.logging.SimpleFormatter</tt>). </li>
+ *        (defaults to <tt>j86.j86.java.util.logging.SimpleFormatter</tt>). </li>
  * <li>   &lt;handler-name&gt;.encoding
  *        the name of the character set encoding to use (defaults to
  *        the default platform encoding). </li>
@@ -53,14 +53,14 @@ package java.util.logging;
  * <p>
  * For example, the properties for {@code ConsoleHandler} would be:
  * <ul>
- * <li>   java.util.logging.ConsoleHandler.level=INFO </li>
- * <li>   java.util.logging.ConsoleHandler.formatter=java.util.logging.SimpleFormatter </li>
+ * <li>   j86.j86.java.util.logging.ConsoleHandler.level=INFO </li>
+ * <li>   j86.j86.java.util.logging.ConsoleHandler.formatter=java.util.logging.SimpleFormatter </li>
  * </ul>
  * <p>
  * For a custom handler, e.g. com.foo.MyHandler, the properties would be:
  * <ul>
  * <li>   com.foo.MyHandler.level=INFO </li>
- * <li>   com.foo.MyHandler.formatter=java.util.logging.SimpleFormatter </li>
+ * <li>   com.foo.MyHandler.formatter=j86.j86.java.util.logging.SimpleFormatter </li>
  * </ul>
  * <p>
  * @since 1.4

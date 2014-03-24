@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.imageio.plugins.jpeg;
+package j86.j86.javax.imageio.plugins.jpeg;
 
-import java.util.Arrays;
+import j86.java.util.Arrays;
 
 /**
  * A class encapsulating a single JPEG Huffman table.

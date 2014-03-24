@@ -22,16 +22,16 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text;
+package j86.j86.javax.swing.text;
 
-import java.util.Hashtable;
-import java.util.Enumeration;
-import java.util.Collections;
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.Serializable;
-import java.util.AbstractMap;
-import java.util.LinkedHashMap;
+import j86.java.util.Hashtable;
+import j86.java.util.Enumeration;
+import j86.java.util.Collections;
+import j86.java.io.IOException;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.Serializable;
+import j86.java.util.AbstractMap;
+import j86.java.util.LinkedHashMap;
 
 /**
  * A straightforward implementation of MutableAttributeSet using a
@@ -43,8 +43,8 @@ import java.util.LinkedHashMap;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @author Tim Prinzing
  */
@@ -330,7 +330,7 @@ public class SimpleAttributeSet implements MutableAttributeSet, Serializable, Cl
         return s;
     }
 
-    private void writeObject(java.io.ObjectOutputStream s) throws IOException {
+    private void writeObject(j86.java.io.ObjectOutputStream s) throws IOException {
         s.defaultWriteObject();
         StyleContext.writeAttributeSet(s, this);
     }

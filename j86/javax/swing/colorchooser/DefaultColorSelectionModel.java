@@ -23,19 +23,19 @@
  * questions.
  */
 
-package javax.swing.colorchooser;
+package j86.j86.javax.swing.colorchooser;
 
-import javax.swing.*;
-import javax.swing.event.*;
-import java.awt.Color;
-import java.io.Serializable;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.event.*;
+import j86.java.awt.Color;
+import j86.java.io.Serializable;
 
 /**
  * A generic implementation of <code>ColorSelectionModel</code>.
  *
  * @author Steve Wilson
  *
- * @see java.awt.Color
+ * @see j86.java.awt.Color
  */
 public class DefaultColorSelectionModel implements ColorSelectionModel, Serializable {
 

@@ -23,17 +23,17 @@
  * questions.
  */
 
-package com.sun.java.util.jar.pack;
+package j86.com.sun.j86.j86.java.util.jar.pack;
 
-import java.util.AbstractList;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.List;
-import java.util.ListIterator;
-import java.util.Map;
-import java.util.Set;
-import static com.sun.java.util.jar.pack.Constants.*;
+import j86.java.util.AbstractList;
+import j86.java.util.ArrayList;
+import j86.java.util.Arrays;
+import j86.java.util.Collection;
+import j86.java.util.List;
+import j86.java.util.ListIterator;
+import j86.java.util.Map;
+import j86.java.util.Set;
+import static j86.com.sun.j86.j86.java.util.jar.pack.Constants.*;
 
 /**
  * Representation of constant pool entries and indexes.
@@ -690,13 +690,13 @@ class ConstantPool {
             case 'L':
                 /*
                 switch (classRefs[0].stringValue()) {
-                case "java/lang/String":
+                case "j86.java.lang/String":
                     return CONSTANT_String;
-                case "java/lang/invoke/MethodHandle":
+                case "j86.j86.java.lang.invoke/MethodHandle":
                     return CONSTANT_MethodHandle;
-                case "java/lang/invoke/MethodType":
+                case "j86.j86.java.lang.invoke/MethodType":
                     return CONSTANT_MethodType;
-                default:  // java/lang/Object, etc.
+                default:  // j86.java.lang/Object, etc.
                     return CONSTANT_LoadableValue;
                 }
                 */
@@ -802,8 +802,8 @@ class ConstantPool {
         // characters are ';' and '<', since they are part of the
         // signature syntax.
         // Examples:
-        //   "(Ljava/lang/Object;IJLLoo;)V" => {"(L;IJL;)V", "java/lang/Object", "Loo"}
-        //   "Ljava/util/List<Ljava/lang/String;>;" => {"L<L;>;", "java/util/List", "java/lang/String"}
+        //   "(Lj86.java.lang/Object;IJLLoo;)V" => {"(L;IJL;)V", "java/lang/Object", "Loo"}
+        //   "Lj86.java.util/List<Lj86.java.lang/String;>;" => {"L<L;>;", "java/util/List", "java/lang/String"}
         char[] form = null;
         String[] parts = null;
         for (int pass = 0; pass <= 1; pass++) {

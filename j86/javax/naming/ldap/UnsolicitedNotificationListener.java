@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.naming.ldap;
+package j86.j86.javax.naming.ldap;
 
-import javax.naming.event.NamingListener;
+import j86.j86.javax.naming.event.NamingListener;
 
 /**
  * This interface is for handling <tt>UnsolicitedNotificationEvent</tt>.
@@ -52,9 +52,9 @@ import javax.naming.event.NamingListener;
  *
  * @see UnsolicitedNotificationEvent
  * @see UnsolicitedNotification
- * @see javax.naming.event.EventContext#addNamingListener
- * @see javax.naming.event.EventDirContext#addNamingListener
- * @see javax.naming.event.EventContext#removeNamingListener
+ * @see j86.j86.javax.naming.event.EventContext#addNamingListener
+ * @see j86.j86.javax.naming.event.EventDirContext#addNamingListener
+ * @see j86.j86.javax.naming.event.EventContext#removeNamingListener
  * @since 1.3
  */
 public interface UnsolicitedNotificationListener extends NamingListener {

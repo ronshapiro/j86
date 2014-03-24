@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.misc;
+package j86.sun.misc;
 
 /**
  * The Lock class provides a simple, useful interface to a lock.
@@ -72,7 +72,7 @@ class Lock {
      * has been freed, and then try to acquire it again.  This method
      * will not return until the lock has been acquired.
      *
-     * @exception  java.lang.InterruptedException if any thread has
+     * @exception  j86.java.lang.InterruptedException if any thread has
      *               interrupted this thread.
      */
     public final synchronized void lock() throws InterruptedException {

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.security;
+package j86.java.security;
 
 /**
  * <p>A public key. This interface contains no methods or constants.
@@ -32,14 +32,14 @@ package java.security;
  *
  * Note: The specialized public key interfaces extend this interface.
  * See, for example, the DSAPublicKey interface in
- * {@code java.security.interfaces}.
+ * {@code j86.j86.java.security.interfaces}.
  *
  * @see Key
  * @see PrivateKey
  * @see Certificate
  * @see Signature#initVerify
- * @see java.security.interfaces.DSAPublicKey
- * @see java.security.interfaces.RSAPublicKey
+ * @see j86.j86.java.security.interfaces.DSAPublicKey
+ * @see j86.j86.java.security.interfaces.RSAPublicKey
  *
  */
 

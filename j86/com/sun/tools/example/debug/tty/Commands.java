@@ -32,17 +32,17 @@
  */
 
 
-package com.sun.tools.example.debug.tty;
+package j86.com.sun.tools.example.debug.tty;
 
-import com.sun.jdi.*;
-import com.sun.jdi.connect.Connector;
-import com.sun.jdi.request.*;
-import com.sun.tools.example.debug.expr.ExpressionParser;
-import com.sun.tools.example.debug.expr.ParseException;
+import j86.com.sun.jdi.*;
+import j86.j86.com.sun.jdi.connect.Connector;
+import j86.j86.com.sun.jdi.request.*;
+import j86.com.sun.tools.example.debug.expr.ExpressionParser;
+import j86.com.sun.tools.example.debug.expr.ParseException;
 
-import java.text.*;
-import java.util.*;
-import java.io.*;
+import j86.java.text.*;
+import j86.java.util.*;
+import j86.java.io.*;
 
 class Commands {
 
@@ -534,7 +534,7 @@ class Commands {
 
         /*
          * Set the main class and any arguments. Note that this will work
-         * only with the standard launcher, "com.sun.jdi.CommandLineLauncher"
+         * only with the standard launcher, "j86.com.sun.jdi.CommandLineLauncher"
          */
         String args;
         if (t.hasMoreTokens()) {
@@ -846,7 +846,7 @@ class Commands {
                 nf.setParseIntegerOnly(true);
                 Number n = nf.parse(idToken);
                 i = n.intValue();
-            } catch (java.text.ParseException jtpe) {
+            } catch (j86.java.text.ParseException jtpe) {
                 i = 0;
             }
             if (i <= 0) {
@@ -881,7 +881,7 @@ class Commands {
                 nf.setParseIntegerOnly(true);
                 Number n = nf.parse(idToken);
                 i = n.intValue();
-            } catch (java.text.ParseException jtpe) {
+            } catch (j86.java.text.ParseException jtpe) {
                 i = 0;
             }
             if (i <= 0) {
@@ -1445,7 +1445,7 @@ class Commands {
                     nf.setParseIntegerOnly(true);
                     Number n = nf.parse(id);
                     lineno = n.intValue();
-                } catch (java.text.ParseException jtpe) {
+                } catch (j86.java.text.ParseException jtpe) {
                     // It isn't -- see if it's a method name.
                         List<Method> meths = refType.methodsByName(id);
                         if (meths == null || meths.size() == 0) {

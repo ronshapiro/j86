@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.lang;
+package j86.java.lang;
 
 /**
  * An object that may hold resources (such as file or socket handles)
@@ -41,7 +41,7 @@ package java.lang;
  * in complete generality, or when it is known that the {@code AutoCloseable}
  * instance requires resource release, it is recommended to use {@code
  * try}-with-resources constructions. However, when using facilities such as
- * {@link java.util.stream.Stream} that support both I/O-based and
+ * {@link j86.j86.java.util.stream.Stream} that support both I/O-based and
  * non-I/O-based forms, {@code try}-with-resources blocks are in
  * general unnecessary when using non-I/O-based forms.
  *
@@ -82,8 +82,8 @@ public interface AutoCloseable {
      * exception to be suppressed, the {@code AutoCloseable.close}
      * method should not throw it.
      *
-     * <p>Note that unlike the {@link java.io.Closeable#close close}
-     * method of {@link java.io.Closeable}, this {@code close} method
+     * <p>Note that unlike the {@link j86.java.io.Closeable#close close}
+     * method of {@link j86.java.io.Closeable}, this {@code close} method
      * is <em>not</em> required to be idempotent.  In other words,
      * calling this {@code close} method more than once may have some
      * visible side effect, unlike {@code Closeable.close} which is

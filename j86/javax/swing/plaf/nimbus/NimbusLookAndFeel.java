@@ -22,38 +22,38 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.plaf.nimbus;
+package j86.j86.j86.javax.swing.plaf.nimbus;
 
-import java.awt.BorderLayout;
-import static java.awt.BorderLayout.*;
-import javax.swing.JComponent;
-import javax.swing.UIDefaults;
-import javax.swing.UIManager;
-import javax.swing.plaf.synth.Region;
-import javax.swing.plaf.synth.SynthLookAndFeel;
-import javax.swing.plaf.synth.SynthStyle;
-import javax.swing.plaf.synth.SynthStyleFactory;
-import javax.swing.plaf.UIResource;
-import java.security.AccessController;
-import java.awt.Color;
-import java.awt.Container;
-import java.awt.Graphics2D;
-import java.awt.LayoutManager;
-import java.awt.image.BufferedImage;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
-import java.util.*;
-import javax.swing.GrayFilter;
-import javax.swing.Icon;
-import javax.swing.JToolBar;
-import javax.swing.border.TitledBorder;
-import javax.swing.plaf.BorderUIResource;
-import javax.swing.plaf.ColorUIResource;
-import sun.swing.ImageIconUIResource;
-import sun.swing.plaf.synth.SynthIcon;
-import sun.swing.plaf.GTKKeybindings;
-import sun.swing.plaf.WindowsKeybindings;
-import sun.security.action.GetPropertyAction;
+import j86.java.awt.BorderLayout;
+import static j86.java.awt.BorderLayout.*;
+import j86.javax.swing.JComponent;
+import j86.javax.swing.UIDefaults;
+import j86.javax.swing.UIManager;
+import j86.j86.j86.javax.swing.plaf.synth.Region;
+import j86.j86.j86.javax.swing.plaf.synth.SynthLookAndFeel;
+import j86.j86.j86.javax.swing.plaf.synth.SynthStyle;
+import j86.j86.j86.javax.swing.plaf.synth.SynthStyleFactory;
+import j86.j86.javax.swing.plaf.UIResource;
+import j86.java.security.AccessController;
+import j86.java.awt.Color;
+import j86.java.awt.Container;
+import j86.java.awt.Graphics2D;
+import j86.java.awt.LayoutManager;
+import j86.j86.j86.java.awt.image.BufferedImage;
+import j86.java.beans.PropertyChangeEvent;
+import j86.java.beans.PropertyChangeListener;
+import j86.java.util.*;
+import j86.javax.swing.GrayFilter;
+import j86.javax.swing.Icon;
+import j86.javax.swing.JToolBar;
+import j86.j86.javax.swing.border.TitledBorder;
+import j86.j86.javax.swing.plaf.BorderUIResource;
+import j86.j86.javax.swing.plaf.ColorUIResource;
+import j86.sun.swing.ImageIconUIResource;
+import j86.j86.j86.sun.swing.plaf.synth.SynthIcon;
+import j86.j86.sun.swing.plaf.GTKKeybindings;
+import j86.j86.sun.swing.plaf.WindowsKeybindings;
+import j86.sun.security.action.GetPropertyAction;
 
 /**
  * <p>The NimbusLookAndFeel class.</p>

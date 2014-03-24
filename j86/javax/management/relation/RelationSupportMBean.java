@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.management.relation;
+package j86.j86.javax.management.relation;
 
 /**
  * A RelationSupport object is used internally by the Relation Service to

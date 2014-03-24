@@ -23,15 +23,15 @@
  * questions.
  */
 
-package java.net;
+package j86.java.net;
 
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.IOException;
-import java.nio.channels.SocketChannel;
-import java.security.AccessController;
-import java.security.PrivilegedExceptionAction;
-import java.security.PrivilegedAction;
+import j86.java.io.InputStream;
+import j86.java.io.OutputStream;
+import j86.java.io.IOException;
+import j86.j86.java.nio.channels.SocketChannel;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedExceptionAction;
+import j86.java.security.PrivilegedAction;
 
 /**
  * This class implements client sockets (also called just
@@ -45,13 +45,13 @@ import java.security.PrivilegedAction;
  * firewall.
  *
  * @author  unascribed
- * @see     java.net.Socket#setSocketImplFactory(java.net.SocketImplFactory)
- * @see     java.net.SocketImpl
- * @see     java.nio.channels.SocketChannel
+ * @see     j86.java.net.Socket#setSocketImplFactory(java.net.SocketImplFactory)
+ * @see     j86.java.net.SocketImpl
+ * @see     j86.j86.java.nio.channels.SocketChannel
  * @since   JDK1.0
  */
 public
-class Socket implements java.io.Closeable {
+class Socket implements j86.java.io.Closeable {
     /**
      * Various states of this socket.
      */
@@ -100,15 +100,15 @@ class Socket implements java.io.Closeable {
      * server.</LI>
      * </UL>
      *
-     * @param proxy a {@link java.net.Proxy Proxy} object specifying what kind
+     * @param proxy a {@link j86.java.net.Proxy Proxy} object specifying what kind
      *              of proxying should be used.
      * @throws IllegalArgumentException if the proxy is of an invalid type
      *          or {@code null}.
      * @throws SecurityException if a security manager is present and
      *                           permission to connect to the proxy is
      *                           denied.
-     * @see java.net.ProxySelector
-     * @see java.net.Proxy
+     * @see j86.java.net.ProxySelector
+     * @see j86.java.net.Proxy
      *
      * @since   1.5
      */
@@ -118,7 +118,7 @@ class Socket implements java.io.Closeable {
             throw new IllegalArgumentException("Invalid Proxy");
         }
         Proxy p = proxy == Proxy.NO_PROXY ? Proxy.NO_PROXY
-                                          : sun.net.ApplicationProxy.create(proxy);
+                                          : j86.sun.net.ApplicationProxy.create(proxy);
         Proxy.Type type = p.type();
         if (type == Proxy.Type.SOCKS || type == Proxy.Type.HTTP) {
             SecurityManager security = System.getSecurityManager();
@@ -175,7 +175,7 @@ class Socket implements java.io.Closeable {
      * <p>
      * If the specified host is {@code null} it is the equivalent of
      * specifying the address as
-     * {@link java.net.InetAddress#getByName InetAddress.getByName}{@code (null)}.
+     * {@link j86.java.net.InetAddress#getByName InetAddress.getByName}{@code (null)}.
      * In other words, it is equivalent to specifying an address of the
      * loopback interface. </p>
      * <p>
@@ -200,9 +200,9 @@ class Socket implements java.io.Closeable {
      * @exception  IllegalArgumentException if the port parameter is outside
      *             the specified range of valid port values, which is between
      *             0 and 65535, inclusive.
-     * @see        java.net.Socket#setSocketImplFactory(java.net.SocketImplFactory)
-     * @see        java.net.SocketImpl
-     * @see        java.net.SocketImplFactory#createSocketImpl()
+     * @see        j86.java.net.Socket#setSocketImplFactory(java.net.SocketImplFactory)
+     * @see        j86.java.net.SocketImpl
+     * @see        j86.java.net.SocketImplFactory#createSocketImpl()
      * @see        SecurityManager#checkConnect
      */
     public Socket(String host, int port)
@@ -235,9 +235,9 @@ class Socket implements java.io.Closeable {
      *             the specified range of valid port values, which is between
      *             0 and 65535, inclusive.
      * @exception  NullPointerException if {@code address} is null.
-     * @see        java.net.Socket#setSocketImplFactory(java.net.SocketImplFactory)
-     * @see        java.net.SocketImpl
-     * @see        java.net.SocketImplFactory#createSocketImpl()
+     * @see        j86.java.net.Socket#setSocketImplFactory(java.net.SocketImplFactory)
+     * @see        j86.java.net.SocketImpl
+     * @see        j86.java.net.SocketImplFactory#createSocketImpl()
      * @see        SecurityManager#checkConnect
      */
     public Socket(InetAddress address, int port) throws IOException {
@@ -252,7 +252,7 @@ class Socket implements java.io.Closeable {
      * <p>
      * If the specified host is {@code null} it is the equivalent of
      * specifying the address as
-     * {@link java.net.InetAddress#getByName InetAddress.getByName}{@code (null)}.
+     * {@link j86.java.net.InetAddress#getByName InetAddress.getByName}{@code (null)}.
      * In other words, it is equivalent to specifying an address of the
      * loopback interface. </p>
      * <p>
@@ -295,7 +295,7 @@ class Socket implements java.io.Closeable {
      * <p>
      * If the specified local address is {@code null} it is the equivalent of
      * specifying the address as the AnyLocal address
-     * (see {@link java.net.InetAddress#isAnyLocalAddress InetAddress.isAnyLocalAddress}{@code ()}).
+     * (see {@link j86.java.net.InetAddress#isAnyLocalAddress InetAddress.isAnyLocalAddress}{@code ()}).
      * <p>
      * A local port number of {@code zero} will let the system pick up a
      * free port in the {@code bind} operation.</p>
@@ -335,7 +335,7 @@ class Socket implements java.io.Closeable {
      * <p>
      * If the specified host is {@code null} it is the equivalent of
      * specifying the address as
-     * {@link java.net.InetAddress#getByName InetAddress.getByName}{@code (null)}.
+     * {@link j86.java.net.InetAddress#getByName InetAddress.getByName}{@code (null)}.
      * In other words, it is equivalent to specifying an address of the
      * loopback interface. </p>
      * <p>
@@ -364,9 +364,9 @@ class Socket implements java.io.Closeable {
      * @exception  IllegalArgumentException if the port parameter is outside
      *             the specified range of valid port values, which is between
      *             0 and 65535, inclusive.
-     * @see        java.net.Socket#setSocketImplFactory(java.net.SocketImplFactory)
-     * @see        java.net.SocketImpl
-     * @see        java.net.SocketImplFactory#createSocketImpl()
+     * @see        j86.java.net.Socket#setSocketImplFactory(java.net.SocketImplFactory)
+     * @see        j86.java.net.SocketImpl
+     * @see        j86.java.net.SocketImplFactory#createSocketImpl()
      * @see        SecurityManager#checkConnect
      * @deprecated Use DatagramSocket instead for UDP transport.
      */
@@ -407,9 +407,9 @@ class Socket implements java.io.Closeable {
      *             the specified range of valid port values, which is between
      *             0 and 65535, inclusive.
      * @exception  NullPointerException if {@code host} is null.
-     * @see        java.net.Socket#setSocketImplFactory(java.net.SocketImplFactory)
-     * @see        java.net.SocketImpl
-     * @see        java.net.SocketImplFactory#createSocketImpl()
+     * @see        j86.java.net.Socket#setSocketImplFactory(java.net.SocketImplFactory)
+     * @see        j86.java.net.SocketImpl
+     * @see        j86.java.net.SocketImplFactory#createSocketImpl()
      * @see        SecurityManager#checkConnect
      * @deprecated Use DatagramSocket instead for UDP transport.
      */
@@ -477,10 +477,10 @@ class Socket implements java.io.Closeable {
                         return Boolean.FALSE;
                     } catch (NoSuchMethodException e) {
                         clazz = clazz.getSuperclass();
-                        // java.net.SocketImpl class will always have this abstract method.
+                        // j86.java.net.SocketImpl class will always have this abstract method.
                         // If we have not found it by now in the hierarchy then it does not
                         // exist, we are an old style impl.
-                        if (clazz.equals(java.net.SocketImpl.class)) {
+                        if (clazz.equals(j86.java.net.SocketImpl.class)) {
                             return Boolean.TRUE;
                         }
                     }
@@ -526,7 +526,7 @@ class Socket implements java.io.Closeable {
      *
      * @param   endpoint the {@code SocketAddress}
      * @throws  IOException if an error occurs during the connection
-     * @throws  java.nio.channels.IllegalBlockingModeException
+     * @throws  j86.j86.java.nio.channels.IllegalBlockingModeException
      *          if this socket has an associated channel,
      *          and the channel is in non-blocking mode
      * @throws  IllegalArgumentException if endpoint is null or is a
@@ -547,7 +547,7 @@ class Socket implements java.io.Closeable {
      * @param   timeout  the timeout value to be used in milliseconds.
      * @throws  IOException if an error occurs during the connection
      * @throws  SocketTimeoutException if timeout expires before connecting
-     * @throws  java.nio.channels.IllegalBlockingModeException
+     * @throws  j86.j86.java.nio.channels.IllegalBlockingModeException
      *          if this socket has an associated channel,
      *          and the channel is in non-blocking mode
      * @throws  IllegalArgumentException if endpoint is null or is a
@@ -833,13 +833,13 @@ class Socket implements java.io.Closeable {
     }
 
     /**
-     * Returns the unique {@link java.nio.channels.SocketChannel SocketChannel}
+     * Returns the unique {@link j86.j86.java.nio.channels.SocketChannel SocketChannel}
      * object associated with this socket, if any.
      *
      * <p> A socket will have a channel if, and only if, the channel itself was
-     * created via the {@link java.nio.channels.SocketChannel#open
+     * created via the {@link j86.j86.java.nio.channels.SocketChannel#open
      * SocketChannel.open} or {@link
-     * java.nio.channels.ServerSocketChannel#accept ServerSocketChannel.accept}
+     * j86.j86.java.nio.channels.ServerSocketChannel#accept ServerSocketChannel.accept}
      * methods.
      *
      * @return  the socket channel associated with this socket,
@@ -859,7 +859,7 @@ class Socket implements java.io.Closeable {
      * <p> If this socket has an associated channel then the resulting input
      * stream delegates all of its operations to the channel.  If the channel
      * is in non-blocking mode then the input stream's {@code read} operations
-     * will throw an {@link java.nio.channels.IllegalBlockingModeException}.
+     * will throw an {@link j86.j86.java.nio.channels.IllegalBlockingModeException}.
      *
      * <p>Under abnormal conditions the underlying connection may be
      * broken by the remote host or the network software (for example
@@ -871,22 +871,22 @@ class Socket implements java.io.Closeable {
      *
      *   <li><p>The network software may discard bytes that are buffered
      *   by the socket. Bytes that aren't discarded by the network
-     *   software can be read using {@link java.io.InputStream#read read}.
+     *   software can be read using {@link j86.java.io.InputStream#read read}.
      *
      *   <li><p>If there are no bytes buffered on the socket, or all
      *   buffered bytes have been consumed by
-     *   {@link java.io.InputStream#read read}, then all subsequent
-     *   calls to {@link java.io.InputStream#read read} will throw an
-     *   {@link java.io.IOException IOException}.
+     *   {@link j86.java.io.InputStream#read read}, then all subsequent
+     *   calls to {@link j86.java.io.InputStream#read read} will throw an
+     *   {@link j86.java.io.IOException IOException}.
      *
      *   <li><p>If there are no bytes buffered on the socket, and the
      *   socket has not been closed using {@link #close close}, then
-     *   {@link java.io.InputStream#available available} will
+     *   {@link j86.java.io.InputStream#available available} will
      *   return {@code 0}.
      *
      * </ul>
      *
-     * <p> Closing the returned {@link java.io.InputStream InputStream}
+     * <p> Closing the returned {@link j86.java.io.InputStream InputStream}
      * will close the associated socket.
      *
      * @return     an input stream for reading bytes from this socket.
@@ -914,7 +914,7 @@ class Socket implements java.io.Closeable {
                         return impl.getInputStream();
                     }
                 });
-        } catch (java.security.PrivilegedActionException e) {
+        } catch (j86.java.security.PrivilegedActionException e) {
             throw (IOException) e.getException();
         }
         return is;
@@ -927,9 +927,9 @@ class Socket implements java.io.Closeable {
      * stream delegates all of its operations to the channel.  If the channel
      * is in non-blocking mode then the output stream's {@code write}
      * operations will throw an {@link
-     * java.nio.channels.IllegalBlockingModeException}.
+     * j86.j86.java.nio.channels.IllegalBlockingModeException}.
      *
-     * <p> Closing the returned {@link java.io.OutputStream OutputStream}
+     * <p> Closing the returned {@link j86.java.io.OutputStream OutputStream}
      * will close the associated socket.
      *
      * @return     an output stream for writing bytes to this socket.
@@ -954,7 +954,7 @@ class Socket implements java.io.Closeable {
                         return impl.getOutputStream();
                     }
                 });
-        } catch (java.security.PrivilegedActionException e) {
+        } catch (j86.java.security.PrivilegedActionException e) {
             throw (IOException) e.getException();
         }
         return os;
@@ -1120,7 +1120,7 @@ class Socket implements java.io.Closeable {
      *  with the specified timeout, in milliseconds. With this option set
      *  to a non-zero timeout, a read() call on the InputStream associated with
      *  this Socket will block for only this amount of time.  If the timeout
-     *  expires, a <B>java.net.SocketTimeoutException</B> is raised, though the
+     *  expires, a <B>j86.java.net.SocketTimeoutException</B> is raised, though the
      *  Socket is still valid. The option <B>must</B> be enabled
      *  prior to entering the blocking operation to have effect. The
      *  timeout must be {@code > 0}.
@@ -1469,8 +1469,8 @@ class Socket implements java.io.Closeable {
      * created.
      *
      * <p> Closing this socket will also close the socket's
-     * {@link java.io.InputStream InputStream} and
-     * {@link java.io.OutputStream OutputStream}.
+     * {@link j86.java.io.InputStream InputStream} and
+     * {@link j86.java.io.OutputStream OutputStream}.
      *
      * <p> If this socket has an associated channel then the channel is closed
      * as well.
@@ -1503,9 +1503,9 @@ class Socket implements java.io.Closeable {
      * socket.
      *
      * @since 1.3
-     * @see java.net.Socket#shutdownOutput()
-     * @see java.net.Socket#close()
-     * @see java.net.Socket#setSoLinger(boolean, int)
+     * @see j86.java.net.Socket#shutdownOutput()
+     * @see j86.java.net.Socket#close()
+     * @see j86.java.net.Socket#setSoLinger(boolean, int)
      * @see #isInputShutdown
      */
     public void shutdownInput() throws IOException
@@ -1533,9 +1533,9 @@ class Socket implements java.io.Closeable {
      * socket.
      *
      * @since 1.3
-     * @see java.net.Socket#shutdownInput()
-     * @see java.net.Socket#close()
-     * @see java.net.Socket#setSoLinger(boolean, int)
+     * @see j86.java.net.Socket#shutdownInput()
+     * @see j86.java.net.Socket#close()
+     * @see j86.java.net.Socket#setSoLinger(boolean, int)
      * @see #isOutputShutdown
      */
     public void shutdownOutput() throws IOException
@@ -1660,7 +1660,7 @@ class Socket implements java.io.Closeable {
      * @exception  SocketException  if the factory is already defined.
      * @exception  SecurityException  if a security manager exists and its
      *             {@code checkSetFactory} method doesn't allow the operation.
-     * @see        java.net.SocketImplFactory#createSocketImpl()
+     * @see        j86.java.net.SocketImplFactory#createSocketImpl()
      * @see        SecurityManager#checkSetFactory
      */
     public static synchronized void setSocketImplFactory(SocketImplFactory fac)

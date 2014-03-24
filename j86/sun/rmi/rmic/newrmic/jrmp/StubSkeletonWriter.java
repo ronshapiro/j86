@@ -23,20 +23,20 @@
  * questions.
  */
 
-package sun.rmi.rmic.newrmic.jrmp;
+package j86.j86.j86.sun.rmi.rmic.newrmic.jrmp;
 
 import com.sun.javadoc.ClassDoc;
 import com.sun.javadoc.MethodDoc;
 import com.sun.javadoc.Type;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import sun.rmi.rmic.newrmic.BatchEnvironment;
-import sun.rmi.rmic.newrmic.IndentingWriter;
+import j86.java.io.IOException;
+import j86.java.util.ArrayList;
+import j86.java.util.Iterator;
+import j86.java.util.List;
+import j86.j86.sun.rmi.rmic.newrmic.BatchEnvironment;
+import j86.j86.sun.rmi.rmic.newrmic.IndentingWriter;
 
-import static sun.rmi.rmic.newrmic.Constants.*;
-import static sun.rmi.rmic.newrmic.jrmp.Constants.*;
+import static j86.j86.sun.rmi.rmic.newrmic.Constants.*;
+import static j86.j86.j86.sun.rmi.rmic.newrmic.jrmp.Constants.*;
 
 /**
  * Writes the source code for the stub class and (optionally) skeleton
@@ -75,7 +75,7 @@ class StubSkeletonWriter {
     private final RemoteClass.Method[] remoteMethods;
 
     /**
-     * Names to use for the java.lang.reflect.Method static fields in
+     * Names to use for the j86.j86.j86.java.lang.reflect.Method static fields in
      * the generated stub class corresponding to each remote method.
      **/
     private final String[] methodFieldNames;
@@ -192,7 +192,7 @@ class StubSkeletonWriter {
                 p.pln();
 
                 /*
-                 * Initialize java.lang.reflect.Method fields for each remote
+                 * Initialize j86.j86.j86.java.lang.reflect.Method fields for each remote
                  * method in a static initializer.
                  */
                 p.plnI("static {");
@@ -208,21 +208,21 @@ class StubSkeletonWriter {
                      * to false if a NoSuchMethodException is thrown.
                      */
                     p.plnI(REMOTE_REF + ".class.getMethod(\"invoke\",");
-                    p.plnI("new java.lang.Class[] {");
+                    p.plnI("new j86.java.lang.Class[] {");
                     p.pln(REMOTE + ".class,");
-                    p.pln("java.lang.reflect.Method.class,");
-                    p.pln("java.lang.Object[].class,");
+                    p.pln("j86.j86.j86.java.lang.reflect.Method.class,");
+                    p.pln("j86.java.lang.Object[].class,");
                     p.pln("long.class");
                     p.pOln("});");
                     p.pO();
                     p.pln("useNewInvoke = true;");
                 }
                 writeMethodFieldInitializers(p);
-                p.pOlnI("} catch (java.lang.NoSuchMethodException e) {");
+                p.pOlnI("} catch (j86.java.lang.NoSuchMethodException e) {");
                 if (version == StubVersion.VCOMPAT) {
                     p.pln("useNewInvoke = false;");
                 } else {
-                    p.plnI("throw new java.lang.NoSuchMethodError(");
+                    p.plnI("throw new j86.java.lang.NoSuchMethodError(");
                     p.pln("\"stub class initialization failed\");");
                     p.pO();
                 }
@@ -339,7 +339,7 @@ class StubSkeletonWriter {
 
         /*
          * If we need to catch any particular exceptions (i.e. this method
-         * does not declare java.lang.Exception), put the entire stub
+         * does not declare j86.java.lang.Exception), put the entire stub
          * method in a try block.
          */
         if (catchList.size() > 0) {
@@ -357,7 +357,7 @@ class StubSkeletonWriter {
             }
             p.p("ref.invoke(this, " + methodFieldNames[opnum] + ", ");
             if (paramTypes.length > 0) {
-                p.p("new java.lang.Object[] {");
+                p.p("new j86.java.lang.Object[] {");
                 for (int i = 0; i < paramTypes.length; i++) {
                     if (i > 0)
                         p.p(", ");
@@ -384,9 +384,9 @@ class StubSkeletonWriter {
 
             if (paramTypes.length > 0) {
                 p.plnI("try {");
-                p.pln("java.io.ObjectOutput out = call.getOutputStream();");
+                p.pln("j86.java.io.ObjectOutput out = call.getOutputStream();");
                 writeMarshalArguments(p, "out", paramTypes, paramNames);
-                p.pOlnI("} catch (java.io.IOException e) {");
+                p.pOlnI("} catch (j86.java.io.IOException e) {");
                 p.pln("throw new " + MARSHAL_EXCEPTION +
                     "(\"error marshalling arguments\", e);");
                 p.pOln("}");
@@ -400,11 +400,11 @@ class StubSkeletonWriter {
                 p.pln(returnType.toString() + " $result;");
                                                         // REMIND: why $?
                 p.plnI("try {");
-                p.pln("java.io.ObjectInput in = call.getInputStream();");
+                p.pln("j86.java.io.ObjectInput in = call.getInputStream();");
                 boolean objectRead =
                     writeUnmarshalArgument(p, "in", returnType, "$result");
                 p.pln(";");
-                p.pOlnI("} catch (java.io.IOException e) {");
+                p.pOlnI("} catch (j86.java.io.IOException e) {");
                 p.pln("throw new " + UNMARSHAL_EXCEPTION +
                     "(\"error unmarshalling return\", e);");
                 /*
@@ -412,7 +412,7 @@ class StubSkeletonWriter {
                  * ClassNotFoundException as well as IOException.
                  */
                 if (objectRead) {
-                    p.pOlnI("} catch (java.lang.ClassNotFoundException e) {");
+                    p.pOlnI("} catch (j86.java.lang.ClassNotFoundException e) {");
                     p.pln("throw new " + UNMARSHAL_EXCEPTION +
                         "(\"error unmarshalling return\", e);");
                 }
@@ -436,7 +436,7 @@ class StubSkeletonWriter {
                 p.pOlnI("} catch (" + catchClass.qualifiedName() + " e) {");
                 p.pln("throw e;");
             }
-            p.pOlnI("} catch (java.lang.Exception e) {");
+            p.pOlnI("} catch (j86.java.lang.Exception e) {");
             p.pln("throw new " + UNEXPECTED_EXCEPTION +
                 "(\"undeclared checked exception\", e);");
             p.pOln("}");                // end try/catch block
@@ -460,7 +460,7 @@ class StubSkeletonWriter {
      * are already present), since those exceptions should always be
      * directly rethrown by a stub method.
      *
-     * The returned list will be empty if java.lang.Exception or one
+     * The returned list will be empty if j86.java.lang.Exception or one
      * of its superclasses is in the throws clause of the method,
      * indicating that no exceptions need to be caught.
      **/
@@ -475,7 +475,7 @@ class StubSkeletonWriter {
         for (ClassDoc ex : exceptions) {
             if (env.docException().subclassOf(ex)) {
                 /*
-                 * If java.lang.Exception (or a superclass) was declared
+                 * If j86.java.lang.Exception (or a superclass) was declared
                  * in the throws clause of this stub method, then we don't
                  * have to bother catching anything; clear the list and
                  * return.
@@ -566,7 +566,7 @@ class StubSkeletonWriter {
          */
         p.plnI("public void dispatch(" + REMOTE + " obj, " +
             REMOTE_CALL + " call, int opnum, long hash)");
-        p.pln("throws java.lang.Exception");
+        p.pln("throws j86.java.lang.Exception");
         p.pOlnI("{");
 
         if (version == StubVersion.VCOMPAT) {
@@ -681,10 +681,10 @@ class StubSkeletonWriter {
              * Unmarshal arguments from call stream.
              */
             p.plnI("try {");
-            p.pln("java.io.ObjectInput in = call.getInputStream();");
+            p.pln("j86.java.io.ObjectInput in = call.getInputStream();");
             boolean objectsRead = writeUnmarshalArguments(p, "in",
                 paramTypes, paramNames);
-            p.pOlnI("} catch (java.io.IOException e) {");
+            p.pOlnI("} catch (j86.java.io.IOException e) {");
             p.pln("throw new " + UNMARSHAL_EXCEPTION +
                 "(\"error unmarshalling arguments\", e);");
             /*
@@ -692,7 +692,7 @@ class StubSkeletonWriter {
              * ClassNotFoundException as well as IOException.
              */
             if (objectsRead) {
-                p.pOlnI("} catch (java.lang.ClassNotFoundException e) {");
+                p.pOlnI("} catch (j86.java.lang.ClassNotFoundException e) {");
                 p.pln("throw new " + UNMARSHAL_EXCEPTION +
                     "(\"error unmarshalling arguments\", e);");
             }
@@ -736,14 +736,14 @@ class StubSkeletonWriter {
          */
         p.plnI("try {");
         if (!Util.isVoid(returnType)) {
-            p.p("java.io.ObjectOutput out = ");
+            p.p("j86.java.io.ObjectOutput out = ");
         }
         p.pln("call.getResultStream(true);");
         if (!Util.isVoid(returnType)) {
             writeMarshalArgument(p, "out", returnType, "$result");
             p.pln(";");
         }
-        p.pOlnI("} catch (java.io.IOException e) {");
+        p.pOlnI("} catch (j86.java.io.IOException e) {");
         p.pln("throw new " +
             MARSHAL_EXCEPTION + "(\"error marshalling return\", e);");
         p.pOln("}");
@@ -782,14 +782,14 @@ class StubSkeletonWriter {
     }
 
     /**
-     * Writes declaration for java.lang.reflect.Method static fields
+     * Writes declaration for j86.j86.j86.java.lang.reflect.Method static fields
      * corresponding to each remote method in a stub.
      **/
     private void writeMethodFieldDeclarations(IndentingWriter p)
         throws IOException
     {
         for (String name : methodFieldNames) {
-            p.pln("private static java.lang.reflect.Method " + name + ";");
+            p.pln("private static j86.j86.j86.java.lang.reflect.Method " + name + ";");
         }
     }
 
@@ -812,7 +812,7 @@ class StubSkeletonWriter {
             Type paramTypes[] = method.parameterTypes();
 
             p.p(methodDoc.containingClass().qualifiedName() + ".class.getMethod(\"" +
-                methodName + "\", new java.lang.Class[] {");
+                methodName + "\", new j86.java.lang.Class[] {");
             for (int j = 0; j < paramTypes.length; j++) {
                 if (j > 0)
                     p.p(", ");
@@ -877,11 +877,11 @@ class StubSkeletonWriter {
 
     /**
      * Writes a snippet of Java code to marshal a value named "name"
-     * of type "type" to the java.io.ObjectOutput stream named
+     * of type "type" to the j86.java.io.ObjectOutput stream named
      * "stream".
      *
      * Primitive types are marshalled with their corresponding methods
-     * in the java.io.DataOutput interface, and objects (including
+     * in the j86.java.io.DataOutput interface, and objects (including
      * arrays) are marshalled using the writeObject method.
      **/
     private static void writeMarshalArgument(IndentingWriter p,
@@ -915,7 +915,7 @@ class StubSkeletonWriter {
     /**
      * Writes Java statements to marshal a series of values in order
      * as named in the "names" array, with types as specified in the
-     * "types" array, to the java.io.ObjectOutput stream named
+     * "types" array, to the j86.java.io.ObjectOutput stream named
      * "stream".
      **/
     private static void writeMarshalArguments(IndentingWriter p,
@@ -933,12 +933,12 @@ class StubSkeletonWriter {
 
     /**
      * Writes a snippet of Java code to unmarshal a value of type
-     * "type" from the java.io.ObjectInput stream named "stream" into
+     * "type" from the j86.java.io.ObjectInput stream named "stream" into
      * a variable named "name" (if "name" is null, the value is
      * unmarshalled and discarded).
      *
      * Primitive types are unmarshalled with their corresponding
-     * methods in the java.io.DataInput interface, and objects
+     * methods in the j86.java.io.DataInput interface, and objects
      * (including arrays) are unmarshalled using the readObject
      * method.
      *
@@ -984,7 +984,7 @@ class StubSkeletonWriter {
 
     /**
      * Writes Java statements to unmarshal a series of values in order
-     * of types as in the "types" array from the java.io.ObjectInput
+     * of types as in the "types" array from the j86.java.io.ObjectInput
      * stream named "stream" into variables as named in "names" (for
      * any element of "names" that is null, the corresponding value is
      * unmarshalled and discarded).
@@ -1022,21 +1022,21 @@ class StubSkeletonWriter {
             return name;
         } else if (type.typeName().equals("boolean")) {
             return ("(" + name +
-                    " ? java.lang.Boolean.TRUE : java.lang.Boolean.FALSE)");
+                    " ? j86.java.lang.Boolean.TRUE : java.lang.Boolean.FALSE)");
         } else if (type.typeName().equals("byte")) {
-            return "new java.lang.Byte(" + name + ")";
+            return "new j86.java.lang.Byte(" + name + ")";
         } else if (type.typeName().equals("char")) {
-            return "new java.lang.Character(" + name + ")";
+            return "new j86.java.lang.Character(" + name + ")";
         } else if (type.typeName().equals("short")) {
-            return "new java.lang.Short(" + name + ")";
+            return "new j86.java.lang.Short(" + name + ")";
         } else if (type.typeName().equals("int")) {
-            return "new java.lang.Integer(" + name + ")";
+            return "new j86.java.lang.Integer(" + name + ")";
         } else if (type.typeName().equals("long")) {
-            return "new java.lang.Long(" + name + ")";
+            return "new j86.java.lang.Long(" + name + ")";
         } else if (type.typeName().equals("float")) {
-            return "new java.lang.Float(" + name + ")";
+            return "new j86.java.lang.Float(" + name + ")";
         } else if (type.typeName().equals("double")) {
-            return "new java.lang.Double(" + name + ")";
+            return "new j86.java.lang.Double(" + name + ")";
         } else {
             throw new AssertionError(type);
         }
@@ -1057,21 +1057,21 @@ class StubSkeletonWriter {
         if (type.dimension().length() > 0 || type.asClassDoc() != null) {
             return "((" + type.toString() + ") " + name + ")";
         } else if (type.typeName().equals("boolean")) {
-            return "((java.lang.Boolean) " + name + ").booleanValue()";
+            return "((j86.java.lang.Boolean) " + name + ").booleanValue()";
         } else if (type.typeName().equals("byte")) {
-            return "((java.lang.Byte) " + name + ").byteValue()";
+            return "((j86.java.lang.Byte) " + name + ").byteValue()";
         } else if (type.typeName().equals("char")) {
-            return "((java.lang.Character) " + name + ").charValue()";
+            return "((j86.java.lang.Character) " + name + ").charValue()";
         } else if (type.typeName().equals("short")) {
-            return "((java.lang.Short) " + name + ").shortValue()";
+            return "((j86.java.lang.Short) " + name + ").shortValue()";
         } else if (type.typeName().equals("int")) {
-            return "((java.lang.Integer) " + name + ").intValue()";
+            return "((j86.java.lang.Integer) " + name + ").intValue()";
         } else if (type.typeName().equals("long")) {
-            return "((java.lang.Long) " + name + ").longValue()";
+            return "((j86.java.lang.Long) " + name + ").longValue()";
         } else if (type.typeName().equals("float")) {
-            return "((java.lang.Float) " + name + ").floatValue()";
+            return "((j86.java.lang.Float) " + name + ").floatValue()";
         } else if (type.typeName().equals("double")) {
-            return "((java.lang.Double) " + name + ").doubleValue()";
+            return "((j86.java.lang.Double) " + name + ").doubleValue()";
         } else {
             throw new AssertionError(type);
         }

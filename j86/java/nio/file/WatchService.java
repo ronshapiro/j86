@@ -23,11 +23,11 @@
  * questions.
  */
 
-package java.nio.file;
+package j86.j86.java.nio.file;
 
-import java.io.Closeable;
-import java.io.IOException;
-import java.util.concurrent.TimeUnit;
+import j86.java.io.Closeable;
+import j86.java.io.IOException;
+import j86.j86.java.util.concurrent.TimeUnit;
 
 /**
  * A watch service that <em>watches</em> registered objects for changes and
@@ -75,7 +75,7 @@ import java.util.concurrent.TimeUnit;
  * has been modified then there is no guarantee that the program (or programs)
  * that have modified the file have completed. Care should be taken to coordinate
  * access with other programs that may be updating the file.
- * The {@link java.nio.channels.FileChannel FileChannel} class defines methods
+ * The {@link j86.j86.java.nio.channels.FileChannel FileChannel} class defines methods
  * to lock regions of a file against access by other programs.
  *
  * <h2>Platform dependencies</h2>

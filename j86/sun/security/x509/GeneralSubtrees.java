@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.security.x509;
+package j86.sun.security.x509;
 
-import java.io.*;
-import java.util.*;
+import j86.java.io.*;
+import j86.java.util.*;
 
-import sun.security.util.*;
+import j86.sun.security.util.*;
 
 /**
  * Represent the GeneralSubtrees ASN.1 object.

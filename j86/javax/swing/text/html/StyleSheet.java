@@ -22,19 +22,19 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text.html;
+package j86.j86.j86.javax.swing.text.html;
 
-import sun.swing.SwingUtilities2;
-import java.util.*;
-import java.awt.*;
-import java.io.*;
-import java.net.*;
-import javax.swing.Icon;
-import javax.swing.ImageIcon;
-import javax.swing.UIManager;
-import javax.swing.border.*;
-import javax.swing.event.ChangeListener;
-import javax.swing.text.*;
+import j86.sun.swing.SwingUtilities2;
+import j86.java.util.*;
+import j86.java.awt.*;
+import j86.java.io.*;
+import j86.java.net.*;
+import j86.javax.swing.Icon;
+import j86.javax.swing.ImageIcon;
+import j86.javax.swing.UIManager;
+import j86.j86.javax.swing.border.*;
+import j86.j86.javax.swing.event.ChangeListener;
+import j86.j86.javax.swing.text.*;
 
 /**
  * Support for defining the visual characteristics of
@@ -76,9 +76,9 @@ import javax.swing.text.*;
  * the named styles, and therefore the CSS rules contained.
  * <pre><code>
  * &nbsp;
- * &nbsp; import java.util.*;
- * &nbsp; import javax.swing.text.*;
- * &nbsp; import javax.swing.text.html.*;
+ * &nbsp; import j86.java.util.*;
+ * &nbsp; import j86.j86.javax.swing.text.*;
+ * &nbsp; import j86.j86.j86.javax.swing.text.html.*;
  * &nbsp;
  * &nbsp; public class ShowStyles {
  * &nbsp;
@@ -396,7 +396,7 @@ public class StyleSheet extends StyleContext {
             }
             if (!linkedStyleSheets.contains(ss)) {
                 int index = 0;
-                if (ss instanceof javax.swing.plaf.UIResource
+                if (ss instanceof j86.j86.javax.swing.plaf.UIResource
                     && linkedStyleSheets.size() > 1) {
                     index = linkedStyleSheets.size() - 1;
                 }

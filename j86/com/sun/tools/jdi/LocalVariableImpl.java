@@ -23,8 +23,8 @@
  * questions.
  */
 
-package com.sun.tools.jdi;
-import com.sun.jdi.*;
+package j86.com.sun.tools.jdi;
+import j86.com.sun.jdi.*;
 
 public class LocalVariableImpl extends MirrorImpl
                                implements LocalVariable, ValueContainer

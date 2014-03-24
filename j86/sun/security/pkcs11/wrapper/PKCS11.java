@@ -45,16 +45,16 @@
  *  POSSIBILITY  OF SUCH DAMAGE.
  */
 
-package sun.security.pkcs11.wrapper;
+package j86.j86.j86.sun.security.pkcs11.wrapper;
 
-import java.io.File;
-import java.io.IOException;
-import java.util.*;
+import j86.java.io.File;
+import j86.java.io.IOException;
+import j86.java.util.*;
 
-import java.security.AccessController;
-import java.security.PrivilegedAction;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
 
-import static sun.security.pkcs11.wrapper.PKCS11Constants.*;
+import static j86.j86.j86.sun.security.pkcs11.wrapper.PKCS11Constants.*;
 
 /**
  * This is the default implementation of the PKCS11 interface. IT connects to

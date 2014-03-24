@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.security.action;
+package j86.sun.security.action;
 
 /**
  * A convenience class for retrieving the string value of a system
@@ -36,18 +36,18 @@ package sun.security.action;
  * property named <code>"prop"</code> as a privileged action: <p>
  *
  * <pre>
- * String s = java.security.AccessController.doPrivileged
+ * String s = j86.java.security.AccessController.doPrivileged
  *                      (new GetPropertyAction("prop"));
  * </pre>
  *
  * @author Roland Schemers
- * @see java.security.PrivilegedAction
- * @see java.security.AccessController
+ * @see j86.java.security.PrivilegedAction
+ * @see j86.java.security.AccessController
  * @since 1.2
  */
 
 public class GetPropertyAction
-        implements java.security.PrivilegedAction<String> {
+        implements j86.java.security.PrivilegedAction<String> {
     private String theProp;
     private String defaultVal;
 

@@ -23,13 +23,13 @@
  * questions.
  */
 
-package javax.swing.text.html;
+package j86.j86.j86.javax.swing.text.html;
 
-import java.io.Writer;
-import java.io.IOException;
-import java.util.*;
-import java.awt.Color;
-import javax.swing.text.*;
+import j86.java.io.Writer;
+import j86.java.io.IOException;
+import j86.java.util.*;
+import j86.java.awt.Color;
+import j86.j86.javax.swing.text.*;
 
 /**
  * MinimalHTMLWriter is a fallback writer used by the

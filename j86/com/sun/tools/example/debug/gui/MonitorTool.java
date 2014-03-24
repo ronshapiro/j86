@@ -32,15 +32,15 @@
  */
 
 
-package com.sun.tools.example.debug.gui;
+package j86.com.sun.tools.example.debug.gui;
 
-import javax.swing.*;
-import javax.swing.event.*;
-import java.awt.*;
-import com.sun.jdi.*;
-import com.sun.tools.example.debug.bdi.*;
-import com.sun.tools.example.debug.expr.ExpressionParser;
-import com.sun.tools.example.debug.expr.ParseException;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.event.*;
+import j86.java.awt.*;
+import j86.com.sun.jdi.*;
+import j86.com.sun.tools.example.debug.bdi.*;
+import j86.com.sun.tools.example.debug.expr.ExpressionParser;
+import j86.com.sun.tools.example.debug.expr.ParseException;
 
 public class MonitorTool extends JPanel {
 

@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.awt;
+package j86.sun.awt;
 
-import java.lang.reflect.Array;
-import java.util.EventListener;
+import j86.j86.j86.java.lang.reflect.Array;
+import j86.java.util.EventListener;
 
 
 /**
- * A class that assists in managing {@link java.util.EventListener}s of
+ * A class that assists in managing {@link j86.java.util.EventListener}s of
  * the specified type. Its instance holds an array of listeners of the same
  * type and allows to perform the typical operations on the listeners.
  * This class is thread-safe.
@@ -51,7 +51,7 @@ public class EventListenerAggregate {
      * @throws NullPointerException if <code>listenerClass</code> is
      *         <code>null</code>
      * @throws ClassCastException if <code>listenerClass</code> is not
-     *         assignable to <code>java.util.EventListener</code>
+     *         assignable to <code>j86.java.util.EventListener</code>
      */
     public EventListenerAggregate(Class<? extends EventListener> listenerClass) {
         if (listenerClass == null) {

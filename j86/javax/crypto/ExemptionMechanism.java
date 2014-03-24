@@ -23,19 +23,19 @@
  * questions.
  */
 
-package javax.crypto;
+package j86.javax.crypto;
 
-import java.security.AlgorithmParameters;
-import java.security.Provider;
-import java.security.Key;
-import java.security.Security;
-import java.security.NoSuchAlgorithmException;
-import java.security.NoSuchProviderException;
-import java.security.InvalidKeyException;
-import java.security.InvalidAlgorithmParameterException;
-import java.security.spec.AlgorithmParameterSpec;
+import j86.java.security.AlgorithmParameters;
+import j86.java.security.Provider;
+import j86.java.security.Key;
+import j86.java.security.Security;
+import j86.java.security.NoSuchAlgorithmException;
+import j86.java.security.NoSuchProviderException;
+import j86.java.security.InvalidKeyException;
+import j86.java.security.InvalidAlgorithmParameterException;
+import j86.j86.java.security.spec.AlgorithmParameterSpec;
 
-import sun.security.jca.GetInstance.Instance;
+import j86.sun.security.jca.GetInstance.Instance;
 
 /**
  * This class provides the functionality of an exemption mechanism, examples
@@ -129,7 +129,7 @@ public class ExemptionMechanism {
      *          ExemptionMechanismSpi implementation for the
      *          specified algorithm.
      *
-     * @see java.security.Provider
+     * @see j86.java.security.Provider
      */
     public static final ExemptionMechanism getInstance(String algorithm)
             throws NoSuchAlgorithmException {
@@ -176,7 +176,7 @@ public class ExemptionMechanism {
      * @exception IllegalArgumentException if the <code>provider</code>
      *          is null or empty.
      *
-     * @see java.security.Provider
+     * @see j86.java.security.Provider
      */
     public static final ExemptionMechanism getInstance(String algorithm,
             String provider) throws NoSuchAlgorithmException,
@@ -217,7 +217,7 @@ public class ExemptionMechanism {
      * @exception IllegalArgumentException if the <code>provider</code>
      *          is null.
      *
-     * @see java.security.Provider
+     * @see j86.java.security.Provider
      */
     public static final ExemptionMechanism getInstance(String algorithm,
             Provider provider) throws NoSuchAlgorithmException {

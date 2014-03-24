@@ -23,41 +23,41 @@
  * questions.
  */
 
-package sun.rmi.server;
+package j86.sun.rmi.server;
 
-import java.io.IOException;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
-import java.net.ServerSocket;
-import java.rmi.MarshalledObject;
-import java.rmi.NoSuchObjectException;
-import java.rmi.Remote;
-import java.rmi.RemoteException;
-import java.rmi.activation.Activatable;
-import java.rmi.activation.ActivationDesc;
-import java.rmi.activation.ActivationException;
-import java.rmi.activation.ActivationGroup;
-import java.rmi.activation.ActivationGroupID;
-import java.rmi.activation.ActivationID;
-import java.rmi.activation.UnknownObjectException;
-import java.rmi.server.RMIClassLoader;
-import java.rmi.server.RMIServerSocketFactory;
-import java.rmi.server.RMISocketFactory;
-import java.rmi.server.UnicastRemoteObject;
-import java.security.AccessController;
-import java.security.PrivilegedActionException;
-import java.security.PrivilegedExceptionAction;
-import java.util.ArrayList;
-import java.util.Hashtable;
-import java.util.List;
-import sun.rmi.registry.RegistryImpl;
+import j86.java.io.IOException;
+import j86.j86.j86.java.lang.reflect.Constructor;
+import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.java.net.ServerSocket;
+import j86.java.rmi.MarshalledObject;
+import j86.java.rmi.NoSuchObjectException;
+import j86.java.rmi.Remote;
+import j86.java.rmi.RemoteException;
+import j86.j86.java.rmi.activation.Activatable;
+import j86.j86.java.rmi.activation.ActivationDesc;
+import j86.j86.java.rmi.activation.ActivationException;
+import j86.j86.java.rmi.activation.ActivationGroup;
+import j86.j86.java.rmi.activation.ActivationGroupID;
+import j86.j86.java.rmi.activation.ActivationID;
+import j86.j86.java.rmi.activation.UnknownObjectException;
+import j86.j86.java.rmi.server.RMIClassLoader;
+import j86.j86.java.rmi.server.RMIServerSocketFactory;
+import j86.j86.java.rmi.server.RMISocketFactory;
+import j86.j86.java.rmi.server.UnicastRemoteObject;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedActionException;
+import j86.java.security.PrivilegedExceptionAction;
+import j86.java.util.ArrayList;
+import j86.java.util.Hashtable;
+import j86.java.util.List;
+import j86.sun.rmi.registry.RegistryImpl;
 
 /**
  * The default activation group implementation.
  *
  * @author      Ann Wollrath
  * @since       1.2
- * @see         java.rmi.activation.ActivationGroup
+ * @see         j86.j86.java.rmi.activation.ActivationGroup
  */
 public class ActivationGroupImpl extends ActivationGroup {
 

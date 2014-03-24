@@ -23,11 +23,11 @@
  * questions.
  */
 
-package com.sun.jdi.connect;
+package j86.j86.com.sun.jdi.connect;
 
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Collections;
+import j86.java.util.List;
+import j86.java.util.ArrayList;
+import j86.java.util.Collections;
 
 /**
  * Thrown to indicate an invalid argument or

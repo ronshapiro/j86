@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.awt.image;
+package j86.j86.j86.java.awt.image;
 
 
 /**
@@ -31,7 +31,7 @@ package java.awt.image;
  * {@link BufferedImageOp} or {@link RasterOp} filter methods cannot
  * process the image.
  */
-public class ImagingOpException extends java.lang.RuntimeException {
+public class ImagingOpException extends j86.java.lang.RuntimeException {
 
     /**
      * Constructs an <code>ImagingOpException</code> object with the

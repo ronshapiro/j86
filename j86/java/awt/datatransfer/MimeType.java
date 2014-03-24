@@ -23,14 +23,14 @@
  * questions.
  */
 
-package java.awt.datatransfer;
+package j86.j86.java.awt.datatransfer;
 
-import java.io.Externalizable;
-import java.io.ObjectOutput;
-import java.io.ObjectInput;
-import java.io.IOException;
-import java.util.Enumeration;
-import java.util.Locale;
+import j86.java.io.Externalizable;
+import j86.java.io.ObjectOutput;
+import j86.java.io.ObjectInput;
+import j86.java.io.IOException;
+import j86.java.util.Enumeration;
+import j86.java.util.Locale;
 
 
 /**

@@ -23,25 +23,25 @@
  * questions.
  */
 
-package sun.net.www;
+package j86.j86.sun.net.www;
 
-import java.util.BitSet;
-import java.io.UnsupportedEncodingException;
-import java.io.File;
-import java.net.URL;
-import java.net.MalformedURLException;
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.nio.ByteBuffer;
-import java.nio.CharBuffer;
-import java.nio.charset.CharacterCodingException;
-import sun.nio.cs.ThreadLocalCoders;
-import java.nio.charset.CharsetDecoder;
-import java.nio.charset.CoderResult;
-import java.nio.charset.CodingErrorAction;
+import j86.java.util.BitSet;
+import j86.java.io.UnsupportedEncodingException;
+import j86.java.io.File;
+import j86.java.net.URL;
+import j86.java.net.MalformedURLException;
+import j86.java.net.URI;
+import j86.java.net.URISyntaxException;
+import j86.java.nio.ByteBuffer;
+import j86.java.nio.CharBuffer;
+import j86.j86.java.nio.charset.CharacterCodingException;
+import j86.j86.j86.sun.nio.cs.ThreadLocalCoders;
+import j86.j86.java.nio.charset.CharsetDecoder;
+import j86.j86.java.nio.charset.CoderResult;
+import j86.j86.java.nio.charset.CodingErrorAction;
 
 /**
- * A class that contains useful routines common to sun.net.www
+ * A class that contains useful routines common to j86.j86.sun.net.www
  * @author  Mike McCloskey
  */
 
@@ -272,7 +272,7 @@ public class ParseUtil {
         return new URL("file", "", path);
     }
 
-    public static java.net.URI toURI(URL url) {
+    public static j86.java.net.URI toURI(URL url) {
         String protocol = url.getProtocol();
         String auth = url.getAuthority();
         String path = url.getPath();
@@ -282,28 +282,28 @@ public class ParseUtil {
             path = "/" + path;
 
         //
-        // In java.net.URI class, a port number of -1 implies the default
+        // In j86.java.net.URI class, a port number of -1 implies the default
         // port number. So get it stripped off before creating URI instance.
         //
         if (auth != null && auth.endsWith(":-1"))
             auth = auth.substring(0, auth.length() - 3);
 
-        java.net.URI uri;
+        j86.java.net.URI uri;
         try {
             uri = createURI(protocol, auth, path, query, ref);
-        } catch (java.net.URISyntaxException e) {
+        } catch (j86.java.net.URISyntaxException e) {
             uri = null;
         }
         return uri;
     }
 
     //
-    // createURI() and its auxiliary code are cloned from java.net.URI.
+    // createURI() and its auxiliary code are cloned from j86.java.net.URI.
     // Most of the code are just copy and paste, except that quote()
     // has been modified to avoid double-escape.
     //
     // Usually it is unacceptable, but we're forced to do it because
-    // otherwise we need to change public API, namely java.net.URI's
+    // otherwise we need to change public API, namely j86.java.net.URI's
     // multi-argument constructors. It turns out that the changes cause
     // incompatibilities so can't be done.
     //

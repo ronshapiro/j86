@@ -33,9 +33,9 @@
  * patents. This notice and attribution to IBM may not be removed.
  */
 
-package sun.text;
+package j86.sun.text;
 
-import java.text.CharacterIterator;
+import j86.java.text.CharacterIterator;
 
 public abstract class CodePointIterator {
     public static final int DONE = -1;

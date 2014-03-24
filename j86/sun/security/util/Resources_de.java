@@ -23,18 +23,18 @@
  * questions.
  */
 
-package sun.security.util;
+package j86.sun.security.util;
 
 /**
  * <p> This class represents the <code>ResourceBundle</code>
- * for javax.security.auth and sun.security.
+ * for j86.javax.security.auth and sun.security.
  *
  */
-public class Resources_de extends java.util.ListResourceBundle {
+public class Resources_de extends j86.java.util.ListResourceBundle {
 
     private static final Object[][] contents = {
 
-        // javax.security.auth.PrivateCredentialPermission
+        // j86.javax.security.auth.PrivateCredentialPermission
         {"invalid.null.input.s.", "Ung\u00FCltige Nulleingabe(n)"},
         {"actions.can.only.be.read.", "Aktionen k\u00F6nnen nur \"lesen\" sein"},
         {"permission.name.name.syntax.invalid.",
@@ -52,12 +52,12 @@ public class Resources_de extends java.util.ListResourceBundle {
         {"CredOwner.Principal.Class.class.Principal.Name.name",
                 "CredOwner:\n\tPrincipal-Klasse = {0}\n\tPrincipal-Name = {1}"},
 
-        // javax.security.auth.x500
+        // j86.j86.javax.security.auth.x500
         {"provided.null.name", "Nullname angegeben"},
         {"provided.null.keyword.map", "Null-Schl\u00FCsselwortzuordnung angegeben"},
         {"provided.null.OID.map", "Null-OID-Zuordnung angegeben"},
 
-        // javax.security.auth.Subject
+        // j86.javax.security.auth.Subject
         {"NEWLINE", "\n"},
         {"invalid.null.AccessControlContext.provided",
                 "Ung\u00FCltiger Nullwert f\u00FCr AccessControlContext angegeben"},
@@ -72,15 +72,15 @@ public class Resources_de extends java.util.ListResourceBundle {
         {".Private.Credential.inaccessible.",
                 "\tKein Zugriff auf private Zugangsdaten\n"},
         {"Subject.is.read.only", "Subjekt ist schreibgesch\u00FCtzt"},
-        {"attempting.to.add.an.object.which.is.not.an.instance.of.java.security.Principal.to.a.Subject.s.Principal.Set",
-                "Es wird versucht, ein Objekt hinzuzuf\u00FCgen, das keine Instanz von java.security.Principal f\u00FCr eine Principal-Gruppe eines Subjekts ist"},
+        {"attempting.to.add.an.object.which.is.not.an.instance.of.j86.java.security.Principal.to.a.Subject.s.Principal.Set",
+                "Es wird versucht, ein Objekt hinzuzuf\u00FCgen, das keine Instanz von j86.java.security.Principal f\u00FCr eine Principal-Gruppe eines Subjekts ist"},
         {"attempting.to.add.an.object.which.is.not.an.instance.of.class",
                 "Es wird versucht, ein Objekt hinzuzuf\u00FCgen, das keine Instanz von {0} ist"},
 
-        // javax.security.auth.login.AppConfigurationEntry
+        // j86.j86.javax.security.auth.login.AppConfigurationEntry
         {"LoginModuleControlFlag.", "LoginModuleControlFlag: "},
 
-        // javax.security.auth.login.LoginContext
+        // j86.j86.javax.security.auth.login.LoginContext
         {"Invalid.null.input.name", "Ung\u00FCltige Nulleingabe: Name"},
         {"No.LoginModules.configured.for.name",
          "F\u00FCr {0} sind keine LoginModules konfiguriert"},
@@ -102,14 +102,14 @@ public class Resources_de extends java.util.ListResourceBundle {
         {"Login.Failure.all.modules.ignored",
                 "Anmeldefehler: Alle Module werden ignoriert"},
 
-        // sun.security.provider.PolicyFile
+        // j86.sun.security.provider.PolicyFile
 
-        {"java.security.policy.error.parsing.policy.message",
-                "java.security.policy: Fehler beim Parsen von {0}:\n\t{1}"},
-        {"java.security.policy.error.adding.Permission.perm.message",
-                "java.security.policy: Fehler beim Hinzuf\u00FCgen von Berechtigung, {0}:\n\t{1}"},
-        {"java.security.policy.error.adding.Entry.message",
-                "java.security.policy: Fehler beim Hinzuf\u00FCgen von Eintrag:\n\t{0}"},
+        {"j86.java.security.policy.error.parsing.policy.message",
+                "j86.java.security.policy: Fehler beim Parsen von {0}:\n\t{1}"},
+        {"j86.java.security.policy.error.adding.Permission.perm.message",
+                "j86.java.security.policy: Fehler beim Hinzuf\u00FCgen von Berechtigung, {0}:\n\t{1}"},
+        {"j86.java.security.policy.error.adding.Entry.message",
+                "j86.java.security.policy: Fehler beim Hinzuf\u00FCgen von Eintrag:\n\t{0}"},
         {"alias.name.not.provided.pe.name.", "Aliasname nicht angegeben ({0})"},
         {"unable.to.perform.substitution.on.alias.suffix",
                 "Substitution f\u00FCr Alias {0} kann nicht ausgef\u00FChrt werden"},
@@ -119,7 +119,7 @@ public class Resources_de extends java.util.ListResourceBundle {
         {"RPARAM", ")"},
         {"type.can.t.be.null","Typ kann nicht null sein"},
 
-        // sun.security.provider.PolicyParser
+        // j86.sun.security.provider.PolicyParser
         {"keystorePasswordURL.can.not.be.specified.without.also.specifying.keystore",
                 "keystorePasswordURL kann nicht ohne Keystore angegeben werden"},
         {"expected.keystore.type", "Keystore-Typ erwartet"},
@@ -146,12 +146,12 @@ public class Resources_de extends java.util.ListResourceBundle {
         {"null.principalClass.or.principalName",
                 "principalClass oder principalName null"},
 
-        // sun.security.pkcs11.SunPKCS11
+        // j86.j86.sun.security.pkcs11.SunPKCS11
         {"PKCS11.Token.providerName.Password.",
                 "Kennwort f\u00FCr PKCS11-Token [{0}]: "},
 
         /* --- DEPRECATED --- */
-        // javax.security.auth.Policy
+        // j86.javax.security.auth.Policy
         {"unable.to.instantiate.Subject.based.policy",
                 "Subjektbasierte Policy kann nicht instanziiert werden"}
     };

@@ -30,8 +30,8 @@
  * at JavaSoft/Sun.
  */
 
-package com.sun.tools.hat.internal.util;
-import java.util.*;
+package j86.j86.com.sun.tools.hat.internal.util;
+import j86.java.util.*;
 
 /**
  * Miscellaneous functions I couldn't think of a good place to put.

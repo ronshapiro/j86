@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.management;
+package j86.javax.management;
 
-import java.util.concurrent.CopyOnWriteArrayList;  // for Javadoc
+import j86.j86.java.util.concurrent.CopyOnWriteArrayList;  // for Javadoc
 
 /**
  * <p>Interface implemented by an MBean that emits Notifications. It

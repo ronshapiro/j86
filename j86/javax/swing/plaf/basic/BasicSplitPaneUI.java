@@ -24,23 +24,23 @@
  */
 
 
-package javax.swing.plaf.basic;
+package j86.j86.j86.javax.swing.plaf.basic;
 
 
-import sun.swing.DefaultLookup;
-import sun.swing.UIAction;
-import javax.swing.*;
-import javax.swing.border.Border;
-import java.awt.*;
-import java.awt.event.*;
-import java.awt.peer.ComponentPeer;
-import java.awt.peer.LightweightPeer;
-import java.beans.*;
-import java.util.*;
-import javax.swing.plaf.SplitPaneUI;
-import javax.swing.plaf.ComponentUI;
-import javax.swing.plaf.UIResource;
-import sun.swing.SwingUtilities2;
+import j86.sun.swing.DefaultLookup;
+import j86.sun.swing.UIAction;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.border.Border;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.j86.java.awt.peer.ComponentPeer;
+import j86.j86.java.awt.peer.LightweightPeer;
+import j86.java.beans.*;
+import j86.java.util.*;
+import j86.j86.javax.swing.plaf.SplitPaneUI;
+import j86.j86.javax.swing.plaf.ComponentUI;
+import j86.j86.javax.swing.plaf.UIResource;
+import j86.sun.swing.SwingUtilities2;
 
 
 /**

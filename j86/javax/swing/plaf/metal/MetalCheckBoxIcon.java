@@ -23,14 +23,14 @@
  * questions.
  */
 
-package javax.swing.plaf.metal;
+package j86.j86.j86.javax.swing.plaf.metal;
 
-import javax.swing.*;
+import j86.javax.swing.*;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.io.*;
-import javax.swing.plaf.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.java.io.*;
+import j86.j86.javax.swing.plaf.*;
 
 /**
  * CheckboxIcon implementation for OrganicCheckBoxUI
@@ -41,8 +41,8 @@ import javax.swing.plaf.*;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @author Steve Wilson
  */

@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>javax.management.monitor package</title>
+<title>j86.j86.javax.management.monitor package</title>
 <!--
 Copyright (c) 1999, 2013, Oracle and/or its affiliates. All rights reserved.
 DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
@@ -31,24 +31,24 @@ questions.
       an MBean that periodically observes the value of an attribute in
       one or more other MBeans.  If the attribute meets a certain
       condition, the Monitor emits a {@link
-      javax.management.monitor.MonitorNotification
+      j86.j86.javax.management.monitor.MonitorNotification
       MonitorNotification}. When the monitor MBean periodically calls
-      {@link javax.management.MBeanServer#getAttribute getAttribute}
+      {@link j86.javax.management.MBeanServer#getAttribute getAttribute}
       to retrieve the value of the attribute being monitored it does
       so within the access control context of the
-      {@link javax.management.monitor.Monitor#start} caller.</p>
+      {@link j86.j86.javax.management.monitor.Monitor#start} caller.</p>
 
       <p id="complex">The value being monitored can be a simple value
       contained within a complex type. For example, the {@link
-      java.lang.management.MemoryMXBean MemoryMXBean} defined in
-      <tt>java.lang.management</tt> has an attribute
+      j86.j86.java.lang.management.MemoryMXBean MemoryMXBean} defined in
+      <tt>j86.j86.java.lang.management</tt> has an attribute
       <tt>HeapMemoryUsage</tt> of type {@link
-      java.lang.management.MemoryUsage MemoryUsage}. To monitor the
+      j86.j86.java.lang.management.MemoryUsage MemoryUsage}. To monitor the
       amount of <i>used</i> memory, described by the <tt>used</tt>
       property of <tt>MemoryUsage</tt>, you could monitor
       "<tt>HeapMemoryUsage.used</tt>". That string would be the
       argument to {@link
-      javax.management.monitor.MonitorMBean#setObservedAttribute(String)
+      j86.j86.javax.management.monitor.MonitorMBean#setObservedAttribute(String)
       setObservedAttribute}.</p>
 
       <p>The rules used to interpret an <tt>ObservedAttribute</tt> like
@@ -61,15 +61,15 @@ questions.
 
       <ul>
           
-      <li>If <i>v</i> is a {@link javax.management.openmbean.CompositeData
+      <li>If <i>v</i> is a {@link j86.j86.javax.management.openmbean.CompositeData
       CompositeData} and if <i>v</i>.{@link
-      javax.management.openmbean.CompositeData#get(String) get}(<i>e</i>)
+      j86.j86.javax.management.openmbean.CompositeData#get(String) get}(<i>e</i>)
       returns a value then <i>x</i> is that value.</li>
       <li>If <i>v</i> is an array and <i>e</i> is the string <tt>"length"</tt>
       then <i>x</i> is the length of the array.</li>
       
       <li>If the above rules do not produce a value, and if introspection, as
-      if by calling {@link java.beans.Introspector#getBeanInfo(Class) 
+      if by calling {@link j86.java.beans.Introspector#getBeanInfo(Class) 
       Introspector.getBeanInfo}, for the class of <i>v</i> 
       (<i>v</i>.<tt>getClass()</tt>) identifies a property with the name 
       <i>e</i>, then <i>x</i> is the result of reading the property value. </li>
@@ -101,9 +101,9 @@ questions.
       will check whether an attribute exists whose name is the full
       <tt>ObservedAttribute</tt> string (<tt>HeapMemoryUsage.used</tt> in the
       example). It does this by calling {@link
-      javax.management.MBeanServer#getMBeanInfo(javax.management.ObjectName)
+      j86.javax.management.MBeanServer#getMBeanInfo(javax.management.ObjectName)
       getMBeanInfo} for the observed MBean and looking for a contained {@link
-      javax.management.MBeanAttributeInfo MBeanAttributeInfo} with the given
+      j86.javax.management.MBeanAttributeInfo MBeanAttributeInfo} with the given
       name. If one is found, then that is what is monitored. If more than one
       MBean is being observed, the behavior is unspecified if some of them have
       a <tt>HeapMemoryUsage.used</tt> attribute and others do not. An
@@ -120,7 +120,7 @@ questions.
       <ul>
 	<li>
 
-	  <p>A {@link javax.management.monitor.CounterMonitor
+	  <p>A {@link j86.j86.javax.management.monitor.CounterMonitor
 	    CounterMonitor} observes attributes of integer
 	    type.  The attributes are assumed to be non-negative, and
 	    monotonically increasing except for a possible
@@ -143,7 +143,7 @@ questions.
 	</li>
 	<li>
 
-	  <p>A {@link javax.management.monitor.GaugeMonitor
+	  <p>A {@link j86.j86.javax.management.monitor.GaugeMonitor
 	    GaugeMonitor} observes attributes of numerical type.  Each
 	    observed attribute has an associated <em>high
 	      threshold</em> and <em>low threshold</em>.</p>
@@ -175,7 +175,7 @@ questions.
 	</li>
 	<li>
 
-	  <p>A {@link javax.management.monitor.StringMonitor
+	  <p>A {@link j86.j86.javax.management.monitor.StringMonitor
 	    StringMonitor} observes attributes of type
 	    <code>String</code>.  A notification is sent when an
 	    observed attribute becomes equal and/or not equal to a

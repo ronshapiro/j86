@@ -23,11 +23,11 @@
  * questions.
  */
 
-package javax.sound.sampled;
+package j86.javax.sound.sampled;
 
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
+import j86.java.util.Collections;
+import j86.java.util.HashMap;
+import j86.java.util.Map;
 
 /**
  * <code>AudioFormat</code> is the class that specifies a particular arrangement of data in a sound stream.
@@ -93,18 +93,18 @@ import java.util.Map;
  *  </tr>
  *  <tr>
  *   <td>&quot;bitrate&quot;</td>
- *   <td>{@link java.lang.Integer Integer}</td>
+ *   <td>{@link j86.java.lang.Integer Integer}</td>
  *   <td>average bit rate in bits per second</td>
  *  </tr>
  *  <tr>
  *   <td>&quot;vbr&quot;</td>
- *   <td>{@link java.lang.Boolean Boolean}</td>
+ *   <td>{@link j86.java.lang.Boolean Boolean}</td>
  *   <td><code>true</code>, if the file is encoded in variable bit
  *       rate (VBR)</td>
  *  </tr>
  *  <tr>
  *   <td>&quot;quality&quot;</td>
- *   <td>{@link java.lang.Integer Integer}</td>
+ *   <td>{@link j86.java.lang.Integer Integer}</td>
  *   <td>encoding/conversion quality, 1..100</td>
  *  </tr>
  * </table>
@@ -119,7 +119,7 @@ import java.util.Map;
  * @see DataLine#getFormat
  * @see AudioInputStream#getFormat
  * @see AudioFileFormat
- * @see javax.sound.sampled.spi.FormatConversionProvider
+ * @see j86.j86.javax.sound.sampled.spi.FormatConversionProvider
  * @since 1.3
  */
 public class AudioFormat {
@@ -572,7 +572,7 @@ public class AudioFormat {
      * are equal.
      *
      * @see AudioFormat
-     * @see javax.sound.sampled.spi.FormatConversionProvider
+     * @see j86.j86.javax.sound.sampled.spi.FormatConversionProvider
      *
      * @author Kara Kytle
      * @since 1.3

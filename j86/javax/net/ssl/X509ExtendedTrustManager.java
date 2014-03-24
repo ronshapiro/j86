@@ -23,13 +23,13 @@
  * questions.
  */
 
-package javax.net.ssl;
+package j86.j86.javax.net.ssl;
 
-import java.net.Socket;
-import javax.net.ssl.X509TrustManager;
+import j86.java.net.Socket;
+import j86.j86.javax.net.ssl.X509TrustManager;
 
-import java.security.cert.X509Certificate;
-import java.security.cert.CertificateException;
+import j86.j86.java.security.cert.X509Certificate;
+import j86.j86.java.security.cert.CertificateException;
 
 /**
  * Extensions to the <code>X509TrustManager</code> interface to support
@@ -63,7 +63,7 @@ public abstract class X509ExtendedTrustManager implements X509TrustManager {
      * should be "RSA". Checking is case-sensitive.
      * <p>
      * If the <code>socket</code> parameter is an instance of
-     * {@link javax.net.ssl.SSLSocket}, and the endpoint identification
+     * {@link j86.j86.javax.net.ssl.SSLSocket}, and the endpoint identification
      * algorithm of the <code>SSLParameters</code> is non-empty, to prevent
      * man-in-the-middle attacks, the address that the <code>socket</code>
      * connected to should be checked against the peer's identity presented
@@ -71,7 +71,7 @@ public abstract class X509ExtendedTrustManager implements X509TrustManager {
      * identification algorithm.
      * <p>
      * If the <code>socket</code> parameter is an instance of
-     * {@link javax.net.ssl.SSLSocket}, and the algorithm constraints of the
+     * {@link j86.j86.javax.net.ssl.SSLSocket}, and the algorithm constraints of the
      * <code>SSLParameters</code> is non-null, for every certificate in the
      * certification path, fields such as subject public key, the signature
      * algorithm, key usage, extended key usage, etc. need to conform to the
@@ -111,7 +111,7 @@ public abstract class X509ExtendedTrustManager implements X509TrustManager {
      * certificate is used. Checking is case-sensitive.
      * <p>
      * If the <code>socket</code> parameter is an instance of
-     * {@link javax.net.ssl.SSLSocket}, and the endpoint identification
+     * {@link j86.j86.javax.net.ssl.SSLSocket}, and the endpoint identification
      * algorithm of the <code>SSLParameters</code> is non-empty, to prevent
      * man-in-the-middle attacks, the address that the <code>socket</code>
      * connected to should be checked against the peer's identity presented
@@ -119,7 +119,7 @@ public abstract class X509ExtendedTrustManager implements X509TrustManager {
      * identification algorithm.
      * <p>
      * If the <code>socket</code> parameter is an instance of
-     * {@link javax.net.ssl.SSLSocket}, and the algorithm constraints of the
+     * {@link j86.j86.javax.net.ssl.SSLSocket}, and the algorithm constraints of the
      *  <code>SSLParameters</code> is non-null, for every certificate in the
      * certification path, fields such as subject public key, the signature
      * algorithm, key usage, extended key usage, etc. need to conform to the

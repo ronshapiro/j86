@@ -23,15 +23,15 @@
  * questions.
  */
 
-package java.awt;
+package j86.java.awt;
 
-import java.awt.geom.AffineTransform;
-import java.awt.image.BufferedImage;
-import java.awt.image.ColorModel;
-import java.awt.image.VolatileImage;
-import java.awt.image.WritableRaster;
+import j86.j86.java.awt.geom.AffineTransform;
+import j86.j86.j86.java.awt.image.BufferedImage;
+import j86.j86.j86.java.awt.image.ColorModel;
+import j86.j86.j86.java.awt.image.VolatileImage;
+import j86.j86.j86.java.awt.image.WritableRaster;
 
-import sun.awt.image.SunVolatileImage;
+import j86.j86.j86.sun.awt.image.SunVolatileImage;
 
 /**
  * The <code>GraphicsConfiguration</code> class describes the

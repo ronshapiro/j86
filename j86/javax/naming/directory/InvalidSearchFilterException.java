@@ -24,9 +24,9 @@
  */
 
 
-package javax.naming.directory;
+package j86.j86.javax.naming.directory;
 
-import javax.naming.NamingException;
+import j86.javax.naming.NamingException;
 
 /**
   * This exception is thrown when the specification of
@@ -54,7 +54,7 @@ public class InvalidSearchFilterException extends NamingException {
      * Constructs a new instance of InvalidSearchFilterException
      * with an explanation. All other fields are set to null.
      * @param msg Detail about this exception. Can be null.
-     * @see java.lang.Throwable#getMessage
+     * @see j86.java.lang.Throwable#getMessage
      */
     public InvalidSearchFilterException(String msg) {
         super(msg);

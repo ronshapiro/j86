@@ -22,25 +22,25 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.plaf.basic;
+package j86.j86.j86.javax.swing.plaf.basic;
 
-import java.util.*;
-import java.awt.*;
-import java.awt.event.*;
-import java.awt.datatransfer.*;
-import java.awt.im.InputContext;
-import java.beans.*;
-import java.io.*;
-import javax.swing.*;
-import javax.swing.plaf.*;
-import javax.swing.text.*;
-import javax.swing.event.*;
-import javax.swing.border.Border;
-import javax.swing.plaf.UIResource;
-import javax.swing.plaf.synth.SynthUI;
-import sun.swing.DefaultLookup;
-import sun.awt.AppContext;
-import javax.swing.plaf.basic.DragRecognitionSupport.BeforeDrag;
+import j86.java.util.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.j86.java.awt.datatransfer.*;
+import j86.j86.java.awt.im.InputContext;
+import j86.java.beans.*;
+import j86.java.io.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.javax.swing.text.*;
+import j86.j86.javax.swing.event.*;
+import j86.j86.javax.swing.border.Border;
+import j86.j86.javax.swing.plaf.UIResource;
+import j86.j86.j86.javax.swing.plaf.synth.SynthUI;
+import j86.sun.swing.DefaultLookup;
+import j86.sun.awt.AppContext;
+import j86.j86.j86.javax.swing.plaf.basic.DragRecognitionSupport.BeforeDrag;
 
 /**
  * <p>
@@ -94,8 +94,8 @@ import javax.swing.plaf.basic.DragRecognitionSupport.BeforeDrag;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @author Timothy Prinzing
  * @author Shannon Hickey (drag and drop)
@@ -165,7 +165,7 @@ public abstract class BasicTextUI extends TextUI implements ViewFactory {
      *
      * @return the keymap
      * @see #getKeymapName
-     * @see javax.swing.text.JTextComponent
+     * @see j86.j86.javax.swing.text.JTextComponent
      */
     protected Keymap createKeymap() {
         String nm = getKeymapName();
@@ -1220,8 +1220,8 @@ public abstract class BasicTextUI extends TextUI implements ViewFactory {
      * Returns the string to be used as the tooltip at the passed in location.
      * This forwards the method onto the root View.
      *
-     * @see javax.swing.text.JTextComponent#getToolTipText
-     * @see javax.swing.text.View#getToolTipText
+     * @see j86.j86.javax.swing.text.JTextComponent#getToolTipText
+     * @see j86.j86.javax.swing.text.View#getToolTipText
      * @since 1.4
      */
     public String getToolTipText(JTextComponent t, Point pt) {
@@ -2021,8 +2021,8 @@ public abstract class BasicTextUI extends TextUI implements ViewFactory {
 
         /**
          * Returns the maximum size of this component.
-         * @see java.awt.Component#getMinimumSize()
-         * @see java.awt.Component#getPreferredSize()
+         * @see j86.java.awt.Component#getMinimumSize()
+         * @see j86.java.awt.Component#getPreferredSize()
          * @see LayoutManager
          */
         public Dimension maximumLayoutSize(Container target) {
@@ -2245,7 +2245,7 @@ public abstract class BasicTextUI extends TextUI implements ViewFactory {
                     } else if (plainFlavor == null && mime.startsWith("text/plain")) {
                         plainFlavor = flavors[i];
                     } else if (refFlavor == null && mime.startsWith("application/x-java-jvm-local-objectref")
-                                                 && flavors[i].getRepresentationClass() == java.lang.String.class) {
+                                                 && flavors[i].getRepresentationClass() == j86.java.lang.String.class) {
                         refFlavor = flavors[i];
                     } else if (stringFlavor == null && flavors[i].equals(DataFlavor.stringFlavor)) {
                         stringFlavor = flavors[i];
@@ -2267,7 +2267,7 @@ public abstract class BasicTextUI extends TextUI implements ViewFactory {
                 if (mime.startsWith("text/plain")) {
                     return flavors[i];
                 } else if (refFlavor == null && mime.startsWith("application/x-java-jvm-local-objectref")
-                                             && flavors[i].getRepresentationClass() == java.lang.String.class) {
+                                             && flavors[i].getRepresentationClass() == j86.java.lang.String.class) {
                     refFlavor = flavors[i];
                 } else if (stringFlavor == null && flavors[i].equals(DataFlavor.stringFlavor)) {
                     stringFlavor = flavors[i];
@@ -2612,9 +2612,9 @@ public abstract class BasicTextUI extends TextUI implements ViewFactory {
 
                 try {
                     DataFlavor[] flavors = new DataFlavor[3];
-                    flavors[0] = new DataFlavor(mimeType + ";class=java.lang.String");
-                    flavors[1] = new DataFlavor(mimeType + ";class=java.io.Reader");
-                    flavors[2] = new DataFlavor(mimeType + ";class=java.io.InputStream;charset=unicode");
+                    flavors[0] = new DataFlavor(mimeType + ";class=j86.java.lang.String");
+                    flavors[1] = new DataFlavor(mimeType + ";class=j86.java.io.Reader");
+                    flavors[2] = new DataFlavor(mimeType + ";class=j86.java.io.InputStream;charset=unicode");
                     return flavors;
                 } catch (ClassNotFoundException cle) {
                     // fall through to unsupported (should not happen)

@@ -25,7 +25,7 @@
 
 #warn This file is preprocessed before being compiled
 
-package java.nio;
+package j86.java.nio;
 
 
 class ByteBufferAs$Type$Buffer$RW$$BO$                  // package-private

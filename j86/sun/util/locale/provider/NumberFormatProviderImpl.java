@@ -38,18 +38,18 @@
  * Taligent is a registered trademark of Taligent, Inc.
  */
 
-package sun.util.locale.provider;
+package j86.j86.j86.sun.util.locale.provider;
 
-import java.text.DecimalFormat;
-import java.text.DecimalFormatSymbols;
-import java.text.NumberFormat;
-import java.text.spi.NumberFormatProvider;
-import java.util.Currency;
-import java.util.Locale;
-import java.util.Set;
+import j86.java.text.DecimalFormat;
+import j86.java.text.DecimalFormatSymbols;
+import j86.java.text.NumberFormat;
+import j86.j86.java.text.spi.NumberFormatProvider;
+import j86.java.util.Currency;
+import j86.java.util.Locale;
+import j86.java.util.Set;
 
 /**
- * Concrete implementation of the  {@link java.text.spi.NumberFormatProvider
+ * Concrete implementation of the  {@link j86.j86.java.text.spi.NumberFormatProvider
  * NumberFormatProvider} class for the JRE LocaleProviderAdapter.
  *
  * @author Naoto Sato
@@ -97,10 +97,10 @@ public class NumberFormatProviderImpl extends NumberFormatProvider implements Av
      * @exception NullPointerException if <code>locale</code> is null
      * @exception IllegalArgumentException if <code>locale</code> isn't
      *     one of the locales returned from
-     *     {@link java.util.spi.LocaleServiceProvider#getAvailableLocales()
+     *     {@link j86.j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
      *     getAvailableLocales()}.
      * @return a currency formatter
-     * @see java.text.NumberFormat#getCurrencyInstance(java.util.Locale)
+     * @see j86.java.text.NumberFormat#getCurrencyInstance(j86.java.util.Locale)
      */
     @Override
     public NumberFormat getCurrencyInstance(Locale locale) {
@@ -112,19 +112,19 @@ public class NumberFormatProviderImpl extends NumberFormatProvider implements Av
      * integer values for the specified locale.
      * The returned number format is configured to
      * round floating point numbers to the nearest integer using
-     * half-even rounding (see {@link java.math.RoundingMode#HALF_EVEN HALF_EVEN})
+     * half-even rounding (see {@link j86.java.math.RoundingMode#HALF_EVEN HALF_EVEN})
      * for formatting, and to parse only the integer part of
      * an input string (see {@link
-     * java.text.NumberFormat#isParseIntegerOnly isParseIntegerOnly}).
+     * j86.java.text.NumberFormat#isParseIntegerOnly isParseIntegerOnly}).
      *
      * @param locale the desired locale
      * @exception NullPointerException if <code>locale</code> is null
      * @exception IllegalArgumentException if <code>locale</code> isn't
      *     one of the locales returned from
-     *     {@link java.util.spi.LocaleServiceProvider#getAvailableLocales()
+     *     {@link j86.j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
      *     getAvailableLocales()}.
      * @return a number format for integer values
-     * @see java.text.NumberFormat#getIntegerInstance(java.util.Locale)
+     * @see j86.java.text.NumberFormat#getIntegerInstance(j86.java.util.Locale)
      */
     @Override
     public NumberFormat getIntegerInstance(Locale locale) {
@@ -139,10 +139,10 @@ public class NumberFormatProviderImpl extends NumberFormatProvider implements Av
      * @exception NullPointerException if <code>locale</code> is null
      * @exception IllegalArgumentException if <code>locale</code> isn't
      *     one of the locales returned from
-     *     {@link java.util.spi.LocaleServiceProvider#getAvailableLocales()
+     *     {@link j86.j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
      *     getAvailableLocales()}.
      * @return a general-purpose number formatter
-     * @see java.text.NumberFormat#getNumberInstance(java.util.Locale)
+     * @see j86.java.text.NumberFormat#getNumberInstance(j86.java.util.Locale)
      */
     @Override
     public NumberFormat getNumberInstance(Locale locale) {
@@ -157,10 +157,10 @@ public class NumberFormatProviderImpl extends NumberFormatProvider implements Av
      * @exception NullPointerException if <code>locale</code> is null
      * @exception IllegalArgumentException if <code>locale</code> isn't
      *     one of the locales returned from
-     *     {@link java.util.spi.LocaleServiceProvider#getAvailableLocales()
+     *     {@link j86.j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
      *     getAvailableLocales()}.
      * @return a percent formatter
-     * @see java.text.NumberFormat#getPercentInstance(java.util.Locale)
+     * @see j86.java.text.NumberFormat#getPercentInstance(j86.java.util.Locale)
      */
     @Override
     public NumberFormat getPercentInstance(Locale locale) {

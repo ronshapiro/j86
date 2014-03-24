@@ -23,9 +23,9 @@
  * questions.
  */
 
-package com.sun.tools.jdi;
+package j86.com.sun.tools.jdi;
 
-import com.sun.jdi.*;
+import j86.com.sun.jdi.*;
 
 public class ByteTypeImpl extends PrimitiveTypeImpl implements ByteType {
     ByteTypeImpl(VirtualMachine vm) {

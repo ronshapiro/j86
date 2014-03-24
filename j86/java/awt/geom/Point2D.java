@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.awt.geom;
+package j86.j86.java.awt.geom;
 
-import java.io.Serializable;
+import j86.java.io.Serializable;
 
 /**
  * The <code>Point2D</code> class defines a point representing a location
@@ -229,9 +229,9 @@ public abstract class Point2D implements Cloneable {
      * the information necessary to satisfy the various accessor
      * methods below.
      *
-     * @see java.awt.geom.Point2D.Float
-     * @see java.awt.geom.Point2D.Double
-     * @see java.awt.Point
+     * @see j86.j86.java.awt.geom.Point2D.Float
+     * @see j86.j86.java.awt.geom.Point2D.Double
+     * @see j86.java.awt.Point
      * @since 1.2
      */
     protected Point2D() {
@@ -385,7 +385,7 @@ public abstract class Point2D implements Cloneable {
      * same contents as this object.
      * @return     a clone of this instance.
      * @exception  OutOfMemoryError            if there is not enough memory.
-     * @see        java.lang.Cloneable
+     * @see        j86.java.lang.Cloneable
      * @since      1.2
      */
     public Object clone() {
@@ -402,8 +402,8 @@ public abstract class Point2D implements Cloneable {
      * @return      a hash code for this <code>Point2D</code>.
      */
     public int hashCode() {
-        long bits = java.lang.Double.doubleToLongBits(getX());
-        bits ^= java.lang.Double.doubleToLongBits(getY()) * 31;
+        long bits = j86.java.lang.Double.doubleToLongBits(getX());
+        bits ^= j86.java.lang.Double.doubleToLongBits(getY()) * 31;
         return (((int) bits) ^ ((int) (bits >> 32)));
     }
 

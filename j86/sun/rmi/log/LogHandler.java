@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.rmi.log;
+package j86.sun.rmi.log;
 
-import java.io.*;
-import sun.rmi.server.MarshalOutputStream;
-import sun.rmi.server.MarshalInputStream;
+import j86.java.io.*;
+import j86.sun.rmi.server.MarshalOutputStream;
+import j86.sun.rmi.server.MarshalInputStream;
 
 /**
  * A LogHandler represents snapshots and update records as serializable

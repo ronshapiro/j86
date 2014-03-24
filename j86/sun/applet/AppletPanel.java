@@ -23,36 +23,36 @@
  * questions.
  */
 
-package sun.applet;
+package j86.sun.applet;
 
-import java.applet.*;
-import java.awt.*;
-import java.awt.event.*;
-import java.awt.image.ColorModel;
-import java.awt.image.MemoryImageSource;
-import java.io.*;
-import java.lang.ref.WeakReference;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.net.InetAddress;
-import java.net.JarURLConnection;
-import java.net.MalformedURLException;
-import java.net.SocketPermission;
-import java.net.URL;
-import java.net.UnknownHostException;
-import java.security.*;
-import java.util.*;
-import java.util.Collections;
-import java.util.Locale;
-import java.util.WeakHashMap;
-import sun.awt.AWTAccessor;
-import sun.awt.AppContext;
-import sun.awt.EmbeddedFrame;
-import sun.awt.SunToolkit;
-import sun.misc.MessageUtils;
-import sun.misc.PerformanceLogger;
-import sun.misc.Queue;
-import sun.security.util.SecurityConstants;
+import j86.java.applet.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.j86.j86.java.awt.image.ColorModel;
+import j86.j86.j86.java.awt.image.MemoryImageSource;
+import j86.java.io.*;
+import j86.j86.java.lang.ref.WeakReference;
+import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.net.InetAddress;
+import j86.java.net.JarURLConnection;
+import j86.java.net.MalformedURLException;
+import j86.java.net.SocketPermission;
+import j86.java.net.URL;
+import j86.java.net.UnknownHostException;
+import j86.java.security.*;
+import j86.java.util.*;
+import j86.java.util.Collections;
+import j86.java.util.Locale;
+import j86.java.util.WeakHashMap;
+import j86.sun.awt.AWTAccessor;
+import j86.sun.awt.AppContext;
+import j86.sun.awt.EmbeddedFrame;
+import j86.sun.awt.SunToolkit;
+import j86.sun.misc.MessageUtils;
+import j86.sun.misc.PerformanceLogger;
+import j86.sun.misc.Queue;
+import j86.sun.security.util.SecurityConstants;
 
 /**
  * Applet panel class. The panel manages and manipulates the
@@ -534,7 +534,7 @@ abstract class AppletPanel extends Panel implements AppletStub, Runnable {
                     // when reusing AppletClassLoader object.
                     try {
                         applet.stop();
-                    } catch (java.security.AccessControlException e) {
+                    } catch (j86.java.security.AccessControlException e) {
                         setExceptionStatus(e);
                         // rethrow exception to be handled as it normally would be.
                         throw e;
@@ -556,7 +556,7 @@ abstract class AppletPanel extends Panel implements AppletStub, Runnable {
                     // when reusing AppletClassLoader object.
                     try {
                         applet.destroy();
-                    } catch (java.security.AccessControlException e) {
+                    } catch (j86.java.security.AccessControlException e) {
                         setExceptionStatus(e);
                         // rethrow exception to be handled as it normally would be.
                         throw e;
@@ -898,7 +898,7 @@ abstract class AppletPanel extends Panel implements AppletStub, Runnable {
         if(loader != null) {
             AppContext appCtxt = loader.getAppContext();
             if(appCtxt != null)
-                appEvtQ = (java.awt.EventQueue)appCtxt.get(AppContext.EVENT_QUEUE_KEY);
+                appEvtQ = (j86.java.awt.EventQueue)appCtxt.get(AppContext.EVENT_QUEUE_KEY);
         }
 
         final AppletPanel ap = this;
@@ -1056,10 +1056,10 @@ abstract class AppletPanel extends Panel implements AppletStub, Runnable {
         PermissionCollection perms = (PermissionCollection)
             AccessController.doPrivileged(new PrivilegedAction() {
                     public Object run() {
-                        Policy p = java.security.Policy.getPolicy();
+                        Policy p = j86.java.security.Policy.getPolicy();
                         if (p != null) {
                             return p.getPermissions(new CodeSource(null,
-                                                                   (java.security.cert.Certificate[]) null));
+                                                                   (j86.j86.java.security.cert.Certificate[]) null));
                         } else {
                             return null;
                         }
@@ -1074,11 +1074,11 @@ abstract class AppletPanel extends Panel implements AppletStub, Runnable {
         perms.add(SecurityConstants.CREATE_CLASSLOADER_PERMISSION);
 
         Permission p;
-        java.net.URLConnection urlConnection = null;
+        j86.java.net.URLConnection urlConnection = null;
         try {
             urlConnection = codebase.openConnection();
             p = urlConnection.getPermission();
-        } catch (java.io.IOException ioe) {
+        } catch (j86.java.io.IOException ioe) {
             p = null;
         }
 
@@ -1113,7 +1113,7 @@ abstract class AppletPanel extends Panel implements AppletStub, Runnable {
 
         ProtectionDomain domain =
             new ProtectionDomain(new CodeSource(codebase,
-                                                (java.security.cert.Certificate[]) null), perms);
+                                                (j86.j86.java.security.cert.Certificate[]) null), perms);
         AccessControlContext acc =
             new AccessControlContext(new ProtectionDomain[] { domain });
 

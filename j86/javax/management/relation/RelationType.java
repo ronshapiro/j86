@@ -23,12 +23,12 @@
  * questions.
  */
 
-package javax.management.relation;
+package j86.j86.javax.management.relation;
 
-import java.util.ArrayList; // for Javadoc
-import java.util.List;
+import j86.java.util.ArrayList; // for Javadoc
+import j86.java.util.List;
 
-import java.io.Serializable;
+import j86.java.io.Serializable;
 
 /**
  * The RelationType interface has to be implemented by any class expected to

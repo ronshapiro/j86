@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.reflect.annotation;
+package j86.j86.sun.reflect.annotation;
 
-import java.lang.annotation.*;
-import java.lang.reflect.*;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
+import j86.j86.java.lang.annotation.*;
+import j86.j86.j86.java.lang.reflect.*;
+import j86.java.util.ArrayList;
+import j86.java.util.Arrays;
+import j86.java.util.List;
+import j86.java.util.Map;
 
-import static sun.reflect.annotation.TypeAnnotation.*;
+import static j86.j86.sun.reflect.annotation.TypeAnnotation.*;
 
 public final class AnnotatedTypeFactory {
     /**

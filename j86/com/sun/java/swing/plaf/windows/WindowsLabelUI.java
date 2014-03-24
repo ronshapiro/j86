@@ -23,21 +23,21 @@
  * questions.
  */
 
-package com.sun.java.swing.plaf.windows;
+package j86.j86.com.sun.java.swing.plaf.windows;
 
-import sun.swing.SwingUtilities2;
-import sun.awt.AppContext;
+import j86.sun.swing.SwingUtilities2;
+import j86.sun.awt.AppContext;
 
-import java.awt.Color;
-import java.awt.Graphics;
+import j86.java.awt.Color;
+import j86.java.awt.Graphics;
 
-import javax.swing.JComponent;
-import javax.swing.JLabel;
-import javax.swing.UIManager;
+import j86.javax.swing.JComponent;
+import j86.javax.swing.JLabel;
+import j86.javax.swing.UIManager;
 
-import javax.swing.plaf.ComponentUI;
+import j86.j86.javax.swing.plaf.ComponentUI;
 
-import javax.swing.plaf.basic.BasicLabelUI;
+import j86.j86.j86.javax.swing.plaf.basic.BasicLabelUI;
 
 
 

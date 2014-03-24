@@ -22,19 +22,19 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text.rtf;
+package j86.j86.j86.javax.swing.text.rtf;
 
-import java.lang.*;
-import java.util.*;
-import java.awt.Color;
-import java.awt.Font;
-import java.io.OutputStream;
-import java.io.IOException;
+import j86.java.lang.*;
+import j86.java.util.*;
+import j86.java.awt.Color;
+import j86.java.awt.Font;
+import j86.java.io.OutputStream;
+import j86.java.io.IOException;
 
-import javax.swing.text.*;
+import j86.j86.javax.swing.text.*;
 
 /**
- * Generates an RTF output stream (java.io.OutputStream) from rich text
+ * Generates an RTF output stream (j86.java.io.OutputStream) from rich text
  * (handed off through a series of LTTextAcceptor calls).  Can be used to
  * generate RTF from any object which knows how to write to a text acceptor
  * (e.g., LTAttributedText and LTRTFFilter).
@@ -45,7 +45,7 @@ import javax.swing.text.*;
  * @see LTAttributedText
  * @see LTRTFFilter
  * @see LTTextAcceptor
- * @see java.io.OutputStream
+ * @see j86.java.io.OutputStream
  */
 
 class RTFGenerator extends Object

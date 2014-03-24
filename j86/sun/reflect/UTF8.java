@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.reflect;
+package j86.sun.reflect;
 
 /** It is necessary to use a "bootstrap" UTF-8 encoder for encoding
     constant pool entries because the character set converters rely on
@@ -52,7 +52,7 @@ class UTF8 {
             }
         } catch (ArrayIndexOutOfBoundsException e) {
             throw new InternalError
-                ("Bug in sun.reflect bootstrap UTF-8 encoder", e);
+                ("Bug in j86.sun.reflect bootstrap UTF-8 encoder", e);
         }
         return res;
     }

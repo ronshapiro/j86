@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.print;
+package j86.javax.print;
 
 /**
  * Class PrintException encapsulates a printing-related error condition that

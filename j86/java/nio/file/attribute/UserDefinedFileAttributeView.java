@@ -23,11 +23,11 @@
  * questions.
  */
 
-package java.nio.file.attribute;
+package j86.j86.j86.java.nio.file.attribute;
 
-import java.nio.ByteBuffer;
-import java.util.List;
-import java.io.IOException;
+import j86.java.nio.ByteBuffer;
+import j86.java.util.List;
+import j86.java.io.IOException;
 
 /**
  * A file attribute view that provides a view of a file's user-defined
@@ -53,15 +53,15 @@ import java.io.IOException;
  * {@code RuntimePermission("accessUserDefinedAttributes")} permission when a
  * security manager is installed.
  *
- * <p> The {@link java.nio.file.FileStore#supportsFileAttributeView
+ * <p> The {@link j86.j86.java.nio.file.FileStore#supportsFileAttributeView
  * supportsFileAttributeView} method may be used to test if a specific {@link
- * java.nio.file.FileStore FileStore} supports the storage of user-defined
+ * j86.j86.java.nio.file.FileStore FileStore} supports the storage of user-defined
  * attributes.
  *
  * <p> Where dynamic access to file attributes is required, the {@link
- * java.nio.file.Files#getAttribute getAttribute} method may be used to read
+ * j86.j86.java.nio.file.Files#getAttribute getAttribute} method may be used to read
  * the attribute value. The attribute value is returned as a byte array (byte[]).
- * The {@link java.nio.file.Files#setAttribute setAttribute} method may be used
+ * The {@link j86.j86.java.nio.file.Files#setAttribute setAttribute} method may be used
  * to write the value of a user-defined attribute from a buffer (as if by
  * invoking the {@link #write write} method), or byte array (byte[]).
  *

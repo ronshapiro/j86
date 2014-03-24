@@ -22,9 +22,9 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing;
+package j86.javax.swing;
 
-import java.awt.Graphics2D;
+import j86.java.awt.Graphics2D;
 
 /**
  * <p>A painting delegate. The Painter interface defines exactly one method,
@@ -42,7 +42,7 @@ import java.awt.Graphics2D;
  *
  * <p>A <code>Painter</code> may be created with a type parameter. This type will be
  * expected in the <code>paint</code> method. For example, you may wish to write a
- * <code>Painter</code> that only works with subclasses of {@link java.awt.Component}.
+ * <code>Painter</code> that only works with subclasses of {@link j86.java.awt.Component}.
  * In that case, when the <code>Painter</code> is declared, you may declare that
  * it requires a <code>Component</code>, allowing the paint method to be type safe. Ex:
  * <pre>
@@ -62,7 +62,7 @@ import java.awt.Graphics2D;
  */
 public interface Painter<T> {
     /**
-     * <p>Renders to the given {@link java.awt.Graphics2D} object. Implementations
+     * <p>Renders to the given {@link j86.java.awt.Graphics2D} object. Implementations
      * of this method <em>may</em> modify state on the <code>Graphics2D</code>, and are not
      * required to restore that state upon completion. In most cases, it is recommended
      * that the caller pass in a scratch graphics object. The <code>Graphics2D</code>

@@ -23,39 +23,39 @@
  * questions.
  */
 
-package sun.tools.jconsole.inspector;
+package j86.j86.sun.tools.jconsole.inspector;
 
 
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.Dimension;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.io.IOException;
+import j86.java.awt.BorderLayout;
+import j86.java.awt.Color;
+import j86.java.awt.Component;
+import j86.java.awt.Dimension;
+import j86.j86.java.awt.event.ActionEvent;
+import j86.j86.java.awt.event.ActionListener;
+import j86.java.io.IOException;
 
-import javax.management.IntrospectionException;
-import javax.management.NotificationListener;
-import javax.management.MBeanInfo;
-import javax.management.InstanceNotFoundException;
-import javax.management.ReflectionException;
-import javax.management.MBeanAttributeInfo;
-import javax.management.MBeanOperationInfo;
-import javax.management.MBeanNotificationInfo;
-import javax.management.Notification;
-import javax.swing.BorderFactory;
-import javax.swing.JButton;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.JTextArea;
-import javax.swing.SwingWorker;
-import javax.swing.border.LineBorder;
-import javax.swing.tree.DefaultMutableTreeNode;
-import javax.swing.tree.DefaultTreeModel;
+import j86.javax.management.IntrospectionException;
+import j86.javax.management.NotificationListener;
+import j86.javax.management.MBeanInfo;
+import j86.javax.management.InstanceNotFoundException;
+import j86.javax.management.ReflectionException;
+import j86.javax.management.MBeanAttributeInfo;
+import j86.javax.management.MBeanOperationInfo;
+import j86.javax.management.MBeanNotificationInfo;
+import j86.javax.management.Notification;
+import j86.javax.swing.BorderFactory;
+import j86.javax.swing.JButton;
+import j86.javax.swing.JOptionPane;
+import j86.javax.swing.JPanel;
+import j86.javax.swing.JScrollPane;
+import j86.javax.swing.JTextArea;
+import j86.javax.swing.SwingWorker;
+import j86.j86.javax.swing.border.LineBorder;
+import j86.j86.javax.swing.tree.DefaultMutableTreeNode;
+import j86.j86.javax.swing.tree.DefaultTreeModel;
 
-import sun.tools.jconsole.*;
-import sun.tools.jconsole.inspector.XNodeInfo.Type;
+import j86.sun.tools.jconsole.*;
+import j86.j86.sun.tools.jconsole.inspector.XNodeInfo.Type;
 
 @SuppressWarnings("serial")
 public class XSheet extends JPanel

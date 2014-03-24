@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.util.resources;
+package j86.j86.sun.util.resources;
 
-import java.util.Locale;
-import java.util.MissingResourceException;
-import java.util.ResourceBundle;
+import j86.java.util.Locale;
+import j86.java.util.MissingResourceException;
+import j86.java.util.ResourceBundle;
 
 /**
  * Implements ResourceBundle for LocaleNames bundles that don't provide

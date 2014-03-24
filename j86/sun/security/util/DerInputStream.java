@@ -23,15 +23,15 @@
  * questions.
  */
 
-package sun.security.util;
+package j86.sun.security.util;
 
-import java.io.InputStream;
-import java.io.IOException;
-import java.io.EOFException;
-import java.util.Date;
-import java.util.Vector;
-import java.math.BigInteger;
-import java.io.DataInputStream;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
+import j86.java.io.EOFException;
+import j86.java.util.Date;
+import j86.java.util.Vector;
+import j86.java.math.BigInteger;
+import j86.java.io.DataInputStream;
 
 /**
  * A DER input stream, used for parsing ASN.1 DER-encoded data such as
@@ -42,7 +42,7 @@ import java.io.DataInputStream;
  *
  * <P>Note that, like BER/1, DER streams are streams of explicitly
  * tagged data values.  Accordingly, this programming interface does
- * not expose any variant of the java.io.InputStream interface, since
+ * not expose any variant of the j86.java.io.InputStream interface, since
  * that kind of input stream holds untagged data values and using that
  * I/O model could prevent correct parsing of the DER data.
  *

@@ -23,9 +23,9 @@
  * questions.
  */
 
-package com.sun.jndi.ldap;
+package j86.com.sun.jndi.ldap;
 
-import javax.naming.NamingEnumeration;
+import j86.javax.naming.NamingEnumeration;
 
 interface ReferralEnumeration<T> extends NamingEnumeration<T> {
     void appendUnprocessedReferrals(LdapReferralException ex);

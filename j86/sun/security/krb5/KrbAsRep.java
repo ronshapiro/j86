@@ -29,16 +29,16 @@
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
 
-package sun.security.krb5;
+package j86.sun.security.krb5;
 
-import sun.security.krb5.internal.*;
-import sun.security.krb5.internal.crypto.KeyUsage;
-import sun.security.krb5.internal.crypto.EType;
-import sun.security.util.*;
-import java.io.IOException;
-import java.util.Objects;
-import javax.security.auth.kerberos.KeyTab;
-import sun.security.jgss.krb5.Krb5Util;
+import j86.j86.sun.security.krb5.internal.*;
+import j86.j86.j86.sun.security.krb5.internal.crypto.KeyUsage;
+import j86.j86.j86.sun.security.krb5.internal.crypto.EType;
+import j86.sun.security.util.*;
+import j86.java.io.IOException;
+import j86.java.util.Objects;
+import j86.j86.javax.security.auth.kerberos.KeyTab;
+import j86.j86.sun.security.jgss.krb5.Krb5Util;
 
 /**
  * This class encapsulates a AS-REP message that the KDC sends to the
@@ -178,7 +178,7 @@ class KrbAsRep extends KrbKdcRep {
         return Objects.requireNonNull(creds, "Creds not available yet.");
     }
 
-    sun.security.krb5.internal.ccache.Credentials getCCreds() {
-        return new sun.security.krb5.internal.ccache.Credentials(rep);
+    j86.j86.j86.sun.security.krb5.internal.ccache.Credentials getCCreds() {
+        return new j86.j86.j86.sun.security.krb5.internal.ccache.Credentials(rep);
     }
 }

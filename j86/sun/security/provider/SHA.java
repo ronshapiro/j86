@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.security.provider;
+package j86.sun.security.provider;
 
-import static sun.security.provider.ByteArrayAccess.*;
+import static j86.sun.security.provider.ByteArrayAccess.*;
 
 /**
  * This class implements the Secure Hash Algorithm (SHA) developed by

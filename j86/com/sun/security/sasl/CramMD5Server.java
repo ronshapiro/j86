@@ -23,17 +23,17 @@
  * questions.
  */
 
-package com.sun.security.sasl;
+package j86.com.sun.security.sasl;
 
-import javax.security.sasl.*;
-import javax.security.auth.callback.*;
-import java.util.Random;
-import java.util.Map;
-import java.io.IOException;
-import java.io.UnsupportedEncodingException;
-import java.security.NoSuchAlgorithmException;
+import j86.javax.security.sasl.*;
+import j86.j86.javax.security.auth.callback.*;
+import j86.java.util.Random;
+import j86.java.util.Map;
+import j86.java.io.IOException;
+import j86.java.io.UnsupportedEncodingException;
+import j86.java.security.NoSuchAlgorithmException;
 
-import java.util.logging.Level;
+import j86.j86.java.util.logging.Level;
 
 /**
   * Implements the CRAM-MD5 SASL server-side mechanism.

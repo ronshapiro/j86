@@ -23,19 +23,19 @@
  * questions.
  */
 
-package sun.security.pkcs11;
+package j86.j86.sun.security.pkcs11;
 
-import java.util.*;
-import java.nio.ByteBuffer;
+import j86.java.util.*;
+import j86.java.nio.ByteBuffer;
 
-import java.security.*;
+import j86.java.security.*;
 
-import javax.crypto.SecretKey;
+import j86.javax.crypto.SecretKey;
 
-import sun.nio.ch.DirectBuffer;
+import j86.j86.j86.sun.nio.ch.DirectBuffer;
 
-import sun.security.pkcs11.wrapper.*;
-import static sun.security.pkcs11.wrapper.PKCS11Constants.*;
+import j86.j86.j86.sun.security.pkcs11.wrapper.*;
+import static j86.j86.j86.sun.security.pkcs11.wrapper.PKCS11Constants.*;
 
 /**
  * MessageDigest implementation class. This class currently supports

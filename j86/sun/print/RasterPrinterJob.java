@@ -23,81 +23,81 @@
  * questions.
  */
 
-package sun.print;
+package j86.sun.print;
 
-import java.io.FilePermission;
+import j86.java.io.FilePermission;
 
-import java.awt.Color;
-import java.awt.Dialog;
-import java.awt.Frame;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.GraphicsConfiguration;
-import java.awt.GraphicsEnvironment;
-import java.awt.HeadlessException;
-import java.awt.KeyboardFocusManager;
-import java.awt.Rectangle;
-import java.awt.Shape;
-import java.awt.geom.AffineTransform;
-import java.awt.geom.Area;
-import java.awt.geom.Point2D;
-import java.awt.geom.Rectangle2D;
-import java.awt.image.BufferedImage;
-import java.awt.print.Book;
-import java.awt.print.Pageable;
-import java.awt.print.PageFormat;
-import java.awt.print.Paper;
-import java.awt.print.Printable;
-import java.awt.print.PrinterAbortException;
-import java.awt.print.PrinterException;
-import java.awt.print.PrinterJob;
-import java.awt.Window;
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Enumeration;
-import java.util.Locale;
-import sun.awt.image.ByteInterleavedRaster;
+import j86.java.awt.Color;
+import j86.java.awt.Dialog;
+import j86.java.awt.Frame;
+import j86.java.awt.Graphics;
+import j86.java.awt.Graphics2D;
+import j86.java.awt.GraphicsConfiguration;
+import j86.java.awt.GraphicsEnvironment;
+import j86.java.awt.HeadlessException;
+import j86.java.awt.KeyboardFocusManager;
+import j86.java.awt.Rectangle;
+import j86.java.awt.Shape;
+import j86.j86.java.awt.geom.AffineTransform;
+import j86.j86.java.awt.geom.Area;
+import j86.j86.java.awt.geom.Point2D;
+import j86.j86.java.awt.geom.Rectangle2D;
+import j86.j86.j86.java.awt.image.BufferedImage;
+import j86.j86.java.awt.print.Book;
+import j86.j86.java.awt.print.Pageable;
+import j86.j86.java.awt.print.PageFormat;
+import j86.j86.java.awt.print.Paper;
+import j86.j86.java.awt.print.Printable;
+import j86.j86.java.awt.print.PrinterAbortException;
+import j86.j86.java.awt.print.PrinterException;
+import j86.j86.java.awt.print.PrinterJob;
+import j86.java.awt.Window;
+import j86.java.io.File;
+import j86.java.io.IOException;
+import j86.java.util.ArrayList;
+import j86.java.util.Enumeration;
+import j86.java.util.Locale;
+import j86.j86.j86.sun.awt.image.ByteInterleavedRaster;
 
-import javax.print.Doc;
-import javax.print.DocFlavor;
-import javax.print.DocPrintJob;
-import javax.print.PrintException;
-import javax.print.PrintService;
-import javax.print.PrintServiceLookup;
-import javax.print.ServiceUI;
-import javax.print.StreamPrintService;
-import javax.print.StreamPrintServiceFactory;
-import javax.print.attribute.Attribute;
-import javax.print.attribute.AttributeSet;
-import javax.print.attribute.HashPrintRequestAttributeSet;
-import javax.print.attribute.PrintRequestAttributeSet;
-import javax.print.attribute.Size2DSyntax;
-import javax.print.attribute.standard.Chromaticity;
-import javax.print.attribute.standard.Copies;
-import javax.print.attribute.standard.Destination;
-import javax.print.attribute.standard.DialogTypeSelection;
-import javax.print.attribute.standard.Fidelity;
-import javax.print.attribute.standard.JobName;
-import javax.print.attribute.standard.JobSheets;
-import javax.print.attribute.standard.Media;
-import javax.print.attribute.standard.MediaPrintableArea;
-import javax.print.attribute.standard.MediaSize;
-import javax.print.attribute.standard.MediaSizeName;
-import javax.print.attribute.standard.OrientationRequested;
-import javax.print.attribute.standard.PageRanges;
-import javax.print.attribute.standard.PrinterState;
-import javax.print.attribute.standard.PrinterStateReason;
-import javax.print.attribute.standard.PrinterStateReasons;
-import javax.print.attribute.standard.PrinterIsAcceptingJobs;
-import javax.print.attribute.standard.RequestingUserName;
-import javax.print.attribute.standard.SheetCollate;
-import javax.print.attribute.standard.Sides;
+import j86.javax.print.Doc;
+import j86.javax.print.DocFlavor;
+import j86.javax.print.DocPrintJob;
+import j86.javax.print.PrintException;
+import j86.javax.print.PrintService;
+import j86.javax.print.PrintServiceLookup;
+import j86.javax.print.ServiceUI;
+import j86.javax.print.StreamPrintService;
+import j86.javax.print.StreamPrintServiceFactory;
+import j86.j86.javax.print.attribute.Attribute;
+import j86.j86.javax.print.attribute.AttributeSet;
+import j86.j86.javax.print.attribute.HashPrintRequestAttributeSet;
+import j86.j86.javax.print.attribute.PrintRequestAttributeSet;
+import j86.j86.javax.print.attribute.Size2DSyntax;
+import j86.j86.j86.javax.print.attribute.standard.Chromaticity;
+import j86.j86.j86.javax.print.attribute.standard.Copies;
+import j86.j86.j86.javax.print.attribute.standard.Destination;
+import j86.j86.j86.javax.print.attribute.standard.DialogTypeSelection;
+import j86.j86.j86.javax.print.attribute.standard.Fidelity;
+import j86.j86.j86.javax.print.attribute.standard.JobName;
+import j86.j86.j86.javax.print.attribute.standard.JobSheets;
+import j86.j86.j86.javax.print.attribute.standard.Media;
+import j86.j86.j86.javax.print.attribute.standard.MediaPrintableArea;
+import j86.j86.j86.javax.print.attribute.standard.MediaSize;
+import j86.j86.j86.javax.print.attribute.standard.MediaSizeName;
+import j86.j86.j86.javax.print.attribute.standard.OrientationRequested;
+import j86.j86.j86.javax.print.attribute.standard.PageRanges;
+import j86.j86.j86.javax.print.attribute.standard.PrinterState;
+import j86.j86.j86.javax.print.attribute.standard.PrinterStateReason;
+import j86.j86.j86.javax.print.attribute.standard.PrinterStateReasons;
+import j86.j86.j86.javax.print.attribute.standard.PrinterIsAcceptingJobs;
+import j86.j86.j86.javax.print.attribute.standard.RequestingUserName;
+import j86.j86.j86.javax.print.attribute.standard.SheetCollate;
+import j86.j86.j86.javax.print.attribute.standard.Sides;
 
-import sun.print.PageableDoc;
-import sun.print.ServiceDialog;
-import sun.print.SunPrinterJobService;
-import sun.print.SunPageSelection;
+import j86.sun.print.PageableDoc;
+import j86.sun.print.ServiceDialog;
+import j86.sun.print.SunPrinterJobService;
+import j86.sun.print.SunPageSelection;
 
 /**
  * A class which rasterizes a printer job.
@@ -145,7 +145,7 @@ public abstract class RasterPrinterJob extends PrinterJob {
      * using a particular pipeline. The two currently
      * supported values are FORCE_RASTER and FORCE_PDL.
      */
-    private static final String FORCE_PIPE_PROP = "sun.java2d.print.pipeline";
+    private static final String FORCE_PIPE_PROP = "j86.sun.java2d.print.pipeline";
 
     /**
      * When the system property FORCE_PIPE_PROP has this value
@@ -166,7 +166,7 @@ public abstract class RasterPrinterJob extends PrinterJob {
      * then text is always rendered as a shape, and no attempt is made
      * to match the font through GDI
      */
-    private static final String SHAPE_TEXT_PROP = "sun.java2d.print.shapetext";
+    private static final String SHAPE_TEXT_PROP = "j86.sun.java2d.print.shapetext";
 
     /**
      * values obtained from System properties in static initialiser block
@@ -182,8 +182,8 @@ public abstract class RasterPrinterJob extends PrinterJob {
          * pipeline or the pdl pipeline can be forced.
          */
         String forceStr =
-           (String)java.security.AccessController.doPrivileged(
-                   new sun.security.action.GetPropertyAction(FORCE_PIPE_PROP));
+           (String)j86.java.security.AccessController.doPrivileged(
+                   new j86.sun.security.action.GetPropertyAction(FORCE_PIPE_PROP));
 
         if (forceStr != null) {
             if (forceStr.equalsIgnoreCase(FORCE_PDL)) {
@@ -194,8 +194,8 @@ public abstract class RasterPrinterJob extends PrinterJob {
         }
 
         String shapeTextStr =
-           (String)java.security.AccessController.doPrivileged(
-                   new sun.security.action.GetPropertyAction(SHAPE_TEXT_PROP));
+           (String)j86.java.security.AccessController.doPrivileged(
+                   new j86.sun.security.action.GetPropertyAction(SHAPE_TEXT_PROP));
 
         if (shapeTextStr != null) {
             shapeTextProp = true;
@@ -703,7 +703,7 @@ public abstract class RasterPrinterJob extends PrinterJob {
      *            acknowledged
      * @exception HeadlessException if GraphicsEnvironment.isHeadless()
      * returns true.
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      * @since     1.2
      */
     public PageFormat pageDialog(PageFormat page)
@@ -717,8 +717,8 @@ public abstract class RasterPrinterJob extends PrinterJob {
           getDefaultScreenDevice().getDefaultConfiguration();
 
         PrintService service =
-            (PrintService)java.security.AccessController.doPrivileged(
-                                        new java.security.PrivilegedAction() {
+            (PrintService)j86.java.security.AccessController.doPrivileged(
+                                        new j86.java.security.PrivilegedAction() {
                 public Object run() {
                     PrintService service = getPrintService();
                     if (service == null) {
@@ -773,8 +773,8 @@ public abstract class RasterPrinterJob extends PrinterJob {
         int y = bounds.y+bounds.height/3;
 
         PrintService service =
-            (PrintService)java.security.AccessController.doPrivileged(
-                                        new java.security.PrivilegedAction() {
+            (PrintService)j86.java.security.AccessController.doPrivileged(
+                                        new j86.java.security.PrivilegedAction() {
                 public Object run() {
                     PrintService service = getPrintService();
                     if (service == null) {
@@ -831,7 +831,7 @@ public abstract class RasterPrinterJob extends PrinterJob {
      * @return false if the user cancels the dialog and true otherwise.
      * @exception HeadlessException if GraphicsEnvironment.isHeadless()
      * returns true.
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      */
     public boolean printDialog(final PrintRequestAttributeSet attributes)
         throws HeadlessException {
@@ -860,7 +860,7 @@ public abstract class RasterPrinterJob extends PrinterJob {
         }
 
         /* A security check has already been performed in the
-         * java.awt.print.printerJob.getPrinterJob method.
+         * j86.j86.java.awt.print.printerJob.getPrinterJob method.
          * So by the time we get here, it is OK for the current thread
          * to print either to a file (from a Dialog we control!) or
          * to a chosen printer.
@@ -873,8 +873,8 @@ public abstract class RasterPrinterJob extends PrinterJob {
             getDefaultScreenDevice().getDefaultConfiguration();
 
         PrintService service =
-            (PrintService)java.security.AccessController.doPrivileged(
-                       new java.security.PrivilegedAction() {
+            (PrintService)j86.java.security.AccessController.doPrivileged(
+                       new j86.java.security.PrivilegedAction() {
                 public Object run() {
                     PrintService service = getPrintService();
                     if (service == null) {
@@ -899,8 +899,8 @@ public abstract class RasterPrinterJob extends PrinterJob {
             }
         } else {
             services =
-            (PrintService[])java.security.AccessController.doPrivileged(
-                       new java.security.PrivilegedAction() {
+            (PrintService[])j86.java.security.AccessController.doPrivileged(
+                       new j86.java.security.PrivilegedAction() {
                 public Object run() {
                     PrintService[] services = PrinterJob.lookupPrintServices();
                     return services;
@@ -964,7 +964,7 @@ public abstract class RasterPrinterJob extends PrinterJob {
      *          true otherwise.
      * @exception HeadlessException if GraphicsEnvironment.isHeadless()
      * returns true.
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      */
     public boolean printDialog() throws HeadlessException {
 
@@ -1313,11 +1313,11 @@ public abstract class RasterPrinterJob extends PrinterJob {
 
     /**
      * Prints a set of pages.
-     * @exception java.awt.print.PrinterException an error in the print system
+     * @exception j86.j86.java.awt.print.PrinterException an error in the print system
      *                                          caused the job to be aborted
-     * @see java.awt.print.Book
-     * @see java.awt.print.Pageable
-     * @see java.awt.print.Printable
+     * @see j86.j86.java.awt.print.Book
+     * @see j86.j86.java.awt.print.Pageable
+     * @see j86.j86.java.awt.print.Printable
      */
     public void print() throws PrinterException {
         print(attributes);
@@ -1947,7 +1947,7 @@ public abstract class RasterPrinterJob extends PrinterJob {
      * Print a page from the provided document.
      * @return int Printable.PAGE_EXISTS if the page existed and was drawn and
      *             Printable.NO_SUCH_PAGE if the page did not exist.
-     * @see java.awt.print.Printable
+     * @see j86.j86.java.awt.print.Printable
      */
     protected int printPage(Pageable document, int pageIndex)
         throws PrinterException

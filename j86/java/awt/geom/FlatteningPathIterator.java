@@ -23,13 +23,13 @@
  * questions.
  */
 
-package java.awt.geom;
+package j86.j86.java.awt.geom;
 
-import java.util.*;
+import j86.java.util.*;
 
 /**
  * The <code>FlatteningPathIterator</code> class returns a flattened view of
- * another {@link PathIterator} object.  Other {@link java.awt.Shape Shape}
+ * another {@link PathIterator} object.  Other {@link j86.java.awt.Shape Shape}
  * classes can use this class to provide flattening behavior for their paths
  * without having to perform the interpolation calculations themselves.
  *

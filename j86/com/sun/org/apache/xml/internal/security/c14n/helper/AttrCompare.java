@@ -20,12 +20,12 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.sun.org.apache.xml.internal.security.c14n.helper;
+package j86.j86.j86.com.sun.org.apache.xml.internal.security.c14n.helper;
 
-import com.sun.org.apache.xml.internal.security.utils.Constants;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.Constants;
 import org.w3c.dom.Attr;
-import java.io.Serializable;
-import java.util.Comparator;
+import j86.java.io.Serializable;
+import j86.java.util.Comparator;
 
 /**
  * Compares two attributes based on the C14n specification.

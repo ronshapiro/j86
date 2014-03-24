@@ -33,10 +33,10 @@
  **********************************************************************
  **********************************************************************/
 
-package java.awt.image.renderable;
-import java.util.Vector;
-import java.awt.RenderingHints;
-import java.awt.image.*;
+package j86.j86.j86.j86.java.awt.image.renderable;
+import j86.java.util.Vector;
+import j86.java.awt.RenderingHints;
+import j86.j86.j86.java.awt.image.*;
 
 /**
  * A RenderableImage is a common interface for rendering-independent
@@ -82,12 +82,12 @@ public interface RenderableImage {
 
     /**
      * Gets a property from the property set of this image.
-     * If the property name is not recognized, java.awt.Image.UndefinedProperty
+     * If the property name is not recognized, j86.java.awt.Image.UndefinedProperty
      * will be returned.
      *
      * @param name the name of the property to get, as a String.
      * @return a reference to the property Object, or the value
-     *         java.awt.Image.UndefinedProperty.
+     *         j86.java.awt.Image.UndefinedProperty.
      */
     Object getProperty(String name);
 

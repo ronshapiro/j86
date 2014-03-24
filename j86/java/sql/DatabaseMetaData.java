@@ -24,7 +24,7 @@
  */
 
 
-package java.sql;
+package j86.java.sql;
 
 /**
  * Comprehensive information about the database as a whole.
@@ -428,7 +428,7 @@ public interface DatabaseMetaData extends Wrapper {
      * Retrieves whether this database supports the JDBC scalar function
      * <code>CONVERT</code> for the conversion of one JDBC type to another.
      * The JDBC types are the generic SQL data types defined
-     * in <code>java.sql.Types</code>.
+     * in <code>j86.java.sql.Types</code>.
      *
      * @return <code>true</code> if so; <code>false</code> otherwise
      * @exception SQLException if a database access error occurs
@@ -439,12 +439,12 @@ public interface DatabaseMetaData extends Wrapper {
      * Retrieves whether this database supports the JDBC scalar function
      * <code>CONVERT</code> for conversions between the JDBC types <i>fromType</i>
      * and <i>toType</i>.  The JDBC types are the generic SQL data types defined
-     * in <code>java.sql.Types</code>.
+     * in <code>j86.java.sql.Types</code>.
      *
      * @param fromType the type to convert from; one of the type codes from
-     *        the class <code>java.sql.Types</code>
+     *        the class <code>j86.java.sql.Types</code>
      * @param toType the type to convert to; one of the type codes from
-     *        the class <code>java.sql.Types</code>
+     *        the class <code>j86.java.sql.Types</code>
      * @return <code>true</code> if so; <code>false</code> otherwise
      * @exception SQLException if a database access error occurs
      * @see Types
@@ -1137,7 +1137,7 @@ public interface DatabaseMetaData extends Wrapper {
 
     /**
      * Retrieves this database's default transaction isolation level.  The
-     * possible values are defined in <code>java.sql.Connection</code>.
+     * possible values are defined in <code>j86.java.sql.Connection</code>.
      *
      * @return the default isolation level
      * @exception SQLException if a database access error occurs
@@ -1160,7 +1160,7 @@ public interface DatabaseMetaData extends Wrapper {
      * Retrieves whether this database supports the given transaction isolation level.
      *
      * @param level one of the transaction isolation levels defined in
-     *         <code>java.sql.Connection</code>
+     *         <code>j86.java.sql.Connection</code>
      * @return <code>true</code> if so; <code>false</code> otherwise
      * @exception SQLException if a database access error occurs
      * @see Connection
@@ -1310,7 +1310,7 @@ public interface DatabaseMetaData extends Wrapper {
      *      <LI> procedureColumnReturn - procedure return value
      *      <LI> procedureColumnResult - result column in <code>ResultSet</code>
      *      </UL>
-     *  <LI><B>DATA_TYPE</B> int {@code =>} SQL type from java.sql.Types
+     *  <LI><B>DATA_TYPE</B> int {@code =>} SQL type from j86.java.sql.Types
      *  <LI><B>TYPE_NAME</B> String {@code =>} SQL type name, for a UDT type the
      *  type name is fully qualified
      *  <LI><B>PRECISION</B> int {@code =>} precision
@@ -1586,7 +1586,7 @@ public interface DatabaseMetaData extends Wrapper {
      *  <LI><B>TABLE_SCHEM</B> String {@code =>} table schema (may be <code>null</code>)
      *  <LI><B>TABLE_NAME</B> String {@code =>} table name
      *  <LI><B>COLUMN_NAME</B> String {@code =>} column name
-     *  <LI><B>DATA_TYPE</B> int {@code =>} SQL type from java.sql.Types
+     *  <LI><B>DATA_TYPE</B> int {@code =>} SQL type from j86.java.sql.Types
      *  <LI><B>TYPE_NAME</B> String {@code =>} Data source dependent type name,
      *  for a UDT the type name is fully qualified
      *  <LI><B>COLUMN_SIZE</B> int {@code =>} column size.
@@ -1622,7 +1622,7 @@ public interface DatabaseMetaData extends Wrapper {
      *  <LI><B>SCOPE_TABLE</B> String {@code =>} table name that this the scope
      *      of a reference attribute (<code>null</code> if the DATA_TYPE isn't REF)
      *  <LI><B>SOURCE_DATA_TYPE</B> short {@code =>} source type of a distinct type or user-generated
-     *      Ref type, SQL type from java.sql.Types (<code>null</code> if DATA_TYPE
+     *      Ref type, SQL type from j86.java.sql.Types (<code>null</code> if DATA_TYPE
      *      isn't DISTINCT or user-generated REF)
      *   <LI><B>IS_AUTOINCREMENT</B> String  {@code =>} Indicates whether this column is auto incremented
      *       <UL>
@@ -1790,7 +1790,7 @@ public interface DatabaseMetaData extends Wrapper {
      *      <LI> bestRowSession - valid for remainder of current session
      *      </UL>
      *  <LI><B>COLUMN_NAME</B> String {@code =>} column name
-     *  <LI><B>DATA_TYPE</B> int {@code =>} SQL data type from java.sql.Types
+     *  <LI><B>DATA_TYPE</B> int {@code =>} SQL data type from j86.java.sql.Types
      *  <LI><B>TYPE_NAME</B> String {@code =>} Data source dependent type name,
      *  for a UDT the type name is fully qualified
      *  <LI><B>COLUMN_SIZE</B> int {@code =>} precision
@@ -1904,7 +1904,7 @@ public interface DatabaseMetaData extends Wrapper {
      *  <OL>
      *  <LI><B>SCOPE</B> short {@code =>} is not used
      *  <LI><B>COLUMN_NAME</B> String {@code =>} column name
-     *  <LI><B>DATA_TYPE</B> int {@code =>} SQL data type from <code>java.sql.Types</code>
+     *  <LI><B>DATA_TYPE</B> int {@code =>} SQL data type from <code>j86.java.sql.Types</code>
      *  <LI><B>TYPE_NAME</B> String {@code =>} Data source-dependent type name
      *  <LI><B>COLUMN_SIZE</B> int {@code =>} precision
      *  <LI><B>BUFFER_LENGTH</B> int {@code =>} length of column value in bytes
@@ -2372,7 +2372,7 @@ public interface DatabaseMetaData extends Wrapper {
      * <P>Each type description has the following columns:
      *  <OL>
      *  <LI><B>TYPE_NAME</B> String {@code =>} Type name
-     *  <LI><B>DATA_TYPE</B> int {@code =>} SQL data type from java.sql.Types
+     *  <LI><B>DATA_TYPE</B> int {@code =>} SQL data type from j86.java.sql.Types
      *  <LI><B>PRECISION</B> int {@code =>} maximum precision
      *  <LI><B>LITERAL_PREFIX</B> String {@code =>} prefix used to quote a literal
      *      (may be <code>null</code>)
@@ -2598,7 +2598,7 @@ public interface DatabaseMetaData extends Wrapper {
     /**
      * Retrieves whether this database supports the given result set type.
      *
-     * @param type defined in <code>java.sql.ResultSet</code>
+     * @param type defined in <code>j86.java.sql.ResultSet</code>
      * @return <code>true</code> if so; <code>false</code> otherwise
      * @exception SQLException if a database access error occurs
      * @see Connection
@@ -2610,8 +2610,8 @@ public interface DatabaseMetaData extends Wrapper {
      * Retrieves whether this database supports the given concurrency type
      * in combination with the given result set type.
      *
-     * @param type defined in <code>java.sql.ResultSet</code>
-     * @param concurrency type defined in <code>java.sql.ResultSet</code>
+     * @param type defined in <code>j86.java.sql.ResultSet</code>
+     * @param concurrency type defined in <code>j86.java.sql.ResultSet</code>
      * @return <code>true</code> if so; <code>false</code> otherwise
      * @exception SQLException if a database access error occurs
      * @see Connection
@@ -2785,13 +2785,13 @@ public interface DatabaseMetaData extends Wrapper {
      *  <LI><B>TYPE_SCHEM</B> String {@code =>} type's schema (may be <code>null</code>)
      *  <LI><B>TYPE_NAME</B> String {@code =>} type name
      *  <LI><B>CLASS_NAME</B> String {@code =>} Java class name
-     *  <LI><B>DATA_TYPE</B> int {@code =>} type value defined in java.sql.Types.
+     *  <LI><B>DATA_TYPE</B> int {@code =>} type value defined in j86.java.sql.Types.
      *     One of JAVA_OBJECT, STRUCT, or DISTINCT
      *  <LI><B>REMARKS</B> String {@code =>} explanatory comment on the type
      *  <LI><B>BASE_TYPE</B> short {@code =>} type code of the source type of a
      *     DISTINCT type or the type that implements the user-generated
      *     reference type of the SELF_REFERENCING_COLUMN of a structured
-     *     type as defined in java.sql.Types (<code>null</code> if DATA_TYPE is not
+     *     type as defined in j86.java.sql.Types (<code>null</code> if DATA_TYPE is not
      *     DISTINCT or not STRUCT with REFERENCE_GENERATION = USER_DEFINED)
      *  </OL>
      *
@@ -3005,7 +3005,7 @@ public interface DatabaseMetaData extends Wrapper {
      *  <LI><B>TYPE_SCHEM</B> String {@code =>} type schema (may be <code>null</code>)
      *  <LI><B>TYPE_NAME</B> String {@code =>} type name
      *  <LI><B>ATTR_NAME</B> String {@code =>} attribute name
-     *  <LI><B>DATA_TYPE</B> int {@code =>} attribute type SQL type from java.sql.Types
+     *  <LI><B>DATA_TYPE</B> int {@code =>} attribute type SQL type from j86.java.sql.Types
      *  <LI><B>ATTR_TYPE_NAME</B> String {@code =>} Data source dependent type name.
      *  For a UDT, the type name is fully qualified. For a REF, the type name is
      *  fully qualified and represents the target type of the reference type.
@@ -3044,7 +3044,7 @@ public interface DatabaseMetaData extends Wrapper {
      *  <LI><B>SCOPE_TABLE</B> String {@code =>} table name that is the scope of a
      *      reference attribute (<code>null</code> if the DATA_TYPE isn't REF)
      * <LI><B>SOURCE_DATA_TYPE</B> short {@code =>} source type of a distinct type or user-generated
-     *      Ref type,SQL type from java.sql.Types (<code>null</code> if DATA_TYPE
+     *      Ref type,SQL type from j86.java.sql.Types (<code>null</code> if DATA_TYPE
      *      isn't DISTINCT or user-generated REF)
      *  </OL>
      * @param catalog a catalog name; must match the catalog name as it
@@ -3374,7 +3374,7 @@ public interface DatabaseMetaData extends Wrapper {
      *      <LI> functionColumnResult - Indicates that the parameter or column
      *  is a column in the <code>ResultSet</code>
      *      </UL>
-     *  <LI><B>DATA_TYPE</B> int {@code =>} SQL type from java.sql.Types
+     *  <LI><B>DATA_TYPE</B> int {@code =>} SQL type from j86.java.sql.Types
      *  <LI><B>TYPE_NAME</B> String {@code =>} SQL type name, for a UDT type the
      *  type name is fully qualified
      *  <LI><B>PRECISION</B> int {@code =>} precision
@@ -3595,7 +3595,7 @@ public interface DatabaseMetaData extends Wrapper {
      *  <LI><B>TABLE_SCHEM</B> String {@code =>} table schema (may be <code>null</code>)
      *  <LI><B>TABLE_NAME</B> String {@code =>} table name
      *  <LI><B>COLUMN_NAME</B> String {@code =>} column name
-     *  <LI><B>DATA_TYPE</B> int {@code =>} SQL type from java.sql.Types
+     *  <LI><B>DATA_TYPE</B> int {@code =>} SQL type from j86.java.sql.Types
      *  <LI><B>COLUMN_SIZE</B> int {@code =>} column size.
      *  <LI><B>DECIMAL_DIGITS</B> int {@code =>} the number of fractional digits. Null is returned for data types where
      * DECIMAL_DIGITS is not applicable.

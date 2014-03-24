@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.security.jca;
+package j86.sun.security.jca;
 
-import java.util.*;
+import j86.java.util.*;
 
-import java.security.*;
-import java.security.Provider.Service;
+import j86.java.security.*;
+import j86.java.security.Provider.Service;
 
 /**
  * Collection of utility methods to facilitate implementing getInstance()

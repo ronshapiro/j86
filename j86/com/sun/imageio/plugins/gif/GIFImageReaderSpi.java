@@ -23,16 +23,16 @@
  * questions.
  */
 
-package com.sun.imageio.plugins.gif;
+package j86.com.sun.imageio.plugins.gif;
 
-import java.io.IOException;
-import java.util.Locale;
-import java.util.Iterator;
-import javax.imageio.ImageReader;
-import javax.imageio.metadata.IIOMetadataFormat;
-import javax.imageio.metadata.IIOMetadataFormatImpl;
-import javax.imageio.spi.ImageReaderSpi;
-import javax.imageio.stream.ImageInputStream;
+import j86.java.io.IOException;
+import j86.java.util.Locale;
+import j86.java.util.Iterator;
+import j86.javax.imageio.ImageReader;
+import j86.j86.javax.imageio.metadata.IIOMetadataFormat;
+import j86.j86.javax.imageio.metadata.IIOMetadataFormatImpl;
+import j86.j86.javax.imageio.spi.ImageReaderSpi;
+import j86.j86.javax.imageio.stream.ImageInputStream;
 
 public class GIFImageReaderSpi extends ImageReaderSpi {
 
@@ -47,10 +47,10 @@ public class GIFImageReaderSpi extends ImageReaderSpi {
     private static final String[] MIMETypes = { "image/gif" };
 
     private static final String readerClassName =
-        "com.sun.imageio.plugins.gif.GIFImageReader";
+        "j86.com.sun.imageio.plugins.gif.GIFImageReader";
 
     private static final String[] writerSpiNames = {
-        "com.sun.imageio.plugins.gif.GIFImageWriterSpi"
+        "j86.com.sun.imageio.plugins.gif.GIFImageWriterSpi"
     };
 
     public GIFImageReaderSpi() {
@@ -64,11 +64,11 @@ public class GIFImageReaderSpi extends ImageReaderSpi {
               writerSpiNames,
               true,
               GIFStreamMetadata.nativeMetadataFormatName,
-              "com.sun.imageio.plugins.gif.GIFStreamMetadataFormat",
+              "j86.com.sun.imageio.plugins.gif.GIFStreamMetadataFormat",
               null, null,
               true,
               GIFImageMetadata.nativeMetadataFormatName,
-              "com.sun.imageio.plugins.gif.GIFImageMetadataFormat",
+              "j86.com.sun.imageio.plugins.gif.GIFImageMetadataFormat",
               null, null
               );
     }

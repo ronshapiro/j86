@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.net;
+package j86.sun.net;
 
-import java.net.SocketException;
-import java.util.concurrent.atomic.AtomicInteger;
-import sun.security.action.GetPropertyAction;
+import j86.java.net.SocketException;
+import j86.j86.j86.java.util.concurrent.atomic.AtomicInteger;
+import j86.sun.security.action.GetPropertyAction;
 
 /**
  * Manages count of total number of UDP sockets and ensures
@@ -53,8 +53,8 @@ public class ResourceManager {
     private static final AtomicInteger numSockets;
 
     static {
-        String prop = java.security.AccessController.doPrivileged(
-            new GetPropertyAction("sun.net.maxDatagramSockets")
+        String prop = j86.java.security.AccessController.doPrivileged(
+            new GetPropertyAction("j86.sun.net.maxDatagramSockets")
         );
         int defmax = DEFAULT_MAX_SOCKETS;
         try {

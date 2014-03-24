@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.nio.cs.ext;
+package j86.j86.j86.j86.sun.nio.cs.ext;
 
-import java.nio.charset.Charset;
-import java.nio.charset.CharsetDecoder;
-import java.nio.charset.CharsetEncoder;
+import j86.j86.java.nio.charset.Charset;
+import j86.j86.java.nio.charset.CharsetDecoder;
+import j86.j86.java.nio.charset.CharsetEncoder;
 
 public class ISO2022_JP_2 extends ISO2022_JP
 {

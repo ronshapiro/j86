@@ -23,20 +23,20 @@
  * questions.
  */
 
-package sun.tools.jconsole;
+package j86.sun.tools.jconsole;
 
-import java.awt.*;
-import java.awt.event.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
 
-import javax.swing.*;
-import javax.swing.border.*;
-import javax.swing.plaf.*;
-import javax.swing.plaf.basic.BasicGraphicsUtils;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.border.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.j86.javax.swing.plaf.basic.BasicGraphicsUtils;
 
 
-import static javax.swing.SwingConstants.*;
+import static j86.javax.swing.SwingConstants.*;
 
-import static sun.tools.jconsole.JConsole.*;
+import static j86.sun.tools.jconsole.JConsole.*;
 
 @SuppressWarnings("serial")
 public class BorderedComponent extends JPanel implements ActionListener {

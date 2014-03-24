@@ -24,7 +24,7 @@
  */
 
 
-package javax.naming.directory;
+package j86.j86.javax.naming.directory;
 
 /**
   * This class encapsulates
@@ -40,7 +40,7 @@ package javax.naming.directory;
   * @since 1.3
   */
 
-public class SearchControls implements java.io.Serializable {
+public class SearchControls implements j86.java.io.Serializable {
     /**
      * Search the named object.
      *<p>

@@ -33,17 +33,17 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package java.util.concurrent;
+package j86.j86.java.util.concurrent;
 
-import java.util.AbstractQueue;
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.NoSuchElementException;
-import java.util.concurrent.locks.Condition;
-import java.util.concurrent.locks.ReentrantLock;
-import java.util.Spliterator;
-import java.util.Spliterators;
-import java.util.function.Consumer;
+import j86.java.util.AbstractQueue;
+import j86.java.util.Collection;
+import j86.java.util.Iterator;
+import j86.java.util.NoSuchElementException;
+import j86.j86.j86.java.util.concurrent.locks.Condition;
+import j86.j86.j86.java.util.concurrent.locks.ReentrantLock;
+import j86.java.util.Spliterator;
+import j86.java.util.Spliterators;
+import j86.j86.java.util.function.Consumer;
 
 /**
  * An optionally-bounded {@linkplain BlockingDeque blocking deque} based on
@@ -76,7 +76,7 @@ import java.util.function.Consumer;
  */
 public class LinkedBlockingDeque<E>
     extends AbstractQueue<E>
-    implements BlockingDeque<E>, java.io.Serializable {
+    implements BlockingDeque<E>, j86.java.io.Serializable {
 
     /*
      * Implemented as a simple doubly-linked list protected by a
@@ -944,7 +944,7 @@ public class LinkedBlockingDeque<E>
         lock.lock();
         try {
             if (a.length < count)
-                a = (T[])java.lang.reflect.Array.newInstance
+                a = (T[])j86.j86.j86.java.lang.reflect.Array.newInstance
                     (a.getClass().getComponentType(), count);
 
             int k = 0;
@@ -1286,12 +1286,12 @@ public class LinkedBlockingDeque<E>
      * Saves this deque to a stream (that is, serializes it).
      *
      * @param s the stream
-     * @throws java.io.IOException if an I/O error occurs
+     * @throws j86.java.io.IOException if an I/O error occurs
      * @serialData The capacity (int), followed by elements (each an
      * {@code Object}) in the proper order, followed by a null
      */
-    private void writeObject(java.io.ObjectOutputStream s)
-        throws java.io.IOException {
+    private void writeObject(j86.java.io.ObjectOutputStream s)
+        throws j86.java.io.IOException {
         final ReentrantLock lock = this.lock;
         lock.lock();
         try {
@@ -1312,10 +1312,10 @@ public class LinkedBlockingDeque<E>
      * @param s the stream
      * @throws ClassNotFoundException if the class of a serialized object
      *         could not be found
-     * @throws java.io.IOException if an I/O error occurs
+     * @throws j86.java.io.IOException if an I/O error occurs
      */
-    private void readObject(java.io.ObjectInputStream s)
-        throws java.io.IOException, ClassNotFoundException {
+    private void readObject(j86.java.io.ObjectInputStream s)
+        throws j86.java.io.IOException, ClassNotFoundException {
         s.defaultReadObject();
         count = 0;
         first = null;

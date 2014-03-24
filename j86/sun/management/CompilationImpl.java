@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.management;
+package j86.sun.management;
 
-import java.lang.management.CompilationMXBean;
-import java.lang.management.ManagementFactory;
-import javax.management.ObjectName;
+import j86.j86.java.lang.management.CompilationMXBean;
+import j86.j86.java.lang.management.ManagementFactory;
+import j86.javax.management.ObjectName;
 
 /**
  * Implementation class for the compilation subsystem.
@@ -52,7 +52,7 @@ class CompilationImpl implements CompilationMXBean {
         }
     }
 
-    public java.lang.String getName() {
+    public j86.java.lang.String getName() {
         return name;
     }
 

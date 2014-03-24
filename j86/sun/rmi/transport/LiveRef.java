@@ -23,23 +23,23 @@
  * questions.
  */
 
-package sun.rmi.transport;
+package j86.sun.rmi.transport;
 
-import java.io.IOException;
-import java.io.ObjectInput;
-import java.io.ObjectOutput;
-import java.rmi.Remote;
-import java.rmi.RemoteException;
-import java.rmi.server.ObjID;
-import java.rmi.server.RMIClientSocketFactory;
-import java.rmi.server.RMIServerSocketFactory;
-import java.util.Arrays;
-import sun.rmi.transport.tcp.TCPEndpoint;
+import j86.java.io.IOException;
+import j86.java.io.ObjectInput;
+import j86.java.io.ObjectOutput;
+import j86.java.rmi.Remote;
+import j86.java.rmi.RemoteException;
+import j86.j86.java.rmi.server.ObjID;
+import j86.j86.java.rmi.server.RMIClientSocketFactory;
+import j86.j86.java.rmi.server.RMIServerSocketFactory;
+import j86.java.util.Arrays;
+import j86.j86.sun.rmi.transport.tcp.TCPEndpoint;
 
 /**
  * NOTE: There is a JDK-internal dependency on the existence of this
  * class and its getClientSocketFactory method in the implementation
- * of javax.management.remote.rmi.RMIConnector.
+ * of j86.j86.j86.javax.management.remote.rmi.RMIConnector.
  **/
 public class LiveRef implements Cloneable {
     /** wire representation for the object*/
@@ -127,7 +127,7 @@ public class LiveRef implements Cloneable {
      *
      * NOTE: There is a JDK-internal dependency on the existence of
      * this method in the implementation of
-     * javax.management.remote.rmi.RMIConnector.
+     * j86.j86.j86.javax.management.remote.rmi.RMIConnector.
      **/
     public RMIClientSocketFactory getClientSocketFactory() {
         return ((TCPEndpoint) ep).getClientSocketFactory();

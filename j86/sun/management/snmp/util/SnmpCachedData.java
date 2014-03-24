@@ -22,19 +22,19 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.management.snmp.util;
+package j86.j86.j86.sun.management.snmp.util;
 
-import com.sun.jmx.snmp.SnmpOid;
+import j86.com.sun.jmx.snmp.SnmpOid;
 
-import java.io.Serializable;
+import j86.java.io.Serializable;
 
-import java.util.Comparator;
-import java.util.Arrays;
-import java.util.TreeMap;
-import java.util.List;
-import java.util.Iterator;
+import j86.java.util.Comparator;
+import j86.java.util.Arrays;
+import j86.java.util.TreeMap;
+import j86.java.util.List;
+import j86.java.util.Iterator;
 
-import java.lang.ref.WeakReference;
+import j86.j86.java.lang.ref.WeakReference;
 
 /**
  * This class is used to cache table data.
@@ -129,7 +129,7 @@ public class SnmpCachedData implements SnmpTableHandler {
 
     /**
      * The position of the given <var>index</var>, as returned by
-     * <code>java.util.Arrays.binarySearch()</code>
+     * <code>j86.java.util.Arrays.binarySearch()</code>
      **/
     public final int find(SnmpOid index) {
         return Arrays.binarySearch(indexes,index,oidComparator);

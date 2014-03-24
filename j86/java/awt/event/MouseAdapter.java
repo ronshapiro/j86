@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.awt.event;
+package j86.j86.java.awt.event;
 
 /**
  * An abstract adapter class for receiving mouse events.

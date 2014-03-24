@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.util.calendar;
+package j86.j86.sun.util.calendar;
 
-import java.lang.Cloneable;
-import java.util.Locale;
-import java.util.TimeZone;
+import j86.java.lang.Cloneable;
+import j86.java.util.Locale;
+import j86.java.util.TimeZone;
 
 /**
  * The <code>CalendarDate</code> class represents a specific instant
@@ -446,7 +446,7 @@ public abstract class CalendarDate implements Cloneable {
      *     yyyy-MM-dd'T'HH:mm:ss.SSSz
      * </pre>
      *
-     * @see java.text.SimpleDateFormat
+     * @see j86.java.text.SimpleDateFormat
      */
     public String toString() {
         StringBuilder sb = new StringBuilder();

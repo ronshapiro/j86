@@ -30,10 +30,10 @@
  * at JavaSoft/Sun.
  */
 
-package com.sun.tools.hat.internal.server;
+package j86.j86.com.sun.tools.hat.internal.server;
 
-import com.sun.tools.hat.internal.model.*;
-import java.util.Enumeration;
+import j86.j86.com.sun.tools.hat.internal.model.*;
+import j86.java.util.Enumeration;
 
 /**
  *

@@ -23,15 +23,15 @@
  * questions.
  */
 
-package com.sun.jmx.remote.internal;
+package j86.com.sun.jmx.remote.internal;
 
-import java.util.Properties;
-import java.io.IOException;
-import java.rmi.Remote;
-import java.rmi.NoSuchObjectException;
+import j86.java.util.Properties;
+import j86.java.io.IOException;
+import j86.java.rmi.Remote;
+import j86.java.rmi.NoSuchObjectException;
 
-import java.security.AccessController;
-import java.security.PrivilegedAction;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
 
 /**
  * A helper class for RMI-IIOP and CORBA APIs.
@@ -42,7 +42,7 @@ public final class IIOPHelper {
 
     // loads IIOPProxy implementation class if available
     private static final String IMPL_CLASS =
-        "com.sun.jmx.remote.protocol.iiop.IIOPProxyImpl";
+        "j86.com.sun.jmx.remote.protocol.iiop.IIOPProxyImpl";
     private static final IIOPProxy proxy =
         AccessController.doPrivileged(new PrivilegedAction<IIOPProxy>() {
             public IIOPProxy run() {

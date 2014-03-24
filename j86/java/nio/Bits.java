@@ -23,11 +23,11 @@
  * questions.
  */
 
-package java.nio;
+package j86.java.nio;
 
-import java.security.AccessController;
-import sun.misc.Unsafe;
-import sun.misc.VM;
+import j86.java.security.AccessController;
+import j86.sun.misc.Unsafe;
+import j86.sun.misc.VM;
 
 /**
  * Access to bits, native and otherwise.
@@ -607,7 +607,7 @@ class Bits {                            // package-private
         if (unalignedKnown)
             return unaligned;
         String arch = AccessController.doPrivileged(
-            new sun.security.action.GetPropertyAction("os.arch"));
+            new j86.sun.security.action.GetPropertyAction("os.arch"));
         unaligned = arch.equals("i386") || arch.equals("x86")
             || arch.equals("amd64") || arch.equals("x86_64");
         unalignedKnown = true;
@@ -676,11 +676,11 @@ class Bits {                            // package-private
 
     static {
         // setup access to this package in SharedSecrets
-        sun.misc.SharedSecrets.setJavaNioAccess(
-            new sun.misc.JavaNioAccess() {
+        j86.sun.misc.SharedSecrets.setJavaNioAccess(
+            new j86.sun.misc.JavaNioAccess() {
                 @Override
-                public sun.misc.JavaNioAccess.BufferPool getDirectBufferPool() {
-                    return new sun.misc.JavaNioAccess.BufferPool() {
+                public j86.sun.misc.JavaNioAccess.BufferPool getDirectBufferPool() {
+                    return new j86.sun.misc.JavaNioAccess.BufferPool() {
                         @Override
                         public String getName() {
                             return "direct";

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.io;
+package j86.java.io;
 
 /**
  * ObjectInput extends the DataInput interface to include the reading of
@@ -31,9 +31,9 @@ package java.io;
  * ObjectInput extends that interface to include objects, arrays, and Strings.
  *
  * @author  unascribed
- * @see java.io.InputStream
- * @see java.io.ObjectOutputStream
- * @see java.io.ObjectInputStream
+ * @see j86.java.io.InputStream
+ * @see j86.java.io.ObjectOutputStream
+ * @see j86.java.io.ObjectInputStream
  * @since   JDK1.1
  */
 public interface ObjectInput extends DataInput, AutoCloseable {
@@ -42,7 +42,7 @@ public interface ObjectInput extends DataInput, AutoCloseable {
      * defines where the object is "read" from.
      *
      * @return the object read from the stream
-     * @exception java.lang.ClassNotFoundException If the class of a serialized
+     * @exception j86.java.lang.ClassNotFoundException If the class of a serialized
      *      object cannot be found.
      * @exception IOException If any of the usual Input/Output
      * related exceptions occur.

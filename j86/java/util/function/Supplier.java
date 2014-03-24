@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.util.function;
+package j86.j86.java.util.function;
 
 /**
  * Represents a supplier of results.

@@ -22,18 +22,18 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.plaf.synth;
+package j86.j86.j86.javax.swing.plaf.synth;
 
-import java.awt.*;
-import java.awt.event.*;
-import javax.swing.*;
-import javax.swing.plaf.*;
-import javax.swing.plaf.basic.BasicSpinnerUI;
-import java.beans.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.j86.javax.swing.plaf.basic.BasicSpinnerUI;
+import j86.java.beans.*;
 
 /**
  * Provides the Synth L&amp;F UI delegate for
- * {@link javax.swing.JSpinner}.
+ * {@link j86.javax.swing.JSpinner}.
  *
  * @author Hans Muller
  * @author Joshua Outwater

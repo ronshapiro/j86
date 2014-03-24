@@ -22,32 +22,32 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.util.stream;
+package j86.j86.java.util.stream;
 
-import java.nio.charset.Charset;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.DoubleSummaryStatistics;
-import java.util.Objects;
-import java.util.OptionalDouble;
-import java.util.PrimitiveIterator;
-import java.util.Spliterator;
-import java.util.Spliterators;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.function.BiConsumer;
-import java.util.function.DoubleBinaryOperator;
-import java.util.function.DoubleConsumer;
-import java.util.function.DoubleFunction;
-import java.util.function.DoublePredicate;
-import java.util.function.DoubleSupplier;
-import java.util.function.DoubleToIntFunction;
-import java.util.function.DoubleToLongFunction;
-import java.util.function.DoubleUnaryOperator;
-import java.util.function.Function;
-import java.util.function.ObjDoubleConsumer;
-import java.util.function.Supplier;
+import j86.j86.java.nio.charset.Charset;
+import j86.j86.java.nio.file.Files;
+import j86.j86.java.nio.file.Path;
+import j86.java.util.Arrays;
+import j86.java.util.Collection;
+import j86.java.util.DoubleSummaryStatistics;
+import j86.java.util.Objects;
+import j86.java.util.OptionalDouble;
+import j86.java.util.PrimitiveIterator;
+import j86.java.util.Spliterator;
+import j86.java.util.Spliterators;
+import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.j86.java.util.function.BiConsumer;
+import j86.j86.java.util.function.DoubleBinaryOperator;
+import j86.j86.java.util.function.DoubleConsumer;
+import j86.j86.java.util.function.DoubleFunction;
+import j86.j86.java.util.function.DoublePredicate;
+import j86.j86.java.util.function.DoubleSupplier;
+import j86.j86.java.util.function.DoubleToIntFunction;
+import j86.j86.java.util.function.DoubleToLongFunction;
+import j86.j86.java.util.function.DoubleUnaryOperator;
+import j86.j86.java.util.function.Function;
+import j86.j86.java.util.function.ObjDoubleConsumer;
+import j86.j86.java.util.function.Supplier;
 
 /**
  * A sequence of primitive double-valued elements supporting sequential and parallel
@@ -66,13 +66,13 @@ import java.util.function.Supplier;
  * }</pre>
  *
  * See the class documentation for {@link Stream} and the package documentation
- * for <a href="package-summary.html">java.util.stream</a> for additional
+ * for <a href="package-summary.html">j86.j86.java.util.stream</a> for additional
  * specification of streams, stream operations, stream pipelines, and
  * parallelism.
  *
  * @since 1.8
  * @see Stream
- * @see <a href="package-summary.html">java.util.stream</a>
+ * @see <a href="package-summary.html">j86.j86.java.util.stream</a>
  */
 public interface DoubleStream extends BaseStream<Double, DoubleStream> {
 
@@ -152,7 +152,7 @@ public interface DoubleStream extends BaseStream<Double, DoubleStream> {
      * Returns a stream consisting of the results of replacing each element of
      * this stream with the contents of a mapped stream produced by applying
      * the provided mapping function to each element.  Each mapped stream is
-     * {@link java.util.stream.BaseStream#close() closed} after its contents
+     * {@link j86.j86.java.util.stream.BaseStream#close() closed} after its contents
      * have been placed into this stream.  (If a mapped stream is {@code null}
      * an empty stream is used, instead.)
      *
@@ -171,7 +171,7 @@ public interface DoubleStream extends BaseStream<Double, DoubleStream> {
     /**
      * Returns a stream consisting of the distinct elements of this stream. The
      * elements are compared for equality according to
-     * {@link java.lang.Double#compare(double, double)}.
+     * {@link j86.java.lang.Double#compare(double, double)}.
      *
      * <p>This is a <a href="package-summary.html#StreamOps">stateful
      * intermediate operation</a>.
@@ -183,7 +183,7 @@ public interface DoubleStream extends BaseStream<Double, DoubleStream> {
     /**
      * Returns a stream consisting of the elements of this stream in sorted
      * order. The elements are compared for equality according to
-     * {@link java.lang.Double#compare(double, double)}.
+     * {@link j86.java.lang.Double#compare(double, double)}.
      *
      * <p>This is a <a href="package-summary.html#StreamOps">stateful
      * intermediate operation</a>.

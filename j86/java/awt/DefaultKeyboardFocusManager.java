@@ -22,26 +22,26 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.awt;
+package j86.java.awt;
 
-import java.awt.event.FocusEvent;
-import java.awt.event.KeyEvent;
-import java.awt.event.WindowEvent;
-import java.awt.peer.ComponentPeer;
-import java.awt.peer.LightweightPeer;
-import java.lang.ref.WeakReference;
-import java.util.LinkedList;
-import java.util.Iterator;
-import java.util.ListIterator;
-import java.util.Set;
+import j86.j86.java.awt.event.FocusEvent;
+import j86.j86.java.awt.event.KeyEvent;
+import j86.j86.java.awt.event.WindowEvent;
+import j86.j86.java.awt.peer.ComponentPeer;
+import j86.j86.java.awt.peer.LightweightPeer;
+import j86.j86.java.lang.ref.WeakReference;
+import j86.java.util.LinkedList;
+import j86.java.util.Iterator;
+import j86.java.util.ListIterator;
+import j86.java.util.Set;
 
-import sun.util.logging.PlatformLogger;
+import j86.j86.sun.util.logging.PlatformLogger;
 
-import sun.awt.AppContext;
-import sun.awt.SunToolkit;
-import sun.awt.AWTAccessor;
-import sun.awt.CausedFocusEvent;
-import sun.awt.TimedWindowEvent;
+import j86.sun.awt.AppContext;
+import j86.sun.awt.SunToolkit;
+import j86.sun.awt.AWTAccessor;
+import j86.sun.awt.CausedFocusEvent;
+import j86.sun.awt.TimedWindowEvent;
 
 /**
  * The default KeyboardFocusManager for AWT applications. Focus traversal is
@@ -52,7 +52,7 @@ import sun.awt.TimedWindowEvent;
  * <a href="http://docs.oracle.com/javase/tutorial/uiswing/misc/focus.html">
  * How to Use the Focus Subsystem</a>,
  * a section in <em>The Java Tutorial</em>, and the
- * <a href="../../java/awt/doc-files/FocusSpec.html">Focus Specification</a>
+ * <a href="../../j86.java.awt/doc-files/FocusSpec.html">Focus Specification</a>
  * for more information.
  *
  * @author David Mendenhall
@@ -63,7 +63,7 @@ import sun.awt.TimedWindowEvent;
  * @since 1.4
  */
 public class DefaultKeyboardFocusManager extends KeyboardFocusManager {
-    private static final PlatformLogger focusLog = PlatformLogger.getLogger("java.awt.focus.DefaultKeyboardFocusManager");
+    private static final PlatformLogger focusLog = PlatformLogger.getLogger("j86.java.awt.focus.DefaultKeyboardFocusManager");
 
     // null weak references to not create too many objects
     private static final WeakReference<Window> NULL_WINDOW_WR =
@@ -808,9 +808,9 @@ public class DefaultKeyboardFocusManager extends KeyboardFocusManager {
             }
         }
         boolean stopPostProcessing = false;
-        java.util.List<KeyEventPostProcessor> processors = getKeyEventPostProcessors();
+        j86.java.util.List<KeyEventPostProcessor> processors = getKeyEventPostProcessors();
         if (processors != null) {
-            for (java.util.Iterator<KeyEventPostProcessor> iter = processors.iterator();
+            for (j86.java.util.Iterator<KeyEventPostProcessor> iter = processors.iterator();
                  !stopPostProcessing && iter.hasNext(); )
             {
                 stopPostProcessing = iter.next().
@@ -1059,9 +1059,9 @@ public class DefaultKeyboardFocusManager extends KeyboardFocusManager {
             return true;
         }
 
-        java.util.List<KeyEventDispatcher> dispatchers = getKeyEventDispatchers();
+        j86.java.util.List<KeyEventDispatcher> dispatchers = getKeyEventDispatchers();
         if (dispatchers != null) {
-            for (java.util.Iterator<KeyEventDispatcher> iter = dispatchers.iterator();
+            for (j86.java.util.Iterator<KeyEventDispatcher> iter = dispatchers.iterator();
                  iter.hasNext(); )
              {
                  if (iter.next().

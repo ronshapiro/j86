@@ -23,7 +23,7 @@
  * questions.
  */
 
-package com.sun.jdi.connect.spi;
+package j86.j86.j86.com.sun.jdi.connect.spi;
 
 /**
  * This exception may be thrown as a result of an asynchronous
@@ -46,7 +46,7 @@ package com.sun.jdi.connect.spi;
  * @since 1.5
  */
 @jdk.Exported
-public class ClosedConnectionException extends java.io.IOException {
+public class ClosedConnectionException extends j86.java.io.IOException {
     private static final long serialVersionUID = 3877032124297204774L;
     /**
      * Constructs a <tt>ClosedConnectionException</tt> with no detail

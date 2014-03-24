@@ -23,9 +23,9 @@
  * questions.
  */
 
-package com.sun.jmx.mbeanserver;
+package j86.com.sun.jmx.mbeanserver;
 
-import java.security.PrivilegedAction;
+import j86.java.security.PrivilegedAction;
 
 /**
  * Utility class to be used by the method <tt>AccessControler.doPrivileged</tt>

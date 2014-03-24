@@ -44,12 +44,12 @@
 *   Java port of ubidi_props.h/.c.
 */
 
-package sun.text.normalizer;
+package j86.j86.sun.text.normalizer;
 
-import java.io.BufferedInputStream;
-import java.io.DataInputStream;
-import java.io.InputStream;
-import java.io.IOException;
+import j86.java.io.BufferedInputStream;
+import j86.java.io.DataInputStream;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
 
 public final class UBiDiProps {
     // constructors etc. --------------------------------------------------- ***
@@ -156,7 +156,7 @@ public final class UBiDiProps {
     private CharTrie trie;
 
     // data format constants ----------------------------------------------- ***
-    private static final String DATA_FILE_NAME = "/sun/text/resources/ubidi.icu";
+    private static final String DATA_FILE_NAME = "/j86.j86.sun.text.resources/ubidi.icu";
 
     /* format "BiDi" */
     private static final byte FMT[]={ 0x42, 0x69, 0x44, 0x69 };

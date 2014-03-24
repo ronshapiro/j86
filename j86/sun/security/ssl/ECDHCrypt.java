@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.security.ssl;
+package j86.sun.security.ssl;
 
-import java.security.*;
-import java.security.interfaces.ECPublicKey;
-import java.security.spec.*;
+import j86.java.security.*;
+import j86.j86.java.security.interfaces.ECPublicKey;
+import j86.j86.java.security.spec.*;
 
-import javax.crypto.SecretKey;
-import javax.crypto.KeyAgreement;
+import j86.javax.crypto.SecretKey;
+import j86.javax.crypto.KeyAgreement;
 
 /**
  * Helper class for the ECDH key exchange. It generates the appropriate
@@ -110,7 +110,7 @@ final class ECDHCrypt {
             return getAgreedSecret(peerPublicKey);
         } catch (GeneralSecurityException e) {
             throw new RuntimeException("Could not generate secret", e);
-        } catch (java.io.IOException e) {
+        } catch (j86.java.io.IOException e) {
             throw new RuntimeException("Could not generate secret", e);
         }
     }

@@ -27,15 +27,15 @@
  *      mailto stream opener
  */
 
-package sun.net.www.protocol.mailto;
+package j86.j86.j86.sun.net.www.protocol.mailto;
 
-import java.net.URL;
-import java.net.URLConnection;
-import java.net.URLStreamHandler;
-import java.io.*;
-import sun.net.www.*;
-//import sun.net.www.protocol.news.ArticlePoster;
-import sun.net.smtp.SmtpClient;
+import j86.java.net.URL;
+import j86.java.net.URLConnection;
+import j86.java.net.URLStreamHandler;
+import j86.java.io.*;
+import j86.j86.sun.net.www.*;
+//import j86.j86.sun.net.www.protocol.news.ArticlePoster;
+import j86.j86.sun.net.smtp.SmtpClient;
 
 /** open an nntp input stream given a URL */
 public class Handler extends URLStreamHandler {

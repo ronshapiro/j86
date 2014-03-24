@@ -22,16 +22,16 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text;
+package j86.j86.javax.swing.text;
 
-import java.awt.event.ActionEvent;
-import java.awt.KeyboardFocusManager;
-import java.awt.Component;
-import java.util.Hashtable;
-import java.util.Enumeration;
-import javax.swing.Action;
-import javax.swing.AbstractAction;
-import javax.swing.KeyStroke;
+import j86.j86.java.awt.event.ActionEvent;
+import j86.java.awt.KeyboardFocusManager;
+import j86.java.awt.Component;
+import j86.java.util.Hashtable;
+import j86.java.util.Enumeration;
+import j86.javax.swing.Action;
+import j86.javax.swing.AbstractAction;
+import j86.javax.swing.KeyStroke;
 
 /**
  * An Action implementation useful for key bindings that are
@@ -53,8 +53,8 @@ import javax.swing.KeyStroke;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @author  Timothy Prinzing
  */

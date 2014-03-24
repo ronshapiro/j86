@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.util.calendar;
+package j86.j86.sun.util.calendar;
 
-import java.util.TimeZone;
+import j86.java.util.TimeZone;
 
 /**
  * Gregorian calendar implementation.

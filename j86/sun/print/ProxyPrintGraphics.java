@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.print;
+package j86.sun.print;
 
-import java.awt.Graphics;
-import java.awt.PrintGraphics;
-import java.awt.PrintJob;
+import j86.java.awt.Graphics;
+import j86.java.awt.PrintGraphics;
+import j86.java.awt.PrintJob;
 
 /**
  * A subclass of Graphics that can be printed to. The
@@ -69,7 +69,7 @@ public class ProxyPrintGraphics extends ProxyGraphics
      * <code>Graphics</code> object, but with a new translation and
      * clip area.
      * Refer to
-     * {@link sun.print.ProxyGraphics#createGraphics}
+     * {@link j86.sun.print.ProxyGraphics#createGraphics}
      * for a complete description of this method.
      * <p>
      * @param      x   the <i>x</i> coordinate.
@@ -77,8 +77,8 @@ public class ProxyPrintGraphics extends ProxyGraphics
      * @param      width   the width of the clipping rectangle.
      * @param      height   the height of the clipping rectangle.
      * @return     a new graphics context.
-     * @see        java.awt.Graphics#translate
-     * @see        java.awt.Graphics#clipRect
+     * @see        j86.java.awt.Graphics#translate
+     * @see        j86.java.awt.Graphics#clipRect
      */
     public Graphics create(int x, int y, int width, int height) {
         Graphics g = getGraphics().create(x, y, width, height);

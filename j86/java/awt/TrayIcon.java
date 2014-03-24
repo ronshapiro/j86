@@ -23,17 +23,17 @@
  * questions.
  */
 
-package java.awt;
+package j86.java.awt;
 
-import java.awt.event.*;
-import java.awt.peer.TrayIconPeer;
-import sun.awt.AppContext;
-import sun.awt.SunToolkit;
-import sun.awt.AWTAccessor;
-import sun.awt.HeadlessToolkit;
-import java.util.EventObject;
-import java.security.AccessControlContext;
-import java.security.AccessController;
+import j86.j86.java.awt.event.*;
+import j86.j86.java.awt.peer.TrayIconPeer;
+import j86.sun.awt.AppContext;
+import j86.sun.awt.SunToolkit;
+import j86.sun.awt.AWTAccessor;
+import j86.sun.awt.HeadlessToolkit;
+import j86.java.util.EventObject;
+import j86.java.security.AccessControlContext;
+import j86.java.security.AccessController;
 
 /**
  * A <code>TrayIcon</code> object represents a tray icon that can be
@@ -52,10 +52,10 @@ import java.security.AccessController;
  * <p><strong>Note:</strong> When the <code>MouseEvent</code> is
  * dispatched to its registered listeners its <code>component</code>
  * property will be set to <code>null</code>.  (See {@link
- * java.awt.event.ComponentEvent#getComponent}) The
+ * j86.j86.java.awt.event.ComponentEvent#getComponent}) The
  * <code>source</code> property will be set to this
  * <code>TrayIcon</code>. (See {@link
- * java.util.EventObject#getSource})
+ * j86.java.util.EventObject#getSource})
  *
  * <p><b>Note:</b> A well-behaved {@link TrayIcon} implementation
  * will assign different gestures to showing a popup menu and
@@ -75,8 +75,8 @@ import java.security.AccessController;
  *
  * @since 1.6
  * @see SystemTray#add
- * @see java.awt.event.ComponentEvent#getComponent
- * @see java.util.EventObject#getSource
+ * @see j86.j86.java.awt.event.ComponentEvent#getComponent
+ * @see j86.java.util.EventObject#getSource
  *
  * @author Bino George
  * @author Denis Mikhalkin
@@ -231,7 +231,7 @@ public class TrayIcon {
     /**
      * Sets the image for this <code>TrayIcon</code>.  The previous
      * tray icon image is discarded without calling the {@link
-     * java.awt.Image#flush} method &#151; you will need to call it
+     * j86.java.awt.Image#flush} method &#151; you will need to call it
      * manually.
      *
      * <p> If the image represents an animated image, it will be
@@ -413,8 +413,8 @@ public class TrayIcon {
      * >AWT Threading Issues</a> for details on AWT's threading model.
      *
      * @param    listener the mouse listener
-     * @see      java.awt.event.MouseEvent
-     * @see      java.awt.event.MouseListener
+     * @see      j86.j86.java.awt.event.MouseEvent
+     * @see      j86.j86.java.awt.event.MouseListener
      * @see      #removeMouseListener(MouseListener)
      * @see      #getMouseListeners
      */
@@ -432,8 +432,8 @@ public class TrayIcon {
      * >AWT Threading Issues</a> for details on AWT's threading model.
      *
      * @param    listener   the mouse listener
-     * @see      java.awt.event.MouseEvent
-     * @see      java.awt.event.MouseListener
+     * @see      j86.j86.java.awt.event.MouseEvent
+     * @see      j86.j86.java.awt.event.MouseListener
      * @see      #addMouseListener(MouseListener)
      * @see      #getMouseListeners
      */
@@ -454,7 +454,7 @@ public class TrayIcon {
      *
      * @see      #addMouseListener(MouseListener)
      * @see      #removeMouseListener(MouseListener)
-     * @see      java.awt.event.MouseListener
+     * @see      j86.j86.java.awt.event.MouseListener
      */
     public synchronized MouseListener[] getMouseListeners() {
         return AWTEventMulticaster.getListeners(mouseListener, MouseListener.class);
@@ -474,8 +474,8 @@ public class TrayIcon {
      * >AWT Threading Issues</a> for details on AWT's threading model.
      *
      * @param    listener   the mouse listener
-     * @see      java.awt.event.MouseEvent
-     * @see      java.awt.event.MouseMotionListener
+     * @see      j86.j86.java.awt.event.MouseEvent
+     * @see      j86.j86.java.awt.event.MouseMotionListener
      * @see      #removeMouseMotionListener(MouseMotionListener)
      * @see      #getMouseMotionListeners
      */
@@ -493,8 +493,8 @@ public class TrayIcon {
      * >AWT Threading Issues</a> for details on AWT's threading model.
      *
      * @param    listener   the mouse listener
-     * @see      java.awt.event.MouseEvent
-     * @see      java.awt.event.MouseMotionListener
+     * @see      j86.j86.java.awt.event.MouseEvent
+     * @see      j86.j86.java.awt.event.MouseMotionListener
      * @see      #addMouseMotionListener(MouseMotionListener)
      * @see      #getMouseMotionListeners
      */
@@ -515,7 +515,7 @@ public class TrayIcon {
      *
      * @see      #addMouseMotionListener(MouseMotionListener)
      * @see      #removeMouseMotionListener(MouseMotionListener)
-     * @see      java.awt.event.MouseMotionListener
+     * @see      j86.j86.java.awt.event.MouseMotionListener
      */
     public synchronized MouseMotionListener[] getMouseMotionListeners() {
         return AWTEventMulticaster.getListeners(mouseMotionListener, MouseMotionListener.class);
@@ -539,7 +539,7 @@ public class TrayIcon {
      *
      * @param command  a string used to set the tray icon's
      *                 action command.
-     * @see java.awt.event.ActionEvent
+     * @see j86.j86.java.awt.event.ActionEvent
      * @see #addActionListener(ActionListener)
      * @see #getActionCommand
      */
@@ -562,7 +562,7 @@ public class TrayIcon {
      * @param         listener the action listener
      * @see           #removeActionListener
      * @see           #getActionListeners
-     * @see           java.awt.event.ActionListener
+     * @see           j86.j86.java.awt.event.ActionListener
      * @see #setActionCommand(String)
      */
     public synchronized void addActionListener(ActionListener listener) {
@@ -579,8 +579,8 @@ public class TrayIcon {
      * >AWT Threading Issues</a> for details on AWT's threading model.
      *
      * @param    listener   the action listener
-     * @see      java.awt.event.ActionEvent
-     * @see      java.awt.event.ActionListener
+     * @see      j86.j86.java.awt.event.ActionEvent
+     * @see      j86.j86.java.awt.event.ActionListener
      * @see      #addActionListener(ActionListener)
      * @see      #getActionListeners
      * @see #setActionCommand(String)
@@ -602,7 +602,7 @@ public class TrayIcon {
      *
      * @see      #addActionListener(ActionListener)
      * @see      #removeActionListener(ActionListener)
-     * @see      java.awt.event.ActionListener
+     * @see      j86.j86.java.awt.event.ActionListener
      */
     public synchronized ActionListener[] getActionListeners() {
         return AWTEventMulticaster.getListeners(actionListener, ActionListener.class);
@@ -671,7 +671,7 @@ public class TrayIcon {
      *
      * @return the size of the tray icon, in pixels
      * @see TrayIcon#setImageAutoSize(boolean)
-     * @see java.awt.Image
+     * @see j86.java.awt.Image
      * @see TrayIcon#getSize()
      */
     public Dimension getSize() {

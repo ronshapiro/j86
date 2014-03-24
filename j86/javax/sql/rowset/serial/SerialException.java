@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.sql.rowset.serial;
+package j86.j86.j86.javax.sql.rowset.serial;
 
-import java.sql.SQLException;
+import j86.java.sql.SQLException;
 
 /**
  * Indicates and an error with the serialization or de-serialization of
@@ -33,7 +33,7 @@ import java.sql.SQLException;
  * addition to SQL types such as <code>DATALINK and JAVAOBJECT</code>
  *
  */
-public class SerialException extends java.sql.SQLException {
+public class SerialException extends j86.java.sql.SQLException {
 
     /**
      * Creates a new <code>SerialException</code> without a

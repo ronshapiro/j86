@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.naming;
+package j86.javax.naming;
 
-import java.util.Hashtable;
+import j86.java.util.Hashtable;
 
 /**
   * This exception is thrown to indicate that the operation reached
@@ -34,7 +34,7 @@ import java.util.Hashtable;
   * provider may reach a part of the name that does not belong to its
   * namespace.  At that point, it can construct a
   * CannotProceedException and then invoke methods provided by
-  * javax.naming.spi.NamingManager (such as getContinuationContext())
+  * j86.j86.javax.naming.spi.NamingManager (such as getContinuationContext())
   * to locate another provider to continue the operation.  If this is
   * not possible, this exception is raised to the caller of the
   * context operation.
@@ -95,7 +95,7 @@ public class CannotProceedException extends NamingException {
      * Contains the name of the resolved object, relative
      * to the context <code>altNameCtx</code>.  It is a composite name.
      * If null, then no name is specified.
-     * See the <code>javax.naming.spi.ObjectFactory.getObjectInstance</code>
+     * See the <code>j86.j86.javax.naming.spi.ObjectFactory.getObjectInstance</code>
      * method for details on how this is used.
      * <p>
      * This field is initialized to null.
@@ -106,7 +106,7 @@ public class CannotProceedException extends NamingException {
      * @see #getAltName
      * @see #setAltName
      * @see #altNameCtx
-     * @see javax.naming.spi.ObjectFactory#getObjectInstance
+     * @see j86.j86.javax.naming.spi.ObjectFactory#getObjectInstance
      */
     protected Name altName = null;
 
@@ -114,7 +114,7 @@ public class CannotProceedException extends NamingException {
      * Contains the context relative to which
      * <code>altName</code> is specified.  If null, then the default initial
      * context is implied.
-     * See the <code>javax.naming.spi.ObjectFactory.getObjectInstance</code>
+     * See the <code>j86.j86.javax.naming.spi.ObjectFactory.getObjectInstance</code>
      * method for details on how this is used.
      * <p>
      * This field is initialized to null.
@@ -125,7 +125,7 @@ public class CannotProceedException extends NamingException {
      * @see #getAltNameCtx
      * @see #setAltNameCtx
      * @see #altName
-     * @see javax.naming.spi.ObjectFactory#getObjectInstance
+     * @see j86.j86.javax.naming.spi.ObjectFactory#getObjectInstance
      */
     protected Context altNameCtx = null;
 
@@ -136,7 +136,7 @@ public class CannotProceedException extends NamingException {
      * @param   explanation     A possibly null string containing additional
      *                          detail about this exception.
      *   If null, this exception has no detail message.
-     * @see java.lang.Throwable#getMessage
+     * @see j86.java.lang.Throwable#getMessage
      */
     public CannotProceedException(String explanation) {
         super(explanation);
@@ -217,7 +217,7 @@ public class CannotProceedException extends NamingException {
      * Retrieves the <code>altName</code> field of this exception.
      * This is the name of the resolved object, relative to the context
      * <code>altNameCtx</code>. It will be used during a subsequent call to the
-     * <code>javax.naming.spi.ObjectFactory.getObjectInstance</code> method.
+     * <code>j86.j86.javax.naming.spi.ObjectFactory.getObjectInstance</code> method.
      *
      * @return The name of the resolved object, relative to
      *          <code>altNameCtx</code>.
@@ -225,7 +225,7 @@ public class CannotProceedException extends NamingException {
      *
      * @see #setAltName
      * @see #getAltNameCtx
-     * @see javax.naming.spi.ObjectFactory#getObjectInstance
+     * @see j86.j86.javax.naming.spi.ObjectFactory#getObjectInstance
      */
     public Name getAltName() {
         return altName;
@@ -250,14 +250,14 @@ public class CannotProceedException extends NamingException {
      * Retrieves the <code>altNameCtx</code> field of this exception.
      * This is the context relative to which <code>altName</code> is named.
      * It will be used during a subsequent call to the
-     * <code>javax.naming.spi.ObjectFactory.getObjectInstance</code> method.
+     * <code>j86.j86.javax.naming.spi.ObjectFactory.getObjectInstance</code> method.
      *
      * @return  The context relative to which <code>altName</code> is named.
      *          If null, then the default initial context is implied.
      *
      * @see #setAltNameCtx
      * @see #getAltName
-     * @see javax.naming.spi.ObjectFactory#getObjectInstance
+     * @see j86.j86.javax.naming.spi.ObjectFactory#getObjectInstance
      */
     public Context getAltNameCtx() {
         return altNameCtx;

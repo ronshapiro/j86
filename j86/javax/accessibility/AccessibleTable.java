@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.accessibility;
+package j86.javax.accessibility;
 
 /**
  * Class AccessibleTable describes a user-interface component that

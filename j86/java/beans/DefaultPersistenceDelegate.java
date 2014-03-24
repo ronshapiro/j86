@@ -22,12 +22,12 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.beans;
+package j86.java.beans;
 
-import java.util.*;
-import java.lang.reflect.*;
-import java.util.Objects;
-import sun.reflect.misc.*;
+import j86.java.util.*;
+import j86.j86.j86.java.lang.reflect.*;
+import j86.java.util.Objects;
+import j86.j86.sun.reflect.misc.*;
 
 
 /**
@@ -50,7 +50,7 @@ import sun.reflect.misc.*;
  * as arguments.
  *
  * @see #DefaultPersistenceDelegate(String[])
- * @see java.beans.Introspector
+ * @see j86.java.beans.Introspector
  *
  * @since 1.4
  *
@@ -65,7 +65,7 @@ public class DefaultPersistenceDelegate extends PersistenceDelegate {
     /**
      * Creates a persistence delegate for a class with a nullary constructor.
      *
-     * @see #DefaultPersistenceDelegate(java.lang.String[])
+     * @see #DefaultPersistenceDelegate(j86.java.lang.String[])
      */
     public DefaultPersistenceDelegate() {
         this.constructor = EMPTY;
@@ -286,7 +286,7 @@ public class DefaultPersistenceDelegate extends PersistenceDelegate {
         special cases so as to provide reliable persistence of listeners
         for the general case.
         */
-        if (!java.awt.Component.class.isAssignableFrom(type)) {
+        if (!j86.java.awt.Component.class.isAssignableFrom(type)) {
             return; // Just handle the listeners of Components for now.
         }
         for (EventSetDescriptor d : info.getEventSetDescriptors()) {
@@ -298,7 +298,7 @@ public class DefaultPersistenceDelegate extends PersistenceDelegate {
 
             // The ComponentListener is added automatically, when
             // Contatiner:add is called on the parent.
-            if (listenerType == java.awt.event.ComponentListener.class) {
+            if (listenerType == j86.j86.java.awt.event.ComponentListener.class) {
                 continue;
             }
 
@@ -309,8 +309,8 @@ public class DefaultPersistenceDelegate extends PersistenceDelegate {
             // and do not need to do this anyway since it will be created
             // and installed by the "add" method. Special case this for now,
             // ignoring all change listeners on JMenuItems.
-            if (listenerType == javax.swing.event.ChangeListener.class &&
-                type == javax.swing.JMenuItem.class) {
+            if (listenerType == j86.j86.javax.swing.event.ChangeListener.class &&
+                type == j86.javax.swing.JMenuItem.class) {
                 continue;
             }
 
@@ -393,8 +393,8 @@ public class DefaultPersistenceDelegate extends PersistenceDelegate {
      *
      * @throws NullPointerException if {@code out} is {@code null}
      *
-     * @see java.beans.Introspector#getBeanInfo
-     * @see java.beans.PropertyDescriptor
+     * @see j86.java.beans.Introspector#getBeanInfo
+     * @see j86.java.beans.PropertyDescriptor
      */
     protected void initialize(Class<?> type,
                               Object oldInstance, Object newInstance,

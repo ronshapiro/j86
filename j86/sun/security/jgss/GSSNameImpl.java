@@ -23,19 +23,19 @@
  * questions.
  */
 
-package sun.security.jgss;
+package j86.sun.security.jgss;
 
-import org.ietf.jgss.*;
-import sun.security.jgss.spi.*;
-import java.util.Set;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Arrays;
-import java.io.IOException;
-import java.io.UnsupportedEncodingException;
-import sun.security.util.ObjectIdentifier;
-import sun.security.util.DerInputStream;
-import sun.security.util.DerOutputStream;
+import j86.org.ietf.jgss.*;
+import j86.j86.sun.security.jgss.spi.*;
+import j86.java.util.Set;
+import j86.java.util.HashMap;
+import j86.java.util.HashSet;
+import j86.java.util.Arrays;
+import j86.java.io.IOException;
+import j86.java.io.UnsupportedEncodingException;
+import j86.sun.security.util.ObjectIdentifier;
+import j86.sun.security.util.DerInputStream;
+import j86.sun.security.util.DerOutputStream;
 
 /**
  * This is the implementation class for GSSName. Conceptually the

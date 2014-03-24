@@ -22,16 +22,16 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing;
+package j86.javax.swing;
 
-import java.awt.Component;
-import java.awt.Container;
-import java.awt.Dimension;
-import java.awt.FontMetrics;
-import java.awt.Insets;
-import java.awt.LayoutManager2;
-import java.awt.Rectangle;
-import java.util.*;
+import j86.java.awt.Component;
+import j86.java.awt.Container;
+import j86.java.awt.Dimension;
+import j86.java.awt.FontMetrics;
+import j86.java.awt.Insets;
+import j86.java.awt.LayoutManager2;
+import j86.java.awt.Rectangle;
+import j86.java.util.*;
 
 /**
  * A <code>SpringLayout</code> lays out the children of its associated container
@@ -70,9 +70,9 @@ import java.util.*;
  * that make their associated component
  * have the minimum, preferred, and maximum sizes
  * returned by the component's
- * {@link java.awt.Component#getMinimumSize},
- * {@link java.awt.Component#getPreferredSize}, and
- * {@link java.awt.Component#getMaximumSize}
+ * {@link j86.java.awt.Component#getMinimumSize},
+ * {@link j86.java.awt.Component#getPreferredSize}, and
+ * {@link j86.java.awt.Component#getMaximumSize}
  * methods. The <em>x</em> and <em>y</em> positions are initially not
  * constrained, so that until you constrain them the <code>Component</code>
  * will be positioned at 0,0 relative to the <code>Insets</code> of the
@@ -173,8 +173,8 @@ import java.util.*;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @see Spring
  * @see SpringLayout.Constraints
@@ -1148,8 +1148,8 @@ public class SpringLayout implements LayoutManager2 {
     public Constraints getConstraints(Component c) {
        Constraints result = componentConstraints.get(c);
        if (result == null) {
-           if (c instanceof javax.swing.JComponent) {
-                Object cp = ((javax.swing.JComponent)c).getClientProperty(SpringLayout.class);
+           if (c instanceof j86.javax.swing.JComponent) {
+                Object cp = ((j86.javax.swing.JComponent)c).getClientProperty(SpringLayout.class);
                 if (cp instanceof Constraints) {
                     return applyDefaults(c, (Constraints)cp);
                 }

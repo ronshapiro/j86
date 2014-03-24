@@ -22,14 +22,14 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.rmi.transport;
+package j86.sun.rmi.transport;
 
-import java.io.*;
-import java.util.*;
-import java.rmi.RemoteException;
-import java.rmi.server.UID;
-import sun.rmi.server.MarshalInputStream;
-import sun.rmi.runtime.Log;
+import j86.java.io.*;
+import j86.java.util.*;
+import j86.java.rmi.RemoteException;
+import j86.j86.java.rmi.server.UID;
+import j86.sun.rmi.server.MarshalInputStream;
+import j86.sun.rmi.runtime.Log;
 
 /**
  * Special stream to keep track of refs being unmarshaled so that

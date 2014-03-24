@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.rmi.runtime;
+package j86.sun.rmi.runtime;
 
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import sun.security.util.SecurityConstants;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.sun.security.util.SecurityConstants;
 
 /**
  * A PrivilegedAction for creating a new thread conveniently with an

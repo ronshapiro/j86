@@ -23,22 +23,22 @@
  * questions.
  */
 
-package com.sun.jmx.mbeanserver;
+package j86.com.sun.jmx.mbeanserver;
 
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.lang.reflect.Type;
-import java.util.WeakHashMap;
-import javax.management.Descriptor;
-import javax.management.ImmutableDescriptor;
-import javax.management.IntrospectionException;
-import javax.management.MBeanAttributeInfo;
-import javax.management.MBeanException;
-import javax.management.MBeanOperationInfo;
-import javax.management.NotCompliantMBeanException;
-import javax.management.NotificationBroadcaster;
-import javax.management.NotificationBroadcasterSupport;
-import sun.reflect.misc.MethodUtil;
+import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.j86.j86.java.lang.reflect.Type;
+import j86.java.util.WeakHashMap;
+import j86.javax.management.Descriptor;
+import j86.javax.management.ImmutableDescriptor;
+import j86.javax.management.IntrospectionException;
+import j86.javax.management.MBeanAttributeInfo;
+import j86.javax.management.MBeanException;
+import j86.javax.management.MBeanOperationInfo;
+import j86.javax.management.NotCompliantMBeanException;
+import j86.javax.management.NotificationBroadcaster;
+import j86.javax.management.NotificationBroadcasterSupport;
+import j86.j86.sun.reflect.misc.MethodUtil;
 
 /**
  * @since 1.6

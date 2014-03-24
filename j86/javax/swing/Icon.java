@@ -22,10 +22,10 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing;
+package j86.javax.swing;
 
-import java.awt.Graphics;
-import java.awt.Component;
+import j86.java.awt.Graphics;
+import j86.java.awt.Component;
 
 
 /**

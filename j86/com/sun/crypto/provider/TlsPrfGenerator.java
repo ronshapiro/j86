@@ -23,17 +23,17 @@
  * questions.
  */
 
-package com.sun.crypto.provider;
+package j86.com.sun.crypto.provider;
 
-import java.util.Arrays;
+import j86.java.util.Arrays;
 
-import java.security.*;
-import java.security.spec.AlgorithmParameterSpec;
+import j86.java.security.*;
+import j86.j86.java.security.spec.AlgorithmParameterSpec;
 
-import javax.crypto.*;
-import javax.crypto.spec.SecretKeySpec;
+import j86.javax.crypto.*;
+import j86.j86.javax.crypto.spec.SecretKeySpec;
 
-import sun.security.internal.spec.TlsPrfParameterSpec;
+import j86.sun.security.internal.spec.TlsPrfParameterSpec;
 
 /**
  * KeyGenerator implementation for the TLS PRF function.
@@ -156,7 +156,7 @@ abstract class TlsPrfGenerator extends KeyGeneratorSpi {
             return new SecretKeySpec(prfBytes, "TlsPrf");
         } catch (GeneralSecurityException e) {
             throw new ProviderException("Could not generate PRF", e);
-        } catch (java.io.UnsupportedEncodingException e) {
+        } catch (j86.java.io.UnsupportedEncodingException e) {
             throw new ProviderException("Could not generate PRF", e);
         }
     }

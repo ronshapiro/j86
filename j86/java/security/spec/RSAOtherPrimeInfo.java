@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.security.spec;
+package j86.j86.java.security.spec;
 
-import java.math.BigInteger;
+import j86.java.math.BigInteger;
 
 /**
  * This class represents the triplet (prime, exponent, and coefficient)
@@ -45,7 +45,7 @@ import java.math.BigInteger;
  *
  *
  * @see RSAPrivateCrtKeySpec
- * @see java.security.interfaces.RSAMultiPrimePrivateCrtKey
+ * @see j86.j86.java.security.interfaces.RSAMultiPrimePrivateCrtKey
  *
  * @since 1.4
  */

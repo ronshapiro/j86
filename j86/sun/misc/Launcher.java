@@ -23,31 +23,31 @@
  * questions.
  */
 
-package sun.misc;
+package j86.sun.misc;
 
-import java.io.File;
-import java.io.IOException;
-import java.io.FilePermission;
-import java.net.URL;
-import java.net.URLClassLoader;
-import java.net.MalformedURLException;
-import java.net.URLStreamHandler;
-import java.net.URLStreamHandlerFactory;
-import java.util.HashSet;
-import java.util.StringTokenizer;
-import java.util.Set;
-import java.util.Vector;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.security.PrivilegedExceptionAction;
-import java.security.AccessControlContext;
-import java.security.PermissionCollection;
-import java.security.Permissions;
-import java.security.Permission;
-import java.security.ProtectionDomain;
-import java.security.CodeSource;
-import sun.security.util.SecurityConstants;
-import sun.net.www.ParseUtil;
+import j86.java.io.File;
+import j86.java.io.IOException;
+import j86.java.io.FilePermission;
+import j86.java.net.URL;
+import j86.java.net.URLClassLoader;
+import j86.java.net.MalformedURLException;
+import j86.java.net.URLStreamHandler;
+import j86.java.net.URLStreamHandlerFactory;
+import j86.java.util.HashSet;
+import j86.java.util.StringTokenizer;
+import j86.java.util.Set;
+import j86.java.util.Vector;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.security.PrivilegedExceptionAction;
+import j86.java.security.AccessControlContext;
+import j86.java.security.PermissionCollection;
+import j86.java.security.Permissions;
+import j86.java.security.Permission;
+import j86.java.security.ProtectionDomain;
+import j86.java.security.CodeSource;
+import j86.sun.security.util.SecurityConstants;
+import j86.j86.sun.net.www.ParseUtil;
 
 /**
  * This class is used by the system to launch the main application.
@@ -86,11 +86,11 @@ public class Launcher {
         Thread.currentThread().setContextClassLoader(loader);
 
         // Finally, install a security manager if requested
-        String s = System.getProperty("java.security.manager");
+        String s = System.getProperty("j86.java.security.manager");
         if (s != null) {
             SecurityManager sm = null;
             if ("".equals(s) || "default".equals(s)) {
-                sm = new java.lang.SecurityManager();
+                sm = new j86.java.lang.SecurityManager();
             } else {
                 try {
                     sm = (SecurityManager)loader.loadClass(s).newInstance();
@@ -148,7 +148,7 @@ public class Launcher {
                             return new ExtClassLoader(dirs);
                         }
                     });
-            } catch (java.security.PrivilegedActionException e) {
+            } catch (j86.java.security.PrivilegedActionException e) {
                 throw (IOException) e.getException();
             }
         }
@@ -242,7 +242,7 @@ public class Launcher {
 
             ProtectionDomain domain = new ProtectionDomain(
                 new CodeSource(perms.getCodeBase(),
-                    (java.security.cert.Certificate[]) null),
+                    (j86.j86.java.security.cert.Certificate[]) null),
                 perms);
 
             AccessControlContext acc =
@@ -322,7 +322,7 @@ public class Launcher {
          * This class loader supports dynamic additions to the class path
          * at runtime.
          *
-         * @see java.lang.instrument.Instrumentation#appendToSystemClassPathSearch
+         * @see j86.j86.java.lang.instrument.Instrumentation#appendToSystemClassPathSearch
          */
         private void appendToClassPathForInstrumentation(String path) {
             assert(Thread.holdsLock(this));
@@ -339,14 +339,14 @@ public class Launcher {
          */
 
         private static AccessControlContext getContext(File[] cp)
-            throws java.net.MalformedURLException
+            throws j86.java.net.MalformedURLException
         {
             PathPermissions perms =
                 new PathPermissions(cp);
 
             ProtectionDomain domain =
                 new ProtectionDomain(new CodeSource(perms.getCodeBase(),
-                    (java.security.cert.Certificate[]) null),
+                    (j86.j86.java.security.cert.Certificate[]) null),
                 perms);
 
             AccessControlContext acc =
@@ -468,7 +468,7 @@ public class Launcher {
      * The stream handler factory for loading system protocol handlers.
      */
     private static class Factory implements URLStreamHandlerFactory {
-        private static String PREFIX = "sun.net.www.protocol";
+        private static String PREFIX = "j86.j86.sun.net.www.protocol";
 
         public URLStreamHandler createURLStreamHandler(String protocol) {
             String name = PREFIX + "." + protocol + ".Handler";
@@ -504,7 +504,7 @@ class PathPermissions extends PermissionCollection {
         return codeBase;
     }
 
-    public void add(java.security.Permission permission) {
+    public void add(j86.java.security.Permission permission) {
         throw new SecurityException("attempt to add a permission");
     }
 
@@ -519,7 +519,7 @@ class PathPermissions extends PermissionCollection {
         perms.add(SecurityConstants.CREATE_CLASSLOADER_PERMISSION);
 
         // add permission to read any "java.*" property
-        perms.add(new java.util.PropertyPermission("java.*",
+        perms.add(new j86.java.util.PropertyPermission("java.*",
             SecurityConstants.PROPERTY_READ_ACTION));
 
         AccessController.doPrivileged(new PrivilegedAction<Void>() {
@@ -560,13 +560,13 @@ class PathPermissions extends PermissionCollection {
         });
     }
 
-    public boolean implies(java.security.Permission permission) {
+    public boolean implies(j86.java.security.Permission permission) {
         if (perms == null)
             init();
         return perms.implies(permission);
     }
 
-    public java.util.Enumeration<Permission> elements() {
+    public j86.java.util.Enumeration<Permission> elements() {
         if (perms == null)
             init();
         synchronized (perms) {

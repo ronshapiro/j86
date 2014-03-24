@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.swing.text;
+package j86.j86.sun.swing.text;
 
-import java.util.*;
-import java.awt.Graphics;
-import java.awt.print.*;
+import j86.java.util.*;
+import j86.java.awt.Graphics;
+import j86.j86.java.awt.print.*;
 
 
 /**

@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.security.auth.callback;
+package j86.j86.javax.security.auth.callback;
 
-import java.util.Locale;
+import j86.java.util.Locale;
 
 /**
  * <p> Underlying security services instantiate and pass a
@@ -33,9 +33,9 @@ import java.util.Locale;
  * method of a {@code CallbackHandler} to retrieve the {@code Locale}
  * used for localizing text.
  *
- * @see javax.security.auth.callback.CallbackHandler
+ * @see j86.j86.javax.security.auth.callback.CallbackHandler
  */
-public class LanguageCallback implements Callback, java.io.Serializable {
+public class LanguageCallback implements Callback, j86.java.io.Serializable {
 
     private static final long serialVersionUID = 2019050433478903213L;
 

@@ -22,15 +22,15 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.plaf.synth;
+package j86.j86.j86.javax.swing.plaf.synth;
 
-import javax.swing.*;
-import javax.swing.plaf.FontUIResource;
-import java.awt.Font;
-import java.util.*;
-import java.util.regex.*;
-import sun.swing.plaf.synth.*;
-import sun.swing.BakedArrayList;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.plaf.FontUIResource;
+import j86.java.awt.Font;
+import j86.java.util.*;
+import j86.j86.java.util.regex.*;
+import j86.j86.j86.sun.swing.plaf.synth.*;
+import j86.sun.swing.BakedArrayList;
 
 /**
  * Factory used for obtaining styles. Supports associating a style based on

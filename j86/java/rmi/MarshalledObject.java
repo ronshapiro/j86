@@ -23,19 +23,19 @@
  * questions.
  */
 
-package java.rmi;
+package j86.java.rmi;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.ObjectStreamConstants;
-import java.io.OutputStream;
-import java.io.Serializable;
-import sun.rmi.server.MarshalInputStream;
-import sun.rmi.server.MarshalOutputStream;
+import j86.java.io.ByteArrayInputStream;
+import j86.java.io.ByteArrayOutputStream;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectStreamConstants;
+import j86.java.io.OutputStream;
+import j86.java.io.Serializable;
+import j86.sun.rmi.server.MarshalInputStream;
+import j86.sun.rmi.server.MarshalOutputStream;
 
 /**
  * A <code>MarshalledObject</code> contains a byte stream with the serialized
@@ -221,7 +221,7 @@ public final class MarshalledObject<T> implements Serializable {
      * annotations.  Objects written using this stream should be read back
      * from a <code>MarshalledObjectInputStream</code>.
      *
-     * @see java.rmi.MarshalledObject
+     * @see j86.java.rmi.MarshalledObject
      * @see MarshalledObjectInputStream
      */
     private static class MarshalledObjectOutputStream

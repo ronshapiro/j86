@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.awt.geom;
+package j86.j86.java.awt.geom;
 
-import java.util.*;
+import j86.java.util.*;
 
 /**
  * A utility class to iterate over the path segments of a line segment

@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.tools.native2ascii.resources;
+package j86.j86.sun.tools.native2ascii.resources;
 
-import java.util.ListResourceBundle;
+import j86.java.util.ListResourceBundle;
 
 public class MsgNative2ascii_zh_CN extends ListResourceBundle {
 

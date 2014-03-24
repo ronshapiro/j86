@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.naming.directory;
+package j86.j86.javax.naming.directory;
 
-import javax.naming.NamingException;
+import j86.javax.naming.NamingException;
 
 /**
   * This exception is thrown when an attempt is
@@ -72,7 +72,7 @@ public class AttributeModificationException extends NamingException {
      * @param   explanation     Possibly null additional detail about this exception.
      * If null, this exception has no detail message.
 
-     * @see java.lang.Throwable#getMessage
+     * @see j86.java.lang.Throwable#getMessage
      */
     public AttributeModificationException(String explanation) {
         super(explanation);

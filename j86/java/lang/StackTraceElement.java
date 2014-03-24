@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.lang;
+package j86.java.lang;
 
-import java.util.Objects;
+import j86.java.util.Objects;
 
 /**
  * An element in a stack trace, as returned by {@link
@@ -39,7 +39,7 @@ import java.util.Objects;
  * @since  1.4
  * @author Josh Bloch
  */
-public final class StackTraceElement implements java.io.Serializable {
+public final class StackTraceElement implements j86.java.io.Serializable {
     // Normally initialized by VM (public constructor added in 1.5)
     private String declaringClass;
     private String methodName;
@@ -188,7 +188,7 @@ public final class StackTraceElement implements java.io.Serializable {
      *     equals(a.getMethodName(), b.getMethodName())
      * }</pre>
      * where {@code equals} has the semantics of {@link
-     * java.util.Objects#equals(Object, Object) Objects.equals}.
+     * j86.java.util.Objects#equals(Object, Object) Objects.equals}.
      *
      * @param  obj the object to be compared with this stack trace element.
      * @return true if the specified object is another

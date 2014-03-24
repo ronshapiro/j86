@@ -23,17 +23,17 @@
  * questions.
  */
 
-package com.sun.jndi.ldap;
+package j86.com.sun.jndi.ldap;
 
-import javax.naming.*;
-import javax.naming.directory.*;
-import javax.naming.spi.*;
-import java.net.URL;
-import java.net.MalformedURLException;
-import java.io.UnsupportedEncodingException;
-import java.util.StringTokenizer;
-import com.sun.jndi.toolkit.url.Uri;
-import com.sun.jndi.toolkit.url.UrlUtil;
+import j86.javax.naming.*;
+import j86.j86.javax.naming.directory.*;
+import j86.j86.javax.naming.spi.*;
+import j86.java.net.URL;
+import j86.java.net.MalformedURLException;
+import j86.java.io.UnsupportedEncodingException;
+import j86.java.util.StringTokenizer;
+import j86.com.sun.jndi.toolkit.url.Uri;
+import j86.com.sun.jndi.toolkit.url.UrlUtil;
 
 /*
  * Extract components of an LDAP URL.

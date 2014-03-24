@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text;
+package j86.j86.javax.swing.text;
 
-import java.awt.*;
-import java.lang.ref.SoftReference;
-import javax.swing.event.*;
+import j86.java.awt.*;
+import j86.j86.java.lang.ref.SoftReference;
+import j86.j86.javax.swing.event.*;
 
 /**
  * View of plain text (text with only one font and color)

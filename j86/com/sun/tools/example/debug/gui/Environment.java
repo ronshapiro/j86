@@ -32,11 +32,11 @@
  */
 
 
-package com.sun.tools.example.debug.gui;
+package j86.com.sun.tools.example.debug.gui;
 
-import java.io.*;
-import com.sun.jdi.*;
-import com.sun.tools.example.debug.bdi.*;
+import j86.java.io.*;
+import j86.com.sun.jdi.*;
+import j86.com.sun.tools.example.debug.bdi.*;
 
 public class Environment {
 
@@ -142,14 +142,14 @@ public class Environment {
     public void viewSource(String fileName) {
         //### HACK ###
         //### Should use listener here.
-        com.sun.tools.example.debug.gui.GUI.srcTool.showSourceFile(fileName);
+        j86.com.sun.tools.example.debug.gui.GUI.srcTool.showSourceFile(fileName);
     }
 
     public void viewLocation(Location locn) {
         //### HACK ###
         //### Should use listener here.
         //### Should we use sourceForLocation here?
-        com.sun.tools.example.debug.gui.GUI.srcTool.showSourceForLocation(locn);
+        j86.com.sun.tools.example.debug.gui.GUI.srcTool.showSourceForLocation(locn);
     }
 
     //### Also in 'ContextManager'.  Do we need both?

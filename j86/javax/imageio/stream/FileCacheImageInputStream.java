@@ -23,17 +23,17 @@
  * questions.
  */
 
-package javax.imageio.stream;
+package j86.j86.javax.imageio.stream;
 
-import java.io.File;
-import java.io.InputStream;
-import java.io.IOException;
-import java.io.RandomAccessFile;
-import java.nio.file.Files;
-import com.sun.imageio.stream.StreamCloser;
-import com.sun.imageio.stream.StreamFinalizer;
-import sun.java2d.Disposer;
-import sun.java2d.DisposerRecord;
+import j86.java.io.File;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
+import j86.java.io.RandomAccessFile;
+import j86.j86.java.nio.file.Files;
+import j86.com.sun.imageio.stream.StreamCloser;
+import j86.com.sun.imageio.stream.StreamFinalizer;
+import j86.sun.java2d.Disposer;
+import j86.sun.java2d.DisposerRecord;
 
 /**
  * An implementation of <code>ImageInputStream</code> that gets its

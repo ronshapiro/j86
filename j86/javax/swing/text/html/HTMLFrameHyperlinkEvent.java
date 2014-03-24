@@ -22,12 +22,12 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text.html;
+package j86.j86.j86.javax.swing.text.html;
 
-import java.awt.event.InputEvent;
-import javax.swing.text.*;
-import javax.swing.event.HyperlinkEvent;
-import java.net.URL;
+import j86.j86.java.awt.event.InputEvent;
+import j86.j86.javax.swing.text.*;
+import j86.j86.javax.swing.event.HyperlinkEvent;
+import j86.java.net.URL;
 
 /**
  * HTMLFrameHyperlinkEvent is used to notify interested

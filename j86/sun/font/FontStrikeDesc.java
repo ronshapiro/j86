@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.font;
+package j86.sun.font;
 
-import java.awt.Font;
-import java.awt.font.FontRenderContext;
-import java.awt.geom.AffineTransform;
-import static sun.awt.SunHints.*;
+import j86.java.awt.Font;
+import j86.j86.java.awt.font.FontRenderContext;
+import j86.j86.java.awt.geom.AffineTransform;
+import static j86.sun.awt.SunHints.*;
 
 /*
  * This class encapsulates every thing needed that distinguishes a strike.

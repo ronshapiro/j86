@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.security.provider.certpath;
+package j86.j86.sun.security.provider.certpath;
 
-import java.io.IOException;
-import java.security.InvalidAlgorithmParameterException;
-import java.security.cert.*;
-import java.util.*;
+import j86.java.io.IOException;
+import j86.java.security.InvalidAlgorithmParameterException;
+import j86.j86.java.security.cert.*;
+import j86.java.util.*;
 
-import sun.security.provider.certpath.PKIX.ValidatorParams;
-import sun.security.x509.X509CertImpl;
-import sun.security.util.Debug;
+import j86.j86.sun.security.provider.certpath.PKIX.ValidatorParams;
+import j86.sun.security.x509.X509CertImpl;
+import j86.sun.security.util.Debug;
 
 /**
  * This class implements the PKIX validation algorithm for certification

@@ -23,29 +23,29 @@
  * questions.
  */
 
-package sun.java2d.opengl;
+package j86.j86.sun.java2d.opengl;
 
-import java.awt.AlphaComposite;
-import java.awt.Composite;
-import java.awt.Transparency;
-import java.awt.geom.AffineTransform;
-import java.awt.image.AffineTransformOp;
-import java.awt.image.BufferedImage;
-import java.awt.image.BufferedImageOp;
-import java.lang.ref.WeakReference;
-import sun.java2d.SurfaceData;
-import sun.java2d.loops.Blit;
-import sun.java2d.loops.CompositeType;
-import sun.java2d.loops.GraphicsPrimitive;
-import sun.java2d.loops.GraphicsPrimitiveMgr;
-import sun.java2d.loops.ScaledBlit;
-import sun.java2d.loops.SurfaceType;
-import sun.java2d.loops.TransformBlit;
-import sun.java2d.pipe.Region;
-import sun.java2d.pipe.RenderBuffer;
-import sun.java2d.pipe.RenderQueue;
-import static sun.java2d.pipe.BufferedOpCodes.*;
-import java.lang.annotation.Native;
+import j86.java.awt.AlphaComposite;
+import j86.java.awt.Composite;
+import j86.java.awt.Transparency;
+import j86.j86.java.awt.geom.AffineTransform;
+import j86.j86.j86.java.awt.image.AffineTransformOp;
+import j86.j86.j86.java.awt.image.BufferedImage;
+import j86.j86.j86.java.awt.image.BufferedImageOp;
+import j86.j86.java.lang.ref.WeakReference;
+import j86.sun.java2d.SurfaceData;
+import j86.j86.sun.java2d.loops.Blit;
+import j86.j86.sun.java2d.loops.CompositeType;
+import j86.j86.sun.java2d.loops.GraphicsPrimitive;
+import j86.j86.sun.java2d.loops.GraphicsPrimitiveMgr;
+import j86.j86.sun.java2d.loops.ScaledBlit;
+import j86.j86.sun.java2d.loops.SurfaceType;
+import j86.j86.sun.java2d.loops.TransformBlit;
+import j86.j86.sun.java2d.pipe.Region;
+import j86.j86.sun.java2d.pipe.RenderBuffer;
+import j86.j86.sun.java2d.pipe.RenderQueue;
+import static j86.j86.sun.java2d.pipe.BufferedOpCodes.*;
+import j86.j86.java.lang.annotation.Native;
 
 class OGLBlitLoops {
 

@@ -22,28 +22,28 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.swing.plaf.synth;
+package j86.j86.j86.sun.swing.plaf.synth;
 
-import javax.swing.plaf.synth.*;
-import java.awt.*;
-import java.awt.event.*;
-import java.beans.*;
-import java.io.File;
-import java.util.regex.*;
+import j86.j86.j86.javax.swing.plaf.synth.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.java.beans.*;
+import j86.java.io.File;
+import j86.j86.java.util.regex.*;
 
-import javax.swing.*;
-import javax.swing.border.*;
-import javax.swing.event.*;
-import javax.swing.filechooser.*;
-import javax.swing.plaf.*;
-import javax.swing.plaf.basic.BasicFileChooserUI;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.border.*;
+import j86.j86.javax.swing.event.*;
+import j86.j86.javax.swing.filechooser.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.j86.javax.swing.plaf.basic.BasicFileChooserUI;
 
 /**
  * Synth FileChooserUI.
  *
  * Note: This class is abstract. It does not actually create the file chooser GUI.
  * <p>
- * Note that the classes in the com.sun.java.swing.plaf.synth
+ * Note that the classes in the j86.com.sun.java.swing.plaf.synth
  * package are not
  * part of the core Java APIs. They are a part of Sun's JDK and JRE
  * distributions. Although other licensees may choose to distribute

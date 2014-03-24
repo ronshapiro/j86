@@ -23,10 +23,10 @@
  * questions.
  */
 
-package com.sun.net.httpserver;
-import java.net.*;
-import java.io.*;
-import java.util.*;
+package com.j86.j86.sun.net.httpserver;
+import j86.java.net.*;
+import j86.java.io.*;
+import j86.java.util.*;
 
 /**
  * Authenticator represents an implementation of an HTTP authentication

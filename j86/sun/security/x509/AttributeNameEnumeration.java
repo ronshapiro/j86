@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.security.x509;
+package j86.sun.security.x509;
 
-import java.util.Vector;
-import java.util.Enumeration;
+import j86.java.util.Vector;
+import j86.java.util.Enumeration;
 
 /**
  * <p>This class provides the Enumeration implementation used

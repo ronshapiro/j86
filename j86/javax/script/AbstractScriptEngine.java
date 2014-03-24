@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.script;
-import java.io.Reader;
-import java.util.Map;
-import java.util.Iterator;
+package j86.javax.script;
+import j86.java.io.Reader;
+import j86.java.util.Map;
+import j86.java.util.Iterator;
 
 /**
  * Provides a standard implementation for several of the variants of the <code>eval</code>

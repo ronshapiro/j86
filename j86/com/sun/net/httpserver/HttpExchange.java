@@ -23,15 +23,15 @@
  * questions.
  */
 
-package com.sun.net.httpserver;
+package com.j86.j86.sun.net.httpserver;
 
-import java.io.*;
-import java.nio.*;
-import java.nio.channels.*;
-import java.net.*;
-import javax.net.ssl.*;
-import java.util.*;
-import sun.net.www.MessageHeader;
+import j86.java.io.*;
+import j86.java.nio.*;
+import j86.j86.java.nio.channels.*;
+import j86.java.net.*;
+import j86.j86.javax.net.ssl.*;
+import j86.java.util.*;
+import j86.j86.sun.net.www.MessageHeader;
 
 /**
  * This class encapsulates a HTTP request received and a
@@ -43,12 +43,12 @@ import sun.net.www.MessageHeader;
  * below.
  * <ol><li>{@link #getRequestMethod()} to determine the command
  * <li>{@link #getRequestHeaders()} to examine the request headers (if needed)
- * <li>{@link #getRequestBody()} returns a {@link java.io.InputStream} for reading the request body.
+ * <li>{@link #getRequestBody()} returns a {@link j86.java.io.InputStream} for reading the request body.
  *     After reading the request body, the stream is close.
  * <li>{@link #getResponseHeaders()} to set any response headers, except content-length
  * <li>{@link #sendResponseHeaders(int,long)} to send the response headers. Must be called before
  * next step.
- * <li>{@link #getResponseBody()} to get a {@link java.io.OutputStream} to send the response body.
+ * <li>{@link #getResponseBody()} to get a {@link j86.java.io.OutputStream} to send the response body.
  *      When the response body has been written, the stream must be closed to terminate the exchange.
  * </ol>
  * <b>Terminating exchanges</b>
@@ -242,12 +242,12 @@ public abstract class HttpExchange {
      * Used by Filters to wrap either (or both) of this exchange's InputStream
      * and OutputStream, with the given filtered streams so
      * that subsequent calls to {@link #getRequestBody()} will
-     * return the given {@link java.io.InputStream}, and calls to
+     * return the given {@link j86.java.io.InputStream}, and calls to
      * {@link #getResponseBody()} will return the given
-     * {@link java.io.OutputStream}. The streams provided to this
+     * {@link j86.java.io.OutputStream}. The streams provided to this
      * call must wrap the original streams, and may be (but are not
-     * required to be) sub-classes of {@link java.io.FilterInputStream}
-     * and {@link java.io.FilterOutputStream}.
+     * required to be) sub-classes of {@link j86.java.io.FilterInputStream}
+     * and {@link j86.java.io.FilterOutputStream}.
      * @param i the filtered input stream to set as this object's inputstream,
      *          or <code>null</code> if no change.
      * @param o the filtered output stream to set as this object's outputstream,

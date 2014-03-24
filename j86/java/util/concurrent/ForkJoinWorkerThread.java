@@ -33,10 +33,10 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package java.util.concurrent;
+package j86.j86.java.util.concurrent;
 
-import java.security.AccessControlContext;
-import java.security.ProtectionDomain;
+import j86.java.security.AccessControlContext;
+import j86.java.security.ProtectionDomain;
 
 /**
  * A thread managed by a {@link ForkJoinPool}, which executes
@@ -185,13 +185,13 @@ public class ForkJoinWorkerThread extends Thread {
     }
 
     // Set up to allow setting thread fields in constructor
-    private static final sun.misc.Unsafe U;
+    private static final j86.sun.misc.Unsafe U;
     private static final long THREADLOCALS;
     private static final long INHERITABLETHREADLOCALS;
     private static final long INHERITEDACCESSCONTROLCONTEXT;
     static {
         try {
-            U = sun.misc.Unsafe.getUnsafe();
+            U = j86.sun.misc.Unsafe.getUnsafe();
             Class<?> tk = Thread.class;
             THREADLOCALS = U.objectFieldOffset
                 (tk.getDeclaredField("threadLocals"));
@@ -251,7 +251,7 @@ public class ForkJoinWorkerThread extends Thread {
          */
         private static ThreadGroup createThreadGroup() {
             try {
-                sun.misc.Unsafe u = sun.misc.Unsafe.getUnsafe();
+                j86.sun.misc.Unsafe u = sun.misc.Unsafe.getUnsafe();
                 Class<?> tk = Thread.class;
                 Class<?> gk = ThreadGroup.class;
                 long tg = u.objectFieldOffset(tk.getDeclaredField("group"));

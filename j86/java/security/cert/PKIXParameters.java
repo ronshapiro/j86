@@ -23,19 +23,19 @@
  * questions.
  */
 
-package java.security.cert;
+package j86.j86.java.security.cert;
 
-import java.security.InvalidAlgorithmParameterException;
-import java.security.KeyStore;
-import java.security.KeyStoreException;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Date;
-import java.util.Enumeration;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Set;
+import j86.java.security.InvalidAlgorithmParameterException;
+import j86.java.security.KeyStore;
+import j86.java.security.KeyStoreException;
+import j86.java.util.ArrayList;
+import j86.java.util.Collections;
+import j86.java.util.Date;
+import j86.java.util.Enumeration;
+import j86.java.util.HashSet;
+import j86.java.util.Iterator;
+import j86.java.util.List;
+import j86.java.util.Set;
 
 /**
  * Parameters used as input for the PKIX {@code CertPathValidator}
@@ -112,7 +112,7 @@ public class PKIXParameters implements CertPathParameters {
      * @throws NullPointerException if the specified {@code Set} is
      * {@code null}
      * @throws ClassCastException if any of the elements in the {@code Set}
-     * are not of type {@code java.security.cert.TrustAnchor}
+     * are not of type {@code j86.j86.java.security.cert.TrustAnchor}
      */
     public PKIXParameters(Set<TrustAnchor> trustAnchors)
         throws InvalidAlgorithmParameterException
@@ -185,7 +185,7 @@ public class PKIXParameters implements CertPathParameters {
      * @throws NullPointerException if the specified {@code Set} is
      * {@code null}
      * @throws ClassCastException if any of the elements in the set
-     * are not of type {@code java.security.cert.TrustAnchor}
+     * are not of type {@code j86.j86.java.security.cert.TrustAnchor}
      *
      * @see #getTrustAnchors
      */
@@ -203,7 +203,7 @@ public class PKIXParameters implements CertPathParameters {
         for (Iterator<TrustAnchor> i = trustAnchors.iterator(); i.hasNext(); ) {
             if (!(i.next() instanceof TrustAnchor)) {
                 throw new ClassCastException("all elements of set must be "
-                    + "of type java.security.cert.TrustAnchor");
+                    + "of type j86.j86.java.security.cert.TrustAnchor");
             }
         }
         this.unmodTrustAnchors = Collections.unmodifiableSet
@@ -253,7 +253,7 @@ public class PKIXParameters implements CertPathParameters {
                         i.hasNext();) {
                 if (!(i.next() instanceof String))
                     throw new ClassCastException("all elements of set must be "
-                        + "of type java.lang.String");
+                        + "of type j86.java.lang.String");
             }
             this.unmodInitialPolicies =
                 Collections.unmodifiableSet(new HashSet<String>(initialPolicies));
@@ -274,7 +274,7 @@ public class PKIXParameters implements CertPathParameters {
      * @param stores a {@code List} of {@code CertStore}s (or
      * {@code null})
      * @throws ClassCastException if any of the elements in the list are
-     * not of type {@code java.security.cert.CertStore}
+     * not of type {@code j86.j86.java.security.cert.CertStore}
      *
      * @see #getCertStores
      */
@@ -285,7 +285,7 @@ public class PKIXParameters implements CertPathParameters {
             for (Iterator<CertStore> i = stores.iterator(); i.hasNext();) {
                 if (!(i.next() instanceof CertStore)) {
                     throw new ClassCastException("all elements of list must be "
-                        + "of type java.security.cert.CertStore");
+                        + "of type j86.j86.java.security.cert.CertStore");
                 }
             }
             this.certStores = new ArrayList<CertStore>(stores);
@@ -539,7 +539,7 @@ public class PKIXParameters implements CertPathParameters {
      * May be {@code null}, in which case no additional checkers will be
      * used.
      * @throws ClassCastException if any of the elements in the list
-     * are not of type {@code java.security.cert.PKIXCertPathChecker}
+     * are not of type {@code j86.j86.java.security.cert.PKIXCertPathChecker}
      * @see #getCertPathCheckers
      */
     public void setCertPathCheckers(List<PKIXCertPathChecker> checkers) {
@@ -604,7 +604,7 @@ public class PKIXParameters implements CertPathParameters {
 
     /**
      * Sets the signature provider's name. The specified provider will be
-     * preferred when creating {@link java.security.Signature Signature}
+     * preferred when creating {@link j86.java.security.Signature Signature}
      * objects. If {@code null} or not set, the first provider found
      * supporting the algorithm will be used.
      *

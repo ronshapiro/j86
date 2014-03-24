@@ -23,11 +23,11 @@
  * questions.
  */
 
-package com.sun.jndi.ldap;
+package j86.com.sun.jndi.ldap;
 
-import javax.naming.*;
-import javax.naming.directory.*;
-import java.util.Vector;
+import j86.javax.naming.*;
+import j86.j86.javax.naming.directory.*;
+import j86.java.util.Vector;
 
 /**
  * Netscape's 3.1 servers have some schema bugs:

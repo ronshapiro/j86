@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.beans;
+package j86.java.beans;
 
-import com.sun.beans.finder.PersistenceDelegateFinder;
+import j86.j86.com.sun.beans.finder.PersistenceDelegateFinder;
 
-import java.util.HashMap;
-import java.util.IdentityHashMap;
-import java.util.Map;
+import j86.java.util.HashMap;
+import j86.java.util.IdentityHashMap;
+import j86.java.util.Map;
 
 /**
  * An <code>Encoder</code> is a class which can be used to create
@@ -153,7 +153,7 @@ public class Encoder {
      * If the type is a proxy,
      * a shared internal persistence delegate is returned
      * that encodes a proxy instance by using
-     * the {@link java.lang.reflect.Proxy#newProxyInstance} method.
+     * the {@link j86.j86.j86.java.lang.reflect.Proxy#newProxyInstance} method.
      * <li>
      * If the {@link BeanInfo} for this type has a {@link BeanDescriptor}
      * which defined a "persistenceDelegate" attribute,
@@ -190,8 +190,8 @@ public class Encoder {
      * @return the persistence delegate for the given type
      *
      * @see #setPersistenceDelegate
-     * @see java.beans.Introspector#getBeanInfo
-     * @see java.beans.BeanInfo#getBeanDescriptor
+     * @see j86.java.beans.Introspector#getBeanInfo
+     * @see j86.java.beans.BeanInfo#getBeanDescriptor
      */
     public PersistenceDelegate getPersistenceDelegate(Class<?> type) {
         PersistenceDelegate pd = this.finder.find(type);
@@ -211,8 +211,8 @@ public class Encoder {
      * @param delegate  the persistence delegate for instances of the given type
      *
      * @see #getPersistenceDelegate
-     * @see java.beans.Introspector#getBeanInfo
-     * @see java.beans.BeanInfo#getBeanDescriptor
+     * @see j86.java.beans.Introspector#getBeanInfo
+     * @see j86.java.beans.BeanInfo#getBeanDescriptor
      */
     public void setPersistenceDelegate(Class<?> type, PersistenceDelegate delegate) {
         this.finder.register(type, delegate);

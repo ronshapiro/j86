@@ -23,12 +23,12 @@
  * questions.
  */
 
-package com.sun.tools.jdi;
+package j86.com.sun.tools.jdi;
 
-import com.sun.jdi.*;
+import j86.com.sun.jdi.*;
 
-import java.util.*;
-import java.util.ArrayList;
+import j86.java.util.*;
+import j86.java.util.ArrayList;
 
 public class ObjectReferenceImpl extends ValueImpl
              implements ObjectReference, VMListener {
@@ -545,9 +545,9 @@ public class ObjectReferenceImpl extends ValueImpl
 
     boolean isClassObject() {
         /*
-         * Don't need to worry about subclasses since java.lang.Class is final.
+         * Don't need to worry about subclasses since j86.java.lang.Class is final.
          */
-        return referenceType().name().equals("java.lang.Class");
+        return referenceType().name().equals("j86.java.lang.Class");
     }
 
     ValueImpl prepareForAssignmentTo(ValueContainer destination)

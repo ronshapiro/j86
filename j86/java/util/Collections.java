@@ -23,20 +23,20 @@
  * questions.
  */
 
-package java.util;
-import java.io.Serializable;
-import java.io.ObjectOutputStream;
-import java.io.IOException;
-import java.lang.reflect.Array;
-import java.util.function.BiConsumer;
-import java.util.function.BiFunction;
-import java.util.function.Consumer;
-import java.util.function.Function;
-import java.util.function.Predicate;
-import java.util.function.UnaryOperator;
-import java.util.stream.IntStream;
-import java.util.stream.Stream;
-import java.util.stream.StreamSupport;
+package j86.java.util;
+import j86.java.io.Serializable;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.IOException;
+import j86.j86.j86.java.lang.reflect.Array;
+import j86.j86.java.util.function.BiConsumer;
+import j86.j86.java.util.function.BiFunction;
+import j86.j86.java.util.function.Consumer;
+import j86.j86.java.util.function.Function;
+import j86.j86.java.util.function.Predicate;
+import j86.j86.java.util.function.UnaryOperator;
+import j86.j86.java.util.stream.IntStream;
+import j86.j86.java.util.stream.Stream;
+import j86.j86.java.util.stream.StreamSupport;
 
 /**
  * This class consists exclusively of static methods that operate on or return
@@ -5096,7 +5096,7 @@ public class Collections {
         public <T> T[] toArray(T[] a) {
             final int n = this.n;
             if (a.length < n) {
-                a = (T[])java.lang.reflect.Array
+                a = (T[])j86.j86.j86.java.lang.reflect.Array
                     .newInstance(a.getClass().getComponentType(), n);
                 if (element != null)
                     Arrays.fill(a, 0, n, element);
@@ -5548,7 +5548,7 @@ public class Collections {
 
         private static final long serialVersionUID = 2454657854757543876L;
 
-        private void readObject(java.io.ObjectInputStream stream)
+        private void readObject(j86.java.io.ObjectInputStream stream)
             throws IOException, ClassNotFoundException
         {
             stream.defaultReadObject();

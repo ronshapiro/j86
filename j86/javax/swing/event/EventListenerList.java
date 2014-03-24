@@ -22,12 +22,12 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.event;
+package j86.j86.javax.swing.event;
 
-import java.io.*;
-import java.util.*;
-import java.lang.reflect.Array;
-import sun.reflect.misc.ReflectUtil;
+import j86.java.io.*;
+import j86.java.util.*;
+import j86.j86.j86.java.lang.reflect.Array;
+import j86.j86.sun.reflect.misc.ReflectUtil;
 
 /**
  * A class that holds a list of EventListeners.  A single instance
@@ -90,8 +90,8 @@ import sun.reflect.misc.ReflectUtil;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @author Georges Saab
  * @author Hans Muller

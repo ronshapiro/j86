@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.security.x509;
+package j86.sun.security.x509;
 
-import java.io.IOException;
-import java.lang.Integer;
-import java.net.InetAddress;
-import java.util.Arrays;
-import sun.misc.HexDumpEncoder;
-import sun.security.util.BitArray;
-import sun.security.util.DerOutputStream;
-import sun.security.util.DerValue;
+import j86.java.io.IOException;
+import j86.java.lang.Integer;
+import j86.java.net.InetAddress;
+import j86.java.util.Arrays;
+import j86.sun.misc.HexDumpEncoder;
+import j86.sun.security.util.BitArray;
+import j86.sun.security.util.DerOutputStream;
+import j86.sun.security.util.DerValue;
 
 /**
  * This class implements the IPAddressName as required by the GeneralNames

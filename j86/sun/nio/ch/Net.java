@@ -23,15 +23,15 @@
  * questions.
  */
 
-package sun.nio.ch;
+package j86.j86.j86.sun.nio.ch;
 
-import java.io.*;
-import java.net.*;
-import java.nio.channels.*;
-import java.util.*;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.security.PrivilegedExceptionAction;
+import j86.java.io.*;
+import j86.java.net.*;
+import j86.j86.java.nio.channels.*;
+import j86.java.util.*;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.security.PrivilegedExceptionAction;
 
 
 public class Net {
@@ -52,12 +52,12 @@ public class Net {
         int availLevel = isExclusiveBindAvailable();
         if (availLevel >= 0) {
             String exclBindProp =
-                java.security.AccessController.doPrivileged(
+                j86.java.security.AccessController.doPrivileged(
                     new PrivilegedAction<String>() {
                         @Override
                         public String run() {
                             return System.getProperty(
-                                    "sun.net.useExclusiveBind");
+                                    "j86.sun.net.useExclusiveBind");
                         }
                     });
             if (exclBindProp != null) {

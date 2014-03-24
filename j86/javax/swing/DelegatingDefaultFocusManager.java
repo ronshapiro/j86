@@ -22,17 +22,17 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing;
+package j86.javax.swing;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.beans.*;
-import java.util.Set;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.java.beans.*;
+import j86.java.util.Set;
 
 
 /**
- * Provides a javax.swing.DefaultFocusManager view onto an arbitrary
- * java.awt.KeyboardFocusManager. We subclass DefaultFocusManager instead of
+ * Provides a j86.javax.swing.DefaultFocusManager view onto an arbitrary
+ * j86.java.awt.KeyboardFocusManager. We subclass DefaultFocusManager instead of
  * FocusManager because it seems more backward-compatible. It is likely that
  * some pre-1.4 code assumes that the object returned by
  * FocusManager.getCurrentManager is an instance of DefaultFocusManager unless
@@ -50,7 +50,7 @@ final class DelegatingDefaultFocusManager extends DefaultFocusManager {
         return delegate;
     }
 
-    // Legacy methods which first appeared in javax.swing.FocusManager.
+    // Legacy methods which first appeared in j86.javax.swing.FocusManager.
     // Client code is most likely to invoke these methods.
 
     public void processKeyEvent(Component focusedComponent, KeyEvent e) {

@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.awt.dnd;
+package j86.j86.sun.awt.dnd;
 
-import java.awt.Component;
-import java.awt.dnd.InvalidDnDOperationException;
-import java.awt.event.MouseEvent;
+import j86.java.awt.Component;
+import j86.j86.java.awt.dnd.InvalidDnDOperationException;
+import j86.j86.java.awt.event.MouseEvent;
 
 public class SunDropTargetEvent extends MouseEvent {
 

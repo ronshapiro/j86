@@ -23,18 +23,18 @@
  * questions.
  */
 
-package java.awt.image;
+package j86.j86.j86.java.awt.image;
 
-import java.awt.Transparency;
-import java.awt.color.ColorSpace;
-import java.awt.color.ICC_ColorSpace;
-import sun.java2d.cmm.CMSManager;
-import sun.java2d.cmm.ColorTransform;
-import sun.java2d.cmm.PCMM;
-import java.awt.Toolkit;
-import java.util.Collections;
-import java.util.Map;
-import java.util.WeakHashMap;
+import j86.java.awt.Transparency;
+import j86.j86.java.awt.color.ColorSpace;
+import j86.j86.java.awt.color.ICC_ColorSpace;
+import j86.j86.sun.java2d.cmm.CMSManager;
+import j86.j86.sun.java2d.cmm.ColorTransform;
+import j86.j86.sun.java2d.cmm.PCMM;
+import j86.java.awt.Toolkit;
+import j86.java.util.Collections;
+import j86.java.util.Map;
+import j86.java.util.WeakHashMap;
 
 /**
  * The <code>ColorModel</code> abstract class encapsulates the
@@ -145,10 +145,10 @@ import java.util.WeakHashMap;
  * @see ComponentColorModel
  * @see PackedColorModel
  * @see DirectColorModel
- * @see java.awt.Image
+ * @see j86.java.awt.Image
  * @see BufferedImage
  * @see RenderedImage
- * @see java.awt.color.ColorSpace
+ * @see j86.j86.java.awt.color.ColorSpace
  * @see SampleModel
  * @see Raster
  * @see DataBuffer
@@ -177,8 +177,8 @@ public abstract class ColorModel implements Transparency{
     protected int transferType;
 
     /**
-     * This is copied from java.awt.Toolkit since we need the library
-     * loaded in java.awt.image also:
+     * This is copied from j86.java.awt.Toolkit since we need the library
+     * loaded in j86.j86.j86.java.awt.image also:
      *
      * WARNING: This is a temporary workaround for a problem in the
      * way the AWT loads native libraries. A number of classes in the
@@ -193,7 +193,7 @@ public abstract class ColorModel implements Transparency{
      * problem is that this means that the native libraries must be
      * loaded by the java.* classes, which do not necessarily know the
      * names of the libraries to load. A better way of doing this
-     * would be to provide a separate library which defines java.awt.*
+     * would be to provide a separate library which defines j86.java.awt.*
      * initIDs, and exports the relevant symbols out to the
      * implementation libraries.
      *
@@ -203,8 +203,8 @@ public abstract class ColorModel implements Transparency{
     private static boolean loaded = false;
     static void loadLibraries() {
         if (!loaded) {
-            java.security.AccessController.doPrivileged(
-                new java.security.PrivilegedAction<Void>() {
+            j86.java.security.AccessController.doPrivileged(
+                new j86.java.security.PrivilegedAction<Void>() {
                     public Void run() {
                         System.loadLibrary("awt");
                         return null;
@@ -257,7 +257,7 @@ public abstract class ColorModel implements Transparency{
      * and alpha information are represented in the pixel value as
      * separate spatial bands, the color bands are assumed not to be
      * premultiplied with the alpha value. The transparency type is
-     * java.awt.Transparency.TRANSLUCENT.  The transfer type will be the
+     * j86.java.awt.Transparency.TRANSLUCENT.  The transfer type will be the
      * smallest of DataBuffer.TYPE_BYTE, DataBuffer.TYPE_USHORT,
      * or DataBuffer.TYPE_INT that can hold a single pixel
      * (or DataBuffer.TYPE_UNDEFINED if bits is greater
@@ -325,7 +325,7 @@ public abstract class ColorModel implements Transparency{
      * @throws IllegalArgumentException if the sum of the number
      *          of bits in <code>bits</code> is less than 1 or if
      *          any of the elements in <code>bits</code> is less than 0.
-     * @see java.awt.Transparency
+     * @see j86.java.awt.Transparency
      */
     protected ColorModel(int pixel_bits, int[] bits, ColorSpace cspace,
                          boolean hasAlpha,

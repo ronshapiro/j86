@@ -22,37 +22,37 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.rmi.transport.tcp;
+package j86.j86.sun.rmi.transport.tcp;
 
-import java.io.DataInput;
-import java.io.DataOutput;
-import java.io.IOException;
-import java.io.ObjectInput;
-import java.io.ObjectOutput;
-import java.net.InetAddress;
-import java.net.ServerSocket;
-import java.net.Socket;
-import java.rmi.ConnectIOException;
-import java.rmi.RemoteException;
-import java.rmi.server.RMIClientSocketFactory;
-import java.rmi.server.RMIServerSocketFactory;
-import java.rmi.server.RMISocketFactory;
-import java.security.AccessController;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.Map;
-import java.util.Set;
-import sun.rmi.runtime.Log;
-import sun.rmi.runtime.NewThreadAction;
-import sun.rmi.transport.Channel;
-import sun.rmi.transport.Endpoint;
-import sun.rmi.transport.Target;
-import sun.rmi.transport.Transport;
-import sun.security.action.GetBooleanAction;
-import sun.security.action.GetIntegerAction;
-import sun.security.action.GetPropertyAction;
+import j86.java.io.DataInput;
+import j86.java.io.DataOutput;
+import j86.java.io.IOException;
+import j86.java.io.ObjectInput;
+import j86.java.io.ObjectOutput;
+import j86.java.net.InetAddress;
+import j86.java.net.ServerSocket;
+import j86.java.net.Socket;
+import j86.java.rmi.ConnectIOException;
+import j86.java.rmi.RemoteException;
+import j86.j86.java.rmi.server.RMIClientSocketFactory;
+import j86.j86.java.rmi.server.RMIServerSocketFactory;
+import j86.j86.java.rmi.server.RMISocketFactory;
+import j86.java.security.AccessController;
+import j86.java.util.Collection;
+import j86.java.util.HashMap;
+import j86.java.util.HashSet;
+import j86.java.util.LinkedList;
+import j86.java.util.Map;
+import j86.java.util.Set;
+import j86.sun.rmi.runtime.Log;
+import j86.sun.rmi.runtime.NewThreadAction;
+import j86.sun.rmi.transport.Channel;
+import j86.sun.rmi.transport.Endpoint;
+import j86.sun.rmi.transport.Target;
+import j86.sun.rmi.transport.Transport;
+import j86.sun.security.action.GetBooleanAction;
+import j86.sun.security.action.GetIntegerAction;
+import j86.sun.security.action.GetPropertyAction;
 
 /**
  * TCPEndpoint represents some communication endpoint for an address
@@ -91,15 +91,15 @@ public class TCPEndpoint implements Endpoint {
     }
 
     /**
-     * Returns the value of the java.rmi.server.hostname property.
+     * Returns the value of the j86.j86.java.rmi.server.hostname property.
      */
     private static String getHostnameProperty() {
         return AccessController.doPrivileged(
-            new GetPropertyAction("java.rmi.server.hostname"));
+            new GetPropertyAction("j86.j86.java.rmi.server.hostname"));
     }
 
     /**
-     * Find host name of local machine.  Property "java.rmi.server.hostname"
+     * Find host name of local machine.  Property "j86.j86.java.rmi.server.hostname"
      * is used if set, so server administrator can compensate for the possible
      * inablility to get fully qualified host name from VM.
      */
@@ -122,7 +122,7 @@ public class TCPEndpoint implements Endpoint {
                 /* if the user wishes to use a fully qualified domain
                  * name then attempt to find one.
                  */
-                if (getBoolean("java.rmi.server.useLocalHostName")) {
+                if (getBoolean("j86.j86.java.rmi.server.useLocalHostName")) {
                     localHost = FQDN.attemptFQDN(localAddr);
                 } else {
                     /* default to using ip addresses, names will
@@ -612,11 +612,11 @@ public class TCPEndpoint implements Endpoint {
             }
             socket = clientFactory.createSocket(host, port);
 
-        } catch (java.net.UnknownHostException e) {
-            throw new java.rmi.UnknownHostException(
+        } catch (j86.java.net.UnknownHostException e) {
+            throw new j86.java.rmi.UnknownHostException(
                 "Unknown host: " + host, e);
-        } catch (java.net.ConnectException e) {
-            throw new java.rmi.ConnectException(
+        } catch (j86.java.net.ConnectException e) {
+            throw new j86.java.rmi.ConnectException(
                 "Connection refused to host: " + host, e);
         } catch (IOException e) {
             // We might have simply run out of file descriptors
@@ -711,7 +711,7 @@ public class TCPEndpoint implements Endpoint {
          *    default to ipaddress.
          */
         static String attemptFQDN(InetAddress localAddr)
-            throws java.net.UnknownHostException
+            throws j86.java.net.UnknownHostException
         {
 
             String hostName = localAddr.getHostName();
@@ -722,7 +722,7 @@ public class TCPEndpoint implements Endpoint {
                 FQDN f = new FQDN(hostAddress);
 
                 int nameServiceTimeOut =
-                    TCPEndpoint.getInt("sun.rmi.transport.tcp.localHostNameTimeOut",
+                    TCPEndpoint.getInt("j86.j86.sun.rmi.transport.tcp.localHostNameTimeOut",
                                        10000);
 
                 try {
@@ -774,7 +774,7 @@ public class TCPEndpoint implements Endpoint {
 
             try {
                 name = InetAddress.getByName(hostAddress).getHostName();
-            } catch (java.net.UnknownHostException e) {
+            } catch (j86.java.net.UnknownHostException e) {
             } finally {
                 synchronized(this) {
                     reverseLookup = name;

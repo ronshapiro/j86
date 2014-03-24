@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.security.auth.login;
+package j86.j86.javax.security.auth.login;
 
-import java.util.Map;
-import java.util.Collections;
+import j86.java.util.Map;
+import j86.java.util.Collections;
 
 /**
  * This class represents a single {@code LoginModule} entry
@@ -39,7 +39,7 @@ import java.util.Collections;
  * options.  Please refer to the {@code Configuration} class for
  * more information on the different control flags and their semantics.
  *
- * @see javax.security.auth.login.Configuration
+ * @see j86.j86.javax.security.auth.login.Configuration
  */
 public class AppConfigurationEntry {
 
@@ -166,7 +166,7 @@ public class AppConfigurationEntry {
          * @return a String representation of this controlFlag.
          */
         public String toString() {
-            return (sun.security.util.ResourcesMgr.getString
+            return (j86.sun.security.util.ResourcesMgr.getString
                 ("LoginModuleControlFlag.") + controlFlag);
         }
     }

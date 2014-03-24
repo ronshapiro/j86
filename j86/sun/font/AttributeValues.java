@@ -34,28 +34,28 @@
  * patents. This notice and attribution to IBM may not be removed.
  */
 
-package sun.font;
+package j86.sun.font;
 
-import static sun.font.EAttribute.*;
-import static java.lang.Math.*;
+import static j86.sun.font.EAttribute.*;
+import static j86.java.lang.Math.*;
 
-import java.awt.Font;
-import java.awt.Paint;
-import java.awt.Toolkit;
-import java.awt.font.GraphicAttribute;
-import java.awt.font.NumericShaper;
-import java.awt.font.TextAttribute;
-import java.awt.font.TransformAttribute;
-import java.awt.geom.AffineTransform;
-import java.awt.geom.NoninvertibleTransformException;
-import java.awt.geom.Point2D;
-import java.awt.im.InputMethodHighlight;
-import java.io.Serializable;
-import java.text.Annotation;
-import java.text.AttributedCharacterIterator.Attribute;
-import java.util.Map;
-import java.util.HashMap;
-import java.util.Hashtable;
+import j86.java.awt.Font;
+import j86.java.awt.Paint;
+import j86.java.awt.Toolkit;
+import j86.j86.java.awt.font.GraphicAttribute;
+import j86.j86.java.awt.font.NumericShaper;
+import j86.j86.java.awt.font.TextAttribute;
+import j86.j86.java.awt.font.TransformAttribute;
+import j86.j86.java.awt.geom.AffineTransform;
+import j86.j86.java.awt.geom.NoninvertibleTransformException;
+import j86.j86.java.awt.geom.Point2D;
+import j86.j86.java.awt.im.InputMethodHighlight;
+import j86.java.io.Serializable;
+import j86.java.text.Annotation;
+import j86.java.text.AttributedCharacterIterator.Attribute;
+import j86.java.util.Map;
+import j86.java.util.HashMap;
+import j86.java.util.Hashtable;
 
 public final class AttributeValues implements Cloneable {
     private int defined;
@@ -377,7 +377,7 @@ public final class AttributeValues implements Cloneable {
 
     // key must be serializable, so use String, not Object
     private static final String DEFINED_KEY =
-        "sun.font.attributevalues.defined_key";
+        "j86.sun.font.attributevalues.defined_key";
 
     public static boolean is16Hashtable(Hashtable<Object, Object> ht) {
         return ht.containsKey(DEFINED_KEY);

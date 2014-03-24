@@ -23,18 +23,18 @@
  * questions.
  */
 
-package sun.security.jgss.krb5;
+package j86.j86.sun.security.jgss.krb5;
 
-import javax.security.auth.kerberos.KerberosTicket;
-import javax.security.auth.kerberos.KerberosKey;
-import javax.security.auth.Subject;
-import javax.security.auth.DestroyFailedException;
-import java.util.Iterator;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
-import javax.security.auth.kerberos.KerberosPrincipal;
-import javax.security.auth.kerberos.KeyTab;
+import j86.j86.javax.security.auth.kerberos.KerberosTicket;
+import j86.j86.javax.security.auth.kerberos.KerberosKey;
+import j86.javax.security.auth.Subject;
+import j86.javax.security.auth.DestroyFailedException;
+import j86.java.util.Iterator;
+import j86.java.util.ArrayList;
+import j86.java.util.List;
+import j86.java.util.Set;
+import j86.j86.javax.security.auth.kerberos.KerberosPrincipal;
+import j86.j86.javax.security.auth.kerberos.KeyTab;
 
 /**
  * This utility looks through the current Subject and retrieves private

@@ -23,34 +23,34 @@
  * questions.
  */
 
-package sun.util.locale.provider;
+package j86.j86.j86.sun.util.locale.provider;
 
-import java.security.AccessController;
-import java.security.PrivilegedActionException;
-import java.security.PrivilegedExceptionAction;
-import java.text.BreakIterator;
-import java.text.Collator;
-import java.text.DateFormat;
-import java.text.DateFormatSymbols;
-import java.text.DecimalFormatSymbols;
-import java.text.NumberFormat;
-import java.text.spi.BreakIteratorProvider;
-import java.text.spi.CollatorProvider;
-import java.text.spi.DateFormatProvider;
-import java.text.spi.DateFormatSymbolsProvider;
-import java.text.spi.DecimalFormatSymbolsProvider;
-import java.text.spi.NumberFormatProvider;
-import java.util.Locale;
-import java.util.Map;
-import java.util.ServiceLoader;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentMap;
-import java.util.spi.CalendarDataProvider;
-import java.util.spi.CalendarNameProvider;
-import java.util.spi.CurrencyNameProvider;
-import java.util.spi.LocaleNameProvider;
-import java.util.spi.LocaleServiceProvider;
-import java.util.spi.TimeZoneNameProvider;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedActionException;
+import j86.java.security.PrivilegedExceptionAction;
+import j86.java.text.BreakIterator;
+import j86.java.text.Collator;
+import j86.java.text.DateFormat;
+import j86.java.text.DateFormatSymbols;
+import j86.java.text.DecimalFormatSymbols;
+import j86.java.text.NumberFormat;
+import j86.j86.java.text.spi.BreakIteratorProvider;
+import j86.j86.java.text.spi.CollatorProvider;
+import j86.j86.java.text.spi.DateFormatProvider;
+import j86.j86.java.text.spi.DateFormatSymbolsProvider;
+import j86.j86.java.text.spi.DecimalFormatSymbolsProvider;
+import j86.j86.java.text.spi.NumberFormatProvider;
+import j86.java.util.Locale;
+import j86.java.util.Map;
+import j86.java.util.ServiceLoader;
+import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.j86.java.util.concurrent.ConcurrentMap;
+import j86.j86.java.util.spi.CalendarDataProvider;
+import j86.j86.java.util.spi.CalendarNameProvider;
+import j86.j86.java.util.spi.CurrencyNameProvider;
+import j86.j86.java.util.spi.LocaleNameProvider;
+import j86.j86.java.util.spi.LocaleServiceProvider;
+import j86.j86.java.util.spi.TimeZoneNameProvider;
 
 /**
  * LocaleProviderAdapter implementation for the installed SPI implementations.

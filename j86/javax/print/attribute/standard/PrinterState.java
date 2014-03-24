@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.print.attribute.standard;
+package j86.j86.j86.javax.print.attribute.standard;
 
-import javax.print.attribute.Attribute;
-import javax.print.attribute.EnumSyntax;
-import javax.print.attribute.PrintServiceAttribute;
+import j86.j86.javax.print.attribute.Attribute;
+import j86.j86.javax.print.attribute.EnumSyntax;
+import j86.j86.javax.print.attribute.PrintServiceAttribute;
 
 /**
  * Class PrinterState is a printing attribute class, an enumeration, that
@@ -121,7 +121,7 @@ implements PrintServiceAttribute {
      * For class PrinterState, the category is class PrinterState itself.
      *
      * @return  Printing attribute class (category), an instance of class
-     *          {@link java.lang.Class java.lang.Class}.
+     *          {@link j86.java.lang.Class java.lang.Class}.
      */
     public final Class<? extends Attribute> getCategory() {
         return PrinterState.class;

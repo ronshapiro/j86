@@ -23,17 +23,17 @@
  * questions.
  */
 
-package sun.jvmstat.perfdata.monitor.protocol.rmi;
+package j86.j86.sun.jvmstat.perfdata.monitor.protocol.rmi;
 
-import sun.jvmstat.monitor.*;
-import sun.jvmstat.monitor.event.*;
-import sun.jvmstat.monitor.remote.*;
-import sun.jvmstat.perfdata.monitor.*;
-import java.util.*;
-import java.net.*;
-import java.io.*;
-import java.rmi.*;
-import java.util.HashMap;
+import j86.sun.jvmstat.monitor.*;
+import j86.j86.sun.jvmstat.monitor.event.*;
+import j86.j86.sun.jvmstat.monitor.remote.*;
+import j86.sun.jvmstat.perfdata.monitor.*;
+import j86.java.util.*;
+import j86.java.net.*;
+import j86.java.io.*;
+import j86.java.rmi.*;
+import j86.java.util.HashMap;
 
 /**
  * Concrete implementation of the MonitoredHost interface for the
@@ -99,7 +99,7 @@ public class MonitoredHostProvider extends MonitoredHost {
 
             if (hostId.getPort() == -1) {
                 message = message + ":"
-                          + java.rmi.registry.Registry.REGISTRY_PORT;
+                          + j86.j86.java.rmi.registry.Registry.REGISTRY_PORT;
             } else {
                 message = message + ":" + hostId.getPort();
             }

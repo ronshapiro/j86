@@ -23,15 +23,15 @@
  * questions.
  */
 
-package sun.security.tools;
+package j86.sun.security.tools;
 
-import java.io.File;
-import java.io.IOException;
-import java.lang.String;
-import java.util.StringTokenizer;
-import java.net.URL;
-import java.net.URLClassLoader;
-import java.net.MalformedURLException;
+import j86.java.io.File;
+import j86.java.io.IOException;
+import j86.java.lang.String;
+import j86.java.util.StringTokenizer;
+import j86.java.net.URL;
+import j86.java.net.URLClassLoader;
+import j86.java.net.MalformedURLException;
 
 /**
  * A utility class for handle path list

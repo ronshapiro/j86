@@ -25,9 +25,9 @@
 /*
  * $Id: C14NMethodParameterSpec.java,v 1.3 2005/05/10 16:40:17 mullan Exp $
  */
-package javax.xml.crypto.dsig.spec;
+package j86.j86.j86.javax.xml.crypto.dsig.spec;
 
-import javax.xml.crypto.dsig.CanonicalizationMethod;
+import j86.j86.javax.xml.crypto.dsig.CanonicalizationMethod;
 
 /**
  * A specification of algorithm parameters for a {@link CanonicalizationMethod}

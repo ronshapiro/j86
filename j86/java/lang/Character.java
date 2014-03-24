@@ -23,12 +23,12 @@
  * questions.
  */
 
-package java.lang;
+package j86.java.lang;
 
-import java.util.Arrays;
-import java.util.Map;
-import java.util.HashMap;
-import java.util.Locale;
+import j86.java.util.Arrays;
+import j86.java.util.Map;
+import j86.java.util.HashMap;
+import j86.java.util.Locale;
 
 /**
  * The {@code Character} class wraps a value of the primitive
@@ -120,7 +120,7 @@ import java.util.Locale;
  * @since   1.0
  */
 public final
-class Character implements java.io.Serializable, Comparable<Character> {
+class Character implements j86.java.io.Serializable, Comparable<Character> {
     /**
      * The minimum radix available for conversion to and from strings.
      * The constant value of this field is the smallest value permitted

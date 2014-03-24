@@ -22,19 +22,19 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.font;
+package j86.sun.font;
 
-import java.awt.Font;
-import java.awt.FontFormatException;
-import java.io.File;
-import java.util.Locale;
-import java.util.TreeMap;
+import j86.java.awt.Font;
+import j86.java.awt.FontFormatException;
+import j86.java.io.File;
+import j86.java.util.Locale;
+import j86.java.util.TreeMap;
 
-import javax.swing.plaf.FontUIResource;
+import j86.j86.javax.swing.plaf.FontUIResource;
 
 
 /**
- * Interface between Java Fonts (java.awt.Font) and the underlying
+ * Interface between Java Fonts (j86.java.awt.Font) and the underlying
  * font files/native font resources and the Java and native font scalers.
  */
 public interface FontManager {
@@ -74,7 +74,7 @@ public interface FontManager {
     /**
      * Creates a Font2D for the specified font file, that is expected
      * to be in the specified font format (according to the constants
-     * in java.awt.Font). The parameter {@code isCopy} is set to true
+     * in j86.java.awt.Font). The parameter {@code isCopy} is set to true
      * when the specified font file is actually a copy of the font data
      * and needs to be deleted afterwards. This method is called
      * for the Font.createFont() methods.

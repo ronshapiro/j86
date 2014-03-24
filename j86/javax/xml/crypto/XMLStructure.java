@@ -25,7 +25,7 @@
 /*
  * $Id: XMLStructure.java,v 1.3 2005/05/10 15:47:42 mullan Exp $
  */
-package javax.xml.crypto;
+package j86.javax.xml.crypto;
 
 /**
  * A representation of an XML structure from any namespace. The purpose of

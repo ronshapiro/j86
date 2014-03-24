@@ -23,16 +23,16 @@
  * questions.
  */
 
-package java.awt.datatransfer;
+package j86.j86.java.awt.datatransfer;
 
-import java.io.*;
-import java.nio.*;
-import java.util.*;
+import j86.java.io.*;
+import j86.java.nio.*;
+import j86.java.util.*;
 
-import sun.awt.datatransfer.DataTransferer;
-import sun.reflect.misc.ReflectUtil;
+import j86.j86.sun.awt.datatransfer.DataTransferer;
+import j86.j86.sun.reflect.misc.ReflectUtil;
 
-import static sun.security.util.SecurityConstants.GET_CLASSLOADER_PERMISSION;
+import static j86.sun.security.util.SecurityConstants.GET_CLASSLOADER_PERMISSION;
 
 /**
  * A {@code DataFlavor} provides meta information about data. {@code DataFlavor}
@@ -55,12 +55,12 @@ import static sun.security.util.SecurityConstants.GET_CLASSLOADER_PERMISSION;
  * transferred. In other words, the representation class is the type of
  * object returned by {@link Transferable#getTransferData}.
  * For example, the MIME type of {@link #imageFlavor} is
- * {@code "image/x-java-image;class=java.awt.Image"},
+ * {@code "image/x-java-image;class=j86.java.awt.Image"},
  * the primary type is {@code image}, the subtype is
  * {@code x-java-image}, and the representation class is
- * {@code java.awt.Image}. When {@code getTransferData} is invoked
+ * {@code j86.java.awt.Image}. When {@code getTransferData} is invoked
  * with a {@code DataFlavor} of {@code imageFlavor}, an instance of
- * {@code java.awt.Image} is returned.
+ * {@code j86.java.awt.Image} is returned.
  * It's important to note that {@code DataFlavor} does no error checking
  * against the representation class. It is up to consumers of
  * {@code DataFlavor}, such as {@code Transferable}, to honor the representation
@@ -83,8 +83,8 @@ import static sun.security.util.SecurityConstants.GET_CLASSLOADER_PERMISSION;
  * For example, the following produces two {@code DataFlavors} that
  * are considered identical:
  * <pre>
- *   DataFlavor flavor1 = new DataFlavor(Object.class, &quot;X-test/test; class=&lt;java.lang.Object&gt;; foo=bar&quot;);
- *   DataFlavor flavor2 = new DataFlavor(Object.class, &quot;X-test/test; class=&lt;java.lang.Object&gt;; x=y&quot;);
+ *   DataFlavor flavor1 = new DataFlavor(Object.class, &quot;X-test/test; class=&lt;j86.java.lang.Object&gt;; foo=bar&quot;);
+ *   DataFlavor flavor2 = new DataFlavor(Object.class, &quot;X-test/test; class=&lt;j86.java.lang.Object&gt;; x=y&quot;);
  *   // The following returns true.
  *   flavor1.equals(flavor2);
  * </pre>
@@ -175,7 +175,7 @@ public class DataFlavor implements Externalizable, Cloneable {
      */
     static private DataFlavor initHtmlDataFlavor(String htmlFlavorType) {
         try {
-            return new DataFlavor ("text/html; class=java.lang.String;document=" +
+            return new DataFlavor ("text/html; class=j86.java.lang.String;document=" +
                                        htmlFlavorType + ";charset=Unicode");
         } catch (Exception e) {
             return null;
@@ -186,21 +186,21 @@ public class DataFlavor implements Externalizable, Cloneable {
      * The <code>DataFlavor</code> representing a Java Unicode String class,
      * where:
      * <pre>
-     *     representationClass = java.lang.String
+     *     representationClass = j86.java.lang.String
      *     mimeType           = "application/x-java-serialized-object"
      * </pre>
      */
-    public static final DataFlavor stringFlavor = createConstant(java.lang.String.class, "Unicode String");
+    public static final DataFlavor stringFlavor = createConstant(j86.java.lang.String.class, "Unicode String");
 
     /**
      * The <code>DataFlavor</code> representing a Java Image class,
      * where:
      * <pre>
-     *     representationClass = java.awt.Image
+     *     representationClass = j86.java.awt.Image
      *     mimeType            = "image/x-java-image"
      * </pre>
      */
-    public static final DataFlavor imageFlavor = createConstant("image/x-java-image; class=java.awt.Image", "Image");
+    public static final DataFlavor imageFlavor = createConstant("image/x-java-image; class=j86.java.awt.Image", "Image");
 
     /**
      * The <code>DataFlavor</code> representing plain text with Unicode
@@ -219,7 +219,7 @@ public class DataFlavor implements Externalizable, Cloneable {
      *             instead of <code>Transferable.getTransferData(DataFlavor.plainTextFlavor)</code>.
      */
     @Deprecated
-    public static final DataFlavor plainTextFlavor = createConstant("text/plain; charset=unicode; class=java.io.InputStream", "Plain Text");
+    public static final DataFlavor plainTextFlavor = createConstant("text/plain; charset=unicode; class=j86.java.io.InputStream", "Plain Text");
 
     /**
      * A MIME Content-Type of application/x-java-serialized-object represents
@@ -227,18 +227,18 @@ public class DataFlavor implements Externalizable, Cloneable {
      *
      * The representation class associated with this <code>DataFlavor</code>
      * identifies the Java type of an object returned as a reference
-     * from an invocation <code>java.awt.datatransfer.getTransferData</code>.
+     * from an invocation <code>j86.j86.java.awt.datatransfer.getTransferData</code>.
      */
     public static final String javaSerializedObjectMimeType = "application/x-java-serialized-object";
 
     /**
      * To transfer a list of files to/from Java (and the underlying
      * platform) a <code>DataFlavor</code> of this type/subtype and
-     * representation class of <code>java.util.List</code> is used.
+     * representation class of <code>j86.java.util.List</code> is used.
      * Each element of the list is required/guaranteed to be of type
-     * <code>java.io.File</code>.
+     * <code>j86.java.io.File</code>.
      */
-    public static final DataFlavor javaFileListFlavor = createConstant("application/x-java-file-list;class=java.util.List", null);
+    public static final DataFlavor javaFileListFlavor = createConstant("application/x-java-file-list;class=j86.java.util.List", null);
 
     /**
      * To transfer a reference to an arbitrary Java object reference that
@@ -466,7 +466,7 @@ public class DataFlavor implements Externalizable, Cloneable {
      * The string can specify a "class=&lt;fully specified Java class name&gt;"
      * parameter to create a <code>DataFlavor</code> with the desired
      * representation class. If the string does not contain "class=" parameter,
-     * <code>java.io.InputStream</code> is used as default.
+     * <code>j86.java.io.InputStream</code> is used as default.
      *
      * @param mimeType the string used to identify the MIME type for this flavor;
      *                 if the class specified by "class=" parameter is not
@@ -517,7 +517,7 @@ public class DataFlavor implements Externalizable, Cloneable {
 
                 throw new IllegalArgumentException("no representation class specified for:" + mimeType);
             else
-                representationClass = java.io.InputStream.class; // default
+                representationClass = j86.java.io.InputStream.class; // default
         } else { // got a class name
             representationClass = DataFlavor.tryToLoadClass(rcn, classLoader);
         }
@@ -581,7 +581,7 @@ public class DataFlavor implements Externalizable, Cloneable {
      * Returns a <code>DataFlavor</code> representing plain text with Unicode
      * encoding, where:
      * <pre>
-     *     representationClass = java.io.InputStream
+     *     representationClass = j86.java.io.InputStream
      *     mimeType            = "text/plain;
      *                            charset=&lt;platform default Unicode encoding&gt;"
      * </pre>
@@ -601,7 +601,7 @@ public class DataFlavor implements Externalizable, Cloneable {
         }
         return new DataFlavor(
             "text/plain;charset="+encoding
-            +";class=java.io.InputStream", "Plain Text");
+            +";class=j86.java.io.InputStream", "Plain Text");
     }
 
     /**
@@ -680,7 +680,7 @@ public class DataFlavor implements Externalizable, Cloneable {
      * If the best MIME type in the array does not support the charset
      * parameter, the flavors which share that MIME type will then be sorted by
      * their representation classes in the following order:
-     * <code>java.io.InputStream</code>, <code>java.nio.ByteBuffer</code>,
+     * <code>j86.java.io.InputStream</code>, <code>j86.java.nio.ByteBuffer</code>,
      * <code>[B</code>, &lt;all others&gt;.
      * <p>
      * If two or more flavors share the best representation class, or if no
@@ -690,8 +690,8 @@ public class DataFlavor implements Externalizable, Cloneable {
      * If the best MIME type in the array does support the charset parameter,
      * the flavors which share that MIME type will then be sorted by their
      * representation classes in the following order:
-     * <code>java.io.Reader</code>, <code>java.lang.String</code>,
-     * <code>java.nio.CharBuffer</code>, <code>[C</code>, &lt;all others&gt;.
+     * <code>j86.java.io.Reader</code>, <code>j86.java.lang.String</code>,
+     * <code>j86.java.nio.CharBuffer</code>, <code>[C</code>, &lt;all others&gt;.
      * <p>
      * If two or more flavors share the best representation class, and that
      * representation is one of the four explicitly listed, then one of those
@@ -706,7 +706,7 @@ public class DataFlavor implements Externalizable, Cloneable {
      * <p>
      * If two or more flavors share the best charset, the flavors will then
      * again be sorted by their representation classes in the following order:
-     * <code>java.io.InputStream</code>, <code>java.nio.ByteBuffer</code>,
+     * <code>j86.java.io.InputStream</code>, <code>j86.java.nio.ByteBuffer</code>,
      * <code>[B</code>, &lt;all others&gt;.
      * <p>
      * If two or more flavors share the best representation class, or if no
@@ -787,9 +787,9 @@ public class DataFlavor implements Externalizable, Cloneable {
     /**
      * Gets a Reader for a text flavor, decoded, if necessary, for the expected
      * charset (encoding). The supported representation classes are
-     * <code>java.io.Reader</code>, <code>java.lang.String</code>,
-     * <code>java.nio.CharBuffer</code>, <code>[C</code>,
-     * <code>java.io.InputStream</code>, <code>java.nio.ByteBuffer</code>,
+     * <code>j86.java.io.Reader</code>, <code>j86.java.lang.String</code>,
+     * <code>j86.java.nio.CharBuffer</code>, <code>[C</code>,
+     * <code>j86.java.io.InputStream</code>, <code>j86.java.nio.ByteBuffer</code>,
      * and <code>[B</code>.
      * <p>
      * Because text flavors which do not support the charset parameter are
@@ -813,8 +813,8 @@ public class DataFlavor implements Externalizable, Cloneable {
      * @exception NullPointerException if the <code>Transferable</code> is
      *            <code>null</code>
      * @exception UnsupportedEncodingException if this flavor's representation
-     *            is <code>java.io.InputStream</code>,
-     *            <code>java.nio.ByteBuffer</code>, or <code>[B</code> and
+     *            is <code>j86.java.io.InputStream</code>,
+     *            <code>j86.java.nio.ByteBuffer</code>, or <code>[B</code> and
      *            this flavor's encoding is not supported by this
      *            implementation of the Java platform
      * @exception UnsupportedFlavorException if the <code>Transferable</code>
@@ -954,8 +954,8 @@ public class DataFlavor implements Externalizable, Cloneable {
      * only if their MIME primary type and subtype and representation class are
      * equal. Additionally, if the primary type is "text", the subtype denotes
      * a text flavor which supports the charset parameter, and the
-     * representation class is not <code>java.io.Reader</code>,
-     * <code>java.lang.String</code>, <code>java.nio.CharBuffer</code>, or
+     * representation class is not <code>j86.java.io.Reader</code>,
+     * <code>j86.java.lang.String</code>, <code>j86.java.nio.CharBuffer</code>, or
      * <code>[C</code>, the <code>charset</code> parameter must also be equal.
      * If a charset is not explicitly specified for one or both
      * <code>DataFlavor</code>s, the platform default encoding is assumed. See
@@ -1200,7 +1200,7 @@ public class DataFlavor implements Externalizable, Cloneable {
 
    /**
     * Does the <code>DataFlavor</code> represent a
-    * <code>java.io.InputStream</code>?
+    * <code>j86.java.io.InputStream</code>?
     */
 
     public boolean isRepresentationClassInputStream() {
@@ -1209,35 +1209,35 @@ public class DataFlavor implements Externalizable, Cloneable {
 
     /**
      * Returns whether the representation class for this
-     * <code>DataFlavor</code> is <code>java.io.Reader</code> or a subclass
+     * <code>DataFlavor</code> is <code>j86.java.io.Reader</code> or a subclass
      * thereof.
      *
      * @since 1.4
      */
     public boolean isRepresentationClassReader() {
-        return java.io.Reader.class.isAssignableFrom(representationClass);
+        return j86.java.io.Reader.class.isAssignableFrom(representationClass);
     }
 
     /**
      * Returns whether the representation class for this
-     * <code>DataFlavor</code> is <code>java.nio.CharBuffer</code> or a
+     * <code>DataFlavor</code> is <code>j86.java.nio.CharBuffer</code> or a
      * subclass thereof.
      *
      * @since 1.4
      */
     public boolean isRepresentationClassCharBuffer() {
-        return java.nio.CharBuffer.class.isAssignableFrom(representationClass);
+        return j86.java.nio.CharBuffer.class.isAssignableFrom(representationClass);
     }
 
     /**
      * Returns whether the representation class for this
-     * <code>DataFlavor</code> is <code>java.nio.ByteBuffer</code> or a
+     * <code>DataFlavor</code> is <code>j86.java.nio.ByteBuffer</code> or a
      * subclass thereof.
      *
      * @since 1.4
      */
     public boolean isRepresentationClassByteBuffer() {
-        return java.nio.ByteBuffer.class.isAssignableFrom(representationClass);
+        return j86.java.nio.ByteBuffer.class.isAssignableFrom(representationClass);
     }
 
    /**
@@ -1246,7 +1246,7 @@ public class DataFlavor implements Externalizable, Cloneable {
     */
 
     public boolean isRepresentationClassSerializable() {
-        return java.io.Serializable.class.isAssignableFrom(representationClass);
+        return j86.java.io.Serializable.class.isAssignableFrom(representationClass);
     }
 
    /**
@@ -1293,7 +1293,7 @@ public class DataFlavor implements Externalizable, Cloneable {
    public boolean isFlavorJavaFileListType() {
         if (mimeType == null || representationClass == null)
             return false;
-        return java.util.List.class.isAssignableFrom(representationClass) &&
+        return j86.java.util.List.class.isAssignableFrom(representationClass) &&
                mimeType.match(javaFileListFlavor.mimeType);
 
    }
@@ -1306,19 +1306,19 @@ public class DataFlavor implements Externalizable, Cloneable {
      * <p>
      * If this flavor supports the charset parameter, it must be equivalent to
      * <code>DataFlavor.stringFlavor</code>, or its representation must be
-     * <code>java.io.Reader</code>, <code>java.lang.String</code>,
-     * <code>java.nio.CharBuffer</code>, <code>[C</code>,
-     * <code>java.io.InputStream</code>, <code>java.nio.ByteBuffer</code>, or
+     * <code>j86.java.io.Reader</code>, <code>j86.java.lang.String</code>,
+     * <code>j86.java.nio.CharBuffer</code>, <code>[C</code>,
+     * <code>j86.java.io.InputStream</code>, <code>j86.java.nio.ByteBuffer</code>, or
      * <code>[B</code>. If the representation is
-     * <code>java.io.InputStream</code>, <code>java.nio.ByteBuffer</code>, or
+     * <code>j86.java.io.InputStream</code>, <code>j86.java.nio.ByteBuffer</code>, or
      * <code>[B</code>, then this flavor's <code>charset</code> parameter must
      * be supported by this implementation of the Java platform. If a charset
      * is not specified, then the platform default charset, which is always
      * supported, is assumed.
      * <p>
      * If this flavor does not support the charset parameter, its
-     * representation must be <code>java.io.InputStream</code>,
-     * <code>java.nio.ByteBuffer</code>, or <code>[B</code>.
+     * representation must be <code>j86.java.io.InputStream</code>,
+     * <code>j86.java.nio.ByteBuffer</code>, or <code>[B</code>.
      * <p>
      * See <code>selectBestTextFlavor</code> for a list of text flavors which
      * support the charset parameter.

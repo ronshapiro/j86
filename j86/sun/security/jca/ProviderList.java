@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.security.jca;
+package j86.sun.security.jca;
 
-import java.util.*;
+import j86.java.util.*;
 
-import java.security.*;
-import java.security.Provider.Service;
+import j86.java.security.*;
+import j86.java.security.Provider.Service;
 
 /**
  * List of Providers. Used to represent the provider preferences.
@@ -55,8 +55,8 @@ import java.security.Provider.Service;
  */
 public final class ProviderList {
 
-    final static sun.security.util.Debug debug =
-        sun.security.util.Debug.getInstance("jca", "ProviderList");
+    final static j86.sun.security.util.Debug debug =
+        j86.sun.security.util.Debug.getInstance("jca", "ProviderList");
 
     private final static ProviderConfig[] PC0 = new ProviderConfig[0];
 
@@ -77,7 +77,7 @@ public final class ProviderList {
         };
 
     // construct a ProviderList from the security properties
-    // (static provider configuration in the java.security file)
+    // (static provider configuration in the j86.java.security file)
     static ProviderList fromSecurityProperties() {
         // doPrivileged() because of Security.getProperty()
         return AccessController.doPrivileged(
@@ -158,7 +158,7 @@ public final class ProviderList {
     }
 
     /**
-     * Return a new ProviderList parsed from the java.security Properties.
+     * Return a new ProviderList parsed from the j86.java.security Properties.
      */
     private ProviderList() {
         List<ProviderConfig> configList = new ArrayList<>();

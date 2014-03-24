@@ -23,17 +23,17 @@
  * questions.
  */
 
-package java.awt.print;
+package j86.j86.java.awt.print;
 
-import java.lang.annotation.Native;
+import j86.j86.java.lang.annotation.Native;
 
 /**
  * The <code>Pageable</code> implementation represents a set of
  * pages to be printed. The <code>Pageable</code> object returns
  * the total number of pages in the set as well as the
  * {@link PageFormat} and {@link Printable} for a specified page.
- * @see java.awt.print.PageFormat
- * @see java.awt.print.Printable
+ * @see j86.j86.java.awt.print.PageFormat
+ * @see j86.j86.java.awt.print.Printable
  */
 public interface Pageable {
 

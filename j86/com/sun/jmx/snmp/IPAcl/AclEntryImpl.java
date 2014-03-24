@@ -24,18 +24,18 @@
  */
 
 
-package com.sun.jmx.snmp.IPAcl;
+package j86.j86.com.sun.jmx.snmp.IPAcl;
 
 
 
-import java.security.acl.Permission;
-import java.util.Vector;
-import java.util.Enumeration;
-import java.io.Serializable;
-import java.net.UnknownHostException;
+import j86.j86.java.security.acl.Permission;
+import j86.java.util.Vector;
+import j86.java.util.Enumeration;
+import j86.java.io.Serializable;
+import j86.java.net.UnknownHostException;
 
-import java.security.Principal;
-import java.security.acl.AclEntry;
+import j86.java.security.Principal;
+import j86.j86.java.security.acl.AclEntry;
 
 
 /**
@@ -43,7 +43,7 @@ import java.security.acl.AclEntry;
  * This ACL entry object contains a permission associated with a particular principal.
  * (A principal represents an entity such as an individual machine or a group).
  *
- * @see java.security.acl.AclEntry
+ * @see j86.j86.java.security.acl.AclEntry
  */
 
 class AclEntryImpl implements AclEntry, Serializable {
@@ -119,7 +119,7 @@ class AclEntryImpl implements AclEntry, Serializable {
    *         not part of this entry's permission set.
    *
    */
-  public boolean addPermission(java.security.acl.Permission perm){
+  public boolean addPermission(j86.j86.java.security.acl.Permission perm){
         if (permList.contains(perm)) return false;
         permList.addElement(perm);
         return true;
@@ -132,7 +132,7 @@ class AclEntryImpl implements AclEntry, Serializable {
    * @return true if the permission is removed, false if the permission
    *         was not part of this entry's permission set.
    */
-  public boolean removePermission(java.security.acl.Permission perm){
+  public boolean removePermission(j86.j86.java.security.acl.Permission perm){
         if (!permList.contains(perm)) return false;
         permList.removeElement(perm);
         return true;
@@ -147,7 +147,7 @@ class AclEntryImpl implements AclEntry, Serializable {
    *         entry, false otherwise.
    */
 
-  public boolean checkPermission(java.security.acl.Permission perm){
+  public boolean checkPermission(j86.j86.java.security.acl.Permission perm){
         return (permList.contains(perm));
   }
 

@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.security.validator;
+package j86.sun.security.validator;
 
-import java.io.*;
-import java.util.*;
+import j86.java.io.*;
+import j86.java.util.*;
 
-import java.security.*;
-import java.security.cert.*;
-import java.security.cert.Certificate;
+import j86.java.security.*;
+import j86.j86.java.security.cert.*;
+import j86.j86.java.security.cert.Certificate;
 
-import sun.security.action.*;
+import j86.sun.security.action.*;
 
 /**
  * Collection of static utility methods related to KeyStores.

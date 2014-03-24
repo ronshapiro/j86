@@ -23,11 +23,11 @@
  * questions.
  */
 
-package com.sun.jmx.remote.protocol.iiop;
+package j86.com.sun.jmx.remote.protocol.iiop;
 
-import java.io.IOException;
-import java.io.Serializable;
-import java.math.BigDecimal;
+import j86.java.io.IOException;
+import j86.java.io.Serializable;
+import j86.java.math.BigDecimal;
 
 import org.omg.CORBA.Any;
 import org.omg.CORBA.Context;
@@ -183,7 +183,7 @@ public class ProxyInputStream extends org.omg.CORBA_2_3.portable.InputStream {
     }
 
     @Override
-    public org.omg.CORBA.Object read_Object(java.lang.Class clz) {
+    public org.omg.CORBA.Object read_Object(j86.java.lang.Class clz) {
         return in.read_Object(clz);
     }
 

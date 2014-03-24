@@ -23,14 +23,14 @@
  * questions.
  */
 
-package java.awt.image;
+package j86.j86.j86.java.awt.image;
 
 
 /**
  * The <code>RasterFormatException</code> is thrown if there is
  * invalid layout information in the {@link Raster}.
  */
-public class RasterFormatException extends java.lang.RuntimeException {
+public class RasterFormatException extends j86.java.lang.RuntimeException {
 
     /**
      * Constructs a new <code>RasterFormatException</code> with the

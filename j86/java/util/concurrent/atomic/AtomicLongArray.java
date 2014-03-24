@@ -33,19 +33,19 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package java.util.concurrent.atomic;
-import java.util.function.LongUnaryOperator;
-import java.util.function.LongBinaryOperator;
-import sun.misc.Unsafe;
+package j86.j86.j86.java.util.concurrent.atomic;
+import j86.j86.java.util.function.LongUnaryOperator;
+import j86.j86.java.util.function.LongBinaryOperator;
+import j86.sun.misc.Unsafe;
 
 /**
  * A {@code long} array in which elements may be updated atomically.
- * See the {@link java.util.concurrent.atomic} package specification
+ * See the {@link j86.j86.j86.java.util.concurrent.atomic} package specification
  * for description of the properties of atomic variables.
  * @since 1.5
  * @author Doug Lea
  */
-public class AtomicLongArray implements java.io.Serializable {
+public class AtomicLongArray implements j86.java.io.Serializable {
     private static final long serialVersionUID = -2308431214976778248L;
 
     private static final Unsafe unsafe = Unsafe.getUnsafe();

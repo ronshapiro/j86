@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.lang.invoke;
+package j86.j86.java.lang.invoke;
 
-import java.util.concurrent.atomic.AtomicInteger;
+import j86.j86.j86.java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * A {@code MutableCallSite} is a {@link CallSite} whose target variable
@@ -169,7 +169,7 @@ public class MutableCallSite extends CallSite {
      * <p>
      * This operation does not reverse any calls that have already started
      * on an old target value.
-     * (Java supports {@linkplain java.lang.Object#wait() forward time travel} only.)
+     * (Java supports {@linkplain j86.java.lang.Object#wait() forward time travel} only.)
      * <p>
      * The overall effect is to force all future readers of each call site's target
      * to accept the most recently stored value.

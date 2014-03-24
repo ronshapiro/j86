@@ -23,11 +23,11 @@
  * questions.
  */
 
-package java.awt.print;
+package j86.j86.java.awt.print;
 
 /**
  * The <code>PrinterGraphics</code> interface is implemented by
- * {@link java.awt.Graphics} objects that are passed to
+ * {@link j86.java.awt.Graphics} objects that are passed to
  * {@link Printable} objects to render a page. It allows an
  * application to find the {@link PrinterJob} object that is
  * controlling the printing.
@@ -40,7 +40,7 @@ public interface PrinterGraphics {
      * current rendering request.
      * @return the <code>PrinterJob</code> controlling the current
      * rendering request.
-     * @see java.awt.print.Printable
+     * @see j86.j86.java.awt.print.Printable
      */
     PrinterJob getPrinterJob();
 

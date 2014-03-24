@@ -23,14 +23,14 @@
  * questions.
  */
 
-package java.security;
+package j86.java.security;
 
-import java.io.IOException;
-import java.io.EOFException;
-import java.io.OutputStream;
-import java.io.FilterOutputStream;
-import java.io.PrintStream;
-import java.io.ByteArrayOutputStream;
+import j86.java.io.IOException;
+import j86.java.io.EOFException;
+import j86.java.io.OutputStream;
+import j86.java.io.FilterOutputStream;
+import j86.java.io.PrintStream;
+import j86.java.io.ByteArrayOutputStream;
 
 /**
  * A transparent stream that updates the associated message digest using
@@ -78,7 +78,7 @@ public class DigestOutputStream extends FilterOutputStream {
      * Returns the message digest associated with this stream.
      *
      * @return the message digest associated with this stream.
-     * @see #setMessageDigest(java.security.MessageDigest)
+     * @see #setMessageDigest(j86.java.security.MessageDigest)
      */
     public MessageDigest getMessageDigest() {
         return digest;

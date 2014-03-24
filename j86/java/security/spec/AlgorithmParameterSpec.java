@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.security.spec;
+package j86.j86.java.security.spec;
 
 /**
  * A (transparent) specification of cryptographic parameters.
@@ -35,7 +35,7 @@ package java.security.spec;
  * @author Jan Luehe
  *
  *
- * @see java.security.AlgorithmParameters
+ * @see j86.java.security.AlgorithmParameters
  * @see DSAParameterSpec
  *
  * @since 1.2

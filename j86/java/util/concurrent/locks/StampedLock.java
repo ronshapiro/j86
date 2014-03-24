@@ -33,13 +33,13 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package java.util.concurrent.locks;
+package j86.j86.j86.java.util.concurrent.locks;
 
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.Condition;
-import java.util.concurrent.locks.ReadWriteLock;
-import java.util.concurrent.locks.LockSupport;
+import j86.j86.java.util.concurrent.TimeUnit;
+import j86.j86.j86.java.util.concurrent.locks.Lock;
+import j86.j86.j86.java.util.concurrent.locks.Condition;
+import j86.j86.j86.java.util.concurrent.locks.ReadWriteLock;
+import j86.j86.j86.java.util.concurrent.locks.LockSupport;
 
 /**
  * A capability-based lock with three modes for controlling read/write
@@ -188,7 +188,7 @@ import java.util.concurrent.locks.LockSupport;
  * @since 1.8
  * @author Doug Lea
  */
-public class StampedLock implements java.io.Serializable {
+public class StampedLock implements j86.java.io.Serializable {
     /*
      * Algorithmic notes:
      *
@@ -945,8 +945,8 @@ public class StampedLock implements java.io.Serializable {
         }
     }
 
-    private void readObject(java.io.ObjectInputStream s)
-        throws java.io.IOException, ClassNotFoundException {
+    private void readObject(j86.java.io.ObjectInputStream s)
+        throws j86.java.io.IOException, ClassNotFoundException {
         s.defaultReadObject();
         state = ORIGIN; // reset to unlocked state
     }
@@ -1377,7 +1377,7 @@ public class StampedLock implements java.io.Serializable {
     }
 
     // Unsafe mechanics
-    private static final sun.misc.Unsafe U;
+    private static final j86.sun.misc.Unsafe U;
     private static final long STATE;
     private static final long WHEAD;
     private static final long WTAIL;
@@ -1388,7 +1388,7 @@ public class StampedLock implements java.io.Serializable {
 
     static {
         try {
-            U = sun.misc.Unsafe.getUnsafe();
+            U = j86.sun.misc.Unsafe.getUnsafe();
             Class<?> k = StampedLock.class;
             Class<?> wk = WNode.class;
             STATE = U.objectFieldOffset

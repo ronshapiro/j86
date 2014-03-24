@@ -23,19 +23,19 @@
  * questions.
  */
 
-package javax.crypto;
+package j86.javax.crypto;
 
-import java.util.*;
+import j86.java.util.*;
 
-import java.security.*;
-import java.security.Provider.Service;
-import java.security.spec.AlgorithmParameterSpec;
+import j86.java.security.*;
+import j86.java.security.Provider.Service;
+import j86.j86.java.security.spec.AlgorithmParameterSpec;
 
-import java.nio.ByteBuffer;
+import j86.java.nio.ByteBuffer;
 
-import sun.security.util.Debug;
-import sun.security.jca.*;
-import sun.security.jca.GetInstance.Instance;
+import j86.sun.security.util.Debug;
+import j86.sun.security.jca.*;
+import j86.sun.security.jca.GetInstance.Instance;
 
 /**
  * This class provides the functionality of a "Message Authentication Code"
@@ -159,7 +159,7 @@ public class Mac implements Cloneable {
      *          MacSpi implementation for the
      *          specified algorithm.
      *
-     * @see java.security.Provider
+     * @see j86.java.security.Provider
      */
     public static final Mac getInstance(String algorithm)
             throws NoSuchAlgorithmException {
@@ -209,7 +209,7 @@ public class Mac implements Cloneable {
      * @exception IllegalArgumentException if the <code>provider</code>
      *          is null or empty.
      *
-     * @see java.security.Provider
+     * @see j86.java.security.Provider
      */
     public static final Mac getInstance(String algorithm, String provider)
             throws NoSuchAlgorithmException, NoSuchProviderException {
@@ -244,7 +244,7 @@ public class Mac implements Cloneable {
      * @exception IllegalArgumentException if the <code>provider</code>
      *          is null.
      *
-     * @see java.security.Provider
+     * @see j86.java.security.Provider
      */
     public static final Mac getInstance(String algorithm, Provider provider)
             throws NoSuchAlgorithmException {

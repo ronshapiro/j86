@@ -20,26 +20,26 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.sun.org.apache.xml.internal.security.c14n.implementations;
+package j86.j86.j86.com.sun.org.apache.xml.internal.security.c14n.implementations;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.util.SortedSet;
-import java.util.TreeSet;
+import j86.java.io.IOException;
+import j86.java.util.ArrayList;
+import j86.java.util.Collection;
+import j86.java.util.HashMap;
+import j86.java.util.Iterator;
+import j86.java.util.List;
+import j86.java.util.Map;
+import j86.java.util.Set;
+import j86.java.util.SortedSet;
+import j86.java.util.TreeSet;
 
 import javax.xml.parsers.ParserConfigurationException;
 
-import com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
-import com.sun.org.apache.xml.internal.security.c14n.helper.C14nHelper;
-import com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
-import com.sun.org.apache.xml.internal.security.utils.Constants;
-import com.sun.org.apache.xml.internal.security.utils.XMLUtils;
+import j86.j86.com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
+import j86.j86.j86.com.sun.org.apache.xml.internal.security.c14n.helper.C14nHelper;
+import j86.j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.Constants;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
 import org.w3c.dom.Attr;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -253,7 +253,7 @@ public abstract class Canonicalizer20010315 extends CanonicalizerBase {
      * Returns the Attr[]s to be output for the given element.
      * <br>
      * IMPORTANT: This method expects to work on a modified DOM tree, i.e. a DOM which has
-     * been prepared using {@link com.sun.org.apache.xml.internal.security.utils.XMLUtils#circumventBug2650(
+     * been prepared using {@link j86.j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils#circumventBug2650(
      * org.w3c.dom.Document)}.
      *
      * @param element

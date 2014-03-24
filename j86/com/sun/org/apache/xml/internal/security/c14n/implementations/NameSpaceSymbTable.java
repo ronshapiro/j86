@@ -20,12 +20,12 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.sun.org.apache.xml.internal.security.c14n.implementations;
+package j86.j86.j86.com.sun.org.apache.xml.internal.security.c14n.implementations;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.List;
+import j86.java.util.ArrayList;
+import j86.java.util.Collection;
+import j86.java.util.Iterator;
+import j86.java.util.List;
 
 
 import org.w3c.dom.Attr;

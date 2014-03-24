@@ -22,27 +22,27 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing;
+package j86.javax.swing;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.awt.image.*;
-import java.text.*;
-import java.awt.geom.*;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
-import java.beans.Transient;
-import java.util.Enumeration;
-import java.util.Vector;
-import java.io.Serializable;
-import javax.swing.event.*;
-import javax.swing.border.*;
-import javax.swing.plaf.*;
-import javax.accessibility.*;
-import javax.swing.text.*;
-import javax.swing.text.html.*;
-import javax.swing.plaf.basic.*;
-import java.util.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.j86.j86.java.awt.image.*;
+import j86.java.text.*;
+import j86.j86.java.awt.geom.*;
+import j86.java.beans.PropertyChangeEvent;
+import j86.java.beans.PropertyChangeListener;
+import j86.java.beans.Transient;
+import j86.java.util.Enumeration;
+import j86.java.util.Vector;
+import j86.java.io.Serializable;
+import j86.j86.javax.swing.event.*;
+import j86.j86.javax.swing.border.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.javax.accessibility.*;
+import j86.j86.javax.swing.text.*;
+import j86.j86.j86.javax.swing.text.html.*;
+import j86.j86.j86.javax.swing.plaf.basic.*;
+import j86.java.util.*;
 
 /**
  * Defines common behaviors for buttons and menu items.
@@ -67,8 +67,8 @@ import java.util.*;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @author Jeff Dinkins
  */
@@ -645,7 +645,7 @@ public abstract class AbstractButton extends JComponent implements ItemSelectabl
      * @return the <code>disabledIcon</code> property
      * @see #getPressedIcon
      * @see #setDisabledIcon
-     * @see javax.swing.LookAndFeel#getDisabledIcon
+     * @see j86.javax.swing.LookAndFeel#getDisabledIcon
      */
     @Transient
     public Icon getDisabledIcon() {
@@ -696,7 +696,7 @@ public abstract class AbstractButton extends JComponent implements ItemSelectabl
      * @return the <code>disabledSelectedIcon</code> property
      * @see #getDisabledIcon
      * @see #setDisabledSelectedIcon
-     * @see javax.swing.LookAndFeel#getDisabledSelectedIcon
+     * @see j86.javax.swing.LookAndFeel#getDisabledSelectedIcon
      */
     public Icon getDisabledSelectedIcon() {
         if (disabledSelectedIcon == null) {
@@ -1550,10 +1550,10 @@ public abstract class AbstractButton extends JComponent implements ItemSelectabl
      * <p>
      * A mnemonic must correspond to a single key on the keyboard
      * and should be specified using one of the <code>VK_XXX</code>
-     * keycodes defined in <code>java.awt.event.KeyEvent</code>.
+     * keycodes defined in <code>j86.j86.java.awt.event.KeyEvent</code>.
      * These codes and the wider array of codes for international
      * keyboards may be obtained through
-     * <code>java.awt.event.KeyEvent.getExtendedKeyCodeForChar</code>.
+     * <code>j86.j86.java.awt.event.KeyEvent.getExtendedKeyCodeForChar</code>.
      * Mnemonics are case-insensitive, therefore a key event
      * with the corresponding keycode would cause the button to be
      * activated whether or not the Shift modifier was pressed.
@@ -1563,7 +1563,7 @@ public abstract class AbstractButton extends JComponent implements ItemSelectabl
      * will be underlined to indicate the mnemonic to the user.
      *
      * @param mnemonic the key code which represents the mnemonic
-     * @see     java.awt.event.KeyEvent
+     * @see     j86.j86.java.awt.event.KeyEvent
      * @see     #setDisplayedMnemonicIndex
      *
      * @beaninfo
@@ -1825,7 +1825,7 @@ public abstract class AbstractButton extends JComponent implements ItemSelectabl
      * example, <code>JButton</code> might do the following:
      * <pre>
      *      setUI((ButtonUI)UIManager.getUI(
-     *          "ButtonUI", "javax.swing.plaf.basic.BasicButtonUI", this));
+     *          "ButtonUI", "j86.j86.j86.javax.swing.plaf.basic.BasicButtonUI", this));
      * </pre>
      */
     public void updateUI() {
@@ -1834,7 +1834,7 @@ public abstract class AbstractButton extends JComponent implements ItemSelectabl
     /**
      * Adds the specified component to this container at the specified
      * index, refer to
-     * {@link java.awt.Container#addImpl(Component, Object, int)}
+     * {@link j86.java.awt.Container#addImpl(Component, Object, int)}
      * for a complete description of this method.
      *
      * @param     comp the component to be added
@@ -1858,7 +1858,7 @@ public abstract class AbstractButton extends JComponent implements ItemSelectabl
 
     /**
      * Sets the layout manager for this container, refer to
-     * {@link java.awt.Container#setLayout(LayoutManager)}
+     * {@link j86.java.awt.Container#setLayout(LayoutManager)}
      * for a complete description of this method.
      *
      * @param mgr the specified layout manager
@@ -1974,8 +1974,8 @@ public abstract class AbstractButton extends JComponent implements ItemSelectabl
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     @SuppressWarnings("serial")
     protected class ButtonChangeListener implements ChangeListener, Serializable {
@@ -2092,7 +2092,7 @@ public abstract class AbstractButton extends JComponent implements ItemSelectabl
         model.setEnabled(b);
     }
 
-    // *** Deprecated java.awt.Button APIs below *** //
+    // *** Deprecated j86.java.awt.Button APIs below *** //
 
     /**
      * Returns the label text.
@@ -2192,8 +2192,8 @@ public abstract class AbstractButton extends JComponent implements ItemSelectabl
      * @param y  the y coordinate
      * @param w  the width
      * @param h  the height
-     * @see     java.awt.image.ImageObserver
-     * @see     java.awt.Component#imageUpdate(java.awt.Image, int, int, int, int, int)
+     * @see     j86.j86.j86.java.awt.image.ImageObserver
+     * @see     j86.java.awt.Component#imageUpdate(java.awt.Image, int, int, int, int, int)
      */
     public boolean imageUpdate(Image img, int infoflags,
                                int x, int y, int w, int h) {
@@ -2380,8 +2380,8 @@ public abstract class AbstractButton extends JComponent implements ItemSelectabl
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      * @since 1.4
      */
     protected abstract class AccessibleAbstractButton
@@ -3072,9 +3072,9 @@ public abstract class AbstractButton extends JComponent implements ItemSelectabl
 
             /**
              * Returns a key binding for this object.  The value returned is an
-             * java.lang.Object which must be cast to appropriate type depending
+             * j86.java.lang.Object which must be cast to appropriate type depending
              * on the underlying implementation of the key.  For example, if the
-             * Object returned is a javax.swing.KeyStroke, the user of this
+             * Object returned is a j86.javax.swing.KeyStroke, the user of this
              * method should do the following:
              * <nf><code>
              * Component c = <get the component that has the key bindings>
@@ -3082,8 +3082,8 @@ public abstract class AbstractButton extends JComponent implements ItemSelectabl
              * AccessibleKeyBinding akb = ac.getAccessibleKeyBinding();
              * for (int i = 0; i < akb.getAccessibleKeyBindingCount(); i++) {
              *     Object o = akb.getAccessibleKeyBinding(i);
-             *     if (o instanceof javax.swing.KeyStroke) {
-             *         javax.swing.KeyStroke keyStroke = (javax.swing.KeyStroke)o;
+             *     if (o instanceof j86.javax.swing.KeyStroke) {
+             *         j86.javax.swing.KeyStroke keyStroke = (javax.swing.KeyStroke)o;
              *         <do something with the key binding>
              *     }
              * }
@@ -3095,7 +3095,7 @@ public abstract class AbstractButton extends JComponent implements ItemSelectabl
              * out of bounds
              * @see #getAccessibleKeyBindingCount
              */
-            public java.lang.Object getAccessibleKeyBinding(int i) {
+            public j86.java.lang.Object getAccessibleKeyBinding(int i) {
                 if (i != 0) {
                     throw new IllegalArgumentException();
                 }

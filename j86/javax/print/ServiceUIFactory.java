@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.print;
+package j86.javax.print;
 
 /**
  * Services may optionally provide UIs which allow different styles
@@ -61,30 +61,30 @@ public abstract class ServiceUIFactory {
     /**
      * Denotes a UI implemented as a Swing component.
      * The value of the String is the fully qualified classname :
-     * "javax.swing.JComponent".
+     * "j86.javax.swing.JComponent".
      */
-    public static final String JCOMPONENT_UI = "javax.swing.JComponent";
+    public static final String JCOMPONENT_UI = "j86.javax.swing.JComponent";
 
     /**
      * Denotes a UI implemented as an AWT panel.
      * The value of the String is the fully qualified classname :
-     * "java.awt.Panel"
+     * "j86.java.awt.Panel"
      */
-    public static final String PANEL_UI = "java.awt.Panel";
+    public static final String PANEL_UI = "j86.java.awt.Panel";
 
     /**
      * Denotes a UI implemented as an AWT dialog.
      * The value of the String is the fully qualified classname :
-     * "java.awt.Dialog"
+     * "j86.java.awt.Dialog"
      */
-    public static final String DIALOG_UI = "java.awt.Dialog";
+    public static final String DIALOG_UI = "j86.java.awt.Dialog";
 
     /**
      * Denotes a UI implemented as a Swing dialog.
      * The value of the String is the fully qualified classname :
-     * "javax.swing.JDialog"
+     * "j86.javax.swing.JDialog"
      */
-    public static final String JDIALOG_UI = "javax.swing.JDialog";
+    public static final String JDIALOG_UI = "j86.javax.swing.JDialog";
 
     /**
      * Denotes a UI which performs an informative "About" role.

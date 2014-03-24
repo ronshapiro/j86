@@ -23,24 +23,24 @@
  * questions.
  */
 
-package sun.misc;
+package j86.sun.misc;
 
-import java.lang.ref.SoftReference;
-import java.lang.ref.ReferenceQueue;
+import j86.j86.java.lang.ref.SoftReference;
+import j86.j86.java.lang.ref.ReferenceQueue;
 
-import java.util.Iterator;
-import java.util.Map;
-import java.util.AbstractMap;
-import java.util.HashMap;
-import java.util.Set;
-import java.util.AbstractSet;
-import java.util.NoSuchElementException;
+import j86.java.util.Iterator;
+import j86.java.util.Map;
+import j86.java.util.AbstractMap;
+import j86.java.util.HashMap;
+import j86.java.util.Set;
+import j86.java.util.AbstractSet;
+import j86.java.util.NoSuchElementException;
 
 
 /**
  * A memory-sensitive implementation of the <code>Map</code> interface.
  *
- * <p> A <code>SoftCache</code> object uses {@link java.lang.ref.SoftReference
+ * <p> A <code>SoftCache</code> object uses {@link j86.j86.java.lang.ref.SoftReference
  * soft references} to implement a memory-sensitive hash map.  If the garbage
  * collector determines at a certain point in time that a value object in a
  * <code>SoftCache</code> entry is no longer strongly reachable, then it may
@@ -97,8 +97,8 @@ import java.util.NoSuchElementException;
  *
  * @author      Mark Reinhold
  * @since       1.2
- * @see         java.util.HashMap
- * @see         java.lang.ref.SoftReference
+ * @see         j86.java.util.HashMap
+ * @see         j86.j86.java.lang.ref.SoftReference
  */
 
 

@@ -22,14 +22,14 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.util.jar;
+package j86.j86.java.util.jar;
 
-import java.util.SortedMap;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.File;
-import java.io.IOException;
-import java.beans.PropertyChangeListener;
+import j86.java.util.SortedMap;
+import j86.java.io.InputStream;
+import j86.java.io.OutputStream;
+import j86.java.io.File;
+import j86.java.io.IOException;
+import j86.java.beans.PropertyChangeListener;
 
 
 
@@ -46,8 +46,8 @@ import java.beans.PropertyChangeListener;
  * <p>
  * Here is an example using  packer and unpacker:
  * <pre>{@code
- *    import java.util.jar.Pack200;
- *    import java.util.jar.Pack200.*;
+ *    import j86.j86.java.util.jar.Pack200;
+ *    import j86.j86.java.util.jar.Pack200.*;
  *    ...
  *    // Create the Packer object
  *    Packer packer = Pack200.newPacker();
@@ -113,7 +113,7 @@ public abstract class Pack200 {
     /**
      * Obtain new instance of a class that implements Packer.
      * <ul>
-     * <li><p>If the system property <tt>java.util.jar.Pack200.Packer</tt>
+     * <li><p>If the system property <tt>j86.j86.java.util.jar.Pack200.Packer</tt>
      * is defined, then the value is taken to be the fully-qualified name
      * of a concrete implementation class, which must implement Packer.
      * This class is loaded and instantiated.  If this process fails
@@ -139,7 +139,7 @@ public abstract class Pack200 {
     /**
      * Obtain new instance of a class that implements Unpacker.
      * <ul>
-     * <li><p>If the system property <tt>java.util.jar.Pack200.Unpacker</tt>
+     * <li><p>If the system property <tt>j86.j86.java.util.jar.Pack200.Unpacker</tt>
      * is defined, then the value is taken to be the fully-qualified
      * name of a concrete implementation class, which must implement Unpacker.
      * The class is loaded and instantiated.  If this process fails
@@ -581,7 +581,7 @@ public abstract class Pack200 {
          *
          * <p><b>WARNING:</b> This method is omitted from the interface
          * declaration in all subset Profiles of Java SE that do not include
-         * the {@code java.beans} package. </p>
+         * the {@code j86.java.beans} package. </p>
 
          * @see #properties
          * @see #PROGRESS
@@ -607,7 +607,7 @@ public abstract class Pack200 {
          *
          * <p><b>WARNING:</b> This method is omitted from the interface
          * declaration in all subset Profiles of Java SE that do not include
-         * the {@code java.beans} package. </p>
+         * the {@code j86.java.beans} package. </p>
          *
          * @see #addPropertyChangeListener
          * @param listener  The PropertyChange listener to be removed.
@@ -740,7 +740,7 @@ public abstract class Pack200 {
          *
          * <p><b>WARNING:</b> This method is omitted from the interface
          * declaration in all subset Profiles of Java SE that do not include
-         * the {@code java.beans} package. </p>
+         * the {@code j86.java.beans} package. </p>
          *
          * @see #properties
          * @see #PROGRESS
@@ -766,7 +766,7 @@ public abstract class Pack200 {
          *
          * <p><b>WARNING:</b> This method is omitted from the interface
          * declaration in all subset Profiles of Java SE that do not include
-         * the {@code java.beans} package. </p>
+         * the {@code j86.java.beans} package. </p>
          *
          * @see #addPropertyChangeListener
          * @param listener  The PropertyChange listener to be removed.
@@ -782,8 +782,8 @@ public abstract class Pack200 {
 
     // Private stuff....
 
-    private static final String PACK_PROVIDER = "java.util.jar.Pack200.Packer";
-    private static final String UNPACK_PROVIDER = "java.util.jar.Pack200.Unpacker";
+    private static final String PACK_PROVIDER = "j86.j86.java.util.jar.Pack200.Packer";
+    private static final String UNPACK_PROVIDER = "j86.j86.java.util.jar.Pack200.Unpacker";
 
     private static Class<?> packerImpl;
     private static Class<?> unpackerImpl;
@@ -794,14 +794,14 @@ public abstract class Pack200 {
             Class<?> impl = (PACK_PROVIDER.equals(prop))? packerImpl: unpackerImpl;
             if (impl == null) {
                 // The first time, we must decide which class to use.
-                implName = java.security.AccessController.doPrivileged(
-                    new sun.security.action.GetPropertyAction(prop,""));
+                implName = j86.java.security.AccessController.doPrivileged(
+                    new j86.sun.security.action.GetPropertyAction(prop,""));
                 if (implName != null && !implName.equals(""))
                     impl = Class.forName(implName);
                 else if (PACK_PROVIDER.equals(prop))
-                    impl = com.sun.java.util.jar.pack.PackerImpl.class;
+                    impl = j86.com.sun.j86.j86.java.util.jar.pack.PackerImpl.class;
                 else
-                    impl = com.sun.java.util.jar.pack.UnpackerImpl.class;
+                    impl = j86.com.sun.j86.j86.java.util.jar.pack.UnpackerImpl.class;
             }
             // We have a class.  Now instantiate it.
             return impl.newInstance();

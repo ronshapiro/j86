@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.sql.rowset.serial;
+package j86.j86.j86.javax.sql.rowset.serial;
 
-import java.sql.*;
-import java.util.Arrays;
-import java.util.Map;
+import j86.java.sql.*;
+import j86.java.util.Arrays;
+import j86.java.util.Map;
 
 /**
  * An input stream used for custom mapping user-defined types (UDTs).
@@ -56,7 +56,7 @@ import java.util.Map;
  * calls the <code>SQLInputImpl</code> reader methods
  * to read the attributes from the input stream.
  * @since 1.5
- * @see java.sql.SQLData
+ * @see j86.java.sql.SQLData
  */
 public class SQLInputImpl implements SQLInput {
 
@@ -82,7 +82,7 @@ public class SQLInputImpl implements SQLInput {
 
     /**
      * The type map to use when the method <code>readObject</code>
-     * is invoked. This is a <code>java.util.Map</code> object in which
+     * is invoked. This is a <code>j86.java.util.Map</code> object in which
      * there may be zero or more entries.  Each entry consists of the
      * fully qualified name of a UDT (the value to be mapped) and the
      * <code>Class</code> object for a class that implements
@@ -103,7 +103,7 @@ public class SQLInputImpl implements SQLInput {
      *        each element is an attribute of a UDT. The order of the
      *        attributes in the array is the same order in which
      *        the attributes were defined in the UDT definition.
-     * @param map a <code>java.util.Map</code> object containing zero or more
+     * @param map a <code>j86.java.util.Map</code> object containing zero or more
      *        entries, with each entry consisting of 1) a <code>String</code>
      *        giving the fully
      *        qualified name of the UDT and 2) the <code>Class</code> object
@@ -152,7 +152,7 @@ public class SQLInputImpl implements SQLInput {
     //================================================================
     // Methods for reading attributes from the stream of SQL data.
     // These methods correspond to the column-accessor methods of
-    // java.sql.ResultSet.
+    // j86.java.sql.ResultSet.
     //================================================================
 
     /**
@@ -303,7 +303,7 @@ public class SQLInputImpl implements SQLInput {
 
     /**
      * Retrieves the next attribute in this <code>SQLInputImpl</code> object
-     * as a <code>java.math.BigDecimal</code>.
+     * as a <code>j86.java.math.BigDecimal</code>.
      * <P>
      * This method does not perform type-safe checking to determine if the
      * returned type is the expected type; this responsibility is delegated
@@ -314,8 +314,8 @@ public class SQLInputImpl implements SQLInput {
      * @throws SQLException if the read position is located at an invalid
      *       position or if there are no more values in the stream
      */
-    public java.math.BigDecimal readBigDecimal() throws SQLException {
-        return (java.math.BigDecimal)getNextAttribute();
+    public j86.java.math.BigDecimal readBigDecimal() throws SQLException {
+        return (j86.java.math.BigDecimal)getNextAttribute();
     }
 
     /**
@@ -337,7 +337,7 @@ public class SQLInputImpl implements SQLInput {
 
     /**
      * Retrieves the next attribute in this <code>SQLInputImpl</code> as
-     * a <code>java.sql.Date</code> object.
+     * a <code>j86.java.sql.Date</code> object.
      * <P>
      * This method does not perform type-safe checking to determine if the
      * returned type is the expected type; this responsibility is delegated
@@ -348,13 +348,13 @@ public class SQLInputImpl implements SQLInput {
      * @throws SQLException if the read position is located at an invalid
      *       position or if there are no more values in the stream
      */
-    public java.sql.Date readDate() throws SQLException {
-        return (java.sql.Date)getNextAttribute();
+    public j86.java.sql.Date readDate() throws SQLException {
+        return (j86.java.sql.Date)getNextAttribute();
     }
 
     /**
      * Retrieves the next attribute in this <code>SQLInputImpl</code> object as
-     * a <code>java.sql.Time</code> object.
+     * a <code>j86.java.sql.Time</code> object.
      * <P>
      * This method does not perform type-safe checking to determine if the
      * returned type is the expected type as this responsibility is delegated
@@ -366,21 +366,21 @@ public class SQLInputImpl implements SQLInput {
      * @throws SQLException if the read position is located at an invalid
      * position; or if there are no further values in the stream.
      */
-    public java.sql.Time readTime() throws SQLException {
-        return (java.sql.Time)getNextAttribute();
+    public j86.java.sql.Time readTime() throws SQLException {
+        return (j86.java.sql.Time)getNextAttribute();
     }
 
     /**
      * Retrieves the next attribute in this <code>SQLInputImpl</code> object as
-     * a <code>java.sql.Timestamp</code> object.
+     * a <code>j86.java.sql.Timestamp</code> object.
      *
      * @return the attribute; if the value is <code>SQL NULL</code>, return
      * <code>null</code>
      * @throws SQLException if the read position is located at an invalid
      * position; or if there are no further values in the stream.
      */
-    public java.sql.Timestamp readTimestamp() throws SQLException {
-        return (java.sql.Timestamp)getNextAttribute();
+    public j86.java.sql.Timestamp readTimestamp() throws SQLException {
+        return (j86.java.sql.Timestamp)getNextAttribute();
     }
 
     /**
@@ -396,8 +396,8 @@ public class SQLInputImpl implements SQLInput {
      * @throws SQLException if the read position is located at an invalid
      * position; or if there are no further values in the stream.
      */
-    public java.io.Reader readCharacterStream() throws SQLException {
-        return (java.io.Reader)getNextAttribute();
+    public j86.java.io.Reader readCharacterStream() throws SQLException {
+        return (j86.java.io.Reader)getNextAttribute();
     }
 
     /**
@@ -414,8 +414,8 @@ public class SQLInputImpl implements SQLInput {
      * @throws SQLException if the read position is located at an invalid
      * position; or if there are no further values in the stream.
      */
-    public java.io.InputStream readAsciiStream() throws SQLException {
-        return (java.io.InputStream)getNextAttribute();
+    public j86.java.io.InputStream readAsciiStream() throws SQLException {
+        return (j86.java.io.InputStream)getNextAttribute();
     }
 
     /**
@@ -432,8 +432,8 @@ public class SQLInputImpl implements SQLInput {
      * @throws SQLException if the read position is located at an invalid
      * position; or if there are no further values in the stream.
      */
-    public java.io.InputStream readBinaryStream() throws SQLException {
-        return (java.io.InputStream)getNextAttribute();
+    public j86.java.io.InputStream readBinaryStream() throws SQLException {
+        return (j86.java.io.InputStream)getNextAttribute();
     }
 
     //================================================================
@@ -477,10 +477,10 @@ public class SQLInputImpl implements SQLInput {
                 SQLData obj = null;
                 try {
                     obj = (SQLData)c.newInstance();
-                } catch (java.lang.InstantiationException ex) {
+                } catch (j86.java.lang.InstantiationException ex) {
                     throw new SQLException("Unable to instantiate: " +
                             ex.getMessage());
-                } catch (java.lang.IllegalAccessException ex) {
+                } catch (j86.java.lang.IllegalAccessException ex) {
                     throw new SQLException("Unable to instantiate: " +
                             ex.getMessage());
                 }
@@ -605,8 +605,8 @@ public class SQLInputImpl implements SQLInput {
      * @throws SQLException if the read position is located at an invalid
      * position; or if there are no further values in the stream.
      */
-    public java.net.URL readURL() throws SQLException {
-        return (java.net.URL)getNextAttribute();
+    public j86.java.net.URL readURL() throws SQLException {
+        return (j86.java.net.URL)getNextAttribute();
     }
 
     //---------------------------- JDBC 4.0 -------------------------

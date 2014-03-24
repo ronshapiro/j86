@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.misc;
+package j86.sun.misc;
 
 /**
  * ConditionLock is a Lock with a built in state variable.  This class
@@ -59,7 +59,7 @@ class ConditionLock extends Lock {
      * Acquires the lock when the state variable equals the desired state.
      *
      * @param desiredState the desired state
-     * @exception  java.lang.InterruptedException if any thread has
+     * @exception  j86.java.lang.InterruptedException if any thread has
      *               interrupted this thread.
      */
     public synchronized void lockWhen(int desiredState)

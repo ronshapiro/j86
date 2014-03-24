@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.swing.table;
+package j86.j86.javax.swing.table;
 
-import javax.swing.*;
-import javax.swing.event.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.event.*;
 
 /**
  *  The <code>TableModel</code> interface specifies the methods the

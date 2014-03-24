@@ -20,11 +20,11 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.sun.org.apache.xml.internal.security.encryption;
+package j86.j86.com.sun.org.apache.xml.internal.security.encryption;
 
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.io.StringReader;
+import j86.java.io.ByteArrayInputStream;
+import j86.java.io.IOException;
+import j86.java.io.StringReader;
 
 import javax.xml.XMLConstants;
 import javax.xml.parsers.DocumentBuilder;

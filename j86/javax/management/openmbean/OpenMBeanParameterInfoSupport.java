@@ -24,22 +24,22 @@
  */
 
 
-package javax.management.openmbean;
+package j86.j86.javax.management.openmbean;
 
 
 // java import
 //
-import java.util.Set;
-import javax.management.Descriptor;
-import javax.management.DescriptorRead;  // for Javadoc
-import javax.management.ImmutableDescriptor;
-import javax.management.MBeanParameterInfo;
+import j86.java.util.Set;
+import j86.javax.management.Descriptor;
+import j86.javax.management.DescriptorRead;  // for Javadoc
+import j86.javax.management.ImmutableDescriptor;
+import j86.javax.management.MBeanParameterInfo;
 
 // OpenMBeanAttributeInfoSupport and this class are very similar
 // but can't easily be refactored because there's no multiple inheritance.
 // The best we can do for refactoring is to put a bunch of static methods
 // in OpenMBeanAttributeInfoSupport and import them here.
-import static javax.management.openmbean.OpenMBeanAttributeInfoSupport.*;
+import static j86.j86.javax.management.openmbean.OpenMBeanAttributeInfoSupport.*;
 
 /**
  * Describes a parameter used in one or more operations or
@@ -508,7 +508,7 @@ public class OpenMBeanParameterInfoSupport
     }
 
 
-    /* ***  Commodity methods from java.lang.Object  *** */
+    /* ***  Commodity methods from j86.java.lang.Object  *** */
 
 
     /**
@@ -568,7 +568,7 @@ public class OpenMBeanParameterInfoSupport
      * <p>However, note that another instance of a class implementing
      * the {@code OpenMBeanParameterInfo} interface may be equal to
      * this {@code OpenMBeanParameterInfoSupport} instance as defined
-     * by {@link #equals(java.lang.Object)}, but may have a different
+     * by {@link #equals(j86.java.lang.Object)}, but may have a different
      * hash code if it is calculated differently.
      *
      * <p>As {@code OpenMBeanParameterInfoSupport} instances are
@@ -597,7 +597,7 @@ public class OpenMBeanParameterInfoSupport
      * {@code OpenMBeanParameterInfoSupport} instance.
      * <p>
      * The string representation consists of the name of this class (i.e.
-     * {@code javax.management.openmbean.OpenMBeanParameterInfoSupport}),
+     * {@code j86.j86.javax.management.openmbean.OpenMBeanParameterInfoSupport}),
      * the string representation of the name and open type of the described
      * parameter, the string representation of its default, min, max and legal
      * values and the string representation of its descriptor.

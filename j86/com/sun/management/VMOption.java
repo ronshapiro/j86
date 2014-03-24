@@ -23,10 +23,10 @@
  * questions.
  */
 
-package com.sun.management;
+package com.j86.sun.management;
 
-import sun.management.VMOptionCompositeData;
-import javax.management.openmbean.CompositeData;
+import j86.sun.management.VMOptionCompositeData;
+import j86.j86.javax.management.openmbean.CompositeData;
 
 /**
  * Information about a VM option including its value and
@@ -196,19 +196,19 @@ public class VMOption {
      * </tr>
      * <tr>
      *   <td>name</td>
-     *   <td><tt>java.lang.String</tt></td>
+     *   <td><tt>j86.java.lang.String</tt></td>
      * </tr>
      * <tr>
      *   <td>value</td>
-     *   <td><tt>java.lang.String</tt></td>
+     *   <td><tt>j86.java.lang.String</tt></td>
      * </tr>
      * <tr>
      *   <td>origin</td>
-     *   <td><tt>java.lang.String</tt></td>
+     *   <td><tt>j86.java.lang.String</tt></td>
      * </tr>
      * <tr>
      *   <td>writeable</td>
-     *   <td><tt>java.lang.Boolean</tt></td>
+     *   <td><tt>j86.java.lang.Boolean</tt></td>
      * </tr>
      * </table>
      * </blockquote>

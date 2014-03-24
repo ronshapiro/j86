@@ -31,16 +31,16 @@
 // CHANGELOG
 //      2005-05-19 Edward Wang
 //          - copy this file from icu4jsrc_3_2/src/com/ibm/icu/text/Punycode.java
-//          - move from package com.ibm.icu.text to package sun.net.idn
+//          - move from package com.ibm.icu.text to package j86.j86.sun.net.idn
 //          - use ParseException instead of StringPrepParseException
 //      2007-08-14 Martin Buchholz
 //          - remove redundant casts
 //
-package sun.net.idn;
+package j86.j86.sun.net.idn;
 
-import java.text.ParseException;
-import sun.text.normalizer.UCharacter;
-import sun.text.normalizer.UTF16;
+import j86.java.text.ParseException;
+import j86.j86.sun.text.normalizer.UCharacter;
+import j86.j86.sun.text.normalizer.UTF16;
 
 /**
  * Ported code from ICU punycode.c

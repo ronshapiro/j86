@@ -24,8 +24,8 @@
  */
 package ${PACKAGE};
 
-import java.awt.*;
-import javax.swing.*;
+import j86.java.awt.*;
+import j86.javax.swing.*;
 
 
 class ${STATE_NAME} extends State {

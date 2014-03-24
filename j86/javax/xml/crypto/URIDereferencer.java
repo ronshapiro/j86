@@ -33,7 +33,7 @@
 /*
  * $Id: URIDereferencer.java,v 1.5 2005/05/10 15:47:42 mullan Exp $
  */
-package javax.xml.crypto;
+package j86.javax.xml.crypto;
 
 /**
  * A dereferencer of {@link URIReference}s.

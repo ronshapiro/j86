@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.naming.ldap;
+package j86.j86.javax.naming.ldap;
 
 /**
  * This class represents an event fired in response to an unsolicited
@@ -35,13 +35,13 @@ package javax.naming.ldap;
  *
  * @see UnsolicitedNotification
  * @see UnsolicitedNotificationListener
- * @see javax.naming.event.EventContext#addNamingListener
- * @see javax.naming.event.EventDirContext#addNamingListener
- * @see javax.naming.event.EventContext#removeNamingListener
+ * @see j86.j86.javax.naming.event.EventContext#addNamingListener
+ * @see j86.j86.javax.naming.event.EventDirContext#addNamingListener
+ * @see j86.j86.javax.naming.event.EventContext#removeNamingListener
  * @since 1.3
  */
 
-public class UnsolicitedNotificationEvent extends java.util.EventObject {
+public class UnsolicitedNotificationEvent extends j86.java.util.EventObject {
     /**
      * The notification that caused this event to be fired.
      * @serial

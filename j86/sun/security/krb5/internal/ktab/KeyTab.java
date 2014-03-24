@@ -29,24 +29,24 @@
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
 
-package sun.security.krb5.internal.ktab;
+package j86.j86.j86.sun.security.krb5.internal.ktab;
 
-import sun.security.krb5.*;
-import sun.security.krb5.internal.*;
-import sun.security.krb5.internal.crypto.*;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.io.IOException;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.StringTokenizer;
-import java.util.Vector;
-import sun.security.jgss.krb5.ServiceCreds;
+import j86.sun.security.krb5.*;
+import j86.j86.sun.security.krb5.internal.*;
+import j86.j86.j86.sun.security.krb5.internal.crypto.*;
+import j86.java.util.ArrayList;
+import j86.java.util.Arrays;
+import j86.java.io.IOException;
+import j86.java.io.FileInputStream;
+import j86.java.io.FileOutputStream;
+import j86.java.io.File;
+import j86.java.io.FileNotFoundException;
+import j86.java.util.Comparator;
+import j86.java.util.HashMap;
+import j86.java.util.Map;
+import j86.java.util.StringTokenizer;
+import j86.java.util.Vector;
+import j86.j86.sun.security.jgss.krb5.ServiceCreds;
 
 /**
  * This class represents key table. The key table functions deal with storing
@@ -204,13 +204,13 @@ public class KeyTab implements KeyTabConstants {
 
             if (kname == null) {
                 String user_home =
-                        java.security.AccessController.doPrivileged(
-                        new sun.security.action.GetPropertyAction("user.home"));
+                        j86.java.security.AccessController.doPrivileged(
+                        new j86.sun.security.action.GetPropertyAction("user.home"));
 
                 if (user_home == null) {
                     user_home =
-                        java.security.AccessController.doPrivileged(
-                        new sun.security.action.GetPropertyAction("user.dir"));
+                        j86.java.security.AccessController.doPrivileged(
+                        new j86.sun.security.action.GetPropertyAction("user.dir"));
                 }
 
                 kname = user_home + File.separator  + "krb5.keytab";

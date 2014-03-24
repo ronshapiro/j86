@@ -23,18 +23,18 @@
  * questions.
  */
 
-package sun.misc;
+package j86.sun.misc;
 
-import java.io.EOFException;
-import java.net.URL;
-import java.io.IOException;
-import java.io.InterruptedIOException;
-import java.io.InputStream;
-import java.security.CodeSigner;
-import java.util.jar.Manifest;
-import java.nio.ByteBuffer;
-import java.util.Arrays;
-import sun.nio.ByteBuffered;
+import j86.java.io.EOFException;
+import j86.java.net.URL;
+import j86.java.io.IOException;
+import j86.java.io.InterruptedIOException;
+import j86.java.io.InputStream;
+import j86.java.security.CodeSigner;
+import j86.j86.java.util.jar.Manifest;
+import j86.java.nio.ByteBuffer;
+import j86.java.util.Arrays;
+import j86.sun.nio.ByteBuffered;
 
 /**
  * This class is used to represent a Resource that has been loaded
@@ -174,7 +174,7 @@ public abstract class Resource {
     /**
      * Returns theCertificates for the Resource, or null if none.
      */
-    public java.security.cert.Certificate[] getCertificates() {
+    public j86.j86.java.security.cert.Certificate[] getCertificates() {
         return null;
     }
 

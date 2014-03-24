@@ -28,7 +28,7 @@
  * (C) Copyright IBM Corp. 2003 - All Rights Reserved
  */
 
-package sun.font;
+package j86.sun.font;
 
 /**
  * Represents a region of text and context

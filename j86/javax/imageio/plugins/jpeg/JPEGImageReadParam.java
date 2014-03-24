@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.imageio.plugins.jpeg;
+package j86.j86.javax.imageio.plugins.jpeg;
 
-import javax.imageio.ImageReadParam;
+import j86.javax.imageio.ImageReadParam;
 
 /**
  * This class adds the ability to set JPEG quantization and Huffman
@@ -63,7 +63,7 @@ import javax.imageio.ImageReadParam;
  * abbreviated images.  Once tables have been read from a stream, they
  * can be overridden only by tables subsequently read from the same
  * stream.  In order to specify new tables, the {@link
- * javax.imageio.ImageReader#setInput setInput} method of
+ * j86.javax.imageio.ImageReader#setInput setInput} method of
  * the reader must be called to change the stream.
  *
  * <p> Note that this class does not provide a means for obtaining the

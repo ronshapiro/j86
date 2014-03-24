@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.net.smtp;
+package j86.j86.sun.net.smtp;
 
-import java.util.StringTokenizer;
-import java.io.*;
-import java.net.*;
-import sun.net.TransferProtocolClient;
+import j86.java.util.StringTokenizer;
+import j86.java.io.*;
+import j86.java.net.*;
+import j86.sun.net.TransferProtocolClient;
 
 /**
  * This class implements the SMTP client.
@@ -157,8 +157,8 @@ public class SmtpClient extends TransferProtocolClient {
         }
         try {
             String s;
-            mailhost = java.security.AccessController.doPrivileged(
-                    new sun.security.action.GetPropertyAction("mail.host"));
+            mailhost = j86.java.security.AccessController.doPrivileged(
+                    new j86.sun.security.action.GetPropertyAction("mail.host"));
             if (mailhost != null) {
                 openServer(mailhost);
                 return;
@@ -184,8 +184,8 @@ public class SmtpClient extends TransferProtocolClient {
         setConnectTimeout(to);
         try {
             String s;
-            mailhost = java.security.AccessController.doPrivileged(
-                    new sun.security.action.GetPropertyAction("mail.host"));
+            mailhost = j86.java.security.AccessController.doPrivileged(
+                    new j86.sun.security.action.GetPropertyAction("mail.host"));
             if (mailhost != null) {
                 openServer(mailhost);
                 return;
@@ -210,7 +210,7 @@ public class SmtpClient extends TransferProtocolClient {
     }
 }
 
-class SmtpPrintStream extends java.io.PrintStream {
+class SmtpPrintStream extends j86.java.io.PrintStream {
     private SmtpClient target;
     private int lastc = '\n';
 

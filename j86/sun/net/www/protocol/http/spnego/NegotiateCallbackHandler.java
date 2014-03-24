@@ -23,18 +23,18 @@
  * questions.
  */
 
-package sun.net.www.protocol.http.spnego;
+package j86.j86.j86.j86.sun.net.www.protocol.http.spnego;
 
-import java.io.IOException;
-import java.net.Authenticator;
-import java.net.PasswordAuthentication;
-import java.util.Arrays;
-import javax.security.auth.callback.Callback;
-import javax.security.auth.callback.CallbackHandler;
-import javax.security.auth.callback.NameCallback;
-import javax.security.auth.callback.PasswordCallback;
-import javax.security.auth.callback.UnsupportedCallbackException;
-import sun.net.www.protocol.http.HttpCallerInfo;
+import j86.java.io.IOException;
+import j86.java.net.Authenticator;
+import j86.java.net.PasswordAuthentication;
+import j86.java.util.Arrays;
+import j86.j86.javax.security.auth.callback.Callback;
+import j86.j86.javax.security.auth.callback.CallbackHandler;
+import j86.j86.javax.security.auth.callback.NameCallback;
+import j86.j86.javax.security.auth.callback.PasswordCallback;
+import j86.j86.javax.security.auth.callback.UnsupportedCallbackException;
+import j86.j86.j86.sun.net.www.protocol.http.HttpCallerInfo;
 
 /**
  * @since 1.6

@@ -23,11 +23,11 @@
  * questions.
  */
 
-package java.util.spi;
+package j86.j86.java.util.spi;
 
-import java.util.Calendar;
-import java.util.Locale;
-import java.util.Map;
+import j86.java.util.Calendar;
+import j86.java.util.Locale;
+import j86.java.util.Map;
 
 /**
  * An abstract class for service providers that provide localized string
@@ -88,11 +88,11 @@ import java.util.Map;
  *     <td rowspan="2" valign="top">{@code "gregory"}</td>
  *     <td rowspan="2" valign="top">{@link Calendar#ERA}</td>
  *     <td>0</td>
- *     <td>{@link java.util.GregorianCalendar#BC} (BCE)</td>
+ *     <td>{@link j86.java.util.GregorianCalendar#BC} (BCE)</td>
  *   </tr>
  *   <tr>
  *     <td>1</td>
- *     <td>{@link java.util.GregorianCalendar#AD} (CE)</td>
+ *     <td>{@link j86.java.util.GregorianCalendar#AD} (CE)</td>
  *   </tr>
  *   <tr>
  *     <td rowspan="2" valign="top">{@code "buddhist"}</td>
@@ -157,7 +157,7 @@ import java.util.Map;
  * </table>
  *
  * <p>Calendar field value names for {@code "gregory"} must be consistent with
- * the date-time symbols provided by {@link java.text.spi.DateFormatSymbolsProvider}.
+ * the date-time symbols provided by {@link j86.j86.java.text.spi.DateFormatSymbolsProvider}.
  *
  * <p>Time zone names are supported by {@link TimeZoneNameProvider}.
  *
@@ -229,8 +229,8 @@ public abstract class CalendarNameProvider extends LocaleServiceProvider {
      *         if {@code field} or {@code style} is invalid
      * @throws NullPointerException if {@code locale} is {@code null}
      * @see TimeZoneNameProvider
-     * @see java.util.Calendar#get(int)
-     * @see java.util.Calendar#getDisplayName(int, int, Locale)
+     * @see j86.java.util.Calendar#get(int)
+     * @see j86.java.util.Calendar#getDisplayName(int, int, Locale)
      */
     public abstract String getDisplayName(String calendarType,
                                           int field, int value,

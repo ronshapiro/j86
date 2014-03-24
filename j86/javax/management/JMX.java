@@ -23,13 +23,13 @@
  * questions.
  */
 
-package javax.management;
+package j86.javax.management;
 
-import com.sun.jmx.mbeanserver.Introspector;
-import java.lang.reflect.InvocationHandler;
-import java.lang.reflect.Modifier;
-import java.lang.reflect.Proxy;
-import sun.reflect.misc.ReflectUtil;
+import j86.com.sun.jmx.mbeanserver.Introspector;
+import j86.j86.j86.java.lang.reflect.InvocationHandler;
+import j86.j86.j86.java.lang.reflect.Modifier;
+import j86.j86.j86.java.lang.reflect.Proxy;
+import j86.j86.sun.reflect.misc.ReflectUtil;
 
 /**
  * Static methods from the JMX API.  There are no instances of this class.
@@ -235,7 +235,7 @@ public class JMX {
      * public interface MyMXBean {
      *     public String getSimpleAttribute();
      *     public void setSimpleAttribute(String value);
-     *     public {@link java.lang.management.MemoryUsage} getMappedAttribute();
+     *     public {@link j86.j86.java.lang.management.MemoryUsage} getMappedAttribute();
      *     public void setMappedAttribute(MemoryUsage memoryUsage);
      *     public MemoryUsage someOperation(String param1, MemoryUsage param2);
      * }
@@ -255,7 +255,7 @@ public class JMX {
      * new Attribute("SimpleAttribute", "whatever"))</code>.</p>
      *
      *     <p>Because {@code String} is a <em>simple type</em>, in the
-     *     sense of {@link javax.management.openmbean.SimpleType}, it
+     *     sense of {@link j86.j86.javax.management.openmbean.SimpleType}, it
      *     is not changed in the context of an MXBean.  The MXBean
      *     proxy behaves the same as a Standard MBean proxy (see
      *     {@link #newMBeanProxy(MBeanServerConnection, ObjectName,
@@ -266,7 +266,7 @@ public class JMX {
      * to {@code mbs.getAttribute("MappedAttribute")}.  The MXBean
      * mapping rules mean that the actual type of the attribute {@code
      * MappedAttribute} will be {@link
-     * javax.management.openmbean.CompositeData CompositeData} and
+     * j86.j86.javax.management.openmbean.CompositeData CompositeData} and
      * that is what the {@code mbs.getAttribute} call will return.
      * The proxy will then convert the {@code CompositeData} back into
      * the expected type {@code MemoryUsage} using the MXBean mapping
@@ -307,7 +307,7 @@ public class JMX {
      * @return the new proxy instance.
      *
      * @throws IllegalArgumentException if {@code interfaceClass} is not
-     * a {@link javax.management.MXBean compliant MXBean interface}
+     * a {@link j86.javax.management.MXBean compliant MXBean interface}
      */
     public static <T> T newMXBeanProxy(MBeanServerConnection connection,
                                        ObjectName objectName,
@@ -350,7 +350,7 @@ public class JMX {
      * @return the new proxy instance.
      *
      * @throws IllegalArgumentException if {@code interfaceClass} is not
-     * a {@link javax.management.MXBean compliant MXBean interface}
+     * a {@link j86.javax.management.MXBean compliant MXBean interface}
      */
     public static <T> T newMXBeanProxy(MBeanServerConnection connection,
                                        ObjectName objectName,
@@ -369,7 +369,7 @@ public class JMX {
      * @param interfaceClass The candidate interface.
      *
      * @return true if {@code interfaceClass} is a
-     * {@link javax.management.MXBean compliant MXBean interface}
+     * {@link j86.javax.management.MXBean compliant MXBean interface}
      *
      * @throws NullPointerException if {@code interfaceClass} is null.
      */

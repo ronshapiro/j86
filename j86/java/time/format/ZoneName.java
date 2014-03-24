@@ -22,14 +22,14 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.time.format;
+package j86.j86.java.time.format;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Locale;
-import java.util.Map;
-import java.util.Map.Entry;
-import java.util.Set;
+import j86.java.util.HashMap;
+import j86.java.util.HashSet;
+import j86.java.util.Locale;
+import j86.java.util.Map;
+import j86.java.util.Map.Entry;
+import j86.java.util.Set;
 
 /**
  * A helper class to map a zone name to metazone and back to the

@@ -22,10 +22,10 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.swing;
+package j86.sun.swing;
 
-import javax.swing.Icon;
-import javax.swing.JMenuItem;
+import j86.javax.swing.Icon;
+import j86.javax.swing.JMenuItem;
 
 /**
  *

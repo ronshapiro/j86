@@ -24,11 +24,11 @@
  */
 
 
-package javax.naming.spi;
+package j86.j86.javax.naming.spi;
 
-import javax.naming.Context;
-import javax.naming.Name;
-import javax.naming.NamingException;
+import j86.javax.naming.Context;
+import j86.javax.naming.Name;
+import j86.javax.naming.NamingException;
 
 /**
   * This interface represents an "intermediate context" for name resolution.
@@ -64,7 +64,7 @@ public interface Resolver {
      * @return  the object that was found, along with the unresolved
      *          suffix of <code>name</code>.  Cannot be null.
      *
-     * @throws  javax.naming.NotContextException
+     * @throws  j86.javax.naming.NotContextException
      *          if no context of the appropriate type is found
      * @throws  NamingException if a naming exception was encountered
      *
@@ -86,7 +86,7 @@ public interface Resolver {
      * @return  the object that was found, along with the unresolved
      *          suffix of <code>name</code>.  Cannot be null.
      *
-     * @throws  javax.naming.NotContextException
+     * @throws  j86.javax.naming.NotContextException
      *          if no context of the appropriate type is found
      * @throws  NamingException if a naming exception was encountered
      */

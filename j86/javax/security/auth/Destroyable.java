@@ -23,13 +23,13 @@
  * questions.
  */
 
-package javax.security.auth;
+package j86.javax.security.auth;
 
 /**
  * Objects such as credentials may optionally implement this interface
  * to provide the capability to destroy its contents.
  *
- * @see javax.security.auth.Subject
+ * @see j86.javax.security.auth.Subject
  */
 public interface Destroyable {
 

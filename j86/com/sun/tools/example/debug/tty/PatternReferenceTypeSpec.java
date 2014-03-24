@@ -32,11 +32,11 @@
  */
 
 
-package com.sun.tools.example.debug.tty;
+package j86.com.sun.tools.example.debug.tty;
 
-import com.sun.jdi.*;
-import com.sun.jdi.request.ClassPrepareRequest;
-import java.util.StringTokenizer;
+import j86.com.sun.jdi.*;
+import j86.j86.com.sun.jdi.request.ClassPrepareRequest;
+import j86.java.util.StringTokenizer;
 
 
 class PatternReferenceTypeSpec implements ReferenceTypeSpec {

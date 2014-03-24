@@ -23,18 +23,18 @@
  * questions.
  */
 
-package sun.util.calendar;
+package j86.j86.sun.util.calendar;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.security.AccessController;
-import java.security.PrivilegedActionException;
-import java.security.PrivilegedExceptionAction;
-import java.util.Properties;
-import java.util.TimeZone;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentMap;
+import j86.java.io.File;
+import j86.java.io.FileInputStream;
+import j86.java.io.IOException;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedActionException;
+import j86.java.security.PrivilegedExceptionAction;
+import j86.java.util.Properties;
+import j86.java.util.TimeZone;
+import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.j86.java.util.concurrent.ConcurrentMap;
 
 /**
  * <code>CalendarSystem</code> is an abstract class that defines the
@@ -84,7 +84,7 @@ public abstract class CalendarSystem {
     // Map of calendar names and CalendarSystem instances
     private static ConcurrentMap<String,CalendarSystem> calendars;
 
-    private static final String PACKAGE_NAME = "sun.util.calendar.";
+    private static final String PACKAGE_NAME = "j86.j86.sun.util.calendar.";
 
     private static final String[] namePairs = {
         "gregorian", "Gregorian",
@@ -189,7 +189,7 @@ public abstract class CalendarSystem {
         Properties calendarProps = null;
         try {
             String homeDir = AccessController.doPrivileged(
-                new sun.security.action.GetPropertyAction("java.home"));
+                new j86.sun.security.action.GetPropertyAction("java.home"));
             final String fname = homeDir + File.separator + "lib" + File.separator
                                  + "calendars.properties";
             calendarProps = AccessController.doPrivileged(new PrivilegedExceptionAction<Properties>() {

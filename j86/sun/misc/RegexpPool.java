@@ -23,8 +23,8 @@
  * questions.
  */
 
-package sun.misc;
-import java.io.*;
+package j86.sun.misc;
+import j86.java.io.*;
 
 /**
  * A class to represent a pool of regular expressions.  A string

@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.management;
+package j86.sun.management;
 
-import javax.management.MBeanRegistration;
-import javax.management.MBeanServer;
-import javax.management.ObjectName;
+import j86.javax.management.MBeanRegistration;
+import j86.javax.management.MBeanServer;
+import j86.javax.management.ObjectName;
 
 /**
  * Implementation class of HotspotInternalMBean interface.
@@ -40,7 +40,7 @@ public class HotspotInternal
     implements HotspotInternalMBean, MBeanRegistration {
 
     private final static String HOTSPOT_INTERNAL_MBEAN_NAME =
-        "sun.management:type=HotspotInternal";
+        "j86.sun.management:type=HotspotInternal";
     private static ObjectName objName = Util.newObjectName(HOTSPOT_INTERNAL_MBEAN_NAME);
     private MBeanServer server = null;
 
@@ -52,7 +52,7 @@ public class HotspotInternal
     }
 
     public ObjectName preRegister(MBeanServer server,
-                                  ObjectName name) throws java.lang.Exception {
+                                  ObjectName name) throws j86.java.lang.Exception {
         // register all internal MBeans when this MBean is instantiated
         // and to be registered in a MBeanServer.
         ManagementFactoryHelper.registerInternalMBeans(server);
@@ -62,7 +62,7 @@ public class HotspotInternal
 
     public void postRegister(Boolean registrationDone) {};
 
-    public void preDeregister() throws java.lang.Exception {
+    public void preDeregister() throws j86.java.lang.Exception {
         // unregister all internal MBeans when this MBean is unregistered.
         ManagementFactoryHelper.unregisterInternalMBeans(server);
     }

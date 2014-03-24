@@ -23,12 +23,12 @@
  * questions.
  */
 
-package java.sql;
+package j86.java.sql;
 
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.Reader;
-import java.io.Writer;
+import j86.java.io.InputStream;
+import j86.java.io.OutputStream;
+import j86.java.io.Reader;
+import j86.java.io.Writer;
 
 import javax.xml.transform.Result;
 import javax.xml.transform.Source;
@@ -210,7 +210,7 @@ public interface SQLXML
    * Retrieves the XML value designated by this SQLXML instance as a stream.
    * The bytes of the input stream are interpreted according to appendix F of the XML 1.0 specification.
    * The behavior of this method is the same as ResultSet.getBinaryStream()
-   * when the designated column of the ResultSet has a type java.sql.Types of SQLXML.
+   * when the designated column of the ResultSet has a type j86.java.sql.Types of SQLXML.
    * <p>
    * The SQL XML object becomes not readable when this method is called and
    * may also become not writable depending on implementation.
@@ -229,7 +229,7 @@ public interface SQLXML
    * The stream begins at position 0.
    * The bytes of the stream are interpreted according to appendix F of the XML 1.0 specification
    * The behavior of this method is the same as ResultSet.updateBinaryStream()
-   * when the designated column of the ResultSet has a type java.sql.Types of SQLXML.
+   * when the designated column of the ResultSet has a type j86.java.sql.Types of SQLXML.
    * <p>
    * The SQL XML object becomes not writeable when this method is called and
    * may also become not readable depending on implementation.
@@ -244,14 +244,14 @@ public interface SQLXML
   OutputStream setBinaryStream() throws SQLException;
 
   /**
-   * Retrieves the XML value designated by this SQLXML instance as a java.io.Reader object.
+   * Retrieves the XML value designated by this SQLXML instance as a j86.java.io.Reader object.
    * The format of this stream is defined by org.xml.sax.InputSource,
    * where the characters in the stream represent the unicode code points for
    * XML according to section 2 and appendix B of the XML 1.0 specification.
    * Although an encoding declaration other than unicode may be present,
    * the encoding of the stream is unicode.
    * The behavior of this method is the same as ResultSet.getCharacterStream()
-   * when the designated column of the ResultSet has a type java.sql.Types of SQLXML.
+   * when the designated column of the ResultSet has a type j86.java.sql.Types of SQLXML.
    * <p>
    * The SQL XML object becomes not readable when this method is called and
    * may also become not writable depending on implementation.
@@ -275,7 +275,7 @@ public interface SQLXML
    * Although an encoding declaration other than unicode may be present,
    * the encoding of the stream is unicode.
    * The behavior of this method is the same as ResultSet.updateCharacterStream()
-   * when the designated column of the ResultSet has a type java.sql.Types of SQLXML.
+   * when the designated column of the ResultSet has a type j86.java.sql.Types of SQLXML.
    * <p>
    * The SQL XML object becomes not writeable when this method is called and
    * may also become not readable depending on implementation.
@@ -299,7 +299,7 @@ public interface SQLXML
    * Although an encoding declaration other than unicode may be present,
    * the encoding of the String is unicode.
    * The behavior of this method is the same as ResultSet.getString()
-   * when the designated column of the ResultSet has a type java.sql.Types of SQLXML.
+   * when the designated column of the ResultSet has a type j86.java.sql.Types of SQLXML.
    * <p>
    * The SQL XML object becomes not readable when this method is called and
    * may also become not writable depending on implementation.
@@ -323,7 +323,7 @@ public interface SQLXML
    * Although an encoding declaration other than unicode may be present,
    * the encoding of the String is unicode.
    * The behavior of this method is the same as ResultSet.updateString()
-   * when the designated column of the ResultSet has a type java.sql.Types of SQLXML.
+   * when the designated column of the ResultSet has a type j86.java.sql.Types of SQLXML.
    * <p>
    * The SQL XML object becomes not writeable when this method is called and
    * may also become not readable depending on implementation.

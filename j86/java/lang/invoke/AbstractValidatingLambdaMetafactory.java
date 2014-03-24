@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.lang.invoke;
+package j86.j86.java.lang.invoke;
 
-import sun.invoke.util.Wrapper;
+import j86.j86.sun.invoke.util.Wrapper;
 
-import static sun.invoke.util.Wrapper.forPrimitiveType;
-import static sun.invoke.util.Wrapper.forWrapperType;
-import static sun.invoke.util.Wrapper.isWrapperType;
+import static j86.j86.sun.invoke.util.Wrapper.forPrimitiveType;
+import static j86.j86.sun.invoke.util.Wrapper.forWrapperType;
+import static j86.j86.sun.invoke.util.Wrapper.isWrapperType;
 
 /**
  * Abstract implementation of a lambda metafactory which provides parameter

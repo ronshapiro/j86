@@ -22,14 +22,14 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.rmi.dgc;
+package j86.j86.java.rmi.dgc;
 
 /**
  * A lease contains a unique VM identifier and a lease duration. A
  * Lease object is used to request and grant leases to remote object
  * references.
  */
-public final class Lease implements java.io.Serializable {
+public final class Lease implements j86.java.io.Serializable {
 
     /**
      * @serial Virtual Machine ID with which this Lease is associated.

@@ -24,18 +24,18 @@
  */
 
 
-package sun.security.ssl;
+package j86.sun.security.ssl;
 
-import java.security.InvalidKeyException;
-import java.security.NoSuchAlgorithmException;
+import j86.java.security.InvalidKeyException;
+import j86.java.security.NoSuchAlgorithmException;
 
-import java.nio.ByteBuffer;
+import j86.java.nio.ByteBuffer;
 
-import javax.crypto.Mac;
-import javax.crypto.SecretKey;
+import j86.javax.crypto.Mac;
+import j86.javax.crypto.SecretKey;
 
-import sun.security.ssl.CipherSuite.MacAlg;
-import static sun.security.ssl.CipherSuite.*;
+import j86.sun.security.ssl.CipherSuite.MacAlg;
+import static j86.sun.security.ssl.CipherSuite.*;
 
 /**
  * This class computes the "Message Authentication Code" (MAC) for each

@@ -20,18 +20,18 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.sun.org.apache.xml.internal.security.transforms.implementations;
+package j86.j86.j86.com.sun.org.apache.xml.internal.security.transforms.implementations;
 
-import java.io.OutputStream;
+import j86.java.io.OutputStream;
 
-import com.sun.org.apache.xml.internal.security.signature.NodeFilter;
-import com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
-import com.sun.org.apache.xml.internal.security.transforms.Transform;
-import com.sun.org.apache.xml.internal.security.transforms.TransformSpi;
-import com.sun.org.apache.xml.internal.security.transforms.TransformationException;
-import com.sun.org.apache.xml.internal.security.transforms.Transforms;
-import com.sun.org.apache.xml.internal.security.utils.Constants;
-import com.sun.org.apache.xml.internal.security.utils.XMLUtils;
+import j86.j86.com.sun.org.apache.xml.internal.security.signature.NodeFilter;
+import j86.j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
+import j86.j86.com.sun.org.apache.xml.internal.security.transforms.Transform;
+import j86.j86.com.sun.org.apache.xml.internal.security.transforms.TransformSpi;
+import j86.j86.com.sun.org.apache.xml.internal.security.transforms.TransformationException;
+import j86.j86.com.sun.org.apache.xml.internal.security.transforms.Transforms;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.Constants;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 
@@ -129,7 +129,7 @@ public class TransformEnvelopedSignature extends TransformSpi {
         }
 
         /**
-         * @see com.sun.org.apache.xml.internal.security.signature.NodeFilter#isNodeInclude(org.w3c.dom.Node)
+         * @see j86.j86.com.sun.org.apache.xml.internal.security.signature.NodeFilter#isNodeInclude(org.w3c.dom.Node)
          */
         public int isNodeInclude(Node n) {
             if (n == exclude || XMLUtils.isDescendantOrSelf(exclude, n)) {

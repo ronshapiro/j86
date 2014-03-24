@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.management;
+package j86.javax.management;
 
 
 /**
@@ -71,7 +71,7 @@ package javax.management;
   But it's not really clear what numberAttr should do if it finds that the
   attribute is not in fact a Number.
  */
-public interface ValueExp extends java.io.Serializable {
+public interface ValueExp extends j86.java.io.Serializable {
 
     /**
      * Applies the ValueExp on a MBean.

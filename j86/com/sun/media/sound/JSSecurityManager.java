@@ -23,23 +23,23 @@
  * questions.
  */
 
-package com.sun.media.sound;
+package j86.com.sun.media.sound;
 
-import java.io.BufferedInputStream;
-import java.io.InputStream;
-import java.io.File;
-import java.io.FileInputStream;
+import j86.java.io.BufferedInputStream;
+import j86.java.io.InputStream;
+import j86.java.io.File;
+import j86.java.io.FileInputStream;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Properties;
-import java.util.ServiceLoader;
+import j86.java.util.ArrayList;
+import j86.java.util.Iterator;
+import j86.java.util.List;
+import j86.java.util.Properties;
+import j86.java.util.ServiceLoader;
 
-import java.security.AccessController;
-import java.security.PrivilegedAction;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
 
-import javax.sound.sampled.AudioPermission;
+import j86.javax.sound.sampled.AudioPermission;
 
 /** Managing security in the Java Sound implementation.
  * This class contains all code that uses and is used by

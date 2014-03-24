@@ -25,12 +25,12 @@
 /*
  * $Id: XPathFilter2ParameterSpec.java,v 1.7 2005/05/13 18:45:42 mullan Exp $
  */
-package javax.xml.crypto.dsig.spec;
+package j86.j86.j86.javax.xml.crypto.dsig.spec;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import javax.xml.crypto.dsig.Transform;
+import j86.java.util.ArrayList;
+import j86.java.util.Collections;
+import j86.java.util.List;
+import j86.j86.javax.xml.crypto.dsig.Transform;
 
 /**
  * Parameters for the W3C Recommendation

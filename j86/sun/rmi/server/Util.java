@@ -22,43 +22,43 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.rmi.server;
+package j86.sun.rmi.server;
 
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.DataOutputStream;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationHandler;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Proxy;
-import java.lang.reflect.Method;
-import java.rmi.Remote;
-import java.rmi.RemoteException;
-import java.rmi.StubNotFoundException;
-import java.rmi.registry.Registry;
-import java.rmi.server.LogStream;
-import java.rmi.server.ObjID;
-import java.rmi.server.RMIClientSocketFactory;
-import java.rmi.server.RemoteObjectInvocationHandler;
-import java.rmi.server.RemoteRef;
-import java.rmi.server.RemoteStub;
-import java.rmi.server.Skeleton;
-import java.rmi.server.SkeletonNotFoundException;
-import java.security.AccessController;
-import java.security.MessageDigest;
-import java.security.DigestOutputStream;
-import java.security.NoSuchAlgorithmException;
-import java.security.PrivilegedAction;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Map;
-import java.util.WeakHashMap;
-import sun.rmi.registry.RegistryImpl;
-import sun.rmi.runtime.Log;
-import sun.rmi.transport.LiveRef;
-import sun.rmi.transport.tcp.TCPEndpoint;
-import sun.security.action.GetBooleanAction;
-import sun.security.action.GetPropertyAction;
+import j86.java.io.ByteArrayOutputStream;
+import j86.java.io.IOException;
+import j86.java.io.DataOutputStream;
+import j86.j86.j86.java.lang.reflect.Constructor;
+import j86.j86.j86.java.lang.reflect.InvocationHandler;
+import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.j86.j86.java.lang.reflect.Proxy;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.rmi.Remote;
+import j86.java.rmi.RemoteException;
+import j86.java.rmi.StubNotFoundException;
+import j86.j86.java.rmi.registry.Registry;
+import j86.j86.java.rmi.server.LogStream;
+import j86.j86.java.rmi.server.ObjID;
+import j86.j86.java.rmi.server.RMIClientSocketFactory;
+import j86.j86.java.rmi.server.RemoteObjectInvocationHandler;
+import j86.j86.java.rmi.server.RemoteRef;
+import j86.j86.java.rmi.server.RemoteStub;
+import j86.j86.java.rmi.server.Skeleton;
+import j86.j86.java.rmi.server.SkeletonNotFoundException;
+import j86.java.security.AccessController;
+import j86.java.security.MessageDigest;
+import j86.java.security.DigestOutputStream;
+import j86.java.security.NoSuchAlgorithmException;
+import j86.java.security.PrivilegedAction;
+import j86.java.util.ArrayList;
+import j86.java.util.Collections;
+import j86.java.util.Map;
+import j86.java.util.WeakHashMap;
+import j86.sun.rmi.registry.RegistryImpl;
+import j86.sun.rmi.runtime.Log;
+import j86.sun.rmi.transport.LiveRef;
+import j86.j86.sun.rmi.transport.tcp.TCPEndpoint;
+import j86.sun.security.action.GetBooleanAction;
+import j86.sun.security.action.GetPropertyAction;
 
 /**
  * A utility class with static methods for creating stubs/proxies and
@@ -70,16 +70,16 @@ public final class Util {
     /** "server" package log level */
     static final int logLevel = LogStream.parseLevel(
         AccessController.doPrivileged(
-            new GetPropertyAction("sun.rmi.server.logLevel")));
+            new GetPropertyAction("j86.sun.rmi.server.logLevel")));
 
     /** server reference log */
     public static final Log serverRefLog =
-        Log.getLog("sun.rmi.server.ref", "transport", Util.logLevel);
+        Log.getLog("j86.sun.rmi.server.ref", "transport", Util.logLevel);
 
-    /** cached value of property java.rmi.server.ignoreStubClasses */
+    /** cached value of property j86.j86.java.rmi.server.ignoreStubClasses */
     private static final boolean ignoreStubClasses =
         AccessController.doPrivileged(
-            new GetBooleanAction("java.rmi.server.ignoreStubClasses")).
+            new GetBooleanAction("j86.j86.java.rmi.server.ignoreStubClasses")).
             booleanValue();
 
     /** cache of  impl classes that have no corresponding stub class */
@@ -99,7 +99,7 @@ public final class Util {
      * the specified implClass is returned (otherwise a RemoteStub instance
      * for the specified implClass is returned):
      *
-     *    a) either the property java.rmi.server.ignoreStubClasses is true or
+     *    a) either the property j86.j86.java.rmi.server.ignoreStubClasses is true or
      *       a pregenerated stub class does not exist for the impl class, and
      *    b) forceStubUse is false.
      *
@@ -199,7 +199,7 @@ public final class Util {
             cl = cl.getSuperclass();
         }
         throw new ClassNotFoundException(
-                "class does not implement java.rmi.Remote");
+                "class does not implement j86.java.rmi.Remote");
     }
 
     /**
@@ -236,7 +236,7 @@ public final class Util {
             Class<?> intf = interfaces[i];
             /*
              * If it is a remote interface (if it extends from
-             * java.rmi.Remote) and is not already in the list,
+             * j86.java.rmi.Remote) and is not already in the list,
              * then add the interface to the list.
              */
             if (Remote.class.isAssignableFrom(intf)) {

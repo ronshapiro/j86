@@ -23,16 +23,16 @@
  * questions.
  */
 
-package java.util.prefs;
+package j86.j86.java.util.prefs;
 
-import java.io.NotSerializableException;
+import j86.java.io.NotSerializableException;
 
 /**
  * An event emitted by a <tt>Preferences</tt> node to indicate that
  * a child of that node has been added or removed.<p>
  *
  * Note, that although NodeChangeEvent inherits Serializable interface from
- * java.util.EventObject, it is not intended to be Serializable. Appropriate
+ * j86.java.util.EventObject, it is not intended to be Serializable. Appropriate
  * serialization methods are implemented to throw NotSerializableException.
  *
  * @author  Josh Bloch
@@ -43,7 +43,7 @@ import java.io.NotSerializableException;
  * @serial  exclude
  */
 
-public class NodeChangeEvent extends java.util.EventObject {
+public class NodeChangeEvent extends j86.java.util.EventObject {
     /**
      * The node that was added or removed.
      *
@@ -84,7 +84,7 @@ public class NodeChangeEvent extends java.util.EventObject {
      * Throws NotSerializableException, since NodeChangeEvent objects are not
      * intended to be serializable.
      */
-     private void writeObject(java.io.ObjectOutputStream out)
+     private void writeObject(j86.java.io.ObjectOutputStream out)
                                                throws NotSerializableException {
          throw new NotSerializableException("Not serializable.");
      }
@@ -93,7 +93,7 @@ public class NodeChangeEvent extends java.util.EventObject {
      * Throws NotSerializableException, since NodeChangeEvent objects are not
      * intended to be serializable.
      */
-     private void readObject(java.io.ObjectInputStream in)
+     private void readObject(j86.java.io.ObjectInputStream in)
                                                throws NotSerializableException {
          throw new NotSerializableException("Not serializable.");
      }

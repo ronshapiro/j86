@@ -23,17 +23,17 @@
  * questions.
  */
 
-package java.awt.image;
+package j86.j86.j86.java.awt.image;
 
-import java.awt.Color;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.GraphicsConfiguration;
-import java.awt.GraphicsDevice;
-import java.awt.Image;
-import java.awt.ImageCapabilities;
-import java.awt.Toolkit;
-import java.awt.Transparency;
+import j86.java.awt.Color;
+import j86.java.awt.Graphics;
+import j86.java.awt.Graphics2D;
+import j86.java.awt.GraphicsConfiguration;
+import j86.java.awt.GraphicsDevice;
+import j86.java.awt.Image;
+import j86.java.awt.ImageCapabilities;
+import j86.java.awt.Toolkit;
+import j86.java.awt.Transparency;
 
 /**
  * VolatileImage is an image which can lose its
@@ -72,9 +72,9 @@ import java.awt.Transparency;
  * of the resources taken up by obsolete VolatileImage objects.
  * <p>
  * This image should not be subclassed directly but should be created
- * by using the {@link java.awt.Component#createVolatileImage(int, int)
+ * by using the {@link j86.java.awt.Component#createVolatileImage(int, int)
  * Component.createVolatileImage} or
- * {@link java.awt.GraphicsConfiguration#createCompatibleVolatileImage(int, int)
+ * {@link j86.java.awt.GraphicsConfiguration#createCompatibleVolatileImage(int, int)
  * GraphicsConfiguration.createCompatibleVolatileImage(int, int)} methods.
  * <P>
  * An example of using a VolatileImage object follows:
@@ -279,8 +279,8 @@ public abstract class VolatileImage extends Image implements Transparency
      *          after a return value of <code>IMAGE_INCOMPATIBLE</code>
      *          and this return value implies nothing about whether the
      *          image needs to be restored.
-     * @see java.awt.GraphicsConfiguration
-     * @see java.awt.Component
+     * @see j86.java.awt.GraphicsConfiguration
+     * @see j86.java.awt.Component
      * @see #IMAGE_OK
      * @see #IMAGE_RESTORED
      * @see #IMAGE_INCOMPATIBLE
@@ -318,9 +318,9 @@ public abstract class VolatileImage extends Image implements Transparency
 
     /**
      * The transparency value with which this image was created.
-     * @see java.awt.GraphicsConfiguration#createCompatibleVolatileImage(int,
+     * @see j86.java.awt.GraphicsConfiguration#createCompatibleVolatileImage(int,
      *      int,int)
-     * @see java.awt.GraphicsConfiguration#createCompatibleVolatileImage(int,
+     * @see j86.java.awt.GraphicsConfiguration#createCompatibleVolatileImage(int,
      *      int,ImageCapabilities,int)
      * @see Transparency
      * @since 1.5

@@ -41,18 +41,18 @@ Although the JDBC<sup><font size=-2>TM</font></sup> API is mainly geared
 to passing SQL statements to a database, it provides for reading and
 writing data from any data source with a tabular format.
 The reader/writer facility, available through the 
-<code>javax.sql.RowSet</code> group of interfaces, can be customized to
+<code>j86.javax.sql.RowSet</code> group of interfaces, can be customized to
 use and update data from a spread sheet, flat file, or any other tabular 
 data source.
 <P>
 <h2>What the JDBC<sup><font size=-2>TM</font></sup> 4.2 API Includes</h2>
 The JDBC<sup><font size=-2>TM</font></sup> 4.2 API includes both
-the <code>java.sql</code> package, referred to as the JDBC core API,
-and the <code>javax.sql</code> package, referred to as the JDBC Optional
+the <code>j86.java.sql</code> package, referred to as the JDBC core API,
+and the <code>j86.javax.sql</code> package, referred to as the JDBC Optional
 Package API. This complete JDBC API
 is included in the Java<sup><font size=-2>TM</font></sup>  
 Standard Edition (Java SE<sup><font size=-2>TM</font></sup>), version 7.
-The <code>javax.sql</code> package extends the functionality of the JDBC API 
+The <code>j86.javax.sql</code> package extends the functionality of the JDBC API 
 from a client-side API to a server-side API, and it is an essential part
 of the Java<sup><font size=-2>TM</font></sup>  Enterprise Edition
 (Java EE<sup><font size=-2>TM</font></sup>) technology. 
@@ -103,8 +103,8 @@ access to the logging stream associated with the <code>DriverManager</code>,
 which may contain information such as table names, column data, and so on.
 <p>
 
-<h2>What the <code>java.sql</code> Package Contains</h2>
-The <code>java.sql</code> package contains API for the following:
+<h2>What the <code>j86.java.sql</code> Package Contains</h2>
+The <code>j86.java.sql</code> package contains API for the following:
 <UL>
   <LI>Making a connection with a database via the <code>DriverManager</code> facility
   <UL>
@@ -182,7 +182,7 @@ The <code>java.sql</code> package contains API for the following:
 	</UL>
 </UL>
 <P>
-    <h3><code>java.sql</code> and <code>javax.sql</code> Features Introduced in the JDBC 4.2 API</h3>
+    <h3><code>j86.java.sql</code> and <code>j86.javax.sql</code> Features Introduced in the JDBC 4.2 API</h3>
 <UL>
     <LI>Added <code>JDBCType</code>  enum and <code>SQLType</code> interface</li>
     <LI>Support for <code>REF CURSORS</code> in <code>CallableStatement</code> 
@@ -193,7 +193,7 @@ The <code>java.sql</code> package contains API for the following:
 
 </UL>
 <P>
-    <h3><code>java.sql</code> and <code>javax.sql</code> Features Introduced in the JDBC 4.1 API</h3>
+    <h3><code>j86.java.sql</code> and <code>j86.javax.sql</code> Features Introduced in the JDBC 4.1 API</h3>
 <UL>
     <LI>Allow <code>Connection</code>,
         <code>ResultSet</code> and <code>Statement</code> objects to be
@@ -212,10 +212,10 @@ The <code>java.sql</code> package contains API for the following:
      <code>XADataSource</code></LI>
 
 </UL>
-<h3><code>java.sql</code> and <code>javax.sql</code> Features Introduced in the JDBC 4.0 API</h3>
+<h3><code>j86.java.sql</code> and <code>j86.javax.sql</code> Features Introduced in the JDBC 4.0 API</h3>
 <UL>
-  <LI>auto java.sql.Driver discovery -- no longer need to load a 
-<code>java.sql.Driver</code> class via <code>Class.forName</code>
+  <LI>auto j86.java.sql.Driver discovery -- no longer need to load a 
+<code>j86.java.sql.Driver</code> class via <code>Class.forName</code>
  <LI>National Character Set support added
  <li>Support added for the SQL:2003 XML data type
  <lI>SQLException enhancements -- Added support for cause chaining; New SQLExceptions
@@ -233,7 +233,7 @@ The <code>java.sql</code> package contains API for the following:
 </UL>
 <P>
 <P>
-<h3><code>java.sql</code> and <code>javax.sql</code> Features Introduced in the JDBC 3.0 API</h3>
+<h3><code>j86.java.sql</code> and <code>j86.javax.sql</code> Features Introduced in the JDBC 3.0 API</h3>
 <UL>
   <LI>Pooled statements -- reuse of statements associated with a pooled 
        connection
@@ -254,12 +254,12 @@ The <code>java.sql</code> package contains API for the following:
       <code>Ref</code> object references
   <LI>Ability to programmatically update <code>BLOB</code>,
       <code>CLOB</code>, <code>ARRAY</code>, and <code>REF</code> values.
-  <LI>Addition of the <code>java.sql.Types.DATALINK</code> data type -- 
+  <LI>Addition of the <code>j86.java.sql.Types.DATALINK</code> data type -- 
       allows JDBC drivers access to objects stored outside a data source
   <LI>Addition of metadata for retrieving SQL type hierarchies
 </UL>
 <P>
-<h3><code>java.sql</code> Features Introduced in the JDBC 2.1 Core API</h3>
+<h3><code>j86.java.sql</code> Features Introduced in the JDBC 2.1 Core API</h3>
 <UL>
   <LI>Scrollable result sets--using new methods in the <code>ResultSet</code>
 	  interface that allow the cursor to be moved to a particular row or to a
@@ -269,12 +269,12 @@ The <code>java.sql</code> package contains API for the following:
   <LI>New data types--interfaces mapping the SQL3 data types
   <LI>Custom mapping of user-defined types (UDTs)
   <LI>Miscellaneous features, including performance hints, the use of character
-	  streams, full precision for <code>java.math.BigDecimal</code> values,
+	  streams, full precision for <code>j86.java.math.BigDecimal</code> values,
 	  additional security, and
 	  support for time zones in date, time, and timestamp values. 
 </UL>
 <P>
-<h3><code>javax.sql</code> Features Introduced in the JDBC 2.0 Optional
+<h3><code>j86.javax.sql</code> Features Introduced in the JDBC 2.0 Optional
 Package API</h3>
 <UL>
   <LI>The <code>DataSource</code> interface as a means of making a connection.  The

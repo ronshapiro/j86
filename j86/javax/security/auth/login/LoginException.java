@@ -23,15 +23,15 @@
  * questions.
  */
 
-package javax.security.auth.login;
+package j86.j86.javax.security.auth.login;
 
 /**
  * This is the basic login exception.
  *
- * @see javax.security.auth.login.LoginContext
+ * @see j86.j86.javax.security.auth.login.LoginContext
  */
 
-public class LoginException extends java.security.GeneralSecurityException {
+public class LoginException extends j86.java.security.GeneralSecurityException {
 
     private static final long serialVersionUID = -4679091624035232488L;
 

@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.accessibility;
+package j86.javax.accessibility;
 
-import java.util.ListResourceBundle;
+import j86.java.util.ListResourceBundle;
 
 /**
  * A resource bundle containing the localized strings in the accessibility

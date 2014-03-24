@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.beans.beancontext;
+package j86.j86.java.beans.beancontext;
 
-import java.beans.BeanInfo;
+import j86.java.beans.BeanInfo;
 
 /**
  * A BeanContextServiceProvider implementor who wishes to provide explicit

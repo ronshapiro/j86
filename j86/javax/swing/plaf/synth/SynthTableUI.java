@@ -23,39 +23,39 @@
  * questions.
  */
 
-package javax.swing.plaf.synth;
+package j86.j86.j86.javax.swing.plaf.synth;
 
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.Dimension;
-import java.awt.Graphics;
-import java.awt.Point;
-import java.awt.Rectangle;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
-import java.text.DateFormat;
-import java.text.Format;
-import java.text.NumberFormat;
-import java.util.Date;
-import javax.swing.Icon;
-import javax.swing.ImageIcon;
-import javax.swing.JCheckBox;
-import javax.swing.JComponent;
-import javax.swing.JLabel;
-import javax.swing.JTable;
-import javax.swing.LookAndFeel;
-import javax.swing.border.Border;
-import javax.swing.plaf.*;
-import javax.swing.plaf.basic.BasicTableUI;
-import javax.swing.table.DefaultTableCellRenderer;
-import javax.swing.table.JTableHeader;
-import javax.swing.table.TableCellRenderer;
-import javax.swing.table.TableColumn;
-import javax.swing.table.TableColumnModel;
+import j86.java.awt.Color;
+import j86.java.awt.Component;
+import j86.java.awt.Dimension;
+import j86.java.awt.Graphics;
+import j86.java.awt.Point;
+import j86.java.awt.Rectangle;
+import j86.java.beans.PropertyChangeEvent;
+import j86.java.beans.PropertyChangeListener;
+import j86.java.text.DateFormat;
+import j86.java.text.Format;
+import j86.java.text.NumberFormat;
+import j86.java.util.Date;
+import j86.javax.swing.Icon;
+import j86.javax.swing.ImageIcon;
+import j86.javax.swing.JCheckBox;
+import j86.javax.swing.JComponent;
+import j86.javax.swing.JLabel;
+import j86.javax.swing.JTable;
+import j86.javax.swing.LookAndFeel;
+import j86.j86.javax.swing.border.Border;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.j86.javax.swing.plaf.basic.BasicTableUI;
+import j86.j86.javax.swing.table.DefaultTableCellRenderer;
+import j86.j86.javax.swing.table.JTableHeader;
+import j86.j86.javax.swing.table.TableCellRenderer;
+import j86.j86.javax.swing.table.TableColumn;
+import j86.j86.javax.swing.table.TableColumnModel;
 
 /**
  * Provides the Synth L&amp;F UI delegate for
- * {@link javax.swing.JTable}.
+ * {@link j86.javax.swing.JTable}.
  *
  * @author Philip Milne
  * @since 1.7

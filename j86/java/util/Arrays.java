@@ -23,23 +23,23 @@
  * questions.
  */
 
-package java.util;
+package j86.java.util;
 
-import java.lang.reflect.Array;
-import java.util.concurrent.ForkJoinPool;
-import java.util.function.BinaryOperator;
-import java.util.function.DoubleBinaryOperator;
-import java.util.function.IntBinaryOperator;
-import java.util.function.IntFunction;
-import java.util.function.IntToDoubleFunction;
-import java.util.function.IntToLongFunction;
-import java.util.function.IntUnaryOperator;
-import java.util.function.LongBinaryOperator;
-import java.util.stream.DoubleStream;
-import java.util.stream.IntStream;
-import java.util.stream.LongStream;
-import java.util.stream.Stream;
-import java.util.stream.StreamSupport;
+import j86.j86.j86.java.lang.reflect.Array;
+import j86.j86.java.util.concurrent.ForkJoinPool;
+import j86.j86.java.util.function.BinaryOperator;
+import j86.j86.java.util.function.DoubleBinaryOperator;
+import j86.j86.java.util.function.IntBinaryOperator;
+import j86.j86.java.util.function.IntFunction;
+import j86.j86.java.util.function.IntToDoubleFunction;
+import j86.j86.java.util.function.IntToLongFunction;
+import j86.j86.java.util.function.IntUnaryOperator;
+import j86.j86.java.util.function.LongBinaryOperator;
+import j86.j86.java.util.stream.DoubleStream;
+import j86.j86.java.util.stream.IntStream;
+import j86.j86.java.util.stream.LongStream;
+import j86.j86.java.util.stream.Stream;
+import j86.j86.java.util.stream.StreamSupport;
 
 /**
  * This class contains various methods for manipulating arrays (such as
@@ -1097,7 +1097,7 @@ public class Arrays {
      * @throws ClassCastException if the array contains elements that are
      *         not <i>mutually comparable</i> using the specified comparator
      * @throws IllegalArgumentException (optional) if the comparator is
-     *         found to violate the {@link java.util.Comparator} contract
+     *         found to violate the {@link j86.java.util.Comparator} contract
      *
      * @since 1.8
      */
@@ -1190,9 +1190,9 @@ public class Arrays {
      */
     static final class LegacyMergeSort {
         private static final boolean userRequested =
-            java.security.AccessController.doPrivileged(
-                new sun.security.action.GetBooleanAction(
-                    "java.util.Arrays.useLegacyMergeSort")).booleanValue();
+            j86.java.security.AccessController.doPrivileged(
+                new j86.sun.security.action.GetBooleanAction(
+                    "j86.java.util.Arrays.useLegacyMergeSort")).booleanValue();
     }
 
     /**
@@ -3798,7 +3798,7 @@ public class Arrays {
      * @serial include
      */
     private static class ArrayList<E> extends AbstractList<E>
-        implements RandomAccess, java.io.Serializable
+        implements RandomAccess, j86.java.io.Serializable
     {
         private static final long serialVersionUID = -2764017481108945198L;
         private final E[] a;

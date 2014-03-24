@@ -32,9 +32,9 @@
  */
 
 
-package com.sun.tools.example.debug.bdi;
+package j86.com.sun.tools.example.debug.bdi;
 
-import com.sun.jdi.*;
+import j86.com.sun.jdi.*;
 
 public class ModificationWatchpointSpec extends WatchpointSpec {
 

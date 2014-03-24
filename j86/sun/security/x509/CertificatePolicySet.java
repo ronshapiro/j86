@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.security.x509;
+package j86.sun.security.x509;
 
-import java.io.IOException;
-import java.util.Vector;
-import java.util.List;
-import java.util.Collections;
+import j86.java.io.IOException;
+import j86.java.util.Vector;
+import j86.java.util.List;
+import j86.java.util.Collections;
 
-import sun.security.util.*;
+import j86.sun.security.util.*;
 
 /**
  * This class defines the certificate policy set ASN.1 object.

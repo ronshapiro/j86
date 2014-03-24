@@ -23,44 +23,44 @@
  * questions.
  */
 
-package javax.management.monitor;
+package j86.j86.javax.management.monitor;
 
-import static com.sun.jmx.defaults.JmxProperties.MONITOR_LOGGER;
-import com.sun.jmx.mbeanserver.GetPropertyAction;
-import com.sun.jmx.mbeanserver.Introspector;
-import java.io.IOException;
-import java.security.AccessControlContext;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.security.ProtectionDomain;
-import java.util.List;
-import java.util.Map;
-import java.util.WeakHashMap;
-import java.util.concurrent.CopyOnWriteArrayList;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
-import java.util.concurrent.LinkedBlockingQueue;
-import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.ScheduledFuture;
-import java.util.concurrent.ThreadFactory;
-import java.util.concurrent.ThreadPoolExecutor;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.atomic.AtomicInteger;
-import java.util.concurrent.atomic.AtomicLong;
-import java.util.logging.Level;
-import javax.management.AttributeNotFoundException;
-import javax.management.InstanceNotFoundException;
-import javax.management.IntrospectionException;
-import javax.management.MBeanAttributeInfo;
-import javax.management.MBeanException;
-import javax.management.MBeanInfo;
-import javax.management.MBeanRegistration;
-import javax.management.MBeanServer;
-import javax.management.MBeanServerConnection;
-import javax.management.NotificationBroadcasterSupport;
-import javax.management.ObjectName;
-import javax.management.ReflectionException;
-import static javax.management.monitor.MonitorNotification.*;
+import static j86.com.sun.jmx.defaults.JmxProperties.MONITOR_LOGGER;
+import j86.com.sun.jmx.mbeanserver.GetPropertyAction;
+import j86.com.sun.jmx.mbeanserver.Introspector;
+import j86.java.io.IOException;
+import j86.java.security.AccessControlContext;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.security.ProtectionDomain;
+import j86.java.util.List;
+import j86.java.util.Map;
+import j86.java.util.WeakHashMap;
+import j86.j86.java.util.concurrent.CopyOnWriteArrayList;
+import j86.j86.java.util.concurrent.Executors;
+import j86.j86.java.util.concurrent.Future;
+import j86.j86.java.util.concurrent.LinkedBlockingQueue;
+import j86.j86.java.util.concurrent.ScheduledExecutorService;
+import j86.j86.java.util.concurrent.ScheduledFuture;
+import j86.j86.java.util.concurrent.ThreadFactory;
+import j86.j86.java.util.concurrent.ThreadPoolExecutor;
+import j86.j86.java.util.concurrent.TimeUnit;
+import j86.j86.j86.java.util.concurrent.atomic.AtomicInteger;
+import j86.j86.j86.java.util.concurrent.atomic.AtomicLong;
+import j86.j86.java.util.logging.Level;
+import j86.javax.management.AttributeNotFoundException;
+import j86.javax.management.InstanceNotFoundException;
+import j86.javax.management.IntrospectionException;
+import j86.javax.management.MBeanAttributeInfo;
+import j86.javax.management.MBeanException;
+import j86.javax.management.MBeanInfo;
+import j86.javax.management.MBeanRegistration;
+import j86.javax.management.MBeanServer;
+import j86.javax.management.MBeanServerConnection;
+import j86.javax.management.NotificationBroadcasterSupport;
+import j86.javax.management.ObjectName;
+import j86.javax.management.ReflectionException;
+import static j86.j86.javax.management.monitor.MonitorNotification.*;
 
 /**
  * Defines the part common to all monitor MBeans.

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.lang;
+package j86.java.lang;
 
 /**
  * Thrown to indicate that a thread is not in an appropriate state
@@ -32,8 +32,8 @@ package java.lang;
  * <code>Thread</code>.
  *
  * @author  unascribed
- * @see     java.lang.Thread#resume()
- * @see     java.lang.Thread#suspend()
+ * @see     j86.java.lang.Thread#resume()
+ * @see     j86.java.lang.Thread#suspend()
  * @since   JDK1.0
  */
 public class IllegalThreadStateException extends IllegalArgumentException {

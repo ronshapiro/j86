@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.sql.rowset;
+package j86.j86.javax.sql.rowset;
 
-import java.sql.SQLException;
+import j86.java.sql.SQLException;
 
 /**
  * An extension of <code>SQLException</code> that provides information
@@ -94,7 +94,7 @@ public class RowSetWarning extends SQLException {
      * @param SQLState an XOPEN code identifying the warning; if a non standard
      *        XOPEN <i>SQLState</i> is supplied, no exception is thrown.
      */
-    public RowSetWarning(java.lang.String reason, java.lang.String SQLState) {
+    public RowSetWarning(j86.java.lang.String reason, java.lang.String SQLState) {
         super(reason, SQLState);
     }
 
@@ -112,7 +112,7 @@ public class RowSetWarning extends SQLException {
      *        XPOEN <i>SQLState</i> is supplied, no exception is thrown.
      * @param vendorCode a database vendor-specific warning code
      */
-    public RowSetWarning(java.lang.String reason, java.lang.String SQLState, int vendorCode) {
+    public RowSetWarning(j86.java.lang.String reason, java.lang.String SQLState, int vendorCode) {
         super(reason, SQLState, vendorCode);
     }
 

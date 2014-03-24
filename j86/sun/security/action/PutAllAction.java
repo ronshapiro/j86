@@ -23,18 +23,18 @@
  * questions.
  */
 
-package sun.security.action;
+package j86.sun.security.action;
 
-import java.util.Map;
+import j86.java.util.Map;
 
-import java.security.Provider;
-import java.security.PrivilegedAction;
+import j86.java.security.Provider;
+import j86.java.security.PrivilegedAction;
 
 /**
  * A convenience PrivilegedAction class for setting the properties of
  * a provider. See the SunRsaSign provider for a usage example.
  *
- * @see sun.security.rsa.SunRsaSign
+ * @see j86.sun.security.rsa.SunRsaSign
  * @author  Andreas Sterbenz
  * @since   1.5
  */

@@ -23,11 +23,11 @@
  * questions.
  */
 
-package java.sql;
+package j86.java.sql;
 
-import java.util.Iterator;
-import java.util.NoSuchElementException;
-import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
+import j86.java.util.Iterator;
+import j86.java.util.NoSuchElementException;
+import j86.j86.j86.java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
 
 /**
  * <P>An exception that provides information on a database access
@@ -50,7 +50,7 @@ import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
  *   <LI> the causal relationship, if any for this <code>SQLException</code>.
  * </UL>
  */
-public class SQLException extends java.lang.Exception
+public class SQLException extends j86.java.lang.Exception
                           implements Iterable<Throwable> {
 
     /**
@@ -60,7 +60,7 @@ public class SQLException extends java.lang.Exception
      *
      * The <code>cause</code> is not initialized, and may subsequently be
      * initialized by a call to the
-     * {@link Throwable#initCause(java.lang.Throwable)} method.
+     * {@link Throwable#initCause(j86.java.lang.Throwable)} method.
      * <p>
      * @param reason a description of the exception
      * @param SQLState an XOPEN or SQL:2003 code identifying the exception
@@ -86,7 +86,7 @@ public class SQLException extends java.lang.Exception
      *
      * The <code>cause</code> is not initialized, and may subsequently be
      * initialized by a call to the
-     * {@link Throwable#initCause(java.lang.Throwable)} method. The vendor code
+     * {@link Throwable#initCause(j86.java.lang.Throwable)} method. The vendor code
      * is initialized to 0.
      * <p>
      * @param reason a description of the exception
@@ -111,7 +111,7 @@ public class SQLException extends java.lang.Exception
      *
      * The <code>cause</code> is not initialized, and may subsequently be
      * initialized by a call to the
-     * {@link Throwable#initCause(java.lang.Throwable)} method.
+     * {@link Throwable#initCause(j86.java.lang.Throwable)} method.
      * <p>
      * @param reason a description of the exception
      */
@@ -133,7 +133,7 @@ public class SQLException extends java.lang.Exception
      *
      * The <code>cause</code> is not initialized, and may subsequently be
      * initialized by a call to the
-     * {@link Throwable#initCause(java.lang.Throwable)} method.
+     * {@link Throwable#initCause(j86.java.lang.Throwable)} method.
      *
      */
     public SQLException() {

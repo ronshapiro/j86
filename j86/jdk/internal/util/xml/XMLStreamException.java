@@ -23,7 +23,7 @@
  * questions.
  */
 
-package jdk.internal.util.xml;
+package j86.jdk.internal.util.xml;
 
 /**
  * A copy of the StAX XMLStreamException without Location support

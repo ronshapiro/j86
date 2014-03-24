@@ -23,28 +23,28 @@
  * questions.
  */
 
-package javax.crypto;
+package j86.javax.crypto;
 
-import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentMap;
-import java.util.regex.*;
+import j86.java.util.*;
+import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.j86.java.util.concurrent.ConcurrentMap;
+import j86.j86.java.util.regex.*;
 
 
-import java.security.*;
-import java.security.Provider.Service;
-import java.security.spec.AlgorithmParameterSpec;
-import java.security.spec.InvalidParameterSpecException;
-import java.security.cert.Certificate;
-import java.security.cert.X509Certificate;
+import j86.java.security.*;
+import j86.java.security.Provider.Service;
+import j86.j86.java.security.spec.AlgorithmParameterSpec;
+import j86.j86.java.security.spec.InvalidParameterSpecException;
+import j86.j86.java.security.cert.Certificate;
+import j86.j86.java.security.cert.X509Certificate;
 
-import javax.crypto.spec.*;
+import j86.j86.javax.crypto.spec.*;
 
-import java.nio.ByteBuffer;
-import java.nio.ReadOnlyBufferException;
+import j86.java.nio.ByteBuffer;
+import j86.java.nio.ReadOnlyBufferException;
 
-import sun.security.util.Debug;
-import sun.security.jca.*;
+import j86.sun.security.util.Debug;
+import j86.sun.security.jca.*;
 
 /**
  * This class provides the functionality of a cryptographic cipher for
@@ -490,7 +490,7 @@ public class Cipher {
      * @exception NoSuchPaddingException if <code>transformation</code>
      *          contains a padding scheme that is not available.
      *
-     * @see java.security.Provider
+     * @see j86.java.security.Provider
      */
     public static final Cipher getInstance(String transformation)
             throws NoSuchAlgorithmException, NoSuchPaddingException
@@ -573,7 +573,7 @@ public class Cipher {
      * @exception IllegalArgumentException if the <code>provider</code>
      *          is null or empty.
      *
-     * @see java.security.Provider
+     * @see j86.java.security.Provider
      */
     public static final Cipher getInstance(String transformation,
                                            String provider)
@@ -622,7 +622,7 @@ public class Cipher {
      * @exception IllegalArgumentException if the <code>provider</code>
      *          is null.
      *
-     * @see java.security.Provider
+     * @see j86.java.security.Provider
      */
     public static final Cipher getInstance(String transformation,
                                            Provider provider)
@@ -1135,7 +1135,7 @@ public class Cipher {
      *
      * <p>If this cipher (including its underlying feedback or padding scheme)
      * requires any random bytes (e.g., for parameter generation), it will get
-     * them using the {@link java.security.SecureRandom}
+     * them using the {@link j86.java.security.SecureRandom}
      * implementation of the highest-priority
      * installed provider as the source of randomness.
      * (If none of the installed providers supply an implementation of
@@ -1263,7 +1263,7 @@ public class Cipher {
      *
      * <p>If this cipher (including its underlying feedback or padding scheme)
      * requires any random bytes (e.g., for parameter generation), it will get
-     * them using the {@link java.security.SecureRandom}
+     * them using the {@link j86.java.security.SecureRandom}
      * implementation of the highest-priority
      * installed provider as the source of randomness.
      * (If none of the installed providers supply an implementation of
@@ -1400,7 +1400,7 @@ public class Cipher {
      *
      * <p>If this cipher (including its underlying feedback or padding scheme)
      * requires any random bytes (e.g., for parameter generation), it will get
-     * them using the {@link java.security.SecureRandom}
+     * them using the {@link j86.java.security.SecureRandom}
      * implementation of the highest-priority
      * installed provider as the source of randomness.
      * (If none of the installed providers supply an implementation of
@@ -1653,7 +1653,7 @@ public class Cipher {
 
         // Check key usage if the certificate is of
         // type X.509.
-        if (certificate instanceof java.security.cert.X509Certificate) {
+        if (certificate instanceof j86.j86.java.security.cert.X509Certificate) {
             // Check whether the cert has a key usage extension
             // marked as a critical extension.
             X509Certificate cert = (X509Certificate)certificate;

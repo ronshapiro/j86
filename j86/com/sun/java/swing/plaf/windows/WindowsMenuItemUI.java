@@ -23,17 +23,17 @@
  * questions.
  */
 
-package com.sun.java.swing.plaf.windows;
+package j86.j86.com.sun.java.swing.plaf.windows;
 
-import java.awt.*;
-import javax.swing.*;
-import javax.swing.plaf.*;
-import javax.swing.plaf.basic.*;
+import j86.java.awt.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.j86.javax.swing.plaf.basic.*;
 
-import sun.swing.SwingUtilities2;
+import j86.sun.swing.SwingUtilities2;
 
-import com.sun.java.swing.plaf.windows.TMSchema.*;
-import com.sun.java.swing.plaf.windows.XPStyle.*;
+import j86.j86.com.sun.java.swing.plaf.windows.TMSchema.*;
+import j86.j86.com.sun.java.swing.plaf.windows.XPStyle.*;
 
 /**
  * Windows rendition of the component.

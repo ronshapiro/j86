@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.net.ssl;
+package j86.j86.javax.net.ssl;
 
-import java.nio.ByteBuffer;
-import java.nio.ReadOnlyBufferException;
+import j86.java.nio.ByteBuffer;
+import j86.java.nio.ReadOnlyBufferException;
 
 
 /**
@@ -68,7 +68,7 @@ import java.nio.ReadOnlyBufferException;
  * The <code>SSLSocket</code> class provides much of the same security
  * functionality, but all of the inbound and outbound data is
  * automatically transported using the underlying {@link
- * java.net.Socket Socket}, which by design uses a blocking model.
+ * j86.java.net.Socket Socket}, which by design uses a blocking model.
  * While this is appropriate for many applications, this model does not
  * provide the scalability required by large servers.
  * <P>
@@ -79,10 +79,10 @@ import java.nio.ReadOnlyBufferException;
  * the peer.  By separating the SSL/TLS abstraction from the I/O
  * transport mechanism, the <code>SSLEngine</code> can be used for a
  * wide variety of I/O types, such as {@link
- * java.nio.channels.spi.AbstractSelectableChannel#configureBlocking(boolean)
- * non-blocking I/O (polling)}, {@link java.nio.channels.Selector
- * selectable non-blocking I/O}, {@link java.net.Socket Socket} and the
- * traditional Input/OutputStreams, local {@link java.nio.ByteBuffer
+ * j86.j86.j86.java.nio.channels.spi.AbstractSelectableChannel#configureBlocking(boolean)
+ * non-blocking I/O (polling)}, {@link j86.j86.java.nio.channels.Selector
+ * selectable non-blocking I/O}, {@link j86.java.net.Socket Socket} and the
+ * traditional Input/OutputStreams, local {@link j86.java.nio.ByteBuffer
  * ByteBuffers} or byte arrays, <A
  * HREF="http://www.jcp.org/en/jsr/detail?id=203"> future asynchronous
  * I/O models </A>, and so on.
@@ -252,11 +252,11 @@ import java.nio.ReadOnlyBufferException;
  * seemingly blocking.
  * <P>
  * For any operation which may potentially block, the
- * <code>SSLEngine</code> will create a {@link java.lang.Runnable}
+ * <code>SSLEngine</code> will create a {@link j86.java.lang.Runnable}
  * delegated task.  When <code>SSLEngineResult</code> indicates that a
  * delegated task result is needed, the application must call {@link
  * #getDelegatedTask()} to obtain an outstanding delegated task and
- * call its {@link java.lang.Runnable#run() run()} method (possibly using
+ * call its {@link j86.java.lang.Runnable#run() run()} method (possibly using
  * a different thread depending on the compute strategy).  The
  * application should continue obtaining delegated tasks until no more
  * exist, and try the original operation again.
@@ -325,7 +325,7 @@ import java.nio.ReadOnlyBufferException;
  * <P>
  * Applications might choose to process delegated tasks in different
  * threads.  When an <code>SSLEngine</code>
- * is created, the current {@link java.security.AccessControlContext}
+ * is created, the current {@link j86.java.security.AccessControlContext}
  * is saved.  All future delegated tasks will be processed using this
  * context:  that is, all access control decisions will be made using the
  * context captured at engine creation.
@@ -362,7 +362,7 @@ import java.nio.ReadOnlyBufferException;
  * @see SSLSocket
  * @see SSLServerSocket
  * @see SSLSession
- * @see java.net.Socket
+ * @see j86.java.net.Socket
  *
  * @since 1.5
  * @author Brad R. Wetmore
@@ -519,9 +519,9 @@ public abstract class SSLEngine {
      * file formats that, for example, group data into segments
      * consisting of one or more fixed-length headers followed by a
      * variable-length body.  See
-     * {@link java.nio.channels.GatheringByteChannel} for more
+     * {@link j86.j86.java.nio.channels.GatheringByteChannel} for more
      * information on gathering, and {@link
-     * java.nio.channels.GatheringByteChannel#write(ByteBuffer[],
+     * j86.j86.java.nio.channels.GatheringByteChannel#write(ByteBuffer[],
      * int, int)} for more information on the subsequence
      * behavior.
      * <P>
@@ -581,8 +581,8 @@ public abstract class SSLEngine {
      *          subsequence specified is null.
      * @throws  IllegalStateException if the client/server mode
      *          has not yet been set.
-     * @see     java.nio.channels.GatheringByteChannel
-     * @see     java.nio.channels.GatheringByteChannel#write(
+     * @see     j86.j86.java.nio.channels.GatheringByteChannel
+     * @see     j86.j86.java.nio.channels.GatheringByteChannel#write(
      *              ByteBuffer[], int, int)
      */
     public abstract SSLEngineResult wrap(ByteBuffer [] srcs, int offset,
@@ -673,9 +673,9 @@ public abstract class SSLEngine {
      * file formats that, for example, group data into segments
      * consisting of one or more fixed-length headers followed by a
      * variable-length body.  See
-     * {@link java.nio.channels.ScatteringByteChannel} for more
+     * {@link j86.j86.java.nio.channels.ScatteringByteChannel} for more
      * information on scattering, and {@link
-     * java.nio.channels.ScatteringByteChannel#read(ByteBuffer[],
+     * j86.j86.java.nio.channels.ScatteringByteChannel#read(ByteBuffer[],
      * int, int)} for more information on the subsequence
      * behavior.
      * <P>
@@ -740,8 +740,8 @@ public abstract class SSLEngine {
      *          subsequence specified is null.
      * @throws  IllegalStateException if the client/server mode
      *          has not yet been set.
-     * @see     java.nio.channels.ScatteringByteChannel
-     * @see     java.nio.channels.ScatteringByteChannel#read(
+     * @see     j86.j86.java.nio.channels.ScatteringByteChannel
+     * @see     j86.j86.java.nio.channels.ScatteringByteChannel#read(
      *              ByteBuffer[], int, int)
      */
     public abstract SSLEngineResult unwrap(ByteBuffer src,
@@ -755,9 +755,9 @@ public abstract class SSLEngine {
      * <code>SSLEngine</code> operations may require the results of
      * operations that block, or may take an extended period of time to
      * complete.  This method is used to obtain an outstanding {@link
-     * java.lang.Runnable} operation (task).  Each task must be assigned
+     * j86.java.lang.Runnable} operation (task).  Each task must be assigned
      * a thread (possibly the current) to perform the {@link
-     * java.lang.Runnable#run() run} operation.  Once the
+     * j86.java.lang.Runnable#run() run} operation.  Once the
      * <code>run</code> method returns, the <code>Runnable</code> object
      * is no longer needed and may be discarded.
      * <P>

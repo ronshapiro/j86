@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.font;
+package j86.sun.font;
 
-import java.awt.Font;
-import java.util.HashMap;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.Locale;
+import j86.java.awt.Font;
+import j86.java.util.HashMap;
+import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.util.Locale;
 
 public class FontFamily {
 

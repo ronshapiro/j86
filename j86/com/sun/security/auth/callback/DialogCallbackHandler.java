@@ -23,27 +23,27 @@
  * questions.
  */
 
-package com.sun.security.auth.callback;
+package j86.j86.com.sun.security.auth.callback;
 
 /* JAAS imports */
-import javax.security.auth.callback.Callback;
-import javax.security.auth.callback.CallbackHandler;
-import javax.security.auth.callback.ConfirmationCallback;
-import javax.security.auth.callback.NameCallback;
-import javax.security.auth.callback.PasswordCallback;
-import javax.security.auth.callback.TextOutputCallback;
-import javax.security.auth.callback.UnsupportedCallbackException;
+import j86.j86.javax.security.auth.callback.Callback;
+import j86.j86.javax.security.auth.callback.CallbackHandler;
+import j86.j86.javax.security.auth.callback.ConfirmationCallback;
+import j86.j86.javax.security.auth.callback.NameCallback;
+import j86.j86.javax.security.auth.callback.PasswordCallback;
+import j86.j86.javax.security.auth.callback.TextOutputCallback;
+import j86.j86.javax.security.auth.callback.UnsupportedCallbackException;
 
 /* Java imports */
-import java.awt.Component;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import javax.swing.Box;
-import javax.swing.JLabel;
-import javax.swing.JOptionPane;
-import javax.swing.JPasswordField;
-import javax.swing.JTextField;
+import j86.java.awt.Component;
+import j86.java.util.ArrayList;
+import j86.java.util.Iterator;
+import j86.java.util.List;
+import j86.javax.swing.Box;
+import j86.javax.swing.JLabel;
+import j86.javax.swing.JOptionPane;
+import j86.javax.swing.JPasswordField;
+import j86.javax.swing.JTextField;
 
 /**
  * <p>
@@ -51,7 +51,7 @@ import javax.swing.JTextField;
  * authentication questions.
  * This can be used by a JAAS application to instantiate a
  * CallbackHandler
- * @see javax.security.auth.callback
+ * @see j86.j86.javax.security.auth.callback
  * @deprecated This class will be removed in a future release.
  */
 @jdk.Exported(false)

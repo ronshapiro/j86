@@ -22,10 +22,10 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.java.swing.plaf.motif;
+package j86.j86.com.sun.java.swing.plaf.motif;
 
-import java.awt.event.*;
-import javax.swing.MenuSelectionManager;
+import j86.j86.java.awt.event.*;
+import j86.javax.swing.MenuSelectionManager;
 
 /**
  * A default MouseListener for menu elements

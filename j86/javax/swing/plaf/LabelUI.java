@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.swing.plaf;
+package j86.j86.javax.swing.plaf;
 
 /**
  * Pluggable look and feel interface for JLabel.

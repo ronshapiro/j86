@@ -22,21 +22,21 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.management.snmp.util;
+package j86.j86.j86.sun.management.snmp.util;
 
-import com.sun.jmx.snmp.SnmpOid;
-import com.sun.jmx.mbeanserver.Util;
+import j86.com.sun.jmx.snmp.SnmpOid;
+import j86.com.sun.jmx.mbeanserver.Util;
 
-import java.io.Serializable;
+import j86.java.io.Serializable;
 
-import java.util.Comparator;
-import java.util.Arrays;
-import java.util.Map;
-import java.util.TreeMap;
-import java.util.List;
-import java.util.Iterator;
+import j86.java.util.Comparator;
+import j86.java.util.Arrays;
+import j86.java.util.Map;
+import j86.java.util.TreeMap;
+import j86.java.util.List;
+import j86.java.util.Iterator;
 
-import java.lang.ref.WeakReference;
+import j86.j86.java.lang.ref.WeakReference;
 
 
 /**

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.security.spec;
+package j86.j86.java.security.spec;
 
 /**
  * This class represents the ASN.1 encoding of a public key,
@@ -40,8 +40,8 @@ package java.security.spec;
  * @author Jan Luehe
  *
  *
- * @see java.security.Key
- * @see java.security.KeyFactory
+ * @see j86.java.security.Key
+ * @see j86.java.security.KeyFactory
  * @see KeySpec
  * @see EncodedKeySpec
  * @see PKCS8EncodedKeySpec

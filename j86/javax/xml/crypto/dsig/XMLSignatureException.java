@@ -25,10 +25,10 @@
 /*
  * $Id: XMLSignatureException.java,v 1.5 2005/05/10 16:03:48 mullan Exp $
  */
-package javax.xml.crypto.dsig;
+package j86.j86.javax.xml.crypto.dsig;
 
-import java.io.PrintStream;
-import java.io.PrintWriter;
+import j86.java.io.PrintStream;
+import j86.java.io.PrintWriter;
 
 /**
  * Indicates an exceptional condition that occurred during the XML

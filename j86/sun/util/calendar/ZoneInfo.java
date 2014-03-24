@@ -23,25 +23,25 @@
  * questions.
  */
 
-package sun.util.calendar;
+package j86.j86.sun.util.calendar;
 
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.lang.ref.SoftReference;
-import java.security.AccessController;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Date;
-import java.util.List;
-import java.util.Locale;
-import java.util.Map;
-import java.util.Set;
-import java.util.SimpleTimeZone;
-import java.util.TimeZone;
+import j86.java.io.IOException;
+import j86.java.io.ObjectInputStream;
+import j86.j86.java.lang.ref.SoftReference;
+import j86.java.security.AccessController;
+import j86.java.util.ArrayList;
+import j86.java.util.Arrays;
+import j86.java.util.Date;
+import j86.java.util.List;
+import j86.java.util.Locale;
+import j86.java.util.Map;
+import j86.java.util.Set;
+import j86.java.util.SimpleTimeZone;
+import j86.java.util.TimeZone;
 
 /**
  * <code>ZoneInfo</code> is an implementation subclass of {@link
- * java.util.TimeZone TimeZone} that represents GMT offsets and
+ * j86.java.util.TimeZone TimeZone} that represents GMT offsets and
  * daylight saving time transitions of a time zone.
  * <p>
  * The daylight saving time transitions are described in the {@link
@@ -58,12 +58,12 @@ import java.util.TimeZone;
  * {@link #getRawOffset} value. No Local Mean Time is supported. If a
  * specified date is beyond the transition table and this time zone is
  * supposed to observe daylight saving time in 2037, it delegates
- * operations to a {@link java.util.SimpleTimeZone SimpleTimeZone}
+ * operations to a {@link j86.java.util.SimpleTimeZone SimpleTimeZone}
  * object created using the daylight saving time schedule as of 2037.
  * <p>
  * The date items, transitions, GMT offset(s), etc. are read from a database
  * file. See {@link ZoneInfoFile} for details.
- * @see java.util.SimpleTimeZone
+ * @see j86.java.util.SimpleTimeZone
  * @since 1.4
  */
 
@@ -149,10 +149,10 @@ public class ZoneInfo extends TimeZone {
 
     /**
      * SimpleTimeZone parameter values. It has to have either 8 for
-     * {@link java.util.SimpleTimeZone#SimpleTimeZone(int, String,
+     * {@link j86.java.util.SimpleTimeZone#SimpleTimeZone(int, String,
      * int, int , int , int , int , int , int , int , int) the
      * 11-argument SimpleTimeZone constructor} or 10 for {@link
-     * java.util.SimpleTimeZone#SimpleTimeZone(int, String, int, int,
+     * j86.java.util.SimpleTimeZone#SimpleTimeZone(int, String, int, int,
      * int , int , int , int , int , int , int, int, int) the
      * 13-argument SimpleTimeZone constructor} parameters.
      * @serial
@@ -373,9 +373,9 @@ public class ZoneInfo extends TimeZone {
             throw new IllegalArgumentException();
         }
 
-        if (era == java.util.GregorianCalendar.BC) { // BC
+        if (era == j86.java.util.GregorianCalendar.BC) { // BC
             year = 1 - year;
-        } else if (era != java.util.GregorianCalendar.AD) {
+        } else if (era != j86.java.util.GregorianCalendar.AD) {
             throw new IllegalArgumentException();
         }
 
@@ -386,8 +386,8 @@ public class ZoneInfo extends TimeZone {
         }
 
         // bug-for-bug compatible argument checking
-        if (dayOfWeek < java.util.GregorianCalendar.SUNDAY
-            || dayOfWeek > java.util.GregorianCalendar.SATURDAY) {
+        if (dayOfWeek < j86.java.util.GregorianCalendar.SUNDAY
+            || dayOfWeek > j86.java.util.GregorianCalendar.SATURDAY) {
             throw new IllegalArgumentException();
         }
 

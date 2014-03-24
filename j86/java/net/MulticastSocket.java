@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.net;
+package j86.java.net;
 
-import java.io.IOException;
-import java.util.Enumeration;
+import j86.java.io.IOException;
+import j86.java.util.Enumeration;
 
 /**
  * The multicast datagram socket class is useful for sending
@@ -105,7 +105,7 @@ class MulticastSocket extends DatagramSocket {
      * @exception  SecurityException  if a security manager exists and its
      *             {@code checkListen} method doesn't allow the operation.
      * @see SecurityManager#checkListen
-     * @see java.net.DatagramSocket#setReuseAddress(boolean)
+     * @see j86.java.net.DatagramSocket#setReuseAddress(boolean)
      */
     public MulticastSocket() throws IOException {
         this(new InetSocketAddress(0));
@@ -130,7 +130,7 @@ class MulticastSocket extends DatagramSocket {
      * @exception  SecurityException  if a security manager exists and its
      *             {@code checkListen} method doesn't allow the operation.
      * @see SecurityManager#checkListen
-     * @see java.net.DatagramSocket#setReuseAddress(boolean)
+     * @see j86.java.net.DatagramSocket#setReuseAddress(boolean)
      */
     public MulticastSocket(int port) throws IOException {
         this(new InetSocketAddress(port));
@@ -157,7 +157,7 @@ class MulticastSocket extends DatagramSocket {
      * @exception  SecurityException  if a security manager exists and its
      *             {@code checkListen} method doesn't allow the operation.
      * @see SecurityManager#checkListen
-     * @see java.net.DatagramSocket#setReuseAddress(boolean)
+     * @see j86.java.net.DatagramSocket#setReuseAddress(boolean)
      *
      * @since 1.4
      */
@@ -485,7 +485,7 @@ class MulticastSocket extends DatagramSocket {
      * @exception SocketException if there is an error in
      * the underlying protocol, such as a TCP error.
      *
-     * @see #setInterface(java.net.InetAddress)
+     * @see #setInterface(j86.java.net.InetAddress)
      */
     public InetAddress getInterface() throws SocketException {
         if (isClosed()) {
@@ -652,7 +652,7 @@ class MulticastSocket extends DatagramSocket {
      *
      * @see DatagramSocket#send
      * @see DatagramSocket#receive
-     * @see SecurityManager#checkMulticast(java.net.InetAddress, byte)
+     * @see SecurityManager#checkMulticast(j86.java.net.InetAddress, byte)
      * @see SecurityManager#checkConnect
      */
     @Deprecated

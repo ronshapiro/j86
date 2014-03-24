@@ -23,34 +23,34 @@
  * questions.
  */
 
-package com.sun.jmx.remote.security;
+package j86.com.sun.jmx.remote.security;
 
-import com.sun.jmx.mbeanserver.GetPropertyAction;
-import java.io.ObjectInputStream;
-import java.security.AccessController;
-import java.util.Set;
-import javax.management.Attribute;
-import javax.management.AttributeList;
-import javax.management.AttributeNotFoundException;
-import javax.management.InstanceNotFoundException;
-import javax.management.InstanceAlreadyExistsException;
-import javax.management.IntrospectionException;
-import javax.management.InvalidAttributeValueException;
-import javax.management.ListenerNotFoundException;
-import javax.management.MBeanException;
-import javax.management.MBeanInfo;
-import javax.management.MBeanRegistrationException;
-import javax.management.MBeanServer;
-import javax.management.NotCompliantMBeanException;
-import javax.management.NotificationFilter;
-import javax.management.NotificationListener;
-import javax.management.ObjectInstance;
-import javax.management.ObjectName;
-import javax.management.OperationsException;
-import javax.management.QueryExp;
-import javax.management.ReflectionException;
-import javax.management.loading.ClassLoaderRepository;
-import javax.management.remote.MBeanServerForwarder;
+import j86.com.sun.jmx.mbeanserver.GetPropertyAction;
+import j86.java.io.ObjectInputStream;
+import j86.java.security.AccessController;
+import j86.java.util.Set;
+import j86.javax.management.Attribute;
+import j86.javax.management.AttributeList;
+import j86.javax.management.AttributeNotFoundException;
+import j86.javax.management.InstanceNotFoundException;
+import j86.javax.management.InstanceAlreadyExistsException;
+import j86.javax.management.IntrospectionException;
+import j86.javax.management.InvalidAttributeValueException;
+import j86.javax.management.ListenerNotFoundException;
+import j86.javax.management.MBeanException;
+import j86.javax.management.MBeanInfo;
+import j86.javax.management.MBeanRegistrationException;
+import j86.javax.management.MBeanServer;
+import j86.javax.management.NotCompliantMBeanException;
+import j86.javax.management.NotificationFilter;
+import j86.javax.management.NotificationListener;
+import j86.javax.management.ObjectInstance;
+import j86.javax.management.ObjectName;
+import j86.javax.management.OperationsException;
+import j86.javax.management.QueryExp;
+import j86.javax.management.ReflectionException;
+import j86.j86.javax.management.loading.ClassLoaderRepository;
+import j86.j86.javax.management.remote.MBeanServerForwarder;
 
 /**
  * <p>An object of this class implements the MBeanServer interface
@@ -630,7 +630,7 @@ public abstract class MBeanServerAccessController
         }
         // Check if MBean is instance of MLet
         if (!getMBeanServer().isInstanceOf(name,
-                "javax.management.loading.MLet")) {
+                "j86.j86.javax.management.loading.MLet")) {
             return;
         }
         // Throw security exception

@@ -23,10 +23,10 @@
  * questions.
  */
 
-package com.sun.jndi.dns;
+package j86.com.sun.jndi.dns;
 
 
-import javax.naming.*;
+import j86.javax.naming.*;
 
 
 /**

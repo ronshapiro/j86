@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.security.acl;
+package j86.j86.java.security.acl;
 
-import java.util.Enumeration;
-import java.security.Principal;
+import j86.java.util.Enumeration;
+import j86.java.security.Principal;
 
 /**
  * This is the interface used for representing one entry in an Access
@@ -47,7 +47,7 @@ import java.security.Principal;
  * {@link #setNegativePermissions() setNegativePermissions}
  * method is called on it.
  *
- * @see java.security.acl.Acl
+ * @see j86.j86.java.security.acl.Acl
  *
  * @author      Satish Dharmaraj
  */

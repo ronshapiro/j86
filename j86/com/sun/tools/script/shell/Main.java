@@ -23,13 +23,13 @@
  * questions.
  */
 
-package com.sun.tools.script.shell;
+package j86.com.sun.tools.script.shell;
 
-import java.io.*;
-import java.net.*;
-import java.text.*;
-import java.util.*;
-import javax.script.*;
+import j86.java.io.*;
+import j86.java.net.*;
+import j86.java.text.*;
+import j86.java.util.*;
+import j86.javax.script.*;
 
 /**
  * This is the main class for Java script shell.
@@ -433,7 +433,7 @@ public class Main {
         InputStream sysIn = null;
         ClassLoader cl = Thread.currentThread().getContextClassLoader();
         for (String ext : exts) {
-            sysIn = cl.getResourceAsStream("com/sun/tools/script/shell/init." +
+            sysIn = cl.getResourceAsStream("j86.com.sun.tools.script.shell/init." +
                     ext);
             if (sysIn != null) break;
         }
@@ -576,7 +576,7 @@ public class Main {
     private static Map<String, ScriptEngine> engines;
     // error messages resource
     private static ResourceBundle msgRes;
-    private static String BUNDLE_NAME = "com.sun.tools.script.shell.messages";
+    private static String BUNDLE_NAME = "j86.com.sun.tools.script.shell.messages";
     private static String PROGRAM_NAME = "jrunscript";
 
     static {

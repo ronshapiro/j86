@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.tools.java;
+package j86.sun.tools.java;
 
-import java.io.IOException;
-import java.io.DataInputStream;
-import java.io.OutputStream;
-import java.io.DataOutputStream;
-import java.io.ByteArrayInputStream;
-import java.util.Hashtable;
-import java.util.Vector;
-import java.util.Enumeration;
+import j86.java.io.IOException;
+import j86.java.io.DataInputStream;
+import j86.java.io.OutputStream;
+import j86.java.io.DataOutputStream;
+import j86.java.io.ByteArrayInputStream;
+import j86.java.util.Hashtable;
+import j86.java.util.Vector;
+import j86.java.util.Enumeration;
 
 /**
  * WARNING: The contents of this source file are not part of any
@@ -118,14 +118,14 @@ class BinaryClass extends ClassDefinition implements Constants {
         int version = in.readUnsignedShort();        // JVM 4.1 ClassFile.major_version
         if (version < JAVA_MIN_SUPPORTED_VERSION) {
             throw new ClassFormatError(
-                           sun.tools.javac.Main.getText(
+                           j86.j86.sun.tools.javac.Main.getText(
                                "javac.err.version.too.old",
                                String.valueOf(version)));
         } else if ((version > JAVA_MAX_SUPPORTED_VERSION)
                      || (version == JAVA_MAX_SUPPORTED_VERSION
                   && minor_version > JAVA_MAX_SUPPORTED_MINOR_VERSION)) {
             throw new ClassFormatError(
-                           sun.tools.javac.Main.getText(
+                           j86.j86.sun.tools.javac.Main.getText(
                                "javac.err.version.too.recent",
                                version+"."+minor_version));
         }

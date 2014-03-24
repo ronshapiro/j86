@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.smartcardio;
+package j86.javax.smartcardio;
 
 /**
  * Exception for errors that occur during communication with the

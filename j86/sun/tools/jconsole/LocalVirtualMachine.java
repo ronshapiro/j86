@@ -23,27 +23,27 @@
  * questions.
  */
 
-package sun.tools.jconsole;
+package j86.sun.tools.jconsole;
 
-import java.util.*;
-import java.io.IOException;
-import java.io.File;
+import j86.java.util.*;
+import j86.java.io.IOException;
+import j86.java.io.File;
 
 // Sun specific
-import com.sun.tools.attach.VirtualMachine;
-import com.sun.tools.attach.VirtualMachineDescriptor;
-import com.sun.tools.attach.AgentInitializationException;
-import com.sun.tools.attach.AgentLoadException;
-import com.sun.tools.attach.AttachNotSupportedException;
+import com.j86.sun.tools.attach.VirtualMachine;
+import com.j86.sun.tools.attach.VirtualMachineDescriptor;
+import com.j86.sun.tools.attach.AgentInitializationException;
+import com.j86.sun.tools.attach.AgentLoadException;
+import com.j86.sun.tools.attach.AttachNotSupportedException;
 
 // Sun private
-import sun.management.ConnectorAddressLink;
-import sun.jvmstat.monitor.HostIdentifier;
-import sun.jvmstat.monitor.MonitoredHost;
-import sun.jvmstat.monitor.MonitoredVm;
-import sun.jvmstat.monitor.MonitoredVmUtil;
-import sun.jvmstat.monitor.MonitorException;
-import sun.jvmstat.monitor.VmIdentifier;
+import j86.sun.management.ConnectorAddressLink;
+import j86.sun.jvmstat.monitor.HostIdentifier;
+import j86.sun.jvmstat.monitor.MonitoredHost;
+import j86.sun.jvmstat.monitor.MonitoredVm;
+import j86.sun.jvmstat.monitor.MonitoredVmUtil;
+import j86.sun.jvmstat.monitor.MonitorException;
+import j86.sun.jvmstat.monitor.VmIdentifier;
 
 public class LocalVirtualMachine {
     private String address;
@@ -134,7 +134,7 @@ public class LocalVirtualMachine {
         try {
             host = MonitoredHost.getMonitoredHost(new HostIdentifier((String)null));
             vms = host.activeVms();
-        } catch (java.net.URISyntaxException | MonitorException x) {
+        } catch (j86.java.net.URISyntaxException | MonitorException x) {
             throw new InternalError(x.getMessage(), x);
         }
         for (Object vmid: vms) {
@@ -160,7 +160,7 @@ public class LocalVirtualMachine {
     }
 
     private static final String LOCAL_CONNECTOR_ADDRESS_PROP =
-        "com.sun.management.jmxremote.localConnectorAddress";
+        "com.j86.j86.sun.management.jmxremote.localConnectorAddress";
 
     private static void getAttachableVMs(Map<Integer, LocalVirtualMachine> map) {
         List<VirtualMachineDescriptor> vms = VirtualMachine.list();
@@ -257,7 +257,7 @@ public class LocalVirtualMachine {
 
         agent = f.getCanonicalPath();
         try {
-            vm.loadAgent(agent, "com.sun.management.jmxremote");
+            vm.loadAgent(agent, "com.j86.j86.sun.management.jmxremote");
         } catch (AgentLoadException x) {
             IOException ioe = new IOException(x.getMessage());
             ioe.initCause(x);

@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.reflect.generics.reflectiveObjects;
+package j86.j86.sun.reflect.generics.reflectiveObjects;
 
-import java.lang.reflect.GenericArrayType;
-import java.lang.reflect.Type;
-import java.util.Objects;
+import j86.j86.j86.java.lang.reflect.GenericArrayType;
+import j86.j86.j86.java.lang.reflect.Type;
+import j86.java.util.Objects;
 
 /**
  * Implementation of GenericArrayType interface for core reflection.

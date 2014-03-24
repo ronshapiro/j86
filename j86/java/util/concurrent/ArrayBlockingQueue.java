@@ -33,16 +33,16 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package java.util.concurrent;
-import java.util.concurrent.locks.Condition;
-import java.util.concurrent.locks.ReentrantLock;
-import java.util.AbstractQueue;
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.NoSuchElementException;
-import java.lang.ref.WeakReference;
-import java.util.Spliterators;
-import java.util.Spliterator;
+package j86.j86.java.util.concurrent;
+import j86.j86.j86.java.util.concurrent.locks.Condition;
+import j86.j86.j86.java.util.concurrent.locks.ReentrantLock;
+import j86.java.util.AbstractQueue;
+import j86.java.util.Collection;
+import j86.java.util.Iterator;
+import j86.java.util.NoSuchElementException;
+import j86.j86.java.lang.ref.WeakReference;
+import j86.java.util.Spliterators;
+import j86.java.util.Spliterator;
 
 /**
  * A bounded {@linkplain BlockingQueue blocking queue} backed by an
@@ -80,7 +80,7 @@ import java.util.Spliterator;
  * @param <E> the type of elements held in this collection
  */
 public class ArrayBlockingQueue<E> extends AbstractQueue<E>
-        implements BlockingQueue<E>, java.io.Serializable {
+        implements BlockingQueue<E>, j86.java.io.Serializable {
 
     /**
      * Serialization ID. This class relies on default serialization
@@ -621,7 +621,7 @@ public class ArrayBlockingQueue<E> extends AbstractQueue<E>
             final int count = this.count;
             final int len = a.length;
             if (len < count)
-                a = (T[])java.lang.reflect.Array.newInstance(
+                a = (T[])j86.j86.j86.java.lang.reflect.Array.newInstance(
                     a.getClass().getComponentType(), count);
             int n = items.length - takeIndex;
             if (count <= n)

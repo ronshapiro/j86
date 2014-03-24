@@ -23,14 +23,14 @@
  * questions.
  */
 
-package com.sun.rowset.providers;
+package j86.j86.com.sun.rowset.providers;
 
-import com.sun.rowset.JdbcRowSetResourceBundle;
-import javax.sql.*;
-import java.io.*;
+import j86.com.sun.rowset.JdbcRowSetResourceBundle;
+import j86.javax.sql.*;
+import j86.java.io.*;
 
-import javax.sql.rowset.spi.*;
-import com.sun.rowset.internal.*;
+import j86.j86.j86.javax.sql.rowset.spi.*;
+import j86.j86.com.sun.rowset.internal.*;
 
 /**
  * The reference implementation of a JDBC Rowset synchronization provider
@@ -40,10 +40,10 @@ import com.sun.rowset.internal.*;
  * <h3>1.0 Backgroud</h3>
  * This synchronization provider is registered with the
  * <code>SyncFactory</code> by default as the
- * <code>com.sun.rowset.providers.RIOptimisticProvider</code>.
+ * <code>j86.j86.com.sun.rowset.providers.RIOptimisticProvider</code>.
  * As an extension of the <code>SyncProvider</code> abstract
  * class, it provides the reader and writer classes required by disconnected
- * rowsets as <code>javax.sql.RowSetReader</code> and <code>javax.sql.RowSetWriter</code>
+ * rowsets as <code>j86.javax.sql.RowSetReader</code> and <code>javax.sql.RowSetWriter</code>
  * interface implementations. As a reference implementation,
  * <code>RIOptimisticProvider</code> provides a
  * fully functional implementation offering a medium grade classification of
@@ -64,13 +64,13 @@ import com.sun.rowset.internal.*;
     defined in the <code>CachedRowSet</code> interface
  * <pre>
  *     CachedRowset crs = new FooCachedRowSetImpl();
- *     crs.setSyncProvider("com.sun.rowset.providers.RIOptimisticProvider");
+ *     crs.setSyncProvider("j86.j86.com.sun.rowset.providers.RIOptimisticProvider");
  * </pre>
  *  <LI>By specifying it in the constructor of the <code>RowSet</code>
  *      implementation
  * <pre>
  *     CachedRowset crs = new FooCachedRowSetImpl(
- *                         "com.sun.rowset.providers.RIOptimisticProvider");
+ *                         "j86.j86.com.sun.rowset.providers.RIOptimisticProvider");
  * </pre>
  * </OL>
  * Note that because the <code>RIOptimisticProvider</code> implementation is
@@ -78,13 +78,13 @@ import com.sun.rowset.internal.*;
  * specified to the constructor.
  * <P>
  * See the standard <code>RowSet</code> reference implementations in the
- * <code>com.sun.rowset</code> package for more details.
+ * <code>j86.com.sun.rowset</code> package for more details.
  *
  * @author  Jonathan Bruce
- * @see javax.sql.rowset.spi.SyncProvider
- * @see javax.sql.rowset.spi.SyncProviderException
- * @see javax.sql.rowset.spi.SyncFactory
- * @see javax.sql.rowset.spi.SyncFactoryException
+ * @see j86.j86.j86.javax.sql.rowset.spi.SyncProvider
+ * @see j86.j86.j86.javax.sql.rowset.spi.SyncProviderException
+ * @see j86.j86.j86.javax.sql.rowset.spi.SyncFactory
+ * @see j86.j86.j86.javax.sql.rowset.spi.SyncFactoryException
  *
  */
 public final class RIOptimisticProvider extends SyncProvider implements Serializable {
@@ -95,7 +95,7 @@ public final class RIOptimisticProvider extends SyncProvider implements Serializ
     /**
      * The unique provider identifier.
      */
-    private String providerID = "com.sun.rowset.providers.RIOptimisticProvider";
+    private String providerID = "j86.j86.com.sun.rowset.providers.RIOptimisticProvider";
 
     /**
      * The vendor name of this SyncProvider implementation
@@ -132,7 +132,7 @@ public final class RIOptimisticProvider extends SyncProvider implements Serializ
     }
 
     /**
-     * Returns the <code>'javax.sql.rowset.providers.RIOptimisticProvider'</code>
+     * Returns the <code>'j86.j86.javax.sql.rowset.providers.RIOptimisticProvider'</code>
      * provider identification string.
      *
      * @return String Provider ID of this persistence provider
@@ -142,26 +142,26 @@ public final class RIOptimisticProvider extends SyncProvider implements Serializ
     }
 
     /**
-     * Returns the <code>javax.sql.RowSetWriter</code> object for this
+     * Returns the <code>j86.javax.sql.RowSetWriter</code> object for this
      * <code>RIOptimisticProvider</code> object.  This is the writer that will
      * write changes made to the <code>Rowset</code> object back to the data source.
      *
-     * @return the <code>javax.sql.RowSetWriter</code> object for this
+     * @return the <code>j86.javax.sql.RowSetWriter</code> object for this
      *     <code>RIOptimisticProvider</code> object
      */
     public RowSetWriter getRowSetWriter() {
         try {
             writer.setReader(reader);
-        } catch (java.sql.SQLException e) {}
+        } catch (j86.java.sql.SQLException e) {}
         return writer;
     }
 
     /**
-     * Returns the <code>javax.sql.RowSetReader</code> object for this
+     * Returns the <code>j86.javax.sql.RowSetReader</code> object for this
      * <code>RIOptimisticProvider</code> object.  This is the reader that will
      * populate a <code>RowSet</code> object using this <code>RIOptimisticProvider</code>.
      *
-     * @return the <code>javax.sql.RowSetReader</code> object for this
+     * @return the <code>j86.javax.sql.RowSetReader</code> object for this
      *     <code>RIOptimisticProvider</code> object
      */
     public RowSetReader getRowSetReader() {

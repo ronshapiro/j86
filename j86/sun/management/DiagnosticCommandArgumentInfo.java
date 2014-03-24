@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.management;
+package j86.sun.management;
 
 /**
  * Diagnostic Command Argument information. It contains the description

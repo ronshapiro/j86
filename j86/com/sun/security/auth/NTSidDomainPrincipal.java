@@ -23,7 +23,7 @@
  * questions.
  */
 
-package com.sun.security.auth;
+package j86.com.sun.security.auth;
 
 /**
  * <p> This class extends <code>NTSid</code>
@@ -40,8 +40,8 @@ package com.sun.security.auth;
  * on how to achieve this.  Authorization decisions can then be based upon
  * the Principals associated with a <code>Subject</code>.
  *
- * @see java.security.Principal
- * @see javax.security.auth.Subject
+ * @see j86.java.security.Principal
+ * @see j86.javax.security.auth.Subject
  */
 @jdk.Exported
 public class NTSidDomainPrincipal extends NTSid {
@@ -72,10 +72,10 @@ public class NTSidDomainPrincipal extends NTSid {
      *          <code>NTSidDomainPrincipal</code>.
      */
     public String toString() {
-        java.text.MessageFormat form = new java.text.MessageFormat
-                (sun.security.util.ResourcesMgr.getString
+        j86.java.text.MessageFormat form = new java.text.MessageFormat
+                (j86.sun.security.util.ResourcesMgr.getString
                         ("NTSidDomainPrincipal.name",
-                        "sun.security.util.AuthResources"));
+                        "j86.sun.security.util.AuthResources"));
         Object[] source = {getName()};
         return form.format(source);
     }

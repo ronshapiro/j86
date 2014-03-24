@@ -23,11 +23,11 @@
  * questions.
  */
 
-package javax.naming.spi;
+package j86.j86.javax.naming.spi;
 
-import java.util.Hashtable;
-import javax.naming.*;
-import javax.naming.directory.Attributes;
+import j86.java.util.Hashtable;
+import j86.javax.naming.*;
+import j86.j86.javax.naming.directory.Attributes;
 
 /**
   * This interface represents a factory for creating an object given

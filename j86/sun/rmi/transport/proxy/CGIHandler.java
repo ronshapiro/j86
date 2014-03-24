@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.rmi.transport.proxy;
+package j86.j86.sun.rmi.transport.proxy;
 
-import java.io.*;
-import java.net.*;
-import java.util.Hashtable;
+import j86.java.io.*;
+import j86.java.net.*;
+import j86.java.util.Hashtable;
 
 /**
  * CGIClientException is thrown when an error is detected
@@ -99,8 +99,8 @@ public final class CGIHandler {
     static int ServerPort;
 
     static {
-        java.security.AccessController.doPrivileged(
-            new java.security.PrivilegedAction<Void>() {
+        j86.java.security.AccessController.doPrivileged(
+            new j86.java.security.PrivilegedAction<Void>() {
             public Void run() {
                 ContentLength =
                     Integer.getInteger("CONTENT_LENGTH", 0).intValue();
@@ -412,7 +412,7 @@ final class CGITryHostnameCommand implements CGICommandHandler {
 
             System.out.println(" = " + localHostName);
         } catch (UnknownHostException e) {
-            System.out.println(" threw java.net.UnknownHostException");
+            System.out.println(" threw j86.java.net.UnknownHostException");
         }
 
         System.out.println("<H2>Server host information obtained through CGI interface from HTTP server:</H2>");

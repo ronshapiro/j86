@@ -23,14 +23,14 @@
  * questions.
  */
 
-package com.sun.imageio.spi;
+package j86.com.sun.imageio.spi;
 
-import java.io.File;
-import java.io.RandomAccessFile;
-import java.util.Locale;
-import javax.imageio.spi.ImageOutputStreamSpi;
-import javax.imageio.stream.ImageOutputStream;
-import javax.imageio.stream.FileImageOutputStream;
+import j86.java.io.File;
+import j86.java.io.RandomAccessFile;
+import j86.java.util.Locale;
+import j86.j86.javax.imageio.spi.ImageOutputStreamSpi;
+import j86.j86.javax.imageio.stream.ImageOutputStream;
+import j86.j86.javax.imageio.stream.FileImageOutputStream;
 
 public class RAFImageOutputStreamSpi extends ImageOutputStreamSpi {
 

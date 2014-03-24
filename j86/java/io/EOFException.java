@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.io;
+package j86.java.io;
 
 /**
  * Signals that an end of file or end of stream has been reached
@@ -34,8 +34,8 @@ package java.io;
  * end of stream rather than throwing an exception.
  *
  * @author  Frank Yellin
- * @see     java.io.DataInputStream
- * @see     java.io.IOException
+ * @see     j86.java.io.DataInputStream
+ * @see     j86.java.io.IOException
  * @since   JDK1.0
  */
 public
@@ -53,8 +53,8 @@ class EOFException extends IOException {
     /**
      * Constructs an <code>EOFException</code> with the specified detail
      * message. The string <code>s</code> may later be retrieved by the
-     * <code>{@link java.lang.Throwable#getMessage}</code> method of class
-     * <code>java.lang.Throwable</code>.
+     * <code>{@link j86.java.lang.Throwable#getMessage}</code> method of class
+     * <code>j86.java.lang.Throwable</code>.
      *
      * @param   s   the detail message.
      */

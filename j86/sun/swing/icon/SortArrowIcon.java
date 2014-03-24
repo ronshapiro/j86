@@ -22,15 +22,15 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.swing.icon;
+package j86.j86.sun.swing.icon;
 
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.Graphics;
-import java.io.Serializable;
-import javax.swing.Icon;
-import javax.swing.UIManager;
-import javax.swing.plaf.UIResource;
+import j86.java.awt.Color;
+import j86.java.awt.Component;
+import j86.java.awt.Graphics;
+import j86.java.io.Serializable;
+import j86.javax.swing.Icon;
+import j86.javax.swing.UIManager;
+import j86.j86.javax.swing.plaf.UIResource;
 
 /**
  * Sorting icon.

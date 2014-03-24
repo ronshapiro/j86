@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.reflect;
+package j86.sun.reflect;
 
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import sun.misc.Unsafe;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.sun.misc.Unsafe;
 
 /** Utility class which assists in calling Unsafe.defineClass() by
     creating a new class loader which delegates to the one needed in

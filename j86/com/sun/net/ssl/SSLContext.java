@@ -24,17 +24,17 @@
  */
 
 /*
- * NOTE:  this file was copied from javax.net.ssl.SSLContext
+ * NOTE:  this file was copied from j86.j86.javax.net.ssl.SSLContext
  */
 
-package com.sun.net.ssl;
+package com.j86.sun.net.ssl;
 
-import java.security.*;
-import java.util.*;
-import javax.net.ssl.*;
+import j86.java.security.*;
+import j86.java.util.*;
+import j86.j86.javax.net.ssl.*;
 
-import sun.security.ssl.SSLSocketFactoryImpl;
-import sun.security.ssl.SSLServerSocketFactoryImpl;
+import j86.sun.security.ssl.SSLSocketFactoryImpl;
+import j86.sun.security.ssl.SSLServerSocketFactoryImpl;
 
 /**
  * Instances of this class represent a secure socket protocol
@@ -43,7 +43,7 @@ import sun.security.ssl.SSLServerSocketFactoryImpl;
  * key and trust managers and source of secure random bytes.
  *
  * @deprecated As of JDK 1.4, this implementation-specific class was
- *      replaced by {@link javax.net.ssl.SSLContext}.
+ *      replaced by {@link j86.j86.javax.net.ssl.SSLContext}.
  */
 @Deprecated
 public class SSLContext {

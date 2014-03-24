@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.invoke.util;
+package j86.j86.sun.invoke.util;
 
-import java.lang.invoke.MethodType;
-import sun.invoke.empty.Empty;
+import j86.j86.java.lang.invoke.MethodType;
+import j86.j86.sun.invoke.empty.Empty;
 
 /**
  * This class centralizes information about the JVM verifier
@@ -79,14 +79,14 @@ public class VerifyType {
     }
 
     /**
-     * Is the given type java.lang.Null or an equivalent null-only type?
+     * Is the given type j86.java.lang.Null or an equivalent null-only type?
      */
     public static boolean isNullType(Class<?> type) {
         if (type == null)  return false;
         return type == NULL_CLASS
             // This one may also be used as a null type.
             // TO DO: Decide if we really want to legitimize it here.
-            // Probably we do, unless java.lang.Null really makes it into Java 7
+            // Probably we do, unless j86.java.lang.Null really makes it into Java 7
             //|| type == Void.class
             // Locally known null-only class:
             || type == Empty.class
@@ -96,7 +96,7 @@ public class VerifyType {
     static {
         Class<?> nullClass = null;
         try {
-            nullClass = Class.forName("java.lang.Null");
+            nullClass = Class.forName("j86.java.lang.Null");
         } catch (ClassNotFoundException ex) {
             // OK, we'll cope
         }

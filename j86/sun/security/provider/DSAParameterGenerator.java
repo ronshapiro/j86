@@ -23,21 +23,21 @@
  * questions.
  */
 
-package sun.security.provider;
+package j86.sun.security.provider;
 
-import java.math.BigInteger;
-import java.security.AlgorithmParameterGeneratorSpi;
-import java.security.AlgorithmParameters;
-import java.security.InvalidAlgorithmParameterException;
-import java.security.NoSuchAlgorithmException;
-import java.security.NoSuchProviderException;
-import java.security.InvalidParameterException;
-import java.security.MessageDigest;
-import java.security.SecureRandom;
-import java.security.spec.AlgorithmParameterSpec;
-import java.security.spec.InvalidParameterSpecException;
-import java.security.spec.DSAParameterSpec;
-import java.security.spec.DSAGenParameterSpec;
+import j86.java.math.BigInteger;
+import j86.java.security.AlgorithmParameterGeneratorSpi;
+import j86.java.security.AlgorithmParameters;
+import j86.java.security.InvalidAlgorithmParameterException;
+import j86.java.security.NoSuchAlgorithmException;
+import j86.java.security.NoSuchProviderException;
+import j86.java.security.InvalidParameterException;
+import j86.java.security.MessageDigest;
+import j86.java.security.SecureRandom;
+import j86.j86.java.security.spec.AlgorithmParameterSpec;
+import j86.j86.java.security.spec.InvalidParameterSpecException;
+import j86.j86.java.security.spec.DSAParameterSpec;
+import j86.j86.java.security.spec.DSAGenParameterSpec;
 
 /**
  * This class generates parameters for the DSA algorithm. It uses a default
@@ -47,8 +47,8 @@ import java.security.spec.DSAGenParameterSpec;
  * @author Jan Luehe
  *
  *
- * @see java.security.AlgorithmParameters
- * @see java.security.spec.AlgorithmParameterSpec
+ * @see j86.java.security.AlgorithmParameters
+ * @see j86.j86.java.security.spec.AlgorithmParameterSpec
  * @see DSAParameters
  *
  * @since 1.2

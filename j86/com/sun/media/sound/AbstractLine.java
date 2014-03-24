@@ -23,18 +23,18 @@
  * questions.
  */
 
-package com.sun.media.sound;
+package j86.com.sun.media.sound;
 
-import java.util.Map;
-import java.util.Vector;
-import java.util.WeakHashMap;
+import j86.java.util.Map;
+import j86.java.util.Vector;
+import j86.java.util.WeakHashMap;
 
-import javax.sound.sampled.AudioSystem;
-import javax.sound.sampled.Control;
-import javax.sound.sampled.Line;
-import javax.sound.sampled.LineEvent;
-import javax.sound.sampled.LineListener;
-import javax.sound.sampled.LineUnavailableException;
+import j86.javax.sound.sampled.AudioSystem;
+import j86.javax.sound.sampled.Control;
+import j86.javax.sound.sampled.Line;
+import j86.javax.sound.sampled.LineEvent;
+import j86.javax.sound.sampled.LineListener;
+import j86.javax.sound.sampled.LineUnavailableException;
 
 
 /**

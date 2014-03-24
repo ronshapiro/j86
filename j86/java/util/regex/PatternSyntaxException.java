@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.util.regex;
+package j86.j86.java.util.regex;
 
-import sun.security.action.GetPropertyAction;
+import j86.sun.security.action.GetPropertyAction;
 
 
 /**
@@ -94,7 +94,7 @@ public class PatternSyntaxException
     }
 
     private static final String nl =
-        java.security.AccessController
+        j86.java.security.AccessController
             .doPrivileged(new GetPropertyAction("line.separator"));
 
     /**

@@ -23,17 +23,17 @@
  * questions.
  */
 
-package com.sun.media.sound;
+package j86.com.sun.media.sound;
 
-import java.util.Vector;
+import j86.java.util.Vector;
 
-import javax.sound.sampled.Control;
-import javax.sound.sampled.Line;
-import javax.sound.sampled.LineUnavailableException;
-import javax.sound.sampled.Port;
-import javax.sound.sampled.BooleanControl;
-import javax.sound.sampled.CompoundControl;
-import javax.sound.sampled.FloatControl;
+import j86.javax.sound.sampled.Control;
+import j86.javax.sound.sampled.Line;
+import j86.javax.sound.sampled.LineUnavailableException;
+import j86.javax.sound.sampled.Port;
+import j86.javax.sound.sampled.BooleanControl;
+import j86.javax.sound.sampled.CompoundControl;
+import j86.javax.sound.sampled.FloatControl;
 
 
 /**

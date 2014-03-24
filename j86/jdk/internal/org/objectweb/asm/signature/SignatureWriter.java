@@ -56,9 +56,9 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-package jdk.internal.org.objectweb.asm.signature;
+package j86.j86.jdk.internal.org.objectweb.asm.signature;
 
-import jdk.internal.org.objectweb.asm.Opcodes;
+import j86.jdk.internal.org.objectweb.asm.Opcodes;
 
 /**
  * A signature visitor that generates signatures in string format.

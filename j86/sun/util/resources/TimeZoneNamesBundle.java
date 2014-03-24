@@ -38,13 +38,13 @@
  *
  */
 
-package sun.util.resources;
+package j86.j86.sun.util.resources;
 
-import java.util.Map;
-import java.util.LinkedHashMap;
-import java.util.LinkedHashSet;
-import java.util.MissingResourceException;
-import java.util.Set;
+import j86.java.util.Map;
+import j86.java.util.LinkedHashMap;
+import j86.java.util.LinkedHashSet;
+import j86.java.util.MissingResourceException;
+import j86.java.util.Set;
 
 /**
  * Subclass of <code>ResourceBundle</code> with special

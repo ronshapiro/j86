@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.beans.decoder;
+package j86.j86.com.sun.beans.decoder;
 
 /**
  * This class is intended to handle &lt;int&gt; element.
@@ -33,7 +33,7 @@ package com.sun.beans.decoder;
  * For example:<pre>
  * &lt;int&gt;-1&lt;/int&gt;</pre>
  * is shortcut to<pre>
- * &lt;method name="decode" class="java.lang.Integer"&gt;
+ * &lt;method name="decode" class="j86.java.lang.Integer"&gt;
  *     &lt;string&gt;-1&lt;/string&gt;
  * &lt;/method&gt;</pre>
  * which is equivalent to {@code Integer.decode("-1")} in Java code.

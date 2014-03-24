@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.swing.plaf;
+package j86.j86.javax.swing.plaf;
 
-import javax.swing.JComboBox;
+import j86.javax.swing.JComboBox;
 
 /**
  * Pluggable look and feel interface for JComboBox.

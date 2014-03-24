@@ -23,12 +23,12 @@
  * questions.
  */
 
-package com.sun.jndi.ldap;
+package j86.com.sun.jndi.ldap;
 
-import java.io.IOException;
-import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.LinkedBlockingQueue;
-import javax.naming.CommunicationException;
+import j86.java.io.IOException;
+import j86.j86.java.util.concurrent.BlockingQueue;
+import j86.j86.java.util.concurrent.LinkedBlockingQueue;
+import j86.javax.naming.CommunicationException;
 
 final class LdapRequest {
 

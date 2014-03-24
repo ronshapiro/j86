@@ -23,25 +23,25 @@
  * questions.
  */
 
-package sun.rmi.rmic.newrmic.jrmp;
+package j86.j86.j86.sun.rmi.rmic.newrmic.jrmp;
 
 import com.sun.javadoc.ClassDoc;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.OutputStreamWriter;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
-import sun.rmi.rmic.newrmic.BatchEnvironment;
-import sun.rmi.rmic.newrmic.Generator;
-import sun.rmi.rmic.newrmic.IndentingWriter;
-import sun.rmi.rmic.newrmic.Main;
-import sun.rmi.rmic.newrmic.Resources;
+import j86.java.io.File;
+import j86.java.io.FileOutputStream;
+import j86.java.io.IOException;
+import j86.java.io.OutputStreamWriter;
+import j86.java.util.Collections;
+import j86.java.util.HashMap;
+import j86.java.util.HashSet;
+import j86.java.util.Map;
+import j86.java.util.Set;
+import j86.j86.sun.rmi.rmic.newrmic.BatchEnvironment;
+import j86.j86.sun.rmi.rmic.newrmic.Generator;
+import j86.j86.sun.rmi.rmic.newrmic.IndentingWriter;
+import j86.j86.sun.rmi.rmic.newrmic.Main;
+import j86.j86.sun.rmi.rmic.newrmic.Resources;
 
-import static sun.rmi.rmic.newrmic.jrmp.Constants.*;
+import static j86.j86.j86.sun.rmi.rmic.newrmic.jrmp.Constants.*;
 
 /**
  * JRMP rmic back end; generates source code for JRMP stub and
@@ -66,10 +66,10 @@ public class JrmpGenerator implements Generator {
     private static final Set<String> bootstrapClassNames =
         new HashSet<String>();
     static {
-        bootstrapClassNames.add("java.lang.Exception");
-        bootstrapClassNames.add("java.rmi.Remote");
-        bootstrapClassNames.add("java.rmi.RemoteException");
-        bootstrapClassNames.add("java.lang.RuntimeException");
+        bootstrapClassNames.add("j86.java.lang.Exception");
+        bootstrapClassNames.add("j86.java.rmi.Remote");
+        bootstrapClassNames.add("j86.java.rmi.RemoteException");
+        bootstrapClassNames.add("j86.java.lang.RuntimeException");
     };
 
     /** version of the JRMP stub protocol to generate code for */

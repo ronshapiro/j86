@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.security.provider;
+package j86.sun.security.provider;
 
-import java.io.IOException;
-import java.security.MessageDigest;
-import java.security.SecureRandomSpi;
-import java.security.NoSuchAlgorithmException;
+import j86.java.io.IOException;
+import j86.java.security.MessageDigest;
+import j86.java.security.SecureRandomSpi;
+import j86.java.security.NoSuchAlgorithmException;
 
 /**
  * <p>This class provides a crytpographically strong pseudo-random number
@@ -52,7 +52,7 @@ import java.security.NoSuchAlgorithmException;
  */
 
 public final class SecureRandom extends SecureRandomSpi
-implements java.io.Serializable {
+implements j86.java.io.Serializable {
 
     private static final long serialVersionUID = 3581829991155417889L;
 
@@ -259,7 +259,7 @@ implements java.io.Serializable {
      * If you do not want this behaviour, you should re-seed the restored
      * random object, using engineSetSeed().
      */
-    private void readObject(java.io.ObjectInputStream s)
+    private void readObject(j86.java.io.ObjectInputStream s)
         throws IOException, ClassNotFoundException {
 
         s.defaultReadObject ();

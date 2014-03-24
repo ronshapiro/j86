@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text;
+package j86.j86.javax.swing.text;
 
-import java.io.*;
-import javax.swing.Action;
-import javax.swing.JEditorPane;
+import j86.java.io.*;
+import j86.javax.swing.Action;
+import j86.javax.swing.JEditorPane;
 
 /**
  * Establishes the set of things needed by a text component

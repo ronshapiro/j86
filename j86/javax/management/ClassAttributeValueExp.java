@@ -23,11 +23,11 @@
  * questions.
  */
 
-package javax.management;
+package j86.javax.management;
 
-import java.security.AccessController;
+import j86.java.security.AccessController;
 
-import com.sun.jmx.mbeanserver.GetPropertyAction;
+import j86.com.sun.jmx.mbeanserver.GetPropertyAction;
 
 /**
  * This class represents the name of the Java implementation class of

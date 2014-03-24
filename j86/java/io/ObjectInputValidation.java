@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.io;
+package j86.java.io;
 
 /**
  * Callback interface to allow validation of objects within a graph.
@@ -32,7 +32,7 @@ package java.io;
  *
  * @author  unascribed
  * @see     ObjectInputStream
- * @see     ObjectInputStream#registerValidation(java.io.ObjectInputValidation, int)
+ * @see     ObjectInputStream#registerValidation(j86.java.io.ObjectInputValidation, int)
  * @since   JDK1.1
  */
 public interface ObjectInputValidation {

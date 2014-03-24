@@ -23,24 +23,24 @@
  * questions.
  */
 
-package sun.security.provider.certpath;
+package j86.j86.sun.security.provider.certpath;
 
-import java.io.IOException;
-import java.security.AccessController;
-import java.security.GeneralSecurityException;
-import java.security.cert.*;
-import java.util.*;
+import j86.java.io.IOException;
+import j86.java.security.AccessController;
+import j86.java.security.GeneralSecurityException;
+import j86.j86.java.security.cert.*;
+import j86.java.util.*;
 
-import sun.security.action.GetBooleanAction;
-import sun.security.provider.certpath.PKIX.BuilderParams;
-import sun.security.util.Debug;
-import sun.security.x509.GeneralNames;
-import sun.security.x509.GeneralNameInterface;
-import sun.security.x509.GeneralSubtrees;
-import sun.security.x509.NameConstraintsExtension;
-import sun.security.x509.SubjectAlternativeNameExtension;
-import sun.security.x509.X500Name;
-import sun.security.x509.X509CertImpl;
+import j86.sun.security.action.GetBooleanAction;
+import j86.j86.sun.security.provider.certpath.PKIX.BuilderParams;
+import j86.sun.security.util.Debug;
+import j86.sun.security.x509.GeneralNames;
+import j86.sun.security.x509.GeneralNameInterface;
+import j86.sun.security.x509.GeneralSubtrees;
+import j86.sun.security.x509.NameConstraintsExtension;
+import j86.sun.security.x509.SubjectAlternativeNameExtension;
+import j86.sun.security.x509.X500Name;
+import j86.sun.security.x509.X509CertImpl;
 
 /**
  * Abstract class representing a builder, which is able to retrieve

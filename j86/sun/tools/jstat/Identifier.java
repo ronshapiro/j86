@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.tools.jstat;
+package j86.sun.tools.jstat;
 
 /**
  * An Expression subclass that describes the variable operands of an

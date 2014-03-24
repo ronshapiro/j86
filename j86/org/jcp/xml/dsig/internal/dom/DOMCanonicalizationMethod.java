@@ -26,17 +26,17 @@
 /*
  * $Id: DOMCanonicalizationMethod.java 1333415 2012-05-03 12:03:51Z coheigea $
  */
-package org.jcp.xml.dsig.internal.dom;
+package j86.j86.org.jcp.xml.dsig.internal.dom;
 
-import java.io.OutputStream;
-import java.security.InvalidAlgorithmParameterException;
-import java.security.Provider;
-import java.security.spec.AlgorithmParameterSpec;
+import j86.java.io.OutputStream;
+import j86.java.security.InvalidAlgorithmParameterException;
+import j86.java.security.Provider;
+import j86.j86.java.security.spec.AlgorithmParameterSpec;
 
 import org.w3c.dom.Element;
 
-import javax.xml.crypto.*;
-import javax.xml.crypto.dsig.*;
+import j86.javax.xml.crypto.*;
+import j86.j86.javax.xml.crypto.dsig.*;
 
 /**
  * DOM-based abstract implementation of CanonicalizationMethod.

@@ -23,12 +23,12 @@
  * questions.
  */
 
-package com.sun.imageio.plugins.jpeg;
+package j86.com.sun.imageio.plugins.jpeg;
 
-import javax.imageio.stream.ImageInputStream;
-import javax.imageio.IIOException;
+import j86.j86.javax.imageio.stream.ImageInputStream;
+import j86.javax.imageio.IIOException;
 
-import java.io.IOException;
+import j86.java.io.IOException;
 
 /**
  * A class wrapping a buffer and its state.  For efficiency,

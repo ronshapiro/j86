@@ -34,12 +34,12 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package java.util.concurrent;
-import java.util.concurrent.locks.LockSupport;
-import java.util.concurrent.locks.ReentrantLock;
-import java.util.*;
-import java.util.Spliterator;
-import java.util.Spliterators;
+package j86.j86.java.util.concurrent;
+import j86.j86.j86.java.util.concurrent.locks.LockSupport;
+import j86.j86.j86.java.util.concurrent.locks.ReentrantLock;
+import j86.java.util.*;
+import j86.java.util.Spliterator;
+import j86.java.util.Spliterators;
 
 /**
  * A {@linkplain BlockingQueue blocking queue} in which each insert
@@ -82,7 +82,7 @@ import java.util.Spliterators;
  * @param <E> the type of elements held in this collection
  */
 public class SynchronousQueue<E> extends AbstractQueue<E>
-    implements BlockingQueue<E>, java.io.Serializable {
+    implements BlockingQueue<E>, j86.java.io.Serializable {
     private static final long serialVersionUID = -3223113410248163686L;
 
     /*
@@ -281,13 +281,13 @@ public class SynchronousQueue<E> extends AbstractQueue<E>
             }
 
             // Unsafe mechanics
-            private static final sun.misc.Unsafe UNSAFE;
+            private static final j86.sun.misc.Unsafe UNSAFE;
             private static final long matchOffset;
             private static final long nextOffset;
 
             static {
                 try {
-                    UNSAFE = sun.misc.Unsafe.getUnsafe();
+                    UNSAFE = j86.sun.misc.Unsafe.getUnsafe();
                     Class<?> k = SNode.class;
                     matchOffset = UNSAFE.objectFieldOffset
                         (k.getDeclaredField("match"));
@@ -508,11 +508,11 @@ public class SynchronousQueue<E> extends AbstractQueue<E>
         }
 
         // Unsafe mechanics
-        private static final sun.misc.Unsafe UNSAFE;
+        private static final j86.sun.misc.Unsafe UNSAFE;
         private static final long headOffset;
         static {
             try {
-                UNSAFE = sun.misc.Unsafe.getUnsafe();
+                UNSAFE = j86.sun.misc.Unsafe.getUnsafe();
                 Class<?> k = TransferStack.class;
                 headOffset = UNSAFE.objectFieldOffset
                     (k.getDeclaredField("head"));
@@ -576,13 +576,13 @@ public class SynchronousQueue<E> extends AbstractQueue<E>
             }
 
             // Unsafe mechanics
-            private static final sun.misc.Unsafe UNSAFE;
+            private static final j86.sun.misc.Unsafe UNSAFE;
             private static final long itemOffset;
             private static final long nextOffset;
 
             static {
                 try {
-                    UNSAFE = sun.misc.Unsafe.getUnsafe();
+                    UNSAFE = j86.sun.misc.Unsafe.getUnsafe();
                     Class<?> k = QNode.class;
                     itemOffset = UNSAFE.objectFieldOffset
                         (k.getDeclaredField("item"));
@@ -819,13 +819,13 @@ public class SynchronousQueue<E> extends AbstractQueue<E>
             }
         }
 
-        private static final sun.misc.Unsafe UNSAFE;
+        private static final j86.sun.misc.Unsafe UNSAFE;
         private static final long headOffset;
         private static final long tailOffset;
         private static final long cleanMeOffset;
         static {
             try {
-                UNSAFE = sun.misc.Unsafe.getUnsafe();
+                UNSAFE = j86.sun.misc.Unsafe.getUnsafe();
                 Class<?> k = TransferQueue.class;
                 headOffset = UNSAFE.objectFieldOffset
                     (k.getDeclaredField("head"));
@@ -1070,7 +1070,7 @@ public class SynchronousQueue<E> extends AbstractQueue<E>
 
     /**
      * Returns an empty spliterator in which calls to
-     * {@link java.util.Spliterator#trySplit()} always return {@code null}.
+     * {@link j86.java.util.Spliterator#trySplit()} always return {@code null}.
      *
      * @return an empty spliterator
      * @since 1.8
@@ -1148,7 +1148,7 @@ public class SynchronousQueue<E> extends AbstractQueue<E>
      */
 
     @SuppressWarnings("serial")
-    static class WaitQueue implements java.io.Serializable { }
+    static class WaitQueue implements j86.java.io.Serializable { }
     static class LifoWaitQueue extends WaitQueue {
         private static final long serialVersionUID = -3633113410248163686L;
     }
@@ -1162,10 +1162,10 @@ public class SynchronousQueue<E> extends AbstractQueue<E>
     /**
      * Saves this queue to a stream (that is, serializes it).
      * @param s the stream
-     * @throws java.io.IOException if an I/O error occurs
+     * @throws j86.java.io.IOException if an I/O error occurs
      */
-    private void writeObject(java.io.ObjectOutputStream s)
-        throws java.io.IOException {
+    private void writeObject(j86.java.io.ObjectOutputStream s)
+        throws j86.java.io.IOException {
         boolean fair = transferer instanceof TransferQueue;
         if (fair) {
             qlock = new ReentrantLock(true);
@@ -1185,10 +1185,10 @@ public class SynchronousQueue<E> extends AbstractQueue<E>
      * @param s the stream
      * @throws ClassNotFoundException if the class of a serialized object
      *         could not be found
-     * @throws java.io.IOException if an I/O error occurs
+     * @throws j86.java.io.IOException if an I/O error occurs
      */
-    private void readObject(java.io.ObjectInputStream s)
-        throws java.io.IOException, ClassNotFoundException {
+    private void readObject(j86.java.io.ObjectInputStream s)
+        throws j86.java.io.IOException, ClassNotFoundException {
         s.defaultReadObject();
         if (waitingProducers instanceof FifoWaitQueue)
             transferer = new TransferQueue<E>();
@@ -1197,7 +1197,7 @@ public class SynchronousQueue<E> extends AbstractQueue<E>
     }
 
     // Unsafe mechanics
-    static long objectFieldOffset(sun.misc.Unsafe UNSAFE,
+    static long objectFieldOffset(j86.sun.misc.Unsafe UNSAFE,
                                   String field, Class<?> klazz) {
         try {
             return UNSAFE.objectFieldOffset(klazz.getDeclaredField(field));

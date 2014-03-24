@@ -23,15 +23,15 @@
  * questions.
  */
 
-package java.io;
+package j86.java.io;
 
-import java.security.*;
-import java.util.Enumeration;
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Vector;
-import java.util.Collections;
-import sun.security.util.SecurityConstants;
+import j86.java.security.*;
+import j86.java.util.Enumeration;
+import j86.java.util.List;
+import j86.java.util.ArrayList;
+import j86.java.util.Vector;
+import j86.java.util.Collections;
+import j86.sun.security.util.SecurityConstants;
 
 /**
  * This class represents access to a file or directory.  A FilePermission consists
@@ -68,7 +68,7 @@ import sun.security.util.SecurityConstants;
  *    <DT> readlink
  *    <DD> read link permission. Allows the target of a
  *         <a href="../nio/file/package-summary.html#links">symbolic link</a>
- *         to be read by invoking the {@link java.nio.file.Files#readSymbolicLink
+ *         to be read by invoking the {@link j86.j86.java.nio.file.Files#readSymbolicLink
  *         readSymbolicLink } method.
  * </DL>
  * <P>
@@ -85,9 +85,9 @@ import sun.security.util.SecurityConstants;
  * directory it's in (or a subdirectory of that directory); it does not
  * need explicit permission to do so.
  *
- * @see java.security.Permission
- * @see java.security.Permissions
- * @see java.security.PermissionCollection
+ * @see j86.java.security.Permission
+ * @see j86.java.security.Permissions
+ * @see j86.java.security.PermissionCollection
  *
  *
  * @author Marianne Mueller
@@ -686,9 +686,9 @@ public final class FilePermission extends Permission implements Serializable {
  * take into account both the /tmp/- and /tmp/scratch/foo
  * permissions, so the effective permission is "read,write".
  *
- * @see java.security.Permission
- * @see java.security.Permissions
- * @see java.security.PermissionCollection
+ * @see j86.java.security.Permission
+ * @see j86.java.security.Permissions
+ * @see j86.java.security.PermissionCollection
  *
  *
  * @author Marianne Mueller
@@ -790,7 +790,7 @@ final class FilePermissionCollection extends PermissionCollection
     //    private Vector permissions;
 
     /**
-     * @serialField permissions java.util.Vector
+     * @serialField permissions j86.java.util.Vector
      *     A list of FilePermission objects.
      */
     private static final ObjectStreamField[] serialPersistentFields = {

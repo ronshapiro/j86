@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.naming;
+package j86.javax.naming;
 
-import java.util.Enumeration;
-import java.util.Properties;
+import j86.java.util.Enumeration;
+import j86.java.util.Properties;
 
 /**
  * This class represents a compound name -- a name from
@@ -241,7 +241,7 @@ public class CompoundName implements Name {
       *
       * @param  obj     The possibly null object to compare against.
       * @return true if obj is equal to this compound name, false otherwise.
-      * @see #compareTo(java.lang.Object obj)
+      * @see #compareTo(j86.java.lang.Object obj)
       */
     public boolean equals(Object obj) {
         // %%% check syntax too?
@@ -306,7 +306,7 @@ public class CompoundName implements Name {
      * @return  a negative integer, zero, or a positive integer as this Name
      *          is less than, equal to, or greater than the given Object.
      * @exception ClassCastException if obj is not a CompoundName.
-     * @see #equals(java.lang.Object)
+     * @see #equals(j86.java.lang.Object)
      */
     public int compareTo(Object obj) {
         if (!(obj instanceof CompoundName)) {
@@ -553,8 +553,8 @@ public class CompoundName implements Name {
      * the number of components (an <tt>int</tt>), and the individual
      * components (each a <tt>String</tt>).
      */
-    private void writeObject(java.io.ObjectOutputStream s)
-            throws java.io.IOException {
+    private void writeObject(j86.java.io.ObjectOutputStream s)
+            throws j86.java.io.IOException {
         s.writeObject(mySyntax);
         s.writeInt(size());
         Enumeration<String> comps = getAll();
@@ -566,8 +566,8 @@ public class CompoundName implements Name {
     /**
      * Overridden to avoid implementation dependency.
      */
-    private void readObject(java.io.ObjectInputStream s)
-            throws java.io.IOException, ClassNotFoundException {
+    private void readObject(j86.java.io.ObjectInputStream s)
+            throws j86.java.io.IOException, ClassNotFoundException {
         mySyntax = (Properties)s.readObject();
         impl = new NameImpl(mySyntax);
         int n = s.readInt();    // number of components
@@ -576,7 +576,7 @@ public class CompoundName implements Name {
                 add((String)s.readObject());
             }
         } catch (InvalidNameException e) {
-            throw (new java.io.StreamCorruptedException("Invalid name"));
+            throw (new j86.java.io.StreamCorruptedException("Invalid name"));
         }
     }
 

@@ -28,17 +28,17 @@
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
 
-package sun.security.krb5.internal.crypto;
+package j86.j86.j86.sun.security.krb5.internal.crypto;
 
-import javax.crypto.Cipher;
-import javax.crypto.spec.SecretKeySpec;
-import javax.crypto.SecretKeyFactory;
-import javax.crypto.SecretKey;
-import java.security.GeneralSecurityException;
-import javax.crypto.spec.IvParameterSpec;
-import sun.security.krb5.KrbCryptoException;
-import java.util.Arrays;
-import sun.security.action.GetPropertyAction;
+import j86.javax.crypto.Cipher;
+import j86.j86.javax.crypto.spec.SecretKeySpec;
+import j86.javax.crypto.SecretKeyFactory;
+import j86.javax.crypto.SecretKey;
+import j86.java.security.GeneralSecurityException;
+import j86.j86.javax.crypto.spec.IvParameterSpec;
+import j86.sun.security.krb5.KrbCryptoException;
+import j86.java.util.Arrays;
+import j86.sun.security.action.GetPropertyAction;
 
 public final class Des {
 
@@ -54,8 +54,8 @@ public final class Des {
     // name is used. Otherwise, the system default charset.
 
     private final static String CHARSET =
-            java.security.AccessController.doPrivileged(
-            new GetPropertyAction("sun.security.krb5.msinterop.des.s2kcharset"));
+            j86.java.security.AccessController.doPrivileged(
+            new GetPropertyAction("j86.sun.security.krb5.msinterop.des.s2kcharset"));
 
     private static final long[] bad_keys = {
         0x0101010101010101L, 0xfefefefefefefefeL,

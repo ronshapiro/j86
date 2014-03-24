@@ -23,12 +23,12 @@
  * questions.
  */
 
-package java.net;
+package j86.java.net;
 
-import java.io.IOException;
-import java.util.Map;
-import java.util.List;
-import sun.security.util.SecurityConstants;
+import j86.java.io.IOException;
+import j86.java.util.Map;
+import j86.java.util.List;
+import j86.sun.security.util.SecurityConstants;
 
 /**
  * Represents implementations of URLConnection caches. An instance of
@@ -130,10 +130,10 @@ public abstract class ResponseCache {
      * @throws  IOException if an I/O error occurs
      * @throws  IllegalArgumentException if any one of the arguments is null
      *
-     * @see     java.net.URLConnection#setUseCaches(boolean)
-     * @see     java.net.URLConnection#getUseCaches()
-     * @see     java.net.URLConnection#setDefaultUseCaches(boolean)
-     * @see     java.net.URLConnection#getDefaultUseCaches()
+     * @see     j86.java.net.URLConnection#setUseCaches(boolean)
+     * @see     j86.java.net.URLConnection#getUseCaches()
+     * @see     j86.java.net.URLConnection#setDefaultUseCaches(boolean)
+     * @see     j86.java.net.URLConnection#getDefaultUseCaches()
      */
     public abstract CacheResponse
         get(URI uri, String rqstMethod, Map<String, List<String>> rqstHeaders)

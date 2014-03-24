@@ -33,17 +33,17 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package java.util.concurrent;
-import static java.util.concurrent.TimeUnit.NANOSECONDS;
-import java.util.concurrent.atomic.AtomicLong;
-import java.util.concurrent.locks.Condition;
-import java.util.concurrent.locks.ReentrantLock;
-import java.util.*;
+package j86.j86.java.util.concurrent;
+import static j86.j86.java.util.concurrent.TimeUnit.NANOSECONDS;
+import j86.j86.j86.java.util.concurrent.atomic.AtomicLong;
+import j86.j86.j86.java.util.concurrent.locks.Condition;
+import j86.j86.j86.java.util.concurrent.locks.ReentrantLock;
+import j86.java.util.*;
 
 /**
  * A {@link ThreadPoolExecutor} that can additionally schedule
  * commands to run after a given delay, or to execute
- * periodically. This class is preferable to {@link java.util.Timer}
+ * periodically. This class is preferable to {@link j86.java.util.Timer}
  * when multiple worker threads are needed, or when the additional
  * flexibility or capabilities of {@link ThreadPoolExecutor} (which
  * this class extends) are required.

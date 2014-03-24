@@ -23,15 +23,15 @@
  * questions.
  */
 
-package sun.tools.jconsole;
+package j86.sun.tools.jconsole;
 
-import java.awt.*;
-import java.awt.event.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
 
-import javax.swing.*;
+import j86.javax.swing.*;
 
 
-import static javax.swing.JLayeredPane.*;
+import static j86.javax.swing.JLayeredPane.*;
 
 /**
  * Used instead of JDialog in a JDesktopPane/JInternalFrame environment.

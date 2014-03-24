@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.rmi.registry;
+package j86.j86.java.rmi.registry;
 
-import java.rmi.AccessException;
-import java.rmi.AlreadyBoundException;
-import java.rmi.NotBoundException;
-import java.rmi.Remote;
-import java.rmi.RemoteException;
+import j86.java.rmi.AccessException;
+import j86.java.rmi.AlreadyBoundException;
+import j86.java.rmi.NotBoundException;
+import j86.java.rmi.Remote;
+import j86.java.rmi.RemoteException;
 
 /**
  * <code>Registry</code> is a remote interface to a simple remote
@@ -44,7 +44,7 @@ import java.rmi.RemoteException;
  * initial reference to a remote object.  Therefore, a registry's
  * remote object implementation is typically exported with a
  * well-known address, such as with a well-known {@link
- * java.rmi.server.ObjID#REGISTRY_ID ObjID} and TCP port number
+ * j86.j86.java.rmi.server.ObjID#REGISTRY_ID ObjID} and TCP port number
  * (default is {@link #REGISTRY_PORT 1099}).
  *
  * <p>The {@link LocateRegistry} class provides a programmatic API for
@@ -59,9 +59,9 @@ import java.rmi.RemoteException;
  * mutate the registry's bindings may be restricted to calls
  * originating from the local host).  If a <code>Registry</code>
  * method chooses to deny access for a given invocation, its
- * implementation may throw {@link java.rmi.AccessException}, which
- * (because it extends {@link java.rmi.RemoteException}) will be
- * wrapped in a {@link java.rmi.ServerException} when caught by a
+ * implementation may throw {@link j86.java.rmi.AccessException}, which
+ * (because it extends {@link j86.java.rmi.RemoteException}) will be
+ * wrapped in a {@link j86.java.rmi.ServerException} when caught by a
  * remote client.
  *
  * <p>The names used for bindings in a <code>Registry</code> are pure

@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.text;
+package j86.java.text;
 
-import java.util.*;
-import java.text.AttributedCharacterIterator.Attribute;
+import j86.java.util.*;
+import j86.java.text.AttributedCharacterIterator.Attribute;
 
 /**
  * An AttributedString holds text and related attribute information. It
@@ -198,7 +198,7 @@ public class AttributedString {
      * @exception NullPointerException if <code>text</code> is null.
      * @exception IllegalArgumentException if the subrange given by
      * beginIndex and endIndex is out of the text range.
-     * @see java.text.Annotation
+     * @see j86.java.text.Annotation
      */
     public AttributedString(AttributedCharacterIterator text,
                             int beginIndex,
@@ -226,7 +226,7 @@ public class AttributedString {
      * @exception NullPointerException if <code>text</code> is null.
      * @exception IllegalArgumentException if the subrange given by
      * beginIndex and endIndex is out of the text range.
-     * @see java.text.Annotation
+     * @see j86.java.text.Annotation
      */
     public AttributedString(AttributedCharacterIterator text,
                             int beginIndex,

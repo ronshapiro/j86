@@ -23,22 +23,22 @@
  * questions.
  */
 
-package javax.security.auth.login;
+package j86.j86.javax.security.auth.login;
 
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Method;
-import java.lang.reflect.InvocationTargetException;
-import java.util.LinkedList;
-import java.util.Map;
-import java.util.HashMap;
-import java.text.MessageFormat;
-import javax.security.auth.Subject;
-import javax.security.auth.AuthPermission;
-import javax.security.auth.callback.*;
-import java.security.AccessController;
-import java.security.AccessControlContext;
-import sun.security.util.PendingException;
-import sun.security.util.ResourcesMgr;
+import j86.j86.j86.java.lang.reflect.Constructor;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.java.util.LinkedList;
+import j86.java.util.Map;
+import j86.java.util.HashMap;
+import j86.java.text.MessageFormat;
+import j86.javax.security.auth.Subject;
+import j86.javax.security.auth.AuthPermission;
+import j86.j86.javax.security.auth.callback.*;
+import j86.java.security.AccessController;
+import j86.java.security.AccessControlContext;
+import j86.sun.security.util.PendingException;
+import j86.sun.security.util.ResourcesMgr;
 
 /**
  * <p> The {@code LoginContext} class describes the basic methods used
@@ -179,18 +179,18 @@ import sun.security.util.ResourcesMgr;
  * in a new CallbackHandler implementation
  * whose {@code handle} method implementation invokes the
  * specified CallbackHandler's {@code handle} method in a
- * {@code java.security.AccessController.doPrivileged} call
+ * {@code j86.java.security.AccessController.doPrivileged} call
  * constrained by the caller's current {@code AccessControlContext}.
  * </ul>
  * </ol>
  *
- * @see java.security.Security
- * @see javax.security.auth.AuthPermission
- * @see javax.security.auth.Subject
- * @see javax.security.auth.callback.CallbackHandler
- * @see javax.security.auth.login.Configuration
- * @see javax.security.auth.spi.LoginModule
- * @see java.security.Security security properties
+ * @see j86.java.security.Security
+ * @see j86.javax.security.auth.AuthPermission
+ * @see j86.javax.security.auth.Subject
+ * @see j86.j86.javax.security.auth.callback.CallbackHandler
+ * @see j86.j86.javax.security.auth.login.Configuration
+ * @see j86.j86.javax.security.auth.spi.LoginModule
+ * @see j86.java.security.Security security properties
  */
 public class LoginContext {
 
@@ -222,8 +222,8 @@ public class LoginContext {
     private LoginException firstRequiredError = null;
     private boolean success = false;
 
-    private static final sun.security.util.Debug debug =
-        sun.security.util.Debug.getInstance("logincontext", "\t[LoginContext]");
+    private static final j86.sun.security.util.Debug debug =
+        j86.sun.security.util.Debug.getInstance("logincontext", "\t[LoginContext]");
 
     private void init(String name) throws LoginException {
 
@@ -239,8 +239,8 @@ public class LoginContext {
 
         // get the Configuration
         if (config == null) {
-            config = java.security.AccessController.doPrivileged
-                (new java.security.PrivilegedAction<Configuration>() {
+            config = j86.java.security.AccessController.doPrivileged
+                (new j86.java.security.PrivilegedAction<Configuration>() {
                 public Configuration run() {
                     return Configuration.getConfiguration();
                 }
@@ -275,8 +275,8 @@ public class LoginContext {
                                 null);
         }
 
-        contextClassLoader = java.security.AccessController.doPrivileged
-                (new java.security.PrivilegedAction<ClassLoader>() {
+        contextClassLoader = j86.java.security.AccessController.doPrivileged
+                (new j86.java.security.PrivilegedAction<ClassLoader>() {
                 public ClassLoader run() {
                     ClassLoader loader =
                             Thread.currentThread().getContextClassLoader();
@@ -298,10 +298,10 @@ public class LoginContext {
 
             final ClassLoader finalLoader = contextClassLoader;
 
-            this.callbackHandler = java.security.AccessController.doPrivileged(
-                new java.security.PrivilegedExceptionAction<CallbackHandler>() {
+            this.callbackHandler = j86.java.security.AccessController.doPrivileged(
+                new j86.java.security.PrivilegedExceptionAction<CallbackHandler>() {
                 public CallbackHandler run() throws Exception {
-                    String defaultHandler = java.security.Security.getProperty
+                    String defaultHandler = j86.java.security.Security.getProperty
                         (DEFAULT_HANDLER);
                     if (defaultHandler == null || defaultHandler.length() == 0)
                         return null;
@@ -311,14 +311,14 @@ public class LoginContext {
                     return c.newInstance();
                 }
             });
-        } catch (java.security.PrivilegedActionException pae) {
+        } catch (j86.java.security.PrivilegedActionException pae) {
             throw new LoginException(pae.getException().toString());
         }
 
         // secure it with the caller's ACC
         if (this.callbackHandler != null && creatorAcc == null) {
             this.callbackHandler = new SecureCallbackHandler
-                                (java.security.AccessController.getContext(),
+                                (j86.java.security.AccessController.getContext(),
                                 this.callbackHandler);
         }
     }
@@ -419,7 +419,7 @@ public class LoginContext {
             throw new LoginException(ResourcesMgr.getString
                                 ("invalid.null.CallbackHandler.provided"));
         this.callbackHandler = new SecureCallbackHandler
-                                (java.security.AccessController.getContext(),
+                                (j86.java.security.AccessController.getContext(),
                                 callbackHandler);
     }
 
@@ -460,7 +460,7 @@ public class LoginContext {
             throw new LoginException(ResourcesMgr.getString
                                 ("invalid.null.CallbackHandler.provided"));
         this.callbackHandler = new SecureCallbackHandler
-                                (java.security.AccessController.getContext(),
+                                (j86.java.security.AccessController.getContext(),
                                 callbackHandler);
     }
 
@@ -506,7 +506,7 @@ public class LoginContext {
                         Configuration config) throws LoginException {
         this.config = config;
         if (config != null) {
-            creatorAcc = java.security.AccessController.getContext();
+            creatorAcc = j86.java.security.AccessController.getContext();
         }
 
         init(name);
@@ -518,7 +518,7 @@ public class LoginContext {
             loadDefaultCallbackHandler();
         } else if (creatorAcc == null) {
             this.callbackHandler = new SecureCallbackHandler
-                                (java.security.AccessController.getContext(),
+                                (j86.java.security.AccessController.getContext(),
                                 callbackHandler);
         } else {
             this.callbackHandler = callbackHandler;
@@ -676,14 +676,14 @@ public class LoginContext {
      */
     private void invokePriv(final String methodName) throws LoginException {
         try {
-            java.security.AccessController.doPrivileged
-                (new java.security.PrivilegedExceptionAction<Void>() {
+            j86.java.security.AccessController.doPrivileged
+                (new j86.java.security.PrivilegedExceptionAction<Void>() {
                 public Void run() throws LoginException {
                     invoke(methodName);
                     return null;
                 }
             }, creatorAcc);
-        } catch (java.security.PrivilegedActionException pae) {
+        } catch (j86.java.security.PrivilegedActionException pae) {
             throw (LoginException)pae.getException();
         }
     }
@@ -849,9 +849,9 @@ public class LoginContext {
                 } else {
 
                     // capture an unexpected LoginModule exception
-                    java.io.StringWriter sw = new java.io.StringWriter();
+                    j86.java.io.StringWriter sw = new java.io.StringWriter();
                     ite.getCause().printStackTrace
-                                                (new java.io.PrintWriter(sw));
+                                                (new j86.java.io.PrintWriter(sw));
                     sw.flush();
                     le = new LoginException(sw.toString());
                 }
@@ -920,29 +920,29 @@ public class LoginContext {
      */
     private static class SecureCallbackHandler implements CallbackHandler {
 
-        private final java.security.AccessControlContext acc;
+        private final j86.java.security.AccessControlContext acc;
         private final CallbackHandler ch;
 
-        SecureCallbackHandler(java.security.AccessControlContext acc,
+        SecureCallbackHandler(j86.java.security.AccessControlContext acc,
                         CallbackHandler ch) {
             this.acc = acc;
             this.ch = ch;
         }
 
         public void handle(final Callback[] callbacks)
-                throws java.io.IOException, UnsupportedCallbackException {
+                throws j86.java.io.IOException, UnsupportedCallbackException {
             try {
-                java.security.AccessController.doPrivileged
-                    (new java.security.PrivilegedExceptionAction<Void>() {
-                    public Void run() throws java.io.IOException,
+                j86.java.security.AccessController.doPrivileged
+                    (new j86.java.security.PrivilegedExceptionAction<Void>() {
+                    public Void run() throws j86.java.io.IOException,
                                         UnsupportedCallbackException {
                         ch.handle(callbacks);
                         return null;
                     }
                 }, acc);
-            } catch (java.security.PrivilegedActionException pae) {
-                if (pae.getException() instanceof java.io.IOException) {
-                    throw (java.io.IOException)pae.getException();
+            } catch (j86.java.security.PrivilegedActionException pae) {
+                if (pae.getException() instanceof j86.java.io.IOException) {
+                    throw (j86.java.io.IOException)pae.getException();
                 } else {
                     throw (UnsupportedCallbackException)pae.getException();
                 }

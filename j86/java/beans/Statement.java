@@ -22,22 +22,22 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.beans;
+package j86.java.beans;
 
-import java.lang.reflect.AccessibleObject;
-import java.lang.reflect.Array;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.security.AccessControlContext;
-import java.security.AccessController;
-import java.security.PrivilegedActionException;
-import java.security.PrivilegedExceptionAction;
+import j86.j86.j86.java.lang.reflect.AccessibleObject;
+import j86.j86.j86.java.lang.reflect.Array;
+import j86.j86.j86.java.lang.reflect.Constructor;
+import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.security.AccessControlContext;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedActionException;
+import j86.java.security.PrivilegedExceptionAction;
 
-import com.sun.beans.finder.ClassFinder;
-import com.sun.beans.finder.ConstructorFinder;
-import com.sun.beans.finder.MethodFinder;
-import sun.reflect.misc.MethodUtil;
+import j86.j86.com.sun.beans.finder.ClassFinder;
+import j86.j86.com.sun.beans.finder.ConstructorFinder;
+import j86.j86.com.sun.beans.finder.MethodFinder;
+import j86.j86.sun.reflect.misc.MethodUtil;
 
 /**
  * A <code>Statement</code> object represents a primitive statement
@@ -141,7 +141,7 @@ public class Statement {
      * the algorithm specified in the Java Language Specification
      * (15.11). The dynamic class of the target and arguments are used
      * in place of the compile-time type information and, like the
-     * {@link java.lang.reflect.Method} class itself, conversion between
+     * {@link j86.j86.j86.java.lang.reflect.Method} class itself, conversion between
      * primitive values and their associated wrapper classes is handled
      * internally.
      * <p>
@@ -155,7 +155,7 @@ public class Statement {
      * are typically considered {@code Expression}s rather than {@code Statement}s
      * as they return a value.
      * <li>
-     * The method names "get" and "set" defined in the {@link java.util.List}
+     * The method names "get" and "set" defined in the {@link j86.java.util.List}
      * interface may also be applied to array instances, mapping to
      * the static methods of the same name in the {@code Array} class.
      * </ul>
@@ -167,7 +167,7 @@ public class Statement {
      *                           it denies the method invocation
      * @throws Exception that is thrown by the invoked method
      *
-     * @see java.lang.reflect.Method
+     * @see j86.j86.j86.java.lang.reflect.Method
      */
     public void execute() throws Exception {
         invoke();

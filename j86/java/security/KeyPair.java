@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.security;
+package j86.java.security;
 
-import java.util.*;
+import j86.java.util.*;
 
 /**
  * This class is a simple holder for a key pair (a public key and a
@@ -38,7 +38,7 @@ import java.util.*;
  * @author Benjamin Renaud
  */
 
-public final class KeyPair implements java.io.Serializable {
+public final class KeyPair implements j86.java.io.Serializable {
 
     private static final long serialVersionUID = -7565189502268009837L;
 

@@ -23,21 +23,21 @@
  * questions.
  */
 
-package sun.tools.jar;
+package j86.sun.tools.jar;
 
-import java.io.*;
-import java.nio.file.Path;
-import java.nio.file.Files;
-import java.util.*;
-import java.util.zip.*;
-import java.util.jar.*;
-import java.util.jar.Pack200.*;
-import java.util.jar.Manifest;
-import java.text.MessageFormat;
-import sun.misc.JarIndex;
-import static sun.misc.JarIndex.INDEX_NAME;
-import static java.util.jar.JarFile.MANIFEST_NAME;
-import static java.nio.file.StandardCopyOption.REPLACE_EXISTING;
+import j86.java.io.*;
+import j86.j86.java.nio.file.Path;
+import j86.j86.java.nio.file.Files;
+import j86.java.util.*;
+import j86.j86.java.util.zip.*;
+import j86.j86.java.util.jar.*;
+import j86.j86.java.util.jar.Pack200.*;
+import j86.j86.java.util.jar.Manifest;
+import j86.java.text.MessageFormat;
+import j86.sun.misc.JarIndex;
+import static j86.sun.misc.JarIndex.INDEX_NAME;
+import static j86.j86.java.util.jar.JarFile.MANIFEST_NAME;
+import static j86.j86.java.nio.file.StandardCopyOption.REPLACE_EXISTING;
 
 /**
  * This class implements a simple utility for creating files in the JAR
@@ -88,14 +88,14 @@ class Main {
      * Default is to use the time given in the archive.
      */
     private static final boolean useExtractionTime =
-        Boolean.getBoolean("sun.tools.jar.useExtractionTime");
+        Boolean.getBoolean("j86.sun.tools.jar.useExtractionTime");
 
     /**
      * Initialize ResourceBundle
      */
     static {
         try {
-            rsrc = ResourceBundle.getBundle("sun.tools.jar.resources.jar");
+            rsrc = ResourceBundle.getBundle("j86.sun.tools.jar.resources.jar");
         } catch (MissingResourceException e) {
             throw new Error("Fatal: Resource for jar is missing");
         }
@@ -553,7 +553,7 @@ class Main {
      * have the notorious "turkish i bug").
      */
     private boolean equalsIgnoreCase(String s, String upper) {
-        assert upper.toUpperCase(java.util.Locale.ENGLISH).equals(upper);
+        assert upper.toUpperCase(j86.java.util.Locale.ENGLISH).equals(upper);
         int len;
         if ((len = s.length()) != upper.length())
             return false;
@@ -1238,7 +1238,7 @@ class Main {
      * It's here to find the CRC32 of an input file, necessary for STORED
      * mode in ZIP.
      */
-    private static class CRC32OutputStream extends java.io.OutputStream {
+    private static class CRC32OutputStream extends j86.java.io.OutputStream {
         final CRC32 crc = new CRC32();
         long n = 0;
 

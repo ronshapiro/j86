@@ -33,17 +33,17 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package java.util.concurrent.atomic;
-import java.util.function.UnaryOperator;
-import java.util.function.BinaryOperator;
-import sun.misc.Unsafe;
-import java.lang.reflect.Field;
-import java.lang.reflect.Modifier;
-import java.security.AccessController;
-import java.security.PrivilegedExceptionAction;
-import java.security.PrivilegedActionException;
-import sun.reflect.CallerSensitive;
-import sun.reflect.Reflection;
+package j86.j86.j86.java.util.concurrent.atomic;
+import j86.j86.java.util.function.UnaryOperator;
+import j86.j86.java.util.function.BinaryOperator;
+import j86.sun.misc.Unsafe;
+import j86.j86.j86.java.lang.reflect.Field;
+import j86.j86.j86.java.lang.reflect.Modifier;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedExceptionAction;
+import j86.java.security.PrivilegedActionException;
+import j86.sun.reflect.CallerSensitive;
+import j86.sun.reflect.Reflection;
 
 /**
  * A reflection-based utility that enables atomic updates to
@@ -317,13 +317,13 @@ public abstract class AtomicReferenceFieldUpdater<T,V> {
                         }
                     });
                 modifiers = field.getModifiers();
-                sun.reflect.misc.ReflectUtil.ensureMemberAccess(
+                j86.j86.sun.reflect.misc.ReflectUtil.ensureMemberAccess(
                     caller, tclass, null, modifiers);
                 ClassLoader cl = tclass.getClassLoader();
                 ClassLoader ccl = caller.getClassLoader();
                 if ((ccl != null) && (ccl != cl) &&
                     ((cl == null) || !isAncestor(cl, ccl))) {
-                  sun.reflect.misc.ReflectUtil.checkPackageAccess(tclass);
+                  j86.j86.sun.reflect.misc.ReflectUtil.checkPackageAccess(tclass);
                 }
                 fieldClass = field.getType();
             } catch (PrivilegedActionException pae) {

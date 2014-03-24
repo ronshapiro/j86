@@ -23,13 +23,13 @@
  * questions.
  */
 
-package javax.swing;
+package j86.javax.swing;
 
-import javax.swing.table.*;
-import java.awt.*;
-import java.awt.print.*;
-import java.awt.geom.*;
-import java.text.MessageFormat;
+import j86.j86.javax.swing.table.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.print.*;
+import j86.j86.java.awt.geom.*;
+import j86.java.text.MessageFormat;
 
 /**
  * An implementation of <code>Printable</code> for printing

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.swing;
+package j86.javax.swing;
 
 /**
  * A <code>SizeSequence</code> object

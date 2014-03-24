@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.security.smartcardio;
+package j86.sun.security.smartcardio;
 
-import java.security.AccessController;
+import j86.java.security.AccessController;
 
 /**
  * Access to native PC/SC functions and definition of PC/SC constants.

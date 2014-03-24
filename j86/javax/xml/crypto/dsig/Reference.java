@@ -25,13 +25,13 @@
 /*
  * $Id: Reference.java,v 1.9 2005/05/10 16:03:46 mullan Exp $
  */
-package javax.xml.crypto.dsig;
+package j86.j86.javax.xml.crypto.dsig;
 
-import javax.xml.crypto.Data;
-import javax.xml.crypto.URIReference;
-import javax.xml.crypto.XMLStructure;
-import java.io.InputStream;
-import java.util.List;
+import j86.javax.xml.crypto.Data;
+import j86.javax.xml.crypto.URIReference;
+import j86.javax.xml.crypto.XMLStructure;
+import j86.java.io.InputStream;
+import j86.java.util.List;
 
 /**
  * A representation of the <code>Reference</code> element as defined in the
@@ -78,7 +78,7 @@ import java.util.List;
 public interface Reference extends URIReference, XMLStructure {
 
     /**
-     * Returns an {@link java.util.Collections#unmodifiableList unmodifiable
+     * Returns an {@link j86.java.util.Collections#unmodifiableList unmodifiable
      * list} of {@link Transform}s that are contained in this
      * <code>Reference</code>.
      *

@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.plaf;
+package j86.j86.javax.swing.plaf;
 
-import javax.swing.AbstractButton;
-import javax.swing.GrayFilter;
-import javax.swing.Icon;
-import javax.swing.ImageIcon;
-import java.awt.Insets;
+import j86.javax.swing.AbstractButton;
+import j86.javax.swing.GrayFilter;
+import j86.javax.swing.Icon;
+import j86.javax.swing.ImageIcon;
+import j86.java.awt.Insets;
 
 /**
  * Pluggable look and feel interface for JButton.

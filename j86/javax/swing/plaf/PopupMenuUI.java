@@ -23,12 +23,12 @@
  * questions.
  */
 
-package javax.swing.plaf;
+package j86.j86.javax.swing.plaf;
 
-import java.awt.event.MouseEvent;
-import javax.swing.Popup;
-import javax.swing.PopupFactory;
-import javax.swing.JPopupMenu;
+import j86.j86.java.awt.event.MouseEvent;
+import j86.javax.swing.Popup;
+import j86.javax.swing.PopupFactory;
+import j86.javax.swing.JPopupMenu;
 
 /**
  * Pluggable look and feel interface for JPopupMenu.

@@ -22,15 +22,15 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.security.x509;
+package j86.sun.security.x509;
 
-import java.io.IOException;
-import java.io.OutputStream;
-import java.security.cert.*;
-import java.util.Date;
-import java.util.Enumeration;
+import j86.java.io.IOException;
+import j86.java.io.OutputStream;
+import j86.j86.java.security.cert.*;
+import j86.java.util.Date;
+import j86.java.util.Enumeration;
 
-import sun.security.util.*;
+import j86.sun.security.util.*;
 
 /**
  * This class defines the interval for which the certificate is valid.

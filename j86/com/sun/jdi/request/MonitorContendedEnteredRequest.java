@@ -23,23 +23,23 @@
  * questions.
  */
 
-package com.sun.jdi.request;
+package j86.j86.com.sun.jdi.request;
 
-import com.sun.jdi.*;
+import j86.com.sun.jdi.*;
 
 /**
  * Request for notification of a thread in the target VM entering a monitor
  * after waiting for it to be released by another thread.
  * When an enabled MonitorContededEnteredRequest is satisfied, an
- * {@link com.sun.jdi.event.EventSet event set} containing a
- * {@link com.sun.jdi.event.MonitorContendedEnteredEvent MonitorContendedEnteredEvent}
+ * {@link j86.j86.com.sun.jdi.event.EventSet event set} containing a
+ * {@link j86.j86.com.sun.jdi.event.MonitorContendedEnteredEvent MonitorContendedEnteredEvent}
  * will be placed on the
- * {@link com.sun.jdi.event.EventQueue EventQueue}.
+ * {@link j86.j86.com.sun.jdi.event.EventQueue EventQueue}.
  * The collection of existing MonitorContendedEnteredEvents is
  * managed by the {@link EventRequestManager}
  *
- * @see com.sun.jdi.event.MonitorContendedEnteredEvent
- * @see com.sun.jdi.event.EventQueue
+ * @see j86.j86.com.sun.jdi.event.MonitorContendedEnteredEvent
+ * @see j86.j86.com.sun.jdi.event.EventQueue
  * @see EventRequestManager
  *
  * @author Swamy Venkataramanappa
@@ -106,7 +106,7 @@ public interface MonitorContendedEnteredRequest extends EventRequest {
      * to determine if the operation is supported.
      * @param instance the object which must be the current instance
      * in order to pass this filter.
-     * @throws java.lang.UnsupportedOperationException if
+     * @throws j86.java.lang.UnsupportedOperationException if
      * the target virtual machine does not support this
      * operation.
      * @throws InvalidRequestStateException if this request is currently

@@ -23,11 +23,11 @@
  * questions.
  */
 
-package java.lang;
+package j86.java.lang;
 
-import sun.misc.FloatingDecimal;
-import sun.misc.FpUtils;
-import sun.misc.DoubleConsts;
+import j86.sun.misc.FloatingDecimal;
+import j86.sun.misc.FpUtils;
+import j86.sun.misc.DoubleConsts;
 
 /**
  * The {@code Double} class wraps a value of the primitive type
@@ -195,7 +195,7 @@ public final class Double extends Number implements Comparable<Double> {
      * significant bit of the significand of <i>d</i> must be {@code 0}.
      *
      * <p>To create localized string representations of a floating-point
-     * value, use subclasses of {@link java.text.NumberFormat}.
+     * value, use subclasses of {@link j86.java.text.NumberFormat}.
      *
      * @param   d   the {@code double} to be converted.
      * @return a string representation of the argument.
@@ -421,7 +421,7 @@ public final class Double extends Number implements Comparable<Double> {
      *
      * <p> To interpret localized string representations of a
      * floating-point value, use subclasses of {@link
-     * java.text.NumberFormat}.
+     * j86.java.text.NumberFormat}.
      *
      * <p>Note that trailing format specifiers, specifiers that
      * determine the type of a floating-point literal
@@ -531,7 +531,7 @@ public final class Double extends Number implements Comparable<Double> {
      * @throws NullPointerException  if the string is null
      * @throws NumberFormatException if the string does not contain
      *         a parsable {@code double}.
-     * @see    java.lang.Double#valueOf(String)
+     * @see    j86.java.lang.Double#valueOf(String)
      * @since 1.2
      */
     public static double parseDouble(String s) throws NumberFormatException {
@@ -602,7 +602,7 @@ public final class Double extends Number implements Comparable<Double> {
      * @param  s  a string to be converted to a {@code Double}.
      * @throws    NumberFormatException  if the string does not contain a
      *            parsable number.
-     * @see       java.lang.Double#valueOf(java.lang.String)
+     * @see       j86.java.lang.Double#valueOf(java.lang.String)
      */
     public Double(String s) throws NumberFormatException {
         value = parseDouble(s);
@@ -638,7 +638,7 @@ public final class Double extends Number implements Comparable<Double> {
      * {@code toString} of one argument.
      *
      * @return  a {@code String} representation of this object.
-     * @see java.lang.Double#toString(double)
+     * @see j86.java.lang.Double#toString(double)
      */
     public String toString() {
         return toString(value);
@@ -792,7 +792,7 @@ public final class Double extends Number implements Comparable<Double> {
      * @param   obj   the object to compare with.
      * @return  {@code true} if the objects are the same;
      *          {@code false} otherwise.
-     * @see java.lang.Double#doubleToLongBits(double)
+     * @see j86.java.lang.Double#doubleToLongBits(double)
      */
     public boolean equals(Object obj) {
         return (obj instanceof Double)
@@ -1018,7 +1018,7 @@ public final class Double extends Number implements Comparable<Double> {
      * @param b the second operand
      * @return the sum of {@code a} and {@code b}
      * @jls 4.2.4 Floating-Point Operations
-     * @see java.util.function.BinaryOperator
+     * @see j86.j86.java.util.function.BinaryOperator
      * @since 1.8
      */
     public static double sum(double a, double b) {
@@ -1032,7 +1032,7 @@ public final class Double extends Number implements Comparable<Double> {
      * @param a the first operand
      * @param b the second operand
      * @return the greater of {@code a} and {@code b}
-     * @see java.util.function.BinaryOperator
+     * @see j86.j86.java.util.function.BinaryOperator
      * @since 1.8
      */
     public static double max(double a, double b) {
@@ -1046,7 +1046,7 @@ public final class Double extends Number implements Comparable<Double> {
      * @param a the first operand
      * @param b the second operand
      * @return the smaller of {@code a} and {@code b}.
-     * @see java.util.function.BinaryOperator
+     * @see j86.j86.java.util.function.BinaryOperator
      * @since 1.8
      */
     public static double min(double a, double b) {

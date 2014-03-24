@@ -24,57 +24,57 @@
  */
 
 
-package com.sun.jmx.snmp.daemon;
+package j86.j86.j86.com.sun.jmx.snmp.daemon;
 
 
 // java imports
 //
-import java.util.Vector;
-import java.util.Enumeration;
-import java.util.logging.Level;
-import java.net.DatagramSocket;
-import java.net.DatagramPacket;
-import java.net.InetAddress;
-import java.net.SocketException;
-import java.net.UnknownHostException;
-import java.io.ObjectInputStream;
-import java.io.IOException;
-import java.io.InterruptedIOException;
+import j86.java.util.Vector;
+import j86.java.util.Enumeration;
+import j86.j86.java.util.logging.Level;
+import j86.java.net.DatagramSocket;
+import j86.java.net.DatagramPacket;
+import j86.java.net.InetAddress;
+import j86.java.net.SocketException;
+import j86.java.net.UnknownHostException;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.IOException;
+import j86.java.io.InterruptedIOException;
 
 
 // jmx imports
 //
-import javax.management.MBeanServer;
-import javax.management.MBeanRegistration;
-import javax.management.ObjectName;
-import static com.sun.jmx.defaults.JmxProperties.SNMP_ADAPTOR_LOGGER;
-import com.sun.jmx.snmp.SnmpIpAddress;
-import com.sun.jmx.snmp.SnmpMessage;
-import com.sun.jmx.snmp.SnmpOid;
-import com.sun.jmx.snmp.SnmpPduFactory;
-import com.sun.jmx.snmp.SnmpPduPacket;
-import com.sun.jmx.snmp.SnmpPduRequest;
-import com.sun.jmx.snmp.SnmpPduTrap;
-import com.sun.jmx.snmp.SnmpTimeticks;
-import com.sun.jmx.snmp.SnmpVarBind;
-import com.sun.jmx.snmp.SnmpVarBindList;
-import com.sun.jmx.snmp.SnmpDefinitions;
-import com.sun.jmx.snmp.SnmpStatusException;
-import com.sun.jmx.snmp.SnmpTooBigException;
-import com.sun.jmx.snmp.InetAddressAcl;
-import com.sun.jmx.snmp.SnmpPeer;
-import com.sun.jmx.snmp.SnmpParameters;
+import j86.javax.management.MBeanServer;
+import j86.javax.management.MBeanRegistration;
+import j86.javax.management.ObjectName;
+import static j86.com.sun.jmx.defaults.JmxProperties.SNMP_ADAPTOR_LOGGER;
+import j86.com.sun.jmx.snmp.SnmpIpAddress;
+import j86.com.sun.jmx.snmp.SnmpMessage;
+import j86.com.sun.jmx.snmp.SnmpOid;
+import j86.com.sun.jmx.snmp.SnmpPduFactory;
+import j86.com.sun.jmx.snmp.SnmpPduPacket;
+import j86.com.sun.jmx.snmp.SnmpPduRequest;
+import j86.com.sun.jmx.snmp.SnmpPduTrap;
+import j86.com.sun.jmx.snmp.SnmpTimeticks;
+import j86.com.sun.jmx.snmp.SnmpVarBind;
+import j86.com.sun.jmx.snmp.SnmpVarBindList;
+import j86.com.sun.jmx.snmp.SnmpDefinitions;
+import j86.com.sun.jmx.snmp.SnmpStatusException;
+import j86.com.sun.jmx.snmp.SnmpTooBigException;
+import j86.com.sun.jmx.snmp.InetAddressAcl;
+import j86.com.sun.jmx.snmp.SnmpPeer;
+import j86.com.sun.jmx.snmp.SnmpParameters;
 // SNMP Runtime imports
 //
-import com.sun.jmx.snmp.SnmpPduFactoryBER;
-import com.sun.jmx.snmp.agent.SnmpMibAgent;
-import com.sun.jmx.snmp.agent.SnmpMibHandler;
-import com.sun.jmx.snmp.agent.SnmpUserDataFactory;
-import com.sun.jmx.snmp.agent.SnmpErrorHandlerAgent;
+import j86.com.sun.jmx.snmp.SnmpPduFactoryBER;
+import j86.j86.com.sun.jmx.snmp.agent.SnmpMibAgent;
+import j86.j86.com.sun.jmx.snmp.agent.SnmpMibHandler;
+import j86.j86.com.sun.jmx.snmp.agent.SnmpUserDataFactory;
+import j86.j86.com.sun.jmx.snmp.agent.SnmpErrorHandlerAgent;
 
-import com.sun.jmx.snmp.IPAcl.SnmpAcl;
+import j86.j86.com.sun.jmx.snmp.IPAcl.SnmpAcl;
 
-import com.sun.jmx.snmp.tasks.ThreadService;
+import j86.j86.com.sun.jmx.snmp.tasks.ThreadService;
 
 /**
  * Implements an adaptor on top of the SNMP protocol.
@@ -88,13 +88,13 @@ import com.sun.jmx.snmp.tasks.ThreadService;
  * changed by specifying a port number:
  * <UL>
  * <LI>in the object constructor</LI>
- * <LI>using the {@link com.sun.jmx.snmp.daemon.CommunicatorServer#setPort
+ * <LI>using the {@link j86.j86.j86.com.sun.jmx.snmp.daemon.CommunicatorServer#setPort
  *     setPort} method before starting the adaptor</LI>
  * </UL>
  * The default object name is defined by {@link
- * com.sun.jmx.snmp.ServiceName#DOMAIN com.sun.jmx.snmp.ServiceName.DOMAIN}
- * and {@link com.sun.jmx.snmp.ServiceName#SNMP_ADAPTOR_SERVER
- * com.sun.jmx.snmp.ServiceName.SNMP_ADAPTOR_SERVER}.
+ * j86.com.sun.jmx.snmp.ServiceName#DOMAIN com.sun.jmx.snmp.ServiceName.DOMAIN}
+ * and {@link j86.com.sun.jmx.snmp.ServiceName#SNMP_ADAPTOR_SERVER
+ * j86.com.sun.jmx.snmp.ServiceName.SNMP_ADAPTOR_SERVER}.
  * <P>
  * The SNMP protocol adaptor supports versions 1 and 2 of the SNMP protocol
  * in a stateless way: when it receives a v1 request, it replies with a v1
@@ -325,7 +325,7 @@ public class SnmpAdaptorServer extends CommunicatorServer
     private static int threadNumber = 6;
 
     static {
-        String s = System.getProperty("com.sun.jmx.snmp.threadnumber");
+        String s = System.getProperty("j86.com.sun.jmx.snmp.threadnumber");
 
         if (s != null) {
             try {
@@ -334,7 +334,7 @@ public class SnmpAdaptorServer extends CommunicatorServer
                 SNMP_ADAPTOR_LOGGER.logp(Level.FINER,
                         SnmpAdaptorServer.class.getName(),
                         "<static init>",
-                        "Got wrong value for com.sun.jmx.snmp.threadnumber: " +
+                        "Got wrong value for j86.com.sun.jmx.snmp.threadnumber: " +
                         s + ". Use the default value: " + threadNumber);
             }
         }
@@ -345,17 +345,17 @@ public class SnmpAdaptorServer extends CommunicatorServer
 
     /**
      * Initializes this SNMP protocol adaptor using the default port (161).
-     * Use the {@link com.sun.jmx.snmp.IPAcl.SnmpAcl} default
+     * Use the {@link j86.j86.com.sun.jmx.snmp.IPAcl.SnmpAcl} default
      * implementation of the <CODE>InetAddressAcl</CODE> interface.
      */
     public SnmpAdaptorServer() {
-        this(true, null, com.sun.jmx.snmp.ServiceName.SNMP_ADAPTOR_PORT,
+        this(true, null, j86.com.sun.jmx.snmp.ServiceName.SNMP_ADAPTOR_PORT,
              null) ;
     }
 
     /**
      * Initializes this SNMP protocol adaptor using the specified port.
-     * Use the {@link com.sun.jmx.snmp.IPAcl.SnmpAcl} default
+     * Use the {@link j86.j86.com.sun.jmx.snmp.IPAcl.SnmpAcl} default
      * implementation of the <CODE>InetAddressAcl</CODE> interface.
      *
      * @param port The port number for sending SNMP responses.
@@ -374,7 +374,7 @@ public class SnmpAdaptorServer extends CommunicatorServer
      * @since 1.5
      */
     public SnmpAdaptorServer(InetAddressAcl acl) {
-        this(false, acl, com.sun.jmx.snmp.ServiceName.SNMP_ADAPTOR_PORT,
+        this(false, acl, j86.com.sun.jmx.snmp.ServiceName.SNMP_ADAPTOR_PORT,
              null) ;
     }
 
@@ -382,13 +382,13 @@ public class SnmpAdaptorServer extends CommunicatorServer
      * Initializes this SNMP protocol adaptor using the default port (161)
      * and the
      * specified <CODE>InetAddress</CODE>.
-     * Use the {@link com.sun.jmx.snmp.IPAcl.SnmpAcl} default
+     * Use the {@link j86.j86.com.sun.jmx.snmp.IPAcl.SnmpAcl} default
      * implementation of the <CODE>InetAddressAcl</CODE> interface.
      *
      * @param addr The IP address to bind.
      */
     public SnmpAdaptorServer(InetAddress addr) {
-        this(true, null, com.sun.jmx.snmp.ServiceName.SNMP_ADAPTOR_PORT,
+        this(true, null, j86.com.sun.jmx.snmp.ServiceName.SNMP_ADAPTOR_PORT,
              addr) ;
     }
 
@@ -409,7 +409,7 @@ public class SnmpAdaptorServer extends CommunicatorServer
     /**
      * Initializes this SNMP protocol adaptor using the specified port and the
      * specified <CODE>InetAddress</CODE>.
-     * Use the {@link com.sun.jmx.snmp.IPAcl.SnmpAcl} default
+     * Use the {@link j86.j86.com.sun.jmx.snmp.IPAcl.SnmpAcl} default
      * implementation of the <CODE>InetAddressAcl</CODE> interface.
      *
      * @param port The port number for sending SNMP responses.
@@ -430,7 +430,7 @@ public class SnmpAdaptorServer extends CommunicatorServer
      * @since 1.5
      */
     public SnmpAdaptorServer(InetAddressAcl acl, InetAddress addr) {
-        this(false, acl, com.sun.jmx.snmp.ServiceName.SNMP_ADAPTOR_PORT,
+        this(false, acl, j86.com.sun.jmx.snmp.ServiceName.SNMP_ADAPTOR_PORT,
              addr) ;
     }
 
@@ -456,7 +456,7 @@ public class SnmpAdaptorServer extends CommunicatorServer
      * the ACL mechanism (by setting the <CODE>useAcl</CODE> parameter to
      * false).
      * <br>This constructor must be used in particular with a platform that
-     * does not support the <CODE>java.security.acl</CODE> package like pJava.
+     * does not support the <CODE>j86.j86.java.security.acl</CODE> package like pJava.
      *
      * @param useAcl Specifies if this new SNMP adaptor uses the ACL mechanism.
      * If the specified parameter is set to <CODE>true</CODE>, this
@@ -541,12 +541,12 @@ public class SnmpAdaptorServer extends CommunicatorServer
      *
      * @param c The number of managers.
      *
-     * @exception java.lang.IllegalStateException This method has been invoked
+     * @exception j86.java.lang.IllegalStateException This method has been invoked
      * while the communicator was <CODE>ONLINE</CODE> or <CODE>STARTING</CODE>.
      */
     @Override
     public void setMaxActiveClientCount(int c)
-        throws java.lang.IllegalStateException {
+        throws j86.java.lang.IllegalStateException {
         super.setMaxActiveClientCount(c);
     }
 
@@ -649,12 +649,12 @@ public class SnmpAdaptorServer extends CommunicatorServer
      *
      * @param s The buffer size.
      *
-     * @exception java.lang.IllegalStateException This method has been invoked
+     * @exception j86.java.lang.IllegalStateException This method has been invoked
      * while the communicator was <CODE>ONLINE</CODE> or <CODE>STARTING</CODE>.
      */
     @Override
     public void setBufferSize(Integer s)
-        throws java.lang.IllegalStateException {
+        throws j86.java.lang.IllegalStateException {
         if ((state == ONLINE) || (state == STARTING)) {
             throw new IllegalStateException("Stop server before carrying out"+
                                             " this operation");
@@ -733,7 +733,7 @@ public class SnmpAdaptorServer extends CommunicatorServer
      * Set the user-data factory of this SNMP protocol adaptor.
      *
      * @param factory The factory object (null means no factory).
-     * @see com.sun.jmx.snmp.agent.SnmpUserDataFactory
+     * @see j86.j86.com.sun.jmx.snmp.agent.SnmpUserDataFactory
      */
     @Override
     public void setUserDataFactory(SnmpUserDataFactory factory) {
@@ -744,7 +744,7 @@ public class SnmpAdaptorServer extends CommunicatorServer
      * Get the user-data factory associated with this SNMP protocol adaptor.
      *
      * @return The factory object (null means no factory).
-     * @see com.sun.jmx.snmp.agent.SnmpUserDataFactory
+     * @see j86.j86.com.sun.jmx.snmp.agent.SnmpUserDataFactory
      */
     @Override
     public SnmpUserDataFactory getUserDataFactory() {
@@ -1057,10 +1057,10 @@ public class SnmpAdaptorServer extends CommunicatorServer
      * registered in the MBean server.
      * If the name of the SNMP protocol adaptor MBean is not specified,
      * it is initialized with the default value:
-     * {@link com.sun.jmx.snmp.ServiceName#DOMAIN
-     *   com.sun.jmx.snmp.ServiceName.DOMAIN}:{@link
-     * com.sun.jmx.snmp.ServiceName#SNMP_ADAPTOR_SERVER
-     * com.sun.jmx.snmp.ServiceName.SNMP_ADAPTOR_SERVER}.
+     * {@link j86.com.sun.jmx.snmp.ServiceName#DOMAIN
+     *   j86.com.sun.jmx.snmp.ServiceName.DOMAIN}:{@link
+     * j86.com.sun.jmx.snmp.ServiceName#SNMP_ADAPTOR_SERVER
+     * j86.com.sun.jmx.snmp.ServiceName.SNMP_ADAPTOR_SERVER}.
      * If any exception is raised, the SNMP protocol adaptor MBean will
      * not be registered in the MBean server.
      *
@@ -1069,15 +1069,15 @@ public class SnmpAdaptorServer extends CommunicatorServer
      *
      * @return The name of the SNMP protocol adaptor registered.
      *
-     * @exception java.lang.Exception
+     * @exception j86.java.lang.Exception
      */
     @Override
     public ObjectName preRegister(MBeanServer server, ObjectName name)
-        throws java.lang.Exception {
+        throws j86.java.lang.Exception {
 
         if (name == null) {
             name = new ObjectName(server.getDefaultDomain() + ":" +
-                             com.sun.jmx.snmp.ServiceName.SNMP_ADAPTOR_SERVER);
+                             j86.com.sun.jmx.snmp.ServiceName.SNMP_ADAPTOR_SERVER);
         }
         return (super.preRegister(server, name));
     }
@@ -1094,7 +1094,7 @@ public class SnmpAdaptorServer extends CommunicatorServer
      * Not used in this context.
      */
     @Override
-    public void preDeregister() throws java.lang.Exception {
+    public void preDeregister() throws j86.java.lang.Exception {
         super.preDeregister();
     }
 
@@ -1456,7 +1456,7 @@ public class SnmpAdaptorServer extends CommunicatorServer
                         pk = new DatagramPacket(ob , 1, address, port);
                     else
                         pk = new DatagramPacket(ob , 1,
-                                 java.net.InetAddress.getLocalHost(), port);
+                                 j86.java.net.InetAddress.getLocalHost(), port);
 
                     if (SNMP_ADAPTOR_LOGGER.isLoggable(Level.FINER)) {
                         SNMP_ADAPTOR_LOGGER.logp(Level.FINER, dbgTag,
@@ -2312,7 +2312,7 @@ public class SnmpAdaptorServer extends CommunicatorServer
      * @param trapOid The OID identifying the trap.
      * @param varBindList A list of <CODE>SnmpVarBind</CODE> instances or null.
      *
-     * @return A vector of {@link com.sun.jmx.snmp.daemon.SnmpInformRequest}
+     * @return A vector of {@link j86.j86.j86.com.sun.jmx.snmp.daemon.SnmpInformRequest}
      *         objects.
      *         <P>If there is no destination host for this inform request,
      *         the returned vector will be empty.
@@ -2716,7 +2716,7 @@ public class SnmpAdaptorServer extends CommunicatorServer
 
         // For the trap time, use the time the agent started ...
         //
-        startUpTime= java.lang.System.currentTimeMillis();
+        startUpTime= j86.java.lang.System.currentTimeMillis();
         maxActiveClientCount = 10;
 
         // Create the default message factory

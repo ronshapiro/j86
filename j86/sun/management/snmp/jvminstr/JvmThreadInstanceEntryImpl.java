@@ -22,30 +22,30 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.management.snmp.jvminstr;
+package j86.j86.j86.sun.management.snmp.jvminstr;
 
 // java imports
 //
-import java.io.Serializable;
-import java.lang.management.ThreadInfo;
-import java.lang.management.ManagementFactory;
-import java.lang.management.ThreadMXBean;
+import j86.java.io.Serializable;
+import j86.j86.java.lang.management.ThreadInfo;
+import j86.j86.java.lang.management.ManagementFactory;
+import j86.j86.java.lang.management.ThreadMXBean;
 
 // jmx imports
 //
-import com.sun.jmx.snmp.SnmpStatusException;
+import j86.com.sun.jmx.snmp.SnmpStatusException;
 
 // jdmk imports
 //
-import com.sun.jmx.snmp.agent.SnmpMib;
-import com.sun.jmx.snmp.SnmpOid;
-import com.sun.jmx.snmp.SnmpDefinitions;
-import com.sun.jmx.snmp.SnmpOidTable;
-import com.sun.jmx.snmp.SnmpOidRecord;
+import j86.j86.com.sun.jmx.snmp.agent.SnmpMib;
+import j86.com.sun.jmx.snmp.SnmpOid;
+import j86.com.sun.jmx.snmp.SnmpDefinitions;
+import j86.com.sun.jmx.snmp.SnmpOidTable;
+import j86.com.sun.jmx.snmp.SnmpOidRecord;
 
-import sun.management.snmp.jvmmib.JvmThreadInstanceEntryMBean;
-import sun.management.snmp.jvmmib.JVM_MANAGEMENT_MIBOidTable;
-import sun.management.snmp.util.MibLogger;
+import j86.j86.j86.sun.management.snmp.jvmmib.JvmThreadInstanceEntryMBean;
+import j86.j86.j86.sun.management.snmp.jvmmib.JVM_MANAGEMENT_MIBOidTable;
+import j86.j86.j86.sun.management.snmp.util.MibLogger;
 
 /**
  * The class is used for implementing the "JvmThreadInstanceEntry" group.

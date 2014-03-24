@@ -23,12 +23,12 @@
  * questions.
  */
 
-package java.lang;
+package j86.java.lang;
 
-import java.security.*;
-import java.util.Enumeration;
-import java.util.Hashtable;
-import java.util.StringTokenizer;
+import j86.java.security.*;
+import j86.java.util.Enumeration;
+import j86.java.util.Hashtable;
+import j86.java.util.StringTokenizer;
 
 /**
  * This class is for runtime permissions. A RuntimePermission
@@ -264,7 +264,7 @@ import java.util.StringTokenizer;
  *   <td>This grants code permission to define a class
  * in a particular package. This is dangerous because malicious
  * code with this permission may define rogue classes in
- * trusted packages like <code>java.security</code> or <code>java.lang</code>,
+ * trusted packages like <code>j86.java.security</code> or <code>j86.java.lang</code>,
  * for example.</td>
  * </tr>
  *
@@ -313,7 +313,7 @@ import java.util.StringTokenizer;
  * <tr>
  *   <td>preferences</td>
  *   <td>Represents the permission required to get access to the
- *   java.util.prefs.Preferences implementations user or system root
+ *   j86.j86.java.util.prefs.Preferences implementations user or system root
  *   which in turn allows retrieval or update operations within the
  *   Preferences persistent backing store.) </td>
  *   <td>This permission allows the user to read from or write to the
@@ -335,11 +335,11 @@ import java.util.StringTokenizer;
  * </tr>
  * </table>
  *
- * @see java.security.BasicPermission
- * @see java.security.Permission
- * @see java.security.Permissions
- * @see java.security.PermissionCollection
- * @see java.lang.SecurityManager
+ * @see j86.java.security.BasicPermission
+ * @see j86.java.security.Permission
+ * @see j86.java.security.Permissions
+ * @see j86.java.security.PermissionCollection
+ * @see j86.java.lang.SecurityManager
  *
  *
  * @author Marianne Mueller

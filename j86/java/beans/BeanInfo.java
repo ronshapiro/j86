@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.beans;
+package j86.java.beans;
 
-import java.awt.Image;
+import j86.java.awt.Image;
 
 /**
  * Use the {@code BeanInfo} interface

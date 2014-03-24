@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.jvmstat.monitor.event;
+package j86.j86.sun.jvmstat.monitor.event;
 
-import java.util.EventObject;
-import sun.jvmstat.monitor.MonitoredHost;
+import j86.java.util.EventObject;
+import j86.sun.jvmstat.monitor.MonitoredHost;
 
 /**
  * Base class for events emitted by a {@link MonitoredHost}.

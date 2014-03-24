@@ -22,26 +22,26 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.lang;
+package j86.java.lang;
 
-import java.io.*;
-import java.lang.reflect.Executable;
-import java.lang.annotation.Annotation;
-import java.security.AccessControlContext;
-import java.util.Properties;
-import java.util.PropertyPermission;
-import java.util.StringTokenizer;
-import java.util.Map;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.security.AllPermission;
-import java.nio.channels.Channel;
-import java.nio.channels.spi.SelectorProvider;
-import sun.nio.ch.Interruptible;
-import sun.reflect.CallerSensitive;
-import sun.reflect.Reflection;
-import sun.security.util.SecurityConstants;
-import sun.reflect.annotation.AnnotationType;
+import j86.java.io.*;
+import j86.j86.j86.java.lang.reflect.Executable;
+import j86.j86.java.lang.annotation.Annotation;
+import j86.java.security.AccessControlContext;
+import j86.java.util.Properties;
+import j86.java.util.PropertyPermission;
+import j86.java.util.StringTokenizer;
+import j86.java.util.Map;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.security.AllPermission;
+import j86.j86.java.nio.channels.Channel;
+import j86.j86.j86.java.nio.channels.spi.SelectorProvider;
+import j86.j86.j86.sun.nio.ch.Interruptible;
+import j86.sun.reflect.CallerSensitive;
+import j86.sun.reflect.Reflection;
+import j86.sun.security.util.SecurityConstants;
+import j86.j86.sun.reflect.annotation.AnnotationType;
 
 /**
  * The <code>System</code> class contains several useful class fields
@@ -96,16 +96,16 @@ public final class System {
      * <p>
      * See the <code>println</code> methods in class <code>PrintStream</code>.
      *
-     * @see     java.io.PrintStream#println()
-     * @see     java.io.PrintStream#println(boolean)
-     * @see     java.io.PrintStream#println(char)
-     * @see     java.io.PrintStream#println(char[])
-     * @see     java.io.PrintStream#println(double)
-     * @see     java.io.PrintStream#println(float)
-     * @see     java.io.PrintStream#println(int)
-     * @see     java.io.PrintStream#println(long)
-     * @see     java.io.PrintStream#println(java.lang.Object)
-     * @see     java.io.PrintStream#println(java.lang.String)
+     * @see     j86.java.io.PrintStream#println()
+     * @see     j86.java.io.PrintStream#println(boolean)
+     * @see     j86.java.io.PrintStream#println(char)
+     * @see     j86.java.io.PrintStream#println(char[])
+     * @see     j86.java.io.PrintStream#println(double)
+     * @see     j86.java.io.PrintStream#println(float)
+     * @see     j86.java.io.PrintStream#println(int)
+     * @see     j86.java.io.PrintStream#println(long)
+     * @see     j86.java.io.PrintStream#println(j86.java.lang.Object)
+     * @see     j86.java.io.PrintStream#println(j86.java.lang.String)
      */
     public final static PrintStream out = null;
 
@@ -143,7 +143,7 @@ public final class System {
      *        reassigning of the standard input stream.
      *
      * @see SecurityManager#checkPermission
-     * @see java.lang.RuntimePermission
+     * @see j86.java.lang.RuntimePermission
      *
      * @since   JDK1.1
      */
@@ -167,7 +167,7 @@ public final class System {
      *        reassigning of the standard output stream.
      *
      * @see SecurityManager#checkPermission
-     * @see java.lang.RuntimePermission
+     * @see j86.java.lang.RuntimePermission
      *
      * @since   JDK1.1
      */
@@ -191,7 +191,7 @@ public final class System {
      *        reassigning of the standard error output stream.
      *
      * @see SecurityManager#checkPermission
-     * @see java.lang.RuntimePermission
+     * @see j86.java.lang.RuntimePermission
      *
      * @since   JDK1.1
      */
@@ -202,7 +202,7 @@ public final class System {
 
     private static volatile Console cons = null;
     /**
-     * Returns the unique {@link java.io.Console Console} object associated
+     * Returns the unique {@link j86.java.io.Console Console} object associated
      * with the current Java virtual machine, if any.
      *
      * @return  The system console, if any, otherwise <tt>null</tt>.
@@ -212,7 +212,7 @@ public final class System {
      public static Console console() {
          if (cons == null) {
              synchronized (System.class) {
-                 cons = sun.misc.SharedSecrets.getJavaIOAccess().console();
+                 cons = j86.sun.misc.SharedSecrets.getJavaIOAccess().console();
              }
          }
          return cons;
@@ -223,12 +223,12 @@ public final class System {
      * Java virtual machine.
      *
      * <p> This method returns the channel obtained by invoking the
-     * {@link java.nio.channels.spi.SelectorProvider#inheritedChannel
+     * {@link j86.j86.j86.java.nio.channels.spi.SelectorProvider#inheritedChannel
      * inheritedChannel} method of the system-wide default
-     * {@link java.nio.channels.spi.SelectorProvider} object. </p>
+     * {@link j86.j86.j86.java.nio.channels.spi.SelectorProvider} object. </p>
      *
      * <p> In addition to the network-oriented channels described in
-     * {@link java.nio.channels.spi.SelectorProvider#inheritedChannel
+     * {@link j86.j86.j86.java.nio.channels.spi.SelectorProvider#inheritedChannel
      * inheritedChannel}, this method may return other kinds of
      * channels in the future.
      *
@@ -279,12 +279,12 @@ public final class System {
      *             doesn't allow it to be replaced.
      * @see #getSecurityManager
      * @see SecurityManager#checkPermission
-     * @see java.lang.RuntimePermission
+     * @see j86.java.lang.RuntimePermission
      */
     public static
     void setSecurityManager(final SecurityManager s) {
         try {
-            s.checkPackageAccess("java.lang");
+            s.checkPackageAccess("j86.java.lang");
         } catch (Exception e) {
             // no-op
         }
@@ -348,7 +348,7 @@ public final class System {
      *
      * @return  the difference, measured in milliseconds, between
      *          the current time and midnight, January 1, 1970 UTC.
-     * @see     java.util.Date
+     * @see     j86.java.util.Date
      */
     public static native long currentTimeMillis();
 
@@ -579,7 +579,7 @@ public final class System {
      *     <td>Java class path</td></tr>
      * <tr><td><code>java.library.path</code></td>
      *     <td>List of paths to search when loading libraries</td></tr>
-     * <tr><td><code>java.io.tmpdir</code></td>
+     * <tr><td><code>j86.java.io.tmpdir</code></td>
      *     <td>Default temp file path</td></tr>
      * <tr><td><code>java.compiler</code></td>
      *     <td>Name of JIT compiler to use</td></tr>
@@ -617,9 +617,9 @@ public final class System {
      *             <code>checkPropertiesAccess</code> method doesn't allow access
      *              to the system properties.
      * @see        #setProperties
-     * @see        java.lang.SecurityException
-     * @see        java.lang.SecurityManager#checkPropertiesAccess()
-     * @see        java.util.Properties
+     * @see        j86.java.lang.SecurityException
+     * @see        j86.java.lang.SecurityManager#checkPropertiesAccess()
+     * @see        j86.java.util.Properties
      */
     public static Properties getProperties() {
         SecurityManager sm = getSecurityManager();
@@ -665,9 +665,9 @@ public final class System {
      *             <code>checkPropertiesAccess</code> method doesn't allow access
      *              to the system properties.
      * @see        #getProperties
-     * @see        java.util.Properties
-     * @see        java.lang.SecurityException
-     * @see        java.lang.SecurityManager#checkPropertiesAccess()
+     * @see        j86.java.util.Properties
+     * @see        j86.java.lang.SecurityException
+     * @see        j86.java.lang.SecurityManager#checkPropertiesAccess()
      */
     public static void setProperties(Properties props) {
         SecurityManager sm = getSecurityManager();
@@ -703,9 +703,9 @@ public final class System {
      *             <code>null</code>.
      * @exception  IllegalArgumentException if <code>key</code> is empty.
      * @see        #setProperty
-     * @see        java.lang.SecurityException
-     * @see        java.lang.SecurityManager#checkPropertyAccess(java.lang.String)
-     * @see        java.lang.System#getProperties()
+     * @see        j86.java.lang.SecurityException
+     * @see        j86.java.lang.SecurityManager#checkPropertyAccess(java.lang.String)
+     * @see        j86.java.lang.System#getProperties()
      */
     public static String getProperty(String key) {
         checkKey(key);
@@ -740,8 +740,8 @@ public final class System {
      *             <code>null</code>.
      * @exception  IllegalArgumentException if <code>key</code> is empty.
      * @see        #setProperty
-     * @see        java.lang.SecurityManager#checkPropertyAccess(java.lang.String)
-     * @see        java.lang.System#getProperties()
+     * @see        j86.java.lang.SecurityManager#checkPropertyAccess(java.lang.String)
+     * @see        j86.java.lang.System#getProperties()
      */
     public static String getProperty(String key, String def) {
         checkKey(key);
@@ -776,9 +776,9 @@ public final class System {
      *             <code>value</code> is <code>null</code>.
      * @exception  IllegalArgumentException if <code>key</code> is empty.
      * @see        #getProperty
-     * @see        java.lang.System#getProperty(java.lang.String)
-     * @see        java.lang.System#getProperty(java.lang.String, java.lang.String)
-     * @see        java.util.PropertyPermission
+     * @see        j86.java.lang.System#getProperty(java.lang.String)
+     * @see        j86.java.lang.System#getProperty(java.lang.String, java.lang.String)
+     * @see        j86.java.util.PropertyPermission
      * @see        SecurityManager#checkPermission
      * @since      1.2
      */
@@ -815,9 +815,9 @@ public final class System {
      * @exception  IllegalArgumentException if <code>key</code> is empty.
      * @see        #getProperty
      * @see        #setProperty
-     * @see        java.util.Properties
-     * @see        java.lang.SecurityException
-     * @see        java.lang.SecurityManager#checkPropertiesAccess()
+     * @see        j86.java.util.Properties
+     * @see        j86.java.lang.SecurityException
+     * @see        j86.java.lang.SecurityManager#checkPropertiesAccess()
      * @since 1.5
      */
     public static String clearProperty(String key) {
@@ -935,7 +935,7 @@ public final class System {
      * @see    ProcessBuilder#environment()
      * @since  1.5
      */
-    public static java.util.Map<String,String> getenv() {
+    public static j86.java.util.Map<String,String> getenv() {
         SecurityManager sm = getSecurityManager();
         if (sm != null) {
             sm.checkPermission(new RuntimePermission("getenv.*"));
@@ -962,7 +962,7 @@ public final class System {
      * @throws  SecurityException
      *        if a security manager exists and its <code>checkExit</code>
      *        method doesn't allow exit with the specified status.
-     * @see        java.lang.Runtime#exit(int)
+     * @see        j86.java.lang.Runtime#exit(int)
      */
     public static void exit(int status) {
         Runtime.getRuntime().exit(status);
@@ -984,7 +984,7 @@ public final class System {
      * Runtime.getRuntime().gc()
      * </pre></blockquote>
      *
-     * @see     java.lang.Runtime#gc()
+     * @see     j86.java.lang.Runtime#gc()
      */
     public static void gc() {
         Runtime.getRuntime().gc();
@@ -1006,7 +1006,7 @@ public final class System {
      * Runtime.getRuntime().runFinalization()
      * </pre></blockquote>
      *
-     * @see     java.lang.Runtime#runFinalization()
+     * @see     j86.java.lang.Runtime#runFinalization()
      */
     public static void runFinalization() {
         Runtime.getRuntime().runFinalization();
@@ -1032,9 +1032,9 @@ public final class System {
      *        if a security manager exists and its <code>checkExit</code>
      *        method doesn't allow the exit.
      *
-     * @see     java.lang.Runtime#exit(int)
-     * @see     java.lang.Runtime#gc()
-     * @see     java.lang.SecurityManager#checkExit(int)
+     * @see     j86.java.lang.Runtime#exit(int)
+     * @see     j86.java.lang.Runtime#gc()
+     * @see     j86.java.lang.SecurityManager#checkExit(int)
      * @since   JDK1.1
      */
     @Deprecated
@@ -1075,8 +1075,8 @@ public final class System {
      *             a native library image by the host system.
      * @exception  NullPointerException if <code>filename</code> is
      *             <code>null</code>
-     * @see        java.lang.Runtime#load(java.lang.String)
-     * @see        java.lang.SecurityManager#checkLink(java.lang.String)
+     * @see        j86.java.lang.Runtime#load(java.lang.String)
+     * @see        j86.java.lang.SecurityManager#checkLink(java.lang.String)
      */
     @CallerSensitive
     public static void load(String filename) {
@@ -1111,8 +1111,8 @@ public final class System {
      *             native library image by the host system.
      * @exception  NullPointerException if <code>libname</code> is
      *             <code>null</code>
-     * @see        java.lang.Runtime#loadLibrary(java.lang.String)
-     * @see        java.lang.SecurityManager#checkLink(java.lang.String)
+     * @see        j86.java.lang.Runtime#loadLibrary(java.lang.String)
+     * @see        j86.java.lang.SecurityManager#checkLink(java.lang.String)
      */
     @CallerSensitive
     public static void loadLibrary(String libname) {
@@ -1127,8 +1127,8 @@ public final class System {
      * @return     a platform-dependent native library name.
      * @exception  NullPointerException if <code>libname</code> is
      *             <code>null</code>
-     * @see        java.lang.System#loadLibrary(java.lang.String)
-     * @see        java.lang.ClassLoader#findLibrary(java.lang.String)
+     * @see        j86.java.lang.System#loadLibrary(java.lang.String)
+     * @see        j86.java.lang.ClassLoader#findLibrary(java.lang.String)
      * @since      1.2
      */
     public static native String mapLibraryName(String libname);
@@ -1170,17 +1170,17 @@ public final class System {
         // internal implementation use only, these properties should be
         // removed from the system properties.
         //
-        // See java.lang.Integer.IntegerCache and the
-        // sun.misc.VM.saveAndRemoveProperties method for example.
+        // See j86.java.lang.Integer.IntegerCache and the
+        // j86.sun.misc.VM.saveAndRemoveProperties method for example.
         //
         // Save a private copy of the system properties object that
         // can only be accessed by the internal implementation.  Remove
         // certain system properties that are not intended for public access.
-        sun.misc.VM.saveAndRemoveProperties(props);
+        j86.sun.misc.VM.saveAndRemoveProperties(props);
 
 
         lineSeparator = props.getProperty("line.separator");
-        sun.misc.Version.init();
+        j86.sun.misc.Version.init();
 
         FileInputStream fdIn = new FileInputStream(FileDescriptor.in);
         FileOutputStream fdOut = new FileOutputStream(FileDescriptor.out);
@@ -1189,7 +1189,7 @@ public final class System {
         setOut0(newPrintStream(fdOut, props.getProperty("sun.stdout.encoding")));
         setErr0(newPrintStream(fdErr, props.getProperty("sun.stderr.encoding")));
 
-        // Load the zip library now in order to keep java.util.zip.ZipFile
+        // Load the zip library now in order to keep j86.j86.java.util.zip.ZipFile
         // from trying to use itself to load this library later.
         loadLibrary("zip");
 
@@ -1198,9 +1198,9 @@ public final class System {
 
         // Initialize any miscellenous operating system settings that need to be
         // set for the class libraries. Currently this is no-op everywhere except
-        // for Windows where the process-wide error mode is set before the java.io
+        // for Windows where the process-wide error mode is set before the j86.java.io
         // classes are used.
-        sun.misc.VM.initializeOSEnvironment();
+        j86.sun.misc.VM.initializeOSEnvironment();
 
         // The main thread is not added to its thread group in the same
         // way as other threads; we must do it ourselves here.
@@ -1211,16 +1211,16 @@ public final class System {
         setJavaLangAccess();
 
         // Subsystems that are invoked during initialization can invoke
-        // sun.misc.VM.isBooted() in order to avoid doing things that should
+        // j86.sun.misc.VM.isBooted() in order to avoid doing things that should
         // wait until the application class loader has been set up.
         // IMPORTANT: Ensure that this remains the last initialization action!
-        sun.misc.VM.booted();
+        j86.sun.misc.VM.booted();
     }
 
     private static void setJavaLangAccess() {
-        // Allow privileged classes outside of java.lang
-        sun.misc.SharedSecrets.setJavaLangAccess(new sun.misc.JavaLangAccess(){
-            public sun.reflect.ConstantPool getConstantPool(Class<?> klass) {
+        // Allow privileged classes outside of j86.java.lang
+        j86.sun.misc.SharedSecrets.setJavaLangAccess(new sun.misc.JavaLangAccess(){
+            public j86.sun.reflect.ConstantPool getConstantPool(Class<?> klass) {
                 return klass.getConstantPool();
             }
             public boolean casAnnotationType(Class<?> klass, AnnotationType oldType, AnnotationType newType) {

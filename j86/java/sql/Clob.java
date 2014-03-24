@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.sql;
+package j86.java.sql;
 
-import java.io.Reader;
+import j86.java.io.Reader;
 
 /**
  * The mapping in the Java&trade; programming language
@@ -96,10 +96,10 @@ public interface Clob {
 
   /**
    * Retrieves the <code>CLOB</code> value designated by this <code>Clob</code>
-   * object as a <code>java.io.Reader</code> object (or as a stream of
+   * object as a <code>j86.java.io.Reader</code> object (or as a stream of
    * characters).
    *
-   * @return a <code>java.io.Reader</code> object containing the
+   * @return a <code>j86.java.io.Reader</code> object containing the
    *         <code>CLOB</code> data
    * @exception SQLException if there is an error accessing the
    *            <code>CLOB</code> value
@@ -108,13 +108,13 @@ public interface Clob {
    * @see #setCharacterStream
    * @since 1.2
    */
-  java.io.Reader getCharacterStream() throws SQLException;
+  j86.java.io.Reader getCharacterStream() throws SQLException;
 
   /**
    * Retrieves the <code>CLOB</code> value designated by this <code>Clob</code>
    * object as an ascii stream.
    *
-   * @return a <code>java.io.InputStream</code> object containing the
+   * @return a <code>j86.java.io.InputStream</code> object containing the
    *         <code>CLOB</code> data
    * @exception SQLException if there is an error accessing the
    *            <code>CLOB</code> value
@@ -123,7 +123,7 @@ public interface Clob {
    * @see #setAsciiStream
    * @since 1.2
    */
-  java.io.InputStream getAsciiStream() throws SQLException;
+  j86.java.io.InputStream getAsciiStream() throws SQLException;
 
   /**
    * Retrieves the character position at which the specified substring
@@ -254,7 +254,7 @@ public interface Clob {
      *
      * @since 1.4
      */
-    java.io.OutputStream setAsciiStream(long pos) throws SQLException;
+    j86.java.io.OutputStream setAsciiStream(long pos) throws SQLException;
 
     /**
      * Retrieves a stream to be used to write a stream of Unicode characters
@@ -284,7 +284,7 @@ public interface Clob {
      *
      * @since 1.4
      */
-    java.io.Writer setCharacterStream(long pos) throws SQLException;
+    j86.java.io.Writer setCharacterStream(long pos) throws SQLException;
 
     /**
      * Truncates the <code>CLOB</code> value that this <code>Clob</code>

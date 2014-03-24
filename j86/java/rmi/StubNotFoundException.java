@@ -23,19 +23,19 @@
  * questions.
  */
 
-package java.rmi;
+package j86.java.rmi;
 
 /**
  * A <code>StubNotFoundException</code> is thrown if a valid stub class
  * could not be found for a remote object when it is exported.
  * A <code>StubNotFoundException</code> may also be
  * thrown when an activatable object is registered via the
- * <code>java.rmi.activation.Activatable.register</code> method.
+ * <code>j86.j86.java.rmi.activation.Activatable.register</code> method.
  *
  * @author  Roger Riggs
  * @since   JDK1.1
- * @see     java.rmi.server.UnicastRemoteObject
- * @see     java.rmi.activation.Activatable
+ * @see     j86.j86.java.rmi.server.UnicastRemoteObject
+ * @see     j86.j86.java.rmi.activation.Activatable
  */
 public class StubNotFoundException extends RemoteException {
 

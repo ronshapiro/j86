@@ -24,10 +24,10 @@
  */
 
 
-package com.sun.jmx.snmp;
+package j86.com.sun.jmx.snmp;
 
-import java.net.InetAddress;
-import java.net.UnknownHostException;
+import j86.java.net.InetAddress;
+import j86.java.net.UnknownHostException;
 
 /**
  * Represents an SNMP string.

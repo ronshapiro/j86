@@ -33,9 +33,9 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package java.util.concurrent.atomic;
-import java.io.Serializable;
-import java.util.function.LongBinaryOperator;
+package j86.j86.j86.java.util.concurrent.atomic;
+import j86.java.io.Serializable;
+import j86.j86.java.util.function.LongBinaryOperator;
 
 /**
  * One or more variables that together maintain a running {@code long}
@@ -267,7 +267,7 @@ public class LongAccumulator extends Striped64 implements Serializable {
 
     /**
      * Returns a
-     * <a href="../../../../serialized-form.html#java.util.concurrent.atomic.LongAccumulator.SerializationProxy">
+     * <a href="../../../../serialized-form.html#j86.j86.j86.java.util.concurrent.atomic.LongAccumulator.SerializationProxy">
      * SerializationProxy</a>
      * representing the state of this instance.
      *
@@ -280,11 +280,11 @@ public class LongAccumulator extends Striped64 implements Serializable {
 
     /**
      * @param s the stream
-     * @throws java.io.InvalidObjectException always
+     * @throws j86.java.io.InvalidObjectException always
      */
-    private void readObject(java.io.ObjectInputStream s)
-        throws java.io.InvalidObjectException {
-        throw new java.io.InvalidObjectException("Proxy required");
+    private void readObject(j86.java.io.ObjectInputStream s)
+        throws j86.java.io.InvalidObjectException {
+        throw new j86.java.io.InvalidObjectException("Proxy required");
     }
 
 }

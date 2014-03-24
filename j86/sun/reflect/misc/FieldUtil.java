@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.reflect.misc;
+package j86.j86.sun.reflect.misc;
 
-import java.lang.reflect.Field;
+import j86.j86.j86.java.lang.reflect.Field;
 
 /*
  * Create a trampoline class.

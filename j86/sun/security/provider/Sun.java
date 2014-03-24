@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.security.provider;
+package j86.sun.security.provider;
 
-import java.util.*;
-import java.security.*;
+import j86.java.util.*;
+import j86.java.security.*;
 
-import sun.security.action.PutAllAction;
+import j86.sun.security.action.PutAllAction;
 
 /**
  * The SUN Security Provider.

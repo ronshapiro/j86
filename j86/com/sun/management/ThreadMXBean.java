@@ -23,9 +23,9 @@
  * questions.
  */
 
-package com.sun.management;
+package com.j86.sun.management;
 
-import java.util.Map;
+import j86.java.util.Map;
 
 /**
  * Platform-specific management interface for the thread system
@@ -39,7 +39,7 @@ import java.util.Map;
  */
 
 @jdk.Exported
-public interface ThreadMXBean extends java.lang.management.ThreadMXBean {
+public interface ThreadMXBean extends j86.j86.java.lang.management.ThreadMXBean {
     /**
      * Returns the total CPU time for each thread whose ID is
      * in the input array {@code ids} in nanoseconds.
@@ -62,7 +62,7 @@ public interface ThreadMXBean extends java.lang.management.ThreadMXBean {
      * @throws NullPointerException if {@code ids} is {@code null}
      * @throws IllegalArgumentException if any element in the input array
      *         {@code ids} is {@code <=} {@code 0}.
-     * @throws java.lang.UnsupportedOperationException if the Java
+     * @throws j86.java.lang.UnsupportedOperationException if the Java
      *         virtual machine implementation does not support CPU time
      *         measurement.
      *
@@ -96,7 +96,7 @@ public interface ThreadMXBean extends java.lang.management.ThreadMXBean {
      * @throws NullPointerException if {@code ids} is {@code null}
      * @throws IllegalArgumentException if any element in the input array
      *         {@code ids} is {@code <=} {@code 0}.
-     * @throws java.lang.UnsupportedOperationException if the Java
+     * @throws j86.java.lang.UnsupportedOperationException if the Java
      *         virtual machine implementation does not support CPU time
      *         measurement.
      *
@@ -134,7 +134,7 @@ public interface ThreadMXBean extends java.lang.management.ThreadMXBean {
      * {@code -1} otherwise.
      *
      * @throws IllegalArgumentException if {@code id} {@code <=} {@code 0}.
-     * @throws java.lang.UnsupportedOperationException if the Java virtual
+     * @throws j86.java.lang.UnsupportedOperationException if the Java virtual
      *         machine implementation does not support thread memory allocation
      *         measurement.
      *
@@ -166,7 +166,7 @@ public interface ThreadMXBean extends java.lang.management.ThreadMXBean {
      * @throws NullPointerException if {@code ids} is {@code null}
      * @throws IllegalArgumentException if any element in the input array
      *         {@code ids} is {@code <=} {@code 0}.
-     * @throws java.lang.UnsupportedOperationException if the Java virtual
+     * @throws j86.java.lang.UnsupportedOperationException if the Java virtual
      *         machine implementation does not support thread memory allocation
      *         measurement.
      *
@@ -195,7 +195,7 @@ public interface ThreadMXBean extends java.lang.management.ThreadMXBean {
      * @return {@code true} if thread memory allocation measurement is enabled;
      *         {@code false} otherwise.
      *
-     * @throws java.lang.UnsupportedOperationException if the Java virtual
+     * @throws j86.java.lang.UnsupportedOperationException if the Java virtual
      *         machine does not support thread memory allocation measurement.
      *
      * @see #isThreadAllocatedMemorySupported
@@ -209,10 +209,10 @@ public interface ThreadMXBean extends java.lang.management.ThreadMXBean {
      * @param enable {@code true} to enable;
      *               {@code false} to disable.
      *
-     * @throws java.lang.UnsupportedOperationException if the Java virtual
+     * @throws j86.java.lang.UnsupportedOperationException if the Java virtual
      *         machine does not support thread memory allocation measurement.
      *
-     * @throws java.lang.SecurityException if a security manager
+     * @throws j86.java.lang.SecurityException if a security manager
      *         exists and the caller does not have
      *         ManagementPermission("control").
      *

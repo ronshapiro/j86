@@ -24,9 +24,9 @@
  */
 
 
-package java.util.logging;
+package j86.j86.java.util.logging;
 
-import java.io.*;
+import j86.java.io.*;
 
 /**
  * Stream based logging <tt>Handler</tt>.
@@ -34,7 +34,7 @@ import java.io.*;
  * This is primarily intended as a base class or support class to
  * be used in implementing other logging <tt>Handlers</tt>.
  * <p>
- * <tt>LogRecords</tt> are published to a given <tt>java.io.OutputStream</tt>.
+ * <tt>LogRecords</tt> are published to a given <tt>j86.java.io.OutputStream</tt>.
  * <p>
  * <b>Configuration:</b>
  * By default each <tt>StreamHandler</tt> is initialized using the following
@@ -51,7 +51,7 @@ import java.io.*;
  *         (defaults to no <tt>Filter</tt>). </li>
  * <li>   &lt;handler-name&gt;.formatter
  *        specifies the name of a <tt>Formatter</tt> class to use
- *        (defaults to <tt>java.util.logging.SimpleFormatter</tt>). </li>
+ *        (defaults to <tt>j86.j86.java.util.logging.SimpleFormatter</tt>). </li>
  * <li>   &lt;handler-name&gt;.encoding
  *        the name of the character set encoding to use (defaults to
  *        the default platform encoding). </li>
@@ -59,14 +59,14 @@ import java.io.*;
  * <p>
  * For example, the properties for {@code StreamHandler} would be:
  * <ul>
- * <li>   java.util.logging.StreamHandler.level=INFO </li>
- * <li>   java.util.logging.StreamHandler.formatter=java.util.logging.SimpleFormatter </li>
+ * <li>   j86.j86.java.util.logging.StreamHandler.level=INFO </li>
+ * <li>   j86.j86.java.util.logging.StreamHandler.formatter=java.util.logging.SimpleFormatter </li>
  * </ul>
  * <p>
  * For a custom handler, e.g. com.foo.MyHandler, the properties would be:
  * <ul>
  * <li>   com.foo.MyHandler.level=INFO </li>
- * <li>   com.foo.MyHandler.formatter=java.util.logging.SimpleFormatter </li>
+ * <li>   com.foo.MyHandler.formatter=j86.j86.java.util.logging.SimpleFormatter </li>
  * </ul>
  * <p>
  * @since 1.4
@@ -170,7 +170,7 @@ public class StreamHandler extends Handler {
      */
     @Override
     public synchronized void setEncoding(String encoding)
-                        throws SecurityException, java.io.UnsupportedEncodingException {
+                        throws SecurityException, j86.java.io.UnsupportedEncodingException {
         super.setEncoding(encoding);
         if (output == null) {
             return;

@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.print;
+package j86.sun.print;
 
-import javax.print.attribute.EnumSyntax;
-import javax.print.attribute.standard.MediaTray;
-import javax.print.attribute.standard.Media;
-import java.util.ArrayList;
+import j86.j86.javax.print.attribute.EnumSyntax;
+import j86.j86.j86.javax.print.attribute.standard.MediaTray;
+import j86.j86.j86.javax.print.attribute.standard.Media;
+import j86.java.util.ArrayList;
 
 class CustomMediaTray extends MediaTray {
     private static ArrayList customStringTable = new ArrayList();

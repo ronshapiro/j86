@@ -20,38 +20,38 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.sun.org.apache.xml.internal.security.signature;
+package j86.j86.com.sun.org.apache.xml.internal.security.signature;
 
-import java.io.IOException;
-import java.io.OutputStream;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Set;
+import j86.java.io.IOException;
+import j86.java.io.OutputStream;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.util.HashSet;
+import j86.java.util.Iterator;
+import j86.java.util.Set;
 
-import com.sun.org.apache.xml.internal.security.algorithms.MessageDigestAlgorithm;
-import com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
-import com.sun.org.apache.xml.internal.security.c14n.InvalidCanonicalizerException;
-import com.sun.org.apache.xml.internal.security.exceptions.Base64DecodingException;
-import com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
-import com.sun.org.apache.xml.internal.security.signature.reference.ReferenceData;
-import com.sun.org.apache.xml.internal.security.signature.reference.ReferenceNodeSetData;
-import com.sun.org.apache.xml.internal.security.signature.reference.ReferenceOctetStreamData;
-import com.sun.org.apache.xml.internal.security.signature.reference.ReferenceSubTreeData;
-import com.sun.org.apache.xml.internal.security.transforms.InvalidTransformException;
-import com.sun.org.apache.xml.internal.security.transforms.Transform;
-import com.sun.org.apache.xml.internal.security.transforms.TransformationException;
-import com.sun.org.apache.xml.internal.security.transforms.Transforms;
-import com.sun.org.apache.xml.internal.security.transforms.params.InclusiveNamespaces;
-import com.sun.org.apache.xml.internal.security.utils.Base64;
-import com.sun.org.apache.xml.internal.security.utils.Constants;
-import com.sun.org.apache.xml.internal.security.utils.DigesterOutputStream;
-import com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy;
-import com.sun.org.apache.xml.internal.security.utils.UnsyncBufferedOutputStream;
-import com.sun.org.apache.xml.internal.security.utils.XMLUtils;
-import com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolver;
-import com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverException;
+import j86.j86.com.sun.org.apache.xml.internal.security.algorithms.MessageDigestAlgorithm;
+import j86.j86.com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
+import j86.j86.com.sun.org.apache.xml.internal.security.c14n.InvalidCanonicalizerException;
+import j86.j86.com.sun.org.apache.xml.internal.security.exceptions.Base64DecodingException;
+import j86.j86.com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+import j86.j86.j86.com.sun.org.apache.xml.internal.security.signature.reference.ReferenceData;
+import j86.j86.j86.com.sun.org.apache.xml.internal.security.signature.reference.ReferenceNodeSetData;
+import j86.j86.j86.com.sun.org.apache.xml.internal.security.signature.reference.ReferenceOctetStreamData;
+import j86.j86.j86.com.sun.org.apache.xml.internal.security.signature.reference.ReferenceSubTreeData;
+import j86.j86.com.sun.org.apache.xml.internal.security.transforms.InvalidTransformException;
+import j86.j86.com.sun.org.apache.xml.internal.security.transforms.Transform;
+import j86.j86.com.sun.org.apache.xml.internal.security.transforms.TransformationException;
+import j86.j86.com.sun.org.apache.xml.internal.security.transforms.Transforms;
+import j86.j86.j86.com.sun.org.apache.xml.internal.security.transforms.params.InclusiveNamespaces;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.Base64;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.Constants;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.DigesterOutputStream;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.UnsyncBufferedOutputStream;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
+import j86.j86.j86.com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolver;
+import j86.j86.j86.com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverException;
 import org.w3c.dom.Attr;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -127,13 +127,13 @@ public class Reference extends SignatureElementProxy {
     private static boolean useC14N11 = (
         AccessController.doPrivileged(new PrivilegedAction<Boolean>() {
             public Boolean run() {
-                return Boolean.valueOf(Boolean.getBoolean("com.sun.org.apache.xml.internal.security.useC14N11"));
+                return Boolean.valueOf(Boolean.getBoolean("j86.com.sun.org.apache.xml.internal.security.useC14N11"));
             }
         })).booleanValue();
 
     /** {@link org.apache.commons.logging} logging facility */
-    private static final java.util.logging.Logger log =
-        java.util.logging.Logger.getLogger(Reference.class.getName());
+    private static final j86.j86.java.util.logging.Logger log =
+        j86.j86.java.util.logging.Logger.getLogger(Reference.class.getName());
 
     private Manifest manifest;
     private XMLSignatureInput transformsOutput;
@@ -638,7 +638,7 @@ public class Reference extends SignatureElementProxy {
                 };
             } catch (Exception e) {
                 // log a warning
-                log.log(java.util.logging.Level.WARNING, "cannot cache dereferenced data: " + e);
+                log.log(j86.j86.java.util.logging.Level.WARNING, "cannot cache dereferenced data: " + e);
             }
         } else if (input.isElement()) {
             referenceData = new ReferenceSubTreeData
@@ -650,7 +650,7 @@ public class Reference extends SignatureElementProxy {
                         input.getMIMEType());
             } catch (IOException ioe) {
                 // log a warning
-                log.log(java.util.logging.Level.WARNING, "cannot cache dereferenced data: " + ioe);
+                log.log(j86.j86.java.util.logging.Level.WARNING, "cannot cache dereferenced data: " + ioe);
             }
         }
     }
@@ -780,12 +780,12 @@ public class Reference extends SignatureElementProxy {
         boolean equal = MessageDigestAlgorithm.isEqual(elemDig, calcDig);
 
         if (!equal) {
-            log.log(java.util.logging.Level.WARNING, "Verification failed for URI \"" + this.getURI() + "\"");
-            log.log(java.util.logging.Level.WARNING, "Expected Digest: " + Base64.encode(elemDig));
-            log.log(java.util.logging.Level.WARNING, "Actual Digest: " + Base64.encode(calcDig));
+            log.log(j86.j86.java.util.logging.Level.WARNING, "Verification failed for URI \"" + this.getURI() + "\"");
+            log.log(j86.j86.java.util.logging.Level.WARNING, "Expected Digest: " + Base64.encode(elemDig));
+            log.log(j86.j86.java.util.logging.Level.WARNING, "Actual Digest: " + Base64.encode(calcDig));
         } else {
-            if (log.isLoggable(java.util.logging.Level.FINE)) {
-                log.log(java.util.logging.Level.FINE, "Verification successful for URI \"" + this.getURI() + "\"");
+            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                log.log(j86.j86.java.util.logging.Level.FINE, "Verification successful for URI \"" + this.getURI() + "\"");
             }
         }
 

@@ -23,14 +23,14 @@
  * questions.
  */
 
-package java.nio.channels;
+package j86.j86.java.nio.channels;
 
-import java.io.IOException;
-import java.net.ServerSocket;
-import java.net.SocketOption;
-import java.net.SocketAddress;
-import java.nio.channels.spi.AbstractSelectableChannel;
-import java.nio.channels.spi.SelectorProvider;
+import j86.java.io.IOException;
+import j86.java.net.ServerSocket;
+import j86.java.net.SocketOption;
+import j86.java.net.SocketAddress;
+import j86.j86.j86.java.nio.channels.spi.AbstractSelectableChannel;
+import j86.j86.j86.java.nio.channels.spi.SelectorProvider;
 
 /**
  * A selectable channel for stream-oriented listening sockets.
@@ -41,7 +41,7 @@ import java.nio.channels.spi.SelectorProvider;
  * open but not yet bound.  An attempt to invoke the {@link #accept() accept}
  * method of an unbound server-socket channel will cause a {@link NotYetBoundException}
  * to be thrown. A server-socket channel can be bound by invoking one of the
- * {@link #bind(java.net.SocketAddress,int) bind} methods defined by this class.
+ * {@link #bind(j86.java.net.SocketAddress,int) bind} methods defined by this class.
  *
  * <p> Socket options are configured using the {@link #setOption(SocketOption,Object)
  * setOption} method. Server-socket channels support the following options:
@@ -52,11 +52,11 @@ import java.nio.channels.spi.SelectorProvider;
  *     <th>Description</th>
  *   </tr>
  *   <tr>
- *     <td> {@link java.net.StandardSocketOptions#SO_RCVBUF SO_RCVBUF} </td>
+ *     <td> {@link j86.java.net.StandardSocketOptions#SO_RCVBUF SO_RCVBUF} </td>
  *     <td> The size of the socket receive buffer </td>
  *   </tr>
  *   <tr>
- *     <td> {@link java.net.StandardSocketOptions#SO_REUSEADDR SO_REUSEADDR} </td>
+ *     <td> {@link j86.java.net.StandardSocketOptions#SO_REUSEADDR SO_REUSEADDR} </td>
  *     <td> Re-use address </td>
  *   </tr>
  * </table>
@@ -90,13 +90,13 @@ public abstract class ServerSocketChannel
      * Opens a server-socket channel.
      *
      * <p> The new channel is created by invoking the {@link
-     * java.nio.channels.spi.SelectorProvider#openServerSocketChannel
+     * j86.j86.j86.java.nio.channels.spi.SelectorProvider#openServerSocketChannel
      * openServerSocketChannel} method of the system-wide default {@link
-     * java.nio.channels.spi.SelectorProvider} object.
+     * j86.j86.j86.java.nio.channels.spi.SelectorProvider} object.
      *
      * <p> The new channel's socket is initially unbound; it must be bound to a
      * specific address via one of its socket's {@link
-     * java.net.ServerSocket#bind(SocketAddress) bind} methods before
+     * j86.java.net.ServerSocket#bind(SocketAddress) bind} methods before
      * connections can be accepted.  </p>
      *
      * @return  A new socket channel
@@ -213,7 +213,7 @@ public abstract class ServerSocketChannel
      * Retrieves a server socket associated with this channel.
      *
      * <p> The returned object will not declare any public methods that are not
-     * declared in the {@link java.net.ServerSocket} class.  </p>
+     * declared in the {@link j86.java.net.ServerSocket} class.  </p>
      *
      * @return  A server socket associated with this channel
      */
@@ -231,12 +231,12 @@ public abstract class ServerSocketChannel
      * blocking mode regardless of the blocking mode of this channel.
      *
      * <p> This method performs exactly the same security checks as the {@link
-     * java.net.ServerSocket#accept accept} method of the {@link
-     * java.net.ServerSocket} class.  That is, if a security manager has been
+     * j86.java.net.ServerSocket#accept accept} method of the {@link
+     * j86.java.net.ServerSocket} class.  That is, if a security manager has been
      * installed then for each new connection this method verifies that the
      * address and port number of the connection's remote endpoint are
      * permitted by the security manager's {@link
-     * java.lang.SecurityManager#checkAccept checkAccept} method.  </p>
+     * j86.java.lang.SecurityManager#checkAccept checkAccept} method.  </p>
      *
      * @return  The socket channel for the new connection,
      *          or <tt>null</tt> if this channel is in non-blocking mode
@@ -275,7 +275,7 @@ public abstract class ServerSocketChannel
      * called with the local address and {@code -1} as its arguments to see
      * if the operation is allowed. If the operation is not allowed,
      * a {@code SocketAddress} representing the
-     * {@link java.net.InetAddress#getLoopbackAddress loopback} address and the
+     * {@link j86.java.net.InetAddress#getLoopbackAddress loopback} address and the
      * local port of the channel's socket is returned.
      *
      * @return  The {@code SocketAddress} that the socket is bound to, or the

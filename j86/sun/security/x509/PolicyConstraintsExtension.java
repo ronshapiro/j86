@@ -23,15 +23,15 @@
  * questions.
  */
 
-package sun.security.x509;
+package j86.sun.security.x509;
 
-import java.io.IOException;
-import java.io.OutputStream;
-import java.security.cert.CertificateException;
-import java.util.Enumeration;
-import java.util.Vector;
+import j86.java.io.IOException;
+import j86.java.io.OutputStream;
+import j86.j86.java.security.cert.CertificateException;
+import j86.java.util.Enumeration;
+import j86.java.util.Vector;
 
-import sun.security.util.*;
+import j86.sun.security.util.*;
 
 /**
  * This class defines the certificate extension which specifies the

@@ -23,34 +23,34 @@
  * questions.
  */
 
-package javax.swing;
+package j86.javax.swing;
 
-import java.awt.*;
-import java.awt.event.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
 
-import java.util.Vector;
-import java.util.Locale;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import j86.java.util.Vector;
+import j86.java.util.Locale;
+import j86.java.util.ArrayList;
+import j86.java.util.Collections;
+import j86.java.util.List;
 
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
-import java.beans.Transient;
+import j86.java.beans.PropertyChangeEvent;
+import j86.java.beans.PropertyChangeListener;
+import j86.java.beans.Transient;
 
-import javax.swing.event.*;
-import javax.accessibility.*;
-import javax.swing.plaf.*;
-import javax.swing.text.Position;
+import j86.j86.javax.swing.event.*;
+import j86.javax.accessibility.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.javax.swing.text.Position;
 
-import java.io.ObjectOutputStream;
-import java.io.ObjectInputStream;
-import java.io.IOException;
-import java.io.Serializable;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.IOException;
+import j86.java.io.Serializable;
 
-import sun.swing.SwingUtilities2;
-import sun.swing.SwingUtilities2.Section;
-import static sun.swing.SwingUtilities2.Section.*;
+import j86.sun.swing.SwingUtilities2;
+import j86.sun.swing.SwingUtilities2.Section;
+import static j86.sun.swing.SwingUtilities2.Section.*;
 
 
 /**
@@ -72,7 +72,7 @@ import static sun.swing.SwingUtilities2.Section.*;
  * // creating it with a Vector populated with this data
  *
  * Vector<Class<?>> superClasses = new Vector<Class<?>>();
- * Class<JList> rootClass = javax.swing.JList.class;
+ * Class<JList> rootClass = j86.javax.swing.JList.class;
  * for(Class<?> cls = rootClass; cls != null; cls = cls.getSuperclass()) {
  *     superClasses.addElement(cls);
  * }
@@ -92,9 +92,9 @@ import static sun.swing.SwingUtilities2.Section.*;
  * constructor or the {@code setModel} method. The contents need not be static -
  * the number of items, and the values of items can change over time. A correct
  * {@code ListModel} implementation notifies the set of
- * {@code javax.swing.event.ListDataListener}s that have been added to it, each
+ * {@code j86.j86.javax.swing.event.ListDataListener}s that have been added to it, each
  * time a change occurs. These changes are characterized by a
- * {@code javax.swing.event.ListDataEvent}, which identifies the range of list
+ * {@code j86.j86.javax.swing.event.ListDataEvent}, which identifies the range of list
  * indices that have been modified, added, or removed. {@code JList}'s
  * {@code ListUI} is responsible for keeping the visual representation up to
  * date with changes, by listening to the model.
@@ -102,7 +102,7 @@ import static sun.swing.SwingUtilities2.Section.*;
  * Simple, dynamic-content, {@code JList} applications can use the
  * {@code DefaultListModel} class to maintain list elements. This class
  * implements the {@code ListModel} interface and also provides a
- * <code>java.util.Vector</code>-like API. Applications that need a more
+ * <code>j86.java.util.Vector</code>-like API. Applications that need a more
  * custom <code>ListModel</code> implementation may instead wish to subclass
  * {@code AbstractListModel}, which provides basic support for managing and
  * notifying listeners. For example, a read-only implementation of
@@ -133,9 +133,9 @@ import static sun.swing.SwingUtilities2.Section.*;
  * lies with the list's {@code ListUI}.
  * <p>
  * A correct {@code ListSelectionModel} implementation notifies the set of
- * {@code javax.swing.event.ListSelectionListener}s that have been added to it
+ * {@code j86.j86.javax.swing.event.ListSelectionListener}s that have been added to it
  * each time a change to the selection occurs. These changes are characterized
- * by a {@code javax.swing.event.ListSelectionEvent}, which identifies the range
+ * by a {@code j86.j86.javax.swing.event.ListSelectionEvent}, which identifies the range
  * of the selection change.
  * <p>
  * The preferred way to listen for changes in list selection is to add
@@ -149,7 +149,7 @@ import static sun.swing.SwingUtilities2.Section.*;
  * <a name="renderer"></a>
  * Painting of cells in a {@code JList} is handled by a delegate called a
  * cell renderer, installed on the list as the {@code cellRenderer} property.
- * The renderer provides a {@code java.awt.Component} that is used
+ * The renderer provides a {@code j86.java.awt.Component} that is used
  * like a "rubber stamp" to paint the cells. Each time a cell needs to be
  * painted, the list's {@code ListUI} asks the cell renderer for the component,
  * moves it into place, and has it paint the contents of the cell by way of its
@@ -254,8 +254,8 @@ import static sun.swing.SwingUtilities2.Section.*;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  * <p>
  * See <a href="http://docs.oracle.com/javase/tutorial/uiswing/components/list.html">How to Use Lists</a>
  * in <a href="http://docs.oracle.com/javase/tutorial/"><em>The Java Tutorial</em></a>
@@ -546,7 +546,7 @@ public class JList<E> extends JComponent implements Scrollable, Accessible
 
     /**
      * Returns {@code "ListUI"}, the <code>UIDefaults</code> key used to look
-     * up the name of the {@code javax.swing.plaf.ListUI} class that defines
+     * up the name of the {@code j86.j86.javax.swing.plaf.ListUI} class that defines
      * the look and feel for this component.
      *
      * @return the string "ListUI"
@@ -1173,7 +1173,7 @@ public class JList<E> extends JComponent implements Scrollable, Accessible
      *            <code>b</code> is <code>true</code> and
      *            <code>GraphicsEnvironment.isHeadless()</code>
      *            returns <code>true</code>
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      * @see #getDragEnabled
      * @see #setTransferHandler
      * @see TransferHandler
@@ -1778,7 +1778,7 @@ public class JList<E> extends JComponent implements Scrollable, Accessible
      *
      * @see #addListSelectionListener
      * @see #removeListSelectionListener
-     * @see javax.swing.event.ListSelectionEvent
+     * @see j86.j86.javax.swing.event.ListSelectionEvent
      * @see EventListenerList
      */
     protected void fireSelectionValueChanged(int firstIndex, int lastIndex,
@@ -2128,12 +2128,12 @@ public class JList<E> extends JComponent implements Scrollable, Accessible
      * <p>
      * This is a cover method that delegates to the method of the same name on
      * the list's selection model. See the documentation for
-     * {@link javax.swing.ListSelectionModel#setValueIsAdjusting} for
+     * {@link j86.javax.swing.ListSelectionModel#setValueIsAdjusting} for
      * more details.
      *
      * @param b the new value for the property
      * @see ListSelectionModel#setValueIsAdjusting
-     * @see javax.swing.event.ListSelectionEvent#getValueIsAdjusting
+     * @see j86.j86.javax.swing.event.ListSelectionEvent#getValueIsAdjusting
      * @see #getValueIsAdjusting
      */
     public void setValueIsAdjusting(boolean b) {
@@ -2878,8 +2878,8 @@ public class JList<E> extends JComponent implements Scrollable, Accessible
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     protected class AccessibleJList extends AccessibleJComponent
         implements AccessibleSelection, PropertyChangeListener,

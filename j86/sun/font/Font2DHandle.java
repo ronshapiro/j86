@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.font;
+package j86.sun.font;
 
 /*
- * This class is used so that a java.awt.Font does not directly
+ * This class is used so that a j86.java.awt.Font does not directly
  * reference a Font2D object. This introduces occasional minor
  * de-referencing overhead but increases robustness of the
  * implementation when "bad fonts" are encountered.
@@ -51,7 +51,7 @@ package sun.font;
  * is identified as bad, that references and uses of it will be
  * eliminated.
  * In the initial implementation a Font2DHandle is what is held by
- * - java.awt.Font
+ * - j86.java.awt.Font
  * - FontManager.initialisedFonts map
  * Font2D is held by
  * - FontFamily objects

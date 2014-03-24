@@ -22,10 +22,10 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.net.ftp;
+package j86.j86.sun.net.ftp;
 
-import java.util.Date;
-import java.util.HashMap;
+import j86.java.util.Date;
+import j86.java.util.HashMap;
 
 /**
  * A {@code FtpDirEntry} is a class agregating all the information that the FTP client
@@ -34,7 +34,7 @@ import java.util.HashMap;
  * time, owner and group of the file, although some of these could be unavailable
  * due to specific FTP server limitations.
  *
- * @see sun.net.ftp.FtpDirParser
+ * @see j86.j86.sun.net.ftp.FtpDirParser
  * @since 1.7
  */
 public class FtpDirEntry {
@@ -57,8 +57,8 @@ public class FtpDirEntry {
     private String user = null;
     private String group = null;
     private long size = -1;
-    private java.util.Date created = null;
-    private java.util.Date lastModified = null;
+    private j86.java.util.Date created = null;
+    private j86.java.util.Date lastModified = null;
     private Type type = Type.FILE;
     private boolean[][] permissions = null;
     private HashMap<String, String> facts = new HashMap<String, String>();
@@ -98,7 +98,7 @@ public class FtpDirEntry {
 
     /**
      * Sets the user name of the owner of the file. Intended mostly to be
-     * used from inside a {@link java.net.FtpDirParser} implementation.
+     * used from inside a {@link j86.java.net.FtpDirParser} implementation.
      *
      * @param user The user name of the owner of the file, or {@code null}
      * if that information is not available.
@@ -122,7 +122,7 @@ public class FtpDirEntry {
 
     /**
      * Sets the name of the group to which the file belong. Intended mostly to be
-     * used from inside a {@link java.net.FtpDirParser} implementation.
+     * used from inside a {@link j86.java.net.FtpDirParser} implementation.
      *
      * @param group The name of the group to which the file belong, or {@code null}
      * if that information is not available.
@@ -145,7 +145,7 @@ public class FtpDirEntry {
 
     /**
      * Sets the size of that file. Intended mostly to be used from inside an
-     * {@link java.net.FtpDirParser} implementation.
+     * {@link j86.java.net.FtpDirParser} implementation.
      *
      * @param size The size, in bytes, of that file. or -1 if unknown.
      * @return this FtpDirEntry
@@ -172,7 +172,7 @@ public class FtpDirEntry {
 
     /**
      * Sets the type of the file. Intended mostly to be used from inside an
-     * {@link java.net.FtpDirParser} implementation.
+     * {@link j86.java.net.FtpDirParser} implementation.
      *
      * @param type the type of this file or {@code null} if that information
      * is not available.
@@ -191,13 +191,13 @@ public class FtpDirEntry {
      *         modified on the server, or {@code null} if that
      *         information is not available.
      */
-    public java.util.Date getLastModified() {
+    public j86.java.util.Date getLastModified() {
         return this.lastModified;
     }
 
     /**
      * Sets the last modification time of the file. Intended mostly to be used
-     * from inside an {@link java.net.FtpDirParser} implementation.
+     * from inside an {@link j86.java.net.FtpDirParser} implementation.
      *
      * @param lastModified The Date representing the last modification time, or
      * {@code null} if that information is not available.
@@ -249,7 +249,7 @@ public class FtpDirEntry {
 
     /**
      * Sets the permissions for that file. Intended mostly to be used
-     * from inside an {@link java.net.FtpDirParser} implementation.
+     * from inside an {@link j86.java.net.FtpDirParser} implementation.
      * The permissions array is a 3x3 {@code boolean} array, the first index being
      * the User, group or owner (0, 1 and 2 respectively) while the second
      * index is read, write or execute (0, 1 and 2 respectively again).
@@ -265,7 +265,7 @@ public class FtpDirEntry {
 
     /**
      * Adds a 'fact', as defined in RFC 3659, to the list of facts of this file.
-     * Intended mostly to be used from inside a {@link java.net.FtpDirParser}
+     * Intended mostly to be used from inside a {@link j86.java.net.FtpDirParser}
      * implementation.
      *
      * @param fact the name of the fact (e.g. "Media-Type"). It is not case-sensitive.
@@ -300,7 +300,7 @@ public class FtpDirEntry {
 
     /**
      * Sets the creation time for that file. Intended mostly to be used from
-     * inside a {@link java.net.FtpDirParser} implementation.
+     * inside a {@link j86.java.net.FtpDirParser} implementation.
      *
      * @param created the Date representing the creation time for that file, or
      * {@code null} if that information is not available.
@@ -326,6 +326,6 @@ public class FtpDirEntry {
         if (lastModified == null) {
             return name + " [" + type + "] (" + user + " / " + group + ") " + size;
         }
-        return name + " [" + type + "] (" + user + " / " + group + ") {" + size + "} " + java.text.DateFormat.getDateInstance().format(lastModified);
+        return name + " [" + type + "] (" + user + " / " + group + ") {" + size + "} " + j86.java.text.DateFormat.getDateInstance().format(lastModified);
     }
 }

@@ -23,30 +23,30 @@
  * questions.
  */
 
-package javax.sql.rowset.spi;
+package j86.j86.j86.javax.sql.rowset.spi;
 
-import java.util.logging.*;
-import java.util.*;
+import j86.j86.java.util.logging.*;
+import j86.java.util.*;
 
-import java.sql.*;
-import javax.sql.*;
+import j86.java.sql.*;
+import j86.javax.sql.*;
 
-import java.io.FileInputStream;
-import java.io.InputStream;
-import java.io.IOException;
-import java.io.FileNotFoundException;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
+import j86.java.io.FileInputStream;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
+import j86.java.io.FileNotFoundException;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
 
-import javax.naming.*;
+import j86.javax.naming.*;
 
 /**
  * The Service Provider Interface (SPI) mechanism that generates <code>SyncProvider</code>
  * instances to be used by disconnected <code>RowSet</code> objects.
  * The <code>SyncProvider</code> instances in turn provide the
- * <code>javax.sql.RowSetReader</code> object the <code>RowSet</code> object
+ * <code>j86.javax.sql.RowSetReader</code> object the <code>RowSet</code> object
  * needs to populate itself with data and the
- * <code>javax.sql.RowSetWriter</code> object it needs to
+ * <code>j86.javax.sql.RowSetWriter</code> object it needs to
  * propagate changes to its
  * data back to the underlying data source.
  * <P>
@@ -63,7 +63,7 @@ import javax.naming.*;
  * synchronization providers are available.
  * The following line of code gets an enumeration of the providers currently registered.
  * <PRE>
- *     java.util.Enumeration e = SyncFactory.getRegisteredProviders();
+ *     j86.java.util.Enumeration e = SyncFactory.getRegisteredProviders();
  * </PRE>
  * All standard <code>RowSet</code> implementations must provide at least two providers:
  * <UL>
@@ -127,12 +127,12 @@ import javax.naming.*;
  *   #
  *
  *   # Optimistic synchronization provider
- *   rowset.provider.classname.0=com.sun.rowset.providers.RIOptimisticProvider
+ *   rowset.provider.classname.0=j86.j86.com.sun.rowset.providers.RIOptimisticProvider
  *   rowset.provider.vendor.0=Oracle Corporation
  *   rowset.provider.version.0=1.0
  *
  *   # XML Provider using standard XML schema
- *   rowset.provider.classname.1=com.sun.rowset.providers.RIXMLProvider
+ *   rowset.provider.classname.1=j86.j86.com.sun.rowset.providers.RIXMLProvider
  *   rowset.provider.vendor.1=Oracle Corporation
  *   rowset.provider.version.1=1.0
  * </PRE>
@@ -155,7 +155,7 @@ import javax.naming.*;
  * example, <code>MyProvider</code> is being registered on a CosNaming
  * namespace, which is the namespace used by J2EE resources.
  * <PRE>
- *    import javax.naming.*;
+ *    import j86.javax.naming.*;
  *
  *    Hashtable svrEnv = new  Hashtable();
  *    srvEnv.put(Context.INITIAL_CONTEXT_FACTORY, "CosNaming");
@@ -189,14 +189,14 @@ import javax.naming.*;
  * <PRE>
  *    Hashtable env = new Hashtable();
  *    env.put(SyncFactory.ROWSET_SYNC_PROVIDER, "com.fred.providers.MyProvider");
- *    CachedRowSet crs = new com.sun.rowset.CachedRowSetImpl(env);
+ *    CachedRowSet crs = new j86.com.sun.rowset.CachedRowSetImpl(env);
  * </PRE>
  * Further details on these mechanisms are available in the
- * <code>javax.sql.rowset.spi</code> package specification.
+ * <code>j86.j86.j86.javax.sql.rowset.spi</code> package specification.
  *
  * @author  Jonathan Bruce
- * @see javax.sql.rowset.spi.SyncProvider
- * @see javax.sql.rowset.spi.SyncFactoryException
+ * @see j86.j86.j86.javax.sql.rowset.spi.SyncProvider
+ * @see j86.j86.j86.javax.sql.rowset.spi.SyncFactoryException
  */
 public class SyncFactory {
 
@@ -544,7 +544,7 @@ public class SyncFactory {
 
         if (impl == null) {
             // Requested SyncProvider is unavailable. Return default provider.
-            return new com.sun.rowset.providers.RIOptimisticProvider();
+            return new j86.j86.com.sun.rowset.providers.RIOptimisticProvider();
         }
 
         // Attempt to invoke classname from registered SyncProvider list
@@ -563,7 +563,7 @@ public class SyncFactory {
             if (c != null) {
                 return (SyncProvider) c.newInstance();
             } else {
-                return new com.sun.rowset.providers.RIOptimisticProvider();
+                return new j86.j86.com.sun.rowset.providers.RIOptimisticProvider();
             }
 
         } catch (IllegalAccessException e) {
@@ -610,10 +610,10 @@ public class SyncFactory {
      * {@code SecurityManager} exists and its
      * {@code checkPermission} method denies calling {@code setLogger},
      * this method throws a
-     * {@code java.lang.SecurityException}.
+     * {@code j86.java.lang.SecurityException}.
      *
      * @param logger A Logger object instance
-     * @throws java.lang.SecurityException if a security manager exists and its
+     * @throws j86.java.lang.SecurityException if a security manager exists and its
      *   {@code checkPermission} method denies calling {@code setLogger}
      * @throws NullPointerException if the logger is null
      * @see SecurityManager#checkPermission
@@ -644,12 +644,12 @@ public class SyncFactory {
      * {@code SecurityManager} exists and its
      * {@code checkPermission} method denies calling {@code setLogger},
      * this method throws a
-     * {@code java.lang.SecurityException}.
+     * {@code j86.java.lang.SecurityException}.
      *
      * @param logger a Logger object instance
      * @param level a Level object instance indicating the degree of logging
      * required
-     * @throws java.lang.SecurityException if a security manager exists and its
+     * @throws j86.java.lang.SecurityException if a security manager exists and its
      *   {@code checkPermission} method denies calling {@code setLogger}
      * @throws NullPointerException if the logger is null
      * @see SecurityManager#checkPermission
@@ -697,15 +697,15 @@ public class SyncFactory {
      * {@code SecurityManager} exists and its
      * {@code checkPermission} method denies calling {@code setJNDIContext},
      * this method throws a
-     * {@code java.lang.SecurityException}.
+     * {@code j86.java.lang.SecurityException}.
      *
      * @param ctx a valid JNDI context
      * @throws SyncFactoryException if the supplied JNDI context is null
-     * @throws java.lang.SecurityException if a security manager exists and its
+     * @throws j86.java.lang.SecurityException if a security manager exists and its
      *  {@code checkPermission} method denies calling {@code setJNDIContext}
      * @see SecurityManager#checkPermission
      */
-    public static synchronized void setJNDIContext(javax.naming.Context ctx)
+    public static synchronized void setJNDIContext(j86.javax.naming.Context ctx)
             throws SyncFactoryException {
         SecurityManager sec = System.getSecurityManager();
         if (sec != null) {
@@ -792,7 +792,7 @@ public class SyncFactory {
                 }
 
             }
-        } catch (javax.naming.NotContextException e) {
+        } catch (j86.javax.naming.NotContextException e) {
             bindings.next();
             // Re-entrant call into method
             enumerateBindings(bindings, properties);
@@ -881,7 +881,7 @@ class ProviderImpl extends SyncProvider {
     }
 
     /*
-    public javax.sql.RowSetInternal getRowSetInternal() {
+    public j86.javax.sql.RowSetInternal getRowSetInternal() {
     try
     {
     return SyncFactory.getInstance(className).getRowSetInternal();
@@ -890,7 +890,7 @@ class ProviderImpl extends SyncProvider {
     }
     }
      */
-    public javax.sql.RowSetReader getRowSetReader() {
+    public j86.javax.sql.RowSetReader getRowSetReader() {
 
         RowSetReader rsReader = null;
 
@@ -904,7 +904,7 @@ class ProviderImpl extends SyncProvider {
 
     }
 
-    public javax.sql.RowSetWriter getRowSetWriter() {
+    public j86.javax.sql.RowSetWriter getRowSetWriter() {
 
         RowSetWriter rsWriter = null;
         try {

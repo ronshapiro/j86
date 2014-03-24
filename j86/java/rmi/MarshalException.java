@@ -23,11 +23,11 @@
  * questions.
  */
 
-package java.rmi;
+package j86.java.rmi;
 
 /**
  * A <code>MarshalException</code> is thrown if a
- * <code>java.io.IOException</code> occurs while marshalling the remote call
+ * <code>j86.java.io.IOException</code> occurs while marshalling the remote call
  * header, arguments or return value for a remote method call.  A
  * <code>MarshalException</code> is also thrown if the receiver does not
  * support the protocol version of the sender.

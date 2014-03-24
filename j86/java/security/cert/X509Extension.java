@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.security.cert;
+package j86.j86.java.security.cert;
 
-import java.util.Set;
+import j86.java.util.Set;
 
 /**
  * Interface for an X.509 extension.

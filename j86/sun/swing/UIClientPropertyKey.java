@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.swing;
+package j86.sun.swing;
 
 /**
  * This interface is used only for tagging keys for client properties

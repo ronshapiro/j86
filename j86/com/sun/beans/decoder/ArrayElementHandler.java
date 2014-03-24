@@ -22,9 +22,9 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.beans.decoder;
+package j86.j86.com.sun.beans.decoder;
 
-import java.lang.reflect.Array;
+import j86.j86.j86.java.lang.reflect.Array;
 
 /**
  * This class is intended to handle &lt;array&gt; element,
@@ -36,11 +36,11 @@ import java.lang.reflect.Array;
  * &lt;array length="10"/&gt;</pre>
  * is equivalent to {@code new Component[10]} in Java code.
  * The {@code set} and {@code get} methods,
- * as defined in the {@link java.util.List} interface,
+ * as defined in the {@link j86.java.util.List} interface,
  * can be used as if they could be applied to array instances.
  * The {@code index} attribute can thus be used with arrays.
  * For example:<pre>
- * &lt;array length="3" class="java.lang.String"&gt;
+ * &lt;array length="3" class="j86.java.lang.String"&gt;
  *     &lt;void index="1"&gt;
  *         &lt;string&gt;Hello, world&lt;/string&gt;
  *     &lt;/void&gt;

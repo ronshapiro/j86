@@ -22,16 +22,16 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.awt;
+package j86.java.awt;
 
-import java.awt.image.ImageProducer;
-import java.awt.image.ImageObserver;
-import java.awt.image.ImageFilter;
-import java.awt.image.FilteredImageSource;
-import java.awt.image.AreaAveragingScaleFilter;
-import java.awt.image.ReplicateScaleFilter;
+import j86.j86.j86.java.awt.image.ImageProducer;
+import j86.j86.j86.java.awt.image.ImageObserver;
+import j86.j86.j86.java.awt.image.ImageFilter;
+import j86.j86.j86.java.awt.image.FilteredImageSource;
+import j86.j86.j86.java.awt.image.AreaAveragingScaleFilter;
+import j86.j86.j86.java.awt.image.ReplicateScaleFilter;
 
-import sun.awt.image.SurfaceManager;
+import j86.j86.j86.sun.awt.image.SurfaceManager;
 
 
 /**
@@ -69,8 +69,8 @@ public abstract class Image {
      * @param     observer   an object waiting for the image to be loaded.
      * @return    the width of this image, or <code>-1</code>
      *                   if the width is not yet known.
-     * @see       java.awt.Image#getHeight
-     * @see       java.awt.image.ImageObserver
+     * @see       j86.java.awt.Image#getHeight
+     * @see       j86.j86.j86.java.awt.image.ImageObserver
      */
     public abstract int getWidth(ImageObserver observer);
 
@@ -81,8 +81,8 @@ public abstract class Image {
      * @param     observer   an object waiting for the image to be loaded.
      * @return    the height of this image, or <code>-1</code>
      *                   if the height is not yet known.
-     * @see       java.awt.Image#getWidth
-     * @see       java.awt.image.ImageObserver
+     * @see       j86.java.awt.Image#getWidth
+     * @see       j86.j86.j86.java.awt.image.ImageObserver
      */
     public abstract int getHeight(ImageObserver observer);
 
@@ -92,7 +92,7 @@ public abstract class Image {
      * methods that perform image conversion and scaling.
      * @return     the image producer that produces the pixels
      *                                  for this image.
-     * @see        java.awt.image.ImageProducer
+     * @see        j86.j86.j86.java.awt.image.ImageProducer
      */
     public abstract ImageProducer getSource();
 
@@ -102,8 +102,8 @@ public abstract class Image {
      * @return  a graphics context to draw to the off-screen image.
      * @exception UnsupportedOperationException if called for a
      *            non-off-screen image.
-     * @see     java.awt.Graphics
-     * @see     java.awt.Component#createImage(int, int)
+     * @see     j86.java.awt.Graphics
+     * @see     j86.java.awt.Component#createImage(int, int)
      */
     public abstract Graphics getGraphics();
 
@@ -125,8 +125,8 @@ public abstract class Image {
      * @param       observer   an object waiting for this image to be loaded.
      * @return      the value of the named property.
      * @throws      NullPointerException if the property name is null.
-     * @see         java.awt.image.ImageObserver
-     * @see         java.awt.Image#UndefinedProperty
+     * @see         j86.j86.j86.java.awt.image.ImageObserver
+     * @see         j86.java.awt.Image#UndefinedProperty
      */
     public abstract Object getProperty(String name, ImageObserver observer);
 
@@ -159,11 +159,11 @@ public abstract class Image {
      * @return     a scaled version of the image.
      * @exception IllegalArgumentException if <code>width</code>
      *             or <code>height</code> is zero.
-     * @see        java.awt.Image#SCALE_DEFAULT
-     * @see        java.awt.Image#SCALE_FAST
-     * @see        java.awt.Image#SCALE_SMOOTH
-     * @see        java.awt.Image#SCALE_REPLICATE
-     * @see        java.awt.Image#SCALE_AREA_AVERAGING
+     * @see        j86.java.awt.Image#SCALE_DEFAULT
+     * @see        j86.java.awt.Image#SCALE_FAST
+     * @see        j86.java.awt.Image#SCALE_SMOOTH
+     * @see        j86.java.awt.Image#SCALE_REPLICATE
+     * @see        j86.java.awt.Image#SCALE_AREA_AVERAGING
      * @since      JDK1.1
      */
     public Image getScaledInstance(int width, int height, int hints) {
@@ -204,7 +204,7 @@ public abstract class Image {
      * The <code>Image</code> object is free to substitute a different filter
      * that performs the same algorithm yet integrates more efficiently
      * into the imaging infrastructure supplied by the toolkit.
-     * @see        java.awt.image.ReplicateScaleFilter
+     * @see        j86.j86.j86.java.awt.image.ReplicateScaleFilter
      * @since      JDK1.1
      */
     public static final int SCALE_REPLICATE = 8;
@@ -214,7 +214,7 @@ public abstract class Image {
      * image object is free to substitute a different filter that
      * performs the same algorithm yet integrates more efficiently
      * into the image infrastructure supplied by the toolkit.
-     * @see java.awt.image.AreaAveragingScaleFilter
+     * @see j86.j86.j86.java.awt.image.AreaAveragingScaleFilter
      * @since JDK1.1
      */
     public static final int SCALE_AREA_AVERAGING = 16;
@@ -245,7 +245,7 @@ public abstract class Image {
      * including their primary copy which is typically stored on
      * the display hardware where resources are scarce.
      * These objects can later be restored using their
-     * {@link java.awt.image.VolatileImage#validate validate}
+     * {@link j86.j86.j86.java.awt.image.VolatileImage#validate validate}
      * method.
      * <li>
      * Image objects created by the Toolkit and Component classes which are
@@ -280,7 +280,7 @@ public abstract class Image {
      * @return an <code>ImageCapabilities</code> object that contains
      * the capabilities of this <code>Image</code> on the specified
      * GraphicsConfiguration.
-     * @see java.awt.image.VolatileImage#getCapabilities()
+     * @see j86.j86.j86.java.awt.image.VolatileImage#getCapabilities()
      * VolatileImage.getCapabilities()
      * @since 1.5
      */

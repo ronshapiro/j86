@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.awt.image;
+package j86.j86.j86.java.awt.image;
 
-import java.awt.color.ColorSpace;
-import java.awt.color.ICC_ColorSpace;
+import j86.j86.java.awt.color.ColorSpace;
+import j86.j86.java.awt.color.ICC_ColorSpace;
 
 /**
  * A <CODE>ColorModel</CODE> class that works with pixel values that
@@ -262,7 +262,7 @@ public class ComponentColorModel extends ColorModel {
      *         <CODE>DataBuffer.TYPE_DOUBLE</CODE>.
      *
      * @see ColorSpace
-     * @see java.awt.Transparency
+     * @see j86.java.awt.Transparency
      */
     public ComponentColorModel (ColorSpace colorSpace,
                                 int[] bits,
@@ -340,7 +340,7 @@ public class ComponentColorModel extends ColorModel {
      *         <CODE>DataBuffer.TYPE_DOUBLE</CODE>.
      *
      * @see ColorSpace
-     * @see java.awt.Transparency
+     * @see j86.java.awt.Transparency
      * @since 1.4
      */
     public ComponentColorModel (ColorSpace colorSpace,
@@ -2484,7 +2484,7 @@ public class ComponentColorModel extends ColorModel {
                             } else {
                                 if (zpixel == null) {
                                     zpixel = new byte[numComponents];
-                                    java.util.Arrays.fill(zpixel, (byte) 0);
+                                    j86.java.util.Arrays.fill(zpixel, (byte) 0);
                                 }
                                 raster.setDataElements(rX, rY, zpixel);
                             }
@@ -2512,7 +2512,7 @@ public class ComponentColorModel extends ColorModel {
                             } else {
                                 if (zpixel == null) {
                                     zpixel = new short[numComponents];
-                                    java.util.Arrays.fill(zpixel, (short) 0);
+                                    j86.java.util.Arrays.fill(zpixel, (short) 0);
                                 }
                                 raster.setDataElements(rX, rY, zpixel);
                             }
@@ -2539,7 +2539,7 @@ public class ComponentColorModel extends ColorModel {
                             } else {
                                 if (zpixel == null) {
                                     zpixel = new int[numComponents];
-                                    java.util.Arrays.fill(zpixel, 0);
+                                    j86.java.util.Arrays.fill(zpixel, 0);
                                 }
                                 raster.setDataElements(rX, rY, zpixel);
                             }
@@ -2566,7 +2566,7 @@ public class ComponentColorModel extends ColorModel {
                             } else {
                                 if (zpixel == null) {
                                     zpixel = new short[numComponents];
-                                    java.util.Arrays.fill(zpixel, (short) 0);
+                                    j86.java.util.Arrays.fill(zpixel, (short) 0);
                                 }
                                 raster.setDataElements(rX, rY, zpixel);
                             }
@@ -2591,7 +2591,7 @@ public class ComponentColorModel extends ColorModel {
                             } else {
                                 if (zpixel == null) {
                                     zpixel = new float[numComponents];
-                                    java.util.Arrays.fill(zpixel, 0.0f);
+                                    j86.java.util.Arrays.fill(zpixel, 0.0f);
                                 }
                                 raster.setDataElements(rX, rY, zpixel);
                             }
@@ -2616,7 +2616,7 @@ public class ComponentColorModel extends ColorModel {
                             } else {
                                 if (zpixel == null) {
                                     zpixel = new double[numComponents];
-                                    java.util.Arrays.fill(zpixel, 0.0);
+                                    j86.java.util.Arrays.fill(zpixel, 0.0);
                                 }
                                 raster.setDataElements(rX, rY, zpixel);
                             }

@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.net.ssl;
+package j86.j86.javax.net.ssl;
 
-import java.security.cert.*;
+import j86.j86.java.security.cert.*;
 
 /**
  * Instance of this interface manage which X509 certificates

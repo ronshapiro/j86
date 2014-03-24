@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.sql.rowset;
+package j86.j86.javax.sql.rowset;
 
-import java.sql.SQLException;
+import j86.java.sql.SQLException;
 
 /**
  * <h3>1.0 Background</h3>

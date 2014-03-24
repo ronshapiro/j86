@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.awt.peer;
+package j86.j86.java.awt.peer;
 
-import java.awt.SystemTray;
-import java.awt.TrayIcon;
+import j86.java.awt.SystemTray;
+import j86.java.awt.TrayIcon;
 
 /**
  * The peer interface for the {@link TrayIcon}. This doesn't need to be
@@ -54,7 +54,7 @@ public interface TrayIconPeer {
      * Updates the icon image. This is supposed to display the current icon
      * from the TrayIcon component in the actual tray icon.
      *
-     * @see TrayIcon#setImage(java.awt.Image)
+     * @see TrayIcon#setImage(j86.java.awt.Image)
      * @see TrayIcon#setImageAutoSize(boolean)
      */
     void updateImage();
@@ -66,7 +66,7 @@ public interface TrayIconPeer {
      * @param text the actual message text
      * @param messageType the message type
      *
-     * @see TrayIcon#displayMessage(String, String, java.awt.TrayIcon.MessageType)
+     * @see TrayIcon#displayMessage(String, String, j86.java.awt.TrayIcon.MessageType)
      */
     void displayMessage(String caption, String text, String messageType);
 

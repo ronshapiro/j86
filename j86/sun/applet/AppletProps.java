@@ -23,19 +23,19 @@
  * questions.
  */
 
-package sun.applet;
+package j86.sun.applet;
 
-import java.awt.*;
-import java.io.*;
-import java.util.Properties;
-import sun.net.www.http.HttpClient;
-import sun.net.ftp.FtpClient;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.security.PrivilegedExceptionAction;
-import java.security.PrivilegedActionException;
+import j86.java.awt.*;
+import j86.java.io.*;
+import j86.java.util.Properties;
+import j86.j86.j86.sun.net.www.http.HttpClient;
+import j86.j86.sun.net.ftp.FtpClient;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.security.PrivilegedExceptionAction;
+import j86.java.security.PrivilegedActionException;
 
-import sun.security.action.*;
+import j86.sun.security.action.*;
 
 class AppletProps extends Frame {
 
@@ -162,7 +162,7 @@ class AppletProps extends Frame {
                 }
             });
             hide();
-        } catch (java.security.PrivilegedActionException e) {
+        } catch (j86.java.security.PrivilegedActionException e) {
             System.out.println(amh.getMessage("apply.exception",
                                               e.getException()));
             // XXX what's the general feeling on stack traces to System.out?

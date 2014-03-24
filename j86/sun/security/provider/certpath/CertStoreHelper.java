@@ -23,25 +23,25 @@
  * questions.
  */
 
-package sun.security.provider.certpath;
+package j86.j86.sun.security.provider.certpath;
 
-import java.net.URI;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
-import java.security.AccessController;
-import java.security.NoSuchAlgorithmException;
-import java.security.InvalidAlgorithmParameterException;
-import java.security.PrivilegedActionException;
-import java.security.PrivilegedExceptionAction;
-import java.security.cert.CertStore;
-import java.security.cert.CertStoreException;
-import java.security.cert.X509CertSelector;
-import java.security.cert.X509CRLSelector;
-import javax.security.auth.x500.X500Principal;
-import java.io.IOException;
+import j86.java.net.URI;
+import j86.java.util.Collection;
+import j86.java.util.HashMap;
+import j86.java.util.Map;
+import j86.java.security.AccessController;
+import j86.java.security.NoSuchAlgorithmException;
+import j86.java.security.InvalidAlgorithmParameterException;
+import j86.java.security.PrivilegedActionException;
+import j86.java.security.PrivilegedExceptionAction;
+import j86.j86.java.security.cert.CertStore;
+import j86.j86.java.security.cert.CertStoreException;
+import j86.j86.java.security.cert.X509CertSelector;
+import j86.j86.java.security.cert.X509CRLSelector;
+import j86.j86.javax.security.auth.x500.X500Principal;
+import j86.java.io.IOException;
 
-import sun.security.util.Cache;
+import j86.sun.security.util.Cache;
 
 /**
  * Helper used by URICertStore and others when delegating to another CertStore
@@ -55,10 +55,10 @@ public abstract class CertStoreHelper {
     static {
         classMap.put(
             "LDAP",
-            "sun.security.provider.certpath.ldap.LDAPCertStoreHelper");
+            "j86.j86.j86.sun.security.provider.certpath.ldap.LDAPCertStoreHelper");
         classMap.put(
             "SSLServer",
-            "sun.security.provider.certpath.ssl.SSLServerCertStoreHelper");
+            "j86.j86.j86.sun.security.provider.certpath.ssl.SSLServerCertStoreHelper");
     };
     private static Cache<String, CertStoreHelper> cache
         = Cache.newSoftMemoryCache(NUM_TYPES);

@@ -23,12 +23,12 @@
  * questions.
  */
 
-package javax.net;
+package j86.javax.net;
 
-import java.io.IOException;
-import java.net.InetAddress;
-import java.net.ServerSocket;
-import java.net.SocketException;
+import j86.java.io.IOException;
+import j86.java.net.InetAddress;
+import j86.java.net.ServerSocket;
+import j86.java.net.SocketException;
 
 /**
  * This class creates server sockets.  It may be subclassed by other
@@ -91,9 +91,9 @@ public abstract class ServerSocketFactory
      *
      * @return the unbound socket
      * @throws IOException if the socket cannot be created
-     * @see java.net.ServerSocket#bind(java.net.SocketAddress)
-     * @see java.net.ServerSocket#bind(java.net.SocketAddress, int)
-     * @see java.net.ServerSocket#ServerSocket()
+     * @see j86.java.net.ServerSocket#bind(java.net.SocketAddress)
+     * @see j86.java.net.ServerSocket#bind(java.net.SocketAddress, int)
+     * @see j86.java.net.ServerSocket#ServerSocket()
      */
     public ServerSocket createServerSocket() throws IOException {
         throw new SocketException("Unbound server sockets not implemented");
@@ -118,7 +118,7 @@ public abstract class ServerSocketFactory
      *         specified range of valid port values, which is between 0 and
      *         65535, inclusive.
      * @see    SecurityManager#checkListen
-     * @see java.net.ServerSocket#ServerSocket(int)
+     * @see j86.java.net.ServerSocket#ServerSocket(int)
      */
     public abstract ServerSocket createServerSocket(int port)
         throws IOException;
@@ -148,7 +148,7 @@ public abstract class ServerSocketFactory
      *         specified range of valid port values, which is between 0 and
      *         65535, inclusive.
      * @see    SecurityManager#checkListen
-     * @see java.net.ServerSocket#ServerSocket(int, int)
+     * @see j86.java.net.ServerSocket#ServerSocket(int, int)
      */
     public abstract ServerSocket
     createServerSocket(int port, int backlog)
@@ -186,7 +186,7 @@ public abstract class ServerSocketFactory
      *         specified range of valid port values, which is between 0 and
      *         65535, inclusive.
      * @see    SecurityManager#checkListen
-     * @see java.net.ServerSocket#ServerSocket(int, int, java.net.InetAddress)
+     * @see j86.java.net.ServerSocket#ServerSocket(int, int, java.net.InetAddress)
      */
     public abstract ServerSocket
     createServerSocket(int port, int backlog, InetAddress ifAddress)

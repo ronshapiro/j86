@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.swing.tree;
+package j86.j86.javax.swing.tree;
 
-import javax.swing.event.*;
-import java.beans.PropertyChangeListener;
+import j86.j86.javax.swing.event.*;
+import j86.java.beans.PropertyChangeListener;
 
 /**
   * This interface represents the current state of the selection for

@@ -22,17 +22,17 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.media.sound;
+package j86.com.sun.media.sound;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
+import j86.java.util.ArrayList;
+import j86.java.util.Arrays;
+import j86.java.util.HashMap;
+import j86.java.util.Iterator;
+import j86.java.util.List;
+import j86.java.util.Map;
 
-import javax.sound.midi.MidiChannel;
-import javax.sound.midi.Patch;
+import j86.javax.sound.midi.MidiChannel;
+import j86.javax.sound.midi.Patch;
 
 /**
  * Software Synthesizer MIDI channel class.

@@ -22,15 +22,15 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.plaf.nimbus;
+package j86.j86.j86.javax.swing.plaf.nimbus;
 
-import java.awt.*;
-import java.awt.image.*;
-import java.lang.reflect.Method;
-import javax.swing.*;
-import javax.swing.plaf.UIResource;
-import javax.swing.Painter;
-import java.awt.print.PrinterGraphics;
+import j86.java.awt.*;
+import j86.j86.j86.java.awt.image.*;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.plaf.UIResource;
+import j86.javax.swing.Painter;
+import j86.j86.java.awt.print.PrinterGraphics;
 
 /**
  * Convenient base class for defining Painter instances for rendering a

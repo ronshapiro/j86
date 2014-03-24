@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.print;
+package j86.javax.print;
 
-import java.net.URI;
+import j86.java.net.URI;
 
 /**
  * Interface URIException is a mixin interface which a subclass of {@link

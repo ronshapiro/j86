@@ -23,15 +23,15 @@
  * questions.
  */
 
-package com.sun.tools.jdi;
+package j86.com.sun.tools.jdi;
 
-import com.sun.jdi.*;
-import com.sun.jdi.connect.*;
-import com.sun.jdi.connect.spi.*;
-import java.net.*;
-import java.io.*;
-import java.util.Map;
-import java.util.ResourceBundle;
+import j86.com.sun.jdi.*;
+import j86.j86.com.sun.jdi.connect.*;
+import j86.j86.j86.com.sun.jdi.connect.spi.*;
+import j86.java.net.*;
+import j86.java.io.*;
+import j86.java.util.Map;
+import j86.java.util.ResourceBundle;
 
 /*
  * A transport service based on a TCP connection between the
@@ -166,7 +166,7 @@ public class SocketTransportService extends TransportService {
     public String description() {
         synchronized (this) {
             if (messages == null) {
-                messages = ResourceBundle.getBundle("com.sun.tools.jdi.resources.jdi");
+                messages = ResourceBundle.getBundle("j86.com.sun.tools.jdi.resources.jdi");
             }
         }
         return messages.getString("socket_transportservice.description");

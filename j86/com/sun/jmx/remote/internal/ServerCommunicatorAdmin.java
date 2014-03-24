@@ -23,11 +23,11 @@
  * questions.
  */
 
-package com.sun.jmx.remote.internal;
+package j86.com.sun.jmx.remote.internal;
 
-import java.io.IOException;
+import j86.java.io.IOException;
 
-import com.sun.jmx.remote.util.ClassLogger;
+import j86.com.sun.jmx.remote.util.ClassLogger;
 
 public abstract class ServerCommunicatorAdmin {
     public ServerCommunicatorAdmin(long timeout) {
@@ -224,9 +224,9 @@ public abstract class ServerCommunicatorAdmin {
     private boolean terminated = false;
 
     private static final ClassLogger logger =
-        new ClassLogger("javax.management.remote.misc",
+        new ClassLogger("j86.j86.javax.management.remote.misc",
                         "ServerCommunicatorAdmin");
     private static final ClassLogger timelogger =
-        new ClassLogger("javax.management.remote.timeout",
+        new ClassLogger("j86.j86.javax.management.remote.timeout",
                         "ServerCommunicatorAdmin");
 }

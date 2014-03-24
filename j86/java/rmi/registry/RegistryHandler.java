@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.rmi.registry;
+package j86.j86.java.rmi.registry;
 
-import java.rmi.RemoteException;
-import java.rmi.UnknownHostException;
+import j86.java.rmi.RemoteException;
+import j86.java.rmi.UnknownHostException;
 
 /**
  * <code>RegistryHandler</code> is an interface used internally by the RMI

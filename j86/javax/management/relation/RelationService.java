@@ -23,36 +23,36 @@
  * questions.
  */
 
-package javax.management.relation;
+package j86.j86.javax.management.relation;
 
-import static com.sun.jmx.defaults.JmxProperties.RELATION_LOGGER;
-import static com.sun.jmx.mbeanserver.Util.cast;
+import static j86.com.sun.jmx.defaults.JmxProperties.RELATION_LOGGER;
+import static j86.com.sun.jmx.mbeanserver.Util.cast;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.util.concurrent.atomic.AtomicLong;
-import java.util.logging.Level;
+import j86.java.util.ArrayList;
+import j86.java.util.Date;
+import j86.java.util.HashMap;
+import j86.java.util.Iterator;
+import j86.java.util.List;
+import j86.java.util.Map;
+import j86.java.util.Set;
+import j86.j86.j86.java.util.concurrent.atomic.AtomicLong;
+import j86.j86.java.util.logging.Level;
 
-import javax.management.Attribute;
-import javax.management.AttributeNotFoundException;
-import javax.management.InstanceNotFoundException;
-import javax.management.InvalidAttributeValueException;
-import javax.management.MBeanException;
-import javax.management.MBeanNotificationInfo;
-import javax.management.MBeanRegistration;
-import javax.management.MBeanServer;
-import javax.management.MBeanServerDelegate;
-import javax.management.MBeanServerNotification;
-import javax.management.Notification;
-import javax.management.NotificationBroadcasterSupport;
-import javax.management.NotificationListener;
-import javax.management.ObjectName;
-import javax.management.ReflectionException;
+import j86.javax.management.Attribute;
+import j86.javax.management.AttributeNotFoundException;
+import j86.javax.management.InstanceNotFoundException;
+import j86.javax.management.InvalidAttributeValueException;
+import j86.javax.management.MBeanException;
+import j86.javax.management.MBeanNotificationInfo;
+import j86.javax.management.MBeanRegistration;
+import j86.javax.management.MBeanServer;
+import j86.javax.management.MBeanServerDelegate;
+import j86.javax.management.MBeanServerNotification;
+import j86.javax.management.Notification;
+import j86.javax.management.NotificationBroadcasterSupport;
+import j86.javax.management.NotificationListener;
+import j86.javax.management.ObjectName;
+import j86.javax.management.ReflectionException;
 
 /**
  * The Relation Service is in charge of creating and deleting relation types
@@ -663,7 +663,7 @@ public class RelationService extends NotificationBroadcasterSupport
         // Checks that the relation MBean implements the Relation interface.
         // It will also check that the provided ObjectName corresponds to a
         // registered MBean (else will throw an InstanceNotFoundException)
-        if ((!(myMBeanServer.isInstanceOf(relationObjectName, "javax.management.relation.Relation")))) {
+        if ((!(myMBeanServer.isInstanceOf(relationObjectName, "j86.j86.javax.management.relation.Relation")))) {
             String excMsg = "This MBean does not implement the Relation interface.";
             throw new NoSuchMethodException(excMsg);
         }
@@ -1870,7 +1870,7 @@ public class RelationService extends NotificationBroadcasterSupport
             Object[] params = new Object[1];
             params[0] = roleName;
             String[] signature = new String[1];
-            signature[0] = "java.lang.String";
+            signature[0] = "j86.java.lang.String";
             // Can throw MBeanException wrapping a RoleNotFoundException:
             // throw wrapped exception
             //
@@ -1955,7 +1955,7 @@ public class RelationService extends NotificationBroadcasterSupport
             try {
                 signature[0] = (roleNameArray.getClass()).getName();
             } catch (Exception exc) {
-                // OK : This is an array of java.lang.String
+                // OK : This is an array of j86.java.lang.String
                 //      so this should never happen...
             }
             // Shall not throw InstanceNotFoundException, ReflectionException
@@ -2073,7 +2073,7 @@ public class RelationService extends NotificationBroadcasterSupport
             Object[] params = new Object[1];
             params[0] = roleName;
             String[] signature = new String[1];
-            signature[0] = "java.lang.String";
+            signature[0] = "j86.java.lang.String";
             // Can throw MBeanException wrapping RoleNotFoundException:
             // throw wrapped exception
             //
@@ -2179,7 +2179,7 @@ public class RelationService extends NotificationBroadcasterSupport
             Object[] params = new Object[1];
             params[0] = role;
             String[] signature = new String[1];
-            signature[0] = "javax.management.relation.Role";
+            signature[0] = "j86.j86.javax.management.relation.Role";
             // Can throw MBeanException wrapping RoleNotFoundException,
             // InvalidRoleValueException
             //
@@ -2277,7 +2277,7 @@ public class RelationService extends NotificationBroadcasterSupport
             Object[] params = new Object[1];
             params[0] = roleList;
             String[] signature = new String[1];
-            signature[0] = "javax.management.relation.RoleList";
+            signature[0] = "j86.j86.javax.management.relation.RoleList";
             // Shall not throw InstanceNotFoundException or an MBeanException
             // or ReflectionException
             try {
@@ -2498,7 +2498,7 @@ public class RelationService extends NotificationBroadcasterSupport
         RELATION_LOGGER.entering(RelationService.class.getName(),
                 "getNotificationInfo");
 
-        String ntfClass = "javax.management.relation.RelationNotification";
+        String ntfClass = "j86.j86.javax.management.relation.RelationNotification";
 
         String[] ntfTypes = new String[] {
             RelationNotification.RELATION_BASIC_CREATION,
@@ -3376,7 +3376,7 @@ public class RelationService extends NotificationBroadcasterSupport
                 Object[] params = new Object[1];
                 params[0] = role;
                 String[] signature = new String[1];
-                signature[0] = "javax.management.relation.Role";
+                signature[0] = "j86.j86.javax.management.relation.Role";
                 // Can throw MBeanException wrapping
                 // InvalidRoleValueException. Returns the target exception to
                 // be homogeneous.
@@ -3758,8 +3758,8 @@ public class RelationService extends NotificationBroadcasterSupport
                     params[0] = objectName;
                     params[1] = currRoleName;
                     String[] signature = new String[2];
-                    signature[0] = "javax.management.ObjectName";
-                    signature[1] = "java.lang.String";
+                    signature[0] = "j86.javax.management.ObjectName";
+                    signature[1] = "j86.java.lang.String";
                     // Shall not throw InstanceNotFoundException, or
                     // MBeanException (wrapping RoleNotFoundException or
                     // MBeanException or InvalidRoleValueException) or

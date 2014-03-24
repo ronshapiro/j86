@@ -26,16 +26,16 @@
 /*
  * $Id: DOMCanonicalXMLC14NMethod.java 1197150 2011-11-03 14:34:57Z coheigea $
  */
-package org.jcp.xml.dsig.internal.dom;
+package j86.j86.org.jcp.xml.dsig.internal.dom;
 
-import javax.xml.crypto.*;
-import javax.xml.crypto.dsig.*;
-import javax.xml.crypto.dsig.spec.TransformParameterSpec;
+import j86.javax.xml.crypto.*;
+import j86.j86.javax.xml.crypto.dsig.*;
+import j86.j86.j86.javax.xml.crypto.dsig.spec.TransformParameterSpec;
 
-import java.security.InvalidAlgorithmParameterException;
+import j86.java.security.InvalidAlgorithmParameterException;
 
-import com.sun.org.apache.xml.internal.security.c14n.Canonicalizer;
-import com.sun.org.apache.xml.internal.security.c14n.InvalidCanonicalizerException;
+import j86.j86.com.sun.org.apache.xml.internal.security.c14n.Canonicalizer;
+import j86.j86.com.sun.org.apache.xml.internal.security.c14n.InvalidCanonicalizerException;
 
 /**
  * DOM-based implementation of CanonicalizationMethod for Canonical XML

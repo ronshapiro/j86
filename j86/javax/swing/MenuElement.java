@@ -22,10 +22,10 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing;
+package j86.javax.swing;
 
-import java.awt.*;
-import java.awt.event.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
 
 /**
  * Any component that can be placed into a menu should implement this interface.
@@ -73,7 +73,7 @@ public interface MenuElement {
     public MenuElement[] getSubElements();
 
     /**
-     * This method should return the java.awt.Component used to paint the receiving element.
+     * This method should return the j86.java.awt.Component used to paint the receiving element.
      * The returned component will be used to convert events and detect if an event is inside
      * a MenuElement's component.
      *

@@ -23,21 +23,21 @@
  * questions.
  */
 
-package sun.security.provider.certpath;
+package j86.j86.sun.security.provider.certpath;
 
-import java.security.InvalidAlgorithmParameterException;
-import java.security.cert.Certificate;
-import java.security.cert.CRL;
-import java.util.Collection;
-import java.util.ConcurrentModificationException;
-import java.util.HashSet;
-import java.security.cert.CertSelector;
-import java.security.cert.CertStore;
-import java.security.cert.CertStoreException;
-import java.security.cert.CertStoreParameters;
-import java.security.cert.CollectionCertStoreParameters;
-import java.security.cert.CRLSelector;
-import java.security.cert.CertStoreSpi;
+import j86.java.security.InvalidAlgorithmParameterException;
+import j86.j86.java.security.cert.Certificate;
+import j86.j86.java.security.cert.CRL;
+import j86.java.util.Collection;
+import j86.java.util.ConcurrentModificationException;
+import j86.java.util.HashSet;
+import j86.j86.java.security.cert.CertSelector;
+import j86.j86.java.security.cert.CertStore;
+import j86.j86.java.security.cert.CertStoreException;
+import j86.j86.java.security.cert.CertStoreParameters;
+import j86.j86.java.security.cert.CollectionCertStoreParameters;
+import j86.j86.java.security.cert.CRLSelector;
+import j86.j86.java.security.cert.CertStoreSpi;
 
 /**
  * A <code>CertStore</code> that retrieves <code>Certificates</code> and
@@ -71,7 +71,7 @@ import java.security.cert.CertStoreSpi;
  * <code>Certificate</code>s and <code>CRL</code>s must be thread-safe is also
  * essential.
  *
- * @see java.security.cert.CertStore
+ * @see j86.j86.java.security.cert.CertStore
  *
  * @since       1.4
  * @author      Steve Hanna

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.awt;
+package j86.java.awt;
 
 /**
  * Thrown when code that is dependent on a keyboard, display, or mouse

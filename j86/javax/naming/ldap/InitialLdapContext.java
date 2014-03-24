@@ -23,19 +23,19 @@
  * questions.
  */
 
-package javax.naming.ldap;
+package j86.j86.javax.naming.ldap;
 
-import javax.naming.*;
-import javax.naming.directory.*;
+import j86.javax.naming.*;
+import j86.j86.javax.naming.directory.*;
 
-import java.util.Hashtable;
+import j86.java.util.Hashtable;
 
 /**
   * This class is the starting context for performing
   * LDAPv3-style extended operations and controls.
   *<p>
-  * See <tt>javax.naming.InitialContext</tt> and
-  * <tt>javax.naming.InitialDirContext</tt> for details on synchronization,
+  * See <tt>j86.javax.naming.InitialContext</tt> and
+  * <tt>j86.javax.naming.InitialDirContext</tt> for details on synchronization,
   * and the policy for how an initial context is created.
   *
   * <h1>Request Controls</h1>
@@ -81,9 +81,9 @@ import java.util.Hashtable;
   * @author Vincent Ryan
   *
   * @see LdapContext
-  * @see javax.naming.InitialContext
-  * @see javax.naming.directory.InitialDirContext
-  * @see javax.naming.spi.NamingManager#setInitialContextFactoryBuilder
+  * @see j86.javax.naming.InitialContext
+  * @see j86.j86.javax.naming.directory.InitialDirContext
+  * @see j86.j86.javax.naming.spi.NamingManager#setInitialContextFactoryBuilder
   * @since 1.3
   */
 
@@ -105,7 +105,7 @@ public class InitialLdapContext extends InitialDirContext implements LdapContext
     /**
      * Constructs an initial context
      * using environment properties and connection request controls.
-     * See <tt>javax.naming.InitialContext</tt> for a discussion of
+     * See <tt>j86.javax.naming.InitialContext</tt> for a discussion of
      * environment properties.
      *
      * <p> This constructor will not modify its parameters or

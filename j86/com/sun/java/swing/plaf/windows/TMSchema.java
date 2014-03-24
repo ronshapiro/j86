@@ -38,14 +38,14 @@
  *
  */
 
-package com.sun.java.swing.plaf.windows;
+package j86.j86.com.sun.java.swing.plaf.windows;
 
-import java.awt.*;
-import java.util.*;
+import j86.java.awt.*;
+import j86.java.util.*;
 
-import javax.swing.*;
+import j86.javax.swing.*;
 
-import sun.awt.windows.ThemeReader;
+import j86.sun.awt.windows.ThemeReader;
 
 /**
  * Implements Windows Parts and their States and Properties for the Windows Look and Feel.

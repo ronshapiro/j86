@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.awt.peer;
+package j86.j86.java.awt.peer;
 
 /**
  * The peer interface for fonts. This is only a marker interface and not

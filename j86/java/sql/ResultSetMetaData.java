@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.sql;
+package j86.java.sql;
 
 /**
  * An object that can be used to get information about the types
@@ -213,7 +213,7 @@ public interface ResultSetMetaData extends Wrapper {
      * Retrieves the designated column's SQL type.
      *
      * @param column the first column is 1, the second is 2, ...
-     * @return SQL type from java.sql.Types
+     * @return SQL type from j86.java.sql.Types
      * @exception SQLException if a database access error occurs
      * @see Types
      */

@@ -23,29 +23,29 @@
  * questions.
  */
 
-package javax.management.relation;
+package j86.j86.javax.management.relation;
 
-import javax.management.Notification;
-import javax.management.ObjectName;
+import j86.javax.management.Notification;
+import j86.javax.management.ObjectName;
 
-import java.io.InvalidObjectException;
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.ObjectStreamField;
+import j86.java.io.InvalidObjectException;
+import j86.java.io.IOException;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectStreamField;
 
-import java.security.AccessController;
-import java.security.PrivilegedAction;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import j86.java.util.ArrayList;
+import j86.java.util.Arrays;
+import j86.java.util.Collections;
+import j86.java.util.HashSet;
+import j86.java.util.List;
+import j86.java.util.Set;
 
-import com.sun.jmx.mbeanserver.GetPropertyAction;
-import static com.sun.jmx.mbeanserver.Util.cast;
+import j86.com.sun.jmx.mbeanserver.GetPropertyAction;
+import static j86.com.sun.jmx.mbeanserver.Util.cast;
 
 /**
  * A notification of a change in the Relation Service.

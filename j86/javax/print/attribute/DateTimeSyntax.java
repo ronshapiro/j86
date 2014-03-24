@@ -24,36 +24,36 @@
  */
 
 
-package javax.print.attribute;
+package j86.j86.javax.print.attribute;
 
-import java.io.Serializable;
+import j86.java.io.Serializable;
 
-import java.util.Date;
+import j86.java.util.Date;
 
 /**
  * Class DateTimeSyntax is an abstract base class providing the common
  * implementation of all attributes whose value is a date and time.
  * <P>
  * Under the hood, a date-time attribute is stored as a value of class <code>
- * java.util.Date</code>. You can get a date-time attribute's Date value by
+ * j86.java.util.Date</code>. You can get a date-time attribute's Date value by
  * calling {@link #getValue() getValue()}. A date-time attribute's
  * Date value is established when it is constructed (see {@link
  * #DateTimeSyntax(Date) DateTimeSyntax(Date)}). Once
  * constructed, a date-time attribute's value is immutable.
  * <P>
  * To construct a date-time attribute from separate values of the year, month,
- * day, hour, minute, and so on, use a <code>java.util.Calendar</code>
- * object to construct a <code>java.util.Date</code> object, then use the
- * <code>java.util.Date</code> object to construct the date-time attribute.
+ * day, hour, minute, and so on, use a <code>j86.java.util.Calendar</code>
+ * object to construct a <code>j86.java.util.Date</code> object, then use the
+ * <code>j86.java.util.Date</code> object to construct the date-time attribute.
  * To convert
  * a date-time attribute to separate values of the year, month, day, hour,
- * minute, and so on, create a <code>java.util.Calendar</code> object and
- * set it to the <code>java.util.Date</code> from the date-time attribute. Class
- * DateTimeSyntax stores its value in the form of a <code>java.util.Date
+ * minute, and so on, create a <code>j86.java.util.Calendar</code> object and
+ * set it to the <code>j86.java.util.Date</code> from the date-time attribute. Class
+ * DateTimeSyntax stores its value in the form of a <code>j86.java.util.Date
  * </code>
- * rather than a <code>java.util.Calendar</code> because it typically takes
- * less memory to store and less time to compare a <code>java.util.Date</code>
- * than a <code>java.util.Calendar</code>.
+ * rather than a <code>j86.java.util.Calendar</code> because it typically takes
+ * less memory to store and less time to compare a <code>j86.java.util.Date</code>
+ * than a <code>j86.java.util.Calendar</code>.
  * <P>
  *
  * @author  Alan Kaminsky
@@ -65,7 +65,7 @@ public abstract class DateTimeSyntax implements Serializable, Cloneable {
     // Hidden data members.
 
     /**
-     * This date-time attribute's<code>java.util.Date</code> value.
+     * This date-time attribute's<code>j86.java.util.Date</code> value.
      * @serial
      */
     private Date value;
@@ -74,9 +74,9 @@ public abstract class DateTimeSyntax implements Serializable, Cloneable {
 
     /**
      * Construct a new date-time attribute with the given
-     * <code>java.util.Date </code> value.
+     * <code>j86.java.util.Date </code> value.
      *
-     * @param  value   <code>java.util.Date</code> value.
+     * @param  value   <code>j86.java.util.Date</code> value.
      *
      * @exception  NullPointerException
      *     (unchecked exception) Thrown if <CODE>theValue</CODE> is null.
@@ -91,7 +91,7 @@ public abstract class DateTimeSyntax implements Serializable, Cloneable {
     // Exported operations.
 
     /**
-     * Returns this date-time attribute's <code>java.util.Date</code>
+     * Returns this date-time attribute's <code>j86.java.util.Date</code>
      * value.
      * @return the Date.
      */
@@ -110,8 +110,8 @@ public abstract class DateTimeSyntax implements Serializable, Cloneable {
      * <LI>
      * <CODE>object</CODE> is an instance of class DateTimeSyntax.
      * <LI>
-     * This date-time attribute's <code>java.util.Date</code> value and
-     * <CODE>object</CODE>'s <code>java.util.Date</code> value are
+     * This date-time attribute's <code>j86.java.util.Date</code> value and
+     * <CODE>object</CODE>'s <code>j86.java.util.Date</code> value are
      * equal. </OL>
      *
      * @param  object  Object to compare to.
@@ -127,7 +127,7 @@ public abstract class DateTimeSyntax implements Serializable, Cloneable {
 
     /**
      * Returns a hash code value for this date-time attribute. The hashcode is
-     * that of this attribute's <code>java.util.Date</code> value.
+     * that of this attribute's <code>j86.java.util.Date</code> value.
      */
     public int hashCode() {
         return value.hashCode();
@@ -136,7 +136,7 @@ public abstract class DateTimeSyntax implements Serializable, Cloneable {
     /**
      * Returns a string value corresponding to this date-time attribute.
      * The string value is just this attribute's
-     * <code>java.util.Date</code>  value
+     * <code>j86.java.util.Date</code>  value
      * converted to a string.
      */
     public String toString() {

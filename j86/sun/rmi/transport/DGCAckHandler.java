@@ -23,20 +23,20 @@
  * questions.
  */
 
-package sun.rmi.transport;
+package j86.sun.rmi.transport;
 
-import java.rmi.server.UID;
-import java.security.AccessController;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.concurrent.Future;
-import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.TimeUnit;
-import sun.rmi.runtime.RuntimeUtil;
-import sun.security.action.GetLongAction;
+import j86.j86.java.rmi.server.UID;
+import j86.java.security.AccessController;
+import j86.java.util.ArrayList;
+import j86.java.util.Collections;
+import j86.java.util.HashMap;
+import j86.java.util.List;
+import j86.java.util.Map;
+import j86.j86.java.util.concurrent.Future;
+import j86.j86.java.util.concurrent.ScheduledExecutorService;
+import j86.j86.java.util.concurrent.TimeUnit;
+import j86.sun.rmi.runtime.RuntimeUtil;
+import j86.sun.security.action.GetLongAction;
 
 /**
  * Holds strong references to a set of remote objects, or live remote

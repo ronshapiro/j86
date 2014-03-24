@@ -23,30 +23,30 @@
  * questions.
  */
 
-package com.sun.jndi.ldap;
+package j86.com.sun.jndi.ldap;
 
-import javax.naming.*;
-import javax.naming.directory.*;
-import javax.naming.spi.*;
-import javax.naming.event.*;
-import javax.naming.ldap.*;
-import javax.naming.ldap.LdapName;
-import javax.naming.ldap.Rdn;
+import j86.javax.naming.*;
+import j86.j86.javax.naming.directory.*;
+import j86.j86.javax.naming.spi.*;
+import j86.j86.javax.naming.event.*;
+import j86.j86.javax.naming.ldap.*;
+import j86.j86.javax.naming.ldap.LdapName;
+import j86.j86.javax.naming.ldap.Rdn;
 
-import java.util.Locale;
-import java.util.Vector;
-import java.util.Hashtable;
-import java.util.List;
-import java.util.StringTokenizer;
-import java.util.Enumeration;
+import j86.java.util.Locale;
+import j86.java.util.Vector;
+import j86.java.util.Hashtable;
+import j86.java.util.List;
+import j86.java.util.StringTokenizer;
+import j86.java.util.Enumeration;
 
-import java.io.IOException;
-import java.io.OutputStream;
+import j86.java.io.IOException;
+import j86.java.io.OutputStream;
 
-import com.sun.jndi.toolkit.ctx.*;
-import com.sun.jndi.toolkit.dir.HierMemDirCtx;
-import com.sun.jndi.toolkit.dir.SearchFilter;
-import com.sun.jndi.ldap.ext.StartTlsResponseImpl;
+import j86.com.sun.jndi.toolkit.ctx.*;
+import j86.com.sun.jndi.toolkit.dir.HierMemDirCtx;
+import j86.com.sun.jndi.toolkit.dir.SearchFilter;
+import j86.j86.com.sun.jndi.ldap.ext.StartTlsResponseImpl;
 
 /**
  * The LDAP context implementation.
@@ -130,7 +130,7 @@ final public class LdapCtx extends ComponentDirContext
 
         // Used by LdapPoolManager
     static final String DEFAULT_SSL_FACTORY =
-        "javax.net.ssl.SSLSocketFactory";       // use Sun's SSL
+        "j86.j86.javax.net.ssl.SSLSocketFactory";       // use Sun's SSL
     private static final int DEFAULT_REFERRAL_LIMIT = 10;
     private static final String STARTTLS_REQ_OID = "1.3.6.1.4.1.1466.20037";
 
@@ -168,37 +168,37 @@ final public class LdapCtx extends ComponentDirContext
     private static final String REFERRAL_LIMIT =
         "java.naming.ldap.referral.limit";
 
-    // trace BER (java.io.OutputStream)
-    private static final String TRACE_BER = "com.sun.jndi.ldap.trace.ber";
+    // trace BER (j86.java.io.OutputStream)
+    private static final String TRACE_BER = "j86.com.sun.jndi.ldap.trace.ber";
 
     // Get around Netscape Schema Bugs
     private static final String NETSCAPE_SCHEMA_BUG =
-        "com.sun.jndi.ldap.netscape.schemaBugs";
+        "j86.com.sun.jndi.ldap.netscape.schemaBugs";
     // deprecated
     private static final String OLD_NETSCAPE_SCHEMA_BUG =
         "com.sun.naming.netscape.schemaBugs";   // for backward compatibility
 
     // Timeout for socket connect
     private static final String CONNECT_TIMEOUT =
-        "com.sun.jndi.ldap.connect.timeout";
+        "j86.com.sun.jndi.ldap.connect.timeout";
 
      // Timeout for reading responses
     private static final String READ_TIMEOUT =
-        "com.sun.jndi.ldap.read.timeout";
+        "j86.com.sun.jndi.ldap.read.timeout";
 
     // Environment property for connection pooling
-    private static final String ENABLE_POOL = "com.sun.jndi.ldap.connect.pool";
+    private static final String ENABLE_POOL = "j86.com.sun.jndi.ldap.connect.pool";
 
     // Environment property for the domain name (derived from this context's DN)
-    private static final String DOMAIN_NAME = "com.sun.jndi.ldap.domainname";
+    private static final String DOMAIN_NAME = "j86.com.sun.jndi.ldap.domainname";
 
     // Block until the first search reply is received
     private static final String WAIT_FOR_REPLY =
-        "com.sun.jndi.ldap.search.waitForReply";
+        "j86.com.sun.jndi.ldap.search.waitForReply";
 
     // Size of the queue of unprocessed search replies
     private static final String REPLY_QUEUE_SIZE =
-        "com.sun.jndi.ldap.search.replyQueueSize";
+        "j86.com.sun.jndi.ldap.search.replyQueueSize";
 
     // ----------------- Fields that don't change -----------------------
     private static final NameParser parser = new LdapNameParser();
@@ -224,7 +224,7 @@ final public class LdapCtx extends ComponentDirContext
     String hostname = null;             // host name of server (no brackets
                                         //   for IPv6 literals)
     LdapClient clnt = null;             // connection handle
-    Hashtable<String, java.lang.Object> envprops = null; // environment properties of context
+    Hashtable<String, j86.java.lang.Object> envprops = null; // environment properties of context
     int handleReferrals = DEFAULT_REFERRAL_MODE; // how referral is handled
     boolean hasLdapsScheme = false;     // true if the context was created
                                         //  using an LDAPS URL.
@@ -281,7 +281,7 @@ final public class LdapCtx extends ComponentDirContext
         this.useSsl = this.hasLdapsScheme = useSsl;
 
         if (props != null) {
-            envprops = (Hashtable<String, java.lang.Object>) props.clone();
+            envprops = (Hashtable<String, j86.java.lang.Object>) props.clone();
 
             // SSL env prop overrides the useSsl argument
             if ("ssl".equals(envprops.get(Context.SECURITY_PROTOCOL))) {
@@ -2316,7 +2316,7 @@ final public class LdapCtx extends ComponentDirContext
     }
 
     /**
-     * Sets the domain name for the context in the com.sun.jndi.ldap.domainname
+     * Sets the domain name for the context in the j86.com.sun.jndi.ldap.domainname
      * property.
      * Used for hostname verification by Start TLS
      */

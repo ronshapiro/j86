@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.java2d.pipe.hw;
+package j86.j86.j86.sun.java2d.pipe.hw;
 
-import java.awt.Rectangle;
-import sun.java2d.Surface;
+import j86.java.awt.Rectangle;
+import j86.sun.java2d.Surface;
 
-import java.lang.annotation.Native;
+import j86.j86.java.lang.annotation.Native;
 
 /**
  * Abstraction for a hardware accelerated surface.

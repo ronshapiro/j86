@@ -24,35 +24,35 @@
  */
 
 
-package com.sun.jmx.snmp;
+package j86.com.sun.jmx.snmp;
 
 
 // java imports
 //
-import java.io.Serializable;
+import j86.java.io.Serializable;
 
 // jmx import
 //
-import com.sun.jmx.snmp.SnmpPduFactory;
-import com.sun.jmx.snmp.SnmpMessage;
-import com.sun.jmx.snmp.SnmpPduPacket;
-import com.sun.jmx.snmp.SnmpPdu;
-import com.sun.jmx.snmp.SnmpMsg;
-import com.sun.jmx.snmp.SnmpStatusException;
-import com.sun.jmx.snmp.SnmpTooBigException;
-import com.sun.jmx.snmp.SnmpDefinitions;
+import j86.com.sun.jmx.snmp.SnmpPduFactory;
+import j86.com.sun.jmx.snmp.SnmpMessage;
+import j86.com.sun.jmx.snmp.SnmpPduPacket;
+import j86.com.sun.jmx.snmp.SnmpPdu;
+import j86.com.sun.jmx.snmp.SnmpMsg;
+import j86.com.sun.jmx.snmp.SnmpStatusException;
+import j86.com.sun.jmx.snmp.SnmpTooBigException;
+import j86.com.sun.jmx.snmp.SnmpDefinitions;
 
 // SNMP Runtime import
 //
-import com.sun.jmx.snmp.SnmpV3Message;
+import j86.com.sun.jmx.snmp.SnmpV3Message;
 
 /**
- * Default implementation of the {@link com.sun.jmx.snmp.SnmpPduFactory SnmpPduFactory} interface.
+ * Default implementation of the {@link j86.com.sun.jmx.snmp.SnmpPduFactory SnmpPduFactory} interface.
  * <BR>It uses the BER (basic encoding rules) standardized encoding scheme associated with ASN.1.
  * <P>
  * This implementation of the <CODE>SnmpPduFactory</CODE> is very
  * basic: it simply calls encoding and decoding methods from
- * {@link com.sun.jmx.snmp.SnmpMsg}.
+ * {@link j86.com.sun.jmx.snmp.SnmpMsg}.
  * <BLOCKQUOTE>
  * <PRE>
  * public SnmpPdu decodeSnmpPdu(SnmpMsg msg)
@@ -80,7 +80,7 @@ public class SnmpPduFactoryBER implements SnmpPduFactory, Serializable {
    private static final long serialVersionUID = -3525318344000547635L;
 
    /**
-     * Calls {@link com.sun.jmx.snmp.SnmpMsg#decodeSnmpPdu SnmpMsg.decodeSnmpPdu}
+     * Calls {@link j86.com.sun.jmx.snmp.SnmpMsg#decodeSnmpPdu SnmpMsg.decodeSnmpPdu}
      * on the specified message and returns the resulting <CODE>SnmpPdu</CODE>.
      *
      * @param msg The SNMP message to be decoded.

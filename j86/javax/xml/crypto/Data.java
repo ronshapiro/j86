@@ -25,9 +25,9 @@
 /*
  * $Id: Data.java,v 1.4 2005/05/10 15:47:41 mullan Exp $
  */
-package javax.xml.crypto;
+package j86.javax.xml.crypto;
 
-import javax.xml.crypto.dsig.Transform;
+import j86.j86.javax.xml.crypto.dsig.Transform;
 
 /**
  * An abstract representation of the result of dereferencing a

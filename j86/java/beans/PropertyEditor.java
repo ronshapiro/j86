@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.beans;
+package j86.java.beans;
 
 /**
  * A PropertyEditor class provides support for GUIs that want to
@@ -58,7 +58,7 @@ public interface PropertyEditor {
     /**
      * Set (or change) the object that is to be edited.  Primitive types such
      * as "int" must be wrapped as the corresponding object type such as
-     * "java.lang.Integer".
+     * "j86.java.lang.Integer".
      *
      * @param value The new target object to be edited.  Note that this
      *     object should not be modified by the PropertyEditor, rather
@@ -71,7 +71,7 @@ public interface PropertyEditor {
      * Gets the property value.
      *
      * @return The value of the property.  Primitive types such as "int" will
-     * be wrapped as the corresponding object type such as "java.lang.Integer".
+     * be wrapped as the corresponding object type such as "j86.java.lang.Integer".
      */
 
     Object getValue();
@@ -101,7 +101,7 @@ public interface PropertyEditor {
      * @param gfx  Graphics object to paint into.
      * @param box  Rectangle within graphics object into which we should paint.
      */
-    void paintValue(java.awt.Graphics gfx, java.awt.Rectangle box);
+    void paintValue(j86.java.awt.Graphics gfx, java.awt.Rectangle box);
 
     //----------------------------------------------------------------------
 
@@ -126,10 +126,10 @@ public interface PropertyEditor {
      * Example results are:
      * <ul>
      * <li>Primitive expresssion: <code>2</code>
-     * <li>Class constructor: <code>new java.awt.Color(127,127,34)</code>
-     * <li>Static field: <code>java.awt.Color.orange</code>
-     * <li>Static method: <code>javax.swing.Box.createRigidArea(new
-     *                                   java.awt.Dimension(0, 5))</code>
+     * <li>Class constructor: <code>new j86.java.awt.Color(127,127,34)</code>
+     * <li>Static field: <code>j86.java.awt.Color.orange</code>
+     * <li>Static method: <code>j86.javax.swing.Box.createRigidArea(new
+     *                                   j86.java.awt.Dimension(0, 5))</code>
      * </ul>
      *
      * @return a fragment of Java code representing an initializer for the
@@ -152,12 +152,12 @@ public interface PropertyEditor {
 
     /**
      * Set the property value by parsing a given String.  May raise
-     * java.lang.IllegalArgumentException if either the String is
+     * j86.java.lang.IllegalArgumentException if either the String is
      * badly formatted or if this kind of property can't be expressed
      * as text.
      * @param text  The string to be parsed.
      */
-    void setAsText(String text) throws java.lang.IllegalArgumentException;
+    void setAsText(String text) throws j86.java.lang.IllegalArgumentException;
 
     //----------------------------------------------------------------------
 
@@ -187,12 +187,12 @@ public interface PropertyEditor {
      * the Component in some larger property sheet, or it may put it in
      * its own individual dialog, or ...
      *
-     * @return A java.awt.Component that will allow a human to directly
+     * @return A j86.java.awt.Component that will allow a human to directly
      *      edit the current property value.  May be null if this is
      *      not supported.
      */
 
-    java.awt.Component getCustomEditor();
+    j86.java.awt.Component getCustomEditor();
 
     /**
      * Determines whether this property editor supports a custom editor.

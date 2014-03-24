@@ -27,11 +27,11 @@
  * AppletViewerFactory.java
  */
 
-package sun.applet;
+package j86.sun.applet;
 
-import java.util.Hashtable;
-import java.net.URL;
-import java.awt.MenuBar;
+import j86.java.util.Hashtable;
+import j86.java.net.URL;
+import j86.java.awt.MenuBar;
 
 public
 interface AppletViewerFactory {

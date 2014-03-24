@@ -23,21 +23,21 @@
  * questions.
  */
 
-package java.util;
+package j86.java.util;
 
-import java.io.IOException;
-import java.io.PrintStream;
-import java.io.PrintWriter;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.Reader;
-import java.io.Writer;
-import java.io.OutputStreamWriter;
-import java.io.BufferedWriter;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
+import j86.java.io.IOException;
+import j86.java.io.PrintStream;
+import j86.java.io.PrintWriter;
+import j86.java.io.InputStream;
+import j86.java.io.OutputStream;
+import j86.java.io.Reader;
+import j86.java.io.Writer;
+import j86.java.io.OutputStreamWriter;
+import j86.java.io.BufferedWriter;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
 
-import sun.util.spi.XmlPropertiesProvider;
+import j86.j86.sun.util.spi.XmlPropertiesProvider;
 
 /**
  * The {@code Properties} class represents a persistent set of
@@ -62,13 +62,13 @@ import sun.util.spi.XmlPropertiesProvider;
  * object that contains a non-{@code String} key.
  *
  * <p>
- * The {@link #load(java.io.Reader) load(Reader)} <tt>/</tt>
- * {@link #store(java.io.Writer, java.lang.String) store(Writer, String)}
+ * The {@link #load(j86.java.io.Reader) load(Reader)} <tt>/</tt>
+ * {@link #store(j86.java.io.Writer, j86.java.lang.String) store(Writer, String)}
  * methods load and store properties from and to a character based stream
  * in a simple line-oriented format specified below.
  *
- * The {@link #load(java.io.InputStream) load(InputStream)} <tt>/</tt>
- * {@link #store(java.io.OutputStream, java.lang.String) store(OutputStream, String)}
+ * The {@link #load(j86.java.io.InputStream) load(InputStream)} <tt>/</tt>
+ * {@link #store(j86.java.io.OutputStream, j86.java.lang.String) store(OutputStream, String)}
  * methods work the same way as the load(Reader)/store(Writer, String) pair, except
  * the input/output stream is encoded in ISO 8859-1 character encoding.
  * Characters that cannot be directly represented in this encoding can be written using
@@ -321,7 +321,7 @@ class Properties extends Hashtable<Object,Object> {
      * Reads a property list (key and element pairs) from the input
      * byte stream. The input stream is in a simple line-oriented
      * format as specified in
-     * {@link #load(java.io.Reader) load(Reader)} and is assumed to use
+     * {@link #load(j86.java.io.Reader) load(Reader)} and is assumed to use
      * the ISO 8859-1 character encoding; that is each byte is one Latin1
      * character. Characters not in Latin1, and certain special characters,
      * are represented in keys and elements using Unicode escapes as defined in
@@ -720,7 +720,7 @@ class Properties extends Hashtable<Object,Object> {
     /**
      * Writes this property list (key and element pairs) in this
      * {@code Properties} table to the output character stream in a
-     * format suitable for using the {@link #load(java.io.Reader) load(Reader)}
+     * format suitable for using the {@link #load(j86.java.io.Reader) load(Reader)}
      * method.
      * <p>
      * Properties from the defaults table of this {@code Properties}
@@ -785,7 +785,7 @@ class Properties extends Hashtable<Object,Object> {
      * <p>
      * This method outputs the comments, properties keys and values in
      * the same format as specified in
-     * {@link #store(java.io.Writer, java.lang.String) store(Writer)},
+     * {@link #store(j86.java.io.Writer, j86.java.lang.String) store(Writer)},
      * with the following differences:
      * <ul>
      * <li>The stream is written using the ISO 8859-1 character encoding.
@@ -864,7 +864,7 @@ class Properties extends Hashtable<Object,Object> {
      * @param in the input stream from which to read the XML document.
      * @throws IOException if reading from the specified input stream
      *         results in an <tt>IOException</tt>.
-     * @throws java.io.UnsupportedEncodingException if the document's encoding
+     * @throws j86.java.io.UnsupportedEncodingException if the document's encoding
      *         declaration can be read and it specifies an encoding that is not
      *         supported
      * @throws InvalidPropertiesFormatException Data on input stream does not
@@ -935,7 +935,7 @@ class Properties extends Hashtable<Object,Object> {
      *
      * @throws IOException if writing to the specified output stream
      *         results in an <tt>IOException</tt>.
-     * @throws java.io.UnsupportedEncodingException if the encoding is not
+     * @throws j86.java.io.UnsupportedEncodingException if the encoding is not
      *         supported by the implementation.
      * @throws NullPointerException if {@code os} is {@code null},
      *         or if {@code encoding} is {@code null}.
@@ -999,8 +999,8 @@ class Properties extends Hashtable<Object,Object> {
      *          the keys in the default property list.
      * @throws  ClassCastException if any key in this property list
      *          is not a string.
-     * @see     java.util.Enumeration
-     * @see     java.util.Properties#defaults
+     * @see     j86.java.util.Enumeration
+     * @see     j86.java.util.Properties#defaults
      * @see     #stringPropertyNames
      */
     public Enumeration<?> propertyNames() {
@@ -1024,7 +1024,7 @@ class Properties extends Hashtable<Object,Object> {
      * @return  a set of keys in this property list where
      *          the key and its corresponding value are strings,
      *          including the keys in the default property list.
-     * @see     java.util.Properties#defaults
+     * @see     j86.java.util.Properties#defaults
      * @since   1.6
      */
     public Set<String> stringPropertyNames() {
@@ -1138,7 +1138,7 @@ class Properties extends Hashtable<Object,Object> {
      * method then the system-wide provider is located as follows: </p>
      *
      * <ol>
-     *   <li> If the system property {@code sun.util.spi.XmlPropertiesProvider}
+     *   <li> If the system property {@code j86.j86.sun.util.spi.XmlPropertiesProvider}
      *   is defined then it is taken to be the full-qualified name of a concrete
      *   provider class. The class is loaded with the system class loader as the
      *   initiating loader. If it cannot be loaded or instantiated using a zero
@@ -1147,7 +1147,7 @@ class Properties extends Hashtable<Object,Object> {
      *   <li> If the system property is not defined then the service-provider
      *   loading facility defined by the {@link ServiceLoader} class is used to
      *   locate a provider with the system class loader as the initiating
-     *   loader and {@code sun.util.spi.XmlPropertiesProvider} as the service
+     *   loader and {@code j86.j86.sun.util.spi.XmlPropertiesProvider} as the service
      *   type. If this process fails then an unspecified error is thrown. If
      *   there is more than one service provider installed then it is
      *   not specified as to which provider will be used. </li>
@@ -1159,7 +1159,7 @@ class Properties extends Hashtable<Object,Object> {
     private static class XmlSupport {
 
         private static XmlPropertiesProvider loadProviderFromProperty(ClassLoader cl) {
-            String cn = System.getProperty("sun.util.spi.XmlPropertiesProvider");
+            String cn = System.getProperty("j86.j86.sun.util.spi.XmlPropertiesProvider");
             if (cn == null)
                 return null;
             try {
@@ -1189,7 +1189,7 @@ class Properties extends Hashtable<Object,Object> {
                         provider = loadProviderAsService(cl);
                         if (provider != null)
                             return provider;
-                        return new jdk.internal.util.xml.BasicXmlPropertiesProvider();
+                        return new j86.jdk.internal.util.xml.BasicXmlPropertiesProvider();
                 }});
         }
 

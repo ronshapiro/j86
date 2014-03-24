@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.security.ssl;
+package j86.sun.security.ssl;
 
-import java.nio.*;
+import j86.java.nio.*;
 
 /*
  * A multi-purpose class which handles all of the SSLEngine arguments.

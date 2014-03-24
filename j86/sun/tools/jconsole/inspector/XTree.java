@@ -23,18 +23,18 @@
  * questions.
  */
 
-package sun.tools.jconsole.inspector;
+package j86.j86.sun.tools.jconsole.inspector;
 
-import java.io.IOException;
-import java.util.*;
-import javax.management.*;
-import javax.swing.*;
-import javax.swing.tree.*;
-import sun.tools.jconsole.JConsole;
-import sun.tools.jconsole.MBeansTab;
-import sun.tools.jconsole.Messages;
-import sun.tools.jconsole.inspector.XNodeInfo;
-import static sun.tools.jconsole.inspector.XNodeInfo.Type;
+import j86.java.io.IOException;
+import j86.java.util.*;
+import j86.javax.management.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.tree.*;
+import j86.sun.tools.jconsole.JConsole;
+import j86.sun.tools.jconsole.MBeansTab;
+import j86.sun.tools.jconsole.Messages;
+import j86.j86.sun.tools.jconsole.inspector.XNodeInfo;
+import static j86.j86.sun.tools.jconsole.inspector.XNodeInfo.Type;
 
 @SuppressWarnings("serial")
 public class XTree extends JTree {
@@ -44,7 +44,7 @@ public class XTree extends JTree {
 
     static {
         String keyPropertyList =
-                System.getProperty("com.sun.tools.jconsole.mbeans.keyPropertyList");
+                System.getProperty("com.j86.sun.tools.jconsole.mbeans.keyPropertyList");
         if (keyPropertyList == null) {
             orderedKeyPropertyList.add("type");
             orderedKeyPropertyList.add("j2eeType");
@@ -491,7 +491,7 @@ public class XTree extends JTree {
 
     /**
      * Returns the ordered key property list that will be used to build the
-     * MBean tree. If the "com.sun.tools.jconsole.mbeans.keyPropertyList" system
+     * MBean tree. If the "com.j86.sun.tools.jconsole.mbeans.keyPropertyList" system
      * property is not specified, then the ordered key property list used
      * to build the MBean tree will be the one returned by the method
      * ObjectName.getKeyPropertyListString() with "type" as first key,

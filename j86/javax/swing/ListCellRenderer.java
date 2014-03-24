@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.swing;
+package j86.javax.swing;
 
-import java.awt.Component;
+import j86.java.awt.Component;
 
 
 /**

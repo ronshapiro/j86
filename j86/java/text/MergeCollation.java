@@ -36,9 +36,9 @@
  *
  */
 
-package java.text;
+package j86.java.text;
 
-import java.util.ArrayList;
+import j86.java.util.ArrayList;
 
 /**
  * Utility class for normalizing and merging patterns for collation.

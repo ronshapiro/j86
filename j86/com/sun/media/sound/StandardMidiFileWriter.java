@@ -23,28 +23,28 @@
  * questions.
  */
 
-package com.sun.media.sound;
+package j86.com.sun.media.sound;
 
-import java.io.DataOutputStream;
-import java.io.PipedInputStream;
-import java.io.PipedOutputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.ByteArrayInputStream;
-import java.io.SequenceInputStream;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.InputStream;
-import java.io.IOException;
-import java.io.OutputStream;
+import j86.java.io.DataOutputStream;
+import j86.java.io.PipedInputStream;
+import j86.java.io.PipedOutputStream;
+import j86.java.io.ByteArrayOutputStream;
+import j86.java.io.ByteArrayInputStream;
+import j86.java.io.SequenceInputStream;
+import j86.java.io.File;
+import j86.java.io.FileOutputStream;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
+import j86.java.io.OutputStream;
 
-import javax.sound.midi.InvalidMidiDataException;
-import javax.sound.midi.MidiEvent;
-import javax.sound.midi.MetaMessage;
-import javax.sound.midi.Sequence;
-import javax.sound.midi.ShortMessage;
-import javax.sound.midi.SysexMessage;
-import javax.sound.midi.Track;
-import javax.sound.midi.spi.MidiFileWriter;
+import j86.javax.sound.midi.InvalidMidiDataException;
+import j86.javax.sound.midi.MidiEvent;
+import j86.javax.sound.midi.MetaMessage;
+import j86.javax.sound.midi.Sequence;
+import j86.javax.sound.midi.ShortMessage;
+import j86.javax.sound.midi.SysexMessage;
+import j86.javax.sound.midi.Track;
+import j86.j86.javax.sound.midi.spi.MidiFileWriter;
 
 
 /**

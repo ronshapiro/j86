@@ -23,15 +23,15 @@
  * questions.
  */
 
-package com.sun.crypto.provider;
+package j86.com.sun.crypto.provider;
 
-import java.security.*;
-import java.security.spec.AlgorithmParameterSpec;
+import j86.java.security.*;
+import j86.j86.java.security.spec.AlgorithmParameterSpec;
 
-import javax.crypto.*;
-import javax.crypto.spec.SecretKeySpec;
+import j86.javax.crypto.*;
+import j86.j86.javax.crypto.spec.SecretKeySpec;
 
-import sun.security.internal.spec.TlsRsaPremasterSecretParameterSpec;
+import j86.sun.security.internal.spec.TlsRsaPremasterSecretParameterSpec;
 
 /**
  * KeyGenerator implementation for the SSL/TLS RSA premaster secret.

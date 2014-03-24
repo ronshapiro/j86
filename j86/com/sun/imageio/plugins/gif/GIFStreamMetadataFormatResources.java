@@ -23,9 +23,9 @@
  * questions.
  */
 
-package com.sun.imageio.plugins.gif;
+package j86.com.sun.imageio.plugins.gif;
 
-import java.util.ListResourceBundle;
+import j86.java.util.ListResourceBundle;
 
 public class GIFStreamMetadataFormatResources extends ListResourceBundle {
 

@@ -54,41 +54,41 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package java.time.chrono;
+package j86.j86.java.time.chrono;
 
-import static java.time.temporal.ChronoField.DAY_OF_MONTH;
-import static java.time.temporal.ChronoField.DAY_OF_YEAR;
-import static java.time.temporal.ChronoField.ERA;
-import static java.time.temporal.ChronoField.MONTH_OF_YEAR;
-import static java.time.temporal.ChronoField.YEAR;
-import static java.time.temporal.ChronoField.YEAR_OF_ERA;
-import static java.time.temporal.ChronoUnit.DAYS;
-import static java.time.temporal.ChronoUnit.MONTHS;
+import static j86.j86.java.time.temporal.ChronoField.DAY_OF_MONTH;
+import static j86.j86.java.time.temporal.ChronoField.DAY_OF_YEAR;
+import static j86.j86.java.time.temporal.ChronoField.ERA;
+import static j86.j86.java.time.temporal.ChronoField.MONTH_OF_YEAR;
+import static j86.j86.java.time.temporal.ChronoField.YEAR;
+import static j86.j86.java.time.temporal.ChronoField.YEAR_OF_ERA;
+import static j86.j86.java.time.temporal.ChronoUnit.DAYS;
+import static j86.j86.java.time.temporal.ChronoUnit.MONTHS;
 
-import java.io.InvalidObjectException;
-import java.io.ObjectInputStream;
-import java.io.Serializable;
-import java.time.Clock;
-import java.time.DateTimeException;
-import java.time.Instant;
-import java.time.LocalDate;
-import java.time.Year;
-import java.time.ZoneId;
-import java.time.format.ResolverStyle;
-import java.time.temporal.ChronoField;
-import java.time.temporal.TemporalAccessor;
-import java.time.temporal.TemporalAdjusters;
-import java.time.temporal.TemporalField;
-import java.time.temporal.UnsupportedTemporalTypeException;
-import java.time.temporal.ValueRange;
-import java.util.Arrays;
-import java.util.Calendar;
-import java.util.List;
-import java.util.Locale;
-import java.util.Map;
+import j86.java.io.InvalidObjectException;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.Serializable;
+import j86.java.time.Clock;
+import j86.java.time.DateTimeException;
+import j86.java.time.Instant;
+import j86.java.time.LocalDate;
+import j86.java.time.Year;
+import j86.java.time.ZoneId;
+import j86.j86.java.time.format.ResolverStyle;
+import j86.j86.java.time.temporal.ChronoField;
+import j86.j86.java.time.temporal.TemporalAccessor;
+import j86.j86.java.time.temporal.TemporalAdjusters;
+import j86.j86.java.time.temporal.TemporalField;
+import j86.j86.java.time.temporal.UnsupportedTemporalTypeException;
+import j86.j86.java.time.temporal.ValueRange;
+import j86.java.util.Arrays;
+import j86.java.util.Calendar;
+import j86.java.util.List;
+import j86.java.util.Locale;
+import j86.java.util.Map;
 
-import sun.util.calendar.CalendarSystem;
-import sun.util.calendar.LocalGregorianCalendar;
+import j86.j86.sun.util.calendar.CalendarSystem;
+import j86.j86.sun.util.calendar.LocalGregorianCalendar;
 
 /**
  * The Japanese Imperial calendar system.
@@ -508,7 +508,7 @@ public final class JapaneseChronology extends AbstractChronology implements Seri
     //-----------------------------------------------------------------------
     /**
      * Writes the Chronology using a
-     * <a href="../../../serialized-form.html#java.time.chrono.Ser">dedicated serialized form</a>.
+     * <a href="../../../serialized-form.html#j86.j86.java.time.chrono.Ser">dedicated serialized form</a>.
      * @serialData
      * <pre>
      *  out.writeByte(1);     // identifies a Chronology

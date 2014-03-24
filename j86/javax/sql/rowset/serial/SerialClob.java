@@ -23,11 +23,11 @@
  * questions.
  */
 
-package javax.sql.rowset.serial;
+package j86.j86.j86.javax.sql.rowset.serial;
 
-import java.sql.*;
-import java.io.*;
-import java.util.Arrays;
+import j86.java.sql.*;
+import j86.java.io.*;
+import j86.java.util.Arrays;
 
 /**
  * A serialized mapping in the Java programming language of an SQL
@@ -137,7 +137,7 @@ public class SerialClob implements Clob, Serializable, Cloneable {
      *     if the <code>Clob</code> object is a null; or if either of the
      *     <code>Clob.getCharacterStream()</code> and <code>Clob.getAsciiStream()</code>
      *     methods on the <code>Clob</code> returns a null
-     * @see java.sql.Clob
+     * @see j86.java.sql.Clob
      */
     public SerialClob(Clob clob) throws SerialException, SQLException {
 
@@ -172,7 +172,7 @@ public class SerialClob implements Clob, Serializable, Cloneable {
                     offset += read;
                 } while (read > 0);
             }
-        } catch (java.io.IOException ex) {
+        } catch (j86.java.io.IOException ex) {
             throw new SerialException("SerialClob: " + ex.getMessage());
         }
 
@@ -199,14 +199,14 @@ public class SerialClob implements Clob, Serializable, Cloneable {
      * a stream is produced regardless of whether the <code>SerialClob</code> object
      * was created with a <code>Clob</code> object or a <code>char</code> array.
      *
-     * @return a <code>java.io.Reader</code> object containing this
+     * @return a <code>j86.java.io.Reader</code> object containing this
      *         <code>SerialClob</code> object's data
      * @throws SerialException if an error occurs;
      * if {@code free} had previously been called on this object
      */
-    public java.io.Reader getCharacterStream() throws SerialException {
+    public j86.java.io.Reader getCharacterStream() throws SerialException {
         isValid();
-        return (java.io.Reader) new CharArrayReader(buf);
+        return (j86.java.io.Reader) new CharArrayReader(buf);
     }
 
     /**
@@ -217,7 +217,7 @@ public class SerialClob implements Clob, Serializable, Cloneable {
      * object. If this <code>SerialClob</code> object is instantiated with
      * a <code>char</code> array, a <code>SerialException</code> object is thrown.
      *
-     * @return a <code>java.io.InputStream</code> object containing
+     * @return a <code>j86.java.io.InputStream</code> object containing
      *     this <code>SerialClob</code> object's data
      * @throws SerialException if this {@code SerialClob} object was not
      * instantiated with a <code>Clob</code> object;
@@ -226,7 +226,7 @@ public class SerialClob implements Clob, Serializable, Cloneable {
      *     <code>CLOB</code> value represented by the <code>Clob</code> object
      * that was used to create this <code>SerialClob</code> object
      */
-    public java.io.InputStream getAsciiStream() throws SerialException, SQLException {
+    public j86.java.io.InputStream getAsciiStream() throws SerialException, SQLException {
         isValid();
         if (this.clob != null) {
             return this.clob.getAsciiStream();
@@ -454,7 +454,7 @@ public class SerialClob implements Clob, Serializable, Cloneable {
      *     <code>CLOB</code> value
      * @see #getAsciiStream
      */
-    public java.io.OutputStream setAsciiStream(long pos)
+    public j86.java.io.OutputStream setAsciiStream(long pos)
         throws SerialException, SQLException {
         isValid();
          if (this.clob != null) {
@@ -486,7 +486,7 @@ public class SerialClob implements Clob, Serializable, Cloneable {
      *            <code>CLOB</code> value
      * @see #getCharacterStream
      */
-    public java.io.Writer setCharacterStream(long pos)
+    public j86.java.io.Writer setCharacterStream(long pos)
         throws SerialException, SQLException {
         isValid();
         if (this.clob != null) {

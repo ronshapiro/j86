@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.security.jgss;
+package j86.sun.security.jgss;
 
-import org.ietf.jgss.MessageProp;
-import java.util.LinkedList;
+import j86.org.ietf.jgss.MessageProp;
+import j86.java.util.LinkedList;
 
 /**
  * A utility class that implements a number list that keeps track of which

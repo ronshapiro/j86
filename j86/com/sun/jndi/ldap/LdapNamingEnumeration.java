@@ -23,14 +23,14 @@
  * questions.
  */
 
-package com.sun.jndi.ldap;
+package j86.com.sun.jndi.ldap;
 
-import javax.naming.*;
-import javax.naming.directory.*;
+import j86.javax.naming.*;
+import j86.j86.javax.naming.directory.*;
 
-import com.sun.jndi.toolkit.ctx.Continuation;
-import java.util.Vector;
-import javax.naming.ldap.Control;
+import j86.com.sun.jndi.toolkit.ctx.Continuation;
+import j86.java.util.Vector;
+import j86.j86.javax.naming.ldap.Control;
 
 
 final class LdapNamingEnumeration

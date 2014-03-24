@@ -23,21 +23,21 @@
  * questions.
  */
 
-package javax.swing;
+package j86.javax.swing;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.beans.*;
-import java.io.*;
-import java.util.*;
-import javax.swing.event.*;
-import javax.swing.plaf.*;
-import javax.swing.tree.*;
-import javax.swing.text.Position;
-import javax.accessibility.*;
-import sun.swing.SwingUtilities2;
-import sun.swing.SwingUtilities2.Section;
-import static sun.swing.SwingUtilities2.Section.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.java.beans.*;
+import j86.java.io.*;
+import j86.java.util.*;
+import j86.j86.javax.swing.event.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.javax.swing.tree.*;
+import j86.j86.javax.swing.text.Position;
+import j86.javax.accessibility.*;
+import j86.sun.swing.SwingUtilities2;
+import j86.sun.swing.SwingUtilities2.Section;
+import static j86.sun.swing.SwingUtilities2.Section.*;
 
 
 /**
@@ -131,8 +131,8 @@ import static sun.swing.SwingUtilities2.Section.*;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *</p>
  * @beaninfo
  *   attribute: isContainer false
@@ -1202,7 +1202,7 @@ public class JTree extends JComponent implements Scrollable, Accessible
      *            <code>b</code> is <code>true</code> and
      *            <code>GraphicsEnvironment.isHeadless()</code>
      *            returns <code>true</code>
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      * @see #getDragEnabled
      * @see #setTransferHandler
      * @see TransferHandler
@@ -3239,8 +3239,8 @@ public class JTree extends JComponent implements Scrollable, Accessible
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     @SuppressWarnings("serial")
     protected static class EmptySelectionModel extends
@@ -3361,8 +3361,8 @@ public class JTree extends JComponent implements Scrollable, Accessible
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     @SuppressWarnings("serial")
     protected class TreeSelectionRedirector implements Serializable,
@@ -3862,8 +3862,8 @@ public class JTree extends JComponent implements Scrollable, Accessible
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     @SuppressWarnings("serial")
     public static class DynamicUtilTreeNode extends DefaultMutableTreeNode {
@@ -4094,8 +4094,8 @@ public class JTree extends JComponent implements Scrollable, Accessible
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     @SuppressWarnings("serial")
     protected class AccessibleJTree extends AccessibleJComponent
@@ -4555,7 +4555,7 @@ public class JTree extends JComponent implements Scrollable, Accessible
                     Object childObj = treeModel.getChild(obj, i);
                     Object[] objPath = path.getPath();
                     Object[] objChildPath = new Object[objPath.length+1];
-                    java.lang.System.arraycopy(objPath, 0, objChildPath, 0, objPath.length);
+                    j86.java.lang.System.arraycopy(objPath, 0, objChildPath, 0, objPath.length);
                     objChildPath[objChildPath.length-1] = childObj;
                     return new TreePath(objChildPath);
                 }
@@ -4755,7 +4755,7 @@ public class JTree extends JComponent implements Scrollable, Accessible
                             index = treeModel.getIndexOfChild(objParent, obj);
                         }
                         Object[] objParentPath = new Object[objPath.length-1];
-                        java.lang.System.arraycopy(objPath, 0, objParentPath,
+                        j86.java.lang.System.arraycopy(objPath, 0, objParentPath,
                                                    0, objPath.length-1);
                         TreePath parentPath = new TreePath(objParentPath);
                         accessibleParent = new AccessibleJTreeNode(tree,
@@ -4819,7 +4819,7 @@ public class JTree extends JComponent implements Scrollable, Accessible
                     Object childObj = treeModel.getChild(obj, i);
                     Object[] objPath = path.getPath();
                     Object[] objChildPath = new Object[objPath.length+1];
-                    java.lang.System.arraycopy(objPath, 0, objChildPath, 0, objPath.length);
+                    j86.java.lang.System.arraycopy(objPath, 0, objChildPath, 0, objPath.length);
                     objChildPath[objChildPath.length-1] = childObj;
                     TreePath childPath = new TreePath(objChildPath);
                     return new AccessibleJTreeNode(JTree.this, childPath, this);

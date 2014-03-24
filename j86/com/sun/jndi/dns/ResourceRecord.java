@@ -23,9 +23,9 @@
  * questions.
  */
 
-package com.sun.jndi.dns;
+package j86.com.sun.jndi.dns;
 
-import javax.naming.InvalidNameException;
+import j86.javax.naming.InvalidNameException;
 
 
 /**
@@ -337,7 +337,7 @@ public class ResourceRecord {
             int len = msg[pos++];
             try {
                 n.add(0, new String(msg, pos, len, "ISO-8859-1"));
-            } catch (java.io.UnsupportedEncodingException e) {
+            } catch (j86.java.io.UnsupportedEncodingException e) {
                 // assert false : "ISO-Latin-1 charset unavailable";
             }
             return decodeName(pos + len, n);

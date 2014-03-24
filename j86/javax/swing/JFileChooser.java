@@ -23,34 +23,34 @@
  * questions.
  */
 
-package javax.swing;
+package j86.javax.swing;
 
-import javax.swing.event.*;
-import javax.swing.filechooser.*;
-import javax.swing.plaf.FileChooserUI;
+import j86.j86.javax.swing.event.*;
+import j86.j86.javax.swing.filechooser.*;
+import j86.j86.javax.swing.plaf.FileChooserUI;
 
-import javax.accessibility.*;
+import j86.javax.accessibility.*;
 
-import java.io.File;
-import java.io.ObjectOutputStream;
-import java.io.IOException;
+import j86.java.io.File;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.IOException;
 
-import java.util.Vector;
-import java.awt.AWTEvent;
-import java.awt.Component;
-import java.awt.Container;
-import java.awt.BorderLayout;
-import java.awt.Window;
-import java.awt.Dialog;
-import java.awt.Frame;
-import java.awt.GraphicsEnvironment;
-import java.awt.HeadlessException;
-import java.awt.EventQueue;
-import java.awt.Toolkit;
-import java.awt.event.*;
-import java.beans.PropertyChangeListener;
-import java.beans.PropertyChangeEvent;
-import java.lang.ref.WeakReference;
+import j86.java.util.Vector;
+import j86.java.awt.AWTEvent;
+import j86.java.awt.Component;
+import j86.java.awt.Container;
+import j86.java.awt.BorderLayout;
+import j86.java.awt.Window;
+import j86.java.awt.Dialog;
+import j86.java.awt.Frame;
+import j86.java.awt.GraphicsEnvironment;
+import j86.java.awt.HeadlessException;
+import j86.java.awt.EventQueue;
+import j86.java.awt.Toolkit;
+import j86.j86.java.awt.event.*;
+import j86.java.beans.PropertyChangeListener;
+import j86.java.beans.PropertyChangeEvent;
+import j86.j86.java.lang.ref.WeakReference;
 
 /**
  * <code>JFileChooser</code> provides a simple mechanism for the user to
@@ -436,7 +436,7 @@ public class JFileChooser extends JComponent implements Accessible {
      *            <code>b</code> is <code>true</code> and
      *            <code>GraphicsEnvironment.isHeadless()</code>
      *            returns <code>true</code>
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      * @see #getDragEnabled
      * @see #setTransferHandler
      * @see TransferHandler
@@ -648,7 +648,7 @@ public class JFileChooser extends JComponent implements Accessible {
      * </ul>
      * @exception HeadlessException if GraphicsEnvironment.isHeadless()
      * returns true.
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      * @see #showDialog
      */
     public int showOpenDialog(Component parent) throws HeadlessException {
@@ -673,7 +673,7 @@ public class JFileChooser extends JComponent implements Accessible {
      * </ul>
      * @exception HeadlessException if GraphicsEnvironment.isHeadless()
      * returns true.
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      * @see #showDialog
      */
     public int showSaveDialog(Component parent) throws HeadlessException {
@@ -733,7 +733,7 @@ public class JFileChooser extends JComponent implements Accessible {
      * </ul>
      * @exception HeadlessException if GraphicsEnvironment.isHeadless()
      * returns true.
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      */
     public int showDialog(Component parent, String approveButtonText)
         throws HeadlessException {
@@ -789,7 +789,7 @@ public class JFileChooser extends JComponent implements Accessible {
      * @return a new <code>JDialog</code> containing this instance
      * @exception HeadlessException if GraphicsEnvironment.isHeadless()
      * returns true.
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      * @since 1.4
      */
     protected JDialog createDialog(Component parent) throws HeadlessException {
@@ -1869,7 +1869,7 @@ public class JFileChooser extends JComponent implements Accessible {
      * <code>JComponent</code> for more
      * information about serialization in Swing.
      */
-    private void readObject(java.io.ObjectInputStream in)
+    private void readObject(j86.java.io.ObjectInputStream in)
             throws IOException, ClassNotFoundException {
         in.defaultReadObject();
         installShowFilesListener();

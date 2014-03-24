@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.util;
+package j86.java.util;
 
 /**
  * This class implements the Dual-Pivot Quicksort algorithm by

@@ -23,9 +23,9 @@
  * questions.
  */
 
-package com.sun.security.auth;
+package j86.com.sun.security.auth;
 
-import java.security.Principal;
+import j86.java.security.Principal;
 
 /**
  * <p> This class implements the <code>Principal</code> interface
@@ -38,11 +38,11 @@ import java.security.Principal;
  * on how to achieve this.  Authorization decisions can then be based upon
  * the Principals associated with a <code>Subject</code>.
  *
- * @see java.security.Principal
- * @see javax.security.auth.Subject
+ * @see j86.java.security.Principal
+ * @see j86.javax.security.auth.Subject
  */
 @jdk.Exported
-public class NTUserPrincipal implements Principal, java.io.Serializable {
+public class NTUserPrincipal implements Principal, j86.java.io.Serializable {
 
     private static final long serialVersionUID = -8737649811939033735L;
 
@@ -63,10 +63,10 @@ public class NTUserPrincipal implements Principal, java.io.Serializable {
      */
     public NTUserPrincipal(String name) {
         if (name == null) {
-            java.text.MessageFormat form = new java.text.MessageFormat
-                (sun.security.util.ResourcesMgr.getString
+            j86.java.text.MessageFormat form = new java.text.MessageFormat
+                (j86.sun.security.util.ResourcesMgr.getString
                         ("invalid.null.input.value",
-                        "sun.security.util.AuthResources"));
+                        "j86.sun.security.util.AuthResources"));
             Object[] source = {"name"};
             throw new NullPointerException(form.format(source));
         }
@@ -92,10 +92,10 @@ public class NTUserPrincipal implements Principal, java.io.Serializable {
      * @return a string representation of this <code>NTPrincipal</code>.
      */
     public String toString() {
-        java.text.MessageFormat form = new java.text.MessageFormat
-                (sun.security.util.ResourcesMgr.getString
+        j86.java.text.MessageFormat form = new java.text.MessageFormat
+                (j86.sun.security.util.ResourcesMgr.getString
                         ("NTUserPrincipal.name",
-                        "sun.security.util.AuthResources"));
+                        "j86.sun.security.util.AuthResources"));
         Object[] source = {name};
         return form.format(source);
     }

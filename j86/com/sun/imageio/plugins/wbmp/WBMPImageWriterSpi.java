@@ -23,25 +23,25 @@
  * questions.
  */
 
-package com.sun.imageio.plugins.wbmp;
+package j86.com.sun.imageio.plugins.wbmp;
 
-import javax.imageio.spi.ImageWriterSpi;
-import javax.imageio.spi.ServiceRegistry;
-import javax.imageio.spi.IIORegistry;
-import javax.imageio.stream.ImageOutputStream;
-import javax.imageio.ImageWriter;
-import javax.imageio.ImageTypeSpecifier;
-import javax.imageio.IIOException;
+import j86.j86.javax.imageio.spi.ImageWriterSpi;
+import j86.j86.javax.imageio.spi.ServiceRegistry;
+import j86.j86.javax.imageio.spi.IIORegistry;
+import j86.j86.javax.imageio.stream.ImageOutputStream;
+import j86.javax.imageio.ImageWriter;
+import j86.javax.imageio.ImageTypeSpecifier;
+import j86.javax.imageio.IIOException;
 
-import java.awt.image.ColorModel;
-import java.awt.image.IndexColorModel;
-import java.awt.image.MultiPixelPackedSampleModel;
-import java.awt.image.SampleModel;
-import java.util.Locale;
+import j86.j86.j86.java.awt.image.ColorModel;
+import j86.j86.j86.java.awt.image.IndexColorModel;
+import j86.j86.j86.java.awt.image.MultiPixelPackedSampleModel;
+import j86.j86.j86.java.awt.image.SampleModel;
+import j86.java.util.Locale;
 
 public class WBMPImageWriterSpi extends ImageWriterSpi {
     private static String [] readerSpiNames =
-        {"com.sun.imageio.plugins.wbmp.WBMPImageReaderSpi"};
+        {"j86.com.sun.imageio.plugins.wbmp.WBMPImageReaderSpi"};
     private static String[] formatNames = {"wbmp", "WBMP"};
     private static String[] entensions = {"wbmp"};
     private static String[] mimeType = {"image/vnd.wap.wbmp"};
@@ -54,7 +54,7 @@ public class WBMPImageWriterSpi extends ImageWriterSpi {
               formatNames,
               entensions,
               mimeType,
-              "com.sun.imageio.plugins.wbmp.WBMPImageWriter",
+              "j86.com.sun.imageio.plugins.wbmp.WBMPImageWriter",
               new Class[] { ImageOutputStream.class },
               readerSpiNames,
               true,

@@ -36,24 +36,24 @@
  *
  */
 
-package java.text;
+package j86.java.text;
 
-import java.io.IOException;
-import java.io.ObjectOutputStream;
-import java.io.Serializable;
-import java.lang.ref.SoftReference;
-import java.text.spi.DateFormatSymbolsProvider;
-import java.util.Arrays;
-import java.util.Locale;
-import java.util.Objects;
-import java.util.ResourceBundle;
-import java.util.TimeZone;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentMap;
-import sun.util.locale.provider.LocaleProviderAdapter;
-import sun.util.locale.provider.LocaleServiceProviderPool;
-import sun.util.locale.provider.ResourceBundleBasedAdapter;
-import sun.util.locale.provider.TimeZoneNameUtility;
+import j86.java.io.IOException;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.Serializable;
+import j86.j86.java.lang.ref.SoftReference;
+import j86.j86.java.text.spi.DateFormatSymbolsProvider;
+import j86.java.util.Arrays;
+import j86.java.util.Locale;
+import j86.java.util.Objects;
+import j86.java.util.ResourceBundle;
+import j86.java.util.TimeZone;
+import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.j86.java.util.concurrent.ConcurrentMap;
+import j86.j86.j86.sun.util.locale.provider.LocaleProviderAdapter;
+import j86.j86.j86.sun.util.locale.provider.LocaleServiceProviderPool;
+import j86.j86.j86.sun.util.locale.provider.ResourceBundleBasedAdapter;
+import j86.j86.j86.sun.util.locale.provider.TimeZoneNameUtility;
 
 /**
  * <code>DateFormatSymbols</code> is a public class for encapsulating
@@ -97,27 +97,27 @@ import sun.util.locale.provider.TimeZoneNameUtility;
 
  * @see          DateFormat
  * @see          SimpleDateFormat
- * @see          java.util.SimpleTimeZone
+ * @see          j86.java.util.SimpleTimeZone
  * @author       Chen-Lieh Huang
  */
 public class DateFormatSymbols implements Serializable, Cloneable {
 
     /**
      * Construct a DateFormatSymbols object by loading format data from
-     * resources for the default {@link java.util.Locale.Category#FORMAT FORMAT}
+     * resources for the default {@link j86.java.util.Locale.Category#FORMAT FORMAT}
      * locale. This constructor can only
      * construct instances for the locales supported by the Java
      * runtime environment, not for those supported by installed
-     * {@link java.text.spi.DateFormatSymbolsProvider DateFormatSymbolsProvider}
+     * {@link j86.j86.java.text.spi.DateFormatSymbolsProvider DateFormatSymbolsProvider}
      * implementations. For full locale coverage, use the
      * {@link #getInstance(Locale) getInstance} method.
      * <p>This is equivalent to calling
      * {@link #DateFormatSymbols(Locale)
      *     DateFormatSymbols(Locale.getDefault(Locale.Category.FORMAT))}.
      * @see #getInstance()
-     * @see java.util.Locale#getDefault(java.util.Locale.Category)
-     * @see java.util.Locale.Category#FORMAT
-     * @exception  java.util.MissingResourceException
+     * @see j86.java.util.Locale#getDefault(java.util.Locale.Category)
+     * @see j86.java.util.Locale.Category#FORMAT
+     * @exception  j86.java.util.MissingResourceException
      *             if the resources for the default locale cannot be
      *             found or cannot be loaded.
      */
@@ -131,13 +131,13 @@ public class DateFormatSymbols implements Serializable, Cloneable {
      * resources for the given locale. This constructor can only
      * construct instances for the locales supported by the Java
      * runtime environment, not for those supported by installed
-     * {@link java.text.spi.DateFormatSymbolsProvider DateFormatSymbolsProvider}
+     * {@link j86.j86.java.text.spi.DateFormatSymbolsProvider DateFormatSymbolsProvider}
      * implementations. For full locale coverage, use the
      * {@link #getInstance(Locale) getInstance} method.
      *
      * @param locale the desired locale
      * @see #getInstance(Locale)
-     * @exception  java.util.MissingResourceException
+     * @exception  j86.java.util.MissingResourceException
      *             if the resources for the specified locale cannot be
      *             found or cannot be loaded.
      */
@@ -215,10 +215,10 @@ public class DateFormatSymbols implements Serializable, Cloneable {
      * saving time</li>
      * </ul>
      * The zone ID is <em>not</em> localized; it's one of the valid IDs of
-     * the {@link java.util.TimeZone TimeZone} class that are not
-     * <a href="../java/util/TimeZone.html#CustomID">custom IDs</a>.
+     * the {@link j86.java.util.TimeZone TimeZone} class that are not
+     * <a href="../j86.java.util/TimeZone.html#CustomID">custom IDs</a>.
      * All other entries are localized names.
-     * @see java.util.TimeZone
+     * @see j86.java.util.TimeZone
      * @serial
      */
     String zoneStrings[][] = null;
@@ -287,9 +287,9 @@ public class DateFormatSymbols implements Serializable, Cloneable {
      * localized instances.
      * The returned array represents the union of locales supported by the
      * Java runtime and by installed
-     * {@link java.text.spi.DateFormatSymbolsProvider DateFormatSymbolsProvider}
+     * {@link j86.j86.java.text.spi.DateFormatSymbolsProvider DateFormatSymbolsProvider}
      * implementations.  It must contain at least a <code>Locale</code>
-     * instance equal to {@link java.util.Locale#US Locale.US}.
+     * instance equal to {@link j86.java.util.Locale#US Locale.US}.
      *
      * @return An array of locales for which localized
      *         <code>DateFormatSymbols</code> instances are available.
@@ -306,12 +306,12 @@ public class DateFormatSymbols implements Serializable, Cloneable {
      * locale.  This method provides access to <code>DateFormatSymbols</code>
      * instances for locales supported by the Java runtime itself as well
      * as for those supported by installed
-     * {@link java.text.spi.DateFormatSymbolsProvider DateFormatSymbolsProvider}
+     * {@link j86.j86.java.text.spi.DateFormatSymbolsProvider DateFormatSymbolsProvider}
      * implementations.
      * <p>This is equivalent to calling {@link #getInstance(Locale)
      *     getInstance(Locale.getDefault(Locale.Category.FORMAT))}.
-     * @see java.util.Locale#getDefault(java.util.Locale.Category)
-     * @see java.util.Locale.Category#FORMAT
+     * @see j86.java.util.Locale#getDefault(java.util.Locale.Category)
+     * @see j86.java.util.Locale.Category#FORMAT
      * @return a <code>DateFormatSymbols</code> instance.
      * @since 1.6
      */
@@ -324,7 +324,7 @@ public class DateFormatSymbols implements Serializable, Cloneable {
      * locale.  This method provides access to <code>DateFormatSymbols</code>
      * instances for locales supported by the Java runtime itself as well
      * as for those supported by installed
-     * {@link java.text.spi.DateFormatSymbolsProvider DateFormatSymbolsProvider}
+     * {@link j86.j86.java.text.spi.DateFormatSymbolsProvider DateFormatSymbolsProvider}
      * implementations.
      * @param locale the given locale.
      * @return a <code>DateFormatSymbols</code> instance.
@@ -496,7 +496,7 @@ public class DateFormatSymbols implements Serializable, Cloneable {
 
     /**
      * Gets time zone strings.  Use of this method is discouraged; use
-     * {@link java.util.TimeZone#getDisplayName() TimeZone.getDisplayName()}
+     * {@link j86.java.util.TimeZone#getDisplayName() TimeZone.getDisplayName()}
      * instead.
      * <p>
      * The value returned is a
@@ -517,7 +517,7 @@ public class DateFormatSymbols implements Serializable, Cloneable {
      * saving time</li>
      * </ul>
      * The zone ID is <em>not</em> localized; it's one of the valid IDs of
-     * the {@link java.util.TimeZone TimeZone} class that are not
+     * the {@link j86.java.util.TimeZone TimeZone} class that are not
      * <a href="../util/TimeZone.html#CustomID">custom IDs</a>.
      * All other entries are localized names.  If a zone does not implement
      * daylight saving time, the daylight saving time names should not be used.
@@ -526,7 +526,7 @@ public class DateFormatSymbols implements Serializable, Cloneable {
      * on this <code>DateFormatSymbols</code> instance, then the strings
      * provided by that call are returned. Otherwise, the returned array
      * contains names provided by the Java runtime and by installed
-     * {@link java.util.spi.TimeZoneNameProvider TimeZoneNameProvider}
+     * {@link j86.j86.java.util.spi.TimeZoneNameProvider TimeZoneNameProvider}
      * implementations.
      *
      * @return the time zone strings.
@@ -555,7 +555,7 @@ public class DateFormatSymbols implements Serializable, Cloneable {
      * saving time</li>
      * </ul>
      * The zone ID is <em>not</em> localized; it's one of the valid IDs of
-     * the {@link java.util.TimeZone TimeZone} class that are not
+     * the {@link j86.java.util.TimeZone TimeZone} class that are not
      * <a href="../util/TimeZone.html#CustomID">custom IDs</a>.
      * All other entries are localized names.
      *
@@ -745,7 +745,7 @@ public class DateFormatSymbols implements Serializable, Cloneable {
      * @param ID the given time zone ID.
      * @return the index of the given time zone ID.  Returns -1 if
      * the given time zone ID can't be located in the DateFormatSymbols object.
-     * @see java.util.SimpleTimeZone
+     * @see j86.java.util.SimpleTimeZone
      */
     final int getZoneIndex(String ID) {
         String[][] zoneStrings = getZoneStringsWrapper();
@@ -772,7 +772,7 @@ public class DateFormatSymbols implements Serializable, Cloneable {
 
     /**
      * Wrapper method to the getZoneStrings(), which is called from inside
-     * the java.text package and not to mutate the returned arrays, so that
+     * the j86.java.text package and not to mutate the returned arrays, so that
      * it does not need to create a defensive copy.
      */
     final String[][] getZoneStringsWrapper() {
@@ -801,7 +801,7 @@ public class DateFormatSymbols implements Serializable, Cloneable {
     }
 
     private boolean isSubclassObject() {
-        return !getClass().getName().equals("java.text.DateFormatSymbols");
+        return !getClass().getName().equals("j86.java.text.DateFormatSymbols");
     }
 
     /**

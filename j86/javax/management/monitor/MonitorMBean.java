@@ -23,11 +23,11 @@
  * questions.
  */
 
-package javax.management.monitor;
+package j86.j86.javax.management.monitor;
 
 // jmx imports
 //
-import javax.management.ObjectName;
+import j86.javax.management.ObjectName;
 
 /**
  * Exposes the remote management interface of monitor MBeans.
@@ -54,10 +54,10 @@ public interface MonitorMBean {
      * Adds the specified object in the set of observed MBeans.
      *
      * @param object The object to observe.
-     * @exception java.lang.IllegalArgumentException the specified object is null.
+     * @exception j86.java.lang.IllegalArgumentException the specified object is null.
      *
      */
-    public void addObservedObject(ObjectName object) throws java.lang.IllegalArgumentException;
+    public void addObservedObject(ObjectName object) throws j86.java.lang.IllegalArgumentException;
 
     /**
      * Removes the specified object from the set of observed MBeans.
@@ -139,12 +139,12 @@ public interface MonitorMBean {
      * Sets the granularity period (in milliseconds).
      *
      * @param period The granularity period.
-     * @exception java.lang.IllegalArgumentException The granularity
+     * @exception j86.java.lang.IllegalArgumentException The granularity
      * period is less than or equal to zero.
      *
      * @see #getGranularityPeriod
      */
-    public void setGranularityPeriod(long period) throws java.lang.IllegalArgumentException;
+    public void setGranularityPeriod(long period) throws j86.java.lang.IllegalArgumentException;
 
     /**
      * Tests if the monitor MBean is active.

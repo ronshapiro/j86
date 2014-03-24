@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.smartcardio;
+package j86.javax.smartcardio;
 
-import java.util.*;
+import j86.java.util.*;
 
 /**
  * The TerminalFactorySpi class defines the service provider interface.
@@ -35,8 +35,8 @@ import java.util.*;
  * <P>Service providers that want to write a new implementation should define
  * a concrete subclass of TerminalFactorySpi with a constructor that takes
  * an <code>Object</code> as parameter. That class needs to be registered
- * in a {@linkplain java.security.Provider}. The engine
- * {@linkplain java.security.Provider.Service#getType type} is
+ * in a {@linkplain j86.java.security.Provider}. The engine
+ * {@linkplain j86.java.security.Provider.Service#getType type} is
  * <code>TerminalFactory</code>.
  * Service providers also need to implement subclasses of the abstract classes
  * {@linkplain CardTerminals}, {@linkplain CardTerminal}, {@linkplain Card},
@@ -47,7 +47,7 @@ import java.util.*;
  *
  * package com.somedomain.card;
  *
- * import java.security.Provider;
+ * import j86.java.security.Provider;
  *
  * public class MyProvider extends Provider {
  *     public MyProvider() {
@@ -60,7 +60,7 @@ import java.util.*;
  *
  * package com.somedomain.card;
  *
- * import javax.smartcardio.*;
+ * import j86.javax.smartcardio.*;
  *
  * public class MySpi extends TerminalFactoySpi {
  *      public MySpi(Object parameter) {
@@ -73,7 +73,7 @@ import java.util.*;
  * </pre>
  *
  * @see TerminalFactory
- * @see java.security.Provider
+ * @see j86.java.security.Provider
  *
  * @since   1.6
  * @author  Andreas Sterbenz

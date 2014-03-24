@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.io;
+package j86.java.io;
 
 
 /**
@@ -91,10 +91,10 @@ public abstract class Reader implements Readable, Closeable {
      *         -1 if this source of characters is at its end
      * @throws IOException if an I/O error occurs
      * @throws NullPointerException if target is null
-     * @throws java.nio.ReadOnlyBufferException if target is a read only buffer
+     * @throws j86.java.nio.ReadOnlyBufferException if target is a read only buffer
      * @since 1.5
      */
-    public int read(java.nio.CharBuffer target) throws IOException {
+    public int read(j86.java.nio.CharBuffer target) throws IOException {
         int len = target.remaining();
         char[] cbuf = new char[len];
         int n = read(cbuf, 0, len);

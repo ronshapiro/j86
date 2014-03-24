@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.management.counter.perf;
+package j86.j86.j86.sun.management.counter.perf;
 
-import sun.management.counter.*;
-import java.nio.*;
-import java.util.*;
-import java.util.regex.*;
+import j86.j86.sun.management.counter.*;
+import j86.java.nio.*;
+import j86.java.util.*;
+import j86.j86.java.util.regex.*;
 
 public class PerfInstrumentation {
     private ByteBuffer buffer;

@@ -23,8 +23,8 @@
  * questions.
  */
 
-package sun.net.www.http;
-import java.io.*;
+package j86.j86.j86.sun.net.www.http;
+import j86.java.io.*;
 
 /**
  * A Simple FilterInputStream subclass to capture HTTP traffic.

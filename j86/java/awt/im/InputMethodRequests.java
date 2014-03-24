@@ -23,12 +23,12 @@
  * questions.
  */
 
-package java.awt.im;
+package j86.j86.java.awt.im;
 
-import java.awt.Rectangle;
-import java.awt.font.TextHitInfo;
-import java.text.AttributedCharacterIterator;
-import java.text.AttributedCharacterIterator.Attribute;
+import j86.java.awt.Rectangle;
+import j86.j86.java.awt.font.TextHitInfo;
+import j86.java.text.AttributedCharacterIterator;
+import j86.java.text.AttributedCharacterIterator.Attribute;
 
 /**
  * InputMethodRequests defines the requests that a text editing component
@@ -54,8 +54,8 @@ import java.text.AttributedCharacterIterator.Attribute;
  *     of the context that the text is input into.
  * </ul>
  *
- * @see java.awt.Component#getInputMethodRequests
- * @see java.awt.event.InputMethodListener
+ * @see j86.java.awt.Component#getInputMethodRequests
+ * @see j86.j86.java.awt.event.InputMethodListener
  *
  * @author JavaSoft Asia/Pacific
  * @since 1.2

@@ -32,17 +32,17 @@
  */
 
 
-package com.sun.tools.example.debug.gui;
+package j86.com.sun.tools.example.debug.gui;
 
-import java.io.*;
-import java.awt.*;
-import java.awt.event.*;
-import javax.swing.*;
+import j86.java.io.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.javax.swing.*;
 
-import com.sun.jdi.*;
-import com.sun.jdi.request.*;
+import j86.com.sun.jdi.*;
+import j86.j86.com.sun.jdi.request.*;
 
-import com.sun.tools.example.debug.bdi.*;
+import j86.com.sun.tools.example.debug.bdi.*;
 
 public class SourceTool extends JPanel {
 

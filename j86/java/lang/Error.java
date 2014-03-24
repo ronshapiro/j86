@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.lang;
+package j86.java.lang;
 
 /**
  * An {@code Error} is a subclass of {@code Throwable}
@@ -42,7 +42,7 @@ package java.lang;
  * exceptions for the purposes of compile-time checking of exceptions.
  *
  * @author  Frank Yellin
- * @see     java.lang.ThreadDeath
+ * @see     j86.java.lang.ThreadDeath
  * @jls 11.2 Compile-Time Checking of Exceptions
  * @since   JDK1.0
  */

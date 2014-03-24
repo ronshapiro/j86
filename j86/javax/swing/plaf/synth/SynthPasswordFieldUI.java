@@ -23,16 +23,16 @@
  * questions.
  */
 
-package javax.swing.plaf.synth;
+package j86.j86.j86.javax.swing.plaf.synth;
 
-import java.awt.Graphics;
-import javax.swing.*;
-import javax.swing.text.*;
-import javax.swing.plaf.ComponentUI;
+import j86.java.awt.Graphics;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.text.*;
+import j86.j86.javax.swing.plaf.ComponentUI;
 
 /**
  * Provides the Synth L&amp;F UI delegate for
- * {@link javax.swing.JPasswordField}.
+ * {@link j86.javax.swing.JPasswordField}.
  *
  * @author  Shannon Hickey
  * @since 1.7

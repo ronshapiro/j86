@@ -56,10 +56,10 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-package jdk.internal.org.objectweb.asm.util;
+package j86.j86.jdk.internal.org.objectweb.asm.util;
 
-import jdk.internal.org.objectweb.asm.Opcodes;
-import jdk.internal.org.objectweb.asm.signature.SignatureVisitor;
+import j86.jdk.internal.org.objectweb.asm.Opcodes;
+import j86.j86.jdk.internal.org.objectweb.asm.signature.SignatureVisitor;
 
 /**
  * A {@link SignatureVisitor} that prints a disassembled view of the signature
@@ -240,12 +240,12 @@ public final class TraceSignatureVisitor extends SignatureVisitor {
 
     @Override
     public void visitClassType(final String name) {
-        if ("java/lang/Object".equals(name)) {
-            // Map<java.lang.Object,java.util.List>
+        if ("j86.java.lang/Object".equals(name)) {
+            // Map<j86.java.lang.Object,j86.java.util.List>
             // or
             // abstract public V get(Object key); (seen in Dictionary.class)
             // should have Object
-            // but java.lang.String extends java.lang.Object is unnecessary
+            // but j86.java.lang.String extends java.lang.Object is unnecessary
             boolean needObjectClass = argumentStack % 2 != 0 || seenParameter;
             if (needObjectClass) {
                 declaration.append(separator).append(name.replace('/', '.'));

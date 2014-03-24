@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.lang;
+package j86.java.lang;
 
-import java.util.Arrays;
+import j86.java.util.Arrays;
 
 /**
  * A thread-safe, mutable sequence of characters.
@@ -90,13 +90,13 @@ import java.util.Arrays;
  * it performs no synchronization.
  *
  * @author      Arthur van Hoff
- * @see     java.lang.StringBuilder
- * @see     java.lang.String
+ * @see     j86.java.lang.StringBuilder
+ * @see     j86.java.lang.String
  * @since   JDK1.0
  */
  public final class StringBuffer
     extends AbstractStringBuilder
-    implements java.io.Serializable, CharSequence
+    implements j86.java.io.Serializable, CharSequence
 {
 
     /**
@@ -684,20 +684,20 @@ import java.util.Arrays;
      *              A flag indicating whether the backing array is shared.
      *              The value is ignored upon deserialization.
      */
-    private static final java.io.ObjectStreamField[] serialPersistentFields =
+    private static final j86.java.io.ObjectStreamField[] serialPersistentFields =
     {
-        new java.io.ObjectStreamField("value", char[].class),
-        new java.io.ObjectStreamField("count", Integer.TYPE),
-        new java.io.ObjectStreamField("shared", Boolean.TYPE),
+        new j86.java.io.ObjectStreamField("value", char[].class),
+        new j86.java.io.ObjectStreamField("count", Integer.TYPE),
+        new j86.java.io.ObjectStreamField("shared", Boolean.TYPE),
     };
 
     /**
      * readObject is called to restore the state of the StringBuffer from
      * a stream.
      */
-    private synchronized void writeObject(java.io.ObjectOutputStream s)
-        throws java.io.IOException {
-        java.io.ObjectOutputStream.PutField fields = s.putFields();
+    private synchronized void writeObject(j86.java.io.ObjectOutputStream s)
+        throws j86.java.io.IOException {
+        j86.java.io.ObjectOutputStream.PutField fields = s.putFields();
         fields.put("value", value);
         fields.put("count", count);
         fields.put("shared", false);
@@ -708,9 +708,9 @@ import java.util.Arrays;
      * readObject is called to restore the state of the StringBuffer from
      * a stream.
      */
-    private void readObject(java.io.ObjectInputStream s)
-        throws java.io.IOException, ClassNotFoundException {
-        java.io.ObjectInputStream.GetField fields = s.readFields();
+    private void readObject(j86.java.io.ObjectInputStream s)
+        throws j86.java.io.IOException, ClassNotFoundException {
+        j86.java.io.ObjectInputStream.GetField fields = s.readFields();
         value = (char[])fields.get("value", null);
         count = fields.get("count", 0);
     }

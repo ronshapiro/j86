@@ -24,12 +24,12 @@
  */
 
 
-package sun.swing.text.html;
+package j86.j86.j86.sun.swing.text.html;
 
 
 /**
  * This interface is used only for tagging
- * FrameEditorPane in javax.swing.text.html.FrameView.
+ * FrameEditorPane in j86.j86.j86.javax.swing.text.html.FrameView.
  */
 
 public interface FrameEditorPaneTag {

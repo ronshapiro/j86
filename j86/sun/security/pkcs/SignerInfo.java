@@ -23,25 +23,25 @@
  * questions.
  */
 
-package sun.security.pkcs;
+package j86.sun.security.pkcs;
 
-import java.io.OutputStream;
-import java.io.IOException;
-import java.math.BigInteger;
-import java.security.cert.CertificateException;
-import java.security.cert.CertificateFactory;
-import java.security.cert.CertPath;
-import java.security.cert.X509Certificate;
-import java.security.*;
-import java.util.ArrayList;
-import java.util.Arrays;
+import j86.java.io.OutputStream;
+import j86.java.io.IOException;
+import j86.java.math.BigInteger;
+import j86.j86.java.security.cert.CertificateException;
+import j86.j86.java.security.cert.CertificateFactory;
+import j86.j86.java.security.cert.CertPath;
+import j86.j86.java.security.cert.X509Certificate;
+import j86.java.security.*;
+import j86.java.util.ArrayList;
+import j86.java.util.Arrays;
 
-import sun.security.timestamp.TimestampToken;
-import sun.security.util.*;
-import sun.security.x509.AlgorithmId;
-import sun.security.x509.X500Name;
-import sun.security.x509.KeyUsageExtension;
-import sun.misc.HexDumpEncoder;
+import j86.sun.security.timestamp.TimestampToken;
+import j86.sun.security.util.*;
+import j86.sun.security.x509.AlgorithmId;
+import j86.sun.security.x509.X500Name;
+import j86.sun.security.x509.KeyUsageExtension;
+import j86.sun.misc.HexDumpEncoder;
 
 /**
  * A SignerInfo, as defined in PKCS#7's signedData type.

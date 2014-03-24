@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.tools.tree;
+package j86.sun.tools.tree;
 
-import sun.tools.java.*;
-import sun.tools.asm.Assembler;
-import java.util.Hashtable;
+import j86.sun.tools.java.*;
+import j86.sun.tools.asm.Assembler;
+import j86.java.util.Hashtable;
 
 /**
  * WARNING: The contents of this source file are not part of any
@@ -204,8 +204,8 @@ class NewInstanceExpression extends NaryExpression {
                 // This is an anonymous class.
                 ClassDefinition superDef = null;
                 if (def.isInterface()) {
-                    // For interfaces, our superclass is java.lang.Object.
-                    // We could just assume that java.lang.Object has
+                    // For interfaces, our superclass is j86.java.lang.Object.
+                    // We could just assume that j86.java.lang.Object has
                     // one constructor with no arguments in the code
                     // that follows, but we don't.  This way, if Object
                     // grows a new constructor (unlikely) then the

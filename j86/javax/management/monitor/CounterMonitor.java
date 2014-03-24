@@ -23,14 +23,14 @@
  * questions.
  */
 
-package javax.management.monitor;
+package j86.j86.javax.management.monitor;
 
-import static com.sun.jmx.defaults.JmxProperties.MONITOR_LOGGER;
-import java.util.logging.Level;
-import javax.management.ObjectName;
-import javax.management.MBeanNotificationInfo;
-import static javax.management.monitor.Monitor.NumericalType.*;
-import static javax.management.monitor.MonitorNotification.*;
+import static j86.com.sun.jmx.defaults.JmxProperties.MONITOR_LOGGER;
+import j86.j86.java.util.logging.Level;
+import j86.javax.management.ObjectName;
+import j86.javax.management.MBeanNotificationInfo;
+import static j86.j86.javax.management.monitor.Monitor.NumericalType.*;
+import static j86.j86.javax.management.monitor.MonitorNotification.*;
 
 /**
  * Defines a monitor MBean designed to observe the values of a counter
@@ -201,7 +201,7 @@ public class CounterMonitor extends Monitor implements CounterMonitorMBean {
     private static final MBeanNotificationInfo[] notifsInfo = {
         new MBeanNotificationInfo(
             types,
-            "javax.management.monitor.MonitorNotification",
+            "j86.j86.javax.management.monitor.MonitorNotification",
             "Notifications sent by the CounterMonitor MBean")
     };
 

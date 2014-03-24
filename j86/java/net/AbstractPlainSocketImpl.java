@@ -23,16 +23,16 @@
  * questions.
  */
 
-package java.net;
+package j86.java.net;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.FileDescriptor;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.io.OutputStream;
+import j86.java.io.FileDescriptor;
 
-import sun.net.ConnectionResetException;
-import sun.net.NetHooks;
-import sun.net.ResourceManager;
+import j86.sun.net.ConnectionResetException;
+import j86.sun.net.NetHooks;
+import j86.sun.net.ResourceManager;
 
 /**
  * Default Socket Implementation. This implementation does
@@ -78,8 +78,8 @@ abstract class AbstractPlainSocketImpl extends SocketImpl
      * Load net library into runtime.
      */
     static {
-        java.security.AccessController.doPrivileged(
-            new java.security.PrivilegedAction<Void>() {
+        j86.java.security.AccessController.doPrivileged(
+            new j86.java.security.PrivilegedAction<Void>() {
                 public Void run() {
                     System.loadLibrary("net");
                     return null;

@@ -32,7 +32,7 @@
  *******************************************************************************
  */
 
-package sun.font;
+package j86.sun.font;
 
 /**
  * <code>ScriptRun</code> is used to find runs of characters in

@@ -25,7 +25,7 @@
 /*
  * (C) Copyright IBM Corp. 2005, All Rights Reserved.
  */
-package sun.font;
+package j86.sun.font;
 
 //
 // This is the 'simple' mapping implementation.  It does things the most
@@ -33,19 +33,19 @@ package sun.font;
 // handle complex paths efficiently, and doesn't handle closed paths.
 //
 
-import java.awt.Shape;
-import java.awt.font.LayoutPath;
-import java.awt.geom.AffineTransform;
-import java.awt.geom.GeneralPath;
-import java.awt.geom.NoninvertibleTransformException;
-import java.awt.geom.PathIterator;
-import java.awt.geom.Point2D;
-import java.util.Formatter;
-import java.util.ArrayList;
+import j86.java.awt.Shape;
+import j86.j86.java.awt.font.LayoutPath;
+import j86.j86.java.awt.geom.AffineTransform;
+import j86.j86.java.awt.geom.GeneralPath;
+import j86.j86.java.awt.geom.NoninvertibleTransformException;
+import j86.j86.java.awt.geom.PathIterator;
+import j86.j86.java.awt.geom.Point2D;
+import j86.java.util.Formatter;
+import j86.java.util.ArrayList;
 
-import static java.awt.geom.PathIterator.*;
-import static java.lang.Math.abs;
-import static java.lang.Math.sqrt;
+import static j86.j86.java.awt.geom.PathIterator.*;
+import static j86.java.lang.Math.abs;
+import static j86.java.lang.Math.sqrt;
 
 public abstract class LayoutPathImpl extends LayoutPath {
 

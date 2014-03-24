@@ -23,17 +23,17 @@
  * questions.
  */
 
-package com.sun.rowset.internal;
+package j86.j86.com.sun.rowset.internal;
 
-import com.sun.rowset.JdbcRowSetResourceBundle;
-import java.sql.*;
-import javax.sql.*;
-import java.io.*;
-import java.text.MessageFormat;
-import java.util.*;
+import j86.com.sun.rowset.JdbcRowSetResourceBundle;
+import j86.java.sql.*;
+import j86.javax.sql.*;
+import j86.java.io.*;
+import j86.java.text.MessageFormat;
+import j86.java.util.*;
 
-import javax.sql.rowset.*;
-import javax.sql.rowset.spi.*;
+import j86.j86.javax.sql.rowset.*;
+import j86.j86.j86.javax.sql.rowset.spi.*;
 
 /**
  * An implementation of the <code>XmlWriter</code> interface, which writes a
@@ -43,19 +43,19 @@ import javax.sql.rowset.spi.*;
 public class WebRowSetXmlWriter implements XmlWriter, Serializable {
 
     /**
-     * The <code>java.io.Writer</code> object to which this <code>WebRowSetXmlWriter</code>
+     * The <code>j86.java.io.Writer</code> object to which this <code>WebRowSetXmlWriter</code>
      * object will write when its <code>writeXML</code> method is called. The value
-     * for this field is set with the <code>java.io.Writer</code> object given
+     * for this field is set with the <code>j86.java.io.Writer</code> object given
      * as the second argument to the <code>writeXML</code> method.
      */
-    private transient java.io.Writer writer;
+    private transient j86.java.io.Writer writer;
 
     /**
-     * The <code>java.util.Stack</code> object that this <code>WebRowSetXmlWriter</code>
+     * The <code>j86.java.util.Stack</code> object that this <code>WebRowSetXmlWriter</code>
      * object will use for storing the tags to be used for writing the calling
      * <code>WebRowSet</code> object as an XML document.
      */
-    private java.util.Stack<String> stack;
+    private j86.java.util.Stack<String> stack;
 
     private  JdbcRowSetResourceBundle resBundle;
 
@@ -70,7 +70,7 @@ public class WebRowSetXmlWriter implements XmlWriter, Serializable {
 
     /**
      * Writes the given <code>WebRowSet</code> object as an XML document
-     * using the given <code>java.io.Writer</code> object. The XML document
+     * using the given <code>j86.java.io.Writer</code> object. The XML document
      * will include the <code>WebRowSet</code> object's data, metadata, and
      * properties.  If a data value has been updated, that information is also
      * included.
@@ -83,30 +83,30 @@ public class WebRowSetXmlWriter implements XmlWriter, Serializable {
      * @param caller the <code>WebRowSet</code> object to be written; must
      *        be a rowset for which this <code>WebRowSetXmlWriter</code> object
      *        is the writer
-     * @param wrt the <code>java.io.Writer</code> object to which
+     * @param wrt the <code>j86.java.io.Writer</code> object to which
      *        <code>caller</code> will be written
      * @exception SQLException if a database access error occurs or
      *            this <code>WebRowSetXmlWriter</code> object is not the writer
      *            for the given rowset
      * @see XmlWriter#writeXML
      */
-    public void writeXML(WebRowSet caller, java.io.Writer wrt)
+    public void writeXML(WebRowSet caller, j86.java.io.Writer wrt)
     throws SQLException {
 
         // create a new stack for tag checking.
-        stack = new java.util.Stack<>();
+        stack = new j86.java.util.Stack<>();
         writer = wrt;
         writeRowSet(caller);
     }
 
     /**
      * Writes the given <code>WebRowSet</code> object as an XML document
-     * using the given <code>java.io.OutputStream</code> object. The XML document
+     * using the given <code>j86.java.io.OutputStream</code> object. The XML document
      * will include the <code>WebRowSet</code> object's data, metadata, and
      * properties.  If a data value has been updated, that information is also
      * included.
      * <P>
-     * Using stream is a faster way than using <code>java.io.Writer<code/>
+     * Using stream is a faster way than using <code>j86.java.io.Writer<code/>
      *
      * This method is called by the <code>XmlWriter</code> object that is
      * referenced in the calling <code>WebRowSet</code> object's
@@ -116,18 +116,18 @@ public class WebRowSetXmlWriter implements XmlWriter, Serializable {
      * @param caller the <code>WebRowSet</code> object to be written; must
      *        be a rowset for which this <code>WebRowSetXmlWriter</code> object
      *        is the writer
-     * @param oStream the <code>java.io.OutputStream</code> object to which
+     * @param oStream the <code>j86.java.io.OutputStream</code> object to which
      *        <code>caller</code> will be written
      * @throws SQLException if a database access error occurs or
      *            this <code>WebRowSetXmlWriter</code> object is not the writer
      *            for the given rowset
      * @see XmlWriter#writeXML
      */
-    public void writeXML(WebRowSet caller, java.io.OutputStream oStream)
+    public void writeXML(WebRowSet caller, j86.java.io.OutputStream oStream)
     throws SQLException {
 
         // create a new stack for tag checking.
-        stack = new java.util.Stack<>();
+        stack = new j86.java.util.Stack<>();
         writer = new OutputStreamWriter(oStream);
         writeRowSet(caller);
     }
@@ -149,12 +149,12 @@ public class WebRowSetXmlWriter implements XmlWriter, Serializable {
 
             endHeader();
 
-        } catch (java.io.IOException ex) {
+        } catch (j86.java.io.IOException ex) {
             throw new SQLException(MessageFormat.format(resBundle.handleGetObject("wrsxmlwriter.ioex").toString(), ex.getMessage()));
         }
     }
 
-    private void startHeader() throws java.io.IOException {
+    private void startHeader() throws j86.java.io.IOException {
 
         setTag("webRowSet");
         writer.write("<?xml version=\"1.0\"?>\n");
@@ -162,7 +162,7 @@ public class WebRowSetXmlWriter implements XmlWriter, Serializable {
         writer.write("xsi:schemaLocation=\"http://java.sun.com/xml/ns/jdbc http://java.sun.com/xml/ns/jdbc/webrowset.xsd\">\n");
     }
 
-    private void endHeader() throws java.io.IOException {
+    private void endHeader() throws j86.java.io.IOException {
         endTag("webRowSet");
     }
 
@@ -171,7 +171,7 @@ public class WebRowSetXmlWriter implements XmlWriter, Serializable {
      *
      * @exception SQLException if a database access error occurs
      */
-    private void writeProperties(WebRowSet caller) throws java.io.IOException {
+    private void writeProperties(WebRowSet caller) throws j86.java.io.IOException {
 
         beginSection("properties");
 
@@ -251,7 +251,7 @@ public class WebRowSetXmlWriter implements XmlWriter, Serializable {
             endSection("sync-provider");
 
         } catch (SQLException ex) {
-            throw new java.io.IOException(MessageFormat.format(resBundle.handleGetObject("wrsxmlwriter.sqlex").toString(), ex.getMessage()));
+            throw new j86.java.io.IOException(MessageFormat.format(resBundle.handleGetObject("wrsxmlwriter.sqlex").toString(), ex.getMessage()));
         }
 
         endSection("properties");
@@ -262,7 +262,7 @@ public class WebRowSetXmlWriter implements XmlWriter, Serializable {
      *
      * @exception SQLException if a database access error occurs
      */
-    private void writeMetaData(WebRowSet caller) throws java.io.IOException {
+    private void writeMetaData(WebRowSet caller) throws j86.java.io.IOException {
         int columnCount;
 
         beginSection("metadata");
@@ -297,7 +297,7 @@ public class WebRowSetXmlWriter implements XmlWriter, Serializable {
                 endSection("column-definition");
             }
         } catch (SQLException ex) {
-            throw new java.io.IOException(MessageFormat.format(resBundle.handleGetObject("wrsxmlwriter.sqlex").toString(), ex.getMessage()));
+            throw new j86.java.io.IOException(MessageFormat.format(resBundle.handleGetObject("wrsxmlwriter.sqlex").toString(), ex.getMessage()));
         }
 
         endSection("metadata");
@@ -308,7 +308,7 @@ public class WebRowSetXmlWriter implements XmlWriter, Serializable {
      *
      * @exception SQLException if a database access error occurs
      */
-    private void writeData(WebRowSet caller) throws java.io.IOException {
+    private void writeData(WebRowSet caller) throws j86.java.io.IOException {
         ResultSet rs;
 
         try {
@@ -352,92 +352,92 @@ public class WebRowSetXmlWriter implements XmlWriter, Serializable {
             }
             endSection("data");
         } catch (SQLException ex) {
-            throw new java.io.IOException(MessageFormat.format(resBundle.handleGetObject("wrsxmlwriter.sqlex").toString(), ex.getMessage()));
+            throw new j86.java.io.IOException(MessageFormat.format(resBundle.handleGetObject("wrsxmlwriter.sqlex").toString(), ex.getMessage()));
         }
     }
 
-    private void writeValue(int idx, RowSet caller) throws java.io.IOException {
+    private void writeValue(int idx, RowSet caller) throws j86.java.io.IOException {
         try {
             int type = caller.getMetaData().getColumnType(idx);
 
             switch (type) {
-                case java.sql.Types.BIT:
-                case java.sql.Types.BOOLEAN:
+                case j86.java.sql.Types.BIT:
+                case j86.java.sql.Types.BOOLEAN:
                     boolean b = caller.getBoolean(idx);
                     if (caller.wasNull())
                         writeNull();
                     else
                         writeBoolean(b);
                     break;
-                case java.sql.Types.TINYINT:
-                case java.sql.Types.SMALLINT:
+                case j86.java.sql.Types.TINYINT:
+                case j86.java.sql.Types.SMALLINT:
                     short s = caller.getShort(idx);
                     if (caller.wasNull())
                         writeNull();
                     else
                         writeShort(s);
                     break;
-                case java.sql.Types.INTEGER:
+                case j86.java.sql.Types.INTEGER:
                     int i = caller.getInt(idx);
                     if (caller.wasNull())
                         writeNull();
                     else
                         writeInteger(i);
                     break;
-                case java.sql.Types.BIGINT:
+                case j86.java.sql.Types.BIGINT:
                     long l = caller.getLong(idx);
                     if (caller.wasNull())
                         writeNull();
                     else
                         writeLong(l);
                     break;
-                case java.sql.Types.REAL:
-                case java.sql.Types.FLOAT:
+                case j86.java.sql.Types.REAL:
+                case j86.java.sql.Types.FLOAT:
                     float f = caller.getFloat(idx);
                     if (caller.wasNull())
                         writeNull();
                     else
                         writeFloat(f);
                     break;
-                case java.sql.Types.DOUBLE:
+                case j86.java.sql.Types.DOUBLE:
                     double d = caller.getDouble(idx);
                     if (caller.wasNull())
                         writeNull();
                     else
                         writeDouble(d);
                     break;
-                case java.sql.Types.NUMERIC:
-                case java.sql.Types.DECIMAL:
+                case j86.java.sql.Types.NUMERIC:
+                case j86.java.sql.Types.DECIMAL:
                     writeBigDecimal(caller.getBigDecimal(idx));
                     break;
-                case java.sql.Types.BINARY:
-                case java.sql.Types.VARBINARY:
-                case java.sql.Types.LONGVARBINARY:
+                case j86.java.sql.Types.BINARY:
+                case j86.java.sql.Types.VARBINARY:
+                case j86.java.sql.Types.LONGVARBINARY:
                     break;
-                case java.sql.Types.DATE:
-                    java.sql.Date date = caller.getDate(idx);
+                case j86.java.sql.Types.DATE:
+                    j86.java.sql.Date date = caller.getDate(idx);
                     if (caller.wasNull())
                         writeNull();
                     else
                         writeLong(date.getTime());
                     break;
-                case java.sql.Types.TIME:
-                    java.sql.Time time = caller.getTime(idx);
+                case j86.java.sql.Types.TIME:
+                    j86.java.sql.Time time = caller.getTime(idx);
                     if (caller.wasNull())
                         writeNull();
                     else
                         writeLong(time.getTime());
                     break;
-                case java.sql.Types.TIMESTAMP:
-                    java.sql.Timestamp ts = caller.getTimestamp(idx);
+                case j86.java.sql.Types.TIMESTAMP:
+                    j86.java.sql.Timestamp ts = caller.getTimestamp(idx);
                     if (caller.wasNull())
                         writeNull();
                     else
                         writeLong(ts.getTime());
                     break;
-                case java.sql.Types.CHAR:
-                case java.sql.Types.VARCHAR:
-                case java.sql.Types.LONGVARCHAR:
+                case j86.java.sql.Types.CHAR:
+                case j86.java.sql.Types.VARCHAR:
+                case j86.java.sql.Types.LONGVARCHAR:
                     writeStringData(caller.getString(idx));
                     break;
                 default:
@@ -445,7 +445,7 @@ public class WebRowSetXmlWriter implements XmlWriter, Serializable {
                     //Need to take care of BLOB, CLOB, Array, Ref here
             }
         } catch (SQLException ex) {
-            throw new java.io.IOException(resBundle.handleGetObject("wrsxmlwriter.failedwrite").toString()+ ex.getMessage());
+            throw new j86.java.io.IOException(resBundle.handleGetObject("wrsxmlwriter.failedwrite").toString()+ ex.getMessage());
         }
     }
 
@@ -453,7 +453,7 @@ public class WebRowSetXmlWriter implements XmlWriter, Serializable {
      * This begins a new tag with a indent
      *
      */
-    private void beginSection(String tag) throws java.io.IOException {
+    private void beginSection(String tag) throws j86.java.io.IOException {
         // store the current tag
         setTag(tag);
 
@@ -467,7 +467,7 @@ public class WebRowSetXmlWriter implements XmlWriter, Serializable {
      * This closes a tag started by beginTag with a indent
      *
      */
-    private void endSection(String tag) throws java.io.IOException {
+    private void endSection(String tag) throws j86.java.io.IOException {
         writeIndent(stack.size());
 
         String beginTag = getTag();
@@ -485,7 +485,7 @@ public class WebRowSetXmlWriter implements XmlWriter, Serializable {
         writer.flush();
     }
 
-    private void endSection() throws java.io.IOException {
+    private void endSection() throws j86.java.io.IOException {
         writeIndent(stack.size());
 
         // get the current tag and write it out
@@ -495,7 +495,7 @@ public class WebRowSetXmlWriter implements XmlWriter, Serializable {
         writer.flush();
     }
 
-    private void beginTag(String tag) throws java.io.IOException {
+    private void beginTag(String tag) throws j86.java.io.IOException {
         // store the current tag
         setTag(tag);
 
@@ -505,7 +505,7 @@ public class WebRowSetXmlWriter implements XmlWriter, Serializable {
         writer.write("<" + tag + ">");
     }
 
-    private void endTag(String tag) throws java.io.IOException {
+    private void endTag(String tag) throws j86.java.io.IOException {
         String beginTag = getTag();
         if (tag.equals(beginTag)) {
             // get the current tag and write it out
@@ -516,7 +516,7 @@ public class WebRowSetXmlWriter implements XmlWriter, Serializable {
         writer.flush();
     }
 
-    private void emptyTag(String tag) throws java.io.IOException {
+    private void emptyTag(String tag) throws j86.java.io.IOException {
         // write an emptyTag
         writer.write("<" + tag + "/>");
     }
@@ -530,11 +530,11 @@ public class WebRowSetXmlWriter implements XmlWriter, Serializable {
         return stack.pop();
     }
 
-    private void writeNull() throws java.io.IOException {
+    private void writeNull() throws j86.java.io.IOException {
         emptyTag("null");
     }
 
-    private void writeStringData(String s) throws java.io.IOException {
+    private void writeStringData(String s) throws j86.java.io.IOException {
         if (s == null) {
             writeNull();
         } else if (s.equals("")) {
@@ -547,7 +547,7 @@ public class WebRowSetXmlWriter implements XmlWriter, Serializable {
         }
     }
 
-    private void writeString(String s) throws java.io.IOException {
+    private void writeString(String s) throws j86.java.io.IOException {
         if (s != null) {
             writer.write(s);
         } else  {
@@ -556,63 +556,63 @@ public class WebRowSetXmlWriter implements XmlWriter, Serializable {
     }
 
 
-    private void writeShort(short s) throws java.io.IOException {
+    private void writeShort(short s) throws j86.java.io.IOException {
         writer.write(Short.toString(s));
     }
 
-    private void writeLong(long l) throws java.io.IOException {
+    private void writeLong(long l) throws j86.java.io.IOException {
         writer.write(Long.toString(l));
     }
 
-    private void writeInteger(int i) throws java.io.IOException {
+    private void writeInteger(int i) throws j86.java.io.IOException {
         writer.write(Integer.toString(i));
     }
 
-    private void writeBoolean(boolean b) throws java.io.IOException {
+    private void writeBoolean(boolean b) throws j86.java.io.IOException {
         writer.write(Boolean.valueOf(b).toString());
     }
 
-    private void writeFloat(float f) throws java.io.IOException {
+    private void writeFloat(float f) throws j86.java.io.IOException {
         writer.write(Float.toString(f));
     }
 
-    private void writeDouble(double d) throws java.io.IOException {
+    private void writeDouble(double d) throws j86.java.io.IOException {
         writer.write(Double.toString(d));
     }
 
-    private void writeBigDecimal(java.math.BigDecimal bd) throws java.io.IOException {
+    private void writeBigDecimal(j86.java.math.BigDecimal bd) throws j86.java.io.IOException {
         if (bd != null)
             writer.write(bd.toString());
         else
             emptyTag("null");
     }
 
-    private void writeIndent(int tabs) throws java.io.IOException {
+    private void writeIndent(int tabs) throws j86.java.io.IOException {
         // indent...
         for (int i = 1; i < tabs; i++) {
             writer.write("  ");
         }
     }
 
-    private void propString(String tag, String s) throws java.io.IOException {
+    private void propString(String tag, String s) throws j86.java.io.IOException {
         beginTag(tag);
         writeString(s);
         endTag(tag);
     }
 
-    private void propInteger(String tag, int i) throws java.io.IOException {
+    private void propInteger(String tag, int i) throws j86.java.io.IOException {
         beginTag(tag);
         writeInteger(i);
         endTag(tag);
     }
 
-    private void propBoolean(String tag, boolean b) throws java.io.IOException {
+    private void propBoolean(String tag, boolean b) throws j86.java.io.IOException {
         beginTag(tag);
         writeBoolean(b);
         endTag(tag);
     }
 
-    private void writeEmptyString() throws java.io.IOException {
+    private void writeEmptyString() throws j86.java.io.IOException {
         emptyTag("emptyString");
     }
     /**

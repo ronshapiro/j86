@@ -41,9 +41,9 @@
  *
  */
 
-package sun.text.resources.zh;
+package j86.j86.j86.sun.text.resources.zh;
 
-import java.util.ListResourceBundle;
+import j86.java.util.ListResourceBundle;
 
 public class CollationData_zh_TW extends ListResourceBundle {
 

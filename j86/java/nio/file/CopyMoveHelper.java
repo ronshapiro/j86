@@ -23,11 +23,11 @@
  * questions.
  */
 
-package java.nio.file;
+package j86.j86.java.nio.file;
 
-import java.nio.file.attribute.*;
-import java.io.InputStream;
-import java.io.IOException;
+import j86.j86.j86.java.nio.file.attribute.*;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
 
 /**
  * Helper class to support copying or moving files when the source and target

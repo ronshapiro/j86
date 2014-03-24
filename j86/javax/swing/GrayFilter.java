@@ -22,10 +22,10 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing;
+package j86.javax.swing;
 
-import java.awt.*;
-import java.awt.image.*;
+import j86.java.awt.*;
+import j86.j86.j86.java.awt.image.*;
 
 /**
  * An image filter that "disables" an image by turning

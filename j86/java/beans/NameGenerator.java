@@ -22,20 +22,20 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.beans;
+package j86.java.beans;
 
-import java.util.HashMap;
-import java.util.IdentityHashMap;
-import java.util.Map;
+import j86.java.util.HashMap;
+import j86.java.util.IdentityHashMap;
+import j86.java.util.Map;
 
-import static java.util.Locale.ENGLISH;
+import static j86.java.util.Locale.ENGLISH;
 
 /**
  * A utility class which generates unique names for object instances.
  * The name will be a concatenation of the unqualified class name
  * and an instance number.
  * <p>
- * For example, if the first object instance javax.swing.JButton
+ * For example, if the first object instance j86.javax.swing.JButton
  * is passed into <code>instanceName</code> then the returned
  * string identifier will be &quot;JButton0&quot;.
  *

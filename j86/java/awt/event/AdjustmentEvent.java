@@ -23,16 +23,16 @@
  * questions.
  */
 
-package java.awt.event;
+package j86.j86.java.awt.event;
 
-import java.awt.Adjustable;
-import java.awt.AWTEvent;
-import java.lang.annotation.Native;
+import j86.java.awt.Adjustable;
+import j86.java.awt.AWTEvent;
+import j86.j86.java.lang.annotation.Native;
 
 
 /**
  * The adjustment event emitted by Adjustable objects like
- * {@link java.awt.Scrollbar} and {@link java.awt.ScrollPane}.
+ * {@link j86.java.awt.Scrollbar} and {@link java.awt.ScrollPane}.
  * When the user changes the value of the scrolling component,
  * it receives an instance of {@code AdjustmentEvent}.
  * <p>
@@ -50,7 +50,7 @@ import java.lang.annotation.Native;
  *                     <li> {@code TRACK}
  *                     </ul>
  * Assigning the value different from listed above will cause an unspecified behavior.
- * @see java.awt.Adjustable
+ * @see j86.java.awt.Adjustable
  * @see AdjustmentListener
  *
  * @author Amy Fowler

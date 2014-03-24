@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.tools.jar;
+package j86.sun.tools.jar;
 
-import java.io.IOException;
+import j86.java.io.IOException;
 
 public
 class JarException extends IOException {

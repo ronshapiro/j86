@@ -23,21 +23,21 @@
  * questions.
  */
 
-package java.lang;
+package j86.java.lang;
 
-import java.io.ObjectStreamField;
-import java.io.UnsupportedEncodingException;
-import java.nio.charset.Charset;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.Formatter;
-import java.util.Locale;
-import java.util.Objects;
-import java.util.StringJoiner;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-import java.util.regex.PatternSyntaxException;
+import j86.java.io.ObjectStreamField;
+import j86.java.io.UnsupportedEncodingException;
+import j86.j86.java.nio.charset.Charset;
+import j86.java.util.ArrayList;
+import j86.java.util.Arrays;
+import j86.java.util.Comparator;
+import j86.java.util.Formatter;
+import j86.java.util.Locale;
+import j86.java.util.Objects;
+import j86.java.util.StringJoiner;
+import j86.j86.java.util.regex.Matcher;
+import j86.j86.java.util.regex.Pattern;
+import j86.j86.java.util.regex.PatternSyntaxException;
 
 /**
  * The {@code String} class represents character strings. All
@@ -69,7 +69,7 @@ import java.util.regex.PatternSyntaxException;
  * searching strings, for extracting substrings, and for creating a
  * copy of a string with all characters translated to uppercase or to
  * lowercase. Case mapping is based on the Unicode Standard version
- * specified by the {@link java.lang.Character Character} class.
+ * specified by the {@link j86.java.lang.Character Character} class.
  * <p>
  * The Java language provides special support for the string
  * concatenation operator (&nbsp;+&nbsp;), and for conversion of
@@ -101,15 +101,15 @@ import java.util.regex.PatternSyntaxException;
  * @author  Arthur van Hoff
  * @author  Martin Buchholz
  * @author  Ulf Zibis
- * @see     java.lang.Object#toString()
- * @see     java.lang.StringBuffer
- * @see     java.lang.StringBuilder
- * @see     java.nio.charset.Charset
+ * @see     j86.java.lang.Object#toString()
+ * @see     j86.java.lang.StringBuffer
+ * @see     j86.java.lang.StringBuilder
+ * @see     j86.j86.java.nio.charset.Charset
  * @since   JDK1.0
  */
 
 public final class String
-    implements java.io.Serializable, Comparable<String>, CharSequence {
+    implements j86.java.io.Serializable, Comparable<String>, CharSequence {
     /** The value is used for character storage. */
     private final char value[];
 
@@ -282,7 +282,7 @@ public final class String
      * @deprecated This method does not properly convert bytes into characters.
      * As of JDK&nbsp;1.1, the preferred way to do this is via the
      * {@code String} constructors that take a {@link
-     * java.nio.charset.Charset}, charset name, or that use the platform's
+     * j86.j86.java.nio.charset.Charset}, charset name, or that use the platform's
      * default charset.
      *
      * @param  ascii
@@ -300,11 +300,11 @@ public final class String
      *          If the {@code offset} or {@code count} argument is invalid
      *
      * @see  #String(byte[], int)
-     * @see  #String(byte[], int, int, java.lang.String)
-     * @see  #String(byte[], int, int, java.nio.charset.Charset)
+     * @see  #String(byte[], int, int, j86.java.lang.String)
+     * @see  #String(byte[], int, int, j86.j86.java.nio.charset.Charset)
      * @see  #String(byte[], int, int)
-     * @see  #String(byte[], java.lang.String)
-     * @see  #String(byte[], java.nio.charset.Charset)
+     * @see  #String(byte[], j86.java.lang.String)
+     * @see  #String(byte[], j86.j86.java.nio.charset.Charset)
      * @see  #String(byte[])
      */
     @Deprecated
@@ -339,7 +339,7 @@ public final class String
      * @deprecated  This method does not properly convert bytes into
      * characters.  As of JDK&nbsp;1.1, the preferred way to do this is via the
      * {@code String} constructors that take a {@link
-     * java.nio.charset.Charset}, charset name, or that use the platform's
+     * j86.j86.java.nio.charset.Charset}, charset name, or that use the platform's
      * default charset.
      *
      * @param  ascii
@@ -348,11 +348,11 @@ public final class String
      * @param  hibyte
      *         The top 8 bits of each 16-bit Unicode code unit
      *
-     * @see  #String(byte[], int, int, java.lang.String)
-     * @see  #String(byte[], int, int, java.nio.charset.Charset)
+     * @see  #String(byte[], int, int, j86.java.lang.String)
+     * @see  #String(byte[], int, int, j86.j86.java.nio.charset.Charset)
      * @see  #String(byte[], int, int)
-     * @see  #String(byte[], java.lang.String)
-     * @see  #String(byte[], java.nio.charset.Charset)
+     * @see  #String(byte[], j86.java.lang.String)
+     * @see  #String(byte[], j86.j86.java.nio.charset.Charset)
      * @see  #String(byte[])
      */
     @Deprecated
@@ -381,7 +381,7 @@ public final class String
      *
      * <p> The behavior of this constructor when the given bytes are not valid
      * in the given charset is unspecified.  The {@link
-     * java.nio.charset.CharsetDecoder} class should be used when more control
+     * j86.j86.java.nio.charset.CharsetDecoder} class should be used when more control
      * over the decoding process is required.
      *
      * @param  bytes
@@ -394,7 +394,7 @@ public final class String
      *         The number of bytes to decode
 
      * @param  charsetName
-     *         The name of a supported {@linkplain java.nio.charset.Charset
+     *         The name of a supported {@linkplain j86.j86.java.nio.charset.Charset
      *         charset}
      *
      * @throws  UnsupportedEncodingException
@@ -416,13 +416,13 @@ public final class String
 
     /**
      * Constructs a new {@code String} by decoding the specified subarray of
-     * bytes using the specified {@linkplain java.nio.charset.Charset charset}.
+     * bytes using the specified {@linkplain j86.j86.java.nio.charset.Charset charset}.
      * The length of the new {@code String} is a function of the charset, and
      * hence may not be equal to the length of the subarray.
      *
      * <p> This method always replaces malformed-input and unmappable-character
      * sequences with this charset's default replacement string.  The {@link
-     * java.nio.charset.CharsetDecoder} class should be used when more control
+     * j86.j86.java.nio.charset.CharsetDecoder} class should be used when more control
      * over the decoding process is required.
      *
      * @param  bytes
@@ -435,7 +435,7 @@ public final class String
      *         The number of bytes to decode
      *
      * @param  charset
-     *         The {@linkplain java.nio.charset.Charset charset} to be used to
+     *         The {@linkplain j86.j86.java.nio.charset.Charset charset} to be used to
      *         decode the {@code bytes}
      *
      * @throws  IndexOutOfBoundsException
@@ -453,20 +453,20 @@ public final class String
 
     /**
      * Constructs a new {@code String} by decoding the specified array of bytes
-     * using the specified {@linkplain java.nio.charset.Charset charset}.  The
+     * using the specified {@linkplain j86.j86.java.nio.charset.Charset charset}.  The
      * length of the new {@code String} is a function of the charset, and hence
      * may not be equal to the length of the byte array.
      *
      * <p> The behavior of this constructor when the given bytes are not valid
      * in the given charset is unspecified.  The {@link
-     * java.nio.charset.CharsetDecoder} class should be used when more control
+     * j86.j86.java.nio.charset.CharsetDecoder} class should be used when more control
      * over the decoding process is required.
      *
      * @param  bytes
      *         The bytes to be decoded into characters
      *
      * @param  charsetName
-     *         The name of a supported {@linkplain java.nio.charset.Charset
+     *         The name of a supported {@linkplain j86.j86.java.nio.charset.Charset
      *         charset}
      *
      * @throws  UnsupportedEncodingException
@@ -481,20 +481,20 @@ public final class String
 
     /**
      * Constructs a new {@code String} by decoding the specified array of
-     * bytes using the specified {@linkplain java.nio.charset.Charset charset}.
+     * bytes using the specified {@linkplain j86.j86.java.nio.charset.Charset charset}.
      * The length of the new {@code String} is a function of the charset, and
      * hence may not be equal to the length of the byte array.
      *
      * <p> This method always replaces malformed-input and unmappable-character
      * sequences with this charset's default replacement string.  The {@link
-     * java.nio.charset.CharsetDecoder} class should be used when more control
+     * j86.j86.java.nio.charset.CharsetDecoder} class should be used when more control
      * over the decoding process is required.
      *
      * @param  bytes
      *         The bytes to be decoded into characters
      *
      * @param  charset
-     *         The {@linkplain java.nio.charset.Charset charset} to be used to
+     *         The {@linkplain j86.j86.java.nio.charset.Charset charset} to be used to
      *         decode the {@code bytes}
      *
      * @since  1.6
@@ -511,7 +511,7 @@ public final class String
      *
      * <p> The behavior of this constructor when the given bytes are not valid
      * in the default charset is unspecified.  The {@link
-     * java.nio.charset.CharsetDecoder} class should be used when more control
+     * j86.j86.java.nio.charset.CharsetDecoder} class should be used when more control
      * over the decoding process is required.
      *
      * @param  bytes
@@ -542,7 +542,7 @@ public final class String
      *
      * <p> The behavior of this constructor when the given bytes are not valid
      * in the default charset is unspecified.  The {@link
-     * java.nio.charset.CharsetDecoder} class should be used when more control
+     * j86.j86.java.nio.charset.CharsetDecoder} class should be used when more control
      * over the decoding process is required.
      *
      * @param  bytes
@@ -886,11 +886,11 @@ public final class String
      *
      * <p> The behavior of this method when this string cannot be encoded in
      * the given charset is unspecified.  The {@link
-     * java.nio.charset.CharsetEncoder} class should be used when more control
+     * j86.j86.java.nio.charset.CharsetEncoder} class should be used when more control
      * over the encoding process is required.
      *
      * @param  charsetName
-     *         The name of a supported {@linkplain java.nio.charset.Charset
+     *         The name of a supported {@linkplain j86.j86.java.nio.charset.Charset
      *         charset}
      *
      * @return  The resultant byte array
@@ -908,16 +908,16 @@ public final class String
 
     /**
      * Encodes this {@code String} into a sequence of bytes using the given
-     * {@linkplain java.nio.charset.Charset charset}, storing the result into a
+     * {@linkplain j86.j86.java.nio.charset.Charset charset}, storing the result into a
      * new byte array.
      *
      * <p> This method always replaces malformed-input and unmappable-character
      * sequences with this charset's default replacement byte array.  The
-     * {@link java.nio.charset.CharsetEncoder} class should be used when more
+     * {@link j86.j86.java.nio.charset.CharsetEncoder} class should be used when more
      * control over the encoding process is required.
      *
      * @param  charset
-     *         The {@linkplain java.nio.charset.Charset} to be used to encode
+     *         The {@linkplain j86.j86.java.nio.charset.Charset} to be used to encode
      *         the {@code String}
      *
      * @return  The resultant byte array
@@ -935,7 +935,7 @@ public final class String
      *
      * <p> The behavior of this method when this string cannot be encoded in
      * the default charset is unspecified.  The {@link
-     * java.nio.charset.CharsetEncoder} class should be used when more control
+     * j86.j86.java.nio.charset.CharsetEncoder} class should be used when more control
      * over the encoding process is required.
      *
      * @return  The resultant byte array
@@ -1073,10 +1073,10 @@ public final class String
      *   <li> The two characters are the same (as compared by the
      *        {@code ==} operator)
      *   <li> Applying the method {@link
-     *        java.lang.Character#toUpperCase(char)} to each character
+     *        j86.java.lang.Character#toUpperCase(char)} to each character
      *        produces the same result
      *   <li> Applying the method {@link
-     *        java.lang.Character#toLowerCase(char)} to each character
+     *        j86.java.lang.Character#toLowerCase(char)} to each character
      *        produces the same result
      * </ul>
      *
@@ -1162,16 +1162,16 @@ public final class String
      * <p>
      * Note that this Comparator does <em>not</em> take locale into account,
      * and will result in an unsatisfactory ordering for certain locales.
-     * The java.text package provides <em>Collators</em> to allow
+     * The j86.java.text package provides <em>Collators</em> to allow
      * locale-sensitive ordering.
      *
-     * @see     java.text.Collator#compare(String, String)
+     * @see     j86.java.text.Collator#compare(String, String)
      * @since   1.2
      */
     public static final Comparator<String> CASE_INSENSITIVE_ORDER
                                          = new CaseInsensitiveComparator();
     private static class CaseInsensitiveComparator
-            implements Comparator<String>, java.io.Serializable {
+            implements Comparator<String>, j86.java.io.Serializable {
         // use serialVersionUID from JDK 1.2.2 for interoperability
         private static final long serialVersionUID = 8575799808933029326L;
 
@@ -1212,14 +1212,14 @@ public final class String
      * <p>
      * Note that this method does <em>not</em> take locale into account,
      * and will result in an unsatisfactory ordering for certain locales.
-     * The java.text package provides <em>collators</em> to allow
+     * The j86.java.text package provides <em>collators</em> to allow
      * locale-sensitive ordering.
      *
      * @param   str   the {@code String} to be compared.
      * @return  a negative integer, zero, or a positive integer as the
      *          specified String is greater than, equal to, or less
      *          than this String, ignoring case considerations.
-     * @see     java.text.Collator#compare(String, String)
+     * @see     j86.java.text.Collator#compare(String, String)
      * @since   1.2
      */
     public int compareToIgnoreCase(String str) {
@@ -2086,7 +2086,7 @@ public final class String
      * same result as the expression
      *
      * <blockquote>
-     * {@link java.util.regex.Pattern}.{@link java.util.regex.Pattern#matches(String,CharSequence)
+     * {@link j86.j86.java.util.regex.Pattern}.{@link java.util.regex.Pattern#matches(String,CharSequence)
      * matches(<i>regex</i>, <i>str</i>)}
      * </blockquote>
      *
@@ -2099,7 +2099,7 @@ public final class String
      * @throws  PatternSyntaxException
      *          if the regular expression's syntax is invalid
      *
-     * @see java.util.regex.Pattern
+     * @see j86.j86.java.util.regex.Pattern
      *
      * @since 1.4
      * @spec JSR-51
@@ -2131,10 +2131,10 @@ public final class String
      *
      * <blockquote>
      * <code>
-     * {@link java.util.regex.Pattern}.{@link
-     * java.util.regex.Pattern#compile compile}(<i>regex</i>).{@link
-     * java.util.regex.Pattern#matcher(java.lang.CharSequence) matcher}(<i>str</i>).{@link
-     * java.util.regex.Matcher#replaceFirst replaceFirst}(<i>repl</i>)
+     * {@link j86.j86.java.util.regex.Pattern}.{@link
+     * j86.j86.java.util.regex.Pattern#compile compile}(<i>regex</i>).{@link
+     * j86.j86.java.util.regex.Pattern#matcher(j86.java.lang.CharSequence) matcher}(<i>str</i>).{@link
+     * j86.j86.java.util.regex.Matcher#replaceFirst replaceFirst}(<i>repl</i>)
      * </code>
      * </blockquote>
      *
@@ -2142,8 +2142,8 @@ public final class String
      * Note that backslashes ({@code \}) and dollar signs ({@code $}) in the
      * replacement string may cause the results to be different than if it were
      * being treated as a literal replacement string; see
-     * {@link java.util.regex.Matcher#replaceFirst}.
-     * Use {@link java.util.regex.Matcher#quoteReplacement} to suppress the special
+     * {@link j86.j86.java.util.regex.Matcher#replaceFirst}.
+     * Use {@link j86.j86.java.util.regex.Matcher#quoteReplacement} to suppress the special
      * meaning of these characters, if desired.
      *
      * @param   regex
@@ -2156,7 +2156,7 @@ public final class String
      * @throws  PatternSyntaxException
      *          if the regular expression's syntax is invalid
      *
-     * @see java.util.regex.Pattern
+     * @see j86.j86.java.util.regex.Pattern
      *
      * @since 1.4
      * @spec JSR-51
@@ -2176,10 +2176,10 @@ public final class String
      *
      * <blockquote>
      * <code>
-     * {@link java.util.regex.Pattern}.{@link
-     * java.util.regex.Pattern#compile compile}(<i>regex</i>).{@link
-     * java.util.regex.Pattern#matcher(java.lang.CharSequence) matcher}(<i>str</i>).{@link
-     * java.util.regex.Matcher#replaceAll replaceAll}(<i>repl</i>)
+     * {@link j86.j86.java.util.regex.Pattern}.{@link
+     * j86.j86.java.util.regex.Pattern#compile compile}(<i>regex</i>).{@link
+     * j86.j86.java.util.regex.Pattern#matcher(j86.java.lang.CharSequence) matcher}(<i>str</i>).{@link
+     * j86.j86.java.util.regex.Matcher#replaceAll replaceAll}(<i>repl</i>)
      * </code>
      * </blockquote>
      *
@@ -2187,8 +2187,8 @@ public final class String
      * Note that backslashes ({@code \}) and dollar signs ({@code $}) in the
      * replacement string may cause the results to be different than if it were
      * being treated as a literal replacement string; see
-     * {@link java.util.regex.Matcher#replaceAll Matcher.replaceAll}.
-     * Use {@link java.util.regex.Matcher#quoteReplacement} to suppress the special
+     * {@link j86.j86.java.util.regex.Matcher#replaceAll Matcher.replaceAll}.
+     * Use {@link j86.j86.java.util.regex.Matcher#quoteReplacement} to suppress the special
      * meaning of these characters, if desired.
      *
      * @param   regex
@@ -2201,7 +2201,7 @@ public final class String
      * @throws  PatternSyntaxException
      *          if the regular expression's syntax is invalid
      *
-     * @see java.util.regex.Pattern
+     * @see j86.j86.java.util.regex.Pattern
      *
      * @since 1.4
      * @spec JSR-51
@@ -2289,9 +2289,9 @@ public final class String
      *
      * <blockquote>
      * <code>
-     * {@link java.util.regex.Pattern}.{@link
-     * java.util.regex.Pattern#compile compile}(<i>regex</i>).{@link
-     * java.util.regex.Pattern#split(java.lang.CharSequence,int) split}(<i>str</i>,&nbsp;<i>n</i>)
+     * {@link j86.j86.java.util.regex.Pattern}.{@link
+     * j86.j86.java.util.regex.Pattern#compile compile}(<i>regex</i>).{@link
+     * j86.j86.java.util.regex.Pattern#split(j86.java.lang.CharSequence,int) split}(<i>str</i>,&nbsp;<i>n</i>)
      * </code>
      * </blockquote>
      *
@@ -2308,7 +2308,7 @@ public final class String
      * @throws  PatternSyntaxException
      *          if the regular expression's syntax is invalid
      *
-     * @see java.util.regex.Pattern
+     * @see j86.j86.java.util.regex.Pattern
      *
      * @since 1.4
      * @spec JSR-51
@@ -2400,7 +2400,7 @@ public final class String
      * @throws  PatternSyntaxException
      *          if the regular expression's syntax is invalid
      *
-     * @see java.util.regex.Pattern
+     * @see j86.j86.java.util.regex.Pattern
      *
      * @since 1.4
      * @spec JSR-51
@@ -2431,7 +2431,7 @@ public final class String
      * @throws NullPointerException If {@code delimiter} or {@code elements}
      *         is {@code null}
      *
-     * @see java.util.StringJoiner
+     * @see j86.java.util.StringJoiner
      * @since 1.8
      */
     public static String join(CharSequence delimiter, CharSequence... elements) {
@@ -2479,7 +2479,7 @@ public final class String
      *         is {@code null}
      *
      * @see    #join(CharSequence,CharSequence...)
-     * @see    java.util.StringJoiner
+     * @see    j86.java.util.StringJoiner
      * @since 1.8
      */
     public static String join(CharSequence delimiter,
@@ -2496,7 +2496,7 @@ public final class String
     /**
      * Converts all of the characters in this {@code String} to lower
      * case using the rules of the given {@code Locale}.  Case mapping is based
-     * on the Unicode Standard version specified by the {@link java.lang.Character Character}
+     * on the Unicode Standard version specified by the {@link j86.java.lang.Character Character}
      * class. Since case mappings are not always 1:1 char mappings, the resulting
      * {@code String} may be a different length than the original {@code String}.
      * <p>
@@ -2540,9 +2540,9 @@ public final class String
      *
      * @param locale use the case transformation rules for this locale
      * @return the {@code String}, converted to lowercase.
-     * @see     java.lang.String#toLowerCase()
-     * @see     java.lang.String#toUpperCase()
-     * @see     java.lang.String#toUpperCase(Locale)
+     * @see     j86.java.lang.String#toLowerCase()
+     * @see     j86.java.lang.String#toUpperCase()
+     * @see     j86.java.lang.String#toUpperCase(Locale)
      * @since   1.1
      */
     public String toLowerCase(Locale locale) {
@@ -2649,7 +2649,7 @@ public final class String
      * {@code toLowerCase(Locale.ROOT)}.
      * <p>
      * @return  the {@code String}, converted to lowercase.
-     * @see     java.lang.String#toLowerCase(Locale)
+     * @see     j86.java.lang.String#toLowerCase(Locale)
      */
     public String toLowerCase() {
         return toLowerCase(Locale.getDefault());
@@ -2658,7 +2658,7 @@ public final class String
     /**
      * Converts all of the characters in this {@code String} to upper
      * case using the rules of the given {@code Locale}. Case mapping is based
-     * on the Unicode Standard version specified by the {@link java.lang.Character Character}
+     * on the Unicode Standard version specified by the {@link j86.java.lang.Character Character}
      * class. Since case mappings are not always 1:1 char mappings, the resulting
      * {@code String} may be a different length than the original {@code String}.
      * <p>
@@ -2698,9 +2698,9 @@ public final class String
      * </table>
      * @param locale use the case transformation rules for this locale
      * @return the {@code String}, converted to uppercase.
-     * @see     java.lang.String#toUpperCase()
-     * @see     java.lang.String#toLowerCase()
-     * @see     java.lang.String#toLowerCase(Locale)
+     * @see     j86.java.lang.String#toUpperCase()
+     * @see     j86.java.lang.String#toLowerCase()
+     * @see     j86.java.lang.String#toLowerCase(Locale)
      * @since   1.1
      */
     public String toUpperCase(Locale locale) {
@@ -2812,7 +2812,7 @@ public final class String
      * {@code toUpperCase(Locale.ROOT)}.
      * <p>
      * @return  the {@code String}, converted to uppercase.
-     * @see     java.lang.String#toUpperCase(Locale)
+     * @see     j86.java.lang.String#toUpperCase(Locale)
      */
     public String toUpperCase() {
         return toUpperCase(Locale.getDefault());
@@ -2891,7 +2891,7 @@ public final class String
      * arguments.
      *
      * <p> The locale always used is the one returned by {@link
-     * java.util.Locale#getDefault() Locale.getDefault()}.
+     * j86.java.util.Locale#getDefault() Locale.getDefault()}.
      *
      * @param  format
      *         A <a href="../util/Formatter.html#syntax">format string</a>
@@ -2907,7 +2907,7 @@ public final class String
      *         {@code null} argument depends on the <a
      *         href="../util/Formatter.html#syntax">conversion</a>.
      *
-     * @throws  java.util.IllegalFormatException
+     * @throws  j86.java.util.IllegalFormatException
      *          If a format string contains an illegal syntax, a format
      *          specifier that is incompatible with the given arguments,
      *          insufficient arguments given the format string, or other
@@ -2918,7 +2918,7 @@ public final class String
      *
      * @return  A formatted string
      *
-     * @see  java.util.Formatter
+     * @see  j86.java.util.Formatter
      * @since  1.5
      */
     public static String format(String format, Object... args) {
@@ -2930,7 +2930,7 @@ public final class String
      * and arguments.
      *
      * @param  l
-     *         The {@linkplain java.util.Locale locale} to apply during
+     *         The {@linkplain j86.java.util.Locale locale} to apply during
      *         formatting.  If {@code l} is {@code null} then no localization
      *         is applied.
      *
@@ -2948,7 +2948,7 @@ public final class String
      *         {@code null} argument depends on the
      *         <a href="../util/Formatter.html#syntax">conversion</a>.
      *
-     * @throws  java.util.IllegalFormatException
+     * @throws  j86.java.util.IllegalFormatException
      *          If a format string contains an illegal syntax, a format
      *          specifier that is incompatible with the given arguments,
      *          insufficient arguments given the format string, or other
@@ -2959,7 +2959,7 @@ public final class String
      *
      * @return  A formatted string
      *
-     * @see  java.util.Formatter
+     * @see  j86.java.util.Formatter
      * @since  1.5
      */
     public static String format(Locale l, String format, Object... args) {
@@ -2973,7 +2973,7 @@ public final class String
      * @return  if the argument is {@code null}, then a string equal to
      *          {@code "null"}; otherwise, the value of
      *          {@code obj.toString()} is returned.
-     * @see     java.lang.Object#toString()
+     * @see     j86.java.lang.Object#toString()
      */
     public static String valueOf(Object obj) {
         return (obj == null) ? "null" : obj.toString();
@@ -3078,7 +3078,7 @@ public final class String
      *
      * @param   i   an {@code int}.
      * @return  a string representation of the {@code int} argument.
-     * @see     java.lang.Integer#toString(int, int)
+     * @see     j86.java.lang.Integer#toString(int, int)
      */
     public static String valueOf(int i) {
         return Integer.toString(i);
@@ -3092,7 +3092,7 @@ public final class String
      *
      * @param   l   a {@code long}.
      * @return  a string representation of the {@code long} argument.
-     * @see     java.lang.Long#toString(long)
+     * @see     j86.java.lang.Long#toString(long)
      */
     public static String valueOf(long l) {
         return Long.toString(l);
@@ -3106,7 +3106,7 @@ public final class String
      *
      * @param   f   a {@code float}.
      * @return  a string representation of the {@code float} argument.
-     * @see     java.lang.Float#toString(float)
+     * @see     j86.java.lang.Float#toString(float)
      */
     public static String valueOf(float f) {
         return Float.toString(f);
@@ -3120,7 +3120,7 @@ public final class String
      *
      * @param   d   a {@code double}.
      * @return  a  string representation of the {@code double} argument.
-     * @see     java.lang.Double#toString(double)
+     * @see     j86.java.lang.Double#toString(double)
      */
     public static String valueOf(double d) {
         return Double.toString(d);

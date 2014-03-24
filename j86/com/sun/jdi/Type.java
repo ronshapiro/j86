@@ -23,7 +23,7 @@
  * questions.
  */
 
-package com.sun.jdi;
+package j86.com.sun.jdi;
 
 /**
  * The mirror for a type in the target VM.
@@ -136,7 +136,7 @@ public interface Type extends Mirror {
      * For primitive classes
      * the returned signature is the signature of the corresponding primitive
      * type; for example, "I" is returned as the signature of the class
-     * represented by {@link java.lang.Integer#TYPE}.
+     * represented by {@link j86.java.lang.Integer#TYPE}.
      *
      * @see <a href="doc-files/signature.html">Type Signatures</a>
      * @return the string containing the type signature.

@@ -23,11 +23,11 @@
  * questions.
  */
 
-package com.sun.imageio.plugins.gif;
+package j86.com.sun.imageio.plugins.gif;
 
-import javax.imageio.metadata.IIOInvalidTreeException;
-import javax.imageio.metadata.IIOMetadata;
-import javax.imageio.metadata.IIOMetadataFormatImpl;
+import j86.j86.javax.imageio.metadata.IIOInvalidTreeException;
+import j86.j86.javax.imageio.metadata.IIOMetadata;
+import j86.j86.javax.imageio.metadata.IIOMetadataFormatImpl;
 import org.w3c.dom.Node;
 
 /**
@@ -43,7 +43,7 @@ abstract class GIFMetadata extends IIOMetadata {
 
     //
     // Note: These attribute methods were shamelessly lifted from
-    // com.sun.imageio.plugins.png.PNGMetadata and modified.
+    // j86.com.sun.imageio.plugins.png.PNGMetadata and modified.
     //
 
     // Shorthand for throwing an IIOInvalidTreeException

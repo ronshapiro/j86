@@ -23,20 +23,20 @@
  * questions.
  */
 
-package java.sql;
+package j86.java.sql;
 
-import java.util.Iterator;
-import java.util.ServiceLoader;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.util.concurrent.CopyOnWriteArrayList;
-import sun.reflect.CallerSensitive;
-import sun.reflect.Reflection;
+import j86.java.util.Iterator;
+import j86.java.util.ServiceLoader;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.j86.java.util.concurrent.CopyOnWriteArrayList;
+import j86.sun.reflect.CallerSensitive;
+import j86.sun.reflect.Reflection;
 
 
 /**
  * <P>The basic service for managing a set of JDBC drivers.<br>
- * <B>NOTE:</B> The {@link javax.sql.DataSource} interface, new in the
+ * <B>NOTE:</B> The {@link j86.javax.sql.DataSource} interface, new in the
  * JDBC 2.0 API, provides another way to connect to a data source.
  * The use of a <code>DataSource</code> object is the preferred means of
  * connecting to a data source.
@@ -52,9 +52,9 @@ import sun.reflect.Reflection;
  *<P> The <code>DriverManager</code> methods <code>getConnection</code> and
  * <code>getDrivers</code> have been enhanced to support the Java Standard Edition
  * <a href="../../../technotes/guides/jar/jar.html#Service%20Provider">Service Provider</a> mechanism. JDBC 4.0 Drivers must
- * include the file <code>META-INF/services/java.sql.Driver</code>. This file contains the name of the JDBC drivers
- * implementation of <code>java.sql.Driver</code>.  For example, to load the <code>my.sql.Driver</code> class,
- * the <code>META-INF/services/java.sql.Driver</code> file would contain the entry:
+ * include the file <code>META-INF/services/j86.java.sql.Driver</code>. This file contains the name of the JDBC drivers
+ * implementation of <code>j86.java.sql.Driver</code>.  For example, to load the <code>my.sql.Driver</code> class,
+ * the <code>META-INF/services/j86.java.sql.Driver</code> file would contain the entry:
  * <pre>
  * <code>my.sql.Driver</code>
  * </pre>
@@ -74,7 +74,7 @@ import sun.reflect.Reflection;
  * logging stream can be set only if the proper
  * permission has been granted.  Normally this will be done with
  * the tool PolicyTool, which can be used to grant <code>permission
- * java.sql.SQLPermission "setLog"</code>.
+ * j86.java.sql.SQLPermission "setLog"</code>.
  * @see Driver
  * @see Connection
  */
@@ -84,8 +84,8 @@ public class DriverManager {
     // List of registered JDBC drivers
     private final static CopyOnWriteArrayList<DriverInfo> registeredDrivers = new CopyOnWriteArrayList<>();
     private static volatile int loginTimeout = 0;
-    private static volatile java.io.PrintWriter logWriter = null;
-    private static volatile java.io.PrintStream logStream = null;
+    private static volatile j86.java.io.PrintWriter logWriter = null;
+    private static volatile j86.java.io.PrintStream logStream = null;
     // Used in println() to synchronize logWriter
     private final static  Object logSync = new Object();
 
@@ -126,11 +126,11 @@ public class DriverManager {
      * The <code>getLogWriter</code> and <code>setLogWriter</code>
      * methods should be used instead
      * of the <code>get/setlogStream</code> methods, which are deprecated.
-     * @return a <code>java.io.PrintWriter</code> object
+     * @return a <code>j86.java.io.PrintWriter</code> object
      * @see #setLogWriter
      * @since 1.2
      */
-    public static java.io.PrintWriter getLogWriter() {
+    public static j86.java.io.PrintWriter getLogWriter() {
             return logWriter;
     }
 
@@ -151,7 +151,7 @@ public class DriverManager {
      * to see that there is an <code>SQLPermission</code> object before setting
      * the logging stream.  If a <code>SecurityManager</code> exists and its
      * <code>checkPermission</code> method denies setting the log writer, this
-     * method throws a <code>java.lang.SecurityException</code>.
+     * method throws a <code>j86.java.lang.SecurityException</code>.
      *
      * @param out the new logging/tracing <code>PrintStream</code> object;
      *      <code>null</code> to disable logging and tracing
@@ -164,7 +164,7 @@ public class DriverManager {
      * @see #getLogWriter
      * @since 1.2
      */
-    public static void setLogWriter(java.io.PrintWriter out) {
+    public static void setLogWriter(j86.java.io.PrintWriter out) {
 
         SecurityManager sec = System.getSecurityManager();
         if (sec != null) {
@@ -203,7 +203,7 @@ public class DriverManager {
      */
     @CallerSensitive
     public static Connection getConnection(String url,
-        java.util.Properties info) throws SQLException {
+        j86.java.util.Properties info) throws SQLException {
 
         return (getConnection(url, info, Reflection.getCallerClass()));
     }
@@ -235,7 +235,7 @@ public class DriverManager {
     @CallerSensitive
     public static Connection getConnection(String url,
         String user, String password) throws SQLException {
-        java.util.Properties info = new java.util.Properties();
+        j86.java.util.Properties info = new java.util.Properties();
 
         if (user != null) {
             info.put("user", user);
@@ -266,7 +266,7 @@ public class DriverManager {
     public static Connection getConnection(String url)
         throws SQLException {
 
-        java.util.Properties info = new java.util.Properties();
+        j86.java.util.Properties info = new java.util.Properties();
         return (getConnection(url, info, Reflection.getCallerClass()));
     }
 
@@ -328,7 +328,7 @@ public class DriverManager {
      * @exception SQLException if a database access error occurs
      * @exception NullPointerException if {@code driver} is null
      */
-    public static synchronized void registerDriver(java.sql.Driver driver)
+    public static synchronized void registerDriver(j86.java.sql.Driver driver)
         throws SQLException {
 
         registerDriver(driver, null);
@@ -349,7 +349,7 @@ public class DriverManager {
      * @exception NullPointerException if {@code driver} is null
      * @since 1.8
      */
-    public static synchronized void registerDriver(java.sql.Driver driver,
+    public static synchronized void registerDriver(j86.java.sql.Driver driver,
             DriverAction da)
         throws SQLException {
 
@@ -434,8 +434,8 @@ public class DriverManager {
      * @return the list of JDBC Drivers loaded by the caller's class loader
      */
     @CallerSensitive
-    public static java.util.Enumeration<Driver> getDrivers() {
-        java.util.Vector<Driver> result = new java.util.Vector<>();
+    public static j86.java.util.Enumeration<Driver> getDrivers() {
+        j86.java.util.Vector<Driver> result = new java.util.Vector<>();
 
         Class<?> callerClass = Reflection.getCallerClass();
 
@@ -485,7 +485,7 @@ public class DriverManager {
      * to see that there is an <code>SQLPermission</code> object before setting
      * the logging stream.  If a <code>SecurityManager</code> exists and its
      * <code>checkPermission</code> method denies setting the log writer, this
-     * method throws a <code>java.lang.SecurityException</code>.
+     * method throws a <code>j86.java.lang.SecurityException</code>.
      *
      * @param out the new logging/tracing PrintStream; to disable, set to <code>null</code>
      * @deprecated Use {@code setLogWriter}
@@ -496,7 +496,7 @@ public class DriverManager {
      * @see #getLogStream
      */
     @Deprecated
-    public static void setLogStream(java.io.PrintStream out) {
+    public static void setLogStream(j86.java.io.PrintStream out) {
 
         SecurityManager sec = System.getSecurityManager();
         if (sec != null) {
@@ -505,7 +505,7 @@ public class DriverManager {
 
         logStream = out;
         if ( out != null )
-            logWriter = new java.io.PrintWriter(out);
+            logWriter = new j86.java.io.PrintWriter(out);
         else
             logWriter = null;
     }
@@ -519,7 +519,7 @@ public class DriverManager {
      * @see #setLogStream
      */
     @Deprecated
-    public static java.io.PrintStream getLogStream() {
+    public static j86.java.io.PrintStream getLogStream() {
         return logStream;
     }
 
@@ -577,8 +577,8 @@ public class DriverManager {
         }
         // If the driver is packaged as a Service Provider, load it.
         // Get all the drivers through the classloader
-        // exposed as a java.sql.Driver.class service.
-        // ServiceLoader.load() replaces the sun.misc.Providers()
+        // exposed as a j86.java.sql.Driver.class service.
+        // ServiceLoader.load() replaces the j86.sun.misc.Providers()
 
         AccessController.doPrivileged(new PrivilegedAction<Void>() {
             public Void run() {
@@ -589,8 +589,8 @@ public class DriverManager {
                 /* Load these drivers, so that they can be instantiated.
                  * It may be the case that the driver class may not be there
                  * i.e. there may be a packaged driver with the service class
-                 * as implementation of java.sql.Driver but the actual class
-                 * may be missing. In that case a java.util.ServiceConfigurationError
+                 * as implementation of j86.java.sql.Driver but the actual class
+                 * may be missing. In that case a j86.java.util.ServiceConfigurationError
                  * will be thrown at runtime by the VM trying to locate
                  * and load the service.
                  *
@@ -630,7 +630,7 @@ public class DriverManager {
 
     //  Worker method called by the public getConnection() methods.
     private static Connection getConnection(
-        String url, java.util.Properties info, Class<?> caller) throws SQLException {
+        String url, j86.java.util.Properties info, Class<?> caller) throws SQLException {
         /*
          * When callerCl is null, we should check the application's
          * (which is invoking this class indirectly)

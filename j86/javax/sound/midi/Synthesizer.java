@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.sound.midi;
+package j86.javax.sound.midi;
 
-import javax.sound.sampled.Control;
+import j86.javax.sound.sampled.Control;
 
 
 /**

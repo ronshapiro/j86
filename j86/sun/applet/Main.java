@@ -23,21 +23,21 @@
  * questions.
  */
 
-package sun.applet;
+package j86.sun.applet;
 
-import java.io.BufferedInputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.lang.reflect.Method;
-import java.lang.reflect.InvocationTargetException;
-import java.net.URL;
-import java.net.MalformedURLException;
-import java.util.Enumeration;
-import java.util.Properties;
-import java.util.Vector;
-import sun.net.www.ParseUtil;
+import j86.java.io.BufferedInputStream;
+import j86.java.io.File;
+import j86.java.io.FileInputStream;
+import j86.java.io.FileOutputStream;
+import j86.java.io.IOException;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.java.net.URL;
+import j86.java.net.MalformedURLException;
+import j86.java.util.Enumeration;
+import j86.java.util.Properties;
+import j86.java.util.Vector;
+import j86.j86.sun.net.www.ParseUtil;
 
 /**
  * The main entry point into AppletViewer.
@@ -289,7 +289,7 @@ public class Main {
         newArgs[current++] = "-Djava.class.path=" + phonyDir;
 
         // Appletviewer's main class is the debuggee
-        newArgs[current++] = "sun.applet.Main";
+        newArgs[current++] = "j86.sun.applet.Main";
 
         // Append all the of the original appletviewer arguments,
         // leaving out the "-debug" option.
@@ -307,7 +307,7 @@ public class Main {
         // 2) Reflection removes any build dependency between appletviewer
         // and jdb.
         try {
-            Class c = Class.forName("com.sun.tools.example.debug.tty.TTY", true,
+            Class c = Class.forName("j86.com.sun.tools.example.debug.tty.TTY", true,
                                     ClassLoader.getSystemClassLoader());
             Method m = c.getDeclaredMethod("main",
                                            new Class[] { String[].class });
@@ -337,7 +337,7 @@ public class Main {
         // standard for what is available?
 
         // Standard browser properties
-        avProps.put("browser", "sun.applet.AppletViewer");
+        avProps.put("browser", "j86.sun.applet.AppletViewer");
         avProps.put("browser.version", "1.06");
         avProps.put("browser.vendor", "Oracle Corporation");
         avProps.put("http.agent", "Java(tm) 2 SDK, Standard Edition v" + theVersion);

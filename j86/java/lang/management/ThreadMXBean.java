@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.lang.management;
+package j86.j86.java.lang.management;
 
-import java.util.Map;
+import j86.java.util.Map;
 
 /**
  * The management interface for the thread system of
@@ -43,7 +43,7 @@ import java.util.Map;
  * the thread system within an MBeanServer is:
  * <blockquote>
  *    {@link ManagementFactory#THREAD_MXBEAN_NAME
- *           <tt>java.lang:type=Threading</tt>}
+ *           <tt>j86.java.lang:type=Threading</tt>}
  * </blockquote>
  *
  * It can be obtained by calling the
@@ -51,7 +51,7 @@ import java.util.Map;
  *
  * <h3>Thread ID</h3>
  * Thread ID is a positive long value returned by calling the
- * {@link java.lang.Thread#getId} method for a thread.
+ * {@link j86.java.lang.Thread#getId} method for a thread.
  * The thread ID is unique during its lifetime.  When a thread
  * is terminated, this thread ID may be reused.
  *
@@ -112,7 +112,7 @@ import java.util.Map;
  * the running application.
  *
  * @see ManagementFactory#getPlatformMXBeans(Class)
- * @see <a href="../../../javax/management/package-summary.html">
+ * @see <a href="../../../j86.javax.management/package-summary.html">
  *      JMX Specification.</a>
  * @see <a href="package-summary.html#examples">
  *      Ways to Access MXBeans</a>
@@ -160,7 +160,7 @@ public interface ThreadMXBean extends PlatformManagedObject {
      *
      * @return an array of <tt>long</tt>, each is a thread ID.
      *
-     * @throws java.lang.SecurityException if a security manager
+     * @throws j86.java.lang.SecurityException if a security manager
      *         exists and the caller does not have
      *         ManagementPermission("monitor").
      */
@@ -199,7 +199,7 @@ public interface ThreadMXBean extends PlatformManagedObject {
      * it does not exist.
      *
      * @throws IllegalArgumentException if {@code id <= 0}.
-     * @throws java.lang.SecurityException if a security manager
+     * @throws j86.java.lang.SecurityException if a security manager
      *         exists and the caller does not have
      *         ManagementPermission("monitor").
      */
@@ -237,7 +237,7 @@ public interface ThreadMXBean extends PlatformManagedObject {
      *
      * @throws IllegalArgumentException if any element in the input array
      *         <tt>ids</tt> is {@code <= 0}.
-     * @throws java.lang.SecurityException if a security manager
+     * @throws j86.java.lang.SecurityException if a security manager
      *         exists and the caller does not have
      *         ManagementPermission("monitor").
      */
@@ -284,7 +284,7 @@ public interface ThreadMXBean extends PlatformManagedObject {
      *
      * @throws IllegalArgumentException if {@code id <= 0}.
      * @throws IllegalArgumentException if <tt>maxDepth is negative</tt>.
-     * @throws java.lang.SecurityException if a security manager
+     * @throws j86.java.lang.SecurityException if a security manager
      *         exists and the caller does not have
      *         ManagementPermission("monitor").
      *
@@ -337,7 +337,7 @@ public interface ThreadMXBean extends PlatformManagedObject {
      * @throws IllegalArgumentException if <tt>maxDepth is negative</tt>.
      * @throws IllegalArgumentException if any element in the input array
      *      <tt>ids</tt> is {@code <= 0}.
-     * @throws java.lang.SecurityException if a security manager
+     * @throws j86.java.lang.SecurityException if a security manager
      *         exists and the caller does not have
      *         ManagementPermission("monitor").
      *
@@ -360,7 +360,7 @@ public interface ThreadMXBean extends PlatformManagedObject {
      * @return <tt>true</tt> if thread contention monitoring is enabled;
      *         <tt>false</tt> otherwise.
      *
-     * @throws java.lang.UnsupportedOperationException if the Java virtual
+     * @throws j86.java.lang.UnsupportedOperationException if the Java virtual
      * machine does not support thread contention monitoring.
      *
      * @see #isThreadContentionMonitoringSupported
@@ -374,10 +374,10 @@ public interface ThreadMXBean extends PlatformManagedObject {
      * @param enable <tt>true</tt> to enable;
      *               <tt>false</tt> to disable.
      *
-     * @throws java.lang.UnsupportedOperationException if the Java
+     * @throws j86.java.lang.UnsupportedOperationException if the Java
      * virtual machine does not support thread contention monitoring.
      *
-     * @throws java.lang.SecurityException if a security manager
+     * @throws j86.java.lang.SecurityException if a security manager
      *         exists and the caller does not have
      *         ManagementPermission("control").
      *
@@ -403,7 +403,7 @@ public interface ThreadMXBean extends PlatformManagedObject {
      * @return the total CPU time for the current thread if CPU time
      * measurement is enabled; <tt>-1</tt> otherwise.
      *
-     * @throws java.lang.UnsupportedOperationException if the Java
+     * @throws j86.java.lang.UnsupportedOperationException if the Java
      * virtual machine does not support CPU time measurement for
      * the current thread.
      *
@@ -430,7 +430,7 @@ public interface ThreadMXBean extends PlatformManagedObject {
      * @return the user-level CPU time for the current thread if CPU time
      * measurement is enabled; <tt>-1</tt> otherwise.
      *
-     * @throws java.lang.UnsupportedOperationException if the Java
+     * @throws j86.java.lang.UnsupportedOperationException if the Java
      * virtual machine does not support CPU time measurement for
      * the current thread.
      *
@@ -467,7 +467,7 @@ public interface ThreadMXBean extends PlatformManagedObject {
      * <tt>-1</tt> otherwise.
      *
      * @throws IllegalArgumentException if {@code id <= 0}.
-     * @throws java.lang.UnsupportedOperationException if the Java
+     * @throws j86.java.lang.UnsupportedOperationException if the Java
      * virtual machine does not support CPU time measurement for
      * other threads.
      *
@@ -502,7 +502,7 @@ public interface ThreadMXBean extends PlatformManagedObject {
      * <tt>-1</tt> otherwise.
      *
      * @throws IllegalArgumentException if {@code id <= 0}.
-     * @throws java.lang.UnsupportedOperationException if the Java
+     * @throws j86.java.lang.UnsupportedOperationException if the Java
      * virtual machine does not support CPU time measurement for
      * other threads.
      *
@@ -548,7 +548,7 @@ public interface ThreadMXBean extends PlatformManagedObject {
      * @return <tt>true</tt> if thread CPU time measurement is enabled;
      *         <tt>false</tt> otherwise.
      *
-     * @throws java.lang.UnsupportedOperationException if the Java virtual
+     * @throws j86.java.lang.UnsupportedOperationException if the Java virtual
      * machine does not support CPU time measurement for other threads
      * nor for the current thread.
      *
@@ -564,11 +564,11 @@ public interface ThreadMXBean extends PlatformManagedObject {
      * @param enable <tt>true</tt> to enable;
      *               <tt>false</tt> to disable.
      *
-     * @throws java.lang.UnsupportedOperationException if the Java
+     * @throws j86.java.lang.UnsupportedOperationException if the Java
      * virtual machine does not support CPU time measurement for
      * any threads nor for the current thread.
      *
-     * @throws java.lang.SecurityException if a security manager
+     * @throws j86.java.lang.SecurityException if a security manager
      *         exists and the caller does not have
      *         ManagementPermission("control").
      *
@@ -604,7 +604,7 @@ public interface ThreadMXBean extends PlatformManagedObject {
      * @return an array of IDs of the threads that are monitor
      * deadlocked, if any; <tt>null</tt> otherwise.
      *
-     * @throws java.lang.SecurityException if a security manager
+     * @throws j86.java.lang.SecurityException if a security manager
      *         exists and the caller does not have
      *         ManagementPermission("monitor").
      *
@@ -616,7 +616,7 @@ public interface ThreadMXBean extends PlatformManagedObject {
      * Resets the peak thread count to the current number of
      * live threads.
      *
-     * @throws java.lang.SecurityException if a security manager
+     * @throws j86.java.lang.SecurityException if a security manager
      *         exists and the caller does not have
      *         ManagementPermission("control").
      *
@@ -642,10 +642,10 @@ public interface ThreadMXBean extends PlatformManagedObject {
      * deadlocked waiting for object monitors or ownable synchronizers, if any;
      * <tt>null</tt> otherwise.
      *
-     * @throws java.lang.SecurityException if a security manager
+     * @throws j86.java.lang.SecurityException if a security manager
      *         exists and the caller does not have
      *         ManagementPermission("monitor").
-     * @throws java.lang.UnsupportedOperationException if the Java virtual
+     * @throws j86.java.lang.UnsupportedOperationException if the Java virtual
      * machine does not support monitoring of ownable synchronizer usage.
      *
      * @see #isSynchronizerUsageSupported
@@ -743,10 +743,10 @@ public interface ThreadMXBean extends PlatformManagedObject {
      * information about a thread whose ID is in the corresponding
      * element of the input array of IDs.
      *
-     * @throws java.lang.SecurityException if a security manager
+     * @throws j86.java.lang.SecurityException if a security manager
      *         exists and the caller does not have
      *         ManagementPermission("monitor").
-     * @throws java.lang.UnsupportedOperationException
+     * @throws j86.java.lang.UnsupportedOperationException
      *         <ul>
      *           <li>if <tt>lockedMonitors</tt> is <tt>true</tt> but
      *               the Java virtual machine does not support monitoring
@@ -782,10 +782,10 @@ public interface ThreadMXBean extends PlatformManagedObject {
      *
      * @return an array of {@link ThreadInfo} for all live threads.
      *
-     * @throws java.lang.SecurityException if a security manager
+     * @throws j86.java.lang.SecurityException if a security manager
      *         exists and the caller does not have
      *         ManagementPermission("monitor").
-     * @throws java.lang.UnsupportedOperationException
+     * @throws j86.java.lang.UnsupportedOperationException
      *         <ul>
      *           <li>if <tt>lockedMonitors</tt> is <tt>true</tt> but
      *               the Java virtual machine does not support monitoring

@@ -23,11 +23,11 @@
  * questions.
  */
 
-package com.sun.jdi.connect;
+package j86.j86.com.sun.jdi.connect;
 
-import com.sun.jdi.VirtualMachine;
-import java.util.Map;
-import java.io.IOException;
+import j86.com.sun.jdi.VirtualMachine;
+import j86.java.util.Map;
+import j86.java.io.IOException;
 
 /**
  * A connector which attaches to a previously running target VM.
@@ -59,7 +59,7 @@ public interface AttachingConnector extends Connector {
      * in the argument map, and a timeout occurs when trying to attach
      * to the target VM.
      *
-     * @throws java.io.IOException when unable to attach.
+     * @throws j86.java.io.IOException when unable to attach.
      * Specific exceptions are dependent on the Connector implementation
      * in use.
      * @throws IllegalConnectorArgumentsException when one of the

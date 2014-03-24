@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.font;
+package j86.sun.font;
 
-import java.awt.AWTError;
-import java.awt.Font;
-import java.awt.GraphicsEnvironment;
-import java.awt.Toolkit;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
+import j86.java.awt.AWTError;
+import j86.java.awt.Font;
+import j86.java.awt.GraphicsEnvironment;
+import j86.java.awt.Toolkit;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
 
-import sun.security.action.GetPropertyAction;
+import j86.sun.security.action.GetPropertyAction;
 
 
 /**
@@ -41,8 +41,8 @@ import sun.security.action.GetPropertyAction;
  *
  * A default implementation is given for Linux, Solaris and Windows.
  * You can alter the behaviour of the {@link #getInstance()} method by setting
- * the {@code sun.font.fontmanager} property. For example:
- * {@code sun.font.fontmanager=sun.awt.X11FontManager}
+ * the {@code j86.sun.font.fontmanager} property. For example:
+ * {@code j86.sun.font.fontmanager=j86.sun.awt.X11FontManager}
  */
 public final class FontManagerFactory {
 
@@ -52,11 +52,11 @@ public final class FontManagerFactory {
     private static final String DEFAULT_CLASS;
     static {
         if (FontUtilities.isWindows) {
-            DEFAULT_CLASS = "sun.awt.Win32FontManager";
+            DEFAULT_CLASS = "j86.sun.awt.Win32FontManager";
         } else if (FontUtilities.isMacOSX) {
-            DEFAULT_CLASS = "sun.font.CFontManager";
+            DEFAULT_CLASS = "j86.sun.font.CFontManager";
             } else {
-            DEFAULT_CLASS = "sun.awt.X11FontManager";
+            DEFAULT_CLASS = "j86.sun.awt.X11FontManager";
             }
     }
 
@@ -76,7 +76,7 @@ public final class FontManagerFactory {
             public Object run() {
                 try {
                     String fmClassName =
-                            System.getProperty("sun.font.fontmanager",
+                            System.getProperty("j86.sun.font.fontmanager",
                                                DEFAULT_CLASS);
                     ClassLoader cl = ClassLoader.getSystemClassLoader();
                     Class fmClass = Class.forName(fmClassName, true, cl);

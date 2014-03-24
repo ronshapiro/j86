@@ -22,14 +22,14 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.reflect.annotation;
+package j86.j86.sun.reflect.annotation;
 
-import java.lang.annotation.Annotation;
-import java.lang.annotation.AnnotationFormatError;
-import java.lang.reflect.AnnotatedElement;
-import java.nio.ByteBuffer;
-import java.util.ArrayList;
-import java.util.List;
+import j86.j86.java.lang.annotation.Annotation;
+import j86.j86.java.lang.annotation.AnnotationFormatError;
+import j86.j86.j86.java.lang.reflect.AnnotatedElement;
+import j86.java.nio.ByteBuffer;
+import j86.java.util.ArrayList;
+import j86.java.util.List;
 
 /**
  * A TypeAnnotation contains all the information needed to transform type

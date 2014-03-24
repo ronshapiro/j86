@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.net.httpserver;
+package j86.j86.sun.net.httpserver;
 
-import java.net.*;
-import java.nio.*;
-import java.io.*;
-import java.nio.channels.*;
-import java.util.concurrent.locks.*;
-import javax.net.ssl.*;
-import javax.net.ssl.SSLEngineResult.*;
-import com.sun.net.httpserver.*;
+import j86.java.net.*;
+import j86.java.nio.*;
+import j86.java.io.*;
+import j86.j86.java.nio.channels.*;
+import j86.j86.j86.java.util.concurrent.locks.*;
+import j86.j86.javax.net.ssl.*;
+import j86.j86.javax.net.ssl.SSLEngineResult.*;
+import com.j86.j86.sun.net.httpserver.*;
 
 /**
  * given a non-blocking SocketChannel, it produces
@@ -491,7 +491,7 @@ class SSLStreams {
      * be sent over one stream. closing this stream causes an SSL close
      * input.
      */
-    class InputStream extends java.io.InputStream {
+    class InputStream extends j86.java.io.InputStream {
 
         ByteBuffer bbuf;
         boolean closed = false;
@@ -602,7 +602,7 @@ class SSLStreams {
      * is encrypted by the stream. Multiple HTTPS responses can be sent on
      * one stream. closing this stream initiates an SSL closure
      */
-    class OutputStream extends java.io.OutputStream {
+    class OutputStream extends j86.java.io.OutputStream {
         ByteBuffer buf;
         boolean closed = false;
         byte single[] = new byte[1];

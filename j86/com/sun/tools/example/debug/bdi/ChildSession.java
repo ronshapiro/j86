@@ -32,16 +32,16 @@
  */
 
 
-package com.sun.tools.example.debug.bdi;
+package j86.com.sun.tools.example.debug.bdi;
 
-import com.sun.jdi.*;
-import com.sun.jdi.connect.LaunchingConnector;
-import com.sun.jdi.connect.Connector;
-import com.sun.jdi.connect.VMStartException;
-import com.sun.jdi.connect.IllegalConnectorArgumentsException;
-import java.io.*;
-import java.util.Map;
-import javax.swing.SwingUtilities;
+import j86.com.sun.jdi.*;
+import j86.j86.com.sun.jdi.connect.LaunchingConnector;
+import j86.j86.com.sun.jdi.connect.Connector;
+import j86.j86.com.sun.jdi.connect.VMStartException;
+import j86.j86.com.sun.jdi.connect.IllegalConnectorArgumentsException;
+import j86.java.io.*;
+import j86.java.util.Map;
+import j86.javax.swing.SwingUtilities;
 
 
 class ChildSession extends Session {

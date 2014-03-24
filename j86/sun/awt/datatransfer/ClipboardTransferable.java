@@ -23,17 +23,17 @@
  * questions.
  */
 
-package sun.awt.datatransfer;
+package j86.j86.sun.awt.datatransfer;
 
-import java.awt.datatransfer.DataFlavor;
-import java.awt.datatransfer.Transferable;
-import java.awt.datatransfer.UnsupportedFlavorException;
+import j86.j86.java.awt.datatransfer.DataFlavor;
+import j86.j86.java.awt.datatransfer.Transferable;
+import j86.j86.java.awt.datatransfer.UnsupportedFlavorException;
 
-import java.io.IOException;
+import j86.java.io.IOException;
 
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
+import j86.java.util.HashMap;
+import j86.java.util.Iterator;
+import j86.java.util.Map;
 
 
 /**

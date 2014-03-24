@@ -23,19 +23,19 @@
  * questions.
  */
 
-package javax.swing.plaf;
+package j86.j86.javax.swing.plaf;
 
-import java.awt.Component;
-import java.awt.Insets;
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.Graphics;
-import java.io.Serializable;
+import j86.java.awt.Component;
+import j86.java.awt.Insets;
+import j86.java.awt.Color;
+import j86.java.awt.Font;
+import j86.java.awt.Graphics;
+import j86.java.io.Serializable;
 
-import java.beans.ConstructorProperties;
-import javax.swing.border.*;
-import javax.swing.Icon;
-import javax.swing.plaf.UIResource;
+import j86.java.beans.ConstructorProperties;
+import j86.j86.javax.swing.border.*;
+import j86.javax.swing.Icon;
+import j86.j86.javax.swing.plaf.UIResource;
 
 
 /*
@@ -52,10 +52,10 @@ import javax.swing.plaf.UIResource;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
- * @see javax.swing.plaf.UIResource
+ * @see j86.j86.javax.swing.plaf.UIResource
  * @author Amy Fowler
  *
  */

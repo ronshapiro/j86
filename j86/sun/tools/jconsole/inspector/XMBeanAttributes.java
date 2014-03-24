@@ -23,53 +23,53 @@
  * questions.
  */
 
-package sun.tools.jconsole.inspector;
+package j86.j86.sun.tools.jconsole.inspector;
 
 
-import java.awt.Component;
-import java.awt.EventQueue;
-import java.awt.Dimension;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-import java.io.IOException;
+import j86.java.awt.Component;
+import j86.java.awt.EventQueue;
+import j86.java.awt.Dimension;
+import j86.j86.java.awt.event.MouseAdapter;
+import j86.j86.java.awt.event.MouseEvent;
+import j86.java.io.IOException;
 
-import java.lang.reflect.Array;
+import j86.j86.j86.java.lang.reflect.Array;
 
-import java.util.EventObject;
-import java.util.HashMap;
-import java.util.WeakHashMap;
+import j86.java.util.EventObject;
+import j86.java.util.HashMap;
+import j86.java.util.WeakHashMap;
 
-import java.util.concurrent.ExecutionException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import javax.management.JMException;
-import javax.management.MBeanInfo;
-import javax.management.MBeanAttributeInfo;
-import javax.management.AttributeList;
-import javax.management.Attribute;
-import javax.management.openmbean.CompositeData;
-import javax.management.openmbean.TabularData;
+import j86.j86.java.util.concurrent.ExecutionException;
+import j86.j86.java.util.logging.Level;
+import j86.j86.java.util.logging.Logger;
+import j86.javax.management.JMException;
+import j86.javax.management.MBeanInfo;
+import j86.javax.management.MBeanAttributeInfo;
+import j86.javax.management.AttributeList;
+import j86.javax.management.Attribute;
+import j86.j86.javax.management.openmbean.CompositeData;
+import j86.j86.javax.management.openmbean.TabularData;
 
-import javax.swing.JComponent;
-import javax.swing.JOptionPane;
-import javax.swing.JTable;
-import javax.swing.JTextField;
-import javax.swing.SwingWorker;
-import javax.swing.event.ChangeEvent;
-import javax.swing.event.TableModelEvent;
-import javax.swing.event.TableModelListener;
-import javax.swing.table.DefaultTableCellRenderer;
-import javax.swing.table.DefaultTableModel;
-import javax.swing.table.TableCellEditor;
-import javax.swing.table.TableCellRenderer;
-import javax.swing.table.TableColumn;
-import javax.swing.table.TableColumnModel;
-import javax.swing.table.TableModel;
+import j86.javax.swing.JComponent;
+import j86.javax.swing.JOptionPane;
+import j86.javax.swing.JTable;
+import j86.javax.swing.JTextField;
+import j86.javax.swing.SwingWorker;
+import j86.j86.javax.swing.event.ChangeEvent;
+import j86.j86.javax.swing.event.TableModelEvent;
+import j86.j86.javax.swing.event.TableModelListener;
+import j86.j86.javax.swing.table.DefaultTableCellRenderer;
+import j86.j86.javax.swing.table.DefaultTableModel;
+import j86.j86.javax.swing.table.TableCellEditor;
+import j86.j86.javax.swing.table.TableCellRenderer;
+import j86.j86.javax.swing.table.TableColumn;
+import j86.j86.javax.swing.table.TableColumnModel;
+import j86.j86.javax.swing.table.TableModel;
 
-import sun.tools.jconsole.MBeansTab;
-import sun.tools.jconsole.JConsole;
-import sun.tools.jconsole.Messages;
-import sun.tools.jconsole.ProxyClient.SnapshotMBeanServerConnection;
+import j86.sun.tools.jconsole.MBeansTab;
+import j86.sun.tools.jconsole.JConsole;
+import j86.sun.tools.jconsole.Messages;
+import j86.sun.tools.jconsole.ProxyClient.SnapshotMBeanServerConnection;
 
 /*IMPORTANT :
   There is a deadlock issue there if we don't synchronize well loadAttributes,
@@ -812,7 +812,7 @@ public class XMBeanAttributes extends XTable {
     }
 
     class ValueCellEditor extends XTextFieldEditor {
-        // implements javax.swing.table.TableCellEditor
+        // implements j86.j86.javax.swing.table.TableCellEditor
         @Override
         public Component getTableCellEditorComponent(JTable table,
                                                      Object value,

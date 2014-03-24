@@ -23,27 +23,27 @@
  * questions.
  */
 
-package javax.swing;
+package j86.javax.swing;
 
-import java.awt.Font;
-import java.awt.event.InputEvent;
-import java.awt.event.KeyEvent;
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.SystemColor;
-import java.awt.Toolkit;
-import sun.awt.SunToolkit;
+import j86.java.awt.Font;
+import j86.j86.java.awt.event.InputEvent;
+import j86.j86.java.awt.event.KeyEvent;
+import j86.java.awt.Color;
+import j86.java.awt.Component;
+import j86.java.awt.SystemColor;
+import j86.java.awt.Toolkit;
+import j86.sun.awt.SunToolkit;
 
-import javax.swing.text.*;
-import javax.swing.border.*;
-import javax.swing.plaf.*;
+import j86.j86.javax.swing.text.*;
+import j86.j86.javax.swing.border.*;
+import j86.j86.javax.swing.plaf.*;
 
-import java.net.URL;
-import sun.swing.SwingUtilities2;
-import sun.swing.DefaultLayoutStyle;
-import sun.swing.ImageIconUIResource;
+import j86.java.net.URL;
+import j86.sun.swing.SwingUtilities2;
+import j86.sun.swing.DefaultLayoutStyle;
+import j86.sun.swing.ImageIconUIResource;
 
-import java.util.StringTokenizer;
+import j86.java.util.StringTokenizer;
 
 
 /**
@@ -72,7 +72,7 @@ import java.util.StringTokenizer;
  * {@code BasicLookAndFeel} uses {@code BasicTreeUI} as the concrete
  * implementation for {@code TreeUI}. This is accomplished by {@code
  * BasicLookAndFeel} providing the key-value pair {@code
- * "TreeUI"-"javax.swing.plaf.basic.BasicTreeUI"}, in the
+ * "TreeUI"-"j86.j86.j86.javax.swing.plaf.basic.BasicTreeUI"}, in the
  * {@code UIDefaults} returned from {@code getDefaults}. Refer to
  * {@link UIDefaults#getUI(JComponent)} for details on how the implementation
  * of the {@code ComponentUI} subclass is obtained.
@@ -270,9 +270,9 @@ public abstract class LookAndFeel
     public static void installProperty(JComponent c,
                                        String propertyName, Object propertyValue) {
         // this is a special case because the JPasswordField's ancestor hierarchy
-        // includes a class outside of javax.swing, thus we cannot call setUIProperty
+        // includes a class outside of j86.javax.swing, thus we cannot call setUIProperty
         // directly.
-        if (SunToolkit.isInstanceOf(c, "javax.swing.JPasswordField")) {
+        if (SunToolkit.isInstanceOf(c, "j86.javax.swing.JPasswordField")) {
             if (!((JPasswordField)c).customSetUIProperty(propertyName, propertyValue)) {
                 c.setUIProperty(propertyName, propertyValue);
             }
@@ -516,7 +516,7 @@ public abstract class LookAndFeel
      * @param fallbackValue the object to be returned as the value if the system value is null
      * @return the current value of the desktop property
      *
-     * @see java.awt.Toolkit#getDesktopProperty
+     * @see j86.java.awt.Toolkit#getDesktopProperty
      *
      * @since 1.4
      */

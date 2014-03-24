@@ -32,9 +32,9 @@
  */
 
 
-package com.sun.tools.example.debug.gui;
+package j86.com.sun.tools.example.debug.gui;
 
-import com.sun.tools.example.debug.bdi.OutputListener;
+import j86.com.sun.tools.example.debug.bdi.OutputListener;
 
 public class TypeScriptOutputListener implements OutputListener {
 

@@ -32,10 +32,10 @@
  */
 
 
-package com.sun.tools.example.debug.tty;
+package j86.com.sun.tools.example.debug.tty;
 
-import com.sun.jdi.*;
-import com.sun.jdi.request.*;
+import j86.com.sun.jdi.*;
+import j86.j86.com.sun.jdi.request.*;
 
 class AccessWatchpointSpec extends WatchpointSpec {
 

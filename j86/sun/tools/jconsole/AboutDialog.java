@@ -23,21 +23,21 @@
  * questions.
  */
 
-package sun.tools.jconsole;
+package j86.sun.tools.jconsole;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.beans.PropertyVetoException;
-import java.net.URI;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.java.beans.PropertyVetoException;
+import j86.java.net.URI;
 
-import javax.swing.*;
-import javax.swing.border.*;
-import javax.swing.event.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.border.*;
+import j86.j86.javax.swing.event.*;
 
-import static sun.misc.Version.jdkMinorVersion;
+import static j86.sun.misc.Version.jdkMinorVersion;
 
-import static java.awt.BorderLayout.*;
-import static sun.tools.jconsole.Utilities.*;
+import static j86.java.awt.BorderLayout.*;
+import static j86.sun.tools.jconsole.Utilities.*;
 
 @SuppressWarnings("serial")
 public class AboutDialog extends InternalDialog {

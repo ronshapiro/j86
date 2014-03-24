@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.nio.file;
+package j86.j86.java.nio.file;
 
-import java.security.BasicPermission;
+import j86.java.security.BasicPermission;
 
 /**
  * The {@code Permission} class for link creation operations.

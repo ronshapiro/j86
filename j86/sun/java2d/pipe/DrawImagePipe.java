@@ -23,15 +23,15 @@
  * questions.
  */
 
-package sun.java2d.pipe;
+package j86.j86.sun.java2d.pipe;
 
-import java.awt.Color;
-import java.awt.Image;
-import java.awt.image.BufferedImage;
-import java.awt.image.BufferedImageOp;
-import java.awt.image.ImageObserver;
-import java.awt.geom.AffineTransform;
-import sun.java2d.SunGraphics2D;
+import j86.java.awt.Color;
+import j86.java.awt.Image;
+import j86.j86.j86.java.awt.image.BufferedImage;
+import j86.j86.j86.java.awt.image.BufferedImageOp;
+import j86.j86.j86.java.awt.image.ImageObserver;
+import j86.j86.java.awt.geom.AffineTransform;
+import j86.sun.java2d.SunGraphics2D;
 
 /**
  * This interface defines the set of calls that pipeline objects

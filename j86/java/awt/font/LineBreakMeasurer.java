@@ -38,12 +38,12 @@
  *
  */
 
-package java.awt.font;
+package j86.j86.java.awt.font;
 
-import java.text.BreakIterator;
-import java.text.CharacterIterator;
-import java.text.AttributedCharacterIterator;
-import java.awt.font.FontRenderContext;
+import j86.java.text.BreakIterator;
+import j86.java.text.CharacterIterator;
+import j86.java.text.AttributedCharacterIterator;
+import j86.j86.java.awt.font.FontRenderContext;
 
 /**
  * The <code>LineBreakMeasurer</code> class allows styled text to be

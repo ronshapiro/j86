@@ -23,19 +23,19 @@
  * questions.
  */
 
-package java.net;
+package j86.java.net;
 
-import java.io.IOException;
-import java.util.List;
-import sun.security.util.SecurityConstants;
+import j86.java.io.IOException;
+import j86.java.util.List;
+import j86.sun.security.util.SecurityConstants;
 
 /**
  * Selects the proxy server to use, if any, when connecting to the
  * network resource referenced by a URL. A proxy selector is a
  * concrete sub-class of this class and is registered by invoking the
- * {@link java.net.ProxySelector#setDefault setDefault} method. The
+ * {@link j86.java.net.ProxySelector#setDefault setDefault} method. The
  * currently registered proxy selector can be retrieved by calling
- * {@link java.net.ProxySelector#getDefault getDefault} method.
+ * {@link j86.java.net.ProxySelector#getDefault getDefault} method.
  *
  * <p> When a proxy selector is registered, for instance, a subclass
  * of URLConnection class should call the {@link #select select}
@@ -69,7 +69,7 @@ public abstract class ProxySelector {
 
     static {
         try {
-            Class<?> c = Class.forName("sun.net.spi.DefaultProxySelector");
+            Class<?> c = Class.forName("j86.j86.sun.net.spi.DefaultProxySelector");
             if (c != null && ProxySelector.class.isAssignableFrom(c)) {
                 theProxySelector = (ProxySelector) c.newInstance();
             }
@@ -136,10 +136,10 @@ public abstract class ProxySelector {
      *
      * @return  a List of Proxies. Each element in the
      *          the List is of type
-     *          {@link java.net.Proxy Proxy};
+     *          {@link j86.java.net.Proxy Proxy};
      *          when no proxy is available, the list will
      *          contain one element of type
-     *          {@link java.net.Proxy Proxy}
+     *          {@link j86.java.net.Proxy Proxy}
      *          that represents a direct connection.
      * @throws IllegalArgumentException if the argument is null
      */

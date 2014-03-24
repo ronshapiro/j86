@@ -23,15 +23,15 @@
  * questions.
  */
 
-package com.sun.tools.jdi;
+package j86.com.sun.tools.jdi;
 
-import java.io.IOException;
-import java.util.Map;
+import j86.java.io.IOException;
+import j86.java.util.Map;
 
-import com.sun.jdi.Bootstrap;
-import com.sun.jdi.VirtualMachine;
-import com.sun.jdi.connect.*;
-import com.sun.jdi.connect.spi.*;
+import j86.com.sun.jdi.Bootstrap;
+import j86.com.sun.jdi.VirtualMachine;
+import j86.j86.com.sun.jdi.connect.*;
+import j86.j86.j86.com.sun.jdi.connect.spi.*;
 
 /*
  * An AttachingConnector to attach to a running VM using any

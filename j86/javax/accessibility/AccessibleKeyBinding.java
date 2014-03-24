@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.accessibility;
+package j86.javax.accessibility;
 
 /**
  * The AccessibleKeyBinding interface should be supported by any object
@@ -52,12 +52,12 @@ public interface AccessibleKeyBinding {
 
     /**
      * Returns a key binding for this object.  The value returned is an
-     * java.lang.Object which must be cast to appropriate type depending
+     * j86.java.lang.Object which must be cast to appropriate type depending
      * on the underlying implementation of the key.
      *
      * @param i zero-based index of the key bindings
      * @return a javax.lang.Object which specifies the key binding
      * @see #getAccessibleKeyBindingCount
      */
-    public java.lang.Object getAccessibleKeyBinding(int i);
+    public j86.java.lang.Object getAccessibleKeyBinding(int i);
 }

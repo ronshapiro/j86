@@ -28,16 +28,16 @@
  * Copyright IBM Corp. 1999-2000.  All rights reserved.
  */
 
-package javax.management.modelmbean;
+package j86.j86.javax.management.modelmbean;
 
-import javax.management.Attribute;
-import javax.management.AttributeChangeNotification;
-import javax.management.ListenerNotFoundException;
-import javax.management.MBeanException;
-import javax.management.Notification;
-import javax.management.NotificationBroadcaster;
-import javax.management.NotificationListener;
-import javax.management.RuntimeOperationsException;
+import j86.javax.management.Attribute;
+import j86.javax.management.AttributeChangeNotification;
+import j86.javax.management.ListenerNotFoundException;
+import j86.javax.management.MBeanException;
+import j86.javax.management.Notification;
+import j86.javax.management.NotificationBroadcaster;
+import j86.javax.management.NotificationListener;
+import j86.javax.management.RuntimeOperationsException;
 
 /**
  * This interface must be implemented by the ModelMBeans. An implementation of this interface

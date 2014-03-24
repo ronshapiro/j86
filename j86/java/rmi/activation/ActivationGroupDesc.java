@@ -23,14 +23,14 @@
  * questions.
  */
 
-package java.rmi.activation;
+package j86.j86.java.rmi.activation;
 
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.Serializable;
-import java.rmi.MarshalledObject;
-import java.util.Arrays;
-import java.util.Properties;
+import j86.java.io.IOException;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.Serializable;
+import j86.java.rmi.MarshalledObject;
+import j86.java.util.Arrays;
+import j86.java.util.Properties;
 
 /**
  * An activation group descriptor contains the information necessary to
@@ -49,7 +49,7 @@ import java.util.Properties;
  *
  * <li> the group's <code>ActivationGroupID</code>, and
  * <li> the group's initialization data (in a
- * <code>java.rmi.MarshalledObject</code>)</ul><p>
+ * <code>j86.java.rmi.MarshalledObject</code>)</ul><p>
  *
  * @author      Ann Wollrath
  * @since       1.2
@@ -271,7 +271,7 @@ public final class ActivationGroupDesc implements Serializable {
          *
          * @param       obj     the Object to compare with
          * @return      true if these Objects are equal; false otherwise.
-         * @see         java.util.Hashtable
+         * @see         j86.java.util.Hashtable
          * @since 1.2
          */
         public boolean equals(Object obj) {
@@ -291,7 +291,7 @@ public final class ActivationGroupDesc implements Serializable {
          * Return identical values for similar
          * <code>CommandEnvironment</code>s.
          * @return an integer
-         * @see java.util.Hashtable
+         * @see j86.java.util.Hashtable
          */
         public int hashCode()
         {
@@ -325,7 +325,7 @@ public final class ActivationGroupDesc implements Serializable {
      *
      * @param   obj     the Object to compare with
      * @return  true if these Objects are equal; false otherwise.
-     * @see             java.util.Hashtable
+     * @see             j86.java.util.Hashtable
      * @since 1.2
      */
     public boolean equals(Object obj) {
@@ -349,7 +349,7 @@ public final class ActivationGroupDesc implements Serializable {
     /**
      * Produce identical numbers for similar <code>ActivationGroupDesc</code>s.
      * @return an integer
-     * @see java.util.Hashtable
+     * @see j86.java.util.Hashtable
      */
     public int hashCode() {
         // hash location, className, data, and env

@@ -20,19 +20,19 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.sun.org.apache.xml.internal.security.utils;
+package j86.j86.com.sun.org.apache.xml.internal.security.utils;
 
-import java.io.ByteArrayOutputStream;
+import j86.java.io.ByteArrayOutputStream;
 
-import com.sun.org.apache.xml.internal.security.algorithms.MessageDigestAlgorithm;
+import j86.j86.com.sun.org.apache.xml.internal.security.algorithms.MessageDigestAlgorithm;
 
 /**
  * @author raul
  *
  */
 public class DigesterOutputStream extends ByteArrayOutputStream {
-    private static final java.util.logging.Logger log =
-        java.util.logging.Logger.getLogger(DigesterOutputStream.class.getName());
+    private static final j86.j86.java.util.logging.Logger log =
+        j86.j86.java.util.logging.Logger.getLogger(DigesterOutputStream.class.getName());
 
     final MessageDigestAlgorithm mda;
 
@@ -55,13 +55,13 @@ public class DigesterOutputStream extends ByteArrayOutputStream {
 
     /** @inheritDoc */
     public void write(byte[] arg0, int arg1, int arg2) {
-        if (log.isLoggable(java.util.logging.Level.FINE)) {
-            log.log(java.util.logging.Level.FINE, "Pre-digested input:");
+        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+            log.log(j86.j86.java.util.logging.Level.FINE, "Pre-digested input:");
             StringBuilder sb = new StringBuilder(arg2);
             for (int i = arg1; i < (arg1 + arg2); i++) {
                 sb.append((char)arg0[i]);
             }
-            log.log(java.util.logging.Level.FINE, sb.toString());
+            log.log(j86.j86.java.util.logging.Level.FINE, sb.toString());
         }
         mda.update(arg0, arg1, arg2);
     }

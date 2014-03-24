@@ -23,14 +23,14 @@
  * questions.
  */
 
-package java.util.spi;
+package j86.j86.java.util.spi;
 
-import java.util.Locale;
+import j86.java.util.Locale;
 
 /**
  * An abstract class for service providers that
  * provide localized names for the
- * {@link java.util.Locale Locale} class.
+ * {@link j86.java.util.Locale Locale} class.
  *
  * @since        1.6
  */
@@ -62,9 +62,9 @@ public abstract class LocaleNameProvider extends LocaleServiceProvider {
      * @exception IllegalArgumentException if <code>languageCode</code> is not in the form of
      *     two or three lower-case letters, or <code>locale</code> isn't
      *     one of the locales returned from
-     *     {@link java.util.spi.LocaleServiceProvider#getAvailableLocales()
+     *     {@link j86.j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
      *     getAvailableLocales()}.
-     * @see java.util.Locale#getDisplayLanguage(java.util.Locale)
+     * @see j86.java.util.Locale#getDisplayLanguage(java.util.Locale)
      */
     public abstract String getDisplayLanguage(String languageCode, Locale locale);
 
@@ -89,9 +89,9 @@ public abstract class LocaleNameProvider extends LocaleServiceProvider {
      * @exception IllegalArgumentException if <code>scriptCode</code> is not in the form of
      *     four title case letters, or <code>locale</code> isn't
      *     one of the locales returned from
-     *     {@link java.util.spi.LocaleServiceProvider#getAvailableLocales()
+     *     {@link j86.j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
      *     getAvailableLocales()}.
-     * @see java.util.Locale#getDisplayScript(java.util.Locale)
+     * @see j86.java.util.Locale#getDisplayScript(java.util.Locale)
      * @since 1.7
      */
     public String getDisplayScript(String scriptCode, Locale locale) {
@@ -118,9 +118,9 @@ public abstract class LocaleNameProvider extends LocaleServiceProvider {
      * @exception IllegalArgumentException if <code>countryCode</code> is not in the form of
      *     two upper-case letters or three digit letters, or <code>locale</code> isn't
      *     one of the locales returned from
-     *     {@link java.util.spi.LocaleServiceProvider#getAvailableLocales()
+     *     {@link j86.j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
      *     getAvailableLocales()}.
-     * @see java.util.Locale#getDisplayCountry(java.util.Locale)
+     * @see j86.java.util.Locale#getDisplayCountry(java.util.Locale)
      */
     public abstract String getDisplayCountry(String countryCode, Locale locale);
 
@@ -136,9 +136,9 @@ public abstract class LocaleNameProvider extends LocaleServiceProvider {
      * @exception NullPointerException if <code>variant</code> or <code>locale</code> is null
      * @exception IllegalArgumentException if <code>locale</code> isn't
      *     one of the locales returned from
-     *     {@link java.util.spi.LocaleServiceProvider#getAvailableLocales()
+     *     {@link j86.j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
      *     getAvailableLocales()}.
-     * @see java.util.Locale#getDisplayVariant(java.util.Locale)
+     * @see j86.java.util.Locale#getDisplayVariant(java.util.Locale)
      */
     public abstract String getDisplayVariant(String variant, Locale locale);
 }

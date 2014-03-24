@@ -23,19 +23,19 @@
  * questions.
  */
 
-package sun.security.util;
+package j86.sun.security.util;
 
 /**
  * <p> This class represents the <code>ResourceBundle</code>
  * for the following packages:
  *
  * <ol>
- * <li> com.sun.security.auth
- * <li> com.sun.security.auth.login
+ * <li> j86.com.sun.security.auth
+ * <li> j86.j86.com.sun.security.auth.login
  * </ol>
  *
  */
-public class AuthResources_zh_CN extends java.util.ListResourceBundle {
+public class AuthResources_zh_CN extends j86.java.util.ListResourceBundle {
 
     private static final Object[][] contents = {
 
@@ -59,7 +59,7 @@ public class AuthResources_zh_CN extends java.util.ListResourceBundle {
         {"UnixNumericUserPrincipal.name", "UnixNumericUserPrincipal: {0}"},
         {"UnixPrincipal.name", "UnixPrincipal: {0}"},
 
-        // com.sun.security.auth.login.ConfigFile
+        // j86.j86.com.sun.security.auth.login.ConfigFile
         {"Unable.to.properly.expand.config", "\u65E0\u6CD5\u6B63\u786E\u6269\u5C55{0}"},
         {"extra.config.No.such.file.or.directory.",
                 "{0} (\u6CA1\u6709\u8FD9\u6837\u7684\u6587\u4EF6\u6216\u76EE\u5F55)"},
@@ -78,11 +78,11 @@ public class AuthResources_zh_CN extends java.util.ListResourceBundle {
         {"Configuration.Error.Line.line.system.property.value.expanded.to.empty.value",
             "\u914D\u7F6E\u9519\u8BEF: \n\t\u884C {0}: \u7CFB\u7EDF\u5C5E\u6027 [{1}] \u6269\u5C55\u5230\u7A7A\u503C"},
 
-        // com.sun.security.auth.module.JndiLoginModule
+        // j86.j86.com.sun.security.auth.module.JndiLoginModule
         {"username.","\u7528\u6237\u540D: "},
         {"password.","\u53E3\u4EE4: "},
 
-        // com.sun.security.auth.module.KeyStoreLoginModule
+        // j86.j86.com.sun.security.auth.module.KeyStoreLoginModule
         {"Please.enter.keystore.information",
                 "\u8BF7\u8F93\u5165\u5BC6\u94A5\u5E93\u4FE1\u606F"},
         {"Keystore.alias.","\u5BC6\u94A5\u5E93\u522B\u540D: "},
@@ -90,7 +90,7 @@ public class AuthResources_zh_CN extends java.util.ListResourceBundle {
         {"Private.key.password.optional.",
             "\u79C1\u6709\u5BC6\u94A5\u53E3\u4EE4 (\u53EF\u9009): "},
 
-        // com.sun.security.auth.module.Krb5LoginModule
+        // j86.j86.com.sun.security.auth.module.Krb5LoginModule
         {"Kerberos.username.defUsername.",
                 "Kerberos \u7528\u6237\u540D [{0}]: "},
         {"Kerberos.password.for.username.",
@@ -98,7 +98,7 @@ public class AuthResources_zh_CN extends java.util.ListResourceBundle {
 
         /***    EVERYTHING BELOW IS DEPRECATED  ***/
 
-        // com.sun.security.auth.PolicyFile
+        // j86.com.sun.security.auth.PolicyFile
         {".error.parsing.", ": \u89E3\u6790\u65F6\u51FA\u9519 "},
         {"COLON", ": "},
         {".error.adding.Permission.", ": \u6DFB\u52A0\u6743\u9650\u65F6\u51FA\u9519 "},
@@ -109,7 +109,7 @@ public class AuthResources_zh_CN extends java.util.ListResourceBundle {
         {"attempt.to.add.a.Permission.to.a.readonly.PermissionCollection",
             "\u5C1D\u8BD5\u5C06\u6743\u9650\u6DFB\u52A0\u81F3\u53EA\u8BFB\u7684 PermissionCollection"},
 
-        // com.sun.security.auth.PolicyParser
+        // j86.com.sun.security.auth.PolicyParser
         {"expected.keystore.type", "\u5E94\u4E3A\u5BC6\u94A5\u5E93\u7C7B\u578B"},
         {"can.not.specify.Principal.with.a.wildcard.class.without.a.wildcard.name",
                 "\u6CA1\u6709\u901A\u914D\u7B26\u540D\u79F0, \u65E0\u6CD5\u4F7F\u7528\u901A\u914D\u7B26\u7C7B\u6307\u5B9A\u4E3B\u7528\u6237"},
@@ -136,7 +136,7 @@ public class AuthResources_zh_CN extends java.util.ListResourceBundle {
         {"SolarisPrincipal.", "SolarisPrincipal: "},
         // provided.null.name is the NullPointerException message when a
         // developer incorrectly passes a null name to the constructor of
-        // subclasses of java.security.Principal
+        // subclasses of j86.java.security.Principal
         {"provided.null.name", "\u63D0\u4F9B\u7684\u540D\u79F0\u4E3A\u7A7A\u503C"}
 
     };

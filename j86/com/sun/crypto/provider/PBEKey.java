@@ -23,12 +23,12 @@
  * questions.
  */
 
-package com.sun.crypto.provider;
+package j86.com.sun.crypto.provider;
 
-import java.security.KeyRep;
-import java.security.spec.InvalidKeySpecException;
-import javax.crypto.SecretKey;
-import javax.crypto.spec.PBEKeySpec;
+import j86.java.security.KeyRep;
+import j86.j86.java.security.spec.InvalidKeySpecException;
+import j86.javax.crypto.SecretKey;
+import j86.j86.javax.crypto.spec.PBEKeySpec;
 
 /**
  * This class represents a PBE key.
@@ -66,7 +66,7 @@ final class PBEKey implements SecretKey {
         this.key = new byte[passwd.length];
         for (int i=0; i<passwd.length; i++)
             this.key[i] = (byte) (passwd[i] & 0x7f);
-        java.util.Arrays.fill(passwd, ' ');
+        j86.java.util.Arrays.fill(passwd, ' ');
         type = keytype;
     }
 
@@ -107,8 +107,8 @@ final class PBEKey implements SecretKey {
             return false;
 
         byte[] thatEncoded = that.getEncoded();
-        boolean ret = java.util.Arrays.equals(this.key, thatEncoded);
-        java.util.Arrays.fill(thatEncoded, (byte)0x00);
+        boolean ret = j86.java.util.Arrays.equals(this.key, thatEncoded);
+        j86.java.util.Arrays.fill(thatEncoded, (byte)0x00);
         return ret;
     }
 
@@ -116,8 +116,8 @@ final class PBEKey implements SecretKey {
      * readObject is called to restore the state of this key from
      * a stream.
      */
-    private void readObject(java.io.ObjectInputStream s)
-         throws java.io.IOException, ClassNotFoundException
+    private void readObject(j86.java.io.ObjectInputStream s)
+         throws j86.java.io.IOException, ClassNotFoundException
     {
         s.defaultReadObject();
         key = key.clone();
@@ -129,10 +129,10 @@ final class PBEKey implements SecretKey {
      *
      * @return the standard KeyRep object to be serialized
      *
-     * @throws java.io.ObjectStreamException if a new object representing
+     * @throws j86.java.io.ObjectStreamException if a new object representing
      * this PBE key could not be created
      */
-    private Object writeReplace() throws java.io.ObjectStreamException {
+    private Object writeReplace() throws j86.java.io.ObjectStreamException {
         return new KeyRep(KeyRep.Type.SECRET,
                         getAlgorithm(),
                         getFormat(),
@@ -146,7 +146,7 @@ final class PBEKey implements SecretKey {
     protected void finalize() throws Throwable {
         try {
             if (this.key != null) {
-                java.util.Arrays.fill(this.key, (byte)0x00);
+                j86.java.util.Arrays.fill(this.key, (byte)0x00);
                 this.key = null;
             }
         } finally {

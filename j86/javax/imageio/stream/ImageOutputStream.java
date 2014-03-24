@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.imageio.stream;
+package j86.j86.javax.imageio.stream;
 
-import java.io.DataOutput;
-import java.io.IOException;
+import j86.java.io.DataOutput;
+import j86.java.io.IOException;
 
 /**
  * A seekable output stream interface for use by
@@ -367,7 +367,7 @@ public interface ImageOutputStream extends ImageInputStream, DataOutput {
     /**
      * Writes two bytes of length information to the output stream in
      * network byte order, followed by the
-     * <a href="../../../java/io/DataInput.html#modified-utf-8">modified
+     * <a href="../../../j86.java.io/DataInput.html#modified-utf-8">modified
      * UTF-8</a>
      * representation of every character in the string <code>s</code>.
      * If <code>s</code> is <code>null</code>, a
@@ -429,7 +429,7 @@ public interface ImageOutputStream extends ImageInputStream, DataOutput {
      *
      * @exception NullPointerException if <code>s</code> is
      * <code>null</code>.
-     * @exception java.io.UTFDataFormatException if the modified UTF-8
+     * @exception j86.java.io.UTFDataFormatException if the modified UTF-8
      * representation of <code>s</code> requires more than 65536 bytes.
      * @exception IOException if an I/O error occurs.
      */

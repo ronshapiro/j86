@@ -26,11 +26,11 @@
 /*
  * Created on Apr 28, 2005
  */
-package javax.sql;
+package j86.javax.sql;
 
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-import java.util.EventObject;
+import j86.java.sql.PreparedStatement;
+import j86.java.sql.SQLException;
+import j86.java.util.EventObject;
 
 /**
  * A <code>StatementEvent</code> is sent to all <code>StatementEventListener</code>s which were

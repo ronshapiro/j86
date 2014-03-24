@@ -23,11 +23,11 @@
  * questions.
  */
 
-package java.util.zip;
+package j86.j86.java.util.zip;
 
-import java.io.FilterInputStream;
-import java.io.InputStream;
-import java.io.IOException;
+import j86.java.io.FilterInputStream;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
 
 /**
  * Implements an input stream filter for compressing data in the "deflate"

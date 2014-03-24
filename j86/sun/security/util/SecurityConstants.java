@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.security.util;
+package j86.sun.security.util;
 
-import java.net.SocketPermission;
-import java.net.NetPermission;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.security.Permission;
-import java.security.BasicPermission;
-import java.security.SecurityPermission;
-import java.security.AllPermission;
+import j86.java.net.SocketPermission;
+import j86.java.net.NetPermission;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.security.Permission;
+import j86.java.security.BasicPermission;
+import j86.java.security.SecurityPermission;
+import j86.java.security.AllPermission;
 
 /**
  * Permission constants and string constants used to create permissions
@@ -65,9 +65,9 @@ public final class SecurityConstants {
 
     // Permission constants used in the various checkPermission() calls in JDK.
 
-    // java.lang.Class, java.lang.SecurityManager, java.lang.System,
-    // java.net.URLConnection, java.security.AllPermission, java.security.Policy,
-    // sun.security.provider.PolicyFile
+    // j86.java.lang.Class, java.lang.SecurityManager, java.lang.System,
+    // j86.java.net.URLConnection, j86.java.security.AllPermission, java.security.Policy,
+    // j86.sun.security.provider.PolicyFile
     public static final AllPermission ALL_PERMISSION = new AllPermission();
 
     /**
@@ -77,9 +77,9 @@ public final class SecurityConstants {
         private AWT() { }
 
         /**
-         * The class name of the factory to create java.awt.AWTPermission objects.
+         * The class name of the factory to create j86.java.awt.AWTPermission objects.
          */
-        private static final String AWTFactory = "sun.awt.AWTPermissionFactory";
+        private static final String AWTFactory = "j86.sun.awt.AWTPermissionFactory";
 
         /**
          * The PermissionFactory to create AWT permissions (or null if AWT is
@@ -107,120 +107,120 @@ public final class SecurityConstants {
             return (factory == null) ? null : factory.newPermission(name);
         }
 
-        // java.lang.SecurityManager
+        // j86.java.lang.SecurityManager
         public static final Permission TOPLEVEL_WINDOW_PERMISSION =
             newAWTPermission("showWindowWithoutWarningBanner");
 
-        // java.lang.SecurityManager
+        // j86.java.lang.SecurityManager
         public static final Permission ACCESS_CLIPBOARD_PERMISSION =
             newAWTPermission("accessClipboard");
 
-        // java.lang.SecurityManager
+        // j86.java.lang.SecurityManager
         public static final Permission CHECK_AWT_EVENTQUEUE_PERMISSION =
             newAWTPermission("accessEventQueue");
 
-        // java.awt.Dialog
+        // j86.java.awt.Dialog
         public static final Permission TOOLKIT_MODALITY_PERMISSION =
             newAWTPermission("toolkitModality");
 
-        // java.awt.Robot
+        // j86.java.awt.Robot
         public static final Permission READ_DISPLAY_PIXELS_PERMISSION =
             newAWTPermission("readDisplayPixels");
 
-        // java.awt.Robot
+        // j86.java.awt.Robot
         public static final Permission CREATE_ROBOT_PERMISSION =
             newAWTPermission("createRobot");
 
-        // java.awt.MouseInfo
+        // j86.java.awt.MouseInfo
         public static final Permission WATCH_MOUSE_PERMISSION =
             newAWTPermission("watchMousePointer");
 
-        // java.awt.Window
+        // j86.java.awt.Window
         public static final Permission SET_WINDOW_ALWAYS_ON_TOP_PERMISSION =
             newAWTPermission("setWindowAlwaysOnTop");
 
-        // java.awt.Toolkit
+        // j86.java.awt.Toolkit
         public static final Permission ALL_AWT_EVENTS_PERMISSION =
             newAWTPermission("listenToAllAWTEvents");
 
-        // java.awt.SystemTray
+        // j86.java.awt.SystemTray
         public static final Permission ACCESS_SYSTEM_TRAY_PERMISSION =
             newAWTPermission("accessSystemTray");
     }
 
-    // java.net.URL
+    // j86.java.net.URL
     public static final NetPermission SPECIFY_HANDLER_PERMISSION =
        new NetPermission("specifyStreamHandler");
 
-    // java.net.ProxySelector
+    // j86.java.net.ProxySelector
     public static final NetPermission SET_PROXYSELECTOR_PERMISSION =
        new NetPermission("setProxySelector");
 
-    // java.net.ProxySelector
+    // j86.java.net.ProxySelector
     public static final NetPermission GET_PROXYSELECTOR_PERMISSION =
        new NetPermission("getProxySelector");
 
-    // java.net.CookieHandler
+    // j86.java.net.CookieHandler
     public static final NetPermission SET_COOKIEHANDLER_PERMISSION =
        new NetPermission("setCookieHandler");
 
-    // java.net.CookieHandler
+    // j86.java.net.CookieHandler
     public static final NetPermission GET_COOKIEHANDLER_PERMISSION =
        new NetPermission("getCookieHandler");
 
-    // java.net.ResponseCache
+    // j86.java.net.ResponseCache
     public static final NetPermission SET_RESPONSECACHE_PERMISSION =
        new NetPermission("setResponseCache");
 
-    // java.net.ResponseCache
+    // j86.java.net.ResponseCache
     public static final NetPermission GET_RESPONSECACHE_PERMISSION =
        new NetPermission("getResponseCache");
 
-    // java.lang.SecurityManager, sun.applet.AppletPanel, sun.misc.Launcher
+    // j86.java.lang.SecurityManager, j86.sun.applet.AppletPanel, j86.sun.misc.Launcher
     public static final RuntimePermission CREATE_CLASSLOADER_PERMISSION =
         new RuntimePermission("createClassLoader");
 
-    // java.lang.SecurityManager
+    // j86.java.lang.SecurityManager
     public static final RuntimePermission CHECK_MEMBER_ACCESS_PERMISSION =
         new RuntimePermission("accessDeclaredMembers");
 
-    // java.lang.SecurityManager, sun.applet.AppletSecurity
+    // j86.java.lang.SecurityManager, j86.sun.applet.AppletSecurity
     public static final RuntimePermission MODIFY_THREAD_PERMISSION =
         new RuntimePermission("modifyThread");
 
-    // java.lang.SecurityManager, sun.applet.AppletSecurity
+    // j86.java.lang.SecurityManager, j86.sun.applet.AppletSecurity
     public static final RuntimePermission MODIFY_THREADGROUP_PERMISSION =
         new RuntimePermission("modifyThreadGroup");
 
-    // java.lang.Class
+    // j86.java.lang.Class
     public static final RuntimePermission GET_PD_PERMISSION =
         new RuntimePermission("getProtectionDomain");
 
-    // java.lang.Class, java.lang.ClassLoader, java.lang.Thread
+    // j86.java.lang.Class, java.lang.ClassLoader, java.lang.Thread
     public static final RuntimePermission GET_CLASSLOADER_PERMISSION =
         new RuntimePermission("getClassLoader");
 
-    // java.lang.Thread
+    // j86.java.lang.Thread
     public static final RuntimePermission STOP_THREAD_PERMISSION =
        new RuntimePermission("stopThread");
 
-    // java.lang.Thread
+    // j86.java.lang.Thread
     public static final RuntimePermission GET_STACK_TRACE_PERMISSION =
        new RuntimePermission("getStackTrace");
 
-    // java.security.AccessControlContext
+    // j86.java.security.AccessControlContext
     public static final SecurityPermission CREATE_ACC_PERMISSION =
        new SecurityPermission("createAccessControlContext");
 
-    // java.security.AccessControlContext
+    // j86.java.security.AccessControlContext
     public static final SecurityPermission GET_COMBINER_PERMISSION =
        new SecurityPermission("getDomainCombiner");
 
-    // java.security.Policy, java.security.ProtectionDomain
+    // j86.java.security.Policy, java.security.ProtectionDomain
     public static final SecurityPermission GET_POLICY_PERMISSION =
         new SecurityPermission ("getPolicy");
 
-    // java.lang.SecurityManager
+    // j86.java.lang.SecurityManager
     public static final SocketPermission LOCAL_LISTEN_PERMISSION =
         new SocketPermission("localhost:0", SOCKET_LISTEN_ACTION);
 }

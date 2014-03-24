@@ -23,22 +23,22 @@
  * questions.
  */
 
-package javax.swing.plaf.basic;
+package j86.j86.j86.javax.swing.plaf.basic;
 
-import sun.swing.SwingUtilities2;
-import sun.awt.AppContext;
+import j86.sun.swing.SwingUtilities2;
+import j86.sun.awt.AppContext;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.io.Serializable;
-import javax.swing.*;
-import javax.swing.border.*;
-import java.awt.*;
-import java.awt.event.*;
-import javax.swing.plaf.ButtonUI;
-import javax.swing.plaf.UIResource;
-import javax.swing.plaf.ComponentUI;
-import javax.swing.text.View;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.java.io.Serializable;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.border.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.j86.javax.swing.plaf.ButtonUI;
+import j86.j86.javax.swing.plaf.UIResource;
+import j86.j86.javax.swing.plaf.ComponentUI;
+import j86.j86.javax.swing.text.View;
 
 /**
  * BasicButton implementation
@@ -390,7 +390,7 @@ public class BasicButtonUI extends ButtonUI{
      *
      * @throws NullPointerException {@inheritDoc}
      * @throws IllegalArgumentException {@inheritDoc}
-     * @see javax.swing.JComponent#getBaseline(int, int)
+     * @see j86.javax.swing.JComponent#getBaseline(int, int)
      * @since 1.6
      */
     public int getBaseline(JComponent c, int width, int height) {
@@ -411,7 +411,7 @@ public class BasicButtonUI extends ButtonUI{
      * changes as the size changes.
      *
      * @throws NullPointerException {@inheritDoc}
-     * @see javax.swing.JComponent#getBaseline(int, int)
+     * @see j86.javax.swing.JComponent#getBaseline(int, int)
      * @since 1.6
      */
     public Component.BaselineResizeBehavior getBaselineResizeBehavior(

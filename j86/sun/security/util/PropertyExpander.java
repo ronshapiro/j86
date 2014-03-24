@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.security.util;
+package j86.sun.security.util;
 
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.security.GeneralSecurityException;
+import j86.java.net.URI;
+import j86.java.net.URISyntaxException;
+import j86.java.security.GeneralSecurityException;
 
 /**
  * A utility class to expand properties embedded in a string.
@@ -103,7 +103,7 @@ public class PropertyExpander {
                 }
                 String prop = value.substring(p+2, pe);
                 if (prop.equals("/")) {
-                    sb.append(java.io.File.separatorChar);
+                    sb.append(j86.java.io.File.separatorChar);
                 } else {
                     String val = System.getProperty(prop);
                     if (val != null) {
@@ -113,10 +113,10 @@ public class PropertyExpander {
                             try {
                                 if (sb.length() > 0 ||
                                     !(new URI(val)).isAbsolute()) {
-                                    val = sun.net.www.ParseUtil.encodePath(val);
+                                    val = j86.j86.sun.net.www.ParseUtil.encodePath(val);
                                 }
                             } catch (URISyntaxException use) {
-                                val = sun.net.www.ParseUtil.encodePath(val);
+                                val = j86.j86.sun.net.www.ParseUtil.encodePath(val);
                             }
                         }
                         sb.append(val);

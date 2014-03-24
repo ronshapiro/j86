@@ -22,22 +22,22 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.java.swing.plaf.gtk;
+package j86.j86.com.sun.java.swing.plaf.gtk;
 
-import sun.awt.UNIXToolkit;
+import j86.sun.awt.UNIXToolkit;
 
-import javax.swing.plaf.synth.*;
-import java.awt.*;
-import javax.swing.*;
-import javax.swing.border.*;
-import javax.swing.plaf.*;
-import com.sun.java.swing.plaf.gtk.GTKConstants.ArrowType;
-import com.sun.java.swing.plaf.gtk.GTKConstants.ExpanderStyle;
-import com.sun.java.swing.plaf.gtk.GTKConstants.Orientation;
-import com.sun.java.swing.plaf.gtk.GTKConstants.PositionType;
-import com.sun.java.swing.plaf.gtk.GTKConstants.ShadowType;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
+import j86.j86.j86.javax.swing.plaf.synth.*;
+import j86.java.awt.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.border.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.com.sun.java.swing.plaf.gtk.GTKConstants.ArrowType;
+import j86.j86.com.sun.java.swing.plaf.gtk.GTKConstants.ExpanderStyle;
+import j86.j86.com.sun.java.swing.plaf.gtk.GTKConstants.Orientation;
+import j86.j86.com.sun.java.swing.plaf.gtk.GTKConstants.PositionType;
+import j86.j86.com.sun.java.swing.plaf.gtk.GTKConstants.ShadowType;
+import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.j86.j86.java.lang.reflect.Method;
 
 /**
  * @author Joshua Outwater

@@ -23,13 +23,13 @@
  * questions.
  */
 
-package com.sun.security.sasl;
+package j86.com.sun.security.sasl;
 
-import javax.security.sasl.*;
-import java.security.NoSuchAlgorithmException;
+import j86.javax.security.sasl.*;
+import j86.java.security.NoSuchAlgorithmException;
 
-import java.util.logging.Logger;
-import java.util.logging.Level;
+import j86.j86.java.util.logging.Logger;
+import j86.j86.java.util.logging.Level;
 
 /**
   * Implements the CRAM-MD5 SASL client-side mechanism.
@@ -119,10 +119,10 @@ final class CramMD5Client extends CramMD5Base implements SaslClient {
             completed = true;
 
             return resp.getBytes("UTF8");
-        } catch (java.security.NoSuchAlgorithmException e) {
+        } catch (j86.java.security.NoSuchAlgorithmException e) {
             aborted = true;
             throw new SaslException("MD5 algorithm not available on platform", e);
-        } catch (java.io.UnsupportedEncodingException e) {
+        } catch (j86.java.io.UnsupportedEncodingException e) {
             aborted = true;
             throw new SaslException("UTF8 not available on platform", e);
         }

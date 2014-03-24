@@ -23,16 +23,16 @@
  * questions.
  */
 
-package com.sun.media.sound;
+package j86.com.sun.media.sound;
 
-import javax.sound.midi.*;
-import java.util.ArrayList;
+import j86.javax.sound.midi.*;
+import j86.java.util.ArrayList;
 
 // TODO:
 // - define and use a global symbolic constant for 60000000 (see convertTempo)
 
 /**
- * Some utilities for MIDI (some stuff is used from javax.sound.midi)
+ * Some utilities for MIDI (some stuff is used from j86.javax.sound.midi)
  *
  * @author Florian Bomers
  */

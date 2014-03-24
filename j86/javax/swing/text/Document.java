@@ -22,9 +22,9 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text;
+package j86.j86.javax.swing.text;
 
-import javax.swing.event.*;
+import j86.j86.javax.swing.event.*;
 
 /**
  * <p>
@@ -60,7 +60,7 @@ import javax.swing.event.*;
  * <ul>
  * <li>{@link #getLength()}
  * <li>{@link #getText(int, int)}
- * <li>{@link #getText(int, int, javax.swing.text.Segment)}
+ * <li>{@link #getText(int, int, j86.j86.javax.swing.text.Segment)}
  * </ul>
  * <p><b><font size=+1>Structure</font></b>
  * <p>
@@ -93,7 +93,7 @@ import javax.swing.event.*;
  * <p>The following methods are related to mutation of the
  * document content:
  * <ul>
- * <li>{@link #insertString(int, java.lang.String, javax.swing.text.AttributeSet)}
+ * <li>{@link #insertString(int, j86.java.lang.String, j86.j86.javax.swing.text.AttributeSet)}
  * <li>{@link #remove(int, int)}
  * <li>{@link #createPosition(int)}
  * </ul>
@@ -146,10 +146,10 @@ import javax.swing.event.*;
  * <p>
  * The methods related to observing mutations to the document are:
  * <ul>
- * <li><a href="#addDocumentListener(javax.swing.event.DocumentListener)">addDocumentListener(DocumentListener)</a>
- * <li><a href="#removeDocumentListener(javax.swing.event.DocumentListener)">removeDocumentListener(DocumentListener)</a>
- * <li><a href="#addUndoableEditListener(javax.swing.event.UndoableEditListener)">addUndoableEditListener(UndoableEditListener)</a>
- * <li><a href="#removeUndoableEditListener(javax.swing.event.UndoableEditListener)">removeUndoableEditListener(UndoableEditListener)</a>
+ * <li><a href="#addDocumentListener(j86.j86.javax.swing.event.DocumentListener)">addDocumentListener(DocumentListener)</a>
+ * <li><a href="#removeDocumentListener(j86.j86.javax.swing.event.DocumentListener)">removeDocumentListener(DocumentListener)</a>
+ * <li><a href="#addUndoableEditListener(j86.j86.javax.swing.event.UndoableEditListener)">addUndoableEditListener(UndoableEditListener)</a>
+ * <li><a href="#removeUndoableEditListener(j86.j86.javax.swing.event.UndoableEditListener)">removeUndoableEditListener(UndoableEditListener)</a>
  * </ul>
  *
  * <p><b><font size=+1>Properties</font></b>
@@ -161,8 +161,8 @@ import javax.swing.event.*;
  * and the <a href="#TitleProperty">TitleProperty</a>, which can be used to
  * name the <code>Document</code>.  The methods related to the properties are:
  * <ul>
- * <li>{@link #getProperty(java.lang.Object)}
- * <li>{@link #putProperty(java.lang.Object, java.lang.Object)}
+ * <li>{@link #getProperty(j86.java.lang.Object)}
+ * <li>{@link #putProperty(j86.java.lang.Object, java.lang.Object)}
  * </ul>
  *
  * <p>For more information on the <code>Document</code> class, see
@@ -173,10 +173,10 @@ import javax.swing.event.*;
  *
  * @author  Timothy Prinzing
  *
- * @see javax.swing.event.DocumentEvent
- * @see javax.swing.event.DocumentListener
- * @see javax.swing.event.UndoableEditEvent
- * @see javax.swing.event.UndoableEditListener
+ * @see j86.j86.javax.swing.event.DocumentEvent
+ * @see j86.j86.javax.swing.event.DocumentListener
+ * @see j86.j86.javax.swing.event.UndoableEditEvent
+ * @see j86.j86.javax.swing.event.UndoableEditListener
  * @see Element
  * @see Position
  * @see AttributeSet
@@ -214,7 +214,7 @@ public interface Document {
      * when undoable edits are made to the document.
      *
      * @param listener the observer to register
-     * @see javax.swing.event.UndoableEditEvent
+     * @see j86.j86.javax.swing.event.UndoableEditEvent
      */
     public void addUndoableEditListener(UndoableEditListener listener);
 
@@ -223,7 +223,7 @@ public interface Document {
      * so it will no longer receive updates.
      *
      * @param listener the observer to register
-     * @see javax.swing.event.UndoableEditEvent
+     * @see j86.j86.javax.swing.event.UndoableEditEvent
      */
     public void removeUndoableEditListener(UndoableEditListener listener);
 
@@ -285,10 +285,10 @@ public interface Document {
      * @exception BadLocationException  some portion of the removal range
      *   was not a valid part of the document.  The location in the exception
      *   is the first bad position encountered.
-     * @see javax.swing.event.DocumentEvent
-     * @see javax.swing.event.DocumentListener
-     * @see javax.swing.event.UndoableEditEvent
-     * @see javax.swing.event.UndoableEditListener
+     * @see j86.j86.javax.swing.event.DocumentEvent
+     * @see j86.j86.javax.swing.event.DocumentListener
+     * @see j86.j86.javax.swing.event.UndoableEditEvent
+     * @see j86.j86.javax.swing.event.UndoableEditListener
      */
     public void remove(int offs, int len) throws BadLocationException;
 
@@ -321,10 +321,10 @@ public interface Document {
      *   content.  This may be null if there are no attributes.
      * @exception BadLocationException  the given insert position is not a valid
      * position within the document
-     * @see javax.swing.event.DocumentEvent
-     * @see javax.swing.event.DocumentListener
-     * @see javax.swing.event.UndoableEditEvent
-     * @see javax.swing.event.UndoableEditListener
+     * @see j86.j86.javax.swing.event.DocumentEvent
+     * @see j86.j86.javax.swing.event.DocumentListener
+     * @see j86.j86.javax.swing.event.UndoableEditEvent
+     * @see j86.j86.javax.swing.event.UndoableEditListener
      */
     public void insertString(int offset, String str, AttributeSet a) throws BadLocationException;
 

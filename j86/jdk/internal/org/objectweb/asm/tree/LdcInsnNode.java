@@ -56,12 +56,12 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-package jdk.internal.org.objectweb.asm.tree;
+package j86.j86.jdk.internal.org.objectweb.asm.tree;
 
-import java.util.Map;
+import j86.java.util.Map;
 
-import jdk.internal.org.objectweb.asm.MethodVisitor;
-import jdk.internal.org.objectweb.asm.Opcodes;
+import j86.jdk.internal.org.objectweb.asm.MethodVisitor;
+import j86.jdk.internal.org.objectweb.asm.Opcodes;
 
 /**
  * A node that represents an LDC instruction.
@@ -73,7 +73,7 @@ public class LdcInsnNode extends AbstractInsnNode {
     /**
      * The constant to be loaded on the stack. This parameter must be a non null
      * {@link Integer}, a {@link Float}, a {@link Long}, a {@link Double}, a
-     * {@link String} or a {@link jdk.internal.org.objectweb.asm.Type}.
+     * {@link String} or a {@link j86.jdk.internal.org.objectweb.asm.Type}.
      */
     public Object cst;
 

@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.tools.jdi;
+package j86.com.sun.tools.jdi;
 
-import com.sun.jdi.connect.*;
-import com.sun.jdi.connect.spi.*;
-import java.util.Map;
-import java.util.HashMap;
-import java.io.IOException;
+import j86.j86.com.sun.jdi.connect.*;
+import j86.j86.j86.com.sun.jdi.connect.spi.*;
+import j86.java.util.Map;
+import j86.java.util.HashMap;
+import j86.java.io.IOException;
 
 /*
  * An ListeningConnector that uses the SocketTransportService
@@ -86,7 +86,7 @@ public class SocketListeningConnector extends GenericListeningConnector {
     }
 
     public String name() {
-        return "com.sun.jdi.SocketListen";
+        return "j86.com.sun.jdi.SocketListen";
     }
 
     public String description() {

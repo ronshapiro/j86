@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.nio.ch;
+package j86.j86.j86.sun.nio.ch;
 
-import java.io.*;
-import java.lang.reflect.*;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
+import j86.java.io.*;
+import j86.j86.j86.java.lang.reflect.*;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
 
 
 class Reflect {                                 // package-private

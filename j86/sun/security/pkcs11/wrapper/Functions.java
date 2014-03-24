@@ -45,13 +45,13 @@
  *  POSSIBILITY  OF SUCH DAMAGE.
  */
 
-package sun.security.pkcs11.wrapper;
+package j86.j86.j86.sun.security.pkcs11.wrapper;
 
-import java.math.BigInteger;
+import j86.java.math.BigInteger;
 
-import java.util.*;
+import j86.java.util.*;
 
-import static sun.security.pkcs11.wrapper.PKCS11Constants.*;
+import static j86.j86.j86.sun.security.pkcs11.wrapper.PKCS11Constants.*;
 
 /**
  * This class contains onyl static methods. It is the place for all functions

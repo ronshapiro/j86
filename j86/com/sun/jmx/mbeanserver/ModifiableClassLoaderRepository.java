@@ -23,12 +23,12 @@
  * questions.
  */
 
-package com.sun.jmx.mbeanserver;
+package j86.com.sun.jmx.mbeanserver;
 
 
 // JMX import
-import javax.management.ObjectName;
-import javax.management.loading.ClassLoaderRepository;
+import j86.javax.management.ObjectName;
+import j86.j86.javax.management.loading.ClassLoaderRepository;
 
 /**
  * This interface keeps the list of Class Loaders registered in the

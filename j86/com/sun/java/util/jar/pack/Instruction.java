@@ -23,11 +23,11 @@
  * questions.
  */
 
-package com.sun.java.util.jar.pack;
+package j86.com.sun.j86.j86.java.util.jar.pack;
 
-import java.io.IOException;
-import java.util.Arrays;
-import static com.sun.java.util.jar.pack.Constants.*;
+import j86.java.io.IOException;
+import j86.java.util.Arrays;
+import static j86.com.sun.j86.j86.java.util.jar.pack.Constants.*;
 
 /**
  * A parsed bytecode instruction.

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.print;
+package j86.javax.print;
 
 /**
  * This interface is used by a printing application to cancel a
@@ -41,7 +41,7 @@ package javax.print;
  * a service will implement this interface.
  * <p>
  * Service implementors are encouraged to implement this optional interface
- * and to deliver a javax.print.event.PrintJobEvent.JOB_CANCELLED event
+ * and to deliver a j86.j86.javax.print.event.PrintJobEvent.JOB_CANCELLED event
  * to any listeners if a job is successfully cancelled with an
  * implementation of this interface. Services should also note that an
  * implementation of this method may be made from a separate client thread

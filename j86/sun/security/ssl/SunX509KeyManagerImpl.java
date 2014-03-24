@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.security.ssl;
+package j86.sun.security.ssl;
 
-import javax.net.ssl.*;
-import java.security.*;
-import java.security.cert.*;
-import java.security.cert.Certificate;
-import java.util.*;
-import java.net.Socket;
+import j86.j86.javax.net.ssl.*;
+import j86.java.security.*;
+import j86.j86.java.security.cert.*;
+import j86.j86.java.security.cert.Certificate;
+import j86.java.util.*;
+import j86.java.net.Socket;
 
-import javax.security.auth.x500.X500Principal;
+import j86.j86.javax.security.auth.x500.X500Principal;
 
 
 /**

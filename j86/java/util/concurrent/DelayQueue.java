@@ -33,11 +33,11 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package java.util.concurrent;
-import static java.util.concurrent.TimeUnit.NANOSECONDS;
-import java.util.concurrent.locks.Condition;
-import java.util.concurrent.locks.ReentrantLock;
-import java.util.*;
+package j86.j86.java.util.concurrent;
+import static j86.j86.java.util.concurrent.TimeUnit.NANOSECONDS;
+import j86.j86.j86.java.util.concurrent.locks.Condition;
+import j86.j86.j86.java.util.concurrent.locks.ReentrantLock;
+import j86.java.util.*;
 
 /**
  * An unbounded {@linkplain BlockingQueue blocking queue} of

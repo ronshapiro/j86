@@ -23,10 +23,10 @@
  * questions.
  */
 
-package com.sun.crypto.provider;
+package j86.com.sun.crypto.provider;
 
-import java.security.InvalidKeyException;
-import javax.crypto.*;
+import j86.java.security.InvalidKeyException;
+import j86.javax.crypto.*;
 
 /**
  * This class represents a block cipher in one of its modes. It wraps

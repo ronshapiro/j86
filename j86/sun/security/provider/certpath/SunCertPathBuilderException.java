@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.security.provider.certpath;
+package j86.j86.sun.security.provider.certpath;
 
-import java.util.List;
-import java.security.cert.CertPathBuilderException;
+import j86.java.util.List;
+import j86.j86.java.security.cert.CertPathBuilderException;
 
 /**
  * This is a subclass of the generic <code>CertPathBuilderException</code>.

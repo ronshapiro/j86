@@ -24,30 +24,30 @@
  */
 
 
-package javax.management.openmbean;
+package j86.j86.javax.management.openmbean;
 
 
 // java import
 //
-import java.lang.reflect.Array;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Method;
-import java.lang.reflect.Modifier;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
-import javax.management.Descriptor;
-import javax.management.DescriptorRead;
-import javax.management.ImmutableDescriptor;
-import javax.management.MBeanAttributeInfo;
-import com.sun.jmx.remote.util.EnvHelp;
-import sun.reflect.misc.ConstructorUtil;
-import sun.reflect.misc.MethodUtil;
-import sun.reflect.misc.ReflectUtil;
+import j86.j86.j86.java.lang.reflect.Array;
+import j86.j86.j86.java.lang.reflect.Constructor;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.j86.j86.java.lang.reflect.Modifier;
+import j86.java.util.Arrays;
+import j86.java.util.Collection;
+import j86.java.util.Collections;
+import j86.java.util.HashMap;
+import j86.java.util.HashSet;
+import j86.java.util.Map;
+import j86.java.util.Set;
+import j86.javax.management.Descriptor;
+import j86.javax.management.DescriptorRead;
+import j86.javax.management.ImmutableDescriptor;
+import j86.javax.management.MBeanAttributeInfo;
+import j86.com.sun.jmx.remote.util.EnvHelp;
+import j86.j86.sun.reflect.misc.ConstructorUtil;
+import j86.j86.sun.reflect.misc.MethodUtil;
+import j86.j86.sun.reflect.misc.ReflectUtil;
 
 /**
  * Describes an attribute of an open MBean.
@@ -762,7 +762,7 @@ public class OpenMBeanAttributeInfoSupport
         Class<?> targetArrayClass;
         try {
             stringArrayClass =
-                Class.forName(squareBrackets + "Ljava.lang.String;");
+                Class.forName(squareBrackets + "Lj86.java.lang.String;");
             targetArrayClass =
                 Class.forName(squareBrackets + "L" + baseType.safeGetClassName() +
                               ";");
@@ -945,7 +945,7 @@ public class OpenMBeanAttributeInfoSupport
             ((Comparable) info.getMaxValue()).compareTo(obj) >= 0);
     }
 
-    /* ***  Commodity methods from java.lang.Object  *** */
+    /* ***  Commodity methods from j86.java.lang.Object  *** */
 
 
     /**
@@ -1035,7 +1035,7 @@ public class OpenMBeanAttributeInfoSupport
      * <p>However, note that another instance of a class implementing
      * the {@code OpenMBeanAttributeInfo} interface may be equal to
      * this {@code OpenMBeanAttributeInfoSupport} instance as defined
-     * by {@link #equals(java.lang.Object)}, but may have a different
+     * by {@link #equals(j86.java.lang.Object)}, but may have a different
      * hash code if it is calculated differently.
      *
      * <p>As {@code OpenMBeanAttributeInfoSupport} instances are
@@ -1081,7 +1081,7 @@ public class OpenMBeanAttributeInfoSupport
      * {@code OpenMBeanAttributeInfoSupport} instance.
      * <p>
      * The string representation consists of the name of this class (i.e.
-     * {@code javax.management.openmbean.OpenMBeanAttributeInfoSupport}),
+     * {@code j86.j86.javax.management.openmbean.OpenMBeanAttributeInfoSupport}),
      * the string representation of the name and open type of the
      * described parameter, the string representation of its
      * default, min, max and legal values and the string

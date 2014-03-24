@@ -22,15 +22,15 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.rmi.transport.proxy;
+package j86.j86.sun.rmi.transport.proxy;
 
-import java.io.*;
-import java.net.*;
+import j86.java.io.*;
+import j86.java.net.*;
 
-import sun.rmi.runtime.Log;
+import j86.sun.rmi.runtime.Log;
 
 /**
- * The HttpSendSocket class extends the java.net.Socket class
+ * The HttpSendSocket class extends the j86.java.net.Socket class
  * by enclosing the data output stream in, then extracting the input
  * stream from, an HTTP protocol transmission.
  *
@@ -78,8 +78,8 @@ class HttpSendSocket extends Socket implements RMISocketInfo {
      * property at the moment that the socket was created.
      */
     private String lineSeparator =
-        java.security.AccessController.doPrivileged(
-            new sun.security.action.GetPropertyAction("line.separator"));
+        j86.java.security.AccessController.doPrivileged(
+            new j86.sun.security.action.GetPropertyAction("line.separator"));
 
     /**
      * Create a stream socket and connect it to the specified port on

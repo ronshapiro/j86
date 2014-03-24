@@ -22,15 +22,15 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.util.stream;
+package j86.j86.java.util.stream;
 
-import java.util.Objects;
-import java.util.Spliterator;
-import java.util.function.DoublePredicate;
-import java.util.function.IntPredicate;
-import java.util.function.LongPredicate;
-import java.util.function.Predicate;
-import java.util.function.Supplier;
+import j86.java.util.Objects;
+import j86.java.util.Spliterator;
+import j86.j86.java.util.function.DoublePredicate;
+import j86.j86.java.util.function.IntPredicate;
+import j86.j86.java.util.function.LongPredicate;
+import j86.j86.java.util.function.Predicate;
+import j86.j86.java.util.function.Supplier;
 
 /**
  * Factory for instances of a short-circuiting {@code TerminalOp} that implement

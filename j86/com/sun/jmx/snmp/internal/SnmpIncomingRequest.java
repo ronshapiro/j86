@@ -22,18 +22,18 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.jmx.snmp.internal;
+package j86.j86.com.sun.jmx.snmp.internal;
 
-import java.net.InetAddress;
+import j86.java.net.InetAddress;
 
-import com.sun.jmx.snmp.SnmpSecurityParameters;
-import com.sun.jmx.snmp.SnmpTooBigException;
-import com.sun.jmx.snmp.SnmpStatusException;
-import com.sun.jmx.snmp.SnmpPdu;
-import com.sun.jmx.snmp.SnmpMsg;
+import j86.com.sun.jmx.snmp.SnmpSecurityParameters;
+import j86.com.sun.jmx.snmp.SnmpTooBigException;
+import j86.com.sun.jmx.snmp.SnmpStatusException;
+import j86.com.sun.jmx.snmp.SnmpPdu;
+import j86.com.sun.jmx.snmp.SnmpMsg;
 
-import com.sun.jmx.snmp.SnmpUnknownSecModelException;
-import com.sun.jmx.snmp.SnmpBadSecurityLevelException;
+import j86.com.sun.jmx.snmp.SnmpUnknownSecModelException;
+import j86.com.sun.jmx.snmp.SnmpBadSecurityLevelException;
 
 /**
 <P> An <CODE>SnmpIncomingRequest</CODE> handles both sides of an incoming SNMP request:
@@ -72,7 +72,7 @@ public interface SnmpIncomingRequest {
      **/
     public String getPrincipal();
     /**
-     * Gets the incoming request security level. This level is defined in {@link com.sun.jmx.snmp.SnmpEngine SnmpEngine}.
+     * Gets the incoming request security level. This level is defined in {@link j86.com.sun.jmx.snmp.SnmpEngine SnmpEngine}.
      * @return The security level.
      */
     public int getSecurityLevel();

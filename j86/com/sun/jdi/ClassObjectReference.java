@@ -23,10 +23,10 @@
  * questions.
  */
 
-package com.sun.jdi;
+package j86.com.sun.jdi;
 
 /**
- * An instance of java.lang.Class from the target VM.
+ * An instance of j86.java.lang.Class from the target VM.
  * Use this interface to access type information
  * for the class, array, or interface that this object reflects.
  *

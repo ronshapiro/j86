@@ -23,28 +23,28 @@
  * questions.
  */
 
-package sun.management;
+package j86.sun.management;
 
-import com.sun.management.GarbageCollectorMXBean;
-import com.sun.management.GarbageCollectionNotificationInfo;
-import java.lang.management.ManagementFactory;
-import java.lang.management.MemoryPoolMXBean;
-import java.lang.management.MemoryUsage;
+import com.j86.sun.management.GarbageCollectorMXBean;
+import com.j86.sun.management.GarbageCollectionNotificationInfo;
+import j86.j86.java.lang.management.ManagementFactory;
+import j86.j86.java.lang.management.MemoryPoolMXBean;
+import j86.j86.java.lang.management.MemoryUsage;
 
-import com.sun.management.GcInfo;
-import javax.management.openmbean.CompositeData;
-import javax.management.MBeanInfo;
-import javax.management.MBeanAttributeInfo;
-import javax.management.ObjectName;
-import javax.management.MBeanNotificationInfo;
-import javax.management.Notification;
-import javax.management.NotificationFilter;
-import javax.management.NotificationListener;
-import javax.management.ListenerNotFoundException;
+import com.j86.sun.management.GcInfo;
+import j86.j86.javax.management.openmbean.CompositeData;
+import j86.javax.management.MBeanInfo;
+import j86.javax.management.MBeanAttributeInfo;
+import j86.javax.management.ObjectName;
+import j86.javax.management.MBeanNotificationInfo;
+import j86.javax.management.Notification;
+import j86.javax.management.NotificationFilter;
+import j86.javax.management.NotificationListener;
+import j86.javax.management.ListenerNotFoundException;
 
-import java.util.List;
-import java.util.ListIterator;
-import java.util.Map;
+import j86.java.util.List;
+import j86.java.util.ListIterator;
+import j86.java.util.Map;
 
 /**
  * Implementation class for the garbage collector.
@@ -96,7 +96,7 @@ class GarbageCollectorImpl extends MemoryManagerImpl
     }
 
     private final static String notifName =
-        "javax.management.Notification";
+        "j86.javax.management.Notification";
 
     private final static String[] gcNotifTypes = {
         GarbageCollectionNotificationInfo.GARBAGE_COLLECTION_NOTIFICATION

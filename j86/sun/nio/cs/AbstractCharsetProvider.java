@@ -23,17 +23,17 @@
  * questions.
  */
 
-package sun.nio.cs;
+package j86.j86.j86.sun.nio.cs;
 
-import java.lang.ref.SoftReference;
-import java.nio.charset.Charset;
-import java.nio.charset.spi.CharsetProvider;
-import java.util.ArrayList;
-import java.util.TreeMap;
-import java.util.Iterator;
-import java.util.Locale;
-import java.util.Map;
-import sun.misc.ASCIICaseInsensitiveComparator;
+import j86.j86.java.lang.ref.SoftReference;
+import j86.j86.java.nio.charset.Charset;
+import j86.j86.j86.java.nio.charset.spi.CharsetProvider;
+import j86.java.util.ArrayList;
+import j86.java.util.TreeMap;
+import j86.java.util.Iterator;
+import j86.java.util.Locale;
+import j86.java.util.Map;
+import j86.sun.misc.ASCIICaseInsensitiveComparator;
 
 
 /**
@@ -69,7 +69,7 @@ public class AbstractCharsetProvider
     private String packagePrefix;
 
     protected AbstractCharsetProvider() {
-        packagePrefix = "sun.nio.cs";
+        packagePrefix = "j86.j86.j86.sun.nio.cs";
     }
 
     protected AbstractCharsetProvider(String pkgPrefixName) {

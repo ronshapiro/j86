@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.lang;
+package j86.java.lang;
 
 /**
  * Thrown when a thread is waiting, sleeping, or otherwise occupied,
@@ -38,12 +38,12 @@ package java.lang;
  * </pre>
  *
  * @author  Frank Yellin
- * @see     java.lang.Object#wait()
- * @see     java.lang.Object#wait(long)
- * @see     java.lang.Object#wait(long, int)
- * @see     java.lang.Thread#sleep(long)
- * @see     java.lang.Thread#interrupt()
- * @see     java.lang.Thread#interrupted()
+ * @see     j86.java.lang.Object#wait()
+ * @see     j86.java.lang.Object#wait(long)
+ * @see     j86.java.lang.Object#wait(long, int)
+ * @see     j86.java.lang.Thread#sleep(long)
+ * @see     j86.java.lang.Thread#interrupt()
+ * @see     j86.java.lang.Thread#interrupted()
  * @since   JDK1.0
  */
 public

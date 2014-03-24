@@ -22,16 +22,16 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.media.sound;
+package j86.com.sun.media.sound;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import j86.java.util.ArrayList;
+import j86.java.util.Arrays;
+import j86.java.util.List;
 
-import javax.sound.midi.Instrument;
-import javax.sound.midi.Patch;
-import javax.sound.midi.Soundbank;
-import javax.sound.midi.SoundbankResource;
+import j86.javax.sound.midi.Instrument;
+import j86.javax.sound.midi.Patch;
+import j86.javax.sound.midi.Soundbank;
+import j86.javax.sound.midi.SoundbankResource;
 
 /**
  * A simple soundbank that contains instruments and soundbankresources.

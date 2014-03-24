@@ -34,11 +34,11 @@
  **********************************************************************
  **********************************************************************/
 
-package java.awt.color;
+package j86.j86.java.awt.color;
 
-import sun.java2d.cmm.ColorTransform;
-import sun.java2d.cmm.CMSManager;
-import sun.java2d.cmm.PCMM;
+import j86.j86.sun.java2d.cmm.ColorTransform;
+import j86.j86.sun.java2d.cmm.CMSManager;
+import j86.j86.sun.java2d.cmm.PCMM;
 
 
 /**

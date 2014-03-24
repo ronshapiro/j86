@@ -22,10 +22,10 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.util.stream;
+package j86.j86.java.util.stream;
 
-import java.util.Spliterator;
-import java.util.concurrent.atomic.AtomicReference;
+import j86.java.util.Spliterator;
+import j86.j86.j86.java.util.concurrent.atomic.AtomicReference;
 
 /**
  * Abstract class for fork-join tasks used to implement short-circuiting

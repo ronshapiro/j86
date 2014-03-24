@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.naming;
+package j86.javax.naming;
 
 /**
   * This exception is thrown by methods to indicate that
@@ -39,9 +39,9 @@ package javax.naming;
   * @see Context#bind
   * @see Context#rebind
   * @see Context#createSubcontext
-  * @see javax.naming.directory.DirContext#bind
-  * @see javax.naming.directory.DirContext#rebind
-  * @see javax.naming.directory.DirContext#createSubcontext
+  * @see j86.j86.javax.naming.directory.DirContext#bind
+  * @see j86.j86.javax.naming.directory.DirContext#rebind
+  * @see j86.j86.javax.naming.directory.DirContext#createSubcontext
   * @since 1.3
   */
 
@@ -52,7 +52,7 @@ public class NameAlreadyBoundException extends NamingException {
      *
      *
      * @param   explanation     Possibly null additional detail about this exception.
-     * @see java.lang.Throwable#getMessage
+     * @see j86.java.lang.Throwable#getMessage
      */
     public NameAlreadyBoundException(String explanation) {
         super(explanation);

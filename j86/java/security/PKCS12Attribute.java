@@ -23,13 +23,13 @@
  * questions.
  */
 
-package java.security;
+package j86.java.security;
 
-import java.io.IOException;
-import java.math.BigInteger;
-import java.util.Arrays;
-import java.util.regex.Pattern;
-import sun.security.util.*;
+import j86.java.io.IOException;
+import j86.java.math.BigInteger;
+import j86.java.util.Arrays;
+import j86.j86.java.util.regex.Pattern;
+import j86.sun.security.util.*;
 
 /**
  * An attribute associated with a PKCS12 keystore entry.
@@ -56,7 +56,7 @@ public final class PKCS12Attribute implements KeyStore.Entry.Attribute {
      * pairs of hexadecimal digits.
      * Multi-valued attributes are represented as a comma-separated
      * list of values, enclosed in square brackets. See
-     * {@link Arrays#toString(java.lang.Object[])}.
+     * {@link Arrays#toString(j86.java.lang.Object[])}.
      * <p>
      * A string value will be DER-encoded as an ASN.1 UTF8String and a
      * binary value will be DER-encoded as an ASN.1 Octet String.
@@ -163,7 +163,7 @@ public final class PKCS12Attribute implements KeyStore.Entry.Attribute {
      * </ul>
      * Multi-valued attributes are represented as a comma-separated
      * list of values, enclosed in square brackets. See
-     * {@link Arrays#toString(java.lang.Object[])}.
+     * {@link Arrays#toString(j86.java.lang.Object[])}.
      *
      * @return the attribute value's string encoding
      */

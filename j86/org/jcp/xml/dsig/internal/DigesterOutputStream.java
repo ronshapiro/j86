@@ -26,28 +26,28 @@
 /*
  * $Id: DigesterOutputStream.java,v 1.5 2005/12/20 20:02:39 mullan Exp $
  */
-package org.jcp.xml.dsig.internal;
+package j86.org.jcp.xml.dsig.internal;
 
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.security.MessageDigest;
+import j86.java.io.ByteArrayInputStream;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.io.OutputStream;
+import j86.java.security.MessageDigest;
 
-import com.sun.org.apache.xml.internal.security.utils.UnsyncByteArrayOutputStream;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.UnsyncByteArrayOutputStream;
 
 /**
- * This class has been modified slightly to use java.security.MessageDigest
+ * This class has been modified slightly to use j86.java.security.MessageDigest
  * objects as input, rather than
- * com.sun.org.apache.xml.internal.security.algorithms.MessageDigestAlgorithm objects.
+ * j86.j86.com.sun.org.apache.xml.internal.security.algorithms.MessageDigestAlgorithm objects.
  * It also optionally caches the input bytes.
  *
  * @author raul
  * @author Sean Mullan
  */
 public class DigesterOutputStream extends OutputStream {
-    private static java.util.logging.Logger log =
-        java.util.logging.Logger.getLogger("org.jcp.xml.dsig.internal");
+    private static j86.j86.java.util.logging.Logger log =
+        j86.j86.java.util.logging.Logger.getLogger("j86.org.jcp.xml.dsig.internal");
 
     private final boolean buffer;
     private UnsyncByteArrayOutputStream bos;
@@ -88,13 +88,13 @@ public class DigesterOutputStream extends OutputStream {
         if (buffer) {
             bos.write(input, offset, len);
         }
-        if (log.isLoggable(java.util.logging.Level.FINE)) {
-            log.log(java.util.logging.Level.FINE, "Pre-digested input:");
+        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+            log.log(j86.j86.java.util.logging.Level.FINE, "Pre-digested input:");
             StringBuilder sb = new StringBuilder(len);
             for (int i = offset; i < (offset + len); i++) {
                 sb.append((char)input[i]);
             }
-            log.log(java.util.logging.Level.FINE, sb.toString());
+            log.log(j86.j86.java.util.logging.Level.FINE, sb.toString());
         }
         md.update(input, offset, len);
     }

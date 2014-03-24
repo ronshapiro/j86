@@ -23,16 +23,16 @@
  * questions.
  */
 
-package com.sun.media.sound;
+package j86.com.sun.media.sound;
 
-import java.util.Arrays;
+import j86.java.util.Arrays;
 
-import javax.sound.sampled.*;
+import j86.javax.sound.sampled.*;
 
 /**
  * Class to write an AudioInputStream to a SourceDataLine.
  * Was previously an inner class in various classes like JavaSoundAudioClip
- * and sun.audio.AudioDevice.
+ * and j86.sun.audio.AudioDevice.
  * It auto-opens and closes the SourceDataLine.
  *
  * @author Kara Kytle
@@ -196,7 +196,7 @@ public final class DataPusher implements Runnable {
                         // don't use read(byte[]), because some streams
                         // may not override that method
                         toWrite = ais.read(buffer, 0, buffer.length);
-                    } catch (java.io.IOException ioe) {
+                    } catch (j86.java.io.IOException ioe) {
                         // end of stream
                         toWrite = -1;
                     }

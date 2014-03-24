@@ -23,13 +23,13 @@
  * questions.
  */
 
-package sun.management;
+package j86.sun.management;
 
-import sun.management.counter.*;
+import j86.j86.sun.management.counter.*;
 
 /**
  */
-public class MethodInfo implements java.io.Serializable {
+public class MethodInfo implements j86.java.io.Serializable {
     private String name;
     private long type;
     private int compileSize;

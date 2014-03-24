@@ -23,12 +23,12 @@
  * questions.
  */
 
-package java.awt.image;
+package j86.j86.j86.java.awt.image;
 
-import java.awt.image.ImageConsumer;
-import java.awt.image.ColorModel;
-import java.util.Hashtable;
-import java.awt.Rectangle;
+import j86.j86.j86.java.awt.image.ImageConsumer;
+import j86.j86.j86.java.awt.image.ColorModel;
+import j86.java.util.Hashtable;
+import j86.java.awt.Rectangle;
 
 /**
  * An ImageFilter class for scaling images using the simplest algorithm.

@@ -28,15 +28,15 @@
  * Copyright IBM Corp. 1999-2000.  All rights reserved.
  */
 
-package javax.management.modelmbean;
+package j86.j86.javax.management.modelmbean;
 
-import javax.management.Descriptor;
-import javax.management.MBeanAttributeInfo;
-import javax.management.MBeanConstructorInfo;
-import javax.management.RuntimeOperationsException;
-import javax.management.MBeanException;
-import javax.management.MBeanNotificationInfo;
-import javax.management.MBeanOperationInfo;
+import j86.javax.management.Descriptor;
+import j86.javax.management.MBeanAttributeInfo;
+import j86.javax.management.MBeanConstructorInfo;
+import j86.javax.management.RuntimeOperationsException;
+import j86.javax.management.MBeanException;
+import j86.javax.management.MBeanNotificationInfo;
+import j86.javax.management.MBeanOperationInfo;
 
 /**
  * This interface is implemented by the ModelMBeanInfo for every ModelMBean. An implementation of this interface
@@ -308,7 +308,7 @@ public interface ModelMBeanInfo
     /**
      * Creates and returns a copy of this object.
      */
-    public java.lang.Object clone();
+    public j86.java.lang.Object clone();
 
     /**
      * Returns the list of attributes exposed for management.
@@ -324,7 +324,7 @@ public interface ModelMBeanInfo
      *
      * @return the Java class name.
      */
-    public java.lang.String getClassName();
+    public j86.java.lang.String getClassName();
 
     /**
      * Returns the list of the public constructors  of the MBean.
@@ -339,7 +339,7 @@ public interface ModelMBeanInfo
      *
      * @return the description.
      */
-    public java.lang.String getDescription();
+    public j86.java.lang.String getDescription();
 
     /**
      * Returns the list of the notifications emitted by the MBean.

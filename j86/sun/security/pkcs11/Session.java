@@ -23,15 +23,15 @@
  * questions.
  */
 
-package sun.security.pkcs11;
+package j86.j86.sun.security.pkcs11;
 
-import java.lang.ref.*;
-import java.util.*;
-import java.util.concurrent.atomic.AtomicInteger;
+import j86.j86.java.lang.ref.*;
+import j86.java.util.*;
+import j86.j86.j86.java.util.concurrent.atomic.AtomicInteger;
 
-import java.security.*;
+import j86.java.security.*;
 
-import sun.security.pkcs11.wrapper.*;
+import j86.j86.j86.sun.security.pkcs11.wrapper.*;
 
 /**
  * A session object. Sessions are obtained via the SessionManager,

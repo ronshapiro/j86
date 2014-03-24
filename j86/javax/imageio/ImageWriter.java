@@ -23,24 +23,24 @@
  * questions.
  */
 
-package javax.imageio;
+package j86.javax.imageio;
 
-import java.awt.Dimension;
-import java.awt.Rectangle;
-import java.awt.image.BufferedImage;
-import java.awt.image.RenderedImage;
-import java.awt.image.Raster;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Locale;
-import java.util.MissingResourceException;
-import java.util.ResourceBundle;
-import javax.imageio.event.IIOWriteWarningListener;
-import javax.imageio.event.IIOWriteProgressListener;
-import javax.imageio.metadata.IIOMetadata;
-import javax.imageio.stream.ImageOutputStream;
-import javax.imageio.spi.ImageWriterSpi;
+import j86.java.awt.Dimension;
+import j86.java.awt.Rectangle;
+import j86.j86.j86.java.awt.image.BufferedImage;
+import j86.j86.j86.java.awt.image.RenderedImage;
+import j86.j86.j86.java.awt.image.Raster;
+import j86.java.io.IOException;
+import j86.java.util.ArrayList;
+import j86.java.util.List;
+import j86.java.util.Locale;
+import j86.java.util.MissingResourceException;
+import j86.java.util.ResourceBundle;
+import j86.j86.javax.imageio.event.IIOWriteWarningListener;
+import j86.j86.javax.imageio.event.IIOWriteProgressListener;
+import j86.j86.javax.imageio.metadata.IIOMetadata;
+import j86.j86.javax.imageio.stream.ImageOutputStream;
+import j86.j86.javax.imageio.spi.ImageWriterSpi;
 
 /**
  * An abstract superclass for encoding and writing images.  This class
@@ -57,8 +57,8 @@ import javax.imageio.spi.ImageWriterSpi;
  *
  * @see ImageReader
  * @see ImageWriteParam
- * @see javax.imageio.spi.IIORegistry
- * @see javax.imageio.spi.ImageWriterSpi
+ * @see j86.j86.javax.imageio.spi.IIORegistry
+ * @see j86.j86.javax.imageio.spi.ImageWriterSpi
  *
  */
 public abstract class ImageWriter implements ImageTranscoder {
@@ -1967,8 +1967,8 @@ public abstract class ImageWriter implements ImageTranscoder {
              * system class loader.
              */
             ClassLoader loader = (ClassLoader)
-                java.security.AccessController.doPrivileged(
-                   new java.security.PrivilegedAction() {
+                j86.java.security.AccessController.doPrivileged(
+                   new j86.java.security.PrivilegedAction() {
                       public Object run() {
                         return Thread.currentThread().getContextClassLoader();
                       }

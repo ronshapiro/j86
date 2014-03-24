@@ -22,10 +22,10 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.io;
+package j86.java.io;
 
-import java.util.*;
-import java.io.File;
+import j86.java.util.*;
+import j86.java.io.File;
 
 /**
  * This class holds a set of filenames to be deleted on VM exit through a shutdown hook.
@@ -41,7 +41,7 @@ class DeleteOnExitHook {
         // delete on exit list and cause the DeleteOnExitHook to be
         // registered during shutdown in progress. So set the
         // registerShutdownInProgress parameter to true.
-        sun.misc.SharedSecrets.getJavaLangAccess()
+        j86.sun.misc.SharedSecrets.getJavaLangAccess()
             .registerShutdownHook(2 /* Shutdown hook invocation order */,
                 true /* register even if shutdown in progress */,
                 new Runnable() {

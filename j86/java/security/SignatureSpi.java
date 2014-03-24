@@ -23,15 +23,15 @@
  * questions.
  */
 
-package java.security;
+package j86.java.security;
 
-import java.security.spec.AlgorithmParameterSpec;
-import java.util.*;
-import java.io.*;
+import j86.j86.java.security.spec.AlgorithmParameterSpec;
+import j86.java.util.*;
+import j86.java.io.*;
 
-import java.nio.ByteBuffer;
+import j86.java.nio.ByteBuffer;
 
-import sun.security.jca.JCAUtil;
+import j86.sun.security.jca.JCAUtil;
 
 /**
  * This class defines the <i>Service Provider Interface</i> (<b>SPI</b>)
@@ -299,7 +299,7 @@ public abstract class SignatureSpi {
      * and cannot be set again, a security exception occurs, and so on.
      *
      * @deprecated Replaced by {@link
-     * #engineSetParameter(java.security.spec.AlgorithmParameterSpec)
+     * #engineSetParameter(j86.j86.java.security.spec.AlgorithmParameterSpec)
      * engineSetParameter}.
      */
     @Deprecated

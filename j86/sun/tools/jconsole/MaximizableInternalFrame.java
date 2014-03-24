@@ -23,15 +23,15 @@
  * questions.
  */
 
-package sun.tools.jconsole;
+package j86.sun.tools.jconsole;
 
-import java.awt.*;
-import java.beans.*;
-import java.lang.reflect.*;
+import j86.java.awt.*;
+import j86.java.beans.*;
+import j86.j86.j86.java.lang.reflect.*;
 
-import javax.swing.*;
-import javax.swing.border.*;
-import javax.swing.plaf.basic.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.border.*;
+import j86.j86.j86.javax.swing.plaf.basic.*;
 
 
 /**
@@ -223,7 +223,7 @@ public class MaximizableInternalFrame extends JInternalFrame {
         if (JConsole.IS_WIN) {
             try {
                 Class<?> Part =
-                    Class.forName("com.sun.java.swing.plaf.windows.TMSchema$Part");
+                    Class.forName("j86.j86.com.sun.java.swing.plaf.windows.TMSchema$Part");
                 if (Part != null) {
                     WP_MINBUTTON        = Part.getField("WP_MINBUTTON").get(null);
                     WP_RESTOREBUTTON    = Part.getField("WP_RESTOREBUTTON").get(null);

@@ -23,17 +23,17 @@
  * questions.
  */
 
-package com.sun.media.sound;
+package j86.com.sun.media.sound;
 
-import java.util.ArrayList;
-import java.util.List;
+import j86.java.util.ArrayList;
+import j86.java.util.List;
 
-import javax.sound.midi.ControllerEventListener;
-import javax.sound.midi.MetaEventListener;
-import javax.sound.midi.MetaMessage;
-import javax.sound.midi.ShortMessage;
-import javax.sound.sampled.LineEvent;
-import javax.sound.sampled.LineListener;
+import j86.javax.sound.midi.ControllerEventListener;
+import j86.javax.sound.midi.MetaEventListener;
+import j86.javax.sound.midi.MetaMessage;
+import j86.javax.sound.midi.ShortMessage;
+import j86.javax.sound.sampled.LineEvent;
+import j86.javax.sound.sampled.LineListener;
 
 
 

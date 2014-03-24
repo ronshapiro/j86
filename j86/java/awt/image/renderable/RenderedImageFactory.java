@@ -33,9 +33,9 @@
  **********************************************************************
  **********************************************************************/
 
-package java.awt.image.renderable;
-import java.awt.image.RenderedImage;
-import java.awt.RenderingHints;
+package j86.j86.j86.j86.java.awt.image.renderable;
+import j86.j86.j86.java.awt.image.RenderedImage;
+import j86.java.awt.RenderingHints;
 
 /**
  * The RenderedImageFactory interface (often abbreviated RIF) is

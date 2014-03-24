@@ -22,17 +22,17 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.plaf.multi;
+package j86.j86.j86.javax.swing.plaf.multi;
 
-import java.util.Vector;
-import javax.swing.plaf.TabbedPaneUI;
-import javax.swing.JTabbedPane;
-import java.awt.Rectangle;
-import javax.swing.plaf.ComponentUI;
-import javax.swing.JComponent;
-import java.awt.Graphics;
-import java.awt.Dimension;
-import javax.accessibility.Accessible;
+import j86.java.util.Vector;
+import j86.j86.javax.swing.plaf.TabbedPaneUI;
+import j86.javax.swing.JTabbedPane;
+import j86.java.awt.Rectangle;
+import j86.j86.javax.swing.plaf.ComponentUI;
+import j86.javax.swing.JComponent;
+import j86.java.awt.Graphics;
+import j86.java.awt.Dimension;
+import j86.javax.accessibility.Accessible;
 
 /**
  * A multiplexing UI used to combine <code>TabbedPaneUI</code>s.

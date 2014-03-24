@@ -22,9 +22,9 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.security.spec;
+package j86.j86.java.security.spec;
 
-import java.math.BigInteger;
+import j86.java.math.BigInteger;
 
 /**
  * This immutable class represents a point on an elliptic curve (EC)

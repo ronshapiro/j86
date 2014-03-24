@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.swing.event;
+package j86.j86.javax.swing.event;
 
-import java.util.EventObject;
-import javax.swing.table.*;
+import j86.java.util.EventObject;
+import j86.j86.javax.swing.table.*;
 
 /**
  * <B>TableColumnModelEvent</B> is used to notify listeners that a table
@@ -39,13 +39,13 @@ import javax.swing.table.*;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @author Alan Chung
  * @see TableColumnModelListener
  */
-public class TableColumnModelEvent extends java.util.EventObject
+public class TableColumnModelEvent extends j86.java.util.EventObject
 {
 //
 //  Instance Variables

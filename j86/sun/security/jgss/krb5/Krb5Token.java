@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.security.jgss.krb5;
+package j86.j86.sun.security.jgss.krb5;
 
-import java.io.IOException;
-import sun.security.util.*;
-import sun.security.jgss.*;
+import j86.java.io.IOException;
+import j86.sun.security.util.*;
+import j86.sun.security.jgss.*;
 
 /**
  * This class represents a base class for all Kerberos v5 GSS-API

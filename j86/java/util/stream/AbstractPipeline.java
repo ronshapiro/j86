@@ -22,12 +22,12 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.util.stream;
+package j86.j86.java.util.stream;
 
-import java.util.Objects;
-import java.util.Spliterator;
-import java.util.function.IntFunction;
-import java.util.function.Supplier;
+import j86.java.util.Objects;
+import j86.java.util.Spliterator;
+import j86.j86.java.util.function.IntFunction;
+import j86.j86.java.util.function.Supplier;
 
 /**
  * Abstract base class for "pipeline" classes, which are the core
@@ -660,7 +660,7 @@ abstract class AbstractPipeline<E_IN, E_OUT, S extends BaseStream<E_OUT, S>>
     /**
      * Returns whether this operation is stateful or not.  If it is stateful,
      * then the method
-     * {@link #opEvaluateParallel(PipelineHelper, java.util.Spliterator, java.util.function.IntFunction)}
+     * {@link #opEvaluateParallel(PipelineHelper, j86.java.util.Spliterator, j86.java.util.function.IntFunction)}
      * must be overridden.
      *
      * @return {@code true} if this operation is stateful

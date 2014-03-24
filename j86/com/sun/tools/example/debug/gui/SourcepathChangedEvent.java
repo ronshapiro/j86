@@ -32,9 +32,9 @@
  */
 
 
-package com.sun.tools.example.debug.gui;
+package j86.com.sun.tools.example.debug.gui;
 
-import java.util.EventObject;
+import j86.java.util.EventObject;
 
 public class SourcepathChangedEvent extends EventObject {
 

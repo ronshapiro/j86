@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.beans.decoder;
+package j86.j86.com.sun.beans.decoder;
 
 /**
  * This class is intended to handle &lt;long&gt; element.
@@ -33,7 +33,7 @@ package com.sun.beans.decoder;
  * For example:<pre>
  * &lt;long&gt;0xFFFF&lt;/long&gt;</pre>
  * is shortcut to<pre>
- * &lt;method name="decode" class="java.lang.Long"&gt;
+ * &lt;method name="decode" class="j86.java.lang.Long"&gt;
  *     &lt;string&gt;0xFFFF&lt;/string&gt;
  * &lt;/method&gt;</pre>
  * which is equivalent to {@code Long.decode("0xFFFF")} in Java code.

@@ -23,15 +23,15 @@
  * questions.
  */
 
-package sun.tools.jar;
+package j86.sun.tools.jar;
 
-import java.io.IOException;
-import java.io.Reader;
-import java.io.FileReader;
-import java.io.BufferedReader;
-import java.io.StreamTokenizer;
-import java.util.List;
-import java.util.ArrayList;
+import j86.java.io.IOException;
+import j86.java.io.Reader;
+import j86.java.io.FileReader;
+import j86.java.io.BufferedReader;
+import j86.java.io.StreamTokenizer;
+import j86.java.util.List;
+import j86.java.util.ArrayList;
 
 /**
  * Various utility methods for processing Java tool command line arguments.

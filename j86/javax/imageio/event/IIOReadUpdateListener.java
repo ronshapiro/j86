@@ -23,19 +23,19 @@
  * questions.
  */
 
-package javax.imageio.event;
+package j86.j86.javax.imageio.event;
 
-import java.awt.image.BufferedImage;
-import java.util.EventListener;
-import javax.imageio.ImageReader;
+import j86.j86.j86.java.awt.image.BufferedImage;
+import j86.java.util.EventListener;
+import j86.javax.imageio.ImageReader;
 
 /**
  * An interface used by <code>ImageReader</code> implementations to
  * notify callers of their image and thumbnail reading methods of
  * pixel updates.
  *
- * @see javax.imageio.ImageReader#addIIOReadUpdateListener
- * @see javax.imageio.ImageReader#removeIIOReadUpdateListener
+ * @see j86.javax.imageio.ImageReader#addIIOReadUpdateListener
+ * @see j86.javax.imageio.ImageReader#removeIIOReadUpdateListener
  *
  */
 public interface IIOReadUpdateListener extends EventListener {
@@ -160,7 +160,7 @@ public interface IIOReadUpdateListener extends EventListener {
      * method.
      * @param theImage the <code>BufferedImage</code> being updated.
      *
-     * @see javax.imageio.ImageReadParam#setSourceProgressivePasses(int, int)
+     * @see j86.javax.imageio.ImageReadParam#setSourceProgressivePasses(int, int)
      */
     void passComplete(ImageReader source, BufferedImage theImage);
 

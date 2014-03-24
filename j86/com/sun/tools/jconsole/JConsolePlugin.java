@@ -23,24 +23,24 @@
  * questions.
  */
 
-package com.sun.tools.jconsole;
+package com.j86.sun.tools.jconsole;
 
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
-import java.util.ArrayList;
-import java.util.List;
-import javax.swing.JPanel;
-import javax.swing.SwingWorker;
+import j86.java.beans.PropertyChangeEvent;
+import j86.java.beans.PropertyChangeListener;
+import j86.java.util.ArrayList;
+import j86.java.util.List;
+import j86.javax.swing.JPanel;
+import j86.javax.swing.SwingWorker;
 
 /**
  * A JConsole plugin class.  JConsole uses the
- * <a href="{@docRoot}/../../../../api/java/util/ServiceLoader.html">
+ * <a href="{@docRoot}/../../../../api/j86.java.util/ServiceLoader.html">
  * service provider</a> mechanism to search the JConsole plugins.
  * Users can provide their JConsole plugins in a jar file
  * containing a file named
  *
  * <blockquote><pre>
- * META-INF/services/com.sun.tools.jconsole.JConsolePlugin</pre></blockquote>
+ * META-INF/services/com.j86.sun.tools.jconsole.JConsolePlugin</pre></blockquote>
  *
  * <p> This file contains one line for each plugin, for example,
  *
@@ -67,8 +67,8 @@ import javax.swing.SwingWorker;
  * call its {@link #getTabs getTabs} method and add the returned
  * tabs to the JConsole window.
  *
- * @see <a href="{@docRoot}/../../../../api/java/util/ServiceLoader.html">
- * java.util.ServiceLoader</a>
+ * @see <a href="{@docRoot}/../../../../api/j86.java.util/ServiceLoader.html">
+ * j86.java.util.ServiceLoader</a>
  *
  * @since 1.6
  */
@@ -131,7 +131,7 @@ public abstract class JConsolePlugin {
      *         representing the tabs to be added in the JConsole window;
      *         or an empty map.
      */
-    public abstract java.util.Map<String, JPanel> getTabs();
+    public abstract j86.java.util.Map<String, JPanel> getTabs();
 
     /**
      * Returns a {@link SwingWorker} to perform
@@ -148,7 +148,7 @@ public abstract class JConsolePlugin {
      * <ul>
      *   <li> the <tt>SwingWorker</tt> object has not been executed
      *        (i.e. the {@link SwingWorker#getState} method
-     *        returns {@link javax.swing.SwingWorker.StateValue#PENDING PENDING}
+     *        returns {@link j86.javax.swing.SwingWorker.StateValue#PENDING PENDING}
      *        state); and</li>
      *   <li> the <tt>SwingWorker</tt> object returned in the previous
      *        update has completed the task if it was not <tt>null</tt>

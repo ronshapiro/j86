@@ -1,6 +1,6 @@
 # service provider file for Linux: with DirectAudioDeviceProvider
 # last mixer is default mixer
-com.sun.media.sound.PortMixerProvider
-com.sun.media.sound.SimpleInputDeviceProvider
-com.sun.media.sound.DirectAudioDeviceProvider
-com.sun.media.sound.HeadspaceMixerProvider
+j86.com.sun.media.sound.PortMixerProvider
+j86.com.sun.media.sound.SimpleInputDeviceProvider
+j86.com.sun.media.sound.DirectAudioDeviceProvider
+j86.com.sun.media.sound.HeadspaceMixerProvider

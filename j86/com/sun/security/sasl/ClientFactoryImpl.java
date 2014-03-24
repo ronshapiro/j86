@@ -23,18 +23,18 @@
  * questions.
  */
 
-package com.sun.security.sasl;
+package j86.com.sun.security.sasl;
 
-import javax.security.sasl.*;
-import com.sun.security.sasl.util.PolicyUtils;
+import j86.javax.security.sasl.*;
+import j86.j86.com.sun.security.sasl.util.PolicyUtils;
 
-import java.util.Map;
-import java.io.IOException;
-import javax.security.auth.callback.Callback;
-import javax.security.auth.callback.CallbackHandler;
-import javax.security.auth.callback.NameCallback;
-import javax.security.auth.callback.PasswordCallback;
-import javax.security.auth.callback.UnsupportedCallbackException;
+import j86.java.util.Map;
+import j86.java.io.IOException;
+import j86.j86.javax.security.auth.callback.Callback;
+import j86.j86.javax.security.auth.callback.CallbackHandler;
+import j86.j86.javax.security.auth.callback.NameCallback;
+import j86.j86.javax.security.auth.callback.PasswordCallback;
+import j86.j86.javax.security.auth.callback.UnsupportedCallbackException;
 
 /**
   * Client factory for EXTERNAL, CRAM-MD5, PLAIN.

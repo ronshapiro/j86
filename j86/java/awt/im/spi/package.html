@@ -27,7 +27,7 @@
 <!--This file created 7/22/1999 11:47 by Claris Home Page version 2.0-->
 <HTML>
 <HEAD>
-   <TITLE>Package java.awt.im.spi Description</TITLE>
+   <TITLE>Package j86.j86.j86.java.awt.im.spi Description</TITLE>
    <META NAME=GENERATOR CONTENT="Claris Home Page 2.0">
    <X-SAS-WINDOW TOP=51 BOTTOM=592 LEFT=171 RIGHT=701>
 </HEAD>
@@ -60,11 +60,11 @@ by the <A HREF="../../../../../technotes/guides/extensions/index.html">Extension
 Mechanism</A>. The main JAR file of an input method must contain the
 file:</P>
 
-<PRE>    META-INF/services/java.awt.im.spi.InputMethodDescriptor</PRE>
+<PRE>    META-INF/services/j86.j86.j86.java.awt.im.spi.InputMethodDescriptor</PRE>
 
 <P>The file should contain a list of fully-qualified class names, one
 per line, of classes implementing the
-<CODE>java.awt.im.spi.InputMethodDescriptor</CODE> interface. Space
+<CODE>j86.j86.j86.java.awt.im.spi.InputMethodDescriptor</CODE> interface. Space
 and tab characters surrounding each name, as well as blank lines, are
 ignored. The comment character is <CODE>'#'</CODE>
 (<CODE>\u0023</CODE>); on each line all characters following the
@@ -72,18 +72,18 @@ first comment character are ignored. The file must be encoded in
 UTF-8.</P>
 
 <P>For example, if the fully-qualified name of the class that
-implements <CODE>java.awt.im.spi.InputMethodDesciptor</CODE> for the
+implements <CODE>j86.j86.j86.java.awt.im.spi.InputMethodDesciptor</CODE> for the
 <EM>Foo</EM> input method is
 <CODE>com.sun.ime.FooInputMethodDescriptor</CODE>, the file
-<CODE>META-INF/services/java.awt.im.spi.InputMethodDescriptor</CODE>
+<CODE>META-INF/services/j86.j86.j86.java.awt.im.spi.InputMethodDescriptor</CODE>
 contains a line:</P>
 
 <PRE>    com.sun.ime.FooInputMethodDescriptor</PRE>
 
 <P>The input method must also provide at least two classes: one class
-implementing the <CODE>java.awt.im.spi.InputMethodDescriptor</CODE>
+implementing the <CODE>j86.j86.j86.java.awt.im.spi.InputMethodDescriptor</CODE>
 interface, one class implementing the
-<CODE>java.awt.im.spi.InputMethod</CODE> interface. The input method
+<CODE>j86.j86.j86.java.awt.im.spi.InputMethod</CODE> interface. The input method
 should separate the implementations for these interfaces, so that
 loading of the class implementing <CODE>InputMethod</CODE> can be
 deferred until actually needed.</P>

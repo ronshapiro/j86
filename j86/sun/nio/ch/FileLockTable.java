@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.nio.ch;
+package j86.j86.j86.sun.nio.ch;
 
-import java.nio.channels.*;
-import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
-import java.lang.ref.*;
-import java.io.FileDescriptor;
-import java.io.IOException;
+import j86.j86.java.nio.channels.*;
+import j86.java.util.*;
+import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.j86.java.lang.ref.*;
+import j86.java.io.FileDescriptor;
+import j86.java.io.IOException;
 
 abstract class FileLockTable {
     protected FileLockTable() {

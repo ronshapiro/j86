@@ -24,13 +24,13 @@
  */
 
 
-package com.sun.jmx.snmp;
+package j86.com.sun.jmx.snmp;
 
 
 
 // java imports
 //
-import java.lang.Math;
+import j86.java.lang.Math;
 
 /**
  * Represents an SNMP String defined with a fixed length.

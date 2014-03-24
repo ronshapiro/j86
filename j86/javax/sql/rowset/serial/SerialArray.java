@@ -23,13 +23,13 @@
  * questions.
  */
 
-package javax.sql.rowset.serial;
+package j86.j86.j86.javax.sql.rowset.serial;
 
-import java.sql.*;
-import java.io.*;
-import java.util.Map;
-import java.net.URL;
-import java.util.Arrays;
+import j86.java.sql.*;
+import j86.java.io.*;
+import j86.java.util.Map;
+import j86.java.net.URL;
+import j86.java.util.Arrays;
 
 
 /**
@@ -70,7 +70,7 @@ public class SerialArray implements Array, Serializable, Cloneable {
     /**
      * The SQL type of the elements in this <code>SerialArray</code> object.  The
      * type is expressed as one of the constants from the class
-     * <code>java.sql.Types</code>.
+     * <code>j86.java.sql.Types</code>.
      * @serial
      */
     private int baseType;
@@ -119,7 +119,7 @@ public class SerialArray implements Array, Serializable, Cloneable {
      * data on the client before it is passed to the constructor.  Otherwise,
      * the new <code>SerialArray</code> object will contain no data.
      * <p>
-     * Note: (2) If the <code>Array</code> contains <code>java.sql.Types.JAVA_OBJECT</code>
+     * Note: (2) If the <code>Array</code> contains <code>j86.java.sql.Types.JAVA_OBJECT</code>
      * types, the <code>SerialJavaObject</code> constructor is called where checks
      * are made to ensure this object is serializable.
      * <p>
@@ -129,7 +129,7 @@ public class SerialArray implements Array, Serializable, Cloneable {
      *
      *
      * @param array the <code>Array</code> object to be serialized
-     * @param map a <code>java.util.Map</code> object in which
+     * @param map a <code>j86.java.util.Map</code> object in which
      *        each entry consists of 1) a <code>String</code> object
      *        giving the fully qualified name of a UDT (an SQL structured type or
      *        distinct type) and 2) the
@@ -163,37 +163,37 @@ public class SerialArray implements Array, Serializable, Cloneable {
         len = elements.length;
 
         switch (baseType) {
-            case java.sql.Types.STRUCT:
+            case j86.java.sql.Types.STRUCT:
                 for (int i = 0; i < len; i++) {
                     elements[i] = new SerialStruct((Struct)elements[i], map);
                 }
             break;
 
-            case java.sql.Types.ARRAY:
+            case j86.java.sql.Types.ARRAY:
                 for (int i = 0; i < len; i++) {
                     elements[i] = new SerialArray((Array)elements[i], map);
                 }
             break;
 
-            case java.sql.Types.BLOB:
+            case j86.java.sql.Types.BLOB:
             for (int i = 0; i < len; i++) {
                 elements[i] = new SerialBlob((Blob)elements[i]);
             }
             break;
 
-            case java.sql.Types.CLOB:
+            case j86.java.sql.Types.CLOB:
                 for (int i = 0; i < len; i++) {
                     elements[i] = new SerialClob((Clob)elements[i]);
                 }
             break;
 
-            case java.sql.Types.DATALINK:
+            case j86.java.sql.Types.DATALINK:
                 for (int i = 0; i < len; i++) {
                     elements[i] = new SerialDatalink((URL)elements[i]);
                 }
             break;
 
-            case java.sql.Types.JAVA_OBJECT:
+            case j86.java.sql.Types.JAVA_OBJECT:
                 for (int i = 0; i < len; i++) {
                 elements[i] = new SerialJavaObject(elements[i]);
             }
@@ -267,25 +267,25 @@ public class SerialArray implements Array, Serializable, Cloneable {
 
         switch (baseType) {
 
-        case java.sql.Types.BLOB:
+        case j86.java.sql.Types.BLOB:
             for (int i = 0; i < len; i++) {
                 elements[i] = new SerialBlob((Blob)elements[i]);
             }
             break;
 
-        case java.sql.Types.CLOB:
+        case j86.java.sql.Types.CLOB:
             for (int i = 0; i < len; i++) {
                 elements[i] = new SerialClob((Clob)elements[i]);
             }
             break;
 
-        case java.sql.Types.DATALINK:
+        case j86.java.sql.Types.DATALINK:
             for (int i = 0; i < len; i++) {
                 elements[i] = new SerialDatalink((URL)elements[i]);
             }
             break;
 
-        case java.sql.Types.JAVA_OBJECT:
+        case j86.java.sql.Types.JAVA_OBJECT:
             for (int i = 0; i < len; i++) {
                 elements[i] = new SerialJavaObject(elements[i]);
             }
@@ -326,7 +326,7 @@ public class SerialArray implements Array, Serializable, Cloneable {
      * structured type, each structured type that has a custom mapping will be
      * mapped according to the given type map.
      *
-     * @param map a <code>java.util.Map</code> object in which
+     * @param map a <code>j86.java.util.Map</code> object in which
      *        each entry consists of 1) a <code>String</code> object
      *        giving the fully qualified name of a UDT and 2) the
      *        <code>Class</code> object for the <code>SQLData</code> implementation
@@ -385,7 +385,7 @@ public class SerialArray implements Array, Serializable, Cloneable {
      *              first element in the array is <code>0</code>
      * @param count the number of consecutive elements to be copied, starting
      *              at the given index
-     * @param map a <code>java.util.Map</code> object in which
+     * @param map a <code>j86.java.util.Map</code> object in which
      *        each entry consists of 1) a <code>String</code> object
      *        giving the fully qualified name of a UDT and 2) the
      *        <code>Class</code> object for the <code>SQLData</code> implementation
@@ -407,9 +407,9 @@ public class SerialArray implements Array, Serializable, Cloneable {
     /**
      * Retrieves the SQL type of the elements in this <code>SerialArray</code>
      * object.  The <code>int</code> returned is one of the constants in the class
-     * <code>java.sql.Types</code>.
+     * <code>j86.java.sql.Types</code>.
      *
-     * @return one of the constants in <code>java.sql.Types</code>, indicating
+     * @return one of the constants in <code>j86.java.sql.Types</code>, indicating
      *         the SQL type of the elements in this <code>SerialArray</code> object
      * @throws SerialException if an error occurs;
      * if {@code free} had previously been called on this object
@@ -470,7 +470,7 @@ public class SerialArray implements Array, Serializable, Cloneable {
      * uses either the given type map or the standard mapping; it never uses the
      * type map associated with the connection.
      *
-     * @param map a <code>java.util.Map</code> object in which
+     * @param map a <code>j86.java.util.Map</code> object in which
      *        each entry consists of 1) a <code>String</code> object
      *        giving the fully qualified name of a UDT and 2) the
      *        <code>Class</code> object for the <code>SQLData</code> implementation
@@ -527,7 +527,7 @@ public class SerialArray implements Array, Serializable, Cloneable {
      *              first element in the array is <code>0</code>
      * @param count the number of consecutive elements to be copied, starting
      *              at the given index
-     * @param map a <code>java.util.Map</code> object in which
+     * @param map a <code>j86.java.util.Map</code> object in which
      *        each entry consists of 1) a <code>String</code> object
      *        giving the fully qualified name of a UDT and 2) the
      *        <code>Class</code> object for the <code>SQLData</code> implementation

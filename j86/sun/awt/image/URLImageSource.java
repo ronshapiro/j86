@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.awt.image;
+package j86.j86.j86.sun.awt.image;
 
-import java.io.InputStream;
-import java.io.IOException;
-import java.net.HttpURLConnection;
-import java.net.URL;
-import java.net.URLConnection;
-import java.net.MalformedURLException;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
+import j86.java.net.HttpURLConnection;
+import j86.java.net.URL;
+import j86.java.net.URLConnection;
+import j86.java.net.MalformedURLException;
 
 public class URLImageSource extends InputStreamImageSource {
     URL url;
@@ -42,7 +42,7 @@ public class URLImageSource extends InputStreamImageSource {
         SecurityManager sm = System.getSecurityManager();
         if (sm != null) {
             try {
-                java.security.Permission perm =
+                j86.java.security.Permission perm =
                     u.openConnection().getPermission();
                 if (perm != null) {
                     try {
@@ -50,11 +50,11 @@ public class URLImageSource extends InputStreamImageSource {
                     } catch (SecurityException se) {
                         // fallback to checkRead/checkConnect for pre 1.2
                         // security managers
-                        if ((perm instanceof java.io.FilePermission) &&
+                        if ((perm instanceof j86.java.io.FilePermission) &&
                                 perm.getActions().indexOf("read") != -1) {
                             sm.checkRead(perm.getName());
                         } else if ((perm instanceof
-                                java.net.SocketPermission) &&
+                                j86.java.net.SocketPermission) &&
                                 perm.getActions().indexOf("connect") != -1) {
                             sm.checkConnect(u.getHost(), u.getPort());
                         } else {
@@ -62,7 +62,7 @@ public class URLImageSource extends InputStreamImageSource {
                         }
                     }
                 }
-            } catch (java.io.IOException ioe) {
+            } catch (j86.java.io.IOException ioe) {
                     sm.checkConnect(u.getHost(), u.getPort());
             }
         }

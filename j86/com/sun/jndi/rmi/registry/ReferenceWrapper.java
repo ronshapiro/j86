@@ -23,13 +23,13 @@
  * questions.
  */
 
-package com.sun.jndi.rmi.registry;
+package j86.com.sun.jndi.rmi.registry;
 
 
-import java.rmi.*;
-import java.rmi.server.UnicastRemoteObject;
+import j86.java.rmi.*;
+import j86.j86.java.rmi.server.UnicastRemoteObject;
 
-import javax.naming.*;
+import j86.javax.naming.*;
 
 
 /**

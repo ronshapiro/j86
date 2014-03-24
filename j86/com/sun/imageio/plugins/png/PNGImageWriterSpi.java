@@ -23,18 +23,18 @@
  * questions.
  */
 
-package com.sun.imageio.plugins.png;
+package j86.com.sun.imageio.plugins.png;
 
-import java.awt.image.ColorModel;
-import java.awt.image.IndexColorModel;
-import java.awt.image.SampleModel;
-import java.util.Locale;
-import javax.imageio.ImageWriter;
-import javax.imageio.ImageTypeSpecifier;
-import javax.imageio.metadata.IIOMetadataFormat;
-import javax.imageio.metadata.IIOMetadataFormatImpl;
-import javax.imageio.spi.ImageWriterSpi;
-import javax.imageio.stream.ImageOutputStream;
+import j86.j86.j86.java.awt.image.ColorModel;
+import j86.j86.j86.java.awt.image.IndexColorModel;
+import j86.j86.j86.java.awt.image.SampleModel;
+import j86.java.util.Locale;
+import j86.javax.imageio.ImageWriter;
+import j86.javax.imageio.ImageTypeSpecifier;
+import j86.j86.javax.imageio.metadata.IIOMetadataFormat;
+import j86.j86.javax.imageio.metadata.IIOMetadataFormatImpl;
+import j86.j86.javax.imageio.spi.ImageWriterSpi;
+import j86.j86.javax.imageio.stream.ImageOutputStream;
 
 public class PNGImageWriterSpi extends ImageWriterSpi {
 
@@ -49,10 +49,10 @@ public class PNGImageWriterSpi extends ImageWriterSpi {
     private static final String[] MIMETypes = { "image/png", "image/x-png" };
 
     private static final String writerClassName =
-        "com.sun.imageio.plugins.png.PNGImageWriter";
+        "j86.com.sun.imageio.plugins.png.PNGImageWriter";
 
     private static final String[] readerSpiNames = {
-        "com.sun.imageio.plugins.png.PNGImageReaderSpi"
+        "j86.com.sun.imageio.plugins.png.PNGImageReaderSpi"
     };
 
     public PNGImageWriterSpi() {
@@ -69,7 +69,7 @@ public class PNGImageWriterSpi extends ImageWriterSpi {
                 null, null,
                 true,
                 PNGMetadata.nativeMetadataFormatName,
-                "com.sun.imageio.plugins.png.PNGMetadataFormat",
+                "j86.com.sun.imageio.plugins.png.PNGMetadataFormat",
                 null, null
                 );
     }

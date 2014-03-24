@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.applet;
+package j86.sun.applet;
 
-import java.net.URL;
-import java.awt.Image;
-import sun.misc.Ref;
+import j86.java.net.URL;
+import j86.java.awt.Image;
+import j86.sun.misc.Ref;
 
 /**
  * Part of this class still remains only to support legacy, 100%-impure

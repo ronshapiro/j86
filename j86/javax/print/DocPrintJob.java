@@ -23,13 +23,13 @@
  * questions.
  */
 
-package javax.print;
+package j86.javax.print;
 
-import javax.print.attribute.PrintJobAttributeSet;
-import javax.print.attribute.PrintRequestAttributeSet;
-import javax.print.event.PrintJobAttributeListener;
-import javax.print.event.PrintJobListener;
-import javax.print.PrintException;
+import j86.j86.javax.print.attribute.PrintJobAttributeSet;
+import j86.j86.javax.print.attribute.PrintRequestAttributeSet;
+import j86.j86.javax.print.event.PrintJobAttributeListener;
+import j86.j86.javax.print.event.PrintJobListener;
+import j86.javax.print.PrintException;
 
 /**
  *

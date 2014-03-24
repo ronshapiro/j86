@@ -23,14 +23,14 @@
  * questions.
  */
 
-package javax.swing.plaf.metal;
+package j86.j86.j86.javax.swing.plaf.metal;
 
-import java.awt.*;
-import java.awt.image.*;
-import javax.swing.*;
-import java.util.ArrayList;
-import java.util.List;
-import sun.awt.AppContext;
+import j86.java.awt.*;
+import j86.j86.j86.java.awt.image.*;
+import j86.javax.swing.*;
+import j86.java.util.ArrayList;
+import j86.java.util.List;
+import j86.sun.awt.AppContext;
 
 /**
  * Implements the bumps used throughout the Metal Look and Feel.

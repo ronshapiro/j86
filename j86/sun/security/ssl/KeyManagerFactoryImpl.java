@@ -23,15 +23,15 @@
  * questions.
  */
 
-package sun.security.ssl;
+package j86.sun.security.ssl;
 
-import java.util.List;
-import java.util.Collections;
+import j86.java.util.List;
+import j86.java.util.Collections;
 
-import java.security.*;
-import java.security.KeyStore.*;
+import j86.java.security.*;
+import j86.java.security.KeyStore.*;
 
-import javax.net.ssl.*;
+import j86.j86.javax.net.ssl.*;
 
 abstract class KeyManagerFactoryImpl extends KeyManagerFactorySpi {
 

@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.management;
+package j86.javax.management;
 
-import java.lang.annotation.*;
+import j86.j86.java.lang.annotation.*;
 
 /**
  * <p>Meta-annotation that describes how an annotation element relates
@@ -150,7 +150,7 @@ import java.lang.annotation.*;
  *         {@code Boolean.FALSE}, etc)</td></tr>
  * <tr><td>Class constant (e.g. {@code Thread.class})</td>
  *     <td>Class name from {@link Class#getName()}
- *         (e.g. {@code "java.lang.Thread"})</td></tr>
+ *         (e.g. {@code "j86.java.lang.Thread"})</td></tr>
  * <tr><td>Enum constant (e.g. {@link ElementType#FIELD})</td>
  *     <td>Constant name from {@link Enum#name()}
  *         (e.g. {@code "FIELD"})</td></tr>

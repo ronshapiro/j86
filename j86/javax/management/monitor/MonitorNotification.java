@@ -23,12 +23,12 @@
  * questions.
  */
 
-package javax.management.monitor;
+package j86.j86.javax.management.monitor;
 
 
 // jmx imports
 //
-import javax.management.ObjectName;
+import j86.javax.management.ObjectName;
 
 /**
  * Provides definitions of the notifications sent by monitor MBeans.
@@ -70,7 +70,7 @@ import javax.management.ObjectName;
  *
  * @since 1.5
  */
-public class MonitorNotification extends javax.management.Notification {
+public class MonitorNotification extends j86.javax.management.Notification {
 
 
     /*

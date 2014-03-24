@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.nio.ch;
+package j86.j86.j86.sun.nio.ch;
 
-import java.io.FileDescriptor;
-import java.io.IOException;
-import java.net.*;
-import java.nio.ByteBuffer;
-import java.nio.channels.*;
-import java.nio.channels.spi.*;
-import java.util.*;
-import sun.net.ResourceManager;
+import j86.java.io.FileDescriptor;
+import j86.java.io.IOException;
+import j86.java.net.*;
+import j86.java.nio.ByteBuffer;
+import j86.j86.java.nio.channels.*;
+import j86.j86.j86.java.nio.channels.spi.*;
+import j86.java.util.*;
+import j86.sun.net.ResourceManager;
 
 /**
  * An implementation of DatagramChannels.

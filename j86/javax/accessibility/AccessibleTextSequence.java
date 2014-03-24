@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.accessibility;
+package j86.javax.accessibility;
 
 
 /**
@@ -45,7 +45,7 @@ package javax.accessibility;
  * start and end indicies/offsets into a larger body of text that the
  * <code>String</code> comes from.
  *
- * @see javax.accessibility.AccessibleExtendedText
+ * @see j86.javax.accessibility.AccessibleExtendedText
  */
 public class AccessibleTextSequence {
 

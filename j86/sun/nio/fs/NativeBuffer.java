@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.nio.fs;
+package j86.j86.sun.nio.fs;
 
-import sun.misc.Unsafe;
-import sun.misc.Cleaner;
+import j86.sun.misc.Unsafe;
+import j86.sun.misc.Cleaner;
 
 /**
  * A light-weight buffer in native memory.

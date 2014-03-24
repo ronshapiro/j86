@@ -22,17 +22,17 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.util;
+package j86.java.util;
 
-import sun.util.logging.PlatformLogger;
+import j86.j86.sun.util.logging.PlatformLogger;
 
-import java.security.AccessController;
-import java.security.PrivilegedAction;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
 
 /**
  * Utility class for detecting inadvertent uses of boxing in
- * {@code java.util} classes.  The detection is turned on or off based on
- * whether the system property {@code org.openjdk.java.util.stream.tripwire} is
+ * {@code j86.java.util} classes.  The detection is turned on or off based on
+ * whether the system property {@code org.openjdk.j86.j86.java.util.stream.tripwire} is
  * considered {@code true} according to {@link Boolean#getBoolean(String)}.
  * This should normally be turned off for production use.
  *
@@ -46,7 +46,7 @@ import java.security.PrivilegedAction;
  * @since 1.8
  */
 final class Tripwire {
-    private static final String TRIPWIRE_PROPERTY = "org.openjdk.java.util.stream.tripwire";
+    private static final String TRIPWIRE_PROPERTY = "org.openjdk.j86.j86.java.util.stream.tripwire";
 
     /** Should debugging checks be enabled? */
     static final boolean ENABLED = AccessController.doPrivileged(

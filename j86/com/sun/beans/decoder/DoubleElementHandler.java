@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.beans.decoder;
+package j86.j86.com.sun.beans.decoder;
 
 /**
  * This class is intended to handle &lt;double&gt; element.
@@ -33,7 +33,7 @@ package com.sun.beans.decoder;
  * For example:<pre>
  * &lt;double&gt;1.23e45&lt;/double&gt;</pre>
  * is shortcut to<pre>
- * &lt;method name="valueOf" class="java.lang.Double"&gt;
+ * &lt;method name="valueOf" class="j86.java.lang.Double"&gt;
  *     &lt;string&gt;1.23e45&lt;/string&gt;
  * &lt;/method&gt;</pre>
  * which is equivalent to {@code Double.valueOf("1.23e45")} in Java code.

@@ -23,20 +23,20 @@
  * questions.
  */
 
-package com.sun.rowset.internal;
+package j86.j86.com.sun.rowset.internal;
 
-import java.util.*;
+import j86.java.util.*;
 
 import org.xml.sax.*;
 import org.xml.sax.helpers.*;
 
-import java.sql.*;
-import javax.sql.*;
+import j86.java.sql.*;
+import j86.javax.sql.*;
 
-import javax.sql.rowset.*;
-import com.sun.rowset.*;
-import java.io.IOException;
-import java.text.MessageFormat;
+import j86.j86.javax.sql.rowset.*;
+import j86.com.sun.rowset.*;
+import j86.java.io.IOException;
+import j86.java.text.MessageFormat;
 
 /**
  * The document handler that receives parse events that an XML parser sends while it
@@ -660,7 +660,7 @@ public class XmlReaderContentHandler extends DefaultHandler {
                      //Added the handling for Class tags to take care of maps
                      //Makes an entry into the map upon end of class tag
                      try{
-                          typeMap.put(Key_map,sun.reflect.misc.ReflectUtil.forName(Value_map));
+                          typeMap.put(Key_map,j86.j86.sun.reflect.misc.ReflectUtil.forName(Value_map));
 
                         }catch(ClassNotFoundException ex) {
                           throw new SAXException(MessageFormat.format(resBundle.handleGetObject("xmlrch.errmap").toString(), ex.getMessage()));
@@ -986,8 +986,8 @@ public class XmlReaderContentHandler extends DefaultHandler {
         return Boolean.valueOf(s).booleanValue();
     }
 
-    private java.math.BigDecimal getBigDecimalValue(String s) {
-        return new java.math.BigDecimal(s);
+    private j86.java.math.BigDecimal getBigDecimalValue(String s) {
+        return new j86.java.math.BigDecimal(s);
     }
 
     private byte getByteValue(String s) {
@@ -1014,16 +1014,16 @@ public class XmlReaderContentHandler extends DefaultHandler {
         return s.getBytes();
     }
 
-    private java.sql.Date getDateValue(String s) {
-        return new java.sql.Date(getLongValue(s));
+    private j86.java.sql.Date getDateValue(String s) {
+        return new j86.java.sql.Date(getLongValue(s));
     }
 
-    private java.sql.Time getTimeValue(String s) {
-        return new java.sql.Time(getLongValue(s));
+    private j86.java.sql.Time getTimeValue(String s) {
+        return new j86.java.sql.Time(getLongValue(s));
     }
 
-    private java.sql.Timestamp getTimestampValue(String s) {
-        return new java.sql.Timestamp(getLongValue(s));
+    private j86.java.sql.Timestamp getTimestampValue(String s) {
+        return new j86.java.sql.Timestamp(getLongValue(s));
     }
 
     private void setPropertyValue(String s) throws SQLException {
@@ -1340,50 +1340,50 @@ public class XmlReaderContentHandler extends DefaultHandler {
         // no longer have to deal with those pesky nulls.
         int type = rs.getMetaData().getColumnType(idx);
         switch (type) {
-        case java.sql.Types.BIT:
+        case j86.java.sql.Types.BIT:
             rs.updateBoolean(idx, getBooleanValue(s));
             break;
-        case java.sql.Types.BOOLEAN:
+        case j86.java.sql.Types.BOOLEAN:
             rs.updateBoolean(idx, getBooleanValue(s));
             break;
-        case java.sql.Types.SMALLINT:
-        case java.sql.Types.TINYINT:
+        case j86.java.sql.Types.SMALLINT:
+        case j86.java.sql.Types.TINYINT:
             rs.updateShort(idx, getShortValue(s));
             break;
-        case java.sql.Types.INTEGER:
+        case j86.java.sql.Types.INTEGER:
             rs.updateInt(idx, getIntegerValue(s));
             break;
-        case java.sql.Types.BIGINT:
+        case j86.java.sql.Types.BIGINT:
             rs.updateLong(idx, getLongValue(s));
             break;
-        case java.sql.Types.REAL:
-        case java.sql.Types.FLOAT:
+        case j86.java.sql.Types.REAL:
+        case j86.java.sql.Types.FLOAT:
             rs.updateFloat(idx, getFloatValue(s));
             break;
-        case java.sql.Types.DOUBLE:
+        case j86.java.sql.Types.DOUBLE:
             rs.updateDouble(idx, getDoubleValue(s));
             break;
-        case java.sql.Types.NUMERIC:
-        case java.sql.Types.DECIMAL:
+        case j86.java.sql.Types.NUMERIC:
+        case j86.java.sql.Types.DECIMAL:
             rs.updateObject(idx, getBigDecimalValue(s));
             break;
-        case java.sql.Types.BINARY:
-        case java.sql.Types.VARBINARY:
-        case java.sql.Types.LONGVARBINARY:
+        case j86.java.sql.Types.BINARY:
+        case j86.java.sql.Types.VARBINARY:
+        case j86.java.sql.Types.LONGVARBINARY:
             rs.updateBytes(idx, getBinaryValue(s));
             break;
-        case java.sql.Types.DATE:
+        case j86.java.sql.Types.DATE:
             rs.updateDate(idx,  getDateValue(s));
             break;
-        case java.sql.Types.TIME:
+        case j86.java.sql.Types.TIME:
             rs.updateTime(idx, getTimeValue(s));
             break;
-        case java.sql.Types.TIMESTAMP:
+        case j86.java.sql.Types.TIMESTAMP:
             rs.updateTimestamp(idx, getTimestampValue(s));
             break;
-        case java.sql.Types.CHAR:
-        case java.sql.Types.VARCHAR:
-        case java.sql.Types.LONGVARCHAR:
+        case j86.java.sql.Types.CHAR:
+        case j86.java.sql.Types.VARCHAR:
+        case j86.java.sql.Types.LONGVARCHAR:
             rs.updateString(idx, getStringValue(s));
             break;
         default:

@@ -23,18 +23,18 @@
  * questions.
  */
 
-package com.sun.jndi.ldap;
+package j86.com.sun.jndi.ldap;
 
-import java.util.Hashtable;
-import java.util.Vector;
-import java.util.EventObject;
+import j86.java.util.Hashtable;
+import j86.java.util.Vector;
+import j86.java.util.EventObject;
 
-import javax.naming.*;
-import javax.naming.event.*;
-import javax.naming.directory.SearchControls;
-import javax.naming.ldap.UnsolicitedNotificationListener;
-import javax.naming.ldap.UnsolicitedNotificationEvent;
-import javax.naming.ldap.UnsolicitedNotification;
+import j86.javax.naming.*;
+import j86.j86.javax.naming.event.*;
+import j86.j86.javax.naming.directory.SearchControls;
+import j86.j86.javax.naming.ldap.UnsolicitedNotificationListener;
+import j86.j86.javax.naming.ldap.UnsolicitedNotificationEvent;
+import j86.j86.javax.naming.ldap.UnsolicitedNotification;
 
 /**
  * This is a utility class that can be used by a context that supports

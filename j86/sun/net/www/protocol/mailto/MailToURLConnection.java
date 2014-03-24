@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.net.www.protocol.mailto;
+package j86.j86.j86.sun.net.www.protocol.mailto;
 
-import java.net.URL;
-import java.net.InetAddress;
-import java.net.SocketPermission;
-import java.io.*;
-import java.security.Permission;
-import sun.net.www.*;
-import sun.net.smtp.SmtpClient;
-import sun.net.www.ParseUtil;
+import j86.java.net.URL;
+import j86.java.net.InetAddress;
+import j86.java.net.SocketPermission;
+import j86.java.io.*;
+import j86.java.security.Permission;
+import j86.j86.sun.net.www.*;
+import j86.j86.sun.net.smtp.SmtpClient;
+import j86.j86.sun.net.www.ParseUtil;
 
 
 /**
@@ -71,7 +71,7 @@ public class MailToURLConnection extends URLConnection {
                 if (host == null) {
                     try {
                         host = InetAddress.getLocalHost().getHostName();
-                    } catch (java.net.UnknownHostException e) {
+                    } catch (j86.java.net.UnknownHostException e) {
                     }
                 }
                 str += "@" + host;

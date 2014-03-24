@@ -23,16 +23,16 @@
  * questions.
  */
 
-package com.sun.jndi.ldap;
+package j86.com.sun.jndi.ldap;
 
-import java.io.OutputStream;
-import javax.naming.InterruptedNamingException;
-import javax.naming.CommunicationException;
-import javax.naming.NamingException;
+import j86.java.io.OutputStream;
+import j86.javax.naming.InterruptedNamingException;
+import j86.javax.naming.CommunicationException;
+import j86.javax.naming.NamingException;
 
-import com.sun.jndi.ldap.pool.PoolCallback;
-import com.sun.jndi.ldap.pool.PooledConnection;
-import com.sun.jndi.ldap.pool.PooledConnectionFactory;
+import j86.j86.com.sun.jndi.ldap.pool.PoolCallback;
+import j86.j86.com.sun.jndi.ldap.pool.PooledConnection;
+import j86.j86.com.sun.jndi.ldap.pool.PooledConnectionFactory;
 
 /**
  * Creates an LdapClient. Encapsulates the parameters required to create

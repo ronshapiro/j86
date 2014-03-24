@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.awt.event;
+package j86.j86.java.awt.event;
 
-import java.awt.Container;
-import java.awt.Component;
+import j86.java.awt.Container;
+import j86.java.awt.Component;
 
 /**
  * A low-level event which indicates that a container's contents

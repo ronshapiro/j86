@@ -23,30 +23,30 @@
  * questions.
  */
 
-package com.sun.jmx.remote.security;
+package j86.com.sun.jmx.remote.security;
 
-import java.io.IOException;
-import java.security.AccessController;
-import java.security.Principal;
-import java.security.PrivilegedAction;
-import java.security.PrivilegedActionException;
-import java.security.PrivilegedExceptionAction;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Properties;
-import javax.management.remote.JMXPrincipal;
-import javax.management.remote.JMXAuthenticator;
-import javax.security.auth.AuthPermission;
-import javax.security.auth.Subject;
-import javax.security.auth.callback.*;
-import javax.security.auth.login.AppConfigurationEntry;
-import javax.security.auth.login.Configuration;
-import javax.security.auth.login.LoginContext;
-import javax.security.auth.login.LoginException;
-import javax.security.auth.spi.LoginModule;
-import com.sun.jmx.remote.util.ClassLogger;
-import com.sun.jmx.remote.util.EnvHelp;
+import j86.java.io.IOException;
+import j86.java.security.AccessController;
+import j86.java.security.Principal;
+import j86.java.security.PrivilegedAction;
+import j86.java.security.PrivilegedActionException;
+import j86.java.security.PrivilegedExceptionAction;
+import j86.java.util.Collections;
+import j86.java.util.HashMap;
+import j86.java.util.Map;
+import j86.java.util.Properties;
+import j86.j86.javax.management.remote.JMXPrincipal;
+import j86.j86.javax.management.remote.JMXAuthenticator;
+import j86.javax.security.auth.AuthPermission;
+import j86.javax.security.auth.Subject;
+import j86.j86.javax.security.auth.callback.*;
+import j86.j86.javax.security.auth.login.AppConfigurationEntry;
+import j86.j86.javax.security.auth.login.Configuration;
+import j86.j86.javax.security.auth.login.LoginContext;
+import j86.j86.javax.security.auth.login.LoginException;
+import j86.j86.javax.security.auth.spi.LoginModule;
+import j86.com.sun.jmx.remote.util.ClassLogger;
+import j86.com.sun.jmx.remote.util.EnvHelp;
 
 /**
  * <p>This class represents a
@@ -65,7 +65,7 @@ import com.sun.jmx.remote.util.EnvHelp;
  * {@link FileLoginModule} is configured (<code>FileLoginConfig</code>).</p>
  *
  * <p>To override the default configuration use the
- * <code>com.sun.management.jmxremote.login.config</code> management property
+ * <code>com.j86.j86.sun.management.jmxremote.login.config</code> management property
  * described in the JRE/lib/management/management.properties file.
  * Set this property to the name of a JAAS configuration entry and ensure that
  * the entry is loaded by the installed {@link Configuration}. In addition,
@@ -251,7 +251,7 @@ public final class JMXPluggableAuthenticator implements JMXAuthenticator {
     private static final String PASSWORD_FILE_PROP =
         "jmx.remote.x.password.file";
     private static final ClassLogger logger =
-        new ClassLogger("javax.management.remote.misc", LOGIN_CONFIG_NAME);
+        new ClassLogger("j86.j86.javax.management.remote.misc", LOGIN_CONFIG_NAME);
 
 /**
  * This callback handler supplies the username and password (which was
@@ -288,7 +288,7 @@ private final class JMXCallbackHandler implements CallbackHandler {
  * It is equivalent to the following textual configuration entry:
  * <pre>
  *     JMXPluggableAuthenticator {
- *         com.sun.jmx.remote.security.FileLoginModule required;
+ *         j86.com.sun.jmx.remote.security.FileLoginModule required;
  *     };
  * </pre>
  */

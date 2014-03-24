@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.net.www.protocol.http;
+package j86.j86.j86.sun.net.www.protocol.http;
 
-import java.net.URL;
+import j86.java.net.URL;
 
 /**
  * An interface for all objects that implement HTTP authentication.
@@ -35,8 +35,8 @@ import java.net.URL;
  *
  * @author David Brown
  *
- * @deprecated -- use java.net.Authenticator instead
- * @see java.net.Authenticator
+ * @deprecated -- use j86.java.net.Authenticator instead
+ * @see j86.java.net.Authenticator
  */
 //
 // REMIND:  Unless compatibility with sun.* API's from 1.2 to 2.0 is

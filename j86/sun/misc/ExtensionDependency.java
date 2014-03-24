@@ -23,26 +23,26 @@
  * questions.
  */
 
-package sun.misc;
+package j86.sun.misc;
 
-import java.io.File;
-import java.io.FilenameFilter;
-import java.io.IOException;
-import java.io.FileNotFoundException;
-import java.util.StringTokenizer;
-import java.util.Vector;
-import java.util.Enumeration;
-import java.util.jar.JarFile;
-import java.util.jar.Manifest;
-import java.util.jar.Attributes;
-import java.util.jar.Attributes.Name;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.security.PrivilegedExceptionAction;
-import java.security.PrivilegedActionException;
-import java.net.URL;
-import java.net.MalformedURLException;
-import sun.net.www.ParseUtil;
+import j86.java.io.File;
+import j86.java.io.FilenameFilter;
+import j86.java.io.IOException;
+import j86.java.io.FileNotFoundException;
+import j86.java.util.StringTokenizer;
+import j86.java.util.Vector;
+import j86.java.util.Enumeration;
+import j86.j86.java.util.jar.JarFile;
+import j86.j86.java.util.jar.Manifest;
+import j86.j86.java.util.jar.Attributes;
+import j86.j86.java.util.jar.Attributes.Name;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.security.PrivilegedExceptionAction;
+import j86.java.security.PrivilegedActionException;
+import j86.java.net.URL;
+import j86.java.net.MalformedURLException;
+import j86.j86.sun.net.www.ParseUtil;
 
 /**
  * <p>
@@ -430,8 +430,8 @@ public class ExtensionDependency {
      * </p>
      */
     private static File[] getExtDirs() {
-        String s = java.security.AccessController.doPrivileged(
-                new sun.security.action.GetPropertyAction("java.ext.dirs"));
+        String s = j86.java.security.AccessController.doPrivileged(
+                new j86.sun.security.action.GetPropertyAction("java.ext.dirs"));
 
         File[] dirs;
         if (s != null) {

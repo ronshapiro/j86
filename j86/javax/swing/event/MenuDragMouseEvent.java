@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.event;
+package j86.j86.javax.swing.event;
 
-import javax.swing.MenuElement;
-import javax.swing.MenuSelectionManager;
-import java.util.EventObject;
-import java.awt.event.MouseEvent;
-import java.awt.Component;
+import j86.javax.swing.MenuElement;
+import j86.javax.swing.MenuSelectionManager;
+import j86.java.util.EventObject;
+import j86.j86.java.awt.event.MouseEvent;
+import j86.java.awt.Component;
 
 
 /**
@@ -42,8 +42,8 @@ import java.awt.Component;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @author Georges Saab
  */
@@ -60,10 +60,10 @@ public class MenuDragMouseEvent extends MouseEvent {
      * @param source        the Component that originated the event
      *                      (typically <code>this</code>)
      * @param id            an int specifying the type of event, as defined
-     *                      in {@link java.awt.event.MouseEvent}
+     *                      in {@link j86.j86.java.awt.event.MouseEvent}
      * @param when          a long identifying the time the event occurred
      * @param modifiers     an int specifying any modifier keys held down,
-     *                      as specified in {@link java.awt.event.InputEvent}
+     *                      as specified in {@link j86.j86.java.awt.event.InputEvent}
      * @param x             an int specifying the horizontal position at which
      *                      the event occurred, in pixels
      * @param y             an int specifying the vertical position at which
@@ -74,7 +74,7 @@ public class MenuDragMouseEvent extends MouseEvent {
      * @param p             an array of MenuElement objects specifying a path
      *                        to a menu item affected by the drag
      * @param m             a MenuSelectionManager object that handles selections
-     * @see MouseEvent#MouseEvent(java.awt.Component, int, long, int, int, int, int, int, int, boolean, int)
+     * @see MouseEvent#MouseEvent(j86.java.awt.Component, int, long, int, int, int, int, int, int, boolean, int)
      */
     public MenuDragMouseEvent(Component source, int id, long when,
                               int modifiers, int x, int y, int clickCount,
@@ -93,10 +93,10 @@ public class MenuDragMouseEvent extends MouseEvent {
      * @param source        the Component that originated the event
      *                      (typically <code>this</code>)
      * @param id            an int specifying the type of event, as defined
-     *                      in {@link java.awt.event.MouseEvent}
+     *                      in {@link j86.j86.java.awt.event.MouseEvent}
      * @param when          a long identifying the time the event occurred
      * @param modifiers     an int specifying any modifier keys held down,
-     *                      as specified in {@link java.awt.event.InputEvent}
+     *                      as specified in {@link j86.j86.java.awt.event.InputEvent}
      * @param x             an int specifying the horizontal position at which
      *                      the event occurred, in pixels
      * @param y             an int specifying the vertical position at which
@@ -111,7 +111,7 @@ public class MenuDragMouseEvent extends MouseEvent {
      * @param p             an array of MenuElement objects specifying a path
      *                        to a menu item affected by the drag
      * @param m             a MenuSelectionManager object that handles selections
-     * @see MouseEvent#MouseEvent(java.awt.Component, int, long, int, int, int, int, int, int, boolean, int)
+     * @see MouseEvent#MouseEvent(j86.java.awt.Component, int, long, int, int, int, int, int, int, boolean, int)
      * @since 1.6
      */
     public MenuDragMouseEvent(Component source, int id, long when,

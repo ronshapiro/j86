@@ -22,20 +22,20 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.plaf.basic;
+package j86.j86.j86.javax.swing.plaf.basic;
 
-import java.awt.*;
-import java.awt.event.KeyEvent;
-import java.awt.event.FocusEvent;
-import java.awt.event.InputEvent;
-import java.beans.PropertyChangeEvent;
-import java.io.Reader;
-import javax.swing.*;
-import javax.swing.border.*;
-import javax.swing.event.*;
-import javax.swing.text.*;
-import javax.swing.plaf.*;
-import sun.swing.DefaultLookup;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.KeyEvent;
+import j86.j86.java.awt.event.FocusEvent;
+import j86.j86.java.awt.event.InputEvent;
+import j86.java.beans.PropertyChangeEvent;
+import j86.java.io.Reader;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.border.*;
+import j86.j86.javax.swing.event.*;
+import j86.j86.javax.swing.text.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.sun.swing.DefaultLookup;
 
 /**
  * Basis of a look and feel for a JTextField.
@@ -46,8 +46,8 @@ import sun.swing.DefaultLookup;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @author  Timothy Prinzing
  */
@@ -111,7 +111,7 @@ public class BasicTextFieldUI extends BasicTextUI {
      *
      * @throws NullPointerException {@inheritDoc}
      * @throws IllegalArgumentException {@inheritDoc}
-     * @see javax.swing.JComponent#getBaseline(int, int)
+     * @see j86.javax.swing.JComponent#getBaseline(int, int)
      * @since 1.6
      */
     public int getBaseline(JComponent c, int width, int height) {
@@ -152,7 +152,7 @@ public class BasicTextFieldUI extends BasicTextUI {
      * changes as the size changes.
      *
      * @throws NullPointerException {@inheritDoc}
-     * @see javax.swing.JComponent#getBaseline(int, int)
+     * @see j86.javax.swing.JComponent#getBaseline(int, int)
      * @since 1.6
      */
     public Component.BaselineResizeBehavior getBaselineResizeBehavior(
@@ -187,7 +187,7 @@ public class BasicTextFieldUI extends BasicTextUI {
             // ParagraphView's justification handling by doing nothing here.
         }
 
-        static boolean isLeftToRight( java.awt.Component c ) {
+        static boolean isLeftToRight( j86.java.awt.Component c ) {
             return c.getComponentOrientation().isLeftToRight();
         }
 

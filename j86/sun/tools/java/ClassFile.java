@@ -23,13 +23,13 @@
  * questions.
  */
 
-package sun.tools.java;
+package j86.sun.tools.java;
 
-import java.io.File;
-import java.io.InputStream;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.util.zip.*;
+import j86.java.io.File;
+import j86.java.io.InputStream;
+import j86.java.io.FileInputStream;
+import j86.java.io.IOException;
+import j86.j86.java.util.zip.*;
 
 /**
  * This class is used to represent a file loaded from the class path, and

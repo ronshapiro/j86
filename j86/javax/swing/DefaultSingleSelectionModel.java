@@ -23,11 +23,11 @@
  * questions.
  */
 
-package javax.swing;
+package j86.javax.swing;
 
-import javax.swing.event.*;
-import java.io.Serializable;
-import java.util.EventListener;
+import j86.j86.javax.swing.event.*;
+import j86.java.io.Serializable;
+import j86.java.util.EventListener;
 
 /**
  * A generic implementation of SingleSelectionModel.
@@ -38,8 +38,8 @@ import java.util.EventListener;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @author Dave Moore
  */
@@ -55,12 +55,12 @@ Serializable {
 
     private int index = -1;
 
-    // implements javax.swing.SingleSelectionModel
+    // implements j86.javax.swing.SingleSelectionModel
     public int getSelectedIndex() {
         return index;
     }
 
-    // implements javax.swing.SingleSelectionModel
+    // implements j86.javax.swing.SingleSelectionModel
     public void setSelectedIndex(int index) {
         if (this.index != index) {
             this.index = index;
@@ -68,12 +68,12 @@ Serializable {
         }
     }
 
-    // implements javax.swing.SingleSelectionModel
+    // implements j86.javax.swing.SingleSelectionModel
     public void clearSelection() {
         setSelectedIndex(-1);
     }
 
-    // implements javax.swing.SingleSelectionModel
+    // implements j86.javax.swing.SingleSelectionModel
     public boolean isSelected() {
         boolean ret = false;
         if (getSelectedIndex() != -1) {
@@ -155,7 +155,7 @@ Serializable {
      *
      * @param listenerType  the type of listeners requested;
      *          this parameter should specify an interface
-     *          that descends from <code>java.util.EventListener</code>
+     *          that descends from <code>j86.java.util.EventListener</code>
      * @return an array of all objects registered as
      *          <code><em>Foo</em>Listener</code>s
      *          on this model,
@@ -163,7 +163,7 @@ Serializable {
      *          listeners have been added
      * @exception ClassCastException if <code>listenerType</code> doesn't
      *          specify a class or interface that implements
-     *          <code>java.util.EventListener</code>
+     *          <code>j86.java.util.EventListener</code>
      *
      * @see #getChangeListeners
      *

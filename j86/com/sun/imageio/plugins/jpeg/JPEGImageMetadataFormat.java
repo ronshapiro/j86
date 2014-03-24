@@ -23,18 +23,18 @@
  * questions.
  */
 
-package com.sun.imageio.plugins.jpeg;
+package j86.com.sun.imageio.plugins.jpeg;
 
-import javax.imageio.metadata.IIOMetadataFormat;
-import javax.imageio.metadata.IIOMetadataFormatImpl;
-import javax.imageio.ImageTypeSpecifier;
+import j86.j86.javax.imageio.metadata.IIOMetadataFormat;
+import j86.j86.javax.imageio.metadata.IIOMetadataFormatImpl;
+import j86.javax.imageio.ImageTypeSpecifier;
 
-import java.awt.color.ICC_Profile;
-import java.awt.color.ColorSpace;
-import java.awt.image.ColorModel;
+import j86.j86.java.awt.color.ICC_Profile;
+import j86.j86.java.awt.color.ColorSpace;
+import j86.j86.j86.java.awt.image.ColorModel;
 
-import java.util.List;
-import java.util.ArrayList;
+import j86.java.util.List;
+import j86.java.util.ArrayList;
 
 public class JPEGImageMetadataFormat extends JPEGMetadataFormat {
 

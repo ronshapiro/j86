@@ -23,21 +23,21 @@
  * questions.
  */
 
-package java.security;
+package j86.java.security;
 
-import java.util.*;
-import java.io.ObjectStreamField;
-import java.io.ObjectOutputStream;
-import java.io.ObjectInputStream;
-import java.io.IOException;
+import j86.java.util.*;
+import j86.java.io.ObjectStreamField;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.IOException;
 
 /**
  * A UnresolvedPermissionCollection stores a collection
  * of UnresolvedPermission permissions.
  *
- * @see java.security.Permission
- * @see java.security.Permissions
- * @see java.security.UnresolvedPermission
+ * @see j86.java.security.Permission
+ * @see j86.java.security.Permissions
+ * @see j86.java.security.UnresolvedPermission
  *
  *
  * @author Roland Schemers
@@ -47,7 +47,7 @@ import java.io.IOException;
 
 final class UnresolvedPermissionCollection
 extends PermissionCollection
-implements java.io.Serializable
+implements j86.java.io.Serializable
 {
     /**
      * Key is permission type, value is a list of the UnresolvedPermissions
@@ -140,7 +140,7 @@ implements java.io.Serializable
     // private Hashtable permissions; // keyed on type
 
     /**
-     * @serialField permissions java.util.Hashtable
+     * @serialField permissions j86.java.util.Hashtable
      *     A table of the UnresolvedPermissions keyed on type, value is Vector
      *     of permissions
      */

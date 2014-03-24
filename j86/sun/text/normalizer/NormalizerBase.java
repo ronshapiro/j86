@@ -34,10 +34,10 @@
  *******************************************************************************
  */
 
-package sun.text.normalizer;
+package j86.j86.sun.text.normalizer;
 
-import java.text.CharacterIterator;
-import java.text.Normalizer;
+import j86.java.text.CharacterIterator;
+import j86.java.text.Normalizer;
 
 /**
  * Unicode Normalization
@@ -1566,8 +1566,8 @@ public final class NormalizerBase implements Cloneable {
     public static final int UNICODE_LATEST = 0x00;
 
     //
-    // public constructor and methods for java.text.Normalizer and
-    // sun.text.Normalizer
+    // public constructor and methods for j86.java.text.Normalizer and
+    // j86.sun.text.Normalizer
     //
 
     /**

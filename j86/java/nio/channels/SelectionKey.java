@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.nio.channels;
+package j86.j86.java.nio.channels;
 
-import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
-import java.io.IOException;
+import j86.j86.j86.java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
+import j86.java.io.IOException;
 
 
 /**

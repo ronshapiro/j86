@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.awt.geom;
+package j86.j86.sun.awt.geom;
 
 final class CurveLink {
     Curve curve;

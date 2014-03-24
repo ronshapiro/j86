@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.lang.ref;
+package j86.j86.java.lang.ref;
 
-import sun.misc.Cleaner;
+import j86.sun.misc.Cleaner;
 
 /**
  * Abstract base class for reference objects.  This class defines the

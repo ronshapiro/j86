@@ -23,21 +23,21 @@
  * questions.
  */
 
-package java.util;
+package j86.java.util;
 
-import java.io.Serializable;
-import java.io.IOException;
-import java.security.*;
-import java.util.Map;
-import java.util.HashMap;
-import java.util.Enumeration;
-import java.util.Hashtable;
-import java.util.Collections;
-import java.io.ObjectStreamField;
-import java.io.ObjectOutputStream;
-import java.io.ObjectInputStream;
-import java.io.IOException;
-import sun.security.util.SecurityConstants;
+import j86.java.io.Serializable;
+import j86.java.io.IOException;
+import j86.java.security.*;
+import j86.java.util.Map;
+import j86.java.util.HashMap;
+import j86.java.util.Enumeration;
+import j86.java.util.Hashtable;
+import j86.java.util.Collections;
+import j86.java.io.ObjectStreamField;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.IOException;
+import j86.sun.security.util.SecurityConstants;
 
 /**
  * This class is for property permissions.
@@ -75,11 +75,11 @@ import sun.security.util.SecurityConstants;
  * malevolent code sensitive information about the user environment
  * (the user's account name and home directory).
  *
- * @see java.security.BasicPermission
- * @see java.security.Permission
- * @see java.security.Permissions
- * @see java.security.PermissionCollection
- * @see java.lang.SecurityManager
+ * @see j86.java.security.BasicPermission
+ * @see j86.java.security.Permission
+ * @see j86.java.security.Permissions
+ * @see j86.java.security.PermissionCollection
+ * @see j86.java.lang.SecurityManager
  *
  *
  * @author Roland Schemers
@@ -386,7 +386,7 @@ public final class PropertyPermission extends BasicPermission {
      * to a stream. The actions are serialized, and the superclass
      * takes care of the name.
      */
-    private synchronized void writeObject(java.io.ObjectOutputStream s)
+    private synchronized void writeObject(j86.java.io.ObjectOutputStream s)
         throws IOException
     {
         // Write out the actions. The superclass takes care of the name
@@ -400,7 +400,7 @@ public final class PropertyPermission extends BasicPermission {
      * readObject is called to restore the state of the PropertyPermission from
      * a stream.
      */
-    private synchronized void readObject(java.io.ObjectInputStream s)
+    private synchronized void readObject(j86.java.io.ObjectInputStream s)
          throws IOException, ClassNotFoundException
     {
         // Read in the action, then initialize the rest
@@ -413,9 +413,9 @@ public final class PropertyPermission extends BasicPermission {
  * A PropertyPermissionCollection stores a set of PropertyPermission
  * permissions.
  *
- * @see java.security.Permission
- * @see java.security.Permissions
- * @see java.security.PermissionCollection
+ * @see j86.java.security.Permission
+ * @see j86.java.security.Permissions
+ * @see j86.java.security.PermissionCollection
  *
  *
  * @author Roland Schemers
@@ -597,7 +597,7 @@ final class PropertyPermissionCollection extends PermissionCollection
     //
     // private Hashtable permissions;
     /**
-     * @serialField permissions java.util.Hashtable
+     * @serialField permissions j86.java.util.Hashtable
      *     A table of the PropertyPermissions.
      * @serialField all_allowed boolean
      *     boolean saying if "*" is in the collection.

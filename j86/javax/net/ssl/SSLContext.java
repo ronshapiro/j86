@@ -23,11 +23,11 @@
  * questions.
  */
 
-package javax.net.ssl;
+package j86.j86.javax.net.ssl;
 
-import java.security.*;
+import j86.java.security.*;
 
-import sun.security.jca.GetInstance;
+import j86.sun.security.jca.GetInstance;
 
 /**
  * Instances of this class represent a secure socket protocol
@@ -148,7 +148,7 @@ public class SSLContext {
      *          specified protocol.
      * @exception NullPointerException if protocol is null.
      *
-     * @see java.security.Provider
+     * @see j86.java.security.Provider
      */
     public static SSLContext getInstance(String protocol)
             throws NoSuchAlgorithmException {
@@ -191,7 +191,7 @@ public class SSLContext {
      * @throws IllegalArgumentException if the provider name is null or empty.
      * @throws NullPointerException if protocol is null.
      *
-     * @see java.security.Provider
+     * @see j86.java.security.Provider
      */
     public static SSLContext getInstance(String protocol, String provider)
             throws NoSuchAlgorithmException, NoSuchProviderException {
@@ -228,7 +228,7 @@ public class SSLContext {
      * @throws IllegalArgumentException if the provider is null.
      * @throws NullPointerException if protocol is null.
      *
-     * @see java.security.Provider
+     * @see j86.java.security.Provider
      */
     public static SSLContext getInstance(String protocol, Provider provider)
             throws NoSuchAlgorithmException {
@@ -269,7 +269,7 @@ public class SSLContext {
      * <P>
      * Only the first instance of a particular key and/or trust manager
      * implementation type in the array is used.  (For example, only
-     * the first javax.net.ssl.X509KeyManager in the array will be used.)
+     * the first j86.j86.javax.net.ssl.X509KeyManager in the array will be used.)
      *
      * @param km the sources of authentication keys or null
      * @param tm the sources of peer authentication trust decisions or null

@@ -23,33 +23,33 @@
  * questions.
  */
 
-package sun.print;
+package j86.sun.print;
 
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.Image;
-import java.awt.Shape;
-import java.awt.Transparency;
+import j86.java.awt.Color;
+import j86.java.awt.Font;
+import j86.java.awt.Graphics;
+import j86.java.awt.Graphics2D;
+import j86.java.awt.Image;
+import j86.java.awt.Shape;
+import j86.java.awt.Transparency;
 
-import java.awt.font.FontRenderContext;
-import java.awt.font.TextLayout;
+import j86.j86.java.awt.font.FontRenderContext;
+import j86.j86.java.awt.font.TextLayout;
 
-import java.awt.geom.AffineTransform;
-import java.awt.geom.Area;
-import java.awt.geom.PathIterator;
-import java.awt.geom.Point2D;
-import java.awt.geom.Rectangle2D;
-import java.awt.geom.Line2D;
+import j86.j86.java.awt.geom.AffineTransform;
+import j86.j86.java.awt.geom.Area;
+import j86.j86.java.awt.geom.PathIterator;
+import j86.j86.java.awt.geom.Point2D;
+import j86.j86.java.awt.geom.Rectangle2D;
+import j86.j86.java.awt.geom.Line2D;
 
-import java.awt.image.BufferedImage;
-import sun.awt.image.ByteComponentRaster;
+import j86.j86.j86.java.awt.image.BufferedImage;
+import j86.j86.j86.sun.awt.image.ByteComponentRaster;
 
-import java.awt.print.PageFormat;
-import java.awt.print.Printable;
-import java.awt.print.PrinterException;
-import java.awt.print.PrinterJob;
+import j86.j86.java.awt.print.PageFormat;
+import j86.j86.java.awt.print.Printable;
+import j86.j86.java.awt.print.PrinterException;
+import j86.j86.java.awt.print.PrinterJob;
 
 /**
  * This class converts paths into PostScript
@@ -106,8 +106,8 @@ class PSPathGraphics extends PathGraphics {
      * @param       str      the string to be drawn.
      * @param       x        the <i>x</i> coordinate.
      * @param       y        the <i>y</i> coordinate.
-     * @see         java.awt.Graphics#drawBytes
-     * @see         java.awt.Graphics#drawChars
+     * @see         j86.java.awt.Graphics#drawBytes
+     * @see         j86.java.awt.Graphics#drawChars
      * @since       JDK1.0
      */
     public void drawString(String str, int x, int y) {
@@ -130,8 +130,8 @@ class PSPathGraphics extends PathGraphics {
      * @param x,&nbsp;y the coordinates where the <code>String</code>
      * should be rendered
      * @see #setPaint
-     * @see java.awt.Graphics#setColor
-     * @see java.awt.Graphics#setFont
+     * @see j86.java.awt.Graphics#setColor
+     * @see j86.java.awt.Graphics#setFont
      * @see #setTransform
      * @see #setComposite
      * @see #setClip

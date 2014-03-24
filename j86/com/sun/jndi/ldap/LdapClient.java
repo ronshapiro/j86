@@ -23,21 +23,21 @@
  * questions.
  */
 
-package com.sun.jndi.ldap;
+package j86.com.sun.jndi.ldap;
 
-import java.io.*;
-import java.util.Locale;
-import java.util.Vector;
-import java.util.Hashtable;
+import j86.java.io.*;
+import j86.java.util.Locale;
+import j86.java.util.Vector;
+import j86.java.util.Hashtable;
 
-import javax.naming.*;
-import javax.naming.directory.*;
-import javax.naming.ldap.*;
+import j86.javax.naming.*;
+import j86.j86.javax.naming.directory.*;
+import j86.j86.javax.naming.ldap.*;
 
-import com.sun.jndi.ldap.pool.PooledConnection;
-import com.sun.jndi.ldap.pool.PoolCallback;
-import com.sun.jndi.ldap.sasl.LdapSasl;
-import com.sun.jndi.ldap.sasl.SaslInputStream;
+import j86.j86.com.sun.jndi.ldap.pool.PooledConnection;
+import j86.j86.com.sun.jndi.ldap.pool.PoolCallback;
+import j86.j86.com.sun.jndi.ldap.sasl.LdapSasl;
+import j86.j86.com.sun.jndi.ldap.sasl.SaslInputStream;
 
 /**
  * LDAP (RFC-1777) and LDAPv3 (RFC-2251) compliant client
@@ -311,7 +311,7 @@ public final class LdapClient implements PooledConnection {
      */
     synchronized public LdapResult ldapBind(String dn, byte[]toServer,
         Control[] bindCtls, String auth, boolean pauseAfterReceipt)
-        throws java.io.IOException, NamingException {
+        throws j86.java.io.IOException, NamingException {
 
         ensureOpen();
 

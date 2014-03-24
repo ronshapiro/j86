@@ -24,12 +24,12 @@
  */
 
 /*
- * NOTE:  this file was copied from javax.net.ssl.X509TrustManager
+ * NOTE:  this file was copied from j86.j86.javax.net.ssl.X509TrustManager
  */
 
-package com.sun.net.ssl;
+package com.j86.sun.net.ssl;
 
-import java.security.cert.X509Certificate;
+import j86.j86.java.security.cert.X509Certificate;
 
 /**
  * Instance of this interface manage which X509 certificates
@@ -39,7 +39,7 @@ import java.security.cert.X509Certificate;
  * status checking or other means.
  *
  * @deprecated As of JDK 1.4, this implementation-specific class was
- *      replaced by {@link javax.net.ssl.X509TrustManager}.
+ *      replaced by {@link j86.j86.javax.net.ssl.X509TrustManager}.
  */
 @Deprecated
 public interface X509TrustManager extends TrustManager {

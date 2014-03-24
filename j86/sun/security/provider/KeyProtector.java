@@ -23,23 +23,23 @@
  * questions.
  */
 
-package sun.security.provider;
+package j86.sun.security.provider;
 
-import java.io.IOException;
-import java.io.UnsupportedEncodingException;
-import java.security.Key;
-import java.security.KeyStoreException;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-import java.security.SecureRandom;
-import java.security.UnrecoverableKeyException;
-import java.util.*;
+import j86.java.io.IOException;
+import j86.java.io.UnsupportedEncodingException;
+import j86.java.security.Key;
+import j86.java.security.KeyStoreException;
+import j86.java.security.MessageDigest;
+import j86.java.security.NoSuchAlgorithmException;
+import j86.java.security.SecureRandom;
+import j86.java.security.UnrecoverableKeyException;
+import j86.java.util.*;
 
-import sun.security.pkcs.PKCS8Key;
-import sun.security.pkcs.EncryptedPrivateKeyInfo;
-import sun.security.x509.AlgorithmId;
-import sun.security.util.ObjectIdentifier;
-import sun.security.util.DerValue;
+import j86.sun.security.pkcs.PKCS8Key;
+import j86.sun.security.pkcs.EncryptedPrivateKeyInfo;
+import j86.sun.security.x509.AlgorithmId;
+import j86.sun.security.util.ObjectIdentifier;
+import j86.sun.security.util.DerValue;
 
 /**
  * This is an implementation of a Sun proprietary, exportable algorithm
@@ -93,7 +93,7 @@ import sun.security.util.DerValue;
  * @author Jan Luehe
  *
  *
- * @see java.security.KeyStore
+ * @see j86.java.security.KeyStore
  * @see JavaKeyStore
  * @see KeyTool
  *

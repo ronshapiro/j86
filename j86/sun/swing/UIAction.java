@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.swing;
+package j86.sun.swing;
 
-import java.beans.PropertyChangeListener;
+import j86.java.beans.PropertyChangeListener;
 
-import javax.swing.Action;
+import j86.javax.swing.Action;
 
 /**
  * UIAction is the basis of all of basic's action classes that are used in
@@ -54,8 +54,8 @@ import javax.swing.Action;
  * <code>isEnabled(Component)</code>, and be aware that the passed in
  * <code>Component</code> may be null.
  *
- * @see com.sun.java.swing.ExtendedAction
- * @see javax.swing.Action
+ * @see j86.com.sun.java.swing.ExtendedAction
+ * @see j86.javax.swing.Action
  * @author Scott Violet
  */
 public abstract class UIAction implements Action {

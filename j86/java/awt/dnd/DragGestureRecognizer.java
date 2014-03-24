@@ -23,19 +23,19 @@
  * questions.
  */
 
-package java.awt.dnd;
+package j86.j86.java.awt.dnd;
 
-import java.awt.event.InputEvent;
-import java.awt.Component;
-import java.awt.Point;
+import j86.j86.java.awt.event.InputEvent;
+import j86.java.awt.Component;
+import j86.java.awt.Point;
 
-import java.util.TooManyListenersException;
-import java.util.ArrayList;
+import j86.java.util.TooManyListenersException;
+import j86.java.util.ArrayList;
 
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.Serializable;
+import j86.java.io.IOException;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.Serializable;
 
 /**
  * The <code>DragGestureRecognizer</code> is an
@@ -48,7 +48,7 @@ import java.io.Serializable;
  * subclass instance is obtained from the
  * {@link DragSource} associated with
  * a particular <code>Component</code>, or from the <code>Toolkit</code> object via its
- * {@link java.awt.Toolkit#createDragGestureRecognizer createDragGestureRecognizer()}
+ * {@link j86.java.awt.Toolkit#createDragGestureRecognizer createDragGestureRecognizer()}
  * method.
  * <p>
  * Once the <code>DragGestureRecognizer</code>
@@ -61,7 +61,7 @@ import java.io.Serializable;
  * on the <code>Component</code> as a drag initiating gesture, it will notify
  * its unicast <code>DragGestureListener</code> by
  * invoking its
- * {@link java.awt.dnd.DragGestureListener#dragGestureRecognized gestureRecognized()}
+ * {@link j86.j86.java.awt.dnd.DragGestureListener#dragGestureRecognized gestureRecognized()}
  * method.
  * <P>
  * When a concrete <code>DragGestureRecognizer</code>
@@ -76,9 +76,9 @@ import java.io.Serializable;
  * appropriate).
  * <P>
  * @author Laurence P. G. Cable
- * @see java.awt.dnd.DragGestureListener
- * @see java.awt.dnd.DragGestureEvent
- * @see java.awt.dnd.DragSource
+ * @see j86.j86.java.awt.dnd.DragGestureListener
+ * @see j86.j86.java.awt.dnd.DragGestureEvent
+ * @see j86.j86.java.awt.dnd.DragSource
  */
 
 public abstract class DragGestureRecognizer implements Serializable {
@@ -312,7 +312,7 @@ public abstract class DragGestureRecognizer implements Serializable {
      * @param dgl the <code>DragGestureListener</code> to register
      * with this <code>DragGestureRecognizer</code>.
      * <P>
-     * @throws java.util.TooManyListenersException if a
+     * @throws j86.java.util.TooManyListenersException if a
      * <code>DragGestureListener</code> has already been added.
      */
 

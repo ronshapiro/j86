@@ -20,7 +20,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.sun.org.apache.xml.internal.security.encryption;
+package j86.j86.com.sun.org.apache.xml.internal.security.encryption;
 
 /**
  * A container for <code>ds:Transform</code>s.
@@ -35,7 +35,7 @@ package com.sun.org.apache.xml.internal.security.encryption;
  * </xmp>
  *
  * @author Axl Mattheus
- * @see com.sun.org.apache.xml.internal.security.encryption.CipherReference
+ * @see j86.j86.com.sun.org.apache.xml.internal.security.encryption.CipherReference
  */
 public interface Transforms {
     /**
@@ -45,6 +45,6 @@ public interface Transforms {
      * <p>
      * <b>Note</b> This will be removed in future versions
      */
-    com.sun.org.apache.xml.internal.security.transforms.Transforms getDSTransforms();
+    j86.j86.com.sun.org.apache.xml.internal.security.transforms.Transforms getDSTransforms();
 
 }

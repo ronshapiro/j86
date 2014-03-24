@@ -25,9 +25,9 @@
 /*
  * $Id: DOMURIReference.java,v 1.5 2005/05/09 18:33:26 mullan Exp $
  */
-package javax.xml.crypto.dom;
+package j86.j86.javax.xml.crypto.dom;
 
-import javax.xml.crypto.URIReference;
+import j86.javax.xml.crypto.URIReference;
 import org.w3c.dom.Node;
 
 /**

@@ -23,11 +23,11 @@
  * questions.
  */
 
-package com.sun.media.sound;
+package j86.com.sun.media.sound;
 
-import javax.sound.midi.MidiUnavailableException;
-import javax.sound.midi.Receiver;
-import javax.sound.midi.Transmitter;
+import j86.javax.sound.midi.MidiUnavailableException;
+import j86.javax.sound.midi.Receiver;
+import j86.javax.sound.midi.Transmitter;
 
 
 

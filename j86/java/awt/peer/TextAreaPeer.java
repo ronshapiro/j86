@@ -22,10 +22,10 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.awt.peer;
+package j86.j86.java.awt.peer;
 
-import java.awt.Dimension;
-import java.awt.TextArea;
+import j86.java.awt.Dimension;
+import j86.java.awt.TextArea;
 
 /**
  * The peer interface for {@link TexTArea}.

@@ -56,21 +56,21 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-package jdk.internal.org.objectweb.asm.commons;
+package j86.j86.jdk.internal.org.objectweb.asm.commons;
 
-import java.io.ByteArrayOutputStream;
-import java.io.DataOutput;
-import java.io.DataOutputStream;
-import java.io.IOException;
-import java.security.MessageDigest;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
+import j86.java.io.ByteArrayOutputStream;
+import j86.java.io.DataOutput;
+import j86.java.io.DataOutputStream;
+import j86.java.io.IOException;
+import j86.java.security.MessageDigest;
+import j86.java.util.ArrayList;
+import j86.java.util.Arrays;
+import j86.java.util.Collection;
 
-import jdk.internal.org.objectweb.asm.ClassVisitor;
-import jdk.internal.org.objectweb.asm.FieldVisitor;
-import jdk.internal.org.objectweb.asm.MethodVisitor;
-import jdk.internal.org.objectweb.asm.Opcodes;
+import j86.jdk.internal.org.objectweb.asm.ClassVisitor;
+import j86.jdk.internal.org.objectweb.asm.FieldVisitor;
+import j86.jdk.internal.org.objectweb.asm.MethodVisitor;
+import j86.jdk.internal.org.objectweb.asm.Opcodes;
 
 /**
  * A {@link ClassVisitor} that adds a serial version unique identifier to a
@@ -92,7 +92,7 @@ import jdk.internal.org.objectweb.asm.Opcodes;
  * that reflect the class definition. The National Institute of Standards and
  * Technology (NIST) Secure Hash Algorithm (SHA-1) is used to compute a
  * signature for the stream. The first two 32-bit quantities are used to form a
- * 64-bit hash. A java.lang.DataOutputStream is used to convert primitive data
+ * 64-bit hash. A j86.java.lang.DataOutputStream is used to convert primitive data
  * types to a sequence of bytes. The values input to the stream are defined by
  * the Java Virtual Machine (VM) specification for classes.
  *
@@ -108,7 +108,7 @@ import jdk.internal.org.objectweb.asm.Opcodes;
  * 3. The descriptor of the field in UTF encoding
  * 5. If a class initializer exists, write out the following:
  * 1. The name of the method, &lt;clinit&gt;, in UTF encoding.
- * 2. The modifier of the method, java.lang.reflect.Modifier.STATIC,
+ * 2. The modifier of the method, j86.j86.j86.java.lang.reflect.Modifier.STATIC,
  * written as a 32-bit integer.
  * 3. The descriptor of the method, ()V, in UTF encoding.
  * 6. For each non-private constructor sorted by method name and signature:
@@ -424,7 +424,7 @@ public class SerialVersionUIDAdder extends ClassVisitor {
             /*
              * 5. If a class initializer exists, write out the following: 1. The
              * name of the method, <clinit>, in UTF encoding. 2. The modifier of
-             * the method, java.lang.reflect.Modifier.STATIC, written as a
+             * the method, j86.j86.j86.java.lang.reflect.Modifier.STATIC, written as a
              * 32-bit integer. 3. The descriptor of the method, ()V, in UTF
              * encoding.
              */

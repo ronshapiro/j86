@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.util;
+package j86.sun.util;
 
-import java.util.Enumeration;
-import java.util.Iterator;
-import java.util.NoSuchElementException;
-import java.util.Set;
+import j86.java.util.Enumeration;
+import j86.java.util.Iterator;
+import j86.java.util.NoSuchElementException;
+import j86.java.util.Set;
 
 /**
  * Implements an Enumeration that combines elements from a Set and

@@ -23,15 +23,15 @@
  * questions.
  */
 
-package com.sun.crypto.provider;
+package j86.com.sun.crypto.provider;
 
-import java.security.InvalidKeyException;
-import java.security.spec.KeySpec;
-import java.security.spec.InvalidKeySpecException;
-import javax.crypto.SecretKey;
-import javax.crypto.SecretKeyFactorySpi;
-import javax.crypto.spec.PBEKeySpec;
-import java.util.HashSet;
+import j86.java.security.InvalidKeyException;
+import j86.j86.java.security.spec.KeySpec;
+import j86.j86.java.security.spec.InvalidKeySpecException;
+import j86.javax.crypto.SecretKey;
+import j86.javax.crypto.SecretKeyFactorySpi;
+import j86.j86.javax.crypto.spec.PBEKeySpec;
+import j86.java.util.HashSet;
 
 /**
  * This class implements a key factory for PBE keys according to PKCS#5,
@@ -250,8 +250,8 @@ abstract class PBEKeyFactory extends SecretKeyFactorySpi {
                 PBEKeySpec ret = new PBEKeySpec(passwdChars);
                 // password char[] was cloned in PBEKeySpec constructor,
                 // so we can zero it out here
-                java.util.Arrays.fill(passwdChars, ' ');
-                java.util.Arrays.fill(passwdBytes, (byte)0x00);
+                j86.java.util.Arrays.fill(passwdChars, ' ');
+                j86.java.util.Arrays.fill(passwdBytes, (byte)0x00);
                 return ret;
             } else {
                 throw new InvalidKeySpecException("Invalid key spec");
@@ -283,7 +283,7 @@ abstract class PBEKeyFactory extends SecretKeyFactorySpi {
                 (key.getFormat().equalsIgnoreCase("RAW"))) {
 
                 // Check if key originates from this factory
-                if (key instanceof com.sun.crypto.provider.PBEKey) {
+                if (key instanceof j86.com.sun.crypto.provider.PBEKey) {
                     return key;
                 }
 

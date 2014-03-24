@@ -23,13 +23,13 @@
  * questions.
  */
 
-package java.awt.dnd.peer;
+package j86.j86.j86.java.awt.dnd.peer;
 
-import java.awt.Cursor;
-import java.awt.Image;
-import java.awt.Point;
-import java.awt.dnd.DragSourceContext;
-import java.awt.dnd.InvalidDnDOperationException;
+import j86.java.awt.Cursor;
+import j86.java.awt.Image;
+import j86.java.awt.Point;
+import j86.j86.java.awt.dnd.DragSourceContext;
+import j86.j86.java.awt.dnd.InvalidDnDOperationException;
 
 
 /**

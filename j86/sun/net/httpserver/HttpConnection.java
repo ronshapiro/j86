@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.net.httpserver;
+package j86.j86.sun.net.httpserver;
 
-import java.io.*;
-import javax.net.ssl.*;
-import java.nio.channels.*;
-import java.util.logging.Logger;
-import com.sun.net.httpserver.*;
-import com.sun.net.httpserver.spi.*;
+import j86.java.io.*;
+import j86.j86.javax.net.ssl.*;
+import j86.j86.java.nio.channels.*;
+import j86.j86.java.util.logging.Logger;
+import com.j86.j86.sun.net.httpserver.*;
+import j86.com.j86.j86.sun.net.httpserver.spi.*;
 
 /**
  * encapsulates all the connection specific state for a HTTP/S connection

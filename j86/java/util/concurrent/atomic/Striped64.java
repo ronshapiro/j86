@@ -33,10 +33,10 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package java.util.concurrent.atomic;
-import java.util.function.LongBinaryOperator;
-import java.util.function.DoubleBinaryOperator;
-import java.util.concurrent.ThreadLocalRandom;
+package j86.j86.j86.java.util.concurrent.atomic;
+import j86.j86.java.util.function.LongBinaryOperator;
+import j86.j86.java.util.function.DoubleBinaryOperator;
+import j86.j86.java.util.concurrent.ThreadLocalRandom;
 
 /**
  * A package-local class holding common representation and mechanics
@@ -53,7 +53,7 @@ abstract class Striped64 extends Number {
      * accessed directly by subclasses.
      *
      * Table entries are of class Cell; a variant of AtomicLong padded
-     * (via @sun.misc.Contended) to reduce cache contention. Padding
+     * (via @j86.sun.misc.Contended) to reduce cache contention. Padding
      * is overkill for most Atomics because they are usually
      * irregularly scattered in memory and thus don't interfere much
      * with each other. But Atomic objects residing in arrays will
@@ -117,7 +117,7 @@ abstract class Striped64 extends Number {
      * JVM intrinsics note: It would be possible to use a release-only
      * form of CAS here, if it were provided.
      */
-    @sun.misc.Contended static final class Cell {
+    @j86.sun.misc.Contended static final class Cell {
         volatile long value;
         Cell(long x) { value = x; }
         final boolean cas(long cmp, long val) {
@@ -125,11 +125,11 @@ abstract class Striped64 extends Number {
         }
 
         // Unsafe mechanics
-        private static final sun.misc.Unsafe UNSAFE;
+        private static final j86.sun.misc.Unsafe UNSAFE;
         private static final long valueOffset;
         static {
             try {
-                UNSAFE = sun.misc.Unsafe.getUnsafe();
+                UNSAFE = j86.sun.misc.Unsafe.getUnsafe();
                 Class<?> ak = Cell.class;
                 valueOffset = UNSAFE.objectFieldOffset
                     (ak.getDeclaredField("value"));
@@ -390,13 +390,13 @@ abstract class Striped64 extends Number {
     }
 
     // Unsafe mechanics
-    private static final sun.misc.Unsafe UNSAFE;
+    private static final j86.sun.misc.Unsafe UNSAFE;
     private static final long BASE;
     private static final long CELLSBUSY;
     private static final long PROBE;
     static {
         try {
-            UNSAFE = sun.misc.Unsafe.getUnsafe();
+            UNSAFE = j86.sun.misc.Unsafe.getUnsafe();
             Class<?> sk = Striped64.class;
             BASE = UNSAFE.objectFieldOffset
                 (sk.getDeclaredField("base"));

@@ -23,17 +23,17 @@
  * questions.
  */
 
-package sun.management;
+package j86.sun.management;
 
-import java.lang.management.ManagementFactory;
-import java.lang.management.MemoryPoolMXBean;
-import java.lang.management.MemoryUsage;
-import java.lang.management.MemoryType;
-import java.lang.management.MemoryManagerMXBean;
-import javax.management.openmbean.CompositeData;
-import javax.management.ObjectName;
+import j86.j86.java.lang.management.ManagementFactory;
+import j86.j86.java.lang.management.MemoryPoolMXBean;
+import j86.j86.java.lang.management.MemoryUsage;
+import j86.j86.java.lang.management.MemoryType;
+import j86.j86.java.lang.management.MemoryManagerMXBean;
+import j86.j86.javax.management.openmbean.CompositeData;
+import j86.javax.management.ObjectName;
 
-import static java.lang.management.MemoryNotificationInfo.*;
+import static j86.j86.java.lang.management.MemoryNotificationInfo.*;
 
 /**
  * Implementation class for a memory pool.

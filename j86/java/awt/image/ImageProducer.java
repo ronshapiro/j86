@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.awt.image;
+package j86.j86.j86.java.awt.image;
 
 /**
  * The interface for objects which can produce the image data for Images.

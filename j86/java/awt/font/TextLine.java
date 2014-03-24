@@ -28,41 +28,41 @@
  *
  */
 
-package java.awt.font;
+package j86.j86.java.awt.font;
 
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.Graphics2D;
-import java.awt.Rectangle;
-import java.awt.Shape;
-import java.awt.geom.AffineTransform;
-import java.awt.geom.GeneralPath;
-import java.awt.geom.Point2D;
-import java.awt.geom.Rectangle2D;
-import java.awt.im.InputMethodHighlight;
-import java.awt.image.BufferedImage;
-import java.text.Annotation;
-import java.text.AttributedCharacterIterator;
-import java.text.AttributedCharacterIterator.Attribute;
-import java.text.Bidi;
-import java.text.CharacterIterator;
-import java.util.Hashtable;
-import java.util.Map;
-import sun.font.AttributeValues;
-import sun.font.BidiUtils;
-import sun.font.CoreMetrics;
-import sun.font.Decoration;
-import sun.font.FontLineMetrics;
-import sun.font.FontResolver;
-import sun.font.GraphicComponent;
-import sun.font.LayoutPathImpl;
-import sun.font.LayoutPathImpl.EmptyPath;
-import sun.font.LayoutPathImpl.SegmentPathBuilder;
-import sun.font.TextLabelFactory;
-import sun.font.TextLineComponent;
-import sun.text.CodePointIterator;
+import j86.java.awt.Color;
+import j86.java.awt.Font;
+import j86.java.awt.Graphics2D;
+import j86.java.awt.Rectangle;
+import j86.java.awt.Shape;
+import j86.j86.java.awt.geom.AffineTransform;
+import j86.j86.java.awt.geom.GeneralPath;
+import j86.j86.java.awt.geom.Point2D;
+import j86.j86.java.awt.geom.Rectangle2D;
+import j86.j86.java.awt.im.InputMethodHighlight;
+import j86.j86.j86.java.awt.image.BufferedImage;
+import j86.java.text.Annotation;
+import j86.java.text.AttributedCharacterIterator;
+import j86.java.text.AttributedCharacterIterator.Attribute;
+import j86.java.text.Bidi;
+import j86.java.text.CharacterIterator;
+import j86.java.util.Hashtable;
+import j86.java.util.Map;
+import j86.sun.font.AttributeValues;
+import j86.sun.font.BidiUtils;
+import j86.sun.font.CoreMetrics;
+import j86.sun.font.Decoration;
+import j86.sun.font.FontLineMetrics;
+import j86.sun.font.FontResolver;
+import j86.sun.font.GraphicComponent;
+import j86.sun.font.LayoutPathImpl;
+import j86.sun.font.LayoutPathImpl.EmptyPath;
+import j86.sun.font.LayoutPathImpl.SegmentPathBuilder;
+import j86.sun.font.TextLabelFactory;
+import j86.sun.font.TextLineComponent;
+import j86.sun.text.CodePointIterator;
 
-import java.awt.geom.Line2D;
+import j86.j86.java.awt.geom.Line2D;
 
 final class TextLine {
 

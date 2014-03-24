@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.swing;
+package j86.sun.swing;
 
-import java.util.*;
-import java.lang.reflect.Array;
-import javax.swing.SwingUtilities;
+import j86.java.util.*;
+import j86.j86.j86.java.lang.reflect.Array;
+import j86.javax.swing.SwingUtilities;
 
 /**
  * An abstract class to be used in the cases where we need {@code Runnable}

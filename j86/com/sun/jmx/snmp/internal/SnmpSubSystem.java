@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.jmx.snmp.internal;
+package j86.j86.com.sun.jmx.snmp.internal;
 
-import com.sun.jmx.snmp.SnmpEngine;
-import com.sun.jmx.snmp.SnmpUnknownModelException;
-import java.util.Hashtable;
+import j86.com.sun.jmx.snmp.SnmpEngine;
+import j86.com.sun.jmx.snmp.SnmpUnknownModelException;
+import j86.java.util.Hashtable;
 /**
  * SNMP sub system interface. To allow engine framework integration, a sub system must implement this interface. A sub system is a model manager. Every model is identified by an ID. A sub system can retrieve a previously registered model using this ID.
  * <P> Every sub system is associated to its SNMP engine.

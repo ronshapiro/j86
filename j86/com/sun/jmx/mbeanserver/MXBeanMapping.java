@@ -23,12 +23,12 @@
  * questions.
  */
 
-package com.sun.jmx.mbeanserver;
+package j86.com.sun.jmx.mbeanserver;
 
-import java.io.InvalidObjectException;
-import java.lang.reflect.Type;
-import javax.management.openmbean.OpenDataException;
-import javax.management.openmbean.OpenType;
+import j86.java.io.InvalidObjectException;
+import j86.j86.j86.java.lang.reflect.Type;
+import j86.j86.javax.management.openmbean.OpenDataException;
+import j86.j86.javax.management.openmbean.OpenType;
 
 /**
  * <p>A custom mapping between Java types and Open types for use in MXBeans.

@@ -59,9 +59,9 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package java.time.temporal;
+package j86.j86.java.time.temporal;
 
-import java.time.DateTimeException;
+import j86.java.time.DateTimeException;
 
 /**
  * UnsupportedTemporalTypeException indicates that a ChronoField or ChronoUnit is

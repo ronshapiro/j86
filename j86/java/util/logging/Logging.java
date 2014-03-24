@@ -23,11 +23,11 @@
  * questions.
  */
 
-package java.util.logging;
+package j86.j86.java.util.logging;
 
-import java.util.Enumeration;
-import java.util.List;
-import java.util.ArrayList;
+import j86.java.util.Enumeration;
+import j86.java.util.List;
+import j86.java.util.ArrayList;
 
 /**
  * Logging is the implementation class of LoggingMXBean.
@@ -40,7 +40,7 @@ import java.util.ArrayList;
  * @author Mandy Chung
  * @since 1.5
  *
- * @see javax.management
+ * @see j86.javax.management
  * @see Logger
  * @see LogManager
  */

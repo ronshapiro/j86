@@ -24,9 +24,9 @@
  */
 
 
-package javax.management;
+package j86.javax.management;
 
-import java.util.concurrent.CopyOnWriteArrayList;  // for Javadoc
+import j86.j86.java.util.concurrent.CopyOnWriteArrayList;  // for Javadoc
 
 /**
  * <p>Interface implemented by an MBean that emits Notifications. It
@@ -91,7 +91,7 @@ public interface NotificationBroadcaster {
     public void addNotificationListener(NotificationListener listener,
                                         NotificationFilter filter,
                                         Object handback)
-            throws java.lang.IllegalArgumentException;
+            throws j86.java.lang.IllegalArgumentException;
 
     /**
      * Removes a listener from this MBean.  If the listener

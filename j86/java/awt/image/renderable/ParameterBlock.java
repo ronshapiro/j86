@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.awt.image.renderable;
-import java.awt.image.RenderedImage;
-import java.io.Serializable;
-import java.util.Vector;
+package j86.j86.j86.j86.java.awt.image.renderable;
+import j86.j86.j86.java.awt.image.RenderedImage;
+import j86.java.io.Serializable;
+import j86.java.util.Vector;
 
 /**
  * A <code>ParameterBlock</code> encapsulates all the information about sources and

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.awt.font;
+package j86.j86.java.awt.font;
 
 /**
  * The <code>OpenType</code> interface represents OpenType and

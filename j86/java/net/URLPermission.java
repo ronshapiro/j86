@@ -23,14 +23,14 @@
  * questions.
  */
 
-package java.net;
+package j86.java.net;
 
-import java.io.ObjectInputStream;
-import java.io.IOException;
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.security.Permission;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.IOException;
+import j86.java.util.List;
+import j86.java.util.ArrayList;
+import j86.java.util.Collections;
+import j86.java.security.Permission;
 
 /**
  * Represents permission to access a resource or set of resources defined by a
@@ -70,7 +70,7 @@ import java.security.Permission;
  * <p>
  * The <i>path</i> component comprises a sequence of path segments,
  * separated by '/' characters. <i>path</i> may also be empty. The path is specified
- * in a similar way to the path in {@link java.io.FilePermission}. There are
+ * in a similar way to the path in {@link j86.java.io.FilePermission}. There are
  * three different ways as the following examples show:
  * <table border>
  * <caption>URL Examples</caption>

@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.security.provider.certpath;
+package j86.j86.sun.security.provider.certpath;
 
-import sun.security.util.Debug;
-import java.security.PublicKey;
-import java.security.cert.CertPath;
-import java.security.cert.PKIXCertPathBuilderResult;
-import java.security.cert.PolicyNode;
-import java.security.cert.TrustAnchor;
+import j86.sun.security.util.Debug;
+import j86.java.security.PublicKey;
+import j86.j86.java.security.cert.CertPath;
+import j86.j86.java.security.cert.PKIXCertPathBuilderResult;
+import j86.j86.java.security.cert.PolicyNode;
+import j86.j86.java.security.cert.TrustAnchor;
 
 /**
  * This class represents the result of a SunCertPathBuilder build.

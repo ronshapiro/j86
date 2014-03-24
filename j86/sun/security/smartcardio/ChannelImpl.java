@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.security.smartcardio;
+package j86.sun.security.smartcardio;
 
-import java.nio.*;
-import java.security.AccessController;
+import j86.java.nio.*;
+import j86.java.security.AccessController;
 
-import javax.smartcardio.*;
+import j86.javax.smartcardio.*;
 
-import static sun.security.smartcardio.PCSC.*;
+import static j86.sun.security.smartcardio.PCSC.*;
 
-import sun.security.action.GetPropertyAction;
+import j86.sun.security.action.GetPropertyAction;
 
 /**
  * CardChannel implementation.
@@ -116,13 +116,13 @@ final class ChannelImpl extends CardChannel {
     }
 
     private final static boolean t0GetResponse =
-        getBooleanProperty("sun.security.smartcardio.t0GetResponse", true);
+        getBooleanProperty("j86.sun.security.smartcardio.t0GetResponse", true);
 
     private final static boolean t1GetResponse =
-        getBooleanProperty("sun.security.smartcardio.t1GetResponse", true);
+        getBooleanProperty("j86.sun.security.smartcardio.t1GetResponse", true);
 
     private final static boolean t1StripLe =
-        getBooleanProperty("sun.security.smartcardio.t1StripLe", false);
+        getBooleanProperty("j86.sun.security.smartcardio.t1StripLe", false);
 
     private static boolean getBooleanProperty(String name, boolean def) {
         String val = AccessController.doPrivileged(new GetPropertyAction(name));

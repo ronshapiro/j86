@@ -23,38 +23,38 @@
  * questions.
  */
 
-package javax.swing;
+package j86.javax.swing;
 
 
-import javax.swing.plaf.ComponentUI;
-import javax.swing.border.*;
-import javax.swing.event.SwingPropertyChangeSupport;
+import j86.j86.javax.swing.plaf.ComponentUI;
+import j86.j86.javax.swing.border.*;
+import j86.j86.javax.swing.event.SwingPropertyChangeSupport;
 
-import java.lang.reflect.*;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Enumeration;
-import java.util.Hashtable;
-import java.util.ResourceBundle;
-import java.util.ResourceBundle.Control;
-import java.util.Locale;
-import java.util.Vector;
-import java.util.MissingResourceException;
-import java.awt.Font;
-import java.awt.Color;
-import java.awt.Insets;
-import java.awt.Dimension;
-import java.lang.reflect.Method;
-import java.beans.PropertyChangeListener;
-import java.beans.PropertyChangeEvent;
-import java.security.AccessController;
-import java.security.AccessControlContext;
-import java.security.PrivilegedAction;
+import j86.j86.j86.java.lang.reflect.*;
+import j86.java.util.HashMap;
+import j86.java.util.Map;
+import j86.java.util.Enumeration;
+import j86.java.util.Hashtable;
+import j86.java.util.ResourceBundle;
+import j86.java.util.ResourceBundle.Control;
+import j86.java.util.Locale;
+import j86.java.util.Vector;
+import j86.java.util.MissingResourceException;
+import j86.java.awt.Font;
+import j86.java.awt.Color;
+import j86.java.awt.Insets;
+import j86.java.awt.Dimension;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.beans.PropertyChangeListener;
+import j86.java.beans.PropertyChangeEvent;
+import j86.java.security.AccessController;
+import j86.java.security.AccessControlContext;
+import j86.java.security.PrivilegedAction;
 
-import sun.reflect.misc.MethodUtil;
-import sun.reflect.misc.ReflectUtil;
-import sun.swing.SwingUtilities2;
-import sun.util.CoreResourceBundleControl;
+import j86.j86.sun.reflect.misc.MethodUtil;
+import j86.j86.sun.reflect.misc.ReflectUtil;
+import j86.sun.swing.SwingUtilities2;
+import j86.sun.util.CoreResourceBundleControl;
 
 /**
  * A table of defaults for Swing components.  Applications can set/get
@@ -66,8 +66,8 @@ import sun.util.CoreResourceBundleControl;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @see UIManager
  * @author Hans Muller
@@ -103,7 +103,7 @@ public class UIDefaults extends Hashtable<Object,Object>
      *
      * @param initialCapacity   the initial capacity of the defaults table
      * @param loadFactor        the load factor of the defaults table
-     * @see java.util.Hashtable
+     * @see j86.java.util.Hashtable
      * @since 1.6
      */
     public UIDefaults(int initialCapacity, float loadFactor) {
@@ -154,7 +154,7 @@ public class UIDefaults extends Hashtable<Object,Object>
      * @return the value for <code>key</code>
      * @see LazyValue
      * @see ActiveValue
-     * @see java.util.Hashtable#get
+     * @see j86.java.util.Hashtable#get
      * @see #getDefaultLocale
      * @see #addResourceBundle
      * @since 1.4
@@ -258,7 +258,7 @@ public class UIDefaults extends Hashtable<Object,Object>
      * @return the value for <code>key</code>
      * @see LazyValue
      * @see ActiveValue
-     * @see java.util.Hashtable#get
+     * @see j86.java.util.Hashtable#get
      * @see #addResourceBundle
      * @since 1.4
      */
@@ -341,7 +341,7 @@ public class UIDefaults extends Hashtable<Object,Object>
      *          that key
      * @return the previous <code>Object</code> value, or <code>null</code>
      * @see #putDefaults
-     * @see java.util.Hashtable#put
+     * @see j86.java.util.Hashtable#put
      */
     public Object put(Object key, Object value) {
         Object oldValue = (value == null) ? super.remove(key) : super.put(key, value);
@@ -361,7 +361,7 @@ public class UIDefaults extends Hashtable<Object,Object>
      *
      * @param keyValueList  an array of key/value pairs
      * @see #put
-     * @see java.util.Hashtable#put
+     * @see j86.java.util.Hashtable#put
      */
     public void putDefaults(Object[] keyValueList) {
         for(int i = 0, max = keyValueList.length; i < max; i += 2) {
@@ -789,7 +789,7 @@ public class UIDefaults extends Hashtable<Object,Object>
      * is changed.
      *
      * @param listener  the <code>PropertyChangeListener</code> to be added
-     * @see java.beans.PropertyChangeSupport
+     * @see j86.java.beans.PropertyChangeSupport
      */
     public synchronized void addPropertyChangeListener(PropertyChangeListener listener) {
         if (changeSupport == null) {
@@ -805,7 +805,7 @@ public class UIDefaults extends Hashtable<Object,Object>
      * for all properties.
      *
      * @param listener  the <code>PropertyChangeListener</code> to be removed
-     * @see java.beans.PropertyChangeSupport
+     * @see j86.java.beans.PropertyChangeSupport
      */
     public synchronized void removePropertyChangeListener(PropertyChangeListener listener) {
         if (changeSupport != null) {
@@ -840,7 +840,7 @@ public class UIDefaults extends Hashtable<Object,Object>
      *          that was changed
      * @param oldValue  the old value of the property
      * @param newValue  the new value of the property
-     * @see java.beans.PropertyChangeSupport
+     * @see j86.java.beans.PropertyChangeSupport
      */
     protected void firePropertyChange(String propertyName, Object oldValue, Object newValue) {
         if (changeSupport != null) {
@@ -856,7 +856,7 @@ public class UIDefaults extends Hashtable<Object,Object>
      * bundle is searched first.
      *
      * @param bundleName  the base name of the resource bundle to be added
-     * @see java.util.ResourceBundle
+     * @see j86.java.util.ResourceBundle
      * @see #removeResourceBundle
      * @since 1.4
      */
@@ -879,7 +879,7 @@ public class UIDefaults extends Hashtable<Object,Object>
      * searched for localized defaults.
      *
      * @param bundleName  the base name of the resource bundle to be removed
-     * @see java.util.ResourceBundle
+     * @see j86.java.util.ResourceBundle
      * @see #addResourceBundle
      * @since 1.4
      */
@@ -1140,11 +1140,11 @@ public class UIDefaults extends Hashtable<Object,Object>
                     /* PENDING(ges): At present only the primitive types
                        used are handled correctly; this should eventually
                        handle all primitive types */
-                    if (args[i] instanceof java.lang.Integer) {
+                    if (args[i] instanceof j86.java.lang.Integer) {
                         types[i]=Integer.TYPE;
-                    } else if (args[i] instanceof java.lang.Boolean) {
+                    } else if (args[i] instanceof j86.java.lang.Boolean) {
                         types[i]=Boolean.TYPE;
-                    } else if (args[i] instanceof javax.swing.plaf.ColorUIResource) {
+                    } else if (args[i] instanceof j86.j86.javax.swing.plaf.ColorUIResource) {
                         /* PENDING(ges) Currently the Reflection APIs do not
                            search superclasses of parameters supplied for
                            constructor/method lookup.  Since we only have
@@ -1153,7 +1153,7 @@ public class UIDefaults extends Hashtable<Object,Object>
                            of mechanism for this.  Eventually this will
                            probably need to handle the general case as well.
                            */
-                        types[i]=java.awt.Color.class;
+                        types[i]=j86.java.awt.Color.class;
                     } else {
                         types[i]=args[i].getClass();
                     }

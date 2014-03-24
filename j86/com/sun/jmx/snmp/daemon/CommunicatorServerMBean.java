@@ -24,7 +24,7 @@
  */
 
 
-package com.sun.jmx.snmp.daemon;
+package j86.j86.j86.com.sun.jmx.snmp.daemon;
 
 
 
@@ -158,10 +158,10 @@ public interface CommunicatorServerMBean {
      *
      * @param port The port number used by this <CODE>CommunicatorServer</CODE>.
      *
-     * @exception java.lang.IllegalStateException This method has been invoked
+     * @exception j86.java.lang.IllegalStateException This method has been invoked
      * while the communicator was ONLINE or STARTING.
      */
-    public void setPort(int port) throws java.lang.IllegalStateException ;
+    public void setPort(int port) throws j86.java.lang.IllegalStateException ;
 
     /**
      * Gets the protocol being used by this <CODE>CommunicatorServer</CODE>.

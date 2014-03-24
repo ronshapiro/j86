@@ -23,17 +23,17 @@
  * questions.
  */
 
-package javax.crypto;
+package j86.javax.crypto;
 
-import java.io.*;
-import java.util.Enumeration;
-import java.util.Hashtable;
-import java.util.Vector;
-import static java.util.Locale.ENGLISH;
+import j86.java.io.*;
+import j86.java.util.Enumeration;
+import j86.java.util.Hashtable;
+import j86.java.util.Vector;
+import static j86.java.util.Locale.ENGLISH;
 
-import java.security.GeneralSecurityException;
-import java.security.spec.AlgorithmParameterSpec;
-import java.lang.reflect.*;
+import j86.java.security.GeneralSecurityException;
+import j86.j86.java.security.spec.AlgorithmParameterSpec;
+import j86.j86.j86.java.lang.reflect.*;
 
 /**
  * JCE has two pairs of jurisdiction policy files: one represents U.S. export
@@ -41,8 +41,8 @@ import java.lang.reflect.*;
  * JCE will be used.
  *
  * The jurisdiction policy file has the same syntax as JDK policy files except
- * that JCE has new permission classes called javax.crypto.CryptoPermission
- * and javax.crypto.CryptoAllPermission.
+ * that JCE has new permission classes called j86.javax.crypto.CryptoPermission
+ * and j86.javax.crypto.CryptoAllPermission.
  *
  * The format of a permission entry in the jurisdiction policy file is:
  *
@@ -53,11 +53,11 @@ import java.lang.reflect.*;
  *
  * @author Sharon Liu
  *
- * @see java.security.Permissions
- * @see java.security.spec.AlgorithmParameterSpec
- * @see javax.crypto.CryptoPermission
- * @see javax.crypto.CryptoAllPermission
- * @see javax.crypto.CryptoPermissions
+ * @see j86.java.security.Permissions
+ * @see j86.j86.java.security.spec.AlgorithmParameterSpec
+ * @see j86.javax.crypto.CryptoPermission
+ * @see j86.javax.crypto.CryptoAllPermission
+ * @see j86.javax.crypto.CryptoPermissions
  * @since 1.4
  */
 
@@ -188,7 +188,7 @@ final class CryptoPolicyParser {
         match("Permission");
         e.cryptoPermission = match("permission type");
 
-        if (e.cryptoPermission.equals("javax.crypto.CryptoAllPermission")) {
+        if (e.cryptoPermission.equals("j86.javax.crypto.CryptoAllPermission")) {
             // Done with the CryptoAllPermission entry.
             e.alg = CryptoAllPermission.ALG_NAME;
             e.maxKeySize = Integer.MAX_VALUE;
@@ -466,7 +466,7 @@ final class CryptoPolicyParser {
             while (permEnum.hasMoreElements()) {
                 CryptoPermissionEntry pe = permEnum.nextElement();
                 if (pe.cryptoPermission.equals(
-                                        "javax.crypto.CryptoAllPermission")) {
+                                        "j86.javax.crypto.CryptoAllPermission")) {
                     result.addElement(CryptoAllPermission.INSTANCE);
                 } else {
                     if (pe.checkParam) {
@@ -532,14 +532,14 @@ final class CryptoPolicyParser {
      * For example, the entry
      * <pre>
      *      grant {
-     *       permission javax.crypto.CryptoPermission "DES", 56;
+     *       permission j86.javax.crypto.CryptoPermission "DES", 56;
      *      };
      *
      * </pre>
      * is represented internally
      * <pre>
      *
-     * pe = new CryptoPermissionEntry("javax.crypto.CryptoPermission",
+     * pe = new CryptoPermissionEntry("j86.javax.crypto.CryptoPermission",
      *                           "DES", 56);
      *
      * ge = new GrantEntry();
@@ -548,9 +548,9 @@ final class CryptoPolicyParser {
      *
      * </pre>
      *
-     * @see java.security.Permission
-     * @see javax.crypto.CryptoPermission
-     * @see javax.crypto.CryptoPermissions
+     * @see j86.java.security.Permission
+     * @see j86.javax.crypto.CryptoPermission
+     * @see j86.javax.crypto.CryptoPermissions
      */
 
     private static class GrantEntry {
@@ -592,18 +592,18 @@ final class CryptoPolicyParser {
      * <p>
      * For example, the entry
      * <pre>
-     *     permission javax.crypto.CryptoPermission "DES", 56;
+     *     permission j86.javax.crypto.CryptoPermission "DES", 56;
      * </pre>
      * is represented internally
      * <pre>
      *
-     * pe = new CryptoPermissionEntry("javax.crypto.cryptoPermission",
+     * pe = new CryptoPermissionEntry("j86.javax.crypto.cryptoPermission",
      *                           "DES", 56);
      * </pre>
      *
-     * @see java.security.Permissions
-     * @see javax.crypto.CryptoPermission
-     * @see javax.crypto.CryptoAllPermission
+     * @see j86.java.security.Permissions
+     * @see j86.javax.crypto.CryptoPermission
+     * @see j86.javax.crypto.CryptoAllPermission
      */
 
     private static class CryptoPermissionEntry {

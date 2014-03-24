@@ -23,13 +23,13 @@
  * questions.
  */
 
-package sun.security.x509;
+package j86.sun.security.x509;
 
-import java.io.*;
-import java.util.*;
-import java.security.*;
+import j86.java.io.*;
+import j86.java.util.*;
+import j86.java.security.*;
 
-import sun.security.util.*;
+import j86.sun.security.util.*;
 
 
 /**
@@ -249,7 +249,7 @@ public class AlgorithmId implements Serializable, DerEncoder {
 
     /**
      * Returns the DER encoded parameter, which can then be
-     * used to initialize java.security.AlgorithmParamters.
+     * used to initialize j86.java.security.AlgorithmParamters.
      *
      * @return DER encoded parameters, or null not present.
      */

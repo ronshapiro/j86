@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.reflect;
+package j86.sun.reflect;
 
 /** <P> MagicAccessorImpl (named for parity with FieldAccessorImpl and
     others, not because it actually implements an interface) is a
@@ -32,7 +32,7 @@ package sun.reflect;
     fields and methods of other classes. It is used to hold the code
     for dynamically-generated FieldAccessorImpl and MethodAccessorImpl
     subclasses. (Use of the word "unsafe" was avoided in this class's
-    name to avoid confusion with {@link sun.misc.Unsafe}.) </P>
+    name to avoid confusion with {@link j86.sun.misc.Unsafe}.) </P>
 
     <P> The bug fix for 4486457 also necessitated disabling
     verification for this class and all subclasses, as opposed to just

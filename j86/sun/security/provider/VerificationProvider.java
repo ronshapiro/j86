@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.security.provider;
+package j86.sun.security.provider;
 
-import java.util.*;
-import java.security.*;
+import j86.java.util.*;
+import j86.java.security.*;
 
-import sun.security.action.PutAllAction;
+import j86.sun.security.action.PutAllAction;
 
-import sun.security.rsa.SunRsaSignEntries;
+import j86.sun.security.rsa.SunRsaSignEntries;
 
 /**
  * Provider used for verification of signed JAR files *if* the Sun and
@@ -51,8 +51,8 @@ public final class VerificationProvider extends Provider {
     static {
         boolean b;
         try {
-            Class.forName("sun.security.provider.Sun");
-            Class.forName("sun.security.rsa.SunRsaSign");
+            Class.forName("j86.sun.security.provider.Sun");
+            Class.forName("j86.sun.security.rsa.SunRsaSign");
             b = false;
         } catch (ClassNotFoundException e) {
             b = true;

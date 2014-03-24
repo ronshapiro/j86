@@ -30,9 +30,9 @@
  * at JavaSoft/Sun.
  */
 
-package com.sun.tools.hat.internal.parser;
+package j86.j86.com.sun.tools.hat.internal.parser;
 
-import java.io.IOException;
+import j86.java.io.IOException;
 
 /**
  * Positionable read only buffer

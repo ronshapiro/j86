@@ -23,20 +23,20 @@
  * questions.
  */
 
-package com.sun.rowset.internal;
+package j86.j86.com.sun.rowset.internal;
 
-import java.sql.*;
-import javax.sql.*;
-import java.io.*;
+import j86.java.sql.*;
+import j86.javax.sql.*;
+import j86.java.io.*;
 
 import org.xml.sax.*;
 import org.xml.sax.helpers.*;
 import javax.xml.parsers.*;
 
-import com.sun.rowset.*;
-import java.text.MessageFormat;
-import javax.sql.rowset.*;
-import javax.sql.rowset.spi.*;
+import j86.com.sun.rowset.*;
+import j86.java.text.MessageFormat;
+import j86.j86.javax.sql.rowset.*;
+import j86.j86.j86.javax.sql.rowset.spi.*;
 
 /**
  * An implementation of the <code>XmlReader</code> interface, which
@@ -59,7 +59,7 @@ public class WebRowSetXmlReader implements XmlReader, Serializable {
 
     /**
      * Parses the given <code>WebRowSet</code> object, getting its input from
-     * the given <code>java.io.Reader</code> object.  The parser will send
+     * the given <code>j86.java.io.Reader</code> object.  The parser will send
      * notifications of parse events to the rowset's
      * <code>XmlReaderDocHandler</code>, which will build the rowset as
      * an XML document.
@@ -73,14 +73,14 @@ public class WebRowSetXmlReader implements XmlReader, Serializable {
      * @param caller the <code>WebRowSet</code> object to be parsed, whose
      *        <code>xmlReader</code> field must contain a reference to
      *        this <code>XmlReader</code> object
-     * @param reader the <code>java.io.Reader</code> object from which
+     * @param reader the <code>j86.java.io.Reader</code> object from which
      *        the parser will get its input
      * @exception SQLException if a database access error occurs or
      *            this <code>WebRowSetXmlReader</code> object is not the
      *            reader for the given rowset
      * @see XmlReaderContentHandler
      */
-    public void readXML(WebRowSet caller, java.io.Reader reader) throws SQLException {
+    public void readXML(WebRowSet caller, j86.java.io.Reader reader) throws SQLException {
         try {
             // Crimson Parser(as in J2SE 1.4.1 is NOT able to handle
             // Reader(s)(FileReader).
@@ -136,12 +136,12 @@ public class WebRowSetXmlReader implements XmlReader, Serializable {
 
     /**
      * Parses the given <code>WebRowSet</code> object, getting its input from
-     * the given <code>java.io.InputStream</code> object.  The parser will send
+     * the given <code>j86.java.io.InputStream</code> object.  The parser will send
      * notifications of parse events to the rowset's
      * <code>XmlReaderDocHandler</code>, which will build the rowset as
      * an XML document.
      * <P>
-     * Using streams is a much faster way than using <code>java.io.Reader</code>
+     * Using streams is a much faster way than using <code>j86.java.io.Reader</code>
      * <P>
      * This method is called internally by the method
      * <code>WebRowSet.readXml</code>.
@@ -152,14 +152,14 @@ public class WebRowSetXmlReader implements XmlReader, Serializable {
      * @param caller the <code>WebRowSet</code> object to be parsed, whose
      *        <code>xmlReader</code> field must contain a reference to
      *        this <code>XmlReader</code> object
-     * @param iStream the <code>java.io.InputStream</code> object from which
+     * @param iStream the <code>j86.java.io.InputStream</code> object from which
      *        the parser will get its input
      * @throws SQLException if a database access error occurs or
      *            this <code>WebRowSetXmlReader</code> object is not the
      *            reader for the given rowset
      * @see XmlReaderContentHandler
      */
-    public void readXML(WebRowSet caller, java.io.InputStream iStream) throws SQLException {
+    public void readXML(WebRowSet caller, j86.java.io.InputStream iStream) throws SQLException {
         try {
             InputSource is = new InputSource(iStream);
             DefaultHandler dh = new XmlErrorHandler();

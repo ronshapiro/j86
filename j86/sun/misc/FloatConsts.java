@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.misc;
+package j86.sun.misc;
 
 /**
  * This class contains additional constants documenting limits of the
@@ -38,11 +38,11 @@ public class FloatConsts {
      */
     private FloatConsts() {}
 
-    public static final float POSITIVE_INFINITY = java.lang.Float.POSITIVE_INFINITY;
-    public static final float NEGATIVE_INFINITY = java.lang.Float.NEGATIVE_INFINITY;
-    public static final float NaN = java.lang.Float.NaN;
-    public static final float MAX_VALUE = java.lang.Float.MAX_VALUE;
-    public static final float MIN_VALUE = java.lang.Float.MIN_VALUE;
+    public static final float POSITIVE_INFINITY = j86.java.lang.Float.POSITIVE_INFINITY;
+    public static final float NEGATIVE_INFINITY = j86.java.lang.Float.NEGATIVE_INFINITY;
+    public static final float NaN = j86.java.lang.Float.NaN;
+    public static final float MAX_VALUE = j86.java.lang.Float.MAX_VALUE;
+    public static final float MIN_VALUE = j86.java.lang.Float.MIN_VALUE;
 
     /**
      * A constant holding the smallest positive normal value of type

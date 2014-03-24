@@ -23,25 +23,25 @@
  * questions.
  */
 
-package com.sun.jdi.request;
+package j86.j86.com.sun.jdi.request;
 
-import com.sun.jdi.*;
+import j86.com.sun.jdi.*;
 
 /**
  * Request for notification when a class is prepared in the target VM.
  * When an enabled ClassPrepareRequest is satisfied, an
- * {@link com.sun.jdi.event.EventSet event set} containing a
- * {@link com.sun.jdi.event.ClassPrepareEvent ClassPrepareEvent}
+ * {@link j86.j86.com.sun.jdi.event.EventSet event set} containing a
+ * {@link j86.j86.com.sun.jdi.event.ClassPrepareEvent ClassPrepareEvent}
  * will be placed on the
- * {@link com.sun.jdi.event.EventQueue EventQueue}.
+ * {@link j86.j86.com.sun.jdi.event.EventQueue EventQueue}.
  * The collection of existing ClassPrepareRequests is
  * managed by the {@link EventRequestManager}
  * <p>
  * Class preparation is defined in the Java Virtual Machine
  * Specification.
  *
- * @see com.sun.jdi.event.ClassPrepareEvent
- * @see com.sun.jdi.event.EventQueue
+ * @see j86.j86.com.sun.jdi.event.ClassPrepareEvent
+ * @see j86.j86.com.sun.jdi.event.EventQueue
  * @see EventRequestManager
  *
  * @author Robert Field
@@ -114,7 +114,7 @@ public interface ClassPrepareRequest extends EventRequest {
      * to determine if the operation is supported.
      * @since 1.6
      * @param sourceNamePattern the pattern string to filter for.
-     * @throws java.lang.UnsupportedOperationException if
+     * @throws j86.java.lang.UnsupportedOperationException if
      * the target virtual machine does not support this
      * operation.
      * @throws InvalidRequestStateException if this request is currently

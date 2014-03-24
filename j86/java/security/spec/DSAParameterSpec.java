@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.security.spec;
+package j86.j86.java.security.spec;
 
-import java.math.BigInteger;
+import j86.java.math.BigInteger;
 
 /**
  * This class specifies the set of parameters used with the DSA algorithm.
@@ -39,7 +39,7 @@ import java.math.BigInteger;
  */
 
 public class DSAParameterSpec implements AlgorithmParameterSpec,
-java.security.interfaces.DSAParams {
+j86.j86.java.security.interfaces.DSAParams {
 
     BigInteger p;
     BigInteger q;

@@ -22,17 +22,17 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text.html;
+package j86.j86.j86.javax.swing.text.html;
 
-import java.awt.*;
-import java.util.*;
-import java.net.*;
-import java.io.*;
-import javax.swing.*;
-import javax.swing.text.*;
-import javax.swing.event.*;
+import j86.java.awt.*;
+import j86.java.util.*;
+import j86.java.net.*;
+import j86.java.io.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.text.*;
+import j86.j86.javax.swing.event.*;
 
-import sun.swing.text.html.FrameEditorPaneTag;
+import j86.j86.j86.sun.swing.text.html.FrameEditorPaneTag;
 
 /**
  * Implements a FrameView, intended to support the HTML

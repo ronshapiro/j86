@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.applet;
+package j86.sun.applet;
 
 /**
  * An applet security exception.

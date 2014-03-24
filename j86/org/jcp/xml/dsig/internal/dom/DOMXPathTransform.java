@@ -26,16 +26,16 @@
 /*
  * $Id: DOMXPathTransform.java 1203789 2011-11-18 18:46:07Z mullan $
  */
-package org.jcp.xml.dsig.internal.dom;
+package j86.j86.org.jcp.xml.dsig.internal.dom;
 
-import javax.xml.crypto.*;
-import javax.xml.crypto.dsig.*;
-import javax.xml.crypto.dsig.spec.TransformParameterSpec;
-import javax.xml.crypto.dsig.spec.XPathFilterParameterSpec;
-import java.security.InvalidAlgorithmParameterException;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
+import j86.javax.xml.crypto.*;
+import j86.j86.javax.xml.crypto.dsig.*;
+import j86.j86.j86.javax.xml.crypto.dsig.spec.TransformParameterSpec;
+import j86.j86.j86.javax.xml.crypto.dsig.spec.XPathFilterParameterSpec;
+import j86.java.security.InvalidAlgorithmParameterException;
+import j86.java.util.HashMap;
+import j86.java.util.Map;
+import j86.java.util.Set;
 import org.w3c.dom.Attr;
 import org.w3c.dom.Element;
 import org.w3c.dom.NamedNodeMap;

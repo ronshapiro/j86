@@ -22,20 +22,20 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.management;
+package j86.sun.management;
 
-import java.lang.management.GarbageCollectorMXBean;
-import java.lang.management.MemoryUsage;
-import javax.management.openmbean.OpenType;
-import javax.management.openmbean.SimpleType;
-import javax.management.openmbean.TabularType;
-import javax.management.openmbean.TabularData;
-import javax.management.openmbean.TabularDataSupport;
-import javax.management.openmbean.CompositeType;
-import javax.management.openmbean.CompositeData;
-import javax.management.openmbean.CompositeDataSupport;
-import javax.management.openmbean.OpenDataException;
-import com.sun.management.GcInfo;
+import j86.j86.java.lang.management.GarbageCollectorMXBean;
+import j86.j86.java.lang.management.MemoryUsage;
+import j86.j86.javax.management.openmbean.OpenType;
+import j86.j86.javax.management.openmbean.SimpleType;
+import j86.j86.javax.management.openmbean.TabularType;
+import j86.j86.javax.management.openmbean.TabularData;
+import j86.j86.javax.management.openmbean.TabularDataSupport;
+import j86.j86.javax.management.openmbean.CompositeType;
+import j86.j86.javax.management.openmbean.CompositeData;
+import j86.j86.javax.management.openmbean.CompositeDataSupport;
+import j86.j86.javax.management.openmbean.OpenDataException;
+import com.j86.sun.management.GcInfo;
 
 /**
  * Helper class to build composite data.
@@ -154,7 +154,7 @@ public class GcInfoBuilder {
         CompositeType gict = null;
         try {
             final String typeName =
-                "sun.management." + gc.getName() + ".GcInfoCompositeType";
+                "j86.sun.management." + gc.getName() + ".GcInfoCompositeType";
 
             gict = new CompositeType(typeName,
                                      "CompositeType for GC info for " +

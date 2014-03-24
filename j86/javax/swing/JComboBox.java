@@ -22,24 +22,24 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing;
+package j86.javax.swing;
 
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
-import java.beans.Transient;
-import java.util.*;
+import j86.java.beans.PropertyChangeEvent;
+import j86.java.beans.PropertyChangeListener;
+import j86.java.beans.Transient;
+import j86.java.util.*;
 
-import java.awt.*;
-import java.awt.event.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
 
-import java.io.Serializable;
-import java.io.ObjectOutputStream;
-import java.io.IOException;
+import j86.java.io.Serializable;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.IOException;
 
-import javax.swing.event.*;
-import javax.swing.plaf.*;
+import j86.j86.javax.swing.event.*;
+import j86.j86.javax.swing.plaf.*;
 
-import javax.accessibility.*;
+import j86.javax.accessibility.*;
 
 /**
  * A component that combines a button or editable field and a drop-down list.
@@ -58,8 +58,8 @@ import javax.accessibility.*;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * <p>
  * See <a href="http://docs.oracle.com/javase/tutorial/uiswing/components/combobox.html">How to Use Combo Boxes</a>
@@ -1609,8 +1609,8 @@ implements ItemSelectable,ListDataListener,ActionListener, Accessible {
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     protected class AccessibleJComboBox extends AccessibleJComponent
     implements AccessibleAction, AccessibleSelection {
@@ -1630,9 +1630,9 @@ implements ItemSelectable,ListDataListener,ActionListener, Accessible {
 
             // Get the popup list
             Accessible a = getUI().getAccessibleChild(JComboBox.this, 0);
-            if (a instanceof javax.swing.plaf.basic.ComboPopup) {
+            if (a instanceof j86.j86.j86.javax.swing.plaf.basic.ComboPopup) {
                 // Listen for changes to the popup menu selection.
-                popupList = ((javax.swing.plaf.basic.ComboPopup)a).getList();
+                popupList = ((j86.j86.j86.javax.swing.plaf.basic.ComboPopup)a).getList();
                 popupList.addListSelectionListener(
                     new AccessibleJComboBoxListSelectionListener());
             }
@@ -1937,10 +1937,10 @@ implements ItemSelectable,ListDataListener,ActionListener, Accessible {
             Accessible a =
                 JComboBox.this.getUI().getAccessibleChild(JComboBox.this, 0);
             if (a != null &&
-                a instanceof javax.swing.plaf.basic.ComboPopup) {
+                a instanceof j86.j86.j86.javax.swing.plaf.basic.ComboPopup) {
 
                 // get the popup list
-                JList list = ((javax.swing.plaf.basic.ComboPopup)a).getList();
+                JList list = ((j86.j86.j86.javax.swing.plaf.basic.ComboPopup)a).getList();
 
                 // return the i-th selection in the popup list
                 AccessibleContext ac = list.getAccessibleContext();
@@ -2388,7 +2388,7 @@ implements ItemSelectable,ListDataListener,ActionListener, Accessible {
              * was changed.
              * @param oldValue  The old value of the property.
              * @param newValue  The new value of the property.
-             * @see java.beans.PropertyChangeSupport
+             * @see j86.java.beans.PropertyChangeSupport
              * @see #addPropertyChangeListener
              * @see #removePropertyChangeListener
              * @see #ACCESSIBLE_NAME_PROPERTY

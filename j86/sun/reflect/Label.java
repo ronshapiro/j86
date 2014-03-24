@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.reflect;
+package j86.sun.reflect;
 
-import java.util.List;
-import java.util.ArrayList;
+import j86.java.util.List;
+import j86.java.util.ArrayList;
 
 /** Allows forward references in bytecode streams emitted by
     ClassFileAssembler. Assumes that the start of the method body is

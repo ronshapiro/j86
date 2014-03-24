@@ -23,15 +23,15 @@
  * questions.
  */
 
-package javax.management.openmbean;
+package j86.j86.javax.management.openmbean;
 
-import com.sun.jmx.mbeanserver.MXBeanLookup;
-import com.sun.jmx.mbeanserver.MXBeanMapping;
-import com.sun.jmx.mbeanserver.MXBeanMappingFactory;
-import com.sun.jmx.mbeanserver.DefaultMXBeanMappingFactory;
-import java.lang.reflect.InvocationHandler;
-import java.lang.reflect.Method;
-import java.lang.reflect.Proxy;
+import j86.com.sun.jmx.mbeanserver.MXBeanLookup;
+import j86.com.sun.jmx.mbeanserver.MXBeanMapping;
+import j86.com.sun.jmx.mbeanserver.MXBeanMappingFactory;
+import j86.com.sun.jmx.mbeanserver.DefaultMXBeanMappingFactory;
+import j86.j86.j86.java.lang.reflect.InvocationHandler;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.j86.j86.java.lang.reflect.Proxy;
 
 /**
    <p>An {@link InvocationHandler} that forwards getter methods to a
@@ -153,7 +153,7 @@ public class CompositeDataInvocationHandler implements InvocationHandler {
             throws Throwable {
         final String methodName = method.getName();
 
-        // Handle the methods from java.lang.Object
+        // Handle the methods from j86.java.lang.Object
         if (method.getDeclaringClass() == Object.class) {
             if (methodName.equals("toString") && args == null)
                 return "Proxy[" + compositeData + "]";

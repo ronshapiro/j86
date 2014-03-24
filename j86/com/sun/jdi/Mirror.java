@@ -23,7 +23,7 @@
  * questions.
  */
 
-package com.sun.jdi;
+package j86.com.sun.jdi;
 
 /**
  * A proxy used by a debugger to examine or manipulate some entity
@@ -33,7 +33,7 @@ package com.sun.jdi;
  * (for example, {@link IntegerValue}), types (for example,
  * {@link ReferenceType}), dynamic application state (for example,
  * {@link StackFrame}), and even debugger-specific constructs (for example,
- * {@link com.sun.jdi.request.BreakpointRequest}).
+ * {@link j86.j86.com.sun.jdi.request.BreakpointRequest}).
  * The {@link VirtualMachine} itself is also
  * considered a mirror, representing the composite state of the
  * target VM.
@@ -44,9 +44,9 @@ package com.sun.jdi;
  * of this interface should always use <code>equals</code> to compare
  * two mirrors for equality.
  * <p>
- * Any method on a {@link com.sun.jdi.Mirror} that takes a <code>Mirror</code> as an
+ * Any method on a {@link j86.com.sun.jdi.Mirror} that takes a <code>Mirror</code> as an
  * parameter directly or indirectly (e.g., as a element in a <code>List</code>) will
- * throw {@link com.sun.jdi.VMMismatchException} if the mirrors are from different
+ * throw {@link j86.com.sun.jdi.VMMismatchException} if the mirrors are from different
  * virtual machines.
  *
  * @see VirtualMachine

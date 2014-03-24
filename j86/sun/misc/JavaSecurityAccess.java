@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.misc;
+package j86.sun.misc;
 
-import java.security.AccessControlContext;
-import java.security.PrivilegedAction;
+import j86.java.security.AccessControlContext;
+import j86.java.security.PrivilegedAction;
 
 public interface JavaSecurityAccess {
 

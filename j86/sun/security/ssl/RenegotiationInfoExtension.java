@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.security.ssl;
+package j86.sun.security.ssl;
 
-import java.io.IOException;
+import j86.java.io.IOException;
 
-import javax.net.ssl.SSLProtocolException;
+import j86.j86.javax.net.ssl.SSLProtocolException;
 
 /*
  * For secure renegotiation, RFC5746 defines a new TLS extension,

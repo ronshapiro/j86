@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.event;
+package j86.j86.javax.swing.event;
 
-import java.awt.event.*;
-import java.awt.*;
-import java.util.*;
+import j86.j86.java.awt.event.*;
+import j86.java.awt.*;
+import j86.java.util.*;
 
-import javax.swing.*;
+import j86.javax.swing.*;
 
 /**
  * AncestorListener

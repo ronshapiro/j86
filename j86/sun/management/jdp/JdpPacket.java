@@ -22,9 +22,9 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.management.jdp;
+package j86.j86.sun.management.jdp;
 
-import java.io.IOException;
+import j86.java.io.IOException;
 
 /**
  * Packet to broadcast

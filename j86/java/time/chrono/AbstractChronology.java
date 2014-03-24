@@ -59,51 +59,51 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package java.time.chrono;
+package j86.j86.java.time.chrono;
 
-import static java.time.temporal.ChronoField.ALIGNED_DAY_OF_WEEK_IN_MONTH;
-import static java.time.temporal.ChronoField.ALIGNED_DAY_OF_WEEK_IN_YEAR;
-import static java.time.temporal.ChronoField.ALIGNED_WEEK_OF_MONTH;
-import static java.time.temporal.ChronoField.ALIGNED_WEEK_OF_YEAR;
-import static java.time.temporal.ChronoField.DAY_OF_MONTH;
-import static java.time.temporal.ChronoField.DAY_OF_WEEK;
-import static java.time.temporal.ChronoField.DAY_OF_YEAR;
-import static java.time.temporal.ChronoField.EPOCH_DAY;
-import static java.time.temporal.ChronoField.ERA;
-import static java.time.temporal.ChronoField.MONTH_OF_YEAR;
-import static java.time.temporal.ChronoField.PROLEPTIC_MONTH;
-import static java.time.temporal.ChronoField.YEAR;
-import static java.time.temporal.ChronoField.YEAR_OF_ERA;
-import static java.time.temporal.ChronoUnit.DAYS;
-import static java.time.temporal.ChronoUnit.MONTHS;
-import static java.time.temporal.ChronoUnit.WEEKS;
-import static java.time.temporal.TemporalAdjusters.nextOrSame;
+import static j86.j86.java.time.temporal.ChronoField.ALIGNED_DAY_OF_WEEK_IN_MONTH;
+import static j86.j86.java.time.temporal.ChronoField.ALIGNED_DAY_OF_WEEK_IN_YEAR;
+import static j86.j86.java.time.temporal.ChronoField.ALIGNED_WEEK_OF_MONTH;
+import static j86.j86.java.time.temporal.ChronoField.ALIGNED_WEEK_OF_YEAR;
+import static j86.j86.java.time.temporal.ChronoField.DAY_OF_MONTH;
+import static j86.j86.java.time.temporal.ChronoField.DAY_OF_WEEK;
+import static j86.j86.java.time.temporal.ChronoField.DAY_OF_YEAR;
+import static j86.j86.java.time.temporal.ChronoField.EPOCH_DAY;
+import static j86.j86.java.time.temporal.ChronoField.ERA;
+import static j86.j86.java.time.temporal.ChronoField.MONTH_OF_YEAR;
+import static j86.j86.java.time.temporal.ChronoField.PROLEPTIC_MONTH;
+import static j86.j86.java.time.temporal.ChronoField.YEAR;
+import static j86.j86.java.time.temporal.ChronoField.YEAR_OF_ERA;
+import static j86.j86.java.time.temporal.ChronoUnit.DAYS;
+import static j86.j86.java.time.temporal.ChronoUnit.MONTHS;
+import static j86.j86.java.time.temporal.ChronoUnit.WEEKS;
+import static j86.j86.java.time.temporal.TemporalAdjusters.nextOrSame;
 
-import java.io.DataInput;
-import java.io.DataOutput;
-import java.io.IOException;
-import java.io.InvalidObjectException;
-import java.io.ObjectInputStream;
-import java.io.ObjectStreamException;
-import java.io.Serializable;
-import java.time.DateTimeException;
-import java.time.DayOfWeek;
-import java.time.format.ResolverStyle;
-import java.time.temporal.ChronoField;
-import java.time.temporal.TemporalAdjusters;
-import java.time.temporal.TemporalField;
-import java.time.temporal.ValueRange;
-import java.util.Comparator;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Locale;
-import java.util.Map;
-import java.util.Objects;
-import java.util.ServiceLoader;
-import java.util.Set;
-import java.util.concurrent.ConcurrentHashMap;
+import j86.java.io.DataInput;
+import j86.java.io.DataOutput;
+import j86.java.io.IOException;
+import j86.java.io.InvalidObjectException;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.ObjectStreamException;
+import j86.java.io.Serializable;
+import j86.java.time.DateTimeException;
+import j86.java.time.DayOfWeek;
+import j86.j86.java.time.format.ResolverStyle;
+import j86.j86.java.time.temporal.ChronoField;
+import j86.j86.java.time.temporal.TemporalAdjusters;
+import j86.j86.java.time.temporal.TemporalField;
+import j86.j86.java.time.temporal.ValueRange;
+import j86.java.util.Comparator;
+import j86.java.util.HashSet;
+import j86.java.util.List;
+import j86.java.util.Locale;
+import j86.java.util.Map;
+import j86.java.util.Objects;
+import j86.java.util.ServiceLoader;
+import j86.java.util.Set;
+import j86.j86.java.util.concurrent.ConcurrentHashMap;
 
-import sun.util.logging.PlatformLogger;
+import j86.j86.sun.util.logging.PlatformLogger;
 
 /**
  * An abstract implementation of a calendar system, used to organize and identify dates.
@@ -200,7 +200,7 @@ public abstract class AbstractChronology implements Chronology {
     /**
      * Initialization of the maps from id and type to Chronology.
      * The ServiceLoader is used to find and register any implementations
-     * of {@link java.time.chrono.AbstractChronology} found in the bootclass loader.
+     * of {@link j86.j86.java.time.chrono.AbstractChronology} found in the bootclass loader.
      * The built-in chronologies are registered explicitly.
      * Calendars configured via the Thread's context classloader are local
      * to that thread and are ignored.
@@ -229,7 +229,7 @@ public abstract class AbstractChronology implements Chronology {
                 String id = chrono.getId();
                 if (id.equals("ISO") || registerChrono(chrono) != null) {
                     // Log the attempt to replace an existing Chronology
-                    PlatformLogger logger = PlatformLogger.getLogger("java.time.chrono");
+                    PlatformLogger logger = PlatformLogger.getLogger("j86.j86.java.time.chrono");
                     logger.warning("Ignoring duplicate Chronology, from ServiceLoader configuration "  + id);
                 }
             }
@@ -249,7 +249,7 @@ public abstract class AbstractChronology implements Chronology {
      *
      * @param locale  the locale to use to obtain the calendar system, not null
      * @return the calendar system associated with the locale, not null
-     * @throws java.time.DateTimeException if the locale-specified calendar cannot be found
+     * @throws j86.java.time.DateTimeException if the locale-specified calendar cannot be found
      */
     static Chronology ofLocale(Locale locale) {
         Objects.requireNonNull(locale, "locale");
@@ -287,7 +287,7 @@ public abstract class AbstractChronology implements Chronology {
      *
      * @param id  the chronology ID or calendar system type, not null
      * @return the chronology with the identifier requested, not null
-     * @throws java.time.DateTimeException if the chronology cannot be found
+     * @throws j86.java.time.DateTimeException if the chronology cannot be found
      */
     static Chronology of(String id) {
         Objects.requireNonNull(id, "id");
@@ -437,7 +437,7 @@ public abstract class AbstractChronology implements Chronology {
      * </ul>
      * <p>
      * The default implementation is suitable for most calendar systems.
-     * If {@link java.time.temporal.ChronoField#YEAR_OF_ERA} is found without an {@link java.time.temporal.ChronoField#ERA}
+     * If {@link j86.j86.java.time.temporal.ChronoField#YEAR_OF_ERA} is found without an {@link java.time.temporal.ChronoField#ERA}
      * then the last era in {@link #eras()} is used.
      * The implementation assumes a 7 day week, that the first day-of-month
      * has the value 1, that first day-of-year has the value 1, and that the
@@ -446,7 +446,7 @@ public abstract class AbstractChronology implements Chronology {
      * @param fieldValues  the map of fields to values, which can be updated, not null
      * @param resolverStyle  the requested type of resolve, not null
      * @return the resolved date, null if insufficient information to create a date
-     * @throws java.time.DateTimeException if the date cannot be resolved, typically
+     * @throws j86.java.time.DateTimeException if the date cannot be resolved, typically
      *  because of a conflict in the input data
      */
     @Override
@@ -668,7 +668,7 @@ public abstract class AbstractChronology implements Chronology {
      *
      * @param field  the field to add, not null
      * @param value  the value to add, not null
-     * @throws java.time.DateTimeException if the field is already present with a different value
+     * @throws j86.java.time.DateTimeException if the field is already present with a different value
      */
     void addFieldValue(Map<TemporalField, Long> fieldValues, ChronoField field, long value) {
         Long old = fieldValues.get(field);  // check first for better error message
@@ -705,7 +705,7 @@ public abstract class AbstractChronology implements Chronology {
      *
      * @implSpec
      * This implementation checks the type and calls
-     * {@link #compareTo(java.time.chrono.Chronology)}.
+     * {@link #compareTo(j86.j86.java.time.chrono.Chronology)}.
      *
      * @param obj  the object to check, null returns false
      * @return true if this is equal to the other chronology
@@ -751,7 +751,7 @@ public abstract class AbstractChronology implements Chronology {
     //-----------------------------------------------------------------------
     /**
      * Writes the Chronology using a
-     * <a href="../../../serialized-form.html#java.time.chrono.Ser">dedicated serialized form</a>.
+     * <a href="../../../serialized-form.html#j86.j86.java.time.chrono.Ser">dedicated serialized form</a>.
      * <pre>
      *  out.writeByte(1);  // identifies this as a Chronology
      *  out.writeUTF(getId());
@@ -766,7 +766,7 @@ public abstract class AbstractChronology implements Chronology {
     /**
      * Defend against malicious streams.
      *
-     * @throws java.io.InvalidObjectException always
+     * @throws j86.java.io.InvalidObjectException always
      */
     private void readObject(ObjectInputStream s) throws ObjectStreamException {
         throw new InvalidObjectException("Deserialization via serialization delegate");

@@ -23,35 +23,35 @@
  * questions.
  */
 
-package sun.misc;
+package j86.sun.misc;
 
-import java.util.*;
-import java.util.jar.JarFile;
-import sun.misc.JarIndex;
-import sun.misc.InvalidJarIndexException;
-import sun.net.www.ParseUtil;
-import java.util.zip.ZipEntry;
-import java.util.jar.JarEntry;
-import java.util.jar.Manifest;
-import java.util.jar.Attributes;
-import java.util.jar.Attributes.Name;
-import java.net.JarURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.net.URLConnection;
-import java.net.HttpURLConnection;
-import java.net.URLStreamHandler;
-import java.net.URLStreamHandlerFactory;
-import java.io.*;
-import java.security.AccessController;
-import java.security.AccessControlException;
-import java.security.CodeSigner;
-import java.security.Permission;
-import java.security.PrivilegedAction;
-import java.security.PrivilegedExceptionAction;
-import java.security.cert.Certificate;
-import sun.misc.FileURLMapper;
-import sun.net.util.URLUtil;
+import j86.java.util.*;
+import j86.j86.java.util.jar.JarFile;
+import j86.sun.misc.JarIndex;
+import j86.sun.misc.InvalidJarIndexException;
+import j86.j86.sun.net.www.ParseUtil;
+import j86.j86.java.util.zip.ZipEntry;
+import j86.j86.java.util.jar.JarEntry;
+import j86.j86.java.util.jar.Manifest;
+import j86.j86.java.util.jar.Attributes;
+import j86.j86.java.util.jar.Attributes.Name;
+import j86.java.net.JarURLConnection;
+import j86.java.net.MalformedURLException;
+import j86.java.net.URL;
+import j86.java.net.URLConnection;
+import j86.java.net.HttpURLConnection;
+import j86.java.net.URLStreamHandler;
+import j86.java.net.URLStreamHandlerFactory;
+import j86.java.io.*;
+import j86.java.security.AccessController;
+import j86.java.security.AccessControlException;
+import j86.java.security.CodeSigner;
+import j86.java.security.Permission;
+import j86.java.security.PrivilegedAction;
+import j86.java.security.PrivilegedExceptionAction;
+import j86.j86.java.security.cert.Certificate;
+import j86.sun.misc.FileURLMapper;
+import j86.j86.sun.net.util.URLUtil;
 
 /**
  * This class is used to maintain a search path of URLs for loading classes
@@ -66,12 +66,12 @@ public class URLClassPath {
     private static final boolean DISABLE_JAR_CHECKING;
 
     static {
-        JAVA_VERSION = java.security.AccessController.doPrivileged(
-            new sun.security.action.GetPropertyAction("java.version"));
-        DEBUG        = (java.security.AccessController.doPrivileged(
-            new sun.security.action.GetPropertyAction("sun.misc.URLClassPath.debug")) != null);
-        String p = java.security.AccessController.doPrivileged(
-            new sun.security.action.GetPropertyAction("sun.misc.URLClassPath.disableJarChecking"));
+        JAVA_VERSION = j86.java.security.AccessController.doPrivileged(
+            new j86.sun.security.action.GetPropertyAction("java.version"));
+        DEBUG        = (j86.java.security.AccessController.doPrivileged(
+            new j86.sun.security.action.GetPropertyAction("j86.sun.misc.URLClassPath.debug")) != null);
+        String p = j86.java.security.AccessController.doPrivileged(
+            new j86.sun.security.action.GetPropertyAction("j86.sun.misc.URLClassPath.disableJarChecking"));
         DISABLE_JAR_CHECKING = p != null ? p.equals("true") || p.equals("") : false;
     }
 
@@ -352,8 +352,8 @@ public class URLClassPath {
      */
     private Loader getLoader(final URL url) throws IOException {
         try {
-            return java.security.AccessController.doPrivileged(
-                new java.security.PrivilegedExceptionAction<Loader>() {
+            return j86.java.security.AccessController.doPrivileged(
+                new j86.java.security.PrivilegedExceptionAction<Loader>() {
                 public Loader run() throws IOException {
                     String file = url.getFile();
                     if (file != null && file.endsWith("/")) {
@@ -367,7 +367,7 @@ public class URLClassPath {
                     }
                 }
             });
-        } catch (java.security.PrivilegedActionException pae) {
+        } catch (j86.java.security.PrivilegedActionException pae) {
             throw (IOException)pae.getException();
         }
     }
@@ -416,7 +416,7 @@ public class URLClassPath {
     /*
      * Check whether the resource URL should be returned.
      * Return null on security check failure.
-     * Called by java.net.URLClassLoader.
+     * Called by j86.java.net.URLClassLoader.
      */
     public URL checkURL(URL url) {
         try {
@@ -444,11 +444,11 @@ public class URLClassPath {
                 } catch (SecurityException se) {
                     // fallback to checkRead/checkConnect for pre 1.2
                     // security managers
-                    if ((perm instanceof java.io.FilePermission) &&
+                    if ((perm instanceof j86.java.io.FilePermission) &&
                         perm.getActions().indexOf("read") != -1) {
                         security.checkRead(perm.getName());
                     } else if ((perm instanceof
-                        java.net.SocketPermission) &&
+                        j86.java.net.SocketPermission) &&
                         perm.getActions().indexOf("connect") != -1) {
                         URL locUrl = url;
                         if (urlConnection instanceof JarURLConnection) {
@@ -597,8 +597,8 @@ public class URLClassPath {
         private URLStreamHandler handler;
         private HashMap<String, Loader> lmap;
         private boolean closed = false;
-        private static final sun.misc.JavaUtilZipFileAccess zipAccess =
-                sun.misc.SharedSecrets.getJavaUtilZipFileAccess();
+        private static final j86.sun.misc.JavaUtilZipFileAccess zipAccess =
+                j86.sun.misc.SharedSecrets.getJavaUtilZipFileAccess();
 
         /*
          * Creates a new JarLoader for the specified URL referring to
@@ -663,8 +663,8 @@ public class URLClassPath {
         private void ensureOpen() throws IOException {
             if (jar == null) {
                 try {
-                    java.security.AccessController.doPrivileged(
-                        new java.security.PrivilegedExceptionAction<Void>() {
+                    j86.java.security.AccessController.doPrivileged(
+                        new j86.java.security.PrivilegedExceptionAction<Void>() {
                             public Void run() throws IOException {
                                 if (DEBUG) {
                                     System.err.println("Opening " + csu);
@@ -697,7 +697,7 @@ public class URLClassPath {
                             }
                         }
                     );
-                } catch (java.security.PrivilegedActionException pae) {
+                } catch (j86.java.security.PrivilegedActionException pae) {
                     throw (IOException)pae.getException();
                 }
             }
@@ -908,7 +908,7 @@ public class URLClassPath {
                             /* put it in the global hashtable */
                             lmap.put(urlNoFragString, newLoader);
                         }
-                    } catch (java.security.PrivilegedActionException pae) {
+                    } catch (j86.java.security.PrivilegedActionException pae) {
                         continue;
                     } catch (MalformedURLException e) {
                         continue;

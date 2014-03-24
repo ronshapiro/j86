@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.awt.image;
-import java.awt.image.Raster;
-import java.awt.image.WritableRaster;
-import java.awt.image.RasterFormatException;
-import java.awt.image.SampleModel;
-import java.awt.image.MultiPixelPackedSampleModel;
-import java.awt.image.DataBuffer;
-import java.awt.image.DataBufferByte;
-import java.awt.Rectangle;
-import java.awt.Point;
+package j86.j86.j86.sun.awt.image;
+import j86.j86.j86.java.awt.image.Raster;
+import j86.j86.j86.java.awt.image.WritableRaster;
+import j86.j86.j86.java.awt.image.RasterFormatException;
+import j86.j86.j86.java.awt.image.SampleModel;
+import j86.j86.j86.java.awt.image.MultiPixelPackedSampleModel;
+import j86.j86.j86.java.awt.image.DataBuffer;
+import j86.j86.j86.java.awt.image.DataBufferByte;
+import j86.java.awt.Rectangle;
+import j86.java.awt.Point;
 
 /**
  * This class is useful for describing 1, 2, or 4 bit image data
@@ -273,7 +273,7 @@ public class BytePackedRaster extends SunWritableRaster {
      * if the coordinates are not in bounds.
      * A ClassCastException will be thrown if the input object is non null
      * and references anything other than an array of TransferType.
-     * @see java.awt.image.SampleModel#getDataElements(int, int, int, int, Object, DataBuffer)
+     * @see j86.j86.j86.java.awt.image.SampleModel#getDataElements(int, int, int, int, Object, DataBuffer)
      * @param x        The X coordinate of the upper left pixel location.
      * @param y        The Y coordinate of the upper left pixel location.
      * @param w        Width of the pixel rectangle.

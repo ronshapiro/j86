@@ -23,19 +23,19 @@
  * questions.
  */
 
-package com.sun.tools.jdi;
+package j86.com.sun.tools.jdi;
 
-import com.sun.tools.jdi.*;
-import com.sun.jdi.connect.*;
-import com.sun.jdi.connect.spi.*;
-import com.sun.jdi.*;
+import j86.com.sun.tools.jdi.*;
+import j86.j86.com.sun.jdi.connect.*;
+import j86.j86.j86.com.sun.jdi.connect.spi.*;
+import j86.com.sun.jdi.*;
 
-import java.util.Map;
-import java.util.StringTokenizer;
-import java.util.List;
-import java.util.ArrayList;
-import java.io.IOException;
-import java.io.InterruptedIOException;
+import j86.java.util.Map;
+import j86.java.util.StringTokenizer;
+import j86.java.util.List;
+import j86.java.util.ArrayList;
+import j86.java.io.IOException;
+import j86.java.io.InterruptedIOException;
 
 abstract class AbstractLauncher extends ConnectorImpl implements LaunchingConnector {
 

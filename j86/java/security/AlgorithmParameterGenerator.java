@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.security;
+package j86.java.security;
 
-import java.security.spec.AlgorithmParameterSpec;
+import j86.j86.java.security.spec.AlgorithmParameterSpec;
 
 /**
  * The {@code AlgorithmParameterGenerator} class is used to generate a
@@ -84,7 +84,7 @@ import java.security.spec.AlgorithmParameterSpec;
  *
  *
  * @see AlgorithmParameters
- * @see java.security.spec.AlgorithmParameterSpec
+ * @see j86.j86.java.security.spec.AlgorithmParameterSpec
  *
  * @since 1.2
  */

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.util;
+package j86.java.util;
 
 /**
  * <p>Hash table and linked list implementation of the <tt>Set</tt> interface,
@@ -117,7 +117,7 @@ package java.util;
 
 public class LinkedHashSet<E>
     extends HashSet<E>
-    implements Set<E>, Cloneable, java.io.Serializable {
+    implements Set<E>, Cloneable, j86.java.io.Serializable {
 
     private static final long serialVersionUID = -2851667679971038690L;
 

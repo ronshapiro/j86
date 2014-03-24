@@ -23,13 +23,13 @@
  * questions.
  */
 
-package sun.nio.fs;
+package j86.j86.sun.nio.fs;
 
-import java.nio.file.*;
-import java.io.File;
-import java.io.IOException;
-import java.util.Iterator;
-import java.util.NoSuchElementException;
+import j86.j86.java.nio.file.*;
+import j86.java.io.File;
+import j86.java.io.IOException;
+import j86.java.util.Iterator;
+import j86.java.util.NoSuchElementException;
 
 /**
  * Base implementation class of {@code Path}.

@@ -33,10 +33,10 @@
  ******************************************************************
  ******************************************************************/
 
-package java.awt.image;
-import java.awt.Rectangle;
-import java.util.Dictionary;
-import java.util.Vector;
+package j86.j86.j86.java.awt.image;
+import j86.java.awt.Rectangle;
+import j86.java.util.Dictionary;
+import j86.java.util.Vector;
 
 /**
  * RenderedImage is a common interface for objects which contain
@@ -61,11 +61,11 @@ public interface RenderedImage {
      * Gets a property from the property set of this image.  The set of
      * properties and whether it is immutable is determined by the
      * implementing class.  This method returns
-     * java.awt.Image.UndefinedProperty if the specified property is
+     * j86.java.awt.Image.UndefinedProperty if the specified property is
      * not defined for this RenderedImage.
      * @param name the name of the property
      * @return the property indicated by the specified name.
-     * @see java.awt.Image#UndefinedProperty
+     * @see j86.java.awt.Image#UndefinedProperty
      */
     Object getProperty(String name);
 

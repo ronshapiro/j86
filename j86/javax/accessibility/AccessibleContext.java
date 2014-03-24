@@ -23,13 +23,13 @@
  * questions.
  */
 
-package javax.accessibility;
+package j86.javax.accessibility;
 
-import java.util.Locale;
-import java.beans.PropertyChangeListener;
-import java.beans.PropertyChangeSupport;
-import java.beans.PropertyChangeEvent;
-import java.awt.IllegalComponentStateException;
+import j86.java.util.Locale;
+import j86.java.beans.PropertyChangeListener;
+import j86.java.beans.PropertyChangeSupport;
+import j86.java.beans.PropertyChangeEvent;
+import j86.java.awt.IllegalComponentStateException;
 
 /**
  * AccessibleContext represents the minimum information all accessible objects
@@ -723,7 +723,7 @@ public abstract class AccessibleContext {
      * was changed.
      * @param oldValue  The old value of the property.
      * @param newValue  The new value of the property.
-     * @see java.beans.PropertyChangeSupport
+     * @see j86.java.beans.PropertyChangeSupport
      * @see #addPropertyChangeListener
      * @see #removePropertyChangeListener
      * @see #ACCESSIBLE_NAME_PROPERTY

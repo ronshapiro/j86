@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.lang;
+package j86.java.lang;
 
 /**
  * Thrown if the Java Virtual Machine or a <code>ClassLoader</code> instance

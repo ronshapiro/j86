@@ -23,11 +23,11 @@
  * questions.
  */
 
-package java.beans.beancontext;
+package j86.j86.java.beans.beancontext;
 
-import java.util.EventObject;
+import j86.java.util.EventObject;
 
-import java.beans.beancontext.BeanContext;
+import j86.j86.java.beans.beancontext.BeanContext;
 
 /**
  * <p>
@@ -44,7 +44,7 @@ import java.beans.beancontext.BeanContext;
  *
  * @author      Laurence P. G. Cable
  * @since       1.2
- * @see         java.beans.beancontext.BeanContext
+ * @see         j86.j86.java.beans.beancontext.BeanContext
  */
 
 public abstract class BeanContextEvent extends EventObject {

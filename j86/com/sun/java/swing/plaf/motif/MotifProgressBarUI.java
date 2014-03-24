@@ -23,15 +23,15 @@
  * questions.
  */
 
-package com.sun.java.swing.plaf.motif;
+package j86.j86.com.sun.java.swing.plaf.motif;
 
-import java.awt.*;
-import javax.swing.*;
-import javax.swing.event.*;
-import javax.swing.plaf.*;
-import java.io.Serializable;
+import j86.java.awt.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.event.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.java.io.Serializable;
 
-import javax.swing.plaf.basic.BasicProgressBarUI;
+import j86.j86.j86.javax.swing.plaf.basic.BasicProgressBarUI;
 
 
 /**

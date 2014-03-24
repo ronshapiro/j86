@@ -23,10 +23,10 @@
  * questions.
  */
 
-package com.sun.jndi.toolkit.ctx;
+package j86.com.sun.jndi.toolkit.ctx;
 
-import javax.naming.*;
-import javax.naming.directory.*;
+import j86.javax.naming.*;
+import j86.j86.javax.naming.directory.*;
 
 /**
  * Direct subclasses of AtomicDirContext must provide implementations for

@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.security.util;
+package j86.sun.security.util;
 
-import java.io.ByteArrayOutputStream;
-import java.util.Arrays;
+import j86.java.io.ByteArrayOutputStream;
+import j86.java.util.Arrays;
 
 /**
  * A packed array of booleans.

@@ -23,12 +23,12 @@
  * questions.
  */
 
-package com.sun.crypto.provider;
+package j86.com.sun.crypto.provider;
 
-import java.security.*;
-import java.security.spec.*;
-import javax.crypto.spec.DHParameterSpec;
-import javax.crypto.spec.DHGenParameterSpec;
+import j86.java.security.*;
+import j86.j86.java.security.spec.*;
+import j86.j86.javax.crypto.spec.DHParameterSpec;
+import j86.j86.javax.crypto.spec.DHGenParameterSpec;
 
 /*
  * This class generates parameters for the Diffie-Hellman algorithm.
@@ -42,8 +42,8 @@ import javax.crypto.spec.DHGenParameterSpec;
  * @author Jan Luehe
  *
  *
- * @see java.security.AlgorithmParameters
- * @see java.security.spec.AlgorithmParameterSpec
+ * @see j86.java.security.AlgorithmParameters
+ * @see j86.j86.java.security.spec.AlgorithmParameterSpec
  * @see DHParameters
  */
 public final class DHParameterGenerator

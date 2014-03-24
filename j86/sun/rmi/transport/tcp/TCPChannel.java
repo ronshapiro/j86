@@ -22,34 +22,34 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.rmi.transport.tcp;
+package j86.j86.sun.rmi.transport.tcp;
 
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.io.IOException;
-import java.lang.ref.Reference;
-import java.lang.ref.SoftReference;
-import java.net.Socket;
-import java.rmi.ConnectIOException;
-import java.rmi.RemoteException;
-import java.security.AccessControlContext;
-import java.security.AccessController;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.ListIterator;
-import java.util.WeakHashMap;
-import java.util.concurrent.Future;
-import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.TimeUnit;
-import sun.rmi.runtime.Log;
-import sun.rmi.runtime.NewThreadAction;
-import sun.rmi.runtime.RuntimeUtil;
-import sun.rmi.transport.Channel;
-import sun.rmi.transport.Connection;
-import sun.rmi.transport.Endpoint;
-import sun.rmi.transport.TransportConstants;
-import sun.security.action.GetIntegerAction;
-import sun.security.action.GetLongAction;
+import j86.java.io.DataInputStream;
+import j86.java.io.DataOutputStream;
+import j86.java.io.IOException;
+import j86.j86.java.lang.ref.Reference;
+import j86.j86.java.lang.ref.SoftReference;
+import j86.java.net.Socket;
+import j86.java.rmi.ConnectIOException;
+import j86.java.rmi.RemoteException;
+import j86.java.security.AccessControlContext;
+import j86.java.security.AccessController;
+import j86.java.util.ArrayList;
+import j86.java.util.List;
+import j86.java.util.ListIterator;
+import j86.java.util.WeakHashMap;
+import j86.j86.java.util.concurrent.Future;
+import j86.j86.java.util.concurrent.ScheduledExecutorService;
+import j86.j86.java.util.concurrent.TimeUnit;
+import j86.sun.rmi.runtime.Log;
+import j86.sun.rmi.runtime.NewThreadAction;
+import j86.sun.rmi.runtime.RuntimeUtil;
+import j86.sun.rmi.transport.Channel;
+import j86.sun.rmi.transport.Connection;
+import j86.sun.rmi.transport.Endpoint;
+import j86.sun.rmi.transport.TransportConstants;
+import j86.sun.security.action.GetIntegerAction;
+import j86.sun.security.action.GetLongAction;
 
 /**
  * TCPChannel is the socket-based implementation of the RMI Channel
@@ -88,18 +88,18 @@ public class TCPChannel implements Channel {
     /** client-side connection idle usage timeout */
     private static final long idleTimeout =             // default 15 seconds
         AccessController.doPrivileged(
-            new GetLongAction("sun.rmi.transport.connectionTimeout", 15000));
+            new GetLongAction("j86.sun.rmi.transport.connectionTimeout", 15000));
 
     /** client-side connection handshake read timeout */
     private static final int handshakeTimeout =         // default 1 minute
         AccessController.doPrivileged(
-            new GetIntegerAction("sun.rmi.transport.tcp.handshakeTimeout",
+            new GetIntegerAction("j86.j86.sun.rmi.transport.tcp.handshakeTimeout",
                                  60000));
 
     /** client-side connection response read timeout (after handshake) */
     private static final int responseTimeout =          // default infinity
         AccessController.doPrivileged(
-            new GetIntegerAction("sun.rmi.transport.tcp.responseTimeout", 0));
+            new GetIntegerAction("j86.j86.sun.rmi.transport.tcp.responseTimeout", 0));
 
     /** thread pool for scheduling delayed tasks */
     private static final ScheduledExecutorService scheduler =
@@ -425,7 +425,7 @@ public class TCPChannel implements Channel {
             conn[i] = null; // help gc
             try {
                 c.close();
-            } catch (java.io.IOException e) {
+            } catch (j86.java.io.IOException e) {
                 // eat exception
             }
         }
@@ -450,7 +450,7 @@ public class TCPChannel implements Channel {
 
                         try {
                             conn.close();
-                        } catch (java.io.IOException e) {
+                        } catch (j86.java.io.IOException e) {
                             // eat exception
                         }
                         iter.remove();

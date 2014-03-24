@@ -23,13 +23,13 @@
  * questions.
  */
 
-package com.sun.jndi.ldap;
+package j86.com.sun.jndi.ldap;
 
-import java.io.OutputStream;
-import java.io.IOException;
-import java.io.ByteArrayInputStream;
+import j86.java.io.OutputStream;
+import j86.java.io.IOException;
+import j86.java.io.ByteArrayInputStream;
 
-import sun.misc.HexDumpEncoder;
+import j86.sun.misc.HexDumpEncoder;
 
 /**
   * Base class that defines common fields, constants, and debug method.

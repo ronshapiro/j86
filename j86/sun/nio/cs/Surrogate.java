@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.nio.cs;
+package j86.j86.j86.sun.nio.cs;
 
-import java.nio.CharBuffer;
-import java.nio.charset.CoderResult;
-import java.nio.charset.MalformedInputException;
-import java.nio.charset.UnmappableCharacterException;
+import j86.java.nio.CharBuffer;
+import j86.j86.java.nio.charset.CoderResult;
+import j86.j86.java.nio.charset.MalformedInputException;
+import j86.j86.java.nio.charset.UnmappableCharacterException;
 
 /**
  * Utility class for dealing with surrogates.

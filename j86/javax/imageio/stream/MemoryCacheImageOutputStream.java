@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.imageio.stream;
+package j86.j86.javax.imageio.stream;
 
-import java.io.IOException;
-import java.io.OutputStream;
+import j86.java.io.IOException;
+import j86.java.io.OutputStream;
 
 /**
  * An implementation of <code>ImageOutputStream</code> that writes its

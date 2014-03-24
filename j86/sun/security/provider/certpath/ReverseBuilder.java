@@ -23,41 +23,41 @@
  * questions.
  */
 
-package sun.security.provider.certpath;
+package j86.j86.sun.security.provider.certpath;
 
-import java.io.IOException;
-import java.security.GeneralSecurityException;
-import java.security.Principal;
-import java.security.cert.CertificateException;
-import java.security.cert.CertPathValidatorException;
-import java.security.cert.CertStore;
-import java.security.cert.CertStoreException;
-import java.security.cert.PKIXBuilderParameters;
-import java.security.cert.PKIXCertPathChecker;
-import java.security.cert.PKIXParameters;
-import java.security.cert.PKIXReason;
-import java.security.cert.TrustAnchor;
-import java.security.cert.X509Certificate;
-import java.security.cert.X509CertSelector;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.List;
-import java.util.LinkedList;
-import java.util.Set;
+import j86.java.io.IOException;
+import j86.java.security.GeneralSecurityException;
+import j86.java.security.Principal;
+import j86.j86.java.security.cert.CertificateException;
+import j86.j86.java.security.cert.CertPathValidatorException;
+import j86.j86.java.security.cert.CertStore;
+import j86.j86.java.security.cert.CertStoreException;
+import j86.j86.java.security.cert.PKIXBuilderParameters;
+import j86.j86.java.security.cert.PKIXCertPathChecker;
+import j86.j86.java.security.cert.PKIXParameters;
+import j86.j86.java.security.cert.PKIXReason;
+import j86.j86.java.security.cert.TrustAnchor;
+import j86.j86.java.security.cert.X509Certificate;
+import j86.j86.java.security.cert.X509CertSelector;
+import j86.java.util.ArrayList;
+import j86.java.util.Collection;
+import j86.java.util.Collections;
+import j86.java.util.Comparator;
+import j86.java.util.HashSet;
+import j86.java.util.Iterator;
+import j86.java.util.List;
+import j86.java.util.LinkedList;
+import j86.java.util.Set;
 
-import javax.security.auth.x500.X500Principal;
+import j86.j86.javax.security.auth.x500.X500Principal;
 
-import sun.security.provider.certpath.PKIX.BuilderParams;
-import sun.security.util.Debug;
-import sun.security.x509.Extension;
-import static sun.security.x509.PKIXExtensions.*;
-import sun.security.x509.X500Name;
-import sun.security.x509.X509CertImpl;
-import sun.security.x509.PolicyMappingsExtension;
+import j86.j86.sun.security.provider.certpath.PKIX.BuilderParams;
+import j86.sun.security.util.Debug;
+import j86.sun.security.x509.Extension;
+import static j86.sun.security.x509.PKIXExtensions.*;
+import j86.sun.security.x509.X500Name;
+import j86.sun.security.x509.X509CertImpl;
+import j86.sun.security.x509.PolicyMappingsExtension;
 
 /**
  * This class represents a reverse builder, which is able to retrieve

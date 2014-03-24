@@ -24,9 +24,9 @@
  */
 
 
-package javax.net.ssl;
+package j86.j86.javax.net.ssl;
 
-import java.util.EventListener;
+import j86.java.util.EventListener;
 
 /**
  * This interface is implemented by objects which want to know when

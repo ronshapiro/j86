@@ -23,18 +23,18 @@
  * questions.
  */
 
-package java.security.cert;
+package j86.j86.java.security.cert;
 
-import java.util.Arrays;
+import j86.java.util.Arrays;
 
-import java.security.Provider;
-import java.security.PublicKey;
-import java.security.NoSuchAlgorithmException;
-import java.security.NoSuchProviderException;
-import java.security.InvalidKeyException;
-import java.security.SignatureException;
+import j86.java.security.Provider;
+import j86.java.security.PublicKey;
+import j86.java.security.NoSuchAlgorithmException;
+import j86.java.security.NoSuchProviderException;
+import j86.java.security.InvalidKeyException;
+import j86.java.security.SignatureException;
 
-import sun.security.x509.X509CertImpl;
+import j86.sun.security.x509.X509CertImpl;
 
 /**
  * <p>Abstract class for managing a variety of identity certificates.
@@ -59,7 +59,7 @@ import sun.security.x509.X509CertImpl;
  * @author Hemma Prafullchandra
  */
 
-public abstract class Certificate implements java.io.Serializable {
+public abstract class Certificate implements j86.java.io.Serializable {
 
     private static final long serialVersionUID = -3585440601605666277L;
 
@@ -237,7 +237,7 @@ public abstract class Certificate implements java.io.Serializable {
      * Alternate Certificate class for serialization.
      * @since 1.3
      */
-    protected static class CertificateRep implements java.io.Serializable {
+    protected static class CertificateRep implements j86.java.io.Serializable {
 
         private static final long serialVersionUID = -8563758940495660020L;
 
@@ -266,17 +266,17 @@ public abstract class Certificate implements java.io.Serializable {
          *
          * @return the resolved Certificate Object
          *
-         * @throws java.io.ObjectStreamException if the Certificate
+         * @throws j86.java.io.ObjectStreamException if the Certificate
          *      could not be resolved
          */
-        protected Object readResolve() throws java.io.ObjectStreamException {
+        protected Object readResolve() throws j86.java.io.ObjectStreamException {
             try {
                 CertificateFactory cf = CertificateFactory.getInstance(type);
                 return cf.generateCertificate
-                        (new java.io.ByteArrayInputStream(data));
+                        (new j86.java.io.ByteArrayInputStream(data));
             } catch (CertificateException e) {
-                throw new java.io.NotSerializableException
-                                ("java.security.cert.Certificate: " +
+                throw new j86.java.io.NotSerializableException
+                                ("j86.j86.java.security.cert.Certificate: " +
                                 type +
                                 ": " +
                                 e.getMessage());
@@ -289,16 +289,16 @@ public abstract class Certificate implements java.io.Serializable {
      *
      * @return the alternate Certificate object to be serialized
      *
-     * @throws java.io.ObjectStreamException if a new object representing
+     * @throws j86.java.io.ObjectStreamException if a new object representing
      * this Certificate could not be created
      * @since 1.3
      */
-    protected Object writeReplace() throws java.io.ObjectStreamException {
+    protected Object writeReplace() throws j86.java.io.ObjectStreamException {
         try {
             return new CertificateRep(type, getEncoded());
         } catch (CertificateException e) {
-            throw new java.io.NotSerializableException
-                                ("java.security.cert.Certificate: " +
+            throw new j86.java.io.NotSerializableException
+                                ("j86.j86.java.security.cert.Certificate: " +
                                 type +
                                 ": " +
                                 e.getMessage());

@@ -32,9 +32,9 @@
  */
 
 
-package com.sun.tools.example.debug.bdi;   //### does it belong here?
+package j86.com.sun.tools.example.debug.bdi;   //### does it belong here?
 
-import com.sun.jdi.*;
+import j86.com.sun.jdi.*;
 
 public class Utils {
 

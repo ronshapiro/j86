@@ -23,17 +23,17 @@
  * questions.
  */
 
-package sun.security.rsa;
+package j86.sun.security.rsa;
 
-import java.math.BigInteger;
-import java.util.*;
+import j86.java.math.BigInteger;
+import j86.java.util.*;
 
-import java.security.SecureRandom;
-import java.security.interfaces.*;
+import j86.java.security.SecureRandom;
+import j86.j86.java.security.interfaces.*;
 
-import javax.crypto.BadPaddingException;
+import j86.javax.crypto.BadPaddingException;
 
-import sun.security.jca.JCAUtil;
+import j86.sun.security.jca.JCAUtil;
 
 /**
  * Core of the RSA implementation. Has code to perform public and private key

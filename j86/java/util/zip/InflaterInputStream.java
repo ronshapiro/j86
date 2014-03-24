@@ -23,12 +23,12 @@
  * questions.
  */
 
-package java.util.zip;
+package j86.j86.java.util.zip;
 
-import java.io.FilterInputStream;
-import java.io.InputStream;
-import java.io.IOException;
-import java.io.EOFException;
+import j86.java.io.FilterInputStream;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
+import j86.java.io.EOFException;
 
 /**
  * This class implements a stream filter for uncompressing data in the
@@ -250,8 +250,8 @@ class InflaterInputStream extends FilterInputStream {
      *
      * @return  a <code>boolean</code> indicating if this stream type supports
      *          the <code>mark</code> and <code>reset</code> methods.
-     * @see     java.io.InputStream#mark(int)
-     * @see     java.io.InputStream#reset()
+     * @see     j86.java.io.InputStream#mark(int)
+     * @see     j86.java.io.InputStream#reset()
      */
     public boolean markSupported() {
         return false;
@@ -265,7 +265,7 @@ class InflaterInputStream extends FilterInputStream {
      *
      * @param   readlimit   the maximum limit of bytes that can be read before
      *                      the mark position becomes invalid.
-     * @see     java.io.InputStream#reset()
+     * @see     j86.java.io.InputStream#reset()
      */
     public synchronized void mark(int readlimit) {
     }
@@ -279,8 +279,8 @@ class InflaterInputStream extends FilterInputStream {
      * <code>IOException</code>.
      *
      * @exception  IOException  if this method is invoked.
-     * @see     java.io.InputStream#mark(int)
-     * @see     java.io.IOException
+     * @see     j86.java.io.InputStream#mark(int)
+     * @see     j86.java.io.IOException
      */
     public synchronized void reset() throws IOException {
         throw new IOException("mark/reset not supported");

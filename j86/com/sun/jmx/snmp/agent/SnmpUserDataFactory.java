@@ -23,11 +23,11 @@
  * questions.
  */
 
-package com.sun.jmx.snmp.agent;
+package j86.j86.com.sun.jmx.snmp.agent;
 
-import com.sun.jmx.snmp.SnmpPduPacket;
-import com.sun.jmx.snmp.SnmpPdu;
-import com.sun.jmx.snmp.SnmpStatusException;
+import j86.com.sun.jmx.snmp.SnmpPduPacket;
+import j86.com.sun.jmx.snmp.SnmpPdu;
+import j86.com.sun.jmx.snmp.SnmpStatusException;
 
 /**
  * This interface is provided to enable fine customization of the SNMP
@@ -58,9 +58,9 @@ import com.sun.jmx.snmp.SnmpStatusException;
  *
  * <p><b>This API is a Sun Microsystems internal API  and is subject
  * to change without notice.</b></p>
- * @see com.sun.jmx.snmp.agent.SnmpMibRequest
- * @see com.sun.jmx.snmp.agent.SnmpMibAgent
- * @see com.sun.jmx.snmp.daemon.SnmpAdaptorServer
+ * @see j86.j86.com.sun.jmx.snmp.agent.SnmpMibRequest
+ * @see j86.j86.com.sun.jmx.snmp.agent.SnmpMibAgent
+ * @see j86.j86.j86.com.sun.jmx.snmp.daemon.SnmpAdaptorServer
  *
  **/
 public interface SnmpUserDataFactory {
@@ -74,7 +74,7 @@ public interface SnmpUserDataFactory {
      * will never access this object directly - it will simply pass
      * it to the <code>SnmpMibAgent</code> within
      * <code>SnmpMibRequest</code> objects - from where it can be retrieved
-     * through the {@link com.sun.jmx.snmp.agent.SnmpMibRequest#getUserData() getUserData()} accessor.
+     * through the {@link j86.j86.com.sun.jmx.snmp.agent.SnmpMibRequest#getUserData() getUserData()} accessor.
      * <code>null</code> is considered to be a valid return value.
      *
      * This method is called just after the SnmpPduPacket has been

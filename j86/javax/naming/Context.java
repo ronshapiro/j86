@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.naming;
+package j86.javax.naming;
 
-import java.util.Hashtable;
+import j86.java.util.Hashtable;
 
 /**
  * This interface represents a naming context, which
@@ -145,16 +145,16 @@ import java.util.Hashtable;
  * application components and service providers may be distributed
  * along with <em>resource files.</em>
  * A JNDI resource file is a file in the properties file format (see
- * {@link java.util.Properties#load <tt>java.util.Properties</tt>}),
+ * {@link j86.java.util.Properties#load <tt>java.util.Properties</tt>}),
  * containing a list of key/value pairs.
  * The key is the name of the property (e.g. "java.naming.factory.object")
  * and the value is a string in the format defined
  * for that property.  Here is an example of a JNDI resource file:
  *
  * <blockquote>{@code
- * java.naming.factory.object=com.sun.jndi.ldap.AttrsToCorba:com.wiz.from.Person
- * java.naming.factory.state=com.sun.jndi.ldap.CorbaToAttrs:com.wiz.from.Person
- * java.naming.factory.control=com.sun.jndi.ldap.ResponseControlFactory
+ * java.naming.factory.object=j86.com.sun.jndi.ldap.AttrsToCorba:com.wiz.from.Person
+ * java.naming.factory.state=j86.com.sun.jndi.ldap.CorbaToAttrs:com.wiz.from.Person
+ * java.naming.factory.control=j86.com.sun.jndi.ldap.ResponseControlFactory
  * }</blockquote>
  *
  * The JNDI class library reads the resource files and makes the property
@@ -177,9 +177,9 @@ import java.util.Hashtable;
  * with each period (".") converted to a slash ("/").
  *
  * For example, suppose a service provider defines a context
- * implementation with class name <tt>com.sun.jndi.ldap.LdapCtx</tt>.
+ * implementation with class name <tt>j86.com.sun.jndi.ldap.LdapCtx</tt>.
  * The provider resource for this provider is named
- * <tt>com/sun/jndi/ldap/jndiprovider.properties</tt>.  If the class is
+ * <tt>j86.com.sun.jndi.ldap/jndiprovider.properties</tt>.  If the class is
  * not in a package, the resource's name is simply
  * <tt>jndiprovider.properties</tt>.
  *
@@ -317,14 +317,14 @@ public interface Context {
      * @param obj
      *          the object to bind; possibly null
      * @throws  NameAlreadyBoundException if name is already bound
-     * @throws  javax.naming.directory.InvalidAttributesException
+     * @throws  j86.j86.javax.naming.directory.InvalidAttributesException
      *          if object did not supply all mandatory attributes
      * @throws  NamingException if a naming exception is encountered
      *
      * @see #bind(String, Object)
      * @see #rebind(Name, Object)
-     * @see javax.naming.directory.DirContext#bind(Name, Object,
-     *          javax.naming.directory.Attributes)
+     * @see j86.j86.javax.naming.directory.DirContext#bind(Name, Object,
+     *          j86.j86.javax.naming.directory.Attributes)
      */
     public void bind(Name name, Object obj) throws NamingException;
 
@@ -337,7 +337,7 @@ public interface Context {
      * @param obj
      *          the object to bind; possibly null
      * @throws  NameAlreadyBoundException if name is already bound
-     * @throws  javax.naming.directory.InvalidAttributesException
+     * @throws  j86.j86.javax.naming.directory.InvalidAttributesException
      *          if object did not supply all mandatory attributes
      * @throws  NamingException if a naming exception is encountered
      */
@@ -357,15 +357,15 @@ public interface Context {
      *          the name to bind; may not be empty
      * @param obj
      *          the object to bind; possibly null
-     * @throws  javax.naming.directory.InvalidAttributesException
+     * @throws  j86.j86.javax.naming.directory.InvalidAttributesException
      *          if object did not supply all mandatory attributes
      * @throws  NamingException if a naming exception is encountered
      *
      * @see #rebind(String, Object)
      * @see #bind(Name, Object)
-     * @see javax.naming.directory.DirContext#rebind(Name, Object,
-     *          javax.naming.directory.Attributes)
-     * @see javax.naming.directory.DirContext
+     * @see j86.j86.javax.naming.directory.DirContext#rebind(Name, Object,
+     *          j86.j86.javax.naming.directory.Attributes)
+     * @see j86.j86.javax.naming.directory.DirContext
      */
     public void rebind(Name name, Object obj) throws NamingException;
 
@@ -377,7 +377,7 @@ public interface Context {
      *          the name to bind; may not be empty
      * @param obj
      *          the object to bind; possibly null
-     * @throws  javax.naming.directory.InvalidAttributesException
+     * @throws  j86.j86.javax.naming.directory.InvalidAttributesException
      *          if object did not supply all mandatory attributes
      * @throws  NamingException if a naming exception is encountered
      */
@@ -586,13 +586,13 @@ public interface Context {
      * @return  the newly created context
      *
      * @throws  NameAlreadyBoundException if name is already bound
-     * @throws  javax.naming.directory.InvalidAttributesException
+     * @throws  j86.j86.javax.naming.directory.InvalidAttributesException
      *          if creation of the subcontext requires specification of
      *          mandatory attributes
      * @throws  NamingException if a naming exception is encountered
      *
      * @see #createSubcontext(String)
-     * @see javax.naming.directory.DirContext#createSubcontext
+     * @see j86.j86.javax.naming.directory.DirContext#createSubcontext
      */
     public Context createSubcontext(Name name) throws NamingException;
 
@@ -605,7 +605,7 @@ public interface Context {
      * @return  the newly created context
      *
      * @throws  NameAlreadyBoundException if name is already bound
-     * @throws  javax.naming.directory.InvalidAttributesException
+     * @throws  j86.j86.javax.naming.directory.InvalidAttributesException
      *          if creation of the subcontext requires specification of
      *          mandatory attributes
      * @throws  NamingException if a naming exception is encountered
@@ -831,9 +831,9 @@ public interface Context {
      * <p> The value of this constant is "java.naming.factory.initial".
      *
      * @see InitialContext
-     * @see javax.naming.directory.InitialDirContext
-     * @see javax.naming.spi.NamingManager#getInitialContext
-     * @see javax.naming.spi.InitialContextFactory
+     * @see j86.j86.javax.naming.directory.InitialDirContext
+     * @see j86.j86.javax.naming.spi.NamingManager#getInitialContext
+     * @see j86.j86.javax.naming.spi.InitialContextFactory
      * @see NoInitialContextException
      * @see #addToEnvironment(String, Object)
      * @see #removeFromEnvironment(String)
@@ -852,8 +852,8 @@ public interface Context {
      *
      * <p> The value of this constant is "java.naming.factory.object".
      *
-     * @see javax.naming.spi.NamingManager#getObjectInstance
-     * @see javax.naming.spi.ObjectFactory
+     * @see j86.j86.javax.naming.spi.NamingManager#getObjectInstance
+     * @see j86.j86.javax.naming.spi.ObjectFactory
      * @see #addToEnvironment(String, Object)
      * @see #removeFromEnvironment(String)
      * @see #APPLET
@@ -871,8 +871,8 @@ public interface Context {
      *
      * <p> The value of this constant is "java.naming.factory.state".
      *
-     * @see javax.naming.spi.NamingManager#getStateToBind
-     * @see javax.naming.spi.StateFactory
+     * @see j86.j86.javax.naming.spi.NamingManager#getStateToBind
+     * @see j86.j86.javax.naming.spi.StateFactory
      * @see #addToEnvironment(String, Object)
      * @see #removeFromEnvironment(String)
      * @see #APPLET
@@ -895,9 +895,9 @@ public interface Context {
      *
      * <p> The value of this constant is "java.naming.factory.url.pkgs".
      *
-     * @see javax.naming.spi.NamingManager#getObjectInstance
-     * @see javax.naming.spi.NamingManager#getURLContext
-     * @see javax.naming.spi.ObjectFactory
+     * @see j86.j86.javax.naming.spi.NamingManager#getObjectInstance
+     * @see j86.j86.javax.naming.spi.NamingManager#getURLContext
+     * @see j86.j86.javax.naming.spi.ObjectFactory
      * @see #addToEnvironment(String, Object)
      * @see #removeFromEnvironment(String)
      * @see #APPLET
@@ -1077,7 +1077,7 @@ public interface Context {
      * specifying an applet for the initial context constructor to use
      * when searching for other properties.
      * The value of this property is the
-     * <tt>java.applet.Applet</tt> instance that is being executed.
+     * <tt>j86.java.applet.Applet</tt> instance that is being executed.
      * This property may be specified in the environment parameter
      * passed to the initial context constructor.
      * When this property is set, each property that the initial context

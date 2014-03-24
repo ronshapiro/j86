@@ -59,13 +59,13 @@ function JSInvoker(obj) {
  */
 var env = new JSAdapter({
     __get__ : function (name) {
-        return java.lang.System.getenv(name);
+        return j86.java.lang.System.getenv(name);
     },
     __has__ : function (name) {
-        return java.lang.System.getenv().containsKey(name);
+        return j86.java.lang.System.getenv().containsKey(name);
     },
     __getIds__ : function() {
-        return java.lang.System.getenv().keySet().toArray();
+        return j86.java.lang.System.getenv().keySet().toArray();
     },
     __delete__ : function(name) {
         println("can't delete env item");
@@ -74,25 +74,25 @@ var env = new JSAdapter({
         println("can't change env item");
     },
     toString: function() {
-        return java.lang.System.getenv().toString();
+        return j86.java.lang.System.getenv().toString();
     }
 });
 
 /**
- * Creates a convenient script object to deal with java.util.Map instances.
+ * Creates a convenient script object to deal with j86.java.util.Map instances.
  * The result script object's field names are keys of the Map. For example,
  * scriptObj.keyName can be used to access value associated with given key.<br>
  * Example:
  * <pre>
  * <code>
- *     var x = java.lang.SystemProperties();
+ *     var x = j86.java.lang.SystemProperties();
  *     var y = jmap(x);
  *     println(y['java.class.path']); // prints java.class.path System property
  *     delete y['java.class.path']; // remove java.class.path System property
  * </code>
  * </pre>
  *
- * @param map java.util.Map instance that will be wrapped
+ * @param map j86.java.util.Map instance that will be wrapped
  * @constructor
  */
 function jmap(map) {
@@ -124,7 +124,7 @@ function jmap(map) {
 }
 
 /**
- * Creates a convenient script object to deal with java.util.List instances.
+ * Creates a convenient script object to deal with j86.java.util.List instances.
  * The result script object behaves like an array. For example,
  * scriptObj[index] syntax can be used to access values in the List instance.
  * 'length' field gives size of the List. <br>
@@ -132,7 +132,7 @@ function jmap(map) {
  * Example:
  * <pre>
  * <code>
- *    var x = new java.util.ArrayList(4);
+ *    var x = new j86.java.util.ArrayList(4);
  *    x.add('Java');
  *    x.add('JavaScript');
  *    x.add('SQL');
@@ -142,7 +142,7 @@ function jmap(map) {
  *    println(y[2]); // prints third element of list
  *    println(y.length); // prints size of the list
  *
- * @param map java.util.List instance that will be wrapped
+ * @param map j86.java.util.List instance that will be wrapped
  * @constructor
  */
 function jlist(list) {
@@ -187,26 +187,26 @@ function jlist(list) {
 }
 
 /**
- * This is java.lang.System properties wrapped by JSAdapter.
+ * This is j86.java.lang.System properties wrapped by JSAdapter.
  * For eg. to access java.class.path property, you can use
  * the syntax sysProps["java.class.path"]
  */
 var sysProps = new JSAdapter({
     __get__ : function (name) {
-        return java.lang.System.getProperty(name);
+        return j86.java.lang.System.getProperty(name);
     },
     __has__ : function (name) {
-        return java.lang.System.getProperty(name) != null;
+        return j86.java.lang.System.getProperty(name) != null;
     },
     __getIds__ : function() {
-        return java.lang.System.getProperties().keySet().toArray();
+        return j86.java.lang.System.getProperties().keySet().toArray();
     },
     __delete__ : function(name) {
-        java.lang.System.clearProperty(name);
+        j86.java.lang.System.clearProperty(name);
         return true;
     },
     __put__ : function (name, value) {
-        java.lang.System.setProperty(name, value);
+        j86.java.lang.System.setProperty(name, value);
     },
     toString: function() {
         return "<system properties>";
@@ -214,23 +214,23 @@ var sysProps = new JSAdapter({
 });
 
 // stdout, stderr & stdin
-var out = java.lang.System.out;
-var err = java.lang.System.err;
+var out = j86.java.lang.System.out;
+var err = j86.java.lang.System.err;
 // can't use 'in' because it is a JavaScript keyword :-(
-var inp = java.lang.System["in"];
+var inp = j86.java.lang.System["in"];
 
-var BufferedInputStream = java.io.BufferedInputStream;
-var BufferedOutputStream = java.io.BufferedOutputStream;
-var BufferedReader = java.io.BufferedReader;
-var DataInputStream = java.io.DataInputStream;
-var File = java.io.File;
-var FileInputStream = java.io.FileInputStream;
-var FileOutputStream = java.io.FileOutputStream;
-var InputStream = java.io.InputStream;
-var InputStreamReader = java.io.InputStreamReader;
-var OutputStream = java.io.OutputStream;
-var Reader = java.io.Reader;
-var URL = java.net.URL;
+var BufferedInputStream = j86.java.io.BufferedInputStream;
+var BufferedOutputStream = j86.java.io.BufferedOutputStream;
+var BufferedReader = j86.java.io.BufferedReader;
+var DataInputStream = j86.java.io.DataInputStream;
+var File = j86.java.io.File;
+var FileInputStream = j86.java.io.FileInputStream;
+var FileOutputStream = j86.java.io.FileOutputStream;
+var InputStream = j86.java.io.InputStream;
+var InputStreamReader = j86.java.io.InputStreamReader;
+var OutputStream = j86.java.io.OutputStream;
+var Reader = j86.java.io.Reader;
+var URL = j86.java.net.URL;
 
 /**
  * Generic any object to input stream mapper
@@ -242,7 +242,7 @@ function inStream(str) {
     if (typeof(str) == "string") {
         // '-' means standard input
         if (str == '-') {
-            return java.lang.System["in"];
+            return j86.java.lang.System["in"];
         }
         // try file first
         var file = null;
@@ -270,7 +270,7 @@ function inStream(str) {
         }
     }
     // everything failed, just give input stream
-    return java.lang.System["in"];
+    return j86.java.lang.System["in"];
 }
 
 /**
@@ -283,7 +283,7 @@ function inStream(str) {
 function outStream(out) {
     if (typeof(out) == "string") {
         if (out == '>') {
-            return java.lang.System.out;
+            return j86.java.lang.System.out;
         } else {
             // treat it as file
             return new FileOutputStream(pathToFile(out));
@@ -297,7 +297,7 @@ function outStream(out) {
     }
 
     // everything failed, just return System.out
-    return java.lang.System.out;
+    return j86.java.lang.System.out;
 }
 
 /**
@@ -306,9 +306,9 @@ function outStream(out) {
  */
 function streamClose(stream) {
     if (stream) {
-        if (stream != java.lang.System["in"] &&
-            stream != java.lang.System.out &&
-            stream != java.lang.System.err) {
+        if (stream != j86.java.lang.System["in"] &&
+            stream != j86.java.lang.System.out &&
+            stream != j86.java.lang.System.err) {
             try {
                 stream.close();
             } catch (e) {
@@ -355,7 +355,7 @@ if (typeof(load) == 'undefined') {
  * @private
  */
 function javaByteArray(len) {
-    return java.lang.reflect.Array.newInstance(java.lang.Byte.TYPE, len);
+    return j86.j86.j86.java.lang.reflect.Array.newInstance(java.lang.Byte.TYPE, len);
 }
 
 var curDir = new File('.');
@@ -386,7 +386,7 @@ function cd(target) {
 }
 
 /**
- * Converts path to java.io.File taking care of shell present working dir
+ * Converts path to j86.java.io.File taking care of shell present working dir
  *
  * @param pathname file path to be converted
  * @private
@@ -434,7 +434,7 @@ function cp(from, to) {
  * <pre>
  * <code>
  *    cat('test.txt'); // show test.txt file contents
- *    cat('http://java.net'); // show the contents from the URL http://java.net
+ *    cat('http://j86.java.net'); // show the contents from the URL http://java.net
  * </code>
  * </pre>
  * @param obj input to show
@@ -561,17 +561,17 @@ var months = [ "Jan", "Feb", "Mar", "Apr", "May", "Jun",
  * @private
  */
 function printFile(f) {
-    var sb = new java.lang.StringBuffer();
+    var sb = new j86.java.lang.StringBuffer();
     sb.append(f.isDirectory()? "d" : "-");
     sb.append(f.canRead() ? "r": "-" );
     sb.append(f.canWrite() ? "w": "-" );
     sb.append(" ");
 
-    var d = new java.util.Date(f.lastModified());
-    var c = new java.util.GregorianCalendar();
+    var d = new j86.java.util.Date(f.lastModified());
+    var c = new j86.java.util.GregorianCalendar();
     c.setTime(d);
-    var day    = c.get(java.util.Calendar.DAY_OF_MONTH);
-    sb.append(months[c.get(java.util.Calendar.MONTH)]
+    var day    = c.get(j86.java.util.Calendar.DAY_OF_MONTH);
+    sb.append(months[c.get(j86.java.util.Calendar.MONTH)]
          + " " + day );
     if (day < 10) {
         sb.append(" ");
@@ -579,10 +579,10 @@ function printFile(f) {
 
     // to get fixed length 'length' field
     var fieldlen = 8;
-    var len = new java.lang.StringBuffer();
+    var len = new j86.java.lang.StringBuffer();
     for(var j=0; j<fieldlen; j++)
         len.append(" ");
-    len.insert(0, java.lang.Long.toString(f.length()));
+    len.insert(0, j86.java.lang.Long.toString(f.length()));
     len.setLength(fieldlen);
     // move the spaces to the front
     var si = len.toString().indexOf(" ");
@@ -695,7 +695,7 @@ function find(dir, pattern, callback) {
  * @param cmd command to execute in child process
  */
 function exec(cmd) {
-    var process = java.lang.Runtime.getRuntime().exec(cmd);
+    var process = j86.java.lang.Runtime.getRuntime().exec(cmd);
     var inp = new DataInputStream(process.getInputStream());
     var line = null;
     while ((line = inp.readLine()) != null) {
@@ -714,9 +714,9 @@ if (typeof(exit) == 'undefined') {
      */
     this.exit = function (code) {
         if (code) {
-            java.lang.System.exit(code + 0);
+            j86.java.lang.System.exit(code + 0);
         } else {
-            java.lang.System.exit(0);
+            j86.java.lang.System.exit(0);
         }
     }
 }
@@ -836,7 +836,7 @@ function XSLTransform(inp, style, out) {
  * @param cmd name of the command searched from PATH
  */
 function which(cmd) {
-    var st = new java.util.StringTokenizer(env.PATH, File.pathSeparator);
+    var st = new j86.java.util.StringTokenizer(env.PATH, File.pathSeparator);
     while (st.hasMoreTokens()) {
         var file = new File(st.nextToken(), cmd);
         if (file.exists()) {
@@ -882,12 +882,12 @@ if (typeof(printf) == 'undefined') {
      * @param args variadic argument list
      */
     this.printf = function (format, args/*, more args*/) {  
-        var array = java.lang.reflect.Array.newInstance(java.lang.Object, 
+        var array = j86.j86.j86.java.lang.reflect.Array.newInstance(java.lang.Object, 
                     arguments.length - 1);
         for (var i = 0; i < array.length; i++) {
             array[i] = arguments[i+1];
         }
-        java.lang.System.out.printf(format, array);
+        j86.java.lang.System.out.printf(format, array);
     }
 }
 
@@ -901,21 +901,21 @@ function read(prompt, multiline) {
     if (!prompt) {
         prompt = '>';
     }
-    var inp = java.lang.System["in"];
+    var inp = j86.java.lang.System["in"];
     var reader = new BufferedReader(new InputStreamReader(inp));
     if (multiline) {
         var line = '';
         while (true) {
-            java.lang.System.err.print(prompt);
-            java.lang.System.err.flush();
+            j86.java.lang.System.err.print(prompt);
+            j86.java.lang.System.err.flush();
             var tmp = reader.readLine();
             if (tmp == '' || tmp == null) break;
             line += tmp + '\n';
         }
         return line;
     } else {
-        java.lang.System.err.print(prompt);
-        java.lang.System.err.flush();
+        j86.java.lang.System.err.print(prompt);
+        j86.java.lang.System.err.flush();
         return reader.readLine();
     }
 }

@@ -23,21 +23,21 @@
  * questions.
  */
 
-package java.util.spi;
+package j86.j86.java.util.spi;
 
-import java.util.Arrays;
-import java.util.Currency;
-import java.util.List;
-import java.util.Locale;
-import java.util.ResourceBundle.Control;
+import j86.java.util.Arrays;
+import j86.java.util.Currency;
+import j86.java.util.List;
+import j86.java.util.Locale;
+import j86.java.util.ResourceBundle.Control;
 
 /**
  * An abstract class for service providers that
  * provide localized currency symbols and display names for the
- * {@link java.util.Currency Currency} class.
+ * {@link j86.java.util.Currency Currency} class.
  * Note that currency symbols are considered names when determining
  * behaviors described in the
- * {@link java.util.spi.LocaleServiceProvider LocaleServiceProvider}
+ * {@link j86.j86.java.util.spi.LocaleServiceProvider LocaleServiceProvider}
  * specification.
  *
  * @since        1.6
@@ -68,9 +68,9 @@ public abstract class CurrencyNameProvider extends LocaleServiceProvider {
      * @exception IllegalArgumentException if <code>currencyCode</code> is not in
      *     the form of three upper-case letters, or <code>locale</code> isn't
      *     one of the locales returned from
-     *     {@link java.util.spi.LocaleServiceProvider#getAvailableLocales()
+     *     {@link j86.j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
      *     getAvailableLocales()}.
-     * @see java.util.Currency#getSymbol(java.util.Locale)
+     * @see j86.java.util.Currency#getSymbol(java.util.Locale)
      */
     public abstract String getSymbol(String currencyCode, Locale locale);
 
@@ -87,7 +87,7 @@ public abstract class CurrencyNameProvider extends LocaleServiceProvider {
      * @exception IllegalArgumentException if <code>currencyCode</code> is not in
      *     the form of three upper-case letters, or <code>locale</code> isn't
      *     one of the locales returned from
-     *     {@link java.util.spi.LocaleServiceProvider#getAvailableLocales()
+     *     {@link j86.j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
      *     getAvailableLocales()}.
      * @exception NullPointerException if <code>currencyCode</code> or
      *     <code>locale</code> is <code>null</code>

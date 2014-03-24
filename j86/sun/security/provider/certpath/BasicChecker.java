@@ -23,31 +23,31 @@
  * questions.
  */
 
-package sun.security.provider.certpath;
+package j86.j86.sun.security.provider.certpath;
 
-import java.math.BigInteger;
-import java.util.Collection;
-import java.util.Date;
-import java.util.Set;
-import java.security.GeneralSecurityException;
-import java.security.KeyFactory;
-import java.security.PublicKey;
-import java.security.SignatureException;
-import java.security.cert.Certificate;
-import java.security.cert.CertificateExpiredException;
-import java.security.cert.CertificateNotYetValidException;
-import java.security.cert.CertPathValidatorException;
-import java.security.cert.CertPathValidatorException.BasicReason;
-import java.security.cert.X509Certificate;
-import java.security.cert.PKIXCertPathChecker;
-import java.security.cert.PKIXReason;
-import java.security.cert.TrustAnchor;
-import java.security.interfaces.DSAParams;
-import java.security.interfaces.DSAPublicKey;
-import java.security.spec.DSAPublicKeySpec;
-import javax.security.auth.x500.X500Principal;
-import sun.security.x509.X500Name;
-import sun.security.util.Debug;
+import j86.java.math.BigInteger;
+import j86.java.util.Collection;
+import j86.java.util.Date;
+import j86.java.util.Set;
+import j86.java.security.GeneralSecurityException;
+import j86.java.security.KeyFactory;
+import j86.java.security.PublicKey;
+import j86.java.security.SignatureException;
+import j86.j86.java.security.cert.Certificate;
+import j86.j86.java.security.cert.CertificateExpiredException;
+import j86.j86.java.security.cert.CertificateNotYetValidException;
+import j86.j86.java.security.cert.CertPathValidatorException;
+import j86.j86.java.security.cert.CertPathValidatorException.BasicReason;
+import j86.j86.java.security.cert.X509Certificate;
+import j86.j86.java.security.cert.PKIXCertPathChecker;
+import j86.j86.java.security.cert.PKIXReason;
+import j86.j86.java.security.cert.TrustAnchor;
+import j86.j86.java.security.interfaces.DSAParams;
+import j86.j86.java.security.interfaces.DSAPublicKey;
+import j86.j86.java.security.spec.DSAPublicKeySpec;
+import j86.j86.javax.security.auth.x500.X500Principal;
+import j86.sun.security.x509.X500Name;
+import j86.sun.security.util.Debug;
 
 /**
  * BasicChecker is a PKIXCertPathChecker that checks the basic information

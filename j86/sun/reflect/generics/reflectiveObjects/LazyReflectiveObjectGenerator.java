@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.reflect.generics.reflectiveObjects;
+package j86.j86.sun.reflect.generics.reflectiveObjects;
 
-import sun.reflect.generics.factory.GenericsFactory;
-import sun.reflect.generics.visitor.Reifier;
+import j86.j86.sun.reflect.generics.factory.GenericsFactory;
+import j86.j86.sun.reflect.generics.visitor.Reifier;
 
 
 /**

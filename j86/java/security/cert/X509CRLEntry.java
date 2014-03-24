@@ -23,13 +23,13 @@
  * questions.
  */
 
-package java.security.cert;
+package j86.j86.java.security.cert;
 
-import java.math.BigInteger;
-import java.util.Date;
-import javax.security.auth.x500.X500Principal;
+import j86.java.math.BigInteger;
+import j86.java.util.Date;
+import j86.j86.javax.security.auth.x500.X500Principal;
 
-import sun.security.x509.X509CRLEntryImpl;
+import j86.sun.security.x509.X509CRLEntryImpl;
 
 /**
  * <p>Abstract class for a revoked certificate in a CRL (Certificate

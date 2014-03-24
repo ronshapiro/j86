@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.security.jgss;
+package j86.sun.security.jgss;
 
-import java.util.HashMap;
-import javax.security.auth.login.AppConfigurationEntry;
-import javax.security.auth.login.Configuration;
-import org.ietf.jgss.Oid;
+import j86.java.util.HashMap;
+import j86.j86.javax.security.auth.login.AppConfigurationEntry;
+import j86.j86.javax.security.auth.login.Configuration;
+import j86.org.ietf.jgss.Oid;
 
 /**
  * A Configuration implementation especially designed for JGSS.
@@ -41,8 +41,8 @@ public class LoginConfigImpl extends Configuration {
     private final Configuration config;
     private final GSSCaller caller;
     private final String mechName;
-    private static final sun.security.util.Debug debug =
-        sun.security.util.Debug.getInstance("gssloginconfig", "\t[GSS LoginConfigImpl]");
+    private static final j86.sun.security.util.Debug debug =
+        j86.sun.security.util.Debug.getInstance("gssloginconfig", "\t[GSS LoginConfigImpl]");
 
     /**
      * A new instance of LoginConfigImpl must be created for each login request
@@ -59,8 +59,8 @@ public class LoginConfigImpl extends Configuration {
         } else {
             throw new IllegalArgumentException(mech.toString() + " not supported");
         }
-        config = java.security.AccessController.doPrivileged
-                (new java.security.PrivilegedAction <Configuration> () {
+        config = j86.java.security.AccessController.doPrivileged
+                (new j86.java.security.PrivilegedAction <Configuration> () {
             public Configuration run() {
                 return Configuration.getConfiguration();
             }
@@ -90,27 +90,27 @@ public class LoginConfigImpl extends Configuration {
         if ("krb5".equals(mechName)) {
             if (caller == GSSCaller.CALLER_INITIATE) {
                 alts = new String[] {
-                    "com.sun.security.jgss.krb5.initiate",
-                    "com.sun.security.jgss.initiate",
+                    "com.j86.j86.sun.security.jgss.krb5.initiate",
+                    "com.j86.sun.security.jgss.initiate",
                 };
             } else if (caller == GSSCaller.CALLER_ACCEPT) {
                 alts = new String[] {
-                    "com.sun.security.jgss.krb5.accept",
-                    "com.sun.security.jgss.accept",
+                    "com.j86.j86.sun.security.jgss.krb5.accept",
+                    "com.j86.sun.security.jgss.accept",
                 };
             } else if (caller == GSSCaller.CALLER_SSL_CLIENT) {
                 alts = new String[] {
-                    "com.sun.security.jgss.krb5.initiate",
-                    "com.sun.net.ssl.client",
+                    "com.j86.j86.sun.security.jgss.krb5.initiate",
+                    "com.j86.sun.net.ssl.client",
                 };
             } else if (caller == GSSCaller.CALLER_SSL_SERVER) {
                 alts = new String[] {
-                    "com.sun.security.jgss.krb5.accept",
-                    "com.sun.net.ssl.server",
+                    "com.j86.j86.sun.security.jgss.krb5.accept",
+                    "com.j86.sun.net.ssl.server",
                 };
             } else if (caller instanceof HttpCaller) {
                 alts = new String[] {
-                    "com.sun.security.jgss.krb5.initiate",
+                    "com.j86.j86.sun.security.jgss.krb5.initiate",
                 };
             } else if (caller == GSSCaller.CALLER_UNKNOWN) {
                 throw new AssertionError("caller not defined");
@@ -124,13 +124,13 @@ public class LoginConfigImpl extends Configuration {
             case GSSUtil.CALLER_SSL_CLIENT:
             case GSSUtil.CALLER_HTTP_NEGOTIATE:
                 alts = new String[] {
-                    "com.sun.security.jgss." + mechName + ".initiate",
+                    "com.j86.sun.security.jgss." + mechName + ".initiate",
                 };
                 break;
             case GSSUtil.CALLER_ACCEPT:
             case GSSUtil.CALLER_SSL_SERVER:
                 alts = new String[] {
-                    "com.sun.security.jgss." + mechName + ".accept",
+                    "com.j86.sun.security.jgss." + mechName + ".accept",
                 };
                 break;
             case GSSUtil.CALLER_UNKNOWN:
@@ -183,7 +183,7 @@ public class LoginConfigImpl extends Configuration {
             }
             return new AppConfigurationEntry[] {
                 new AppConfigurationEntry(
-                        "com.sun.security.auth.module.Krb5LoginModule",
+                        "j86.j86.com.sun.security.auth.module.Krb5LoginModule",
                         AppConfigurationEntry.LoginModuleControlFlag.REQUIRED,
                         options)
             };

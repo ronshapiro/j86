@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.lang.management;
+package j86.j86.java.lang.management;
 
 /**
  * The management interface for a memory pool.  A memory pool
@@ -43,7 +43,7 @@ package java.lang.management;
  * a memory pool within an <tt>MBeanServer</tt> is:
  * <blockquote>
  *    {@link ManagementFactory#MEMORY_POOL_MXBEAN_DOMAIN_TYPE
- *    <tt>java.lang:type=MemoryPool</tt>}<tt>,name=</tt><i>pool's name</i>
+ *    <tt>j86.java.lang:type=MemoryPool</tt>}<tt>,name=</tt><i>pool's name</i>
  * </blockquote>
  *
  * It can be obtained by calling the
@@ -259,7 +259,7 @@ package java.lang.management;
  *       should be properly synchronized.
  *
  *       <pre>
- *       class MyListener implements javax.management.NotificationListener {
+ *       class MyListener implements j86.javax.management.NotificationListener {
  *            public void handleNotification(Notification notification, Object handback)  {
  *                String notifType = notification.getType();
  *                if (notifType.equals(MemoryNotificationInfo.MEMORY_THRESHOLD_EXCEEDED)) {
@@ -353,7 +353,7 @@ package java.lang.management;
  * in a similar fashion.
  *
  * @see ManagementFactory#getPlatformMXBeans(Class)
- * @see <a href="../../../javax/management/package-summary.html">
+ * @see <a href="../../../j86.javax.management/package-summary.html">
  *      JMX Specification.</a>
  * @see <a href="package-summary.html#examples">
  *      Ways to Access MXBeans</a>
@@ -430,7 +430,7 @@ public interface MemoryPoolMXBean extends PlatformManagedObject {
      * Resets the peak memory usage statistic of this memory pool
      * to the current memory usage.
      *
-     * @throws java.lang.SecurityException if a security manager
+     * @throws j86.java.lang.SecurityException if a security manager
      *         exists and the caller does not have
      *         ManagementPermission("control").
      */
@@ -488,7 +488,7 @@ public interface MemoryPoolMXBean extends PlatformManagedObject {
      * @throws UnsupportedOperationException if this memory pool
      *         does not support a usage threshold.
      *
-     * @throws java.lang.SecurityException if a security manager
+     * @throws j86.java.lang.SecurityException if a security manager
      *         exists and the caller does not have
      *         ManagementPermission("control").
      *
@@ -567,7 +567,7 @@ public interface MemoryPoolMXBean extends PlatformManagedObject {
      * @throws UnsupportedOperationException if this memory pool
      *         does not support a collection usage threshold.
      *
-     * @throws java.lang.SecurityException if a security manager
+     * @throws j86.java.lang.SecurityException if a security manager
      *         exists and the caller does not have
      *         ManagementPermission("control").
      *

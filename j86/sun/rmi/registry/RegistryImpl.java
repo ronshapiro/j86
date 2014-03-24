@@ -23,38 +23,38 @@
  * questions.
  */
 
-package sun.rmi.registry;
+package j86.sun.rmi.registry;
 
-import java.util.Enumeration;
-import java.util.Hashtable;
-import java.util.MissingResourceException;
-import java.util.ResourceBundle;
-import java.io.FilePermission;
-import java.io.IOException;
-import java.net.*;
-import java.rmi.*;
-import java.rmi.server.ObjID;
-import java.rmi.server.RemoteServer;
-import java.rmi.server.ServerNotActiveException;
-import java.rmi.registry.Registry;
-import java.rmi.server.RMIClientSocketFactory;
-import java.rmi.server.RMIServerSocketFactory;
-import java.security.AccessControlContext;
-import java.security.AccessController;
-import java.security.CodeSource;
-import java.security.Policy;
-import java.security.PrivilegedActionException;
-import java.security.PrivilegedExceptionAction;
-import java.security.PermissionCollection;
-import java.security.Permissions;
-import java.security.ProtectionDomain;
-import java.text.MessageFormat;
-import sun.rmi.server.LoaderHandler;
-import sun.rmi.server.UnicastServerRef;
-import sun.rmi.server.UnicastServerRef2;
-import sun.rmi.transport.LiveRef;
-import sun.rmi.transport.ObjectTable;
-import sun.rmi.transport.Target;
+import j86.java.util.Enumeration;
+import j86.java.util.Hashtable;
+import j86.java.util.MissingResourceException;
+import j86.java.util.ResourceBundle;
+import j86.java.io.FilePermission;
+import j86.java.io.IOException;
+import j86.java.net.*;
+import j86.java.rmi.*;
+import j86.j86.java.rmi.server.ObjID;
+import j86.j86.java.rmi.server.RemoteServer;
+import j86.j86.java.rmi.server.ServerNotActiveException;
+import j86.j86.java.rmi.registry.Registry;
+import j86.j86.java.rmi.server.RMIClientSocketFactory;
+import j86.j86.java.rmi.server.RMIServerSocketFactory;
+import j86.java.security.AccessControlContext;
+import j86.java.security.AccessController;
+import j86.java.security.CodeSource;
+import j86.java.security.Policy;
+import j86.java.security.PrivilegedActionException;
+import j86.java.security.PrivilegedExceptionAction;
+import j86.java.security.PermissionCollection;
+import j86.java.security.Permissions;
+import j86.java.security.ProtectionDomain;
+import j86.java.text.MessageFormat;
+import j86.sun.rmi.server.LoaderHandler;
+import j86.sun.rmi.server.UnicastServerRef;
+import j86.sun.rmi.server.UnicastServerRef2;
+import j86.sun.rmi.transport.LiveRef;
+import j86.sun.rmi.transport.ObjectTable;
+import j86.sun.rmi.transport.Target;
 
 /**
  * A "registry" exists on every node that allows RMI connections to
@@ -68,9 +68,9 @@ import sun.rmi.transport.Target;
  *
  * The LocateRegistry class is used to obtain registry for different hosts.
  *
- * @see java.rmi.registry.LocateRegistry
+ * @see j86.j86.java.rmi.registry.LocateRegistry
  */
-public class RegistryImpl extends java.rmi.server.RemoteServer
+public class RegistryImpl extends j86.j86.java.rmi.server.RemoteServer
         implements Registry
 {
 
@@ -245,16 +245,16 @@ public class RegistryImpl extends java.rmi.server.RemoteServer
             InetAddress clientHost;
 
             try {
-                clientHost = java.security.AccessController.doPrivileged(
-                    new java.security.PrivilegedExceptionAction<InetAddress>() {
+                clientHost = j86.java.security.AccessController.doPrivileged(
+                    new j86.java.security.PrivilegedExceptionAction<InetAddress>() {
                         public InetAddress run()
-                            throws java.net.UnknownHostException
+                            throws j86.java.net.UnknownHostException
                         {
                             return InetAddress.getByName(clientHostName);
                         }
                     });
             } catch (PrivilegedActionException pae) {
-                throw (java.net.UnknownHostException) pae.getException();
+                throw (j86.java.net.UnknownHostException) pae.getException();
             }
 
             // if client not yet seen, make sure client allowed access
@@ -268,9 +268,9 @@ public class RegistryImpl extends java.rmi.server.RemoteServer
                 try {
                     final InetAddress finalClientHost = clientHost;
 
-                    java.security.AccessController.doPrivileged(
-                        new java.security.PrivilegedExceptionAction<Void>() {
-                            public Void run() throws java.io.IOException {
+                    j86.java.security.AccessController.doPrivileged(
+                        new j86.java.security.PrivilegedExceptionAction<Void>() {
+                            public Void run() throws j86.java.io.IOException {
                                 /*
                                  * if a ServerSocket can be bound to the client's
                                  * address then that address must be local
@@ -293,7 +293,7 @@ public class RegistryImpl extends java.rmi.server.RemoteServer
             /*
              * Local call from this VM: allow access.
              */
-        } catch (java.net.UnknownHostException ex) {
+        } catch (j86.java.net.UnknownHostException ex) {
             throw new AccessException("Registry." + op +
                                       " disallowed; origin is unknown host");
         }
@@ -310,7 +310,7 @@ public class RegistryImpl extends java.rmi.server.RemoteServer
         if (resources == null) {
             try {
                 resources = ResourceBundle.getBundle(
-                    "sun.rmi.registry.resources.rmiregistry");
+                    "j86.sun.rmi.registry.resources.rmiregistry");
             } catch (MissingResourceException mre) {
             }
             if (resources == null) {
@@ -362,15 +362,15 @@ public class RegistryImpl extends java.rmi.server.RemoteServer
             if (envcp == null) {
                 envcp = ".";            // preserve old default behavior
             }
-            URL[] urls = sun.misc.URLClassPath.pathToURLs(envcp);
+            URL[] urls = j86.sun.misc.URLClassPath.pathToURLs(envcp);
             ClassLoader cl = new URLClassLoader(urls);
 
             /*
              * Fix bugid 4242317: Classes defined by this class loader should
-             * be annotated with the value of the "java.rmi.server.codebase"
+             * be annotated with the value of the "j86.j86.java.rmi.server.codebase"
              * property, not the "file:" URLs for the CLASSPATH elements.
              */
-            sun.rmi.server.LoaderHandler.registerCodebaseLoader(cl);
+            j86.sun.rmi.server.LoaderHandler.registerCodebaseLoader(cl);
 
             Thread.currentThread().setContextClassLoader(cl);
 
@@ -410,16 +410,16 @@ public class RegistryImpl extends java.rmi.server.RemoteServer
     /**
      * Generates an AccessControlContext with minimal permissions.
      * The approach used here is taken from the similar method
-     * getAccessControlContext() in the sun.applet.AppletPanel class.
+     * getAccessControlContext() in the j86.sun.applet.AppletPanel class.
      */
     private static AccessControlContext getAccessControlContext(int port) {
         // begin with permissions granted to all code in current policy
         PermissionCollection perms = AccessController.doPrivileged(
-            new java.security.PrivilegedAction<PermissionCollection>() {
+            new j86.java.security.PrivilegedAction<PermissionCollection>() {
                 public PermissionCollection run() {
                     CodeSource codesource = new CodeSource(null,
-                        (java.security.cert.Certificate[]) null);
-                    Policy p = java.security.Policy.getPolicy();
+                        (j86.j86.java.security.cert.Certificate[]) null);
+                    Policy p = j86.java.security.Policy.getPolicy();
                     if (p != null) {
                         return p.getPermissions(codesource);
                     } else {
@@ -447,7 +447,7 @@ public class RegistryImpl extends java.rmi.server.RemoteServer
          */
         ProtectionDomain pd = new ProtectionDomain(
             new CodeSource(null,
-                (java.security.cert.Certificate[]) null), perms);
+                (j86.j86.java.security.cert.Certificate[]) null), perms);
         return new AccessControlContext(new ProtectionDomain[] { pd });
     }
 }

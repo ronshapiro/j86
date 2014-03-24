@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.awt.util;
+package j86.j86.sun.awt.util;
 
-import java.util.AbstractSequentialList;
-import java.util.Collection;
-import java.util.ConcurrentModificationException;
-import java.util.Deque;
-import java.util.Iterator;
-import java.util.List;
-import java.util.ListIterator;
-import java.util.NoSuchElementException;
+import j86.java.util.AbstractSequentialList;
+import j86.java.util.Collection;
+import j86.java.util.ConcurrentModificationException;
+import j86.java.util.Deque;
+import j86.java.util.Iterator;
+import j86.java.util.List;
+import j86.java.util.ListIterator;
+import j86.java.util.NoSuchElementException;
 
 /**
  * Linked list implementation of the <tt>List</tt> interface.  Implements all
@@ -862,7 +862,7 @@ public class IdentityLinkedList<E>
      */
     public <T> T[] toArray(T[] a) {
         if (a.length < size)
-            a = (T[])java.lang.reflect.Array.newInstance(
+            a = (T[])j86.j86.j86.java.lang.reflect.Array.newInstance(
                                 a.getClass().getComponentType(), size);
         int i = 0;
         Object[] result = a;

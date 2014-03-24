@@ -23,11 +23,11 @@
  * questions.
  */
 
-package java.nio.file.attribute;
+package j86.j86.j86.java.nio.file.attribute;
 
-import java.nio.file.*;
-import java.util.Set;
-import java.io.IOException;
+import j86.j86.java.nio.file.*;
+import j86.java.util.Set;
+import j86.java.io.IOException;
 
 /**
  * A file attribute view that provides a view of the file attributes commonly

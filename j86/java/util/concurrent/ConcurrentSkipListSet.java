@@ -33,18 +33,18 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package java.util.concurrent;
-import java.util.AbstractSet;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.NavigableMap;
-import java.util.NavigableSet;
-import java.util.Set;
-import java.util.SortedSet;
-import java.util.Spliterator;
+package j86.j86.java.util.concurrent;
+import j86.java.util.AbstractSet;
+import j86.java.util.Collection;
+import j86.java.util.Collections;
+import j86.java.util.Comparator;
+import j86.java.util.Iterator;
+import j86.java.util.Map;
+import j86.java.util.NavigableMap;
+import j86.java.util.NavigableSet;
+import j86.java.util.Set;
+import j86.java.util.SortedSet;
+import j86.java.util.Spliterator;
 
 /**
  * A scalable concurrent {@link NavigableSet} implementation based on
@@ -93,7 +93,7 @@ import java.util.Spliterator;
  */
 public class ConcurrentSkipListSet<E>
     extends AbstractSet<E>
-    implements NavigableSet<E>, Cloneable, java.io.Serializable {
+    implements NavigableSet<E>, Cloneable, j86.java.io.Serializable {
 
     private static final long serialVersionUID = -2479143111061671589L;
 
@@ -390,14 +390,14 @@ public class ConcurrentSkipListSet<E>
     }
 
     /**
-     * @throws java.util.NoSuchElementException {@inheritDoc}
+     * @throws j86.java.util.NoSuchElementException {@inheritDoc}
      */
     public E first() {
         return m.firstKey();
     }
 
     /**
-     * @throws java.util.NoSuchElementException {@inheritDoc}
+     * @throws j86.java.util.NoSuchElementException {@inheritDoc}
      */
     public E last() {
         return m.lastKey();
@@ -490,7 +490,7 @@ public class ConcurrentSkipListSet<E>
      * should document the reporting of additional characteristic values.
      *
      * <p>The spliterator's comparator (see
-     * {@link java.util.Spliterator#getComparator()}) is {@code null} if
+     * {@link j86.java.util.Spliterator#getComparator()}) is {@code null} if
      * the set's comparator (see {@link #comparator()}) is {@code null}.
      * Otherwise, the spliterator's comparator is the same as or imposes the
      * same total ordering as the set's comparator.
@@ -511,11 +511,11 @@ public class ConcurrentSkipListSet<E>
         UNSAFE.putObjectVolatile(this, mapOffset, map);
     }
 
-    private static final sun.misc.Unsafe UNSAFE;
+    private static final j86.sun.misc.Unsafe UNSAFE;
     private static final long mapOffset;
     static {
         try {
-            UNSAFE = sun.misc.Unsafe.getUnsafe();
+            UNSAFE = j86.sun.misc.Unsafe.getUnsafe();
             Class<?> k = ConcurrentSkipListSet.class;
             mapOffset = UNSAFE.objectFieldOffset
                 (k.getDeclaredField("m"));

@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.tools.java;
+package j86.sun.tools.java;
 
-import java.io.IOException;
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
+import j86.java.io.IOException;
+import j86.java.io.DataInputStream;
+import j86.java.io.DataOutputStream;
 
 /**
  * This class is used to represent an attribute from a binary class.

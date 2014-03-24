@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.util.calendar;
+package j86.j86.sun.util.calendar;
 
-import java.util.Locale;
-import java.util.TimeZone;
+import j86.java.util.Locale;
+import j86.java.util.TimeZone;
 
 class ImmutableGregorianDate extends BaseCalendar.Date {
     private final BaseCalendar.Date date;

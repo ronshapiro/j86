@@ -24,7 +24,7 @@
  */
 
 
-package javax.management.openmbean;
+package j86.j86.javax.management.openmbean;
 
 
 // java import
@@ -33,16 +33,16 @@ package javax.management.openmbean;
 
 // jmx import
 //
-import javax.management.MBeanParameterInfo;
+import j86.javax.management.MBeanParameterInfo;
 
 
 /**
  * <p>Describes a constructor of an Open MBean.</p>
  *
  * <p>This interface declares the same methods as the class {@link
- * javax.management.MBeanConstructorInfo}.  A class implementing this
+ * j86.javax.management.MBeanConstructorInfo}.  A class implementing this
  * interface (typically {@link OpenMBeanConstructorInfoSupport})
- * should extend {@link javax.management.MBeanConstructorInfo}.</p>
+ * should extend {@link j86.javax.management.MBeanConstructorInfo}.</p>
  *
  * <p>The {@link #getSignature()} method should return at runtime an
  * array of instances of a subclass of {@link MBeanParameterInfo}
@@ -112,7 +112,7 @@ public interface OpenMBeanConstructorInfo {
      * The hash code of an <code>OpenMBeanConstructorInfo</code> instance is the sum of the hash codes
      * of all elements of information used in <code>equals</code> comparisons
      * (ie: its name and signature, where the signature hashCode is calculated by a call to
-     *  <tt>java.util.Arrays.asList(this.getSignature).hashCode()</tt>).
+     *  <tt>j86.java.util.Arrays.asList(this.getSignature).hashCode()</tt>).
      * <p>
      * This ensures that <code> t1.equals(t2) </code> implies that <code> t1.hashCode()==t2.hashCode() </code>
      * for any two <code>OpenMBeanConstructorInfo</code> instances <code>t1</code> and <code>t2</code>,
@@ -127,7 +127,7 @@ public interface OpenMBeanConstructorInfo {
     /**
      * Returns a string representation of this <code>OpenMBeanConstructorInfo</code> instance.
      * <p>
-     * The string representation consists of the name of this class (ie <code>javax.management.openmbean.OpenMBeanConstructorInfo</code>),
+     * The string representation consists of the name of this class (ie <code>j86.j86.javax.management.openmbean.OpenMBeanConstructorInfo</code>),
      * and the name and signature of the described constructor.
      *
      * @return  a string representation of this <code>OpenMBeanConstructorInfo</code> instance

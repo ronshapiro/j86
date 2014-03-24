@@ -23,18 +23,18 @@
  * questions.
  */
 
-package sun.security.util;
+package j86.sun.security.util;
 
 /**
  * <p> This class represents the <code>ResourceBundle</code>
- * for javax.security.auth and sun.security.
+ * for j86.javax.security.auth and sun.security.
  *
  */
-public class Resources extends java.util.ListResourceBundle {
+public class Resources extends j86.java.util.ListResourceBundle {
 
     private static final Object[][] contents = {
 
-        // javax.security.auth.PrivateCredentialPermission
+        // j86.javax.security.auth.PrivateCredentialPermission
         {"invalid.null.input.s.", "invalid null input(s)"},
         {"actions.can.only.be.read.", "actions can only be 'read'"},
         {"permission.name.name.syntax.invalid.",
@@ -52,12 +52,12 @@ public class Resources extends java.util.ListResourceBundle {
         {"CredOwner.Principal.Class.class.Principal.Name.name",
                 "CredOwner:\n\tPrincipal Class = {0}\n\tPrincipal Name = {1}"},
 
-        // javax.security.auth.x500
+        // j86.j86.javax.security.auth.x500
         {"provided.null.name", "provided null name"},
         {"provided.null.keyword.map", "provided null keyword map"},
         {"provided.null.OID.map", "provided null OID map"},
 
-        // javax.security.auth.Subject
+        // j86.javax.security.auth.Subject
         {"NEWLINE", "\n"},
         {"invalid.null.AccessControlContext.provided",
                 "invalid null AccessControlContext provided"},
@@ -72,15 +72,15 @@ public class Resources extends java.util.ListResourceBundle {
         {".Private.Credential.inaccessible.",
                 "\tPrivate Credential inaccessible\n"},
         {"Subject.is.read.only", "Subject is read-only"},
-        {"attempting.to.add.an.object.which.is.not.an.instance.of.java.security.Principal.to.a.Subject.s.Principal.Set",
-                "attempting to add an object which is not an instance of java.security.Principal to a Subject's Principal Set"},
+        {"attempting.to.add.an.object.which.is.not.an.instance.of.j86.java.security.Principal.to.a.Subject.s.Principal.Set",
+                "attempting to add an object which is not an instance of j86.java.security.Principal to a Subject's Principal Set"},
         {"attempting.to.add.an.object.which.is.not.an.instance.of.class",
                 "attempting to add an object which is not an instance of {0}"},
 
-        // javax.security.auth.login.AppConfigurationEntry
+        // j86.j86.javax.security.auth.login.AppConfigurationEntry
         {"LoginModuleControlFlag.", "LoginModuleControlFlag: "},
 
-        // javax.security.auth.login.LoginContext
+        // j86.j86.javax.security.auth.login.LoginContext
         {"Invalid.null.input.name", "Invalid null input: name"},
         {"No.LoginModules.configured.for.name",
          "No LoginModules configured for {0}"},
@@ -102,14 +102,14 @@ public class Resources extends java.util.ListResourceBundle {
         {"Login.Failure.all.modules.ignored",
                 "Login Failure: all modules ignored"},
 
-        // sun.security.provider.PolicyFile
+        // j86.sun.security.provider.PolicyFile
 
-        {"java.security.policy.error.parsing.policy.message",
-                "java.security.policy: error parsing {0}:\n\t{1}"},
-        {"java.security.policy.error.adding.Permission.perm.message",
-                "java.security.policy: error adding Permission, {0}:\n\t{1}"},
-        {"java.security.policy.error.adding.Entry.message",
-                "java.security.policy: error adding Entry:\n\t{0}"},
+        {"j86.java.security.policy.error.parsing.policy.message",
+                "j86.java.security.policy: error parsing {0}:\n\t{1}"},
+        {"j86.java.security.policy.error.adding.Permission.perm.message",
+                "j86.java.security.policy: error adding Permission, {0}:\n\t{1}"},
+        {"j86.java.security.policy.error.adding.Entry.message",
+                "j86.java.security.policy: error adding Entry:\n\t{0}"},
         {"alias.name.not.provided.pe.name.", "alias name not provided ({0})"},
         {"unable.to.perform.substitution.on.alias.suffix",
                 "unable to perform substitution on alias, {0}"},
@@ -119,7 +119,7 @@ public class Resources extends java.util.ListResourceBundle {
         {"RPARAM", ")"},
         {"type.can.t.be.null","type can't be null"},
 
-        // sun.security.provider.PolicyParser
+        // j86.sun.security.provider.PolicyParser
         {"keystorePasswordURL.can.not.be.specified.without.also.specifying.keystore",
                 "keystorePasswordURL can not be specified without also specifying keystore"},
         {"expected.keystore.type", "expected keystore type"},
@@ -146,12 +146,12 @@ public class Resources extends java.util.ListResourceBundle {
         {"null.principalClass.or.principalName",
                 "null principalClass or principalName"},
 
-        // sun.security.pkcs11.SunPKCS11
+        // j86.j86.sun.security.pkcs11.SunPKCS11
         {"PKCS11.Token.providerName.Password.",
                 "PKCS11 Token [{0}] Password: "},
 
         /* --- DEPRECATED --- */
-        // javax.security.auth.Policy
+        // j86.javax.security.auth.Policy
         {"unable.to.instantiate.Subject.based.policy",
                 "unable to instantiate Subject-based policy"}
     };

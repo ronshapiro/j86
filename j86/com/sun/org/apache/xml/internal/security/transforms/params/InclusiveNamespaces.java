@@ -20,15 +20,15 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.sun.org.apache.xml.internal.security.transforms.params;
+package j86.j86.j86.com.sun.org.apache.xml.internal.security.transforms.params;
 
-import java.util.Set;
-import java.util.SortedSet;
-import java.util.TreeSet;
+import j86.java.util.Set;
+import j86.java.util.SortedSet;
+import j86.java.util.TreeSet;
 
-import com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
-import com.sun.org.apache.xml.internal.security.transforms.TransformParam;
-import com.sun.org.apache.xml.internal.security.utils.ElementProxy;
+import j86.j86.com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+import j86.j86.com.sun.org.apache.xml.internal.security.transforms.TransformParam;
+import j86.j86.com.sun.org.apache.xml.internal.security.utils.ElementProxy;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package com.sun.management;
+package com.j86.sun.management;
 
 /**
  * Platform-specific management interface for the operating system
@@ -31,7 +31,7 @@ package com.sun.management;
  *
  * <p>
  * The <tt>OperatingSystemMXBean</tt> object returned by
- * {@link java.lang.management.ManagementFactory#getOperatingSystemMXBean()}
+ * {@link j86.j86.java.lang.management.ManagementFactory#getOperatingSystemMXBean()}
  * is an instance of the implementation class of this interface
  * or {@link UnixOperatingSystemMXBean} interface depending on
  * its underlying operating system.
@@ -41,7 +41,7 @@ package com.sun.management;
  */
 @jdk.Exported
 public interface OperatingSystemMXBean extends
-    java.lang.management.OperatingSystemMXBean {
+    j86.j86.java.lang.management.OperatingSystemMXBean {
 
     /**
      * Returns the amount of virtual memory that is guaranteed to

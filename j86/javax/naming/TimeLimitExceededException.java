@@ -24,9 +24,9 @@
  */
 
 
-package javax.naming;
+package j86.javax.naming;
 
-import javax.naming.Name;
+import j86.javax.naming.Name;
 
 /**
  * This exception is thrown when a method
@@ -56,7 +56,7 @@ public class TimeLimitExceededException extends LimitExceededException {
      * Constructs a new instance of TimeLimitExceededException
      * using the argument supplied.
      * @param explanation possibly null detail about this exception.
-     * @see java.lang.Throwable#getMessage
+     * @see j86.java.lang.Throwable#getMessage
      */
     public TimeLimitExceededException(String explanation) {
         super(explanation);

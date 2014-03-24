@@ -24,13 +24,13 @@
  */
 
 
-package sun.print;
+package j86.sun.print;
 
-import javax.print.attribute.EnumSyntax;
-import javax.print.attribute.standard.Media;
-import javax.print.attribute.standard.MediaSize;
-import javax.print.attribute.standard.MediaSizeName;
-import java.util.ArrayList;
+import j86.j86.javax.print.attribute.EnumSyntax;
+import j86.j86.j86.javax.print.attribute.standard.Media;
+import j86.j86.j86.javax.print.attribute.standard.MediaSize;
+import j86.j86.j86.javax.print.attribute.standard.MediaSizeName;
+import j86.java.util.ArrayList;
 
 class CustomMediaSizeName extends MediaSizeName {
     private static ArrayList customStringTable = new ArrayList();

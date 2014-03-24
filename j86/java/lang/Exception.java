@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.lang;
+package j86.java.lang;
 
 /**
  * The class {@code Exception} and its subclasses are a form of
@@ -38,7 +38,7 @@ package java.lang;
  * the method or constructor boundary.
  *
  * @author  Frank Yellin
- * @see     java.lang.Error
+ * @see     j86.java.lang.Error
  * @jls 11.2 Compile-Time Checking of Exceptions
  * @since   JDK1.0
  */
@@ -90,7 +90,7 @@ public class Exception extends Throwable {
      * typically contains the class and detail message of <tt>cause</tt>).
      * This constructor is useful for exceptions that are little more than
      * wrappers for other throwables (for example, {@link
-     * java.security.PrivilegedActionException}).
+     * j86.java.security.PrivilegedActionException}).
      *
      * @param  cause the cause (which is saved for later retrieval by the
      *         {@link #getCause()} method).  (A <tt>null</tt> value is

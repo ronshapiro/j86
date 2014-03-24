@@ -23,24 +23,24 @@
  * questions.
  */
 
-package java.lang;
+package j86.java.lang;
 
-import java.security.*;
-import java.io.FileDescriptor;
-import java.io.File;
-import java.io.FilePermission;
-import java.awt.AWTPermission;
-import java.util.PropertyPermission;
-import java.lang.RuntimePermission;
-import java.net.SocketPermission;
-import java.net.NetPermission;
-import java.util.Hashtable;
-import java.net.InetAddress;
-import java.lang.reflect.*;
-import java.net.URL;
+import j86.java.security.*;
+import j86.java.io.FileDescriptor;
+import j86.java.io.File;
+import j86.java.io.FilePermission;
+import j86.java.awt.AWTPermission;
+import j86.java.util.PropertyPermission;
+import j86.java.lang.RuntimePermission;
+import j86.java.net.SocketPermission;
+import j86.java.net.NetPermission;
+import j86.java.util.Hashtable;
+import j86.java.net.InetAddress;
+import j86.j86.j86.java.lang.reflect.*;
+import j86.java.net.URL;
 
-import sun.reflect.CallerSensitive;
-import sun.security.util.SecurityConstants;
+import j86.sun.reflect.CallerSensitive;
+import j86.sun.security.util.SecurityConstants;
 
 /**
  * The security manager is a class that allows
@@ -77,7 +77,7 @@ import sun.security.util.SecurityConstants;
  * by the <code>getSecurityManager</code> method.
  * <p>
  * The special method
- * {@link SecurityManager#checkPermission(java.security.Permission)}
+ * {@link SecurityManager#checkPermission(j86.java.security.Permission)}
  * determines whether an access request indicated by a specified
  * permission should be granted or denied. The
  * default implementation calls
@@ -104,8 +104,8 @@ import sun.security.util.SecurityConstants;
  * will actually need to be done from within a
  * <i>different</i> context (for example, from within a worker thread).
  * The {@link SecurityManager#getSecurityContext getSecurityContext} method
- * and the {@link SecurityManager#checkPermission(java.security.Permission,
- * java.lang.Object) checkPermission}
+ * and the {@link SecurityManager#checkPermission(j86.java.security.Permission,
+ * j86.java.lang.Object) checkPermission}
  * method that includes a context argument are provided
  * for this situation. The
  * <code>getSecurityContext</code> method returns a "snapshot"
@@ -137,21 +137,21 @@ import sun.security.util.SecurityConstants;
  * <p>Permissions fall into these categories: File, Socket, Net,
  * Security, Runtime, Property, AWT, Reflect, and Serializable.
  * The classes managing these various
- * permission categories are <code>java.io.FilePermission</code>,
- * <code>java.net.SocketPermission</code>,
- * <code>java.net.NetPermission</code>,
- * <code>java.security.SecurityPermission</code>,
- * <code>java.lang.RuntimePermission</code>,
- * <code>java.util.PropertyPermission</code>,
- * <code>java.awt.AWTPermission</code>,
- * <code>java.lang.reflect.ReflectPermission</code>, and
- * <code>java.io.SerializablePermission</code>.
+ * permission categories are <code>j86.java.io.FilePermission</code>,
+ * <code>j86.java.net.SocketPermission</code>,
+ * <code>j86.java.net.NetPermission</code>,
+ * <code>j86.java.security.SecurityPermission</code>,
+ * <code>j86.java.lang.RuntimePermission</code>,
+ * <code>j86.java.util.PropertyPermission</code>,
+ * <code>j86.java.awt.AWTPermission</code>,
+ * <code>j86.j86.j86.java.lang.reflect.ReflectPermission</code>, and
+ * <code>j86.java.io.SerializablePermission</code>.
  *
  * <p>All but the first two (FilePermission and SocketPermission) are
- * subclasses of <code>java.security.BasicPermission</code>, which itself
+ * subclasses of <code>j86.java.security.BasicPermission</code>, which itself
  * is an abstract subclass of the
  * top-level class for permissions, which is
- * <code>java.security.Permission</code>. BasicPermission defines the
+ * <code>j86.java.security.Permission</code>. BasicPermission defines the
  * functionality needed for all permissions that contain a name
  * that follows the hierarchical property naming convention
  * (for example, "exitVM", "setFactory", "queuePrintJob", etc).
@@ -162,16 +162,16 @@ import sun.security.util.SecurityConstants;
  *
  * <p>FilePermission and SocketPermission are subclasses of the
  * top-level class for permissions
- * (<code>java.security.Permission</code>). Classes like these
+ * (<code>j86.java.security.Permission</code>). Classes like these
  * that have a more complicated name syntax than that used by
  * BasicPermission subclass directly from Permission rather than from
  * BasicPermission. For example,
- * for a <code>java.io.FilePermission</code> object, the permission name is
+ * for a <code>j86.java.io.FilePermission</code> object, the permission name is
  * the path name of a file (or directory).
  *
  * <p>Some of the permission classes have an "actions" list that tells
  * the actions that are permitted for the object.  For example,
- * for a <code>java.io.FilePermission</code> object, the actions list
+ * for a <code>j86.java.io.FilePermission</code> object, the actions list
  * (such as "read, write") specifies which actions are granted for the
  * specified file (or for files in the specified directory).
  *
@@ -179,7 +179,7 @@ import sun.security.util.SecurityConstants;
  * ones that contain a name but no actions list; you either have the
  * named permission or you don't.
  *
- * <p>Note: There is also a <code>java.security.AllPermission</code>
+ * <p>Note: There is also a <code>j86.java.security.AllPermission</code>
  * permission that implies all permissions. It exists to simplify the work
  * of system administrators who might need to perform multiple
  * tasks that require all (or numerous) permissions.
@@ -200,26 +200,26 @@ import sun.security.util.SecurityConstants;
  * @author  Arthur van Hoff
  * @author  Roland Schemers
  *
- * @see     java.lang.ClassLoader
- * @see     java.lang.SecurityException
- * @see     java.lang.SecurityManager#checkTopLevelWindow(java.lang.Object)
+ * @see     j86.java.lang.ClassLoader
+ * @see     j86.java.lang.SecurityException
+ * @see     j86.java.lang.SecurityManager#checkTopLevelWindow(java.lang.Object)
  *  checkTopLevelWindow
- * @see     java.lang.System#getSecurityManager() getSecurityManager
- * @see     java.lang.System#setSecurityManager(java.lang.SecurityManager)
+ * @see     j86.java.lang.System#getSecurityManager() getSecurityManager
+ * @see     j86.java.lang.System#setSecurityManager(java.lang.SecurityManager)
  *  setSecurityManager
- * @see     java.security.AccessController AccessController
- * @see     java.security.AccessControlContext AccessControlContext
- * @see     java.security.AccessControlException AccessControlException
- * @see     java.security.Permission
- * @see     java.security.BasicPermission
- * @see     java.io.FilePermission
- * @see     java.net.SocketPermission
- * @see     java.util.PropertyPermission
- * @see     java.lang.RuntimePermission
- * @see     java.awt.AWTPermission
- * @see     java.security.Policy Policy
- * @see     java.security.SecurityPermission SecurityPermission
- * @see     java.security.ProtectionDomain
+ * @see     j86.java.security.AccessController AccessController
+ * @see     j86.java.security.AccessControlContext AccessControlContext
+ * @see     j86.java.security.AccessControlException AccessControlException
+ * @see     j86.java.security.Permission
+ * @see     j86.java.security.BasicPermission
+ * @see     j86.java.io.FilePermission
+ * @see     j86.java.net.SocketPermission
+ * @see     j86.java.util.PropertyPermission
+ * @see     j86.java.lang.RuntimePermission
+ * @see     j86.java.awt.AWTPermission
+ * @see     j86.java.security.Policy Policy
+ * @see     j86.java.security.SecurityPermission SecurityPermission
+ * @see     j86.java.security.ProtectionDomain
  *
  * @since   JDK1.0
  */
@@ -263,7 +263,7 @@ class SecurityManager {
      *          should contain <code>true</code> if a security check is
      *          in progress,
      *          <code>false</code> otherwise.
-     * @see     java.lang.SecurityManager#inCheck
+     * @see     j86.java.lang.SecurityManager#inCheck
      * @deprecated This type of security checking is not recommended.
      *  It is recommended that the <code>checkPermission</code>
      *  call be used instead.
@@ -283,12 +283,12 @@ class SecurityManager {
      * security manager.
      * This may result in throwing a <code>SecurityException</code>.
      *
-     * @exception  java.lang.SecurityException if a security manager already
+     * @exception  j86.java.lang.SecurityException if a security manager already
      *             exists and its <code>checkPermission</code> method
      *             doesn't allow creation of a new security manager.
-     * @see        java.lang.System#getSecurityManager()
-     * @see        #checkPermission(java.security.Permission) checkPermission
-     * @see java.lang.RuntimePermission
+     * @see        j86.java.lang.System#getSecurityManager()
+     * @see        #checkPermission(j86.java.security.Permission) checkPermission
+     * @see j86.java.lang.RuntimePermission
      */
     public SecurityManager() {
         synchronized(SecurityManager.class) {
@@ -330,12 +330,12 @@ class SecurityManager {
      *
      *   <li>All methods on the execution stack up to the first
      *   "privileged" caller
-     *   (see {@link java.security.AccessController#doPrivileged})
+     *   (see {@link j86.java.security.AccessController#doPrivileged})
      *   are from classes
      *   defined using the system class loader or one of its ancestors.
      *
      *   <li> A call to <code>checkPermission</code> with
-     *   <code>java.security.AllPermission</code> does not
+     *   <code>j86.java.security.AllPermission</code> does not
      *   result in a SecurityException.
      *
      * </ol>
@@ -348,8 +348,8 @@ class SecurityManager {
      *  It is recommended that the <code>checkPermission</code>
      *  call be used instead.
      *
-     * @see  java.lang.ClassLoader#getSystemClassLoader() getSystemClassLoader
-     * @see  #checkPermission(java.security.Permission) checkPermission
+     * @see  j86.java.lang.ClassLoader#getSystemClassLoader() getSystemClassLoader
+     * @see  #checkPermission(j86.java.security.Permission) checkPermission
      */
     @Deprecated
     protected ClassLoader currentClassLoader()
@@ -377,12 +377,12 @@ class SecurityManager {
      *
      *   <li>All methods on the execution stack up to the first
      *   "privileged" caller
-     *   (see {@link java.security.AccessController#doPrivileged})
+     *   (see {@link j86.java.security.AccessController#doPrivileged})
      *   are from classes
      *   defined using the system class loader or one of its ancestors.
      *
      *   <li> A call to <code>checkPermission</code> with
-     *   <code>java.security.AllPermission</code> does not
+     *   <code>j86.java.security.AllPermission</code> does not
      *   result in a SecurityException.
      *
      * </ol>
@@ -395,8 +395,8 @@ class SecurityManager {
      *  It is recommended that the <code>checkPermission</code>
      *  call be used instead.
      *
-     * @see  java.lang.ClassLoader#getSystemClassLoader() getSystemClassLoader
-     * @see  #checkPermission(java.security.Permission) checkPermission
+     * @see  j86.java.lang.ClassLoader#getSystemClassLoader() getSystemClassLoader
+     * @see  #checkPermission(j86.java.security.Permission) checkPermission
      */
     @Deprecated
     protected Class<?> currentLoadedClass() {
@@ -436,12 +436,12 @@ class SecurityManager {
      *
      *   <li>All methods on the execution stack up to the first
      *   "privileged" caller
-     *   (see {@link java.security.AccessController#doPrivileged})
+     *   (see {@link j86.java.security.AccessController#doPrivileged})
      *   are from classes
      *   defined using the system class loader or one of its ancestors.
      *
      *   <li> A call to <code>checkPermission</code> with
-     *   <code>java.security.AllPermission</code> does not
+     *   <code>j86.java.security.AllPermission</code> does not
      *   result in a SecurityException.
      *
      * </ol>
@@ -453,8 +453,8 @@ class SecurityManager {
      *  It is recommended that the <code>checkPermission</code>
      *  call be used instead.
      *
-     * @see   java.lang.ClassLoader#getSystemClassLoader() getSystemClassLoader
-     * @see   #checkPermission(java.security.Permission) checkPermission
+     * @see   j86.java.lang.ClassLoader#getSystemClassLoader() getSystemClassLoader
+     * @see   #checkPermission(j86.java.security.Permission) checkPermission
      */
     @Deprecated
     protected int classLoaderDepth()
@@ -520,11 +520,11 @@ class SecurityManager {
      * @return  an implementation-dependent object that encapsulates
      *          sufficient information about the current execution environment
      *          to perform some security checks later.
-     * @see     java.lang.SecurityManager#checkConnect(java.lang.String, int,
-     *   java.lang.Object) checkConnect
-     * @see     java.lang.SecurityManager#checkRead(java.lang.String,
-     *   java.lang.Object) checkRead
-     * @see     java.security.AccessControlContext AccessControlContext
+     * @see     j86.java.lang.SecurityManager#checkConnect(java.lang.String, int,
+     *   j86.java.lang.Object) checkConnect
+     * @see     j86.java.lang.SecurityManager#checkRead(java.lang.String,
+     *   j86.java.lang.Object) checkRead
+     * @see     j86.java.security.AccessControlContext AccessControlContext
      */
     public Object getSecurityContext() {
         return AccessController.getContext();
@@ -546,7 +546,7 @@ class SecurityManager {
      * @since     1.2
      */
     public void checkPermission(Permission perm) {
-        java.security.AccessController.checkPermission(perm);
+        j86.java.security.AccessController.checkPermission(perm);
     }
 
     /**
@@ -576,8 +576,8 @@ class SecurityManager {
      *             resource specified by the given permission.
      * @exception  NullPointerException if the permission argument is
      *             <code>null</code>.
-     * @see        java.lang.SecurityManager#getSecurityContext()
-     * @see java.security.AccessControlContext#checkPermission(java.security.Permission)
+     * @see        j86.java.lang.SecurityManager#getSecurityContext()
+     * @see j86.java.security.AccessControlContext#checkPermission(java.security.Permission)
      * @since      1.2
      */
     public void checkPermission(Permission perm, Object context) {
@@ -604,8 +604,8 @@ class SecurityManager {
      * @exception SecurityException if the calling thread does not
      *             have permission
      *             to create a new class loader.
-     * @see        java.lang.ClassLoader#ClassLoader()
-     * @see        #checkPermission(java.security.Permission) checkPermission
+     * @see        j86.java.lang.ClassLoader#ClassLoader()
+     * @see        #checkPermission(j86.java.security.Permission) checkPermission
      */
     public void checkCreateClassLoader() {
         checkPermission(SecurityConstants.CREATE_CLASSLOADER_PERMISSION);
@@ -660,13 +660,13 @@ class SecurityManager {
      *             permission to modify the thread.
      * @exception  NullPointerException if the thread argument is
      *             <code>null</code>.
-     * @see        java.lang.Thread#resume() resume
-     * @see        java.lang.Thread#setDaemon(boolean) setDaemon
-     * @see        java.lang.Thread#setName(java.lang.String) setName
-     * @see        java.lang.Thread#setPriority(int) setPriority
-     * @see        java.lang.Thread#stop() stop
-     * @see        java.lang.Thread#suspend() suspend
-     * @see        #checkPermission(java.security.Permission) checkPermission
+     * @see        j86.java.lang.Thread#resume() resume
+     * @see        j86.java.lang.Thread#setDaemon(boolean) setDaemon
+     * @see        j86.java.lang.Thread#setName(java.lang.String) setName
+     * @see        j86.java.lang.Thread#setPriority(int) setPriority
+     * @see        j86.java.lang.Thread#stop() stop
+     * @see        j86.java.lang.Thread#suspend() suspend
+     * @see        #checkPermission(j86.java.security.Permission) checkPermission
      */
     public void checkAccess(Thread t) {
         if (t == null) {
@@ -713,13 +713,13 @@ class SecurityManager {
      *             permission to modify the thread group.
      * @exception  NullPointerException if the thread group argument is
      *             <code>null</code>.
-     * @see        java.lang.ThreadGroup#destroy() destroy
-     * @see        java.lang.ThreadGroup#resume() resume
-     * @see        java.lang.ThreadGroup#setDaemon(boolean) setDaemon
-     * @see        java.lang.ThreadGroup#setMaxPriority(int) setMaxPriority
-     * @see        java.lang.ThreadGroup#stop() stop
-     * @see        java.lang.ThreadGroup#suspend() suspend
-     * @see        #checkPermission(java.security.Permission) checkPermission
+     * @see        j86.java.lang.ThreadGroup#destroy() destroy
+     * @see        j86.java.lang.ThreadGroup#resume() resume
+     * @see        j86.java.lang.ThreadGroup#setDaemon(boolean) setDaemon
+     * @see        j86.java.lang.ThreadGroup#setMaxPriority(int) setMaxPriority
+     * @see        j86.java.lang.ThreadGroup#stop() stop
+     * @see        j86.java.lang.ThreadGroup#suspend() suspend
+     * @see        #checkPermission(j86.java.security.Permission) checkPermission
      */
     public void checkAccess(ThreadGroup g) {
         if (g == null) {
@@ -754,8 +754,8 @@ class SecurityManager {
      * @exception SecurityException if the calling thread does not have
      *              permission to halt the Java Virtual Machine with
      *              the specified status.
-     * @see        java.lang.Runtime#exit(int) exit
-     * @see        #checkPermission(java.security.Permission) checkPermission
+     * @see        j86.java.lang.Runtime#exit(int) exit
+     * @see        #checkPermission(j86.java.security.Permission) checkPermission
      */
     public void checkExit(int status) {
         checkPermission(new RuntimePermission("exitVM."+status));
@@ -784,11 +784,11 @@ class SecurityManager {
      *             permission to create a subprocess.
      * @exception  NullPointerException if the <code>cmd</code> argument is
      *             <code>null</code>.
-     * @see     java.lang.Runtime#exec(java.lang.String)
-     * @see     java.lang.Runtime#exec(java.lang.String, java.lang.String[])
-     * @see     java.lang.Runtime#exec(java.lang.String[])
-     * @see     java.lang.Runtime#exec(java.lang.String[], java.lang.String[])
-     * @see     #checkPermission(java.security.Permission) checkPermission
+     * @see     j86.java.lang.Runtime#exec(java.lang.String)
+     * @see     j86.java.lang.Runtime#exec(java.lang.String, java.lang.String[])
+     * @see     j86.java.lang.Runtime#exec(java.lang.String[])
+     * @see     j86.java.lang.Runtime#exec(java.lang.String[], java.lang.String[])
+     * @see     #checkPermission(j86.java.security.Permission) checkPermission
      */
     public void checkExec(String cmd) {
         File f = new File(cmd);
@@ -824,9 +824,9 @@ class SecurityManager {
      *             permission to dynamically link the library.
      * @exception  NullPointerException if the <code>lib</code> argument is
      *             <code>null</code>.
-     * @see        java.lang.Runtime#load(java.lang.String)
-     * @see        java.lang.Runtime#loadLibrary(java.lang.String)
-     * @see        #checkPermission(java.security.Permission) checkPermission
+     * @see        j86.java.lang.Runtime#load(java.lang.String)
+     * @see        j86.java.lang.Runtime#loadLibrary(java.lang.String)
+     * @see        #checkPermission(j86.java.security.Permission) checkPermission
      */
     public void checkLink(String lib) {
         if (lib == null) {
@@ -854,8 +854,8 @@ class SecurityManager {
      *             permission to access the specified file descriptor.
      * @exception  NullPointerException if the file descriptor argument is
      *             <code>null</code>.
-     * @see        java.io.FileDescriptor
-     * @see        #checkPermission(java.security.Permission) checkPermission
+     * @see        j86.java.io.FileDescriptor
+     * @see        #checkPermission(j86.java.security.Permission) checkPermission
      */
     public void checkRead(FileDescriptor fd) {
         if (fd == null) {
@@ -882,7 +882,7 @@ class SecurityManager {
      *             permission to access the specified file.
      * @exception  NullPointerException if the <code>file</code> argument is
      *             <code>null</code>.
-     * @see        #checkPermission(java.security.Permission) checkPermission
+     * @see        #checkPermission(j86.java.security.Permission) checkPermission
      */
     public void checkRead(String file) {
         checkPermission(new FilePermission(file,
@@ -916,8 +916,8 @@ class SecurityManager {
      *             to read the specified file.
      * @exception  NullPointerException if the <code>file</code> argument is
      *             <code>null</code>.
-     * @see        java.lang.SecurityManager#getSecurityContext()
-     * @see        java.security.AccessControlContext#checkPermission(java.security.Permission)
+     * @see        j86.java.lang.SecurityManager#getSecurityContext()
+     * @see        j86.java.security.AccessControlContext#checkPermission(java.security.Permission)
      */
     public void checkRead(String file, Object context) {
         checkPermission(
@@ -944,8 +944,8 @@ class SecurityManager {
      *             permission to access the specified file descriptor.
      * @exception  NullPointerException if the file descriptor argument is
      *             <code>null</code>.
-     * @see        java.io.FileDescriptor
-     * @see        #checkPermission(java.security.Permission) checkPermission
+     * @see        j86.java.io.FileDescriptor
+     * @see        #checkPermission(j86.java.security.Permission) checkPermission
      */
     public void checkWrite(FileDescriptor fd) {
         if (fd == null) {
@@ -973,7 +973,7 @@ class SecurityManager {
      *             have permission to access the specified file.
      * @exception  NullPointerException if the <code>file</code> argument is
      *             <code>null</code>.
-     * @see        #checkPermission(java.security.Permission) checkPermission
+     * @see        #checkPermission(j86.java.security.Permission) checkPermission
      */
     public void checkWrite(String file) {
         checkPermission(new FilePermission(file,
@@ -1000,8 +1000,8 @@ class SecurityManager {
      *             have permission to delete the file.
      * @exception  NullPointerException if the <code>file</code> argument is
      *             <code>null</code>.
-     * @see        java.io.File#delete()
-     * @see        #checkPermission(java.security.Permission) checkPermission
+     * @see        j86.java.io.File#delete()
+     * @see        #checkPermission(j86.java.security.Permission) checkPermission
      */
     public void checkDelete(String file) {
         checkPermission(new FilePermission(file,
@@ -1035,7 +1035,7 @@ class SecurityManager {
      *               <code>host</code> and <code>port</code>.
      * @exception  NullPointerException if the <code>host</code> argument is
      *             <code>null</code>.
-     * @see        #checkPermission(java.security.Permission) checkPermission
+     * @see        #checkPermission(j86.java.security.Permission) checkPermission
      */
     public void checkConnect(String host, int port) {
         if (host == null) {
@@ -1089,8 +1089,8 @@ class SecurityManager {
      *             <code>host</code> and <code>port</code>.
      * @exception  NullPointerException if the <code>host</code> argument is
      *             <code>null</code>.
-     * @see        java.lang.SecurityManager#getSecurityContext()
-     * @see        java.security.AccessControlContext#checkPermission(java.security.Permission)
+     * @see        j86.java.lang.SecurityManager#getSecurityContext()
+     * @see        j86.java.security.AccessControlContext#checkPermission(java.security.Permission)
      */
     public void checkConnect(String host, int port, Object context) {
         if (host == null) {
@@ -1125,7 +1125,7 @@ class SecurityManager {
      * @param      port   the local port.
      * @exception  SecurityException  if the calling thread does not have
      *             permission to listen on the specified port.
-     * @see        #checkPermission(java.security.Permission) checkPermission
+     * @see        #checkPermission(j86.java.security.Permission) checkPermission
      */
     public void checkListen(int port) {
         checkPermission(new SocketPermission("localhost:"+port,
@@ -1154,8 +1154,8 @@ class SecurityManager {
      *             permission to accept the connection.
      * @exception  NullPointerException if the <code>host</code> argument is
      *             <code>null</code>.
-     * @see        java.net.ServerSocket#accept()
-     * @see        #checkPermission(java.security.Permission) checkPermission
+     * @see        j86.java.net.ServerSocket#accept()
+     * @see        #checkPermission(j86.java.security.Permission) checkPermission
      */
     public void checkAccept(String host, int port) {
         if (host == null) {
@@ -1174,7 +1174,7 @@ class SecurityManager {
      * (join/leave/send/receive) IP multicast.
      * <p>
      * This method calls <code>checkPermission</code> with the
-     * <code>java.net.SocketPermission(maddr.getHostAddress(),
+     * <code>j86.java.net.SocketPermission(maddr.getHostAddress(),
      * "accept,connect")</code> permission.
      * <p>
      * If you override this method, then you should make a call to
@@ -1188,7 +1188,7 @@ class SecurityManager {
      * @exception  NullPointerException if the address argument is
      *             <code>null</code>.
      * @since      JDK1.1
-     * @see        #checkPermission(java.security.Permission) checkPermission
+     * @see        #checkPermission(j86.java.security.Permission) checkPermission
      */
     public void checkMulticast(InetAddress maddr) {
         String host = maddr.getHostAddress();
@@ -1205,7 +1205,7 @@ class SecurityManager {
      * (join/leave/send/receive) IP multicast.
      * <p>
      * This method calls <code>checkPermission</code> with the
-     * <code>java.net.SocketPermission(maddr.getHostAddress(),
+     * <code>j86.java.net.SocketPermission(maddr.getHostAddress(),
      * "accept,connect")</code> permission.
      * <p>
      * If you override this method, then you should make a call to
@@ -1222,8 +1222,8 @@ class SecurityManager {
      * @exception  NullPointerException if the address argument is
      *             <code>null</code>.
      * @since      JDK1.1
-     * @deprecated Use #checkPermission(java.security.Permission) instead
-     * @see        #checkPermission(java.security.Permission) checkPermission
+     * @deprecated Use #checkPermission(j86.java.security.Permission) instead
+     * @see        #checkPermission(j86.java.security.Permission) checkPermission
      */
     @Deprecated
     public void checkMulticast(InetAddress maddr, byte ttl) {
@@ -1254,9 +1254,9 @@ class SecurityManager {
      *
      * @exception  SecurityException  if the calling thread does not have
      *             permission to access or modify the system properties.
-     * @see        java.lang.System#getProperties()
-     * @see        java.lang.System#setProperties(java.util.Properties)
-     * @see        #checkPermission(java.security.Permission) checkPermission
+     * @see        j86.java.lang.System#getProperties()
+     * @see        j86.java.lang.System#setProperties(j86.java.util.Properties)
+     * @see        #checkPermission(j86.java.security.Permission) checkPermission
      */
     public void checkPropertiesAccess() {
         checkPermission(new PropertyPermission("*",
@@ -1287,8 +1287,8 @@ class SecurityManager {
      *             <code>null</code>.
      * @exception  IllegalArgumentException if <code>key</code> is empty.
      *
-     * @see        java.lang.System#getProperty(java.lang.String)
-     * @see        #checkPermission(java.security.Permission) checkPermission
+     * @see        j86.java.lang.System#getProperty(java.lang.String)
+     * @see        #checkPermission(j86.java.security.Permission) checkPermission
      */
     public void checkPropertyAccess(String key) {
         checkPermission(new PropertyPermission(key,
@@ -1313,8 +1313,8 @@ class SecurityManager {
      * and returns <code>true</code> if a SecurityException is not thrown,
      * otherwise it returns <code>false</code>.
      * In the case of subset Profiles of Java SE that do not include the
-     * {@code java.awt} package, {@code checkPermission} is instead called
-     * to check the permission {@code java.security.AllPermission}.
+     * {@code j86.java.awt} package, {@code checkPermission} is instead called
+     * to check the permission {@code j86.java.security.AllPermission}.
      * <p>
      * If you override this method, then you should make a call to
      * <code>super.checkTopLevelWindow</code>
@@ -1333,9 +1333,9 @@ class SecurityManager {
      *             Users of this method should instead invoke
      *             {@link #checkPermission} directly.
      *             This method will be changed in a future release to check
-     *             the permission {@code java.security.AllPermission}.
-     * @see        java.awt.Window
-     * @see        #checkPermission(java.security.Permission) checkPermission
+     *             the permission {@code j86.java.security.AllPermission}.
+     * @see        j86.java.awt.Window
+     * @see        #checkPermission(j86.java.security.Permission) checkPermission
      */
     @Deprecated
     public boolean checkTopLevelWindow(Object window) {
@@ -1372,7 +1372,7 @@ class SecurityManager {
      * @exception  SecurityException  if the calling thread does not have
      *             permission to initiate a print job request.
      * @since   JDK1.1
-     * @see        #checkPermission(java.security.Permission) checkPermission
+     * @see        #checkPermission(j86.java.security.Permission) checkPermission
      */
     public void checkPrintJobAccess() {
         checkPermission(new RuntimePermission("queuePrintJob"));
@@ -1386,8 +1386,8 @@ class SecurityManager {
      * <code>AWTPermission("accessClipboard")</code>
      * permission.
      * In the case of subset Profiles of Java SE that do not include the
-     * {@code java.awt} package, {@code checkPermission} is instead called
-     * to check the permission {@code java.security.AllPermission}.
+     * {@code j86.java.awt} package, {@code checkPermission} is instead called
+     * to check the permission {@code j86.java.security.AllPermission}.
      * <p>
      * If you override this method, then you should make a call to
      * <code>super.checkSystemClipboardAccess</code>
@@ -1402,8 +1402,8 @@ class SecurityManager {
      *             Users of this method should instead invoke
      *             {@link #checkPermission} directly.
      *             This method will be changed in a future release to check
-     *             the permission {@code java.security.AllPermission}.
-     * @see        #checkPermission(java.security.Permission) checkPermission
+     *             the permission {@code j86.java.security.AllPermission}.
+     * @see        #checkPermission(j86.java.security.Permission) checkPermission
      */
     @Deprecated
     public void checkSystemClipboardAccess() {
@@ -1421,8 +1421,8 @@ class SecurityManager {
      * This method calls <code>checkPermission</code> with the
      * <code>AWTPermission("accessEventQueue")</code> permission.
      * In the case of subset Profiles of Java SE that do not include the
-     * {@code java.awt} package, {@code checkPermission} is instead called
-     * to check the permission {@code java.security.AllPermission}.
+     * {@code j86.java.awt} package, {@code checkPermission} is instead called
+     * to check the permission {@code j86.java.security.AllPermission}.
      *
      * <p>
      * If you override this method, then you should make a call to
@@ -1438,8 +1438,8 @@ class SecurityManager {
      *             Users of this method should instead invoke
      *             {@link #checkPermission} directly.
      *             This method will be changed in a future release to check
-     *             the permission {@code java.security.AllPermission}.
-     * @see        #checkPermission(java.security.Permission) checkPermission
+     *             the permission {@code j86.java.security.AllPermission}.
+     * @see        #checkPermission(j86.java.security.Permission) checkPermission
      */
     @Deprecated
     public void checkAwtEventQueueAccess() {
@@ -1453,7 +1453,7 @@ class SecurityManager {
     /*
      * We have an initial invalid bit (initially false) for the class
      * variables which tell if the cache is valid.  If the underlying
-     * java.security.Security property changes via setProperty(), the
+     * j86.java.security.Security property changes via setProperty(), the
      * Security class uses reflection to change the variable and thus
      * invalidate the cache.
      *
@@ -1477,8 +1477,8 @@ class SecurityManager {
     private static String[] getPackages(String p) {
         String packages[] = null;
         if (p != null && !p.equals("")) {
-            java.util.StringTokenizer tok =
-                new java.util.StringTokenizer(p, ",");
+            j86.java.util.StringTokenizer tok =
+                new j86.java.util.StringTokenizer(p, ",");
             int n = tok.countTokens();
             if (n > 0) {
                 packages = new String[n];
@@ -1506,7 +1506,7 @@ class SecurityManager {
      * This method first gets a list of
      * restricted packages by obtaining a comma-separated list from
      * a call to
-     * <code>java.security.Security.getProperty("package.access")</code>,
+     * <code>j86.java.security.Security.getProperty("package.access")</code>,
      * and checks to see if <code>pkg</code> starts with or equals
      * any of the restricted packages. If it does, then
      * <code>checkPermission</code> gets called with the
@@ -1522,10 +1522,10 @@ class SecurityManager {
      *             permission to access the specified package.
      * @exception  NullPointerException if the package name argument is
      *             <code>null</code>.
-     * @see        java.lang.ClassLoader#loadClass(java.lang.String, boolean)
+     * @see        j86.java.lang.ClassLoader#loadClass(java.lang.String, boolean)
      *  loadClass
-     * @see        java.security.Security#getProperty getProperty
-     * @see        #checkPermission(java.security.Permission) checkPermission
+     * @see        j86.java.security.Security#getProperty getProperty
+     * @see        #checkPermission(j86.java.security.Permission) checkPermission
      */
     public void checkPackageAccess(String pkg) {
         if (pkg == null) {
@@ -1542,7 +1542,7 @@ class SecurityManager {
                     AccessController.doPrivileged(
                         new PrivilegedAction<String>() {
                             public String run() {
-                                return java.security.Security.getProperty(
+                                return j86.java.security.Security.getProperty(
                                     "package.access");
                             }
                         }
@@ -1578,7 +1578,7 @@ class SecurityManager {
      * <p>
      * This method first gets a list of restricted packages by
      * obtaining a comma-separated list from a call to
-     * <code>java.security.Security.getProperty("package.definition")</code>,
+     * <code>j86.java.security.Security.getProperty("package.definition")</code>,
      * and checks to see if <code>pkg</code> starts with or equals
      * any of the restricted packages. If it does, then
      * <code>checkPermission</code> gets called with the
@@ -1592,9 +1592,9 @@ class SecurityManager {
      * @param      pkg   the package name.
      * @exception  SecurityException  if the calling thread does not have
      *             permission to define classes in the specified package.
-     * @see        java.lang.ClassLoader#loadClass(java.lang.String, boolean)
-     * @see        java.security.Security#getProperty getProperty
-     * @see        #checkPermission(java.security.Permission) checkPermission
+     * @see        j86.java.lang.ClassLoader#loadClass(java.lang.String, boolean)
+     * @see        j86.java.security.Security#getProperty getProperty
+     * @see        #checkPermission(j86.java.security.Permission) checkPermission
      */
     public void checkPackageDefinition(String pkg) {
         if (pkg == null) {
@@ -1611,7 +1611,7 @@ class SecurityManager {
                     AccessController.doPrivileged(
                         new PrivilegedAction<String>() {
                             public String run() {
-                                return java.security.Security.getProperty(
+                                return j86.java.security.Security.getProperty(
                                     "package.definition");
                             }
                         }
@@ -1655,10 +1655,10 @@ class SecurityManager {
      *             permission to specify a socket factory or a stream
      *             handler factory.
      *
-     * @see        java.net.ServerSocket#setSocketFactory(java.net.SocketImplFactory) setSocketFactory
-     * @see        java.net.Socket#setSocketImplFactory(java.net.SocketImplFactory) setSocketImplFactory
-     * @see        java.net.URL#setURLStreamHandlerFactory(java.net.URLStreamHandlerFactory) setURLStreamHandlerFactory
-     * @see        #checkPermission(java.security.Permission) checkPermission
+     * @see        j86.java.net.ServerSocket#setSocketFactory(java.net.SocketImplFactory) setSocketFactory
+     * @see        j86.java.net.Socket#setSocketImplFactory(java.net.SocketImplFactory) setSocketImplFactory
+     * @see        j86.java.net.URL#setURLStreamHandlerFactory(java.net.URLStreamHandlerFactory) setURLStreamHandlerFactory
+     * @see        #checkPermission(j86.java.security.Permission) checkPermission
      */
     public void checkSetFactory() {
         checkPermission(new RuntimePermission("setFactory"));
@@ -1693,11 +1693,11 @@ class SecurityManager {
      *             of 4 which is error-prone and cannot be enforced by the runtime.
      *             Users of this method should instead invoke {@link #checkPermission}
      *             directly.  This method will be changed in a future release
-     *             to check the permission {@code java.security.AllPermission}.
+     *             to check the permission {@code j86.java.security.AllPermission}.
      *
-     * @see java.lang.reflect.Member
+     * @see j86.j86.j86.java.lang.reflect.Member
      * @since JDK1.1
-     * @see        #checkPermission(java.security.Permission) checkPermission
+     * @see        #checkPermission(j86.java.security.Permission) checkPermission
      */
     @Deprecated
     @CallerSensitive
@@ -1709,12 +1709,12 @@ class SecurityManager {
             Class<?> stack[] = getClassContext();
             /*
              * stack depth of 4 should be the caller of one of the
-             * methods in java.lang.Class that invoke checkMember
+             * methods in j86.java.lang.Class that invoke checkMember
              * access. The stack should look like:
              *
              * someCaller                        [3]
-             * java.lang.Class.someReflectionAPI [2]
-             * java.lang.Class.checkMemberAccess [1]
+             * j86.java.lang.Class.someReflectionAPI [2]
+             * j86.java.lang.Class.checkMemberAccess [1]
              * SecurityManager.checkMemberAccess [0]
              *
              */
@@ -1737,7 +1737,7 @@ class SecurityManager {
      * with it.
      *
      * <p> See the documentation for
-     * <code>{@link java.security.SecurityPermission}</code> for
+     * <code>{@link j86.java.security.SecurityPermission}</code> for
      * a list of possible permission target names.
      *
      * <p> If you override this method, then you should make a call to
@@ -1753,7 +1753,7 @@ class SecurityManager {
      * @exception IllegalArgumentException if <code>target</code> is empty.
      *
      * @since   JDK1.1
-     * @see        #checkPermission(java.security.Permission) checkPermission
+     * @see        #checkPermission(j86.java.security.Permission) checkPermission
      */
     public void checkSecurityAccess(String target) {
         checkPermission(new SecurityPermission(target));
@@ -1770,7 +1770,7 @@ class SecurityManager {
      *
      * @return  ThreadGroup that new threads are instantiated into
      * @since   JDK1.1
-     * @see     java.lang.ThreadGroup
+     * @see     j86.java.lang.ThreadGroup
      */
     public ThreadGroup getThreadGroup() {
         return Thread.currentThread().getThreadGroup();

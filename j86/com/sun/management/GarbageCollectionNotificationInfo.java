@@ -23,15 +23,15 @@
  * questions.
  */
 
-package com.sun.management;
+package com.j86.sun.management;
 
-import javax.management.Notification;
-import javax.management.openmbean.CompositeData;
-import javax.management.openmbean.CompositeDataView;
-import javax.management.openmbean.CompositeType;
-import java.util.Collection;
-import java.util.Collections;
-import sun.management.GarbageCollectionNotifInfoCompositeData;
+import j86.javax.management.Notification;
+import j86.j86.javax.management.openmbean.CompositeData;
+import j86.j86.javax.management.openmbean.CompositeDataView;
+import j86.j86.javax.management.openmbean.CompositeType;
+import j86.java.util.Collection;
+import j86.java.util.Collections;
+import j86.sun.management.GarbageCollectionNotifInfoCompositeData;
 
 /**
  * The information about a garbage collection
@@ -54,8 +54,8 @@ import sun.management.GarbageCollectionNotifInfoCompositeData;
  * A {@link CompositeData CompositeData} representing
  * the {@code GarbageCollectionNotificationInfo} object
  * is stored in the
- * {@linkplain javax.management.Notification#setUserData userdata}
- * of a {@linkplain javax.management.Notification notification}.
+ * {@linkplain j86.javax.management.Notification#setUserData userdata}
+ * of a {@linkplain j86.javax.management.Notification notification}.
  * The {@link #from from} method is provided to convert from
  * a {@code CompositeData} to a {@code GarbageCollectionNotificationInfo}
  * object. For example:
@@ -99,10 +99,10 @@ public class GarbageCollectionNotificationInfo implements  CompositeDataView {
      * the Java virtual machine has completed a garbage collection cycle.
      * This notification is emitted by a {@link GarbageCollectorMXBean}.
      * The value of this notification type is
-     * {@code com.sun.management.gc.notification}.
+     * {@code com.j86.sun.management.gc.notification}.
      */
     public static final String GARBAGE_COLLECTION_NOTIFICATION =
-        "com.sun.management.gc.notification";
+        "com.j86.sun.management.gc.notification";
 
     /**
      * Constructs a {@code GarbageCollectionNotificationInfo} object.
@@ -192,19 +192,19 @@ public class GarbageCollectionNotificationInfo implements  CompositeDataView {
      * </tr>
      * <tr>
      *   <td>gcName</td>
-     *   <td>{@code java.lang.String}</td>
+     *   <td>{@code j86.java.lang.String}</td>
      * </tr>
      * <tr>
      *   <td>gcAction</td>
-     *   <td>{@code java.lang.String}</td>
+     *   <td>{@code j86.java.lang.String}</td>
      * </tr>
      * <tr>
      *   <td>gcCause</td>
-     *   <td>{@code java.lang.String}</td>
+     *   <td>{@code j86.java.lang.String}</td>
      * </tr>
      * <tr>
      *   <td>gcInfo</td>
-     *   <td>{@code javax.management.openmbean.CompositeData}</td>
+     *   <td>{@code j86.j86.javax.management.openmbean.CompositeData}</td>
      * </tr>
      * </table>
      * </blockquote>

@@ -24,11 +24,11 @@
  */
 
 
-package com.sun.jmx.snmp;
+package j86.com.sun.jmx.snmp;
 
 
 
-import com.sun.jmx.snmp.Enumerated;
+import j86.com.sun.jmx.snmp.Enumerated;
 
 /**
  * Represents an SNMP integer.

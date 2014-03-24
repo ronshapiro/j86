@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.crypto;
+package j86.javax.crypto;
 
-import java.security.*;
-import java.security.spec.*;
+import j86.java.security.*;
+import j86.j86.java.security.spec.*;
 
 /**
  * This class defines the <i>Service Provider Interface</i> (<b>SPI</b>)
@@ -40,7 +40,7 @@ import java.security.spec.*;
  * key generators (<code>KeyPairGenerator</code> or
  * <code>KeyGenerator</code>), a <code>KeyFactory</code>, or as a result from
  * an intermediate phase of the key agreement protocol
- * ({@link #engineDoPhase(java.security.Key, boolean) engineDoPhase}).
+ * ({@link #engineDoPhase(j86.java.security.Key, boolean) engineDoPhase}).
  *
  * <p> For each of the correspondents in the key exchange,
  * <code>engineDoPhase</code>

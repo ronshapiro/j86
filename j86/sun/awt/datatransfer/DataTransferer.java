@@ -23,95 +23,95 @@
  * questions.
  */
 
-package sun.awt.datatransfer;
+package j86.j86.sun.awt.datatransfer;
 
-import java.awt.AWTError;
-import java.awt.EventQueue;
-import java.awt.Image;
-import java.awt.Graphics;
+import j86.java.awt.AWTError;
+import j86.java.awt.EventQueue;
+import j86.java.awt.Image;
+import j86.java.awt.Graphics;
 
-import java.awt.datatransfer.DataFlavor;
-import java.awt.datatransfer.FlavorMap;
-import java.awt.datatransfer.FlavorTable;
-import java.awt.datatransfer.Transferable;
-import java.awt.datatransfer.UnsupportedFlavorException;
+import j86.j86.java.awt.datatransfer.DataFlavor;
+import j86.j86.java.awt.datatransfer.FlavorMap;
+import j86.j86.java.awt.datatransfer.FlavorTable;
+import j86.j86.java.awt.datatransfer.Transferable;
+import j86.j86.java.awt.datatransfer.UnsupportedFlavorException;
 
-import java.io.BufferedReader;
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.Reader;
-import java.io.SequenceInputStream;
-import java.io.StringReader;
+import j86.java.io.BufferedReader;
+import j86.java.io.ByteArrayInputStream;
+import j86.java.io.ByteArrayOutputStream;
+import j86.java.io.File;
+import j86.java.io.InputStream;
+import j86.java.io.InputStreamReader;
+import j86.java.io.IOException;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.Reader;
+import j86.java.io.SequenceInputStream;
+import j86.java.io.StringReader;
 
-import java.net.URI;
-import java.net.URISyntaxException;
+import j86.java.net.URI;
+import j86.java.net.URISyntaxException;
 
-import java.nio.ByteBuffer;
-import java.nio.CharBuffer;
-import java.nio.charset.Charset;
-import java.nio.charset.CharsetEncoder;
-import java.nio.charset.IllegalCharsetNameException;
-import java.nio.charset.UnsupportedCharsetException;
+import j86.java.nio.ByteBuffer;
+import j86.java.nio.CharBuffer;
+import j86.j86.java.nio.charset.Charset;
+import j86.j86.java.nio.charset.CharsetEncoder;
+import j86.j86.java.nio.charset.IllegalCharsetNameException;
+import j86.j86.java.nio.charset.UnsupportedCharsetException;
 
-import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.lang.reflect.Modifier;
+import j86.j86.j86.java.lang.reflect.Constructor;
+import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.j86.j86.java.lang.reflect.Modifier;
 
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.security.PrivilegedActionException;
-import java.security.PrivilegedExceptionAction;
-import java.security.ProtectionDomain;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.security.PrivilegedActionException;
+import j86.java.security.PrivilegedExceptionAction;
+import j86.java.security.ProtectionDomain;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import java.util.SortedMap;
-import java.util.SortedSet;
-import java.util.Set;
-import java.util.Stack;
-import java.util.TreeMap;
-import java.util.TreeSet;
+import j86.java.util.ArrayList;
+import j86.java.util.Arrays;
+import j86.java.util.Collections;
+import j86.java.util.Comparator;
+import j86.java.util.HashMap;
+import j86.java.util.HashSet;
+import j86.java.util.Iterator;
+import j86.java.util.List;
+import j86.java.util.Map;
+import j86.java.util.SortedMap;
+import j86.java.util.SortedSet;
+import j86.java.util.Set;
+import j86.java.util.Stack;
+import j86.java.util.TreeMap;
+import j86.java.util.TreeSet;
 
-import sun.util.logging.PlatformLogger;
+import j86.j86.sun.util.logging.PlatformLogger;
 
-import sun.awt.AppContext;
-import sun.awt.SunToolkit;
+import j86.sun.awt.AppContext;
+import j86.sun.awt.SunToolkit;
 
-import java.awt.image.BufferedImage;
-import java.awt.image.ImageObserver;
-import java.awt.image.RenderedImage;
-import java.awt.image.WritableRaster;
-import java.awt.image.ColorModel;
+import j86.j86.j86.java.awt.image.BufferedImage;
+import j86.j86.j86.java.awt.image.ImageObserver;
+import j86.j86.j86.java.awt.image.RenderedImage;
+import j86.j86.j86.java.awt.image.WritableRaster;
+import j86.j86.j86.java.awt.image.ColorModel;
 
-import javax.imageio.ImageIO;
-import javax.imageio.ImageReader;
-import javax.imageio.ImageReadParam;
-import javax.imageio.ImageWriter;
-import javax.imageio.ImageTypeSpecifier;
+import j86.javax.imageio.ImageIO;
+import j86.javax.imageio.ImageReader;
+import j86.javax.imageio.ImageReadParam;
+import j86.javax.imageio.ImageWriter;
+import j86.javax.imageio.ImageTypeSpecifier;
 
-import javax.imageio.spi.ImageWriterSpi;
+import j86.j86.javax.imageio.spi.ImageWriterSpi;
 
-import javax.imageio.stream.ImageInputStream;
-import javax.imageio.stream.ImageOutputStream;
+import j86.j86.javax.imageio.stream.ImageInputStream;
+import j86.j86.javax.imageio.stream.ImageOutputStream;
 
-import sun.awt.image.ImageRepresentation;
-import sun.awt.image.ToolkitImage;
+import j86.j86.j86.sun.awt.image.ImageRepresentation;
+import j86.j86.j86.sun.awt.image.ToolkitImage;
 
-import java.io.FilePermission;
+import j86.java.io.FilePermission;
 
 
 /**
@@ -151,7 +151,7 @@ public abstract class DataTransferer {
      * The <code>DataFlavor</code> representing plain text with Unicode
      * encoding, where:
      * <pre>
-     *     representationClass = java.lang.String
+     *     representationClass = j86.java.lang.String
      *     mimeType            = "text/plain; charset=Unicode"
      * </pre>
      */
@@ -162,7 +162,7 @@ public abstract class DataTransferer {
      * encoded in UTF-8, where
      * <pre>
      *     representationClass = [B
-     *     mimeType            = "application/x-java-text-encoding"
+     *     mimeType            = "application/x-j86.java.text-encoding"
      * </pre>
      */
     public static final DataFlavor javaTextEncodingFlavor;
@@ -238,7 +238,7 @@ public abstract class DataTransferer {
      */
     private static DataTransferer transferer;
 
-    private static final PlatformLogger dtLog = PlatformLogger.getLogger("sun.awt.datatransfer.DataTransfer");
+    private static final PlatformLogger dtLog = PlatformLogger.getLogger("j86.j86.sun.awt.datatransfer.DataTransfer");
 
     static {
         Class tCharArrayClass = null, tByteArrayClass = null;
@@ -253,7 +253,7 @@ public abstract class DataTransferer {
         DataFlavor tPlainTextStringFlavor = null;
         try {
             tPlainTextStringFlavor = new DataFlavor
-                ("text/plain;charset=Unicode;class=java.lang.String");
+                ("text/plain;charset=Unicode;class=j86.java.lang.String");
         } catch (ClassNotFoundException cannotHappen) {
         }
         plainTextStringFlavor = tPlainTextStringFlavor;
@@ -261,7 +261,7 @@ public abstract class DataTransferer {
         DataFlavor tJavaTextEncodingFlavor = null;
         try {
             tJavaTextEncodingFlavor = new DataFlavor
-                ("application/x-java-text-encoding;class=\"[B\"");
+                ("application/x-j86.java.text-encoding;class=\"[B\"");
         } catch (ClassNotFoundException cannotHappen) {
         }
         javaTextEncodingFlavor = tJavaTextEncodingFlavor;
@@ -510,7 +510,7 @@ public abstract class DataTransferer {
     }
 
     /**
-     * Returns {@code true} if the given type is a java.rmi.Remote.
+     * Returns {@code true} if the given type is a j86.java.rmi.Remote.
      */
     public static boolean isRemote(Class<?> type) {
         return RMI.isRemote(type);
@@ -1305,7 +1305,7 @@ search:
         byte[] theByteArray = null;
 
         // Target data is a file list. Source data must be a
-        // java.util.List which contains java.io.File or String instances.
+        // j86.java.util.List which contains j86.java.io.File or String instances.
         if (isFileFormat(format)) {
             if (!DataFlavor.javaFileListFlavor.equals(flavor)) {
                 throw new IOException("data translation failed");
@@ -1322,7 +1322,7 @@ search:
             }
 
         // Target data is a URI list. Source data must be a
-        // java.util.List which contains java.io.File or String instances.
+        // j86.java.util.List which contains j86.java.io.File or String instances.
         } else if (isURIListFormat(format)) {
             if (!DataFlavor.javaFileListFlavor.equals(flavor)) {
                 throw new IOException("data translation failed");
@@ -2805,9 +2805,9 @@ search:
             {
                 HashMap nonTextRepresentationsMap = new HashMap(3, 1.0f);
 
-                nonTextRepresentationsMap.put(java.io.InputStream.class,
+                nonTextRepresentationsMap.put(j86.java.io.InputStream.class,
                                               Integer.valueOf(0));
-                nonTextRepresentationsMap.put(java.io.Serializable.class,
+                nonTextRepresentationsMap.put(j86.java.io.Serializable.class,
                                               Integer.valueOf(1));
 
                 Class<?> remoteClass = RMI.remoteClass();
@@ -2859,11 +2859,11 @@ search:
                 decodedTextRepresentationsMap.put
                     (DataTransferer.charArrayClass, Integer.valueOf(0));
                 decodedTextRepresentationsMap.put
-                    (java.nio.CharBuffer.class, Integer.valueOf(1));
+                    (j86.java.nio.CharBuffer.class, Integer.valueOf(1));
                 decodedTextRepresentationsMap.put
-                    (java.lang.String.class, Integer.valueOf(2));
+                    (j86.java.lang.String.class, Integer.valueOf(2));
                 decodedTextRepresentationsMap.put
-                    (java.io.Reader.class, Integer.valueOf(3));
+                    (j86.java.io.Reader.class, Integer.valueOf(3));
 
                 decodedTextRepresentations =
                     Collections.unmodifiableMap(decodedTextRepresentationsMap);
@@ -2875,9 +2875,9 @@ search:
                 encodedTextRepresentationsMap.put
                     (DataTransferer.byteArrayClass, Integer.valueOf(0));
                 encodedTextRepresentationsMap.put
-                    (java.nio.ByteBuffer.class, Integer.valueOf(1));
+                    (j86.java.nio.ByteBuffer.class, Integer.valueOf(1));
                 encodedTextRepresentationsMap.put
-                    (java.io.InputStream.class, Integer.valueOf(2));
+                    (j86.java.io.InputStream.class, Integer.valueOf(2));
 
                 encodedTextRepresentations =
                     Collections.unmodifiableMap(encodedTextRepresentationsMap);
@@ -3031,13 +3031,13 @@ search:
     }
 
     /**
-     * A class that provides access to java.rmi.Remote and java.rmi.MarshalledObject
+     * A class that provides access to j86.java.rmi.Remote and java.rmi.MarshalledObject
      * without creating a static dependency.
      */
     private static class RMI {
-        private static final Class<?> remoteClass = getClass("java.rmi.Remote");
+        private static final Class<?> remoteClass = getClass("j86.java.rmi.Remote");
         private static final Class<?> marshallObjectClass =
-            getClass("java.rmi.MarshalledObject");
+            getClass("j86.java.rmi.MarshalledObject");
         private static final Constructor<?> marshallCtor =
             getConstructor(marshallObjectClass, Object.class);
         private static final Method marshallGet =
@@ -3068,14 +3068,14 @@ search:
         }
 
         /**
-         * Returns {@code true} if the given class is java.rmi.Remote.
+         * Returns {@code true} if the given class is j86.java.rmi.Remote.
          */
         static boolean isRemote(Class<?> c) {
             return (remoteClass == null) ? null : remoteClass.isAssignableFrom(c);
         }
 
         /**
-         * Returns java.rmi.Remote.class if RMI is present; otherwise {@code null}.
+         * Returns j86.java.rmi.Remote.class if RMI is present; otherwise {@code null}.
          */
         static Class<?> remoteClass() {
             return remoteClass;

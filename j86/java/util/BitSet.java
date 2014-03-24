@@ -23,14 +23,14 @@
  * questions.
  */
 
-package java.util;
+package j86.java.util;
 
-import java.io.*;
-import java.nio.ByteBuffer;
-import java.nio.ByteOrder;
-import java.nio.LongBuffer;
-import java.util.stream.IntStream;
-import java.util.stream.StreamSupport;
+import j86.java.io.*;
+import j86.java.nio.ByteBuffer;
+import j86.java.nio.ByteOrder;
+import j86.java.nio.LongBuffer;
+import j86.j86.java.util.stream.IntStream;
+import j86.j86.java.util.stream.StreamSupport;
 
 /**
  * This class implements a vector of bits that grows as needed. Each
@@ -62,7 +62,7 @@ import java.util.stream.StreamSupport;
  * @author  Martin Buchholz
  * @since   JDK1.0
  */
-public class BitSet implements Cloneable, java.io.Serializable {
+public class BitSet implements Cloneable, j86.java.io.Serializable {
     /*
      * BitSets are packed into arrays of "words."  Currently a word is
      * a long, which consists of 64 bits, requiring 6 address bits.

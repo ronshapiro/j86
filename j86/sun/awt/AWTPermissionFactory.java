@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.awt;
+package j86.sun.awt;
 
-import java.awt.AWTPermission;
-import sun.security.util.PermissionFactory;
+import j86.java.awt.AWTPermission;
+import j86.sun.security.util.PermissionFactory;
 
 /**
  * A factory object for AWTPermission objects.

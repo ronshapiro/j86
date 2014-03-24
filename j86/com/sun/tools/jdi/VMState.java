@@ -23,12 +23,12 @@
  * questions.
  */
 
-package com.sun.tools.jdi;
+package j86.com.sun.tools.jdi;
 
-import com.sun.jdi.*;
+import j86.com.sun.jdi.*;
 
-import java.lang.ref.WeakReference;
-import java.util.*;
+import j86.j86.java.lang.ref.WeakReference;
+import j86.java.util.*;
 
 class VMState {
     private final VirtualMachineImpl vm;

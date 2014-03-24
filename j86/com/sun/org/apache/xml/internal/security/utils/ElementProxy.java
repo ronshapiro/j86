@@ -20,14 +20,14 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.sun.org.apache.xml.internal.security.utils;
+package j86.j86.com.sun.org.apache.xml.internal.security.utils;
 
-import java.math.BigInteger;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.Map;
+import j86.java.math.BigInteger;
+import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.util.Map;
 
-import com.sun.org.apache.xml.internal.security.exceptions.Base64DecodingException;
-import com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+import j86.j86.com.sun.org.apache.xml.internal.security.exceptions.Base64DecodingException;
+import j86.j86.com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
 import org.w3c.dom.Attr;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -41,8 +41,8 @@ import org.w3c.dom.Text;
  */
 public abstract class ElementProxy {
 
-    protected static final java.util.logging.Logger log =
-        java.util.logging.Logger.getLogger(ElementProxy.class.getName());
+    protected static final j86.j86.java.util.logging.Logger log =
+        j86.j86.java.util.logging.Logger.getLogger(ElementProxy.class.getName());
 
     /** Field constructionElement */
     protected Element constructionElement = null;
@@ -90,8 +90,8 @@ public abstract class ElementProxy {
             throw new XMLSecurityException("ElementProxy.nullElement");
         }
 
-        if (log.isLoggable(java.util.logging.Level.FINE)) {
-            log.log(java.util.logging.Level.FINE, "setElement(\"" + element.getTagName() + "\", \"" + BaseURI + "\")");
+        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+            log.log(j86.j86.java.util.logging.Level.FINE, "setElement(\"" + element.getTagName() + "\", \"" + BaseURI + "\")");
         }
 
         this.doc = element.getOwnerDocument();
@@ -180,8 +180,8 @@ public abstract class ElementProxy {
             throw new XMLSecurityException("ElementProxy.nullElement");
         }
 
-        if (log.isLoggable(java.util.logging.Level.FINE)) {
-            log.log(java.util.logging.Level.FINE, "setElement(" + element.getTagName() + ", \"" + BaseURI + "\"");
+        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+            log.log(j86.j86.java.util.logging.Level.FINE, "setElement(" + element.getTagName() + ", \"" + BaseURI + "\"");
         }
 
         this.doc = element.getOwnerDocument();

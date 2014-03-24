@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.tools.asm;
+package j86.sun.tools.asm;
 
-import sun.tools.java.*;
+import j86.sun.tools.java.*;
 
 /**
  * This class is used to assemble the local variables in the local

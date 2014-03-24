@@ -23,12 +23,12 @@
  * questions.
  */
 
-package javax.net.ssl;
+package j86.j86.javax.net.ssl;
 
-import java.security.PrivateKey;
-import java.security.Principal;
-import java.security.cert.X509Certificate;
-import java.net.Socket;
+import j86.java.security.PrivateKey;
+import j86.java.security.Principal;
+import j86.j86.java.security.cert.X509Certificate;
+import j86.java.net.Socket;
 
 /**
  * Instances of this interface manage which X509 certificate-based

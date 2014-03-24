@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.media.sound;
+package j86.com.sun.media.sound;
 
-import javax.sound.midi.Instrument;
-import javax.sound.midi.MidiChannel;
-import javax.sound.midi.Patch;
-import javax.sound.midi.Soundbank;
-import javax.sound.sampled.AudioFormat;
+import j86.javax.sound.midi.Instrument;
+import j86.javax.sound.midi.MidiChannel;
+import j86.javax.sound.midi.Patch;
+import j86.javax.sound.midi.Soundbank;
+import j86.javax.sound.sampled.AudioFormat;
 
 /**
  * The model instrument class.

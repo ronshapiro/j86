@@ -23,9 +23,9 @@
  * questions.
  */
 
-package com.sun.jndi.ldap;
+package j86.com.sun.jndi.ldap;
 
-import java.io.UnsupportedEncodingException;
+import j86.java.io.UnsupportedEncodingException;
 
 /**
   * A BER decoder. Contains methods to parse a BER buffer.

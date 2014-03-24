@@ -30,16 +30,16 @@
  * at JavaSoft/Sun.
  */
 
-package com.sun.tools.hat.internal.server;
+package j86.j86.com.sun.tools.hat.internal.server;
 
-import java.io.PrintWriter;
+import j86.java.io.PrintWriter;
 
-import com.sun.tools.hat.internal.model.*;
-import com.sun.tools.hat.internal.util.Misc;
-import java.io.StringWriter;
+import j86.j86.com.sun.tools.hat.internal.model.*;
+import j86.j86.com.sun.tools.hat.internal.util.Misc;
+import j86.java.io.StringWriter;
 
-import java.net.URLEncoder;
-import java.io.UnsupportedEncodingException;
+import j86.java.net.URLEncoder;
+import j86.java.io.UnsupportedEncodingException;
 
 /**
  *

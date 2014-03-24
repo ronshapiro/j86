@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.tracing.dtrace;
+package j86.j86.sun.tracing.dtrace;
 
-import java.util.Map;
-import java.util.Set;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.security.Permission;
+import j86.java.util.Map;
+import j86.java.util.Set;
+import j86.java.util.HashMap;
+import j86.java.util.HashSet;
+import j86.java.security.Permission;
 
-import com.sun.tracing.ProviderFactory;
-import com.sun.tracing.Provider;
+import com.j86.sun.tracing.ProviderFactory;
+import com.j86.sun.tracing.Provider;
 
 /**
  * Factory class to create JSDT Providers.
@@ -51,7 +51,7 @@ import com.sun.tracing.Provider;
  * needed to free up system resources, at which point the associated
  * DTrace probes will no longer be available to DTrace.  One disposes a
  * provider by calling
- * {@link com.sun.tracing.Provider#dispose Provider.dispose()} on a
+ * {@link com.j86.sun.tracing.Provider#dispose Provider.dispose()} on a
  * created provider instance.
  *
  * @since 1.7
@@ -68,10 +68,10 @@ public final class DTraceProviderFactory extends ProviderFactory {
      * @param cls A user-defined interface which extends {@code Provider}.
      * @return An instance of the interface which is used to trigger
      * the DTrace probes.
-     * @throws java.lang.SecurityException if a security manager has been
+     * @throws j86.java.lang.SecurityException if a security manager has been
      * installed and it denies
      * RuntimePermission("com.sun.dtrace.jsdt.createProvider")
-     * @throws java.lang.IllegalArgumentException if the interface contains
+     * @throws j86.java.lang.IllegalArgumentException if the interface contains
      * methods that do not return null, or that contain arguments that are
      * not String or integer types.
      */
@@ -109,10 +109,10 @@ public final class DTraceProviderFactory extends ProviderFactory {
      * @param moduleName the module name to associate with all probes
      * @return A map which maps the provider interface specification to an
      * implementing instance.
-     * @throws java.lang.SecurityException if a security manager has been
+     * @throws j86.java.lang.SecurityException if a security manager has been
      * installed and it denies
      * RuntimePermission("com.sun.dtrace.jsdt.createProvider")
-     * @throws java.lang.IllegalArgumentException if any of the interface
+     * @throws j86.java.lang.IllegalArgumentException if any of the interface
      * contains methods that do not return null, or that contain arguments
      * that are not String or integer types.
      */
@@ -145,7 +145,7 @@ public final class DTraceProviderFactory extends ProviderFactory {
             SecurityManager security = System.getSecurityManager();
             if (security != null) {
                 Permission perm = new RuntimePermission(
-                        "com.sun.tracing.dtrace.createProvider");
+                        "com.j86.j86.sun.tracing.dtrace.createProvider");
                 security.checkPermission(perm);
             }
             return JVM.isSupported();

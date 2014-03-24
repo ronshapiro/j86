@@ -23,9 +23,9 @@
  * questions.
  */
 
-package com.sun.jndi.ldap;
+package j86.com.sun.jndi.ldap;
 
-import java.io.IOException;
+import j86.java.io.IOException;
 
 /**
  * This class implements the LDAPv3 Request Control for manageDsaIT as

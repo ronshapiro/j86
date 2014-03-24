@@ -23,22 +23,22 @@
  * questions.
  */
 
-package sun.tools.jconsole;
+package j86.sun.tools.jconsole;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.io.*;
-import java.lang.management.*;
-import java.lang.reflect.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.java.io.*;
+import j86.j86.java.lang.management.*;
+import j86.j86.j86.java.lang.reflect.*;
 
-import javax.swing.*;
-import javax.swing.border.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.border.*;
 
 
-import java.util.concurrent.*;
+import j86.j86.java.util.concurrent.*;
 
-import static sun.tools.jconsole.Formatter.*;
-import static sun.tools.jconsole.Utilities.*;
+import static j86.sun.tools.jconsole.Formatter.*;
+import static j86.sun.tools.jconsole.Utilities.*;
 
 
 @SuppressWarnings("serial")

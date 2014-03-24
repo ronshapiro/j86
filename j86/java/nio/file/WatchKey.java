@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.nio.file;
+package j86.j86.java.nio.file;
 
-import java.util.List;
+import j86.java.util.List;
 
 /**
  * A token representing the registration of a {@link Watchable watchable} object

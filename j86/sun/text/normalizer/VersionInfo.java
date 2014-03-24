@@ -34,9 +34,9 @@
  *******************************************************************************
  */
 
-package sun.text.normalizer;
+package j86.j86.sun.text.normalizer;
 
-import java.util.HashMap;
+import j86.java.util.HashMap;
 
 /**
  * Class to store version numbers of the form major.minor.milli.micro.

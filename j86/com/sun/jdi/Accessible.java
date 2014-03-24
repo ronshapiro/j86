@@ -23,7 +23,7 @@
  * questions.
  */
 
-package com.sun.jdi;
+package j86.com.sun.jdi;
 
 /**
  * Provides information on the accessibility of a type or type component.
@@ -55,7 +55,7 @@ public interface Accessible {
      * array component type. For primitive arrays the return value
      * is always false. For object arrays, the return value is the
      * same as would be returned for the component type.
-     * For primitive classes, such as {@link java.lang.Integer#TYPE},
+     * For primitive classes, such as {@link j86.java.lang.Integer#TYPE},
      * the return value is always false.
      *
      * @return <code>true</code> for items with private access;
@@ -70,7 +70,7 @@ public interface Accessible {
      * array component type. For primitive arrays the return value
      * is always false. For object arrays, the return value is the
      * same as would be returned for the component type.
-     * For primitive classes, such as {@link java.lang.Integer#TYPE},
+     * For primitive classes, such as {@link j86.java.lang.Integer#TYPE},
      * the return value is always false.
      *
      * @return <code>true</code> for items with package private access;
@@ -84,7 +84,7 @@ public interface Accessible {
      * array component type. For primitive arrays the return value
      * is always false. For object arrays, the return value is the
      * same as would be returned for the component type.
-     * For primitive classes, such as {@link java.lang.Integer#TYPE},
+     * For primitive classes, such as {@link j86.java.lang.Integer#TYPE},
      * the return value is always false.
      *
      * @return <code>true</code> for items with private access;
@@ -98,7 +98,7 @@ public interface Accessible {
      * array component type. For primitive arrays the return value
      * is always true. For object arrays, the return value is the
      * same as would be returned for the component type.
-     * For primitive classes, such as {@link java.lang.Integer#TYPE},
+     * For primitive classes, such as {@link j86.java.lang.Integer#TYPE},
      * the return value is always true.
      *
      * @return <code>true</code> for items with public access;

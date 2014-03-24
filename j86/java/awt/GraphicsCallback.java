@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.awt;
+package j86.java.awt;
 
-import java.awt.peer.LightweightPeer;
-import sun.awt.SunGraphicsCallback;
+import j86.j86.java.awt.peer.LightweightPeer;
+import j86.sun.awt.SunGraphicsCallback;
 
 
 abstract class GraphicsCallback extends SunGraphicsCallback {

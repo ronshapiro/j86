@@ -22,14 +22,14 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.misc;
+package j86.sun.misc;
 
-import java.util.ArrayList;
-import java.util.List;
+import j86.java.util.ArrayList;
+import j86.java.util.List;
 
 /**
  * This is an abstract base class originally intended to be called by
- * {@code java.lang.ClassLoader} when {@code ClassFormatError} is
+ * {@code j86.java.lang.ClassLoader} when {@code ClassFormatError} is
  * thrown inside {@code defineClass()}. It is no longer hooked into
  * {@code ClassLoader} and will be removed in a future release.
  *

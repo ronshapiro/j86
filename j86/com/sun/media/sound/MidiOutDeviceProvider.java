@@ -23,9 +23,9 @@
  * questions.
  */
 
-package com.sun.media.sound;
+package j86.com.sun.media.sound;
 
-import javax.sound.midi.MidiDevice;
+import j86.javax.sound.midi.MidiDevice;
 
 
 /**

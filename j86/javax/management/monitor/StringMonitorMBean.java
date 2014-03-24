@@ -23,11 +23,11 @@
  * questions.
  */
 
-package javax.management.monitor;
+package j86.j86.javax.management.monitor;
 
 // jmx imports
 //
-import javax.management.ObjectName;
+import j86.javax.management.ObjectName;
 
 /**
  * Exposes the remote management interface of the string monitor MBean.
@@ -91,12 +91,12 @@ public interface StringMonitorMBean extends MonitorMBean {
      * Sets the string to compare with the observed attribute.
      *
      * @param value The string value.
-     * @exception java.lang.IllegalArgumentException The specified
+     * @exception j86.java.lang.IllegalArgumentException The specified
      * string to compare is null.
      *
      * @see #getStringToCompare
      */
-    public void setStringToCompare(String value) throws java.lang.IllegalArgumentException;
+    public void setStringToCompare(String value) throws j86.java.lang.IllegalArgumentException;
 
     /**
      * Gets the matching notification's on/off switch value.

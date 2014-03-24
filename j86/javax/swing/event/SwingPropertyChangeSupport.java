@@ -23,15 +23,15 @@
  * questions.
  */
 
-package javax.swing.event;
+package j86.j86.javax.swing.event;
 
-import java.beans.PropertyChangeSupport;
-import java.beans.PropertyChangeEvent;
+import j86.java.beans.PropertyChangeSupport;
+import j86.java.beans.PropertyChangeEvent;
 
-import javax.swing.SwingUtilities;
+import j86.javax.swing.SwingUtilities;
 
 /**
- * This subclass of {@code java.beans.PropertyChangeSupport} is almost
+ * This subclass of {@code j86.java.beans.PropertyChangeSupport} is almost
  * identical in functionality. The only difference is if constructed with
  * {@code SwingPropertyChangeSupport(sourceBean, true)} it ensures
  * listeners are only ever notified on the <i>Event Dispatch Thread</i>.

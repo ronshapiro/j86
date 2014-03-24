@@ -22,16 +22,16 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.beans;
+package j86.java.beans;
 
-import com.sun.beans.decoder.DocumentHandler;
+import j86.j86.com.sun.beans.decoder.DocumentHandler;
 
-import java.io.Closeable;
-import java.io.InputStream;
-import java.io.IOException;
-import java.security.AccessControlContext;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
+import j86.java.io.Closeable;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
+import j86.java.security.AccessControlContext;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
 
 import org.xml.sax.InputSource;
 import org.xml.sax.helpers.DefaultHandler;
@@ -57,7 +57,7 @@ import org.xml.sax.helpers.DefaultHandler;
  href="http://java.sun.com/products/jfc/tsc/articles/persistence3">Long Term Persistence of JavaBeans Components: XML Schema</a>,
  * an article in <em>The Swing Connection.</em>
  * @see XMLEncoder
- * @see java.io.ObjectInputStream
+ * @see j86.java.io.ObjectInputStream
  *
  * @since 1.4
  *
@@ -77,7 +77,7 @@ public class XMLDecoder implements AutoCloseable {
      *
      * @param in The underlying stream.
      *
-     * @see XMLEncoder#XMLEncoder(java.io.OutputStream)
+     * @see XMLEncoder#XMLEncoder(j86.java.io.OutputStream)
      */
     public XMLDecoder(InputStream in) {
         this(in, null);

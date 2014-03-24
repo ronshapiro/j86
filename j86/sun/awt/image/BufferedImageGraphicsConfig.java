@@ -23,23 +23,23 @@
  * questions.
  */
 
-package sun.awt.image;
+package j86.j86.j86.sun.awt.image;
 
-import java.awt.AWTException;
-import java.awt.Component;
-import java.awt.Graphics2D;
-import java.awt.GraphicsConfiguration;
-import java.awt.GraphicsDevice;
-import java.awt.ImageCapabilities;
-import java.awt.Rectangle;
-import java.awt.Transparency;
-import java.awt.geom.AffineTransform;
-import java.awt.image.BufferedImage;
-import java.awt.image.ColorModel;
-import java.awt.image.DirectColorModel;
-import java.awt.image.Raster;
-import java.awt.image.VolatileImage;
-import java.awt.image.WritableRaster;
+import j86.java.awt.AWTException;
+import j86.java.awt.Component;
+import j86.java.awt.Graphics2D;
+import j86.java.awt.GraphicsConfiguration;
+import j86.java.awt.GraphicsDevice;
+import j86.java.awt.ImageCapabilities;
+import j86.java.awt.Rectangle;
+import j86.java.awt.Transparency;
+import j86.j86.java.awt.geom.AffineTransform;
+import j86.j86.j86.java.awt.image.BufferedImage;
+import j86.j86.j86.java.awt.image.ColorModel;
+import j86.j86.j86.java.awt.image.DirectColorModel;
+import j86.j86.j86.java.awt.image.Raster;
+import j86.j86.j86.java.awt.image.VolatileImage;
+import j86.j86.j86.java.awt.image.WritableRaster;
 
 public class BufferedImageGraphicsConfig
     extends GraphicsConfiguration

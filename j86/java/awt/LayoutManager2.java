@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.awt;
+package j86.java.awt;
 
 /**
  * Defines an interface for classes that know how to layout Containers
@@ -55,7 +55,7 @@ public interface LayoutManager2 extends LayoutManager {
     /**
      * Calculates the maximum size dimensions for the specified container,
      * given the components it contains.
-     * @see java.awt.Component#getMaximumSize
+     * @see j86.java.awt.Component#getMaximumSize
      * @see LayoutManager
      */
     public Dimension maximumLayoutSize(Container target);

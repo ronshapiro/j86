@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.management;
+package j86.sun.management;
 
 /**
  */
-public class CompilerThreadStat implements java.io.Serializable {
+public class CompilerThreadStat implements j86.java.io.Serializable {
     private String name;
     private long taskCount;
     private long compileTime;

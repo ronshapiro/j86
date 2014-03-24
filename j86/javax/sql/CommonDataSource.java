@@ -23,12 +23,12 @@
  * questions.
  */
 
-package javax.sql;
+package j86.javax.sql;
 
-import java.sql.SQLException;
-import java.io.PrintWriter;
-import java.sql.SQLFeatureNotSupportedException;
-import java.util.logging.Logger;
+import j86.java.sql.SQLException;
+import j86.java.io.PrintWriter;
+import j86.java.sql.SQLFeatureNotSupportedException;
+import j86.j86.java.util.logging.Logger;
 
 /**
  * Interface that defines the methods which are common between <code>DataSource</code>,
@@ -47,22 +47,22 @@ public interface CommonDataSource {
      * object, messages printed by methods of other objects manufactured
      * by this object, and so on.  Messages printed to a data source
      * specific log writer are not printed to the log writer associated
-     * with the <code>java.sql.DriverManager</code> class.  When a
+     * with the <code>j86.java.sql.DriverManager</code> class.  When a
      * <code>DataSource</code> object is
      * created, the log writer is initially null; in other words, the
      * default is for logging to be disabled.
      *
      * @return the log writer for this data source or null if
      *        logging is disabled
-     * @exception java.sql.SQLException if a database access error occurs
+     * @exception j86.java.sql.SQLException if a database access error occurs
      * @see #setLogWriter
      * @since 1.4
      */
-    java.io.PrintWriter getLogWriter() throws SQLException;
+    j86.java.io.PrintWriter getLogWriter() throws SQLException;
 
     /**
      * <p>Sets the log writer for this <code>DataSource</code>
-     * object to the given <code>java.io.PrintWriter</code> object.
+     * object to the given <code>j86.java.io.PrintWriter</code> object.
      *
      * <p>The log writer is a character output stream to which all logging
      * and tracing messages for this data source will be
@@ -70,7 +70,7 @@ public interface CommonDataSource {
      * object, messages printed by methods of other objects manufactured
      * by this object, and so on.  Messages printed to a data source-
      * specific log writer are not printed to the log writer associated
-     * with the <code>java.sql.DriverManager</code> class. When a
+     * with the <code>j86.java.sql.DriverManager</code> class. When a
      * <code>DataSource</code> object is created the log writer is
      * initially null; in other words, the default is for logging to be
      * disabled.
@@ -80,7 +80,7 @@ public interface CommonDataSource {
      * @see #getLogWriter
      * @since 1.4
      */
-    void setLogWriter(java.io.PrintWriter out) throws SQLException;
+    void setLogWriter(j86.java.io.PrintWriter out) throws SQLException;
 
     /**
      * <p>Sets the maximum time in seconds that this data source will wait
@@ -123,7 +123,7 @@ public interface CommonDataSource {
      *
      * @return the parent Logger for this data source
      * @throws SQLFeatureNotSupportedException if the data source does not use
-     * {@code java.util.logging}
+     * {@code j86.j86.java.util.logging}
      * @since 1.7
      */
     public Logger getParentLogger() throws SQLFeatureNotSupportedException;

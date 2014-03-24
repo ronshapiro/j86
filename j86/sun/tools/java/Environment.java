@@ -23,13 +23,13 @@
  * questions.
  */
 
-package sun.tools.java;
+package j86.sun.tools.java;
 
-import java.util.Stack;
-import java.io.IOException;
-import sun.tools.tree.Context;
+import j86.java.util.Stack;
+import j86.java.io.IOException;
+import j86.sun.tools.tree.Context;
 //JCOV
-import java.io.File;
+import j86.java.io.File;
 //end JCOV
 
 /**

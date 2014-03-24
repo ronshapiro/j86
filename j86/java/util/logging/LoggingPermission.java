@@ -24,9 +24,9 @@
  */
 
 
-package java.util.logging;
+package j86.j86.java.util.logging;
 
-import java.security.*;
+import j86.java.security.*;
 
 /**
  * The permission which the SecurityManager will check when code
@@ -44,15 +44,15 @@ import java.security.*;
  *
  *
  * @since 1.4
- * @see java.security.BasicPermission
- * @see java.security.Permission
- * @see java.security.Permissions
- * @see java.security.PermissionCollection
- * @see java.lang.SecurityManager
+ * @see j86.java.security.BasicPermission
+ * @see j86.java.security.Permission
+ * @see j86.java.security.Permissions
+ * @see j86.java.security.PermissionCollection
+ * @see j86.java.lang.SecurityManager
  *
  */
 
-public final class LoggingPermission extends java.security.BasicPermission {
+public final class LoggingPermission extends j86.java.security.BasicPermission {
 
     private static final long serialVersionUID = 63564341580231582L;
 

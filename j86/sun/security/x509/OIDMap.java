@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.security.x509;
+package j86.sun.security.x509;
 
-import java.util.*;
-import java.io.IOException;
+import j86.java.util.*;
+import j86.java.io.IOException;
 
-import java.security.cert.CertificateException;
+import j86.j86.java.security.cert.CertificateException;
 
-import sun.security.util.*;
+import j86.sun.security.util.*;
 
 /**
  * This class defines the mapping from OID & name to classes and vice
@@ -115,55 +115,55 @@ public class OIDMap {
         oidMap = new HashMap<ObjectIdentifier,OIDInfo>();
         nameMap = new HashMap<String,OIDInfo>();
         addInternal(SUB_KEY_IDENTIFIER, PKIXExtensions.SubjectKey_Id,
-                    "sun.security.x509.SubjectKeyIdentifierExtension");
+                    "j86.sun.security.x509.SubjectKeyIdentifierExtension");
         addInternal(KEY_USAGE, PKIXExtensions.KeyUsage_Id,
-                    "sun.security.x509.KeyUsageExtension");
+                    "j86.sun.security.x509.KeyUsageExtension");
         addInternal(PRIVATE_KEY_USAGE, PKIXExtensions.PrivateKeyUsage_Id,
-                    "sun.security.x509.PrivateKeyUsageExtension");
+                    "j86.sun.security.x509.PrivateKeyUsageExtension");
         addInternal(SUB_ALT_NAME, PKIXExtensions.SubjectAlternativeName_Id,
-                    "sun.security.x509.SubjectAlternativeNameExtension");
+                    "j86.sun.security.x509.SubjectAlternativeNameExtension");
         addInternal(ISSUER_ALT_NAME, PKIXExtensions.IssuerAlternativeName_Id,
-                    "sun.security.x509.IssuerAlternativeNameExtension");
+                    "j86.sun.security.x509.IssuerAlternativeNameExtension");
         addInternal(BASIC_CONSTRAINTS, PKIXExtensions.BasicConstraints_Id,
-                    "sun.security.x509.BasicConstraintsExtension");
+                    "j86.sun.security.x509.BasicConstraintsExtension");
         addInternal(CRL_NUMBER, PKIXExtensions.CRLNumber_Id,
-                    "sun.security.x509.CRLNumberExtension");
+                    "j86.sun.security.x509.CRLNumberExtension");
         addInternal(CRL_REASON, PKIXExtensions.ReasonCode_Id,
-                    "sun.security.x509.CRLReasonCodeExtension");
+                    "j86.sun.security.x509.CRLReasonCodeExtension");
         addInternal(NAME_CONSTRAINTS, PKIXExtensions.NameConstraints_Id,
-                    "sun.security.x509.NameConstraintsExtension");
+                    "j86.sun.security.x509.NameConstraintsExtension");
         addInternal(POLICY_MAPPINGS, PKIXExtensions.PolicyMappings_Id,
-                    "sun.security.x509.PolicyMappingsExtension");
+                    "j86.sun.security.x509.PolicyMappingsExtension");
         addInternal(AUTH_KEY_IDENTIFIER, PKIXExtensions.AuthorityKey_Id,
-                    "sun.security.x509.AuthorityKeyIdentifierExtension");
+                    "j86.sun.security.x509.AuthorityKeyIdentifierExtension");
         addInternal(POLICY_CONSTRAINTS, PKIXExtensions.PolicyConstraints_Id,
-                    "sun.security.x509.PolicyConstraintsExtension");
+                    "j86.sun.security.x509.PolicyConstraintsExtension");
         addInternal(NETSCAPE_CERT, ObjectIdentifier.newInternal
                     (new int[] {2,16,840,1,113730,1,1}),
-                    "sun.security.x509.NetscapeCertTypeExtension");
+                    "j86.sun.security.x509.NetscapeCertTypeExtension");
         addInternal(CERT_POLICIES, PKIXExtensions.CertificatePolicies_Id,
-                    "sun.security.x509.CertificatePoliciesExtension");
+                    "j86.sun.security.x509.CertificatePoliciesExtension");
         addInternal(EXT_KEY_USAGE, PKIXExtensions.ExtendedKeyUsage_Id,
-                    "sun.security.x509.ExtendedKeyUsageExtension");
+                    "j86.sun.security.x509.ExtendedKeyUsageExtension");
         addInternal(INHIBIT_ANY_POLICY, PKIXExtensions.InhibitAnyPolicy_Id,
-                    "sun.security.x509.InhibitAnyPolicyExtension");
+                    "j86.sun.security.x509.InhibitAnyPolicyExtension");
         addInternal(CRL_DIST_POINTS, PKIXExtensions.CRLDistributionPoints_Id,
-                    "sun.security.x509.CRLDistributionPointsExtension");
+                    "j86.sun.security.x509.CRLDistributionPointsExtension");
         addInternal(CERT_ISSUER, PKIXExtensions.CertificateIssuer_Id,
-                    "sun.security.x509.CertificateIssuerExtension");
+                    "j86.sun.security.x509.CertificateIssuerExtension");
         addInternal(SUBJECT_INFO_ACCESS, PKIXExtensions.SubjectInfoAccess_Id,
-                    "sun.security.x509.SubjectInfoAccessExtension");
+                    "j86.sun.security.x509.SubjectInfoAccessExtension");
         addInternal(AUTH_INFO_ACCESS, PKIXExtensions.AuthInfoAccess_Id,
-                    "sun.security.x509.AuthorityInfoAccessExtension");
+                    "j86.sun.security.x509.AuthorityInfoAccessExtension");
         addInternal(ISSUING_DIST_POINT,
                     PKIXExtensions.IssuingDistributionPoint_Id,
-                    "sun.security.x509.IssuingDistributionPointExtension");
+                    "j86.sun.security.x509.IssuingDistributionPointExtension");
         addInternal(DELTA_CRL_INDICATOR, PKIXExtensions.DeltaCRLIndicator_Id,
-                    "sun.security.x509.DeltaCRLIndicatorExtension");
+                    "j86.sun.security.x509.DeltaCRLIndicatorExtension");
         addInternal(FRESHEST_CRL, PKIXExtensions.FreshestCRL_Id,
-                    "sun.security.x509.FreshestCRLExtension");
+                    "j86.sun.security.x509.FreshestCRLExtension");
         addInternal(OCSPNOCHECK, PKIXExtensions.OCSPNoCheck_Id,
-                    "sun.security.x509.OCSPNoCheckExtension");
+                    "j86.sun.security.x509.OCSPNoCheckExtension");
     }
 
     /**

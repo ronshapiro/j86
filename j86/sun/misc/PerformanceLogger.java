@@ -25,13 +25,13 @@
 
 
 
-package sun.misc;
+package j86.sun.misc;
 
-import java.util.Vector;
-import java.io.FileWriter;
-import java.io.File;
-import java.io.OutputStreamWriter;
-import java.io.Writer;
+import j86.java.util.Vector;
+import j86.java.io.FileWriter;
+import j86.java.io.File;
+import j86.java.io.OutputStreamWriter;
+import j86.java.io.Writer;
 
 /**
  * This class is intended to be a central place for the jdk to
@@ -85,15 +85,15 @@ public class PerformanceLogger {
 
     static {
         String perfLoggingProp =
-            java.security.AccessController.doPrivileged(
-            new sun.security.action.GetPropertyAction("sun.perflog"));
+            j86.java.security.AccessController.doPrivileged(
+            new j86.sun.security.action.GetPropertyAction("sun.perflog"));
         if (perfLoggingProp != null) {
             perfLoggingOn = true;
 
             // Check if we should use nanoTime
             String perfNanoProp =
-                java.security.AccessController.doPrivileged(
-                new sun.security.action.GetPropertyAction("sun.perflog.nano"));
+                j86.java.security.AccessController.doPrivileged(
+                new j86.sun.security.action.GetPropertyAction("sun.perflog.nano"));
             if (perfNanoProp != null) {
                 useNanoTime = true;
             }
@@ -104,8 +104,8 @@ public class PerformanceLogger {
             }
             if (logFileName != null) {
                 if (logWriter == null) {
-                    java.security.AccessController.doPrivileged(
-                    new java.security.PrivilegedAction<Void>() {
+                    j86.java.security.AccessController.doPrivileged(
+                    new j86.java.security.PrivilegedAction<Void>() {
                         public Void run() {
                             try {
                                 File logFile = new File(logFileName);

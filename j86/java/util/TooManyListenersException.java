@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.util;
+package j86.java.util;
 
 /**
  * <p>
@@ -40,8 +40,8 @@ package java.util;
  * concurrently.
  * </p>
  *
- * @see java.util.EventObject
- * @see java.util.EventListener
+ * @see j86.java.util.EventObject
+ * @see j86.java.util.EventListener
  *
  * @author Laurence P. G. Cable
  * @since  JDK1.1

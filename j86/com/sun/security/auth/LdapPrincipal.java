@@ -23,19 +23,19 @@
  * questions.
  */
 
-package com.sun.security.auth;
+package j86.com.sun.security.auth;
 
-import java.security.Principal;
-import javax.naming.InvalidNameException;
-import javax.naming.ldap.LdapName;
+import j86.java.security.Principal;
+import j86.javax.naming.InvalidNameException;
+import j86.j86.javax.naming.ldap.LdapName;
 
 /**
  * A principal identified by a distinguished name as specified by
  * <a href="http://www.ietf.org/rfc/rfc2253.txt">RFC 2253</a>.
  *
  * <p>
- * After successful authentication, a user {@link java.security.Principal}
- * can be associated with a particular {@link javax.security.auth.Subject}
+ * After successful authentication, a user {@link j86.java.security.Principal}
+ * can be associated with a particular {@link j86.javax.security.auth.Subject}
  * to augment that <code>Subject</code> with an additional identity.
  * Authorization decisions can then be based upon the
  * <code>Principal</code>s that are associated with a <code>Subject</code>.
@@ -46,7 +46,7 @@ import javax.naming.ldap.LdapName;
  * @since 1.6
  */
 @jdk.Exported
-public final class LdapPrincipal implements Principal, java.io.Serializable {
+public final class LdapPrincipal implements Principal, j86.java.io.Serializable {
 
     private static final long serialVersionUID = 6820120005580754861L;
 

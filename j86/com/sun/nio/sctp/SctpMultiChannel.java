@@ -22,18 +22,18 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.nio.sctp;
+package j86.com.j86.sun.nio.sctp;
 
-import java.net.SocketAddress;
-import java.net.InetAddress;
-import java.io.IOException;
-import java.util.Set;
-import java.nio.ByteBuffer;
-import java.nio.channels.spi.AbstractSelectableChannel;
-import java.nio.channels.spi.SelectorProvider;
-import java.nio.channels.ClosedChannelException;
-import java.nio.channels.NotYetBoundException;
-import java.nio.channels.SelectionKey;
+import j86.java.net.SocketAddress;
+import j86.java.net.InetAddress;
+import j86.java.io.IOException;
+import j86.java.util.Set;
+import j86.java.nio.ByteBuffer;
+import j86.j86.j86.java.nio.channels.spi.AbstractSelectableChannel;
+import j86.j86.j86.java.nio.channels.spi.SelectorProvider;
+import j86.j86.java.nio.channels.ClosedChannelException;
+import j86.j86.java.nio.channels.NotYetBoundException;
+import j86.j86.java.nio.channels.SelectionKey;
 
 /**
  * A selectable channel for message-oriented SCTP sockets.
@@ -163,7 +163,7 @@ public abstract class SctpMultiChannel
      */
     public static SctpMultiChannel open() throws
         IOException {
-        return new sun.nio.ch.sctp.SctpMultiChannelImpl((SelectorProvider)null);
+        return new j86.j86.j86.j86.sun.nio.ch.sctp.SctpMultiChannelImpl((SelectorProvider)null);
     }
 
     /**
@@ -226,15 +226,15 @@ public abstract class SctpMultiChannel
      * @throws  ClosedChannelException
      *          If this channel is closed
      *
-     * @throws  java.nio.channels.AlreadyBoundException
+     * @throws  j86.j86.java.nio.channels.AlreadyBoundException
      *          If this channel is already bound
      *
-     * @throws  java.nio.channels.UnsupportedAddressTypeException
+     * @throws  j86.j86.java.nio.channels.UnsupportedAddressTypeException
      *          If the type of the given address is not supported
      *
      * @throws  SecurityException
      *          If a security manager has been installed and its {@link
-     *          java.lang.SecurityManager#checkListen(int) checkListen} method
+     *          j86.java.lang.SecurityManager#checkListen(int) checkListen} method
      *          denies the operation
      *
      * @throws  IOException
@@ -263,15 +263,15 @@ public abstract class SctpMultiChannel
      * @throws  ClosedChannelException
      *          If this channel is closed
      *
-     * @throws  java.nio.channels.AlreadyBoundException
+     * @throws  j86.j86.java.nio.channels.AlreadyBoundException
      *          If this channel is already bound
      *
-     * @throws  java.nio.channels.UnsupportedAddressTypeException
+     * @throws  j86.j86.java.nio.channels.UnsupportedAddressTypeException
      *          If the type of the given address is not supported
      *
      * @throws  SecurityException
      *          If a security manager has been installed and its {@link
-     *          java.lang.SecurityManager#checkListen(int) checkListen} method
+     *          j86.java.lang.SecurityManager#checkListen(int) checkListen} method
      *          denies the operation
      *
      * @throws  IOException
@@ -287,7 +287,7 @@ public abstract class SctpMultiChannel
      * socket.
      *
      * <P> The given address must not be the {@link
-     * java.net.InetAddress#isAnyLocalAddress wildcard} address.
+     * j86.java.net.InetAddress#isAnyLocalAddress wildcard} address.
      * The channel must be first bound using {@link #bind bind} before
      * invoking this method, otherwise {@link NotYetBoundException} is thrown.
      * The {@link #bind bind} method takes a {@code SocketAddress} as its
@@ -312,12 +312,12 @@ public abstract class SctpMultiChannel
      * @throws  NotYetBoundException
      *          If this channel is not yet bound
      *
-     * @throws  java.nio.channels.AlreadyBoundException
+     * @throws  j86.j86.java.nio.channels.AlreadyBoundException
      *          If this channel is already bound to the given address
      *
      * @throws  IllegalArgumentException
      *          If address is {@code null} or the {@link
-     *          java.net.InetAddress#isAnyLocalAddress wildcard} address
+     *          j86.java.net.InetAddress#isAnyLocalAddress wildcard} address
      *
      * @throws  IOException
      *          If some other I/O error occurs
@@ -330,7 +330,7 @@ public abstract class SctpMultiChannel
      * socket.
      *
      * <P> The given address must not be the {@link
-     * java.net.InetAddress#isAnyLocalAddress wildcard} address.
+     * j86.java.net.InetAddress#isAnyLocalAddress wildcard} address.
      * The channel must be first bound using {@link #bind bind} before
      * invoking this method, otherwise {@link NotYetBoundException} is thrown.
      *
@@ -366,7 +366,7 @@ public abstract class SctpMultiChannel
      *
      * @throws  IllegalArgumentException
      *          If address is {@code null} or the {@link
-     *          java.net.InetAddress#isAnyLocalAddress wildcard} address
+     *          j86.java.net.InetAddress#isAnyLocalAddress wildcard} address
      *
      * @throws  IOException
      *          If some other I/O error occurs
@@ -566,7 +566,7 @@ public abstract class SctpMultiChannel
      * <P> If a security manager has been installed then for each new association
      * setup this method verifies that the associations source address and port
      * number are permitted by the security manager's {@link
-     * java.lang.SecurityManager#checkAccept(String,int) checkAccept} method.
+     * j86.java.lang.SecurityManager#checkAccept(String,int) checkAccept} method.
      *
      * <P> This method may be invoked at any time. If another thread has
      * already initiated a receive operation upon this channel, then an
@@ -596,14 +596,14 @@ public abstract class SctpMultiChannel
      *          the notification handler returns {@code RETURN} after handling
      *          a notification
      *
-     * @throws  java.nio.channels.ClosedChannelException
+     * @throws  j86.j86.java.nio.channels.ClosedChannelException
      *          If this channel is closed
      *
-     * @throws  java.nio.channels.AsynchronousCloseException
+     * @throws  j86.j86.java.nio.channels.AsynchronousCloseException
      *          If another thread closes this channel
      *          while the read operation is in progress
      *
-     * @throws  java.nio.channels.ClosedByInterruptException
+     * @throws  j86.j86.java.nio.channels.ClosedByInterruptException
      *          If another thread interrupts the current thread
      *          while the read operation is in progress, thereby
      *          closing the channel and setting the current thread's
@@ -662,13 +662,13 @@ public abstract class SctpMultiChannel
      * to {@link AssociationChangeNotification.AssocChangeEvent#CANT_START CANT_START}.
      *
      * <P> The message is transferred from the byte buffer as if by a regular
-     * {@link java.nio.channels.WritableByteChannel#write(java.nio.ByteBuffer)
+     * {@link j86.j86.java.nio.channels.WritableByteChannel#write(java.nio.ByteBuffer)
      * write} operation.
      *
      * <P> If a security manager has been installed then for each new association
      * setup this method verifies that the given remote peers address and port
      * number are permitted by the security manager's {@link
-     * java.lang.SecurityManager#checkConnect(String,int) checkConnect} method.
+     * j86.java.lang.SecurityManager#checkConnect(String,int) checkConnect} method.
      *
      * <P> This method may be invoked at any time. If another thread has already
      * initiated a send operation upon this channel, then an invocation of
@@ -691,14 +691,14 @@ public abstract class SctpMultiChannel
      *          exists and {@code streamNumber} is greater than the maximum number
      *          of outgoing streams
      *
-     * @throws  java.nio.channels.ClosedChannelException
+     * @throws  j86.j86.java.nio.channels.ClosedChannelException
      *          If this channel is closed
      *
-     * @throws  java.nio.channels.AsynchronousCloseException
+     * @throws  j86.j86.java.nio.channels.AsynchronousCloseException
      *          If another thread closes this channel
      *          while the read operation is in progress
      *
-     * @throws  java.nio.channels.ClosedByInterruptException
+     * @throws  j86.j86.java.nio.channels.ClosedByInterruptException
      *          If another thread interrupts the current thread
      *          while the read operation is in progress, thereby
      *          closing the channel and setting the current thread's
@@ -733,7 +733,7 @@ public abstract class SctpMultiChannel
      *
      * @return  The {@code SctpChannel}
      *
-     * @throws  java.nio.channels.ClosedChannelException
+     * @throws  j86.j86.java.nio.channels.ClosedChannelException
      *          If this channel is closed
      *
      * @throws  IOException

@@ -25,21 +25,21 @@
 
 
 
-package javax.swing;
+package j86.javax.swing;
 
 
 
-import java.util.*;
-import java.util.concurrent.atomic.AtomicBoolean;
-import java.util.concurrent.locks.*;
-import java.awt.*;
-import java.awt.event.*;
-import java.io.Serializable;
-import java.io.*;
-import java.security.AccessControlContext;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import javax.swing.event.EventListenerList;
+import j86.java.util.*;
+import j86.j86.j86.java.util.concurrent.atomic.AtomicBoolean;
+import j86.j86.j86.java.util.concurrent.locks.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.java.io.Serializable;
+import j86.java.io.*;
+import j86.java.security.AccessControlContext;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.j86.javax.swing.event.EventListenerList;
 
 
 
@@ -99,12 +99,12 @@ import javax.swing.event.EventListenerList;
  *
  * <p>
  * In v 1.3, another <code>Timer</code> class was added
- * to the Java platform: <code>java.util.Timer</code>.
- * Both it and <code>javax.swing.Timer</code>
+ * to the Java platform: <code>j86.java.util.Timer</code>.
+ * Both it and <code>j86.javax.swing.Timer</code>
  * provide the same basic functionality,
- * but <code>java.util.Timer</code>
+ * but <code>j86.java.util.Timer</code>
  * is more general and has more features.
- * The <code>javax.swing.Timer</code> has two features
+ * The <code>j86.javax.swing.Timer</code> has two features
  * that can make it a little easier to use with GUIs.
  * First, its event handling metaphor is familiar to GUI programmers
  * and can make dealing with the event-dispatching thread
@@ -126,7 +126,7 @@ import javax.swing.event.EventListenerList;
  * a section in <em>The Java Tutorial.</em>
  * For more examples and help in choosing between
  * this <code>Timer</code> class and
- * <code>java.util.Timer</code>,
+ * <code>j86.java.util.Timer</code>,
  * see
  * <a href="http://java.sun.com/products/jfc/tsc/articles/timer/"
  * target="_top">Using Timers in Swing Applications</a>,
@@ -138,10 +138,10 @@ import javax.swing.event.EventListenerList;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
- * @see java.util.Timer <code>java.util.Timer</code>
+ * @see j86.java.util.Timer <code>java.util.Timer</code>
  *
  *
  * @author Dave Moore
@@ -336,7 +336,7 @@ public class Timer implements Serializable
      *
      * @param listenerType  the type of listeners requested;
      *          this parameter should specify an interface
-     *          that descends from <code>java.util.EventListener</code>
+     *          that descends from <code>j86.java.util.EventListener</code>
      * @return an array of all objects registered as
      *          <code><em>Foo</em>Listener</code>s
      *          on this timer,
@@ -344,7 +344,7 @@ public class Timer implements Serializable
      *          listeners have been added
      * @exception ClassCastException if <code>listenerType</code> doesn't
      *          specify a class or interface that implements
-     *          <code>java.util.EventListener</code>
+     *          <code>j86.java.util.EventListener</code>
      *
      * @see #getActionListeners
      * @see #addActionListener

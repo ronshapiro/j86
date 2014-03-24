@@ -23,40 +23,40 @@
  * questions.
  */
 
-package sun.rmi.server;
+package j86.sun.rmi.server;
 
-import java.io.IOException;
-import java.io.ObjectInput;
-import java.io.ObjectOutput;
-import java.io.PrintStream;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.rmi.MarshalException;
-import java.rmi.Remote;
-import java.rmi.RemoteException;
-import java.rmi.ServerError;
-import java.rmi.ServerException;
-import java.rmi.UnmarshalException;
-import java.rmi.server.ExportException;
-import java.rmi.server.RemoteCall;
-import java.rmi.server.RemoteRef;
-import java.rmi.server.RemoteStub;
-import java.rmi.server.ServerNotActiveException;
-import java.rmi.server.ServerRef;
-import java.rmi.server.Skeleton;
-import java.rmi.server.SkeletonNotFoundException;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.util.Collections;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.WeakHashMap;
-import sun.rmi.runtime.Log;
-import sun.rmi.transport.LiveRef;
-import sun.rmi.transport.Target;
-import sun.rmi.transport.tcp.TCPTransport;
-import sun.security.action.GetBooleanAction;
+import j86.java.io.IOException;
+import j86.java.io.ObjectInput;
+import j86.java.io.ObjectOutput;
+import j86.java.io.PrintStream;
+import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.rmi.MarshalException;
+import j86.java.rmi.Remote;
+import j86.java.rmi.RemoteException;
+import j86.java.rmi.ServerError;
+import j86.java.rmi.ServerException;
+import j86.java.rmi.UnmarshalException;
+import j86.j86.java.rmi.server.ExportException;
+import j86.j86.java.rmi.server.RemoteCall;
+import j86.j86.java.rmi.server.RemoteRef;
+import j86.j86.java.rmi.server.RemoteStub;
+import j86.j86.java.rmi.server.ServerNotActiveException;
+import j86.j86.java.rmi.server.ServerRef;
+import j86.j86.java.rmi.server.Skeleton;
+import j86.j86.java.rmi.server.SkeletonNotFoundException;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.util.Collections;
+import j86.java.util.Date;
+import j86.java.util.HashMap;
+import j86.java.util.Map;
+import j86.java.util.WeakHashMap;
+import j86.sun.rmi.runtime.Log;
+import j86.sun.rmi.transport.LiveRef;
+import j86.sun.rmi.transport.Target;
+import j86.j86.sun.rmi.transport.tcp.TCPTransport;
+import j86.sun.security.action.GetBooleanAction;
 
 /**
  * UnicastServerRef implements the remote reference layer server-side
@@ -73,11 +73,11 @@ public class UnicastServerRef extends UnicastRef
 {
     /** value of server call log property */
     public static final boolean logCalls = AccessController.doPrivileged(
-        new GetBooleanAction("java.rmi.server.logCalls"));
+        new GetBooleanAction("j86.j86.java.rmi.server.logCalls"));
 
     /** server call log */
     public static final Log callLog =
-        Log.getLog("sun.rmi.server.call", "RMI", logCalls);
+        Log.getLog("j86.sun.rmi.server.call", "RMI", logCalls);
 
     // use serialVersionUID from JDK 1.2.2 for interoperability
     private static final long serialVersionUID = -7384275867073752268L;
@@ -85,7 +85,7 @@ public class UnicastServerRef extends UnicastRef
     /** flag to enable writing exceptions to System.err */
     private static final boolean wantExceptionLog =
         AccessController.doPrivileged(
-            new GetBooleanAction("sun.rmi.server.exceptionTrace"));
+            new GetBooleanAction("j86.sun.rmi.server.exceptionTrace"));
 
     private boolean forceStubUse = false;
 
@@ -96,7 +96,7 @@ public class UnicastServerRef extends UnicastRef
     private static final boolean suppressStackTraces =
         AccessController.doPrivileged(
             new GetBooleanAction(
-                "sun.rmi.server.suppressStackTraces"));
+                "j86.sun.rmi.server.suppressStackTraces"));
 
     /**
      * skeleton to dispatch remote calls through, for 1.1 stub protocol
@@ -307,7 +307,7 @@ public class UnicastServerRef extends UnicastRef
                 for (int i = 0; i < types.length; i++) {
                     params[i] = unmarshalValue(types[i], in);
                 }
-            } catch (java.io.IOException e) {
+            } catch (j86.java.io.IOException e) {
                 throw new UnmarshalException(
                     "error unmarshalling arguments", e);
             } catch (ClassNotFoundException e) {
@@ -392,7 +392,7 @@ public class UnicastServerRef extends UnicastRef
             try {
                 in = call.getInputStream();
                 try {
-                    Class<?> clazz = Class.forName("sun.rmi.transport.DGCImpl_Skel");
+                    Class<?> clazz = Class.forName("j86.sun.rmi.transport.DGCImpl_Skel");
                     if (clazz.isAssignableFrom(skel.getClass())) {
                         ((MarshalInputStream)in).useCodebaseOnly();
                     }
@@ -446,7 +446,7 @@ public class UnicastServerRef extends UnicastRef
 
     /**
      * Log the details of an incoming call.  The method parameter is either of
-     * type java.lang.reflect.Method or java.rmi.server.Operation.
+     * type j86.j86.j86.java.lang.reflect.Method or j86.j86.java.rmi.server.Operation.
      */
     private void logCall(Remote obj, Object method) {
         if (callLog.isLoggable(Log.VERBOSE)) {
@@ -479,7 +479,7 @@ public class UnicastServerRef extends UnicastRef
 
         // write exceptions (only) to System.err if desired
         if (wantExceptionLog) {
-            java.io.PrintStream log = System.err;
+            j86.java.io.PrintStream log = System.err;
             synchronized (log) {
                 log.println();
                 log.println("Exception dispatching call to " +

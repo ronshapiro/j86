@@ -23,13 +23,13 @@
  * questions.
  */
 
-package com.sun.security.jgss;
+package com.j86.sun.security.jgss;
 
-import org.ietf.jgss.*;
+import j86.org.ietf.jgss.*;
 
 /**
  * The extended GSSContext interface for supporting additional
- * functionalities not defined by {@code org.ietf.jgss.GSSContext},
+ * functionalities not defined by {@code j86.org.ietf.jgss.GSSContext},
  * such as querying context-specific attributes.
  */
 @jdk.Exported
@@ -46,7 +46,7 @@ public interface ExtendedGSSContext extends GSSContext {
      * the user wants to get the <em>n</em>'th bit but the length of the
      * returned array is less than <em>n</em>, it is regarded as false.
      * <li>{@code KRB5_GET_SESSION_KEY}:
-     * the returned object is an instance of {@link java.security.Key},
+     * the returned object is an instance of {@link j86.java.security.Key},
      * which has the following properties:
      *    <ul>
      *    <li>Algorithm: enctype as a string, where
@@ -56,7 +56,7 @@ public interface ExtendedGSSContext extends GSSContext {
      *    </ul>
      * <li>{@code KRB5_GET_AUTHZ_DATA}:
      * the returned object is an array of
-     * {@link com.sun.security.jgss.AuthorizationDataEntry}, or null if the
+     * {@link com.j86.sun.security.jgss.AuthorizationDataEntry}, or null if the
      * optional field is missing in the service ticket.
      * <li>{@code KRB5_GET_AUTHTIME}:
      * the returned object is a String object in the standard KerberosTime

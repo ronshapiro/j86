@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.plaf.synth;
+package j86.j86.j86.javax.swing.plaf.synth;
 
-import sun.swing.DefaultLookup;
-import javax.swing.JComponent;
-import javax.swing.plaf.ComponentUI;
+import j86.sun.swing.DefaultLookup;
+import j86.javax.swing.JComponent;
+import j86.j86.javax.swing.plaf.ComponentUI;
 
 /**
  * SynthDefaultLookup redirects all lookup calls to the SynthContext.

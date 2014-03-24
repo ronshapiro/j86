@@ -23,11 +23,11 @@
  * questions.
  */
 
-package java.lang;
-import java.util.Random;
+package j86.java.lang;
+import j86.java.util.Random;
 
-import sun.misc.FloatConsts;
-import sun.misc.DoubleConsts;
+import j86.sun.misc.FloatConsts;
+import j86.sun.misc.DoubleConsts;
 
 /**
  * The class {@code Math} contains methods for performing basic
@@ -661,8 +661,8 @@ public final class Math {
      * @param   a   a floating-point value to be rounded to an integer.
      * @return  the value of the argument rounded to the nearest
      *          {@code int} value.
-     * @see     java.lang.Integer#MAX_VALUE
-     * @see     java.lang.Integer#MIN_VALUE
+     * @see     j86.java.lang.Integer#MAX_VALUE
+     * @see     j86.java.lang.Integer#MIN_VALUE
      */
     public static int round(float a) {
         int intBits = Float.floatToRawIntBits(a);
@@ -710,8 +710,8 @@ public final class Math {
      *          {@code long}.
      * @return  the value of the argument rounded to the nearest
      *          {@code long} value.
-     * @see     java.lang.Long#MAX_VALUE
-     * @see     java.lang.Long#MIN_VALUE
+     * @see     j86.java.lang.Long#MAX_VALUE
+     * @see     j86.java.lang.Long#MIN_VALUE
      */
     public static long round(double a) {
         long longBits = Double.doubleToRawLongBits(a);
@@ -755,7 +755,7 @@ public final class Math {
      * <p>When this method is first called, it creates a single new
      * pseudorandom-number generator, exactly as if by the expression
      *
-     * <blockquote>{@code new java.util.Random()}</blockquote>
+     * <blockquote>{@code new j86.java.util.Random()}</blockquote>
      *
      * This new pseudorandom-number generator is used thereafter for
      * all calls to this method and is used nowhere else.

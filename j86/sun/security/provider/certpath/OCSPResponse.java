@@ -23,30 +23,30 @@
  * questions.
  */
 
-package sun.security.provider.certpath;
+package j86.j86.sun.security.provider.certpath;
 
-import java.io.*;
-import java.security.*;
-import java.security.cert.CertificateException;
-import java.security.cert.CertificateParsingException;
-import java.security.cert.CertPathValidatorException;
-import java.security.cert.CertPathValidatorException.BasicReason;
-import java.security.cert.CRLReason;
-import java.security.cert.TrustAnchor;
-import java.security.cert.X509Certificate;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import javax.security.auth.x500.X500Principal;
+import j86.java.io.*;
+import j86.java.security.*;
+import j86.j86.java.security.cert.CertificateException;
+import j86.j86.java.security.cert.CertificateParsingException;
+import j86.j86.java.security.cert.CertPathValidatorException;
+import j86.j86.java.security.cert.CertPathValidatorException.BasicReason;
+import j86.j86.java.security.cert.CRLReason;
+import j86.j86.java.security.cert.TrustAnchor;
+import j86.j86.java.security.cert.X509Certificate;
+import j86.java.util.ArrayList;
+import j86.java.util.Arrays;
+import j86.java.util.Collections;
+import j86.java.util.Date;
+import j86.java.util.HashMap;
+import j86.java.util.List;
+import j86.java.util.Map;
+import j86.j86.javax.security.auth.x500.X500Principal;
 
-import sun.misc.HexDumpEncoder;
-import sun.security.action.GetIntegerAction;
-import sun.security.x509.*;
-import sun.security.util.*;
+import j86.sun.misc.HexDumpEncoder;
+import j86.sun.security.action.GetIntegerAction;
+import j86.sun.security.x509.*;
+import j86.sun.security.util.*;
 
 /**
  * This class is used to process an OCSP response.
@@ -162,7 +162,7 @@ public final class OCSPResponse {
      * value is negative, set the skew to the default.
      */
     private static int initializeClockSkew() {
-        Integer tmp = java.security.AccessController.doPrivileged(
+        Integer tmp = j86.java.security.AccessController.doPrivileged(
                 new GetIntegerAction("com.sun.security.ocsp.clockSkew"));
         if (tmp == null || tmp < 0) {
             return DEFAULT_MAX_CLOCK_SKEW;
@@ -680,7 +680,7 @@ public final class OCSPResponse {
         private final Date nextUpdate;
         private final Date revocationTime;
         private final CRLReason revocationReason;
-        private final Map<String, java.security.cert.Extension> singleExtensions;
+        private final Map<String, j86.j86.java.security.cert.Extension> singleExtensions;
 
         private SingleResponse(DerValue der) throws IOException {
             if (der.tag != DerValue.tag_Sequence) {
@@ -756,7 +756,7 @@ public final class OCSPResponse {
                 if (derVal.isContextSpecific((byte)1)) {
                     DerValue[] singleExtDer = derVal.data.getSequence(3);
                     singleExtensions =
-                        new HashMap<String, java.security.cert.Extension>
+                        new HashMap<String, j86.j86.java.security.cert.Extension>
                             (singleExtDer.length);
                     for (int i = 0; i < singleExtDer.length; i++) {
                         Extension ext = new Extension(singleExtDer[i]);
@@ -801,7 +801,7 @@ public final class OCSPResponse {
         }
 
         @Override
-        public Map<String, java.security.cert.Extension> getSingleExtensions() {
+        public Map<String, j86.j86.java.security.cert.Extension> getSingleExtensions() {
             return Collections.unmodifiableMap(singleExtensions);
         }
 

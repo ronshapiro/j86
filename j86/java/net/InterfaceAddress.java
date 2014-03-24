@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.net;
+package j86.java.net;
 
 /**
  * This class represents a Network Interface address. In short it's an
@@ -31,7 +31,7 @@ package java.net;
  * an IPv4 one. An IP address and a network prefix length in the case
  * of IPv6 address.
  *
- * @see java.net.NetworkInterface
+ * @see j86.java.net.NetworkInterface
  * @since 1.6
  */
 public class InterfaceAddress {
@@ -96,7 +96,7 @@ public class InterfaceAddress {
      * @param   obj   the object to compare against.
      * @return  {@code true} if the objects are the same;
      *          {@code false} otherwise.
-     * @see     java.net.InterfaceAddress#hashCode()
+     * @see     j86.java.net.InterfaceAddress#hashCode()
      */
     public boolean equals(Object obj) {
         if (!(obj instanceof InterfaceAddress)) {

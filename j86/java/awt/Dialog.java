@@ -22,24 +22,24 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.awt;
+package j86.java.awt;
 
-import java.awt.peer.DialogPeer;
-import java.awt.event.*;
-import java.io.ObjectInputStream;
-import java.io.IOException;
-import java.util.Iterator;
-import java.util.concurrent.atomic.AtomicLong;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import javax.accessibility.*;
-import sun.awt.AppContext;
-import sun.awt.SunToolkit;
-import sun.awt.PeerEvent;
-import sun.awt.util.IdentityArrayList;
-import sun.awt.util.IdentityLinkedList;
-import sun.security.util.SecurityConstants;
-import java.security.AccessControlException;
+import j86.j86.java.awt.peer.DialogPeer;
+import j86.j86.java.awt.event.*;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.IOException;
+import j86.java.util.Iterator;
+import j86.j86.j86.java.util.concurrent.atomic.AtomicLong;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.javax.accessibility.*;
+import j86.sun.awt.AppContext;
+import j86.sun.awt.SunToolkit;
+import j86.sun.awt.PeerEvent;
+import j86.j86.sun.awt.util.IdentityArrayList;
+import j86.j86.sun.awt.util.IdentityLinkedList;
+import j86.sun.security.util.SecurityConstants;
+import j86.java.security.AccessControlException;
 
 /**
  * A Dialog is a top-level window with a title and a border
@@ -71,7 +71,7 @@ import java.security.AccessControlException;
  * restored, the dialog is made visible to the user again.
  * <p>
  * In a multi-screen environment, you can create a <code>Dialog</code>
- * on a different screen device than its owner.  See {@link java.awt.Frame} for
+ * on a different screen device than its owner.  See {@link j86.java.awt.Frame} for
  * more information.
  * <p>
  * A dialog can be either modeless (the default) or modal.  A modal
@@ -189,8 +189,8 @@ public class Dialog extends Window {
      * <code>APPLICATION_MODAL</code>. Calling the oldstyle <code>setModal(true)</code>
      * is equal to <code>setModalityType(DEFAULT_MODALITY_TYPE)</code>.
      *
-     * @see java.awt.Dialog.ModalityType
-     * @see java.awt.Dialog#setModal
+     * @see j86.java.awt.Dialog.ModalityType
+     * @see j86.java.awt.Dialog#setModal
      *
      * @since 1.6
      */
@@ -319,12 +319,12 @@ public class Dialog extends Window {
      *
      * @param owner the owner of the dialog or <code>null</code> if
      *     this dialog has no owner
-     * @exception java.lang.IllegalArgumentException if the <code>owner</code>'s
+     * @exception j86.java.lang.IllegalArgumentException if the <code>owner</code>'s
      *    <code>GraphicsConfiguration</code> is not from a screen device
      * @exception HeadlessException when
      *    <code>GraphicsEnvironment.isHeadless()</code> returns <code>true</code>
      *
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      * @see Component#setSize
      * @see Component#setVisible
      */
@@ -342,17 +342,17 @@ public class Dialog extends Window {
      *     windows when shown. If <code>false</code>, the dialog is <code>MODELESS</code>;
      *     if <code>true</code>, the modality type property is set to
      *     <code>DEFAULT_MODALITY_TYPE</code>
-     * @exception java.lang.IllegalArgumentException if the <code>owner</code>'s
+     * @exception j86.java.lang.IllegalArgumentException if the <code>owner</code>'s
      *    <code>GraphicsConfiguration</code> is not from a screen device
      * @exception HeadlessException when
      *     <code>GraphicsEnvironment.isHeadless()</code> returns <code>true</code>
      *
-     * @see java.awt.Dialog.ModalityType
-     * @see java.awt.Dialog.ModalityType#MODELESS
-     * @see java.awt.Dialog#DEFAULT_MODALITY_TYPE
-     * @see java.awt.Dialog#setModal
-     * @see java.awt.Dialog#setModalityType
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.Dialog.ModalityType
+     * @see j86.java.awt.Dialog.ModalityType#MODELESS
+     * @see j86.java.awt.Dialog#DEFAULT_MODALITY_TYPE
+     * @see j86.java.awt.Dialog#setModal
+     * @see j86.java.awt.Dialog#setModalityType
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      */
      public Dialog(Frame owner, boolean modal) {
          this(owner, "", modal);
@@ -371,7 +371,7 @@ public class Dialog extends Window {
      * @exception HeadlessException when
      *     <code>GraphicsEnvironment.isHeadless()</code> returns <code>true</code>
      *
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      * @see Component#setSize
      * @see Component#setVisible
      */
@@ -391,17 +391,17 @@ public class Dialog extends Window {
      *     windows when shown. If <code>false</code>, the dialog is <code>MODELESS</code>;
      *     if <code>true</code>, the modality type property is set to
      *     <code>DEFAULT_MODALITY_TYPE</code>
-     * @exception java.lang.IllegalArgumentException if the <code>owner</code>'s
+     * @exception j86.java.lang.IllegalArgumentException if the <code>owner</code>'s
      *    <code>GraphicsConfiguration</code> is not from a screen device
      * @exception HeadlessException when
      *    <code>GraphicsEnvironment.isHeadless()</code> returns <code>true</code>
      *
-     * @see java.awt.Dialog.ModalityType
-     * @see java.awt.Dialog.ModalityType#MODELESS
-     * @see java.awt.Dialog#DEFAULT_MODALITY_TYPE
-     * @see java.awt.Dialog#setModal
-     * @see java.awt.Dialog#setModalityType
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.Dialog.ModalityType
+     * @see j86.java.awt.Dialog.ModalityType#MODELESS
+     * @see j86.java.awt.Dialog#DEFAULT_MODALITY_TYPE
+     * @see j86.java.awt.Dialog#setModal
+     * @see j86.java.awt.Dialog#setModalityType
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      * @see Component#setSize
      * @see Component#setVisible
      */
@@ -423,17 +423,17 @@ public class Dialog extends Window {
      * @param gc the <code>GraphicsConfiguration</code> of the target screen device;
      *     if <code>null</code>, the default system <code>GraphicsConfiguration</code>
      *     is assumed
-     * @exception java.lang.IllegalArgumentException if <code>gc</code>
+     * @exception j86.java.lang.IllegalArgumentException if <code>gc</code>
      *     is not from a screen device
      * @exception HeadlessException when
      *     <code>GraphicsEnvironment.isHeadless()</code> returns <code>true</code>
      *
-     * @see java.awt.Dialog.ModalityType
-     * @see java.awt.Dialog.ModalityType#MODELESS
-     * @see java.awt.Dialog#DEFAULT_MODALITY_TYPE
-     * @see java.awt.Dialog#setModal
-     * @see java.awt.Dialog#setModalityType
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.Dialog.ModalityType
+     * @see j86.java.awt.Dialog.ModalityType#MODELESS
+     * @see j86.java.awt.Dialog#DEFAULT_MODALITY_TYPE
+     * @see j86.java.awt.Dialog#setModal
+     * @see j86.java.awt.Dialog#setModalityType
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      * @see Component#setSize
      * @see Component#setVisible
      * @since 1.4
@@ -449,11 +449,11 @@ public class Dialog extends Window {
      *
      * @param owner the owner of the dialog or <code>null</code> if this
      *     dialog has no owner
-     * @exception java.lang.IllegalArgumentException if the <code>owner</code>'s
+     * @exception j86.java.lang.IllegalArgumentException if the <code>owner</code>'s
      *     <code>GraphicsConfiguration</code> is not from a screen device
      * @exception HeadlessException when
      *     <code>GraphicsEnvironment.isHeadless()</code> returns <code>true</code>
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      * @since 1.2
      */
      public Dialog(Dialog owner) {
@@ -468,12 +468,12 @@ public class Dialog extends Window {
      *     has no owner
      * @param title the title of the dialog or <code>null</code> if this dialog
      *     has no title
-     * @exception java.lang.IllegalArgumentException if the <code>owner</code>'s
+     * @exception j86.java.lang.IllegalArgumentException if the <code>owner</code>'s
      *     <code>GraphicsConfiguration</code> is not from a screen device
      * @exception HeadlessException when
      *     <code>GraphicsEnvironment.isHeadless()</code> returns <code>true</code>
      *
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      * @since 1.2
      */
      public Dialog(Dialog owner, String title) {
@@ -497,12 +497,12 @@ public class Dialog extends Window {
      * @exception HeadlessException when
      *    <code>GraphicsEnvironment.isHeadless()</code> returns <code>true</code>
      *
-     * @see java.awt.Dialog.ModalityType
-     * @see java.awt.Dialog.ModalityType#MODELESS
-     * @see java.awt.Dialog#DEFAULT_MODALITY_TYPE
-     * @see java.awt.Dialog#setModal
-     * @see java.awt.Dialog#setModalityType
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.Dialog.ModalityType
+     * @see j86.java.awt.Dialog.ModalityType#MODELESS
+     * @see j86.java.awt.Dialog#DEFAULT_MODALITY_TYPE
+     * @see j86.java.awt.Dialog#setModal
+     * @see j86.java.awt.Dialog#setModalityType
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      *
      * @since 1.2
      */
@@ -526,17 +526,17 @@ public class Dialog extends Window {
      * @param gc the <code>GraphicsConfiguration</code> of the target screen device;
      *     if <code>null</code>, the default system <code>GraphicsConfiguration</code>
      *     is assumed
-     * @exception java.lang.IllegalArgumentException if <code>gc</code>
+     * @exception j86.java.lang.IllegalArgumentException if <code>gc</code>
      *    is not from a screen device
      * @exception HeadlessException when
      *    <code>GraphicsEnvironment.isHeadless()</code> returns <code>true</code>
      *
-     * @see java.awt.Dialog.ModalityType
-     * @see java.awt.Dialog.ModalityType#MODELESS
-     * @see java.awt.Dialog#DEFAULT_MODALITY_TYPE
-     * @see java.awt.Dialog#setModal
-     * @see java.awt.Dialog#setModalityType
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.Dialog.ModalityType
+     * @see j86.java.awt.Dialog.ModalityType#MODELESS
+     * @see j86.java.awt.Dialog#DEFAULT_MODALITY_TYPE
+     * @see j86.java.awt.Dialog#setModal
+     * @see j86.java.awt.Dialog#setModalityType
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      * @see Component#setSize
      * @see Component#setVisible
      *
@@ -552,18 +552,18 @@ public class Dialog extends Window {
      * specified owner <code>Window</code> and an empty title.
      *
      * @param owner the owner of the dialog. The owner must be an instance of
-     *     {@link java.awt.Dialog Dialog}, {@link java.awt.Frame Frame}, any
+     *     {@link j86.java.awt.Dialog Dialog}, {@link java.awt.Frame Frame}, any
      *     of their descendents or <code>null</code>
      *
-     * @exception java.lang.IllegalArgumentException if the <code>owner</code>
-     *     is not an instance of {@link java.awt.Dialog Dialog} or {@link
-     *     java.awt.Frame Frame}
-     * @exception java.lang.IllegalArgumentException if the <code>owner</code>'s
+     * @exception j86.java.lang.IllegalArgumentException if the <code>owner</code>
+     *     is not an instance of {@link j86.java.awt.Dialog Dialog} or {@link
+     *     j86.java.awt.Frame Frame}
+     * @exception j86.java.lang.IllegalArgumentException if the <code>owner</code>'s
      *     <code>GraphicsConfiguration</code> is not from a screen device
      * @exception HeadlessException when
      *     <code>GraphicsEnvironment.isHeadless()</code> returns <code>true</code>
      *
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      *
      * @since 1.6
      */
@@ -576,20 +576,20 @@ public class Dialog extends Window {
      * the specified owner <code>Window</code> and title.
      *
      * @param owner the owner of the dialog. The owner must be an instance of
-     *    {@link java.awt.Dialog Dialog}, {@link java.awt.Frame Frame}, any
+     *    {@link j86.java.awt.Dialog Dialog}, {@link java.awt.Frame Frame}, any
      *    of their descendents or <code>null</code>
      * @param title the title of the dialog or <code>null</code> if this dialog
      *    has no title
      *
-     * @exception java.lang.IllegalArgumentException if the <code>owner</code>
-     *    is not an instance of {@link java.awt.Dialog Dialog} or {@link
-     *    java.awt.Frame Frame}
-     * @exception java.lang.IllegalArgumentException if the <code>owner</code>'s
+     * @exception j86.java.lang.IllegalArgumentException if the <code>owner</code>
+     *    is not an instance of {@link j86.java.awt.Dialog Dialog} or {@link
+     *    j86.java.awt.Frame Frame}
+     * @exception j86.java.lang.IllegalArgumentException if the <code>owner</code>'s
      *    <code>GraphicsConfiguration</code> is not from a screen device
      * @exception HeadlessException when
      *    <code>GraphicsEnvironment.isHeadless()</code> returns <code>true</code>
      *
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      *
      * @since 1.6
      */
@@ -602,27 +602,27 @@ public class Dialog extends Window {
      * specified owner <code>Window</code> and modality and an empty title.
      *
      * @param owner the owner of the dialog. The owner must be an instance of
-     *    {@link java.awt.Dialog Dialog}, {@link java.awt.Frame Frame}, any
+     *    {@link j86.java.awt.Dialog Dialog}, {@link java.awt.Frame Frame}, any
      *    of their descendents or <code>null</code>
      * @param modalityType specifies whether dialog blocks input to other
      *    windows when shown. <code>null</code> value and unsupported modality
      *    types are equivalent to <code>MODELESS</code>
      *
-     * @exception java.lang.IllegalArgumentException if the <code>owner</code>
-     *    is not an instance of {@link java.awt.Dialog Dialog} or {@link
-     *    java.awt.Frame Frame}
-     * @exception java.lang.IllegalArgumentException if the <code>owner</code>'s
+     * @exception j86.java.lang.IllegalArgumentException if the <code>owner</code>
+     *    is not an instance of {@link j86.java.awt.Dialog Dialog} or {@link
+     *    j86.java.awt.Frame Frame}
+     * @exception j86.java.lang.IllegalArgumentException if the <code>owner</code>'s
      *    <code>GraphicsConfiguration</code> is not from a screen device
      * @exception HeadlessException when
      *    <code>GraphicsEnvironment.isHeadless()</code> returns <code>true</code>
      * @exception SecurityException if the calling thread does not have permission
      *    to create modal dialogs with the given <code>modalityType</code>
      *
-     * @see java.awt.Dialog.ModalityType
-     * @see java.awt.Dialog#setModal
-     * @see java.awt.Dialog#setModalityType
-     * @see java.awt.GraphicsEnvironment#isHeadless
-     * @see java.awt.Toolkit#isModalityTypeSupported
+     * @see j86.java.awt.Dialog.ModalityType
+     * @see j86.java.awt.Dialog#setModal
+     * @see j86.java.awt.Dialog#setModalityType
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.Toolkit#isModalityTypeSupported
      *
      * @since 1.6
      */
@@ -635,7 +635,7 @@ public class Dialog extends Window {
      * specified owner <code>Window</code>, title and modality.
      *
      * @param owner the owner of the dialog. The owner must be an instance of
-     *     {@link java.awt.Dialog Dialog}, {@link java.awt.Frame Frame}, any
+     *     {@link j86.java.awt.Dialog Dialog}, {@link java.awt.Frame Frame}, any
      *     of their descendents or <code>null</code>
      * @param title the title of the dialog or <code>null</code> if this dialog
      *     has no title
@@ -643,21 +643,21 @@ public class Dialog extends Window {
      *    windows when shown. <code>null</code> value and unsupported modality
      *    types are equivalent to <code>MODELESS</code>
      *
-     * @exception java.lang.IllegalArgumentException if the <code>owner</code>
-     *     is not an instance of {@link java.awt.Dialog Dialog} or {@link
-     *     java.awt.Frame Frame}
-     * @exception java.lang.IllegalArgumentException if the <code>owner</code>'s
+     * @exception j86.java.lang.IllegalArgumentException if the <code>owner</code>
+     *     is not an instance of {@link j86.java.awt.Dialog Dialog} or {@link
+     *     j86.java.awt.Frame Frame}
+     * @exception j86.java.lang.IllegalArgumentException if the <code>owner</code>'s
      *     <code>GraphicsConfiguration</code> is not from a screen device
      * @exception HeadlessException when
      *     <code>GraphicsEnvironment.isHeadless()</code> returns <code>true</code>
      * @exception SecurityException if the calling thread does not have permission
      *     to create modal dialogs with the given <code>modalityType</code>
      *
-     * @see java.awt.Dialog.ModalityType
-     * @see java.awt.Dialog#setModal
-     * @see java.awt.Dialog#setModalityType
-     * @see java.awt.GraphicsEnvironment#isHeadless
-     * @see java.awt.Toolkit#isModalityTypeSupported
+     * @see j86.java.awt.Dialog.ModalityType
+     * @see j86.java.awt.Dialog#setModal
+     * @see j86.java.awt.Dialog#setModalityType
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.Toolkit#isModalityTypeSupported
      *
      * @since 1.6
      */
@@ -683,7 +683,7 @@ public class Dialog extends Window {
      * <code>GraphicsConfiguration</code>.
      *
      * @param owner the owner of the dialog. The owner must be an instance of
-     *     {@link java.awt.Dialog Dialog}, {@link java.awt.Frame Frame}, any
+     *     {@link j86.java.awt.Dialog Dialog}, {@link java.awt.Frame Frame}, any
      *     of their descendents or <code>null</code>
      * @param title the title of the dialog or <code>null</code> if this dialog
      *     has no title
@@ -694,21 +694,21 @@ public class Dialog extends Window {
      *     if <code>null</code>, the default system <code>GraphicsConfiguration</code>
      *     is assumed
      *
-     * @exception java.lang.IllegalArgumentException if the <code>owner</code>
-     *     is not an instance of {@link java.awt.Dialog Dialog} or {@link
-     *     java.awt.Frame Frame}
-     * @exception java.lang.IllegalArgumentException if <code>gc</code>
+     * @exception j86.java.lang.IllegalArgumentException if the <code>owner</code>
+     *     is not an instance of {@link j86.java.awt.Dialog Dialog} or {@link
+     *     j86.java.awt.Frame Frame}
+     * @exception j86.java.lang.IllegalArgumentException if <code>gc</code>
      *     is not from a screen device
      * @exception HeadlessException when
      *     <code>GraphicsEnvironment.isHeadless()</code> returns <code>true</code>
      * @exception SecurityException if the calling thread does not have permission
      *     to create modal dialogs with the given <code>modalityType</code>
      *
-     * @see java.awt.Dialog.ModalityType
-     * @see java.awt.Dialog#setModal
-     * @see java.awt.Dialog#setModalityType
-     * @see java.awt.GraphicsEnvironment#isHeadless
-     * @see java.awt.Toolkit#isModalityTypeSupported
+     * @see j86.java.awt.Dialog.ModalityType
+     * @see j86.java.awt.Dialog#setModal
+     * @see j86.java.awt.Dialog#setModalityType
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.Toolkit#isModalityTypeSupported
      *
      * @since 1.6
      */
@@ -770,11 +770,11 @@ public class Dialog extends Window {
      * @return    <code>true</code> if this dialog window is modal;
      *            <code>false</code> otherwise
      *
-     * @see       java.awt.Dialog#DEFAULT_MODALITY_TYPE
-     * @see       java.awt.Dialog.ModalityType#MODELESS
-     * @see       java.awt.Dialog#setModal
-     * @see       java.awt.Dialog#getModalityType
-     * @see       java.awt.Dialog#setModalityType
+     * @see       j86.java.awt.Dialog#DEFAULT_MODALITY_TYPE
+     * @see       j86.java.awt.Dialog.ModalityType#MODELESS
+     * @see       j86.java.awt.Dialog#setModal
+     * @see       j86.java.awt.Dialog#getModalityType
+     * @see       j86.java.awt.Dialog#setModalityType
      */
     public boolean isModal() {
         return isModal_NoClientCode();
@@ -798,11 +798,11 @@ public class Dialog extends Window {
      *     calling to <code>setModal(false)</code> is equvivalent to
      *     <code>setModalityType(Dialog.ModalityType.MODELESS)</code>
      *
-     * @see       java.awt.Dialog#DEFAULT_MODALITY_TYPE
-     * @see       java.awt.Dialog.ModalityType#MODELESS
-     * @see       java.awt.Dialog#isModal
-     * @see       java.awt.Dialog#getModalityType
-     * @see       java.awt.Dialog#setModalityType
+     * @see       j86.java.awt.Dialog#DEFAULT_MODALITY_TYPE
+     * @see       j86.java.awt.Dialog.ModalityType#MODELESS
+     * @see       j86.java.awt.Dialog#isModal
+     * @see       j86.java.awt.Dialog#getModalityType
+     * @see       j86.java.awt.Dialog#setModalityType
      *
      * @since     1.1
      */
@@ -816,7 +816,7 @@ public class Dialog extends Window {
      *
      * @return modality type of this dialog
      *
-     * @see java.awt.Dialog#setModalityType
+     * @see j86.java.awt.Dialog#setModalityType
      *
      * @since 1.6
      */
@@ -826,7 +826,7 @@ public class Dialog extends Window {
 
     /**
      * Sets the modality type for this dialog. See {@link
-     * java.awt.Dialog.ModalityType ModalityType} for possible modality types.
+     * j86.java.awt.Dialog.ModalityType ModalityType} for possible modality types.
      * <p>
      * If the given modality type is not supported, <code>MODELESS</code>
      * is used. You may want to call <code>getModalityType()</code> after calling
@@ -841,8 +841,8 @@ public class Dialog extends Window {
      * @exception SecurityException if the calling thread does not have permission
      *     to create modal dialogs with the given <code>modalityType</code>
      *
-     * @see       java.awt.Dialog#getModalityType
-     * @see       java.awt.Toolkit#isModalityTypeSupported
+     * @see       j86.java.awt.Dialog#getModalityType
+     * @see       j86.java.awt.Toolkit#isModalityTypeSupported
      *
      * @since     1.6
      */
@@ -868,7 +868,7 @@ public class Dialog extends Window {
      * dialog's border.
      * @return    the title of this dialog window. The title may be
      *            <code>null</code>.
-     * @see       java.awt.Dialog#setTitle
+     * @see       j86.java.awt.Dialog#setTitle
      */
     public String getTitle() {
         return title;
@@ -995,11 +995,11 @@ public class Dialog extends Window {
      * thread because the toolkit ensures that other events are
      * not blocked while this method is blocked.
      * </ul>
-     * @see java.awt.Window#setVisible
-     * @see java.awt.Window#dispose
-     * @see java.awt.Component#isDisplayable
-     * @see java.awt.Component#validate
-     * @see java.awt.Dialog#isModal
+     * @see j86.java.awt.Window#setVisible
+     * @see j86.java.awt.Window#dispose
+     * @see j86.java.awt.Component#isDisplayable
+     * @see j86.java.awt.Component#validate
+     * @see j86.java.awt.Dialog#isModal
      */
     public void setVisible(boolean b) {
         super.setVisible(b);
@@ -1206,7 +1206,7 @@ public class Dialog extends Window {
      * If this dialog is modal and blocks some windows, then all of them are
      * also sent to the back to keep them below the blocking dialog.
      *
-     * @see java.awt.Window#toBack
+     * @see j86.java.awt.Window#toBack
      */
     public void toBack() {
         super.toBack();
@@ -1224,7 +1224,7 @@ public class Dialog extends Window {
      * By default, all dialogs are initially resizable.
      * @return    <code>true</code> if the user can resize the dialog;
      *            <code>false</code> otherwise.
-     * @see       java.awt.Dialog#setResizable
+     * @see       j86.java.awt.Dialog#setResizable
      */
     public boolean isResizable() {
         return resizable;
@@ -1234,7 +1234,7 @@ public class Dialog extends Window {
      * Sets whether this dialog is resizable by the user.
      * @param     resizable <code>true</code> if the user can
      *                 resize this dialog; <code>false</code> otherwise.
-     * @see       java.awt.Dialog#isResizable
+     * @see       j86.java.awt.Dialog#isResizable
      */
     public void setResizable(boolean resizable) {
         boolean testvalid = false;
@@ -1314,7 +1314,7 @@ public class Dialog extends Window {
      * By default, all dialogs are initially decorated.
      * @return    <code>true</code> if dialog is undecorated;
      *                        <code>false</code> otherwise.
-     * @see       java.awt.Dialog#setUndecorated
+     * @see       j86.java.awt.Dialog#setUndecorated
      * @since 1.4
      */
     public boolean isUndecorated() {
@@ -1438,7 +1438,7 @@ public class Dialog extends Window {
             k++;
         }
 
-        java.util.List<Window> toBlock = new IdentityLinkedList<Window>();
+        j86.java.util.List<Window> toBlock = new IdentityLinkedList<Window>();
         // block all windows from scope of blocking except from blockers' hierarchies
         IdentityArrayList<Window> unblockedWindows = Window.getAllUnblockedWindows();
         for (Window w : unblockedWindows) {
@@ -1561,7 +1561,7 @@ public class Dialog extends Window {
         }
     }
 
-    void blockWindows(java.util.List<Window> toBlock) {
+    void blockWindows(j86.java.util.List<Window> toBlock) {
         DialogPeer dpeer = (DialogPeer)peer;
         if (dpeer == null) {
             return;
@@ -1623,7 +1623,7 @@ public class Dialog extends Window {
     {
         GraphicsEnvironment.checkHeadless();
 
-        java.io.ObjectInputStream.GetField fields =
+        j86.java.io.ObjectInputStream.GetField fields =
             s.readFields();
 
         ModalityType localModalityType = (ModalityType)fields.get("modalityType", null);

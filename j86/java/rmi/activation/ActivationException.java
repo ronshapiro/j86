@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.rmi.activation;
+package j86.j86.java.rmi.activation;
 
 /**
  * General exception used by the activation interfaces.

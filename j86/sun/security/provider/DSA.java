@@ -23,25 +23,25 @@
  * questions.
  */
 
-package sun.security.provider;
+package j86.sun.security.provider;
 
-import java.io.*;
-import java.util.*;
-import java.math.BigInteger;
-import java.nio.ByteBuffer;
+import j86.java.io.*;
+import j86.java.util.*;
+import j86.java.math.BigInteger;
+import j86.java.nio.ByteBuffer;
 
-import java.security.*;
-import java.security.SecureRandom;
-import java.security.interfaces.*;
-import java.security.spec.DSAParameterSpec;
-import java.security.spec.InvalidParameterSpecException;
+import j86.java.security.*;
+import j86.java.security.SecureRandom;
+import j86.j86.java.security.interfaces.*;
+import j86.j86.java.security.spec.DSAParameterSpec;
+import j86.j86.java.security.spec.InvalidParameterSpecException;
 
-import sun.security.util.Debug;
-import sun.security.util.DerValue;
-import sun.security.util.DerInputStream;
-import sun.security.util.DerOutputStream;
-import sun.security.x509.AlgIdDSA;
-import sun.security.jca.JCAUtil;
+import j86.sun.security.util.Debug;
+import j86.sun.security.util.DerValue;
+import j86.sun.security.util.DerInputStream;
+import j86.sun.security.util.DerOutputStream;
+import j86.sun.security.x509.AlgIdDSA;
+import j86.sun.security.jca.JCAUtil;
 
 /**
  * The Digital Signature Standard (using the Digital Signature
@@ -104,13 +104,13 @@ abstract class DSA extends SignatureSpi {
      */
     protected void engineInitSign(PrivateKey privateKey)
             throws InvalidKeyException {
-        if (!(privateKey instanceof java.security.interfaces.DSAPrivateKey)) {
+        if (!(privateKey instanceof j86.j86.java.security.interfaces.DSAPrivateKey)) {
             throw new InvalidKeyException("not a DSA private key: " +
                                           privateKey);
         }
 
-        java.security.interfaces.DSAPrivateKey priv =
-            (java.security.interfaces.DSAPrivateKey)privateKey;
+        j86.j86.java.security.interfaces.DSAPrivateKey priv =
+            (j86.j86.java.security.interfaces.DSAPrivateKey)privateKey;
 
         // check for algorithm specific constraints before doing initialization
         DSAParams params = priv.getParams();
@@ -137,12 +137,12 @@ abstract class DSA extends SignatureSpi {
      */
     protected void engineInitVerify(PublicKey publicKey)
             throws InvalidKeyException {
-        if (!(publicKey instanceof java.security.interfaces.DSAPublicKey)) {
+        if (!(publicKey instanceof j86.j86.java.security.interfaces.DSAPublicKey)) {
             throw new InvalidKeyException("not a DSA public key: " +
                                           publicKey);
         }
-        java.security.interfaces.DSAPublicKey pub =
-            (java.security.interfaces.DSAPublicKey)publicKey;
+        j86.j86.java.security.interfaces.DSAPublicKey pub =
+            (j86.j86.java.security.interfaces.DSAPublicKey)publicKey;
 
         // check for algorithm specific constraints before doing initialization
         DSAParams params = pub.getParams();

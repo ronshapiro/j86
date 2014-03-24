@@ -23,16 +23,16 @@
  * questions.
  */
 
-package java.util.jar;
+package j86.j86.java.util.jar;
 
-import java.io.FilterInputStream;
-import java.io.DataOutputStream;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.IOException;
-import java.util.Map;
-import java.util.HashMap;
-import java.util.Iterator;
+import j86.java.io.FilterInputStream;
+import j86.java.io.DataOutputStream;
+import j86.java.io.InputStream;
+import j86.java.io.OutputStream;
+import j86.java.io.IOException;
+import j86.java.util.Map;
+import j86.java.util.HashMap;
+import j86.java.util.Iterator;
 
 /**
  * The Manifest class is used to maintain Manifest entry names and their

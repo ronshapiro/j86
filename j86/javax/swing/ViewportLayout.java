@@ -23,17 +23,17 @@
  * questions.
  */
 
-package javax.swing;
+package j86.javax.swing;
 
-import java.awt.AWTError;
-import java.awt.LayoutManager;
-import java.awt.Component;
-import java.awt.Container;
-import java.awt.Rectangle;
-import java.awt.Point;
-import java.awt.Dimension;
-import java.awt.Insets;
-import java.io.Serializable;
+import j86.java.awt.AWTError;
+import j86.java.awt.LayoutManager;
+import j86.java.awt.Component;
+import j86.java.awt.Container;
+import j86.java.awt.Rectangle;
+import j86.java.awt.Point;
+import j86.java.awt.Dimension;
+import j86.java.awt.Insets;
+import j86.java.io.Serializable;
 
 /**
  * The default layout manager for <code>JViewport</code>.
@@ -51,8 +51,8 @@ import java.io.Serializable;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @author Hans Muller
  */

@@ -23,18 +23,18 @@
  * questions.
  */
 
-package javax.management;
+package j86.javax.management;
 
-import com.sun.jmx.defaults.JmxProperties;
-import static com.sun.jmx.defaults.JmxProperties.JMX_INITIAL_BUILDER;
-import static com.sun.jmx.defaults.JmxProperties.MBEANSERVER_LOGGER;
-import com.sun.jmx.mbeanserver.GetPropertyAction;
-import java.security.AccessController;
-import java.security.Permission;
-import java.util.ArrayList;
-import java.util.logging.Level;
-import javax.management.loading.ClassLoaderRepository;
-import sun.reflect.misc.ReflectUtil;
+import j86.com.sun.jmx.defaults.JmxProperties;
+import static j86.com.sun.jmx.defaults.JmxProperties.JMX_INITIAL_BUILDER;
+import static j86.com.sun.jmx.defaults.JmxProperties.MBEANSERVER_LOGGER;
+import j86.com.sun.jmx.mbeanserver.GetPropertyAction;
+import j86.java.security.AccessController;
+import j86.java.security.Permission;
+import j86.java.util.ArrayList;
+import j86.j86.java.util.logging.Level;
+import j86.j86.javax.management.loading.ClassLoaderRepository;
+import j86.j86.sun.reflect.misc.ReflectUtil;
 
 
 /**
@@ -43,29 +43,29 @@ import sun.reflect.misc.ReflectUtil;
  *
  * <p>Since JMX 1.2 this class makes it possible to replace the default
  * MBeanServer implementation. This is done using the
- * {@link javax.management.MBeanServerBuilder} class.
+ * {@link j86.javax.management.MBeanServerBuilder} class.
  * The class of the initial MBeanServerBuilder to be
  * instantiated can be specified through the
- * <b>javax.management.builder.initial</b> system property.
+ * <b>j86.javax.management.builder.initial</b> system property.
  * The specified class must be a public subclass of
- * {@link javax.management.MBeanServerBuilder}, and must have a public
+ * {@link j86.javax.management.MBeanServerBuilder}, and must have a public
  * empty constructor.
  * <p>By default, if no value for that property is specified, an instance of
  * {@link
- * javax.management.MBeanServerBuilder javax.management.MBeanServerBuilder}
+ * j86.javax.management.MBeanServerBuilder javax.management.MBeanServerBuilder}
  * is created. Otherwise, the MBeanServerFactory attempts to load the
  * specified class using
- * {@link java.lang.Thread#getContextClassLoader()
+ * {@link j86.java.lang.Thread#getContextClassLoader()
  *   Thread.currentThread().getContextClassLoader()}, or if that is null,
- * {@link java.lang.Class#forName(java.lang.String) Class.forName()}. Then
+ * {@link j86.java.lang.Class#forName(java.lang.String) Class.forName()}. Then
  * it creates an initial instance of that Class using
- * {@link java.lang.Class#newInstance()}. If any checked exception
+ * {@link j86.java.lang.Class#newInstance()}. If any checked exception
  * is raised during this process (e.g.
- * {@link java.lang.ClassNotFoundException},
- * {@link java.lang.InstantiationException}) the MBeanServerFactory
+ * {@link j86.java.lang.ClassNotFoundException},
+ * {@link j86.java.lang.InstantiationException}) the MBeanServerFactory
  * will propagate this exception from within a RuntimeException.</p>
  *
- * <p>The <b>javax.management.builder.initial</b> system property is
+ * <p>The <b>j86.javax.management.builder.initial</b> system property is
  * consulted every time a new MBeanServer needs to be created, and the
  * class pointed to by that property is loaded. If that class is different
  * from that of the current MBeanServerBuilder, then a new MBeanServerBuilder
@@ -75,7 +75,7 @@ import sun.reflect.misc.ReflectUtil;
  * <p>If the class pointed to by the property cannot be
  * loaded, or does not correspond to a valid subclass of MBeanServerBuilder
  * then an exception is propagated, and no MBeanServer can be created until
- * the <b>javax.management.builder.initial</b> system property is reset to
+ * the <b>j86.javax.management.builder.initial</b> system property is reset to
  * valid value.</p>
  *
  * <p>The MBeanServerBuilder makes it possible to wrap the MBeanServers
@@ -101,9 +101,9 @@ public class MBeanServerFactory {
     private static MBeanServerBuilder builder = null;
 
     /**
-     * Provide a new {@link javax.management.MBeanServerBuilder}.
+     * Provide a new {@link j86.javax.management.MBeanServerBuilder}.
      * @param builder The new MBeanServerBuilder that will be used to
-     *        create {@link javax.management.MBeanServer}s.
+     *        create {@link j86.javax.management.MBeanServer}s.
      * @exception IllegalArgumentException if the given builder is null.
      *
      * @exception SecurityException if there is a SecurityManager and
@@ -118,9 +118,9 @@ public class MBeanServerFactory {
     // }
 
     /**
-     * Get the current {@link javax.management.MBeanServerBuilder}.
+     * Get the current {@link j86.javax.management.MBeanServerBuilder}.
      *
-     * @return the current {@link javax.management.MBeanServerBuilder}.
+     * @return the current {@link j86.javax.management.MBeanServerBuilder}.
      *
      * @exception SecurityException if there is a SecurityManager and
      * the caller's permissions do not include or imply <code>{@link
@@ -139,7 +139,7 @@ public class MBeanServerFactory {
      *
      * @param mbeanServer the MBeanServer object to remove.
      *
-     * @exception java.lang.IllegalArgumentException if
+     * @exception j86.java.lang.IllegalArgumentException if
      * <code>mbeanServer</code> was not generated by one of the
      * <code>createMBeanServer</code> methods, or if
      * <code>releaseMBeanServer</code> was already called on it.
@@ -176,7 +176,7 @@ public class MBeanServerFactory {
      * MBeanServerPermission}("createMBeanServer")</code>.
      *
      * @exception JMRuntimeException if the property
-     * <code>javax.management.builder.initial</code> exists but the
+     * <code>j86.javax.management.builder.initial</code> exists but the
      * class it names cannot be instantiated through a public
      * no-argument constructor; or if the instantiated builder returns
      * null from its {@link MBeanServerBuilder#newMBeanServerDelegate
@@ -184,7 +184,7 @@ public class MBeanServerFactory {
      * MBeanServerBuilder#newMBeanServer newMBeanServer} methods.
      *
      * @exception ClassCastException if the property
-     * <code>javax.management.builder.initial</code> exists and can be
+     * <code>j86.javax.management.builder.initial</code> exists and can be
      * instantiated but is not assignment compatible with {@link
      * MBeanServerBuilder}.
      */
@@ -213,7 +213,7 @@ public class MBeanServerFactory {
      * MBeanServerPermission}("createMBeanServer")</code>.
      *
      * @exception JMRuntimeException if the property
-     * <code>javax.management.builder.initial</code> exists but the
+     * <code>j86.javax.management.builder.initial</code> exists but the
      * class it names cannot be instantiated through a public
      * no-argument constructor; or if the instantiated builder returns
      * null from its {@link MBeanServerBuilder#newMBeanServerDelegate
@@ -221,7 +221,7 @@ public class MBeanServerFactory {
      * MBeanServerBuilder#newMBeanServer newMBeanServer} methods.
      *
      * @exception ClassCastException if the property
-     * <code>javax.management.builder.initial</code> exists and can be
+     * <code>j86.javax.management.builder.initial</code> exists and can be
      * instantiated but is not assignment compatible with {@link
      * MBeanServerBuilder}.
      */
@@ -257,7 +257,7 @@ public class MBeanServerFactory {
      * MBeanServerPermission}("newMBeanServer")</code>.
      *
      * @exception JMRuntimeException if the property
-     * <code>javax.management.builder.initial</code> exists but the
+     * <code>j86.javax.management.builder.initial</code> exists but the
      * class it names cannot be instantiated through a public
      * no-argument constructor; or if the instantiated builder returns
      * null from its {@link MBeanServerBuilder#newMBeanServerDelegate
@@ -265,7 +265,7 @@ public class MBeanServerFactory {
      * MBeanServerBuilder#newMBeanServer newMBeanServer} methods.
      *
      * @exception ClassCastException if the property
-     * <code>javax.management.builder.initial</code> exists and can be
+     * <code>j86.javax.management.builder.initial</code> exists and can be
      * instantiated but is not assignment compatible with {@link
      * MBeanServerBuilder}.
      */
@@ -296,7 +296,7 @@ public class MBeanServerFactory {
      * MBeanServerPermission}("newMBeanServer")</code>.
      *
      * @exception JMRuntimeException if the property
-     * <code>javax.management.builder.initial</code> exists but the
+     * <code>j86.javax.management.builder.initial</code> exists but the
      * class it names cannot be instantiated through a public
      * no-argument constructor; or if the instantiated builder returns
      * null from its {@link MBeanServerBuilder#newMBeanServerDelegate
@@ -304,7 +304,7 @@ public class MBeanServerFactory {
      * MBeanServerBuilder#newMBeanServer newMBeanServer} methods.
      *
      * @exception ClassCastException if the property
-     * <code>javax.management.builder.initial</code> exists and can be
+     * <code>j86.javax.management.builder.initial</code> exists and can be
      * instantiated but is not assignment compatible with {@link
      * MBeanServerBuilder}.
      */
@@ -452,7 +452,7 @@ public class MBeanServerFactory {
 
     /**
      * Creates the initial builder according to the
-     * javax.management.builder.initial System property - if specified.
+     * j86.javax.management.builder.initial System property - if specified.
      * If any checked exception needs to be thrown, it is embedded in
      * a JMRuntimeException.
      **/
@@ -472,7 +472,7 @@ public class MBeanServerFactory {
 
     /**
      * Instantiate a new builder according to the
-     * javax.management.builder.initial System property - if needed.
+     * j86.javax.management.builder.initial System property - if needed.
      **/
     private static synchronized void checkMBeanServerBuilder() {
         try {
@@ -518,21 +518,21 @@ public class MBeanServerFactory {
     }
 
     /**
-     * Get the current {@link javax.management.MBeanServerBuilder},
+     * Get the current {@link j86.javax.management.MBeanServerBuilder},
      * as specified by the current value of the
-     * javax.management.builder.initial property.
+     * j86.javax.management.builder.initial property.
      *
      * This method consults the property and instantiates a new builder
      * if needed.
      *
-     * @return the new current {@link javax.management.MBeanServerBuilder}.
+     * @return the new current {@link j86.javax.management.MBeanServerBuilder}.
      *
      * @exception SecurityException if there is a SecurityManager and
      * the caller's permissions do not make it possible to instantiate
      * a new builder.
      * @exception JMRuntimeException if the builder instantiation
      *   fails with a checked exception -
-     *   {@link java.lang.ClassNotFoundException} etc...
+     *   {@link j86.java.lang.ClassNotFoundException} etc...
      *
      **/
     private static synchronized MBeanServerBuilder getNewMBeanServerBuilder() {

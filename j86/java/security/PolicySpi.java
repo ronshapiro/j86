@@ -24,7 +24,7 @@
  */
 
 
-package java.security;
+package j86.java.security;
 
 /**
  * This class defines the <i>Service Provider Interface</i> (<b>SPI</b>)

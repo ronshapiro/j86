@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.beans;
+package j86.java.beans;
 
-import java.beans.*;
+import j86.java.beans.*;
 
 /**
  * This is a support class to help build property editors.
@@ -129,7 +129,7 @@ public class PropertyEditorSupport implements PropertyEditor {
      * @param gfx  Graphics object to paint into.
      * @param box  Rectangle within graphics object into which we should paint.
      */
-    public void paintValue(java.awt.Graphics gfx, java.awt.Rectangle box) {
+    public void paintValue(j86.java.awt.Graphics gfx, java.awt.Rectangle box) {
     }
 
     //----------------------------------------------------------------------
@@ -169,18 +169,18 @@ public class PropertyEditorSupport implements PropertyEditor {
 
     /**
      * Sets the property value by parsing a given String.  May raise
-     * java.lang.IllegalArgumentException if either the String is
+     * j86.java.lang.IllegalArgumentException if either the String is
      * badly formatted or if this kind of property can't be expressed
      * as text.
      *
      * @param text  The string to be parsed.
      */
-    public void setAsText(String text) throws java.lang.IllegalArgumentException {
+    public void setAsText(String text) throws j86.java.lang.IllegalArgumentException {
         if (value instanceof String) {
             setValue(text);
             return;
         }
-        throw new java.lang.IllegalArgumentException(text);
+        throw new j86.java.lang.IllegalArgumentException(text);
     }
 
     //----------------------------------------------------------------------
@@ -212,12 +212,12 @@ public class PropertyEditorSupport implements PropertyEditor {
      * the Component in some larger property sheet, or it may put it in
      * its own individual dialog, or ...
      *
-     * @return A java.awt.Component that will allow a human to directly
+     * @return A j86.java.awt.Component that will allow a human to directly
      *      edit the current property value.  May be null if this is
      *      not supported.
      */
 
-    public java.awt.Component getCustomEditor() {
+    public j86.java.awt.Component getCustomEditor() {
         return null;
     }
 
@@ -251,7 +251,7 @@ public class PropertyEditorSupport implements PropertyEditor {
     public synchronized void addPropertyChangeListener(
                                 PropertyChangeListener listener) {
         if (listeners == null) {
-            listeners = new java.util.Vector<>();
+            listeners = new j86.java.util.Vector<>();
         }
         listeners.addElement(listener);
     }
@@ -278,7 +278,7 @@ public class PropertyEditorSupport implements PropertyEditor {
      * Report that we have been modified to any interested listeners.
      */
     public void firePropertyChange() {
-        java.util.Vector<PropertyChangeListener> targets;
+        j86.java.util.Vector<PropertyChangeListener> targets;
         synchronized (this) {
             if (listeners == null) {
                 return;
@@ -295,13 +295,13 @@ public class PropertyEditorSupport implements PropertyEditor {
     }
 
     @SuppressWarnings("unchecked")
-    private <T> java.util.Vector<T> unsafeClone(java.util.Vector<T> v) {
-        return (java.util.Vector<T>)v.clone();
+    private <T> j86.java.util.Vector<T> unsafeClone(java.util.Vector<T> v) {
+        return (j86.java.util.Vector<T>)v.clone();
     }
 
     //----------------------------------------------------------------------
 
     private Object value;
     private Object source;
-    private java.util.Vector<PropertyChangeListener> listeners;
+    private j86.java.util.Vector<PropertyChangeListener> listeners;
 }

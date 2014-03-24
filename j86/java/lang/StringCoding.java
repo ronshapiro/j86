@@ -23,25 +23,25 @@
  * questions.
  */
 
-package java.lang;
+package j86.java.lang;
 
-import java.io.UnsupportedEncodingException;
-import java.lang.ref.SoftReference;
-import java.nio.ByteBuffer;
-import java.nio.CharBuffer;
-import java.nio.charset.Charset;
-import java.nio.charset.CharsetDecoder;
-import java.nio.charset.CharsetEncoder;
-import java.nio.charset.CharacterCodingException;
-import java.nio.charset.CoderResult;
-import java.nio.charset.CodingErrorAction;
-import java.nio.charset.IllegalCharsetNameException;
-import java.nio.charset.UnsupportedCharsetException;
-import java.util.Arrays;
-import sun.misc.MessageUtils;
-import sun.nio.cs.HistoricallyNamedCharset;
-import sun.nio.cs.ArrayDecoder;
-import sun.nio.cs.ArrayEncoder;
+import j86.java.io.UnsupportedEncodingException;
+import j86.j86.java.lang.ref.SoftReference;
+import j86.java.nio.ByteBuffer;
+import j86.java.nio.CharBuffer;
+import j86.j86.java.nio.charset.Charset;
+import j86.j86.java.nio.charset.CharsetDecoder;
+import j86.j86.java.nio.charset.CharsetEncoder;
+import j86.j86.java.nio.charset.CharacterCodingException;
+import j86.j86.java.nio.charset.CoderResult;
+import j86.j86.java.nio.charset.CodingErrorAction;
+import j86.j86.java.nio.charset.IllegalCharsetNameException;
+import j86.j86.java.nio.charset.UnsupportedCharsetException;
+import j86.java.util.Arrays;
+import j86.sun.misc.MessageUtils;
+import j86.j86.j86.sun.nio.cs.HistoricallyNamedCharset;
+import j86.j86.j86.sun.nio.cs.ArrayDecoder;
+import j86.j86.j86.sun.nio.cs.ArrayEncoder;
 
 /**
  * Utility class for string encoding and decoding.
@@ -108,7 +108,7 @@ class StringCoding {
 
     private static void warnUnsupportedCharset(String csn) {
         if (warnUnsupportedCharset) {
-            // Use sun.misc.MessageUtils rather than the Logging API or
+            // Use j86.sun.misc.MessageUtils rather than the Logging API or
             // System.err since this method may be called during VM
             // initialization before either is available.
             MessageUtils.err("WARNING: Default charset " + csn +

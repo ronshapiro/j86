@@ -23,23 +23,23 @@
  * questions.
  */
 
-package javax.security.auth;
+package j86.javax.security.auth;
 
-import java.util.*;
-import java.io.*;
-import java.lang.reflect.*;
-import java.text.MessageFormat;
-import java.security.AccessController;
-import java.security.AccessControlContext;
-import java.security.DomainCombiner;
-import java.security.Permission;
-import java.security.PermissionCollection;
-import java.security.Principal;
-import java.security.PrivilegedAction;
-import java.security.PrivilegedExceptionAction;
-import java.security.PrivilegedActionException;
-import java.security.ProtectionDomain;
-import sun.security.util.ResourcesMgr;
+import j86.java.util.*;
+import j86.java.io.*;
+import j86.j86.j86.java.lang.reflect.*;
+import j86.java.text.MessageFormat;
+import j86.java.security.AccessController;
+import j86.java.security.AccessControlContext;
+import j86.java.security.DomainCombiner;
+import j86.java.security.Permission;
+import j86.java.security.PermissionCollection;
+import j86.java.security.Principal;
+import j86.java.security.PrivilegedAction;
+import j86.java.security.PrivilegedExceptionAction;
+import j86.java.security.PrivilegedActionException;
+import j86.java.security.ProtectionDomain;
+import j86.sun.security.util.ResourcesMgr;
 
 /**
  * <p> A {@code Subject} represents a grouping of related information
@@ -89,15 +89,15 @@ import sun.security.util.ResourcesMgr;
  * <p> This {@code Subject} class implements {@code Serializable}.
  * While the Principals associated with the {@code Subject} are serialized,
  * the credentials associated with the {@code Subject} are not.
- * Note that the {@code java.security.Principal} class
+ * Note that the {@code j86.java.security.Principal} class
  * does not implement {@code Serializable}.  Therefore all concrete
  * {@code Principal} implementations associated with Subjects
  * must implement {@code Serializable}.
  *
- * @see java.security.Principal
- * @see java.security.DomainCombiner
+ * @see j86.java.security.Principal
+ * @see j86.java.security.DomainCombiner
  */
-public final class Subject implements java.io.Serializable {
+public final class Subject implements j86.java.io.Serializable {
 
     private static final long serialVersionUID = -8308522755600156056L;
 
@@ -108,7 +108,7 @@ public final class Subject implements java.io.Serializable {
      * <p>
      *
      * @serial Each element in this set is a
-     *          {@code java.security.Principal}.
+     *          {@code j86.java.security.Principal}.
      *          The set is a {@code Subject.SecureSet}.
      */
     Set<Principal> principals;
@@ -236,7 +236,7 @@ public final class Subject implements java.io.Serializable {
      *          to set this {@code Subject} to be read-only.
      */
     public void setReadOnly() {
-        java.lang.SecurityManager sm = System.getSecurityManager();
+        j86.java.lang.SecurityManager sm = System.getSecurityManager();
         if (sm != null) {
             sm.checkPermission(AuthPermissionHolder.SET_READ_ONLY_PERMISSION);
         }
@@ -282,7 +282,7 @@ public final class Subject implements java.io.Serializable {
      */
     public static Subject getSubject(final AccessControlContext acc) {
 
-        java.lang.SecurityManager sm = System.getSecurityManager();
+        j86.java.lang.SecurityManager sm = System.getSecurityManager();
         if (sm != null) {
             sm.checkPermission(AuthPermissionHolder.GET_SUBJECT_PERMISSION);
         }
@@ -294,7 +294,7 @@ public final class Subject implements java.io.Serializable {
 
         // return the Subject from the DomainCombiner of the provided context
         return AccessController.doPrivileged
-            (new java.security.PrivilegedAction<Subject>() {
+            (new j86.java.security.PrivilegedAction<Subject>() {
             public Subject run() {
                 DomainCombiner dc = acc.getDomainCombiner();
                 if (!(dc instanceof SubjectDomainCombiner))
@@ -341,9 +341,9 @@ public final class Subject implements java.io.Serializable {
      *                  to invoke this method.
      */
     public static <T> T doAs(final Subject subject,
-                        final java.security.PrivilegedAction<T> action) {
+                        final j86.java.security.PrivilegedAction<T> action) {
 
-        java.lang.SecurityManager sm = System.getSecurityManager();
+        j86.java.lang.SecurityManager sm = System.getSecurityManager();
         if (sm != null) {
             sm.checkPermission(AuthPermissionHolder.DO_AS_PERMISSION);
         }
@@ -356,7 +356,7 @@ public final class Subject implements java.io.Serializable {
         final AccessControlContext currentAcc = AccessController.getContext();
 
         // call doPrivileged and push this new context on the stack
-        return java.security.AccessController.doPrivileged
+        return j86.java.security.AccessController.doPrivileged
                                         (action,
                                         createContext(subject, currentAcc));
     }
@@ -402,10 +402,10 @@ public final class Subject implements java.io.Serializable {
      *                  to invoke this method.
      */
     public static <T> T doAs(final Subject subject,
-                        final java.security.PrivilegedExceptionAction<T> action)
-                        throws java.security.PrivilegedActionException {
+                        final j86.java.security.PrivilegedExceptionAction<T> action)
+                        throws j86.java.security.PrivilegedActionException {
 
-        java.lang.SecurityManager sm = System.getSecurityManager();
+        j86.java.lang.SecurityManager sm = System.getSecurityManager();
         if (sm != null) {
             sm.checkPermission(AuthPermissionHolder.DO_AS_PERMISSION);
         }
@@ -418,7 +418,7 @@ public final class Subject implements java.io.Serializable {
         final AccessControlContext currentAcc = AccessController.getContext();
 
         // call doPrivileged and push this new context on the stack
-        return java.security.AccessController.doPrivileged
+        return j86.java.security.AccessController.doPrivileged
                                         (action,
                                         createContext(subject, currentAcc));
     }
@@ -459,10 +459,10 @@ public final class Subject implements java.io.Serializable {
      *                  to invoke this method.
      */
     public static <T> T doAsPrivileged(final Subject subject,
-                        final java.security.PrivilegedAction<T> action,
-                        final java.security.AccessControlContext acc) {
+                        final j86.java.security.PrivilegedAction<T> action,
+                        final j86.java.security.AccessControlContext acc) {
 
-        java.lang.SecurityManager sm = System.getSecurityManager();
+        j86.java.lang.SecurityManager sm = System.getSecurityManager();
         if (sm != null) {
             sm.checkPermission(AuthPermissionHolder.DO_AS_PRIVILEGED_PERMISSION);
         }
@@ -479,7 +479,7 @@ public final class Subject implements java.io.Serializable {
                 acc);
 
         // call doPrivileged and push this new context on the stack
-        return java.security.AccessController.doPrivileged
+        return j86.java.security.AccessController.doPrivileged
                                         (action,
                                         createContext(subject, callerAcc));
     }
@@ -525,11 +525,11 @@ public final class Subject implements java.io.Serializable {
      *                  to invoke this method.
      */
     public static <T> T doAsPrivileged(final Subject subject,
-                        final java.security.PrivilegedExceptionAction<T> action,
-                        final java.security.AccessControlContext acc)
-                        throws java.security.PrivilegedActionException {
+                        final j86.java.security.PrivilegedExceptionAction<T> action,
+                        final j86.java.security.AccessControlContext acc)
+                        throws j86.java.security.PrivilegedActionException {
 
-        java.lang.SecurityManager sm = System.getSecurityManager();
+        j86.java.lang.SecurityManager sm = System.getSecurityManager();
         if (sm != null) {
             sm.checkPermission(AuthPermissionHolder.DO_AS_PRIVILEGED_PERMISSION);
         }
@@ -545,7 +545,7 @@ public final class Subject implements java.io.Serializable {
                 acc);
 
         // call doPrivileged and push this new context on the stack
-        return java.security.AccessController.doPrivileged
+        return j86.java.security.AccessController.doPrivileged
                                         (action,
                                         createContext(subject, callerAcc));
     }
@@ -554,8 +554,8 @@ public final class Subject implements java.io.Serializable {
                                         final AccessControlContext acc) {
 
 
-        return java.security.AccessController.doPrivileged
-            (new java.security.PrivilegedAction<AccessControlContext>() {
+        return j86.java.security.AccessController.doPrivileged
+            (new j86.java.security.PrivilegedAction<AccessControlContext>() {
             public AccessControlContext run() {
                 if (subject == null)
                     return new AccessControlContext(acc, null);
@@ -949,8 +949,8 @@ public final class Subject implements java.io.Serializable {
     /**
      * Writes this object out to a stream (i.e., serializes it).
      */
-    private void writeObject(java.io.ObjectOutputStream oos)
-                throws java.io.IOException {
+    private void writeObject(j86.java.io.ObjectOutputStream oos)
+                throws j86.java.io.IOException {
         synchronized(principals) {
             oos.defaultWriteObject();
         }
@@ -959,8 +959,8 @@ public final class Subject implements java.io.Serializable {
     /**
      * Reads this object from a stream (i.e., deserializes it)
      */
-    private void readObject(java.io.ObjectInputStream s)
-                throws java.io.IOException, ClassNotFoundException {
+    private void readObject(j86.java.io.ObjectInputStream s)
+                throws j86.java.io.IOException, ClassNotFoundException {
 
         s.defaultReadObject();
 
@@ -983,7 +983,7 @@ public final class Subject implements java.io.Serializable {
      */
     private static class SecureSet<E>
         extends AbstractSet<E>
-        implements java.io.Serializable {
+        implements j86.java.io.Serializable {
 
         private static final long serialVersionUID = 7911754171111800359L;
 
@@ -1004,7 +1004,7 @@ public final class Subject implements java.io.Serializable {
          * @serial An integer identifying the type of objects contained
          *      in this set.  If {@code which == 1},
          *      this is a Principal set and all the elements are
-         *      of type {@code java.security.Principal}.
+         *      of type {@code j86.java.security.Principal}.
          *      If {@code which == 2}, this is a public credential
          *      set and all the elements are of type {@code Object}.
          *      If {@code which == 3}, this is a private credential
@@ -1061,7 +1061,7 @@ public final class Subject implements java.io.Serializable {
                                 ("Subject.is.read.only"));
                     }
 
-                    java.lang.SecurityManager sm = System.getSecurityManager();
+                    j86.java.lang.SecurityManager sm = System.getSecurityManager();
                     if (sm != null) {
                         switch (which) {
                         case Subject.PRINCIPAL_SET:
@@ -1087,7 +1087,7 @@ public final class Subject implements java.io.Serializable {
                         (ResourcesMgr.getString("Subject.is.read.only"));
             }
 
-            java.lang.SecurityManager sm = System.getSecurityManager();
+            j86.java.lang.SecurityManager sm = System.getSecurityManager();
             if (sm != null) {
                 switch (which) {
                 case Subject.PRINCIPAL_SET:
@@ -1106,7 +1106,7 @@ public final class Subject implements java.io.Serializable {
             case Subject.PRINCIPAL_SET:
                 if (!(o instanceof Principal)) {
                     throw new SecurityException(ResourcesMgr.getString
-                        ("attempting.to.add.an.object.which.is.not.an.instance.of.java.security.Principal.to.a.Subject.s.Principal.Set"));
+                        ("attempting.to.add.an.object.which.is.not.an.instance.of.j86.java.security.Principal.to.a.Subject.s.Principal.Set"));
                 }
                 break;
             default:
@@ -1129,8 +1129,8 @@ public final class Subject implements java.io.Serializable {
                 if (which != Subject.PRIV_CREDENTIAL_SET) {
                     next = e.next();
                 } else {
-                    next = java.security.AccessController.doPrivileged
-                        (new java.security.PrivilegedAction<E>() {
+                    next = j86.java.security.AccessController.doPrivileged
+                        (new j86.java.security.PrivilegedAction<E>() {
                         public E run() {
                             return e.next();
                         }
@@ -1170,8 +1170,8 @@ public final class Subject implements java.io.Serializable {
                                                 (o.getClass().getName(),
                                                 subject.getPrincipals()));
                     }
-                    next = java.security.AccessController.doPrivileged
-                        (new java.security.PrivilegedAction<E>() {
+                    next = j86.java.security.AccessController.doPrivileged
+                        (new j86.java.security.PrivilegedAction<E>() {
                         public E run() {
                             return e.next();
                         }
@@ -1198,8 +1198,8 @@ public final class Subject implements java.io.Serializable {
                 if (which != Subject.PRIV_CREDENTIAL_SET) {
                     next = e.next();
                 } else {
-                    next = java.security.AccessController.doPrivileged
-                        (new java.security.PrivilegedAction<E>() {
+                    next = j86.java.security.AccessController.doPrivileged
+                        (new j86.java.security.PrivilegedAction<E>() {
                         public E run() {
                             return e.next();
                         }
@@ -1236,8 +1236,8 @@ public final class Subject implements java.io.Serializable {
                 if (which != Subject.PRIV_CREDENTIAL_SET) {
                     next = e.next();
                 } else {
-                    next = java.security.AccessController.doPrivileged
-                        (new java.security.PrivilegedAction<E>() {
+                    next = j86.java.security.AccessController.doPrivileged
+                        (new j86.java.security.PrivilegedAction<E>() {
                         public E run() {
                             return e.next();
                         }
@@ -1274,8 +1274,8 @@ public final class Subject implements java.io.Serializable {
                 if (which != Subject.PRIV_CREDENTIAL_SET) {
                     next = e.next();
                 } else {
-                    next = java.security.AccessController.doPrivileged
-                        (new java.security.PrivilegedAction<E>() {
+                    next = j86.java.security.AccessController.doPrivileged
+                        (new j86.java.security.PrivilegedAction<E>() {
                         public E run() {
                             return e.next();
                         }
@@ -1296,8 +1296,8 @@ public final class Subject implements java.io.Serializable {
          *      in the set.  If the security check passes,
          *      the set is serialized.
          */
-        private void writeObject(java.io.ObjectOutputStream oos)
-                throws java.io.IOException {
+        private void writeObject(j86.java.io.ObjectOutputStream oos)
+                throws j86.java.io.IOException {
 
             if (which == Subject.PRIV_CREDENTIAL_SET) {
                 // check permissions before serializing
@@ -1379,8 +1379,8 @@ public final class Subject implements java.io.Serializable {
             while (iterator.hasNext()) {
                 Object next;
                 if (which == Subject.PRIV_CREDENTIAL_SET) {
-                    next = java.security.AccessController.doPrivileged
-                        (new java.security.PrivilegedAction<Object>() {
+                    next = j86.java.security.AccessController.doPrivileged
+                        (new j86.java.security.PrivilegedAction<Object>() {
                         public Object run() {
                             return iterator.next();
                         }

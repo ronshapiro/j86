@@ -23,9 +23,9 @@
  * questions.
  */
 
-package com.sun.jdi.request;
+package j86.j86.com.sun.jdi.request;
 
-import com.sun.jdi.*;
+import j86.com.sun.jdi.*;
 
 /**
  * Request for notification when a field is set.
@@ -39,17 +39,17 @@ import com.sun.jdi.*;
  * Modification by JDI does not trigger this event.
  * When an enabled
  * ModificationWatchpointRequest is satisfied, an
- * {@link com.sun.jdi.event.EventSet event set} containing a
- * {@link com.sun.jdi.event.ModificationWatchpointEvent ModificationWatchpointEvent}
+ * {@link j86.j86.com.sun.jdi.event.EventSet event set} containing a
+ * {@link j86.j86.com.sun.jdi.event.ModificationWatchpointEvent ModificationWatchpointEvent}
  * will be placed on
- * the {@link com.sun.jdi.event.EventQueue EventQueue}.
+ * the {@link j86.j86.com.sun.jdi.event.EventQueue EventQueue}.
  * The collection of existing
  * watchpoints is
  * managed by the {@link EventRequestManager}.
  *
- * @see com.sun.jdi.event.ModificationWatchpointEvent
+ * @see j86.j86.com.sun.jdi.event.ModificationWatchpointEvent
  * @see AccessWatchpointRequest
- * @see com.sun.jdi.event.EventQueue
+ * @see j86.j86.com.sun.jdi.event.EventQueue
  * @see EventRequestManager
  *
  * @author Robert Field

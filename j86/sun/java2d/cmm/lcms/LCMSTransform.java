@@ -33,25 +33,25 @@
  **********************************************************************
  **********************************************************************/
 
-package sun.java2d.cmm.lcms;
+package j86.j86.j86.sun.java2d.cmm.lcms;
 
-import java.awt.color.ICC_Profile;
-import java.awt.color.ProfileDataException;
-import java.awt.color.CMMException;
-import java.awt.color.ColorSpace;
-import java.awt.image.BufferedImage;
-import java.awt.image.Raster;
-import java.awt.image.WritableRaster;
-import java.awt.image.ColorModel;
-import java.awt.image.DirectColorModel;
-import java.awt.image.ComponentColorModel;
-import java.awt.image.SampleModel;
-import java.awt.image.DataBuffer;
-import java.awt.image.SinglePixelPackedSampleModel;
-import java.awt.image.ComponentSampleModel;
-import sun.java2d.cmm.*;
-import sun.java2d.cmm.lcms.*;
-import static sun.java2d.cmm.lcms.LCMSImageLayout.ImageLayoutException;
+import j86.j86.java.awt.color.ICC_Profile;
+import j86.j86.java.awt.color.ProfileDataException;
+import j86.j86.java.awt.color.CMMException;
+import j86.j86.java.awt.color.ColorSpace;
+import j86.j86.j86.java.awt.image.BufferedImage;
+import j86.j86.j86.java.awt.image.Raster;
+import j86.j86.j86.java.awt.image.WritableRaster;
+import j86.j86.j86.java.awt.image.ColorModel;
+import j86.j86.j86.java.awt.image.DirectColorModel;
+import j86.j86.j86.java.awt.image.ComponentColorModel;
+import j86.j86.j86.java.awt.image.SampleModel;
+import j86.j86.j86.java.awt.image.DataBuffer;
+import j86.j86.j86.java.awt.image.SinglePixelPackedSampleModel;
+import j86.j86.j86.java.awt.image.ComponentSampleModel;
+import j86.j86.sun.java2d.cmm.*;
+import j86.j86.j86.sun.java2d.cmm.lcms.*;
+import static j86.j86.j86.sun.java2d.cmm.lcms.LCMSImageLayout.ImageLayoutException;
 
 
 public class LCMSTransform implements ColorTransform {

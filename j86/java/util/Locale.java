@@ -38,31 +38,31 @@
  *
  */
 
-package java.util;
+package j86.java.util;
 
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.ObjectStreamField;
-import java.io.Serializable;
-import java.security.AccessController;
-import java.text.MessageFormat;
-import java.util.spi.LocaleNameProvider;
+import j86.java.io.IOException;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectStreamField;
+import j86.java.io.Serializable;
+import j86.java.security.AccessController;
+import j86.java.text.MessageFormat;
+import j86.j86.java.util.spi.LocaleNameProvider;
 
-import sun.security.action.GetPropertyAction;
-import sun.util.locale.BaseLocale;
-import sun.util.locale.InternalLocaleBuilder;
-import sun.util.locale.LanguageTag;
-import sun.util.locale.LocaleExtensions;
-import sun.util.locale.LocaleMatcher;
-import sun.util.locale.LocaleObjectCache;
-import sun.util.locale.LocaleSyntaxException;
-import sun.util.locale.LocaleUtils;
-import sun.util.locale.ParseStatus;
-import sun.util.locale.provider.LocaleProviderAdapter;
-import sun.util.locale.provider.LocaleResources;
-import sun.util.locale.provider.LocaleServiceProviderPool;
-import sun.util.locale.provider.ResourceBundleBasedAdapter;
+import j86.sun.security.action.GetPropertyAction;
+import j86.j86.sun.util.locale.BaseLocale;
+import j86.j86.sun.util.locale.InternalLocaleBuilder;
+import j86.j86.sun.util.locale.LanguageTag;
+import j86.j86.sun.util.locale.LocaleExtensions;
+import j86.j86.sun.util.locale.LocaleMatcher;
+import j86.j86.sun.util.locale.LocaleObjectCache;
+import j86.j86.sun.util.locale.LocaleSyntaxException;
+import j86.j86.sun.util.locale.LocaleUtils;
+import j86.j86.sun.util.locale.ParseStatus;
+import j86.j86.j86.sun.util.locale.provider.LocaleProviderAdapter;
+import j86.j86.j86.sun.util.locale.provider.LocaleResources;
+import j86.j86.j86.sun.util.locale.provider.LocaleServiceProviderPool;
+import j86.j86.j86.sun.util.locale.provider.ResourceBundleBasedAdapter;
 
 /**
  * A <code>Locale</code> object represents a specific geographical, political,
@@ -475,9 +475,9 @@ import sun.util.locale.provider.ResourceBundleBasedAdapter;
  *
  * @see Builder
  * @see ResourceBundle
- * @see java.text.Format
- * @see java.text.NumberFormat
- * @see java.text.Collator
+ * @see j86.java.text.Format
+ * @see j86.java.text.NumberFormat
+ * @see j86.java.text.Collator
  * @author Mark Davis
  * @since 1.1
  */
@@ -806,7 +806,7 @@ public final class Locale implements Cloneable, Serializable {
      * based on the host environment. It is used by many locale-sensitive
      * methods if no locale is explicitly specified.
      * It can be changed using the
-     * {@link #setDefault(java.util.Locale) setDefault} method.
+     * {@link #setDefault(j86.java.util.Locale) setDefault} method.
      *
      * @return the default locale for this instance of the Java Virtual Machine
      */
@@ -927,7 +927,7 @@ public final class Locale implements Cloneable, Serializable {
      * @throws NullPointerException if <code>newLocale</code> is null
      * @param newLocale the new default locale
      * @see SecurityManager#checkPermission
-     * @see java.util.PropertyPermission
+     * @see j86.java.util.PropertyPermission
      */
     public static synchronized void setDefault(Locale newLocale) {
         setDefault(Category.DISPLAY, newLocale);
@@ -958,7 +958,7 @@ public final class Locale implements Cloneable, Serializable {
      * @throws SecurityException - if a security manager exists and its
      *     checkPermission method doesn't allow the operation.
      * @throws NullPointerException - if category and/or newLocale is null
-     * @see SecurityManager#checkPermission(java.security.Permission)
+     * @see SecurityManager#checkPermission(j86.java.security.Permission)
      * @see PropertyPermission
      * @see #getDefault(Locale.Category)
      * @since 1.7
@@ -989,9 +989,9 @@ public final class Locale implements Cloneable, Serializable {
      * Returns an array of all installed locales.
      * The returned array represents the union of locales supported
      * by the Java runtime environment and by installed
-     * {@link java.util.spi.LocaleServiceProvider LocaleServiceProvider}
+     * {@link j86.j86.java.util.spi.LocaleServiceProvider LocaleServiceProvider}
      * implementations.  It must contain at least a <code>Locale</code>
-     * instance equal to {@link java.util.Locale#US Locale.US}.
+     * instance equal to {@link j86.java.util.Locale#US Locale.US}.
      *
      * @return An array of installed locales.
      */
@@ -1561,7 +1561,7 @@ public final class Locale implements Cloneable, Serializable {
      * @return The locale that best represents the language tag.
      * @throws NullPointerException if <code>languageTag</code> is <code>null</code>
      * @see #toLanguageTag()
-     * @see java.util.Locale.Builder#setLanguageTag(String)
+     * @see j86.java.util.Locale.Builder#setLanguageTag(String)
      * @since 1.7
      */
     public static Locale forLanguageTag(String languageTag) {
@@ -2111,7 +2111,7 @@ public final class Locale implements Cloneable, Serializable {
         return composeList(format, newList);
     }
 
-    // Duplicate of sun.util.locale.UnicodeLocaleExtension.isKey in order to
+    // Duplicate of j86.j86.sun.util.locale.UnicodeLocaleExtension.isKey in order to
     // avoid its class loading.
     private static boolean isUnicodeExtensionKey(String s) {
         // 2alphanum
@@ -2120,22 +2120,22 @@ public final class Locale implements Cloneable, Serializable {
 
     /**
      * @serialField language    String
-     *      language subtag in lower case. (See <a href="java/util/Locale.html#getLanguage()">getLanguage()</a>)
+     *      language subtag in lower case. (See <a href="j86.java.util/Locale.html#getLanguage()">getLanguage()</a>)
      * @serialField country     String
-     *      country subtag in upper case. (See <a href="java/util/Locale.html#getCountry()">getCountry()</a>)
+     *      country subtag in upper case. (See <a href="j86.java.util/Locale.html#getCountry()">getCountry()</a>)
      * @serialField variant     String
-     *      variant subtags separated by LOWLINE characters. (See <a href="java/util/Locale.html#getVariant()">getVariant()</a>)
+     *      variant subtags separated by LOWLINE characters. (See <a href="j86.java.util/Locale.html#getVariant()">getVariant()</a>)
      * @serialField hashcode    int
      *      deprecated, for forward compatibility only
      * @serialField script      String
-     *      script subtag in title case (See <a href="java/util/Locale.html#getScript()">getScript()</a>)
+     *      script subtag in title case (See <a href="j86.java.util/Locale.html#getScript()">getScript()</a>)
      * @serialField extensions  String
      *      canonical representation of extensions, that is,
      *      BCP47 extensions in alphabetical order followed by
      *      BCP47 private use subtags, all in lower case letters
      *      separated by HYPHEN-MINUS characters.
-     *      (See <a href="java/util/Locale.html#getExtensionKeys()">getExtensionKeys()</a>,
-     *      <a href="java/util/Locale.html#getExtension(char)">getExtension(char)</a>)
+     *      (See <a href="j86.java.util/Locale.html#getExtensionKeys()">getExtensionKeys()</a>,
+     *      <a href="j86.java.util/Locale.html#getExtension(char)">getExtension(char)</a>)
      */
     private static final ObjectStreamField[] serialPersistentFields = {
         new ObjectStreamField("language", String.class),
@@ -2204,9 +2204,9 @@ public final class Locale implements Cloneable, Serializable {
      *
      * @return an instance of <code>Locale</code> equivalent to
      * the deserialized <code>Locale</code>.
-     * @throws java.io.ObjectStreamException
+     * @throws j86.java.io.ObjectStreamException
      */
-    private Object readResolve() throws java.io.ObjectStreamException {
+    private Object readResolve() throws j86.java.io.ObjectStreamException {
         return getInstance(baseLocale.getLanguage(), baseLocale.getScript(),
                 baseLocale.getRegion(), baseLocale.getVariant(), localeExtensions);
     }

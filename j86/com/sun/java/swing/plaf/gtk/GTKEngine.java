@@ -23,23 +23,23 @@
  * questions.
  */
 
-package com.sun.java.swing.plaf.gtk;
+package j86.j86.com.sun.java.swing.plaf.gtk;
 
-import java.awt.*;
-import java.awt.image.*;
-import java.util.HashMap;
-import javax.swing.*;
-import javax.swing.plaf.synth.*;
+import j86.java.awt.*;
+import j86.j86.j86.java.awt.image.*;
+import j86.java.util.HashMap;
+import j86.javax.swing.*;
+import j86.j86.j86.javax.swing.plaf.synth.*;
 
-import com.sun.java.swing.plaf.gtk.GTKConstants.ArrowType;
-import com.sun.java.swing.plaf.gtk.GTKConstants.ExpanderStyle;
-import com.sun.java.swing.plaf.gtk.GTKConstants.Orientation;
-import com.sun.java.swing.plaf.gtk.GTKConstants.PositionType;
-import com.sun.java.swing.plaf.gtk.GTKConstants.ShadowType;
-import com.sun.java.swing.plaf.gtk.GTKConstants.TextDirection;
+import j86.j86.com.sun.java.swing.plaf.gtk.GTKConstants.ArrowType;
+import j86.j86.com.sun.java.swing.plaf.gtk.GTKConstants.ExpanderStyle;
+import j86.j86.com.sun.java.swing.plaf.gtk.GTKConstants.Orientation;
+import j86.j86.com.sun.java.swing.plaf.gtk.GTKConstants.PositionType;
+import j86.j86.com.sun.java.swing.plaf.gtk.GTKConstants.ShadowType;
+import j86.j86.com.sun.java.swing.plaf.gtk.GTKConstants.TextDirection;
 
-import sun.awt.image.SunWritableRaster;
-import sun.swing.ImageCache;
+import j86.j86.j86.sun.awt.image.SunWritableRaster;
+import j86.sun.swing.ImageCache;
 
 /**
  * GTKEngine delegates all painting job to native GTK libraries.
@@ -610,7 +610,7 @@ class GTKEngine {
      * Notify native layer of theme change, and flush cache
      */
     public void themeChanged() {
-        synchronized(sun.awt.UNIXToolkit.GTK_LOCK) {
+        synchronized(j86.sun.awt.UNIXToolkit.GTK_LOCK) {
             native_switch_theme();
         }
         cache.flush();
@@ -618,7 +618,7 @@ class GTKEngine {
 
     /* GtkSettings enum mirrors that in gtk2_interface.h */
     public Object getSetting(Settings property) {
-        synchronized(sun.awt.UNIXToolkit.GTK_LOCK) {
+        synchronized(j86.sun.awt.UNIXToolkit.GTK_LOCK) {
             return native_get_gtk_setting(property.ordinal());
         }
     }

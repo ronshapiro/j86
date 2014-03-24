@@ -23,20 +23,20 @@
  * questions.
  */
 
-package sun.net.www.content.image;
+package j86.j86.j86.sun.net.www.content.image;
 
-import java.net.*;
-import sun.awt.image.*;
-import java.awt.Image;
-import java.awt.Toolkit;
+import j86.java.net.*;
+import j86.j86.j86.sun.awt.image.*;
+import j86.java.awt.Image;
+import j86.java.awt.Toolkit;
 
 public class x_xbitmap extends ContentHandler {
-    public Object getContent(URLConnection urlc) throws java.io.IOException {
+    public Object getContent(URLConnection urlc) throws j86.java.io.IOException {
         return new URLImageSource(urlc);
     }
 
     @SuppressWarnings("rawtypes")
-    public Object getContent(URLConnection urlc, Class[] classes) throws java.io.IOException {
+    public Object getContent(URLConnection urlc, Class[] classes) throws j86.java.io.IOException {
         Class<?>[] cls = classes;
         for (int i = 0; i < cls.length; i++) {
             if (cls[i].isAssignableFrom(URLImageSource.class)) {

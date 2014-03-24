@@ -32,20 +32,20 @@
  */
 
 
-package com.sun.tools.example.debug.gui;
+package j86.com.sun.tools.example.debug.gui;
 
-import java.io.*;
-import java.util.*;
+import j86.java.io.*;
+import j86.java.util.*;
 
-import javax.swing.*;
-import java.awt.BorderLayout;
-import java.awt.event.*;
+import j86.javax.swing.*;
+import j86.java.awt.BorderLayout;
+import j86.j86.java.awt.event.*;
 
-import com.sun.jdi.*;
-import com.sun.jdi.event.*;
+import j86.com.sun.jdi.*;
+import j86.j86.com.sun.jdi.event.*;
 
-import com.sun.tools.example.debug.bdi.*;
-import com.sun.tools.example.debug.event.*;
+import j86.com.sun.tools.example.debug.bdi.*;
+import j86.com.sun.tools.example.debug.event.*;
 
 public class CommandTool extends JPanel {
 

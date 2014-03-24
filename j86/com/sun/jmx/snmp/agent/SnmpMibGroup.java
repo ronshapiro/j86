@@ -23,18 +23,18 @@
  * questions.
  */
 
-package com.sun.jmx.snmp.agent;
+package j86.j86.com.sun.jmx.snmp.agent;
 
 // java imports
 //
-import java.io.Serializable;
-import java.util.Hashtable;
-import java.util.Vector;
+import j86.java.io.Serializable;
+import j86.java.util.Hashtable;
+import j86.java.util.Vector;
 
 // jmx imports
 //
-import com.sun.jmx.snmp.SnmpVarBind;
-import com.sun.jmx.snmp.SnmpStatusException;
+import j86.com.sun.jmx.snmp.SnmpVarBind;
+import j86.com.sun.jmx.snmp.SnmpStatusException;
 
 
 /**

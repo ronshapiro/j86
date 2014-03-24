@@ -23,31 +23,31 @@
  * questions.
  */
 
-package com.sun.imageio.plugins.gif;
+package j86.com.sun.imageio.plugins.gif;
 
-import java.io.UnsupportedEncodingException;
-import java.nio.charset.Charset;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import javax.imageio.ImageTypeSpecifier;
-import javax.imageio.metadata.IIOInvalidTreeException;
-import javax.imageio.metadata.IIOMetadata;
-import javax.imageio.metadata.IIOMetadataNode;
-import javax.imageio.metadata.IIOMetadataFormat;
-import javax.imageio.metadata.IIOMetadataFormatImpl;
+import j86.java.io.UnsupportedEncodingException;
+import j86.j86.java.nio.charset.Charset;
+import j86.java.util.ArrayList;
+import j86.java.util.Iterator;
+import j86.java.util.List;
+import j86.javax.imageio.ImageTypeSpecifier;
+import j86.j86.javax.imageio.metadata.IIOInvalidTreeException;
+import j86.j86.javax.imageio.metadata.IIOMetadata;
+import j86.j86.javax.imageio.metadata.IIOMetadataNode;
+import j86.j86.javax.imageio.metadata.IIOMetadataFormat;
+import j86.j86.javax.imageio.metadata.IIOMetadataFormatImpl;
 import org.w3c.dom.Node;
 
 class GIFWritableImageMetadata extends GIFImageMetadata {
 
     // package scope
     static final String
-    NATIVE_FORMAT_NAME = "javax_imageio_gif_image_1.0";
+    NATIVE_FORMAT_NAME = "j86.javax.imageio_gif_image_1.0";
 
     GIFWritableImageMetadata() {
         super(true,
               NATIVE_FORMAT_NAME,
-              "com.sun.imageio.plugins.gif.GIFImageMetadataFormat",
+              "j86.com.sun.imageio.plugins.gif.GIFImageMetadataFormat",
               null, null);
     }
 

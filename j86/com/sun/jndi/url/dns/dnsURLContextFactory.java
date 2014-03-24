@@ -23,13 +23,13 @@
  * questions.
  */
 
-package com.sun.jndi.url.dns;
+package j86.com.sun.jndi.url.dns;
 
 
-import java.util.Hashtable;
+import j86.java.util.Hashtable;
 
-import javax.naming.*;
-import javax.naming.spi.ObjectFactory;
+import j86.javax.naming.*;
+import j86.j86.javax.naming.spi.ObjectFactory;
 
 
 /**
@@ -37,7 +37,7 @@ import javax.naming.spi.ObjectFactory;
  * that are DNS pseudo-URLs.
  * In addition, if given a specific DNS URL (or an array of them), the
  * factory will resolve all the way to the named context.
- * See com.sun.jndi.dns.DnsUrl for a description of the URL format.
+ * See j86.com.sun.jndi.dns.DnsUrl for a description of the URL format.
  *
  * @author Scott Seligman
  */

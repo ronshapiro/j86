@@ -34,12 +34,12 @@
  *******************************************************************************
  */
 
-package sun.text.normalizer;
+package j86.j86.sun.text.normalizer;
 
-import java.io.BufferedInputStream;
-import java.io.InputStream;
-import java.io.IOException;
-import java.util.MissingResourceException;
+import j86.java.io.BufferedInputStream;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
+import j86.java.util.MissingResourceException;
 
 /**
 * <p>Internal class used for Unicode character property database.</p>
@@ -291,7 +291,7 @@ public final class UCharacterProperty
     /**
     * Default name of the datafile
     */
-    private static final String DATA_FILE_NAME_ = "/sun/text/resources/uprops.icu";
+    private static final String DATA_FILE_NAME_ = "/j86.j86.sun.text.resources/uprops.icu";
 
     /**
     * Default buffer size of datafile

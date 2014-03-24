@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.net.www.protocol.http;
+package j86.j86.j86.sun.net.www.protocol.http;
 
-import java.io.Serializable;
-import java.net.PasswordAuthentication;
+import j86.java.io.Serializable;
+import j86.java.net.PasswordAuthentication;
 
 /**
  * AuthCacheValue: interface to minimize exposure to authentication cache

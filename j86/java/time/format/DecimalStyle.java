@@ -59,17 +59,17 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package java.time.format;
+package j86.j86.java.time.format;
 
-import java.text.DecimalFormatSymbols;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.Locale;
-import java.util.Objects;
-import java.util.Set;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentMap;
+import j86.java.text.DecimalFormatSymbols;
+import j86.java.util.Arrays;
+import j86.java.util.Collections;
+import j86.java.util.HashSet;
+import j86.java.util.Locale;
+import j86.java.util.Objects;
+import j86.java.util.Set;
+import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.j86.java.util.concurrent.ConcurrentMap;
 
 /**
  * Localized decimal style used in date and time formatting.
@@ -129,7 +129,7 @@ public final class DecimalStyle {
 
     /**
      * Obtains the DecimalStyle for the default
-     * {@link java.util.Locale.Category#FORMAT FORMAT} locale.
+     * {@link j86.java.util.Locale.Category#FORMAT FORMAT} locale.
      * <p>
      * This method provides access to locale sensitive decimal style symbols.
      * <p>
@@ -137,7 +137,7 @@ public final class DecimalStyle {
      * {@link #of(Locale)
      *     of(Locale.getDefault(Locale.Category.FORMAT))}.
      *
-     * @see java.util.Locale.Category#FORMAT
+     * @see j86.java.util.Locale.Category#FORMAT
      * @return the info, not null
      */
     public static DecimalStyle ofDefaultLocale() {

@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.security.jgss.krb5;
+package j86.j86.sun.security.jgss.krb5;
 
-import org.ietf.jgss.*;
-import sun.security.jgss.spi.*;
-import sun.security.krb5.*;
-import java.security.Provider;
+import j86.org.ietf.jgss.*;
+import j86.j86.sun.security.jgss.spi.*;
+import j86.sun.security.krb5.*;
+import j86.java.security.Provider;
 
 /**
  * Provides type safety for Krb5 credential elements.

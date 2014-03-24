@@ -23,22 +23,22 @@
  * questions.
  */
 
-package sun.security.jgss;
+package j86.sun.security.jgss;
 
-import java.lang.reflect.InvocationTargetException;
-import org.ietf.jgss.*;
-import java.security.AccessController;
-import java.security.Provider;
-import java.security.Security;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.HashMap;
-import java.util.Enumeration;
-import java.util.Iterator;
-import sun.security.jgss.spi.*;
-import sun.security.jgss.wrapper.NativeGSSFactory;
-import sun.security.jgss.wrapper.SunNativeProvider;
-import sun.security.action.GetPropertyAction;
+import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.org.ietf.jgss.*;
+import j86.java.security.AccessController;
+import j86.java.security.Provider;
+import j86.java.security.Security;
+import j86.java.util.ArrayList;
+import j86.java.util.HashSet;
+import j86.java.util.HashMap;
+import j86.java.util.Enumeration;
+import j86.java.util.Iterator;
+import j86.j86.sun.security.jgss.spi.*;
+import j86.j86.sun.security.jgss.wrapper.NativeGSSFactory;
+import j86.j86.sun.security.jgss.wrapper.SunNativeProvider;
+import j86.sun.security.action.GetPropertyAction;
 
 /**
  * This class stores the list of providers that this
@@ -91,11 +91,11 @@ public final class ProviderList {
         PROV_PROP_PREFIX.length();
 
     private static final String SPI_MECH_FACTORY_TYPE
-        = "sun.security.jgss.spi.MechanismFactory";
+        = "j86.j86.sun.security.jgss.spi.MechanismFactory";
 
     // Undocumented property?
     private static final String DEFAULT_MECH_PROP =
-        "sun.security.jgss.mechanism";
+        "j86.sun.security.jgss.mechanism";
 
     public static final Oid DEFAULT_MECH_OID;
 
@@ -297,7 +297,7 @@ public final class ProviderList {
 
             if (baseClass.isAssignableFrom(implClass)) {
 
-                java.lang.reflect.Constructor<?> c =
+                j86.j86.j86.java.lang.reflect.Constructor<?> c =
                                 implClass.getConstructor(GSSCaller.class);
                 MechanismFactory mf = (MechanismFactory) (c.newInstance(caller));
 

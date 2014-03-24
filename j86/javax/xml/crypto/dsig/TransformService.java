@@ -25,22 +25,22 @@
 /*
  * $Id: TransformService.java,v 1.6.4.1 2005/09/15 12:42:11 mullan Exp $
  */
-package javax.xml.crypto.dsig;
+package j86.j86.javax.xml.crypto.dsig;
 
-import java.security.InvalidAlgorithmParameterException;
-import java.security.NoSuchAlgorithmException;
-import java.security.NoSuchProviderException;
-import java.security.Provider;
-import java.security.Provider.Service;
-import java.security.Security;
-import java.util.*;
-import javax.xml.crypto.MarshalException;
-import javax.xml.crypto.XMLStructure;
-import javax.xml.crypto.XMLCryptoContext;
-import javax.xml.crypto.dsig.spec.TransformParameterSpec;
+import j86.java.security.InvalidAlgorithmParameterException;
+import j86.java.security.NoSuchAlgorithmException;
+import j86.java.security.NoSuchProviderException;
+import j86.java.security.Provider;
+import j86.java.security.Provider.Service;
+import j86.java.security.Security;
+import j86.java.util.*;
+import j86.javax.xml.crypto.MarshalException;
+import j86.javax.xml.crypto.XMLStructure;
+import j86.javax.xml.crypto.XMLCryptoContext;
+import j86.j86.j86.javax.xml.crypto.dsig.spec.TransformParameterSpec;
 
-import sun.security.jca.*;
-import sun.security.jca.GetInstance.Instance;
+import j86.sun.security.jca.*;
+import j86.sun.security.jca.GetInstance.Instance;
 
 /**
  * A Service Provider Interface for transform and canonicalization algorithms.
@@ -56,7 +56,7 @@ import sun.security.jca.GetInstance.Instance;
  * </code></blockquote>
  *
  * <p><code>TransformService</code> implementations are registered and loaded
- * using the {@link java.security.Provider} mechanism.  Each
+ * using the {@link j86.java.security.Provider} mechanism.  Each
  * <code>TransformService</code> service provider implementation should include
  * a <code>MechanismType</code> service attribute that identifies the XML
  * mechanism type that it supports. If the attribute is not specified,

@@ -23,20 +23,20 @@
  * questions.
  */
 
-package sun.awt.image;
+package j86.j86.j86.sun.awt.image;
 
-import java.awt.Color;
-import java.awt.GraphicsEnvironment;
-import java.awt.GraphicsConfiguration;
-import java.awt.Image;
-import java.awt.ImageCapabilities;
-import java.awt.image.BufferedImage;
-import java.awt.image.VolatileImage;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.Iterator;
-import sun.java2d.SurfaceData;
-import sun.java2d.SurfaceDataProxy;
-import sun.java2d.loops.CompositeType;
+import j86.java.awt.Color;
+import j86.java.awt.GraphicsEnvironment;
+import j86.java.awt.GraphicsConfiguration;
+import j86.java.awt.Image;
+import j86.java.awt.ImageCapabilities;
+import j86.j86.j86.java.awt.image.BufferedImage;
+import j86.j86.j86.java.awt.image.VolatileImage;
+import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.util.Iterator;
+import j86.sun.java2d.SurfaceData;
+import j86.sun.java2d.SurfaceDataProxy;
+import j86.j86.sun.java2d.loops.CompositeType;
 
 /**
  * The abstract base class that manages the various SurfaceData objects that
@@ -178,7 +178,7 @@ public abstract class SurfaceManager {
      * A null GraphicsConfiguration returns a value based on whether the
      * image is currently accelerated on its default GraphicsConfiguration.
      *
-     * @see java.awt.Image#getCapabilities
+     * @see j86.java.awt.Image#getCapabilities
      * @since 1.5
      */
     public ImageCapabilities getCapabilities(GraphicsConfiguration gc) {

@@ -23,16 +23,16 @@
  * questions.
  */
 
-package com.sun.naming.internal;
+package j86.com.sun.naming.internal;
 
-import java.io.InputStream;
-import java.io.IOException;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.StringTokenizer;
-import java.util.Vector;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
+import j86.java.net.MalformedURLException;
+import j86.java.net.URL;
+import j86.java.util.StringTokenizer;
+import j86.java.util.Vector;
 
-import javax.naming.NamingEnumeration;
+import j86.javax.naming.NamingEnumeration;
 
 /**
  * VersionHelper was used by JNDI to accommodate differences between
@@ -49,14 +49,14 @@ public abstract class VersionHelper {
     private static VersionHelper helper = null;
 
     final static String[] PROPS = new String[] {
-        javax.naming.Context.INITIAL_CONTEXT_FACTORY,
-        javax.naming.Context.OBJECT_FACTORIES,
-        javax.naming.Context.URL_PKG_PREFIXES,
-        javax.naming.Context.STATE_FACTORIES,
-        javax.naming.Context.PROVIDER_URL,
-        javax.naming.Context.DNS_URL,
+        j86.javax.naming.Context.INITIAL_CONTEXT_FACTORY,
+        j86.javax.naming.Context.OBJECT_FACTORIES,
+        j86.javax.naming.Context.URL_PKG_PREFIXES,
+        j86.javax.naming.Context.STATE_FACTORIES,
+        j86.javax.naming.Context.PROVIDER_URL,
+        j86.javax.naming.Context.DNS_URL,
         // The following shouldn't create a runtime dependence on ldap package.
-        javax.naming.ldap.LdapContext.CONTROL_FACTORIES
+        j86.j86.javax.naming.ldap.LdapContext.CONTROL_FACTORIES
     };
 
     public final static int INITIAL_CONTEXT_FACTORY = 0;

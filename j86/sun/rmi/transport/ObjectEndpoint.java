@@ -22,9 +22,9 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.rmi.transport;
+package j86.sun.rmi.transport;
 
-import java.rmi.server.ObjID;
+import j86.j86.java.rmi.server.ObjID;
 
 /**
  * An object used as a key to the object table that maps an

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.sql;
+package j86.java.sql;
 
 /**
  * The mapping in the Java programming language for the SQL type
@@ -92,7 +92,7 @@ public interface Array {
    * Retrieves the JDBC type of the elements in the array designated
    * by this <code>Array</code> object.
    *
-   * @return a constant from the class {@link java.sql.Types} that is
+   * @return a constant from the class {@link j86.java.sql.Types} that is
    * the type code for the elements in the array designated by this
    * <code>Array</code> object
    * @exception SQLException if an error occurs while attempting
@@ -143,7 +143,7 @@ public interface Array {
    * implementation-defined whether the array returned is an array of
    * that primitive data type or an array of <code>Object</code>.
    *
-   * @param map a <code>java.util.Map</code> object that contains mappings
+   * @param map a <code>j86.java.util.Map</code> object that contains mappings
    *            of SQL type names to classes in the Java programming language
    * @return an array in the Java programming language that contains the ordered
    *         elements of the SQL array designated by this object
@@ -153,7 +153,7 @@ public interface Array {
    * this method
    * @since 1.2
    */
-  Object getArray(java.util.Map<String,Class<?>> map) throws SQLException;
+  Object getArray(j86.java.util.Map<String,Class<?>> map) throws SQLException;
 
   /**
    * Retrieves a slice of the SQL <code>ARRAY</code>
@@ -203,7 +203,7 @@ public interface Array {
    *              the first element is at index 1
    * @param count the number of successive SQL array elements to
    * retrieve
-   * @param map a <code>java.util.Map</code> object
+   * @param map a <code>j86.java.util.Map</code> object
    * that contains SQL type names and the classes in
    * the Java programming language to which they are mapped
    * @return an array containing up to <code>count</code>
@@ -216,7 +216,7 @@ public interface Array {
    * this method
    * @since 1.2
    */
-  Object getArray(long index, int count, java.util.Map<String,Class<?>> map)
+  Object getArray(long index, int count, j86.java.util.Map<String,Class<?>> map)
     throws SQLException;
 
   /**
@@ -273,7 +273,7 @@ public interface Array {
    * this method
    * @since 1.2
    */
-  ResultSet getResultSet (java.util.Map<String,Class<?>> map) throws SQLException;
+  ResultSet getResultSet (j86.java.util.Map<String,Class<?>> map) throws SQLException;
 
   /**
    * Retrieves a result set holding the elements of the subarray that
@@ -342,7 +342,7 @@ public interface Array {
    * @since 1.2
    */
   ResultSet getResultSet (long index, int count,
-                          java.util.Map<String,Class<?>> map)
+                          j86.java.util.Map<String,Class<?>> map)
     throws SQLException;
     /**
      * This method frees the <code>Array</code> object and releases the resources that

@@ -22,27 +22,27 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.util.stream;
+package j86.j86.java.util.stream;
 
-import java.util.LongSummaryStatistics;
-import java.util.Objects;
-import java.util.OptionalDouble;
-import java.util.OptionalLong;
-import java.util.PrimitiveIterator;
-import java.util.Spliterator;
-import java.util.Spliterators;
-import java.util.function.BiConsumer;
-import java.util.function.BinaryOperator;
-import java.util.function.IntFunction;
-import java.util.function.LongBinaryOperator;
-import java.util.function.LongConsumer;
-import java.util.function.LongFunction;
-import java.util.function.LongPredicate;
-import java.util.function.LongToDoubleFunction;
-import java.util.function.LongToIntFunction;
-import java.util.function.LongUnaryOperator;
-import java.util.function.ObjLongConsumer;
-import java.util.function.Supplier;
+import j86.java.util.LongSummaryStatistics;
+import j86.java.util.Objects;
+import j86.java.util.OptionalDouble;
+import j86.java.util.OptionalLong;
+import j86.java.util.PrimitiveIterator;
+import j86.java.util.Spliterator;
+import j86.java.util.Spliterators;
+import j86.j86.java.util.function.BiConsumer;
+import j86.j86.java.util.function.BinaryOperator;
+import j86.j86.java.util.function.IntFunction;
+import j86.j86.java.util.function.LongBinaryOperator;
+import j86.j86.java.util.function.LongConsumer;
+import j86.j86.java.util.function.LongFunction;
+import j86.j86.java.util.function.LongPredicate;
+import j86.j86.java.util.function.LongToDoubleFunction;
+import j86.j86.java.util.function.LongToIntFunction;
+import j86.j86.java.util.function.LongUnaryOperator;
+import j86.j86.java.util.function.ObjLongConsumer;
+import j86.j86.java.util.function.Supplier;
 
 /**
  * Abstract base class for an intermediate pipeline stage or pipeline source

@@ -22,14 +22,14 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.net;
+package j86.java.net;
 
-import java.io.IOException;
-import java.io.InvalidObjectException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.ObjectStreamException;
-import java.io.ObjectStreamField;
+import j86.java.io.IOException;
+import j86.java.io.InvalidObjectException;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectStreamException;
+import j86.java.io.ObjectStreamField;
 
 /**
  *
@@ -45,8 +45,8 @@ import java.io.ObjectStreamField;
  * The <i>wildcard</i> is a special local IP address. It usually means "any"
  * and can only be used for {@code bind} operations.
  *
- * @see java.net.Socket
- * @see java.net.ServerSocket
+ * @see j86.java.net.Socket
+ * @see j86.java.net.ServerSocket
  * @since 1.4
  */
 public class InetSocketAddress
@@ -303,10 +303,10 @@ public class InetSocketAddress
     }
 
     private static final long FIELDS_OFFSET;
-    private static final sun.misc.Unsafe UNSAFE;
+    private static final j86.sun.misc.Unsafe UNSAFE;
     static {
         try {
-            sun.misc.Unsafe unsafe = sun.misc.Unsafe.getUnsafe();
+            j86.sun.misc.Unsafe unsafe = sun.misc.Unsafe.getUnsafe();
             FIELDS_OFFSET = unsafe.objectFieldOffset(
                     InetSocketAddress.class.getDeclaredField("holder"));
             UNSAFE = unsafe;
@@ -398,7 +398,7 @@ public class InetSocketAddress
      * @param   obj   the object to compare against.
      * @return  {@code true} if the objects are the same;
      *          {@code false} otherwise.
-     * @see java.net.InetAddress#equals(java.lang.Object)
+     * @see j86.java.net.InetAddress#equals(j86.java.lang.Object)
      */
     @Override
     public final boolean equals(Object obj) {

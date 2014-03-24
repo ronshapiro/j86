@@ -24,23 +24,23 @@
  */
 
 
-package com.sun.jmx.snmp;
+package j86.com.sun.jmx.snmp;
 
 
 
 // java imports
 //
-import java.util.logging.Level;
-import java.util.Vector;
-import java.net.InetAddress;
+import j86.j86.java.util.logging.Level;
+import j86.java.util.Vector;
+import j86.java.net.InetAddress;
 
-import static com.sun.jmx.defaults.JmxProperties.SNMP_LOGGER;
+import static j86.com.sun.jmx.defaults.JmxProperties.SNMP_LOGGER;
 
 /**
  * Is a partially decoded representation of an SNMP packet.
  * <P>
  * You will not normally need to use this class unless you decide to
- * implement your own {@link com.sun.jmx.snmp.SnmpPduFactory SnmpPduFactory} object.
+ * implement your own {@link j86.com.sun.jmx.snmp.SnmpPduFactory SnmpPduFactory} object.
  * <P>
  * The <CODE>SnmpMessage</CODE> class is directly mapped onto the
  * <CODE>Message</CODE> syntax defined in RFC1157 and RFC1902.

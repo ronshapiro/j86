@@ -24,20 +24,20 @@
  */
 
 
-package java.util.logging;
+package j86.j86.java.util.logging;
 
-import java.lang.ref.WeakReference;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.Locale;
-import java.util.MissingResourceException;
-import java.util.ResourceBundle;
-import java.util.concurrent.CopyOnWriteArrayList;
-import java.util.function.Supplier;
-import sun.reflect.CallerSensitive;
-import sun.reflect.Reflection;
+import j86.j86.java.lang.ref.WeakReference;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.util.ArrayList;
+import j86.java.util.Iterator;
+import j86.java.util.Locale;
+import j86.java.util.MissingResourceException;
+import j86.java.util.ResourceBundle;
+import j86.j86.java.util.concurrent.CopyOnWriteArrayList;
+import j86.j86.java.util.function.Supplier;
+import j86.sun.reflect.CallerSensitive;
+import j86.sun.reflect.Reflection;
 
 /**
  * A Logger object is used to log messages for a specific
@@ -45,7 +45,7 @@ import sun.reflect.Reflection;
  * using a hierarchical dot-separated namespace.  Logger names
  * can be arbitrary strings, but they should normally be based on
  * the package name or class name of the logged component, such
- * as java.net or javax.swing.  In addition it is possible to create
+ * as j86.java.net or j86.javax.swing.  In addition it is possible to create
  * "anonymous" Loggers that are not stored in the Logger namespace.
  * <p>
  * Logger objects may be obtained by calls on one of the getLogger
@@ -90,9 +90,9 @@ import sun.reflect.Reflection;
  * <p>
  * Each Logger may have a {@code ResourceBundle} associated with it.
  * The {@code ResourceBundle} may be specified by name, using the
- * {@link #getLogger(java.lang.String, java.lang.String)} factory
+ * {@link #getLogger(j86.java.lang.String, java.lang.String)} factory
  * method, or by value - using the {@link
- * #setResourceBundle(java.util.ResourceBundle) setResourceBundle} method.
+ * #setResourceBundle(j86.java.util.ResourceBundle) setResourceBundle} method.
  * This bundle will be used for localizing logging messages.
  * If a Logger does not have its own {@code ResourceBundle} or resource bundle
  * name, then it will inherit the {@code ResourceBundle} or resource bundle name
@@ -104,7 +104,7 @@ import sun.reflect.Reflection;
  * {@code ResourceBundle} and if the {@code ResourceBundle} has a mapping for
  * the msg string, then the msg string is replaced by the localized value.
  * Otherwise the original msg string is used.  Typically, formatters use
- * java.text.MessageFormat style formatting to format parameters, so
+ * j86.java.text.MessageFormat style formatting to format parameters, so
  * for example a format string "{0} {1}" would format two parameters
  * as strings.
  * <p>
@@ -137,28 +137,28 @@ import sun.reflect.Reflection;
  * <p>
  * When looking for a {@code ResourceBundle}, the logger will first look at
  * whether a bundle was specified using {@link
- * #setResourceBundle(java.util.ResourceBundle) setResourceBundle}, and then
+ * #setResourceBundle(j86.java.util.ResourceBundle) setResourceBundle}, and then
  * only whether a resource bundle name was specified through the {@link
- * #getLogger(java.lang.String, java.lang.String) getLogger} factory method.
+ * #getLogger(j86.java.lang.String, java.lang.String) getLogger} factory method.
  * If no {@code ResourceBundle} or no resource bundle name is found,
  * then it will use the nearest {@code ResourceBundle} or resource bundle
  * name inherited from its parent tree.<br>
  * When a {@code ResourceBundle} was inherited or specified through the
  * {@link
- * #setResourceBundle(java.util.ResourceBundle) setResourceBundle} method, then
+ * #setResourceBundle(j86.java.util.ResourceBundle) setResourceBundle} method, then
  * that {@code ResourceBundle} will be used. Otherwise if the logger only
  * has or inherited a resource bundle name, then that resource bundle name
  * will be mapped to a {@code ResourceBundle} object, using the default Locale
  * at the time of logging.
  * <br id="ResourceBundleMapping">When mapping resource bundle names to
  * {@code ResourceBundle} objects, the logger will first try to use the
- * Thread's {@linkplain java.lang.Thread#getContextClassLoader() context class
+ * Thread's {@linkplain j86.java.lang.Thread#getContextClassLoader() context class
  * loader} to map the given resource bundle name to a {@code ResourceBundle}.
  * If the thread context class loader is {@code null}, it will try the
- * {@linkplain java.lang.ClassLoader#getSystemClassLoader() system class loader}
+ * {@linkplain j86.java.lang.ClassLoader#getSystemClassLoader() system class loader}
  * instead.  If the {@code ResourceBundle} is still not found, it will use the
  * class loader of the first caller of the {@link
- * #getLogger(java.lang.String, java.lang.String) getLogger} factory method.
+ * #getLogger(j86.java.lang.String, java.lang.String) getLogger} factory method.
  * <p>
  * Formatting (including localization) is the responsibility of
  * the output Handler, which will typically call a Formatter.
@@ -219,7 +219,7 @@ public class Logger {
     private static final Handler emptyHandlers[] = new Handler[0];
     private static final int offValue = Level.OFF.intValue();
 
-    static final String SYSTEM_LOGGER_RB_NAME = "sun.util.logging.resources.logging";
+    static final String SYSTEM_LOGGER_RB_NAME = "j86.j86.sun.util.logging.resources.logging";
 
     // This class is immutable and it is important that it remains so.
     private static final class LoggerBundle {
@@ -361,8 +361,8 @@ public class Logger {
      * @param   name    A name for the logger.  This should
      *                          be a dot-separated name and should normally
      *                          be based on the package name or class name
-     *                          of the subsystem, such as java.net
-     *                          or javax.swing.  It may be null for anonymous Loggers.
+     *                          of the subsystem, such as j86.java.net
+     *                          or j86.javax.swing.  It may be null for anonymous Loggers.
      * @param   resourceBundleName  name of ResourceBundle to be used for localizing
      *                          messages for this logger.  May be null if none
      *                          of the messages require localization.
@@ -420,7 +420,7 @@ public class Logger {
         }
     }
 
-    // Until all JDK code converted to call sun.util.logging.PlatformLogger
+    // Until all JDK code converted to call j86.j86.sun.util.logging.PlatformLogger
     // (see 7054233), we need to determine if Logger.getLogger is to add
     // a system logger or user logger.
     //
@@ -429,7 +429,7 @@ public class Logger {
     // These system loggers only set the resource bundle to the given
     // resource bundle name (rather than the default system resource bundle).
     private static class SystemLoggerHelper {
-        static boolean disableCallerCheck = getBooleanProperty("sun.util.logging.disableCallerCheck");
+        static boolean disableCallerCheck = getBooleanProperty("j86.j86.sun.util.logging.disableCallerCheck");
         private static boolean getBooleanProperty(final String key) {
             String s = AccessController.doPrivileged(new PrivilegedAction<String>() {
                 @Override
@@ -476,8 +476,8 @@ public class Logger {
      * @param   name            A name for the logger.  This should
      *                          be a dot-separated name and should normally
      *                          be based on the package name or class name
-     *                          of the subsystem, such as java.net
-     *                          or javax.swing
+     *                          of the subsystem, such as j86.java.net
+     *                          or j86.javax.swing
      * @return a suitable Logger
      * @throws NullPointerException if the name is null.
      */
@@ -527,8 +527,8 @@ public class Logger {
      * @param   name    A name for the logger.  This should
      *                          be a dot-separated name and should normally
      *                          be based on the package name or class name
-     *                          of the subsystem, such as java.net
-     *                          or javax.swing
+     *                          of the subsystem, such as j86.java.net
+     *                          or j86.javax.swing
      * @param   resourceBundleName  name of ResourceBundle to be used for localizing
      *                          messages for this logger. May be {@code null}
      *                          if none of the messages require localization.
@@ -564,7 +564,7 @@ public class Logger {
 
     // package-private
     // Add a platform logger to the system context.
-    // i.e. caller of sun.util.logging.PlatformLogger.getLogger
+    // i.e. caller of j86.j86.sun.util.logging.PlatformLogger.getLogger
     static Logger getPlatformLogger(String name) {
         LogManager manager = LogManager.getLogManager();
 
@@ -590,7 +590,7 @@ public class Logger {
      * to have the root logger ("") as its parent.  This means that
      * by default it inherits its effective level and handlers
      * from the root logger. Changing its parent via the
-     * {@link #setParent(java.util.logging.Logger) setParent} method
+     * {@link #setParent(j86.j86.java.util.logging.Logger) setParent} method
      * will still require the security permission specified by that method.
      * <p>
      *
@@ -616,7 +616,7 @@ public class Logger {
      * to have the root logger ("") as its parent.  This means that
      * by default it inherits its effective level and handlers
      * from the root logger.  Changing its parent via the
-     * {@link #setParent(java.util.logging.Logger) setParent} method
+     * {@link #setParent(j86.j86.java.util.logging.Logger) setParent} method
      * will still require the security permission specified by that method.
      * <p>
      * @param   resourceBundleName  name of ResourceBundle to be used for localizing
@@ -647,10 +647,10 @@ public class Logger {
      * logger.
      * This method will return a {@code ResourceBundle} that was either
      * set by the {@link
-     * #setResourceBundle(java.util.ResourceBundle) setResourceBundle} method or
+     * #setResourceBundle(j86.java.util.ResourceBundle) setResourceBundle} method or
      * <a href="#ResourceBundleMapping">mapped from the
      * the resource bundle name</a> set via the {@link
-     * Logger#getLogger(java.lang.String, java.lang.String) getLogger} factory
+     * Logger#getLogger(j86.java.lang.String, java.lang.String) getLogger} factory
      * method for the current default locale.
      * <br>Note that if the result is {@code null}, then the Logger will use a resource
      * bundle or resource bundle name inherited from its parent.
@@ -665,10 +665,10 @@ public class Logger {
      * Retrieve the localization resource bundle name for this
      * logger.
      * This is either the name specified through the {@link
-     * #getLogger(java.lang.String, java.lang.String) getLogger} factory method,
+     * #getLogger(j86.java.lang.String, java.lang.String) getLogger} factory method,
      * or the {@linkplain ResourceBundle#getBaseBundleName() base name} of the
      * ResourceBundle set through {@link
-     * #setResourceBundle(java.util.ResourceBundle) setResourceBundle} method.
+     * #setResourceBundle(j86.java.util.ResourceBundle) setResourceBundle} method.
      * <br>Note that if the result is {@code null}, then the Logger will use a resource
      * bundle or resource bundle name inherited from its parent.
      *
@@ -1109,9 +1109,9 @@ public class Logger {
      * @param   bundleName     name of resource bundle to localize msg,
      *                         can be null
      * @param   msg     The string message (or a key in the message catalog)
-     * @deprecated Use {@link #logrb(java.util.logging.Level, java.lang.String,
-     * java.lang.String, java.util.ResourceBundle, java.lang.String,
-     * java.lang.Object...)} instead.
+     * @deprecated Use {@link #logrb(j86.j86.java.util.logging.Level, j86.java.lang.String,
+     * j86.java.lang.String, j86.java.util.ResourceBundle, java.lang.String,
+     * j86.java.lang.Object...)} instead.
      */
     @Deprecated
     public void logrb(Level level, String sourceClass, String sourceMethod,
@@ -1144,9 +1144,9 @@ public class Logger {
      *                         can be null
      * @param   msg      The string message (or a key in the message catalog)
      * @param   param1    Parameter to the log message.
-     * @deprecated Use {@link #logrb(java.util.logging.Level, java.lang.String,
-     *   java.lang.String, java.util.ResourceBundle, java.lang.String,
-     *   java.lang.Object...)} instead
+     * @deprecated Use {@link #logrb(j86.j86.java.util.logging.Level, j86.java.lang.String,
+     *   j86.java.lang.String, j86.java.util.ResourceBundle, java.lang.String,
+     *   j86.java.lang.Object...)} instead
      */
     @Deprecated
     public void logrb(Level level, String sourceClass, String sourceMethod,
@@ -1181,9 +1181,9 @@ public class Logger {
      *                         can be null.
      * @param   msg     The string message (or a key in the message catalog)
      * @param   params  Array of parameters to the message
-     * @deprecated Use {@link #logrb(java.util.logging.Level, java.lang.String,
-     *      java.lang.String, java.util.ResourceBundle, java.lang.String,
-     *      java.lang.Object...)} instead.
+     * @deprecated Use {@link #logrb(j86.j86.java.util.logging.Level, j86.java.lang.String,
+     *      j86.java.lang.String, j86.java.util.ResourceBundle, java.lang.String,
+     *      j86.java.lang.Object...)} instead.
      */
     @Deprecated
     public void logrb(Level level, String sourceClass, String sourceMethod,
@@ -1257,9 +1257,9 @@ public class Logger {
      *                         can be null
      * @param   msg     The string message (or a key in the message catalog)
      * @param   thrown  Throwable associated with log message.
-     * @deprecated Use {@link #logrb(java.util.logging.Level, java.lang.String,
-     *     java.lang.String, java.util.ResourceBundle, java.lang.String,
-     *     java.lang.Throwable)} instead.
+     * @deprecated Use {@link #logrb(j86.j86.java.util.logging.Level, j86.java.lang.String,
+     *     j86.java.lang.String, j86.java.util.ResourceBundle, java.lang.String,
+     *     j86.java.lang.Throwable)} instead.
      */
     @Deprecated
     public void logrb(Level level, String sourceClass, String sourceMethod,
@@ -1853,7 +1853,7 @@ public class Logger {
         }
 
         // Use the thread's context ClassLoader.  If there isn't one, use the
-        // {@linkplain java.lang.ClassLoader#getSystemClassLoader() system ClassLoader}.
+        // {@linkplain j86.java.lang.ClassLoader#getSystemClassLoader() system ClassLoader}.
         ClassLoader cl = Thread.currentThread().getContextClassLoader();
         if (cl == null) {
             cl = ClassLoader.getSystemClassLoader();

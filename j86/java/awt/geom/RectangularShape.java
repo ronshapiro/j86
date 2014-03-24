@@ -23,11 +23,11 @@
  * questions.
  */
 
-package java.awt.geom;
+package j86.j86.java.awt.geom;
 
-import java.awt.Shape;
-import java.awt.Rectangle;
-import java.beans.Transient;
+import j86.java.awt.Shape;
+import j86.java.awt.Rectangle;
+import j86.java.beans.Transient;
 
 /**
  * <code>RectangularShape</code> is the base class for a number of
@@ -383,7 +383,7 @@ public abstract class RectangularShape implements Shape, Cloneable {
      * contents as this object.
      * @return     a clone of this instance.
      * @exception  OutOfMemoryError            if there is not enough memory.
-     * @see        java.lang.Cloneable
+     * @see        j86.java.lang.Cloneable
      * @since      1.2
      */
     public Object clone() {

@@ -23,17 +23,17 @@
  * questions.
  */
 
-package sun.security.provider;
+package j86.sun.security.provider;
 
-import java.security.CodeSource;
-import java.security.Permission;
-import java.security.PermissionCollection;
-import java.security.Policy;
-import java.security.PolicySpi;
-import java.security.ProtectionDomain;
-import java.security.URIParameter;
+import j86.java.security.CodeSource;
+import j86.java.security.Permission;
+import j86.java.security.PermissionCollection;
+import j86.java.security.Policy;
+import j86.java.security.PolicySpi;
+import j86.java.security.ProtectionDomain;
+import j86.java.security.URIParameter;
 
-import java.net.MalformedURLException;
+import j86.java.net.MalformedURLException;
 
 /**
  * This class wraps the PolicyFile subclass implementation of Policy

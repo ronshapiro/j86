@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.nio.fs;
+package j86.j86.sun.nio.fs;
 
-import java.nio.file.*;
-import java.util.concurrent.*;
-import java.io.IOException;
+import j86.j86.java.nio.file.*;
+import j86.j86.java.util.concurrent.*;
+import j86.java.io.IOException;
 
 /**
  * Base implementation class for watch services.

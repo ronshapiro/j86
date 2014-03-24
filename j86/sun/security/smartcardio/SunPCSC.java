@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.security.smartcardio;
+package j86.sun.security.smartcardio;
 
-import java.security.*;
+import j86.java.security.*;
 
-import javax.smartcardio.*;
+import j86.javax.smartcardio.*;
 
 /**
  * Provider object for PC/SC.
@@ -43,7 +43,7 @@ public final class SunPCSC extends Provider {
         super("SunPCSC", 1.8d, "Sun PC/SC provider");
         AccessController.doPrivileged(new PrivilegedAction<Void>() {
             public Void run() {
-                put("TerminalFactory.PC/SC", "sun.security.smartcardio.SunPCSC$Factory");
+                put("TerminalFactory.PC/SC", "j86.sun.security.smartcardio.SunPCSC$Factory");
                 return null;
             }
         });

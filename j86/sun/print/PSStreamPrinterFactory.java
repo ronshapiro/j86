@@ -23,13 +23,13 @@
  * questions.
  */
 
-package sun.print;
+package j86.sun.print;
 
-import java.io.OutputStream;
+import j86.java.io.OutputStream;
 
-import javax.print.DocFlavor;
-import javax.print.StreamPrintService;
-import javax.print.StreamPrintServiceFactory;
+import j86.javax.print.DocFlavor;
+import j86.javax.print.StreamPrintService;
+import j86.javax.print.StreamPrintServiceFactory;
 
 public class PSStreamPrinterFactory extends StreamPrintServiceFactory {
 

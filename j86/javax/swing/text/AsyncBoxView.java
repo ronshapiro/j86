@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text;
+package j86.j86.javax.swing.text;
 
-import java.util.*;
-import java.util.List;
-import java.awt.*;
-import javax.swing.SwingUtilities;
-import javax.swing.event.DocumentEvent;
+import j86.java.util.*;
+import j86.java.util.List;
+import j86.java.awt.*;
+import j86.javax.swing.SwingUtilities;
+import j86.j86.javax.swing.event.DocumentEvent;
 
 /**
  * A box that does layout asynchronously.  This
@@ -490,7 +490,7 @@ public class AsyncBoxView extends View {
      * @param child the child view
      * @param width true if the width preference has changed
      * @param height true if the height preference has changed
-     * @see javax.swing.JComponent#revalidate
+     * @see j86.javax.swing.JComponent#revalidate
      */
     public synchronized void preferenceChanged(View child, boolean width, boolean height) {
         if (child == null) {
@@ -1371,7 +1371,7 @@ public class AsyncBoxView extends View {
          *
          * @param width true if the width preference has changed
          * @param height true if the height preference has changed
-         * @see javax.swing.JComponent#revalidate
+         * @see j86.javax.swing.JComponent#revalidate
          */
         public void preferenceChanged(boolean width, boolean height) {
             if (axis == X_AXIS) {

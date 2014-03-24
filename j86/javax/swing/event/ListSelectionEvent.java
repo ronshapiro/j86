@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.swing.event;
+package j86.j86.javax.swing.event;
 
-import java.util.EventObject;
-import javax.swing.*;
+import j86.java.util.EventObject;
+import j86.javax.swing.*;
 
 
 /**
@@ -43,8 +43,8 @@ import javax.swing.*;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @author Hans Muller
  * @author Ray Ryan
@@ -97,7 +97,7 @@ public class ListSelectionEvent extends EventObject
     /**
      * Returns whether or not this is one in a series of multiple events,
      * where changes are still being made. See the documentation for
-     * {@link javax.swing.ListSelectionModel#setValueIsAdjusting} for
+     * {@link j86.javax.swing.ListSelectionModel#setValueIsAdjusting} for
      * more details on how this is used.
      *
      * @return {@code true} if this is one in a series of multiple events,

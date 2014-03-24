@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.lang.management;
+package j86.j86.java.lang.management;
 
 /**
  * The management interface for a memory manager.
@@ -42,7 +42,7 @@ package java.lang.management;
  * a memory manager within an MBeanServer is:
  * <blockquote>
  *   {@link ManagementFactory#MEMORY_MANAGER_MXBEAN_DOMAIN_TYPE
- *    <tt>java.lang:type=MemoryManager</tt>}<tt>,name=</tt><i>manager's name</i>
+ *    <tt>j86.java.lang:type=MemoryManager</tt>}<tt>,name=</tt><i>manager's name</i>
  * </blockquote>
  *
  * It can be obtained by calling the
@@ -51,7 +51,7 @@ package java.lang.management;
  * @see ManagementFactory#getPlatformMXBeans(Class)
  * @see MemoryMXBean
  *
- * @see <a href="../../../javax/management/package-summary.html">
+ * @see <a href="../../../j86.javax.management/package-summary.html">
  *      JMX Specification.</a>
  * @see <a href="package-summary.html#examples">
  *      Ways to Access MXBeans</a>

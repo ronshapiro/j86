@@ -23,17 +23,17 @@
  * questions.
  */
 
-package com.sun.security.auth.module;
+package j86.j86.com.sun.security.auth.module;
 
-import java.util.*;
-import java.io.IOException;
-import javax.security.auth.*;
-import javax.security.auth.callback.*;
-import javax.security.auth.login.*;
-import javax.security.auth.spi.*;
-import com.sun.security.auth.UnixPrincipal;
-import com.sun.security.auth.UnixNumericUserPrincipal;
-import com.sun.security.auth.UnixNumericGroupPrincipal;
+import j86.java.util.*;
+import j86.java.io.IOException;
+import j86.javax.security.auth.*;
+import j86.j86.javax.security.auth.callback.*;
+import j86.j86.javax.security.auth.login.*;
+import j86.j86.javax.security.auth.spi.*;
+import j86.com.sun.security.auth.UnixPrincipal;
+import j86.com.sun.security.auth.UnixNumericUserPrincipal;
+import j86.com.sun.security.auth.UnixNumericGroupPrincipal;
 
 /**
  * <p> This <code>LoginModule</code> imports a user's Unix

@@ -23,31 +23,31 @@
  * questions.
  */
 
-package sun.security.pkcs11;
+package j86.j86.sun.security.pkcs11;
 
-import java.io.*;
-import java.lang.ref.*;
-import java.math.BigInteger;
-import java.util.*;
+import j86.java.io.*;
+import j86.j86.java.lang.ref.*;
+import j86.java.math.BigInteger;
+import j86.java.util.*;
 
-import java.security.*;
-import java.security.interfaces.*;
-import java.security.spec.*;
+import j86.java.security.*;
+import j86.j86.java.security.interfaces.*;
+import j86.j86.java.security.spec.*;
 
-import javax.crypto.*;
-import javax.crypto.interfaces.*;
-import javax.crypto.spec.*;
+import j86.javax.crypto.*;
+import j86.j86.javax.crypto.interfaces.*;
+import j86.j86.javax.crypto.spec.*;
 
-import sun.security.rsa.RSAPublicKeyImpl;
+import j86.sun.security.rsa.RSAPublicKeyImpl;
 
-import sun.security.internal.interfaces.TlsMasterSecret;
+import j86.sun.security.internal.interfaces.TlsMasterSecret;
 
-import sun.security.pkcs11.wrapper.*;
-import static sun.security.pkcs11.wrapper.PKCS11Constants.*;
+import j86.j86.j86.sun.security.pkcs11.wrapper.*;
+import static j86.j86.j86.sun.security.pkcs11.wrapper.PKCS11Constants.*;
 
-import sun.security.util.DerValue;
-import sun.security.util.Length;
-import sun.security.util.ECUtil;
+import j86.sun.security.util.DerValue;
+import j86.sun.security.util.Length;
+import j86.sun.security.util.ECUtil;
 
 /**
  * Key implementation classes.
@@ -704,7 +704,7 @@ abstract class P11Key implements Key, Length {
             if (encoded == null) {
                 fetchValues();
                 try {
-                    Key key = new sun.security.provider.DSAPublicKey
+                    Key key = new j86.sun.security.provider.DSAPublicKey
                             (y, params.getP(), params.getQ(), params.getG());
                     encoded = key.getEncoded();
                 } catch (InvalidKeyException e) {
@@ -767,7 +767,7 @@ abstract class P11Key implements Key, Length {
             if (encoded == null) {
                 fetchValues();
                 try {
-                    Key key = new sun.security.provider.DSAPrivateKey
+                    Key key = new j86.sun.security.provider.DSAPrivateKey
                             (x, params.getP(), params.getQ(), params.getG());
                     encoded = key.getEncoded();
                 } catch (InvalidKeyException e) {

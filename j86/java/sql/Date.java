@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.sql;
+package j86.java.sql;
 
-import java.time.Instant;
-import java.time.LocalDate;
+import j86.java.time.Instant;
+import j86.java.time.LocalDate;
 
 /**
  * <P>A thin wrapper around a millisecond value that allows
@@ -35,12 +35,12 @@ import java.time.LocalDate;
  * have passed since January 1, 1970 00:00:00.000 GMT.
  * <p>
  * To conform with the definition of SQL <code>DATE</code>, the
- * millisecond values wrapped by a <code>java.sql.Date</code> instance
+ * millisecond values wrapped by a <code>j86.java.sql.Date</code> instance
  * must be 'normalized' by setting the
  * hours, minutes, seconds, and milliseconds to zero in the particular
  * time zone with which the instance is associated.
  */
-public class Date extends java.util.Date {
+public class Date extends j86.java.util.Date {
 
     /**
      * Constructs a <code>Date</code> object initialized with the given
@@ -102,7 +102,7 @@ public class Date extends java.util.Date {
      * @param s a <code>String</code> object representing a date in
      *        in the format "yyyy-[m]m-[d]d". The leading zero for <code>mm</code>
      * and <code>dd</code> may also be omitted.
-     * @return a <code>java.sql.Date</code> object representing the
+     * @return a <code>j86.java.sql.Date</code> object representing the
      *         given date
      * @throws IllegalArgumentException if the date given is not in the
      *         JDBC date escape format (yyyy-[m]m-[d]d)
@@ -117,7 +117,7 @@ public class Date extends java.util.Date {
         int secondDash;
         Date d = null;
         if (s == null) {
-            throw new java.lang.IllegalArgumentException();
+            throw new j86.java.lang.IllegalArgumentException();
         }
 
         firstDash = s.indexOf('-');
@@ -140,7 +140,7 @@ public class Date extends java.util.Date {
             }
         }
         if (d == null) {
-            throw new java.lang.IllegalArgumentException();
+            throw new j86.java.lang.IllegalArgumentException();
         }
 
         return d;
@@ -172,19 +172,19 @@ public class Date extends java.util.Date {
         return new String(buf);
     }
 
-    // Override all the time operations inherited from java.util.Date;
+    // Override all the time operations inherited from j86.java.util.Date;
 
    /**
     * This method is deprecated and should not be used because SQL Date
     * values do not have a time component.
     *
     * @deprecated
-    * @exception java.lang.IllegalArgumentException if this method is invoked
+    * @exception j86.java.lang.IllegalArgumentException if this method is invoked
     * @see #setHours
     */
     @Deprecated
     public int getHours() {
-        throw new java.lang.IllegalArgumentException();
+        throw new j86.java.lang.IllegalArgumentException();
     }
 
    /**
@@ -192,12 +192,12 @@ public class Date extends java.util.Date {
     * values do not have a time component.
     *
     * @deprecated
-    * @exception java.lang.IllegalArgumentException if this method is invoked
+    * @exception j86.java.lang.IllegalArgumentException if this method is invoked
     * @see #setMinutes
     */
     @Deprecated
     public int getMinutes() {
-        throw new java.lang.IllegalArgumentException();
+        throw new j86.java.lang.IllegalArgumentException();
     }
 
    /**
@@ -205,12 +205,12 @@ public class Date extends java.util.Date {
     * values do not have a time component.
     *
     * @deprecated
-    * @exception java.lang.IllegalArgumentException if this method is invoked
+    * @exception j86.java.lang.IllegalArgumentException if this method is invoked
     * @see #setSeconds
     */
     @Deprecated
     public int getSeconds() {
-        throw new java.lang.IllegalArgumentException();
+        throw new j86.java.lang.IllegalArgumentException();
     }
 
    /**
@@ -218,12 +218,12 @@ public class Date extends java.util.Date {
     * values do not have a time component.
     *
     * @deprecated
-    * @exception java.lang.IllegalArgumentException if this method is invoked
+    * @exception j86.java.lang.IllegalArgumentException if this method is invoked
     * @see #getHours
     */
     @Deprecated
     public void setHours(int i) {
-        throw new java.lang.IllegalArgumentException();
+        throw new j86.java.lang.IllegalArgumentException();
     }
 
    /**
@@ -231,12 +231,12 @@ public class Date extends java.util.Date {
     * values do not have a time component.
     *
     * @deprecated
-    * @exception java.lang.IllegalArgumentException if this method is invoked
+    * @exception j86.java.lang.IllegalArgumentException if this method is invoked
     * @see #getMinutes
     */
     @Deprecated
     public void setMinutes(int i) {
-        throw new java.lang.IllegalArgumentException();
+        throw new j86.java.lang.IllegalArgumentException();
     }
 
    /**
@@ -244,12 +244,12 @@ public class Date extends java.util.Date {
     * values do not have a time component.
     *
     * @deprecated
-    * @exception java.lang.IllegalArgumentException if this method is invoked
+    * @exception j86.java.lang.IllegalArgumentException if this method is invoked
     * @see #getSeconds
     */
     @Deprecated
     public void setSeconds(int i) {
-        throw new java.lang.IllegalArgumentException();
+        throw new j86.java.lang.IllegalArgumentException();
     }
 
    /**
@@ -297,10 +297,10 @@ public class Date extends java.util.Date {
     * not be used because SQL {@code Date} values do not have a time
     * component.
     *
-    * @exception java.lang.UnsupportedOperationException if this method is invoked
+    * @exception j86.java.lang.UnsupportedOperationException if this method is invoked
     */
     @Override
     public Instant toInstant() {
-        throw new java.lang.UnsupportedOperationException();
+        throw new j86.java.lang.UnsupportedOperationException();
     }
 }

@@ -22,30 +22,30 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.management.snmp.jvminstr;
+package j86.j86.j86.sun.management.snmp.jvminstr;
 
 // java imports
 //
-import com.sun.jmx.mbeanserver.Util;
-import java.io.Serializable;
-import java.lang.management.RuntimeMXBean;
-import java.lang.management.ManagementFactory;
-import java.util.List;
-import java.util.Map;
+import j86.com.sun.jmx.mbeanserver.Util;
+import j86.java.io.Serializable;
+import j86.j86.java.lang.management.RuntimeMXBean;
+import j86.j86.java.lang.management.ManagementFactory;
+import j86.java.util.List;
+import j86.java.util.Map;
 
 // jmx imports
 //
-import javax.management.MBeanServer;
-import com.sun.jmx.snmp.SnmpString;
-import com.sun.jmx.snmp.SnmpStatusException;
+import j86.javax.management.MBeanServer;
+import j86.com.sun.jmx.snmp.SnmpString;
+import j86.com.sun.jmx.snmp.SnmpStatusException;
 
 // jdmk imports
 //
-import com.sun.jmx.snmp.agent.SnmpMib;
+import j86.j86.com.sun.jmx.snmp.agent.SnmpMib;
 
-import sun.management.snmp.jvmmib.JvmRuntimeMBean;
-import sun.management.snmp.jvmmib.EnumJvmRTBootClassPathSupport;
-import sun.management.snmp.util.JvmContextFactory;
+import j86.j86.j86.sun.management.snmp.jvmmib.JvmRuntimeMBean;
+import j86.j86.j86.sun.management.snmp.jvmmib.EnumJvmRTBootClassPathSupport;
+import j86.j86.j86.sun.management.snmp.util.JvmContextFactory;
 
 /**
  * The class is used for implementing the "JvmRuntime" group.
@@ -107,7 +107,7 @@ public class JvmRuntimeImpl implements JvmRuntimeMBean {
 
 
     static String[] splitPath(String path) {
-        final String[] items = path.split(java.io.File.pathSeparator);
+        final String[] items = path.split(j86.java.io.File.pathSeparator);
         // for (int i=0;i<items.length;i++) {
         //    items[i]=validPathElementTC(items[i]);
         // }

@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.font;
+package j86.sun.font;
 
-import java.awt.Font;
+import j86.java.awt.Font;
 
 public abstract class FontAccess {
 

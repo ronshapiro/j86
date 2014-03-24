@@ -22,16 +22,16 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.plaf.metal;
+package j86.j86.j86.javax.swing.plaf.metal;
 
-import java.awt.*;
+import j86.java.awt.*;
 
 /**
  * DesktopProperty that only uses font height in configuring font. This
  * is only used on Windows.
  *
  */
-class MetalFontDesktopProperty extends com.sun.java.swing.plaf.windows.DesktopProperty {
+class MetalFontDesktopProperty extends j86.j86.com.sun.java.swing.plaf.windows.DesktopProperty {
     /**
      * Maps from metal font theme type as defined in MetalTheme
      * to the corresponding desktop property name.

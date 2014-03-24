@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.util;
+package j86.java.util;
 
 /*
  * Written by Doug Lea with assistance from members of JCP JSR-166
@@ -30,12 +30,12 @@ package java.util;
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-import java.util.concurrent.ForkJoinPool;
-import java.util.concurrent.CountedCompleter;
-import java.util.function.BinaryOperator;
-import java.util.function.IntBinaryOperator;
-import java.util.function.LongBinaryOperator;
-import java.util.function.DoubleBinaryOperator;
+import j86.j86.java.util.concurrent.ForkJoinPool;
+import j86.j86.java.util.concurrent.CountedCompleter;
+import j86.j86.java.util.function.BinaryOperator;
+import j86.j86.java.util.function.IntBinaryOperator;
+import j86.j86.java.util.function.LongBinaryOperator;
+import j86.j86.java.util.function.DoubleBinaryOperator;
 
 /**
  * ForkJoin tasks to perform Arrays.parallelPrefix operations.

@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.awt.peer;
+package j86.j86.java.awt.peer;
 
-import java.awt.Adjustable;
-import java.awt.ScrollPane;
-import java.awt.ScrollPaneAdjustable;
+import j86.java.awt.Adjustable;
+import j86.java.awt.ScrollPane;
+import j86.java.awt.ScrollPaneAdjustable;
 
 /**
  * The peer interface for {@link ScrollPane}.

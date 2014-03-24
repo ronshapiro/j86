@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.management;
+package j86.javax.management;
 
-import java.util.Objects;
+import j86.java.util.Objects;
 
 
 /**

@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.crypto;
+package j86.javax.crypto;
 
-import java.io.*;
+import j86.java.io.*;
 
 /**
  * A CipherInputStream is composed of an InputStream and a Cipher so
@@ -40,7 +40,7 @@ import java.io.*;
  *
  * <p> This class adheres strictly to the semantics, especially the
  * failure semantics, of its ancestor classes
- * java.io.FilterInputStream and java.io.InputStream.  This class has
+ * j86.java.io.FilterInputStream and java.io.InputStream.  This class has
  * exactly those methods specified in its ancestor classes, and
  * overrides them all.  Moreover, this class catches all exceptions
  * that are not thrown by its ancestor classes.  In particular, the
@@ -55,10 +55,10 @@ import java.io.*;
  * CipherInputStream.
  *
  * @author  Li Gong
- * @see     java.io.InputStream
- * @see     java.io.FilterInputStream
- * @see     javax.crypto.Cipher
- * @see     javax.crypto.CipherOutputStream
+ * @see     j86.java.io.InputStream
+ * @see     j86.java.io.FilterInputStream
+ * @see     j86.javax.crypto.Cipher
+ * @see     j86.javax.crypto.CipherOutputStream
  *
  * @since 1.4
  */
@@ -195,7 +195,7 @@ public class CipherInputStream extends FilterInputStream {
      *             <code>-1</code> is there is no more data because the end of
      *             the stream has been reached.
      * @exception  IOException  if an I/O error occurs.
-     * @see        java.io.InputStream#read(byte[], int, int)
+     * @see        j86.java.io.InputStream#read(byte[], int, int)
      * @since      JCE1.2
      */
     public int read(byte b[]) throws IOException {
@@ -216,7 +216,7 @@ public class CipherInputStream extends FilterInputStream {
      *             <code>-1</code> if there is no more data because the end of
      *             the stream has been reached.
      * @exception  IOException  if an I/O error occurs.
-     * @see        java.io.InputStream#read()
+     * @see        j86.java.io.InputStream#read()
      * @since      JCE1.2
      */
     public int read(byte b[], int off, int len) throws IOException {
@@ -319,8 +319,8 @@ public class CipherInputStream extends FilterInputStream {
      *
      * @return  <code>false</code>, since this class does not support the
      *          <code>mark</code> and <code>reset</code> methods.
-     * @see     java.io.InputStream#mark(int)
-     * @see     java.io.InputStream#reset()
+     * @see     j86.java.io.InputStream#mark(int)
+     * @see     j86.java.io.InputStream#reset()
      * @since   JCE1.2
      */
     public boolean markSupported() {

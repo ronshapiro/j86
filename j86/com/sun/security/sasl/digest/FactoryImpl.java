@@ -23,14 +23,14 @@
  * questions.
  */
 
-package com.sun.security.sasl.digest;
+package j86.j86.com.sun.security.sasl.digest;
 
-import java.util.Map;
+import j86.java.util.Map;
 
-import javax.security.sasl.*;
-import javax.security.auth.callback.CallbackHandler;
+import j86.javax.security.sasl.*;
+import j86.j86.javax.security.auth.callback.CallbackHandler;
 
-import com.sun.security.sasl.util.PolicyUtils;
+import j86.j86.com.sun.security.sasl.util.PolicyUtils;
 
 
 /**

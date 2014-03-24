@@ -23,37 +23,37 @@
  * questions.
  */
 
-package sun.security.provider;
+package j86.sun.security.provider;
 
-import java.io.*;
-import java.lang.reflect.*;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.net.URI;
-import java.util.*;
-import java.text.MessageFormat;
-import java.security.*;
-import java.security.cert.Certificate;
-import java.security.cert.X509Certificate;
-import javax.security.auth.Subject;
-import javax.security.auth.x500.X500Principal;
-import java.io.FilePermission;
-import java.net.SocketPermission;
-import java.net.NetPermission;
-import java.util.concurrent.atomic.AtomicReference;
-import sun.misc.JavaSecurityProtectionDomainAccess;
-import static sun.misc.JavaSecurityProtectionDomainAccess.ProtectionDomainCache;
-import sun.misc.SharedSecrets;
-import sun.security.util.PolicyUtil;
-import sun.security.util.PropertyExpander;
-import sun.security.util.Debug;
-import sun.security.util.ResourcesMgr;
-import sun.security.util.SecurityConstants;
-import sun.net.www.ParseUtil;
+import j86.java.io.*;
+import j86.j86.j86.java.lang.reflect.*;
+import j86.java.net.MalformedURLException;
+import j86.java.net.URL;
+import j86.java.net.URI;
+import j86.java.util.*;
+import j86.java.text.MessageFormat;
+import j86.java.security.*;
+import j86.j86.java.security.cert.Certificate;
+import j86.j86.java.security.cert.X509Certificate;
+import j86.javax.security.auth.Subject;
+import j86.j86.javax.security.auth.x500.X500Principal;
+import j86.java.io.FilePermission;
+import j86.java.net.SocketPermission;
+import j86.java.net.NetPermission;
+import j86.j86.j86.java.util.concurrent.atomic.AtomicReference;
+import j86.sun.misc.JavaSecurityProtectionDomainAccess;
+import static j86.sun.misc.JavaSecurityProtectionDomainAccess.ProtectionDomainCache;
+import j86.sun.misc.SharedSecrets;
+import j86.sun.security.util.PolicyUtil;
+import j86.sun.security.util.PropertyExpander;
+import j86.sun.security.util.Debug;
+import j86.sun.security.util.ResourcesMgr;
+import j86.sun.security.util.SecurityConstants;
+import j86.j86.sun.net.www.ParseUtil;
 
 /**
  * This class represents a default implementation for
- * <code>java.security.Policy</code>.
+ * <code>j86.java.security.Policy</code>.
  *
  * Note:
  * For backward compatibility with JAAS 1.0 it loads
@@ -71,13 +71,13 @@ import sun.net.www.ParseUtil;
  *
  * <ol>
  * <li>
- *   Loop through the <code>java.security.Security</code> properties,
+ *   Loop through the <code>j86.java.security.Security</code> properties,
  *   <i>policy.url.1</i>, <i>policy.url.2</i>, ...,
  *   <i>policy.url.X</i>" and
  *   <i>auth.policy.url.1</i>, <i>auth.policy.url.2</i>, ...,
  *   <i>auth.policy.url.X</i>".  These properties are set
  *   in the Java security properties file, which is located in the file named
- *   &lt;JAVA_HOME&gt;/lib/security/java.security.
+ *   &lt;JAVA_HOME&gt;/lib/security/j86.java.security.
  *   &lt;JAVA_HOME&gt; refers to the value of the java.home system property,
  *   and specifies the directory where the JRE is installed.
  *   Each property value specifies a <code>URL</code> pointing to a
@@ -86,7 +86,7 @@ import sun.net.www.ParseUtil;
  *   <i>auth.policy.url</i> is supported only for backward compatibility.
  *
  * <li>
- *   The <code>java.lang.System</code> property <i>java.security.policy</i>
+ *   The <code>j86.java.lang.System</code> property <i>j86.java.security.policy</i>
  *   may also be set to a <code>URL</code> pointing to another policy file
  *   (which is the case when a user uses the -D switch at runtime).
  *   If this property is defined, and its use is allowed by the
@@ -95,8 +95,8 @@ import sun.net.www.ParseUtil;
  *   also load that policy.
  *
  * <li>
- *   The <code>java.lang.System</code> property
- *   <i>java.security.auth.policy</i> may also be set to a
+ *   The <code>j86.java.lang.System</code> property
+ *   <i>j86.java.security.auth.policy</i> may also be set to a
  *   <code>URL</code> pointing to another policy file
  *   (which is the case when a user uses the -D switch at runtime).
  *   If this property is defined, and its use is allowed by the
@@ -104,11 +104,11 @@ import sun.net.www.ParseUtil;
  *   <i>policy.allowSystemProperty</i> is set to <i>true</i>),
  *   also load that policy.
  *
- *   <i>java.security.auth.policy</i> is supported only for backward
+ *   <i>j86.java.security.auth.policy</i> is supported only for backward
  *   compatibility.
  *
- *   If the  <i>java.security.policy</i> or
- *   <i>java.security.auth.policy</i> property is defined using
+ *   If the  <i>j86.java.security.policy</i> or
+ *   <i>j86.java.security.auth.policy</i> property is defined using
  *   "==" (rather than "="), then ignore all other specified
  *   policies and only load this policy.
  * </ol>
@@ -149,14 +149,14 @@ import sun.net.www.ParseUtil;
  *
  * <p> A permission entry must begin with the word <code>permission</code>.
  * The word <code><i>Type</i></code> in the template above is
- * a specific permission type, such as <code>java.io.FilePermission</code>
- * or <code>java.lang.RuntimePermission</code>.
+ * a specific permission type, such as <code>j86.java.io.FilePermission</code>
+ * or <code>j86.java.lang.RuntimePermission</code>.
  *
  * <p> The "<i>action</i>" is required for
- * many permission types, such as <code>java.io.FilePermission</code>
+ * many permission types, such as <code>j86.java.io.FilePermission</code>
  * (where it specifies what type of file access that is permitted).
  * It is not required for categories such as
- * <code>java.lang.RuntimePermission</code>
+ * <code>j86.java.lang.RuntimePermission</code>
  * where it is not necessary - you either have the
  * permission specified by the <code>"<i>name</i>"</code>
  * value following the type name or you don't.
@@ -194,14 +194,14 @@ import sun.net.www.ParseUtil;
  *   // grant it read/write to all files in /tmp.
  *
  *   grant codeBase "foo.com", principal foo.com.Principal "Duke" {
- *              permission java.io.FilePermission "/tmp/*", "read,write";
+ *              permission j86.java.io.FilePermission "/tmp/*", "read,write";
  *   };
  *
  *   // grant any code running as "Duke" permission to read
  *   // the "java.vendor" Property.
  *
  *   grant principal foo.com.Principal "Duke" {
- *         permission java.util.PropertyPermission "java.vendor";
+ *         permission j86.java.util.PropertyPermission "java.vendor";
  *
  *
  * </pre>
@@ -229,11 +229,11 @@ import sun.net.www.ParseUtil;
  *  If the grant clause contains principal information, <b>${{self}}</b>
  *  will be replaced with that same principal information.
  *  For example, <b>${{self}}</b> in BarPermission will be replaced by
- *  <b>javax.security.auth.x500.X500Principal "cn=Duke"</b>
+ *  <b>j86.j86.javax.security.auth.x500.X500Principal "cn=Duke"</b>
  *  in the following grant clause:
  *
  *  <pre>
- *    grant principal javax.security.auth.x500.X500Principal "cn=Duke" {
+ *    grant principal j86.j86.javax.security.auth.x500.X500Principal "cn=Duke" {
  *      permission BarPermission "... ${{self}} ...";
  *    };
  *  </pre>
@@ -251,11 +251,11 @@ import sun.net.www.ParseUtil;
  * instead of "<b>${{self}}</b>". However the use of "<b>self</b>" is
  * deprecated in favour of "<b>${{self}}</b>".
  *
- * @see java.security.CodeSource
- * @see java.security.Permissions
- * @see java.security.ProtectionDomain
+ * @see j86.java.security.CodeSource
+ * @see j86.java.security.Permissions
+ * @see j86.java.security.ProtectionDomain
  */
-public class PolicyFile extends java.security.Policy {
+public class PolicyFile extends j86.java.security.Policy {
 
     private static final Debug debug = Debug.getInstance("policy");
 
@@ -264,11 +264,11 @@ public class PolicyFile extends java.security.Policy {
 
     private static final String SELF = "${{self}}";
     private static final String X500PRINCIPAL =
-                        "javax.security.auth.x500.X500Principal";
-    private static final String POLICY = "java.security.policy";
-    private static final String SECURITY_MANAGER = "java.security.manager";
+                        "j86.j86.javax.security.auth.x500.X500Principal";
+    private static final String POLICY = "j86.java.security.policy";
+    private static final String SECURITY_MANAGER = "j86.java.security.manager";
     private static final String POLICY_URL = "policy.url.";
-    private static final String AUTH_POLICY = "java.security.auth.policy";
+    private static final String AUTH_POLICY = "j86.java.security.auth.policy";
     private static final String AUTH_POLICY_URL = "auth.policy.url.";
 
     private static final int DEFAULT_CACHE_SIZE = 1;
@@ -353,14 +353,14 @@ public class PolicyFile extends java.security.Policy {
      * <p> A permission entry must begin with the word <code>permission</code>.
      * The word <code><i>Type</i></code> in the template above would actually
      * be a specific permission type, such as
-     * <code>java.io.FilePermission</code> or
-     * <code>java.lang.RuntimePermission</code>.
+     * <code>j86.java.io.FilePermission</code> or
+     * <code>j86.java.lang.RuntimePermission</code>.
      *
      * <p>The "<i>action</i>" is required for
-     * many permission types, such as <code>java.io.FilePermission</code>
+     * many permission types, such as <code>j86.java.io.FilePermission</code>
      * (where it specifies what type of file access is permitted).
      * It is not required for categories such as
-     * <code>java.lang.RuntimePermission</code>
+     * <code>j86.java.lang.RuntimePermission</code>
      * where it is not necessary - you either have the
      * permission specified by the <code>"<i>name</i>"</code>
      * value following the type name or you don't.
@@ -397,13 +397,13 @@ public class PolicyFile extends java.security.Policy {
      *   // files in /tmp.
      *
      *   grant signedBy "Duke" {
-     *          permission java.io.FilePermission "/tmp/*", "read,write";
+     *          permission j86.java.io.FilePermission "/tmp/*", "read,write";
      *   };
      * <p>
      *   // grant everyone the following permission
      *
      *   grant {
-     *     permission java.util.PropertyPermission "java.vendor";
+     *     permission j86.java.util.PropertyPermission "java.vendor";
      *   };
      *  </pre>
      */
@@ -466,7 +466,7 @@ public class PolicyFile extends java.security.Policy {
 
             /**
              * Caller did not specify URL via Policy.getInstance.
-             * Read from URLs listed in the java.security properties file.
+             * Read from URLs listed in the j86.java.security properties file.
              *
              * We call initPolicyFile with POLICY , POLICY_URL and then
              * call it with AUTH_POLICY and AUTH_POLICY_URL
@@ -740,7 +740,7 @@ public class PolicyFile extends java.security.Policy {
      * @return null if signedBy alias is not recognized
      */
     private CodeSource getCodeSource(PolicyParser.GrantEntry ge, KeyStore keyStore,
-        PolicyInfo newInfo) throws java.net.MalformedURLException
+        PolicyInfo newInfo) throws j86.java.net.MalformedURLException
     {
         Certificate[] certs = null;
         if (ge.signedBy != null) {
@@ -807,7 +807,7 @@ public class PolicyFile extends java.security.Policy {
                     // XXX special case PrivateCredentialPermission-SELF
                     Permission perm;
                     if (pe.permission.equals
-                        ("javax.security.auth.PrivateCredentialPermission") &&
+                        ("j86.javax.security.auth.PrivateCredentialPermission") &&
                         pe.name.endsWith(" self")) {
                         pe.name = pe.name.substring(0, pe.name.indexOf("self"))
                                 + SELF;
@@ -862,7 +862,7 @@ public class PolicyFile extends java.security.Policy {
                             debug.println("  "+perm);
                         }
                     }
-                } catch (java.lang.reflect.InvocationTargetException ite) {
+                } catch (j86.j86.j86.java.lang.reflect.InvocationTargetException ite) {
                     MessageFormat form = new MessageFormat
                         (ResourcesMgr.getString
                          (POLICY +
@@ -1070,7 +1070,7 @@ public class PolicyFile extends java.security.Policy {
      * @return true if "permission" is a proper subset of a permission
      * granted to this ProtectionDomain.
      *
-     * @see java.security.ProtectionDomain
+     * @see j86.java.security.ProtectionDomain
      */
     @Override
     public boolean implies(ProtectionDomain pd, Permission p) {
@@ -1183,7 +1183,7 @@ public class PolicyFile extends java.security.Policy {
             return perms;
 
         CodeSource canonCodeSource = AccessController.doPrivileged(
-            new java.security.PrivilegedAction<CodeSource>(){
+            new j86.java.security.PrivilegedAction<CodeSource>(){
                 public CodeSource run() {
                     return canonicalizeCodebase(cs, true);
                 }
@@ -1210,7 +1210,7 @@ public class PolicyFile extends java.security.Policy {
             return perms;
 
         CodeSource canonCodeSource = AccessController.doPrivileged(
-            new java.security.PrivilegedAction<CodeSource>(){
+            new j86.java.security.PrivilegedAction<CodeSource>(){
                 public CodeSource run() {
                     return canonicalizeCodebase(cs, true);
                 }
@@ -1975,7 +1975,7 @@ public class PolicyFile extends java.security.Policy {
      * <p>
      * For example, the entry
      * <pre>
-     *          permission java.io.File "/tmp", "read,write",
+     *          permission j86.java.io.File "/tmp", "read,write",
      *          signedBy "Duke";
      * </pre>
      * is represented internally
@@ -1990,10 +1990,10 @@ public class PolicyFile extends java.security.Policy {
      *
      * @author Marianne Mueller
      * @author Roland Schemers
-     * @see java.security.CodeSource
-     * @see java.security.Policy
-     * @see java.security.Permissions
-     * @see java.security.ProtectionDomain
+     * @see j86.java.security.CodeSource
+     * @see j86.java.security.Policy
+     * @see j86.java.security.Permissions
+     * @see j86.java.security.ProtectionDomain
      */
     private static class PolicyEntry {
 
@@ -2315,7 +2315,7 @@ public class PolicyFile extends java.security.Policy {
 
         // Maps ProtectionDomain to PermissionCollection
         private final ProtectionDomainCache[] pdMapping;
-        private java.util.Random random;
+        private j86.java.util.Random random;
 
         PolicyInfo(int numCaches) {
             policyEntries = new ArrayList<>();
@@ -2330,14 +2330,14 @@ public class PolicyFile extends java.security.Policy {
                 pdMapping[i] = jspda.getProtectionDomainCache();
             }
             if (numCaches > 1) {
-                random = new java.util.Random();
+                random = new j86.java.util.Random();
             }
         }
         ProtectionDomainCache getPdMapping() {
             if (pdMapping.length == 1) {
                 return pdMapping[0];
             } else {
-                int i = java.lang.Math.abs(random.nextInt() % pdMapping.length);
+                int i = j86.java.lang.Math.abs(random.nextInt() % pdMapping.length);
                 return pdMapping[i];
             }
         }

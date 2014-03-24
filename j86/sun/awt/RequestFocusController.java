@@ -22,9 +22,9 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.awt;
+package j86.sun.awt;
 
-import java.awt.Component;
+import j86.java.awt.Component;
 
 public interface RequestFocusController
 {

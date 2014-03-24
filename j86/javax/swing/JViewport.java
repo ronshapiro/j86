@@ -23,22 +23,22 @@
  * questions.
  */
 
-package javax.swing;
+package j86.javax.swing;
 
-import sun.swing.JLightweightFrame;
+import j86.sun.swing.JLightweightFrame;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.awt.peer.ComponentPeer;
-import java.beans.Transient;
-import javax.swing.plaf.ViewportUI;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.j86.java.awt.peer.ComponentPeer;
+import j86.java.beans.Transient;
+import j86.j86.javax.swing.plaf.ViewportUI;
 
-import javax.swing.event.*;
-import javax.swing.border.*;
-import javax.accessibility.*;
+import j86.j86.javax.swing.event.*;
+import j86.j86.javax.swing.border.*;
+import j86.javax.accessibility.*;
 
 
-import java.io.Serializable;
+import j86.java.io.Serializable;
 
 
 /**
@@ -95,8 +95,8 @@ import java.io.Serializable;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @author Hans Muller
  * @author Philip Milne
@@ -393,8 +393,8 @@ public class JViewport extends JComponent implements Accessible
      *
      * @param contentRect the <code>Rectangle</code> to display
      * @see JComponent#isValidateRoot
-     * @see java.awt.Component#isValid
-     * @see java.awt.Component#getPeer
+     * @see j86.java.awt.Component#isValid
+     * @see j86.java.awt.Component#getPeer
      */
     public void scrollRectToVisible(Rectangle contentRect) {
         Component view = getView();
@@ -1293,8 +1293,8 @@ public class JViewport extends JComponent implements Accessible
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     protected class ViewListener extends ComponentAdapter implements Serializable
     {
@@ -1394,7 +1394,7 @@ public class JViewport extends JComponent implements Accessible
      * @param     y    the <code>y</code> coordinate (pixels down from top)
      * @param     w    the width
      * @param     h   the height
-     * @see       java.awt.Component#update(java.awt.Graphics)
+     * @see       j86.java.awt.Component#update(java.awt.Graphics)
      */
     public void repaint(long tm, int x, int y, int w, int h) {
         Container parent = getParent();
@@ -1762,8 +1762,8 @@ public class JViewport extends JComponent implements Accessible
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     protected class AccessibleJViewport extends AccessibleJComponent {
         /**

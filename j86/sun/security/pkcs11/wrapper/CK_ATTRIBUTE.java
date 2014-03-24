@@ -45,11 +45,11 @@
  *  POSSIBILITY  OF SUCH DAMAGE.
  */
 
-package sun.security.pkcs11.wrapper;
+package j86.j86.j86.sun.security.pkcs11.wrapper;
 
-import java.math.BigInteger;
+import j86.java.math.BigInteger;
 
-import static sun.security.pkcs11.wrapper.PKCS11Constants.*;
+import static j86.j86.j86.sun.security.pkcs11.wrapper.PKCS11Constants.*;
 
 /**
  * class CK_ATTRIBUTE includes the type, value and length of an attribute.<p>
@@ -145,7 +145,7 @@ public class CK_ATTRIBUTE {
 
     public CK_ATTRIBUTE(long type, BigInteger value) {
         this.type = type;
-        this.pValue = sun.security.pkcs11.P11Util.getMagnitude(value);
+        this.pValue = j86.j86.sun.security.pkcs11.P11Util.getMagnitude(value);
     }
 
     public BigInteger getBigInteger() {

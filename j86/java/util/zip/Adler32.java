@@ -23,10 +23,10 @@
  * questions.
  */
 
-package java.util.zip;
+package j86.j86.java.util.zip;
 
-import java.nio.ByteBuffer;
-import sun.nio.ch.DirectBuffer;
+import j86.java.nio.ByteBuffer;
+import j86.j86.j86.sun.nio.ch.DirectBuffer;
 
 /**
  * A class that can be used to compute the Adler-32 checksum of a data
@@ -92,9 +92,9 @@ class Adler32 implements Checksum {
      * Updates the checksum with the bytes from the specified buffer.
      *
      * The checksum is updated using
-     * buffer.{@link java.nio.Buffer#remaining() remaining()}
+     * buffer.{@link j86.java.nio.Buffer#remaining() remaining()}
      * bytes starting at
-     * buffer.{@link java.nio.Buffer#position() position()}
+     * buffer.{@link j86.java.nio.Buffer#position() position()}
      * Upon return, the buffer's position will be updated to its
      * limit; its limit will not have been changed.
      *

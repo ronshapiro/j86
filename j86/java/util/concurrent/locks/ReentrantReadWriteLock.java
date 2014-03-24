@@ -33,9 +33,9 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package java.util.concurrent.locks;
-import java.util.concurrent.TimeUnit;
-import java.util.Collection;
+package j86.j86.j86.java.util.concurrent.locks;
+import j86.j86.java.util.concurrent.TimeUnit;
+import j86.java.util.Collection;
 
 /**
  * An implementation of {@link ReadWriteLock} supporting similar
@@ -213,7 +213,7 @@ import java.util.Collection;
  * @author Doug Lea
  */
 public class ReentrantReadWriteLock
-        implements ReadWriteLock, java.io.Serializable {
+        implements ReadWriteLock, j86.java.io.Serializable {
     private static final long serialVersionUID = -6992448646407690164L;
     /** Inner class providing readlock */
     private final ReentrantReadWriteLock.ReadLock readerLock;
@@ -653,8 +653,8 @@ public class ReentrantReadWriteLock
         /**
          * Reconstitutes the instance from a stream (that is, deserializes it).
          */
-        private void readObject(java.io.ObjectInputStream s)
-            throws java.io.IOException, ClassNotFoundException {
+        private void readObject(j86.java.io.ObjectInputStream s)
+            throws j86.java.io.IOException, ClassNotFoundException {
             s.defaultReadObject();
             readHolds = new ThreadLocalHoldCounter();
             setState(0); // reset to unlocked state
@@ -699,7 +699,7 @@ public class ReentrantReadWriteLock
     /**
      * The lock returned by method {@link ReentrantReadWriteLock#readLock}.
      */
-    public static class ReadLock implements Lock, java.io.Serializable {
+    public static class ReadLock implements Lock, j86.java.io.Serializable {
         private static final long serialVersionUID = -5992448646407690164L;
         private final Sync sync;
 
@@ -908,7 +908,7 @@ public class ReentrantReadWriteLock
     /**
      * The lock returned by method {@link ReentrantReadWriteLock#writeLock}.
      */
-    public static class WriteLock implements Lock, java.io.Serializable {
+    public static class WriteLock implements Lock, j86.java.io.Serializable {
         private static final long serialVersionUID = -4992448646407690164L;
         private final Sync sync;
 
@@ -1494,11 +1494,11 @@ public class ReentrantReadWriteLock
     }
 
     // Unsafe mechanics
-    private static final sun.misc.Unsafe UNSAFE;
+    private static final j86.sun.misc.Unsafe UNSAFE;
     private static final long TID_OFFSET;
     static {
         try {
-            UNSAFE = sun.misc.Unsafe.getUnsafe();
+            UNSAFE = j86.sun.misc.Unsafe.getUnsafe();
             Class<?> tk = Thread.class;
             TID_OFFSET = UNSAFE.objectFieldOffset
                 (tk.getDeclaredField("tid"));

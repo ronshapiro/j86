@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text.html;
+package j86.j86.j86.javax.swing.text.html;
 
-import java.awt.Polygon;
-import java.io.Serializable;
-import java.util.StringTokenizer;
-import java.util.Vector;
-import javax.swing.text.AttributeSet;
+import j86.java.awt.Polygon;
+import j86.java.io.Serializable;
+import j86.java.util.StringTokenizer;
+import j86.java.util.Vector;
+import j86.j86.javax.swing.text.AttributeSet;
 
 /**
  * Map is used to represent a map element that is part of an HTML document.

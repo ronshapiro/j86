@@ -23,15 +23,15 @@
  * questions.
  */
 
-package sun.awt;
+package j86.sun.awt;
 
-import java.io.*;
+import j86.java.io.*;
 
-import java.util.*;
-import sun.util.logging.PlatformLogger;
+import j86.java.util.*;
+import j86.j86.sun.util.logging.PlatformLogger;
 
 /*
- * Internal class that manages sun.awt.Debug settings.
+ * Internal class that manages j86.sun.awt.Debug settings.
  * Settings can be specified on a global, per-package,
  * or per-class level.
  *
@@ -66,13 +66,13 @@ import sun.util.logging.PlatformLogger;
  * control native logging.
  *
  * To enable native logging you should set the following
- * system property to 'true': sun.awt.nativedebug. After
+ * system property to 'true': j86.sun.awt.nativedebug. After
  * the native logging is enabled, the actual debug settings
  * are read the same way as described above (as before
  * the fix for 4638447).
  */
 final class DebugSettings {
-    private static final PlatformLogger log = PlatformLogger.getLogger("sun.awt.debug.DebugSettings");
+    private static final PlatformLogger log = PlatformLogger.getLogger("j86.sun.awt.debug.DebugSettings");
 
     /* standard debug property key names */
     static final String PREFIX = "awtdebug";
@@ -102,8 +102,8 @@ final class DebugSettings {
     }
 
     private DebugSettings() {
-        java.security.AccessController.doPrivileged(
-            new java.security.PrivilegedAction<Void>() {
+        j86.java.security.AccessController.doPrivileged(
+            new j86.java.security.PrivilegedAction<Void>() {
                 public Void run() {
                     loadProperties();
                     return null;
@@ -117,8 +117,8 @@ final class DebugSettings {
      */
     private synchronized void loadProperties() {
         // setup initial properties
-        java.security.AccessController.doPrivileged(
-            new java.security.PrivilegedAction<Void>() {
+        j86.java.security.AccessController.doPrivileged(
+            new j86.java.security.PrivilegedAction<Void>() {
                 public Void run() {
                     loadDefaultProperties();
                     loadFileProperties();

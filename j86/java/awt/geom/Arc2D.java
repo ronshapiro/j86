@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.awt.geom;
+package j86.j86.java.awt.geom;
 
-import java.io.Serializable;
+import j86.java.io.Serializable;
 
 /**
  * <CODE>Arc2D</CODE> is the abstract superclass for all objects that
@@ -338,8 +338,8 @@ public abstract class Arc2D extends RectangularShape {
          * {@link #OPEN}, {@link #CHORD}, or {@link #PIE}.
          * </ol>
          */
-        private void writeObject(java.io.ObjectOutputStream s)
-            throws java.io.IOException
+        private void writeObject(j86.java.io.ObjectOutputStream s)
+            throws j86.java.io.IOException
         {
             s.defaultWriteObject();
 
@@ -360,15 +360,15 @@ public abstract class Arc2D extends RectangularShape {
          * {@link #OPEN}, {@link #CHORD}, or {@link #PIE}.
          * </ol>
          */
-        private void readObject(java.io.ObjectInputStream s)
-            throws java.lang.ClassNotFoundException, java.io.IOException
+        private void readObject(j86.java.io.ObjectInputStream s)
+            throws j86.java.lang.ClassNotFoundException, j86.java.io.IOException
         {
             s.defaultReadObject();
 
             try {
                 setArcType(s.readByte());
             } catch (IllegalArgumentException iae) {
-                throw new java.io.InvalidObjectException(iae.getMessage());
+                throw new j86.java.io.InvalidObjectException(iae.getMessage());
             }
         }
     }
@@ -630,8 +630,8 @@ public abstract class Arc2D extends RectangularShape {
          * {@link #OPEN}, {@link #CHORD}, or {@link #PIE}.
          * </ol>
          */
-        private void writeObject(java.io.ObjectOutputStream s)
-            throws java.io.IOException
+        private void writeObject(j86.java.io.ObjectOutputStream s)
+            throws j86.java.io.IOException
         {
             s.defaultWriteObject();
 
@@ -652,15 +652,15 @@ public abstract class Arc2D extends RectangularShape {
          * {@link #OPEN}, {@link #CHORD}, or {@link #PIE}.
          * </ol>
          */
-        private void readObject(java.io.ObjectInputStream s)
-            throws java.lang.ClassNotFoundException, java.io.IOException
+        private void readObject(j86.java.io.ObjectInputStream s)
+            throws j86.java.lang.ClassNotFoundException, j86.java.io.IOException
         {
             s.defaultReadObject();
 
             try {
                 setArcType(s.readByte());
             } catch (IllegalArgumentException iae) {
-                throw new java.io.InvalidObjectException(iae.getMessage());
+                throw new j86.java.io.InvalidObjectException(iae.getMessage());
             }
         }
     }
@@ -678,8 +678,8 @@ public abstract class Arc2D extends RectangularShape {
      * type of {@link #OPEN}.  It is provided only to enable
      * serialization of subclasses.
      *
-     * @see java.awt.geom.Arc2D.Float
-     * @see java.awt.geom.Arc2D.Double
+     * @see j86.j86.java.awt.geom.Arc2D.Float
+     * @see j86.j86.java.awt.geom.Arc2D.Double
      */
     protected Arc2D() {
         this(OPEN);
@@ -694,8 +694,8 @@ public abstract class Arc2D extends RectangularShape {
      *
      * @param type The closure type of this arc:
      * {@link #OPEN}, {@link #CHORD}, or {@link #PIE}.
-     * @see java.awt.geom.Arc2D.Float
-     * @see java.awt.geom.Arc2D.Double
+     * @see j86.j86.java.awt.geom.Arc2D.Float
+     * @see j86.j86.java.awt.geom.Arc2D.Double
      * @since 1.2
      */
     protected Arc2D(int type) {
@@ -1431,12 +1431,12 @@ public abstract class Arc2D extends RectangularShape {
      * @since 1.6
      */
     public int hashCode() {
-        long bits = java.lang.Double.doubleToLongBits(getX());
-        bits += java.lang.Double.doubleToLongBits(getY()) * 37;
-        bits += java.lang.Double.doubleToLongBits(getWidth()) * 43;
-        bits += java.lang.Double.doubleToLongBits(getHeight()) * 47;
-        bits += java.lang.Double.doubleToLongBits(getAngleStart()) * 53;
-        bits += java.lang.Double.doubleToLongBits(getAngleExtent()) * 59;
+        long bits = j86.java.lang.Double.doubleToLongBits(getX());
+        bits += j86.java.lang.Double.doubleToLongBits(getY()) * 37;
+        bits += j86.java.lang.Double.doubleToLongBits(getWidth()) * 43;
+        bits += j86.java.lang.Double.doubleToLongBits(getHeight()) * 47;
+        bits += j86.java.lang.Double.doubleToLongBits(getAngleStart()) * 53;
+        bits += j86.java.lang.Double.doubleToLongBits(getAngleExtent()) * 59;
         bits += getArcType() * 61;
         return (((int) bits) ^ ((int) (bits >> 32)));
     }

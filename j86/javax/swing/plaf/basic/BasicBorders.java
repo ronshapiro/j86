@@ -23,19 +23,19 @@
  * questions.
  */
 
-package javax.swing.plaf.basic;
+package j86.j86.j86.javax.swing.plaf.basic;
 
-import javax.swing.*;
-import javax.swing.border.*;
-import javax.swing.plaf.*;
-import javax.swing.text.JTextComponent;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.border.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.javax.swing.text.JTextComponent;
 
-import java.awt.Component;
-import java.awt.Insets;
-import java.awt.Dimension;
-import java.awt.Rectangle;
-import java.awt.Color;
-import java.awt.Graphics;
+import j86.java.awt.Component;
+import j86.java.awt.Insets;
+import j86.java.awt.Dimension;
+import j86.java.awt.Rectangle;
+import j86.java.awt.Color;
+import j86.java.awt.Graphics;
 
 /**
  * Factory object that can vend Borders appropriate for the basic L &amp; F.

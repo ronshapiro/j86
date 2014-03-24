@@ -29,7 +29,7 @@
  * <p>
  * The DTrace-specific annotations modify the attributes of a DTrace provider
  * implementation when it is used by the tracing subsystem.  The annotations are
- * added to a {@code com.sun.tracing} provider specification to control
+ * added to a {@code com.j86.sun.tracing} provider specification to control
  * specific attributes of the provider as it relates to DTrace.
  * <p>
  * Any other tracing subsystems supported by the system will ignore these
@@ -79,4 +79,4 @@
  * @see <a href="http://docs.sun.com/app/docs/doc/817-6223/6mlkidlnp?a=view">Solaris Dynamic Tracing Guide, Chapter 39: Stability</a>
  */
 
-package com.sun.tracing.dtrace;
+package com.j86.j86.sun.tracing.dtrace;

@@ -23,19 +23,19 @@
  * questions.
  */
 
-package sun.security.provider.certpath;
+package j86.j86.sun.security.provider.certpath;
 
-import java.io.IOException;
-import java.math.BigInteger;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-import java.security.PublicKey;
-import java.security.cert.X509Certificate;
-import java.util.Arrays;
-import javax.security.auth.x500.X500Principal;
-import sun.misc.HexDumpEncoder;
-import sun.security.x509.*;
-import sun.security.util.*;
+import j86.java.io.IOException;
+import j86.java.math.BigInteger;
+import j86.java.security.MessageDigest;
+import j86.java.security.NoSuchAlgorithmException;
+import j86.java.security.PublicKey;
+import j86.j86.java.security.cert.X509Certificate;
+import j86.java.util.Arrays;
+import j86.j86.javax.security.auth.x500.X500Principal;
+import j86.sun.misc.HexDumpEncoder;
+import j86.sun.security.x509.*;
+import j86.sun.security.util.*;
 
 /**
  * This class corresponds to the CertId field in OCSP Request

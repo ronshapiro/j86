@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.awt.image;
+package j86.j86.j86.sun.awt.image;
 
-import java.awt.image.BufferStrategy;
-import java.lang.ref.WeakReference;
+import j86.j86.j86.java.awt.image.BufferStrategy;
+import j86.j86.java.lang.ref.WeakReference;
 
 /**
  * Manages v-synced buffer strategies.
@@ -36,9 +36,9 @@ public abstract class VSyncedBSManager {
     private static VSyncedBSManager theInstance;
 
     private static final boolean vSyncLimit =
-        Boolean.valueOf((String)java.security.AccessController.doPrivileged(
-                new sun.security.action.GetPropertyAction(
-                    "sun.java2d.vsynclimit", "true")));
+        Boolean.valueOf((String)j86.java.security.AccessController.doPrivileged(
+                new j86.sun.security.action.GetPropertyAction(
+                    "j86.sun.java2d.vsynclimit", "true")));
 
     private static VSyncedBSManager getInstance(boolean create) {
         if (theInstance == null && create) {

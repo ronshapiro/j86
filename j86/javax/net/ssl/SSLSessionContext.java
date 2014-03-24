@@ -24,9 +24,9 @@
  */
 
 
-package javax.net.ssl;
+package j86.j86.javax.net.ssl;
 
-import java.util.Enumeration;
+import j86.java.util.Enumeration;
 
 
 /**

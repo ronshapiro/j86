@@ -23,11 +23,11 @@
  * questions.
  */
 
-package java.nio.channels;
+package j86.j86.java.nio.channels;
 
-import java.io.IOException;
-import java.nio.channels.spi.AbstractInterruptibleChannel;
-import java.nio.channels.spi.SelectorProvider;
+import j86.java.io.IOException;
+import j86.j86.j86.java.nio.channels.spi.AbstractInterruptibleChannel;
+import j86.j86.j86.java.nio.channels.spi.SelectorProvider;
 
 
 /**
@@ -240,7 +240,7 @@ public abstract class SelectableChannel
      * behaves in exactly the same way as the invocation
      *
      * <blockquote><tt>sc.{@link
-     * #register(java.nio.channels.Selector,int,java.lang.Object)
+     * #register(j86.j86.java.nio.channels.Selector,int,j86.java.lang.Object)
      * register}(sel, ops, null)</tt></blockquote>
      *
      * @param  sel

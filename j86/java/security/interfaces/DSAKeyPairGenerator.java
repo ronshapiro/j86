@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.security.interfaces;
+package j86.j86.java.security.interfaces;
 
-import java.security.*;
+import j86.java.security.*;
 
 /**
  * An interface to an object capable of generating DSA key pairs.
@@ -65,7 +65,7 @@ import java.security.*;
  * <p>Note: Some earlier implementations of this interface may not support
  * larger sizes of DSA parameters such as 2048 and 3072-bit.
  *
- * @see java.security.KeyPairGenerator
+ * @see j86.java.security.KeyPairGenerator
  */
 public interface DSAKeyPairGenerator {
 

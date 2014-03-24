@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.sql;
+package j86.javax.sql;
 
-import java.sql.SQLException;
+import j86.java.sql.SQLException;
 
 
 /**
@@ -48,7 +48,7 @@ public interface ConnectionPoolDataSource  extends CommonDataSource {
    *         connection to the database that this
    *         <code>ConnectionPoolDataSource</code> object represents
    * @exception SQLException if a database access error occurs
-   * @exception java.sql.SQLFeatureNotSupportedException if the JDBC driver does not support
+   * @exception j86.java.sql.SQLFeatureNotSupportedException if the JDBC driver does not support
    * this method
    * @since 1.4
    */
@@ -64,7 +64,7 @@ public interface ConnectionPoolDataSource  extends CommonDataSource {
    *         connection to the database that this
    *         <code>ConnectionPoolDataSource</code> object represents
    * @exception SQLException if a database access error occurs
-   * @exception java.sql.SQLFeatureNotSupportedException if the JDBC driver does not support
+   * @exception j86.java.sql.SQLFeatureNotSupportedException if the JDBC driver does not support
    * this method
    * @since 1.4
    */

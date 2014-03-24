@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.beans;
+package j86.com.sun.beans;
 
-import java.lang.ref.Reference;
-import java.lang.ref.WeakReference;
+import j86.j86.java.lang.ref.Reference;
+import j86.j86.java.lang.ref.WeakReference;
 
-import java.util.Map;
-import java.util.WeakHashMap;
+import j86.java.util.Map;
+import j86.java.util.WeakHashMap;
 
 /**
  * A hashtable-based cache with weak keys and weak values.

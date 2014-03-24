@@ -23,29 +23,29 @@
  * questions.
  */
 
-package sun.security.jgss.krb5;
+package j86.j86.sun.security.jgss.krb5;
 
-import com.sun.security.jgss.InquireType;
-import org.ietf.jgss.*;
-import sun.misc.HexDumpEncoder;
-import sun.security.jgss.GSSUtil;
-import sun.security.jgss.GSSCaller;
-import sun.security.jgss.spi.*;
-import sun.security.jgss.TokenTracker;
-import sun.security.krb5.*;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.IOException;
-import java.security.Provider;
-import java.security.AccessController;
-import java.security.AccessControlContext;
-import java.security.Key;
-import java.security.PrivilegedExceptionAction;
-import java.security.PrivilegedActionException;
-import javax.crypto.Cipher;
-import javax.security.auth.Subject;
-import javax.security.auth.kerberos.*;
-import sun.security.krb5.internal.Ticket;
+import com.j86.sun.security.jgss.InquireType;
+import j86.org.ietf.jgss.*;
+import j86.sun.misc.HexDumpEncoder;
+import j86.sun.security.jgss.GSSUtil;
+import j86.sun.security.jgss.GSSCaller;
+import j86.j86.sun.security.jgss.spi.*;
+import j86.sun.security.jgss.TokenTracker;
+import j86.sun.security.krb5.*;
+import j86.java.io.InputStream;
+import j86.java.io.OutputStream;
+import j86.java.io.IOException;
+import j86.java.security.Provider;
+import j86.java.security.AccessController;
+import j86.java.security.AccessControlContext;
+import j86.java.security.Key;
+import j86.java.security.PrivilegedExceptionAction;
+import j86.java.security.PrivilegedActionException;
+import j86.javax.crypto.Cipher;
+import j86.javax.security.auth.Subject;
+import j86.j86.javax.security.auth.kerberos.*;
+import j86.j86.sun.security.krb5.internal.Ticket;
 
 /**
  * Implements the mechanism specific context class for the Kerberos v5
@@ -700,7 +700,7 @@ class Krb5Context implements GSSContextSpi {
                         if (GSSUtil.useSubjectCredsOnly(caller)) {
                             final Subject subject =
                                 AccessController.doPrivileged(
-                                new java.security.PrivilegedAction<Subject>() {
+                                new j86.java.security.PrivilegedAction<Subject>() {
                                     public Subject run() {
                                         return (Subject.getSubject(acc));
                                     }
@@ -709,7 +709,7 @@ class Krb5Context implements GSSContextSpi {
                                 !subject.isReadOnly()) {
                                 /*
                              * Store the service credentials as
-                             * javax.security.auth.kerberos.KerberosTicket in
+                             * j86.j86.javax.security.auth.kerberos.KerberosTicket in
                              * the Subject. We could wait till the context is
                              * succesfully established; however it is easier
                              * to do here and there is no harm indoing it here.
@@ -717,7 +717,7 @@ class Krb5Context implements GSSContextSpi {
                                 final KerberosTicket kt =
                                     Krb5Util.credsToTicket(serviceCreds);
                                 AccessController.doPrivileged (
-                                    new java.security.PrivilegedAction<Void>() {
+                                    new j86.java.security.PrivilegedAction<Void>() {
                                       public Void run() {
                                         subject.getPrivateCredentials().add(kt);
                                         return null;
@@ -1408,7 +1408,7 @@ class Krb5Context implements GSSContextSpi {
         @Override
         public String toString() {
             return "Kerberos session key: etype: " + key.getEType() + "\n" +
-                    new sun.misc.HexDumpEncoder().encodeBuffer(key.getBytes());
+                    new j86.sun.misc.HexDumpEncoder().encodeBuffer(key.getBytes());
         }
     }
 
@@ -1443,7 +1443,7 @@ class Krb5Context implements GSSContextSpi {
     // Helpers for inquireSecContext
     private boolean[] tktFlags;
     private String authTime;
-    private com.sun.security.jgss.AuthorizationDataEntry[] authzData;
+    private com.j86.sun.security.jgss.AuthorizationDataEntry[] authzData;
 
     public void setTktFlags(boolean[] tktFlags) {
         this.tktFlags = tktFlags;
@@ -1453,7 +1453,7 @@ class Krb5Context implements GSSContextSpi {
         this.authTime = authTime;
     }
 
-    public void setAuthzData(com.sun.security.jgss.AuthorizationDataEntry[] authzData) {
+    public void setAuthzData(com.j86.sun.security.jgss.AuthorizationDataEntry[] authzData) {
         this.authzData = authzData;
     }
 }

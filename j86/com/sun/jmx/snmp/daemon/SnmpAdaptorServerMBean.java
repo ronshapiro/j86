@@ -24,30 +24,30 @@
  */
 
 
-package com.sun.jmx.snmp.daemon;
+package j86.j86.j86.com.sun.jmx.snmp.daemon;
 
 // java import
-import java.util.Vector;
-import java.io.IOException;
-import java.net.InetAddress;
+import j86.java.util.Vector;
+import j86.java.io.IOException;
+import j86.java.net.InetAddress;
 
 // jmx imports
 //
-import com.sun.jmx.snmp.SnmpPduFactory;
-import com.sun.jmx.snmp.SnmpStatusException;
-import com.sun.jmx.snmp.SnmpVarBindList;
-import com.sun.jmx.snmp.SnmpOid;
-import com.sun.jmx.snmp.SnmpTimeticks;
-import com.sun.jmx.snmp.SnmpIpAddress;
-import com.sun.jmx.snmp.SnmpPduPacket;
-import com.sun.jmx.snmp.InetAddressAcl;
-import com.sun.jmx.snmp.SnmpPeer;
+import j86.com.sun.jmx.snmp.SnmpPduFactory;
+import j86.com.sun.jmx.snmp.SnmpStatusException;
+import j86.com.sun.jmx.snmp.SnmpVarBindList;
+import j86.com.sun.jmx.snmp.SnmpOid;
+import j86.com.sun.jmx.snmp.SnmpTimeticks;
+import j86.com.sun.jmx.snmp.SnmpIpAddress;
+import j86.com.sun.jmx.snmp.SnmpPduPacket;
+import j86.com.sun.jmx.snmp.InetAddressAcl;
+import j86.com.sun.jmx.snmp.SnmpPeer;
 
 // SNMP Runtime imports
 //
-import com.sun.jmx.snmp.agent.SnmpMibAgent;
-import com.sun.jmx.snmp.agent.SnmpMibHandler;
-import com.sun.jmx.snmp.agent.SnmpUserDataFactory;
+import j86.j86.com.sun.jmx.snmp.agent.SnmpMibAgent;
+import j86.j86.com.sun.jmx.snmp.agent.SnmpMibHandler;
+import j86.j86.com.sun.jmx.snmp.agent.SnmpUserDataFactory;
 
 /**
  * Exposes the remote management interface of the {@link SnmpAdaptorServer} MBean.
@@ -130,10 +130,10 @@ public interface SnmpAdaptorServerMBean extends CommunicatorServerMBean {
      *
      * @param c The number of managers.
      *
-     * @exception java.lang.IllegalStateException This method has been invoked
+     * @exception j86.java.lang.IllegalStateException This method has been invoked
      * while the communicator was <CODE>ONLINE</CODE> or <CODE>STARTING</CODE>.
      */
-    public void setMaxActiveClientCount(int c) throws java.lang.IllegalStateException;
+    public void setMaxActiveClientCount(int c) throws j86.java.lang.IllegalStateException;
 
     /**
      * Returns the protocol of this SNMP protocol adaptor.
@@ -156,10 +156,10 @@ public interface SnmpAdaptorServerMBean extends CommunicatorServerMBean {
      *
      * @param s The buffer size.
      *
-     * @exception java.lang.IllegalStateException This method has been invoked
+     * @exception j86.java.lang.IllegalStateException This method has been invoked
      * while the communicator was <CODE>ONLINE</CODE> or <CODE>STARTING</CODE>.
      */
-    public void setBufferSize(Integer s) throws java.lang.IllegalStateException;
+    public void setBufferSize(Integer s) throws j86.java.lang.IllegalStateException;
 
     /**
      * Gets the number of times to try sending an inform request before giving up.
@@ -204,7 +204,7 @@ public interface SnmpAdaptorServerMBean extends CommunicatorServerMBean {
      * Set the user-data factory of this SNMP protocol adaptor.
      *
      * @param factory The factory object (null means no factory).
-     * @see com.sun.jmx.snmp.agent.SnmpUserDataFactory
+     * @see j86.j86.com.sun.jmx.snmp.agent.SnmpUserDataFactory
      */
     public void setUserDataFactory(SnmpUserDataFactory factory);
 
@@ -212,7 +212,7 @@ public interface SnmpAdaptorServerMBean extends CommunicatorServerMBean {
      * Get the user-data factory associated with this SNMP protocol adaptor.
      *
      * @return The factory object (null means no factory).
-     * @see com.sun.jmx.snmp.agent.SnmpUserDataFactory
+     * @see j86.j86.com.sun.jmx.snmp.agent.SnmpUserDataFactory
      */
     public SnmpUserDataFactory getUserDataFactory();
 
@@ -425,8 +425,8 @@ public interface SnmpAdaptorServerMBean extends CommunicatorServerMBean {
 
     /**
      * Adds a new MIB in the SNMP MIB handler.
-     * This method is called automatically by {@link com.sun.jmx.snmp.agent.SnmpMibAgent#setSnmpAdaptor(SnmpMibHandler)}
-     * and {@link com.sun.jmx.snmp.agent.SnmpMibAgent#setSnmpAdaptorName(ObjectName)}
+     * This method is called automatically by {@link j86.j86.com.sun.jmx.snmp.agent.SnmpMibAgent#setSnmpAdaptor(SnmpMibHandler)}
+     * and {@link j86.j86.com.sun.jmx.snmp.agent.SnmpMibAgent#setSnmpAdaptorName(ObjectName)}
      * and should not be called directly.
      *
      * @param mib The MIB to add.
@@ -453,8 +453,8 @@ public interface SnmpAdaptorServerMBean extends CommunicatorServerMBean {
 
     /**
      * Removes the specified MIB from the SNMP protocol adaptor.
-     * This method is called automatically by {@link com.sun.jmx.snmp.agent.SnmpMibAgent#setSnmpAdaptor(SnmpMibHandler)}
-     * and {@link com.sun.jmx.snmp.agent.SnmpMibAgent#setSnmpAdaptorName(ObjectName)}
+     * This method is called automatically by {@link j86.j86.com.sun.jmx.snmp.agent.SnmpMibAgent#setSnmpAdaptor(SnmpMibHandler)}
+     * and {@link j86.j86.com.sun.jmx.snmp.agent.SnmpMibAgent#setSnmpAdaptorName(ObjectName)}
      * and should not be called directly.
      *
      * @param mib The MIB to be removed.
@@ -630,7 +630,7 @@ public interface SnmpAdaptorServerMBean extends CommunicatorServerMBean {
      * @param trapOid The OID identifying the trap.
      * @param varBindList A list of <CODE>SnmpVarBind</CODE> instances or null.
      *
-     * @return A vector of {@link com.sun.jmx.snmp.daemon.SnmpInformRequest} objects.
+     * @return A vector of {@link j86.j86.j86.com.sun.jmx.snmp.daemon.SnmpInformRequest} objects.
      * <P>If there is no destination host for this inform request, the returned vector will be empty.
      *
      * @exception IllegalStateException  This method has been invoked while the SNMP adaptor server was not active.

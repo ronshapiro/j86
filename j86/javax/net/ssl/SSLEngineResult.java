@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.net.ssl;
+package j86.j86.javax.net.ssl;
 
 /**
  * An encapsulation of the result state produced by

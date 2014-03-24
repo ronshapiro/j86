@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.nio.channels;
+package j86.j86.java.nio.channels;
 
-import java.io.IOException;
+import j86.java.io.IOException;
 
 /**
  * A token representing a lock on a region of a file.
@@ -93,7 +93,7 @@ import java.io.IOException;
  * they were advisory locks.
  *
  * <p> On some systems, acquiring a mandatory lock on a region of a file
- * prevents that region from being {@link java.nio.channels.FileChannel#map
+ * prevents that region from being {@link j86.j86.java.nio.channels.FileChannel#map
  * <i>mapped into memory</i>}, and vice versa.  Programs that combine
  * locking and mapping should be prepared for this combination to fail.
  *

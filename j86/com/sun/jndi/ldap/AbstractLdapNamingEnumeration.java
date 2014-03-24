@@ -23,15 +23,15 @@
  * questions.
  */
 
-package com.sun.jndi.ldap;
+package j86.com.sun.jndi.ldap;
 
-import com.sun.jndi.toolkit.ctx.Continuation;
-import java.util.NoSuchElementException;
-import java.util.Vector;
+import j86.com.sun.jndi.toolkit.ctx.Continuation;
+import j86.java.util.NoSuchElementException;
+import j86.java.util.Vector;
 
-import javax.naming.*;
-import javax.naming.directory.Attributes;
-import javax.naming.ldap.Control;
+import j86.javax.naming.*;
+import j86.j86.javax.naming.directory.Attributes;
+import j86.j86.javax.naming.ldap.Control;
 
 /**
  * Basic enumeration for NameClassPair, Binding, and SearchResults.

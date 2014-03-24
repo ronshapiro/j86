@@ -23,15 +23,15 @@
  * questions.
  */
 
-package sun.java2d.loops;
+package j86.j86.sun.java2d.loops;
 
-import java.awt.image.ColorModel;
-import java.awt.Color;
-import java.awt.Composite;
-import java.awt.CompositeContext;
-import java.awt.RenderingHints;
-import sun.java2d.SurfaceData;
-import sun.java2d.SunCompositeContext;
+import j86.j86.j86.java.awt.image.ColorModel;
+import j86.java.awt.Color;
+import j86.java.awt.Composite;
+import j86.java.awt.CompositeContext;
+import j86.java.awt.RenderingHints;
+import j86.sun.java2d.SurfaceData;
+import j86.sun.java2d.SunCompositeContext;
 
 /**
  * Bitwise XOR Composite class.

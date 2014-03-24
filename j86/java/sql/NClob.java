@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.sql;
+package j86.java.sql;
 
-import java.sql.Clob;
+import j86.java.sql.Clob;
 
 /**
  * The mapping in the Java&trade; programming language

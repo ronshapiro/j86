@@ -23,26 +23,26 @@
  * questions.
  */
 
-package sun.security.jgss.krb5;
+package j86.j86.sun.security.jgss.krb5;
 
-import javax.security.auth.kerberos.KerberosTicket;
-import javax.security.auth.kerberos.KerberosKey;
-import javax.security.auth.kerberos.KerberosPrincipal;
-import javax.security.auth.kerberos.KeyTab;
-import javax.security.auth.Subject;
-import javax.security.auth.login.LoginException;
-import java.security.AccessControlContext;
-import sun.security.jgss.GSSUtil;
-import sun.security.jgss.GSSCaller;
+import j86.j86.javax.security.auth.kerberos.KerberosTicket;
+import j86.j86.javax.security.auth.kerberos.KerberosKey;
+import j86.j86.javax.security.auth.kerberos.KerberosPrincipal;
+import j86.j86.javax.security.auth.kerberos.KeyTab;
+import j86.javax.security.auth.Subject;
+import j86.j86.javax.security.auth.login.LoginException;
+import j86.java.security.AccessControlContext;
+import j86.sun.security.jgss.GSSUtil;
+import j86.sun.security.jgss.GSSCaller;
 
-import sun.security.krb5.Credentials;
-import sun.security.krb5.EncryptionKey;
-import sun.security.krb5.KrbException;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-import sun.security.krb5.KerberosSecrets;
-import sun.security.krb5.PrincipalName;
+import j86.sun.security.krb5.Credentials;
+import j86.sun.security.krb5.EncryptionKey;
+import j86.sun.security.krb5.KrbException;
+import j86.java.io.IOException;
+import j86.java.util.ArrayList;
+import j86.java.util.List;
+import j86.sun.security.krb5.KerberosSecrets;
+import j86.sun.security.krb5.PrincipalName;
 /**
  * Utilities for obtaining and converting Kerberos tickets.
  *
@@ -50,9 +50,9 @@ import sun.security.krb5.PrincipalName;
 public class Krb5Util {
 
     static final boolean DEBUG =
-        java.security.AccessController.doPrivileged(
-            new sun.security.action.GetBooleanAction
-            ("sun.security.krb5.debug")).booleanValue();
+        j86.java.security.AccessController.doPrivileged(
+            new j86.sun.security.action.GetBooleanAction
+            ("j86.sun.security.krb5.debug")).booleanValue();
 
     /**
      * Default constructor
@@ -247,7 +247,7 @@ public class Krb5Util {
      * @param ktab the javax..KeyTab object
      * @return the sun..KeyTab object
      */
-    public static sun.security.krb5.internal.ktab.KeyTab
+    public static j86.j86.j86.sun.security.krb5.internal.ktab.KeyTab
             snapshotFromJavaxKeyTab(KeyTab ktab) {
         return KerberosSecrets.getJavaxSecurityAuthKerberosAccess()
                 .keyTabTakeSnapshot(ktab);

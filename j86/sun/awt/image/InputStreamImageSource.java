@@ -23,13 +23,13 @@
  * questions.
  */
 
-package sun.awt.image;
+package j86.j86.j86.sun.awt.image;
 
-import java.awt.image.*;
-import java.io.InputStream;
-import java.io.IOException;
-import java.io.BufferedInputStream;
-import java.util.Hashtable;
+import j86.j86.j86.java.awt.image.*;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
+import j86.java.io.BufferedInputStream;
+import j86.java.util.Hashtable;
 
 public abstract class InputStreamImageSource implements ImageProducer,
                                                         ImageFetchable

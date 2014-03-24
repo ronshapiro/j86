@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.security.util;
+package j86.sun.security.util;
 
 /**
  * An exception that denotes that an operation is pending.

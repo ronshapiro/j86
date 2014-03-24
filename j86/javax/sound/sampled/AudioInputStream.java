@@ -23,11 +23,11 @@
  * questions.
  */
 
-package javax.sound.sampled;
+package j86.javax.sound.sampled;
 
-import java.io.InputStream;
-import java.io.PushbackInputStream;
-import java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.io.PushbackInputStream;
+import j86.java.io.IOException;
 
 
 /**

@@ -23,21 +23,21 @@
  * questions.
  */
 
-package sun.security.jgss.krb5;
+package j86.j86.sun.security.jgss.krb5;
 
-import org.ietf.jgss.*;
-import sun.security.jgss.GSSCaller;
-import sun.security.jgss.spi.*;
-import sun.security.krb5.*;
-import sun.security.krb5.Config;
-import javax.security.auth.kerberos.*;
-import java.net.InetAddress;
-import java.io.IOException;
-import java.util.Date;
-import java.security.AccessController;
-import java.security.AccessControlContext;
-import java.security.PrivilegedExceptionAction;
-import java.security.PrivilegedActionException;
+import j86.org.ietf.jgss.*;
+import j86.sun.security.jgss.GSSCaller;
+import j86.j86.sun.security.jgss.spi.*;
+import j86.sun.security.krb5.*;
+import j86.sun.security.krb5.Config;
+import j86.j86.javax.security.auth.kerberos.*;
+import j86.java.net.InetAddress;
+import j86.java.io.IOException;
+import j86.java.util.Date;
+import j86.java.security.AccessController;
+import j86.java.security.AccessControlContext;
+import j86.java.security.PrivilegedExceptionAction;
+import j86.java.security.PrivilegedActionException;
 
 /**
  * Implements the krb5 initiator credential element.
@@ -84,7 +84,7 @@ public class Krb5InitCredential
         this.name = name;
 
         try {
-            // Cache this for later use by the sun.security.krb5 package.
+            // Cache this for later use by the j86.sun.security.krb5 package.
             krb5Credentials = new Credentials(asn1Encoding,
                                               client.getName(),
                                               server.getName(),
@@ -270,13 +270,13 @@ public class Krb5InitCredential
         return Krb5MechFactory.GSS_KRB5_MECH_OID;
     }
 
-    public final java.security.Provider getProvider() {
+    public final j86.java.security.Provider getProvider() {
         return Krb5MechFactory.PROVIDER;
     }
 
 
     /**
-     * Returns a sun.security.krb5.Credentials instance so that it maybe
+     * Returns a j86.sun.security.krb5.Credentials instance so that it maybe
      * used in that package for th Kerberos protocol.
      */
     Credentials getKrb5Credentials() {
@@ -294,7 +294,7 @@ public class Krb5InitCredential
     public void dispose() throws GSSException {
         try {
             destroy();
-        } catch (javax.security.auth.DestroyFailedException e) {
+        } catch (j86.javax.security.auth.DestroyFailedException e) {
             GSSException gssException =
                 new GSSException(GSSException.FAILURE, -1,
                  "Could not destroy credentials - " + e.getMessage());

@@ -23,25 +23,25 @@
  * questions.
  */
 
-package sun.tools.jconsole;
+package j86.sun.tools.jconsole;
 
-import java.awt.*;
+import j86.java.awt.*;
 
-import javax.accessibility.*;
-import javax.swing.*;
-import javax.swing.border.*;
-import javax.swing.tree.*;
+import j86.javax.accessibility.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.border.*;
+import j86.j86.javax.swing.tree.*;
 
-import sun.tools.jconsole.inspector.*;
+import j86.j86.sun.tools.jconsole.inspector.*;
 
-import static java.lang.Math.*;
+import static j86.java.lang.Math.*;
 
 /**
  * Miscellaneous utility methods for JConsole
  */
 public class Utilities {
     private static final String windowsLaF =
-        "com.sun.java.swing.plaf.windows.WindowsLookAndFeel";
+        "j86.j86.com.sun.java.swing.plaf.windows.WindowsLookAndFeel";
 
     public static void updateTransparency(JComponent comp) {
         LookAndFeel laf = UIManager.getLookAndFeel();

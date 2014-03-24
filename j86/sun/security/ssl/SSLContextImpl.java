@@ -23,20 +23,20 @@
  * questions.
  */
 
-package sun.security.ssl;
+package j86.sun.security.ssl;
 
-import java.net.Socket;
+import j86.java.net.Socket;
 
-import java.io.*;
-import java.util.*;
-import java.security.*;
-import java.security.cert.*;
-import java.security.cert.Certificate;
+import j86.java.io.*;
+import j86.java.util.*;
+import j86.java.security.*;
+import j86.j86.java.security.cert.*;
+import j86.j86.java.security.cert.Certificate;
 
-import javax.net.ssl.*;
+import j86.j86.javax.net.ssl.*;
 
-import sun.security.provider.certpath.AlgorithmChecker;
-import sun.security.action.GetPropertyAction;
+import j86.j86.sun.security.provider.certpath.AlgorithmChecker;
+import j86.sun.security.action.GetPropertyAction;
 
 public abstract class SSLContextImpl extends SSLContextSpi {
 
@@ -571,10 +571,10 @@ public abstract class SSLContextImpl extends SSLContextSpi {
         private final static SSLParameters defaultClientSSLParams;
         private static IllegalArgumentException reservedException = null;
 
-        // Don't want a java.lang.LinkageError for illegal system property.
+        // Don't want a j86.java.lang.LinkageError for illegal system property.
         //
         // Please don't throw exception in this static block.  Otherwise,
-        // java.lang.LinkageError may be thrown during the instantiation of
+        // j86.java.lang.LinkageError may be thrown during the instantiation of
         // the provider service. Instead, let's handle the initialization
         // exception in constructor.
         static {
@@ -728,14 +728,14 @@ public abstract class SSLContextImpl extends SSLContextSpi {
                 @Override
                 public Object run() throws Exception {
                     props.put("keyStore",  System.getProperty(
-                                "javax.net.ssl.keyStore", ""));
+                                "j86.j86.javax.net.ssl.keyStore", ""));
                     props.put("keyStoreType", System.getProperty(
-                                "javax.net.ssl.keyStoreType",
+                                "j86.j86.javax.net.ssl.keyStoreType",
                                 KeyStore.getDefaultType()));
                     props.put("keyStoreProvider", System.getProperty(
-                                "javax.net.ssl.keyStoreProvider", ""));
+                                "j86.j86.javax.net.ssl.keyStoreProvider", ""));
                     props.put("keyStorePasswd", System.getProperty(
-                                "javax.net.ssl.keyStorePassword", ""));
+                                "j86.j86.javax.net.ssl.keyStorePassword", ""));
                     return null;
                 }
             });

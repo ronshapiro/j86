@@ -27,24 +27,24 @@
  * (C) Copyright IBM Corp. 1998-2003 - All Rights Reserved
  */
 
-package sun.font;
+package j86.sun.font;
 
-import java.awt.Font;
-import java.awt.Graphics2D;
-import java.awt.Rectangle;
-import java.awt.Shape;
+import j86.java.awt.Font;
+import j86.java.awt.Graphics2D;
+import j86.java.awt.Rectangle;
+import j86.java.awt.Shape;
 
-import java.awt.font.FontRenderContext;
-import java.awt.font.GlyphJustificationInfo;
-import java.awt.font.GlyphMetrics;
-import java.awt.font.LineMetrics;
-import java.awt.font.TextAttribute;
+import j86.j86.java.awt.font.FontRenderContext;
+import j86.j86.java.awt.font.GlyphJustificationInfo;
+import j86.j86.java.awt.font.GlyphMetrics;
+import j86.j86.java.awt.font.LineMetrics;
+import j86.j86.java.awt.font.TextAttribute;
 
-import java.awt.geom.AffineTransform;
-import java.awt.geom.Point2D;
-import java.awt.geom.Rectangle2D;
+import j86.j86.java.awt.geom.AffineTransform;
+import j86.j86.java.awt.geom.Point2D;
+import j86.j86.java.awt.geom.Rectangle2D;
 
-import java.util.Map;
+import j86.java.util.Map;
 
 /**
  * Default implementation of ExtendedTextLabel.

@@ -34,10 +34,10 @@
  * if not, you can download a copy from http://www.cryptix.org/ .
  */
 
-package com.sun.crypto.provider;
+package j86.com.sun.crypto.provider;
 
-import java.security.InvalidKeyException;
-import java.util.Arrays;
+import j86.java.security.InvalidKeyException;
+import j86.java.util.Arrays;
 
 /**
  * Rijndael --pronounced Reindaal-- is a symmetric cipher with a 128-bit

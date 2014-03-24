@@ -24,9 +24,9 @@
  */
 
 
-package javax.management.remote;
+package j86.j86.javax.management.remote;
 
-import java.io.IOException;
+import j86.java.io.IOException;
 
 /**
  * <p>Exception thrown by {@link JMXConnectorFactory} and

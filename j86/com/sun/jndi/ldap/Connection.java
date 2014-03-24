@@ -23,30 +23,30 @@
  * questions.
  */
 
-package com.sun.jndi.ldap;
+package j86.com.sun.jndi.ldap;
 
-import java.io.BufferedInputStream;
-import java.io.BufferedOutputStream;
-import java.io.InterruptedIOException;
-import java.io.IOException;
-import java.io.OutputStream;
-import java.io.InputStream;
-import java.net.Socket;
-import javax.net.ssl.SSLSocket;
+import j86.java.io.BufferedInputStream;
+import j86.java.io.BufferedOutputStream;
+import j86.java.io.InterruptedIOException;
+import j86.java.io.IOException;
+import j86.java.io.OutputStream;
+import j86.java.io.InputStream;
+import j86.java.net.Socket;
+import j86.j86.javax.net.ssl.SSLSocket;
 
-import javax.naming.CommunicationException;
-import javax.naming.ServiceUnavailableException;
-import javax.naming.NamingException;
-import javax.naming.InterruptedNamingException;
+import j86.javax.naming.CommunicationException;
+import j86.javax.naming.ServiceUnavailableException;
+import j86.javax.naming.NamingException;
+import j86.javax.naming.InterruptedNamingException;
 
-import javax.naming.ldap.Control;
+import j86.j86.javax.naming.ldap.Control;
 
-import java.lang.reflect.Method;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
-import java.util.Arrays;
-import sun.misc.IOUtils;
-//import javax.net.SocketFactory;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.j86.j86.java.lang.reflect.Constructor;
+import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.java.util.Arrays;
+import j86.sun.misc.IOUtils;
+//import j86.javax.net.SocketFactory;
 
 /**
   * A thread that creates a connection to an LDAP server.
@@ -242,7 +242,7 @@ public final class Connection implements Runnable {
 
         try {
             Class<?> inetSocketAddressClass =
-                Class.forName("java.net.InetSocketAddress");
+                Class.forName("j86.java.net.InetSocketAddress");
 
             Constructor<?> inetSocketAddressCons =
                 inetSocketAddressClass.getConstructor(new Class<?>[]{
@@ -294,7 +294,7 @@ public final class Connection implements Runnable {
                         new Class<?>[]{});
 
                     Method connect = Socket.class.getMethod("connect",
-                        new Class<?>[]{Class.forName("java.net.SocketAddress"),
+                        new Class<?>[]{Class.forName("j86.java.net.SocketAddress"),
                         int.class});
                     Object endpoint = createInetSocketAddress(host, port);
 
@@ -337,7 +337,7 @@ public final class Connection implements Runnable {
                         Socket.class.getConstructor(new Class<?>[]{});
 
                     Method connect = Socket.class.getMethod("connect",
-                        new Class<?>[]{Class.forName("java.net.SocketAddress"),
+                        new Class<?>[]{Class.forName("j86.java.net.SocketAddress"),
                         int.class});
                     Object endpoint = createInetSocketAddress(host, port);
 

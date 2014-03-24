@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.tools.jconsole.inspector;
+package j86.j86.sun.tools.jconsole.inspector;
 
 // java import
-import java.awt.*;
-import javax.swing.*;
+import j86.java.awt.*;
+import j86.javax.swing.*;
 //
 
 public class ThreadDialog implements Runnable {

@@ -28,10 +28,10 @@
 // No warranty; no copyright -- use this as you will.
 // $Id: InputSource.java,v 1.2 2004/11/03 22:55:32 jsuttor Exp $
 
-package jdk.internal.org.xml.sax;
+package j86.jdk.internal.org.xml.sax;
 
-import java.io.Reader;
-import java.io.InputStream;
+import j86.java.io.Reader;
+import j86.java.io.InputStream;
 
 /**
  * A single input source for an XML entity.
@@ -78,8 +78,8 @@ import java.io.InputStream;
  * @author David Megginson
  * @see org.xml.sax.XMLReader#parse(org.xml.sax.InputSource)
  * @see org.xml.sax.EntityResolver#resolveEntity
- * @see java.io.InputStream
- * @see java.io.Reader
+ * @see j86.java.io.InputStream
+ * @see j86.java.io.Reader
  */
 public class InputSource {
 
@@ -253,7 +253,7 @@ public class InputSource {
      * @see #setEncoding
      * @see #getByteStream
      * @see #getEncoding
-     * @see java.io.InputStream
+     * @see j86.java.io.InputStream
      */
     public void setByteStream (InputStream byteStream)
     {
@@ -324,7 +324,7 @@ public class InputSource {
      * @param characterStream The character stream containing the
      *        XML document or other entity.
      * @see #getCharacterStream
-     * @see java.io.Reader
+     * @see j86.java.io.Reader
      */
     public void setCharacterStream (Reader characterStream)
     {

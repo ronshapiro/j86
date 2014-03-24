@@ -23,18 +23,18 @@
  * questions.
  */
 
-package java.net;
+package j86.java.net;
 
-import java.util.List;
-import java.util.StringTokenizer;
-import java.util.NoSuchElementException;
-import java.text.SimpleDateFormat;
-import java.util.TimeZone;
-import java.util.Calendar;
-import java.util.GregorianCalendar;
-import java.util.Date;
-import java.util.Locale;
-import java.util.Objects;
+import j86.java.util.List;
+import j86.java.util.StringTokenizer;
+import j86.java.util.NoSuchElementException;
+import j86.java.text.SimpleDateFormat;
+import j86.java.util.TimeZone;
+import j86.java.util.Calendar;
+import j86.java.util.GregorianCalendar;
+import j86.java.util.Date;
+import j86.java.util.Locale;
+import j86.java.util.Objects;
 
 /**
  * An HttpCookie object represents an HTTP cookie, which carries state
@@ -193,7 +193,7 @@ public final class HttpCookie implements Cloneable {
             header = header.substring(SET_COOKIE.length());
         }
 
-        List<HttpCookie> cookies = new java.util.ArrayList<>();
+        List<HttpCookie> cookies = new j86.java.util.ArrayList<>();
         // The Netscape cookie may have a comma in its expires attribute, while
         // the comma is the delimiter in rfc 2965/2109 cookie header string.
         // so the parse logic is slightly different
@@ -855,8 +855,8 @@ public final class HttpCookie implements Cloneable {
                                String attrName,
                                String attrValue);
     }
-    static final java.util.Map<String, CookieAttributeAssignor> assignors =
-            new java.util.HashMap<>();
+    static final j86.java.util.Map<String, CookieAttributeAssignor> assignors =
+            new j86.java.util.HashMap<>();
     static {
         assignors.put("comment", new CookieAttributeAssignor() {
                 public void assign(HttpCookie cookie,
@@ -971,8 +971,8 @@ public final class HttpCookie implements Cloneable {
     }
 
     static {
-        sun.misc.SharedSecrets.setJavaNetHttpCookieAccess(
-            new sun.misc.JavaNetHttpCookieAccess() {
+        j86.sun.misc.SharedSecrets.setJavaNetHttpCookieAccess(
+            new j86.sun.misc.JavaNetHttpCookieAccess() {
                 public List<HttpCookie> parse(String header) {
                     return HttpCookie.parse(header, true);
                 }
@@ -1125,7 +1125,7 @@ public final class HttpCookie implements Cloneable {
      * @return  list of strings; never null
      */
     private static List<String> splitMultiCookies(String header) {
-        List<String> cookies = new java.util.ArrayList<String>();
+        List<String> cookies = new j86.java.util.ArrayList<String>();
         int quoteCount = 0;
         int p, q;
 

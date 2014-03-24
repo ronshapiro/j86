@@ -23,12 +23,12 @@
  * questions.
  */
 
-package sun.nio.fs;
+package j86.j86.sun.nio.fs;
 
-import java.nio.file.*;
-import java.nio.file.spi.FileSystemProvider;
-import java.io.IOException;
-import java.util.Map;
+import j86.j86.java.nio.file.*;
+import j86.j86.j86.java.nio.file.spi.FileSystemProvider;
+import j86.java.io.IOException;
+import j86.java.util.Map;
 
 /**
  * Base implementation class of FileSystemProvider

@@ -20,17 +20,17 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.sun.org.apache.xml.internal.security.utils;
+package j86.j86.com.sun.org.apache.xml.internal.security.utils;
 
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Method;
-import java.lang.reflect.Modifier;
+import j86.j86.j86.java.lang.reflect.Constructor;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.j86.j86.java.lang.reflect.Modifier;
 
 import javax.xml.transform.ErrorListener;
 import javax.xml.transform.SourceLocator;
 import javax.xml.transform.TransformerException;
 
-import com.sun.org.apache.xml.internal.security.transforms.implementations.FuncHere;
+import j86.j86.j86.com.sun.org.apache.xml.internal.security.transforms.implementations.FuncHere;
 import com.sun.org.apache.xml.internal.utils.PrefixResolver;
 import com.sun.org.apache.xml.internal.utils.PrefixResolverDefault;
 import com.sun.org.apache.xpath.internal.Expression;
@@ -48,8 +48,8 @@ import org.w3c.dom.NodeList;
  */
 public class XalanXPathAPI implements XPathAPI {
 
-    private static java.util.logging.Logger log =
-        java.util.logging.Logger.getLogger(XalanXPathAPI.class.getName());
+    private static j86.j86.java.util.logging.Logger log =
+        j86.j86.java.util.logging.Logger.getLogger(XalanXPathAPI.class.getName());
 
     private String xpathStr = null;
 
@@ -155,8 +155,8 @@ public class XalanXPathAPI implements XPathAPI {
             Constructor<?> constructor = XPath.class.getConstructor(classes);
             xpath = (XPath) constructor.newInstance(objects);
         } catch (Exception ex) {
-            if (log.isLoggable(java.util.logging.Level.FINE)) {
-                log.log(java.util.logging.Level.FINE, ex.getMessage(), ex);
+            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                log.log(j86.j86.java.util.logging.Level.FINE, ex.getMessage(), ex);
             }
         }
         if (xpath == null) {
@@ -167,8 +167,8 @@ public class XalanXPathAPI implements XPathAPI {
 
     private synchronized static void fixupFunctionTable() {
         installed = false;
-        if (log.isLoggable(java.util.logging.Level.FINE)) {
-            log.log(java.util.logging.Level.FINE, "Registering Here function");
+        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+            log.log(j86.j86.java.util.logging.Level.FINE, "Registering Here function");
         }
         /**
          * Try to register our here() implementation as internal function.
@@ -182,7 +182,7 @@ public class XalanXPathAPI implements XPathAPI {
                 installed = true;
             }
         } catch (Exception ex) {
-            log.log(java.util.logging.Level.FINE, "Error installing function using the static installFunction method", ex);
+            log.log(j86.j86.java.util.logging.Level.FINE, "Error installing function using the static installFunction method", ex);
         }
         if (!installed) {
             try {
@@ -193,15 +193,15 @@ public class XalanXPathAPI implements XPathAPI {
                 installFunction.invoke(funcTable, params);
                 installed = true;
             } catch (Exception ex) {
-                log.log(java.util.logging.Level.FINE, "Error installing function using the static installFunction method", ex);
+                log.log(j86.j86.java.util.logging.Level.FINE, "Error installing function using the static installFunction method", ex);
             }
         }
-        if (log.isLoggable(java.util.logging.Level.FINE)) {
+        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
             if (installed) {
-                log.log(java.util.logging.Level.FINE, "Registered class " + FuncHere.class.getName()
+                log.log(j86.j86.java.util.logging.Level.FINE, "Registered class " + FuncHere.class.getName()
                           + " for XPath function 'here()' function in internal table");
             } else {
-                log.log(java.util.logging.Level.FINE, "Unable to register class " + FuncHere.class.getName()
+                log.log(j86.j86.java.util.logging.Level.FINE, "Unable to register class " + FuncHere.class.getName()
                           + " for XPath function 'here()' function in internal table");
             }
         }

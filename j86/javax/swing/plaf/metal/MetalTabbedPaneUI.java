@@ -23,15 +23,15 @@
  * questions.
  */
 
-package javax.swing.plaf.metal;
+package j86.j86.j86.javax.swing.plaf.metal;
 
-import javax.swing.*;
-import javax.swing.event.*;
-import java.awt.*;
-import java.awt.event.*;
-import javax.swing.plaf.*;
-import java.io.Serializable;
-import javax.swing.plaf.basic.BasicTabbedPaneUI;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.event.*;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.java.io.Serializable;
+import j86.j86.j86.javax.swing.plaf.basic.BasicTabbedPaneUI;
 
 /**
  * The Metal subclass of BasicTabbedPaneUI.
@@ -42,8 +42,8 @@ import javax.swing.plaf.basic.BasicTabbedPaneUI;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @author Tom Santos
  */

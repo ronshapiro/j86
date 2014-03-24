@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.security.ssl;
+package j86.sun.security.ssl;
 
-import java.io.IOException;
+import j86.java.io.IOException;
 
 abstract class HelloExtension {
 

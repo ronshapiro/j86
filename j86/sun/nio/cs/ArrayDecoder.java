@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.nio.cs;
+package j86.j86.j86.sun.nio.cs;
 
 /*
  * FastPath byte[]->char[] decoder, REPLACE on malformed or

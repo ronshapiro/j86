@@ -23,12 +23,12 @@
  * questions.
  */
 
-package java.awt;
+package j86.java.awt;
 
-import java.util.LinkedList;
-import sun.awt.AWTAccessor;
-import sun.awt.AppContext;
-import sun.awt.SunToolkit;
+import j86.java.util.LinkedList;
+import j86.sun.awt.AWTAccessor;
+import j86.sun.awt.AppContext;
+import j86.sun.awt.SunToolkit;
 
 /**
  * A mechanism for ensuring that a series of AWTEvents are executed in a
@@ -48,7 +48,7 @@ class SequencedEvent extends AWTEvent implements ActiveEvent {
     private static final long serialVersionUID = 547742659238625067L;
 
     private static final int ID =
-        java.awt.event.FocusEvent.FOCUS_LAST + 1;
+        j86.j86.java.awt.event.FocusEvent.FOCUS_LAST + 1;
     private static final LinkedList<SequencedEvent> list = new LinkedList<>();
 
     private final AWTEvent nested;

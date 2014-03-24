@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.rmi.server;
+package j86.sun.rmi.server;
 
-import java.rmi.activation.ActivationGroupDesc;
-import java.rmi.activation.ActivationGroupID;
-import java.rmi.activation.ActivationGroup;
+import j86.j86.java.rmi.activation.ActivationGroupDesc;
+import j86.j86.java.rmi.activation.ActivationGroupID;
+import j86.j86.java.rmi.activation.ActivationGroup;
 
 /**
  * This is the bootstrap code to start a VM executing an activation
@@ -40,7 +40,7 @@ import java.rmi.activation.ActivationGroup;
  * <ul>
  * <li> the activation group's id,
  * <li> the activation group's descriptor (an instance of the class
- *    java.rmi.activation.ActivationGroupDesc) for the group, adn
+ *    j86.j86.java.rmi.activation.ActivationGroupDesc) for the group, adn
  * <li> the group's incarnation number.
  * </ul><p>
  *

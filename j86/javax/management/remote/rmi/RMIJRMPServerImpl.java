@@ -23,24 +23,24 @@
  * questions.
  */
 
-package javax.management.remote.rmi;
+package j86.j86.j86.javax.management.remote.rmi;
 
-import java.io.IOException;
-import java.rmi.NoSuchObjectException;
-import java.rmi.Remote;
-import java.rmi.RemoteException;
-import java.rmi.server.RMIClientSocketFactory;
-import java.rmi.server.RMIServerSocketFactory;
-import java.rmi.server.UnicastRemoteObject;
-import java.rmi.server.RemoteObject;
-import java.util.Map;
-import java.util.Collections;
-import javax.security.auth.Subject;
+import j86.java.io.IOException;
+import j86.java.rmi.NoSuchObjectException;
+import j86.java.rmi.Remote;
+import j86.java.rmi.RemoteException;
+import j86.j86.java.rmi.server.RMIClientSocketFactory;
+import j86.j86.java.rmi.server.RMIServerSocketFactory;
+import j86.j86.java.rmi.server.UnicastRemoteObject;
+import j86.j86.java.rmi.server.RemoteObject;
+import j86.java.util.Map;
+import j86.java.util.Collections;
+import j86.javax.security.auth.Subject;
 
-import com.sun.jmx.remote.internal.RMIExporter;
-import com.sun.jmx.remote.util.EnvHelp;
-import sun.rmi.server.UnicastServerRef;
-import sun.rmi.server.UnicastServerRef2;
+import j86.com.sun.jmx.remote.internal.RMIExporter;
+import j86.com.sun.jmx.remote.util.EnvHelp;
+import j86.sun.rmi.server.UnicastServerRef;
+import j86.sun.rmi.server.UnicastServerRef2;
 
 /**
  * <p>An {@link RMIServer} object that is exported through JRMP and that

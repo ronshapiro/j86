@@ -23,19 +23,19 @@
  * questions.
  */
 
-package java.beans;
+package j86.java.beans;
 
-import com.sun.beans.finder.BeanInfoFinder;
-import com.sun.beans.finder.PropertyEditorFinder;
+import j86.j86.com.sun.beans.finder.BeanInfoFinder;
+import j86.j86.com.sun.beans.finder.PropertyEditorFinder;
 
-import java.awt.GraphicsEnvironment;
-import java.util.Map;
-import java.util.WeakHashMap;
+import j86.java.awt.GraphicsEnvironment;
+import j86.java.util.Map;
+import j86.java.util.WeakHashMap;
 
 /**
  * The {@code ThreadGroupContext} is an application-dependent
  * context referenced by the specific {@link ThreadGroup}.
- * This is a replacement for the {@link sun.awt.AppContext}.
+ * This is a replacement for the {@link j86.sun.awt.AppContext}.
  *
  * @author  Sergey Malenkov
  */

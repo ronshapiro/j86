@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.security;
+package j86.java.security;
 
 /**
  * A private key.
@@ -32,31 +32,31 @@ package java.security;
  * <p>
  * Note: The specialized private key interfaces extend this interface.
  * See, for example, the {@code DSAPrivateKey} interface in
- * {@link java.security.interfaces}.
+ * {@link j86.j86.java.security.interfaces}.
  * <p>
  * Implementations should override the default {@code destroy} and
  * {@code isDestroyed} methods from the
- * {@link javax.security.auth.Destroyable} interface to enable
+ * {@link j86.javax.security.auth.Destroyable} interface to enable
  * sensitive key information to be destroyed, cleared, or in the case
  * where such information is immutable, unreferenced.
  * Finally, since {@code PrivateKey} is {@code Serializable}, implementations
  * should also override
- * {@link java.io.ObjectOutputStream#writeObject(java.lang.Object)}
+ * {@link j86.java.io.ObjectOutputStream#writeObject(j86.java.lang.Object)}
  * to prevent keys that have been destroyed from being serialized.
  *
  * @see Key
  * @see PublicKey
  * @see Certificate
  * @see Signature#initVerify
- * @see java.security.interfaces.DSAPrivateKey
- * @see java.security.interfaces.RSAPrivateKey
- * @see java.security.interfaces.RSAPrivateCrtKey
+ * @see j86.j86.java.security.interfaces.DSAPrivateKey
+ * @see j86.j86.java.security.interfaces.RSAPrivateKey
+ * @see j86.j86.java.security.interfaces.RSAPrivateCrtKey
  *
  * @author Benjamin Renaud
  * @author Josh Bloch
  */
 
-public interface PrivateKey extends Key, javax.security.auth.Destroyable {
+public interface PrivateKey extends Key, j86.javax.security.auth.Destroyable {
 
     // Declare serialVersionUID to be compatible with JDK1.1
     /**

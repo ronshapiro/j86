@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.lang;
+package j86.java.lang;
 
 /**
  * The <code>Runnable</code> interface should be implemented by any
@@ -48,8 +48,8 @@ package java.lang;
  * behavior of the class.
  *
  * @author  Arthur van Hoff
- * @see     java.lang.Thread
- * @see     java.util.concurrent.Callable
+ * @see     j86.java.lang.Thread
+ * @see     j86.j86.java.util.concurrent.Callable
  * @since   JDK1.0
  */
 @FunctionalInterface
@@ -63,7 +63,7 @@ public interface Runnable {
      * The general contract of the method <code>run</code> is that it may
      * take any action whatsoever.
      *
-     * @see     java.lang.Thread#run()
+     * @see     j86.java.lang.Thread#run()
      */
     public abstract void run();
 }

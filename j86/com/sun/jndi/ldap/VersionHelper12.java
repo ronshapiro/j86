@@ -23,21 +23,21 @@
  * questions.
  */
 
-package com.sun.jndi.ldap;
+package j86.com.sun.jndi.ldap;
 
-import java.net.URLClassLoader;
-import java.net.MalformedURLException;
-import java.security.AccessControlContext;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import sun.misc.SharedSecrets;
+import j86.java.net.URLClassLoader;
+import j86.java.net.MalformedURLException;
+import j86.java.security.AccessControlContext;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.sun.misc.SharedSecrets;
 
 final class VersionHelper12 extends VersionHelper {
 
     // System property to control whether classes may be loaded from an
     // arbitrary URL code base.
     private static final String TRUST_URL_CODEBASE_PROPERTY =
-        "com.sun.jndi.ldap.object.trustURLCodebase";
+        "j86.com.sun.jndi.ldap.object.trustURLCodebase";
 
     // Determine whether classes may be loaded from an arbitrary URL code base.
     private static final String trustURLCodebase =
@@ -57,7 +57,7 @@ final class VersionHelper12 extends VersionHelper {
             ClassLoader parent = getContextClassLoader();
             /*
              * Classes may only be loaded from an arbitrary URL code base when
-             * the system property com.sun.jndi.ldap.object.trustURLCodebase
+             * the system property j86.com.sun.jndi.ldap.object.trustURLCodebase
              * has been set to "true".
              */
             if (url != null && "true".equalsIgnoreCase(trustURLCodebase)) {

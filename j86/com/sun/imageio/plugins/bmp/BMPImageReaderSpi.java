@@ -23,21 +23,21 @@
  * questions.
  */
 
-package com.sun.imageio.plugins.bmp;
+package j86.com.sun.imageio.plugins.bmp;
 
-import java.util.Locale;
-import javax.imageio.spi.ImageReaderSpi;
-import javax.imageio.stream.ImageInputStream;
-import javax.imageio.spi.IIORegistry;
-import javax.imageio.spi.ServiceRegistry;
-import java.io.IOException;
-import javax.imageio.ImageReader;
-import javax.imageio.IIOException;
+import j86.java.util.Locale;
+import j86.j86.javax.imageio.spi.ImageReaderSpi;
+import j86.j86.javax.imageio.stream.ImageInputStream;
+import j86.j86.javax.imageio.spi.IIORegistry;
+import j86.j86.javax.imageio.spi.ServiceRegistry;
+import j86.java.io.IOException;
+import j86.javax.imageio.ImageReader;
+import j86.javax.imageio.IIOException;
 
 public class BMPImageReaderSpi extends ImageReaderSpi {
 
     private static String [] writerSpiNames =
-        {"com.sun.imageio.plugins.bmp.BMPImageWriterSpi"};
+        {"j86.com.sun.imageio.plugins.bmp.BMPImageWriterSpi"};
     private static String[] formatNames = {"bmp", "BMP"};
     private static String[] entensions = {"bmp"};
     private static String[] mimeType = {"image/bmp"};
@@ -50,14 +50,14 @@ public class BMPImageReaderSpi extends ImageReaderSpi {
               formatNames,
               entensions,
               mimeType,
-              "com.sun.imageio.plugins.bmp.BMPImageReader",
+              "j86.com.sun.imageio.plugins.bmp.BMPImageReader",
               new Class[] { ImageInputStream.class },
               writerSpiNames,
               false,
               null, null, null, null,
               true,
               BMPMetadata.nativeMetadataFormatName,
-              "com.sun.imageio.plugins.bmp.BMPMetadataFormat",
+              "j86.com.sun.imageio.plugins.bmp.BMPMetadataFormat",
               null, null);
     }
 

@@ -20,9 +20,9 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.sun.org.apache.xml.internal.security.signature;
+package j86.j86.com.sun.org.apache.xml.internal.security.signature;
 
-import com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+import j86.j86.com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
 
 /**
  * All XML Signature related exceptions inherit herefrom.

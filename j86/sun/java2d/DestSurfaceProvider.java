@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.java2d;
+package j86.sun.java2d;
 
-import sun.java2d.pipe.hw.*;
+import j86.j86.j86.sun.java2d.pipe.hw.*;
 
 /**
  * Classes implementing this interface provide access to their

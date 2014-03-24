@@ -22,15 +22,15 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.media.sound;
+package j86.com.sun.media.sound;
 
-import java.nio.ByteBuffer;
-import java.nio.ByteOrder;
-import java.nio.DoubleBuffer;
-import java.nio.FloatBuffer;
+import j86.java.nio.ByteBuffer;
+import j86.java.nio.ByteOrder;
+import j86.java.nio.DoubleBuffer;
+import j86.java.nio.FloatBuffer;
 
-import javax.sound.sampled.AudioFormat;
-import javax.sound.sampled.AudioFormat.Encoding;
+import j86.javax.sound.sampled.AudioFormat;
+import j86.javax.sound.sampled.AudioFormat.Encoding;
 
 /**
  * This class is used to convert between 8,16,24,32,32+ bit signed/unsigned

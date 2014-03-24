@@ -23,15 +23,15 @@
  * questions.
  */
 
-package sun.applet;
+package j86.sun.applet;
 
-import java.util.*;
-import java.io.*;
-import java.net.URL;
-import java.net.MalformedURLException;
-import java.awt.*;
-import java.applet.*;
-import sun.tools.jar.*;
+import j86.java.util.*;
+import j86.java.io.*;
+import j86.java.net.URL;
+import j86.java.net.MalformedURLException;
+import j86.java.awt.*;
+import j86.java.applet.*;
+import j86.sun.tools.jar.*;
 
 
 /**

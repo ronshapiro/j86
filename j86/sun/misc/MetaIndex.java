@@ -23,17 +23,17 @@
  * questions.
  */
 
-package sun.misc;
+package j86.sun.misc;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import j86.java.io.BufferedReader;
+import j86.java.io.FileReader;
+import j86.java.io.File;
+import j86.java.io.IOException;
+import j86.java.util.ArrayList;
+import j86.java.util.Collections;
+import j86.java.util.HashMap;
+import j86.java.util.List;
+import j86.java.util.Map;
 
 /*
  * MetaIndex is intended to decrease startup time (in particular cold
@@ -52,19 +52,19 @@ sun/
 javax/
 ! jsse.jar
 sun/
-com/sun/net/
+com/j86.sun.net/
 javax/
 com/sun/security/
 @ resources.jar
 com/sun/xml/
-com/sun/rowset/
+j86.com.sun.rowset/
 com/sun/org/
 sun/
 com/sun/imageio/
 javax/
-com/sun/java/swing/
+j86.com.sun.java.swing/
 META-INF/services/
-com/sun/java/util/jar/pack/
+j86.com.sun.j86.j86.java.util.jar.pack/
 com/sun/corba/
 com/sun/jndi/
 ! rt.jar
@@ -91,7 +91,7 @@ sun/
  * <LI> It should be as small as possible to reduce the amount of time
  * required to parse it during startup. For example, adding on the
  * secondary package element to java/ and javax/ packages
- * ("javax/swing/", for example) causes the meta-index to grow
+ * ("j86.javax.swing/", for example) causes the meta-index to grow
  * significantly. This is why substrings of the packages have been
  * chosen as the principal contents.
  *
@@ -123,7 +123,7 @@ sun/
  * changes in behavior for non-core ClassLoaders.
  *
  * This class depends on make/tools/MetaIndex/BuildMetaIndex.java and
- * is used principally by sun.misc.URLClassPath.
+ * is used principally by j86.sun.misc.URLClassPath.
  */
 
 public class MetaIndex {

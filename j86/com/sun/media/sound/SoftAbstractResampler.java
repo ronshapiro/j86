@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.media.sound;
+package j86.com.sun.media.sound;
 
-import java.io.IOException;
-import java.util.Arrays;
+import j86.java.io.IOException;
+import j86.java.util.Arrays;
 
-import javax.sound.midi.MidiChannel;
-import javax.sound.midi.VoiceStatus;
+import j86.javax.sound.midi.MidiChannel;
+import j86.javax.sound.midi.VoiceStatus;
 
 /**
  * Abstract resampler class.

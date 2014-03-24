@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.management;
+package j86.sun.management;
 
-import java.io.File;
-import java.io.IOException;
+import j86.java.io.File;
+import j86.java.io.IOException;
 
 /*
  * Utility class to support file system operations

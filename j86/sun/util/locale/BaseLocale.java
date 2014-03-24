@@ -30,7 +30,7 @@
  *******************************************************************************
  */
 
-package sun.util.locale;
+package j86.j86.sun.util.locale;
 
 
 public final class BaseLocale {

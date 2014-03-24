@@ -23,12 +23,12 @@
  * questions.
  */
 
-package java.awt.event;
+package j86.j86.java.awt.event;
 
-import java.awt.Window;
-import java.lang.annotation.Native;
-import sun.awt.AppContext;
-import sun.awt.SunToolkit;
+import j86.java.awt.Window;
+import j86.j86.java.lang.annotation.Native;
+import j86.sun.awt.AppContext;
+import j86.sun.awt.SunToolkit;
 
 /**
  * A low-level event that indicates that a window has changed its status. This
@@ -81,7 +81,7 @@ public class WindowEvent extends ComponentEvent {
     /**
      * The window closed event. This event is delivered after the displayable
      * window has been closed as the result of a call to dispose.
-     * @see java.awt.Component#isDisplayable
+     * @see j86.java.awt.Component#isDisplayable
      * @see Window#dispose
      */
     @Native public static final int WINDOW_CLOSED       = 2 + WINDOW_FIRST;
@@ -91,7 +91,7 @@ public class WindowEvent extends ComponentEvent {
      * the window has been changed from a normal to a minimized state.
      * For many platforms, a minimized window is displayed as
      * the icon specified in the window's iconImage property.
-     * @see java.awt.Frame#setIconImage
+     * @see j86.java.awt.Frame#setIconImage
      */
     @Native public static final int WINDOW_ICONIFIED    = 3 + WINDOW_FIRST; //Event.WINDOW_ICONIFY
 
@@ -351,7 +351,7 @@ public class WindowEvent extends ComponentEvent {
      * </ul>
      *
      * @return a bitwise mask of the previous window state
-     * @see java.awt.Frame#getExtendedState()
+     * @see j86.java.awt.Frame#getExtendedState()
      * @since 1.4
      */
     public int getOldState() {
@@ -374,7 +374,7 @@ public class WindowEvent extends ComponentEvent {
      * </ul>
      *
      * @return a bitwise mask of the new window state
-     * @see java.awt.Frame#getExtendedState()
+     * @see j86.java.awt.Frame#getExtendedState()
      * @since 1.4
      */
     public int getNewState() {

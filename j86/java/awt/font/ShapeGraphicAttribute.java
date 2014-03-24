@@ -38,15 +38,15 @@
  *
  */
 
-package java.awt.font;
+package j86.j86.java.awt.font;
 
-import java.awt.Shape;
-import java.awt.Graphics;
-import java.awt.Rectangle;
-import java.awt.Graphics2D;
-import java.awt.Shape;
-import java.awt.geom.AffineTransform;
-import java.awt.geom.Rectangle2D;
+import j86.java.awt.Shape;
+import j86.java.awt.Graphics;
+import j86.java.awt.Rectangle;
+import j86.java.awt.Graphics2D;
+import j86.java.awt.Shape;
+import j86.j86.java.awt.geom.AffineTransform;
+import j86.j86.java.awt.geom.Rectangle2D;
 
 /**
  * The <code>ShapeGraphicAttribute</code> class is an implementation of
@@ -177,7 +177,7 @@ public final class ShapeGraphicAttribute extends GraphicAttribute {
     }
 
     /**
-     * Return a {@link java.awt.Shape} that represents the region that
+     * Return a {@link j86.java.awt.Shape} that represents the region that
      * this <code>ShapeGraphicAttribute</code> renders.  This is used when a
      * {@link TextLayout} is requested to return the outline of the text.
      * The (untransformed) shape must not extend outside the rectangular

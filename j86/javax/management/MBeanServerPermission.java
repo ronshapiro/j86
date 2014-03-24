@@ -23,17 +23,17 @@
  * questions.
  */
 
-package javax.management;
+package j86.javax.management;
 
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.security.BasicPermission;
-import java.security.Permission;
-import java.security.PermissionCollection;
-import java.util.Collections;
-import java.util.Enumeration;
-import java.util.Set;
-import java.util.StringTokenizer;
+import j86.java.io.IOException;
+import j86.java.io.ObjectInputStream;
+import j86.java.security.BasicPermission;
+import j86.java.security.Permission;
+import j86.java.security.PermissionCollection;
+import j86.java.util.Collections;
+import j86.java.util.Enumeration;
+import j86.java.util.Set;
+import j86.java.util.StringTokenizer;
 
 /** A Permission to perform actions related to MBeanServers.
     The <em>name</em> of the permission specifies the operation requested
@@ -45,14 +45,14 @@ import java.util.StringTokenizer;
     <dt>createMBeanServer</dt>
     <dd>Create a new MBeanServer object using the method
     {@link MBeanServerFactory#createMBeanServer()} or
-    {@link MBeanServerFactory#createMBeanServer(java.lang.String)}.
+    {@link MBeanServerFactory#createMBeanServer(j86.java.lang.String)}.
     <dt>findMBeanServer</dt>
     <dd>Find an MBeanServer with a given name, or all MBeanServers in this
     JVM, using the method {@link MBeanServerFactory#findMBeanServer}.
     <dt>newMBeanServer</dt>
     <dd>Create a new MBeanServer object without keeping a reference to it,
     using the method {@link MBeanServerFactory#newMBeanServer()} or
-    {@link MBeanServerFactory#newMBeanServer(java.lang.String)}.
+    {@link MBeanServerFactory#newMBeanServer(j86.java.lang.String)}.
     <dt>releaseMBeanServer</dt>
     <dd>Remove the MBeanServerFactory's reference to an MBeanServer,
     using the method {@link MBeanServerFactory#releaseMBeanServer}.

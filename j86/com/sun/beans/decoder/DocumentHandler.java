@@ -22,25 +22,25 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.beans.decoder;
+package j86.j86.com.sun.beans.decoder;
 
-import com.sun.beans.finder.ClassFinder;
+import j86.j86.com.sun.beans.finder.ClassFinder;
 
-import java.beans.ExceptionListener;
+import j86.java.beans.ExceptionListener;
 
-import java.io.IOException;
-import java.io.StringReader;
+import j86.java.io.IOException;
+import j86.java.io.StringReader;
 
-import java.lang.ref.Reference;
-import java.lang.ref.WeakReference;
+import j86.j86.java.lang.ref.Reference;
+import j86.j86.java.lang.ref.WeakReference;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.security.AccessControlContext;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
+import j86.java.util.ArrayList;
+import j86.java.util.HashMap;
+import j86.java.util.List;
+import j86.java.util.Map;
+import j86.java.security.AccessControlContext;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
 
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParserFactory;
@@ -50,7 +50,7 @@ import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
-import sun.misc.SharedSecrets;
+import j86.sun.misc.SharedSecrets;
 
 /**
  * The main class to parse JavaBeans XML archive.

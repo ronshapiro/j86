@@ -1,5 +1,5 @@
 # Providers for Soundbanks
-com.sun.media.sound.SF2SoundbankReader
-com.sun.media.sound.DLSSoundbankReader
-com.sun.media.sound.AudioFileSoundbankReader
-com.sun.media.sound.JARSoundbankReader
+j86.com.sun.media.sound.SF2SoundbankReader
+j86.com.sun.media.sound.DLSSoundbankReader
+j86.com.sun.media.sound.AudioFileSoundbankReader
+j86.com.sun.media.sound.JARSoundbankReader

@@ -23,15 +23,15 @@
  * questions.
  */
 
-package java.net;
+package j86.java.net;
 
-import java.io.IOException;
-import java.util.jar.JarFile;
-import java.util.jar.JarEntry;
-import java.util.jar.Attributes;
-import java.util.jar.Manifest;
-import java.security.Permission;
-import sun.net.www.ParseUtil;
+import j86.java.io.IOException;
+import j86.j86.java.util.jar.JarFile;
+import j86.j86.java.util.jar.JarEntry;
+import j86.j86.java.util.jar.Attributes;
+import j86.j86.java.util.jar.Manifest;
+import j86.java.security.Permission;
+import j86.j86.sun.net.www.ParseUtil;
 
 /**
  * A URL Connection to a Java ARchive (JAR) file or an entry in a JAR
@@ -65,7 +65,7 @@ import sun.net.www.ParseUtil;
  * </pre>
  *
  * <p>JarURLConnection instances can only be used to read from JAR files.
- * It is not possible to get a {@link java.io.OutputStream} to modify or write
+ * It is not possible to get a {@link j86.java.io.OutputStream} to modify or write
  * to the underlying JAR file using this class.
  * <p>Examples:
  *
@@ -123,13 +123,13 @@ import sun.net.www.ParseUtil;
  *
  * </ul>
  *
- * @see java.net.URL
- * @see java.net.URLConnection
+ * @see j86.java.net.URL
+ * @see j86.java.net.URLConnection
  *
- * @see java.util.jar.JarFile
- * @see java.util.jar.JarInputStream
- * @see java.util.jar.Manifest
- * @see java.util.zip.ZipEntry
+ * @see j86.j86.java.util.jar.JarFile
+ * @see j86.j86.java.util.jar.JarInputStream
+ * @see j86.j86.java.util.jar.Manifest
+ * @see j86.j86.java.util.zip.ZipEntry
  *
  * @author Benjamin Renaud
  * @since 1.2
@@ -300,7 +300,7 @@ public abstract class JarURLConnection extends URLConnection {
      *
      * @see #getJarEntry
      */
-    public java.security.cert.Certificate[] getCertificates()
+    public j86.j86.java.security.cert.Certificate[] getCertificates()
          throws IOException
     {
         JarEntry e = getJarEntry();

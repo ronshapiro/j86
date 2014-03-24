@@ -23,16 +23,16 @@
  * questions.
  */
 
-package com.sun.jmx.snmp;
+package j86.com.sun.jmx.snmp;
 
-import com.sun.jmx.snmp.SnmpSecurityParameters;
+import j86.com.sun.jmx.snmp.SnmpSecurityParameters;
 // java imports
 //
-import java.util.Vector;
-import java.net.InetAddress;
+import j86.java.util.Vector;
+import j86.java.net.InetAddress;
 
 
-import com.sun.jmx.snmp.SnmpStatusException;
+import j86.com.sun.jmx.snmp.SnmpStatusException;
 /**
  * A partially decoded representation of an SNMP packet. It contains
  * the information contained in any SNMP message (SNMPv1, SNMPv2 or

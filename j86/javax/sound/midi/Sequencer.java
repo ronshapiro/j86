@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.sound.midi;
+package j86.javax.sound.midi;
 
-import java.io.InputStream;
-import java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
 
 
 /**

@@ -27,26 +27,26 @@
  * @author Charlton Innovations, Inc.
  */
 
-package sun.java2d.loops;
+package j86.j86.sun.java2d.loops;
 
-import java.awt.image.BufferedImage;
-import java.awt.AlphaComposite;
-import java.awt.Rectangle;
-import sun.awt.image.BufImgSurfaceData;
-import sun.java2d.SurfaceData;
-import sun.java2d.pipe.Region;
-import java.lang.reflect.Field;
-import java.util.StringTokenizer;
-import java.util.Iterator;
-import java.util.HashMap;
-import java.util.Map;
-import java.io.PrintStream;
-import java.io.OutputStream;
-import java.io.FileOutputStream;
-import java.io.FileNotFoundException;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import sun.security.action.GetPropertyAction;
+import j86.j86.j86.java.awt.image.BufferedImage;
+import j86.java.awt.AlphaComposite;
+import j86.java.awt.Rectangle;
+import j86.j86.j86.sun.awt.image.BufImgSurfaceData;
+import j86.sun.java2d.SurfaceData;
+import j86.j86.sun.java2d.pipe.Region;
+import j86.j86.j86.java.lang.reflect.Field;
+import j86.java.util.StringTokenizer;
+import j86.java.util.Iterator;
+import j86.java.util.HashMap;
+import j86.java.util.Map;
+import j86.java.io.PrintStream;
+import j86.java.io.OutputStream;
+import j86.java.io.FileOutputStream;
+import j86.java.io.FileNotFoundException;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.sun.security.action.GetPropertyAction;
 
 /**
  * defines interface for primitives which can be placed into
@@ -327,7 +327,7 @@ public abstract class GraphicsPrimitive {
     public static final int TRACECOUNTS = 4;
 
     static {
-        GetPropertyAction gpa = new GetPropertyAction("sun.java2d.trace");
+        GetPropertyAction gpa = new GetPropertyAction("j86.sun.java2d.trace");
         String trace = AccessController.doPrivileged(gpa);
         if (trace != null) {
             boolean verbose = false;
@@ -349,7 +349,7 @@ public abstract class GraphicsPrimitive {
                     if (!tok.equalsIgnoreCase("help")) {
                         System.err.println("unrecognized token: "+tok);
                     }
-                    System.err.println("usage: -Dsun.java2d.trace="+
+                    System.err.println("usage: -Dj86.sun.java2d.trace="+
                                        "[log[,timestamp]],[count],"+
                                        "[out:<filename>],[help],[verbose]");
                 }

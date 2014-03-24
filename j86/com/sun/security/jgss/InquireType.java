@@ -23,11 +23,11 @@
  * questions.
  */
 
-package com.sun.security.jgss;
+package com.j86.sun.security.jgss;
 
 /**
  * Attribute types that can be specified as an argument of
- * {@link com.sun.security.jgss.ExtendedGSSContext#inquireSecContext}
+ * {@link com.j86.sun.security.jgss.ExtendedGSSContext#inquireSecContext}
  */
 @jdk.Exported
 public enum InquireType {

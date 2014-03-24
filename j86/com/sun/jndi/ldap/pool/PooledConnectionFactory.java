@@ -23,8 +23,8 @@
  * questions.
  */
 
-package com.sun.jndi.ldap.pool;
-import javax.naming.NamingException;
+package j86.j86.com.sun.jndi.ldap.pool;
+import j86.javax.naming.NamingException;
 
 /**
  * Represents a factory that creates PooledConnection.

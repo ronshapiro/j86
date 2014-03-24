@@ -22,14 +22,14 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.media.sound;
+package j86.com.sun.media.sound;
 
-import java.io.IOException;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
+import j86.java.io.IOException;
+import j86.java.util.Arrays;
+import j86.java.util.HashMap;
+import j86.java.util.Map;
 
-import javax.sound.midi.VoiceStatus;
+import j86.javax.sound.midi.VoiceStatus;
 
 /**
  * Software synthesizer voice class.

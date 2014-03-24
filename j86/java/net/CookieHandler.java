@@ -23,12 +23,12 @@
  * questions.
  */
 
-package java.net;
+package j86.java.net;
 
-import java.util.Map;
-import java.util.List;
-import java.io.IOException;
-import sun.security.util.SecurityConstants;
+import j86.java.util.Map;
+import j86.java.util.List;
+import j86.java.io.IOException;
+import j86.sun.security.util.SecurityConstants;
 
 /**
  * A CookieHandler object provides a callback mechanism to hook up a

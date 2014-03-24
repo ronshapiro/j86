@@ -23,17 +23,17 @@
  * questions.
  */
 
-package com.sun.java.swing.plaf.windows;
+package j86.j86.com.sun.java.swing.plaf.windows;
 
-import java.awt.Color;
-import java.awt.Graphics;
-import java.awt.Rectangle;
-import java.awt.Shape;
-import javax.swing.plaf.basic.*;
-import javax.swing.*;
-import javax.swing.plaf.TextUI;
-import javax.swing.plaf.UIResource;
-import javax.swing.text.*;
+import j86.java.awt.Color;
+import j86.java.awt.Graphics;
+import j86.java.awt.Rectangle;
+import j86.java.awt.Shape;
+import j86.j86.j86.javax.swing.plaf.basic.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.plaf.TextUI;
+import j86.j86.javax.swing.plaf.UIResource;
+import j86.j86.javax.swing.text.*;
 
 /**
  * Windows text rendering.

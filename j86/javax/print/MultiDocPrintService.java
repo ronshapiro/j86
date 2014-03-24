@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.print;
+package j86.javax.print;
 
 
  /** Interface MultiPrintService is the factory for a MultiDocPrintJob.

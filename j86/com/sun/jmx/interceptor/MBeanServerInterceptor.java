@@ -23,17 +23,17 @@
  * questions.
  */
 
-package com.sun.jmx.interceptor;
+package j86.com.sun.jmx.interceptor;
 
 
-import java.io.ObjectInputStream;
-import javax.management.InstanceNotFoundException;
-import javax.management.MBeanException;
-import javax.management.MBeanServer;
-import javax.management.ObjectName;
-import javax.management.OperationsException;
-import javax.management.ReflectionException;
-import javax.management.loading.ClassLoaderRepository;
+import j86.java.io.ObjectInputStream;
+import j86.javax.management.InstanceNotFoundException;
+import j86.javax.management.MBeanException;
+import j86.javax.management.MBeanServer;
+import j86.javax.management.ObjectName;
+import j86.javax.management.OperationsException;
+import j86.javax.management.ReflectionException;
+import j86.j86.javax.management.loading.ClassLoaderRepository;
 
 /**
  * <p>This interface specifies the behavior to be implemented by an
@@ -42,7 +42,7 @@ import javax.management.loading.ClassLoaderRepository;
  * forwards received requests to its default interceptor, which may
  * handle them itself or forward them to other interceptors.  The
  * default interceptor may be changed via the {@link
- * com.sun.jmx.mbeanserver.SunJmxMBeanServer#setMBeanServerInterceptor}
+ * j86.com.sun.jmx.mbeanserver.SunJmxMBeanServer#setMBeanServerInterceptor}
  * method.</p>
  *
  * <p>The initial default interceptor provides the standard MBean

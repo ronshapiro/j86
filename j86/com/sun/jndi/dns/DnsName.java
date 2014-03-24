@@ -23,14 +23,14 @@
  * questions.
  */
 
-package com.sun.jndi.dns;
+package j86.com.sun.jndi.dns;
 
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.Enumeration;
+import j86.java.util.ArrayList;
+import j86.java.util.Comparator;
+import j86.java.util.Enumeration;
 
-import javax.naming.*;
+import j86.javax.naming.*;
 
 
 /**
@@ -248,7 +248,7 @@ public final class DnsName implements Name {
                 if (pos < size()) {
                     return get(pos++);
                 }
-                throw new java.util.NoSuchElementException();
+                throw new j86.java.util.NoSuchElementException();
             }
         };
     }
@@ -582,18 +582,18 @@ public final class DnsName implements Name {
      *
      * @serialdata      The domain name string.
      */
-    private void writeObject(java.io.ObjectOutputStream s)
-            throws java.io.IOException {
+    private void writeObject(j86.java.io.ObjectOutputStream s)
+            throws j86.java.io.IOException {
         s.writeObject(toString());
     }
 
-    private void readObject(java.io.ObjectInputStream s)
-            throws java.io.IOException, ClassNotFoundException {
+    private void readObject(j86.java.io.ObjectInputStream s)
+            throws j86.java.io.IOException, ClassNotFoundException {
         try {
             parse((String) s.readObject());
         } catch (InvalidNameException e) {
             // shouldn't happen
-            throw new java.io.StreamCorruptedException(
+            throw new j86.java.io.StreamCorruptedException(
                     "Invalid name: " + domain);
         }
     }

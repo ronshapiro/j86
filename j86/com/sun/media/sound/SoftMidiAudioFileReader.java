@@ -22,28 +22,28 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.media.sound;
+package j86.com.sun.media.sound;
 
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.URL;
+import j86.java.io.File;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.net.URL;
 
-import javax.sound.midi.InvalidMidiDataException;
-import javax.sound.midi.MetaMessage;
-import javax.sound.midi.MidiEvent;
-import javax.sound.midi.MidiMessage;
-import javax.sound.midi.MidiSystem;
-import javax.sound.midi.MidiUnavailableException;
-import javax.sound.midi.Receiver;
-import javax.sound.midi.Sequence;
-import javax.sound.midi.Track;
-import javax.sound.sampled.AudioFileFormat;
-import javax.sound.sampled.AudioFormat;
-import javax.sound.sampled.AudioInputStream;
-import javax.sound.sampled.UnsupportedAudioFileException;
-import javax.sound.sampled.AudioFileFormat.Type;
-import javax.sound.sampled.spi.AudioFileReader;
+import j86.javax.sound.midi.InvalidMidiDataException;
+import j86.javax.sound.midi.MetaMessage;
+import j86.javax.sound.midi.MidiEvent;
+import j86.javax.sound.midi.MidiMessage;
+import j86.javax.sound.midi.MidiSystem;
+import j86.javax.sound.midi.MidiUnavailableException;
+import j86.javax.sound.midi.Receiver;
+import j86.javax.sound.midi.Sequence;
+import j86.javax.sound.midi.Track;
+import j86.javax.sound.sampled.AudioFileFormat;
+import j86.javax.sound.sampled.AudioFormat;
+import j86.javax.sound.sampled.AudioInputStream;
+import j86.javax.sound.sampled.UnsupportedAudioFileException;
+import j86.javax.sound.sampled.AudioFileFormat.Type;
+import j86.j86.javax.sound.sampled.spi.AudioFileReader;
 
 /**
  * MIDI File Audio Renderer/Reader

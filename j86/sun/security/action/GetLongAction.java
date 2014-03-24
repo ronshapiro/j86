@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.security.action;
+package j86.sun.security.action;
 
 /**
  * A convenience class for retrieving the <code>Long</code> value of a system
@@ -39,8 +39,8 @@ package sun.security.action;
  * <code>null</code>: <p>
  *
  * <pre>
- * Long tmp = java.security.AccessController.doPrivileged
- *     (new sun.security.action.GetLongAction("prop"));
+ * Long tmp = j86.java.security.AccessController.doPrivileged
+ *     (new j86.sun.security.action.GetLongAction("prop"));
  * long l;
  * if (tmp != null) {
  *     l = tmp.longValue();
@@ -53,17 +53,17 @@ package sun.security.action;
  * defined: <p>
  *
  * <pre>
- * long l = java.security.AccessController.doPrivileged
+ * long l = j86.java.security.AccessController.doPrivileged
  *      (new GetLongAction("prop")).longValue();
  * </pre>
  *
  * @author Roland Schemers
- * @see java.security.PrivilegedAction
- * @see java.security.AccessController
+ * @see j86.java.security.PrivilegedAction
+ * @see j86.java.security.AccessController
  * @since 1.2
  */
 
-public class GetLongAction implements java.security.PrivilegedAction<Long> {
+public class GetLongAction implements j86.java.security.PrivilegedAction<Long> {
     private String theProp;
     private long defaultVal;
     private boolean defaultSet = false;

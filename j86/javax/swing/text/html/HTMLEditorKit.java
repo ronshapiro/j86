@@ -22,24 +22,24 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text.html;
+package j86.j86.j86.javax.swing.text.html;
 
-import sun.awt.AppContext;
+import j86.sun.awt.AppContext;
 
-import java.lang.reflect.Method;
-import java.awt.*;
-import java.awt.event.*;
-import java.io.*;
-import java.net.MalformedURLException;
-import java.net.URL;
-import javax.swing.text.*;
-import javax.swing.*;
-import javax.swing.border.*;
-import javax.swing.event.*;
-import javax.swing.plaf.TextUI;
-import java.util.*;
-import javax.accessibility.*;
-import java.lang.ref.*;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.java.io.*;
+import j86.java.net.MalformedURLException;
+import j86.java.net.URL;
+import j86.j86.javax.swing.text.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.border.*;
+import j86.j86.javax.swing.event.*;
+import j86.j86.javax.swing.plaf.TextUI;
+import j86.java.util.*;
+import j86.javax.accessibility.*;
+import j86.j86.java.lang.ref.*;
 
 /**
  * The Swing JEditorPane text component supports different kinds
@@ -590,7 +590,7 @@ public class HTMLEditorKit extends StyledEditorKit implements Accessible {
     protected Parser getParser() {
         if (defaultParser == null) {
             try {
-                Class c = Class.forName("javax.swing.text.html.parser.ParserDelegator");
+                Class c = Class.forName("j86.j86.j86.j86.javax.swing.text.html.parser.ParserDelegator");
                 defaultParser = (Parser) c.newInstance();
             } catch (Throwable e) {
             }
@@ -985,7 +985,7 @@ public class HTMLEditorKit extends StyledEditorKit implements Accessible {
      * information on the contents of the AttributeSets, the positions, and
      * other info.
      *
-     * @see javax.swing.text.html.parser.DocumentParser
+     * @see j86.j86.j86.j86.javax.swing.text.html.parser.DocumentParser
      */
     public static class ParserCallback {
         /**
@@ -1042,23 +1042,23 @@ public class HTMLEditorKit extends StyledEditorKit implements Accessible {
      * </tr><tr>
      * <td>HTML.Tag.CONTENT<td>InlineView
      * </tr><tr>
-     * <td>HTML.Tag.IMPLIED<td>javax.swing.text.html.ParagraphView
+     * <td>HTML.Tag.IMPLIED<td>j86.j86.j86.javax.swing.text.html.ParagraphView
      * </tr><tr>
-     * <td>HTML.Tag.P<td>javax.swing.text.html.ParagraphView
+     * <td>HTML.Tag.P<td>j86.j86.j86.javax.swing.text.html.ParagraphView
      * </tr><tr>
-     * <td>HTML.Tag.H1<td>javax.swing.text.html.ParagraphView
+     * <td>HTML.Tag.H1<td>j86.j86.j86.javax.swing.text.html.ParagraphView
      * </tr><tr>
-     * <td>HTML.Tag.H2<td>javax.swing.text.html.ParagraphView
+     * <td>HTML.Tag.H2<td>j86.j86.j86.javax.swing.text.html.ParagraphView
      * </tr><tr>
-     * <td>HTML.Tag.H3<td>javax.swing.text.html.ParagraphView
+     * <td>HTML.Tag.H3<td>j86.j86.j86.javax.swing.text.html.ParagraphView
      * </tr><tr>
-     * <td>HTML.Tag.H4<td>javax.swing.text.html.ParagraphView
+     * <td>HTML.Tag.H4<td>j86.j86.j86.javax.swing.text.html.ParagraphView
      * </tr><tr>
-     * <td>HTML.Tag.H5<td>javax.swing.text.html.ParagraphView
+     * <td>HTML.Tag.H5<td>j86.j86.j86.javax.swing.text.html.ParagraphView
      * </tr><tr>
-     * <td>HTML.Tag.H6<td>javax.swing.text.html.ParagraphView
+     * <td>HTML.Tag.H6<td>j86.j86.j86.javax.swing.text.html.ParagraphView
      * </tr><tr>
-     * <td>HTML.Tag.DT<td>javax.swing.text.html.ParagraphView
+     * <td>HTML.Tag.DT<td>j86.j86.j86.javax.swing.text.html.ParagraphView
      * </tr><tr>
      * <td>HTML.Tag.MENU<td>ListView
      * </tr><tr>
@@ -1096,7 +1096,7 @@ public class HTMLEditorKit extends StyledEditorKit implements Accessible {
      * </tr><tr>
      * <td>HTML.Tag.BR<td>BRView
      * </tr><tr>
-     * <td>HTML.Tag.TABLE<td>javax.swing.text.html.TableView
+     * <td>HTML.Tag.TABLE<td>j86.j86.j86.javax.swing.text.html.TableView
      * </tr><tr>
      * <td>HTML.Tag.INPUT<td>FormView
      * </tr><tr>
@@ -1136,7 +1136,7 @@ public class HTMLEditorKit extends StyledEditorKit implements Accessible {
                     if ((ws != null) && ws.equals("pre")) {
                         return new LineView(elem);
                     }
-                    return new javax.swing.text.html.ParagraphView(elem);
+                    return new j86.j86.j86.javax.swing.text.html.ParagraphView(elem);
                 } else if ((kind == HTML.Tag.P) ||
                            (kind == HTML.Tag.H1) ||
                            (kind == HTML.Tag.H2) ||
@@ -1146,7 +1146,7 @@ public class HTMLEditorKit extends StyledEditorKit implements Accessible {
                            (kind == HTML.Tag.H6) ||
                            (kind == HTML.Tag.DT)) {
                     // paragraph
-                    return new javax.swing.text.html.ParagraphView(elem);
+                    return new j86.j86.j86.javax.swing.text.html.ParagraphView(elem);
                 } else if ((kind == HTML.Tag.MENU) ||
                            (kind == HTML.Tag.DIR) ||
                            (kind == HTML.Tag.UL)   ||
@@ -1177,7 +1177,7 @@ public class HTMLEditorKit extends StyledEditorKit implements Accessible {
                 } else if (kind == HTML.Tag.BR) {
                     return new BRView(elem);
                 } else if (kind == HTML.Tag.TABLE) {
-                    return new javax.swing.text.html.TableView(elem);
+                    return new j86.j86.j86.javax.swing.text.html.TableView(elem);
                 } else if ((kind == HTML.Tag.INPUT) ||
                            (kind == HTML.Tag.SELECT) ||
                            (kind == HTML.Tag.TEXTAREA)) {
@@ -1276,9 +1276,9 @@ public class HTMLEditorKit extends StyledEditorKit implements Accessible {
                 Container container = getContainer();
                 Container parentContainer;
                 if (container != null
-                    && (container instanceof javax.swing.JEditorPane)
+                    && (container instanceof j86.javax.swing.JEditorPane)
                     && (parentContainer = container.getParent()) != null
-                    && (parentContainer instanceof javax.swing.JViewport)) {
+                    && (parentContainer instanceof j86.javax.swing.JViewport)) {
                     JViewport viewPort = (JViewport)parentContainer;
                     if (cachedViewPort != null) {
                         JViewport cachedObject = cachedViewPort.get();
@@ -1874,7 +1874,7 @@ public class HTMLEditorKit extends StyledEditorKit implements Accessible {
     /*
      * Action to move the focus on the next or previous hypertext link
      * or object. TODO: This method relies on support from the
-     * javax.accessibility package.  The text package should support
+     * j86.javax.accessibility package.  The text package should support
      * keyboard navigation of text elements directly.
      */
     static class NavigateLinkAction extends TextAction implements CaretListener {
@@ -2083,7 +2083,7 @@ public class HTMLEditorKit extends StyledEditorKit implements Accessible {
     /*
      * Action to activate the hypertext link that has focus.
      * TODO: This method relies on support from the
-     * javax.accessibility package.  The text package should support
+     * j86.javax.accessibility package.  The text package should support
      * keyboard navigation of text elements directly.
      */
     static class ActivateLinkAction extends TextAction {

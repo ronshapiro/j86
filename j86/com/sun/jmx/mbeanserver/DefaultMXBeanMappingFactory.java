@@ -23,65 +23,65 @@
  * questions.
  */
 
-package com.sun.jmx.mbeanserver;
+package j86.com.sun.jmx.mbeanserver;
 
-import static com.sun.jmx.mbeanserver.Util.*;
-import static com.sun.jmx.mbeanserver.MXBeanIntrospector.typeName;
+import static j86.com.sun.jmx.mbeanserver.Util.*;
+import static j86.com.sun.jmx.mbeanserver.MXBeanIntrospector.typeName;
 
-import static javax.management.openmbean.SimpleType.*;
+import static j86.j86.javax.management.openmbean.SimpleType.*;
 
-import com.sun.jmx.remote.util.EnvHelp;
+import j86.com.sun.jmx.remote.util.EnvHelp;
 
-import java.io.InvalidObjectException;
-import java.lang.annotation.Annotation;
-import java.lang.annotation.ElementType;
-import java.lang.ref.WeakReference;
-import java.lang.reflect.Array;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Field;
-import java.lang.reflect.GenericArrayType;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.lang.reflect.Modifier;
-import java.lang.reflect.ParameterizedType;
-import java.lang.reflect.Proxy;
-import java.lang.reflect.Type;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.BitSet;
-import java.util.Collection;
-import java.util.Comparator;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.util.SortedMap;
-import java.util.SortedSet;
-import java.util.TreeSet;
-import java.util.WeakHashMap;
+import j86.java.io.InvalidObjectException;
+import j86.j86.java.lang.annotation.Annotation;
+import j86.j86.java.lang.annotation.ElementType;
+import j86.j86.java.lang.ref.WeakReference;
+import j86.j86.j86.java.lang.reflect.Array;
+import j86.j86.j86.java.lang.reflect.Constructor;
+import j86.j86.j86.java.lang.reflect.Field;
+import j86.j86.j86.java.lang.reflect.GenericArrayType;
+import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.j86.j86.java.lang.reflect.Method;
+import j86.j86.j86.java.lang.reflect.Modifier;
+import j86.j86.j86.java.lang.reflect.ParameterizedType;
+import j86.j86.j86.java.lang.reflect.Proxy;
+import j86.j86.j86.java.lang.reflect.Type;
+import j86.java.util.ArrayList;
+import j86.java.util.Arrays;
+import j86.java.util.BitSet;
+import j86.java.util.Collection;
+import j86.java.util.Comparator;
+import j86.java.util.HashSet;
+import j86.java.util.List;
+import j86.java.util.Map;
+import j86.java.util.Set;
+import j86.java.util.SortedMap;
+import j86.java.util.SortedSet;
+import j86.java.util.TreeSet;
+import j86.java.util.WeakHashMap;
 
-import javax.management.JMX;
-import javax.management.ObjectName;
-import javax.management.openmbean.ArrayType;
-import javax.management.openmbean.CompositeData;
-import javax.management.openmbean.CompositeDataInvocationHandler;
-import javax.management.openmbean.CompositeDataSupport;
-import javax.management.openmbean.CompositeDataView;
-import javax.management.openmbean.CompositeType;
-import javax.management.openmbean.OpenDataException;
-import javax.management.openmbean.OpenType;
-import javax.management.openmbean.SimpleType;
-import javax.management.openmbean.TabularData;
-import javax.management.openmbean.TabularDataSupport;
-import javax.management.openmbean.TabularType;
-import sun.reflect.misc.MethodUtil;
-import sun.reflect.misc.ReflectUtil;
+import j86.javax.management.JMX;
+import j86.javax.management.ObjectName;
+import j86.j86.javax.management.openmbean.ArrayType;
+import j86.j86.javax.management.openmbean.CompositeData;
+import j86.j86.javax.management.openmbean.CompositeDataInvocationHandler;
+import j86.j86.javax.management.openmbean.CompositeDataSupport;
+import j86.j86.javax.management.openmbean.CompositeDataView;
+import j86.j86.javax.management.openmbean.CompositeType;
+import j86.j86.javax.management.openmbean.OpenDataException;
+import j86.j86.javax.management.openmbean.OpenType;
+import j86.j86.javax.management.openmbean.SimpleType;
+import j86.j86.javax.management.openmbean.TabularData;
+import j86.j86.javax.management.openmbean.TabularDataSupport;
+import j86.j86.javax.management.openmbean.TabularType;
+import j86.j86.sun.reflect.misc.MethodUtil;
+import j86.j86.sun.reflect.misc.ReflectUtil;
 
 /**
  *   <p>A converter between Java types and the limited set of classes
  *   defined by Open MBeans.</p>
  *
- *   <p>A Java type is an instance of java.lang.reflect.Type.  For our
+ *   <p>A Java type is an instance of j86.j86.j86.java.lang.reflect.Type.  For our
  *   purposes, it is either a Class, such as String.class or int.class;
  *   or a ParameterizedType, such as List<String> or Map<Integer,
  *   String[]>.  On J2SE 1.4 and earlier, it can only be a Class.</p>
@@ -209,7 +209,7 @@ public class DefaultMXBeanMappingFactory extends MXBeanMappingFactory {
             final MXBeanMapping mapping = new IdentityMapping(c, t);
             putPermanentMapping(c, mapping);
 
-            if (c.getName().startsWith("java.lang.")) {
+            if (c.getName().startsWith("j86.java.lang.")) {
                 try {
                     final Field typeField = c.getField("TYPE");
                     final Class<?> primitiveType = (Class<?>) typeField.get(null);
@@ -423,7 +423,7 @@ public class DefaultMXBeanMappingFactory extends MXBeanMappingFactory {
         // shouldn't count its CompositeData.getCompositeType() field as
         // an item in the computed CompositeType.
         final boolean gcInfoHack =
-            (c.getName().equals("com.sun.management.GcInfo") &&
+            (c.getName().equals("com.j86.sun.management.GcInfo") &&
                 c.getClassLoader() == null);
 
         ReflectUtil.checkPackageAccess(c);
@@ -1147,11 +1147,11 @@ public class DefaultMXBeanMappingFactory extends MXBeanMappingFactory {
             private static void findConstructorPropertiesClass() {
                 try {
                     constructorPropertiesClass = (Class<? extends Annotation>)
-                        Class.forName("java.beans.ConstructorProperties", false,
+                        Class.forName("j86.java.beans.ConstructorProperties", false,
                                       DefaultMXBeanMappingFactory.class.getClassLoader());
                     valueMethod = constructorPropertiesClass.getMethod("value");
                 } catch (ClassNotFoundException cnf) {
-                    // java.beans not present
+                    // j86.java.beans not present
                 } catch (NoSuchMethodException e) {
                     // should not reach here
                     throw new InternalError(e);
@@ -1418,7 +1418,7 @@ public class DefaultMXBeanMappingFactory extends MXBeanMappingFactory {
                 newSet(Arrays.asList(targetClass.getMethods()));
             methods.removeAll(Arrays.asList(getters));
             /* If the interface has any methods left over, they better be
-             * public methods that are already present in java.lang.Object.
+             * public methods that are already present in j86.java.lang.Object.
              */
             String bad = null;
             for (Method m : methods) {
@@ -1508,7 +1508,7 @@ public class DefaultMXBeanMappingFactory extends MXBeanMappingFactory {
     }
 
     /**
-     * Reverse operation for java.beans.Introspector.decapitalize.  For any s,
+     * Reverse operation for j86.java.beans.Introspector.decapitalize.  For any s,
      * capitalize(decapitalize(s)).equals(s).  The reverse is not true:
      * e.g. capitalize("uRL") produces "URL" which is unchanged by
      * decapitalize.

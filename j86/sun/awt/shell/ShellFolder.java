@@ -23,15 +23,15 @@
  * questions.
  */
 
-package sun.awt.shell;
+package j86.j86.sun.awt.shell;
 
-import javax.swing.*;
-import java.awt.Image;
-import java.awt.Toolkit;
-import java.io.*;
-import java.io.FileNotFoundException;
-import java.util.*;
-import java.util.concurrent.Callable;
+import j86.javax.swing.*;
+import j86.java.awt.Image;
+import j86.java.awt.Toolkit;
+import j86.java.io.*;
+import j86.java.io.FileNotFoundException;
+import j86.java.util.*;
+import j86.j86.java.util.concurrent.Callable;
 
 /**
  * @author Michael Martak
@@ -64,13 +64,13 @@ public abstract class ShellFolder extends File {
      * This method must be implemented to make sure that no instances
      * of <code>ShellFolder</code> are ever serialized. If <code>isFileSystem()</code> returns
      * <code>true</code>, then the object should be representable with an instance of
-     * <code>java.io.File</code> instead. If not, then the object is most likely
+     * <code>j86.java.io.File</code> instead. If not, then the object is most likely
      * depending on some internal (native) state and cannot be serialized.
      *
-     * @returns a <code>java.io.File</code> replacement object, or <code>null</code>
+     * @returns a <code>j86.java.io.File</code> replacement object, or <code>null</code>
      * if no suitable replacement can be found.
      */
-    protected abstract Object writeReplace() throws java.io.ObjectStreamException;
+    protected abstract Object writeReplace() throws j86.java.io.ObjectStreamException;
 
     /**
      * Returns the path for this object's parent,
@@ -81,7 +81,7 @@ public abstract class ShellFolder extends File {
      * or <code>null</code> if this object does not name a parent
      * folder
      *
-     * @see java.io.File#getParent()
+     * @see j86.java.io.File#getParent()
      * @since 1.4
      */
     public String getParent() {
@@ -104,7 +104,7 @@ public abstract class ShellFolder extends File {
      * or <code>null</code> if this object does not name a parent
      * folder
      *
-     * @see java.io.File#getParentFile()
+     * @see j86.java.io.File#getParentFile()
      * @since 1.4
      */
     public File getParentFile() {

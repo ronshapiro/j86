@@ -22,17 +22,17 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing;
+package j86.javax.swing;
 
-import javax.swing.text.*;
-import javax.swing.plaf.*;
-import javax.accessibility.*;
+import j86.j86.javax.swing.text.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.javax.accessibility.*;
 
-import java.io.ObjectOutputStream;
-import java.io.ObjectInputStream;
-import java.io.IOException;
-import java.io.*;
-import java.util.Arrays;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.IOException;
+import j86.java.io.*;
+import j86.java.util.Arrays;
 
 /**
  * <code>JPasswordField</code> is a lightweight component that allows
@@ -43,7 +43,7 @@ import java.util.Arrays;
  * a section in <em>The Java Tutorial.</em>
  * <p>
  * <code>JPasswordField</code> is intended
- * to be source-compatible with <code>java.awt.TextField</code>
+ * to be source-compatible with <code>j86.java.awt.TextField</code>
  * used with <code>echoChar</code> set.  It is provided separately
  * to make it easier to safely change the UI for the
  * <code>JTextField</code> without affecting password entries.
@@ -65,8 +65,8 @@ import java.util.Arrays;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @beaninfo
  *  attribute: isContainer false
@@ -349,7 +349,7 @@ public class JPasswordField extends JTextField {
     /**
      * This method is a hack to get around the fact that we cannot
      * directly override setUIProperty because part of the inheritance hierarchy
-     * goes outside of the javax.swing package, and therefore calling a package
+     * goes outside of the j86.javax.swing package, and therefore calling a package
      * private method isn't allowed. This method should return true if the property
      * was handled, and false otherwise.
      */
@@ -400,8 +400,8 @@ public class JPasswordField extends JTextField {
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      */
     protected class AccessibleJPasswordField extends AccessibleJTextField {
 
@@ -422,10 +422,10 @@ public class JPasswordField extends JTextField {
          * <code>AccessibleExtendedText</code> interface.
          *
          * @return <code>AccessibleText</code> for the JPasswordField
-         * @see javax.accessibility.AccessibleContext
-         * @see javax.accessibility.AccessibleContext#getAccessibleText
-         * @see javax.accessibility.AccessibleText
-         * @see javax.accessibility.AccessibleExtendedText
+         * @see j86.javax.accessibility.AccessibleContext
+         * @see j86.javax.accessibility.AccessibleContext#getAccessibleText
+         * @see j86.javax.accessibility.AccessibleText
+         * @see j86.javax.accessibility.AccessibleExtendedText
          *
          * @since 1.6
          */
@@ -457,9 +457,9 @@ public class JPasswordField extends JTextField {
          * <code>index</code> are valid.
          * Otherwise, <code>null</code> is returned
          *
-         * @see javax.accessibility.AccessibleText#CHARACTER
-         * @see javax.accessibility.AccessibleText#WORD
-         * @see javax.accessibility.AccessibleText#SENTENCE
+         * @see j86.javax.accessibility.AccessibleText#CHARACTER
+         * @see j86.javax.accessibility.AccessibleText#WORD
+         * @see j86.javax.accessibility.AccessibleText#SENTENCE
          *
          * @since 1.6
          */
@@ -490,9 +490,9 @@ public class JPasswordField extends JTextField {
          * <code>index</code> are valid.
          * Otherwise, <code>null</code> is returned
          *
-         * @see javax.accessibility.AccessibleText#CHARACTER
-         * @see javax.accessibility.AccessibleText#WORD
-         * @see javax.accessibility.AccessibleText#SENTENCE
+         * @see j86.javax.accessibility.AccessibleText#CHARACTER
+         * @see j86.javax.accessibility.AccessibleText#WORD
+         * @see j86.javax.accessibility.AccessibleText#SENTENCE
          *
          * @since 1.6
          */
@@ -517,9 +517,9 @@ public class JPasswordField extends JTextField {
          * <code>index</code> are valid.
          * Otherwise, <code>null</code> is returned
          *
-         * @see javax.accessibility.AccessibleText#CHARACTER
-         * @see javax.accessibility.AccessibleText#WORD
-         * @see javax.accessibility.AccessibleText#SENTENCE
+         * @see j86.javax.accessibility.AccessibleText#CHARACTER
+         * @see j86.javax.accessibility.AccessibleText#WORD
+         * @see j86.javax.accessibility.AccessibleText#SENTENCE
          *
          * @since 1.6
          */
@@ -562,11 +562,11 @@ public class JPasswordField extends JTextField {
          * <code>part</code> and <code>index</code> are valid.  Otherwise,
          * <code>null</code> is returned
          *
-         * @see javax.accessibility.AccessibleText#CHARACTER
-         * @see javax.accessibility.AccessibleText#WORD
-         * @see javax.accessibility.AccessibleText#SENTENCE
-         * @see javax.accessibility.AccessibleExtendedText#LINE
-         * @see javax.accessibility.AccessibleExtendedText#ATTRIBUTE_RUN
+         * @see j86.javax.accessibility.AccessibleText#CHARACTER
+         * @see j86.javax.accessibility.AccessibleText#WORD
+         * @see j86.javax.accessibility.AccessibleText#SENTENCE
+         * @see j86.javax.accessibility.AccessibleExtendedText#LINE
+         * @see j86.javax.accessibility.AccessibleExtendedText#ATTRIBUTE_RUN
          *
          * @since 1.6
          */
@@ -604,11 +604,11 @@ public class JPasswordField extends JTextField {
          * <code>part</code> and <code>index</code> are valid.  Otherwise,
          * <code>null</code> is returned
          *
-         * @see javax.accessibility.AccessibleText#CHARACTER
-         * @see javax.accessibility.AccessibleText#WORD
-         * @see javax.accessibility.AccessibleText#SENTENCE
-         * @see javax.accessibility.AccessibleExtendedText#LINE
-         * @see javax.accessibility.AccessibleExtendedText#ATTRIBUTE_RUN
+         * @see j86.javax.accessibility.AccessibleText#CHARACTER
+         * @see j86.javax.accessibility.AccessibleText#WORD
+         * @see j86.javax.accessibility.AccessibleText#SENTENCE
+         * @see j86.javax.accessibility.AccessibleExtendedText#LINE
+         * @see j86.javax.accessibility.AccessibleExtendedText#ATTRIBUTE_RUN
          *
          * @since 1.6
          */
@@ -639,11 +639,11 @@ public class JPasswordField extends JTextField {
          * <code>part</code> and <code>index</code> are valid.  Otherwise,
          * <code>null</code> is returned
          *
-         * @see javax.accessibility.AccessibleText#CHARACTER
-         * @see javax.accessibility.AccessibleText#WORD
-         * @see javax.accessibility.AccessibleText#SENTENCE
-         * @see javax.accessibility.AccessibleExtendedText#LINE
-         * @see javax.accessibility.AccessibleExtendedText#ATTRIBUTE_RUN
+         * @see j86.javax.accessibility.AccessibleText#CHARACTER
+         * @see j86.javax.accessibility.AccessibleText#WORD
+         * @see j86.javax.accessibility.AccessibleText#SENTENCE
+         * @see j86.javax.accessibility.AccessibleExtendedText#LINE
+         * @see j86.javax.accessibility.AccessibleExtendedText#ATTRIBUTE_RUN
          *
          * @since 1.6
          */

@@ -22,28 +22,28 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing;
+package j86.javax.swing;
 
-import sun.reflect.misc.ReflectUtil;
-import sun.swing.SwingUtilities2;
-import sun.swing.UIAction;
+import j86.j86.sun.reflect.misc.ReflectUtil;
+import j86.sun.swing.SwingUtilities2;
+import j86.sun.swing.UIAction;
 
-import java.applet.*;
+import j86.java.applet.*;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.awt.dnd.DropTarget;
+import j86.java.awt.*;
+import j86.j86.java.awt.event.*;
+import j86.j86.java.awt.dnd.DropTarget;
 
-import java.lang.reflect.*;
+import j86.j86.j86.java.lang.reflect.*;
 
-import javax.accessibility.*;
-import javax.swing.event.MenuDragMouseEvent;
-import javax.swing.plaf.UIResource;
-import javax.swing.text.View;
-import java.security.AccessController;
-import sun.security.action.GetPropertyAction;
+import j86.javax.accessibility.*;
+import j86.j86.javax.swing.event.MenuDragMouseEvent;
+import j86.j86.javax.swing.plaf.UIResource;
+import j86.j86.javax.swing.text.View;
+import j86.java.security.AccessController;
+import j86.sun.security.action.GetPropertyAction;
 
-import sun.awt.AppContext;
+import j86.sun.awt.AppContext;
 
 /**
  * A collection of utility methods for Swing.
@@ -375,8 +375,8 @@ public class SwingUtilities implements SwingConstants
                 if(c instanceof JComponent) {
                     x = c.getX();
                     y = c.getY();
-                } else if(c instanceof java.applet.Applet ||
-                          c instanceof java.awt.Window) {
+                } else if(c instanceof j86.java.applet.Applet ||
+                          c instanceof j86.java.awt.Window) {
                     try {
                         Point pp = c.getLocationOnScreen();
                         x = pp.x;
@@ -393,7 +393,7 @@ public class SwingUtilities implements SwingConstants
                 p.x += x;
                 p.y += y;
 
-                if(c instanceof java.awt.Window || c instanceof java.applet.Applet)
+                if(c instanceof j86.java.awt.Window || c instanceof j86.java.applet.Applet)
                     break;
                 c = c.getParent();
             } while(c != null);
@@ -414,8 +414,8 @@ public class SwingUtilities implements SwingConstants
             if(c instanceof JComponent) {
                 x = c.getX();
                 y = c.getY();
-            }  else if(c instanceof java.applet.Applet ||
-                       c instanceof java.awt.Window) {
+            }  else if(c instanceof j86.java.applet.Applet ||
+                       c instanceof j86.java.awt.Window) {
                 try {
                     Point pp = c.getLocationOnScreen();
                     x = pp.x;
@@ -432,7 +432,7 @@ public class SwingUtilities implements SwingConstants
             p.x -= x;
             p.y -= y;
 
-            if(c instanceof java.awt.Window || c instanceof java.applet.Applet)
+            if(c instanceof j86.java.awt.Window || c instanceof j86.java.applet.Applet)
                 break;
             c = c.getParent();
         } while(c != null);
@@ -1171,7 +1171,7 @@ public class SwingUtilities implements SwingConstants
      * @param h  an int specifying the height of the area draw in, in pixels
      *
      * @see CellRendererPane
-     * @see java.awt.Component#isLightweight
+     * @see j86.java.awt.Component#isLightweight
      */
     public static void paintComponent(Graphics g, Component c, Container p, int x, int y, int w, int h) {
         getCellRendererPane(c, p).paintComponent(g, c, p, x, y, w, h,false);
@@ -1280,7 +1280,7 @@ public class SwingUtilities implements SwingConstants
      * found in
      * <A HREF="http://docs.oracle.com/javase/tutorial/uiswing/concurrency/index.html">Concurrency in Swing</a>.
      * <p>
-     * As of 1.3 this method is just a cover for <code>java.awt.EventQueue.invokeLater()</code>.
+     * As of 1.3 this method is just a cover for <code>j86.java.awt.EventQueue.invokeLater()</code>.
      * <p>
      * Unlike the rest of Swing, this method can be invoked from any thread.
      *
@@ -1332,7 +1332,7 @@ public class SwingUtilities implements SwingConstants
      * <A HREF="http://docs.oracle.com/javase/tutorial/uiswing/concurrency/index.html">Concurrency in Swing</a>.
      * <p>
      * As of 1.3 this method is just a cover for
-     * <code>java.awt.EventQueue.invokeAndWait()</code>.
+     * <code>j86.java.awt.EventQueue.invokeAndWait()</code>.
      *
      * @exception  InterruptedException if we're interrupted while waiting for
      *             the event dispatching thread to finish executing
@@ -1352,7 +1352,7 @@ public class SwingUtilities implements SwingConstants
      * Returns true if the current thread is an AWT event dispatching thread.
      * <p>
      * As of 1.3 this method is just a cover for
-     * <code>java.awt.EventQueue.isDispatchThread()</code>.
+     * <code>j86.java.awt.EventQueue.isDispatchThread()</code>.
      *
      * @return true if the current thread is an AWT event dispatching thread
      */
@@ -1478,7 +1478,7 @@ public class SwingUtilities implements SwingConstants
      *         owner, or if the focus owner is not <code>comp</code>, or a
      *         descendant of <code>comp</code>
      *
-     * @see java.awt.KeyboardFocusManager#getFocusOwner
+     * @see j86.java.awt.KeyboardFocusManager#getFocusOwner
      * @deprecated As of 1.4, replaced by
      *   <code>KeyboardFocusManager.getFocusOwner()</code>.
      */
@@ -1824,7 +1824,7 @@ public class SwingUtilities implements SwingConstants
      * {@code null} owners.
      * @exception HeadlessException if GraphicsEnvironment.isHeadless()
      * returns true.
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      */
     static Frame getSharedOwnerFrame() throws HeadlessException {
         Frame sharedOwnerFrame =
@@ -1842,7 +1842,7 @@ public class SwingUtilities implements SwingConstants
      * if it has no more displayable children.
      * @exception HeadlessException if GraphicsEnvironment.isHeadless()
      * returns true.
-     * @see java.awt.GraphicsEnvironment#isHeadless
+     * @see j86.java.awt.GraphicsEnvironment#isHeadless
      */
     static WindowListener getSharedOwnerFrameShutdownListener() throws HeadlessException {
         Frame sharedOwnerFrame = getSharedOwnerFrame();
@@ -1850,7 +1850,7 @@ public class SwingUtilities implements SwingConstants
     }
 
     /* Don't make these AppContext accessors public or protected --
-     * since AppContext is in sun.awt in 1.2, we shouldn't expose it
+     * since AppContext is in j86.sun.awt in 1.2, we shouldn't expose it
      * even indirectly with a public API.
      */
     // REMIND(aim): phase out use of 4 methods below since they
@@ -2053,8 +2053,8 @@ public class SwingUtilities implements SwingConstants
      * visible. Otherwise this method returns {@code null}.
      *
      * @return the validate root of the given container or null
-     * @see java.awt.Component#isDisplayable()
-     * @see java.awt.Component#isVisible()
+     * @see j86.java.awt.Component#isDisplayable()
+     * @see j86.java.awt.Component#isVisible()
      * @since 1.7
      */
     static Container getValidateRoot(Container c, boolean visibleOnly) {

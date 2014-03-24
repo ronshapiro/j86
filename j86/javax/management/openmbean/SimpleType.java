@@ -24,22 +24,22 @@
  */
 
 
-package javax.management.openmbean;
+package j86.j86.javax.management.openmbean;
 
 
 // java import
 //
-import java.io.InvalidObjectException;
-import java.io.ObjectStreamException;
-import java.math.BigDecimal;
-import java.math.BigInteger;
-import java.util.Date;
-import java.util.Map;
-import java.util.HashMap;
+import j86.java.io.InvalidObjectException;
+import j86.java.io.ObjectStreamException;
+import j86.java.math.BigDecimal;
+import j86.java.math.BigInteger;
+import j86.java.util.Date;
+import j86.java.util.Map;
+import j86.java.util.HashMap;
 
 // jmx import
 //
-import javax.management.ObjectName;
+import j86.javax.management.ObjectName;
 
 
 /**
@@ -67,98 +67,98 @@ public final class SimpleType<T> extends OpenType<T> {
 
     /**
      * The <code>SimpleType</code> instance describing values whose
-     * Java class name is <code>java.lang.Void</code>.
+     * Java class name is <code>j86.java.lang.Void</code>.
      */
     public static final SimpleType<Void> VOID =
         new SimpleType<Void>(Void.class);
 
     /**
      * The <code>SimpleType</code> instance describing values whose
-     * Java class name is <code>java.lang.Boolean</code>.
+     * Java class name is <code>j86.java.lang.Boolean</code>.
      */
     public static final SimpleType<Boolean> BOOLEAN =
         new SimpleType<Boolean>(Boolean.class);
 
     /**
      * The <code>SimpleType</code> instance describing values whose
-     * Java class name is <code>java.lang.Character</code>.
+     * Java class name is <code>j86.java.lang.Character</code>.
      */
     public static final SimpleType<Character> CHARACTER =
         new SimpleType<Character>(Character.class);
 
     /**
      * The <code>SimpleType</code> instance describing values whose
-     * Java class name is <code>java.lang.Byte</code>.
+     * Java class name is <code>j86.java.lang.Byte</code>.
      */
     public static final SimpleType<Byte> BYTE =
         new SimpleType<Byte>(Byte.class);
 
     /**
      * The <code>SimpleType</code> instance describing values whose
-     * Java class name is <code>java.lang.Short</code>.
+     * Java class name is <code>j86.java.lang.Short</code>.
      */
     public static final SimpleType<Short> SHORT =
         new SimpleType<Short>(Short.class);
 
     /**
      * The <code>SimpleType</code> instance describing values whose
-     * Java class name is <code>java.lang.Integer</code>.
+     * Java class name is <code>j86.java.lang.Integer</code>.
      */
     public static final SimpleType<Integer> INTEGER =
         new SimpleType<Integer>(Integer.class);
 
     /**
      * The <code>SimpleType</code> instance describing values whose
-     * Java class name is <code>java.lang.Long</code>.
+     * Java class name is <code>j86.java.lang.Long</code>.
      */
     public static final SimpleType<Long> LONG =
         new SimpleType<Long>(Long.class);
 
     /**
      * The <code>SimpleType</code> instance describing values whose
-     * Java class name is <code>java.lang.Float</code>.
+     * Java class name is <code>j86.java.lang.Float</code>.
      */
     public static final SimpleType<Float> FLOAT =
         new SimpleType<Float>(Float.class);
 
     /**
      * The <code>SimpleType</code> instance describing values whose
-     * Java class name is <code>java.lang.Double</code>.
+     * Java class name is <code>j86.java.lang.Double</code>.
      */
     public static final SimpleType<Double> DOUBLE =
         new SimpleType<Double>(Double.class);
 
     /**
      * The <code>SimpleType</code> instance describing values whose
-     * Java class name is <code>java.lang.String</code>.
+     * Java class name is <code>j86.java.lang.String</code>.
      */
     public static final SimpleType<String> STRING =
         new SimpleType<String>(String.class);
 
     /**
      * The <code>SimpleType</code> instance describing values whose
-     * Java class name is <code>java.math.BigDecimal</code>.
+     * Java class name is <code>j86.java.math.BigDecimal</code>.
      */
     public static final SimpleType<BigDecimal> BIGDECIMAL =
         new SimpleType<BigDecimal>(BigDecimal.class);
 
     /**
      * The <code>SimpleType</code> instance describing values whose
-     * Java class name is <code>java.math.BigInteger</code>.
+     * Java class name is <code>j86.java.math.BigInteger</code>.
      */
     public static final SimpleType<BigInteger> BIGINTEGER =
         new SimpleType<BigInteger>(BigInteger.class);
 
     /**
      * The <code>SimpleType</code> instance describing values whose
-     * Java class name is <code>java.util.Date</code>.
+     * Java class name is <code>j86.java.util.Date</code>.
      */
     public static final SimpleType<Date> DATE =
         new SimpleType<Date>(Date.class);
 
     /**
      * The <code>SimpleType</code> instance describing values whose
-     * Java class name is <code>javax.management.ObjectName</code>.
+     * Java class name is <code>j86.javax.management.ObjectName</code>.
      */
     public static final SimpleType<ObjectName> OBJECTNAME =
         new SimpleType<ObjectName>(ObjectName.class);
@@ -269,7 +269,7 @@ public final class SimpleType<T> extends OpenType<T> {
      * Returns a string representation of this <code>SimpleType</code> instance.
      * <p>
      * The string representation consists of
-     * the name of this class (ie <code>javax.management.openmbean.SimpleType</code>) and the type name
+     * the name of this class (ie <code>j86.j86.javax.management.openmbean.SimpleType</code>) and the type name
      * for this instance (which is the java class name of the values this <code>SimpleType</code> instance represents).
      * <p>
      * As <code>SimpleType</code> instances are immutable, the string representation for this instance is calculated once,
@@ -301,7 +301,7 @@ public final class SimpleType<T> extends OpenType<T> {
 
     /**
      * Replace an object read from an {@link
-     * java.io.ObjectInputStream} with the unique instance for that
+     * j86.java.io.ObjectInputStream} with the unique instance for that
      * value.
      *
      * @return the replacement object.

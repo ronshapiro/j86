@@ -23,19 +23,19 @@
  * questions.
  */
 
-package javax.crypto;
+package j86.javax.crypto;
 
-import java.security.*;
-import java.util.Enumeration;
-import java.util.Vector;
+import j86.java.security.*;
+import j86.java.util.Enumeration;
+import j86.java.util.Vector;
 
 /**
  * The CryptoAllPermission is a permission that implies
  * any other crypto permissions.
  * <p>
  *
- * @see java.security.Permission
- * @see java.security.AllPermission
+ * @see j86.java.security.Permission
+ * @see j86.java.security.AllPermission
  *
  * @author Sharon Liu
  * @since 1.4
@@ -45,7 +45,7 @@ final class CryptoAllPermission extends CryptoPermission {
 
     private static final long serialVersionUID = -5066513634293192112L;
 
-    // This class is similar to java.security.AllPermission.
+    // This class is similar to j86.java.security.AllPermission.
     static final String ALG_NAME = "CryptoAllPermission";
     static final CryptoAllPermission INSTANCE =
         new CryptoAllPermission();
@@ -106,14 +106,14 @@ final class CryptoAllPermission extends CryptoPermission {
  * A CryptoAllPermissionCollection stores a collection
  * of CryptoAllPermission permissions.
  *
- * @see java.security.Permission
- * @see java.security.Permissions
- * @see javax.crypto.CryptoPermission
+ * @see j86.java.security.Permission
+ * @see j86.java.security.Permissions
+ * @see j86.javax.crypto.CryptoPermission
  *
  * @author Sharon Liu
  */
 final class CryptoAllPermissionCollection extends PermissionCollection
-    implements java.io.Serializable
+    implements j86.java.io.Serializable
 {
 
     private static final long serialVersionUID = 7450076868380144072L;

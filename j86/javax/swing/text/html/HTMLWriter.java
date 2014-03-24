@@ -22,17 +22,17 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.text.html;
+package j86.j86.j86.javax.swing.text.html;
 
-import javax.swing.text.*;
-import java.io.Writer;
-import java.util.Stack;
-import java.util.Enumeration;
-import java.util.Vector;
-import java.io.IOException;
-import java.util.StringTokenizer;
-import java.util.NoSuchElementException;
-import java.net.URL;
+import j86.j86.javax.swing.text.*;
+import j86.java.io.Writer;
+import j86.java.util.Stack;
+import j86.java.util.Enumeration;
+import j86.java.util.Vector;
+import j86.java.io.IOException;
+import j86.java.util.StringTokenizer;
+import j86.java.util.NoSuchElementException;
+import j86.java.net.URL;
 
 /**
  * This is a writer for HTMLDocuments.

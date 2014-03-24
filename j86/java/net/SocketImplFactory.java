@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.net;
+package j86.java.net;
 
 /**
  * This interface defines a factory for socket implementations. It
@@ -32,8 +32,8 @@ package java.net;
  * implementations.
  *
  * @author  Arthur van Hoff
- * @see     java.net.Socket
- * @see     java.net.ServerSocket
+ * @see     j86.java.net.Socket
+ * @see     j86.java.net.ServerSocket
  * @since   JDK1.0
  */
 public
@@ -42,7 +42,7 @@ interface SocketImplFactory {
      * Creates a new {@code SocketImpl} instance.
      *
      * @return  a new instance of {@code SocketImpl}.
-     * @see     java.net.SocketImpl
+     * @see     j86.java.net.SocketImpl
      */
     SocketImpl createSocketImpl();
 }

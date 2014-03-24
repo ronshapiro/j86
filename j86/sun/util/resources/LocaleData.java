@@ -38,23 +38,23 @@
  *
  */
 
-package sun.util.resources;
+package j86.j86.sun.util.resources;
 
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Locale;
-import java.util.MissingResourceException;
-import java.util.ResourceBundle;
-import sun.util.locale.provider.LocaleDataMetaInfo;
-import sun.util.locale.provider.LocaleProviderAdapter;
-import static sun.util.locale.provider.LocaleProviderAdapter.Type.JRE;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.java.util.Arrays;
+import j86.java.util.Iterator;
+import j86.java.util.List;
+import j86.java.util.Locale;
+import j86.java.util.MissingResourceException;
+import j86.java.util.ResourceBundle;
+import j86.j86.j86.sun.util.locale.provider.LocaleDataMetaInfo;
+import j86.j86.j86.sun.util.locale.provider.LocaleProviderAdapter;
+import static j86.j86.j86.sun.util.locale.provider.LocaleProviderAdapter.Type.JRE;
 
 /**
  * Provides information about and access to resource bundles in the
- * sun.text.resources and sun.util.resources packages or in their corresponding
+ * j86.j86.sun.text.resources and j86.j86.sun.util.resources packages or in their corresponding
  * packages for CLDR.
  *
  * @author Asmus Freytag
@@ -259,10 +259,10 @@ public class LocaleData {
         /**
          * Changes baseName to its per-language package name and
          * calls the super class implementation. For example,
-         * if the baseName is "sun.text.resources.FormatData" and locale is ja_JP,
-         * the baseName is changed to "sun.text.resources.ja.FormatData". If
-         * baseName contains "cldr", such as "sun.text.resources.cldr.FormatData",
-         * the name is changed to "sun.text.resources.cldr.jp.FormatData".
+         * if the baseName is "j86.j86.sun.text.resources.FormatData" and locale is ja_JP,
+         * the baseName is changed to "j86.j86.j86.sun.text.resources.ja.FormatData". If
+         * baseName contains "cldr", such as "j86.j86.sun.text.resources.cldr.FormatData",
+         * the name is changed to "j86.j86.sun.text.resources.cldr.jp.FormatData".
          */
         @Override
         public String toBundleName(String baseName, Locale locale) {

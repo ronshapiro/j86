@@ -36,11 +36,11 @@
  * are used on runtime instead.
  */
 
-package sun.text.resources.th;
+package j86.j86.j86.sun.text.resources.th;
 
-import java.util.ListResourceBundle;
-import java.util.MissingResourceException;
-import java.net.URL;
+import j86.java.util.ListResourceBundle;
+import j86.java.util.MissingResourceException;
+import j86.java.net.URL;
 
 public class BreakIteratorRules_th extends ListResourceBundle {
     protected final Object[][] getContents() {

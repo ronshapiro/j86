@@ -23,14 +23,14 @@
  * questions.
  */
 
-package java.util;
+package j86.java.util;
 
-import java.io.Serializable;
-import java.util.function.Function;
-import java.util.function.ToIntFunction;
-import java.util.function.ToLongFunction;
-import java.util.function.ToDoubleFunction;
-import java.util.Comparators;
+import j86.java.io.Serializable;
+import j86.j86.java.util.function.Function;
+import j86.j86.java.util.function.ToIntFunction;
+import j86.j86.java.util.function.ToLongFunction;
+import j86.j86.java.util.function.ToDoubleFunction;
+import j86.java.util.Comparators;
 
 /**
  * A comparison function, which imposes a <i>total ordering</i> on some
@@ -67,7 +67,7 @@ import java.util.Comparators;
  * {@link Set#add Set.add} method.<p>
  *
  * Note: It is generally a good idea for comparators to also implement
- * <tt>java.io.Serializable</tt>, as they may be used as ordering methods in
+ * <tt>j86.java.io.Serializable</tt>, as they may be used as ordering methods in
  * serializable data structures (like {@link TreeSet}, {@link TreeMap}).  In
  * order for the data structure to serialize successfully, the comparator (if
  * provided) must implement <tt>Serializable</tt>.<p>
@@ -102,7 +102,7 @@ import java.util.Comparators;
  * @author  Josh Bloch
  * @author  Neal Gafter
  * @see Comparable
- * @see java.io.Serializable
+ * @see j86.java.io.Serializable
  * @since 1.2
  */
 @FunctionalInterface
@@ -438,7 +438,7 @@ public interface Comparator<T> {
     }
 
     /**
-     * Accepts a function that extracts a {@link java.lang.Comparable
+     * Accepts a function that extracts a {@link j86.java.lang.Comparable
      * Comparable} sort key from a type {@code T}, and returns a {@code
      * Comparator<T>} that compares by that sort key.
      *

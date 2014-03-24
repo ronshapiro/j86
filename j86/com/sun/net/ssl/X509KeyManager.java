@@ -24,15 +24,15 @@
  */
 
 /*
- * NOTE:  this file was copied from javax.net.ssl.X509KeyManager
+ * NOTE:  this file was copied from j86.j86.javax.net.ssl.X509KeyManager
  */
 
-package com.sun.net.ssl;
+package com.j86.sun.net.ssl;
 
-import java.security.KeyManagementException;
-import java.security.PrivateKey;
-import java.security.Principal;
-import java.security.cert.X509Certificate;
+import j86.java.security.KeyManagementException;
+import j86.java.security.PrivateKey;
+import j86.java.security.Principal;
+import j86.j86.java.security.cert.X509Certificate;
 
 /**
  * Instances of this interface manage which X509 certificate-based
@@ -40,7 +40,7 @@ import java.security.cert.X509Certificate;
  * socket. The individual entries are identified by unique alias names.
  *
  * @deprecated As of JDK 1.4, this implementation-specific class was
- *      replaced by {@link javax.net.ssl.X509KeyManager}.
+ *      replaced by {@link j86.j86.javax.net.ssl.X509KeyManager}.
  */
 @Deprecated
 public interface X509KeyManager extends KeyManager {

@@ -23,10 +23,10 @@
  * questions.
  */
 
-package com.sun.jmx.mbeanserver;
+package j86.com.sun.jmx.mbeanserver;
 
-import javax.management.MBeanServer;
-import javax.management.MBeanServerDelegate;
+import j86.javax.management.MBeanServer;
+import j86.javax.management.MBeanServerDelegate;
 
 
 /**
@@ -56,7 +56,7 @@ public interface SunJmxMBeanServer
      * @see #getMBeanServerInterceptor
      * @see #setMBeanServerInterceptor
      * @see #getMBeanInstantiator
-     * @see com.sun.jmx.mbeanserver.JmxMBeanServerBuilder
+     * @see j86.com.sun.jmx.mbeanserver.JmxMBeanServerBuilder
      **/
     public boolean interceptorsEnabled();
 

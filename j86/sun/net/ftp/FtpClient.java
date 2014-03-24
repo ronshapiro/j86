@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.net.ftp;
+package j86.j86.sun.net.ftp;
 
-import java.net.*;
-import java.io.*;
-import java.util.Date;
-import java.util.List;
-import java.util.Iterator;
+import j86.java.net.*;
+import j86.java.io.*;
+import j86.java.util.Date;
+import j86.java.util.List;
+import j86.java.util.Iterator;
 
 /**
  * A class that implements the FTP protocol according to
@@ -72,7 +72,7 @@ import java.util.Iterator;
  *
  * @since 1.7
  */
-public abstract class FtpClient implements java.io.Closeable {
+public abstract class FtpClient implements j86.java.io.Closeable {
 
     private static final int FTP_PORT = 21;
 
@@ -116,7 +116,7 @@ public abstract class FtpClient implements java.io.Closeable {
      * @param dest the {@code InetSocketAddress} to connect to.
      * @return The created {@code FtpClient}
      * @throws IOException if the connection fails
-     * @see #connect(java.net.SocketAddress)
+     * @see #connect(j86.java.net.SocketAddress)
      */
     public static FtpClient create(InetSocketAddress dest) throws FtpProtocolException, IOException {
         FtpClient client = create();
@@ -377,7 +377,7 @@ public abstract class FtpClient implements java.io.Closeable {
      * offset.</p>
      *
      * @param name the name of the remote file
-     * @return the {@link java.io.InputStream} from the data connection
+     * @return the {@link j86.java.io.InputStream} from the data connection
      * @throws IOException if an error occurred during the transmission.
      * @throws FtpProtocolException if the command was refused by the server
      * @see #setRestartOffset(long)
@@ -396,7 +396,7 @@ public abstract class FtpClient implements java.io.Closeable {
      * is finished writing to the returned stream.
      *
      * @param name the name of the remote file to write.
-     * @return the {@link java.io.OutputStream} from the data connection or
+     * @return the {@link j86.java.io.OutputStream} from the data connection or
      *         {@code null} if the command was unsuccessful.
      * @throws IOException if an error occurred during the transmission.
      * @throws FtpProtocolException if the command was rejected by the server
@@ -426,7 +426,7 @@ public abstract class FtpClient implements java.io.Closeable {
      * @param name the name of the remote file to write.
      * @param unique {@code true} if the remote files should be unique,
      *        in which case the STOU command will be used.
-     * @return the {@link java.io.OutputStream} from the data connection.
+     * @return the {@link j86.java.io.OutputStream} from the data connection.
      * @throws IOException if an error occurred during the transmission.
      * @throws FtpProtocolException if the command was rejected by the server
      */
@@ -773,10 +773,10 @@ public abstract class FtpClient implements java.io.Closeable {
     /**
      * Issues a {@code MLSD} command to the server to get the specified directory
      * listing and applies the internal parser to create an Iterator of
-     * {@link java.net.FtpDirEntry}. Note that the Iterator returned is also a
-     * {@link java.io.Closeable}.
+     * {@link j86.java.net.FtpDirEntry}. Note that the Iterator returned is also a
+     * {@link j86.java.io.Closeable}.
      * <p>If the server doesn't support the MLSD command, the LIST command is used
-     * instead and the parser set by {@link #setDirParser(java.net.FtpDirParser) }
+     * instead and the parser set by {@link #setDirParser(j86.java.net.FtpDirParser) }
      * is used instead.</p>
      *
      * {@link #completePending()} <b>has</b> to be called once the application
@@ -858,8 +858,8 @@ public abstract class FtpClient implements java.io.Closeable {
      * server, it will also make it so that all other transfers (e.g. a RETR
      * command) will be done over an encrypted channel as well unless a
      * {@link #reInit()} command or a {@link #endSecureSession()} command is issued.
-     * <p>This method should be called after a successful {@link #connect(java.net.InetSocketAddress) }
-     * but before calling {@link #login(java.lang.String, char[]) }.</p>
+     * <p>This method should be called after a successful {@link #connect(j86.java.net.InetSocketAddress) }
+     * but before calling {@link #login(j86.java.lang.String, char[]) }.</p>
      *
      * @return this FtpCLient
      * @throws IOException if an error occurred during the transmission.

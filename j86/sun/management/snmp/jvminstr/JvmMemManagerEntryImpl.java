@@ -22,24 +22,24 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package sun.management.snmp.jvminstr;
+package j86.j86.j86.sun.management.snmp.jvminstr;
 
 // java imports
 //
-import java.io.Serializable;
+import j86.java.io.Serializable;
 
 // jmx imports
 //
-import com.sun.jmx.snmp.SnmpStatusException;
+import j86.com.sun.jmx.snmp.SnmpStatusException;
 
 // jdmk imports
 //
-import com.sun.jmx.snmp.agent.SnmpMib;
+import j86.j86.com.sun.jmx.snmp.agent.SnmpMib;
 
-import java.lang.management.MemoryManagerMXBean;
+import j86.j86.java.lang.management.MemoryManagerMXBean;
 
-import sun.management.snmp.jvmmib.JvmMemManagerEntryMBean;
-import sun.management.snmp.jvmmib.EnumJvmMemManagerState;
+import j86.j86.j86.sun.management.snmp.jvmmib.JvmMemManagerEntryMBean;
+import j86.j86.j86.sun.management.snmp.jvmmib.EnumJvmMemManagerState;
 
 
 /**

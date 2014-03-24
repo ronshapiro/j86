@@ -24,9 +24,9 @@
  */
 
 
-package java.sql;
+package j86.java.sql;
 
-import java.security.*;
+import j86.java.security.*;
 
 /**
  * The permission for which the <code>SecurityManager</code> will check
@@ -40,7 +40,7 @@ import java.security.*;
  * {@code Connection.setNetworktimeout} method,
  * or the <code>Connection.abort</code> method.
  * If there is no <code>SQLPermission</code> object, these methods
- * throw a <code>java.lang.SecurityException</code> as a runtime exception.
+ * throw a <code>j86.java.lang.SecurityException</code> as a runtime exception.
  * <P>
  * A <code>SQLPermission</code> object contains
  * a name (also referred to as a "target name") but no actions
@@ -106,11 +106,11 @@ import java.security.*;
  * </table>
  *<p>
  * @since 1.3
- * @see java.security.BasicPermission
- * @see java.security.Permission
- * @see java.security.Permissions
- * @see java.security.PermissionCollection
- * @see java.lang.SecurityManager
+ * @see j86.java.security.BasicPermission
+ * @see j86.java.security.Permission
+ * @see j86.java.security.Permissions
+ * @see j86.java.security.PermissionCollection
+ * @see j86.java.lang.SecurityManager
  *
  */
 

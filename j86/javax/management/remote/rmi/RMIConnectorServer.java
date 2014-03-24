@@ -23,43 +23,43 @@
  * questions.
  */
 
-package javax.management.remote.rmi;
+package j86.j86.j86.javax.management.remote.rmi;
 
 
-import com.sun.jmx.remote.security.MBeanServerFileAccessController;
-import com.sun.jmx.remote.internal.IIOPHelper;
-import com.sun.jmx.remote.util.ClassLogger;
-import com.sun.jmx.remote.util.EnvHelp;
+import j86.com.sun.jmx.remote.security.MBeanServerFileAccessController;
+import j86.com.sun.jmx.remote.internal.IIOPHelper;
+import j86.com.sun.jmx.remote.util.ClassLogger;
+import j86.com.sun.jmx.remote.util.EnvHelp;
 
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.ObjectOutputStream;
-import java.net.MalformedURLException;
-import java.rmi.server.RMIClientSocketFactory;
-import java.rmi.server.RMIServerSocketFactory;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Hashtable;
-import java.util.Map;
-import java.util.Set;
+import j86.java.io.ByteArrayOutputStream;
+import j86.java.io.IOException;
+import j86.java.io.ObjectOutputStream;
+import j86.java.net.MalformedURLException;
+import j86.j86.java.rmi.server.RMIClientSocketFactory;
+import j86.j86.java.rmi.server.RMIServerSocketFactory;
+import j86.java.util.Collections;
+import j86.java.util.HashMap;
+import j86.java.util.HashSet;
+import j86.java.util.Hashtable;
+import j86.java.util.Map;
+import j86.java.util.Set;
 
-import javax.management.InstanceNotFoundException;
-import javax.management.MBeanServer;
+import j86.javax.management.InstanceNotFoundException;
+import j86.javax.management.MBeanServer;
 
-import javax.management.remote.JMXConnectionNotification;
-import javax.management.remote.JMXConnector;
-import javax.management.remote.JMXConnectorServer;
-import javax.management.remote.JMXServiceURL;
-import javax.management.remote.MBeanServerForwarder;
+import j86.j86.javax.management.remote.JMXConnectionNotification;
+import j86.j86.javax.management.remote.JMXConnector;
+import j86.j86.javax.management.remote.JMXConnectorServer;
+import j86.j86.javax.management.remote.JMXServiceURL;
+import j86.j86.javax.management.remote.MBeanServerForwarder;
 
-import javax.naming.InitialContext;
-import javax.naming.NamingException;
+import j86.javax.naming.InitialContext;
+import j86.javax.naming.NamingException;
 
 /**
  * <p>A JMX API connector server that creates RMI-based connections
  * from remote clients.  Usually, such connector servers are made
- * using {@link javax.management.remote.JMXConnectorServerFactory
+ * using {@link j86.j86.javax.management.remote.JMXConnectorServerFactory
  * JMXConnectorServerFactory}.  However, specialized applications can
  * use this class directly, for example with an {@link RMIServerImpl}
  * object.</p>
@@ -315,7 +315,7 @@ public class RMIConnectorServer extends JMXConnectorServer {
      *
      * <p>If the given address includes a JNDI directory URL as
      * specified in the package documentation for {@link
-     * javax.management.remote.rmi}, then this
+     * j86.j86.j86.javax.management.remote.rmi}, then this
      * <code>RMIConnectorServer</code> will bootstrap by binding the
      * <code>RMIServerImpl</code> to the given address.</p>
      *
@@ -326,7 +326,7 @@ public class RMIConnectorServer extends JMXConnectorServer {
      * address (returned by {@link #getAddress()}).  The encodings for
      * <code>rmi</code> and <code>iiop</code> are described in the
      * package documentation for {@link
-     * javax.management.remote.rmi}.</p>
+     * j86.j86.j86.javax.management.remote.rmi}.</p>
      *
      * <p>The behavior when the URL path is neither empty nor a JNDI
      * directory URL, or when the protocol is neither <code>rmi</code>
@@ -833,7 +833,7 @@ public class RMIConnectorServer extends JMXConnectorServer {
     // -----------------
 
     private static ClassLogger logger =
-        new ClassLogger("javax.management.remote.rmi", "RMIConnectorServer");
+        new ClassLogger("j86.j86.j86.javax.management.remote.rmi", "RMIConnectorServer");
 
     private JMXServiceURL address;
     private RMIServerImpl rmiServerImpl;

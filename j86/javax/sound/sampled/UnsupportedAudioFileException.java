@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.sound.sampled;
+package j86.javax.sound.sampled;
 
 /**
  * An <code>UnsupportedAudioFileException</code> is an exception indicating that an

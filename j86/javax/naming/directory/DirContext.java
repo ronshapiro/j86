@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.naming.directory;
+package j86.j86.javax.naming.directory;
 
-import javax.naming.*;
+import j86.javax.naming.*;
 
 /**
  * The directory service interface, containing
@@ -160,7 +160,7 @@ import javax.naming.*;
  * @author Scott Seligman
  * @author R. Vasudevan
  *
- * @see javax.naming.Context
+ * @see j86.javax.naming.Context
  * @since 1.3
  */
 
@@ -986,7 +986,7 @@ public interface DirContext extends Context {
      * @throws  NamingException if a naming exception is encountered
      *
      * @see #search(Name, Attributes, String[])
-     * @see java.text.MessageFormat
+     * @see j86.java.text.MessageFormat
      */
     public NamingEnumeration<SearchResult>
         search(Name name,

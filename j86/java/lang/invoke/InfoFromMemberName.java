@@ -23,13 +23,13 @@
  * questions.
  */
 
-package java.lang.invoke;
+package j86.j86.java.lang.invoke;
 
-import java.security.*;
-import java.lang.reflect.*;
-import java.lang.invoke.MethodHandleNatives.Constants;
-import java.lang.invoke.MethodHandles.Lookup;
-import static java.lang.invoke.MethodHandleStatics.*;
+import j86.java.security.*;
+import j86.j86.j86.java.lang.reflect.*;
+import j86.j86.java.lang.invoke.MethodHandleNatives.Constants;
+import j86.j86.java.lang.invoke.MethodHandles.Lookup;
+import static j86.j86.java.lang.invoke.MethodHandleStatics.*;
 
 /*
  * Auxiliary to MethodHandleInfo, wants to nest in MethodHandleInfo but must be non-public.

@@ -22,20 +22,20 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package java.awt;
+package j86.java.awt;
 
-import java.io.File;
-import java.io.FileInputStream;
+import j86.java.io.File;
+import j86.java.io.FileInputStream;
 
-import java.beans.ConstructorProperties;
-import java.util.Hashtable;
-import java.util.Properties;
-import java.util.StringTokenizer;
+import j86.java.beans.ConstructorProperties;
+import j86.java.util.Hashtable;
+import j86.java.util.Properties;
+import j86.java.util.StringTokenizer;
 
-import java.security.AccessController;
+import j86.java.security.AccessController;
 
-import sun.util.logging.PlatformLogger;
-import sun.awt.AWTAccessor;
+import j86.j86.sun.util.logging.PlatformLogger;
+import j86.sun.awt.AWTAccessor;
 
 /**
  * A class to encapsulate the bitmap representation of the mouse cursor.
@@ -43,7 +43,7 @@ import sun.awt.AWTAccessor;
  * @see Component#setCursor
  * @author      Amy Fowler
  */
-public class Cursor implements java.io.Serializable {
+public class Cursor implements j86.java.io.Serializable {
 
     /**
      * The default cursor type (gets set if no cursor is defined).
@@ -167,8 +167,8 @@ public class Cursor implements java.io.Serializable {
     private static final String systemCustomCursorDirPrefix = initCursorDir();
 
     private static String initCursorDir() {
-        String jhome = java.security.AccessController.doPrivileged(
-               new sun.security.action.GetPropertyAction("java.home"));
+        String jhome = j86.java.security.AccessController.doPrivileged(
+               new j86.sun.security.action.GetPropertyAction("java.home"));
         return jhome +
             File.separator + "lib" + File.separator + "images" +
             File.separator + "cursors" + File.separator;
@@ -188,7 +188,7 @@ public class Cursor implements java.io.Serializable {
      */
     private static final long serialVersionUID = 8028237497568985504L;
 
-    private static final PlatformLogger log = PlatformLogger.getLogger("java.awt.Cursor");
+    private static final PlatformLogger log = PlatformLogger.getLogger("j86.java.awt.Cursor");
 
     static {
         /* ensure that the necessary native libraries are loaded */
@@ -226,7 +226,7 @@ public class Cursor implements java.io.Serializable {
 
     private transient Object anchor = new Object();
 
-    static class CursorDisposer implements sun.java2d.DisposerRecord {
+    static class CursorDisposer implements j86.sun.java2d.DisposerRecord {
         volatile long pData;
         public CursorDisposer(long pData) {
             this.pData = pData;
@@ -249,7 +249,7 @@ public class Cursor implements java.io.Serializable {
             if (anchor == null) {
                 anchor = new Object();
             }
-            sun.java2d.Disposer.addRecord(anchor, disposer);
+            j86.sun.java2d.Disposer.addRecord(anchor, disposer);
         } else {
             disposer.pData = pData;
         }
@@ -348,8 +348,8 @@ public class Cursor implements java.io.Serializable {
                 final int fy = y;
                 final String flocalized = localized;
 
-                cursor = java.security.AccessController.<Cursor>doPrivileged(
-                    new java.security.PrivilegedExceptionAction<Cursor>() {
+                cursor = j86.java.security.AccessController.<Cursor>doPrivileged(
+                    new j86.java.security.PrivilegedExceptionAction<Cursor>() {
                     public Cursor run() throws Exception {
                         Toolkit toolkit = Toolkit.getDefaultToolkit();
                         Image image = toolkit.getImage(
@@ -407,7 +407,7 @@ public class Cursor implements java.io.Serializable {
      * as part of their support for custom cursors.  Applications should
      * use Toolkit.createCustomCursor().
      * @param name the user-visible name of the cursor.
-     * @see java.awt.Toolkit#createCustomCursor
+     * @see j86.java.awt.Toolkit#createCustomCursor
      */
     protected Cursor(String name) {
         this.type = Cursor.CUSTOM_CURSOR;
@@ -448,7 +448,7 @@ public class Cursor implements java.io.Serializable {
 
             try {
                 AccessController.<Object>doPrivileged(
-                      new java.security.PrivilegedExceptionAction<Object>() {
+                      new j86.java.security.PrivilegedExceptionAction<Object>() {
                     public Object run() throws Exception {
                         FileInputStream fis = null;
                         try {

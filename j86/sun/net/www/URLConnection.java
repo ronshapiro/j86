@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.net.www;
+package j86.j86.sun.net.www;
 
-import java.net.URL;
-import java.util.*;
+import j86.java.net.URL;
+import j86.java.util.*;
 
 /**
  * A class to represent an active connection to an object
@@ -34,7 +34,7 @@ import java.util.*;
  * @author  James Gosling
  */
 
-abstract public class URLConnection extends java.net.URLConnection {
+abstract public class URLConnection extends j86.java.net.URLConnection {
 
     /** The URL that it is connected to */
 
@@ -146,7 +146,7 @@ abstract public class URLConnection extends java.net.URLConnection {
             String ct = null;
             try {
                 ct = guessContentTypeFromStream(getInputStream());
-            } catch(java.io.IOException e) {
+            } catch(j86.java.io.IOException e) {
             }
             String ce = properties.findValue("content-encoding");
             if (ct == null) {

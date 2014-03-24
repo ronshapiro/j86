@@ -23,9 +23,9 @@
  * questions.
  */
 
-package java.awt.event;
+package j86.j86.java.awt.event;
 
-import java.util.EventListener;
+import j86.java.util.EventListener;
 
 /**
  * The listener interface for receiving window state events.
@@ -42,8 +42,8 @@ import java.util.EventListener;
  * <code>windowStateChanged</code> method in the listener object is
  * invoked, and the <code>WindowEvent</code> is passed to it.
  *
- * @see java.awt.event.WindowAdapter
- * @see java.awt.event.WindowEvent
+ * @see j86.j86.java.awt.event.WindowAdapter
+ * @see j86.j86.java.awt.event.WindowEvent
  *
  * @since 1.4
  */

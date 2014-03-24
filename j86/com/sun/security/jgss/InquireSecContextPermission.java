@@ -23,14 +23,14 @@
  * questions.
  */
 
-package com.sun.security.jgss;
+package com.j86.sun.security.jgss;
 
-import java.security.BasicPermission;
+import j86.java.security.BasicPermission;
 
 /**
  * This class is used to protect various attributes of an established
  * GSS security context that can be accessed using the
- * {@link com.sun.security.jgss.ExtendedGSSContext#inquireSecContext}
+ * {@link com.j86.sun.security.jgss.ExtendedGSSContext#inquireSecContext}
  * method.
  *
  * <p>The target name is the {@link InquireType} allowed.

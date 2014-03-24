@@ -23,18 +23,18 @@
  * questions.
  */
 
-package sun.nio.ch;
+package j86.j86.j86.sun.nio.ch;
 
-import java.io.FileDescriptor;
-import java.io.IOException;
-import java.nio.ByteBuffer;
-import java.nio.MappedByteBuffer;
-import java.nio.channels.*;
-import java.util.ArrayList;
-import java.util.List;
-import java.security.AccessController;
-import sun.misc.Cleaner;
-import sun.security.action.GetPropertyAction;
+import j86.java.io.FileDescriptor;
+import j86.java.io.IOException;
+import j86.java.nio.ByteBuffer;
+import j86.java.nio.MappedByteBuffer;
+import j86.j86.java.nio.channels.*;
+import j86.java.util.ArrayList;
+import j86.java.util.List;
+import j86.java.security.AccessController;
+import j86.sun.misc.Cleaner;
+import j86.sun.security.action.GetPropertyAction;
 
 public class FileChannelImpl
     extends FileChannel
@@ -120,7 +120,7 @@ public class FileChannelImpl
             // superclass AbstractInterruptibleChannel, but the isOpen logic in
             // that method will prevent this method from being reinvoked.
             //
-            ((java.io.Closeable)parent).close();
+            ((j86.java.io.Closeable)parent).close();
         } else {
             nd.close(fd);
         }
@@ -925,11 +925,11 @@ public class FileChannelImpl
     }
 
     /**
-     * Invoked by sun.management.ManagementFactoryHelper to create the management
+     * Invoked by j86.sun.management.ManagementFactoryHelper to create the management
      * interface for mapped buffers.
      */
-    public static sun.misc.JavaNioAccess.BufferPool getMappedBufferPool() {
-        return new sun.misc.JavaNioAccess.BufferPool() {
+    public static j86.sun.misc.JavaNioAccess.BufferPool getMappedBufferPool() {
+        return new j86.sun.misc.JavaNioAccess.BufferPool() {
             @Override
             public String getName() {
                 return "mapped";
@@ -972,7 +972,7 @@ public class FileChannelImpl
                 if (!propertyChecked) {
                     String value = AccessController.doPrivileged(
                         new GetPropertyAction(
-                            "sun.nio.ch.disableSystemWideOverlappingFileLockCheck"));
+                            "j86.j86.j86.sun.nio.ch.disableSystemWideOverlappingFileLockCheck"));
                     isSharedFileLockTable = ((value == null) || value.equals("false"));
                     propertyChecked = true;
                 }

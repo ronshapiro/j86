@@ -23,32 +23,32 @@
  * questions.
  */
 
-package java.nio.channels;
+package j86.j86.java.nio.channels;
 
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.Reader;
-import java.io.Writer;
-import java.io.IOException;
-import java.nio.ByteBuffer;
-import java.nio.charset.Charset;
-import java.nio.charset.CharsetDecoder;
-import java.nio.charset.CharsetEncoder;
-import java.nio.charset.UnsupportedCharsetException;
-import java.nio.channels.spi.AbstractInterruptibleChannel;
-import java.util.concurrent.ExecutionException;
-import sun.nio.ch.ChannelInputStream;
-import sun.nio.cs.StreamDecoder;
-import sun.nio.cs.StreamEncoder;
+import j86.java.io.FileInputStream;
+import j86.java.io.FileOutputStream;
+import j86.java.io.InputStream;
+import j86.java.io.OutputStream;
+import j86.java.io.Reader;
+import j86.java.io.Writer;
+import j86.java.io.IOException;
+import j86.java.nio.ByteBuffer;
+import j86.j86.java.nio.charset.Charset;
+import j86.j86.java.nio.charset.CharsetDecoder;
+import j86.j86.java.nio.charset.CharsetEncoder;
+import j86.j86.java.nio.charset.UnsupportedCharsetException;
+import j86.j86.j86.java.nio.channels.spi.AbstractInterruptibleChannel;
+import j86.j86.java.util.concurrent.ExecutionException;
+import j86.j86.j86.sun.nio.ch.ChannelInputStream;
+import j86.j86.j86.sun.nio.cs.StreamDecoder;
+import j86.j86.j86.sun.nio.cs.StreamEncoder;
 
 
 /**
  * Utility methods for channels and streams.
  *
  * <p> This class defines static methods that support the interoperation of the
- * stream classes of the <tt>{@link java.io}</tt> package with the channel
+ * stream classes of the <tt>{@link j86.java.io}</tt> package with the channel
  * classes of this package.  </p>
  *
  *
@@ -122,7 +122,7 @@ public final class Channels {
      */
     public static InputStream newInputStream(ReadableByteChannel ch) {
         checkNotNull(ch, "ch");
-        return new sun.nio.ch.ChannelInputStream(ch);
+        return new j86.j86.j86.sun.nio.ch.ChannelInputStream(ch);
     }
 
     /**

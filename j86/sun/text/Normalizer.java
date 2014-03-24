@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.text;
+package j86.sun.text;
 
-import sun.text.normalizer.NormalizerBase;
-import sun.text.normalizer.NormalizerImpl;
+import j86.j86.sun.text.normalizer.NormalizerBase;
+import j86.j86.sun.text.normalizer.NormalizerImpl;
 
 /**
  * This Normalizer is for Unicode 3.2 support for IDNA only.
@@ -50,18 +50,18 @@ public final class Normalizer {
      * from.
      * @param src        The sequence of char values to normalize.
      * @param form       The normalization form; one of
-     *                   {@link java.text.Normalizer.Form#NFC},
-     *                   {@link java.text.Normalizer.Form#NFD},
-     *                   {@link java.text.Normalizer.Form#NFKC},
-     *                   {@link java.text.Normalizer.Form#NFKD}
+     *                   {@link j86.java.text.Normalizer.Form#NFC},
+     *                   {@link j86.java.text.Normalizer.Form#NFD},
+     *                   {@link j86.java.text.Normalizer.Form#NFKC},
+     *                   {@link j86.java.text.Normalizer.Form#NFKD}
      * @param option     The normalization option;
-     *                   {@link sun.text.Normalizer#UNICODE_3_2}
+     *                   {@link j86.sun.text.Normalizer#UNICODE_3_2}
      * @return The normalized String
      * @throws NullPointerException If <code>src</code> or <code>form</code>
      * is null.
      */
     public static String normalize(CharSequence src,
-                                   java.text.Normalizer.Form form,
+                                   j86.java.text.Normalizer.Form form,
                                    int option) {
         return NormalizerBase.normalize(src.toString(), form, option);
     };
@@ -70,19 +70,19 @@ public final class Normalizer {
      * Determines if the given sequence of char values is normalized.
      * @param src        The sequence of char values to be checked.
      * @param form       The normalization form; one of
-     *                   {@link java.text.Normalizer.Form#NFC},
-     *                   {@link java.text.Normalizer.Form#NFD},
-     *                   {@link java.text.Normalizer.Form#NFKC},
-     *                   {@link java.text.Normalizer.Form#NFKD}
+     *                   {@link j86.java.text.Normalizer.Form#NFC},
+     *                   {@link j86.java.text.Normalizer.Form#NFD},
+     *                   {@link j86.java.text.Normalizer.Form#NFKC},
+     *                   {@link j86.java.text.Normalizer.Form#NFKD}
      * @param option     The normalization option;
-     *                   {@link sun.text.Normalizer#UNICODE_3_2}
+     *                   {@link j86.sun.text.Normalizer#UNICODE_3_2}
      * @return true if the sequence of char values is normalized;
      * false otherwise.
      * @throws NullPointerException If <code>src</code> or <code>form</code>
      * is null.
      */
     public static boolean isNormalized(CharSequence src,
-                                       java.text.Normalizer.Form form,
+                                       j86.java.text.Normalizer.Form form,
                                        int option) {
         return NormalizerBase.isNormalized(src.toString(), form, option);
     }

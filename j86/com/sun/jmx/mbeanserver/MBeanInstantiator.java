@@ -23,37 +23,37 @@
  * questions.
  */
 
-package com.sun.jmx.mbeanserver;
+package j86.com.sun.jmx.mbeanserver;
 
 
-import static com.sun.jmx.defaults.JmxProperties.MBEANSERVER_LOGGER;
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Modifier;
-import java.security.AccessControlContext;
-import java.security.AccessController;
-import java.security.Permission;
-import java.security.Permissions;
-import java.security.PrivilegedAction;
-import java.security.ProtectionDomain;
-import java.util.Map;
-import java.util.logging.Level;
+import static j86.com.sun.jmx.defaults.JmxProperties.MBEANSERVER_LOGGER;
+import j86.java.io.ByteArrayInputStream;
+import j86.java.io.IOException;
+import j86.java.io.ObjectInputStream;
+import j86.j86.j86.java.lang.reflect.Constructor;
+import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.j86.j86.java.lang.reflect.Modifier;
+import j86.java.security.AccessControlContext;
+import j86.java.security.AccessController;
+import j86.java.security.Permission;
+import j86.java.security.Permissions;
+import j86.java.security.PrivilegedAction;
+import j86.java.security.ProtectionDomain;
+import j86.java.util.Map;
+import j86.j86.java.util.logging.Level;
 
-import javax.management.InstanceNotFoundException;
-import javax.management.MBeanException;
-import javax.management.MBeanPermission;
-import javax.management.NotCompliantMBeanException;
-import javax.management.ObjectName;
-import javax.management.OperationsException;
-import javax.management.ReflectionException;
-import javax.management.RuntimeErrorException;
-import javax.management.RuntimeMBeanException;
-import javax.management.RuntimeOperationsException;
-import sun.reflect.misc.ConstructorUtil;
-import sun.reflect.misc.ReflectUtil;
+import j86.javax.management.InstanceNotFoundException;
+import j86.javax.management.MBeanException;
+import j86.javax.management.MBeanPermission;
+import j86.javax.management.NotCompliantMBeanException;
+import j86.javax.management.ObjectName;
+import j86.javax.management.OperationsException;
+import j86.javax.management.ReflectionException;
+import j86.javax.management.RuntimeErrorException;
+import j86.javax.management.RuntimeMBeanException;
+import j86.javax.management.RuntimeOperationsException;
+import j86.j86.sun.reflect.misc.ConstructorUtil;
+import j86.j86.sun.reflect.misc.ReflectUtil;
 
 /**
  * Implements the MBeanInstantiator interface. Provides methods for
@@ -465,7 +465,7 @@ public class MBeanInstantiator {
     /**
      * Instantiates an object using the list of all class loaders registered
      * in the MBean Interceptor
-     * (using its {@link javax.management.loading.ClassLoaderRepository}).
+     * (using its {@link j86.j86.javax.management.loading.ClassLoaderRepository}).
      * <P>The object's class should have a public constructor.
      * <P>It returns a reference to the newly created object.
      * <P>The newly created object is not registered in the MBean Interceptor.
@@ -475,13 +475,13 @@ public class MBeanInstantiator {
      * @return The newly instantiated object.
      *
      * @exception ReflectionException Wraps a
-     * <CODE>java.lang.ClassNotFoundException</CODE> or the
-     * <CODE>java.lang.Exception</CODE> that occurred when trying to invoke the
+     * <CODE>j86.java.lang.ClassNotFoundException</CODE> or the
+     * <CODE>j86.java.lang.Exception</CODE> that occurred when trying to invoke the
      * object's constructor.
      * @exception MBeanException The constructor of the object has thrown an
      * exception
      * @exception RuntimeOperationsException Wraps a
-     * <CODE>java.lang.IllegalArgumentException</CODE>: the className passed in
+     * <CODE>j86.java.lang.IllegalArgumentException</CODE>: the className passed in
      * parameter is null.
      */
     public Object instantiate(String className)
@@ -508,15 +508,15 @@ public class MBeanInstantiator {
      * @return The newly instantiated object.
      *
      * @exception ReflectionException Wraps a
-     * <CODE>java.lang.ClassNotFoundException</CODE> or the
-     * <CODE>java.lang.Exception</CODE> that occurred when trying to invoke the
+     * <CODE>j86.java.lang.ClassNotFoundException</CODE> or the
+     * <CODE>j86.java.lang.Exception</CODE> that occurred when trying to invoke the
      * object's constructor.
      * @exception MBeanException The constructor of the object has thrown an
      * exception.
      * @exception InstanceNotFoundException The specified class loader is not
      * registered in the MBeanServerInterceptor.
      * @exception RuntimeOperationsException Wraps a
-     * <CODE>java.lang.IllegalArgumentException</CODE>: the className passed in
+     * <CODE>j86.java.lang.IllegalArgumentException</CODE>: the className passed in
      * parameter is null.
      */
     public Object instantiate(String className, ObjectName loaderName,
@@ -532,7 +532,7 @@ public class MBeanInstantiator {
     /**
      * Instantiates an object using the list of all class loaders registered
      * in the MBean server
-     * (using its {@link javax.management.loading.ClassLoaderRepository}).
+     * (using its {@link j86.j86.javax.management.loading.ClassLoaderRepository}).
      * <P>The object's class should have a public constructor.
      * <P>The call returns a reference to the newly created object.
      * <P>The newly created object is not registered in the MBean Interceptor.
@@ -546,13 +546,13 @@ public class MBeanInstantiator {
      * @return The newly instantiated object.
      *
      * @exception ReflectionException Wraps a
-     * <CODE>java.lang.ClassNotFoundException</CODE> or the
-     * <CODE>java.lang.Exception</CODE> that occurred when trying to invoke the
+     * <CODE>j86.java.lang.ClassNotFoundException</CODE> or the
+     * <CODE>j86.java.lang.Exception</CODE> that occurred when trying to invoke the
      * object's constructor.
      * @exception MBeanException The constructor of the object has thrown an
      * exception
      * @exception RuntimeOperationsException Wraps a
-     * <CODE>java.lang.IllegalArgumentException</CODE>: the className passed in
+     * <CODE>j86.java.lang.IllegalArgumentException</CODE>: the className passed in
      * parameter is null.
      */
     public Object instantiate(String className,
@@ -588,15 +588,15 @@ public class MBeanInstantiator {
      * @return The newly instantiated object.
      *
      * @exception ReflectionException Wraps a
-     * <CODE>java.lang.ClassNotFoundException</CODE> or the
-     * <CODE>java.lang.Exception</CODE> that occurred when trying to invoke the
+     * <CODE>j86.java.lang.ClassNotFoundException</CODE> or the
+     * <CODE>j86.java.lang.Exception</CODE> that occurred when trying to invoke the
      * object's constructor.
      * @exception MBeanException The constructor of the object has thrown an
      * exception
      * @exception InstanceNotFoundException The specified class loader is not
      * registered in the MBean Interceptor.
      * @exception RuntimeOperationsException Wraps a
-     * <CODE>java.lang.IllegalArgumentException</CODE>: the className passed in
+     * <CODE>j86.java.lang.IllegalArgumentException</CODE>: the className passed in
      * parameter is null.
      */
     public Object instantiate(String className,

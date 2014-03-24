@@ -23,15 +23,15 @@
  * questions.
  */
 
-package java.nio.channels;
+package j86.j86.java.nio.channels;
 
-import java.io.IOException;
-import java.net.Socket;
-import java.net.SocketOption;
-import java.net.SocketAddress;
-import java.nio.ByteBuffer;
-import java.nio.channels.spi.AbstractSelectableChannel;
-import java.nio.channels.spi.SelectorProvider;
+import j86.java.io.IOException;
+import j86.java.net.Socket;
+import j86.java.net.SocketOption;
+import j86.java.net.SocketAddress;
+import j86.java.nio.ByteBuffer;
+import j86.j86.j86.java.nio.channels.spi.AbstractSelectableChannel;
+import j86.j86.j86.java.nio.channels.spi.SelectorProvider;
 
 /**
  * A selectable channel for stream-oriented connecting sockets.
@@ -72,28 +72,28 @@ import java.nio.channels.spi.SelectorProvider;
  *     <th>Description</th>
  *   </tr>
  *   <tr>
- *     <td> {@link java.net.StandardSocketOptions#SO_SNDBUF SO_SNDBUF} </td>
+ *     <td> {@link j86.java.net.StandardSocketOptions#SO_SNDBUF SO_SNDBUF} </td>
  *     <td> The size of the socket send buffer </td>
  *   </tr>
  *   <tr>
- *     <td> {@link java.net.StandardSocketOptions#SO_RCVBUF SO_RCVBUF} </td>
+ *     <td> {@link j86.java.net.StandardSocketOptions#SO_RCVBUF SO_RCVBUF} </td>
  *     <td> The size of the socket receive buffer </td>
  *   </tr>
  *   <tr>
- *     <td> {@link java.net.StandardSocketOptions#SO_KEEPALIVE SO_KEEPALIVE} </td>
+ *     <td> {@link j86.java.net.StandardSocketOptions#SO_KEEPALIVE SO_KEEPALIVE} </td>
  *     <td> Keep connection alive </td>
  *   </tr>
  *   <tr>
- *     <td> {@link java.net.StandardSocketOptions#SO_REUSEADDR SO_REUSEADDR} </td>
+ *     <td> {@link j86.java.net.StandardSocketOptions#SO_REUSEADDR SO_REUSEADDR} </td>
  *     <td> Re-use address </td>
  *   </tr>
  *   <tr>
- *     <td> {@link java.net.StandardSocketOptions#SO_LINGER SO_LINGER} </td>
+ *     <td> {@link j86.java.net.StandardSocketOptions#SO_LINGER SO_LINGER} </td>
  *     <td> Linger on close if data is present (when configured in blocking mode
  *          only) </td>
  *   </tr>
  *   <tr>
- *     <td> {@link java.net.StandardSocketOptions#TCP_NODELAY TCP_NODELAY} </td>
+ *     <td> {@link j86.java.net.StandardSocketOptions#TCP_NODELAY TCP_NODELAY} </td>
  *     <td> Disable the Nagle algorithm </td>
  *   </tr>
  * </table>
@@ -132,9 +132,9 @@ public abstract class SocketChannel
      * Opens a socket channel.
      *
      * <p> The new channel is created by invoking the {@link
-     * java.nio.channels.spi.SelectorProvider#openSocketChannel
+     * j86.j86.j86.java.nio.channels.spi.SelectorProvider#openSocketChannel
      * openSocketChannel} method of the system-wide default {@link
-     * java.nio.channels.spi.SelectorProvider} object.  </p>
+     * j86.j86.j86.java.nio.channels.spi.SelectorProvider} object.  </p>
      *
      * @return  A new socket channel
      *
@@ -295,7 +295,7 @@ public abstract class SocketChannel
      * Retrieves a socket associated with this channel.
      *
      * <p> The returned object will not declare any public methods that are not
-     * declared in the {@link java.net.Socket} class.  </p>
+     * declared in the {@link j86.java.net.Socket} class.  </p>
      *
      * @return  A socket associated with this channel
      */
@@ -334,9 +334,9 @@ public abstract class SocketChannel
      * occurs.
      *
      * <p> This method performs exactly the same security checks as the {@link
-     * java.net.Socket} class.  That is, if a security manager has been
+     * j86.java.net.Socket} class.  That is, if a security manager has been
      * installed then this method verifies that its {@link
-     * java.lang.SecurityManager#checkConnect checkConnect} method permits
+     * j86.java.lang.SecurityManager#checkConnect checkConnect} method permits
      * connecting to the address and port number of the given remote endpoint.
      *
      * <p> This method may be invoked at any time.  If a read or write
@@ -397,7 +397,7 @@ public abstract class SocketChannel
      * failed, the socket channel will become connectable and this method may
      * be invoked to complete the connection sequence.  If the connection
      * operation failed then invoking this method will cause an appropriate
-     * {@link java.io.IOException} to be thrown.
+     * {@link j86.java.io.IOException} to be thrown.
      *
      * <p> If this channel is already connected then this method will not block
      * and will immediately return <tt>true</tt>.  If this channel is in
@@ -444,7 +444,7 @@ public abstract class SocketChannel
      *
      * <p> Where the channel is bound and connected to an Internet Protocol
      * socket address then the return value from this method is of type {@link
-     * java.net.InetSocketAddress}.
+     * j86.java.net.InetSocketAddress}.
      *
      * @return  The remote address; {@code null} if the channel's socket is not
      *          connected
@@ -509,7 +509,7 @@ public abstract class SocketChannel
      * called with the local address and {@code -1} as its arguments to see
      * if the operation is allowed. If the operation is not allowed,
      * a {@code SocketAddress} representing the
-     * {@link java.net.InetAddress#getLoopbackAddress loopback} address and the
+     * {@link j86.java.net.InetAddress#getLoopbackAddress loopback} address and the
      * local port of the channel's socket is returned.
      *
      * @return  The {@code SocketAddress} that the socket is bound to, or the

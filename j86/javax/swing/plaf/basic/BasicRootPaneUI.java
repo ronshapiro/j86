@@ -23,19 +23,19 @@
  * questions.
  */
 
-package javax.swing.plaf.basic;
+package j86.j86.j86.javax.swing.plaf.basic;
 
-import java.awt.event.ActionEvent;
-import java.awt.KeyboardFocusManager;
-import java.awt.Component;
-import java.awt.Point;
-import java.awt.Rectangle;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
-import javax.swing.*;
-import javax.swing.plaf.*;
-import sun.swing.DefaultLookup;
-import sun.swing.UIAction;
+import j86.j86.java.awt.event.ActionEvent;
+import j86.java.awt.KeyboardFocusManager;
+import j86.java.awt.Component;
+import j86.java.awt.Point;
+import j86.java.awt.Rectangle;
+import j86.java.beans.PropertyChangeEvent;
+import j86.java.beans.PropertyChangeListener;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.sun.swing.DefaultLookup;
+import j86.sun.swing.UIAction;
 
 /**
  * Basic implementation of RootPaneUI, there is one shared between all

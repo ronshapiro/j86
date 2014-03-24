@@ -23,17 +23,17 @@
  * questions.
  */
 
-package sun.util.locale.provider;
+package j86.j86.j86.sun.util.locale.provider;
 
-import java.lang.ref.SoftReference;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Locale;
-import java.util.Map;
-import java.util.Set;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.spi.TimeZoneNameProvider;
-import sun.util.calendar.ZoneInfo;
+import j86.j86.java.lang.ref.SoftReference;
+import j86.java.util.LinkedList;
+import j86.java.util.List;
+import j86.java.util.Locale;
+import j86.java.util.Map;
+import j86.java.util.Set;
+import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.j86.java.util.spi.TimeZoneNameProvider;
+import j86.j86.sun.util.calendar.ZoneInfo;
 
 /**
  * Utility class that deals with the localized time zone names

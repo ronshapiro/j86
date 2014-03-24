@@ -23,20 +23,20 @@
  * questions.
  */
 
-package sun.awt.im;
+package j86.j86.sun.awt.im;
 
-import java.awt.Component;
-import java.awt.Container;
-import java.awt.Rectangle;
-import java.awt.event.InputMethodEvent;
-import java.awt.event.InputMethodListener;
-import java.awt.font.TextAttribute;
-import java.awt.font.TextHitInfo;
-import java.awt.im.InputMethodRequests;
-import java.lang.ref.WeakReference;
-import java.text.AttributedCharacterIterator;
-import java.text.AttributedCharacterIterator.Attribute;
-import java.text.AttributedString;
+import j86.java.awt.Component;
+import j86.java.awt.Container;
+import j86.java.awt.Rectangle;
+import j86.j86.java.awt.event.InputMethodEvent;
+import j86.j86.java.awt.event.InputMethodListener;
+import j86.j86.java.awt.font.TextAttribute;
+import j86.j86.java.awt.font.TextHitInfo;
+import j86.j86.java.awt.im.InputMethodRequests;
+import j86.j86.java.lang.ref.WeakReference;
+import j86.java.text.AttributedCharacterIterator;
+import j86.java.text.AttributedCharacterIterator.Attribute;
+import j86.java.text.AttributedString;
 
 /**
  * A composition area handler handles events and input method requests for

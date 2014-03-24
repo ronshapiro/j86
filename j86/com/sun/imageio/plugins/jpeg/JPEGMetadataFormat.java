@@ -23,16 +23,16 @@
  * questions.
  */
 
-package com.sun.imageio.plugins.jpeg;
+package j86.com.sun.imageio.plugins.jpeg;
 
-import javax.imageio.metadata.IIOMetadataFormat;
-import javax.imageio.metadata.IIOMetadataFormatImpl;
-import javax.imageio.ImageTypeSpecifier;
-import javax.imageio.plugins.jpeg.JPEGQTable;
-import javax.imageio.plugins.jpeg.JPEGHuffmanTable;
+import j86.j86.javax.imageio.metadata.IIOMetadataFormat;
+import j86.j86.javax.imageio.metadata.IIOMetadataFormatImpl;
+import j86.javax.imageio.ImageTypeSpecifier;
+import j86.j86.javax.imageio.plugins.jpeg.JPEGQTable;
+import j86.j86.javax.imageio.plugins.jpeg.JPEGHuffmanTable;
 
-import java.util.List;
-import java.util.ArrayList;
+import j86.java.util.List;
+import j86.java.util.ArrayList;
 
 abstract class JPEGMetadataFormat extends IIOMetadataFormatImpl {
     // 2-byte length reduces max to 65533

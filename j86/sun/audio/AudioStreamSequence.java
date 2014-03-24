@@ -23,11 +23,11 @@
  * questions.
  */
 
-package sun.audio;
+package j86.sun.audio;
 
-import java.io.InputStream;
-import java.io.SequenceInputStream;
-import java.util.Enumeration;
+import j86.java.io.InputStream;
+import j86.java.io.SequenceInputStream;
+import j86.java.util.Enumeration;
 
 /**
  * Convert a sequence of input streams into a single InputStream.

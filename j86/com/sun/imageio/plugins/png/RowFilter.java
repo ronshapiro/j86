@@ -23,7 +23,7 @@
  * questions.
  */
 
-package com.sun.imageio.plugins.png;
+package j86.com.sun.imageio.plugins.png;
 
 public class RowFilter {
 

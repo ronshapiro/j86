@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.java.swing.plaf.nimbus;
+package j86.j86.com.sun.java.swing.plaf.nimbus;
 
 /**
  * This class is preserved for backward compatibility with JDK 6.
  *
- * @deprecated Use {@link javax.swing.plaf.nimbus.AbstractRegionPainter} instead.
+ * @deprecated Use {@link j86.j86.j86.javax.swing.plaf.nimbus.AbstractRegionPainter} instead.
  */
 @Deprecated
-public abstract class AbstractRegionPainter extends javax.swing.plaf.nimbus.AbstractRegionPainter {
+public abstract class AbstractRegionPainter extends j86.j86.j86.javax.swing.plaf.nimbus.AbstractRegionPainter {
 }

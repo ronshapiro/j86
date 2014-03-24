@@ -23,22 +23,22 @@
  * questions.
  */
 
-package sun.font;
+package j86.sun.font;
 
-import java.lang.ref.Reference;
-import java.awt.FontFormatException;
-import java.awt.geom.GeneralPath;
-import java.awt.geom.Point2D;
-import java.awt.geom.Rectangle2D;
-import java.io.File;
-import java.nio.ByteBuffer;
-import sun.java2d.Disposer;
-import sun.java2d.DisposerRecord;
+import j86.j86.java.lang.ref.Reference;
+import j86.java.awt.FontFormatException;
+import j86.j86.java.awt.geom.GeneralPath;
+import j86.j86.java.awt.geom.Point2D;
+import j86.j86.java.awt.geom.Rectangle2D;
+import j86.java.io.File;
+import j86.java.nio.ByteBuffer;
+import j86.sun.java2d.Disposer;
+import j86.sun.java2d.DisposerRecord;
 
-import java.io.IOException;
-import java.security.AccessController;
-import java.security.PrivilegedActionException;
-import java.security.PrivilegedExceptionAction;
+import j86.java.io.IOException;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedActionException;
+import j86.java.security.PrivilegedExceptionAction;
 
 public abstract class FileFont extends PhysicalFont {
 
@@ -260,8 +260,8 @@ public abstract class FileFont extends PhysicalFont {
         }
 
         public void dispose() {
-            java.security.AccessController.doPrivileged(
-                 new java.security.PrivilegedAction() {
+            j86.java.security.AccessController.doPrivileged(
+                 new j86.java.security.PrivilegedAction() {
                       public Object run() {
                           if (fontFile != null) {
                               try {
@@ -295,7 +295,7 @@ public abstract class FileFont extends PhysicalFont {
         boolean canReadProperty = true;
 
         try {
-            sm.checkPropertyAccess("java.io.tmpdir");
+            sm.checkPropertyAccess("j86.java.io.tmpdir");
         } catch (SecurityException e) {
             canReadProperty = false;
         }
@@ -311,7 +311,7 @@ public abstract class FileFont extends PhysicalFont {
             isTmpFile = AccessController.doPrivileged(
                 new PrivilegedExceptionAction<Boolean>() {
                     public Boolean run() {
-                        File tmp = new File(System.getProperty("java.io.tmpdir"));
+                        File tmp = new File(System.getProperty("j86.java.io.tmpdir"));
                         try {
                             String tpath = tmp.getCanonicalPath();
                             String fpath = f.getCanonicalPath();
@@ -324,7 +324,7 @@ public abstract class FileFont extends PhysicalFont {
                 }
             );
         } catch (PrivilegedActionException e) {
-            // unable to verify whether value of java.io.tempdir will be
+            // unable to verify whether value of j86.java.io.tempdir will be
             // exposed, so return only a name of the font file.
             isTmpFile = Boolean.TRUE;
         }

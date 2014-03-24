@@ -23,16 +23,16 @@
  * questions.
  */
 
-package sun.tools.tree;
+package j86.sun.tools.tree;
 
-import sun.tools.java.*;
-import sun.tools.asm.Assembler;
-import sun.tools.asm.Label;
-import sun.tools.asm.TryData;
-import sun.tools.asm.CatchData;
-import java.io.PrintStream;
-import java.util.Enumeration;
-import java.util.Hashtable;
+import j86.sun.tools.java.*;
+import j86.sun.tools.asm.Assembler;
+import j86.sun.tools.asm.Label;
+import j86.sun.tools.asm.TryData;
+import j86.sun.tools.asm.CatchData;
+import j86.java.io.PrintStream;
+import j86.java.util.Enumeration;
+import j86.java.util.Hashtable;
 
 /**
  * WARNING: The contents of this source file are not part of any
@@ -139,7 +139,7 @@ class TryStatement extends Statement {
                     }
                 }
                 if (!ok && arrayCloneWhere != 0
-                    && def.getName().toString().equals("java.lang.CloneNotSupportedException")) {
+                    && def.getName().toString().equals("j86.java.lang.CloneNotSupportedException")) {
                     env.error(arrayCloneWhere, "warn.array.clone.supported", def.getName());
                 }
 
@@ -241,7 +241,7 @@ class TryStatement extends Statement {
         //
         // an inlined call to test() might look like this:
         //
-        //     0 getstatic <Field java.io.PrintStream out>
+        //     0 getstatic <Field j86.java.io.PrintStream out>
         //     3 iconst_2
         //     4 goto 9
         //     7 pop
@@ -250,7 +250,7 @@ class TryStatement extends Statement {
         //    12 return
         //  Exception table:
         //     from   to  target type
-        //       3     7     7   <Class java.lang.Exception>
+        //       3     7     7   <Class j86.java.lang.Exception>
         //
         // This fails to verify because the operand stored
         // for System.out gets axed at an exception, leading to

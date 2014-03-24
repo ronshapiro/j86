@@ -23,11 +23,11 @@
  * questions.
  */
 
-package javax.imageio.spi;
+package j86.j86.javax.imageio.spi;
 
-import java.io.IOException;
-import javax.imageio.ImageReader;
-import javax.imageio.stream.ImageInputStream;
+import j86.java.io.IOException;
+import j86.javax.imageio.ImageReader;
+import j86.j86.javax.imageio.stream.ImageInputStream;
 
 /**
  * The service provider interface (SPI) for <code>ImageReader</code>s.
@@ -68,7 +68,7 @@ import javax.imageio.stream.ImageInputStream;
  * invocation of this method.
  *
  * @see IIORegistry
- * @see javax.imageio.ImageReader
+ * @see j86.javax.imageio.ImageReader
  *
  */
 public abstract class ImageReaderSpi extends ImageReaderWriterSpi {
@@ -404,7 +404,7 @@ public abstract class ImageReaderSpi extends ImageReaderWriterSpi {
      * containing names of <code>ImageWriterSpi</code>, or
      * <code>null</code>.
      *
-     * @see javax.imageio.ImageIO#getImageWriter(ImageReader)
+     * @see j86.javax.imageio.ImageIO#getImageWriter(ImageReader)
      */
     public String[] getImageWriterSpiNames() {
         return writerSpiNames == null ?

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.io;
+package j86.java.io;
 
 /**
  * The class implements a buffered output stream. By setting up such
@@ -134,7 +134,7 @@ class BufferedOutputStream extends FilterOutputStream {
      * output bytes to be written out to the underlying output stream.
      *
      * @exception  IOException  if an I/O error occurs.
-     * @see        java.io.FilterOutputStream#out
+     * @see        j86.java.io.FilterOutputStream#out
      */
     public synchronized void flush() throws IOException {
         flushBuffer();

@@ -23,21 +23,21 @@
  * questions.
  */
 
-package java.beans;
+package j86.java.beans;
 
-import java.applet.Applet;
+import j86.java.applet.Applet;
 
-import java.beans.beancontext.BeanContext;
+import j86.j86.java.beans.beancontext.BeanContext;
 
 /**
  * <p>
- * This interface is designed to work in collusion with java.beans.Beans.instantiate.
+ * This interface is designed to work in collusion with j86.java.beans.Beans.instantiate.
  * The interface is intended to provide mechanism to allow the proper
  * initialization of JavaBeans that are also Applets, during their
- * instantiation by java.beans.Beans.instantiate().
+ * instantiation by j86.java.beans.Beans.instantiate().
  * </p>
  *
- * @see java.beans.Beans#instantiate
+ * @see j86.java.beans.Beans#instantiate
  *
  * @since 1.2
  *
@@ -48,7 +48,7 @@ public interface AppletInitializer {
 
     /**
      * <p>
-     * If passed to the appropriate variant of java.beans.Beans.instantiate
+     * If passed to the appropriate variant of j86.java.beans.Beans.instantiate
      * this method will be called in order to associate the newly instantiated
      * Applet (JavaBean) with its AppletContext, AppletStub, and Container.
      * </p>

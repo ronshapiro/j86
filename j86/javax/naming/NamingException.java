@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.naming;
+package j86.javax.naming;
 
 /**
   * This is the superclass of all exceptions thrown by
@@ -120,7 +120,7 @@ public class NamingException extends Exception {
      *
      * @param   explanation     A possibly null string containing
      *                          additional detail about this exception.
-     * @see java.lang.Throwable#getMessage
+     * @see j86.java.lang.Throwable#getMessage
      */
     public NamingException(String explanation) {
         super(explanation);
@@ -185,7 +185,7 @@ public class NamingException extends Exception {
       *         about this exception. If null, it means there is no
       *         detail message for this exception.
       *
-      * @see java.lang.Throwable#getMessage
+      * @see j86.java.lang.Throwable#getMessage
       */
     public String getExplanation() {
         return getMessage();

@@ -22,25 +22,25 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing;
+package j86.javax.swing;
 
-import java.awt.*;
-import java.awt.image.*;
-import java.beans.ConstructorProperties;
-import java.beans.Transient;
-import java.net.URL;
+import j86.java.awt.*;
+import j86.j86.j86.java.awt.image.*;
+import j86.java.beans.ConstructorProperties;
+import j86.java.beans.Transient;
+import j86.java.net.URL;
 
-import java.io.Serializable;
-import java.io.ObjectOutputStream;
-import java.io.ObjectInputStream;
-import java.io.IOException;
+import j86.java.io.Serializable;
+import j86.java.io.ObjectOutputStream;
+import j86.java.io.ObjectInputStream;
+import j86.java.io.IOException;
 
-import java.util.Locale;
-import javax.accessibility.*;
+import j86.java.util.Locale;
+import j86.javax.accessibility.*;
 
-import sun.awt.AppContext;
-import java.lang.reflect.Field;
-import java.security.*;
+import j86.sun.awt.AppContext;
+import j86.j86.j86.java.lang.reflect.Field;
+import j86.java.security.*;
 
 /**
  * An implementation of the Icon interface that paints Icons
@@ -60,8 +60,8 @@ import java.security.*;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @author Jeff Dinkins
  * @author Lynn Monsanto
@@ -233,7 +233,7 @@ public class ImageIcon implements Icon, Serializable, Accessible {
      * then the string is used as the description of this icon.
      * @param image the image
      * @see #getDescription
-     * @see java.awt.Image#getProperty
+     * @see j86.java.awt.Image#getProperty
      */
     public ImageIcon (Image image) {
         this.image = image;
@@ -255,7 +255,7 @@ public class ImageIcon implements Icon, Serializable, Accessible {
      * @param  imageData an array of pixels in an image format supported
      *         by the AWT Toolkit, such as GIF, JPEG, or (as of 1.3) PNG
      * @param  description a brief textual description of the image
-     * @see    java.awt.Toolkit#createImage
+     * @see    j86.java.awt.Toolkit#createImage
      */
     public ImageIcon (byte[] imageData, String description) {
         this.image = Toolkit.getDefaultToolkit().createImage(imageData);
@@ -278,9 +278,9 @@ public class ImageIcon implements Icon, Serializable, Accessible {
      *
      * @param  imageData an array of pixels in an image format supported by
      *             the AWT Toolkit, such as GIF, JPEG, or (as of 1.3) PNG
-     * @see    java.awt.Toolkit#createImage
+     * @see    j86.java.awt.Toolkit#createImage
      * @see #getDescription
-     * @see java.awt.Image#getProperty
+     * @see j86.java.awt.Image#getProperty
      */
     public ImageIcon (byte[] imageData) {
         this.image = Toolkit.getDefaultToolkit().createImage(imageData);
@@ -354,10 +354,10 @@ public class ImageIcon implements Icon, Serializable, Accessible {
 
     /**
      * Returns the status of the image loading operation.
-     * @return the loading status as defined by java.awt.MediaTracker
-     * @see java.awt.MediaTracker#ABORTED
-     * @see java.awt.MediaTracker#ERRORED
-     * @see java.awt.MediaTracker#COMPLETE
+     * @return the loading status as defined by j86.java.awt.MediaTracker
+     * @see j86.java.awt.MediaTracker#ABORTED
+     * @see j86.java.awt.MediaTracker#ERRORED
+     * @see j86.java.awt.MediaTracker#COMPLETE
      */
     public int getImageLoadStatus() {
         return loadStatus;
@@ -568,8 +568,8 @@ public class ImageIcon implements Icon, Serializable, Accessible {
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans&trade;
-     * has been added to the <code>java.beans</code> package.
-     * Please see {@link java.beans.XMLEncoder}.
+     * has been added to the <code>j86.java.beans</code> package.
+     * Please see {@link j86.java.beans.XMLEncoder}.
      * @since 1.3
      */
     protected class AccessibleImageIcon extends AccessibleContext

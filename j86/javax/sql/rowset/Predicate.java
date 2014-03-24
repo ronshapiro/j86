@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.sql.rowset;
+package j86.j86.javax.sql.rowset;
 
-import javax.sql.*;
-import java.sql.*;
+import j86.javax.sql.*;
+import j86.java.sql.*;
 
 /**
  * The standard interface that provides the framework for all

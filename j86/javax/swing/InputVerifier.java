@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.swing;
+package j86.javax.swing;
 
-import java.util.*;
+import j86.java.util.*;
 
 /**
  * The purpose of this class is to help clients support smooth focus
@@ -49,10 +49,10 @@ import java.util.*;
  * transfer focus to the second text field.
  *
  * <pre>
- * import java.awt.*;
- * import java.util.*;
- * import java.awt.event.*;
- * import javax.swing.*;
+ * import j86.java.awt.*;
+ * import j86.java.util.*;
+ * import j86.j86.java.awt.event.*;
+ * import j86.javax.swing.*;
  *
  * // This program demonstrates the use of the Swing InputVerifier class.
  * // It creates two text fields; the first of the text fields expects the

@@ -23,32 +23,32 @@
  * questions.
  */
 
-package com.sun.java.util.jar.pack;
+package j86.com.sun.j86.j86.java.util.jar.pack;
 
-import com.sun.java.util.jar.pack.ConstantPool.Entry;
-import com.sun.java.util.jar.pack.ConstantPool.Index;
-import com.sun.java.util.jar.pack.Package.Class.Field;
-import java.io.BufferedOutputStream;
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.EOFException;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.FilterInputStream;
-import java.io.FilterOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.PrintStream;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.jar.Pack200;
-import static com.sun.java.util.jar.pack.Constants.*;
-import java.util.LinkedList;
+import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.Entry;
+import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.Index;
+import j86.com.sun.j86.j86.java.util.jar.pack.Package.Class.Field;
+import j86.java.io.BufferedOutputStream;
+import j86.java.io.ByteArrayInputStream;
+import j86.java.io.ByteArrayOutputStream;
+import j86.java.io.EOFException;
+import j86.java.io.File;
+import j86.java.io.FileOutputStream;
+import j86.java.io.FilterInputStream;
+import j86.java.io.FilterOutputStream;
+import j86.java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.io.OutputStream;
+import j86.java.io.PrintStream;
+import j86.java.util.ArrayList;
+import j86.java.util.Arrays;
+import j86.java.util.Collections;
+import j86.java.util.HashMap;
+import j86.java.util.List;
+import j86.java.util.Map;
+import j86.j86.java.util.jar.Pack200;
+import static j86.com.sun.j86.j86.java.util.jar.pack.Constants.*;
+import j86.java.util.LinkedList;
 
 /**
  * Define the structure and ordering of "bands" in a packed file.
@@ -2728,8 +2728,8 @@ class BandStructure {
 
     // Utilities for reallocating:
     protected static Object[] realloc(Object[] a, int len) {
-        java.lang.Class<?> elt = a.getClass().getComponentType();
-        Object[] na = (Object[]) java.lang.reflect.Array.newInstance(elt, len);
+        j86.java.lang.Class<?> elt = a.getClass().getComponentType();
+        Object[] na = (Object[]) j86.j86.j86.java.lang.reflect.Array.newInstance(elt, len);
         System.arraycopy(a, 0, na, 0, Math.min(a.length, len));
         return na;
     }

@@ -32,14 +32,14 @@
  */
 
 
-package com.sun.tools.example.debug.bdi;
+package j86.com.sun.tools.example.debug.bdi;
 
-import com.sun.jdi.*;
-import com.sun.jdi.event.*;
+import j86.com.sun.jdi.*;
+import j86.j86.com.sun.jdi.event.*;
 
-import com.sun.tools.example.debug.event.*;
+import j86.com.sun.tools.example.debug.event.*;
 
-import javax.swing.SwingUtilities;
+import j86.javax.swing.SwingUtilities;
 
 /**
  */

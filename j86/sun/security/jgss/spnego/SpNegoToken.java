@@ -23,13 +23,13 @@
  * questions.
  */
 
-package sun.security.jgss.spnego;
+package j86.j86.sun.security.jgss.spnego;
 
-import java.io.*;
-import java.util.*;
-import org.ietf.jgss.*;
-import sun.security.util.*;
-import sun.security.jgss.*;
+import j86.java.io.*;
+import j86.java.util.*;
+import j86.org.ietf.jgss.*;
+import j86.sun.security.util.*;
+import j86.sun.security.jgss.*;
 
 /**
  * Astract class for SPNEGO tokens.

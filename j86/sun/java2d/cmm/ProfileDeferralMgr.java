@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.java2d.cmm;
+package j86.j86.sun.java2d.cmm;
 
-import java.awt.color.ProfileDataException;
-import java.util.Vector;
+import j86.j86.java.awt.color.ProfileDataException;
+import j86.java.util.Vector;
 
 
 /**

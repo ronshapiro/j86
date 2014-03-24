@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.security.jgss.spi;
+package j86.j86.sun.security.jgss.spi;
 
-import org.ietf.jgss.*;
-import java.security.Provider;
+import j86.org.ietf.jgss.*;
+import j86.java.security.Provider;
 
 /**
  * This interface is implemented by a mechanism specific credential

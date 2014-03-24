@@ -38,11 +38,11 @@
  *
  */
 
-package java.awt.font;
+package j86.j86.java.awt.font;
 
-import java.awt.Image;
-import java.awt.Graphics2D;
-import java.awt.geom.Rectangle2D;
+import j86.java.awt.Image;
+import j86.java.awt.Graphics2D;
+import j86.j86.java.awt.geom.Rectangle2D;
 
 /**
  * The <code>ImageGraphicAttribute</code> class is an implementation of

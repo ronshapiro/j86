@@ -23,21 +23,21 @@
  * questions.
  */
 
-package sun.util.cldr;
+package j86.j86.sun.util.cldr;
 
-import java.io.File;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.text.spi.BreakIteratorProvider;
-import java.text.spi.CollatorProvider;
-import java.util.HashSet;
-import java.util.Locale;
-import java.util.ResourceBundle;
-import java.util.Set;
-import java.util.StringTokenizer;
-import java.util.spi.TimeZoneNameProvider;
-import sun.util.locale.provider.JRELocaleProviderAdapter;
-import sun.util.locale.provider.LocaleProviderAdapter;
+import j86.java.io.File;
+import j86.java.security.AccessController;
+import j86.java.security.PrivilegedAction;
+import j86.j86.java.text.spi.BreakIteratorProvider;
+import j86.j86.java.text.spi.CollatorProvider;
+import j86.java.util.HashSet;
+import j86.java.util.Locale;
+import j86.java.util.ResourceBundle;
+import j86.java.util.Set;
+import j86.java.util.StringTokenizer;
+import j86.j86.java.util.spi.TimeZoneNameProvider;
+import j86.j86.j86.sun.util.locale.provider.JRELocaleProviderAdapter;
+import j86.j86.j86.sun.util.locale.provider.LocaleProviderAdapter;
 
 /**
  * LocaleProviderAdapter implementation for the CLDR locale data.
@@ -50,8 +50,8 @@ public class CLDRLocaleProviderAdapter extends JRELocaleProviderAdapter {
 
     public CLDRLocaleProviderAdapter() {
         final String sep = File.separator;
-        String localeDataJar = java.security.AccessController.doPrivileged(
-                    new sun.security.action.GetPropertyAction("java.home"))
+        String localeDataJar = j86.java.security.AccessController.doPrivileged(
+                    new j86.sun.security.action.GetPropertyAction("java.home"))
                 + sep + "lib" + sep + "ext" + sep + LOCALE_DATA_JAR_NAME;
 
         // Peek at the installed extension directory to see if the jar file for
@@ -101,7 +101,7 @@ public class CLDRLocaleProviderAdapter extends JRELocaleProviderAdapter {
 
     @Override
     protected Set<String> createLanguageTagSet(String category) {
-        ResourceBundle rb = ResourceBundle.getBundle("sun.util.cldr.CLDRLocaleDataMetaInfo", Locale.ROOT);
+        ResourceBundle rb = ResourceBundle.getBundle("j86.j86.sun.util.cldr.CLDRLocaleDataMetaInfo", Locale.ROOT);
         String supportedLocaleString = rb.getString(category);
         Set<String> tagset = new HashSet<>();
         StringTokenizer tokens = new StringTokenizer(supportedLocaleString);

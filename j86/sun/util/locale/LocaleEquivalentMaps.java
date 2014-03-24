@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.util.locale;
+package j86.j86.sun.util.locale;
 
-import java.util.HashMap;
-import java.util.Map;
+import j86.java.util.HashMap;
+import j86.java.util.Map;
 
 /**
  * Locale equivalent map for BCP47 Locale matching

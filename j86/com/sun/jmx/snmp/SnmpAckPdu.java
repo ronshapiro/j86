@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package com.sun.jmx.snmp;
+package j86.com.sun.jmx.snmp;
 /**
  * Interface to be implemented by PDUs that are acknowledged (eg:
  * request, bulk).

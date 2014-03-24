@@ -23,9 +23,9 @@
  * questions.
  */
 
-package javax.sound.midi;
+package j86.javax.sound.midi;
 
-import java.util.List;
+import j86.java.util.List;
 
  /**
  * <code>MidiDevice</code> is the base interface for all MIDI devices.
@@ -46,16 +46,16 @@ import java.util.List;
  * If an application opens a <code>MidiDevice</code>
  * explicitly, it has to close it explicitly to free system resources
  * and enable the application to exit cleanly. Implicit opening is
- * done by calling {@link javax.sound.midi.MidiSystem#getReceiver
+ * done by calling {@link j86.javax.sound.midi.MidiSystem#getReceiver
  * MidiSystem.getReceiver} and {@link
- * javax.sound.midi.MidiSystem#getTransmitter
+ * j86.javax.sound.midi.MidiSystem#getTransmitter
  * MidiSystem.getTransmitter}. The <code>MidiDevice</code> used by
  * <code>MidiSystem.getReceiver</code> and
  * <code>MidiSystem.getTransmitter</code> is implementation-dependant
- * unless the properties <code>javax.sound.midi.Receiver</code>
- * and <code>javax.sound.midi.Transmitter</code> are used (see the
+ * unless the properties <code>j86.javax.sound.midi.Receiver</code>
+ * and <code>j86.javax.sound.midi.Transmitter</code> are used (see the
  * description of properties to select default providers in
- * {@link javax.sound.midi.MidiSystem}). A <code>MidiDevice</code>
+ * {@link j86.javax.sound.midi.MidiSystem}). A <code>MidiDevice</code>
  * that was opened implicitly, is closed implicitly by closing the
  * <code>Receiver</code> or <code>Transmitter</code> that resulted in
  * opening it. If more than one implicitly opening

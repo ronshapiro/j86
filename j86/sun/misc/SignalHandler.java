@@ -23,14 +23,14 @@
  * questions.
  */
 
-package sun.misc;
+package j86.sun.misc;
 
 /**
  * This is the signal handler interface expected in <code>Signal.handle</code>.
  *
  * @author   Sheng Liang
  * @author   Bill Shannon
- * @see      sun.misc.Signal
+ * @see      j86.sun.misc.Signal
  * @since    1.2
  */
 

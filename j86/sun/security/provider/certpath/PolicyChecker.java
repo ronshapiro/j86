@@ -23,29 +23,29 @@
  * questions.
  */
 
-package sun.security.provider.certpath;
+package j86.j86.sun.security.provider.certpath;
 
-import java.io.IOException;
-import java.security.GeneralSecurityException;
-import java.security.cert.Certificate;
-import java.security.cert.CertificateException;
-import java.security.cert.CertPathValidatorException;
-import java.security.cert.PKIXCertPathChecker;
-import java.security.cert.PKIXReason;
-import java.security.cert.PolicyNode;
-import java.security.cert.PolicyQualifierInfo;
-import java.security.cert.X509Certificate;
-import java.util.*;
+import j86.java.io.IOException;
+import j86.java.security.GeneralSecurityException;
+import j86.j86.java.security.cert.Certificate;
+import j86.j86.java.security.cert.CertificateException;
+import j86.j86.java.security.cert.CertPathValidatorException;
+import j86.j86.java.security.cert.PKIXCertPathChecker;
+import j86.j86.java.security.cert.PKIXReason;
+import j86.j86.java.security.cert.PolicyNode;
+import j86.j86.java.security.cert.PolicyQualifierInfo;
+import j86.j86.java.security.cert.X509Certificate;
+import j86.java.util.*;
 
-import sun.security.util.Debug;
-import sun.security.x509.CertificatePoliciesExtension;
-import sun.security.x509.PolicyConstraintsExtension;
-import sun.security.x509.PolicyMappingsExtension;
-import sun.security.x509.CertificatePolicyMap;
-import static sun.security.x509.PKIXExtensions.*;
-import sun.security.x509.PolicyInformation;
-import sun.security.x509.X509CertImpl;
-import sun.security.x509.InhibitAnyPolicyExtension;
+import j86.sun.security.util.Debug;
+import j86.sun.security.x509.CertificatePoliciesExtension;
+import j86.sun.security.x509.PolicyConstraintsExtension;
+import j86.sun.security.x509.PolicyMappingsExtension;
+import j86.sun.security.x509.CertificatePolicyMap;
+import static j86.sun.security.x509.PKIXExtensions.*;
+import j86.sun.security.x509.PolicyInformation;
+import j86.sun.security.x509.X509CertImpl;
+import j86.sun.security.x509.InhibitAnyPolicyExtension;
 
 /**
  * PolicyChecker is a <code>PKIXCertPathChecker</code> that checks policy

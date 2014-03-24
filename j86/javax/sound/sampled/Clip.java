@@ -23,10 +23,10 @@
  * questions.
  */
 
-package javax.sound.sampled;
+package j86.javax.sound.sampled;
 
-import java.io.InputStream;
-import java.io.IOException;
+import j86.java.io.InputStream;
+import j86.java.io.IOException;
 
 /**
  * The <code>Clip</code> interface represents a special kind of data line whose

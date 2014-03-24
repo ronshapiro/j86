@@ -23,13 +23,13 @@
  * questions.
  */
 
-package sun.tools.jconsole;
+package j86.sun.tools.jconsole;
 
-import java.awt.*;
-import java.util.ArrayList;
+import j86.java.awt.*;
+import j86.java.util.ArrayList;
 
-import javax.swing.*;
-import javax.swing.border.*;
+import j86.javax.swing.*;
+import j86.j86.javax.swing.border.*;
 
 
 @SuppressWarnings("serial")

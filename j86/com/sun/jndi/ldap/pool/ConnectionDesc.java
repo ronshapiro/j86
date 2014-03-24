@@ -23,7 +23,7 @@
  * questions.
  */
 
-package com.sun.jndi.ldap.pool;
+package j86.j86.com.sun.jndi.ldap.pool;
 
 /**
  * Represents a description of PooledConnection in Connections.

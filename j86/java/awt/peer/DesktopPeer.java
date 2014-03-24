@@ -23,13 +23,13 @@
  * questions.
  */
 
-package java.awt.peer;
+package j86.j86.java.awt.peer;
 
 
-import java.io.File;
-import java.io.IOException;
-import java.net.URI;
-import java.awt.Desktop.Action;
+import j86.java.io.File;
+import j86.java.io.IOException;
+import j86.java.net.URI;
+import j86.java.awt.Desktop.Action;
 
 /**
  * The {@code DesktopPeer} interface provides methods for the operation

@@ -23,10 +23,10 @@
  * questions.
  */
 
-package sun.security.jgss.spi;
+package j86.j86.sun.security.jgss.spi;
 
-import org.ietf.jgss.*;
-import java.security.Provider;
+import j86.org.ietf.jgss.*;
+import j86.java.security.Provider;
 
 /**
  * This interface is implemented by the factory class for every
@@ -67,7 +67,7 @@ public interface MechanismFactory {
      * if a certain mechanism can be skipped when importing a name.
      * @return an array of the Oid's corresponding to the different GSS-API
      * nametypes supported
-     * @see org.ietf.jgss.GSSName
+     * @see j86.org.ietf.jgss.GSSName
      */
     public Oid[] getNameTypes() throws GSSException;
 
@@ -103,15 +103,15 @@ public interface MechanismFactory {
      * requested for this credential to be used at the context initiator's
      * end. This value should be ignored if the usage is
      * ACCEPT_ONLY. Predefined contants are available in the
-     * org.ietf.jgss.GSSCredential interface.
+     * j86.org.ietf.jgss.GSSCredential interface.
      * @param acceptLifetime indicates the lifetime (in seconds) that is
      * requested for this credential to be used at the context acceptor's
      * end. This value should be ignored if the usage is
      * INITIATE_ONLY. Predefined contants are available in the
-     * org.ietf.jgss.GSSCredential interface.
+     * j86.org.ietf.jgss.GSSCredential interface.
      * @param usage One of the values GSSCredential.INIATE_ONLY,
      * GSSCredential.ACCEPT_ONLY, and GSSCredential.INITIATE_AND_ACCEPT.
-     * @see org.ietf.jgss.GSSCredential
+     * @see j86.org.ietf.jgss.GSSCredential
      * @throws GSSException if one of the error situations described in RFC
      * 2743 with the GSS_Acquire_Cred or GSS_Add_Cred calls occurs.
      */
@@ -170,7 +170,7 @@ public interface MechanismFactory {
      * that default credentials should be applied.
      * @param lifetime the requested lifetime (in seconds) for the security
      * context. Predefined contants are available in the
-     * org.ietf.jgss.GSSContext interface.
+     * j86.org.ietf.jgss.GSSContext interface.
      * @throws GSSException if any of the errors described in RFC 2743 in
      * the GSS_Init_Sec_Context call occur.
      */

@@ -38,8 +38,8 @@
  *
  */
 
-package java.awt.font;
-import java.lang.String;
+package j86.j86.java.awt.font;
+import j86.java.lang.String;
 
 /**
  * The <code>TextHitInfo</code> class represents a character position in a

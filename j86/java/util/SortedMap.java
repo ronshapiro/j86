@@ -23,7 +23,7 @@
  * questions.
  */
 
-package java.util;
+package j86.java.util;
 
 /**
  * A {@link Map} that further provides a <em>total ordering</em> on its keys.

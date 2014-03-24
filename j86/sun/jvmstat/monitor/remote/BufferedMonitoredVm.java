@@ -23,9 +23,9 @@
  * questions.
  */
 
-package sun.jvmstat.monitor.remote;
+package j86.j86.sun.jvmstat.monitor.remote;
 
-import sun.jvmstat.monitor.*;
+import j86.sun.jvmstat.monitor.*;
 
 /**
  * Interface to support asynchronous polling of the exported

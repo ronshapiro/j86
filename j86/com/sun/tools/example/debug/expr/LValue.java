@@ -32,10 +32,10 @@
  */
 
 
-package com.sun.tools.example.debug.expr;
+package j86.com.sun.tools.example.debug.expr;
 
-import com.sun.jdi.*;
-import java.util.*;
+import j86.com.sun.jdi.*;
+import j86.java.util.*;
 
 abstract class LValue {
 
@@ -307,10 +307,10 @@ abstract class LValue {
         }
         if (toType instanceof InterfaceType) {
             // Only valid InterfaceType assignee is Cloneable
-            return toType.name().equals("java.lang.Cloneable");
+            return toType.name().equals("j86.java.lang.Cloneable");
         }
         // Only valid ClassType assignee is Object
-        return toType.name().equals("java.lang.Object");
+        return toType.name().equals("j86.java.lang.Object");
     }
 
     static boolean isAssignableTo(Type fromType, Type toType) {

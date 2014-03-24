@@ -32,9 +32,9 @@
  */
 
 
-package com.sun.tools.example.debug.bdi;
+package j86.com.sun.tools.example.debug.bdi;
 
-import java.util.EventListener;
+import j86.java.util.EventListener;
 
 public interface SpecListener extends EventListener {
 

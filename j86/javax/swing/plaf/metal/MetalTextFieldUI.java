@@ -22,16 +22,16 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package javax.swing.plaf.metal;
+package j86.j86.j86.javax.swing.plaf.metal;
 
-import java.awt.*;
-import java.beans.*;
+import j86.java.awt.*;
+import j86.java.beans.*;
 
-import javax.swing.*;
+import j86.javax.swing.*;
 
-import javax.swing.text.*;
-import javax.swing.plaf.*;
-import javax.swing.plaf.basic.*;
+import j86.j86.javax.swing.text.*;
+import j86.j86.javax.swing.plaf.*;
+import j86.j86.j86.javax.swing.plaf.basic.*;
 
 /**
  * Basis of a look and feel for a JTextField.
@@ -42,8 +42,8 @@ import javax.swing.plaf.basic.*;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @author  Steve Wilson
  */

@@ -23,23 +23,23 @@
  * questions.
  */
 
-package sun.rmi.rmic;
+package j86.sun.rmi.rmic;
 
-import java.util.Vector;
-import java.util.Hashtable;
-import java.util.Enumeration;
-import java.io.IOException;
-import java.io.ByteArrayOutputStream;
-import java.io.DataOutputStream;
-import java.security.MessageDigest;
-import java.security.DigestOutputStream;
-import java.security.NoSuchAlgorithmException;
-import sun.tools.java.Type;
-import sun.tools.java.ClassDefinition;
-import sun.tools.java.ClassDeclaration;
-import sun.tools.java.MemberDefinition;
-import sun.tools.java.Identifier;
-import sun.tools.java.ClassNotFound;
+import j86.java.util.Vector;
+import j86.java.util.Hashtable;
+import j86.java.util.Enumeration;
+import j86.java.io.IOException;
+import j86.java.io.ByteArrayOutputStream;
+import j86.java.io.DataOutputStream;
+import j86.java.security.MessageDigest;
+import j86.java.security.DigestOutputStream;
+import j86.java.security.NoSuchAlgorithmException;
+import j86.sun.tools.java.Type;
+import j86.sun.tools.java.ClassDefinition;
+import j86.sun.tools.java.ClassDeclaration;
+import j86.sun.tools.java.MemberDefinition;
+import j86.sun.tools.java.Identifier;
+import j86.sun.tools.java.ClassNotFound;
 
 /**
  * A RemoteClass object encapsulates RMI-specific information about
@@ -52,7 +52,7 @@ import sun.tools.java.ClassNotFound;
  *
  * @author      Peter Jones
  */
-public class RemoteClass implements sun.rmi.rmic.RMIConstants {
+public class RemoteClass implements j86.sun.rmi.rmic.RMIConstants {
 
     /**
      * Create a RemoteClass object representing the remote meta-information
@@ -482,9 +482,9 @@ public class RemoteClass implements sun.rmi.rmic.RMIConstants {
 
                         /*
                          * Verify that the implementation of this method throws only
-                         * java.lang.Exception or its subclasses (fix bugid 4092486).
+                         * j86.java.lang.Exception or its subclasses (fix bugid 4092486).
                          * JRMP does not support remote methods throwing
-                         * java.lang.Throwable or other subclasses.
+                         * j86.java.lang.Throwable or other subclasses.
                          */
                         try {
                             MemberDefinition implMethod = implClassDef.findMethod(
@@ -704,7 +704,7 @@ public class RemoteClass implements sun.rmi.rmic.RMIConstants {
 
         /**
          * Return the string representation of this method appropriate
-         * for the construction of a java.rmi.server.Operation object.
+         * for the construction of a j86.j86.java.rmi.server.Operation object.
          */
         public String getOperationString() {
             return memberDef.toString();

@@ -23,26 +23,26 @@
  * questions.
  */
 
-package javax.swing.tree;
+package j86.j86.javax.swing.tree;
 
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.Dimension;
-import java.awt.Font;
-import java.awt.Graphics;
-import java.awt.Insets;
-import java.awt.Rectangle;
-import javax.swing.plaf.ColorUIResource;
-import javax.swing.plaf.FontUIResource;
-import javax.swing.plaf.UIResource;
-import javax.swing.plaf.basic.BasicGraphicsUtils;
-import javax.swing.Icon;
-import javax.swing.JLabel;
-import javax.swing.JTree;
-import javax.swing.LookAndFeel;
-import javax.swing.UIManager;
-import javax.swing.border.EmptyBorder;
-import sun.swing.DefaultLookup;
+import j86.java.awt.Color;
+import j86.java.awt.Component;
+import j86.java.awt.Dimension;
+import j86.java.awt.Font;
+import j86.java.awt.Graphics;
+import j86.java.awt.Insets;
+import j86.java.awt.Rectangle;
+import j86.j86.javax.swing.plaf.ColorUIResource;
+import j86.j86.javax.swing.plaf.FontUIResource;
+import j86.j86.javax.swing.plaf.UIResource;
+import j86.j86.j86.javax.swing.plaf.basic.BasicGraphicsUtils;
+import j86.javax.swing.Icon;
+import j86.javax.swing.JLabel;
+import j86.javax.swing.JTree;
+import j86.javax.swing.LookAndFeel;
+import j86.javax.swing.UIManager;
+import j86.j86.javax.swing.border.EmptyBorder;
+import j86.sun.swing.DefaultLookup;
 
 /**
  * Displays an entry in a tree.
@@ -96,8 +96,8 @@ import sun.swing.DefaultLookup;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
+ * has been added to the <code>j86.java.beans</code> package.
+ * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @author Rob Davis
  * @author Ray Ryan
@@ -626,7 +626,7 @@ public class DefaultTreeCellRenderer extends JLabel implements TreeCellRenderer
         if (propertyName == "text"
                 || ((propertyName == "font" || propertyName == "foreground")
                     && oldValue != newValue
-                    && getClientProperty(javax.swing.plaf.basic.BasicHTML.propertyKey) != null)) {
+                    && getClientProperty(j86.j86.j86.javax.swing.plaf.basic.BasicHTML.propertyKey) != null)) {
 
             super.firePropertyChange(propertyName, oldValue, newValue);
         }

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package sun.java2d.cmm;
+package j86.j86.sun.java2d.cmm;
 
 public abstract class CMMServiceProvider {
     public final PCMM getColorManagementModule() {

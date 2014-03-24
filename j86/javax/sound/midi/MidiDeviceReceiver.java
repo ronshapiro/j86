@@ -23,7 +23,7 @@
  * questions.
  */
 
-package javax.sound.midi;
+package j86.javax.sound.midi;
 
 /**
  * <p>{@code MidiDeviceReceiver} is a {@code Receiver} which represents
